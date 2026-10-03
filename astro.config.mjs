@@ -10,8 +10,8 @@ const SITE_URL = 'https://fexguy.com';
 // CDN. No adapter, no server functions — the single biggest lever for Core
 // Web Vitals, and nothing to maintain at runtime.
 
-// Pages marked `noindex: true` (or `draft: true`) in their frontmatter must
-// not appear in the sitemap. The sitemap integration can't read content
+// Pages marked `noindex: true`, `draft: true`, or `sitemap: false` in their
+// frontmatter must not appear in the sitemap. The sitemap integration can't read content
 // collections, so this scans the Markdown frontmatter directly.
 function excludedContentPaths() {
   const base = new URL('./src/content/pages/', import.meta.url).pathname;
@@ -22,7 +22,7 @@ function excludedContentPaths() {
       if (entry.isDirectory()) walk(full);
       else if (/\.mdx?$/.test(entry.name) && !entry.name.startsWith('_')) {
         const frontmatter = readFileSync(full, 'utf-8').split(/^---$/m)[1] ?? '';
-        if (/^\s*(noindex|draft):\s*true\b/m.test(frontmatter)) {
+        if (/^\s*(noindex|draft):\s*true\b/m.test(frontmatter) || /^\s*sitemap:\s*false\b/m.test(frontmatter)) {
           const slug = full.slice(base.length).replace(/\.mdx?$/, '').replace(/(^|\/)index$/, '');
           excluded.add(`/${slug}/`.replace(/\/+/g, '/'));
         }
@@ -42,8 +42,7 @@ const excluded = excludedContentPaths();
 export default defineConfig({
   site: SITE_URL,
   output: 'static',
-  // Matches vercel.json `trailingSlash: true`. Revisit once the WordPress
-  // permalink structure is confirmed.
+  // Matches the live WordPress permalinks and vercel.json `trailingSlash: true`.
   trailingSlash: 'always',
   build: {
     format: 'directory',

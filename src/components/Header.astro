@@ -1,19 +1,17 @@
 ---
-// Site header: logo/wordmark, primary navigation, and a click-to-call button.
+// Site header: logo and primary navigation (copied from the live site).
+// The live header's phone link and "GET RATES & INFO HERE" quote button are
+// lead-generation elements and are intentionally not built yet.
 import { site } from '@/config/site';
 import Navigation from './Navigation.astro';
-import PhoneButton from './PhoneButton.astro';
 ---
 
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="/" class="site-header__brand" aria-label={`${site.name} home`}>
-      {site.logo ? <img src={site.logo} alt={site.name} height="40" /> : <span class="site-header__wordmark">{site.name}</span>}
+      <img src={site.logo.src} alt={site.logo.alt} width={site.logo.width} height={site.logo.height} fetchpriority="high" />
     </a>
-    <div class="site-header__actions">
-      <PhoneButton compact />
-      <Navigation />
-    </div>
+    <Navigation />
   </div>
 </header>
 
@@ -35,28 +33,14 @@ import PhoneButton from './PhoneButton.astro';
     display: inline-flex;
     align-items: center;
     min-height: var(--tap-target);
-    color: var(--color-text);
-    text-decoration: none;
   }
   .site-header__brand img {
-    height: 2.5rem;
+    height: 2.25rem;
     width: auto;
   }
-  .site-header__wordmark {
-    font-size: 1.375rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-  }
-  .site-header__actions {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-  }
-  /* Phone button moves after nav on desktop so the nav reads first. */
   @media (min-width: 56rem) {
-    .site-header__actions {
-      flex-direction: row-reverse;
-      gap: var(--space-6);
+    .site-header__brand img {
+      height: 2.75rem;
     }
   }
 </style>

@@ -1,9 +1,8 @@
-// JSON-LD builders. Pages pass ordinary content fields in; nobody writes
-// structured data by hand. Each builder omits any field whose source value
-// is empty, so missing business facts never produce empty or false claims.
-//
-// To add a new schema type (LocalBusiness, Service, Person, Article…), add a
-// builder here and pass its result to a layout via the `jsonLd` prop.
+// JSON-LD builders for NEW pages. Pages migrated from WordPress carry their
+// live JSON-LD verbatim in frontmatter (`jsonLd`) and don't use these.
+// Each builder omits any field whose source value is empty, so missing
+// business facts never produce empty or false claims. Pass results through
+// JSON.stringify into a page's `jsonLd` frontmatter or the Seo component.
 
 import { site } from '@/config/site';
 
@@ -19,14 +18,13 @@ const WEBSITE_ID = `${site.url}/#website`;
 export function organizationSchema(): JsonLd {
   return {
     '@context': 'https://schema.org',
-    '@type': site.organizationType,
+    '@type': 'Organization',
     '@id': ORG_ID,
     name: site.organizationName || site.name,
     url: absoluteUrl('/'),
-    ...(site.logo ? { logo: absoluteUrl(site.logo) } : {}),
+    ...(site.logo.src ? { logo: absoluteUrl(site.logo.src) } : {}),
     ...(site.phoneE164 ? { telephone: site.phoneE164 } : {}),
     ...(site.email ? { email: site.email } : {}),
-    ...(site.sameAs.length ? { sameAs: site.sameAs } : {}),
   };
 }
 

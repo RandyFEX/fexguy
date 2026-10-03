@@ -1,47 +1,34 @@
 ---
-# Copy this file into src/content/pages/ and rename it. The file path
-# becomes the URL: src/content/pages/some-page.md -> /some-page/
-# Nested folders create nested URLs. Use index.md for a folder's own URL:
-# src/content/pages/services/index.md -> /services/
+# Copy this file into src/content/pages/ and rename it. The file path is the
+# URL: src/content/pages/some-page.md -> /some-page/
+# Use index.md for a folder's own URL: services/index.md -> /services/
 
-# Visible H1 for the page.
-title: Page title
+# Exact <title> tag text.
+title: "Page title - Final Expense Guy"
 
-# Optional full <title> override. Default: "Page title | FEXGUY".
-# metaTitle: Exact title tag from the WordPress SEO plugin
+# Meta description (search snippet).
+description: "One- or two-sentence summary of the page for search results."
 
-# Required meta description (search snippet).
-description: One- or two-sentence summary of the page for search results.
+# Robots directive used once indexing is enabled. Omit for "index, follow".
+# robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 
-# Optional. Only set if this page should point its canonical elsewhere.
-# canonicalPath: /other-page/
-
-# Optional share image, path relative to THIS file (e.g. ./images/share.jpg).
-# ogImage: ./images/share.jpg
-
-# true = <meta name="robots" content="noindex"> and excluded from sitemap/llms.txt.
+# true = noindex, and left out of the sitemap and llms.txt.
 noindex: false
 
 # true = never built. Use while drafting.
 draft: true
 
-# Optional dates (YYYY-MM-DD). updatedDate shows "Updated …" on the page.
-# publishDate: 2026-01-01
-# updatedDate: 2026-01-01
+# Optional: "landing" hides the site header and footer.
+# layout: landing
 
-# Optional parent crumbs (Home and this page are added automatically).
-breadcrumbs: []
-#  - name: Parent page
-#    path: /parent/
+# Optional exact social tags and JSON-LD (migrated pages carry these).
+# headMeta: [{"property":"og:title","content":"..."}]
+# jsonLd: ["{\"@context\":\"https://schema.org\", ...}"]
 
-# Optional FAQ — rendered on the page AND as FAQPage structured data.
-faq: []
-#  - question: A real question from the existing site?
-#    answer: The real answer, verbatim.
-
-# Show the site-wide call-to-action band at the bottom.
-showCta: true
+source: "new"
 ---
 
-Page body in Markdown. The `title` above is the page's only H1 — use `##`
-and `###` for section headings inside the body.
+<h1>Visible page heading</h1>
+
+<p>Page body. Plain Markdown also works here; migrated pages use HTML.
+The body must contain exactly one &lt;h1&gt;.</p>

@@ -1,16 +1,14 @@
-// Single source of truth for site-wide identity, contact details, and
-// navigation. Every component (header, footer, phone buttons, structured
-// data, llms.txt) reads from here, so a phone number or nav change is a
-// one-line edit in this file.
+// Single source of truth for site-wide identity, navigation, and footer
+// content. Header, footer, SEO fallbacks, and llms.txt read from here.
 //
-// IMPORTANT: Business facts below are intentionally left empty. Fill them in
-// only from information Randy provides — never invent or guess them. Any
-// component that depends on a missing value renders nothing rather than a
-// placeholder, so an empty field can never leak onto a public page.
+// Values below were taken from the live fexguy.com site (October 2026).
+// Never invent business facts: change them only with information Randy
+// provides. Fields left empty render nothing.
 
 export interface NavItem {
   label: string;
   href: string;
+  children?: NavItem[];
 }
 
 export interface SiteConfig {
@@ -19,54 +17,85 @@ export interface SiteConfig {
   name: string;
   /** Default meta description for pages that don't set their own. */
   description: string;
-  /** Legal/organization name for structured data and the footer copyright. */
   organizationName: string;
-  /** schema.org type for the organization node, e.g. 'Organization',
-   * 'InsuranceAgency'. Kept generic until confirmed. */
-  organizationType: string;
   locale: string;
-  /** Phone number as it should be displayed, e.g. "(555) 555-0100". */
+  /** Click-to-call numbers. Left empty until lead-generation is implemented
+   * (PhoneButton renders nothing while these are empty). */
   phoneDisplay: string;
-  /** Phone number in E.164 form for tel: links, e.g. "+15555550100". */
   phoneE164: string;
   email: string;
-  /** Path under /public, e.g. "/logo.svg". Empty = text wordmark. */
-  logo: string;
+  logo: { src: string; width: number; height: number; alt: string };
+  icons: { rel: string; href: string; sizes?: string }[];
   /** Default social-share image, path under /public. */
   defaultOgImage: string;
-  /** Profile URLs (Facebook, YouTube, LinkedIn…) for schema sameAs. */
-  sameAs: string[];
   primaryNav: NavItem[];
-  footerNav: NavItem[];
-  /** Default call-to-action band shown at the end of content pages. Renders
-   * nothing until `heading` is filled in. */
-  cta: {
-    heading: string;
-    text: string;
-    /** Optional non-phone action, e.g. a quote/contact page. */
-    link?: NavItem;
+  footer: {
+    /** Footer columns as HTML (copied from the live site). */
+    columns: string[];
+    social: { label: string; href: string }[];
+    /** Disclaimer/copyright paragraphs as HTML (copied from the live site). */
+    notes: string[];
   };
+  /** Default call-to-action band. Renders nothing until `heading` is set. */
+  cta: { heading: string; text: string; link?: NavItem };
 }
+
+const uploads = '/wp-content/uploads';
 
 export const site: SiteConfig = {
   url: 'https://fexguy.com',
-  name: 'FEXGUY',
+  name: 'Final Expense Guy',
   description: '',
-  organizationName: '',
-  organizationType: 'Organization',
+  organizationName: 'Final Expense Guy',
   locale: 'en_US',
   phoneDisplay: '',
   phoneE164: '',
   email: '',
-  logo: '',
+  logo: { src: `${uploads}/2026/09/FINAL-EXPENSE-GUY-LOGO-340-X-250.png`, width: 2034, height: 250, alt: 'Final Expense Guy' },
+  icons: [
+    { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-32x32.png`, sizes: '32x32' },
+    { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-192x192.png`, sizes: '192x192' },
+    { rel: 'apple-touch-icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-180x180.png` },
+  ],
   defaultOgImage: '',
-  sameAs: [],
-  primaryNav: [],
-  footerNav: [],
-  cta: {
-    heading: '',
-    text: '',
+  primaryNav: [
+    { label: '★FREE FINAL EXPENSE QUOTE★', href: '/free-quote/' },
+    {
+      label: 'RESOURCES',
+      href: '#',
+      children: [
+        { label: 'A TO Z FINAL EXPENSE LIFE INSURANCE COMPANIES', href: '/a-z-companies/' },
+        { label: 'A TO Z HEALTH CONDITIONS ACCEPTED', href: '/a-z-health/' },
+        { label: 'BURIAL INSURANCE COMPLETE GUIDE', href: '/burial-insurance/' },
+        { label: 'Final Expense Life Insurance Shopper • 1st-Time Shopper Guide', href: '/final-expense-life-insurance-book/' },
+        { label: 'FREE FUNERAL & PLANNING GUIDE', href: '/planning-guide/' },
+        { label: 'IUL Playbook: How It Works, What It Promises, & What It Delivers', href: '/iul-book/' },
+      ],
+    },
+    { label: 'ABOUT', href: '/about/' },
+  ],
+  footer: {
+    columns: [
+      '<p><strong>Mailing Address</strong><br>PO Box 270179<br>Flower Mound, TX 75027<br> (Dallas, TX Area)</p>',
+      '<p><strong>Office Hours</strong><br>Monday-Friday<br>9:00 AM-5:00 PM CTL</p>',
+      '<p><strong>Phone</strong><br>(888) 862-9456</p>',
+      '<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a><br> <a href="/terms-of-use/" target="_blank" rel="noopener">Terms Of Use</a><br> <a href="/do-not-sell/" target="_blank" rel="noopener">Do Not Sell</a><br> <a href="/licenses/" target="_blank" rel="noopener">Licenses</a></p>',
+    ],
+    social: [
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/funeral-funds/' },
+      { label: 'Facebook', href: 'https://www.facebook.com/funeralfunds' },
+      { label: 'YouTube', href: 'https://www.youtube.com/c/FuneralFunds' },
+    ],
+    notes: [
+      '<small>Final Expense Guy or fexguy.com is an independently operated life insurance agency licensed to operate in all 50 states. We specialize in locating 1st-day coverage insurance for our clients. Product and policy availability, features, and benefits may vary by state and health. </small>',
+      '<small>We are not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any companies mentioned within Final Expense Guy or fexguy.com. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.</small>',
+      '<small>All company names and products are the registered trademarks of their original owners and Final Expense Guy or fexguy.com declares no affiliation, sponsorship, nor any partnerships with any registered trademarks unless otherwise stated.</small>',
+      'The content on this website is for general informational and educational purposes only and should not be construed as professional advice. We make no warranties or guarantees regarding the accuracy, completeness, or currency of the information provided. For guidance specific to your situation, please call us directly at 888-862-9456.',
+      '<small>No portion of Final Expense Guy or fexguy.com may be copied, published, distributed, or used in any manner for any purpose without prior written authorization of Final Expense Guy or www.fexguy.com.</small>',
+      '<small>Copyright © 2026 Final Expense Guy or fexguy.com – All Rights Reserved</small>',
+    ],
   },
+  cta: { heading: '', text: '' },
 };
 
 /** True only on the real production deployment — see .env.example. */

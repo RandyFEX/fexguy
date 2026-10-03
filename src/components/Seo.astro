@@ -1,46 +1,60 @@
 ---
-// Emits title, description, canonical, robots, Open Graph, Twitter, and
-// JSON-LD tags. Called once per page from BaseLayout. Canonical is
-// self-referential from the current URL unless a page overrides it.
+// Emits <title>, meta description, robots, canonical, social meta and JSON-LD.
+//
+// Migrated pages pass their exact live values (headMeta, jsonLd). Pages
+// without them get generated Open Graph/Twitter tags. Robots is always
+// "noindex, nofollow" unless PUBLIC_ALLOW_INDEXING=true (see .env.example).
 import { site, allowIndexing } from '@/config/site';
-import type { JsonLd } from '@/lib/seo/schema';
+
+export interface HeadMeta {
+  property?: string;
+  name?: string;
+  content: string;
+}
 
 export interface Props {
   title: string;
   description?: string;
-  /** Absolute URL or site-relative path to a share image. */
-  ogImage?: string;
-  ogType?: 'website' | 'article';
+  /** Exact robots directive for when indexing is enabled. */
+  robots?: string;
   noindex?: boolean;
-  canonicalPath?: string;
-  jsonLd?: (JsonLd | undefined)[];
+  /** Canonical path or absolute URL; defaults to the current URL. */
+  canonical?: string;
+  /** Social meta tags emitted as-is (replaces generated OG/Twitter tags). */
+  headMeta?: HeadMeta[];
+  /** Raw JSON-LD strings emitted verbatim. */
+  jsonLd?: string[];
 }
 
-const { title, description, ogImage, ogType = 'website', noindex = false, canonicalPath, jsonLd = [] } = Astro.props;
+const { title, description, robots, noindex = false, canonical, headMeta = [], jsonLd = [] } = Astro.props;
 
-const canonicalUrl = new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString();
-const imagePath = ogImage || site.defaultOgImage;
-const imageUrl = imagePath ? new URL(imagePath, Astro.site).toString() : undefined;
-const metaDescription = description || site.description || undefined;
-const robots = !allowIndexing || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+const canonicalUrl = new URL(canonical ?? Astro.url.pathname, Astro.site).toString();
+const robotsContent = !allowIndexing ? 'noindex, nofollow' : robots || (noindex ? 'noindex, nofollow' : 'index, follow');
+const ogImage = site.defaultOgImage ? new URL(site.defaultOgImage, Astro.site).toString() : undefined;
 ---
 
 <title>{title}</title>
-{metaDescription && <meta name="description" content={metaDescription} />}
-<link rel="canonical" href={canonicalUrl} />
-<meta name="robots" content={robots} />
+{description && <meta name="description" content={description} />}
+<meta name="robots" content={robotsContent} />
+{!noindex && <link rel="canonical" href={canonicalUrl} />}
 
-<meta property="og:type" content={ogType} />
-<meta property="og:site_name" content={site.name} />
-<meta property="og:locale" content={site.locale} />
-<meta property="og:title" content={title} />
-{metaDescription && <meta property="og:description" content={metaDescription} />}
-<meta property="og:url" content={canonicalUrl} />
-{imageUrl && <meta property="og:image" content={imageUrl} />}
+{
+  headMeta.length > 0 ? (
+    headMeta.map((m) => (m.property ? <meta property={m.property} content={m.content} /> : <meta name={m.name} content={m.content} />))
+  ) : (
+    <>
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={site.name} />
+      <meta property="og:locale" content={site.locale} />
+      <meta property="og:title" content={title} />
+      {description && <meta property="og:description" content={description} />}
+      <meta property="og:url" content={canonicalUrl} />
+      {ogImage && <meta property="og:image" content={ogImage} />}
+      <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+      <meta name="twitter:title" content={title} />
+      {description && <meta name="twitter:description" content={description} />}
+    </>
+  )
+}
 
-<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
-<meta name="twitter:title" content={title} />
-{metaDescription && <meta name="twitter:description" content={metaDescription} />}
-{imageUrl && <meta name="twitter:image" content={imageUrl} />}
-
-{jsonLd.filter(Boolean).map((schema) => <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />)}
+{jsonLd.map((block) => <script type="application/ld+json" is:inline set:html={block} />)}

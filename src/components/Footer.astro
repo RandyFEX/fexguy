@@ -1,37 +1,35 @@
 ---
-// Site footer: footer navigation, contact details (only those that are
-// configured), and copyright line.
+// Site footer: contact details, legal links, social links, and disclaimers,
+// copied from the live site (see site.footer in src/config/site.ts).
 import { site } from '@/config/site';
-
-const year = new Date().getFullYear();
-const owner = site.organizationName || site.name;
+const { columns, social, notes } = site.footer;
 ---
 
 <footer class="site-footer">
-  <div class="container site-footer__inner">
+  <div class="container">
     {
-      site.footerNav.length > 0 && (
-        <nav aria-label="Footer">
-          <ul class="site-footer__nav">
-            {site.footerNav.map((item) => (
-              <li>
-                <a href={item.href}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      columns.length > 0 && (
+        <div class="site-footer__cols">
+          {columns.map((html) => (
+            <div class="site-footer__col" set:html={html} />
+          ))}
+        </div>
       )
     }
     {
-      (site.phoneE164 || site.email) && (
-        <address class="site-footer__contact">
-          {site.phoneE164 && <a href={`tel:${site.phoneE164}`}>{site.phoneDisplay}</a>}
-          {site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}
-        </address>
+      social.length > 0 && (
+        <ul class="site-footer__social" aria-label="Social media">
+          {social.map((s) => (
+            <li>
+              <a href={s.href} rel="noopener nofollow" target="_blank">
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
       )
     }
-    <slot />
-    <p class="site-footer__copy">&copy; {year} {owner}</p>
+    {notes.length > 0 && <div class="site-footer__notes">{notes.map((html) => <p set:html={html} />)}</div>}
   </div>
 </footer>
 
@@ -43,31 +41,33 @@ const owner = site.organizationName || site.name;
     font-size: 0.9375rem;
     color: var(--color-text-muted);
   }
-  .site-footer__inner {
+  .site-footer__cols {
     display: grid;
-    gap: var(--space-4);
+    gap: var(--space-4) var(--space-6);
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
-  .site-footer__nav {
+  .site-footer__cols :global(p) {
+    margin: 0;
+  }
+  .site-footer :global(a) {
+    color: inherit;
+  }
+  .site-footer__social {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-1) var(--space-6);
+    gap: var(--space-2) var(--space-6);
     list-style: none;
-    margin: 0;
+    margin: var(--space-6) 0;
     padding: 0;
   }
-  .site-footer a {
+  .site-footer__social a {
     display: inline-flex;
     align-items: center;
     min-height: var(--tap-target);
-    color: inherit;
   }
-  .site-footer__contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1) var(--space-6);
-    font-style: normal;
-  }
-  .site-footer__copy {
-    margin: 0;
+  .site-footer__notes {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+    font-size: 0.875rem;
   }
 </style>

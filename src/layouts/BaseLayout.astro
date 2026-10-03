@@ -1,44 +1,43 @@
 ---
-// Outermost document shell for every page: <head> (SEO, favicons), skip
-// link, header, <main>, footer. Site-wide Organization and WebSite schema
-// are added here; pages append their own via `jsonLd`.
+// Document shell for every page: <head> (SEO, icons), skip link, header,
+// <main>, footer. "landing" pages (former WordPress landing-page template)
+// render without the site header and footer, as they did on the live site.
 import '@/styles/global.css';
-import Seo from '@/components/Seo.astro';
+import Seo, { type HeadMeta } from '@/components/Seo.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { organizationSchema, websiteSchema, type JsonLd } from '@/lib/seo/schema';
+import { site } from '@/config/site';
 
 export interface Props {
-  /** Full <title> text (use pageTitle() from lib/seo/meta). */
   title: string;
   description?: string;
-  ogImage?: string;
-  ogType?: 'website' | 'article';
+  robots?: string;
   noindex?: boolean;
-  canonicalPath?: string;
-  jsonLd?: (JsonLd | undefined)[];
+  canonical?: string;
+  headMeta?: HeadMeta[];
+  jsonLd?: string[];
+  layout?: 'default' | 'landing';
 }
 
-const { jsonLd = [], ...seo } = Astro.props;
+const { layout = 'default', ...seo } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="format-detection" content="telephone=no" />
-    <Seo {...seo} jsonLd={[organizationSchema(), websiteSchema(), ...jsonLd]} />
+    {site.icons.map((icon) => <link rel={icon.rel} href={icon.href} sizes={icon.sizes} />)}
+    <Seo {...seo} />
     <slot name="head" />
   </head>
-  <body>
+  <body class:list={{ 'is-landing': layout === 'landing' }}>
     <a class="skip-link" href="#main">Skip to main content</a>
-    <Header />
+    {layout !== 'landing' && <Header />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    <Footer />
+    {layout !== 'landing' && <Footer />}
   </body>
 </html>
 

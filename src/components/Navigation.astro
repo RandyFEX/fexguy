@@ -1,13 +1,12 @@
 ---
-// Primary navigation. On small screens it collapses behind a menu button;
-// on wider screens it's an inline list. Without JavaScript the list is
-// simply always visible (progressive enhancement), so nothing is ever
-// unreachable. Renders nothing until primaryNav is set in src/config/site.ts.
+// Primary navigation. Small screens: collapses behind a Menu button.
+// Items with children render as a native <details> disclosure (works without
+// JavaScript). Without JS the list is simply always visible.
 import { site } from '@/config/site';
 
 const current = Astro.url.pathname;
 const items = site.primaryNav;
-const isCurrent = (href: string) => href === current || (href !== '/' && current.startsWith(href));
+const isCurrent = (href: string) => href !== '#' && (href === current || (href !== '/' && current.startsWith(href)));
 ---
 
 {
@@ -20,9 +19,24 @@ const isCurrent = (href: string) => href === current || (href !== '/' && current
       <ul id="primary-nav-list" class="nav__list">
         {items.map((item) => (
           <li>
-            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
-              {item.label}
-            </a>
+            {item.children?.length ? (
+              <details class="nav__group">
+                <summary>{item.label}</summary>
+                <ul class="nav__sub">
+                  {item.children.map((child) => (
+                    <li>
+                      <a href={child.href} aria-current={isCurrent(child.href) ? 'page' : undefined}>
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ) : (
+              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            )}
           </li>
         ))}
       </ul>
@@ -31,21 +45,27 @@ const isCurrent = (href: string) => href === current || (href !== '/' && current
 }
 
 <script>
-  // ~300 bytes: reveal the toggle and wire it up only when JS runs.
   const toggle = document.querySelector<HTMLButtonElement>('.nav__toggle');
   const list = document.getElementById('primary-nav-list');
   if (toggle && list) {
     toggle.hidden = false;
     list.dataset.collapsible = 'true';
     toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-expanded', String(toggle.getAttribute('aria-expanded') !== 'true'));
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      if (e.key !== 'Escape') return;
+      document.querySelectorAll<HTMLDetailsElement>('.nav__group[open]').forEach((d) => (d.open = false));
+      if (toggle.getAttribute('aria-expanded') === 'true') {
         toggle.setAttribute('aria-expanded', 'false');
         toggle.focus();
       }
+    });
+    // Close an open dropdown when clicking elsewhere.
+    document.addEventListener('click', (e) => {
+      document.querySelectorAll<HTMLDetailsElement>('.nav__group[open]').forEach((d) => {
+        if (!d.contains(e.target as Node)) d.open = false;
+      });
     });
   }
 </script>
@@ -89,7 +109,8 @@ const isCurrent = (href: string) => href === current || (href !== '/' && current
     top: 6px;
   }
 
-  .nav__list {
+  .nav__list,
+  .nav__sub {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -102,17 +123,32 @@ const isCurrent = (href: string) => href === current || (href !== '/' && current
     position: absolute;
     inset-inline: 0;
     top: 100%;
+    z-index: 50;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-2) var(--space-4) var(--space-4);
   }
-  .nav__list a {
+  .nav__list a,
+  .nav__group summary {
     display: flex;
     align-items: center;
     min-height: var(--tap-target);
     color: var(--color-text);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+  }
+  .nav__group summary::after {
+    content: '▾';
+    margin-left: var(--space-1);
+    font-size: 0.8em;
+  }
+  .nav__sub {
+    padding-left: var(--space-4);
+  }
+  .nav__sub a {
+    font-weight: 400;
   }
   .nav__list a:hover,
   .nav__list a[aria-current='page'] {
@@ -128,10 +164,26 @@ const isCurrent = (href: string) => href === current || (href !== '/' && current
     .nav__list,
     .nav__list[data-collapsible] {
       display: flex;
+      align-items: center;
       gap: var(--space-6);
       position: static;
       padding: 0;
       border: 0;
+    }
+    .nav__group {
+      position: relative;
+    }
+    .nav__group .nav__sub {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      z-index: 50;
+      width: 22rem;
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.08);
     }
   }
 </style>

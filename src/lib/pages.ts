@@ -2,7 +2,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type PageEntry = CollectionEntry<'pages'>;
 
-/** URL path for a page entry: "about" -> "/about/", "services/index" -> "/services/". */
+/** URL path for a page entry: "about" -> "/about/", "index" -> "/". */
 export function pagePath(entry: PageEntry): string {
   const id = entry.id.replace(/(^|\/)index$/, '');
   return id ? `/${id}/` : '/';

@@ -6,7 +6,7 @@ import { getPublishedPages, pagePath } from '@/lib/pages';
 // the site's pages. Regenerated from content on every build — never edit
 // by hand. Noindexed pages are left out.
 export const GET: APIRoute = async ({ site: siteUrl }) => {
-  const pages = (await getPublishedPages()).filter((p) => !p.data.noindex);
+  const pages = (await getPublishedPages()).filter((p) => !p.data.noindex && p.data.sitemap);
 
   const lines = [
     `# ${site.name}`,
@@ -14,7 +14,7 @@ export const GET: APIRoute = async ({ site: siteUrl }) => {
     ...(site.description ? [`> ${site.description}`, ''] : []),
     '## Pages',
     '',
-    ...pages.map((p) => `- [${p.data.title}](${new URL(pagePath(p), siteUrl)}): ${p.data.description}`),
+    ...pages.map((p) => `- [${p.data.title}](${new URL(pagePath(p), siteUrl)}): ${p.data.description ?? ''}`),
     '',
   ];
 

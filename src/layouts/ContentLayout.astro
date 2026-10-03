@@ -1,0 +1,37 @@
+---
+// Renders one content-collection page: SEO head from its frontmatter and the
+// page body (which carries its own H1) inside a readable container.
+import BaseLayout from './BaseLayout.astro';
+import type { PageEntry } from '@/lib/pages';
+import { pagePath } from '@/lib/pages';
+
+export interface Props {
+  entry: PageEntry;
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  robots={d.robots}
+  noindex={d.noindex}
+  canonical={d.canonical ?? pagePath(entry)}
+  headMeta={d.headMeta}
+  jsonLd={d.jsonLd}
+  layout={d.layout}
+>
+  <div class="container page">
+    <div class="prose wp-content">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding-block: var(--space-8) var(--space-12);
+  }
+</style>

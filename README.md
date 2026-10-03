@@ -2,9 +2,11 @@
 
 The rebuild of FEXGUY.com as a static [Astro](https://astro.build) site, deployed on Vercel.
 
-> **Status:** architecture only. No content has been migrated, no domain is
-> connected, and search-engine indexing is disabled (see below). The live
-> FEXGUY.com is still the existing WordPress site.
+> **Status:** Phase 1 migration. All 334 live WordPress URLs are rebuilt with
+> identical URLs, titles, metadata, headings, and content. Lead-generation
+> (forms, quoters, call buttons, tracking) and redirects are not built yet.
+> No domain is connected and search-engine indexing is disabled (see below).
+> The live FEXGUY.com is still the WordPress site.
 
 ## Commands
 
@@ -22,38 +24,36 @@ The rebuild of FEXGUY.com as a static [Astro](https://astro.build) site, deploye
 astro.config.mjs        Site URL, static output, trailing slashes, sitemap
 vercel.json             Vercel build settings, redirects, caching/security headers
 src/
-  config/site.ts        Business details, phone, nav menus, default CTA (one place)
+  config/site.ts        Logo, nav menu, footer content, icons (one place)
   content.config.ts     Content schema for pages (validated at build time)
   content/
-    pages/              One Markdown file per page; file path = URL
+    pages/              One file per page (334 migrated); file path = URL
     _templates/         Copy-from template for new pages
     README.md           How to add/migrate pages and redirects
   layouts/
     BaseLayout.astro    <html>/<head>, skip link, header, main, footer
-    PageLayout.astro    Standard content page: breadcrumbs, H1, body, FAQ, CTA
+    ContentLayout.astro Renders a content page (SEO from frontmatter + body)
   components/
     Seo.astro           Title, description, canonical, robots, OG/Twitter, JSON-LD
     Header.astro        Logo/wordmark, navigation, call button
     Navigation.astro    Primary nav with accessible mobile menu toggle
     Footer.astro        Footer nav, contact details, copyright
-    PhoneButton.astro   Click-to-call button (hidden until a number is configured)
+    PhoneButton.astro   Click-to-call button (not used until lead-gen is approved)
     ButtonLink.astro    Link styled as a button
     CallToAction.astro  CTA band (site-wide default or per-page)
     Section.astro       Labeled content section
-    Breadcrumbs.astro   Breadcrumb trail + BreadcrumbList schema
-    FaqList.astro       FAQ list (pair with faqSchema)
   lib/
     pages.ts            Page queries and URL helpers
-    seo/schema.ts       JSON-LD builders (Organization, WebSite, WebPage, Breadcrumb, FAQ)
+    seo/schema.ts       JSON-LD builders for new pages
     seo/meta.ts         Title formatting
   pages/
-    index.astro         Homepage (temporary scaffold)
+    index.astro         Homepage (renders src/content/pages/index.md)
     [...slug].astro     Renders every page in src/content/pages/
     404.astro           Not-found page
     robots.txt.ts       robots.txt (follows the indexing gate)
     llms.txt.ts         AI answer-engine index of pages
   styles/global.css     Design tokens, base styles, buttons (mobile-first)
-public/                 Static files served as-is (favicon, images)
+public/wp-content/      Images at their original WordPress paths
 ```
 
 ## Indexing gate
