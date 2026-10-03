@@ -6,7 +6,7 @@ A missing required field fails the build with an error naming the file.
 
 ## Where pages came from (Phase 1 migration)
 
-All 334 files were generated from the live WordPress site at fexguy.com
+All 339 files were generated from the live WordPress site at fexguy.com
 (October 2026). Each one keeps the live page's:
 
 - URL (the file path), exact `<title>`, meta description, robots directive,

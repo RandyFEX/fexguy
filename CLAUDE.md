@@ -1,7 +1,7 @@
 # CLAUDE.md — FEXGUY.com
 
 Astro (TypeScript, static output) site deployed on Vercel. Rebuild of the
-live WordPress site at fexguy.com. Phase 1 (exact migration of 334 live URLs)
+live WordPress site at fexguy.com. Phase 1 (exact migration of 339 live URLs)
 is in place; see src/content/README.md for how pages were migrated.
 
 ## Hard rules

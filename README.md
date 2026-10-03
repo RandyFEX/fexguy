@@ -2,7 +2,7 @@
 
 The rebuild of FEXGUY.com as a static [Astro](https://astro.build) site, deployed on Vercel.
 
-> **Status:** Phase 1 migration. All 334 live WordPress URLs are rebuilt with
+> **Status:** Phase 1 migration. All 339 live WordPress URLs are rebuilt with
 > identical URLs, titles, metadata, headings, and content. Lead-generation
 > (forms, quoters, call buttons, tracking) and redirects are not built yet.
 > No domain is connected and search-engine indexing is disabled (see below).
@@ -27,7 +27,7 @@ src/
   config/site.ts        Logo, nav menu, footer content, icons (one place)
   content.config.ts     Content schema for pages (validated at build time)
   content/
-    pages/              One file per page (334 migrated); file path = URL
+    pages/              One file per page (339 migrated); file path = URL
     _templates/         Copy-from template for new pages
     README.md           How to add/migrate pages and redirects
   layouts/
