@@ -1,0 +1,46 @@
+---
+// Emits title, description, canonical, robots, Open Graph, Twitter, and
+// JSON-LD tags. Called once per page from BaseLayout. Canonical is
+// self-referential from the current URL unless a page overrides it.
+import { site, allowIndexing } from '@/config/site';
+import type { JsonLd } from '@/lib/seo/schema';
+
+export interface Props {
+  title: string;
+  description?: string;
+  /** Absolute URL or site-relative path to a share image. */
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  canonicalPath?: string;
+  jsonLd?: (JsonLd | undefined)[];
+}
+
+const { title, description, ogImage, ogType = 'website', noindex = false, canonicalPath, jsonLd = [] } = Astro.props;
+
+const canonicalUrl = new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString();
+const imagePath = ogImage || site.defaultOgImage;
+const imageUrl = imagePath ? new URL(imagePath, Astro.site).toString() : undefined;
+const metaDescription = description || site.description || undefined;
+const robots = !allowIndexing || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+---
+
+<title>{title}</title>
+{metaDescription && <meta name="description" content={metaDescription} />}
+<link rel="canonical" href={canonicalUrl} />
+<meta name="robots" content={robots} />
+
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:locale" content={site.locale} />
+<meta property="og:title" content={title} />
+{metaDescription && <meta property="og:description" content={metaDescription} />}
+<meta property="og:url" content={canonicalUrl} />
+{imageUrl && <meta property="og:image" content={imageUrl} />}
+
+<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={title} />
+{metaDescription && <meta name="twitter:description" content={metaDescription} />}
+{imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
+{jsonLd.filter(Boolean).map((schema) => <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />)}

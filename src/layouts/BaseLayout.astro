@@ -1,0 +1,62 @@
+---
+// Outermost document shell for every page: <head> (SEO, favicons), skip
+// link, header, <main>, footer. Site-wide Organization and WebSite schema
+// are added here; pages append their own via `jsonLd`.
+import '@/styles/global.css';
+import Seo from '@/components/Seo.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { organizationSchema, websiteSchema, type JsonLd } from '@/lib/seo/schema';
+
+export interface Props {
+  /** Full <title> text (use pageTitle() from lib/seo/meta). */
+  title: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  canonicalPath?: string;
+  jsonLd?: (JsonLd | undefined)[];
+}
+
+const { jsonLd = [], ...seo } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="format-detection" content="telephone=no" />
+    <Seo {...seo} jsonLd={[organizationSchema(), websiteSchema(), ...jsonLd]} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <Header />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .skip-link {
+    position: absolute;
+    left: var(--space-4);
+    top: -100px;
+    z-index: 100;
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-radius: var(--radius);
+  }
+  .skip-link:focus {
+    top: var(--space-2);
+  }
+  main:focus {
+    outline: none;
+  }
+</style>

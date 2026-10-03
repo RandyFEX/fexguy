@@ -1,0 +1,73 @@
+---
+// Site footer: footer navigation, contact details (only those that are
+// configured), and copyright line.
+import { site } from '@/config/site';
+
+const year = new Date().getFullYear();
+const owner = site.organizationName || site.name;
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    {
+      site.footerNav.length > 0 && (
+        <nav aria-label="Footer">
+          <ul class="site-footer__nav">
+            {site.footerNav.map((item) => (
+              <li>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+    {
+      (site.phoneE164 || site.email) && (
+        <address class="site-footer__contact">
+          {site.phoneE164 && <a href={`tel:${site.phoneE164}`}>{site.phoneDisplay}</a>}
+          {site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}
+        </address>
+      )
+    }
+    <slot />
+    <p class="site-footer__copy">&copy; {year} {owner}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+    padding-block: var(--space-8);
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .site-footer__inner {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .site-footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: inherit;
+  }
+  .site-footer__contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-6);
+    font-style: normal;
+  }
+  .site-footer__copy {
+    margin: 0;
+  }
+</style>

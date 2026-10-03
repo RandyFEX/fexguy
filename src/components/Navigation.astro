@@ -1,0 +1,137 @@
+---
+// Primary navigation. On small screens it collapses behind a menu button;
+// on wider screens it's an inline list. Without JavaScript the list is
+// simply always visible (progressive enhancement), so nothing is ever
+// unreachable. Renders nothing until primaryNav is set in src/config/site.ts.
+import { site } from '@/config/site';
+
+const current = Astro.url.pathname;
+const items = site.primaryNav;
+const isCurrent = (href: string) => href === current || (href !== '/' && current.startsWith(href));
+---
+
+{
+  items.length > 0 && (
+    <nav class="nav" aria-label="Primary">
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav-list" hidden>
+        <span class="nav__toggle-bar" aria-hidden="true" />
+        <span>Menu</span>
+      </button>
+      <ul id="primary-nav-list" class="nav__list">
+        {items.map((item) => (
+          <li>
+            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
+
+<script>
+  // ~300 bytes: reveal the toggle and wire it up only when JS runs.
+  const toggle = document.querySelector<HTMLButtonElement>('.nav__toggle');
+  const list = document.getElementById('primary-nav-list');
+  if (toggle && list) {
+    toggle.hidden = false;
+    list.dataset.collapsible = 'true';
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  }
+</script>
+
+<style>
+  .nav__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--tap-target);
+    padding: var(--space-2) var(--space-3);
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font: inherit;
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  .nav__toggle[hidden] {
+    display: none;
+  }
+  .nav__toggle-bar,
+  .nav__toggle-bar::before,
+  .nav__toggle-bar::after {
+    display: block;
+    width: 1.1rem;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+  }
+  .nav__toggle-bar::before,
+  .nav__toggle-bar::after {
+    content: '';
+    position: absolute;
+  }
+  .nav__toggle-bar::before {
+    top: -6px;
+  }
+  .nav__toggle-bar::after {
+    top: 6px;
+  }
+
+  .nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__list[data-collapsible] {
+    display: none;
+  }
+  .nav__toggle[aria-expanded='true'] + .nav__list {
+    display: block;
+    position: absolute;
+    inset-inline: 0;
+    top: 100%;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-4) var(--space-4);
+  }
+  .nav__list a {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .nav__list a:hover,
+  .nav__list a[aria-current='page'] {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  @media (min-width: 56rem) {
+    .nav__toggle,
+    .nav__toggle:not([hidden]) {
+      display: none;
+    }
+    .nav__list,
+    .nav__list[data-collapsible] {
+      display: flex;
+      gap: var(--space-6);
+      position: static;
+      padding: 0;
+      border: 0;
+    }
+  }
+</style>

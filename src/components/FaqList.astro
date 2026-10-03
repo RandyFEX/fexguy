@@ -1,0 +1,48 @@
+---
+// Question/answer list rendered as native <details> (no JavaScript). Pair
+// with faqSchema() in the page's jsonLd so the visible content and the
+// structured data always match.
+import type { FaqItem } from '@/lib/seo/schema';
+
+export interface Props {
+  items: FaqItem[];
+}
+
+const { items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <div class="faq">
+      {items.map((item) => (
+        <details class="faq__item">
+          <summary>
+            <h3 class="faq__q">{item.question}</h3>
+          </summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .faq__item {
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-3);
+  }
+  .faq__item summary {
+    cursor: pointer;
+    min-height: var(--tap-target);
+    display: flex;
+    align-items: center;
+  }
+  .faq__q {
+    display: inline;
+    font-size: 1.0625rem;
+    margin: 0;
+  }
+  .faq__item p {
+    margin: var(--space-2) 0 0;
+  }
+</style>

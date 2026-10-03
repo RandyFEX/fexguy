@@ -1,0 +1,16 @@
+---
+// TEMPORARY homepage scaffold. Replace with the real homepage once content
+// is provided from the existing WordPress site. Like every page, it is
+// noindexed until PUBLIC_ALLOW_INDEXING=true (see .env.example).
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Section from '@/components/Section.astro';
+import { site } from '@/config/site';
+import { webPageSchema } from '@/lib/seo/schema';
+---
+
+<BaseLayout title={site.name} jsonLd={[webPageSchema({ path: '/', title: site.name })]}>
+  <Section narrow>
+    <h1>{site.name}</h1>
+    <p>Site architecture scaffold. Content has not been migrated yet.</p>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,73 @@
+---
+// Call-to-action band. With no props it uses the site-wide CTA from
+// src/config/site.ts; renders nothing if no heading is available.
+import { site, type NavItem } from '@/config/site';
+import PhoneButton from './PhoneButton.astro';
+import ButtonLink from './ButtonLink.astro';
+
+export interface Props {
+  heading?: string;
+  text?: string;
+  link?: NavItem;
+  showPhone?: boolean;
+  /** Unique id if more than one CTA appears on a page. */
+  id?: string;
+}
+
+const {
+  heading = site.cta.heading,
+  text = site.cta.text,
+  link = site.cta.link,
+  showPhone = true,
+  id = 'cta',
+} = Astro.props;
+
+const headingId = `${id}-heading`;
+---
+
+{
+  heading && (
+    <section class="cta" aria-labelledby={headingId}>
+      <div class="container cta__inner">
+        <h2 id={headingId}>{heading}</h2>
+        {text && <p class="cta__text">{text}</p>}
+        <slot />
+        <div class="cta__actions">
+          {showPhone && <PhoneButton />}
+          {link && (
+            <ButtonLink href={link.href} variant="secondary">
+              {link.label}
+            </ButtonLink>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .cta {
+    background: var(--color-surface);
+    border-block: 1px solid var(--color-border);
+    padding-block: var(--space-12);
+    text-align: center;
+  }
+  .cta__inner {
+    max-width: var(--prose-max);
+  }
+  .cta__text {
+    color: var(--color-text-muted);
+  }
+  .cta__actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+  }
+  @media (min-width: 30rem) {
+    .cta__actions {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+</style>

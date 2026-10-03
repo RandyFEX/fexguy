@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Section from '@/components/Section.astro';
+import ButtonLink from '@/components/ButtonLink.astro';
+import { pageTitle } from '@/lib/seo/meta';
+---
+
+<BaseLayout title={pageTitle('Page not found')} noindex>
+  <Section narrow>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has moved.</p>
+    <ButtonLink href="/">Go to the homepage</ButtonLink>
+  </Section>
+</BaseLayout>

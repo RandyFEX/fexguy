@@ -1,0 +1,50 @@
+---
+// Generic content section with an optional heading. The heading is linked
+// via aria-labelledby so each section is a named landmark-like region that
+// screen readers, search engines, and AI crawlers can understand.
+export interface Props {
+  heading?: string;
+  /** Heading level; keep the outline logical (one h1 per page). */
+  level?: 2 | 3;
+  /** Stable id, also usable as an in-page anchor (#id). */
+  id?: string;
+  intro?: string;
+  tone?: 'default' | 'surface';
+  /** Constrain content to a readable line length. */
+  narrow?: boolean;
+}
+
+const { heading, level = 2, id, intro, tone = 'default', narrow = false } = Astro.props;
+const Heading = `h${level}` as 'h2' | 'h3';
+const sectionId = id ?? (heading ? heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') : undefined);
+const headingId = sectionId ? `${sectionId}-heading` : undefined;
+---
+
+<section id={sectionId} class:list={['section', `section--${tone}`]} aria-labelledby={heading ? headingId : undefined}>
+  <div class:list={['container', { 'section__narrow': narrow }]}>
+    {heading && <Heading id={headingId}>{heading}</Heading>}
+    {intro && <p class="section__intro">{intro}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .section {
+    padding-block: var(--space-12);
+  }
+  .section--surface {
+    background: var(--color-surface);
+  }
+  .section__narrow {
+    max-width: calc(var(--prose-max) + 2 * var(--space-6));
+  }
+  .section__intro {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+  }
+  @media (min-width: 48rem) {
+    .section {
+      padding-block: var(--space-16);
+    }
+  }
+</style>

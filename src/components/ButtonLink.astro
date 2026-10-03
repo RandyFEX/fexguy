@@ -1,0 +1,13 @@
+---
+// A link styled as a button — for internal/external calls to action that
+// aren't phone calls.
+export interface Props {
+  href: string;
+  variant?: 'primary' | 'secondary';
+  block?: boolean;
+}
+
+const { href, variant = 'primary', block = false } = Astro.props;
+---
+
+<a href={href} class:list={['btn', `btn--${variant}`, { 'btn--block': block }]}><slot /></a>

@@ -1,0 +1,54 @@
+---
+// Click-to-call button. Renders nothing until a phone number is set in
+// src/config/site.ts, so an unconfigured number can never ship.
+import { site } from '@/config/site';
+
+export interface Props {
+  /** Visible text; defaults to the formatted phone number. */
+  label?: string;
+  variant?: 'primary' | 'secondary';
+  block?: boolean;
+  /** Show just "Call" on very small screens (number stays in the accessible name). */
+  compact?: boolean;
+  class?: string;
+}
+
+const { label, variant = 'primary', block = false, compact = false, class: className } = Astro.props;
+const text = label || site.phoneDisplay;
+---
+
+{
+  site.phoneE164 && (
+    <a
+      href={`tel:${site.phoneE164}`}
+      class:list={['btn', 'phone-btn', `btn--${variant}`, { 'btn--block': block, 'phone-btn--compact': compact }, className]}
+      aria-label={label ? `${label}: ${site.phoneDisplay}` : `Call ${site.phoneDisplay}`}
+    >
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z" />
+      </svg>
+      {compact && <span class="phone-btn__short" aria-hidden="true">Call</span>}
+      <span class="phone-btn__text">{text}</span>
+    </a>
+  )
+}
+
+<style>
+  .phone-btn {
+    white-space: nowrap;
+  }
+  .phone-btn__short {
+    display: none;
+  }
+  @media (max-width: 29.99rem) {
+    .phone-btn--compact {
+      padding-inline: var(--space-4);
+    }
+    .phone-btn--compact .phone-btn__short {
+      display: inline;
+    }
+    .phone-btn--compact .phone-btn__text {
+      display: none;
+    }
+  }
+</style>

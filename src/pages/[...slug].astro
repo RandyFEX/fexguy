@@ -1,0 +1,38 @@
+---
+// Renders every Markdown page in src/content/pages/ at a URL matching its
+// file path. This is where migrated WordPress pages live — adding a page
+// never requires touching this file.
+import { render } from 'astro:content';
+import PageLayout from '@/layouts/PageLayout.astro';
+import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
+
+export async function getStaticPaths() {
+  const pages = await getPublishedPages();
+  return pages
+    .filter((entry) => pagePath(entry) !== '/') // homepage is src/pages/index.astro
+    .map((entry) => ({
+      params: { slug: pagePath(entry).replace(/^\/|\/$/g, '') },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props as { entry: PageEntry };
+const { Content } = await render(entry);
+const data = entry.data;
+---
+
+<PageLayout
+  title={data.title}
+  metaTitle={data.metaTitle}
+  description={data.description}
+  canonicalPath={data.canonicalPath}
+  ogImage={data.ogImage?.src}
+  noindex={data.noindex}
+  publishDate={data.publishDate}
+  updatedDate={data.updatedDate}
+  breadcrumbs={data.breadcrumbs}
+  faq={data.faq}
+  showCta={data.showCta}
+>
+  <Content />
+</PageLayout>
