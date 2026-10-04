@@ -130,8 +130,6 @@ sidebar: true
 
 <h2 id="family-benefit-life">#<strong>2 – Family Benefit Life</strong></h2>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/Family-Benefit-Life-Logo.png" alt="Final Expense Insurance Companies-4"></figure>
-
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE</strong></strong></strong></strong>: Yes, with Final Expense Guy</p>
 
 <p><strong>Financial Rating: </strong>A+ BBB Rating</p>
@@ -338,8 +336,6 @@ sidebar: true
 
 <h2 id="american-amicable">#<strong>5 – American Amicable</strong></h2>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/American-Amicable-Logo.png" alt=""></figure>
-
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong>Yes, with Final Expense Guy</p>
 
 <p><strong>Financial Rating: </strong>A (excellent)</p>
@@ -407,8 +403,6 @@ sidebar: true
 
 <h2 id="aetna">#<strong>6 – Aetna</strong></h2>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/1Aetna-Logo-1.jpg" alt=""></figure>
-
 <p><strong><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong></strong>Yes, with Final Expense Guy</p>
 
 <p><strong>Business Rating</strong>: A.M. Best – A</p>
@@ -473,8 +467,6 @@ sidebar: true
 <p class="quote-cta"><a class="button-link" href="#quote">GET AETNA QUOTE</a></p>
 
 <h2 id="liberty-bankers">#<strong>7 –  Liberty Bankers</strong></h2>
-
-<figure><img decoding="async" loading="lazy" width="400" height="100" src="/wp-content/uploads/2019/09/Liberty-Bankers-Life-Logo-250-Width.png" alt=""></figure>
 
 <p><strong><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong></strong>Yes, with Final Expense Guy</p>
 
@@ -552,8 +544,6 @@ sidebar: true
 
 <h2 id="prosperity">#<strong>8 – Prosperity Life</strong></h2>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/Prosperity-Life-Group-Logo.jpg" alt=""></figure>
-
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong>Yes, with Final Expense Guy </p>
 
 <p><strong>Financial Rating: </strong>A- (Excellent) rating from A.M. Best</p>
@@ -619,8 +609,6 @@ sidebar: true
 
 <h2 id="guarantee-trust-life">#<strong>9 – Guarantee Trust Life</strong></h2>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/Guarantee-Trust-Life-Logo.png" alt=""></figure>
-
 <p><strong><strong><strong><strong><strong>1ST-DAY BENEFITS:</strong></strong> </strong></strong></strong>Yes, with Final Expense Guy </p>
 
 <p><strong>Financial Rating</strong>: B++ (Very Good) by A.M. Best Company</p>
@@ -680,8 +668,6 @@ sidebar: true
 <p class="quote-cta"><a class="button-link" href="#quote">GET GUARANTEE TRUST LIFE QUOTE</a></p>
 
 <h2 id="aig">#<strong>10 – AIG</strong></h2>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2022/01/AIG-Logo-1.jpeg" alt=""></figure>
 
 <p><strong>1st-Day Coverage:</strong> 2-year waiting period only</p>
 
