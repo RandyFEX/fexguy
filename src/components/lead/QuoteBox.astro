@@ -1,0 +1,7 @@
+---
+// Sidebar quote box (Fillout form). Markup lives in src/lib/lead/quote-box.ts
+// so in-content placements share it.
+import { quoteBoxHtml } from '@/lib/lead/quote-box';
+---
+
+<Fragment set:html={quoteBoxHtml('sidebar')} />

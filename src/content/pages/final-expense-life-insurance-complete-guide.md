@@ -5,6 +5,7 @@ robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:
 canonical: "/final-expense-life-insurance-complete-guide/"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Final Expense Life Insurance: TOP GUIDE EVER!"},{"property":"og:description","content":"Final Expense Life Insurance helps cover burial, cremation, and funeral costs with affordable lifetime rates. See how to qualify."},{"property":"og:url","content":"https://fexguy.com/final-expense-life-insurance-complete-guide/"},{"property":"og:site_name","content":"Final Expense Guy"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Final Expense Life Insurance: TOP GUIDE EVER!"},{"name":"twitter:description","content":"Final Expense Life Insurance helps cover burial, cremation, and funeral costs with affordable lifetime rates. See how to qualify."}]
 source: "wordpress-export"
+sidebar: true
 ---
 
 <h1>Final Expense Whole Life Insurance Complete Guide</h1>

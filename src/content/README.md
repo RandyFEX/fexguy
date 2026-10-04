@@ -25,10 +25,16 @@ class hooks used by `src/styles/global.css` (`post-meta`, `author-box`,
 rebuilt from the WordPress export because the live URL redirected to itself
 or to a broken URL (3 pages).
 
-**Lead generation was intentionally not migrated yet:** quote forms, quote
-pop-ups, sidebar quoters, Ninja/Fluent forms, Google Form embeds, booking
-widgets, the header phone link, the header "GET RATES" bar, and the floating
-call button. Phone numbers that appear inside page text were kept as-is.
+**Lead generation** (approved October 2026) replaced the WordPress forms,
+pop-ups, quoters, Google Forms and booking widget with one Fillout form:
+
+- `sidebar: true` in frontmatter shows the quote sidebar (302 pages).
+- `<div data-quote-form></div>` on its own line places the form inside the
+  page body (12 pages, e.g. /free-quote/). Never use both on one page.
+- `<p class="quote-cta"><a class="button-link" href="#quote">…</a></p>`:
+  quote buttons restored on 9 review pages; they open the page's form.
+- Every FEXGuy phone link is `tel:8888629456`. Insurance companies' numbers
+  in reviews are their own and stay unchanged.
 
 **Rules for Phase 1:** don't rewrite content, titles, headings, or metadata.
 Every page must keep exactly one `<h1>` in its body.

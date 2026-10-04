@@ -21,6 +21,10 @@ draft: true
 # Optional: "landing" hides the site header and footer.
 # layout: landing
 
+# Optional: show the quote sidebar (Fillout form). Or place the form inside
+# the body with <div data-quote-form></div> on its own line — not both.
+# sidebar: true
+
 # Optional exact social tags and JSON-LD (migrated pages carry these).
 # headMeta: [{"property":"og:title","content":"..."}]
 # jsonLd: ["{\"@context\":\"https://schema.org\", ...}"]

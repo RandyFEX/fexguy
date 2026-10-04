@@ -8,3 +8,5 @@ source: "live"
 ---
 
 <h1>Easy Whole Life</h1>
+
+<div data-quote-form></div>

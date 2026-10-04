@@ -5,6 +5,7 @@ robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:
 canonical: "/burial-insurance/burial-insurance-arthritis/"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"property":"og:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."},{"property":"og:url","content":"https://fexguy.com/burial-insurance/burial-insurance-arthritis/"},{"property":"og:site_name","content":"Final Expense Guy"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"name":"twitter:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."}]
 source: "wordpress-export"
+sidebar: true
 ---
 
 <h1>Affordable Burial Insurance with Arthritis</h1>

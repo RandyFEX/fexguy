@@ -1,8 +1,10 @@
 ---
 // Primary navigation. Small screens: collapses behind a Menu button.
 // Items with children render as a native <details> disclosure (works without
-// JavaScript). Without JS the list is simply always visible.
+// JavaScript). Without JS the list is simply always visible. The website phone
+// number is the last item, as on the live site.
 import { site } from '@/config/site';
+import { lead } from '@/config/lead';
 
 const current = Astro.url.pathname;
 const items = site.primaryNav;
@@ -39,6 +41,11 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
             )}
           </li>
         ))}
+        {site.phoneDisplay && (
+          <li class="nav__phone">
+            <a href={lead.phone.href}>{site.phoneDisplay}</a>
+          </li>
+        )}
       </ul>
     </nav>
   )
@@ -86,6 +93,14 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     cursor: pointer;
   }
   .nav__toggle[hidden] {
+    display: none;
+  }
+  /* With JavaScript the menu starts collapsed (set before first paint via the
+     .js class on <html>), so the page doesn't jump when this script runs. */
+  :global(.js) .nav__toggle[hidden] {
+    display: inline-flex;
+  }
+  :global(.js) .nav__list {
     display: none;
   }
   .nav__toggle-bar,
@@ -150,6 +165,10 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
   .nav__sub a {
     font-weight: 400;
   }
+  .nav__list .nav__phone a {
+    color: var(--color-accent);
+    font-weight: 700;
+  }
   .nav__list a:hover,
   .nav__list a[aria-current='page'] {
     color: var(--color-primary);
@@ -158,11 +177,13 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
 
   @media (min-width: 56rem) {
     .nav__toggle,
-    .nav__toggle:not([hidden]) {
+    .nav__toggle:not([hidden]),
+    :global(.js) .nav__toggle[hidden] {
       display: none;
     }
     .nav__list,
-    .nav__list[data-collapsible] {
+    .nav__list[data-collapsible],
+    :global(.js) .nav__list {
       display: flex;
       align-items: center;
       gap: var(--space-6);

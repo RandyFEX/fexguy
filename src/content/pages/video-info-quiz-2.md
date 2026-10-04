@@ -22,7 +22,7 @@ source: "live"
 
 <iframe loading="lazy" src="https://adilo.bigcommand.com/watch/ik3t5UiJ " allowfullscreen></iframe>
 
-<div class="button-link"><a href="tel:888-862-9456"><strong>INSTANT QUOTE<br>CALL NOW FOR RATES</strong></a></div>
+<div class="button-link"><a href="tel:8888629456"><strong>INSTANT QUOTE<br>CALL NOW FOR RATES</strong></a></div>
 
 <div class="button-link"><a href="/book/" target="_blank" rel="noreferrer noopener"><strong>SCHEDULE A 5-MINUTE<br>QUOTE CALL RIGHT NOW</strong></a></div>
 
@@ -54,7 +54,7 @@ source: "live"
 
 <p><strong>NO HASSLE GUARANTEE: </strong>If you’re not completely satisfied with your rate, I’ll delete your information – no strings attached. Your peace of mind is our priority.</p>
 
-<div class="button-link"><a href="tel:888-862-9456"><strong>INSTANT QUOTE<br>CALL NOW FOR RATES</strong></a></div>
+<div class="button-link"><a href="tel:8888629456"><strong>INSTANT QUOTE<br>CALL NOW FOR RATES</strong></a></div>
 
 <div class="button-link"><a href="/book/"><strong>SCHEDULE A 5-MINUTE<br>QUOTE CALL RIGHT NOW</strong></a></div>
 
@@ -70,6 +70,8 @@ source: "live"
 
 <p><br><strong>(OPTIONAL, BUT BENEFICIAL)</strong><br><strong>2-MINUTE HEALTH QUIZ</strong></p>
 
+<div data-quote-form></div>
+
 <p><a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Privacy Policy</a>&#160;-&#160;<a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> - <a href="https://funeralfunds.com/contact/" target="_blank" rel="noopener">Contact</a>&#160;Your information is private &amp; is not shared. By pressing button above you agree to our privacy policy &amp; to receive information from Funeral Funds via email, phone, SMS or MMS messages.</p>
 
-<p><a href="tel:(888) 862-9456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>
+<p><a href="tel:8888629456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>

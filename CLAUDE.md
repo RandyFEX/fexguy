@@ -17,16 +17,41 @@ is in place; see src/content/README.md for how pages were migrated.
 - Phase 1 is an exact migration: don't change any migrated page's URL,
   title, meta description, H1, body content, robots, canonical, social
   tags, or JSON-LD without Randy's approval.
-- Don't build forms, quoters, call buttons, tracking, or other lead-generation
-  functionality until Randy approves the lead-system plan.
+- **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
+  as a FEXGuy.com / Final Expense Guy / Randy / quote / sales contact number.
+  888-656-4648 is Randy's TV/streaming ad number and must never appear on the
+  site. Insurance companies' own customer-service numbers in reviews stay as
+  they are (never replace them with 888-862-9456).
+- The lead system (below) was approved by Randy in October 2026. Don't add
+  other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
+  change what is sent to GA4/Meta, without his approval.
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
 
+## Lead system
+
+- One form everywhere: Fillout form `pJBgSNEtN9us` (settings in
+  `src/config/lead.ts`). Markup: `src/lib/lead/quote-box.ts`; loader:
+  `src/scripts/quote-form.ts` (loads the ~4 MB embed late — keep it that way).
+- Sidebar form: frontmatter `sidebar: true` (pages that had the WordPress
+  sidebar). In-content form: put `<div data-quote-form></div>` on its own line
+  in the page body. At most one form per page.
+- Tracking (`src/scripts/tracking.ts`): GA4 `G-JMYZE458HQ` and Meta pixel
+  `2351342698972751`, loaded directly — no GTM, Stape, server-side tagging,
+  or Conversions API. GA4 `generate_lead` + Meta `Lead` fire only on Fillout's
+  verified `form_submit` message; GA4 `click_to_call` on taps of
+  `tel:8888629456` (no Meta event for phone taps). Never send personal
+  information. Meta Automatic Advanced Matching and automatic event setup
+  stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
+- Phone placements: header nav, CTA bar under the header, pre-footer CTA,
+  mobile call button (`src/components/lead/`). No pop-ups.
+
 ## Where things go
 
-- Business details, phone, nav menus, default CTA: `src/config/site.ts`
+- Business details, phone, nav menus, footer: `src/config/site.ts`
+- Lead form and tracking IDs: `src/config/lead.ts`
 - Pages: Markdown files in `src/content/pages/` (path = URL; `index.md` is
   the homepage). Template: `src/content/_templates/page.example.md`.
   Schema: `src/content.config.ts`. Rendered by `src/layouts/ContentLayout.astro`.

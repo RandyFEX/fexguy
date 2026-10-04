@@ -3,8 +3,9 @@
 The rebuild of FEXGUY.com as a static [Astro](https://astro.build) site, deployed on Vercel.
 
 > **Status:** Phase 1 migration. All 339 live WordPress URLs are rebuilt with
-> identical URLs, titles, metadata, headings, and content. Lead-generation
-> (forms, quoters, call buttons, tracking) and redirects are not built yet.
+> identical URLs, titles, metadata, headings, and content. The approved lead
+> system is built: Fillout quote form, phone placements, GA4 + Meta tracking
+> (see CLAUDE.md "Lead system"). Redirects are not built yet.
 > No domain is connected and search-engine indexing is disabled (see below).
 > The live FEXGUY.com is still the WordPress site.
 
@@ -25,20 +26,24 @@ astro.config.mjs        Site URL, static output, trailing slashes, sitemap
 vercel.json             Vercel build settings, redirects, caching/security headers
 src/
   config/site.ts        Logo, nav menu, footer content, icons (one place)
+  config/lead.ts        Phone number, Fillout form, GA4/Meta IDs
   content.config.ts     Content schema for pages (validated at build time)
   content/
     pages/              One file per page (339 migrated); file path = URL
     _templates/         Copy-from template for new pages
     README.md           How to add/migrate pages and redirects
   layouts/
-    BaseLayout.astro    <html>/<head>, skip link, header, main, footer
-    ContentLayout.astro Renders a content page (SEO from frontmatter + body)
+    BaseLayout.astro    <html>/<head>, skip link, header, CTA bar, main,
+                        pre-footer, footer, mobile call button, site scripts
+    ContentLayout.astro Renders a content page (SEO from frontmatter + body,
+                        quote sidebar when `sidebar: true`)
   components/
     Seo.astro           Title, description, canonical, robots, OG/Twitter, JSON-LD
-    Header.astro        Logo/wordmark, navigation, call button
-    Navigation.astro    Primary nav with accessible mobile menu toggle
+    Header.astro        Logo/wordmark, navigation
+    Navigation.astro    Primary nav (ends with the phone number), mobile menu
     Footer.astro        Footer nav, contact details, copyright
-    PhoneButton.astro   Click-to-call button (not used until lead-gen is approved)
+    PhoneButton.astro   Click-to-call button (tel:8888629456)
+    lead/               Quote box, CTA bar, pre-footer, mobile call button
     ButtonLink.astro    Link styled as a button
     CallToAction.astro  CTA band (site-wide default or per-page)
     Section.astro       Labeled content section
@@ -46,6 +51,10 @@ src/
     pages.ts            Page queries and URL helpers
     seo/schema.ts       JSON-LD builders for new pages
     seo/meta.ts         Title formatting
+    lead/               Quote box markup + Markdown plugin for in-content forms
+  scripts/
+    quote-form.ts       Loads the Fillout form late (keeps pages fast)
+    tracking.ts         GA4 + Meta Pixel (production hostname only)
   pages/
     index.astro         Homepage (renders src/content/pages/index.md)
     [...slug].astro     Renders every page in src/content/pages/

@@ -1,0 +1,9 @@
+---
+// Mobile-only call button pinned to the bottom of the screen (replaces the
+// "Call Now Button" plugin; same text as on the live site). Landing pages
+// whose content already contains that button (#callnowbutton) get the same
+// styling from global.css instead, so this isn't rendered twice.
+import { lead } from '@/config/lead';
+---
+
+<a class="call-sticky" href={lead.phone.href}>GET RATES NOW (888) 862-9456</a>

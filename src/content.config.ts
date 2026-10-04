@@ -37,6 +37,9 @@ const pages = defineCollection({
     headMeta: z.array(headMeta).default([]),
     /** JSON-LD blocks, emitted verbatim. */
     jsonLd: z.array(z.string()).default([]),
+    /** Show the quote sidebar (Fillout form). True on the pages that had the
+     * quote sidebar on the WordPress site. */
+    sidebar: z.boolean().default(false),
     /** Where the content came from: "live" (fexguy.com), "wordpress-export", or "new". */
     source: z.string().optional(),
     /** Drafts are never built. */

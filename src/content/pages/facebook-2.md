@@ -20,7 +20,7 @@ source: "live"
 
 <p><strong>Call me</strong> right now at <a href="" target="_blank"><strong>888-862-9456</strong></a>.</p>
 
-<p><strong>Randy VanderVaate</strong><br>The Final Expense Guy<br>Licensed in all 50 States<br>www.fexguy.com<br><strong><a href="tel:+18888629456">888-862-9456</a></strong></p>
+<p><strong>Randy VanderVaate</strong><br>The Final Expense Guy<br>Licensed in all 50 States<br>www.fexguy.com<br><strong><a href="tel:8888629456">888-862-9456</a></strong></p>
 
 <p><strong>Background Info:</strong></p>
 

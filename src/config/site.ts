@@ -19,9 +19,11 @@ export interface SiteConfig {
   description: string;
   organizationName: string;
   locale: string;
-  /** Click-to-call numbers. Left empty until lead-generation is implemented
-   * (PhoneButton renders nothing while these are empty). */
+  /** The website phone number (888-862-9456 — the only number presented as a
+   * FEXGuy contact number). Click-to-call links always use
+   * `lead.phone.href` (tel:8888629456) from src/config/lead.ts. */
   phoneDisplay: string;
+  /** E.164 form, for structured data only. */
   phoneE164: string;
   email: string;
   logo: { src: string; width: number; height: number; alt: string };
@@ -48,8 +50,8 @@ export const site: SiteConfig = {
   description: '',
   organizationName: 'Final Expense Guy',
   locale: 'en_US',
-  phoneDisplay: '',
-  phoneE164: '',
+  phoneDisplay: '888-862-9456',
+  phoneE164: '+18888629456',
   email: '',
   logo: { src: `${uploads}/2026/09/FINAL-EXPENSE-GUY-LOGO-340-X-250.png`, width: 2034, height: 250, alt: 'Final Expense Guy' },
   icons: [

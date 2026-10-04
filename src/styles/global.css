@@ -18,6 +18,12 @@
   --color-primary-hover: #1e40af;
   --color-on-primary: #ffffff;
   --color-focus: #f59e0b;
+  /* Phone links (the live site used orange #fe7301; darkened to pass WCAG
+     contrast on white). */
+  --color-accent: #c2410c;
+  /* Mobile call button (the live site used green #00bb00; darkened so the
+     white text passes WCAG contrast). */
+  --color-call: #007a00;
 
   --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
@@ -378,5 +384,114 @@ a:hover {
 @media (min-width: 48rem) {
   .wp-content .comment-replies {
     padding-left: var(--space-8);
+  }
+}
+
+/* Lead generation -----------------------------------------------------------
+   Quote box (Fillout form placeholder → embed), restored in-content quote
+   buttons, and the mobile call button. See CLAUDE.md "Lead system". */
+
+.quote-box {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.quote-box__title {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Space is reserved for the form up front (about its loaded height), so
+   nothing on the page moves when the embed replaces the placeholder. */
+.quote-box__slot {
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.quote-box.is-loaded .quote-box__slot {
+  display: block;
+  padding: 0;
+}
+
+.quote-box__embed {
+  width: 100%;
+  height: 40rem;
+  /* Fillout resizes this box to fit the form; never let it collapse below
+     the reserved space while the form is loading (that would make the page
+     jump). */
+  min-height: 40rem;
+}
+
+/* Hidden until the form reports it's ready (see quote-form.ts). */
+.quote-box__embed:not(.is-ready) iframe {
+  visibility: hidden;
+}
+
+/* Beside the article the sidebar is narrow and the loaded form is taller
+   (measured ~811px), so reserve more there. */
+@media (min-width: 64rem) {
+  .quote-box--sidebar .quote-box__slot,
+  .quote-box--sidebar .quote-box__embed {
+    min-height: 51rem;
+  }
+}
+
+.quote-box__phone {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.wp-content .quote-box {
+  margin-block: var(--space-6);
+}
+
+.wp-content .quote-cta {
+  text-align: center;
+}
+
+.call-sticky,
+.wp-content a#callnowbutton {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: var(--space-2) var(--space-4) calc(var(--space-2) + env(safe-area-inset-bottom));
+  background: var(--color-call);
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Keep the end of the page clear of the fixed button. */
+body {
+  padding-bottom: 3.5rem;
+}
+
+/* Mobile only, as on the live site. */
+@media (min-width: 48rem) {
+  .call-sticky,
+  .wp-content a#callnowbutton {
+    display: none;
+  }
+  body {
+    padding-bottom: 0;
   }
 }

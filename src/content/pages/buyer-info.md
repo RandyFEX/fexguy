@@ -23,7 +23,7 @@ source: "live"
 
 <figure><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2022/10/Randy-Picture-Round-500x500-1.jpg" alt=""></figure>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
 
 <h2 id="h-1-know-what-plans-to-shop-for">#1 – KNOW WHAT PLANS TO SHOP FOR</h2>
 
@@ -76,7 +76,7 @@ source: "live"
 </li>
 </ul>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
 <h2 id="h-2-find-the-best-funeral-insurance-company"># 2 – FIND THE BEST FUNERAL INSURANCE COMPANY</h2>
 
@@ -193,7 +193,7 @@ source: "live"
 </tbody>
 </table>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
 
 <h2 id="h-3-consider-your-health-amp-illnesses"># 3 – CONSIDER YOUR HEALTH &amp; ILLNESSES</h2>
 
@@ -256,7 +256,7 @@ source: "live"
 <li>Downs Syndrome</li>
 </ul>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></a></div>
 
 <h2 id="h-4-determine-how-much-coverage-you-need"># 4 – DETERMINE HOW MUCH COVERAGE YOU NEED</h2>
 
@@ -358,7 +358,7 @@ source: "live"
 
 <p>Most companies will allow you up to at least <strong>$25,000</strong>, but you should decide based on what fits your budget.</p>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
 <h2 id="h-5-get-qualified"># 5 – GET QUALIFIED</h2>
 
@@ -366,10 +366,10 @@ source: "live"
 
 <p>Randy VanderVaate<br>Final Expense Guy.com<br>(888) 862-9456</p>
 
-<div class="button-link"><a href="tel:18888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
+<div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
 <p><strong><a href="/about/" target="_blank" rel="noreferrer noopener">VISIT MY ABOUT PAGE</a><br><a href="https://www.youtube.com/@FuneralFunds" target="_blank" rel="noreferrer noopener">VISIT MY YOUTUBE CHANNEL</a><br><a href="https://www.facebook.com/funeralfunds" target="_blank" rel="noreferrer noopener">VISIT MY FACEBOOK PAGE</a></strong></p>
 
 <p><a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Privacy Policy</a>&#160;-&#160;<a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> - <a href="https://funeralfunds.com/contact/" target="_blank" rel="noopener">Contact</a>&#160;Your information is private &amp; is not shared. By pressing button above you agree to our privacy policy &amp; to receive information from Funeral Funds via email, phone, SMS or MMS messages.</p>
 
-<p><a href="tel:(888) 862-9456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>
+<p><a href="tel:8888629456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>

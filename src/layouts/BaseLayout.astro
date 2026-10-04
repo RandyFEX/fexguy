@@ -1,11 +1,16 @@
 ---
 // Document shell for every page: <head> (SEO, icons), skip link, header,
-// <main>, footer. "landing" pages (former WordPress landing-page template)
-// render without the site header and footer, as they did on the live site.
+// call-to-action bar, <main>, pre-footer, footer, mobile call button, and the
+// site scripts (quote form loader, tracking). "landing" pages (former
+// WordPress landing-page template) render without the site header, CTA bar,
+// pre-footer and footer, as they did on the live site.
 import '@/styles/global.css';
 import Seo, { type HeadMeta } from '@/components/Seo.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import CtaBar from '@/components/lead/CtaBar.astro';
+import PreFooter from '@/components/lead/PreFooter.astro';
+import StickyCall from '@/components/lead/StickyCall.astro';
 import { site } from '@/config/site';
 
 export interface Props {
@@ -17,9 +22,12 @@ export interface Props {
   headMeta?: HeadMeta[];
   jsonLd?: string[];
   layout?: 'default' | 'landing';
+  /** Render the mobile call button. Off for pages whose content already has
+   * the live site's call button (#callnowbutton). */
+  stickyCall?: boolean;
 }
 
-const { layout = 'default', ...seo } = Astro.props;
+const { layout = 'default', stickyCall = true, ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,6 +35,8 @@ const { layout = 'default', ...seo } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Lets CSS collapse the mobile menu before first paint (no layout shift). -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
     {site.icons.map((icon) => <link rel={icon.rel} href={icon.href} sizes={icon.sizes} />)}
     <Seo {...seo} />
     <slot name="head" />
@@ -34,10 +44,17 @@ const { layout = 'default', ...seo } = Astro.props;
   <body class:list={{ 'is-landing': layout === 'landing' }}>
     <a class="skip-link" href="#main">Skip to main content</a>
     {layout !== 'landing' && <Header />}
+    {layout !== 'landing' && <CtaBar />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
+    {layout !== 'landing' && <PreFooter />}
     {layout !== 'landing' && <Footer />}
+    {stickyCall && <StickyCall />}
+    <script>
+      import '@/scripts/tracking';
+      import '@/scripts/quote-form';
+    </script>
   </body>
 </html>
 

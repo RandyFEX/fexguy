@@ -20,7 +20,7 @@ source: "live"
 
 <iframe loading="lazy" width="616" height="346" src="https://www.youtube.com/embed/q3VEttz8JJM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p> <strong>We have assigned a specialist who will call you within 24 hours and provide you with individualized pricing and coverage options.</strong>* <br><br><strong>FOR IMMEDIATE HELP OR PRICING</strong> <strong>CALL US AT:</strong><br><a href="tel:(888) 862-9456"><strong>(888) 862-9456</strong></a></p>
+<p> <strong>We have assigned a specialist who will call you within 24 hours and provide you with individualized pricing and coverage options.</strong>* <br><br><strong>FOR IMMEDIATE HELP OR PRICING</strong> <strong>CALL US AT:</strong><br><a href="tel:8888629456"><strong>(888) 862-9456</strong></a></p>
 
 <p><img decoding="async" loading="lazy" src="/wp-content/uploads/2019/10/READ-OUR-REVIEWS.png" alt="" width="462" height="61"></p>
 
@@ -44,10 +44,10 @@ source: "live"
 
 <p><img decoding="async" loading="lazy" src="/wp-content/uploads/2019/10/WHO-ARE-WE.png" alt="" width="465" height="63"></p>
 
-<p>Final Expense Guy Was Founded In 2008<br><br> First-Day Coverage Specialists<br><br>Licensed In All 50 States<br><br>Access To Over 20 A-Rated Insurance Companies<br><br>Call Us Directly At <strong><a href="tel:(888) 862-9456">(888) 862-9456</a></strong></p>
+<p>Final Expense Guy Was Founded In 2008<br><br> First-Day Coverage Specialists<br><br>Licensed In All 50 States<br><br>Access To Over 20 A-Rated Insurance Companies<br><br>Call Us Directly At <strong><a href="tel:8888629456">(888) 862-9456</a></strong></p>
 
 <p>*Monday through Friday, and excludes holidays.</p>
 
 <p><a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Privacy Policy</a>&#160;-&#160;<a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> - <a href="https://funeralfunds.com/contact/" target="_blank" rel="noopener">Contact</a>&#160;Your information is private &amp; is not shared. By pressing button above you agree to our privacy policy &amp; to receive information from Funeral Funds via email, phone, SMS or MMS messages.</p>
 
-<p><a href="tel:(888) 862-9456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>
+<p><a href="tel:8888629456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>

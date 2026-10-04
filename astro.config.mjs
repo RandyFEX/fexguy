@@ -2,6 +2,8 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { satteri } from '@astrojs/markdown-satteri';
+import { quoteFormPlugin } from './src/lib/lead/quote-form-plugin.ts';
 
 // Keep in sync with `url` in src/config/site.ts.
 const SITE_URL = 'https://fexguy.com';
@@ -49,6 +51,10 @@ export default defineConfig({
     // The whole stylesheet is a few KB, so inline it on every page: no
     // render-blocking CSS request, which helps First/Largest Contentful Paint.
     inlineStylesheets: 'always',
+  },
+  markdown: {
+    // <div data-quote-form></div> in page Markdown -> the Fillout quote box.
+    processor: satteri({ hastPlugins: [quoteFormPlugin] }),
   },
   integrations: [
     sitemap({
