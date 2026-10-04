@@ -244,6 +244,11 @@
       "source": "/category/activities-of-daily-living-adls/",
       "destination": "/burial-insurance/adl-activities-of-daily-living/",
       "statusCode": 301
+    },
+    {
+      "source": "/globe-life-burial-insurance-review/",
+      "destination": "/globe-life-price-increase/",
+      "statusCode": 301
     }
   ],
   "headers": [
