@@ -241,6 +241,108 @@ is in place; see src/content/README.md for how pages were migrated.
   /primerica-life-insurance-review-bad-deal/ → /primerica-life-insurance-review/
   /primerica-life-insurance-review-protected-or-neglected/ → /primerica-life-insurance-review/
   /term-life-insurance-for-doctors/ → /term-life-insurance-doctors/
+- **Group D approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 98 old
+  URLs of articles that were duplicated to new URLs in May–June 2026 and
+  archived as "-old" drafts without redirects; each archived original's text
+  is 97–100% contained in the destination. Approved mappings:
+  /affordable-burial-insurance-with-gout/ → /burial-insurance/burial-insurance-with-gout/
+  /american-amicable-life-insurance-review/ → /burial-insurance/american-amicable-life-insurance-review/
+  /american-amicable-review/ → /burial-insurance/american-amicable-life-insurance-review/
+  /big-lou-term-life-insurance-review-scam/ → /big-lou-term-life-insurance-review/
+  /borrowing-against-cash-value-pros-and-cons/ → /burial-insurance/borrowing-against-cash-value/
+  /burial-insurance-adl-activities-of-daily-living/ → /burial-insurance/adl-activities-of-daily-living/
+  /burial-insurance-arrhythmia/ → /burial-insurance/arrhythmia/
+  /burial-insurance-arthritis/ → /burial-insurance/burial-insurance-arthritis/
+  /burial-insurance-bathing-disability-adl/ → /burial-insurance/bathing-disability-adl/
+  /burial-insurance-brother/ → /burial-insurance/brother/
+  /burial-insurance-cbd-oil/ → /burial-insurance/cbd-oil/
+  /burial-insurance-cirrhosis/ → /burial-insurance/cirrhosis/
+  /burial-insurance-contestability-period/ → /burial-insurance/contestability-period/
+  /burial-insurance-cystic-fibrosis/ → /burial-insurance/cystic-fibrosis/
+  /burial-insurance-dave-ramsey/ → /burial-insurance/final-expense-life-insurance-dave-ramsey/
+  /burial-insurance-disability-2/ → /burial-insurance/disability/
+  /burial-insurance-disability/ → /burial-insurance/disability/
+  /burial-insurance-donating-your-body-to-science/ → /burial-insurance/donating-your-body-to-science/
+  /burial-insurance-down-syndrome/ → /burial-insurance/down-syndrome/
+  /burial-insurance-drug-abuse-treatment/ → /burial-insurance/drug-abuse-treatment/
+  /burial-insurance-dui-dwi/ → /burial-insurance/dui-dwi/
+  /burial-insurance-felony-conviction/ → /burial-insurance/felony-conviction/
+  /burial-insurance-fibromyalgia/ → /burial-insurance/fibromyalgia/
+  /burial-insurance-for-blood-thinner-users/ → /burial-insurance/blood-thinner/
+  /burial-insurance-for-dialysis-patients/ → /burial-insurance/dialysis-patients/
+  /burial-insurance-for-hospice-patients/ → /burial-insurance/hospice-patients/
+  /burial-insurance-for-overweight-and-obese-people/ → /burial-insurance/overweight-obese/
+  /burial-insurance-for-parents/ → /burial-insurance/parents/
+  /burial-insurance-for-sister/ → /burial-insurance/sister/
+  /burial-insurance-for-terminally-ill-patients/ → /burial-insurance/terminally-ill-patients/
+  /burial-insurance-for-the-blind/ → /burial-insurance/blind/
+  /burial-insurance-for-veterans/ → /burial-insurance/veterans/
+  /burial-insurance-heart-bypass-surgery/ → /burial-insurance/heart-bypass-surgery/
+  /burial-insurance-heart-disease-circulatory-issues/ → /burial-insurance/heart-disease/
+  /burial-insurance-heart-disease/ → /burial-insurance/heart-disease/
+  /burial-insurance-help-with-continence-activities-of-daily-living-adl/ → /burial-insurance/continence-activities-of-daily-living-adl/
+  /burial-insurance-help-with-eating-activities-of-daily-living-adl/ → /burial-insurance/eating-activities-of-daily-living-adl/
+  /burial-insurance-help-with-toileting-activities-of-daily-living-adl/ → /burial-insurance/toileting-activities-of-daily-living-adl/
+  /burial-insurance-help-with-transferring/ → /burial-insurance/transferring-activities-of-daily-living-adl/
+  /burial-insurance-hepatitis-b/ → /burial-insurance/hepatitis-b/
+  /burial-insurance-hepatitis-c/ → /burial-insurance/hepatitis-c/
+  /burial-insurance-high-blood-pressure/ → /burial-insurance/high-blood-pressure/
+  /burial-insurance-high-cholesterol/ → /burial-insurance/high-cholesterol/
+  /burial-insurance-hospitalized/ → /burial-insurance/hospitalized/
+  /burial-insurance-insulin-dependent-diabetics/ → /burial-insurance/insulin-diabetics/
+  /burial-insurance-insulin-use/ → /burial-insurance/insulin-diabetics/
+  /burial-insurance-kidney-disease/ → /burial-insurance/kidney-disease/
+  /burial-insurance-leukemia/ → /burial-insurance/leukemia/
+  /burial-insurance-liver-disease/ → /burial-insurance/liver-disease/
+  /burial-insurance-lupus/ → /burial-insurance/lupus/
+  /burial-insurance-medical-marijuana/ → /burial-insurance/medical-marijuana/
+  /burial-insurance-melanoma-skin-cancer/ → /burial-insurance/melanoma-skin-cancer/
+  /burial-insurance-muscular-dystrophy/ → /burial-insurance/muscular-dystrophy/
+  /burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/ → /burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/
+  /burial-insurance-nursing-home-residents/ → /burial-insurance/nursing-home-residents/
+  /burial-insurance-on-blood-thinners/ → /burial-insurance/blood-thinner/
+  /burial-insurance-paralysis-paralyzed/ → /burial-insurance/paralysis-paralyzed/
+  /burial-insurance-peripheral-vascular-disease-pvd-pad/ → /burial-insurance/peripheral-vascular-disease-pvd-pad/
+  /burial-insurance-scams/ → /burial-insurance/scams/
+  /burial-insurance-scleroderma/ → /burial-insurance/scleroderma/
+  /burial-insurance-terminal-illness/ → /burial-insurance/terminal-illness/
+  /burial-insurance-wheelchair-users/ → /burial-insurance/wheelchair-users/
+  /burial-insurance-with-crohns-disease/ → /burial-insurance/crohns-disease/
+  /burial-insurance-with-first-day-coverage/ → /burial-insurance/with-first-day-coverage/
+  /burial-insurance-with-no-exam/ → /burial-insurance/life-insurance-no-exam/
+  /burial-insurance-with-no-waiting-period/ → /burial-insurance/life-insurance-with-no-waiting-period/
+  /burial-insurance-with-prion-disease/ → /burial-insurance/prion-disease/
+  /burial-insurance-with-sarcoidosis-3/ → /burial-insurance/sarcoidosis/
+  /burial-insurance-with-sarcoidosis/ → /burial-insurance/sarcoidosis/
+  /burial-vs-cremation-pros-cons/ → /burial-vs-cremation/
+  /cancer-insurance-what-is-it-why-you-need-it/ → /cancer-insurance/
+  /colonial-penn-life-insurance-review/ → /colonial-penn-burial-insurance-review/
+  /declined-for-life-insurance-what-to-do-now/ → /declined-for-life-insurance/
+  /elks-lodge-member-life-insurance/ → /elks-lodge-life-insurance-options/
+  /ethos-life-insurance-review-term-life-whole-life-plans/ → /ethos-life-insurance-review/
+  /fidelity-life-burial-insurance-review-pros-cons/ → /fidelity-life-burial-insurance-review/
+  /final-expense-insurance-for-pastors-and-congregations/ → /burial-insurance/final-expense-insurance-for-pastors-and-congregations/
+  /final-expense-life-insurance-no-exam/ → /burial-insurance/life-insurance-no-exam/
+  /final-expense-life-insurance-with-cardiomyopathy/ → /burial-insurance/cardiomyopathy/
+  /final-expense-life-insurance-with-pre-existing-conditions/ → /final-expense-life-insurance-pre-existing-conditions/
+  /foresters-burial-insurance-review-pros-cons/ → /foresters-burial-insurance-review/
+  /gerber-guaranteed-issue-life-insurance-review/ → /gerber-life-insurance-review/
+  /guaranteed-issue-life-insurance-for-seniors-2/ → /burial-insurance/guaranteed-issue-life-insurance-for-seniors/
+  /how-to-apply-for-burial-insurance/ → /burial-insurance/how-to-apply-for-burial-insurance/
+  /how-to-pay-for-a-funeral-without-life-insurance/ → /pay-for-a-funeral-without-life-insurance/
+  /is-burial-insurance-permanent/ → /burial-insurance/is-burial-insurance-permanent/
+  /life-insurance-build-chart/ → /burial-insurance/build-chart/
+  /life-insurance-for-dialysis-patients/ → /burial-insurance/dialysis-patients/
+  /life-insurance-for-seniors-your-best-option-at-50-to-85-years-old/ → /burial-insurance/life-insurance-for-seniors/
+  /life-insurance-policies-with-no-waiting-period-2/ → /burial-insurance/life-insurance-with-no-waiting-period/
+  /open-care-seniors-burial-insurance-review-pros-cons/ → /open-care-life-insurance-review/
+  /senior-legacy-life-insurance-review/ → /senior-legacy-life-review/
+  /senior-life-insurance-company-review/ → /senior-life-insurance-review/
+  /term-life-insurance-truckers-2/ → /term-life-insurance-truckers/
+  /trinity-life-burial-insurance-review-pros-cons-2/ → /trinity-life-insurance-review/
+  /trinity-life-burial-insurance-review-pros-cons/ → /trinity-life-insurance-review/
+  /trinity-life-burial-insurance-review/ → /trinity-life-insurance-review/
+  /united-heritage-burial-insurance-review-pros-cons/ → /united-heritage-burial-insurance-review/
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -264,6 +366,12 @@ is in place; see src/content/README.md for how pages were migrated.
   that T2 sells/issues insurance or that the premiums are T2 rates, claims
   about government affiliation (or its appearance), and regulatory/legal
   claims needing verification or sourcing.
+- **Pre-launch content review (migration fidelity)**: these pages show
+  substantially less text than their WordPress-export versions (the new pages
+  were built from what the live pages display). Don't restore or change them
+  until reviewed with Randy: /final-expense-life-insurance-pre-existing-conditions/
+  (about 56% of the export text), /trinity-life-insurance-review/ (about 78%),
+  /colonial-penn-burial-insurance-review/ (about 82%).
 - Internal links awaiting the link cleanup (don't change until Randy decides
   each): the 14 "whole life" links to /best-whole-life-insurance-plans/ and
   the "Neuropathy" link on /a-z-health/ (broken); the 2 links to
