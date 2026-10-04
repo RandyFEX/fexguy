@@ -59,8 +59,8 @@ is in place; see src/content/README.md for how pages were migrated.
   Randy approved (October 2026; `source: "new"`), not the old WordPress post.
   Mortgage protection is a legitimate part of the business: present it as a
   reason for buying life insurance, never as a scam. Its contextual link to
-  /t2-life-insurance/ waits for that page's pre-launch review. The
-  /mortgage-protection/ 301 to it is pending Randy's go-ahead; the old quote
+  /t2-life-insurance/ waits for that page's pre-launch review.
+  /mortgage-protection/ 301s to it (approved; old page not restored); the old quote
   URLs (/mortgage-protection-quote/, /mortgage-protection-2/,
   /mortgage-protection-quoter/) stay retired 404s.
 - **T2 is not an insurer or a policy.** A "T2 form" is a lead-generation

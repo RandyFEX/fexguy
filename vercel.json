@@ -259,6 +259,11 @@
       "source": "/t2-form-scam/",
       "destination": "/t2-life-insurance/",
       "statusCode": 301
+    },
+    {
+      "source": "/mortgage-protection/",
+      "destination": "/mortgage-protection-life-insurance/",
+      "statusCode": 301
     }
   ],
   "headers": [
