@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>How Much Burial Insurance Do I Need?</h1>
 
-<img fetchpriority="high" decoding="async" loading="eager" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png" alt="Final Expense Guy">
+<picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
 <p>last updated on April 20, 2026</p>
 
@@ -395,7 +395,7 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <h5>About Final Expense Guy</h5>
 
-<img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
+<picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 

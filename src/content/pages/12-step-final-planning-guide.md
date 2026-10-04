@@ -38,8 +38,6 @@ source: "live"
 
 <p>If you choose to donate organs or tissues, it is best to do it during your driver’s license renewal. Check the box for “organ donor” for whole body donation. Check the medical schools or independent donation programs near your area.</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-1-Organ-and-Tissue-Donation-1024x536.png" alt=""></figure>
-
 <p>Whole-body donation programs can provide free copies of death certificates, body transportation, cremation, and the return of your ashes to your family.</p>
 
 <p>Let your family know if you choose to donate your organ, tissue, or body to science. Also, make sure that you leave some instructions in your will so that your loved ones will know what to do when you pass away.</p>
@@ -55,8 +53,6 @@ source: "live"
 <p>Choosing between burial and cremation is a personal prerogative. It should be based on your budget, personal beliefs, religion, and other preferences.</p>
 
 <p>We enumerated below the pros and cons of burial and cremation to help you decide on what method of disposition to use.</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-2-Method-of-Disposition-1024x536.png" alt=""></figure>
 
 <p><strong>Burial Pros:</strong></p>
 
@@ -102,8 +98,6 @@ source: "live"
 <p>If you decide to go for a traditional burial, it’s time to choose a casket for your funeral arrangements. Deciding which type of casket, you want will prevent your family from overspending during an emotional time.</p>
 
 <p>Do some research on the different types of caskets and their cost. Doing research will help you choose a beautiful casket that fits your budget.</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-3-Choosing-a-Casket-1024x536.png" alt=""></figure>
 
 <p><strong>Different Types of Caskets:</strong></p>
 
@@ -189,8 +183,6 @@ source: "live"
 
 <p>Step 10 – Make your decision</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-4-Choosing-a-Funeral-Home-1024x536.png" alt=""></figure>
-
 <p><br><strong>Guide Questions In Choosing The Right Funeral Home?</strong></p>
 
 <ol>
@@ -249,8 +241,6 @@ source: "live"
 
 <p>6. Photo</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-5-Writing-an-Obituary-1024x536.png" alt=""></figure>
-
 <p><br><strong>Tips in Writing an Obituary:</strong></p>
 
 <p>1. Prepare the basic details</p>
@@ -292,8 +282,6 @@ source: "live"
 
 <p>A burial plot is an asset, and it can appreciate in value with time.&#160;</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-6-Choosing-a-Cemetery-or-Burial-Plot-1024x536.png" alt=""></figure>
-
 <p><strong>Preventive Measures When Buying A Cemetery or Burial Plots</strong></p>
 
 <p>1. Before buying a burial plot, make sure that the seller is the owner on the record with the cemetery. Suppose the seller inherited the burial plot and the original owner neglected to inform the cemetery. In that case, they won’t be able to transfer the ownership until the inheritance issue is ironed out.</p>
@@ -308,8 +296,6 @@ source: "live"
 <p>Choosing a headstone is one important aspect if you want to be buried. Your headstone is one way of memorializing your life after you are gone.</p>
 
 <p>When choosing a headstone, it is crucial to know the cemetery rules and regulations. Set a budget and choose the appropriate materials and design to make the process less stressful.</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-7-Choosing-a-Headstone-1024x536.png" alt=""></figure>
 
 <p><strong>Steps in Selecting a Headstone:</strong></p>
 
@@ -352,8 +338,6 @@ source: "live"
 <li>Live plants</li>
 </ul>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-8-Funeral-Flowers-1024x536.png" alt=""></figure>
-
 <p>Write the types of flowers you want for your funeral.</p>
 
 <p>Write the charity or foundation you want and the details if you opt for a donation in lieu of flowers.</p>
@@ -362,8 +346,6 @@ source: "live"
 <h3 id="Week-9-–-Selecting-The-Funeral-Service"><strong><strong>STEP </strong>9 – <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h3>
 
 <p>A funeral service can be a valuable part of the grieving process for your loved ones. Choose the type of funeral service you want.</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-9-Funeral-Service-1024x536.png" alt=""></figure>
 
 <p><strong>Here are the traditional funeral or memorial services you can choose from:</strong></p>
 
@@ -398,8 +380,6 @@ source: "live"
 <p>4. Your driver’s license</p>
 
 <p>5. Your medical information</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-10-Preventing-Identity-Theft-1024x536.png" alt=""></figure>
 
 <p><strong>Advise your family that identity theft may get your information through the following:</strong></p>
 
@@ -454,8 +434,6 @@ source: "live"
 
 <p>4. Don’t flush the medication down the toilet.</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-11-Proper-Medication-Disposal-1024x536.png" alt=""></figure>
-
 <p><strong>Proper medication disposal:</strong></p>
 
 <p>1. Take-back programs – drop the unused medications at the take-back site. Authorized take-back centers may include hospitals, pharmacies, and local law enforcement agencies.</p>
@@ -484,8 +462,6 @@ source: "live"
 
 <p>Liquidating assets after your death can be a problem with your beneficiaries. It is important to leave instructions on your funeral planning guide on how you want your assets to be distributed to your beneficiaries to avoid this issue.</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/Week-12-Liquidating-Assets-1024x536.png" alt=""></figure>
-
 <p><strong>Tips on how to liquidate your assets after you pass away:</strong></p>
 
 <p>1. Prepare a will. A will can guide your beneficiaries on the proper estate liquidation. If you have real properties and vehicles, the will dictates who takes it.</p>
@@ -500,8 +476,6 @@ source: "live"
 <p id="Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral"><strong>BONUS CONTENT – SELECTING BIBLE VERSES FOR YOUR FUNERAL</strong></p>
 
 <p>You can select the bible verses you want to be read at your funeral or memorial service. When selecting the bible verses, look for words that can give comfort to your loved ones upon your passing.</p>
-
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2021/10/13-Bonus-Content-Bible-Verses-1024x536.png" alt=""></figure>
 
 <p><strong>Here are some bible verses that can give comfort:</strong></p>
 

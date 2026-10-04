@@ -438,6 +438,18 @@ is in place; see src/content/README.md for how pages were migrated.
   images of /buyers-guide/ and /12-step-final-planning-guide/; the inflation
   chart on /buyers-guide/; the missing /senior-benefits/ brochure; unused
   Funeral Funds files in public/; and the 67 missing image files.
+- **Missing images** (October 2026): WordPress lost 68 referenced image files
+  (404 on the live site too; not in the media library). Batch 1 fixed the
+  article byline/bio logo (now the current wordmark via
+  /images/logo/final-expense-guy-logo-*), the JSON-LD worksFor logo (now
+  2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png), and removed obsolete references
+  (12-step "Week" banners, 2021/2022 carrier application screenshots, the
+  2018 AARP letter, the Funeral Funds brochure, the Free Funeral For Family
+  image, an unidentified Colonial Penn image, and the 2023 kidney-failure
+  sample pricing with its intro sentence). The 39 remaining files (article
+  header/social images, six carrier logos on the top-10 page, Mutual of Omaha,
+  check-mark graphics, the state-regulated letter) wait for surgical recovery
+  from a WP Engine backup — don't restore the old uploads folder wholesale.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
@@ -496,4 +508,8 @@ is in place; see src/content/README.md for how pages were migrated.
 
 ## Before committing
 
-Run `npm run check` and `npm run build`. Both must pass with 0 errors.
+Run `npm run check` and `npm run build`. Both must pass with 0 errors. Then
+run `npm run verify` (scripts/check-dist.mjs): it crawls dist/ for internal
+links that are broken, go through a redirect or miss the trailing slash, and
+for missing image files, split into visible images (`<img>`/srcset) and
+metadata (Open Graph, Twitter, JSON-LD). Add `-- --strict` to fail on any.
