@@ -51,6 +51,13 @@ is in place; see src/content/README.md for how pages were migrated.
   this topic unless Randy asks — its traffic was people selling cemetery
   plots), /how-to-write-an-obituary/ (same: not restored, not rebuilt —
   bereavement-writing intent). Don't redirect these without Randy's approval.
+- **The Life Insurance Podcast is permanently retired** (Randy, October 2026).
+  Never restore or rebuild it: no podcast pages, episode pages, archives,
+  categories, feeds, embeds, navigation or redirects. Its 34 URLs are
+  intentional real 404s with no redirects (don't send episodes to unrelated
+  articles): /life-insurance-podcast/ (draft not restored), /podcast-episodes/,
+  /category/podcast/, /category/life-insurance-podcast/ (and /page/4/), and
+  every /…-podcast-episode-N/ URL (episodes 2, 3, 5–15, 17–31, 35).
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
