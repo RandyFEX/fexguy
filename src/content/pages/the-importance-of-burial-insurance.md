@@ -327,7 +327,7 @@ sidebar: true
 
 <p>The process of finding the best and most affordable policy is simple. You need the help of a highly experienced independent agent with access to many insurance companies. They will shop and compare prices to determine the insurer that will offer you the best deal.</p>
 
-<p>Using an independent agency like the Funeral Fund will ensure the best pricing and coverage for your age and health.</p>
+<p>Using an independent agency like Final Expense Guy will ensure the best pricing and coverage for your age and health.</p>
 
 <p>Call us at (888)862-9456 if you want to protect your family’s future by investing in a burial insurance policy. We will help you find the best plan to meet your needs and budget.</p>
 

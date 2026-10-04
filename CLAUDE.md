@@ -425,6 +425,19 @@ is in place; see src/content/README.md for how pages were migrated.
   og:image/twitter:image and JSON-LD images of /12-step-final-planning-guide/
   and /buyers-guide/; replacing those social/structured-data images needs
   Randy's approval.
+- **Funeral Funds branding** (Randy, October 2026): Final Expense Guy was
+  previously Funeral Funds of America. Keep the intentional history (the author
+  bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
+  press-article titles/URLs, customer reviews verbatim), ordinary "funeral
+  funds" wording, and the JSON-LD `alternateName: "Funeral Funds"`. Obsolete
+  visible branding was replaced with Final Expense Guy / FEXGuy.com. Still
+  pending separate decisions: the Funeral Funds social URLs (footer,
+  /buyer-info/, /funeral-relief-program/) until Randy confirms his current
+  accounts; the legal pages (/privacy-policy/, /terms-conditions/,
+  /terms-of-use/), which need a full rewrite; the Funeral Funds-branded social
+  images of /buyers-guide/ and /12-step-final-planning-guide/; the inflation
+  chart on /buyers-guide/; the missing /senior-benefits/ brochure; unused
+  Funeral Funds files in public/; and the 67 missing image files.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.

@@ -276,7 +276,7 @@ sidebar: true
 
 <p>Just about everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
-<p>To make a long story short,<strong> it is better to shop for the best burial insurance policies with a final expense insurance specialist</strong>, like FuneralFunds.com, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
+<p>To make a long story short,<strong> it is better to shop for the best burial insurance policies with a final expense insurance specialist</strong>, like Final Expense Guy, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
 <h3><strong>Increasing Price Policies</strong></h3>
 
