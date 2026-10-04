@@ -111,10 +111,9 @@ is in place; see src/content/README.md for how pages were migrated.
   /author/rvanderv8/page/2/, /3/, /9/, /12/, /14/, /19/, /21/. With G1, G2 and
   G3 done, every Group G URL has a final disposition.
 - **Redirect Groups A, C, D, E** (238 old URLs from the original redirect map)
-  were never reviewed until the October 2026 link audit found them; their old
-  URLs 404 until decided. Review all four, then implement the approved ones
-  together in one vercel.json change.
-- **Group A approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 91 old
+  were found by the October 2026 link audit, reviewed by Randy, and the 233
+  approved ones were implemented together in vercel.json (October 2026).
+- **Group A approved and implemented** (Randy, October 2026): all 91 old
   URLs that were active Rank Math 301s → 301 to the same destinations (all
   exist and return 200; no chains or loops). Includes
   /burial-insurance-amputation-amputee/ → /burial-insurance/diabetic-amputation/
@@ -211,7 +210,7 @@ is in place; see src/content/README.md for how pages were migrated.
   /ptsd-burial-insurance/ → /burial-insurance/ptsd/
   /state-regulated-life-insurance/ → /burial-insurance/state-regulated-life-insurance/
   /top-10-final-expense-life-insurance-companies/ → /burial-insurance/top-10-final-expense-life-insurance-companies/
-- **Group C approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 26 old
+- **Group C approved and implemented** (Randy, October 2026): all 26 old
   URLs that WordPress records as former slugs (_wp_old_slug) of currently
   published posts → 301 to that post's current URL (all return 200; no chains
   with Groups A or the live redirects). Approved mappings:
@@ -241,7 +240,7 @@ is in place; see src/content/README.md for how pages were migrated.
   /primerica-life-insurance-review-bad-deal/ → /primerica-life-insurance-review/
   /primerica-life-insurance-review-protected-or-neglected/ → /primerica-life-insurance-review/
   /term-life-insurance-for-doctors/ → /term-life-insurance-doctors/
-- **Group D approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 98 old
+- **Group D approved and implemented** (Randy, October 2026): all 98 old
   URLs of articles that were duplicated to new URLs in May–June 2026 and
   archived as "-old" drafts without redirects; each archived original's text
   is 97–100% contained in the destination. Approved mappings:
@@ -343,6 +342,30 @@ is in place; see src/content/README.md for how pages were migrated.
   /trinity-life-burial-insurance-review-pros-cons/ → /trinity-life-insurance-review/
   /trinity-life-burial-insurance-review/ → /trinity-life-insurance-review/
   /united-heritage-burial-insurance-review-pros-cons/ → /united-heritage-burial-insurance-review/
+- **Group E approved and implemented** (Randy, October 2026): 18 of 23 old URLs
+  whose own Rank Math rules were trashed on 2026-02-05 (the live site sent them
+  to the /search/ catch-all). Includes the 10 renamed categories (consistent
+  with the Group F category redirects) and /buried-in-lies-e-book/ (an old
+  giveaway book asset of Randy's). Approved mappings:
+  /burial-insurance-aneurysm/ → /burial-insurance/aneurysm/
+  /burial-insurance-heart-attack/ → /burial-insurance/heart-attack/
+  /burial-insurance-with-type-1-diabetes/ → /burial-insurance/diabetes/
+  /burial-life-insurance-book/ → /final-expense-life-insurance-book/
+  /buried-in-lies-e-book/ → /final-expense-life-insurance-book/
+  /category/burial-insurance-cancer/ → /category/cancer-final-expense-whole-life-insurance/
+  /category/burial-insurance-company-review/ → /category/company-reviews-final-expense-whole-life-insurance/
+  /category/burial-insurance-diabetes/ → /category/diabetes-final-expense-whole-life-insurance/
+  /category/burial-insurance-heart-circulatory-conditions/ → /category/heart-issues-final-expense-whole-life-insurance/
+  /category/burial-insurance-kidney-conditions/ → /category/kidney-conditions-final-expense-whole-life-insurance/
+  /category/burial-insurance-liver/ → /category/liver-conditions-final-expense-whole-life-insurance/
+  /category/burial-insurance-lung-respiratory/ → /category/lung-respiratory-conditions-final-expense-whole-life-insurance/
+  /category/burial-insurance-neurological-impairments/ → /category/neurological-impairments-final-expense-whole-life-insurance/
+  /category/final-expense-whole-life-insurance-company-reviews/ → /category/company-reviews-final-expense-whole-life-insurance/
+  /category/heart-circulatory-final-expense-whole-life-insurance/ → /category/heart-issues-final-expense-whole-life-insurance/
+  /globe-life-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
+  /globe-term-life-burial-insurance-review/ → /globe-life-price-increase/
+  /globe-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
+  Intentional real 404s, no redirects (old campaign/workflow URLs): /get-info/, /free-quote-now/, /facebook-quote-request/, /request-quote-compare-rates/, /state-benefits/.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
