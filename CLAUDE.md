@@ -53,7 +53,19 @@ is in place; see src/content/README.md for how pages were migrated.
   bereavement-writing intent). Don't redirect these without Randy's approval.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
-  /how-much-does-a-funeral-cost/ (301; draft not restored).
+  /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
+  into /t2-life-insurance/ (301; draft not restored).
+- **T2 is not an insurer or a policy.** A "T2 form" is a lead-generation
+  mailer marketed to seniors so it looks tied to a government program or
+  special benefit; its purpose is collecting their details for agents selling
+  ordinary life insurance. /t2-life-insurance/ must eventually read as an
+  article exposing that mailer, not a review of a company or product.
+- **Pre-launch content review list** (don't change these until reviewed with
+  Randy): /t2-life-insurance/ — check the carrier-style star rating, the
+  financial-strength section, the rate-analysis/premium table, any implication
+  that T2 sells/issues insurance or that the premiums are T2 rates, claims
+  about government affiliation (or its appearance), and regulatory/legal
+  claims needing verification or sourcing.
 - Internal links awaiting the link cleanup (don't change until Randy decides
   each): the 14 "whole life" links to /best-whole-life-insurance-plans/ and
   the "Neuropathy" link on /a-z-health/ (broken); the 2 links to

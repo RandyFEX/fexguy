@@ -254,6 +254,11 @@
       "source": "/funeral-expenses-people-overlook/",
       "destination": "/how-much-does-a-funeral-cost/",
       "statusCode": 301
+    },
+    {
+      "source": "/t2-form-scam/",
+      "destination": "/t2-life-insurance/",
+      "statusCode": 301
     }
   ],
   "headers": [
