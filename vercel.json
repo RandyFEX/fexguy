@@ -84,6 +84,166 @@
       "source": "/burial-insurance/final-expense-insurance-application-process/",
       "destination": "/burial-insurance/burial-insurance-application-process/",
       "statusCode": 301
+    },
+    {
+      "source": "/colonial-penn-995-life-insurance-scam-revealed/",
+      "destination": "/colonial-penn-burial-insurance-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/royal-neighbors-of-america-burial-insurance-review/",
+      "destination": "/royal-neighbors-of-america/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-cancer-patients/",
+      "destination": "/burial-insurance/cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/valife-insurance-review/",
+      "destination": "/valife/",
+      "statusCode": 301
+    },
+    {
+      "source": "/life-insurance-policies-with-no-waiting-period/",
+      "destination": "/burial-insurance/life-insurance-with-no-waiting-period/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-diabetic-amputation/",
+      "destination": "/burial-insurance/diabetic-amputation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/valife-life-insurance-review/",
+      "destination": "/valife/",
+      "statusCode": 301
+    },
+    {
+      "source": "/state-farm-burial-insurance-review/",
+      "destination": "/state-farm/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-mental-illness/",
+      "destination": "/burial-insurance/mental-health-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-myelodysplastic-syndrome/",
+      "destination": "/burial-insurance/myelodysplastic-syndrome/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-stroke/",
+      "destination": "/burial-insurance/stroke-tia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-alzheimers-disease/",
+      "destination": "/burial-insurance/dementia-alzheimers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-hodgkins-disease/",
+      "destination": "/burial-insurance/hodgkins-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-prostate-cancer/",
+      "destination": "/burial-insurance/prostate-cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-pre-existing-condition/",
+      "destination": "/final-expense-life-insurance-pre-existing-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-heart-transplant/",
+      "destination": "/burial-insurance/organ-transplant/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-life-insurance-widows/",
+      "destination": "/burial-insurance/life-insurance-widows/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-lung-disease/",
+      "destination": "/burial-insurance/lung-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-company-review/page/3/",
+      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-company-review/page/2/",
+      "destination": "/category/company-reviews-final-expense-whole-life-insurance/page/2/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-company-review/page/4/",
+      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/randy-vandervaate/",
+      "destination": "/randy-vandervaate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-neurological-impairments/page/3/",
+      "destination": "/category/neurological-impairments-final-expense-whole-life-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-colorectal-cancer/",
+      "destination": "/burial-insurance/colorectal-cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/life-insurance-for-cancer-patients/",
+      "destination": "/burial-insurance/cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-kidney-dialysis/",
+      "destination": "/burial-insurance/dialysis-patients/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-seizure/",
+      "destination": "/burial-insurance/epilepsy-seizures/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-for-cancer-patients/",
+      "destination": "/burial-insurance/cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-marijuana-illegal-drugs/",
+      "destination": "/burial-insurance/marijuana-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-diabetes/",
+      "destination": "/burial-insurance/diabetes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-kidney-dialysis-end-stage-renal-failure/",
+      "destination": "/burial-insurance/dialysis-patients/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/activities-of-daily-living-adls/",
+      "destination": "/burial-insurance/adl-activities-of-daily-living/",
+      "statusCode": 301
     }
   ],
   "headers": [
