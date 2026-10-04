@@ -47,7 +47,9 @@ is in place; see src/content/README.md for how pages were migrated.
   Old URLs decided as 404 with no redirect: /book/, the two
   /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
   /best-whole-life-insurance-plans/ (draft not restored; also no redirect for
-  its -old slug). Don't redirect these without Randy's approval.
+  its -old slug), /selling-a-burial-plot/ (draft not restored; don't rebuild
+  this topic unless Randy asks — its traffic was people selling cemetery
+  plots). Don't redirect these without Randy's approval.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored).
@@ -55,7 +57,8 @@ is in place; see src/content/README.md for how pages were migrated.
   each): the 14 "whole life" links to /best-whole-life-insurance-plans/ and
   the "Neuropathy" link on /a-z-health/ (broken); the 2 links to
   /funeral-expenses-people-overlook/ (work via the 301; point them straight at
-  /how-much-does-a-funeral-cost/ later).
+  /how-much-does-a-funeral-cost/ later); the "READ THE FULL WEEK 6 ARTICLE"
+  link on /12-step-final-planning-guide/ (broken).
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
