@@ -257,8 +257,6 @@ sidebar: true
 </tbody>
 </table>
 
-<figure><img fetchpriority="high" decoding="async" loading="eager" src="/wp-content/uploads/2019/03/Life-Insurance-Arthritis-e1551625502124.jpg" alt=""></figure>
-
 <h2 id="do-i-need-to-take-medical-exam"><br><strong>Do I Need To Take A Medical Exam To Qualify For Burial Insurance?</strong></h2>
 
 <p>No. You are not required to take a medical exam to qualify for burial insurance. You don't need to submit blood and urine samples either.</p>
