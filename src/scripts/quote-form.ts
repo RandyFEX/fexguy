@@ -26,22 +26,34 @@ if (box && slot) {
     embed.setAttribute('data-fillout-dynamic-resize', '');
     slot.replaceChildren(embed);
     box.classList.add('is-loaded');
-    // Fillout's page shifts its own layout while it starts up, and Chrome
-    // counts layout shifts inside iframes toward the page's CLS. Keep the
-    // iframe invisible (Fillout's loading spinner shows meanwhile) until the
-    // form reports itself ready, or at most a few seconds.
-    const reveal = () => embed.classList.add('is-ready');
+    // Fillout's form keeps rearranging itself for a moment after it reports
+    // "ready" (it resizes as its anti-spam row appears), and Chrome counts
+    // layout shifts inside iframes toward the page's CLS. Keep the iframe
+    // invisible (a spinner shows meanwhile) until its size has stopped
+    // changing for SETTLE_MS — but never longer than MAX_AFTER_READY_MS after
+    // the form says it's ready (or MAX_HIDDEN_MS overall), so a visitor is
+    // never kept waiting.
+    const SETTLE_MS = 1200;
+    const MAX_AFTER_READY_MS = 4000;
+    const MAX_HIDDEN_MS = 10000;
+    let settle: ReturnType<typeof setTimeout> | undefined;
+    const reveal = () => {
+      if (embed.classList.contains('is-ready')) return;
+      clearTimeout(settle);
+      window.removeEventListener('message', onMessage);
+      embed.classList.add('is-ready');
+    };
     const onMessage = (e: MessageEvent) => {
       const frame = embed.querySelector('iframe');
       if (e.origin !== lead.fillout.embedOrigin || !frame || e.source !== frame.contentWindow) return;
       const type = (e.data as { type?: unknown } | null)?.type;
-      if (type === 'form_init' || type === 'form_resized' || type === 'page_change') {
-        window.removeEventListener('message', onMessage);
-        reveal();
-      }
+      if (type === 'form_init') setTimeout(reveal, MAX_AFTER_READY_MS);
+      if (type !== 'form_resized') return;
+      clearTimeout(settle);
+      settle = setTimeout(reveal, SETTLE_MS);
     };
     window.addEventListener('message', onMessage);
-    setTimeout(reveal, 8000);
+    setTimeout(reveal, MAX_HIDDEN_MS);
     // Fillout's loader scans the page for embeds when it runs.
     const script = document.createElement('script');
     script.src = lead.fillout.script;

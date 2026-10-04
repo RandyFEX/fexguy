@@ -63,6 +63,7 @@ src/
     llms.txt.ts         AI answer-engine index of pages
   styles/global.css     Design tokens, base styles, buttons (mobile-first)
 public/wp-content/      Images at their original WordPress paths
+public/images/logo/     Optimized logo copies (scripts/optimize-logo.mjs)
 ```
 
 ## Indexing gate

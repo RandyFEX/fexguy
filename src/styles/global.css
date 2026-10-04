@@ -433,9 +433,34 @@ a:hover {
   min-height: 40rem;
 }
 
-/* Hidden until the form reports it's ready (see quote-form.ts). */
+/* Hidden until the form has stopped resizing (see quote-form.ts); a plain
+   spinner shows meanwhile. */
+.quote-box__embed {
+  position: relative;
+}
+
 .quote-box__embed:not(.is-ready) iframe {
   visibility: hidden;
+}
+
+.quote-box__embed:not(.is-ready)::before {
+  content: '';
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: -1rem;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: quote-spin 0.8s linear infinite;
+}
+
+@keyframes quote-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Beside the article the sidebar is narrow and the loaded form is taller

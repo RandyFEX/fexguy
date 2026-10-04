@@ -8,7 +8,7 @@ jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organiza
 source: "live"
 ---
 
-<p><a href="/"><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="250" src="/wp-content/uploads/2026/09/FINAL-EXPENSE-GUY-LOGO-340-X-250.png" alt="Final Expense Guy"></a>   Call us at(888) 862-9456</p>
+<p><a href="/"><picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w, /images/logo/final-expense-guy-logo-1200.avif 1200w, /images/logo/final-expense-guy-logo-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="250" src="/images/logo/final-expense-guy-logo-800.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w, /images/logo/final-expense-guy-logo-1200.webp 1200w, /images/logo/final-expense-guy-logo-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)" alt="Final Expense Guy"></picture></a>   Call us at(888) 862-9456</p>
 
 <h1>Pricing</h1>
 
