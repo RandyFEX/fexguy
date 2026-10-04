@@ -4,7 +4,88 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "trailingSlash": true,
-  "redirects": [],
+  "redirects": [
+    {
+      "source": "/iuls-for-truckers/",
+      "destination": "/iul-book/iuls-for-truckers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/iul-military-members-veterans/",
+      "destination": "/iul-book/iul-military-members-veterans/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-insurance-application-process/",
+      "destination": "/burial-insurance/burial-insurance-application-process/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-much-does-cremation-cost/",
+      "destination": "/how-much-cremation-cost/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-much-does-cremation-cost-od/",
+      "destination": "/how-much-cremation-cost/",
+      "statusCode": 301
+    },
+    {
+      "source": "/life-insurance-with-no-waiting-period/",
+      "destination": "/burial-insurance/life-insurance-with-no-waiting-period/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-over-70/",
+      "destination": "/burial-insurance/over-70/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-over-70-od/",
+      "destination": "/burial-insurance/over-70/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-life-insurance-diabetic-shock-insulin-shock/",
+      "destination": "/burial-insurance/diabetic-insulin-shock/",
+      "statusCode": 301
+    },
+    {
+      "source": "/iul-police-officers-firefighters/",
+      "destination": "/iul-book/iul-police-officers-firefighters/",
+      "statusCode": 301
+    },
+    {
+      "source": "/iul-church-members-faith-based-communities/",
+      "destination": "/iul-book/iul-church-members-faith-based-communities/",
+      "statusCode": 301
+    },
+    {
+      "source": "/teachers-indexed-universal-life-iul/",
+      "destination": "/iul-book/teachers-indexed-universal-life-iul/",
+      "statusCode": 301
+    },
+    {
+      "source": "/aetna-burial-insurance-review-2/",
+      "destination": "/aetna-burial-insurance-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-life-insurance-diabetic-insulin-shock/",
+      "destination": "/burial-insurance/diabetic-insulin-shock/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-insulin-shock/",
+      "destination": "/burial-insurance/diabetic-insulin-shock/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance/final-expense-insurance-application-process/",
+      "destination": "/burial-insurance/burial-insurance-application-process/",
+      "statusCode": 301
+    }
+  ],
   "headers": [
     {
       "source": "/_astro/(.*)",
