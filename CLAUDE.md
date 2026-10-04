@@ -25,6 +25,13 @@ is in place; see src/content/README.md for how pages were migrated.
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
   change what is sent to GA4/Meta, without his approval.
+- **Ninja Forms is retired**, along with its integrations (including the old
+  Agent CRM workflows). Never preserve or rebuild Ninja Forms functionality.
+  But don't delete a page just because it once held a Ninja Form: judge the
+  page itself (content, traffic, links, SEO value, current purpose) and, if it
+  stays, replace the old form appropriately (with Randy's approval).
+- Removed URLs return a real 404 (no redirect) unless Randy approves a
+  redirect. Removed so far: /application/, /conservation/.
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
