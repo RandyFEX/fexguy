@@ -27,8 +27,10 @@ is in place; see src/content/README.md for how pages were migrated.
   change what is sent to GA4/Meta, without his approval.
 - **Retired workflows** (never preserve or rebuild): the Google Forms
   suitability-questionnaire/mailed-report funnel (/easy/ pages), the Fluent
-  Forms health quizzes, the recruiting/job-application pages, and the
-  /book/ booking links.
+  Forms health quizzes, the recruiting/job-application pages, the /book/
+  booking links, and the old term-life quote pages with their quoters
+  (Quoteplicity, NinjaQuoter). A new term-life quote experience will be built
+  from scratch later; the old pages must not influence it.
 - **Ninja Forms is retired**, along with its integrations (including the old
   Agent CRM workflows). Never preserve or rebuild Ninja Forms functionality.
   But don't delete a page just because it once held a Ninja Form: judge the
@@ -37,7 +39,7 @@ is in place; see src/content/README.md for how pages were migrated.
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
   redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
-  /easy-term-life/, /quote-final-expense/.
+  /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/.
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
