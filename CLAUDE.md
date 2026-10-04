@@ -369,7 +369,7 @@ is in place; see src/content/README.md for how pages were migrated.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json now holds 289 redirects.
+  /sitemap-index.xml. vercel.json holds 290 redirects (with /planning-guide/).
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -407,13 +407,24 @@ is in place; see src/content/README.md for how pages were migrated.
   /12-step-final-planning-guide/ were removed (weeks 3–12 and the Bible-verses
   button; the planning text stays). "Neuropathy" on /a-z-health/ is plain
   text: don't link generic neuropathy to /burial-insurance/diabetic-neuropathy/
-  (/burial-insurance-neuropathy/ stays a real 404). Still held, unchanged until
-  Randy decides: the 5 links to the two missing PDFs
-  (/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf:
-  3 on /12-step-final-planning-guide/, 1 on /planning-guide/;
-  /wp-content/uploads/2025/01/FEX-BUYERS-GUIDE-091024-3.pdf: 1 on
-  /buyers-guide/), and the old Funeral Funds consent/disclosure text on 17
-  pages.
+  (/burial-insurance-neuropathy/ stays a real 404). The old Funeral Funds
+  consent/disclosure text on the remaining pages is still held until Randy
+  decides.
+- **Both old PDFs are permanently retired** (Randy, October 2026): the Funeral
+  Funds "Funeral & Estate Planning Guide"
+  (/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf)
+  and the Funeral Funds "Final Expense Insurance Buyers Guide"
+  (/wp-content/uploads/2025/01/FEX-BUYERS-GUIDE-091024-3.pdf). Never migrate,
+  rebuild, rebrand or restore them; their URLs stay real 404s with no
+  redirects. /planning-guide/ (the old opt-in page for the planning PDF) is
+  retired and 301s to /12-step-final-planning-guide/ (approved); the
+  Resources menu item is "FUNERAL PLANNING GUIDE" linking straight to
+  /12-step-final-planning-guide/. /buyers-guide/ stays as the HTML article.
+  The two cover images (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg,
+  2025/01/FEX-BUYERS-GUIDE-IMAGE*.png) are kept only because they are still the
+  og:image/twitter:image and JSON-LD images of /12-step-final-planning-guide/
+  and /buyers-guide/; replacing those social/structured-data images needs
+  Randy's approval.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.

@@ -12,7 +12,7 @@ source: "live"
 
 <h1>12 Step Final Planning Guide</h1>
 
-<p>Our 12-week final planning guide will help you document your final wishes. Just follow the simple in this article and our <a href="/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf" target="_blank" rel="noreferrer noopener"><strong>Funeral &amp; Estate Planning Guide</strong></a> to make your funeral planning easier. </p>
+<p>Our 12-week final planning guide will help you document your final wishes. Just follow the simple steps in this article to make your funeral planning easier.</p>
 
 <p>Be sure to keep your completed Funeral &amp; Estate Planning Guide with your insurance policy and other important financial documents so that your loved ones can follow your wishes after you are gone.</p>
 
@@ -35,10 +35,6 @@ source: "live"
 </ul>
 
 <p>Print out and complete our Funeral &amp; Estate Planning Guide, and then <br>keep a copy with your other important legal and financial documents.</p>
-
-<figure><a href="/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" width="590" height="774" src="/wp-content/uploads/2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg" alt=""></a></figure>
-
-<div class="button-link"><a href="/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf" target="_blank" rel="noreferrer noopener">DOWNLOAD OUR FUNERAL &amp; ESTATE PLANNING GUIDE HERE</a></div>
 
 <h3 id="Week-1-–-Organ-And-Tissue-Donation"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h3>
 

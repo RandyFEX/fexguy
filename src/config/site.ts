@@ -70,7 +70,7 @@ export const site: SiteConfig = {
         { label: 'A TO Z HEALTH CONDITIONS ACCEPTED', href: '/a-z-health/' },
         { label: 'BURIAL INSURANCE COMPLETE GUIDE', href: '/burial-insurance/' },
         { label: 'Final Expense Life Insurance Shopper • 1st-Time Shopper Guide', href: '/final-expense-life-insurance-book/' },
-        { label: 'FREE FUNERAL & PLANNING GUIDE', href: '/planning-guide/' },
+        { label: 'FUNERAL PLANNING GUIDE', href: '/12-step-final-planning-guide/' },
         { label: 'IUL Playbook: How It Works, What It Promises, & What It Delivers', href: '/iul-book/' },
       ],
     },

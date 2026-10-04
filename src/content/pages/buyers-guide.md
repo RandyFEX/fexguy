@@ -14,8 +14,6 @@ source: "live"
 
 <p>To help you understand your best plan and pricing options, we put together this “Final Expense Insurance Buyers Guide”. It’s an easy 2-3 minute read, so read it right now to save money and purchase the best plan with the lowest pricing.</p>
 
-<figure><a href="/wp-content/uploads/2025/01/FEX-BUYERS-GUIDE-091024-3.pdf" target="_blank" rel=" noreferrer noopener"><img fetchpriority="high" decoding="async" loading="eager" width="791" height="1024" src="/wp-content/uploads/2025/01/FEX-BUYERS-GUIDE-IMAGE-791x1024.png" alt=""></a></figure>
-
 <iframe loading="lazy" src="https://player.vimeo.com/video/561548651?autoplay=1" width="640" height="200" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="h-we-don-t-sell-garbage"><strong>WE DON’T SELL GARBAGE</strong></h3>
