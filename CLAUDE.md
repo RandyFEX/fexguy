@@ -171,6 +171,19 @@ is in place; see src/content/README.md for how pages were migrated.
 - Phone placements: header nav, CTA bar under the header, pre-footer CTA,
   mobile call button (`src/components/lead/`). No pop-ups.
 
+## Planned: site search (build after the URL/redirect cleanup)
+
+- Randy wants real site search at /search/ (requirement recorded October
+  2026; not built yet). It searches the published Astro content (titles and
+  body text) and returns relevant existing pages only: never retired URLs,
+  404s, drafts, or obsolete workflow/utility pages.
+- A search box must be available near the bottom of every page, as on the
+  old site.
+- The old WordPress/Rank Math behavior that sent missing URLs to /search/ is
+  permanently retired and must never be recreated. The migrated /search/ page
+  ("SEARCH - 404 REDIRECT") is not content to keep; the new search replaces
+  it. Don't retire or redirect /search/ in the meantime.
+
 ## Where things go
 
 - Business details, phone, nav menus, footer: `src/config/site.ts`
