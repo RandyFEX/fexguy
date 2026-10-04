@@ -110,6 +110,107 @@ is in place; see src/content/README.md for how pages were migrated.
   /blog/page/10/, /12/, /13/, /26/, /27/, /28/. Author archives:
   /author/rvanderv8/page/2/, /3/, /9/, /12/, /14/, /19/, /21/. With G1, G2 and
   G3 done, every Group G URL has a final disposition.
+- **Redirect Groups A, C, D, E** (238 old URLs from the original redirect map)
+  were never reviewed until the October 2026 link audit found them; their old
+  URLs 404 until decided. Review all four, then implement the approved ones
+  together in one vercel.json change.
+- **Group A approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 91 old
+  URLs that were active Rank Math 301s → 301 to the same destinations (all
+  exist and return 200; no chains or loops). Includes
+  /burial-insurance-amputation-amputee/ → /burial-insurance/diabetic-amputation/
+  (kept despite the narrower destination: active Rank Math rule, 355 hits, 6
+  internal links, no better amputation page). Approved mappings:
+  /aetna-burial-insurance-review-pros-cons/ → /aetna-burial-insurance-review/
+  /american-legion-member-life-insurance/ → /american-legion-life-insurance/
+  /bipolar-disorder-burial-insurance/ → /burial-insurance/bipolar-disorder/
+  /burial-insurance-abdominal-aortic-aneurysm/ → /burial-insurance/aneurysm/
+  /burial-insurance-aids-hiv/ → /burial-insurance/aids-hiv/
+  /burial-insurance-alcohol-abuse/ → /burial-insurance/drug-alcohol-abuse/
+  /burial-insurance-als-lou-gehrigs-disease/ → /burial-insurance/lou-gehrigs-disease-als/
+  /burial-insurance-amputation-amputee/ → /burial-insurance/diabetic-amputation/
+  /burial-insurance-and-coronavirus/ → /burial-insurance/and-coronavirus/
+  /burial-insurance-and-suicide/ → /burial-insurance/and-suicide/
+  /burial-insurance-angina/ → /burial-insurance/angina/
+  /burial-insurance-angioplasty/ → /burial-insurance/heart-surgery/
+  /burial-insurance-asthma/ → /burial-insurance/asthma/
+  /burial-insurance-atrial-fibrillation-afib/ → /burial-insurance/afib/
+  /burial-insurance-autism/ → /burial-insurance/autism/
+  /burial-insurance-brain-tumor/ → /burial-insurance/brain-tumor/
+  /burial-insurance-cerebral-palsy/ → /burial-insurance/cerebral-palsy/
+  /burial-insurance-chronic-bronchitis/ → /burial-insurance/chronic-bronchitis/
+  /burial-insurance-circulatory-surgery/ → /burial-insurance/heart-surgery/
+  /burial-insurance-coronary-artery-disease/ → /burial-insurance/coronary-artery-disease/
+  /burial-insurance-dementia/ → /burial-insurance/dementia-alzheimers/
+  /burial-insurance-depression/ → /burial-insurance/depression/
+  /burial-insurance-diabetic-coma/ → /burial-insurance/diabetic-coma/
+  /burial-insurance-disabled-persons/ → /burial-insurance/disabled-persons/
+  /burial-insurance-emphysema/ → /burial-insurance/emphysema/
+  /burial-insurance-for-smokers/ → /burial-insurance/for-smokers/
+  /burial-insurance-heart-infection-endocarditis/ → /burial-insurance/endocarditis-heart-infection/
+  /burial-insurance-heart-murmur/ → /burial-insurance/heart-murmur/
+  /burial-insurance-heart-valve-surgery/ → /burial-insurance/heart-surgery/
+  /burial-insurance-huntingtons-disease/ → /burial-insurance/huntingtons-disease/
+  /burial-insurance-multiple-sclerosis/ → /burial-insurance/multiple-sclerosis/
+  /burial-insurance-near-me/ → /burial-insurance/burial-insurance-near-me/
+  /burial-insurance-no-questions-asked/ → /burial-insurance/no-questions-asked/
+  /burial-insurance-organ-transplant/ → /burial-insurance/organ-transplant/
+  /burial-insurance-over-80/ → /burial-insurance/over-80/
+  /burial-insurance-oxygen/ → /burial-insurance/oxygen-use/
+  /burial-insurance-parkinsons-disease/ → /burial-insurance/parkinsons-disease/
+  /burial-insurance-retinopathy/ → /burial-insurance/diabetic-retinopathy/
+  /burial-insurance-schizophrenia/ → /burial-insurance/schizophrenia/
+  /burial-insurance-seizures/ → /burial-insurance/epilepsy-seizures/
+  /burial-insurance-sickle-cell-anemia/ → /burial-insurance/sickle-cell-anemia/
+  /burial-insurance-sleep-apnea/ → /burial-insurance/sleep-apnea/
+  /burial-insurance-tia-attack/ → /burial-insurance/stroke-tia/
+  /burial-insurance-traumatic-brain-injury/ → /burial-insurance/traumatic-brain-injury-tbi/
+  /burial-insurance-valvular-heart-disease/ → /burial-insurance/valvular-heart-disease/
+  /burial-insurance-with-congestive-heart-failure/ → /burial-insurance/congestive-heart-failure/
+  /burial-insurance-with-diverticulitis/ → /burial-insurance/burial-insurance-with-diverticulitis/
+  /burial-insurance/arthritis/ → /burial-insurance/burial-insurance-arthritis/
+  /burial-insurance/burial-insurance-adl-activities-of-daily-living/ → /burial-insurance/adl-activities-of-daily-living/
+  /burial-insurance/burial-insurance-aids-hiv/ → /burial-insurance/aids-hiv/
+  /burial-insurance/burial-insurance-and-coronavirus/ → /burial-insurance/and-coronavirus/
+  /burial-insurance/burial-insurance-and-suicide/ → /burial-insurance/and-suicide/
+  /burial-insurance/burial-insurance-arrhythmia/ → /burial-insurance/arrhythmia/
+  /burial-insurance/burial-insurance-disabled-persons/ → /burial-insurance/disabled-persons/
+  /burial-insurance/burial-insurance-for-smokers/ → /burial-insurance/for-smokers/
+  /burial-insurance/burial-insurance-hospitalized/ → /burial-insurance/hospitalized/
+  /burial-insurance/burial-insurance-no-questions-asked/ → /burial-insurance/no-questions-asked/
+  /burial-insurance/burial-insurance-online/ → /burial-insurance/online/
+  /burial-insurance/burial-insurance-over-70/ → /burial-insurance/over-70/
+  /burial-insurance/burial-insurance-over-80/ → /burial-insurance/over-80/
+  /burial-insurance/burial-insurance-sickle-cell-anemia/ → /burial-insurance/sickle-cell-anemia/
+  /burial-insurance/burial-insurance-with-first-day-coverage/ → /burial-insurance/with-first-day-coverage/
+  /burial-insurance/burial-policies-for-seniors/ → /burial-insurance/for-seniors/
+  /burial-insurance/buying-burial-insurance-on-someone-else/ → /burial-insurance/on-someone-else/
+  /burial-insurance/cheap-burial-insurance/ → /burial-insurance/cheap/
+  /burial-insurance/diabetic-retinopathy-burial-insurance/ → /burial-insurance/diabetic-retinopathy/
+  /burial-life-insurance-copd/ → /burial-insurance/copd/
+  /burial-policies-for-seniors/ → /burial-insurance/for-seniors/
+  /buying-burial-insurance-on-someone-else/ → /burial-insurance/on-someone-else/
+  /can-i-buy-life-insurance-on-my-mother/ → /burial-insurance/can-i-buy-life-insurance-on-my-mother/
+  /cheap-burial-insurance/ → /burial-insurance/cheap/
+  /crohns-disease/ → /burial-insurance/crohns-disease/
+  /epilepsy-burial-insurance/ → /burial-insurance/epilepsy-seizures/
+  /family-benefit-life-burial-insurance-review-pros-cons-old/ → /family-benefit-life-burial-insurance-review/
+  /family-benefit-life-burial-insurance-review-pros-cons/ → /family-benefit-life-burial-insurance-review/
+  /final-expense-insurance-diabetic-nephropathy/ → /burial-insurance/diabetic-nephropathy/
+  /final-expense-life-insurance-aneurysm/ → /burial-insurance/aneurysm/
+  /final-expense-life-insurance-complete-guide-2/ → /final-expense-life-insurance-complete-guide/
+  /final-expense-life-insurance-dave-ramsey/ → /burial-insurance/final-expense-life-insurance-dave-ramsey/
+  /final-expense-life-insurance-diabetic-neuropathy/ → /burial-insurance/diabetic-neuropathy/
+  /final-expense-life-insurance-heart-attack/ → /burial-insurance/heart-attack/
+  /final-expense-life-insurance-pacemaker/ → /burial-insurance/pacemaker/
+  /final-expense-life-insurance-stent/ → /burial-insurance/stent/
+  /final-expense-life-insurance-type-1-diabetes/ → /burial-insurance/diabetes/
+  /funeral-insurance-for-seniors/ → /burial-insurance/funeral-insurance-for-seniors/
+  /guaranteed-issue-life-insurance-for-seniors/ → /burial-insurance/guaranteed-issue-life-insurance-for-seniors/
+  /iul-book/iul-for-military-members-veterans/ → /iul-book/iul-military-members-veterans/
+  /prepaid-funeral-pros-and-cons/ → /prepaid-funeral/
+  /ptsd-burial-insurance/ → /burial-insurance/ptsd/
+  /state-regulated-life-insurance/ → /burial-insurance/state-regulated-life-insurance/
+  /top-10-final-expense-life-insurance-companies/ → /burial-insurance/top-10-final-expense-life-insurance-companies/
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
