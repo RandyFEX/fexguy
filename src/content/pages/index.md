@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<img fetchpriority="high" decoding="async" loading="eager" alt="" src="/wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif">
+<img fetchpriority="high" decoding="async" loading="eager" alt="" width="1600" height="800" src="/wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif" srcset="/images/home/home-banner-800.avif 800w, /images/home/home-banner-1200.avif 1200w, /wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)">
 
 <h1>LIFE INSURANCE FOR ALL OF YOUR FINAL EXPENSE NEEDS</h1>
 
