@@ -249,6 +249,11 @@
       "source": "/globe-life-burial-insurance-review/",
       "destination": "/globe-life-price-increase/",
       "statusCode": 301
+    },
+    {
+      "source": "/funeral-expenses-people-overlook/",
+      "destination": "/how-much-does-a-funeral-cost/",
+      "statusCode": 301
     }
   ],
   "headers": [

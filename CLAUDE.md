@@ -48,9 +48,14 @@ is in place; see src/content/README.md for how pages were migrated.
   /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
   /best-whole-life-insurance-plans/ (draft not restored; also no redirect for
   its -old slug). Don't redirect these without Randy's approval.
-- Broken internal links awaiting the link cleanup (don't change until Randy
-  decides each): the 14 "whole life" links to /best-whole-life-insurance-plans/
-  and the "Neuropathy" link on /a-z-health/.
+- Old WordPress drafts are not restored unless Randy decides so page by page.
+  /funeral-expenses-people-overlook/ was consolidated into
+  /how-much-does-a-funeral-cost/ (301; draft not restored).
+- Internal links awaiting the link cleanup (don't change until Randy decides
+  each): the 14 "whole life" links to /best-whole-life-insurance-plans/ and
+  the "Neuropathy" link on /a-z-health/ (broken); the 2 links to
+  /funeral-expenses-people-overlook/ (work via the 301; point them straight at
+  /how-much-does-a-funeral-cost/ later).
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
