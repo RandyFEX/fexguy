@@ -48,6 +48,6 @@ source: "live"
 
 <p>If you have any additional questions, fill out our Contact Form or call us at (888) 862-9456.</p>
 
-<p><a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Privacy Policy</a>&#160;-&#160;<a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> - <a href="https://funeralfunds.com/contact/" target="_blank" rel="noopener">Contact</a>&#160;Your information is private &amp; is not shared. By pressing button above you agree to our privacy policy &amp; to receive information from Funeral Funds via email, phone, SMS or MMS messages.</p>
+<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a></p>
 
 <p><a href="tel:8888629456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>
