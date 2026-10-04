@@ -34,8 +34,6 @@ source: "live"
 <li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content – Selecting Bible Verses For Your Funeral</a></strong></li>
 </ul>
 
-<p>Print out and complete our Funeral &amp; Estate Planning Guide, and then <br>keep a copy with your other important legal and financial documents.</p>
-
 <h3 id="Week-1-–-Organ-And-Tissue-Donation"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h3>
 
 <p>Thinking about organ, tissue, or whole-body donation should be part of your funeral planning. Donation is a great way to help others and advance science. Whole-body donation is an excellent way to avoid the cost of funerals and burial.</p>
