@@ -26,11 +26,12 @@ rebuilt from the WordPress export because the live URL redirected to itself
 or to a broken URL (3 pages).
 
 **Lead generation** (approved October 2026) replaced the WordPress forms,
-pop-ups, quoters, Google Forms and booking widget with one Fillout form:
+pop-ups and quoters with one Fillout form (pages whose old forms belonged to
+retired workflows were removed instead; see CLAUDE.md):
 
 - `sidebar: true` in frontmatter shows the quote sidebar (302 pages).
 - `<div data-quote-form></div>` on its own line places the form inside the
-  page body (9 pages, e.g. /free-quote/). Never use both on one page.
+  page body (6 pages, e.g. /free-quote/). Never use both on one page.
 - `<p class="quote-cta"><a class="button-link" href="#quote">…</a></p>`:
   quote buttons restored on 9 review pages; they open the page's form.
 - Every FEXGuy phone link is `tel:8888629456`. Insurance companies' numbers
