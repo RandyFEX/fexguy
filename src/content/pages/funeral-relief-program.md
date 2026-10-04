@@ -78,6 +78,6 @@ sidebar: true
 
 <p><a href="tel:8888629456">(888) 862-9456</a></p>
 
-<figure><img fetchpriority="high" decoding="async" loading="eager" width="749" height="1024" src="/wp-content/uploads/2026/04/FEX-GUY-TERM-WHOLE-LIFE-749x1024.png" alt=""></figure>
+<figure><img fetchpriority="high" decoding="async" loading="eager" width="150" height="205" src="/wp-content/uploads/2026/04/FEX-GUY-TERM-WHOLE-LIFE-749x1024.png" alt=""></figure>
 
 <p><br></p>

@@ -14,8 +14,6 @@ source: "live"
 
 <p>Our 12-week final planning guide will help you document your final wishes. Just follow the simple steps in this article to make your funeral planning easier.</p>
 
-<p>Be sure to keep your completed Funeral &amp; Estate Planning Guide with your insurance policy and other important financial documents so that your loved ones can follow your wishes after you are gone.</p>
-
 <p><br><strong>FOR EASIER NAVIGATION:</strong></p>
 
 <ul>
