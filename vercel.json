@@ -264,6 +264,16 @@
       "source": "/mortgage-protection/",
       "destination": "/mortgage-protection-life-insurance/",
       "statusCode": 301
+    },
+    {
+      "source": "/category/guaranteed-issue-whole-life-insurance/",
+      "destination": "/burial-insurance/guaranteed-issue-life-insurance-for-seniors/",
+      "statusCode": 301
+    },
+    {
+      "source": "/funeral-planning-checklist/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
     }
   ],
   "headers": [

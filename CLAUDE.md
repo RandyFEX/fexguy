@@ -58,6 +58,39 @@ is in place; see src/content/README.md for how pages were migrated.
   articles): /life-insurance-podcast/ (draft not restored), /podcast-episodes/,
   /category/podcast/, /category/life-insurance-podcast/ (and /page/4/), and
   every /…-podcast-episode-N/ URL (episodes 2, 3, 5–15, 17–31, 35).
+- **Group G2 decided** (Randy, October 2026; 39 old URLs, none in the
+  WordPress export, all unpublished in December 2025): 2 approved 301s
+  (/category/guaranteed-issue-whole-life-insurance/ →
+  /burial-insurance/guaranteed-issue-life-insurance-for-seniors/ and
+  /funeral-planning-checklist/ → /12-step-final-planning-guide/) and 37
+  intentional real 404s with no redirects. Don't restore or rebuild these
+  just because the URLs existed; new content on a topic (e.g. retiree
+  coverage) is a separate content decision. The 404s:
+  /burial-plot-prices-save-money/, /funeral-trust-pros-and-cons/,
+  /burial-life-insurance-for-alcoa-retirees/,
+  /burial-life-insurance-sears-retirees/, /life-insurance-for-allstate-retirees/,
+  /burial-insurance-3m-retirees/, /top-20-uplifting-poems-after-loss-of-mother/,
+  /top-20-uplifting-poems-after-loss-of-father/,
+  /the-history-of-hearses-in-the-united-states/,
+  /top-25-bible-verses-for-celebration-of-life-service-funeral/,
+  /best-bible-verses-for-a-funeral/,
+  /how-pilgrim-burials-were-handled-after-the-mayflower-landed-in-the-usa/,
+  /mushroom-burial-suit-for-green-burial/, /tree-pod-burial-green-burials/,
+  /burial-insurance-human-composting/, /how-to-select-a-headstone/,
+  /how-to-liquidate-assets-after-parents-death/,
+  /payable-on-death-account-pros-and-cons/, /how-to-post-an-obituary/,
+  /medicare-coverage-helpline-review/,
+  /jimmie-walker-medicare-tv-commercial-review/,
+  /medicare-benefits-questions-line-tv-commercial-review/,
+  /joe-namath-medicare-advantage-commercial-review/,
+  /lose-it-review-for-seniors/, /how-to-buy-a-casket/, /how-to-buy-an-urn/,
+  /funeral-home-scams/, /funeral-scams-to-watch-out-for-how-to-protect-yourself/,
+  /how-to-sell-parents-house-after-their-death/,
+  /preventing-identity-theft-after-death/, /senior-discounts/,
+  /how-to-choose-a-funeral-home/,
+  /nursing-home-checklist-find-the-best-nursing-home/,
+  /buying-flowers-for-a-funeral/, /how-to-dispose-of-medications-after-a-death/,
+  /the-history-of-life-insurance/, /how-to-get-a-death-certificate/.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -87,7 +120,15 @@ is in place; see src/content/README.md for how pages were migrated.
   /funeral-expenses-people-overlook/ (work via the 301; point them straight at
   /how-much-does-a-funeral-cost/ later); the "READ THE FULL WEEK 5 ARTICLE"
   and "READ THE FULL WEEK 6 ARTICLE" links on /12-step-final-planning-guide/
-  (broken).
+  (broken). From the G2 decisions: on /12-step-final-planning-guide/, the
+  "READ THE FULL WEEK 3/4/7/8/10/11/12 ARTICLE" links and the "READ THE FULL
+  ARTICLE HERE" link now point at retired 404s (casket, funeral home,
+  headstone, flowers, identity theft, medications, liquidating assets, Bible
+  verses); the "Payable on death account" link on /prepaid-funeral/ is
+  broken; the "guaranteed issue whole life insurance" link on
+  /final-expense-life-insurance-pre-existing-conditions/ works via the 301
+  but should point straight at
+  /burial-insurance/guaranteed-issue-life-insurance-for-seniors/.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
