@@ -53,11 +53,13 @@ is in place; see src/content/README.md for how pages were migrated.
   bereavement-writing intent). Don't redirect these without Randy's approval.
 - **The Life Insurance Podcast is permanently retired** (Randy, October 2026).
   Never restore or rebuild it: no podcast pages, episode pages, archives,
-  categories, feeds, embeds, navigation or redirects. Its 34 URLs are
+  categories, feeds, embeds, navigation or redirects. Its 36 URLs are
   intentional real 404s with no redirects (don't send episodes to unrelated
   articles): /life-insurance-podcast/ (draft not restored), /podcast-episodes/,
-  /category/podcast/, /category/life-insurance-podcast/ (and /page/4/), and
-  every /…-podcast-episode-N/ URL (episodes 2, 3, 5–15, 17–31, 35).
+  /category/podcast/, /category/life-insurance-podcast/ (and /page/4/), every
+  /…-podcast-episode-N/ URL (episodes 2, 3, 5–15, 17–31, 35), and episodes 1
+  and 16, whose slugs lack "podcast": /benefits-of-burial-insurance-episode-1/
+  and /7-ways-to-get-the-lowest-pricing-on-burial-insurance-episode-16/.
 - **Group G2 decided** (Randy, October 2026; 39 old URLs, none in the
   WordPress export, all unpublished in December 2025): 2 approved 301s
   (/category/guaranteed-issue-whole-life-insurance/ →
@@ -91,6 +93,23 @@ is in place; see src/content/README.md for how pages were migrated.
   /nursing-home-checklist-find-the-best-nursing-home/,
   /buying-flowers-for-a-funeral/, /how-to-dispose-of-medications-after-a-death/,
   /the-history-of-life-insurance/, /how-to-get-a-death-certificate/.
+- **Group G3 decided** (Randy, October 2026): the 31 remaining low-traffic
+  URLs are intentional real 404s with no redirects (episodes 1 and 16 are in
+  the podcast list above; the other 29 follow). Don't redirect old archives,
+  pagination, duplicates or workflow/campaign/thank-you URLs just to preserve
+  them; the unpublished veteran-life-insurance draft is a separate content
+  decision. Old workflow/campaign URLs: /application-received/,
+  /compare-burial-insurance-quotes/, /youtube/, /you-tube-free-quote/.
+  Duplicates of retired G2 pages: /the-history-of-hearses-in-the-united-states-copyscaped/,
+  /burial-plot-prices-explained-costs-options/. Old articles:
+  /6-questions-to-ask-before-buying-burial-insurance/, /state-regulated-programs/,
+  /funeral-service-planning/, /33-scams-targeting-seniors-how-to-avoid-them/,
+  /17-ways-to-pay-for-long-term-care/. Categories: /category/retiree-life-insurance/,
+  /category/veteran-life-insurance/, /category/medicare/,
+  /category/after-a-death-occurs/, /category/blog/. Blog pagination:
+  /blog/page/10/, /12/, /13/, /26/, /27/, /28/. Author archives:
+  /author/rvanderv8/page/2/, /3/, /9/, /12/, /14/, /19/, /21/. With G1, G2 and
+  G3 done, every Group G URL has a final disposition.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -120,7 +139,8 @@ is in place; see src/content/README.md for how pages were migrated.
   /funeral-expenses-people-overlook/ (work via the 301; point them straight at
   /how-much-does-a-funeral-cost/ later); the "READ THE FULL WEEK 5 ARTICLE"
   and "READ THE FULL WEEK 6 ARTICLE" links on /12-step-final-planning-guide/
-  (broken). From the G2 decisions: on /12-step-final-planning-guide/, the
+  (broken), and its "READ THE FULL WEEK 9 ARTICLE" link to the retired
+  /funeral-service-planning/ (G3). From the G2 decisions: on /12-step-final-planning-guide/, the
   "READ THE FULL WEEK 3/4/7/8/10/11/12 ARTICLE" links and the "READ THE FULL
   ARTICLE HERE" link now point at retired 404s (casket, funeral home,
   headstone, flowers, identity theft, medications, liquidating assets, Bible
