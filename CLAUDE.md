@@ -31,7 +31,7 @@ is in place; see src/content/README.md for how pages were migrated.
   page itself (content, traffic, links, SEO value, current purpose) and, if it
   stays, replace the old form appropriately (with Randy's approval).
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
-  redirect. Removed so far: /application/, /conservation/.
+  redirect. Removed so far: /application/, /conservation/, /careers/.
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
