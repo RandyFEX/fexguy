@@ -283,7 +283,7 @@ sidebar: true
 <li>What medical condition is being treated with CBD oil?</li>
 <li>When were you diagnosed with a medical condition?</li>
 <li>Do you use other drugs?</li>
-<li>Have you been hospitalized because of illegal <a href="/burial-insurance-drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">drugs</a>?</li>
+<li>Have you been hospitalized because of illegal <a href="/burial-insurance/drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">drugs</a>?</li>
 </ol>
 
 <p>Answer each question honestly. We need more information about your CBD oil use so we can place you with the right insurance company that will look at you favorably and offer you the best-priced policy.</p>

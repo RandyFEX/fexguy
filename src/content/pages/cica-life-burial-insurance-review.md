@@ -288,7 +288,7 @@ sidebar: true
 
 <h3 id="h-does-cica-life-have-same-day-approval-process"><strong>Does CICA Life Have Same Day Approval Process?</strong></h3>
 
-<p>CICA Life has a simple <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">application</a> process. You can apply over the phone with the help of Final Expense Guy independent agents.</p>
+<p>CICA Life has a simple <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application</a> process. You can apply over the phone with the help of Final Expense Guy independent agents.</p>
 
 <p>Your application only takes a few minutes over the phone.</p>
 

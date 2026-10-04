@@ -417,7 +417,7 @@ The “State-Regulated” Mix-Up
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 
@@ -446,7 +446,7 @@ September 21, 2022 at 3:25 pm
 <div class="comment-replies">
 <div class="comment" id="comment-24756">
 <h6 class="comment-name">Final Expense Guy </h6>                                            
-<p>Margeret – We have an article about that on our website. Go ahead and review the article and if you have any further questions, just call us at (888) 862-9456 and we'll be happy to help you understand your options. <a href="/borrowing-against-cash-value-pros-and-cons/" rel="ugc">https://fexguy.com/borrowing-against-cash-value-pros-and-cons/</a></p>
+<p>Margeret – We have an article about that on our website. Go ahead and review the article and if you have any further questions, just call us at (888) 862-9456 and we'll be happy to help you understand your options. <a href="/burial-insurance/borrowing-against-cash-value/" rel="ugc">https://fexguy.com/borrowing-against-cash-value-pros-and-cons/</a></p>
 <div class="comment-meta">
 September 27, 2022 at 7:55 am                    
 </div>

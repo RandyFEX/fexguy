@@ -223,7 +223,7 @@ sidebar: true
 <p><strong>Commonly used illegal drugs</strong> <strong>the insurance companies want to know about:</strong></p>
 
 <ol>
-<li><a href="/burial-insurance-marijuana-illegal-drugs/" target="_blank" rel="noreferrer noopener">Marijuana</a></li>
+<li><a href="/burial-insurance/marijuana-use/" target="_blank" rel="noreferrer noopener">Marijuana</a></li>
 <li>Methamphetamines</li>
 <li>Ecstasy</li>
 <li>Benzodiazepines</li>
@@ -359,7 +359,7 @@ sidebar: true
 <li>What type of drugs have you used?</li>
 <li>How long have you been living a drug-free life?</li>
 <li>Have you ever been hospitalized due to drugs?</li>
-<li>Have you sought professional help or <a href="/burial-insurance-drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">treatment</a> to ensure sobriety?</li>
+<li>Have you sought professional help or treatment to ensure sobriety?</li>
 <li>Have you gone to rehab? How long were you there?</li>
 <li>Did you relapse? If so, how many times?</li>
 <li>Do you have medical issues caused by drugs (heart disease or HIV)?</li>

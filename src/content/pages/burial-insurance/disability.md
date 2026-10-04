@@ -394,9 +394,9 @@ sidebar: true
 <li>How long have you been disabled?</li>
 <li>What is the reason you qualify for disability benefits?</li>
 <li>Do you have other health issues?</li>
-<li>Do you have any form of <a href="/burial-insurance-paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">paralysis</a>?</li>
-<li>Are you currently confined to a <a href="/burial-insurance-wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchair</a>?</li>
-<li>Do you have <a href="/burial-insurance-amputation-amputee/" target="_blank" rel="noreferrer noopener">amputations</a>?</li>
+<li>Do you have any form of <a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">paralysis</a>?</li>
+<li>Are you currently confined to a <a href="/burial-insurance/wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchair</a>?</li>
+<li>Do you have <a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">amputations</a>?</li>
 <li>Do you need help in performing activities of daily living such as eating, bathing, transferring, and continence?</li>
 </ol>
 

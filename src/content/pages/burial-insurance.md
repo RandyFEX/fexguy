@@ -60,7 +60,7 @@ sidebar: true
 <li><a href="/burial-insurance/diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">Diabetic Insulin Shock</a></li>
 <li><a href="/burial-insurance/diabetic-nephropathy/" target="_blank" rel="noreferrer noopener">Diabetic Nephropathy</a></li>
 <li><a href="/burial-insurance/diabetic-neuropathy/" target="_blank" rel="noreferrer noopener">Diabetic Neuropathy</a></li>
-<li><a href="/burial-insurance/diabetic-retinopathy-burial-insurance/" target="_blank" rel="noreferrer noopener">Diabetic Retinopathy</a></li>
+<li><a href="/burial-insurance/diabetic-retinopathy/" target="_blank" rel="noreferrer noopener">Diabetic Retinopathy</a></li>
 </ul>
 
 <h3>HEART CONDITIONS</h3>

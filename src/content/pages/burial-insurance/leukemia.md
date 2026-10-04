@@ -218,7 +218,7 @@ sidebar: true
 <li>Chronic Myelogenous Leukemia</li>
 </ol>
 
-<p>The insurance companies know that Leukemia is often curable. Survival rates for leukemia increase yearly, and it is now considered one of the most curable types of <a href="/life-insurance-for-cancer-patients/" target="_blank" rel="noreferrer noopener">cancers</a>.</p>
+<p>The insurance companies know that Leukemia is often curable. Survival rates for leukemia increase yearly, and it is now considered one of the most curable types of <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancers</a>.</p>
 
 <p><br><strong>PRESCRIPTION HISTORY CHECK</strong></p>
 

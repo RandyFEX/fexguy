@@ -349,7 +349,7 @@ The postcard that promised peace of mind
 
 <p>Then they take it further by designing mailers that look like government forms or official state notices.</p>
 
-<p>Many use bold letters such as “FINAL EXPENSE BENEFIT INFORMATION” or “<a href="/state-regulated-life-insurance/">STATE REGULATED PROGRAM</a>.” Some even add fake reference codes and official-looking seals to make it appear legitimate.</p>
+<p>Many use bold letters such as “FINAL EXPENSE BENEFIT INFORMATION” or “<a href="/burial-insurance/state-regulated-life-insurance/">STATE REGULATED PROGRAM</a>.” Some even add fake reference codes and official-looking seals to make it appear legitimate.</p>
 
 <p>What people don’t see is that these mailers are printed by private marketing firms that sell the responses. They are not from any state agency or life insurance carrier. The company collecting the cards isn’t the same one issuing the policy.</p>
 
@@ -555,7 +555,7 @@ Five calls after one form
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

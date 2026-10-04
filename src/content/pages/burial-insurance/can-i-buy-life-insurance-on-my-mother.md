@@ -52,7 +52,7 @@ sidebar: true
 
 <p>You may need to buy life insurance for mothers, particularly if you are independent and not relying on them for financial support. The primary reason children purchase this insurance on parents is to protect themselves financially when a parent dies.</p>
 
-<p>You may also need to purchase life insurance for your <a rel="noreferrer noopener" href="/burial-insurance-for-parents/" target="_blank">parents</a>, <a rel="noreferrer noopener" href="/burial-insurance-brother/" target="_blank">brother</a> or <a rel="noreferrer noopener" href="/burial-insurance-for-sister/" target="_blank">sister</a>,&#160; to pay for the funeral, burial, and <a rel="noreferrer noopener" href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank">final expenses</a>. $10,000 is the average <a rel="noreferrer noopener" href="http://www.nfda.org/news/statistics" target="_blank">cost of a funeral</a> today this includes burial, memorial service costs, and plot. Having a burial insurance policy on your mom can help ease this financial burden.</p>
+<p>You may also need to purchase life insurance for your <a rel="noreferrer noopener" href="/burial-insurance/parents/" target="_blank">parents</a>, <a rel="noreferrer noopener" href="/burial-insurance/brother/" target="_blank">brother</a> or <a rel="noreferrer noopener" href="/burial-insurance/sister/" target="_blank">sister</a>,&#160; to pay for the funeral, burial, and <a rel="noreferrer noopener" href="/final-expense-life-insurance-complete-guide/" target="_blank">final expenses</a>. $10,000 is the average <a rel="noreferrer noopener" href="http://www.nfda.org/news/statistics" target="_blank">cost of a funeral</a> today this includes burial, memorial service costs, and plot. Having a burial insurance policy on your mom can help ease this financial burden.</p>
 
 <p>Your mother may still incur credit card debt, auto loans,  and other debts. With these in mind, taking life insurance on your mom can make a sound financial sense to pay off any unpaid debts.</p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p><strong>Whole Life Insurance</strong></p>
 
-<p><a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">Whole life</a> is the simplest type of <a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent life insurance</a> because it has a fixed death benefit amount, and the premium amount is locked in for the life of the policy. The premium will not increase, despite your mom’s advancing age or worsening medical condition after purchasing insurance coverage.</p>
+<p>Whole life is the simplest type of <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent life insurance</a> because it has a fixed death benefit amount, and the premium amount is locked in for the life of the policy. The premium will not increase, despite your mom’s advancing age or worsening medical condition after purchasing insurance coverage.</p>
 
 <p>The whole life insurance policy has a cash value component.  This cash value accrues interest and grows on a tax-deferred basis; the interest is not subject to tax until you withdraw it. Some companies offer dividends on whole life policies, but this is not guaranteed.</p>
 
@@ -98,9 +98,9 @@ sidebar: true
 
 <p><strong>Acceptance is guaranteed, and your mom can qualify regardless of her medical condition.</strong></p>
 
-<p><a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed acceptance</a> can be easy to get, but it has a graded death benefit limitation (the policy has a two-year waiting period).</p>
+<p><a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed acceptance</a> can be easy to get, but it has a graded death benefit limitation (the policy has a two-year waiting period).</p>
 
-<p>If your mom died during the <a href="/burial-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">waiting period</a>, her beneficiaries would not receive the full death benefit. They will only get the return on premium plus 7% to 10% interest. The whole death benefit will only be given if she dies after the waiting period.</p>
+<p>If your mom died during the <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">waiting period</a>, her beneficiaries would not receive the full death benefit. They will only get the return on premium plus 7% to 10% interest. The whole death benefit will only be given if she dies after the waiting period.</p>
 
 <p>Whatever your mom’s age, over 60, or over 70 life insurance for parents no medical exam is still possible. Insurance companies will look at their present health status and any past health issues she had. Of course, the older she is, the more money it will cost to obtain a life insurance policy.</p>
 
@@ -131,7 +131,7 @@ sidebar: true
 
 <p>A guaranteed acceptance burial insurance policy is the best life insurance for sick parents to get insurance coverage. This type of life insurance is for parents with no medical exams or health questions. A guaranteed acceptance policy does not require a medical exam. She is also not required to answer health questions on the application either. She will qualify even if she has medical issues or any major illness.</p>
 
-<p>Guaranteed acceptance with <a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener">no exam</a> policy can be approved within just a few minutes because there is no health underwriting. This means that the life insurance for your mother could be instantly in force.</p>
+<p>Guaranteed acceptance with <a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">no exam</a> policy can be approved within just a few minutes because there is no health underwriting. This means that the life insurance for your mother could be instantly in force.</p>
 
 <p>The only drawback to the guaranteed acceptance policy is the two-year waiting period and the limited death benefit. Depending on the company you apply to, you can only purchase $2,000 to a maximum of $50,000.</p>
 

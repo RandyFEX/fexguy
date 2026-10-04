@@ -176,7 +176,7 @@ sidebar: true
 
 <h3 id="h-does-family-benefit-life-have-the-same-day-approval-process"><strong>Does Family Benefit Life Have The Same Day Approval Process?</strong></h3>
 
-<p>Family Benefit Life offers a simple <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> where you can apply over the phone with an agent at Final Expense.</p>
+<p>Family Benefit Life offers a simple <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> where you can apply over the phone with an agent at Final Expense.</p>
 
 <p>We can generally get you approved within 15 minutes over the phone.</p>
 

@@ -77,7 +77,7 @@ sidebar: true
 
 <h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why Do You Need A Guaranteed Issue Burial Insurance If You Need Help With Bathing?</strong></h2>
 
-<p>We recommend buying guaranteed issue burial insurance if you need help with bathing and other <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>s because it’s the only life insurance plan you will qualify for because of your condition.</p>
+<p>We recommend buying guaranteed issue burial insurance if you need help with bathing and other <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>s because it’s the only life insurance plan you will qualify for because of your condition.</p>
 
 <p>If you are relatively healthy, but you need help with ADLs, you can still have an average life expectancy and easily outlive the two-year waiting period.</p>
 

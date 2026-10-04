@@ -114,15 +114,15 @@ sidebar: true
 
 <p><strong>DIABETIC AMPUTATION:</strong> A diabetic amputation within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Amputations older than 24 months caused by diabetes may still qualify for first-day coverage or benefits.</p>
 
-<p><strong><strong>DIABETIC </strong>COMA:</strong> A <a href="/final-expense-life-insurance-diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">diabetic coma</a> inside 12 or 24 months requires either graded coverage or guaranteed issue with a two-year wait. Shock coma older than 24 months with full recovery and no neurological decline may qualify for first-day coverage, but only with companies that accept older critical events with stable follow-up.</p>
+<p><strong><strong>DIABETIC </strong>COMA:</strong> A <a href="/burial-insurance/diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">diabetic coma</a> inside 12 or 24 months requires either graded coverage or guaranteed issue with a two-year wait. Shock coma older than 24 months with full recovery and no neurological decline may qualify for first-day coverage, but only with companies that accept older critical events with stable follow-up.</p>
 
-<p><strong>DIABETIC NEPHROPATHY:</strong> Having <a href="/final-expense-insurance-diabetic-nephropathy/" target="_blank" rel="noreferrer noopener">diabetic nephropathy</a> within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Long-term nephropathy older than 24 months rarely gets first-day approval unless kidney function has been stable, there is no dialysis, and medication levels have not changed.</p>
+<p><strong>DIABETIC NEPHROPATHY:</strong> Having <a href="/burial-insurance/diabetic-nephropathy/" target="_blank" rel="noreferrer noopener">diabetic nephropathy</a> within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Long-term nephropathy older than 24 months rarely gets first-day approval unless kidney function has been stable, there is no dialysis, and medication levels have not changed.</p>
 
-<p><strong>DIABETIC NEUROPATHY:</strong> Having <a href="/final-expense-life-insurance-diabetic-neuropathy/" target="_blank" rel="noreferrer noopener">diabetic neuropathy </a>within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Older neuropathy past 24 months may still qualify for first-day coverage or benefits.</p>
+<p><strong>DIABETIC NEUROPATHY:</strong> Having <a href="/burial-insurance/diabetic-neuropathy/" target="_blank" rel="noreferrer noopener">diabetic neuropathy </a>within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Older neuropathy past 24 months may still qualify for first-day coverage or benefits.</p>
 
-<p><strong><strong>DIABETIC </strong>RETINOPATHY:</strong> Having <a href="/burial-insurance-retinopathy/" target="_blank" rel="noreferrer noopener">diabetic retinopathy</a> within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Retinopathy diagnosed within the past 24 months may still qualify for first-day coverage or benefits.</p>
+<p><strong><strong>DIABETIC </strong>RETINOPATHY:</strong> Having <a href="/burial-insurance/diabetic-retinopathy/" target="_blank" rel="noreferrer noopener">diabetic retinopathy</a> within 12 or 24 months requires either graded coverage or guaranteed issue with a 2-year waiting period. Retinopathy diagnosed within the past 24 months may still qualify for first-day coverage or benefits.</p>
 
-<p><strong><strong>DIABETIC </strong>SHOCK:</strong> Having <a href="/final-expense-life-insurance-diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">diabetic shock</a> inside 12 or 24 months requires either graded coverage or guaranteed issue with a two-year wait. Shock coma older than 24 months with full recovery and no neurological decline may qualify for first-day coverage, but only with companies that accept older critical events with stable follow-up.</p>
+<p><strong><strong>DIABETIC </strong>SHOCK:</strong> Having <a href="/burial-insurance/diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">diabetic shock</a> inside 12 or 24 months requires either graded coverage or guaranteed issue with a two-year wait. Shock coma older than 24 months with full recovery and no neurological decline may qualify for first-day coverage, but only with companies that accept older critical events with stable follow-up.</p>
 
 <hr>
 
@@ -561,13 +561,13 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 
-<p><a href="/final-expense-life-insurance-diabetic-neuropathy/">
+<p><a href="/burial-insurance/diabetic-neuropathy/">
 <h5>Life Insurance with Diabetic Neuropathy</h5>
-</a>  <a href="/final-expense-insurance-diabetic-nephropathy/">
+</a>  <a href="/burial-insurance/diabetic-nephropathy/">
 <h5>Diabetic Nephropathy Final Expense Life Insurance</h5>
 </a>  <a href="/burial-insurance-diabetic-complications/">
 <h5>Burial Insurance for Diabetes With Diabetic Complications</h5>

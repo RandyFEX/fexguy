@@ -85,7 +85,7 @@ sidebar: true
 
 <ul>
 <li>A stroke</li>
-<li><a href="/burial-insurance-paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a></li>
+<li><a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a></li>
 <li>Obesity</li>
 <li>You were born with some physical impairment causing you to need a wheelchair</li>
 <li>Recovering from surgery</li>
@@ -93,19 +93,19 @@ sidebar: true
 
 <p>If you are using a wheelchair at home, your best life insurance option is guaranteed issue burial insurance.</p>
 
-<p><br><strong><a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ACTIVITIES OF DAILY LIVING</a></strong></p>
+<p><br><strong><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ACTIVITIES OF DAILY LIVING</a></strong></p>
 
 <p>If you’re a wheelchair user, we need to know if you can do daily living activities independently, needing help from other people will affect your ability to qualify for the best-priced burial insurance plan.</p>
 
 <p>Insurance companies use six daily living activities to determine if you will qualify for a level death benefit. You must be able to perform these ADLs to take care of yourself properly.</p>
 
 <ol>
-<li><strong><a href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a></strong> is putting food into your body using a plate, cup, feeding tube, or intravenously.</li>
-<li><strong><a href="/burial-insurance-bathing-disability-adl/" target="_blank" rel="noreferrer noopener">Bathing</a></strong> – washing your body in a shower or bathtub, it also refers to your ability to get in and out of the shower or bathtub safely.</li>
-<li><strong><a href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Dressing</a></strong> – taking off and putting an article of clothing on your body. It also includes taking off and putting on fasteners, braces, and artificial limbs.</li>
-<li><strong><a href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Toileting</a></strong> – getting on and off the toilet and performing necessary personal hygiene.</li>
-<li><strong><a href="/burial-insurance-help-with-transferring/" target="_blank" rel="noreferrer noopener">Transferring</a></strong> – moving in or out of bed, a chair, or a wheelchair.</li>
-<li><strong><a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></strong> – controlling the bladder and bowel functions. Continence includes performing related personal hygiene tasks like caring for a colostomy or catheter bag.</li>
+<li><strong><a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a></strong> is putting food into your body using a plate, cup, feeding tube, or intravenously.</li>
+<li><strong><a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">Bathing</a></strong> – washing your body in a shower or bathtub, it also refers to your ability to get in and out of the shower or bathtub safely.</li>
+<li><strong><a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Dressing</a></strong> – taking off and putting an article of clothing on your body. It also includes taking off and putting on fasteners, braces, and artificial limbs.</li>
+<li><strong><a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Toileting</a></strong> – getting on and off the toilet and performing necessary personal hygiene.</li>
+<li><strong><a href="/burial-insurance/transferring-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Transferring</a></strong> – moving in or out of bed, a chair, or a wheelchair.</li>
+<li><strong><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></strong> – controlling the bladder and bowel functions. Continence includes performing related personal hygiene tasks like caring for a colostomy or catheter bag.</li>
 </ol>
 
 <p><br><strong>WHEELCHAIR USE&#160; (no chronic illness but need help in ADL)</strong></p>
@@ -342,7 +342,7 @@ sidebar: true
 <li>Are you in a wheelchair due to chronic illness?</li>
 <li>What is the reason for your wheelchair use?</li>
 <li>Are you permanently bound in a wheelchair?</li>
-<li>Are you currently on <a rel="noreferrer noopener" href="/burial-insurance-disability/" target="_blank">disability</a>?</li>
+<li>Are you currently on <a rel="noreferrer noopener" href="/burial-insurance/disability/" target="_blank">disability</a>?</li>
 <li>Do you need help with the activities of daily living?</li>
 </ol>
 

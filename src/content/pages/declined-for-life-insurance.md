@@ -62,11 +62,11 @@ sidebar: true
 
 <p><strong>#1. An elevated level of Cholesterol, Lipids, and Triglycerides</strong></p>
 
-<p>Your application for life insurance may be denied if you have elevated <a href="/burial-insurance-high-cholesterol/" target="_blank" rel="noreferrer noopener">cholesterol</a> levels. In some cases, it may not be a reason for the decline, but being approved other than applied for is because you are at higher risk for heart disease and stroke.</p>
+<p>Your application for life insurance may be denied if you have elevated <a href="/burial-insurance/high-cholesterol/" target="_blank" rel="noreferrer noopener">cholesterol</a> levels. In some cases, it may not be a reason for the decline, but being approved other than applied for is because you are at higher risk for heart disease and stroke.</p>
 
 <p><strong>#2. Elevated Glucose or Blood Sugar Level</strong></p>
 
-<p>High glucose or blood sugar level can indicate diabetes, which is a cause of the decline. To understand this, we have put a separate article on diabetes. If you have diabetes, please read our article <a href="/burial-insurance-diabetes/" target="_blank" rel="noreferrer noopener">Diabetic and Diabetes</a> burial insurance eligibility.</p>
+<p>High glucose or blood sugar level can indicate diabetes, which is a cause of the decline. To understand this, we have put a separate article on diabetes. If you have diabetes, please read our article <a href="/burial-insurance/diabetes/" target="_blank" rel="noreferrer noopener">Diabetic and Diabetes</a> burial insurance eligibility.</p>
 
 <p>A high blood sugar level is often not discovered by applicants until they undergo a medical exam. High glucose or blood sugar levels usually have no noticeable physical symptoms.</p>
 
@@ -96,7 +96,7 @@ sidebar: true
 
 <p><strong>#7. A History of Cancer</strong></p>
 
-<p>A history of <a href="/burial-insurance-for-cancer-patients/" target="_blank" rel="noreferrer noopener">cancer</a> puts you in a high-risk category in life insurance. Your life insurance approval or decline will depend on your cancer type and how long you have been in remission.</p>
+<p>A history of <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> puts you in a high-risk category in life insurance. Your life insurance approval or decline will depend on your cancer type and how long you have been in remission.</p>
 
 <p>Skin cancer is viewed as a less severe form of cancer that life insurance companies typically approve. The more severe types of cancer, like breast cancer and lung cancer, may cause a decline.</p>
 
@@ -114,7 +114,7 @@ sidebar: true
 
 <p><strong>#11. Positive Alcohol Marker</strong></p>
 
-<p>Having a few drinks will not create a positive alcohol marker. A positive alcohol marker is a red flag for life insurance because it indicates elevated liver functions from alcoholism. A positive alcohol marker is the easiest way to receive a life insurance rejection. <a href="/burial-insurance-alcohol-abuse/" target="_blank" rel="noreferrer noopener">Alcohol abuse</a> can damage health and potentially make the applicant engage in life-threatening activities.</p>
+<p>Having a few drinks will not create a positive alcohol marker. A positive alcohol marker is a red flag for life insurance because it indicates elevated liver functions from alcoholism. A positive alcohol marker is the easiest way to receive a life insurance rejection. <a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">Alcohol abuse</a> can damage health and potentially make the applicant engage in life-threatening activities.</p>
 
 <p>You may need to delay your application until you entirely stop drinking and remain sober for some time before applying.</p>
 

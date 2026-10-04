@@ -265,15 +265,15 @@ sidebar: true
 
 <p><strong>HEALTH QUESTIONS FOR THE GREAT ASSURANCE PLAN (1st-day coverage)</strong> </p>
 
-<p><strong>1. </strong>In the last two years, has the applicant been a patient in hospice, a <a rel="noreferrer noopener" href="/burial-insurance-hospitalized/" target="_blank">hospital</a>, or <a rel="noreferrer noopener" href="/burial-insurance-nursing-home-residents/" target="_blank">nursing home</a> for five or more days? (Yes – No)</p>
+<p><strong>1. </strong>In the last two years, has the applicant been a patient in hospice, a <a rel="noreferrer noopener" href="/burial-insurance/hospitalized/" target="_blank">hospital</a>, or <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> for five or more days? (Yes – No)</p>
 
-<p><strong>2. </strong>Is the applicant unable to perform routine activities such as <a rel="noreferrer noopener" href="/burial-insurance-bathing-disability-adl/" target="_blank">bathing</a>, <a rel="noreferrer noopener" href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">dressing</a>, <a rel="noreferrer noopener" href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank">eating</a>, <a rel="noreferrer noopener" href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank">toileting</a>, transferring to or from the bed or chair? (Yes – No)</p>
+<p><strong>2. </strong>Is the applicant unable to perform routine activities such as <a rel="noreferrer noopener" href="/burial-insurance/bathing-disability-adl/" target="_blank">bathing</a>, <a rel="noreferrer noopener" href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">dressing</a>, <a rel="noreferrer noopener" href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank">eating</a>, <a rel="noreferrer noopener" href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank">toileting</a>, transferring to or from the bed or chair? (Yes – No)</p>
 
 <p><strong>3. </strong>In the last two years, has the applicant been diagnosed with, been prescribed medication for, or treated by healthcare provider for any of the following diseases: </p>
 
 <p><strong>a) </strong>diabetes requiring insulin, with complications, or requiring 3 or more medications (Yes – No)</p>
 
-<p><strong>b) </strong>Internal <a rel="noreferrer noopener" href="/burial-insurance-cancer-patients/" target="_blank">Cancer</a>, malignant melanoma, leukemia, Hodgkin’s Disease, or lymphoma (Yes – No)</p>
+<p><strong>b) </strong>Internal <a rel="noreferrer noopener" href="/burial-insurance/cancer/" target="_blank">Cancer</a>, malignant melanoma, leukemia, Hodgkin’s Disease, or lymphoma (Yes – No)</p>
 
 <p><strong>c) </strong>heart surgery including bypass, angioplasty or stent placement, congestive heart failure, heart attack, stroke, peripheral vascular disease, or aneurysm; (Yes – No)</p>
 

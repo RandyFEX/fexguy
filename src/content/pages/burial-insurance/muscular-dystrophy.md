@@ -73,7 +73,7 @@ sidebar: true
 
 <p><strong>WHEELCHAIR USE</strong></p>
 
-<p>Many applicants with muscular dystrophy start using <a href="/burial-insurance-wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchairs</a> when they lose muscle mass and their muscles weaken. Most burial insurance companies ask about wheelchair use.</p>
+<p>Many applicants with muscular dystrophy start using <a href="/burial-insurance/wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchairs</a> when they lose muscle mass and their muscles weaken. Most burial insurance companies ask about wheelchair use.</p>
 
 <p>If your medical condition gets worse and you need to use a wheelchair for mobility, or you need assistance with activities of daily living, guaranteed issue life insurance is your only option to get a policy. This is a no-health questions policy, and you are guaranteed acceptance regardless of your medical condition.</p>
 
@@ -85,9 +85,9 @@ sidebar: true
 
 <p><br><strong>ASSISTANCE WITH ACTIVITIES OF DAILY LIVING</strong></p>
 
-<p>Every final expense life insurance company always asks if you need help in performing <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>. If you have a severe type of muscular dystrophy, you will need help with ADLs as your condition gets worse.</p>
+<p>Every final expense life insurance company always asks if you need help in performing <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>. If you have a severe type of muscular dystrophy, you will need help with ADLs as your condition gets worse.</p>
 
-<p>Insurance companies define assistance with daily living activities as needing help with the following: <a href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">eating</a>, <a href="/burial-insurance-bathing-disability-adl/" target="_blank" rel="noreferrer noopener">bathing</a>, <a href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">dressing</a>, <a href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">toileting</a>, <a href="/burial-insurance-help-with-transferring/">transferring</a>, and <a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">continence</a>.</p>
+<p>Insurance companies define assistance with daily living activities as needing help with the following: <a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">eating</a>, <a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">bathing</a>, <a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">dressing</a>, <a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">toileting</a>, <a href="/burial-insurance/transferring-activities-of-daily-living-adl/">transferring</a>, and <a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">continence</a>.</p>
 
 <p>Most burial insurance companies will decline your application in this situation, and getting a guaranteed issue life insurance is your only option (and something we can help you with).</p>
 

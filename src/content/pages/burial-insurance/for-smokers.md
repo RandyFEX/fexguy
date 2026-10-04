@@ -267,7 +267,7 @@ smoking question</p>
 
 <p id="SMOKING-AND-BURIAL-INSURANCE-APPLICATION"> <br><strong>SMOKING AND BURIAL INSURANCE APPLICATION</strong> </p>
 
-<p>Every insurance company will ask if you smoke or use any tobacco products in their application. Lying about smoking on the life <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">insurance application</a> is a bad idea, and we strongly recommend against it, as you won’t be able to hide the fact that you are a smoker. </p>
+<p>Every insurance company will ask if you smoke or use any tobacco products in their application. Lying about smoking on the life <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">insurance application</a> is a bad idea, and we strongly recommend against it, as you won’t be able to hide the fact that you are a smoker. </p>
 
 <p>First, your life insurance application will ask you if you smoke. If you do, you need to be honest and answer “yes” to the smoking question. Hiding this fact is a form of insurance fraud.</p>
 
@@ -423,7 +423,7 @@ smoking question</p>
 <p><strong>Tobacco users and smokers pay more for life insurance because:</strong></p>
 
 <ul>
-<li>Smoking has a direct connection to heart disease, respiratory illness, and <a href="/burial-insurance-for-cancer-patients/" target="_blank" rel="noreferrer noopener">cancer</a>.</li>
+<li>Smoking has a direct connection to heart disease, respiratory illness, and <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a>.</li>
 <li>Over 20% of all deaths in the U.S are related to smoking. One person dies every six seconds from a tobacco-related disease.</li>
 <li>The risk of dying from heart disease due to smoking can triple to middle-aged people.</li>
 <li>The Center for Disease Control and Prevention (<a href="https://www.cdc.gov/tobacco/data_statistics/index.htm" target="_blank" rel="noreferrer noopener">CDC</a>) states that smoking can shorten the lifespan of smokers to up to 10 years.</li>

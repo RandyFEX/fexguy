@@ -73,7 +73,7 @@ sidebar: true
 
 <h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why We Don’t Recommend Guaranteed Issue Life Insurance For Nursing Home Residents</strong></h2>
 
-<p>If you are in a nursing home with a terminal illness, buying <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> life insurance will not help your family much at all.&#160;</p>
+<p>If you are in a nursing home with a terminal illness, buying <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> life insurance will not help your family much at all.&#160;</p>
 
 <p>Here are the reasons why I don’t recommend guaranteed acceptance life insurance for nursing home residents:</p>
 
@@ -89,7 +89,7 @@ sidebar: true
 
 <p><br><strong>Premiums Are Expensive</strong></p>
 
-<p>Guaranteed issue <a href="/burial-insurance-no-questions-asked/" target="_blank" rel="noreferrer noopener">no-questions-asked</a> life insurance is the most expensive life insurance policy. It can be two to three times more expensive than simplified issue life insurance that asks health questions. The high premiums are because of the higher risk insurance companies take for approving coverage without asking any health questions.</p>
+<p>Guaranteed issue <a href="/burial-insurance/no-questions-asked/" target="_blank" rel="noreferrer noopener">no-questions-asked</a> life insurance is the most expensive life insurance policy. It can be two to three times more expensive than simplified issue life insurance that asks health questions. The high premiums are because of the higher risk insurance companies take for approving coverage without asking any health questions.</p>
 
 <p><br><strong>Limited Death Benefit Option</strong></p>
 

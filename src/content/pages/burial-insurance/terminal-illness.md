@@ -60,17 +60,17 @@ sidebar: true
 <p>Here are the most common types of terminal illness the insurance companies want to know about:</p>
 
 <ul>
-<li><a href="/burial-insurance-cancer-patients/">Advanced cancer</a></li>
-<li><a href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis (ALS)</a></li>
-<li><a href="/burial-insurance-lung-disease/" target="_blank" rel="noreferrer noopener">Chronic lung problems</a></li>
-<li><a href="/burial-insurance-cystic-fibrosis/" target="_blank" rel="noreferrer noopener">Cystic Fibrosis</a></li>
-<li><a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Dementia and Alzheimer’s disease</a></li>
-<li><a href="/burial-insurance-coronary-artery-disease/" target="_blank" rel="noreferrer noopener">Heart diseases such as severe coronary artery disease</a></li>
-<li><a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">HIV/ AIDS</a></li>
-<li><a href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank" rel="noreferrer noopener">End-stage renal failure</a></li>
-<li><a href="/burial-insurance-muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular Dystrophy</a></li>
-<li><a href="/burial-insurance-scleroderma/" target="_blank" rel="noreferrer noopener">Scleroderma</a></li>
-<li><a href="/burial-insurance-parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
+<li><a href="/burial-insurance/cancer/">Advanced cancer</a></li>
+<li><a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis (ALS)</a></li>
+<li><a href="/burial-insurance/lung-disease/" target="_blank" rel="noreferrer noopener">Chronic lung problems</a></li>
+<li><a href="/burial-insurance/cystic-fibrosis/" target="_blank" rel="noreferrer noopener">Cystic Fibrosis</a></li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Dementia and Alzheimer’s disease</a></li>
+<li><a href="/burial-insurance/coronary-artery-disease/" target="_blank" rel="noreferrer noopener">Heart diseases such as severe coronary artery disease</a></li>
+<li><a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">HIV/ AIDS</a></li>
+<li><a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">End-stage renal failure</a></li>
+<li><a href="/burial-insurance/muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular Dystrophy</a></li>
+<li><a href="/burial-insurance/scleroderma/" target="_blank" rel="noreferrer noopener">Scleroderma</a></li>
+<li><a href="/burial-insurance/parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
 </ul>
 
 <p>There are other terminal illnesses, but these are considered the most common in the U.S.</p>

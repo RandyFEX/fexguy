@@ -148,7 +148,7 @@ company.</p>
 
 <p><strong>SIMPLIFIED ISSUE BURIAL INSURANCE</strong></p>
 
-<p>You can buy online a simplified issue burial insurance with <a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener">no exam</a> but asks a few health questions you can answer with a Yes or No. </p>
+<p>You can buy online a simplified issue burial insurance with <a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">no exam</a> but asks a few health questions you can answer with a Yes or No. </p>
 
 <p>The application process, underwriting, and approval are relaxed and quick. Simplified issue burial insurance with no waiting period has immediate coverage.</p>
 
@@ -189,7 +189,7 @@ receive the full death benefit payout if you pass away for any reason.</p>
 
 <h2 id="guaranteed-issue-burial-insurance"><br><strong>Guaranteed Issue Burial Insurance</strong></h2>
 
-<p>You can also purchase <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue burial insurance</a> online. These policies are whole life insurance policies that last your entire life. </p>
+<p>You can also purchase <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue burial insurance</a> online. These policies are whole life insurance policies that last your entire life. </p>
 
 <p>You are not required to take a medical exam or answer health questions to qualify. You can be approved for insurance coverage regardless of your current health or pre-existing medical condition. </p>
 

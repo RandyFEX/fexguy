@@ -49,7 +49,7 @@ sidebar: true
 
 <h2 id="can-you-buy-burial-insurance-for-sister"><strong>Can You Buy Burial Insurance For Sister? </strong></h2>
 
-<p>The answer is YES! You can take out burial insurance on your sister, <a rel="noreferrer noopener" href="/burial-insurance-brother/" target="_blank">brother,</a> <a href="/can-i-buy-life-insurance-on-my-mother/" target="_blank" rel="noreferrer noopener">mother</a>, or any family member.</p>
+<p>The answer is YES! You can take out burial insurance on your sister, <a rel="noreferrer noopener" href="/burial-insurance/brother/" target="_blank">brother,</a> <a href="/burial-insurance/can-i-buy-life-insurance-on-my-mother/" target="_blank" rel="noreferrer noopener">mother</a>, or any family member.</p>
 
 <p>Even if you have a blood relationship, you still need to prove that you have an insurable interest in your sister. Having insurable interest means that you will suffer financial loss if she dies. For example, her passing would leave you responsible for all the costs of her death.</p>
 

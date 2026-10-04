@@ -57,14 +57,14 @@ sidebar: true
 
 <p>A burial insurance policy will provide the necessary funds to ensure that your loved ones do not have to use out-of-pocket money to pay off your <a href="http://www.nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">funeral expenses</a>. This insurance policy pays cash directly to your named beneficiary to pay for your funeral services and other final expenses.</p>
 
-<p>Burial insurance, also called <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expense</a> insurance, cremation insurance, and <a href="/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral insurance</a>, is a form of whole life or permanent life insurance that provides a fund for the cost of burial, funeral, and other final expenses.</p>
+<p>Burial insurance, also called <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> insurance, cremation insurance, and <a href="/burial-insurance/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral insurance</a>, is a form of whole life or permanent life insurance that provides a fund for the cost of burial, funeral, and other final expenses.</p>
 
 <p>The coverage amount is minimal, usually ranging between $2,000 and $50,000 per policy. Burial insurance offers beneficiaries a cash benefit that they can decide how to use after they pass away.</p>
 
 <p><strong>This is how burial insurance works:</strong></p>
 
 <ul>
-<li>The policy is <a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent</a> and can last your <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life</a>.</li>
+<li>The policy is <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent</a> and can last your whole life.</li>
 <li>The premium rate is fixed and guaranteed never to increase.</li>
 <li>The death benefit is fixed and won’t decrease for any reason.</li>
 <li>The policy can’t be canceled as long as premiums are paid.</li>
@@ -91,7 +91,7 @@ sidebar: true
 
 <p>The best funeral insurance offers immediate coverage, meaning there is no waiting period. Burial insurance with no waiting period offers first-day coverage. If you die after the policy is in force, 100% of the death benefit will be given to your beneficiary. Call us if you’re looking for burial insurance for your parents.</p>
 
-<p><strong>Guaranteed Issue –</strong> also called <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a> insurance policy would accept you regardless of your health issues as long as you fall in the age category.</p>
+<p><strong>Guaranteed Issue –</strong> also called <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a> insurance policy would accept you regardless of your health issues as long as you fall in the age category.</p>
 
 <p>If you have health conditions that may preclude you from getting insurance or do not want to share your health information, then a guaranteed issue policy can be your best option.</p>
 
@@ -176,7 +176,7 @@ sidebar: true
 
 <p>After you find a company that fits your need, it’s the perfect time to apply.</p>
 
-<p>Completing an <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">application</a> form will be the first step after determining what type of policy you need and how much face amount would be best for you and your budget. The application can be in paper form, a telephone application, or online form.</p>
+<p>Completing an <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application</a> form will be the first step after determining what type of policy you need and how much face amount would be best for you and your budget. The application can be in paper form, a telephone application, or online form.</p>
 
 <p>You will need to fill out an application with an agent either by phone or in person. The application process will usually take 10 to 20 minutes. You will need to answer basic questions like your name, birthday, age, and address.</p>
 

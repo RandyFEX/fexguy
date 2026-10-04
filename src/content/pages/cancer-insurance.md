@@ -86,7 +86,7 @@ sidebar: true
 
 <p>Cancer is the second most common cause of death in the United States. Each year, it kills hundreds of thousands of people. According to the <a href="https://www.cancer.org/" target="_blank" rel="noreferrer noopener">American Cancer Society</a>, 39 out of 100 men and 38 out of 100 women will develop cancer during their lifetime.</p>
 
-<p>Your cancer risk increases with a family history of cancer, <a href="/burial-insurance-for-smokers/" target="_blank" rel="noreferrer noopener">smoking</a> history, and age. Family history only accounts for 5-10% of cancer. It means 90% will still get cancer even if you don’t have any risk factors. That’s why everyone needs cancer insurance.</p>
+<p>Your cancer risk increases with a family history of cancer, <a href="/burial-insurance/for-smokers/" target="_blank" rel="noreferrer noopener">smoking</a> history, and age. Family history only accounts for 5-10% of cancer. It means 90% will still get cancer even if you don’t have any risk factors. That’s why everyone needs cancer insurance.</p>
 
 <p>Cancer insurance will help you pay for treatments and procedures related to cancer diagnosis and treatment. It can also help you pay for living expenses if you cannot work because of your cancer diagnosis.</p>
 

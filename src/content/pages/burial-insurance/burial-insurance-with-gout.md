@@ -60,7 +60,7 @@ sidebar: true
 
 <p><br><strong>MOBILITY ISSUES &amp; ACTIVITIES OF DAILY LIVING</strong></p>
 
-<p>There are some cases when severe gout can cause disability and <a href="https://healthtalk.org/gout/gout-mobility-and-footwear" target="_blank" rel="noreferrer noopener">mobility</a> issues. Severe gout may cause you to require help in performing the <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> (ADL), such as eating, bathing, dressing, toileting, transferring, and continence.</p>
+<p>There are some cases when severe gout can cause disability and <a href="https://healthtalk.org/gout/gout-mobility-and-footwear" target="_blank" rel="noreferrer noopener">mobility</a> issues. Severe gout may cause you to require help in performing the <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> (ADL), such as eating, bathing, dressing, toileting, transferring, and continence.</p>
 
 <p>Every life insurance company that asks health questions wants to know if you need help with any of these activities of daily living. If you need help with any of these ADLs, finding a company that offers you a level death benefit plan with first-day coverage will be hard. In this case, your only option for insurance coverage is guaranteed issue burial insurance.</p>
 

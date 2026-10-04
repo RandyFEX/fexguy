@@ -71,7 +71,7 @@ sidebar: true
 
 <h2 id="can-you-borrow-against-cash-value"><br><strong>Can You Borrow Against Cash Value?</strong></h2>
 
-<p>Each time you make premium payments for a permanent policy such as <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life</a>, <a href="https://lifewealthwin.com/guaranteed-universal-life-insurance/" target="_blank" rel="noreferrer noopener">universal</a>, or variable that has a cash value, part of the premium is put towards the cash value. The cash value accumulates at an interest rate set by the policy’s term.</p>
+<p>Each time you make premium payments for a permanent policy such as whole life, <a href="https://lifewealthwin.com/guaranteed-universal-life-insurance/" target="_blank" rel="noreferrer noopener">universal</a>, or variable that has a cash value, part of the premium is put towards the cash value. The cash value accumulates at an interest rate set by the policy’s term.</p>
 
 <p>While the specific interest rate differs between insurance companies, it is typically around 6% per year. The cash value equals the money you would receive if you surrendered the policy to the company.</p>
 

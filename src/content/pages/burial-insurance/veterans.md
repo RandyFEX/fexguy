@@ -23,7 +23,7 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" src="/wp-content/uploads/2022/04/Check-Mark-Yes-Yes-No.png" alt=""></figure>
 
-<p>Getting burial insurance for a disabled veteran is also possible. Many disabled veterans who collect VA disability benefits still have a job or a business. If you’re a disabled veteran who doesn’t receive Social Security disability income, you have a better chance of getting approved for burial insurance. Most of the time, you can expect to pay the same premium as people who are not on <a href="/burial-insurance-disability/" target="_blank" rel="noreferrer noopener">disability</a>.</p>
+<p>Getting burial insurance for a disabled veteran is also possible. Many disabled veterans who collect VA disability benefits still have a job or a business. If you’re a disabled veteran who doesn’t receive Social Security disability income, you have a better chance of getting approved for burial insurance. Most of the time, you can expect to pay the same premium as people who are not on <a href="/burial-insurance/disability/" target="_blank" rel="noreferrer noopener">disability</a>.</p>
 
 <p>In this article, we will explore how military personnel can have burial insurance, funeral insurance, cremation insurance, or final expense insurance when they leave the military. We will learn what burial insurance options are open for them and how to get the best rates.</p>
 
@@ -106,7 +106,7 @@ sidebar: true
 
 <p><br><strong>SIMPLIFIED ISSUE WITH LEVEL DEATH BENEFIT</strong></p>
 
-<p>Simplified issue <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life insurance</a> is a burial insurance policy you can buy from age 50-to 85. The monthly premium is guaranteed to never increase through the policy’s life. You will be covered immediately from day one and will not have a <a href="/burial-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">waiting period</a>.</p>
+<p>Simplified issue whole life insurance is a burial insurance policy you can buy from age 50-to 85. The monthly premium is guaranteed to never increase through the policy’s life. You will be covered immediately from day one and will not have a <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">waiting period</a>.</p>
 
 <p>This policy provides a 100% death benefit when the policy is issued.&#160; If you cross the street, get hit by a bus, and die the next day after your policy is approved, your beneficiaries will receive the full death benefit.</p>
 

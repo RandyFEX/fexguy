@@ -64,11 +64,11 @@ sidebar: true
 
 <h2 id="how-to-qualify-for-medicaid"><strong>How To Qualify For Medicaid</strong></h2>
 
-<p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance-nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets should not be greater than $2,000 for one person or a maximum of $126,420 for married couples where one of them is trying to obtain Medicaid. </p>
+<p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets should not be greater than $2,000 for one person or a maximum of $126,420 for married couples where one of them is trying to obtain Medicaid. </p>
 
 <p>Each state has its asset limit, but these figures are used as a rule of thumb.</p>
 
-<p>There are two categories of assets – exempt and not-exempt. Exempt assets don’t factor in Medicaid <a rel="noreferrer noopener" href="/burial-insurance-medicaid/" target="_blank">eligibility</a>, while non-exempt assets are subject to the state’s spend-down requirements.</p>
+<p>There are two categories of assets – exempt and not-exempt. Exempt assets don’t factor in Medicaid <a rel="noreferrer noopener" href="/final-expense-life-insurance-medicaid/" target="_blank">eligibility</a>, while non-exempt assets are subject to the state’s spend-down requirements.</p>
 
 <p><br><strong>Exempt Medicaid Assets</strong></p>
 
@@ -102,7 +102,7 @@ sidebar: true
 
 <p><br><strong>Permanent Life Insurance</strong>&#160;– also called cash-value life insurance, does not expire and will last a lifetime. The insured is covered until death as long as the insurance policy is in force. </p>
 
-<p>Aside from the death benefit payout, permanent life insurance accumulates cash value. <a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent life insurance</a>, such as whole life insurance, universal, and variable life insurance, accumulates cash value over time.</p>
+<p>Aside from the death benefit payout, permanent life insurance accumulates cash value. <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent life insurance</a>, such as whole life insurance, universal, and variable life insurance, accumulates cash value over time.</p>
 
 <p><br><strong>Term Life Insurance vs. Permanent Life Insurance</strong></p>
 
@@ -376,7 +376,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

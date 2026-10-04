@@ -156,7 +156,7 @@ their families.</p>
 
 <p><strong>It’s possible that the body donation program may decline to accept your body donation; therefore, you need to be prepared and have a backup plan.</strong></p>
 
-<p>You need to have something to cover the cost of your funeral and other final expenses. Having <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expense</a> insurance, or funeral insurance to cover the cost of your end-of-life expenses will lift the financial burden on your family.</p>
+<p>You need to have something to cover the cost of your funeral and other final expenses. Having <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> insurance, or funeral insurance to cover the cost of your end-of-life expenses will lift the financial burden on your family.</p>
 
 <h2 id="donating-your-body-to-science"><br><strong>Donating Your Body To Science: Frequently Asked Questions </strong></h2>
 
@@ -172,10 +172,10 @@ diabetes will not disqualify you for donation. </p>
 <p><br><strong>There are some general restrictions on eligibility. These medical conditions may not be qualified for body donation:</strong></p>
 
 <ul>
-<li><a rel="noreferrer noopener" href="/life-insurance-for-hiv-positive/" target="_blank">HIV</a> 1 or 2, <a rel="noreferrer noopener" href="/burial-insurance-aids-hiv/" target="_blank">AIDS</a>-related deaths are not accepted</li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-hepatitis-b/" target="_blank">Hepatitis</a> B or C</li>
+<li><a rel="noreferrer noopener" href="/life-insurance-for-hiv-positive/" target="_blank">HIV</a> 1 or 2, <a rel="noreferrer noopener" href="/burial-insurance/aids-hiv/" target="_blank">AIDS</a>-related deaths are not accepted</li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/hepatitis-b/" target="_blank">Hepatitis</a> B or C</li>
 <li>Syphilis</li>
-<li><a href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank" rel="noreferrer noopener">Kidney failure </a>or jaundice</li>
+<li><a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">Kidney failure </a>or jaundice</li>
 <li>A severe viral or bacterial infection that resulted in the isolation</li>
 <li>Fluid retention or edema</li>
 <li>Death caused by extensive trauma</li>

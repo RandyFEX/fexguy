@@ -84,7 +84,7 @@ sidebar: true
 
 <p><strong>Types of Final Expense Insurance</strong></p>
 
-<p><strong>Simplified Issue</strong> – this type of policy is a simplified version of regular insurance. It does not require a <a rel="noreferrer noopener" href="/burial-insurance-with-no-exam/" target="_blank">medical exam</a>, but some health questions will be asked on the application. This final expense life insurance no exam has immediate coverage starting on the first day.</p>
+<p><strong>Simplified Issue</strong> – this type of policy is a simplified version of regular insurance. It does not require a <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-no-exam/" target="_blank">medical exam</a>, but some health questions will be asked on the application. This final expense life insurance no exam has immediate coverage starting on the first day.</p>
 
 <p>If you answer NO to the health questions, your coverage will be approved. Part of the underwriting process is a background check on medical history, prescription medication, and motor vehicle records.</p>
 
@@ -92,12 +92,12 @@ sidebar: true
 
 <p>As long as the policy is available in your state and you fall in the age bracket, the company is guaranteed to offer you a policy.</p>
 
-<p>If you have a pre-existing health condition that makes it impossible to qualify for traditional life insurance, you should consider a <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policy. GI policy comes with a graded death benefit or a two-year waiting period.</p>
+<p>If you have a pre-existing health condition that makes it impossible to qualify for traditional life insurance, you should consider a <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policy. GI policy comes with a graded death benefit or a two-year waiting period.</p>
 
 <p><strong>Features of Final Expense Insurance</strong>:</p>
 
 <ul>
-<li><a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent</a> <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life</a> policy</li>
+<li><a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent</a> whole life policy</li>
 <li>Level premium – premiums never increase</li>
 <li>Benefits never decrease for any reason</li>
 <li>Available for seniors ages 50 to 85</li>

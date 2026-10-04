@@ -863,7 +863,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 
@@ -908,7 +908,7 @@ October 12, 2022 at 11:47 pm
 <div class="comment-replies">
 <div class="comment" id="comment-25187">
 <h6 class="comment-name">Final Expense Guy </h6>                                            
-<p>Hey Melissa – Thank you for allowing us to help you with this. You can use the quoting tool on this page – <a href="/life-insurance-over-80/" rel="ugc">https://fexguy.com/life-insurance-over-80/</a> – to get a quote for your grandmother. Feel free to call us at 888-862-9456 if you have any more questions.</p>
+<p>Hey Melissa – Thank you for allowing us to help you with this. You can use the quoting tool on this page to get a quote for your grandmother. Feel free to call us at 888-862-9456 if you have any more questions.</p>
 <div class="comment-meta">
 October 13, 2022 at 3:08 am                    
 </div>

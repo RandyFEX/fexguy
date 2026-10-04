@@ -109,7 +109,7 @@ The $9.95 Mailer That Wasn’t Insurance
 
 <p>Popular TV and mail-order brands often sell guaranteed-issue policies that delay full payouts despite sounding immediate.</p>
 
-<p>The same goes for many companies that advertise through TV commercials or Facebook ads. They make their offers sound official by saying things like “new government program” or “<a href="/state-regulated-life-insurance/" target="_blank" rel="noreferrer noopener">state-regulated</a> coverage.”</p>
+<p>The same goes for many companies that advertise through TV commercials or Facebook ads. They make their offers sound official by saying things like “new government program” or “<a href="/burial-insurance/state-regulated-life-insurance/" target="_blank" rel="noreferrer noopener">state-regulated</a> coverage.”</p>
 
 <p>What they often do is connect you with high-priced guaranteed-issue policies that always have a two-year waiting period.</p>
 

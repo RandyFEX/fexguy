@@ -98,7 +98,7 @@ sidebar: true
 
 <p><strong>SECOND</strong> – They’ll snoop through your prescription history electronically to see what’s really going on with your health.</p>
 
-<p>A defibrillator implant is considered a <a href="/burial-insurance-circulatory-surgery/" target="_blank" rel="noreferrer noopener">circulatory surgery</a>. Most burial insurance companies are nosy about recent circulatory surgeries, usually within the last 24 months. It’s rare for them to care about surgeries beyond two years ago.</p>
+<p>A defibrillator implant is considered a <a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">circulatory surgery</a>. Most burial insurance companies are nosy about recent circulatory surgeries, usually within the last 24 months. It’s rare for them to care about surgeries beyond two years ago.</p>
 
 <p><strong>HEATH QUESTIONS:</strong></p>
 
@@ -266,18 +266,18 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 
-<p><a href="/final-expense-life-insurance-stent/">
+<p><a href="/burial-insurance/stent/">
 <h5>Final Expense Insurance With A  Stent</h5>
-</a>  <a href="/burial-insurance-with-congestive-heart-failure/">
+</a>  <a href="/burial-insurance/congestive-heart-failure/">
 <h5>Final Expense Life Insurance For Congestive Heart Failure</h5>
-</a>  <a href="/burial-insurance-angioplasty/">
+</a>  <a href="/burial-insurance/heart-surgery/">
 <h5>Burial Insurance After Angioplasty</h5>
-</a>  <a href="/burial-insurance-heart-valve-surgery/">
+</a>  <a href="/burial-insurance/heart-surgery/">
 <h5>Burial Insurance After Heart Valve Surgery</h5>
-</a>  <a href="/burial-insurance-circulatory-surgery/">
+</a>  <a href="/burial-insurance/heart-surgery/">
 <h5>Burial Insurance with Circulatory Surgery</h5>
 </a></p>

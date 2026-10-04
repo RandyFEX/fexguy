@@ -100,7 +100,7 @@ sidebar: true
 
 <p>After the contestability period, your life insurance policy cannot be contested by the company other than non-payment. </p>
 
-<p>The contestability period is different from a <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a> policy, with a two-year waiting period until the full death benefit is available.</p>
+<p>The contestability period is different from a <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a> policy, with a two-year waiting period until the full death benefit is available.</p>
 
 <h2 id="what-is-the-purpose-of-contestability-period"><br><strong>What Is The Purpose Of Contestability Period?</strong></h2>
 

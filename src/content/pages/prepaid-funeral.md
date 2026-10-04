@@ -165,7 +165,7 @@ sidebar: true
 
 <p><strong>Totten Trust (Payable on Death Account)</strong></p>
 
-<p><a href="/payable-on-death-account-pros-and-cons/" target="_blank" rel="noreferrer noopener">Payable on death accoun</a>t is a bank account that allows you to name a beneficiary on your bank account. You can fund the account to be used for your funeral. Your beneficiary can immediately access the funds when you’re gone. Your beneficiary has the right to the funds and can use it to pay the funeral expenses.</p>
+<p>Payable on death account is a bank account that allows you to name a beneficiary on your bank account. You can fund the account to be used for your funeral. Your beneficiary can immediately access the funds when you’re gone. Your beneficiary has the right to the funds and can use it to pay the funeral expenses.</p>
 
 <p>This method takes planning and diligence to properly fund this account over time to cover all your burial expenses.</p>
 
@@ -177,7 +177,7 @@ sidebar: true
 
 <h2 id="the-best-way-to-prepay-for-funeral-expenses"><strong>The Best Way To Prepay For Funeral Expenses </strong></h2>
 
-<p><a rel="noreferrer noopener" href="/is-burial-insurance-permanent/" target="_blank">Burial insurance</a> is the best way to prepay for funeral expenses. Think of it as a prepaid funeral plan with benefits. A burial insurance policy is similar to prepaid funeral plans in a way that helps you prepay for your funeral expenses.</p>
+<p><a rel="noreferrer noopener" href="/burial-insurance/is-burial-insurance-permanent/" target="_blank">Burial insurance</a> is the best way to prepay for funeral expenses. Think of it as a prepaid funeral plan with benefits. A burial insurance policy is similar to prepaid funeral plans in a way that helps you prepay for your funeral expenses.</p>
 
 <p>You can take out a burial insurance policy to cover the cost of your funeral and other final expenses at the time of your death. You can leave a funeral plan that outlines your wishes for funeral services to your loved ones that they need to carry out when you’re gone.</p>
 
@@ -187,7 +187,7 @@ sidebar: true
 
 <p>Having burial insurance gives flexibility to your loved ones since a particular funeral home does not hold the funds. Your family won’t be locked into your funeral choices a decade ago. They can decide where and how to organize your funeral according to your wishes.</p>
 
-<p>Burial insurance is easy to get.&#160;You can purchase the policy online or on the phone without being subject to a <a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener">medical exam</a> or health questions.</p>
+<p>Burial insurance is easy to get.&#160;You can purchase the policy online or on the phone without being subject to a <a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">medical exam</a> or health questions.</p>
 
 <p><strong>You can still qualify for burial insurance if you need coverage but have some medical issues.</strong></p>
 

@@ -94,7 +94,7 @@ sidebar: true
 
 <p>A full-blown stroke can cause learning problems and lifelong disabilities. A stroke may affect life insurance eligibility depending on the time you had it. </p>
 
-<p>If your stroke was over two years, you will qualify for the level death benefit to most burial insurance companies. We encourage you to read our full article on burial insurance with <a href="/burial-insurance-stroke/">stroke</a>.</p>
+<p>If your stroke was over two years, you will qualify for the level death benefit to most burial insurance companies. We encourage you to read our full article on burial insurance with <a href="/burial-insurance/stroke-tia/">stroke</a>.</p>
 
 <p><strong>If your stroke was over 2 years ago</strong></p>
 
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Every life insurance companies ask about chest pain or angina in their health questions. If you had chest pain or angina and you’ve been treated within the last 24 months, you can qualify for a level death benefit plan with first-day benefits.</p>
 
-<p>You can read our article about burial insurance with <a href="/burial-insurance-angina/" target="_blank" rel="noreferrer noopener">angina</a>. You will learn in detail about life insurance options if you have chest pain.</p>
+<p>You can read our article about burial insurance with <a href="/burial-insurance/angina/" target="_blank" rel="noreferrer noopener">angina</a>. You will learn in detail about life insurance options if you have chest pain.</p>
 
 <p> <strong>Best Option:</strong> Level death benefit plan with first-day benefits</p>
 
@@ -162,7 +162,7 @@ sidebar: true
 
 <p><br><strong>BURIAL INSURANCE WITH BONE MARROW TRANSPLANT</strong></p>
 
-<p>Every life insurance company asks about a bone marrow <a href="/burial-insurance-organ-transplant/" target="_blank" rel="noreferrer noopener">transplant</a> in their health questions. You cannot qualify for a plan with immediate coverage if you had or have been advised to have a bone marrow transplant. Your only option for coverage is a guaranteed issue life insurance.</p>
+<p>Every life insurance company asks about a bone marrow <a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">transplant</a> in their health questions. You cannot qualify for a plan with immediate coverage if you had or have been advised to have a bone marrow transplant. Your only option for coverage is a guaranteed issue life insurance.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

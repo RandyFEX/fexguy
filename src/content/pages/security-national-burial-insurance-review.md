@@ -231,15 +231,15 @@ sidebar: true
 
 <p><br><strong>KNOCKOUT SECTION</strong></p>
 
-<p><strong>1.</strong> Are you now or within the past 30 days been confined or treated in a hospital, <a rel="noreferrer noopener" href="/burial-insurance-nursing-home-residents/" target="_blank">nursing home</a>, health care facility, or hospice care, or been advised by a licensed member of the medical profession to be confined to a bed? Have you been medically diagnosed, tested, or treated by a licensed member of the medical profession with having a terminal illness resulting in death within the next 12 months? (Yes – No)</p>
+<p><strong>1.</strong> Are you now or within the past 30 days been confined or treated in a hospital, <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a>, health care facility, or hospice care, or been advised by a licensed member of the medical profession to be confined to a bed? Have you been medically diagnosed, tested, or treated by a licensed member of the medical profession with having a terminal illness resulting in death within the next 12 months? (Yes – No)</p>
 
 <p><strong>2. </strong>Within the past 30 days, have you been medically diagnosed, tested, or treated in a hospital by a licensed member of the medical profession for a seizure?  (Yes – No) </p>
 
 <p><strong>3.</strong> Do you need assistance or supervision with dressing, eating, personal hygiene (bathing or toilet), or transferring to or from bed or chair?  (Yes – No) </p>
 
-<p><strong>4. </strong>Are you now, or within the past 90 days, been diagnosed, tested, or treated by a licensed member of the medical profession for any tumors or <a rel="noreferrer noopener" href="/burial-insurance-cancer-patients/" target="_blank">cancers</a>, except basal cell skin cancer?  (Yes – No) </p>
+<p><strong>4. </strong>Are you now, or within the past 90 days, been diagnosed, tested, or treated by a licensed member of the medical profession for any tumors or <a rel="noreferrer noopener" href="/burial-insurance/cancer/" target="_blank">cancers</a>, except basal cell skin cancer?  (Yes – No) </p>
 
-<p><strong>5.</strong> Have you received medical advice, treatment, been advised to have treatment or surgery, or take medication for <a rel="noreferrer noopener" href="/burial-insurance-alzheimers-disease/" target="_blank">Alzheimer’s</a>, ALS (Lou Gehrig’s disease, sickle cell anemia, hepatitis, cirrhosis of the liver, cystic fibrosis, cystic fibrosis, brain aneurysm, or <a rel="noreferrer noopener" href="/burial-insurance-organ-transplant/" target="_blank">organ transplant</a>?  (Yes – No) </p>
+<p><strong>5.</strong> Have you received medical advice, treatment, been advised to have treatment or surgery, or take medication for <a rel="noreferrer noopener" href="/burial-insurance/dementia-alzheimers/" target="_blank">Alzheimer’s</a>, ALS (Lou Gehrig’s disease, sickle cell anemia, hepatitis, cirrhosis of the liver, cystic fibrosis, cystic fibrosis, brain aneurysm, or <a rel="noreferrer noopener" href="/burial-insurance/organ-transplant/" target="_blank">organ transplant</a>?  (Yes – No) </p>
 
 <p><strong>6.</strong> Are you currently receiving dialysis treatment?  (Yes – No) </p>
 
@@ -251,13 +251,13 @@ sidebar: true
 
 <p><strong>Within the past two years, have you received medical advice, treatment been advised to have treatment or surgery, or taken medication for:</strong></p>
 
-<p><strong>9.</strong> <a rel="noreferrer noopener" href="/burial-insurance-angioplasty/" target="_blank">Angioplasty</a>, <a rel="noreferrer noopener" href="/burial-insurance-heart-stent/" target="_blank">stent implant</a>, <a rel="noreferrer noopener" href="/burial-insurance-heart-bypass-surgery/" target="_blank">bypass surgery</a>, <a rel="noreferrer noopener" href="/burial-insurance-heart-valve-surgery/" target="_blank">heart valve surgery</a>, or <a rel="noreferrer noopener" href="/burial-insurance-pacemaker/" target="_blank">pacemaker</a>?  (Yes – No) </p>
+<p><strong>9.</strong> <a rel="noreferrer noopener" href="/burial-insurance/heart-surgery/" target="_blank">Angioplasty</a>, <a rel="noreferrer noopener" href="/burial-insurance/stent/" target="_blank">stent implant</a>, <a rel="noreferrer noopener" href="/burial-insurance/heart-bypass-surgery/" target="_blank">bypass surgery</a>, <a rel="noreferrer noopener" href="/burial-insurance/heart-surgery/" target="_blank">heart valve surgery</a>, or <a rel="noreferrer noopener" href="/burial-insurance/pacemaker/" target="_blank">pacemaker</a>?  (Yes – No) </p>
 
 <p><strong>10.</strong> Any tumors or cancers, except basal cell skin cancer? If now cancer-free, indicate month and year you were diagnosed by a licensed member of the medical professional that you were cancer-free: _______  (Yes – No) </p>
 
 <p><strong>11.</strong> Brain tumor, brain disorders, TIA (mini-stroke), or strokes of any kind?  (Yes – No) </p>
 
-<p><strong>12.</strong> Heart disease of any type, <a rel="noreferrer noopener" href="/burial-insurance-angina/" target="_blank">angina</a>, <a rel="noreferrer noopener" href="/burial-insurance-heart-attack/" target="_blank">heart attack</a>, enlarged heart, <a href="/burial-insurance-with-congestive-heart-failure/" target="_blank" rel="noreferrer noopener">congestive heart failure</a> (CHF), or other heart disorders or conditions?  (Yes – No) </p>
+<p><strong>12.</strong> Heart disease of any type, <a rel="noreferrer noopener" href="/burial-insurance/angina/" target="_blank">angina</a>, <a rel="noreferrer noopener" href="/burial-insurance/heart-attack/" target="_blank">heart attack</a>, enlarged heart, <a href="/burial-insurance/congestive-heart-failure/" target="_blank" rel="noreferrer noopener">congestive heart failure</a> (CHF), or other heart disorders or conditions?  (Yes – No) </p>
 
 <p><strong>13.</strong> Lung disease, emphysema, or chronic obstructive pulmonary disease (COPD), or any type of other pulmonary disease or condition?  (Yes – No) </p>
 

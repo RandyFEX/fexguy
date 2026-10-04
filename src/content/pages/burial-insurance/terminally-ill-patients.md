@@ -59,7 +59,7 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-are-terminally-ill"><br><strong>What Is My Best Insurance Option If I’m A Terminally Ill Patient?</strong></h2>
 
-<p>A <a href="/burial-insurance-terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> is a <a href="https://en.wikipedia.org/wiki/Terminal_illness" target="_blank" rel="noreferrer noopener">progressive disease</a> that is expected to end a person’s life within 12-24 months because the disease has no known cure or has progressed to the point where it can’t be cured.</p>
+<p>A <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> is a <a href="https://en.wikipedia.org/wiki/Terminal_illness" target="_blank" rel="noreferrer noopener">progressive disease</a> that is expected to end a person’s life within 12-24 months because the disease has no known cure or has progressed to the point where it can’t be cured.</p>
 
 <p><strong>If you’re a terminally ill patient, your only option for insurance coverage is a guaranteed issue burial insurance with a two-year waiting period.</strong></p>
 
@@ -70,17 +70,17 @@ sidebar: true
 <p><br><strong>Here are the most common types of terminal illness the insurance companies care about:</strong></p>
 
 <ul>
-<li><a href="/cancer-insurance-what-is-it-why-you-need-it/">Advanced cancer</a></li>
-<li><a href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis (ALS)</a></li>
-<li><a href="/burial-insurance-lung-disease/" target="_blank" rel="noreferrer noopener">Chronic lung problems</a></li>
-<li><a href="/burial-insurance-cystic-fibrosis/" target="_blank" rel="noreferrer noopener">Cystic Fibrosis</a></li>
-<li><a href="/burial-insurance-dementia/" target="_blank" rel="noreferrer noopener">Dementia</a> and <a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
-<li><a href="/burial-insurance-heart-disease-circulatory-issues/" target="_blank" rel="noreferrer noopener">Heart diseases</a> such as severe <a href="/burial-insurance-coronary-artery-disease/" target="_blank" rel="noreferrer noopener">coronary artery disease</a></li>
-<li><a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">HIV/ AIDS</a></li>
-<li><a href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank" rel="noreferrer noopener">End-stage renal failure</a></li>
-<li><a href="/burial-insurance-muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular Dystrophy</a></li>
-<li><a href="/burial-insurance-scleroderma/" target="_blank" rel="noreferrer noopener">Scleroderma</a></li>
-<li><a href="/burial-insurance-parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
+<li><a href="/cancer-insurance/">Advanced cancer</a></li>
+<li><a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis (ALS)</a></li>
+<li><a href="/burial-insurance/lung-disease/" target="_blank" rel="noreferrer noopener">Chronic lung problems</a></li>
+<li><a href="/burial-insurance/cystic-fibrosis/" target="_blank" rel="noreferrer noopener">Cystic Fibrosis</a></li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Dementia</a> and <a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
+<li><a href="/burial-insurance/heart-disease/" target="_blank" rel="noreferrer noopener">Heart diseases</a> such as severe <a href="/burial-insurance/coronary-artery-disease/" target="_blank" rel="noreferrer noopener">coronary artery disease</a></li>
+<li><a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">HIV/ AIDS</a></li>
+<li><a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">End-stage renal failure</a></li>
+<li><a href="/burial-insurance/muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular Dystrophy</a></li>
+<li><a href="/burial-insurance/scleroderma/" target="_blank" rel="noreferrer noopener">Scleroderma</a></li>
+<li><a href="/burial-insurance/parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
 </ul>
 
 <p>There are other terminal illnesses, but these are considered the most common in the U.S.</p>

@@ -47,11 +47,11 @@ sidebar: true
 
 <h2 id="final-expenses-your-family-will-have-to-pay"><strong>Final Expenses Your Family Will Have To Pay</strong></h2>
 
-<p>A life insurance policy is often purchased to help cover <a href="/funeral-expenses-people-overlook/" target="_blank" rel="noreferrer noopener">funeral expenses.</a></p>
+<p>A life insurance policy is often purchased to help cover <a href="/how-much-does-a-funeral-cost/" target="_blank" rel="noreferrer noopener">funeral expenses.</a></p>
 
 <p>Without life insurance, your family will be left to pay the final expenses. How much does a funeral cost? The funeral cost can be quite expensive, and the funeral expenses can vary depending on the type of service and goods used during the service.</p>
 
-<p><strong>Casket</strong> – This is commonly the largest <a href="/how-to-pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> expense. Starting at around $2,400, the casket can get really expensive if you would like to be buried in metal or bronze.</p>
+<p><strong>Casket</strong> – This is commonly the largest <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> expense. Starting at around $2,400, the casket can get really expensive if you would like to be buried in metal or bronze.</p>
 
 <p><strong>Embalming</strong> – This is needed if there will be visitation or viewing. Embalming will not be required if there won’t be any viewing. According to the National Funeral Directors Association, embalming costs around $750.</p>
 
@@ -85,7 +85,7 @@ sidebar: true
 
 <p>Losing a loved one is tough, and having no life insurance for your death will be harder on your spouse. Life without life insurance is difficult. We often hear no life insurance stories.</p>
 
-<p>There is limited financial assistance available for funeral and <a href="/how-much-does-burial-insurance-cost/" target="_blank" rel="noreferrer noopener">burial costs</a>. If your spouse does not have the financial means to pay for your funeral and needs help with funeral costs, she may have to do with these alternatives:</p>
+<p>There is limited financial assistance available for funeral and <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">burial costs</a>. If your spouse does not have the financial means to pay for your funeral and needs help with funeral costs, she may have to do with these alternatives:</p>
 
 <p><strong>Loan</strong> – your spouse will have to get a loan to fund the funeral expenses. They will not only have to pay for the funeral but also pay interest on the loan.</p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <p>Everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
-<p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">burial insurance</a></strong>, like FuneralFunds.com, than to sign up with a company that spends millions of dollars each month advertising on television and in magazines.</p>
+<p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">burial insurance</a></strong>, like FuneralFunds.com, than to sign up with a company that spends millions of dollars each month advertising on television and in magazines.</p>
 
 <h3><strong>Increasing Price Policies</strong></h3>
 

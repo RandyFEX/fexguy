@@ -630,7 +630,7 @@ sidebar: true
 
 <p><br><strong>Where can I find Mutual of Omaha life insurance reviews?</strong></p>
 
-<p>Read Mutual Of Omaha reviews <a href="/mutual-of-omaha-burial-insurance" target="_blank" rel="noreferrer noopener">here</a> </p>
+<p>Read Mutual Of Omaha reviews here </p>
 
 <p><br><strong>Where can I find Mutual of Omaha BBB reviews?</strong></p>
 

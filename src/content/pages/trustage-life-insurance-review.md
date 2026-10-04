@@ -203,18 +203,18 @@ sidebar: true
 </ol>
 
 <ul>
-<li><a href="/life-insurance-for-hiv-positive/" target="_blank" rel="noreferrer noopener">HIV</a>, <a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>, or AIDS-Related Complex</li>
-<li><a href="/burial-insurance-for-cancer-patients/" target="_blank" rel="noreferrer noopener">Cancer</a> (except basal cell)</li>
-<li><a href="/burial-insurance-stroke/" target="_blank" rel="noreferrer noopener">Stroke</a></li>
-<li><a href="/burial-insurance-diabetes/" target="_blank" rel="noreferrer noopener">Diabetes</a> requiring <a href="/burial-insurance-insulin-use/" target="_blank" rel="noreferrer noopener">Insulin</a></li>
-<li>Heart Disease/ Condition (except <a href="/burial-insurance-high-blood-pressure" target="_blank" rel="noreferrer noopener">high blood pressure</a>)</li>
-<li><a href="/bipolar-disorder-burial-insurance/" target="_blank" rel="noreferrer noopener">Mental Disorder</a></li>
-<li><a href="/burial-insurance-alcohol-abuse/" target="_blank" rel="noreferrer noopener">Alcohol</a> or <a href="/burial-insurance-drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">Drug Abuse</a></li>
-<li>Chronic <a href="/burial-insurance-liver-disease/" target="_blank" rel="noreferrer noopener">Liver Disease</a></li>
+<li><a href="/life-insurance-for-hiv-positive/" target="_blank" rel="noreferrer noopener">HIV</a>, <a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>, or AIDS-Related Complex</li>
+<li><a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">Cancer</a> (except basal cell)</li>
+<li><a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">Stroke</a></li>
+<li><a href="/burial-insurance/diabetes/" target="_blank" rel="noreferrer noopener">Diabetes</a> requiring <a href="/burial-insurance/insulin-diabetics/" target="_blank" rel="noreferrer noopener">Insulin</a></li>
+<li>Heart Disease/ Condition (except <a href="/burial-insurance/high-blood-pressure/" target="_blank" rel="noreferrer noopener">high blood pressure</a>)</li>
+<li><a href="/burial-insurance/bipolar-disorder/" target="_blank" rel="noreferrer noopener">Mental Disorder</a></li>
+<li><a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">Alcohol</a> or <a href="/burial-insurance/drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">Drug Abuse</a></li>
+<li>Chronic <a href="/burial-insurance/liver-disease/" target="_blank" rel="noreferrer noopener">Liver Disease</a></li>
 <li>Chronic Disorder of the Brain or Spinal Nerve</li>
-<li>Chronic <a href="/burial-insurance-depression/" target="_blank" rel="noreferrer noopener">Depression</a></li>
-<li>Chronic <a href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank" rel="noreferrer noopener">Kidney Disease</a></li>
-<li>Chronic <a href="/burial-insurance-lung-disease/" target="_blank" rel="noreferrer noopener">Lung Condition</a></li>
+<li>Chronic <a href="/burial-insurance/depression/" target="_blank" rel="noreferrer noopener">Depression</a></li>
+<li>Chronic <a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">Kidney Disease</a></li>
+<li>Chronic <a href="/burial-insurance/lung-disease/" target="_blank" rel="noreferrer noopener">Lung Condition</a></li>
 </ul>
 
 <p>You will not qualify for coverage if you’ve suffered from any of the illnesses mentioned above in the last five years. </p>
@@ -854,7 +854,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

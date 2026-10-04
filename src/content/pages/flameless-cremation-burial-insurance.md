@@ -170,7 +170,7 @@ month or longer to know if you qualify.</p>
 
 <p><strong>Features of Cremation Insurance</strong>:</p>
 
-<p><strong><a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong> – only health questions to answer</p>
+<p><strong><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong> – only health questions to answer</p>
 
 <p><strong>Level premium</strong> – premiums are guaranteed never to
 increase</p>
@@ -246,14 +246,14 @@ underwriting:</strong></p>
 
 <p>Cremation insurance has a lenient underwriting. However, some medical conditions are considered uninsurable. </p>
 
-<p><a rel="noreferrer noopener" href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> cremation insurance with no health questions is the only insurance option for people with severe medication conditions. GI policy requires no medical exam and health questions. Your approval is guaranteed if you pass the age requirement.</p>
+<p><a rel="noreferrer noopener" href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> cremation insurance with no health questions is the only insurance option for people with severe medication conditions. GI policy requires no medical exam and health questions. Your approval is guaranteed if you pass the age requirement.</p>
 
 <p><strong>Guaranteed issue cremation insurance is your only insurance option if you have any of the following medical conditions:</strong></p>
 
 <ul>
-<li><a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or Dementia</li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or Dementia</li>
 <li>Cancer in the last 12 months</li>
-<li><a href="/burial-insurance-circulatory-surgery/" target="_blank" rel="noreferrer noopener">Circulatory surgery</a> within the previous 12 months</li>
+<li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Circulatory surgery</a> within the previous 12 months</li>
 <li>Currently in a hospital, nursing facility, or Hospice Care</li>
 <li>Congestive heart failure</li>
 <li>Heart attack</li>
@@ -467,7 +467,7 @@ underwriting:</strong></p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

@@ -57,7 +57,7 @@ sidebar: true
 <li>Even with health problems, you can get approved for this coverage.</li>
 <li>Once approved, your policy will not expire as long as you keep making the premium payments.</li>
 <li>Once approved, your monthly premium will never increase as you age.</li>
-<li>You can get approved for a <a href="/life-insurance-policies-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">policy with no waiting period</a> (never purchase a policy from the television advertisement, magazine advertisement, or letter that shows up in your mailbox).</li>
+<li>You can get approved for a <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">policy with no waiting period</a> (never purchase a policy from the television advertisement, magazine advertisement, or letter that shows up in your mailbox).</li>
 </ul>
 
 <h3><strong>Here is some info for the older guys!</strong></h3>
@@ -81,7 +81,7 @@ sidebar: true
 
 <h3><strong>But what about the ladies?</strong></h3>
 
-<p>If you are a female looking for life insurance over 70, you have <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expense</a> needs that are approaching quickly; we can help you find the following:</p>
+<p>If you are a female looking for life insurance over 70, you have <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> needs that are approaching quickly; we can help you find the following:</p>
 
 <ul>
 <li>Funeral insurance for a&#160;70-year-old female or burial insurance&#160;for a 70-year-old female</li>
@@ -100,7 +100,7 @@ sidebar: true
 
 <h2 id="life-insurance-for-my-elderly-parents"><strong>Life Insurance For My Elderly Parents</strong></h2>
 
-<p>If you’re looking for life insurance for <a href="/burial-insurance-for-parents/" target="_blank" rel="noreferrer noopener">elderly parents</a> over 70 years old, we can also help you. Many adult children shop for funeral policies for parents or loved ones. A large part of what we do at Final Expense Guy is to help adult children find burial policies for senior parents.</p>
+<p>If you’re looking for life insurance for <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">elderly parents</a> over 70 years old, we can also help you. Many adult children shop for funeral policies for parents or loved ones. A large part of what we do at Final Expense Guy is to help adult children find burial policies for senior parents.</p>
 
 <p>We understand shopping around for final expenses life insurance no exams is probably not your tea. We are happy to provide funeral insurance quotes, so you can ensure your parents get the cheap burial insurance or cheap funeral insurance they require.</p>
 

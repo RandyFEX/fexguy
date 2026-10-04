@@ -48,9 +48,9 @@ sidebar: true
 
 <h2 id="what-is-burial-insurance"><strong>What Is Burial Insurance?</strong></h2>
 
-<p>Burial insurance is a type of small <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life insurance</a> that most people can qualify for between the ages of 50 and 85. Is burial insurance permanent? Burial insurance is a form of permanent life insurance. The primary purpose of burial insurance is to provide financial protection to your family, who will otherwise have to pay for your final expenses and burial costs.</p>
+<p>Burial insurance is a type of small whole life insurance that most people can qualify for between the ages of 50 and 85. Is burial insurance permanent? Burial insurance is a form of permanent life insurance. The primary purpose of burial insurance is to provide financial protection to your family, who will otherwise have to pay for your final expenses and burial costs.</p>
 
-<p>Burial insurance is frequently referred to as <a href="/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a>, cremation, or final expense insurance (interchangeably used in this article). Burial insurance gives your beneficiary a sum of money upon your death. The death benefit is designed to cover your family’s expenses after your death. These costs will include medical bills, burial or cremation expenses,s and other things associated with funeral expenses.</p>
+<p>Burial insurance is frequently referred to as <a href="/burial-insurance/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a>, cremation, or final expense insurance (interchangeably used in this article). Burial insurance gives your beneficiary a sum of money upon your death. The death benefit is designed to cover your family’s expenses after your death. These costs will include medical bills, burial or cremation expenses,s and other things associated with funeral expenses.</p>
 
 <h2 id="types-of-burial-insurance"><strong>Types Of Burial Insurance</strong></h2>
 
@@ -80,7 +80,7 @@ sidebar: true
 
 <p>This type of policy has a slightly higher premium because insurance carriers do not determine your risk level through underwriting.</p>
 
-<p>A <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed issue</a> plan has a mandatory two-year waiting period. Your beneficiaries will not receive the full death benefit if you die during the waiting period. They will only receive the return of the premium paid plus interest.</p>
+<p>A <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed issue</a> plan has a mandatory two-year waiting period. Your beneficiaries will not receive the full death benefit if you die during the waiting period. They will only receive the return of the premium paid plus interest.</p>
 
 <h2 id="who-needs-burial-insurance"><strong>Who Needs Burial Insurance?</strong></h2>
 
@@ -118,7 +118,7 @@ sidebar: true
 <li><strong>$8,755 – Total cost of a funeral with viewing</strong></li>
 </ul>
 
-<p>The cost estimate listed here does not include an additional cost for obituaries, headstones, grave plots,s, and flowers. Funerals can <a href="/how-much-does-burial-insurance-cost/" target="_blank" rel="noreferrer noopener">cost</a> more than you think; that’s why burial insurance can be a clever way to relieve the financial burden after the death of a family member.</p>
+<p>The cost estimate listed here does not include an additional cost for obituaries, headstones, grave plots,s, and flowers. Funerals can <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">cost</a> more than you think; that’s why burial insurance can be a clever way to relieve the financial burden after the death of a family member.</p>
 
 <p><strong> Burial Insurance is affordable</strong> – burial insurance policy is cheaper because the face value is smaller than traditional life insurance policies. You can buy coverage up to $50,000 but down to $1,000. You have the option to purchase what you need that fits your budget. It can be a small price to help your family get the financial protection they need.</p>
 

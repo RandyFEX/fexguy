@@ -106,7 +106,7 @@ sidebar: true
 
 <h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Paralysis?</strong></h2>
 
-<p>Life insurance companies are all about those six <strong>Activities of Daily Living (<a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>)</strong> to figure out if you’re a prime candidate for first-day coverage and the best rates. </p>
+<p>Life insurance companies are all about those six <strong>Activities of Daily Living (<a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>)</strong> to figure out if you’re a prime candidate for first-day coverage and the best rates. </p>
 
 <p><strong>To qualify for that sweet spot, you’ve gotta handle these tasks all on your own:</strong></p>
 

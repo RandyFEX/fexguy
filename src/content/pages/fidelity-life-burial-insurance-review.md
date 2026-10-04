@@ -178,25 +178,25 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p>If you answer YES to any questions, you do NOT qualify for the Rapid Decision Final Expense and may be offered RapiDecision Guaranteed Issue instead.</p>
 
-<p><strong>1.</strong> Are you currently on oxygen for a medical condition or confined to a <a href="/burial-insurance-nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing facility</a> or assisted living facility? (Yes – No)</p>
+<p><strong>1.</strong> Are you currently on oxygen for a medical condition or confined to a <a href="/burial-insurance/nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing facility</a> or assisted living facility? (Yes – No)</p>
 
 <p><strong>2.</strong> Within the past six months, have you been hospitalized two or more times, or have you been advised by a member of the medical profession to have any hospitalization or to be admitted to a nursing facility that has not yet been completed?  (Yes – No) </p>
 
 <p><strong>3.</strong> Have you been diagnosed by a member of the medical profession as having a life expectancy of 24 months or less?  (Yes – No) </p>
 
-<p><strong>4.</strong> Have you ever been diagnosed by a member of the medical profession as having Acquired Immune Deficiency Syndrome (<a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>) or AIDS Related Complex (ARC) or tested positive for Human Immunodeficiency Virus (<a rel="noreferrer noopener" href="/life-insurance-for-hiv-positive/" target="_blank">HIV</a>)? (Yes – No)</p>
+<p><strong>4.</strong> Have you ever been diagnosed by a member of the medical profession as having Acquired Immune Deficiency Syndrome (<a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>) or AIDS Related Complex (ARC) or tested positive for Human Immunodeficiency Virus (<a rel="noreferrer noopener" href="/life-insurance-for-hiv-positive/" target="_blank">HIV</a>)? (Yes – No)</p>
 
 <p>5. Within the past 5 years, have you been convicted of any<br>felony or driving under the influence of alcohol or drugs?</p>
 
 <p><strong>6.</strong> Within the past two years, have you been diagnosed with, consulted a member of the medical profession, or been treated for:</p>
 
-<p><strong>a)</strong> heart attack, stroke, chest pain, coronary artery disorder, Transient Ischemic Attack (<a href="/burial-insurance-tia-attack/" target="_blank" rel="noreferrer noopener">TIA</a>), or any other disorder of the heart, blood vessels, or peripheral vascular system?  (Yes – No) </p>
+<p><strong>a)</strong> heart attack, stroke, chest pain, coronary artery disorder, Transient Ischemic Attack (<a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">TIA</a>), or any other disorder of the heart, blood vessels, or peripheral vascular system?  (Yes – No) </p>
 
-<p><strong>b)</strong> Chronic Obstructive Pulmonary Disease (<a href="/burial-life-insurance-copd/" target="_blank" rel="noreferrer noopener">COPD</a>), emphysema, or any other respiratory disorder other than asthma?  (Yes – No) </p>
+<p><strong>b)</strong> Chronic Obstructive Pulmonary Disease (<a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>), emphysema, or any other respiratory disorder other than asthma?  (Yes – No) </p>
 
 <p><strong>c)</strong> kidney disorder, liver disorder, any organ transplant, or diabetic complications (amputation, coma, or blindness)? (Yes – No)</p>
 
-<p><strong>d)</strong> Alzheimer’s disease, dementia, organic brain syndrome, cognitive impairment (of any degree), or Amyotrophic Lateral Sclerosis (<a href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank" rel="noreferrer noopener">ALS</a>)? (Yes – No)</p>
+<p><strong>d)</strong> Alzheimer’s disease, dementia, organic brain syndrome, cognitive impairment (of any degree), or Amyotrophic Lateral Sclerosis (<a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">ALS</a>)? (Yes – No)</p>
 
 <p><strong>e)</strong> cancer (other than basal cell skin cancer)? (Yes – No)</p>
 

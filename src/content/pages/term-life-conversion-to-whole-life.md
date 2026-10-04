@@ -118,7 +118,7 @@ sidebar: true
 
 <p>Term conversion can be done without considering your health condition as long as you convert before the specified deadline. Depending on the company, it can be a certain age, somewhere between 65 and 70.</p>
 
-<p>Don’t wait too long if you want to convert your policy to <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life</a>. Premiums are based on age, which is bound to increase as you grow older. When you convert, the longer you wait, the higher the premium you’ll pay for a whole life insurance policy<strong>.</strong></p>
+<p>Don’t wait too long if you want to convert your policy to whole life. Premiums are based on age, which is bound to increase as you grow older. When you convert, the longer you wait, the higher the premium you’ll pay for a whole life insurance policy<strong>.</strong></p>
 
 <h2 id="what-is-partial-term-conversion"><br><strong>What Is Partial Term Conversion?</strong></h2>
 
@@ -176,7 +176,7 @@ sidebar: true
 <li>You can have life insurance coverage for your whole life.</li>
 <li>You retain your original health rating from the term policy when you convert, even if you have medical issues or become uninsurable.</li>
 <li>You can decide when and how much coverage you want to convert, as long as it’s before the expiration date.</li>
-<li>You can start building <a href="/borrowing-against-cash-value-pros-and-cons/" target="_blank" rel="noreferrer noopener">cash value</a> with your new whole life policy.</li>
+<li>You can start building <a href="/burial-insurance/borrowing-against-cash-value/" target="_blank" rel="noreferrer noopener">cash value</a> with your new whole life policy.</li>
 </ul>
 
 <h2 id="why-convert-to-whole-life"><br><strong>Reasons For Term Policy Conversion To Whole Life</strong></h2>
@@ -205,7 +205,7 @@ sidebar: true
 
 <p><strong>You have health issues.</strong></p>
 
-<p>You are not required to have a<a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener"> medical exam</a> if you convert from term life to whole life policy.</p>
+<p>You are not required to have a<a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener"> medical exam</a> if you convert from term life to whole life policy.</p>
 
 <p>If you let your term policy lapse and then apply for another policy, you’ll need to undergo a medical exam. You will likely not qualify for a policy if you have health issues. <strong>But, you bypass the medical exam when you convert your policy to whole life.</strong></p>
 
@@ -417,7 +417,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

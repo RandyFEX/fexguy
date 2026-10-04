@@ -373,7 +373,7 @@ sidebar: true
 
 <h2 id="getting-the-best-rates"><br><strong>How To Get The Best Burial Insurance Rates </strong></h2>
 
-<p>You need to find companies that don’t ask about lupus or other autoimmune diseases like <a href="/burial-insurance-arthritis/" target="_blank" rel="noreferrer noopener">arthritis</a> or <a href="/burial-insurance-multiple-sclerosis/" target="_blank" rel="noreferrer noopener">multiple sclerosis</a>. Those companies will provide you with the best burial insurance rates.</p>
+<p>You need to find companies that don’t ask about lupus or other autoimmune diseases like <a href="/burial-insurance/burial-insurance-arthritis/" target="_blank" rel="noreferrer noopener">arthritis</a> or <a href="/burial-insurance/multiple-sclerosis/" target="_blank" rel="noreferrer noopener">multiple sclerosis</a>. Those companies will provide you with the best burial insurance rates.</p>
 
 <p>To find the best burial insurance rates for lupus, you need the help of an independent agency like Final Expense Guy, that have access to lots of different insurance companies.</p>
 

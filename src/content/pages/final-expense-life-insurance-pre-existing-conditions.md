@@ -130,7 +130,7 @@ You can see where your health fits before you apply.
 
 <p>Phased-in coverage is also an option for some people we help.</p>
 
-<p>If you don’t want to answer any health questions, you’ll have to accept <a href="/category/guaranteed-issue-whole-life-insurance/" target="_blank" rel="noreferrer noopener">guaranteed issue whole life insurance</a> with a mandatory 2-year waiting period. Just understand that most of the people I help at the Final Expense guy qualify for 1st-day coverage or benefits from us.</p>
+<p>If you don’t want to answer any health questions, you’ll have to accept <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue whole life insurance</a> with a mandatory 2-year waiting period. Just understand that most of the people I help at the Final Expense guy qualify for 1st-day coverage or benefits from us.</p>
 
 <p>We make sure you know exactly what you qualify for before you apply, so you don’t waste your time or get stuck with the wrong plan.</p>
 
@@ -152,7 +152,7 @@ You can see where your health fits before you apply.
 
 <p>These are the plans you want to avoid if at all possible. Guaranteed issue plans skip all health and medical questions. If you can pay the premium and meet the age requirements, you can get approved.</p>
 
-<p>The WORST thing about these plans is that every guaranteed issue or guaranteed acceptance plan in the United States has a MANDATORY <a href="/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">two-year waiting period</a>.</p>
+<p>The WORST thing about these plans is that every guaranteed issue or guaranteed acceptance plan in the United States has a MANDATORY <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">two-year waiting period</a>.</p>
 
 <p>There are no exceptions.</p>
 
@@ -243,7 +243,7 @@ Your health must be stable enough to get through the two-year wait. Never choose
 
 <p>The best final expense life insurance with pre-existing condition is the one that accepts your current health issues, and gives you 1st-day coverage, at a price you can afford.</p>
 
-<p>That’s what I help people with at the Final Expense Guy, and you don’t need perfect health to get first-day coverage.<br><br>Many companies accept past cancer, current <a href="/burial-life-insurance-copd/" target="_blank" rel="noreferrer noopener">COPD</a>, past <a href="/final-expense-life-insurance-heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, or a <a href="/burial-insurance-stroke/">stroke</a>, and give you 1st-day coverage. Most significant health issues aren’t the problem; it just means I must find the best company for your unique age-related health issues.</p>
+<p>That’s what I help people with at the Final Expense Guy, and you don’t need perfect health to get first-day coverage.<br><br>Many companies accept past cancer, current <a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>, past <a href="/burial-insurance/heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, or a <a href="/burial-insurance/stroke-tia/">stroke</a>, and give you 1st-day coverage. Most significant health issues aren’t the problem; it just means I must find the best company for your unique age-related health issues.</p>
 
 <p>This is why working with a broker like the <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> matters. We help you understand your best options. You’ll see many examples in the chart below, grouped by health issue and the time since they occurred.</p>
 

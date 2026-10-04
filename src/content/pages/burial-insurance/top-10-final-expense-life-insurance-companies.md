@@ -148,7 +148,7 @@ sidebar: true
 
 <p><strong>Final Expense Product: </strong>Golden Eagle Final Expense</p>
 
-<p><a href="/family-benefit-life-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Family Benefit Life</a> offers their <a href="https://familybenefitlife.com/" target="_blank" rel="noreferrer noopener">Golden Eagle</a> final expense plan with first-day coverage for people 50-85 years old.  </p>
+<p><a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit Life</a> offers their <a href="https://familybenefitlife.com/" target="_blank" rel="noreferrer noopener">Golden Eagle</a> final expense plan with first-day coverage for people 50-85 years old.  </p>
 
 <p>They have has flexible underwriting, and most health conditions qualify for first-day coverage.  They also have an easy same-day application and phone approval process (Trinity Life &amp; Family Benefit Life use the same application questions). </p>
 
@@ -216,7 +216,7 @@ sidebar: true
 
 <p><strong>Final Expense Product: </strong>Simplified Issue Whole Life</p>
 
-<p><a href="/royal-neighbors-of-america-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Royal Neighbors of America </a>has a simplified issue whole life and graded death benefit products for its final expense life insurance.</p>
+<p><a href="/royal-neighbors-of-america/" target="_blank" rel="noreferrer noopener">Royal Neighbors of America </a>has a simplified issue whole life and graded death benefit products for its final expense life insurance.</p>
 
 <ul>
 <li>Recent hospitalization  </li>
@@ -368,7 +368,7 @@ sidebar: true
 
 <p>They often have the best pricing for tobacco users. If you smoke cigarettes or chew tobacco, they are a good company to price check, especially if you qualify for the immediate benefit plan.</p>
 
-<p><a href="/american-amicable-review/" target="_blank" rel="noreferrer noopener">American Amicable</a> also has many riders. If you’re after the additional benefits the riders provide, their burial insurance plans make the most sense.</p>
+<p><a href="/burial-insurance/american-amicable-life-insurance-review/" target="_blank" rel="noreferrer noopener">American Amicable</a> also has many riders. If you’re after the additional benefits the riders provide, their burial insurance plans make the most sense.</p>
 
 <p><strong>PROS:</strong></p>
 
@@ -437,7 +437,7 @@ sidebar: true
 
 <p>American Continental Insurance Company provides Aetna’s final expense insurance.</p>
 
-<p><a href="/aetna-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Aetna</a> is among the few companies offering coverage to people up to 89 years old; this feature allows them to offer great value to many seniors looking for final expense coverage.</p>
+<p><a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Aetna</a> is among the few companies offering coverage to people up to 89 years old; this feature allows them to offer great value to many seniors looking for final expense coverage.</p>
 
 <p>The Aetna burial life insurance is a whole life insurance policy guaranteed up to age 121. The premiums and the death benefit are level and will never change as long as premiums are paid. The policy builds cash value that can be used to cover premiums if there is enough money in the account. You can withdraw funds or take a loan against the cash value.</p>
 

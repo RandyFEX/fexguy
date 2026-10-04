@@ -369,7 +369,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 <li>When were you diagnosed with diverticulitis?</li>
 <li>When did you last have flare-ups or attack?</li>
 <li>How many flare-ups did you have over the past 24 months?</li>
-<li>Have you ever been <a rel="noreferrer noopener" href="/burial-insurance-hospitalized/" target="_blank">hospitalized</a> because of diverticulitis?</li>
+<li>Have you ever been <a rel="noreferrer noopener" href="/burial-insurance/hospitalized/" target="_blank">hospitalized</a> because of diverticulitis?</li>
 <li>Are you taking any medications for your condition?</li>
 <li>Have you been recommended to have surgery, and did you have surgical treatment?</li>
 <li>When was the operation completed?</li>

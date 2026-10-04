@@ -60,7 +60,7 @@ sidebar: true
 
 <h2 id="what-is-burial-insurance"> <br><strong>What Is Burial Insurance? </strong></h2>
 
-<p>Burial insurance is a type of <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life insurance</a> with a specific purpose: to pay funeral, burial, and final expenses. It does not expire and will remain in force if you pay the premiums on time. </p>
+<p>Burial insurance is a type of whole life insurance with a specific purpose: to pay funeral, burial, and final expenses. It does not expire and will remain in force if you pay the premiums on time. </p>
 
 <p>The insurance company will pay a tax-free check to your beneficiary when you die. There are no limitations on how the death benefit payout can be used. </p>
 
@@ -130,9 +130,9 @@ health questions that you may see on the application:</strong></p>
 <p>Is burial insurance worth it? Let’s examine the pros</p>
 
 <ul>
-<li><a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></li>
+<li><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></li>
 <li>First-day coverage</li>
-<li><a href="/burial-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">No waiting period</a></li>
+<li><a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">No waiting period</a></li>
 <li>Minor health issues like high blood pressure and high cholesterol are accepted.</li>
 <li>Less expensive than guaranteed issue burial insurance</li>
 </ul>
@@ -147,7 +147,7 @@ health questions that you may see on the application:</strong></p>
 
 <p><br><strong>GUARANTEED ISSUE BURIAL INSURANCE</strong></p>
 
-<p><a rel="noreferrer noopener" href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> (GI) burial insurance is a <a rel="noreferrer noopener" href="/burial-insurance-no-questions-asked/" target="_blank">no health questions</a> policy. You skip the medical exam and the health questions. </p>
+<p><a rel="noreferrer noopener" href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> (GI) burial insurance is a <a rel="noreferrer noopener" href="/burial-insurance/no-questions-asked/" target="_blank">no health questions</a> policy. You skip the medical exam and the health questions. </p>
 
 <p>You will be approved for coverage regardless of your medical condition. </p>
 
@@ -373,7 +373,7 @@ associated with smoking and how it shortens life expectancy.</p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

@@ -162,7 +162,7 @@ sidebar: true
 
 <p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
 
-<p>You will rarely see felony convictions asked on the application questionnaire. Very few insurance companies care about felony convictions. So, if you have a history of felony convictions but are generally healthy or have some <a href="/burial-insurance-pre-existing-condition/" target="_blank" rel="noreferrer noopener">pre-existing</a> medication condition, you will still qualify for affordable burial insurance. </p>
+<p>You will rarely see felony convictions asked on the application questionnaire. Very few insurance companies care about felony convictions. So, if you have a history of felony convictions but are generally healthy or have some <a href="/final-expense-life-insurance-pre-existing-conditions/" target="_blank" rel="noreferrer noopener">pre-existing</a> medication condition, you will still qualify for affordable burial insurance. </p>
 
 <h2 id="how-much-do-i-need"><br><strong>How Much Insurance Do I Need If I Have A Felony Conviction?</strong></h2>
 

@@ -67,15 +67,15 @@ sidebar: true
 
 <p>One factor that may affect your burial insurance eligibility is if you’re morbidly obese and have mobility issues. If you’re too heavy and you need help in doing any activities of daily living on your own, you may not qualify for the best plan with the best rate, but you still have other options. </p>
 
-<p>There are six <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> or self-care used by insurance companies to measure your mobility and functionality to determine if you will qualify for first-day coverage.</p>
+<p>There are six <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> or self-care used by insurance companies to measure your mobility and functionality to determine if you will qualify for first-day coverage.</p>
 
 <ol>
-<li><a href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a> – feeding yourself using utensils, feeding tube, or intravenously</li>
+<li><a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a> – feeding yourself using utensils, feeding tube, or intravenously</li>
 <li>Bathing – washing your body and getting in or out of the bathtub or shower safely</li>
 <li>Dressing – means putting on and taking off clothing, fasteners, braces, and prosthesis</li>
 <li>Toileting – is getting on and off the toilet and performing necessary personal hygiene</li>
 <li>Transferring – moving in and out of bed, chair, or wheelchair</li>
-<li><a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a> – controlling the bladder and bowel functions</li>
+<li><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a> – controlling the bladder and bowel functions</li>
 </ol>
 
 <p>If you are obese and you need help with these activities of daily living, you will not qualify for first-day coverage even if the company does not have a build chart. </p>

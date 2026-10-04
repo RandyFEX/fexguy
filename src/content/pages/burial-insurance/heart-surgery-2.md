@@ -197,11 +197,11 @@ sidebar: true
 
 <ul>
 <li>Heart transplant</li>
-<li><a href="/burial-insurance-heart-valve-surgery/" target="_blank" rel="noreferrer noopener">Heart valv</a>e repair or replacement</li>
-<li><a href="/burial-insurance-heart-bypass-surgery/" target="_blank" rel="noreferrer noopener">Coronary artery bypass</a> graft surgery</li>
+<li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Heart valv</a>e repair or replacement</li>
+<li><a href="/burial-insurance/heart-bypass-surgery/" target="_blank" rel="noreferrer noopener">Coronary artery bypass</a> graft surgery</li>
 <li>Transmyocardial laser revascularization</li>
-<li><a href="/burial-insurance-arrhythmia/" target="_blank" rel="noreferrer noopener">Arrhythmia</a> treatment</li>
-<li><a href="/burial-insurance-aneurysm/" target="_blank" rel="noreferrer noopener">Aneurysm</a> repair</li>
+<li><a href="/burial-insurance/arrhythmia/" target="_blank" rel="noreferrer noopener">Arrhythmia</a> treatment</li>
+<li><a href="/burial-insurance/aneurysm/" target="_blank" rel="noreferrer noopener">Aneurysm</a> repair</li>
 <li>Myectomy/myotomy</li>
 <li>Cardiomyoplasty</li>
 <li>Minimally invasive surgical <a href="https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/cardiac-procedures-and-surgeries" target="_blank" rel="noreferrer noopener">procedures</a></li>

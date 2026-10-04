@@ -55,7 +55,7 @@ sidebar: true
 
 <h2 id="colonial-penn-two-year-wait"><strong>Colonial Penn Two Year Wait </strong></h2>
 
-<p><a href="/colonial-penn-life-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 that’s built mainly for funeral costs, not full early protection.</p>
+<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 that’s built mainly for funeral costs, not full early protection.</p>
 
 <p><strong>States available</strong>: All except New York<br></p>
 
@@ -338,7 +338,7 @@ best value. Who do we recommend instead?</p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

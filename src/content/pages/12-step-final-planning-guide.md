@@ -54,7 +54,7 @@ source: "live"
 
 <p>Make a backup plan in case the program declines to accept your body donation. The best way to do it is to purchase a burial insurance policy to cover your end-of-life expenses. This way, you will not be a burden to your family when you pass away.</p>
 
-<div class="button-link"><a href="/burial-insurance-donating-your-body-to-science/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 1 ARTICLE</a></div>
+<div class="button-link"><a href="/burial-insurance/donating-your-body-to-science/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 1 ARTICLE</a></div>
 
 <h3 id="Week-2-–-Choosing-Your-Method-Of-Disposition"><strong><strong>STEP </strong>2 – CHOOSING YOUR METHOD OF DISPOSITION</strong></h3>
 
@@ -101,7 +101,7 @@ source: "live"
 <li>Cremation is not widely available.</li>
 </ul>
 
-<div class="button-link"><a href="/burial-vs-cremation-pros-cons/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 2 ARTICLE</a></div>
+<div class="button-link"><a href="/burial-vs-cremation/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 2 ARTICLE</a></div>
 
 <h3 id="Week-3-–-Choosing-A-Casket-Or-Urn"><strong><strong>STEP </strong>3 – CHOOSING A CASKET OR URN</strong></h3>
 
@@ -172,7 +172,6 @@ source: "live"
 
 <p>Step 5 – Choose the type of urn you want and write it in your funeral planning guide.</p>
 
-<div class="button-link"><a href="/how-to-buy-a-casket/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 3 ARTICLE HERE</a></div>
 
 <h3 id="Week-4-–-Choosing-A-Funeral-Home"><strong><strong>STEP </strong>4 – CHOOSING A FUNERAL HOME</strong></h3>
 
@@ -239,7 +238,6 @@ source: "live"
 
 <p>10. Provides education and community programs</p>
 
-<div class="button-link"><a href="/how-to-choose-a-funeral-home/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 4 ARTICLE</a></div>
 
 <h3 id="Week-5-–-Writing-An-Obituary"><strong><strong>STEP </strong>5 – WRITING AN OBITUARY</strong></h3>
 
@@ -295,7 +293,6 @@ source: "live"
 
 <p>The reason for not including this information is that identity thieves can be a real problem. Some unscrupulous people may try to use your loved one’s identity to access bank accounts and personal credit.</p>
 
-<div class="button-link"><a href="/how-to-write-an-obituary/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 5 ARTICLE</a></div>
 
 <h3 id="Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot"><strong><strong>STEP </strong>6 – CHOOSING A CEMETERY OR BURIAL PLOT</strong></h3>
 
@@ -313,7 +310,6 @@ source: "live"
 
 <p>3. Check what you are paying for. Some sellers only sell the rights to the plot, and you need to pay for an in-ground crypt which may incur additional costs and fees.</p>
 
-<div class="button-link"><a href="/selling-a-burial-plot/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 6 ARTICLE</a></div>
 
 <h3 id="Week-7-–-Choosing-A-Headstone"><strong><strong>STEP </strong>7 – CHOOSING A HEADSTONE</strong></h3>
 
@@ -345,7 +341,6 @@ source: "live"
 
 <p>Step 10 – Write your draft</p>
 
-<div class="button-link"><a href="/how-to-select-a-headstone/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 7 ARTICLE</a></div>
 
 <h3 id="Week-8-–-Choosing-Funeral-Flowers"><strong><strong>STEP </strong>8 – CHOOSING FUNERAL FLOWERS</strong></h3>
 
@@ -371,7 +366,6 @@ source: "live"
 
 <p>Write the charity or foundation you want and the details if you opt for a donation in lieu of flowers.</p>
 
-<div class="button-link"><a href="/buying-flowers-for-a-funeral/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 8 ARTICLE</a></div>
 
 <h3 id="Week-9-–-Selecting-The-Funeral-Service"><strong><strong>STEP </strong>9 – <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h3>
 
@@ -396,7 +390,6 @@ source: "live"
 
 <p>A funeral service program can feature some songs, a short biography, and your favorite quotes. It will serve as a fitting tribute to your life. After the service, your loved ones can have the time to socialize and enjoy a refreshment while offering support to one another.</p>
 
-<div class="button-link"><a href="/funeral-service-planning/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 9 ARTICLE</a></div>
 
 <h3 id="Week-10-–-Preventing-Identity-Theft"><strong><strong>STEP </strong>10 </strong>– <strong>PREVENTING IDENTITY THEFT</strong></h3>
 
@@ -454,7 +447,6 @@ source: "live"
 
 <p>11. Don’t share personal information</p>
 
-<div class="button-link"><a href="/preventing-identity-theft-after-death/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 10 ARTICLE</a></div>
 
 <h3 id="Week-11-–-Proper-Medication-Disposal"><strong><strong>STEP </strong>11 – PROPER MEDICATION DISPOSAL</strong></h3>
 
@@ -495,7 +487,6 @@ source: "live"
 <li>Dispose of the trash as close to pick-up day as possible.</li>
 </ul>
 
-<div class="button-link"><a href="/how-to-dispose-of-medications-after-a-death/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 11 ARTICLE</a></div>
 
 <h3 id="Week-12-–-Liquidating-Assets-After-Your-Death"><strong><strong>STEP </strong>12 – LIQUIDATING ASSETS AFTER YOUR DEATH</strong></h3>
 
@@ -513,7 +504,6 @@ source: "live"
 
 <p>4. Leave detailed instructions on what to do with your unwanted stuff.</p>
 
-<div class="button-link"><a href="/how-to-liquidate-assets-after-parents-death/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 12 ARTICLE</a></div>
 
 <p id="Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral"><strong>BONUS CONTENT – SELECTING BIBLE VERSES FOR YOUR FUNERAL</strong></p>
 
@@ -579,7 +569,6 @@ source: "live"
 
 <p><strong>Proverbs 18:</strong>10 – The name of the Lord is a strong tower; the righteous run into it and are safe.</p>
 
-<div class="button-link"><a href="/best-bible-verses-for-a-funeral/" target="_blank" rel="noreferrer noopener">READ THE FULL ARTICLE HERE</a></div>
 
 <p><a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Privacy Policy</a>&#160;-&#160;<a href="https://funeralfunds.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> - <a href="https://funeralfunds.com/contact/" target="_blank" rel="noopener">Contact</a>&#160;Your information is private &amp; is not shared. By pressing button above you agree to our privacy policy &amp; to receive information from Funeral Funds via email, phone, SMS or MMS messages.</p>
 

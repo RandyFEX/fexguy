@@ -241,13 +241,13 @@ verifications</li>
 
 <p><strong>Part 1</strong></p>
 
-<p><strong>1.</strong> Have you been medically diagnosed as having <a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or any other form of dementia, or have you been told that you have a life expectancy of 12 months or less? (Yes – No)</p>
+<p><strong>1.</strong> Have you been medically diagnosed as having <a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or any other form of dementia, or have you been told that you have a life expectancy of 12 months or less? (Yes – No)</p>
 
-<p><strong>2.</strong> Have you been diagnosed by or received treatment from a member of the medical profession as having <a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a> (Acquired Immune Deficiency Syndrome) or any other disorder of the immune system, including systemic Lupus, or have you tested positive for exposure to HIV infection? (Yes – No)</p>
+<p><strong>2.</strong> Have you been diagnosed by or received treatment from a member of the medical profession as having <a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a> (Acquired Immune Deficiency Syndrome) or any other disorder of the immune system, including systemic Lupus, or have you tested positive for exposure to HIV infection? (Yes – No)</p>
 
 <p><strong>3. </strong>Have you ever been medically advised to have an organ transplant, are you receiving kidney dialysis, or have you been diagnosed with hepatitis C?  (Yes – No) </p>
 
-<p><strong>4.</strong> Are you currently bedridden, confined to a wheelchair due to chronic illness, in a hospital, living in a <a href="/burial-insurance-nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing home</a>, hospice, assisted living facility, or long-term care facility, or using oxygen, or has a doctor recommended that you use oxygen?  (Yes – No) </p>
+<p><strong>4.</strong> Are you currently bedridden, confined to a wheelchair due to chronic illness, in a hospital, living in a <a href="/burial-insurance/nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing home</a>, hospice, assisted living facility, or long-term care facility, or using oxygen, or has a doctor recommended that you use oxygen?  (Yes – No) </p>
 
 <p>(If the answer to any question in Part 1 is “Yes”
 then you are not eligible for any coverage.)</p>
@@ -256,11 +256,11 @@ then you are not eligible for any coverage.)</p>
 
 <p>In the past two (2) years, have you been told or have you had a medical diagnosis, received treatment, had a symptom(s), or been hospitalized for any of the following:</p>
 
-<p><strong>1.</strong> <a rel="noreferrer noopener" href="/burial-insurance-heart-attack/" target="_blank">Heart attack</a>, congestive heart failure, irregular heartbeat, circulatory disorder, aneurysm, or any other disease or condition of the heart or arteries, have you undergone <a href="/burial-insurance-angioplasty/" target="_blank" rel="noreferrer noopener">angioplasty</a> or bypass surgery, or have you used a pacemaker?  (Yes – No) </p>
+<p><strong>1.</strong> <a rel="noreferrer noopener" href="/burial-insurance/heart-attack/" target="_blank">Heart attack</a>, congestive heart failure, irregular heartbeat, circulatory disorder, aneurysm, or any other disease or condition of the heart or arteries, have you undergone <a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">angioplasty</a> or bypass surgery, or have you used a pacemaker?  (Yes – No) </p>
 
-<p><strong>2. </strong>Uncontrolled high blood pressure, uncontrolled diabetes or blood sugars, diabetic coma, or any diabetes requiring the <a href="/burial-insurance-insulin-dependent-diabetics/" target="_blank" rel="noreferrer noopener">use of insulin</a>? (Yes – No)</p>
+<p><strong>2. </strong>Uncontrolled high blood pressure, uncontrolled diabetes or blood sugars, diabetic coma, or any diabetes requiring the <a href="/burial-insurance/insulin-diabetics/" target="_blank" rel="noreferrer noopener">use of insulin</a>? (Yes – No)</p>
 
-<p><strong>3.</strong> Internal cancer, melanoma, <a rel="noreferrer noopener" href="/burial-insurance-leukemia/" target="_blank">leukemia</a>, sickle cell anemia, kidney disease, liver disease, cirrhosis, chronic lung disease, chronic obstructive pulmonary disease (<a href="/burial-life-insurance-copd/" target="_blank" rel="noreferrer noopener">COPD</a>), or emphysema? (Yes – No)</p>
+<p><strong>3.</strong> Internal cancer, melanoma, <a rel="noreferrer noopener" href="/burial-insurance/leukemia/" target="_blank">leukemia</a>, sickle cell anemia, kidney disease, liver disease, cirrhosis, chronic lung disease, chronic obstructive pulmonary disease (<a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>), or emphysema? (Yes – No)</p>
 
 <p><strong>4. </strong>Alcoholism or drug abuse?  (Yes – No) </p>
 

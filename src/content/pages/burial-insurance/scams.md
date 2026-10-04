@@ -56,13 +56,13 @@ sidebar: true
 
 <p>Term insurance lasts for a temporary period, typically 10, 15, 20, and 30 years but this plan terminates after you pass 80. Whether you’re healthy or terminally ill, once you pass 80, your policy may expire, and you will not get your money back.</p>
 
-<p>Many well-known insurance companies such as <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> and <a href="/globe-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Globe Life</a> offer term life insurance as burial insurance. These are fine companies, but some of their products are inappropriate for your burial insurance needs.&#160; Most people understand that term life insurance is not real burial insurance!</p>
+<p>Many well-known insurance companies such as <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> and <a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a> offer term life insurance as burial insurance. These are fine companies, but some of their products are inappropriate for your burial insurance needs.&#160; Most people understand that term life insurance is not real burial insurance!</p>
 
 <p>In the mail, you will typically see these companies offering term insurance for seniors. They offer coverage and say the premium is locked in at your current age (and this is not true).&#160;Term life insurance sold to seniors as burial insurance typically increases in pricing every five years.</p>
 
 <p>Beware when you see life insurance offers through the mail, as most insurance companies send junk mail to try to hide how their programs work in the tiny fine print. Be aware of this scam because if you buy term insurance and you outlive the term, your beneficiaries will not get anything when you pass away.</p>
 
-<p>Only&#160;<a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life insurance</a> policies that will last your whole life (up to age 121) should be used for burial insurance.</p>
+<p>Only&#160;whole life insurance policies that will last your whole life (up to age 121) should be used for burial insurance.</p>
 
 <h2 id="scam-2-no-questions-asked-burial-insurance"><br><strong>SCAM #2 No Questions Asked Burial Insurance </strong></h2>
 

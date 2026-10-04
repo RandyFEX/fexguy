@@ -166,17 +166,17 @@ sidebar: true
 
 <p>If any of the following answers YES, the application should not be completed or submitted.</p>
 
-<p><strong>1.</strong> Are you currently hospitalized, or do you require the assistance of another person in performing any of the following <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>: bathing, dressing, toileting, eating, walking, or continence? (Yes – No)</p>
+<p><strong>1.</strong> Are you currently hospitalized, or do you require the assistance of another person in performing any of the following <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>: bathing, dressing, toileting, eating, walking, or continence? (Yes – No)</p>
 
-<p><strong>2.</strong> In the past 12 months, have you been confined to a nursing facility or received hospice care, or have you used <a href="/burial-insurance-oxygen/" target="_blank" rel="noreferrer noopener">oxygen</a> equipment to assist in breathing?  (Yes – No) </p>
+<p><strong>2.</strong> In the past 12 months, have you been confined to a nursing facility or received hospice care, or have you used <a href="/burial-insurance/oxygen-use/" target="_blank" rel="noreferrer noopener">oxygen</a> equipment to assist in breathing?  (Yes – No) </p>
 
-<p><strong>3.</strong> Have you been diagnosed by a licensed member of the medical profession as having a <a href="/burial-insurance-terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> (life expectancy of 12 months or less)?  (Yes – No) </p>
+<p><strong>3.</strong> Have you been diagnosed by a licensed member of the medical profession as having a <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> (life expectancy of 12 months or less)?  (Yes – No) </p>
 
 <p><strong>4.</strong> Have you ever been diagnosed, treated, tested positive for, taken medications, or been prescribed medications for, or been given medical advice by a licensed physician or other health care provider for:</p>
 
 <p><strong>a.</strong> Acquired Immune Deficiency Syndrome (AIDS), or any immune deficiency-related disorder or tested positive for Human Immunodeficiency Virus (AIDS Virus)?  (Yes – No) </p>
 
-<p><strong>b.</strong> Alzheimer’s, Parkinson’s disease, muscular dystrophy, schizophrenia, dementia, <a rel="noreferrer noopener" href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank">Lou Gehrig’s disease</a> (ALS), <a rel="noreferrer noopener" href="/burial-insurance-huntingtons-disease/" target="_blank">Huntington’s disease</a>, or <a href="/burial-insurance-down-syndrome/" target="_blank" rel="noreferrer noopener">Down syndrome</a>?  (Yes – No) </p>
+<p><strong>b.</strong> Alzheimer’s, Parkinson’s disease, muscular dystrophy, schizophrenia, dementia, <a rel="noreferrer noopener" href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank">Lou Gehrig’s disease</a> (ALS), <a rel="noreferrer noopener" href="/burial-insurance/huntingtons-disease/" target="_blank">Huntington’s disease</a>, or <a href="/burial-insurance/down-syndrome/" target="_blank" rel="noreferrer noopener">Down syndrome</a>?  (Yes – No) </p>
 
 <p><strong>c.</strong> Aneurysm, stroke/TIA, cirrhosis, cystic fibrosis, hemophilia, systemic Lupus, amputation due to disease, hepatitis B or C, organ transplant, non-Hodgkin’s lymphoma, or kidney (renal) failure or dialysis?  (Yes – No) </p>
 
@@ -489,7 +489,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

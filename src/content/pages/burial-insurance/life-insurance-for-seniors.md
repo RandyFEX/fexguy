@@ -86,7 +86,7 @@ sidebar: true
 
 <p id="3490150f-ea3e-4951-b8c6-bae87c26e773">The biggest benefit of life insurance for seniors is that it gives policyholders and their loved ones peace of mind.</p>
 
-<p id="3490150f-ea3e-4951-b8c6-bae87c26e773">Your family will have instant funds to use for your <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expenses</a>.&#160;Life insurance for seniors doesn’t go to probate, and your family will have the funds to pay for your funeral. It also provides money immediately, so your loved ones need not pay your final expenses out of their pockets.</p>
+<p id="3490150f-ea3e-4951-b8c6-bae87c26e773">Your family will have instant funds to use for your <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expenses</a>.&#160;Life insurance for seniors doesn’t go to probate, and your family will have the funds to pay for your funeral. It also provides money immediately, so your loved ones need not pay your final expenses out of their pockets.</p>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Life insurance eases the financial burden on your family. It’s an excellent way to show your love for your family. When you purchase life insurance, you ensure your loved one can grieve without worrying about the funeral and <a href="https://nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">burial costs</a>.</p>
 

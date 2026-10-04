@@ -17,38 +17,38 @@ sidebar: true
 <ul>
 <li><strong>AAA Life Insurance:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong><a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>:</strong> Term life insurance. Large price increases every 5 years. Cancels after age 80.</li>
-<li><strong><a href="/aetna-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">AETNA (CVS Health)</a>: </strong>Competitive prices. Good for overweight people &amp; COPD.</li>
+<li><strong><a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AETNA (CVS Health)</a>: </strong>Competitive prices. Good for overweight people &amp; COPD.</li>
 <li><strong>Allstate: </strong>Expensive as a stand-alone product. Strict underwriting with many declines.</li>
 <li><strong>Assurant/American Memorial:</strong> Moderate pricing.</li>
 <li><strong>Americo:</strong> Expensive pricing. Terrible smoker incentive rate program.</li>
-<li><strong><a href="/american-amicable-review/" target="_blank" rel="noreferrer noopener">American Amicable</a>:</strong> Moderate rates. Good smoker rates.</li>
+<li><strong><a href="/burial-insurance/american-amicable-life-insurance-review/" target="_blank" rel="noreferrer noopener">American Amicable</a>:</strong> Moderate rates. Good smoker rates.</li>
 <li><strong><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG/American General</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Christian Fidelity:</strong> Good Rates. In-person application only.</li>
-<li><strong><a href="/family-benefit-life-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Family Benefit</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
+<li><strong><a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
 <li><strong>Farmers Insurance:</strong> Expensive as a stand-alone product. Strict underwriting with many declines.</li>
 <li><strong>Fidelity Life:</strong> Be careful of their term policy. Often 30+% more expensive for final expense.</li>
-<li><strong><a href="/foresters-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Foresters</a>: </strong>Moderate rates. Good for a few niche illnesses. Fraternal company.</li>
-<li><strong><a href="/gerber-guaranteed-issue-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
-<li><strong><a href="/globe-term-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Globe Life</a>: </strong>Term life insurance. Low cost initially. Large 5-year price increases. Cancels after age 80.</li>
+<li><strong><a href="/foresters-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Foresters</a>: </strong>Moderate rates. Good for a few niche illnesses. Fraternal company.</li>
+<li><strong><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
+<li><strong><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>: </strong>Term life insurance. Low cost initially. Large 5-year price increases. Cancels after age 80.</li>
 <li><strong><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Grange Insurance:</strong> Average pricing. Not a well-known company.</li>
 <li><strong>Greek Catholic Union:</strong> Average pricing. More restrictive underwriting. Limited state availability.</li>
 <li><strong>Guarantee Trust Life:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
 <li><strong><a href="/liberty-bankers-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Liberty Bankers Life</a>:</strong> Niche carrier for specific health problems. Good for younger people.</li>
 <li><strong>Lifeshield Life Insurance Company:</strong> Average pricing.</li>
-<li><strong><a href="/lincoln-heritage-funeral-advantage-review/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! About 40% more expensive. Some plans have a 3-year wait.</li>
+<li><strong><a href="/lincoln-heritage-funeral-advantage-review-old/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! About 40% more expensive. Some plans have a 3-year wait.</li>
 <li><strong><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual Of Omaha</a>:</strong> No same-day approval. More restrictive underwriting.</li>
 <li><strong>New York Life:</strong> Term life insurance. 5-year price increases. Cancels after age 80.</li>
 <li><strong><a href="/oxford-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Oxford Life</a>:</strong> Good pricing. In-person application only. Average underwriting.</li>
 <li><strong>Pioneer Insurance Company: </strong>More expensive</li>
 <li><strong><a href="/prosperity-life-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Prosperity Life/SUSA</a>:</strong> Good tobacco chewers &amp; vapers rates. OK for seizures.</li>
-<li><strong><a href="/royal-neighbors-of-america-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Royal Neighbors Of America</a>:</strong> Good for overweight, recent hospitalizations, diabetics.</li>
+<li><strong><a href="/royal-neighbors-of-america/" target="_blank" rel="noreferrer noopener">Royal Neighbors Of America</a>:</strong> Good for overweight, recent hospitalizations, diabetics.</li>
 <li><strong><a href="/security-national-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Security National Life</a>:</strong> Moderate pricing.</li>
 <li><strong>Sentinel Security: </strong>Moderate pricing.</li>
 <li><strong>Standard Life And Casualty: </strong>Moderate pricing.</li>
-<li><strong><a href="/state-farm-burial-insurance-review/" target="_blank" rel="noreferrer noopener">State Farm</a>: </strong>Expensive as a stand-alone product. Strict underwriting with many declines.</li>
+<li><strong><a href="/state-farm/" target="_blank" rel="noreferrer noopener">State Farm</a>: </strong>Expensive as a stand-alone product. Strict underwriting with many declines.</li>
 <li><strong><a href="/transamerica-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Transamerica</a>: </strong>Slow &amp; difficult underwriting process.</li>
-<li><strong><a href="/trinity-life-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Trinity Life</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
+<li><strong><a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
 <li><strong><a href="/trustage-life-insurance-review/" target="_blank" rel="noreferrer noopener">TruStage</a>: </strong>Term life insurance. 5-year price increases. Cancels after age 80.</li>
 <li><strong>United Home Life:</strong> More expensive.</li>
 </ul>
@@ -68,7 +68,7 @@ sidebar: true
 <li><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG</a> (Corebridge) – 2-year wait</li>
 <li>American National – 2-year wait</li>
 <li><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn $9.95 Plan</a> – 2-year wait</li>
-<li><a href="/gerber-guaranteed-issue-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> – 2-year wait</li>
+<li><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> – 2-year wait</li>
 <li><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a> – Out of business!</li>
 <li><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual of Omaha</a> (United of Omaha plan) – 2-year wait</li>
 </ul>
@@ -86,7 +86,7 @@ sidebar: true
 <ul>
 <li>AAA Life Insurance – Rate increases every 5 years &amp; cancels after age 80</li>
 <li><a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
-<li><a href="/globe-term-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Globe Life</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
+<li><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
 <li>New York Life  – Rate increases every 5 years &amp; cancels after age 80</li>
 <li><a href="/trustage-price-increase/" target="_blank" rel="noreferrer noopener">TruStage</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
 </ul>

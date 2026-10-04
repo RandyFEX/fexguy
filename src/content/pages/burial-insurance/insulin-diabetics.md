@@ -162,7 +162,7 @@ sidebar: true
 <li>Is your diabetes Type-1 or Type-2?</li>
 <li>When did you get your diabetes diagnosis?</li>
 <li>Are you taking insulin daily? How many units?</li>
-<li>Have you ever gone into <a href="/burial-insurance-insulin-shock/" target="_blank" rel="noreferrer noopener">insulin shock</a>?</li>
+<li>Have you ever gone into <a href="/burial-insurance/diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">insulin shock</a>?</li>
 <li>Have you experienced a diabetic coma?</li>
 <li>Do you have an amputation due to diabetes?</li>
 <li>Do you have neuropathy or nerve circulatory issues from diabetes?</li>

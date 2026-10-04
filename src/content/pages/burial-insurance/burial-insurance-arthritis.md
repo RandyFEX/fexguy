@@ -275,7 +275,7 @@ sidebar: true
 
 <p>Since the insurance company doesn't ask about arthritis on the health question, the only way to have your application declined is if you answered yes to a different knockout question because of your other medical condition.</p>
 
-<p>Most knockout questions revolved around <a href="/burial-insurance-heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, <a href="/burial-insurance-stroke/" target="_blank" rel="noreferrer noopener">stroke</a>, <a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer's disease</a>, activities of daily living, and some of the prescription medications these conditions treated. Because arthritis <strong>is not a knockout question, you can qualify for the best-priced policy.</strong></p>
+<p>Most knockout questions revolved around <a href="/burial-insurance/heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, <a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">stroke</a>, <a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer's disease</a>, activities of daily living, and some of the prescription medications these conditions treated. Because arthritis <strong>is not a knockout question, you can qualify for the best-priced policy.</strong></p>
 
 <p>It is important to understand that if a company does not ask about a particular health condition, they accept it. If you have no other health issues aside from arthritis, you will qualify for a first-day coverage plan without a waiting period.</p>
 

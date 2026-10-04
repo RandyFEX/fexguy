@@ -54,13 +54,13 @@ sidebar: true
 
 <h2 id="what-is-burial-insurance"><strong>What Is Burial Insurance?</strong></h2>
 
-<p>Burial insurance is also referred to as final expense insurance, funeral insurance, cremation insurance, and even burial policies for seniors. All these terms pertain to a <a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">whole life insurance</a> policy designed for seniors or older people to cover funeral and final expenses.</p>
+<p>Burial insurance is also referred to as final expense insurance, funeral insurance, cremation insurance, and even burial policies for seniors. All these terms pertain to a whole life insurance policy designed for seniors or older people to cover funeral and final expenses.</p>
 
 <p><strong>Final expenses are various costs that arise after a family member dies.&#160;</strong></p>
 
 <p>Getting burial insurance is fairly easy. Insurance companies generally offer this kind of policy to people aged 50 to 80 or even 85. They only need to answer a few health questions.</p>
 
-<p>No health questions <strong><a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a>, or guaranteed issue policies are also available.</strong></p>
+<p>No health questions <strong><a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a>, or guaranteed issue policies are also available.</strong></p>
 
 <p>The face amount is relatively modest compared with traditional life insurance policies, which make the premiums affordable to applicants. You can choose from $2,000 to $25,000 insurance coverage, although some insurers will offer higher senior death benefits.</p>
 

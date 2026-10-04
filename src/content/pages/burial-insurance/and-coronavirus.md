@@ -100,7 +100,7 @@ sidebar: true
 
 <p>Symptoms of COVID-19 may appear as early as two days or as long as 14 days after exposure. </p>
 
-<p>If the infection is severe, your doctor may call for hospitalization. Severe cases of infection can cause pneumonia, severe acute <a rel="noreferrer noopener" href="/burial-insurance-lung-disease/" target="_blank">respiratory syndrome</a>, <a rel="noreferrer noopener" href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank">kidney failure</a>, and even death.</p>
+<p>If the infection is severe, your doctor may call for hospitalization. Severe cases of infection can cause pneumonia, severe acute <a rel="noreferrer noopener" href="/burial-insurance/lung-disease/" target="_blank">respiratory syndrome</a>, <a rel="noreferrer noopener" href="/burial-insurance-kidney-failure/" target="_blank">kidney failure</a>, and even death.</p>
 
 <p>Many COVID-19 patients with severe complications may develop pneumonia in both lungs. Research also shows that 1% of coronavirus cases may result in death. However, the death rate varies by age, with seniors with pre-existing conditions more likely to die.<br></p>
 
@@ -196,7 +196,7 @@ sidebar: true
 
 <p><strong>Hospitalization</strong></p>
 
-<p>You may be <a href="/burial-insurance-hospitalized/" target="_blank" rel="noreferrer noopener">hospitalized</a> after the COVID-19 diagnosis. Can you get burial insurance if you are currently hospitalized? Absolutely! </p>
+<p>You may be <a href="/burial-insurance/hospitalized/" target="_blank" rel="noreferrer noopener">hospitalized</a> after the COVID-19 diagnosis. Can you get burial insurance if you are currently hospitalized? Absolutely! </p>
 
 <p>The good news is that being hospitalized won’t disqualify you from getting burial insurance with coronavirus. However, you need to understand that you have a limited option.</p>
 

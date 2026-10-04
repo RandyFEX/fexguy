@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Complete my quote request form on this page to quickly find the best option.</p>
 
-<p>If you are <a href="/life-insurance-over-80/" target="_blank" rel="noreferrer noopener nofollow">over age 80</a>, you’ve likely seen many friends and family members pass away. You understand life is a gift, and you must roll with the punches that life delivers you. Your guess is as good as mine as to when you will die. But it’s always good to be prepared.</p>
+<p>If you are <a href="/final-expense-life-insurance-over-80/" target="_blank" rel="noreferrer noopener nofollow">over age 80</a>, you’ve likely seen many friends and family members pass away. You understand life is a gift, and you must roll with the punches that life delivers you. Your guess is as good as mine as to when you will die. But it’s always good to be prepared.</p>
 
 <p>Life insurance for an 80-year-old male and life insurance for an 80-year-old female is available and affordable for most folks.</p>
 
@@ -64,12 +64,12 @@ sidebar: true
 <li>Even with health problems, you can get approved for this coverage.</li>
 <li>Once approved, your policy will not expire as long as you keep making the premium payments.</li>
 <li>Once approved, your monthly premium will never increase as you age.</li>
-<li>You can get approved for a policy with <a href="/life-insurance-policies-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">no waiting period</a> (never purchase a policy from the television advertisement, magazine advertisement, or letter that shows up in your mailbox).</li>
+<li>You can get approved for a policy with <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">no waiting period</a> (never purchase a policy from the television advertisement, magazine advertisement, or letter that shows up in your mailbox).</li>
 </ul>
 
 <h3><strong>Here is some info for the older guys!</strong></h3>
 
-<p>If you are a male looking for life insurance for over the eighties, you have <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expense</a> needs that are approaching quickly; we can help you find the following:</p>
+<p>If you are a male looking for life insurance for over the eighties, you have <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> needs that are approaching quickly; we can help you find the following:</p>
 
 <ul>
 <li>Funeral insurance for 80-year-old male, or burial insurance for an 80-year-old male</li>
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>If you’re looking for life insurance for elderly parents over 80 years old or life insurance for grandmother or father, we can also help you. Many adult children shop for the funeral, burial, or cremation policies for parents or loved ones. A large part of what we do at Final Expense Guy is to help adult children find burial policies for senior parents.</p>
 
-<p>We understand shopping around for final expense insurance is probably not your cup of tea. We are happy to provide burial policy quotes, so you can ensure your parents get the cheap burial insurance or <a href="/finding-cheap-burial-insurance/" target="_blank" rel="noreferrer noopener">cheap funeral insurance</a> they require.</p>
+<p>We understand shopping around for final expense insurance is probably not your cup of tea. We are happy to provide burial policy quotes, so you can ensure your parents get the cheap burial insurance or <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">cheap funeral insurance</a> they require.</p>
 
 <p>We understand our senior parents or grandparents are often on a fixed income and need affordable burial insurance options and affordable funeral insurance policies.</p>
 

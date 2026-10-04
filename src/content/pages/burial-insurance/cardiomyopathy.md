@@ -183,7 +183,7 @@ sidebar: true
 <li>Have you been treated for heart failure, cardiomyopathy, or heart or circulatory issues?</li>
 <li>Prior to the age of 50 or during the past 24 months, have you been diagnosed as having or been hospitalized for cardiomyopathy, heart disease, or circulatory problems?</li>
 <li>Have you been diagnosed with or been advised to receive treatment or medication for cardiomyopathy or any type of heart or circulatory surgery?</li>
-<li>In the past 10 years, have you opted not to seek treatment, have not taken medication, and have not followed the prescribed treatment plan for cardiomyopathy, <a href="/burial-insurance-heart-disease/" target="_blank" rel="noreferrer noopener">heart disease</a>, or circulatory issues?</li>
+<li>In the past 10 years, have you opted not to seek treatment, have not taken medication, and have not followed the prescribed treatment plan for cardiomyopathy, <a href="/burial-insurance/heart-disease/" target="_blank" rel="noreferrer noopener">heart disease</a>, or circulatory issues?</li>
 </ul>
 
 <p><strong>Common medications for cardiomyopathy include:</strong></p>

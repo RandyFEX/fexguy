@@ -99,7 +99,7 @@ sidebar: true
 
 <h2><br><strong>Trustage Whole Life Insurance</strong></h2>
 
-<p><a href="/best-whole-life-insurance-plans/" target="_blank" rel="noreferrer noopener">Whole life insurance</a> with TruStage is a simplified issue product, and you don’t need to take a medical exam or blood test as part of the underwriting process. </p>
+<p>Whole life insurance with TruStage is a simplified issue product, and you don’t need to take a medical exam or blood test as part of the underwriting process. </p>
 
 <p>You can qualify by answering a couple of health questions. Your approval is based on your answers to the health questions and information obtained from the prescription database and the Medical Information Bureau.</p>
 
@@ -114,11 +114,11 @@ health.</p>
 
 <h2><br><strong>Trustage Guaranteed Acceptance Life Insurance</strong></h2>
 
-<p>TruStage also offers <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance whole life insurance</a> with no health questions and no medical exam. The death benefit amount is lower, between $1,000 and $25,000, which is designed to cover funeral and end-of-life expenses. You can qualify for this plan between 45 and 80 years old.</p>
+<p>TruStage also offers <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance whole life insurance</a> with no health questions and no medical exam. The death benefit amount is lower, between $1,000 and $25,000, which is designed to cover funeral and end-of-life expenses. You can qualify for this plan between 45 and 80 years old.</p>
 
 <p>As with most guaranteed issue life insurance, with the TruStage guaranteed acceptance plan, you cannot be turned down because of your medical condition. The premium is fixed and guaranteed to never increase for life as long as you pay on time.</p>
 
-<p>This guaranteed issue life insurance product has a <a href="/burial-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">2-year waiting period</a> and is EXPENSIVE compared to other burial and final expense life insurance policies available from Final Expense Guy.</p>
+<p>This guaranteed issue life insurance product has a <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">2-year waiting period</a> and is EXPENSIVE compared to other burial and final expense life insurance policies available from Final Expense Guy.</p>
 
 <h2><br><strong>Trustage Term Life Insurance</strong></h2>
 
@@ -396,7 +396,7 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

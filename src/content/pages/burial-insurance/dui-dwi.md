@@ -63,7 +63,7 @@ sidebar: true
 
 <p id="UNDERSTANDING-BURIAL-INSURANCE-WITH-A-DUI-OR-DWI"><br><strong>UNDERSTANDING BURIAL INSURANCE WITH A DUI OR DWI</strong></p>
 
-<p>DUI <a href="/wp-admin/post.php?post=1168&action=edit" target="_blank" rel="noreferrer noopener">laws</a> prohibit driving under the influence of alcoholic beverages, driving under the influence of drugs, and driving under the influence of any <a href="/burial-insurance-drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">drug</a> or <a href="/burial-insurance-marijuana-illegal-drugs/" target="_blank" rel="noreferrer noopener">marijuana</a>, whether legal or illegal, regardless of blood-alcohol level.</p>
+<p>DUI laws prohibit driving under the influence of alcoholic beverages, driving under the influence of drugs, and driving under the influence of any <a href="/burial-insurance/drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">drug</a> or <a href="/burial-insurance/marijuana-use/" target="_blank" rel="noreferrer noopener">marijuana</a>, whether legal or illegal, regardless of blood-alcohol level.</p>
 
 <p>Life insurance companies know that driving while intoxicated makes you more likely to die in a vehicle accident. If you already have a DUI, you are statistically more likely to drive under the influence again at a later time.</p>
 

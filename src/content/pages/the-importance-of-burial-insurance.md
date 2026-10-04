@@ -69,7 +69,7 @@ sidebar: true
 
 <p><strong>Burial insurance is a whole life insurance policy designed to cover the cost of funeral service, burial, and other outstanding bills.</strong></p>
 
-<p>Burial insurance is a <a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent</a> plan that is designed to last a lifetime. It is <strong>NOT</strong> a term life insurance policy or a policy that <strong>EXPIRES</strong> at age 80. Be careful because some insurance companies like AARP and Globe Life will try to sell you term life insurance plans, but they market it as burial insurance.</p>
+<p>Burial insurance is a <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent</a> plan that is designed to last a lifetime. It is <strong>NOT</strong> a term life insurance policy or a policy that <strong>EXPIRES</strong> at age 80. Be careful because some insurance companies like AARP and Globe Life will try to sell you term life insurance plans, but they market it as burial insurance.</p>
 
 <p>The burial insurance company will issue a tax-free check to your assigned beneficiary when you die. The death benefit payout money can be used however your family sees fit. They can use the money to pay for your final expenses. If there is anything left, your family can keep it.</p>
 
@@ -97,7 +97,7 @@ sidebar: true
 
 <h2 id="who-needs-burial-insurance"><br><strong>Who Needs Burial Insurance?</strong></h2>
 
-<p><strong>People in these situations need <a href="/burial-insurance-for-parents/" target="_blank" rel="noreferrer noopener">burial insurance</a>:</strong></p>
+<p><strong>People in these situations need <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">burial insurance</a>:</strong></p>
 
 <ol>
 <li>Those who have no life insurance coverage.</li>
@@ -145,7 +145,7 @@ sidebar: true
 
 <p>If you answer no to all the health questions, you will easily qualify for a level benefit plan.</p>
 
-<p>You are covered immediately upon approval and first payment, and your beneficiary will receive the full death benefit if you pass away. There will be <a rel="noreferrer noopener" href="/burial-insurance-with-no-waiting-period/" target="_blank">no waiting period</a> if you qualify.</p>
+<p>You are covered immediately upon approval and first payment, and your beneficiary will receive the full death benefit if you pass away. There will be <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank">no waiting period</a> if you qualify.</p>
 
 <p>A level death benefit is the best possible rating you can receive. You will be able to access the insurer’s lowest possible rate. “Preferred” is the other term for the best rating plan.</p>
 
@@ -504,7 +504,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

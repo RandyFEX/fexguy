@@ -97,7 +97,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p> <strong>Best Option:</strong> Guaranteed issue burial insurance<br><br><br><strong>ACTIVITIES OF DAILY LIVING</strong></p>
 
-<p>Blindness can affect your mobility and may require you to need help with the <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>. </p>
+<p>Blindness can affect your mobility and may require you to need help with the <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>. </p>
 
 <p>Almost all life insurance companies with underwriting (health questions) ask about activities of daily living on their life insurance application.</p>
 
@@ -106,12 +106,12 @@ premiums you’ve paid plus 10% interest.</p>
 <p>You must be able to do these activities on your own to be eligible for the best rate.</p>
 
 <ol>
-<li><a rel="noreferrer noopener" href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank">Eating</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-bathing-disability-adl/" target="_blank">Bathing</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">Dressing</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank">Toileting</a></li>
-<li><a href="/burial-insurance-help-with-transferring/" target="_blank" rel="noreferrer noopener">Transferring</a></li>
-<li><a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank">Eating</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/bathing-disability-adl/" target="_blank">Bathing</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">Dressing</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank">Toileting</a></li>
+<li><a href="/burial-insurance/transferring-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Transferring</a></li>
+<li><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></li>
 </ol>
 
 <p>If you can do these activities independently, then your blindness will not affect your final expense insurance eligibility (and you will qualify for the lowest pricing). </p>

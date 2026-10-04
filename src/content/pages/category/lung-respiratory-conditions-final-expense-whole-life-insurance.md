@@ -11,6 +11,6 @@ sidebar: true
 
 <p>Lung Respiratory Conditions Final Expense Whole Life Insurance</p>
 
-<h2><a href="/burial-insurance-oxygen/">Burial Insurance For People on Oxygen</a></h2>
+<h2><a href="/burial-insurance/oxygen-use/">Burial Insurance For People on Oxygen</a></h2>
 
-<p>Even if you need burial insurance and you’re using oxygen, you might still qualify for burial insurance if you go with the right company. Burial insurance covers it all – burial, cremation, final expenses, funeral costs, or leaving a financial legacy. If you prefer to keep reading, we’ve got more details on burial insurance for…<a class="button-link" href="/burial-insurance-oxygen/">Read More</a></p>
+<p>Even if you need burial insurance and you’re using oxygen, you might still qualify for burial insurance if you go with the right company. Burial insurance covers it all – burial, cremation, final expenses, funeral costs, or leaving a financial legacy. If you prefer to keep reading, we’ve got more details on burial insurance for…<a class="button-link" href="/burial-insurance/oxygen-use/">Read More</a></p>

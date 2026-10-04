@@ -11,9 +11,9 @@ sidebar: true
 
 <p>Kidney Conditions Final Expense Whole Life Insurance</p>
 
-<h2><a href="/final-expense-insurance-diabetic-nephropathy/">Diabetic Nephropathy Final Expense Life Insurance</a></h2>
+<h2><a href="/burial-insurance/diabetic-nephropathy/">Diabetic Nephropathy Final Expense Life Insurance</a></h2>
 
-<p>Here’s the Bottom Line:• Diabetic nephropathy makes life insurance approval harder and more limited• Many people get pushed into expensive 2-year waiting period policies• Severe kidney damage can lead to denial or very high premiums• Applying too early after diagnosis can hurt your approval chances• The wrong company can cost you better coverage options Getting…<a class="button-link" href="/final-expense-insurance-diabetic-nephropathy/">Read More</a></p>
+<p>Here’s the Bottom Line:• Diabetic nephropathy makes life insurance approval harder and more limited• Many people get pushed into expensive 2-year waiting period policies• Severe kidney damage can lead to denial or very high premiums• Applying too early after diagnosis can hurt your approval chances• The wrong company can cost you better coverage options Getting…<a class="button-link" href="/burial-insurance/diabetic-nephropathy/">Read More</a></p>
 
 <h2><a href="/burial-insurance-kidney-failure/">Burial Insurance with Kidney Failure</a></h2>
 

@@ -395,7 +395,7 @@ sidebar: true
 <li>What medications are you taking for blood clots?</li>
 <li>Have you ever been diagnosed with deep vein thrombosis?</li>
 <li>Have you ever been diagnosed with pulmonary embolism?</li>
-<li>Did you ever have a mini-stroke or full-blown <a href="/burial-insurance-stroke/" target="_blank" rel="noreferrer noopener">stroke</a>?</li>
+<li>Did you ever have a mini-stroke or full-blown <a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">stroke</a>?</li>
 <li>Do you have other health issues?</li>
 <li>Did you have any surgery to treat your blood clot?</li>
 </ol>

@@ -65,7 +65,7 @@ sidebar: true
 
 <h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost?</strong></h2>
 
-<p>According to the National Funeral Directors Association, the average cost of an adult funeral today is $9,135.&#160; It only includes the most commonly selected items for a traditional funeral. It does not cover the cost of the cemetery. A burial plot costs about $2,000, so the average <a href="/funeral-expenses-people-overlook/" target="_blank" rel="noreferrer noopener">funeral cost</a> could be over $10,000.</p>
+<p>According to the National Funeral Directors Association, the average cost of an adult funeral today is $9,135.&#160; It only includes the most commonly selected items for a traditional funeral. It does not cover the cost of the cemetery. A burial plot costs about $2,000, so the average <a href="/how-much-does-a-funeral-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> could be over $10,000.</p>
 
 <p><strong>Here is the cost breakdown from <a href="http://www.nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">NFDA</a>:&#160;</strong></p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <p>You pay a one-time payment or lump sum, or you can pay installments to the funeral director or to the plan provider.</p>
 
-<p>To ensure the fund is there when needed, the fund is invested in life insurance or a trust fund with trustees. The proceeds will cover the cost of the <a href="/how-to-pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> when the policy owner dies. They do this to protect your money until the time you need it and give you the funeral you paid for.</p>
+<p>To ensure the fund is there when needed, the fund is invested in life insurance or a trust fund with trustees. The proceeds will cover the cost of the <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> when the policy owner dies. They do this to protect your money until the time you need it and give you the funeral you paid for.</p>
 
 <h2 id="why-use-funeral-plan-insurance-policies"><br><strong>Why Use Funeral Plan Insurance Policies?</strong></h2>
 
@@ -209,7 +209,7 @@ sidebar: true
 
 <h2 id="what-is-funeral-insurance"><br><strong>What Is Funeral Insurance?</strong></h2>
 
-<p>If you do not have funds at the end of your life to cover your <a rel="noreferrer noopener" href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank">final expenses</a>, then a funeral insurance policy,  cremation insurance, final expense, or <a rel="noreferrer noopener" href="/the-importance-of-burial-insurance/" target="_blank">burial insurance</a> might be an ideal solution.</p>
+<p>If you do not have funds at the end of your life to cover your <a rel="noreferrer noopener" href="/final-expense-life-insurance-complete-guide/" target="_blank">final expenses</a>, then a funeral insurance policy,  cremation insurance, final expense, or <a rel="noreferrer noopener" href="/the-importance-of-burial-insurance/" target="_blank">burial insurance</a> might be an ideal solution.</p>
 
 <p>Is burial insurance worth it? Even if you have other traditional insurance to leave behind enough money, you may not want your estate to cover your final expenses. A burial insurance plan is one of the best ways to ensure your full estate will be available to your family.</p>
 
@@ -229,7 +229,7 @@ sidebar: true
 
 <p>You are not even required to answer health questions. Since the insurance company assumes more risk in insuring you, your premiums may be higher than other policies.</p>
 
-<p>All <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a graded death benefit.</p>
+<p>All <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a graded death benefit.</p>
 
 <p>The full death benefit will not be available to your burial insurance beneficiary until the policy has been in force for two to three years. The waiting period varies by the insurance carrier, so be sure to look out for this important detail. Should you die before the waiting period, your beneficiaries will only receive the premiums paid into the policy plus interest.</p>
 
@@ -513,7 +513,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

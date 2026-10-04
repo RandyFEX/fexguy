@@ -63,22 +63,22 @@ sidebar: true
 
 <p><br><strong>OTHER FACTORS THAT MAY ONLY QUALIFY FOR GUARANTEED ISSUE BURIAL INSURANCE:</strong></p>
 
-<p><strong><a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">Activities of Daily Living </a></strong></p>
+<p><strong><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">Activities of Daily Living </a></strong></p>
 
 <p>Every life insurance company will ask if you need help with any of the ADL’s in the knockout section of the application. Activities of daily living include:</p>
 
 <ul>
-<li><a rel="noreferrer noopener" href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank">Eating</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-bathing-disability-adl/" target="_blank">Bathing</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">Dressing</a></li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank">Toileting</a></li>
-<li><a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence </a></li>
-<li><a href="/burial-insurance-help-with-transferring/" target="_blank" rel="noreferrer noopener">Transferring</a> </li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank">Eating</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/bathing-disability-adl/" target="_blank">Bathing</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank">Dressing</a></li>
+<li><a rel="noreferrer noopener" href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank">Toileting</a></li>
+<li><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence </a></li>
+<li><a href="/burial-insurance/transferring-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Transferring</a> </li>
 </ul>
 
 <p>If you are in the late stage of Prion disease, you will require help with activities of daily living because your condition is getting worse. Traditional life insurance declines the application of anyone who needs help with ADLs. Guaranteed issue no questions asked is your only option for coverage.</p>
 
-<p>You can get approved for <a href="/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed issue</a> burial insurance without answering any health questions. This policy is great for those with cognition loss or difficulty answering application questions coherently. </p>
+<p>You can get approved for <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed issue</a> burial insurance without answering any health questions. This policy is great for those with cognition loss or difficulty answering application questions coherently. </p>
 
 <p>The minimum age requirement to apply is 40 to 85 years old. If you are a U.S. citizen and reside in the state where this policy is sold, and you’re within the age requirement, you will be eligible for this policy.</p>
 

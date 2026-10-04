@@ -58,7 +58,7 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-need-help-with-continence"><br><strong>What Is My Best Insurance Option If I Need Help With Continence?</strong></h2>
 
-<p>Activities of daily living (<a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL)</a>  such as continence, eating, bathing, dressing, toileting, and transferring are used by life insurance companies to assess the applicants’ function and independence:</p>
+<p>Activities of daily living (<a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL)</a>  such as continence, eating, bathing, dressing, toileting, and transferring are used by life insurance companies to assess the applicants’ function and independence:</p>
 
 <p>Life insurance companies define continence as maintaining bladder and bowel control and performing personal hygiene tasks. It includes managing and caring for a catheter, ostomy, or urinary catheter collection bag and applying diapers or disposable barrier pads.</p>
 

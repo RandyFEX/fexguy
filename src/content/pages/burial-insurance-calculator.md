@@ -257,13 +257,13 @@ sidebar: true
 <p><strong>Potential questions life insurance companies would ask in a simplified issue life insurance application:</strong></p>
 
 <ol>
-<li>Do you have <a href="/burial-insurance-valvular-heart-disease/" target="_blank" rel="noreferrer noopener">heart disease</a>?</li>
-<li>Have you ever had a <a href="/burial-insurance-stroke/" target="_blank" rel="noreferrer noopener">stroke</a>?</li>
+<li>Do you have <a href="/burial-insurance/valvular-heart-disease/" target="_blank" rel="noreferrer noopener">heart disease</a>?</li>
+<li>Have you ever had a <a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">stroke</a>?</li>
 <li>Do you have kidney disease?</li>
 <li>Have you been diagnosed with terminal illnesses like cancer in the last two years?</li>
-<li>Do you have <a href="/life-insurance-for-hiv-positive/" target="_blank" rel="noreferrer noopener">HIV</a> or <a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>?</li>
-<li>Do you have any cognitive impairment like <a href="/burial-insurance-dementia/" target="_blank" rel="noreferrer noopener">dementia</a> or <a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a>?</li>
-<li>Do you have a <a href="/burial-insurance-disability/" target="_blank" rel="noreferrer noopener">disability</a> that needs a wheelchair or confinement to a nursing home?</li>
+<li>Do you have <a href="/life-insurance-for-hiv-positive/" target="_blank" rel="noreferrer noopener">HIV</a> or <a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>?</li>
+<li>Do you have any cognitive impairment like <a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">dementia</a> or <a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a>?</li>
+<li>Do you have a <a href="/burial-insurance/disability/" target="_blank" rel="noreferrer noopener">disability</a> that needs a wheelchair or confinement to a nursing home?</li>
 </ol>
 
 <p>Minor health problems like high cholesterol or high blood pressure are considered normal. These health questions mainly aim to rule out potentially high-risk applicants, such as those with a terminal illness.</p>
@@ -282,13 +282,13 @@ sidebar: true
 
 <ul>
 <li>Alzheimer’s or dementia</li>
-<li><a href="/burial-insurance-kidney-dialysis/">Dialysis</a></li>
-<li><a href="/burial-insurance-organ-transplant/" target="_blank" rel="noreferrer noopener">Organ transplants</a></li>
+<li><a href="/burial-insurance/dialysis-patients/">Dialysis</a></li>
+<li><a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">Organ transplants</a></li>
 <li>Oxygen use</li>
 <li>Terminal illness</li>
 <li>AIDS or HIV</li>
-<li><a href="/burial-insurance-wheelchair-users/" target="_blank" rel="noreferrer noopener">Wheelchair</a>-bound because of chronic illness or disease</li>
-<li>Mobility issue, needing help with <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> such as <a href="/burial-insurance-help-with-eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">eating</a>, <a href="/burial-insurance-bathing-disability-adl/" target="_blank" rel="noreferrer noopener">bathing</a>, <a href="/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">dressing</a>, <a href="/burial-insurance-help-with-toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">toileting</a>, <a href="/burial-insurance-help-with-continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">continence</a>, transferring</li>
+<li><a href="/burial-insurance/wheelchair-users/" target="_blank" rel="noreferrer noopener">Wheelchair</a>-bound because of chronic illness or disease</li>
+<li>Mobility issue, needing help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> such as <a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">eating</a>, <a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">bathing</a>, <a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">dressing</a>, <a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">toileting</a>, <a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">continence</a>, transferring</li>
 </ul>
 
 <p>Guaranteed issue policies will accept applicants with these medical conditions. Since the insurance companies assume higher risk, the cost of GI policies is generally higher than other types of policies.</p>
@@ -459,7 +459,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

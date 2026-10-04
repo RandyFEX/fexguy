@@ -173,12 +173,12 @@ sidebar: true
 <p>You will typically see Cystic fibrosis asked this way:</p>
 
 <ul>
-<li>Have you ever been diagnosed with or been treated for Cystic fibrosis or other <a href="/burial-insurance-lung-disease/" target="_blank" rel="noreferrer noopener">lung diseases</a>?</li>
+<li>Have you ever been diagnosed with or been treated for Cystic fibrosis or other <a href="/burial-insurance/lung-disease/" target="_blank" rel="noreferrer noopener">lung diseases</a>?</li>
 <li>Have you ever been treated for any chronic <a href="https://www.cff.org/What-is-CF/About-Cystic-Fibrosis/" target="_blank" rel="noreferrer noopener">lung conditions</a>?</li>
 <li>Within the past 24 months, have you been medically diagnosed or treated or taken medication for cystic fibrosis or required oxygen equipment to assist in breathing?</li>
 </ul>
 
-<p>Some burial insurance companies consider Cystic fibrosis as a chronic lung condition like <a href="/burial-insurance-asthma/" target="_blank" rel="noreferrer noopener">asthma</a>, <a href="/burial-life-insurance-copd/" target="_blank" rel="noreferrer noopener">COPD</a>, <a href="/burial-insurance-emphysema/" target="_blank" rel="noreferrer noopener">emphysema</a>, and <a href="/burial-insurance-chronic-bronchitis/" target="_blank" rel="noreferrer noopener">chronic bronchitis</a>. If you have cystic fibrosis, you need to answer “yes” to the lung disease question since cystic fibrosis is a lung disease.</p>
+<p>Some burial insurance companies consider Cystic fibrosis as a chronic lung condition like <a href="/burial-insurance/asthma/" target="_blank" rel="noreferrer noopener">asthma</a>, <a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>, <a href="/burial-insurance/emphysema/" target="_blank" rel="noreferrer noopener">emphysema</a>, and <a href="/burial-insurance/chronic-bronchitis/" target="_blank" rel="noreferrer noopener">chronic bronchitis</a>. If you have cystic fibrosis, you need to answer “yes” to the lung disease question since cystic fibrosis is a lung disease.</p>
 
 <p>We work with insurance companies that don’t even ask about cystic fibrosis on the health questionnaire. Insurance companies that don’t ask about this medical condition will easily approve your application with first-day coverage.</p>
 

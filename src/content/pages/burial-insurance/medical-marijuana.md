@@ -180,7 +180,7 @@ sidebar: true
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 
-<p>Medical marijuana comes in different forms such as marijuana plant material, tincture, capsules, vapes, balms, lotion, and&#160;<a href="/burial-insurance-cbd-oil/" target="_blank" rel="noreferrer noopener">CBD oil</a>.</p>
+<p>Medical marijuana comes in different forms such as marijuana plant material, tincture, capsules, vapes, balms, lotion, and&#160;<a href="/burial-insurance/cbd-oil/" target="_blank" rel="noreferrer noopener">CBD oil</a>.</p>
 
 <p><strong>Some insurance companies will ask about marijuana use this way:</strong></p>
 
@@ -328,7 +328,7 @@ sidebar: true
 <li>What medical condition is being treated by medical marijuana?</li>
 <li>When were you diagnosed with a medical condition?</li>
 <li>Do you use other drugs aside from cannabis?</li>
-<li>Have you been hospitalized because of <a href="/burial-insurance-marijuana-illegal-drugs/" target="_blank" rel="noreferrer noopener">illegal drugs</a>?</li>
+<li>Have you been hospitalized because of <a href="/burial-insurance/marijuana-use/" target="_blank" rel="noreferrer noopener">illegal drugs</a>?</li>
 </ul>
 
 <p>Answer each question honestly. We need to know more information about your marijuana use so we can place you with the right insurance company that will look at you favorably and offer you the best-priced policy.</p>

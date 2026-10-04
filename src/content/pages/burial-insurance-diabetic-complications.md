@@ -269,7 +269,7 @@ sidebar: true
 <p><strong>COMMON HEALTH QUESTIONS:</strong></p>
 
 <ul>
-<li>Have you been treated for or diagnosed as having insulin shock, diabetic coma, <a href="/burial-insurance-amputation-amputee/" target="_blank" rel="noreferrer noopener">amputation</a> caused by disease, or taken insulin shots prior to age 50?</li>
+<li>Have you been treated for or diagnosed as having insulin shock, diabetic coma, <a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">amputation</a> caused by disease, or taken insulin shots prior to age 50?</li>
 <li>Have you been diagnosed with diabetes prior to age 30, or have you ever been treated for insulin shock, diabetic coma, retinopathy, or diabetic neuropathy?</li>
 <li>Within the past 2 years, have you had or been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye), nephropathy (kidney), or neuropathy (nerve, circulatory)?</li>
 </ul>
@@ -370,13 +370,13 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 
-<p><a href="/final-expense-life-insurance-diabetic-neuropathy/">
+<p><a href="/burial-insurance/diabetic-neuropathy/">
 <h5>Life Insurance with Diabetic Neuropathy</h5>
-</a>  <a href="/final-expense-insurance-diabetic-nephropathy/">
+</a>  <a href="/burial-insurance/diabetic-nephropathy/">
 <h5>Diabetic Nephropathy Final Expense Life Insurance</h5>
 </a>  <a href="/final-expense-life-insurance-diabetics/">
 <h5>Final Expense Life Insurance For Diabetics</h5>

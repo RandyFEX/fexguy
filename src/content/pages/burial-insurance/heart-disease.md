@@ -247,7 +247,7 @@ sidebar: true
 
 <p><strong>Is AFIB considered heart disease for life insurance?</strong></p>
 
-<p>Yes, atrial fibrillation (<a href="/burial-insurance-atrial-fibrillation-afib/" target="_blank" rel="noopener">AFIB</a>) it’s a heart condition, and it’ll definitely have a say in your insurance rates.</p>
+<p>Yes, atrial fibrillation (<a href="/burial-insurance/afib/" target="_blank" rel="noopener">AFIB</a>) it’s a heart condition, and it’ll definitely have a say in your insurance rates.</p>
 
 <p><strong><br>Can I get life insurance if I have had a heart attack?</strong></p>
 

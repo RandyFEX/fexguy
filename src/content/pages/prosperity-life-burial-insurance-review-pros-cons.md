@@ -244,7 +244,7 @@ process. There are three parts of the health questions that you must answer
 
 <ul>
 <li>Is the Proposed Insured currently or in the last 30 days been: hospitalized, committed to a psychiatric facility, bedridden, confined to a nursing home, receiving hospice or home health care,&#160; wheelchair-bound due to a chronic illness or disease, or waiting for an organ transplant? (Yes – No)</li>
-<li>Does the Proposed insured currently require assistance or supervision with <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> such as taking medications, eating, bathing, dressing, toileting, continence, or transferring? (Yes – No)</li>
+<li>Does the Proposed insured currently require assistance or supervision with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> such as taking medications, eating, bathing, dressing, toileting, continence, or transferring? (Yes – No)</li>
 </ul>
 
 <p><strong>Within the past 12 months has the Proposed Insured:</strong></p>
@@ -252,10 +252,10 @@ process. There are three parts of the health questions that you must answer
 <ul>
 <li>Been advised by a member of the medical profession to have a diagnostic test (other than an HIV test), surgery, home health care or hospitalization which has not yet started, been completed or for which results are not known? (Yes – No)</li>
 <li>Used or been advised by a member of the medical profession to use oxygen equipment for assistance in Breathing (excluding CPAP or nebulizer)? (Yes – No)</li>
-<li>Had or been advised by a doctor to have <a href="/life-insurance-for-dialysis-patients/" target="_blank" rel="noreferrer noopener">Kidney Dialysis</a>? (Yes – No)</li>
+<li>Had or been advised by a doctor to have <a href="/burial-insurance/dialysis-patients/" target="_blank" rel="noreferrer noopener">Kidney Dialysis</a>? (Yes – No)</li>
 <li>Has the Proposed Insured ever been diagnosed or treated for Acquired Immune Deficiency Syndrome (AIDS) and or Human Immunodeficiency Virus (HIV) infection by a licensed member of the medical profession? (Yes – No)</li>
-<li>Has the Proposed Insured ever been diagnosed or received treatment for Alzheimer’s disease, dementia, Lou Gehrig’s/Amyotrophic Lateral Sclerosis (<a href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank" rel="noreferrer noopener">ALS</a>), <a href="/burial-insurance-cirrhosis/" target="_blank" rel="noreferrer noopener">Liver Cirrhosis</a> (Stage C) or been diagnosed as having a terminal illness that is expected to result in death within the next 24 months? (Yes – No)</li>
-<li>Has the Proposed Insured ever been diagnosed with more than one occurrence of the same or different type of <a href="/life-insurance-for-cancer-patients/" target="_blank" rel="noreferrer noopener">cancer</a> or is the Proposed Insured currently receiving treatment (including taking medication) for any form of cancer (excluding basal cell skin cancer)? (Yes – No)</li>
+<li>Has the Proposed Insured ever been diagnosed or received treatment for Alzheimer’s disease, dementia, Lou Gehrig’s/Amyotrophic Lateral Sclerosis (<a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">ALS</a>), <a href="/burial-insurance/cirrhosis/" target="_blank" rel="noreferrer noopener">Liver Cirrhosis</a> (Stage C) or been diagnosed as having a terminal illness that is expected to result in death within the next 24 months? (Yes – No)</li>
+<li>Has the Proposed Insured ever been diagnosed with more than one occurrence of the same or different type of <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> or is the Proposed Insured currently receiving treatment (including taking medication) for any form of cancer (excluding basal cell skin cancer)? (Yes – No)</li>
 </ul>
 
 <p>If you answered “Yes” to any of the above medical conditions, we work with different A-rated life insurance companies, and we can often get you insurance coverage even with these health issues.</p>
@@ -268,8 +268,8 @@ process. There are three parts of the health questions that you must answer
 
 <ul>
 <li>The use of alcohol or drugs; or been advised by a physician, practitioner,      health facility, or counselor to restrict the use of alcohol or drugs? (Yes – No)</li>
-<li><a rel="noreferrer noopener" href="/burial-insurance-diabetes-diabetic-complications/" target="_blank">Complications of diabetes</a>, such as diabetic coma or insulin shock or had an amputation due to complications of any disease?  (Yes – No)</li>
-<li>Heart attack, angina (chest pain), congestive heart failure, cardiomyopathy stroke, transient ischemic attack (TIA), or aneurysm or had heart or <a rel="noreferrer noopener" href="/burial-insurance-circulatory-surgery/" target="_blank">circulatory surgery</a>? (Yes – No)</li>
+<li><a rel="noreferrer noopener" href="/burial-insurance-diabetic-complications/" target="_blank">Complications of diabetes</a>, such as diabetic coma or insulin shock or had an amputation due to complications of any disease?  (Yes – No)</li>
+<li>Heart attack, angina (chest pain), congestive heart failure, cardiomyopathy stroke, transient ischemic attack (TIA), or aneurysm or had heart or <a rel="noreferrer noopener" href="/burial-insurance/heart-surgery/" target="_blank">circulatory surgery</a>? (Yes – No)</li>
 <li>Has the Proposed Insured had more than one conviction for reckless driving or driving under the influence of alcohol or drugs (DUI or DWI)? (Yes – No)</li>
 <li>In the past three years, has the Proposed Insured been diagnosed, treated, or prescribed medication for internal cancer, including but not limited to,      malignant brain tumor, malignant melanoma (but excluding basal/squamous cell skin cancer), leukemia, or multiple myeloma? (Yes – No)</li>
 <li>In the past 2 years, has the Proposed Insured had more than 1 conviction for reckless driving or for driving under the influence of alcohol or drugs (DUI or DWI)? (Yes – No)</li>
@@ -722,7 +722,7 @@ their burial insurance policies. </p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

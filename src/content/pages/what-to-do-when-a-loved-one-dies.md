@@ -144,13 +144,13 @@ sidebar: true
 
 <p><br><strong>#4 – Let people know about the service</strong></p>
 
-<p>If the date and time for the funeral and <a rel="noreferrer noopener" href="/finding-cheap-burial-insurance/" target="_blank">burial</a> are set, let your friends and relatives know about it. Give them the address to send flowers, sympathy cards, or donations.</p>
+<p>If the date and time for the funeral and <a rel="noreferrer noopener" href="/finding-affordable-burial-insurance/" target="_blank">burial</a> are set, let your friends and relatives know about it. Give them the address to send flowers, sympathy cards, or donations.</p>
 
 <p><br><strong>#5 – Organize the funeral or wake</strong></p>
 
-<p>Organize the wake according to your tradition. The wake can be held at the <a href="/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a> home, church, banquet hall, or relatives’ house. Enlist the help of your relatives and friends to plan.</p>
+<p>Organize the wake according to your tradition. The wake can be held at the <a href="/burial-insurance/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a> home, church, banquet hall, or relatives’ house. Enlist the help of your relatives and friends to plan.</p>
 
-<p>If your loved one was in the military, contact the Veterans Administration. They may have burial benefits or conduct funeral services.&#160; Ask if you can get assistance with the funeral, burial plot, or other benefits. Call Veterans Affairs at 1-800-827-1000 to inquire about<a href="/burial-insurance-for-veterans/" target="_blank" rel="noreferrer noopener"> veteran’s</a> survivor benefits.</p>
+<p>If your loved one was in the military, contact the Veterans Administration. They may have burial benefits or conduct funeral services.&#160; Ask if you can get assistance with the funeral, burial plot, or other benefits. Call Veterans Affairs at 1-800-827-1000 to inquire about<a href="/burial-insurance/veterans/" target="_blank" rel="noreferrer noopener"> veteran’s</a> survivor benefits.</p>
 
 <p><br><strong>#6 – Determine if you need help or financial assistance for the funeral and burial</strong>.</p>
 
@@ -170,7 +170,7 @@ sidebar: true
 
 <p><br><strong>#3 – Notify life insurance companies</strong></p>
 
-<p>If your loved one had life insurance or <a href="/how-to-apply-for-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, call the life insurance agent to get claim forms. You need to contact the insurance company as soon as possible to start the claim process. Provide a death certificate with the insurance policy numbers. You could take days to weeks to get the life insurance payout.</p>
+<p>If your loved one had life insurance or <a href="/burial-insurance/how-to-apply-for-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, call the life insurance agent to get claim forms. You need to contact the insurance company as soon as possible to start the claim process. Provide a death certificate with the insurance policy numbers. You could take days to weeks to get the life insurance payout.</p>
 
 <p><br><strong>#4 – Notify local Social Security office</strong></p>
 
@@ -407,7 +407,7 @@ sidebar: true
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

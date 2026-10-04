@@ -58,7 +58,7 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-need-help-with-eating"><br><strong>What Is My Best Insurance Option If I Need Help With Eating?</strong></h2>
 
-<p><a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">Activities of daily living</a> are the fundamental <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">skills</a> needed to manage basic physical needs. </p>
+<p><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">Activities of daily living</a> are the fundamental <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">skills</a> needed to manage basic physical needs. </p>
 
 <p>Eating is one of the activities of daily living that you must do on your own to qualify for life insurance. Insurance companies require that each applicant be able to do this as a key part of functional independence.</p>
 

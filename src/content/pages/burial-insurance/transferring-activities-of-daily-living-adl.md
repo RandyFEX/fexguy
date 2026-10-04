@@ -61,7 +61,7 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-need-help-with-transferring"><br><strong>What Is My Best Insurance Option If I Need Help With Transferring?</strong></h2>
 
-<p>Activities of Daily Living <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">(ADL)</a> such as eating, bathing, dressing, toileting, continence, and transferring are the basic tasks required for <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">self-care</a> and independent living. When people cannot do these activities independently, they need help from other people or mechanical devices to cope.</p>
+<p>Activities of Daily Living <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">(ADL)</a> such as eating, bathing, dressing, toileting, continence, and transferring are the basic tasks required for <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">self-care</a> and independent living. When people cannot do these activities independently, they need help from other people or mechanical devices to cope.</p>
 
 <p>Life insurance companies define transferring as the ability to transfer oneself from different surfaces (bed, chair or wheelchair, toilet) without assistance, such as:</p>
 
@@ -236,19 +236,19 @@ sidebar: true
 <p id="Information-We-Need-If-You-Have-Trouble-With-Transferring">Needing help from another person for transferring will significantly affect your ability to qualify for the best-priced insurance coverage because the inability to transfer to different surfaces independently is a sign of other health problems such as:</p>
 
 <ul>
-<li><a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
-<li><a href="/burial-insurance-als-lou-gehrigs-disease/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis</a> (ALS)</li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
+<li><a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">Amyotrophic lateral sclerosis</a> (ALS)</li>
 <li>Arthritis</li>
-<li><a href="/burial-insurance-cerebral-palsy/" target="_blank" rel="noreferrer noopener">Cerebral palsy</a></li>
+<li><a href="/burial-insurance/cerebral-palsy/" target="_blank" rel="noreferrer noopener">Cerebral palsy</a></li>
 <li>Cystic Fibrosis</li>
-<li><a href="/burial-insurance-dementia/" target="_blank" rel="noreferrer noopener">Dementia</a></li>
-<li><a href="/burial-insurance-heart-attack/" target="_blank" rel="noreferrer noopener">Heart attack</a></li>
-<li><a href="/burial-insurance-multiple-sclerosis/" target="_blank" rel="noreferrer noopener">Multiple Sclerosis</a></li>
-<li><a href="/burial-insurance-muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular dystrophy</a></li>
-<li><a href="/burial-insurance-paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a></li>
-<li><a href="/burial-insurance-parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Dementia</a></li>
+<li><a href="/burial-insurance/heart-attack/" target="_blank" rel="noreferrer noopener">Heart attack</a></li>
+<li><a href="/burial-insurance/multiple-sclerosis/" target="_blank" rel="noreferrer noopener">Multiple Sclerosis</a></li>
+<li><a href="/burial-insurance/muscular-dystrophy/" target="_blank" rel="noreferrer noopener">Muscular dystrophy</a></li>
+<li><a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a></li>
+<li><a href="/burial-insurance/parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinson’s disease</a></li>
 <li>Spina bifida</li>
-<li><a href="/burial-insurance-stroke/" target="_blank" rel="noreferrer noopener">Stroke</a></li>
+<li><a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">Stroke</a></li>
 </ul>
 
 <p>Any of these medical conditions can cause you to be unable to transfer independently. The inability to perform transferring indicates the severity of these illnesses that may cause accidents and premature death.</p>
@@ -429,7 +429,7 @@ sidebar: true
 <li><strong>Your policy will never expire when you reach 80 years old</strong>. Guaranteed acceptance life insurance is whole life insurance that will last your lifetime (all the way up to 121 years old). Your policy will never expire as long as you keep paying the premiums.</li>
 <li><strong>Tax-free.</strong> Your death benefit will be paid to your beneficiary when you pass away free of tax. They will not owe any income tax on the death benefit.</li>
 <li><strong>Not cancellable</strong>. Your policy can never be canceled by the life insurance company as long as premium payments are made on time.</li>
-<li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance is <a rel="noreferrer noopener" href="/best-whole-life-insurance-plans/" target="_blank">whole life insurance</a> that accumulates cash value over the years. You can withdraw or borrow against it.</li>
+<li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance is whole life insurance that accumulates cash value over the years. You can withdraw or borrow against it.</li>
 </ol>
 
 <h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>

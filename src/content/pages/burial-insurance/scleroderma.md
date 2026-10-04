@@ -113,7 +113,7 @@ sidebar: true
 
 <p><br><strong>ARRHYTHMIA &amp; CONGESTIVE HEART FAILURE</strong></p>
 
-<p>These conditions may result from scarring of the heart tissue. If you have an <a href="/burial-insurance-arrhythmia/">arrhythmia</a> or irregular heartbeat, you can still qualify for immediate coverage. However, if you develop <a href="/burial-insurance-with-congestive-heart-failure/">CHF</a> because of scleroderma, you will only qualify for a first-day benefit plan.</p>
+<p>These conditions may result from scarring of the heart tissue. If you have an <a href="/burial-insurance/arrhythmia/">arrhythmia</a> or irregular heartbeat, you can still qualify for immediate coverage. However, if you develop <a href="/burial-insurance/congestive-heart-failure/">CHF</a> because of scleroderma, you will only qualify for a first-day benefit plan.</p>
 
 <p>You will be covered from the first day, and your death benefit will be phased in over time.</p>
 
@@ -258,7 +258,7 @@ sidebar: true
 <p><strong>Raynaud’s phenomenon</strong></p>
 
 <ul>
-<li>Vasodilators (Hydralazine, Minoxidil) <a href="/burial-insurance-high-blood-pressure">High blood pressure</a> medications to treat scleroderma are okay with life insurance companies and won’t cause you to pay more premiums.</li>
+<li>Vasodilators (Hydralazine, Minoxidil) <a href="/burial-insurance/high-blood-pressure/">High blood pressure</a> medications to treat scleroderma are okay with life insurance companies and won’t cause you to pay more premiums.</li>
 </ul>
 
 <p><strong>Gastroesophageal Reflux Disease or GERD</strong></p>

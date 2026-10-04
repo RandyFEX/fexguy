@@ -68,9 +68,9 @@ sidebar: true
 <p><strong>The common surgeries to treat PVD or PAD include:</strong></p>
 
 <ol>
-<li><a href="/burial-insurance-angioplasty/" target="_blank" rel="noreferrer noopener">Angioplasty</a> – helps open up the artery and increase blood flow to the heart.</li>
+<li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Angioplasty</a> – helps open up the artery and increase blood flow to the heart.</li>
 <li>Bypass grafting – a graft is placed around the blocked artery to restore blood flow to the heart.</li>
-<li><a href="/burial-insurance-heart-stent/" target="_blank" rel="noreferrer noopener">Stent implant</a> – small mesh wires are inserted into the diseased artery to prevent it from re-closing and to prevent blood clots from forming in the artery.</li>
+<li><a href="/burial-insurance/stent/" target="_blank" rel="noreferrer noopener">Stent implant</a> – small mesh wires are inserted into the diseased artery to prevent it from re-closing and to prevent blood clots from forming in the artery.</li>
 </ol>
 
 <p>If you had any of these procedures to treat your condition, it is crucial to remember that when you had the&#160;<a href="https://www.webmd.com/heart-disease/treatments-peripheral-artery-disease#1" target="_blank" rel="noreferrer noopener">surgery</a>&#160;will determine what type of burial insurance you will qualify for.</p>

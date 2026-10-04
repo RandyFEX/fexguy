@@ -312,7 +312,7 @@ sidebar: true
 
 <h3 id="h-do-foresters-have-the-same-day-approval-process"><strong>Do Foresters Have The Same Day Approval Process?</strong></h3>
 
-<p>Foresters have an electronic submission process for all life insurance policies. They have an easy <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a>; getting approved is about a 15-minutes over the phone.</p>
+<p>Foresters have an electronic submission process for all life insurance policies. They have an easy <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a>; getting approved is about a 15-minutes over the phone.</p>
 
 <h2 id="pricing-examples"><strong>How Can I Get Foresters Burial Insurance Pricing?</strong></h2>
 

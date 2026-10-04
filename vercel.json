@@ -1439,6 +1439,16 @@
       "source": "/category/final-expense-whole-life-insurance-company-reviews/",
       "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
       "statusCode": 301
+    },
+    {
+      "source": "/lincoln-heritage-funeral-advantage-review/",
+      "destination": "/lincoln-heritage-funeral-advantage-review-old/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
     }
   ],
   "headers": [

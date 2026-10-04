@@ -48,7 +48,7 @@ sidebar: true
 
 <h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What Kind Of Cheap Burial Insurance Policies Should I Avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or <a href="/complete-guide-to-burial-insurance-and-final-expense/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>
 
 <p>Everyone is eligible for immediate coverage and better pricing; however, these heavily advertised policies are so expensive.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>The cheapest burial insurance with no waiting period for elderly folks is sold through licensed and registered agencies, like Final Expense Guy.</p>
 
-<p>When shopping around for cheap burial insurance for yourself or funeral <a href="/burial-insurance-for-parents/" target="_blank" rel="noreferrer noopener">insurance for parents</a>, an independent agency will always get you the best-priced funeral policy.</p>
+<p>When shopping around for cheap burial insurance for yourself or funeral <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">insurance for parents</a>, an independent agency will always get you the best-priced funeral policy.</p>
 
 <p><strong>Others only sell one product, and it’s more expensive.</strong></p>
 

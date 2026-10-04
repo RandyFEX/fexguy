@@ -64,7 +64,7 @@ sidebar: true
 
 <h2 id="what-is-a-waiting-period"><br><strong>What Is A Waiting Period?</strong></h2>
 
-<p>Most people who buy life insurance don’t realize that some insurance plans come with a two-year <a rel="noreferrer noopener" href="/burial-insurance-with-no-waiting-period/" target="_blank">waiting period</a>… until they read the fine print!</p>
+<p>Most people who buy life insurance don’t realize that some insurance plans come with a two-year <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank">waiting period</a>… until they read the fine print!</p>
 
 <p>Let’s look at a waiting period plan to understand the importance of first-day coverage better.</p>
 

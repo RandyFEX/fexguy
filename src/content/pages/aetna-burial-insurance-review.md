@@ -287,11 +287,11 @@ sidebar: true
 
 <p><strong>1.</strong>&#160;Do any of the following apply to you?</p>
 
-<p><strong>a.</strong>&#160;currently&#160;<a rel="noreferrer noopener" href="/burial-insurance-hospitalized/" target="_blank">hospitalized</a>, in a&#160;<a href="/burial-insurance-nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing facility</a>, confined to a bed, receiving hospice care? (Yes – No)</p>
+<p><strong>a.</strong>&#160;currently&#160;<a rel="noreferrer noopener" href="/burial-insurance/hospitalized/" target="_blank">hospitalized</a>, in a&#160;<a href="/burial-insurance/nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing facility</a>, confined to a bed, receiving hospice care? (Yes – No)</p>
 
 <p><strong>b.</strong>&#160;require the use of oxygen for any lung or respiratory disorder (Yes – No)</p>
 
-<p><strong>c.</strong>&#160;have been diagnosed by a medical professional to have an&#160;<a href="/burial-insurance-aneurysm/" target="_blank" rel="noreferrer noopener">aneurysm</a>&#160;that has not been surgically repaired (Yes – No)</p>
+<p><strong>c.</strong>&#160;have been diagnosed by a medical professional to have an&#160;<a href="/burial-insurance/aneurysm/" target="_blank" rel="noreferrer noopener">aneurysm</a>&#160;that has not been surgically repaired (Yes – No)</p>
 
 <p><strong>MODIFIED BENEFIT PLAN</strong></p>
 
@@ -299,9 +299,9 @@ sidebar: true
 
 <p><strong>2.</strong>&#160;At any time have you been diagnosed or treated by a medical professional or had surgery for any of the following?</p>
 
-<p><strong>a.</strong>&#160;any condition requiring bone marrow, stem cell, or&#160;<a href="/burial-insurance-organ-transplant/" target="_blank" rel="noreferrer noopener">organ transplant</a>&#160;(Yes – No)</p>
+<p><strong>a.</strong>&#160;any condition requiring bone marrow, stem cell, or&#160;<a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">organ transplant</a>&#160;(Yes – No)</p>
 
-<p><strong>b.</strong>&#160;<a href="/burial-insurance-kidney-disease/" target="_blank" rel="noreferrer noopener">kidney disease</a>&#160;requiring dialysis (Yes – No)</p>
+<p><strong>b.</strong>&#160;<a href="/burial-insurance/kidney-disease/" target="_blank" rel="noreferrer noopener">kidney disease</a>&#160;requiring dialysis (Yes – No)</p>
 
 <p><strong>c.</strong>&#160;Alzheimer’s disease, dementia, mental incapacity (Yes – No)</p>
 
@@ -329,11 +329,11 @@ sidebar: true
 
 <p><strong>4.</strong>&#160;Within the past 12 months, have you been diagnosed or treated by a medical professional or had surgery or any of the following? (Yes – No)</p>
 
-<p><strong>a.</strong>&#160;heart attack,&#160;<a href="/burial-insurance-valvular-heart-disease/" target="_blank" rel="noreferrer noopener">heart valve disorder</a>, heart blockage, stroke, or transient ischemic attack (TIA) (Yes – No)</p>
+<p><strong>a.</strong>&#160;heart attack,&#160;<a href="/burial-insurance/valvular-heart-disease/" target="_blank" rel="noreferrer noopener">heart valve disorder</a>, heart blockage, stroke, or transient ischemic attack (TIA) (Yes – No)</p>
 
 <p>b<strong>.</strong>&#160;any lung or respiratory disorder requiring the use of a nebulizer (Yes – No)</p>
 
-<p>c<strong>.</strong>&#160;any lung or respiratory disorder and currently use&#160;<a href="/burial-insurance-for-smokers/" target="_blank" rel="noreferrer noopener">tobacco</a>&#160;(Yes – No)</p>
+<p>c<strong>.</strong>&#160;any lung or respiratory disorder and currently use&#160;<a href="/burial-insurance/for-smokers/" target="_blank" rel="noreferrer noopener">tobacco</a>&#160;(Yes – No)</p>
 
 <p><strong>d.</strong>&#160;internal cancer, melanoma, lymphoma, multiple myeloma, systemic leukemia, lupus (SLE) (Yes – No)</p>
 

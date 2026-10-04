@@ -366,6 +366,10 @@ is in place; see src/content/README.md for how pages were migrated.
   /globe-term-life-burial-insurance-review/ → /globe-life-price-increase/
   /globe-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
   Intentional real 404s, no redirects (old campaign/workflow URLs): /get-info/, /free-quote-now/, /facebook-quote-request/, /request-quote-compare-rates/, /state-benefits/.
+- **Two more approved 301s** (Randy, October 2026):
+  /lincoln-heritage-funeral-advantage-review/ →
+  /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
+  /sitemap-index.xml. vercel.json now holds 289 redirects.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -395,22 +399,21 @@ is in place; see src/content/README.md for how pages were migrated.
   until reviewed with Randy: /final-expense-life-insurance-pre-existing-conditions/
   (about 56% of the export text), /trinity-life-insurance-review/ (about 78%),
   /colonial-penn-burial-insurance-review/ (about 82%).
-- Internal links awaiting the link cleanup (don't change until Randy decides
-  each): the 14 "whole life" links to /best-whole-life-insurance-plans/ and
-  the "Neuropathy" link on /a-z-health/ (broken); the 2 links to
-  /funeral-expenses-people-overlook/ (work via the 301; point them straight at
-  /how-much-does-a-funeral-cost/ later); the "READ THE FULL WEEK 5 ARTICLE"
-  and "READ THE FULL WEEK 6 ARTICLE" links on /12-step-final-planning-guide/
-  (broken), and its "READ THE FULL WEEK 9 ARTICLE" link to the retired
-  /funeral-service-planning/ (G3). From the G2 decisions: on /12-step-final-planning-guide/, the
-  "READ THE FULL WEEK 3/4/7/8/10/11/12 ARTICLE" links and the "READ THE FULL
-  ARTICLE HERE" link now point at retired 404s (casket, funeral home,
-  headstone, flowers, identity theft, medications, liquidating assets, Bible
-  verses); the "Payable on death account" link on /prepaid-funeral/ is
-  broken; the "guaranteed issue whole life insurance" link on
-  /final-expense-life-insurance-pre-existing-conditions/ works via the 301
-  but should point straight at
-  /burial-insurance/guaranteed-issue-life-insurance-for-seniors/.
+- **Internal-link cleanup done** (Randy, October 2026): every internal link
+  now points straight at its final 200 URL (no links through redirects, none
+  to intentional 404s). Links to retired pages (whole-life plans, payable-on-
+  death, the wp-admin edit link) were unlinked with their text kept; self-links
+  were unlinked; the 11 obsolete "READ THE FULL … ARTICLE" buttons on
+  /12-step-final-planning-guide/ were removed (weeks 3–12 and the Bible-verses
+  button; the planning text stays). "Neuropathy" on /a-z-health/ is plain
+  text: don't link generic neuropathy to /burial-insurance/diabetic-neuropathy/
+  (/burial-insurance-neuropathy/ stays a real 404). Still held, unchanged until
+  Randy decides: the 5 links to the two missing PDFs
+  (/wp-content/uploads/2020/01/Funeral-Funds-Funeral-Estate-Planning-Guide.pdf:
+  3 on /12-step-final-planning-guide/, 1 on /planning-guide/;
+  /wp-content/uploads/2025/01/FEX-BUYERS-GUIDE-091024-3.pdf: 1 on
+  /buyers-guide/), and the old Funeral Funds consent/disclosure text on 17
+  pages.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.

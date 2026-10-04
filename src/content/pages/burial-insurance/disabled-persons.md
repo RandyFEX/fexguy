@@ -83,7 +83,7 @@ sidebar: true
 
 <p>According to the CDC, arthritis and other musculoskeletal problems are common causes of long-term disability and account for one-third of all disability cases. This is because muscle and joint problems limit the ability to perform one’s job and daily functions.</p>
 
-<p><a href="/burial-insurance-arthritis/" target="_blank" rel="noreferrer noopener">Arthritis</a> is a non-issue with most burial insurance companies. You will easily qualify for a level-death benefit plan.</p>
+<p><a href="/burial-insurance/burial-insurance-arthritis/" target="_blank" rel="noreferrer noopener">Arthritis</a> is a non-issue with most burial insurance companies. You will easily qualify for a level-death benefit plan.</p>
 
 <p>The best feature of a level death benefit is 100% coverage from day one. You will be instantly covered, and your beneficiary will receive a full death benefit when you pass away for any reason.</p>
 
@@ -147,7 +147,7 @@ sidebar: true
 
 <h3><strong>MENTAL HEALTH CONDITIONS</strong></h3>
 
-<p>Mental health conditions, such as depression, anxiety, bipolar disorder, schizophrenia, or post-traumatic stress disorder (<a href="/ptsd-burial-insurance/" target="_blank" rel="noreferrer noopener">PTSD</a>),&#160;can cause disability.</p>
+<p>Mental health conditions, such as depression, anxiety, bipolar disorder, schizophrenia, or post-traumatic stress disorder (<a href="/burial-insurance/ptsd/" target="_blank" rel="noreferrer noopener">PTSD</a>),&#160;can cause disability.</p>
 
 <p>Many life insurance companies will still accept your application if you have a mental health condition that caused you to have a disability.</p>
 
@@ -230,7 +230,7 @@ sidebar: true
 
 <p>The insurance companies will assess each applicant individually. If you have a minor form of disability but are generally healthy, you may qualify for level death benefit with immediate coverage. &#160;How the life insurance companies will look at your disability will all come down to your overall health.</p>
 
-<p>For example, you lost a limb, but you have been fitted with a prosthetic leg and are now fully functional and able to walk. The insurance company will often approve your application regardless of your <a href="/burial-insurance-amputation-amputee/" target="_blank" rel="noreferrer noopener">amputation</a>. On the other hand, if you lose a leg due to diabetic amputation, you may find applying for life insurance a little difficult to get first-day coverage, and you will have a waiting period.</p>
+<p>For example, you lost a limb, but you have been fitted with a prosthetic leg and are now fully functional and able to walk. The insurance company will often approve your application regardless of your <a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">amputation</a>. On the other hand, if you lose a leg due to diabetic amputation, you may find applying for life insurance a little difficult to get first-day coverage, and you will have a waiting period.</p>
 
 <p>Every life insurance provider has its unique underwriting guidelines. They differ and may accept or decline applicants based on various health conditions and lifestyles.</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <ol>
 <li><strong>Personalized Guidance:</strong> Our experienced team will work closely with you to understand your disability and the coverage you require. We’ll guide you through the life insurance application process, ensuring you provide all the necessary information to secure the right burial insurance.</li>
-<li><strong>Specialized Options:</strong> We offer life insurance options for people with disabilities, such as <a href="/burial-insurance-wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchair users</a>, <a href="/burial-insurance-for-the-blind/" target="_blank" rel="noreferrer noopener">blind</a>, <a href="/burial-insurance-paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">paralyzed</a>, and those with PTSD. These options provide coverage tailored to your unique situation, offering peace of mind that funeral costs will be covered.</li>
+<li><strong>Specialized Options:</strong> We offer life insurance options for people with disabilities, such as <a href="/burial-insurance/wheelchair-users/" target="_blank" rel="noreferrer noopener">wheelchair users</a>, <a href="/burial-insurance/blind/" target="_blank" rel="noreferrer noopener">blind</a>, <a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">paralyzed</a>, and those with PTSD. These options provide coverage tailored to your unique situation, offering peace of mind that funeral costs will be covered.</li>
 <li><strong>Competitive Rates:</strong> Final Expense Guy is a licensed and nationally recognized expert in life insurance for people with disabilities. You can stop searching for multiple insurance companies because we’ve established relationships with multiple insurance companies, allowing us to find the lowest-priced burial insurance coverage that meets your needs and budget.&#160;</li>
 <li><strong>1st-Day Coverage: </strong>We understand the importance of immediate coverage. That’s why we offer burial insurance options with 1st-day coverage, ensuring that your loved ones will have financial assistance for funeral expenses as soon as the policy is in effect.</li>
 </ol>

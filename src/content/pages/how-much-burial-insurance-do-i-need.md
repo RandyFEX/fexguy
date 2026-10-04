@@ -71,7 +71,7 @@ sidebar: true
 
 <p>Burial insurance has a wide range of coverage options. You can choose between $2,000 and $50,000, depending on the coverage you need. </p>
 
-<p>Funeral insurance is <a rel="noreferrer noopener" href="/best-whole-life-insurance-plans/" target="_blank">whole life insurance</a> that works this way:</p>
+<p>Funeral insurance is whole life insurance that works this way:</p>
 
 <ul>
 <li>Fixed monthly premiums for life</li>
@@ -88,7 +88,7 @@ sidebar: true
 
 <p><strong>SIMPLIFIED ISSUE BURIAL INSURANCE</strong></p>
 
-<p>Simplified issue whole life insurance offers immediate coverage. This plan is burial insurance with <a href="/burial-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">no waiting period</a>. Coverage starts from the very first day! It does not require a medical exam, and the company underwrites your health based on your answer to several health questions.</p>
+<p>Simplified issue whole life insurance offers immediate coverage. This plan is burial insurance with <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">no waiting period</a>. Coverage starts from the very first day! It does not require a medical exam, and the company underwrites your health based on your answer to several health questions.</p>
 
 <p>Simplified issue insurance has a lower face amount or coverage than term insurance. </p>
 
@@ -145,7 +145,7 @@ sidebar: true
 
 <p>Your first step is determining how much burial insurance you will need to know your end-of-life expenses. </p>
 
-<p>Your <a href="/how-much-does-burial-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider – outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
+<p>Your <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider – outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
 
 <p>According to the National Funeral Directors Association (NFDA) website, the average cost of an adult funeral today is $8,755. </p>
 
@@ -397,7 +397,7 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

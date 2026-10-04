@@ -103,7 +103,7 @@ can cause you serious problems in the future.</p>
 
 <p><strong>Best Option:</strong> Level death benefit plan with first-day coverage</p>
 
-<p><br><strong><a href="/burial-insurance-alcohol-abuse/" target="_blank" rel="noreferrer noopener">ALCOHOL ABUSE</a></strong></p>
+<p><br><strong><a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">ALCOHOL ABUSE</a></strong></p>
 
 <p>Alcohol abuse, also called alcohol dependence, alcohol addiction, alcohol misuse, and alcoholism, is a disease that is characterized by unhealthy drinking behaviors. It also includes binge drinking.</p>
 
@@ -120,7 +120,7 @@ death benefit</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<p><br><strong><a href="/burial-insurance-marijuana-illegal-drugs/" target="_blank" rel="noreferrer noopener">MARIJUANA USE</a></strong></p>
+<p><br><strong><a href="/burial-insurance/marijuana-use/" target="_blank" rel="noreferrer noopener">MARIJUANA USE</a></strong></p>
 
 <p><strong>Recreational Marijuana Use</strong></p>
 
@@ -137,7 +137,7 @@ Level death benefit</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 
-<p><br><strong><a href="/burial-insurance-medical-marijuana/" target="_blank" rel="noreferrer noopener">MEDICAL MARIJUANA USE</a></strong></p>
+<p><br><strong><a href="/burial-insurance/medical-marijuana/" target="_blank" rel="noreferrer noopener">MEDICAL MARIJUANA USE</a></strong></p>
 
 <p>Medical prescriptions for marijuana use are allowed in some states. Since it is legal, there are no legal issues regarding the law enforcement agency qualifying for life insurance.</p>
 
@@ -149,7 +149,7 @@ Level death benefit</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 
-<p><br><strong><a href="/burial-insurance-cbd-oil/" target="_blank" rel="noreferrer noopener">CBD OIL USER</a></strong></p>
+<p><br><strong><a href="/burial-insurance/cbd-oil/" target="_blank" rel="noreferrer noopener">CBD OIL USER</a></strong></p>
 
 <p>If you are a CBD oil user, you can qualify for burial insurance. The insurance industry has become more lenient with CBD oil users, with a rising number of U.S states legalizing marijuana for medical use.</p>
 
@@ -161,7 +161,7 @@ Level death benefit</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 
-<p><br><strong><a href="/burial-insurance-drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">ILLEGAL DRUG USE</a></strong></p>
+<p><br><strong><a href="/burial-insurance/drug-abuse-treatment/" target="_blank" rel="noreferrer noopener">ILLEGAL DRUG USE</a></strong></p>
 
 <p>In the past, it was challenging to qualify for life insurance if you currently use illegal drugs like opium, methamphetamine, cocaine, and heroin. If you currently abuse illicit drugs or prescription drugs, most companies will require you to have a minimum of two to five years of sobriety without any relapse or hospitalization before offering the best plan.</p>
 
@@ -755,7 +755,7 @@ because you now have a better chance of getting approved.</p>
 
 <img decoding="async" loading="lazy" alt="About Final Expense Guy" src="/wp-content/uploads/2026/04/FEXGUY-LOGO-TRANSPARENT-BACKGROUND-1024-X-1024.png">
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h5>Keep Reading</h5>
 

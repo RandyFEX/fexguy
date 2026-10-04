@@ -267,16 +267,16 @@ sidebar: true
 <p>These medical conditions are considered high-risk because they generally reduce the amount of time you will live. Applicants with any of these conditions will get declined if they have been diagnosed or treated for these conditions in the last two years.&#160;</p>
 
 <ul>
-<li><a href="/burial-life-insurance-copd/" target="_blank" rel="noreferrer noopener">COPD</a> with 24 hours a day oxygen use</li>
-<li>A <a href="/burial-insurance-heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, heart surgery, or stroke in the last 24 months</li>
-<li><a href="/burial-insurance-kidney-disease-kidney-failure/" target="_blank" rel="noreferrer noopener">Renal failure</a>, on dialysis because of end-stage kidney disease</li>
-<li><a href="/burial-insurance-cancer-patients/" target="_blank" rel="noreferrer noopener">Cancer</a> diagnosis or treatment in the last 24 months</li>
-<li><a href="/burial-insurance-organ-transplant/" target="_blank" rel="noreferrer noopener">Organ or tissue transplant</a></li>
-<li><a href="/burial-insurance-alzheimers-disease/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
-<li><a href="/burial-insurance-aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a></li>
-<li><a href="/burial-insurance-amputation-amputee/" target="_blank" rel="noreferrer noopener">Amputation</a> due to disease</li>
-<li><a href="/burial-insurance-wheelchair-users/" target="_blank" rel="noreferrer noopener">Wheelchair use</a> because of chronic illness</li>
-<li>Needing help with <a href="/burial-insurance-adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> (eating, bathing, dressing, toileting, transferring, and continence)</li>
+<li><a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a> with 24 hours a day oxygen use</li>
+<li>A <a href="/burial-insurance/heart-attack/" target="_blank" rel="noreferrer noopener">heart attack</a>, heart surgery, or stroke in the last 24 months</li>
+<li><a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">Renal failure</a>, on dialysis because of end-stage kidney disease</li>
+<li><a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">Cancer</a> diagnosis or treatment in the last 24 months</li>
+<li><a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">Organ or tissue transplant</a></li>
+<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s disease</a></li>
+<li><a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a></li>
+<li><a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">Amputation</a> due to disease</li>
+<li><a href="/burial-insurance/wheelchair-users/" target="_blank" rel="noreferrer noopener">Wheelchair use</a> because of chronic illness</li>
+<li>Needing help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> (eating, bathing, dressing, toileting, transferring, and continence)</li>
 <li>Confined in nursing facility</li>
 </ul>
 

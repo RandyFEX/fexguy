@@ -11,6 +11,6 @@ sidebar: true
 
 <p>Liver Conditions Final Expense Whole Life Insurance</p>
 
-<h2><a href="/burial-insurance-organ-transplant/">Burial Insurance With An Organ Transplant</a></h2>
+<h2><a href="/burial-insurance/organ-transplant/">Burial Insurance With An Organ Transplant</a></h2>
 
-<p>You can qualify for burial life insurance coverage with an organ transplant through a few select companies. !!! READ THIS FIRST !!! It is important to mention that it is impossible to qualify for a plan with first-day coverage because of the extremely high risks involved with your organ transplant. We recommend people who have had…<a class="button-link" href="/burial-insurance-organ-transplant/">Read More</a></p>
+<p>You can qualify for burial life insurance coverage with an organ transplant through a few select companies. !!! READ THIS FIRST !!! It is important to mention that it is impossible to qualify for a plan with first-day coverage because of the extremely high risks involved with your organ transplant. We recommend people who have had…<a class="button-link" href="/burial-insurance/organ-transplant/">Read More</a></p>

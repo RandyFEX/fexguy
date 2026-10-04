@@ -75,7 +75,7 @@ sidebar: true
 <li>Spouse or life partner</li>
 <li>Grandchildren</li>
 <li>Significant other</li>
-<li>Anyone whom you depend on such as a <a href="/burial-insurance-brother/" target="_blank" rel="noreferrer noopener">brother</a> or <a href="/burial-insurance-for-sister/" target="_blank" rel="noreferrer noopener">sister</a></li>
+<li>Anyone whom you depend on such as a <a href="/burial-insurance/brother/" target="_blank" rel="noreferrer noopener">brother</a> or <a href="/burial-insurance/sister/" target="_blank" rel="noreferrer noopener">sister</a></li>
 </ul>
 
 <h2 id="requirements-to-get-burial-insurance"><br><strong>What Are The Requirements To Get Burial Insurance On Someone Else?</strong></h2>
@@ -121,7 +121,7 @@ sidebar: true
 
 <p><br><strong>BUYING BURIAL INSURANCE FOR ELDERLY PARENTS</strong></p>
 
-<p>Can you buy burial insurance for your parents? Children can purchase life insurance policies on their <a href="/burial-insurance-for-parents/" target="_blank" rel="noreferrer noopener">parents</a>. Adult children can get life insurance for parents no medical exam and become responsible for making premium payments instead of letting their <a href="/can-i-buy-life-insurance-on-my-mother/" target="_blank" rel="noreferrer noopener">mother</a> or father struggle to pay the premium.</p>
+<p>Can you buy burial insurance for your parents? Children can purchase life insurance policies on their <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">parents</a>. Adult children can get life insurance for parents no medical exam and become responsible for making premium payments instead of letting their <a href="/burial-insurance/can-i-buy-life-insurance-on-my-mother/" target="_blank" rel="noreferrer noopener">mother</a> or father struggle to pay the premium.</p>
 
 <p>Children need to show insurable interest and parents consent to buy burial insurance on them.</p>
 

@@ -56,7 +56,7 @@ sidebar: true
 <p><strong>FEATURES OF FUNERAL INSURANCE FOR SENIORS:</strong></p>
 
 <ul>
-<li>Whole life or <a href="/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent insurance</a></li>
+<li>Whole life or <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">permanent insurance</a></li>
 <li>Monthly payments are fixed and guaranteed not to increase for any reason</li>
 <li>The death benefit cannot decrease</li>
 <li>The policy will not expire due to age or health condition</li>
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>There are two types of burial insurance or funeral insurance for seniors:</p>
 
-<p><strong>Simplified issue life insurance (Level benefit)</strong> – the <a href="/final-expense-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> is simplified compared to traditional life insurance for seniors that requires a medical exam. Simplified issue policies ask basic health questions to better look at your overall health.</p>
+<p><strong>Simplified issue life insurance (Level benefit)</strong> – the <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> is simplified compared to traditional life insurance for seniors that requires a medical exam. Simplified issue policies ask basic health questions to better look at your overall health.</p>
 
 <p>Potential questions life insurance companies would ask:</p>
 
@@ -96,7 +96,7 @@ sidebar: true
 
 <p>If you are asking yourself is it worth getting funeral insurance? Here are the advantages of funeral insurance for seniors.</p>
 
-<p><a href="/burial-insurance-with-no-exam/" target="_blank" rel="noreferrer noopener"><strong>No medical exam</strong></a>&#160; – Funeral insurance for seniors does not require you to undergo a medical exam. These policies can be completed on a simplified basis. You only have to answer some health questions, and the guaranteed issue policy doesn’t even have any health questions.</p>
+<p><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener"><strong>No medical exam</strong></a>&#160; – Funeral insurance for seniors does not require you to undergo a medical exam. These policies can be completed on a simplified basis. You only have to answer some health questions, and the guaranteed issue policy doesn’t even have any health questions.</p>
 
 <p><strong>No health questions policies available</strong> – if you have health issues and don’t want a medical exam and questions asked, there is a funeral insurance option for you – it is called a guaranteed issue policy. Everyone is guaranteed to be approved regardless of health issues. The only drawback is the price and the two-year waiting period.</p>
 
@@ -114,7 +114,7 @@ sidebar: true
 
 <p><strong>Portable</strong> – senior final expense life insurance plan is not “locked-in” with any funeral parlor. The insurance company pays in cash, and your beneficiary will receive a tax-free check equivalent to your policy’s face amount; your loved ones have the flexibility to have your funeral service wherever they choose.</p>
 
-<p><strong>Many carriers to choose from</strong> – there are many insurance companies offering <a href="/finding-cheap-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
+<p><strong>Many carriers to choose from</strong> – there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
 
 <h2 id="what-does-funeral-insurance-cover"><strong>What Does Funeral Insurance Cover?</strong></h2>
 
@@ -141,7 +141,7 @@ sidebar: true
 
 <h2 id="cost-of-funeral-insurance"><strong>Cost Of Funeral Insurance For Seniors</strong></h2>
 
-<p>The <a href="/how-much-does-burial-insurance-cost/" target="_blank" rel="noreferrer noopener">cost of funeral insurance</a> for seniors will ultimately depend on the type of policy you choose, either a simplified issue or guaranteed issue.</p>
+<p>The <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">cost of funeral insurance</a> for seniors will ultimately depend on the type of policy you choose, either a simplified issue or guaranteed issue.</p>
 
 <p>The face amount, the insurance provider, gender, age, and health condition during the applications all work together to determine your monthly or annual premium.</p>
 
@@ -171,7 +171,7 @@ sidebar: true
 
 <p>Face Amount Options: $2,500 – $25,000</p>
 
-<p><a href="/trinity-life-burial-insurance-review-pros-cons/" target="_blank" rel="noreferrer noopener">Trinity Life Insurance&#160;Company </a>offers their Golden Eagle final expense plan with first-day coverage for people 50-85 years old.</p>
+<p><a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life Insurance&#160;Company </a>offers their Golden Eagle final expense plan with first-day coverage for people 50-85 years old.</p>
 
 <p>They have has flexible underwriting, and most health conditions qualify for first-day coverage. They also have an easy same-day application and phone approval process (Trinity Life &amp; Family Benefit Life use the same application questions).<br></p>
 
@@ -235,7 +235,7 @@ sidebar: true
 
 <p>Face amount options: $5,000 – $25,000</p>
 
-<p><a href="/gerber-guaranteed-issue-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> only offers a guaranteed issue whole-life policy designed for people with health issues who want to secure affordable insurance coverage. Gerber offers some of the most affordable prices for guaranteed issue life insurance. The plan has a two-year graded benefit, but if the insured dies from accidental death, the full face amount will be paid even during the waiting period.</p>
+<p><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> only offers a guaranteed issue whole-life policy designed for people with health issues who want to secure affordable insurance coverage. Gerber offers some of the most affordable prices for guaranteed issue life insurance. The plan has a two-year graded benefit, but if the insured dies from accidental death, the full face amount will be paid even during the waiting period.</p>
 
 <p><br><strong>Assurity (A – Excellent)</strong></p>
 
