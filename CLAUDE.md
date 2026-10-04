@@ -30,7 +30,9 @@ is in place; see src/content/README.md for how pages were migrated.
   Forms health quizzes, the recruiting/job-application pages, the /book/
   booking links, and the old term-life quote pages with their quoters
   (Quoteplicity, NinjaQuoter). A new term-life quote experience will be built
-  from scratch later; the old pages must not influence it.
+  from scratch later; the old pages must not influence it. Also the Agent CRM
+  do-not-contact/suppression workflow (/do-not-sell/ — it was never a consumer
+  privacy opt-out page): its footer link is removed and the URL returns 404.
 - **Ninja Forms is retired**, along with its integrations (including the old
   Agent CRM workflows). Never preserve or rebuild Ninja Forms functionality.
   But don't delete a page just because it once held a Ninja Form: judge the
@@ -39,7 +41,8 @@ is in place; see src/content/README.md for how pages were migrated.
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
   redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
-  /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/.
+  /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
+  /do-not-sell/ (never rebuilt in the new site).
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals

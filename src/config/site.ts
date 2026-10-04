@@ -81,7 +81,7 @@ export const site: SiteConfig = {
       '<p><strong>Mailing Address</strong><br>PO Box 270179<br>Flower Mound, TX 75027<br> (Dallas, TX Area)</p>',
       '<p><strong>Office Hours</strong><br>Monday-Friday<br>9:00 AM-5:00 PM CTL</p>',
       '<p><strong>Phone</strong><br>(888) 862-9456</p>',
-      '<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a><br> <a href="/terms-of-use/" target="_blank" rel="noopener">Terms Of Use</a><br> <a href="/do-not-sell/" target="_blank" rel="noopener">Do Not Sell</a><br> <a href="/licenses/" target="_blank" rel="noopener">Licenses</a></p>',
+      '<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a><br> <a href="/terms-of-use/" target="_blank" rel="noopener">Terms Of Use</a><br> <a href="/licenses/" target="_blank" rel="noopener">Licenses</a></p>',
     ],
     social: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/company/funeral-funds/' },
