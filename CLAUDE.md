@@ -211,6 +211,36 @@ is in place; see src/content/README.md for how pages were migrated.
   /ptsd-burial-insurance/ → /burial-insurance/ptsd/
   /state-regulated-life-insurance/ → /burial-insurance/state-regulated-life-insurance/
   /top-10-final-expense-life-insurance-companies/ → /burial-insurance/top-10-final-expense-life-insurance-companies/
+- **Group C approved, NOT YET IMPLEMENTED** (Randy, October 2026): all 26 old
+  URLs that WordPress records as former slugs (_wp_old_slug) of currently
+  published posts → 301 to that post's current URL (all return 200; no chains
+  with Groups A or the live redirects). Approved mappings:
+  /best-term-life-insurance/ → /term-life-insurance-guide-everyone/
+  /burial-insurance-after-a-tia-or-transient-ischemic-attack/ → /burial-insurance/stroke-tia/
+  /burial-insurance-amputation/ → /burial-insurance/diabetic-amputation/
+  /burial-insurance-angioplasty-2/ → /burial-insurance/heart-surgery/
+  /burial-insurance-diabetes-diabetic-complications-2/ → /burial-insurance-diabetic-complications/
+  /burial-insurance-diabetes-diabetic-complications/ → /burial-insurance-diabetic-complications/
+  /burial-insurance-heart-stent/ → /burial-insurance/stent/
+  /burial-insurance-kidney-disease-kidney-failure/ → /burial-insurance-kidney-failure/
+  /burial-insurance-medicaid/ → /final-expense-life-insurance-medicaid/
+  /burial-insurance-nephropathy/ → /burial-insurance/diabetic-nephropathy/
+  /burial-insurance-pacemaker/ → /burial-insurance/pacemaker/
+  /burial-insurance-with-sleep-apnea/ → /burial-insurance/sleep-apnea/
+  /cheap-burial-insurance-2/ → /finding-affordable-burial-insurance/
+  /complete-guide-to-burial-insurance-and-final-expense/ → /final-expense-life-insurance-complete-guide/
+  /final-expense-life-insurance-heart-stent/ → /burial-insurance/stent/
+  /finding-cheap-burial-insurance/ → /finding-affordable-burial-insurance/
+  /how-much-does-a-funeral-cost-in-2022/ → /how-much-does-a-funeral-cost/
+  /how-much-does-burial-insurance-cost/ → /how-much-does-final-expense-insurance-cost/
+  /life-insurance-diabetic-neuropathy/ → /burial-insurance/diabetic-neuropathy/
+  /life-insurance-medicaid/ → /final-expense-life-insurance-medicaid/
+  /life-insurance-over-80/ → /final-expense-life-insurance-over-80/
+  /lions-club-member-life-insurance-options/ → /lions-club-member-life-insurance/
+  /long-term-care-insurance/ → /long-term-care-insurance-guide/
+  /primerica-life-insurance-review-bad-deal/ → /primerica-life-insurance-review/
+  /primerica-life-insurance-review-protected-or-neglected/ → /primerica-life-insurance-review/
+  /term-life-insurance-for-doctors/ → /term-life-insurance-doctors/
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
