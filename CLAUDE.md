@@ -44,6 +44,13 @@ is in place; see src/content/README.md for how pages were migrated.
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site).
 - Redirects must be approved by Randy before they're added to vercel.json.
+  Old URLs decided as 404 with no redirect: /book/, the two
+  /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
+  /best-whole-life-insurance-plans/ (draft not restored; also no redirect for
+  its -old slug). Don't redirect these without Randy's approval.
+- Broken internal links awaiting the link cleanup (don't change until Randy
+  decides each): the 14 "whole life" links to /best-whole-life-insurance-plans/
+  and the "Neuropathy" link on /a-z-health/.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
