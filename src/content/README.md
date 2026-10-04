@@ -30,7 +30,7 @@ pop-ups, quoters, Google Forms and booking widget with one Fillout form:
 
 - `sidebar: true` in frontmatter shows the quote sidebar (302 pages).
 - `<div data-quote-form></div>` on its own line places the form inside the
-  page body (11 pages, e.g. /free-quote/). Never use both on one page.
+  page body (10 pages, e.g. /free-quote/). Never use both on one page.
 - `<p class="quote-cta"><a class="button-link" href="#quote">…</a></p>`:
   quote buttons restored on 9 review pages; they open the page's form.
 - Every FEXGuy phone link is `tel:8888629456`. Insurance companies' numbers

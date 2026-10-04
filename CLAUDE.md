@@ -32,7 +32,7 @@ is in place; see src/content/README.md for how pages were migrated.
   stays, replace the old form appropriately (with Randy's approval).
 - Removed URLs return a real 404 (no redirect) unless Randy approves a
   redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
-  /leave-a-review/.
+  /leave-a-review/, /quiz/.
 - Redirects must be approved by Randy before they're added to vercel.json.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
@@ -57,7 +57,7 @@ is in place; see src/content/README.md for how pages were migrated.
   mobile call button (`src/components/lead/`). No pop-ups.
 - **Unresolved form pages — don't change or remove without Randy's decision,
   and don't assume the Fillout quote form is the right replacement:**
-  /quiz/, /video-info-quiz-2/ (old health-quiz forms), /easy-whole-life/,
+  /video-info-quiz-2/ (old health-quiz form), /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/ (old Google Forms, purpose unknown).
 
 ## Where things go
