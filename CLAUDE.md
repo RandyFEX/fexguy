@@ -400,12 +400,24 @@ is in place; see src/content/README.md for how pages were migrated.
   that T2 sells/issues insurance or that the premiums are T2 rates, claims
   about government affiliation (or its appearance), and regulatory/legal
   claims needing verification or sourcing.
-- **Pre-launch content review (migration fidelity)**: these pages show
-  substantially less text than their WordPress-export versions (the new pages
-  were built from what the live pages display). Don't restore or change them
-  until reviewed with Randy: /final-expense-life-insurance-pre-existing-conditions/
-  (about 56% of the export text), /trinity-life-insurance-review/ (about 78%),
-  /colonial-penn-burial-insurance-review/ (about 82%).
+- **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
+  once flagged as showing much less text than their WordPress-export versions
+  were each verified against their published WordPress export item, and no
+  substantive article restoration is required. The earlier figures were
+  measurement errors: the comparison counted WordPress inline CSS, chart
+  script and chart markup as article text. Leave the pages as they are:
+  /final-expense-life-insurance-pre-existing-conditions/ (item 64174; "about
+  56%"; every paragraph and all 27 condition tables preserved essentially
+  100%), /trinity-life-insurance-review/ (item 63982; "about 78%"; all 24
+  sections and the 12-question FAQ preserved 100%) and
+  /colonial-penn-burial-insurance-review/ (item 64129; "about 82%"; all 10
+  sections, the unit-value table, the case stories and the 8-question FAQ
+  preserved essentially 100%). On all three only the empty "Funeral Cost
+  Percentage Breakdown" chart and its heading were retired (and on Colonial
+  Penn the two lost image files, removed earlier). Never incorporate the
+  unpublished drafts 62623 (Trinity "2026 Guide"), 62639 (Colonial Penn "2026
+  Guide") or 51683 (Colonial Penn whole life, 2022), or the old TablePress
+  pricing tables.
 - **Internal-link cleanup done** (Randy, October 2026): every internal link
   now points straight at its final 200 URL (no links through redirects, none
   to intentional 404s). Links to retired pages (whole-life plans, payable-on-
@@ -638,6 +650,36 @@ is in place; see src/content/README.md for how pages were migrated.
 - Review the former video locations (the 13 pages whose YouTube/Vimeo/Adilo
   embeds were removed in October 2026) and identify pages where new
   FEXGuy-branded videos would materially improve the page.
+- **Post-migration SEO/compliance review list** (existing wording carried
+  over verbatim from WordPress; don't change it until reviewed with Randy):
+  - /trinity-life-insurance-review/: the meta description (also
+    og:description and twitter:description), "Trinity Life Burial Insurance
+    Review guarantees you the best cremation, final expense, or life
+    insurance pricing - 99% discount rate!" ("guarantees you the best",
+    "99% discount rate").
+  - /colonial-penn-burial-insurance-review/:
+    - aggressive title/meta wording ("It's Really Bad"; "now the worst life
+      insurance plan senior citizens could ever buy") and scam wording (the
+      "IS COLONIAL PENN $9.95 A SCAM?" verdict section);
+    - the undated Colonial Penn unit-value/rate table ("According to Colonial
+      Penn's official rate chart…", ages 50–80);
+    - current A.M. Best, BBB and other carrier-rating claims (A (Excellent)
+      "which is average"; Mutual of Omaha and Aetna "A- or A+"; BBB A+);
+    - BBB/NAIC complaint claims, including the inconsistent "hundreds of
+      complaints" vs "thousands of reviews and complaints";
+    - the NAIC "complaint index higher than the industry average" claim;
+    - undated premium/rate examples ($41 vs about $79.60, $71, $179.10 for 18
+      units, "$60 to $120… even over $200");
+    - the 7% refund-interest statement;
+    - the "10-30% refund of premium interest rates" statement about other
+      companies;
+    - the absolute "Guaranteed-issue life insurance like Colonial Penn's
+      should never be an option";
+    - the Frank, Linda and "Accidental Coverage Wasn't the Plan" case
+      stories: confirm they are genuine client experiences or label them
+      appropriately;
+    - current "A-rated" / "top-rated carrier" claims (e.g. Trinity Life,
+      Family Benefit Life).
 
 ## Before committing
 
