@@ -446,10 +446,18 @@ is in place; see src/content/README.md for how pages were migrated.
   (12-step "Week" banners, 2021/2022 carrier application screenshots, the
   2018 AARP letter, the Funeral Funds brochure, the Free Funeral For Family
   image, an unidentified Colonial Penn image, and the 2023 kidney-failure
-  sample pricing with its intro sentence). The 39 remaining files (article
-  header/social images, six carrier logos on the top-10 page, Mutual of Omaha,
-  check-mark graphics, the state-regulated letter) wait for surgical recovery
-  from a WP Engine backup — don't restore the old uploads folder wholesale.
+  sample pricing with its intro sentence). Later batches restored the Mutual
+  of Omaha logo from the backup, reused 2026/01/Burial-Insurance-With-
+  Diabetes-Image.png on /final-expense-life-insurance-diabetics/, removed the
+  check-mark graphics, arthritis photo, Jonathan Lawson photo and all carrier
+  logos on the top-10 page, and replaced 26 lost header images with new
+  illustrations in public/images/articles/ (Randy-approved prompts; built by
+  scripts/optimize-article-images.mjs from the original PNGs, which are kept
+  outside the repo: <name>.jpg for the fallback and og/twitter/JSON-LD,
+  <name>-{800,1200,1600}.{avif,webp} for <picture>). The only missing image
+  left is the real 2026 state-regulated mailer on
+  /burial-insurance/state-regulated-life-insurance/ — never AI-generate it;
+  it needs a real (redacted) sample from Randy.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.

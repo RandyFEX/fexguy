@@ -26,7 +26,7 @@ sidebar: true
 
 <p>Complete my quote request form on this page to quickly avoid costly mistakes.</p>
 
-<figure><img decoding="async" loading="lazy" src="/wp-content/uploads/2025/12/Final-Expense-Insurance-Pillar.png" alt="Final Expense Insurance Whole Life Insurance"></figure>
+<figure><picture><source type="image/avif" srcset="/images/articles/final-expense-whole-life-insurance-complete-guide-800.avif 800w, /images/articles/final-expense-whole-life-insurance-complete-guide-1200.avif 1200w, /images/articles/final-expense-whole-life-insurance-complete-guide-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><source type="image/webp" srcset="/images/articles/final-expense-whole-life-insurance-complete-guide-800.webp 800w, /images/articles/final-expense-whole-life-insurance-complete-guide-1200.webp 1200w, /images/articles/final-expense-whole-life-insurance-complete-guide-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img decoding="async" loading="lazy" alt="Final Expense Insurance Whole Life Insurance" width="2048" height="1152" src="/images/articles/final-expense-whole-life-insurance-complete-guide.jpg"></picture></figure>
 
 <hr>
 
