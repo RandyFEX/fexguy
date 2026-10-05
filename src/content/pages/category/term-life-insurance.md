@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Term Life insurance</p>
+<h1>Term Life insurance</h1>
 
 <h2><a href="/term-life-insurance-truckers/">Term Life Insurance For Truckers</a></h2>
 

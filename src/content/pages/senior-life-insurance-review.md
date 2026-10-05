@@ -315,7 +315,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 <p><strong>This is where the Final Expense Guy helps:</strong></p>
 
 <ul>
-<li>Licensed in 50 states, and work with numerous top-rated carriers</li>
+<li>Licensed in most states, and work with numerous top-rated carriers</li>
 <li>Provides first-day coverage for most seniors to avoid a two-year wait before coverage begins</li>
 <li>Finds you lower monthly premiums for the same coverage or better policy recommendations</li>
 <li>Will explain all policy details in simple language and be there as your guide</li>

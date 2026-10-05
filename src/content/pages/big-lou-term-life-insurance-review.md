@@ -16,8 +16,6 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ZyIiJmyBUis?si=enNHsfSbCjUxB1ds" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 <hr>
 
 <h2><strong>HOW BIG LOU MAKES MONEY</strong></h2>

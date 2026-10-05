@@ -392,7 +392,7 @@ The Ownership Oversight
 
 <p>Even the treatment of small cash values from life insurance policies can differ by state, as outlined in policy manuals. When in doubt, a conversation with an experienced broker prevents costly assumptions.</p>
 
-<p>The Final Expense Guy helps families nationwide navigate these state differences and find coverage that complies with Medicaid guidelines from day one.</p>
+<p>The Final Expense Guy helps families across the country navigate these state differences and find coverage that complies with Medicaid guidelines from day one.</p>
 
 <hr>
 

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Lung Respiratory Conditions Final Expense Whole Life Insurance</p>
+<h1>Lung Respiratory Conditions Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/oxygen-use/">Burial Insurance For People on Oxygen</a></h2>
 

@@ -403,31 +403,31 @@ sidebar: true
 
 <p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e">You should be respectful and sensitive if you are announcing someone’s death on social media. You may want to share your memories of the person, offer condolences to their family and friends, or just express your sadness.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/finding-affordable-burial-insurance/">
-<h5>Key to Finding Affordable Burial Insurance</h5>
+<div><a href="/finding-affordable-burial-insurance/">
+<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h5>Life Insurance for HIV Positive [Use Caution]</h5>
+<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h5>How Much Does Final Expense Insurance Cost?</h5>
+<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h5>Funeral Plan Insurance Policies</h5>
+<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h5>Final Expense Whole Life Insurance Complete Guide</h5>
-</a></p>
+<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+</a></div>
 
-<h5>3 Comments</h5>
+<h2 class="as-h5">3 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-12947">
-<h6 class="comment-name">Taylor Hicken </h6>                                            
+<h3 class="comment-name as-h6">Taylor Hicken </h3>                                            
 <p>You made a good point when you shared that it is great to honor your loved ones by following their wishes regarding the kind of funeral they want. My friend just mentioned the other day that her uncle just passed away due to a terminal illness and everyone is grieving for his passing. Some burial life insurance would have really helped their family.</p>
 <div class="comment-meta">
 August 31, 2021 at 11:58 pm                    
@@ -435,7 +435,7 @@ August 31, 2021 at 11:58 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-12963">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Taylor – Sorry for your friends loss.</p>
 <div class="comment-meta">
 September 1, 2021 at 1:25 pm                    
@@ -443,7 +443,7 @@ September 1, 2021 at 1:25 pm
 </div>
 </div>
 <div class="comment" id="comment-13864">
-<h6 class="comment-name">Eli Richardson </h6>                                            
+<h3 class="comment-name as-h6">Eli Richardson </h3>                                            
 <p>I'm glad you talked about what steps to take after a loved one passed away. Recently, my wife and I started thinking about our funeral arrangements and decided it'd be better to start planning them now. We think it'd be smart to leave our funeral wishes written down and paid for, so we'll be sure to look into it. </p>
 <div class="comment-meta">
 October 15, 2021 at 3:13 pm                    

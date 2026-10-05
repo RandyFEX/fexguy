@@ -395,11 +395,11 @@ sidebar: true
 
 <p>However, many seniors report later that they did not realize what was covered and the fine print, and or they felt the cost exceeded their needs and expectations.</p>
 
-<h4><strong>COMPANY ADDRESS</strong></h4>
+<h3 class="as-h4"><strong>COMPANY ADDRESS</strong></h3>
 
 <p>1311 Mamaroneck Avenue<br>White Plains, NY 10605<br>Phone: (800) 704-2180<br>Customer Service: (800) 628-0560</p>
 
-<h4><strong>Contact Info</strong></h4>
+<h3 class="as-h4"><strong>Contact Info</strong></h3>
 
 <p>Email:&#160;<a href="mailto:info@gerberlife.com" target="_blank" rel="noreferrer noopener nofollow">info@gerberlife.com</a><br>Website:&#160;<a href="https://www.gerberlife.com/" target="_blank" rel="noreferrer noopener nofollow">https://www.gerberlife.com</a><br>Members Login:&#160;<a href="https://www.gerberlife.com/gl/view/service_center/self_service/login.jsp" target="_blank" rel="noreferrer noopener nofollow">eService</a></p>
 

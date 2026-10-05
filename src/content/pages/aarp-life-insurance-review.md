@@ -399,7 +399,7 @@ I reviewed her application history, confirmed her health answers qualified for s
 
 <p>Funeral expenses and inflation rates differ, too. The National Funeral Directors Association (NFDA) reports that the average funeral cost in 2024 was $8,300 nationwide, but exceeded $9,500 in states such as Massachusetts and New York.</p>
 
-<p>Understanding local rules helps you choose the right plan. An independent broker licensed in all states can compare policies side by side within your state’s limits.</p>
+<p>Understanding local rules helps you choose the right plan. An independent broker licensed in your state can compare policies side by side within your state’s limits.</p>
 
 <hr>
 
@@ -513,31 +513,31 @@ Assuming Permanent Meant Personal Ownership
 
 <hr>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h5>Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h5>
+<div><a href="/lincoln-heritage-funeral-advantage-review-old/">
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h5>TruStage Burial Insurance Review – Pros &amp; Cons</h5>
+<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h5>TruStage Price Increase</h5>
+<h3 class="as-h5">TruStage Price Increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h5>Lumico Burial Insurance Review – Pros &amp; Cons</h5>
+<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
-<h5>Colonial Penn Two Year Wait</h5>
-</a></p>
+<h3 class="as-h5">Colonial Penn Two Year Wait</h3>
+</a></div>
 
-<h5>3 Comments</h5>
+<h2 class="as-h5">3 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-7425">
-<h6 class="comment-name">Gracie Howard for Vivian Howard </h6>                                            
+<h3 class="comment-name as-h6">Gracie Howard for Vivian Howard </h3>                                            
 <p>Vivian is my Mother-In-Law. She’s 90 years old. No life insurance. We are interested in burial insurance only. Please contact me via email with rates etc as my son (POA) will be the principle. We look forward to receiving info today as we need to get this in place. Thank you.</p>
 <div class="comment-meta">
 December 1, 2020 at 11:39 am                    
@@ -545,7 +545,7 @@ December 1, 2020 at 11:39 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-7481">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Gracie – There are no insurance companies that offer insurance for someone who is 90 years old.</p>
 <div class="comment-meta">
 December 4, 2020 at 6:58 am                    
@@ -553,7 +553,7 @@ December 4, 2020 at 6:58 am
 </div>
 </div>
 <div class="comment" id="comment-35546">
-<h6 class="comment-name">Dave </h6>                                            
+<h3 class="comment-name as-h6">Dave </h3>                                            
 <p>Need burial insurance</p>
 <div class="comment-meta">
 December 29, 2023 at 11:25 am                    

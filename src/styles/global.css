@@ -17,7 +17,12 @@
   --color-primary: #1d4ed8;
   --color-primary-hover: #1e40af;
   --color-on-primary: #ffffff;
-  --color-focus: #f59e0b;
+  /* Focus ring: near-black outline with a white inner ring (box-shadow), so
+     the indicator keeps at least 3:1 contrast on light and dark/colored
+     backgrounds (WCAG 2.2 SC 1.4.11 / 2.4.7). The old amber (#f59e0b) was
+     only 2.2:1 on white. */
+  --color-focus: #1a1a1a;
+  --color-focus-inner: #ffffff;
   /* Phone links (the live site used orange #fe7301; darkened to pass WCAG
      contrast on white). */
   --color-accent: #c2410c;
@@ -115,6 +120,7 @@ a:hover {
 :focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-focus-inner);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -162,6 +168,39 @@ a:hover {
 
 .prose :where(h3) {
   margin-top: var(--space-6);
+}
+
+/* Heading-level fixes (WCAG 1.3.1): where a migrated heading's level was
+   raised to repair the outline (e.g. an h5 under an h2 became h3), the
+   as-hN class keeps the exact look of the original hN. */
+.as-h1 {
+  font-size: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
+  line-height: 1.2;
+  margin: 0 0 var(--space-4);
+}
+.as-h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: var(--space-6) 0 var(--space-4);
+}
+.as-h4 {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 var(--space-4);
+}
+.as-h5,
+.as-h6 {
+  line-height: inherit;
+  text-wrap: wrap;
+  font-weight: 700;
+}
+.as-h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+.as-h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
 }
 
 .prose :where(table) {
@@ -505,9 +544,13 @@ a:hover {
   text-decoration: none;
 }
 
-/* Keep the end of the page clear of the fixed button. */
+/* Keep the end of the page clear of the fixed button, and keep keyboard
+   focus from scrolling under it (WCAG 2.2 SC 2.4.11 Focus Not Obscured). */
 body {
-  padding-bottom: 3.5rem;
+  padding-bottom: var(--call-sticky-h, 3.5rem);
+}
+html {
+  scroll-padding-bottom: calc(var(--call-sticky-h, 3.5rem) + 1rem);
 }
 
 /* Mobile only, as on the live site. */
@@ -518,5 +561,8 @@ body {
   }
   body {
     padding-bottom: 0;
+  }
+  html {
+    scroll-padding-bottom: 0;
   }
 }

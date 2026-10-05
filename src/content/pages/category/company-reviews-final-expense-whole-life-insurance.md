@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Company Reviews Final Expense Whole Life Insurance</p>
+<h1>Company Reviews Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/5-reasons-you-should-be-worried-about-aarp-life-insurance/">5 Reasons You Should Be Worried About AARP Life Insurance</a></h2>
 

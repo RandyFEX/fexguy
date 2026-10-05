@@ -334,31 +334,31 @@ best value. Who do we recommend instead?</p>
 <li>A wide range of ages accepted (18-80)</li>
 </ul>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/aarp-life-insurance-review/">
-<h5>AARP Life Insurance Review – Is It Worth It?</h5>
+<div><a href="/aarp-life-insurance-review/">
+<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h5>Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h5>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h5>TruStage Burial Insurance Review – Pros &amp; Cons</h5>
+<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h5>TruStage Price Increase</h5>
+<h3 class="as-h5">TruStage Price Increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h5>Lumico Burial Insurance Review – Pros &amp; Cons</h5>
-</a></p>
+<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+</a></div>
 
-<h5>3 Comments</h5>
+<h2 class="as-h5">3 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-30511">
-<h6 class="comment-name">Brenda </h6>                                            
+<h3 class="comment-name as-h6">Brenda </h3>                                            
 <p>INFO REQUESTED ONLY.</p>
 <div class="comment-meta">
 June 8, 2023 at 11:42 am                    
@@ -366,7 +366,7 @@ June 8, 2023 at 11:42 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-32515">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Visit this page for quotes – <a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 September 14, 2023 at 8:08 am                    
@@ -374,7 +374,7 @@ September 14, 2023 at 8:08 am
 </div>
 </div>
 <div class="comment" id="comment-37276">
-<h6 class="comment-name">Dan </h6>                                            
+<h3 class="comment-name as-h6">Dan </h3>                                            
 <p>I was recently looking for life insurance for my mom. I filled out multiple quote forms from multiple companies. Of all the companies that contacted me colonial penn's sales representatives were the worst. They could not answer questions, some even outright ignored some of my questions.Nor did they stop calling me even after I told them to stop because i wasn't going to get insurance from them.</p>
 <div class="comment-meta">
 February 7, 2024 at 8:39 pm                    

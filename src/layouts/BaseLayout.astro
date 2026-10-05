@@ -37,6 +37,27 @@ const { layout = 'default', stickyCall = true, ...seo } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Lets CSS collapse the mobile menu before first paint (no layout shift). -->
     <script is:inline>document.documentElement.classList.add('js');</script>
+    <!-- Search-term privacy: site search terms (?q= / the old WordPress ?s=)
+      can contain names or health conditions. Before any tracking code runs,
+      remove them from the address bar so GA4 and the Meta Pixel (which read
+      the page URL, and on the next page the referrer) never receive them. On
+      /search/ the term moves into history.state, where src/scripts/search.ts
+      reads it (it survives reload and back/forward). Other parameters (utm_*,
+      gclid, fbclid…) are kept. -->
+    <script is:inline>
+      (function () {
+        try {
+          var u = new URL(location.href), p = u.searchParams;
+          if (!p.has('q') && !p.has('s')) return;
+          var term = p.has('q') ? p.get('q') : p.get('s');
+          p.delete('q');
+          p.delete('s');
+          var qs = p.toString();
+          var state = u.pathname === '/search/' ? { searchQuery: term } : history.state;
+          history.replaceState(state, '', u.pathname + (qs ? '?' + qs : '') + u.hash);
+        } catch (e) {}
+      })();
+    </script>
     {site.icons.map((icon) => <link rel={icon.rel} href={icon.href} sizes={icon.sizes} />)}
     <Seo {...seo} />
     <slot name="head" />
@@ -54,6 +75,10 @@ const { layout = 'default', stickyCall = true, ...seo } = Astro.props;
     <script>
       import '@/scripts/tracking';
       import '@/scripts/quote-form';
+    </script>
+    <script>
+      import '@/scripts/scroll-tables';
+      import '@/scripts/sticky-call';
     </script>
   </body>
 </html>

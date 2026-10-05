@@ -144,10 +144,6 @@ You can see where your health fits before you apply.
 
 <p>The healthier you are, the easier it is to land first-day coverage at the lowest available rates, so your best time to check out these plans is always sooner rather than later.</p>
 
-<h3>Funeral Cost Percentage Breakdown</h3>
-
-<p><canvas></canvas></p>
-
 <p><strong>AVOID GUARANTEED ISSUE PLANS WITH NO HEALTH QUESTIONS + 2-YEAR WAIT</strong></p>
 
 <p>These are the plans you want to avoid if at all possible. Guaranteed issue plans skip all health and medical questions. If you can pay the premium and meet the age requirements, you can get approved.</p>

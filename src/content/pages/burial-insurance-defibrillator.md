@@ -262,22 +262,22 @@ sidebar: true
 
 <p>Several factors might mess with your life insurance eligibility if you have a defibrillator. These include a recent heart attack or stroke, using blood thinners, and how long it’s been since your defibrillator was implanted.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/burial-insurance/stent/">
-<h5>Final Expense Insurance With A  Stent</h5>
+<div><a href="/burial-insurance/stent/">
+<h3 class="as-h5">Final Expense Insurance With A  Stent</h3>
 </a>  <a href="/burial-insurance/congestive-heart-failure/">
-<h5>Final Expense Life Insurance For Congestive Heart Failure</h5>
+<h3 class="as-h5">Final Expense Life Insurance For Congestive Heart Failure</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h5>Burial Insurance After Angioplasty</h5>
+<h3 class="as-h5">Burial Insurance After Angioplasty</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h5>Burial Insurance After Heart Valve Surgery</h5>
+<h3 class="as-h5">Burial Insurance After Heart Valve Surgery</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h5>Burial Insurance with Circulatory Surgery</h5>
-</a></p>
+<h3 class="as-h5">Burial Insurance with Circulatory Surgery</h3>
+</a></div>

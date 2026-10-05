@@ -33,7 +33,7 @@ search: true
 <li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content – Selecting Bible Verses For Your Funeral</a></strong></li>
 </ul>
 
-<h3 id="Week-1-–-Organ-And-Tissue-Donation"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h3>
+<h2 id="Week-1-–-Organ-And-Tissue-Donation" class="as-h3"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h2>
 
 <p>Thinking about organ, tissue, or whole-body donation should be part of your funeral planning. Donation is a great way to help others and advance science. Whole-body donation is an excellent way to avoid the cost of funerals and burial.</p>
 
@@ -47,7 +47,7 @@ search: true
 
 <div class="button-link"><a href="/burial-insurance/donating-your-body-to-science/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 1 ARTICLE</a></div>
 
-<h3 id="Week-2-–-Choosing-Your-Method-Of-Disposition"><strong><strong>STEP </strong>2 – CHOOSING YOUR METHOD OF DISPOSITION</strong></h3>
+<h2 id="Week-2-–-Choosing-Your-Method-Of-Disposition" class="as-h3"><strong><strong>STEP </strong>2 – CHOOSING YOUR METHOD OF DISPOSITION</strong></h2>
 
 <p>Determine if you want to be buried or cremated. Choosing the best option should be made before you pass away so that your loved ones will know your final wishes.</p>
 
@@ -92,7 +92,7 @@ search: true
 
 <div class="button-link"><a href="/burial-vs-cremation/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 2 ARTICLE</a></div>
 
-<h3 id="Week-3-–-Choosing-A-Casket-Or-Urn"><strong><strong>STEP </strong>3 – CHOOSING A CASKET OR URN</strong></h3>
+<h2 id="Week-3-–-Choosing-A-Casket-Or-Urn" class="as-h3"><strong><strong>STEP </strong>3 – CHOOSING A CASKET OR URN</strong></h2>
 
 <p>After determining your method of disposition, you can now choose if you want a casket or an urn.</p>
 
@@ -160,7 +160,7 @@ search: true
 <p>Step 5 – Choose the type of urn you want and write it in your funeral planning guide.</p>
 
 
-<h3 id="Week-4-–-Choosing-A-Funeral-Home"><strong><strong>STEP </strong>4 – CHOOSING A FUNERAL HOME</strong></h3>
+<h2 id="Week-4-–-Choosing-A-Funeral-Home" class="as-h3"><strong><strong>STEP </strong>4 – CHOOSING A FUNERAL HOME</strong></h2>
 
 <p>Determine what type of funeral services and goods you need to let your family know your preferences.</p>
 
@@ -224,7 +224,7 @@ search: true
 <p>10. Provides education and community programs</p>
 
 
-<h3 id="Week-5-–-Writing-An-Obituary"><strong><strong>STEP </strong>5 – WRITING AN OBITUARY</strong></h3>
+<h2 id="Week-5-–-Writing-An-Obituary" class="as-h3"><strong><strong>STEP </strong>5 – WRITING AN OBITUARY</strong></h2>
 
 <p>Before you draft your obituary, check your local newspaper and note the format to know what to include. Obituaries are no longer restricted to newspapers. It can also be published on memorial sites and social media.</p>
 
@@ -277,7 +277,7 @@ search: true
 <p>The reason for not including this information is that identity thieves can be a real problem. Some unscrupulous people may try to use your loved one’s identity to access bank accounts and personal credit.</p>
 
 
-<h3 id="Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot"><strong><strong>STEP </strong>6 – CHOOSING A CEMETERY OR BURIAL PLOT</strong></h3>
+<h2 id="Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot" class="as-h3"><strong><strong>STEP </strong>6 – CHOOSING A CEMETERY OR BURIAL PLOT</strong></h2>
 
 <p>Reserving a burial plot or buying a plot in advance can be cheaper than buying a plot at the last minute.</p>
 
@@ -292,7 +292,7 @@ search: true
 <p>3. Check what you are paying for. Some sellers only sell the rights to the plot, and you need to pay for an in-ground crypt which may incur additional costs and fees.</p>
 
 
-<h3 id="Week-7-–-Choosing-A-Headstone"><strong><strong>STEP </strong>7 – CHOOSING A HEADSTONE</strong></h3>
+<h2 id="Week-7-–-Choosing-A-Headstone" class="as-h3"><strong><strong>STEP </strong>7 – CHOOSING A HEADSTONE</strong></h2>
 
 <p>Choosing a headstone is one important aspect if you want to be buried. Your headstone is one way of memorializing your life after you are gone.</p>
 
@@ -321,7 +321,7 @@ search: true
 <p>Step 10 – Write your draft</p>
 
 
-<h3 id="Week-8-–-Choosing-Funeral-Flowers"><strong><strong>STEP </strong>8 – CHOOSING FUNERAL FLOWERS</strong></h3>
+<h2 id="Week-8-–-Choosing-Funeral-Flowers" class="as-h3"><strong><strong>STEP </strong>8 – CHOOSING FUNERAL FLOWERS</strong></h2>
 
 <p>You can choose your funeral flowers or opt to donate to a charity instead of flowers. Write your choice in your funeral planning guide.</p>
 
@@ -344,7 +344,7 @@ search: true
 <p>Write the charity or foundation you want and the details if you opt for a donation in lieu of flowers.</p>
 
 
-<h3 id="Week-9-–-Selecting-The-Funeral-Service"><strong><strong>STEP </strong>9 – <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h3>
+<h2 id="Week-9-–-Selecting-The-Funeral-Service" class="as-h3"><strong><strong>STEP </strong>9 – <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h2>
 
 <p>A funeral service can be a valuable part of the grieving process for your loved ones. Choose the type of funeral service you want.</p>
 
@@ -366,7 +366,7 @@ search: true
 <p>A funeral service program can feature some songs, a short biography, and your favorite quotes. It will serve as a fitting tribute to your life. After the service, your loved ones can have the time to socialize and enjoy a refreshment while offering support to one another.</p>
 
 
-<h3 id="Week-10-–-Preventing-Identity-Theft"><strong><strong>STEP </strong>10 </strong>– <strong>PREVENTING IDENTITY THEFT</strong></h3>
+<h2 id="Week-10-–-Preventing-Identity-Theft" class="as-h3"><strong><strong>STEP </strong>10 </strong>– <strong>PREVENTING IDENTITY THEFT</strong></h2>
 
 <p>Preventing identity theft after your death must also be included in your funeral planning guide.</p>
 
@@ -421,7 +421,7 @@ search: true
 <p>11. Don’t share personal information</p>
 
 
-<h3 id="Week-11-–-Proper-Medication-Disposal"><strong><strong>STEP </strong>11 – PROPER MEDICATION DISPOSAL</strong></h3>
+<h2 id="Week-11-–-Proper-Medication-Disposal" class="as-h3"><strong><strong>STEP </strong>11 – PROPER MEDICATION DISPOSAL</strong></h2>
 
 <p>Remind your family to dispose of your medication after you are gone. This is necessary if there are small children in the home. Exposure to dangerous medicine is a major cause of unintentional poisoning in children.</p>
 
@@ -459,7 +459,7 @@ search: true
 </ul>
 
 
-<h3 id="Week-12-–-Liquidating-Assets-After-Your-Death"><strong><strong>STEP </strong>12 – LIQUIDATING ASSETS AFTER YOUR DEATH</strong></h3>
+<h2 id="Week-12-–-Liquidating-Assets-After-Your-Death" class="as-h3"><strong><strong>STEP </strong>12 – LIQUIDATING ASSETS AFTER YOUR DEATH</strong></h2>
 
 <p>Liquidating assets after your death can be a problem with your beneficiaries. It is important to leave instructions on your funeral planning guide on how you want your assets to be distributed to your beneficiaries to avoid this issue.</p>
 

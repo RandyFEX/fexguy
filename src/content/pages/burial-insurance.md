@@ -404,7 +404,7 @@ sidebar: true
 
 <p>A final expense burial insurance policy is only effective if the money goes to the right person. Correctly naming your beneficiaries ensures that the tax-free payout bypasses the long, expensive probate process and reaches your family when they need it most.</p>
 
-<h4><strong>Naming Primary and Contingent Beneficiaries</strong></h4>
+<h3 class="as-h4"><strong>Naming Primary and Contingent Beneficiaries</strong></h3>
 
 <p>You must list both a primary and a secondary (contingent) beneficiary on your policy.</p>
 
@@ -413,7 +413,7 @@ sidebar: true
 <li><strong>Contingent Beneficiary:</strong> This person acts as a backup. If your primary beneficiary predeceases you, the contingent beneficiary receives the funds. Without a living person listed on the contract, the funds may be paid to your “estate,” which often delays legal proceedings and gives creditors an opportunity to claim the funds.</li>
 </ul>
 
-<h4><strong>The Danger of Using General Terms</strong></h4>
+<h3 class="as-h4"><strong>The Danger of Using General Terms</strong></h3>
 
 <p>Some families name their children jointly or use general terms like “my children.” This is a mistake that can cause significant disputes and probate delays.</p>
 
@@ -421,7 +421,7 @@ sidebar: true
 <li><strong>Be Specific:</strong> You must list each person by their full legal name and sometimes birthday and other information.</li>
 </ul>
 
-<h4><strong>Preparing Your Family for the Claims Process</strong></h4>
+<h3 class="as-h4"><strong>Preparing Your Family for the Claims Process</strong></h3>
 
 <p>Beneficiaries should know exactly where the physical policy is stored, which company issued it, and the policy number.</p>
 
@@ -430,7 +430,7 @@ sidebar: true
 <li><strong>Quick Contact:</strong> Provide your family with your agent’s contact information so they have a professional to guide them through the paperwork during an emotional time.</li>
 </ul>
 
-<h4><strong>Avoid Naming Minors as Direct Beneficiaries</strong></h4>
+<h3 class="as-h4"><strong>Avoid Naming Minors as Direct Beneficiaries</strong></h3>
 
 <p>Families should avoid naming a minor as a direct beneficiary because insurance companies cannot legally pay large sums of money to a child.</p>
 
@@ -439,7 +439,7 @@ sidebar: true
 <li><strong>The Solution:</strong> Naming a trusted adult as a custodian under the Uniform Transfers to Minors Act (UTMA) or establishing a simple trust makes the funds available immediately for the child’s care.</li>
 </ul>
 
-<h4><strong>Review Your Designations Regularly</strong></h4>
+<h3 class="as-h4"><strong>Review Your Designations Regularly</strong></h3>
 
 <p>Life changes such as marriages, divorces, or new births can make an old beneficiary list outdated. Since insurance companies pay according to the names on the contract—regardless of what your Will says—regular updates are the only way to ensure your wishes are carried out.</p>
 
@@ -449,7 +449,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance is often considered a last resort, but for many, it is the only practical and responsible choice. It is specifically designed for applicants whose health history prevents them from qualifying for traditional or simplified-issue policies. Because these plans have no health questions and no medical review, they provide guaranteed approval to everyone in the eligible age range, typically ages 45 to 85.</p>
 
-<h4><strong>The Tradeoff: The Waiting Period</strong></h4>
+<h3 class="as-h4"><strong>The Tradeoff: The Waiting Period</strong></h3>
 
 <p>The primary compromise with guaranteed issue insurance is the waiting period, which almost always lasts 24 months.</p>
 
@@ -459,7 +459,7 @@ sidebar: true
 <li><strong>Full Payout:</strong> Once you reach the 25th month of the policy, you are fully covered for any cause of death, regardless of your health at that time.</li>
 </ul>
 
-<h4><strong>When Guaranteed Issue Becomes the Right Choice</strong></h4>
+<h3 class="as-h4"><strong>When Guaranteed Issue Becomes the Right Choice</strong></h3>
 
 <p>Guaranteed issue is the correct path when a person has recent or severe medical events that would trigger an automatic decline from other carriers. Common scenarios where this plan is the best option include:</p>
 
@@ -471,11 +471,11 @@ sidebar: true
 <li><strong>Neurological Conditions:</strong> Advanced stages of Alzheimer’s, dementia, or ALS (Lou Gehrig’s disease).</li>
 </ul>
 
-<h4><strong>Preserving Dignity and Financial Security</strong></h4>
+<h3 class="as-h4"><strong>Preserving Dignity and Financial Security</strong></h3>
 
 <p>For someone who cannot qualify for first-day coverage, guaranteed issue prevents the family from being left with zero protection. While it is not the ideal plan, it makes sure that your premiums are working for you by earning interest rather than sitting in a standard savings account. It preserves dignity by guaranteeing that, at the very least, your family will receive a return of your investment to help with final arrangements.</p>
 
-<h4><strong>The Importance of Professional Guidance</strong></h4>
+<h3 class="as-h4"><strong>The Importance of Professional Guidance</strong></h3>
 
 <p>A knowledgeable agent like the Final Expense Guy can help you determine whether you truly need a guaranteed-issue plan or if a simplified-issue carrier might offer immediate coverage. Good planning guarantees you don’t settle for a waiting period if a better option is available, and it also provides a safety net when no other options exist.</p>
 
@@ -485,7 +485,7 @@ sidebar: true
 
 <p>Many adult children choose to purchase final expense burial insurance for their parents to ensure end-of-life costs do not create a sudden financial crisis. Handling coverage early helps avoid family disagreements, rushed decisions, and unexpected debt during a time of grief.</p>
 
-<h4><strong>Maintaining Control and Stability</strong></h4>
+<h3 class="as-h4"><strong>Maintaining Control and Stability</strong></h3>
 
 <p>Buying coverage for a parent gives adult children control over the planning process. By taking the lead, you can make sure the benefit amount is sufficient to cover current funeral costs and select a company with strong financial ratings.</p>
 
@@ -494,7 +494,7 @@ sidebar: true
 <li><strong>Avoiding Family Conflict:</strong> Having a dedicated policy prevents siblings from having to negotiate who pays for what when the time comes. The insurance payout provides a clear, immediate source of funding.</li>
 </ul>
 
-<h4><strong>Understanding Ownership and Consent</strong></h4>
+<h3 class="as-h4"><strong>Understanding Ownership and Consent</strong></h3>
 
 <p>The policy structure is a critical detail. While you can pay the premiums, the legal roles must be clearly defined:</p>
 
@@ -504,11 +504,11 @@ sidebar: true
 <li><strong>The Beneficiary:</strong> Naming yourself as the beneficiary ensures the funds are paid directly to you, allowing you to pay the funeral home or settle medical bills immediately.</li>
 </ul>
 
-<h4><strong>The Requirement of Insurable Interest</strong></h4>
+<h3 class="as-h4"><strong>The Requirement of Insurable Interest</strong></h3>
 
 <p>To purchase a policy on your parent, you must demonstrate “insurable interest.” This is a legal requirement showing that you would suffer a financial setback upon their death. Because children are typically responsible for their parents’ final arrangements or for their parents’ remaining debts, insurance companies recognize this as a valid insurable interest.</p>
 
-<h4><strong>Simplified Qualification for Seniors</strong></h4>
+<h3 class="as-h4"><strong>Simplified Qualification for Seniors</strong></h3>
 
 <p>The main reasons final expense burial insurance is the preferred choice for parents is its simplified underwriting.</p>
 

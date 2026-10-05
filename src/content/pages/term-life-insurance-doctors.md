@@ -1055,18 +1055,18 @@ sidebar: true
 
 <p>A doctor may be able to sell a term policy through a life settlement if the contract meets specific eligibility requirements, such as convertibility, remaining term length, and buyer demand. Term policies without conversion options rarely qualify because buyers want contracts they can convert into permanent coverage. Even when eligible, selling requires verifying financial need, current health status, and the policy structure. Doctors should evaluate tax implications and how a sale affects long-term planning before making a decision. The Final Expense Guy can help determine whether selling or converting creates better value.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/primerica-life-insurance-review/">
-<h5>Primerica Life Insurance Review: Costly &amp; Avoidable?</h5>
+<div><a href="/primerica-life-insurance-review/">
+<h3 class="as-h5">Primerica Life Insurance Review: Costly &amp; Avoidable?</h3>
 </a>  <a href="/term-life-insurance-guide-everyone/">
-<h5>Term Life Insurance Guide For Everyone</h5>
+<h3 class="as-h5">Term Life Insurance Guide For Everyone</h3>
 </a>  <a href="/term-life-insurance-truckers/">
-<h5>Term Life Insurance For Truckers</h5>
-</a></p>
+<h3 class="as-h5">Term Life Insurance For Truckers</h3>
+</a></div>

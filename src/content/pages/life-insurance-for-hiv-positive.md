@@ -352,31 +352,31 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at&#160;<strong>(888) 862-9456,</strong>&#160;and we can give you an accurate&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/finding-affordable-burial-insurance/">
-<h5>Key to Finding Affordable Burial Insurance</h5>
+<div><a href="/finding-affordable-burial-insurance/">
+<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h5>How Much Does Final Expense Insurance Cost?</h5>
+<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h5>Funeral Plan Insurance Policies</h5>
+<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h5>Final Expense Whole Life Insurance Complete Guide</h5>
+<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
 </a>  <a href="/what-to-do-when-a-loved-one-dies/">
-<h5>What to Do When a Loved One Dies</h5>
-</a></p>
+<h3 class="as-h5">What to Do When a Loved One Dies</h3>
+</a></div>
 
-<h5>2 Comments</h5>
+<h2 class="as-h5">2 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-6">
-<h6 class="comment-name">Jonathan P </h6>                                            
+<h3 class="comment-name as-h6">Jonathan P </h3>                                            
 <p>My husband has had HIV for 7 years. His condition is stable with his current medications. He is 53 years old. Can he get life insurance through you guys?</p>
 <div class="comment-meta">
 May 5, 2018 at 12:36 pm                    
@@ -384,7 +384,7 @@ May 5, 2018 at 12:36 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-7">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Jonathan,</p>
 <p>We do have some options for your husband. We would need to know a little bit more about his specific situation to best help you two out. Give us a call and we will help you understand your options.</p>
 <p>Final Expense Guy</p>

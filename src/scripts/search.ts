@@ -1,6 +1,12 @@
-// Client side of /search/: reads ?q= (or the old WordPress ?s=), queries the
-// Pagefind index built by `npm run build`, and renders results 10 at a time.
-// Loaded only on /search/; every other page just has a plain HTML form.
+// Client side of /search/: reads the search term, queries the Pagefind index
+// built by `npm run build`, and renders results 10 at a time. Loaded only on
+// /search/; every other page just has a plain HTML form.
+//
+// Search terms arrive as ?q= (or the old WordPress ?s=), but an inline script
+// in BaseLayout moves them out of the address bar into history.state before
+// any tracking runs, so GA4 and the Meta Pixel never see them (they can be
+// names or health conditions). Never put the term back into the URL, the page
+// title or anything sent to a third party.
 
 interface PagefindResultData {
   url: string;
@@ -38,20 +44,18 @@ export async function initSearch(): Promise<void> {
   const more = $<HTMLButtonElement>('search-more');
   const none = $<HTMLDivElement>('search-none');
 
+  const saved = (history.state as { searchQuery?: unknown } | null)?.searchQuery;
+  // Fallback (the BaseLayout script didn't run): read the URL directly.
   const params = new URLSearchParams(location.search);
-  const query = (params.get('q') ?? params.get('s') ?? '').trim();
-
-  // Old ?s= links: keep the query in the URL under the canonical ?q= name.
-  if (!params.has('q') && params.has('s')) {
-    history.replaceState(null, '', query ? `/search/?q=${encodeURIComponent(query)}` : '/search/');
-  }
+  const query = (typeof saved === 'string' ? saved : (params.get('q') ?? params.get('s') ?? '')).trim();
 
   input.value = query;
   if (!query) {
     input.focus();
     return;
   }
-  document.title = `Search results for “${query}” - Final Expense Guy`;
+  // Generic title: the term must not reach analytics through the page title.
+  document.title = 'Search results - Final Expense Guy';
   status.textContent = 'Searching…';
 
   let results: PagefindResult[];

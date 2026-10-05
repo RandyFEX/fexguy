@@ -704,22 +704,22 @@ Here are some common terms people use when searching for, or describing Liberty 
 <li>NAIC. “Reason Why Complaints Were Submitted” Accessed January 07, 2025. https://content.naic.org/cis_refined_results.htm?TABLEAU=CIS_CODE&amp;COCODE=68543&amp;:refresh</li>
 </ul>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/aarp-life-insurance-review/">
-<h5>AARP Life Insurance Review – Is It Worth It?</h5>
+<div><a href="/aarp-life-insurance-review/">
+<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h5>Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h5>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h5>TruStage Burial Insurance Review – Pros &amp; Cons</h5>
+<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h5>TruStage Price Increase</h5>
+<h3 class="as-h5">TruStage Price Increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h5>Lumico Burial Insurance Review – Pros &amp; Cons</h5>
-</a></p>
+<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+</a></div>

@@ -22,7 +22,7 @@ sidebar: true
 
 <p><strong>Read My IUL For Church Members &amp; Faith Based Communities Book</strong></p>
 
-<figure><a href="/iul-book/" target="_blank" rel=" noreferrer noopener"><img decoding="async" loading="lazy" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt=""></a></figure>
+<figure><a href="/iul-book/" target="_blank" rel=" noreferrer noopener"><img decoding="async" loading="lazy" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt="IUL Playbook"></a></figure>
 
 <hr>
 

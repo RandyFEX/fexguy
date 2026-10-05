@@ -372,7 +372,7 @@ sidebar: true
 
 <p>Every recommendation is based on real data, not marketing pitches. Our goal is to find a plan that suits your health, budget, and long-term objectives, rather than meeting a sales quota.</p>
 
-<p>As an independent broker licensed nationwide, the Final Expense Guy can work with multiple A-rated carriers. These companies are financially strong, transparent, and well-reviewed by A.M. Best and the NAIC.</p>
+<p>As an independent broker licensed in most states, the Final Expense Guy can work with multiple A-rated carriers. These companies are financially strong, transparent, and well-reviewed by A.M. Best and the NAIC.</p>
 
 <p>The difference comes from experience. Knowing which insurer will approve a diabetic, a heart patient, or someone with past cancer makes the difference between getting first-day coverage and waiting two years.</p>
 

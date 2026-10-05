@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Diabetes Final Expense Whole Life Insurance</p>
+<h1>Diabetes Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/diabetic-nephropathy/">Diabetic Nephropathy Final Expense Life Insurance</a></h2>
 

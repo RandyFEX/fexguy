@@ -13,6 +13,11 @@
 //    the visitor's answers; they are ignored.
 //  - Meta: Automatic Advanced Matching off (no user data passed to init) and
 //    automatic event setup off (autoConfig false).
+//  - Site search terms (?q= / ?s=) never reach GA4 or Meta. An inline script
+//    in BaseLayout removes them from the address bar before this runs; as a
+//    second line of defense GA4 gets an explicit page_location/page_referrer
+//    with q and s removed, and Meta (which reads the URL and referrer itself)
+//    is skipped on a page view whose URL or referrer still carries them.
 //  - The vendor libraries load after the page has finished loading, so they
 //    don't compete with the page's own content.
 import { lead } from '@/config/lead';
@@ -29,6 +34,32 @@ declare global {
 
 const { ga4Id, metaPixelId, productionHosts } = lead.tracking;
 const live = (productionHosts as readonly string[]).includes(location.hostname);
+
+// --- Search-term privacy -----------------------------------------------------
+
+const SEARCH_PARAMS = ['q', 's'];
+const hasSearchTerm = (url: string) => {
+  try {
+    const u = new URL(url);
+    return u.origin === location.origin && SEARCH_PARAMS.some((k) => u.searchParams.has(k));
+  } catch {
+    return false;
+  }
+};
+/** The URL with q and s removed; every other parameter is kept. */
+const withoutSearchTerm = (url: string) => {
+  try {
+    const u = new URL(url);
+    if (u.origin !== location.origin) return url;
+    for (const k of SEARCH_PARAMS) u.searchParams.delete(k);
+    return u.toString();
+  } catch {
+    return url;
+  }
+};
+const pageLocation = withoutSearchTerm(location.href);
+const pageReferrer = withoutSearchTerm(document.referrer);
+const metaAllowed = !hasSearchTerm(location.href) && !hasSearchTerm(document.referrer);
 
 // --- Senders --------------------------------------------------------------
 
@@ -59,10 +90,12 @@ if (live) {
   meta = window.fbq!;
 
   ga4('js', new Date());
-  ga4('config', ga4Id);
-  meta('set', 'autoConfig', false, metaPixelId);
-  meta('init', metaPixelId);
-  meta('track', 'PageView');
+  ga4('config', ga4Id, { page_location: pageLocation, page_referrer: pageReferrer });
+  if (metaAllowed) {
+    meta('set', 'autoConfig', false, metaPixelId);
+    meta('init', metaPixelId);
+    meta('track', 'PageView');
+  }
 
   const addScript = (src: string) => {
     const s = document.createElement('script');
@@ -72,7 +105,7 @@ if (live) {
   };
   const loadVendors = () => {
     addScript(`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`);
-    addScript('https://connect.facebook.net/en_US/fbevents.js');
+    if (metaAllowed) addScript('https://connect.facebook.net/en_US/fbevents.js');
   };
   if (document.readyState === 'complete') loadVendors();
   else window.addEventListener('load', loadVendors, { once: true });
@@ -80,8 +113,8 @@ if (live) {
   const log = (dest: string) => (...args: unknown[]) => console.info(`[tracking disabled on ${location.hostname}] ${dest}`, ...args);
   ga4 = log('GA4');
   meta = log('Meta');
-  ga4('config', ga4Id);
-  meta('track', 'PageView');
+  ga4('config', ga4Id, { page_location: pageLocation, page_referrer: pageReferrer });
+  if (metaAllowed) meta('track', 'PageView');
 }
 
 // --- Lead: verified Fillout submission --------------------------------------

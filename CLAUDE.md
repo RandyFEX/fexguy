@@ -42,7 +42,10 @@ is in place; see src/content/README.md for how pages were migrated.
   redirect. Removed so far: /application/, /conservation/, /careers/, /apply/,
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
-  /do-not-sell/ (never rebuilt in the new site).
+  /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
+  /reviews/ (legacy testimonial-image page, hotlinked and inaccessible; not
+  rebuilt, no replacement review section) and /gtl/ (reproduced Guarantee
+  Trust Life application/e-consent forms; the GTL review article stays).
 - Redirects must be approved by Randy before they're added to vercel.json.
   Old URLs decided as 404 with no redirect: /book/, the two
   /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
@@ -369,7 +372,11 @@ is in place; see src/content/README.md for how pages were migrated.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 290 redirects (with /planning-guide/).
+  /sitemap-index.xml. vercel.json holds 296 redirects (with /planning-guide/,
+  /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
+  landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
+  /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
+  page (linked from the homepage); new term-insurance landing pages come later.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
@@ -430,11 +437,10 @@ is in place; see src/content/README.md for how pages were migrated.
   bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
   press-article titles/URLs, customer reviews verbatim), ordinary "funeral
   funds" wording, and the JSON-LD `alternateName: "Funeral Funds"`. Obsolete
-  visible branding was replaced with Final Expense Guy / FEXGuy.com. Still
-  pending separate decisions: the Funeral Funds social URLs (footer,
-  /buyer-info/, /funeral-relief-program/) until Randy confirms his current
-  accounts; the legal pages (/privacy-policy/, /terms-conditions/,
-  /terms-of-use/), which need a full rewrite; the Funeral Funds-branded social
+  visible branding was replaced with Final Expense Guy / FEXGuy.com. The
+  Funeral Funds social links were removed and the legal pages rewritten
+  (October 2026; see "Business identity, legal pages and privacy"). Still
+  pending separate decisions: the Funeral Funds-branded social
   images of /buyers-guide/ and /12-step-final-planning-guide/; the inflation
   chart on /buyers-guide/; the missing /senior-benefits/ brochure; unused
   Funeral Funds files in public/; and the 67 missing image files.
@@ -463,6 +469,64 @@ is in place; see src/content/README.md for how pages were migrated.
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
 
+## Business identity, legal pages and privacy (Randy, October 2026)
+
+- Legal business: **Saturn Street, LLC, DBA Final Expense Guy** — used on the
+  legal pages only. The public brand stays Final Expense Guy / FEXGuy.com.
+- Published contact details: website https://fexguy.com, phone 888-862-9456,
+  mailing address **2300 Olympia Drive #270179, Flower Mound, TX 75027** (no
+  "Dallas, TX Area" on the address; the old "PO Box 270179" form is retired).
+  **Never publish an email address** (also not for privacy requests).
+- **No published business/office hours** anywhere (content, footer, schema,
+  metadata), and no "24/7" or other availability promise instead.
+- **Licensing wording:** Randy no longer holds licenses in all 50 states. The
+  approved public wording is "Licensed in most states." Never write "licensed
+  in all 50 states" (or similar) about Randy/Final Expense Guy; don't publish a
+  list of states unless Randy asks (the old 50-state lists on /about/ and
+  /licenses/, and the /about/ JSON-LD `providesServiceIn` list, were
+  removed). /licenses/ shows only the NPN (17792459) and Randy's Texas
+  resident Life & Health license number (2050599). Current licensing/availability claims must reflect the present;
+  truthful historical statements ("I've helped families in all 50 states",
+  "Randy's nationwide licenses carried over" on /funeral-funds-of-america/)
+  may stay. Insurance companies' own licensing in reviews is unaffected.
+- **No social-media links** on the site for now (footer `social: []`); the old
+  Funeral Funds profiles were removed and not replaced with FEXGuy ones.
+  JSON-LD `sameAs` on Randy's Person entity keeps his current profiles
+  (LinkedIn, X, Facebook randyvandervaate.lifeinsurance, Instagram, Medium,
+  Flipboard) and youtube.com/@FEXGUY, plus press-article URLs — no visible
+  buttons. No Funeral Funds business accounts there. The leftover WordPress
+  "wpengine" author entity (and its wpengine.com sameAs) was removed from
+  /about/ and /contact/ JSON-LD.
+- **No third-party video embeds** (YouTube, Vimeo, Adilo) — all removed with
+  their VideoObject schema and og:video tags.
+- /privacy-policy/ and /terms-of-use/ were rewritten (`source: "new"`) to
+  describe the actual site and practices: Fillout form fields, CRM contents
+  (no SSNs or banking data; the CRM vendor is not named), indefinite record
+  retention, Randy's own calls (no AI or prerecorded calls), automated texts
+  and emails with STOP/unsubscribe, no lead selling, carrier sharing, the
+  occasional specialist agent (client told first), GA4 and Meta settings, and
+  site-search privacy. /terms-of-use/ is the only Terms page and holds the
+  accessibility statement; /terms-conditions/ 301s to it. Don't add legal
+  promises or facts Randy hasn't provided.
+- Standard form disclosure, exactly: "Submit to give Randy permission to
+  call, text, or email you. Msg & data rates may apply. No purchase
+  required." It lives inside the Fillout form (edited in Fillout, not in this
+  repo; Randy updated it October 2026). Don't duplicate it on the page and
+  don't add Privacy/Terms links under forms just for it (they're in the
+  footer). Don't hack Fillout's iframe internals from Astro.
+- GA4 property settings (verified by Randy): Google Signals off,
+  user-provided data off, optional enhanced measurement off, email redaction
+  on, q/s URL-parameter redaction on, 14-month retention, no Google Ads links.
+  Retired Meta Pixel IDs 1757709920950272 and 422716154769594 must never
+  return.
+- **Search-term privacy:** search terms (?q= / ?s=) must never reach GA4 or
+  Meta. An inline script at the top of BaseLayout's <head> removes q and s
+  from the address bar before any tracking runs (on /search/ the term moves
+  into `history.state` for `src/scripts/search.ts`); tracking.ts also passes
+  GA4 a sanitized page_location/page_referrer and skips the Meta Pixel on any
+  page view whose URL or referrer still carries q/s. Keep the term out of
+  the URL, page title and anything sent to a third party.
+
 ## Lead system
 
 - One form everywhere: Fillout form `pJBgSNEtN9us` (settings in
@@ -486,7 +550,9 @@ is in place; see src/content/README.md for how pages were migrated.
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
   is built by `pagefind` after `astro build` (`npm run build`; config in
   `pagefind.yml`) into dist/pagefind/. Queries use `/search/?q=term`; the old
-  WordPress `?s=term` also works (rewritten to `?q=` in the address bar).
+  WordPress `?s=term` also works. For privacy the term is then removed from
+  the address bar (kept in `history.state`, so reload and back/forward still
+  work; see "Search-term privacy" above).
   Don't add a redirect for `/?s=`. Results: H1, URL path, highlighted
   excerpt, by relevance, 10 at a time with "Show more". Empty query shows
   the Resources-menu guides; no results shows tips, the guides and the
@@ -529,6 +595,50 @@ is in place; see src/content/README.md for how pages were migrated.
   Touch targets ≥ 44px (`--tap-target`).
 - URLs use trailing slashes (`trailingSlash: 'always'`, matched in vercel.json).
 
+## Accessibility (WCAG 2.2 Level AA is a mandatory target)
+
+- Every new or changed template, component and page must target WCAG 2.2 AA.
+  The accessibility statement on /terms-of-use/ states the commitment; never
+  claim "fully compliant" / "100% ADA compliant".
+- Reusable components already handle: skip link, landmarks, labelled search
+  forms, a high-contrast two-tone focus ring (global.css `--color-focus`),
+  focus kept clear of the mobile call bar (`--call-sticky-h`,
+  src/scripts/sticky-call.ts), keyboard-focusable scrolling tables
+  (src/scripts/scroll-tables.ts), focus kept on the quote box when the
+  Fillout embed replaces its button, and a meaningful Fillout iframe title.
+- Heading outline: one H1 per page (landing pages without a visible headline
+  use `<h1 class="visually-hidden">` from the page title); no skipped
+  levels. When a migrated heading's level is raised to repair the outline,
+  add `as-hN` (global.css) so it keeps its original look.
+- Automated checks (axe-core) never prove conformance. Don't merge to main
+  on automated results alone.
+
+## Prelaunch checklist (mandatory before the new site goes live)
+
+1. Set the Privacy Policy and Terms of Use effective dates to the actual
+   publication date (replace "To be set at launch" on both pages;
+   `npm run verify` lists them as `[prelaunch]` until done). Update those
+   pages' dateModified / article:modified_time metadata at the same time.
+2. Accessibility gate — all of these, with results recorded:
+   1. automated accessibility testing (axe-core or equivalent, all pages);
+   2. keyboard-only testing;
+   3. focus order and focus visibility testing;
+   4. zoom/reflow testing (200% text, 400% zoom / 320px width);
+   5. screen-reader and semantic review;
+   6. form testing (the Fillout form, site search, footer search);
+   7. remediation of every identified issue;
+   8. a final re-test.
+3. Fillout form (third-party iframe; Fillout itself is not proven WCAG 2.2
+   AA) — manual test and record: keyboard entry into and exit out of the
+   form, visible field labels, validation/error messages, focus order, zoom
+   behavior, contrast, and screen-reader behavior.
+
+## Post-launch notes
+
+- Review the former video locations (the 13 pages whose YouTube/Vimeo/Adilo
+  embeds were removed in October 2026) and identify pages where new
+  FEXGuy-branded videos would materially improve the page.
+
 ## Before committing
 
 Run `npm run check` and `npm run build`. Both must pass with 0 errors. Then
@@ -538,4 +648,9 @@ for missing image files, split into visible images (`<img>`/srcset) and
 metadata (Open Graph, Twitter, JSON-LD). It also checks the search index:
 the pages marked for Pagefind must match `isSearchable()` and the Pagefind
 page count; /search/ must be noindex, out of the sitemap/llms.txt and never
-a redirect destination. Add `-- --strict` to fail on any.
+a redirect destination. Redirects must not chain, shadow a built page or
+point to a missing page, and content guards fail on 888-656-4648, retired
+Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
+address, "licensed in all 50 states" about Randy, office hours, the old PO
+Box or old consent wording (the GA4/Meta IDs must still be present), and
+/reviews/ and /gtl/ must stay real 404s (not built, not redirected). Add `-- --strict` to fail on any.

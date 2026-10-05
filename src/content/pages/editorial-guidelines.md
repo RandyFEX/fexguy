@@ -26,7 +26,7 @@ sidebar: true
 
 <p>Most other insurance and financial websites make money from advertisements or referral partnerships, often leading to bad advice and overpriced life insurance solutions.</p>
 
-<p>Our CEO and owner, Randy VanderVaate, is responsible for all content and educational materials on FEXGuy.com. He is an insurance agent licensed in 50 states and has been licensed to sell insurance since 2015.</p>
+<p>Our CEO and owner, Randy VanderVaate, is responsible for all content and educational materials on FEXGuy.com. He is an insurance agent licensed in most states and has been licensed to sell insurance since 2015.</p>
 
 <p>His content and opinions reflect his desire to be an advocate for his clients to get them the best coverage at the lowest pricing they qualify for. </p>
 

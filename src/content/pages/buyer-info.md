@@ -368,7 +368,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
-<p><strong><a href="/about/" target="_blank" rel="noreferrer noopener">VISIT MY ABOUT PAGE</a><br><a href="https://www.youtube.com/@FuneralFunds" target="_blank" rel="noreferrer noopener">VISIT MY YOUTUBE CHANNEL</a><br><a href="https://www.facebook.com/funeralfunds" target="_blank" rel="noreferrer noopener">VISIT MY FACEBOOK PAGE</a></strong></p>
+<p><strong><a href="/about/" target="_blank" rel="noreferrer noopener">VISIT MY ABOUT PAGE</a></strong></p>
 
 <p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a></p>
 

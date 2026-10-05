@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Neurological Impairments Final Expense Whole Life Insurance</p>
+<h1>Neurological Impairments Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/huntingtons-disease/">Burial Insurance with Huntington’s Disease</a></h2>
 

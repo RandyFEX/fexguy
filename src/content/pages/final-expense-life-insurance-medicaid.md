@@ -402,7 +402,7 @@ The Ownership Oversight
 
 <p>Even the treatment of small cash values from life insurance policies can differ by state, as outlined in policy manuals. When in doubt, a conversation with an experienced broker prevents costly assumptions.</p>
 
-<p>The Final Expense Guy helps families nationwide navigate these state differences and find coverage that complies with Medicaid guidelines from day one.</p>
+<p>The Final Expense Guy helps families across the country navigate these state differences and find coverage that complies with Medicaid guidelines from day one.</p>
 
 <hr>
 
@@ -446,31 +446,31 @@ The Ownership Oversight
 
 <p><strong>What final expense insurance works with Medicaid?</strong><br>Simplified issue whole life insurance works best with Medicaid when ownership and trust setup are done right.<br>These plans offer first-day coverage for most health conditions and can be legally shielded from Medicaid by using an irrevocable funeral trust or by utilizing an owner other than the insured. The key is applying before your health worsens or asset rules change. The Final Expense Guy helps you do this right the first time, while protecting your Medicaid eligibility and guaranteeing your family’s peace of mind.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/finding-affordable-burial-insurance/">
-<h5>Key to Finding Affordable Burial Insurance</h5>
+<div><a href="/finding-affordable-burial-insurance/">
+<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h5>Life Insurance for HIV Positive [Use Caution]</h5>
+<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h5>How Much Does Final Expense Insurance Cost?</h5>
+<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h5>Funeral Plan Insurance Policies</h5>
+<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h5>Final Expense Whole Life Insurance Complete Guide</h5>
-</a></p>
+<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+</a></div>
 
-<h5>2 Comments</h5>
+<h2 class="as-h5">2 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-1569">
-<h6 class="comment-name">Lou Lopez </h6>                                            
+<h3 class="comment-name as-h6">Lou Lopez </h3>                                            
 <p>Info on 62 year old male, please.</p>
 <div class="comment-meta">
 November 19, 2019 at 5:09 am                    
@@ -478,7 +478,7 @@ November 19, 2019 at 5:09 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-3480">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Lou – You can get a free quote by visiting this page – <a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 April 24, 2020 at 8:08 am                    

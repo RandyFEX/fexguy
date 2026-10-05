@@ -1455,6 +1455,36 @@
       "source": "/planning-guide/",
       "destination": "/12-step-final-planning-guide/",
       "statusCode": 301
+    },
+    {
+      "source": "/terms-conditions/",
+      "destination": "/terms-of-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/start/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/free-quote-fb/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/facebook-1/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/lowest-rates/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/facebook-2/",
+      "destination": "/free-quote/",
+      "statusCode": 301
     }
   ],
   "headers": [

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Liver Conditions Final Expense Whole Life Insurance</p>
+<h1>Liver Conditions Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/organ-transplant/">Burial Insurance With An Organ Transplant</a></h2>
 

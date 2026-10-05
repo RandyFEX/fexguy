@@ -24,7 +24,16 @@ if (box && slot) {
     embed.dataset.filloutEmbedType = 'standard';
     embed.setAttribute('data-fillout-inherit-parameters', '');
     embed.setAttribute('data-fillout-dynamic-resize', '');
+    // Keyboard users: tabbing onto the placeholder button scrolls it into
+    // view, which triggers this swap. Don't let focus fall back to <body>
+    // (the form would then be skipped): keep it on the embed container, so
+    // the next Tab enters the form.
+    const hadFocus = slot.contains(document.activeElement);
     slot.replaceChildren(embed);
+    if (hadFocus) {
+      embed.tabIndex = -1;
+      embed.focus({ preventScroll: true });
+    }
     box.classList.add('is-loaded');
     // Fillout's form keeps rearranging itself for a moment after it reports
     // "ready" (it resizes as its anti-spam row appears), and Chrome counts
@@ -54,6 +63,14 @@ if (box && slot) {
     };
     window.addEventListener('message', onMessage);
     setTimeout(reveal, MAX_HIDDEN_MS);
+    // Fillout titles its iframe with the bare form ID; screen readers announce
+    // the frame title, so give it a meaningful one (WCAG 2.2 SC 4.1.2).
+    new MutationObserver((_, observer) => {
+      const frame = embed.querySelector('iframe');
+      if (!frame) return;
+      frame.title = 'Quote request form';
+      observer.disconnect();
+    }).observe(embed, { childList: true, subtree: true });
     // Fillout's loader scans the page for embeds when it runs.
     const script = document.createElement('script');
     script.src = lead.fillout.script;

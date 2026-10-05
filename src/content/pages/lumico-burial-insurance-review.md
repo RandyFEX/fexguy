@@ -692,31 +692,31 @@ of their underwriting process.</p>
 
 <p id="block-aff84cab-fa3d-4a88-9a7a-0c0dfa0dfd01">You can cancel your Lumico life insurance by calling the customer service hotline (855)-774-4491.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/aarp-life-insurance-review/">
-<h5>AARP Life Insurance Review – Is It Worth It?</h5>
+<div><a href="/aarp-life-insurance-review/">
+<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h5>Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h5>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h5>TruStage Burial Insurance Review – Pros &amp; Cons</h5>
+<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h5>TruStage Price Increase</h5>
+<h3 class="as-h5">TruStage Price Increase</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
-<h5>Colonial Penn Two Year Wait</h5>
-</a></p>
+<h3 class="as-h5">Colonial Penn Two Year Wait</h3>
+</a></div>
 
-<h5>12 Comments</h5>
+<h2 class="as-h5">12 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-2178">
-<h6 class="comment-name">Cathy Ward </h6>                                            
+<h3 class="comment-name as-h6">Cathy Ward </h3>                                            
 <p>I want to cancel my Insurance, I didn't realize It a three year wait, and I have gotten some very bad reviews</p>
 <div class="comment-meta">
 February 9, 2020 at 4:08 pm                    
@@ -724,7 +724,7 @@ February 9, 2020 at 4:08 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-3469">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Cathy – We don't even offer plans that have 3-year waiting periods. We don't even recommend them as they are the most expensive and risky plans available. You would have to contact the company that your plan was purchased through in order to cancel your plan. If you are interested, you can get a free quote by visiting this page – <a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 April 24, 2020 at 7:54 am                    
@@ -732,7 +732,7 @@ April 24, 2020 at 7:54 am
 </div>
 </div>
 <div class="comment" id="comment-2400">
-<h6 class="comment-name">Suze </h6>                                            
+<h3 class="comment-name as-h6">Suze </h3>                                            
 <p>Just watched Judge Judy involving a Lumico policy. They even stone walled HER! That's what caused me to look Lumico up. I wouldn't buy a policy from them if my life depended upon it! Disgusting!</p>
 <div class="comment-meta">
 February 20, 2020 at 6:29 pm                    
@@ -740,7 +740,7 @@ February 20, 2020 at 6:29 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-3463">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Suze – We saw that episode as well. To be clear…we don't work with or represent Lumico.</p>
 <div class="comment-meta">
 April 24, 2020 at 7:44 am                    
@@ -748,7 +748,7 @@ April 24, 2020 at 7:44 am
 </div>
 </div>
 <div class="comment" id="comment-3235">
-<h6 class="comment-name">Victor Damari </h6>                                            
+<h3 class="comment-name as-h6">Victor Damari </h3>                                            
 <p>I currently have a burial policy with lumico. The policy has been lost and I have been very unhappy with their service.</p>
 <div class="comment-meta">
 April 9, 2020 at 5:57 pm                    
@@ -756,7 +756,7 @@ April 9, 2020 at 5:57 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-3448">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Victor – We are sorry to hear of your poor experience. We don't work with Lumico, so you will have to call them directly for service and help with your policy.</p>
 <div class="comment-meta">
 April 24, 2020 at 6:37 am                    
@@ -764,7 +764,7 @@ April 24, 2020 at 6:37 am
 </div>
 </div>
 <div class="comment" id="comment-3974">
-<h6 class="comment-name">Jay </h6>                                            
+<h3 class="comment-name as-h6">Jay </h3>                                            
 <p>My mom had a policy. Simple Final Expenses. Trust me, nothing is simple about the process. Poor customer service. They have to complete a medical review due to the policy only being a little og a year old. My husband and I had to pay for everything out of pocket for the memorial services. This company sets false expectations and mis guides the elderly. </p>
 <p>Please stay away from Lumico</p>
 <div class="comment-meta">
@@ -773,7 +773,7 @@ May 24, 2020 at 7:34 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-3987">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Jay – As a reminder…we don't work with Lumico or represent or use them in any way. With that said, we are sorry you had such a poor customer service experience when you needed this help the most. As you found out, choosing a company with superior customer service is an important factor when you purchase your final expense policy from any company.</p>
 <div class="comment-meta">
 May 24, 2020 at 9:26 pm                    
@@ -781,7 +781,7 @@ May 24, 2020 at 9:26 pm
 </div>
 </div>
 <div class="comment" id="comment-10711">
-<h6 class="comment-name">James Goodson </h6>                                            
+<h3 class="comment-name as-h6">James Goodson </h3>                                            
 <p>Is Lumico life  insurance a rip off I have read some bad reviews I just got this insurance and they have already taken  their first payment I'm thinking about canceling</p>
 <div class="comment-meta">
 May 14, 2021 at 11:34 am                    
@@ -789,7 +789,7 @@ May 14, 2021 at 11:34 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-10789">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Hey James – Lumico isn't an insurance company and all the insurance plans they sell are from are routed through an actual insurance company. So they are kind of a "middle-man" between you and the insurance company. With that said, we never have a problem beating their prices. Let us know if you need help with a policy in the future.</p>
 <div class="comment-meta">
 May 19, 2021 at 4:14 pm                    
@@ -797,7 +797,7 @@ May 19, 2021 at 4:14 pm
 </div>
 </div>
 <div class="comment" id="comment-24697">
-<h6 class="comment-name">Kimberly A Colnaghi </h6>                                            
+<h3 class="comment-name as-h6">Kimberly A Colnaghi </h3>                                            
 <p>lumico prays on the elderly. my mom paid faithfully. it's been 9 months and they still haven't paid the claim. it's a scam</p>
 <div class="comment-meta">
 September 24, 2022 at 3:06 pm                    
@@ -805,7 +805,7 @@ September 24, 2022 at 3:06 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-24754">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Kimberly – I'm so sorry that you are having this difficulty. If you feel it would be appropriate or helpful, I'd be happy to hop on the phone with you and Lumico to identify the problem that's delaying your claim payment. Call me at (888) 862-9456 and ask for Randy.</p>
 <div class="comment-meta">
 September 27, 2022 at 7:49 am                    

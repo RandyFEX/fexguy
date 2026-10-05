@@ -34,7 +34,7 @@ Most often, the policy is one of these:
 
 "Mortgage protection" is also used as a name for other products, and some of those aren't life insurance at all:
 
-| | What it is | Who it's designed to protect | Who gets paid | When it pays |
+| <span class="visually-hidden">Coverage type</span> | What it is | Who it's designed to protect | Who gets paid | When it pays |
 |---|---|---|---|---|
 | **Life insurance bought for mortgage protection** | A term or whole life policy you own | Your family | The beneficiary you name | When the insured dies while the policy is in force, subject to the policy terms |
 | **Lender-tied credit life / group creditor coverage** | Coverage arranged through the lender, often under a master policy the lender holds | The loan | Generally the lender, toward the balance | When the insured dies while covered, up to the balance owed, subject to the terms |
@@ -121,7 +121,7 @@ Some people want just enough to pay off the house. Others want enough to pay off
 - It's generally not enough for a large mortgage.
 - For an older homeowner with a small or nearly paid-off balance, it can leave money for the house payment, the funeral and final bills.
 
-| | How long it lasts | Death benefit | Cash value | Often fits |
+| <span class="visually-hidden">Policy type</span> | How long it lasts | Death benefit | Cash value | Often fits |
 |---|---|---|---|---|
 | **Term life** | A set number of years | Level for the level period | No | Working-age homeowners, larger balances |
 | **Whole life** | Lifetime | Level | Yes | Permanent needs, smaller balances, older homeowners |

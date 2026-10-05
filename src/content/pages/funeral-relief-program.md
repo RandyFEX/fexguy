@@ -53,16 +53,13 @@ sidebar: true
 
 <p>I specialize in 1st-day coverage, and I can price shop 20-30 companies to get you the best deal; there are usually only 3-4 that really fit your needs based on your age, health, and zip code in your state.</p>
 
-<p>I’m licensed in all 50 states, I run Final Expense Guy, and my business card is at the bottom of this page</p>
+<p>I’m licensed in most states, I run Final Expense Guy, and my business card is at the bottom of this page</p>
 
 <p><strong>Here’s more info about me:</strong></p>
 
 <ul>
 <li>My <a href="/about/">“About Page”</a></li>
-<li>My <a href="/reviews/">“Reviews Page”</a></li>
 <li>My <a href="/licenses/">“Licenses Page”</a></li>
-<li>My <a href="https://www.linkedin.com/in/randyvandervaate" target="_blank" rel="noopener">LinkedIn Page</a></li>
-<li>My <a href="https://www.youtube.com/@FuneralFunds/videos" target="_blank" rel="noopener">YouTube Channel (almost 700 videos)</a></li>
 </ul>
 
 <p>If you’re just window shopping, go ahead and give me a ring at (888) 862-9456. No pressure, no sales pitch – just a friendly chat about your options that only takes a few minutes to see if you qualify.</p>
@@ -73,7 +70,7 @@ sidebar: true
 
 <p><strong>CALL US (888) 862-9456, OR BOOK AN APPOINTMENT</strong></p>
 
-<p><br>Randy VanderVaate<br>Funeral Relief Program Specialist<br><a href="/">FEXGuy.com<br></a>50-State Licensed<br>(888) 862-9456</p>
+<p><br>Randy VanderVaate<br>Funeral Relief Program Specialist<br><a href="/">FEXGuy.com<br></a>Licensed in most states<br>(888) 862-9456</p>
 
 <p><a class="button-link" href="/free-quote/">★FREE FINAL EXPENSE QUOTE★</a></p>
 

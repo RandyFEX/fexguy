@@ -32,7 +32,7 @@ const { columns, social, notes } = site.footer;
     {notes.length > 0 && <div class="site-footer__notes">{notes.map((html) => <p set:html={html} />)}</div>}
     {/* Site search (as on the live site, the footer's last element). Plain
        HTML: submits to /search/?q=… with no JavaScript on this page. */}
-    <form class="site-footer__search" role="search" action="/search/" method="get">
+    <form class="site-footer__search" role="search" aria-label="Site search" action="/search/" method="get">
       <label for="footer-search">Search</label>
       <div class="site-footer__search-row">
         <input id="footer-search" type="search" name="q" required autocomplete="off" />
@@ -53,10 +53,15 @@ const { columns, social, notes } = site.footer;
   .site-footer__cols {
     display: grid;
     gap: var(--space-4) var(--space-6);
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
   }
   .site-footer__cols :global(p) {
     margin: 0;
+  }
+  /* Stacked footer links: at least 24px tall (WCAG 2.2 SC 2.5.8). */
+  .site-footer__cols :global(a) {
+    display: inline-block;
+    padding-block: 3px;
   }
   .site-footer :global(a) {
     color: inherit;

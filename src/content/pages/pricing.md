@@ -16,7 +16,7 @@ source: "live"
 
 <p><br></p>
 
-<h3 id="What’s-My-Price?"><strong>WHAT’S MY PRICE?</strong></h3>
+<h2 id="What’s-My-Price?" class="as-h3"><strong>WHAT’S MY PRICE?</strong></h2>
 
 <p><strong>To get you exact pricing, we (or any other company) will need to know your:</strong></p>
 
@@ -26,7 +26,7 @@ source: "live"
 
 <p><strong>If you want to see actual sample pricing, view the chart at the bottom of this article (male &amp; female pricing included)</strong></p>
 
-<h3 id="What-Companies-Are-Best?"><strong>WHAT COMPANIES ARE BEST?</strong></h3>
+<h2 id="What-Companies-Are-Best?" class="as-h3"><strong>WHAT COMPANIES ARE BEST?</strong></h2>
 
 <p>At Final Expense Guy, all of our plans offer 1st-day coverage or benefits. We don’t encourage people to buy policies with 2-year waiting periods…ever!</p>
 
@@ -42,7 +42,7 @@ source: "live"
 
 <p>But keep reading to find out more…</p>
 
-<h3 id="Term-Life-Insurance-Companies"><strong>TERM LIFE INSURANCE COMPANIES</strong></h3>
+<h2 id="Term-Life-Insurance-Companies" class="as-h3"><strong>TERM LIFE INSURANCE COMPANIES</strong></h2>
 
 <p>Term life insurance is NOT appropriate for final expense life insurance (unless you know the exact date you will die).</p>
 
@@ -54,7 +54,7 @@ source: "live"
 
 <ul><li>AAA Life Insurance</li><li>AARP</li><li>Fidelity Life</li><li>Globe Life</li><li>New York Life</li><li>TruStage</li></ul>
 
-<h3 id="2-Year-Waiting-Period-Companies"><strong>2-YEAR WAITING PERIOD COMPANIES</strong></h3>
+<h2 id="2-Year-Waiting-Period-Companies" class="as-h3"><strong>2-YEAR WAITING PERIOD COMPANIES</strong></h2>
 
 <p>Why would you ever buy a policy that won’t pay out a penny in death benefits in the first 2 years?</p>
 
@@ -70,7 +70,7 @@ source: "live"
 
 <ul><li>AIG</li><li>American National</li><li>Colonial Penn</li><li>Gerber Life</li><li>Great Western</li><li>Lincoln Heritage (watch out for their 3-year wait plans…yikes!)</li><li>Mutual of Omaha</li></ul>
 
-<h3 id="The-$9.95-“Per-Unit”-Myth"><strong>THE $9.95 “PER UNIT” MYTH</strong></h3>
+<h2 id="The-$9.95-“Per-Unit”-Myth" class="as-h3"><strong>THE $9.95 “PER UNIT” MYTH</strong></h2>
 
 <p>Colonial Penn offers $9.95 plans…but for how much coverage?</p>
 
@@ -174,7 +174,7 @@ FEMALE</th>
 </tbody>
 </table>
 
-<h3 id="Additional-Riders-Available"><strong>ADDITIONAL RIDERS AVAILABLE</strong></h3>
+<h2 id="Additional-Riders-Available" class="as-h3"><strong>ADDITIONAL RIDERS AVAILABLE</strong></h2>
 
 <p>Some companies offer riders at an additional cost, and some companies offer riders that are free of charge. The companies with the most riders are not always the best when considering pricing and coverage options.</p>
 

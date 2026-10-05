@@ -407,7 +407,7 @@ sidebar: true
 
 <p>You don't need to quit smoking before getting burial insurance. We work with some life insurance companies that offer the best rate for smokers.</p>
 
-<table class="table-wrap" id="tablepress-24"><thead><tr><th>GETTING THE BEST RATE</th><th></th></tr></thead><tbody><tr><td>Younger</td><td>Less Expensive</td></tr><tr><td>Older</td><td>More Expensive</td></tr><tr><td>Healthier </td><td>Less Expensive</td></tr><tr><td>Television Ads</td><td>More Expensive</td></tr><tr><td>Junk Mail</td><td>More Expensive</td></tr><tr><td>No Health Questions</td><td>More Expensive</td></tr><tr><td>Final Expense Guy</td><td>Less Expensive</td></tr></tbody></table>
+<table class="table-wrap" id="tablepress-24"><thead><tr><th>GETTING THE BEST RATE</th><th><span class="visually-hidden">Effect on price</span></th></tr></thead><tbody><tr><td>Younger</td><td>Less Expensive</td></tr><tr><td>Older</td><td>More Expensive</td></tr><tr><td>Healthier </td><td>Less Expensive</td></tr><tr><td>Television Ads</td><td>More Expensive</td></tr><tr><td>Junk Mail</td><td>More Expensive</td></tr><tr><td>No Health Questions</td><td>More Expensive</td></tr><tr><td>Final Expense Guy</td><td>Less Expensive</td></tr></tbody></table>
 
 <p>Today is the best time to get burial insurance with arthritis. Each year you procrastinate, you pay a higher premium.</p>
 

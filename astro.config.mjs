@@ -52,6 +52,15 @@ export default defineConfig({
     // render-blocking CSS request, which helps First/Largest Contentful Paint.
     inlineStylesheets: 'always',
   },
+  vite: {
+    build: {
+      // Astro inlines a page script into the HTML when its bundle is under this
+      // size (default 4 KB). The tracking + quote-form bundle is just over 4 KB,
+      // so allow 8 KB: no extra request for it. (No other Vite-processed assets
+      // are imported, so nothing else is affected.)
+      assetsInlineLimit: 8192,
+    },
+  },
   markdown: {
     // <div data-quote-form></div> in page Markdown -> the Fillout quote box.
     processor: satteri({ hastPlugins: [quoteFormPlugin] }),

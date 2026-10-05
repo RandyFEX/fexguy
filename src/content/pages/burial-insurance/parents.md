@@ -89,7 +89,7 @@ sidebar: true
 
 <p>A guaranteed issue policy does not require approval of a medical exam or health questions. This life insurance for a parent is only recommended for those who have significant health issues.&#160;Acceptance is guaranteed, and applicants will qualify regardless of their health.</p>
 
-<p><a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener"></a>Guaranteed acceptance policy that has a graded death benefit limitation (the policy has a two-year waiting period).</p>
+<p>Guaranteed acceptance policy that has a graded death benefit limitation (the policy has a two-year waiting period).</p>
 
 <p>If the insured dies during the waiting period, their beneficiaries will not receive the full insurance proceeds. They will only get the return on premium plus 7% to 10% interest. The whole death benefit will only be given if they die after the waiting period.</p>
 

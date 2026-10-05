@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Heart Issues Final Expense Whole Life Insurance</p>
+<h1>Heart Issues Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/stroke-tia/">Burial Insurance After A TIA or Transient Ischemic Attack</a></h2>
 

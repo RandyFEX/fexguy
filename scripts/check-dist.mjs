@@ -11,6 +11,13 @@
 // the search policy (isSearchable in src/lib/pages.ts) — never a redirect,
 // noindex, landing, archive or excluded page — and /search/ must stay a
 // noindex results page that no redirect points to.
+// Redirects: no source may also be a built page, and every internal
+// destination must be a built page (no chains, no redirects to 404s).
+// Content guards (decisions recorded in CLAUDE.md): no 888-656-4648, no
+// retired Meta Pixel IDs, no third-party video embeds, no Funeral Funds
+// social links, no FEXGuy email address, no "licensed in all 50 states",
+// no published office hours or old PO Box address, no old consent wording;
+// the GA4 and Meta Pixel IDs must still be present.
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -157,6 +164,54 @@ for (const f of walk(DIST).filter((f) => /sitemap.*\.xml$|llms\.txt$/.test(f)))
 for (const [source, dest] of redirects)
   if (/^(https?:\/\/[^/]+)?\/search(\/|\?|$)/.test(dest)) search.problems.push(`redirect ${source} -> ${dest} (no catch-all to /search/)`);
 
+// ---- Redirects ---------------------------------------------------------------
+const redirectProblems = [];
+for (const [source, dest] of redirects) {
+  if (source.endsWith('/') && isPage(source)) redirectProblems.push(`${source} is redirected but also built as a page`);
+  if (/^https?:/i.test(dest)) continue;
+  const d = dest.split('#')[0].split('?')[0];
+  if (redirects.has(d)) redirectProblems.push(`chain: ${source} -> ${dest} -> ${redirects.get(d)}`);
+  else if (!(exists(d) || (d.endsWith('/') && isPage(d)))) redirectProblems.push(`${source} -> ${dest} (destination is not a built page)`);
+}
+
+// ---- Content guards --------------------------------------------------------------
+const GUARDS = [
+  ['TV/streaming ad number 888-656-4648', /888[\s.\-)]*656[\s.\-]*4648|8886564648/],
+  ['retired Meta Pixel ID', /1757709920950272|422716154769594/],
+  ['third-party video embed', /youtube(?:-nocookie)?\.com\/embed|player\.vimeo\.com|adilo\.|bigcommand\.com/i],
+  ['Funeral Funds social link', /facebook\.com\/funeralfunds|youtube\.com\/(?:c\/|@)funeralfunds|linkedin\.com\/company\/funeral-funds/i],
+  ['FEXGuy email address', /[a-z0-9._%+-]+@(?:www\.)?fexguy\.com|mailto:[^"]*fexguy/i],
+  // Randy's/Final Expense Guy's own licensing only (carriers' "licensed in all
+  // 50 states" in reviews is about the insurance company and stays).
+  ['"licensed in all 50 states" (Randy)', /(?:He’s|He is|I’m|I am|Randy is|Final Expense Guy is|agency|agent|broker)[^.<]{0,40}licensed (?:to (?:sell|operate)[^.<]{0,40})?in (?:all |every )?(?:50 )?states?\b(?! *where)|licensed nationwide|broker operating nationwide|50-state licensed|<br>Licensed in all 50 States|LICENSED<\/strong><br>All 50 States|coverage is available in all 50 states/i],
+  ['published office hours', /office hours|9:00 ?am ?(?:to|-) ?5:00 ?pm|\bCTL\b/i],
+  ['old PO Box mailing address', /P\.? ?O\.? Box 270179/i],
+  ['old consent wording', /By submitting this form, you agree|possibly using automated systems|SMS rates may apply/i],
+];
+const guardHits = {};
+let ga4Found = false;
+let metaFound = false;
+for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f.includes('/pagefind/'))) {
+  const text = readFileSync(file, 'utf8');
+  if (text.includes('G-JMYZE458HQ')) ga4Found = true;
+  if (text.includes('2351342698972751')) metaFound = true;
+  for (const [label, re] of GUARDS) if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
+}
+// Retired pages that must stay real 404s (not built, not redirected).
+const MUST_404 = ['/reviews/', '/gtl/'];
+for (const p of MUST_404) {
+  if (isPage(p)) (guardHits['retired page is built (must be a real 404)'] ??= []).push(p);
+  if (redirects.has(p)) (guardHits['retired page is redirected (must be a real 404)'] ??= []).push(p);
+}
+const guardProblems = Object.entries(guardHits).map(([label, files]) => `${label}: ${files.slice(0, 5).join(' ')}${files.length > 5 ? ` (+${files.length - 5} more)` : ''}`);
+if (!ga4Found) guardProblems.push('GA4 measurement ID G-JMYZE458HQ not found in the build');
+if (!metaFound) guardProblems.push('Meta Pixel ID 2351342698972751 not found in the build');
+// Not a failure before launch: the legal pages' effective dates are set to the
+// actual publication date at launch (CLAUDE.md "Prelaunch checklist").
+const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
+  existsSync(join(DIST, p, 'index.html')) && readFileSync(join(DIST, p, 'index.html'), 'utf8').includes('To be set at launch'),
+);
+
 const uniq = (list) => [...new Set(list.map((x) => x.path))];
 const visiblePages = new Set(img.visible.map((x) => x.page));
 const metaRefs = img.og.length + img.twitter.length + img.jsonld.length;
@@ -197,11 +252,19 @@ console.log(
       .join(', '),
 );
 for (const p of search.problems) console.log(`  [search] ${p}`);
+console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
+for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
+console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
+for (const p of guardProblems) console.log(`  [guard] ${p}`);
+if (effectiveDatePending.length)
+  console.log(`  [prelaunch] effective date still "To be set at launch" on: ${effectiveDatePending.map((p) => `/${p}/`).join(' ')}`);
 
 const problems =
   links.redirect.length +
   links['missing-slash'].length +
   links.broken.length +
   allMissing.length +
-  search.problems.length;
+  search.problems.length +
+  redirectProblems.length +
+  guardProblems.length;
 if (strict && problems) process.exit(1);

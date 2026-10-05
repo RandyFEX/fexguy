@@ -44,7 +44,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3><strong>Is it expensive to buy burial insurance?</strong></h3>
+<h2 class="as-h3"><strong>Is it expensive to buy burial insurance?</strong></h2>
 
 <h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What Kind Of Cheap Burial Insurance Policies Should I Avoid?</strong></h2>
 

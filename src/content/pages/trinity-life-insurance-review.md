@@ -116,10 +116,6 @@ sidebar: true
 
 <p>Your beneficiary will receive your full death benefit when you pass away.</p>
 
-<h3>Funeral Cost Percentage Breakdown</h3>
-
-<p><canvas></canvas></p>
-
 <hr>
 
 <h2 id="h-does-trinity-life-have-any-fine-print"><strong>DOES TRINITY LIFE HAVE ANY “FINE PRINT”?</strong></h2>

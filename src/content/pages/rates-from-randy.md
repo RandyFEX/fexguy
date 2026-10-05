@@ -12,7 +12,7 @@ source: "live"
 
 <h1>Get Rates From Randy</h1>
 
-<p><strong>Hi! My name is Randy, and I own FEX Guy or Final Expense Guy (check out our <a href="/reviews/" target="_blank" rel="noreferrer noopener">CLIENT REVIEWS</a>). </strong></p>
+<p><strong>Hi! My name is Randy, and I own FEX Guy or Final Expense Guy. </strong></p>
 
 <p><strong>I invite you to use our actual pricing calculator (red button below) to price shop the best possible rates in your state.</strong></p>
 

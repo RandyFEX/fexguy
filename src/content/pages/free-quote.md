@@ -8,10 +8,12 @@ jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organiza
 source: "live"
 ---
 
+<h1 class="visually-hidden">Free Final Expense Quote</h1>
+
 <p><a href="/"><picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w, /images/logo/final-expense-guy-logo-1200.avif 1200w, /images/logo/final-expense-guy-logo-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="250" src="/images/logo/final-expense-guy-logo-800.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w, /images/logo/final-expense-guy-logo-1200.webp 1200w, /images/logo/final-expense-guy-logo-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)" alt="Final Expense Guy"></picture></a>   Call us at(888) 862-9456</p>
 
 <div data-quote-form></div>
 
-<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a><br>By submitting this form, you agree to our Privacy Policy and give Randy at Final Expense Guy permission to contact you by email, phone, or text. Message and data rates may apply. No purchase required.</p>
+<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a></p>
 
 <p><a href="tel:8888629456" id="callnowbutton">GET RATES NOW (888) 862-9456</a></p>

@@ -277,10 +277,6 @@ Guaranteed Acceptance, But Delayed Coverage
 
 <p>Even at that, you’re better off going with other companies that the <a href="/licenses/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is qualified to help you with.</p>
 
-<h3>Funeral Cost Percentage Breakdown</h3>
-
-<p><canvas></canvas></p>
-
 <p>If you’ve been declined multiple times due to advanced illness, such as terminal cancer, late-stage heart disease, or oxygen dependency, then Colonial Penn’s guaranteed-issue plan could work…if it weren’t so overpriced.</p>
 
 <p>For everyone else, it’s usually a bad deal. Most people over age 50 can qualify for simplified-issue whole life insurance with first-day coverage, no medical exam, and just a few basic health questions. Those plans cost less per dollar of coverage, have higher benefits, and start paying immediately.</p>

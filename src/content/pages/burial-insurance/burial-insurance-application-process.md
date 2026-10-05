@@ -46,7 +46,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3 id="FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS"><br><strong><a href="#FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS">FINAL EXPENSE INSURANCE APPLICATION PROCESS</a></strong></h3>
+<h2 id="FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS" class="as-h3"><br><strong><a href="#FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS">FINAL EXPENSE INSURANCE APPLICATION PROCESS</a></strong></h2>
 
 <h2 id="step-1---get-your-free-quote"><br><strong>Step 1: Get Your Free Quote</strong></h2>
 

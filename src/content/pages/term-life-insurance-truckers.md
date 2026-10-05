@@ -523,18 +523,18 @@ sidebar: true
 
 <p>Dave Ramsey promotes term life for younger working families because it offers high coverage at a lower price. For truck drivers, this applies during working years when income replacement is essential and budgets matter. The challenge is that trucking carries higher health and accident risks, which may limit term eligibility as drivers age. Ramsey also advises having enough coverage to protect the family no matter what, which means older drivers need permanent insurance. The Final Expense Guy helps truck drivers apply those principles without relying on a one-size-fits-all solution.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/primerica-life-insurance-review/">
-<h5>Primerica Life Insurance Review: Costly &amp; Avoidable?</h5>
+<div><a href="/primerica-life-insurance-review/">
+<h3 class="as-h5">Primerica Life Insurance Review: Costly &amp; Avoidable?</h3>
 </a>  <a href="/term-life-insurance-guide-everyone/">
-<h5>Term Life Insurance Guide For Everyone</h5>
+<h3 class="as-h5">Term Life Insurance Guide For Everyone</h3>
 </a>  <a href="/term-life-insurance-doctors/">
-<h5>Term Life Insurance For Doctors</h5>
-</a></p>
+<h3 class="as-h5">Term Life Insurance For Doctors</h3>
+</a></div>

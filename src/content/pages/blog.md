@@ -8,6 +8,8 @@ source: "live"
 sidebar: true
 ---
 
+<h1>Blog</h1>
+
 <h2><a href="/life-insurance-height-weight-guidelines/">Life Insurance Height and Weight Guidelines</a></h2>
 
 <p>Here’s the Bottom Line:• Your height and weight directly affect your life insurance rates• Higher BMI usually means higher premiums or a worse rate class• Each company uses different charts, so results can vary widely• Being slightly overweight can still qualify for good coverage• Very high or low weight can limit options or increase costs…<a class="button-link" href="/life-insurance-height-weight-guidelines/">Read More</a></p>

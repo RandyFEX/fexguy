@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Kidney Conditions Final Expense Whole Life Insurance</p>
+<h1>Kidney Conditions Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance/diabetic-nephropathy/">Diabetic Nephropathy Final Expense Life Insurance</a></h2>
 

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<p>Cancer Final Expense Whole Life Insurance</p>
+<h1>Cancer Final Expense Whole Life Insurance</h1>
 
 <h2><a href="/burial-insurance-with-lung-cancer/">Burial Insurance with Lung Cancer</a></h2>
 

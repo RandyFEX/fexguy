@@ -78,18 +78,15 @@ export const site: SiteConfig = {
   ],
   footer: {
     columns: [
-      '<p><strong>Mailing Address</strong><br>PO Box 270179<br>Flower Mound, TX 75027<br> (Dallas, TX Area)</p>',
-      '<p><strong>Office Hours</strong><br>Monday-Friday<br>9:00 AM-5:00 PM CTL</p>',
+      '<p><strong>Mailing Address</strong><br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>',
       '<p><strong>Phone</strong><br>(888) 862-9456</p>',
       '<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a><br> <a href="/terms-of-use/" target="_blank" rel="noopener">Terms Of Use</a><br> <a href="/licenses/" target="_blank" rel="noopener">Licenses</a></p>',
     ],
-    social: [
-      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/funeral-funds/' },
-      { label: 'Facebook', href: 'https://www.facebook.com/funeralfunds' },
-      { label: 'YouTube', href: 'https://www.youtube.com/c/FuneralFunds' },
-    ],
+    // No social-media links on the site for now (Randy, October 2026): the
+    // old Funeral Funds profiles were removed and not replaced.
+    social: [],
     notes: [
-      '<small>Final Expense Guy or fexguy.com is an independently operated life insurance agency licensed to operate in all 50 states. We specialize in locating 1st-day coverage insurance for our clients. Product and policy availability, features, and benefits may vary by state and health. </small>',
+      '<small>Final Expense Guy or fexguy.com is an independently operated life insurance agency licensed in most states. We specialize in locating 1st-day coverage insurance for our clients. Product and policy availability, features, and benefits may vary by state and health. </small>',
       '<small>We are not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any companies mentioned within Final Expense Guy or fexguy.com. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.</small>',
       '<small>All company names and products are the registered trademarks of their original owners and Final Expense Guy or fexguy.com declares no affiliation, sponsorship, nor any partnerships with any registered trademarks unless otherwise stated.</small>',
       'The content on this website is for general informational and educational purposes only and should not be construed as professional advice. We make no warranties or guarantees regarding the accuracy, completeness, or currency of the information provided. For guidance specific to your situation, please call us directly at 888-862-9456.',

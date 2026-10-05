@@ -859,31 +859,31 @@ sidebar: true
 
 <p>The main disadvantages are higher premiums, smaller benefit limits, and stricter age cutoffs as insurers manage risk at older ages. Most companies cap coverage in the $5,000 to $25,000 range, which may not be enough for someone wanting a larger policy. Seniors must also be careful with call centers that push guaranteed issue plans even when first-day coverage is possible. Despite these limits, final expense insurance remains one of the few reliable ways to provide immediate funds to a family. The Final Expense Guy helps seniors avoid weak plans and get the strongest coverage their health allows.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/finding-affordable-burial-insurance/">
-<h5>Key to Finding Affordable Burial Insurance</h5>
+<div><a href="/finding-affordable-burial-insurance/">
+<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h5>Life Insurance for HIV Positive [Use Caution]</h5>
+<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h5>How Much Does Final Expense Insurance Cost?</h5>
+<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h5>Funeral Plan Insurance Policies</h5>
+<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h5>Final Expense Whole Life Insurance Complete Guide</h5>
-</a></p>
+<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+</a></div>
 
-<h5>5 Comments</h5>
+<h2 class="as-h5">5 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-17549">
-<h6 class="comment-name">Leroy Jennings </h6>                                            
+<h3 class="comment-name as-h6">Leroy Jennings </h3>                                            
 <p>Quote for a 86 year old male</p>
 <div class="comment-meta">
 February 23, 2022 at 3:04 pm                    
@@ -891,7 +891,7 @@ February 23, 2022 at 3:04 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-19153">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Leroy – You can get a quote here – <a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 March 18, 2022 at 10:32 am                    
@@ -899,7 +899,7 @@ March 18, 2022 at 10:32 am
 </div>
 </div>
 <div class="comment" id="comment-25175">
-<h6 class="comment-name">Shirley Tunstall <a rel="external nofollow" href="http://Funeral%20funds%20of%20America.%20Com"></a></h6>                                            
+<h3 class="comment-name as-h6">Shirley Tunstall</h3>                                            
 <p>my name is Melissa and my grandmother is now 86 in very good health, does not smoke and is currently taking no medications. We are interested in getting life insurance for final expenses and final miscellaneous expenses (credit card payments, any bills, etc.) so please get back to us asap. thank you so much, Melissa</p>
 <div class="comment-meta">
 October 12, 2022 at 11:47 pm                    
@@ -907,7 +907,7 @@ October 12, 2022 at 11:47 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-25187">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Hey Melissa – Thank you for allowing us to help you with this. You can use the quoting tool on this page to get a quote for your grandmother. Feel free to call us at 888-862-9456 if you have any more questions.</p>
 <div class="comment-meta">
 October 13, 2022 at 3:08 am                    
@@ -915,7 +915,7 @@ October 13, 2022 at 3:08 am
 </div>
 </div>
 <div class="comment" id="comment-33028">
-<h6 class="comment-name">Teressa Bishop </h6>                                            
+<h3 class="comment-name as-h6">Teressa Bishop </h3>                                            
 <p>I'm looking for a final expense policy for my 86 year old Aunt</p>
 <div class="comment-meta">
 October 10, 2023 at 12:54 pm                    

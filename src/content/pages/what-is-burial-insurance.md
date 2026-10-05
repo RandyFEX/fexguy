@@ -518,31 +518,31 @@ policy</strong></p>
 
 <p>You can claim burial insurance as soon as the death is reported to the insurance company.</p>
 
-<h5>About Final Expense Guy</h5>
+<h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in all 50 states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h5>Keep Reading</h5>
+<h2 class="as-h5">Keep Reading</h2>
 
-<p><a href="/finding-affordable-burial-insurance/">
-<h5>Key to Finding Affordable Burial Insurance</h5>
+<div><a href="/finding-affordable-burial-insurance/">
+<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h5>Life Insurance for HIV Positive [Use Caution]</h5>
+<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h5>How Much Does Final Expense Insurance Cost?</h5>
+<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h5>Funeral Plan Insurance Policies</h5>
+<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h5>Final Expense Whole Life Insurance Complete Guide</h5>
-</a></p>
+<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+</a></div>
 
-<h5>4 Comments</h5>
+<h2 class="as-h5">4 Comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-21144">
-<h6 class="comment-name">Mildred </h6>                                            
+<h3 class="comment-name as-h6">Mildred </h3>                                            
 <p>Looking for a burial insurance that is not outrageous. 10,000 to15,000 can I get a quote</p>
 <div class="comment-meta">
 May 15, 2022 at 7:07 pm                    
@@ -550,7 +550,7 @@ May 15, 2022 at 7:07 pm
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-21228">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Mildred – We are happy to help you with this. Visit this page to get a quote. <a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 May 18, 2022 at 3:09 pm                    
@@ -558,7 +558,7 @@ May 18, 2022 at 3:09 pm
 </div>
 </div>
 <div class="comment" id="comment-27978">
-<h6 class="comment-name">Brown Joseph </h6>                                            
+<h3 class="comment-name as-h6">Brown Joseph </h3>                                            
 <p>Looking for funds for both me and my wife.  No medical exams or medical questions.</p>
 <div class="comment-meta">
 March 1, 2023 at 8:35 am                    
@@ -566,7 +566,7 @@ March 1, 2023 at 8:35 am
 </div>
 <div class="comment-replies">
 <div class="comment" id="comment-28606">
-<h6 class="comment-name">Final Expense Guy </h6>                                            
+<h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p><a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
 <div class="comment-meta">
 March 27, 2023 at 10:52 am                    

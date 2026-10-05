@@ -32,7 +32,7 @@ sidebar: true
 
 <p><strong>Click on my book cover to read my free IUL e-book &amp; buyer’s guide.</strong></p>
 
-<figure><a href="/iul-book/" target="_blank" rel=" noreferrer noopener"><img fetchpriority="high" decoding="async" loading="eager" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt=""></a></figure>
+<figure><a href="/iul-book/" target="_blank" rel=" noreferrer noopener"><img fetchpriority="high" decoding="async" loading="eager" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt="IUL Playbook"></a></figure>
 
 <p>Copyright © 2026 Randy VanderVaate. All rights reserved. No part of this book may be reproduced without written permission.<br>The information in this e-book is for educational purposes only and should not be considered financial, legal, or tax advice. While believed to be accurate at the time of writing, no guarantees are made regarding accuracy or completeness. Any numbers, examples, or illustrations are hypothetical and may not reflect actual results. Individual outcomes will vary based on personal circumstances, underwriting, and policy design.<br></p>
 
