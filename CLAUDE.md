@@ -454,10 +454,11 @@ is in place; see src/content/README.md for how pages were migrated.
   illustrations in public/images/articles/ (Randy-approved prompts; built by
   scripts/optimize-article-images.mjs from the original PNGs, which are kept
   outside the repo: <name>.jpg for the fallback and og/twitter/JSON-LD,
-  <name>-{800,1200,1600}.{avif,webp} for <picture>). The only missing image
-  left is the real 2026 state-regulated mailer on
-  /burial-insurance/state-regulated-life-insurance/ — never AI-generate it;
-  it needs a real (redacted) sample from Randy.
+  <name>-{800,1200,1600}.{avif,webp} for <picture>). The last one, the 2026
+  state-regulated mailer on /burial-insurance/state-regulated-life-insurance/,
+  was removed with its metadata (Randy: no generated stand-in for a real
+  mailer). npm run verify now reports 0 missing images. Pages left without a
+  social image will get a site-wide FEXGuy default social card later.
 - Keep pages static. Don't add an SSR adapter, a CSS framework, web fonts, or
   client-side frameworks without a clear reason: speed and Core Web Vitals
   come first.
