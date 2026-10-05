@@ -7,6 +7,10 @@
 // through a vercel.json redirect and not to a missing (404) URL.
 // Images: visible <img src>/<img srcset>/<source srcset>, Open Graph and
 // Twitter image meta, and image/logo URLs inside JSON-LD must exist in dist/.
+// Search: the pages Pagefind indexes (marked data-pagefind-body) must match
+// the search policy (isSearchable in src/lib/pages.ts) — never a redirect,
+// noindex, landing, archive or excluded page — and /search/ must stay a
+// noindex results page that no redirect points to.
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -103,6 +107,56 @@ for (const file of pages) {
   }
 }
 
+// ---- Site search (Pagefind) ----------------------------------------------
+const CONTENT = new URL('../src/content/pages/', import.meta.url).pathname;
+const frontmatter = new Map(); // URL path -> frontmatter text
+for (const f of walk(CONTENT).filter((f) => f.endsWith('.md') && !/(^|\/)_/.test(f.slice(CONTENT.length)))) {
+  const slug = f.slice(CONTENT.length).replace(/\.md$/, '').replace(/(^|\/)index$/, '');
+  frontmatter.set(slug ? `/${slug}/` : '/', readFileSync(f, 'utf8').split(/^---$/m)[1] ?? '');
+}
+const fm = (text, key) => text.match(new RegExp(`^${key}:\\s*"?([^"\\n]*)"?\\s*$`, 'm'))?.[1];
+// Mirrors isSearchable(): returns [searchable, reason when not].
+function searchPolicy(path) {
+  const text = frontmatter.get(path);
+  if (text === undefined) return [false, 'not a content page'];
+  const flag = fm(text, 'search');
+  if (flag === 'true') return [true];
+  if (flag === 'false') return [false, 'search: false'];
+  if (fm(text, 'draft') === 'true') return [false, 'draft'];
+  if (fm(text, 'noindex') === 'true') return [false, 'noindex'];
+  if (fm(text, 'sitemap') === 'false') return [false, 'sitemap: false'];
+  if (fm(text, 'layout') === 'landing') return [false, 'landing'];
+  if (path.startsWith('/category/')) return [false, '/category/ archive'];
+  return [true];
+}
+const search = { problems: [], indexed: [], excluded: {} };
+for (const file of pages) {
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const html = readFileSync(file, 'utf8');
+  const marked = /\sdata-pagefind-body[\s=>]/.test(html);
+  const [ok, reason] = searchPolicy(page);
+  if (marked) search.indexed.push(page);
+  else search.excluded[reason ?? 'unmarked'] = (search.excluded[reason ?? 'unmarked'] ?? 0) + 1;
+  if (marked && !ok) search.problems.push(`${page} is in the search index but policy says no (${reason})`);
+  if (!marked && ok) search.problems.push(`${page} is searchable by policy but not marked for the index`);
+  if (marked && (redirects.has(page) || page === '/search/'))
+    search.problems.push(`${page} must never be in the search index`);
+}
+const entryFile = join(DIST, 'pagefind/pagefind-entry.json');
+if (!existsSync(entryFile)) search.problems.push('dist/pagefind/ is missing (run npm run build)');
+else {
+  const count = Object.values(JSON.parse(readFileSync(entryFile, 'utf8')).languages).reduce((n, l) => n + l.page_count, 0);
+  if (count !== search.indexed.length)
+    search.problems.push(`Pagefind indexed ${count} pages but ${search.indexed.length} are marked`);
+}
+const searchHtml = existsSync(join(DIST, 'search/index.html')) ? readFileSync(join(DIST, 'search/index.html'), 'utf8') : '';
+if (!searchHtml) search.problems.push('/search/ page is missing');
+else if (!/<meta name="robots" content="[^"]*noindex/.test(searchHtml)) search.problems.push('/search/ is not noindex');
+for (const f of walk(DIST).filter((f) => /sitemap.*\.xml$|llms\.txt$/.test(f)))
+  if (/fexguy\.com\/search\//.test(readFileSync(f, 'utf8'))) search.problems.push(`/search/ is listed in ${f.slice(DIST.length)}`);
+for (const [source, dest] of redirects)
+  if (/^(https?:\/\/[^/]+)?\/search(\/|\?|$)/.test(dest)) search.problems.push(`redirect ${source} -> ${dest} (no catch-all to /search/)`);
+
 const uniq = (list) => [...new Set(list.map((x) => x.path))];
 const visiblePages = new Set(img.visible.map((x) => x.page));
 const metaRefs = img.og.length + img.twitter.length + img.jsonld.length;
@@ -135,6 +189,19 @@ for (const p of allMissing) {
   console.log(`  ${p}  [${kinds}]  ${shown}`);
 }
 
+console.log(
+  `Search index: ${search.indexed.length} pages | not indexed: ` +
+    Object.entries(search.excluded)
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, v]) => `${k} ${v}`)
+      .join(', '),
+);
+for (const p of search.problems) console.log(`  [search] ${p}`);
+
 const problems =
-  links.redirect.length + links['missing-slash'].length + links.broken.length + allMissing.length;
+  links.redirect.length +
+  links['missing-slash'].length +
+  links.broken.length +
+  allMissing.length +
+  search.problems.length;
 if (strict && problems) process.exit(1);

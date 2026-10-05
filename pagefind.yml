@@ -1,0 +1,8 @@
+# Pagefind (internal site search) — runs after `astro build` (see package.json).
+# Only elements marked data-pagefind-body are indexed (ContentLayout, via
+# isSearchable). Inside them, leave out lead-capture and CTA material.
+site: dist
+exclude_selectors:
+  - ".quote-box"
+  - ".quote-cta"
+  - "#callnowbutton"

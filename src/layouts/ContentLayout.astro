@@ -9,7 +9,7 @@
 import BaseLayout from './BaseLayout.astro';
 import QuoteBox from '@/components/lead/QuoteBox.astro';
 import type { PageEntry } from '@/lib/pages';
-import { pagePath } from '@/lib/pages';
+import { isSearchable, pagePath } from '@/lib/pages';
 
 export interface Props {
   entry: PageEntry;
@@ -33,7 +33,9 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   stickyCall={!hasOwnCallButton}
 >
   <div class:list={['container page', { 'page--sidebar': d.sidebar }]}>
-    <div class="prose wp-content">
+    {/* Pagefind indexes only this element (H1 + article body), never the
+       header, nav, sidebar quote box or footer. */}
+    <div class="prose wp-content" data-pagefind-body={isSearchable(entry) ? '' : undefined}>
       <slot />
     </div>
     {

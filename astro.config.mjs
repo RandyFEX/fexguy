@@ -60,7 +60,8 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const path = new URL(page).pathname;
-        return !path.startsWith('/404') && !excluded.has(path);
+        // /search/ is an internal search-results page (noindex, follow).
+        return !path.startsWith('/404') && path !== '/search/' && !excluded.has(path);
       },
     }),
   ],

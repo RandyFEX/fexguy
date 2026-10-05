@@ -481,18 +481,32 @@ is in place; see src/content/README.md for how pages were migrated.
 - Phone placements: header nav, CTA bar under the header, pre-footer CTA,
   mobile call button (`src/components/lead/`). No pop-ups.
 
-## Planned: site search (build after the URL/redirect cleanup)
+## Site search (Pagefind, built October 2026)
 
-- Randy wants real site search at /search/ (requirement recorded October
-  2026; not built yet). It searches the published Astro content (titles and
-  body text) and returns relevant existing pages only: never retired URLs,
-  404s, drafts, or obsolete workflow/utility pages.
-- A search box must be available near the bottom of every page, as on the
-  old site.
+- /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
+  is built by `pagefind` after `astro build` (`npm run build`; config in
+  `pagefind.yml`) into dist/pagefind/. Queries use `/search/?q=term`; the old
+  WordPress `?s=term` also works (rewritten to `?q=` in the address bar).
+  Don't add a redirect for `/?s=`. Results: H1, URL path, highlighted
+  excerpt, by relevance, 10 at a time with "Show more". Empty query shows
+  the Resources-menu guides; no results shows tips, the guides and the
+  888-862-9456 call button. No GA4/Meta events for search.
+- What is indexed: only the H1 and article body (`data-pagefind-body` on the
+  ContentLayout prose), never nav, footer, sidebar, quote forms or CTAs.
+  Which pages: `isSearchable()` in `src/lib/pages.ts` — content pages that
+  are not draft, noindex, `sitemap: false`, landing layout or /category/
+  archives. Frontmatter `search: true|false` overrides it (Randy, October
+  2026): `search: true` on /12-step-final-planning-guide/ (stays noindex for
+  Google); `search: false` on /lbl/, /forms/, /privacy-policy/,
+  /funeral-relief-program/, /senior-benefits/, /welcome/. Redirected,
+  retired and 404 URLs have no page, so they can't be indexed.
+- /search/ is `noindex, follow` (production), not in the sitemap, llms.txt
+  or the index. A plain HTML search form sits at the bottom of the normal
+  footer (not on landing pages).
 - The old WordPress/Rank Math behavior that sent missing URLs to /search/ is
-  permanently retired and must never be recreated. The migrated /search/ page
-  ("SEARCH - 404 REDIRECT") is not content to keep; the new search replaces
-  it. Don't retire or redirect /search/ in the meantime.
+  permanently retired and must never be recreated: no redirect, rewrite or
+  404 handler may point to /search/ (`npm run verify` fails on such a
+  redirect).
 
 ## Where things go
 
@@ -521,4 +535,7 @@ Run `npm run check` and `npm run build`. Both must pass with 0 errors. Then
 run `npm run verify` (scripts/check-dist.mjs): it crawls dist/ for internal
 links that are broken, go through a redirect or miss the trailing slash, and
 for missing image files, split into visible images (`<img>`/srcset) and
-metadata (Open Graph, Twitter, JSON-LD). Add `-- --strict` to fail on any.
+metadata (Open Graph, Twitter, JSON-LD). It also checks the search index:
+the pages marked for Pagefind must match `isSearchable()` and the Pagefind
+page count; /search/ must be noindex, out of the sitemap/llms.txt and never
+a redirect destination. Add `-- --strict` to fail on any.

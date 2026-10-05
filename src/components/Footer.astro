@@ -30,6 +30,15 @@ const { columns, social, notes } = site.footer;
       )
     }
     {notes.length > 0 && <div class="site-footer__notes">{notes.map((html) => <p set:html={html} />)}</div>}
+    {/* Site search (as on the live site, the footer's last element). Plain
+       HTML: submits to /search/?q=… with no JavaScript on this page. */}
+    <form class="site-footer__search" role="search" action="/search/" method="get">
+      <label for="footer-search">Search</label>
+      <div class="site-footer__search-row">
+        <input id="footer-search" type="search" name="q" required autocomplete="off" />
+        <button class="btn btn--primary" type="submit">Search</button>
+      </div>
+    </form>
   </div>
 </footer>
 
@@ -64,6 +73,33 @@ const { columns, social, notes } = site.footer;
     display: inline-flex;
     align-items: center;
     min-height: var(--tap-target);
+  }
+  .site-footer__search {
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--space-6);
+    padding-top: var(--space-6);
+    max-width: 32rem;
+  }
+  .site-footer__search label {
+    display: block;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+  }
+  .site-footer__search-row {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .site-footer__search input {
+    flex: 1;
+    min-width: 0;
+    min-height: var(--tap-target);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    border-radius: var(--radius);
+    background: var(--color-bg);
+    font: inherit;
+    color: var(--color-text);
   }
   .site-footer__notes {
     border-top: 1px solid var(--color-border);

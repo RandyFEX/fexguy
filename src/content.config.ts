@@ -44,6 +44,10 @@ const pages = defineCollection({
     source: z.string().optional(),
     /** Drafts are never built. */
     draft: z.boolean().default(false),
+    /** Internal site search (Pagefind). Unset = automatic: indexable content
+     * pages are searchable; noindex, sitemap-false, landing and /category/
+     * pages are not. true/false overrides that (see isSearchable). */
+    search: z.boolean().optional(),
   }),
 });
 

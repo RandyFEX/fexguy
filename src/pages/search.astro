@@ -1,0 +1,143 @@
+---
+// Site search results (/search/?q=term; ?s=term from old WordPress-style
+// links also works). A real search page only — never a catch-all for
+// missing or retired URLs. Results come from the Pagefind index that
+// `npm run build` generates from the built pages (see pagefind.yml and
+// isSearchable in src/lib/pages.ts); /search/ itself is not indexed, not in
+// the sitemap and not in llms.txt.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PhoneButton from '@/components/PhoneButton.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { site } from '@/config/site';
+
+// "Popular guides": the Resources menu links.
+const guides = site.primaryNav.find((item) => item.label === 'RESOURCES')?.children ?? [];
+---
+
+<BaseLayout
+  title={pageTitle('Search')}
+  description="Search Final Expense Guy's articles and guides."
+  robots="noindex, follow"
+  noindex
+>
+  <div class="container search-page">
+    <h1>Search</h1>
+
+    <form class="search-form" role="search" action="/search/" method="get">
+      <label for="search-q">Search Final Expense Guy</label>
+      <div class="search-form__row">
+        <input id="search-q" type="search" name="q" autocomplete="off" spellcheck="false" />
+        <button class="btn btn--primary" type="submit">Search</button>
+      </div>
+    </form>
+
+    <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+
+    <ol class="search-results" id="search-results" hidden></ol>
+    <button class="btn btn--secondary search-more" id="search-more" type="button" hidden>Show more results</button>
+
+    <div class="search-empty" id="search-none" hidden>
+      <h2>Search tips</h2>
+      <ul>
+        <li>Check the spelling of your search words.</li>
+        <li>Try fewer or more general words, such as a health condition or an insurance company name.</li>
+        <li>Browse the popular guides below.</li>
+      </ul>
+      <p>Prefer to ask? Call us directly:</p>
+      <PhoneButton />
+    </div>
+
+    <section class="search-guides" id="search-guides" aria-labelledby="search-guides-title">
+      <h2 id="search-guides-title">Popular guides</h2>
+      <ul>
+        {guides.map((g) => (
+          <li>
+            <a href={g.href}>{g.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <noscript>
+      <p class="search-noscript">Search needs JavaScript. You can browse our popular guides above or call us at 888-862-9456.</p>
+    </noscript>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initSearch } from '@/scripts/search';
+  initSearch();
+</script>
+
+<style>
+  .search-page {
+    max-width: calc(var(--prose-max) + 2 * var(--space-4));
+    padding-block: var(--space-8) var(--space-12);
+  }
+  .search-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+  }
+  .search-form__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .search-form input {
+    flex: 1 1 14rem;
+    min-height: var(--tap-target);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    border-radius: var(--radius);
+    font: inherit;
+  }
+  .search-status {
+    margin-block: var(--space-6) var(--space-4);
+    color: var(--color-text-muted);
+  }
+  .search-status:empty {
+    display: none;
+  }
+  .search-results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .search-results :global(li) {
+    padding-block: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .search-results :global(h2) {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+  .search-results :global(.search-result__path) {
+    margin: var(--space-1) 0;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    overflow-wrap: anywhere;
+  }
+  .search-results :global(.search-result__excerpt) {
+    margin: 0;
+  }
+  .search-results :global(mark) {
+    background: #fde68a;
+    color: inherit;
+    padding: 0 0.1em;
+  }
+  .search-more {
+    margin-top: var(--space-6);
+  }
+  .search-empty,
+  .search-guides {
+    margin-top: var(--space-8);
+  }
+  .search-guides ul {
+    padding-left: var(--space-6);
+  }
+  .search-guides li {
+    margin-block: var(--space-2);
+  }
+</style>
