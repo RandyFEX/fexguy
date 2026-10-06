@@ -17,7 +17,7 @@ sidebar: true
 
 <h2><a href="/burial-insurance/stent/">Final Expense Insurance With A  Stent</a></h2>
 
-<p>Here’s the Bottom Line:• A heart stent puts you in a higher-risk insurance category• Applying within 6 to 12 months often leads to delays or denials• Many people get pushed into expensive waiting period policies• Multiple stents or a heart history can raise your monthly cost fast• The wrong timing can cost you better coverage…<a class="button-link" href="/burial-insurance/stent/">Read More</a></p>
+<p>Here’s the Bottom Line: • A heart stent puts you in a higher-risk insurance category • Applying within 6 to 12 months often leads to delays or denials • Many people get pushed into expensive waiting period policies • Multiple stents or a heart history can raise your monthly cost fast • The wrong timing can cost you better coverage…<a class="button-link" href="/burial-insurance/stent/">Read More</a></p>
 
 <h2><a href="/burial-insurance/pacemaker/">Final Expense Insurance With A Pacemaker Implant</a></h2>
 
@@ -25,15 +25,15 @@ sidebar: true
 
 <h2><a href="/burial-insurance/congestive-heart-failure/">Final Expense Life Insurance For Congestive Heart Failure</a></h2>
 
-<p>Here’s the Bottom Line:• Congestive heart failure makes approval tougher and limits your best options• Recent symptoms or hospital visits can trigger automatic waiting periods• Many people get stuck in overpriced 2-year delay policies• Some plans only refund premiums instead of paying full benefits early• Applying with the wrong company can lead to denial or…<a class="button-link" href="/burial-insurance/congestive-heart-failure/">Read More</a></p>
+<p>Here’s the Bottom Line: • Congestive heart failure makes approval tougher and limits your best options • Recent symptoms or hospital visits can trigger automatic waiting periods • Many people get stuck in overpriced 2-year delay policies • Some plans only refund premiums instead of paying full benefits early • Applying with the wrong company can lead to denial or…<a class="button-link" href="/burial-insurance/congestive-heart-failure/">Read More</a></p>
 
 <h2><a href="/burial-insurance/endocarditis-heart-infection/">Final Expense Life Insurance With Endocarditis &amp; Myocarditis</a></h2>
 
-<p>Here’s the Bottom Line:• Endocarditis is a serious heart infection that raises insurance risk• Recent infections can lead to denial or automatic waiting periods• Many people get pushed into expensive guaranteed issue policies• Applying too soon after treatment can hurt your approval chances• Some plans won’t pay full benefits for the first 2 years Burial…<a class="button-link" href="/burial-insurance/endocarditis-heart-infection/">Read More</a></p>
+<p>Here’s the Bottom Line: • Endocarditis is a serious heart infection that raises insurance risk • Recent infections can lead to denial or automatic waiting periods • Many people get pushed into expensive guaranteed issue policies • Applying too soon after treatment can hurt your approval chances • Some plans won’t pay full benefits for the first 2 years Burial…<a class="button-link" href="/burial-insurance/endocarditis-heart-infection/">Read More</a></p>
 
 <h2><a href="/burial-insurance-defibrillator/">Burial Insurance with a Defibrillator</a></h2>
 
-<p>Here’s the Bottom Line: • A defibrillator puts you in a high-risk category immediately• Recent implant within 2 years limits you to guaranteed issue plans• Most companies won’t offer first-day coverage with a serious heart history• Guaranteed issue plans cost more and delay payouts for 2 years• Applying wrong can get you declined or stuck…<a class="button-link" href="/burial-insurance-defibrillator/">Read More</a></p>
+<p>Here’s the Bottom Line: • A defibrillator puts you in a high-risk category immediately • Recent implant within 2 years limits you to guaranteed issue plans • Most companies won’t offer first-day coverage with a serious heart history • Guaranteed issue plans cost more and delay payouts for 2 years • Applying wrong can get you declined or stuck…<a class="button-link" href="/burial-insurance-defibrillator/">Read More</a></p>
 
 <h2><a href="/burial-insurance/heart-surgery/">Burial Insurance with Circulatory Surgery</a></h2>
 

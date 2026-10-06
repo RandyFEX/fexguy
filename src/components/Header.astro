@@ -47,18 +47,27 @@ const sizes = '(min-width: 56rem) 358px, 293px';
     min-height: 4rem;
     padding-block: var(--space-2);
   }
+  /* The logo is sized by width (36px tall, 44px from 56rem) and may shrink
+     beside the Menu button on narrow phones; height follows the width so the
+     wordmark keeps its proportions (2034 x 250) instead of being squeezed. */
   .site-header__brand {
     display: inline-flex;
     align-items: center;
+    min-width: 0;
     min-height: var(--tap-target);
   }
+  .site-header__brand picture {
+    display: block;
+    min-width: 0;
+  }
   .site-header__brand img {
-    height: 2.25rem;
-    width: auto;
+    width: calc(2.25rem * 2034 / 250);
+    max-width: 100%;
+    height: auto;
   }
   @media (min-width: 56rem) {
     .site-header__brand img {
-      height: 2.75rem;
+      width: calc(2.75rem * 2034 / 250);
     }
   }
 </style>

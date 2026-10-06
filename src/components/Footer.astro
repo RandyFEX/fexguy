@@ -106,9 +106,14 @@ const { columns, social, notes } = site.footer;
     font: inherit;
     color: var(--color-text);
   }
+  /* One size for every disclaimer paragraph (14px); most are wrapped in
+     <small>, which would otherwise shrink them to about 12px. */
   .site-footer__notes {
     border-top: 1px solid var(--color-border);
     padding-top: var(--space-4);
     font-size: 0.875rem;
+  }
+  .site-footer__notes :global(small) {
+    font-size: inherit;
   }
 </style>

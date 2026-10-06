@@ -79,7 +79,7 @@ export const site: SiteConfig = {
   footer: {
     columns: [
       '<p><strong>Mailing Address</strong><br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>',
-      '<p><strong>Phone</strong><br>(888) 862-9456</p>',
+      '<p><strong>Phone</strong><br><a href="tel:8888629456">(888) 862-9456</a></p>',
       '<p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a><br> <a href="/terms-of-use/" target="_blank" rel="noopener">Terms Of Use</a><br> <a href="/licenses/" target="_blank" rel="noopener">Licenses</a></p>',
     ],
     // No social-media links on the site for now (Randy, October 2026): the

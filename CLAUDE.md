@@ -680,6 +680,9 @@ is in place; see src/content/README.md for how pages were migrated.
       appropriately;
     - current "A-rated" / "top-rated carrier" claims (e.g. Trinity Life,
       Family Benefit Life).
+  - /about/: "main office located in the Dallas, TX area" (the "Dallas, TX
+    Area" form is retired for the published address) and "I work with
+    strategic A+ rated insurance companies" (a rating claim).
 
 ## Before committing
 

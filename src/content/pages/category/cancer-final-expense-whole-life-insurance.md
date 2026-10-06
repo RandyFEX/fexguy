@@ -13,8 +13,8 @@ sidebar: true
 
 <h2><a href="/burial-insurance-with-lung-cancer/">Burial Insurance with Lung Cancer</a></h2>
 
-<p>Here’s the Bottom Line:• Lung cancer severely limits your life insurance options right now• Active or recent cancer usually leads to denial or waiting period plans• Most people get pushed into expensive guaranteed issue policies• Coverage is smaller and costs much more monthly• Applying too early can block better options later Getting burial insurance with…<a class="button-link" href="/burial-insurance-with-lung-cancer/">Read More</a></p>
+<p>Here’s the Bottom Line: • Lung cancer severely limits your life insurance options right now • Active or recent cancer usually leads to denial or waiting period plans • Most people get pushed into expensive guaranteed issue policies • Coverage is smaller and costs much more monthly • Applying too early can block better options later Getting burial insurance with…<a class="button-link" href="/burial-insurance-with-lung-cancer/">Read More</a></p>
 
 <h2><a href="/burial-insurance-breast-cancer/">Burial Insurance After Breast Cancer</a></h2>
 
-<p>Here’s the Bottom Line:• Breast cancer can limit your options or increase your monthly cost• Recent diagnosis usually pushes you into 2-year waiting period policies• Active treatment often leads to denial or guaranteed issue only• Applying too soon can block better coverage later• The wrong company can overcharge you for the same policy Getting burial…<a class="button-link" href="/burial-insurance-breast-cancer/">Read More</a></p>
+<p>Here’s the Bottom Line: • Breast cancer can limit your options or increase your monthly cost • Recent diagnosis usually pushes you into 2-year waiting period policies • Active treatment often leads to denial or guaranteed issue only • Applying too soon can block better coverage later • The wrong company can overcharge you for the same policy Getting burial…<a class="button-link" href="/burial-insurance-breast-cancer/">Read More</a></p>

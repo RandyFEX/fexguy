@@ -1,8 +1,9 @@
 // Wide content tables scroll sideways on small screens (global.css gives them
 // display: block; overflow-x: auto). A scroll container must be reachable by
 // keyboard (WCAG 2.2 SC 2.1.1), so every table that actually overflows gets
-// tabindex="0" (arrow keys then scroll it); tables that fit get no extra tab
-// stop. Re-checked when the viewport size changes.
+// tabindex="0" (arrow keys then scroll it) and a small "Scroll →" hint above
+// it, so readers can see there are more columns; tables that fit get neither.
+// Re-checked when the viewport size changes.
 const TABLES = '.wp-content table, .prose table';
 
 function update(): void {
@@ -14,6 +15,17 @@ function update(): void {
     } else if (!scrolls && table.dataset.scrollFocus !== undefined) {
       table.removeAttribute('tabindex');
       delete table.dataset.scrollFocus;
+    }
+    const prev = table.previousElementSibling;
+    const hint = prev instanceof HTMLElement && prev.classList.contains('table-scroll-hint') ? prev : null;
+    if (scrolls && !hint) {
+      const el = document.createElement('div');
+      el.className = 'table-scroll-hint';
+      el.setAttribute('aria-hidden', 'true');
+      el.textContent = 'Scroll →';
+      table.before(el);
+    } else if (!scrolls && hint) {
+      hint.remove();
     }
   });
 }

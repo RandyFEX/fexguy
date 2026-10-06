@@ -32,7 +32,7 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   layout={d.layout}
   stickyCall={!hasOwnCallButton}
 >
-  <div class:list={['container page', { 'page--sidebar': d.sidebar }]}>
+  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing' }]}>
     {/* Pagefind indexes only this element (H1 + article body), never the
        header, nav, sidebar quote box or footer. */}
     <div class="prose wp-content" data-pagefind-body={isSearchable(entry) ? '' : undefined}>
@@ -54,6 +54,10 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   }
   .page__aside {
     margin-top: var(--space-8);
+  }
+  /* Landing pages (no site header or sidebar): center the single column. */
+  .page--landing .prose {
+    margin-inline: auto;
   }
   @media (min-width: 64rem) {
     .page--sidebar {

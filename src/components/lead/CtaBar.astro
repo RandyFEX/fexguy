@@ -42,6 +42,10 @@ import { lead } from '@/config/lead';
     padding-inline: var(--space-3);
     font-size: 0.8125rem;
   }
+  /* Never split the phone number across lines. */
+  .cta-bar__phone {
+    white-space: nowrap;
+  }
   @media (min-width: 30rem) {
     .cta-bar .btn {
       padding-inline: var(--space-4);

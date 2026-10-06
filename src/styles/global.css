@@ -326,6 +326,19 @@ a:hover {
   font-size: 0.9375rem;
 }
 
+/* "Scroll →" above a table that is wider than the screen (added by
+   src/scripts/scroll-tables.ts only while the table actually overflows). */
+.table-scroll-hint {
+  margin-top: var(--space-6);
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+.table-scroll-hint + table {
+  margin-top: var(--space-1);
+}
+
 .wp-content th {
   background: var(--color-surface);
 }
@@ -541,6 +554,10 @@ a:hover {
   background: var(--color-call);
   color: #ffffff;
   font-weight: 800;
+  /* One line, so the phone number never splits; the text shrinks a little
+     on the narrowest phones (about 14.4px at 320px wide) to fit. */
+  font-size: min(1.0625rem, 4.5vw);
+  white-space: nowrap;
   text-decoration: none;
 }
 
