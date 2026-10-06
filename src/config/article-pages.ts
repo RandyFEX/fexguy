@@ -243,6 +243,38 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/trustage-life-insurance-review/': { family: 'review', crumb: 'TruStage' },
   '/americo-life-insurance-quit-smoking-advantage/': { family: 'review', crumb: 'Americo Quit Smoking Advantage' },
 
+  // Review rollout (October 2026): the remaining company-review pages, with
+  // the same breadcrumb convention as the pilot. Held for content review:
+  // Aflac, T2, both Colonial Penn pages and Trinity.
+  '/5-reasons-you-should-be-worried-about-aarp-life-insurance/': { family: 'review', crumb: 'AARP' },
+  '/aarp-burial-insurance-review/': { family: 'review', crumb: 'AARP' },
+  '/aarp-life-insurance-review/': { family: 'review', crumb: 'AARP' },
+  '/baltimore-life-burial-insurance-review/': { family: 'review', crumb: 'Baltimore Life' },
+  '/big-lou-term-life-insurance-review/': { family: 'review', crumb: 'Big Lou' },
+  '/burial-insurance/american-amicable-life-insurance-review/': { family: 'review', crumb: 'American Amicable' },
+  '/cica-life-burial-insurance-review/': { family: 'review', crumb: 'CICA Life' },
+  '/ethos-life-insurance-review/': { family: 'review', crumb: 'Ethos' },
+  '/family-benefit-life-burial-insurance-review/': { family: 'review', crumb: 'Family Benefit Life' },
+  '/fidelity-life-burial-insurance-review/': { family: 'review', crumb: 'Fidelity Life' },
+  '/foresters-burial-insurance-review/': { family: 'review', crumb: 'Foresters' },
+  '/gerber-life-insurance-review/': { family: 'review', crumb: 'Gerber Life' },
+  '/great-western-burial-insurance-review/': { family: 'review', crumb: 'Great Western' },
+  '/guarantee-trust-life-insurance-review/': { family: 'review', crumb: 'Guarantee Trust Life' },
+  '/liberty-bankers-burial-insurance-review/': { family: 'review', crumb: 'Liberty Bankers' },
+  '/open-care-life-insurance-review/': { family: 'review', crumb: 'Open Care' },
+  '/phoenix-life-burial-insurance-review-pros-cons/': { family: 'review', crumb: 'Phoenix Life' },
+  '/primerica-life-insurance-review/': { family: 'review', crumb: 'Primerica' },
+  '/prosperity-life-burial-insurance-review-pros-cons/': { family: 'review', crumb: 'Prosperity Life' },
+  '/security-national-burial-insurance-review/': { family: 'review', crumb: 'Security National' },
+  '/senior-life-insurance-review/': { family: 'review', crumb: 'Senior Life' },
+  '/state-farm/': { family: 'review', crumb: 'State Farm' },
+  '/transamerica-burial-insurance-review/': { family: 'review', crumb: 'Transamerica' },
+  '/united-heritage-burial-insurance-review/': { family: 'review', crumb: 'United Heritage' },
+  '/valife/': { family: 'review', crumb: 'VALife' },
+  '/globe-life-price-increase/': { family: 'review', crumb: 'Globe Life' },
+  '/trustage-price-increase/': { family: 'review', crumb: 'TruStage' },
+  '/senior-legacy-vs-senior-legacy-life/': { family: 'review', crumb: 'Senior Legacy' },
+
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
