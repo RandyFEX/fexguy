@@ -35,12 +35,14 @@ export interface HubGroup {
 /** What the pass found and did on a page (for audits; not rendered). */
 export interface EnhanceReport {
   bottomLine: 'one paragraph' | 'two paragraphs' | null;
+  bottomLineNotes: string[];
   oldByline: boolean;
   oldToc: { links: string[]; missingTargets: string[] } | null;
   oldBio: boolean;
   keepReading: boolean;
   ctaButtons: string[];
   ctaNotes: number;
+  faqAnswersKept: number;
   duplicateIds: string[];
   faq: 'headings' | 'paragraphs' | null;
   detailsLists: number;
@@ -100,12 +102,14 @@ const BYLINE_PARTS: RegExp[] = [
 export function enhanceArticle(html: string, options: { variant?: 'article' | 'hub' } = {}): EnhancedArticle {
   const report: EnhanceReport = {
     bottomLine: null,
+    bottomLineNotes: [],
     oldByline: false,
     oldToc: null,
     oldBio: false,
     keepReading: false,
     ctaButtons: [],
     ctaNotes: 0,
+    faqAnswersKept: 0,
     duplicateIds: [],
     faq: null,
     detailsLists: 0,
@@ -144,21 +148,35 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     }
   }
 
-  // 3. Bottom line / key takeaways: the first paragraph, with its lines in the
-  //    same paragraph or in the next one.
+  // 3. Bottom line / key takeaways: "Here's the Bottom Line:" and its "•"
+  //    lines, in the same paragraph or the next one. Forms found on the site:
+  //    the lines after the bold label; the first <br> (and "• ") inside the
+  //    bold label; a WordPress block id on the paragraph; one introductory
+  //    paragraph before it (that paragraph stays in the intro, after the
+  //    panel). Only taken when every line is a "•" line.
   let takeaways: EnhancedArticle['takeaways'];
-  rest = rest.replace(
-    /^<p><strong>(Here[’']s the Bottom Line:?)<\/strong>(?:\s*(<br\s*\/?>[\s\S]*?)<\/p>|<\/p>\s*<p>(\s*[•·][\s\S]*?)<\/p>)\s*/,
-    (_, label: string, same: string | undefined, next: string | undefined) => {
-      const items = (same ?? next ?? '')
-        .split(/<br\s*\/?>/)
-        .map((l) => l.replace(/^\s*[•·]\s*/, '').trim())
-        .filter(Boolean);
-      takeaways = { label: label.trim(), items };
-      report.bottomLine = same !== undefined ? 'one paragraph' : 'two paragraphs';
-      return '';
-    },
-  );
+  {
+    const P_OPEN = '<p(?:\\s+id="[^"]*")?>';
+    const IN_PARA = '(?:(?!<\\/p>)[\\s\\S])*';
+    const re = new RegExp(
+      `^((?:<p>${IN_PARA}<\\/p>\\s*)?)${P_OPEN}<strong>(Here[’']s the Bottom Line:?)((?:\\s*<br\\s*\\/?>)?(?:\\s*[•·]\\s*)?)<\\/strong>(${IN_PARA})<\\/p>\\s*((?:${P_OPEN}(\\s*[•·]${IN_PARA})<\\/p>\\s*)?)`,
+    );
+    rest = rest.replace(re, (match, intro: string, label: string, tail: string, same: string, nextPara: string, next?: string) => {
+      const inline = (tail + same).trim();
+      const lines = inline ? inline : (next ?? '');
+      if (inline && !/^<br/.test(inline)) return match;
+      const raw = lines.split(/<br\s*\/?>/).map((l) => l.trim()).filter(Boolean);
+      if (!raw.length || !raw.every((l) => /^[•·]/.test(l))) return match;
+      takeaways = { label: label.trim(), items: raw.map((l) => l.replace(/^[•·]\s*/, '').trim()).filter(Boolean) };
+      report.bottomLine = inline ? 'one paragraph' : 'two paragraphs';
+      if (/^\s*<br/.test(tail) || /[•·]/.test(tail)) report.bottomLineNotes.push('line break inside the bold label');
+      if (/^<p\s+id=/.test(match.slice(intro.length))) report.bottomLineNotes.push('WordPress block id on the paragraph');
+      if (intro) report.bottomLineNotes.push('after an introductory paragraph');
+      // The intro paragraph stays; a bullet paragraph after a one-paragraph
+      // Bottom Line isn't part of it.
+      return intro + (inline ? nextPara : '');
+    });
+  }
 
   // 4. Legacy blocks the template replaces.
   rest = rest.replace(
@@ -184,6 +202,13 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     report.ctaButtons.push(label.trim());
     return '';
   });
+  rest = rest.replace(
+    /<div class="button-link">\s*<a [^>]*href="(?:#quote|\/free-quote\/)"[^>]*>([\s\S]*?)<\/a>\s*<\/div>\s*/g,
+    (_, label: string) => {
+      report.ctaButtons.push(htmlToText(label));
+      return '';
+    },
+  );
 
   // 5. A <br> right after an opening tag only adds an empty line.
   rest = rest.replace(/(<(?:h[2-6]|p)(?:\s[^>]*)?>)\s*(?:<br\s*\/?>\s*)+/g, '$1');
@@ -224,12 +249,12 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
   }
 
   // 8. FAQ section: from the "Frequently Asked Questions" H2 to the next H2.
-  //    Questions are <h3>s, or else paragraphs that are wholly bold.
+  //    Questions are <h3>s, or else wholly bold paragraphs ending in "?".
   rest = rest.replace(
     /(<h2[^>]*>(?:\s|<[^>]+>)*Frequently Asked Questions[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2|$)/i,
     (match, heading: string, section: string) => {
       const byHeading = /<h3/.test(section);
-      const q = byHeading ? /(?=<h3)/ : /(?=<p><strong>[^<]*<\/strong><\/p>)/;
+      const q = byHeading ? /(?=<h3)/ : /(?=<p><strong>[^<]*\?\s*<\/strong><\/p>)/;
       const parts = section.split(q);
       const lead = q.test(parts[0]) ? '' : parts.shift() ?? '';
       if (!parts.length) return match;
@@ -283,10 +308,21 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
   });
 
   // 12. Calls to action written into the migrated text ("…form on this page…"):
-  //     same words, quiet note style.
+  //     same words, quiet note style, except when the paragraph is an FAQ
+  //     question's whole answer (then it stays an ordinary answer).
+  rest = rest.replace(/(<div class="article-faq__item">)([\s\S]*?)(<\/div>)/g, (m, open: string, inner: string, close: string) => {
+    const answer = inner.replace(/^\s*<(h3[^>]*|p class="article-faq__q")>[\s\S]*?<\/(?:h3|p)>/, '');
+    const blocks = answer.match(/<(?:p|ul|ol|table|figure|div|blockquote|details|h[2-6])\b/g) ?? [];
+    if (blocks.length !== 1 || blocks[0] !== '<p') return m;
+    return open + inner.replace(/<p>(?=(?:(?!<\/p>)[\s\S])*<\/p>\s*$)/, '<p data-faq-answer>') + close;
+  });
   rest = rest.replace(/<p>((?:(?!<\/p>)[\s\S])*?(?:quote request form|form on this page)(?:(?!<\/p>)[\s\S])*?)<\/p>/gi, (_, inner: string) => {
     report.ctaNotes++;
     return `<p class="art-note">${inner.replace(/<\/?strong>/g, '')}</p>`;
+  });
+  rest = rest.replace(/<p data-faq-answer>((?:(?!<\/p>)[\s\S])*?<\/p>)/g, (_, inner: string) => {
+    if (/quote request form|form on this page/i.test(inner)) report.faqAnswersKept++;
+    return `<p>${inner}`;
   });
 
   // 13. Hub pages: paragraphs of "✓ …" / "✘ …" lines under bold labels become

@@ -9,8 +9,11 @@ interface Props {
   hub?: RelatedLink;
 }
 const { links, hub } = Astro.props;
+// Nothing to show without links: no heading, no wrapper.
+const show = links.length > 0 || !!hub;
 ---
 
+{show && (
 <section class="related" aria-labelledby="related-title" data-pagefind-ignore>
   <h2 class="related__title" id="related-title">Related Topics</h2>
   <ul class="related__list" role="list">
@@ -33,6 +36,7 @@ const { links, hub } = Astro.props;
     )
   }
 </section>
+)}
 
 <style>
   /* Editorial navigation: a ruled list of links, not cards. */

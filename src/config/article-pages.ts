@@ -6,14 +6,16 @@
 // PILOT (October 2026): five representative page types. Don't add more pages
 // until Randy approves the rollout.
 //
-// Per page:
-//   section      breadcrumb parent (src/lib/article/config.ts → SECTIONS);
-//                omitted for a top-level page (Home › page)
-//   crumb        short label for the page's own breadcrumb
+// Per page (src/lib/article/config.ts has the types and defaults):
+//   family       'health' or 'review': sets the breadcrumb section
+//   section      breadcrumb parent (SECTIONS), or 'none' for a top-level page
+//                (Home › page); required when no `family` gives it
+//   crumb        the page's own breadcrumb label; defaults to its H1 when that
+//                is short, otherwise required (the build says so)
 //   variant      'hub' for link-collection pages (default: 'article')
 //   quickAnswer  only wording Randy has supplied or approved; never generated
-//   related      existing pages only (checked at build); `title` defaults to
-//                the target page's H1
+//   related      optional; existing pages only (checked at build); `title`
+//                defaults to the target page's H1. No links = no section.
 //   relatedHub   optional "see all" link under Related Topics
 import type { ArticlePageConfig } from '@/lib/article/config';
 
@@ -57,6 +59,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
 
   // C. Primary pillar.
   '/burial-insurance/': {
+    section: 'none',
     crumb: 'Burial Insurance',
     related: [
       { href: '/how-much-does-final-expense-insurance-cost/' },
@@ -86,6 +89,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
+    section: 'none',
     crumb: 'Health Conditions',
     variant: 'hub',
     related: [
