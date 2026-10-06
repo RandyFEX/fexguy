@@ -1,0 +1,205 @@
+---
+// "Real Customer Experiences": the review count as a trust panel beside three
+// client reviews from data/customer-reviews.json, complete and word for word
+// with their published attribution (no dates, stars, ratings, platforms or
+// "verified" labels, and no review schema). The count comes from the data.
+import data from '../../../data/customer-reviews.json';
+import { featuredReviewPositions } from '@/lib/home/content';
+
+const count = data.reviews.length;
+const featured = featuredReviewPositions.map((pos) => {
+  const r = data.reviews.find((x) => x.position === pos);
+  if (!r) throw new Error(`Homepage review position ${pos} not found in data/customer-reviews.json`);
+  return r;
+});
+---
+
+<section class="rev" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 class="rev__title" id="reviews-title">Real Customer Experiences</h2>
+    <div class="rev__grid">
+      <div class="rev__count">
+        <p class="rev__count-line">
+          <span class="rev__num">{count}</span>
+          <span class="rev__label">Customer Reviews</span>
+        </p>
+        <p class="rev__lede">Read what Final Expense Guy customers have to say about working with Randy.</p>
+        <a class="btn rev__btn" href="/reviews/">READ ALL {count} CUSTOMER REVIEWS</a>
+      </div>
+      <ul class="rev__list" role="list">
+        {
+          featured.map((r) => (
+            <li class="rev__item">
+              <figure class="rev__figure">
+                <blockquote class="rev__quote">
+                  {r.paragraphs.map((p) => (
+                    <p>{p}</p>
+                  ))}
+                </blockquote>
+                <figcaption class="rev__by">{r.attribution}</figcaption>
+              </figure>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rev {
+    padding-block: var(--space-12);
+    background: var(--home-stone);
+  }
+  /* Same heading scale and gold rule as the sections above. */
+  .rev__title {
+    margin: 0 auto var(--space-8);
+    text-align: center;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .rev__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin: 0 auto var(--space-6);
+    background: var(--home-gold);
+  }
+  .rev__grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  /* Trust panel: the count, set large, on heritage green. */
+  .rev__count {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-8) var(--space-6);
+    background: var(--color-primary);
+    border-radius: var(--home-radius);
+    color: #ffffff;
+  }
+  .rev__count-line {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .rev__num {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  /* A short gold rule between the number and its label. */
+  .rev__label {
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 3px solid var(--home-gold);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .rev__lede {
+    margin: var(--space-4) 0 var(--space-6);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: var(--home-cream);
+  }
+  .rev__btn {
+    width: 100%;
+    padding-inline: var(--space-4);
+    white-space: normal;
+    text-align: center;
+    background: #ffffff;
+    color: var(--color-primary);
+  }
+  .rev__btn:hover {
+    background: var(--home-cream);
+    color: var(--color-primary-hover);
+  }
+
+  /* The reviews: one white panel, separated by rules, read like quotations
+     in an article rather than as separate cards. */
+  .rev__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 var(--space-6);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius);
+  }
+  .rev__item + .rev__item {
+    border-top: 1px solid var(--color-border);
+  }
+  .rev__figure {
+    margin: 0;
+    padding-block: var(--space-6);
+  }
+  .rev__quote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    color: var(--color-text);
+  }
+  .rev__quote p {
+    margin: 0;
+  }
+  .rev__by {
+    margin-top: var(--space-3);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 48rem) {
+    .rev__list {
+      padding-inline: var(--space-8);
+    }
+  }
+  /* Desktop: the trust panel lines up with the first column of the
+     3-column service grid above; the reviews span the other two. */
+  @media (min-width: 64rem) {
+    .rev {
+      padding-block: 4.5rem;
+    }
+    .rev__title {
+      margin-bottom: var(--space-12);
+    }
+    .rev__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-6);
+      align-items: stretch;
+    }
+    .rev__count {
+      justify-content: center;
+      padding: var(--space-12) var(--space-8);
+    }
+    .rev__num {
+      font-size: 7rem;
+    }
+    .rev__label {
+      font-size: 1.75rem;
+    }
+    .rev__btn {
+      margin-top: var(--space-2);
+    }
+    .rev__list {
+      grid-column: span 2;
+      padding-inline: var(--space-12);
+    }
+    .rev__figure {
+      padding-block: var(--space-8);
+    }
+    .rev__quote {
+      font-size: 1.3125rem;
+    }
+  }
+</style>

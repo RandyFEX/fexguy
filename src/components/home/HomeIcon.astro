@@ -1,0 +1,38 @@
+---
+// Small line icons for the homepage cards (decorative: aria-hidden). Drawn
+// with currentColor so each card sets the color.
+import type { HomeIconName } from '@/lib/home/content';
+
+export interface Props {
+  name: HomeIconName;
+  size?: number;
+}
+
+const { name, size = 28 } = Astro.props;
+const paths: Record<HomeIconName, string> = {
+  // Two balanced columns: comparing options.
+  compare: 'M12 3v18M5 21h14M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z',
+  person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0',
+  calendar: 'M4 6h16v14H4zM4 10h16M8 3v4M16 3v4M9 15l2 2 4-4',
+  map: 'M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
+  shield: 'M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6zM8.5 12l2.5 2.5 4.5-5',
+  clock: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2',
+  home: 'M3 11l9-7 9 7M5 9.5V20h14V9.5M10 20v-5h4v5',
+  // Price tag (the featured cost guide).
+  tag: 'M3 12.5V4a1 1 0 0 1 1-1h8.5L21 11.5 12.5 20zM7.5 7.5h.01',
+};
+---
+
+<svg
+  class="home-icon"
+  aria-hidden="true"
+  focusable="false"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"><path d={paths[name]}></path></svg
+>

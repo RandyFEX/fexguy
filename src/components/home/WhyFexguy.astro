@@ -1,0 +1,145 @@
+---
+// "Why FEXGuy": the four points from Randy's brief. A feature band with a
+// bigger heading, roomier cards and solid icons, on the same content width
+// as the other sections.
+import HomeIcon from './HomeIcon.astro';
+import { whyPoints } from '@/lib/home/content';
+---
+
+<section class="why" aria-labelledby="why-title">
+  <div class="container why__inner">
+    <h2 class="why__title" id="why-title">
+      {/* prettier-ignore */}
+      <span class="why__phrase">One Agent.</span>{' '}<span class="why__phrase">Multiple Companies.</span>{' '}<span class="why__phrase">More Options.</span>
+    </h2>
+    <ul class="why__list" role="list">
+      {
+        whyPoints.map((p) => (
+          <li class="why__item">
+            <span class="why__icon">
+              <HomeIcon name={p.icon} size={32} />
+            </span>
+            <div class="why__body">
+              <h3 class="why__name">{p.title}</h3>
+              <p class="why__text">{p.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .why {
+    padding-block: var(--space-12);
+    background: var(--home-cream);
+  }
+  .why__title {
+    max-width: none;
+    margin: 0 auto var(--space-8);
+    text-align: center;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  /* Lines break only between the three sentences, never inside one. */
+  .why__phrase {
+    white-space: nowrap;
+  }
+  /* Short gold rule above the heading (the only gold). */
+  .why__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin: 0 auto var(--space-6);
+    background: var(--home-gold);
+  }
+  .why__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+  }
+  /* Phones: icon beside the text keeps the stacked cards compact. */
+  .why__item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-4);
+    align-items: start;
+    align-content: start;
+    padding: var(--space-6);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--home-radius);
+  }
+  .why__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+  .why__name {
+    margin: 0 0 var(--space-2);
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+  .why__text {
+    margin: 0;
+    text-wrap: pretty;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+  }
+  @media (min-width: 40rem) {
+    .why__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-6);
+    }
+    .why__item {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      padding: var(--space-8);
+    }
+    .why__icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  @media (min-width: 64rem) {
+    .why {
+      padding-block: 4.5rem;
+    }
+    .why__title {
+      margin-bottom: var(--space-12);
+    }
+    /* Four across in the normal 72rem container: a 16px gutter and 24px
+       side padding give the 18px copy room, so the cards (equal height, set
+       by the longest text) stay compact. */
+    .why__list {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+    .why__item {
+      gap: var(--space-3);
+      padding: var(--space-8) var(--space-6);
+    }
+    .why__name {
+      margin-bottom: 0.375rem;
+      font-size: 1.375rem;
+      line-height: 1.2;
+    }
+    .why__text {
+      font-size: 1.125rem;
+      line-height: 1.5;
+    }
+  }
+</style>

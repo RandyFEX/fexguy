@@ -691,6 +691,20 @@ is in place; see src/content/README.md for how pages were migrated.
     Area" form is retired for the published address) and "I work with
     strategic A+ rated insurance companies" (a rating claim).
 
+## Post-redesign cleanup notes
+
+Found during the October 2026 homepage redesign; don't fix until Randy
+schedules the cleanup.
+
+- /aflac-burial-insurance-review/: the H1 is correct (Aflac), but the title,
+  meta description and og:/twitter: title and description still carry the
+  Aetna review's text ("Aetna Burial Insurance Review - [Pros, Cons, Pricing
+  Secrets]"), and the meta description makes an unacceptable claim:
+  "…guarantees you the best cremation, final expense, or life insurance
+  pricing - 99% discount rate!"
+- /a-z-companies/ omits CICA Life and Aflac, although both review pages are
+  kept (/cica-life-burial-insurance-review/, /aflac-burial-insurance-review/).
+
 ## Before committing
 
 Run `npm run check` and `npm run build`. Both must pass with 0 errors. Then

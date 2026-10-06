@@ -27,9 +27,14 @@ export interface Props {
   stickyCall?: boolean;
   /** Render the call-to-action bar under the header (off on the homepage). */
   ctaBar?: boolean;
+  /** Extra class on <body> (the homepage uses it to scope its palette). */
+  bodyClass?: string;
+  /** Render the shared pre-footer call to action (off on the homepage, which
+   * ends with its own). */
+  preFooter?: boolean;
 }
 
-const { layout = 'default', stickyCall = true, ctaBar = true, ...seo } = Astro.props;
+const { layout = 'default', stickyCall = true, ctaBar = true, preFooter = true, bodyClass, ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -64,14 +69,14 @@ const { layout = 'default', stickyCall = true, ctaBar = true, ...seo } = Astro.p
     <Seo {...seo} />
     <slot name="head" />
   </head>
-  <body class:list={{ 'is-landing': layout === 'landing' }}>
+  <body class:list={[{ 'is-landing': layout === 'landing' }, bodyClass]}>
     <a class="skip-link" href="#main">Skip to main content</a>
     {layout !== 'landing' && <Header />}
     {layout !== 'landing' && ctaBar && <CtaBar />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    {layout !== 'landing' && <PreFooter />}
+    {layout !== 'landing' && preFooter && <PreFooter />}
     {layout !== 'landing' && <Footer />}
     {stickyCall && <StickyCall />}
     <script>

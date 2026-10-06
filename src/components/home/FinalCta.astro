@@ -1,0 +1,68 @@
+---
+// Closing call to action (heritage-green band) just above the pre-footer.
+import { lead } from '@/config/lead';
+---
+
+<section class="final-cta" aria-labelledby="final-cta-title" data-pagefind-ignore>
+  <div class="container final-cta__inner">
+    <h2 class="final-cta__title" id="final-cta-title">Not Sure What Type of Life Insurance You Need?</h2>
+    <p class="final-cta__text">Randy can help you compare your options.</p>
+    <div class="final-cta__actions">
+      <a class="btn final-cta__btn final-cta__btn--light" href={lead.phone.href}>CALL {lead.phone.display}</a>
+      <a class="btn final-cta__btn final-cta__btn--outline" href="/free-quote/">GET A QUOTE</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .final-cta {
+    /* The two-tone focus ring flips on the dark band so it stays visible. */
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    padding-block: var(--space-12);
+    background: var(--color-primary);
+    color: #ffffff;
+    text-align: center;
+  }
+  .final-cta__title {
+    margin: 0 0 var(--space-3);
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+    color: #ffffff;
+  }
+  .final-cta__text {
+    margin: 0 auto var(--space-6);
+    text-wrap: balance;
+    max-width: 36rem;
+    font-size: 1.125rem;
+  }
+  .final-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+  }
+  .final-cta__btn {
+    white-space: nowrap;
+  }
+  .final-cta__btn--light {
+    background: #ffffff;
+    color: var(--color-primary);
+  }
+  .final-cta__btn--light:hover {
+    background: var(--home-cream);
+    color: var(--color-primary-hover);
+  }
+  .final-cta__btn--outline {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .final-cta__btn--outline:hover {
+    background: var(--color-primary-hover);
+    color: #ffffff;
+  }
+  @media (max-width: 23.99rem) {
+    .final-cta__btn {
+      width: 100%;
+    }
+  }
+</style>

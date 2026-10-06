@@ -1,0 +1,176 @@
+---
+// Homepage hero: the beach photo (a placeholder until a new image is chosen)
+// full width, with the page's H1, the product line, the two actions and the
+// rotating rate example in one column on a restrained green scrim, leaving
+// the couple in the photo clear. The quote form is not here; GET A QUOTE
+// goes to /free-quote/ for now.
+import RateExamples from './RateExamples.astro';
+import { lead } from '@/config/lead';
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <img
+    class="hero__img"
+    src="/wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif"
+    srcset="/images/home/home-banner-800.avif 800w, /images/home/home-banner-1200.avif 1200w, /wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif 1600w"
+    sizes="100vw"
+    width="1600"
+    height="800"
+    alt=""
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+  />
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <h1 class="hero__title" id="hero-title">Life Insurance for Every Stage of Life</h1>
+      <p class="hero__products">
+        Final Expense <span class="hero__dot" aria-hidden="true">•</span> Term Life <span
+          class="hero__dot"
+          aria-hidden="true">•</span
+        > Mortgage Protection
+      </p>
+      <div class="hero__actions" data-pagefind-ignore>
+        <a class="btn hero__btn hero__btn--primary" href="/free-quote/">GET A QUOTE</a>
+        <a class="btn hero__btn hero__btn--secondary" href={lead.phone.href}>CALL {lead.phone.display}</a>
+      </div>
+    </div>
+    <div class="hero__rate">
+      <RateExamples />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    min-height: 40rem;
+    color: #ffffff;
+    background: var(--color-primary-hover);
+  }
+  .hero__img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 66% 18%;
+  }
+  /* Scrim. Phones: the photo stays clear at the top and darkens toward the
+     text at the bottom. Desktop (below): darkest behind the text on the
+     left, clear over the couple. */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      180deg,
+      rgb(14 45 38 / 0) 0%,
+      rgb(14 45 38 / 0.25) 22%,
+      rgb(14 45 38 / 0.82) 45%,
+      rgb(14 45 38 / 0.92) 100%
+    );
+  }
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--space-6);
+    padding-top: 15rem;
+    padding-bottom: var(--space-6);
+  }
+  .hero__title {
+    margin: 0;
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    text-wrap: balance;
+  }
+  .hero__products {
+    margin: var(--space-3) 0 0;
+    font-size: clamp(1.0625rem, 0.95rem + 0.5vw, 1.375rem);
+    font-weight: 700;
+    color: var(--home-cream);
+  }
+  .hero__dot {
+    margin-inline: 0.35em;
+    color: var(--home-gold);
+  }
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+  }
+  .hero__btn {
+    min-height: 3.25rem;
+    padding-inline: var(--space-6);
+    white-space: nowrap;
+  }
+  .hero__btn--primary {
+    background: #ffffff;
+    color: var(--color-primary);
+  }
+  .hero__btn--primary:hover {
+    background: var(--home-cream);
+    color: var(--color-primary-hover);
+  }
+  .hero__btn--secondary {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .hero__btn--secondary:hover {
+    background: rgb(255 255 255 / 0.12);
+    color: #ffffff;
+  }
+  @media (max-width: 29.99rem) {
+    .hero__btn {
+      flex: 1 1 100%;
+    }
+  }
+
+  .hero__rate {
+    width: 100%;
+    max-width: 26rem;
+  }
+
+  /* Tablet and desktop: the column sits on the left over the scrim; the
+     couple stays clear on the right. */
+  @media (min-width: 48rem) {
+    .hero {
+      min-height: 0;
+    }
+    .hero::before {
+      background: linear-gradient(
+        90deg,
+        rgb(14 45 38 / 0.9) 0%,
+        rgb(14 45 38 / 0.78) 30%,
+        rgb(14 45 38 / 0.25) 58%,
+        rgb(14 45 38 / 0) 75%
+      );
+    }
+    .hero__img {
+      object-position: 70% 35%;
+    }
+    .hero__inner {
+      justify-content: center;
+      gap: var(--space-8);
+      padding-block: var(--space-12);
+    }
+    .hero__copy {
+      max-width: 46rem;
+    }
+  }
+  @media (min-width: 64rem) {
+    .hero__inner {
+      padding-block: var(--space-16);
+    }
+  }
+</style>
