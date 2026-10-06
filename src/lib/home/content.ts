@@ -49,26 +49,28 @@ export const services: (HomeLink & { icon: HomeIconName })[] = [
   { title: 'Mortgage Protection', href: '/mortgage-protection-life-insurance/', icon: 'home' },
 ];
 
-/** Hero rate examples: a representative person paired with a coverage amount
- * and monthly premium. MOCKUP PLACEHOLDERS ONLY: the premiums ($XX.XX) and
- * carrier ("Insurance Company") are deliberately not real and must be
- * replaced with real rate examples Randy supplies before launch; the person
- * images are neutral placeholders until proper photos are chosen. Designed
- * for about nine entries (three per product); no annuities, no names, ages,
- * genders or customer stories. */
+/** Hero rate examples (supplied by Randy, October 2026): a representative
+ * person paired with a product, coverage amount, context and monthly
+ * premium. Shown as three lines (product; amount • context; price/month)
+ * with one shared disclosure. No names, ages, genders, carriers,
+ * underwriting classes or customer stories; no annuities or disability.
+ * The person images are neutral placeholders until photos are chosen. */
 export interface RateExample {
   product: 'Burial Insurance' | 'Term Life Insurance' | 'Mortgage Protection';
-  coverage: string;
+  amount: string;
+  context: string;
   premium: string;
-  company: string;
   /** Person photo (none yet: a neutral placeholder is shown). */
   image?: { src: string; alt: string };
 }
 
 export const rateExamples: RateExample[] = [
-  { product: 'Burial Insurance', coverage: '$15,000', premium: '$XX.XX', company: 'Insurance Company' },
-  { product: 'Term Life Insurance', coverage: '$500,000', premium: '$XX.XX', company: 'Insurance Company' },
-  { product: 'Mortgage Protection', coverage: '$250,000', premium: '$XX.XX', company: 'Insurance Company' },
+  { product: 'Burial Insurance', amount: '$15,000', context: 'Moderate Health', premium: '$47.61' },
+  { product: 'Burial Insurance', amount: '$10,000', context: 'Average Health', premium: '$32.78' },
+  { product: 'Mortgage Protection', amount: '$250,000', context: '15-Year', premium: '$57.60' },
+  { product: 'Mortgage Protection', amount: '$350,000', context: '15-Year', premium: '$52.98' },
+  { product: 'Term Life Insurance', amount: '$1,000,000', context: '20-Year', premium: '$68.26' },
+  { product: 'Term Life Insurance', amount: '$500,000', context: '20-Year', premium: '$34.13' },
 ];
 
 /** Positions (data/customer-reviews.json "position") of the reviews shown on

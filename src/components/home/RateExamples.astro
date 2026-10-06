@@ -1,9 +1,10 @@
 ---
 // Hero rate examples: one example at a time, shown like part of the ad —
-// a person (photo slot; a neutral placeholder until real photos are chosen),
-// the product, the coverage amount, the monthly premium and the insurance
-// company. Not testimonials: no names, ages, genders or stories. The data are
-// mockup placeholders (see rateExamples in src/lib/home/content.ts).
+// a person (photo slot; a neutral placeholder until real photos are chosen)
+// and three lines: the product, the amount with its context, and the
+// monthly premium (see rateExamples in src/lib/home/content.ts). Not
+// testimonials: no names, ages, genders or stories. One disclosure line
+// below the examples applies to all of them.
 //
 // Every example is in the HTML and they share one grid cell, so the card
 // keeps the height of the tallest and nothing shifts when they change.
@@ -36,17 +37,22 @@ import { rateExamples } from '@/lib/home/content';
           <div class="rate__body">
             <p class="rate__label">Rate example</p>
             <p class="rate__product">{r.product}</p>
-            <p class="rate__coverage">{r.coverage} Coverage</p>
+            <p class="rate__coverage">
+              <span class="rate__nw">
+                {r.amount} <span aria-hidden="true">•</span><span class="visually-hidden">,</span>
+              </span>{' '}
+              <span class="rate__nw">{r.context}</span>
+            </p>
             <p class="rate__premium">
               {r.premium}
               <wbr /><span class="rate__per">/month</span>
             </p>
-            <p class="rate__company">{r.company}</p>
           </div>
         </li>
       ))
     }
   </ul>
+  <p class="rate__note">Example rates. Your rate may vary.</p>
   <button class="rate__toggle" type="button" data-rate-toggle aria-label="Pause rate examples" hidden>
     <svg class="rate__icon-pause" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z" /></svg>
     <svg class="rate__icon-play" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z" /></svg>
@@ -140,7 +146,7 @@ import { rateExamples } from '@/lib/home/content';
   .rate__photo {
     position: relative;
     overflow: hidden;
-    border-radius: var(--home-radius) 0 0 var(--home-radius);
+    border-radius: var(--home-radius) 0 0 0;
     background: var(--home-stone);
   }
   .rate__photo img {
@@ -189,6 +195,10 @@ import { rateExamples } from '@/lib/home/content';
     line-height: 1.35;
     color: var(--color-text);
   }
+  /* If the amount line must wrap, it breaks only after the bullet. */
+  .rate__nw {
+    white-space: nowrap;
+  }
   .rate__premium {
     margin-top: var(--space-1) !important;
     font-size: 2rem;
@@ -203,10 +213,13 @@ import { rateExamples } from '@/lib/home/content';
     letter-spacing: 0;
     color: var(--color-text-muted);
   }
-  .rate__company {
-    margin-top: var(--space-1) !important;
-    font-size: 0.9375rem;
-    line-height: 1.35;
+  /* The shared disclosure: a quiet full-width line under the examples. */
+  .rate__note {
+    margin: 0;
+    padding: var(--space-2) var(--space-4);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.75rem;
+    line-height: 1.4;
     color: var(--color-text-muted);
   }
 
@@ -243,10 +256,14 @@ import { rateExamples } from '@/lib/home/content';
     display: block;
   }
 
-  /* Narrow phones: a slimmer photo and less padding. */
-  @media (max-width: 24.99rem) {
+  /* Narrow phones: a slimmer photo, less padding and slightly smaller
+     product and amount lines, so each stays on one line where it can. */
+  @media (max-width: 29.99rem) {
+    .rate__coverage {
+      font-size: 1rem;
+    }
     .rate__item {
-      grid-template-columns: 5.5rem minmax(0, 1fr);
+      grid-template-columns: 5rem minmax(0, 1fr);
     }
     .rate__body {
       padding-right: var(--space-3);
@@ -258,6 +275,7 @@ import { rateExamples } from '@/lib/home/content';
       grid-template-columns: 4.5rem minmax(0, 1fr);
     }
     .rate__product {
+      font-size: 0.9375rem;
       letter-spacing: 0.01em;
     }
     .rate__premium {
@@ -269,10 +287,13 @@ import { rateExamples } from '@/lib/home/content';
       grid-template-columns: 8rem minmax(0, 1fr);
     }
     .rate__body {
-      padding: var(--space-6);
+      padding: var(--space-4) var(--space-6);
     }
     .rate__premium {
       font-size: 2.25rem;
+    }
+    .rate__note {
+      padding-inline: var(--space-6);
     }
   }
 </style>
