@@ -64,7 +64,7 @@ src/
   styles/global.css     Design tokens, base styles, buttons (mobile-first)
 public/wp-content/      Images at their original WordPress paths
 public/images/logo/     Optimized logo copies (scripts/optimize-logo.mjs)
-public/images/home/     Smaller homepage banner copies (scripts/optimize-home-banner.mjs)
+public/images/home/     Homepage hero crops (hero-beach-*, art-directed by width; see HomeHero.astro)
 ```
 
 ## Indexing gate
