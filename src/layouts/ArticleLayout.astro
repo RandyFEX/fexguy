@@ -1,0 +1,406 @@
+---
+// Article template v2 — PROTOTYPE for Randy's approval, used only by the
+// pages listed in src/lib/article/prototype.ts (today: /burial-insurance/copd/).
+// Every other page still renders through ContentLayout, unchanged.
+//
+// It presents the page's migrated body without changing its words:
+//   breadcrumb › H1 › author row
+//   summary (Quick Answer + Here's the Bottom Line) › early quote button
+//   (phones/tablets) › "In This Article" › article (FAQ and case stories
+//   grouped) › About the author › Related Topics, with the quote form in the
+//   sidebar (after the article on phones, as the next step).
+// The homepage palette is applied through <body class="page-article-v2">, so
+// the header, footer, buttons, quote form and mobile call bar match the
+// approved homepage; the old gray call-to-action bar is left out here.
+import BaseLayout from './BaseLayout.astro';
+import QuoteBox from '@/components/lead/QuoteBox.astro';
+import Breadcrumbs from '@/components/article/Breadcrumbs.astro';
+import ArticleByline from '@/components/article/ArticleByline.astro';
+import ArticleSummary from '@/components/article/ArticleSummary.astro';
+import ArticleToc from '@/components/article/ArticleToc.astro';
+import AuthorBio from '@/components/article/AuthorBio.astro';
+import RelatedTopics from '@/components/article/RelatedTopics.astro';
+import { enhanceArticle } from '@/lib/article/enhance';
+import type { ArticleConfig } from '@/lib/article/prototype';
+import type { PageEntry } from '@/lib/pages';
+import { isSearchable, pagePath } from '@/lib/pages';
+import { lead } from '@/config/lead';
+
+export interface Props {
+  entry: PageEntry;
+  config: ArticleConfig;
+}
+
+const { entry, config } = Astro.props;
+const d = entry.data;
+const article = enhanceArticle(entry.rendered?.html ?? '');
+const searchable = isSearchable(entry) ? '' : undefined;
+
+// The page's real last-updated date: JSON-LD dateModified, else og:updated_time.
+const updated =
+  (d.jsonLd ?? []).join(' ').match(/"dateModified":"(\d{4}-\d{2}-\d{2})/)?.[1] ??
+  d.headMeta?.find((m) => m.property === 'og:updated_time')?.content?.slice(0, 10);
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  robots={d.robots}
+  noindex={d.noindex}
+  canonical={d.canonical ?? pagePath(entry)}
+  headMeta={d.headMeta}
+  jsonLd={d.jsonLd}
+  ctaBar={false}
+  bodyClass="page-article-v2"
+>
+  <header class="art-head">
+    <div class="container">
+      <div class="art-head__inner">
+        <Breadcrumbs crumbs={config.breadcrumbs} />
+        <h1 class="art-head__title" data-pagefind-body={searchable} set:html={article.h1} />
+        <ArticleByline updated={updated} />
+      </div>
+    </div>
+  </header>
+
+  <div class="container art-grid">
+    <article class="art-main">
+      <ArticleSummary quickAnswer={config.quickAnswer} takeaways={article.takeaways} />
+
+      <p class="art-cta" data-pagefind-ignore>
+        <a class="btn btn--primary art-cta__btn" href="#quote">GET MY QUOTE</a>
+        <span class="art-cta__call">or call <a href={lead.phone.href}>{lead.phone.display}</a></span>
+      </p>
+
+      <ArticleToc items={article.toc} />
+
+      <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />
+
+      <div class="prose wp-content art-body" data-pagefind-body={searchable} set:html={article.body} />
+
+      <div class="art-end">
+        <AuthorBio />
+        <RelatedTopics links={config.related} hub={config.relatedHub} />
+      </div>
+    </article>
+
+    <aside class="art-aside" aria-label="Get a quote">
+      <QuoteBox />
+    </aside>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  /* Palette: the approved homepage tokens (same values as body.page-home in
+     src/pages/index.astro), scoped to this template's pages. */
+  body.page-article-v2 {
+    --color-text: #202522;
+    --color-text-muted: #555b57;
+    --color-surface: #efebe2;
+    --color-border: #ddd7ca;
+    --color-primary: #173f35;
+    --color-primary-hover: #0e2d26;
+    --color-accent: #173f35;
+    --color-call: #173f35;
+    --home-cream: #f7f3e8;
+    --home-stone: #efebe2;
+    --home-gold: #b68a35;
+    --home-green-tint: #e4ece7;
+    --home-radius: 0.375rem;
+  }
+  body.page-article-v2 .btn--secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  body.page-article-v2 .btn {
+    text-align: center;
+  }
+
+  /* --- Article body typography (migrated HTML) ---------------------------- */
+  body.page-article-v2 .art-body {
+    max-width: none;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body p {
+    margin: 0 0 1.25rem;
+  }
+  /* Rhythm: every H2 opens a new section — generous space above, a full
+     hairline and a short gold accent (the homepage's heading rule), so the
+     major landmarks are easy to spot while scrolling. One treatment for all
+     H2s; one for all H3s (green, smaller). Case is never changed by CSS. */
+  body.page-article-v2 .art-body h2 {
+    position: relative;
+    margin: 3.5rem 0 1.25rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    font-size: clamp(1.5rem, 1.25rem + 0.9vw, 1.875rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    color: var(--color-text);
+    scroll-margin-top: var(--space-4);
+  }
+  body.page-article-v2 .art-body h2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 3rem;
+    height: 3px;
+    background: var(--home-gold);
+  }
+  body.page-article-v2 .art-body > h2:first-child {
+    margin-top: 2.5rem;
+  }
+  body.page-article-v2 .art-body h3 {
+    margin: 2.25rem 0 0.75rem;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body h3 strong {
+    font-weight: inherit;
+  }
+  /* The opening paragraph(s) under the contents panel. */
+  body.page-article-v2 .art-body--intro {
+    margin-top: var(--space-8);
+  }
+  /* Calls to action written into the article (enhance.ts): same words, a
+     quiet note, so the page reads as editorial content. */
+  body.page-article-v2 .art-body .art-note {
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--color-border);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+  /* Case stories (enhance.ts): an occasional cream aside. */
+  body.page-article-v2 .art-body .art-story {
+    margin: 1.75rem 0;
+    padding: var(--space-6);
+    background: var(--home-cream);
+    border-left: 3px solid var(--home-gold);
+    border-radius: var(--home-radius);
+  }
+  body.page-article-v2 .art-body .art-story h3 {
+    margin-top: 0;
+  }
+  body.page-article-v2 .art-body .art-story p:last-child {
+    margin-bottom: 0;
+  }
+  body.page-article-v2 .art-body :is(ul, ol) {
+    margin: 0 0 1.5rem;
+    padding-left: 1.5rem;
+  }
+  body.page-article-v2 .art-body li {
+    margin-bottom: 0.625rem;
+    padding-left: 0.25rem;
+  }
+  body.page-article-v2 .art-body li::marker {
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body a {
+    color: var(--color-primary);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  body.page-article-v2 .art-body a:hover {
+    color: var(--color-primary-hover);
+    text-decoration-thickness: 2px;
+  }
+  body.page-article-v2 .art-body figure {
+    margin: 2rem 0;
+  }
+  body.page-article-v2 .art-body figure img {
+    width: 100%;
+    margin: 0;
+    border-radius: var(--home-radius);
+  }
+
+  /* Tables, calm and editorial: a stone header row over a green rule,
+     hairlines between rows, no heavy banding; wide tables scroll sideways
+     (src/scripts/scroll-tables.ts). */
+  body.page-article-v2 .art-body table {
+    /* The bordered box hugs the table; still scrolls when wider than the
+       column (display: block, overflow-x: auto from global.css). */
+    width: max-content;
+    max-width: 100%;
+    margin: 1.25rem 0 2.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius);
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  body.page-article-v2 .art-body th {
+    padding: 0.75rem 1rem;
+    background: var(--home-stone);
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-text);
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+  }
+  body.page-article-v2 .art-body td {
+    padding: 0.7rem 1rem;
+    border-top: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  body.page-article-v2 .art-body tr:nth-child(even) td {
+    background: transparent;
+  }
+  body.page-article-v2 .art-body td:first-child {
+    font-weight: 700;
+  }
+
+  /* FAQ (grouped by enhance.ts): the homepage FAQ's look — gold rule, a
+     charcoal top rule and hairlines between questions — with every answer
+     shown (each question stays an H3). */
+  body.page-article-v2 .art-body .article-faq__list {
+    border-top: 2px solid var(--color-text);
+  }
+  body.page-article-v2 .art-body .article-faq__item {
+    padding-block: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+  }
+  body.page-article-v2 .art-body .article-faq__item h3 {
+    margin: 0 0 var(--space-3);
+    font-size: 1.1875rem;
+    line-height: 1.35;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .article-faq__item p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* --- Sidebar quote form: the homepage form's white box ------------------ */
+  body.page-article-v2 .quote-box--sidebar {
+    background: var(--color-bg);
+    border-color: var(--color-border);
+    border-radius: var(--home-radius);
+  }
+  body.page-article-v2 .quote-box__title {
+    padding-block: var(--space-4);
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* --- Pre-footer: cream band with the homepage's gold rule ---------------- */
+  body.page-article-v2 .pre-footer {
+    background: var(--home-cream);
+  }
+  body.page-article-v2 .pre-footer__text::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin: 0 auto var(--space-4);
+    background: var(--home-gold);
+  }
+</style>
+
+<style>
+  /* Header: plain and restrained (the green Quick Answer below is the one
+     strong landmark at the top). */
+  .art-head {
+    padding-block: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .art-head__inner {
+    max-width: 46rem;
+  }
+  .art-head__title {
+    margin: var(--space-2) 0 var(--space-6);
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.875rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  .art-grid {
+    padding-block: var(--space-8) var(--space-12);
+  }
+  .art-main {
+    min-width: 0;
+  }
+  .art-main > :global(.summary) {
+    margin-bottom: var(--space-6);
+  }
+  .art-main > :global(.toc) {
+    margin-top: var(--space-2);
+  }
+
+  /* Early quote button: phones and tablets only (on desktop the form is
+     already in view in the sidebar). */
+  .art-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-4);
+    margin: 0 0 var(--space-8);
+  }
+  .art-cta__btn {
+    flex: 1 1 14rem;
+  }
+  .art-cta__call {
+    flex: 1 1 100%;
+    text-align: center;
+    color: var(--color-text-muted);
+  }
+  @media (min-width: 40rem) {
+    .art-cta__call {
+      flex: 0 1 auto;
+    }
+  }
+  .art-cta__call a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-primary);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  /* End of the article: a firm rule, then About the author and Related
+     Topics as separate steps; on phones the quote form follows as the next
+     step (the pre-footer and footer after it). */
+  .art-end {
+    display: grid;
+    gap: 3.5rem;
+    margin-top: 4rem;
+    padding-top: var(--space-12);
+    border-top: 2px solid var(--color-text);
+  }
+
+  .art-aside {
+    margin-top: 3.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    .art-head {
+      padding-block: var(--space-6) var(--space-8);
+    }
+  }
+  @media (min-width: 64rem) {
+    .art-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 46rem) 21rem;
+      justify-content: space-between;
+      align-items: start;
+      gap: var(--space-12);
+      padding-block: var(--space-12) 4.5rem;
+    }
+    .art-aside {
+      margin-top: 0;
+    }
+    .art-cta {
+      display: none;
+    }
+  }
+</style>

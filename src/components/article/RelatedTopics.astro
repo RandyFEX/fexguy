@@ -1,0 +1,107 @@
+---
+// "Related Topics": hand-picked related pages for the prototype (real URLs,
+// src/lib/article/prototype.ts). Later this becomes data-driven per topic
+// cluster, which also fixes the site's internal-link gaps.
+import type { RelatedLink } from '@/lib/article/prototype';
+
+interface Props {
+  links: RelatedLink[];
+  hub?: RelatedLink;
+}
+const { links, hub } = Astro.props;
+---
+
+<section class="related" aria-labelledby="related-title" data-pagefind-ignore>
+  <h2 class="related__title" id="related-title">Related Topics</h2>
+  <ul class="related__list" role="list">
+    {
+      links.map((l) => (
+        <li>
+          <a class="related__link" href={l.href}>
+            <span>{l.title}</span>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    hub && (
+      <p class="related__hub">
+        <a href={hub.href}>{hub.title}</a>
+      </p>
+    )
+  }
+</section>
+
+<style>
+  /* Editorial navigation: a ruled list of links, not cards. */
+  .related__title {
+    margin: 0 0 var(--space-3);
+    font-size: 1.375rem;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+  .related__title::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin-bottom: var(--space-3);
+    background: var(--home-gold);
+  }
+  .related__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--color-border);
+  }
+  .related__list li {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .related__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 3.25rem;
+    padding: var(--space-2) var(--space-1);
+    color: var(--color-primary);
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+  .related__link svg {
+    flex: none;
+    transition: transform 0.15s ease;
+  }
+  .related__link:hover span {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .related__link:hover svg {
+    transform: translateX(3px);
+  }
+  .related__hub {
+    margin: var(--space-3) 0 0;
+    font-size: 0.9375rem;
+  }
+  .related__hub a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-text-muted);
+    font-weight: 700;
+  }
+  .related__hub a:hover {
+    color: var(--color-primary);
+  }
+  /* Two columns of rows on wider screens. */
+  @media (min-width: 40rem) {
+    .related__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: var(--space-8);
+    }
+  }
+</style>

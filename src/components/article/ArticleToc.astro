@@ -1,0 +1,121 @@
+---
+// "In This Article" contents panel, built from the article's H2s (ids added
+// by src/lib/article/enhance.ts). A native disclosure: open on desktop,
+// closed on phones and tablets so it stays compact (the inline script runs
+// before the panel is painted; without JavaScript it starts closed).
+import type { TocItem } from '@/lib/article/enhance';
+
+interface Props {
+  items: TocItem[];
+}
+const { items } = Astro.props;
+---
+
+{
+  items.length > 2 && (
+    <nav class="toc" aria-labelledby="toc-title" data-pagefind-ignore>
+      <details class="toc__details" data-toc>
+        <summary class="toc__summary">
+          <span class="toc__title" id="toc-title">In This Article</span>
+          <svg class="toc__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+        </summary>
+        <ol class="toc__list">
+          {items.map((it) => (
+            <li class="toc__item">
+              <a class="toc__link" href={`#${it.id}`}>
+                {it.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    </nav>
+  )
+}
+<script is:inline>
+  (function () {
+    var d = document.querySelector('[data-toc]');
+    if (d && window.matchMedia('(min-width: 64rem)').matches) d.open = true;
+  })();
+</script>
+
+<style>
+  /* Navigation, not another card: hairlines above and below, a quiet label,
+     plain links. Visually lighter than the summary above it. */
+  .toc__details {
+    border-block: 1px solid var(--color-border);
+  }
+  .toc__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 3rem;
+    padding-block: var(--space-2);
+    cursor: pointer;
+    list-style: none;
+  }
+  .toc__summary::-webkit-details-marker {
+    display: none;
+  }
+  .toc__title {
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  .toc__icon {
+    flex: none;
+    color: var(--color-text-muted);
+    transition: transform 0.15s ease;
+  }
+  .toc__details[open] .toc__icon {
+    transform: rotate(180deg);
+  }
+  .toc__summary:hover .toc__title,
+  .toc__summary:hover .toc__icon {
+    color: var(--color-primary);
+  }
+  .toc__list {
+    margin: 0;
+    padding: 0 0 var(--space-3);
+    list-style: none;
+    counter-reset: toc;
+  }
+  .toc__item {
+    counter-increment: toc;
+  }
+  .toc__link {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    min-height: var(--tap-target);
+    padding-block: 0.55rem;
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+  .toc__link::before {
+    content: counter(toc) '.';
+    flex: none;
+    min-width: 1.5rem;
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .toc__link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  @media (min-width: 48rem) {
+    .toc__list {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+    .toc__item {
+      break-inside: avoid;
+    }
+  }
+</style>

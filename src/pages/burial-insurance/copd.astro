@@ -1,0 +1,15 @@
+---
+// Article template v2 PROTOTYPE route (src/lib/article/prototype.ts). A route
+// of its own, rather than a branch in [...slug].astro, so the template's
+// styles are bundled into this page only: Astro attaches a layout's CSS to
+// every page of the route that imports it.
+import { getEntry } from 'astro:content';
+import ArticleLayout from '@/layouts/ArticleLayout.astro';
+import { articleConfig } from '@/lib/article/prototype';
+
+const entry = await getEntry('pages', 'burial-insurance/copd');
+const config = articleConfig('/burial-insurance/copd/');
+if (!entry || !config) throw new Error('Missing burial-insurance/copd page or its article-v2 config');
+---
+
+<ArticleLayout entry={entry} config={config} />

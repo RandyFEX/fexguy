@@ -1,0 +1,131 @@
+---
+// The article's opening summary, one block in two parts with two jobs:
+//  - Quick Answer: a short narrative answer (heritage green, the strongest
+//    landmark on the page);
+//  - Here's the Bottom Line: the article's own key points, unchanged, as a
+//    scannable list (light cream, so it complements the answer above it).
+// Every key point gets the same typography; nothing is uppercased by CSS.
+interface Props {
+  quickAnswer?: string;
+  takeaways?: { label: string; items: string[] };
+}
+const { quickAnswer, takeaways } = Astro.props;
+---
+
+{
+  (quickAnswer || takeaways) && (
+    <div class="summary">
+      {quickAnswer && (
+        <section class="summary__answer" aria-labelledby="quick-answer-title">
+          <h2 class="summary__label" id="quick-answer-title">
+            Quick Answer
+          </h2>
+          <p class="summary__text">{quickAnswer}</p>
+        </section>
+      )}
+      {takeaways && (
+        <section class="summary__points" aria-labelledby="bottom-line-title">
+          <p class="summary__points-title" id="bottom-line-title">
+            {takeaways.label}
+          </p>
+          <ul class="summary__list" role="list">
+            {takeaways.items.map((item) => (
+              <li class="summary__item">
+                <svg class="summary__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+                <span set:html={item} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .summary {
+    border-radius: var(--home-radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  /* Quick Answer: white on heritage green (11.7:1), cream label. */
+  .summary__answer {
+    padding: var(--space-6) var(--space-5, 1.25rem);
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+  .summary__label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-3);
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--home-cream);
+  }
+  /* The short gold rule is decorative only (the label itself is cream). */
+  .summary__label::before {
+    content: '';
+    flex: none;
+    width: 1.5rem;
+    height: 3px;
+    background: var(--home-gold);
+  }
+  .summary__text {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+
+  /* Here's the Bottom Line: the article's key points. */
+  .summary__points {
+    padding: var(--space-6) var(--space-5, 1.25rem);
+    background: var(--home-cream);
+  }
+  .summary__points-title {
+    margin: 0 0 var(--space-4);
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--color-primary);
+  }
+  .summary__list {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* One treatment for every point: same size, weight, case and spacing. */
+  .summary__item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: none;
+    color: var(--color-text);
+  }
+  .summary__item :global(strong) {
+    font-weight: inherit;
+  }
+  .summary__icon {
+    flex: none;
+    margin-top: 0.15em;
+    color: var(--color-primary);
+  }
+
+  @media (min-width: 48rem) {
+    .summary__answer,
+    .summary__points {
+      padding: var(--space-6) var(--space-8);
+    }
+    .summary__text {
+      font-size: 1.25rem;
+    }
+  }
+</style>
