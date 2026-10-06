@@ -53,7 +53,7 @@ export const site: SiteConfig = {
   phoneDisplay: '888-862-9456',
   phoneE164: '+18888629456',
   email: '',
-  logo: { src: `${uploads}/2026/09/FINAL-EXPENSE-GUY-LOGO-340-X-250.png`, width: 2034, height: 250, alt: 'Final Expense Guy' },
+  logo: { src: '/images/logo/final-expense-guy-logo.png', width: 2034, height: 250, alt: 'Final Expense Guy' },
   icons: [
     { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-32x32.png`, sizes: '32x32' },
     { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-192x192.png`, sizes: '192x192' },
