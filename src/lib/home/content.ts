@@ -54,23 +54,65 @@ export const services: (HomeLink & { icon: HomeIconName })[] = [
  * premium. Shown as three lines (product; amount • context; price/month)
  * with one shared disclosure. No names, ages, genders, carriers,
  * underwriting classes or customer stories; no annuities or disability.
- * The person images are neutral placeholders until photos are chosen. */
+ * Each example has a representative-person portrait (approved by Randy,
+ * October 2026; decorative, not a customer): public/images/rate-examples/
+ * <image>-{640,960}.{avif,webp} and <image>.jpg, built by
+ * scripts/optimize-rate-example-images.mjs. `focus` is where the face's
+ * center sits across the photo (0 = left edge, 1 = right edge); the card
+ * keeps that point centered in its narrow photo panel at every size. */
 export interface RateExample {
   product: 'Burial Insurance' | 'Term Life Insurance' | 'Mortgage Protection';
   amount: string;
   context: string;
   premium: string;
-  /** Person photo (none yet: a neutral placeholder is shown). */
-  image?: { src: string; alt: string };
+  /** Portrait: file name in public/images/rate-examples/ and the face's
+   * horizontal center (0–1) in the 16:9 photo. */
+  image?: { name: string; focus: number };
 }
 
 export const rateExamples: RateExample[] = [
-  { product: 'Burial Insurance', amount: '$15,000', context: 'Moderate Health', premium: '$47.61' },
-  { product: 'Burial Insurance', amount: '$10,000', context: 'Average Health', premium: '$32.78' },
-  { product: 'Mortgage Protection', amount: '$250,000', context: '15-Year', premium: '$57.60' },
-  { product: 'Mortgage Protection', amount: '$350,000', context: '15-Year', premium: '$52.98' },
-  { product: 'Term Life Insurance', amount: '$1,000,000', context: '20-Year', premium: '$68.26' },
-  { product: 'Term Life Insurance', amount: '$500,000', context: '20-Year', premium: '$34.13' },
+  {
+    product: 'Burial Insurance',
+    amount: '$15,000',
+    context: 'Moderate Health',
+    premium: '$47.61',
+    image: { name: 'rate-burial-15000', focus: 0.395 },
+  },
+  {
+    product: 'Burial Insurance',
+    amount: '$10,000',
+    context: 'Average Health',
+    premium: '$32.78',
+    image: { name: 'rate-burial-10000', focus: 0.507 },
+  },
+  {
+    product: 'Mortgage Protection',
+    amount: '$250,000',
+    context: '15-Year',
+    premium: '$57.60',
+    image: { name: 'rate-mortgage-250000', focus: 0.44 },
+  },
+  {
+    product: 'Mortgage Protection',
+    amount: '$350,000',
+    context: '15-Year',
+    premium: '$52.98',
+    image: { name: 'rate-mortgage-350000', focus: 0.46 },
+  },
+  {
+    product: 'Term Life Insurance',
+    amount: '$1,000,000',
+    context: '20-Year',
+    premium: '$68.26',
+    image: { name: 'rate-term-1000000', focus: 0.575 },
+  },
+  {
+    product: 'Term Life Insurance',
+    amount: '$500,000',
+    context: '20-Year',
+    premium: '$34.13',
+    image: { name: 'rate-term-500000', focus: 0.48 },
+  },
 ];
 
 /** Positions (data/customer-reviews.json "position") of the reviews shown on
