@@ -33,7 +33,7 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   ctaBar={d.ctaBar}
   stickyCall={!hasOwnCallButton}
 >
-  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing' }]}>
+  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing', 'page--no-cta': !d.ctaBar }]}>
     {/* Pagefind indexes only this element (H1 + article body), never the
        header, nav, sidebar quote box or footer. */}
     <div class="prose wp-content" data-pagefind-body={isSearchable(entry) ? '' : undefined}>
@@ -52,6 +52,11 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
 <style>
   .page {
     padding-block: var(--space-8) var(--space-12);
+  }
+  /* Without the call-to-action bar (the homepage) the content sits directly
+     under the header, so it needs a little less space above it. */
+  .page--no-cta {
+    padding-top: var(--space-6);
   }
   .page__aside {
     margin-top: var(--space-8);

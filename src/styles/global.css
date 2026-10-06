@@ -153,6 +153,13 @@ a:hover {
   max-width: var(--prose-max);
 }
 
+/* The column's first element starts at the column's top edge (lined up with
+   the sidebar quote box); otherwise e.g. an article image's top margin would
+   push it lower. Headings and paragraphs already have no top margin. */
+.prose > :first-child {
+  margin-top: 0;
+}
+
 .prose :where(ul, ol) {
   padding-left: 1.25rem;
   margin: 0 0 var(--space-4);
