@@ -308,6 +308,32 @@ const schema = articleGraph({
   body.page-article-v2 .art-body h4 strong {
     font-weight: inherit;
   }
+  /* Migrated reader comments (enhance.ts sets them after the article): a
+     small heading and compact names, so they read as comments, not as more
+     article sections. The comment list keeps the global .comments styles. */
+  body.page-article-v2 .art-body .art-comments h2 {
+    margin: 3.5rem 0 0;
+    padding-top: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  body.page-article-v2 .art-body .art-comments h2::before {
+    content: none;
+  }
+  body.page-article-v2 .art-body .art-comments .comments {
+    margin-top: var(--space-4);
+  }
+  body.page-article-v2 .art-body .art-comments .comment-name {
+    margin: 0 0 var(--space-2);
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-comments p {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
   /* A rule right before an H2 would double the H2's own hairline. */
   body.page-article-v2 .art-body hr:has(+ h2) {
     display: none;

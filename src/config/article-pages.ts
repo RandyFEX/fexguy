@@ -105,6 +105,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance-breast-cancer/': { family: 'health' },
   '/burial-insurance-defibrillator/': { family: 'health' },
   '/burial-insurance-diabetic-complications/': { family: 'health', crumb: 'Diabetic Complications' },
+  '/burial-insurance-kidney-failure/': { family: 'health' },
   '/burial-insurance-with-lung-cancer/': { family: 'health' },
   '/burial-insurance/adl-activities-of-daily-living/': { family: 'health', crumb: 'Activities of Daily Living' },
   '/burial-insurance/afib/': { family: 'health' },
@@ -225,6 +226,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/traumatic-brain-injury-tbi/': { family: 'health' },
   '/burial-insurance/valvular-heart-disease/': { family: 'health' },
   '/burial-insurance/wheelchair-users/': { family: 'health' },
+  '/life-insurance-for-hiv-positive/': { family: 'health', crumb: 'HIV Positive' },
 
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).

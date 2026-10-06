@@ -50,6 +50,8 @@ export interface EnhanceReport {
   prosCons: number;
   linkLists: number;
   hubGroups: HubGroup[];
+  /** Migrated reader comments (div.comment) set aside and shown after the article. */
+  comments: number;
 }
 
 export interface EnhancedArticle {
@@ -117,6 +119,7 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     prosCons: 0,
     linkLists: 0,
     hubGroups: [],
+    comments: 0,
   };
   let rest = html.trim();
 
@@ -178,6 +181,33 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     });
   }
 
+  // 3b. Migrated reader comments: <div class="comments"> (one div.comment per
+  //     comment, replies in div.comment-replies) and the heading right before
+  //     it ("2 Comments"). Not part of the article: set aside so no article
+  //     transform (contents list, FAQ, stories, notes…) sees them, and put back
+  //     unchanged at the end, after the article.
+  let comments = '';
+  {
+    const start = rest.search(/(?:<h2[^>]*>(?:(?!<\/h2>)[\s\S])*<\/h2>\s*)?<div class="comments">/);
+    if (start !== -1) {
+      const open = rest.indexOf('<div class="comments">', start);
+      let depth = 0;
+      let end = -1;
+      for (const m of rest.slice(open).matchAll(/<div\b|<\/div>/g)) {
+        depth += m[0] === '<div' ? 1 : -1;
+        if (depth === 0) {
+          end = open + (m.index ?? 0) + m[0].length;
+          break;
+        }
+      }
+      if (end !== -1) {
+        comments = rest.slice(start, end).trim();
+        rest = rest.slice(0, start) + rest.slice(end);
+        report.comments = (comments.match(/<div class="comment"/g) ?? []).length;
+      }
+    }
+  }
+
   // 4. Legacy blocks the template replaces.
   rest = rest.replace(
     /<table>\s*<thead>\s*<tr>\s*<th[^>]*>\s*TABLE OF CONTENTS\s*<\/th>[\s\S]*?<\/table>\s*/i,
@@ -214,18 +244,22 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
   rest = rest.replace(/(<(?:h[2-6]|p)(?:\s[^>]*)?>)\s*(?:<br\s*\/?>\s*)+/g, '$1');
 
   // 6. Unique ids (the first keeps its id; later duplicates get -2, -3…).
+  //    The comments come last on the page, so their ids are checked last.
   const used = new Set<string>();
-  rest = rest.replace(/(<[a-z][a-z0-9]*\b[^>]*?\sid=")([^"]*)(")/gi, (m, pre: string, id: string, post: string) => {
-    if (!used.has(id)) {
-      used.add(id);
-      return m;
-    }
-    let n = 2;
-    while (used.has(`${id}-${n}`)) n++;
-    used.add(`${id}-${n}`);
-    report.duplicateIds.push(id);
-    return `${pre}${id}-${n}${post}`;
-  });
+  const uniqueIds = (html: string) =>
+    html.replace(/(<[a-z][a-z0-9]*\b[^>]*?\sid=")([^"]*)(")/gi, (m, pre: string, id: string, post: string) => {
+      if (!used.has(id)) {
+        used.add(id);
+        return m;
+      }
+      let n = 2;
+      while (used.has(`${id}-${n}`)) n++;
+      used.add(`${id}-${n}`);
+      report.duplicateIds.push(id);
+      return `${pre}${id}-${n}${post}`;
+    });
+  rest = uniqueIds(rest);
+  comments = uniqueIds(comments);
 
   // 7. H2 ids + contents list (a heading's own id is kept).
   const toc: TocItem[] = [];
@@ -329,6 +363,9 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
   //     labelled link lists (same words and links). A label repeated by the
   //     next paragraph continues the same group.
   if (options.variant === 'hub') rest = hubLists(rest, report);
+
+  // The reader comments, after the article.
+  if (comments) rest = `${rest.trim()}\n<section class="art-comments">${comments}</section>`;
 
   // 14. Split the intro (before the first H2) from the body.
   const firstH2 = rest.search(/<h2/);
