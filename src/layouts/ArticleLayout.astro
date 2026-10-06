@@ -23,7 +23,8 @@ import ArticleSummary from '@/components/article/ArticleSummary.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import AuthorBio from '@/components/article/AuthorBio.astro';
 import RelatedTopics from '@/components/article/RelatedTopics.astro';
-import { enhanceArticle } from '@/lib/article/enhance';
+import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
+import { absoluteUrl, articleGraph, migratedDates } from '@/lib/seo/schema';
 import type { ResolvedArticle } from '@/lib/article/config';
 import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
@@ -40,10 +41,23 @@ const article = enhanceArticle(entry.rendered?.html ?? '', { variant: config.var
 const hub = config.variant === 'hub';
 const searchable = isSearchable(entry) ? '' : undefined;
 
-// The page's real last-updated date: JSON-LD dateModified, else og:updated_time.
-const updated =
-  (d.jsonLd ?? []).join(' ').match(/"dateModified":"(\d{4}-\d{2}-\d{2})/)?.[1] ??
-  d.headMeta?.find((m) => m.property === 'og:updated_time')?.content?.slice(0, 10);
+// The page's real dates, from its migrated metadata only (never the build).
+const dates = migratedDates(d.jsonLd, d.headMeta);
+const updated = dates.modified?.slice(0, 10);
+
+// Structured data: the shared graph replaces the page's migrated WordPress
+// JSON-LD (which stays in frontmatter only as the source of its dates).
+// Breadcrumbs come from the same data as the visible trail.
+const canonical = d.canonical ?? pagePath(entry);
+const ogImage = d.headMeta?.find((m) => m.property === 'og:image')?.content;
+const ogSize = (p: string) => Number(d.headMeta?.find((m) => m.property === p)?.content) || undefined;
+const schema = articleGraph({
+  url: absoluteUrl(canonical),
+  headline: htmlToText(article.h1),
+  crumbs: config.breadcrumbs,
+  dates,
+  image: ogImage ? { url: ogImage, width: ogSize('og:image:width'), height: ogSize('og:image:height') } : undefined,
+});
 ---
 
 <BaseLayout
@@ -51,9 +65,9 @@ const updated =
   description={d.description}
   robots={d.robots}
   noindex={d.noindex}
-  canonical={d.canonical ?? pagePath(entry)}
+  canonical={canonical}
   headMeta={d.headMeta}
-  jsonLd={d.jsonLd}
+  jsonLd={[schema]}
   ctaBar={false}
   bodyClass="page-article-v2"
 >

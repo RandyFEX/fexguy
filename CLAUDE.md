@@ -603,7 +603,12 @@ is in place; see src/content/README.md for how pages were migrated.
 - Images: `public/wp-content/uploads/` (original WordPress paths).
 - Redirects: `vercel.json` → `redirects`.
 - Structured data: migrated pages carry verbatim JSON-LD in frontmatter
-  (`jsonLd`). For new pages, builders live in `src/lib/seo/schema.ts`.
+  (`jsonLd`), printed as-is. Pages on the article template (ArticleLayout)
+  instead emit one shared graph from `src/lib/seo/schema.ts` (canonical
+  Organization, WebSite and Randy Person; WebPage, Article, BreadcrumbList from
+  the visible H1 and breadcrumbs); their frontmatter `jsonLd` is not printed
+  and only supplies the migrated dates (never build time). No FAQPage, sameAs,
+  credentials or other schema is generated.
 - Colors/spacing: CSS custom properties at the top of `src/styles/global.css`.
 
 ## Conventions

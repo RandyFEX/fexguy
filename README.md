@@ -49,7 +49,7 @@ src/
     Section.astro       Labeled content section
   lib/
     pages.ts            Page queries and URL helpers
-    seo/schema.ts       JSON-LD builders for new pages
+    seo/schema.ts       shared JSON-LD (article-template pages)
     seo/meta.ts         Title formatting
     lead/               Quote box markup + Markdown plugin for in-content forms
   scripts/
