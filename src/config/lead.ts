@@ -11,7 +11,22 @@ export const lead = {
     digits: '8888629456',
   },
 
-  /** The single Fillout quote/lead form used everywhere on the site. */
+  /** Which quote form the site renders: the native FEXGuy form posting to
+   * Formspark, or the Fillout embed (kept as rollback code while the native
+   * form is tested; set to 'fillout' to restore it). */
+  quoteForm: 'formspark' as 'formspark' | 'fillout',
+
+  /** Formspark form "FEXGUY LEAD FORM". The endpoint is public by design (no
+   * secret); Formspark emails each submission to randy@fexguy.com. */
+  formspark: {
+    endpoint: 'https://submit-form.com/v3iwLYrwZ',
+    /** Where a successful submission goes; that page fires the conversion. */
+    successPath: '/help/',
+    /** sessionStorage key set only after Formspark confirms a submission. */
+    pendingLeadKey: 'fexguy:lead-pending',
+  },
+
+  /** The Fillout quote/lead form (rollback; see quoteForm). */
   fillout: {
     formId: 'pJBgSNEtN9us',
     /** Hosted form: the no-JavaScript fallback. */

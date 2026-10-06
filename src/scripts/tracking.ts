@@ -2,7 +2,8 @@
 // tagging, no Conversions API). Approved event plan:
 //
 //   page view                         GA4 page_view      Meta PageView
-//   verified Fillout form_submit      GA4 generate_lead  Meta Lead
+//   confirmed lead, on /help/         GA4 generate_lead  Meta Lead
+//   (native form → Formspark; or a verified Fillout form_submit, rollback)
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
 //
 // Rules:
@@ -155,6 +156,36 @@ window.addEventListener('message', (e: MessageEvent) => {
   ga4('event', 'generate_lead');
   meta('track', 'Lead');
 });
+
+// --- Lead: confirmed native-form (Formspark) submission ---------------------
+// src/scripts/lead-form.ts sets a one-time flag only after Formspark confirms
+// a submission, then opens the success page (/help/). The flag is removed
+// before anything is sent, so a reload, Back/Forward or a later visit can't
+// count the same lead again; a direct visit (no flag) never counts. Flags
+// older than an hour are discarded rather than counted.
+
+const LEAD_FLAG_MAX_AGE_MS = 60 * 60 * 1000;
+
+if (location.pathname === lead.formspark.successPath) {
+  let pending: { id?: unknown; at?: unknown } | null = null;
+  try {
+    const raw = sessionStorage.getItem(lead.formspark.pendingLeadKey);
+    sessionStorage.removeItem(lead.formspark.pendingLeadKey);
+    pending = raw ? JSON.parse(raw) : null;
+  } catch {
+    pending = null;
+  }
+  const fresh =
+    pending &&
+    typeof pending.id === 'string' &&
+    typeof pending.at === 'number' &&
+    Date.now() - pending.at < LEAD_FLAG_MAX_AGE_MS;
+  if (fresh && !alreadyCounted(pending!.id as string)) {
+    // Only the fact that a lead happened is sent — never the form answers.
+    ga4('event', 'generate_lead');
+    meta('track', 'Lead');
+  }
+}
 
 // --- Phone: tap on the website number (GA4 only) -----------------------------
 

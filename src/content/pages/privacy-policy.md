@@ -18,7 +18,7 @@ sidebar: true
 
 <h2>Information you give us on the website</h2>
 
-<p>Our quote request form is provided by Fillout, a third-party online form service. The form asks for:</p>
+<p>Our quote request form sends what you enter to Formspark, a third-party online form service. The form asks for:</p>
 
 <ul>
 <li>First name and last name</li>
@@ -28,7 +28,7 @@ sidebar: true
 <li>What Randy can help you with (a free-text answer)</li>
 </ul>
 
-<p>Fillout receives and stores what you submit and makes it available to us. When the form loads, Fillout also receives the address of the page you are on, including any campaign parameters in that address (for example, utm_source), and the standard technical information your browser sends, such as your IP address.</p>
+<p>Formspark receives and stores what you submit and sends it to us. It also receives the standard technical information your browser sends, such as your IP address, and our website’s address.</p>
 
 <p>The website does not ask for, and you should not enter, Social Security numbers, bank account or credit card information, or passwords. There are no user accounts on the website.</p>
 
@@ -83,7 +83,7 @@ sidebar: true
 <ul>
 <li><strong>Insurance companies.</strong> When you apply for insurance, we provide the necessary information to the insurance company for underwriting, application processing, policy issuance, servicing and related insurance purposes.</li>
 <li><strong>Another licensed insurance professional.</strong> In an uncommon situation where your insurance needs would be better served by another appropriately licensed insurance professional with specialized expertise, Randy may bring that agent into your case. You will be told before that happens.</li>
-<li><strong>Service providers.</strong> Companies that provide services to us, such as our online form service (Fillout), our website hosting and our customer records and messaging tools, receive information only as needed to provide those services.</li>
+<li><strong>Service providers.</strong> Companies that provide services to us, such as our online form service (Formspark), our website hosting and our customer records and messaging tools, receive information only as needed to provide those services.</li>
 <li><strong>Legal requirements.</strong> We may disclose information if required by law or legal process.</li>
 </ul>
 

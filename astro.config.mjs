@@ -62,7 +62,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    // <div data-quote-form></div> in page Markdown -> the Fillout quote box.
+    // <div data-quote-form></div> in page Markdown -> the quote box (lead form).
     processor: satteri({ hastPlugins: [quoteFormPlugin] }),
   },
   integrations: [

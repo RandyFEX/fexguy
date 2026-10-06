@@ -1,7 +1,7 @@
 ---
 // Document shell for every page: <head> (SEO, icons), skip link, header,
 // call-to-action bar, <main>, pre-footer, footer, mobile call button, and the
-// site scripts (quote form loader, tracking). "landing" pages (former
+// site scripts (lead form, Fillout loader for rollback, tracking). "landing" pages (former
 // WordPress landing-page template) render without the site header, CTA bar,
 // pre-footer and footer, as they did on the live site.
 import '@/styles/global.css';
@@ -82,6 +82,7 @@ const { layout = 'default', stickyCall = true, ctaBar = true, preFooter = true, 
     <script>
       import '@/scripts/tracking';
       import '@/scripts/quote-form';
+      import '@/scripts/lead-form';
     </script>
     <script>
       import '@/scripts/scroll-tables';
