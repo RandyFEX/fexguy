@@ -198,7 +198,7 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   for (const [label, re] of GUARDS) if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
 }
 // Retired pages that must stay real 404s (not built, not redirected).
-const MUST_404 = ['/reviews/', '/gtl/'];
+const MUST_404 = ['/gtl/'];
 for (const p of MUST_404) {
   if (isPage(p)) (guardHits['retired page is built (must be a real 404)'] ??= []).push(p);
   if (redirects.has(p)) (guardHits['retired page is redirected (must be a real 404)'] ??= []).push(p);

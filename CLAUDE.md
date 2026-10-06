@@ -43,9 +43,16 @@ is in place; see src/content/README.md for how pages were migrated.
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
-  /reviews/ (legacy testimonial-image page, hotlinked and inaccessible; not
-  rebuilt, no replacement review section) and /gtl/ (reproduced Guarantee
-  Trust Life application/e-consent forms; the GTL review article stays).
+  /gtl/ (reproduced Guarantee Trust Life application/e-consent forms; the GTL
+  review article stays).
+- **/reviews/ restored** (Randy, October 2026; reverses the earlier decision
+  to retire it): the 476 client reviews published on the WordPress /reviews/
+  page were preserved word for word in data/customer-reviews.json (with
+  source, capture method and the published numbering anomalies in "notes")
+  and data/customer-reviews.csv (Randy's spreadsheet copy). src/pages/
+  reviews.astro renders them from the JSON. Never edit, reword, renumber,
+  date, rate (no stars) or add review/aggregate-rating schema to them; the
+  hotlinked Google Docs images on the old page were not kept.
 - Redirects must be approved by Randy before they're added to vercel.json.
   Old URLs decided as 404 with no redirect: /book/, the two
   /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
@@ -698,4 +705,4 @@ point to a missing page, and content guards fail on 888-656-4648, retired
 Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
 address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
-/reviews/ and /gtl/ must stay real 404s (not built, not redirected). Add `-- --strict` to fail on any.
+/gtl/ must stay a real 404 (not built, not redirected). Add `-- --strict` to fail on any.
