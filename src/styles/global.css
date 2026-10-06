@@ -484,7 +484,11 @@ a:hover {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-bg);
+  /* clip, not hidden: a hidden box is a scroll container, which makes #quote
+     links ignore the form's scroll-margin-top (the form landed flush with the
+     top of the screen). hidden stays as the fallback for older browsers. */
   overflow: hidden;
+  overflow: clip;
 }
 
 /* Sidebar "Get a Quote" box: the footer's light gray behind the whole

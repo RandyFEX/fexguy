@@ -1,15 +1,22 @@
 ---
-// Closing call to action (heritage-green band) just above the pre-footer.
+// Closing call to action (heritage-green band) just above the footer: the
+// headline, copy and CALL button on the left and the site's one native lead
+// form (the same quoteBoxHtml('inline') box as /free-quote/; id="quote", the
+// target of the hero's GET A QUOTE) on the right. Stacked below 64rem:
+// headline, copy, CALL, form.
 import { lead } from '@/config/lead';
+import { quoteBoxHtml } from '@/lib/lead/quote-box';
 ---
 
 <section class="final-cta" aria-labelledby="final-cta-title" data-pagefind-ignore>
   <div class="container final-cta__inner">
-    <h2 class="final-cta__title" id="final-cta-title">Not Sure What Type of Life Insurance You Need?</h2>
-    <p class="final-cta__text">Randy can help you compare your options.</p>
-    <div class="final-cta__actions">
+    <div class="final-cta__intro">
+      <h2 class="final-cta__title" id="final-cta-title">Not Sure What Type of Life Insurance You Need?</h2>
+      <p class="final-cta__text">Randy can help you compare your options.</p>
       <a class="btn final-cta__btn final-cta__btn--light" href={lead.phone.href}>CALL {lead.phone.display}</a>
-      <a class="btn final-cta__btn final-cta__btn--outline" href="/free-quote/">GET A QUOTE</a>
+    </div>
+    <div class="final-cta__form">
+      <Fragment set:html={quoteBoxHtml('inline')} />
     </div>
   </div>
 </section>
@@ -22,6 +29,15 @@ import { lead } from '@/config/lead';
     padding-block: var(--space-12);
     background: var(--color-primary);
     color: #ffffff;
+  }
+  /* Stacked (phones, tablets): one centered column, the CALL button as wide
+     as the form below it. */
+  .final-cta__inner {
+    display: grid;
+    gap: var(--space-8);
+    max-width: 36rem;
+  }
+  .final-cta__intro {
     text-align: center;
   }
   .final-cta__title {
@@ -35,14 +51,8 @@ import { lead } from '@/config/lead';
     max-width: 36rem;
     font-size: 1.125rem;
   }
-  .final-cta__actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-3);
-  }
   .final-cta__btn {
-    white-space: nowrap;
+    width: 100%;
   }
   .final-cta__btn--light {
     background: #ffffff;
@@ -52,17 +62,30 @@ import { lead } from '@/config/lead';
     background: var(--home-cream);
     color: var(--color-primary-hover);
   }
-  .final-cta__btn--outline {
-    border-color: #ffffff;
-    color: #ffffff;
+  /* The white form box keeps the site's normal text color and focus ring
+     (the band's white ring would vanish on white). */
+  .final-cta__form {
+    --color-focus: #1a1a1a;
+    --color-focus-inner: #ffffff;
+    color: var(--color-text);
   }
-  .final-cta__btn--outline:hover {
-    background: var(--color-primary-hover);
-    color: #ffffff;
-  }
-  @media (max-width: 23.99rem) {
+  /* Side by side: copy left, form right. */
+  @media (min-width: 64rem) {
+    .final-cta__inner {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 34rem);
+      align-items: center;
+      gap: var(--space-12);
+      max-width: var(--container-max);
+    }
+    .final-cta__intro {
+      text-align: left;
+    }
+    .final-cta__text {
+      margin-inline: 0;
+    }
     .final-cta__btn {
-      width: 100%;
+      width: auto;
+      white-space: nowrap;
     }
   }
 </style>
