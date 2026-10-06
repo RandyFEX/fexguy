@@ -86,6 +86,20 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     ],
   },
 
+  // Health pilot (10 pages, October 2026): representative health-condition
+  // structures before the wider health rollout. Breadcrumb: Home › Health
+  // Conditions › H1 (explicit `crumb` only where the H1 is too long).
+  '/burial-insurance-substance-abuse-drug-abuse/': { family: 'health' },
+  '/burial-insurance/transferring-activities-of-daily-living-adl/': { family: 'health', crumb: 'Help with Transferring' },
+  '/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/': { family: 'health', crumb: 'Help with Dressing' },
+  '/burial-insurance/stent/': { family: 'health' },
+  '/burial-insurance/oxygen-use/': { family: 'health' },
+  '/burial-insurance/hospitalized/': { family: 'health' },
+  '/burial-insurance/terminal-illness/': { family: 'health', crumb: 'Terminal Illness' },
+  '/burial-insurance/blood-thinner/': { family: 'health' },
+  '/burial-insurance/sarcoidosis/': { family: 'health' },
+  '/final-expense-life-insurance-diabetics/': { family: 'health' },
+
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
