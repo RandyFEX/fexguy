@@ -12,7 +12,7 @@ source: "live"
 
 <h1>Pricing</h1>
 
-<ul><li><strong><a href="#What’s-My-Price?">What’s My Price?</a></strong></li><li><strong><a href="#What-Companies-Are-Best?">What Companies Are Best?</a></strong></li><li><strong><a href="#Term-Life-Insurance-Companies">Term Life Insurance Companies</a></strong></li><li><strong><a href="#2-Year-Waiting-Period-Companies">2-Year Waiting Period Companies</a></strong></li><li><strong><a href="#The-$9.95-“Per-Unit”-Myth">The $9.95 “Per Unit” Myth</a></strong></li><li><strong><a href="#Actual-Male-&-Female-Pricing-(65-Years-Old)">Actual Male &amp; Female Pricing (65 Years Old)</a></strong></li><li><a href="#Additional-Riders-Available"><strong>Additional Riders Available</strong></a></li></ul>
+<ul><li><strong><a href="#What’s-My-Price?">What’s My Price?</a></strong></li><li><strong><a href="#What-Companies-Are-Best?">What Companies Are Best?</a></strong></li><li><strong><a href="#Term-Life-Insurance-Companies">Term Life Insurance Companies</a></strong></li><li><strong><a href="#2-Year-Waiting-Period-Companies">2-Year Waiting Period Companies</a></strong></li><li><strong><a href="#The-$9.95-“Per-Unit”-Myth">The $9.95 “Per Unit” Myth</a></strong></li><li><a href="#Additional-Riders-Available"><strong>Additional Riders Available</strong></a></li></ul>
 
 <p><br></p>
 

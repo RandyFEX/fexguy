@@ -1,6 +1,7 @@
 ---
 title: "Great News! - Final Expense Guy"
-robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+robots: "noindex, follow"
+noindex: true
 canonical: "/call-now/"
 layout: "landing"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Great News! - Final Expense Guy"},{"property":"og:description","content":"Things are looking good so far…and you’ve come so far! Call Randy now and he’ll get you rates right away over the phone! Randy VanderVaateFounder & Owner of Final Expense GuyLicensed Insurance Agent in most statesFEXGuy.com(888) 862-9456"},{"property":"og:url","content":"https://fexguy.com/call-now/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-03-19T09:40:21-05:00"},{"property":"article:published_time","content":"2024-08-14T15:35:20-05:00"},{"property":"article:modified_time","content":"2025-03-19T09:40:21-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Great News! - Final Expense Guy"},{"name":"twitter:description","content":"Things are looking good so far…and you’ve come so far! Call Randy now and he’ll get you rates right away over the phone! Randy VanderVaateFounder & Owner of Final Expense GuyLicensed Insurance Agent in most statesFEXGuy.com(888) 862-9456"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"Less than a minute"}]

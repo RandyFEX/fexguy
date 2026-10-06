@@ -37,7 +37,7 @@ sidebar: true
 <td>
 <ul>
 <li><a href="#what-kind-of-burial-policies-should-i-avoid">What kind of burial policies should I avoid?</a></li>
-<li><a href="#why-choose-final-expense-guy-for-my-burial-policy">Why choose Final Expense Guy for my burial policy?</a></li>
+<li><a href="#why-choose-funeral-funds-for-my-burial-policy">Why choose Final Expense Guy for my burial policy?</a></li>
 <li><a href="#how-can-final-expense-guy-help-me">How can Final Expense Guy help me?</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>

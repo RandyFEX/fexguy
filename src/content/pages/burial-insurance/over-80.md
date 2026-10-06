@@ -45,7 +45,7 @@ sidebar: true
 <ul>
 <li><a href="#what’s-the-best-thing-about-burial-insurance">What’s the best thing about burial insurance?</a></li>
 <li><a href="#what-kind-of-burial-policies-should-i-avoid">What kind of burial policies should I avoid?</a></li>
-<li><a href="#how-can-final expense-guy-help-me">How Can Final Expense Guy Help me?</a></li>
+<li><a href="#how-can-final-expense-guy-help-me">How Can Final Expense Guy Help me?</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </td>

@@ -1,6 +1,7 @@
 ---
 title: "CONGRATULATIONS - Final Expense Guy"
-robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+robots: "noindex, follow"
+noindex: true
 canonical: "/congratulations/"
 layout: "landing"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"CONGRATULATIONS - Final Expense Guy"},{"property":"og:description","content":"It looks like you may qualify for first-day coverage! We just need a little more information to be 100% sure…but things are looking great so far! You may also qualify for additional savings and discounts! Randy will personally follow up with you as soon as possible to provide individualized pricing and coverage…"},{"property":"og:url","content":"https://fexguy.com/congratulations/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-03-19T08:45:09-05:00"},{"property":"article:published_time","content":"2019-09-20T17:42:44-05:00"},{"property":"article:modified_time","content":"2025-03-19T08:45:09-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"CONGRATULATIONS - Final Expense Guy"},{"name":"twitter:description","content":"It looks like you may qualify for first-day coverage! We just need a little more information to be 100% sure…but things are looking great so far! You may also qualify for additional savings and discounts! Randy will personally follow up with you as soon as possible to provide individualized pricing and coverage…"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"2 minutes"}]
