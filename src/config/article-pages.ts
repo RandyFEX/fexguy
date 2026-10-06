@@ -228,6 +228,21 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/wheelchair-users/': { family: 'health' },
   '/life-insurance-for-hiv-positive/': { family: 'health', crumb: 'HIV Positive' },
 
+  // Review pilot (10 pages, October 2026): representative company-review
+  // structures before the wider review rollout. Review pages use the bare
+  // company, agency or product name as their breadcrumb label (Randy's review
+  // convention), so every entry sets `crumb`.
+  '/lumico-burial-insurance-review/': { family: 'review', crumb: 'Lumico' },
+  '/aig-life-insurance-company-review/': { family: 'review', crumb: 'AIG' },
+  '/oxford-life-burial-insurance-review/': { family: 'review', crumb: 'Oxford Life' },
+  '/royal-neighbors-of-america/': { family: 'review', crumb: 'Royal Neighbors of America' },
+  '/lincoln-heritage-funeral-advantage-review-old/': { family: 'review', crumb: 'Lincoln Heritage' },
+  '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
+  '/senior-legacy-life-review/': { family: 'review', crumb: 'Senior Legacy Life' },
+  '/life-insurance-savings-group-review/': { family: 'review', crumb: 'Life Insurance Savings Group' },
+  '/trustage-life-insurance-review/': { family: 'review', crumb: 'TruStage' },
+  '/americo-life-insurance-quit-smoking-advantage/': { family: 'review', crumb: 'Americo Quit Smoking Advantage' },
+
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
