@@ -30,6 +30,7 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   headMeta={d.headMeta}
   jsonLd={d.jsonLd}
   layout={d.layout}
+  ctaBar={d.ctaBar}
   stickyCall={!hasOwnCallButton}
 >
   <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing' }]}>

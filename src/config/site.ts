@@ -61,7 +61,7 @@ export const site: SiteConfig = {
   ],
   defaultOgImage: '',
   primaryNav: [
-    { label: '★FREE FINAL EXPENSE QUOTE★', href: '/free-quote/' },
+    { label: 'GET A QUOTE', href: '/free-quote/' },
     {
       label: 'RESOURCES',
       href: '#',

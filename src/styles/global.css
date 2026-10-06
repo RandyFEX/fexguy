@@ -288,6 +288,21 @@ a:hover {
   margin: var(--space-6) 0;
 }
 
+/* Homepage: the Final Expense Guy logo (with its "Life insurance for every
+   stage of life" tagline) stands in for the visible headline under the beach
+   photo; the H1 stays in the page, visually hidden. About half the column
+   width, never narrower than 15rem or wider than 25rem; height follows the
+   width so the logo keeps its proportions. */
+.wp-content figure.home-hero-logo {
+  width: clamp(15rem, 50%, 25rem);
+  margin: var(--space-6) auto;
+}
+.wp-content figure.home-hero-logo img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .wp-content figcaption {
   font-size: 0.875rem;
   color: var(--color-text-muted);

@@ -17,7 +17,7 @@ export type QuoteBoxVariant = 'sidebar' | 'inline';
 
 export function quoteBoxHtml(variant: QuoteBoxVariant): string {
   const title =
-    variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">NEED INFO...LETS TEXT FIRST</p>' : '';
+    variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
   // aria-labelledby needs a role on a <div>: the titled sidebar box is a named
   // region (landmark) for screen-reader users.
   const labelledBy = variant === 'sidebar' ? ' role="region" aria-labelledby="quote-title"' : '';

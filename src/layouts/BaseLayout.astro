@@ -25,9 +25,11 @@ export interface Props {
   /** Render the mobile call button. Off for pages whose content already has
    * the live site's call button (#callnowbutton). */
   stickyCall?: boolean;
+  /** Render the call-to-action bar under the header (off on the homepage). */
+  ctaBar?: boolean;
 }
 
-const { layout = 'default', stickyCall = true, ...seo } = Astro.props;
+const { layout = 'default', stickyCall = true, ctaBar = true, ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -65,7 +67,7 @@ const { layout = 'default', stickyCall = true, ...seo } = Astro.props;
   <body class:list={{ 'is-landing': layout === 'landing' }}>
     <a class="skip-link" href="#main">Skip to main content</a>
     {layout !== 'landing' && <Header />}
-    {layout !== 'landing' && <CtaBar />}
+    {layout !== 'landing' && ctaBar && <CtaBar />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
