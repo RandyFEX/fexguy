@@ -1,8 +1,8 @@
 ---
-// "Related Topics": hand-picked related pages for the prototype (real URLs,
-// src/lib/article/prototype.ts). Later this becomes data-driven per topic
+// "Related Topics": hand-picked related pages per article (existing URLs only,
+// src/config/article-pages.ts). Later this becomes data-driven per topic
 // cluster, which also fixes the site's internal-link gaps.
-import type { RelatedLink } from '@/lib/article/prototype';
+import type { RelatedLink } from '@/lib/article/config';
 
 interface Props {
   links: RelatedLink[];

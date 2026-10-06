@@ -1,0 +1,33 @@
+---
+// Renders the pages opted in to the article template (src/config/article-pages.ts)
+// with ArticleLayout. Every other page renders through [...slug].astro, which
+// skips these paths. A separate route keeps the template's styles off every
+// other page: Astro bundles a layout's CSS into each page of the route that
+// imports it.
+import ArticleLayout from '@/layouts/ArticleLayout.astro';
+import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
+import { ARTICLE_PAGES } from '@/config/article-pages';
+import { isArticlePage, resolveArticle, type ResolvedArticle } from '@/lib/article/config';
+import { htmlToText } from '@/lib/article/enhance';
+
+export async function getStaticPaths() {
+  const pages = await getPublishedPages();
+  const h1s = new Map(
+    pages.map((p) => [pagePath(p), htmlToText(p.rendered?.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? p.data.title)]),
+  );
+  // Every listed page must exist and be published.
+  for (const path of Object.keys(ARTICLE_PAGES)) {
+    if (!h1s.has(path)) throw new Error(`src/config/article-pages.ts lists ${path}, which is not a published page`);
+  }
+  return pages
+    .filter((entry) => isArticlePage(pagePath(entry)))
+    .map((entry) => ({
+      params: { article: pagePath(entry).replace(/^\/|\/$/g, '') },
+      props: { entry, article: resolveArticle(pagePath(entry), (p) => h1s.get(p)) },
+    }));
+}
+
+const { entry, article } = Astro.props as { entry: PageEntry; article: ResolvedArticle };
+---
+
+<ArticleLayout entry={entry} article={article} />

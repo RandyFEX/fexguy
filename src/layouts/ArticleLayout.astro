@@ -1,7 +1,8 @@
 ---
-// Article template v2 — PROTOTYPE for Randy's approval, used only by the
-// pages listed in src/lib/article/prototype.ts (today: /burial-insurance/copd/).
-// Every other page still renders through ContentLayout, unchanged.
+// Article template v2 (approved design, October 2026), used only by the pages
+// opted in through src/config/article-pages.ts and rendered by
+// src/pages/[...article].astro. Every other page still renders through
+// ContentLayout, unchanged.
 //
 // It presents the page's migrated body without changing its words:
 //   breadcrumb › H1 › author row
@@ -9,6 +10,8 @@
 //   (phones/tablets) › "In This Article" › article (FAQ and case stories
 //   grouped) › About the author › Related Topics, with the quote form in the
 //   sidebar (after the article on phones, as the next step).
+// Variant 'hub' (link-collection pages such as /a-z-health/): the same
+// frame, with the page's "✓ / ✘" link lines shown as grouped lists.
 // The homepage palette is applied through <body class="page-article-v2">, so
 // the header, footer, buttons, quote form and mobile call bar match the
 // approved homepage; the old gray call-to-action bar is left out here.
@@ -21,19 +24,20 @@ import ArticleToc from '@/components/article/ArticleToc.astro';
 import AuthorBio from '@/components/article/AuthorBio.astro';
 import RelatedTopics from '@/components/article/RelatedTopics.astro';
 import { enhanceArticle } from '@/lib/article/enhance';
-import type { ArticleConfig } from '@/lib/article/prototype';
+import type { ResolvedArticle } from '@/lib/article/config';
 import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
 import { lead } from '@/config/lead';
 
 export interface Props {
   entry: PageEntry;
-  config: ArticleConfig;
+  article: ResolvedArticle;
 }
 
-const { entry, config } = Astro.props;
+const { entry, article: config } = Astro.props;
 const d = entry.data;
-const article = enhanceArticle(entry.rendered?.html ?? '');
+const article = enhanceArticle(entry.rendered?.html ?? '', { variant: config.variant });
+const hub = config.variant === 'hub';
 const searchable = isSearchable(entry) ? '' : undefined;
 
 // The page's real last-updated date: JSON-LD dateModified, else og:updated_time.
@@ -74,9 +78,9 @@ const updated =
 
       <ArticleToc items={article.toc} />
 
-      <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />
+      {article.intro && <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />}
 
-      <div class="prose wp-content art-body" data-pagefind-body={searchable} set:html={article.body} />
+      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-pagefind-body={searchable} set:html={article.body} />
 
       <div class="art-end">
         <AuthorBio />
@@ -276,6 +280,197 @@ const updated =
   }
   body.page-article-v2 .art-body .article-faq__item p:last-child {
     margin-bottom: 0;
+  }
+
+  /* --- Elements of other page types (the pilot pages beyond COPD) -------- */
+  /* H4: a small charcoal subheading under an H3. */
+  body.page-article-v2 .art-body h4 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: none;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body h4 strong {
+    font-weight: inherit;
+  }
+  /* A rule right before an H2 would double the H2's own hairline. */
+  body.page-article-v2 .art-body hr:has(+ h2) {
+    display: none;
+  }
+  /* Tables whose header row was written with <td> cells. */
+  body.page-article-v2 .art-body thead td {
+    padding: 0.75rem 1rem;
+    background: var(--home-stone);
+    border-top: 0;
+    border-bottom: 2px solid var(--color-primary);
+    font-weight: 700;
+  }
+  /* A table wrapped in a <figure>: the figure keeps the table's spacing. */
+  body.page-article-v2 .art-body figure.table-wrap table {
+    margin: 0;
+  }
+  /* FAQ whose questions are bold paragraphs (same look as question H3s). */
+  body.page-article-v2 .art-body .article-faq__q {
+    margin: 0 0 var(--space-3);
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text);
+  }
+  /* Questions written as <details> (e.g. a review's "Top 10 Questions"):
+     the FAQ's rules, with each answer opened on demand. */
+  body.page-article-v2 .art-body .art-details {
+    margin: 1.25rem 0 2.5rem;
+    border-top: 2px solid var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-details details {
+    border-bottom: 1px solid var(--color-border);
+  }
+  body.page-article-v2 .art-body .art-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    min-height: var(--tap-target);
+    padding-block: var(--space-4);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
+    cursor: pointer;
+    list-style: none;
+  }
+  body.page-article-v2 .art-body .art-details summary::-webkit-details-marker {
+    display: none;
+  }
+  body.page-article-v2 .art-body .art-details summary::after {
+    content: '+';
+    flex: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+  body.page-article-v2 .art-body .art-details details[open] summary::after {
+    content: '−';
+  }
+  body.page-article-v2 .art-body .art-details summary:hover {
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .art-details details[open] {
+    padding-bottom: var(--space-5, 1.25rem);
+  }
+  body.page-article-v2 .art-body .art-details details :is(ul, p):last-child {
+    margin-bottom: 0;
+  }
+  /* Company reviews: a "PROS" list and its "CONS" list side by side. */
+  body.page-article-v2 .art-body .art-proscons {
+    display: grid;
+    gap: var(--space-4);
+    margin: 1rem 0 2rem;
+  }
+  body.page-article-v2 .art-body .art-proscons__col {
+    padding: var(--space-5, 1.25rem) var(--space-6);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+  }
+  body.page-article-v2 .art-body .art-proscons__col--cons {
+    border-top-color: var(--color-text-muted);
+    background: var(--home-cream);
+  }
+  body.page-article-v2 .art-body .art-proscons__label {
+    margin: 0 0 var(--space-3);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .art-proscons__col--cons .art-proscons__label {
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-proscons ul {
+    margin: 0;
+  }
+  body.page-article-v2 .art-body .art-proscons li:last-child {
+    margin-bottom: 0;
+  }
+  @media (min-width: 40rem) {
+    body.page-article-v2 .art-body .art-proscons {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Lists that are only links (enhance.ts), e.g. a pillar's condition
+     links: columns, so a long list stays short. */
+  body.page-article-v2 .art-body .art-linklist li {
+    break-inside: avoid;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body .art-linklist {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+  }
+  @media (min-width: 48rem) {
+    body.page-article-v2 .art-body .art-linklist {
+      columns: 3;
+    }
+  }
+
+  /* --- Hub variant: grouped link lists (enhance.ts, variant 'hub') -------- */
+  body.page-article-v2 .art-body--hub .hub-group {
+    margin: 2.5rem 0 0;
+  }
+  body.page-article-v2 .art-body--hub .hub-group__title {
+    margin: 0 0 var(--space-4);
+    padding-bottom: var(--space-3);
+    border-bottom: 2px solid var(--color-text);
+    font-size: 1.0625rem;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body--hub .hub-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 1;
+    column-gap: var(--space-8);
+  }
+  body.page-article-v2 .art-body--hub .hub-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--color-border);
+    break-inside: avoid;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body--hub .hub-item__mark {
+    flex: none;
+    width: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body--hub .hub-item--no .hub-item__mark {
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body--hub .hub-item a {
+    font-weight: 700;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body--hub .hub-list {
+      columns: 2;
+    }
   }
 
   /* --- Sidebar quote form: the homepage form's white box ------------------ */

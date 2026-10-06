@@ -1,21 +1,53 @@
-// Build-time presentation pass for the article-v2 PROTOTYPE (see
-// prototype.ts). It reshapes the page's already-rendered HTML so the
-// template can present it, without changing any of the article's words:
+// Build-time presentation pass for the article template (ArticleLayout). It
+// reshapes a page's already-rendered HTML so the template can present it,
+// without changing any of the article's words. The Markdown source is never
+// edited: legacy WordPress blocks the template replaces are only left out of
+// the page it renders.
+//
 //  - the body's <h1> moves into the article header;
-//  - the "Here's the Bottom Line:" paragraph (lines separated by <br> and
-//    typed "•" characters) becomes a real list for the key-takeaways panel;
-//  - each <h2> gets an id, and the list of H2s feeds the contents panel;
-//  - the "Frequently Asked Questions…" section is grouped into question
-//    items (each question stays an <h3>) for the FAQ styling;
-//  - "…'s Story:" sections are grouped as asides (the case stories);
+//  - legacy blocks the template replaces are left out: the pasted byline
+//    (logo, "last updated", "Written by", "Verified"), the "TABLE OF CONTENTS"
+//    table, the "About Final Expense Guy" bio, the "Keep Reading" list and the
+//    in-article "GET … QUOTE(S)" buttons (the page already has the quote form,
+//    the quote button and the call bar);
+//  - "Here's the Bottom Line:" (lines separated by <br> and typed "•"
+//    characters, in one paragraph or two) becomes the key-points list;
+//  - duplicate ids get a numeric suffix; each <h2> gets an id (or keeps its
+//    own), and the H2s feed the contents panel;
+//  - FAQ sections (question <h3>s or bold question paragraphs) are grouped
+//    into items, and runs of <details> into one list;
+//  - "…'s Story:" sections become asides; "PROS"/"CONS" lists become a pair;
 //  - migrated sentences that point at "the form on this page" get a quiet
-//    note style, so the article doesn't read as a run of calls to action
-//    (the page already has the quote form, the quote button and call bar).
+//    note style;
+//  - hub pages (variant 'hub'): "✓"/"✘" link lines become grouped lists.
 // Pages that don't match a pattern simply skip that step.
 
 export interface TocItem {
   id: string;
   text: string;
+}
+
+export interface HubGroup {
+  label: string;
+  items: number;
+}
+
+/** What the pass found and did on a page (for audits; not rendered). */
+export interface EnhanceReport {
+  bottomLine: 'one paragraph' | 'two paragraphs' | null;
+  oldByline: boolean;
+  oldToc: { links: string[]; missingTargets: string[] } | null;
+  oldBio: boolean;
+  keepReading: boolean;
+  ctaButtons: string[];
+  ctaNotes: number;
+  duplicateIds: string[];
+  faq: 'headings' | 'paragraphs' | null;
+  detailsLists: number;
+  stories: number;
+  prosCons: number;
+  linkLists: number;
+  hubGroups: HubGroup[];
 }
 
 export interface EnhancedArticle {
@@ -28,13 +60,19 @@ export interface EnhancedArticle {
   /** Everything from the first H2 on. */
   body: string;
   toc: TocItem[];
+  report: EnhanceReport;
 }
 
-const stripTags = (html: string) =>
+const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+
+/** Plain text of an HTML fragment (tags removed, entities decoded). */
+export const htmlToText = (html: string) =>
   html
     .replace(/<[^>]+>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&([a-z]+);/gi, (m, n: string) => ENTITIES[n.toLowerCase()] ?? m)
+    .replace(/\s+/g, ' ')
     .trim();
 
 const slugify = (text: string) =>
@@ -47,7 +85,35 @@ const slugify = (text: string) =>
     .slice(0, 60)
     .replace(/-+$/, '');
 
-export function enhanceArticle(html: string): EnhancedArticle {
+// "Anything but the end of this element": keeps a match inside one block.
+const IN_P = '(?:(?!<\\/p>)[\\s\\S])*?';
+
+// The pasted WordPress byline, block by block (at the top of the body).
+const BYLINE_PARTS: RegExp[] = [
+  /^<p>\s*<picture>(?:(?!<\/picture>)[\s\S])*?alt="Final Expense Guy"(?:(?!<\/picture>)[\s\S])*?<\/picture>\s*<\/p>/,
+  /^<p>\s*last updated on [^<]*<\/p>/i,
+  new RegExp(`^<p>\\s*Written by ${IN_P}Randy VanderVaate${IN_P}<\\/p>`),
+  new RegExp(`^<p>${IN_P}Licensed Agent${IN_P}Founder${IN_P}<\\/p>`),
+  new RegExp(`^<p>\\s*✓ Verified ✓${IN_P}<\\/p>`),
+];
+
+export function enhanceArticle(html: string, options: { variant?: 'article' | 'hub' } = {}): EnhancedArticle {
+  const report: EnhanceReport = {
+    bottomLine: null,
+    oldByline: false,
+    oldToc: null,
+    oldBio: false,
+    keepReading: false,
+    ctaButtons: [],
+    ctaNotes: 0,
+    duplicateIds: [],
+    faq: null,
+    detailsLists: 0,
+    stories: 0,
+    prosCons: 0,
+    linkLists: 0,
+    hubGroups: [],
+  };
   let rest = html.trim();
 
   // 1. H1
@@ -57,61 +123,241 @@ export function enhanceArticle(html: string): EnhancedArticle {
     return '';
   });
 
-  // 2. Bottom line / key takeaways (the first paragraph, if it is one).
+  // 2. Old pasted byline: only when its "Written by" line is there.
+  {
+    let probe = rest;
+    const found: number[] = [];
+    for (let progress = true; progress; ) {
+      progress = false;
+      for (const [i, re] of BYLINE_PARTS.entries()) {
+        const m = probe.match(re);
+        if (m) {
+          found.push(i);
+          probe = probe.slice(m[0].length).trimStart();
+          progress = true;
+        }
+      }
+    }
+    if (found.includes(2)) {
+      rest = probe;
+      report.oldByline = true;
+    }
+  }
+
+  // 3. Bottom line / key takeaways: the first paragraph, with its lines in the
+  //    same paragraph or in the next one.
   let takeaways: EnhancedArticle['takeaways'];
   rest = rest.replace(
-    /^<p><strong>(Here[’']s the Bottom Line:?)<\/strong>([\s\S]*?)<\/p>\s*/,
-    (_, label: string, lines: string) => {
-      const items = lines
+    /^<p><strong>(Here[’']s the Bottom Line:?)<\/strong>(?:\s*(<br\s*\/?>[\s\S]*?)<\/p>|<\/p>\s*<p>(\s*[•·][\s\S]*?)<\/p>)\s*/,
+    (_, label: string, same: string | undefined, next: string | undefined) => {
+      const items = (same ?? next ?? '')
         .split(/<br\s*\/?>/)
         .map((l) => l.replace(/^\s*[•·]\s*/, '').trim())
         .filter(Boolean);
       takeaways = { label: label.trim(), items };
+      report.bottomLine = same !== undefined ? 'one paragraph' : 'two paragraphs';
       return '';
     },
   );
 
-  // 3. H2 ids + contents list.
+  // 4. Legacy blocks the template replaces.
+  rest = rest.replace(
+    /<table>\s*<thead>\s*<tr>\s*<th[^>]*>\s*TABLE OF CONTENTS\s*<\/th>[\s\S]*?<\/table>\s*/i,
+    (table: string) => {
+      const links = [...table.matchAll(/href="#([^"]*)"/g)].map((m) => htmlToText(m[1]));
+      report.oldToc = { links, missingTargets: [] };
+      return '';
+    },
+  );
+  rest = rest.replace(
+    /<h2[^>]*>\s*About Final Expense Guy\s*<\/h2>\s*(?:<p>\s*<picture>[\s\S]*?<\/picture>\s*<\/p>\s*)?<p>\s*Randy VanderVaate[\s\S]*?<\/p>\s*/,
+    () => {
+      report.oldBio = true;
+      return '';
+    },
+  );
+  rest = rest.replace(/<h2[^>]*>\s*Keep Reading\s*<\/h2>\s*<div>[\s\S]*?<\/div>\s*/, () => {
+    report.keepReading = true;
+    return '';
+  });
+  rest = rest.replace(/<p class="quote-cta">\s*<a [^>]*href="#quote"[^>]*>([^<]*)<\/a>\s*<\/p>\s*/g, (_, label: string) => {
+    report.ctaButtons.push(label.trim());
+    return '';
+  });
+
+  // 5. A <br> right after an opening tag only adds an empty line.
+  rest = rest.replace(/(<(?:h[2-6]|p)(?:\s[^>]*)?>)\s*(?:<br\s*\/?>\s*)+/g, '$1');
+
+  // 6. Unique ids (the first keeps its id; later duplicates get -2, -3…).
   const used = new Set<string>();
+  rest = rest.replace(/(<[a-z][a-z0-9]*\b[^>]*?\sid=")([^"]*)(")/gi, (m, pre: string, id: string, post: string) => {
+    if (!used.has(id)) {
+      used.add(id);
+      return m;
+    }
+    let n = 2;
+    while (used.has(`${id}-${n}`)) n++;
+    used.add(`${id}-${n}`);
+    report.duplicateIds.push(id);
+    return `${pre}${id}-${n}${post}`;
+  });
+
+  // 7. H2 ids + contents list (a heading's own id is kept).
   const toc: TocItem[] = [];
   rest = rest.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/g, (match, attrs: string, inner: string) => {
-    const text = stripTags(inner);
+    const text = htmlToText(inner);
     if (!text) return match;
+    const own = attrs.match(/\sid="([^"]*)"/)?.[1];
+    if (own) {
+      toc.push({ id: htmlToText(own), text });
+      return match;
+    }
     let id = slugify(text) || 'section';
     for (let n = 2; used.has(id); n++) id = `${slugify(text)}-${n}`;
     used.add(id);
     toc.push({ id, text });
-    return /\sid=/.test(attrs) ? match : `<h2${attrs} id="${id}">${inner}</h2>`;
+    return `<h2${attrs} id="${id}">${inner}</h2>`;
   });
+  if (report.oldToc) {
+    const ids = new Set([...rest.matchAll(/\sid="([^"]*)"/g)].map((m) => htmlToText(m[1])));
+    report.oldToc.missingTargets = report.oldToc.links.filter((l) => !ids.has(l));
+  }
 
-  // 4. FAQ section: from the "Frequently Asked Questions" H2 to the next H2.
+  // 8. FAQ section: from the "Frequently Asked Questions" H2 to the next H2.
+  //    Questions are <h3>s, or else paragraphs that are wholly bold.
   rest = rest.replace(
-    /(<h2[^>]*>\s*Frequently Asked Questions[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2|$)/i,
-    (_, heading: string, section: string) => {
-      const parts = section.split(/(?=<h3)/);
-      const lead = parts[0].startsWith('<h3') ? '' : parts.shift() ?? '';
-      const items = parts.map((p) => `<div class="article-faq__item">${p.trim()}</div>`).join('\n');
+    /(<h2[^>]*>(?:\s|<[^>]+>)*Frequently Asked Questions[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2|$)/i,
+    (match, heading: string, section: string) => {
+      const byHeading = /<h3/.test(section);
+      const q = byHeading ? /(?=<h3)/ : /(?=<p><strong>[^<]*<\/strong><\/p>)/;
+      const parts = section.split(q);
+      const lead = q.test(parts[0]) ? '' : parts.shift() ?? '';
+      if (!parts.length) return match;
+      report.faq = byHeading ? 'headings' : 'paragraphs';
+      const items = parts
+        .map((p) => p.trim().replace(/^<p><strong>/, '<p class="article-faq__q"><strong>'))
+        .map((p) => `<div class="article-faq__item">${p}</div>`)
+        .join('\n');
       return `<section class="article-faq">${heading}${lead}<div class="article-faq__list">${items}</div></section>\n`;
     },
   );
 
-  // 5. Case stories: an H3 ending "'s Story:" (or "s' Story:") and the text
-  //    after it, up to the next heading.
+  // 9. Runs of <details> (e.g. a review's "Top 10 Questions") as one list.
+  rest = rest.replace(/(?:<details>[\s\S]*?<\/details>\s*)+/g, (run: string) => {
+    report.detailsLists++;
+    return `<div class="art-details">${run.trim()}</div>\n`;
+  });
+
+  // 10. Case stories: an H3 ending "'s Story:" (or "s' Story:") and the text
+  //     after it, up to the next heading.
   rest = rest.replace(
     /(<h3[^>]*>[^<]*(?:[’']s|s[’']) Story:?<\/h3>)([\s\S]*?)(?=<h[23]|<\/section>|$)/g,
-    (_, heading: string, story: string) => `<div class="art-story">${heading}${story.trim()}</div>\n`,
+    (_, heading: string, story: string) => {
+      report.stories++;
+      return `<div class="art-story">${heading}${story.trim()}</div>\n`;
+    },
   );
 
-  // 6. Calls to action written into the migrated text ("…form on this page…"):
-  //    same words, quiet note style.
-  rest = rest.replace(/<p>((?:(?!<\/p>)[\s\S])*?(?:quote request form|form on this page)(?:(?!<\/p>)[\s\S])*?)<\/p>/gi, (_, inner: string) =>
-    `<p class="art-note">${inner.replace(/<\/?strong>/g, '')}</p>`,
+  // 11. "PROS" list followed by a "CONS" list (company reviews): one pair.
+  rest = rest.replace(
+    /<p><strong>(PROS:?)<\/strong><\/p>\s*(<ul>[\s\S]*?<\/ul>)\s*<p><strong>(CONS:?)<\/strong><\/p>\s*(<ul>[\s\S]*?<\/ul>)/g,
+    (_, pros: string, prosList: string, cons: string, consList: string) => {
+      report.prosCons++;
+      return (
+        `<div class="art-proscons">` +
+        `<div class="art-proscons__col art-proscons__col--pros"><p class="art-proscons__label"><strong>${pros}</strong></p>${prosList}</div>` +
+        `<div class="art-proscons__col art-proscons__col--cons"><p class="art-proscons__label"><strong>${cons}</strong></p>${consList}</div>` +
+        `</div>`
+      );
+    },
   );
 
-  // 7. Split the intro (before the first H2) from the body.
+  // 11b. Lists of six or more items where each item is just one link (e.g. the
+  //      pillar's links to condition pages): shown in columns.
+  rest = rest.replace(/<ul>((?:(?!<\/ul>)[\s\S])*)<\/ul>/g, (m, inner: string) => {
+    const items = inner.match(/<li>[\s\S]*?<\/li>/g) ?? [];
+    const linksOnly = items.length >= 6 && items.every((li) => /^<li>\s*<a [^>]*>[^<]*<\/a>\s*<\/li>$/.test(li));
+    if (!linksOnly) return m;
+    report.linkLists++;
+    return `<ul class="art-linklist">${inner}</ul>`;
+  });
+
+  // 12. Calls to action written into the migrated text ("…form on this page…"):
+  //     same words, quiet note style.
+  rest = rest.replace(/<p>((?:(?!<\/p>)[\s\S])*?(?:quote request form|form on this page)(?:(?!<\/p>)[\s\S])*?)<\/p>/gi, (_, inner: string) => {
+    report.ctaNotes++;
+    return `<p class="art-note">${inner.replace(/<\/?strong>/g, '')}</p>`;
+  });
+
+  // 13. Hub pages: paragraphs of "✓ …" / "✘ …" lines under bold labels become
+  //     labelled link lists (same words and links). A label repeated by the
+  //     next paragraph continues the same group.
+  if (options.variant === 'hub') rest = hubLists(rest, report);
+
+  // 14. Split the intro (before the first H2) from the body.
   const firstH2 = rest.search(/<h2/);
   const intro = firstH2 === -1 ? rest : rest.slice(0, firstH2);
   const body = firstH2 === -1 ? '' : rest.slice(firstH2);
 
-  return { h1, takeaways, intro: intro.trim(), body: body.trim(), toc };
+  return { h1, takeaways, intro: intro.trim(), body: body.trim(), toc, report };
+}
+
+function hubLists(html: string, report: EnhanceReport): string {
+  type Group = { label: string; items: { mark: string; html: string }[] };
+  const isHubParagraph = (inner: string) => /(?:^|<br\s*\/?>)\s*[✓✘]/.test(inner);
+  // Consecutive hub paragraphs are handled as one run.
+  return html.replace(/(?:<p>(?:(?!<\/p>)[\s\S])*?<\/p>\s*)+/g, (run: string) => {
+    const paragraphs = [...run.matchAll(/<p>((?:(?!<\/p>)[\s\S])*?)<\/p>/g)].map((m) => m[1]);
+    if (!paragraphs.some(isHubParagraph)) return run;
+    const out: string[] = [];
+    let groups: Group[] = [];
+    const flush = () => {
+      for (const g of groups) {
+        const id = `hub-${slugify(htmlToText(g.label)) || 'list'}`;
+        report.hubGroups.push({ label: htmlToText(g.label), items: g.items.length });
+        out.push(
+          (g.label
+            ? `<section class="hub-group" aria-labelledby="${id}"><h3 class="hub-group__title" id="${id}">${g.label}</h3>`
+            : `<section class="hub-group">`) +
+            `<ul class="hub-list" role="list">` +
+            g.items
+              .map(
+                (it) =>
+                  `<li class="hub-item hub-item--${it.mark === '✓' ? 'yes' : 'no'}"><span class="hub-item__mark" aria-hidden="true">${it.mark}</span><span class="hub-item__text">${it.html}</span></li>`,
+              )
+              .join('') +
+            `</ul></section>`,
+        );
+      }
+      groups = [];
+    };
+    for (const p of paragraphs) {
+      if (!isHubParagraph(p)) {
+        flush();
+        out.push(`<p>${p}</p>`);
+        continue;
+      }
+      for (const raw of p.split(/<br\s*\/?>/)) {
+        const line = raw.trim();
+        if (!line) continue;
+        const label = line.match(/^<strong>([^<]+)<\/strong>$/)?.[1].trim();
+        if (label) {
+          const last = groups[groups.length - 1];
+          if (!last || last.label !== label) groups.push({ label, items: [] });
+          continue;
+        }
+        const item = line.match(/^([✓✘])\s*([\s\S]*)$/);
+        if (!item) {
+          // Not a list line: keep it as its own paragraph.
+          flush();
+          out.push(`<p>${line}</p>`);
+          continue;
+        }
+        if (!groups.length) groups.push({ label: '', items: [] });
+        groups[groups.length - 1].items.push({ mark: item[1], html: item[2].trim() });
+      }
+    }
+    flush();
+    return out.join('\n') + '\n';
+  });
 }
