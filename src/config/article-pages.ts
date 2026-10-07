@@ -371,7 +371,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Getting burial insurance with Hepatitis C depends on your current liver health and treatment status. If your treatment is completed and you’ve been virus-free for at least two years, you can qualify for a first-day coverage plan. If you were diagnosed in the last two years and are still in treatment, your best option is a plan that covers you from the first day but phases in the death benefit over time. Liver damage like cirrhosis makes a higher-cost policy with a waiting period more likely.',
   },
-  '/burial-insurance/high-blood-pressure/': { family: 'health', crumb: 'Uncontrolled High Blood Pressure' },
+  '/burial-insurance/high-blood-pressure/': { family: 'health', crumb: 'High Blood Pressure' },
   '/burial-insurance/high-cholesterol/': {
     family: 'health',
     quickAnswer:

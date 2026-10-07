@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance With Uncontrolled High Blood Pressure</h1>
+<h1>Burial Insurance With High Blood Pressure</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• High blood pressure alone usually won’t block burial insurance approval<br>• Poorly controlled readings or other health issues can raise your rates<br>• Guaranteed issue plans cost more and delay full payouts for 2 years<br>• Many people overpay because they assume they won’t qualify elsewhere<br>• Waiting too long can limit better options and lock in higher prices<br>• Not comparing companies can lead to worse coverage for more money</p>
 
