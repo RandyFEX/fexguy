@@ -46,6 +46,10 @@
   --radius: 0.5rem;
   --container-max: 72rem;
   --prose-max: 42rem;
+  /* Article H1 (ArticleLayout title and .article-title): 30px on phones,
+     about 34px on tablets, 40px on desktop. */
+  --article-h1-size: clamp(1.875rem, 1.6rem + 1.1vw, 2.5rem);
+  --article-h1-line: 1.15;
   --tap-target: 2.75rem; /* 44px minimum touch target */
   /* Editorial lists: how far list text starts in from the paragraph edge
      (the bullet or number sits in this gutter). 24px on phones, 28px from
@@ -100,6 +104,21 @@ h4 {
 
 h1 {
   font-size: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
+}
+
+/* The shared article H1 for content pages that are articles (e.g. the IUL
+   Playbook); ArticleLayout's title uses the same values. */
+h1.article-title {
+  font-size: var(--article-h1-size);
+  font-weight: 700;
+  line-height: var(--article-h1-line);
+  letter-spacing: -0.015em;
+}
+
+/* A heading sets its own weight: bold markup inside an H1 doesn't make it
+   heavier. */
+h1 :is(strong, b) {
+  font-weight: inherit;
 }
 
 h2 {

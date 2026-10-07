@@ -778,8 +778,9 @@ const schema = articleGraph({
   }
   .art-head__title {
     margin: var(--space-2) 0 var(--space-6);
-    font-size: clamp(2rem, 1.5rem + 2vw, 2.875rem);
-    line-height: 1.1;
+    font-size: var(--article-h1-size);
+    font-weight: 700;
+    line-height: var(--article-h1-line);
     letter-spacing: -0.015em;
     color: var(--color-text);
     text-wrap: balance;

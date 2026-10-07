@@ -8,7 +8,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>IUL Playbook: How It Works, What It Promises, &amp; What It Delivers</h1>
+<h1 class="article-title">IUL Playbook: How It Works, What It Promises, &amp; What It Delivers</h1>
 
 <h2>Introduction To My Free IUL E-Book</h2>
 
