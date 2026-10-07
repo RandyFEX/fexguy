@@ -494,6 +494,20 @@ a:hover {
   margin: 0;
 }
 
+/* /iul-book/: the IUL Playbook cover between the introduction and the
+   chapter list, left-aligned at a book-cover size (300px, 2:3 as drawn),
+   never wider than the column. */
+.wp-content figure.book-cover {
+  margin: var(--space-4) 0;
+}
+.wp-content figure.book-cover img {
+  display: block;
+  width: 18.75rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 /* /randy-vandervaate/: publication logos as a compact grid of equal cells
    (1 column on phones, 2 from 30rem, 3 from 64rem). Each logo keeps its
    own proportions inside the same 208×48 box (contain: no crop, no
