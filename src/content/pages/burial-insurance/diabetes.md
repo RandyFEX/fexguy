@@ -201,7 +201,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong><strong>Rates may vary based on age, gender, health, and state. Click the form on this page for the lowest rates from the best carriers.</strong></strong></p>
+<p><strong><strong>Rates may vary based on age, gender, health, and state.</strong></strong></p>
 
 <h2><strong>Diabetes underwriting &amp; medication history</strong></h2>
 

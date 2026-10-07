@@ -424,22 +424,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with a history of drug abuse needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you have a health history of drug abuse, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to get the policy that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop for life insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies to find the lowest rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you’re looking for drug abuse funeral insurance, drug abuse burial insurance, or drug abuse life insurance, we can help. </p>
-
-<p>Fill out our quote form or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>What is considered drug abuse in insurance?</strong></p>

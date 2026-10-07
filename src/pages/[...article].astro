@@ -11,6 +11,7 @@ import { isArticlePage, resolveArticle, type ResolvedArticle } from '@/lib/artic
 import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
 import { allHubNavLinks, HUB_SUMMARIES } from '@/config/hub-nav';
 import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
+import { LEGACY_INTROS } from '@/config/article-intros';
 
 export async function getStaticPaths() {
   const pages = await getPublishedPages();
@@ -45,6 +46,15 @@ export async function getStaticPaths() {
   }
   for (const path of [...Object.keys(QUICK_ANSWER_HELD), ...Object.keys(SUMMARY_HELD)]) {
     if (!(path in ARTICLE_PAGES)) throw new Error(`src/config/article-holds.ts lists ${path}, which is not an article page`);
+  }
+  // An opening paragraph is left out only where the Quick Answer replaces it,
+  // and only while it is still there to match.
+  for (const [path, openings] of Object.entries(LEGACY_INTROS)) {
+    const c = ARTICLE_PAGES[path];
+    if (!c) throw new Error(`src/config/article-intros.ts lists ${path}, which is not an article page`);
+    if (!c.quickAnswer) throw new Error(`src/config/article-intros.ts lists ${path}, which has no Quick Answer`);
+    const { missing } = enhanceArticle(html.get(path) ?? '', { variant: c.variant, legacyIntro: openings }).report.legacyIntro;
+    if (missing.length) throw new Error(`${path}: opening paragraph not found in its intro: "${missing.join('", "')}" (src/config/article-intros.ts)`);
   }
   return pages
     .filter((entry) => isArticlePage(pagePath(entry)))

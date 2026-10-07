@@ -241,8 +241,6 @@ sidebar: true
 
 <p>Working with an independent agency like Final Expense Guy is your ticket to savings. We compare different policies to get you the best bang for your buck.</p>
 
-<p>We’ll help you shop around, compare rates from various carriers, and find the perfect policy for your needs and budget.</p>
-
 <h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -257,14 +255,6 @@ sidebar: true
 <li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong><strong>How can Final Expense Guy help me?</strong></strong></h2>
-
-<p>Forget wasting your precious time hunting for insurance deals – let us handle the heavy lifting. We’ll shop your case around to get your application approved without you lifting a finger.</p>
-
-<p>At Final Expense Guy, we’re pros at getting life insurance coverage for folks with a heart surgery history. We work with top-rated insurance companies that specialize in high-risk clients, so you get the best rate possible.</p>
-
-<p>We’ll match you with the perfect funeral and burial insurance option. Just fill out our quote form on this page or give us a ring at (888) 862-9456, and we’ll hook you up with an accurate quote.</p>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 

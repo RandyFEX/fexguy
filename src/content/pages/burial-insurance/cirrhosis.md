@@ -218,14 +218,6 @@ sidebar: true
 
 <p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans – they’ll end up being a pricey mistake you don’t need.</p>
 
-<h2 id="how-can-final-expense-guy-funds-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Forget wasting your time bouncing between insurance companies. We’ve got you covered. We work with top-rated carriers that specialize in high-risk clients.</p>
-
-<p>Our savvy insurance agents will hunt down the best rates for you and make the whole process a breeze.</p>
-
-<p>Just fill out our quote form or give us a call at (888) 862-9456, and we’ll get you a spot-on <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> in no time.</p>
-
 <h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>Can you get life insurance if you have alcoholic-related cirrhosis of the liver?</strong></p>

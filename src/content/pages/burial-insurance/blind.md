@@ -403,8 +403,6 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p>Your blind loved one must be aware of the policy because they must sign the application.</p>
 
-<p>If you have a family member with this condition, call us so we can help you understand your options.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -441,21 +439,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <h2 id="what-if-you’re-declined-for-coverage"><br><strong>What if you’re declined for coverage due to blindness?</strong> </h2>
 
-<p>If you have been denied life insurance coverage due to blindness in the past, we can help you get affordable coverage.</p>
-
 <p>We represent many different life insurance companies and can shop for you to find the most affordable burial insurance you deserve.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy if you are blind needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for the blind, burial insurance for the blind, or life insurance for the blind. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

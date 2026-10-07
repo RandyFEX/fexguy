@@ -356,16 +356,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with a DUI or DWI history needn’t be frustrating, but working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You need not waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral or burial insurance with a&#160;DUI or DWI in your driving history, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong>&#160;and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
 <h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I have a DUI?</strong></p>

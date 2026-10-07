@@ -208,20 +208,6 @@ sidebar: true
 
 <p>Also, note that while an investigation may be daunting, life insurance companies generally do not contest death benefits unless there is a material misrepresentation. It is better to be prepared and understand your available options when facing life insurance contestability.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Learning about the burial insurance contestability period needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you want to know about the life insurance contestability period, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time anymore searching for the best final expense insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case to different insurance carriers, get you the best price,</strong> <strong>and get you a life insurance policy that starts immediately.</strong></p>
-
-<p>We work with many A+ rated insurance carriers specializing in covering high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for contestability period funeral insurance, contestability period burial insurance, or contestability period life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>What is the contestability period?</strong></p>

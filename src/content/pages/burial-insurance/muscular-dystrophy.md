@@ -333,10 +333,6 @@ sidebar: true
 
 <p>If you have declined life insurance coverage in the past, do not believe you can’t find an affordable life insurance plan with a different company. Working with an independent life insurance company like Final Expense Guy that knows the underwriting guidelines of multiple companies will get you approved for coverage.</p>
 
-<p>We can help you because we have access to more than 30 insurance companies and can match you with the right company with the lowest rates. It can save you time and frustration during the life insurance application process.</p>
-
-<p>If you have muscular dystrophy and are now ready to apply for life insurance, we can help you compare life insurance policies and premiums.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -370,16 +366,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Trying to find burial insurance with muscular dystrophy needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for muscular dystrophy funeral insurance, muscular dystrophy burial insurance, or muscular dystrophy life insurance, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

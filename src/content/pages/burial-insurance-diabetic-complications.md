@@ -328,14 +328,6 @@ sidebar: true
 
 <p>These questions will give us the lowdown on your condition and help us nail down the perfect quote for you.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Here at Final Expense Guy, we’re the ultimate matchmaker for life insurance, especially if you’re navigating diabetes or its complications.</p>
-
-<p>We specialize in connecting you with top-rated insurance companies that excel in handling high-risk clients like you. Our job is to sift through these companies to secure the best possible life insurance rates available.</p>
-
-<p>Our mission? To land you the coverage you need at a price that won’t make you cringe. So, if you’re after affordable life insurance with diabetes or its complications, count on us to make it happen. Fill out our quote form or dial (888)862-9456 to get those burial insurance quotes rolling in.</p>
-
 <h2 id="faq">  <strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can I get insurance if I have diabetes?</strong></p>

@@ -352,10 +352,6 @@ sidebar: true
 
 <p>Now that you know the different burial insurance options for wheelchair users, the best way to find the best burial insurance plan with the best rate is to employ the help of an independent insurance agency like Final Expense Guy. We represent multiple insurance companies.</p>
 
-<p>Instead of having to do the research and calling the companies yourself, let us help you through the process. Working with us is like working with 40 companies all at once. This is the quickest way to find the cheapest burial insurance.</p>
-
-<p>At Final Expense Guy, we are experts in finding the best companies based on your wheelchair use. We will help you find the lowest-priced burial insurance you can qualify for.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -389,18 +385,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Trying to find a policy on wheelchair use needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for wheelchair use funeral insurance, wheelchair use burial insurance, or wheelchair use life insurance, we can help. </p>
-
-<p>Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you accurate burial insurance <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a>.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

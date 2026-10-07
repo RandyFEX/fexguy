@@ -446,7 +446,7 @@ September 21, 2022 at 3:25 pm
 <div class="comment-replies">
 <div class="comment" id="comment-24756">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Margeret – We have an article about that on our website. Go ahead and review the article and if you have any further questions, just call us at (888) 862-9456 and we'll be happy to help you understand your options. <a href="/burial-insurance/borrowing-against-cash-value/" rel="ugc">https://fexguy.com/borrowing-against-cash-value-pros-and-cons/</a></p>
+<p>Margeret – We have an article about that on our website. Go ahead and review the article and if you have any further questions, just call us at 888-862-9456 and we'll be happy to help you understand your options. <a href="/burial-insurance/borrowing-against-cash-value/" rel="ugc">https://fexguy.com/borrowing-against-cash-value-pros-and-cons/</a></p>
 <div class="comment-meta">
 September 27, 2022 at 7:55 am                    
 </div>

@@ -207,8 +207,6 @@ sidebar: true
 
 <p>You can start your search by asking for quotes from different insurance companies or working with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. Working with us will save you time and money on your life insurance policy. We can shop around to find the best policy to fit your needs and budget.</p>
 
-<p>Once you are ready to purchase your senior life insurance with no waiting period, fill up our Instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">Quote</a> Form to get an updated final expense insurance quote from a different insurance company, or you can call us at (888)862-9456 if you have any questions about burial insurance. We are here to help!</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is burial insurance permanent?</strong></p>

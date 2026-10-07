@@ -214,14 +214,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> –&#160;Give those finalized policy terms a thorough review before you say yes. Make sure the coverage fits your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-we-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Skip the hassle of hunting through multiple insurance companies. We’ve got you covered. At Final Expense Guy, we work with A+ rated carriers that specialize in high-risk clients.</p>
-
-<p>Our licensed agents will search all the top companies to find you the best rates, making the process quick and easy.</p>
-
-<p>Just fill out our quote form on this page or call us at (888) 862-9456 for an accurate quote. We’ll handle the rest!</p>
-
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong><br>Is liver disease considered a pre-existing condition in insurance?</strong></p>

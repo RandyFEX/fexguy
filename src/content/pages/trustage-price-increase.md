@@ -234,18 +234,6 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <p>We encourage you to consult an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> that can compare different policies and prices before buying a policy from TruStage. We will help you weigh your options before you make your final decision.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>If you’re looking for a no exam policy, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case at different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance, burial insurance, or life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Is </strong><strong>TruStage</strong><strong> Insurance legitimate?</strong></p>

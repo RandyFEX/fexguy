@@ -170,14 +170,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Here at Final Expense Guy, we specialize in getting life insurance coverage for people with a history of arrhythmia.</p>
-
-<p>We work with many A+ rated insurance companies that specialize in high-risk clients. We will search those companies to give you the best rate. We’ll match you up with your best life insurance option.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you’re looking for burial insurance for arrhythmia, we can help. Fill out our quote form on this page or call us at (888)862-9456 to get accurate burial insurance quotes.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Is arrhythmia a pre-existing condition for life insurance?</strong></p>

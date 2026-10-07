@@ -241,14 +241,6 @@ sidebar: true
 
 <p>Remember, the best plan for you will depend on your age, health, and desired coverage amount. So work with an independent agent from Final Expense Guy to help you compare prices from different companies to find the most affordable option that fits your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding burial insurance can be overwhelming, especially for people with health concerns. But Final Expense Guy can simplify the process.</p>
-
-<p>We work with highly rated insurance companies that specialize in offering coverage to people with health conditions. Forget spending hours comparing plans – our licensed agents will search for the best rates and get you a quote quickly and easily. No pressure, just straight answers.</p>
-
-<p>Fill out our online quote form or call us at (888) 862-9456 to get started.</p>
-
 <h2 id="faq"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>Can I increase the coverage amount for burial insurance if my kidney failure worsens over time?</strong></p>

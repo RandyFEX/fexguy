@@ -139,7 +139,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>Rates may vary by age, gender, health status, and state. Click the form on this page for the lowest rates from the best carriers.</strong></p>
+<p><strong>Rates may vary by age, gender, health status, and state.</strong></p>
 
 <h2>Dementia &amp; Alzheimer’s underwriting &amp; medication history</h2>
 

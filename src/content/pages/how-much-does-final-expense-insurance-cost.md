@@ -266,7 +266,7 @@ sidebar: true
 
 <p>Determining how much burial insurance you need can be challenging. You need to take the time to talk to an independent agent to determine how much you need for coverage. Consult one of our agents at Final Expense Guy to help you. Ask any insurance coverage questions to ensure you get your family’s best burial insurance plan.</p>
 
-<p>Making sure your family has the money to cover your final expenses is the best gift you can give them to show how much you care for their financial well-being. Burial insurance for seniors is easy to apply for, and you can easily be accepted. Call us at (888) 862-9456, and we will help you shop to get the best burial insurance for your needs.</p>
+<p>Making sure your family has the money to cover your final expenses is the best gift you can give them to show how much you care for their financial well-being. Burial insurance for seniors is easy to apply for, and you can easily be accepted. Call us at 888-862-9456, and we will help you shop to get the best burial insurance for your needs.</p>
 
 <h2 id="what-kind-of-final-expense-policies-should-i-avoid"><br><strong>What kind of final expense policies should I avoid?</strong></h2>
 
@@ -313,20 +313,6 @@ sidebar: true
 <p><strong>We work with 20+ final expense companies, so we can get you qualified for the best price plan to get folks like you immediate coverage when possible.</strong></p>
 
 <p>We have to admit that, for the average burial insurance final expense insurance shopper, all the companies and options will often leave you <strong>more confused than a woodpecker in a concrete forest.</strong></p>
-
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
-
-<p>Getting an affordable burial or final expense policy doesn’t have to cost an arm and a leg.</p>
-
-<p>Our job at <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is to be the most knowledgeable burial insurance expert available. By doing so, we can knock it out of the park and get you the most accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> and affordable rates.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you the best burial insurance quotes from the final expense companies that best fit you.</p>
-
-<p><strong>Working with an independent brokerage like Final Expense Guy is always in your best interest.</strong></p>
-
-<p>With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 

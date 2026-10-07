@@ -159,7 +159,7 @@ source: "live"
 
 <p>At Final Expense Guy, we work with many companies, but our best companies offer 1st-day coverage or benefits. Below is a list of almost all the final expense life insurance companies. We have bolded the names of the companies that are most often the right choice for most people.</p>
 
-<p>You can try to call them all yourself, or you can call us directly at (888) 862-9456 and we can price shop them all for you in just a few minutes.</p>
+<p>You can try to call them all yourself, or you can call us directly at 888-862-9456 and we can price shop them all for you in just a few minutes.</p>
 
 <p><strong>Most common final expense companies (in alphabetical order): </strong></p>
 

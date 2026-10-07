@@ -202,14 +202,6 @@ sidebar: true
 
 <p>Research Medicaid spend-down rules on life insurance in your state before making any spend-down strategy with a life insurance policy. It is best to talk to your attorney to determine the best strategy for your parents.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>If you are looking for burial, cremation, or final expense life insurance, we can help! </p>
-
-<p><a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> work with many A+ rated insurance carriers that specialize in covering healthy to high-risk clients. We will shop for up to 30 different insurance carriers and get you the best price!</p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>What does insurance spend down mean?</strong></p>

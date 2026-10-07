@@ -287,22 +287,6 @@ underwriting:</strong></p>
 
 <p>Before you decide which cremation insurance to buy, answer the instant pricing estimate box. This way, you can compare prices from different insurance companies and choose the one that fits your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you want cremation insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>If you have a health history or pre-existing medical condition, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for cremation funeral insurance, or cremation burial insurance, or flameless burial cremation life insurance. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>How is flameless cremation done?</strong></p>

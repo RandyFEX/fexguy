@@ -546,20 +546,6 @@ sidebar: true
 <li>A+ – Better Business Bureau</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
-
-<p>An affordable burial or final expense policy doesn’t have to cost an arm and a leg.</p>
-
-<p>Our job at <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is to be the most knowledgeable burial insurance expert available. By doing so, we can knock it out of the park and get you the most accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> and affordable rates.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you a final expense rate and burial insurance quotes from the final expense companies that best fit you.</p>
-
-<p>With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
-
-<p>We can shop your case to see which insurance company will give you the best price and coverage. Call us at (888) 862-9456 if you have any questions about life insurance. We are here to help!</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p id="Additional-Questions-&-Answers-On-Mutual-Of-Omaha"><strong>Is Mutual of Omaha Life Insurance still in business?</strong></p>

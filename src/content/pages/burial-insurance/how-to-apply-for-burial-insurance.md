@@ -285,8 +285,6 @@ sidebar: true
 
 <p>It is best to work with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> which can guide you through the entire process without you stressing out over every detail yourself.</p>
 
-<p>If you’re ready to get burial insurance for seniors, you can start comparing quotes with the instant final expense <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> on your left. If you want to request applications, call us at (888) 862-9456, and we will walk you through the entire process.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="ef27c248-2a46-4c83-8492-66666bab1040"><strong>What is an insurance application?</strong></p>

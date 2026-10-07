@@ -316,18 +316,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy if you have had cystic fibrosis can be frustrating if you do it on your own.</p>
-
-<p>You don’t need to waste your precious time searching for different insurance companies; we will do the work for you. </p>
-
-<p>Here at&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>, we specialize in obtaining life insurance coverage for people with a history of cystic fibrosis.</p>
-
-<p>So, if you are looking for burial insurance with cystic fibrosis, funeral insurance with cystic fibrosis, or final expense insurance with cystic fibrosis, we can help.</p>
-
-<p>Fill out our quote form on this page or call us at&#160;<strong>(888)862-9456</strong>&#160;to get free burial insurance&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a>.</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance with cystic fibrosis?</strong></p>

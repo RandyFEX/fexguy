@@ -477,22 +477,6 @@ of their underwriting process.</p>
 
 <p>The rating reflects Lumico’s balance sheet strength, which A.M. Best considers as very strong. The company is a solid enterprise as a member of the Swiss Re group. The mother company will continue to provide reinsurance and capital support to Lumico, giving it financial stability.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>If you are looking to buy burial insurance, trust an independent insurance agency like Final Expense Guy to compare different life insurance companies to get the best plan.</p>
-
-<p>Finding a policy without a 3-year wait needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you have a problem with a three-year wait, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case at different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering healthy or high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for insurance, burial insurance, or final expense life insurance, we can help. Fill out our quote form on this page or call us at (888) 862-9456, and we can give you the best quotes for life insurance.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="block-2d75b91f-8cd2-4342-ba02-c419993d9cfb"><strong>LUMICO INSURANCE COMPANY INFORMATION</strong></p>
@@ -806,7 +790,7 @@ September 24, 2022 at 3:06 pm
 <div class="comment-replies">
 <div class="comment" id="comment-24754">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Kimberly – I'm so sorry that you are having this difficulty. If you feel it would be appropriate or helpful, I'd be happy to hop on the phone with you and Lumico to identify the problem that's delaying your claim payment. Call me at (888) 862-9456 and ask for Randy.</p>
+<p>Kimberly – I'm so sorry that you are having this difficulty. If you feel it would be appropriate or helpful, I'd be happy to hop on the phone with you and Lumico to identify the problem that's delaying your claim payment. Call me at 888-862-9456 and ask for Randy.</p>
 <div class="comment-meta">
 September 27, 2022 at 7:49 am                    
 </div>

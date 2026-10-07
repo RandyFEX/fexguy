@@ -375,14 +375,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Affordable burial insurance doesn’t have to cost an arm and a leg. Avoid inexperienced and less knowledgeable insurance agents because it will cost you loads of money by selling you overpriced burial insurance.</p>
-
-<p>Our job at Final Expense Guy is to give you the most accurate insurance quotes. Once you provide us with your age and health history, we can help you get the most affordable plan to accept your health problems.</p>
-
-<p>Working with an independent insurance agency like Final Expense Guy is always in your best interest. We have access to all the best burial insurance companies and will help you get the best insurance plan that will fit your needs.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Is life insurance available for Native Americans?</strong></p>

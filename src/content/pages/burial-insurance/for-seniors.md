@@ -242,16 +242,6 @@ sidebar: true
 
 <p><strong>We work with 20+ final expense companies, so we can get you qualified for the best-priced plan to get folks like you immediate coverage when possible.</strong></p>
 
-<h2 id="how-can-funeral-funds-help-me"><br><strong>How can <strong>final expense</strong> guy help me?</strong></h2>
-
-<p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
-
-<p>Our job at Final Expense Guy is to be the most knowledgeable burial insurance expert available. By doing so, we can get you free life insurance quotes and affordable rates.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you burial insurance <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a> from the final expense companies that best fit you.</p>
-
-<p>With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
-
 <h2 id="h-burial-insurance-policies-for-seniors" class="as-h1">Burial insurance policies for seniors</h2>
 
 <p>Burial, funeral, and final expense insurance are specifically designed for seniors to help cover funeral costs. Let’s be real: funerals aren’t cheap, and these small whole life insurance policies are a smart way to handle those expenses.</p>

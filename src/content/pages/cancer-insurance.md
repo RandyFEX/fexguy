@@ -140,4 +140,4 @@ sidebar: true
 
 <p>We work with over 20 life insurance companies and will help you find the best cancer insurance policy to fit your needs and budget. We offer free quotes, and our services are free of charge.</p>
 
-<p>Call us today at <strong>(888) 862-9456</strong> to speak with one of our knowledgeable life insurance agents. We will help you find the best cancer insurance policy to fit your needs.</p>
+<p>Call us today at <strong>888-862-9456</strong> to speak with one of our knowledgeable life insurance agents. We will help you find the best cancer insurance policy to fit your needs.</p>

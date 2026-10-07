@@ -280,20 +280,6 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <p>Serious illnesses usually manifest when you are older. So you’ll want to take immediate action and buy burial insurance protection to cover your final expenses. If you want an accurate quote, click on the instant quote tool on this page.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you want to know how much insurance you need shouldn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>Do you have a health history and want to know how much burial insurance I need? Let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best burial insurance at the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for how much funeral insurance I need, how much final expense insurance I need, or how much life insurance I need. Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="f6a30f7f-4ca6-421a-80ff-bed897c92159"><strong>Do I really need burial insurance?</strong></p>

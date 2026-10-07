@@ -222,8 +222,6 @@ sidebar: true
 
 <p>If you’ve been turned down before, team up with an independent agency like Final Expense Guy. We know the ins and outs of multiple companies’ guidelines and can snag you a better plan with the lowest rates.</p>
 
-<p>With access to over 20 insurance companies, we can help you find a heart-friendly policy, saving you time and hassle during the application process.</p>
-
 <h2 id="getting-first-day-coverage"><strong>How to get first-day coverage with a history of heart failure</strong></h2>
 
 <p>The slickest way to get first-day coverage burial insurance with heart failure? Team up with an independent agency like Final Expense Guy. Our savvy agents compare top companies and hook you up with the best plan at the best price.</p>
@@ -235,14 +233,6 @@ sidebar: true
 <li><strong>Complete the Application Honestly</strong> – When filling out the application with our agent, spill the truth about your heart failure. Lay out all the details about your health, treatments, and any lifestyle changes you’ve made.</li>
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Give the policy terms a good once-over before signing. Make sure the coverage aligns with your needs and budget.</li>
 </ol>
-
-<h2 id="how-we-can-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>At Final Expense Guy, we’re pros at getting life insurance for those with heart failure.</p>
-
-<p>We partner with numerous A+ rated insurance companies that specialize in high-risk clients. We’ll scour these companies to find you the best rate and match you with the ideal life insurance option.</p>
-
-<p>We’ll help you get the coverage you need at a price you can afford. Looking for burial insurance for heart failure? We’ve got you covered. Fill out our quote form on this page or call us at (888) 862-9456 for spot-on burial insurance quotes.</p>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 

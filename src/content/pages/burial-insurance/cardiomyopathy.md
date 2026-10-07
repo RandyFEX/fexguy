@@ -232,14 +232,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Don’t just skim the paperwork! Take your time and make sure you understand everything in the policy before you sign. It’s your money, and you must ensure it covers what you need it to.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help?"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Here at Final Expense Guy, we’re the Cupid of life insurance, especially for folks with heart conditions.</p>
-
-<p>We work with a whole bunch of top-notch (think A+ rated!) insurance companies who don’t shy away from a little high risk. We’ll do the legwork, search through all those companies, and find you the best rate possible. Basically, we’ll play matchmaker and pair you with your perfect burial insurance option.</p>
-
-<p>We’ll make it easy. Fill out our quick quote form or call us at (888)862-9456. We’ll get you accurate quotes for burial insurance that fits your needs and budget. Let us handle the insurance stuff, so you can focus on what matters most!</p>
-
 <h2 id="faq">Frequently asked questions</h2>
 
 <p><strong>Can you get cremation insurance with cardiomyopathy?</strong><br>Absolutely! Depending on your overall health and zip code, you might even snag first-day coverage.</p>

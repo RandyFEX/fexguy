@@ -211,14 +211,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Carefully review the policy terms before you sign anything. Follow Final Expense Guy instructions for submitting your application.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Here at Final Expense Guy, we specialize in getting life insurance coverage for people with a history of heart bypass surgery.</p>
-
-<p>We work with A+-rated insurance all-stars, the kind of companies that understand that sometimes our reliable hearts take some health detours. We’ll search high and low (mostly online, thank goodness) to find the best rate for you.</p>
-
-<p>So, if you’re looking for some peace-of-mind insurance after that bypass surgery, we can definitely help. Fill out our quick quote form, it’s easier than remembering your grandkids’ names! Or, you can call us at   (888) 862-9456. Let’s get you covered before you start planning your shuffleboard team in the afterlife!</p>
-
 <h2 id="faq">Frequently asked <strong>questions </strong></h2>
 
 <p><strong>What is a pre-existing heart condition in life insurance?</strong></p>

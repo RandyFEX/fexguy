@@ -169,20 +169,6 @@ sidebar: true
 
 <p><strong>We work with 20+ final expense companies, so we can get you qualified for the best-priced plan to get folks like you immediate coverage when possible.</strong></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced final expense and burial insurance policies.</p>
-
-<p>Getting an affordable burial or final expense policy doesn’t have to cost an arm and a leg.</p>
-
-<p>Our job at <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is to be the most knowledgeable burial insurance expert available. We get you the most accurate quote and affordable rates by doing so.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you final expense insurance <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a> from the final expense companies that are the best fit for you.</p>
-
-<p><strong>It is always in your best interest to work with an independent brokerage like Final Expense Guy.</strong></p>
-
-<p>With access to all the best burial insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>What happens if a person dies without life insurance?</strong></p>

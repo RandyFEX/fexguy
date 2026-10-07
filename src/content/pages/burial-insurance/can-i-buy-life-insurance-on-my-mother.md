@@ -204,15 +204,7 @@ sidebar: true
 
 <h2><br><strong>Conclusion</strong></h2>
 
-<p><strong>Need burial insurance for parents?</strong> Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance.</p>
-
-<p>Fill out the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE FORM</a> on this page, and we will give you the best final expense life insurance rates available.</p>
-
 <p><a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is an independent insurance agency that can shop your application to many companies available. This way, you can be sure that you will get the best carrier that favors your age and health.</p>
-
-<p>We work with the top-rated life insurance companies in the United States, many of which offer immediate coverage at the lowest rates.</p>
-
-<p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

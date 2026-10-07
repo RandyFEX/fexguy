@@ -363,8 +363,6 @@ sidebar: true
 
 <p>We specialize in impaired risk cases. We know the details of your disease, and we can be able to assist you in qualifying for the best policy.</p>
 
-<p>We know which insurers will issue policies to people with Hepatitis C, and we can help you find affordable pricing.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -398,16 +396,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Instead of wasting your time calling different life insurance companies and answering the same questions repeatedly, we will ask you some questions about your health to give you tailored quotes for your condition.</p>
-
-<p>When you’re ready to compare Hepatitis C life insurance quotes, fill out the instant QUOTE form on this page. We have access to many A-rated companies and can give you accurate quotes from all of them. It can save you a great deal of time in the application process.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for Hepatitis C funeral insurance, Hepatitis C burial insurance, or Hepatitis C life insurance, we can help.</p>
-
-<p>Call us at&#160;<strong>(888) 862-9456,</strong>&#160;and we can give you an accurate&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

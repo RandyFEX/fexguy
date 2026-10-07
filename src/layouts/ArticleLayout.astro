@@ -7,7 +7,8 @@
 // It presents the page's migrated body without changing its words:
 //   breadcrumb › H1 › author row
 //   summary (Quick Answer + Here's the Bottom Line) › early quote button
-//   (phones/tablets) › "In This Article" › article (FAQ and case stories
+//   (phones/tablets) › header illustration (if any) › "In This Article" ›
+//   article (FAQ and case stories
 //   grouped) › About the author › Related Topics, with the quote form in the
 //   sidebar (after the article on phones, as the next step).
 // Variant 'hub' (link-collection pages such as /a-z-health/): the same
@@ -31,6 +32,7 @@ import { isSearchable, pagePath } from '@/lib/pages';
 import { lead } from '@/config/lead';
 import { categoryMoreHtml } from '@/lib/hub-nav';
 import { HUB_SUMMARIES } from '@/config/hub-nav';
+import { LEGACY_INTROS } from '@/config/article-intros';
 
 export interface Props {
   entry: PageEntry;
@@ -39,7 +41,10 @@ export interface Props {
 
 const { entry, article: config } = Astro.props;
 const d = entry.data;
-const article = enhanceArticle(entry.rendered?.html ?? '', { variant: config.variant });
+const article = enhanceArticle(entry.rendered?.html ?? '', {
+  variant: config.variant,
+  legacyIntro: LEGACY_INTROS[pagePath(entry)],
+});
 const hub = config.variant === 'hub';
 const searchable = isSearchable(entry) ? '' : undefined;
 // Health category pages: the conditions their article doesn't link yet
@@ -93,6 +98,8 @@ const schema = articleGraph({
         <a class="btn btn--primary art-cta__btn" href="#quote">GET MY QUOTE</a>
         <span class="art-cta__call">or call <a href={lead.phone.href}>{lead.phone.display}</a></span>
       </p>
+
+      {article.feature && <div class="art-feature" set:html={article.feature} />}
 
       <ArticleToc items={article.toc} />
 
@@ -183,6 +190,17 @@ const schema = articleGraph({
   }
   body.page-article-v2 .art-body h3 strong {
     font-weight: inherit;
+  }
+  /* The header illustration, between the summary and the contents panel. */
+  body.page-article-v2 .art-feature figure {
+    margin: 0 0 var(--space-6);
+  }
+  body.page-article-v2 .art-feature img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: var(--home-radius);
   }
   /* The opening paragraph(s) under the contents panel. */
   body.page-article-v2 .art-body--intro {

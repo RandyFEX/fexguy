@@ -322,18 +322,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy for CBD Oil users needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers specializing in covering high-risk clients like you. We will search all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for CBD Oil users’ funeral insurance, CBD Oil users’ burial insurance, or CBD Oil users’ life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Do I qualify for life insurance if I’m a CBD oil user?</strong></p>
@@ -414,7 +402,7 @@ sidebar: true
 
 <p><br><strong>How can I find an insurance company that offers burial insurance for CBD oil users?</strong></p>
 
-<p>To find an insurance company that offers burial insurance for CBD oil users, you can start by calling Final Expense Guy at (888) 862-9456.</p>
+<p>To find an insurance company that offers burial insurance for CBD oil users, you can start by calling Final Expense Guy at 888-862-9456.</p>
 
 <p><br><strong>What is the waiting period if I use CBD oil?</strong></p>
 

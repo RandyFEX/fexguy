@@ -197,8 +197,6 @@ sidebar: true
 
 <p>If you are thinking of ways to cover your funeral expenses, purchasing a burial insurance policy is the best option for your budget and peace of mind. <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> have helped many people find the coverage they need at an affordable price. We can help you too.</p>
 
-<p>Please call us at (888)862-9456 if you have any questions or fill in the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page to get accurate quotes from different insurance carriers.</p>
-
 <h2 id="frequently-asked-questions"> <strong>Frequently asked</strong> <strong>additional </strong></h2>
 
 <p><strong>What is prepaid funeral plan?</strong></p>

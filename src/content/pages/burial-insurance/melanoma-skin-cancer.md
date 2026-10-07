@@ -413,16 +413,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Trying to find a policy with melanoma needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You need not waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for melanoma funeral insurance, or melanoma burial insurance, or melanoma life insurance, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
 <h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can a person with melanoma get burial insurance?</strong></p>

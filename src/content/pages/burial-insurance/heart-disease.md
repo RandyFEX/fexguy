@@ -235,14 +235,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Before you sign on the dotted line, make sure you’ve reviewed the policy terms and that the coverage fits your needs and budget perfectly.</li>
 </ol>
 
-<h2 id="how-we-can-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>At Final Expense Guy, we’re the heart specialists of life insurance. Yep, you heard right. We’re all about finding coverage for folks with heart disease.</p>
-
-<p>Don’t worry, we’ve got a whole crew of insurance companies who love a good challenge – and by that, we mean high-risk clients. We’ll scour their offers to find you the best deal, like a detective searching for a missing heart. We’ll match you with a policy that fits your budget and needs better than a well-worn slipper.</p>
-
-<p>Let us help you secure the coverage you deserve without breaking a sweat. Ready to give your heart a little peace of mind? Fill out our quote form or call us at (888) 862-9456 for a quote that’ll make your heart sing (or at least beat a little steadier).</p>
-
 <h2 id="faq">Frequently asked questions</h2>
 
 <p><strong>Is AFIB considered heart disease for life insurance?</strong></p>

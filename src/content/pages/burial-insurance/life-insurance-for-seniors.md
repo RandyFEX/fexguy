@@ -133,8 +133,6 @@ sidebar: true
 
 <p id="2e211dba-e8d6-4383-9145-05ab6f91c08c">Suppose you’re a senior citizen looking for life insurance. In that case, the best way to start buying life insurance is to work with a qualified life insurance agent such as Final Expense Guy.</p>
 
-<p id="2e211dba-e8d6-4383-9145-05ab6f91c08c">We can help you understand your options and find the best policy for your needs.</p>
-
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><br><strong>STEP 2: Select your life insurance from a high-rated Company</strong></p>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">When you’re ready to purchase a policy, select your life insurance from a high-rated company.</p>
@@ -160,13 +158,3 @@ sidebar: true
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">You can get the coverage you need to protect your loved ones by following these simple steps.</p>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Don’t wait until it’s too late. Get started with life insurance today.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Getting affordable life insurance for seniors is easier than you think. Working with a qualified insurance agent from Final Expense Guy will help you understand your options and find the best policy for your needs.</p>
-
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Final Expense Guy aims to be the most knowledgeable burial insurance professional available. We can offer you the best price and affordable rates you can afford.</p>
-
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Once we know more about your age and health history, we can accurately give you life insurance with first-day coverage from the final expense companies that best fit you.</p>
-
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Fill in the quote form on this page or call us at (888) 862-9456. We will be happy to help you.</p>

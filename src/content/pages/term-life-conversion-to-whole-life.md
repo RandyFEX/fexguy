@@ -243,13 +243,7 @@ sidebar: true
 
 <p>If you’re considering converting your term life policy to whole life insurance, talk to our agents at Final Expense Guy to get answers to your questions about the term and whole life insurance.</p>
 
-<p><strong>Need burial insurance?</strong> Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance. Fill out the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page, and we will give you the best rates available for final expense life insurance.</p>
-
 <p><a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is an independent insurance agency that can shop your application to many companies available. This way, you can be sure that you will get the best carrier that favors your age and health.</p>
-
-<p>We work with the top-rated life insurance companies in the United States, many of which offer immediate coverage at the lowest rates.</p>
-
-<p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

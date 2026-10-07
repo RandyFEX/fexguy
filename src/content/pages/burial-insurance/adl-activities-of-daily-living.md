@@ -426,15 +426,3 @@ sidebar: true
 <p>Postponing your application for coverage is not wise; your health may worsen at any moment, and you could develop other health conditions.</p>
 
 <p>A guaranteed acceptance policy may be a little more expensive than plans with underwriting, but your approval is guaranteed. Buying a guaranteed issue burial insurance if you need help with ADL is worth it; you won’t lose money with this plan, and it costs much less than having no insurance coverage.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy&#160;if you need help with ADLs isn’t a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for ADL funeral insurance, ADL burial insurance, or ADL life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>

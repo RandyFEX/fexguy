@@ -190,20 +190,6 @@ sidebar: true
 <li>Pay the monthly premium on whatever day you select.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy on someone else needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you want to buy burial insurance on someone else, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case to different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance on someone else, burial insurance on someone else, or life insurance on someone else, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you accurate burial insurance quotes.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can you buy insurance for someone else?</strong></p>

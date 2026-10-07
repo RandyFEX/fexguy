@@ -386,16 +386,6 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you are overweight or obese needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for overweight funeral insurance, overweight burial insurance, or overweight life insurance, fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form to get an accurate quote. </p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can obese people get insurance?</strong></p>

@@ -442,20 +442,6 @@ sidebar: true
 
 <p>Knowing which company is best for people with a blood clot or other health issues is something you can’t do alone. You’ll need the help of an independent insurance agency to identify those companies for you. This is where working with an insurance professional is a must.</p>
 
-<p>An independent insurance agency like Final Expense Guy works for your best interest. We will shop the market for you to get the best plan for your age, health, and budget. If you have a blood clot or embolism, give us a call or complete the instant quote box to get a free quote.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you have blood clots or embolism needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you to find the plan that fits your financial requirements and budget. You don’t have to waste your time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company with the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for blood clot funeral insurance, burial insurance with a blood clot, or blood clot life insurance. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance if you had a blood clot?</strong></p>

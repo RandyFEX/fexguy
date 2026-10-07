@@ -379,21 +379,7 @@ sarcoidosis?</li>
 
 <p>Another way to get the best life insurance premium is to work with an independent life insurance agency like Final Expense Guy to shop the market for the lowest-priced policy.</p>
 
-<p>Finding the most affordable burial insurance with sarcoidosis is simple. Allow us to do the comparison shopping for you. We will help you compare different quotes from multiple insurance companies to find which one will offer you the best deal.</p>
-
 <p>We specialize in high-risk life insurance cases. We have helped people with sarcoidosis, and other health conditions get the right coverage, usually at level death benefit with first-day full coverage and no waiting period. We always strive for level death benefit because it is the best and cheapest. </p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you have sarcoidosis needn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for sarcoidosis funeral insurance, sarcoidosis burial insurance, or sarcoidosis life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

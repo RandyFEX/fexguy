@@ -77,8 +77,6 @@ sidebar: true
 <li>Funeral insurance for a 79-year-old male or burial insurance for a 79-year-old male</li>
 </ul>
 
-<p><em><strong>Are you get getting the idea that if you are a male over 70, we can help you? You’re a winner!</strong></em></p>
-
 <h3><strong>But what about the ladies?</strong></h3>
 
 <p>If you are a female looking for life insurance over 70, you have <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> needs that are approaching quickly; we can help you find the following:</p>
@@ -96,8 +94,6 @@ sidebar: true
 <li>Funeral&#160;insurance for a 79-year-old female or burial insurance&#160;for a 79-year-old female</li>
 </ul>
 
-<p><em><strong>Are you get getting the idea that if you are a female over 70, we can help you? You’re a winner!</strong></em></p>
-
 <h2 id="life-insurance-for-my-elderly-parents"><strong>Life insurance for my elderly parents</strong></h2>
 
 <p>If you’re looking for life insurance for <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">elderly parents</a> over 70 years old, we can also help you. Many adult children shop for funeral policies for parents or loved ones. A large part of what we do at Final Expense Guy is to help adult children find burial policies for senior parents.</p>
@@ -107,8 +103,6 @@ sidebar: true
 <p>We understand our <a href="https://legal-dictionary.thefreedictionary.com/Senior+Citizens" target="_blank" rel="noreferrer noopener">senior</a> parents are often on a fixed income and need affordable burial insurance options and affordable funeral insurance availability.</p>
 
 <p>So, the ball is in your court. Do you want to figure out all this insurance stuff on your own, or have a final expense insurance expert or burial policy expert like Final Expense Guy do the shopping for you?</p>
-
-<p><strong>Shopping for burial insurance isn’t all it’s cracked up to be, so let us do the shopping for you.</strong></p>
 
 <h2 id="what-is-the-average-cost-of-burial-insurance"><br><strong>What is the average cost of burial insurance?</strong></h2>
 
@@ -199,18 +193,6 @@ sidebar: true
 <p><strong>We work with 20+ final expense companies to get you qualified for the best price plan to get folks like you immediate coverage when possible.</strong></p>
 
 <p>All the companies and options will often confuse you more than the average burial insurance final expense insurance shopper.</p>
-
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Affordable burial insurance over 70 doesn’t have to cost an arm and a leg.</p>
-
-<p><strong>Our job at Final Expense Guy is to be the most knowledgeable burial insurance expert available. We can help you get the most accurate quote and affordable rates by doing so.</strong></p>
-
-<p>Once we know more about your age and health history, we can accurately give you burial insurance quotes from the final expense companies that best fit you.</p>
-
-<p><strong>The reality is that most inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you more expensive policies.</strong></p>
-
-<p>Working with an independent brokerage like Final Expense Guy is always in your best interest. With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 

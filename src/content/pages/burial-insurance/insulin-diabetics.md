@@ -192,18 +192,6 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– Your policy can actually make you some money over time.</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding burial insurance with health problems? Don’t stress! We’re here to help.</p>
-
-<p>We’ll find the perfect plan for you without all the hassle. No more searching high and low. We’ll do the digging and find you the best deal.</p>
-
-<p>We work with top-notch insurance companies that understand people like you. We’ll find you the best coverage at the best price.</p>
-
-<p>So, if you’re tired of dealing with insurance companies, give us a call. We’ll take care of everything.</p>
-
-<p>Fill out our quote form on this page or call us at <strong>(888) 862-9456</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is life insurance expensive for diabetics?</strong></p>

@@ -292,5 +292,3 @@ sidebar: true
 <p>You don’t have to waste your precious time searching for multiple insurance companies because my agents or I will do the dirty work for you.</p>
 
 <p>My agents or I will shop 20-30 different insurance carriers to get you the best price. I will search for those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>Fill out our quote form on this page or call us at&#160;<strong>(888) 862-9456&#160;</strong>to get an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>

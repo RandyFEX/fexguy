@@ -379,8 +379,6 @@ sidebar: true
 
 <p><strong>We will do two main things for you:</strong> First, we have the experience and familiarity with the underwriting of different burial insurance companies; this will get you the best rates and coverage. Second, we will compare quotes from burial insurance carriers that accept systemic lupus.</p>
 
-<p>We will shop around and find you the most affordable plan which is suited for your needs and budget.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -414,20 +412,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy if you have systemic lupus can be frustrating, but working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p><strong>If you have lupus, let us help you; w</strong><strong>e will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>You don’t need to waste your precious time searching for different insurance companies; we will do the work for you. We can shop your case to different companies to get your application approved.</p>
-
-<p>Here at <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>, we specialize in obtaining the best life insurance coverage for people with a history of systemic lupus and other autoimmune diseases.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for burial insurance with systemic lupus, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888)862-9456,</strong>&#160;and we can give you an accurate quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 

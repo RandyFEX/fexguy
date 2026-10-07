@@ -148,7 +148,7 @@ sidebar: true
 
 <p>We work with over 20 life insurance companies, which means we can compare rates and policies to find the perfect fit for your needs and budget.&#160;</p>
 
-<p>If you’re shopping for life, burial, funeral, and final expense insurance, call us at (888) 862-9456. We’ll be happy to help you find the perfect policy for your family.</p>
+<p>If you’re shopping for life, burial, funeral, and final expense insurance, call us at 888-862-9456. We’ll be happy to help you find the perfect policy for your family.</p>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
 

@@ -304,8 +304,6 @@ sidebar: true
 
 <p>We need to know if the actual HIV life insurance program declined you or if you were declined before the company had an HIV program in place.</p>
 
-<p>We will review the options available for you to help you get the protection you need. Call us at&#160;(888) 862-9456 if you have questions about HIV and insurance or if you have any questions about life insurance.</p>
-
 <h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -339,18 +337,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with AIDS, HIV, or AIDS-related complex needn’t be frustrating; working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for Kidney Dialysis funeral insurance, or Kidney Dialysis burial insurance, or Kidney Dialysis life insurance, we can help.</p>
-
-<p>Fill out our quote form on this page or call us at&#160;<strong>(888) 862-9456,</strong>&#160;and we can give you an accurate&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
 

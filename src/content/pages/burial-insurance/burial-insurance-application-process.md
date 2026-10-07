@@ -244,8 +244,6 @@ sidebar: true
 
 <p>The final expense insurance application process is easy when you have an experienced life insurance agent from <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> to help you.</p>
 
-<p>If you need help, you can call us at (888) 862-9456. We will be happy to help you.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="1784f075-62b2-4302-b71f-8dcd124e491c"><strong>Who can apply for final expense life insurance?</strong></p>

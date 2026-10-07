@@ -150,14 +150,6 @@ sidebar: true
 
 <p><strong>Cash value build-up</strong> – cash value accumulates over time.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>The best way to find the right final expense insurance for pastors and congregations is to compare quotes from different life insurance companies to see who offers the best plan at the most affordable price.</p>
-
-<p>Final Expense Guy is an independent life insurance agency that can do the insurance shopping for you. We work with top-rated insurance companies and will help you compare policies and prices. You can be assured that you will get the best plan within your budget.</p>
-
-<p>If you have any questions regarding final expense insurance or want a free quote, fill in the quote form or call us at (888) 862-9456.</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Do pastors get life insurance?</strong></p>

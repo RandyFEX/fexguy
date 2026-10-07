@@ -229,10 +229,6 @@ sidebar: true
 
 <p><a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is an independent insurance agency that can shop your application to many companies available. This way, you can be sure that you will get the best carrier that favors your age and health.</p>
 
-<p>We work with the top-rated life insurance companies in the United States, many of which offer immediate coverage at the lowest rates.</p>
-
-<p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="9c774c8a-79d5-4904-9a95-c9f3b02490fd"><strong>What type of life insurance has a cash value?</strong></p>

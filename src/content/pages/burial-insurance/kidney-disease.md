@@ -238,7 +238,7 @@ sidebar: true
 
 <p>Our licensed insurance agents will search for the best companies to find you the best rates, and we promise to make the process quick and easy.</p>
 
-<p>Just fill out our quote form on this page or call us at (888) 862-9456, and we’ll get you an accurate quote in no time.</p>
+<p>Just fill out our quote form on this page or call us at 888-862-9456, and we’ll get you an accurate quote in no time.</p>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 

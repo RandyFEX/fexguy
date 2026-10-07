@@ -215,20 +215,6 @@ sidebar: true
 <li><strong>3-year waiting period</strong>&#160;– Avoid these GI plans at all costs. The best-guaranteed issue life insurance has only a two-year waiting period. It is important to work with an independent life insurance agency like Final Expense Guy that will prevent you from being led into agreeing to buy life insurance with a 3-year waiting period.</li>
 </ol>
 
-<h2 id="how-final-expense-guy-can-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with no questions asked needn’t be frustrating; working with an independent agency like Final Expense Guy, which works with all the best burial and final expense insurance companies to make the process easier and more affordable.</p>
-
-<p><strong>If you have a health history and need a no-questions-asked policy, let our licensed life insurance agents help you. Just answer a few questions, and we will work with you to find a plan that fits your life insurance needs.</strong></p>
-
-<p>Let a licensed life insurance expert at Final Expense Guy find the plan that fits your needs and budget. We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+-rated insurance carriers specializing in covering high-risk clients like you. We will search for all those companies to get the best rate. We will get you the best burial insurance with no waiting period and the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for no questions asked funeral insurance, or no questions asked burial insurance, or no questions asked life insurance, we can help.</p>
-
-<p>Fill out our&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>&#160;form on this page or call (888) 862-9456, and we can give you accurate funeral insurance quotes.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>What Is the Process for Applying for Burial Insurance With No Questions Asked?</strong></p>

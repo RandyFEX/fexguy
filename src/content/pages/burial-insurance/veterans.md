@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><strong>Two of the greatest benefits of burial insurance for veterans are that they do not require a medical exam to qualify, and underwriting is more lenient on PTSD and other health issues when purchased through Final EX Guy.</strong></p>
+<p><strong>Two of the greatest benefits of burial insurance for veterans are that they do not require a medical exam to qualify, and underwriting is more lenient on PTSD and other health issues when purchased through Final Expense Guy.</strong></p>
 
 <p>It’s very easy to apply; all you need to do is fill out a very short application and answer no to the health questions on the application.</p>
 
@@ -171,20 +171,6 @@ sidebar: true
 <p>Fast approval is the most significant advantage of guaranteed acceptance life insurance. Some companies can approve your policy in just 15 minutes to 48 hours. This is your best option if you need coverage due to a business loan or court requirement.</p>
 
 <p>Guaranteed issue burial insurance is graded for the first two years, which means the company will only pay 100% death benefit if you pass away due to an accident. If you die from natural death, your beneficiary will receive all premiums you paid plus interest, typically 7 to 10%. If you die after waiting, your beneficiaries will receive a 100% death benefit.</p>
-
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy for veterans needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you are a veteran, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case at different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for veterans’ funeral insurance, veterans’ burial insurance, or veterans’ life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

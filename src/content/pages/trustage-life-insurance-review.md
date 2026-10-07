@@ -604,18 +604,6 @@ sidebar: true
 
 <p>Financial rating is essential in evaluating the insurer’s ability to remain in business while paying claims. But, it has nothing to do with the quality of the products and services to their clients. It just demonstrates their financial stability from having more assets than liabilities.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with health issues needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for TruStage funeral insurance, TruStage burial insurance, or TruStage life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>Is TruStage Life Insurance still in business?</strong></p>

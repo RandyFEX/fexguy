@@ -360,18 +360,6 @@ sidebar: true
 
 <p>Working with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> can also help you get the best rates because we can shop your case to different A-rated insurance companies that will accept all your health conditions.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a gout policy needn’t be frustrating; working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for gout funeral, gout burial, or gout life insurance, we can help.</p>
-
-<p>Fill out our instant&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>&#160;form or call us at&#160;<strong>(888) 862-9456,</strong>&#160;and we can give you accurate burial insurance quotes.</p>
-
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>Can you get life insurance if you have gout?</strong></p>

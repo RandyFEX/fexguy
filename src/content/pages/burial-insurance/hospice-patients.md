@@ -359,5 +359,3 @@ sidebar: true
 <p>Burial insurance should be purchased from an independent insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. My agents and I can sell you burial insurance from over 30 insurance companies and pick the ones with the best plan at the best rate.</p>
 
 <p>Save yourself the work of calling multiple insurance companies by working with us. We are paid a commission by the insurance company no matter what type of burial insurance you choose, and it won’t affect your pricing.</p>
-
-<p>Answer the <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page, and we will provide you with an accurate quote. Then, we will show you the plan with the most benefits at the lowest price.</p>

@@ -391,8 +391,6 @@ sidebar: true
 
 <p>If you want to get the most affordable burial insurance with AIDS or HIV, one of the most important steps you can take toward getting the lowest premium is to work with a qualified independent life insurance agency like Final Expense Guy, which specializes in getting life insurance for high-risk clients.</p>
 
-<p>We work with many A-rated companies in the market. We can shop for you. We will compare quotes from burial insurance companies to get you the lowest pricing.</p>
-
 <h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -425,15 +423,3 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-final-expense-guy-can-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with HIV or AIDs needn’t be frustrating, but working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>You don’t need to waste your precious time searching for different insurance companies because we will do the work for you. </p>
-
-<p>Here at <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>, we specialize in obtaining life insurance coverage for people with a history of HIV or AIDs.</p>
-
-<p>We work with many A-rated insurance companies that specialize in high-risk clients. We will search for those companies to give you the best rate and match you up with your best funeral and burial insurance option.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral or burial insurance with HIV or AIDs in your medical history, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong>&#160;and we can give you an accurate burial insurance <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>

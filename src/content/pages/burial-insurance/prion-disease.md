@@ -359,15 +359,3 @@ questions. We will help you get your life insurance application approved
 quickly.</p>
 
 <p>If you have Prion disease and are ready to apply for burial insurance, we will help you. We work with the best-rated life insurance companies in the market, and our job is to get the best policy for you that will fit your budget.</p>
-
-<h2 id="how-final-expense-guy-can-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Trying to find a policy if your prion disease needn’t be a frustrating process; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for prion disease funeral insurance, or prion disease burial insurance, or prion disease life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>

@@ -241,22 +241,6 @@ riskier the company views you, the more expensive the rate.</p>
 
 <p>The best part about buying burial insurance in your 50s or younger is that you lock in a lower premium for the rest of your life. </p>
 
-<p>Since you now understand the importance of burial insurance for peace of mind when you pass away. You may want to know the cost of your burial insurance coverage. Just fill out the instant quote form on this page to get an accurate quote.</p>
-
-<h2 id="how-can-final-expense-guy-help-me"><strong> <br>How can Final Expense Guy help me? </strong></h2>
-
-<p>Finding a policy if you need burial insurance near you shouldn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>If you have a health history and want burial insurance near me, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you at every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance near me, burial insurance near me, or life insurance near me. Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>What is burial insurance?</strong></p>

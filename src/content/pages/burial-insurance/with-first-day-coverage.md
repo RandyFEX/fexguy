@@ -242,8 +242,6 @@ sidebar: true
 
 <p>My agent and I will walk you through the whole insurance application process. Once we know more about your age and health history, we can provide accurate quotes from burial insurance offering first-day coverage.</p>
 
-<p>Please fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456 to know your options.</p>
-
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>How long does it take for coverage to start?</strong></p>

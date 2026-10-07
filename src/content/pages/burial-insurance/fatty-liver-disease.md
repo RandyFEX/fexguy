@@ -345,8 +345,6 @@ whatever type of fatty liver disease you may have.</p>
 
 <p>If you need burial insurance with fatty liver disease, one of the most important steps you can take toward getting the lowest premium is to work with a qualified independent life insurance agency like Final Expense Guy, which specializes in getting life insurance for high-risk clients.</p>
 
-<p>We work with many A-rated companies in the market. We can shop for you, and this will increase your chances of getting affordable coverage.</p>
-
 <p>We know the different life insurance underwriting requirements for fatty liver disease. We also know the best life insurance companies and the most affordable options for your medical condition. We will assist you in obtaining the insurance coverage you need with a premium within your budget.</p>
 
 <h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
@@ -382,16 +380,6 @@ whatever type of fatty liver disease you may have.</p>
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-funds-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
-
-<p>If you have a health history of fatty liver disease, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for fatty liver disease funeral insurance, fatty liver disease burial insurance, or fatty liver disease life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 

@@ -471,20 +471,6 @@ sidebar: true
 
 <p>Even though Phoenix Life is not an A-rated company, they had a long history of satisfying its financial obligations to its policyholders. Their high ratings from BBB indicate superior customer service. </p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy if you want Phoenix Life burial insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.  We will search all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford if you are looking for Phoenix funeral insurance, Phoenix burial insurance, or Phoenix life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
-<p><br></p>
-
 <h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>

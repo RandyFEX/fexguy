@@ -268,16 +268,6 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">When purchasing an individual life insurance policy or keeping your employer-provided life insurance, compare the cost, coverage limits, and rider options. The best option for you will depend on your needs and budget. Work with a qualified life insurance agent to find the best policy.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Finding a policy if you have employer-provided life insurance and you want additional security, working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker. We understand that each person is different, and we will work with you to find the best policy for your needs.</p>
-
-<p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">We will work with you to find the plan that fits your financial requirements and budget.</p>
-
-<p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">We work with many A+ rated insurance carriers with a wide range of options to find the perfect policy for your needs.</p>
-
-<p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">So, if you are looking for life, burial, cremation, funeral, or final expense insurance, fill out our quote tool on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
 <h2 class="as-h5">About Final Expense Guy</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>

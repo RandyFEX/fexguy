@@ -347,8 +347,6 @@ sidebar: true
 
 <p>To find the most affordable burial insurance with fibromyalgia, you can consult with an independent burial insurance agency like Final Expense Guy, which works with many burial insurance companies. We will assess your health to determine which companies will view your health condition favorably. Then we will look into the quotes to see which carrier offers the cheapest.</p>
 
-<p>Since we can find rates from many burial insurance companies, we can save you time and money. Let us do the dirty work for you, and we will find you the burial insurance policy that costs the least and protects you immediately.</p>
-
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
@@ -382,16 +380,6 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with fibromyalgia needn’t be a frustrating process, but working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>You need not waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral or burial insurance with fibromyalgia in your medical history, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong>&#160;and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

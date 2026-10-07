@@ -190,7 +190,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>Rates may vary based on age, gender, health, and state. Click the form on this page for the lowest rates from the best carriers.</strong></p>
+<p><strong>Rates may vary based on age, gender, health, and state.</strong></p>
 
 <h2><strong>Diabetic neuropathy underwriting &amp; medication history</strong></h2>
 

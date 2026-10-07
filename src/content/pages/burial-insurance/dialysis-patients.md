@@ -202,16 +202,6 @@ sidebar: true
 
 <p>An independent life insurance agent from Final Expense Guy is like your own personal insurance superhero. They know all the cool insurance companies that offer “first-day coverage” for people with kidney stuff and dialysis. They’ll help you find the perfect plan, so you can relax and focus on feeling better.</p>
 
-<h2 id="how-can-final-expense-guy-funds-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Stop wasting time playing phone tag with a million insurance companies! We’re like the ultimate search engine for burial insurance – we do all the hard work for you.</p>
-
-<p>Think of us as your insurance matchmaker. We work with the coolest companies, the ones with top marks (like A+), who specialize in helping people who might need a little extra TLC (like you with your dialysis machine). </p>
-
-<p>Our awesome experts will sniff out the best deals from all the best companies, so you get the sweetest rates possible. Plus, we promise this whole process will be faster and easier than tying your gym shoes the first time (you know, before you figured it out).</p>
-
-<p>Ready to ditch the stress and find the perfect plan? Fill out the form on this page, or call us at (888) 862-9456. We’ll get you a quote faster than you can say “peace of mind!”</p>
-
 <h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 
 <p id="Additional-Questions-&-Answers-On-Insurance-For-Dialysis-Patients"><strong>Is there any insurance for dialysis patients?</strong></p>

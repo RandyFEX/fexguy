@@ -226,16 +226,6 @@ sidebar: true
 
 <p>So, if you’re hunting for burial insurance with a defibrillator implant, we’ve got your back.</p>
 
-<h2 id="how-we-can-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Finding a policy with a defibrillator doesn’t have to be a headache. Team up with Final Expense Guy, and we’ll make the process smooth and speedy.</p>
-
-<p>We’ll be with you every step of the way to find the plan that fits your financial needs and budget. Save your time – no need to chase down multiple insurance companies because we’ll handle the legwork for you.</p>
-
-<p>Our goal is to secure the coverage you need at a rate you can afford. So, if you’re on the hunt for funeral or burial insurance with a defibrillator, we’ve got you covered.</p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we’ll give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
 <h2 id="faq"><strong>   Frequently asked questions </strong></h2>
 
 <p><br><strong>What heart conditions require a defibrillator?</strong></p>

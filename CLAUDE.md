@@ -740,6 +740,28 @@ is in place; see src/content/README.md for how pages were migrated.
   The article route fails the build when an article page has no Quick Answer
   or key-points list and no hold, or has one and still a hold (Randy,
   October 2026: keep the FLAG pages held until he resolves each conflict).
+- Article top-of-page cleanup (src/lib/article/enhance.ts, October 2026):
+  - Legacy opening paragraphs (before the first H2) that only repeat the
+    Quick Answer and the article are left out of the page when listed, by
+    their opening words, in `src/config/article-intros.ts`; the Markdown
+    keeps them. The guard in `src/pages/[...article].astro` fails the build
+    if a listed page has no Quick Answer or a listed paragraph is no longer
+    found, so a listing never silently does nothing.
+  - The header illustration (the first figure before the second H2 that
+    shows an /images/articles/ image or a 2026 "…-Image" or
+    Term-Life-Insurance.png upload) is moved
+    out of the text and rendered by ArticleLayout between the summary/key
+    points (and the mobile GET MY QUOTE button) and "In This Article".
+    Ordinary in-article images stay in their sections; a page without a
+    header illustration renders with no image slot.
+  - Top-of-article "Complete my quote request form on this page…" /
+    "Get a quote on this page…" lines are left out: the template's quote
+    button, sidebar form and call bar replace them. Body quote-form/"call
+    us" boilerplate and the "How can Final Expense Guy help me?" sales
+    sections were removed from the Markdown where they held no article
+    information.
+  - Future migrations: don't add a pre-H2 summary that duplicates the Quick
+    Answer, legacy quote-form callouts, or new sales/CTA sections.
 
 ## Conventions
 

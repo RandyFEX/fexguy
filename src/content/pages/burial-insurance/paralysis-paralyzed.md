@@ -260,14 +260,6 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Take a good look at the policy terms before giving the thumbs up. Make sure the coverage fits your needs and your wallet.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>At Final Expense Guy, we’re pros at landing life insurance for folks who’ve dealt with paralysis.</p>
-
-<p>We team up with top-rated insurance companies that handle high-risk clients like a boss. We’ll dig through those options to score you the best rate and match you with the ideal life insurance plan.</p>
-
-<p>Need coverage that won’t break the bank? Whether you’re after burial insurance for stroke or anything else, we’ve got your back. Just fill out our quote form on this page or give us a ring at (888) 862-9456 for a spot-on quote.</p>
-
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is there an age limit for burial insurance with paralysis?</strong></p>

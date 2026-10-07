@@ -204,20 +204,6 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p>Be careful when setting up your brother’s policy to avoid the Goodman triangle and the tax trap that goes with it. Avoid making the insured, owner, and beneficiary three different people.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Trying to find a policy if you need burial insurance for your brother needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>If your brother has a pre-existing medical condition, we will help you; we will work with you side by side to find a plan that fits your needs. </p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for your brother, burial insurance for your brother, or life insurance for your brother. Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote. </p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance on my brother?</strong></p>

@@ -361,11 +361,3 @@ sidebar: true
 <p>If you have a loved one in a nursing home, learn from their mistake, and buy burial insurance now while you can still qualify for coverage. Waiting to buy burial insurance when you are in a nursing home is a huge mistake that you will regret later!</p>
 
 <p>The best time to buy burial insurance is now! The younger you buy, the lower your rates. The healthier you are, the lower your premiums will be.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>You should only buy burial insurance from an independent insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. Save yourself the effort of calling multiple insurance companies by working with us. Our agents and I can shop for over 30 insurance companies and compare prices to get you the best plan at the best rate.</p>
-
-<p>We will assist you in securing the insurance coverage you need at a rate you can afford.</p>
-
-<p>Answer the quote form on this page, and I will provide you with an accurate quote. Then, we will show you the plan with the most benefits at the lowest price. You can also call us at (888) 862-9456 if you have any questions regarding burial insurance.</p>

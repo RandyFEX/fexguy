@@ -159,16 +159,6 @@ sidebar: true
 
 <p>Today is the best time to get life insurance for parents or final expense insurance for parents. Letting a day pass will often make the premium more expensive.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How can Final Expense Guy help me?</strong></h2>
-
-<p>Our job at Final Expense Guy is to be the most knowledgeable burial insurance experts available. We can get you the most accurate quote and affordable life insurance rates for parents.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you burial insurance quotes from the final expense companies that best fit you.</p>
-
-<p>The reality is that most inexperienced and less knowledgeable insurance agents who offer life insurance will cost you loads of money by selling you more expensive policies.</p>
-
-<p>Working with an independent brokerage like Final Expense Guy is always in your best interest. With access to all the best final expense life&#160;insurance companies, we will help you understand your best life insurance option, given your current age, health, and financial situation.</p>
-
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I buy insurance for my parents?</strong></p>

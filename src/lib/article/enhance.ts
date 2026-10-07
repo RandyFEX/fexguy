@@ -20,7 +20,15 @@
 //    into items, and runs of <details> into one list;
 //  - "…'s Story:" sections become asides; "PROS"/"CONS" lists become a pair;
 //  - migrated sentences that point at "the form on this page" get a quiet
-//    note style;
+//    note style; the one-line "Complete my quote request form on this page…"
+//    calls to action at the top (before the first H2) are left out (the
+//    template's quote button and form replace them);
+//  - the article's header illustration (the first figure, in the opening or
+//    the first section, showing an /images/articles/ illustration or a 2026
+//    "…Image" upload) moves out of the text into `feature`, which the
+//    template shows above the contents panel;
+//  - opening paragraphs a page's Quick Answer replaces (options.legacyIntro,
+//    from src/config/article-intros.ts) are left out;
 //  - hub pages (variant 'hub'): "✓"/"✘" link lines become grouped lists.
 // Pages that don't match a pattern simply skip that step.
 
@@ -54,6 +62,12 @@ export interface EnhanceReport {
   hubGroups: HubGroup[];
   /** Migrated reader comments (div.comment) set aside and shown after the article. */
   comments: number;
+  /** Opening "…quote request form…" one-liners left out. */
+  introCtas: string[];
+  /** src of the header illustration moved to `feature`, and where it was. */
+  feature: { src: string; from: 'intro' | 'first section' } | null;
+  /** options.legacyIntro openings left out, and any not found. */
+  legacyIntro: { removed: string[]; missing: string[] };
 }
 
 export interface EnhancedArticle {
@@ -65,6 +79,8 @@ export interface EnhancedArticle {
   intro: string;
   /** Everything from the first H2 on. */
   body: string;
+  /** The header illustration (a <figure>), shown above the contents panel. */
+  feature: string;
   toc: TocItem[];
   report: EnhanceReport;
 }
@@ -103,7 +119,19 @@ const BYLINE_PARTS: RegExp[] = [
   new RegExp(`^<p>\\s*✓ Verified ✓${IN_P}<\\/p>`),
 ];
 
-export function enhanceArticle(html: string, options: { variant?: 'article' | 'hub' } = {}): EnhancedArticle {
+// The opening call to action the template's quote button and form replace
+// (the paragraph's whole text). One page's copy carries a leftover fragment of
+// an older version of the line.
+const INTRO_CTA =
+  /^(?:Get a quote on this page by completing my quote request form now|Complete my quote request form on this page\b[^.]*)\.?(?: help you qualify for burial insurance with first-day coverage and no waiting period\.)?$/i;
+// Header illustrations: the replacement illustrations and the 2026 WordPress
+// header images ("…-Image….png", "Term-Life-Insurance.png").
+const FEATURE_SRC = /src="\/(?:images\/articles\/[^"]+|wp-content\/uploads\/2026\/0[1-6]\/[^"]*(?:-Image|Term-Life-Insurance)[^"]*\.png)"/;
+
+export function enhanceArticle(
+  html: string,
+  options: { variant?: 'article' | 'hub'; legacyIntro?: readonly string[] } = {},
+): EnhancedArticle {
   const report: EnhanceReport = {
     bottomLine: null,
     bottomLineNotes: [],
@@ -122,6 +150,9 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     linkLists: 0,
     hubGroups: [],
     comments: 0,
+    introCtas: [],
+    feature: null,
+    legacyIntro: { removed: [], missing: [] },
   };
   let rest = html.trim();
 
@@ -397,12 +428,44 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
   // The reader comments, after the article.
   if (comments) rest = `${rest.trim()}\n<section class="art-comments">${comments}</section>`;
 
-  // 14. Split the intro (before the first H2) from the body.
+  // 14. The header illustration: the first <figure> before the second H2,
+  //     when it shows one. A rule left doubled by the move becomes one.
+  let feature = '';
+  const firstSection = rest.split(/(?=<h2[\s>])/).slice(0, 2).join('');
+  const figure = firstSection.match(/<figure\b[\s\S]*?<\/figure>/);
+  if (figure && FEATURE_SRC.test(figure[0])) {
+    const at = rest.indexOf(figure[0]);
+    feature = figure[0].replace(/\sloading="lazy"/, ' loading="eager"');
+    rest = rest.slice(0, at) + rest.slice(at + figure[0].length).replace(/^\s*/, '\n');
+    rest = rest.replace(/(<hr\s*\/?>)\s*<hr\s*\/?>/, '$1');
+    report.feature = { src: figure[0].match(/src="([^"]+)"/)?.[1] ?? '', from: at < rest.search(/<h2[\s>]/) ? 'intro' : 'first section' };
+  }
+
+  // 15. Split the intro (before the first H2) from the body.
   const firstH2 = rest.search(/<h2/);
-  const intro = firstH2 === -1 ? rest : rest.slice(0, firstH2);
+  let intro = firstH2 === -1 ? rest : rest.slice(0, firstH2);
   const body = firstH2 === -1 ? '' : rest.slice(firstH2);
 
-  return { h1, takeaways, intro: intro.trim(), body: body.trim(), toc, report };
+  // 16. In the intro: the opening calls to action and the paragraphs the
+  //     Quick Answer replaces are left out; then rules with nothing left
+  //     before them, and an intro of rules alone.
+  const replaced = [...(options.legacyIntro ?? [])];
+  intro = intro.replace(/<p\b[^>]*>((?:(?!<\/p>)[\s\S])*)<\/p>\s*/g, (p, inner: string) => {
+    const text = htmlToText(inner.replace(/<[^>]+>/g, ' '));
+    if (INTRO_CTA.test(text)) {
+      report.introCtas.push(text);
+      return '';
+    }
+    const i = replaced.findIndex((start) => text.startsWith(start));
+    if (i === -1) return p;
+    report.legacyIntro.removed.push(replaced.splice(i, 1)[0]);
+    return '';
+  });
+  report.legacyIntro.missing = replaced;
+  intro = intro.replace(/^\s*(?:<hr\s*\/?>\s*)+/, '');
+  if (/^(?:\s*<hr\s*\/?>)*\s*$/.test(intro)) intro = '';
+
+  return { h1, takeaways, intro: intro.trim(), body: body.trim(), feature, toc, report };
 }
 
 function hubLists(html: string, report: EnhanceReport): string {
