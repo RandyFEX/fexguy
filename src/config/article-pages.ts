@@ -823,7 +823,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/on-someone-else/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Yes, buying burial insurance on someone else is possible, but you need two things: consent and insurable interest. The person has to agree to the policy and sign the application, and you must show their death would financially affect you. Children commonly buy it for parents, and spouses for each other. You can’t secretly take out a policy on someone or insure a friend. The exception is a parent or grandparent buying for a minor child.',
+      'Yes, buying burial insurance on someone else is possible, but you need two things: consent and insurable interest. The person has to agree to the policy and sign the application, and you must show their death would financially affect you. Children commonly buy it for parents, and spouses for each other. You can’t secretly take out a policy on someone or insure a friend. Coverage on a minor child follows different rules, set by the insurance company and state law.',
   },
   '/burial-insurance/life-insurance-widows/': {
     section: 'burialInsurance',
@@ -999,8 +999,10 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/cancer-insurance/': { section: 'none' },
   '/children-grandchild-policies/': {
     section: 'none',
+    // Rewritten October 2026 from Randy's carrier research (Gerber, Mutual of Omaha).
     quickAnswer:
-      'Children’s whole life insurance is bought by a parent, grandparent, or guardian and covers the child for life as long as premiums are paid. Buying it while the child is young locks in low premiums, lets them buy more coverage later without proving insurability even if they develop health issues, and pays for final expenses if the child dies. It isn’t for everyone: coverage amounts are low, the chance of a payout is small, you’re paying for decades, and it’s not the best tool for savings.',
+      'Children’s life insurance is usually permanent whole life coverage that a parent, grandparent or guardian buys on a minor. It can last for life and build cash value. But the details vary by insurance company, including who can apply, whether a parent must sign, who owns the policy and whether the child can buy more coverage later.',
+    related: [{ href: '/burial-insurance/on-someone-else/' }],
   },
   // IUL articles: section IUL Playbook (/iul-book/, which keeps its own layout).
   '/iul-book/iul-church-members-faith-based-communities/': {

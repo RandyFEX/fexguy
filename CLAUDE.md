@@ -445,6 +445,14 @@ is in place; see src/content/README.md for how pages were migrated.
   source explains what "T-2" stands for: don't add one. Linked from
   /burial-insurance/state-regulated-life-insurance/; not in /a-z-companies/.
   The unused T2 image files remain in public/wp-content/uploads/2026/01/.
+- **/children-grandchild-policies/ rewritten** (Randy, October 2026; `source:
+  "new"`, top-level, not Burial Insurance): "Life Insurance for Children and
+  Grandchildren", built from Randy's carrier research (Gerber Grow-Up Plan,
+  Mutual of Omaha/United of Omaha Children's Whole Life) and 34 CFR 685.212.
+  Product features (doubling, guaranteed purchase, ownership age) are stated
+  per product, never as universal. No blanket consent rule: whether a parent
+  or guardian must sign depends on the insurer and state law (the same
+  correction was made on /burial-insurance/on-someone-else/, which links to it).
 - **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
   once flagged as showing much less text than their WordPress-export versions
   were each verified against their published WordPress export item, and no

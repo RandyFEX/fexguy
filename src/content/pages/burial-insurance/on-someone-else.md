@@ -98,9 +98,9 @@ sidebar: true
 
 <p>Life insurance is a heavily regulated industry and having insurable interest and consent makes it virtually impossible for anybody to get a life insurance policy. If in case someone was able to get a guaranteed issue policy without permission, this will be a fraud. Insurance fraud is a type of felony, and you could end up in jail.</p>
 
-<p><strong>WHEN INSURABLE INTEREST AND CONSENT IS NOT NEEDED</strong></p>
+<p><strong>LIFE INSURANCE ON A MINOR CHILD</strong></p>
 
-<p>The only instance where insurable interest and consent are not needed is when a parent or grandparent applies to purchase life insurance for their minor child. You don’t need permission to purchase a life insurance policy for your child under 18.</p>
+<p>Life insurance on a minor child follows different rules. A parent, grandparent or legal guardian may be able to apply, but the insurance company’s rules and your state’s law decide who can apply and whether a parent or legal guardian has to sign.</p>
 
 <h2 id="buying-burial-insurance-on-someone-else"><br><strong>Buying Burial Insurance On Someone Else</strong></h2>
 
@@ -144,6 +144,8 @@ sidebar: true
 <p><br><strong>BUYING BURIAL INSURANCE ON GRANDCHILDREN</strong></p>
 
 <p>One great thing a grandparent can do is to offer to pay for a life insurance policy on their grandchildren, making their parents the beneficiaries and owners of the policy. This can help the parents who are struggling financially and can’t afford to pay the premiums to buy a life insurance policy on their children.</p>
+
+<p>To learn how these policies work, who can apply and what to check first, see our guide to <a href="/children-grandchild-policies/">life insurance for children and grandchildren</a>.</p>
 
 <p>A whole life insurance policy that builds cash value could be used to pay the grandchildren’s college expenses. This would be an excellent birthday gift for a grandchild.</p>
 
@@ -302,7 +304,7 @@ sidebar: true
 
 <p><br><strong>Can grandparents get life insurance on grandchildren without parental consent?</strong></p>
 
-<p>Yes, grandparents can get life insurance on grandchildren without parental consent.</p>
+<p>It depends. Some insurance companies let a grandparent apply for a children’s policy, but the company’s rules and your state’s law decide whether a parent or legal guardian also has to sign.</p>
 
 <p><br><strong>Can someone else pay my life insurance premiums?</strong></p>
 
