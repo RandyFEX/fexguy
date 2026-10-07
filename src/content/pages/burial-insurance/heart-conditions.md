@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Heart conditions don’t automatically disqualify you, but timing matters a lot<br>• Recent heart issues or surgery can block first-day coverage approvals<br>• Many agents push expensive guaranteed issue without checking better options<br>• Stable conditions over 1–2 years can qualify for better pricing<br>• Applying too soon after a heart event often leads to denial</p>
 
-<p>Getting burial insurance with heart conditions depends on what happened and when. Burial insurance and whole life policies closely examine heart attacks, surgeries, medications, and the stability of your condition today. Many heart conditions can still qualify for first-day coverage if they’ve been under control for at least 1 to 2 years. If the issue is recent, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period. The mistake is assuming all heart conditions are treated the same. They’re not, and timing can change everything.</p>
+<p>Getting burial insurance with heart conditions depends on what happened and when. Burial insurance and whole life policies closely examine heart attacks, surgeries, medications, and the stability of your condition today. Many heart conditions can still qualify for first-day coverage if they’ve been under control for at least 1 to 2 years. If the issue is recent, you’ll likely be limited to a graded plan, which limits benefits for the first 12 to 24 months, or a guaranteed issue plan with higher costs and a 2-year waiting period. The mistake is assuming all heart conditions are treated the same. They’re not, and timing can change everything.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -120,7 +120,7 @@ sidebar: true
 
 <ul>
 <li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Family Benefit Life, Trinity Life, or Aflac for people with stable high blood pressure or minor arrhythmias.</li>
-<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life for those with congestive heart failure or recent heart events who want better than a standard waiting period.</li>
+<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. A graded plan can be an option for those with congestive heart failure or recent heart events who want better than a standard waiting period.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life for people currently in the hospital, using oxygen, or needing help with daily activities.</li>
 </ul>
 
@@ -270,7 +270,7 @@ sidebar: true
 
 <h3>Can I get burial insurance if I have a pacemaker or stents?</h3>
 
-<p><a href="/burial-insurance/pacemaker/" target="_blank" rel="noreferrer noopener">Pacemakers</a> and <a href="/burial-insurance/stent/" target="_blank" rel="noreferrer noopener">stents</a> are common cardiac treatments that many burial insurance carriers view favorably if the recovery is successful. If your stent was placed more than two years ago and you have no ongoing complications, you can typically qualify for “Preferred” rates and immediate coverage. Even with a more recent placement, specialized “impaired risk” carriers may offer day-one protection after a short “seasoning” period of just six months.</p>
+<p><a href="/burial-insurance/pacemaker/" target="_blank" rel="noreferrer noopener">Pacemakers</a> and <a href="/burial-insurance/stent/" target="_blank" rel="noreferrer noopener">stents</a> are common cardiac treatments that many burial insurance carriers view favorably if the recovery is successful. If your stent was placed more than two years ago and you have no ongoing complications, you can typically qualify for “Preferred” rates and immediate coverage. With a more recent placement, you may be limited to a graded plan with a waiting period.</p>
 
 <h3>How does atrial fibrillation (AFib) affect burial insurance rates?</h3>
 

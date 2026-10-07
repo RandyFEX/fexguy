@@ -335,7 +335,13 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Burial insurance after heart bypass surgery depends almost entirely on timing and recovery. Most insurance companies will decline or restrict coverage if the surgery happened within the last 12 months, and you’ll often be pushed into guaranteed-issue plans with higher costs and a 2-year waiting period. You might still get first-day coverage with some companies if you haven’t been hospitalized two or more times in the past two years and the right plan is offered where you live.',
   },
-  '/burial-insurance/heart-conditions/': { family: 'health' },
+  '/burial-insurance/heart-conditions/': {
+    family: 'health',
+    // Written from the article after its recent-event conflict was resolved
+    // (Randy, October 2026).
+    quickAnswer:
+      'Many people with heart conditions can still get burial insurance, and many heart conditions can qualify for first-day coverage if they’ve been under control for at least 1 to 2 years. If a heart event or surgery is recent, you’ll likely be limited to a graded plan or a guaranteed issue plan with a waiting period, so your options depend on the condition, its severity, your medications and how recently it happened.',
+  },
   '/burial-insurance/heart-disease/': {
     family: 'health',
     quickAnswer:

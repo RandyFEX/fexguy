@@ -92,8 +92,6 @@ export const QUICK_ANSWER_HELD: Record<string, string> = {
     "One passage: Graves’ disease “on its own will not create an issue”; another: some companies deny or add a waiting period because of standard Graves’ medications.",
   "/burial-insurance/guaranteed-issue-life-insurance-for-seniors/":
     "The page’s defining feature is stated both ways: “Most” GI plans have the 2-year waiting period (intro, Bottom Line, waiting-period section) vs “all” GI policies carry it and it is “mandatory” (body, pricing section, FAQ). The answer picks “most plans”, implying some GI plans have no wait, which other sections deny; the accidental-death rule has the same most/all split. Central to “what is guaranteed issue”.",
-  "/burial-insurance/heart-conditions/":
-    "Intro: a recent heart event means guaranteed issue; body and table: recent heart events go to a graded plan.",
   "/burial-insurance/high-blood-pressure/":
     "The page (H1 “Burial Insurance With Uncontrolled High Blood Pressure”) gives opposite answers for the uncontrolled case: the intro says unstable blood pressure will likely push you into guaranteed issue, while the body says people with uncontrolled high blood pressure often qualify for first-day coverage if they take their medication, with guaranteed issue only after 2+ hospitalizations in 2 years. A Quick Answer has to choose one, so it needs Randy’s decision. The intro’s mention of term life also doesn’t match the body.",
   "/burial-insurance/hospice-patients/":
