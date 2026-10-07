@@ -362,24 +362,52 @@ is in place; see src/content/README.md for how pages were migrated.
   /burial-insurance-with-type-1-diabetes/ → /burial-insurance/diabetes/
   /burial-life-insurance-book/ → /final-expense-life-insurance-book/
   /buried-in-lies-e-book/ → /final-expense-life-insurance-book/
-  /category/burial-insurance-cancer/ → /category/cancer-final-expense-whole-life-insurance/
-  /category/burial-insurance-company-review/ → /category/company-reviews-final-expense-whole-life-insurance/
-  /category/burial-insurance-diabetes/ → /category/diabetes-final-expense-whole-life-insurance/
-  /category/burial-insurance-heart-circulatory-conditions/ → /category/heart-issues-final-expense-whole-life-insurance/
-  /category/burial-insurance-kidney-conditions/ → /category/kidney-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-liver/ → /category/liver-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-lung-respiratory/ → /category/lung-respiratory-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-neurological-impairments/ → /category/neurological-impairments-final-expense-whole-life-insurance/
-  /category/final-expense-whole-life-insurance-company-reviews/ → /category/company-reviews-final-expense-whole-life-insurance/
-  /category/heart-circulatory-final-expense-whole-life-insurance/ → /category/heart-issues-final-expense-whole-life-insurance/
+  /category/burial-insurance-cancer/ → /burial-insurance/cancer/
+  /category/burial-insurance-company-review/ → /a-z-companies/
+  /category/burial-insurance-diabetes/ → /burial-insurance/diabetes/
+  /category/burial-insurance-heart-circulatory-conditions/ → /burial-insurance/heart-conditions/
+  /category/burial-insurance-kidney-conditions/ → /burial-insurance/kidney-disease/
+  /category/burial-insurance-liver/ → /burial-insurance/liver-disease/
+  /category/burial-insurance-lung-respiratory/ → /burial-insurance/respiratory-lung-conditions/
+  /category/burial-insurance-neurological-impairments/ → /burial-insurance/neurological-disorders/
+  /category/final-expense-whole-life-insurance-company-reviews/ → /a-z-companies/
+  /category/heart-circulatory-final-expense-whole-life-insurance/ → /burial-insurance/heart-conditions/
   /globe-life-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
   /globe-term-life-burial-insurance-review/ → /globe-life-price-increase/
   /globe-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
   Intentional real 404s, no redirects (old campaign/workflow URLs): /get-info/, /free-quote-now/, /facebook-quote-request/, /request-quote-compare-rates/, /state-benefits/.
+  The 10 category mappings above originally ended at the /category/ archives;
+  they were repointed straight to the hubs when the archives were retired
+  (see "Legacy archives retired" below).
+- **Legacy archives retired** (Randy, October 2026): the frozen WordPress
+  archive snapshots are not part of the site's architecture.
+  - /blog/ and /blog/page/2/–/9/ stay built (200, self-canonical) but are
+    `robots: "noindex, follow"` with `sitemap: false` (which also keeps them
+    out of llms.txt and site search). Not `noindex: true`: that flag drops the
+    canonical tag (Seo.astro). Don't link them or redirect/404 them without
+    Randy's approval.
+  - The 11 /category/ archive pages were removed and 301 straight to their
+    hubs (one hop): cancer-final-expense-whole-life-insurance →
+    /burial-insurance/cancer/; company-reviews-final-expense-whole-life-insurance
+    (and its /page/2/) → /a-z-companies/; diabetes-… → /burial-insurance/diabetes/;
+    heart-issues-… (and its /page/2/) → /burial-insurance/heart-conditions/;
+    kidney-conditions-… → /burial-insurance/kidney-disease/; liver-conditions-…
+    → /burial-insurance/liver-disease/; lung-respiratory-conditions-… →
+    /burial-insurance/respiratory-lung-conditions/; neurological-impairments-…
+    → /burial-insurance/neurological-disorders/ (each "…" is
+    -final-expense-whole-life-insurance); /category/term-life-insurance/ →
+    /term-life-insurance-guide-everyone/.
+  - Every older redirect that ended at those archives now goes straight to the
+    hub: the 10 Group E category mappings (above) and 4 Group F pagination
+    redirects: /category/burial-insurance-company-review/page/2/, /page/3/ and
+    /page/4/ → /a-z-companies/;
+    /category/burial-insurance-neurological-impairments/page/3/ →
+    /burial-insurance/neurological-disorders/.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 296 redirects (with /planning-guide/,
+  /sitemap-index.xml. vercel.json holds 307 redirects (with the 11 retired
+  /category/ archives, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
   /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
