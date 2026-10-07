@@ -14,6 +14,8 @@ source: "live"
 
 <p>I’m Randy VanderVaate, the Founder and President of Final Expense Guy.</p>
 
+<p>Before Final Expense Guy, my business operated under the <a href="/funeral-funds-of-america/">Funeral Funds of America</a> name.</p>
+
 <p>I’m a national independent life insurance agent <a href="/licenses/" target="_blank" rel="noreferrer noopener">licensed in most states</a> with my main office located in the Dallas, TX area.</p>
 
 <p>I’ve been a licensed agent for over a decade and I’ve helped or quoted well over 10,000 insurance shoppers regardless of age or health.</p>

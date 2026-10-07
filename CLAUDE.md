@@ -455,6 +455,12 @@ is in place; see src/content/README.md for how pages were migrated.
   per product, never as universal. No blanket consent rule: whether a parent
   or guardian must sign depends on the insurer and state law (the same
   correction was made on /burial-insurance/on-someone-else/, which links to it).
+- **/funeral-funds-of-america/ rewritten** (Randy, October 2026; `source:
+  "new"`, simple content layout): a short brand-transition notice, "Funeral
+  Funds of America Is Now Final Expense Guy" (2015 start, funeralfunds.com,
+  2025 rebrand, same owner, DBA of Saturn Street, LLC, "licensed in most
+  states", 888-862-9456). No service list, customer counts or licensing
+  history. /about/ links to it; it links back to /about/.
 - **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
   once flagged as showing much less text than their WordPress-export versions
   were each verified against their published WordPress export item, and no
@@ -551,7 +557,7 @@ is in place; see src/content/README.md for how pages were migrated.
 ## Business identity, legal pages and privacy (Randy, October 2026)
 
 - Legal business: **Saturn Street, LLC, DBA Final Expense Guy** — used on the
-  legal pages only. The public brand stays Final Expense Guy / FEXGuy.com.
+  legal pages and (Randy, October 2026) on /funeral-funds-of-america/ only. The public brand stays Final Expense Guy / FEXGuy.com.
 - Published contact details: website https://fexguy.com, phone 888-862-9456,
   mailing address **2300 Olympia Drive #270179, Flower Mound, TX 75027** (no
   "Dallas, TX Area" on the address; the old "PO Box 270179" form is retired).
