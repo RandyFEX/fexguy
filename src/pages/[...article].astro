@@ -8,8 +8,9 @@ import ArticleLayout from '@/layouts/ArticleLayout.astro';
 import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
 import { ARTICLE_PAGES } from '@/config/article-pages';
 import { isArticlePage, resolveArticle, type ResolvedArticle } from '@/lib/article/config';
-import { htmlToText } from '@/lib/article/enhance';
-import { allHubNavLinks } from '@/config/hub-nav';
+import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
+import { allHubNavLinks, HUB_SUMMARIES } from '@/config/hub-nav';
+import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
 
 export async function getStaticPaths() {
   const pages = await getPublishedPages();
@@ -23,6 +24,27 @@ export async function getStaticPaths() {
   // Every hub navigation link (src/config/hub-nav.ts) too.
   for (const { href } of allHubNavLinks()) {
     if (!h1s.has(href)) throw new Error(`src/config/hub-nav.ts links ${href}, which is not a published page`);
+  }
+  // Every article opens with the full summary: a Quick Answer and the
+  // key-points list (or an A–Z hub's guide summary), unless the gap is a
+  // listed hold (src/config/article-holds.ts). A hold must be removed once
+  // the page has the element.
+  const html = new Map(pages.map((p) => [pagePath(p), p.rendered?.html ?? '']));
+  for (const [path, c] of Object.entries(ARTICLE_PAGES)) {
+    const hub = Boolean(HUB_SUMMARIES[path]);
+    const answer = Boolean(c.quickAnswer) || hub;
+    if (!answer && !(path in QUICK_ANSWER_HELD))
+      throw new Error(`${path}: no Quick Answer; add \`quickAnswer\` in src/config/article-pages.ts (or a hold in src/config/article-holds.ts)`);
+    if (answer && path in QUICK_ANSWER_HELD)
+      throw new Error(`${path} has a Quick Answer; remove its hold from QUICK_ANSWER_HELD in src/config/article-holds.ts`);
+    const points = hub || Boolean(enhanceArticle(html.get(path) ?? '', { variant: c.variant }).takeaways);
+    if (!points && !(path in SUMMARY_HELD))
+      throw new Error(`${path}: no key-points list ("Here’s the Bottom Line") was found for its summary (or add a hold in src/config/article-holds.ts)`);
+    if (points && path in SUMMARY_HELD)
+      throw new Error(`${path} has its key-points list; remove its hold from SUMMARY_HELD in src/config/article-holds.ts`);
+  }
+  for (const path of [...Object.keys(QUICK_ANSWER_HELD), ...Object.keys(SUMMARY_HELD)]) {
+    if (!(path in ARTICLE_PAGES)) throw new Error(`src/config/article-holds.ts lists ${path}, which is not an article page`);
   }
   return pages
     .filter((entry) => isArticlePage(pagePath(entry)))

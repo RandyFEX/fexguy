@@ -12,8 +12,8 @@
 //    the quote button and the call bar);
 //  - "Here's the Bottom Line:" (lines separated by <br> and typed "•"
 //    characters, in one paragraph or two, or a bold label paragraph followed
-//    by a list, also labelled "The short version") becomes the key-points
-//    list;
+//    by a list, also labelled "The short version", or an opening "… key
+//    takeaways" H2 with a list) becomes the key-points list;
 //  - duplicate ids get a numeric suffix; each <h2> gets an id (or keeps its
 //    own), and the H2s feed the contents panel;
 //  - FAQ sections (question <h3>s or bold question paragraphs) are grouped
@@ -194,6 +194,19 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
         takeaways = { label: label.trim(), items };
         report.bottomLine = 'list';
         return '';
+      },
+    );
+  }
+  //     Or as an H2 "… key takeaways" (some company reviews) with a plain
+  //     list, right after the opening paragraph(s), which stay in the intro.
+  if (!takeaways) {
+    rest = rest.replace(
+      /^((?:<p>(?:(?!<\/p>)[\s\S])*<\/p>\s*){0,2})<h2[^>]*>([^<]*\bkey (?:[a-z ]+ )?takeaways)<\/h2>\s*<ul>((?:\s*<li>(?:(?!<\/?(?:li|ul|ol)\b)[\s\S])*<\/li>)+)\s*<\/ul>\s*/i,
+      (_, intro: string, label: string, list: string) => {
+        const items = [...list.matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => m[1].trim()).filter(Boolean);
+        takeaways = { label: label.trim(), items };
+        report.bottomLine = 'list';
+        return intro;
       },
     );
   }

@@ -734,6 +734,12 @@ is in place; see src/content/README.md for how pages were migrated.
   /buyers-guide/, /mutual-of-omaha-burial-insurance/.
   /mortgage-protection-life-insurance/ got Randy's Quick Answer (October
   2026); its "The short version" list is its Bottom Line panel.
+  The held pages (the 96 FLAG pages plus /buyers-guide/ and
+  /mutual-of-omaha-burial-insurance/) are listed with their reasons in
+  src/config/article-holds.ts, as are the 3 articles with no key-points list.
+  The article route fails the build when an article page has no Quick Answer
+  or key-points list and no hold, or has one and still a hold (Randy,
+  October 2026: keep the FLAG pages held until he resolves each conflict).
 
 ## Conventions
 
