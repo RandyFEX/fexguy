@@ -10,8 +10,6 @@ sidebar: true
 
 <h1>Funeral Funds of America Is Now Final Expense Guy</h1>
 
-<figure><img decoding="async" loading="eager" width="1024" height="201" src="/wp-content/uploads/2025/12/FUNERAL-FUND-OF-AMERICA-1024x201.png" alt="Funeral Funds of America logo"></figure>
-
 <p>If you're looking for Funeral Funds of America or funeralfunds.com, you're in the right place. Funeral Funds of America is now Final Expense Guy.</p>
 
 <h2>What happened to Funeral Funds of America?</h2>
