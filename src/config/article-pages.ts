@@ -373,6 +373,10 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/final-expense-life-insurance-complete-guide/': { section: 'burialInsurance' },
   '/burial-insurance/top-10-final-expense-life-insurance-companies/': { section: 'burialInsurance' },
   '/buyers-guide/': { section: 'burialInsurance' },
+  '/final-expense-life-insurance-pre-existing-conditions/': {
+    section: 'burialInsurance',
+    crumb: 'Pre-Existing Conditions',
+  },
 
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
