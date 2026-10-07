@@ -148,13 +148,12 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   {
     id: 'guides-medicaid',
     title: 'Medicaid, Rules and Scams',
-    primary: { href: '/burial-insurance/burial-insurance-medicaid/', label: 'Burial Insurance And Medicaid' },
+    primary: { href: '/final-expense-life-insurance-medicaid/', label: 'Final Expense Insurance And Medicaid' },
     supporting: [
       { href: '/burial-insurance/scams/', label: 'Burial Insurance Scams' },
       { href: '/medicaid-spend-down-rules-on-life-insurance/', label: 'Medicaid Spend Down Rules on Life Insurance' },
     ],
     more: [
-      { href: '/final-expense-life-insurance-medicaid/', label: 'Final Expense Insurance And Medicaid' },
       { href: '/burial-insurance/state-regulated-life-insurance/', label: 'State Regulated Life Insurance…Is It A Lie?' },
     ],
   },

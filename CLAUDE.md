@@ -416,7 +416,7 @@ is in place; see src/content/README.md for how pages were migrated.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 307 redirects (with the 11 retired
+  /sitemap-index.xml. vercel.json holds 308 redirects (with the 11 retired
   /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
@@ -432,6 +432,20 @@ is in place; see src/content/README.md for how pages were migrated.
   Randy's wording; the "97% of families" claim is gone). /how-much-cremation-cost/
   (weaker duplicate; no content carried over) was removed and 301s to it, as do
   /how-much-does-cremation-cost/ and /how-much-does-cremation-cost-od/ (one hop).
+- **Medicaid guides consolidated** (Randy, October 2026):
+  /final-expense-life-insurance-medicaid/ is the canonical survivor (the older
+  WordPress URL with 2019/2020 comments, the existing historical redirects
+  and the production contextual link). /burial-insurance/burial-insurance-medicaid/
+  was a June 2026 word-for-word duplicate; it was removed and 301s directly to
+  the survivor, as do /burial-insurance-medicaid/ and /life-insurance-medicaid/
+  (one hop each). The Burial Insurance hub lists the survivor once, as the
+  Medicaid primary. Before launch its HIGH-risk Medicaid guidance was narrowly
+  corrected (face value vs cash surrender value, no universal $2,000 limit,
+  ownership transfers can count as asset transfers, no blanket estate-recovery
+  promises), sourced to eCFR (20 CFR 416.1205, 416.1230; 42 CFR 435.601,
+  433.36); its MEDIUM items (trust-cap ranges, Medicaid.gov attribution, A.M.
+  Best ratings, "less than $600", Colonial Penn wording, client stories) wait
+  for the later content review.
 - /mortgage-protection-life-insurance/ is a rewritten, fact-checked article
   Randy approved (October 2026; `source: "new"`), not the old WordPress post.
   Mortgage protection is a legitimate part of the business: present it as a

@@ -866,15 +866,11 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Yes. Final expense insurance is usually your only real option over 80, and it’s small whole life coverage meant for funeral and final expenses, with no medical exam. If your health matches a company’s guidelines, simplified issue whole life can still give you first-day coverage. If not, guaranteed issue plans accept you without health questions but cost more and have a two-year waiting period for natural causes. Each company sets its own age cutoffs, so another company may still accept you after one says no.',
   },
-  '/burial-insurance/burial-insurance-medicaid/': {
-    section: 'burialInsurance',
-    quickAnswer:
-      'Yes, but how the policy is set up matters more than owning one. Medicaid doesn’t look at the death benefit; depending on your state and limits, it may count the cash value you could take out today as an asset. If you own the policy and its cash value pushes you over the asset limit, you may have to cash it out. A policy owned by a family member or placed in an irrevocable funeral trust can be exempt. Changing ownership during the five-year look-back period can delay or deny your benefits.',
-  },
   '/final-expense-life-insurance-medicaid/': {
     section: 'burialInsurance',
+    // Quick Answer re-derived October 2026 after the Medicaid corrections (eCFR SSI and Medicaid rules).
     quickAnswer:
-      'It can, depending on how the policy is set up. If you own a whole life policy that builds cash value, Medicaid counts that cash surrender value, not the death benefit, toward your asset limit. Having a family member own the policy, or placing it in an irrevocable funeral trust, can keep it from counting. Transferring ownership during Medicaid’s five-year look-back period can trigger penalties or delays, so set it up early.',
+      'A final expense policy doesn’t automatically disqualify you from Medicaid. Whether a policy counts depends on your state and Medicaid program, who owns it, its face value and its cash surrender value. Don’t change who owns a policy just to protect your eligibility without checking your state’s rules first, because changing ownership can count as a transfer of assets.',
   },
   '/medicaid-spend-down-rules-on-life-insurance/': { section: 'burialInsurance' },
 

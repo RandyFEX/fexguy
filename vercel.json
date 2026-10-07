@@ -826,6 +826,11 @@
       "statusCode": 301
     },
     {
+      "source": "/burial-insurance/burial-insurance-medicaid/",
+      "destination": "/final-expense-life-insurance-medicaid/",
+      "statusCode": 301
+    },
+    {
       "source": "/how-much-does-a-funeral-cost-in-2022/",
       "destination": "/how-much-does-a-funeral-cost/",
       "statusCode": 301
