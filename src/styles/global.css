@@ -173,10 +173,23 @@ a:hover {
 
 .prose :where(h2) {
   margin-top: var(--space-8);
+  font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.625rem);
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .prose :where(h3) {
   margin-top: var(--space-6);
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* Migrated headings often wrap their text in <strong>/<b>, which would push
+   the heading to weight 900 (heavier than the H1). A heading keeps its own
+   weight. */
+.prose :is(h2, h3, h4) :is(strong, b) {
+  font-weight: inherit;
 }
 
 /* Heading-level fixes (WCAG 1.3.1): where a migrated heading's level was
@@ -188,12 +201,14 @@ a:hover {
   margin: 0 0 var(--space-4);
 }
 .as-h3 {
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.35;
   margin: var(--space-6) 0 var(--space-4);
 }
 .as-h4 {
   font-size: 1em;
+  font-weight: 700;
   line-height: 1.2;
   margin: 0 0 var(--space-4);
 }
