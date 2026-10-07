@@ -3,7 +3,8 @@
 // /reviews/ page, preserved word for word in data/customer-reviews.json (see
 // its "source" and "notes"; data/customer-reviews.csv is the same archive as a
 // spreadsheet). Wording, numbers and attributions are shown exactly as
-// published. The source had no star ratings or dates and no third-party
+// published, except that the attribution's separator is a plain hyphen
+// ("Name - City, ST"; see src/lib/reviews.ts). The source had no star ratings or dates and no third-party
 // platform, so none are shown, and there is no review/rating schema.
 //
 // Every review is in the HTML (works without JavaScript); with JavaScript the
@@ -12,6 +13,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { pageTitle } from '@/lib/seo/meta';
 import data from '../../data/customer-reviews.json';
+import { displayAttribution } from '@/lib/reviews';
 
 const reviews = data.reviews;
 const count = reviews.length;
@@ -42,7 +44,7 @@ const STEP = 25;
                   <p>{p}</p>
                 ))}
               </blockquote>
-              <figcaption class="review__by">{r.attribution}</figcaption>
+              <figcaption class="review__by">{displayAttribution(r.attribution)}</figcaption>
             </figure>
           </li>
         ))

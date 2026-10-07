@@ -35,7 +35,7 @@ sidebar: true
 <li><strong>Adjustable Coverage:</strong> As your needs change, so can your coverage. Flexibility is built in.</li>
 <li><strong>Plans for All Incomes: </strong>We tailor plans to fit any budget, ensuring everyone is covered.</li>
 <li><strong>Instant Approval: </strong>Get approved on the spot and secure your family’s future.</li>
-<li><strong>No Sales Pitch:</strong> We focus on approval—no pressure, just protection.</li>
+<li><strong>No Sales Pitch:</strong> We focus on approval: no pressure, just protection.</li>
 </ul>
 
 <p><br><strong>HOW TO GET APPROVED FOR 1ST-DAY COVERAGE?</strong></p>
@@ -65,7 +65,7 @@ sidebar: true
 
 <p>If you’re just window shopping, go ahead and give me a ring at (888) 862-9456. No pressure, no sales pitch – just a friendly chat about your options that only takes a few minutes to see if you qualify.</p>
 
-<p>If you decide you’re not interested, just let me know—I promise I won’t take it personally!</p>
+<p>If you decide you’re not interested, just let me know. I promise I won’t take it personally!</p>
 
 <p><strong>TEXTING?</strong> Some folks want to handle this all by text, but texting doesn’t work for this. Choosing a policy that will last your whole life deserves more than just emojis and thumbs-ups.</p>
 

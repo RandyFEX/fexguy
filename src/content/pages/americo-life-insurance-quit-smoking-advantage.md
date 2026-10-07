@@ -74,7 +74,7 @@ sidebar: true
 <tr>
 <td>Who Truly Benefits</td>
 <td>The customer</td>
-<td>Americo — not the policyholder</td>
+<td>Americo, not the policyholder</td>
 </tr>
 </table>
 
@@ -183,7 +183,7 @@ sidebar: true
 <tr>
 <td>End Result</td>
 <td>“Quit Smoking Advantage” saves money</td>
-<td>Benefit shrinks or premium increases — a lose-lose setup</td>
+<td>Benefit shrinks or premium increases: a lose-lose setup</td>
 </tr>
 </table>
 

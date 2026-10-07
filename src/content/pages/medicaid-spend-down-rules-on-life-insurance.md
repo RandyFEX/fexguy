@@ -94,7 +94,7 @@ sidebar: true
 
 <p>Understanding the different life insurance policies is critical to determine if your parent’s life insurance policies are within Medicaid limits.</p>
 
-<p><br><strong>Term Life Insurance</strong>&#160;– a temporary plan that only pays a death benefit if the insured dies during the policy’s timeframe. You can choose coverage terms, but the typical periods are multiples of 5—five, 10, 15 to 30 years.</p>
+<p><br><strong>Term Life Insurance</strong>&#160;– a temporary plan that only pays a death benefit if the insured dies during the policy’s timeframe. You can choose coverage terms, but the typical periods are multiples of 5: five, 10, 15 to 30 years.</p>
 
 <p>If the insured outlives this period, the beneficiaries will not receive a death benefit because it will expire (if it’s not renewed or converted into a permanent policy). </p>
 

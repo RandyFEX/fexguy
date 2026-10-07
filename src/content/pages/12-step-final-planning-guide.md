@@ -524,11 +524,11 @@ search: true
 
 <p><strong>Deuteronomy 31:8 </strong>– It is the Lord who goes before you. He will be with you; he will not fail you or forsake you. Do not fear or be dismayed.</p>
 
-<p><strong>Exodus 15:2</strong> – The Lord is my strength and my song; he has given me victory. This is my God, and I will praise him— my Father’s God, and I will exalt him!</p>
+<p><strong>Exodus 15:2</strong> – The Lord is my strength and my song; he has given me victory. This is my God, and I will praise him, my Father’s God, and I will exalt him!</p>
 
 <p><strong>Exodus 33:14</strong> – My presence will go with you, and I will give you rest.</p>
 
-<p><strong>Isaiah 26: 3-4</strong> – Those of steadfast mind you keep in peace—because they trust in you. Trust in the Lord forever, for, in the Lord God, you have an everlasting rock.</p>
+<p><strong>Isaiah 26: 3-4</strong> – Those of steadfast mind you keep in peace, because they trust in you. Trust in the Lord forever, for, in the Lord God, you have an everlasting rock.</p>
 
 <p><strong>Isaiah 41:10</strong> – So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.</p>
 

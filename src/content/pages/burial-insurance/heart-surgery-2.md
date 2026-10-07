@@ -97,7 +97,7 @@ sidebar: true
 
 <p>Nope, no medical exam needed! Even if you’ve had heart surgery, you can still qualify for burial insurance without all the hassle.</p>
 
-<p>All you’ve gotta do is answer a few basic health questions—no digging up medical records or dealing with blood and urine samples. </p>
+<p>All you’ve gotta do is answer a few basic health questions, no digging up medical records or dealing with blood and urine samples. </p>
 
 <p>The application process is a breeze, and you’ll often get official approval from the insurance company within minutes!</p>
 

@@ -67,7 +67,7 @@ source: "live"
 <ul>
 <li>Many seniors feel frustrated because agents <strong>aren’t upfront</strong> or are limited in what they can offer.</li>
 <li>Captive agents and call centers often push <strong>high-commission, overpriced policies.</strong></li>
-<li>Watch out for misleading phrases like “Guaranteed Acceptance,” “$9.95 per unit,” or “No Medical Exam” — they usually mean <strong>2-year waiting periods and overpriced plans.</strong></li>
+<li>Watch out for misleading phrases like “Guaranteed Acceptance,” “$9.95 per unit,” or “No Medical Exam”: they usually mean <strong>2-year waiting periods and overpriced plans.</strong></li>
 <li>Claims like “Pays in 24 hours,” “State Regulated,” or “Enrollment Ends Soon” are <strong>false or deceptive.</strong></li>
 <li>Giving your info to these ads can lead to <strong>endless robocalls</strong> and unwanted pressure.</li>
 <li>Work with a trusted, independent expert like Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to avoid the “bait &amp; switch”.</li>
@@ -100,7 +100,7 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>The #1 rule: <strong>Get the right policy the first time</strong> — final expense insurance should always be <strong>whole life.</strong></li>
+<li>The #1 rule: <strong>Get the right policy the first time</strong>: final expense insurance should always be <strong>whole life.</strong></li>
 <li>Burial insurance is a <strong>whole-life policy</strong> designed to cover funeral, burial, or cremation costs.</li>
 <li>Avoid <strong>term life</strong> plans – they get more expensive every 5 years and <strong>cancel automatically by age 80.</strong></li>
 <li>If you outlive term life, your family gets <strong>nothing</strong>, no matter how long you’ve paid.</li>
@@ -193,8 +193,8 @@ source: "live"
 <ul>
 <li>Colonial Penn’s “$9.95 per unit” plan is one of the <strong>worst deals</strong> in final expense insurance.</li>
 <li>Coverage per unit is <strong>extremely low</strong>, and most people need to buy 10–15 units for meaningful protection.</li>
-<li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage — more than <strong>double</strong> what The Final Expense Guy can offer.</li>
-<li>“$1 a day” ads use <strong>teaser rates</strong> that apply only to younger, healthy individuals — real costs are much higher for everyone else.</li>
+<li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage, more than <strong>double</strong> what The Final Expense Guy can offer.</li>
+<li>“$1 a day” ads use <strong>teaser rates</strong> that apply only to younger, healthy individuals; real costs are much higher for everyone else.</li>
 <li>These ads are designed to collect your info and lead to <strong>aggressive sales calls</strong>, not to give you the best coverage.</li>
 <li>Don’t overpay – call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
 </ul>
@@ -286,7 +286,7 @@ source: "live"
 
 <p>Most of these term life policies are referred to as “<strong>5-year renewable term</strong>” plans. That means the initial rate only lasts for five years. After that, the price goes up FAST!</p>
 
-<p>Let’s say you get a policy at age 60. You might start paying $40 a month. But by 65, it jumps to $65. By 70? Maybe $100. By the time you’re 75 or 80, you could be paying over $200/month for the same small amount of coverage — if you can afford it at all.</p>
+<p>Let’s say you get a policy at age 60. You might start paying $40 a month. But by 65, it jumps to $65. By 70? Maybe $100. By the time you’re 75 or 80, you could be paying over $200/month for the same small amount of coverage, if you can afford it at all.</p>
 
 <p>And if you stop paying, even after years of making payments faithfully, your policy will end without warning. <strong>You don’t get a refund. You don’t get a reduced benefit. You get nothing.</strong></p>
 
@@ -501,7 +501,7 @@ source: "live"
 <li>If no one knows where your policy is or who it’s with, your benefit could go <strong>unclaimed for years.</strong></li>
 <li>To file a claim, your family will need the death certificate, policy copy, claim form, and ID.</li>
 <li>Claims during the first 2 years may be <strong>investigated</strong>, which can cause delays.</li>
-<li>Payouts typically arrive within <strong>7-30 days</strong> — longer if paperwork is missing or incomplete.</li>
+<li>Payouts typically arrive within <strong>7-30 days</strong>, longer if paperwork is missing or incomplete.</li>
 <li>Keep your policy in a <strong>safe place</strong>, share details with your family, and list your agent’s contact info.</li>
 <li>For help planning ahead, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
@@ -675,7 +675,7 @@ source: "live"
 
 <p>The right plan <em>is</em> out there – and you now know how to find it. Call me for guidance and your lowest possible pricing from each insurance carrier at <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong>.</p>
 
-<p>If this book helped you avoid a scam or make a more informed decision, please share it with a friend, a parent, or a neighbor. Because too many people are being buried in lies — and they deserve the truth.</p>
+<p>If this book helped you avoid a scam or make a more informed decision, please share it with a friend, a parent, or a neighbor. Because too many people are being buried in lies, and they deserve the truth.</p>
 
 <p>Call me today for a free quote!</p>
 
@@ -685,7 +685,7 @@ source: "live"
 
 <figure><img decoding="async" loading="lazy" width="667" height="1024" src="/wp-content/uploads/2025/05/FEXGUY.COM-BOOK-LAST-PAGE-667x1024.png" alt=""></figure>
 
-<p id="h-2025-final-expense-guy-all-rights-reserved-no-part-of-this-publication-may-be-copied-reproduced-stored-in-a-retrieval-system-or-transmitted-in-any-form-or-by-any-means-electronic-mechanical-photocopying-recording-or-otherwise-without-the-prior-written-permission-of-the-author-except-in-the-case-of-brief-quotations-used-for-the-purposes-of-review-or-commentary" class="as-h6">© 2025 Final Expense Guy. All rights reserved.<br>No part of this publication may be copied, reproduced, stored in a retrieval system, or transmitted in any form or by any means — electronic, mechanical, photocopying, recording, or otherwise — without the prior written permission of the author, except in the case of brief quotations used for the purposes of review or commentary.</p>
+<p id="h-2025-final-expense-guy-all-rights-reserved-no-part-of-this-publication-may-be-copied-reproduced-stored-in-a-retrieval-system-or-transmitted-in-any-form-or-by-any-means-electronic-mechanical-photocopying-recording-or-otherwise-without-the-prior-written-permission-of-the-author-except-in-the-case-of-brief-quotations-used-for-the-purposes-of-review-or-commentary" class="as-h6">© 2025 Final Expense Guy. All rights reserved.<br>No part of this publication may be copied, reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations used for the purposes of review or commentary.</p>
 
 <p id="h-this-book-is-intended-for-informational-and-educational-purposes-only-it-does-not-constitute-legal-financial-tax-or-insurance-advice-while-efforts-have-been-made-to-ensure-the-accuracy-of-the-content-at-the-time-of-publication-laws-products-and-regulations-may-change-and-the-author-assumes-no-responsibility-for-any-errors-omissions-or-outcomes-related-to-the-use-of-this-information" class="as-h6">This book is intended for informational and educational purposes only. It does not constitute legal, financial, tax, or insurance advice. While efforts have been made to ensure the accuracy of the content at the time of publication, laws, products, and regulations may change, and the author assumes no responsibility for any errors, omissions, or outcomes related to the use of this information.</p>
 

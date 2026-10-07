@@ -87,7 +87,7 @@ sidebar: true
 
 <p><strong>First-Day Coverage – </strong>This one’s a breeze. No medical exam is needed – just a few health questions. With first-day coverage, you’re in the game right away with no waiting period to worry about.</p>
 
-<p><strong>No medical exam, no health questions—Th</strong>is is your go-to if you have serious health issues that might keep you from qualifying for traditional life insurance. Guaranteed issue life insurance is here to cover you, no matter what.</p>
+<p><strong>No medical exam, no health questions. Th</strong>is is your go-to if you have serious health issues that might keep you from qualifying for traditional life insurance. Guaranteed issue life insurance is here to cover you, no matter what.</p>
 
 <p>Just a heads-up: Guaranteed issue whole life policies do come with a mandatory two-year waiting period. If you pass away during that time, the policy won’t pay out the full death benefit. Instead, it’ll cover what you’ve paid in premiums plus a little interest (7-10%, depending on the company).</p>
 

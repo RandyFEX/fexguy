@@ -405,7 +405,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Call by phone first and give information about your pre-existing health conditions and prescription medication. Follow the instructions of your doctor and monitor your symptoms regularly.</p>
 
-<p>Call your healthcare provider immediately if you have severe symptoms such as trouble breathing, persistent pain, pressure in the chest, confusion, bluish lips, or face. Be prepared to go to the hospital as soon as possible—call 911 for a medical emergency.</p>
+<p>Call your healthcare provider immediately if you have severe symptoms such as trouble breathing, persistent pain, pressure in the chest, confusion, bluish lips, or face. Be prepared to go to the hospital as soon as possible; call 911 for a medical emergency.</p>
 
 <p>We should be careful about coronavirus and the elderly. If you live with others, isolate yourself as soon as you feel the symptoms. If you suspect an infection, use your room to isolate yourself.</p>
 

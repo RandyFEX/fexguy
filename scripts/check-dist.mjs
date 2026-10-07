@@ -18,6 +18,9 @@
 // social links, no FEXGuy email address, no "licensed in all 50 states",
 // no published office hours or old PO Box address, no old consent wording;
 // the GA4 and Meta Pixel IDs must still be present.
+// Em dashes: none anywhere a visitor could see one - in the built site (pages,
+// metadata, JSON-LD, sitemap, llms.txt, scripts) and in the content sources
+// (src/content, data), including &mdash; / &#8212; / &#x2014; / \u2014.
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -203,9 +206,32 @@ for (const p of MUST_404) {
   if (isPage(p)) (guardHits['retired page is built (must be a real 404)'] ??= []).push(p);
   if (redirects.has(p)) (guardHits['retired page is redirected (must be a real 404)'] ??= []).push(p);
 }
+// ---- Em dashes -----------------------------------------------------------------
+// FEXGUY.com style rule (CLAUDE.md): no em dash (U+2014) in visitor-facing
+// content, in any form. Code comments are not visitor-facing and are not
+// scanned (the built output covers everything that reaches a visitor).
+const EM_DASH = /\u2014|&mdash;|&#0*8212;|&#x0*2014;|\\u2014/gi;
+const EM_DASH_MESSAGE =
+  'Em dashes are not allowed on FEXGUY.com. Use a regular hyphen or rewrite the punctuation.';
+const emDashHits = [];
+const emSnippet = (text, i) => text.slice(Math.max(0, i - 40), i + 40).replace(/\s+/g, ' ');
+const scanEmDashes = (text, where) => {
+  for (const m of text.matchAll(EM_DASH)) {
+    const line = text.slice(0, m.index).split('\n').length;
+    emDashHits.push(`${where}:${line}  "${emSnippet(text, m.index)}"`);
+  }
+};
+for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt|json|webmanifest)$/.test(f) && !f.includes('/pagefind/')))
+  scanEmDashes(readFileSync(file, 'utf8'), 'dist/' + file.slice(DIST.length));
+const ROOT = new URL('../', import.meta.url).pathname;
+for (const dir of ['src/content', 'data'])
+  for (const file of walk(join(ROOT, dir)).filter((f) => /\.(md|mdx|json|csv|ya?ml|txt)$/.test(f)))
+    scanEmDashes(readFileSync(file, 'utf8'), file.slice(ROOT.length));
+
 const guardProblems = Object.entries(guardHits).map(([label, files]) => `${label}: ${files.slice(0, 5).join(' ')}${files.length > 5 ? ` (+${files.length - 5} more)` : ''}`);
 if (!ga4Found) guardProblems.push('GA4 measurement ID G-JMYZE458HQ not found in the build');
 if (!metaFound) guardProblems.push('Meta Pixel ID 2351342698972751 not found in the build');
+if (emDashHits.length) guardProblems.push(`em dash (${emDashHits.length}): ${EM_DASH_MESSAGE}`);
 // Not a failure before launch: the legal pages' effective dates are set to the
 // actual publication date at launch (CLAUDE.md "Prelaunch checklist").
 const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
@@ -256,6 +282,10 @@ console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
+console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
+for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);
+if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 25} more`);
+if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
 if (effectiveDatePending.length)
   console.log(`  [prelaunch] effective date still "To be set at launch" on: ${effectiveDatePending.map((p) => `/${p}/`).join(' ')}`);
 

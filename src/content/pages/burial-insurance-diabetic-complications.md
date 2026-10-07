@@ -287,7 +287,7 @@ sidebar: true
 
 <p><strong><br>PRESCRIPTION MEDICATIONS:</strong></p>
 
-<p>Insurance companies are like detectives—they’ll snoop through your prescription history to get the low-down on your medical background.</p>
+<p>Insurance companies are like detectives: they’ll snoop through your prescription history to get the low-down on your medical background.</p>
 
 <p><strong>Here are some common diabetic medications:</strong></p>
 
@@ -364,7 +364,7 @@ sidebar: true
 
 <p><strong>Does Type 2 diabetes affect life insurance?</strong></p>
 
-<p>Not really—it doesn’t have to be a deal-breaker. You can still score coverage even if you’ve got type 2 diabetes without any complications.</p>
+<p>Not really. It doesn’t have to be a deal-breaker. You can still score coverage even if you’ve got type 2 diabetes without any complications.</p>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
 

@@ -317,7 +317,7 @@ sidebar: true
 
 <p>A funeral costs a tremendous amount of money and could cause great stress to the loved one left behind. Without burial insurance, tribal families will have difficulty finding funeral funds quickly. Burial insurance can save your family from withdrawing their savings or selling assets to come up with the needed funds to bury a loved one.</p>
 
-<p>Native Americans need to understand the importance of burial insurance so that family members and their tribe will have peace of mind knowing they will not suffer financially when a loved one passes away—burial insurance guards against financial hardship by providing cash to cover the funeral and burial costs.</p>
+<p>Native Americans need to understand the importance of burial insurance so that family members and their tribe will have peace of mind knowing they will not suffer financially when a loved one passes away. Burial insurance guards against financial hardship by providing cash to cover the funeral and burial costs.</p>
 
 <p>Burial insurance for Indians and Native Americans is critical today since more and more elders are entering their elderly years with insufficient funds. Burial insurance for Native Americans is the solution so that the surviving family and the tribe don’t have to worry about the financial aspect of the funeral.</p>
 

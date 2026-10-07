@@ -113,7 +113,7 @@ questions policies</strong></p>
 
 <p>It is designed to cover your final expenses. </p>
 
-<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement — the difference between the two lies in your purpose of buying.</p>
+<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement. The difference between the two lies in your purpose of buying.</p>
 
 <p>The death benefit payout from burial insurance can be used for other expenses depending on the beneficiary. However, payouts are designed to cover final expenses primarily. </p>
 

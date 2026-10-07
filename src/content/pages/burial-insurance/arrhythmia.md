@@ -74,9 +74,9 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>What Are The Types Of Burial Insurance Available To People Who Have Arrhythmia?</strong></h2>
 
-<p><strong>FIRST-DAY COVERAGE—</strong>This burial insurance has no waiting period. Your beneficiaries will receive a 100% death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance.&#160;</p>
+<p><strong>FIRST-DAY COVERAGE:</strong> This burial insurance has no waiting period. Your beneficiaries will receive a 100% death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance.&#160;</p>
 
-<p><strong>GUARANTEED ISSUE LIFE INSURANCE—</strong>This policy does not require a medical exam or health questions. You will be approved regardless of any medical condition you have. The downside is the mandatory two-year waiting period. If you pass away during the first two years, the insurance provider will only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
+<p><strong>GUARANTEED ISSUE LIFE INSURANCE:</strong> This policy does not require a medical exam or health questions. You will be approved regardless of any medical condition you have. The downside is the mandatory two-year waiting period. If you pass away during the first two years, the insurance provider will only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
 <h2 id="best-option-for-people-with-arrhythmia"><strong>What Is My Best Insurance Option If I Have Arrhythmia?</strong></h2>
 

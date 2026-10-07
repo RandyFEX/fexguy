@@ -378,7 +378,7 @@ sidebar: true
 
 <p>That’s the kind of flexibility most people don’t expect from a company best known for burial insurance. It demonstrates the versatility of Trinity Life.</p>
 
-<p><strong>Remember: </strong>As the Final Expense Guy, I don’t just stop at burial insurance—I’ll show you when Trinity’s term life is the smarter move for your family.</p>
+<p><strong>Remember: </strong>As the Final Expense Guy, I don’t just stop at burial insurance. I’ll show you when Trinity’s term life is the smarter move for your family.</p>
 
 <hr>
 

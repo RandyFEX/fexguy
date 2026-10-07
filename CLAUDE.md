@@ -10,6 +10,12 @@ is in place; see src/content/README.md for how pages were migrated.
   rates, licensing/state info, statistics, testimonials, reviews, awards,
   addresses, phone numbers, or page copy. Use only content Randy provides.
   If something is missing, leave the field empty and ask.
+- **No em dashes:** Never use em dashes (—) in FEXGUY website content. Em
+  dashes are prohibited site-wide. Use a regular hyphen (-), comma, colon,
+  semicolon, or period as appropriate. `npm run verify -- --strict` fails on
+  any em dash (also &mdash;, &#8212;, \u2014) in the build or in
+  src/content / data. Review attributions show as "Name - City, ST"
+  (src/lib/reviews.ts; the archive in data/ keeps its original en dash).
 - **Never guess WordPress URLs or redirects.** Only use URLs from the
   migration data Randy provides.
 - Don't connect domains, change DNS, or set `PUBLIC_ALLOW_INDEXING=true`

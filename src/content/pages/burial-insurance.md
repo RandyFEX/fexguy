@@ -356,7 +356,7 @@ sidebar: true
 
 <h3 class="as-h4"><strong>Review Your Designations Regularly</strong></h3>
 
-<p>Life changes such as marriages, divorces, or new births can make an old beneficiary list outdated. Since insurance companies pay according to the names on the contract—regardless of what your Will says—regular updates are the only way to ensure your wishes are carried out.</p>
+<p>Life changes such as marriages, divorces, or new births can make an old beneficiary list outdated. Since insurance companies pay according to the names on the contract, regardless of what your Will says, regular updates are the only way to ensure your wishes are carried out.</p>
 
 <hr>
 

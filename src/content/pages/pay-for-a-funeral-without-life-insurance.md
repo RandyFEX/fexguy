@@ -19,7 +19,7 @@ sidebar: true
 
 <p>Complete my quote request form on this page to get fast coverage and avoid costly mistakes.</p>
 
-<p><strong>We Sell With Final Expense Life Insurance!</strong><br>—<strong><br>We DO NOT Give Away Money For Funerals</strong>!</p>
+<p><strong>We Sell With Final Expense Life Insurance!</strong><br>-<strong><br>We DO NOT Give Away Money For Funerals</strong>!</p>
 
 <hr>
 
