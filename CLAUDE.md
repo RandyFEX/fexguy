@@ -446,11 +446,24 @@ is in place; see src/content/README.md for how pages were migrated.
   retired and 301s to /12-step-final-planning-guide/ (approved); the
   Resources menu item is "FUNERAL PLANNING GUIDE" linking straight to
   /12-step-final-planning-guide/. /buyers-guide/ stays as the HTML article.
-  The two cover images (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg,
-  2025/01/FEX-BUYERS-GUIDE-IMAGE*.png) are kept only because they are still the
-  og:image/twitter:image and JSON-LD images of /12-step-final-planning-guide/
-  and /buyers-guide/; replacing those social/structured-data images needs
-  Randy's approval.
+  The planning-guide cover image (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg)
+  is kept only because it is still the og:image/twitter:image and JSON-LD
+  image of /12-step-final-planning-guide/; replacing that social/structured-data
+  image needs Randy's approval.
+- **/buyers-guide/ updated and migrated** (Randy, October 2026): it uses the
+  standard shared ArticleLayout, section Burial Insurance (Home › Burial
+  Insurance › Buyers Guide). Before migration: the Funeral Funds-branded
+  buyers-guide cover (2025/01/FEX-BUYERS-GUIDE-IMAGE*.png) was removed as its
+  og:image/twitter:image and JSON-LD image and not replaced (the page has no
+  social image; the files stay in public/, unreferenced); the Funeral
+  Funds-branded 2019 inflation chart and its introducing sentence were
+  removed; the minimal current-business wording corrections were made (Randy,
+  not "our Advisors"/"our agents"; no 24-hour results promise); and the three
+  remaining body images got descriptive alt text. Its migrated dates
+  (2021-06-02, 2025-03-19) are kept. Broader cleanup (title, all-caps
+  headings, tone, carrier verdicts, old screenshots, the "quoting tool" and
+  "few minutes" lines, Adviser/Advisor labels) waits for the later content
+  audit.
 - **Funeral Funds branding** (Randy, October 2026): Final Expense Guy was
   previously Funeral Funds of America. Keep the intentional history (the author
   bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
@@ -460,8 +473,7 @@ is in place; see src/content/README.md for how pages were migrated.
   Funeral Funds social links were removed and the legal pages rewritten
   (October 2026; see "Business identity, legal pages and privacy"). Still
   pending separate decisions: the Funeral Funds-branded social
-  images of /buyers-guide/ and /12-step-final-planning-guide/; the inflation
-  chart on /buyers-guide/; the missing /senior-benefits/ brochure; unused
+  image of /12-step-final-planning-guide/; the missing /senior-benefits/ brochure; unused
   Funeral Funds files in public/; and the 67 missing image files.
 - **Missing images** (October 2026): WordPress lost 68 referenced image files
   (404 on the live site too; not in the media library). Batch 1 fixed the
