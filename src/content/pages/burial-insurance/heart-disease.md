@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-heart-disease"><strong>What Is Heart Disease?</strong></h2>
+<h2 id="what-is-heart-disease"><strong>What is heart disease?</strong></h2>
 
 <p>Heart disease isn’t just one thing; it’s a whole party of conditions crashing your heart. The star of the show? Coronary artery disease (CAD). It’s when your arteries get all gunked up with plaque – think fatty deposits clogging up the works. This narrows those arteries and slows down the blood flow to your heart.</p>
 
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>Heart disease isn’t just a big deal; it’s the leading cause of death for both men and women in the US. The good news? You can often dodge or manage it with some lifestyle tweaks – like eating right, breaking a sweat regularly, and keeping that waistline in check.</p>
 
-<h2 id="burial-insurance-availability"><strong>What Are The Types Of Burial Insurance Available To People With Heart Disease?</strong></h2>
+<h2 id="burial-insurance-availability"><strong>What are the types of burial insurance available to people with heart disease?</strong></h2>
 
 <p><strong>First-day Coverage Plan</strong> – This one’s the VIP treatment of life insurance policies. You get immediate coverage with no waiting period, and the best part? No medical exam required. Just answer a few health questions, and you’re good to go.</p>
 
@@ -76,11 +76,11 @@ sidebar: true
 
 <p>But here’s the catch with guaranteed issue whole life insurance: there’s a mandatory two-year waiting period. If you happen to kick the bucket during this time, the insurance company only pays back the premiums you’ve shelled out, plus 7-10% interest (depending on the company). So, it’s not all sunshine and rainbows, but it’s still a solid option!</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Heart Disease?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have heart disease?</strong></h2>
 
 <p>Got heart disease or even just a whisper of it from your doctor? Your best bet for burial insurance is a first-day coverage plan, hands down.</p>
 
-<h2 id="burial-insurance-cost"><strong>What Is The Price Of Burial Insurance If I Have Heart Disease?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>What is the price of burial insurance if I have heart disease?</strong></h2>
 
 <p><strong>The price of burial insurance if you have&#160;heart disease will depend on your:</strong></p>
 
@@ -160,7 +160,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="medical-exam-requirement"><strong>Do I Need A Medical Exam To Qualify for Heart Disease Burial Insurance?</strong></h2>
+<h2 id="medical-exam-requirement"><strong>Do I need a medical exam to qualify for heart disease burial insurance?</strong></h2>
 
 <p>Nope, no medical exams needed! Just answer a few basic health questions.</p>
 
@@ -168,7 +168,7 @@ sidebar: true
 
 <p>With first-day coverage, you’ll often get the green light from the insurance company in minutes!</p>
 
-<h2 id="underwriting-process"><strong>Burial Insurance Underwriting For Heart Disease Patients</strong></h2>
+<h2 id="underwriting-process"><strong>Burial insurance underwriting for heart disease patients</strong></h2>
 
 <p><strong>Insurance companies have two ways to find out about you about your health</strong>:</p>
 
@@ -201,13 +201,13 @@ sidebar: true
 
 <p>If these meds show up in your prescription history, the insurance company knows you’ve got a history of heart disease.</p>
 
-<h2 id="rejected-applications"><strong>What If My Application Was Rejected Because Of Heart Disease?</strong></h2>
+<h2 id="rejected-applications"><strong>What if my application was rejected because of heart disease?</strong></h2>
 
 <p>Did you get turned down before because of heart disease? No sweat. We’ll shop around with multiple life insurance companies that accept applicants with heart disease to get you that first-day coverage.</p>
 
 <p>While guaranteed acceptance life insurance isn’t our top pick, it’s there for you – no medical exam, no health questions, and you’re in, no matter your health.</p>
 
-<h2 id="required-information"><strong>Information We Need If You Have Heart Disease</strong></h2>
+<h2 id="required-information"><strong>Information we need if you have heart disease</strong></h2>
 
 <p><strong>We may ask you some of the following questions:&#160;</strong></p>
 
@@ -223,11 +223,11 @@ sidebar: true
 <li>Do you have any medical conditions aside from heart disease?</li>
 </ul>
 
-<h2 id="first-day-coverage"><strong>How To Get First-Day Coverage Insurance If You Have Heart Disease</strong></h2>
+<h2 id="first-day-coverage"><strong>How to get first-day coverage insurance if you have heart disease</strong></h2>
 
 <p>Got heart disease? Team up with an independent life insurance agency like Final Expense Guy to get first-day coverage insurance. We’ll help you hunt down burial insurance from companies that play nice with heart disease and compare rates to find you the best deal.</p>
 
-<h2 id="application-process"><strong>How To Apply For Burial Insurance With Heart Disease</strong></h2>
+<h2 id="application-process"><strong>How to apply for burial insurance with heart disease</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Get advice from an independent insurance agent fom Final Expense Guy who knows the ins and outs of underwriting for heart disease. They’ll help you explore your options, compare quotes, and pick the perfect burial insurance plan.</li>
@@ -235,7 +235,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Before you sign on the dotted line, make sure you’ve reviewed the policy terms and that the coverage fits your needs and budget perfectly.</li>
 </ol>
 
-<h2 id="how-we-can-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-we-can-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>At Final Expense Guy, we’re the heart specialists of life insurance. Yep, you heard right. We’re all about finding coverage for folks with heart disease.</p>
 
@@ -243,7 +243,7 @@ sidebar: true
 
 <p>Let us help you secure the coverage you deserve without breaking a sweat. Ready to give your heart a little peace of mind? Fill out our quote form or call us at (888) 862-9456 for a quote that’ll make your heart sing (or at least beat a little steadier).</p>
 
-<h2 id="faq">Frequently Asked Questions</h2>
+<h2 id="faq">Frequently asked questions</h2>
 
 <p><strong>Is AFIB considered heart disease for life insurance?</strong></p>
 

@@ -63,7 +63,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-burial-insurance"><br><strong>What Is Burial Insurance?</strong></h2>
+<h2 id="what-is-burial-insurance"><br><strong>What is burial insurance?</strong></h2>
 
 <p>Burial insurance is also called funeral, cremation, or final expense insurance.</p>
 
@@ -83,7 +83,7 @@ sidebar: true
 <li>Small face value options</li>
 </ul>
 
-<h2 id="who-can-apply-for-burial-insurance-policy"><br><strong>Who Can Apply For Burial Insurance Policy?</strong></h2>
+<h2 id="who-can-apply-for-burial-insurance-policy"><br><strong>Who can apply for burial insurance policy?</strong></h2>
 
 <p>Anyone who is 0-89 can apply for burial insurance. Few factors determine burial insurance eligibility, such as:</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <p>The most common age of availability is 50-85. Your general health, your state of residence, and if&#160; you are younger than 50 or older than 85 will determine your options </p>
 
-<h2 id="who-needs-burial-insurance"><br><strong>Who Needs Burial Insurance?</strong></h2>
+<h2 id="who-needs-burial-insurance"><br><strong>Who needs burial insurance?</strong></h2>
 
 <p><strong>People in these situations need <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">burial insurance</a>:</strong></p>
 
@@ -111,9 +111,9 @@ sidebar: true
 <li>Those who want to leave a charitable donation to an organization or person important to them.</li>
 </ol>
 
-<h2 id="burial-insurance-is-unique-in-three-different-ways"><br><strong>Burial Insurance Is Unique In Three Different Ways:</strong></h2>
+<h2 id="burial-insurance-is-unique-in-three-different-ways"><br><strong>Burial insurance is unique in three different ways:</strong></h2>
 
-<h3><strong>#1 – Relaxed underwriting</strong></h3>
+<h3><strong>#1 – relaxed underwriting</strong></h3>
 
 <p>One of the unique characteristics of burial insurance is relaxed underwriting. Most of the health conditions accepted by burial insurance would get auto declined for any traditional life insurance policies.</p>
 
@@ -131,7 +131,7 @@ sidebar: true
 
 <p>Most companies offer face value options from $2,000-$25,000. Some carriers go lower, and some go higher, but you have the freedom to buy what you need.</p>
 
-<h2 id="different-types-of-burial-insurance"><br><strong>Different Types Of Burial Insurance</strong></h2>
+<h2 id="different-types-of-burial-insurance"><br><strong>Different types of burial insurance</strong></h2>
 
 <p>You can either apply for a non-medical burial insurance plan that has a brief medical and prescription records check, or you can apply for a burial insurance plan that asks no health questions.</p>
 
@@ -183,7 +183,7 @@ sidebar: true
 <li>Recommended to have an organ transplant</li>
 </ul>
 
-<h2 id="common-burial-insurance-underwriting-questions"><br><strong>What Are The Common Burial Insurance Underwriting Questions?</strong></h2>
+<h2 id="common-burial-insurance-underwriting-questions"><br><strong>What are the common burial insurance underwriting questions?</strong></h2>
 
 <p><strong>These are the most common questions asked when applying for burial insurance:</strong></p>
 
@@ -205,7 +205,7 @@ sidebar: true
 <li>Have you been convicted of a felony?</li>
 </ol>
 
-<h2 id="what-is-the-cost-of-burial-insurance"><br><strong>What Is The Cost Of Burial Insurance?</strong></h2>
+<h2 id="what-is-the-cost-of-burial-insurance"><br><strong>What is the cost of burial insurance?</strong></h2>
 
 <p>Generally, the younger you are, the less burial insurance will cost. Different factors such as determine the cost of burial insurance</p>
 
@@ -222,7 +222,7 @@ sidebar: true
 
 <p>Fill out our instant <a rel="noreferrer noopener" href="/free-quote/" target="_blank">BURIAL INSURANCE QUOTE</a>&#160;form on this page to get a custom quote.</p>
 
-<h2 id="why-is-burial-insurance-important"><br><strong>Why Is Burial Insurance Important?</strong></h2>
+<h2 id="why-is-burial-insurance-important"><br><strong>Why is burial insurance important?</strong></h2>
 
 <ol>
 <li>Burial insurance is more affordable compared with pre-paid burial plans. You will only need to make a low monthly payment for life insurance coverage.</li>
@@ -237,7 +237,7 @@ sidebar: true
 <li>Burial insurance is flexible. Its flexibility extends to your choice of funeral service providers. You can allocate funds without being tied to a particular funeral home. Burial insurance leaves your options open, which is a great benefit given the time that will pass between choosing a provider and using the policy.</li>
 </ol>
 
-<h2 id="intangible-benefits-of-burial-insurance"><br><strong>Intangible Benefits Of Burial Insurance</strong></h2>
+<h2 id="intangible-benefits-of-burial-insurance"><br><strong>Intangible benefits of burial insurance</strong></h2>
 
 <p>The reasons for choosing burial insurance are not only financial. Other things like time and peace of mind play a big role in saying that the plan is right for you.</p>
 
@@ -249,7 +249,7 @@ sidebar: true
 
 <p><strong>Your family will have instant funds to use for your final expenses. </strong>Burial insurance doesn’t go to probate, and your family will have the funds to pay for your funeral. Burial insurance makes money immediately available, so your loved ones need not pay your final expenses out of their pockets.</p>
 
-<h2 id="prepaid-funeral-plans-offered-by-funeral-homes"><br><strong>What You Should Know About Prepaid Funeral Plans Offered By Funeral Homes</strong></h2>
+<h2 id="prepaid-funeral-plans-offered-by-funeral-homes"><br><strong>What you should know about prepaid funeral plans offered by funeral homes</strong></h2>
 
 <ul>
 <li>Your funeral service can be planned, letting your family know what you want.</li>
@@ -266,7 +266,7 @@ sidebar: true
 <li>The <a href="https://www.ftc.gov/" target="_blank" rel="noreferrer noopener">Federal Trade Commission</a> recommends that you shop and compare prices from at least two funeral homes before buying a prepaid funeral plan.</li>
 </ul>
 
-<h2 id="how-to-apply-for-burial-insurance"><br><strong>How To Apply For Burial Insurance?</strong></h2>
+<h2 id="how-to-apply-for-burial-insurance"><br><strong>How to apply for burial insurance?</strong></h2>
 
 <p><strong>Step 1: Look for an Independent Life Insurance Agency</strong></p>
 
@@ -307,7 +307,7 @@ sidebar: true
 
 <p>Communicating your plans to your beneficiary is essential. Let your family know about your life insurance and where it is located. Most burial insurance providers&#160;offer free planning guides and request booklets that allow you to record the details of your end-of-life plan.</p>
 
-<h2 id="burial-insurance-application"><br><strong>Different Ways To Complete And Submit Your Burial Insurance Application</strong></h2>
+<h2 id="burial-insurance-application"><br><strong>Different ways to complete and submit your burial insurance application</strong></h2>
 
 <p><strong>The application process varies by company, but it can be completed in different ways:</strong></p>
 
@@ -321,7 +321,7 @@ sidebar: true
 
 <p><strong>Paper Application:</strong> Traditional paper application is also available.  You can supply your agent with all the information for him to fill out. Then he will send the application to your home to sign. Send the application to the company after signing the form. You will get the decision after 1-4 days.</p>
 
-<h2 id="how-to-find-the-best-burial-insurance-policy"><br><strong>How To Find The Best Burial Insurance Policy</strong></h2>
+<h2 id="how-to-find-the-best-burial-insurance-policy"><br><strong>How to find the best burial insurance policy</strong></h2>
 
 <p>The best burial insurance policy for you is the affordable one that protects you as soon as possible.</p>
 
@@ -343,7 +343,7 @@ sidebar: true
 
 <p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>What is burial insurance?</strong></p>
 
@@ -506,21 +506,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">4 Comments</h2>
+<h2 class="as-h5">4 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-4258">

@@ -23,7 +23,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COST COMPARISON – PAYING OUT OF POCKET VS. LIFE INSURANCE</strong></h2>
+<h2><strong>Cost comparison – paying out of pocket vs. life insurance</strong></h2>
 
 <p>Paying for a funeral after death costs far more over time than spreading the cost through a small life insurance policy.</p>
 
@@ -45,7 +45,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY LIFE INSURANCE IS STILL THE BEST LONG-TERM SOLUTION</strong></h2>
+<h2><strong>Why life insurance is still the best long-term solution</strong></h2>
 
 <p>A properly chosen final expense policy gives families fast cash and removes debt, delay, and financial panic.</p>
 
@@ -71,7 +71,7 @@ sidebar: true
 
 <h3>
 ⚠
-Coverage Starts Immediately Mailer
+Coverage starts immediately mailer
 </h3>
 
 <p>AARP-branded mailer stated coverage started immediately, which led Helen, 72, to enroll and believe the full benefit would pay from day 1.</p>
@@ -86,7 +86,7 @@ Coverage Starts Immediately Mailer
 
 <hr>
 
-<h2 id="paying-for-funeral-without-life-insurance"><strong>HOW TO PAY FOR A FUNERAL WITHOUT LIFE INSURANCE</strong></h2>
+<h2 id="paying-for-funeral-without-life-insurance"><strong>How to pay for a funeral without life insurance</strong></h2>
 
 <p>Without insurance, funeral costs fall directly on families who must pay thousands upfront with limited choices.</p>
 
@@ -123,7 +123,7 @@ Coverage Starts Immediately Mailer
 
 <hr>
 
-<h2><strong>THE PROBLEM WITH PAYING OUT OF POCKET</strong></h2>
+<h2><strong>The problem with paying out of pocket</strong></h2>
 
 <p>Upfront funeral payments force grieving families to drain savings or take on high-interest debt.</p>
 
@@ -145,7 +145,7 @@ Coverage Starts Immediately Mailer
 
 <hr>
 
-<h2><strong>COMMON WAYS PEOPLE TRY TO COVER FUNERAL COSTS</strong></h2>
+<h2><strong>Common ways people try to cover funeral costs</strong></h2>
 
 <p>Most families scramble by using savings, credit, retirement money, loans, or online fundraisers that rarely work well.</p>
 
@@ -183,7 +183,7 @@ Coverage Starts Immediately Mailer
 
 <h3>
 🔍
-Accidental Death Rider Confusion
+Accidental death rider confusion
 </h3>
 
 <p>Phone agent quoted an accidental death rider as full coverage, which caused Mark, 61, to believe the policy would pay for any death.</p>
@@ -198,7 +198,7 @@ Accidental Death Rider Confusion
 
 <hr>
 
-<h2><strong>WHY PREPAID FUNERAL PLANS ARE RISKY</strong></h2>
+<h2><strong>Why prepaid funeral plans are risky</strong></h2>
 
 <p>Prepaid funeral plans lock money to one provider and often fail to protect families from rising costs or changes.</p>
 
@@ -228,7 +228,7 @@ Accidental Death Rider Confusion
 
 <h3>
 💡
-State-Regulated Language Trap
+State-regulated language trap
 </h3>
 
 <p>Facebook ad used “state-regulated” wording, which led Rosa and Luis, both 68, to assume the plan was backed and flexible like insurance.</p>
@@ -243,7 +243,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>FUNERAL HOME PAYMENT PLANS: WHAT TO WATCH OUT FOR</strong></h2>
+<h2><strong>Funeral home payment plans: what to watch out for</strong></h2>
 
 <p>Funeral payment plans often hide expensive financing terms that turn grief into long-term debt.</p>
 
@@ -273,7 +273,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>WHAT TO DO IF YOU CAN’T QUALIFY FOR LIFE INSURANCE</strong></h2>
+<h2><strong>What to do if you can’t qualify for life insurance</strong></h2>
 
 <p>Even with health issues, limited alternatives can reduce the financial hit if action is taken early.</p>
 
@@ -288,7 +288,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>ALTERNATIVES TO TRADITIONAL FUNERALS</strong></h2>
+<h2><strong>Alternatives to traditional funerals</strong></h2>
 
 <p>Simpler funeral options can lower costs significantly without sacrificing respect or meaning.</p>
 
@@ -324,7 +324,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>GOVERNMENT AND COMMUNITY ASSISTANCE PROGRAMS</strong></h2>
+<h2><strong>Government and community assistance programs</strong></h2>
 
 <p>Public and charity programs offer limited help that rarely comes close to covering full funeral costs.</p>
 
@@ -340,7 +340,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>THE LEGAL SIDE: HOW FUNERAL PRICES ARE REGULATED</strong></h2>
+<h2><strong>The legal side: how funeral prices are regulated</strong></h2>
 
 <p>Funeral homes must disclose prices by law, but families still need to compare and question every charge.</p>
 
@@ -360,7 +360,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>THE CONSUMER PROTECTION CHECKLIST</strong></h2>
+<h2><strong>The consumer protection checklist</strong></h2>
 
 <p>Clear documentation, pricing transparency, and licensing checks protect families from costly mistakes.</p>
 
@@ -381,7 +381,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>HOW TO START PLANNING NOW</strong></h2>
+<h2><strong>How to start planning now</strong></h2>
 
 <p>Early planning and the right coverage remove urgency, confusion, and financial strain from funeral decisions.</p>
 
@@ -421,7 +421,7 @@ State-Regulated Language Trap
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS:</strong> <strong>HOW TO PAY FOR A FUNERAL WITHOUT LIFE INSURANCE</strong></h2>
+<h2><strong>Frequently asked questions:</strong> <strong>how to pay for a funeral without life insurance</strong></h2>
 
 <p><strong>What happens if someone dies and has no life insurance?</strong></p>
 

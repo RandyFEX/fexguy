@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-for-overweight-or-obese"><br><strong>What Is My Best Insurance Option If I’m Overweight Or Obese?</strong></h2>
+<h2 id="best-insurance-option-for-overweight-or-obese"><br><strong>What is my best insurance option if I’m overweight or obese?</strong></h2>
 
 <p>People who are overweight or obese can qualify for level death benefit coverage. Being overweight is often not a life-threatening situation. If you answer no to all the questions on the health questionnaire, most funeral insurance companies will approve your application regardless of your weight.</p>
 
@@ -102,7 +102,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="life-insurance-and-build-charts"><br><strong>Life Insurance And Build Charts</strong></h2>
+<h2 id="life-insurance-and-build-charts"><br><strong>Life insurance and build charts</strong></h2>
 
 <p>A build chart is a table that serves as a guideline in the minimum and maximum weight per height that insurance companies will accept. </p>
 
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Every insurance company has its own build chart requirements, so it’s important to work with an independent life insurance agency that knows which companies do not have a build chart and will offer you the lowest rate even if you are overweight or obese.</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -155,7 +155,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance-for-overweight-or-obese"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance-for-overweight-or-obese"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -204,7 +204,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-a-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-a-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for overweight or obese.</p>
 
@@ -212,7 +212,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-overweight-or-obese"><br><strong><strong>Burial Insurance Underwriting If You Are Overweight Or Obese</strong></strong></h2>
+<h2 id="insurance-underwriting-for-overweight-or-obese"><br><strong><strong>Burial insurance underwriting if you are overweight or obese</strong></strong></h2>
 
 <p>The purpose of underwriting in life insurance is to determine your level of risk. </p>
 
@@ -249,7 +249,7 @@ sidebar: true
 
 <p>If you have any past or current health problems due to obesity, the life insurance companies will want to know about it before approving your application.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I’m Overweight Or Obese?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I’m overweight or obese?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -309,11 +309,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="overweight-or-obese-burial-insurance-riders"><br><strong>Overweight Or Obese And Burial Insurance Riders</strong></h2>
+<h2 id="overweight-or-obese-burial-insurance-riders"><br><strong>Overweight or obese and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -338,7 +338,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="never-put-off-buying-burial-insurance"><br><strong>Never Put Off Buying Burial Insurance Until You Reach Your Ideal Weight </strong></h2>
+<h2 id="never-put-off-buying-burial-insurance"><br><strong>Never put off buying burial insurance until you reach your ideal weight </strong></h2>
 
 <p>Many people postpone buying life insurance because they plan on losing weight to get better rates. However, they haven’t lost weight after many weeks and months and remain uninsured.</p>
 
@@ -352,7 +352,7 @@ sidebar: true
 
 <p>Don’t take the risk of living without insurance because of your weight. We can help you qualify for first-day coverage with the best rates.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -367,7 +367,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Overweight Or Obese</strong></h2>
+<h2 id="uses-of-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance for overweight or obese</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -386,7 +386,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you are overweight or obese needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -396,7 +396,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for overweight funeral insurance, overweight burial insurance, or overweight life insurance, fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form to get an accurate quote. </p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can obese people get insurance?</strong></p>
 

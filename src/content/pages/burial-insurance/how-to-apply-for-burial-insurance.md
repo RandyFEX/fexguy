@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="step-1-determine-which-type-of-burial-insurance-you-need"><br><strong>STEP 1 – Determine Which Type Of Burial Insurance You Need</strong></h2>
+<h2 id="step-1-determine-which-type-of-burial-insurance-you-need"><br><strong>Step 1 – determine which type of burial insurance you need</strong></h2>
 
 <p>If you do not have available funds to cover your final expenses at the end of your life, then a burial insurance policy is all you need.</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>There is a two to four years waiting period before the death benefit becomes active. If you die before the waiting period, your beneficiary will not receive the full death benefit; instead, they will receive a return of premiums paid plus interest.</p>
 
-<h2 id="step-2-decide-how-much-burial-insurance-you-need"><br><strong>STEP 2 – Decide How Much Burial Insurance You Need</strong></h2>
+<h2 id="step-2-decide-how-much-burial-insurance-you-need"><br><strong>Step 2 – decide how much burial insurance you need</strong></h2>
 
 <p>How to apply for burial insurance? Step #2</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>You should add up all these costs to determine how much burial insurance you need.</p>
 
-<h2 id="step-3-get-a-free-quote-to-compare-rates-from-different-companies"><br><strong>STEP 3 – Get A Free Quote To Compare Rates From Different Companies</strong></h2>
+<h2 id="step-3-get-a-free-quote-to-compare-rates-from-different-companies"><br><strong>Step 3 – get a free quote to compare rates from different companies</strong></h2>
 
 <p>How to apply for burial insurance? Step #3</p>
 
@@ -150,7 +150,7 @@ sidebar: true
 
 <p><strong>We will find you the lowest rates with access to all the top-rated burial insurance companies.</strong></p>
 
-<h2 id="step-4-choose-which-policy-is-the-most-affordable-for-you"><br><strong>STEP 4 – Choose Which Policy Is The Most Affordable For You</strong></h2>
+<h2 id="step-4-choose-which-policy-is-the-most-affordable-for-you"><br><strong>Step 4 – choose which policy is the most affordable for you</strong></h2>
 
 <p>How to apply for burial insurance? Step #4</p>
 
@@ -170,7 +170,7 @@ sidebar: true
 
 <p>Some insurance carriers have a two-year waiting period, but some, like Mutual of Omaha burial insurance, have a 4 year waiting period for cancer. If you have special needs, consider increasing the scope of your coverage with policy riders.</p>
 
-<h2 id="step-5-submit-an-application"><br><strong>STEP 5 – Submit An Application</strong></h2>
+<h2 id="step-5-submit-an-application"><br><strong>Step 5 – submit an application</strong></h2>
 
 <p>How to apply for burial insurance? Step #5</p>
 
@@ -196,7 +196,7 @@ sidebar: true
 
 <p>Lying on your life insurance application is a fraud, and your policy will be nullified if the insurer finds out after your death.</p>
 
-<h2 id="step-6-phone-interview"><br><strong>STEP 6 – Phone Interview</strong></h2>
+<h2 id="step-6-phone-interview"><br><strong>Step 6 – phone interview</strong></h2>
 
 <p>How to apply for burial insurance? Step #6</p>
 
@@ -226,7 +226,7 @@ sidebar: true
 
 <p><strong>Simplified issue and guaranteed issue life insurance policies are often approved on the spot with a telephone interview.</strong></p>
 
-<h2 id="step-7-awaiting-underwriting-results"><br><strong>STEP 7 – Awaiting Underwriting Results</strong></h2>
+<h2 id="step-7-awaiting-underwriting-results"><br><strong>Step 7 – awaiting underwriting results</strong></h2>
 
 <p>How to apply for burial insurance? Step #7</p>
 
@@ -255,7 +255,7 @@ sidebar: true
 
 <p><strong>Simplified issue and guaranteed issue policies are often approved on the spot with a telephone interview.</strong></p>
 
-<h2 id="step-8-review-&-accept-policy"><br><strong>STEP 8 – Review &amp; Accept Policy</strong></h2>
+<h2 id="step-8-review-&-accept-policy"><br><strong>Step 8 – review &amp; accept policy</strong></h2>
 
 <p>How to apply for burial insurance? Step #8</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <p>Also, you will need to apply your signatures on any amendments to the policy. This might take a few minutes.</p>
 
-<h2 id="step-9-policy-issue"><br><strong>STEP 9 – Policy Issue</strong></h2>
+<h2 id="step-9-policy-issue"><br><strong>Step 9 – policy issue</strong></h2>
 
 <p>How to apply for burial insurance? Step #9</p>
 
@@ -287,7 +287,7 @@ sidebar: true
 
 <p>If you’re ready to get burial insurance for seniors, you can start comparing quotes with the instant final expense <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> on your left. If you want to request applications, call us at (888) 862-9456, and we will walk you through the entire process.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="ef27c248-2a46-4c83-8492-66666bab1040"><strong>What is an insurance application?</strong></p>
 

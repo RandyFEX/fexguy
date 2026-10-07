@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-for-people-with-fatty-liver-disease"><br><strong>What Is My Best Insurance Option If I Have A History Of Fatty Liver Disease?</strong></h2>
+<h2 id="best-option-for-people-with-fatty-liver-disease"><br><strong>What is my best insurance option if I have a history of fatty liver disease?</strong></h2>
 
 <p><strong>NONALCOHOLIC FATTY LIVER DISEASE</strong></p>
 
@@ -76,7 +76,7 @@ sidebar: true
 
 <p>Many life insurance carriers will allow you to qualify for a first-day benefit plan if it has been longer than 24 months since you have undergone treatment. The first-day benefit plan offers first-day coverage, with the death benefit phased in over time.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -115,7 +115,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -164,7 +164,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>When you apply for burial, funeral, or final expense insurance, you don’t have to take a medical exam. You only have to answer a few questions about your health. </p>
 
@@ -172,7 +172,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-fatty-liver-disease"><br><strong>Burial Insurance Underwriting If You Have Fatty Liver Disease </strong></h2>
+<h2 id="insurance-underwriting-for-fatty-liver-disease"><br><strong>Burial insurance underwriting if you have fatty liver disease </strong></h2>
 
 <p>Life insurance companies will attempt to know about your general health by asking health questions on the application and by checking your prescription history. </p>
 
@@ -204,7 +204,7 @@ whatever type of fatty liver disease you may have.</p>
 
 <p>Prescription medications for fatty liver disease are also used to treat other health conditions like diabetes. This is why life insurance companies can’t determine if you have a fatty liver disease just by checking your prescription history. They generally know about your condition based on your answers to the health questions.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I Have Fatty Liver Disease?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I have fatty liver disease?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -312,11 +312,11 @@ whatever type of fatty liver disease you may have.</p>
 </tbody>
 </table>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Fatty Liver Disease And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Fatty liver disease and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -341,7 +341,7 @@ whatever type of fatty liver disease you may have.</p>
 </tbody>
 </table>
 
-<h2 id="finding-affordable-burial-insurance"><br><strong>Finding Affordable Burial Insurance With Fatty Liver Disease </strong></h2>
+<h2 id="finding-affordable-burial-insurance"><br><strong>Finding affordable burial insurance with fatty liver disease </strong></h2>
 
 <p>If you need burial insurance with fatty liver disease, one of the most important steps you can take toward getting the lowest premium is to work with a qualified independent life insurance agency like Final Expense Guy, which specializes in getting life insurance for high-risk clients.</p>
 
@@ -349,7 +349,7 @@ whatever type of fatty liver disease you may have.</p>
 
 <p>We know the different life insurance underwriting requirements for fatty liver disease. We also know the best life insurance companies and the most affordable options for your medical condition. We will assist you in obtaining the insurance coverage you need with a premium within your budget.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -364,7 +364,7 @@ whatever type of fatty liver disease you may have.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Fatty Liver Disease</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with fatty liver disease</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -383,7 +383,7 @@ whatever type of fatty liver disease you may have.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-funds-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-funds-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>If you have a health history of fatty liver disease, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
 
@@ -393,7 +393,7 @@ whatever type of fatty liver disease you may have.</p>
 
 <p>Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance with fatty liver disease?</strong></p>
 

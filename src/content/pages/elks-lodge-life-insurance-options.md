@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>DOES THE ELKS LODGE OFFER ANY LIFE INSURANCE BENEFITS</strong></h2>
+<h2><strong>Does the Elks Lodge offer any life insurance benefits</strong></h2>
 
 <p>The Elks Lodge does not offer life insurance to its members. There is no group plan, no built-in protection, and no death benefit tied to membership.</p>
 
@@ -35,7 +35,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY ELKS MEMBERS STILL NEED THEIR OWN POLICY</strong></h2>
+<h2><strong>Why Elks members still need their own policy</strong></h2>
 
 <p>A private life insurance policy is the most effective way to protect a family from unexpected expenses after a member passes away. Social Security provides a one-time payment of $255, according to the Social Security Administration.</p>
 
@@ -55,7 +55,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>TERM LIFE INSURANCE OPTIONS FOR ELKS MEMBERS</strong></h2>
+<h2><strong>Term life insurance options for Elks members</strong></h2>
 
 <p>Term life insurance offers temporary protection for a specified period of years. The most common terms are ten, twenty, or thirty years.</p>
 
@@ -73,7 +73,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHEN TERM LIFE MAKES SENSE AND WHEN IT DOES NOT</strong></h2>
+<h2><strong>When term life makes sense and when it does not</strong></h2>
 
 <p>Term life makes sense for Elks members who are still working or who have significant financial responsibilities.</p>
 
@@ -91,7 +91,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPARISON OF TERM LIFE AND FINAL EXPENSE WHOLE LIFE FOR ELKS MEMBERS</strong></h2>
+<h2><strong>Comparison of term life and final expense whole life for Elks members</strong></h2>
 
 <table>
 <thead>
@@ -132,7 +132,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHOLE LIFE FINAL EXPENSE OPTIONS FOR ELKS MEMBERS</strong></h2>
+<h2><strong>Whole life final expense options for Elks members</strong></h2>
 
 <p>Final expense whole life insurance is the most common solution for older Elks members because it provides lifetime coverage and offers stable pricing.</p>
 
@@ -152,7 +152,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FIRST DAY COVERAGE VS. TWO YEAR WAITING PERIOD PLANS</strong></h2>
+<h2><strong>First day coverage vs. two year waiting period plans</strong></h2>
 
 <p>Many Elks members are unaware of the differences between these two types of policies.</p>
 
@@ -170,7 +170,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW SIMPLIFIED ISSUE WHOLE LIFE WORKS FOR SENIORS</strong></h2>
+<h2><strong>How simplified issue whole life works for seniors</strong></h2>
 
 <p>Simplified issue whole life uses basic health questions and electronic prescription checks instead of medical exams.</p>
 
@@ -190,7 +190,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>RISKS OF GUARANTEED ACCEPTANCE PLANS</strong></h2>
+<h2><strong>Risks of guaranteed acceptance plans</strong></h2>
 
 <p>Guaranteed acceptance plans accept every applicant regardless of health, but that convenience comes with significant tradeoffs. The biggest disadvantage is the two-year waiting period.</p>
 
@@ -210,7 +210,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW UNDERWRITING AFFECTS APPROVAL AND PRICING</strong></h2>
+<h2><strong>How underwriting affects approval and pricing</strong></h2>
 
 <p>Underwriting determines which type of policy an Elks member can qualify for and the cost of the coverage.</p>
 
@@ -232,7 +232,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT A.M. BEST AND NAIC RATINGS TELL YOU ABOUT AN INSURER</strong></h2>
+<h2><strong>What A.M. Best and NAIC ratings tell you about an insurer</strong></h2>
 
 <p>A.M. Best and the National Association of Insurance Commissioners provide two of the most important signals about an insurance company’s financial strength and consumer history.</p>
 
@@ -250,7 +250,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>PRICE FACTORS FOR TERM AND WHOLE LIFE POLICIES</strong></h2>
+<h2><strong>Price factors for term and whole life policies</strong></h2>
 
 <p>The cost of life insurance depends on factors such as age, health history, coverage amount, and the type of policy selected.</p>
 
@@ -272,7 +272,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON MISLEADING OFFERS TARGETING ELKS MEMBERS</strong></h2>
+<h2><strong>Common misleading offers targeting Elks members</strong></h2>
 
 <p>Many Elks members receive mailers, postcards, or phone calls with misleading language intended to create a sense of urgency. Some imply that coverage is tied to membership or that a special rate is available only for fraternal groups.</p>
 
@@ -290,7 +290,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPARISON OF LEGITIMATE POLICIES VS MISLEADING OFFERS</strong></h2>
+<h2><strong>Comparison of legitimate policies vs misleading offers</strong></h2>
 
 <table>
 <thead>
@@ -325,7 +325,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT STATE INSURANCE DEPARTMENTS REQUIRE FROM ALL POLICIES</strong></h2>
+<h2><strong>What state insurance departments require from all policies</strong></h2>
 
 <p>Every state insurance department requires life insurance companies to follow strict rules that protect consumers.</p>
 
@@ -339,7 +339,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW THE FTC FUNERAL RULE PROTECTS YOUR FAMILY</strong></h2>
+<h2><strong>How the FTC funeral rule protects your family</strong></h2>
 
 <p>The Federal Trade Commission created the Funeral Rule to protect families from unfair practices at funeral homes. This rule requires funeral providers to give itemized price lists upon request.</p>
 
@@ -355,7 +355,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW MUCH COVERAGE ELKS MEMBERS TYPICALLY NEED</strong></h2>
+<h2><strong>How much coverage Elks members typically need</strong></h2>
 
 <p>Elks members typically require sufficient coverage to cover burial or cremation costs, medical bills, and any outstanding personal debts.</p>
 
@@ -373,7 +373,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW FINAL EXPENSE POLICIES PAY OUT AT CLAIM TIME</strong></h2>
+<h2><strong>How final expense policies pay out at claim time</strong></h2>
 
 <p>Final expense whole life policies pay a cash benefit directly to the beneficiary. These funds are tax-free and available immediately upon approval of the claim. This provides families with fast access to funds for funeral and cremation costs.</p>
 
@@ -387,7 +387,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT TO ASK BEFORE YOU APPLY</strong></h2>
+<h2><strong>What to ask before you apply</strong></h2>
 
 <p>Elks members should ask several key questions before choosing a policy. These questions protect you from companies that rely on confusing language or aggressive sales methods.</p>
 
@@ -401,7 +401,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>KEY QUESTIONS ELKS MEMBERS SHOULD ASK</strong></h2>
+<h2><strong>Key questions Elks members should ask</strong></h2>
 
 <table>
 <thead>
@@ -436,7 +436,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO AVOID OVERPAYING AND GET REAL FIRST DAY COVERAGE</strong></h2>
+<h2><strong>How to avoid overpaying and get real first day coverage</strong></h2>
 
 <p>Elks members avoid overpaying by focusing on companies that offer simplified underwriting with level premiums and immediate benefits.</p>
 
@@ -458,7 +458,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO GET ACCURATE QUOTES FROM A NATIONAL INDEPENDENT BROKER</strong></h2>
+<h2><strong>How to get accurate quotes from a national independent broker</strong></h2>
 
 <p>Accurate quotes come from a broker like The Final Expense Guy who works with top-rated companies across the entire market.</p>
 
@@ -478,7 +478,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW INDEPENDENT BROKERS COMPARE INSURERS FOR ELKS MEMBE</strong>RS</h2>
+<h2><strong>How independent brokers compare insurers for Elks membe</strong>rs</h2>
 
 <table>
 <thead>
@@ -513,7 +513,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO GET FIRST DAY COVERAGE QUOTES TODAY</strong></h2>
+<h2><strong>How to get first day coverage quotes today</strong></h2>
 
 <p>Elks members who want first-day coverage can request a full comparison from a national, independent broker like The Final Expense Guy without undergoing medical exams.</p>
 
@@ -529,7 +529,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS</strong></h2>
+<h2><strong>Frequently asked questions</strong></h2>
 
 <p><strong>Does the Elks Lodge offer life insurance benefits to members?</strong></p>
 

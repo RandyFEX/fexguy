@@ -102,7 +102,7 @@ Product details can change and may vary by state, so check the current terms bef
 - No medical exam, but the application has health questions, so approval isn't guaranteed
 - Builds cash value, with the Guaranteed Purchase Option Rider on standard-issue policies
 
-### Mutual of Omaha Children's Whole Life
+### Mutual of Omaha children's whole life
 
 - Whole life insurance, underwritten by United of Omaha Life Insurance Company
 - Issue ages 14 days through 17 years
@@ -137,7 +137,7 @@ Product details can change and may vary by state, so check the current terms bef
 
 Have questions about coverage for yourself or your family? Use the quote form on this page or call me at [888-862-9456](tel:8888629456).
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Can a grandparent buy life insurance on a grandchild?
 

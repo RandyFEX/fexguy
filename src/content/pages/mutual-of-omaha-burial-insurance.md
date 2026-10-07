@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-moo-offer-first-day-coverage"><strong>Does Mutual Of Omaha Offer First-day Coverage?</strong></h2>
+<h2 id="does-moo-offer-first-day-coverage"><strong>Does Mutual of Omaha offer first-day coverage?</strong></h2>
 
 <p>Yes, Mutual of Omaha has a burial insurance plan with first-day coverage for their <strong>“Level Death Benefit”</strong> plan.  If you qualify, you will be fully covered from the first day.</p>
 
@@ -60,7 +60,7 @@ sidebar: true
 
 <p>Their burial insurance plan is called the Living Promise plan. It has a level death benefit that can be used for burial, cremation, final expenses, or basic life insurance needs.  They have fairly lenient underwriting, and you can qualify for first-day coverage if you have some health issues.</p>
 
-<h2 id="pros-of-mutual-of-omaha"><strong>Pros Of Mutual Of Omaha Burial Insurance</strong></h2>
+<h2 id="pros-of-mutual-of-omaha"><strong>Pros of Mutual of Omaha burial insurance</strong></h2>
 
 <p><strong>First-day coverage </strong>– The Living Promise level benefit plan comes with first-day coverage and no waiting period.</p>
 
@@ -70,7 +70,7 @@ sidebar: true
 
 <p><strong>Application process</strong> – In-person or digital online application completed by a licensed agent.</p>
 
-<h2 id="cons-of-mutual-of-omaha"><strong>Cons Of Mutual Of Omaha </strong></h2>
+<h2 id="cons-of-mutual-of-omaha"><strong>Cons of Mutual of Omaha </strong></h2>
 
 <p><strong>Has build chart</strong> – You may not qualify if you are on the heavy side (obese or morbidly obese).</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <p><strong>Not all health issues will qualify</strong> – significant medical conditions can be denied even with the graded plan.</p>
 
-<h2 id="moo-burial-insurance-products"><br><strong>Mutual Of Omaha Burial Insurance Products</strong></h2>
+<h2 id="moo-burial-insurance-products"><br><strong>Mutual of Omaha burial insurance products</strong></h2>
 
 <p>This section of the Mutual of Omaha review will cover the different burial policies offered by Mutual of Omaha. There are two types of burial insurance offered by Mutual of Omaha.</p>
 
@@ -150,7 +150,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="mutual-of-omaha-riders"><br><strong>Mutual Of Omaha Burial Insurance Riders</strong></h2>
+<h2 id="mutual-of-omaha-riders"><br><strong>Mutual of Omaha burial insurance riders</strong></h2>
 
 <p><strong>Living Promise Level Benefit Plan Only</strong></p>
 
@@ -170,7 +170,7 @@ sidebar: true
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-moo-makes-sense"><br><strong>When Does Mutual Of Omaha Make The Most Sense?</strong></h2>
+<h2 id="when-moo-makes-sense"><br><strong>When does Mutual of Omaha make the most sense?</strong></h2>
 
 <p>Mutual of Omaha Living Promise level benefit plan can be one of your best burial insurance options if you can answer no to all the health questions. </p>
 
@@ -193,7 +193,7 @@ sidebar: true
 
 <p>A graded plan should be your last option. You should only apply for this policy if you have significant health issues. Other than that, let our agents at Final Expense Guy review your health history to get a reasonable price and full first-day coverage!</p>
 
-<h2 id="moo-underwriting-guidelines"><br><strong>Mutual Of Omaha Underwriting Guidelines</strong></h2>
+<h2 id="moo-underwriting-guidelines"><br><strong>Mutual of Omaha underwriting guidelines</strong></h2>
 
 <p><strong>Mutual of Omaha will determine your eligibility through the following:</strong></p>
 
@@ -284,7 +284,7 @@ sidebar: true
 
 <p>This policy is whole life insurance. Mutual of Omaha whole life insurance plan will never expire as long as premiums are paid. The monthly premiums are locked in and will never increase. The death benefit cannot decrease for any reason. </p>
 
-<h2 id="moo-pricing-examples"><br><strong>Mutual Of Omaha Level Benefit Pricing Examples</strong></h2>
+<h2 id="moo-pricing-examples"><br><strong>Mutual of Omaha level benefit pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-42">
 <thead>
@@ -434,7 +434,7 @@ sidebar: true
 
 <p>*Pricing for illustration purposes only and are subject to change without notice.</p>
 
-<h2 id="getting-approved-for-moo"><br><strong>Getting Approved For Mutual Of Omaha Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-moo"><br><strong>Getting approved for Mutual of Omaha burial insurance</strong></h2>
 
 <p>Applying for burial insurance with Mutual of Omaha is straightforward. It can be done through the Mutual Omaha life insurance phone number or via your computer with a licensed agent.</p>
 
@@ -450,7 +450,7 @@ sidebar: true
 
 <p>The entire application process can be completed electronically in several minutes. To make your application quicker, have your important information readily available such as your social security number, beneficiary, and payment information.</p>
 
-<h2 id="best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -518,7 +518,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="moo-company-overview"><br><br><strong>Mutual Of Omaha Company Overview</strong></h2>
+<h2 id="moo-company-overview"><br><br><strong>Mutual of Omaha company overview</strong></h2>
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" src="/wp-content/uploads/2018/05/Mutual-of-Omaha-Logo.jpg" alt=""></figure>
 
@@ -546,7 +546,7 @@ sidebar: true
 <li>A+ – Better Business Bureau</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
 
@@ -560,7 +560,7 @@ sidebar: true
 
 <p>We can shop your case to see which insurance company will give you the best price and coverage. Call us at (888) 862-9456 if you have any questions about life insurance. We are here to help!</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p id="Additional-Questions-&-Answers-On-Mutual-Of-Omaha"><strong>Is Mutual of Omaha Life Insurance still in business?</strong></p>
 

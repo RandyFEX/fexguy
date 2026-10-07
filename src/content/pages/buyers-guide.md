@@ -14,7 +14,7 @@ source: "live"
 
 <p>To help you understand your best plan and pricing options, we put together this “Final Expense Insurance Buyers Guide”. It’s an easy 2-3 minute read, so read it right now to save money and purchase the best plan with the lowest pricing.</p>
 
-<h2 id="h-we-don-t-sell-garbage" class="as-h3"><strong>WE DON’T SELL GARBAGE</strong></h2>
+<h2 id="h-we-don-t-sell-garbage" class="as-h3"><strong>We don’t sell garbage</strong></h2>
 
 <p>When you die, your burial, cremation, final expense, or life insurance policy must work 100% of the time. We take this responsibility seriously. Because of that, we don’t sell expensive term life insurance or expensive 2-year waiting period policies.</p>
 
@@ -22,7 +22,7 @@ source: "live"
 
 <p>Would it be worth getting a call 5, 10, or 15 years in the future with bad news for the family of someone who just died with an expired policy or a policy that they had overpaid on for 5, 10, or 15 years? Heck no! </p>
 
-<h2 id="h-what-to-never-do" class="as-h3"><br><strong>WHAT TO NEVER DO</strong></h2>
+<h2 id="h-what-to-never-do" class="as-h3"><br><strong>What to never do</strong></h2>
 
 <p>We used to have a quoting tool on our website that showed rates based on age and gender alone. The problem was our website visitors did not know what plans they would or would not qualified for. As a result, the rates they thought they qualified for based on their age alone and were usually incorrect.</p>
 
@@ -39,7 +39,7 @@ source: "live"
 
 <p>You see, most people are just like Mary and have no idea that your pricing on this insurance is not based just on your age alone.</p>
 
-<h2 id="h-what-s-your-pricing" class="as-h3"><br><strong><strong>WHAT’S YOUR PRICING?</strong></strong></h2>
+<h2 id="h-what-s-your-pricing" class="as-h3"><br><strong><strong>What’s your pricing?</strong></strong></h2>
 
 <p>At Final Expense Guy, Randy works with many insurance companies and can price check over 30 different companies to find you the lowest rate and <strong>1st-day coverage</strong>.</p>
 
@@ -62,7 +62,7 @@ source: "live"
 
 <p>With the above information, we will be able to provide you rates for all the top insurance companies available to you. And don’t forget…<strong>NEVER</strong> settle for a 2-year waiting period policy when you qualify for first-day coverage!</p>
 
-<h2 id="h-what-should-you-avoid" class="as-h3"><br><strong>WHAT SHOULD YOU AVOID?</strong></h2>
+<h2 id="h-what-should-you-avoid" class="as-h3"><br><strong>What should you avoid?</strong></h2>
 
 <p>Avoid those expensive plans that advertise on the TV commercials and mailbox postcards when they are “limited benefit period” plans. Those “limited benefit period” plans won’t pay out any death benefit in the first two years of your policy.</p>
 
@@ -70,7 +70,7 @@ source: "live"
 
 <p>So why would you ever buy an expensive “limited benefit period” life insurance policy that <strong>WILL NOT</strong> pay out any money in the first two years when you qualify for 1st-day coverage?</p>
 
-<h2 id="h-plans-amp-pricing-availability" class="as-h3"><br><strong>PLANS &amp; PRICING AVAILABILITY</strong></h2>
+<h2 id="h-plans-amp-pricing-availability" class="as-h3"><br><strong>Plans &amp; pricing availability</strong></h2>
 
 <p><strong>There are three basic types of plans available:</strong></p>
 
@@ -86,7 +86,7 @@ source: "live"
 
 <p><strong>WORST PRICING: Graded Coverage</strong> – These expensive plans are also called “Guaranteed Issue Life Insurance” and are most often sold by television commercials (they call it “limited benefit period” life insurance) and through junk mail they send to your mailbox every week. These plans place your family and loved ones at great risk in the first two years when no death benefit will be paid. </p>
 
-<h2 id="h-internet-and-tv-advertisements" class="as-h3"><br><strong>INTERNET AND TV ADVERTISEMENTS?</strong></h2>
+<h2 id="h-internet-and-tv-advertisements" class="as-h3"><br><strong>Internet and TV advertisements?</strong></h2>
 
 <p><strong>If an offer sounds too good to be true…it probably is (and it’s probably expensive)!</strong></p>
 
@@ -96,7 +96,7 @@ source: "live"
 
 <p>“Guaranteed Issue” 2-year waiting period plans only require your age, gender, and payment method to qualify. They don’t ask any health questions and they will charge you the highest rate possible even if you are perfectly healthy.</p>
 
-<h2 id="h-avoiding-a-2-year-waiting-period" class="as-h3"><br><strong>AVOIDING A 2-YEAR WAITING PERIOD</strong></h2>
+<h2 id="h-avoiding-a-2-year-waiting-period" class="as-h3"><br><strong>Avoiding a 2-year waiting period</strong></h2>
 
 <p>As you already know, at Final Expense Guy we don’t sell 2-year waiting period plans…but that is not true of all companies.</p>
 
@@ -110,7 +110,7 @@ source: "live"
 
 <p>As long as you don’t have a terminal illness, AIDS/HIV, active cancer, congestive heart failure, chemotherapy, COPD with oxygen use, Dementia or Alzheimer’s Disease, dialysis, nursing home confinement, organ failure, or a terminal illness, then we should have no problem getting you approved for first-day coverage.</p>
 
-<h2 id="h-is-everyone-approved" class="as-h3"><br><strong>IS EVERYONE APPROVED?</strong></h2>
+<h2 id="h-is-everyone-approved" class="as-h3"><br><strong>Is everyone approved?</strong></h2>
 
 <p>Most people we help are approved for first-day coverage, but your specific and unique health needs will determine what pricing and plan you qualify for.</p>
 
@@ -122,7 +122,7 @@ source: "live"
 
 <p>If you need help with Activities of Daily Living (ADL’s), then your life insurance options will be limited to a 2-year waiting period plan. </p>
 
-<h2 id="h-choosing-a-life-insurance-agent" class="as-h3"><br><strong>CHOOSING A LIFE INSURANCE AGENT</strong></h2>
+<h2 id="h-choosing-a-life-insurance-agent" class="as-h3"><br><strong>Choosing a life insurance agent</strong></h2>
 
 <p>At Final Expense Guy, Randy is an independent agent who can price shop about 30 different insurance companies for you so that you get approved for the lowest pricing. You will probably qualify for more than one program when working with an independent agent like Randy.</p>
 
@@ -137,7 +137,7 @@ source: "live"
 <li><strong>POLITENESS: </strong>If your agent is not polite, you shouldn’t work with them now or in the future.</li>
 </ul>
 
-<h2 id="h-will-your-pricing-go-up" class="as-h3"><br><strong>WILL YOUR PRICING GO UP?</strong></h2>
+<h2 id="h-will-your-pricing-go-up" class="as-h3"><br><strong>Will your pricing go up?</strong></h2>
 
 <p>Not if you buy the right plan. Never buy an expensive term life insurance policy that increases in price over time if you want permanent lifetime coverage. </p>
 
@@ -145,17 +145,17 @@ source: "live"
 
 <p>At Final Expense Guy, our 1st-day coverage plans NEVER increase in price. Your prices are locked in at today’s low rates for the life of your policy.</p>
 
-<h2 id="h-will-your-coverage-go-down" class="as-h3"><br><strong>WILL YOUR COVERAGE GO DOWN?</strong></h2>
+<h2 id="h-will-your-coverage-go-down" class="as-h3"><br><strong>Will your coverage go down?</strong></h2>
 
 <p>Your coverage will NEVER go down over time as long as you purchase whole life insurance from Final Expense Guy.</p>
 
 <p>With expensive term life, it’s a different story! Term life insurance will cancel when you need it the most (after age 80). </p>
 
-<h2 id="h-buy-this-insurance-now" class="as-h3"><br><strong>BUY THIS INSURANCE NOW?</strong></h2>
+<h2 id="h-buy-this-insurance-now" class="as-h3"><br><strong>Buy this insurance now?</strong></h2>
 
 <p>Inflation increases the cost of goods and services over time…including insurance prices! A $15,000 funeral today will cost over $31,000 in 30 years (with an 2.5% annual inflation rate). </p>
 
-<h2 id="h-what-companies-are-best" class="as-h3"><br><strong>WHAT COMPANIES ARE BEST?</strong></h2>
+<h2 id="h-what-companies-are-best" class="as-h3"><br><strong>What companies are best?</strong></h2>
 
 <p>At Final Expense Guy, we work with many companies, but our best companies offer 1st-day coverage or benefits. Below is a list of almost all the final expense life insurance companies. We have bolded the names of the companies that are most often the right choice for most people.</p>
 

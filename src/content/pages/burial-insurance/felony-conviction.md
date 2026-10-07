@@ -48,7 +48,7 @@ sidebar: true
 </tr>    </tbody>
 </table>
 
-<h2 id="options-for-people-with-felony-convictions"><br><strong>What Is My Best Insurance Option If I Have A History Of Felony Convictions?</strong></h2>
+<h2 id="options-for-people-with-felony-convictions"><br><strong>What is my best insurance option if I have a history of felony convictions?</strong></h2>
 
 <p>Several companies will approve your application even if you have a history of felony convictions. You will have a level death benefit which means your life insurance payout will be the same throughout the life of the policy. Your beneficiary will receive your death benefit when you pass away.</p>
 
@@ -58,7 +58,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Level death benefit plan with first-day coverage</p>
 
-<h2 id="what-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -97,7 +97,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -146,7 +146,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>If I Have A Felony Conviction, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>If I have a felony conviction, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with a felony conviction.</p>
 
@@ -154,7 +154,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong>Burial Insurance Underwriting If You Have A Felony Conviction</strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong>Burial insurance underwriting if you have a felony conviction</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -164,7 +164,7 @@ sidebar: true
 
 <p>You will rarely see felony convictions asked on the application questionnaire. Very few insurance companies care about felony convictions. So, if you have a history of felony convictions but are generally healthy or have some <a href="/final-expense-life-insurance-pre-existing-conditions/" target="_blank" rel="noreferrer noopener">pre-existing</a> medication condition, you will still qualify for affordable burial insurance. </p>
 
-<h2 id="how-much-do-i-need"><br><strong>How Much Insurance Do I Need If I Have A Felony Conviction?</strong></h2>
+<h2 id="how-much-do-i-need"><br><strong>How much insurance do I need if I have a felony conviction?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -224,11 +224,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Felony Conviction And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Felony conviction and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -237,7 +237,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -252,7 +252,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-for-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With A Felony Conviction</strong></h2>
+<h2 id="uses-for-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with a felony conviction</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -271,7 +271,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with a felony conviction needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -281,7 +281,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for felony conviction funeral insurance, felony conviction burial insurance, or felony conviction life insurance, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance with a felony conviction?</strong></p>
 

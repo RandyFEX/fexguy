@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-melanoma"><br><strong>What Is My Best Insurance Option If I Have A History Of Melanoma?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-melanoma"><br><strong>What is my best insurance option if I have a history of melanoma?</strong></h2>
 
 <p>Your ability to qualify for burial insurance with melanoma depends on the following factors:</p>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p><strong>Important note</strong>: You cannot avoid a waiting period if you have been treated for melanoma within the last two years. If you pass during the waiting period, your beneficiaries will not receive the full death benefit; instead, they will receive the refund of all your premiums plus interest.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -131,7 +131,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -180,7 +180,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with melanoma.</p>
 
@@ -188,7 +188,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-melanoma"><br><strong>Burial Insurance Underwriting If You Have Melanoma</strong></h2>
+<h2 id="insurance-underwriting-for-melanoma"><br><strong>Burial insurance underwriting if you have melanoma</strong></h2>
 
 <p>Every single burial insurance company will ask about cancer in their application. Each company has unique underwriting guidelines, which consider some health and medical variables when underwriting your application.</p>
 
@@ -227,7 +227,7 @@ sidebar: true
 
 <p>There are different drugs to treat melanoma. If you have filled any cancer treatment medications within the last two years, burial insurance carriers will assume you are undergoing treatment for melanoma.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Melanoma?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have melanoma?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -335,11 +335,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="melanoma-and-burial-insurance-riders"><br><strong>Melanoma And Burial Insurance Riders</strong></h2>
+<h2 id="melanoma-and-burial-insurance-riders"><br><strong>Melanoma and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -364,7 +364,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-have-melanoma"><br><strong><strong>Information We Need If You Have Melanoma?</strong></strong></h2>
+<h2 id="information-we-need-if-you-have-melanoma"><br><strong><strong>Information we need if you have melanoma?</strong></strong></h2>
 
 <p><strong>To help you find the best rates and company, our agents will ask you the following questions:</strong></p>
 
@@ -379,7 +379,7 @@ sidebar: true
 
 <p>Your answers to these health questions will help us determine what burial insurance carriers match your needs. The price of your insurance premium will rely heavily on the last time you had treatment for your melanoma.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -394,7 +394,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Melanoma</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with melanoma</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -413,7 +413,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Trying to find a policy with melanoma needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -423,7 +423,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for melanoma funeral insurance, or melanoma burial insurance, or melanoma life insurance, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can a person with melanoma get burial insurance?</strong></p>
 

@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-dialysis"><strong>What Is Dialysis?</strong></h2>
+<h2 id="what-is-dialysis"><strong>What is dialysis?</strong></h2>
 
 <p>Your kidneys are basically your body’s janitors, sweeping up all the nasty stuff. But when they decide to take a permanent vacation, dialysis comes in to save the day (or at least it buys you some time). It’s like calling in a hazmat team for your bloodstream.</p>
 
@@ -66,15 +66,15 @@ sidebar: true
 
 <p>Dialysis is like a red flag for insurance companies. They see you and think “risk, risk, risk!” But don’t freak out, it’s not a total insurance death sentence. There’s still a chance to find coverage, but it might take a little extra effort.&#160;</p>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance If I’m On Dialysis?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance if I’m on dialysis?</strong></h2>
 
 <p>Short answer: Yes. It depends on where you live and if your insurance agent is playing with the right cards. Kidney disease and dialysis? That’s a tough hand to be dealt when it comes to insurance. But hey, there might be a 1st-day coverage silver lining if you find the right agent.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I’m On Dialysis?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I’m on dialysis?</strong></h2>
 
 <p>So, your kidneys are kaput and you’re hooked up to a dialysis machine? Well, good news (kinda): you might still snag that first-day coverage insurance if you’re playing by your doctor’s rules. Just make sure you’re following their orders like a good patient who wants to live a long time.</p>
 
-<h2 id="types-of-burial-insurance"><strong>What Are The Types Of Burial Insurance Available For Dialysis Patients?</strong></h2>
+<h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance available for dialysis patients?</strong></h2>
 
 <p><strong>First-Day Coverage</strong> – It’s like the fast-pass to insurance. No medical drama, just a few questions and boom – you’re covered! It’s like insurance companies decided to be nice for once.</p>
 
@@ -82,23 +82,23 @@ sidebar: true
 
 <p><strong>Guaranteed Issue</strong> – It’s like the insurance world’s last resort. No questions asked, you’re in! But, there’s a catch: if you bite the dust too soon, your family gets a tiny refund, not the big bucks. The policy would only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>No, As long as you’re not allergic to answering simple questions, you’re good to go. No blood tests, no pee cups, and no white coats. It’s like the insurance world’s version of a walk in the park. Plus, you’ll know if you’re covered faster than you can say “final expenses.”</p>
 
-<h2 id="rejected-application"><strong>What If My Application Was Rejected Because of Kidney Dialysis?</strong></h2>
+<h2 id="rejected-application"><strong>What if my application was rejected because of kidney dialysis?</strong></h2>
 
 <p>Rejected for burial insurance because you need dialysis? Don’t worry! It just means you picked the wrong insurance company or agent. Some companies are picky, like kids who only want to play with certain toys. But we’ll find a company that’s cool with your dialysis and get you covered.</p>
 
 <p>If you have a brand new kidney transplant and are feeling good (like you have a brand new superpower!), guaranteed insurance with no questions asked may be your best bet for the time being.</p>
 
-<h2 id="effects-of-dialysis-on-rates"><strong>How Can Kidney Dialysis Affect My Insurance Rates?</strong></h2>
+<h2 id="effects-of-dialysis-on-rates"><strong>How can kidney dialysis affect my insurance rates?</strong></h2>
 
 <p>Dialysis might make it harder to snag that fancy “regular” life insurance, like trying to get into an exclusive club with a secret handshake. Even if you find a plan that lets you in, it might cost more than your favorite candy store (and trust me, that’s saying something!). Plus, there might be a waiting period before the insurance actually kicks in.</p>
 
 <p>But hey, don’t despair! There are still ways to get covered. We just gotta find an insurance company that’s a little more chill and a plan that fits your situation.</p>
 
-<h2 id="burial-insurance-cost"><strong>How Much Does Burial Insurance Cost For Dialysis Patients?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>How much does burial insurance cost for dialysis patients?</strong></h2>
 
 <p><strong>Here’s the lowdown on how much burial insurance might cost you if you’re rocking that dialysis machine:</strong></p>
 
@@ -179,7 +179,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="kidney-dialysis-underwriting"><strong>Burial Insurance Underwriting For Kidney Dialysis</strong></h2>
+<h2 id="kidney-dialysis-underwriting"><strong>Burial insurance underwriting for kidney dialysis</strong></h2>
 
 <p><strong>You will often see kidney dialysis questions asked this way:</strong></p>
 
@@ -196,13 +196,13 @@ sidebar: true
 <li>You must honestly answer “yes” to the health question if you are undergoing kidney dialysis or recommended to have an organ transplant.</li>
 </ul>
 
-<h2 id="best-burial-insurance"><strong>How To Find The Best Burial Insurance For Dialysis Patients?</strong></h2>
+<h2 id="best-burial-insurance"><strong>How to find the best burial insurance for dialysis patients?</strong></h2>
 
 <p>Don’t sweat it! Finding the right plan is like finding the best video game – there are tons out there, but only one is perfect for you.</p>
 
 <p>An independent life insurance agent from Final Expense Guy is like your own personal insurance superhero. They know all the cool insurance companies that offer “first-day coverage” for people with kidney stuff and dialysis. They’ll help you find the perfect plan, so you can relax and focus on feeling better.</p>
 
-<h2 id="how-can-final-expense-guy-funds-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-funds-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Stop wasting time playing phone tag with a million insurance companies! We’re like the ultimate search engine for burial insurance – we do all the hard work for you.</p>
 
@@ -212,7 +212,7 @@ sidebar: true
 
 <p>Ready to ditch the stress and find the perfect plan? Fill out the form on this page, or call us at (888) 862-9456. We’ll get you a quote faster than you can say “peace of mind!”</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 
 <p id="Additional-Questions-&-Answers-On-Insurance-For-Dialysis-Patients"><strong>Is there any insurance for dialysis patients?</strong></p>
 

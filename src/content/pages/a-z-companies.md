@@ -10,7 +10,7 @@ sidebar: true
 
 <h1>A to Z Final Expense Life Insurance Companies</h1>
 
-<h2 id="h-funeral-insurance-companies-a-z"><br><strong>FINAL EXPENSE INSURANCE COMPANIES IN THE USA</strong></h2>
+<h2 id="h-funeral-insurance-companies-a-z"><br><strong>Final expense insurance companies in the USA</strong></h2>
 
 <p><strong>Here’s a list of the most common WHOLE LIFE final expense companies in the United States. Most offer between $2,500 to $50,0000 in coverage (depending on age, health, and state). I’ve included brief comments about their offerings or value (in alphabetical order): </strong></p>
 
@@ -59,7 +59,7 @@ sidebar: true
 
 <div data-hub-nav="az-companies"></div>
 
-<h2 id="2-Year-Waiting-Period-Companies"><br><strong>2-YEAR WAITING PERIOD PLANS</strong></h2>
+<h2 id="2-Year-Waiting-Period-Companies"><br><strong>2-year waiting period plans</strong></h2>
 
 <p>Don’t buy a costly 2-year “guaranteed issue” waiting period plan! If you’re in reasonably good health, you will qualify for 1st-day coverage at Final Expense Guy.</p>
 
@@ -79,7 +79,7 @@ sidebar: true
 
 <p>NOTE: If a plan says “no medical questions asked,” it has a mandatory 2-year waiting period with 30-40% higher pricing than 1st-day coverage. </p>
 
-<h2 id="Term-Life-Insurance-Companies"><strong>TERM LIFE INSURANCE</strong></h2>
+<h2 id="Term-Life-Insurance-Companies"><strong>Term life insurance</strong></h2>
 
 <p>Term life insurance is N<strong>OT</strong> appropriate for final expense life insurance because your price will increase every five years, and they cancel after age 80. (exactly at the time when you need this insurance the most.</p>
 
@@ -93,7 +93,7 @@ sidebar: true
 <li><a href="/trustage-price-increase/" target="_blank" rel="noreferrer noopener">TruStage</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
 </ul>
 
-<h2><strong> LIFE INSURANCE QUALIFYING QUESTIONS</strong></h2>
+<h2><strong> Life insurance qualifying questions</strong></h2>
 
 <p><strong>To qualify for 1st-day coverage, we will need to know your:</strong></p>
 
@@ -111,7 +111,7 @@ sidebar: true
 
 <p><strong>NOTE:</strong> Most agents only work with 1-3 companies, so you will often not get the best rate, especially from agents that are required to visit you in your home.</p>
 
-<h2 id="Additional-Riders-Available"><strong>ADDITIONAL COMPANY RIDERS ARE AVAILABLE</strong></h2>
+<h2 id="Additional-Riders-Available"><strong>Additional company riders are available</strong></h2>
 
 <p>Some companies offer riders at an additional cost, and some companies offer riders that are free of charge. The companies with the most riders are not always the best when considering pricing and coverage options.</p>
 

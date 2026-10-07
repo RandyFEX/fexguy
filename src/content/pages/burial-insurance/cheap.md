@@ -46,7 +46,7 @@ sidebar: true
 
 <h2 class="as-h3"><strong>Is it expensive to buy burial insurance?</strong></h2>
 
-<h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What Kind Of Cheap Burial Insurance Policies Should I Avoid?</strong></h2>
+<h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What kind of cheap burial insurance policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p>Think again if you think any general life insurance agent is your best choice when purchasing senior life insurance with no waiting period. Specialists like Final Expense Guy in burial insurance are always better than general life insurance agents when shopping for burial insurance (if you want the best pricing and no waiting period).</p>
 
-<h2 id="what-to-avoid-when-shopping-for-burial-insurance-policy"><strong>Here’s What To Avoid When Shopping For The Best Burial Insurance Policy:</strong></h2>
+<h2 id="what-to-avoid-when-shopping-for-burial-insurance-policy"><strong>Here’s what to avoid when shopping for the best burial insurance policy:</strong></h2>
 
 <ul>
 <li><strong>Generalists</strong> – avoid life insurance agents that sell every life insurance product available. You need a specialist who understands final expense underwriting to get the best pricing.</li>
@@ -100,7 +100,7 @@ sidebar: true
 
 <p>Don’t let an inexperienced agent get you declined, as this will limit your options in the future and increase any future pricing as a result of your denied funeral policy.</p>
 
-<h2 id="best-features-of-burial-policies"><strong>Here Are The Best Features Of Burial Policies: </strong></h2>
+<h2 id="best-features-of-burial-policies"><strong>Here are the best features of burial policies: </strong></h2>
 
 <ul>
 <li>Your premiums will <strong>NEVER INCREASE</strong>.</li>
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Let us help you get the best-priced burial policy you can afford.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>We are specialists and dedicated to doing one thing unbelievably well: final expense insurance and burial insurance. We are committed to being the leading expert in the industry regarding final expense insurance and helping folks like you get the best pricing.</p>
 
@@ -132,7 +132,7 @@ sidebar: true
 
 <p>Working with an independent brokerage like Final Expense Guy is always in your best interest. With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.&#160;Because this is all we do, we are amazing at it.</p>
 
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p id="706a0ab0-c447-41ca-ba90-6a98a117d59f"><strong>Do I need burial insurance?</strong></p>
 

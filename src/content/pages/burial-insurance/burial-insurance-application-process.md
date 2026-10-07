@@ -46,9 +46,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS" class="as-h3"><br><strong><a href="#FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS">FINAL EXPENSE INSURANCE APPLICATION PROCESS</a></strong></h2>
+<h2 id="FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS" class="as-h3"><br><strong><a href="#FINAL-EXPENSE-INSURANCE-APPLICATION-PROCESS">Final expense insurance application process</a></strong></h2>
 
-<h2 id="step-1---get-your-free-quote"><br><strong>Step 1: Get Your Free Quote</strong></h2>
+<h2 id="step-1---get-your-free-quote"><br><strong>Step 1: get your free quote</strong></h2>
 
 <p>The final expense insurance application process starts with online free life insurance policy quotes. </p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <p><strong>Final Expense Guy will never sell your information or use it for anything except give you the most affordable life insurance quotes.</strong></p>
 
-<h2 id="step-2---choose-which-policy-is-the-most-affordable-for-you"><br><strong>Step 2: Choose Which Policy Is The Most Affordable For You</strong></h2>
+<h2 id="step-2---choose-which-policy-is-the-most-affordable-for-you"><br><strong>Step 2: choose which policy is the most affordable for you</strong></h2>
 
 <p>The second step in the life insurance application process is to choose what type of final expense insurance you need. If you are like most <a href="https://dictionary.cambridge.org/us/dictionary/english/senior-citizen" target="_blank" rel="noreferrer noopener">senior citizens</a>, you are looking for a simple final expense insurance policy to cover the cost of a funeral so that your family won’t be left with a financial burden after your death.</p>
 
@@ -112,7 +112,7 @@ sidebar: true
 
 <p>Final Expense Guy only works with “A” rated or better insurance carriers. It is important to ensure the company is stable and can pay its policyholders on time.</p>
 
-<h2 id="step-3---fill-out-an-application-form"><br><strong>Step 3: Fill Out An Application Form</strong></h2>
+<h2 id="step-3---fill-out-an-application-form"><br><strong>Step 3: fill out an application form</strong></h2>
 
 <p>After you have found the insurance company that’s the perfect fit for your needs, it’s time to apply.</p>
 
@@ -157,7 +157,7 @@ sidebar: true
 
 <p><strong>Be honest when filling out your application. Don’t lie or give false information. It’s</strong> <strong>a fraud</strong>,<strong> and the company will most likely find out and deny your death claim.</strong></p>
 
-<h2 id="step-4---phone-interview"><br><strong>Step 4: Phone Interview</strong></h2>
+<h2 id="step-4---phone-interview"><br><strong>Step 4: phone interview</strong></h2>
 
 <p>Only simplified issue policies undergo an underwriting process. Guaranteed issue policies skip this step.</p>
 
@@ -190,7 +190,7 @@ sidebar: true
 
 <p>You can choose the simplified underwriting process and save time. Simplified issue policies can take between 24-48 hours to get approved.</p>
 
-<h2 id="step-5---wait-for-underwriting"><br><strong>Step 5: Wait For Underwriting </strong></h2>
+<h2 id="step-5---wait-for-underwriting"><br><strong>Step 5: wait for underwriting </strong></h2>
 
 <p>This is the easiest step, and there’s nothing you need to do except wait!</p>
 
@@ -224,7 +224,7 @@ sidebar: true
 
 <p>Underwriting timelines can vary depending on the insurance company and the caseload of the underwriter assigned to your case.</p>
 
-<h2 id="step-6---accept-your-offer-and-receive-your-policy"><br><strong>Step 6: Accept Your Offer And Receive Your Policy</strong></h2>
+<h2 id="step-6---accept-your-offer-and-receive-your-policy"><br><strong>Step 6: accept your offer and receive your policy</strong></h2>
 
 <p>Congratulations! You have an answer!</p>
 
@@ -246,7 +246,7 @@ sidebar: true
 
 <p>If you need help, you can call us at (888) 862-9456. We will be happy to help you.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="1784f075-62b2-4302-b71f-8dcd124e491c"><strong>Who can apply for final expense life insurance?</strong></p>
 

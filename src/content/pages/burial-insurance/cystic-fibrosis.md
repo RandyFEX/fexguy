@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-cystic-fibrosis"><strong>What Is My Best Insurance Option If I Have A History Of Cystic Fibrosis?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-cystic-fibrosis"><strong>What is my best insurance option if I have a history of cystic fibrosis?</strong></h2>
 
 <p>If you have cystic fibrosis, your best option for insurance coverage is a level death benefit plan.</p>
 
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>Guaranteed acceptance life insurance does not require a medical exam or health questions. It has a two-year waiting period. If you die during the first two years of the policy, your beneficiary will get all the premiums that you paid, plus an additional 10%. They would only get the full death benefit if you die after 24 months.</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -107,7 +107,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-type-of-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-type-of-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -156,7 +156,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with cystic fibrosis.</p>
 
@@ -164,7 +164,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-cystic-fibrosis"><br><strong>Burial Insurance Underwriting If You Have Cystic Fibrosis</strong></h2>
+<h2 id="insurance-underwriting-for-cystic-fibrosis"><br><strong>Burial insurance underwriting if you have cystic fibrosis</strong></h2>
 
 <p>Burial insurance companies conduct underwriting by asking health questions and checking your prescription history to verify your medical condition.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <p>Taking Cystic fibrosis medications will not make you ineligible for burial insurance coverage. Most of the medications and treatments are a complete non-issue with burial insurance companies.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I Have Cystic Fibrosis?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I have cystic fibrosis?</strong></h2>
 
 <p id="How-Much-Insurance-Do-I-Need-If-I-Have-Cystic-Fibrosis?">The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -263,11 +263,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Cystic Fibrosis And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Cystic fibrosis and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -276,13 +276,13 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="getting-the-best-insurance-rates"><br><strong>How To Get The Best Burial Insurance Rates For Cystic Fibrosis Patients?</strong></h2>
+<h2 id="getting-the-best-insurance-rates"><br><strong>How to get the best burial insurance rates for cystic fibrosis patients?</strong></h2>
 
 <p>An experienced independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> can get you the best burial insurance rates for cystic fibrosis. We will locate the best insurance carrier that understands your medical condition and issue first-day coverage.</p>
 
 <p>The main advantage of Final Expense Guy is our ability to compare policies and offers across multiple insurance companies. We can shop the market for you because we know that companies will accept you and offer first-day coverage at the lowest rates.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -297,7 +297,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="common-uses-of-burial-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Cystic Fibrosis</strong></h2>
+<h2 id="common-uses-of-burial-insurance"><br><strong>Other common uses for final expense life insurance with cystic fibrosis</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -316,7 +316,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you have had cystic fibrosis can be frustrating if you do it on your own.</p>
 
@@ -328,7 +328,7 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at&#160;<strong>(888)862-9456</strong>&#160;to get free burial insurance&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance with cystic fibrosis?</strong></p>
 

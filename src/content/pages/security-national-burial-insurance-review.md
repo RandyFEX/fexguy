@@ -52,13 +52,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-security-national-offer-first-day-coverage"><br><strong>Does Security National Offer First-day Coverage?</strong></h2>
+<h2 id="does-security-national-offer-first-day-coverage"><br><strong>Does Security National offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, Security National offers two first-day coverage plans, but they are more expensive than other companies.    </p>
 
 <p>If you qualify, their Simple Security is preferred; standard whole life insurance gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.  </p>
 
-<h2 id="pros-of-security-national-burial-insurance"><strong>Pros Of Security National Burial Insurance</strong></h2>
+<h2 id="pros-of-security-national-burial-insurance"><strong>Pros of Security National burial insurance</strong></h2>
 
 <p><strong>Easy application process</strong> – can be done over the phone or online</p>
 
@@ -66,13 +66,13 @@ sidebar: true
 
 <p><strong>Coverage available</strong> – to 86-90 years old</p>
 
-<h2 id="cons-of-security-national-burial-insurance"><strong>Cons Of Security National Burial Insurance</strong></h2>
+<h2 id="cons-of-security-national-burial-insurance"><strong>Cons of Security National burial insurance</strong></h2>
 
 <p><strong>Have</strong> a <strong>height and weight chart</strong> – you may be disqualified if you are overweight, obese, or morbidly obese.</p>
 
 <p><strong>Not diabetic-friendly</strong> – you may only qualify for the standard plan if you currently use insulin</p>
 
-<h2 id="security-national-burial-insurance-products"><br><strong>Security National Burial Insurance Products </strong></h2>
+<h2 id="security-national-burial-insurance-products"><br><strong>Security National burial insurance products </strong></h2>
 
 <p><strong>Security National calls its burial insurance products “Simple Security.” The Simple Security whole life insurance has three plans:</strong></p>
 
@@ -197,7 +197,7 @@ sidebar: true
 <li>Alcohol or drug abuse within the past 12 months</li>
 </ul>
 
-<h2 id="security-national-burial-insurance-riders"><br><strong>Security National Burial Insurance Riders</strong></h2>
+<h2 id="security-national-burial-insurance-riders"><br><strong>Security National burial insurance riders</strong></h2>
 
 <p><strong>Accidental Death Benefit Rider – </strong>doubles the death benefit amount if you die from an accident.</p>
 
@@ -209,7 +209,7 @@ sidebar: true
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-does-security-national-make-the-most-sense"><br><br><strong>When Does Security National Burial Insurance Make The Most Sense? </strong></h2>
+<h2 id="when-does-security-national-make-the-most-sense"><br><br><strong>When does Security National burial insurance make the most sense? </strong></h2>
 
 <p>Security National is one of the few companies offering coverage to people between 86 and 90. It makes the company unique because it’s very rare to find companies offering first-day coverage for this age group.</p>
 
@@ -221,7 +221,7 @@ sidebar: true
 
 <p>Applications are made online, and policyholders can log in to submit a claim. This process is simple for internet users, but some customers uncomfortable with online applications and claims may look elsewhere for coverage.</p>
 
-<h2 id="security-national-underwriting-guidelines"><br><strong>Security National Underwriting Guidelines</strong></h2>
+<h2 id="security-national-underwriting-guidelines"><br><strong>Security National underwriting guidelines</strong></h2>
 
 <p>Most life insurance companies conduct phone interviews to verify your health. Security National lets your agent fill in the application on their portal and let you sign the application.</p>
 
@@ -287,7 +287,7 @@ sidebar: true
 
 <p>If you answered NO to all the health questions, Security National would offer you their Preferred Plan, which is the best and cheapest among the three plans available.</p>
 
-<h2 id="security-national-pricing-examples"><br><strong>Security National Pricing Examples</strong></h2>
+<h2 id="security-national-pricing-examples"><br><strong>Security National pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-86">
 <thead>
@@ -487,7 +487,7 @@ sidebar: true
 
 <p> *Pricing for illustration purposes only and are subject to change without notice. </p>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Security National Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for Security National burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -520,7 +520,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -588,7 +588,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="security-national-company-overview"><br><strong>Security National Company Overview</strong> </h2>
+<h2 id="security-national-company-overview"><br><strong>Security National company overview</strong> </h2>
 
 <p><a href="https://securitynationallife.com/" target="_blank" rel="noreferrer noopener nofollow">Security National Life Insurance</a> has been in business since August 11, 1965, and is headquartered in Salt Lake City, Utah. Security National Life operates as a subsidiary of Security National Financial Corp.</p>
 
@@ -598,7 +598,7 @@ sidebar: true
 
 <p>A.M. Best, one of the country’s top financial rating agencies, awarded Security National an A- (Excellent) rating. It means the company’s finances are stable, and clients can be confident that it will pay ongoing financial obligations. The company is financially secure, and they even post their financials for public scrutiny.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want Security National burial insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -610,7 +610,7 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is Security National Life Insurance still in business?</strong></p>
 

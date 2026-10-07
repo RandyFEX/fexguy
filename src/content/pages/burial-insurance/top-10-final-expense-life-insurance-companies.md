@@ -62,9 +62,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="top-10-final-expense-insurance-companies"><br><strong>Our Top 10 Final Expense Life Insurance Companies</strong></h2>
+<h2 id="top-10-final-expense-insurance-companies"><br><strong>Our top 10 final expense life insurance companies</strong></h2>
 
-<h2 id="trinity-life">#<strong>1 – TRINITY LIFE    </strong></h2>
+<h2 id="trinity-life">#<strong>1 – Trinity Life    </strong></h2>
 
 <p><strong><strong>1ST-DAY COVERAGE:</strong></strong> Yes, with Final Expense Guy </p>
 
@@ -192,7 +192,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET FAMILY BENEFIT LIFE QUOTE</a></p>
 
-<h2 id="royal-neighbors">#<strong>3 – Royal Neighbors Of America</strong></h2>
+<h2 id="royal-neighbors">#<strong>3 – Royal Neighbors of America</strong></h2>
 
 <p><strong><strong>1ST-DAY COVERAGE:</strong></strong> Yes, with Final Expense Guy</p>
 
@@ -264,7 +264,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET ROYAL NEIGHBORS QUOTE</a></p>
 
-<h2 id="mutual-of-omaha">#<strong>4 – Mutual Of Omaha</strong></h2>
+<h2 id="mutual-of-omaha">#<strong>4 – Mutual of Omaha</strong></h2>
 
 <p><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong>Yes, with Final Expense Guy</p>
 
@@ -735,7 +735,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET AIG QUOTE</a></p>
 
-<h2 id="fearful-4"><strong>Our “Fearful 4” Final Expense Policies</strong></h2>
+<h2 id="fearful-4"><strong>Our “Fearful 4” final expense policies</strong></h2>
 
 <p>If you are fearful that you will be sold a policy by some companies that won’t pay out when you need it the most, you are right to be worried!</p>
 
@@ -780,7 +780,7 @@ sidebar: true
 <li>Up to a 3-year waiting period for more significant pre-existing health conditions.</li>
 </ul>
 
-<h2 id="frequently-asked-questions"><strong>  Additional Questions &amp; Answers On Top 10 Final Expense Insurance Companies</strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Additional questions &amp; answers on top 10 final expense insurance companies</strong></h2>
 
 <p><strong>Is final expense insurance a good deal?</strong></p>
 

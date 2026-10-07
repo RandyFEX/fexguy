@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>AMERICAN LEGION LIFE INSURANCE IS NOT WHAT MOST MEMBERS ASSUME</strong></h2>
+<h2><strong>American Legion life insurance is not what most members assume</strong></h2>
 
 <p>The phrase “no cost coverage” sounds like a free life insurance policy that will take care of final expenses.</p>
 
@@ -41,7 +41,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW AMERICAN LEGION INSURANCE IS ADMINISTERED THROUGH AMWINS</strong></h2>
+<h2><strong>How American Legion insurance is administered through Amwins</strong></h2>
 
 <p>The insurance programs offered to members are not owned or administered by The American Legion.</p>
 
@@ -53,7 +53,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE NO-COST LEGIONCARE AD&amp;D BENEFIT AND ITS REAL LIMITS</strong></h2>
+<h2><strong>The no-cost LegionCare AD&amp;D benefit and its real limits</strong></h2>
 
 <p>Many Legion members hear “no cost coverage” and assume they already have real-life insurance, but LegionCare is strictly accidental death and dismemberment.</p>
 
@@ -79,7 +79,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE SENIOR TERM LIFE PLAN AND ITS LOW MAXIMUM COVERAGE</strong></h2>
+<h2><strong>The senior term life plan and its low maximum coverage</strong></h2>
 
 <p>The senior term life plan offered through the American Legion Auxiliary is guaranteed acceptance, but the coverage limits are minimal.</p>
 
@@ -99,7 +99,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HARTFORD’S ACCIDENTAL DEATH PLAN AND WHO ACTUALLY BENEFITS</strong></h2>
+<h2><strong>Hartford’s accidental death plan and who actually benefits</strong></h2>
 
 <p>The Hartford Life and Accident Insurance Company plan offered to American Legion Auxiliary members is accident-only coverage, not standard life insurance.</p>
 
@@ -125,7 +125,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW AGE BANDS AND MEMBERSHIP STATUS AFFECT ELIGIBILITY</strong></h2>
+<h2><strong>How age bands and membership status affect eligibility</strong></h2>
 
 <p>The life and accidental plans offered through the American Legion Auxiliary use strict age bands and membership rules. These limits affect both who can qualify and the duration of coverage.</p>
 
@@ -147,7 +147,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>UNDERSTANDING BENEFIT CAPS, RATE INCREASES, AND RENEWAL RULES</strong></h2>
+<h2><strong>Understanding benefit caps, rate increases, and renewal rules</strong></h2>
 
 <p>The American Legion Auxiliary life insurance programs have fixed benefit ceilings that stay small even at the highest available level.</p>
 
@@ -171,7 +171,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>PORTABILITY LIMITS IF YOU LEAVE THE LEGION</strong></h2>
+<h2><strong>Portability limits if you leave the Legion</strong></h2>
 
 <p>Many members believe their American Legion or American Legion Auxiliary insurance follows them for life, no matter what, but the plans require ongoing membership, and eligibility can change if membership ends.</p>
 
@@ -195,7 +195,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>REGULATORY OVERSIGHT AND WHO PROTECTS YOUR POLICY</strong></h2>
+<h2><strong>Regulatory oversight and who protects your policy</strong></h2>
 
 <p>Many American Legion and Auxiliary members assume their organization oversees or guarantees the insurance programs connected to membership.</p>
 
@@ -217,7 +217,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINANCIAL STRENGTH AND A.M. BEST RATINGS OF THE UNDERWRITING CARRIERS</strong></h2>
+<h2><strong>Financial strength and A.M. Best ratings of the underwriting carriers</strong></h2>
 
 <p>It matters who underwrites the insurance that your family relies on, not just the name of the organization offering it.</p>
 
@@ -231,7 +231,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY ACCIDENTAL ONLY BENEFITS FALL SHORT FOR FINAL EXPENSES</strong></h2>
+<h2><strong>Why accidental only benefits fall short for final expenses</strong></h2>
 
 <p>Many Legion and Auxiliary members assume accidental coverage is “close enough” to real-life insurance.</p>
 
@@ -255,7 +255,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COVERAGE GAPS THAT COMMONLY SURPRISE LEGION FAMILIES</strong></h2>
+<h2><strong>Coverage gaps that commonly surprise Legion families</strong></h2>
 
 <p>Many Legion and Auxiliary families believe they have enough insurance through membership programs.</p>
 
@@ -287,7 +287,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT HAPPENS TO YOUR FAMILY IF YOU RELY ONLY ON LEGION COVERAGE</strong></h2>
+<h2><strong>What happens to your family if you rely only on Legion coverage</strong></h2>
 
 <p>Families who rely only on American Legion or Auxiliary coverage often believe they have “something in place,” but the plans do not cover the situations that most families face.</p>
 
@@ -317,7 +317,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPARING AMERICAN LEGION PLANS TO SIMPLIFIED ISSUE WHOLE LIFE</strong></h2>
+<h2><strong>Comparing American Legion plans to simplified issue whole life</strong></h2>
 
 <p>Members often assume the Legion programs work the same way as simplified issue whole life policies offered through the Final Expense Guy, but the structure is entirely different.</p>
 
@@ -363,7 +363,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WAITING PERIODS, SENIOR RESTRICTIONS, AND HIDDEN FINE PRINT</strong></h2>
+<h2><strong>Waiting periods, senior restrictions, and hidden fine print</strong></h2>
 
 <p>The Guaranteed Acceptance Senior Term Life plan does not require medical questions, but it does limit the amount of coverage available to older members.</p>
 
@@ -379,7 +379,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW LEGION INSURANCE PRICES COMPARE TO INDEPENDENT MARKET RATES</strong></h2>
+<h2><strong>How Legion insurance prices compare to independent market rates</strong></h2>
 
 <p>Most members assume Legion pricing is competitive because the plans are marketed as “member benefits.”</p>
 
@@ -399,7 +399,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT FIRST DAY COVERAGE ACTUALLY PROVIDES FOR LEGION MEMBERS</strong></h2>
+<h2><strong>What first day coverage actually provides for Legion members</strong></h2>
 
 <p>First-day coverage is real-life insurance that pays for death from any cause starting the moment the policy takes effect. This includes illness, chronic conditions, medical complications, and age-related decline.</p>
 
@@ -427,7 +427,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW INDEPENDENT BROKERS ACCESS BETTER PRICING AND HIGHER COVERAGE</strong></h2>
+<h2><strong>How independent brokers access better pricing and higher coverage</strong></h2>
 
 <p>Independent brokers like The Final Expense Guy are not tied to a single company or a single membership organization.</p>
 
@@ -459,7 +459,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY MOST MEMBERS QUALIFY FOR MORE AFFORDABLE PLANS OUTSIDE THE LEGION</strong></h2>
+<h2><strong>Why most members qualify for more affordable plans outside the Legion</strong></h2>
 
 <p>Many Legion and Auxiliary members assume that outside life insurance will be harder to qualify for or more expensive. In most cases, the opposite is true.</p>
 
@@ -479,7 +479,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO REPLACE OR SUPPLEMENT LEGION COVERAGE WITH REAL PROTECTION</strong></h2>
+<h2><strong>How to replace or supplement Legion coverage with real protection</strong></h2>
 
 <p>Legion and Auxiliary members who discover the limits of their current plans often want to strengthen their coverage without losing the benefits they already have.</p>
 
@@ -503,7 +503,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: AMERICAN LEGION</strong></h2>
+<h2><strong>Frequently asked questions: American Legion</strong></h2>
 
 <p><strong>Does the American Legion provide any life insurance options for its members?</strong></p>
 

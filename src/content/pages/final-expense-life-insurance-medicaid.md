@@ -33,7 +33,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW MEDICAID “ASSET LIMITS” AND LIFE INSURANCE INTERACT</strong></h2>
+<h2><strong>How Medicaid “asset limits” and life insurance interact</strong></h2>
 
 <p>Medicaid eligibility depends on countable assets, and a policy’s cash surrender value can push applicants over the limit even when the death benefit looks small.</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COST COMPARISON: FIRST-DAY COVERAGE VS GUARANTEED ISSUE</strong></h2>
+<h2><strong>Cost comparison: first-day coverage vs guaranteed issue</strong></h2>
 
 <p>Policy type determines both payout timing and lifetime cost, and waiting periods decide whether families get full benefits or almost nothing.</p>
 
@@ -139,7 +139,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY MANY “MEDICAID-FRIENDLY” POLICIES ARE MISLEADING</strong></h2>
+<h2><strong>Why many “Medicaid-friendly” policies are misleading</strong></h2>
 
 <p>The phrase “Medicaid-friendly” is often used by life insurance call centers and insurance marketers to sound reassuring.</p>
 
@@ -157,7 +157,7 @@ sidebar: true
 
 <h3>
 ⚠️
-The “Medicaid-Friendly” Postcard
+The “Medicaid-Friendly” postcard
 </h3>
 
 <p>Linda, 71, received a postcard that labeled a guaranteed acceptance whole life policy as “Medicaid-friendly,” which implied protection without affecting benefits, and she mailed it back the same day.</p>
@@ -170,7 +170,7 @@ The “Medicaid-Friendly” Postcard
 
 <hr>
 
-<h2><strong>WHO QUALIFIES FOR FINAL EXPENSE INSURANCE ON MEDICAID</strong></h2>
+<h2><strong>Who qualifies for final expense insurance on Medicaid</strong></h2>
 
 <p>Eligibility hinges on policy ownership and structure, not Medicaid status alone.</p>
 
@@ -186,7 +186,7 @@ The “Medicaid-Friendly” Postcard
 
 <hr>
 
-<h2><strong>WHAT AN IRREVOCABLE FUNERAL TRUST (IFT) DOES</strong></h2>
+<h2><strong>What an irrevocable funeral trust (IFT) does</strong></h2>
 
 <p>A funeral trust removes insurance funds from personal control so they don’t count against Medicaid limits.</p>
 
@@ -208,7 +208,7 @@ The “Medicaid-Friendly” Postcard
 
 <hr>
 
-<h2><strong>UNDERSTANDING “STATE-REGULATED” AND “MEDICAID-APPROVED” AD CLAIMS</strong></h2>
+<h2><strong>Understanding “state-regulated” and “Medicaid-approved” ad claims</strong></h2>
 
 <p>Advertising phrases create a false sense of authority even though no government agency approves insurance products.</p>
 
@@ -224,7 +224,7 @@ The “Medicaid-Friendly” Postcard
 
 <h3>
 🔍
-The “State-Regulated” Facebook Ad
+The “State-Regulated” Facebook ad
 </h3>
 
 <p>Robert and Elaine, both 74, responded to a Facebook ad stating a life insurance plan was “state-regulated,” which implied government backing, and they scheduled a same-day call.</p>
@@ -237,7 +237,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>WHY MEDICAID PLANNING WITH LIFE INSURANCE OFTEN GOES WRONG</strong></h2>
+<h2><strong>Why Medicaid planning with life insurance often goes wrong</strong></h2>
 
 <p>Mistakes in ownership timing and inexperienced sellers lead to denials, penalties, and lost coverage.</p>
 
@@ -299,7 +299,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>FINANCIAL STRENGTH AND CONSUMER PROTECTION</strong></h2>
+<h2><strong>Financial strength and consumer protection</strong></h2>
 
 <p>An insurer’s ratings and complaint history predict whether claims get paid when families need them.</p>
 
@@ -311,7 +311,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>HOW TO PROTECT YOUR BENEFICIARIES FROM MEDICAID RECOVERY</strong></h2>
+<h2><strong>How to protect your beneficiaries from Medicaid recovery</strong></h2>
 
 <p>Beneficiary choices determine whether payouts go to loved ones or are subject to estate recovery.</p>
 
@@ -329,7 +329,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>HOW TO KEEP YOUR COVERAGE MEDICAID-COMPLIANT</strong></h2>
+<h2><strong>How to keep your coverage Medicaid-compliant</strong></h2>
 
 <p>Compliance comes from controlling ownership, cash value, and timing long before an application is filed.</p>
 
@@ -347,7 +347,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>BEST FINAL EXPENSE OPTIONS FOR PEOPLE ON MEDICAID</strong></h2>
+<h2><strong>Best final expense options for people on Medicaid</strong></h2>
 
 <p>A short list of A-rated carriers consistently delivers first-day coverage without Medicaid problems.</p>
 
@@ -361,7 +361,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>WHY WORKING WITH THE FINAL EXPENSE GUY SAVES YOU MONEY</strong></h2>
+<h2><strong>Why working with the Final Expense Guy saves you money</strong></h2>
 
 <p>Independent comparison beats call center scripts when Medicaid rules and real coverage matter.</p>
 
@@ -375,7 +375,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>STATE-BY-STATE DIFFERENCES IN MEDICAID AND FUNERAL TRUST RULES</strong></h2>
+<h2><strong>State-by-state differences in Medicaid and funeral trust rules</strong></h2>
 
 <p>Local rules change trust limits and exemptions, so generic advice can wreck eligibility</p>
 
@@ -395,7 +395,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>GOVERNMENT RESOURCES AND CONSUMER PROTECTION AGENCIES</strong></h2>
+<h2><strong>Government resources and consumer protection agencies</strong></h2>
 
 <p>Public agencies publish the rules and data needed to verify claims and avoid bad actors.</p>
 
@@ -411,7 +411,7 @@ The “State-Regulated” Facebook Ad
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: FINAL EXPENSE INSURANCE MEDICAID</strong></h2>
+<h2><strong>Frequently asked questions: final expense insurance Medicaid</strong></h2>
 
 <p><strong>Does Medicaid cover final expenses?</strong><br>Medicaid doesn’t pay funeral or burial bills.<br>Medicaid pays for healthcare and long-term care, not funerals or burial costs. Once someone passes away, their Medicaid coverage ends immediately. That’s why final expense life insurance is critical, as it provides guaranteed funds to cover funeral, burial, cremation, or medical bills that Medicaid may not cover. The Final Expense Guy helps Medicaid recipients get policies structured correctly so they stay eligible for benefits while still protecting their family from financial stress later.</p>
 
@@ -435,7 +435,7 @@ The “State-Regulated” Facebook Ad
 
 <p><strong>What final expense insurance works with Medicaid?</strong><br>Simplified issue whole life insurance works best with Medicaid when ownership and trust setup are done right.<br>These plans offer first-day coverage for most health conditions and may be kept from counting by using an irrevocable funeral trust your state allows. Who owns the policy can also affect how it’s treated, so check your state’s rules before changing ownership. The key is applying before your health worsens or asset rules change. The Final Expense Guy helps you do this right the first time, while protecting your Medicaid eligibility and guaranteeing your family’s peace of mind.</p>
 
-<h2><strong>SOURCES</strong></h2>
+<h2><strong>Sources</strong></h2>
 
 <ul>
 <li>Electronic Code of Federal Regulations, <a href="https://www.ecfr.gov/current/title-20/chapter-III/part-416/subpart-L/section-416.1205" target="_blank" rel="noreferrer noopener">20 CFR 416.1205</a>, Limitation on resources (SSI)</li>
@@ -450,25 +450,25 @@ The “State-Regulated” Facebook Ad
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">2 Comments</h2>
+<h2 class="as-h5">2 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-1569">
-<h3 class="comment-name as-h6">Lou Lopez </h3>                                            
+<h3 class="comment-name as-h6">Lou lopez </h3>                                            
 <p>Info on 62 year old male, please.</p>
 <div class="comment-meta">
 November 19, 2019 at 5:09 am                    

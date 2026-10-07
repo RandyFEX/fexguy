@@ -64,7 +64,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-for-people-with-hiv"><strong>What Is My Best Insurance Option If I Have A History Of HIV?</strong></h2>
+<h2 id="best-option-for-people-with-hiv"><strong>What is my best insurance option if I have a history of HIV?</strong></h2>
 
 <p>People with HIV can easily qualify for a guaranteed issue life insurance policy or automatic approval life insurance. This type of insurance policy does not require a medical exam or asking any health questions. Acceptance is guaranteed regardless of health condition. </p>
 
@@ -109,7 +109,7 @@ sidebar: true
 
 <p>Guaranteed acceptance life insurance policies will immediately cover&#160;<strong>accidental causes of death,</strong>&#160;which include motor vehicle accidents, slips, and falls, natural disasters, etc.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -148,7 +148,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -197,7 +197,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-a-medical-exam"><br><strong>If I’m HIV Positive, Do I Need A Medical Exam To Qualify? </strong></h2>
+<h2 id="do-i-need-a-medical-exam"><br><strong>If I’m HIV positive, do I need a medical exam to qualify? </strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for HIV-positive.</p>
 
@@ -205,7 +205,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I’m HIV Positive?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I’m HIV positive?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -265,11 +265,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>HIV And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>HIV and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -278,7 +278,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="should-i-tell-the-insurance-company"><br><strong>Should You Tell The Life Insurance Company That You Are Hiv Positive?</strong></h2>
+<h2 id="should-i-tell-the-insurance-company"><br><strong>Should you tell the life insurance company that you are HIV positive?</strong></h2>
 
 <p>You are required to disclose your current health status to an insurance company only when you are asked to divulge that information for coverage. You are not required to share your information if they do not ask about your HIV infection or any health-related issues.</p>
 
@@ -286,7 +286,7 @@ sidebar: true
 
 <p>You must be aware that most life insurance policies have a contestability clause. It extends to two years after you bought the policy. During this period, your life insurance company can challenge a claim or cancel your policy if you are found to be lying about your health condition.</p>
 
-<h2 id="why-do-you-need-life-insurance"><br><strong>Why Do You Need To Buy Life Insurance If You Have Hiv?</strong></h2>
+<h2 id="why-do-you-need-life-insurance"><br><strong>Why do you need to buy life insurance if you have HIV?</strong></h2>
 
 <p>HIV can cause AIDS, which results in failure of the immune system to combat life-threatening infections, leading to premature death.</p>
 
@@ -298,7 +298,7 @@ sidebar: true
 
 <p>More often, people with HIV leave their families with massive medical debts to pay. Life insurance can provide a financial legacy for the survivors, which can be used to pay medical bills incurred before death. HIV burial insurance provides people with HIV with peace of mind knowing that their family will be taken care of after their death.</p>
 
-<h2 id="can-you-get-life-insurance-if-you-were-declined"><br><strong>Can You Get Hiv Life Insurance If You Were Declined Due To HIV?</strong></h2>
+<h2 id="can-you-get-life-insurance-if-you-were-declined"><br><strong>Can you get HIV life insurance if you were declined due to HIV?</strong></h2>
 
 <p>The good news is YES! You can still qualify for life insurance even if you were declined in the past. Tell us upfront if you were rejected by insurance companies specializing in HIV life insurance underwriting.</p>
 
@@ -306,7 +306,7 @@ sidebar: true
 
 <p>We will review the options available for you to help you get the protection you need. Call us at&#160;(888) 862-9456 if you have questions about HIV and insurance or if you have any questions about life insurance.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -321,7 +321,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance </strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance </strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -340,7 +340,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with AIDS, HIV, or AIDS-related complex needn’t be frustrating; working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker.</p>
 
@@ -358,21 +358,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a>  <a href="/what-to-do-when-a-loved-one-dies/">
-<h3 class="as-h5">What to Do When a Loved One Dies</h3>
+<h3 class="as-h5">What to do when a loved one dies</h3>
 </a></div>
 
-<h2 class="as-h5">2 Comments</h2>
+<h2 class="as-h5">2 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-6">

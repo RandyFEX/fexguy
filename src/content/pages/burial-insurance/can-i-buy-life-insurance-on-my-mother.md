@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="why-do-i-need-to-buy-life-insurance-on-my-mother"><strong>Why Do I Need To Buy Life Insurance On My Mother?</strong></h2>
+<h2 id="why-do-i-need-to-buy-life-insurance-on-my-mother"><strong>Why do I need to buy life insurance on my mother?</strong></h2>
 
 <p>You may need to buy life insurance for mothers, particularly if you are independent and not relying on them for financial support. The primary reason children purchase this insurance on parents is to protect themselves financially when a parent dies.</p>
 
@@ -60,7 +60,7 @@ sidebar: true
 
 <p>Buying life insurance for your mother can be affordable, depending on the type and amount of coverage, and the insurance provider you choose to buy policy.&#160; So, whether you are worried about covering funeral expenses, paying off your mother’s debt, or other financial obligations, we can help you start on the plan that’s right for your mom.</p>
 
-<h2 id="what-are-the-requirements-to-get-life-insurance-on-my-mother"><br><strong>What Are The Requirements To Get Life Insurance On My Mother?</strong></h2>
+<h2 id="what-are-the-requirements-to-get-life-insurance-on-my-mother"><br><strong>What are the requirements to get life insurance on my mother?</strong></h2>
 
 <p>Buying a life insurance policy on your mother or buying life insurance for your parents is possible as long as you have insurable interest and consent.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>You’ll need your mother’s consent to take out your mother’s life insurance. It’s illegal and fraudulent to purchase a policy without her knowledge. The insurance company will also require a medical exam or health questionnaire. Aside from these,&#160;<strong>she must read the policy and sign a form agreeing to the terms. So, it’s impossible for you to get a plan without her knowledge and consent.</strong></p>
 
-<h2 id="which-type-of-life-insurance-is-best-for-my-mother"><br><strong>Which Type Of Life Insurance Is Best For My Mother?</strong></h2>
+<h2 id="which-type-of-life-insurance-is-best-for-my-mother"><br><strong>Which type of life insurance is best for my mother?</strong></h2>
 
 <p>Are you considering getting life insurance coverage for your mom? Here are the different types of life insurance policies to choose from.</p>
 
@@ -104,7 +104,7 @@ sidebar: true
 
 <p>Whatever your mom’s age, over 60, or over 70 life insurance for parents no medical exam is still possible. Insurance companies will look at their present health status and any past health issues she had. Of course, the older she is, the more money it will cost to obtain a life insurance policy.</p>
 
-<h2 id="how-much-coverage-should-i-get-for-my-mother"><br><strong>How Much Coverage Should I Get For My Mother?</strong></h2>
+<h2 id="how-much-coverage-should-i-get-for-my-mother"><br><strong>How much coverage should I get for my mother?</strong></h2>
 
 <p>The amount of coverage you need will largely depend on the overall purpose of life insurance. You need to consider different factors when deciding on the amount of coverage to purchase for your mom:</p>
 
@@ -125,7 +125,7 @@ sidebar: true
 
 <p>You must purchase a sufficient amount of insurance coverage for your mother, depending on her present situation. Too little coverage won’t give you the financial protection you need. Too much coverage can raise a red flag to the insurance carrier. </p>
 
-<h2 id="what-if-my-mom-is-not-in-good-health"><br><strong>What If My Mom Is Not In Good Health?</strong></h2>
+<h2 id="what-if-my-mom-is-not-in-good-health"><br><strong>What if my mom is not in good health?</strong></h2>
 
 <p>If you are purchasing a policy for an elderly parent or if your mom has any significant medical condition that puts her in the high-risk category, she may not qualify for a fully underwritten policy. In this situation, there’s still an option available for her.</p>
 
@@ -135,7 +135,7 @@ sidebar: true
 
 <p>The only drawback to the guaranteed acceptance policy is the two-year waiting period and the limited death benefit. Depending on the company you apply to, you can only purchase $2,000 to a maximum of $50,000.</p>
 
-<h2 id="how-to-apply-for-life-insurance-on-my-mother"><br><strong>How To Apply For Life Insurance On My Mother</strong></h2>
+<h2 id="how-to-apply-for-life-insurance-on-my-mother"><br><strong>How to apply for life insurance on my mother</strong></h2>
 
 <p>Identify what type of life insurance you want for your mom. Then determine the coverage amount you need by adding your mom’s debt and other financial obligations with the funeral cost. After deciding on the kind of policy and the coverage you need, you must get your mom’s permission to get her a life insurance policy.</p>
 
@@ -159,7 +159,7 @@ sidebar: true
 
 <p>If you opt for a non-medical or guaranteed issue policy, your mom will skip the intrusive medical underwriting. You will typically get approval after the telephone interview.</p>
 
-<h2 id="important-things-to-consider-before-buying-life-insurance"><br><strong>Important Things To Consider Before Buying Life Insurance On Your Mother</strong></h2>
+<h2 id="important-things-to-consider-before-buying-life-insurance"><br><strong>Important things to consider before buying life insurance on your mother</strong></h2>
 
 <p>There are four parties involved in the purchase of a life insurance policy:</p>
 
@@ -194,7 +194,7 @@ sidebar: true
 
 <p>Be careful when you set up your mom’s policy to avoid the tax trap. Avoid making the insured, beneficiary, and owner three different people.</p>
 
-<h2 id="how-to-get-the-best-rates"><br><strong>How To Get The Best Rates On Your Mother’s Life Insurance Policy</strong></h2>
+<h2 id="how-to-get-the-best-rates"><br><strong>How to get the best rates on your mother’s life insurance policy</strong></h2>
 
 <p>Comparing rates from different insurance carriers is the only way to ensure you get the most affordable and best life insurance for parents.</p>
 
@@ -214,7 +214,7 @@ sidebar: true
 
 <p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I buy insurance </strong><strong>on my mother</strong><strong>?</strong></p>
 

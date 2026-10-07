@@ -47,9 +47,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Guarantee Trust Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Guarantee Trust Life insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-guarantee-trust-life">What Are My Policy Options With Guarantee Trust Life?</h3>
+<h3 id="h-what-are-my-policy-options-with-guarantee-trust-life">What are my policy options with Guarantee Trust Life?</h3>
 
 <p>Guarantee Trust Life offers Heritage Plan graded benefit whole life insurance designed for people 50-90 years old with significant health problems who do not want a policy with a two-year waiting period. </p>
 
@@ -67,7 +67,7 @@ sidebar: true
 <li>Cash value buildup that can be borrowed against in emergencies</li>
 </ul>
 
-<h3 id="h-how-does-heritage-plan-work">How Does Heritage Plan Work?</h3>
+<h3 id="h-how-does-heritage-plan-work">How does Heritage Plan work?</h3>
 
 <p>Guaranteed Trust Life Heritage Plan is a burial insurance policy designed to pay for burial, cremation, funeral, or final expenses. </p>
 
@@ -86,7 +86,7 @@ sidebar: true
 
 <p>For accidental death (during the first two years) GTL would pay the full coverage amount.</p>
 
-<h3 id="h-does-guarantee-trust-life-have-any-fine-print-in-their-policy">Does Guarantee Trust Life Have Any “Fine Print” In Their Policy? </h3>
+<h3 id="h-does-guarantee-trust-life-have-any-fine-print-in-their-policy">Does Guarantee Trust Life have any “Fine Print” in their policy? </h3>
 
 <p>There is no “fine print” with the GTL Heritage plan.</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>GTL will pay the full face amount for any accidental death. Accidental death coverage is a first-day benefit.</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Guarantee Trust Life Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Guarantee Trust Life insurance?</strong></h2>
 
 <p><strong>Heritage Plan Graded Benefit Whole Life</strong></p>
 
@@ -123,15 +123,15 @@ sidebar: true
 <li>Limited coverage amount of $20,000 maximum</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Guarantee Trust Life Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Guarantee Trust Life life insurance?</strong></h2>
 
-<h3>Guarantee Trust Life Riders</h3>
+<h3>Guarantee Trust Life riders</h3>
 
 <ul>
 <li>Guarantee Trust Life includes no riders in their Heritage Plan.</li>
 </ul>
 
-<h3>Guarantee Trust Life Other Benefits</h3>
+<h3>Guarantee Trust Life other benefits</h3>
 
 <ul>
 <li><strong>Temporary Accidental Death Benefit: </strong>“If the insured dies solely because of accidental bodily injuries during the first 2 policy years, we will pay the full face amount under the temporary accidental death benefit.”</li>
@@ -147,11 +147,11 @@ sidebar: true
 <li>Premium discounts compared to other companies for people with significant health problems.</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Guarantee Trust Life?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Guarantee Trust Life?</strong></h2>
 
 <p>Guarantee Trust Life’s graded benefit whole life insurance will ask if you’ve had health issues in the last 24 months.</p>
 
-<h3 id="h-what-are-guarantee-trust-life-s-application-questions">What Are Guarantee Trust Life’s Application Questions?</h3>
+<h3 id="h-what-are-guarantee-trust-life-s-application-questions">What are Guarantee Trust Life’s application questions?</h3>
 
 <p>If any answer to questions 1 through 6 is YES, you are not eligible for coverage.</p>
 
@@ -211,13 +211,13 @@ sidebar: true
 
 <p>With most other insurance companies, if you have any of the above health issues, they would only offer you a two-year waiting period policy (which we never recommend!). </p>
 
-<h3>Does Guarantee Trust Life Have The Same Day Approval Process?</h3>
+<h3>Does Guarantee Trust Life have the same day approval process?</h3>
 
 <p>Guarantee Trust Life has a simple application process through Final Expense Guy.</p>
 
 <p>We can complete your application in less than 15 minutes and get your policy in force within 24 hours.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get life insurance pricing?</strong></h2>
 
 <p>Guarantee Trust Life rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -365,7 +365,7 @@ sidebar: true
 
 <p> *Pricing is for illustration purposes only and is subject to change without notice. </p>
 
-<h3>How does Guarantee Trust Life Life insurance compare?</h3>
+<h3>How does Guarantee Trust Life life insurance compare?</h3>
 
 <p>We always recommend first-day coverage if possible and don’t recommend GTL if you are in good to below-average health.</p>
 
@@ -375,39 +375,39 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Guarantee Trust Life Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Guarantee Trust Life company questions</strong></h2>
 
-<h3 id="Financial-Rating">What Is Guarantee Trust Life’s Operational History</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s operational history</h3>
 
 <p>Guarantee Trust Life is a family-owned mutual reserve company. It was established in 1936 by Richard Holson. </p>
 
 <p>The Holson family has remained at the company’s helm for three generations. GTL provides accident, life, and special risk insurance programs to individuals, families, and groups.</p>
 
-<h4>Company Address</h4>
+<h4>Company address</h4>
 
 <p>Guarantee Trust Life<br>1275 Milwaukee Avenue<br>Glenview, IL 60025</p>
 
-<h4>Contact Info</h4>
+<h4>Contact info</h4>
 
 <p>Website: <a href="https://www.gtlic.com" target="_blank" rel="noreferrer noopener">https://www.gtlic.com</a><br>Customer Service: (800) 338-7452<br></p>
 
-<h3 id="Financial-Rating">What Is Guarantee Trust Life’s Financial Rating?</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s financial rating?</h3>
 
 <p>Guarantee Trust Life has an A- (Excellent) rating from A.M. Best, the country’s number-one rating agency.  This rating shows the financial strength of the company and its ability to pay claims on time.</p>
 
-<h3>Does Guarantee Trust Life Have Any Consumer Complaints?</h3>
+<h3>Does Guarantee Trust Life have any consumer complaints?</h3>
 
 <p>Guarantee Trust Life has six complaints recorded in the National Association of Insurance Commissioners (NAIC). Most of the complaints are regarding claim handling.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Guarantee Trust Life Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Guarantee Trust Life life insurance?</strong></h2>
 
-<h3 id="Financial-Rating">What is Guarantee Trust Life’s Sales Process?</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s sales process?</h3>
 
 <p>Final Expense Guy as an approved agency to sell their life insurance products. GTL does not have any agents that work within the company to help you buy their insurance products.</p>
 
 <p>Working with an independent agency like Final Expense Guy allows us to shop many <a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">other life insurance companies</a> to see who will give you the best pricing and 1st-day coverage or benefits.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-guarantee-trust-life">Are Any Health Conditions Not Accepted By Guarantee Trust Life?</h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-guarantee-trust-life">Are any health conditions not accepted by Guarantee Trust Life?</h3>
 
 <p>They do not accept these health issues for GTL Heritage Plan:</p>
 
@@ -429,7 +429,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today">How Can I Get Pricing Help Today?</h3>
+<h3 id="h-how-can-i-get-pricing-help-today">How can I get pricing help today?</h3>
 
 <p>Use our quoting software below to see how Guarantee Trust Life pricing compares to other companies.</p>
 
@@ -440,7 +440,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions">What Are The Top 10 Questions About Guarantee Trust Life?</h2>
+<h2 id="top-10-questions">What are the top 10 questions about Guarantee Trust Life?</h2>
 
 <details>
 <summary><b>Is Guarantee Trust Life a good company?</b></summary>

@@ -26,7 +26,7 @@ sidebar: true
 
 <p>Complete my quote request form on this page to quickly avoid overpaying.</p>
 
-<h2 id="h-what-is-a-build-chart-for-life-insurance"><strong>WHAT IS A BUILD CHART FOR LIFE INSURANCE?</strong></h2>
+<h2 id="h-what-is-a-build-chart-for-life-insurance"><strong>What is a build chart for life insurance?</strong></h2>
 
 <p>A “Build Chart” is a height and weight chart used by an insurance company or life insurance agents to underwrite and identify what rate and health category you may fall into based on your height and weight only.</p>
 
@@ -42,7 +42,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-common-complaints-with-life-insurance-build-charts"><strong>COMMON COMPLAINTS WITH LIFE INSURANCE BUILD CHARTS</strong></h2>
+<h2 id="h-common-complaints-with-life-insurance-build-charts"><strong>Common complaints with life insurance build charts</strong></h2>
 
 <h3 id="h-below-are-some-of-the-most-common-complaints-or-concerns-about-build-charts"><strong>Below are some of the most common complaints or concerns about “build charts”:</strong></h3>
 
@@ -70,7 +70,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-why-insurers-use-build-charts"><strong>WHY INSURERS USE BUILD CHARTS</strong></h2>
+<h2 id="h-why-insurers-use-build-charts"><strong>Why insurers use build charts</strong></h2>
 
 <p>Insurance companies using build charts for life insurance is a decades-old practice.</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-pros-amp-cons-of-life-insurance-build-charts"><strong>PROS &amp; CONS OF LIFE INSURANCE BUILD CHARTS</strong></h2>
+<h2 id="h-pros-amp-cons-of-life-insurance-build-charts"><strong>Pros &amp; cons of life insurance build charts</strong></h2>
 
 <p>From the insurer’s perspective, using a height and weight chart adds consistency and predictability to the underwriting process. They standardize risk assessment so that those with similar health risks are underwritten in a similar way.</p>
 
@@ -102,7 +102,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-what-to-expect-moving-forward"><strong>WHAT TO EXPECT MOVING FORWARD</strong></h2>
+<h2 id="h-what-to-expect-moving-forward"><strong>What to expect moving forward</strong></h2>
 
 <p>There is a trend towards “simplified underwriting”.</p>
 
@@ -114,7 +114,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-what-if-you-don-t-meet-the-chart-requirements"><strong>WHAT IF YOU DON’T MEET THE CHART REQUIREMENTS?</strong></h2>
+<h2 id="h-what-if-you-don-t-meet-the-chart-requirements"><strong>What if you don’t meet the chart requirements?</strong></h2>
 
 <p><strong>Here are several strategies if you’re a bit out of the required “build chart” specifications:</strong></p>
 
@@ -136,7 +136,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-suggestions-for-getting-the-lowest-life-insurance-rates"><strong>SUGGESTIONS FOR GETTING THE LOWEST LIFE INSURANCE RATES:</strong></h2>
+<h2 id="h-suggestions-for-getting-the-lowest-life-insurance-rates"><strong>Suggestions for getting the lowest life insurance rates:</strong></h2>
 
 <p><strong>Here are a few suggestions to get working on if you know you’ll want some life insurance in the future:</strong></p>
 
@@ -147,7 +147,7 @@ sidebar: true
 <li>Also, be aware that many people put on weight after quitting smoking, so you may be better off applying at smoking rates rather than overweight rates.</li>
 </ul>
 
-<h2 id="h-why-the-final-expense-guy"><strong>WHY THE FINAL EXPENSE GUY</strong></h2>
+<h2 id="h-why-the-final-expense-guy"><strong>Why the Final Expense Guy</strong></h2>
 
 <p>The Final Expense Guy shops multiple carriers to find the best match for height, weight, and general health.</p>
 
@@ -155,7 +155,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-conclusion"><strong>CONCLUSION</strong></h2>
+<h2 id="h-conclusion"><strong>Conclusion</strong></h2>
 
 <p>Weigh charts are essential underwriting tools for the life insurance industry. You may feel they are unfair, but with the right company, you can find the best possible coverage.</p>
 
@@ -177,7 +177,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-frequently-asked-questions"><strong>FREQUENTLY ASKED QUESTIONS</strong></h2>
+<h2 id="h-frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>How do insurance carriers determine limits of weight by height for rate classes</strong>? Insurance carriers reference height and weight charts when developing their maximum or minimum weight limits for each height when setting rate classes.</p>
 
@@ -205,16 +205,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>

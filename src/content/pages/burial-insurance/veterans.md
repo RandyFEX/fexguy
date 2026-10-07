@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-happens-when-military-service-ends"><br><strong>What Happens When Military Service Ends?</strong></h2>
+<h2 id="what-happens-when-military-service-ends"><br><strong>What happens when military service ends?</strong></h2>
 
 <p>All Army, Air Force, Navy, Marines, or Coast Guard members are automatically enrolled in Servicemembers Group Life Insurance (SGLI). How much life insurance do veterans get? This is life insurance with a maximum coverage amount of $400,000. This veteran death benefits life insurance last until 120 days after the retirement date or the moment you leave the service.</p>
 
@@ -66,7 +66,7 @@ sidebar: true
 <li>485 days onwards – Too late to convert your SGLI to VGLI. You are no longer covered by SGLI and can’t convert to VGLI. Private life insurance is your only option for insurance coverage.</li>
 </ul>
 
-<h2 id="burial-insurance-for-veterans"><br><strong>Burial Insurance For Veterans</strong></h2>
+<h2 id="burial-insurance-for-veterans"><br><strong>Burial insurance for veterans</strong></h2>
 
 <p>Burial insurance, in many ways, is more important for veterans than other groups. Veterans know that the unexpected can happen, and life insurance will be very important for the financial welfare of their families.</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <p>One significant advantage of burial insurance for veterans is that it’s very easy to buy. You only need to answer some questions about your health, and some plans don’t even ask any health questions at all.</p>
 
-<h2 id="best-features-of-burial-insurance-for-veterans"><br><strong>Best Features Of Burial Insurance For Veterans</strong></h2>
+<h2 id="best-features-of-burial-insurance-for-veterans"><br><strong>Best features of burial insurance for veterans</strong></h2>
 
 <ol>
 <li><strong>Immediate approval</strong> – there is fast approval for burial insurance for veterans. The approval time can generally range from 15 minutes to a few business days. The time it takes to be approved depends on the company you apply with, but most insurance companies offer instant approval over the phone.</li>
@@ -98,7 +98,7 @@ sidebar: true
 <li><strong>Many insurance providers offer</strong> burial insurance to veterans – more and more insurance companies are now providing coverage to veterans. They are all competing for your business, so you can choose the best company offering the best price at the best value.</li>
 </ol>
 
-<h2 id="burial-insurance-options-for-veterans"><br><strong>Burial Insurance Options For Veterans</strong></h2>
+<h2 id="burial-insurance-options-for-veterans"><br><strong>Burial insurance options for veterans</strong></h2>
 
 <p>There are different life insurance policy options to consider in civilian life after you’ve separated from the military.</p>
 
@@ -172,7 +172,7 @@ sidebar: true
 
 <p>Guaranteed issue burial insurance is graded for the first two years, which means the company will only pay 100% death benefit if you pass away due to an accident. If you die from natural death, your beneficiary will receive all premiums you paid plus interest, typically 7 to 10%. If you die after waiting, your beneficiaries will receive a 100% death benefit.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy for veterans needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -186,7 +186,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for veterans’ funeral insurance, veterans’ burial insurance, or veterans’ life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Is life insurance available for veterans?</strong></p>
 

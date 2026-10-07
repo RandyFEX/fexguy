@@ -45,9 +45,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying AIG&#160; Burial Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying AIG&#160; burial insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-aig"><strong>What Are My Policy Options With AIG?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-aig"><strong>What are my policy options with AIG?</strong></h3>
 
 <p>Be aware that AIG Life Insurance changed its name to Corebridge Financial in 2022. Your AIG policy is valid with Corebridge Financial as long as you keep your current payments.</p>
 
@@ -107,7 +107,7 @@ sidebar: true
 </li>
 </ul>
 
-<h3 id="h-does-aig-have-any-hidden-fine-print-in-their-policy"><strong>Does AIG Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3 id="h-does-aig-have-any-hidden-fine-print-in-their-policy"><strong>Does AIG have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>The SimpliNow Legacy Graded Plan and their Guaranteed Issue Whole Life Insurance both have 2-year waiting periods. </p>
 
@@ -121,9 +121,9 @@ sidebar: true
 
 <p>There is also no coverage for suicide in the first two years either (this is standard with all life insurance policies).</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of AIG&#160;Burial Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of AIG&#160;burial insurance?</strong></h2>
 
-<h3 id="h-1st-day-coverage-plan-limited-availability"><strong>1st Day Coverage Plan</strong> – <strong>(Limited Availability)</strong> </h3>
+<h3 id="h-1st-day-coverage-plan-limited-availability"><strong>1st day coverage plan</strong> – <strong>(limited availability)</strong> </h3>
 
 <p><strong>PROS</strong></p>
 
@@ -144,7 +144,7 @@ sidebar: true
 <li>Premium may exceed coverage</li>
 </ul>
 
-<h3 id="h-graded-amp-guaranteed-issue-plans-2-year-wait"><strong>Graded &amp; Guaranteed Issue Plans</strong> (2-Year Wait)</h3>
+<h3 id="h-graded-amp-guaranteed-issue-plans-2-year-wait"><strong>Graded &amp; guaranteed issue plans</strong> (2-year wait)</h3>
 
 <p><strong>PROS</strong></p>
 
@@ -164,9 +164,9 @@ sidebar: true
 <li>Mandatory 2-Year Waiting period</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With AIG Burial Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with AIG burial insurance?</strong></h2>
 
-<h3><strong>Riders &amp; Add-Ons</strong></h3>
+<h3><strong>Riders &amp; add-ons</strong></h3>
 
 <p>Depending on the plan an agent puts you in, you may have other riders included.</p>
 
@@ -178,11 +178,11 @@ sidebar: true
 <li><strong>Policy Loans: </strong> You can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By AIG?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by AIG?</strong></h2>
 
 <p>AIG’s 1st-day coverage life insurance will ask if you’ve had health issues in the last 12, 24, or 36 months.</p>
 
-<h3 id="h-application-questions"><strong>Application Questions</strong></h3>
+<h3 id="h-application-questions"><strong>Application questions</strong></h3>
 
 <p><strong>If the proposed insured answers yes to any of the following questions, the proposed insurance is not eligible for any coverage.</strong></p>
 
@@ -227,13 +227,13 @@ sidebar: true
 
 <p><strong>In the LAST 36 MONTHS, have you been:</strong><br>1. Been hospitalized for Schizophrenia or a Psychotic event?</p>
 
-<h3 id="h-when-should-i-not-consider-aig-nbsp-burial-insurance"><strong>When Should I Not Consider AIG&#160;Burial Insurance?</strong></h3>
+<h3 id="h-when-should-i-not-consider-aig-nbsp-burial-insurance"><strong>When should I not consider AIG&#160;burial insurance?</strong></h3>
 
 <p>If you have Schizophrenia or have had a psychotic event in the last 36 months, DO NOT apply for AIG whole life insurance. You are better off going with the 1st-day coverage plans that we have available with other companies we work with. </p>
 
 <p>Also, their guaranteed issue and graded plans will stick a consumer with a 2-year waiting period. We can help you avoid that if you will allow us to help you.</p>
 
-<h3 id="h-does-aigburial-insurance-nbsp-have-a-same-day-approval-process"><strong>Does AIGBurial Insurance&#160;Have A Same Day Approval Process?</strong></h3>
+<h3 id="h-does-aigburial-insurance-nbsp-have-a-same-day-approval-process"><strong>Does aigburial insurance&#160;have a same day approval process?</strong></h3>
 
 <p>Applying for AIG burial insurance is easy, and you can apply through a voice signature or email signature. But perhaps you should take a breath and do a little more price-checking before you go with AIG.</p>
 
@@ -250,13 +250,13 @@ sidebar: true
 <li>We always make sure you get a paper copy of your policy upon approval</li>
 </ul>
 
-<h3 id="Getting-Approved"><strong>Does AIG&#160;Offer A Phone Approval?</strong></h3>
+<h3 id="Getting-Approved"><strong>Does AIG&#160;offer a phone approval?</strong></h3>
 
 <p>AIG has an electronic submission process for all life insurance policies.</p>
 
 <p>If you need help from us, we have an easy application process; getting approved is about a 15-minutes over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get AIG&#160;Burial Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get AIG&#160;burial insurance pricing?</strong></h2>
 
 <p>AIG’s pricing is based primarily on your age, health, gender, face amount, and state you live in at the time of application.</p>
 
@@ -346,9 +346,9 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common AIG&#160;Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common AIG&#160;company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is AIG’s Operational History?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is AIG’s operational history?</strong></h3>
 
 <p>AIG or American International Group, Inc. is an American multinational insurance company with more than 90 million customers worldwide. AIG traced its beginnings to 1919, and AIG continues to grow its business and operations domestically and internationally. </p>
 
@@ -370,11 +370,11 @@ sidebar: true
 
 <p>175 Water St<br>New York City, NY 10038<br>Customer Service: (800) 225-5244<br><br></p>
 
-<h4><strong>Contact Info</strong></h4>
+<h4><strong>Contact info</strong></h4>
 
 <p>Email: ToServe@aig.com<br>Website: <a href="https://www.corebridgefinancial.com/" target="_blank" rel="noreferrer noopener nofollow">https://www.corebridgefinancial.com/</a><br></p>
 
-<h3 id="Financial-Rating"><strong>What Is AIG ’s Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is AIG ’s financial rating?</strong></h3>
 
 <p>AIG Life received the following rating from different rating agencies:</p>
 
@@ -388,7 +388,7 @@ sidebar: true
 
 <p>These ratings indicate the financial strength of the company and its ability to pay claims on time.</p>
 
-<h3 id="h-does-aig-nbsp-have-any-consumer-complaints"><strong>Does AIG&#160;Have Any Consumer Complaints?</strong></h3>
+<h3 id="h-does-aig-nbsp-have-any-consumer-complaints"><strong>Does AIG&#160;have any consumer complaints?</strong></h3>
 
 <p>Most AIG consumer complaints are regarding poor customer service. </p>
 
@@ -396,9 +396,9 @@ sidebar: true
 
 <p>The rating agency called <a href="https://www.consumeraffairs.com/insurance/aig_life.html" target="_blank" rel="noreferrer noopener">Consumer Affairs</a> gives AIG Life Insurance 3.2 out of 5 stars. Most customers complained about poor customer service on payments and claims processing.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying AIG&#160;Burial Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying AIG&#160;burial insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is AIG’s Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is AIG’s sales process?</strong></h3>
 
 <p>AIG is both a “Captive Carrier” and a “Non-Captive Carrier,” so the policy you buy directly from AIG is the same policy you would buy from someone like Final Expense Guy or Final EXpense Guy.</p>
 
@@ -412,7 +412,7 @@ sidebar: true
 
 <p>AIG is expensive for significant health issues, so it’s rarely your best choice in most cases.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-aig"><strong>Are Any Health Conditions Not Accepted By AIG?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-aig"><strong>Are any health conditions not accepted by AIG?</strong></h3>
 
 <p>These health issues will only qualify for SimpliNow Legacy graded plan:</p>
 
@@ -458,7 +458,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how AIG pricing compares to other companies.</p>
 
@@ -469,7 +469,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>Top 10 Questions</strong></h2>
+<h2 id="top-10-questions"><strong>Top 10 questions</strong></h2>
 
 <details>
 <summary><b>Is AIG insurance still in business?

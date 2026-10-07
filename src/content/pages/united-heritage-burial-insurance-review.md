@@ -51,23 +51,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-united-heritage-offer-first-day-coverage"><br><strong>Does United Heritage Offer First-day Coverage?</strong></h2>
+<h2 id="does-united-heritage-offer-first-day-coverage"><br><strong>Does United Heritage offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, United Heritage offers a burial insurance plan with first-day coverage, but it tends to be more expensive than plans from other companies.</p>
 
 <p>If you qualify, their Protector whole life immediate coverage plan will cover you from day one. Once approved, the company will pay a 100%  death benefit when you pass away.</p>
 
-<h2 id="pros-of-united-heritage-burial-insurance"><strong>Pros Of United Heritage Burial Insurance</strong></h2>
+<h2 id="pros-of-united-heritage-burial-insurance"><strong>Pros of United Heritage burial insurance</strong></h2>
 
 <p><strong>1-year lookback period</strong> – on cancer and heart issues. Pacemaker implants after one year are considered for immediate coverage.</p>
 
 <p><strong>Simple application</strong> – the company also does not conduct a point-of-sale interview as part of the underwriting process.</p>
 
-<h2 id="cons-of-united-heritage-burial-insurance"><strong>Cons Of United Heritage Burial Insurance</strong></h2>
+<h2 id="cons-of-united-heritage-burial-insurance"><strong>Cons of United Heritage burial insurance</strong></h2>
 
 <p><strong>Financial rating</strong> – their rating was downgraded from “A-” to “B++.” This rating is still good, and it shows they are still able to pay policyholders on time. But, if you want peace of mind, it’s better to get a plan from “A” rated or better company.</p>
 
-<h2 id="united-heritage-burial-insurance-products"><br><strong>United Heritage Burial Insurance Products</strong> </h2>
+<h2 id="united-heritage-burial-insurance-products"><br><strong>United Heritage burial insurance products</strong> </h2>
 
 <p>United Heritage has two types of burial insurance plans you can qualify for depending on your health. These plans include an immediate death benefit plan and a modified death benefit that works like a guaranteed issue burial insurance. </p>
 
@@ -96,11 +96,11 @@ sidebar: true
 
 <p>While it won’t be the full death benefit, it is better than letting your money sit in the bank for that time. The protector-modified benefit is very much similar to guaranteed issue policies.</p>
 
-<h2 id="when-does-united-heritage-make-the-most-sense"><br><strong>When Does United Heritage Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-united-heritage-make-the-most-sense"><br><strong>When does United Heritage burial insurance make the most sense?</strong></h2>
 
 <p>United Heritage has a 1-year lookback period on cancer.</p>
 
-<h2 id="united-heritage-underwriting-guidelines"><br><strong><strong>United Heritage Underwriting Guidelines</strong></strong></h2>
+<h2 id="united-heritage-underwriting-guidelines"><br><strong><strong>United Heritage underwriting guidelines</strong></strong></h2>
 
 <p>You are not required to take a medical exam to qualify for Protector whole life or Protector modified benefit, but you need to answer a set of health questions. </p>
 
@@ -149,7 +149,7 @@ sidebar: true
 
 <p>If you answer NO to all the health questions in the knockout section and modified section, Congratulations! You are qualified for the Protector whole life with immediate coverage.</p>
 
-<h2 id="united-heritage-pricing-examples"><br><strong>United Heritage Pricing Examples</strong></h2>
+<h2 id="united-heritage-pricing-examples"><br><strong>United Heritage pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-108">
 <thead>
@@ -301,7 +301,7 @@ sidebar: true
 
 <p> *Pricing for illustration purposes only and are subject to change without notice. </p>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For United Heritage Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for United Heritage burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -334,7 +334,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -402,7 +402,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="united-heritage-company-overview"><br><strong><strong>United Heritage Company Overview </strong></strong></h2>
+<h2 id="united-heritage-company-overview"><br><strong><strong>United Heritage company overview </strong></strong></h2>
 
 <p>United Heritage Life was founded in 1934 as <a href="https://www.grangeinsurance.com/" target="_blank" rel="noreferrer noopener">Grange Mutual Life Company</a>. It used the name Grange Mutual until 1991, when the United Heritage Mutual Life Insurance Company was adopted as the new name. United Heritage offers a diverse line of products, including life insurance, final expense insurance, preneed insurance, annuities, and group life and disability insurance.</p>
 
@@ -414,7 +414,7 @@ sidebar: true
 
 <p>United Heritage Financial Group has an A+ rating with the Better Business Bureau (BBB)</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want United Heritage’s final expense plan needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -426,7 +426,7 @@ sidebar: true
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Is United Heritage Life Insurance still in business?</strong></p>
 

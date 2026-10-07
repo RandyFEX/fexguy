@@ -56,7 +56,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-need-help-with-eating"><br><strong>What Is My Best Insurance Option If I Need Help With Eating?</strong></h2>
+<h2 id="best-insurance-option-if-you-need-help-with-eating"><br><strong>What is my best insurance option if I need help with eating?</strong></h2>
 
 <p><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">Activities of daily living</a> are the fundamental <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">skills</a> needed to manage basic physical needs. </p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p>You must possess a mental capacity to enter into a legal contract. For example, if you have advanced dementia or Alzheimer’s disease and you are not able to legally consent to an agreement, the company may reject your application.</p>
 
-<h2 id="why-are-the-activities-of-daily-living-important-in-life-insurance"><br><strong>Why Are The Activities Of Daily Living Important In Life Insurance?</strong></h2>
+<h2 id="why-are-the-activities-of-daily-living-important-in-life-insurance"><br><strong>Why are the activities of daily living important in life insurance?</strong></h2>
 
 <p><strong>If you cannot perform any of the activities of daily living, it will impact your life insurance eligibility and may result in:</strong></p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>It’s critical that you work with an independent life insurance agency before it’s too late because when you need help with any of the activities of daily living, the best life insurance option for you is to take a guaranteed issue burial insurance.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -140,7 +140,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -189,7 +189,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Need Help With Eating, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I need help with eating, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help with eating.</p>
 
@@ -197,7 +197,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-people-needing-help-with-eating"><br><strong><strong>Burial Insurance Underwriting If You Need Help With Eating</strong></strong></h2>
+<h2 id="insurance-underwriting-for-people-needing-help-with-eating"><br><strong><strong>Burial insurance underwriting if you need help with eating</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -247,7 +247,7 @@ sidebar: true
 
 <p>Needing help with eating is one of the determining factors of the insurance company whether they will provide coverage or decline your application. Needing help with eating is generally a decline for first-day coverage life insurance and the only coverage you will qualify for is guaranteed issue burial insurance.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Need Help With Eating?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I need help with eating?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -355,11 +355,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="needing-help-with-eating-and-burial-insurance-riders"><br><strong>Needing Help With Eating And Burial Insurance Riders</strong></h2>
+<h2 id="needing-help-with-eating-and-burial-insurance-riders"><br><strong>Needing help with eating and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -384,7 +384,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-need-help-with-eating"><br><strong><strong>Information We Need If You Need Help With Eating</strong></strong></h2>
+<h2 id="information-we-need-if-you-need-help-with-eating"><br><strong><strong>Information we need if you need help with eating</strong></strong></h2>
 
 <p>When applying for burial insurance, we will need information about your current health and functionality. Your information will help us understand your condition better. To give you an accurate quote, we need to know your medical condition before we can recommend the type of plan you qualify for.</p>
 
@@ -398,7 +398,7 @@ sidebar: true
 
 <p>Give an honest response to the questions. We will review this information to determine the best insurance company for you.&#160; We are experts in securing affordable burial insurance for those who need help with eating and other ADLs.</p>
 
-<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why Do You Need Guaranteed Issue Burial Insurance If You Need Help With Eating?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why do you need guaranteed issue burial insurance if you need help with eating?</strong></h2>
 
 <p>We recommend buying guaranteed burial insurance if you need help eating and doing any of the ADLs because it’s the only life insurance you will qualify for. If you are relatively healthy and only need help with eating, you can have an average life expectancy and easily outlive the two-year waiting period.</p>
 
@@ -406,7 +406,7 @@ sidebar: true
 
 <p>Guaranteed life insurance for seniors may be a little more expensive than plans with underwriting, but your approval is guaranteed. Buying a guaranteed issue burial insurance if you need help with eating is worth it, you won’t lose money with this plan, and it costs much less in the long run than having no insurance coverage at all.</p>
 
-<h2 id="benefits-of-guaranteed-issue-insurance"><br><strong>Benefits Of Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="benefits-of-guaranteed-issue-insurance"><br><strong>Benefits of guaranteed issue burial insurance</strong></h2>
 
 <ol>
 <li><strong>Ease of issue</strong>. Qualifying for a guaranteed issue burial insurance is easy. You are not required to take a physical exam or answer any health-related questions. You will be approved even if you need help eating or doing any of the ADLs as long as you meet the age requirements and the policy is available in your state.</li>
@@ -418,7 +418,7 @@ sidebar: true
 <li>Cash value accumulation. Guaranteed issue life insurance is whole life insurance that accumulates a cash value you can withdraw or borrow against.</li>
 </ol>
 
-<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>
+<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The best guaranteed issue life insurance policy</strong></h2>
 
 <p>The best-guaranteed-issue life insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4-year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -426,7 +426,7 @@ sidebar: true
 
 <p>If you need help with eating, then GI policy is your best choice. Your application will be easy because there are no medical exams or health questions. You can even get approved for coverage in 15 minutes!</p>
 
-<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Need Help With Eating</strong></h2>
+<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance if you need help with eating</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -443,7 +443,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy when you need help with eating needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 

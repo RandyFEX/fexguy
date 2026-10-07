@@ -48,15 +48,15 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Aetna Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Aetna life insurance</strong></h2>
 
-<h3><strong>Does Aetna Offer First-day Coverage?</strong></h3>
+<h3><strong>Does Aetna offer first-day coverage?</strong></h3>
 
 <p>Aetna has a burial insurance plan that offers first-day coverage.</p>
 
 <p>If you qualify, their Whole Life Insurance Level Benefit Plan comes with immediate first-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.</p>
 
-<h3 id="h-what-are-my-policy-options-with-aetna"><strong>What Are My Policy Options With Aetna?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-aetna"><strong>What are my policy options with Aetna?</strong></h3>
 
 <p>Aetna, through American Continental, offers three types of burial insurance policy options:</p>
 
@@ -175,13 +175,13 @@ sidebar: true
 
 <p>Aetna’s modified benefit plan is expensive compared to a guaranteed issue, no health questions policy. GI policy costs less, and it will approve your application regardless of the severity of your medical condition.</p>
 
-<h3><strong>How Is Aetna Final Expense Whole Life Insurance Good For Seniors?</strong></h3>
+<h3><strong>How is Aetna final expense whole life insurance good for seniors?</strong></h3>
 
 <p>Aetna’s three final expense whole life insurance plans help ease the financial burden. However, among the three plans, the most beneficial is the level-benefit plan. This plan comes with first-day coverage, and the pricing is competitive. The graded plan is best for some health issues. </p>
 
 <p>We do not recommend the modified plan for seniors because it has a two-year waiting period. Seniors will be better off with a guaranteed issue life insurance compared with this plan. A guaranteed issue policy will accept all applicants regardless of their medical condition.</p>
 
-<h3><strong>Does Aetna Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3><strong>Does Aetna have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>You must be aware of the death benefit schedule when considering Aetna’s graded and modified benefit plans. I don’t recommed these plans, as most people will qualify for AETNA’s 1st-day coverage plan.</p>
 
@@ -202,9 +202,9 @@ sidebar: true
 <li>Policy year 3: full death benefit</li>
 </ul>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Aetna Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Aetna insurance?</strong></h2>
 
-<h3><strong>#1- LEVEL BENEFIT PLAN</strong></h3>
+<h3><strong>#1- level benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -223,7 +223,7 @@ sidebar: true
 <li>Strict underwriting only healthy people qualify.</li>
 </ul>
 
-<h3><strong>#2 – GRADED BENEFIT PLAN</strong></h3>
+<h3><strong>#2 – graded benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -240,7 +240,7 @@ sidebar: true
 <li>Expensive premium compared to other companies.</li>
 </ul>
 
-<h3><strong>#3 – MODIFIED BENEFIT PLAN</strong></h3>
+<h3><strong>#3 – modified benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -257,7 +257,7 @@ sidebar: true
 <li>Super expensive pricing compared with other insurance companies</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders With Aetna Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders with Aetna life insurance?</strong></h2>
 
 <p>Unfortunately, Aetna’s final expense whole life insurance does not offer any rider or additional benefits like most life insurance companies.</p>
 
@@ -267,7 +267,7 @@ sidebar: true
 <li><strong>Policy Loans</strong></li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Aetna?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Aetna?</strong></h2>
 
 <p><strong>To qualify for burial insurance, ACI will check your health in three ways:</strong></p>
 
@@ -279,7 +279,7 @@ sidebar: true
 
 <p>They do this to verify your health and assess your level of risk.</p>
 
-<h3 id="h-what-are-aetna-s-application-questions">What Are Aetna’s Application Questions?</h3>
+<h3 id="h-what-are-aetna-s-application-questions">What are Aetna’s application questions?</h3>
 
 <p><strong>KNOCKOUT SECTION:</strong></p>
 
@@ -371,7 +371,7 @@ sidebar: true
 
 <p>If you answer no to all the health questions in the application, you will qualify for a level death benefit plan. This plan has first-day full coverage and pays 100% death benefit when you pass away.</p>
 
-<h2 id="when-it-makes-sense"><strong>When Does Aetna Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-it-makes-sense"><strong>When does Aetna burial insurance make the most sense?</strong></h2>
 
 <p>Aetna is a great choice for seniors 86 to 89 years old because they’re one of the few companies providing policies for that age. They don’t have height and weight restrictions, and those on the heavier side will qualify for coverage.</p>
 
@@ -387,7 +387,7 @@ sidebar: true
 <li><strong>Cancer –&#160;</strong>diagnosis, and treatment within 24 months will qualify for a graded benefit plan.</li>
 </ol>
 
-<h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What Are The Unique Features of Aetna Final Expense Insurance?</strong></h3>
+<h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What are the unique features of Aetna final expense insurance?</strong></h3>
 
 <p><strong>Here are some of Aetna’s unique features that make them shine from the competition and make them a better choice for you:</strong></p>
 
@@ -401,11 +401,11 @@ sidebar: true
 <li>Reduced paid-up option available</li>
 </ul>
 
-<h3 id="Getting-Approved"><strong>Does Aetna Offer The Same Day Phone Approval?</strong></h3>
+<h3 id="Getting-Approved"><strong>Does Aetna offer the same day phone approval?</strong></h3>
 
 <p>Aetna has an electronic submission process for all life insurance policies. Application and approval can be made with an agent over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Aetna Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get Aetna life insurance pricing?</strong></h2>
 
 <p>Aetna burial insurance plan rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -605,15 +605,15 @@ sidebar: true
 
 <p> *Pricing is for illustration purposes only and is subject to change without notice. </p>
 
-<h3>How Does Aetna Burial Insurance Compare?</h3>
+<h3>How does Aetna burial insurance compare?</h3>
 
 <p>If you are open to looking at better insurance companies with better rates, we can offer you some help!</p>
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Aetna Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Aetna company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Aetna’s Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aetna’s operational history</strong></h3>
 
 <p>Aetna started as a fire insurance company in the early 1800s. Aetna Life Insurance was created in 1853 when the annuity portion of their company separated. Aetna eventually became the third-largest health insurance provider in the country.</p>
 
@@ -623,15 +623,15 @@ sidebar: true
 
 <p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. The two Aetna insurance companies that write this policy are ACI and Continental Life Insurance Company of Brentwood, Tennessee. Their burial insurance is available in most states except West Coast and Northeast states.</p>
 
-<h4><strong>Company Address</strong></h4>
+<h4><strong>Company address</strong></h4>
 
 <p>American Continental Insurance Company<br>151 Farmington Avenue<br>Hartford, CT 06156</p>
 
-<h4><strong>Contact Info</strong></h4>
+<h4><strong>Contact info</strong></h4>
 
 <p>Website: www.aetna.com<br>Customer Service: (800) 872-3862<br></p>
 
-<h3 id="Financial-Rating"><strong>What Is Aetna’s Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aetna’s financial rating?</strong></h3>
 
 <p>Aetna received the following rating from different rating agencies:</p>
 
@@ -644,17 +644,17 @@ sidebar: true
 
 <p>These ratings indicate the company’s financial stability and capability of paying its financial commitments to policyholders.</p>
 
-<h3><strong>Does Aetna Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Aetna have any consumer complaints?</strong></h3>
 
 <p>Aetna has six complaints recorded with the National Association of Insurance Commissioners (NAIC). Most complaints are about claim handling, policyholder service, and underwriting.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Aetna Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Aetna life insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is Aetna’s Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aetna’s sales process?</strong></h3>
 
 <p>Aetna is not a “captive carrier.” Independent insurance agencies like Final Expense Guy can sell Aetna’s final expense insurance products.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-aetna"><strong>Are Any Health Conditions Not Accepted By Aetna?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-aetna"><strong>Are any health conditions not accepted by Aetna?</strong></h3>
 
 <p>These health issues are not accepted for level benefit insurance:</p>
 
@@ -676,7 +676,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Aetna’s pricing compares to other companies.</p>
 
@@ -687,7 +687,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Aetna?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Aetna?</strong></h2>
 
 <details>
 <summary><b>Is Aetna Life Insurance legitimate?</b></summary>

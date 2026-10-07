@@ -46,13 +46,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-burial-insurance"><strong>What Is Burial Insurance?</strong></h2>
+<h2 id="what-is-burial-insurance"><strong>What is burial insurance?</strong></h2>
 
 <p>Burial insurance is a type of small whole life insurance that most people can qualify for between the ages of 50 and 85. Is burial insurance permanent? Burial insurance is a form of permanent life insurance. The primary purpose of burial insurance is to provide financial protection to your family, who will otherwise have to pay for your final expenses and burial costs.</p>
 
 <p>Burial insurance is frequently referred to as <a href="/burial-insurance/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a>, cremation, or final expense insurance (interchangeably used in this article). Burial insurance gives your beneficiary a sum of money upon your death. The death benefit is designed to cover your family’s expenses after your death. These costs will include medical bills, burial or cremation expenses,s and other things associated with funeral expenses.</p>
 
-<h2 id="types-of-burial-insurance"><strong>Types Of Burial Insurance</strong></h2>
+<h2 id="types-of-burial-insurance"><strong>Types of burial insurance</strong></h2>
 
 <p>There are two types of burial insurance on offer in the U.S. today:</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>A <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">Guaranteed issue</a> plan has a mandatory two-year waiting period. Your beneficiaries will not receive the full death benefit if you die during the waiting period. They will only receive the return of the premium paid plus interest.</p>
 
-<h2 id="who-needs-burial-insurance"><strong>Who Needs Burial Insurance?</strong></h2>
+<h2 id="who-needs-burial-insurance"><strong>Who needs burial insurance?</strong></h2>
 
 <p>Funeral costs are continually rising, along with many other final expenses. With no other way to pay for these expenses, your family will be left with a great deal of undue stress.</p>
 
@@ -99,7 +99,7 @@ sidebar: true
 
 <p>Burial insurance coverage can help ensure that your family is not burdened with coming up with a substantial amount of money during an emotional time. A burial expense policy can be a smart solution to protect your family from financial burdens.</p>
 
-<h2 id="why-do-you-need-burial-insurance"><strong>Why Do You Need Burial Insurance?</strong></h2>
+<h2 id="why-do-you-need-burial-insurance"><strong>Why do you need burial insurance?</strong></h2>
 
 <p><strong>Funerals are expensive</strong> – the average cost of an adult funeral with viewing and burial, according to the <a href="http://www.nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">NFDA</a>– National Funeral Directors Association, is $8,755. The cost is broken down as follows:</p>
 
@@ -126,7 +126,7 @@ sidebar: true
 
 <p>If you answer no to the health questions, your application is approved. If you have severe health issues, you can still buy guaranteed issue burial insurance. There is no medical exam and no questions asked. You don’t have the perfect health to qualify; your approval is guaranteed.</p>
 
-<h2 id="is-burial-insurance-permanent"><strong>Is Burial Insurance Permanent?</strong></h2>
+<h2 id="is-burial-insurance-permanent"><strong>Is burial insurance permanent?</strong></h2>
 
 <p>A burial insurance policy is whole life insurance, a form of permanent life insurance used to cover burial and other end-of-life expenses.&#160; Burial insurance is permanent life insurance that does not expire.</p>
 
@@ -134,7 +134,7 @@ sidebar: true
 
 <p>Burial insurance for seniors can be an excellent way to manage your final expense, particularly if you do not own a life insurance policy. Setting up a burial policy allows you to make affordable payments over time. It also gives your family the financial means to pay a medical bill or remaining debts.</p>
 
-<h2 id="features-of-burial-insurance"><strong>Features Of Burial Insurance</strong></h2>
+<h2 id="features-of-burial-insurance"><strong>Features of burial insurance</strong></h2>
 
 <p><strong>Burial life insurance has several features that make it different from other forms of life insurance:</strong></p>
 
@@ -169,7 +169,7 @@ sidebar: true
 
 <p>However, you need to repay the policy loan and interest, or the death benefit payout will be reduced when you die. You can also use the cash value to pay your premiums.</p>
 
-<h2 id="types-of-permanent-life-insurance"><strong>Types Of Permanent Life Insurance</strong></h2>
+<h2 id="types-of-permanent-life-insurance"><strong>Types of permanent life insurance</strong></h2>
 
 <p>All types of permanent life insurance policies are designed to last your whole life and build cash value over time. There are five types of permanent life insurance policies:</p>
 
@@ -201,7 +201,7 @@ sidebar: true
 
 <p>Your insurance carrier selects the index and then calculates the interest rate based on the index’s performance. They credit the interest to your cash-value account. You may use those funds to help pay your premiums if you have money in your cash-value account.</p>
 
-<h2 id="finding-the-best-burial-insurance"><strong>How Can You Find The Best Burial Insurance Policy</strong></h2>
+<h2 id="finding-the-best-burial-insurance"><strong>How can you find the best burial insurance policy</strong></h2>
 
 <p>Now that you know about burial insurance and how it can help your family with final expenses, it’s time to choose the best policy for your needs. <strong>The best burial insurance policy is the one that costs the least and protects you immediately.</strong></p>
 
@@ -209,7 +209,7 @@ sidebar: true
 
 <p>Once you are ready to purchase your senior life insurance with no waiting period, fill up our Instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">Quote</a> Form to get an updated final expense insurance quote from a different insurance company, or you can call us at (888)862-9456 if you have any questions about burial insurance. We are here to help!</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is burial insurance permanent?</strong></p>
 

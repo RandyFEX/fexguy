@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="burial-insurance-with-arthritis"><br><strong>Burial Insurance With Arthritis</strong></h2>
+<h2 id="burial-insurance-with-arthritis"><br><strong>Burial insurance with arthritis</strong></h2>
 
 <p>Arthritis is a common medical condition affecting 27 million Americans. This condition can cause pain, discomfort, and sometimes disability. Although this condition is not as serious as other medical conditions, it can still affect your life insurance rates.</p>
 
@@ -87,7 +87,7 @@ sidebar: true
 
 <p>If you're looking for life insurance and you've been diagnosed with arthritis, keep reading this detailed guide on how to get affordable burial insurance with arthritis.</p>
 
-<h2 id="your-best-insurance-option"><br><strong>What Is My Best Insurance Option If I Have Arthritis?</strong></h2>
+<h2 id="your-best-insurance-option"><br><strong>What is my best insurance option if I have arthritis?</strong></h2>
 
 <p>Several types of life insurance coverage options are available to you if you have arthritis and are looking for some kind of life insurance coverage.</p>
 
@@ -170,7 +170,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance has a graded period for a natural cause of death. You must live for two years before your policy will pay a 100% death benefit. After two years, you got 100% protection for life.</p>
 
-<h2 id="arthritis-impact-on-eligibility"><br><strong>The Impact Of Arthritis On Life Insurance Eligibility</strong></h2>
+<h2 id="arthritis-impact-on-eligibility"><br><strong>The impact of arthritis on life insurance eligibility</strong></h2>
 
 <p>Life insurance companies will look at your arthritis as a part of your overall health to determine the type of plan you qualify for and the amount you will pay.</p>
 
@@ -180,7 +180,7 @@ sidebar: true
 
 <p>Due to the potential for disability and mobility issues, some moderate to severe forms of arthritis can cause damage to some organs like the lungs or heart, affecting the individual's ability to breathe properly and may shorten the lifespan. In this case, you will be declined for traditional life insurance, and your only option for coverage is a guaranteed issue whole life insurance.</p>
 
-<h2 id="factors-affecting-life-insurance"><br><strong>Factors That Can Affect Life Insurance Eligibility If You Have Arthritis</strong></h2>
+<h2 id="factors-affecting-life-insurance"><br><strong>Factors that can affect life insurance eligibility if you have arthritis</strong></h2>
 
 <p><strong>ACTIVITIES OF DAILY LIVING (ADL)</strong></p>
 
@@ -216,7 +216,7 @@ sidebar: true
 
 <p>If you die during the two-year waiting period, the company will refund all your premiums plus 10% interest to your beneficiary. This plan will not lose any money because no savings account will ever earn you 10% interest.</p>
 
-<h2 id="policies-to-avoid"><br><strong>What Types Of Insurance Policies Should I Avoid?</strong></h2>
+<h2 id="policies-to-avoid"><br><strong>What types of insurance policies should I avoid?</strong></h2>
 
 <p>A level death benefit plan is the best burial insurance for arthritis. Here are the types of life insurance policies you should avoid:</p>
 
@@ -257,7 +257,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-to-take-medical-exam"><br><strong>Do I Need To Take A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-to-take-medical-exam"><br><strong>Do I need to take a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>No. You are not required to take a medical exam to qualify for burial insurance. You don't need to submit blood and urine samples either.</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <p>You can even choose a no-health questions policy if you like. But, we advised against it because the no-health questions policy has a two-year waiting period.</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong>Burial Insurance Underwriting If You Have Arthritis</strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong>Burial insurance underwriting if you have arthritis</strong></h2>
 
 <p>Burial insurance policies contain knockout questions on the application. They will also conduct a prescription history check as a part of underwriting. </p>
 
@@ -306,7 +306,7 @@ sidebar: true
 
 <p>If you have arthritis, when you apply for burial insurance and take any of these medications, the insurance company will see and understand that you are taking measures to control your condition. They will overlook arthritis prescriptions as long as the medication relieves your symptoms and improves your joint function.</p>
 
-<h2 id="determining-insurance-need"><strong>How Much Insurance Do I Need If I Have Arthritis?</strong></h2>
+<h2 id="determining-insurance-need"><strong>How much insurance do I need if I have arthritis?</strong></h2>
 
 <p>Now that you understand getting burial insurance with arthritis is easy, let's determine how much insurance coverage you need.</p>
 
@@ -375,13 +375,13 @@ sidebar: true
 
 <p>Do these three steps to determine how much coverage to buy.</p>
 
-<h2 id="paying-premiums"><br><strong>How Should I Pay My Insurance Premiums?</strong></h2>
+<h2 id="paying-premiums"><br><strong>How should I pay my insurance premiums?</strong></h2>
 
 <p>Using savings or checking accounts is the best method. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium monthly, and you will not worry about your insurance policy lapsing due to non-payment.</p>
 
 <p>We recommend you pay your premium monthly because it's easier on the budget. You can also schedule your payment when you receive your retirement allowance.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Arthritis And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Arthritis and burial insurance riders</strong></h2>
 
 <p>Burial insurance policy riders add benefits to your plan. You can add policy riders to your plan to enhance coverage to fit your specific needs. Some riders are built into the policy, while others come with extra costs.</p>
 
@@ -399,7 +399,7 @@ sidebar: true
 
 <p>An accidental death rider is generally included in all plans. This rider increases your death benefit payout if you die from an accident.</p>
 
-<h2 id="getting-the-best-rates"><br><strong>How To Get The Best Insurance Rates For Arthritis</strong></h2>
+<h2 id="getting-the-best-rates"><br><strong>How to get the best insurance rates for arthritis</strong></h2>
 
 <p>Buying burial insurance today is the best way to get the best insurance rates. You will never be as young and healthier as you do today. Your premium will increase each year you postpone getting burial insurance. By buying burial insurance today, you will be able to lock in the price at your current age and pay the same rate throughout your life.</p>
 
@@ -413,7 +413,7 @@ sidebar: true
 
 <p>And the best tip to get the best insurance rates is to work with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>.</p>
 
-<h2 id="information-we-need"><br><strong>Information We Need To Help You If You Have Arthritis</strong></h2>
+<h2 id="information-we-need"><br><strong>Information we need to help you if you have arthritis</strong></h2>
 
 <p>When you reach out to us regarding buying final expense insurance with arthritis, we will ask you some health questions to better understand your current medical condition. These questions may include:</p>
 
@@ -432,7 +432,7 @@ sidebar: true
 
 <p>Your answers to these health questions will help us determine the type of life insurance plan you will qualify for and how much life insurance companies will charge you.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with arthritis needn't be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -444,7 +444,7 @@ sidebar: true
 
 <p>Fill out our instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form or call us at <strong>(888) 862-9456,</strong> and we can give you accurate funeral insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance if you have arthritis?</strong></p>
 

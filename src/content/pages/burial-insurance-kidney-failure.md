@@ -59,7 +59,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-kidney-failure"><strong>What Is Kidney Failure?</strong></h2>
+<h2 id="what-is-kidney-failure"><strong>What is kidney failure?</strong></h2>
 
 <p>Your kidneys, those two bean-shaped buddies in your back, are like the workhorses of your body. They filter waste products out of your blood, like a trusty colander. They also keep your fluids balanced, like making sure your favorite drink isn’t too watery.</p>
 
@@ -89,13 +89,13 @@ sidebar: true
 
 <p>If you’re worried about your kidneys, see a doctor. Catching problems early is important! And with a little care, your kidneys might keep on filtering for many years to come.</p>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance With Kidney Failure?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance with kidney failure?</strong></h2>
 
 <p>You absolutely can get burial insurance with kidney failure. There are even plans with <strong>coverage from day one</strong>, no waiting period, if you’re already getting treatment for your kidneys. That way, you can focus on your health without worrying about your burial or cremation expenses.</p>
 
 <p>Prices can vary depending on your age, health, and the amount of coverage you want.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Kidney Failure?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have kidney failure?</strong></h2>
 
 <p><strong>Chronic Kidney Disease (Renal Failure)&#160;</strong><br>Some companies offer “day one” coverage, meaning you’re insured right away, depending on your zip code. No medical exam, but answer some health questions to get the best rates. Coverage starts when you pay your first premium and lasts your whole life.</p>
 
@@ -109,7 +109,7 @@ sidebar: true
 
 <p>The only other option here is a no-exam, no-questions policy with a 2-year wait. Basically, these policies won’t pay out if you die within 2 years of getting them, but they’ll give you your money back with a little interest.</p>
 
-<h2 id="burial-insurance-cost"><strong>How Much Does Kidney Failure Insurance Cost?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>How much does kidney failure insurance cost?</strong></h2>
 
 <p><strong>The cost of burial insurance if you have kidney failure will depend on your:</strong></p>
 
@@ -122,13 +122,13 @@ sidebar: true
 <li>Coverage amount</li>
 </ul>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need a Medical Exam for Burial Insurance With Kidney Failure?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam for burial insurance with kidney failure?</strong></h2>
 
 <p>Even with kidney failure, getting burial insurance is possible! Forget needles and white coats – you won’t need a medical exam. The application is simple, just answer some basic health questions. No need to dig up old records or provide samples.</p>
 
 <p>The best part? Approval can be super quick, sometimes just minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><strong>Burial Insurance Underwriting with Kidney Failure</strong></h2>
+<h2 id="burial-insurance-underwriting"><strong>Burial insurance underwriting with kidney failure</strong></h2>
 
 <p>Life insurance companies with health checks will ask about your health history and meds to figure out if you qualify.</p>
 
@@ -181,13 +181,13 @@ sidebar: true
 
 <p>If you take certain medications, the insurance companies will assume you have kidney function problems.</p>
 
-<h2 id="rejected-for-burial-insurance"><strong>What If My Application Was Rejected Because of Kidney Failure?</strong></h2>
+<h2 id="rejected-for-burial-insurance"><strong>What if my application was rejected because of kidney failure?</strong></h2>
 
 <p>Getting rejected for life insurance because of kidney problems can be frustrating. But don’t worry – there are still options! We specialize in helping clients with kidney issues find more understanding life insurance companies.</p>
 
 <p>We work with a variety of insurers, so even if you’ve been denied before, there’s a good chance we can find a plan that fits your needs. Don’t let a past rejection discourage you – we can help you qualify for the life insurance coverage you deserve.</p>
 
-<h2 id="information-we-need"><strong>Information We Need To Help You With This Insurance</strong></h2>
+<h2 id="information-we-need"><strong>Information we need to help you with this insurance</strong></h2>
 
 <p><strong>To find the best life insurance rates for your kidney situation, we’ll need some details:</strong></p>
 
@@ -205,7 +205,7 @@ sidebar: true
 
 <p>Basically, the more transparent you are, the cheaper your premium might be.</p>
 
-<h2 id="best-burial-insurance-companies"><strong>Best Burial Insurance Companies For People With Kidney Failure</strong></h2>
+<h2 id="best-burial-insurance-companies"><strong>Best burial insurance companies for people with kidney failure</strong></h2>
 
 <p>Your pricing will vary based on your age, gender, zip code, and other factors. There are some companies you should avoid as they charge high rates and require waiting periods if you are approved.&#160;</p>
 
@@ -235,13 +235,13 @@ sidebar: true
 </li>
 </ol>
 
-<h2 id="finding-the-best-burial-insurance"><strong>How To Find The Best Burial Insurance For Kidney Failure?</strong></h2>
+<h2 id="finding-the-best-burial-insurance"><strong>How to find the best burial insurance for kidney failure?</strong></h2>
 
 <p>Even with kidney failure, finding the right burial insurance is possible! Look for companies offering “day one” coverage specifically for people with kidney failure. These plans get you insured immediately, without a waiting period. </p>
 
 <p>Remember, the best plan for you will depend on your age, health, and desired coverage amount. So work with an independent agent from Final Expense Guy to help you compare prices from different companies to find the most affordable option that fits your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding burial insurance can be overwhelming, especially for people with health concerns. But Final Expense Guy can simplify the process.</p>
 
@@ -249,7 +249,7 @@ sidebar: true
 
 <p>Fill out our online quote form or call us at (888) 862-9456 to get started.</p>
 
-<h2 id="faq"><strong>Frequently Asked Questions</strong></h2>
+<h2 id="faq"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>Can I increase the coverage amount for burial insurance if my kidney failure worsens over time?</strong></p>
 
@@ -275,13 +275,13 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/burial-insurance/diabetic-nephropathy/">
-<h3 class="as-h5">Diabetic Nephropathy Final Expense Life Insurance</h3>
+<h3 class="as-h5">Diabetic nephropathy final expense life insurance</h3>
 </a></div>
 
-<h2 class="as-h5">1 Comment</h2>
+<h2 class="as-h5">1 comment</h2>
 
 <div class="comments">
 <div class="comment" id="comment-18685">

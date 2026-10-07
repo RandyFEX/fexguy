@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-liver-disease"><strong>What Is Liver Disease?</strong></h2>
+<h2 id="what-is-liver-disease"><strong>What is liver disease?</strong></h2>
 
 <p>Liver disease is any condition that messes with your liver.&#160;There are a many of different types of liver problems, each with its own drama. </p>
 
@@ -69,11 +69,11 @@ sidebar: true
 
 <p>But, every insurance company has its own playbook. If one says “no thanks,” don’t throw in the towel. Hit us up at Final Expense Guy to explore other options: there are always other fish in the sea!</p>
 
-<h2 id="getting-burial-insurance"><strong>Can You Get Burial Insurance With Liver Disease?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can you get burial insurance with liver disease?</strong></h2>
 
 <p>Absolutely! Having liver disease doesn’t mean you’re out of the insurance game. Whether you’ve got fatty liver, cirrhosis, liver failure, or any other liver shenanigans, there are insurance options ready and waiting for you.</p>
 
-<h2 id="types-of-burial-insurance"><strong>What Are The Types of Burial Insurance Available To People With Liver Disease?</strong></h2>
+<h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance available to people with liver disease?</strong></h2>
 
 <p><strong>First-Day Coverage</strong> – No medical exam? No problem! This policy just needs you to answer a few health questions, and boom – you’re covered immediately with no waiting period.</p>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <p><strong>Now, here’s the catch</strong> – the guaranteed issue comes with a two-year waiting period before the full death benefit kicks in. If you happen to pass away during this time, they’ll just return the premiums you’ve paid plus a sweet 7-10% interest (depending on the company).</p>
 
-<h2 id="best-option"><strong>What Is My Best Insurance Option If I Have Liver Disease?</strong></h2>
+<h2 id="best-option"><strong>What is my best insurance option if I have liver disease?</strong></h2>
 
 <p>Liver disease is a catch-all term for any liver problems, from the mildly annoying to the downright scary. With over 100 different types, it’s no wonder liver disease can cause serious long-term health issues.</p>
 
@@ -89,13 +89,13 @@ sidebar: true
 
 <p><strong>FATTY LIVER –&#160;</strong>Got some extra fat in your liver? Whether it’s from hitting the bottle too hard or other reasons, you can still get first-day coverage.<br><br><strong>HEPATITIS A – </strong>This short-term infection doesn’t stick around long. If you’ve got Hep A, first-day coverage is on the table for you.<br><strong><br>HEPATITIS B –&#160;</strong>Starting as an acute infection, Hep B can turn into a chronic issue. If you’re still battling the virus or getting treatment, some insurance companies will still hook you up with first-day coverage.<br><br><strong>HEPATITIS C – </strong>Hep C can be a short-term visitor or an unwelcome long-term guest. If you’re in treatment or cured, you’re in luck – first-day coverage with no waiting period is within reach.<br><strong><br>LIVER CIRRHOSIS – </strong>Cirrhosis is serious business, often caused by chronic alcoholism, hepatitis, cystic fibrosis, fat buildup, bile duct issues, or medications. Depending on your state, you might qualify for first-day coverage.<br><strong><br>LIVER CANCER – </strong>If you’ve beaten liver cancer and are now cancer-free, some insurance companies will offer you first-day coverage.<br><br><strong>LIVER TRANSPLANT – </strong>Had a liver transplant over five years ago? You could qualify for first-day coverage. If it’s been less than five years, look into guaranteed issue life insurance.</p>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope! No medical exams are needed to get burial insurance with liver disease.</p>
 
 <p>When you apply, your agent will just ask you a few basic health questions. The application process is a breeze – no need to dig up medical records or deal with blood and urine samples. Most of the time, you’ll get the green light from the insurance company within minutes!</p>
 
-<h2 id="impact-of-liver-disease"><strong>What Is The Impact Of Liver Disease On Insurance Eligibility?</strong></h2>
+<h2 id="impact-of-liver-disease"><strong>What is the impact of liver disease on insurance eligibility?</strong></h2>
 
 <p>The severity of your liver disease can shake up your life insurance options and the cost of burial insurance. For instance, if you’re in line for a liver transplant, you’ll only qualify for guaranteed issue life insurance. </p>
 
@@ -103,7 +103,7 @@ sidebar: true
 
 <p>So, keep in mind – liver disease can affect your options, but there’s always a way to get covered!</p>
 
-<h2 id="liver-disease-underwriting"><strong>Burial Insurance Underwriting For Liver Disease</strong></h2>
+<h2 id="liver-disease-underwriting"><strong>Burial insurance underwriting for liver disease</strong></h2>
 
 <p>Burial insurance companies will ask about liver disease history by asking if you have ever had liver disease at any point in your life or been treated for liver disease within a certain number of years.</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>Got any form of liver disease? You’ll have to check “yes” on those health questions.</p>
 
-<h2 id="burial-insurance-pricing"><strong>What Is The Burial Insurance Pricing For Liver Disease?</strong></h2>
+<h2 id="burial-insurance-pricing"><strong>What is the burial insurance pricing for liver disease?</strong></h2>
 
 <p>Pricing can vary widely and depends on age, gender, where you live, the type of policy, coverage amount, your overall health, and the severity of your liver disease.</p>
 
@@ -200,13 +200,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="affordable-burial-insurance"><strong>How To Find Affordable Burial Insurance with Liver Disease</strong></h2>
+<h2 id="affordable-burial-insurance"><strong>How to find affordable burial insurance with liver disease</strong></h2>
 
 <p>Want affordable burial insurance? Team up with an independent insurance agent at Final Expense Guy who can get you quotes from multiple carriers.</p>
 
 <p>We’ll steer you towards the best life insurance companies that offer first-day coverage approvals for liver disease. Let’s get you covered!</p>
 
-<h2 id="application-process"><strong>How To Apply For Life Insurance If You Have Liver Disease</strong></h2>
+<h2 id="application-process"><strong>How to apply for life insurance if you have liver disease</strong></h2>
 
 <ol>
 <li><strong>Consult with Independent Agents</strong> – Work with independent insurance agents from Final Expense Guy who specialize in liver disease underwriting. We’ll break down your options, compare quotes, and help you pick the best policy for your situation.</li>
@@ -214,7 +214,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> –&#160;Give those finalized policy terms a thorough review before you say yes. Make sure the coverage fits your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-we-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-we-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Skip the hassle of hunting through multiple insurance companies. We’ve got you covered. At Final Expense Guy, we work with A+ rated carriers that specialize in high-risk clients.</p>
 
@@ -222,7 +222,7 @@ sidebar: true
 
 <p>Just fill out our quote form on this page or call us at (888) 862-9456 for an accurate quote. We’ll handle the rest!</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong><br>Is liver disease considered a pre-existing condition in insurance?</strong></p>
 

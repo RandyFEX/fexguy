@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-a-history-of-suicide"> <br><strong><strong>What Is My Best Insurance Option If I Have A History Of Suicide? </strong></strong></h2>
+<h2 id="best-insurance-option-if-you-have-a-history-of-suicide"> <br><strong><strong>What is my best insurance option if I have a history of suicide? </strong></strong></h2>
 
 <p>Most life insurance companies don’t ask about suicide or suicide attempts on the underwriting questionnaire. So, if you have a history of suicide, you can still qualify for a level death benefit plan with first-day coverage.</p>
 
@@ -65,7 +65,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Level death benefit plan with first-day coverage</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -104,7 +104,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-type-of-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-type-of-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -153,7 +153,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with suicide attempts.</p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="understanding-burial-insurance-&-suicide"><br><strong>Understanding Burial Insurance And Suicide</strong></h2>
+<h2 id="understanding-burial-insurance-&-suicide"><br><strong>Understanding burial insurance and suicide</strong></h2>
 
 <p>Does life insurance pay for suicidal death?</p>
 
@@ -177,7 +177,7 @@ sidebar: true
 
 <p>If you have two policies and switch to a single policy with a bigger death benefit, even with the same insurance company, your suicide clause and a waiting period will start again. </p>
 
-<h2 id="is-suicide-&-contestability-clause-the-same"><br><strong>Is A Suicide Clause And Contestability Clause The Same?</strong></h2>
+<h2 id="is-suicide-&-contestability-clause-the-same"><br><strong>Is a suicide clause and contestability clause the same?</strong></h2>
 
 <p>The suicide clause and contestability clause are not the same  (although the period is the same). While the period is the same, the contestability clause is broader in scope. </p>
 
@@ -206,7 +206,7 @@ sidebar: true
 <li>When there is an indication of fraud or misrepresentation, we can declare this insurance policy void at any time. Fraud includes but is not limited to any material misrepresentation of the smoking habit of the Insured. We will not refund the premiums paid if the insurance policy is declared void due to fraud.” </li>
 </ul>
 
-<h2 id="understanding-suicide-&-contestability-clause"> <br><strong>Why Do Insurance Companies Put A Suicide Clause And Contestability Clause?</strong> </h2>
+<h2 id="understanding-suicide-&-contestability-clause"> <br><strong>Why do insurance companies put a suicide clause and contestability clause?</strong> </h2>
 
 <p>Life insurance companies include the suicide clause and contestability clause to protect them financially. </p>
 
@@ -220,7 +220,7 @@ sidebar: true
 
 <p>The two-year waiting period also provides more time for the suicidal policyholder to get the medical and mental help they need before paying a claim.</p>
 
-<h2 id="does-burial-insurance-cover-suicide"><br><strong>Does Burial Insurance Cover Suicide?</strong></h2>
+<h2 id="does-burial-insurance-cover-suicide"><br><strong>Does burial insurance cover suicide?</strong></h2>
 
 <p>Life insurance companies cover suicide after the first two years or the waiting period. The company will pay for suicide unless another exclusion is specifically outlined in the policy that forbids it. </p>
 
@@ -234,7 +234,7 @@ sidebar: true
 <li>Purchased coverage through work, which went into effect more than two years ago.</li>
 </ul>
 
-<h2 id="does-insurance-cover-doctor-assisted-suicide"><br><strong>Does Burial Insurance Cover Doctor-assisted Suicide?</strong></h2>
+<h2 id="does-insurance-cover-doctor-assisted-suicide"><br><strong>Does burial insurance cover doctor-assisted suicide?</strong></h2>
 
 <p>Doctor-assisted suicide is also called death with dignity or right to die. It involves people with terminal illnesses who choose to die rather than suffer through treatment or diminished quality of life. </p>
 
@@ -260,7 +260,7 @@ sidebar: true
 <li>Washington</li>
 </ol>
 
-<h2 id="underwritng-for-people-with-a-history-of-suicide"><br><strong><strong>Burial Insurance Underwriting If You Have A History Of Suicide</strong></strong></h2>
+<h2 id="underwritng-for-people-with-a-history-of-suicide"><br><strong><strong>Burial insurance underwriting if you have a history of suicide</strong></strong></h2>
 
 <p>During the underwriting process, life insurance companies will look at the applicant’s health and health history to determine how risky he or she will be to insure. They will also review how likely the applicant will die prematurely during the policy. </p>
 
@@ -274,7 +274,7 @@ sidebar: true
 
 <p>You may also be asked to disclose the treatment and medication you use to qualify for coverage.</p>
 
-<h2 id="how-much-coverage-do-i-need"><br><strong>How Much Insurance Do I Need If I Have Suicide Attempts?</strong></h2>
+<h2 id="how-much-coverage-do-i-need"><br><strong>How much insurance do I need if I have suicide attempts?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -334,11 +334,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premium"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premium"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="suicide-and-burial-insurance-riders"><br><strong>Suicide And Burial Insurance Riders</strong></h2>
+<h2 id="suicide-and-burial-insurance-riders"><br><strong>Suicide and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -347,7 +347,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="what-to-do-if-your-claim-was-denied"> <br><strong>What To Do If Your Claim Was Denied?</strong></h2>
+<h2 id="what-to-do-if-your-claim-was-denied"> <br><strong>What to do if your claim was denied?</strong></h2>
 
 <p>Insurance companies may contest a life insurance claim if they believe the insured died from suicide during the suicide clause waiting period. </p>
 
@@ -371,7 +371,7 @@ sidebar: true
 
 <p>If you disagree with the company’s decision to deny a claim due to suicide, you must consult your state’s laws. Many states have protections in place for the beneficiaries. </p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -386,7 +386,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Suicide Attempts</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with suicide attempts</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -405,7 +405,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you have a history of suicide needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -415,7 +415,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for suicide funeral insurance, or suicide burial insurance, or suicide life insurance. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate final expense insurance quote.</p>
 
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions</strong></h2>
 
 <p><strong>Does life insurance cover suicide?</strong></p>
 

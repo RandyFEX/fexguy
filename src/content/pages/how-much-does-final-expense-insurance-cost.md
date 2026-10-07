@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-final-expense-insurance"><strong>What Is Final Expense Insurance?</strong></h2>
+<h2 id="what-is-final-expense-insurance"><strong>What is final expense insurance?</strong></h2>
 
 <p><a rel="noreferrer noopener" href="/final-expense-life-insurance-complete-guide/" target="_blank">Final expense insurance</a> is also called funeral insurance, cremation, or burial insurance.</p>
 
@@ -122,13 +122,13 @@ sidebar: true
 
 <p><strong>Graded death benefit</strong> – the beneficiary is paid a percentage of the death benefit if the policyholder dies during the first two years of the policy. For example: in the first year, 30% death benefit will be paid, 70% in the second year, and 100% in the third year.</p>
 
-<h2 id="what-if-my-health-is-good-or-even-kind-of-bad"><br><strong>What If My Health Is Good, Or Even Kind Of Bad?</strong></h2>
+<h2 id="what-if-my-health-is-good-or-even-kind-of-bad"><br><strong>What if my health is good, or even kind of bad?</strong></h2>
 
 <p>Read our “what kind of policies to avoid” section near the end of this post. You should only purchase a guaranteed issue burial policy if you have major health problems. This is because all of these policies are more expensive and require a mandatory 2 year waiting period before your benefits are paid due to illness or terminal disease.</p>
 
 <p>95% of the people we talk to will qualify for better pricing and plans by answering a few health questions. You don’t have to visit a doctor or nurse to get approved for these better plans. We will help you get qualified lickety-split!</p>
 
-<h2 id="why-purchase-final-expense-insurance"><br><strong>Why Purchase Final Expense Insurance?</strong></h2>
+<h2 id="why-purchase-final-expense-insurance"><br><strong>Why purchase final expense insurance?</strong></h2>
 
 <p>If you don’t like purchasing final expense or burial insurance before, there are good reasons why you should consider it now.</p>
 
@@ -140,7 +140,7 @@ sidebar: true
 
 <p><strong>Fewer restrictions</strong>: Burial insurance is designed to cover final expenses; it is easier to obtain by more seniors above the age of 80. Burial insurance for seniors over 70 is easy. There is no medical exam with these policies. Even if you have medical problems, you can answer some health questions to get even better rates.</p>
 
-<h2 id="when-do-you-need-final-expense-insurance"><br><strong>When Do You Need Final Expense Insurance?</strong></h2>
+<h2 id="when-do-you-need-final-expense-insurance"><br><strong>When do you need final expense insurance?</strong></h2>
 
 <p>Your final expense insurance needs depend on your financial situation.</p>
 
@@ -157,7 +157,7 @@ sidebar: true
 
 <p>The burial insurance policy provides the necessary funds to ensure your family does not have to use their own money to pay off your funeral expenses. These insurance policies pay cash directly to your beneficiary to pay for your funeral services.</p>
 
-<h2 id="how-much-does-final-expense-insurance-cost"><br><strong>How Much Does Final Expense Insurance Cost?</strong></h2>
+<h2 id="how-much-does-final-expense-insurance-cost"><br><strong>How much does final expense insurance cost?</strong></h2>
 
 <p>Final expense insurance policies can be purchased in the $5,000 to $25,000 range, although some companies offer up to $50,000.</p>
 
@@ -211,7 +211,7 @@ sidebar: true
 
 <p>Consider how much you need to pay for your burial and other final expenses to determine how much burial insurance you need. If you’re looking for burial insurance for cancer patients, call us to know how much guaranteed life insurance costs, and we will give you an accurate quote.</p>
 
-<h2 id="how-much-final-expense-insurance-do-i-need"><br><strong>How Much Final Expense Insurance Do I Need?</strong></h2>
+<h2 id="how-much-final-expense-insurance-do-i-need"><br><strong>How much final expense insurance do I need?</strong></h2>
 
 <p>The amount of final expense <a rel="noreferrer noopener" href="/how-much-burial-insurance-do-i-need/" target="_blank">insurance we need</a> depends upon our final wishes. Use these questions to help you compute how much life insurance you need:</p>
 
@@ -230,7 +230,7 @@ sidebar: true
 
 <p>Request a general price list from your funeral home to know how much each service costs. That information makes it easy to compute the burial insurance coverage you need.</p>
 
-<h2 id="how-to-get-final-expense-insurance"><br><strong>How To Get Final Expense Insurance</strong></h2>
+<h2 id="how-to-get-final-expense-insurance"><br><strong>How to get final expense insurance</strong></h2>
 
 <p>After determining how much coverage you need, determine how you can get burial insurance. These are the three ways to get final expense or burial insurance:</p>
 
@@ -268,7 +268,7 @@ sidebar: true
 
 <p>Making sure your family has the money to cover your final expenses is the best gift you can give them to show how much you care for their financial well-being. Burial insurance for seniors is easy to apply for, and you can easily be accepted. Call us at (888) 862-9456, and we will help you shop to get the best burial insurance for your needs.</p>
 
-<h2 id="what-kind-of-final-expense-policies-should-i-avoid"><br><strong>What Kind Of Final Expense Policies Should I Avoid?</strong></h2>
+<h2 id="what-kind-of-final-expense-policies-should-i-avoid"><br><strong>What kind of final expense policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial insurance for parents or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
@@ -278,7 +278,7 @@ sidebar: true
 
 <p>To make a long story short,<strong> it is better to shop for the best burial insurance policies with a final expense insurance specialist</strong>, like Final Expense Guy, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
-<h3><strong>Increasing Price Policies</strong></h3>
+<h3><strong>Increasing price policies</strong></h3>
 
 <p>Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! <strong>What in tarnation!?!</strong></p>
 
@@ -314,7 +314,7 @@ sidebar: true
 
 <p>We have to admit that, for the average burial insurance final expense insurance shopper, all the companies and options will often leave you <strong>more confused than a woodpecker in a concrete forest.</strong></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
 
@@ -328,7 +328,7 @@ sidebar: true
 
 <p>With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>What is a final expense life insurance?</strong></p>
 
@@ -450,16 +450,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a>  <a href="/what-to-do-when-a-loved-one-dies/">
-<h3 class="as-h5">What to Do When a Loved One Dies</h3>
+<h3 class="as-h5">What to do when a loved one dies</h3>
 </a></div>

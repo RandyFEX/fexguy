@@ -57,11 +57,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="steps-to-do-when-a-loved-one-dies"><strong>Steps To Do When A Loved One Dies </strong> </h2>
+<h2 id="steps-to-do-when-a-loved-one-dies"><strong>Steps to do when a loved one dies </strong> </h2>
 
 <p>Here’s a checklist to guide you on what needs to be done when a loved one dies.</p>
 
-<h2 id="what-to-do-immediately-after-death"><strong>What To Do Immediately After Death</strong></h2>
+<h2 id="what-to-do-immediately-after-death"><strong>What to do immediately after death</strong></h2>
 
 <p><strong>#1 – Get legal certification of Death</strong></p>
 
@@ -122,7 +122,7 @@ sidebar: true
 
 <p>Call your loved one’s employer if he is working. Also, request information about company benefits, including life insurance, and if there are any outstanding payments due that your loved one is entitled to.</p>
 
-<h2 id="what-to-do-within-a-few-days-after-death"><br><strong>What To Do Within A Few Days After Death</strong></h2>
+<h2 id="what-to-do-within-a-few-days-after-death"><br><strong>What to do within a few days after death</strong></h2>
 
 <p><strong>#1 – Arrange for funeral and burial or cremation</strong></p>
 
@@ -156,7 +156,7 @@ sidebar: true
 
 <p>You can get help from different organizations, including a fraternal organization, union, or church to which your loved one belonged. Send an email or call your local group for help.</p>
 
-<h2 id="what-to-do-up-to-10-days-after-death"><br><strong>What To Do Up To 10 Days After Death</strong></h2>
+<h2 id="what-to-do-up-to-10-days-after-death"><br><strong>What to do up to 10 days after death</strong></h2>
 
 <p><strong>#1 – Obtain death certificates</strong></p>
 
@@ -212,7 +212,7 @@ sidebar: true
 
 <p>Lastly, notify the election board when a loved one dies by presenting a copy of the death certificate.</p>
 
-<h2 id="how-can-we-help-you"><br><strong>How Can We Help You? </strong></h2>
+<h2 id="how-can-we-help-you"><br><strong>How can we help you? </strong></h2>
 
 <p>Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance. Fill out the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page, and we will give you the best rates available for final expense life insurance.</p>
 
@@ -222,7 +222,7 @@ sidebar: true
 
 <p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e"><strong>What to do when someone dies at home?</strong></p>
 
@@ -409,21 +409,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">3 Comments</h2>
+<h2 class="as-h5">3 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-12947">

@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-fibromyalgia"><strong><strong>What Is My Best Insurance Option If I Have A History Of Fibromyalgia?</strong></strong></h2>
+<h2 id="best-insurance-option-if-you-have-fibromyalgia"><strong><strong>What is my best insurance option if I have a history of fibromyalgia?</strong></strong></h2>
 
 <p><strong>MILD FIBROMYALGIA</strong></p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>Guaranteed issue policies have a two-year waiting period. If you pass away during the waiting period, your beneficiary will not receive the full death benefit. Instead, they will get a refund of all premiums paid plus 10% interest.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -123,7 +123,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -172,7 +172,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><strong>If I Have Fibromyalgia, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><strong>If I have fibromyalgia, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with fibromyalgia.</p>
 
@@ -180,7 +180,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-fibromyalgia"><br><strong>Burial Insurance Underwriting If You Have Fibromyalgia</strong></h2>
+<h2 id="insurance-underwriting-for-fibromyalgia"><br><strong>Burial insurance underwriting if you have fibromyalgia</strong></h2>
 
 <p><strong>Burial insurance companies will evaluate your level of risk in two ways:</strong></p>
 
@@ -206,7 +206,7 @@ sidebar: true
 
 <p>Most burial insurance companies will charge you more in premiums and impose a waiting period if you have neuropathy related to diabetes.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Fibromyalgia?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have fibromyalgia?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -314,11 +314,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="fibromyalgia-and-burial-insurance-riders"><br><strong>Fibromyalgia And Burial Insurance Riders</strong></h2>
+<h2 id="fibromyalgia-and-burial-insurance-riders"><br><strong>Fibromyalgia and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -343,13 +343,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-the-best-insurance-rates"><br><strong><strong>How To Get The Best Burial Insurance Rates For Fibromyalgia Patients?</strong></strong></h2>
+<h2 id="getting-the-best-insurance-rates"><br><strong><strong>How to get the best burial insurance rates for fibromyalgia patients?</strong></strong></h2>
 
 <p>To find the most affordable burial insurance with fibromyalgia, you can consult with an independent burial insurance agency like Final Expense Guy, which works with many burial insurance companies. We will assess your health to determine which companies will view your health condition favorably. Then we will look into the quotes to see which carrier offers the cheapest.</p>
 
 <p>Since we can find rates from many burial insurance companies, we can save you time and money. Let us do the dirty work for you, and we will find you the burial insurance policy that costs the least and protects you immediately.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -364,7 +364,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Fibromyalgia</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with fibromyalgia</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -383,7 +383,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with fibromyalgia needn’t be a frustrating process, but working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -393,7 +393,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral or burial insurance with fibromyalgia in your medical history, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong>&#160;and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can a person with fibromyalgia get life insurance?</strong></p>
 

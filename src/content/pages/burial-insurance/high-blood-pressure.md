@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-uncontrolled-high-blood-pressure"><strong>What Is Uncontrolled High Blood Pressure?</strong></h2>
+<h2 id="what-is-uncontrolled-high-blood-pressure"><strong>What is uncontrolled high blood pressure?</strong></h2>
 
 <p>Uncontrolled high blood pressure, also known as hypertension, is when blood pressure remains consistently elevated above the recommended levels. Normally, blood pressure readings are given in two numbers: systolic and diastolic.</p>
 
@@ -79,11 +79,11 @@ sidebar: true
 
 <p>Uncontrolled high blood pressure raises a red flag for life insurance companies because it increases your risk of health problems down the line.&#160;</p>
 
-<h2 id="can-you-get-burial-insurance"><strong>Can I get Burial Insurance If I Have Uncontrolled High Blood Pressure?</strong></h2>
+<h2 id="can-you-get-burial-insurance"><strong>Can I get burial insurance if I have uncontrolled high blood pressure?</strong></h2>
 
 <p>Yes, people will often qualify for first-day coverage insurance with no waiting period if they have high blood pressure or uncontrolled high blood pressure, provided they have been taking <a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications" target="_blank" rel="noreferrer noopener">medications</a> for high blood pressure and following their doctors’ recommendations. These plans for uncontrolled high blood pressure are not available in all states, so feel free to contact us if you have any questions.</p>
 
-<h2 id="burial-insurance-available"><strong>Types of Burial Insurance For People With Uncontrolled High Blood Pressure?</strong></h2>
+<h2 id="burial-insurance-available"><strong>Types of burial insurance for people with uncontrolled high blood pressure?</strong></h2>
 
 <p><strong>First-Day Coverage</strong> – This is a no-medical exam life insurance policy. You only need to answer a few health questions. The first-day coverage plan has immediate coverage and no waiting period.&#160;</p>
 
@@ -91,13 +91,13 @@ sidebar: true
 
 <p>Guaranteed issue whole life insurance comes with a two-year waiting period, and the premiums are higher than first-day coverage insurance. During this waiting period, if you were to pass away, you would not get the full death benefit. The policy would only pay out the premiums you have paid plus 7-10% interest (depending on the insurance carrier.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option With Uncontrolled High Blood Pressure?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option with uncontrolled high blood pressure?</strong></h2>
 
 <p><strong>CONTROLLED AND UNCONTROLLED HIGH BLOOD PRESSURE (with no hospitalization) –&#160;</strong>First-day coverage is your best option if you have high blood pressure problems. First-day coverage (level benefit plan) and no waiting period are available for people taking medication to control their blood pressure.</p>
 
 <p><strong>UNCONTROLLED HIGH BLOOD PRESSURE WITH 2 OR MORE HOSPITALIZATION IN THE LAST 2 YEARS – </strong>If you have had two or more hospitalizations in the last two years, your best option is often guaranteed acceptance life insurance.</p>
 
-<h2 id="do-i-need-a-medical-exam"><strong>Do I Need A Medical Exam?</strong></h2>
+<h2 id="do-i-need-a-medical-exam"><strong>Do I need a medical exam?</strong></h2>
 
 <p>NO. You don’t need a physical or medical exam to qualify for burial insurance. You will only need to complete a simple health questionnaire to qualify.</p>
 
@@ -105,7 +105,7 @@ sidebar: true
 
 <p>With first-day coverage insurance, you’ll often get approved by the insurance company within minutes!</p>
 
-<h2 id="burial-insurance-cost"><strong>How Much Does Burial Insurance Cost If I Have Uncontrolled High Blood Pressure?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>How much does burial insurance cost if I have uncontrolled high blood pressure?</strong></h2>
 
 <p><strong>The cost of burial life insurance with high blood pressure will depend on your:</strong></p>
 
@@ -119,7 +119,7 @@ sidebar: true
 <li>Type of Insurance Plan</li>
 </ul>
 
-<h2 id="life-insurance-underwriting"><strong>Burial Insurance Underwriting For High Blood Pressure Patients</strong></h2>
+<h2 id="life-insurance-underwriting"><strong>Burial insurance underwriting for high blood pressure patients</strong></h2>
 
 <p>Most burial insurance companies offering first-day coverage plans ask some health questions and perform a prescription history check to verify your health.</p>
 
@@ -181,11 +181,11 @@ sidebar: true
 <li>Verapamil</li>
 </ul>
 
-<h2 id="getting-the-best-rates"><strong>How To Get The Best Rates For Burial Insurance</strong></h2>
+<h2 id="getting-the-best-rates"><strong>How to get the best rates for burial insurance</strong></h2>
 
 <p>The best way to get the lowest rates and save money on insurance is to let an independent life insurance agency like Final Expense Guy compare insurance companies for you. Our independent life insurance experts will help you identify the most affordable final expense life insurance rates.</p>
 
-<h2 id="applying-for-burial-insurance"><strong>How To Apply For Burial Insurance With High Blood Pressure</strong></h2>
+<h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with high blood pressure</strong></h2>
 
 <ol>
 <li><strong>Work with an Independent Insurance Agent –&#160;</strong>Ask for assistance from independent insurance agents specializing in underwriting for high blood pressure. An independent insurance agent can help you understand your options and choose the best burial insurance plan that best suits your needs and budget.</li>
@@ -193,7 +193,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Here at Final Expense Guy, we specialize in getting life insurance coverage for applicants with high blood pressure.</p>
 
@@ -201,7 +201,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you want to get life insurance with high blood pressure, we can help. Fill out our quote form on this page or call us at (888)862-9456 to get accurate burial insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>Does high blood pressure disqualify you from life insurance?</strong></p>
 

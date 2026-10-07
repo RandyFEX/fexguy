@@ -45,7 +45,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="final-expenses-your-family-will-have-to-pay"><strong>Final Expenses Your Family Will Have To Pay</strong></h2>
+<h2 id="final-expenses-your-family-will-have-to-pay"><strong>Final expenses your family will have to pay</strong></h2>
 
 <p>A life insurance policy is often purchased to help cover <a href="/how-much-does-a-funeral-cost/" target="_blank" rel="noreferrer noopener">funeral expenses.</a></p>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <p><strong>Counseling</strong> – your spouse may need to go on counseling to process their emotions and grief. Counseling sessions cost around $100 or more an hour.</p>
 
-<h2 id="what-happens-when-your-spouse-died-no-life-insurance"><br><strong>What Happens When Your Spouse Died No Life Insurance?</strong></h2>
+<h2 id="what-happens-when-your-spouse-died-no-life-insurance"><br><strong>What happens when your spouse died no life insurance?</strong></h2>
 
 <p>Losing a loved one is tough, and having no life insurance for your death will be harder on your spouse. Life without life insurance is difficult. We often hear no life insurance stories.</p>
 
@@ -91,7 +91,7 @@ sidebar: true
 
 <p><strong>Funeral payment plan</strong> – some funeral directors offer loans for those unable to pay. You will only have to deposit up-front and pay back in installments. Your spouse would need to shop around to find a funeral director that offers excellent value.</p>
 
-<h2 id="programs-that-can-help-your-family-if-you-die-without-life-insurance"><br><strong>Programs That Can Help Your Family If You Die Without Life Insurance</strong></h2>
+<h2 id="programs-that-can-help-your-family-if-you-die-without-life-insurance"><br><strong>Programs that can help your family if you die without life insurance</strong></h2>
 
 <p>No life insurance how to pay for the funeral, here are some ways how to finance a funeral:</p>
 
@@ -131,7 +131,7 @@ sidebar: true
 
 <p>If this appeal reached an adequate level, the family would have a foundation to build on.</p>
 
-<h2 id="what-kind-of-burial-policies-and-final-expense-policies-should-i-avoid"><br><strong>What Kind Of Burial Policies And Final Expense Policies Should I Avoid?</strong></h2>
+<h2 id="what-kind-of-burial-policies-and-final-expense-policies-should-i-avoid"><br><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as the easiest way to shop for this protection.</p>
 
@@ -139,7 +139,7 @@ sidebar: true
 
 <p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">burial insurance</a></strong>, like Final Expense Guy, than to sign up with a company that spends millions of dollars each month advertising on television and in magazines.</p>
 
-<h3><strong>Increasing Price Policies</strong></h3>
+<h3><strong>Increasing price policies</strong></h3>
 
 <p>Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! </p>
 
@@ -169,7 +169,7 @@ sidebar: true
 
 <p><strong>We work with 20+ final expense companies, so we can get you qualified for the best-priced plan to get folks like you immediate coverage when possible.</strong></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced final expense and burial insurance policies.</p>
 
@@ -183,7 +183,7 @@ sidebar: true
 
 <p>With access to all the best burial insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>What happens if a person dies without life insurance?</strong></p>
 

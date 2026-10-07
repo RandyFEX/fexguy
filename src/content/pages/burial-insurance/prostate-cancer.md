@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2>Prostate Cancer Burial Insurance Key Insights</h2>
+<h2>Prostate cancer burial insurance key insights</h2>
 
 <ul>
 <li><strong>Prostate cancer success rates are high:</strong> This condition is one of the most curable cancers, and insurers view it more favorably than almost any other type.</li>
@@ -31,13 +31,13 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
-<h2>Prostate Cancer Medical Definition &amp; Health Risks</h2>
+<h2>Prostate cancer medical definition &amp; health risks</h2>
 
 <p>Underwriters categorize prostate cancer risk by looking at the time passed since your last treatment date.</p>
 
 <p><a href="https://en.wikipedia.org/wiki/Prostate_cancer" target="_blank" rel="noreferrer noopener">Prostate cancer</a> occurs when cells in the prostate gland grow out of control and form a tumor. While many cases grow very slowly, untreated <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> can spread to the bones or other organs. Poor control of this condition increases the chance of the cancer returning or causing other major organ failure.</p>
 
-<h3>Life Insurance Companies Ask These Prostate Cancer Questions</h3>
+<h3>Life insurance companies ask these prostate cancer questions</h3>
 
 <p>Different life insurance companies ask different questions to decide which prostate cancer applicants they may approve.</p>
 
@@ -56,7 +56,7 @@ sidebar: true
 <li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
-<h3>Prostate Cancer Underwriting Basics</h3>
+<h3>Prostate cancer underwriting basics</h3>
 
 <p>Medical underwriters look for specific signals to decide if you are a safe bet for coverage:</p>
 
@@ -71,7 +71,7 @@ sidebar: true
 
 <p><strong>Why it Matters:</strong> Your PSA and Gleason scores indicate to the insurer how aggressive the cancer is. High scores lead to higher prices or a 2-year waiting period, while low scores help you get 1st-day coverage.</p>
 
-<h3>Prostate Cancer Prescription Medication Classes</h3>
+<h3>Prostate cancer prescription medication classes</h3>
 
 <ul>
 <li><strong>Hormone Therapy:</strong> Lupron, Eligard, or Casodex.</li>
@@ -79,7 +79,7 @@ sidebar: true
 <li><strong>Bone Health:</strong> Zometa or Xgeva is used to prevent bone metastasis.</li>
 </ul>
 
-<h2>Prostate Cancer with Comorbidities</h2>
+<h2>Prostate cancer with comorbidities</h2>
 
 <p>Combining multiple health conditions increases the total risk level for life insurance carriers.</p>
 
@@ -89,7 +89,7 @@ sidebar: true
 
 <p>In my experience, controlled prostate cancer qualifies people for immediate level burial insurance coverage even with secondary health issues.</p>
 
-<h2>Understanding Prostate Cancer Policy Types</h2>
+<h2>Understanding prostate cancer policy types</h2>
 
 <p>Carriers offer different plan categories based on an applicant’s cancer stage and long-term health stability.</p>
 
@@ -99,7 +99,7 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend <strong>Gerber</strong> for anyone currently in treatment or in remission.</li>
 </ul>
 
-<h2>Prostate Cancer Underwriting &amp; Medication History</h2>
+<h2>Prostate cancer underwriting &amp; medication history</h2>
 
 <p>Insurance companies review your pharmacy records to confirm how long you have been cancer-free.</p>
 
@@ -136,23 +136,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real Life Prostate Cancer Success Stories</h2>
+<h2>Real life prostate cancer success stories</h2>
 
 <p>Real-world examples illustrate how people with prostate cancer can find day-one protection for their final expenses.</p>
 
-<h3>James’s Story</h3>
+<h3>James’s story</h3>
 
 <p>James was diagnosed with Stage 2 prostate cancer 3 years ago and had a full surgery to remove it. Because he had no other major health issues and had passed the 2-year mark, we sought a top-tier plan. He wanted $15,000 to make sure his daughters wouldn’t have to pay for a funeral. I helped him qualify for a 1st-day coverage plan with Aflac. This saved him 30% compared to the graded plans he saw online. He now has peace of mind knowing his family is protected.</p>
 
-<h3>Robert’s Story</h3>
+<h3>Robert’s story</h3>
 
 <p>Robert found out he had prostate cancer last year and is currently taking hormone therapy. Since he is still in active treatment, he couldn’t qualify for a standard plan yet. He decided not to wait because he didn’t want to leave his wife with debt. We set him up with a $10,000 policy through Gerber. Even though it has a 2-year waiting period, he knows that if he passes away early, his wife gets every penny back plus 10% interest. This plan functions as a high-interest savings account while he recovers.</p>
 
-<h2>Rates &amp; Approvals</h2>
+<h2>Rates &amp; approvals</h2>
 
 <p>Here are some rates if your cancer was cured more than 24 months ago. If you still have cancer, I can help you find the right A-rated company for your needs.</p>
 
-<h3>TRINITY LIFE &amp; FAMILY BENEFIT INSURANCE RATES AGE 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -176,7 +176,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Prostate Cancer Burial Insurance</h2>
+<h2>Frequently asked questions: prostate cancer burial insurance</h2>
 
 <h3>Can I get burial insurance with a prostate cancer diagnosis?</h3>
 

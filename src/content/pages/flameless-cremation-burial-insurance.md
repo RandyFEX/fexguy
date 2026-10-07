@@ -56,7 +56,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-flameless-cremation"> <br>What Is Flameless Cremation? </h2>
+<h2 id="what-is-flameless-cremation"> <br>What is flameless cremation? </h2>
 
 <p>Alkaline hydrolysis or flameless cremation is a water-based chemical resolving process that uses strong alkali and water to reduce the body to bone fragments quickly. </p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>This disposition process is currently legal in sixteen states, including California, Colorado, Florida, Georgia, Idaho, Illinois, Kansas, Maine, Maryland, Michigan, Minnesota, Nevada, Oregon, Utah, and Wyoming.</p>
 
-<h2 id="benefits-of-flameless-cremation"><br><strong>Benefits Of Flameless Cremation </strong></h2>
+<h2 id="benefits-of-flameless-cremation"><br><strong>Benefits of flameless cremation </strong></h2>
 
 <p>Burial and traditional cremations have a marked environmental cost. </p>
 
@@ -99,7 +99,7 @@ sidebar: true
 
 <p>Flameless cremation produces no fumes or smoke. It also requires less energy. It only uses a quarter of the energy needed for cremation and conserves more than a metric ton of (CO2) carbon dioxide for every person that uses it. It also produces no mercury emissions.</p>
 
-<h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost?</strong></h2>
+<h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost?</strong></h2>
 
 <p>The cost of a traditional funeral and burial is the most expensive final expense you will pay. </p>
 
@@ -146,7 +146,7 @@ sidebar: true
 
 <p>This is the reason why having flameless burial cremation insurance is important. Cremation insurance can protect your family from the financial stress associated with dying.</p>
 
-<h2 id="what-is-flameless-cremation-burial-insurance"><br><strong>What Is Flameless Cremation Burial Insurance? </strong></h2>
+<h2 id="what-is-flameless-cremation-burial-insurance"><br><strong>What is flameless cremation burial insurance? </strong></h2>
 
 <p>Flameless burial cremation insurance is a whole life insurance policy designed to cover the cost of cremation and other end-of-life expenses. </p>
 
@@ -187,7 +187,7 @@ the years </p>
 
 <p>Even if you expect to leave enough funds to your family, you may not want your estate to shoulder your final expenses. Having cremation insurance is one way to ensure that your estate will be available to your family.</p>
 
-<h2 id="who-can-apply-for-flameless-cremation-burial-insurance"><br><strong>Who Can Apply For Flameless Cremation Burial Insurance?</strong></h2>
+<h2 id="who-can-apply-for-flameless-cremation-burial-insurance"><br><strong>Who can apply for flameless cremation burial insurance?</strong></h2>
 
 <p><strong>Age requirement</strong> – you must be 50 to 85 years old to
 be eligible for cremation insurance.</p>
@@ -197,7 +197,7 @@ permanent resident to be able to buy cremation insurance</p>
 
 <p><strong>Mental capacity</strong> – you must have the mental ability to enter into a legal contract to qualify for cremation insurance.</p>
 
-<h2 id="different-types-of-cremation-insurance"><br><strong>Different Types Of Cremation Insurance </strong></h2>
+<h2 id="different-types-of-cremation-insurance"><br><strong>Different types of cremation insurance </strong></h2>
 
 <p>You can either apply for cremation insurance with underwriting (answer health questions), or you can apply for a policy that does not have health questions. </p>
 
@@ -242,7 +242,7 @@ underwriting:</strong></p>
 
 <p>The company will not pay the full death benefit if you pass away from natural causes during the waiting period. Instead, they will return 100% of your premiums plus 7-10% interest. The insurance company will pay the full death benefit even during the waiting period for accidental death.</p>
 
-<h2><br><strong>Guaranteed Issue Cremation Insurance (No Health Questions)</strong></h2>
+<h2><br><strong>Guaranteed issue cremation insurance (no health questions)</strong></h2>
 
 <p>Cremation insurance has a lenient underwriting. However, some medical conditions are considered uninsurable. </p>
 
@@ -267,7 +267,7 @@ underwriting:</strong></p>
 
 <p>Guaranteed issue cremation insurance has a two-year waiting period. If you die from natural causes during the first two years, the company would only refund your premiums plus 7-10% interest. </p>
 
-<h2 id="what-to-look-for-in-a-cremation-insurance-policy"><br><strong>What To Look For In A Cremation Insurance Policy </strong></h2>
+<h2 id="what-to-look-for-in-a-cremation-insurance-policy"><br><strong>What to look for in a cremation insurance policy </strong></h2>
 
 <p>If you’re shopping for cremation insurance, you need to pay attention to the price and the fine print. </p>
 
@@ -287,7 +287,7 @@ underwriting:</strong></p>
 
 <p>Before you decide which cremation insurance to buy, answer the instant pricing estimate box. This way, you can compare prices from different insurance companies and choose the one that fits your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want cremation insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -303,7 +303,7 @@ underwriting:</strong></p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>How is flameless cremation done?</strong></p>
 
@@ -469,21 +469,21 @@ underwriting:</strong></p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">4 Comments</h2>
+<h2 class="as-h5">4 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-1387">

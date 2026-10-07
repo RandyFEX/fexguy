@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option"><br><strong>What Is My Best Insurance Option If I’m An Insulin-dependent Diabetic?</strong></h2>
+<h2 id="best-option"><br><strong>What is my best insurance option if I’m an insulin-dependent diabetic?</strong></h2>
 
 <p>If you’re managing your diabetes with insulin, you might just hit the jackpot with a level death benefit plan that offers full coverage from day one.</p>
 
@@ -89,13 +89,13 @@ sidebar: true
 
 <p>If you’re currently in the hospital or have had a couple of visits in the last few years, your best option is guaranteed-issue burial insurance.</p>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>No medical exam needed for your burial insurance. When you’re ready to cash in your chips, the last thing you want is paperwork.</p>
 
 <p>Just answer a few quick questions about your health – don’t worry, we’re not asking for your life story. No needles, no blood draws, just pure, unadulterated simplicity. You’ll get the green light faster than you can say “six feet under.”</p>
 
-<h2 id="underwriting"><br><strong><strong>Burial Insurance Underwriting For Insulin-dependent Diabetics</strong></strong></h2>
+<h2 id="underwriting"><br><strong><strong>Burial insurance underwriting for insulin-dependent diabetics</strong></strong></h2>
 
 <p><strong>There are two ways these insurance folks figure out if you’re a good risk:</strong></p>
 
@@ -140,17 +140,17 @@ sidebar: true
 
 <p>There might be other medicines, but these are the most common ones for people who use insulin.</p>
 
-<h2 id="insurance-need"><br><strong>How Much Insurance Do I Need? </strong></h2>
+<h2 id="insurance-need"><br><strong>How much insurance do I need? </strong></h2>
 
 <p>How much insurance should you get? Well, it depends on how fancy you want your send-off to be. You need enough to cover your funeral, burial, and any other final costs.</p>
 
 <p>Figure out how much you think your final expenses will be. Your funeral is probably the biggest bill. But don’t forget about doctor bills, credit cards, and other debts. You don’t want to leave your loved ones with a pile of bills on top of their grief.</p>
 
-<h2 id="premium-payment"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="premium-payment"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The easiest way to pay for your insurance is to set up automatic payments from your bank account. This way, you won’t forget and your insurance won’t go poof. It’s like setting and forgetting, but for your final arrangements.</p>
 
-<h2 id="information-we-need"><br><strong><strong>Information We Need If You’re An Insulin-dependent Diabetic</strong></strong></h2>
+<h2 id="information-we-need"><br><strong><strong>Information we need if you’re an insulin-dependent diabetic</strong></strong></h2>
 
 <p>If you’re dealing with diabetes and insulin, we need to know the lowdown.</p>
 
@@ -171,13 +171,13 @@ sidebar: true
 <li>What medications are you taking?</li>
 </ol>
 
-<h2 id="rejected-application"><br><strong>What If I Was Rejected For Coverage?</strong></h2>
+<h2 id="rejected-application"><br><strong>What if I was rejected for coverage?</strong></h2>
 
 <p>Been turned down for insurance before? Don’t sweat it. We’ve seen it all.</p>
 
 <p>If another company said no, don’t give up hope. We can help you find an insurance company that’s a little friendlier to people with diabetes.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -192,7 +192,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– Your policy can actually make you some money over time.</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding burial insurance with health problems? Don’t stress! We’re here to help.</p>
 
@@ -204,7 +204,7 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at <strong>(888) 862-9456</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is life insurance expensive for diabetics?</strong></p>
 

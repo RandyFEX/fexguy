@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-a-burial-insurance-contestability-period"><strong>What Is A Burial Insurance Contestability Period?</strong></h2>
+<h2 id="what-is-a-burial-insurance-contestability-period"><strong>What is a burial insurance contestability period?</strong></h2>
 
 <p>The life insurance contestability period is a two-year window that starts from the day you purchase your burial insurance plan. During this time, the life insurance company is allowed to review your coverage for:</p>
 
@@ -66,7 +66,7 @@ sidebar: true
 
 <p>However, if the company finds any misrepresentation in your application during the contestability period while you’re still alive, they can cancel your policy and return all the premiums you’ve paid or ask you to pay higher premiums.</p>
 
-<h3><br><strong>MISREPRESENTATION</strong></h3>
+<h3><br><strong>Misrepresentation</strong></h3>
 
 <p>Material misrepresentation means incorrectly answering questions on the application form to get a lower rate on the life insurance policy. Often, applicants would answer questions to make them seem healthier or less risky.</p>
 
@@ -80,7 +80,7 @@ sidebar: true
 
 <p>The only way to ensure that your beneficiary receives the insurance payout is, to be honest on your application.</p>
 
-<h3><br><strong>SUICIDE CLAUSE</strong></h3>
+<h3><br><strong>Suicide clause</strong></h3>
 
 <p>The life insurance suicide clause determines when the policy will begin to pay for suicide or intentional acts of self-harm. Each state has different regulations regarding suicide exclusion periods but most states have a two-year limit.</p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>The suicide clause only applies during the first two years of the policy. If the insured commits suicide after the contestability period, the life insurance company will pay the death benefit to the beneficiary.</p>
 
-<h3><br><strong>HOMICIDE CLAUSE</strong></h3>
+<h3><br><strong>Homicide clause</strong></h3>
 
 <p>Life insurance often contains a homicide clause relating to accidental death. </p>
 
@@ -102,7 +102,7 @@ sidebar: true
 
 <p>The contestability period is different from a <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance</a> policy, with a two-year waiting period until the full death benefit is available.</p>
 
-<h2 id="what-is-the-purpose-of-contestability-period"><br><strong>What Is The Purpose Of Contestability Period?</strong></h2>
+<h2 id="what-is-the-purpose-of-contestability-period"><br><strong>What is the purpose of contestability period?</strong></h2>
 
 <p>The contestability period begins on the first day of the coverage. </p>
 
@@ -110,7 +110,7 @@ sidebar: true
 
 <p>The premium cost is based on the applicant’s age and medical history. Some applicants may try to minimize their premium by misrepresenting their health and lifestyle, such as hiding facts about their medical condition, risky hobbies, or hazardous occupations.</p>
 
-<h2 id="what-is-the-effect-of-contestability-period-to-death-benefit-payout"><br><strong>What Is The Effect Of Contestability Period To Death Benefit Payout?</strong></h2>
+<h2 id="what-is-the-effect-of-contestability-period-to-death-benefit-payout"><br><strong>What is the effect of contestability period to death benefit payout?</strong></h2>
 
 <p>A contestability period is the insurance company’s protection against fraud.</p>
 
@@ -130,13 +130,13 @@ sidebar: true
 
 <p>If the company investigates the claim and learns everything is honest, they must give your beneficiary the death benefit, even if you die a day after you bought the plan.</p>
 
-<h2 id="how-does-insurance-company-contest-a-claim"><br><strong>How Does Insurance Company Contest A Claim?</strong></h2>
+<h2 id="how-does-insurance-company-contest-a-claim"><br><strong>How does insurance company contest a claim?</strong></h2>
 
 <p>Before the insurance company contests a claim, they will request to evaluate the medical records and other documents. </p>
 
 <p>They will look for information revealing evidence of material misrepresentation or dishonesty in the initial insurance coverage application.</p>
 
-<h2 id="what-happens-if-the-insurance-company-finds-misrepresentation"><br><strong>What Happens If The Insurance Company Finds Misrepresentation?</strong></h2>
+<h2 id="what-happens-if-the-insurance-company-finds-misrepresentation"><br><strong>What happens if the insurance company finds misrepresentation?</strong></h2>
 
 <p>If an insurance company discovers you have misrepresented something on your application, they will generally do one of two things:</p>
 
@@ -148,7 +148,7 @@ sidebar: true
 
 <p>For example, if you didn’t disclose your cancer in the application and died one year after buying the policy.</p>
 
-<h2 id="resetting-the-contestability-period"><br><strong>Resetting The Contestability Period</strong></h2>
+<h2 id="resetting-the-contestability-period"><br><strong>Resetting the contestability period</strong></h2>
 
 <p>If you fall behind on the premiums, your policy may lapse. When that happens, you’ll need to reapply to get insurance coverage. You will need to undertake the life insurance application process again.</p>
 
@@ -160,7 +160,7 @@ sidebar: true
 
 <p>The premium will even be higher if the company determines your health declined during that time.</p>
 
-<h2 id="what-happens-after-the-contestability-period"><br><strong>What Happens After The Contestability Period?</strong></h2>
+<h2 id="what-happens-after-the-contestability-period"><br><strong>What happens after the contestability period?</strong></h2>
 
 <p>What is life insurance after the contestability period? Once you’re out of the contestability period, your policy won’t be subject to contestability if you pass away. As long as you keep paying your premiums on time, you will remain covered, and your beneficiary will receive the full death benefit.</p>
 
@@ -168,7 +168,7 @@ sidebar: true
 
 <p>However, it’s still possible for the company to discover fraud and withhold a death benefit, reduce the amount, or return the total paid premiums instead of the death benefit.</p>
 
-<h2 id="post-claims-underwriting"><br><strong>Post-claims Underwriting</strong></h2>
+<h2 id="post-claims-underwriting"><br><strong>Post-claims underwriting</strong></h2>
 
 <p>What is a contestable death investigation? For insurance companies, the two-year contestability period is satisfactory for discovering fraud or material misrepresentations. They will investigate claims based on your answers on the application, prescription database, medical records, and recorded phone interviews. </p>
 
@@ -184,7 +184,7 @@ sidebar: true
 
 <p>Post-claim investigation is done to determine your cause of death. If you pass away from a vehicular accident, the company won’t have a reason to check your medical history and find a way to deny a claim.</p>
 
-<h2 id="what-happens-if-the-insurance-company-approves-a-claim"><br><strong>What Happens If The Insurance Company Approves A Claim?</strong></h2>
+<h2 id="what-happens-if-the-insurance-company-approves-a-claim"><br><strong>What happens if the insurance company approves a claim?</strong></h2>
 
 <p>If there is an investigation that proves the insured’s honesty on the application, the beneficiaries will get 100% death benefit plus interest to cover any delay it caused. </p>
 
@@ -194,7 +194,7 @@ sidebar: true
 
 <p>The insurance company wants to pay out as quickly as possible to avoid interest charges on unpaid death benefits.</p>
 
-<h2><br><strong>Bottom Line</strong></h2>
+<h2><br><strong>Bottom line</strong></h2>
 
 <p>The insurance companies will exercise their rights to investigate the cause of death during the contestability period. If not, they will all be lining up for bankruptcy.</p>
 
@@ -208,7 +208,7 @@ sidebar: true
 
 <p>Also, note that while an investigation may be daunting, life insurance companies generally do not contest death benefits unless there is a material misrepresentation. It is better to be prepared and understand your available options when facing life insurance contestability.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Learning about the burial insurance contestability period needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -222,7 +222,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for contestability period funeral insurance, contestability period burial insurance, or contestability period life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>What is the contestability period?</strong></p>
 

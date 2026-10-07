@@ -64,7 +64,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-lung-cancer"><br><strong>What Is My Best Insurance Option If I Have A History Of Lung Cancer? </strong></h2>
+<h2 id="best-insurance-option-if-you-have-lung-cancer"><br><strong>What is my best insurance option if I have a history of lung cancer? </strong></h2>
 
 <p><br><strong>YOU’RE CANCER-FREE FOR MORE THAN 24 MONTHS</strong></p>
 
@@ -112,7 +112,7 @@ insurance is your best option:</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -151,7 +151,7 @@ insurance is your best option:</p>
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -200,7 +200,7 @@ insurance is your best option:</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Lung Cancer, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have lung cancer, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with lung cancer.</p>
 
@@ -223,7 +223,7 @@ affect Lung cancer burial insurance eligibility:</strong></p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-lung-cancer"><br><strong><strong>Burial Insurance Underwriting If You Have Lung Cancer</strong></strong></h2>
+<h2 id="insurance-underwriting-for-lung-cancer"><br><strong><strong>Burial insurance underwriting if you have lung cancer</strong></strong></h2>
 
 <p>If you want to access the lowest premium and get first-day coverage, you must apply for a burial insurance plan with underwriting (health questions).</p>
 
@@ -286,7 +286,7 @@ status and verify your response to the health questionnaire.</p>
 
 <p>Taking any of these prescription medications will indicate to the insurance company that you are a lung cancer patient. Being a lung cancer patient puts you in a higher risk category.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Lung Cancer?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have lung cancer?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -346,11 +346,11 @@ status and verify your response to the health questionnaire.</p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="lung-cancer-and-burial-insurance-riders"><br><strong>Lung Cancer And Burial Insurance Riders</strong></h2>
+<h2 id="lung-cancer-and-burial-insurance-riders"><br><strong>Lung cancer and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -359,7 +359,7 @@ status and verify your response to the health questionnaire.</p>
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-lung-cancer"><br><strong>Information We Need If You Have Lung Cancer </strong></h2>
+<h2 id="information-we-need-if-you-have-lung-cancer"><br><strong>Information we need if you have lung cancer </strong></h2>
 
 <p>When you request a burial insurance quote, we will ask you some health questions to better understand your past and current medical condition.</p>
 
@@ -381,7 +381,7 @@ cancer?</li>
 determine the type of burial insurance plan you will qualify for and how much
 premium you will pay.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -396,7 +396,7 @@ premium you will pay.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Lung Cancer</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with lung cancer</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -415,7 +415,7 @@ premium you will pay.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you have lung cancer needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -427,7 +427,7 @@ premium you will pay.</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance with lung cancer?</strong></p>
 
@@ -511,8 +511,8 @@ premium you will pay.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/burial-insurance-breast-cancer/">
-<h3 class="as-h5">Burial Insurance After Breast Cancer</h3>
+<h3 class="as-h5">Burial insurance after breast cancer</h3>
 </a></div>

@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-dui-or-dwi-history"><strong>What Is My Best Insurance Option If I Have A DUI Or DWI History?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-dui-or-dwi-history"><strong>What is my best insurance option if I have a DUI or DWI history?</strong></h2>
 
 <p>Some burial insurance companies are not concerned with any DUI history. In fact, they don’t even ask!</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>Many burial insurance companies will ask you about DUI using any of these terms and deny your application if you have a DUI or DWI…but not all of them!</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -140,7 +140,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -189,7 +189,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with a DUI or DWI history.</p>
 
@@ -197,7 +197,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-dui-or-dwi-history"><br><strong><strong>Burial Insurance Underwriting If You Have A DUI Or DWI History</strong></strong></h2>
+<h2 id="insurance-underwriting-for-dui-or-dwi-history"><br><strong><strong>Burial insurance underwriting if you have a DUI or DWI history</strong></strong></h2>
 
 <p>Underwriters assess your risk when you apply for life insurance coverage. They use all the data available to determine how likely or how soon you will die. They determine how much they will charge for your specific situation.</p>
 
@@ -221,7 +221,7 @@ sidebar: true
 
 <p>Any lies on the application are considered fraud, resulting in the insurance company rescinding your policy in the first two years if your lies are uncovered. Your beneficiaries would be denied payment if you die in the first two years if you lied on your application.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have A DUI Or DWI History?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have a DUI or DWI history?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -281,11 +281,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>DUI Or DWI History And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>DUI or DWI history and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -294,7 +294,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-dui-or-dwi-history"><br><strong><strong>Information We Need If You Have A DUI Or DWI History</strong></strong></h2>
+<h2 id="information-we-need-if-you-have-dui-or-dwi-history"><br><strong><strong>Information we need if you have a DUI or DWI history</strong></strong></h2>
 
 <p>Burial insurance companies have differing views on DUI risks. Because of this, we need to know everything about your DUI arrest history for us to be able to match you with the carrier that is more lenient with your condition.</p>
 
@@ -314,7 +314,7 @@ sidebar: true
 
 <p>We need to know your DUI history to provide you with the best recommendation. The more information we get, the better your chances of finding affordable insurance coverage.</p>
 
-<h2 id="how-to-get-the-best-rates"><br><strong><strong>How To Get The Best Burial Insurance Rates For People With A DUI Or DWI History</strong></strong></h2>
+<h2 id="how-to-get-the-best-rates"><br><strong><strong>How to get the best burial insurance rates for people with a DUI or DWI history</strong></strong></h2>
 
 <p>Buying burial insurance with a DUI history varies significantly from one company to the next so does their pricing. The best way to get quality burial insurance coverage at an affordable rate is to work with an independent life insurance agency like Final Expense Guy.</p>
 
@@ -322,7 +322,7 @@ sidebar: true
 
 <p>If you have several DUI or DWI convictions on your record, work with us, and you don’t have to worry about buying expensive plans or lower-quality plans anymore. We will match you up with carriers that never ask about DUI history and offer the best rate.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -337,7 +337,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With A DUI Or DWI History</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with a DUI or DWI history</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -356,7 +356,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with a DUI or DWI history needn’t be frustrating, but working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -366,7 +366,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral or burial insurance with a&#160;DUI or DWI in your driving history, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong>&#160;and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I have a DUI?</strong></p>
 

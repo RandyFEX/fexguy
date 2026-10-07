@@ -66,7 +66,7 @@ the continuance of medical training or you want to forego the cost of a funeral
 </tbody>
 </table>
 
-<h2 id="whole-body-donation-in-the-united-states"><br><strong>Whole Body Donation In The United States</strong> </h2>
+<h2 id="whole-body-donation-in-the-united-states"><br><strong>Whole body donation in the United States</strong> </h2>
 
 <p>Body donation, also called an anatomical gift, or body bequest, is the donation of the entire body after death for education and research. Donated bodies are used to study gross anatomy and surgical anatomy and continue medical education.</p>
 
@@ -88,7 +88,7 @@ that Health and Human Services would oversee the body donation industry.</p>
 services for the corpses of body donation to show respect for the donors and
 their families.</p>
 
-<h2 id="types-of-body-donation"><br><strong>Types Of Body Donation</strong> </h2>
+<h2 id="types-of-body-donation"><br><strong>Types of body donation</strong> </h2>
 
 <p><strong>ORGAN AND TISSUE DONATION</strong></p>
 
@@ -114,7 +114,7 @@ their families.</p>
 
 <p>The whole body donation program is currently managed by the Institute for Plastination in Heidelberg, Germany, and is on display in different parts of the world. They are not accepting new body donations because they are at full capacity, but you can check back in as time progresses.</p>
 
-<h2 id="how-does-donating-your-body-to-science-work"><br><strong>How Does Donating Your Body To Science Really Work? </strong></h2>
+<h2 id="how-does-donating-your-body-to-science-work"><br><strong>How does donating your body to science really work? </strong></h2>
 
 <p>How do you donate your body to science? Donating your body to science is an easy process. Here are the ways:</p>
 
@@ -158,7 +158,7 @@ their families.</p>
 
 <p>You need to have something to cover the cost of your funeral and other final expenses. Having <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense</a> insurance, or funeral insurance to cover the cost of your end-of-life expenses will lift the financial burden on your family.</p>
 
-<h2 id="donating-your-body-to-science"><br><strong>Donating Your Body To Science: Frequently Asked Questions </strong></h2>
+<h2 id="donating-your-body-to-science"><br><strong>Donating your body to science: frequently asked questions </strong></h2>
 
 <p><strong>Can anyone donate his body to science?</strong></p>
 
@@ -252,7 +252,7 @@ diabetes will not disqualify you for donation. </p>
 
 <p>There are different ways to find out information about body donation programs. We have included links to some resources below. There is lots of information available on the internet, or you can consult your nearest medical school for information.</p>
 
-<h2 id="donating-to-science-resources"><br><strong>Donating To Science Resources</strong></h2>
+<h2 id="donating-to-science-resources"><br><strong>Donating to science resources</strong></h2>
 
 <p><strong>Listing of U.S. body donation programs</strong> – <a rel="noreferrer noopener" href="http://anatbd.acb.med.ufl.edu/usprograms/" target="_blank">http://anatbd.acb.med.ufl.edu/usprograms/</a></p>
 
@@ -274,7 +274,7 @@ diabetes will not disqualify you for donation. </p>
 
 <p><strong>BioGift</strong> <a rel="noreferrer noopener" href="https://biogift.org/" target="_blank">https://biogift.org/</a></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want to donate your body to science needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -291,7 +291,7 @@ shop your case to different insurance carriers and get you the best price.</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>What is a body donated to science called?</strong></p>
 

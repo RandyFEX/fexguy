@@ -23,7 +23,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW HEIGHT &amp; WEIGHT AFFECT YOUR PREMIUM CLASS</strong></h2>
+<h2><strong>How height &amp; weight affect your premium class</strong></h2>
 
 <p>Your height and weight place you into a risk class that directly controls how much you pay for the same coverage.</p>
 
@@ -53,7 +53,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-common-complaints-with-life-insurance-build-charts"><strong>COMMON COMPLAINTS WITH LIFE INSURANCE BUILD CHARTS</strong></h2>
+<h2 id="h-common-complaints-with-life-insurance-build-charts"><strong>Common complaints with life insurance build charts</strong></h2>
 
 <h3 id="h-below-are-some-of-the-most-common-complaints-or-concerns-about-build-charts"><strong>Below are some of the most common complaints or concerns about “build charts”:</strong></h3>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>UNDERSTANDING LIFE INSURANCE TABLE RATINGS</strong></h2>
+<h2><strong>Understanding life insurance table ratings</strong></h2>
 
 <p>A table rating means you’re approved for coverage but charged more because the insurer views your risk as higher than average.</p>
 
@@ -146,7 +146,7 @@ sidebar: true
 
 <h3>
 🔍
-The Agent Who Quoted Preferred
+The agent who quoted preferred
 </h3>
 
 <p>Local agent quote, Preferred class implied, Dan believed his weight wouldn’t change the outcome.</p>
@@ -161,7 +161,7 @@ The Agent Who Quoted Preferred
 
 <hr>
 
-<h2 id="h-why-insurers-use-build-charts"><strong>WHY INSURERS USE BUILD CHARTS</strong></h2>
+<h2 id="h-why-insurers-use-build-charts"><strong>Why insurers use build charts</strong></h2>
 
 <p>Insurance companies using build charts for life insurance is a decades-old practice.</p>
 
@@ -175,7 +175,7 @@ The Agent Who Quoted Preferred
 
 <hr>
 
-<h2 id="h-pros-amp-cons-of-life-insurance-build-charts"><strong>PROS &amp; CONS OF LIFE INSURANCE BUILD CHARTS</strong></h2>
+<h2 id="h-pros-amp-cons-of-life-insurance-build-charts"><strong>Pros &amp; cons of life insurance build charts</strong></h2>
 
 <p>From the insurer’s perspective, using a height and weight chart adds consistency and predictability to the underwriting process. They standardize risk assessment so that those with similar health risks are underwritten in a similar way.</p>
 
@@ -193,7 +193,7 @@ The Agent Who Quoted Preferred
 
 <hr>
 
-<h2><strong>TYPICAL LIFE INSURANCE HEIGHT &amp; WEIGHT CHART EXAMPLE</strong></h2>
+<h2><strong>Typical life insurance height &amp; weight chart example</strong></h2>
 
 <p>Sample build charts show how small weight differences can shift you between rate classes depending on the insurer.</p>
 
@@ -246,7 +246,7 @@ The Agent Who Quoted Preferred
 
 <hr>
 
-<h2><strong>WHEN YOUR WEIGHT PUTS YOU IN A DIFFERENT PLAN TYPE</strong></h2>
+<h2><strong>When your weight puts you in a different plan type</strong></h2>
 
 <p>If your weight falls outside standard limits, insurers often move you into graded or guaranteed plans instead of declining you.</p>
 
@@ -276,7 +276,7 @@ The Agent Who Quoted Preferred
 
 <h3>
 💡
-The No-Questions Shortcut
+The no-questions shortcut
 </h3>
 
 <p>TV ad call, no health questions implied, Louise believed waiting periods were optional.</p>
@@ -291,7 +291,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>WHEN YOUR WEIGHT PUTS YOU IN A DIFFERENT PLAN TYPE (TERM LIFE INSURANCE)</strong></h2>
+<h2><strong>When your weight puts you in a different plan type (term life insurance)</strong></h2>
 
 <p>In term life insurance, weight affects pricing tiers rather than whether the policy type changes.</p>
 
@@ -318,7 +318,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>WHY HEIGHT &amp; WEIGHT MATTER MORE FOR TERM THAN FINAL EXPENSE</strong></h2>
+<h2><strong>Why height &amp; weight matter more for term than final expense</strong></h2>
 
 <p>Higher death benefits make term insurance far stricter about build than final expense policies.</p>
 
@@ -381,7 +381,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>WHY EVERY COMPANY’S BUILD CHART IS DIFFERENT</strong></h2>
+<h2><strong>Why every company’s build chart is different</strong></h2>
 
 <p>Each life insurance company sets its own height and weight limits based on its internal risk data, not an industry standard.</p>
 
@@ -403,7 +403,7 @@ The No-Questions Shortcut
 
 <h3>
 ⚠️
-The Postcard That Looked Universal
+The postcard that looked universal
 </h3>
 
 <p>Carrier postcard • wording implied broad acceptance • Maria believed her height and weight wouldn’t matter.</p>
@@ -418,7 +418,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>WHY “BMI” DOESN’T TELL THE WHOLE STORY</strong></h2>
+<h2><strong>Why “BMI” doesn’t tell the whole story</strong></h2>
 
 <p>BMI gives insurers a rough risk signal, but it often misrepresents actual health and long-term mortality.</p>
 
@@ -442,7 +442,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>HOW AGE AND GENDER IMPACT HEIGHT &amp; WEIGHT REQUIREMENTS</strong></h2>
+<h2><strong>How age and gender impact height &amp; weight requirements</strong></h2>
 
 <p>Age and gender influence how much weight insurers consider acceptable at a given height.</p>
 
@@ -454,7 +454,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>RED FLAGS WHEN AGENTS IGNORE BUILD CHART RULES</strong></h2>
+<h2><strong>Red flags when agents ignore build chart rules</strong></h2>
 
 <p>Agents who quote rates without checking build details often cause pricing surprises or coverage delays.</p>
 
@@ -472,7 +472,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2 id="h-what-to-expect-moving-forward"><strong>WHAT TO EXPECT MOVING FORWARD</strong></h2>
+<h2 id="h-what-to-expect-moving-forward"><strong>What to expect moving forward</strong></h2>
 
 <p>There is a trend towards “simplified underwriting”.</p>
 
@@ -484,7 +484,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2 id="h-what-if-you-don-t-meet-the-chart-requirements"><strong>WHAT IF YOU DON’T MEET THE CHART REQUIREMENTS?</strong></h2>
+<h2 id="h-what-if-you-don-t-meet-the-chart-requirements"><strong>What if you don’t meet the chart requirements?</strong></h2>
 
 <p><strong>Here are several strategies if you’re a bit out of the required “build chart” specifications:</strong></p>
 
@@ -506,7 +506,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>WHAT TO DO IF YOU WERE DECLINED FOR BUILD</strong></h2>
+<h2><strong>What to do if you were declined for build</strong></h2>
 
 <p>A build-based decline usually means the application went to the wrong company, not that coverage is unavailable.</p>
 
@@ -532,7 +532,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>WHICH COMPANIES ARE MORE FLEXIBLE ON INSURANCE BUILD CHARTS</strong></h2>
+<h2><strong>Which companies are more flexible on insurance build charts</strong></h2>
 
 <p>Some insurers allow wider height and weight ranges because they focus on older ages or smaller policies.</p>
 
@@ -542,7 +542,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>HOW TO QUALIFY FOR FIRST-DAY COVERAGE EVEN IF YOU’RE OVERWEIGHT</strong></h2>
+<h2><strong>How to qualify for first-day coverage even if you’re overweight</strong></h2>
 
 <p>Stable health and the right carrier choice often matter more than hitting an ideal weight number</p>
 
@@ -566,7 +566,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2 id="h-suggestions-for-getting-the-lowest-life-insurance-rates"><strong>SUGGESTIONS FOR GETTING THE LOWEST LIFE INSURANCE RATES</strong></h2>
+<h2 id="h-suggestions-for-getting-the-lowest-life-insurance-rates"><strong>Suggestions for getting the lowest life insurance rates</strong></h2>
 
 <p><strong>Here are a few suggestions to get working on if you know you’ll want some life insurance in the future:</strong></p>
 
@@ -579,7 +579,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>HOW TO READ YOUR LIFE INSURANCE APPLICATION’S BUILD SECTION</strong></h2>
+<h2><strong>How to read your life insurance application’s build section</strong></h2>
 
 <p>The build section records your physical measurements and determines how underwriting classifies your risk.</p>
 
@@ -601,7 +601,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>WHO REGULATES LIFE INSURANCE UNDERWRITING STANDARDS</strong></h2>
+<h2><strong>Who regulates life insurance underwriting standards</strong></h2>
 
 <p>Insurance regulators oversee fairness and solvency but allow companies to set their own build rules.</p>
 
@@ -651,7 +651,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: LIFE INSURANCE HEIGHT &amp; WEIGHT BUILD CHARTS</strong></h2>
+<h2><strong>Frequently asked questions: life insurance height &amp; weight build charts</strong></h2>
 
 <p><strong>How do height and weight affect life insurance approval and pricing?</strong></p>
 
@@ -703,7 +703,7 @@ The Postcard That Looked Universal
 
 <hr>
 
-<h2><strong>INDUSTRY SOURCES AND DATA REFERENCES</strong></h2>
+<h2><strong>Industry sources and data references</strong></h2>
 
 <p>Credible actuarial and regulatory sources help separate real underwriting rules from sales fluff.</p>
 

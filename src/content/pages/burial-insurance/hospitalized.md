@@ -54,7 +54,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-if-you’re-hospitalized"> <br><strong>What Is My Best Insurance Option If I’m Hospitalized?</strong></h2>
+<h2 id="best-option-if-you’re-hospitalized"> <br><strong>What is my best insurance option if I’m hospitalized?</strong></h2>
 
 <p>If you are hospitalized due to any of the following conditions, guaranteed acceptance burial insurance with no health questions asked is your only option for life insurance coverage.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>If you have any cognitive impairment, such as advanced Alzheimer’s disease or dementia, and unable to give legal consent to an agreement, the company may reject your application. </p>
 
-<h2 id="understanding-guaranteed-issue-insurance"><br><br><strong>What You Must Understand About Guaranteed Issue Burial Insurance  </strong></h2>
+<h2 id="understanding-guaranteed-issue-insurance"><br><br><strong>What you must understand about guaranteed issue burial insurance  </strong></h2>
 
 <p>Most guaranteed acceptance life insurance companies will
 only require your age, gender, resident state information, and whether or not
@@ -107,7 +107,7 @@ straightforward.</p>
 
 <p>If you outlive the waiting period even for a day, your beneficiary will receive the 100% death benefit that you signed up for.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -146,7 +146,7 @@ straightforward.</p>
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -195,7 +195,7 @@ straightforward.</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you are hospitalized.</p>
 
@@ -226,7 +226,7 @@ straightforward.</p>
 <li>Needing assistance with any activities of daily living such as eating, bathing, dressing, transferring and continence</li>
 </ul>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I’m Hospitalized?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I’m hospitalized?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -286,11 +286,11 @@ straightforward.</p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premium"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premium"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Hospitalization And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Hospitalization and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -299,7 +299,7 @@ straightforward.</p>
 <p><br>
 </p>
 
-<h2 id="should-you-get-guaranteed-issue-insurance"><br><strong>Why Should I Get Guaranteed Issue Burial Insurance When I’m In A Hospital? </strong></h2>
+<h2 id="should-you-get-guaranteed-issue-insurance"><br><strong>Why should I get guaranteed issue burial insurance when I’m in a hospital? </strong></h2>
 
 <p>People are in hospital due to different <a href="https://www.rxlist.com/diseases-conditions-medical-tests/article.htm" target="_blank" rel="noreferrer noopener">medical conditions</a> and circumstances. Some are hospitalized temporarily, while others are due to terminal illness. </p>
 
@@ -320,7 +320,7 @@ struggle financially when you pass away can offer peace of mind to all.</p>
 
 <p>Your approval is guaranteed; whatever happens to you tomorrow, you have insurance protection.</p>
 
-<h2 id="benefits-of-guaranteed-issue-insurance"> <br><strong>Benefits Of Guaranteed Issue Life Insurance</strong>  </h2>
+<h2 id="benefits-of-guaranteed-issue-insurance"> <br><strong>Benefits of guaranteed issue life insurance</strong>  </h2>
 
 <p><strong>NO MEDICAL EXAM OR
 HEALTH QUESTIONS</strong></p>
@@ -376,7 +376,7 @@ you need. You can choose between $2,000 to a maximum of $25,000.</p>
 
 <p>We highly recommend that you let us compare premiums from several insurance companies before deciding to purchase a plan, as premiums among insurance carriers can differ significantly.</p>
 
-<h2 id="best-guaranteed-issue-policy"> <br><strong>The Best Guaranteed Issue Life Insurance Policy  </strong></h2>
+<h2 id="best-guaranteed-issue-policy"> <br><strong>The best guaranteed issue life insurance policy  </strong></h2>
 
 <p>The best-guaranteed acceptance burial insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4 year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -384,7 +384,7 @@ you need. You can choose between $2,000 to a maximum of $25,000.</p>
 
 <p>With guaranteed issue burial insurance, your application will be quick and easy because there are no medical exams or health questions. You may even be approved for coverage in 15 minutes!</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Are Hospitalized</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance if you are hospitalized</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -402,7 +402,7 @@ you need. You can choose between $2,000 to a maximum of $25,000.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you’re hospitalized needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 

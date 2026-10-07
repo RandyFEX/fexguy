@@ -58,7 +58,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-burial-insurance"> <br><strong>What Is Burial Insurance? </strong></h2>
+<h2 id="what-is-burial-insurance"> <br><strong>What is burial insurance? </strong></h2>
 
 <p>Burial insurance is a type of whole life insurance with a specific purpose: to pay funeral, burial, and final expenses. It does not expire and will remain in force if you pay the premiums on time. </p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>You can call it final expense insurance, funeral insurance, or burial insurance. All of these terms describe the same thing but is burial insurance worth it?</p>
 
-<h2 id="is-burial-&-life-insurance-same"> <br><strong>Is Burial Insurance And Life Insurance The Same Thing? </strong></h2>
+<h2 id="is-burial-&-life-insurance-same"> <br><strong>Is burial insurance and life insurance the same thing? </strong></h2>
 
 <p>Burial insurance is, in fact, a form of life insurance with a smaller face amount than traditional life insurance policies. It’s because burial insurance is designed to cover your final expenses. </p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>That’s the reason why burial insurance policies are generally offered in the amounts of $2,000 to $25,000, whereas life insurance provides benefits of hundreds of thousands of dollars up to millions of dollars.</p>
 
-<h2 id="types-of-burial-insurance"> <br><strong>Types Of Burial Insurance </strong></h2>
+<h2 id="types-of-burial-insurance"> <br><strong>Types of burial insurance </strong></h2>
 
 <p>You have 2 basic options when applying for burial insurance.</p>
 
@@ -177,7 +177,7 @@ health questions that you may see on the application:</strong></p>
 <li>Probably the most expensive insurance policy you can buy</li>
 </ul>
 
-<h2 id="advantages-of-burial-insurance"><br><strong>Advantages Of Burial Insurance</strong></h2>
+<h2 id="advantages-of-burial-insurance"><br><strong>Advantages of burial insurance</strong></h2>
 
 <p><strong>What’s good about burial insurance?</strong></p>
 
@@ -213,7 +213,7 @@ see fit.</p>
 
 <p>10. <strong>Small face value options</strong> – you can purchase as little or as much insurance coverage as you need. The face amount you can purchase ranges from $2,000 to $25,000; some companies offer up to $50,000 in coverage.</p>
 
-<h2 id="disadvantages-of-burial-insurance"><br><strong>Disadvantages Of Burial Insurance</strong></h2>
+<h2 id="disadvantages-of-burial-insurance"><br><strong>Disadvantages of burial insurance</strong></h2>
 
 <p><strong>What’s bad about burial insurance?</strong></p>
 
@@ -226,7 +226,7 @@ see fit.</p>
 <li>Contestability period – burial insurance policies have a two-year contestability period where the company can investigate your death. If they discovered that you died from a medical condition you did not disclose on your application, your beneficiary would be denied the death benefit.</li>
 </ol>
 
-<h2 id="who-needs-burial-insurance"> <br><strong>Who Needs Burial Insurance? </strong></h2>
+<h2 id="who-needs-burial-insurance"> <br><strong>Who needs burial insurance? </strong></h2>
 
 <p><strong>Burial insurance is your best option if you are under these situations:</strong></p>
 
@@ -242,7 +242,7 @@ see fit.</p>
 <li>If you want to leave a charitable donation to an organization or person important to you.</li>
 </ol>
 
-<h2 id="burial-insurance-cost"> <br><strong>How Much Does Burial Insurance Cost? </strong></h2>
+<h2 id="burial-insurance-cost"> <br><strong>How much does burial insurance cost? </strong></h2>
 
 <p>Burial insurance premiums are incredibly affordable. Monthly burial insurance costs are affordable, and the most common benefit amount purchased is $10,000. Your specific premium amount might be higher or lower depending on some factors.</p>
 
@@ -281,7 +281,7 @@ see fit.</p>
 <p>Tobacco users pay more premiums because of the health risk
 associated with smoking and how it shortens life expectancy.</p>
 
-<h2 id="is-burial-insurance-worth-it"> <br><strong>Is Burial Insurance Worth It?</strong> </h2>
+<h2 id="is-burial-insurance-worth-it"> <br><strong>Is burial insurance worth it?</strong> </h2>
 
 <p>While you can find experts debating the pros and cons of burial insurance, in the end, you will decide if it’s right for you.</p>
 
@@ -289,7 +289,7 @@ associated with smoking and how it shortens life expectancy.</p>
 
 <p>Don’t wait until it’s too late to invest in burial insurance. The younger you are, the lower your premiums will be. Your family will not have to worry about paying your end-of-life expenses by purchasing a policy now. </p>
 
-<h2 id="frequently-asked-questions"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="frequently-asked-questions"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Is burial insurance worth it? Finding a burial insurance policy needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -305,7 +305,7 @@ associated with smoking and how it shortens life expectancy.</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you accurate burial insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Is burial insurance worth it?</strong></p>
 
@@ -375,21 +375,21 @@ associated with smoking and how it shortens life expectancy.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">1 Comment</h2>
+<h2 class="as-h5">1 comment</h2>
 
 <div class="comments">
 <div class="comment" id="comment-35600">

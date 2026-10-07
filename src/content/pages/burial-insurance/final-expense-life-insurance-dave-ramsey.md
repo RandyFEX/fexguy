@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT DAVE RAMSEY GETS RIGHT AND WHAT HE GETS WRONG ABOUT WHOLE LIFE FINAL EXPENSE INSURANCE</strong></h2>
+<h2><strong>What Dave Ramsey gets right and what he gets wrong about whole life final expense insurance</strong></h2>
 
 <p>Dave Ramsey is right that families should live debt-free.</p>
 
@@ -47,7 +47,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT FINAL EXPENSE LIFE INSURANCE REALLY IS</strong></h2>
+<h2><strong>What final expense life insurance really is</strong></h2>
 
 <p>Final expense life insurance is a small, permanent policy built to cover funeral and burial costs.</p>
 
@@ -65,7 +65,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW LIFE INSURANCE IS REGULATED IN THE UNITED STATES</strong></h2>
+<h2><strong>How life insurance is regulated in the United States</strong></h2>
 
 <p>Every life insurance policy sold in America operates under strict state laws.</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY DAVE RAMSEY’S “BUY TERM AND INVEST THE REST” FAILS IN PRACTICE</strong></h2>
+<h2><strong>Why Dave Ramsey’s “buy term and invest the rest” fails in practice</strong></h2>
 
 <p>Dave Ramsey’s phrase “buy term and invest the rest” sounds smart, but literally almost no one follows his advice after purchasing a term life insurance policy.</p>
 
@@ -148,7 +148,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY DAVE RAMSEY’S ADVICE DOESN’T FIT MOST SENIORS</strong></h2>
+<h2><strong>Why Dave Ramsey’s advice doesn’t fit most seniors</strong></h2>
 
 <p>Dave Ramsey’s message was built for people in their prime earning years. It assumes decades of income growth, stable health, and plenty of time to invest.</p>
 
@@ -172,7 +172,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>DAVE RAMSEY TERM VS FINAL EXPENSE (DEEP DIVE)</strong></h2>
+<h2><strong>Dave Ramsey term vs final expense (deep dive)</strong></h2>
 
 <p>At first glance, term life insurance appears to be cheaper. A healthy 50-year-old female can buy a $250,000, 20-year term policy for around $30 a month.</p>
 
@@ -228,7 +228,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE RISK OF OUTLIVING DAVE RAMSEY’S TERM LIFE COVERAGE</strong></h2>
+<h2><strong>The risk of outliving Dave Ramsey’s term life coverage</strong></h2>
 
 <p>Every term policy has an expiration date.</p>
 
@@ -252,7 +252,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WAITING PERIODS AND WHY THEY MATTER FOR LIFE INSURANCE</strong></h2>
+<h2><strong>Waiting periods and why they matter for life insurance</strong></h2>
 
 <p>Every life insurance shopper should understand waiting periods.</p>
 
@@ -270,7 +270,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON DAVE RAMSEY MISCONCEPTIONS ABOUT FINAL EXPENSE INSURANCE</strong></h2>
+<h2><strong>Common Dave Ramsey misconceptions about final expense insurance</strong></h2>
 
 <p>Many people misunderstand what final expense insurance actually is.</p>
 
@@ -300,7 +300,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>LIFE INSURANCE COMPLAINTS, RATINGS, AND REPUTATION</strong></h2>
+<h2><strong>Life insurance complaints, ratings, and reputation</strong></h2>
 
 <p>Every insurer files financial data and complaint statistics with the National Association of Insurance Commissioners (NAIC.org). You can look up any company’s complaint ratio there.</p>
 
@@ -320,7 +320,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO VERIFY A LIFE INSURANCE COMPANY’S LEGITIMACY</strong></h2>
+<h2><strong>How to verify a life insurance company’s legitimacy</strong></h2>
 
 <p>Every legitimate life insurance company in the United States must be licensed in each state where it sells policies.</p>
 
@@ -342,7 +342,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO FINAL EXPENSE LIFE INSURANCE IS BEST FOR</strong></h2>
+<h2><strong>Who final expense life insurance is best for</strong></h2>
 
 <p>Final expense insurance is not for everyone, but for the right person, it solves a lifelong problem.</p>
 
@@ -364,7 +364,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY WORKING WITH THE FINAL EXPENSE GUY IS DIFFERENT</strong></h2>
+<h2><strong>Why working with the Final Expense Guy is different</strong></h2>
 
 <p>Most call centers read from scripts and sell the same policy to everyone. That is not how the Final Expense Guy operates.</p>
 
@@ -384,7 +384,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: INSURANCE DAVE RAMSEY</strong></h2>
+<h2><strong>Frequently asked questions: insurance Dave Ramsey</strong></h2>
 
 <p><strong>What type of life insurance does Dave Ramsey not recommend?</strong></p>
 

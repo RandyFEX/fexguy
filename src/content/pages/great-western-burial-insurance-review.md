@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Great Western Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Great Western life insurance</strong></h2>
 
 <h3><strong>What life insurance products does Great Western offer?</strong></h3>
 
@@ -172,7 +172,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3><strong>How is Great Western life insurance good for Seniors?</strong></h3>
+<h3><strong>How is Great Western life insurance good for seniors?</strong></h3>
 
 <p>All Great Western burial insurance plans are whole life insurance policies.</p>
 
@@ -184,9 +184,9 @@ sidebar: true
 
 <p>If you want more coverage to leave to your family, buying Great Western burial insurance is an option.</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Great Western Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Great Western insurance?</strong></h2>
 
-<h3>#1 – <strong>Great Assurance</strong></h3>
+<h3>#1 – <strong>great assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -204,7 +204,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies offering first-day coverage plan</li>
 </ul>
 
-<h3>#2 – <strong>Graded Benefit</strong></h3>
+<h3>#2 – <strong>graded benefit</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -221,7 +221,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies</li>
 </ul>
 
-<h3>#3 – <strong>Guaranteed Assurance</strong></h3>
+<h3>#3 – <strong>guaranteed assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -239,9 +239,9 @@ sidebar: true
 <li>The maximum age to qualify is 80. If you are over age 80, you are out of luck.</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Great Western Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Great Western life insurance?</strong></h2>
 
-<h3><strong>Great Western Riders<sup>1</sup></strong></h3>
+<h3><strong>Great Western riders<sup>1</sup></strong></h3>
 
 <p>Life insurance riders can be added to the policy to enhance or customize their benefits. Great Western offers three riders:</p>
 
@@ -253,15 +253,15 @@ sidebar: true
 <li><strong>Child or Grandchild Protection Rider</strong>: “Optional coverage that the applicant can purchase at the time of application or during a qualifying event for only $1 per month on policies with a face amount of $5,000 or more. This rider will pay $2,500 on the death of a dependent child or grandchild.”</li>
 </ul>
 
-<h3><strong>Great Western Other Benefits</strong></h3>
+<h3><strong>Great Western other benefits</strong></h3>
 
 <p><strong>Policy Loans:</strong> “Available when policy has cash surrender value at 8% in arrears.”</p>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Great Western?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Great Western?</strong></h2>
 
 <p>The great Western application process is fairly simple…unless you don’t qualify.</p>
 
-<h3><strong>What Are Great Western’s Application Questions?</strong></h3>
+<h3><strong>What are Great Western’s application questions?</strong></h3>
 
 <p><strong>HEALTH QUESTIONS FOR THE GREAT ASSURANCE PLAN (1st-day coverage)</strong> </p>
 
@@ -297,15 +297,15 @@ sidebar: true
 
 <p>If any health questions are answered “YES” or are not answered, Great Western will offer you a Graded Benefit plan or Guaranteed Assurance plan with a two-year graded death benefit period.</p>
 
-<h3><strong>When Should I Consider Great Western Life Insurance?</strong></h3>
+<h3><strong>When should I consider Great Western life insurance?</strong></h3>
 
 <p>You can also consider Great Western to get a higher death benefit. Great Western offers up to $40,000 in death benefits for their Great Assurance and Graded Benefit plan.</p>
 
-<h3><strong>Does Great Western Have A Same Day Approval Process?</strong></h3>
+<h3><strong>Does Great Western have a same day approval process?</strong></h3>
 
 <p>Great Western has a same-day approval process using an online electronic application tool with an agent over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Great Western Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get Great Western life insurance pricing?</strong></h2>
 
 <p>Great Western life insurance rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -459,9 +459,9 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Great Western Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Great Western company questions</strong></h2>
 
-<h3><strong>What Is Great Western’s Operational History</strong></h3>
+<h3><strong>What is Great Western’s operational history</strong></h3>
 
 <p>Great Western Insurance Company (<a href="https://www.gwic.com/" target="_blank" rel="noreferrer noopener">GWIC</a>) was established in 1983 in Ogden, Utah. It was founded by John E. Lindquist, the owner of Lindquist Mortuaries and Cemeteries, a family business spanning five generations.</p>
 
@@ -475,19 +475,19 @@ sidebar: true
 
 <p>Website: <a href="https://gwic.com" target="_blank" rel="noreferrer noopener">https://gwic.com</a><br>Customer Service: (515) 247-2435<br>Email: fecustomerservice@gwic.com </p>
 
-<h3><strong>What Is Great Western’s Financial Rating?</strong></h3>
+<h3><strong>What is Great Western’s financial rating?</strong></h3>
 
 <p>Great Western was awarded an “A-” or excellent rating from A.M. Best which is a reliable indicator of their financial well-being. </p>
 
 <p>A.M. Best is a non-government independent third-party agency that provides its ranking on the financial strength of insurance companies.</p>
 
-<h3><strong>Does Great Western Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Great Western have any consumer complaints?</strong></h3>
 
 <p>Great Western has six complaints filed with the National Association of Insurance Commissioners (NAIC) in 2021. These complaints concern premiums, billing, surrender problems, delays, policy delivery, and premium refund.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Great Western Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Great Western life insurance?</strong></h2>
 
-<h3><strong>What is Great Western’s Sales Process?</strong></h3>
+<h3><strong>What is Great Western’s sales process?</strong></h3>
 
 <p>Great Western is not a “Captive Carrier.”</p>
 
@@ -497,7 +497,7 @@ sidebar: true
 
 <p>Informed buyers know that almost all&#160;<a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">other life insurance companies</a>&#160;offer better coverage and rates, and most come with no waiting period.</p>
 
-<h3><strong>Are Any Health Conditions Not Accepted By Great Western?</strong></h3>
+<h3><strong>Are any health conditions not accepted by Great Western?</strong></h3>
 
 <p>These health issues are not accepted for the Great Assurance first-day coverage plan:</p>
 
@@ -521,7 +521,7 @@ sidebar: true
 
 <p>If you have any of these health issues, you will be offered a Guaranteed Assurance plan with a two-year waiting period.</p>
 
-<h3><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Great Western pricing compares to other companies.</p>
 
@@ -532,7 +532,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Great Western</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Great Western</strong></h2>
 
 <details>
 <summary><b>Do you need a medical exam to qualify for Great Western life insurance?</b></summary>

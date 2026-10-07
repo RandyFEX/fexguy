@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-for-nursing-home-resident"><br><strong>What Is My Best Insurance Option If I’m A Nursing Home Resident?</strong></h2>
+<h2 id="best-option-for-nursing-home-resident"><br><strong>What is my best insurance option if I’m a nursing home resident?</strong></h2>
 
 <p>If you are in a nursing home, your only option for insurance coverage is a guaranteed issue burial insurance.</p>
 
@@ -71,7 +71,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why We Don’t Recommend Guaranteed Issue Life Insurance For Nursing Home Residents</strong></h2>
+<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why we don’t recommend guaranteed issue life insurance for nursing home residents</strong></h2>
 
 <p>If you are in a nursing home with a terminal illness, buying <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> life insurance will not help your family much at all.&#160;</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <p>Guaranteed issue burial insurance coverage is only available in small amounts, often between $2,000 and $25,000. This plan is only designed to cover final expenses such as medical bills, small debts, and end-of-life expenses. If you want to pay your mortgage or leave money for your children’s education, you need to buy multiple policies, which we don’t recommend because it will cost you an arm and a leg.</p>
 
-<h2 id="who-should-buy-guaranteed-issue-insurance"><br><strong>Who Should Buy Guaranteed Issue Life Insurance?</strong></h2>
+<h2 id="who-should-buy-guaranteed-issue-insurance"><br><strong>Who should buy guaranteed issue life insurance?</strong></h2>
 
 <p>We only sell guaranteed issue life insurance under these circumstances:</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance should be your last option. Don’t settle for a plan with a two-year waiting period if you are in good health or with some minor health issues that qualify for first-day coverage.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -169,7 +169,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -218,7 +218,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for nursing home residents.</p>
 
@@ -226,7 +226,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I’m A Nursing Home Resident?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I’m a nursing home resident?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -286,11 +286,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premium"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premium"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Nursing Home Residents And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Nursing home residents and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -299,7 +299,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="non-burial-insurance-options"><br><strong>Non-burial Insurance Options For Nursing Home Residents</strong></h2>
+<h2 id="non-burial-insurance-options"><br><strong>Non-burial insurance options for nursing home residents</strong></h2>
 
 <p>If you are in a nursing home and cannot qualify for life insurance, here are your options to cover your funeral and final expenses:</p>
 
@@ -321,7 +321,7 @@ sidebar: true
 
 <p>If you don’t have burial insurance, you can opt to open a Payable On Death (POD) account or Totten Trust. POD allows you to name a beneficiary on your bank account. Your beneficiary can access the funds on your account upon your death to pay for your final expenses.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -336,7 +336,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Nursing Home Residents</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for nursing home residents</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -354,7 +354,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="best-time-to-buy-burial-insurance"><br><strong>When Is The Best Time To Buy Burial Insurance?</strong></h2>
+<h2 id="best-time-to-buy-burial-insurance"><br><strong>When is the best time to buy burial insurance?</strong></h2>
 
 <p>You should buy burial insurance NOW! Do not wait until you are a nursing home resident before you decide to purchase. That’s too late because you can no longer qualify for the best plan.</p>
 
@@ -362,7 +362,7 @@ sidebar: true
 
 <p>The best time to buy burial insurance is now! The younger you buy, the lower your rates. The healthier you are, the lower your premiums will be.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>You should only buy burial insurance from an independent insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. Save yourself the effort of calling multiple insurance companies by working with us. Our agents and I can shop for over 30 insurance companies and compare prices to get you the best plan at the best rate.</p>
 

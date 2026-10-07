@@ -46,7 +46,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="benefits-of-first-day-coverage-insurance"><br><strong>Benefits Of Burial Insurance With First-day Coverage&#160;</strong></h2>
+<h2 id="benefits-of-first-day-coverage-insurance"><br><strong>Benefits of burial insurance with first-day coverage&#160;</strong></h2>
 
 <p>Burial insurance with first-day coverage has many benefits, including:</p>
 
@@ -62,7 +62,7 @@ sidebar: true
 
 <p>6.&#160;<strong>Cash value grows over time</strong>&#160;– burial insurance with first-day coverage has a <a href="https://www.forbes.com/advisor/life-insurance/cash-value-life-insurance/" target="_blank" rel="noreferrer noopener">cash value</a> that grows over time. You can withdraw your cash value or file a policy loan if you need funds.</p>
 
-<h2 id="what-is-a-waiting-period"><br><strong>What Is A Waiting Period?</strong></h2>
+<h2 id="what-is-a-waiting-period"><br><strong>What is a waiting period?</strong></h2>
 
 <p>Most people who buy life insurance don’t realize that some insurance plans come with a two-year <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank">waiting period</a>… until they read the fine print!</p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p>You must live for the first two years so your beneficiary can receive your full death benefit when you pass away.</p>
 
-<h2 id="benefit-periods-in-life-insurance"><br><strong>What Are The Different Death Benefit Periods In Life Insurance?</strong></h2>
+<h2 id="benefit-periods-in-life-insurance"><br><strong>What are the different death benefit periods in life insurance?</strong></h2>
 
 <p><strong>1. NO WAITING PERIOD</strong></p>
 
@@ -141,7 +141,7 @@ sidebar: true
 
 <p>If you’ve been diagnosed with a chronic illness, terminal illness, or confined in a care facility, life insurance with a waiting period is your only option for coverage.</p>
 
-<h2 id="why-insurers-evaluate-your-health"><br><strong>Why Do Insurance Companies Evaluate Your Health Before Offering First-day Coverage Insurance?</strong></h2>
+<h2 id="why-insurers-evaluate-your-health"><br><strong>Why do insurance companies evaluate your health before offering first-day coverage insurance?</strong></h2>
 
 <p>Burial insurance companies offering first-day coverage insurance ask health questions.</p>
 
@@ -172,7 +172,7 @@ sidebar: true
 
 <p>Consult with one of our independent insurance agents if you have any of these conditions to know your best option.</p>
 
-<h2 id="getting-first-day-coverage-insurance"><br><strong>5 Ways To Get Burial Insurance With First-day Coverage</strong></h2>
+<h2 id="getting-first-day-coverage-insurance"><br><strong>5 ways to get burial insurance with first-day coverage</strong></h2>
 
 <p><strong>#1 Don’t be afraid to answer health questions</strong></p>
 
@@ -232,7 +232,7 @@ sidebar: true
 
 <p>We are experts in underwriting, and we know the companies that will accept your health issues. I can help you secure burial insurance with first-day coverage and better pricing.</p>
 
-<h2 id="best-way-to-get-first-day-coverage"><br><strong>The Best Way To Get First-day Coverage Life Insurance</strong></h2>
+<h2 id="best-way-to-get-first-day-coverage"><br><strong>The best way to get first-day coverage life insurance</strong></h2>
 
 <p>The best way to get first-day coverage in life insurance is to buy a life insurance policy when you are young. The younger you are, the healthier you are likely to be, and the more you can qualify for life insurance with first-day coverage.</p>
 
@@ -244,7 +244,7 @@ sidebar: true
 
 <p>Please fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456 to know your options.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>How long does it take for coverage to start?</strong></p>
 

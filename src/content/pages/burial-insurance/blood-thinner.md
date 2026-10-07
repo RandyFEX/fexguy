@@ -49,13 +49,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="can-i-get-burial-insurance-if-i-use-blood-thinners"><strong>Can I Get Burial Insurance If I Use Blood Thinners?</strong></h2>
+<h2 id="can-i-get-burial-insurance-if-i-use-blood-thinners"><strong>Can I get burial insurance if I use blood thinners?</strong></h2>
 
 <p><strong>YES:</strong> If you have a history of AFIB or a stroke, for example, the insurance companies will want to know when these events occurred before issuing 1st-day coverage. If the right companies are available in your state, you may qualify for 1st-day coverage even if your circulatory issue occurred recently.</p>
 
 <p><strong>NO: </strong>If your stroke was recent and you’ve been prescribed medications to maintain your health, many companies will not approve you until two years have passed from the date of your stroke. Heart attacks, stents, aneurysms, or other significant medical events would also be reviewed carefully before the insurance company issued you a policy if your health issues occurred within the last two years.</p>
 
-<h2 id="types-of-burial-insurance-available-for-blood-thinner-users"><strong>Types of Burial Insurance Available For Blood Thinner Users</strong></h2>
+<h2 id="types-of-burial-insurance-available-for-blood-thinner-users"><strong>Types of burial insurance available for blood thinner users</strong></h2>
 
 <p><strong>FIRST-DAY COVERAGE – </strong>This burial insurance covers you from the first day. Your beneficiaries will receive the full death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance (as long as you go with the correct insurance company).&#160;</p>
 
@@ -63,7 +63,7 @@ sidebar: true
 
 <p>The downside of a GIWL policy is the mandatory two-year waiting period. If you pass away during the waiting period, the policy would only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
-<h2 id="what-is-my-best-insurance-option-if-i-use-blood-thinners"><strong>What Is My Best Insurance Option If I Use Blood Thinners?</strong></h2>
+<h2 id="what-is-my-best-insurance-option-if-i-use-blood-thinners"><strong>What is my best insurance option if I use blood thinners?</strong></h2>
 
 <p>If you’re taking blood thinners because of a recent heart attack, stroke, or cardiovascular surgery (within the last two years), you may qualify for 1st-day coverage if certain companies and policies are available in your state.&#160;</p>
 
@@ -71,11 +71,11 @@ sidebar: true
 
 <p>Guaranteed issue burial insurance would be your least desirable choice.</p>
 
-<h2 id="do-i-need-a-medical-exam-to-qualify-for-burial-insurance"><strong>Do I Need a Medical Exam to Qualify for Burial Insurance?</strong></h2>
+<h2 id="do-i-need-a-medical-exam-to-qualify-for-burial-insurance"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Medical exams, blood tests, and urine samples are not required for burial insurance approval.</p>
 
-<h2 id="what-is-the-cost-of-burial-insurance"><strong>What Is The Cost Of Burial Insurance If I Use Blood Thinners?</strong></h2>
+<h2 id="what-is-the-cost-of-burial-insurance"><strong>What is the cost of burial insurance if I use blood thinners?</strong></h2>
 
 <p><strong>The cost of burial insurance will depend on your:</strong></p>
 
@@ -89,7 +89,7 @@ sidebar: true
 <li>Type of policy</li>
 </ul>
 
-<h2 id="burial-insurance-underwriting-if-you-use-blood-thinners"><strong>Burial Insurance Underwriting If You Use Blood Thinners</strong></h2>
+<h2 id="burial-insurance-underwriting-if-you-use-blood-thinners"><strong>Burial insurance underwriting if you use blood thinners</strong></h2>
 
 <p><strong>Commonly prescribed blood-thinner medications:</strong></p>
 
@@ -109,7 +109,7 @@ sidebar: true
 
 <p>Most insurance companies accept these medications, but they will want to know why they were prescribed. This is because maintenance medication use is looked at more favorably than emergency use of these drugs.</p>
 
-<h2 id="information-we-need-if-you-use-blood-thinners"><strong>Information We Need if You Use Blood Thinners</strong></h2>
+<h2 id="information-we-need-if-you-use-blood-thinners"><strong>Information we need if you use blood thinners</strong></h2>
 
 <p><strong>We may ask you some of the following questions to help you qualify for the best policy:</strong></p>
 
@@ -122,7 +122,7 @@ sidebar: true
 <li>Why were you prescribed blood-thinning medications?</li>
 </ul>
 
-<h2 id="why-do-insurance-companies-care-if-you-use-blood-thinners"><strong>Why Do Insurance Companies Care If You Use Blood Thinners?</strong></h2>
+<h2 id="why-do-insurance-companies-care-if-you-use-blood-thinners"><strong>Why do insurance companies care if you use blood thinners?</strong></h2>
 
 <p>Some blood-thinning medications are a red flag to most insurance companies because they may be dual-purpose medications used to treat many different types of cardiovascular problems.</p>
 
@@ -145,11 +145,11 @@ sidebar: true
 <li>Transient ischemic attacks&#160;</li>
 </ul>
 
-<h2 id="how-to-get-the-best-rates-on-burial-insurance"><strong>How To Get The Best Rates On Burial Insurance</strong></h2>
+<h2 id="how-to-get-the-best-rates-on-burial-insurance"><strong>How to get the best rates on burial insurance</strong></h2>
 
 <p>The best way to get the best rates on burial insurance if you use blood thinners is to work with an independent agency like Final Expense Guy. Our independent life insurance agents can compare companies offering first-day coverage insurance and recommend the best plan with the best pricing.</p>
 
-<h2 id="how-to-apply-for-burial-insurance"><strong>How To Apply For Burial Insurance For Blood Thinner Users</strong></h2>
+<h2 id="how-to-apply-for-burial-insurance"><strong>How to apply for burial insurance for blood thinner users</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Ask for guidance from independent insurance agents specializing in underwriting for people who use blood thinners. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
@@ -157,7 +157,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Carefully review the life insurance policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Here at Final Expense Guy, we specialize in getting life insurance coverage for people who use blood thinners.</p>
 
@@ -165,7 +165,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you’re looking for burial insurance for blood-thinner users, we can help. Fill out our quote form on this page or call us at (888)862-9456 to get accurate quote burial insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I get final expense life insurance on blood thinners?</strong></p>
 

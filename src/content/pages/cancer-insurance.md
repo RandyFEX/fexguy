@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-cancer-insurance"><br><strong>What Is Cancer Insurance?</strong></h2>
+<h2 id="what-is-cancer-insurance"><br><strong>What is cancer insurance?</strong></h2>
 
 <p>Cancer insurance is a supplemental health insurance product that pays a lump sum or specific amount when diagnosed with cancer. This coverage will help pay for treatments, procedures, and other cancer-related costs. Cancer insurance will also help you with living expenses if you cannot work because of your cancer diagnosis.</p>
 
@@ -60,7 +60,7 @@ sidebar: true
 <li><strong>Schedule of Benefits: </strong>Pays a set benefit amount per day, week, or month while being treated for cancer.</li>
 </ul>
 
-<h2 id="how-does-cancer-insurance-work"><br><strong>How Does Cancer Insurance Work?</strong></h2>
+<h2 id="how-does-cancer-insurance-work"><br><strong>How does cancer insurance work?</strong></h2>
 
 <p>Cancer insurance works by supplementing your existing health insurance. It will help pay for treatments, procedures, and other cancer-related costs that your regular health insurance may not cover.</p>
 
@@ -70,7 +70,7 @@ sidebar: true
 
 <p>You can use your cancer insurance payout in any way you choose, and you don’t have to be hospitalized to be able to access your plan benefits.</p>
 
-<h2 id="why-do-you-need-cancer-insurance"><br><strong>Why Do You Need Cancer Insurance?</strong></h2>
+<h2 id="why-do-you-need-cancer-insurance"><br><strong>Why do you need cancer insurance?</strong></h2>
 
 <p>No one knows when they will get cancer. Cancer can strike at any age and stage in life. Even if you are healthy and have no family history of cancer, you can still get the disease.</p>
 
@@ -80,7 +80,7 @@ sidebar: true
 
 <p>Cancer insurance is an essential part of your financial safety net. It will give you and your loved one’s peace of mind, knowing that you are financially prepared if you are ever diagnosed with cancer.</p>
 
-<h2 id="who-is-cancer-insurance-for"><br><strong>Who Is Cancer Insurance For?</strong></h2>
+<h2 id="who-is-cancer-insurance-for"><br><strong>Who is cancer insurance for?</strong></h2>
 
 <p>You can’t get cancer insurance if you currently have cancer. Most plans restrict eligibility if you have had cancer in the last 5-10 years. You must buy cancer insurance BEFORE you need it because cancer does not discriminate and often happens without warning.</p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>Cancer insurance will help you pay for treatments and procedures related to cancer diagnosis and treatment. It can also help you pay for living expenses if you cannot work because of your cancer diagnosis.</p>
 
-<h2 id="what-does-cancer-insurance-cover"><br><strong>What Does Cancer Insurance Cover?</strong></h2>
+<h2 id="what-does-cancer-insurance-cover"><br><strong>What does cancer insurance cover?</strong></h2>
 
 <p><strong>Cancer insurance will cover things that Medicare won’t, such as:</strong></p>
 
@@ -105,7 +105,7 @@ sidebar: true
 <li><strong>Loss of income</strong> – If your cancer treatment prevents you from working, cancer insurance will help you replace some of your lost income.</li>
 </ul>
 
-<h2 id="what-are-the-benefits-of-cancer-insurance"><br><strong>What Are The Benefits Of Cancer Insurance?</strong></h2>
+<h2 id="what-are-the-benefits-of-cancer-insurance"><br><strong>What are the benefits of cancer insurance?</strong></h2>
 
 <p><strong>Here are the benefits of cancer insurance:</strong></p>
 
@@ -122,7 +122,7 @@ sidebar: true
 <li><strong>Coverage against high treatment costs</strong> – Cancer insurance plans can help you pay for expensive cancer treatments, such as chemotherapy and radiation therapy.</li>
 </ul>
 
-<h2 id="why-should-you-buy-cancer-insurance"><br><strong>Why Should You Buy Cancer Insurance?</strong></h2>
+<h2 id="why-should-you-buy-cancer-insurance"><br><strong>Why should you buy cancer insurance?</strong></h2>
 
 <p>Cancer insurance is an essential insurance product that everyone should consider. It will help you pay for treatment and other expenses related to cancer. Cancer insurance is integral to a person’s financial and health plan (especially if you have a history of cancer in your family tree).</p>
 
@@ -134,7 +134,7 @@ sidebar: true
 
 <p>You need to buy cancer insurance if you don’t have enough savings to pay for cancer treatment. Cancer insurance can help you pay for cancer treatment and other related expenses. Cancer insurance is a wise investment because it can help you pay for expensive cancer treatments, such as chemotherapy and radiation therapy.&#160;</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Final Expense Guy is an independent life insurance agency that specializes in helping people find the best life insurance policies to fit their needs. We will help you compare cancer insurance plans and find the best policy for you.</p>
 

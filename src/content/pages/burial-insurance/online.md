@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="buying-burial-insurance-online"> <br><strong>Buying Burial Insurance Online </strong></h2>
+<h2 id="buying-burial-insurance-online"> <br><strong>Buying burial insurance online </strong></h2>
 
 <p>In 2018, there were close to 275 million <a href="https://www.statista.com/statistics/325645/usa-number-of-internet-users/" target="_blank" rel="noreferrer noopener">internet users</a> in the U.S. This figure is estimated to grow to 310.1 million in 2022. We are the biggest online market worldwide. </p>
 
@@ -61,7 +61,7 @@ sidebar: true
 
 <p>Improved online burial insurance would be more accessible on mobile devices so customers can purchase life insurance on the go.</p>
 
-<h2 id="what-are-the-benefits-of-buying-burial-insurance-online"> <br><strong>What Are The Benefits Of Buying Burial Insurance Online?</strong></h2>
+<h2 id="what-are-the-benefits-of-buying-burial-insurance-online"> <br><strong>What are the benefits of buying burial insurance online?</strong></h2>
 
 <p><strong>QUICK AND EFFICIENT</strong></p>
 
@@ -130,7 +130,7 @@ assistance with the help of live chats and video call options on their website.
 You can also get assistance by calling the toll-free numbers of the insurance
 company.</p>
 
-<h2 id="how-to-buy-burial-insurance-online"> <br><strong>How To Buy Burial Insurance Online </strong></h2>
+<h2 id="how-to-buy-burial-insurance-online"> <br><strong>How to buy burial insurance online </strong></h2>
 
 <p>It’s important to stress that you should always buy burial insurance from an independent life insurance agency. </p>
 
@@ -144,7 +144,7 @@ company.</p>
 
 <p>Once you know that burial insurance is what you need, we can compare your policies and prices. We can do everything online at your convenience.</p>
 
-<h2 id="what-are-the-burial-insurance-options-you-can-buy-online"> <br><strong>What Are The Burial Insurance Options You Can Buy Online?</strong></h2>
+<h2 id="what-are-the-burial-insurance-options-you-can-buy-online"> <br><strong>What are the burial insurance options you can buy online?</strong></h2>
 
 <p><strong>SIMPLIFIED ISSUE BURIAL INSURANCE</strong></p>
 
@@ -187,7 +187,7 @@ receive the full death benefit payout if you pass away for any reason.</p>
 
 <p>Simplified issue funeral insurance is a good insurance alternative if you can’t qualify for fully underwritten life insurance because of a pre-existing medical condition. </p>
 
-<h2 id="guaranteed-issue-burial-insurance"><br><strong>Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="guaranteed-issue-burial-insurance"><br><strong>Guaranteed issue burial insurance</strong></h2>
 
 <p>You can also purchase <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue burial insurance</a> online. These policies are whole life insurance policies that last your entire life. </p>
 
@@ -207,7 +207,7 @@ die during the waiting period from an accident. </p>
 
 <p>If you die after the waiting period for any reason, the full death benefit will be received by your beneficiaries.</p>
 
-<h2 id="how-to-choose-the-best-life-insurance-company"><br><strong>How To Choose The Best Life Insurance Company </strong></h2>
+<h2 id="how-to-choose-the-best-life-insurance-company"><br><strong>How to choose the best life insurance company </strong></h2>
 
 <p>Look for the company’s financial rating from a third-party agency like A.M. Best that rates the financial capacity of the life insurance company to pay claims on time. A.M. Best and other leading rating agencies like Moody’s, Fitch, Standard, and Poors. Choose a company with an “A” or better rating.</p>
 
@@ -219,7 +219,7 @@ die during the waiting period from an accident. </p>
 
 <p>To make the best use of online life insurance and have a smooth buying experience, seek the assistance of an independent life insurance agency like Final Expense Guy to walk you through the whole process.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy online needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -233,7 +233,7 @@ die during the waiting period from an accident. </p>
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for seniors online, burial insurance online, or life insurance online. Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>What is burial insurance?</strong></p>
 

@@ -50,9 +50,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="burial-insurance-scams"><br><strong>BURIAL INSURANCE SCAMS</strong></h2>
+<h2 id="burial-insurance-scams"><br><strong>Burial insurance scams</strong></h2>
 
-<h2 id="scam-1-term-insurance-sold-as-burial-insurance"><strong>SCAM# 1 Term Insurance Sold As Burial Insurance </strong></h2>
+<h2 id="scam-1-term-insurance-sold-as-burial-insurance"><strong>Scam# 1 term insurance sold as burial insurance </strong></h2>
 
 <p>Term insurance lasts for a temporary period, typically 10, 15, 20, and 30 years but this plan terminates after you pass 80. Whether you’re healthy or terminally ill, once you pass 80, your policy may expire, and you will not get your money back.</p>
 
@@ -64,7 +64,7 @@ sidebar: true
 
 <p>Only&#160;whole life insurance policies that will last your whole life (up to age 121) should be used for burial insurance.</p>
 
-<h2 id="scam-2-no-questions-asked-burial-insurance"><br><strong>SCAM #2 No Questions Asked Burial Insurance </strong></h2>
+<h2 id="scam-2-no-questions-asked-burial-insurance"><br><strong>Scam #2 no questions asked burial insurance </strong></h2>
 
 <p>If you watch television or receive mail, you will see no questions about life insurance advertisements. Many reputable insurance companies will try to convince you to buy no-questions-asked burial insurance policies even if you are in perfect health and qualify for a plan with underwriting (and much better pricing).</p>
 
@@ -82,13 +82,13 @@ sidebar: true
 
 <p>Beware of final expense companies offering no questions about burial insurance when you can qualify for full first-day coverage. Only settle for no questions about life insurance if you have a severe medical condition or have no other option for life insurance coverage.</p>
 
-<h2 id="scam-3-overprice-burial-insurance"><br><strong>SCAM #3 Overpriced Burial Insurance</strong> </h2>
+<h2 id="scam-3-overprice-burial-insurance"><br><strong>Scam #3 overpriced burial insurance</strong> </h2>
 
 <p>Many burial insurance companies are designed to overcharge with premiums. Seek a second opinion from the agent who pressures you to buy a more expensive policy. Some insurance agents will attempt to sell a more expensive plan or add extra riders or provisions you don’t need to be able to get more commissions.</p>
 
 <p>Read all the details in your insurance policy, take note of the riders, and ask questions about anything you don’t understand. Ask your broker why each provision is necessary and what the benefits are. If your broker cannot answer your questions, you look for a new broker that will protect your interests.</p>
 
-<h2 id="scam-4-burial-insurance-identity-theft-scam"><br><strong>SCAM #4 Burial Insurance Identity Theft Scam</strong> </h2>
+<h2 id="scam-4-burial-insurance-identity-theft-scam"><br><strong>Scam #4 burial insurance identity theft scam</strong> </h2>
 
 <p><strong>4.1 There’s a problem with your burial insurance policy</strong></p>
 
@@ -117,7 +117,7 @@ sidebar: true
 
 <p>You will receive an email claiming you benefit from someone else’s policy with this scam. The email will claim you’re connected to another life insurance policy, perhaps from someone who recently died and named you as the beneficiary or because someone bought a plan on your behalf. Once again, the scammer will ask for your personal information, like your social security number, hoping you will reply.</p>
 
-<h2 id="scam-5-fake-burial-insurance-websites"><br><strong>SCAM #5 Fake Burial Insurance Websites </strong></h2>
+<h2 id="scam-5-fake-burial-insurance-websites"><br><strong>Scam #5 fake burial insurance websites </strong></h2>
 
 <p>Today, online shopping is prevalent; that’s why most Americans look for life insurance providers online. But beware, the internet is the biggest source of financial scams, and you will even find fake burial insurance websites.</p>
 
@@ -129,7 +129,7 @@ sidebar: true
 
 <p>Beware of fake burial insurance websites.&#160; An authentic life insurance company website will never pressure you into signing up.</p>
 
-<h2 id="scam-6-unbelievable-rates"><br><strong>SCAM #6 Unbelievable Rates </strong></h2>
+<h2 id="scam-6-unbelievable-rates"><br><strong>Scam #6 unbelievable rates </strong></h2>
 
 <p>Some life insurance companies promote an unbelievable teaser rate. You probably have seen some adverting that says a dollar can buy a certain amount of coverage. This scheme is a dishonest marketing tactic to goad you into buying a policy.</p>
 
@@ -141,7 +141,7 @@ sidebar: true
 
 <p>1-unit represents the death benefit for a specific age. For example, if you’re a 50-year-old male, your 1-unit equals a $1,786 death benefit. However, if you’re an 85-year-old male, your 1-unit can only buy $418 coverage. </p>
 
-<h2 id="scam-7-dishonest-instant-online-quotes"><br><strong>SCAM #7 Dishonest Instant Online Quotes </strong></h2>
+<h2 id="scam-7-dishonest-instant-online-quotes"><br><strong>Scam #7 dishonest instant online quotes </strong></h2>
 
 <p>This scam involves websites giving an instant online quote. Most online shoppers find this service useful when comparing burial insurance rates from multiple life insurance companies.</p>
 
@@ -151,7 +151,7 @@ sidebar: true
 
 <p>Check the authenticity of the insurance website offering an instant online quote service before giving your contact details. Read reviews online to find out what other people say about this website.</p>
 
-<h2 id="scam-8-fake-burial-insurance-agents"><br><strong>SCAM #8 Fake Burial Insurance Agents </strong></h2>
+<h2 id="scam-8-fake-burial-insurance-agents"><br><strong>Scam #8 fake burial insurance agents </strong></h2>
 
 <p>There are far too many fake insurance companies and agents out there. You might see them online, over the phone, or knocking on your door. The fake agent will show up at your door and offer you a phony deal they are promoting at that time. They will promise to give you a quote.</p>
 
@@ -159,13 +159,13 @@ sidebar: true
 
 <p>Before buying life insurance, make sure you are dealing with a licensed life insurance agent and company.</p>
 
-<h2 id="scam-9-burial-insurance-premium-thefts"><br><strong>SCAM #9 Burial Insurance Premium Thefts</strong> </h2>
+<h2 id="scam-9-burial-insurance-premium-thefts"><br><strong>Scam #9 burial insurance premium thefts</strong> </h2>
 
 <p>You may find a legitimate company offering the plan you need, but the agent is the problem. Unscrupulous agents want to pocket your premium. This burial insurance scam is called premium theft. Scammer agents will ask you to pay in cash or issue a check payable in their name, but they will never remit the money to the life insurance company, which goes straight to their pocket.</p>
 
 <p>Avoid this life insurance agent to ensure your premiums are going straight to the company.</p>
 
-<h2 id="tips-to-avoid-burial-insurance-scams"><br><strong>Tips To Avoid Burial Insurance Scams</strong></h2>
+<h2 id="tips-to-avoid-burial-insurance-scams"><br><strong>Tips to avoid burial insurance scams</strong></h2>
 
 <h3><strong>#1. Check to see if the life insurance company actually exists</strong></h3>
 
@@ -237,7 +237,7 @@ sidebar: true
 <li>Check with your state insurance division to see if any complaints are lodged against the agency.</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a burial or final expense insurance policy needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -251,7 +251,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you want to avoid funeral insurance scams, burial insurance scams, or life insurance scams, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate burial insurance quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>What are the most common types of life insurance scams?</strong></p>
 

@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-if-you-have-graves’-disease"><br><strong><strong>What Is My Best Insurance Option If I Have A History Of Graves’ Disease?</strong></strong></h2>
+<h2 id="best-option-if-you-have-graves’-disease"><br><strong><strong>What is my best insurance option if I have a history of Graves’ disease?</strong></strong></h2>
 
 <p><br><strong>THYROID SURGERY 24 MONTHS OR LONGER</strong></p>
 
@@ -76,7 +76,7 @@ you from qualifying for a level death benefit plan.</p>
 
 <p><strong>Best Option:</strong> First-day benefit plan</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -115,7 +115,7 @@ you from qualifying for a level death benefit plan.</p>
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -164,7 +164,7 @@ you from qualifying for a level death benefit plan.</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with Graves’ disease.</p>
 
@@ -172,7 +172,7 @@ you from qualifying for a level death benefit plan.</p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong>Burial Insurance Underwriting If You Have Graves’ Disease</strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong>Burial insurance underwriting if you have Graves’ disease</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -203,7 +203,7 @@ you from qualifying for a level death benefit plan.</p>
 
 <p>We work with dozens of life insurance carriers, and we can point you to those insurers that don’t care about Graves’ disease.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I Have Graves’ Disease?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I have Graves’ disease?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -311,11 +311,11 @@ you from qualifying for a level death benefit plan.</p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Graves’ Disease And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Graves’ disease and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -340,7 +340,7 @@ you from qualifying for a level death benefit plan.</p>
 </tbody>
 </table>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -355,7 +355,7 @@ you from qualifying for a level death benefit plan.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Graves’ Disease</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with Graves’ disease</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -374,7 +374,7 @@ you from qualifying for a level death benefit plan.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="getting-the-best-insurance-rates"><br><strong>How To Get The Best Burial Insurance Rates With Graves’ Disease</strong></h2>
+<h2 id="getting-the-best-insurance-rates"><br><strong>How to get the best burial insurance rates with Graves’ disease</strong></h2>
 
 <p>Looking for the best rates for burial insurance with Graves’
 disease will be easy if you allow us to help you!</p>
@@ -383,7 +383,7 @@ disease will be easy if you allow us to help you!</p>
 
 <p>Finding the right insurance company can help you save thousands on premiums over the policy’s life.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you have Graves’ disease needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -395,7 +395,7 @@ disease will be easy if you allow us to help you!</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><br><strong>Can you get life insurance if you have Graves disease?</strong></p>
 

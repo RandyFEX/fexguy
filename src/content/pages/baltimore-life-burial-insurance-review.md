@@ -50,13 +50,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-baltimore-life-offer-first-day-coverage"><br><strong>Does Baltimore Life Offer First-day Coverage?</strong></h2>
+<h2 id="does-baltimore-life-offer-first-day-coverage"><br><strong>Does Baltimore Life offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, Baltimore Life has a burial insurance plan that offers first-day coverage, but they tend to be more expensive than other companies.      </p>
 
 <p>If you qualify, their Silver Guard I comes with immediate first-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.   </p>
 
-<h2 id="pros-of-baltimore-life-burial-insurance"><strong>Pros Of Baltimore Life Burial Insurance</strong></h2>
+<h2 id="pros-of-baltimore-life-burial-insurance"><strong>Pros of Baltimore Life burial insurance</strong></h2>
 
 <p><strong>Average pricing –</strong> Silver Guard 1 is comparable to other A-rated companies</p>
 
@@ -64,13 +64,13 @@ sidebar: true
 
 <p><strong>Cash draft benefit rider</strong> – allow beneficiaries to advance a $1,000 death benefit while the claim is pending.</p>
 
-<h2 id="cons-of-baltimore-life-burial-insurance"><strong>Cons Of Baltimore Life Burial Insurance</strong></h2>
+<h2 id="cons-of-baltimore-life-burial-insurance"><strong>Cons of Baltimore Life burial insurance</strong></h2>
 
 <p><strong>Higher premium on tobacco use –</strong> if you smoke tobacco, chewed tobacco, or use nicotine expect a higher premium.</p>
 
 <p><strong>Graded benefit</strong> – many health issues will only qualify for the graded plan.</p>
 
-<h2 id="baltimore-life-burial-insurance-product"><br><strong>Baltimore Life Burial Insurance Products</strong></h2>
+<h2 id="baltimore-life-burial-insurance-product"><br><strong>Baltimore Life burial insurance products</strong></h2>
 
 <p>Baltimore Life calls its burial insurance plans Silver Guard. They have two different burial insurance plans available, including:</p>
 
@@ -192,7 +192,7 @@ death is due to an accident.</p>
 <li>Schizophrenia depends on the medication</li>
 </ul>
 
-<h2 id="baltimore-life-burial-insurance-riders"><br><strong>Baltimore Life Burial Insurance Riders</strong></h2>
+<h2 id="baltimore-life-burial-insurance-riders"><br><strong>Baltimore Life burial insurance riders</strong></h2>
 
 <p><strong>Cash Draft Benefit</strong></p>
 
@@ -211,7 +211,7 @@ Loan (APL) Option</strong></p>
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-does-baltimore-life-make-sense"><br><strong>When Does Baltimore Life Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-baltimore-life-make-sense"><br><strong>When does Baltimore Life burial insurance make the most sense?</strong></h2>
 
 <p>Immediate benefit Silver Guard plan has liberal underwriting and accepts minor health issues. This plan is average-priced and comes in the middle range regarding pricing. </p>
 
@@ -221,7 +221,7 @@ Loan (APL) Option</strong></p>
 
 <p>Their relaxed underwriting accepts these conditions that will only qualify for a two-year waiting period on some companies. In this case, you must choose between paying less and enduring a waiting period or paying more for immediate protection.</p>
 
-<h2 id="baltimore-life-underwriting-guidelines"><br><strong><strong>Baltimore Life Underwriting Guidelines</strong></strong></h2>
+<h2 id="baltimore-life-underwriting-guidelines"><br><strong><strong>Baltimore Life underwriting guidelines</strong></strong></h2>
 
 <p>Baltimore Life’s final expense products are all simplified issue whole life insurance, which means you don’t have to undergo a medical exam or submit a doctor’s record to qualify for coverage. The company uses five methods to verify your health:</p>
 
@@ -302,7 +302,7 @@ then you are not eligible for any coverage.)</p>
 
 <p>You will be eligible for Silver Guard II if you answer YES to one of the health questions in Part 2 of the questionnaire. They will offer you this plan if your height and weight ratio fall within the build guidelines.</p>
 
-<h2 id="baltimore-life-pricing-examples"><br><strong>Baltimore Life Pricing Examples</strong></h2>
+<h2 id="baltimore-life-pricing-examples"><br><strong>Baltimore Life pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-105">
 <thead>
@@ -446,7 +446,7 @@ then you are not eligible for any coverage.)</p>
 
 <p>*Pricing for illustration purposes only and are subject to change without notice.</p>
 
-<h2 id="getting-approved-for-coverage"><br><strong>Getting Approved For Baltimore Life Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-coverage"><br><strong>Getting approved for Baltimore Life burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -479,7 +479,7 @@ then you are not eligible for any coverage.)</p>
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -547,7 +547,7 @@ then you are not eligible for any coverage.)</p>
 </tbody>
 </table>
 
-<h2 id="baltimore-life-company-overview"><br><strong>Baltimore Life Company Overview </strong></h2>
+<h2 id="baltimore-life-company-overview"><br><strong>Baltimore Life company overview </strong></h2>
 
 <p>Baltimore Life Insurance was founded in 1882 as the Baltimore Mutual Aid Society of Baltimore City. Five businessmen established it in the city to provide an insurance option for families looking to cover funeral expenses.</p>
 
@@ -567,7 +567,7 @@ financially stable and will be able to pay the claims of its policyholders. </p>
 
 <p>The Better Business Bureau gives Baltimore Life an A+ rating due to its excellent consumer service and a few numbers of complaints.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want Baltimore Life burial insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -579,7 +579,7 @@ financially stable and will be able to pay the claims of its policyholders. </p>
 
 <p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is Baltimore Life Insurance still in business?</strong></p>
 

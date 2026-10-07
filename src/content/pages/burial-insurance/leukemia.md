@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-leukemia"><strong>What Is My Best Insurance Option If I Have A History Of Leukemia?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-leukemia"><strong>What is my best insurance option if I have a history of leukemia?</strong></h2>
 
 <p>Your ability to qualify for burial insurance with leukemia depends on the following factors:</p>
 
@@ -93,7 +93,7 @@ sidebar: true
 
 <p>This type of policy has no medical exam and no health questions. Many carriers offer this plan the only difference is the amount they charge. You must compare quotes and coverage options from multiple companies to get the best rate.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -132,7 +132,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -181,7 +181,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Leukemia, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have leukemia, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with leukemia.</p>
 
@@ -189,7 +189,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-leukemia"><br><strong>Burial Insurance Underwriting If You Have Leukemia</strong></h2>
+<h2 id="insurance-underwriting-for-leukemia"><br><strong>Burial insurance underwriting if you have leukemia</strong></h2>
 
 <p>Underwriting is the process life insurance carriers go through to determine your risk level. They will ask about your health and perform a prescription history check to verify your health condition.</p>
 
@@ -254,7 +254,7 @@ sidebar: true
 
 <p>This means that if you have leukemia within the last two years, you are subjected to a waiting period and a higher premium.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Leukemia?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have leukemia?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -362,11 +362,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="leukemia-and-burial-insurance-riders"><br><strong>Leukemia And Burial Insurance Riders</strong></h2>
+<h2 id="leukemia-and-burial-insurance-riders"><br><strong>Leukemia and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -391,7 +391,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-have-leukemia"><br><strong>Information We Need If You Have Leukemia?</strong></h2>
+<h2 id="information-we-need-if-you-have-leukemia"><br><strong>Information we need if you have leukemia?</strong></h2>
 
 <p>You must provide as much information as possible when applying for burial insurance coverage with leukemia.</p>
 
@@ -411,7 +411,7 @@ sidebar: true
 
 <p>The more information you provide, the better your chances of finding affordable coverage.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -426,7 +426,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Leukemia</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with leukemia</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -445,7 +445,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding burial insurance for cancer patients needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -455,7 +455,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for leukemia funeral insurance, leukemia burial insurance, or leukemia life insurance, we can help. Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance if you have leukemia?</strong></p>
 

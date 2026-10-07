@@ -60,13 +60,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-lumico-offer-first-day-coverage"><br><strong><strong>Does Lumico Offer First-day Coverage?</strong></strong></h2>
+<h2 id="does-lumico-offer-first-day-coverage"><br><strong><strong>Does Lumico offer first-day coverage?</strong></strong></h2>
 
 <p><strong>YES</strong>, Lumico Life has a burial insurance plan that offers first-day coverage, but they tend to be more expensive than other companies.  </p>
 
 <p>If you qualify, their Preferred whole life plan will cover you from day one. Once approved, the company will pay a 100%  death benefit when you pass away. </p>
 
-<h2 id="pros-of-lumico-burial-insurance"><strong>Pros Of Lumico Burial Insurance</strong></h2>
+<h2 id="pros-of-lumico-burial-insurance"><strong>Pros of Lumico burial insurance</strong></h2>
 
 <p><strong>Diabetes-friendly</strong> – accept insulin use if you use less than 40 units daily.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p><strong>Accepts mild mental health disorders</strong> – depression and anxiety qualify for the preferred plan</p>
 
-<h2 id="cons-of-lumico-burial-insurance"><strong>Cons Of Lumico Burial Insurance</strong></h2>
+<h2 id="cons-of-lumico-burial-insurance"><strong>Cons of Lumico burial insurance</strong></h2>
 
 <p><strong>Strict underwriting</strong> – most health issues will not be eligible for the preferred plan</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p><strong>Blood thinners are a red-flag</strong> – If they found blood thinners on your prescription history, you will be offered a standard plan with a 3-year waiting period</p>
 
-<h2 id="lumico-burial-insurance-products"><br><strong>Lumico Burial Insurance Products</strong></h2>
+<h2 id="lumico-burial-insurance-products"><br><strong>Lumico burial insurance products</strong></h2>
 
 <p>Lumico Life has three burial insurance policies you can be eligible for depending on your health and age (ages 50-85 only). </p>
 
@@ -170,13 +170,13 @@ amount is $5,000 and goes as high as $30,000.</p>
 
 <p>If you are healthy, this plan will cost you an arm and a leg. If your health only qualifies you for this plan, we have other companies that offer a better price.</p>
 
-<h2 id="lumico-burial-insurance-riders"><br><strong>Lumico Burial Insurance Riders</strong></h2>
+<h2 id="lumico-burial-insurance-riders"><br><strong>Lumico burial insurance riders</strong></h2>
 
 <p><strong>Accidental Death Rider</strong> – pays out an additional lump sum if you die from an accident.</p>
 
 <p><strong>Accelerated Death Benefit Rider</strong> – accelerates a portion of the death benefit if you’re diagnosed with a terminal condition with a life expectancy of 12 months or less.</p>
 
-<h2 id="when-does-lumico-make-the-most-sense"><br><strong>When Does Lumico Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-lumico-make-the-most-sense"><br><strong>When does Lumico burial insurance make the most sense?</strong></h2>
 
 <p>If you are healthy, Lumico’s preferred plan may make sense for some people, but better-priced plans are certainly available.</p>
 
@@ -184,7 +184,7 @@ amount is $5,000 and goes as high as $30,000.</p>
 
 <p>Again, there are lots of insurance companies that are accepting of most health issues and only have a two-year waiting period. </p>
 
-<h2 id="lumico-underwriting-guidelines"><br><strong><strong>Lumico Underwriting Guidelines</strong></strong></h2>
+<h2 id="lumico-underwriting-guidelines"><br><strong><strong>Lumico underwriting guidelines</strong></strong></h2>
 
 <p>A medical exam is not required to qualify with Lumico Life burial insurance coverage. </p>
 
@@ -252,7 +252,7 @@ of their underwriting process.</p>
 
 <p>For example, if you inform the other insurance company you applied to before that you have cancer, this information will be on your MIB report. Depending on when you last used it, that could affect the kind of plan you qualify for.</p>
 
-<h2 id="lumico-pricing-examples"><br><strong>Lumico Pricing Examples</strong></h2>
+<h2 id="lumico-pricing-examples"><br><strong>Lumico pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-142">
 <thead>
@@ -364,7 +364,7 @@ of their underwriting process.</p>
 </tbody>
 </table>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Lumico Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for Lumico burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -397,7 +397,7 @@ of their underwriting process.</p>
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -465,7 +465,7 @@ of their underwriting process.</p>
 </tbody>
 </table>
 
-<h2 id="lumico-company-overview"><br><strong>Lumico Company Overview</strong></h2>
+<h2 id="lumico-company-overview"><br><strong>Lumico company overview</strong></h2>
 
 <p>Burial insurance from Lumico is underwritten by Lumico Life Insurance Company, owned by <a href="https://www.iptiq.com/choose-region/" target="_blank" rel="noreferrer noopener nofollow">iptiQ</a> (formerly known as Generation Life Insurance Company). The parent company is iptiQ Americas, backed by Swiss Re (Swiss Reinsurance Company), a large global financial services company founded in 1865 and headquartered in Lincoln, NE.</p>
 
@@ -477,7 +477,7 @@ of their underwriting process.</p>
 
 <p>The rating reflects Lumico’s balance sheet strength, which A.M. Best considers as very strong. The company is a solid enterprise as a member of the Swiss Re group. The mother company will continue to provide reinsurance and capital support to Lumico, giving it financial stability.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>If you are looking to buy burial insurance, trust an independent insurance agency like Final Expense Guy to compare different life insurance companies to get the best plan.</p>
 
@@ -493,7 +493,7 @@ of their underwriting process.</p>
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for insurance, burial insurance, or final expense life insurance, we can help. Fill out our quote form on this page or call us at (888) 862-9456, and we can give you the best quotes for life insurance.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="block-2d75b91f-8cd2-4342-ba02-c419993d9cfb"><strong>LUMICO INSURANCE COMPANY INFORMATION</strong></p>
 
@@ -698,21 +698,21 @@ of their underwriting process.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
-<h3 class="as-h5">Colonial Penn Two Year Wait</h3>
+<h3 class="as-h5">Colonial Penn two year wait</h3>
 </a></div>
 
-<h2 class="as-h5">12 Comments</h2>
+<h2 class="as-h5">12 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-2178">

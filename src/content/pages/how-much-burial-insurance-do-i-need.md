@@ -55,7 +55,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-burial-insurance"><strong>What Is Burial Insurance? </strong></h2>
+<h2 id="what-is-burial-insurance"><strong>What is burial insurance? </strong></h2>
 
 <p>Burial insurance is also called funeral insurance, cremation insurance, or final expense insurance, and it is meant to cover the cost of a funeral, burial, and other end-of-life expenses. After you pass away, buying burial insurance will not leave your family with a mountain of debt.</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>Even if you expect to leave enough money for your funeral budget, you may not want your estate to be depleted by your funeral expenses. Having a final expense insurance policy is one way to ensure that your entire estate will be available to your loved ones.</p>
 
-<h2 id="types-of-burial-insurance"><br><strong>Types Of Burial Insurance</strong> </h2>
+<h2 id="types-of-burial-insurance"><br><strong>Types of burial insurance</strong> </h2>
 
 <p><strong>SIMPLIFIED ISSUE BURIAL INSURANCE</strong></p>
 
@@ -141,7 +141,7 @@ sidebar: true
 
 <p>Accidental death is fully covered even during the two-year waiting period, and the life insurance company will pay your beneficiary 100% of the death benefit. After the waiting period, you are covered for life, and your beneficiary will receive a 100% death benefit if you die for any reason.</p>
 
-<h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost? </strong></h2>
+<h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost? </strong></h2>
 
 <p>Your first step is determining how much burial insurance you will need to know your end-of-life expenses. </p>
 
@@ -192,7 +192,7 @@ cost breakdown from NFDA: </strong></p>
 
 <p>Prices can also differ depending on the location of the funeral and burial. For example, a chapel service can be more expensive, particularly if the funeral service is conducted at a chapel far from the funeral home.</p>
 
-<h2 id="guide-questions-to-calculate-your-final-expenses"><br><strong>Guide Questions To Calculate Your Final Expenses</strong></h2>
+<h2 id="guide-questions-to-calculate-your-final-expenses"><br><strong>Guide questions to calculate your final expenses</strong></h2>
 
 <p>The amount of burial insurance you need will depend upon your final wishes. </p>
 
@@ -213,7 +213,7 @@ cost breakdown from NFDA: </strong></p>
 
 <p>You can request a general price list from your nearest funeral home to know how much each service costs. Add up all these funeral costs to determine how much burial insurance you need.</p>
 
-<h2 id="how-much-burial-insurance-do-i-need"><br><strong>How Much Burial Insurance Do I Need? </strong></h2>
+<h2 id="how-much-burial-insurance-do-i-need"><br><strong>How much burial insurance do I need? </strong></h2>
 
 <p>Once you understand the importance of buying burial insurance, you’ll want to figure out how much coverage you will need. </p>
 
@@ -229,7 +229,7 @@ cost breakdown from NFDA: </strong></p>
 <p>Considering all these things will enable you to calculate
 how much burial insurance coverage you should buy. </p>
 
-<h2 id="burial-insurance-costs"><br><strong>Burial Insurance Costs </strong></h2>
+<h2 id="burial-insurance-costs"><br><strong>Burial insurance costs </strong></h2>
 
 <p>The average premium for seniors’ burial insurance is typical $50 per month, and the most common coverage is $10,000. You can pay your premium weekly, monthly, semi-annually, or annually. Some insurance companies give a discount if you pay your policy annually. </p>
 
@@ -280,7 +280,7 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <p>Serious illnesses usually manifest when you are older. So you’ll want to take immediate action and buy burial insurance protection to cover your final expenses. If you want an accurate quote, click on the instant quote tool on this page.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want to know how much insurance you need shouldn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -294,7 +294,7 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for how much funeral insurance I need, how much final expense insurance I need, or how much life insurance I need. Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="f6a30f7f-4ca6-421a-80ff-bed897c92159"><strong>Do I really need burial insurance?</strong></p>
 
@@ -399,21 +399,21 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">3 Comments</h2>
+<h2 class="as-h5">3 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-51917">

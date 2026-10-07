@@ -58,7 +58,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option"><strong><strong>What Is My Best Insurance Option If I Have A Defibrillator?</strong></strong></h2>
+<h2 id="best-option"><strong><strong>What is my best insurance option if I have a defibrillator?</strong></strong></h2>
 
 <p>How long your defibrillator has been hanging out in your chest is a big deal when it comes to your insurance options.<br><br><strong>DEFIBRILLATOR IMPLANTED OVER 2 YEARS AGO</strong></p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>But here’s the kicker: we know burial insurance companies that don’t fuss over battery changes. If you’ve just had one, we can connect you with a company that offers first-day coverage without the wait.</p>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Absolutely not! No medical exams required for getting burial insurance with a defibrillator.</p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>You’ll get the green light from the insurance company, often in a matter of minutes!</p>
 
-<h2 id="underwriting"><br><strong>Burial Insurance Underwriting If You Have A Defibrillator</strong></h2>
+<h2 id="underwriting"><br><strong>Burial insurance underwriting if you have a defibrillator</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of digging into your health:</strong></p>
 
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>If you’re popping pills for other heart issues related to your defibrillator, it could mess with the plans and rates you qualify for.</p>
 
-<h2 id="insurance-rate"><br><strong>What Is My Burial Insurance Rate If I Have A Defibrillator?</strong></h2>
+<h2 id="insurance-rate"><br><strong>What is my burial insurance rate if I have a defibrillator?</strong></h2>
 
 <p><strong>The cost of burial insurance if you have a defibrillator will depend on:</strong></p>
 
@@ -198,11 +198,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-premiums"><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-premiums"><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. Set up a bank draft from your savings or checking account, and let the bank handle your monthly premium. This way, you won’t have to stress about your policy lapsing due to non-payment.</p>
 
-<h2 id="information-we-need"><br><strong><strong>Information We Need If You Have A Defibrillator</strong></strong></h2>
+<h2 id="information-we-need"><br><strong><strong>Information we need if you have a defibrillator</strong></strong></h2>
 
 <p>When applying for final expense insurance with a defibrillator, it’s crucial to spill the beans. We’ll ask you a series of health questions to get the full picture of your condition.</p>
 
@@ -218,7 +218,7 @@ sidebar: true
 
 <p>We need all the details about your medical condition to give you the best recommendation. The more info we have, the better our chances of finding you affordable insurance coverage.</p>
 
-<h2 id="getting-the-best-rate"><br><strong>How To Get The Best Burial Insurance Rates For People With Defibrillators</strong></h2>
+<h2 id="getting-the-best-rate"><br><strong>How to get the best burial insurance rates for people with defibrillators</strong></h2>
 
 <p>To score affordable coverage after your defibrillator implant, you need to reach out to an independent insurance agency like Final Expense Guy that knows the ropes and works with companies that look favorably at defibrillators.</p>
 
@@ -226,7 +226,7 @@ sidebar: true
 
 <p>So, if you’re hunting for burial insurance with a defibrillator implant, we’ve got your back.</p>
 
-<h2 id="how-we-can-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-we-can-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with a defibrillator doesn’t have to be a headache. Team up with Final Expense Guy, and we’ll make the process smooth and speedy.</p>
 
@@ -236,7 +236,7 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at (888) 862-9456, and we’ll give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="faq"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>   Frequently asked questions </strong></h2>
 
 <p><br><strong>What heart conditions require a defibrillator?</strong></p>
 
@@ -268,16 +268,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/burial-insurance/stent/">
-<h3 class="as-h5">Final Expense Insurance With A  Stent</h3>
+<h3 class="as-h5">Final expense insurance with a  stent</h3>
 </a>  <a href="/burial-insurance/congestive-heart-failure/">
-<h3 class="as-h5">Final Expense Life Insurance For Congestive Heart Failure</h3>
+<h3 class="as-h5">Final expense life insurance for congestive heart failure</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h3 class="as-h5">Burial Insurance After Angioplasty</h3>
+<h3 class="as-h5">Burial insurance after angioplasty</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h3 class="as-h5">Burial Insurance After Heart Valve Surgery</h3>
+<h3 class="as-h5">Burial insurance after heart valve surgery</h3>
 </a>  <a href="/burial-insurance/heart-surgery/">
-<h3 class="as-h5">Burial Insurance with Circulatory Surgery</h3>
+<h3 class="as-h5">Burial insurance with circulatory surgery</h3>
 </a></div>

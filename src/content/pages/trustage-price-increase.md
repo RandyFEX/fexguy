@@ -67,7 +67,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="about-trustage-life-insurance"><strong>About Trustage Life Insurance</strong></h2>
+<h2 id="about-trustage-life-insurance"><strong>About TruStage life insurance</strong></h2>
 
 <p>TruStage Life insurance is a subsidiary of <a href="https://www.cunamutual.com/" target="_blank" rel="noreferrer noopener">CMFG</a> (CUNA Mutual Financial Group) Life Insurance. All their life insurance products are issued by CMFG, which provides insurance and financial products to credit union members around the U.S. However, they expanded their offerings to include anyone interested in a life insurance policy. </p>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <p>The company also partners with GoHealth to provide health insurance. They also provide financial products such as bonds, commercial loans, mortgage loans, and asset protection services. </p>
 
-<h2 id="trustage-life-insurance-financial-ratings"><br><strong>Trustage Life Insurance Financial Ratings</strong></h2>
+<h2 id="trustage-life-insurance-financial-ratings"><br><strong>TruStage life insurance financial ratings</strong></h2>
 
 <p>The company’s financial ratings are important to assess the company’s ability to pay claims to beneficiaries. But, it does not affect the quality of the products they provide to clients. It shows the financial stability of the company.</p>
 
@@ -91,13 +91,13 @@ sidebar: true
 
 <p>Additionally, the National Association of Insurance Commissioners TruStage has a complaint ratio of 0.43. The median complaint ratio for all insurance companies is 1. Meaning the company has a lower than average complaint ratio.</p>
 
-<h2 id="trustage-life-insurance-products"><br><strong>Trustage Life Insurance Products</strong></h2>
+<h2 id="trustage-life-insurance-products"><br><strong>TruStage life insurance products</strong></h2>
 
 <p>TruStage Life Insurance offers a simplified issue term life insurance and whole life insurance. Both do not require a medical exam, but you must answer two health questions.</p>
 
 <p>The company also offers a guaranteed life insurance plan that does not require health questions or a medical exam and does not provide instant coverage regardless of your medical condition.</p>
 
-<h2><br><strong>Trustage Whole Life Insurance</strong></h2>
+<h2><br><strong>TruStage whole life insurance</strong></h2>
 
 <p>Whole life insurance with TruStage is a simplified issue product, and you don’t need to take a medical exam or blood test as part of the underwriting process. </p>
 
@@ -112,7 +112,7 @@ tax-deferred basis which you can get if you cancel your policy or take a policy
 loan. Premiums never go up, and coverage never cancels due to age or declining
 health.</p>
 
-<h2><br><strong>Trustage Guaranteed Acceptance Life Insurance</strong></h2>
+<h2><br><strong>TruStage guaranteed acceptance life insurance</strong></h2>
 
 <p>TruStage also offers <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed acceptance whole life insurance</a> with no health questions and no medical exam. The death benefit amount is lower, between $1,000 and $25,000, which is designed to cover funeral and end-of-life expenses. You can qualify for this plan between 45 and 80 years old.</p>
 
@@ -120,7 +120,7 @@ health.</p>
 
 <p>This guaranteed issue life insurance product has a <a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">2-year waiting period</a> and is EXPENSIVE compared to other burial and final expense life insurance policies available from Final Expense Guy.</p>
 
-<h2><br><strong>Trustage Term Life Insurance</strong></h2>
+<h2><br><strong>TruStage term life insurance</strong></h2>
 
 <p>Term life insurance is the most promoted product of the company (and should not be used for your burial insurance needs). While they offer whole life insurance and other financial products, their marketing focuses more on term life insurance (which <strong>IS NOT</strong> appropriate for burial or final expense insurance).</p>
 
@@ -130,7 +130,7 @@ health.</p>
 
 <p>The face amount starts from $5,000 going up to $300,000. You can be approved instantly. You don’t have to wait weeks before getting covered. Once approved, you can make the first payment, and you’re fully covered.</p>
 
-<h2 id="key-features-of-trustage-term-life-insurance"><br><strong>Key Features Of Trustage Term Life Insurance: </strong> </h2>
+<h2 id="key-features-of-trustage-term-life-insurance"><br><strong>Key features of TruStage term life insurance: </strong> </h2>
 
 <ul>
 <li>You can qualify for term life insurance without a medical exam.</li>
@@ -141,7 +141,7 @@ health.</p>
 <li>TruStage term life is cheaper than whole life plans since it only covers you for a limited time (this applies to all term life insurance policies).</li>
 </ul>
 
-<h2 id="pros-&-cons-of-trustage-term-life-insurance"><br><strong>Pros &amp; Cons Of Trustage Term Life Insurance</strong></h2>
+<h2 id="pros-&-cons-of-trustage-term-life-insurance"><br><strong>Pros &amp; cons of TruStage term life insurance</strong></h2>
 
 <p><strong>PROS:</strong></p>
 
@@ -163,7 +163,7 @@ health.</p>
 <li>Rates appear to be expensive compared to other companies.</li>
 </ul>
 
-<h2 id="traditional-term-life-how-it-works"><br><strong>Traditional Term Life – How It Works</strong></h2>
+<h2 id="traditional-term-life-how-it-works"><br><strong>Traditional term life – how it works</strong></h2>
 
 <p>Term life insurance is simple and affordable and protects for a specific period, typically 10 to 30 years. This type of insurance policy endorsed by Dave Ramsey and other financial gurus. Some insurance companies offer level term life insurance where the premiums remain fixed for the duration of the policy.</p>
 
@@ -173,7 +173,7 @@ health.</p>
 
 <p>You also have the opportunity to renew the policy every year until you reach 95 years old or let the policy expire because you don’t need it anymore.</p>
 
-<h2 id="how-trustage-term-life-insurance-works"><br><strong>This Is How Trustage Term Life Insurance Works</strong></h2>
+<h2 id="how-trustage-term-life-insurance-works"><br><strong>This is how TruStage term life insurance works</strong></h2>
 
 <p>When buying TruStage term life insurance, you are not required to take a medical exam or physical as part of the underwriting process. The application can be made online in less than 10 minutes. All you need to do is answer two health questions.</p>
 
@@ -185,7 +185,7 @@ health.</p>
 receive the death benefit. However, if you turn 80 years old, or if your term
 comes to an end, the coverage is lost. </p>
 
-<h2 id="what's-wrong-with-trustage-term-life-insurance"><br><strong>What’s Wrong With Trustage Term Life Insurance?</strong></h2>
+<h2 id="what's-wrong-with-trustage-term-life-insurance"><br><strong>What’s wrong with TruStage term life insurance?</strong></h2>
 
 <p>TruStage advertises that their term life rate is based on age and gender. The premium is based on <u><strong>5-year age bands</strong></u>. The premium is only level for the first five years and increases every five years as the policyholder reaches new age bands 30, 35, 45, 50, 55, 60, 65, 70, and 75. </p>
 
@@ -199,7 +199,7 @@ comes to an end, the coverage is lost. </p>
 
 <p>Your monthly premiums are lower when you apply, but they will increase every five years. The premium could end up being as expensive as you get older. For example, you are a 42-year-old male in good health who doesn’t smoke.</p>
 
-<h2 id="trustage-price-increases"><br><strong>Trustage Price Increases</strong></h2>
+<h2 id="trustage-price-increases"><br><strong>TruStage price increases</strong></h2>
 
 <p>The site shows that you will initially pay $65.50 for a 20-year $100,000 policy.</p>
 
@@ -216,7 +216,7 @@ comes to an end, the coverage is lost. </p>
 
 <p>You can get TruStage term life insurance without a medical exam. However, your rates could be higher if you’re a smoker because of the added risk to the company. Your rates will be higher for coverage amounts of more than $100,000 due to tobacco use.</p>
 
-<h2><br><strong>According To The Trustage Website:</strong></h2>
+<h2><br><strong>According to the TruStage website:</strong></h2>
 
 <p>“Initial premium rate is based on age and gender for
 all death benefit amounts; tobacco or nicotine substitute use is an additional
@@ -226,7 +226,7 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <p>Important Note: TruStage term life insurance can be up to <u>38% more expensive</u> than other companies. Several A-rated life insurance companies offering 10 to 30-year term policies are cheaper and have a level premium. The premium is fixed and guaranteed to never increase for the entire term.</p>
 
-<h2 id="bottom-line"><br><strong>BOTTOM LINE:</strong></h2>
+<h2 id="bottom-line"><br><strong>Bottom line:</strong></h2>
 
 <p>Based on the rate chart TruStage term life insurance tends to be more expensive than other companies offering level term policies. Additionally, term life insurance is never appropriate for your burial needs as you age. </p>
 
@@ -234,7 +234,7 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <p>We encourage you to consult an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> that can compare different policies and prices before buying a policy from TruStage. We will help you weigh your options before you make your final decision.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>If you’re looking for a no exam policy, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
 
@@ -246,7 +246,7 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance, burial insurance, or life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Is </strong><strong>TruStage</strong><strong> Insurance legitimate?</strong></p>
 
@@ -398,16 +398,16 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
-<h3 class="as-h5">Colonial Penn Two Year Wait</h3>
+<h3 class="as-h5">Colonial Penn two year wait</h3>
 </a></div>

@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-a-disability"><br><strong>What Is My Best Insurance Option If I Have A Disability?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-a-disability"><br><strong>What is my best insurance option if I have a disability?</strong></h2>
 
 <p>The cause of your disability will play a major role in your life insurance eligibility.</p>
 
@@ -139,7 +139,7 @@ sidebar: true
 
 <p>None of the burial insurance companies care if you are receiving SSDI or veteran benefits. Only a few companies will ask if you are working, retired, or disabled. Being on disability is a non-issue to most life insurance companies.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -178,7 +178,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -227,7 +227,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have A Disability, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have a disability, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with a disability.</p>
 
@@ -235,7 +235,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-disability"><br><strong><strong>Burial Insurance Underwriting If You Have A Disability</strong></strong></h2>
+<h2 id="insurance-underwriting-for-disability"><br><strong><strong>Burial insurance underwriting if you have a disability</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -245,7 +245,7 @@ sidebar: true
 
 <p>To get the lowest rates and level death benefit that protects you immediately from day one, you need to apply for burial insurance that has underwriting (asks a few health questions).</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have A Disability?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have a disability?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -353,11 +353,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="disability-and-burial-insurance-riders"><br><strong>Disability And Burial Insurance Riders</strong></h2>
+<h2 id="disability-and-burial-insurance-riders"><br><strong>Disability and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -382,7 +382,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-have-a-disability"><br><strong>Information We Need If You Have A Disability</strong></h2>
+<h2 id="information-we-need-if-you-have-a-disability"><br><strong>Information we need if you have a disability</strong></h2>
 
 <p>When applying for final expense insurance with a disability, it is important to provide us much information as possible.</p>
 
@@ -400,13 +400,13 @@ sidebar: true
 
 <p>We will use the information you provide to determine which company will be the best fit for you. Our knowledge of the underwriting guidelines of each carrier enables us to find the best burial insurance plan for your needs.</p>
 
-<h2 id="getting-the-best-burial-insurance-rates"><br><strong>How To Get The Best Burial Insurance Rates For People With Disabilities?</strong></h2>
+<h2 id="getting-the-best-burial-insurance-rates"><br><strong>How to get the best burial insurance rates for people with disabilities?</strong></h2>
 
 <p>To get affordable rates for burial insurance with a disability, you should use an independent agency like Final Expense Guy. We are highly experienced in helping people with disabilities and we are uniquely equipped to shop the market for you to get you the best deal.</p>
 
 <p>Our years of experience allow us to understand how each carrier works and which company would be the best for you. We can compare prices from different companies to see which one will offer you the cheapest plan.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -421,7 +421,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Disability</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with disability</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -440,7 +440,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Trying to find a policy with a disability needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -456,7 +456,7 @@ sidebar: true
 
 <p>Fill out our quote form on this page or call us at <strong>(888) 862-9456</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I am disabled?</strong></p>
 

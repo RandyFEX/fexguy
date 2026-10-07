@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2><strong>Diabetes</strong> <strong>Key Insights</strong></h2>
+<h2><strong>Diabetes</strong> <strong>key insights</strong></h2>
 
 <ul>
 <li><strong>Controlled Type 2 diabetes</strong> usually qualifies for level benefits with no waiting period and the lowest available rates.</li>
@@ -31,11 +31,11 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/01/Burial-Insurance-With-Diabetes-Image-1024x536.png" alt=""></figure>
 
-<h2><strong>Diabetes</strong> <strong>Medical Definition &amp; Health Risks</strong></h2>
+<h2><strong>Diabetes</strong> <strong>medical definition &amp; health risks</strong></h2>
 
 <p>Underwriters classify the risk level of diabetes based on the age of onset and the presence of circulatory complications. Diabetes is a chronic condition where the body cannot properly process blood sugar for energy. Poor control leads to <a href="https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631" target="_blank" rel="noreferrer noopener nofollow">high glucose</a> levels that damage the heart, kidneys, and nerves over time.</p>
 
-<h3><strong>Common Insurable Diabetic Health Conditions</strong></h3>
+<h3><strong>Common insurable diabetic health conditions</strong></h3>
 
 <ul>
 <li>Diabetic Amputation</li>
@@ -46,7 +46,7 @@ sidebar: true
 <li>Diabetic Retinopathy</li>
 </ul>
 
-<h3><strong>Life Insurance Companies Ask These Diabetes Questions</strong></h3>
+<h3><strong>Life insurance companies ask these diabetes questions</strong></h3>
 
 <p>Different life insurance companies ask different questions to decide which diabetes applicants they may approve.</p>
 
@@ -70,7 +70,7 @@ sidebar: true
 <li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
-<h3><strong>Diabetes Underwriting Basics</strong></h3>
+<h3><strong>Diabetes underwriting basics</strong></h3>
 
 <ul>
 <li><strong>Testing &amp; Test Results:</strong> Underwriters look at your A1C levels to determine control. An A1C below 7.0 is considered well-controlled, while results over 9.0 may result in higher premiums or graded coverage.</li>
@@ -82,7 +82,7 @@ sidebar: true
 <li><strong>Why it Matters:</strong> Consistent medication use lowers the calculated risk for the carrier by proving that you are effectively managing your chronic issues.</li>
 </ul>
 
-<h3><strong>Diabetes Prescription Medication Classes:</strong></h3>
+<h3><strong>Diabetes prescription medication classes:</strong></h3>
 
 <ul>
 <li><strong>Oral Medications:</strong> Metformin, Glipizide, and Januvia for blood sugar management.</li>
@@ -90,13 +90,13 @@ sidebar: true
 <li><strong>Nerve Pain Meds:</strong> Gabapentin and Lyrica are used specifically for diabetic neuropathy symptoms.</li>
 </ul>
 
-<h2><strong>Diabetes with Comorbidities</strong></h2>
+<h2><strong>Diabetes with comorbidities</strong></h2>
 
 <p>Overlapping health conditions directly influence your total insurance risk because they significantly increase the statistical likelihood of heart or kidney failure. Underwriters look closely at the combination of diabetes, high blood pressure, and high cholesterol because these three issues often work together to damage your vascular system. If you have secondary issues like congestive heart failure or liver disease, those conditions will often dictate the price more than the diabetes itself. Dealing with these issues now is vital because health changes can happen fast.</p>
 
 <p>Controlled diabetes qualifies seniors for immediate level burial insurance coverage even with secondary health issues.</p>
 
-<h2>Other Common Health Issues With Diabetes</h2>
+<h2>Other common health issues with diabetes</h2>
 
 <p>Diabetes disrupts normal blood sugar regulation and damages blood vessels and nerves over time, which affects multiple organs and body systems and can affect underwriting and policy selection when these related complications are present.</p>
 
@@ -113,7 +113,7 @@ sidebar: true
 <li><strong>Cognitive effects</strong> – Long-term vascular damage affects memory, focus, and mental processing speed.</li>
 </ul>
 
-<h2><strong>Understanding Diabetes Policy Types</strong></h2>
+<h2><strong>Understanding diabetes policy types</strong></h2>
 
 <p>Carriers offer different plan categories based on an applicant’s diabetes management and long &amp; short-term health stability.</p>
 
@@ -123,13 +123,13 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for health or medical-related causes of death. I only recommend a guaranteed issue plan from Gerber if you have a history of <a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">diabetic amputation</a>.</li>
 </ul>
 
-<h2><strong>Sample Diabetes</strong> <strong>Rate Snapshot for $10,000 Coverage</strong></h2>
+<h2><strong>Sample diabetes</strong> <strong>rate snapshot for $10,000 coverage</strong></h2>
 
 <p>Age and gender determine your statistical life expectancy and directly dictate the monthly cost of burial insurance premiums. Rates vary based on your age at application and biological sex because women statistically live longer than men, which allows insurers to collect premiums over a longer period.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>TRINITY LIFE &amp; FAMILY BENEFIT INSURANCE RATES AGE 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -203,7 +203,7 @@ sidebar: true
 
 <p><strong><strong>Rates may vary based on age, gender, health, and state. Click the form on this page for the lowest rates from the best carriers.</strong></strong></p>
 
-<h2><strong>Diabetes Underwriting &amp; Medication History</strong></h2>
+<h2><strong>Diabetes underwriting &amp; medication history</strong></h2>
 
 <p>Prescription history serves as a primary tool for verifying an applicant’s medical stability over time.</p>
 
@@ -213,7 +213,7 @@ sidebar: true
 
 <p><strong>Could I Get Declined?:</strong> You might be postponed if you have a pending surgery or a very recent change in your insulin units. Recent hospitalizations for crises trigger postponement rather than permanent decline.</p>
 
-<h3>Diabetes Health Profile &amp; Coverage Eligibility</h3>
+<h3>Diabetes health profile &amp; coverage eligibility</h3>
 
 <table>
 <thead>
@@ -247,23 +247,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2><strong>Real Life Diabetes Success Stories</strong></h2>
+<h2><strong>Real life diabetes success stories</strong></h2>
 
 <p>Real-world examples illustrate how seniors with diabetes can secure day-one protection of $5,000 to $25,000 for burial and final expenses.</p>
 
-<h3><strong>Robert’s Story:</strong></h3>
+<h3><strong>Robert’s story:</strong></h3>
 
 <p>Robert was a 66-year-old male with Type 2 diabetes who took Metformin and Glipizide. He was worried that his daily medications would make him ineligible for a standard plan or force a waiting period. After reviewing his history, we found that his condition had been stable for five years with no recent hospital visits. We placed him with Trinity Life because they offered the lowest price for his age and health profile. This saved him nearly 20% compared to the big-name mailer offers he had been receiving. He now has $15,000 in active coverage from the very first day.</p>
 
-<h3><strong>Susan’s Story:</strong></h3>
+<h3><strong>Susan’s story:</strong></h3>
 
 <p>Susan was 71 and had been taking insulin since she was 55 years old, which made some companies decline her for level coverage. She also lived in a state where some of the smaller, cheaper carriers did not operate. We looked at Aflac because they have a very high tolerance for insulin use and are available almost everywhere. Susan was approved for a $25,000 policy with a Level benefit and no waiting period. Her family is now protected, and the claim is set to pay out within 24-48 hours of a claim approval. She was relieved to find a plan that didn’t treat her insulin use as a major complication.</p>
 
-<h2><strong>Diabetes</strong> <strong>Financial Ratings &amp; Stability</strong></h2>
+<h2><strong>Diabetes</strong> <strong>financial ratings &amp; stability</strong></h2>
 
 <p>Financial ratings verify a carrier’s ability to pay death claims to beneficiaries without delay.</p>
 
-<h3>Insurance Carrier Ratings &amp; Comparisons</h3>
+<h3>Insurance carrier ratings &amp; comparisons</h3>
 
 <table>
 <thead>
@@ -320,13 +320,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Burial Insurance With Diabetes</h2>
+<h2>Frequently asked questions: burial insurance with diabetes</h2>
 
 <h3>Can you be denied for burial insurance solely for having diabetes?</h3>
 
 <p>Insurance companies cannot deny you a permanent burial insurance policy simply because you have diabetes, because the final expense market offers specialized plans for almost every health situation. Most people think a diabetes diagnosis makes them uninsurable, but honestly, it just does not make sense to believe those rumors. While some picky “preferred” plans have strict rules, the vast majority of final expense companies actively seek out diabetic clients. Even if you have a severe case or struggle to keep your numbers down, guaranteed-acceptance policies exist that ask no health questions at all. This ensures that every person with diabetes can obtain coverage to protect their family from the high cost of a funeral.</p>
 
-<h3>Does it matter if I have Type 1 vs. Type 2 diabetes when applying for burial insurance?</h3>
+<h3>Does it matter if I have type 1 vs. type 2 diabetes when applying for burial insurance?</h3>
 
 <p>Your specific type of diabetes influences both the monthly premium and the plan categories you qualify for during underwriting. Insurance carriers often view Type 2 diabetes more favorably because patients manage it with oral pills and lifestyle changes. Type 1 is a bit tougher because it requires lifelong insulin, which some underwriters see as a higher risk for your heart and kidneys. But here is the part they do not tell you in the commercial: many companies have updated their rules to allow Type 1 diabetics to qualify for first-day coverage if they have no other major health issues. You do not have to settle for a “bad deal” just because your body does not produce insulin.</p>
 

@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="your-best-life-insurance-option"><strong>What Is My Best Insurance Option If I Have A History Of Lupus?</strong></h2>
+<h2 id="your-best-life-insurance-option"><strong>What is my best insurance option if I have a history of lupus?</strong></h2>
 
 <p><strong>IF YOUR DIAGNOSIS AND TREATMENT IS LONGER THAN 2 YEARS</strong></p>
 
@@ -69,7 +69,7 @@ sidebar: true
 
 <p>With a first-day benefit plan, you are covered from the first day, and your death benefit will be phased in over time.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -108,7 +108,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -157,7 +157,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with lupus.</p>
 
@@ -165,7 +165,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong>Burial Insurance Underwriting If You Have Lupus</strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong>Burial insurance underwriting if you have lupus</strong></h2>
 
 <p>Burial insurance companies have two ways of underwriting.</p>
 
@@ -215,7 +215,7 @@ sidebar: true
 
 <p>However, if you apply for a burial insurance company that is lenient with lupus patients, they will not care about these medications, and you may qualify for a level death benefit plan.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -323,11 +323,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="lupus-&-burial-insurance-riders"><br><strong>Lupus And Burial Insurance Riders</strong></h2>
+<h2 id="lupus-&-burial-insurance-riders"><br><strong>Lupus and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -352,7 +352,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need"><br><strong>Information We Need If You Have Lupus</strong></h2>
+<h2 id="information-we-need"><br><strong>Information we need if you have lupus</strong></h2>
 
 <p>When applying for final expense insurance with lupus, it is important to provide us much information as possible.</p>
 
@@ -371,7 +371,7 @@ sidebar: true
 
 <p>We need to know your medical condition to be able to provide you with the best recommendation. The more information we get, the better your chances of finding affordable insurance coverage.</p>
 
-<h2 id="getting-the-best-rates"><br><strong>How To Get The Best Burial Insurance Rates </strong></h2>
+<h2 id="getting-the-best-rates"><br><strong>How to get the best burial insurance rates </strong></h2>
 
 <p>You need to find companies that don’t ask about lupus or other autoimmune diseases like <a href="/burial-insurance/burial-insurance-arthritis/" target="_blank" rel="noreferrer noopener">arthritis</a> or <a href="/burial-insurance/multiple-sclerosis/" target="_blank" rel="noreferrer noopener">multiple sclerosis</a>. Those companies will provide you with the best burial insurance rates.</p>
 
@@ -381,7 +381,7 @@ sidebar: true
 
 <p>We will shop around and find you the most affordable plan which is suited for your needs and budget.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -396,7 +396,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time</li>
 </ul>
 
-<h2 id="common-uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Lupus</strong></h2>
+<h2 id="common-uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with lupus</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -415,7 +415,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you have systemic lupus can be frustrating, but working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
 
@@ -429,7 +429,7 @@ sidebar: true
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888)862-9456,</strong>&#160;and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>Can you get life insurance if you have lupus?</strong></p>
 

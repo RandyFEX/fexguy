@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-funeral-insurance"><strong>What Is Funeral Insurance For Seniors?</strong></h2>
+<h2 id="what-is-funeral-insurance"><strong>What is funeral insurance for seniors?</strong></h2>
 
 <p>Funeral insurance is also called burial insurance and final expense life insurance for seniors.</p>
 
@@ -64,7 +64,7 @@ sidebar: true
 <li>Death benefits range between $1,000 and $50,000</li>
 </ul>
 
-<h2 id="types-of-funeral-insurance"><strong>Types Of Funeral Insurance For Seniors</strong></h2>
+<h2 id="types-of-funeral-insurance"><strong>Types of funeral insurance for seniors</strong></h2>
 
 <p>There are two types of burial insurance or funeral insurance for seniors:</p>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p>Insurance companies take higher risks in offering guaranteed issue policies. That is why they typically impose a two-year waiting period before they pay the full death benefit (although accidental death is covered from the first day). If you were to die during the waiting period, your beneficiary would only receive the return on premiums plus interest.</p>
 
-<h2 id="advantages-of-funeral-insurance"><strong>Advantages Of Funeral Insurance For Seniors</strong></h2>
+<h2 id="advantages-of-funeral-insurance"><strong>Advantages of funeral insurance for seniors</strong></h2>
 
 <p>If you are asking yourself is it worth getting funeral insurance? Here are the advantages of funeral insurance for seniors.</p>
 
@@ -116,7 +116,7 @@ sidebar: true
 
 <p><strong>Many carriers to choose from</strong> – there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
 
-<h2 id="what-does-funeral-insurance-cover"><strong>What Does Funeral Insurance Cover?</strong></h2>
+<h2 id="what-does-funeral-insurance-cover"><strong>What does funeral insurance cover?</strong></h2>
 
 <p>When you purchase funeral insurance, your beneficiaries can use the payout to pay the following costs:</p>
 
@@ -139,7 +139,7 @@ sidebar: true
 
 <p>Also, consider other costs such as medical bills, credit card debts, and any outstanding debts. Considering all these things will make it easy to calculate how much insurance coverage you should get. If you are unsure how much you need, call Final Expense Guy, and we can help you determine the right coverage amount for your needs.</p>
 
-<h2 id="cost-of-funeral-insurance"><strong>Cost Of Funeral Insurance For Seniors</strong></h2>
+<h2 id="cost-of-funeral-insurance"><strong>Cost of funeral insurance for seniors</strong></h2>
 
 <p>The <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">cost of funeral insurance</a> for seniors will ultimately depend on the type of policy you choose, either a simplified issue or guaranteed issue.</p>
 
@@ -159,7 +159,7 @@ sidebar: true
 
 <p>The funeral life insurance for seniors depends on many factors; thus, providing a fixed rate without any age or health information can be difficult. However, if you want to obtain free insurance quotes from all the different final expense insurance carriers, you can fill up the quotes form on this page to know the exact current rate for this year’s market.</p>
 
-<h2 id="best-funeral-insurance"><strong>Who Provides The Best Funeral Insurance For Seniors?</strong></h2>
+<h2 id="best-funeral-insurance"><strong>Who provides the best funeral insurance for seniors?</strong></h2>
 
 <p>There are different insurance companies in the market offering funeral insurance for seniors. We compiled a list of insurance companies that provide affordable burial insurance for seniors.</p>
 
@@ -257,7 +257,7 @@ sidebar: true
 
 <p>Americo offers different whole life insurance products, such as funeral insurance. The policies are simplified and only require basic health questions to qualify. Their funeral insurance policies offer guaranteed level premiums, and coverage cannot be canceled due to advancing age or health issues. Americo offers a low-cost burial insurance policy with no waiting period.</p>
 
-<h2 id="finding-the-best-funeral-insurance"><br><strong>How To Find The Best Funeral Insurance For Seniors?</strong></h2>
+<h2 id="finding-the-best-funeral-insurance"><br><strong>How to find the best funeral insurance for seniors?</strong></h2>
 
 <p>The best way to find the right funeral insurance company if you’re looking for burial insurance for seniors over 70 and burial insurance for seniors over 80 is to compare quotes from different funeral insurance companies to see who offers the best price and the one that suits your needs.</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <p>If you have any questions regarding funeral insurance or want to know more about life insurance for seniors, call us at (888)862-9456.</p>
 
-<h2 id="types-of-funeral-insurance-to-avoid"><strong>What Kind Of Burial Policies And Final Expense Policies Should I Avoid?</strong></h2>
+<h2 id="types-of-funeral-insurance-to-avoid"><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
@@ -275,7 +275,7 @@ sidebar: true
 
 <p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in burial insurance</strong>, like Final Expense Guy, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
-<h3><strong>Increasing Price Policies</strong></h3>
+<h3><strong>Increasing price policies</strong></h3>
 
 <p>Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! <strong>What in tarnation!?!</strong></p>
 
@@ -311,7 +311,7 @@ sidebar: true
 
 <p>We must admit that, for the average burial insurance final expense insurance shopper, all the companies and options will often leave you <strong>more confused than a woodpecker in a concrete forest.</strong></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
 
@@ -325,7 +325,7 @@ sidebar: true
 
 <p>With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is funeral insurance a good thing?</strong></p>
 

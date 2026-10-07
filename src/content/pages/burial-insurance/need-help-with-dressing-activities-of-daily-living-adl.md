@@ -54,7 +54,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option"><br><strong><strong>What Is My Best Insurance Option If I Need Help With Dressing?</strong></strong></h2>
+<h2 id="best-insurance-option"><br><strong><strong>What is my best insurance option if I need help with dressing?</strong></strong></h2>
 
 <p>Life insurance companies use the ability to dress independently to measure an individual’s functional capacity, especially older adults or those with disabilities.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p><strong>#3 – ABILITY TO ENTER A LEGAL CONTRACT –&#160;</strong>You must possess a mental capacity to enter into a legal contract. For example, the company may reject your application if you have advanced dementia or Alzheimer’s disease and cannot legally consent to an agreement.</p>
 
-<h2 id="why-you-need-guaranteed-issue-insurance"><br><strong>Why Do You Need A Guaranteed Issue Burial Insurance If You Need Help With Dressing?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-insurance"><br><strong>Why do you need a guaranteed issue burial insurance if you need help with dressing?</strong></h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you need help with dressing and other ADLs because it’s the only life insurance plan you will qualify for. If you are relatively healthy and only need help with dressing, you can have an average life expectancy and easily outlive the two-year waiting period.</p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>Buying a guaranteed issue burial insurance if you need help with dressing is worth it because you won’t lose money with this plan, and it costs much less in the long run than having no insurance coverage at all.</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -129,7 +129,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong> Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong> Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help dressing.</p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="life-insurance-underwriting"><br><strong><strong>Life Insurance Underwriting If You Need Help With Dressing</strong></strong></h2>
+<h2 id="life-insurance-underwriting"><br><strong><strong>Life insurance underwriting if you need help with dressing</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -190,7 +190,7 @@ sidebar: true
 
 <p>Applicants needing help with dressing and other activities of daily living are considered high-risk applicants. Therefore, they will need to pay more premiums and have a short waiting period if they need help in performing ADLs.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -250,11 +250,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="paying-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Needing Help With Dressing And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Needing help with dressing and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -263,7 +263,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need"><br><strong><strong>Information We Need If You Need Help With Dressing</strong></strong></h2>
+<h2 id="information-we-need"><br><strong><strong>Information we need if you need help with dressing</strong></strong></h2>
 
 <p>When applying for burial insurance if you need help with dressing, we will need some information about your current health and functionality. Your information will help us understand your inability to get dressed on your own and your other health condition.</p>
 
@@ -280,7 +280,7 @@ sidebar: true
 
 <p>Be honest when answering these questions so that we can determine what insurance company is best for you and give you an accurate quote.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial Insurance &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial insurance &amp; funeral insurance</strong></h2>
 
 <ol>
 <li><strong>Easy to qualify</strong>. You skip the medical exam and health questions. You are guaranteed to be approved regardless of your health conditions.</li>
@@ -292,7 +292,7 @@ sidebar: true
 <li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance is whole life insurance that accumulates cash value that you can withdraw or borrow against.</li>
 </ol>
 
-<h2 id="the-best-guaranteed-issue-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>
+<h2 id="the-best-guaranteed-issue-policy"><br><strong>The best guaranteed issue life insurance policy</strong></h2>
 
 <p>The best-guaranteed-issue life insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4 year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -300,7 +300,7 @@ sidebar: true
 
 <p>If you need help with dressing, then GI policy is your best choice. Your application will be quick and easy because there are no medical exams or health questions. You may even be approved for coverage in 15 minutes!</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance </strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance </strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -319,7 +319,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy when you need help with dressing needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 

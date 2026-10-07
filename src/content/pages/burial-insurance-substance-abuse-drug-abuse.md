@@ -61,7 +61,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-substance-abuse-history"><br><strong>What Is My Best Insurance Option If I Have A History Of Substance Abuse?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-substance-abuse-history"><br><strong>What is my best insurance option if I have a history of substance abuse?</strong></h2>
 
 <p id="WHAT-IF-I-ALREADY-QUIT-SUBSTANCE-ABUSE"> <br><strong>WHAT IF I ALREADY QUIT SUBSTANCE ABUSE?</strong> </p>
 
@@ -176,7 +176,7 @@ Level death benefit</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -215,7 +215,7 @@ Level death benefit</p>
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -264,7 +264,7 @@ Level death benefit</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Substance Abuse, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have substance abuse, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with substance abuse.</p>
 
@@ -272,7 +272,7 @@ Level death benefit</p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-substance-abuse"><br><strong>Burial Insurance Underwriting If You Have Substance Abuse</strong></h2>
+<h2 id="insurance-underwriting-for-substance-abuse"><br><strong>Burial insurance underwriting if you have substance abuse</strong></h2>
 
 <p>Underwriting is the process utilized by life insurance
 providers to determine your insurability and how much they will charge you for
@@ -380,7 +380,7 @@ associated with illegal drug use:</strong></p>
 
 <p>People with a history of substance abuse need to maintain sobriety for at least 24 months to qualify for the best plan with the lowest rate.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Substance Abuse?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have substance abuse?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -488,11 +488,11 @@ associated with illegal drug use:</strong></p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="substance-abuse-and-burial-insurance-riders"><br><strong>Substance Abuse And Burial Insurance Riders</strong></h2>
+<h2 id="substance-abuse-and-burial-insurance-riders"><br><strong>Substance abuse and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -517,7 +517,7 @@ associated with illegal drug use:</strong></p>
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-have-substance-abuse-history"> <br><strong>Information We Need If You Have A History Of Substance Abuse </strong></h2>
+<h2 id="information-we-need-if-you-have-substance-abuse-history"> <br><strong>Information we need if you have a history of substance abuse </strong></h2>
 
 <p>When applying for burial insurance with a substance abuse history, we will ask you a few questions about your drug use. We want to know more information if you’ve tried illegal drugs before.</p>
 
@@ -538,7 +538,7 @@ and pricing, we will ask you a few questions:</strong></p>
 
 <p>It is essential to answer these questions honestly. Your answers will help us determine which life insurance company will best fit your needs and offer you the lowest price.</p>
 
-<h2 id="getting-approved-for-burial-insurance"> <br><strong>How To Be Approved If You Have A History Of Substance Abuse</strong> </h2>
+<h2 id="getting-approved-for-burial-insurance"> <br><strong>How to be approved if you have a history of substance abuse</strong> </h2>
 
 <p>First and foremost, be honest about your substance abuse history on your application. If you’ve been rejected for coverage in the past, say so.</p>
 
@@ -557,7 +557,7 @@ because you now have a better chance of getting approved.</p>
 
 <p>If you’re currently using drugs, you’ll definitely need to work with an independent agency like Final Expense Guy that can shop your case to multiple life insurance companies to get the best deal.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -572,7 +572,7 @@ because you now have a better chance of getting approved.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Substance Abuse</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with substance abuse</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -591,7 +591,7 @@ because you now have a better chance of getting approved.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you have a history of substance abuse needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -603,7 +603,7 @@ because you now have a better chance of getting approved.</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>What is considered substance abuse in insurance?</strong></p>
 
@@ -757,16 +757,16 @@ because you now have a better chance of getting approved.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>

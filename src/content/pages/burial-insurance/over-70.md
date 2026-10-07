@@ -46,7 +46,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="funeral-policy-over-70"><strong>Funeral Policy Over 70</strong></h2>
+<h2 id="funeral-policy-over-70"><strong>Funeral policy over 70</strong></h2>
 
 <p>You have to apply for burial insurance for a company to accept you for <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, cremation insurance, or final expense insurance coverage. Just because you are over 70 doesn’t mean you cannot purchase low-cost burial insurance.</p>
 
@@ -98,7 +98,7 @@ sidebar: true
 
 <p><em><strong>Are you get getting the idea that if you are a female over 70, we can help you? You’re a winner!</strong></em></p>
 
-<h2 id="life-insurance-for-my-elderly-parents"><strong>Life Insurance For My Elderly Parents</strong></h2>
+<h2 id="life-insurance-for-my-elderly-parents"><strong>Life insurance for my elderly parents</strong></h2>
 
 <p>If you’re looking for life insurance for <a href="/burial-insurance/parents/" target="_blank" rel="noreferrer noopener">elderly parents</a> over 70 years old, we can also help you. Many adult children shop for funeral policies for parents or loved ones. A large part of what we do at Final Expense Guy is to help adult children find burial policies for senior parents.</p>
 
@@ -110,13 +110,13 @@ sidebar: true
 
 <p><strong>Shopping for burial insurance isn’t all it’s cracked up to be, so let us do the shopping for you.</strong></p>
 
-<h2 id="what-is-the-average-cost-of-burial-insurance"><br><strong>What Is The Average Cost Of Burial Insurance?</strong></h2>
+<h2 id="what-is-the-average-cost-of-burial-insurance"><br><strong>What is the average cost of burial insurance?</strong></h2>
 
 <p>You may ask, “how much is life insurance for 70? Your funeral insurance rates and burial insurance costs will depend on your age, height and weight, medical records, and prescription history. The best funeral and burial insurance policies require no waiting period for immediate burial insurance coverage.</p>
 
 <p>The cost of a burial is in the $8,000-$10,000 range and will go up yearly with inflation. Purchasing your policy now is your best bet to save loads of money in the future.</p>
 
-<h2 id="what-is-the-best-life-insurance-option-for-70-and-older"><strong>What Is The Best Life Insurance Option For 70 And Older?</strong></h2>
+<h2 id="what-is-the-best-life-insurance-option-for-70-and-older"><strong>What is the best life insurance option for 70 and older?</strong></h2>
 
 <p>If you’re a senior 70 and older, you probably have had life insurance coverage in the past. It may have been one of the following:</p>
 
@@ -148,7 +148,7 @@ sidebar: true
 
 <p><strong>These final expense policies make it easy for seniors to get the best rates and coverage they need at their current age and health.</strong></p>
 
-<h2 id="what's-the-best-thing-about-burial-insurance"><br><strong>What’s The Best Thing About Burial Insurance For Over 70 Policy?</strong></h2>
+<h2 id="what's-the-best-thing-about-burial-insurance"><br><strong>What’s the best thing about burial insurance for over 70 policy?</strong></h2>
 
 <p>Insurance companies are fully aware that, as we age, we develop health problems. The reality is you may not be fit as a fiddle. The insurance companies have designed these final expense policies for seniors with that in mind.</p>
 
@@ -158,13 +158,13 @@ sidebar: true
 
 <p><strong>If you have recovered from a heart attack and it’s been more than two years, you can qualify for the best burial policy rates!</strong></p>
 
-<h3><strong>Past medical problems? No Problem! </strong></h3>
+<h3><strong>Past medical problems? No problem! </strong></h3>
 
 <p>There are many other medical problems the insurance companies simply don’t care about if more than 12 to 36 months have passed.</p>
 
 <p>We help people find affordable premiums daily, with full coverage and no waiting period, even if they have had health problems in the past.&#160;So, just because you’re over 70 years old doesn’t mean you can’t qualify for the best burial insurance for seniors over 70!</p>
 
-<h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What Kind Of Burial Policies Should I Avoid?</strong></h2>
+<h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What kind of burial policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
@@ -180,13 +180,13 @@ sidebar: true
 
 <p><strong>Avoid policies that increase in price every year or end at a certain age. You don’t want your family to get hung out to dry when they need this coverage the most.</strong></p>
 
-<h3><strong>Seen any misleading internet advertisements?</strong></h3>
+<h3><strong>Seen any misleading Internet advertisements?</strong></h3>
 
 <p>Yeah, the old “bait and switch” is still alive and well in America….buyer beware!</p>
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="749" height="350" src="/wp-content/uploads/2018/03/Misleading-Burial-Policy-Advertisements.png" alt=""></figure>
 
-<h2 id="why-choose-funeral-funds-for-my-burial-policy"><strong>Why Choose Final Expense Guy For My Burial Policy?</strong></h2>
+<h2 id="why-choose-funeral-funds-for-my-burial-policy"><strong>Why choose Final Expense Guy for my burial policy?</strong></h2>
 
 <p>Most life insurance agents are fine, respectable people. However, some life insurance agents will sell you the easiest and most expensive policy possible. The guaranteed issue folks claim you don’t even need to talk to an agent (but you will need to wait two years for your coverage to begin…even if you’re healthy). </p>
 
@@ -200,7 +200,7 @@ sidebar: true
 
 <p>All the companies and options will often confuse you more than the average burial insurance final expense insurance shopper.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Affordable burial insurance over 70 doesn’t have to cost an arm and a leg.</p>
 
@@ -212,7 +212,7 @@ sidebar: true
 
 <p>Working with an independent brokerage like Final Expense Guy is always in your best interest. With access to all the best final expense insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>What is the best burial insurance for seniors?</strong></p>
 

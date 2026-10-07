@@ -61,7 +61,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="reasons-why-employers-provide-life-insurance"><br><strong>Reasons Why Employers Provide Life Insurance</strong></h2>
+<h2 id="reasons-why-employers-provide-life-insurance"><br><strong>Reasons why employers provide life insurance</strong></h2>
 
 <ul>
 <li><strong>To Attract And Retain Employees</strong>: Offering life insurance benefits can help employers recruit and retain the best talent. It’s also a way for employers to show employees that they care about their well-being and are invested in their long-term well-being.</li>
@@ -70,7 +70,7 @@ sidebar: true
 <li><strong>Protect The Business From Financial Loss</strong>: Employer-provided life insurance can help businesses protect themselves from the financial loss of a key employee. If a key employee dies, the life insurance policy can help the business cover the costs of recruiting and training a replacement.</li>
 </ul>
 
-<h2 id="importance-of-life-insurance-for-employees"><br><strong>Importance Of Life Insurance For Employees</strong></h2>
+<h2 id="importance-of-life-insurance-for-employees"><br><strong>Importance of life insurance for employees</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employer-provided life insurance is a great way to financially protect your loved ones in the event of your death while you’re still employed.</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">While no one likes to think about their death, it’s crucial to have a life insurance policy in place in case the worst happens. Employer-provided life insurance is one way to partially ensure that your loved ones are taken care of financially if you’re not around to take care of them.</p>
 
-<h2 id="different-types-of-employee-life-insurance"><br><strong>Different Types Of Employee Life Insurance</strong></h2>
+<h2 id="different-types-of-employee-life-insurance"><br><strong>Different types of employee life insurance</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">There are four main types of employer-provided life insurance:</p>
 
@@ -106,7 +106,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Whole life insurance is a type of permanent life insurance that covers your entire life. The death benefit is paid out to your beneficiaries regardless of when you die.</p>
 
-<h2 id="pros-and-cons-of-employer-provided-life-insurance"><br><strong>Pros And Cons Of Employer-provided Life Insurance</strong></h2>
+<h2 id="pros-and-cons-of-employer-provided-life-insurance"><br><strong>Pros and cons of employer-provided life insurance</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employer-provided life insurance has pros and cons that you should consider before deciding if it is right for you.</p>
 
@@ -135,7 +135,7 @@ sidebar: true
 <li><strong>No cash value</strong> – Employer-provided life insurance does not have a cash value and cannot be used as collateral for a loan.</li>
 </ul>
 
-<h2 id="is-employer-provided-life-insurance-enough"><br><strong>Is Employer-provided Life Insurance Enough?</strong></h2>
+<h2 id="is-employer-provided-life-insurance-enough"><br><strong>Is employer-provided life insurance enough?</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employer-provided life insurance can be a good starting point for your life insurance coverage, but it is usually not enough. The death benefit is usually smaller than an individual policy because it is often restricted to an amount equal to your annual income. </p>
 
@@ -153,7 +153,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Final Expense Guy is an excellent example of an independent life insurance agency that works on your behalf to get the lowest rates.</p>
 
-<h2 id="the-problem-with-employer-provided-life-insurance"><br><strong>The Problem With Employer-provided Life Insurance</strong></h2>
+<h2 id="the-problem-with-employer-provided-life-insurance"><br><strong>The problem with employer-provided life insurance</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employer-provided life insurance can be a good starting point for your life insurance coverage.</p>
 
@@ -169,7 +169,7 @@ sidebar: true
 <li>Some employer-provided life insurance policies have a graded death benefit. If you die within the first two years of your policy, your beneficiaries will only receive a portion of the death benefit.</li>
 </ul>
 
-<h2 id="why-employer-provided-life-insurance-can-backfire"><br><strong>Why Employer-provided Life Insurance Can Backfire</strong></h2>
+<h2 id="why-employer-provided-life-insurance-can-backfire"><br><strong>Why employer-provided life insurance can backfire</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">If you depend on employer-provided life insurance as your only policy, you could be in for a rude awakening. </p>
 
@@ -181,7 +181,7 @@ sidebar: true
 <li>Your employer may TERMINATE your life insurance policy without warning at any time. So, even if you’ve been with the company for years, there’s no guarantee your coverage will still be in place when you need it.</li>
 </ul>
 
-<h2 id="how-would-you-know-if-your-employer-provided-life-insurance-is-right-for-you"><br><strong>How Would You Know If Your Employer-provided Life Insurance Is Right For You?</strong></h2>
+<h2 id="how-would-you-know-if-your-employer-provided-life-insurance-is-right-for-you"><br><strong>How would you know if your employer-provided life insurance is right for you?</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">There are a few things to consider when deciding whether or not employer-provided life insurance is right for you. You should consider how much life insurance you need. </p>
 
@@ -211,7 +211,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Talk to an insurance professional if you’re unsure whether employer-provided life insurance is right for you. They can help you compare options and choose the best life insurance policy.</p>
 
-<h2 id="what-happens-to-your-employer-provided-life-insurance-when-you-leave-your-job"><br><strong>What Happens To Your Employer-provided Life Insurance When You Leave Your Job?</strong></h2>
+<h2 id="what-happens-to-your-employer-provided-life-insurance-when-you-leave-your-job"><br><strong>What happens to your employer-provided life insurance when you leave your job?</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employers provide life insurance as a benefit to current employees. If you leave your job, your employer-provided life insurance policy will usually terminate. This is one of the most significant drawbacks of employer-provided life insurance.</p>
 
@@ -221,7 +221,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Continuation coverage is usually more expensive than an individual life insurance policy because the insurance company doesn’t have the same group discounts that they would if you were still employed.</p>
 
-<h2 id="life-insurance-policy-options-if-you-leave-your-employer"><br><strong>Life Insurance Policy Options If You Leave Your Employer</strong></h2>
+<h2 id="life-insurance-policy-options-if-you-leave-your-employer"><br><strong>Life insurance policy options if you leave your employer</strong></h2>
 
 <ul>
 <li><strong>Cancel your employer-provided life insurance policy </strong>– If you’re leaving your job, your employer will often automatically cancel your employer-provided life insurance policy. </li>
@@ -231,7 +231,7 @@ sidebar: true
 <li><strong>Buy an individual life insurance policy</strong> – If you’re leaving your job, you may want to buy an individual life insurance policy. This is often the best option to save money and qualify for more coverage than your employer-provided life insurance.</li>
 </ul>
 
-<h2 id="what-are-the-benefits-of-individual-life-insurance"><br><strong>What Are The Benefits Of Individual Life Insurance?</strong></h2>
+<h2 id="what-are-the-benefits-of-individual-life-insurance"><br><strong>What are the benefits of individual life insurance?</strong></h2>
 
 <p><strong><strong>Individual life insurance policies through Final Expense Guy offer many benefits for employees, including:</strong></strong></p>
 
@@ -244,7 +244,7 @@ sidebar: true
 <li><strong>You can name anyone as the beneficiary</strong> – With an individual life insurance policy, you can name anyone as the beneficiary. This allows you to ensure your family is taken care of if something happens to you.</li>
 </ul>
 
-<h2 id="what-are-the-different-types-of-individual-life-insurance"><br><strong>What Are The Different Types Of Individual Life Insurance?</strong></h2>
+<h2 id="what-are-the-different-types-of-individual-life-insurance"><br><strong>What are the different types of individual life insurance?</strong></h2>
 
 <ul>
 <li><strong>Term life insurance</strong> – Term life insurance is the most affordable type of life insurance. It provides coverage for 5, 10, 20, or 30 years.</li>
@@ -260,7 +260,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">The best type of life insurance for you will depend on your needs and budget. Talk to an insurance professional to see which type of life insurance is right for you.</p>
 
-<h2 id="employer-provided-life-insurance-vs-individual-life-insurance"><br><strong>Employer-provided Life Insurance Vs. Individual Life Insurance</strong></h2>
+<h2 id="employer-provided-life-insurance-vs-individual-life-insurance"><br><strong>Employer-provided life insurance vs. individual life insurance</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Employer-provided life insurance has some advantages, such as being less expensive and not requiring medical underwriting. However, there are also some disadvantages, such as being less flexible and not being portable if you leave your job.</p>
 
@@ -268,7 +268,7 @@ sidebar: true
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">When purchasing an individual life insurance policy or keeping your employer-provided life insurance, compare the cost, coverage limits, and rider options. The best option for you will depend on your needs and budget. Work with a qualified life insurance agent to find the best policy.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Finding a policy if you have employer-provided life insurance and you want additional security, working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker. We understand that each person is different, and we will work with you to find the best policy for your needs.</p>
 
@@ -284,16 +284,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>

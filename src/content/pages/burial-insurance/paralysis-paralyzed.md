@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-paralysis"><strong>What Is Paralysis?</strong></h2>
+<h2 id="what-is-paralysis"><strong>What is paralysis?</strong></h2>
 
 <p>Paralysis is when you lose control over your muscles in part or all of your body. This can happen due to damage to the brain, spinal cord, or nerves, and it can be a temporary hiccup or a permanent situation.</p>
 
@@ -79,11 +79,11 @@ sidebar: true
 <li><strong>Your overall health:</strong>&#160;Other health conditions you have can be considered alongside the paralysis. A young applicant with paralysis but otherwise good health might get better rates than someone with paralysis and additional health concerns.</li>
 </ul>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance With Paralysis?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance with paralysis?</strong></h2>
 
 <p>Absolutely! If you’ve got paralysis but can still handle your daily activities like eating, bathing, dressing, and the usual, you might just get a first-day coverage plan where no waiting period is required!</p>
 
-<h2 id="burial-insurance-available"><strong>What Are The Types Of Burial Insurance For People With Paralysis?</strong></h2>
+<h2 id="burial-insurance-available"><strong>What are the types of burial insurance for people with paralysis?</strong></h2>
 
 <p><strong>First-Day Coverage – </strong>This one’s a breeze. No medical exam is needed – just a few health questions. With first-day coverage, you’re in the game right away with no waiting period to worry about.</p>
 
@@ -91,7 +91,7 @@ sidebar: true
 
 <p>Just a heads-up: Guaranteed issue whole life policies do come with a mandatory two-year waiting period. If you pass away during that time, the policy won’t pay out the full death benefit. Instead, it’ll cover what you’ve paid in premiums plus a little interest (7-10%, depending on the company).</p>
 
-<h2 id="factors-affecting-eligibility"><strong>Factors That Affect Life Insurance Eligibility If You Had Paralysis</strong></h2>
+<h2 id="factors-affecting-eligibility"><strong>Factors that affect life insurance eligibility if you had paralysis</strong></h2>
 
 <p><strong>Here’s what we’ll check to see if you’re a good fit for first-day coverage:</strong></p>
 
@@ -104,7 +104,7 @@ sidebar: true
 
 <p>If you’re answering “yes” to any of these, your best bet might be a guaranteed issue permanent life insurance policy.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Paralysis?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have paralysis?</strong></h2>
 
 <p>Life insurance companies are all about those six <strong>Activities of Daily Living (<a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>)</strong> to figure out if you’re a prime candidate for first-day coverage and the best rates. </p>
 
@@ -129,13 +129,13 @@ sidebar: true
 
 <p><strong>NURSING HOME OR ASSISTED LIVING FACILITY – </strong>Confined to a nursing home or assisted living? Guaranteed issue life insurance is likely your best policy.</p>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope, no medical exam is needed if you’ve got paralysis! When you apply for burial insurance, you’ll just answer a few basic health questions.</p>
 
 <p>And the best part? You might get your official approval within minutes!</p>
 
-<h2 id="cost-of-burial-insurance"><strong>What Is The Cost Of Burial Insurance?</strong></h2>
+<h2 id="cost-of-burial-insurance"><strong>What is the cost of burial insurance?</strong></h2>
 
 <p><strong>The cost of your burial insurance will be influenced by your:</strong></p>
 
@@ -215,7 +215,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="underwriting-for-paralysis"><strong>Burial Insurance Underwriting For Paralysis?</strong></h2>
+<h2 id="underwriting-for-paralysis"><strong>Burial insurance underwriting for paralysis?</strong></h2>
 
 <p><strong>Burial insurance companies with first-day coverage have two ways of getting the scoop on you:</strong></p>
 
@@ -234,7 +234,7 @@ sidebar: true
 
 <p>Not every insurance company will ask about paralysis specifically, but they’ll definitely want to know if you can handle those daily activities on your own. Plus, expect questions about home health care and wheelchair use.</p>
 
-<h2 id="information-we-need"><strong>Information We Need if You Have Paralysis</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you have paralysis</strong></h2>
 
 <p><strong>To help you score that insurance, we’ll need answers to these:</strong></p>
 
@@ -248,11 +248,11 @@ sidebar: true
 
 <p>Be straight-up with your answers so we can match you with the best final expense insurance company.</p>
 
-<h2 id="rejected-application"><strong>What To Do If Your Application Was Rejected Because Of Paralysis</strong></h2>
+<h2 id="rejected-application"><strong>What to do if your application was rejected because of paralysis</strong></h2>
 
 <p>If your life insurance application got the boot in the past because of paralysis, don’t sweat it. We’re here to pull some strings and get you approved for first-day coverage by hunting down insurers who welcome applicants with a history of paralysis.</p>
 
-<h2 id="applying-for-burial-insurance"><strong>How To Apply For Burial Insurance With Paralysis</strong></h2>
+<h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with paralysis</strong></h2>
 
 <ol>
 <li><strong>Work with an Independent Insurance Agent –&#160;</strong>Get some backup from independent insurance agents from Final Expense Guy who know their way around paralysis <a href="https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm" target="_blank" rel="noreferrer noopener">underwriting</a>. An agent from Final Expense Guy can help you navigate your options, compare quotes, and find the perfect burial insurance plan.</li>
@@ -260,7 +260,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Take a good look at the policy terms before giving the thumbs up. Make sure the coverage fits your needs and your wallet.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>At Final Expense Guy, we’re pros at landing life insurance for folks who’ve dealt with paralysis.</p>
 
@@ -268,7 +268,7 @@ sidebar: true
 
 <p>Need coverage that won’t break the bank? Whether you’re after burial insurance for stroke or anything else, we’ve got your back. Just fill out our quote form on this page or give us a ring at (888) 862-9456 for a spot-on quote.</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is there an age limit for burial insurance with paralysis?</strong></p>
 

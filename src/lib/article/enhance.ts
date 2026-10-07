@@ -241,7 +241,7 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
       return '';
     },
   );
-  rest = rest.replace(/<h2[^>]*>\s*Keep Reading\s*<\/h2>\s*<div>[\s\S]*?<\/div>\s*/, () => {
+  rest = rest.replace(/<h2[^>]*>\s*Keep Reading\s*<\/h2>\s*<div>[\s\S]*?<\/div>\s*/i, () => {
     report.keepReading = true;
     return '';
   });
@@ -324,10 +324,10 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
     return `<div class="art-details">${run.trim()}</div>\n`;
   });
 
-  // 10. Case stories: an H3 ending "'s Story:" (or "s' Story:") and the text
-  //     after it, up to the next heading.
+  // 10. Case stories: an H3 ending "'s Story:" (or "s' Story:", any case)
+  //     and the text after it, up to the next heading.
   rest = rest.replace(
-    /(<h3[^>]*>[^<]*(?:[’']s|s[’']) Story:?<\/h3>)([\s\S]*?)(?=<h[23]|<\/section>|$)/g,
+    /(<h3[^>]*>[^<]*(?:[’']s|s[’']) Story:?<\/h3>)([\s\S]*?)(?=<h[23]|<\/section>|$)/gi,
     (_, heading: string, story: string) => {
       report.stories++;
       return `<div class="art-story">${heading}${story.trim()}</div>\n`;

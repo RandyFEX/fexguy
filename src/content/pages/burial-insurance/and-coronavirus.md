@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-coronavirus"><br><strong>What Is Coronavirus? </strong></h2>
+<h2 id="what-is-coronavirus"><br><strong>What is coronavirus? </strong></h2>
 
 <p>The Center for Disease Control and Prevention (CDC) calls the virus 2019 Novel Coronavirus or COVID-19 disease.</p>
 
@@ -178,7 +178,7 @@ sidebar: true
 
 <p>As of the writing of this article, a total of 126,509,736 vaccine doses have been administered in the U.S.</p>
 
-<h2 id="effect-on-life-insurance-eligibility"><br><strong>Coronavirus And Its Effect On Life Insurance Eligibility </strong></h2>
+<h2 id="effect-on-life-insurance-eligibility"><br><strong>Coronavirus and its effect on life insurance eligibility </strong></h2>
 
 <p>The coronavirus outbreak has already reached 50 countries, with most cases in China. However, the world’s knowledge about this virus is still limited, including the comparative data about its death rate. </p>
 
@@ -192,7 +192,7 @@ sidebar: true
 
 <p>If you contacted COVID-19, it is more beneficial to look for companies that never ask about it in their health questions. Remember, if the life insurance company never asks about a medical condition in their health questionnaire, they accept it. You can easily qualify for the best plan with immediate first-day coverage, even if you’re diagnosed with COVID-19.<br>Working with an insurance agency that knows the companies that will treat your condition favorably is crucial.</p>
 
-<h2 id="factors-affecting-eligibility"><br><strong>Factors That May Affect Eligibility</strong></h2>
+<h2 id="factors-affecting-eligibility"><br><strong>Factors that may affect eligibility</strong></h2>
 
 <p><strong>Hospitalization</strong></p>
 
@@ -206,7 +206,7 @@ sidebar: true
 
 <p>If you are hospitalized because of COVID-19, we can help you find affordable burial, funeral, cremation, or final expense insurance. <br></p>
 
-<h2 id="insurance-companies-coronavirus"><strong>How Do Insurance Companies React To People With Coronavirus? </strong></h2>
+<h2 id="insurance-companies-coronavirus"><strong>How do insurance companies react to people with coronavirus? </strong></h2>
 
 <p><strong>1. They will decline your application</strong></p>
 
@@ -234,7 +234,7 @@ coverage</strong></p>
 
 <p>Hopefully, you have no other health issues that may prevent you from qualifying with one of these companies.</p>
 
-<h2 id="burial-insurance-and-coronavirus"><br><strong>Burial Insurance And Coronavirus </strong></h2>
+<h2 id="burial-insurance-and-coronavirus"><br><strong>Burial insurance and coronavirus </strong></h2>
 
 <p><strong>There are two burial insurance options with coronavirus:</strong></p>
 
@@ -276,7 +276,7 @@ be approved for coverage regardless of your health and current hospitalization.
 
 <p>They will also not check your prescription history or MIB, nor will they call you for a phone interview. So, even if you’re in the hospital, you will still qualify for coverage!<br></p>
 
-<h2 id="benefits-of-burial-insurance"><strong>Benefits Of Burial Insurance</strong> </h2>
+<h2 id="benefits-of-burial-insurance"><strong>Benefits of burial insurance</strong> </h2>
 
 <p><strong>No Medical Exam</strong></p>
 
@@ -309,7 +309,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>If you want a policy to cover your funeral, burial, or end-of-life expenses, burial insurance allows you to buy as little as you need. You can choose a face amount between $2,000 to a maximum of $25,000.<br></p>
 
-<h2 id="requirements-to-qualify"><br><strong>Requirements To Qualify For Burial Insurance With Coronavirus </strong></h2>
+<h2 id="requirements-to-qualify"><br><strong>Requirements to qualify for burial insurance with coronavirus </strong></h2>
 
 <p><strong>Age</strong></p>
 
@@ -323,7 +323,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>The mental capacity to enter into a legal contract is a requirement to qualify for burial insurance. People with cognitive impairments who can’t give legal consent may be declined for coverage. </p>
 
-<h2 id="coronavirus-and-the-elderly"><br><strong>Coronavirus And The Elderly: How To Support Older Adults</strong></h2>
+<h2 id="coronavirus-and-the-elderly"><br><strong>Coronavirus and the elderly: how to support older adults</strong></h2>
 
 <p>We can show our support to older adults during this time of the pandemic. Most older adults depend on the support and services provided in their homes to maintain health and independence.</p>
 
@@ -348,7 +348,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Staying healthy during this COVID-19 pandemic is important. Talk to your doctor if you need vaccinations and other preventive medical services to keep you healthy and help prevent you from becoming ill with other diseases.</p>
 
-<h2 id="visiting-a-loved-one"><br><strong>Visiting A Loved One In A Nursing Home Or Assisted Living Facility</strong></h2>
+<h2 id="visiting-a-loved-one"><br><strong>Visiting a loved one in a nursing home or assisted living facility</strong></h2>
 
 <p>Due to the coronavirus and the elderly risks, many facilities have updated their visiting policies as COVID-19 cases increase in the US. Some health care facilities have limited visitor policies in place.</p>
 
@@ -367,7 +367,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>The healthcare staff at the facility caring for your loved one will direct you on what to do during your visit.</p>
 
-<h2 id="getting-lower-rates"><br><strong>How To Get Lower Rates On Burial Insurance With Coronavirus </strong></h2>
+<h2 id="getting-lower-rates"><br><strong>How to get lower rates on burial insurance with coronavirus </strong></h2>
 
 <p>When you’re ready to take the next step and purchase burial insurance coverage amid coronavirus, we advise you to shop around. Take your time and compare dozens of different insurance companies for pricing. Choose the one that offers first-day coverage with the lowest rate. </p>
 
@@ -377,7 +377,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Work with an experienced independent insurance agency like Final Expense Guy. Instead of having to call multiple companies yourself, let us help you through the process. <strong>Working with us is like contacting 40 companies all at once.</strong> It is the quickest way to be the lowest rate on burial insurance.<br></p>
 
-<h2 id="keeping-healthy"><strong>How To Keep Healthy During The Pandemic</strong></h2>
+<h2 id="keeping-healthy"><strong>How to keep healthy during the pandemic</strong></h2>
 
 <p>1. Keep your regular routines such as meal times, sleeping, and other daily activities. Do not let the pandemic disrupt your daily schedule.</p>
 
@@ -399,7 +399,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>10. Seek psychosocial support if fear, sadness, or worry gets into your daily activities for several days. There are support services that can help you in your community.<br></p>
 
-<h2 id="what-to-do-if-you-have-covid"><strong>What To Do If You Have Covid-19 Or Were Exposed To Covid-19</strong></h2>
+<h2 id="what-to-do-if-you-have-covid"><strong>What to do if you have COVID-19 or were exposed to COVID-19</strong></h2>
 
 <p>If you have coronavirus symptoms such as fever, cough, shortness of breath, muscle pain, sore throat, headache, chills, repeated shaking with chills, and loss of taste or smell, get in touch with your healthcare provider 24 hours.</p>
 
@@ -415,7 +415,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Contact your primary health care worker and tell them your symptoms if you live alone. Ask your family, friends, neighbors, or a local volunteer organization to check on you regularly to provide support as needed.</p>
 
-<h2 id="fema-funeral-assistance"><br><strong>FEMA To Provide Funeral Assistance To Covid-19 Victims</strong></h2>
+<h2 id="fema-funeral-assistance"><br><strong>FEMA to provide funeral assistance to COVID-19 victims</strong></h2>
 
 <p>The Federal Emergency Management Agency (FEMA) announced on Tuesday through administrator Robert Fenton that the agency is starting to give funeral assistance to families of COVID-19 victims.</p>
 
@@ -458,7 +458,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Check<a href="https://www.fema.gov/disasters/coronavirus/economic/funeral-assistance" target="_blank" rel="noreferrer noopener"> FEMA’s website</a> for additional details on how to apply for funeral assistance.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you have coronavirus needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -474,7 +474,7 @@ decrease. Your beneficiaries will receive your 100% death benefit payout.</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I have had COVID-19?</strong></p>
 

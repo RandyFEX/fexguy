@@ -45,9 +45,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Family Benefit Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Family Benefit Life insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-family-benefit-life"><strong>What Are My Policy Options With Family Benefit Life?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-family-benefit-life"><strong>What are my policy options with Family Benefit Life?</strong></h3>
 
 <p>Family Benefit Life offers two final expense products. The Golden Eagle first-day coverage plan and their Golden Eagle graded death benefit plan.</p>
 
@@ -89,13 +89,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h3 id="h-how-is-family-benefit-life-insurance-good-for-seniors"><strong>How is Family Benefit Life insurance good for Seniors?</strong></h3>
+<h3 id="h-how-is-family-benefit-life-insurance-good-for-seniors"><strong>How is Family Benefit Life insurance good for seniors?</strong></h3>
 
 <p>Family Benefit Life is a brilliant choice for most people. Their underwriting is flexible, and their pricing is almost always the best value for most people.</p>
 
 <p>People with diabetes who started taking insulin after age 40 and with no insulin shock, diabetic coma, or diabetic amputation will qualify for first-day coverage.</p>
 
-<h3 id="h-does-family-benefit-life-have-any-hidden-fine-print-in-their-policy"><strong>Does Family Benefit Life Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3 id="h-does-family-benefit-life-have-any-hidden-fine-print-in-their-policy"><strong>Does Family Benefit Life have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>Family Benefit Life graded benefit plan has a sliding modal factor.</p>
 
@@ -105,7 +105,7 @@ sidebar: true
 
 <p>Family Benefit’s first-day coverage plan is incredible. Their graded plan is not one we recommend, as we have other companies that are often a better fit than a graded plan.</p>
 
-<h2 id="what-are-the-pros-&-cons"><strong>What Are The Pros &amp; Cons Of Family Benefit Life Insurance?</strong></h2>
+<h2 id="what-are-the-pros-&-cons"><strong>What are the pros &amp; cons of Family Benefit Life insurance?</strong></h2>
 
 <p><strong>PROS</strong></p>
 
@@ -128,26 +128,26 @@ sidebar: true
 <li>Family Benefit Life has a height &amp; weight chart. Overweight or obese may not qualify</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Family Benefit Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Family Benefit Life insurance?</strong></h2>
 
-<h3><strong>Family Benefit Life Riders</strong></h3>
+<h3><strong>Family Benefit Life riders</strong></h3>
 
 <ul>
 <li><strong>100% Accelerated Living Benefit</strong><sup><sup>1</sup></sup>: “Benefits may be accelerated if the insured is diagnosed with a terminal illness that, with reasonable medical certainty, will result in the death of the Insured in 12 months or less.”</li>
 <li><strong>Nursing Home Confinement</strong><sup>1</sup>: “Benefits may also be accelerated if the Insured is confined continuously to a Qualified Nursing Home, with confinement expected to continue until the Insured’s death. Nursing Home confinement must begin after the effective date of this policy.”</li>
 </ul>
 
-<h3><strong>Family Benefit Life Other Benefits</strong></h3>
+<h3><strong>Family Benefit Life other benefits</strong></h3>
 
 <ul>
 <li><strong>Policy Loans: </strong>“You can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.”</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved?</strong></h2>
 
 <p>Family Benefit Life’s 1st-day coverage life insurance application will ask if you’ve ever had some health issue or had other health issues in the last 6, 12, or 24 months.</p>
 
-<h3 id="h-what-are-family-benefit-life-s-application-questions"><strong>What Are Family Benefit Life’s Application Questions?</strong></h3>
+<h3 id="h-what-are-family-benefit-life-s-application-questions"><strong>What are Family Benefit Life’s application questions?</strong></h3>
 
 <p>The health questions are the most important part of Family Benefit Life Insurance underwriting.</p>
 
@@ -174,13 +174,13 @@ sidebar: true
 <li>Have you ever been diagnosed as having: multiple sclerosis, epilepsy, schizophrenia, Parkinson’s, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure or lung impairments (including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema or fibrosis).</li>
 </ol>
 
-<h3 id="h-does-family-benefit-life-have-the-same-day-approval-process"><strong>Does Family Benefit Life Have The Same Day Approval Process?</strong></h3>
+<h3 id="h-does-family-benefit-life-have-the-same-day-approval-process"><strong>Does Family Benefit Life have the same day approval process?</strong></h3>
 
 <p>Family Benefit Life offers a simple <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> where you can apply over the phone with an agent at Final Expense.</p>
 
 <p>We can generally get you approved within 15 minutes over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get life insurance pricing?</strong></h2>
 
 <p>Family Benefit Life rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -342,9 +342,9 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Family Benefit Life Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Family Benefit Life company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Family Benefit Life’s Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s operational history</strong></h3>
 
 <p>Family Benefit Life Insurance Company is owned and operated by its parent company First Trinity Financial Corporation, based in Tulsa, Oklahoma.  </p>
 
@@ -352,25 +352,25 @@ sidebar: true
 
 <p>Alabama, Arizona, Arkansas, Colorado, Georgia, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, South Dakota, Tennessee, Texas, Utah, Virginia, and West Virginia.</p>
 
-<h4>Company Address</h4>
+<h4>Company address</h4>
 
 <p>7633 East 63rd Pl.<br>Suite 230<br>Tulsa, OK, 74133</p>
 
-<h4>Contact Info</h4>
+<h4>Contact info</h4>
 
 <p>Website: www.familybenefit.com<br>Phone: (918) 249-2438<br>Customer Service: (866) 211-0811</p>
 
-<h3 id="Financial-Rating"><strong>What Is Family Benefit Life’s Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s financial rating?</strong></h3>
 
 <p>Family Benefit Life has an A+ (excellent) rating from <a href="https://www.bbb.org/us/ok/tulsa/profile/holding-company/first-trinity-financial-corporation-1025-20000887" target="_blank" rel="noreferrer noopener nofollow">Better Business Bureau</a>. This rating shows the company’s excellent customer service and ability to pay claims.</p>
 
-<h3><strong>Does Family Benefit Life Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Family Benefit Life have any consumer complaints?</strong></h3>
 
 <p>Family Benefit Life Insurance has no complaints listed on the National Association of Insurance Commissioners (<a href="https://content.naic.org/" target="_blank" rel="noreferrer noopener">NAIC</a>).</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying life insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s sales process?</strong></h3>
 
 <p>Final Expense Guy can sell all Family Benefit Life products in every state they offer insurance products.</p>
 
@@ -382,7 +382,7 @@ sidebar: true
 
 <p>With a graded benefit plan, you will still receive 50% of the death benefit if you die during the first two years of the policy. We don’t recommend their graded plan in most cases.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-family-benefit-life"><strong>Are Any Health Conditions Not Accepted By Family Benefit Life?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-family-benefit-life"><strong>Are any health conditions not accepted by Family Benefit Life?</strong></h3>
 
 <p>They do not accept these health issues for Golden Eagle’s first-day coverage plan:</p>
 
@@ -405,7 +405,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Family Benefit Life’s pricing compares to other companies.</p>
 
@@ -416,7 +416,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Family Benefit Life?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Family Benefit Life?</strong></h2>
 
 <details>
 <summary><b>Who owns Family Benefit Life Insurance?</b></summary>

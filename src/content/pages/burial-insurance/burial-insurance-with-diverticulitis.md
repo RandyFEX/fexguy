@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-for-people-with-diverticulitis"><strong><strong>What Is My Best Insurance Option If I Have A History Of Diverticulitis? </strong></strong></h2>
+<h2 id="best-option-for-people-with-diverticulitis"><strong><strong>What is my best insurance option if I have a history of diverticulitis? </strong></strong></h2>
 
 <p>Most life insurance companies are not concerned with diverticulitis. In fact, they don’t ask about it in the health questionnaire. Their lenient underwriting allows people with diverticulitis to qualify for level death benefit with first-day coverage and no waiting period. This plan also has the lowest pricing the company will offer.</p>
 
@@ -89,7 +89,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p><strong>Best Option:</strong>&#160;Level death benefit plan with first-day coverage</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -128,7 +128,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -177,7 +177,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 </tbody>
 </table>
 
-<h2 id="do-you-need-a-medical-exam"><br><strong>If I Have Diverticulitis, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-you-need-a-medical-exam"><br><strong>If I have diverticulitis, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with diverticulitis.</p>
 
@@ -185,7 +185,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-diverticulitis"><br><strong><strong>Burial Insurance Underwriting If You Have Diverticulitis</strong></strong></h2>
+<h2 id="insurance-underwriting-for-diverticulitis"><br><strong><strong>Burial insurance underwriting if you have diverticulitis</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -224,7 +224,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>If you take one or more of these <a href="https://www.medscape.com/answers/173388-20419/which-medications-are-used-to-treat-diverticulitis" target="_blank" rel="noreferrer noopener">drugs</a> when you apply for burial insurance with diverticulitis, you need not worry because all these meds could be insurable. Taking these drugs for diverticulitis won’t prevent you from obtaining the best insurance policy.</p>
 
-<h2 id="how-much-insurance-do-i-need"><br><strong>How Much Insurance Do I Need If I Have Diverticulitis?</strong></h2>
+<h2 id="how-much-insurance-do-i-need"><br><strong>How much insurance do I need if I have diverticulitis?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -332,11 +332,11 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Diverticulitis And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Diverticulitis and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -361,7 +361,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 </tbody>
 </table>
 
-<h2 id="information-we-need"><br><strong>Information We Need If You Have Diverticulitis </strong></h2>
+<h2 id="information-we-need"><br><strong>Information we need if you have diverticulitis </strong></h2>
 
 <p>When you reach us regarding buying burial insurance with diverticulitis, we will ask you some health questions to better understand your current health condition. These questions may include:</p>
 
@@ -378,7 +378,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>Your answers will help us determine the type of final expense plan you will qualify for and provide you with an accurate quote.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -393,7 +393,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Diverticulitis</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with diverticulitis</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -412,7 +412,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you have diverticulitis needn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
 
@@ -424,7 +424,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if you have diverticulitis?</strong></p>
 

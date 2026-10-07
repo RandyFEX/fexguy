@@ -56,7 +56,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what’s-wrong-with-life-insurance-savings-group"><strong>What’s Wrong With The Final Expense Insurance Offered By Life Insurance Savings Group?</strong></h2>
+<h2 id="what’s-wrong-with-life-insurance-savings-group"><strong>What’s wrong with the final expense insurance offered by Life Insurance Savings Group?</strong></h2>
 
 <ol>
 <li><strong>They only sell one insurance product</strong> – Life Insurance Savings Group is only selling guaranteed acceptance life insurance. This limits your options, is massively more expensive, and doesn’t allow you to compare rates and coverage from different companies.</li>
@@ -66,7 +66,7 @@ sidebar: true
 <li><strong>Limited option</strong> – Life Insurance Savings Group only sell guaranteed acceptance plan from AIG. You have limited options and cannot compare rates or coverage from different companies.</li>
 </ol>
 
-<h2 id="what-is-life-insurance-savings-group"><br><strong>What Is Life Insurance Savings Group?</strong></h2>
+<h2 id="what-is-life-insurance-savings-group"><br><strong>What is Life Insurance Savings Group?</strong></h2>
 
 <p>Life Insurance Savings Group <strong>IS NOT</strong> an insurance company. Do not be misled by their TV commercials!</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>Life Insurance Savings Group is a marketing brand of SelectQuote life insurance agency.</p>
 
-<h2 id="why-we-don’t-recommend-it"><br><strong>Why We Don’t Recommend Life Insurance Savings Group Agency</strong></h2>
+<h2 id="why-we-don’t-recommend-it"><br><strong>Why we don’t recommend Life Insurance Savings Group agency</strong></h2>
 
 <p>Working with an independent life insurance agency like Final Expense Guy or Final EXpense Guy. that works with multiple 1st-day coverage insurance companies is always a wiser choice.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>Finally, an independent life insurance agency like Final Expense Guy or Final EXpense Guy. will work with you to find the best policy for your needs.</p>
 
-<h2 id="can-you-get-insurance-for-less-than-$1-a-day"><br><strong>Can You Really Get Insurance For Less Than $1 A Day?</strong></h2>
+<h2 id="can-you-get-insurance-for-less-than-$1-a-day"><br><strong>Can you really get insurance for less than $1 a day?</strong></h2>
 
 <p>While the Life Insurance Savings Group commercial says you can get insurance for less than $1 per day, this is rarely true…and it is stupid. </p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>Many consumers say their commercials are misleading because they do not mention that the price is for a limited amount of coverage and a 2-year waiting period plan.</p>
 
-<h2 id="life-insurance-savings-group-promise"><br><strong>What Does Life Insurance Savings Group Promise?</strong></h2>
+<h2 id="life-insurance-savings-group-promise"><br><strong>What does Life Insurance Savings Group promise?</strong></h2>
 
 <p><strong>Life Insurance Savings Group’s final expense insurance commercial promises these things:</strong></p>
 
@@ -110,7 +110,7 @@ sidebar: true
 
 <p>To be clear…if you die of a health or medical reason in the first two years, this policy from Life insurance Savings Group won’t even pay out one penny to your loved one! Rotten stuff, huh?</p>
 
-<h2 id="what-is-guaranteed-acceptance-life-insurance"><br><strong>What Is Guaranteed Acceptance Life Insurance?</strong></h2>
+<h2 id="what-is-guaranteed-acceptance-life-insurance"><br><strong>What is guaranteed acceptance life insurance?</strong></h2>
 
 <p>Guaranteed acceptance life insurance is a type of 2-year waiting period whole life insurance that does not require the policyholder to undergo a medical exam.</p>
 
@@ -118,7 +118,7 @@ sidebar: true
 
 <p>This is because the insurance company is taking on more risk by offering coverage to people without knowing the insured persons’ health status.</p>
 
-<h2 id="drawbacks-of-guaranteed-acceptance-insurance"><br><strong>What Are The Drawbacks Of Guaranteed Acceptance Life Insurance?</strong></h2>
+<h2 id="drawbacks-of-guaranteed-acceptance-insurance"><br><strong>What are the drawbacks of guaranteed acceptance life insurance?</strong></h2>
 
 <p>The biggest drawback of guaranteed acceptance life insurance is the mandatory two-year waiting period.</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>Another drawback of guaranteed acceptance life insurance is the <strong>HIGH PREMIUMS</strong>. Because the insurance company is taking on more risk by offering coverage without knowing your health status, the premiums are much higher than other types of life insurance.</p>
 
-<h2 id="dangers-of-buying-insurance-from-agency-selling-one-policy-only"><br><strong>What Are The Dangers Of Buying Life Insurance From An Agency Selling One Insurance Policy Only?</strong></h2>
+<h2 id="dangers-of-buying-insurance-from-agency-selling-one-policy-only"><br><strong>What are the dangers of buying life insurance from an agency selling one insurance policy only?</strong></h2>
 
 <p>Here is a copy of the disclaimer you can find at the end of the Life Insurance Savings Group television commercial:</p>
 
@@ -140,7 +140,7 @@ sidebar: true
 
 <p>The danger is that you will not be able to compare rates and policies from other companies to get the best deal possible. You will also be stuck with a policy that has a two-year waiting period before your beneficiaries can collect the death benefit. And, if you die within those first two years, you will not receive anything.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Final Expense Guy is an independent life insurance agency that offers various life insurance policies from different companies. We are not affiliated with Life Insurance Savings Group or any other marketing brand.&#160;</p>
 
@@ -156,16 +156,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a></div>

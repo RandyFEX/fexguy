@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2>AARP Burial Insurance Basics</h2>
+<h2>AARP burial insurance basics</h2>
 
 <p>Most seniors get easy approval for better insurance companies than AARP through my simple process that handles the hard work for your family.</p>
 
@@ -31,7 +31,7 @@ sidebar: true
 
 <p>You must be an AARP member to buy these policies, and that membership has a cost that adds to your total annual expenses. While New York Life is a financially strong “Field-Underwritten Carrier,” the products they funnel through AARP are often more restrictive and expensive than the individual policies I can find for you on the open market.</p>
 
-<h2>AARP AARP Underwriting &amp; Eligibility</h2>
+<h2>AARP AARP underwriting &amp; eligibility</h2>
 
 <p>AARP uses simplified and guaranteed underwriting to determine applicant eligibility.</p>
 
@@ -43,13 +43,13 @@ sidebar: true
 
 <p>Honestly, it just doesn’t make sense to subsidize the risk of the sickest people if you are in reasonable health.</p>
 
-<h2>AARP Policy Types &amp; Waiting Periods</h2>
+<h2>AARP policy types &amp; waiting periods</h2>
 
 <p>No waiting periods for 1st-day coverage policies offset high mortality risks, so you get lower rates, whereas waiting periods apply to guaranteed-issue policies to offset the risk of high mortality.</p>
 
 <p>AARP offers “Level Benefit” term and permanent plans that pay out immediately, but the term life coverage ends completely at age 80. If you are still alive on your 81st birthday, your family gets nothing. The Guaranteed Acceptance plan is a “Modified” benefit, meaning that if you die from natural causes within the first 24 months, your family receives only a return of premiums plus 10% interest.</p>
 
-<h3>Understanding AARP Policy Types</h3>
+<h3>Understanding AARP policy types</h3>
 
 <p>Carriers offer different plan categories based on an applicant’s health conditions and short- and long-term health stability.</p>
 
@@ -59,7 +59,7 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for causes of death related to health or medical conditions. (AARP Guaranteed Acceptance – NEVER recommended).</li>
 </ul>
 
-<h3>AARP Policy Payout Comparison</h3>
+<h3>AARP policy payout comparison</h3>
 
 <table>
 <thead>
@@ -92,13 +92,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>AARP Rate Analysis</h2>
+<h2>AARP rate analysis</h2>
 
 <p>Limited underwriting results in better pricing for healthy seniors, but a lack of underwriting results in much higher monthly premiums for everyone else.</p>
 
 <p>AARP rates vary widely by age and health status. Their term life is generally cheaper at younger ages, but because those premiums increase every 5 years, they can become unaffordable exactly when you need them most. If you buy a $10,000 policy at 65, don’t be surprised when the price jumps significantly at age 70 and 75.</p>
 
-<h3>AARP Monthly Rates for $10,000 Coverage</h3>
+<h3>AARP monthly rates for $10,000 coverage</h3>
 
 <table>
 <thead>
@@ -133,19 +133,19 @@ sidebar: true
 
 <p>The long-term value of first-day coverage is far stronger when you qualify. If your premium is $50 lower than a guaranteed issue plan, you save $600 per year and $6,000 over time. On a $10,000 policy, that difference alone can cover most of the benefit instead of wasting it on unnecessary premiums. A common misunderstanding is that “level benefit” means fixed rates for term; in reality, those term premiums increase with age, and the policy terminates at 80.</p>
 
-<h2>Financial Strength &amp; Consumer Trust</h2>
+<h2>Financial strength &amp; consumer trust</h2>
 
 <p>NAIC complaint data reflects consumer experience rather than financial solvency.</p>
 
 <p>AARP policies are backed by New York Life, which holds an A++ (Superior) rating from A.M. Best. They have an incredible ability to pay claims. However, consumer experience with the AARP-branded products can be mixed. Their NAIC Complaint Index for individual life is typically below 1.0 (national average), which is good, but many complaints stem from seniors being shocked when their term insurance expires at age 80 or when rates jump every five years.</p>
 
-<h2>Better Alternatives to AARP</h2>
+<h2>Better alternatives to AARP</h2>
 
 <p>Medically underwritten burial insurance provides lower rates and immediate coverage for qualified applicants.</p>
 
 <p>Final Expense Guy companies like Family Benefit Life, Trinity Life, Aflac, or CICA provide “Day 1” coverage for conditions that AARP may force into higher rates or a 2-year wait. For example, some health issues that AARP declines under its “Level” plan can be covered immediately elsewhere at a much lower price.</p>
 
-<h3>Comparison: AARP vs. Standard Level Benefit</h3>
+<h3>Comparison: AARP vs. standard level benefit</h3>
 
 <table>
 <thead>
@@ -179,7 +179,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Pros and Cons – AARP</h2>
+<h2>Pros and cons – AARP</h2>
 
 <p>Comparing AARP advantages and limitations helps seniors make informed decisions.</p>
 
@@ -194,7 +194,7 @@ sidebar: true
 
 <p>AARP is best for members who are already healthy enough to pass their questions but want the absolute simplest “no-exam” process, regardless of the extra cost.</p>
 
-<h2>Frequently Asked Questions: AARP Burial Insurance Review</h2>
+<h2>Frequently asked questions: AARP burial insurance review</h2>
 
 <h3>Is AARP burial insurance a permanent policy?</h3>
 

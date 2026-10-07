@@ -52,19 +52,19 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-fidelity-life-offer-first-day-coverage"><br><strong>Does Fidelity Life Offer First-day Coverage?</strong></h2>
+<h2 id="does-fidelity-life-offer-first-day-coverage"><br><strong>Does Fidelity Life offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, Fidelity Life has a burial insurance plan that offers first-day coverage, but they tend to be more expensive than other companies.    </p>
 
 <p>If you qualify, their RapiDecision final expense plan will cover you from day one. Once approved, the company will pay a 100%  death benefit when you pass away. </p>
 
-<h2 id="pros-of-fidelity-life-burial-insurance"><strong>Pros Of Fidelity Life Burial Insurance</strong></h2>
+<h2 id="pros-of-fidelity-life-burial-insurance"><strong>Pros of Fidelity Life burial insurance</strong></h2>
 
 <p><strong>Quick and easy application process</strong> – their electronic application system makes it faster to get coverage. </p>
 
 <p><strong>Higher coverage amount </strong>– you can buy up to $35,000 face amount</p>
 
-<h2 id="cons-of-fidelity-life-burial-insurance"><strong>Cons Of Fidelity Life Burial Insurance</strong></h2>
+<h2 id="cons-of-fidelity-life-burial-insurance"><strong>Cons of Fidelity Life burial insurance</strong></h2>
 
 <p><strong>Designed for people with minor health issues only</strong> – it is not suitable for applicants with significant medical conditions. </p>
 
@@ -72,7 +72,7 @@ sidebar: true
 
 <p><strong>RapiDecision guaranteed issue has a three-year waiting period</strong> – before the policy will pay for a natural cause of death. Most guaranteed issue plans have a two-year waiting period. </p>
 
-<h2 id="fidelity-life-burial-insurance-products"><br><strong>Fidelity Life Burial Insurance Products</strong></h2>
+<h2 id="fidelity-life-burial-insurance-products"><br><strong>Fidelity Life burial insurance products</strong></h2>
 
 <p>Fidelity Life offers two burial insurance options for 50 years or older applicants. </p>
 
@@ -143,7 +143,7 @@ EXPENSE</strong></p>
 
 <p>100% of the face amount is only paid for accidental death, even during the waiting period. In the 4th year and beyond, the full death benefit will be paid for all causes of death.</p>
 
-<h2 id="fidelity-life-burial-insurance-riders"><br><strong>Fidelity Life Burial Insurance Riders</strong></h2>
+<h2 id="fidelity-life-burial-insurance-riders"><br><strong>Fidelity Life burial insurance riders</strong></h2>
 
 <p>RapiDecision Final Expense comes with an Accelerated Death Benefit (ADB) at no additional cost. ADB advances a portion of the death benefit when you show proof that you have a life expectancy of 12 months or less. </p>
 
@@ -160,13 +160,13 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-does-fidelity-life-make-sense"><br><strong>When Does Fidelity Life Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-fidelity-life-make-sense"><br><strong>When does Fidelity Life burial insurance make the most sense?</strong></h2>
 
 <p>Buying Fidelity Life insurance makes the most sense if you can qualify for their final expense plan with first-day coverage. To qualify, you must be healthy or have minor health issues like high blood pressure or high cholesterol. </p>
 
 <p>Do not go through their guaranteed issue burial insurance; it is not worth your money because it has a three-year waiting period. Most companies offering guaranteed issue plan only come with a two-year waiting period.</p>
 
-<h2 id="fidelity-life-underwriting-guidelines"><br><strong>Fidelity Life Underwriting Guidelines</strong></h2>
+<h2 id="fidelity-life-underwriting-guidelines"><br><strong>Fidelity Life underwriting guidelines</strong></h2>
 
 <p>Applicants must answer NO to all the health questions on the application to qualify for first-day coverage. In addition to the application questions, the company checks the applicant’s pharmacy history, Medical Information Bureau file, Motor Vehicle Record, and the company’s build chart.&#160;</p>
 
@@ -206,7 +206,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><strong>If you answered YES to any of these health questions, the company would offer you a RapiDecision Guaranteed Issue plan.</strong></p>
 
-<h2 id="fidelity-life-pricing-examples"><br><strong>Fidelity Life Pricing Examples</strong></h2>
+<h2 id="fidelity-life-pricing-examples"><br><strong>Fidelity Life pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-110">
 <thead>
@@ -356,7 +356,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 </tbody>
 </table>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Fidelity Life Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for Fidelity Life burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -389,7 +389,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -457,7 +457,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 </tbody>
 </table>
 
-<h2 id="fidelity-life-company-overview"><br><strong>Fidelity Life Company Overview</strong> </h2>
+<h2 id="fidelity-life-company-overview"><br><strong>Fidelity Life company overview</strong> </h2>
 
 <p>Fidelity Life was founded in 1896. It is originally called <a href="https://www.fidelitylife.com/About/Company-History" target="_blank" rel="noreferrer noopener">Mystic Workers of the World</a>, a fraternal benefit society providing insurance coverage to active workforce members.&#160; In 1930, the company changed its name to Fidelity Life Association.</p>
 
@@ -473,7 +473,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p>The Better Business Bureau (BBB) gave Fidelity Life an “A” customer service rating.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you want Fidelity burial insurance needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -485,7 +485,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is Fidelity Life Insurance still in business?</strong></p>
 

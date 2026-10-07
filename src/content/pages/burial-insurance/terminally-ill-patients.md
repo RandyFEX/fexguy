@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-are-terminally-ill"><br><strong>What Is My Best Insurance Option If I’m A Terminally Ill Patient?</strong></h2>
+<h2 id="best-insurance-option-if-you-are-terminally-ill"><br><strong>What is my best insurance option if I’m a terminally ill patient?</strong></h2>
 
 <p>A <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> is a <a href="https://en.wikipedia.org/wiki/Terminal_illness" target="_blank" rel="noreferrer noopener">progressive disease</a> that is expected to end a person’s life within 12-24 months because the disease has no known cure or has progressed to the point where it can’t be cured.</p>
 
@@ -93,7 +93,7 @@ sidebar: true
 
 <p>Many forms of cancer are highly treatable, and patients can experience complete remission. But, late-stage cancer is a terminal condition that may progress quickly, and the period of time between diagnosis and death may be from a few weeks to a few months.</p>
 
-<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why We Don’t Recommend Guaranteed Issue Burial Insurance For Terminally Ill Patients?</strong></h2>
+<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why we don’t recommend guaranteed issue burial insurance for terminally ill patients?</strong></h2>
 
 <p><strong>1.</strong> <strong>2-Year Waiting Period</strong></p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance coverage maxes out at $25,000. That’s the highest coverage you can buy. If you’re planning to buy a life insurance policy to pay off your mortgage or pay for your children’s college education, this plan will not work for you.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -154,7 +154,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -203,7 +203,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for terminally ill patients.</p>
 
@@ -211,7 +211,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-terminally-ill"><br><strong>Burial Insurance Underwriting If You’re A Terminally Ill Patient</strong></h2>
+<h2 id="insurance-underwriting-for-terminally-ill"><br><strong>Burial insurance underwriting if you’re a terminally ill patient</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -231,7 +231,7 @@ sidebar: true
 
 <p>If you have a terminal illness, you will only qualify for a no health questions guaranteed issue burial insurance.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I’m A Terminally Ill Patient?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I’m a terminally ill patient?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -339,11 +339,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="terminally-ill-and-burial-insurance-riders"><br><strong>Terminally Ill Patients And Burial Insurance Riders</strong></h2>
+<h2 id="terminally-ill-and-burial-insurance-riders"><br><strong>Terminally ill patients and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -352,7 +352,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="non-burial-insurance-options-for-terminally-ill"><br><strong>Non-burial Insurance Options For Terminally Ill Patients</strong></h2>
+<h2 id="non-burial-insurance-options-for-terminally-ill"><br><strong>Non-burial insurance options for terminally ill patients</strong></h2>
 
 <p>Insurance is about risk management; insurance companies see terminal illness life insurance as a poor business decision.</p>
 
@@ -384,7 +384,7 @@ sidebar: true
 
 <p>Since most people ages 50-85 are on fixed or limited incomes, starting a POD account is difficult, if not impossible, for the people I help daily.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -399,7 +399,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Terminally Ill Patients</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for terminally ill patients</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -417,7 +417,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="when-is-the-best-time-to-buy-burial-insurance"><br><strong>When Is The Best Time To Buy Burial Insurance?</strong></h2>
+<h2 id="when-is-the-best-time-to-buy-burial-insurance"><br><strong>When is the best time to buy burial insurance?</strong></h2>
 
 <p>The best time to get life insurance is before you are sick or ill, as your health is a determining factor for insurability from first-day coverage companies.</p>
 
@@ -427,7 +427,7 @@ sidebar: true
 
 <p>Buy it when you are healthier rather than with significant health problems. The healthier you are, the lower your premiums will be.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Trying to find life insurance when you or a loved one has a terminal illness is a losing proposition. Chances are you just waited too long to take care of something you knew would happen someday.&#160;</p>
 

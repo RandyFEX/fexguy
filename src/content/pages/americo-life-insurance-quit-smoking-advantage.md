@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT AMERICO’S QUIT SMOKING ADVANTAGE ACTUALLY IS</strong></h2>
+<h2><strong>What Americo’s quit smoking advantage actually is</strong></h2>
 
 <p>Americo sells this plan as if it’s a reward for smokers who want to quit. The marketing sounds helpful, but it rarely proves useful in the long run.</p>
 
@@ -94,7 +94,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>AMERICO’S COMPANY STRUCTURE AND HISTORY</strong></h2>
+<h2><strong>Americo’s company structure and history</strong></h2>
 
 <p>Americo Financial Life and Annuity Insurance Company is part of Americo Life, Inc., a privately held group based in Kansas City, Missouri.</p>
 
@@ -116,7 +116,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW THE “QUIT SMOKING ADVANTAGE” PLAN REALLY WORKS</strong></h2>
+<h2><strong>How the “quit smoking advantage” plan really works</strong></h2>
 
 <p>Americo calls this program an “advantage” for smokers, but the advantage seems only to go one way… toward Americo.</p>
 
@@ -191,7 +191,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY IT’S ONE OF THE WORST FINAL EXPENSE POLICIES ON THE MARKET</strong></h2>
+<h2><strong>Why it’s one of the worst final expense policies on the market</strong></h2>
 
 <p>The Quit Smoking Advantage sounds innovative until you compare it to the basics of good insurance. A real policy gives you 100% certainty. This one creates 100% uncertainty for a full three years.</p>
 
@@ -201,7 +201,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WAITING PERIODS, FINE PRINT, AND UNDERWRITING RISKS</strong></h2>
+<h2><strong>Waiting periods, fine print, and underwriting risks</strong></h2>
 
 <p>Americo labels this plan as “simplified issue,” but the fine print often tells a different story.</p>
 
@@ -269,7 +269,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT REGULATORS AND CONSUMER WATCHDOGS SAY</strong></h2>
+<h2><strong>What regulators and consumer watchdogs say</strong></h2>
 
 <p>According to the National Association of Insurance Commissioners (NAIC), Americo’s complaint ratio has often been higher than the national average. That means more policyholders report problems for every policy sold.</p>
 
@@ -283,7 +283,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>AMERICO’S HISTORY OF CONSUMER COMPLAINTS AND MISLEADING MARKETING</strong></h2>
+<h2><strong>Americo’s history of consumer complaints and misleading marketing</strong></h2>
 
 <p>Many seniors would say that Americo’s sales approach depends on optimistic language and selective detail.</p>
 
@@ -301,7 +301,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO THIS POLICY ACTUALLY BENEFITS (AND WHO IT HURTS)</strong></h2>
+<h2><strong>Who this policy actually benefits (and who it hurts)</strong></h2>
 
 <p>Many consumers would say the Quit Smoking Advantage plan benefits only one group: Americo.</p>
 
@@ -315,7 +315,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>CONSUMER PROTECTION: HOW TO SPOT GIMMICK POLICIES LIKE THIS</strong></h2>
+<h2><strong>Consumer protection: how to spot gimmick policies like this</strong></h2>
 
 <p>You can avoid 90 percent of bad insurance policies by recognizing the patterns.</p>
 
@@ -349,7 +349,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FIRST-DAY COVERAGE VS. AMERICO’S GIMMICKS</strong></h2>
+<h2><strong>First-day coverage vs. Americo’s gimmicks</strong></h2>
 
 <p>The easiest way to see how bad the Quit Smoking Advantage really is is to compare it to the kind of coverage most people actually want.</p>
 
@@ -416,7 +416,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER ALTERNATIVES TO AMERICO’S QUIT SMOKING ADVANTAGE</strong></h2>
+<h2><strong>Better alternatives to Americo’s quit smoking advantage</strong></h2>
 
 <p>If you smoke or have recently quit, there are far better ways to get coverage without being punished for trying to improve your health. The strongest companies in the final expense market all offer smoker and non-smoker plans with no requalification period.</p>
 
@@ -430,7 +430,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINAL VERDICT: AMERICO’S QUIT SMOKING ADVANTAGE IS A BAD DEAL</strong></h2>
+<h2><strong>Final verdict: Americo’s quit smoking advantage is a bad deal</strong></h2>
 
 <p>Americo’s Quit Smoking Advantage is a perfect example of a product that sounds helpful but punishes the very people it claims to reward.</p>
 
@@ -450,7 +450,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: AMERICO LIFE INSURANCE</strong></h2>
+<h2><strong>Frequently asked questions: Americo life insurance</strong></h2>
 
 <p><strong>Is Americo a real life insurance company?</strong></p>
 

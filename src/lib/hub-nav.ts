@@ -40,7 +40,7 @@ function burialGuides(): string {
       `</section>`,
   ).join('');
   return (
-    heading('burial-insurance-guides', 'Burial Insurance Guides') +
+    heading('burial-insurance-guides', 'Burial insurance guides') +
     `<div class="hubnav" data-pagefind-ignore><div class="hubnav-cards">${cards}</div></div>`
   );
 }
@@ -62,11 +62,11 @@ function azHealth(): string {
       `<h3 class="hubnav-group__title" id="${g.id}">${esc(g.title)}</h3>${list(g.links, 'hubnav-grid')}</section>`,
   ).join('');
   return (
-    heading('browse-by-category', 'Browse by Category') +
+    heading('browse-by-category', 'Browse by category') +
     `<div class="hubnav" data-pagefind-ignore>${list(HEALTH_CATEGORIES, 'hubnav-tiles')}</div>` +
-    heading('common-conditions', 'Common Conditions') +
+    heading('common-conditions', 'Common conditions') +
     `<div class="hubnav" data-pagefind-ignore>${list(COMMON_CONDITIONS, 'hubnav-grid')}</div>` +
-    heading('more-conditions', 'More Conditions') +
+    heading('more-conditions', 'More conditions') +
     `<div class="hubnav" data-pagefind-ignore>${groups}</div>`
   );
 }
@@ -103,7 +103,7 @@ function azCompanies(): string {
     }
     return `<section class="hubnav-group" aria-labelledby="${g.id}"><h3 class="hubnav-group__title" id="${g.id}">${esc(g.title)}</h3>${body}</section>`;
   }).join('');
-  return heading('company-reviews-a-z', 'Company Reviews A to Z') + `<div class="hubnav" data-pagefind-ignore>${groups}</div>`;
+  return heading('company-reviews-a-z', 'Company reviews A to Z') + `<div class="hubnav" data-pagefind-ignore>${groups}</div>`;
 }
 
 const BUILDERS: Record<string, () => string> = {

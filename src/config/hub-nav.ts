@@ -36,7 +36,7 @@ export interface GuideCluster {
 export const BURIAL_GUIDES: GuideCluster[] = [
   {
     id: 'guides-basics',
-    title: 'Burial Insurance Basics',
+    title: 'Burial insurance basics',
     primary: { href: '/what-is-burial-insurance/', label: 'What is Burial Insurance?' },
     supporting: [
       { href: '/final-expense-life-insurance-complete-guide/', label: 'Final Expense Whole Life Insurance Complete Guide' },
@@ -55,7 +55,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-cost',
-    title: 'Cost and Affordability',
+    title: 'Cost and affordability',
     primary: { href: '/how-much-does-final-expense-insurance-cost/', label: 'How Much Does Final Expense Insurance Cost?' },
     supporting: [
       { href: '/how-much-burial-insurance-do-i-need/', label: 'How Much Burial Insurance Do I Need?' },
@@ -69,7 +69,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-coverage',
-    title: 'Coverage Types and Waiting Periods',
+    title: 'Coverage types and waiting periods',
     primary: { href: '/burial-insurance/with-first-day-coverage/', label: 'Burial Insurance with First-day Coverage' },
     supporting: [
       { href: '/burial-insurance/life-insurance-with-no-waiting-period/', label: 'Life Insurance With No Waiting Period' },
@@ -85,7 +85,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-qualifying',
-    title: 'Qualifying, Applying and Choosing a Company',
+    title: 'Qualifying, applying and choosing a company',
     primary: { href: '/final-expense-life-insurance-pre-existing-conditions/', label: 'Final Expense Life Insurance For People With Pre-Existing Conditions' },
     supporting: [
       { href: '/burial-insurance/top-10-final-expense-life-insurance-companies/', label: 'Top 10 Final Expense Life Insurance Companies' },
@@ -104,7 +104,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-age',
-    title: 'Coverage by Age and Life Stage',
+    title: 'Coverage by age and life stage',
     primary: { href: '/burial-insurance/for-seniors/', label: 'Burial Policies for Seniors' },
     supporting: [
       { href: '/burial-insurance/over-70/', label: 'Burial Insurance Over 70 – What You Need To Know' },
@@ -120,7 +120,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-family',
-    title: 'Buying for a Family Member',
+    title: 'Buying for a family member',
     primary: { href: '/burial-insurance/on-someone-else/', label: 'Buying Burial Insurance on Someone Else' },
     supporting: [{ href: '/burial-insurance/parents/', label: 'Burial Insurance for Parents' }],
     more: [
@@ -131,7 +131,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-groups',
-    title: 'Veterans, Groups and Communities',
+    title: 'Veterans, groups and communities',
     primary: { href: '/burial-insurance/veterans/', label: 'Burial Insurance for Veterans' },
     supporting: [
       { href: '/american-legion-life-insurance/', label: 'American Legion Member Life Insurance Options' },
@@ -147,7 +147,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
   },
   {
     id: 'guides-medicaid',
-    title: 'Medicaid, Rules and Scams',
+    title: 'Medicaid, rules and scams',
     primary: { href: '/final-expense-life-insurance-medicaid/', label: 'Final Expense Insurance And Medicaid' },
     supporting: [
       { href: '/burial-insurance/scams/', label: 'Burial Insurance Scams' },
@@ -194,7 +194,7 @@ export const COMMON_CONDITIONS: HubLink[] = [
 export const MORE_CONDITIONS: { id: string; title: string; links: HubLink[] }[] = [
   {
     id: 'more-substance-tobacco-weight',
-    title: 'Substance Use, Tobacco and Weight',
+    title: 'Substance use, tobacco and weight',
     links: [
       { href: '/burial-insurance/drug-alcohol-abuse/', label: 'Drug or Alcohol Abuse' },
       { href: '/burial-insurance/alcohol-or-drug-abuse/', label: 'Alcohol or Drug Abuse' },
@@ -209,7 +209,7 @@ export const MORE_CONDITIONS: { id: string; title: string; links: HubLink[] }[] 
   },
   {
     id: 'more-hospital-hospice-terminal',
-    title: 'Hospital, Hospice and Terminal Illness',
+    title: 'Hospital, hospice and terminal illness',
     links: [
       { href: '/burial-insurance/hospitalized/', label: 'Hospitalized' },
       { href: '/burial-insurance/nursing-home-residents/', label: 'Nursing Home Residents' },
@@ -220,7 +220,7 @@ export const MORE_CONDITIONS: { id: string; title: string; links: HubLink[] }[] 
   },
   {
     id: 'more-immune-digestive-blood-other',
-    title: 'Immune, Digestive, Blood and Other',
+    title: 'Immune, digestive, blood and other',
     links: [
       { href: '/burial-insurance/aids-hiv/', label: 'AIDS or HIV' },
       { href: '/life-insurance-for-hiv-positive/', label: 'HIV Positive' },
@@ -242,7 +242,7 @@ export const MORE_CONDITIONS: { id: string; title: string; links: HubLink[] }[] 
  * category). Mental Health already links all of its conditions. */
 export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> = {
   '/burial-insurance/heart-conditions/': {
-    title: 'More in Heart and Circulatory',
+    title: 'More in heart and circulatory',
     links: [
       { href: '/burial-insurance/arrhythmia/', label: 'Arrhythmia' },
       { href: '/burial-insurance/blood-clot/', label: 'Blood Clot' },
@@ -259,7 +259,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/cancer/': {
-    title: 'More in Cancer',
+    title: 'More in cancer',
     links: [
       { href: '/burial-insurance/leukemia/', label: 'Burial Insurance with Leukemia' },
       { href: '/burial-insurance-breast-cancer/', label: 'Burial Insurance After Breast Cancer' },
@@ -269,7 +269,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/diabetes/': {
-    title: 'More in Diabetes',
+    title: 'More in diabetes',
     links: [
       { href: '/burial-insurance-diabetic-complications/', label: 'Diabetic Complications' },
       { href: '/burial-insurance/insulin-diabetics/', label: 'Insulin Dependent Diabetics' },
@@ -277,7 +277,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/respiratory-lung-conditions/': {
-    title: 'More in Lung and Respiratory',
+    title: 'More in lung and respiratory',
     links: [
       { href: '/burial-insurance/lung-disease/', label: 'Lung Disease' },
       { href: '/burial-insurance/sarcoidosis/', label: 'Sarcoidosis' },
@@ -285,7 +285,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/neurological-disorders/': {
-    title: 'More in Brain and Nervous System',
+    title: 'More in brain and nervous system',
     links: [
       { href: '/burial-insurance/muscular-dystrophy/', label: 'Muscular Dystrophy' },
       { href: '/burial-insurance/prion-disease/', label: 'Prion Disease' },
@@ -293,7 +293,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/kidney-disease/': {
-    title: 'More in Kidney',
+    title: 'More in kidney',
     links: [
       { href: '/burial-insurance-kidney-failure/', label: 'Kidney Failure' },
       { href: '/burial-insurance/dialysis-patients/', label: 'Dialysis Patients' },
@@ -301,7 +301,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/liver-disease/': {
-    title: 'More in Liver',
+    title: 'More in liver',
     links: [
       { href: '/burial-insurance/liver-disease-liver-disorder/', label: 'Liver Disease or Liver Disorder' },
       { href: '/burial-insurance/cirrhosis/', label: 'Liver Cirrhosis' },
@@ -311,7 +311,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
     ],
   },
   '/burial-insurance/adl-activities-of-daily-living/': {
-    title: 'More in Daily Living and Disability',
+    title: 'More in daily living and disability',
     links: [
       { href: '/burial-insurance/bathing-disability-adl/', label: 'Help with Bathing' },
       { href: '/burial-insurance/continence-activities-of-daily-living-adl/', label: 'Help with Continence' },
@@ -335,7 +335,7 @@ export const CATEGORY_MORE: Record<string, { title: string; links: HubLink[] }> 
 export const COMPANY_GROUPS: { id: string; title: string; byLetter: boolean; entries: CompanyEntry[] }[] = [
   {
     id: 'reviews-carriers',
-    title: 'Insurance Carriers',
+    title: 'Insurance carriers',
     byLetter: true,
     entries: [
       { href: '/aetna-burial-insurance-review/', label: 'Aetna' },
@@ -375,7 +375,7 @@ export const COMPANY_GROUPS: { id: string; title: string; byLetter: boolean; ent
   },
   {
     id: 'reviews-programs',
-    title: 'Associations, Programs and Agencies',
+    title: 'Associations, programs and agencies',
     byLetter: false,
     entries: [
       {
@@ -392,7 +392,7 @@ export const COMPANY_GROUPS: { id: string; title: string; byLetter: boolean; ent
   },
   {
     id: 'reviews-marketing',
-    title: 'Marketing Brands and Lead-Generation Sites',
+    title: 'Marketing brands and lead-generation sites',
     byLetter: false,
     entries: [
       { href: '/big-lou-term-life-insurance-review/', label: 'Big Lou' },

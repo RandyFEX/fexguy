@@ -26,7 +26,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW AN IUL ACTUALLY WORKS</strong></h2>
+<h2><strong>How an IUL actually works</strong></h2>
 
 <p>Every premium dollar you pay into an IUL gets divided before it ever has a chance to grow.</p>
 
@@ -73,7 +73,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO REGULATES IUL SALES AND WHY THAT MATTERS</strong></h2>
+<h2><strong>Who regulates IUL sales and why that matters</strong></h2>
 
 <p>Indexed Universal Life insurance falls under the supervision of each state’s Department of Insurance, not the federal government. That means oversight varies widely by state.</p>
 
@@ -91,7 +91,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY TEACHER IUL PRESENTATIONS CAN BE MISLEADING</strong></h2>
+<h2><strong>Why teacher IUL presentations can be misleading</strong></h2>
 
 <p>Agents promoting IULs in schools rarely introduce themselves as salespeople.</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW IUL COSTS ERODE VALUE OVER TIME</strong></h2>
+<h2><strong>How IUL costs erode value over time</strong></h2>
 
 <p>An IUL’s cash value isn’t destroyed by market loss; it’s often eaten alive by fees.</p>
 
@@ -171,7 +171,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE TRUTH ABOUT “TAX-FREE RETIREMENT” CLAIMS FOR TEACHERS</strong></h2>
+<h2><strong>The truth about “tax-free retirement” claims for teachers</strong></h2>
 
 <p>Every IUL advertisement eventually seems to mention “tax-free income.”</p>
 
@@ -197,7 +197,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY IULS ARE A BAD FIT FOR TEACHERS</strong></h2>
+<h2><strong>Why IULs are a bad fit for teachers</strong></h2>
 
 <p>IULs are designed for individuals with high incomes who can afford to overfund them on an annual basis.</p>
 
@@ -219,7 +219,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON IUL MARKETING TRAPS TO AVOID</strong></h2>
+<h2><strong>Common IUL marketing traps to avoid</strong></h2>
 
 <p>Agents use the same handful of lines repeatedly because they are effective.</p>
 
@@ -261,7 +261,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>IUL VS WHOLE LIFE VS FINAL EXPENSE LIFE INSURANCE</strong></h2>
+<h2><strong>IUL vs whole life vs final expense life insurance</strong></h2>
 
 <p><strong>It helps to see the contrast side by side.</strong></p>
 
@@ -312,7 +312,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT HAPPENS WHEN AN IUL LAPSES OR UNDERPERFORMS</strong></h2>
+<h2><strong>What happens when an IUL lapses or underperforms</strong></h2>
 
 <p>When an IUL collapses, it doesn’t fade quietly. It often blindsides most policyholders.<br>That’s because the agent who sold you the policy only gets paid once (when they sell you the policy,) so there is no incentive for them to do yearly policy reviews for the rest of your life.</p>
 
@@ -363,7 +363,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT TO ASK BEFORE BUYING AN IUL</strong></h2>
+<h2><strong>What to ask before buying an IUL</strong></h2>
 
 <p>Every teacher considering an IUL should ask a few direct questions before signing anything.</p>
 
@@ -383,7 +383,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER ALTERNATIVES FOR EDUCATORS</strong></h2>
+<h2><strong>Better alternatives for educators</strong></h2>
 
 <p>For teachers seeking genuine protection, my job is straightforward: I compare every top company in the country and match you with the one that best suits your age, income, and coverage needs.</p>
 
@@ -409,7 +409,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: IUL FOR TEACHERS</strong></h2>
+<h2><strong>Frequently asked questions: IUL for teachers</strong></h2>
 
 <p><strong>What is indexed universal life for teachers?</strong></p>
 

@@ -46,7 +46,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-cash-value-life-insurance"><br><strong>What Is Cash Value Life Insurance?</strong></h2>
+<h2 id="what-is-cash-value-life-insurance"><br><strong>What is cash value life insurance?</strong></h2>
 
 <p>Permanent life insurance policies are also called cash value life insurance. Unlike <a href="/term-life-conversion-to-whole-life/" target="_blank" rel="noreferrer noopener">term life insurance</a> which only pays the death benefit during the policy term, permanent life insurance pays out the benefit no matter when you die.</p>
 
@@ -69,7 +69,7 @@ sidebar: true
 <li>Surrender the policy and receive the accrued cash value.</li>
 </ul>
 
-<h2 id="can-you-borrow-against-cash-value"><br><strong>Can You Borrow Against Cash Value?</strong></h2>
+<h2 id="can-you-borrow-against-cash-value"><br><strong>Can you borrow against cash value?</strong></h2>
 
 <p>Each time you make premium payments for a permanent policy such as whole life, <a href="https://lifewealthwin.com/guaranteed-universal-life-insurance/" target="_blank" rel="noreferrer noopener">universal</a>, or variable that has a cash value, part of the premium is put towards the cash value. The cash value accumulates at an interest rate set by the policy’s term.</p>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <p>While the insurance carrier may limit the amount you can borrow up to a certain percentage, usually 90% of the policy’s cash value – most carriers will allow you to borrow the full amount. As with any other kind of loan, cash value loans require repayment according to the standard interest rate and the full amount you borrow.</p>
 
-<h2 id="how-life-insurance-policy-loan-works"><br><strong>How Life Insurance Policy Loan Works</strong></h2>
+<h2 id="how-life-insurance-policy-loan-works"><br><strong>How life insurance policy loan works</strong></h2>
 
 <p>Monthly premium payments in a permanent life insurance policy change over time. You pay more during the first 10 to 15 years – you are technically overpaying for the policy – and then, as the years go by, premium amounts start to decline. This method creates cash value and keeps the premium payments at the same price as you age.</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <p>Just be mindful of the loan amount and the interest, or you will have negative equity. If you do not pay the loan, the insurance company will deduct the outstanding balance from the policy’s death benefit amount when you die.</p>
 
-<h2 id="how-much-can-you-borrow-against-cash-value"><br><strong>How Much Can You Borrow Against Cash Value?</strong></h2>
+<h2 id="how-much-can-you-borrow-against-cash-value"><br><strong>How much can you borrow against cash value?</strong></h2>
 
 <p>The amount you can borrow from the life insurance policy varies by the insurance carrier, but the maximum amount of loan you can get is typically at least 90% of your cash value. There is no minimum amount you can borrow.</p>
 
@@ -109,7 +109,7 @@ sidebar: true
 
 <p>If you get a policy loan, you must pay the interest whenever possible and carefully monitor the outstanding loan compared with the cash value to maintain your coverage.</p>
 
-<h2 id="borrowing-against-cash-value-pros"><br><strong>Borrowing Against Cash Value Pros</strong></h2>
+<h2 id="borrowing-against-cash-value-pros"><br><strong>Borrowing against cash value pros</strong></h2>
 
 <p>These are the advantages of a life insurance policy loan:</p>
 
@@ -147,7 +147,7 @@ sidebar: true
 
 <p>Typically the IRS will never know that you borrowed from your cash value.&#160; <strong>They never track your loan from the insurance company because it</strong> is not considered an income in most situations. It’s like taking a second mortgage or line of credit for a rental property. Your loan does not affect your credit because banks and credit reporting agencies do not track it.</p>
 
-<h2 id="borrowing-against-cash-value-cons"><br><strong>Borrowing Against Cash Value Cons</strong></h2>
+<h2 id="borrowing-against-cash-value-cons"><br><strong>Borrowing against cash value cons</strong></h2>
 
 <p><strong>These are the disadvantages of borrowing against cash value:</strong></p>
 
@@ -189,7 +189,7 @@ sidebar: true
 
 <p>The insurance policy loan provision is a benefit of permanent or whole life insurance. As long as you monitor your loan balance compared to your cash value and make regular payments on the loan, you can use the policy loan as a fast source of cash without the risk of unwanted tax liability.</p>
 
-<h2 id="how-do-you-borrow-against-cash-value"><br><strong>How Do You Borrow Against Cash Value?</strong></h2>
+<h2 id="how-do-you-borrow-against-cash-value"><br><strong>How do you borrow against cash value?</strong></h2>
 
 <p>The process of borrowing against cash value is incredibly simple.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 <li>The loan exceeds a certain amount, such as $50,000.</li>
 </ul>
 
-<h2 id="alternatives-to-life-insurance-policy-loan"><br><strong>What Are The Alternatives To A Life Insurance Policy Loan?</strong></h2>
+<h2 id="alternatives-to-life-insurance-policy-loan"><br><strong>What are the alternatives to a life insurance policy loan?</strong></h2>
 
 <p>If you’re not comfortable taking a life insurance policy loan, other options for getting a short-term loan are available.</p>
 
@@ -233,7 +233,7 @@ sidebar: true
 
 <p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p id="9c774c8a-79d5-4904-9a95-c9f3b02490fd"><strong>What type of life insurance has a cash value?</strong></p>
 

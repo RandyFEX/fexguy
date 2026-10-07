@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-heart-surgery"><strong>What Does Life Insurance Consider Heart Surgery?</strong></h2>
+<h2 id="what-is-heart-surgery"><strong>What does life insurance consider heart surgery?</strong></h2>
 
 <p><strong>Life insurance considers the following as heart surgery:</strong></p>
 
@@ -62,7 +62,7 @@ sidebar: true
 <li>Heart transplantation</li>
 </ul>
 
-<h2 id="insurance-option"><strong><strong>What Is My Insurance Option If I Have A History Of Heart Surgery?</strong></strong></h2>
+<h2 id="insurance-option"><strong><strong>What is my insurance option if I have a history of heart surgery?</strong></strong></h2>
 
 <p><strong>Your shot at getting burial insurance after heart surgery depends on these factors:</strong></p>
 
@@ -87,13 +87,13 @@ sidebar: true
 
 <p>Remember, everyone’s situation is unique when hunting for funeral or burial insurance post-heart surgery. Other health issues might come into play, and some insurers are more lenient based on your age and current health conditions.</p>
 
-<h2 id="best-option"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-option"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <p>First-day coverage insurance is a lifesaver for those who have had heart surgery. Why? Because it offers immediate protection! You don’t have to twiddle your thumbs through a long waiting period. </p>
 
 <p>Your loved ones are covered from day one, and that peace of mind is priceless. Plus, even with your medical history, you can score affordable premiums that won’t break the bank.</p>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope, no medical exam needed! Even if you’ve had heart surgery, you can still qualify for burial insurance without all the hassle.</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>The application process is a breeze, and you’ll often get official approval from the insurance company within minutes!</p>
 
-<h2 id="burial-insurance-rates"><strong>What Is My Burial Insurance Rates If I Have Had Heart Surgery?</strong></h2>
+<h2 id="burial-insurance-rates"><strong>What is my burial insurance rates if I have had heart surgery?</strong></h2>
 
 <p><strong>The cost of burial insurance if you have had heart surgery will depend on your:</strong></p>
 
@@ -181,7 +181,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="underwriting-heart-surgery"><br><strong><strong>Burial Insurance Underwriting If You Have Heart Surgery</strong></strong></h2>
+<h2 id="underwriting-heart-surgery"><br><strong><strong>Burial insurance underwriting if you have heart surgery</strong></strong></h2>
 
 <p><strong>Insurance companies have two ways to do their underwriting:</strong></p>
 
@@ -221,13 +221,13 @@ sidebar: true
 
 <p>Your answers will determine if you qualify for first-day coverage or first-day benefits…and what your pricing will be.</p>
 
-<h2 id="insurance-requirement"><br><strong>How Much Insurance Do I Need If I Have Heart Surgery?</strong></h2>
+<h2 id="insurance-requirement"><br><strong>How much insurance do I need if I have heart surgery?</strong></h2>
 
 <p>Figuring out how much burial insurance you need is all about your personal and financial situation. But here’s the deal: your policy should cover all of your funeral, burial, and final expenses.</p>
 
 <p>Start by totaling your end-of-life expenses. The funeral is usually the priciest part, but don’t forget about any outstanding medical bills, living expenses, credit card debts, or other loans.</p>
 
-<h2 id="premium-payment"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="premium-payment"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The smartest way to handle your premiums is through a savings or checking account. </p>
 
@@ -235,7 +235,7 @@ sidebar: true
 
 <p>This way, you won’t have to stress about your policy lapsing because of missed payments.</p>
 
-<h2 id="getting-burial-insurance"><br><strong>Getting Affordable Burial Insurance After A Heart Surgery</strong></h2>
+<h2 id="getting-burial-insurance"><br><strong>Getting affordable burial insurance after a heart surgery</strong></h2>
 
 <p>To get the most affordable burial insurance after heart surgery, you need to team up with a top-notch agency like Final Expense Guy that knows their stuff. We’ll dive into your full health profile to find the insurance companies that’ll give you the best deal.</p>
 
@@ -243,7 +243,7 @@ sidebar: true
 
 <p>We’ll help you shop around, compare rates from various carriers, and find the perfect policy for your needs and budget.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -258,7 +258,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong><strong>How Can Final Expense Guy Help Me?</strong></strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong><strong>How can Final Expense Guy help me?</strong></strong></h2>
 
 <p>Forget wasting your precious time hunting for insurance deals – let us handle the heavy lifting. We’ll shop your case around to get your application approved without you lifting a finger.</p>
 
@@ -266,7 +266,7 @@ sidebar: true
 
 <p>We’ll match you with the perfect funeral and burial insurance option. Just fill out our quote form on this page or give us a ring at (888) 862-9456, and we’ll hook you up with an accurate quote.</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><br><strong>Do I need to tell my life insurance company if I have heart surgery?</strong></p>
 

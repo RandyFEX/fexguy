@@ -53,7 +53,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-sarcoidosis"><br><strong>What Is My Best Insurance Option If I Have A History Of Sarcoidosis?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-sarcoidosis"><br><strong>What is my best insurance option if I have a history of sarcoidosis?</strong></h2>
 
 <p>The type of burial insurance with sarcoidosis you will qualify for will depend on the severity of your condition.</p>
 
@@ -119,7 +119,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 
 <p><strong>Best Options:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -158,7 +158,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 </tbody>
 </table>
 
-<h2 id="best-type-of-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-type-of-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -207,7 +207,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-if-you-have-sarcoidosis"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-if-you-have-sarcoidosis"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with sarcoidosis.</p>
 
@@ -215,7 +215,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-sarcoidosis"><br><strong>Burial Insurance Underwriting If You Have Sarcoidosis</strong></h2>
+<h2 id="insurance-underwriting-for-sarcoidosis"><br><strong>Burial insurance underwriting if you have sarcoidosis</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -241,7 +241,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 <li>Sarcoidosis in the nervous system – some people will develop problems in their central nervous system due to sarcoidosis. Granulomas formed in the brain and the spinal cord can cause paralysis. <a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a>, which will require you to need hospice care or help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>, will affect your life insurance eligibility.</li>
 </ol>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Sarcoidosis?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have sarcoidosis?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -301,11 +301,11 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Sarcoidosis And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Sarcoidosis and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -314,7 +314,7 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-sarcoidosis"><br><strong>Information We Need If You Have Sarcoidosis </strong></h2>
+<h2 id="information-we-need-if-you-have-sarcoidosis"><br><strong>Information we need if you have sarcoidosis </strong></h2>
 
 <p>We’d like to know some things about your sarcoidosis condition for us to find you the best insurance company with the best prices for your sarcoidosis.</p>
 
@@ -336,7 +336,7 @@ sarcoidosis?</li>
 
 <p>Your answers to these health questions will enable us to get the most accurate quotes from different life insurance companies and recommend the best company with the best price.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -351,7 +351,7 @@ sarcoidosis?</li>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="common-uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Sarcoidosis</strong></h2>
+<h2 id="common-uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with sarcoidosis</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -369,7 +369,7 @@ sarcoidosis?</li>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="getting-the-best-burial-insurance-rates"><br><strong>How To Get The Best Burial Insurance Rates For Sarcoidosis Patients? </strong> </h2>
+<h2 id="getting-the-best-burial-insurance-rates"><br><strong>How to get the best burial insurance rates for sarcoidosis patients? </strong> </h2>
 
 <p>If you’re looking to get the best premium possible with sarcoidosis, managing your condition and taking your medications as prescribed is important. Following doctor’s orders is not only good for your health, but it’s also beneficial to your wallet as well!</p>
 
@@ -383,7 +383,7 @@ sarcoidosis?</li>
 
 <p>We specialize in high-risk life insurance cases. We have helped people with sarcoidosis, and other health conditions get the right coverage, usually at level death benefit with first-day full coverage and no waiting period. We always strive for level death benefit because it is the best and cheapest. </p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you have sarcoidosis needn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
 
@@ -395,7 +395,7 @@ sarcoidosis?</li>
 
 <p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if you have sarcoidosis?</strong></p>
 

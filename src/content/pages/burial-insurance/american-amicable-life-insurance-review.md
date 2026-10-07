@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPANY HISTORY AND OWNERSHIP</strong></h2>
+<h2><strong>Company history and ownership</strong></h2>
 
 <p>American Amicable began as a small regional life insurer serving Texas residents.</p>
 
@@ -47,7 +47,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>IS AMERICAN AMICABLE STATE REGULATED?</strong></h2>
+<h2><strong>Is American Amicable state regulated?</strong></h2>
 
 <p>Like every legitimate life insurance company in the United States, American Amicable is fully regulated at the state level.</p>
 
@@ -71,7 +71,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW AMERICAN AMICABLE FINAL EXPENSE INSURANCE WORKS</strong></h2>
+<h2><strong>How American Amicable final expense insurance works</strong></h2>
 
 <p>American Amicable’s flagship senior product is a simplified issue whole life insurance policy, often marketed as “Senior Choice.”</p>
 
@@ -140,7 +140,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WAITING PERIODS AND BENEFIT LIMITS</strong></h2>
+<h2><strong>Waiting periods and benefit limits</strong></h2>
 
 <p>The biggest misunderstanding in the entire final expense market comes down to waiting periods.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>PRICING AND COST FACTORS</strong></h2>
+<h2><strong>Pricing and cost factors</strong></h2>
 
 <p>American Amicable’s final expense prices are on the higher side.</p>
 
@@ -258,7 +258,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>TERM LIFE INSURANCE FROM AMERICAN AMICABLE</strong></h2>
+<h2><strong>Term life insurance from American Amicable</strong></h2>
 
 <p>American Amicable offers a term life product called Term Made Simple.</p>
 
@@ -307,7 +307,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>UNDERWRITING AND ELIGIBILITY REQUIREMENTS</strong></h2>
+<h2><strong>Underwriting and eligibility requirements</strong></h2>
 
 <p>American Amicable uses simplified underwriting for its final expense and term life plans.</p>
 
@@ -325,7 +325,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>RIDERS AND OPTIONAL ADD-ONS</strong></h2>
+<h2><strong>Riders and optional add-ons</strong></h2>
 
 <p>American Amicable includes a few optional riders with some policies.</p>
 
@@ -389,7 +389,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW CLAIMS AND PAYOUTS ACTUALLY WORK</strong></h2>
+<h2><strong>How claims and payouts actually work</strong></h2>
 
 <p>American Amicable’s claims process is straightforward on paper, but can be slow in practice depending on how the policy was written.</p>
 
@@ -407,7 +407,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPLAINTS, CUSTOMER REVIEWS, AND REGULATORY STANDING</strong></h2>
+<h2><strong>Complaints, customer reviews, and regulatory standing</strong></h2>
 
 <p>American Amicable has an NAIC Complaint Index above the national average, meaning it receives more complaints than a typical company of its size (source: NAIC Consumer Information Source). The most common issues involve policy misunderstandings, waiting periods, and communication after purchase.</p>
 
@@ -465,7 +465,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON MISUNDERSTANDINGS AND SALES TACTICS</strong></h2>
+<h2><strong>Common misunderstandings and sales tactics</strong></h2>
 
 <p>Most confusion around American Amicable comes from how their products are marketed, not from the contract itself.</p>
 
@@ -491,7 +491,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO AMERICAN AMICABLE IS BEST FOR</strong></h2>
+<h2><strong>Who American Amicable is best for</strong></h2>
 
 <p>American Amicable fits a narrow group of buyers who don’t mind overpaying on a plan for the rest of their life.</p>
 
@@ -534,7 +534,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER ALTERNATIVES TO AMERICAN AMICABLE</strong></h2>
+<h2><strong>Better alternatives to American Amicable</strong></h2>
 
 <p>If your goal is real first-day coverage, there are better choices than American Amicable.</p>
 
@@ -599,7 +599,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO COMPARE FIRST-DAY COVERAGE OPTIONS</strong></h2>
+<h2><strong>How to compare first-day coverage options</strong></h2>
 
 <p>Comparing final expense policies can feel overwhelming, but the process is simple when you know what to look for.</p>
 
@@ -651,7 +651,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINAL VERDICT: SHOULD YOU BUY AMERICAN AMICABLE LIFE INSURANCE?</strong></h2>
+<h2><strong>Final verdict: should you buy American Amicable life insurance?</strong></h2>
 
 <p>American Amicable is a legitimate, financially stable life insurance company with more than a century of experience. It’s not a scam, and it pays valid claims.</p>
 
@@ -669,7 +669,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS</strong>: <strong>AMERICAN AMICABLE LIFE INSURANCE</strong></h2>
+<h2><strong>Frequently asked questions</strong>: <strong>American Amicable life insurance</strong></h2>
 
 <p><strong>Is American Amicable legit for life insurance?</strong></p>
 

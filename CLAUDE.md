@@ -738,6 +738,11 @@ is in place; see src/content/README.md for how pages were migrated.
 ## Conventions
 
 - Exactly one `<h1>` per page, inside the page body.
+- Article H2-H4 headings (and so the "In This Article" labels) use sentence
+  case (Randy, October 2026): first word capitalized, proper nouns, company and
+  product names, acronyms and people's names kept; quoted terms kept as
+  written. Fix the source text, never CSS text-transform. H1s are not
+  changed by this rule.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).

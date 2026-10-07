@@ -64,7 +64,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-cancer"><br><strong><strong>What Is My Best Insurance Option If I Have A History Of Breast Cancer?</strong></strong></h2>
+<h2 id="best-insurance-option-if-you-have-cancer"><br><strong><strong>What is my best insurance option if I have a history of breast cancer?</strong></strong></h2>
 
 <p><br><strong>YOUR BREAST CANCER DIAGNOSIS AND TREATMENT IS MORE THAN 24 MONTHS</strong></p>
 
@@ -110,7 +110,7 @@ sidebar: true
 
 <p>If a guaranteed issue burial insurance is your only option for insurance coverage because of your breast cancer, apply now, and start working on your waiting period.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -149,7 +149,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -198,7 +198,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>If I Have Breast Cancer, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>If I have breast cancer, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance after breast cancer.</p>
 
@@ -206,7 +206,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong><strong>Burial Insurance Underwriting If You Have Breast Cancer</strong></strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong><strong>Burial insurance underwriting if you have breast cancer</strong></strong></h2>
 
 <p>The best way to get the lowest premium is by applying for life insurance before a cancer diagnosis. However, if you already have breast cancer, your next best option is to apply for burial insurance coverage with medical underwriting (burial insurance with underwriting means they ask health questions)</p>
 
@@ -275,7 +275,7 @@ sidebar: true
 
 <p>If you have been taking any of these meds within 24 months, most burial insurance companies will assume you are receiving breast cancer treatment.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I Have Breast Cancer?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I have breast cancer?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -335,11 +335,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Breast Cancer And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Breast cancer and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -364,7 +364,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need"><br><strong>Information We Need If You Have Breast Cancer</strong></h2>
+<h2 id="information-we-need"><br><strong>Information we need if you have breast cancer</strong></h2>
 
 <p>When you request a burial insurance quote, we will ask you some health questions to better understand your current health.</p>
 
@@ -385,7 +385,7 @@ sidebar: true
 
 <p>We specialize in helping breast <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer patients</a>, and survivors get the best burial insurance policy they need. We will help you by pairing you with the life insurance provider that offers the best rates for breast cancer patients and survivors.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -400,7 +400,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance After Breast Cancer</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance after breast cancer</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -419,7 +419,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy if you have breast cancer needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -429,7 +429,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for breast cancer funeral, breast cancer burial, or life insurance. Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="block-0b94a4b5-b633-4acc-bd8d-3cce07a62f8d"><strong>Can a person with breast cancer get life insurance?</strong></p>
 
@@ -587,8 +587,8 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/burial-insurance-with-lung-cancer/">
-<h3 class="as-h5">Burial Insurance with Lung Cancer</h3>
+<h3 class="as-h5">Burial insurance with lung cancer</h3>
 </a></div>

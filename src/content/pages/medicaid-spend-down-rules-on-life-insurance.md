@@ -62,7 +62,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-to-qualify-for-medicaid"><strong>How To Qualify For Medicaid</strong></h2>
+<h2 id="how-to-qualify-for-medicaid"><strong>How to qualify for Medicaid</strong></h2>
 
 <p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets should not be greater than $2,000 for one person or a maximum of $126,420 for married couples where one of them is trying to obtain Medicaid. </p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>The look-back period also applies to life insurance and other non-exempt assets. To follow Medicaid’s spend-down rules, a life insurance policy should be surrendered for its cash value or converted to market value, and the proceeds can be used for long-term medical care.</p>
 
-<h2 id="understanding-life-insurance-impact-on-medicaid-eligibility"><br><strong>Understanding Life Insurance Impact On Medicaid Eligibility</strong></h2>
+<h2 id="understanding-life-insurance-impact-on-medicaid-eligibility"><br><strong>Understanding life insurance impact on Medicaid eligibility</strong></h2>
 
 <p>Understanding the different life insurance policies is critical to determine if your parent’s life insurance policies are within Medicaid limits.</p>
 
@@ -122,7 +122,7 @@ sidebar: true
 
 <p>Permanent insurance policies both have a face value and cash value. The Medicaid eligibility rules touch both; knowing the difference is critical before deciding on an asset spend-down strategy.</p>
 
-<h2 id="life-insurance-and-medicaid"><br><strong>Life Insurance And Medicaid</strong></h2>
+<h2 id="life-insurance-and-medicaid"><br><strong>Life insurance and Medicaid</strong></h2>
 
 <p>Not all types of life insurance are considered assets. </p>
 
@@ -150,7 +150,7 @@ sidebar: true
 
 <p>If your parents have a life insurance policy that may disqualify them from Medicaid, they have an option to qualify through Medicaid’s spend-down.</p>
 
-<h2 id="medicaid-spend-down-rules-on-life-insurance"><br><strong>MEDICAID SPEND DOWN RULES ON LIFE INSURANCE</strong></h2>
+<h2 id="medicaid-spend-down-rules-on-life-insurance"><br><strong>Medicaid spend down rules on life insurance</strong></h2>
 
 <p>Can life insurance affect Medicaid eligibility? Yes. To qualify for Medicaid, your assets must be less than $2,000. So life insurance can be an asset depending on the type of life insurance and the policy’s value.</p>
 
@@ -160,7 +160,7 @@ sidebar: true
 
 <p>All non-exempt assets must be spent down five years before your parents apply for Medicaid and qualify for Medicaid’s asset limit.</p>
 
-<h2 id="how-to-spend-down-on-life-insurance"><br><strong>How To Spend Down On Life Insurance</strong></h2>
+<h2 id="how-to-spend-down-on-life-insurance"><br><strong>How to spend down on life insurance</strong></h2>
 
 <p>If your parents have a life insurance policy, check if their plan will disqualify them from Medicaid. A life insurance policy exceeding the exemption amount doesn’t mean they are not eligible for Medicaid. It means you need to implement some planning strategy before applying to be able to meet Medicaid’s asset limit.</p>
 
@@ -202,7 +202,7 @@ sidebar: true
 
 <p>Research Medicaid spend-down rules on life insurance in your state before making any spend-down strategy with a life insurance policy. It is best to talk to your attorney to determine the best strategy for your parents.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>If you are looking for burial, cremation, or final expense life insurance, we can help! </p>
 
@@ -210,7 +210,7 @@ sidebar: true
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>What does insurance spend down mean?</strong></p>
 
@@ -378,21 +378,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">1 Comment</h2>
+<h2 class="as-h5">1 comment</h2>
 
 <div class="comments">
 <div class="comment" id="comment-14997">

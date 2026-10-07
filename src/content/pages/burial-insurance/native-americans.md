@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-for-native-americans"><strong>What Is My Best Insurance Option If I Am A Native American?</strong></h2>
+<h2 id="best-insurance-option-for-native-americans"><strong>What is my best insurance option if I am a Native American?</strong></h2>
 
 <p>If you’re a native American and a part of a Federally-recognized tribe, your best option for burial insurance is a level death benefit plan with first-day coverage.</p>
 
@@ -63,7 +63,7 @@ sidebar: true
 
 <p>This plan with first-day coverage has a level premium that remains the same your whole life. The level death benefit plan is a simplified issue policy with no medical exam and just health questions to answer. Your death benefit will never decrease, and your beneficiary will receive a 100% death benefit when you pass away.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -102,7 +102,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -151,13 +151,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Getting burial insurance for native Americans is fairly easy. You only need to answer a few health questions. You don’t need to undergo a medical exam to qualify.</p>
 
 <p>No health questions burial insurance is also offered for people with significant health problems.</p>
 
-<h2 id="insurance-underwriting-for-native-americans"><br><strong>Burial Insurance Underwriting If You Are A Native American</strong></h2>
+<h2 id="insurance-underwriting-for-native-americans"><br><strong>Burial insurance underwriting if you are a Native American</strong></h2>
 
 <p>If you want first-day coverage and you want to pay the lowest rate, you should apply for a plan with basic health underwriting. </p>
 
@@ -170,7 +170,7 @@ sidebar: true
 <li>The will allow you to get approved over the phone.</li>
 </ul>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I Am A Native American?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I am a Native American?</strong></h2>
 
 <p>Here is the average cost of funeral and burial from the National Funeral Directors’ Association:</p>
 
@@ -280,11 +280,11 @@ sidebar: true
 
 <p id="How-Should-I-Pay-My-Premiums?">Your total final expenses, plus an allowance for inflation, will help you determine how much burial insurance coverage you need to buy.</p>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Burial Insurance Riders For Native Americans</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Burial insurance riders for Native Americans</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -309,7 +309,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="importance-of-burial-insurance"><br><strong>Importance Of Burial Insurance For Native Americans</strong></h2>
+<h2 id="importance-of-burial-insurance"><br><strong>Importance of burial insurance for Native Americans</strong></h2>
 
 <p>Native American men are dying faster in the United States than the average American. A male Native American has a life expectancy is 71 years, six years below the expectancy of a white male. Native American women fare at the same level as the average non-native American female.</p>
 
@@ -321,7 +321,7 @@ sidebar: true
 
 <p>Burial insurance for Indians and Native Americans is critical today since more and more elders are entering their elderly years with insufficient funds. Burial insurance for Native Americans is the solution so that the surviving family and the tribe don’t have to worry about the financial aspect of the funeral.</p>
 
-<h2 id="intangible-benefits-of-burial-insurance"><br><strong>Intangible Benefits Of Burial Insurance</strong></h2>
+<h2 id="intangible-benefits-of-burial-insurance"><br><strong>Intangible benefits of burial insurance</strong></h2>
 
 <p>The benefits of burial insurance extend beyond finances. Here are the intangible benefits of burial insurance for Native Americans.</p>
 
@@ -341,7 +341,7 @@ sidebar: true
 
 <p>Burial insurance payout doesn’t go to probate. Your family will have the funds to pay for your funeral and final expenses. Burial insurance provides instant funds to your loved ones, so they don’t need to pay for your funeral expenses out of their pockets.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -356,7 +356,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong> – burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Native Americans</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for Native Americans</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -375,7 +375,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Affordable burial insurance doesn’t have to cost an arm and a leg. Avoid inexperienced and less knowledgeable insurance agents because it will cost you loads of money by selling you overpriced burial insurance.</p>
 
@@ -383,7 +383,7 @@ sidebar: true
 
 <p>Working with an independent insurance agency like Final Expense Guy is always in your best interest. We have access to all the best burial insurance companies and will help you get the best insurance plan that will fit your needs.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Is life insurance available for Native Americans?</strong></p>
 

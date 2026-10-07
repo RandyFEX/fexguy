@@ -63,7 +63,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost?</strong></h2>
+<h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost?</strong></h2>
 
 <p>According to the National Funeral Directors Association, the average cost of an adult funeral today is $9,135.&#160; It only includes the most commonly selected items for a traditional funeral. It does not cover the cost of the cemetery. A burial plot costs about $2,000, so the average <a href="/how-much-does-a-funeral-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> could be over $10,000.</p>
 
@@ -107,7 +107,7 @@ sidebar: true
 
 <p>Prices can significantly differ depending on the location. For example, a chapel service can be expensive, primarily if the service is conducted at a chapel separate from the funeral home.</p>
 
-<h2 id="funeral-plan-insurance-policies-and-what-they-cover"><br><strong>Funeral Plan Insurance Policies And What They Cover</strong></h2>
+<h2 id="funeral-plan-insurance-policies-and-what-they-cover"><br><strong>Funeral plan insurance policies and what they cover</strong></h2>
 
 <p>Are prepaid funeral plans a good idea?</p>
 
@@ -133,13 +133,13 @@ sidebar: true
 <li>Funeral hearse to the local cemetery</li>
 </ul>
 
-<h2 id="how-does-funeral-plan-insurance-policies-work"><br><strong>How Do Funeral Plan Insurance Policies Work?</strong></h2>
+<h2 id="how-does-funeral-plan-insurance-policies-work"><br><strong>How do funeral plan insurance policies work?</strong></h2>
 
 <p>You pay a one-time payment or lump sum, or you can pay installments to the funeral director or to the plan provider.</p>
 
 <p>To ensure the fund is there when needed, the fund is invested in life insurance or a trust fund with trustees. The proceeds will cover the cost of the <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> when the policy owner dies. They do this to protect your money until the time you need it and give you the funeral you paid for.</p>
 
-<h2 id="why-use-funeral-plan-insurance-policies"><br><strong>Why Use Funeral Plan Insurance Policies?</strong></h2>
+<h2 id="why-use-funeral-plan-insurance-policies"><br><strong>Why use funeral plan insurance policies?</strong></h2>
 
 <p>Funerals can be expensive, costing several thousand dollars and many people worry that they will be a burden to the family when they die. With funeral plan insurance policies, you arrange and pay for your funeral in advance.</p>
 
@@ -151,7 +151,7 @@ sidebar: true
 
 <p>Some funeral plan providers give support as well as financial assistance. Support beyond financial help can include bereavement counseling, and legal assistance such as explaining funeral procedures like obtaining death certificates and helping to organize the details of the funeral.</p>
 
-<h2 id="funeral-plan-insurance-policies-pros-and-cons"><br><strong>Funeral Plan Insurance Policies Pros And Cons</strong></h2>
+<h2 id="funeral-plan-insurance-policies-pros-and-cons"><br><strong>Funeral plan insurance policies pros and cons</strong></h2>
 
 <p><strong>PROS</strong></p>
 
@@ -179,7 +179,7 @@ sidebar: true
 <li>Some funeral plans lock you in a specific funeral home or area. Some plans require a particular cemetery or funeral home to be utilized per agreement. If you relocated or the funeral provider went out of business, the funeral plan is no longer valid; it will not cover all the funeral costs anymore. This can confuse you, and you may not be able to honor your final wishes.</li>
 </ol>
 
-<h2 id="questions-to-ask-the-funeral-provider"><br><strong>Questions To Ask The Funeral Provider</strong></h2>
+<h2 id="questions-to-ask-the-funeral-provider"><br><strong>Questions to ask the funeral provider</strong></h2>
 
 <p><strong>Before signing any preneed funeral contract or paying for anything in advance, you should ask the funeral plan provider the following questions:</strong></p>
 
@@ -199,7 +199,7 @@ sidebar: true
 <li>How does the funeral director know about the planholder’s death?</li>
 </ul>
 
-<h2 id="communicating-with-your-family"><br><strong>Communicating With Your Family</strong></h2>
+<h2 id="communicating-with-your-family"><br><strong>Communicating with your family</strong></h2>
 
 <p>If you set up a funeral plan insurance policy to pay for your funeral, tell your family about the arrangements you’ve made.</p>
 
@@ -207,7 +207,7 @@ sidebar: true
 
 <p>If you take out a funeral plan, you should receive written confirmation of your coverage. Keep this in a safe place with your other necessary documents. Ensure your family knows your funeral is already paid and inform them about the details.</p>
 
-<h2 id="what-is-funeral-insurance"><br><strong>What Is Funeral Insurance?</strong></h2>
+<h2 id="what-is-funeral-insurance"><br><strong>What is funeral insurance?</strong></h2>
 
 <p>If you do not have funds at the end of your life to cover your <a rel="noreferrer noopener" href="/final-expense-life-insurance-complete-guide/" target="_blank">final expenses</a>, then a funeral insurance policy,  cremation insurance, final expense, or <a rel="noreferrer noopener" href="/the-importance-of-burial-insurance/" target="_blank">burial insurance</a> might be an ideal solution.</p>
 
@@ -217,7 +217,7 @@ sidebar: true
 
 <p>These policies have a small face amount, typically $2,000 to $25,000 (although some insurance companies offer up to $50,000). The lower coverage amount is specifically designed to cover funeral and other end-of-life expenses. These policies are not intended to provide supplemental income to the family-like regular life insurance.</p>
 
-<h2 id="what-to-consider-when-choosing-funeral-insurance"><br><strong>What Are The Two Basic Options When Choosing Funeral Insurance?</strong></h2>
+<h2 id="what-to-consider-when-choosing-funeral-insurance"><br><strong>What are the two basic options when choosing funeral insurance?</strong></h2>
 
 <p>There are two types of burial insurance, namely:</p>
 
@@ -235,7 +235,7 @@ sidebar: true
 
 <p>After the graded period has passed, your family will receive the full life insurance benefit.</p>
 
-<h2 id="who-should-consider-a-funeral-insurance-policy"><br><strong>Who Should Consider A Funeral Insurance Policy?</strong></h2>
+<h2 id="who-should-consider-a-funeral-insurance-policy"><br><strong>Who should consider a funeral insurance policy?</strong></h2>
 
 <p>Your funeral insurance needs to depend on your financial situation.</p>
 
@@ -249,7 +249,7 @@ sidebar: true
 <li>You want to cover your entire family.</li>
 </ul>
 
-<h2 id="pros-and-cons-of-funeral-insurance"><br><strong>Pros And Cons Of Funeral Insurance</strong></h2>
+<h2 id="pros-and-cons-of-funeral-insurance"><br><strong>Pros and cons of funeral insurance</strong></h2>
 
 <p><strong>PROS</strong></p>
 
@@ -269,7 +269,7 @@ sidebar: true
 <li>Fixed premium policies generally are more expensive.</li>
 </ul>
 
-<h2 id="alternatives-to-a-funeral-plan-or-funeral-insurance"><br><strong>Alternatives To A Funeral Plan Or Funeral Insurance</strong></h2>
+<h2 id="alternatives-to-a-funeral-plan-or-funeral-insurance"><br><strong>Alternatives to a funeral plan or funeral insurance</strong></h2>
 
 <ol>
 <li>Set money aside in a savings or money market account. You can leave the money in a bank account and let your solicitor and family members know you have set aside funds for your funeral. Your survivors will need immediate access to these funds following your death. Make arrangements to open an account with the bank so the person you trust can withdraw the funds.</li>
@@ -281,7 +281,7 @@ sidebar: true
 
 <p>A funeral plan or insurance is essential to protect your family financially during a tough time. While your funeral coverage can never eliminate the pain of your loss, it can make the grieving period much easier.</p>
 
-<h2 id="getting-the-best-rates-on-final-expense-insurance"><br><strong>How To Find The Best Premium Rates On Final Expense Insurance</strong></h2>
+<h2 id="getting-the-best-rates-on-final-expense-insurance"><br><strong>How to find the best premium rates on final expense insurance</strong></h2>
 
 <p>You must work with an independent insurance agency when seeking the best premium rates on final expense insurance coverage from any carrier. Doing so will enable you to look at policies and prices from multiple insurance companies to determine which will fit your needs and budget.</p>
 
@@ -291,7 +291,7 @@ sidebar: true
 
 <p>If, after checking our website, you still have any questions regarding final expense insurance, please call us at (888) 862-9456 or fill in the instant final expense quotes on the left side of your screen to view your options.</p>
 
-<h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What Kind Of Burial Policies And Final Expense Policies Should I Avoid?</strong></h2>
+<h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
@@ -301,7 +301,7 @@ sidebar: true
 
 <p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in burial insurance</strong>, like Final Expense Guy, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
-<h3><strong>Increasing Price Policies</strong></h3>
+<h3><strong>Increasing price policies</strong></h3>
 
 <p>If you are looking for burial insurance for seniors over 70, beware of those TV and magazine final expense policies because they may increase in price every five years or have a two-year waiting period before your benefits kick in! <strong>What in tarnation!?!</strong></p>
 
@@ -337,7 +337,7 @@ sidebar: true
 
 <p>For the average burial insurance final expense insurance shopper, we must admit that all the companies and options will often confuse you more<strong> than a woodpecker in a concrete forest.</strong></p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>In reality, inexperienced and less knowledgeable insurance agents will cost you loads of money by selling you overpriced burial and final expense policies.</p>
 
@@ -351,7 +351,7 @@ sidebar: true
 
 <p>With access to all the best final expense life insurance companies, we will help you understand your best options, given your current age, health, and financial situation.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p id="Additional-Questions-&-Answers-On-Funeral-Insurance-Plan"><strong>What is funeral insurance plan?</strong></p>
 
@@ -515,25 +515,25 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a>  <a href="/what-to-do-when-a-loved-one-dies/">
-<h3 class="as-h5">What to Do When a Loved One Dies</h3>
+<h3 class="as-h5">What to do when a loved one dies</h3>
 </a></div>
 
-<h2 class="as-h5">4 Comments</h2>
+<h2 class="as-h5">4 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-22032">
-<h3 class="comment-name as-h6">Yenastril Gonell </h3>                                            
+<h3 class="comment-name as-h6">Yenastril gonell </h3>                                            
 <p>More information about funeral expenses</p>
 <div class="comment-meta">
 June 20, 2022 at 2:29 pm                    

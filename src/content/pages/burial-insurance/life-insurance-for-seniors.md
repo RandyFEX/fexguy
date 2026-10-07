@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="why-seniors-need-life-insurance"><strong>What Is Life Insurance For Seniors, And Why Do You Need</strong> <strong>It If You’re 50 To 85 Years Old?</strong></h2>
+<h2 id="why-seniors-need-life-insurance"><strong>What is life insurance for seniors, and why do you need</strong> <strong>it if you’re 50 to 85 years old?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Life insurance for seniors is a policy you can purchase to cover the cost of your final expenses and financially protect your loved ones in the event of your death.</p>
 
@@ -56,7 +56,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">The good news is that life insurance for seniors is available if you are 50 to 85. You don’t need to take a medical exam to qualify. Most seniors qualify for a first-day coverage plan even with health issues.</p>
 
-<h2 id="types-of-life-insurance-for-seniors"><br><strong>What Are The Different Types Of Life Insurance For Seniors?</strong></h2>
+<h2 id="types-of-life-insurance-for-seniors"><br><strong>What are the different types of life insurance for seniors?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>First-day Coverage Plan</strong></p>
 
@@ -66,7 +66,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Guaranteed Issue Life Insurance</strong> – A guaranteed issue life insurance policy does not require a medical exam. Anyone can qualify, regardless of their health, but this plan has a 2-year waiting period.</p>
 
-<h2 id="characteristics-of-life-insurance"><br><strong>What Are The Characteristics Of Life Insurance For Seniors?</strong></h2>
+<h2 id="characteristics-of-life-insurance"><br><strong>What are the characteristics of life insurance for seniors?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Permanent coverage</strong>&#160;– You will have lifetime coverage. The insurance provider cannot cancel your coverage because of your growing age or new medical problems that you develop with time.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Builds cash value</strong>&#160;– Life insurance for seniors is whole life insurance that builds cash value on a tax-free basis with every premium payment you make. This cash value can be borrowed for emergency purposes or can be used to pay your premiums.</p>
 
-<h2 id="benefits-of-life-insurance-for-seniors"><br><strong>What Are The Benefits Of Life Insurance For Seniors?</strong></h2>
+<h2 id="benefits-of-life-insurance-for-seniors"><br><strong>What are the benefits of life insurance for seniors?</strong></h2>
 
 <p id="3490150f-ea3e-4951-b8c6-bae87c26e773">The biggest benefit of life insurance for seniors is that it gives policyholders and their loved ones peace of mind.</p>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Life insurance for seniors allows you to plan. Making financial decisions about your death is not easy. Purchasing life insurance gives you the time to plan and find different options suited to your needs.</p>
 
-<h2 id="choosing-the-right-policy"><br><strong>How To Choose The Best Policy For Your Needs</strong></h2>
+<h2 id="choosing-the-right-policy"><br><strong>How to choose the best policy for your needs</strong></h2>
 
 <p id="b84c37a3-a4a3-4974-a36f-5b812b1606a7">Choosing a policy that meets your specific needs is important when looking for life insurance for seniors.</p>
 
@@ -100,7 +100,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">You will also need to decide how much coverage you need. A good rule of thumb is to purchase a policy covering your end-of-life expenses and leave something for your family.</p>
 
-<h2 id="cost-of-life-insurance-for-seniors"><br><strong>What Is The Cost Of Life Insurance For Seniors?</strong></h2>
+<h2 id="cost-of-life-insurance-for-seniors"><br><strong>What is the cost of life insurance for seniors?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">The cost of life insurance for seniors will vary depending on your:</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">However, it is generally more affordable than you might think (as long as you go with the best-priced company such as Final Expense Guy)</p>
 
-<h2 id="things-to-keep-in-mind"><br><strong>What Are The Things To Keep In Mind When Purchasing Life Insurance For Seniors?</strong></h2>
+<h2 id="things-to-keep-in-mind"><br><strong>What are the things to keep in mind when purchasing life insurance for seniors?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">When you are purchasing life insurance for seniors, there are a few things to keep in mind.</p>
 
@@ -127,7 +127,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Make sure you research and choose a policy that meets your needs. With the right life insurance in place, you can rest assured knowing that your loved ones will be taken care of financially if something happens to you.</p>
 
-<h2 id="how-to-get-started"><br><strong>How To Get Started With Buying Life Insurance As A Senior</strong></h2>
+<h2 id="how-to-get-started"><br><strong>How to get started with buying life insurance as a senior</strong></h2>
 
 <p id="2e211dba-e8d6-4383-9145-05ab6f91c08c"><strong>STEP 1: Work with a qualified life insurance agent</strong></p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Don’t wait until it’s too late. Get started with life insurance today.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">Getting affordable life insurance for seniors is easier than you think. Working with a qualified insurance agent from Final Expense Guy will help you understand your options and find the best policy for your needs.</p>
 

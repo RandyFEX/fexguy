@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-peripheral-vascular-disease"><br><strong>What Is My Best Insurance Option If I Have A History Of Peripheral Vascular Disease?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-peripheral-vascular-disease"><br><strong>What is my best insurance option if I have a history of peripheral vascular disease?</strong></h2>
 
 <p><strong>EARLY-STAGE PERIPHERAL VASCULAR DISEASE</strong></p>
 
@@ -107,7 +107,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> If you are a non-smoker, you will qualify for discounted pricing</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -146,7 +146,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -195,7 +195,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Peripheral Vascular Disease, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have peripheral vascular disease, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with peripheral vascular disease or peripheral artery disease.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-peripheral-vascular-disease"><br><strong>Burial Insurance Underwriting If You Have Peripheral Vascular Disease</strong></h2>
+<h2 id="insurance-underwriting-for-peripheral-vascular-disease"><br><strong>Burial insurance underwriting if you have peripheral vascular disease</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -244,7 +244,7 @@ sidebar: true
 
 <p>If you are taking any of these prescription drugs, you will be considered a PVD patient this may affect how much you pay and if you will have a waiting period.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Peripheral Vascular Disease?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have peripheral vascular disease?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -352,11 +352,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="peripheral-vascular-disease-and-burial-insurance-riders"><br><strong>Peripheral Vascular Disease And Burial Insurance Riders</strong></h2>
+<h2 id="peripheral-vascular-disease-and-burial-insurance-riders"><br><strong>Peripheral vascular disease and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -365,7 +365,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-peripheral-vascular-disease"><br><strong>Information We Need If You Have Peripheral Vascular Disease</strong></h2>
+<h2 id="information-we-need-if-you-have-peripheral-vascular-disease"><br><strong>Information we need if you have peripheral vascular disease</strong></h2>
 
 <p>We will ask you several health and lifestyle questions to determine whether your peripheral vascular disease is in the early stage or advanced. Your answers to these questions are essential because this will help us determine which company best fits your needs.</p>
 
@@ -383,7 +383,7 @@ sidebar: true
 
 <p>We will use this information to determine which plans you will qualify for and what your pricing will be. If your PVD is accompanied by other medical conditions such as high cholesterol, diabetes, and high blood pressure, or if you had a heart attack or stroke, you will need to tell us as well.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -398,7 +398,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Peripheral Vascular Disease</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with peripheral vascular disease</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -417,7 +417,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="what-if-you’re-declined-for-coverage"><br><strong>What If I Have Been Denied Life Insurance Coverage Because Of PVD?</strong></h2>
+<h2 id="what-if-you’re-declined-for-coverage"><br><strong>What if I have been denied life insurance coverage because of PVD?</strong></h2>
 
 <p>If you have been rejected for a life insurance policy because of peripheral vascular disease or anything else, then you should know that life insurance companies are all different. One may reject your application, and another may underwrite your policy.</p>
 
@@ -425,7 +425,7 @@ sidebar: true
 
 <p>The truth is applying to the wrong insurance company may cause your rejection, which is when an independent life insurance agency like Final Expense Guy can help.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy with peripheral vascular disease needn’t be frustrating; working with an independent agency like&#160;<a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>&#160;will make the process easier and quicker.</p>
 
@@ -435,7 +435,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for peripheral vascular disease funeral insurance, peripheral vascular disease burial insurance, or peripheral vascular disease life insurance, we can help. Fill out our&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>&#160;form on this page or call us at&#160;<strong>(888) 862-9456,</strong>&#160;and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance with peripheral vascular disease?</strong></p>
 

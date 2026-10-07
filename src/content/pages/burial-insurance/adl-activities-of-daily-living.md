@@ -54,7 +54,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-need-help-with-adl"><br><strong><strong>What Is My Best Insurance Option If I Need Help With ADL?</strong></strong></h2>
+<h2 id="best-insurance-option-if-you-need-help-with-adl"><br><strong><strong>What is my best insurance option if I need help with ADL?</strong></strong></h2>
 
 <p>The number of ADLs an applicant needs help with determines whether an insurance provider will approve your application. You need to perform activities of daily living (eating, bathing, dressing, toileting, transferring, toileting, continence, and transferring on your own. Needing help with a single ADL is an automatic decline for most traditional life insurance, and the only plan you will qualify for is guaranteed issue burial insurance.</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>You must have the mental capacity to enter into a legal contract. For example, the company may reject your application if you have advanced Alzheimer’s disease or dementia and cannot legally consent to an agreement.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -123,7 +123,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -172,7 +172,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Need Help With Adl, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I need help with ADL, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help with ADL.</p>
 
@@ -180,7 +180,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-people-needing-help-with-adl"><br><strong><strong>Burial Insurance Underwriting If You Need Help With ADL</strong></strong></h2>
+<h2 id="insurance-underwriting-for-people-needing-help-with-adl"><br><strong><strong>Burial insurance underwriting if you need help with ADL</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -234,7 +234,7 @@ sidebar: true
 
 <p>Any conditions that may cause premature death are considered high risk by life insurance companies.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If Need Help With ADL?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if need help with ADL?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -342,11 +342,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="needing-help-with-adl-and-burial-insurance-riders"><br><strong>Needing Help With ADL And Burial Insurance Riders</strong></h2>
+<h2 id="needing-help-with-adl-and-burial-insurance-riders"><br><strong>Needing help with ADL and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -371,7 +371,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-need-help-with-adl"><br><strong>Information We Need If You Need Help With<strong> ADL</strong></strong></h2>
+<h2 id="information-we-need-if-you-need-help-with-adl"><br><strong>Information we need if you need help with<strong> ADL</strong></strong></h2>
 
 <p>When applying for burial or final expense insurance, it is important to share if you need help with activities of daily living. This information will help us determine what plan is best for you and provide you with an accurate quote.</p>
 
@@ -385,7 +385,7 @@ sidebar: true
 
 <p>If you want affordable burial insurance, if you need help with ADL (activities of daily living) answer each question honestly and give any other details you think are important.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -400,7 +400,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Need Help With ADL</strong></h2>
+<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance if you need help with ADL</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -419,7 +419,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="why-you-need-guaranteed-issue-life-insurance"><br><strong>Why Do You Need Guaranteed Issue Burial Insurance If You Need Help With ADLs</strong>?</h2>
+<h2 id="why-you-need-guaranteed-issue-life-insurance"><br><strong>Why do you need guaranteed issue burial insurance if you need help with ADLs</strong>?</h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you need help with activities of daily living because it’s the only life insurance you will qualify for. If you are relatively healthy and need help with ADLs, you can have an average life expectancy and easily outlive the two-year waiting period.</p>
 
@@ -427,7 +427,7 @@ sidebar: true
 
 <p>A guaranteed acceptance policy may be a little more expensive than plans with underwriting, but your approval is guaranteed. Buying a guaranteed issue burial insurance if you need help with ADL is worth it; you won’t lose money with this plan, and it costs much less than having no insurance coverage.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy&#160;if you need help with ADLs isn’t a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 

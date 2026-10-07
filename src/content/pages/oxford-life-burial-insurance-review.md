@@ -60,13 +60,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-oxford-life-offer-first-day-coverage"><br><strong>Does Oxford Life Offer First-day Coverage?</strong>  </h2>
+<h2 id="does-oxford-life-offer-first-day-coverage"><br><strong>Does Oxford Life offer first-day coverage?</strong>  </h2>
 
 <p><strong>YES</strong>, Oxford Life offers burial insurance plans with first-day coverage; they are competitively priced with other companies.   </p>
 
 <p>If you qualify, their Assurance whole life insurance plans come with immediate first-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.     </p>
 
-<h2 id="pros-of-oxford-life-burial-insurance"><strong>Pros Of Oxford Life Burial Insurance</strong></h2>
+<h2 id="pros-of-oxford-life-burial-insurance"><strong>Pros of Oxford Life burial insurance</strong></h2>
 
 <p><strong>First-day coverage – </strong>Assurance and Assurance One both have first-day coverage.</p>
 
@@ -74,13 +74,13 @@ sidebar: true
 
 <p><strong>Competitively priced</strong> – affordable premiums</p>
 
-<h2 id="cons-of-oxford-life-burial-insurance"><strong>Cons Of Oxford Life Burial Insurance</strong></h2>
+<h2 id="cons-of-oxford-life-burial-insurance"><strong>Cons of Oxford Life burial insurance</strong></h2>
 
 <p><strong>Strict underwriting </strong>– only healthier people can qualify for this coverage</p>
 
 <p><strong>Not available online –</strong> insurance agents must visit your home to sell this insurance.</p>
 
-<h2 id="oxford-life-burial-insurance-products"><br><strong>Oxford Life Burial Insurance Products</strong></h2>
+<h2 id="oxford-life-burial-insurance-products"><br><strong>Oxford Life burial insurance products</strong></h2>
 
 <p>Oxford Life calls their burial insurance plans Assurance and Assurance One. The two plans have the same benefits except for how you choose to pay the premiums. <gwmw></gwmw></p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <p>One of the most significant advantages of Assurance One is that the cash value builds up quickly because your policy is fully funded. <br><br>Another notable benefit of Oxford Life’s Assurance One is that your single premium will give you first-day full coverage. <br><br>If you choose to surrender your policy, you will receive 100% of your premiums back.</p>
 
-<h2 id="oxford-life-burial-insurance-riders"><br><strong>Oxford Life Burial Insurance Riders</strong></h2>
+<h2 id="oxford-life-burial-insurance-riders"><br><strong>Oxford Life burial insurance riders</strong></h2>
 
 <ul>
 <li><strong>Terminal Illness Rider</strong> – paid in when a physician has diagnosed you to have a terminal illness that may cause death within 12 months.</li>
@@ -146,7 +146,7 @@ sidebar: true
 <li>Chronic Illness Rider: This benefit allows you to collect a monthly benefit if ever you were diagnosed with a chronic illness. Your monthly benefit amount equals the lesser of $2,000 or 1% of your death benefit.</li>
 </ul>
 
-<h2 id="when-does-oxford-life-make-sense"><br><strong>When Does Oxford Life Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-oxford-life-make-sense"><br><strong>When does Oxford Life burial insurance make the most sense?</strong></h2>
 
 <p><strong>Oxford Life burial insurance products make the most sense in these instances:</strong></p>
 
@@ -160,7 +160,7 @@ sidebar: true
 
 <p>Oxford Life also has competitive prices when it comes to burial insurance, especially if you are healthy and can qualify for their plans. </p>
 
-<h2 id="oxford-life-underwriting-guidelines"><br><strong><strong>Oxford Life Underwriting Guidelines </strong></strong></h2>
+<h2 id="oxford-life-underwriting-guidelines"><br><strong><strong>Oxford Life underwriting guidelines </strong></strong></h2>
 
 <p>Oxford Life requires you to be within their standard height and weight range. Your agent will check this before they apply. </p>
 
@@ -198,7 +198,7 @@ sidebar: true
 <li>Proposed Insured’s driver’s license number_______________</li>
 </ol>
 
-<h2 id="oxford-life-pricing-examples"><br><strong>Oxford Life Pricing Examples</strong></h2>
+<h2 id="oxford-life-pricing-examples"><br><strong>Oxford Life pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-139">
 <thead>
@@ -380,7 +380,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Oxford Life Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for Oxford Life burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -413,7 +413,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -481,7 +481,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="oxford-life-company-overview"><br><strong><strong>Oxford Life Company Overview </strong></strong></h2>
+<h2 id="oxford-life-company-overview"><br><strong><strong>Oxford Life company overview </strong></strong></h2>
 
 <p>Oxford Life Insurance Company was organized and incorporated as a limited capital stock life and disability <a href="https://www.oxfordlife.com/" target="_blank" rel="noreferrer noopener">insurer</a> in Arizona on July 27, 1965. They are a wholly-owned subsidiary of AMERCO. </p>
 
@@ -495,7 +495,7 @@ sidebar: true
 
 <p>A.M. Best is a well-respected financial agency. That’s why we always look at their rating when reviewing the financial strength of insurance companies. A good score from A.M. Best shows that a company is financially stable and can continue operations in the future.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you want Oxford Life burial insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -509,7 +509,7 @@ sidebar: true
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is Oxford Life Insurance still in business?</strong></p>
 
@@ -687,21 +687,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a></div>
 
-<h2 class="as-h5">2 Comments</h2>
+<h2 class="as-h5">2 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-11299">

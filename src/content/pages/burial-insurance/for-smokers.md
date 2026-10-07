@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-for-smokers"> <br><strong><strong>What Is My Best Insurance Option If I Have A History Of Smoking? </strong></strong></h2>
+<h2 id="best-insurance-option-for-smokers"> <br><strong><strong>What is my best insurance option if I have a history of smoking? </strong></strong></h2>
 
 <p><strong>CIGARETTES</strong></p>
 
@@ -112,7 +112,7 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 
 <p><strong>Best Option</strong>: First-day coverage plan with Nonsmoker rate</p>
 
-<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="types-of-burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -151,7 +151,7 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -200,7 +200,7 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-a-medical-exam-to-qualify"> <br><strong>If I’m Smoker, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-a-medical-exam-to-qualify"> <br><strong>If I’m smoker, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for smokers.</p>
 
@@ -208,7 +208,7 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-smokers"> <br><strong><strong>Burial Insurance Underwriting If You’re A Smoker</strong></strong></h2>
+<h2 id="insurance-underwriting-for-smokers"> <br><strong><strong>Burial insurance underwriting if you’re a smoker</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -277,7 +277,7 @@ smoking question</p>
 
 <p>Be honest; that is the best way to deal with smoking when applying for insurance coverage.</p>
 
-<h2 id="determining-insurance-needs"><br><strong>How Much Insurance Do I Need If I’m A Smoker?</strong></h2>
+<h2 id="determining-insurance-needs"><br><strong>How much insurance do I need if I’m a smoker?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -385,11 +385,11 @@ smoking question</p>
 </tbody>
 </table>
 
-<h2 id="paying-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="smoking-and-burial-insurance-riders"><br><strong>Smoking And Burial Insurance Riders</strong></h2>
+<h2 id="smoking-and-burial-insurance-riders"><br><strong>Smoking and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -414,7 +414,7 @@ smoking question</p>
 </tbody>
 </table>
 
-<h2 id="why-do-smokers-pay-higher-premiums"> <br><strong>Why Do Tobacco Users And Smokers Pay More For Life Insurance? </strong></h2>
+<h2 id="why-do-smokers-pay-higher-premiums"> <br><strong>Why do tobacco users and smokers pay more for life insurance? </strong></h2>
 
 <p>Using tobacco products comes with well-known risks, and insurance companies charge accordingly. </p>
 
@@ -435,7 +435,7 @@ smoking question</p>
 
 <p>If you quit using tobacco products for 12 months, it’s possible to have the insurance company e-evaluate your smoking situation and lower your premium payments.</p>
 
-<h2 id="smoker-and-insurance-rates"> <br><strong>How Much More Do You Have To Pay If You’re A Smoker? </strong></h2>
+<h2 id="smoker-and-insurance-rates"> <br><strong>How much more do you have to pay if you’re a smoker? </strong></h2>
 
 <p>Generally, burial insurance for smokers and tobacco product users is higher. They charge a higher premium for smokers and tobacco product users because of the risks involved. </p>
 
@@ -455,7 +455,7 @@ smoking question</p>
 
 <p>But, if you started smoking after you bought life insurance, your rates wouldn’t increase.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -470,7 +470,7 @@ smoking question</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Smoker</strong></h2>
+<h2 id="uses-of-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance for smoker</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -487,7 +487,7 @@ smoking question</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><br><strong>How can Final Expense Guy help me? </strong></h2>
 
 <p>Finding a policy if you are a current or ex-smoker needn’t be frustrating; working with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
@@ -499,7 +499,7 @@ smoking question</p>
 
 <p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you accurate life insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can smokers get life insurance?</strong></p>
 

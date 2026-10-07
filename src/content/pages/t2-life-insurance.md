@@ -16,7 +16,7 @@ source: "new"
 
 Did you get a card in the mail marked "T2" or "T-2" about burial or final expense benefits? Here's what that form is, what can happen if you mail it back, and how to judge a real insurance offer.
 
-## What is the T2 life insurance form?
+## What is the t2 life insurance form?
 
 The T2 form is a mailer about final expense insurance, the small life insurance policies people buy to cover funeral costs and final bills. It asks you to send back some personal information.
 
@@ -31,7 +31,7 @@ Here's what the Department found when it looked into that card:
 
 We found regulator records showing "T-2" on this kind of mailer. We did not find an official source that explains what the "T-2" code itself stands for.
 
-## What the T2 form is not
+## What the t2 form is not
 
 - **It's not an insurance company.** We found no evidence of an insurance company named T2.
 - **It's not an insurance policy.** Nothing on the card gives you coverage.
@@ -143,17 +143,17 @@ It won't stop all of it:
 - It doesn't remove you from every mailing list.
 - Companies you already do business with can still mail you.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
-### Is T2 life insurance a real insurance company?
+### Is t2 life insurance a real insurance company?
 
 We found no evidence that T2 is an insurance company. The "T-2" label has shown up on a final expense mailer that, according to the Nebraska Department of Insurance, came from a lead-generation service.
 
-### Is the T2 form from the government?
+### Is the t2 form from the government?
 
 In the regulator examples we found, no. Nebraska traced its T-2 card to a lead-generation service. D.C. said a similar F-1 mailer was not from the District government and was not government-sponsored funeral insurance.
 
-### Do I have to send the T2 form back?
+### Do I have to send the t2 form back?
 
 No. It's a marketing mailer, not a bill or a government notice.
 

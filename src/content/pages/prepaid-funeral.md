@@ -46,7 +46,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-a-prepaid-funeral-plan"><strong>What Is A Prepaid Funeral Plan?</strong></h2>
+<h2 id="what-is-a-prepaid-funeral-plan"><strong>What is a prepaid funeral plan?</strong></h2>
 
 <p>Prepaid Funeral Plans are usually sold by funeral homes to allow you to pay for the funeral in advance.</p>
 
@@ -56,7 +56,7 @@ sidebar: true
 
 <p>All of your burial details are planned and ready to go on the final day. Prepaid contracts lock in today’s funeral rates, and you don’t have to worry about inflation. You effectively freeze the cost at today’s prices, and your funeral will be protected from future price increases.</p>
 
-<h2 id="how-do-prepaid-funeral-plans-work"><br><strong>How Do Prepaid Funeral Plans Work?</strong></h2>
+<h2 id="how-do-prepaid-funeral-plans-work"><br><strong>How do prepaid funeral plans work?</strong></h2>
 
 <p>If you choose to prepay a funeral home, you will either pay a lump sum or installment payments to the funeral home or the plan provider. They invest your money through:</p>
 
@@ -69,7 +69,7 @@ sidebar: true
 
 <h3><strong>Should you pay for your funeral in advance?&#160;</strong></h3>
 
-<h2 id="prepaid-funeral-pros-and-cons"><br><strong>Prepaid Funeral Pros And Cons</strong></h2>
+<h2 id="prepaid-funeral-pros-and-cons"><br><strong>Prepaid funeral pros and cons</strong></h2>
 
 <p><strong>PREPAID FUNERAL PRO’S</strong></p>
 
@@ -136,7 +136,7 @@ sidebar: true
 <li>Motorcycle escorts</li>
 </ul>
 
-<h2 id="questions-to-ask-the-prepaid-funeral-provider"><br><strong>Questions To Ask The Prepaid Funeral Provider</strong></h2>
+<h2 id="questions-to-ask-the-prepaid-funeral-provider"><br><strong>Questions to ask the prepaid funeral provider</strong></h2>
 
 <ol>
 <li>What is included in the plan, and what potential costs are not included?</li>
@@ -153,7 +153,7 @@ sidebar: true
 <li>How will the funeral director know about the plan holder’s death?</li>
 </ol>
 
-<h2 id="other-ways-to-prepay-for-funeral-expenses"><br><strong>Other Ways To Prepay For Funeral Expenses</strong></h2>
+<h2 id="other-ways-to-prepay-for-funeral-expenses"><br><strong>Other ways to prepay for funeral expenses</strong></h2>
 
 <p><strong>Joint bank account</strong></p>
 
@@ -175,7 +175,7 @@ sidebar: true
 
 <p>You can plan your funeral and lock in the cost of services at today’s prices. Your money is protected from loss since the insurance company and the funeral home is separate entities. If the funeral home went out of business, your insurance payout would still be available to pay for the funeral cost. However, you could lose the locked-in cost-benefit of your prepaid funeral plan if the funeral home goes out of business.<br></p>
 
-<h2 id="the-best-way-to-prepay-for-funeral-expenses"><strong>The Best Way To Prepay For Funeral Expenses </strong></h2>
+<h2 id="the-best-way-to-prepay-for-funeral-expenses"><strong>The best way to prepay for funeral expenses </strong></h2>
 
 <p><a rel="noreferrer noopener" href="/burial-insurance/is-burial-insurance-permanent/" target="_blank">Burial insurance</a> is the best way to prepay for funeral expenses. Think of it as a prepaid funeral plan with benefits. A burial insurance policy is similar to prepaid funeral plans in a way that helps you prepay for your funeral expenses.</p>
 
@@ -199,7 +199,7 @@ sidebar: true
 
 <p>Please call us at (888)862-9456 if you have any questions or fill in the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page to get accurate quotes from different insurance carriers.</p>
 
-<h2 id="frequently-asked-questions"> <strong>Frequently Asked</strong> <strong>Additional </strong></h2>
+<h2 id="frequently-asked-questions"> <strong>Frequently asked</strong> <strong>additional </strong></h2>
 
 <p><strong>What is prepaid funeral plan?</strong></p>
 

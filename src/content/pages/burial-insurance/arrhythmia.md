@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-arrhythmia"><strong>What Is Arrhythmia?</strong></h2>
+<h2 id="what-is-arrhythmia"><strong>What is arrhythmia?</strong></h2>
 
 <p>Arrhythmia is a general term for any irregularity in your heartbeat. A normal heart rhythm falls within a certain range of beats per minute (bpm). Arrhythmias can be:</p>
 
@@ -64,7 +64,7 @@ sidebar: true
 
 <p>Life insurance companies view arrhythmia as a potential health risk, since it can increase the chances of complications like stroke or heart failure.&#160;</p>
 
-<h2 id="getting-burial-insurance-with-arrhythmia"><strong>Can I Get Burial Insurance If I Have Arrhythmia?</strong></h2>
+<h2 id="getting-burial-insurance-with-arrhythmia"><strong>Can I get burial insurance if I have arrhythmia?</strong></h2>
 
 <p><strong>YES: </strong>You can qualify forfirst-day coverage&#160;<strong>d</strong>epending on your overall health and the plans available in your state.</p>
 
@@ -72,25 +72,25 @@ sidebar: true
 
 <p>If you don’t qualify for first-day coverage, you can still qualify for guaranteed-issue burial insurance that doesn’t ask health questions.</p>
 
-<h2 id="burial-insurance-available"><strong>What Are The Types Of Burial Insurance Available To People Who Have Arrhythmia?</strong></h2>
+<h2 id="burial-insurance-available"><strong>What are the types of burial insurance available to people who have arrhythmia?</strong></h2>
 
 <p><strong>FIRST-DAY COVERAGE:</strong> This burial insurance has no waiting period. Your beneficiaries will receive a 100% death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance.&#160;</p>
 
 <p><strong>GUARANTEED ISSUE LIFE INSURANCE:</strong> This policy does not require a medical exam or health questions. You will be approved regardless of any medical condition you have. The downside is the mandatory two-year waiting period. If you pass away during the first two years, the insurance provider will only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
-<h2 id="best-option-for-people-with-arrhythmia"><strong>What Is My Best Insurance Option If I Have Arrhythmia?</strong></h2>
+<h2 id="best-option-for-people-with-arrhythmia"><strong>What is my best insurance option if I have arrhythmia?</strong></h2>
 
 <p>Some burial insurance companies are not concerned with arrhythmia or irregular heartbeat and don’t ask about it on their health questionnaire.&#160;</p>
 
 <p>If you’ve ever been diagnosed, received treatment, or advised to receive treatment and medication for arrhythmia, your preferred option should always be a first-day coverage plan.</p>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Medical exams, blood tests, and urine samples are not required for burial insurance approval.</p>
 
 <p>The best burial insurance plans with first-day coverage ask some basic health questions. If you go with the best company, you can often get official approval from the insurance carrier within minutes!</p>
 
-<h2 id="cost-of-burial-insurance"><strong>What Is The Cost Of Burial Insurance If I Have Arrhythmia?</strong></h2>
+<h2 id="cost-of-burial-insurance"><strong>What is the cost of burial insurance if I have arrhythmia?</strong></h2>
 
 <p><strong>The cost of burial insurance will depend on your:</strong></p>
 
@@ -104,7 +104,7 @@ sidebar: true
 <li>Type of policy</li>
 </ul>
 
-<h2 id="underwriting-arrhythmia"><strong>Burial Insurance Underwriting If You Have Arrhythmia</strong></h2>
+<h2 id="underwriting-arrhythmia"><strong>Burial insurance underwriting if you have arrhythmia</strong></h2>
 
 <p><strong>Here’s how some insurance companies ask about arrhythmia on the insurance application:</strong></p>
 
@@ -135,7 +135,7 @@ sidebar: true
 
 <p>Taking medications to control your condition will be seen as positive by the insurers, so if you take drugs to regulate your heartbeat, it will not be counted against you as long as you don’t have significant changes in your medication recently.</p>
 
-<h2 id="information-we-need"><strong>Information We Need if You Had A History Of Arrhythmia</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you had a history of arrhythmia</strong></h2>
 
 <p><strong>Here are some of the questions we may ask to get you the best plan and pricing:</strong></p>
 
@@ -152,17 +152,17 @@ sidebar: true
 <li>When were you diagnosed with arrhythmia?</li>
 </ul>
 
-<h2 id="rejected-application"><strong>What If My Application Was Rejected Because Of Arrhythmia?</strong></h2>
+<h2 id="rejected-application"><strong>What if my application was rejected because of arrhythmia?</strong></h2>
 
 <p>If you’ve been declined in the past because of arrhythmia, it is best to work with an independent insurance agency like Final Expense Guy. We know the underwriting guidelines of multiple companies, and we can get you a better plan with the lowest rates.</p>
 
 <p>We have access to more than 20 insurance companies and can help you qualify with a heart-friendly life insurance company.&#160;</p>
 
-<h2 id="getting-first-day-coverage"><strong>How to Get First-Day Coverage With A History Of Arrhythmia</strong></h2>
+<h2 id="getting-first-day-coverage"><strong>How to get first-day coverage with a history of arrhythmia</strong></h2>
 
 <p>If you have had an arrhythmia, the best way to get a first-day coverage burial insurance plan is to work with an independent agency like Final Expense Guy. Our independent life insurance agents can compare insurance companies offering first-day coverage insurance and recommend the best plan with the best pricing.</p>
 
-<h2 id="applying-for-burial-insurance"><strong>How To Apply For Burial Insurance With Arrhythmia</strong></h2>
+<h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with arrhythmia</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Ask independent insurance agents specializing in underwriting for arrhythmia for guidance. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
@@ -170,7 +170,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Here at Final Expense Guy, we specialize in getting life insurance coverage for people with a history of arrhythmia.</p>
 
@@ -178,7 +178,7 @@ sidebar: true
 
 <p>We will assist you in securing the coverage you need at a rate you can afford. So, if you’re looking for burial insurance for arrhythmia, we can help. Fill out our quote form on this page or call us at (888)862-9456 to get accurate burial insurance quotes.</p>
 
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Is arrhythmia a pre-existing condition for life insurance?</strong></p>
 

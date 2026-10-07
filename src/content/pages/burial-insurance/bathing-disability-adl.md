@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-need-help-with-bathing"><br><strong>What Is My Best Insurance Option If I Need Help With Bathing?</strong></h2>
+<h2 id="best-insurance-option-if-you-need-help-with-bathing"><br><strong>What is my best insurance option if I need help with bathing?</strong></h2>
 
 <p>Life insurance companies define bathing as the ability to clean the body using a sponge, tub, or shower and reaching different parts of the body to soap, rinse and dry.&#160;It also includes getting a basin of water and managing faucets.&#160; You must also be able to get in safely from the shower, shower chair, or bathtub.</p>
 
@@ -75,7 +75,7 @@ sidebar: true
 
 <p>While it costs a bit more than insurance policies with underwriting, you will not have to worry about the possibility of being denied coverage because of your inability to dress on your own or perform any of the activities of daily living.</p>
 
-<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why Do You Need A Guaranteed Issue Burial Insurance If You Need Help With Bathing?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why do you need a guaranteed issue burial insurance if you need help with bathing?</strong></h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you need help with bathing and other <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL</a>s because it’s the only life insurance plan you will qualify for because of your condition.</p>
 
@@ -99,7 +99,7 @@ sidebar: true
 
 <p>You must possess the mental capacity to enter into a legal contract. For example, if you have a severe cognitive impairment like Alzheimer’s disease or dementia and you are not able to legally consent to an agreement, the company may reject your application.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -138,7 +138,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -187,7 +187,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help with bathing or any ADLs.</p>
 
@@ -195,7 +195,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-if-you-need-help-with-bathing"><br><strong>Burial Insurance Underwriting If You Need Help With Bathing</strong></h2>
+<h2 id="insurance-underwriting-if-you-need-help-with-bathing"><br><strong>Burial insurance underwriting if you need help with bathing</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -256,7 +256,7 @@ sidebar: true
 
 <p>No life insurance carrier will offer you first-day coverage during the first two years if you need help performing daily living activities.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Need Help With Bathing?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I need help with bathing?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -316,11 +316,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Needing Help With Bathing And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Needing help with bathing and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -329,7 +329,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-need-help-with-bathing"><br><strong>Information We Need If You Need Help With Bathing</strong></h2>
+<h2 id="information-we-need-if-you-need-help-with-bathing"><br><strong>Information we need if you need help with bathing</strong></h2>
 
 <p>When applying for burial insurance with a bathing disability, it’s important to provide us as much information as possible. This will help us get a good understanding of your condition and provide you with an accurate quote.</p>
 
@@ -345,7 +345,7 @@ sidebar: true
 
 <p>We will ask these questions to assess your current health and burial insurance eligibility. It is important to be honest when answering these questions.</p>
 
-<h2 id="benefits-of-guaranteed-issue-burial-insurance"><br><strong>Benefits Of Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="benefits-of-guaranteed-issue-burial-insurance"><br><strong>Benefits of guaranteed issue burial insurance</strong></h2>
 
 <ol>
 <li><strong>Easy to qualify</strong>. You skip the medical exam and health questions. You will be approved regardless of any medical conditions.</li>
@@ -357,7 +357,7 @@ sidebar: true
 <li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance is whole life insurance that accumulates a cash value that you can withdraw or borrow against.</li>
 </ol>
 
-<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>
+<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The best guaranteed issue life insurance policy</strong></h2>
 
 <p>The best-guaranteed-issue life insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4 year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -365,7 +365,7 @@ sidebar: true
 
 <p>If you need help with bathing, then GI policy is your best choice. Your application will be quick and easy because there are no medical exams or health questions.</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Need Help With Bathing</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance if you need help with bathing</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -384,7 +384,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><br><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Finding a policy for a bathing disability needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
 
