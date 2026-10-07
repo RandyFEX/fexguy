@@ -204,10 +204,10 @@ a:hover {
   margin-bottom: var(--space-2);
 }
 /* An introductory paragraph ("The form asks for:") and the list right
-   after it read as one unit: 8px between them instead of the full
+   after it read as one unit: 4px between them instead of the full
    paragraph gap. The gap after the list is unchanged. */
 .prose :where(p:not([class])):has(+ :where(ul:not([class]), ol:not([class]))) {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-1);
 }
 
 .prose :where(h2) {

@@ -229,9 +229,9 @@ const schema = articleGraph({
   body.page-article-v2 .art-body :is(ul, ol):not([class]) > li > :is(ul, ol):not([class]) {
     margin: var(--space-1) 0 0;
   }
-  /* An introductory paragraph sits 8px above the list it introduces. */
+  /* An introductory paragraph sits 4px above the list it introduces. */
   body.page-article-v2 .art-body p:not([class]):has(+ :is(ul, ol):not([class])) {
-    margin-bottom: var(--space-2);
+    margin-bottom: var(--space-1);
   }
   body.page-article-v2 .art-body li::marker {
     color: var(--color-primary);
