@@ -477,10 +477,9 @@ a:hover {
 }
 
 .wp-content .author-box,
-/* /licenses/: Randy's portrait as supporting content, half its former size
-   (250px; never more than half the column on phones, never under 160px). */
+/* /licenses/: Randy's portrait as small supporting content (125px). */
 .wp-content figure.licenses-portrait img {
-  width: max(10rem, min(15.625rem, 50%));
+  width: 7.8125rem;
 }
 
 /* /licenses/: the 50 state license numbers as a compact list in columns
