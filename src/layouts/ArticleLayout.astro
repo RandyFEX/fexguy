@@ -522,6 +522,17 @@ const schema = articleGraph({
     font-size: 1.125rem;
     letter-spacing: 0.02em;
   }
+  /* Submit button: the site's accessible orange (global --color-accent,
+     #c2410c, 5.2:1 with white), which this template's palette otherwise
+     replaces with green. */
+  body.page-article-v2 .quote-box .lead-form__submit {
+    background: #c2410c;
+    color: #ffffff;
+  }
+  body.page-article-v2 .quote-box .lead-form__submit:hover {
+    background: #c2410c;
+    filter: brightness(0.9);
+  }
 
   /* --- Pre-footer: cream band with the homepage's gold rule ---------------- */
   body.page-article-v2 .pre-footer {

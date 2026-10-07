@@ -81,16 +81,25 @@ const { quickAnswer, takeaways } = Astro.props;
     color: #ffffff;
   }
 
-  /* Here's the Bottom Line: the article's key points. */
+  /* Here's the Bottom Line: the article's key points, white on heritage
+     green (11.7:1). Under a Quick Answer, a gold hairline separates the two. */
   .summary__points {
     padding: var(--space-6) var(--space-5, 1.25rem);
-    background: var(--home-cream);
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+  .summary__answer + .summary__points {
+    border-top: 1px solid var(--home-gold);
   }
   .summary__points-title {
     margin: 0 0 var(--space-4);
     font-size: 1.125rem;
     font-weight: 800;
-    color: var(--color-primary);
+    color: #ffffff;
+  }
+  .summary__points :global(a) {
+    color: #ffffff;
+    text-decoration: underline;
   }
   .summary__list {
     display: grid;
@@ -108,7 +117,7 @@ const { quickAnswer, takeaways } = Astro.props;
     font-weight: 400;
     line-height: 1.5;
     text-transform: none;
-    color: var(--color-text);
+    color: #ffffff;
   }
   .summary__item :global(strong) {
     font-weight: inherit;
@@ -116,7 +125,7 @@ const { quickAnswer, takeaways } = Astro.props;
   .summary__icon {
     flex: none;
     margin-top: 0.15em;
-    color: var(--color-primary);
+    color: #ffffff;
   }
 
   @media (min-width: 48rem) {
