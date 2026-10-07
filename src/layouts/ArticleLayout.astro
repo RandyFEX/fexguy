@@ -30,6 +30,7 @@ import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
 import { lead } from '@/config/lead';
 import { categoryMoreHtml } from '@/lib/hub-nav';
+import { HUB_SUMMARIES } from '@/config/hub-nav';
 
 export interface Props {
   entry: PageEntry;
@@ -87,7 +88,7 @@ const schema = articleGraph({
 
   <div class="container art-grid">
     <article class="art-main">
-      <ArticleSummary quickAnswer={config.quickAnswer} takeaways={article.takeaways} />
+      <ArticleSummary quickAnswer={config.quickAnswer} guide={HUB_SUMMARIES[pagePath(entry)]} takeaways={article.takeaways} />
 
       <p class="art-cta" data-pagefind-ignore>
         <a class="btn btn--primary art-cta__btn" href="#quote">GET MY QUOTE</a>

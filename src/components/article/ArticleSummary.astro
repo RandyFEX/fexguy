@@ -4,16 +4,19 @@
 //    landmark on the page);
 //  - Here's the Bottom Line: the article's own key points, unchanged, as a
 //    scannable list (light cream, so it complements the answer above it).
+// The A–Z hubs answer no single question, so instead of a Quick Answer they
+// get a guide summary (src/config/hub-nav.ts) in the same green treatment.
 // Every key point gets the same typography; nothing is uppercased by CSS.
 interface Props {
   quickAnswer?: string;
+  guide?: { label: string; text: string };
   takeaways?: { label: string; items: string[] };
 }
-const { quickAnswer, takeaways } = Astro.props;
+const { quickAnswer, guide, takeaways } = Astro.props;
 ---
 
 {
-  (quickAnswer || takeaways) && (
+  (quickAnswer || guide || takeaways) && (
     <div class="summary">
       {quickAnswer && (
         <section class="summary__answer" aria-labelledby="quick-answer-title">
@@ -21,6 +24,14 @@ const { quickAnswer, takeaways } = Astro.props;
             Quick Answer
           </h2>
           <p class="summary__text">{quickAnswer}</p>
+        </section>
+      )}
+      {guide && (
+        <section class="summary__answer" aria-labelledby="guide-summary-title">
+          <h2 class="summary__label" id="guide-summary-title">
+            {guide.label}
+          </h2>
+          <p class="summary__text">{guide.text}</p>
         </section>
       )}
       {takeaways && (

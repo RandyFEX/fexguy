@@ -419,3 +419,17 @@ export function allHubNavLinks(): HubLink[] {
   for (const g of COMPANY_GROUPS) for (const e of g.entries) out.push(e, ...(e.also ?? []));
   return out;
 }
+
+/** Guide summaries for the two A–Z hubs (Randy's wording), shown where a
+ *  Quick Answer would be (ArticleSummary). Not a Quick Answer: these pages
+ *  answer no single question. */
+export const HUB_SUMMARIES: Record<string, { label: string; text: string }> = {
+  '/a-z-companies/': {
+    label: 'Company Review Guide',
+    text: "Compare final expense life insurance companies and read individual company reviews before you buy. This guide organizes insurers, programs, agencies, and marketing brands so you can quickly find the company you're researching.",
+  },
+  '/a-z-health/': {
+    label: 'Health Condition Guide',
+    text: 'Find burial insurance information for specific health conditions and medical histories. This guide organizes conditions by category so you can quickly find the information that applies to you.',
+  },
+};
