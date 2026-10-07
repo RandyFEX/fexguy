@@ -508,6 +508,22 @@ a:hover {
   margin: 0;
 }
 
+/* /iul-book/: the book's copyright and disclaimer under the chapter list,
+   as secondary text (13px, muted, 1.45), 6px between its two paragraphs,
+   and one tighter divider into Chapter 1. */
+.wp-content p.book-disclaimer {
+  margin: 0 0 0.375rem;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+.wp-content p.book-disclaimer + hr {
+  margin: var(--space-4) 0 var(--space-6);
+}
+.wp-content p.book-disclaimer + hr + h2 {
+  margin-top: var(--space-6);
+}
+
 /* /randy-vandervaate/: publication logos as a compact grid of equal cells
    (1 column on phones, 2 from 30rem, 3 from 64rem). Each logo keeps its
    own proportions inside the same 208×48 box (contain: no crop, no
