@@ -175,7 +175,10 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     text-decoration: underline;
   }
 
-  @media (min-width: 56rem) {
+  /* Desktop nav from 64rem: GET A QUOTE, RESOURCES, REVIEWS, ABOUT and the
+     phone fit on one line beside the logo from there; narrower screens use
+     the Menu button. */
+  @media (min-width: 64rem) {
     .nav__toggle,
     .nav__toggle:not([hidden]),
     :global(.js) .nav__toggle[hidden] {

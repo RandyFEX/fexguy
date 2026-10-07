@@ -74,6 +74,7 @@ export const site: SiteConfig = {
         { label: 'IUL Playbook: How It Works, What It Promises, & What It Delivers', href: '/iul-book/' },
       ],
     },
+    { label: 'REVIEWS', href: '/reviews/' },
     { label: 'ABOUT', href: '/about/' },
   ],
   footer: {
