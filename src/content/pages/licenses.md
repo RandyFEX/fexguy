@@ -34,10 +34,6 @@ source: "live"
 
 <p><strong>Texas Resident Life &amp; Health License Number:</strong> 2050599</p>
 
-<p>Final Expense Guy is licensed in most states.</p>
-
-<h3 id="h-current-and-past-state-license-numbers">Current and Past State License Numbers</h3>
-
 <p>Below are Randy VanderVaate’s current and past state insurance license numbers.</p>
 
 <ul class="license-grid">
@@ -97,9 +93,7 @@ source: "live"
 
 <p>Here is a partial list of insurance companies Randy has been licensed and authorized to assist clients and prospects with over the last decade.</p>
 
-<p>AETNA Accendo Insurance Company<br>American General Life Insurance Company<br>American National Insurance Company<br>American-Amicable Life Insurance Company<br>Americo Financial Life and Annuity Insurance Company<br>Assurity Life Insurance Company<br>Christian Fidelity Life Insurance Company<br>CICA Life Insurance Company<br>Family Life Insurance Company<br>Gerber Life Insurance Company<br>Guarantee Trust Life Insurance Company<br>Independent Order Foresters<br>Liberty Bankers Life Insurance Company</p>
-
-<p>Life Insurance Company of the Southwest<br>Lifeshield National Insurance Co.<br>Mutual Of Omaha Insurance Company<br>Oxford Life Insurance Company<br>PHL Variable Insurance Company<br>Protective Life Insurance Company<br>Pruco Life Insurance Company<br>Royal Neighbors of America<br>S.USA Life Insurance Company, Inc.<br>Savings Bank Mutual Life Insurance Company of Massachusetts<br>Trinity Life Insurance Company<br>United Home Life Insurance Company<br>United of Omaha Life Insurance Company</p>
+<p>Aetna Accendo Insurance Company<br>Aflac Life Insurance<br>American General Life Insurance Company<br>American National Insurance Company<br>American-Amicable Life Insurance Company<br>Americo Financial Life and Annuity Insurance Company<br>Assurity Life Insurance Company<br>Christian Fidelity Life Insurance Company<br>CICA Life Insurance Company<br>Family Life Insurance Company<br>Foresters Independent Order<br>Gerber Life Insurance Company<br>Guarantee Trust Life Insurance Company<br>Liberty Bankers Life Insurance Company<br>Life Insurance Company of the Southwest<br>Lifeshield National Insurance Co.<br>Mutual Of Omaha Insurance Company<br>Oxford Life Insurance Company<br>PHL Variable Insurance Company<br>Protective Life Insurance Company<br>Pruco Life Insurance Company<br>Royal Neighbors of America<br>S.USA Life Insurance Company, Inc.<br>Savings Bank Mutual Life Insurance Company of Massachusetts<br>Trinity Life Insurance Company<br>United Home Life Insurance Company<br>United of Omaha Life Insurance Company</p>
 
 <p>If you have any additional questions, call us at <a href="tel:8888629456">(888) 862-9456</a>.</p>
 
