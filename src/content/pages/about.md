@@ -28,5 +28,5 @@ source: "live"
 
 <h2><strong>Services I Provide</strong></h2>
 
-<p>Whole Life Insurance, Burial Insurance, Cremation Insurance, Funeral Insurance<br>Term Life Insurance, Mortgage Protection, Disability, IUL (Trouble Avoidance) </p>
+<p>Final Expense Life Insurance<br>Term Life Insurance<br>Mortgage Protection Life Insurance</p>
 
