@@ -538,7 +538,7 @@ is in place; see src/content/README.md for how pages were migrated.
   rebuild, rebrand or restore them; their URLs stay real 404s with no
   redirects. /planning-guide/ (the old opt-in page for the planning PDF) is
   retired and 301s to /12-step-final-planning-guide/ (approved); the
-  Resources menu item is "FUNERAL PLANNING GUIDE" linking straight to
+  Resources menu item is "Funeral Planning Guide" linking straight to
   /12-step-final-planning-guide/. /buyers-guide/ stays as the HTML article.
   The planning-guide cover image (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg)
   is kept only because it is still the og:image/twitter:image and JSON-LD
@@ -749,6 +749,9 @@ is in place; see src/content/README.md for how pages were migrated.
   product names, acronyms and people's names kept; quoted terms kept as
   written. Fix the source text, never CSS text-transform. H1s are not
   changed by this rule.
+- Navigation labels (primary nav and the Resources dropdown) are short Title
+  Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
+  "IUL Playbook"; destination pages keep their full titles and H1s.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).
