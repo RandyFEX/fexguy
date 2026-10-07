@@ -11,7 +11,9 @@
 //    in-article "GET … QUOTE(S)" buttons (the page already has the quote form,
 //    the quote button and the call bar);
 //  - "Here's the Bottom Line:" (lines separated by <br> and typed "•"
-//    characters, in one paragraph or two) becomes the key-points list;
+//    characters, in one paragraph or two, or a bold label paragraph followed
+//    by a list, also labelled "The short version") becomes the key-points
+//    list;
 //  - duplicate ids get a numeric suffix; each <h2> gets an id (or keeps its
 //    own), and the H2s feed the contents panel;
 //  - FAQ sections (question <h3>s or bold question paragraphs) are grouped
@@ -34,7 +36,7 @@ export interface HubGroup {
 
 /** What the pass found and did on a page (for audits; not rendered). */
 export interface EnhanceReport {
-  bottomLine: 'one paragraph' | 'two paragraphs' | null;
+  bottomLine: 'one paragraph' | 'two paragraphs' | 'list' | null;
   bottomLineNotes: string[];
   oldByline: boolean;
   oldToc: { links: string[]; missingTargets: string[] } | null;
@@ -179,6 +181,21 @@ export function enhanceArticle(html: string, options: { variant?: 'article' | 'h
       // Bottom Line isn't part of it.
       return intro + (inline ? nextPara : '');
     });
+  }
+  // 3a. The same key points written as a Markdown list (rewritten pages):
+  //     a paragraph holding only the bold label ("Here's the Bottom Line:" or
+  //     "The short version") followed by a plain <ul>; each <li> becomes a
+  //     point. Only at the top of the body, like the form above.
+  if (!takeaways) {
+    rest = rest.replace(
+      /^<p><strong>(Here[’']s the Bottom Line:?|The short version)<\/strong><\/p>\s*<ul>((?:\s*<li>(?:(?!<\/?(?:li|ul|ol)\b)[\s\S])*<\/li>)+)\s*<\/ul>\s*/,
+      (_, label: string, list: string) => {
+        const items = [...list.matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => m[1].trim()).filter(Boolean);
+        takeaways = { label: label.trim(), items };
+        report.bottomLine = 'list';
+        return '';
+      },
+    );
   }
 
   // 3b. Migrated reader comments: <div class="comments"> (one div.comment per

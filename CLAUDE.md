@@ -731,8 +731,9 @@ is in place; see src/content/README.md for how pages were migrated.
   Don't add one to a page whose article contradicts itself on its main
   question (the audit's FLAG list) until Randy resolves the conflict; no
   Quick Answer on /a-z-health/, /a-z-companies/, and (held by Randy)
-  /mortgage-protection-life-insurance/, /buyers-guide/,
-  /mutual-of-omaha-burial-insurance/.
+  /buyers-guide/, /mutual-of-omaha-burial-insurance/.
+  /mortgage-protection-life-insurance/ got Randy's Quick Answer (October
+  2026); its "The short version" list is its Bottom Line panel.
 
 ## Conventions
 

@@ -986,7 +986,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
       { href: '/term-life-insurance-doctors/' },
     ],
   },
-  '/mortgage-protection-life-insurance/': { section: 'none' },
+  '/mortgage-protection-life-insurance/': {
+    section: 'none',
+    // Wording supplied by Randy (October 2026).
+    quickAnswer:
+      'Mortgage protection life insurance is life insurance purchased to help your family pay the mortgage if you die. For many homeowners, term life insurance is the most practical option because it can provide a larger death benefit during the years the mortgage is being paid.',
+  },
   '/cancer-insurance/': { section: 'none' },
   '/children-grandchild-policies/': {
     section: 'none',
