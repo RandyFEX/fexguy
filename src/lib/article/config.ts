@@ -18,6 +18,7 @@ export const SECTIONS = {
   healthConditions: { label: 'Health Conditions', href: '/a-z-health/' },
   companyReviews: { label: 'Company Reviews', href: '/a-z-companies/' },
   burialInsurance: { label: 'Burial Insurance', href: '/burial-insurance/' },
+  iulPlaybook: { label: 'IUL Playbook', href: '/iul-book/' },
 } as const satisfies Record<string, Required<Crumb>>;
 
 export type SectionKey = keyof typeof SECTIONS;

@@ -326,6 +326,47 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/final-expense-life-insurance-medicaid/': { section: 'burialInsurance' },
   '/medicaid-spend-down-rules-on-life-insurance/': { section: 'burialInsurance' },
 
+  // Remaining editorial articles (October 2026). Funeral, cremation and
+  // end-of-life articles have no indexable hub, so they sit at Home › page;
+  // flameless cremation is a burial-insurance article.
+  '/burial-vs-cremation/': { section: 'none' },
+  '/cremation-cost-and-info/': { section: 'none' },
+  '/cremation-cost-questions/': { section: 'none', crumb: 'Cremation Questions' },
+  '/how-much-cremation-cost/': { section: 'none' },
+  '/how-much-does-a-funeral-cost/': { section: 'none' },
+  '/pay-for-a-funeral-without-life-insurance/': { section: 'none' },
+  '/prepaid-caskets-pros-and-cons/': { section: 'none' },
+  '/prepaid-funeral/': { section: 'none' },
+  '/what-to-do-when-a-loved-one-dies/': { section: 'none' },
+  '/burial-insurance/donating-your-body-to-science/': { section: 'none', crumb: 'Donating Your Body to Science' },
+  '/flameless-cremation-burial-insurance/': { section: 'burialInsurance' },
+  // Occupation and member-organization pages: final-expense articles go under
+  // Burial Insurance; employer group life is top level.
+  '/burial-insurance/final-expense-insurance-for-pastors-and-congregations/': { section: 'burialInsurance', crumb: 'Pastors and Congregations' },
+  '/burial-insurance/native-americans/': { section: 'burialInsurance' },
+  '/burial-insurance/veterans/': { section: 'burialInsurance' },
+  '/final-expense-life-insurance-retired-truckers/': { section: 'burialInsurance' },
+  '/american-legion-life-insurance/': { section: 'burialInsurance' },
+  '/elks-lodge-life-insurance-options/': { section: 'burialInsurance' },
+  '/lions-club-member-life-insurance/': { section: 'burialInsurance', crumb: 'Lions Club Member Life Insurance' },
+  '/veterans-of-foreign-wars-vfw-life-insurance-options/': { section: 'burialInsurance', crumb: 'VFW Life Insurance Options' },
+  '/life-insurance-for-employees/': { section: 'none' },
+  // Term, mortgage protection and other products: top level for now.
+  '/term-life-conversion-to-whole-life/': { section: 'none' },
+  '/term-life-insurance-doctors/': { section: 'none' },
+  '/term-life-insurance-truckers/': { section: 'none' },
+  '/term-life-insurance-guide-everyone/': { section: 'none' },
+  '/mortgage-protection-life-insurance/': { section: 'none' },
+  '/long-term-care-insurance-guide/': { section: 'none' },
+  '/cancer-insurance/': { section: 'none' },
+  '/children-grandchild-policies/': { section: 'none' },
+  // IUL articles: section IUL Playbook (/iul-book/, which keeps its own layout).
+  '/iul-book/iul-church-members-faith-based-communities/': { section: 'iulPlaybook' },
+  '/iul-book/iul-military-members-veterans/': { section: 'iulPlaybook' },
+  '/iul-book/iul-police-officers-firefighters/': { section: 'iulPlaybook', crumb: 'IULs for Police and Firefighters' },
+  '/iul-book/iuls-for-truckers/': { section: 'iulPlaybook', crumb: 'IULs for Truckers' },
+  '/iul-book/teachers-indexed-universal-life-iul/': { section: 'iulPlaybook', crumb: 'IULs for Teachers' },
+
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
