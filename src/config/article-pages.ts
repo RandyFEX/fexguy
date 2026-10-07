@@ -765,6 +765,16 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'No, “state-regulated life insurance” isn’t a government program. It only means a private policy follows your state’s insurance laws, which every legitimate life insurance policy already does. Mailers and ads use the phrase to sound official and collect your information to sell to insurance agents. Most of these offers lead to guaranteed-acceptance policies with a two-year waiting period, while first-day coverage plans pay the full death benefit right away.',
   },
+  // Rewritten T2/T-2 mailer guide (October 2026; Randy's sourced research).
+  '/t2-life-insurance/': {
+    section: 'burialInsurance', crumb: 'T2 Life Insurance Form',
+    quickAnswer:
+      'The T2 (or T-2) form is a mailer, not an insurance company or an insurance policy. Regulators have tied mailers like it to lead generation: if you send the card back, your information can go to an insurance agent or agency who contacts you to sell coverage. The mailer doesn’t decide which insurance company you’re offered, your price, your approval or any waiting period. Those depend on the actual insurance company and policy.',
+    related: [
+      { href: '/burial-insurance/state-regulated-life-insurance/' },
+      { href: '/burial-insurance/scams/' },
+    ],
+  },
   '/burial-insurance/with-first-day-coverage/': {
     section: 'burialInsurance',
     quickAnswer:

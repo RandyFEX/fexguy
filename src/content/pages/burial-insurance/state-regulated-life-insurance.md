@@ -297,6 +297,8 @@ After a doing a quick health review, I was able to place her into a $10,000 whol
 
 <p>Most of the names listed on these mailers are not insurance companies. They’re lead generators using vague or official-sounding names to collect personal information.</p>
 
+<p>One version some people receive is marked “T-2.” See <a href="/t2-life-insurance/">what the T2 life insurance form is and what happens if you send it back</a>.</p>
+
 <p>These marketing companies often sell consumer data to multiple agents, leading to repeated phone calls. So, if an advertisement doesn’t clearly list the insurer’s name, license, address, and underwriting details, that’s a major warning sign.</p>
 
 <hr>

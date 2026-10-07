@@ -435,12 +435,16 @@ is in place; see src/content/README.md for how pages were migrated.
   special benefit; its purpose is collecting their details for agents selling
   ordinary life insurance. /t2-life-insurance/ must eventually read as an
   article exposing that mailer, not a review of a company or product.
-- **Pre-launch content review list** (don't change these until reviewed with
-  Randy): /t2-life-insurance/ — check the carrier-style star rating, the
-  financial-strength section, the rate-analysis/premium table, any implication
-  that T2 sells/issues insurance or that the premiums are T2 rates, claims
-  about government affiliation (or its appearance), and regulatory/legal
-  claims needing verification or sourcing.
+- **/t2-life-insurance/ rewritten** (Randy, October 2026; `source: "new"`, on
+  ArticleLayout under Burial Insurance): now a sourced explainer of the T2/T-2
+  mailer ("What Is the T2 Life Insurance Form?"), built from Randy's research
+  (Nebraska DOI 2022 presentation showing a real "T-2" card, Iowa Insurance
+  Division 2020 release, DC DISB warning about an "F-1" mailer, DMAchoice FAQ).
+  The old star rating, rate table, carrier-review sections, unsupported
+  figures, FAQPage JSON-LD and AI-generated "sample" image were removed. No
+  source explains what "T-2" stands for: don't add one. Linked from
+  /burial-insurance/state-regulated-life-insurance/; not in /a-z-companies/.
+  The unused T2 image files remain in public/wp-content/uploads/2026/01/.
 - **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
   once flagged as showing much less text than their WordPress-export versions
   were each verified against their published WordPress export item, and no
