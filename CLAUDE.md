@@ -406,8 +406,8 @@ is in place; see src/content/README.md for how pages were migrated.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 307 redirects (with the 11 retired
-  /category/ archives, /planning-guide/,
+  /sitemap-index.xml. vercel.json holds 308 redirects (with the 11 retired
+  /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
   /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
@@ -416,6 +416,12 @@ is in place; see src/content/README.md for how pages were migrated.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
   into /t2-life-insurance/ (301; draft not restored).
+- **Cremation-cost pages consolidated** (Randy, October 2026):
+  /cremation-cost-and-info/ is the site's cremation-cost article (title "How
+  Much Does Cremation Cost? Complete 2026 Guide" and a new description,
+  Randy's wording; the "97% of families" claim is gone). /how-much-cremation-cost/
+  (weaker duplicate; no content carried over) was removed and 301s to it, as do
+  /how-much-does-cremation-cost/ and /how-much-does-cremation-cost-od/ (one hop).
 - /mortgage-protection-life-insurance/ is a rewritten, fact-checked article
   Randy approved (October 2026; `source: "new"`), not the old WordPress post.
   Mortgage protection is a legitimate part of the business: present it as a

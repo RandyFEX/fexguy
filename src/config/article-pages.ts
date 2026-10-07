@@ -880,19 +880,14 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     section: 'none',
     quickAnswer:
       'A direct cremation, with no viewing or ceremony, usually runs about $1,000 to $3,000, depending on where you live and the provider. Adding services raises the price fast: the NFDA median for a cremation with a viewing and memorial service is about $6,280. The difference is the extras, like viewings, ceremonies, urns, and funeral home fees. The most expensive part is rarely the cremation itself.',
+    related: [
+      { href: '/cremation-cost-questions/' },
+    ],
   },
   '/cremation-cost-questions/': {
     section: 'none', crumb: 'Cremation Questions',
     quickAnswer:
       'Cremation costs depend heavily on what you choose. Direct cremation, which skips the viewing and ceremony, is the cheapest option. Low advertised prices usually don’t include required fees like death certificates, transportation, and the basic container. Adding a viewing, chapel service, or memorial can make cremation cost about as much as a simple burial package. To save, ask for an itemized price list, compare providers, and know you can use an urn bought elsewhere.',
-  },
-  '/how-much-cremation-cost/': {
-    section: 'none',
-    quickAnswer:
-      'Cremation costs depend on how simple or complicated you make it. A basic direct cremation, which typically includes transfer, cremation, a basic container, and the return of the ashes, can cost around $1,000 to $3,000. A full cremation with a service often runs $5,500 to $6,300 or more. The difference comes down to add-ons like viewings, ceremonies, and funeral home fees, and prices also vary by state and provider.',
-    related: [
-      { href: '/cremation-cost-questions/' },
-    ],
   },
   '/how-much-does-a-funeral-cost/': {
     section: 'none',
@@ -900,7 +895,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
       'A funeral can easily cost thousands of dollars. The median cost of an adult funeral with viewing and burial in the U.S. is $7,848, or up to $9,420 if the cemetery requires a vault. A funeral with viewing and cremation costs $6,970, while a direct cremation can cost less than $1,000. Your total depends on your choices, and items like a cemetery plot, headstone, obituary, and flowers aren’t included in those figures.',
     related: [
       { href: '/burial-vs-cremation/' },
-      { href: '/how-much-cremation-cost/' },
+      { href: '/cremation-cost-and-info/' },
     ],
   },
   '/pay-for-a-funeral-without-life-insurance/': {

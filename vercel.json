@@ -22,12 +22,17 @@
     },
     {
       "source": "/how-much-does-cremation-cost/",
-      "destination": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
       "statusCode": 301
     },
     {
       "source": "/how-much-does-cremation-cost-od/",
-      "destination": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
       "statusCode": 301
     },
     {
