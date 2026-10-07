@@ -30,37 +30,3 @@ source: "live"
 
 <p>Whole Life Insurance, Burial Insurance, Cremation Insurance, Funeral Insurance<br>Term Life Insurance, Mortgage Protection, Disability, IUL (Trouble Avoidance) </p>
 
-<h2 id="h-randy-has-been-featured-in"><br><strong>I’ve Been Featured In:</strong></h2>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="184" src="/wp-content/uploads/2021/04/BL-Best-Company-Logo-Clear-1024x184.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="440" height="67" src="/wp-content/uploads/2021/04/BL-Authority-Magazine.jpg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="469" height="72" src="/wp-content/uploads/2021/04/BL-Investopedia-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="370" height="94" src="/wp-content/uploads/2022/03/MoneyGeek-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="390" height="129" src="/wp-content/uploads/2021/04/BL-The-Simple-Dollar-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="440" height="114" src="/wp-content/uploads/2021/04/BL-Legal-Zoom-Logo.png" alt=""></figure>
-
-<h2 id="h-approved-companies"><br><strong>My Approved Life Insurance Companies</strong></h2>
-
-<p>Here is a partial list of insurance companies I’ve been licensed and authorized to assist his clients with over the last decade.</p>
-
-<p>AETNA Accendo Insurance Company<br>American General Life Insurance Company<br>American National Insurance Company<br>American-Amicable Life Insurance Company<br>Americo Financial Life and Annuity Insurance Company<br>Assurity Life Insurance Company<br>Christian Fidelity Life Insurance Company<br>CICA Life Insurance Company<br>Family Life Insurance Company<br>Gerber Life Insurance Company<br>Guarantee Trust Life Insurance Company<br>Independent Order Foresters<br>Liberty Bankers Life Insurance Company<br></p>
-
-<p>Life Insurance Company of the Southwest<br>Lifeshield National Insurance Co.<br>Mutual Of Omaha Insurance Company<br>Oxford Life Insurance Company<br>PHL Variable Insurance Company<br>Protective Life Insurance Company<br>Pruco Life Insurance Company<br>Royal Neighbors of America<br>S.USA Life Insurance Company, Inc.<br>Savings Bank Mutual Life Insurance Company of Massachusetts<br>Trinity Life Insurance Company<br>United Home Life Insurance Company<br>United of Omaha Life Insurance Company</p>
-
-<p><strong><strong>THE FINAL EXPENSE GUY</strong></strong></p>
-
-<p>Randy VanderVaate<br>President &amp; Licensed Agent<br><em>Term Life &amp; Whole Life Insurance</em></p>
-
-<figure class="randy-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
-
-<p><strong>DIRECT PHONE</strong><br>(888) 862-9456</p>
-
-<p><strong>LICENSED</strong><br>In most states</p>
-
-<p><strong>MAILING ADDRESS</strong><br>Final Expense Guy<br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>
-
