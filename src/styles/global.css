@@ -494,6 +494,61 @@ a:hover {
   margin: 0;
 }
 
+/* /randy-vandervaate/: publication logos as a compact grid of equal cells
+   (1 column on phones, 2 from 30rem, 3 from 64rem). Each logo keeps its
+   own proportions inside the same 208×48 box (contain: no crop, no
+   stretch), so no source canvas sets the size of its cell. */
+.wp-content .media-logos {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--space-6);
+}
+.wp-content .media-logos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+.wp-content .media-logos img {
+  display: block;
+  width: 100%;
+  max-width: 13rem;
+  height: 3rem;
+  object-fit: contain;
+  margin: 0;
+}
+@media (min-width: 30rem) {
+  .wp-content .media-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64rem) {
+  .wp-content .media-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* /randy-vandervaate/: featured articles stay one per row at every width,
+   each row "Title (SOURCE)" as written, with a hairline between rows. */
+.wp-content .media-articles {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--space-6);
+}
+.wp-content .media-articles li {
+  margin: 0;
+  padding-block: var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+}
+.wp-content .media-articles li:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
 /* /licenses/: the 50 state license numbers as a compact list in columns
    (1 on phones, 2 from 30rem, 3 from 64rem). The columns fill top to bottom
    (25 / 17 rows for the 50 states), so the alphabetical order matches the
