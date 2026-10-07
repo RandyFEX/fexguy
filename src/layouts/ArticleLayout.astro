@@ -213,7 +213,9 @@ const schema = articleGraph({
   }
   body.page-article-v2 .art-body :is(ul, ol) {
     margin: 0 0 1.5rem;
-    padding-left: 1.5rem;
+    /* Same text indent as the global --list-indent: the list item adds
+       0.25rem of its own padding. */
+    padding-left: calc(var(--list-indent) - 0.25rem);
   }
   body.page-article-v2 .art-body li {
     margin-bottom: 0.625rem;

@@ -47,6 +47,10 @@
   --container-max: 72rem;
   --prose-max: 42rem;
   --tap-target: 2.75rem; /* 44px minimum touch target */
+  /* Editorial lists: how far list text starts in from the paragraph edge
+     (the bullet or number sits in this gutter). 24px on phones, 28px from
+     tablet width up. */
+  --list-indent: 1.5rem;
 }
 
 *,
@@ -163,8 +167,21 @@ a:hover {
 }
 
 .prose :where(ul, ol) {
-  padding-left: 1.25rem;
+  padding-left: var(--list-indent);
   margin: 0 0 var(--space-4);
+}
+
+/* Lists inside migrated table cells (e.g. old "Table of contents" tables)
+   and the archive page links keep their compact indent. */
+.prose :where(td, th) :where(ul, ol),
+.prose :where(ul.pagination) {
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --list-indent: 1.75rem;
+  }
 }
 
 .prose :where(li) {
