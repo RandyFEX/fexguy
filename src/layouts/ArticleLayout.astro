@@ -116,17 +116,10 @@ const schema = articleGraph({
 </BaseLayout>
 
 <style is:global>
-  /* Palette: the approved homepage tokens (same values as body.page-home in
+  /* Palette: the site colors come from the global tokens (global.css); these
+     are the homepage's extra tokens (same values as body.page-home in
      src/pages/index.astro), scoped to this template's pages. */
   body.page-article-v2 {
-    --color-text: #202522;
-    --color-text-muted: #555b57;
-    --color-surface: #efebe2;
-    --color-border: #ddd7ca;
-    --color-primary: #173f35;
-    --color-primary-hover: #0e2d26;
-    --color-accent: #173f35;
-    --color-call: #173f35;
     --home-cream: #f7f3e8;
     --home-stone: #efebe2;
     --home-gold: #b68a35;
@@ -734,9 +727,9 @@ const schema = articleGraph({
     font-size: 1.125rem;
     letter-spacing: 0.02em;
   }
-  /* Submit button: the site's accessible orange (global --color-accent,
-     #c2410c, 5.2:1 with white), which this template's palette otherwise
-     replaces with green. */
+  /* Submit button: accessible orange (#c2410c, 5.2:1 with white; the old
+     global --color-accent), which the green palette would otherwise
+     replace with green. */
   body.page-article-v2 .quote-box .lead-form__submit {
     background: #c2410c;
     color: #ffffff;

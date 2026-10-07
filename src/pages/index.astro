@@ -62,21 +62,14 @@ const searchable = isSearchable(entry) ? '' : undefined;
 </BaseLayout>
 
 <style is:global>
-  /* Homepage palette. Contrast (WCAG 2.2 AA): charcoal #202522 on white
-     15.6:1, on cream 14.0:1, on stone 13.1:1; muted #555B57 on white 7.0:1,
+  /* Homepage palette (the shared colors are the global tokens in
+     global.css; the homepage-only tokens are below). Contrast (WCAG 2.2
+     AA): charcoal #202522 on white 15.6:1, on cream 14.0:1, on stone 13.1:1; muted #555B57 on white 7.0:1,
      on cream 6.3:1, on stone 5.8:1; heritage green #173F35 on white 11.7:1,
      on cream 10.5:1, on stone 9.8:1 (white on it 11.7:1); gold #B68A35
      only for the short decorative rules and the hero product-line dots
      (never text or controls). */
   body.page-home {
-    --color-text: #202522;
-    --color-text-muted: #555b57;
-    --color-surface: #efebe2;
-    --color-border: #ddd7ca;
-    --color-primary: #173f35;
-    --color-primary-hover: #0e2d26;
-    --color-accent: #173f35;
-    --color-call: #173f35;
     --home-cream: #f7f3e8;
     --home-stone: #efebe2;
     --home-gold: #b68a35;

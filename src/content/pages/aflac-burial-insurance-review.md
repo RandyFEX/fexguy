@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Aflac Burial Insurance Review – Pros &amp; Cons</h1>
 
-<p><strong>Here’s the Bottom Line:</strong></p>
+<p><strong>Here’s What This Means for You:</strong></p>
 
 <p>• Aflac offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aflac is the #1 choice for COPD or very overweight – industry leader in these areas &amp; more</p>
 
