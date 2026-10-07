@@ -13,7 +13,8 @@
 //   crumb        the page's own breadcrumb label; defaults to its H1 when that
 //                is short, otherwise required (the build says so)
 //   variant      'hub' for link-collection pages (default: 'article')
-//   quickAnswer  only wording Randy has supplied or approved; never generated
+//   quickAnswer  Randy's wording, or a summary of the article's own text that
+//                Randy approved; never outside facts
 //   related      optional; existing pages only (checked at build); `title`
 //                defaults to the target page's H1. No links = no section.
 //   relatedHub   optional "see all" link under Related Topics
@@ -102,7 +103,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
 
   // Health rollout (October 2026): every remaining health-condition and
   // health-category page. Same breadcrumb rule as the pilot.
-  '/burial-insurance-breast-cancer/': { family: 'health' },
+  '/burial-insurance-breast-cancer/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'If you’re currently in treatment or recently diagnosed, most companies will decline traditional coverage and only offer guaranteed issue plans with higher costs and waiting periods. If you’ve finished treatment, you’re cancer-free, and it’s been more than 24 months since your last treatment, you can honestly answer “no” to the breast cancer question. Then you’re eligible for a level death benefit plan with first-day coverage from companies with only a two-year look-back period on breast cancer.',
+  },
   '/burial-insurance-defibrillator/': { family: 'health' },
   '/burial-insurance-diabetic-complications/': { family: 'health', crumb: 'Diabetic Complications' },
   '/burial-insurance-kidney-failure/': { family: 'health' },
@@ -144,7 +150,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/cystic-fibrosis/': { family: 'health' },
   '/burial-insurance/dementia-alzheimers/': { family: 'health' },
   '/burial-insurance/depression/': { family: 'health' },
-  '/burial-insurance/diabetes/': { family: 'health' },
+  '/burial-insurance/diabetes/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Getting burial insurance with diabetes is very doable. Burial insurance and whole life policies look closely at your A1C levels, medications, and how well your condition is managed. If your diabetes is stable, you can often qualify for first-day coverage with decent rates. If it’s uncontrolled or comes with complications, you’ll likely be pushed into higher-cost plans or waiting periods.',
+  },
   '/burial-insurance/diabetic-amputation/': { family: 'health' },
   '/burial-insurance/diabetic-coma/': { family: 'health' },
   '/burial-insurance/diabetic-insulin-shock/': { family: 'health' },
@@ -158,7 +169,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/drug-abuse-treatment/': { family: 'health' },
   '/burial-insurance/drug-alcohol-abuse/': { family: 'health' },
   '/burial-insurance/eating-activities-of-daily-living-adl/': { family: 'health', crumb: 'Help with Eating' },
-  '/burial-insurance/emphysema/': { family: 'health' },
+  '/burial-insurance/emphysema/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Getting burial insurance with emphysema depends on how advanced and stable your condition is. If your symptoms are mild and well-managed, you may still qualify for burial insurance or whole life with immediate coverage. If it’s severe or requires oxygen, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period. Not all companies treat emphysema the same.',
+  },
   '/burial-insurance/endocarditis-heart-infection/': { family: 'health' },
   '/burial-insurance/epilepsy-seizures/': { family: 'health' },
   '/burial-insurance/esophageal-cancer/': { family: 'health' },
@@ -166,7 +182,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/fibromyalgia/': { family: 'health' },
   '/burial-insurance/for-smokers/': { family: 'health', crumb: 'Smokers' },
   '/burial-insurance/graves-disease/': { family: 'health' },
-  '/burial-insurance/heart-attack/': { family: 'health' },
+  '/burial-insurance/heart-attack/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Getting burial insurance after a heart attack comes down to timing and how well your health has stabilized. Policies look closely at when it happened, any procedures like stents or bypass, and your current medications. If it’s been at least 1 to 2 years with no issues, you may qualify for immediate coverage with better rates. If it’s recent, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period.',
+  },
   '/burial-insurance/heart-bypass-surgery/': { family: 'health' },
   '/burial-insurance/heart-conditions/': { family: 'health' },
   '/burial-insurance/heart-disease/': { family: 'health' },
@@ -182,7 +203,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/hospice-patients/': { family: 'health', crumb: 'Hospice Patients' },
   '/burial-insurance/huntingtons-disease/': { family: 'health' },
   '/burial-insurance/insulin-diabetics/': { family: 'health' },
-  '/burial-insurance/kidney-disease/': { family: 'health' },
+  '/burial-insurance/kidney-disease/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Getting burial insurance with kidney disease depends on how advanced your condition is and how stable your health has been. If your condition is in its early stages and well managed, you may still qualify for first-day coverage, depending on your zip code. Guaranteed issue plans ask no health questions, but have a two-year waiting period for health-related causes of death.',
+  },
   '/burial-insurance/leukemia/': { family: 'health' },
   '/burial-insurance/liver-disease-liver-disorder/': { family: 'health' },
   '/burial-insurance/liver-disease/': { family: 'health' },
@@ -206,7 +232,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/pacemaker/': { family: 'health' },
   '/burial-insurance/pancreatic-cancer/': { family: 'health' },
   '/burial-insurance/paralysis-paralyzed/': { family: 'health' },
-  '/burial-insurance/parkinsons-disease/': { family: 'health' },
+  '/burial-insurance/parkinsons-disease/': {
+    family: 'health',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Getting burial insurance with Parkinson’s disease comes down to how advanced your condition is right now. Insurance companies look at severity, progression, and whether you can still function independently. If symptoms are mild and stable, you may still qualify for whole life or burial insurance with immediate coverage. If the disease has progressed, you’re more likely to end up in guaranteed issue burial insurance with higher costs and a 2-year waiting period.',
+  },
   '/burial-insurance/peripheral-vascular-disease-pvd-pad/': { family: 'health', crumb: 'Peripheral Vascular Disease' },
   '/burial-insurance/prion-disease/': { family: 'health' },
   '/burial-insurance/prostate-cancer/': { family: 'health' },
@@ -256,7 +287,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/ethos-life-insurance-review/': { family: 'review', crumb: 'Ethos' },
   '/family-benefit-life-burial-insurance-review/': { family: 'review', crumb: 'Family Benefit Life' },
   '/fidelity-life-burial-insurance-review/': { family: 'review', crumb: 'Fidelity Life' },
-  '/foresters-burial-insurance-review/': { family: 'review', crumb: 'Foresters' },
+  '/foresters-burial-insurance-review/': {
+    family: 'review', crumb: 'Foresters',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Foresters burial insurance is whole life insurance called PlanRight, designed to cover final expenses. There’s no medical exam; you only answer a set of health questions. Depending on your health, you can qualify for a level, graded, or modified death benefit, and the level plan has first-day coverage. It’s a decent option in certain situations, but rarely the best value if you actually shop around.',
+  },
   '/gerber-life-insurance-review/': { family: 'review', crumb: 'Gerber Life' },
   '/great-western-burial-insurance-review/': { family: 'review', crumb: 'Great Western' },
   '/guarantee-trust-life-insurance-review/': { family: 'review', crumb: 'Guarantee Trust Life' },
@@ -336,7 +372,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/how-much-does-a-funeral-cost/': { section: 'none' },
   '/pay-for-a-funeral-without-life-insurance/': { section: 'none' },
   '/prepaid-caskets-pros-and-cons/': { section: 'none' },
-  '/prepaid-funeral/': { section: 'none' },
+  '/prepaid-funeral/': {
+    section: 'none',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'A prepaid funeral plan lets you pay a funeral home in advance for specific services, in a lump sum or in installments. The funeral home either puts your money in a state-regulated trust fund or buys a life insurance policy with the death benefit assigned to them. You can lock in today’s prices and reduce stress for your family, but your money is tied to that funeral home.',
+  },
   '/what-to-do-when-a-loved-one-dies/': { section: 'none' },
   '/burial-insurance/donating-your-body-to-science/': { section: 'none', crumb: 'Donating Your Body to Science' },
   '/flameless-cremation-burial-insurance/': { section: 'burialInsurance' },
@@ -355,7 +396,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/term-life-conversion-to-whole-life/': { section: 'none' },
   '/term-life-insurance-doctors/': { section: 'none' },
   '/term-life-insurance-truckers/': { section: 'none' },
-  '/term-life-insurance-guide-everyone/': { section: 'none' },
+  '/term-life-insurance-guide-everyone/': {
+    section: 'none',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Term life insurance covers you for a set period, usually 10 to 30 years, and pays your family if you die during that time. You pay a set premium, and as long as you pay on time, the company cannot change the price during the guaranteed term. It has no cash value. Term life is usually the right tool when your largest financial risks are temporary.',
+  },
   '/mortgage-protection-life-insurance/': { section: 'none' },
   '/long-term-care-insurance-guide/': { section: 'none' },
   '/cancer-insurance/': { section: 'none' },
@@ -369,7 +415,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
 
   // Pillar guides (October 2026): standard article template, section Burial
   // Insurance.
-  '/what-is-burial-insurance/': { section: 'burialInsurance' },
+  '/what-is-burial-insurance/': {
+    section: 'burialInsurance',
+    // Summarized from the article's own text (October 2026 pilot).
+    quickAnswer:
+      'Burial insurance is a type of whole life insurance designed to cover funeral, burial, and other final expenses. It usually offers smaller coverage amounts and is easier to qualify for because most plans don’t require a medical exam. Coverage lasts a lifetime, and your premiums stay the same. Your beneficiary gets a tax-free check they can use however they see fit.',
+  },
   '/final-expense-life-insurance-complete-guide/': { section: 'burialInsurance' },
   '/burial-insurance/top-10-final-expense-life-insurance-companies/': { section: 'burialInsurance' },
   '/buyers-guide/': { section: 'burialInsurance' },

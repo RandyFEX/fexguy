@@ -41,8 +41,9 @@ export interface ArticlePageConfig {
    * short (≤ 50 characters, no "[…]" tag); otherwise required. */
   crumb?: string;
   variant?: ArticleVariant;
-  /** "Quick Answer": only wording Randy supplied or approved. Optional; the
-   * template omits the block without it. Never generated. */
+  /** "Quick Answer": Randy's wording, or a summary of the article's own text
+   * that Randy approved (no outside facts). Optional; the template omits the
+   * block without it. */
   quickAnswer?: string;
   /** Related Topics: optional; without links the section isn't shown. */
   related?: { href: string; title?: string }[];
