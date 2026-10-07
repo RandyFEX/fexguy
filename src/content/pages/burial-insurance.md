@@ -25,98 +25,13 @@ sidebar: true
 
 <p>If you are looking for the lowest-cost and most predictable form of lifetime coverage, you have found the definitive resource for your planning needs. This comprehensive guide walks you step-by-step through every critical decision to make sure your final expense whole life insurance policy provides lasting peace of mind.</p>
 
+<div data-hub-nav="burial-guides"></div>
+
 <h2>Burial Insurance Eligibility by Health Condition</h2>
 
 <p>We specialize in finding coverage for high-risk conditions that other agencies decline. Click a condition below to see specific rates and available riders:</p>
 
-<h3><strong>CANCER</strong></h3>
-
-<ul>
-<li><a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell &amp; Squamous Cell</a></li>
-<li><a href="/burial-insurance/bladder-cancer/" target="_blank" rel="noreferrer noopener">Bladder Cancer</a></li>
-<li><a href="/burial-insurance/brain-cancer/" target="_blank" rel="noreferrer noopener">Brain Cancer</a></li>
-<li><a href="/burial-insurance/breast-cancer/" target="_blank" rel="noreferrer noopener">Breast Cancer</a></li>
-<li><a href="/burial-insurance/cervical-cancer/" target="_blank" rel="noreferrer noopener">Cervical Cancer</a></li>
-<li><a href="/burial-insurance/colorectal-cancer/" target="_blank" rel="noreferrer noopener">Colorectal Cancer</a></li>
-<li><a href="/burial-insurance/esophageal-cancer/" target="_blank" rel="noreferrer noopener">Esophageal Cancer</a></li>
-<li><a href="/burial-insurance/hodgkins-disease/" target="_blank" rel="noreferrer noopener">Hodgkin’s Disease</a></li>
-<li><a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">Leukemia Blood Cancer</a></li>
-<li><a href="/burial-insurance/lung-cancer/" target="_blank" rel="noreferrer noopener">Lung Cancer</a></li>
-<li><a href="/burial-insurance/multiple-myeloma/" target="_blank" rel="noreferrer noopener">Multiple Myeloma</a></li>
-<li><a href="/burial-insurance/ovarian-cancer/" target="_blank" rel="noreferrer noopener">Ovarian Cancer</a></li>
-<li><a href="/burial-insurance/pancreatic-cancer/" target="_blank" rel="noreferrer noopener">Pancreatic Cancer</a></li>
-<li><a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a></li>
-<li><a href="/burial-insurance/sarcoma/" target="_blank" rel="noreferrer noopener">Sarcoma</a></li>
-<li><a href="/burial-insurance/skin-cancer/" target="_blank" rel="noreferrer noopener">Skin Cancer</a></li>
-<li><a href="/burial-insurance/testicular-cancer/" target="_blank" rel="noreferrer noopener">Testicular Cancer</a></li>
-<li><a href="/burial-insurance/thyroid-cancer/" target="_blank" rel="noreferrer noopener">Thyroid Cancer</a></li>
-</ul>
-
-<h3>DIABETES &amp; DIABETIC COMPLICATIONS</h3>
-
-<ul>
-<li><a href="/burial-insurance/diabetic-amputation/" target="_blank" rel="noreferrer noopener">Diabetic Amputation</a></li>
-<li><a href="/burial-insurance/diabetic-coma/" target="_blank" rel="noreferrer noopener">Diabetic Coma</a></li>
-<li><a href="/burial-insurance/diabetic-insulin-shock/" target="_blank" rel="noreferrer noopener">Diabetic Insulin Shock</a></li>
-<li><a href="/burial-insurance/diabetic-nephropathy/" target="_blank" rel="noreferrer noopener">Diabetic Nephropathy</a></li>
-<li><a href="/burial-insurance/diabetic-neuropathy/" target="_blank" rel="noreferrer noopener">Diabetic Neuropathy</a></li>
-<li><a href="/burial-insurance/diabetic-retinopathy/" target="_blank" rel="noreferrer noopener">Diabetic Retinopathy</a></li>
-</ul>
-
-<h3>HEART CONDITIONS</h3>
-
-<ul>
-<li><a href="/burial-insurance/angina/" target="_blank" rel="noreferrer noopener">Angina</a></li>
-<li><a href="/burial-insurance/aneurysm/" target="_blank" rel="noreferrer noopener">Aneurysm</a> (Aortic Aneurysm)</li>
-<li><a href="/burial-insurance/afib/" target="_blank" rel="noreferrer noopener">Atrial Fibrillation</a> (Afib)</li>
-<li><a href="/burial-insurance/congestive-heart-failure/" target="_blank" rel="noreferrer noopener">Congestive Heart Failure</a></li>
-<li><a href="/burial-insurance/coronary-artery-disease/" target="_blank" rel="noreferrer noopener">Coronary Artery Disease</a></li>
-<li><a href="/burial-insurance/endocarditis-heart-infection/" target="_blank" rel="noreferrer noopener">Endocarditis</a> (Heart Infection)</li>
-<li><a href="/burial-insurance/heart-attack/" target="_blank" rel="noreferrer noopener">Heart Attack</a></li>
-<li><a href="/burial-insurance/heart-murmur/" target="_blank" rel="noreferrer noopener">Heart Murmur</a></li>
-<li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Heart Surgery</a></li>
-<li><a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">Organ Transplant</a></li>
-<li><a href="/burial-insurance/pacemaker/" target="_blank" rel="noreferrer noopener">Pacemaker</a></li>
-<li><a href="/burial-insurance/stent/" target="_blank" rel="noreferrer noopener">Stent</a></li>
-<li><a href="/burial-insurance/valvular-heart-disease/" target="_blank" rel="noreferrer noopener">Valvular Heart Disease</a></li>
-</ul>
-
-<h3>MENTAL HEALTH CONDITIONS</h3>
-
-<ul>
-<li><a href="/burial-insurance/autism/" target="_blank" rel="noreferrer noopener">Autism</a></li>
-<li><a href="/burial-insurance/bipolar-disorder/" target="_blank" rel="noreferrer noopener">Bipolar Disorder</a></li>
-<li><a href="/burial-insurance/depression/" target="_blank" rel="noreferrer noopener">Depression</a></li>
-<li><a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">Drug &amp; Alcohol Abuse</a></li>
-<li><a href="/burial-insurance/ptsd/" target="_blank" rel="noreferrer noopener">PTSD</a></li>
-<li><a href="/burial-insurance/schizophrenia/" target="_blank" rel="noreferrer noopener">Schizophrenia</a></li>
-</ul>
-
-<h3>NEUROLOGICAL CONDITIONS</h3>
-
-<ul>
-<li><a href="/burial-insurance/brain-tumor/" target="_blank" rel="noreferrer noopener">Brain Tumor</a></li>
-<li><a href="/burial-insurance/cerebral-palsy/" target="_blank" rel="noreferrer noopener">Cerebral Palsy</a></li>
-<li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Dementia &amp; Alzheimers</a></li>
-<li><a href="/burial-insurance/epilepsy-seizures/" target="_blank" rel="noreferrer noopener">Epilepsy &amp; Seizures</a></li>
-<li><a href="/burial-insurance/huntingtons-disease/" target="_blank" rel="noreferrer noopener">Huntington’s Disease</a></li>
-<li><a href="/burial-insurance/lou-gehrigs-disease-als/" target="_blank" rel="noreferrer noopener">Lou Gehrig’s Disease (ALS)</a></li>
-<li><a href="/burial-insurance/multiple-sclerosis/" target="_blank" rel="noreferrer noopener">Multiple Sclerosis</a></li>
-<li><a href="/burial-insurance/parkinsons-disease/" target="_blank" rel="noreferrer noopener">Parkinsons Disease</a></li>
-<li><a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">Stroke / TIA</a></li>
-<li><a href="/burial-insurance/traumatic-brain-injury-tbi/" target="_blank" rel="noreferrer noopener">Traumatic Brain Injury (TBI)</a></li>
-</ul>
-
-<h3>RESPIRATORY &amp; LUNG CONDITIONS</h3>
-
-<ul>
-<li><a href="/burial-insurance/asthma/" target="_blank" rel="noreferrer noopener">Asthma</a></li>
-<li><a href="/burial-insurance/chronic-bronchitis/" target="_blank" rel="noreferrer noopener">Chronic Bronchitis</a></li>
-<li><a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a></li>
-<li><a href="/burial-insurance/emphysema/" target="_blank" rel="noreferrer noopener">Emphysema</a></li>
-<li><a href="/burial-insurance/oxygen-use/" target="_blank" rel="noreferrer noopener">Oxygen Use</a></li>
-<li><a href="/burial-insurance/sleep-apnea/" target="_blank" rel="noreferrer noopener">Sleep Apnea</a></li>
-</ul>
+<div data-hub-nav="burial-health"></div>
 
 <hr>
 

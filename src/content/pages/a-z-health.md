@@ -10,6 +10,8 @@ sidebar: true
 
 <h1>A to Z Health Conditions Accepted</h1>
 
+<div data-hub-nav="az-health"></div>
+
 <h2 id="h-1st-day-coverage-vs-2-year-wait-by-illness"><strong>1st-Day Coverage vs 2-Year Wait By Illness</strong></h2>
 
 <p>We can help you find first-day coverage or benefits for the following illnesses.</p>

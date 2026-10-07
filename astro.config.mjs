@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
 import { quoteFormPlugin } from './src/lib/lead/quote-form-plugin.ts';
+import { hubNavPlugin } from './src/lib/hub-nav.ts';
 
 // Keep in sync with `url` in src/config/site.ts.
 const SITE_URL = 'https://fexguy.com';
@@ -62,8 +63,9 @@ export default defineConfig({
     },
   },
   markdown: {
-    // <div data-quote-form></div> in page Markdown -> the quote box (lead form).
-    processor: satteri({ hastPlugins: [quoteFormPlugin] }),
+    // <div data-quote-form></div> in page Markdown -> the quote box (lead form);
+    // <div data-hub-nav="ID"></div> -> hub navigation (src/lib/hub-nav.ts).
+    processor: satteri({ hastPlugins: [quoteFormPlugin, hubNavPlugin] }),
   },
   integrations: [
     sitemap({

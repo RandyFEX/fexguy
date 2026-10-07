@@ -29,6 +29,7 @@ import type { ResolvedArticle } from '@/lib/article/config';
 import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
 import { lead } from '@/config/lead';
+import { categoryMoreHtml } from '@/lib/hub-nav';
 
 export interface Props {
   entry: PageEntry;
@@ -40,6 +41,9 @@ const d = entry.data;
 const article = enhanceArticle(entry.rendered?.html ?? '', { variant: config.variant });
 const hub = config.variant === 'hub';
 const searchable = isSearchable(entry) ? '' : undefined;
+// Health category pages: the conditions their article doesn't link yet
+// (src/config/hub-nav.ts), after the article.
+const categoryMore = categoryMoreHtml(pagePath(entry));
 
 // The page's real dates, from its migrated metadata only (never the build).
 const dates = migratedDates(d.jsonLd, d.headMeta);
@@ -95,6 +99,8 @@ const schema = articleGraph({
       {article.intro && <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />}
 
       <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-pagefind-body={searchable} set:html={article.body} />
+
+      {categoryMore && <div class="art-body art-catmore" set:html={categoryMore} />}
 
       <div class="art-end">
         <AuthorBio />
@@ -508,6 +514,204 @@ const schema = articleGraph({
   @media (min-width: 30rem) {
     body.page-article-v2 .art-body--hub .hub-list {
       columns: 2;
+    }
+  }
+
+  /* --- Hub navigation (src/lib/hub-nav.ts) -------------------------------
+     Plain links in the article's own language (hairlines, green, the gold
+     accent). Nothing collapsed; case is never changed by CSS. */
+  body.page-article-v2 .art-body .hubnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body.page-article-v2 .art-body .hubnav li {
+    margin: 0;
+  }
+  body.page-article-v2 .art-body .hubnav a {
+    text-underline-offset: 0.18em;
+  }
+  /* Every listed link is a target of at least 24px (WCAG 2.5.8). */
+  body.page-article-v2 .art-body .hubnav li > a,
+  body.page-article-v2 .art-body .hubnav-all a,
+  body.page-article-v2 .art-body .hubnav-company__also a {
+    display: inline-block;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+  }
+  /* Burial Insurance Guides: one card per cluster, with one primary page,
+     its supporting pages, and "More guides" kept quiet underneath. */
+  body.page-article-v2 .art-body .hubnav-cards {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: 1.5rem;
+  }
+  body.page-article-v2 .art-body .hubnav-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5, 1.25rem) var(--space-5, 1.25rem) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+  }
+  body.page-article-v2 .art-body .hubnav-card__title {
+    margin: 0 0 var(--space-2);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: var(--tap-target);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary svg {
+    flex: none;
+    color: var(--home-gold);
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary:hover span {
+    text-decoration: underline;
+  }
+  body.page-article-v2 .art-body .hubnav-card__links li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-card__more {
+    padding-top: var(--space-3);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  body.page-article-v2 .art-body .hubnav-card__more-label {
+    margin: 0 0 0.125rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body .hubnav-more li {
+    padding-block: 0.125rem;
+  }
+  /* Category tiles (health categories). */
+  body.page-article-v2 .art-body .hubnav-tiles {
+    display: grid;
+    gap: var(--space-3);
+    margin-top: 1rem;
+  }
+  body.page-article-v2 .art-body .hubnav .hubnav-tiles a {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    height: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--home-gold);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  body.page-article-v2 .art-body .hubnav .hubnav-tiles a:hover {
+    background: var(--home-cream);
+    text-decoration: underline;
+  }
+  body.page-article-v2 .art-body .hubnav-all {
+    margin: var(--space-4) 0 0;
+    font-weight: 700;
+  }
+  /* Condition lists: short names in columns, one hairline each. */
+  body.page-article-v2 .art-body .hubnav-grid {
+    margin-top: 0.75rem;
+  }
+  body.page-article-v2 .art-body .hubnav-grid li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    break-inside: avoid;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-group__title {
+    margin-top: 2rem;
+  }
+  /* Company reviews A–Z: letter blocks; "also:" pages under their company. */
+  body.page-article-v2 .art-body .hubnav-az {
+    display: grid;
+    gap: var(--space-4) var(--space-8);
+    margin-top: 0.75rem;
+  }
+  body.page-article-v2 .art-body .hubnav-az__key {
+    margin: 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--color-text);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .hubnav-company > li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-company__name {
+    font-weight: 700;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also {
+    margin-top: 0.25rem;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    padding-block: 0.125rem;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also span {
+    color: var(--color-text-muted);
+  }
+  /* The category pages' list after the article. */
+  body.page-article-v2 .art-catmore {
+    margin-top: 1rem;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body .hubnav-tiles,
+    body.page-article-v2 .art-body .hubnav-az {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-grid,
+    body.page-article-v2 .art-body .hubnav-company--plain {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+    body.page-article-v2 .art-body .hubnav-company--plain > li {
+      break-inside: avoid;
+    }
+  }
+  @media (min-width: 48rem) {
+    body.page-article-v2 .art-body .hubnav-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-tiles,
+    body.page-article-v2 .art-body .hubnav-az {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-grid {
+      columns: 3;
     }
   }
 

@@ -9,6 +9,7 @@ import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
 import { ARTICLE_PAGES } from '@/config/article-pages';
 import { isArticlePage, resolveArticle, type ResolvedArticle } from '@/lib/article/config';
 import { htmlToText } from '@/lib/article/enhance';
+import { allHubNavLinks } from '@/config/hub-nav';
 
 export async function getStaticPaths() {
   const pages = await getPublishedPages();
@@ -18,6 +19,10 @@ export async function getStaticPaths() {
   // Every listed page must exist and be published.
   for (const path of Object.keys(ARTICLE_PAGES)) {
     if (!h1s.has(path)) throw new Error(`src/config/article-pages.ts lists ${path}, which is not a published page`);
+  }
+  // Every hub navigation link (src/config/hub-nav.ts) too.
+  for (const { href } of allHubNavLinks()) {
+    if (!h1s.has(href)) throw new Error(`src/config/hub-nav.ts links ${href}, which is not a published page`);
   }
   return pages
     .filter((entry) => isArticlePage(pagePath(entry)))

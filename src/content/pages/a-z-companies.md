@@ -20,20 +20,20 @@ sidebar: true
 <li><strong><a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AETNA (CVS Health)</a>: </strong>Competitive prices. Good for overweight people &amp; COPD.</li>
 <li><strong>Allstate: </strong>Expensive as a stand-alone product. Strict underwriting with many declines.</li>
 <li><strong>Assurant/American Memorial:</strong> Moderate pricing.</li>
-<li><strong>Americo:</strong> Expensive pricing. Terrible smoker incentive rate program.</li>
+<li><strong><a href="/americo-life-insurance-quit-smoking-advantage/" target="_blank" rel="noreferrer noopener">Americo</a>:</strong> Expensive pricing. Terrible smoker incentive rate program.</li>
 <li><strong><a href="/burial-insurance/american-amicable-life-insurance-review/" target="_blank" rel="noreferrer noopener">American Amicable</a>:</strong> Moderate rates. Good smoker rates.</li>
 <li><strong><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG/American General</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Christian Fidelity:</strong> Good Rates. In-person application only.</li>
 <li><strong><a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
 <li><strong>Farmers Insurance:</strong> Expensive as a stand-alone product. Strict underwriting with many declines.</li>
-<li><strong>Fidelity Life:</strong> Be careful of their term policy. Often 30+% more expensive for final expense.</li>
+<li><strong><a href="/fidelity-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Fidelity Life</a>:</strong> Be careful of their term policy. Often 30+% more expensive for final expense.</li>
 <li><strong><a href="/foresters-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Foresters</a>: </strong>Moderate rates. Good for a few niche illnesses. Fraternal company.</li>
 <li><strong><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>: </strong>Term life insurance. Low cost initially. Large 5-year price increases. Cancels after age 80.</li>
 <li><strong><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Grange Insurance:</strong> Average pricing. Not a well-known company.</li>
 <li><strong>Greek Catholic Union:</strong> Average pricing. More restrictive underwriting. Limited state availability.</li>
-<li><strong>Guarantee Trust Life:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
+<li><strong><a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a>:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
 <li><strong><a href="/liberty-bankers-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Liberty Bankers Life</a>:</strong> Niche carrier for specific health problems. Good for younger people.</li>
 <li><strong>Lifeshield Life Insurance Company:</strong> Average pricing.</li>
 <li><strong><a href="/lincoln-heritage-funeral-advantage-review-old/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! About 40% more expensive. Some plans have a 3-year wait.</li>
@@ -56,6 +56,8 @@ sidebar: true
 <p>If it sounds confusing to find the right company with the lowest pricing…you’re right! </p>
 
 <p>If you would like some help getting the best policy at the lowest rates, we can help you compare our 1st-day coverage policies to all the companies shown above.</p>
+
+<div data-hub-nav="az-companies"></div>
 
 <h2 id="2-Year-Waiting-Period-Companies"><br><strong>2-YEAR WAITING PERIOD PLANS</strong></h2>
 
