@@ -14,7 +14,7 @@ source: "live"
 
 <p>The Final Expense Guy is a business entity based in Texas and is licensed to sell life insurance products in most states.</p>
 
-<figure><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
+<figure class="licenses-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <h2 id="h-lines-of-authority"><br><strong>Lines Of Authority</strong></h2>
 
