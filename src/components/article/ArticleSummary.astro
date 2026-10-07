@@ -2,7 +2,8 @@
 // The article's opening summary, one block in two parts with two jobs:
 //  - Quick Answer: a short narrative answer (heritage green, the strongest
 //    landmark on the page);
-//  - Here's the Bottom Line: the article's own key points, unchanged, as a
+//  - Here's What This Means for You: the article's own "Here's the Bottom
+//    Line" points, unchanged (this heading is fixed here), as a
 //    scannable list (light cream, so it complements the answer above it).
 // The A–Z hubs answer no single question, so instead of a Quick Answer they
 // get a guide summary (src/config/hub-nav.ts) in the same green treatment.
@@ -37,7 +38,7 @@ const { quickAnswer, guide, takeaways } = Astro.props;
       {takeaways && (
         <section class="summary__points" aria-labelledby="bottom-line-title">
           <p class="summary__points-title" id="bottom-line-title">
-            {takeaways.label}
+            Here’s What This Means for You:
           </p>
           <ul class="summary__list" role="list">
             {takeaways.items.map((item) => (
