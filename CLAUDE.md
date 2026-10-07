@@ -622,6 +622,18 @@ is in place; see src/content/README.md for how pages were migrated.
   and only supplies the migrated dates (never build time). No FAQPage, sameAs,
   credentials or other schema is generated.
 - Colors/spacing: CSS custom properties at the top of `src/styles/global.css`.
+- Quick Answers (ArticleLayout): the `quickAnswer` field in
+  `src/config/article-pages.ts`, rendered by ArticleSummary above the Bottom
+  Line (not in schema or the search index). Randy's wording, or a summary of
+  that article's own text that Randy approved (October 2026: COPD, a 10-page
+  pilot, then the 152 audited GREEN pages). The article is the source of
+  truth: no outside facts, no added or removed qualifiers, same certainty
+  (can/may/most/often/usually/will), every sentence supported by the page.
+  Don't add one to a page whose article contradicts itself on its main
+  question (the audit's FLAG list) until Randy resolves the conflict; no
+  Quick Answer on /a-z-health/, /a-z-companies/, and (held by Randy)
+  /mortgage-protection-life-insurance/, /buyers-guide/,
+  /mutual-of-omaha-burial-insurance/.
 
 ## Conventions
 
