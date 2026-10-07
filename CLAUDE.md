@@ -44,7 +44,9 @@ is in place; see src/content/README.md for how pages were migrated.
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
   /gtl/ (reproduced Guarantee Trust Life application/e-consent forms; the GTL
-  review article stays).
+  review article stays), and /senior-dollar/ (Randy, October 2026: Senior
+  Dollar is no longer an active project; real 404, no redirect unless a future
+  business decision changes that).
 - **/reviews/ restored** (Randy, October 2026; reverses the earlier decision
   to retire it): the 476 client reviews published on the WordPress /reviews/
   page were preserved word for word in data/customer-reviews.json (with
