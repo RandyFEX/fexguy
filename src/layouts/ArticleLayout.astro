@@ -511,11 +511,18 @@ const schema = articleGraph({
     }
   }
 
-  /* --- Sidebar quote form: the homepage form's white box ------------------ */
+  /* --- Sidebar quote form: the approved gray frame (global, f0c5152): the
+     footer's light gray (this template's --color-surface) behind the whole
+     box, and a narrow band of it around the white form (12px above and
+     below, 6px at the sides). --------------------------------------------- */
   body.page-article-v2 .quote-box--sidebar {
-    background: var(--color-bg);
+    background: var(--color-surface);
     border-color: var(--color-border);
     border-radius: var(--home-radius);
+  }
+  body.page-article-v2 .quote-box--sidebar .lead-form {
+    margin: var(--space-3) 0.375rem;
+    background: var(--color-bg);
   }
   body.page-article-v2 .quote-box__title {
     padding-block: var(--space-4);
