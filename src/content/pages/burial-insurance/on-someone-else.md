@@ -147,7 +147,7 @@ sidebar: true
 
 <p>To learn how these policies work, who can apply and what to check first, see our guide to <a href="/children-grandchild-policies/">life insurance for children and grandchildren</a>.</p>
 
-<p>A whole life insurance policy that builds cash value could be used to pay the grandchildren’s college expenses. This would be an excellent birthday gift for a grandchild.</p>
+<p>A whole life insurance policy builds cash value over time. The owner can usually borrow against it, but policy loans charge interest and can lower the cash value and the death benefit. This would be an excellent birthday gift for a grandchild.</p>
 
 <p><br><strong>BUYING BURIAL INSURANCE ON YOUR SIGNIFICANT OTHER</strong></p>
 
