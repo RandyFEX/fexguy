@@ -488,6 +488,8 @@ sidebar: true
 
 <p>What the seminar does not tell you is that the strategy Nash developed took him decades to execute, required significant capital, depended on the specific contractual characteristics of dividend-paying whole life insurance, and was designed for a buyer with a long time horizon, substantial financial resources, and a high tolerance for complexity. It does not tell you that the IUL product being offered as a vehicle for this strategy lacks the contractual guarantees that the strategy depends on. It does not tell you that the agent presenting the seminar earns a substantially larger commission on the IUL policy than they would on the whole-life policy the strategy was actually built around.</p>
 
+<p>Some versions of this pitch also come with religious or faith-based branding, under names like “Kingdom Banking” or “Infinite Banking God’s Way.” If that’s where you heard about it, read <a href="/iul-book/iul-church-members-faith-based-communities/">what to know about faith-based IUL pitches</a>.</p>
+
 <h3>When Someone Asks You About Infinite Banking</h3>
 
 <p>If you have come to this book because someone introduced you to the Infinite Banking concept and suggested IUL as the vehicle, the most important question you can ask is why they are recommending IUL rather than whole life. A knowledgeable, honest practitioner will provide a specific answer tailored to your situation and clearly explain how the IUL product they recommend addresses the structural differences between whole life and IUL in the context of a borrowing strategy.</p>

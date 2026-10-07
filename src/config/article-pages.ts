@@ -1006,9 +1006,10 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   },
   // IUL articles: section IUL Playbook (/iul-book/, which keeps its own layout).
   '/iul-book/iul-church-members-faith-based-communities/': {
-    section: 'iulPlaybook',
+    section: 'iulPlaybook', crumb: 'IUL for Church Members',
+    // Rewritten October 2026 from Randy's source packet (NAIC illustrations, IRS Pub. 525, Rev. Rul. 2007-38).
     quickAnswer:
-      'For most church members, an IUL is the wrong fit. IULs are best suited for high-income earners who can aggressively fund the policy for many years without missing payments. Cash value is tied to a stock index, but a cap limits how much you can earn while policy expenses and rising insurance costs keep being deducted, so the policy can collapse if premiums are missed or markets change. Most church members are better served by whole life or final expense coverage, and level term life is often ideal for younger church members raising families.',
+      'Names like “Kingdom Banking” or “Infinite Banking God’s Way” describe a money strategy, not a different kind of insurance. The policy is usually an indexed universal life (IUL) policy, and religious framing doesn’t change what its contract says. Before you buy, separate the guaranteed values from the illustrated assumptions, understand the charges and how much you must pay in, and know that loans, a lapse or a surrender can create a tax bill. If you mainly need a death benefit, simpler coverage may fit better.',
   },
   '/iul-book/iul-military-members-veterans/': {
     section: 'iulPlaybook',

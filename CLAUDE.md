@@ -461,6 +461,18 @@ is in place; see src/content/README.md for how pages were migrated.
   2025 rebrand, same owner, DBA of Saturn Street, LLC, "licensed in most
   states", 888-862-9456). No service list, customer counts or licensing
   history. /about/ links to it; it links back to /about/.
+- **/iul-book/iul-church-members-faith-based-communities/ rewritten** (Randy,
+  October 2026; `source: "new"`, IUL Playbook section): "IUL for Church
+  Members: What to Know About Faith-Based IUL Pitches", built from Randy's
+  source packet (NAIC life insurance illustrations page, IRS Pub. 525, the
+  IRS life insurance proceeds FAQ, Rev. Rul. 2007-38 in IRB 2007-25). It
+  separates the product, the strategy and the religious framing; never
+  implies churches or pastors generally promote IUL. The old "IRS Position"
+  tables, complaint-index, lawsuit, "financial ambassador", SEC/FINRA and
+  "every dollar borrowed is taxable" claims, the FAQ and the Scripture were
+  removed. Linked once from /iul-book/ Chapter 6 (end of "What the Seminar
+  Circuit Doesn't Tell You"); it is not a Chapter 24 entry (church membership
+  is not a profession).
 - **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
   once flagged as showing much less text than their WordPress-export versions
   were each verified against their published WordPress export item, and no
