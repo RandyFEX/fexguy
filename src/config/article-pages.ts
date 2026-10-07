@@ -890,11 +890,18 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     section: 'none',
     quickAnswer:
       'Cremation costs depend on how simple or complicated you make it. A basic direct cremation, which typically includes transfer, cremation, a basic container, and the return of the ashes, can cost around $1,000 to $3,000. A full cremation with a service often runs $5,500 to $6,300 or more. The difference comes down to add-ons like viewings, ceremonies, and funeral home fees, and prices also vary by state and provider.',
+    related: [
+      { href: '/cremation-cost-questions/' },
+    ],
   },
   '/how-much-does-a-funeral-cost/': {
     section: 'none',
     quickAnswer:
       'A funeral can easily cost thousands of dollars. The median cost of an adult funeral with viewing and burial in the U.S. is $7,848, or up to $9,420 if the cemetery requires a vault. A funeral with viewing and cremation costs $6,970, while a direct cremation can cost less than $1,000. Your total depends on your choices, and items like a cemetery plot, headstone, obituary, and flowers aren’t included in those figures.',
+    related: [
+      { href: '/burial-vs-cremation/' },
+      { href: '/how-much-cremation-cost/' },
+    ],
   },
   '/pay-for-a-funeral-without-life-insurance/': {
     section: 'none',
@@ -911,6 +918,9 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     // Summarized from the article's own text (October 2026 pilot).
     quickAnswer:
       'A prepaid funeral plan lets you pay a funeral home in advance for specific services, in a lump sum or in installments. The funeral home either puts your money in a state-regulated trust fund or buys a life insurance policy with the death benefit assigned to them. You can lock in today’s prices and reduce stress for your family, but your money is tied to that funeral home.',
+    related: [
+      { href: '/prepaid-caskets-pros-and-cons/' },
+    ],
   },
   '/what-to-do-when-a-loved-one-dies/': {
     section: 'none',
@@ -971,6 +981,9 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     // Summarized from the article's own text (October 2026 pilot).
     quickAnswer:
       'Term life insurance covers you for a set period, usually 10 to 30 years, and pays your family if you die during that time. You pay a set premium, and as long as you pay on time, the company cannot change the price during the guaranteed term. It has no cash value. Term life is usually the right tool when your largest financial risks are temporary.',
+    related: [
+      { href: '/term-life-insurance-doctors/' },
+    ],
   },
   '/mortgage-protection-life-insurance/': { section: 'none' },
   '/long-term-care-insurance-guide/': {

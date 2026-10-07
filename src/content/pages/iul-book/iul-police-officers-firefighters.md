@@ -275,7 +275,7 @@ The Illustration That Looked Like a Pension
 
 <p>In reality, many IUL policies are designed to maximize the writing agents’ commissions, not offer you the long-term stability you are seeking.</p>
 
-<p>The more complicated the structure, the higher the payout for the agent selling it. That’s why it’s pushed heavily to firefighters, police officers, and even teachers under the banner of “retirement income.”</p>
+<p>The more complicated the structure, the higher the payout for the agent selling it. That’s why it’s pushed heavily to firefighters, police officers, and even <a href="/iul-book/teachers-indexed-universal-life-iul/">teachers</a> under the banner of “retirement income.”</p>
 
 <p>You might hear phrases like “bank on yourself,” “beat inflation,” or “grow your pension privately.” Those phrases are marketing tricks that make the policy sound like an investment account, rather than what it is: an expensive life insurance policy tied to the stock market.</p>
 

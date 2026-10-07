@@ -117,7 +117,7 @@ sidebar: true
 
 <p>Managers, supervisors, and mid-level professionals typically fit between $500,000 and $1,000,000. Their salary pays for the core of the family’s lifestyle, and losing it without coverage forces major changes. The policy should replace income for multiple years and pay down the mortgage or rent.</p>
 
-<p>Truckers or trade workers often need $500,000 to $1,500,000. Their income usually supports the entire household, and the family must stay financially stable while the driver is on the road. When that paycheck disappears, the policy must cover years of living costs, remaining debts, and the home.</p>
+<p><a href="/term-life-insurance-truckers/">Truckers</a> or trade workers often need $500,000 to $1,500,000. Their income usually supports the entire household, and the family must stay financially stable while the driver is on the road. When that paycheck disappears, the policy must cover years of living costs, remaining debts, and the home.</p>
 
 <p>Doctors usually need the highest coverage amounts. A physician without ownership may need $1,000,000 to $3,000,000 to replace income, pay off remaining loans, and keep their family stable for years.</p>
 
@@ -231,7 +231,7 @@ sidebar: true
 
 <h2><strong>WHY WORKPLACE TERM LIFE IS NOT ENOUGH</strong></h2>
 
-<p>Workplace term life sometimes provides employees with a small amount of coverage, but it rarely matches what a family needs. The coverage limit is usually tied to a multiple of your salary, which is far too low to replace long-term income or pay off a mortgage.</p>
+<p><a href="/life-insurance-for-employees/">Workplace term life</a> sometimes provides employees with a small amount of coverage, but it rarely matches what a family needs. The coverage limit is usually tied to a multiple of your salary, which is far too low to replace long-term income or pay off a mortgage.</p>
 
 <p>Portability is another problem.</p>
 

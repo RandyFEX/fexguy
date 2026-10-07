@@ -398,7 +398,7 @@ sidebar: true
 <p><strong><br>How can you save on funeral costs?</strong></p>
 
 <ul>
-<li>Donate your body to science.</li>
+<li><a href="/burial-insurance/donating-your-body-to-science/">Donate your body to science</a>.</li>
 <li>Compare prices before deciding on providers</li>
 <li>Skip embalming</li>
 <li>Opt for direct cremation or direct burial</li>
