@@ -40,9 +40,6 @@ const pages = defineCollection({
     /** Show the quote sidebar (Fillout form). True on the pages that had the
      * quote sidebar on the WordPress site. */
     sidebar: z.boolean().default(false),
-    /** false = no call-to-action bar under the header (the homepage, Randy,
-     * October 2026). */
-    ctaBar: z.boolean().default(true),
     /** Where the content came from: "live" (fexguy.com), "wordpress-export", or "new". */
     source: z.string().optional(),
     /** Drafts are never built. */

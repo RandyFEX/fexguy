@@ -661,8 +661,10 @@ is in place; see src/content/README.md for how pages were migrated.
   `tel:8888629456` (no Meta event for phone taps). Never send personal
   information. Meta Automatic Advanced Matching and automatic event setup
   stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
-- Phone placements: header nav, CTA bar under the header, pre-footer CTA,
-  mobile call button (`src/components/lead/`). No pop-ups.
+- Phone placements: header nav, pre-footer CTA, mobile call button
+  (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
+  bar under the header was removed site-wide (Randy, October 2026; the header
+  already has GET A QUOTE and the phone number): don't bring it back.
 
 ## Site search (Pagefind, built October 2026)
 

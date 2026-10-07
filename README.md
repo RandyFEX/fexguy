@@ -33,7 +33,7 @@ src/
     _templates/         Copy-from template for new pages
     README.md           How to add/migrate pages and redirects
   layouts/
-    BaseLayout.astro    <html>/<head>, skip link, header, CTA bar, main,
+    BaseLayout.astro    <html>/<head>, skip link, header, main,
                         pre-footer, footer, mobile call button, site scripts
     ContentLayout.astro Renders a content page (SEO from frontmatter + body,
                         quote sidebar when `sidebar: true`)
@@ -43,7 +43,7 @@ src/
     Navigation.astro    Primary nav (ends with the phone number), mobile menu
     Footer.astro        Footer nav, contact details, copyright
     PhoneButton.astro   Click-to-call button (tel:8888629456)
-    lead/               Quote box, CTA bar, pre-footer, mobile call button
+    lead/               Quote box, pre-footer, mobile call button
     ButtonLink.astro    Link styled as a button
     CallToAction.astro  CTA band (site-wide default or per-page)
     Section.astro       Labeled content section
