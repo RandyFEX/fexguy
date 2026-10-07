@@ -188,12 +188,13 @@ a:hover {
   margin-bottom: var(--space-2);
 }
 
-/* Ordinary editorial lists (no class) read as one group: a small gap
-   between items, while the list keeps its normal block margin after it.
+/* Ordinary editorial lists (no class) read as one group: no extra gap
+   between items (the line height separates them), while the list keeps its
+   normal block margin after it.
    A nested list stays with its item. Lists in table cells keep the 8px
    gap above. */
 .prose :where(ul:not([class]), ol:not([class])) > :where(li) {
-  margin-bottom: var(--space-1);
+  margin-bottom: 0;
 }
 .prose :where(ul:not([class]), ol:not([class])) > :where(li) > :where(ul:not([class]), ol:not([class])) {
   margin-top: var(--space-1);
