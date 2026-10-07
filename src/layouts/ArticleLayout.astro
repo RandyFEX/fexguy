@@ -221,6 +221,14 @@ const schema = articleGraph({
     margin-bottom: 0.625rem;
     padding-left: 0.25rem;
   }
+  /* Ordinary lists (no class): the same compact item gap as the global
+     editorial lists; a nested list stays with its item. */
+  body.page-article-v2 .art-body :is(ul, ol):not([class]) > li {
+    margin-bottom: var(--space-1);
+  }
+  body.page-article-v2 .art-body :is(ul, ol):not([class]) > li > :is(ul, ol):not([class]) {
+    margin: var(--space-1) 0 0;
+  }
   body.page-article-v2 .art-body li::marker {
     color: var(--color-primary);
   }
