@@ -846,11 +846,6 @@
       "statusCode": 301
     },
     {
-      "source": "/long-term-care-insurance/",
-      "destination": "/long-term-care-insurance-guide/",
-      "statusCode": 301
-    },
-    {
       "source": "/best-term-life-insurance/",
       "destination": "/term-life-insurance-guide-everyone/",
       "statusCode": 301

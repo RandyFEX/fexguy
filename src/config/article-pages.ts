@@ -991,11 +991,6 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     ],
   },
   '/mortgage-protection-life-insurance/': { section: 'none' },
-  '/long-term-care-insurance-guide/': {
-    section: 'none',
-    quickAnswer:
-      'Long-term care insurance helps pay for home care, assisted living, or nursing homes if you can’t handle basic daily tasks like bathing, eating, or dressing. A claim needs medical proof that you can’t perform at least two activities of daily living, you usually wait 30 to 90 days before benefits start, and every policy caps what it pays per day or month. Traditional policies’ premiums can rise after purchase, while hybrid life policies with a long-term care rider stay level for life but shrink the death benefit as care is used. It’s most valuable for people who want to protect a significant amount of savings or property, while people with limited income or modest savings often don’t benefit.',
-  },
   '/cancer-insurance/': { section: 'none' },
   '/children-grandchild-policies/': {
     section: 'none',

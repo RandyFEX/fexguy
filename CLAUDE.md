@@ -46,7 +46,14 @@ is in place; see src/content/README.md for how pages were migrated.
   /gtl/ (reproduced Guarantee Trust Life application/e-consent forms; the GTL
   review article stays), and /senior-dollar/ (Randy, October 2026: Senior
   Dollar is no longer an active project; real 404, no redirect unless a future
-  business decision changes that).
+  business decision changes that), and /long-term-care-insurance-guide/ and
+  /long-term-care-insurance/ (Randy, October 2026: he does not sell or advise
+  on standalone long-term-care insurance; the guide, its Quick Answer, its
+  /blog/page/5/ card and its header images were removed, and the Group C
+  redirect below is superseded; both URLs stay real 404s with no redirect
+  unless a future business decision creates a genuinely matching page).
+  Ordinary long-term-care wording elsewhere (nursing homes, Medicaid, ADLs,
+  underwriting questions, riders, carrier products) stays.
 - **/reviews/ restored** (Randy, October 2026; reverses the earlier decision
   to retire it): the 476 client reviews published on the WordPress /reviews/
   page were preserved word for word in data/customer-reviews.json (with
@@ -248,7 +255,8 @@ is in place; see src/content/README.md for how pages were migrated.
   /life-insurance-medicaid/ → /final-expense-life-insurance-medicaid/
   /life-insurance-over-80/ → /final-expense-life-insurance-over-80/
   /lions-club-member-life-insurance-options/ → /lions-club-member-life-insurance/
-  /long-term-care-insurance/ → /long-term-care-insurance-guide/
+  /long-term-care-insurance/ → /long-term-care-insurance-guide/ (superseded:
+  removed October 2026 when the guide was retired; both are real 404s)
   /primerica-life-insurance-review-bad-deal/ → /primerica-life-insurance-review/
   /primerica-life-insurance-review-protected-or-neglected/ → /primerica-life-insurance-review/
   /term-life-insurance-for-doctors/ → /term-life-insurance-doctors/
@@ -408,7 +416,7 @@ is in place; see src/content/README.md for how pages were migrated.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 308 redirects (with the 11 retired
+  /sitemap-index.xml. vercel.json holds 307 redirects (with the 11 retired
   /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
