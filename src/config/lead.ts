@@ -19,7 +19,7 @@ export const lead = {
   /** Formspark form "FEXGUY LEAD FORM". The endpoint is public by design (no
    * secret); Formspark emails each submission to randy@fexguy.com. */
   formspark: {
-    endpoint: 'https://submit-form.com/v3iwLYrwZ',
+    endpoint: 'https://submit-form.com/v3iwLYrWZ',
     /** Where a successful submission goes; that page fires the conversion. */
     successPath: '/help/',
     /** sessionStorage key set only after Formspark confirms a submission. */
