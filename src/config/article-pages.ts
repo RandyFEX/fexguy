@@ -367,6 +367,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/iul-book/iuls-for-truckers/': { section: 'iulPlaybook', crumb: 'IULs for Truckers' },
   '/iul-book/teachers-indexed-universal-life-iul/': { section: 'iulPlaybook', crumb: 'IULs for Teachers' },
 
+  // Pillar guides (October 2026): standard article template, section Burial
+  // Insurance.
+  '/what-is-burial-insurance/': { section: 'burialInsurance' },
+  '/final-expense-life-insurance-complete-guide/': { section: 'burialInsurance' },
+  '/burial-insurance/top-10-final-expense-life-insurance-companies/': { section: 'burialInsurance' },
+
   // E. A–Z hub.
   // It is the "Health Conditions" section page itself (COPD's parent crumb).
   '/a-z-health/': {
