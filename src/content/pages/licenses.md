@@ -36,6 +36,63 @@ source: "live"
 
 <p>Final Expense Guy is licensed in most states.</p>
 
+<h3 id="h-current-and-past-state-license-numbers">Current and Past State License Numbers</h3>
+
+<p>Below are Randy VanderVaate’s current and past state insurance license numbers.</p>
+
+<ul class="license-grid">
+<li><strong>Alabama</strong> - 3000253136</li>
+<li><strong>Alaska</strong> - 100160109</li>
+<li><strong>Arizona</strong> - 17792459</li>
+<li><strong>Arkansas</strong> - 17792459</li>
+<li><strong>California</strong> - OL43841</li>
+<li><strong>Colorado</strong> - 568543</li>
+<li><strong>Connecticut</strong> - 2596598</li>
+<li><strong>Delaware</strong> - 3000300374</li>
+<li><strong>Florida</strong> - W456302</li>
+<li><strong>Georgia</strong> - 3194872</li>
+<li><strong>Hawaii</strong> - 473240</li>
+<li><strong>Idaho</strong> - 668631</li>
+<li><strong>Illinois</strong> - 17792459</li>
+<li><strong>Indiana</strong> - 3330485</li>
+<li><strong>Iowa</strong> - 17792459</li>
+<li><strong>Kansas</strong> - 17792459</li>
+<li><strong>Kentucky</strong> - 993905</li>
+<li><strong>Louisiana</strong> - 781651</li>
+<li><strong>Maine</strong> - PRN309191</li>
+<li><strong>Maryland</strong> - 3000273690</li>
+<li><strong>Massachusetts</strong> - 2053555</li>
+<li><strong>Michigan</strong> - 848568</li>
+<li><strong>Minnesota</strong> - 40580882</li>
+<li><strong>Mississippi</strong> - 1054267</li>
+<li><strong>Missouri</strong> - 156872427</li>
+<li><strong>Montana</strong> - 3000299953</li>
+<li><strong>Nebraska</strong> - 17792459</li>
+<li><strong>Nevada</strong> - 3338580</li>
+<li><strong>New Hampshire</strong> - 17792459</li>
+<li><strong>New Jersey</strong> - 1669105</li>
+<li><strong>New Mexico</strong> - 17792459</li>
+<li><strong>New York LB</strong> - 1489424</li>
+<li><strong>North Carolina</strong> - 17792459</li>
+<li><strong>North Dakota</strong> - 17792459</li>
+<li><strong>Ohio</strong> - 1186919</li>
+<li><strong>Oklahoma</strong> - 3000238193</li>
+<li><strong>Oregon</strong> - 17792459</li>
+<li><strong>Pennsylvania</strong> - 847583</li>
+<li><strong>Rhode Island</strong> - 3000299846</li>
+<li><strong>South Carolina</strong> - 899478</li>
+<li><strong>South Dakota</strong> - 40483179</li>
+<li><strong>Tennessee</strong> - 2394123</li>
+<li><strong>Texas</strong> - 2050599</li>
+<li><strong>Utah</strong> - 664077</li>
+<li><strong>Vermont</strong> - 3340115</li>
+<li><strong>Virginia</strong> - 1065152</li>
+<li><strong>Washington</strong> - 978297</li>
+<li><strong>West Virginia</strong> - 17792459</li>
+<li><strong>Wisconsin</strong> - 17792459</li>
+<li><strong>Wyoming</strong> - 370771</li>
+</ul>
+
 <h2 id="h-approved-companies"><br><strong>Approved Life Insurance Companies</strong></h2>
 
 <p>Here is a partial list of insurance companies Randy has been licensed and authorized to assist clients and prospects with over the last decade.</p>

@@ -477,6 +477,37 @@ a:hover {
 }
 
 .wp-content .author-box,
+/* /licenses/: the 50 state license numbers as a compact list in columns
+   (1 on phones, 2 from 30rem, 3 from 64rem). The columns fill top to bottom
+   (25 / 17 rows for the 50 states), so the alphabetical order matches the
+   HTML, and each column is as wide as its longest entry so none wraps. */
+.wp-content .license-grid {
+  display: grid;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--space-6);
+}
+.wp-content .license-grid li {
+  margin: 0;
+}
+@media (min-width: 30rem) {
+  .wp-content .license-grid {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(25, auto);
+    justify-content: start;
+    column-gap: var(--space-12);
+  }
+}
+@media (min-width: 64rem) {
+  .wp-content .license-grid {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(17, auto);
+    justify-content: space-between;
+    column-gap: var(--space-4);
+  }
+}
+
 .wp-content .related-posts {
   margin-top: var(--space-12);
   padding: var(--space-6);

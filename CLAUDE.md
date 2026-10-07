@@ -609,9 +609,11 @@ is in place; see src/content/README.md for how pages were migrated.
   in all 50 states" (or similar) about Randy/Final Expense Guy; don't publish a
   list of states unless Randy asks (the old 50-state lists on /about/ and
   /licenses/, and the /about/ JSON-LD `providesServiceIn` list, were
-  removed). /licenses/ shows only the NPN (17792459) and Randy's Texas
-  resident Life & Health license number (2050599). Current licensing/availability claims must reflect the present;
-  truthful historical statements ("I've helped families in all 50 states",
+  removed). /licenses/ shows the NPN (17792459), Randy's Texas resident
+  Life & Health license number (2050599) and (Randy, October 2026) "Current
+  and Past State License Numbers": all 50 states' numbers as Randy supplied
+  them, presented as current and past, never as all currently active.
+  Current licensing/availability claims must reflect the present; truthful historical statements ("I've helped families in all 50 states",
   "Randy's nationwide licenses carried over" on /funeral-funds-of-america/)
   may stay. Insurance companies' own licensing in reviews is unaffected.
 - **No social-media links** on the site for now (footer `social: []`); the old
