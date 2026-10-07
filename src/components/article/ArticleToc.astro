@@ -40,10 +40,14 @@ const { items } = Astro.props;
 </script>
 
 <style>
-  /* Navigation, not another card: hairlines above and below, a quiet label,
-     plain links. Visually lighter than the summary above it. */
+  /* Navigation, not another card: one light outline (the quote form's
+     border color and radius) around a white panel, a quiet label, plain
+     links. Visually lighter than the green summary above it. */
   .toc__details {
-    border-block: 1px solid var(--color-border);
+    padding-inline: var(--space-4);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius, 0.375rem);
   }
   .toc__summary {
     display: flex;
@@ -51,7 +55,7 @@ const { items } = Astro.props;
     justify-content: space-between;
     gap: var(--space-3);
     min-height: 3rem;
-    padding-block: var(--space-2);
+    padding-block: var(--space-3);
     cursor: pointer;
     list-style: none;
   }
@@ -79,19 +83,22 @@ const { items } = Astro.props;
   }
   .toc__list {
     margin: 0;
-    padding: 0 0 var(--space-3);
+    padding: 0 0 var(--space-5, 1.25rem);
     list-style: none;
     counter-reset: toc;
   }
   .toc__item {
     counter-increment: toc;
   }
+  /* Entries sit about as close as the editorial lists: 2px above and below
+     each link (4px between entries) instead of a 44px row each. The 1.4
+     line height keeps a wrapped entry readable, and every link stays a
+     target of 24px or more (WCAG 2.2 2.5.8). */
   .toc__link {
     display: flex;
     align-items: baseline;
     gap: var(--space-2);
-    min-height: var(--tap-target);
-    padding-block: 0.55rem;
+    padding-block: 0.125rem;
     color: var(--color-text);
     font-size: 1rem;
     line-height: 1.4;
@@ -110,6 +117,9 @@ const { items } = Astro.props;
     text-underline-offset: 0.15em;
   }
   @media (min-width: 48rem) {
+    .toc__details {
+      padding-inline: var(--space-6);
+    }
     .toc__list {
       columns: 2;
       column-gap: var(--space-8);
