@@ -22,15 +22,13 @@ source: "live"
 
 <p>Randy is licensed to sell many types of insurance in the United States, including accidental death, annuities, disability, term life, universal life, and permanent whole life.</p>
 
-<h2 id="h-national-producer-number"><br><strong>National Producer Number</strong></h2>
+<h2 id="h-national-producer-number"><br><strong>Randy’s National Producer Number</strong></h2>
 
 <p>A National Producer Number (NPN) was issued to Randy through the National Association of Insurance Commissioners (NAIC). This NPN number is used to track licensed individuals or business entities nationally.</p>
 
 <p><strong>17792459</strong></p>
 
-<h2 id="h-state-license-numbers"><br><strong>State Licenses</strong></h2>
-
-<p>Randy has an active resident life and health insurance license in Texas.</p>
+<h2 id="h-state-license-numbers"><br><strong>Randy’s State Licenses</strong></h2>
 
 <p><strong>Texas Resident Life &amp; Health License Number:</strong> 2050599</p>
 
