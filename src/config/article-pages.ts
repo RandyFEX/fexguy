@@ -387,4 +387,9 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
       { href: '/a-z-companies/' },
     ],
   },
+  // The "Company Reviews" section page itself (the review pages' parent crumb).
+  '/a-z-companies/': {
+    section: 'none',
+    crumb: 'Company Reviews',
+  },
 };
