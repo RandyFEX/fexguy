@@ -476,10 +476,22 @@ a:hover {
   margin: 0;
 }
 
-.wp-content .author-box,
-/* /licenses/: Randy's portrait as small supporting content (125px). */
-.wp-content figure.licenses-portrait img {
-  width: 7.8125rem;
+/* Randy's identity portrait (/about/, /licenses/, /randy-vandervaate/): the
+   one canonical photo at one size. 300px wide in a slightly wide 4:3 box,
+   never wider than the column on phones. The square photo is shown whole
+   (contain, no crop, no stretch); its white surround fills the box sides. */
+.wp-content figure.randy-portrait {
+  margin: var(--space-6) 0;
+}
+.wp-content figure.randy-portrait img {
+  display: block;
+  width: 18.75rem;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
 }
 
 /* /licenses/: the 50 state license numbers as a compact list in columns
@@ -513,6 +525,7 @@ a:hover {
   }
 }
 
+.wp-content .author-box,
 .wp-content .related-posts {
   margin-top: var(--space-12);
   padding: var(--space-6);

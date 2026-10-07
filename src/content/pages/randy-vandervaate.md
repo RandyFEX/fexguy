@@ -27,7 +27,7 @@ source: "live"
 
 <p><a href="#Marketing-Articles"><strong>View Marketing Articles</strong></a></p>
 
-<figure><img decoding="async" loading="lazy" width="200" height="200" src="/wp-content/uploads/2019/08/Randy-V-200x200.png" alt=""></figure>
+<figure class="randy-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <h2 id="Randy-Is-Featured-In-These-Media-Publications-&-More"><strong>Publications Randy Has Been Featured In</strong></h2>
 

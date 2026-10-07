@@ -24,7 +24,7 @@ source: "live"
 
 <p><a href="/licenses/" target="_blank" rel="noreferrer noopener">MY LICENSE NUMBERS</a><br><a href="/randy-vandervaate/" target="_blank" rel="noreferrer noopener">MY MEDIA, FEATURED PUBLICATIONS &amp; ARTICLES</a></p>
 
-<figure><img fetchpriority="high" decoding="async" loading="eager" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
+<figure class="randy-portrait"><img fetchpriority="high" decoding="async" loading="eager" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <h2><strong>Services I Provide</strong></h2>
 
@@ -56,7 +56,7 @@ source: "live"
 
 <p>Randy VanderVaate<br>President &amp; Licensed Agent<br><em>Term Life &amp; Whole Life Insurance</em></p>
 
-<figure><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
+<figure class="randy-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <p><strong>DIRECT PHONE</strong><br>(888) 862-9456</p>
 
