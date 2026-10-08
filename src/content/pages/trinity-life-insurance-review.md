@@ -138,7 +138,7 @@ sidebar: true
 
 <p>Currently, Trinity Life is licensed in select states across the South, Midwest, and parts of the West.</p>
 
-<p>If you live outside of those states, their sister company, Family Benefit Life, usually picks up the slack with nearly identical products. That means you still have a path to the Golden Eagle plan even if “Trinity” isn’t the name on your policy.</p>
+<p>If you live outside of those states, their sister company, Family Benefit Life, picks up the slack with identical Golden Eagle coverage. That means you still have a path to the Golden Eagle plan even if “Trinity” isn’t the name on your policy.</p>
 
 <p><strong>Trinity or Family Benefit Life are available in these states:</strong><br>AL, AZ, AR, CO, GA, IL, IN, KS, KY, LA, MI, MS, MO, MT, NE, NM, NC, ND, OH, OK, PA, SD, TN, TX, UT, VA, WV).</p>
 

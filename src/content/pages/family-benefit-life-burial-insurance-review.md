@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Family Benefit Life Insurance Review – Pros &amp; Cons</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Family Benefit Life offers strong pricing but isn’t available everywhere<br>• First-day coverage is solid, but graded plans are a weak option<br>• Some health conditions still limit approval or coverage types<br>• Overweight applicants may not qualify under strict build charts<br>• Choosing the wrong plan can leave you with reduced early benefits</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Family Benefit Life offers strong pricing<br>• First-day coverage is solid<br>• Golden Eagle whole life coverage is available for ages 50 to 85, from $2,500 to $25,000<br>• Premiums never increase, and the death benefit never decreases<br>• Some health conditions still limit approval or coverage types<br>• Where Family Benefit Life isn’t licensed, its sister company, Trinity Life Insurance Company, offers identical coverage</p>
 
 <p>Family Benefit Life burial insurance is a type of whole life insurance that’s known for low pricing and flexible approval. The company offers strong first-day coverage options, especially for people with common health issues like diabetes, which makes it stand out. The downside is their graded plans, which reduce the payout during the first 2 years, sometimes paying only 50% before full benefits kick in. If you don’t qualify for the better plan or pick the wrong one, you can end up paying for coverage that doesn’t fully protect your family early on.</p>
 

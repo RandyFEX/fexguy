@@ -903,7 +903,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/family-benefit-life-burial-insurance-review/': {
     family: 'review', crumb: 'Family Benefit Life',
     quickAnswer:
-      'Family Benefit Life is an excellent choice for most people, mainly because of its Golden Eagle first-day coverage plan, which is known for low rates and easy approval. Its underwriting is flexible, and most health issues qualify for first-day coverage, including diabetes if you started insulin after age 40 and haven’t had insulin shock, diabetic coma, or a diabetic amputation. The weak spot is its graded plan, which phases in the death benefit over the first two years. It also isn’t available in all 50 states and uses a height and weight chart.',
+      'Family Benefit Life is an excellent choice for most people, mainly because of its Golden Eagle first-day coverage plan, which is known for low rates and easy approval. Its underwriting is flexible, and most health issues qualify for first-day coverage, including diabetes if you started insulin after age 40 and haven’t had insulin shock, diabetic coma, or a diabetic amputation. Family Benefit Life isn’t licensed in every state, but its sister company, Trinity Life Insurance Company, offers identical coverage where Family Benefit Life isn’t available.',
   },
   '/fidelity-life-burial-insurance-review/': {
     family: 'review', crumb: 'Fidelity Life',
@@ -977,7 +977,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'review', crumb: 'Trinity Life',
     // Built from the article's own facts (V21).
     quickAnswer:
-      'Trinity Life’s burial insurance is its Golden Eagle whole life plan for ages 50 to 85, with coverage from $2,500 to $25,000. If you can answer “no” to its health questions, you get full coverage from day one, with no medical exam: just health questions, a prescription check and a short phone interview. Premiums never increase, the death benefit never decreases, and the accelerated living benefit is included at no extra cost. Trinity isn’t licensed in every state, but its sister company, Family Benefit Life, usually offers nearly identical coverage where Trinity isn’t available.',
+      'Trinity Life’s burial insurance is its Golden Eagle whole life plan for ages 50 to 85, with coverage from $2,500 to $25,000. If you can answer “no” to its health questions, you get full coverage from day one, with no medical exam: just health questions, a prescription check and a short phone interview. Premiums never increase, the death benefit never decreases, and the accelerated living benefit is included at no extra cost. Trinity Life isn’t licensed in every state, but its sister company, Family Benefit Life, offers identical coverage where Trinity Life isn’t available.',
   },
   '/united-heritage-burial-insurance-review/': {
     family: 'review',
