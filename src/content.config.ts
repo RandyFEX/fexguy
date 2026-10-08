@@ -40,6 +40,9 @@ const pages = defineCollection({
     /** Show the quote sidebar (Fillout form). True on the pages that had the
      * quote sidebar on the WordPress site. */
     sidebar: z.boolean().default(false),
+    /** false = leave out the shared pre-footer quote banner ("Compare Quotes
+     * From Top Life Insurance Companies"), e.g. on the post-submission page. */
+    preFooter: z.boolean().default(true),
     /** Where the content came from: "live" (fexguy.com), "wordpress-export", or "new". */
     source: z.string().optional(),
     /** Drafts are never built. */

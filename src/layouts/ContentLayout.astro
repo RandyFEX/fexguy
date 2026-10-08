@@ -31,6 +31,7 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   jsonLd={d.jsonLd}
   layout={d.layout}
   stickyCall={!hasOwnCallButton}
+  preFooter={d.preFooter}
 >
   <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing' }]}>
     {/* Pagefind indexes only this element (H1 + article body), never the
