@@ -121,7 +121,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/oxygen-use/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance if you use oxygen, but how carriers treat it varies a lot. Continuous (24/7) oxygen use is generally a serious underwriting issue and commonly leads to a guaranteed issue plan with a 2-year waiting period. Oxygen used with CPAP for sleep apnea, only after exercise, or seasonally may be treated differently. Some situations qualify for graded coverage, or even first-day coverage with the right carrier, so the right plan depends on matching your exact circumstances to each company’s underwriting rules.',
+      'Continuous (24/7) oxygen use is generally a serious underwriting issue and commonly leads to a guaranteed issue plan with a 2-year waiting period. Oxygen used with CPAP for sleep apnea, only after exercise, or seasonally may be treated differently. Some situations qualify for graded coverage, or even first-day coverage with the right carrier, so the right plan depends on matching your exact circumstances to each company’s underwriting rules.',
   },
   '/burial-insurance/hospitalized/': {
     family: 'health',
@@ -294,7 +294,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/cancer/': {
     family: 'health',
     quickAnswer:
-      'Yes, and the date of your last treatment matters most. Most carriers use a 24-month lookback: once you reach two years without treatment, you can get a policy that pays in full from day one. If your treatment ended 12 to 24 months ago, a graded plan is often an option. If you’re in active treatment, which includes daily maintenance pills, insurance companies will require a two-year waiting period, and a guaranteed issue plan can still cover you.',
+      'Most carriers use a 24-month lookback, and some use three years: once you’ve been cancer-free and treatment-free for that period, you may qualify for a policy that pays in full from day one, depending on your cancer type, state and other health conditions. If your treatment ended 12 to 24 months ago, some carriers may offer a graded plan. If you have active cancer, are in remission, or take maintenance cancer medication, including daily maintenance pills, a guaranteed issue plan with a two-year waiting period for natural death is generally the option, though limited exceptions exist for certain cancers.',
   },
   '/burial-insurance/cardiomyopathy/': {
     family: 'health',
@@ -975,9 +975,9 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   },
   '/trinity-life-insurance-review/': {
     family: 'review', crumb: 'Trinity Life',
-    // The article's own opening paragraph (V16).
+    // Built from the article's own facts (V21).
     quickAnswer:
-      'Trinity Life Insurance focuses heavily on final expense life insurance and simplified issue whole life insurance, which makes it easier for people with health issues to get approved. The trade-off is you may get lower coverage amounts, usually up to around $25,000, and sometimes a 2-year waiting period if you don’t qualify for immediate coverage. While the company has strong customer ratings and flexible options, it’s not always the best value if you’re healthy enough to qualify for better-priced policies elsewhere.',
+      'Trinity Life’s burial insurance is its Golden Eagle whole life plan for ages 50 to 85, with coverage from $2,500 to $25,000. If you can answer “no” to its health questions, you get full coverage from day one, with no medical exam: just health questions, a prescription check and a short phone interview. Premiums never increase, the death benefit never decreases, and the accelerated living benefit is included at no extra cost. Trinity isn’t licensed in every state, but its sister company, Family Benefit Life, usually offers nearly identical coverage where Trinity isn’t available.',
   },
   '/united-heritage-burial-insurance-review/': {
     family: 'review',

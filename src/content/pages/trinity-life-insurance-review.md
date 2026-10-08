@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Trinity Life Insurance Review</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Trinity Life is easier to qualify for than many companies<br>• Some plans include 2-year waiting periods before full payout<br>• Coverage amounts are often limited for seniors and final expense<br>• Not all policies offer first-day full coverage depending on health<br>• Better options may exist if you qualify elsewhere</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Trinity Life is easier to qualify for than many companies<br>• Coverage amounts are often limited for seniors and final expense<br>• Not all policies offer first-day full coverage depending on health</p>
 
 <p>Trinity Life Insurance focuses heavily on final expense life insurance and simplified issue whole life insurance, which makes it easier for people with health issues to get approved. The trade-off is you may get lower coverage amounts, usually up to around $25,000, and sometimes a 2-year waiting period if you don’t qualify for immediate coverage. While the company has strong customer ratings and flexible options, it’s not always the best value if you’re healthy enough to qualify for better-priced policies elsewhere.</p>
 
