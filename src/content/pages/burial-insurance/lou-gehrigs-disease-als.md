@@ -11,16 +11,16 @@ sidebar: true
 
 <h1>Lou Gehrig’s Disease (ALS) Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• ALS usually makes traditional life insurance completely unavailable<br>• Most people are forced into guaranteed issue with 2-year waiting periods<br>• Coverage amounts are small and often limited to final expense needs<br>• Waiting too long after diagnosis can reduce options and increase costs<br>• Many agents won’t explain that better plans aren’t even possible</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• ALS usually makes traditional life insurance completely unavailable<br>• Most people are forced into guaranteed issue with 2-year waiting periods<br>• Coverage amounts are small and often limited to final expense needs<br>• Waiting too long after diagnosis can reduce options and increase costs<br>• Many agents won’t explain that better plans usually aren’t possible</p>
 
 <p>Getting burial insurance with ALS is very different from most other conditions. Burial insurance is often the only realistic option because traditional term or whole life won’t approve after diagnosis. Guaranteed issue burial insurance is designed for situations like this, offering smaller coverage amounts with no health questions, but it comes with higher costs and a 2-year waiting period before full payout. This matters because your choices are limited, and picking the wrong plan means paying more for less protection when your family needs it most.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2>Lou Gehrig’s Disease (ALS) Burial Insurance Key Insights</h2>
+<h2>Lou Gehrig’s disease (ALS) burial insurance key insights</h2>
 
 <ul>
-<li><strong>First Day Coverage is Not Possible:</strong> Because ALS is a progressive disease, no insurance company offers immediate full coverage for natural death; anyone promising “day one” protection for ALS is not telling you the truth.</li>
+<li><strong>First Day Coverage is Rarely Possible:</strong> Because ALS is a progressive disease, most insurance companies do not offer immediate full coverage for natural death; anyone promising easy “day one” protection for ALS is not telling you the truth.</li>
 <li><strong>Partial Benefits Help Early on:</strong> A “graded” plan with a company like Guarantee Trust Life is often your best move because it pays out a portion of the benefit much sooner than a standard two-year waiting period.</li>
 <li><strong>Early Action Locks in Lower Costs:</strong> Since ALS only moves in one direction, applying the moment you are diagnosed is the only way to secure the best possible rates before your options disappear.</li>
 <li><strong>Wheelchairs are Still Approved:</strong> Even if the disease has progressed and you now use a wheelchair or need help with daily tasks, I can still get you a guaranteed policy through companies like Gerber Life.</li>
@@ -31,27 +31,26 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/01/Lou-Gehrigs-Disease-ALS-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
-<h2>Lou Gehrig’s Disease (ALS) Medical Definition &amp; Health Risks</h2>
+<h2>Lou Gehrig’s disease (ALS) medical definition &amp; health risks</h2>
 
 <p>Insurers classify <a href="https://en.wikipedia.org/wiki/ALS" target="_blank" rel="noreferrer noopener">ALS</a> as a permanent and progressive mortality risk regardless of your current medical stability. Because ALS attacks the nerve cells controlling voluntary muscles, underwriters focus on your <a href="https://www.mayoclinic.org/diseases-conditions/amyotrophic-lateral-sclerosis/diagnosis-treatment/drc-20354027" target="_blank" rel="noreferrer noopener nofollow">diagnosis</a> date rather than your current ability to walk or speak. Lou Gehrig’s Disease leads to muscle weakness and eventually impacts your ability to speak, eat, or breathe.</p>
 
 <p>Because this disease is progressive, insurers want to know how far it has moved. They specifically check if you are confined to a wheelchair or require help with daily activities. If you wait too long, your choices vanish. It is like trying to buy a homeowner’s policy while the kitchen is already on fire.</p>
 
-<h3><strong>Life Insurance Companies Ask These ALS Lou Gehrig’s Disease Health Questions</strong></h3>
+<h3><strong>Life insurance companies ask these ALS Lou Gehrig’s disease health questions</strong></h3>
 
 <p>Different life insurance companies ask different questions to decide which applicants with ALS Lou Gehrig’s disease they may approve.</p>
 
 <ul>
 <li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
 <li><strong>Aflac Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>CICA Life Level</strong> – Have you ever been medically diagnosed, treated by a member of the medical profession, or prescribed medication for mental disorder, disorder of the brain or nervous system, systemic lupus (SLE), Alzheimer’s disease, dementia, brain disease, organic brain syndrome, Lou Gehrig’s disease (ALS), Huntington’s disease, muscular dystrophy, cystic fibrosis, pulmonary fibrosis, or multiple myeloma?</li>
 <li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 <li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
 <li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
 <li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 </ul>
 
-<h3>Lou Gehrig’s Disease (ALS) Underwriting Basics</h3>
+<h3>Lou Gehrig’s disease (ALS) underwriting basics</h3>
 
 <p>ALS underwriting basics determine the specific plan tier for each applicant.</p>
 
@@ -65,7 +64,7 @@ sidebar: true
 <li><strong>Why it Matters:</strong> Since people do not recover from this condition, the insurance company uses your medication history to decide between a graded plan or a total guaranteed-issue plan.</li>
 </ul>
 
-<h3>Lou Gehrig’s Disease (ALS) Prescription Medication Classes:</h3>
+<h3>Lou Gehrig’s disease (ALS) prescription medication classes:</h3>
 
 <ul>
 <li><strong>Glutamate Blockers:</strong> Riluzole (Rilutek) slows the progression of the disease.</li>
@@ -73,15 +72,15 @@ sidebar: true
 <li><strong>Symptom Management:</strong> Doctors prescribe various drugs for muscle cramps, stiffness, and excess saliva.</li>
 </ul>
 
-<h2>Lou Gehrig’s Disease (ALS) with Comorbidities</h2>
+<h2>Lou Gehrig’s disease (ALS) with comorbidities</h2>
 
 <p>Insurers evaluate how overlapping health profiles influence the total insurance risk for every applicant. If ALS is paired with heart disease or diabetes, the underwriting method can become much more restrictive due to the heightened medical complexity. Guarantee Trust Life remains a strong option for a graded plan in these cases.</p>
 
 <p>If your condition has worsened significantly, Gerber Life will still accept your application regardless of your other <a href="/burial-insurance/neurological-disorders/" target="_blank" rel="noreferrer noopener">health problems</a>. You need to get this insurance now because additional health issues often arise as the disease progresses.</p>
 
-<p>Controlled ALS (Lou Gehrig’s Disease) qualifies people for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a> even with secondary health issues.</p>
+<p>A very limited first-day exception for ALS (Lou Gehrig’s Disease) may exist through certain companies in some states for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a>, depending on your other health issues.</p>
 
-<h2>Other Common Health Issues With Lou Gehrig’s Disease (ALS)</h2>
+<h2>Other common health issues with Lou Gehrig’s disease (ALS)</h2>
 
 <p>ALS causes progressive degeneration of motor neurons, which leads to worsening muscle weakness, loss of voluntary movement, and impaired breathing and swallowing, and these related complications can directly affect underwriting decisions and policy selection as the disease progresses.</p>
 
@@ -98,7 +97,7 @@ sidebar: true
 <li><strong>Reduced life expectancy</strong> – Progressive neuromuscular failure leads to increasing disability and mortality risk.</li>
 </ul>
 
-<h2>Understanding Lou Gehrig’s Disease (ALS) Policy Types</h2>
+<h2>Understanding Lou Gehrig’s disease (ALS) policy types</h2>
 
 <p>Carriers offer different plan categories based on an applicant’s ALS (Lou Gehrig’s Disease) and long and short-term health stability.</p>
 
@@ -108,13 +107,13 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for health or medical-related causes of death. Gerber Life is the best choice if you use a wheelchair or need help with daily tasks.</li>
 </ul>
 
-<h2>Sample Rate Snapshot for $10,000 Coverage </h2>
+<h2>Sample rate snapshot for $10,000 coverage </h2>
 
 <p>Age-based pricing directly influences the cost of burial insurance premiums for every household.</p>
 
 <p>Rates vary by age and gender because women statistically live longer than men. I want you to see how these numbers look so you can plan your budget. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>GUARANTEE TRUST LIFE INSURANCE RATES AGE 50–85</h3>
+<h3>Guarantee Trust Life insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -137,9 +136,9 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>Rates may vary based on age, gender, health, and state. Click the form on this page for the lowest rates from the best carriers.</strong></p>
+<p><strong>Rates may vary based on age, gender, health, and state.</strong></p>
 
-<h2>Lou Gehrig’s Disease (ALS) Underwriting &amp; Medication History</h2>
+<h2>Lou Gehrig’s disease (ALS) underwriting &amp; medication history</h2>
 
 <p>Insurers use your prescription history to verify medical stability and identify potential mortality risks linked to a specific diagnosis. Applying as soon as you receive an official diagnosis lets you lock in rates before a condition worsens or requires more intensive medication. Since ALS only moves in one direction, your ability to qualify for a graded plan might vanish if you wait until you need a wheelchair. I also perform a quick background check on your prescriptions to see if you have had any recent hospital stays. These records tell the insurance company exactly how stable your current condition is.</p>
 
@@ -172,23 +171,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real Life Lou Gehrig’s Disease (ALS) Success Stories</h2>
+<h2>Real life Lou Gehrig’s disease (ALS) success stories</h2>
 
-<p>Real-world examples illustrate how people with ALS (Lou Gehrig’s Disease) secure day-one protection with anywhere from $5,000 to $25,000 for their final expenses.</p>
+<p>Real-world examples illustrate how people with ALS (Lou Gehrig’s Disease) secure protection with anywhere from $5,000 to $25,000 for their final expenses.</p>
 
-<h3>Thomas Story:</h3>
+<h3>Thomas story:</h3>
 
 <p>Thomas received his ALS diagnosis at age 62 and immediately worried about his wife facing a massive funeral bill. Because he was still mobile and in the early stages, I helped him qualify for a graded plan with Guarantee Trust Life. This was a much smarter move than a standard 2-year wait plan because it provided 50% protection after 12 months, rather than two years. He felt a huge weight lift off his shoulders, knowing he took action while he still qualified. His family now has $15,000 ready to handle his final wishes without debt.</p>
 
-<h3>Barbara Story:</h3>
+<h3>Barbara story:</h3>
 
 <p>Barbara had lived with ALS for three years and recently began using a wheelchair for daily mobility. She believed it was far too late to find any coverage at all. I set her up with Gerber Life because they do not ask about wheelchairs or help with bathing. She qualified for a $10,000 policy that will be fully active after the 2-year period, with a refund of premiums plus interest if something happened sooner. This plan gave her the peace of mind that her daughter would not be stuck with the bill for her cremation.</p>
 
-<h2>Lou Gehrig’s Disease (ALS) Financial Ratings &amp; Stability</h2>
+<h2>Lou Gehrig’s disease (ALS) financial ratings &amp; stability</h2>
 
 <p>Insurers use financial ratings to verify a carrier’s ability to pay death claims when your family needs them most. I exclusively work with companies that hold high A.M. Best ratings to make sure they have the “Excellent” or “Superior” capital reserves required to fulfill long-term policy obligations. This makes sure the insurer has the cash on hand to pay your claim when the time comes. I also check the BBB to make sure they treat families with respect during the difficult days after a loss.</p>
 
-<h3>Insurance Carrier Ratings &amp; Comparisons</h3>
+<h3>Insurance carrier ratings &amp; comparisons</h3>
 
 <table>
 <thead>
@@ -245,7 +244,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Lou Gehrig’s Disease ALS Burial Insurance</h2>
+<h2>Frequently asked questions: Lou Gehrig’s disease ALS burial insurance</h2>
 
 <h3>Can you get burial insurance if you have been diagnosed with ALS?</h3>
 
@@ -253,7 +252,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with ALS?</h3>
 
-<p>The insurance company applies a two-year waiting period to all policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But accidental death still pays the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
+<p>Most insurance companies apply a two-year waiting period to policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But accidental death still pays the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
 
 <h3>How much does burial insurance cost for someone with ALS?</h3>
 
@@ -261,7 +260,7 @@ sidebar: true
 
 <h3>Does ALS qualify for immediate “Day One” burial insurance coverage?</h3>
 
-<p>Insurance companies do not offer immediate first-day coverage for natural death to any applicant currently living with ALS. If an insurance salesman tells you that you can get first-day coverage for ALS, they are lying to you. Honestly, it just does not make sense for a company to take that gamble on a progressive disease. Many of those flashy TV ads only cover accidental death immediately, which is a bad deal if you expect a full payout. Telling the truth about these waiting periods prevents your family from facing a nasty surprise when they go to file a claim.</p>
+<p>Most insurance companies do not offer immediate first-day coverage for natural death to applicants currently living with ALS. A very limited exception may exist through certain companies in some states, depending on your other health conditions. If an insurance salesman tells you that first-day coverage for ALS is easy to get, they are lying to you. Honestly, it just does not make sense for most companies to take that gamble on a progressive disease. Many of those flashy TV ads only cover accidental death immediately, which is a bad deal if you expect a full payout. Telling the truth about these waiting periods prevents your family from facing a nasty surprise when they go to file a claim.</p>
 
 <h3>Will burial insurance pay out if I pass away from ALS complications?</h3>
 

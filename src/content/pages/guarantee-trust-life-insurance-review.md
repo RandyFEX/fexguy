@@ -4,7 +4,7 @@ description: "This Guarantee Trust Life insurance review will help you decide if
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/guarantee-trust-life-insurance-review/"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Guarantee Trust Life Insurance Review - Pros and Cons"},{"property":"og:description","content":"This Guarantee Trust Life insurance review will help you decide if the GTL insurance product is the right fit for you."},{"property":"og:url","content":"https://fexguy.com/guarantee-trust-life-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-05-21T20:00:17-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Guarantee Trust Life Insurance Review - Pros and Cons"},{"name":"twitter:description","content":"This Guarantee Trust Life insurance review will help you decide if the GTL insurance product is the right fit for you."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"9 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/\",\"name\":\"Guarantee Trust Life Insurance Review\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\",\"url\":\"https://fexguy.com/guarantee-trust-life-insurance-review/\",\"name\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"datePublished\":\"2026-05-21T19:59:02-05:00\",\"dateModified\":\"2026-05-21T20:00:17-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"description\":\"This Guarantee Trust Life insurance review will help you decide if the GTL insurance product is the right fit for you.\",\"keywords\":\"guarantee trust life insurance,guarantee trust life insurance review,gtl life insurance reviews,guarantee trust life final expense,gtl final expense insurance,guarantee trust life burial insurance,fexguy guarantee trust life,is guarantee trust life insurance legitimate,gtl heritage life insurance review,guarantee trust life select review,gtl life insurance complaints,guarantee trust life insurance phone number,gtl final expense underwriting rules,guarantee trust life senior insurance,gtl graded death benefit whole life,affordable final expense insurance gtl,guarantee trust life am best rating,low cost senior burial insurance,gtl life insurance no medical exam,guarantee trust life simplified issue,final expense guy gtl review,gtl heritage life underwriting guidelines,guarantee trust life insurance for seniors,is gtl life insurance expensive,gtl life insurance payout timeline,guarantee trust life cash value,gtl whole life insurance pros and cons,burial insurance for high risk seniors,gtl life insurance automatic approval,guarantee trust life customer service reviews,final expense insurance with pre existing conditions,gtl life insurance application process,guarantee trust life independent broker quotes,senior life insurance age ninety gtl,gtl accident and health insurance,guarantee trust life level premium,avoid two year waiting period life insurance,how does gtl graded benefit work,funeral concierge services gtl insurance,guarantee trust life electronic application,best final expense carriers for complex health\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is Guarantee Trust Life a good company?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, Guarantee Trust Life (GTL) is a highly reputable insurance provider. It holds an A- (Excellent) financial strength rating from AM Best, demonstrating a strong financial foundation and a reliable history of paying out policyholder claims on time.\"}},{\"@type\":\"Question\",\"name\":\"Do you need a medical exam to qualify for Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, you do not need to take a physical medical exam or provide blood work to qualify for the GTL Heritage Plan. Approval is determined through a simplified application process containing a few basic yes-or-no health questions.\"}},{\"@type\":\"Question\",\"name\":\"Who owns Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Guarantee Trust Life is a mutual reserve insurance company that has been privately held and operated by the Holson family for three generations, since its founding in 1936.\"}},{\"@type\":\"Question\",\"name\":\"What is the age requirement to apply for Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"To apply for the GTL Heritage Plan graded whole life insurance policy, applicants must be within the issue age range of 50 to 90 years old.\"}},{\"@type\":\"Question\",\"name\":\"Is Guarantee Trust Life insurance expensive?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, GTL features highly competitive pricing. It often provides much lower premium rates than standard guaranteed issue policies for individuals with moderate-to-severe chronic health conditions.\"}},{\"@type\":\"Question\",\"name\":\"Does Guarantee Trust Life accumulate cash value and can I borrow against it?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, because the GTL Heritage Plan is structured as permanent whole life insurance, it builds cash value over time. Policyholders retain the contractual right to borrow money against this accumulated cash value during financial emergencies.\"}},{\"@type\":\"Question\",\"name\":\"Does the Guarantee Trust Life Heritage plan expire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, the GTL Heritage Plan does not have an expiration date. It is a permanent whole life insurance policy that remains active for the duration of your life, provided that the required monthly premium payments are maintained.\"}}]}],\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#schema-755196\",\"isPartOf\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/\",\"name\":\"Guarantee Trust Life Insurance Review\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\",\"url\":\"https://fexguy.com/guarantee-trust-life-insurance-review/\",\"name\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"datePublished\":\"2026-05-21T19:59:02-05:00\",\"dateModified\":\"2026-05-21T20:00:17-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"description\":\"This Guarantee Trust Life insurance review will help you decide if the GTL insurance product is the right fit for you.\",\"keywords\":\"guarantee trust life insurance,guarantee trust life insurance review,gtl life insurance reviews,guarantee trust life final expense,gtl final expense insurance,guarantee trust life burial insurance,fexguy guarantee trust life,is guarantee trust life insurance legitimate,gtl heritage life insurance review,guarantee trust life select review,gtl life insurance complaints,guarantee trust life insurance phone number,gtl final expense underwriting rules,guarantee trust life senior insurance,gtl graded death benefit whole life,affordable final expense insurance gtl,guarantee trust life am best rating,low cost senior burial insurance,gtl life insurance no medical exam,guarantee trust life simplified issue,final expense guy gtl review,gtl heritage life underwriting guidelines,guarantee trust life insurance for seniors,is gtl life insurance expensive,gtl life insurance payout timeline,guarantee trust life cash value,gtl whole life insurance pros and cons,burial insurance for high risk seniors,gtl life insurance automatic approval,guarantee trust life customer service reviews,final expense insurance with pre existing conditions,gtl life insurance application process,guarantee trust life independent broker quotes,senior life insurance age ninety gtl,gtl accident and health insurance,guarantee trust life level premium,avoid two year waiting period life insurance,how does gtl graded benefit work,funeral concierge services gtl insurance,guarantee trust life electronic application,best final expense carriers for complex health\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Guarantee Trust Life Insurance Review - Pros and Cons\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is Guarantee Trust Life a good company?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, Guarantee Trust Life (GTL) is a highly reputable insurance provider. It holds an A (Excellent) financial strength rating from AM Best (as of October 2024), reflecting a strong financial foundation.\"}},{\"@type\":\"Question\",\"name\":\"Do you need a medical exam to qualify for Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, you do not need to take a physical medical exam or provide blood work to qualify for the GTL Heritage Plan. Approval is determined through a simplified application process containing a few basic yes-or-no health questions.\"}},{\"@type\":\"Question\",\"name\":\"Who owns Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Guarantee Trust Life is a mutual reserve insurance company that has been privately held and operated by the Holson family for three generations, since its founding in 1936.\"}},{\"@type\":\"Question\",\"name\":\"What is the age requirement to apply for Guarantee Trust Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"To apply for the GTL Heritage Plan graded whole life insurance policy, applicants must be within the issue age range of 50 to 90 years old.\"}},{\"@type\":\"Question\",\"name\":\"Is Guarantee Trust Life insurance expensive?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, GTL features highly competitive pricing. It often provides much lower premium rates than standard guaranteed issue policies for individuals with moderate-to-severe chronic health conditions.\"}},{\"@type\":\"Question\",\"name\":\"Does Guarantee Trust Life accumulate cash value and can I borrow against it?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, because the GTL Heritage Plan is structured as permanent whole life insurance, it builds cash value over time. Policyholders retain the contractual right to borrow money against this accumulated cash value during financial emergencies.\"}},{\"@type\":\"Question\",\"name\":\"Does the Guarantee Trust Life Heritage plan expire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No, the GTL Heritage Plan does not have an expiration date. It is a permanent whole life insurance policy that remains active for the duration of your life, provided that the required monthly premium payments are maintained.\"}}]}],\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#schema-755196\",\"isPartOf\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/guarantee-trust-life-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -47,9 +47,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Guarantee Trust Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Guarantee Trust Life insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-guarantee-trust-life">What Are My Policy Options With Guarantee Trust Life?</h3>
+<h3 id="h-what-are-my-policy-options-with-guarantee-trust-life">What are my policy options with Guarantee Trust Life?</h3>
 
 <p>Guarantee Trust Life offers Heritage Plan graded benefit whole life insurance designed for people 50-90 years old with significant health problems who do not want a policy with a two-year waiting period. </p>
 
@@ -67,7 +67,7 @@ sidebar: true
 <li>Cash value buildup that can be borrowed against in emergencies</li>
 </ul>
 
-<h3 id="h-how-does-heritage-plan-work">How Does Heritage Plan Work?</h3>
+<h3 id="h-how-does-heritage-plan-work">How does Heritage Plan work?</h3>
 
 <p>Guaranteed Trust Life Heritage Plan is a burial insurance policy designed to pay for burial, cremation, funeral, or final expenses. </p>
 
@@ -86,7 +86,7 @@ sidebar: true
 
 <p>For accidental death (during the first two years) GTL would pay the full coverage amount.</p>
 
-<h3 id="h-does-guarantee-trust-life-have-any-fine-print-in-their-policy">Does Guarantee Trust Life Have Any “Fine Print” In Their Policy? </h3>
+<h3 id="h-does-guarantee-trust-life-have-any-fine-print-in-their-policy">Does Guarantee Trust Life have any “Fine Print” in their policy? </h3>
 
 <p>There is no “fine print” with the GTL Heritage plan.</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>GTL will pay the full face amount for any accidental death. Accidental death coverage is a first-day benefit.</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Guarantee Trust Life Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Guarantee Trust Life insurance?</strong></h2>
 
 <p><strong>Heritage Plan Graded Benefit Whole Life</strong></p>
 
@@ -123,15 +123,15 @@ sidebar: true
 <li>Limited coverage amount of $20,000 maximum</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Guarantee Trust Life Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Guarantee Trust Life life insurance?</strong></h2>
 
-<h3>Guarantee Trust Life Riders</h3>
+<h3>Guarantee Trust Life riders</h3>
 
 <ul>
 <li>Guarantee Trust Life includes no riders in their Heritage Plan.</li>
 </ul>
 
-<h3>Guarantee Trust Life Other Benefits</h3>
+<h3>Guarantee Trust Life other benefits</h3>
 
 <ul>
 <li><strong>Temporary Accidental Death Benefit: </strong>“If the insured dies solely because of accidental bodily injuries during the first 2 policy years, we will pay the full face amount under the temporary accidental death benefit.”</li>
@@ -147,11 +147,11 @@ sidebar: true
 <li>Premium discounts compared to other companies for people with significant health problems.</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Guarantee Trust Life?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Guarantee Trust Life?</strong></h2>
 
 <p>Guarantee Trust Life’s graded benefit whole life insurance will ask if you’ve had health issues in the last 24 months.</p>
 
-<h3 id="h-what-are-guarantee-trust-life-s-application-questions">What Are Guarantee Trust Life’s Application Questions?</h3>
+<h3 id="h-what-are-guarantee-trust-life-s-application-questions">What are Guarantee Trust Life’s application questions?</h3>
 
 <p>If any answer to questions 1 through 6 is YES, you are not eligible for coverage.</p>
 
@@ -211,13 +211,13 @@ sidebar: true
 
 <p>With most other insurance companies, if you have any of the above health issues, they would only offer you a two-year waiting period policy (which we never recommend!). </p>
 
-<h3>Does Guarantee Trust Life Have The Same Day Approval Process?</h3>
+<h3>Does Guarantee Trust Life have the same day approval process?</h3>
 
 <p>Guarantee Trust Life has a simple application process through Final Expense Guy.</p>
 
 <p>We can complete your application in less than 15 minutes and get your policy in force within 24 hours.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get life insurance pricing?</strong></h2>
 
 <p>Guarantee Trust Life rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -365,7 +365,7 @@ sidebar: true
 
 <p> *Pricing is for illustration purposes only and is subject to change without notice. </p>
 
-<h3>How does Guarantee Trust Life Life insurance compare?</h3>
+<h3>How does Guarantee Trust Life life insurance compare?</h3>
 
 <p>We always recommend first-day coverage if possible and don’t recommend GTL if you are in good to below-average health.</p>
 
@@ -375,39 +375,39 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Guarantee Trust Life Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Guarantee Trust Life company questions</strong></h2>
 
-<h3 id="Financial-Rating">What Is Guarantee Trust Life’s Operational History</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s operational history</h3>
 
 <p>Guarantee Trust Life is a family-owned mutual reserve company. It was established in 1936 by Richard Holson. </p>
 
 <p>The Holson family has remained at the company’s helm for three generations. GTL provides accident, life, and special risk insurance programs to individuals, families, and groups.</p>
 
-<h4>Company Address</h4>
+<h4>Company address</h4>
 
 <p>Guarantee Trust Life<br>1275 Milwaukee Avenue<br>Glenview, IL 60025</p>
 
-<h4>Contact Info</h4>
+<h4>Contact info</h4>
 
 <p>Website: <a href="https://www.gtlic.com" target="_blank" rel="noreferrer noopener">https://www.gtlic.com</a><br>Customer Service: (800) 338-7452<br></p>
 
-<h3 id="Financial-Rating">What Is Guarantee Trust Life’s Financial Rating?</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s financial rating?</h3>
 
-<p>Guarantee Trust Life has an A- (Excellent) rating from A.M. Best, the country’s number-one rating agency.  This rating shows the financial strength of the company and its ability to pay claims on time.</p>
+<p>Guarantee Trust Life has an A- (Excellent) rating from A.M. Best, the country’s number-one rating agency. This rating shows the financial strength of the company and its ability to pay claims on time.</p>
 
-<h3>Does Guarantee Trust Life Have Any Consumer Complaints?</h3>
+<h3>Does Guarantee Trust Life have any consumer complaints?</h3>
 
 <p>Guarantee Trust Life has six complaints recorded in the National Association of Insurance Commissioners (NAIC). Most of the complaints are regarding claim handling.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Guarantee Trust Life Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Guarantee Trust Life life insurance?</strong></h2>
 
-<h3 id="Financial-Rating">What is Guarantee Trust Life’s Sales Process?</h3>
+<h3 id="Financial-Rating">What is Guarantee Trust Life’s sales process?</h3>
 
 <p>Final Expense Guy as an approved agency to sell their life insurance products. GTL does not have any agents that work within the company to help you buy their insurance products.</p>
 
 <p>Working with an independent agency like Final Expense Guy allows us to shop many <a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">other life insurance companies</a> to see who will give you the best pricing and 1st-day coverage or benefits.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-guarantee-trust-life">Are Any Health Conditions Not Accepted By Guarantee Trust Life?</h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-guarantee-trust-life">Are any health conditions not accepted by Guarantee Trust Life?</h3>
 
 <p>They do not accept these health issues for GTL Heritage Plan:</p>
 
@@ -429,7 +429,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today">How Can I Get Pricing Help Today?</h3>
+<h3 id="h-how-can-i-get-pricing-help-today">How can I get pricing help today?</h3>
 
 <p>Use our quoting software below to see how Guarantee Trust Life pricing compares to other companies.</p>
 
@@ -440,7 +440,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions">What Are The Top 10 Questions About Guarantee Trust Life?</h2>
+<h2 id="top-10-questions">What are the top 10 questions about Guarantee Trust Life?</h2>
 
 <details>
 <summary><b>Is Guarantee Trust Life a good company?</b></summary>

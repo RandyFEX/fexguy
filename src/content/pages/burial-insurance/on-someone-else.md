@@ -44,7 +44,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-life-insurance-on-someone-else"><strong>Information We Need If You Want To Get Life Insurance On Someone Else</strong></h2>
+<h2 id="getting-life-insurance-on-someone-else"><strong>Information we need if you want to get life insurance on someone else</strong></h2>
 
 <p>Before you take life insurance on someone else, it’s important for you to provide us some basic information about the proposed insured.</p>
 
@@ -63,7 +63,7 @@ sidebar: true
 
 <p>Depending on your answer to these questions, we can get a good idea about the proposed insured. We will use this information to determine what burial insurance company will offer the best pricing.</p>
 
-<h2 id="who-can-you-buy-burial-insurance-on"><br><strong>Who Are The People You Can Buy Burial Insurance On?</strong></h2>
+<h2 id="who-can-you-buy-burial-insurance-on"><br><strong>Who are the people you can buy burial insurance on?</strong></h2>
 
 <p>The primary reason for buying burial insurance on someone else is to help protect yourself financially in the event of someone else’s death.</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 <li>Anyone whom you depend on such as a <a href="/burial-insurance/brother/" target="_blank" rel="noreferrer noopener">brother</a> or <a href="/burial-insurance/sister/" target="_blank" rel="noreferrer noopener">sister</a></li>
 </ul>
 
-<h2 id="requirements-to-get-burial-insurance"><br><strong>What Are The Requirements To Get Burial Insurance On Someone Else?</strong></h2>
+<h2 id="requirements-to-get-burial-insurance"><br><strong>What are the requirements to get burial insurance on someone else?</strong></h2>
 
 <p><strong>INSURABLE INTEREST</strong></p>
 
@@ -98,11 +98,11 @@ sidebar: true
 
 <p>Life insurance is a heavily regulated industry and having insurable interest and consent makes it virtually impossible for anybody to get a life insurance policy. If in case someone was able to get a guaranteed issue policy without permission, this will be a fraud. Insurance fraud is a type of felony, and you could end up in jail.</p>
 
-<p><strong>WHEN INSURABLE INTEREST AND CONSENT IS NOT NEEDED</strong></p>
+<p><strong>LIFE INSURANCE ON A MINOR CHILD</strong></p>
 
-<p>The only instance where insurable interest and consent are not needed is when a parent or grandparent applies to purchase life insurance for their minor child. You don’t need permission to purchase a life insurance policy for your child under 18.</p>
+<p>Life insurance on a minor child follows different rules. A parent, grandparent or legal guardian may be able to apply, but the insurance company’s rules and your state’s law decide who can apply and whether a parent or legal guardian has to sign.</p>
 
-<h2 id="buying-burial-insurance-on-someone-else"><br><strong>Buying Burial Insurance On Someone Else</strong></h2>
+<h2 id="buying-burial-insurance-on-someone-else"><br><strong>Buying burial insurance on someone else</strong></h2>
 
 <p><strong>Here are the types of relationships which give insurable interest for you to buy final expense insurance on someone else:</strong></p>
 
@@ -145,7 +145,9 @@ sidebar: true
 
 <p>One great thing a grandparent can do is to offer to pay for a life insurance policy on their grandchildren, making their parents the beneficiaries and owners of the policy. This can help the parents who are struggling financially and can’t afford to pay the premiums to buy a life insurance policy on their children.</p>
 
-<p>A whole life insurance policy that builds cash value could be used to pay the grandchildren’s college expenses. This would be an excellent birthday gift for a grandchild.</p>
+<p>To learn how these policies work, who can apply and what to check first, see our guide to <a href="/children-grandchild-policies/">life insurance for children and grandchildren</a>.</p>
+
+<p>A whole life insurance policy builds cash value over time. The owner can usually borrow against it, but policy loans charge interest and can lower the cash value and the death benefit. This would be an excellent birthday gift for a grandchild.</p>
 
 <p><br><strong>BUYING BURIAL INSURANCE ON YOUR SIGNIFICANT OTHER</strong></p>
 
@@ -171,7 +173,7 @@ sidebar: true
 
 <p>If you can prove that you will have financial difficulty because of that person’s death, you can demonstrate insurable interest. You may be able to buy a life insurance policy on that person.</p>
 
-<h2 id="how-to-get-burial-insurance"><br><strong>How To Get Burial Insurance On Someone Else</strong></h2>
+<h2 id="how-to-get-burial-insurance"><br><strong>How to get burial insurance on someone else</strong></h2>
 
 <p>The process of purchasing burial insurance on someone else is simple.</p>
 
@@ -188,21 +190,7 @@ sidebar: true
 <li>Pay the monthly premium on whatever day you select.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy on someone else needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you want to buy burial insurance on someone else, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case to different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance on someone else, burial insurance on someone else, or life insurance on someone else, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you accurate burial insurance quotes.</p>
-
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can you buy insurance for someone else?</strong></p>
 
@@ -302,7 +290,7 @@ sidebar: true
 
 <p><br><strong>Can grandparents get life insurance on grandchildren without parental consent?</strong></p>
 
-<p>Yes, grandparents can get life insurance on grandchildren without parental consent.</p>
+<p>It depends. Some insurance companies let a grandparent apply for a children’s policy, but the company’s rules and your state’s law decide whether a parent or legal guardian also has to sign.</p>
 
 <p><br><strong>Can someone else pay my life insurance premiums?</strong></p>
 

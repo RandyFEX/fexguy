@@ -1,17 +1,17 @@
 ---
 title: "Family Benefit Life Insurance Review - [Pros and Cons]"
-description: "Family Benefit Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"
+description: "A review of Family Benefit Life final expense insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/family-benefit-life-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Family Benefit Life Insurance Review - [Pros and Cons]"},{"property":"og:description","content":"Family Benefit Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/family-benefit-life-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-04T11:47:06-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Family Benefit Life Insurance Review - [Pros and Cons]"},{"name":"twitter:description","content":"Family Benefit Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/\",\"name\":\"Family Benefit Life Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/\",\"name\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"datePublished\":\"2026-06-04T11:43:29-05:00\",\"dateModified\":\"2026-06-04T11:47:06-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"description\":\"Family Benefit Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!\",\"keywords\":\"Family Benefit Life Insurance,Family Benefit Life burial insurance review,Family Benefit Life insurance pros and cons,is Family Benefit Life a good insurance company,Family Benefit Life final expense review,Family Benefit Life burial insurance ratings,Family Benefit Life complaints,Family Benefit Life policy details,is Family Benefit Life legit,Family Benefit Life customer reviews,burial insurance through Family Benefit Life,Family Benefit Life insurance reviews 2026,Family Benefit Life vs other burial insurance,Family Benefit Life funeral insurance benefits,Family Benefit Life whole life insurance for seniors,Family Benefit Life underwriting requirements,is Family Benefit Life worth it,Family Benefit Life claims process,Family Benefit Life policy exclusions,Family Benefit Life burial insurance coverage,Family Benefit Life simplified issue life insurance,pros of Family Benefit Life insurance,cons of Family Benefit Life insurance,Family Benefit Life insurance for seniors over 60,Family Benefit Life insurance for seniors over 70,Family Benefit Life burial insurance cost,Family Benefit Life burial insurance waiting period,Family Benefit Life life insurance for final expenses,how to buy Family Benefit Life burial insurance,Family Benefit Life insurance reputation,Family Benefit Life customer service,Family Benefit Life burial insurance approval,Family Benefit Life insurance for health issues,Family Benefit Life graded benefit plans,Family Benefit Life level benefit plans,Family Benefit Life insurance guide,Family Benefit Life burial insurance summary,should I choose Family Benefit Life,Family Benefit Life burial insurance facts,Family Benefit Life financial strength,Family Benefit Life insurance application\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What Is Family Benefit Life\\u2019s Operational History?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life Insurance Company is owned and operated by its parent company, First Trinity Financial Corporation, based in Tulsa, Oklahoma. They have been in business and licensed to sell life insurance since 2011 across 27 states, including Alabama, Arizona, Arkansas, Colorado, Georgia, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, South Dakota, Tennessee, Texas, Utah, Virginia, and West Virginia.\"}},{\"@type\":\"Question\",\"name\":\"What Is Family Benefit Life\\u2019s Financial Rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life has an A+ (excellent) rating from the Better Business Bureau, reflecting their commitment to customer service and their financial ability to pay claims.\"}},{\"@type\":\"Question\",\"name\":\"Does Family Benefit Life Have Any Consumer Complaints?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life Insurance currently has no complaints listed with the National Association of Insurance Commissioners (NAIC).\"}},{\"@type\":\"Question\",\"name\":\"When does Family Benefit Life make the most sense?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life is best for people with good to below-average health. Most health problems qualify for first-day coverage. While they offer a graded benefit plan that pays 50% of the death benefit if death occurs in the first two years, it is generally not recommended in most cases.\"}},{\"@type\":\"Question\",\"name\":\"Are Any Health Conditions Not Accepted By Family Benefit Life for first-day coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"They do not accept the following for their Golden Eagle first-day coverage plan: Activities Of Daily Living (ADLs) issues, Alzheimer\\u2019s or Dementia, AIDs/HIV/ARC, current cancer, Congestive Heart Failure, Cardiomyopathy, Dialysis, diabetic amputation, End-stage Renal Disease, Hospice care, inhaler use more than once a month, nursing home confinement, organ or tissue transplants, oxygen use, or terminal illness.\"}}]}],\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#schema-756460\",\"isPartOf\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Family Benefit Life Insurance Review - [Pros and Cons]"},{"property":"og:description","content":"A review of Family Benefit Life final expense insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/family-benefit-life-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-04T11:47:06-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Family Benefit Life Insurance Review - [Pros and Cons]"},{"name":"twitter:description","content":"A review of Family Benefit Life final expense insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/\",\"name\":\"Family Benefit Life Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/\",\"name\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"datePublished\":\"2026-06-04T11:43:29-05:00\",\"dateModified\":\"2026-06-04T11:47:06-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"description\":\"A review of Family Benefit Life final expense insurance: the pros and cons, pricing information and what to consider before you apply.\",\"keywords\":\"Family Benefit Life Insurance,Family Benefit Life burial insurance review,Family Benefit Life insurance pros and cons,is Family Benefit Life a good insurance company,Family Benefit Life final expense review,Family Benefit Life burial insurance ratings,Family Benefit Life complaints,Family Benefit Life policy details,is Family Benefit Life legit,Family Benefit Life customer reviews,burial insurance through Family Benefit Life,Family Benefit Life insurance reviews 2026,Family Benefit Life vs other burial insurance,Family Benefit Life funeral insurance benefits,Family Benefit Life whole life insurance for seniors,Family Benefit Life underwriting requirements,is Family Benefit Life worth it,Family Benefit Life claims process,Family Benefit Life policy exclusions,Family Benefit Life burial insurance coverage,Family Benefit Life simplified issue life insurance,pros of Family Benefit Life insurance,cons of Family Benefit Life insurance,Family Benefit Life insurance for seniors over 60,Family Benefit Life insurance for seniors over 70,Family Benefit Life burial insurance cost,Family Benefit Life burial insurance waiting period,Family Benefit Life life insurance for final expenses,how to buy Family Benefit Life burial insurance,Family Benefit Life insurance reputation,Family Benefit Life customer service,Family Benefit Life burial insurance approval,Family Benefit Life insurance for health issues,Family Benefit Life graded benefit plans,Family Benefit Life level benefit plans,Family Benefit Life insurance guide,Family Benefit Life burial insurance summary,should I choose Family Benefit Life,Family Benefit Life burial insurance facts,Family Benefit Life financial strength,Family Benefit Life insurance application\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Family Benefit Life Insurance Review - [Pros and Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What Is Family Benefit Life\\u2019s Operational History?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life Insurance Company is owned and operated by its parent company, First Trinity Financial Corporation, based in Tulsa, Oklahoma. They have been in business and licensed to sell life insurance since 2011 across 27 states, including Alabama, Arizona, Arkansas, Colorado, Georgia, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, South Dakota, Tennessee, Texas, Utah, Virginia, and West Virginia.\"}},{\"@type\":\"Question\",\"name\":\"What Is Family Benefit Life\\u2019s Financial Rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We found no A.M. Best rating for Family Benefit Life. Its parent company has an A+ rating from the Better Business Bureau, which reflects how a business handles customer complaints, not its financial strength.\"}},{\"@type\":\"Question\",\"name\":\"Does Family Benefit Life Have Any Consumer Complaints?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life Insurance currently has no complaints listed with the National Association of Insurance Commissioners (NAIC).\"}},{\"@type\":\"Question\",\"name\":\"When does Family Benefit Life make the most sense?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Family Benefit Life is best for people with good to below-average health. Most health problems qualify for first-day coverage. While they offer a graded benefit plan that pays 50% of the death benefit if death occurs in the first two years, it is generally not recommended in most cases.\"}},{\"@type\":\"Question\",\"name\":\"Are Any Health Conditions Not Accepted By Family Benefit Life for first-day coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"They do not accept the following for their Golden Eagle first-day coverage plan: Activities Of Daily Living (ADLs) issues, Alzheimer\\u2019s or Dementia, AIDs/HIV/ARC, current cancer, Congestive Heart Failure, Cardiomyopathy, Dialysis, diabetic amputation, End-stage Renal Disease, Hospice care, inhaler use more than once a month, nursing home confinement, organ or tissue transplants, oxygen use, or terminal illness.\"}}]}],\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#schema-756460\",\"isPartOf\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/family-benefit-life-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
 ---
 
 <h1>Family Benefit Life Insurance Review – Pros &amp; Cons</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Family Benefit Life offers strong pricing but isn’t available everywhere<br>• First-day coverage is solid, but graded plans are a weak option<br>• Some health conditions still limit approval or coverage types<br>• Overweight applicants may not qualify under strict build charts<br>• Choosing the wrong plan can leave you with reduced early benefits</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Family Benefit Life offers strong pricing<br>• First-day coverage is solid<br>• Golden Eagle whole life coverage is available for ages 50 to 85, from $2,500 to $25,000<br>• Premiums never increase, and the death benefit never decreases<br>• Some health conditions still limit approval or coverage types<br>• Where Family Benefit Life isn’t licensed, its sister company, Trinity Life Insurance Company, offers identical coverage</p>
 
 <p>Family Benefit Life burial insurance is a type of whole life insurance that’s known for low pricing and flexible approval. The company offers strong first-day coverage options, especially for people with common health issues like diabetes, which makes it stand out. The downside is their graded plans, which reduce the payout during the first 2 years, sometimes paying only 50% before full benefits kick in. If you don’t qualify for the better plan or pick the wrong one, you can end up paying for coverage that doesn’t fully protect your family early on.</p>
 
@@ -45,9 +45,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Family Benefit Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Family Benefit Life insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-family-benefit-life"><strong>What Are My Policy Options With Family Benefit Life?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-family-benefit-life"><strong>What are my policy options with Family Benefit Life?</strong></h3>
 
 <p>Family Benefit Life offers two final expense products. The Golden Eagle first-day coverage plan and their Golden Eagle graded death benefit plan.</p>
 
@@ -89,13 +89,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h3 id="h-how-is-family-benefit-life-insurance-good-for-seniors"><strong>How is Family Benefit Life insurance good for Seniors?</strong></h3>
+<h3 id="h-how-is-family-benefit-life-insurance-good-for-seniors"><strong>How is Family Benefit Life insurance good for seniors?</strong></h3>
 
 <p>Family Benefit Life is a brilliant choice for most people. Their underwriting is flexible, and their pricing is almost always the best value for most people.</p>
 
 <p>People with diabetes who started taking insulin after age 40 and with no insulin shock, diabetic coma, or diabetic amputation will qualify for first-day coverage.</p>
 
-<h3 id="h-does-family-benefit-life-have-any-hidden-fine-print-in-their-policy"><strong>Does Family Benefit Life Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3 id="h-does-family-benefit-life-have-any-hidden-fine-print-in-their-policy"><strong>Does Family Benefit Life have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>Family Benefit Life graded benefit plan has a sliding modal factor.</p>
 
@@ -105,7 +105,7 @@ sidebar: true
 
 <p>Family Benefit’s first-day coverage plan is incredible. Their graded plan is not one we recommend, as we have other companies that are often a better fit than a graded plan.</p>
 
-<h2 id="what-are-the-pros-&-cons"><strong>What Are The Pros &amp; Cons Of Family Benefit Life Insurance?</strong></h2>
+<h2 id="what-are-the-pros-&-cons"><strong>What are the pros &amp; cons of Family Benefit Life insurance?</strong></h2>
 
 <p><strong>PROS</strong></p>
 
@@ -128,26 +128,26 @@ sidebar: true
 <li>Family Benefit Life has a height &amp; weight chart. Overweight or obese may not qualify</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Family Benefit Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Family Benefit Life insurance?</strong></h2>
 
-<h3><strong>Family Benefit Life Riders</strong></h3>
+<h3><strong>Family Benefit Life riders</strong></h3>
 
 <ul>
 <li><strong>100% Accelerated Living Benefit</strong><sup><sup>1</sup></sup>: “Benefits may be accelerated if the insured is diagnosed with a terminal illness that, with reasonable medical certainty, will result in the death of the Insured in 12 months or less.”</li>
 <li><strong>Nursing Home Confinement</strong><sup>1</sup>: “Benefits may also be accelerated if the Insured is confined continuously to a Qualified Nursing Home, with confinement expected to continue until the Insured’s death. Nursing Home confinement must begin after the effective date of this policy.”</li>
 </ul>
 
-<h3><strong>Family Benefit Life Other Benefits</strong></h3>
+<h3><strong>Family Benefit Life other benefits</strong></h3>
 
 <ul>
 <li><strong>Policy Loans: </strong>“You can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.”</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved?</strong></h2>
 
 <p>Family Benefit Life’s 1st-day coverage life insurance application will ask if you’ve ever had some health issue or had other health issues in the last 6, 12, or 24 months.</p>
 
-<h3 id="h-what-are-family-benefit-life-s-application-questions"><strong>What Are Family Benefit Life’s Application Questions?</strong></h3>
+<h3 id="h-what-are-family-benefit-life-s-application-questions"><strong>What are Family Benefit Life’s application questions?</strong></h3>
 
 <p>The health questions are the most important part of Family Benefit Life Insurance underwriting.</p>
 
@@ -174,13 +174,13 @@ sidebar: true
 <li>Have you ever been diagnosed as having: multiple sclerosis, epilepsy, schizophrenia, Parkinson’s, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure or lung impairments (including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema or fibrosis).</li>
 </ol>
 
-<h3 id="h-does-family-benefit-life-have-the-same-day-approval-process"><strong>Does Family Benefit Life Have The Same Day Approval Process?</strong></h3>
+<h3 id="h-does-family-benefit-life-have-the-same-day-approval-process"><strong>Does Family Benefit Life have the same day approval process?</strong></h3>
 
 <p>Family Benefit Life offers a simple <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> where you can apply over the phone with an agent at Final Expense.</p>
 
 <p>We can generally get you approved within 15 minutes over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get life insurance pricing?</strong></h2>
 
 <p>Family Benefit Life rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -342,9 +342,9 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Family Benefit Life Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Family Benefit Life company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Family Benefit Life’s Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s operational history</strong></h3>
 
 <p>Family Benefit Life Insurance Company is owned and operated by its parent company First Trinity Financial Corporation, based in Tulsa, Oklahoma.  </p>
 
@@ -352,25 +352,25 @@ sidebar: true
 
 <p>Alabama, Arizona, Arkansas, Colorado, Georgia, Illinois, Indiana, Kansas, Kentucky, Louisiana, Michigan, Mississippi, Missouri, Montana, Nebraska, New Mexico, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, South Dakota, Tennessee, Texas, Utah, Virginia, and West Virginia.</p>
 
-<h4>Company Address</h4>
+<h4>Company address</h4>
 
 <p>7633 East 63rd Pl.<br>Suite 230<br>Tulsa, OK, 74133</p>
 
-<h4>Contact Info</h4>
+<h4>Contact info</h4>
 
 <p>Website: www.familybenefit.com<br>Phone: (918) 249-2438<br>Customer Service: (866) 211-0811</p>
 
-<h3 id="Financial-Rating"><strong>What Is Family Benefit Life’s Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s financial rating?</strong></h3>
 
 <p>Family Benefit Life has an A+ (excellent) rating from <a href="https://www.bbb.org/us/ok/tulsa/profile/holding-company/first-trinity-financial-corporation-1025-20000887" target="_blank" rel="noreferrer noopener nofollow">Better Business Bureau</a>. This rating shows the company’s excellent customer service and ability to pay claims.</p>
 
-<h3><strong>Does Family Benefit Life Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Family Benefit Life have any consumer complaints?</strong></h3>
 
 <p>Family Benefit Life Insurance has no complaints listed on the National Association of Insurance Commissioners (<a href="https://content.naic.org/" target="_blank" rel="noreferrer noopener">NAIC</a>).</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying life insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Family Benefit Life’s sales process?</strong></h3>
 
 <p>Final Expense Guy can sell all Family Benefit Life products in every state they offer insurance products.</p>
 
@@ -382,7 +382,7 @@ sidebar: true
 
 <p>With a graded benefit plan, you will still receive 50% of the death benefit if you die during the first two years of the policy. We don’t recommend their graded plan in most cases.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-family-benefit-life"><strong>Are Any Health Conditions Not Accepted By Family Benefit Life?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-family-benefit-life"><strong>Are any health conditions not accepted by Family Benefit Life?</strong></h3>
 
 <p>They do not accept these health issues for Golden Eagle’s first-day coverage plan:</p>
 
@@ -405,7 +405,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Family Benefit Life’s pricing compares to other companies.</p>
 
@@ -416,7 +416,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Family Benefit Life?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Family Benefit Life?</strong></h2>
 
 <details>
 <summary><b>Who owns Family Benefit Life Insurance?</b></summary>

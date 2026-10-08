@@ -1,0 +1,70 @@
+---
+// Renders the pages opted in to the article template (src/config/article-pages.ts)
+// with ArticleLayout. Every other page renders through [...slug].astro, which
+// skips these paths. A separate route keeps the template's styles off every
+// other page: Astro bundles a layout's CSS into each page of the route that
+// imports it.
+import ArticleLayout from '@/layouts/ArticleLayout.astro';
+import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
+import { ARTICLE_PAGES } from '@/config/article-pages';
+import { isArticlePage, resolveArticle, type ResolvedArticle } from '@/lib/article/config';
+import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
+import { allHubNavLinks, HUB_SUMMARIES } from '@/config/hub-nav';
+import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
+import { LEGACY_INTROS } from '@/config/article-intros';
+
+export async function getStaticPaths() {
+  const pages = await getPublishedPages();
+  const h1s = new Map(
+    pages.map((p) => [pagePath(p), htmlToText(p.rendered?.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? p.data.title)]),
+  );
+  // Every listed page must exist and be published.
+  for (const path of Object.keys(ARTICLE_PAGES)) {
+    if (!h1s.has(path)) throw new Error(`src/config/article-pages.ts lists ${path}, which is not a published page`);
+  }
+  // Every hub navigation link (src/config/hub-nav.ts) too.
+  for (const { href } of allHubNavLinks()) {
+    if (!h1s.has(href)) throw new Error(`src/config/hub-nav.ts links ${href}, which is not a published page`);
+  }
+  // Every article opens with the full summary: a Quick Answer and the
+  // key-points list (or an A–Z hub's guide summary), unless the gap is a
+  // listed hold (src/config/article-holds.ts). A hold must be removed once
+  // the page has the element.
+  const html = new Map(pages.map((p) => [pagePath(p), p.rendered?.html ?? '']));
+  for (const [path, c] of Object.entries(ARTICLE_PAGES)) {
+    const hub = Boolean(HUB_SUMMARIES[path]);
+    const answer = Boolean(c.quickAnswer) || hub;
+    if (!answer && !(path in QUICK_ANSWER_HELD))
+      throw new Error(`${path}: no Quick Answer; add \`quickAnswer\` in src/config/article-pages.ts (or a hold in src/config/article-holds.ts)`);
+    if (answer && path in QUICK_ANSWER_HELD)
+      throw new Error(`${path} has a Quick Answer; remove its hold from QUICK_ANSWER_HELD in src/config/article-holds.ts`);
+    const points = hub || Boolean(enhanceArticle(html.get(path) ?? '', { variant: c.variant }).takeaways);
+    if (!points && !(path in SUMMARY_HELD))
+      throw new Error(`${path}: no key-points list ("Here’s the Bottom Line") was found for its summary (or add a hold in src/config/article-holds.ts)`);
+    if (points && path in SUMMARY_HELD)
+      throw new Error(`${path} has its key-points list; remove its hold from SUMMARY_HELD in src/config/article-holds.ts`);
+  }
+  for (const path of [...Object.keys(QUICK_ANSWER_HELD), ...Object.keys(SUMMARY_HELD)]) {
+    if (!(path in ARTICLE_PAGES)) throw new Error(`src/config/article-holds.ts lists ${path}, which is not an article page`);
+  }
+  // An opening paragraph is left out only where the Quick Answer replaces it,
+  // and only while it is still there to match.
+  for (const [path, openings] of Object.entries(LEGACY_INTROS)) {
+    const c = ARTICLE_PAGES[path];
+    if (!c) throw new Error(`src/config/article-intros.ts lists ${path}, which is not an article page`);
+    if (!c.quickAnswer) throw new Error(`src/config/article-intros.ts lists ${path}, which has no Quick Answer`);
+    const { missing } = enhanceArticle(html.get(path) ?? '', { variant: c.variant, legacyIntro: openings }).report.legacyIntro;
+    if (missing.length) throw new Error(`${path}: opening paragraph not found in its intro: "${missing.join('", "')}" (src/config/article-intros.ts)`);
+  }
+  return pages
+    .filter((entry) => isArticlePage(pagePath(entry)))
+    .map((entry) => ({
+      params: { article: pagePath(entry).replace(/^\/|\/$/g, '') },
+      props: { entry, article: resolveArticle(pagePath(entry), (p) => h1s.get(p)) },
+    }));
+}
+
+const { entry, article } = Astro.props as { entry: PageEntry; article: ResolvedArticle };
+---
+
+<ArticleLayout entry={entry} article={article} />

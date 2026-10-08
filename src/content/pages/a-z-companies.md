@@ -10,7 +10,7 @@ sidebar: true
 
 <h1>A to Z Final Expense Life Insurance Companies</h1>
 
-<h2 id="h-funeral-insurance-companies-a-z"><br><strong>FINAL EXPENSE INSURANCE COMPANIES IN THE USA</strong></h2>
+<h2 id="h-funeral-insurance-companies-a-z"><br><strong>Final expense insurance companies in the USA</strong></h2>
 
 <p><strong>Here’s a list of the most common WHOLE LIFE final expense companies in the United States. Most offer between $2,500 to $50,0000 in coverage (depending on age, health, and state). I’ve included brief comments about their offerings or value (in alphabetical order): </strong></p>
 
@@ -20,20 +20,20 @@ sidebar: true
 <li><strong><a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AETNA (CVS Health)</a>: </strong>Competitive prices. Good for overweight people &amp; COPD.</li>
 <li><strong>Allstate: </strong>Expensive as a stand-alone product. Strict underwriting with many declines.</li>
 <li><strong>Assurant/American Memorial:</strong> Moderate pricing.</li>
-<li><strong>Americo:</strong> Expensive pricing. Terrible smoker incentive rate program.</li>
+<li><strong><a href="/americo-life-insurance-quit-smoking-advantage/" target="_blank" rel="noreferrer noopener">Americo</a>:</strong> Expensive pricing. Terrible smoker incentive rate program.</li>
 <li><strong><a href="/burial-insurance/american-amicable-life-insurance-review/" target="_blank" rel="noreferrer noopener">American Amicable</a>:</strong> Moderate rates. Good smoker rates.</li>
 <li><strong><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG/American General</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Christian Fidelity:</strong> Good Rates. In-person application only.</li>
 <li><strong><a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit</a>: </strong>Great pricing. Easy underwriting. Great for diabetics. Easy phone approval.</li>
 <li><strong>Farmers Insurance:</strong> Expensive as a stand-alone product. Strict underwriting with many declines.</li>
-<li><strong>Fidelity Life:</strong> Be careful of their term policy. Often 30+% more expensive for final expense.</li>
+<li><strong><a href="/fidelity-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Fidelity Life</a>:</strong> Be careful of their term policy. Often 30+% more expensive for final expense.</li>
 <li><strong><a href="/foresters-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Foresters</a>: </strong>Moderate rates. Good for a few niche illnesses. Fraternal company.</li>
 <li><strong><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>: </strong>Term life insurance. Low cost initially. Large 5-year price increases. Cancels after age 80.</li>
 <li><strong><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a>:</strong> 2-year waiting period only. Expensive. No health questions.</li>
 <li><strong>Grange Insurance:</strong> Average pricing. Not a well-known company.</li>
 <li><strong>Greek Catholic Union:</strong> Average pricing. More restrictive underwriting. Limited state availability.</li>
-<li><strong>Guarantee Trust Life:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
+<li><strong><a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a>:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
 <li><strong><a href="/liberty-bankers-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Liberty Bankers Life</a>:</strong> Niche carrier for specific health problems. Good for younger people.</li>
 <li><strong>Lifeshield Life Insurance Company:</strong> Average pricing.</li>
 <li><strong><a href="/lincoln-heritage-funeral-advantage-review-old/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! About 40% more expensive. Some plans have a 3-year wait.</li>
@@ -57,7 +57,9 @@ sidebar: true
 
 <p>If you would like some help getting the best policy at the lowest rates, we can help you compare our 1st-day coverage policies to all the companies shown above.</p>
 
-<h2 id="2-Year-Waiting-Period-Companies"><br><strong>2-YEAR WAITING PERIOD PLANS</strong></h2>
+<div data-hub-nav="az-companies"></div>
+
+<h2 id="2-Year-Waiting-Period-Companies"><br><strong>2-year waiting period plans</strong></h2>
 
 <p>Don’t buy a costly 2-year “guaranteed issue” waiting period plan! If you’re in reasonably good health, you will qualify for 1st-day coverage at Final Expense Guy.</p>
 
@@ -77,7 +79,7 @@ sidebar: true
 
 <p>NOTE: If a plan says “no medical questions asked,” it has a mandatory 2-year waiting period with 30-40% higher pricing than 1st-day coverage. </p>
 
-<h2 id="Term-Life-Insurance-Companies"><strong>TERM LIFE INSURANCE</strong></h2>
+<h2 id="Term-Life-Insurance-Companies"><strong>Term life insurance</strong></h2>
 
 <p>Term life insurance is N<strong>OT</strong> appropriate for final expense life insurance because your price will increase every five years, and they cancel after age 80. (exactly at the time when you need this insurance the most.</p>
 
@@ -91,7 +93,7 @@ sidebar: true
 <li><a href="/trustage-price-increase/" target="_blank" rel="noreferrer noopener">TruStage</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
 </ul>
 
-<h2><strong> LIFE INSURANCE QUALIFYING QUESTIONS</strong></h2>
+<h2><strong> Life insurance qualifying questions</strong></h2>
 
 <p><strong>To qualify for 1st-day coverage, we will need to know your:</strong></p>
 
@@ -109,7 +111,7 @@ sidebar: true
 
 <p><strong>NOTE:</strong> Most agents only work with 1-3 companies, so you will often not get the best rate, especially from agents that are required to visit you in your home.</p>
 
-<h2 id="Additional-Riders-Available"><strong>ADDITIONAL COMPANY RIDERS ARE AVAILABLE</strong></h2>
+<h2 id="Additional-Riders-Available"><strong>Additional company riders are available</strong></h2>
 
 <p>Some companies offer riders at an additional cost, and some companies offer riders that are free of charge. The companies with the most riders are not always the best when considering pricing and coverage options.</p>
 

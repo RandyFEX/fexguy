@@ -60,13 +60,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="h-does-having-diabetes-really-impact-my-health-and-lifespan"><strong>Does Having Diabetes Really Impact My Health And Lifespan?</strong></h2>
+<h2 id="h-does-having-diabetes-really-impact-my-health-and-lifespan"><strong>Does having diabetes really impact my health and lifespan?</strong></h2>
 
-<h3><strong>Diabetes Health Statistics (U.S.)</strong></h3>
+<h3><strong>Diabetes health statistics (U.S.)</strong></h3>
 
 <figure class="table-wrap"><table><thead><tr><th><strong>Category</strong></th><th><strong>Statistic</strong></th></tr></thead><tbody><tr><td><strong>Total with Diabetes</strong></td><td>38.4 million (11.6% of the U.S. population)</td></tr><tr><td><strong>Undiagnosed Cases</strong></td><td>~20% (1 in 5 people with diabetes don’t know they have it)</td></tr><tr><td><strong>Prediabetes</strong></td><td>96 million adults (38%); over 80% unaware</td></tr><tr><td><strong>Type 2 Diabetes</strong></td><td>90–95% of all diagnosed cases</td></tr><tr><td><strong>Type 1 Diabetes</strong></td><td>5–10% of all diagnosed cases</td></tr><tr><td><strong>Leading Cause Of</strong></td><td>Kidney failure, amputations, adult blindness</td></tr><tr><td><strong>Cardiovascular Risk</strong></td><td>2x higher risk of heart attack or stroke</td></tr><tr><td><strong>Early Death Risk</strong></td><td>50% higher risk of early death</td></tr><tr><td><strong>Chronic Kidney Disease</strong></td><td>37% of diabetics have CKD</td></tr><tr><td><strong>Vision Problems</strong></td><td>~1 in 6 have diabetic retinopathy</td></tr><tr><td><strong>Amputations (Non-traumatic)</strong></td><td>Most common cause among adults</td></tr><tr><td><strong>Age 65+ Prevalence</strong></td><td>26.4% of seniors have diabetes</td></tr><tr><td><strong>Medical Cost</strong></td><td>$327 billion total (as of 2017)</td></tr><tr><td><strong>Personal Medical Cost Impact</strong></td><td>2.3x higher annual cost for diabetics vs. non-diabetics</td></tr><tr><td><strong>Demographics at Higher Risk</strong></td><td>Older adults, Non-Hispanic Black, Hispanic, Native American populations</td></tr><tr><td><strong>Gender Distribution</strong></td><td>Slightly more common in men than women</td></tr><tr><td><strong>Ranking in Cause of Death</strong></td><td>8th leading cause of death in the U.S.</td></tr></tbody></table></figure>
 
-<h2 id="different-diabetic-complications"><strong>What Are The Different Diabetic Complications?</strong></h2>
+<h2 id="different-diabetic-complications"><strong>What are the different diabetic complications?</strong></h2>
 
 <p>Alright, let’s get real about diabetic complications. When diabetes isn’t kept in check, it can wreak havoc on your body, targeting nerves and blood vessels like it’s on a mission. Here’s the lowdown on the most common complications you need to watch out for:</p>
 
@@ -88,15 +88,15 @@ sidebar: true
 
 <p>The severity and type of complication will influence the rates – well-managed diabetes with fewer complications might see smaller increases compared to poorly controlled diabetes with multiple issues.</p>
 
-<h3>⚠️ <strong>Most Dangerous Diabetes Complications &amp; Their Impact</strong></h3>
+<h3>⚠️ <strong>Most dangerous diabetes complications &amp; their impact</strong></h3>
 
 <figure class="table-wrap"><table><thead><tr><th><strong>Complication</strong></th><th><strong>Impact on Patient</strong></th></tr></thead><tbody><tr><td><strong>Cardiovascular Disease</strong></td><td>Major cause of death; 2–4x increased risk of heart attack and stroke</td></tr><tr><td><strong>Chronic Kidney Disease (CKD)</strong></td><td>Gradual kidney failure; may require dialysis or transplant</td></tr><tr><td><strong>Diabetic Retinopathy</strong></td><td>Eye damage leading to vision loss or blindness</td></tr><tr><td><strong>Peripheral Neuropathy</strong></td><td>Numbness, pain, or weakness in hands and feet; risk of injury and amputation</td></tr><tr><td><strong>Foot Ulcers &amp; Infections</strong></td><td>Poor healing can lead to serious infections and limb amputation</td></tr><tr><td><strong>Stroke</strong></td><td>Higher risk due to damaged blood vessels; can result in paralysis or death</td></tr><tr><td><strong>Diabetic Ketoacidosis (DKA)</strong></td><td>Life-threatening emergency from high blood sugar and ketones</td></tr><tr><td><strong>Hypoglycemia (Low Blood Sugar)</strong></td><td>Sudden onset can cause seizures, unconsciousness, or death</td></tr><tr><td><strong>Cognitive Decline &amp; Dementia</strong></td><td>Elevated risk of Alzheimer’s and other forms of dementia</td></tr><tr><td><strong>Depression &amp; Mental Health</strong></td><td>Chronic illness stress increases risk of depression, impacting treatment adherence</td></tr></tbody></table></figure>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance If I Have Diabetes With Diabetic Complications?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance if I have diabetes with diabetic complications?</strong></h2>
 
 <p>Absolutely! You can even snag a first-day coverage plan, whether you’re popping pills or taking injections to keep your diabetes in check.</p>
 
-<h2 id="burial-insurance-available"><strong>Burial Insurance Available For Diabetics</strong></h2>
+<h2 id="burial-insurance-available"><strong>Burial insurance available for diabetics</strong></h2>
 
 <table>
 <thead>
@@ -107,7 +107,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice</td>
+<td>Certain companies in some states – Level</td>
 <td>1st-Day Coverage</td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ sidebar: true
 
 <p>Instead, you’ll get the premiums you’ve paid plus 7-10% interest, depending on the carrier. So, make sure you know what you’re signing up for!</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Diabetes With Diabetic Complications?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have diabetes with diabetic complications?</strong></h2>
 
 <p><strong>TYPE 1 DIABETES</strong><br>Got juvenile diabetes? No worries! Your best bet is a first-day coverage life insurance with certain companies. You’re covered from the get-go if you go with the right insurance company!</p>
 
@@ -149,7 +149,7 @@ sidebar: true
 
 <p><strong>DIABETIC AMPUTATION</strong><br>Got a diabetic amputation? Insurance companies will want to know if you can handle your daily activities (ADLs) on your own. If you can, you’re good to go with first-day coverage burial insurance with some companies. If you need help, guaranteed acceptance life insurance is your best friend. Most burial insurance companies won’t offer first-day coverage if you need assistance with ADLs.</p>
 
-<p><strong>DIABETIC COMA</strong><br>Had a diabetic coma in the last two years? Go for 1st-day coverage. If you’ve been hospitalized repeatedly in the last 2 years or need help with ADLs, you’ll likely need to go for guaranteed acceptance life insurance.</p>
+<p><strong>DIABETIC COMA</strong><br>Had a diabetic coma in the last two years? You can still go for 1st-day coverage with a limited number of companies. If you’ve been hospitalized repeatedly in the last 2 years or need help with ADLs, you’ll likely need to go for guaranteed acceptance life insurance.</p>
 
 <p><strong>INSULIN SHOCK</strong><br>If your insulin shock happened over two years ago, you’re in the clear for first-day coverage insurance. No need to sweat it!</p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <p><strong>INABILITY TO PERFORM ADL’S (Activities of Daily Living)</strong><br>If you need help with daily activities, every life insurance company will ask. If you can’t do them independently, guaranteed issue life insurance is your go-to.</p>
 
-<h2 id="best-insurance-rates"><strong>How to Get the Best Insurance Rates&#160;</strong></h2>
+<h2 id="best-insurance-rates"><strong>How to get the best insurance rates&#160;</strong></h2>
 
 <p>To get the best rate for burial insurance, partner with an independent agency like Final Expense Guy. We’ll hunt down the most diabetic-friendly company to get you the best deal out there.</p>
 
@@ -176,7 +176,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -209,7 +209,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -231,7 +231,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need to Take a Medical Exam to Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need to take a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>No, you are not required to take a medical examination to qualify for coverage. You also won’t need to submit blood and urine samples as part of the application process. You’ll only need to answer a simple health questionnaire to qualify for coverage.</p>
 
@@ -256,13 +256,13 @@ sidebar: true
 <li>Retinopathy (Eye issues due to diabetes)</li>
 </ul>
 
-<h2 id="why-do-insurance-companies-care"><strong>Why Do Insurance Companies Care If You Have Diabetes With Diabetic Complications?</strong></h2>
+<h2 id="why-do-insurance-companies-care"><strong>Why do insurance companies care if you have diabetes with diabetic complications?</strong></h2>
 
 <p>Well, uncontrolled diabetes can wreak havoc on your nerves and blood vessels, leading to heart disease or a stroke. Not exactly a party, right?</p>
 
 <p>The American Diabetes Association (ADA) spills the tea: over 30 million Americans have diabetes, with a staggering 95% rocking type 2. And let’s not forget, nearly 84 million people are chilling in the pre-diabetes zone.</p>
 
-<h2 id="underwriting-for-diabetes"><strong>Burial Insurance Underwriting For Diabetes With Diabetic Complications</strong></h2>
+<h2 id="underwriting-for-diabetes"><strong>Burial insurance underwriting for diabetes with diabetic complications</strong></h2>
 
 <p>If you want first-day coverage, get ready for some health questions and a deep dive into your prescription history. These insurance companies don’t mess around!</p>
 
@@ -287,7 +287,7 @@ sidebar: true
 
 <p><strong><br>PRESCRIPTION MEDICATIONS:</strong></p>
 
-<p>Insurance companies are like detectives—they’ll snoop through your prescription history to get the low-down on your medical background.</p>
+<p>Insurance companies are like detectives: they’ll snoop through your prescription history to get the low-down on your medical background.</p>
 
 <p><strong>Here are some common diabetic medications:</strong></p>
 
@@ -310,7 +310,7 @@ sidebar: true
 
 <p>If you’re on any of these meds, trust me, the insurance company will totally know you’ve got a history of diabetes.</p>
 
-<h2 id="information-we-need"><strong>Information We Need If You Have Diabetes With Diabetic Complications</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you have diabetes with diabetic complications</strong></h2>
 
 <p><strong>Here are some common questions we may ask to help you get 1st-day coverage with diabetes:</strong></p>
 
@@ -328,15 +328,7 @@ sidebar: true
 
 <p>These questions will give us the lowdown on your condition and help us nail down the perfect quote for you.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Here at Final Expense Guy, we’re the ultimate matchmaker for life insurance, especially if you’re navigating diabetes or its complications.</p>
-
-<p>We specialize in connecting you with top-rated insurance companies that excel in handling high-risk clients like you. Our job is to sift through these companies to secure the best possible life insurance rates available.</p>
-
-<p>Our mission? To land you the coverage you need at a price that won’t make you cringe. So, if you’re after affordable life insurance with diabetes or its complications, count on us to make it happen. Fill out our quote form or dial (888)862-9456 to get those burial insurance quotes rolling in.</p>
-
-<h2 id="faq">  <strong>Frequently Asked Questions </strong></h2>
+<h2 id="faq">  <strong>Frequently asked questions </strong></h2>
 
 <p><strong>Can I get insurance if I have diabetes?</strong></p>
 
@@ -364,7 +356,7 @@ sidebar: true
 
 <p><strong>Does Type 2 diabetes affect life insurance?</strong></p>
 
-<p>Not really—it doesn’t have to be a deal-breaker. You can still score coverage even if you’ve got type 2 diabetes without any complications.</p>
+<p>Not really. It doesn’t have to be a deal-breaker. You can still score coverage even if you’ve got type 2 diabetes without any complications.</p>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
 
@@ -372,12 +364,12 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/burial-insurance/diabetic-neuropathy/">
-<h3 class="as-h5">Life Insurance with Diabetic Neuropathy</h3>
+<h3 class="as-h5">Life insurance with diabetic neuropathy</h3>
 </a>  <a href="/burial-insurance/diabetic-nephropathy/">
-<h3 class="as-h5">Diabetic Nephropathy Final Expense Life Insurance</h3>
+<h3 class="as-h5">Diabetic nephropathy final expense life insurance</h3>
 </a>  <a href="/final-expense-life-insurance-diabetics/">
-<h3 class="as-h5">Final Expense Life Insurance For Diabetics</h3>
+<h3 class="as-h5">Final expense life insurance for diabetics</h3>
 </a></div>

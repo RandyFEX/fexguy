@@ -53,7 +53,7 @@ export const site: SiteConfig = {
   phoneDisplay: '888-862-9456',
   phoneE164: '+18888629456',
   email: '',
-  logo: { src: `${uploads}/2026/09/FINAL-EXPENSE-GUY-LOGO-340-X-250.png`, width: 2034, height: 250, alt: 'Final Expense Guy' },
+  logo: { src: '/images/logo/final-expense-guy-logo.png', width: 2034, height: 250, alt: 'Final Expense Guy' },
   icons: [
     { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-32x32.png`, sizes: '32x32' },
     { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-192x192.png`, sizes: '192x192' },
@@ -61,19 +61,20 @@ export const site: SiteConfig = {
   ],
   defaultOgImage: '',
   primaryNav: [
-    { label: '★FREE FINAL EXPENSE QUOTE★', href: '/free-quote/' },
+    { label: 'GET A QUOTE', href: '/free-quote/' },
     {
       label: 'RESOURCES',
       href: '#',
       children: [
-        { label: 'A TO Z FINAL EXPENSE LIFE INSURANCE COMPANIES', href: '/a-z-companies/' },
-        { label: 'A TO Z HEALTH CONDITIONS ACCEPTED', href: '/a-z-health/' },
-        { label: 'BURIAL INSURANCE COMPLETE GUIDE', href: '/burial-insurance/' },
-        { label: 'Final Expense Life Insurance Shopper • 1st-Time Shopper Guide', href: '/final-expense-life-insurance-book/' },
-        { label: 'FUNERAL PLANNING GUIDE', href: '/12-step-final-planning-guide/' },
-        { label: 'IUL Playbook: How It Works, What It Promises, & What It Delivers', href: '/iul-book/' },
+        { label: 'A to Z Final Expense Companies', href: '/a-z-companies/' },
+        { label: 'A to Z Health Conditions', href: '/a-z-health/' },
+        { label: 'Burial Insurance Guide', href: '/burial-insurance/' },
+        { label: 'First-Time Shopper Guide', href: '/final-expense-life-insurance-book/' },
+        { label: 'Funeral Planning Guide', href: '/12-step-final-planning-guide/' },
+        { label: 'IUL Playbook', href: '/iul-book/' },
       ],
     },
+    { label: 'REVIEWS', href: '/reviews/' },
     { label: 'ABOUT', href: '/about/' },
   ],
   footer: {

@@ -1,10 +1,10 @@
 ---
 title: "TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]"
-description: "TransAmerica Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"
+description: "A review of Transamerica burial insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/transamerica-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"TransAmerica Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/transamerica-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-14T10:54:57-05:00"},{"property":"article:published_time","content":"2026-04-14T10:51:18-05:00"},{"property":"article:modified_time","content":"2026-04-14T10:54:57-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"TransAmerica Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"17 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/\",\"name\":\"TransAmerica Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/transamerica-burial-insurance-review/\",\"name\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-04-14T10:51:18-05:00\",\"dateModified\":\"2026-04-14T10:54:57-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"keywords\":\"Transamerica burial insurance review\",\"datePublished\":\"2026-04-14T10:51:18-05:00\",\"dateModified\":\"2026-04-14T10:54:57-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"TransAmerica Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!\",\"name\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"A review of Transamerica burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/transamerica-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-14T10:54:57-05:00"},{"property":"article:published_time","content":"2026-04-14T10:51:18-05:00"},{"property":"article:modified_time","content":"2026-04-14T10:54:57-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"A review of Transamerica burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"17 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/\",\"name\":\"TransAmerica Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/transamerica-burial-insurance-review/\",\"name\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-04-14T10:51:18-05:00\",\"dateModified\":\"2026-04-14T10:54:57-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"keywords\":\"Transamerica burial insurance review\",\"datePublished\":\"2026-04-14T10:51:18-05:00\",\"dateModified\":\"2026-04-14T10:54:57-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"A review of Transamerica burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"name\":\"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]\",\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/transamerica-burial-insurance-review/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -62,21 +62,21 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-transamerica-offer-first-day-coverage"><br><strong>Does Transamerica Offer First-day Coverage?</strong></h2>
+<h2 id="does-transamerica-offer-first-day-coverage"><br><strong>Does TransAmerica offer first-day coverage?</strong></h2>
 
 <p>Yes. Transamerica offers first-day burial insurance products, but they tend to be more expensive than other companies.    </p>
 
 <p>If you qualify, their Immediate Solution and 10-Pay Solution come with 1st-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.</p>
 
-<h2 id="pros-of-transamerica-burial-insurance"><strong>Pros Of Transamerica Burial Insurance </strong></h2>
+<h2 id="pros-of-transamerica-burial-insurance"><strong>Pros of TransAmerica burial insurance </strong></h2>
 
 <p><strong>No height &amp; weight chart</strong> – No height and weight chart; you can qualify even if you are on the heavier side<br><strong>Coverage amount</strong> – Higher coverage amount available<br><strong>Pricing</strong> – Competitive premium rates for the Immediate Solution preferred plan</p>
 
-<h2 id="cons-of-transamerica-burial-insurance"><strong>Cons Of Transamerica Burial Insurance</strong> </h2>
+<h2 id="cons-of-transamerica-burial-insurance"><strong>Cons of TransAmerica burial insurance</strong> </h2>
 
 <p><strong>Higher rates</strong> – Higher premium rate on Immediate Solution standard plan<br><strong>Underwriting</strong> – The company may ask for the attending physician’s statement if they want to clarify something about your health<br><strong>Waiting period</strong> – Higher premium rate on Easy Solution plan with a waiting period</p>
 
-<h2 id="transamerica-burial-insurance-products"><br><strong>Transamerica Burial Insurance Products</strong></h2>
+<h2 id="transamerica-burial-insurance-products"><br><strong>TransAmerica burial insurance products</strong></h2>
 
 <p><strong>Transamerica offers two primary burial insurance products, namely:</strong></p>
 
@@ -163,7 +163,7 @@ sidebar: true
 
 <p>If you die within the first two years, 110% of the premiums you paid minus any loan balance will be given to your beneficiary. Some states pay 30% of the death benefit in year one and 60% in year two. In year three, 100% of the death benefit will be given to your beneficiary.</p>
 
-<h2 id="transamerica-burial-insurance-riders"><br><strong>Transamerica Burial Insurance Riders</strong></h2>
+<h2 id="transamerica-burial-insurance-riders"><br><strong>TransAmerica burial insurance riders</strong></h2>
 
 <p> <strong>IMMEDIATE SOLUTION </strong> <strong>RIDERS</strong></p>
 
@@ -185,7 +185,7 @@ sidebar: true
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-does-transamerica-make-sense"><br><strong>When Does Transamerica Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-transamerica-make-sense"><br><strong>When does TransAmerica burial insurance make the most sense?</strong></h2>
 
 <p>Based on our Transamerica burial insurance review, we found that Transamerica is an excellent option if your health qualifies you for their Immediate Solution preferred plan. Their rate is comparable with other insurance companies offering first-day coverage.</p>
 
@@ -193,7 +193,7 @@ sidebar: true
 
 <p>Stay away from their Easy Solution because it comes with a waiting period. If you have some pre-existing medical condition that only qualifies you for this plan, we can get you approved with another company at a lower rate.</p>
 
-<h2 id="transamerica-underwriting-guidelines"><br><strong>Transamerica Burial Insurance Underwriting Guidelines</strong></h2>
+<h2 id="transamerica-underwriting-guidelines"><br><strong>TransAmerica burial insurance underwriting guidelines</strong></h2>
 
 <p>To determine what burial insurance plan to offer you,
 Transamerica will check the following:</p>
@@ -300,7 +300,7 @@ benefit plan.</p>
 
 <p>Transamerica would offer you their Easy Solution with a graded death benefit if you answered yes to two or more of these health questions.</p>
 
-<h2 id="transamerica-pricing-examples"><br><strong>Transamerica Pricing Example</strong></h2>
+<h2 id="transamerica-pricing-examples"><br><strong>TransAmerica pricing example</strong></h2>
 
 <table class="table-wrap" id="tablepress-41">
 <thead>
@@ -450,7 +450,7 @@ benefit plan.</p>
 
 <p> *Pricing for illustration purposes only and are subject to change without notice. </p>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Transamerica Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for TransAmerica burial insurance</strong></h2>
 
 <p>Applying for burial insurance with Transamerica is straightforward. It can be done by phone or computer with a licensed agent.</p>
 
@@ -466,7 +466,7 @@ benefit plan.</p>
 
 <p>The entire application process can be completed electronically in several minutes. To make your application quicker, have your important information readily available such as your social security number, beneficiary, and payment information.</p>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -534,7 +534,7 @@ benefit plan.</p>
 </tbody>
 </table>
 
-<h2 id="transamerica-company-overview"><br><strong>Transamerica Company Overview </strong></h2>
+<h2 id="transamerica-company-overview"><br><strong>TransAmerica company overview </strong></h2>
 
 <p>Transamerica was founded in 1905 in San Francisco by an Italian American entrepreneur, Amadeo Giannini. Transamerica was created as a holding <a href="https://www.transamerica.com/individual/what-we-offer/products/insurance/final-expense-life/" target="_blank" rel="noreferrer noopener">company</a> after the merger of Bank of Italy with Bank of America in 1928.</p>
 
@@ -557,19 +557,7 @@ benefit plan.</p>
 <li>A+  Standard &amp; Poor’s</li>
 </ul>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
-
-<p>Finding a policy if you want Transamerica burial insurance needn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for Transamerica funeral insurance, Transamerica burial insurance, or Transamerica life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Is TransAmerica Life Insurance still in business?</strong></p>
 
@@ -754,16 +742,16 @@ benefit plan.</p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a></div>

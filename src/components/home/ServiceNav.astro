@@ -1,0 +1,201 @@
+---
+// "What Do You Need Help With?": the three core products as navigation
+// tiles. Shares the Why FEXGuy heading scale and gold rule, but the tiles are
+// horizontal (icon, name, arrow) and outlined rather than icon-over-copy
+// cards, so they read as places to go rather than reasons. Phones get one
+// compact grouped list for quick scanning; every tile is a single link.
+import HomeIcon from './HomeIcon.astro';
+import { services } from '@/lib/home/content';
+---
+
+<section class="svc" aria-labelledby="help-title">
+  <div class="container">
+    <h2 class="svc__title" id="help-title">What Do You Need Help With?</h2>
+    <ul class="svc__list" role="list">
+      {
+        services.map((s) => (
+          <li class="svc__item">
+            <a class="svc__link" href={s.href}>
+              <span class="svc__icon">
+                <HomeIcon name={s.icon} size={28} />
+              </span>
+              <span class="svc__name">{s.title}</span>
+              <svg class="svc__arrow" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .svc {
+    padding-block: var(--space-12);
+  }
+  /* Same heading scale and gold rule as Why FEXGuy. */
+  .svc__title {
+    margin: 0 auto var(--space-8);
+    text-align: center;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .svc__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin: 0 auto var(--space-6);
+    background: var(--home-gold);
+  }
+
+  /* Phones: one grouped list with dividers (compact rows, 64px+ tall). */
+  .svc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+  }
+  .svc__item + .svc__item {
+    border-top: 1px solid var(--color-border);
+  }
+  .svc__link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: 4.25rem;
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .svc__icon {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--home-radius);
+    background: var(--home-green-tint);
+    color: var(--color-primary);
+  }
+  .svc__icon :global(svg) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .svc__name {
+    flex: 1;
+    min-width: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-text);
+  }
+  .svc__arrow {
+    flex: none;
+    color: var(--color-primary);
+    transition: transform 0.15s ease;
+  }
+  .svc__link:hover,
+  .svc__link:focus-visible {
+    background: var(--home-cream);
+  }
+  .svc__link:hover .svc__name,
+  .svc__link:focus-visible .svc__name {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .svc__link:hover .svc__arrow,
+  .svc__link:focus-visible .svc__arrow {
+    transform: translateX(3px);
+  }
+  .svc__item:first-child .svc__link {
+    border-radius: var(--home-radius) var(--home-radius) 0 0;
+  }
+  .svc__item:last-child .svc__link {
+    border-radius: 0 0 var(--home-radius) var(--home-radius);
+  }
+
+  /* Tablets: separate outlined tiles, stacked full width (three across
+     would squeeze the names); desktop: three across (below). */
+  @media (min-width: 40rem) {
+    .svc__list {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-4);
+      border: 0;
+      background: none;
+    }
+    .svc__item + .svc__item {
+      border-top: 0;
+    }
+    .svc__item {
+      display: flex;
+    }
+    .svc__link,
+    .svc__item:first-child .svc__link,
+    .svc__item:last-child .svc__link {
+      flex: 1;
+      min-height: 6rem;
+      padding: var(--space-6);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-primary);
+      border-radius: var(--home-radius);
+    }
+    .svc__link:hover,
+    .svc__link:focus-visible {
+      border-color: var(--color-primary);
+      background: var(--home-cream);
+    }
+  }
+  @media (min-width: 64rem) {
+    .svc {
+      padding-block: 4.5rem;
+    }
+    .svc__title {
+      margin-bottom: var(--space-12);
+    }
+    .svc__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-6);
+    }
+    .svc__link,
+    .svc__item:first-child .svc__link,
+    .svc__item:last-child .svc__link {
+      gap: var(--space-4);
+      min-height: 7.5rem;
+      padding: var(--space-6);
+    }
+    .svc__icon {
+      width: 4rem;
+      height: 4rem;
+    }
+    .svc__icon :global(svg) {
+      width: 2rem;
+      height: 2rem;
+    }
+    .svc__name {
+      font-size: 1.3125rem;
+    }
+  }
+  /* Narrow desktops (1024–1279px): a slightly smaller icon and side padding
+     so "Final Expense Insurance" still fits on two lines. */
+  @media (min-width: 64rem) and (max-width: 79.99rem) {
+    .svc__link,
+    .svc__item:first-child .svc__link,
+    .svc__item:last-child .svc__link {
+      gap: var(--space-3);
+      padding-inline: var(--space-4);
+    }
+    .svc__icon {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+</style>

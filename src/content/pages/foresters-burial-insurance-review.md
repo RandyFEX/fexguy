@@ -1,10 +1,10 @@
 ---
 title: "Foresters Burial Insurance Review - [Pros & Cons]"
-description: "Foresters Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"
+description: "A review of Foresters burial insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/foresters-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Foresters Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"Foresters Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/foresters-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-23T13:18:04-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Foresters Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"Foresters Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"14 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/\",\"name\":\"Foresters Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/foresters-burial-insurance-review/\",\"name\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-06-23T13:11:49-05:00\",\"dateModified\":\"2026-06-23T13:18:04-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"description\":\"Foresters Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!\",\"keywords\":\"foresters burial insurance,Foresters PlanRight review,burial insurance for seniors,final expense life insurance reviews,Foresters life insurance pros and cons,burial insurance waiting periods,level death benefit plans,graded death benefit burial insurance,modified death benefit insurance,no medical exam burial insurance,simplified issue life insurance,burial insurance for seniors over 50,Foresters Financial burial insurance,whole life insurance for funeral costs,final expense insurance comparison,best final expense insurance companies,burial insurance application process,senior life insurance without exam,life insurance for final expenses,burial insurance underwriting questions,Foresters insurance customer reviews,affordable burial insurance plans,life insurance for health issues,burial insurance for diabetics,life insurance for heart conditions,burial insurance with no waiting period,burial insurance cost for seniors,life insurance riders for seniors,burial insurance quotes online,Foresters PlanRight features,how to choose burial insurance,life insurance for seniors over 60,life insurance for seniors over 70,life insurance for seniors over 80,burial insurance eligibility,burial insurance beneficiary payouts,life insurance cash value for seniors,final expense planning for families,Foresters Financial ratings,burial insurance vs term life insurance\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What Is Forester Financial\\u2019s Operational History?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters Financial is a fraternal benefit society or not-for-profit organization founded in 1874. Instead of stockholders, it has members who receive benefits from their policies. They offer life insurance (term and permanent), mutual funds, retirement annuities, and various financial and legal advisory services.\"}},{\"@type\":\"Question\",\"name\":\"What are the additional benefits of being a Foresters member?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Members enjoy numerous benefits including: The Legal Link (discounted legal services), Emergency Assistance Program, Orphan Scholarships and benefits, competitive scholarship programs, Terminal Illness Loans (up to 75% of face value), Everyday Money financial counseling, Community Grants Programs, and participation in National Charitable Partnerships.\"}},{\"@type\":\"Question\",\"name\":\"What Is Foresters\\u2019 Financial Rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters Financial holds an 'A' (Excellent) rating from the A.M. Best Company for its financial strength and timely claims payment, a rating it has maintained for over 22 years.\"}},{\"@type\":\"Question\",\"name\":\"Does Foresters Have Any Consumer Complaints?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"In 2021, the National Association of Insurance Commissioners (NAIC) recorded 29 customer complaints against Foresters. These complaints primarily involve policyholder service, claim handling, marketing and sales, and underwriting.\"}},{\"@type\":\"Question\",\"name\":\"What Should You Know Before Buying Foresters Burial Insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters does not accept applicants with significant medical or health issues.\"}},{\"@type\":\"Question\",\"name\":\"Are Any Health Conditions Not Accepted By Foresters?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The following health conditions are not accepted for first-day coverage: Activities of Daily Living (ADLs) issues, Alzheimer\\u2019s or Dementia, AIDs/HIV/ARC, Current Cancer, Congestive Heart Failure, Cardiomyopathy, Dialysis, Diabetic Amputation, End-stage Renal Disease, Hospice, Nursing Home Confinement, Organ or Tissue Transplant, Oxygen Use, and Terminal Illness.\"}},{\"@type\":\"Question\",\"name\":\"How Can I Get Pricing Help Today?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can use quoting software to compare Foresters' pricing with other companies. Generally, $10,000 to $15,000 is recommended for burial needs, while $3,000 to $7,000 is often appropriate for cremation needs.\"}}]}],\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#schema-756544\",\"isPartOf\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Foresters Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"A review of Foresters burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/foresters-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-23T13:18:04-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Foresters Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"A review of Foresters burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"14 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/\",\"name\":\"Foresters Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/foresters-burial-insurance-review/\",\"name\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-06-23T13:11:49-05:00\",\"dateModified\":\"2026-06-23T13:18:04-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"description\":\"A review of Foresters burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"keywords\":\"foresters burial insurance,Foresters PlanRight review,burial insurance for seniors,final expense life insurance reviews,Foresters life insurance pros and cons,burial insurance waiting periods,level death benefit plans,graded death benefit burial insurance,modified death benefit insurance,no medical exam burial insurance,simplified issue life insurance,burial insurance for seniors over 50,Foresters Financial burial insurance,whole life insurance for funeral costs,final expense insurance comparison,best final expense insurance companies,burial insurance application process,senior life insurance without exam,life insurance for final expenses,burial insurance underwriting questions,Foresters insurance customer reviews,affordable burial insurance plans,life insurance for health issues,burial insurance for diabetics,life insurance for heart conditions,burial insurance with no waiting period,burial insurance cost for seniors,life insurance riders for seniors,burial insurance quotes online,Foresters PlanRight features,how to choose burial insurance,life insurance for seniors over 60,life insurance for seniors over 70,life insurance for seniors over 80,burial insurance eligibility,burial insurance beneficiary payouts,life insurance cash value for seniors,final expense planning for families,Foresters Financial ratings,burial insurance vs term life insurance\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Foresters Burial Insurance Review - [Pros &amp; Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What Is Forester Financial\\u2019s Operational History?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters Financial is a fraternal benefit society or not-for-profit organization founded in 1874. Instead of stockholders, it has members who receive benefits from their policies. They offer life insurance (term and permanent), mutual funds, retirement annuities, and various financial and legal advisory services.\"}},{\"@type\":\"Question\",\"name\":\"What are the additional benefits of being a Foresters member?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Members enjoy numerous benefits including: The Legal Link (discounted legal services), Emergency Assistance Program, Orphan Scholarships and benefits, competitive scholarship programs, Terminal Illness Loans (up to 75% of face value), Everyday Money financial counseling, Community Grants Programs, and participation in National Charitable Partnerships.\"}},{\"@type\":\"Question\",\"name\":\"What Is Foresters\\u2019 Financial Rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters Financial holds an 'A' (Excellent) rating from the A.M. Best Company for its financial strength and timely claims payment, a rating it has maintained for over 22 years.\"}},{\"@type\":\"Question\",\"name\":\"Does Foresters Have Any Consumer Complaints?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"In 2021, the National Association of Insurance Commissioners (NAIC) recorded 29 customer complaints against Foresters. These complaints primarily involve policyholder service, claim handling, marketing and sales, and underwriting.\"}},{\"@type\":\"Question\",\"name\":\"What Should You Know Before Buying Foresters Burial Insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Foresters does not accept applicants with significant medical or health issues.\"}},{\"@type\":\"Question\",\"name\":\"Are Any Health Conditions Not Accepted By Foresters?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The following health conditions are not accepted for first-day coverage: Activities of Daily Living (ADLs) issues, Alzheimer\\u2019s or Dementia, AIDs/HIV/ARC, Current Cancer, Congestive Heart Failure, Cardiomyopathy, Dialysis, Diabetic Amputation, End-stage Renal Disease, Hospice, Nursing Home Confinement, Organ or Tissue Transplant, Oxygen Use, and Terminal Illness.\"}},{\"@type\":\"Question\",\"name\":\"How Can I Get Pricing Help Today?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can use quoting software to compare Foresters' pricing with other companies. Generally, $10,000 to $15,000 is recommended for burial needs, while $3,000 to $7,000 is often appropriate for cremation needs.\"}}]}],\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#schema-756544\",\"isPartOf\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/foresters-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -45,9 +45,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Foresters Burial Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Foresters burial insurance</strong></h2>
 
-<h3 id="h-what-insurance-plans-do-foresters-offer"><strong>What Insurance Plans Do Foresters Offer?</strong></h3>
+<h3 id="h-what-insurance-plans-do-foresters-offer"><strong>What insurance plans do Foresters offer?</strong></h3>
 
 <p>Foresters burial insurance plans are called PlanRight whole life insurance.</p>
 
@@ -83,7 +83,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3>#1 – <strong>PLANRIGHT LEVEL DEATH BENEFIT PLAN</strong></h3>
+<h3>#1 – <strong>PlanRight level death benefit plan</strong></h3>
 
 <p>This is a reasonably good option in certain situations and can be competitively priced for specific health issues.</p>
 
@@ -103,7 +103,7 @@ sidebar: true
 
 <p>The level death benefit plan is their best plan. If you are generally healthy, you can qualify for this plan. This plan is also designed to accept minor health conditions for first-day coverage.</p>
 
-<h3><br><strong>#2 –</strong> <strong>PLANRIGHT GRADED DEATH BENEFIT PLAN</strong></h3>
+<h3><br><strong>#2 –</strong> <strong>PlanRight graded death benefit plan</strong></h3>
 
 <p>The graded death benefit by Foresters is often overly expensive for most people, and we would rarely even consider recommending this coverage option.</p>
 
@@ -128,7 +128,7 @@ sidebar: true
 
 <p>You will notice that all the questions here are related to chronic illnesses. If you answer yes to any questions, you will be approved for the graded death benefit plan.</p>
 
-<h3><br><strong>#3 –</strong> <strong>PLANRIGHT MODIFIED DEATH BENEFIT PLAN</strong></h3>
+<h3><br><strong>#3 –</strong> <strong>PlanRight modified death benefit plan</strong></h3>
 
 <p>This is a terrible plan price-wise, which costs more than other plans with two-year waiting periods. </p>
 
@@ -150,21 +150,21 @@ sidebar: true
 
 <p>In our opinion, getting a guaranteed issue no-health questions policy will be a much better choice than accepting a Foresters Modified plan.</p>
 
-<h3 id="h-can-you-get-foresters-burial-insurance-policy-with-no-waiting-period"><strong>Can You Get Foresters Burial Insurance Policy With No Waiting Period?</strong></h3>
+<h3 id="h-can-you-get-foresters-burial-insurance-policy-with-no-waiting-period"><strong>Can you get Foresters burial insurance policy with no waiting period?</strong></h3>
 
 <p>YES, Foresters offers a first-day coverage plan with no waiting period with their level coverage option.</p>
 
 <p>If you qualify, the PlanRight level death benefit plan gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.</p>
 
-<h3 id="h-does-foresters-have-any-hidden-fine-print-in-their-policy-gi-amp-graded-only"><strong>Does Foresters Have Any Hidden “Fine Print” In Their Policy? (GI &amp; GRADED ONLY)</strong></h3>
+<h3 id="h-does-foresters-have-any-hidden-fine-print-in-their-policy-gi-amp-graded-only"><strong>Does Foresters have any hidden “Fine Print” in their policy? (GI &amp; graded only)</strong></h3>
 
 <p>Foresters don’t have any “fine print” clauses in their policies. Just be aware that their two lower-tier plans have waiting periods that many life insurance agents don’t explain very well.</p>
 
 <p>Also, make sure you read your policy once you get it in the mail to verify the agent who helped you answered all the health questions correctly.</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Foresters Burial Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Foresters burial insurance?</strong></h2>
 
-<h3><strong>#1 – PlanRight Level Death Benefit Plan</strong></h3>
+<h3><strong>#1 – PlanRight level death benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -182,7 +182,7 @@ sidebar: true
 <li>Strict underwriting only healthy people qualify</li>
 </ul>
 
-<h3><strong>#2 PlanRight Graded Death Benefit Plan</strong></h3>
+<h3><strong>#2 PlanRight graded death benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -199,7 +199,7 @@ sidebar: true
 <li>Expensive premiums compared to other companies</li>
 </ul>
 
-<h3><strong>#3 PlanRight Modified Death Benefit Plan</strong></h3>
+<h3><strong>#3 PlanRight modified death benefit plan</strong></h3>
 
 <ul>
 <li>Coverage will last until age 121</li>
@@ -214,9 +214,9 @@ sidebar: true
 <li>Expensive premium compared to other companies</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Foresters Burial Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Foresters burial insurance?</strong></h2>
 
-<h3><strong>Foresters Riders</strong></h3>
+<h3><strong>Foresters riders</strong></h3>
 
 <p>Foresters automatically include up to three riders with your base coverage, with no additional premium.</p>
 
@@ -226,17 +226,17 @@ sidebar: true
 <li><strong>Family Health Benefit Rider:</strong> “May provide a payment to help cover some family health expenses (such as an ambulance ride) that occur as a result of certain natural disasters.”</li>
 </ul>
 
-<h3><strong>Foresters Other Benefits</strong></h3>
+<h3><strong>Foresters other benefits</strong></h3>
 
 <ul>
 <li>You can add, at an extra cost, an optional Accidental Death Rider to PlanRight preferred (with a level death benefit), which can pay an additional benefit in case of accidental death.</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Foresters?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Foresters?</strong></h2>
 
 <p>Foresters’ 1st-day coverage life insurance will ask if you have ever had some health issues, or had other health issues in the last 12, 24, or 36 months.</p>
 
-<h3 id="h-what-are-foresters-burial-insurance-application-questions"><strong>What Are Foresters Burial Insurance Application Questions?</strong></h3>
+<h3 id="h-what-are-foresters-burial-insurance-application-questions"><strong>What are Foresters burial insurance application questions?</strong></h3>
 
 <p><strong>Here are the questions you will find in the application:</strong></p>
 
@@ -296,7 +296,7 @@ sidebar: true
 
 <p><strong>Note:</strong>&#160;Your application may still be declined in this section if your prescription history shows medications that are a red flag on the conditions asked in this section. Don’t worry, though. We have other more lenient companies with your medical condition and can get you approved for coverage.</p>
 
-<h3><strong>When Does Foresters’ Burial Insurance Make The Most Sense?</strong></h3>
+<h3><strong>When does Foresters’ burial insurance make the most sense?</strong></h3>
 
 <p>The level benefit plan is the best whole life insurance plan they offer. The premium is competitively priced compared with other companies for certain health issues.</p>
 
@@ -310,11 +310,11 @@ sidebar: true
 <li>Schizophrenia</li>
 </ul>
 
-<h3 id="h-do-foresters-have-the-same-day-approval-process"><strong>Do Foresters Have The Same Day Approval Process?</strong></h3>
+<h3 id="h-do-foresters-have-the-same-day-approval-process"><strong>Do Foresters have the same day approval process?</strong></h3>
 
 <p>Foresters have an electronic submission process for all life insurance policies. They have an easy <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a>; getting approved is about a 15-minutes over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Foresters Burial Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get Foresters burial insurance pricing?</strong></h2>
 
 <p>Foresters rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -488,9 +488,9 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Foresters Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Foresters company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Forester Financial’s Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Forester Financial’s operational history</strong></h3>
 
 <p>Foresters Financial is not your traditional life insurance&#160;provider&#160;because it is a fraternal benefit society or a not-for-profit organization founded in 1874. </p>
 
@@ -526,27 +526,27 @@ sidebar: true
 <li>National Charitable Partnerships – members can get involved with the work of National Charitable Partners by volunteering for an activity or hosting their event.</li>
 </ol>
 
-<h4><strong>Company Address</strong></h4>
+<h4><strong>Company address</strong></h4>
 
 <p>Foresters Financial Company<br>2221 Kenmore Avenue, Suite 108<br>Buffalo, NY 14207-1306</p>
 
-<h4><strong>Contact Info</strong></h4>
+<h4><strong>Contact info</strong></h4>
 
 <p>Website: www.foresters.com<br>Customer Service: (800) -828-1540<br>Email: service@foresters.com</p>
 
-<h3 id="Financial-Rating"><strong>What Is Foresters’ Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Foresters’ financial rating?</strong></h3>
 
 <p>Foresters Financial has earned an “A” (Excellent) rating from&#160;<a href="http://news.ambest.com/presscontent.aspx?altsrc=9&refnum=22813" target="_blank" rel="noreferrer noopener">A.M. Best</a>&#160;Company due to its financial strength and timeliness in paying its policyholders’ claims. And the company has consistently held this strong rating for over 22 years.</p>
 
-<h3><strong>Does Foresters Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Foresters have any consumer complaints?</strong></h3>
 
 <p>Foresters currently has 29 customer complaints recorded in the National Association of Insurance Commissioners (NAIC) in 2021. Most complaints concern policyholder service, claim handling, marketing and sales, and underwriting.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Foresters Burial Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Foresters burial insurance?</strong></h2>
 
 <p>Forester does not accept significant medical or health issues.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-foresters"><strong>Are Any Health Conditions Not Accepted By Foresters?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-foresters"><strong>Are any health conditions not accepted by Foresters?</strong></h3>
 
 <p>These health issues are not accepted for first-day coverage with Foresters:</p>
 
@@ -568,7 +568,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Foresters pricing compares to other companies.</p>
 
@@ -579,7 +579,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Foresters?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Foresters?</strong></h2>
 
 <details>
 <summary><b>Is Foresters Life Insurance still in business?</b></summary>

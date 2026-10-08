@@ -24,7 +24,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT IS IUL AND HOW IT WORKS FOR VETERANS</strong></h2>
+<h2><strong>What is IUL and how it works for veterans</strong></h2>
 
 <p>An Indexed Universal Life policy is a type of permanent life insurance that includes a “savings account” linked to a stock market index.</p>
 
@@ -42,7 +42,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY IULS ARE MARKETED TO MILITARY MEMBERS AND VETERANS</strong></h2>
+<h2><strong>Why IULs are marketed to military members and veterans</strong></h2>
 
 <p>Military households are often predictable. Income is steady, benefits are reliable, and the desire to plan ahead is strong.</p>
 
@@ -60,7 +60,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON SALES TACTICS TARGETING MILITARY AND VETERANS</strong></h2>
+<h2><strong>Common sales tactics targeting military and veterans</strong></h2>
 
 <p>The most common tactic is to start with education.</p>
 
@@ -86,7 +86,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT THE VA AND DOD ACTUALLY OFFER</strong></h2>
+<h2><strong>What the VA and DoD actually offer</strong></h2>
 
 <p>The Department of Veterans Affairs offers several life insurance programs specifically designed for service members and veterans.</p>
 
@@ -106,7 +106,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY “TAX-FREE RETIREMENT” IS MISLEADING</strong></h2>
+<h2><strong>Why “tax-free retirement” is misleading</strong></h2>
 
 <p>One of the most predatory and dishonest phrases used in IUL sales is “tax-free income.”</p>
 
@@ -124,7 +124,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE BIG DRAWBACKS AND WHAT MANY AGENTS WON’T HIGHLIGHT TO VETERANS</strong></h2>
+<h2><strong>The big drawbacks and what many agents won’t highlight to veterans</strong></h2>
 
 <p>IULs come with more moving parts than most people realize. They’re not designed for simplicity, and they’re not suitable for veterans living on a fixed income.</p>
 
@@ -144,7 +144,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW REGULATORS VIEW INDEXED UNIVERSAL LIFE</strong></h2>
+<h2><strong>How regulators view indexed universal life</strong></h2>
 
 <p>Regulators have received years of complaints about confusing IUL illustrations and unrealistic sales projections.</p>
 
@@ -166,7 +166,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>REAL-WORLD COMPLAINTS AND CANCELLATION RISKS</strong></h2>
+<h2><strong>Real-world complaints and cancellation risks</strong></h2>
 
 <p>IULs generate a steady flow of complaints to state regulators every year.</p>
 
@@ -184,7 +184,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMPARING IUL WITH SIMPLER ALTERNATIVES</strong></h2>
+<h2><strong>Comparing IUL with simpler alternatives</strong></h2>
 
 <p>For most veterans, predictability matters more than potential. IULs promise flexibility but require active management and constant monitoring.</p>
 
@@ -204,7 +204,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>IMPORTANT FINANCIAL STRENGTH AND CONSUMER PROTECTION ANCHORS</strong></h2>
+<h2><strong>Important financial strength and consumer protection anchors</strong></h2>
 
 <p>Every life insurance company in the United States operates under state regulation.<br><br>Each state’s insurance department oversees licensing, complaint handling, and solvency standards.</p>
 
@@ -226,7 +226,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER OPTIONS FOR MILITARY FAMILIES SEEKING STABILITY</strong></h2>
+<h2><strong>Better options for military families seeking stability</strong></h2>
 
 <p>Military families tend to prefer reliability over complex financial tools or insurance products.</p>
 
@@ -246,7 +246,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO VERIFY AN AGENT OR POLICY BEFORE YOU BUY</strong></h2>
+<h2><strong>How to verify an agent or policy before you buy</strong></h2>
 
 <p>Before signing any life insurance contract, confirm that the person selling it is licensed in your state.</p>
 
@@ -266,7 +266,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO BENEFITS FROM IUL AND WHO DOES NOT</strong></h2>
+<h2><strong>Who benefits from IUL and who does not</strong></h2>
 
 <p>IULs are best designed for a very narrow, and often wealthier, audience.</p>
 
@@ -288,7 +288,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>A STRONG WORD OF CAUTION TO VETERANS CONSIDERING AN IUL</strong></h2>
+<h2><strong>A strong word of caution to veterans considering an IUL</strong></h2>
 
 <p>Indexed Universal Life insurance is marketed as an advanced financial tool, but for most veterans, it is an expensive gamble.</p>
 
@@ -308,7 +308,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: IUL FOR MILITARY MEMBERS</strong></h2>
+<h2><strong>Frequently asked questions: IUL for military members</strong></h2>
 
 <p><strong>What disqualifies military members from an IUL policy?</strong></p>
 

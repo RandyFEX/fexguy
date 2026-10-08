@@ -1,10 +1,10 @@
 ---
 title: "Security National Insurance Review - [Pros, Cons, Pricing Secrets]"
-description: "Security National Burial Insurance Review guarantees you the best cremation, final expense life insurance pricing - 99% discount rate!"
+description: "A review of Security National burial insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/security-national-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Security National Insurance Review - [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"Security National Burial Insurance Review guarantees you the best cremation, final expense life insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/security-national-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-05-21T15:07:38-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Security National Insurance Review - [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"Security National Burial Insurance Review guarantees you the best cremation, final expense life insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"17 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/\",\"name\":\"Security National Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/security-national-burial-insurance-review/\",\"name\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-05-21T15:07:03-05:00\",\"dateModified\":\"2026-05-21T15:07:38-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"description\":\"Security National Burial Insurance Review guarantees you the best cremation, final expense life insurance pricing - 99% discount rate!\",\"keywords\":\"Security National burial insurance,Security National burial insurance review,Security National life insurance reviews,Security National Simple Security plan,is Security National life insurance legitimate,Security National final expense insurance reviews,Security National burial insurance pros and cons,Security National preferred plan,Security National standard plan,Security National modified plan,Security National life insurance complaints,Security National burial insurance rates,burial insurance for seniors over 85,final expense insurance with first day coverage,Security National life insurance underwriting guidelines,Security National health questions,insulin diabetic burial insurance reviews,burial insurance height and weight charts,senior life insurance with no medical exam,Security National accidental death benefit rider,burial insurance for seniors over 80,Security National life insurance phone number,affordable final expense whole life insurance,two year waiting period burial insurance,graded death benefit life insurance reviews,Security National life insurance policy loans,how does Security National life insurance work,cremation insurance reviews Security National,Security National life insurance login,burial insurance for senior smokers,independent final expense insurance broker,Security National simple security features,average cost of Security National burial insurance,can you get burial insurance at age 90,Security National life insurance claims process,final expense whole life insurance rates,burial insurance with pre existing conditions,Security National dependent child rider,funeral cost coverage Security National,is Security National life insurance expensive,final expense guy Security National review\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is Security National Life Insurance still in business and legitimate?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, Security National Life Insurance Company is a fully legitimate, accredited insurer that has been in active business since August 11, 1965. It is owned by Security National Financial Corporation and is headquartered in Salt Lake City, Utah.\"}},{\"@type\":\"Question\",\"name\":\"What is Security National Life\\u2019s financial rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Security National Life holds an A- (Excellent) financial strength rating from A.M. Best, indicating strong financial stability and a reliable capacity to meet its ongoing insurance policy obligations.\"}},{\"@type\":\"Question\",\"name\":\"What life insurance products does Security National Life offer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Security National Life offers an array of life insurance plans including Term Life, Whole Life, Universal Life, and Variable Universal Life policies. Their coverage limits feature a flexible death benefit range starting at a minimum of $1,000 up to a maximum of $1,000,000.\"}},{\"@type\":\"Question\",\"name\":\"Can you get first-day coverage, and is a medical exam required?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, you can qualify for first-day coverage with no mandatory waiting period. While Security National Life does require applicants to answer standard medical health questions on the application, a physical medical exam is generally not required to qualify.\"}},{\"@type\":\"Question\",\"name\":\"Does Security National Life insurance accumulate cash value?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, their permanent whole life insurance policies accumulate a guaranteed cash value over time. If you decide to terminate the policy early, a surrender charge may apply depending on the specific policy terms and how long it has been active.\"}},{\"@type\":\"Question\",\"name\":\"What are the contact numbers and addresses for Security National Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can reach customer service at (800) 574-7117 or via fax at (801) 575-9609, and by email at info@securitynationallife.com. The corporate headquarters is located at 433 Ascension Way, Suite 600, Salt Lake City, UT 84123, and the mailing address for general correspondence is P.O. Box 57220, Salt Lake City, UT 84157.\"}},{\"@type\":\"Question\",\"name\":\"How can policyholders manage payments and claims online?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Members can log into their private portals at members.securitynationallife.com. Online premium payments can be processed through payment.securitynationallife.com, and beneficiaries can access and initiate claims paperwork at claim.securitynationallife.com.\"}},{\"@type\":\"Question\",\"name\":\"How do I cancel or find a replacement for a Security National Life policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"To cancel your policy or request a policy replacement, you should contact Security National Life directly through their customer service line at (800) 574-7117 to complete the necessary termination or transition forms.\"}}]}],\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#schema-754994\",\"isPartOf\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Security National Insurance Review - [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"A review of Security National burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/security-national-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-05-21T15:07:38-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Security National Insurance Review - [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"A review of Security National burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"17 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/\",\"name\":\"Security National Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/security-national-burial-insurance-review/\",\"name\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-05-21T15:07:03-05:00\",\"dateModified\":\"2026-05-21T15:07:38-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"description\":\"A review of Security National burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"keywords\":\"Security National burial insurance,Security National burial insurance review,Security National life insurance reviews,Security National Simple Security plan,is Security National life insurance legitimate,Security National final expense insurance reviews,Security National burial insurance pros and cons,Security National preferred plan,Security National standard plan,Security National modified plan,Security National life insurance complaints,Security National burial insurance rates,burial insurance for seniors over 85,final expense insurance with first day coverage,Security National life insurance underwriting guidelines,Security National health questions,insulin diabetic burial insurance reviews,burial insurance height and weight charts,senior life insurance with no medical exam,Security National accidental death benefit rider,burial insurance for seniors over 80,Security National life insurance phone number,affordable final expense whole life insurance,two year waiting period burial insurance,graded death benefit life insurance reviews,Security National life insurance policy loans,how does Security National life insurance work,cremation insurance reviews Security National,Security National life insurance login,burial insurance for senior smokers,independent final expense insurance broker,Security National simple security features,average cost of Security National burial insurance,can you get burial insurance at age 90,Security National life insurance claims process,final expense whole life insurance rates,burial insurance with pre existing conditions,Security National dependent child rider,funeral cost coverage Security National,is Security National life insurance expensive,final expense guy Security National review\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Security National Insurance Review - [Pros, Cons, Pricing Secrets]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Is Security National Life Insurance still in business and legitimate?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, Security National Life Insurance Company is a fully legitimate, accredited insurer that has been in active business since August 11, 1965. It is owned by Security National Financial Corporation and is headquartered in Salt Lake City, Utah.\"}},{\"@type\":\"Question\",\"name\":\"What is Security National Life\\u2019s financial rating?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Security National Life holds an A- (Excellent) financial strength rating from A.M. Best, indicating strong financial stability and a reliable capacity to meet its ongoing insurance policy obligations.\"}},{\"@type\":\"Question\",\"name\":\"What life insurance products does Security National Life offer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Security National Life offers an array of life insurance plans including Term Life, Whole Life, Universal Life, and Variable Universal Life policies. Their coverage limits feature a flexible death benefit range starting at a minimum of $1,000 up to a maximum of $1,000,000.\"}},{\"@type\":\"Question\",\"name\":\"Can you get first-day coverage, and is a medical exam required?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, you can qualify for first-day coverage with no mandatory waiting period. While Security National Life does require applicants to answer standard medical health questions on the application, a physical medical exam is generally not required to qualify.\"}},{\"@type\":\"Question\",\"name\":\"Does Security National Life insurance accumulate cash value?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, their permanent whole life insurance policies accumulate a guaranteed cash value over time. If you decide to terminate the policy early, a surrender charge may apply depending on the specific policy terms and how long it has been active.\"}},{\"@type\":\"Question\",\"name\":\"What are the contact numbers and addresses for Security National Life?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can reach customer service at (800) 574-7117 or via fax at (801) 575-9609, and by email at info@securitynationallife.com. The corporate headquarters is located at 433 Ascension Way, Suite 600, Salt Lake City, UT 84123, and the mailing address for general correspondence is P.O. Box 57220, Salt Lake City, UT 84157.\"}},{\"@type\":\"Question\",\"name\":\"How can policyholders manage payments and claims online?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Members can log into their private portals at members.securitynationallife.com. Online premium payments can be processed through payment.securitynationallife.com, and beneficiaries can access and initiate claims paperwork at claim.securitynationallife.com.\"}},{\"@type\":\"Question\",\"name\":\"How do I cancel or find a replacement for a Security National Life policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"To cancel your policy or request a policy replacement, you should contact Security National Life directly through their customer service line at (800) 574-7117 to complete the necessary termination or transition forms.\"}}]}],\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#schema-754994\",\"isPartOf\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/security-national-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -52,13 +52,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-security-national-offer-first-day-coverage"><br><strong>Does Security National Offer First-day Coverage?</strong></h2>
+<h2 id="does-security-national-offer-first-day-coverage"><br><strong>Does Security National offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, Security National offers two first-day coverage plans, but they are more expensive than other companies.    </p>
 
-<p>If you qualify, their Simple Security is preferred; standard whole life insurance gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.  </p>
+<p>If you qualify for their preferred or standard plan, the whole life insurance gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.  </p>
 
-<h2 id="pros-of-security-national-burial-insurance"><strong>Pros Of Security National Burial Insurance</strong></h2>
+<h2 id="pros-of-security-national-burial-insurance"><strong>Pros of Security National burial insurance</strong></h2>
 
 <p><strong>Easy application process</strong> – can be done over the phone or online</p>
 
@@ -66,13 +66,13 @@ sidebar: true
 
 <p><strong>Coverage available</strong> – to 86-90 years old</p>
 
-<h2 id="cons-of-security-national-burial-insurance"><strong>Cons Of Security National Burial Insurance</strong></h2>
+<h2 id="cons-of-security-national-burial-insurance"><strong>Cons of Security National burial insurance</strong></h2>
 
 <p><strong>Have</strong> a <strong>height and weight chart</strong> – you may be disqualified if you are overweight, obese, or morbidly obese.</p>
 
-<p><strong>Not diabetic-friendly</strong> – you may only qualify for the standard plan if you currently use insulin</p>
+<p><strong>Not diabetic-friendly</strong> – if you currently use insulin, you may only qualify for the standard or modified plan, depending on your daily units, when you started insulin, and any complications</p>
 
-<h2 id="security-national-burial-insurance-products"><br><strong>Security National Burial Insurance Products </strong></h2>
+<h2 id="security-national-burial-insurance-products"><br><strong>Security National burial insurance products </strong></h2>
 
 <p><strong>Security National calls its burial insurance products “Simple Security.” The Simple Security whole life insurance has three plans:</strong></p>
 
@@ -95,7 +95,7 @@ sidebar: true
 <td>Age Availability</td><td>40-90</td>
 </tr>
 <tr>
-<td>Immediate Coverage</td><td>100% coverage from day one</td>
+<td>Immediate Coverage</td><td>Preferred and standard plans: 100% coverage from day one</td>
 </tr>
 <tr>
 <td>Lifetime Coverage</td><td>Yes</td>
@@ -140,7 +140,7 @@ sidebar: true
 
 <p>This burial insurance plan from Security National offers first-day full coverage if you qualify. If you answer NO to the knockout and graded sections, you will be offered this plan. </p>
 
-<p>Insulin use is the only question under this section, but you will be offered the modified plan if you answer yes to the insulin use question.</p>
+<p>Insulin use is the only question under this section. If you answer yes to it (and no to the knockout and graded sections), you will be offered this plan. Using 100 units or more of insulin a day, or starting insulin before age 40, falls under the graded section and leads to the modified plan instead.</p>
 
 <p><br><strong>Standard Plan Product Features</strong></p>
 
@@ -156,7 +156,7 @@ sidebar: true
 
 <p><strong>Payout Schedule</strong>: immediate death benefit from day one</p>
 
-<p>Among the three plans, this plan is not the best. This product’s price is higher than most life insurance companies. If the company puts you under this plan, call us. We can get you approved by other companies with a less expensive premium.</p>
+<p>Among the three plans, this plan is not the best. This product’s price is higher than most life insurance companies. If the company puts you under this plan, call us. Other companies may offer first-day coverage at a lower premium for your health profile.</p>
 
 <p><br><strong>SIMPLE SECURITY MODIFIED PLAN</strong></p>
 
@@ -197,7 +197,7 @@ sidebar: true
 <li>Alcohol or drug abuse within the past 12 months</li>
 </ul>
 
-<h2 id="security-national-burial-insurance-riders"><br><strong>Security National Burial Insurance Riders</strong></h2>
+<h2 id="security-national-burial-insurance-riders"><br><strong>Security National burial insurance riders</strong></h2>
 
 <p><strong>Accidental Death Benefit Rider – </strong>doubles the death benefit amount if you die from an accident.</p>
 
@@ -209,19 +209,19 @@ sidebar: true
 
 <p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
-<h2 id="when-does-security-national-make-the-most-sense"><br><br><strong>When Does Security National Burial Insurance Make The Most Sense? </strong></h2>
+<h2 id="when-does-security-national-make-the-most-sense"><br><br><strong>When does Security National burial insurance make the most sense? </strong></h2>
 
 <p>Security National is one of the few companies offering coverage to people between 86 and 90. It makes the company unique because it’s very rare to find companies offering first-day coverage for this age group.</p>
 
 <p>Security National Life Simple Security plans offer reasonable coverage and rates, especially their preferred plan. </p>
 
-<p>Their graded plan is a better option for people with significant health conditions. The product’s price is more expensive compared to other higher-rated insurance companies. But beware, they will put you on the standard plan because of insulin use.</p>
+<p>Their modified plan is a better option for people with significant health conditions. The product’s price is more expensive compared to other higher-rated insurance companies. But beware, insulin use can keep you out of their preferred plan.</p>
 
-<p>If you are an insulin-dependent diabetic, we can get you approved by another company that accepts this condition and offer a lower premium. Most final expense companies didn’t penalize insulin users and approved them for first-day coverage.</p>
+<p>If you are an insulin-dependent diabetic, we may be able to get you approved by another company that accepts this condition and offers a lower premium. Most final expense companies don’t penalize insulin users without complications and may approve them for first-day coverage.</p>
 
 <p>Applications are made online, and policyholders can log in to submit a claim. This process is simple for internet users, but some customers uncomfortable with online applications and claims may look elsewhere for coverage.</p>
 
-<h2 id="security-national-underwriting-guidelines"><br><strong>Security National Underwriting Guidelines</strong></h2>
+<h2 id="security-national-underwriting-guidelines"><br><strong>Security National underwriting guidelines</strong></h2>
 
 <p>Most life insurance companies conduct phone interviews to verify your health. Security National lets your agent fill in the application on their portal and let you sign the application.</p>
 
@@ -283,11 +283,13 @@ sidebar: true
 
 <p><strong>1.</strong> Do you use any type of insulin medication for any type of diabetes? If yes, how many total units per day?  (Yes – No) </p>
 
-<p>If you say YES to this one question, you will be offered the Standard Plan.</p>
+<p>If you say YES to this one question (and NO to the questions above), you will be offered the Standard Plan.</p>
 
 <p>If you answered NO to all the health questions, Security National would offer you their Preferred Plan, which is the best and cheapest among the three plans available.</p>
 
-<h2 id="security-national-pricing-examples"><br><strong>Security National Pricing Examples</strong></h2>
+<h2 id="security-national-pricing-examples"><br><strong>Security National pricing examples</strong></h2>
+
+<p>These are sample monthly rates from an earlier Security National rate book, from when we reviewed it. Current rates may differ.</p>
 
 <table class="table-wrap" id="tablepress-86">
 <thead>
@@ -487,7 +489,7 @@ sidebar: true
 
 <p> *Pricing for illustration purposes only and are subject to change without notice. </p>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Security National Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for Security National burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -520,7 +522,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -588,7 +590,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="security-national-company-overview"><br><strong>Security National Company Overview</strong> </h2>
+<h2 id="security-national-company-overview"><br><strong>Security National company overview</strong> </h2>
 
 <p><a href="https://securitynationallife.com/" target="_blank" rel="noreferrer noopener nofollow">Security National Life Insurance</a> has been in business since August 11, 1965, and is headquartered in Salt Lake City, Utah. Security National Life operates as a subsidiary of Security National Financial Corp.</p>
 
@@ -596,21 +598,9 @@ sidebar: true
 
 <p><br><strong>FINANCIAL RATINGS</strong></p>
 
-<p>A.M. Best, one of the country’s top financial rating agencies, awarded Security National an A- (Excellent) rating. It means the company’s finances are stable, and clients can be confident that it will pay ongoing financial obligations. The company is financially secure, and they even post their financials for public scrutiny.</p>
+<p>We could not confirm a current A.M. Best rating for Security National Life. Check A.M. Best or your state insurance department before you buy.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
-
-<p>Finding a policy if you want Security National burial insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for Security National funeral insurance, Security National burial insurance, or Security National life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is Security National Life Insurance still in business?</strong></p>
 
@@ -630,7 +620,7 @@ sidebar: true
 
 <p><br><strong>What is Security National Life’s financial rating?</strong></p>
 
-<p>Security National Life is awarded Security National an A- (Excellent) rating by A.M. Best.</p>
+<p>We could not confirm a current A.M. Best rating for Security National Life. Check A.M. Best for the latest information.</p>
 
 <p><br><strong>What is Security National Life’s website?</strong></p>
 
@@ -647,10 +637,6 @@ sidebar: true
 <p><br><strong>What is Security National Life’s customer service number?</strong></p>
 
 <p>(800) 574-7117 is the customer service number for Security National Life Insurance.</p>
-
-<p><br><strong>What is Security National Life’s email address?</strong></p>
-
-<p>You can reach Security National Life Insurance at info@securitynationallife.com.</p>
 
 <p><br><strong>What is the mailing address for Security National Life?</strong></p>
 
@@ -690,7 +676,7 @@ sidebar: true
 
 <p><br><strong>Where can I check Security National Life insurance complaints?</strong></p>
 
-<p>You can check Security National Life insurance complaints by visiting https://www.ftccomplaintsearch.gov/.</p>
+<p>You can check Security National Life insurance complaints through your state insurance department or the National Association of Insurance Commissioners (NAIC) website.</p>
 
 <p><br><strong>What are the different life insurance products offered by Security National Life?</strong></p>
 
@@ -702,7 +688,7 @@ sidebar: true
 
 <p><br><strong>Can you get first-day coverage with Security National Life?</strong></p>
 
-<p>Yes, you can get first-day coverage with Security National Life.</p>
+<p>Yes, if you qualify for the preferred or standard plan. The modified plan does not give first-day coverage.</p>
 
 <p><br><strong>What is the maximum life insurance coverage that Security National Life offers?</strong></p>
 
@@ -746,7 +732,7 @@ sidebar: true
 
 <p><br><strong>Is Security National Life insurance expensive?</strong></p>
 
-<p>Security National Life insurance pricing is comparable to most life insurance companies.</p>
+<p>Prices vary by age, health, tobacco use, and plan, so compare quotes from several companies before you apply.</p>
 
 <p><br><strong>Do you need a medical exam to qualify for Security National Life insurance?</strong></p>
 
@@ -766,7 +752,7 @@ sidebar: true
 
 <p><br><strong>Does Security National Life have a waiting period?</strong></p>
 
-<p>No, Security National Life does not have a waiting period.</p>
+<p>The preferred and standard plans have no waiting period. The modified plan pays a reduced benefit for a natural death during the first two years instead of the full face amount.</p>
 
 <p><br><strong>Does Security National Life insurance accumulate cash value?</strong></p>
 

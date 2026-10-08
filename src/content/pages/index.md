@@ -9,36 +9,4 @@ source: "live"
 sidebar: true
 ---
 
-<img fetchpriority="high" decoding="async" loading="eager" alt="" width="1600" height="800" src="/wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif" srcset="/images/home/home-banner-800.avif 800w, /images/home/home-banner-1200.avif 1200w, /wp-content/uploads/2026/06/FEXGUP-HOME-PAGE-BANNER-IMAGE-1732-X-1031-AVIF-1600x800.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)">
-
-<h1>LIFE INSURANCE FOR ALL OF YOUR FINAL EXPENSE NEEDS</h1>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="339" src="/wp-content/uploads/2026/09/FINAL-EXPENSE-GUY-LOGO-1200-X-347-1024x339.png" alt=""></figure>
-
-<p>Randy helps people across America get life insurance that actually protects their loved ones after a death. </p>
-
-<p>Final expense plans are available for ages 18 to 89 (depending on your age, health, and state of residence).</p>
-
-<p><strong>Don’t Leave Your Family With the Financial Fallout that follows the death of a loved one.</strong></p>
-
-<p>Life insurance isn’t just about burial costs. It’s about replacing income, covering debts, and keeping your family in their home if something happens to you.</p>
-
-<p>As an independent broker licensed in most states, he shops multiple A-rated companies to find the lowest price you can qualify for… not just the easiest policy to sell.</p>
-
-<hr>
-
-<p><strong>Denied For Life Insurance? That’s Where Randy Can Help You Win!</strong></p>
-
-<p>Many agents don’t understand underwriting to get the lowest rates. They guess… sell you on the easiest company… and then you get declined.</p>
-
-<p>A decline doesn’t mean you can’t get coverage. It means the strategy was wrong.</p>
-
-<hr>
-
-<p><strong>Coverage That Matches Your Situation…</strong></p>
-
-<p>No one-size-fits-all policy. No generic quotes.</p>
-
-<p>• Whole life insurance for permanent protection with fixed rates<br>• Final expense insurance for burial, cremation, and smaller policies</p>
-
-<p>Plans are built to qualify you for first-day coverage whenever possible… not default you into expensive waiting-period plans.</p>
+<!-- The homepage is built in src/pages/index.astro (hero and sections in src/components/home/). This file supplies its title, meta tags and JSON-LD. -->

@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="key-learning-points"><strong>Key Learning Points</strong></h2>
+<h2 id="key-learning-points"><strong>Key learning points</strong></h2>
 
 <ul>
 <li>No Questions Asked Insurance is designed to cover burial costs and final expenses without requiring you to take a medical exam or health questionnaires.</li>
@@ -60,7 +60,7 @@ sidebar: true
 <li>Final Expense Guy is a life insurance broker that can help you compare policies from different life insurance companies to get the lowest pricing.</li>
 </ul>
 
-<h2 id="how-does-no-question-ask-life-insurance-work"><strong>How Does No Questions Ask Life Insurance Work?&#160;</strong></h2>
+<h2 id="how-does-no-question-ask-life-insurance-work"><strong>How does no questions ask life insurance work?&#160;</strong></h2>
 
 <p><strong>When you’re doing your research, you may see any of the following phrases used to describe no questions asked burial insurance:</strong></p>
 
@@ -91,14 +91,14 @@ sidebar: true
 
 <p>This life insurance plan can cover the funeral, medical bills, and final expenses regardless of health. Typical coverage amounts are $10,000 to $20,000 but can go as low as $2,000 of coverage and as high as $25,000.</p>
 
-<h2 id="no-medical-exam-and-no-health-question-insurance"><strong>What Is The Difference Between No Medical Exam And No Health Questions Insurance?</strong></h2>
+<h2 id="no-medical-exam-and-no-health-question-insurance"><strong>What is the difference between no medical exam and no health questions insurance?</strong></h2>
 
 <ul>
 <li><strong>No Exam Life Insurance:</strong>&#160; Simplified issue insurance life insurance does not require a medical exam. Insurance providers will issue a policy based solely on your age, gender, and other basic information. You will only need to answer health questions. This burial insurance with health questions and no waiting period starts from the first day.&#160;</li>
 <li><strong>Life Insurance With No Health Questions:</strong> With guaranteed acceptance life insurance with no exam, there are no health questions. Insurance companies will issue a policy without considering your medical history. Guaranteed issue policies are the best options for individuals with pre-existing conditions or concerns about their health being a factor in obtaining coverage. The downside of this policy is that it comes with a higher premium and a two-year waiting period.</li>
 </ul>
 
-<h2 id="benefits-of-guaranteed-issue-insurance"><strong>Benefits Of Guaranteed Issue Final Expense Life Insurance</strong></h2>
+<h2 id="benefits-of-guaranteed-issue-insurance"><strong>Benefits of guaranteed issue final expense life insurance</strong></h2>
 
 <p><strong>Ease of issue</strong></p>
 
@@ -154,7 +154,7 @@ sidebar: true
 
 <p>Seniors diagnosed by their doctors as having a chronic illness or severe cognitive impairment like dementia can qualify for living benefits.</p>
 
-<h2 id="medical-conditions-for-guaranteed-issue"><strong>Medical Conditions That Will Only Qualify For Guaranteed Issue Burial Insurance Coverage</strong></h2>
+<h2 id="medical-conditions-for-guaranteed-issue"><strong>Medical conditions that will only qualify for guaranteed issue burial insurance coverage</strong></h2>
 
 <p>Life insurance companies will assess your risk depending on your current health condition. The company considers some medical conditions high risk because they lower your life expectancy.</p>
 
@@ -175,7 +175,7 @@ sidebar: true
 
 <p>GI policies have no medical questions, so your insurance application will be approved even with these high-risk conditions.</p>
 
-<h2 id="who-should-buy-guaranteed-issue-insurance"><strong>Who Should Buy Guaranteed Issue Burial Insurance No Questions Asked?</strong></h2>
+<h2 id="who-should-buy-guaranteed-issue-insurance"><strong>Who should buy guaranteed issue burial insurance no questions asked?</strong></h2>
 
 <ol>
 <li>People with severe medical conditions, please read the list above for the different health and other issues that will qualify for guaranteed issue life insurance.</li>
@@ -183,7 +183,7 @@ sidebar: true
 <li>You have mobility problems and are confined to a bed or wheelchair. Also, if you need help with activities of daily living such as eating, bathing, dressing, transferring, and continence, your only option for life insurance coverage is to take a GI policy.</li>
 </ol>
 
-<h2 id="requirements-to-qualify"><br><strong>Requirements To Qualify For Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="requirements-to-qualify"><br><strong>Requirements to qualify for guaranteed issue burial insurance</strong></h2>
 
 <p><strong>Age Requirement</strong></p>
 
@@ -199,7 +199,7 @@ sidebar: true
 
 <p>Most guaranteed issue life insurance companies only require your gender, age, resident state, and whether or not you use tobacco products. As simple as that, there’s nothing more when applying for coverage.</p>
 
-<h2 id="is-there-a-no-waiting-period-guaranteed-issue"><strong>Is There Guaranteed Acceptance Life Insurance With No Waiting Period?</strong></h2>
+<h2 id="is-there-a-no-waiting-period-guaranteed-issue"><strong>Is there guaranteed acceptance life insurance with no waiting period?</strong></h2>
 
 <p>No. All guaranteed issue life insurance policies come with at least a 2-year waiting period.</p>
 
@@ -207,7 +207,7 @@ sidebar: true
 
 <p>A guaranteed issue policy may be a little more expensive than plans with full medical underwriting, but you don’t need to worry about being declined for coverage. Your approval is guaranteed, and you have insurance protection whatever happens to you in the future.</p>
 
-<h2 id="common-life-insurance-to-avoid"><strong>Commonly Advertised Insurance Options In TV and Magazines To Avoid</strong></h2>
+<h2 id="common-life-insurance-to-avoid"><strong>Commonly advertised insurance options in TV and magazines to avoid</strong></h2>
 
 <ol>
 <li><strong>Increasing premium</strong>&#160;– Many of these life insurance companies on TV offer premium increases every five years. A real guaranteed acceptance whole life insurance has a fixed premium throughout the life of the policy.</li>
@@ -215,21 +215,7 @@ sidebar: true
 <li><strong>3-year waiting period</strong>&#160;– Avoid these GI plans at all costs. The best-guaranteed issue life insurance has only a two-year waiting period. It is important to work with an independent life insurance agency like Final Expense Guy that will prevent you from being led into agreeing to buy life insurance with a 3-year waiting period.</li>
 </ol>
 
-<h2 id="how-final-expense-guy-can-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy with no questions asked needn’t be frustrating; working with an independent agency like Final Expense Guy, which works with all the best burial and final expense insurance companies to make the process easier and more affordable.</p>
-
-<p><strong>If you have a health history and need a no-questions-asked policy, let our licensed life insurance agents help you. Just answer a few questions, and we will work with you to find a plan that fits your life insurance needs.</strong></p>
-
-<p>Let a licensed life insurance expert at Final Expense Guy find the plan that fits your needs and budget. We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+-rated insurance carriers specializing in covering high-risk clients like you. We will search for all those companies to get the best rate. We will get you the best burial insurance with no waiting period and the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for no questions asked funeral insurance, or no questions asked burial insurance, or no questions asked life insurance, we can help.</p>
-
-<p>Fill out our&#160;<a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>&#160;form on this page or call (888) 862-9456, and we can give you accurate funeral insurance quotes.</p>
-
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
 <p><strong>What Is the Process for Applying for Burial Insurance With No Questions Asked?</strong></p>
 

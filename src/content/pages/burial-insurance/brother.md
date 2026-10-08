@@ -44,7 +44,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="can-i-get-life-insurance-on-my-brother"><strong>Can I Get Life Insurance On My Brother? </strong></h2>
+<h2 id="can-i-get-life-insurance-on-my-brother"><strong>Can I get life insurance on my brother? </strong></h2>
 
 <p>YES. Absolutely! You can get a life insurance policy for your brother. To take out a life insurance policy on your brother, you will need to meet some requirements:</p>
 
@@ -66,15 +66,11 @@ sidebar: true
 
 <p>The insurance companies need the applicant’s signature to access their medical history. According to <a href="https://www.hhs.gov/hipaa/for-individuals/faq/187/what-does-the-hipaa-privacy-rule-do/index.html" target="_blank" rel="noreferrer noopener">HIPAA</a>, the insured must give written consent to access all his medical records. If somebody managed to take out life insurance on another person without their permission, it would be considered insurance fraud which is punishable by law.</p>
 
-<p>The only exception to this rule is if you have a power of
-attorney for your brother. Some insurance companies would allow you to sign the
-application when you submit proof of power of attorney.</p>
-
 <h3><strong>What if my brother is not close by to sign the life insurance application?</strong></h3>
 
 <p>You can still take life insurance for your brother. Most life insurance companies only need recorded verbal consent and digital signature. We can accomplish the application over the phone or on your computer. But if your brother wants to sign the application form, it can often be mailed to him to fill out and return.</p>
 
-<h2 id="why-do-you-need-insurance-on-your-brother"><br><strong>Why Do You Need To Take Out Burial Insurance On Your Brother? </strong></h2>
+<h2 id="why-do-you-need-insurance-on-your-brother"><br><strong>Why do you need to take out burial insurance on your brother? </strong></h2>
 
 <p>There are many reasons you may want to purchase life insurance for your brother:</p>
 
@@ -91,7 +87,7 @@ application when you submit proof of power of attorney.</p>
 
 <p>Buying life insurance for your brother can be affordable, depending on the type of plan and the amount of coverage, and the insurance company you chose to buy the policy. So, whether you are worried about covering final expenses, paying off debts, or other financial obligations, we can help you get the right plan for your brother.</p>
 
-<h2 id="information-we-need-if-you-want-to-get-life-insurance"><br><strong>Information We Need If You Want To Get Life Insurance On Your Brother</strong> </h2>
+<h2 id="information-we-need-if-you-want-to-get-life-insurance"><br><strong>Information we need if you want to get life insurance on your brother</strong> </h2>
 
 <p>Before you take life insurance on your brother, you must supply us with all the necessary information about the proposed insured. It is important to be honest when answering these questions.</p>
 
@@ -109,7 +105,7 @@ application when you submit proof of power of attorney.</p>
 
 <p>Depending on your answer to these questions, we can get a good idea about your brother’s health. We will review this information to determine what plan is best for him and what burial insurance company will be the cheapest.</p>
 
-<h2 id="burial-insurance-options-for-your-brother"><br><strong>Burial Insurance Options For Your Brother </strong></h2>
+<h2 id="burial-insurance-options-for-your-brother"><br><strong>Burial insurance options for your brother </strong></h2>
 
 <p><strong>SIMPLIFIED ISSUE
 BURIAL INSURANCE (NO MEDICAL EXAM)</strong></p>
@@ -149,7 +145,9 @@ the MIB and perform a prescription check to determine eligibility.</p>
 
 <p>Even with other medical conditions, getting simplified final expense insurance on your brother can potentially cover him from the first day.</p>
 
-<h2><br><strong>Guaranteed Issue Burial Insurance (No Health Questions)</strong></h2>
+<p>If his health keeps him from qualifying for first-day coverage, some companies offer graded or modified plans. These plans still ask health questions, but they limit the natural-death benefit for an initial period set by the policy, so they are not full first-day coverage.</p>
+
+<h2><br><strong>Guaranteed issue burial insurance (no health questions)</strong></h2>
 
 <p>If your brother is in bad health, for example, he has cancer or cardiac problems. It is still possible to get burial insurance coverage for him. You can get guaranteed issue burial insurance even if your brother has a terminal illness or if he is in very bad health.</p>
 
@@ -170,7 +168,7 @@ two-year waiting period, you will only receive all the premiums paid into the
 policy plus 7-10% interest. If your brother dies for any reason after the
 waiting period, you will get the full death benefit.</p>
 
-<h2 id="avoid-the-tax-trap-with-the-right-life-insurance-set-up"><br><strong>Avoid The Tax Trap With The Right Life Insurance Set Up </strong></h2>
+<h2 id="avoid-the-tax-trap-with-the-right-life-insurance-set-up"><br><strong>Avoid the tax trap with the right life insurance set up </strong></h2>
 
 <p>When purchasing burial insurance for a brother, it’s crucial to set up the life insurance policy right because you can fall into a tax trap if your brother’s life insurance policy is not handled carefully. The death benefit payout is usually tax-free unless the insured, the owner, and the beneficiary are three different people. This case is called the Goodman Triangle.</p>
 
@@ -204,21 +202,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p>Be careful when setting up your brother’s policy to avoid the Goodman triangle and the tax trap that goes with it. Avoid making the insured, owner, and beneficiary three different people.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Trying to find a policy if you need burial insurance for your brother needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>If your brother has a pre-existing medical condition, we will help you; we will work with you side by side to find a plan that fits your needs. </p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for your brother, burial insurance for your brother, or life insurance for your brother. Fill out our quote form on this page or call us at 888) 862-9456, and we can give you an accurate quote. </p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance on my brother?</strong></p>
 
@@ -238,7 +222,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can I get life insurance on my brother without him knowing?</strong></p>
 
-<p>No, you cannot get life insurance on your brother without his consent. He would need to be the policyholder, and he would need to agree to the policy for it to be valid. If he did not want the policy, the company would not issue it.</p>
+<p>No, you cannot get life insurance on your brother without his consent. He would need to agree to the policy for it to be valid. If he did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>What is</strong> <strong>insurable interest?</strong></p>
 
@@ -250,7 +234,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can someone take out life insurance on me without me knowing?</strong></p>
 
-<p>No, someone cannot take a life insurance policy on you without your knowledge or consent. For the policy to be valid, you would need to be the policyholder, and you would need to agree to the policy. If you did not want the policy, the company would not issue it.</p>
+<p>No, someone cannot take a life insurance policy on you without your knowledge or consent. For the policy to be valid, you would need to agree to the policy. If you did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>What happens if I die and my brother is the policyholder?</strong></p>
 
@@ -282,7 +266,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can you buy life insurance on a brother without his consent?</strong></p>
 
-<p>No, you cannot buy life insurance on your brother without his consent. For the policy to be valid, he would need to be the policyholder, and he would need to agree to the policy. If he did not want the policy, the company would not issue it.</p>
+<p>No, you cannot buy life insurance on your brother without his consent. For the policy to be valid, he would need to agree to the policy. If he did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>How many life insurance policies can one person have?</strong></p>
 

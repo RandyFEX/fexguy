@@ -3,13 +3,11 @@ title: "Randy VanderVaate - Final Expense Guy"
 description: "Randy VanderVaate is the President and Owner of Final Expense Guy which is located in the Dallas, TX area and licensed in most states."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/randy-vandervaate/"
-layout: "landing"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Randy VanderVaate - Final Expense Guy"},{"property":"og:description","content":"Randy VanderVaate is the President and Owner of Final Expense Guy which is located in the Dallas, TX area and licensed in most states."},{"property":"og:url","content":"https://fexguy.com/randy-vandervaate/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-03-19T09:48:05-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png"},{"property":"og:image:alt","content":"Randy VanderVaate"},{"property":"article:published_time","content":"2021-04-15T08:32:32-05:00"},{"property":"article:modified_time","content":"2025-03-19T09:48:05-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Randy VanderVaate - Final Expense Guy"},{"name":"twitter:description","content":"Randy VanderVaate is the President and Owner of Final Expense Guy which is located in the Dallas, TX area and licensed in most states."},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"4 minutes"}]
 jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png\",\"url\":\"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/randy-vandervaate/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/randy-vandervaate/\",\"name\":\"Randy VanderVaate\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/randy-vandervaate/#webpage\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"name\":\"Randy VanderVaate - Final Expense Guy\",\"datePublished\":\"2021-04-15T08:32:32-05:00\",\"dateModified\":\"2025-03-19T09:48:05-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/randy-vandervaate/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Randy VanderVaate - Final Expense Guy\",\"datePublished\":\"2021-04-15T08:32:32-05:00\",\"dateModified\":\"2025-03-19T09:48:05-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"Randy VanderVaate is the President and Owner of Final Expense Guy which is located in the Dallas, TX area and licensed in most states.\",\"name\":\"Randy VanderVaate - Final Expense Guy\",\"@id\":\"https://fexguy.com/randy-vandervaate/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/randy-vandervaate/#webpage\"},\"image\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2019/08/Randy-V-200x200.png\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/randy-vandervaate/#webpage\"}}]}"]
 source: "live"
 ---
 
-<p><a href="/"><picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w, /images/logo/final-expense-guy-logo-1200.avif 1200w, /images/logo/final-expense-guy-logo-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="250" src="/images/logo/final-expense-guy-logo-800.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w, /images/logo/final-expense-guy-logo-1200.webp 1200w, /images/logo/final-expense-guy-logo-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)" alt="Final Expense Guy"></picture></a>   Call us at (888) 862-9456</p>
 
 <h1>Randy VanderVaate</h1>
 
@@ -29,63 +27,42 @@ source: "live"
 
 <p><a href="#Marketing-Articles"><strong>View Marketing Articles</strong></a></p>
 
-<figure><img decoding="async" loading="lazy" width="200" height="200" src="/wp-content/uploads/2019/08/Randy-V-200x200.png" alt=""></figure>
+<figure class="randy-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <h2 id="Randy-Is-Featured-In-These-Media-Publications-&-More"><strong>Publications Randy Has Been Featured In</strong></h2>
 
-<figure><img decoding="async" loading="lazy" width="469" height="72" src="/wp-content/uploads/2021/04/BL-Investopedia-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="440" height="67" src="/wp-content/uploads/2021/04/BL-Authority-Magazine.jpg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="184" src="/wp-content/uploads/2021/04/BL-Best-Company-Logo-Clear-1024x184.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="254" src="/wp-content/uploads/2021/04/BL-Medium-Magazine-Logo-1024x254.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="289" height="80" src="/wp-content/uploads/2021/04/BL-Databox-Logo.jpg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="440" height="114" src="/wp-content/uploads/2021/04/BL-Legal-Zoom-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="390" height="129" src="/wp-content/uploads/2021/04/BL-The-Simple-Dollar-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="205" height="101" src="/wp-content/uploads/2021/04/BL-Insurance-Support-World-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="525" src="/wp-content/uploads/2021/04/BL-Thrive-Global-Logo-1024x525.jpeg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="400" height="70" src="/wp-content/uploads/2021/04/MT-Investment-Lifestyle-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="168" src="/wp-content/uploads/2021/04/MT-Newsbreak-Logo-1024x168.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1015" height="200" src="/wp-content/uploads/2021/04/MT-Flipboard-Logo.jpg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1000" height="313" src="/wp-content/uploads/2021/04/BL-CEO-Blog-Nation.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="334" src="/wp-content/uploads/2021/04/BL-Up-City-Logo-1024x334.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="817" height="235" src="/wp-content/uploads/2021/04/BL-Enterprise-League-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="407" height="124" src="/wp-content/uploads/2021/04/BL-Finder-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="197" height="42" src="/wp-content/uploads/2021/04/BL-Attest-Kura-Design-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="619" height="202" src="/wp-content/uploads/2021/04/BL-Cheapism-Logo.jpeg" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="1024" height="202" src="/wp-content/uploads/2021/04/BL-Fit-Small-Business-Logo-1024x202.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="500" height="59" src="/wp-content/uploads/2021/04/MT-Financial-Wealth-Digest-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="535" height="65" src="/wp-content/uploads/2021/04/MT-USA-NewsGuru-Logo.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="129" height="38" src="/wp-content/uploads/2021/04/BL-Ruler-Analytics.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="449" height="70" src="/wp-content/uploads/2021/04/MT-Insurance-Quotes-Logo-1.png" alt=""></figure>
-
-<figure><img decoding="async" loading="lazy" width="458" height="177" src="/wp-content/uploads/2021/04/BL-Mitch-Russo-Logo.jpg" alt=""></figure>
+<ul class="media-logos">
+<li><img decoding="async" loading="lazy" width="469" height="72" src="/wp-content/uploads/2021/04/BL-Investopedia-Logo.png" alt="Investopedia"></li>
+<li><img decoding="async" loading="lazy" width="440" height="67" src="/wp-content/uploads/2021/04/BL-Authority-Magazine.jpg" alt="Authority Magazine"></li>
+<li><img decoding="async" loading="lazy" width="480" height="86" src="/images/media/best-company.webp" alt="Best Company"></li>
+<li><img decoding="async" loading="lazy" width="480" height="119" src="/images/media/medium.webp" alt="Medium"></li>
+<li><img decoding="async" loading="lazy" width="289" height="80" src="/wp-content/uploads/2021/04/BL-Databox-Logo.jpg" alt="Databox"></li>
+<li><img decoding="async" loading="lazy" width="440" height="114" src="/wp-content/uploads/2021/04/BL-Legal-Zoom-Logo.png" alt="LegalZoom"></li>
+<li><img decoding="async" loading="lazy" width="390" height="129" src="/wp-content/uploads/2021/04/BL-The-Simple-Dollar-Logo.png" alt="The Simple Dollar"></li>
+<li><img decoding="async" loading="lazy" width="205" height="101" src="/wp-content/uploads/2021/04/BL-Insurance-Support-World-Logo.png" alt="Insurance Support World"></li>
+<li><img decoding="async" loading="lazy" width="480" height="246" src="/images/media/thrive-global.webp" alt="Thrive Global"></li>
+<li><img decoding="async" loading="lazy" width="400" height="70" src="/wp-content/uploads/2021/04/MT-Investment-Lifestyle-Logo.png" alt="Investment Lifestyle"></li>
+<li><img decoding="async" loading="lazy" width="480" height="79" src="/images/media/newsbreak.webp" alt="NewsBreak"></li>
+<li><img decoding="async" loading="lazy" width="480" height="95" src="/images/media/flipboard.webp" alt="Flipboard"></li>
+<li><img decoding="async" loading="lazy" width="480" height="150" src="/images/media/cb-nation.webp" alt="CB Nation"></li>
+<li><img decoding="async" loading="lazy" width="480" height="157" src="/images/media/upcity.webp" alt="UpCity"></li>
+<li><img decoding="async" loading="lazy" width="817" height="235" src="/wp-content/uploads/2021/04/BL-Enterprise-League-Logo.png" alt="Enterprise League"></li>
+<li><img decoding="async" loading="lazy" width="407" height="124" src="/wp-content/uploads/2021/04/BL-Finder-Logo.png" alt="Finder.com"></li>
+<li><img decoding="async" loading="lazy" width="197" height="42" src="/wp-content/uploads/2021/04/BL-Attest-Kura-Design-Logo.png" alt="Attest"></li>
+<li><img decoding="async" loading="lazy" width="480" height="157" src="/images/media/cheapism.webp" alt="Cheapism"></li>
+<li><img decoding="async" loading="lazy" width="480" height="95" src="/images/media/fit-small-business.webp" alt="Fit Small Business"></li>
+<li><img decoding="async" loading="lazy" width="500" height="59" src="/wp-content/uploads/2021/04/MT-Financial-Wealth-Digest-Logo.png" alt="Financial Wealth Digest"></li>
+<li><img decoding="async" loading="lazy" width="535" height="65" src="/wp-content/uploads/2021/04/MT-USA-NewsGuru-Logo.png" alt="USA NewsGuru"></li>
+<li><img decoding="async" loading="lazy" width="129" height="38" src="/wp-content/uploads/2021/04/BL-Ruler-Analytics.png" alt="Ruler Analytics"></li>
+<li><img decoding="async" loading="lazy" width="449" height="70" src="/wp-content/uploads/2021/04/MT-Insurance-Quotes-Logo-1.png" alt="InsuranceQuotes"></li>
+<li><img decoding="async" loading="lazy" width="458" height="177" src="/wp-content/uploads/2021/04/BL-Mitch-Russo-Logo.jpg" alt="Mitch Russo"></li>
+</ul>
 
 <h2><strong>Articles Randy Has Been Featured In</strong></h2>
 
-<p id="Insurance-Articles"><br><strong>INSURANCE ARTICLES</strong></p>
+<h3 id="Insurance-Articles">INSURANCE ARTICLES</h3>
 
-<ul>
+<ul class="media-articles">
 <li><strong>How To Purchase Life Insurance</strong> (<a href="https://www.kkinsuranceguide.com/insurance/how-to-purchase-life-insurance" target="_blank" rel="noreferrer noopener nofollow">KKINSURANCEGUIDE</a>)</li>
 <li><strong>Get Inspired: 11 Motivational Quotes For Insurance Agents </strong>(<a href="https://learn.everquote.com/motivational-quotes-for-insurance-agents" target="_blank" rel="noreferrer noopener nofollow">EVERQUOTE</a>)</li>
 <li><strong>Would Life Insurance Cover Zombies? We Asked The Experts</strong> (<a href="https://www.newsbreak.com/news/2088816101538/would-life-insurance-cover-zombies-we-asked-the-experts" target="_blank" rel="noreferrer noopener nofollow">NEWSBREAK</a>)</li>
@@ -103,12 +80,12 @@ source: "live"
 <li><strong>Insurers On How the Coronavirus Outbreak Could Impact Their Business</strong> (<a href="http://www.insurancesupportworld.com/blog/insurers-on-how-coronavirus-impact-business/" target="_blank" rel="noreferrer noopener nofollow">INSURANCE SUPPORT WORLD</a>)</li>
 <li><strong>Should You Use Your Stimulus Check To Buy Life Insurance?</strong> (<a href="https://www.finder.com/using-stimulus-check-for-life-insurance-experts" target="_blank" rel="noreferrer noopener nofollow">FINDER.COM</a>)</li>
 <li><strong>How do you get a life insurance policy for seniors?</strong> (<a href="https://www.biggmouth.com/how-do-you-get-a-life-insurance-policy-for-seniors/" target="_blank" rel="noreferrer noopener nofollow">BIGGMOUTH.COM</a>)</li>
-<li><strong>5 Questions to Ask Before Purchasing Life Insuranc</strong>e (<a href="https://www.theepochtimes.com/5-questions-to-ask-before-purchasing-life-insurance_4017794.html" target="_blank" rel="noreferrer noopener nofollow">THEEPOCHTIMES.COM</a>)</li>
+<li><strong>5 Questions to Ask Before Purchasing Life Insurance</strong> (<a href="https://www.theepochtimes.com/5-questions-to-ask-before-purchasing-life-insurance_4017794.html" target="_blank" rel="noreferrer noopener nofollow">THEEPOCHTIMES.COM</a>)</li>
 </ul>
 
-<p id="Business-Articles"><br><strong>BUSINESS ARTICLES</strong></p>
+<h3 id="Business-Articles">BUSINESS ARTICLES</h3>
 
-<ul>
+<ul class="media-articles">
 <li><strong>Randy VanderVaate – FEX Guy or Final Expense Guy – Dedicated to Protecting Individuals and Families Throughout the United States With the Best Life Insurance </strong>(<a href="https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/" target="_blank" rel="noreferrer noopener nofollow">VALIANTCEO</a>)</li>
 <li><strong>Ultimate Expert Tips To Modernize Your Business in 2022 </strong>(<a href="https://spyier.com/marketing/ultimate-expert-tips-to-modernize-your-business-in-2022/" target="_blank" rel="noreferrer noopener nofollow">SPYIER</a>)</li>
 <li><strong>What I Love About Being an Entrepreneur, According to 21 Entrepreneurs</strong> (<a href="https://blog.mycorporation.com/2022/02/being-an-entrepreneur/" target="_blank" rel="noreferrer noopener nofollow">MYCORPORATION</a>)</li>
@@ -127,9 +104,9 @@ source: "live"
 <li><strong>Recession-Proof Jobs That Need Workers Now</strong> (<a href="https://www.gobankingrates.com/money/jobs/recession-proof-jobs-need-workers-now/" target="_blank" rel="noreferrer noopener nofollow">GO BANKING RATES</a>)</li>
 </ul>
 
-<p id="Marketing-Articles"><br><strong>MARKETING</strong> <strong>ARTICLES</strong></p>
+<h3 id="Marketing-Articles">MARKETING ARTICLES</h3>
 
-<ul>
+<ul class="media-articles">
 <li><strong>20 Experts On Must-Have Social Media Tool Features </strong>(<a href="https://www.socialchamp.io/blog/experts-on-social-media-tool-features/" target="_blank" rel="noreferrer noopener nofollow">SOCIAL CHAMP</a>)</li>
 <li><strong>Direct vs. Indirect Competition: Most Important Things You Can Learn from Monitoring Both </strong>(<a href="https://databox.com/direct-vs-indirect-competition" target="_blank" rel="noreferrer noopener nofollow">DATABOX</a>)</li>
 <li><strong>Survey of 32 CRM Software Reviews and Recommendations from 60 experts for Different Industries </strong>(<a href="https://dailyscrawl.com/crm-software-reviews-and-recommendations/" target="_blank" rel="noreferrer noopener nofollow">DAILYSCRAWL</a>)</li>
@@ -159,7 +136,7 @@ source: "live"
 <li><strong>The Most Effective Review Generation Strategies: According To The Experts</strong> (<a href="https://upcity.com/blog/review-generation-strategies/" target="_blank" rel="noreferrer noopener nofollow">UPCITY</a>)</li>
 <li><strong>26 Customer Appreciation Ideas For Small Businesses That Genuinely Care</strong> (<a href="https://enterpriseleague.com/blog/customer-appreciation-ideas/" target="_blank" rel="noreferrer noopener nofollow">ENTERPRISE LEAGUE</a>)</li>
 <li><strong>Content Marketing Vs Paid Advertising For Early-Stage Startups</strong> (<a href="https://coara.co/blog/content-marketing-vs-paid-advertising" target="_blank" rel="noreferrer noopener nofollow">COARA</a>)</li>
-<li><strong>20 Experts Describe Their Ideal Social Media Tool Features</strong> (<a href="https://www.oddpad.com/20-experts-describe-their-ideal-social-media-tool-features/" target="_blank" rel="noreferrer noopener nofollow">ODDPAD.COM</a>)<br></li>
+<li><strong>20 Experts Describe Their Ideal Social Media Tool Features</strong> (<a href="https://www.oddpad.com/20-experts-describe-their-ideal-social-media-tool-features/" target="_blank" rel="noreferrer noopener nofollow">ODDPAD.COM</a>)</li>
 </ul>
 
 <p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a></p>

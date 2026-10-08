@@ -175,7 +175,10 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     text-decoration: underline;
   }
 
-  @media (min-width: 56rem) {
+  /* Desktop nav from 64rem: GET A QUOTE, RESOURCES, REVIEWS, ABOUT and the
+     phone fit on one line beside the logo from there; narrower screens use
+     the Menu button. */
+  @media (min-width: 64rem) {
     .nav__toggle,
     .nav__toggle:not([hidden]),
     :global(.js) .nav__toggle[hidden] {
@@ -199,7 +202,9 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
       right: 0;
       top: 100%;
       z-index: 50;
-      width: 22rem;
+      /* As wide as the longest label (one line each), never over 22rem. */
+      width: max-content;
+      max-width: 22rem;
       padding: var(--space-2) var(--space-4);
       background: var(--color-bg);
       border: 1px solid var(--color-border);

@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>TRADITIONAL BURIAL COSTS INCREASE QUICKLY WHEN CASKETS AND CEMETERY REQUIREMENTS ARE ADDED</strong></h2>
+<h2><strong>Traditional burial costs increase quickly when caskets and cemetery requirements are added</strong></h2>
 
 <p>Traditional burial begins with the funeral home, but the biggest expenses start to pile up once cemetery fees are factored in.</p>
 
@@ -37,7 +37,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>DIRECT CREMATION PROVIDES THE MOST PREDICTABLE PRICING BECAUSE THE PROCESS IS LIMITED TO ESSENTIALS</strong></h2>
+<h2><strong>Direct cremation provides the most predictable pricing because the process is limited to essentials</strong></h2>
 
 <p>Direct cremation removes most service elements that contribute to price variability. There is no viewing, no embalming, and no formal ceremony unless the family chooses to host one separately.</p>
 
@@ -55,7 +55,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>TRADITIONAL CREMATION WITH SERVICES CAN APPROACH BURIAL PRICING WHEN FAMILIES ADD OPTIONAL ELEMENTS</strong></h2>
+<h2><strong>Traditional cremation with services can approach burial pricing when families add optional elements</strong></h2>
 
 <p>Many families begin with the idea of cremation because it is perceived as a more affordable path, but once a viewing, embalming, a funeral ceremony, facility usage, and upgraded urns are added, the total cost can reach the same range as a burial service.</p>
 
@@ -71,7 +71,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BURIAL LONG-TERM FINANCIAL COMMITMENTS, CEMETERY RULES, &amp; PLOT OWNERSHIP</strong></h2>
+<h2><strong>Burial long-term financial commitments, cemetery rules, &amp; plot ownership</strong></h2>
 
 <p>A burial carries long-term obligations that families must understand before choosing it as their final disposition plan.</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>STATE LAWS – BURIAL AND CREMATION PROCEDURES – PAPERWORK, TIMING, AND FINAL COST</strong></h2>
+<h2><strong>State laws – burial and cremation procedures – paperwork, timing, and final cost</strong></h2>
 
 <p>Every state has its own rules that determine how quickly burial or cremation can occur, what paperwork is required, and what professionals must be involved.</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE FTC FUNERAL RULE REQUIRES CLEAR PRICE LISTS WHICH PROTECT FAMILIES FROM HIDDEN OR INFLATED CHARGES</strong></h2>
+<h2><strong>The FTC funeral rule requires clear price lists which protect families from hidden or inflated charges</strong></h2>
 
 <p>The FTC Funeral Rule requires every funeral home in the United States to provide a General Price List to any consumer who asks for one.</p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>CREMATION LEGAL STEPS THAT VARY BY STATE</strong></h2>
+<h2><strong>Cremation legal steps that vary by state</strong></h2>
 
 <p>A cremation cannot begin until all authorization documents are completed, signed, and verified under state law.</p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>CEMETERY REGULATIONS DETERMINE WHAT MATERIALS, MARKERS, &amp; PRICING</strong></h2>
+<h2><strong>Cemetery regulations determine what materials, markers, &amp; pricing</strong></h2>
 
 <p>Every cemetery operates under its own set of rules governing how graves are prepared, what markers are permitted, and which vault materials are allowed.</p>
 
@@ -183,7 +183,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>CREMATORIES OPERATE UNDER STATE LICENSING</strong></h2>
+<h2><strong>Crematories operate under state licensing</strong></h2>
 
 <p>Crematories are regulated at the state level, and these rules are designed to protect families through strict identification, documentation, and operational standards. When families understand these rules, they can choose providers with confidence.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>ASH SCATTERING LAWS DIFFER BETWEEN STATES AND PUBLIC AREAS</strong></h2>
+<h2><strong>Ash scattering laws differ between states and public areas</strong></h2>
 
 <p>Ash scattering is often viewed as a flexible and straightforward option, but every state sets rules for where and how ashes can be scattered.</p>
 
@@ -227,7 +227,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>TRANSPORTING REMAINS ACROSS STATE LINES TRIGGERS ADDITIONAL REQUIREMENTS FOR BURIAL OR CREMATION PLANNING</strong></h2>
+<h2><strong>Transporting remains across state lines triggers additional requirements for burial or cremation planning</strong></h2>
 
 <p>Transporting remains across state lines is common when families live far apart, but it requires specific permits and documentation.</p>
 
@@ -249,7 +249,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>VETERANS MAY QUALIFY FOR FEDERAL BURIAL BENEFITS THAT REDUCE COSTS FOR EITHER BURIAL OR CREMATION</strong></h2>
+<h2><strong>Veterans may qualify for federal burial benefits that reduce costs for either burial or cremation</strong></h2>
 
 <p>Veterans may be eligible for burial benefits through the Department of Veterans Affairs, which can greatly reduce the family’s out-of-pocket costs.</p>
 
@@ -273,7 +273,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE SOCIAL SECURITY DEATH BENEFIT PROVIDES A SINGLE $255 PAYMENT, WHICH WON’T COVER FINAL DISPOSITION COSTS</strong></h2>
+<h2><strong>The Social Security death benefit provides a single $255 payment, which won’t cover final disposition costs</strong></h2>
 
 <p>The Social Security Administration offers a one-time $255 survivor payment, but it is not designed to cover a funeral, burial, or cremation.</p>
 
@@ -291,7 +291,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>PRICE DIFFERENCES BETWEEN FUNERAL HOMES ARE ALLOWED BY LAW, WHICH CREATES WIDE VARIATIONS IN TOTAL CHARGES</strong></h2>
+<h2><strong>Price differences between funeral homes are allowed by law, which creates wide variations in total charges</strong></h2>
 
 <p>Funeral homes are legally allowed to set their own prices, and the differences between providers can be dramatic even within the same city.</p>
 
@@ -309,7 +309,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINAL EXPENSE LIFE INSURANCE PROVIDES IMMEDIATE FUNDS THAT FAMILIES CAN USE TO PAY BURIAL OR CREMATION COSTS</strong></h2>
+<h2><strong>Final expense life insurance provides immediate funds that families can use to pay burial or cremation costs</strong></h2>
 
 <p>Final expense life insurance is designed for moments when families need fast access to money to cover burial or cremation costs.</p>
 
@@ -331,7 +331,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COVERAGE AMOUNTS FOR BURIAL OR CREMATION PLANNING MUST MATCH REAL COST RANGES TO AVOID SHORTFALLS</strong></h2>
+<h2><strong>Coverage amounts for burial or cremation planning must match real cost ranges to avoid shortfalls</strong></h2>
 
 <p>Selecting the right coverage amount is one of the most important decisions in final expense planning because the policy must match the actual costs of the funeral home, crematory, cemetery, and transport, as well as any services your family expects to use.</p>
 
@@ -390,7 +390,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>GUARANTEED ACCEPTANCE PLANS INCLUDE A TWO-YEAR WAITING PERIOD</strong></h2>
+<h2><strong>Guaranteed acceptance plans include a two-year waiting period</strong></h2>
 
 <p>Guaranteed acceptance policies are whole life plans that approve every applicant regardless of health, but they come with a mandatory two-year waiting period for natural causes.</p>
 
@@ -410,7 +410,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINANCIAL STRENGTH, COMPLAINT DATA, AND REGULATORY OVERSIGHT HELP FAMILIES CHOOSE RELIABLE COVERAGE FOR FINAL EXPENSES</strong></h2>
+<h2><strong>Financial strength, complaint data, and regulatory oversight help families choose reliable coverage for final expenses</strong></h2>
 
 <p>Financial strength ratings from independent organizations such as A.M. Best help identify insurers with a stable outlook, strong reserves, and a long history of paying claims.</p>
 
@@ -430,7 +430,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: BURIAL VS. CREMATION PROS &amp; CONS</strong></h2>
+<h2><strong>Frequently asked questions: burial vs. cremation pros &amp; cons</strong></h2>
 
 <p><strong>Which option makes more financial sense, cremation or burial?</strong></p>
 

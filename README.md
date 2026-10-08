@@ -33,7 +33,7 @@ src/
     _templates/         Copy-from template for new pages
     README.md           How to add/migrate pages and redirects
   layouts/
-    BaseLayout.astro    <html>/<head>, skip link, header, CTA bar, main,
+    BaseLayout.astro    <html>/<head>, skip link, header, main,
                         pre-footer, footer, mobile call button, site scripts
     ContentLayout.astro Renders a content page (SEO from frontmatter + body,
                         quote sidebar when `sidebar: true`)
@@ -43,13 +43,13 @@ src/
     Navigation.astro    Primary nav (ends with the phone number), mobile menu
     Footer.astro        Footer nav, contact details, copyright
     PhoneButton.astro   Click-to-call button (tel:8888629456)
-    lead/               Quote box, CTA bar, pre-footer, mobile call button
+    lead/               Quote box, pre-footer, mobile call button
     ButtonLink.astro    Link styled as a button
     CallToAction.astro  CTA band (site-wide default or per-page)
     Section.astro       Labeled content section
   lib/
     pages.ts            Page queries and URL helpers
-    seo/schema.ts       JSON-LD builders for new pages
+    seo/schema.ts       shared JSON-LD (article-template pages)
     seo/meta.ts         Title formatting
     lead/               Quote box markup + Markdown plugin for in-content forms
   scripts/
@@ -64,7 +64,7 @@ src/
   styles/global.css     Design tokens, base styles, buttons (mobile-first)
 public/wp-content/      Images at their original WordPress paths
 public/images/logo/     Optimized logo copies (scripts/optimize-logo.mjs)
-public/images/home/     Smaller homepage banner copies (scripts/optimize-home-banner.mjs)
+public/images/home/     Homepage hero crops (hero-beach-*, art-directed by width; see HomeHero.astro)
 ```
 
 ## Indexing gate

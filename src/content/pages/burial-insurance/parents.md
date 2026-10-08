@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="why-buy-life-insurance-for-parents"><strong>Why Do I Need To Buy Life Insurance For My Parents?</strong></h2>
+<h2 id="why-buy-life-insurance-for-parents"><strong>Why do I need to buy life insurance for my parents?</strong></h2>
 
 <p>Funerals are expensive, and finding a way to pay for the funeral while grieving is an additional emotional and financial burden.</p>
 
@@ -57,17 +57,17 @@ sidebar: true
 
 <p>If your parents own real estate and still have a mortgage, you can purchase life insurance to pay off the mortgage in case of their passing. If your parents own real estate, you may have to pay taxes on your parent’s estate’s value, and if you buy a policy, this can help you pay real estate taxes.</p>
 
-<h2 id="can-you-buy-burial-insurance-on-your-parents"><strong>Can You Buy Burial Insurance On Your Parents?</strong></h2>
+<h2 id="can-you-buy-burial-insurance-on-your-parents"><strong>Can you buy burial insurance on your parents?</strong></h2>
 
 <p>If you’ve decided it’s time to get burial insurance for your parents, as a child, you have an insurable interest. You must have your parent’s consent to do this. They must be aware of the life insurance policy since they must sign the application.</p>
 
-<h2 id="can-you-buy-insurance-for-parents-over-80"><strong>Can You Buy Burial Insurance For Parents Over 80?</strong></h2>
+<h2 id="can-you-buy-insurance-for-parents-over-80"><strong>Can you buy burial insurance for parents over 80?</strong></h2>
 
 <p>Yes. Some burial insurance companies issue life insurance coverage to individuals 85 years old or younger, effective immediately. This insurance with no waiting period is best if they are medically qualified or your parents are still healthy.</p>
 
 <p>Buying burial insurance for your parents is a great option if they do not have life insurance and do not have the finances to pay for their final expenses.</p>
 
-<h2 id="best-insurance-option-for-your-parents"><strong>Which Type Of Life Insurance Is The Best Option For Parents?</strong></h2>
+<h2 id="best-insurance-option-for-your-parents"><strong>Which type of life insurance is the best option for parents?</strong></h2>
 
 <p><strong>Term Life Insurance</strong></p>
 
@@ -93,7 +93,7 @@ sidebar: true
 
 <p>If the insured dies during the waiting period, their beneficiaries will not receive the full insurance proceeds. They will only get the return on premium plus 7% to 10% interest. The whole death benefit will only be given if they die after the waiting period.</p>
 
-<h2 id="life-insurance-requirements"><strong>Requirements When Buying Life Insurance Policy For Parents</strong></h2>
+<h2 id="life-insurance-requirements"><strong>Requirements when buying life insurance policy for parents</strong></h2>
 
 <ol>
 <li><strong>Proof of Insurable interest</strong>&#160;means you would have a financial loss if your parent passes. Financial loss could include funeral, medical, or leftover credit card bills.&#160;</li>
@@ -102,7 +102,7 @@ sidebar: true
 
 <p>There’s no need to have an actual medical exam, but your parents will have to answer some health questions and allow the carrier to check your parent’s prescription history. This allows the insurance company to determine medically if they are eligible for coverage.</p>
 
-<h2 id="what-if-your-parents-are-not-in-good-health"><strong>What If My Parent Is Not In Good Health?</strong></h2>
+<h2 id="what-if-your-parents-are-not-in-good-health"><strong>What if my parent is not in good health?</strong></h2>
 
 <p>Most applicants will qualify for first-day coverage insurance even with health issues. It’s always better if your parents are in good health…but it’s not a requirement to buy final expense funeral insurance.</p>
 
@@ -114,7 +114,7 @@ sidebar: true
 
 <p>The huge drawback to the guaranteed acceptance policy is the two-year waiting period and the limited death benefit. Depending on the company you apply to, you can often get burial insurance policies for $2,000 to a maximum of $50,000.</p>
 
-<h2 id="determining-insurance-coverage-needs"><strong>How Much Burial Insurance Coverage Should You Buy?</strong></h2>
+<h2 id="determining-insurance-coverage-needs"><strong>How much burial insurance coverage should you buy?</strong></h2>
 
 <p>The cost of a funeral and burial, on average, is $8,000-$12,000, depending on your location and the cost of goods and services chosen.</p>
 
@@ -141,7 +141,7 @@ sidebar: true
 </li>
 </ul>
 
-<h2 id="finding-the-best-burial-insurance-for-parents"><strong>How To Find The Best Burial Insurance For Parents</strong></h2>
+<h2 id="finding-the-best-burial-insurance-for-parents"><strong>How to find the best burial insurance for parents</strong></h2>
 
 <p>Begin your process by looking for a life insurance broker who can check out the different policies and life insurance rates. It helps to work with an agent who can shop around at different insurance companies to find the right benefits that fit your budget.</p>
 
@@ -159,17 +159,7 @@ sidebar: true
 
 <p>Today is the best time to get life insurance for parents or final expense insurance for parents. Letting a day pass will often make the premium more expensive.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Our job at Final Expense Guy is to be the most knowledgeable burial insurance experts available. We can get you the most accurate quote and affordable life insurance rates for parents.</p>
-
-<p>Once we know more about your age and health history, we can accurately give you burial insurance quotes from the final expense companies that best fit you.</p>
-
-<p>The reality is that most inexperienced and less knowledgeable insurance agents who offer life insurance will cost you loads of money by selling you more expensive policies.</p>
-
-<p>Working with an independent brokerage like Final Expense Guy is always in your best interest. With access to all the best final expense life&#160;insurance companies, we will help you understand your best life insurance option, given your current age, health, and financial situation.</p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I buy insurance for my parents?</strong></p>
 

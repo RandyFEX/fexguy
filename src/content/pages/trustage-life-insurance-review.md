@@ -1,10 +1,10 @@
 ---
 title: "TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]"
-description: "TruStage Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"
+description: "A review of TruStage burial insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/trustage-life-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"TruStage Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/trustage-life-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-17T17:00:32-05:00"},{"property":"article:published_time","content":"2026-04-17T17:00:27-05:00"},{"property":"article:modified_time","content":"2026-04-17T17:00:32-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"TruStage Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"15 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/\",\"name\":\"TruStage Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\",\"url\":\"https://fexguy.com/trustage-life-insurance-review/\",\"name\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-04-17T17:00:27-05:00\",\"dateModified\":\"2026-04-17T17:00:32-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"keywords\":\"TruStage Life Insurance Review\",\"datePublished\":\"2026-04-17T17:00:27-05:00\",\"dateModified\":\"2026-04-17T17:00:32-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"TruStage Life Insurance Review guarantees you the best burial, cremation, final expense insurance pricing - 99% discount rate!\",\"name\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]"},{"property":"og:description","content":"A review of TruStage burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/trustage-life-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-17T17:00:32-05:00"},{"property":"article:published_time","content":"2026-04-17T17:00:27-05:00"},{"property":"article:modified_time","content":"2026-04-17T17:00:32-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]"},{"name":"twitter:description","content":"A review of TruStage burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"15 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/\",\"name\":\"TruStage Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\",\"url\":\"https://fexguy.com/trustage-life-insurance-review/\",\"name\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"datePublished\":\"2026-04-17T17:00:27-05:00\",\"dateModified\":\"2026-04-17T17:00:32-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"keywords\":\"TruStage Life Insurance Review\",\"datePublished\":\"2026-04-17T17:00:27-05:00\",\"dateModified\":\"2026-04-17T17:00:32-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"A review of TruStage burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"name\":\"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]\",\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/trustage-life-insurance-review/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -21,7 +21,7 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• TruStage is easy to get, but usually costs more long-term<br>• Term life premiums increase every 5 years automatically<br>• Guaranteed issue plans include a 2-year waiting period<br>• Coverage amounts are lower than those of many competing companies<br>• Convenience often means paying more for less flexibility</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• TruStage is easy to get, but usually costs more long-term<br>• Term life premiums increase every 5 years as you enter a new age band, and coverage ends at 80<br>• Whole life premiums are level and do not increase<br>• Guaranteed issue plans include a 2-year waiting period<br>• Coverage amounts are lower than those of many competing companies<br>• Convenience often means paying more for less flexibility</p>
 
 <p>TruStage life insurance is designed to be simple and fast, but that simplicity comes with trade-offs. TruStage life insurance includes term life insurance, whole life insurance, and guaranteed issue options, all with no medical exam. The problem is cost and structure. Their term policies increase every 5 years and end at age 80, which can make them expensive over time. Their guaranteed issue plans include a 2-year waiting period before full benefits pay out. If you don’t compare options, you can end up paying more for less coverage than other companies offer.</p>
 
@@ -60,13 +60,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="does-trustage-offer-first-day-coverage"><br><strong>Does Trustage Offer First-day Coverage?</strong></h2>
+<h2 id="does-trustage-offer-first-day-coverage"><br><strong>Does TruStage offer first-day coverage?</strong></h2>
 
 <p><strong>YES</strong>, TruStage offers burial insurance plans with first-day coverage with some of their plans, but they tend to be more expensive than other companies.     </p>
 
 <p>If you qualify, their term life and whole life insurance plans come with immediate first-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.   </p>
 
-<h2 id="pros-of-trustage-burial-insurance"><strong>Pros Of Trustage Burial Insurance</strong></h2>
+<h2 id="pros-of-trustage-burial-insurance"><strong>Pros of TruStage burial insurance</strong></h2>
 
 <p><strong>3 products to choose from</strong> – OK products, but not the best or most affordable</p>
 
@@ -74,13 +74,13 @@ sidebar: true
 
 <p><strong>First-day coverage (kind of…)</strong> – two out of three burial insurance products with first-day coverage</p>
 
-<h2 id="cons-of-trustage-burial-insurance"><strong>Cons Of Trustage Burial Insurance</strong></h2>
+<h2 id="cons-of-trustage-burial-insurance"><strong>Cons of TruStage burial insurance</strong></h2>
 
-<p><strong>Expensive</strong> – TruStage life insurance products can be up to 38% more expensive than other life insurance products on the market.</p>
+<p><strong>Expensive</strong> – TruStage life insurance products can be more expensive than other life insurance products on the market.</p>
 
-<p><strong>No ability to compare prices</strong> – it is only a direct-to-consumer sales portal for CMGF Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
+<p><strong>No ability to compare prices</strong> – it is only a direct-to-consumer sales portal for CMFG Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
 
-<h2 id="trustage-burial-insurance-products"><strong>Trustage Burial Insurance Products</strong></h2>
+<h2 id="trustage-burial-insurance-products"><strong>TruStage burial insurance products</strong></h2>
 
 <p>TruStage term life insurance is also marketed as burial insurance. </p>
 
@@ -109,11 +109,11 @@ sidebar: true
 
 <p>TruStage advertises that their term life rate is based on age and gender…but there’s a catch!</p>
 
-<p>The premium is only level for the first five years and increases every five years as the policyholder reaches new age bands 30, 35, 45, 50, 55, 60, 65, 70, and 75. <br><br>The premium becomes more expensive as time passes, compared to many top insurance companies offering level-term policy plans.</p>
+<p>The premium is only level until the next five-year age band and increases every five years as the policyholder reaches new age bands 30, 35, 40, 45, 50, 55, 60, 65, 70, and 75. <br><br>The premium becomes more expensive as time passes, compared to many top insurance companies offering level-term policy plans.</p>
 
 <p>TruStage term plan terminates after age 80. If you outlive your term, you will not have any coverage. </p>
 
-<h2 id="WHOLE-LIFE-INSURANCE">Trustage Whole Life Insurance Review</h2>
+<h2 id="WHOLE-LIFE-INSURANCE">TruStage whole life insurance review</h2>
 
 <p>TruStage whole life insurance is a simplified issue; you don’t have to take a medical exam or invasive tests as part of the underwriting process. </p>
 
@@ -145,7 +145,7 @@ sidebar: true
 
 <p>This plan has the same set of health questions as term life. It also has a five-year look-back period on health history, making it difficult for applicants with health issues to qualify for coverage.</p>
 
-<h2 id="GUARANTEED-ACCEPTANCE-WHOLE-LIFE-INSURANCE"><strong>Truestage Guaranteed Acceptance Whole Life Insurance Review</strong></h2>
+<h2 id="GUARANTEED-ACCEPTANCE-WHOLE-LIFE-INSURANCE"><strong>Truestage guaranteed acceptance whole life insurance review</strong></h2>
 
 <p>TruStage also offers guaranteed acceptance whole life insurance with no health questions and no medical exam. The death benefit amount is lower, between $1,000 and $25,000, which is designed to cover final expenses. </p>
 
@@ -166,7 +166,7 @@ sidebar: true
 <ul>
 <li>Expensive compared to other companies offering guaranteed acceptance policy</li>
 <li>Cannot purchase a policy greater than $25,000</li>
-<li>No coverage if you die from a natural cause in the first two years – full death benefit only after year 2</li>
+<li>No full coverage if you die from a natural cause in the first two years (your premiums plus 10% are paid back) – full death benefit only after year 2</li>
 </ul>
 
 <p><br><strong>What’s wrong with TruStage Guaranteed Acceptance Whole Life?</strong></p>
@@ -179,17 +179,17 @@ sidebar: true
 
 <p>If you pass away for any reason other than accidental during the two-year waiting period, the death benefit payout is all the premiums you paid plus 10% interest. After the second year, 100% of the death benefit will be paid to your beneficiary regardless of how your death occurs.</p>
 
-<h2 id="trustage-burial-insurance-riders"><br><strong>Trustage Burial Insurance Riders</strong></h2>
+<h2 id="trustage-burial-insurance-riders"><br><strong>TruStage burial insurance riders</strong></h2>
 
 <p>Unfortunately, TruStage does not offer riders on their burial insurance plans. If you are looking for additional benefits, TruStage is not a company to go for.</p>
 
-<h2 id="when-does-trustage-make-the-most-sense"><br><strong>When Does Trustage Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-does-trustage-make-the-most-sense"><br><strong>When does TruStage burial insurance make the most sense?</strong></h2>
 
 <p>TruStage works in partnership with participating credit unions, and we have found that they seldom make sense for price-conscious consumers. </p>
 
 <p>If you receive a letter from TruStage, we recommend you do price shopping with an independent life insurance agency before buying a policy.</p>
 
-<h2 id="trustage-underwriting-guidelines"><br><strong>Trustage Underwriting Guidelines</strong></h2>
+<h2 id="trustage-underwriting-guidelines"><br><strong>TruStage underwriting guidelines</strong></h2>
 
 <p><strong>Health Questions</strong></p>
 
@@ -221,7 +221,7 @@ sidebar: true
 
 <p>Most other life insurance companies only have a two-year look-back period on diseases.</p>
 
-<h2><strong>Trustage Term Life Pricing Examples</strong></h2>
+<h2><strong>TruStage term life pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-127">
 <thead>
@@ -365,7 +365,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="trustage-pricing-examples"><br><strong>Trustage Whole Life Pricing Examples</strong></h2>
+<h2 id="trustage-pricing-examples"><br><strong>TruStage whole life pricing examples</strong></h2>
 
 <table class="table-wrap" id="tablepress-125">
 <thead>
@@ -483,7 +483,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting Approved For Trustage Burial Insurance</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>Getting approved for TruStage burial insurance</strong></h2>
 
 <table class="table-wrap" id="tablepress-60">
 <thead>
@@ -516,7 +516,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="the-best-payment-option"><br><strong>The Best Payment Option</strong></h2>
+<h2 id="the-best-payment-option"><br><strong>The best payment option</strong></h2>
 
 <table class="table-wrap" id="tablepress-17">
 <thead>
@@ -584,7 +584,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="trustage-company-overview"><br><strong><strong>Trustage Company Overview</strong></strong></h2>
+<h2 id="trustage-company-overview"><br><strong><strong>TruStage company overview</strong></strong></h2>
 
 <p><a href="https://www.trustage.com" target="_blank" rel="noreferrer noopener">TruStage Life</a> insurance is a CMFG (Credit Union National Association Mutual Financial Group) Life Insurance subsidiary. Their life insurance products are issued by CMFG, which provides insurance and financial products to credit union members around the U.S. </p>
 
@@ -604,19 +604,7 @@ sidebar: true
 
 <p>Financial rating is essential in evaluating the insurer’s ability to remain in business while paying claims. But, it has nothing to do with the quality of the products and services to their clients. It just demonstrates their financial stability from having more assets than liabilities.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy with health issues needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for TruStage funeral insurance, TruStage burial insurance, or TruStage life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>Is TruStage Life Insurance still in business?</strong></p>
 
@@ -632,7 +620,7 @@ sidebar: true
 
 <p><br><strong>Why did the price of TruStage Life Insurance increase?</strong></p>
 
-<p>The price of TruStage Life Insurance increased because the company is in business to make a profit.</p>
+<p>The price of TruStage term life insurance increased because the company is in business to make a profit.</p>
 
 <p><br><strong>Will the price of TruStage Life Insurance continue to increase?</strong></p>
 
@@ -856,21 +844,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
-<h3 class="as-h5">Colonial Penn Two Year Wait</h3>
+<h3 class="as-h5">Colonial Penn two year wait</h3>
 </a></div>
 
-<h2 class="as-h5">2 Comments</h2>
+<h2 class="as-h5">2 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-11206">

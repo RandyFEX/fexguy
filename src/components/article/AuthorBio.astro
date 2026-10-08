@@ -1,0 +1,88 @@
+---
+// End-of-article author bio: who Randy is, why his information is worth
+// trusting, and where to learn more. Copy uses only facts the site already
+// states (Founder and President of Final Expense Guy, per /about/; the
+// approved Meet Randy wording on the homepage).
+import RandyPhoto from './RandyPhoto.astro';
+---
+
+<section class="author-bio" aria-labelledby="author-bio-title" data-pagefind-ignore>
+  <RandyPhoto size={120} class="author-bio__photo" />
+  <div class="author-bio__text">
+    <p class="author-bio__eyebrow">About the author</p>
+    <h2 class="author-bio__title" id="author-bio-title">Randy VanderVaate</h2>
+    <p>
+      Randy is the Founder and President of Final Expense Guy. He’s an independent life insurance broker, licensed in
+      most states. Because he isn’t tied to one insurance company, he can compare options from multiple companies to help
+      you find the right fit.
+    </p>
+    <p>When you call Final Expense Guy, you deal directly with Randy, not a call center.</p>
+    <p class="author-bio__links">
+      <a href="/randy-vandervaate/">More about Randy</a>
+      <a href="/editorial-guidelines/">Editorial guidelines</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .author-bio {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-4) var(--space-6);
+    align-items: start;
+    padding: var(--space-6);
+    border-left: 3px solid var(--color-primary);
+    background: var(--home-stone);
+    border-radius: var(--home-radius);
+  }
+  .author-bio__text p {
+    margin: 0 0 var(--space-3);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  /* A smaller portrait keeps the bio compact. */
+  .author-bio :global(.author-bio__photo img) {
+    width: 6rem;
+    height: 6rem;
+  }
+  .author-bio__text .author-bio__eyebrow {
+    margin-bottom: var(--space-1);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  .author-bio__title {
+    margin: 0 0 var(--space-3);
+    font-size: 1.375rem;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+  .author-bio__text .author-bio__links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--space-6);
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .author-bio__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-primary);
+  }
+  /* Phones: the photo sits beside the name, the text runs full width. */
+  @media (max-width: 29.99rem) {
+    .author-bio {
+      grid-template-columns: 1fr;
+    }
+    .author-bio :global(.author-bio__photo) {
+      width: 5rem;
+    }
+    .author-bio :global(.author-bio__photo img) {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>

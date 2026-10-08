@@ -1,0 +1,155 @@
+---
+// Client reviews (/reviews/): the reviews published on the old WordPress
+// /reviews/ page, preserved word for word in data/customer-reviews.json (see
+// its "source" and "notes"; data/customer-reviews.csv is the same archive as a
+// spreadsheet). Wording, numbers and attributions are shown exactly as
+// published, except that the attribution's separator is a plain hyphen
+// ("Name - City, ST"; see src/lib/reviews.ts). The source had no star ratings or dates and no third-party
+// platform, so none are shown, and there is no review/rating schema.
+//
+// Every review is in the HTML (works without JavaScript); with JavaScript the
+// list starts with the first INITIAL reviews and a "Show more reviews" button
+// reveals STEP more at a time.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import data from '../../data/customer-reviews.json';
+import { displayAttribution } from '@/lib/reviews';
+
+const reviews = data.reviews;
+const count = reviews.length;
+const INITIAL = 25; // keep in sync with the nth-child rule in the <style> below
+const STEP = 25;
+---
+
+<BaseLayout
+  title={pageTitle('Client Reviews')}
+  description={`${count} reviews from Final Expense Guy clients, reproduced exactly as they were published.`}
+  canonical="/reviews/"
+>
+  <div class="container reviews-page">
+    <h1>Final Expense Guy Client Reviews</h1>
+    <p class="reviews-intro">
+      These are the {count} client reviews published on this page, reproduced word for word with the name and location
+      exactly as they were shown. They are listed in their published order, starting with review {reviews[0].label}.
+    </p>
+
+    <ul class="reviews" id="reviews-list" role="list" data-initial={INITIAL} data-step={STEP}>
+      {
+        reviews.map((r) => (
+          <li class="review" id={`review-${r.position}`}>
+            <figure class="review__figure">
+              <p class="review__label">Review {r.label}</p>
+              <blockquote class="review__quote">
+                {r.paragraphs.map((p) => (
+                  <p>{p}</p>
+                ))}
+              </blockquote>
+              <figcaption class="review__by">{displayAttribution(r.attribution)}</figcaption>
+            </figure>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="reviews-status" id="reviews-status" role="status" aria-live="polite"></p>
+    <button class="btn btn--secondary reviews-more" id="reviews-more" type="button" hidden>Show more reviews</button>
+  </div>
+</BaseLayout>
+
+<script>
+  const list = document.getElementById('reviews-list');
+  const more = document.getElementById('reviews-more') as HTMLButtonElement | null;
+  const status = document.getElementById('reviews-status');
+  if (list && more && status) {
+    const items = Array.from(list.children) as HTMLElement[];
+    const step = Number(list.dataset.step) || 25;
+    let shown = Math.min(Number(list.dataset.initial) || 25, items.length);
+
+    const reveal = (upTo: number) => {
+      for (let i = shown; i < upTo; i++) items[i].classList.add('is-shown');
+      shown = Math.max(shown, upTo);
+      status.textContent = `Showing ${shown} of ${items.length} reviews.`;
+      more.hidden = shown >= items.length;
+    };
+
+    // A link to a review further down the list (#review-300) shows it.
+    const target = location.hash ? items.findIndex((li) => `#${li.id}` === location.hash) : -1;
+    reveal(target >= shown ? target + 1 : shown);
+    if (target >= 0) {
+      // After the browser's own jump to the anchor (made while it was hidden).
+      const jump = () => requestAnimationFrame(() => items[target].scrollIntoView());
+      if (document.readyState === 'complete') jump();
+      else window.addEventListener('load', jump, { once: true });
+    }
+
+    more.addEventListener('click', () => {
+      const first = shown;
+      reveal(Math.min(shown + step, items.length));
+      // Keyboard and screen-reader users continue at the first new review.
+      items[first].tabIndex = -1;
+      items[first].focus();
+    });
+  }
+</script>
+
+<style>
+  .reviews-page {
+    padding-block: var(--space-8) var(--space-12);
+    max-width: calc(var(--prose-max) + 2 * var(--space-6));
+  }
+  .reviews-intro {
+    color: var(--color-text-muted);
+  }
+  .reviews {
+    list-style: none;
+    margin: var(--space-8) 0 0;
+    padding: 0;
+  }
+  .review {
+    border-top: 1px solid var(--color-border);
+    padding-block: var(--space-6);
+  }
+  .review:last-child {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .review__figure {
+    margin: 0;
+  }
+  .review__label {
+    margin: 0 0 var(--space-2);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+  .review__quote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .review__quote p {
+    margin: 0 0 var(--space-3);
+  }
+  .review__by {
+    font-weight: 700;
+  }
+  /* With JavaScript, only the first 25 reviews show at first (see INITIAL);
+     without it, every review is visible. */
+  :global(.js) .review:nth-child(n + 26):not(.is-shown) {
+    display: none;
+  }
+  .reviews-status {
+    margin: var(--space-6) 0 var(--space-3);
+    color: var(--color-text-muted);
+  }
+  /* .btn sets display, which would otherwise override the hidden attribute. */
+  .reviews-more[hidden] {
+    display: none;
+  }
+  .review:focus {
+    outline: none;
+  }
+  .review:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 4px;
+  }
+</style>

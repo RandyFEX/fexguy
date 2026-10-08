@@ -13,11 +13,11 @@ sidebar: true
 
 <p>Burial insurance if you need help with transferring or any activities of daily living (eating, bathing, dressing, toileting, and continence) is possible. However, your options are very limited.</p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Transferring burial insurance isn’t automatic and requires proper ownership changes<br>• The wrong setup can leave your policy stuck or canceled<br>• Many people don’t understand owner vs beneficiary roles<br>• Missed payments during transfer can cause policy lapse<br>• Not updating details can delay or block payout to your family</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Needing help with transferring signals a serious health risk to insurers<br>• Companies with health questions ask if you need help with activities of daily living<br>• If you need help with transferring, guaranteed issue is your only option<br>• Guaranteed issue plans have a 2-year waiting period for natural death<br>• Coverage amounts are smaller and cost more monthly</p>
 
-<p>Burial insurance transfer usually means changing the policy owner or who controls the policy, not the coverage itself. Burial insurance is a type of whole life insurance, and ownership matters because the owner controls payments, beneficiaries, and changes. If the owner dies or stops paying, the policy can lapse unless it’s transferred correctly. Most people don’t realize that simply naming someone isn’t enough; you have to formally update the policy with the insurance company. If it’s handled wrong, your family could face delays or lose the coverage entirely.</p>
+<p>Transferring means moving yourself between your bed, a chair, the toilet, or a wheelchair. Burial insurance is a type of whole life insurance, and every company with health questions asks whether you currently need help with activities of daily living like transferring. If you need another person’s help, you won’t qualify for first-day coverage, but you can still get guaranteed issue burial insurance with no health questions and a 2-year waiting period for natural death.</p>
 
-<p>Complete my quote request form on this page to quickly avoid costly transfer mistakes.</p>
+<p>Complete my quote request form on this page to quickly avoid costly mistakes.</p>
 
 <p><strong><strong>!!! READ THIS FIRST !!! </strong></strong><br><br><strong>If you need help with transferring or any ADLs, the only plan you will qualify for is a guaranteed issue burial insurance with a 2-year waiting. </strong><br><br><strong>You WILL NOT qualify for 1st-day coverage if you need help with ADLs.</strong></p>
 
@@ -57,7 +57,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-need-help-with-transferring"><br><strong>What Is My Best Insurance Option If I Need Help With Transferring?</strong></h2>
+<h2 id="best-insurance-option-if-you-need-help-with-transferring"><br><strong>What is my best insurance option if I need help with transferring?</strong></h2>
 
 <p>Activities of Daily Living <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">(ADL)</a> such as eating, bathing, dressing, toileting, continence, and transferring are the basic tasks required for <a href="https://en.wikipedia.org/wiki/Activities_of_daily_living" target="_blank" rel="noreferrer noopener">self-care</a> and independent living. When people cannot do these activities independently, they need help from other people or mechanical devices to cope.</p>
 
@@ -81,7 +81,7 @@ sidebar: true
 
 <p>While it cost a bit more than insurance policies with underwriting, you will not have to worry about the possibility of being denied coverage because of your inability to dress on your own or perform any of the activities of daily living.</p>
 
-<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why Do You Need Guaranteed Issue Burial Insurance If You Need Help With Transferring?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why do you need guaranteed issue burial insurance if you need help with transferring?</strong></h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you need help with transferring and other ADLs because it’s the only life insurance plan you will qualify for because of your condition. If you are relatively healthy and only need help with transferring, almost all people easily outlive the two-year waiting period.</p>
 
@@ -103,7 +103,7 @@ sidebar: true
 
 <p>You must possess a mental capacity to enter into a legal contract. For example, the company may reject your application if you have severe cognitive impairment and cannot legally consent to an agreement.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -142,7 +142,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -191,7 +191,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help transferring.</p>
 
@@ -199,7 +199,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-if-you-need-help-with-transferring"><br><strong><strong>Burial Insurance Underwriting If You Need Help With Transferring</strong></strong></h2>
+<h2 id="insurance-underwriting-if-you-need-help-with-transferring"><br><strong><strong>Burial insurance underwriting if you need help with transferring</strong></strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -253,7 +253,7 @@ sidebar: true
 
 <p>Applicants needing help with transferring and other activities of daily living are considered high-risk applicants. Therefore, they will need to pay more premiums and have a short waiting period.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Need Help With Transferring?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I need help with transferring?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -371,11 +371,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Needing Help With Transferring And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Needing help with transferring and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -400,7 +400,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-need-help-with-transferring"><br><strong>Information We Need If You Need Help With Transferring</strong></h2>
+<h2 id="information-we-need-if-you-need-help-with-transferring"><br><strong>Information we need if you need help with transferring</strong></h2>
 
 <p>When applying for burial insurance with a problem with transferring, it’s important to provide us as much information as possible. This will help us understand your health better and provide you with an accurate quote.</p>
 
@@ -418,7 +418,7 @@ sidebar: true
 
 <p>We will ask these questions to assess your current health and burial insurance eligibility. It is important to be honest when answering these questions.</p>
 
-<h2 id="benefits-of-guaranteed-issue-burial-insurance"><br><strong>Benefits Of Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="benefits-of-guaranteed-issue-burial-insurance"><br><strong>Benefits of guaranteed issue burial insurance</strong></h2>
 
 <ol>
 <li><strong>Easy to qualify</strong>. You are not required to take physicals or a medical exam and answer health questions. You are guaranteed to be approved regardless of your health issues.</li>
@@ -430,7 +430,7 @@ sidebar: true
 <li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance is whole life insurance that accumulates cash value over the years. You can withdraw or borrow against it.</li>
 </ol>
 
-<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>
+<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The best guaranteed issue life insurance policy</strong></h2>
 
 <p>The best-guaranteed-issue life insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4 year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -438,7 +438,7 @@ sidebar: true
 
 <p>If you need help with toileting, then GI policy is your best choice. Your application will be quick and easy because there are no medical exams or health questions. You may even be approved for coverage in 15 minutes!</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Need Help With Transferring</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance if you need help with transferring</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -456,15 +456,3 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy when you need help with transferring needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the best type of life insurance for seniors that fits their financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for help with transferring funeral insurance, or need help transferring burial insurance, or need help with transferring final expense insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>

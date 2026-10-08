@@ -10,6 +10,12 @@ is in place; see src/content/README.md for how pages were migrated.
   rates, licensing/state info, statistics, testimonials, reviews, awards,
   addresses, phone numbers, or page copy. Use only content Randy provides.
   If something is missing, leave the field empty and ask.
+- **No em dashes:** Never use em dashes (—) in FEXGUY website content. Em
+  dashes are prohibited site-wide. Use a regular hyphen (-), comma, colon,
+  semicolon, or period as appropriate. `npm run verify -- --strict` fails on
+  any em dash (also &mdash;, &#8212;, \u2014) in the build or in
+  src/content / data. Review attributions show as "Name - City, ST"
+  (src/lib/reviews.ts; the archive in data/ keeps its original en dash).
 - **Never guess WordPress URLs or redirects.** Only use URLs from the
   migration data Randy provides.
 - Don't connect domains, change DNS, or set `PUBLIC_ALLOW_INDEXING=true`
@@ -43,9 +49,25 @@ is in place; see src/content/README.md for how pages were migrated.
   /leave-a-review/, /quiz/, /video-info-quiz-2/, /easy/, /easy-whole-life/,
   /easy-term-life/, /quote-final-expense/, /term-life-quote/, /term-quote/,
   /do-not-sell/ (never rebuilt in the new site), and (Randy, October 2026)
-  /reviews/ (legacy testimonial-image page, hotlinked and inaccessible; not
-  rebuilt, no replacement review section) and /gtl/ (reproduced Guarantee
-  Trust Life application/e-consent forms; the GTL review article stays).
+  /gtl/ (reproduced Guarantee Trust Life application/e-consent forms; the GTL
+  review article stays), and /senior-dollar/ (Randy, October 2026: Senior
+  Dollar is no longer an active project; real 404, no redirect unless a future
+  business decision changes that), and /long-term-care-insurance-guide/ and
+  /long-term-care-insurance/ (Randy, October 2026: he does not sell or advise
+  on standalone long-term-care insurance; the guide, its Quick Answer, its
+  /blog/page/5/ card and its header images were removed, and the Group C
+  redirect below is superseded; both URLs stay real 404s with no redirect
+  unless a future business decision creates a genuinely matching page).
+  Ordinary long-term-care wording elsewhere (nursing homes, Medicaid, ADLs,
+  underwriting questions, riders, carrier products) stays.
+- **/reviews/ restored** (Randy, October 2026; reverses the earlier decision
+  to retire it): the 476 client reviews published on the WordPress /reviews/
+  page were preserved word for word in data/customer-reviews.json (with
+  source, capture method and the published numbering anomalies in "notes")
+  and data/customer-reviews.csv (Randy's spreadsheet copy). src/pages/
+  reviews.astro renders them from the JSON. Never edit, reword, renumber,
+  date, rate (no stars) or add review/aggregate-rating schema to them; the
+  hotlinked Google Docs images on the old page were not kept.
 - Redirects must be approved by Randy before they're added to vercel.json.
   Old URLs decided as 404 with no redirect: /book/, the two
   /jonathan-lawson-actor-colonial-penn*/ URLs, /burial-insurance-neuropathy/,
@@ -239,7 +261,8 @@ is in place; see src/content/README.md for how pages were migrated.
   /life-insurance-medicaid/ → /final-expense-life-insurance-medicaid/
   /life-insurance-over-80/ → /final-expense-life-insurance-over-80/
   /lions-club-member-life-insurance-options/ → /lions-club-member-life-insurance/
-  /long-term-care-insurance/ → /long-term-care-insurance-guide/
+  /long-term-care-insurance/ → /long-term-care-insurance-guide/ (superseded:
+  removed October 2026 when the guide was retired; both are real 404s)
   /primerica-life-insurance-review-bad-deal/ → /primerica-life-insurance-review/
   /primerica-life-insurance-review-protected-or-neglected/ → /primerica-life-insurance-review/
   /term-life-insurance-for-doctors/ → /term-life-insurance-doctors/
@@ -355,24 +378,52 @@ is in place; see src/content/README.md for how pages were migrated.
   /burial-insurance-with-type-1-diabetes/ → /burial-insurance/diabetes/
   /burial-life-insurance-book/ → /final-expense-life-insurance-book/
   /buried-in-lies-e-book/ → /final-expense-life-insurance-book/
-  /category/burial-insurance-cancer/ → /category/cancer-final-expense-whole-life-insurance/
-  /category/burial-insurance-company-review/ → /category/company-reviews-final-expense-whole-life-insurance/
-  /category/burial-insurance-diabetes/ → /category/diabetes-final-expense-whole-life-insurance/
-  /category/burial-insurance-heart-circulatory-conditions/ → /category/heart-issues-final-expense-whole-life-insurance/
-  /category/burial-insurance-kidney-conditions/ → /category/kidney-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-liver/ → /category/liver-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-lung-respiratory/ → /category/lung-respiratory-conditions-final-expense-whole-life-insurance/
-  /category/burial-insurance-neurological-impairments/ → /category/neurological-impairments-final-expense-whole-life-insurance/
-  /category/final-expense-whole-life-insurance-company-reviews/ → /category/company-reviews-final-expense-whole-life-insurance/
-  /category/heart-circulatory-final-expense-whole-life-insurance/ → /category/heart-issues-final-expense-whole-life-insurance/
+  /category/burial-insurance-cancer/ → /burial-insurance/cancer/
+  /category/burial-insurance-company-review/ → /a-z-companies/
+  /category/burial-insurance-diabetes/ → /burial-insurance/diabetes/
+  /category/burial-insurance-heart-circulatory-conditions/ → /burial-insurance/heart-conditions/
+  /category/burial-insurance-kidney-conditions/ → /burial-insurance/kidney-disease/
+  /category/burial-insurance-liver/ → /burial-insurance/liver-disease/
+  /category/burial-insurance-lung-respiratory/ → /burial-insurance/respiratory-lung-conditions/
+  /category/burial-insurance-neurological-impairments/ → /burial-insurance/neurological-disorders/
+  /category/final-expense-whole-life-insurance-company-reviews/ → /a-z-companies/
+  /category/heart-circulatory-final-expense-whole-life-insurance/ → /burial-insurance/heart-conditions/
   /globe-life-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
   /globe-term-life-burial-insurance-review/ → /globe-life-price-increase/
   /globe-whole-life-insurance-review-pros-cons/ → /globe-life-price-increase/
   Intentional real 404s, no redirects (old campaign/workflow URLs): /get-info/, /free-quote-now/, /facebook-quote-request/, /request-quote-compare-rates/, /state-benefits/.
+  The 10 category mappings above originally ended at the /category/ archives;
+  they were repointed straight to the hubs when the archives were retired
+  (see "Legacy archives retired" below).
+- **Legacy archives retired** (Randy, October 2026): the frozen WordPress
+  archive snapshots are not part of the site's architecture.
+  - /blog/ and /blog/page/2/–/9/ stay built (200, self-canonical) but are
+    `robots: "noindex, follow"` with `sitemap: false` (which also keeps them
+    out of llms.txt and site search). Not `noindex: true`: that flag drops the
+    canonical tag (Seo.astro). Don't link them or redirect/404 them without
+    Randy's approval.
+  - The 11 /category/ archive pages were removed and 301 straight to their
+    hubs (one hop): cancer-final-expense-whole-life-insurance →
+    /burial-insurance/cancer/; company-reviews-final-expense-whole-life-insurance
+    (and its /page/2/) → /a-z-companies/; diabetes-… → /burial-insurance/diabetes/;
+    heart-issues-… (and its /page/2/) → /burial-insurance/heart-conditions/;
+    kidney-conditions-… → /burial-insurance/kidney-disease/; liver-conditions-…
+    → /burial-insurance/liver-disease/; lung-respiratory-conditions-… →
+    /burial-insurance/respiratory-lung-conditions/; neurological-impairments-…
+    → /burial-insurance/neurological-disorders/ (each "…" is
+    -final-expense-whole-life-insurance); /category/term-life-insurance/ →
+    /term-life-insurance-guide-everyone/.
+  - Every older redirect that ended at those archives now goes straight to the
+    hub: the 10 Group E category mappings (above) and 4 Group F pagination
+    redirects: /category/burial-insurance-company-review/page/2/, /page/3/ and
+    /page/4/ → /a-z-companies/;
+    /category/burial-insurance-neurological-impairments/page/3/ →
+    /burial-insurance/neurological-disorders/.
 - **Two more approved 301s** (Randy, October 2026):
   /lincoln-heritage-funeral-advantage-review/ →
   /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
-  /sitemap-index.xml. vercel.json holds 296 redirects (with /planning-guide/,
+  /sitemap-index.xml. vercel.json holds 308 redirects (with the 11 retired
+  /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
   /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
@@ -381,6 +432,26 @@ is in place; see src/content/README.md for how pages were migrated.
   /funeral-expenses-people-overlook/ was consolidated into
   /how-much-does-a-funeral-cost/ (301; draft not restored), and /t2-form-scam/
   into /t2-life-insurance/ (301; draft not restored).
+- **Cremation-cost pages consolidated** (Randy, October 2026):
+  /cremation-cost-and-info/ is the site's cremation-cost article (title "How
+  Much Does Cremation Cost? Complete 2026 Guide" and a new description,
+  Randy's wording; the "97% of families" claim is gone). /how-much-cremation-cost/
+  (weaker duplicate; no content carried over) was removed and 301s to it, as do
+  /how-much-does-cremation-cost/ and /how-much-does-cremation-cost-od/ (one hop).
+- **Medicaid guides consolidated** (Randy, October 2026):
+  /final-expense-life-insurance-medicaid/ is the canonical survivor (the older
+  WordPress URL with 2019/2020 comments, the existing historical redirects
+  and the production contextual link). /burial-insurance/burial-insurance-medicaid/
+  was a June 2026 word-for-word duplicate; it was removed and 301s directly to
+  the survivor, as do /burial-insurance-medicaid/ and /life-insurance-medicaid/
+  (one hop each). The Burial Insurance hub lists the survivor once, as the
+  Medicaid primary. Before launch its HIGH-risk Medicaid guidance was narrowly
+  corrected (face value vs cash surrender value, no universal $2,000 limit,
+  ownership transfers can count as asset transfers, no blanket estate-recovery
+  promises), sourced to eCFR (20 CFR 416.1205, 416.1230; 42 CFR 435.601,
+  433.36); its MEDIUM items (trust-cap ranges, Medicaid.gov attribution, A.M.
+  Best ratings, "less than $600", Colonial Penn wording, client stories) wait
+  for the later content review.
 - /mortgage-protection-life-insurance/ is a rewritten, fact-checked article
   Randy approved (October 2026; `source: "new"`), not the old WordPress post.
   Mortgage protection is a legitimate part of the business: present it as a
@@ -394,12 +465,42 @@ is in place; see src/content/README.md for how pages were migrated.
   special benefit; its purpose is collecting their details for agents selling
   ordinary life insurance. /t2-life-insurance/ must eventually read as an
   article exposing that mailer, not a review of a company or product.
-- **Pre-launch content review list** (don't change these until reviewed with
-  Randy): /t2-life-insurance/ — check the carrier-style star rating, the
-  financial-strength section, the rate-analysis/premium table, any implication
-  that T2 sells/issues insurance or that the premiums are T2 rates, claims
-  about government affiliation (or its appearance), and regulatory/legal
-  claims needing verification or sourcing.
+- **/t2-life-insurance/ rewritten** (Randy, October 2026; `source: "new"`, on
+  ArticleLayout under Burial Insurance): now a sourced explainer of the T2/T-2
+  mailer ("What Is the T2 Life Insurance Form?"), built from Randy's research
+  (Nebraska DOI 2022 presentation showing a real "T-2" card, Iowa Insurance
+  Division 2020 release, DC DISB warning about an "F-1" mailer, DMAchoice FAQ).
+  The old star rating, rate table, carrier-review sections, unsupported
+  figures, FAQPage JSON-LD and AI-generated "sample" image were removed. No
+  source explains what "T-2" stands for: don't add one. Linked from
+  /burial-insurance/state-regulated-life-insurance/; not in /a-z-companies/.
+  The unused T2 image files remain in public/wp-content/uploads/2026/01/.
+- **/children-grandchild-policies/ rewritten** (Randy, October 2026; `source:
+  "new"`, top-level, not Burial Insurance): "Life Insurance for Children and
+  Grandchildren", built from Randy's carrier research (Gerber Grow-Up Plan,
+  Mutual of Omaha/United of Omaha Children's Whole Life) and 34 CFR 685.212.
+  Product features (doubling, guaranteed purchase, ownership age) are stated
+  per product, never as universal. No blanket consent rule: whether a parent
+  or guardian must sign depends on the insurer and state law (the same
+  correction was made on /burial-insurance/on-someone-else/, which links to it).
+- **/funeral-funds-of-america/ rewritten** (Randy, October 2026; `source:
+  "new"`, simple content layout): a short brand-transition notice, "Funeral
+  Funds of America Is Now Final Expense Guy" (2015 start, funeralfunds.com,
+  2025 rebrand, same owner, DBA of Saturn Street, LLC, "licensed in most
+  states", 888-862-9456). No service list, customer counts or licensing
+  history. /about/ links to it; it links back to /about/.
+- **/iul-book/iul-church-members-faith-based-communities/ rewritten** (Randy,
+  October 2026; `source: "new"`, IUL Playbook section): "IUL for Church
+  Members: What to Know About Faith-Based IUL Pitches", built from Randy's
+  source packet (NAIC life insurance illustrations page, IRS Pub. 525, the
+  IRS life insurance proceeds FAQ, Rev. Rul. 2007-38 in IRB 2007-25). It
+  separates the product, the strategy and the religious framing; never
+  implies churches or pastors generally promote IUL. The old "IRS Position"
+  tables, complaint-index, lawsuit, "financial ambassador", SEC/FINRA and
+  "every dollar borrowed is taxable" claims, the FAQ and the Scripture were
+  removed. Linked once from /iul-book/ Chapter 6 (end of "What the Seminar
+  Circuit Doesn't Tell You"); it is not a Chapter 24 entry (church membership
+  is not a profession).
 - **Migration-fidelity review CLOSED** (Randy, October 2026): three pages
   once flagged as showing much less text than their WordPress-export versions
   were each verified against their published WordPress export item, and no
@@ -437,13 +538,26 @@ is in place; see src/content/README.md for how pages were migrated.
   rebuild, rebrand or restore them; their URLs stay real 404s with no
   redirects. /planning-guide/ (the old opt-in page for the planning PDF) is
   retired and 301s to /12-step-final-planning-guide/ (approved); the
-  Resources menu item is "FUNERAL PLANNING GUIDE" linking straight to
+  Resources menu item is "Funeral Planning Guide" linking straight to
   /12-step-final-planning-guide/. /buyers-guide/ stays as the HTML article.
-  The two cover images (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg,
-  2025/01/FEX-BUYERS-GUIDE-IMAGE*.png) are kept only because they are still the
-  og:image/twitter:image and JSON-LD images of /12-step-final-planning-guide/
-  and /buyers-guide/; replacing those social/structured-data images needs
-  Randy's approval.
+  The planning-guide cover image (2020/01/Funeral-Funds-Funeral-And-Estate-Planning-Guide.jpg)
+  is kept only because it is still the og:image/twitter:image and JSON-LD
+  image of /12-step-final-planning-guide/; replacing that social/structured-data
+  image needs Randy's approval.
+- **/buyers-guide/ updated and migrated** (Randy, October 2026): it uses the
+  standard shared ArticleLayout, section Burial Insurance (Home › Burial
+  Insurance › Buyers Guide). Before migration: the Funeral Funds-branded
+  buyers-guide cover (2025/01/FEX-BUYERS-GUIDE-IMAGE*.png) was removed as its
+  og:image/twitter:image and JSON-LD image and not replaced (the page has no
+  social image; the files stay in public/, unreferenced); the Funeral
+  Funds-branded 2019 inflation chart and its introducing sentence were
+  removed; the minimal current-business wording corrections were made (Randy,
+  not "our Advisors"/"our agents"; no 24-hour results promise); and the three
+  remaining body images got descriptive alt text. Its migrated dates
+  (2021-06-02, 2025-03-19) are kept. Broader cleanup (title, all-caps
+  headings, tone, carrier verdicts, old screenshots, the "quoting tool" and
+  "few minutes" lines, Adviser/Advisor labels) waits for the later content
+  audit.
 - **Funeral Funds branding** (Randy, October 2026): Final Expense Guy was
   previously Funeral Funds of America. Keep the intentional history (the author
   bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
@@ -453,8 +567,7 @@ is in place; see src/content/README.md for how pages were migrated.
   Funeral Funds social links were removed and the legal pages rewritten
   (October 2026; see "Business identity, legal pages and privacy"). Still
   pending separate decisions: the Funeral Funds-branded social
-  images of /buyers-guide/ and /12-step-final-planning-guide/; the inflation
-  chart on /buyers-guide/; the missing /senior-benefits/ brochure; unused
+  image of /12-step-final-planning-guide/; the missing /senior-benefits/ brochure; unused
   Funeral Funds files in public/; and the 67 missing image files.
 - **Missing images** (October 2026): WordPress lost 68 referenced image files
   (404 on the live site too; not in the media library). Batch 1 fixed the
@@ -484,7 +597,7 @@ is in place; see src/content/README.md for how pages were migrated.
 ## Business identity, legal pages and privacy (Randy, October 2026)
 
 - Legal business: **Saturn Street, LLC, DBA Final Expense Guy** — used on the
-  legal pages only. The public brand stays Final Expense Guy / FEXGuy.com.
+  legal pages and (Randy, October 2026) on /funeral-funds-of-america/ only. The public brand stays Final Expense Guy / FEXGuy.com.
 - Published contact details: website https://fexguy.com, phone 888-862-9456,
   mailing address **2300 Olympia Drive #270179, Flower Mound, TX 75027** (no
   "Dallas, TX Area" on the address; the old "PO Box 270179" form is retired).
@@ -496,9 +609,12 @@ is in place; see src/content/README.md for how pages were migrated.
   in all 50 states" (or similar) about Randy/Final Expense Guy; don't publish a
   list of states unless Randy asks (the old 50-state lists on /about/ and
   /licenses/, and the /about/ JSON-LD `providesServiceIn` list, were
-  removed). /licenses/ shows only the NPN (17792459) and Randy's Texas
-  resident Life & Health license number (2050599). Current licensing/availability claims must reflect the present;
-  truthful historical statements ("I've helped families in all 50 states",
+  removed). /licenses/ shows the NPN (17792459), Randy's Texas resident
+  Life & Health license number (2050599) and (Randy, October 2026) all 50
+  states' license numbers as he supplied them, introduced as "current and
+  past", never as all currently active. Current licensing/availability
+  claims must reflect the present; truthful historical statements ("I've
+  helped families in all 50 states",
   "Randy's nationwide licenses carried over" on /funeral-funds-of-america/)
   may stay. Insurance companies' own licensing in reviews is unaffected.
 - **No social-media links** on the site for now (footer `social: []`); the old
@@ -539,6 +655,43 @@ is in place; see src/content/README.md for how pages were migrated.
   page view whose URL or referrer still carries q/s. Keep the term out of
   the URL, page title and anything sent to a third party.
 
+## Carrier editorial policy (Randy, October 2026)
+
+- **Preferred carriers** (FEXGuy's go-to companies): Aetna, Aflac, CICA,
+  Gerber Life, Guarantee Trust Life, Trinity Life, Family Benefit Life. Give
+  them favorable editorial consideration where their actual products,
+  underwriting, pricing and coverage support it: highlight genuine strengths,
+  keep accurate favorable underwriting information, name them where useful,
+  and give them appropriate consideration in comparisons. A preferred carrier
+  is not automatically the best choice for every applicant.
+- Never manufacture superiority or hide material limits: disclose waiting
+  periods, exclusions, underwriting restrictions and benefit limits; never
+  imply guaranteed approval unless the product is guaranteed acceptance. No
+  gratuitous criticism or blanket labels such as "(Avoid)" for preferred
+  carriers.
+- **CICA confidentiality exception:** CICA's unusually favorable underwriting
+  (first-day coverage for conditions commonly declined elsewhere, e.g.
+  dialysis) is confidential. In health-condition content never identify CICA
+  as that company: not in bodies, stories, FAQs, tables, headings, Quick
+  Answers, titles, descriptions, og/twitter or JSON-LD. Say "one insurance
+  company may offer first-day coverage, depending on eligibility." CICA may
+  be named in its own company review, ordinary carrier listings (licenses,
+  forms, company hub), general product descriptions and other factual
+  references that don't reveal the exception.
+- The other six preferred carriers may be named for legitimate favorable
+  underwriting or product advantages; don't anonymize them just because
+  their underwriting is favorable, and don't restore outdated or unsupported
+  claims about them.
+- **Competitors:** compare actual features, prices, underwriting, ratings and
+  limits; no unsupported disparagement or vague negative labels when a
+  precise fact is possible; never skew comparisons; recommend what fits the
+  consumer's actual circumstances.
+- **Tone:** professional, confident, consumer-friendly; no promotional
+  exaggeration. Don't call a company financially strong, highly rated,
+  unusually affordable or exceptionally lenient unless the claim is
+  supported. Keep financial-strength ratings (A.M. Best) separate from BBB
+  grades and other measures.
+
 ## Lead system
 
 - One form everywhere: Fillout form `pJBgSNEtN9us` (settings in
@@ -554,8 +707,10 @@ is in place; see src/content/README.md for how pages were migrated.
   `tel:8888629456` (no Meta event for phone taps). Never send personal
   information. Meta Automatic Advanced Matching and automatic event setup
   stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
-- Phone placements: header nav, CTA bar under the header, pre-footer CTA,
-  mobile call button (`src/components/lead/`). No pop-ups.
+- Phone placements: header nav, pre-footer CTA, mobile call button
+  (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
+  bar under the header was removed site-wide (Randy, October 2026; the header
+  already has GET A QUOTE and the phone number): don't bring it back.
 
 ## Site search (Pagefind, built October 2026)
 
@@ -596,12 +751,81 @@ is in place; see src/content/README.md for how pages were migrated.
 - Images: `public/wp-content/uploads/` (original WordPress paths).
 - Redirects: `vercel.json` → `redirects`.
 - Structured data: migrated pages carry verbatim JSON-LD in frontmatter
-  (`jsonLd`). For new pages, builders live in `src/lib/seo/schema.ts`.
+  (`jsonLd`), printed as-is. Pages on the article template (ArticleLayout)
+  instead emit one shared graph from `src/lib/seo/schema.ts` (canonical
+  Organization, WebSite and Randy Person; WebPage, Article, BreadcrumbList from
+  the visible H1 and breadcrumbs); their frontmatter `jsonLd` is not printed
+  and only supplies the migrated dates (never build time). No FAQPage, sameAs,
+  credentials or other schema is generated.
 - Colors/spacing: CSS custom properties at the top of `src/styles/global.css`.
+- Quick Answers (ArticleLayout): the `quickAnswer` field in
+  `src/config/article-pages.ts`, rendered by ArticleSummary above the Bottom
+  Line (not in schema or the search index). Randy's wording, or a summary of
+  that article's own text that Randy approved (October 2026: COPD, a 10-page
+  pilot, then the 152 audited GREEN pages). The article is the source of
+  truth: no outside facts, no added or removed qualifiers, same certainty
+  (can/may/most/often/usually/will), every sentence supported by the page.
+  Don't add one to a page whose article contradicts itself on its main
+  question (the audit's FLAG list) until Randy resolves the conflict; no
+  Quick Answer on /a-z-health/, /a-z-companies/, and (held by Randy)
+  /buyers-guide/, /mutual-of-omaha-burial-insurance/.
+  /mortgage-protection-life-insurance/ got Randy's Quick Answer (October
+  2026); its "The short version" list is its Bottom Line panel.
+  Randy resolved the FLAG list's underwriting conflicts (October 2026); the
+  articles were corrected to his decisions and got Quick Answers. Still held,
+  with their reasons in src/config/article-holds.ts: /baltimore-life-burial-
+  insurance-review/ (facts unverified; retirement proposed),
+  /elks-lodge-life-insurance-options/, /security-national-burial-insurance-review/
+  and /senior-legacy-vs-senior-legacy-life/ (verification), plus
+  /buyers-guide/ and /mutual-of-omaha-burial-insurance/; /buyers-guide/ is
+  also the 1 article with no key-points list. Carrier naming follows
+  "Carrier editorial policy" above (CICA's underwriting exceptions are never
+  named publicly).
+  The article route fails the build when an article page has no Quick Answer
+  or key-points list and no hold, or has one and still a hold.
+- Article top-of-page cleanup (src/lib/article/enhance.ts, October 2026):
+  - Legacy opening paragraphs (before the first H2) that only repeat the
+    Quick Answer and the article are left out of the page when listed, by
+    their opening words, in `src/config/article-intros.ts`; the Markdown
+    keeps them. The guard in `src/pages/[...article].astro` fails the build
+    if a listed page has no Quick Answer or a listed paragraph is no longer
+    found, so a listing never silently does nothing. V16 (Randy, October
+    2026): the old WordPress answer paragraph ("X burial insurance is a whole
+    life policy...", "Getting burial insurance with X depends on...") counts
+    as a second Quick Answer and is listed on every page whose Quick Answer
+    and key points already carry its answer; it is kept visible where it
+    holds a fact the Quick Answer lacks or is not an answer block. Aflac and
+    Trinity reviews moved onto the article template in V16 (Aflac's opening
+    paragraph, corrected in V17, is its Quick Answer); the two Colonial
+    Penn pages are still outside it (their wording is on the post-migration
+    review list).
+  - The header illustration (the first figure before the second H2 that
+    shows an /images/articles/ image or a 2026 "…-Image" or
+    Term-Life-Insurance.png upload) is moved
+    out of the text and rendered by ArticleLayout between the summary/key
+    points (and the mobile GET MY QUOTE button) and "In This Article".
+    Ordinary in-article images stay in their sections; a page without a
+    header illustration renders with no image slot.
+  - Top-of-article "Complete my quote request form on this page…" /
+    "Get a quote on this page…" lines are left out: the template's quote
+    button, sidebar form and call bar replace them. Body quote-form/"call
+    us" boilerplate and the "How can Final Expense Guy help me?" sales
+    sections were removed from the Markdown where they held no article
+    information.
+  - Future migrations: don't add a pre-H2 summary that duplicates the Quick
+    Answer, legacy quote-form callouts, or new sales/CTA sections.
 
 ## Conventions
 
 - Exactly one `<h1>` per page, inside the page body.
+- Article H2-H4 headings (and so the "In This Article" labels) use sentence
+  case (Randy, October 2026): first word capitalized, proper nouns, company and
+  product names, acronyms and people's names kept; quoted terms kept as
+  written. Fix the source text, never CSS text-transform. H1s are not
+  changed by this rule.
+- Navigation labels (primary nav and the Resources dropdown) are short Title
+  Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
+  "IUL Playbook"; destination pages keep their full titles and H1s.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).
@@ -684,6 +908,20 @@ is in place; see src/content/README.md for how pages were migrated.
     Area" form is retired for the published address) and "I work with
     strategic A+ rated insurance companies" (a rating claim).
 
+## Post-redesign cleanup notes
+
+Found during the October 2026 homepage redesign; don't fix until Randy
+schedules the cleanup.
+
+- /aflac-burial-insurance-review/: the H1 is correct (Aflac), but the title,
+  meta description and og:/twitter: title and description still carry the
+  Aetna review's text ("Aetna Burial Insurance Review - [Pros, Cons, Pricing
+  Secrets]"), and the meta description makes an unacceptable claim:
+  "…guarantees you the best cremation, final expense, or life insurance
+  pricing - 99% discount rate!"
+- /a-z-companies/ omits CICA Life and Aflac, although both review pages are
+  kept (/cica-life-burial-insurance-review/, /aflac-burial-insurance-review/).
+
 ## Before committing
 
 Run `npm run check` and `npm run build`. Both must pass with 0 errors. Then
@@ -698,4 +936,8 @@ point to a missing page, and content guards fail on 888-656-4648, retired
 Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
 address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
-/reviews/ and /gtl/ must stay real 404s (not built, not redirected). Add `-- --strict` to fail on any.
+/gtl/ must stay a real 404 (not built, not redirected). Article pages must
+show at most one Quick Answer and one key-points box, in that order, above
+"In This Article", with neither label repeated as body text (pages outside
+the template that show the label are listed as a note). Add `-- --strict` to
+fail on any.

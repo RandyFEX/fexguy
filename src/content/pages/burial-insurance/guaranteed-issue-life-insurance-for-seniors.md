@@ -21,7 +21,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW GUARANTEED ISSUE POLICIES WORK AND WHY THEY ARE MARKETED SO HEAVILY</strong></h2>
+<h2><strong>How guaranteed issue policies work and why they are marketed so heavily</strong></h2>
 
 <p>A guaranteed issue policy provides level premiums (rates never change) for as long as you keep your policy in force.</p>
 
@@ -41,7 +41,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE TWO-YEAR WAITING PERIOD AND WHAT YOUR BENEFICIARY ACTUALLY RECEIVES</strong></h2>
+<h2><strong>The two-year waiting period and what your beneficiary actually receives</strong></h2>
 
 <p>Most guaranteed issue life insurance policies use a graded death benefit period of two years for natural and medical causes of death.</p>
 
@@ -61,7 +61,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHY REFUND OF PREMIUMS PLUS INTEREST IS NOT A REAL PAYOUT</strong></h2>
+<h2><strong>Why refund of premiums plus interest is not a real payout</strong></h2>
 
 <p>A refund-of-premiums payout looks simple on paper, but it won’t cover the financial burden that comes after an early, unexpected death.</p>
 
@@ -85,7 +85,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>AGE LIMITS AND BENEFIT AMOUNTS FOR GUARANTEED ISSUE IN 2025</strong></h2>
+<h2><strong>Age limits and benefit amounts for guaranteed issue in 2025</strong></h2>
 
 <p>Guaranteed issue life insurance is generally offered to seniors aged 50 to 85, covering the broadest range of high-risk buyers.</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT GUARANTEED ISSUE REALLY COSTS AT AGES 50 THROUGH 85</strong></h2>
+<h2><strong>What guaranteed issue really costs at ages 50 through 85</strong></h2>
 
 <p>The much higher price of guaranteed issue life insurance reflects the unknown medical risk the insurer absorbs.</p>
 
@@ -137,7 +137,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW FUNERAL COSTS AND LOW BENEFIT LIMITS CAN LEAVE FAMILIES UNDERFUNDED</strong></h2>
+<h2><strong>How funeral costs and low benefit limits can leave families underfunded</strong></h2>
 
 <p>The median cost of a funeral with a viewing and burial in 2023 was $8,300 (National Funeral Directors Association) and $6,280 for a cremation.</p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW FUNERAL COSTS AND LOW BENEFIT LIMITS CAN LEAVE FAMILIES UNDERFUNDED</strong></h2>
+<h2><strong>How funeral costs and low benefit limits can leave families underfunded</strong></h2>
 
 <p>Funeral expenses rise faster than most seniors realize, and guaranteed-issue small-benefit limits often do not match those real costs.</p>
 
@@ -189,7 +189,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW TO COMPARE GUARANTEED ISSUE QUOTES WITHOUT OVERPAYING</strong></h2>
+<h2><strong>How to compare guaranteed issue quotes without overpaying</strong></h2>
 
 <p>Comparing guaranteed issue quotes requires more than looking at the monthly premium.</p>
 
@@ -215,7 +215,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT TO LOOK FOR INSIDE A GUARANTEED ISSUE CONTRACT BEFORE YOU APPLY</strong></h2>
+<h2><strong>What to look for inside a guaranteed issue contract before you apply</strong></h2>
 
 <p>Reading the contract before applying is the only way to know exactly what you are buying.</p>
 
@@ -245,7 +245,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>REAL EXAMPLES OF SENIORS WHO CHOSE THE WRONG POLICY AND PAID MORE</strong></h2>
+<h2><strong>Real examples of seniors who chose the wrong policy and paid more</strong></h2>
 
 <p>Real outcomes show exactly why guaranteed issue must be handled carefully.</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER FINAL EXPENSE OPTIONS FOR SENIORS SEEKING FIRST DAY COVERAGE</strong></h2>
+<h2><strong>Better final expense options for seniors seeking first day coverage</strong></h2>
 
 <p>Most seniors qualify for first-day coverage when their health is reviewed properly.</p>
 
@@ -289,7 +289,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW COMPANIES PRICE GUARANTEED ISSUE USING RISK AND HEALTH HISTORY</strong></h2>
+<h2><strong>How companies price guaranteed issue using risk and health history</strong></h2>
 
 <p>Guaranteed issue pricing is built on one assumption: every applicant is high risk.</p>
 
@@ -315,7 +315,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW STATE INSURANCE REGULATORS OVERSEE GUARANTEED ISSUE POLICIES</strong></h2>
+<h2><strong>How state insurance regulators oversee guaranteed issue policies</strong></h2>
 
 <p>State insurance departments regulate guaranteed issue life insurance just as they do other forms of whole-life coverage.</p>
 
@@ -337,7 +337,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FINANCIAL STRENGTH RATINGS AND COMPLAINT DATA FOR GUARANTEED ISSUE CARRIERS</strong></h2>
+<h2><strong>Financial strength ratings and complaint data for guaranteed issue carriers</strong></h2>
 
 <p>Financial strength ratings from A.M. Best provide an independent assessment of a carrier’s ability to meet its insurance obligations.</p>
 
@@ -359,7 +359,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON MISUNDERSTANDINGS ABOUT GUARANTEED ACCEPTANCE LIFE INSURANCE</strong></h2>
+<h2><strong>Common misunderstandings about guaranteed acceptance life insurance</strong></h2>
 
 <p>Many seniors misunderstand what guaranteed acceptance really means. They see “no health questions” and assume it is the safest path, even when their health history would qualify them for stronger first-day coverage. This misunderstanding often leads to higher premiums, lower benefits, and unnecessary waiting periods.</p>
 
@@ -379,7 +379,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT HAPPENS IF YOU DIE DURING THE WAITING PERIOD</strong></h2>
+<h2><strong>What happens if you die during the waiting period</strong></h2>
 
 <p>If you die from illness, organ failure, age-related decline, or any natural medical condition during the first two years, your beneficiary will not receive the full death benefit. This rule exists because the insurer did not evaluate your health or prescription records at the time of application.</p>
 
@@ -395,7 +395,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHICH HEALTH CONDITIONS STILL QUALIFY FOR FIRST DAY COVERAGE</strong></h2>
+<h2><strong>Which health conditions still qualify for first day coverage</strong></h2>
 
 <p>Most seniors qualify for first-day coverage through the Final Expense Guy even when they assume they do not.</p>
 
@@ -413,7 +413,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: GUARANTEED ISSUE LIFE INSURANCE FOR SENIORS</strong></h2>
+<h2><strong>Frequently asked questions: guaranteed issue life insurance for seniors</strong></h2>
 
 <p><strong>What is guaranteed issue life insurance for seniors?</strong></p>
 

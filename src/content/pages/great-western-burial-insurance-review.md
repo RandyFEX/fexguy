@@ -1,10 +1,10 @@
 ---
 title: "Great Western Burial Insurance Review - [Pros & Cons]"
-description: "Great Western Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"
+description: "Great Western stopped selling new final expense policies in 2024. See how its burial insurance worked, its pros and cons, and current alternatives."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/great-western-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Great Western Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"Great Western Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"property":"og:url","content":"https://fexguy.com/great-western-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-23T14:09:19-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Great Western Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"Great Western Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/\",\"name\":\"Great Western Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/great-western-burial-insurance-review/\",\"name\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-06-23T14:06:46-05:00\",\"dateModified\":\"2026-06-23T14:09:19-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"description\":\"Great Western Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing - 99% discount rate!\",\"keywords\":\"Great Western Burial Insurance,Great Western burial insurance review,Great Western insurance company review,Great Western final expense insurance,Great Western preneed funeral insurance,burial insurance for seniors,final expense life insurance reviews,Great Western whole life insurance,guaranteed issue burial insurance,Great Western insurance Wellabe,is Great Western insurance good,Great Western burial policy features,Great Western insurance AM Best rating,burial insurance with no medical exam,funeral insurance for seniors,affordable final expense plans,Great Western life insurance pros and cons,how to buy Great Western insurance,burial insurance waiting periods,Great Western guaranteed assurance plan,Great Western first day coverage,burial insurance quotes for seniors,life insurance for end of life costs,burial insurance for people with health issues,Great Western vs other burial insurance companies,is Great Western burial insurance worth it,final expense planning for families,Great Western policy riders,burial insurance beneficiary payouts,Great Western insurance application process,whole life insurance for funeral costs,burial insurance comparison,life insurance for seniors over 50,life insurance for seniors over 60,life insurance for seniors over 70,life insurance for seniors over 80,Great Western insurance complaints,final expense life insurance coverage,burial insurance for parents,Great Western funeral funding options,simplified issue burial insurance\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Do you need a medical exam to qualify for Great Western life insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You don\\u2019t need a medical exam to qualify for Great Western life insurance.\"}},{\"@type\":\"Question\",\"name\":\"Does Great Western life insurance accumulate cash value?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western burial insurance plans accumulate cash value over time.\"}},{\"@type\":\"Question\",\"name\":\"Does Great Western life insurance expire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western burial insurance plans never expire. They will remain active throughout your life if you continue paying your premiums on time.\"}},{\"@type\":\"Question\",\"name\":\"How can I find a replacement for my Great Western policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can find a replacement for your Great Western policy by working with an independent life insurance agent who can price shop for you and recommend the best insurance policy with the lowest pricing.\"}},{\"@type\":\"Question\",\"name\":\"How do I cancel my Great Western life insurance policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can cancel your Great Western life insurance by providing a signed written request via email, mail, or fax. You can also call customer care at (800) 733-5454 to immediately cancel your automatic draft request.\"}},{\"@type\":\"Question\",\"name\":\"Who owns Great Western life insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The American Enterprise Group acquired Great Western Life insurance in 2018.\"}},{\"@type\":\"Question\",\"name\":\"How long has Great Western been in business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western has been in the insurance business for more than 38 years.\"}},{\"@type\":\"Question\",\"name\":\"How can I get a Great Western life insurance quote?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Get a free quote from Great Western by filling in the quote form on this page.\"}},{\"@type\":\"Question\",\"name\":\"How old do you have to be to apply for Great Western insurance coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You must be 40-80 years old to apply for Great Western life insurance coverage.\"}},{\"@type\":\"Question\",\"name\":\"What are the common terms used when searching for Great Western Insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Common terms used when searching for Great Western insurance products include: Great Western Burial Insurance, Great Western Cremation Insurance, Great Western Final Expense Insurance, Great Western Funeral Insurance, Great Western Term Life Insurance, Great Western Universal Life Insurance, and Great Western Whole Life Insurance.\"}}]}],\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#schema-756574\",\"isPartOf\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Great Western Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"Great Western stopped selling new final expense policies in 2024. See how its burial insurance worked, its pros and cons, and current alternatives."},{"property":"og:url","content":"https://fexguy.com/great-western-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-06-23T14:09:19-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Great Western Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"Great Western stopped selling new final expense policies in 2024. See how its burial insurance worked, its pros and cons, and current alternatives."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/\",\"name\":\"Great Western Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/great-western-burial-insurance-review/\",\"name\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-06-23T14:06:46-05:00\",\"dateModified\":\"2026-06-23T14:09:19-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"description\":\"A review of Great Western burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"keywords\":\"Great Western Burial Insurance,Great Western burial insurance review,Great Western insurance company review,Great Western final expense insurance,Great Western preneed funeral insurance,burial insurance for seniors,final expense life insurance reviews,Great Western whole life insurance,guaranteed issue burial insurance,Great Western insurance Wellabe,is Great Western insurance good,Great Western burial policy features,Great Western insurance AM Best rating,burial insurance with no medical exam,funeral insurance for seniors,affordable final expense plans,Great Western life insurance pros and cons,how to buy Great Western insurance,burial insurance waiting periods,Great Western guaranteed assurance plan,Great Western first day coverage,burial insurance quotes for seniors,life insurance for end of life costs,burial insurance for people with health issues,Great Western vs other burial insurance companies,is Great Western burial insurance worth it,final expense planning for families,Great Western policy riders,burial insurance beneficiary payouts,Great Western insurance application process,whole life insurance for funeral costs,burial insurance comparison,life insurance for seniors over 50,life insurance for seniors over 60,life insurance for seniors over 70,life insurance for seniors over 80,Great Western insurance complaints,final expense life insurance coverage,burial insurance for parents,Great Western funeral funding options,simplified issue burial insurance\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Great Western Burial Insurance Review - [Pros &amp; Cons]\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Do you need a medical exam to qualify for Great Western life insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You don\\u2019t need a medical exam to qualify for Great Western life insurance.\"}},{\"@type\":\"Question\",\"name\":\"Does Great Western life insurance accumulate cash value?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western burial insurance plans accumulate cash value over time.\"}},{\"@type\":\"Question\",\"name\":\"Does Great Western life insurance expire?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western burial insurance plans never expire. They will remain active throughout your life if you continue paying your premiums on time.\"}},{\"@type\":\"Question\",\"name\":\"How can I find a replacement for my Great Western policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can find a replacement for your Great Western policy by working with an independent life insurance agent who can price shop for you and recommend the best insurance policy with the lowest pricing.\"}},{\"@type\":\"Question\",\"name\":\"How do I cancel my Great Western life insurance policy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You can cancel your Great Western life insurance by providing a signed written request via email, mail, or fax. You can also call customer care at (800) 733-5454 to immediately cancel your automatic draft request.\"}},{\"@type\":\"Question\",\"name\":\"Who owns Great Western life insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"The American Enterprise Group acquired Great Western Life insurance in 2018.\"}},{\"@type\":\"Question\",\"name\":\"How long has Great Western been in business?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Great Western has been in the insurance business for more than 38 years.\"}},{\"@type\":\"Question\",\"name\":\"How can I get a Great Western life insurance quote?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Get a free quote from Great Western by filling in the quote form on this page.\"}},{\"@type\":\"Question\",\"name\":\"How old do you have to be to apply for Great Western insurance coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"You must be 40-80 years old to apply for Great Western life insurance coverage.\"}},{\"@type\":\"Question\",\"name\":\"What are the common terms used when searching for Great Western Insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Common terms used when searching for Great Western insurance products include: Great Western Burial Insurance, Great Western Cremation Insurance, Great Western Final Expense Insurance, Great Western Funeral Insurance, Great Western Term Life Insurance, Great Western Universal Life Insurance, and Great Western Whole Life Insurance.\"}}]}],\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#schema-756574\",\"isPartOf\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/great-western-burial-insurance-review/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Great Western no longer sells new burial insurance policies today<br>• Older policies were often more expensive than better competitors<br>• Many applicants got pushed into a 2-year waiting period coverage<br>• Limited underwriting meant fewer chances for first-day approval<br>• Preneed plans lock your money into a funeral home, not your family</p>
+<p>• Great Western no longer sells new burial insurance policies today<br>• Existing policies stay in force, and claims are still paid<br>• Older policies were often more expensive than better competitors<br>• Many applicants got pushed into a 2-year waiting period coverage<br>• Limited underwriting meant fewer chances for first-day approval<br>• Preneed plans lock your money into a funeral home, not your family</p>
 
 <p>Great Western burial insurance used to offer whole life and final expense coverage, but it’s stopped issuing new policies as of 2024. That alone makes them irrelevant for most shoppers today. When they were active, their policies often weren’t the cheapest, especially for healthy applicants, and many people ended up in graded plans with a 2-year waiting period instead of full, immediate coverage. They now focus mainly on preneed funeral insurance, which ties your money to a funeral provider instead of giving your family flexible cash. The real takeaway is simple. There are better burial insurance options available right now.</p>
 
@@ -47,11 +47,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Great Western Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Great Western life insurance</strong></h2>
 
-<h3><strong>What life insurance products does Great Western offer?</strong></h3>
+<h3><strong>What life insurance products did Great Western offer?</strong></h3>
 
-<p>Great Western offers three burial insurance products.</p>
+<p>Great Western offered three burial insurance products.</p>
 
 <p><strong>#1</strong> – Great&#160;Assurance Plan&#160;– Level benefit plan with first-day coverage.<br><strong>#2 </strong>– Graded Benefit Plan&#160;– Death benefit is phased in for the first two years.<br><strong>#3 </strong>– Guaranteed Assurance&#160;Plan –&#160;This is a 2-year waiting period plan.</p>
 
@@ -172,7 +172,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3><strong>How is Great Western life insurance good for Seniors?</strong></h3>
+<h3><strong>How was Great Western life insurance good for seniors?</strong></h3>
 
 <p>All Great Western burial insurance plans are whole life insurance policies.</p>
 
@@ -180,13 +180,15 @@ sidebar: true
 
 <p>Unlike pre-need funeral insurance, burial insurance provides the funds directly to your beneficiary to cover your funeral cost and other end-of-life expenses. The beneficiary can keep any money left over after paying the final expenses.</p>
 
-<p>Most burial insurance companies cap their death benefit amount at $25,000. However, Great Western offers up to $40,000 in death benefits for Great Assurance and Guaranteed Assurance plans.</p>
+<p>Most burial insurance companies cap their death benefit amount at $25,000. However, Great Western offered up to $40,000 in death benefits for Great Assurance and Guaranteed Assurance plans.</p>
 
-<p>If you want more coverage to leave to your family, buying Great Western burial insurance is an option.</p>
+<p>If you wanted more coverage to leave to your family, buying Great Western burial insurance was an option.</p>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Great Western Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What were the pros &amp; cons of Great Western insurance?</strong></h2>
 
-<h3>#1 – <strong>Great Assurance</strong></h3>
+<p>These pros and cons describe the plans as they were sold before Great Western stopped offering new final expense policies.</p>
+
+<h3>#1 – <strong>great assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -204,7 +206,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies offering first-day coverage plan</li>
 </ul>
 
-<h3>#2 – <strong>Graded Benefit</strong></h3>
+<h3>#2 – <strong>graded benefit</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -221,7 +223,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies</li>
 </ul>
 
-<h3>#3 – <strong>Guaranteed Assurance</strong></h3>
+<h3>#3 – <strong>guaranteed assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -239,11 +241,11 @@ sidebar: true
 <li>The maximum age to qualify is 80. If you are over age 80, you are out of luck.</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Great Western Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Great Western life insurance?</strong></h2>
 
-<h3><strong>Great Western Riders<sup>1</sup></strong></h3>
+<h3><strong>Great Western riders<sup>1</sup></strong></h3>
 
-<p>Life insurance riders can be added to the policy to enhance or customize their benefits. Great Western offers three riders:</p>
+<p>Life insurance riders can be added to the policy to enhance or customize their benefits. Great Western offered three riders:</p>
 
 <ul>
 <li><strong>Accelerated Death Benefit Rider:</strong> “Included at no additional cost. The benefit is paid as a lump-sum payment based on the present value of the death benefit.</li>
@@ -253,15 +255,15 @@ sidebar: true
 <li><strong>Child or Grandchild Protection Rider</strong>: “Optional coverage that the applicant can purchase at the time of application or during a qualifying event for only $1 per month on policies with a face amount of $5,000 or more. This rider will pay $2,500 on the death of a dependent child or grandchild.”</li>
 </ul>
 
-<h3><strong>Great Western Other Benefits</strong></h3>
+<h3><strong>Great Western other benefits</strong></h3>
 
 <p><strong>Policy Loans:</strong> “Available when policy has cash surrender value at 8% in arrears.”</p>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Great Western?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Great Western?</strong></h2>
 
-<p>The great Western application process is fairly simple…unless you don’t qualify.</p>
+<p>The Great Western application process was fairly simple…unless you didn’t qualify.</p>
 
-<h3><strong>What Are Great Western’s Application Questions?</strong></h3>
+<h3><strong>What were Great Western’s application questions?</strong></h3>
 
 <p><strong>HEALTH QUESTIONS FOR THE GREAT ASSURANCE PLAN (1st-day coverage)</strong> </p>
 
@@ -293,21 +295,23 @@ sidebar: true
 
 <p>Human Immunodeficiency Virus (HIV), Acquired Immune Deficiency Syndrome (AIDS), or Acquired Immune Deficiency Syndrome-Related Complex (ARC), (Yes – No)</p>
 
-<p>If all health questions are answered “NO,” you will be eligible for Great Assurance with a level death benefit. </p>
+<p>If all health questions were answered “NO,” you were eligible for Great Assurance with a level death benefit. </p>
 
-<p>If any health questions are answered “YES” or are not answered, Great Western will offer you a Graded Benefit plan or Guaranteed Assurance plan with a two-year graded death benefit period.</p>
+<p>If any health questions were answered “YES” or were not answered, Great Western offered a Graded Benefit plan or Guaranteed Assurance plan with a two-year graded death benefit period.</p>
 
-<h3><strong>When Should I Consider Great Western Life Insurance?</strong></h3>
+<h3><strong>What are the current alternatives to Great Western?</strong></h3>
 
-<p>You can also consider Great Western to get a higher death benefit. Great Western offers up to $40,000 in death benefits for their Great Assurance and Graded Benefit plan.</p>
+<p>If you are in reasonable health, start with companies that ask health questions and offer first-day coverage, so the full death benefit is available from the first day. Our <a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">company reviews</a> compare many of them.</p>
 
-<h3><strong>Does Great Western Have A Same Day Approval Process?</strong></h3>
+<p>If your health rules out first-day coverage, a guaranteed issue plan may be the right fit. One option is Gerber Life’s Guaranteed Life Insurance, which accepts applicants ages 50 to 80 (50 to 75 in New York) with no health questions, for $5,000 to $25,000 of coverage. If death from natural causes happens in the first two years, it pays 110% of the premiums earned instead of the full benefit; an accidental death, as defined in the policy, is covered in full. Rates depend on your age, sex and state, so compare quotes before you buy. Read our <a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life review</a> for details.</p>
 
-<p>Great Western has a same-day approval process using an online electronic application tool with an agent over the phone.</p>
+<h3><strong>Did Great Western have a same day approval process?</strong></h3>
 
-<h2 id="pricing-examples"><strong>How Can I Get Great Western Life Insurance Pricing?</strong></h2>
+<p>Great Western had a same-day approval process using an online electronic application tool with an agent over the phone.</p>
 
-<p>Great Western life insurance rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
+<h2 id="pricing-examples"><strong>What did Great Western life insurance cost?</strong></h2>
+
+<p>Great Western life insurance rates were based on your age, gender, health, coverage amount, and the state you lived in at the time of application. The sample rates below are from when the plans were sold; they are not current quotes.</p>
 
 <table class="table-wrap" id="tablepress-40">
 <thead>
@@ -459,47 +463,47 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Great Western Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Great Western company questions</strong></h2>
 
-<h3><strong>What Is Great Western’s Operational History</strong></h3>
+<h3><strong>What is Great Western’s operational history</strong></h3>
 
-<p>Great Western Insurance Company (<a href="https://www.gwic.com/" target="_blank" rel="noreferrer noopener">GWIC</a>) was established in 1983 in Ogden, Utah. It was founded by John E. Lindquist, the owner of Lindquist Mortuaries and Cemeteries, a family business spanning five generations.</p>
+<p>Great Western Insurance Company (GWIC) was established in 1983 in Ogden, Utah. It was founded by John E. Lindquist, the owner of Lindquist Mortuaries and Cemeteries, a family business spanning five generations.</p>
 
 <p>From the start, Great Western writes life insurance and annuities specifically intended to fund pre-arranged funeral funds. Great Western Insurance is licensed in 46 states and the District of Columbia.</p>
 
-<p>After operating independently for over three decades, Great Western was acquired by the American Enterprise Group in 2018. </p>
+<p>After operating independently for over three decades, Great Western was acquired by the American Enterprise Group in 2018. In 2023, American Enterprise Group began operating under the Wellabe name, and Wellabe stopped offering new final expense policies effective August 31, 2024. </p>
 
 <p>While relatively new to the life insurance industry compared to other companies with over 100 years of operation, Great Western has grown into a company with over $2.4 billion in assets.</p>
 
 <p><strong>Company Address</strong><br>1851 Miehe Drive<br>Grimes, IA 50111-6627</p>
 
-<p>Website: <a href="https://gwic.com" target="_blank" rel="noreferrer noopener">https://gwic.com</a><br>Customer Service: (515) 247-2435<br>Email: fecustomerservice@gwic.com </p>
+<p>Final expense policyholders: (800) 733-5454, or visit wellabe.com </p>
 
-<h3><strong>What Is Great Western’s Financial Rating?</strong></h3>
+<h3><strong>What is Great Western’s financial rating?</strong></h3>
 
-<p>Great Western was awarded an “A-” or excellent rating from A.M. Best which is a reliable indicator of their financial well-being. </p>
+<p>Great Western Insurance Company was upgraded to an “A-” (Excellent) rating from A.M. Best in 2018, and its “A” (Excellent) rating was affirmed in April 2022 along with its parent company’s other insurers, which is a reliable indicator of their financial well-being while the plans were sold. </p>
 
 <p>A.M. Best is a non-government independent third-party agency that provides its ranking on the financial strength of insurance companies.</p>
 
-<h3><strong>Does Great Western Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Great Western have any consumer complaints?</strong></h3>
 
 <p>Great Western has six complaints filed with the National Association of Insurance Commissioners (NAIC) in 2021. These complaints concern premiums, billing, surrender problems, delays, policy delivery, and premium refund.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Great Western Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Great Western life insurance?</strong></h2>
 
-<h3><strong>What is Great Western’s Sales Process?</strong></h3>
+<h3><strong>What was Great Western’s sales process?</strong></h3>
 
 <p>Great Western is not a “Captive Carrier.”</p>
 
-<p>Independent insurance agencies like Final Expense Guy can sell Great Western insurance products.</p>
+<p>Independent insurance agencies like Final Expense Guy could sell Great Western final expense products until they were discontinued.</p>
 
-<p>Some agencies only sell Great Western products and never tell you about other companies’ lower rates.</p>
+<p>Some agencies only sold Great Western products and never told you about other companies’ lower rates.</p>
 
 <p>Informed buyers know that almost all&#160;<a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">other life insurance companies</a>&#160;offer better coverage and rates, and most come with no waiting period.</p>
 
-<h3><strong>Are Any Health Conditions Not Accepted By Great Western?</strong></h3>
+<h3><strong>Which health conditions did Great Western not accept?</strong></h3>
 
-<p>These health issues are not accepted for the Great Assurance first-day coverage plan:</p>
+<p>These health issues were not accepted for the Great Assurance first-day coverage plan:</p>
 
 <ul>
 <li>Activities Of Daily Living (ADLs)</li>
@@ -519,11 +523,11 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<p>If you have any of these health issues, you will be offered a Guaranteed Assurance plan with a two-year waiting period.</p>
+<p>If you had any of these health issues, you were offered a Guaranteed Assurance plan with a two-year waiting period.</p>
 
-<h3><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3><strong>How can I get pricing help today?</strong></h3>
 
-<p>Use our quoting software below to see how Great Western pricing compares to other companies.</p>
+<p>Use our quoting software below to compare companies that are still selling burial insurance.</p>
 
 <ul>
 <li>$10,000 to 15,000 is often appropriate for burial needs</li>
@@ -532,7 +536,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Great Western</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Great Western</strong></h2>
 
 <details>
 <summary><b>Do you need a medical exam to qualify for Great Western life insurance?</b></summary>
@@ -561,28 +565,28 @@ You can cancel your Great Western life insurance by providing a signed written r
 
 <details>
 <summary><b>Who owns Great Western life insurance?</b></summary>
-The American Enterprise Group acquired great Western Life insurance in 2018.
+The American Enterprise Group acquired Great Western Life insurance in 2018. Great Western is now a Wellabe company.
 </details>
 
 <details>
 <summary><b>How long has Great Western been in business?</b></summary>
-Great Western has been in the insurance business for more than 38 years.
+Great Western has been in the insurance business since 1983.
 </details>
 
 <details>
 <summary><b>How can I get a Great Western life insurance quote?</b></summary>
-Get a free quote from Great Western by filling in the quote form on this page.
+Great Western no longer issues new final expense policies, so it can’t give you a new quote. You can use the quote form on this page to compare companies that are still selling burial insurance.
 </details>
 
 <details>
-<summary><b>How old do you have to be to apply for Great Western insurance coverage?</b></summary>
-You must be 40-80 years old to apply for Great Western life insurance coverage.
+<summary><b>How old did you have to be to apply for Great Western insurance coverage?</b></summary>
+Great Western no longer accepts new final expense applications. When it did, you had to be 40-80 years old to apply for Guaranteed Assurance coverage and 50 to 85 for its other plans.
 </details>
 
 <details>
 <summary><b>What are the common terms used when searching for Great Western Insurance?</b></summary>
 <ul>
-Here are some common terms people use when searching for, or describing COMPANYXXX life insurance Products:
+Here are some common terms people use when searching for, or describing Great Western life insurance Products:
 <li>Great Western Burial Insurance</li>
 <li>Great Western Cremation Insurance</li>
 <li>Great Western Final Expense Insurance</li>

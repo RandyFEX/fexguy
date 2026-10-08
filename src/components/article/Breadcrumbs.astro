@@ -1,0 +1,71 @@
+---
+// Breadcrumb trail for the article template: the reader's logical hierarchy
+// (e.g. Home › Health Conditions › COPD), not the URL. The last crumb is the
+// current page (no link, aria-current). Visual only for now: BreadcrumbList
+// structured data is left for the later SEO pass.
+import type { Crumb } from '@/lib/article/config';
+
+interface Props {
+  crumbs: Crumb[];
+}
+const { crumbs } = Astro.props;
+---
+
+<nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
+  <ol class="crumbs__list">
+    {
+      crumbs.map((c) => (
+        <li class="crumbs__item">
+          {c.href ? (
+            <a class="crumbs__link" href={c.href}>
+              {c.label}
+            </a>
+          ) : (
+            <span aria-current="page">{c.label}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  .crumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .crumbs__item {
+    display: inline-flex;
+    align-items: center;
+  }
+  .crumbs__item + .crumbs__item::before {
+    content: '›';
+    margin-inline: 0.5em;
+    color: var(--home-gold);
+    font-weight: 700;
+  }
+  /* A full tap target without making the trail look tall. */
+  .crumbs__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border);
+    text-underline-offset: 0.2em;
+  }
+  .crumbs__link:hover {
+    color: var(--color-primary);
+    text-decoration-color: currentColor;
+  }
+  [aria-current='page'] {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+</style>

@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance with Down Syndrome</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Down syndrome makes traditional life insurance approval much harder<br>• Many companies decline applications or limit coverage amounts significantly<br>• Guaranteed issue plans are common but come with 2-year waiting periods<br>• Cognitive ability and independence affect what policies you can qualify for<br>• Most people only qualify for small burial policies around $25,000<br>• Not working with the right company can leave you with no options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Down syndrome makes traditional life insurance approval much harder<br>• Many companies decline applications or limit coverage amounts significantly<br>• Guaranteed issue plans are the option, and they come with 2-year waiting periods<br>• Cognitive ability affects whether the person can understand and sign the application<br>• Most people only qualify for small burial policies around $25,000<br>• Not working with the right company can leave you with no options</p>
 
-<p>Burial insurance for Down syndrome is possible, but it’s limited and depends heavily on the person’s independence, health, and ability to understand the policy. Many traditional term or fully underwritten policies decline applicants because of higher health risks and shorter life expectancy. Burial insurance, which is a type of whole life insurance, is usually the fallback option. These plans are easier to qualify for but offer smaller coverage amounts and often include a 2-year waiting period before full benefits pay out. The biggest mistake is assuming all companies treat this the same, because they don’t.</p>
+<p>Burial insurance for Down syndrome is possible, but it’s limited and depends heavily on the person’s ability to understand the policy. Many traditional term or fully underwritten policies decline applicants because of higher health risks and shorter life expectancy. Guaranteed issue burial insurance, which is a type of whole life insurance, is the fallback option. These plans are easier to qualify for but offer smaller coverage amounts and include a 2-year waiting period before full benefits pay out. The biggest mistake is assuming all companies treat this the same, because they don’t.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -55,7 +55,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-down-syndrome"><br><strong>What Is My Best Insurance Option If I Have A History Of Down Syndrome?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-down-syndrome"><br><strong>What is my best insurance option if I have a history of Down syndrome?</strong></h2>
 
 <p>Limitations on functionality and mobility have an impact on your eligibility for life insurance coverage. Insurance companies will consider the physical or mental impairment you may have.</p>
 
@@ -124,7 +124,7 @@ sidebar: true
 
 <p>Not every burial insurance company has its products licensed in every state. Make sure the company you will apply to has a guaranteed acceptance life insurance policy available in your state.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -143,7 +143,7 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
+<td>No health questions policies</td><td>2-year waiting period (avoid only if you can qualify for first-day coverage, which isn’t the case with Down syndrome)</td>
 </tr>
 <tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
@@ -163,7 +163,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -173,10 +173,6 @@ sidebar: true
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1st Day Coverage</td>
-<td>YES</td>
-</tr>
 <tr>
 <td>Rates NEVER Increase</td>
 <td>YES</td>
@@ -212,7 +208,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Down Syndrome, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have Down syndrome, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with Down syndrome.</p>
 
@@ -220,7 +216,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-down-syndrome"><br><strong>Burial Insurance Underwriting If You Have Down Syndrome</strong></h2>
+<h2 id="insurance-underwriting-for-down-syndrome"><br><strong>Burial insurance underwriting if you have Down syndrome</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -247,7 +243,7 @@ sidebar: true
 <li>Sleep apnea</li>
 </ul>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Down Syndrome?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have Down syndrome?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -307,11 +303,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="down-syndrome-and-burial-insurance-riders"><br><strong>Down Syndrome And Burial Insurance Riders</strong></h2>
+<h2 id="down-syndrome-and-burial-insurance-riders"><br><strong>Down syndrome and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -320,7 +316,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="why-you-need-guaranteed-issue-life-insurance"><br><strong>Why Do You Need Guaranteed Issue Burial Insurance If You Have Down Syndrome?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-life-insurance"><br><strong>Why do you need guaranteed issue burial insurance if you have Down syndrome?</strong></h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you have Down syndrome because it’s the only life insurance plan you will qualify for.</p>
 
@@ -328,7 +324,7 @@ sidebar: true
 
 <p>A guaranteed acceptance policy may be a little more expensive than plans with immediate coverage, but your approval is guaranteed. Buying a guaranteed issue burial insurance if you have Down syndrome is worth it in the long run, you won’t lose money with this plan, and it cost much less than having no insurance coverage at all.</p>
 
-<h2 id="benefits-of-guaranteed-issue-life-insurance"><br><strong>Benefits Of Guaranteed Issue Life Insurance </strong></h2>
+<h2 id="benefits-of-guaranteed-issue-life-insurance"><br><strong>Benefits of guaranteed issue life insurance </strong></h2>
 
 <p><strong>EASY AND QUICK APPLICATION</strong></p>
 
@@ -356,7 +352,7 @@ sidebar: true
 
 <p>If you or your loved one has Down syndrome, a guaranteed issue policy is your excellent choice for life insurance coverage. GI policy doesn’t ask any health questions. If you happen to pass away during the first two years, your beneficiary will get all the premiums you paid plus 10% interest.</p>
 
-<h2 id="life-insurance-for-a-family-member"><br><strong>Life Insurance For Family Member Who Has Down Syndrome</strong></h2>
+<h2 id="life-insurance-for-a-family-member"><br><strong>Life insurance for family member who has Down syndrome</strong></h2>
 
 <p>In most cases, it is often the family members of those with Down syndrome who are looking to get a life insurance policy for their loved one. Often, the family members are just looking for a small lump sum to cover funeral and other final expenses.</p>
 
@@ -376,7 +372,7 @@ sidebar: true
 
 <p>You can’t secretly apply for final expense insurance on your loved ones without them knowing about it, or without them having the cognitive ability to make their own legal decisions. They must be aware of the policy because they must sign the application.</p>
 
-<h2 id="information-we-need-if-you-have-down-syndrome"><br><strong><strong>Information We Need If You Have Down Syndrome</strong></strong></h2>
+<h2 id="information-we-need-if-you-have-down-syndrome"><br><strong><strong>Information we need if you have Down syndrome</strong></strong></h2>
 
 <p>We will need more information about other medical conditions if you have Down syndrome. This information will help us to understand your current health condition better and enable us to provide you with an accurate quote.</p>
 
@@ -390,7 +386,7 @@ sidebar: true
 
 <p>Try to give an honest response to the questions. We will review your information to determine what insurance company is best for you.</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Down Syndrome</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with Down syndrome</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -408,13 +404,3 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Trying to find life insurance for Down syndrome needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step of the way to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time anymore searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+-rated insurance carriers that specialize in covering high-risk clients like you. We will search for all those companies and match you up with the best burial insurance company with the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for Down syndrome funeral insurance, Down syndrome burial insurance, or Down syndrome life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>

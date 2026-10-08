@@ -49,7 +49,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="key-learning-points"><strong>Key Learning Points</strong></h2>
+<h2 id="key-learning-points"><strong>Key learning points</strong></h2>
 
 <ul>
 <li>Burial insurance is available for disabled individuals.</li>
@@ -59,13 +59,13 @@ sidebar: true
 <li>The best rates for people with disabilities can be found at Final Expense Guy.</li>
 </ul>
 
-<h2 id="best-insurance-options-if-you-are-disabled"><strong>Best Insurance Options If You Are Disabled</strong></h2>
+<h2 id="best-insurance-options-if-you-are-disabled"><strong>Best insurance options if you are disabled</strong></h2>
 
 <p>Most insurance companies handle disability applications on a case-to-case basis. Even if your application was denied, there are often options for you to buy life insurance.</p>
 
 <p><strong>Here’s a list of common disabilities that factor into the life insurance application and approval process (in alphabetical order):</strong></p>
 
-<h3><strong>ACTIVITIES OF DAILY LIVING</strong></h3>
+<h3><strong>Activities of daily living</strong></h3>
 
 <p>The only time a disability may be an issue to an insurance company is if it causes you to need help with activities of daily living such as eating, bathing, dressing, toileting, transferring, or continence. Your best option for insurance, if you are disabled with ADL issues, is guaranteed issue burial insurance.</p>
 
@@ -79,7 +79,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed Issue Life Insurance through Final Expense Guy</p>
 
-<h3><strong>ARTHRITIS AND OTHER MUSCULOSKELETAL PROBLEMS</strong></h3>
+<h3><strong>Arthritis and other musculoskeletal problems</strong></h3>
 
 <p>According to the CDC, arthritis and other musculoskeletal problems are common causes of long-term disability and account for one-third of all disability cases. This is because muscle and joint problems limit the ability to perform one’s job and daily functions.</p>
 
@@ -89,7 +89,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong>&#160;Level death benefit with first-day coverage through Final Expense Guy</p>
 
-<h3><strong>CANCER (MORE THAN 2 YEARS AGO)</strong></h3>
+<h3><strong>Cancer (more than 2 years ago)</strong></h3>
 
 <p>Cancer can cause a disability. The type of cancer you have, and when you had it, you still qualify for a burial life insurance plan.</p>
 
@@ -97,13 +97,13 @@ sidebar: true
 
 <p><strong>Best Option:</strong>&#160;Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h3><strong>CANCER (WITHIN LAST 2 YEARS)</strong></h3>
+<h3><strong>Cancer (within last 2 years)</strong></h3>
 
 <p>If your cancer occurred within the last 2 years, you will only pay a little more for your policy and have a waiting period to deal with.</p>
 
 <p><strong>Best Option:</strong> Guaranteed Issue Life Insurance through Final Expense Guy </p>
 
-<h3><strong>CHRONIC PAIN</strong></h3>
+<h3><strong>Chronic pain</strong></h3>
 
 <p>Chronic pain, such as the knee, back, or arthritis, can cause disability.</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong>&#160;Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h3><strong>DIABETES</strong></h3>
+<h3><strong>Diabetes</strong></h3>
 
 <p>Diabetes can cause disability, but most burial insurance companies readily accept diabetics for coverage.</p>
 
@@ -123,7 +123,7 @@ sidebar: true
 
 <p>Best Option: Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h3><strong>HEART DISEASE</strong></h3>
+<h3><strong>Heart disease</strong></h3>
 
 <p>Heart disease includes many heart conditions, such as heart attack, atrial fibrillation, arrhythmias, and hypertension.</p>
 
@@ -133,7 +133,7 @@ sidebar: true
 
 <p><strong>Best Option:&#160;</strong>Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h3><strong>INJURIES CAUSED BY ACCIDENTS</strong></h3>
+<h3><strong>Injuries caused by accidents</strong></h3>
 
 <p>Injury can occur anytime due to an accident at home, work, or while driving. Accidents account for 10% of all disabilities.</p>
 
@@ -145,7 +145,7 @@ sidebar: true
 
 <p><strong>Best Option (with ADL issues):</strong> Guaranteed Issue Life Insurance through Final Expense Guy </p>
 
-<h3><strong>MENTAL HEALTH CONDITIONS</strong></h3>
+<h3><strong>Mental health conditions</strong></h3>
 
 <p>Mental health conditions, such as depression, anxiety, bipolar disorder, schizophrenia, or post-traumatic stress disorder (<a href="/burial-insurance/ptsd/" target="_blank" rel="noreferrer noopener">PTSD</a>),&#160;can cause disability.</p>
 
@@ -153,7 +153,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong>&#160;Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h3><strong>NERVOUS SYSTEM DISORDERS</strong></h3>
+<h3><strong>Nervous system disorders</strong></h3>
 
 <p>Multiple sclerosis, Parkinson’s, ALS, Alzheimer’s, epilepsy, and other conditions that affect the nerves and brain are leading causes of disability in adults. Nervous system disorders affect people for the rest of their lives.</p>
 
@@ -161,7 +161,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed Issue Life Insurance through Final Expense Guy </p>
 
-<h3><strong>STROKE</strong></h3>
+<h3><strong>Stroke</strong></h3>
 
 <p>Stroke is a common cause of disability. Almost 75% of stroke survivors were significantly affected by their stroke. Stroke can cause temporary or permanent brain damage and affect mental, physical, and emotional functioning.&#160;</p>
 
@@ -171,7 +171,7 @@ sidebar: true
 
 <p><strong>Best Option (with ADL issues):</strong> Guaranteed Issue Life Insurance&#160;through Final Expense Guy </p>
 
-<h2 id="how-do-people-with-ssdi-get-burial-insurance"><strong>How Do People With Social Security Disability Insurance (SSDI) Get Burial Insurance?</strong></h2>
+<h2 id="how-do-people-with-ssdi-get-burial-insurance"><strong>How do people with Social Security Disability Insurance (SSDI) get burial insurance?</strong></h2>
 
 <p>Traditional life insurance and disability insurance carriers often decline any applicant for coverage if they receive Social Security Disability Income and disability benefits.</p>
 
@@ -179,13 +179,13 @@ sidebar: true
 
 <p><strong>Best Option:&#160;</strong>Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h2 id="va-disability-and-burial-insurance"><strong>VA Disability And Burial Insurance</strong></h2>
+<h2 id="va-disability-and-burial-insurance"><strong>VA disability and burial insurance</strong></h2>
 
 <p>No quality insurance companies ask if you receive SSDI or veteran benefits. Only a few less desirable companies will ask if you are working, retired, or disabled. Being on disability is a non-issue to different types of life insurance companies that we properly research for our clients.</p>
 
 <p><strong>Best Option: </strong>Level death benefit with first-day coverage through Final Expense Guy </p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <p>Avoid term life insurance as a type of burial insurance because the premiums often increase after 5 years, and the coverage ends after 80.</p>
 
@@ -195,7 +195,7 @@ sidebar: true
 
 <p>To ensure that your insurance meets your needs as a disabled person, it’s recommended to explore other options, such as burial insurance, as it provides lifelong coverage and doesn’t have age restrictions or increasing premiums.</p>
 
-<h2 id="best-burial-insurance-for-people-with-disabilities"><br><strong>What Type of Burial Insurance Is Best For People with Disabilities?</strong></h2>
+<h2 id="best-burial-insurance-for-people-with-disabilities"><br><strong>What type of burial insurance is best for people with disabilities?</strong></h2>
 
 <p>To ensure the best type of burial insurance, exploring different life insurance for disabled people and finding a policy that meets your specific needs and budget is important.</p>
 
@@ -208,7 +208,7 @@ sidebar: true
 <li><strong>Cost</strong>: Compare the cost of different burial insurance policies to find one that fits within your budget. Remember that the cost may vary based on age, health condition, and coverage amount.</li>
 </ol>
 
-<h2 id="do-i-need-a-medical-exam-to-qualify"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-a-medical-exam-to-qualify"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for disabled persons.</p>
 
@@ -218,7 +218,7 @@ sidebar: true
 
 <p>Working with an insurance agent specializing in serving disabled individuals can greatly assist you in finding the best rate on whole life insurance. They have the knowledge and experience to guide you through the application process and help you find a policy that meets your needs.</p>
 
-<h2 id="burial-insurance-underwriting-for-disabled-adults"><strong>Burial Insurance Underwriting for Disabled Adults</strong></h2>
+<h2 id="burial-insurance-underwriting-for-disabled-adults"><strong>Burial insurance underwriting for disabled adults</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -234,7 +234,7 @@ sidebar: true
 
 <p>Every life insurance provider has its unique underwriting guidelines. They differ and may accept or decline applicants based on various health conditions and lifestyles.</p>
 
-<h2 id="how-much-insurance-do-i-need"><br><strong>How Much Insurance Do I Need?</strong></h2>
+<h2 id="how-much-insurance-do-i-need"><br><strong>How much insurance do I need?</strong></h2>
 
 <p>Typically, you will want to assess how much insurance you need if you have a disability. It’s important to consider your specific expenses, such as funeral, medical, living, credit card, and other debts.</p>
 
@@ -244,7 +244,7 @@ sidebar: true
 
 <p>The first step to figuring out how much burial insurance you need is to know your end-of-life expenses. Your funeral cost is often the biggest single expense you need to pay. Other end-of-life expenses are your outstanding medical bills, living expenses, credit card bills, and other debts.</p>
 
-<h2 id="information-we-need-if-you’re-a-disabled-person"><strong>Information We Need if You’re a Disabled Person</strong></h2>
+<h2 id="information-we-need-if-you’re-a-disabled-person"><strong>Information we need if you’re a disabled person</strong></h2>
 
 <p>When applying for burial insurance as a disabled person, it’s important to provide information about your disability.</p>
 
@@ -257,7 +257,7 @@ sidebar: true
 
 <p>We will use your information to determine which company will best fit you. Our knowledge of the underwriting guidelines of each carrier enables us to find the best burial insurance plan for your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me Find the Best Life Insurance?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me find the best life insurance?</strong></h2>
 
 <p>Final Expense Guy can assist you in getting burial insurance tailored to your specific needs as a disabled person. We understand that navigating the insurance market can be overwhelming, especially when you have unique circumstances. That’s why we’re here to help.</p>
 
@@ -272,24 +272,24 @@ sidebar: true
 
 <p>At Final Expense Guy, we’re committed to serving disabled individuals and their families. Let’s assist you in securing the burial insurance you deserve.</p>
 
-<h2 id="frequently-asked-questions"><strong>Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>
 
-<h3>Can I Get Burial Insurance if I Have a Disability?</h3>
+<h3>Can I get burial insurance if I have a disability?</h3>
 
 <p>Yes, you can get life insurance coverage if you have a disability. Many insurance companies offer burial insurance for disabled individuals. You will need to provide information about your disability during the application process.</p>
 
-<h3>What Factors Should I Consider When Choosing Burial Insurance as a Disabled Person?</h3>
+<h3>What factors should I consider when choosing burial insurance as a disabled person?</h3>
 
 <p>When choosing burial insurance for a disabled person, consider your needs, health, and budget. Evaluate the cost and coverage options available and determine what suits your circumstances best.</p>
 
-<h3>Do I Need to Undergo a Medical Exam to Qualify for Burial Insurance if I’m Disabled?</h3>
+<h3>Do I need to undergo a medical exam to qualify for burial insurance if I’m disabled?</h3>
 
 <p>You don’t need a medical exam to get life insurance if you’re disabled. The application process is simple and only requires basic health questions. The insurance company provides quick approval.</p>
 
-<h3>Are There Any Burial Insurance Options to Avoid for Disabled Individuals?</h3>
+<h3>Are there any burial insurance options to avoid for disabled individuals?</h3>
 
 <p>Yes, there are burial insurance options to avoid for disabled individuals. Term life insurance policy is one to watch out for because premiums increase and coverage ends after a certain age.</p>
 
-<h3>How Can Burial Insurance Riders Benefit Disabled Persons?</h3>
+<h3>How can burial insurance riders benefit disabled persons?</h3>
 
 <p>Burial insurance riders can benefit disabled individuals by enhancing their existing life insurance policy. These life insurance riders, such as the Terminal Illness Add-On Benefit and Nursing Home Care Add-On Benefit, can be added to meet specific needs without extensive underwriting.<br></p>

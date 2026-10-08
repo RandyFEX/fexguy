@@ -1,0 +1,177 @@
+---
+// Frequently asked questions: heading and a short introduction beside six
+// native <details> disclosures (work without JavaScript; each opens and
+// closes on its own). Answers restate retained FEXGuy content (see `sources`
+// in src/lib/home/content.ts). No FAQPage schema.
+import { lead } from '@/config/lead';
+import { faqs } from '@/lib/home/content';
+---
+
+<section class="faq" aria-labelledby="faq-title">
+  <div class="container faq__grid">
+    <div class="faq__intro">
+      <h2 class="faq__title" id="faq-title">Frequently Asked Questions</h2>
+      <p class="faq__text">
+        Short answers to common questions about life insurance. For answers about your own situation, call
+        Randy at <a class="faq__phone" href={lead.phone.href}>{lead.phone.display}</a>.
+      </p>
+    </div>
+    <div class="faq__list">
+      {
+        faqs.map((f) => (
+          <details class="faq__item">
+            <summary class="faq__q">
+              <span class="faq__question">{f.question}</span>
+              <svg class="faq__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+            </summary>
+            <div class="faq__a">
+              {f.answer.map((p) => (
+                <p>{p}</p>
+              ))}
+            </div>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq {
+    padding-block: var(--space-12);
+    background: var(--color-bg);
+  }
+  .faq__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+  .faq__title {
+    margin: 0 0 var(--space-4);
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .faq__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-bottom: var(--space-4);
+    background: var(--home-gold);
+  }
+  .faq__text {
+    margin: 0;
+    max-width: 30rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  .faq__phone {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* Disclosures: hairlines under a charcoal rule; no boxes. */
+  .faq__list {
+    border-top: 2px solid var(--color-text);
+  }
+  .faq__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    min-height: 4rem;
+    padding: var(--space-4) var(--space-2) var(--space-4) var(--space-1);
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq__q::-webkit-details-marker {
+    display: none;
+  }
+  /* Plain text, not a heading: a summary is exposed as a button, which
+     would hide a heading inside it from screen readers' heading lists. */
+  .faq__question {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text);
+  }
+  .faq__icon {
+    flex: none;
+    color: var(--color-primary);
+    transition: transform 0.15s ease;
+  }
+  .faq__q:hover .faq__question {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .faq__q:hover,
+  .faq__q:focus-visible {
+    background: var(--home-cream);
+  }
+  /* Open: the question turns green and the chevron points up. */
+  .faq__item[open] > .faq__q .faq__question {
+    color: var(--color-primary);
+  }
+  .faq__item[open] > .faq__q .faq__icon {
+    transform: rotate(180deg);
+  }
+  .faq__a {
+    padding: 0 var(--space-8) var(--space-6) var(--space-1);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--color-text);
+  }
+  .faq__a p {
+    margin: 0;
+    max-width: 44rem;
+  }
+  .faq__a p + p {
+    margin-top: var(--space-3);
+  }
+
+  /* Desktop: the heading on its own row across the 3-column grid (in the
+     first column it would break onto three lines); below it, the
+     introduction in the first column and the questions across the other
+     two. */
+  @media (min-width: 64rem) {
+    .faq {
+      padding-block: 4.5rem;
+    }
+    .faq__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: var(--space-6);
+      align-items: start;
+    }
+    .faq__intro {
+      display: contents;
+    }
+    .faq__title {
+      grid-column: 1 / -1;
+      margin-bottom: 0;
+    }
+    .faq__text {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .faq__list {
+      grid-column: 2 / span 2;
+      grid-row: 2;
+    }
+    .faq__q {
+      min-height: 4.5rem;
+      padding-inline: var(--space-3);
+    }
+    .faq__question {
+      font-size: 1.25rem;
+    }
+    .faq__a {
+      padding-inline: var(--space-3) var(--space-12);
+    }
+  }
+</style>

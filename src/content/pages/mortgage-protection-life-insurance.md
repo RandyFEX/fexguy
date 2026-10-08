@@ -19,8 +19,6 @@ source: "new"
 - A policy you own isn't tied to your loan. Refinancing, selling or paying the house off early doesn't end it; it stays in force as long as the premiums are paid.
 - Some products sold under the "mortgage protection" name work differently, such as lender-tied credit life or accidental-death-only coverage. It's worth knowing the differences before you buy.
 
-To get a quote, use the quote form on this page or call me at [888-862-9456](tel:8888629456).
-
 ## What is mortgage protection life insurance?
 
 Mortgage protection is mainly a reason for buying life insurance, not necessarily a separate type of life insurance. You buy life insurance with enough coverage, for the right length of time, so the people you leave behind have money to pay off the mortgage, keep making the payments, and handle other financial needs.

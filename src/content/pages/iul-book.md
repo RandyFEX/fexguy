@@ -8,7 +8,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>IUL Playbook: How It Works, What It Promises, &amp; What It Delivers</h1>
+<h1 class="article-title">IUL Playbook: How It Works, What It Promises, &amp; What It Delivers</h1>
 
 <h2>Introduction To My Free IUL E-Book</h2>
 
@@ -18,11 +18,7 @@ sidebar: true
 
 <p>The IUL Playbook is not a short read, but it is worth your time before investing in an IUL policy that will require steady and substantial guaranteed funding over the next 20 to 50 years.</p>
 
-<p>You can always call me or get a free term life insurance quote on this page.</p>
-
-<p>Randy VanderVaate<br>The Final Expense Guy<br>www.fexguy.com<br>888-862-9456</p>
-
-<hr>
+<figure class="book-cover"><img fetchpriority="high" decoding="async" loading="eager" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt="IUL Playbook"></figure>
 
 <p>IUL Book Chapters:</p>
 
@@ -30,11 +26,9 @@ sidebar: true
 
 <p><strong>13. <a href="#Chapter-13:-Timing-and-Loan-Risk:-The-Two-Variables-Nobody-Models">Timing and Loan Risk: The Two Variables Nobody Models</a></strong><br><strong>14. <a href="#Chapter-14:-Policy-Lapse-Risk:-How-People-Lose-Everything">Policy Lapse Risk: How People Lose Everything</a></strong><br><strong>15. <a href="#Chapter-15:-What-Happens-at-Death:-The-Part-Nobody-Explains">What Happens at Death: The Part Nobody Explains</a></strong><br><strong>16. <a href="#Chapter-16:-Carrier-Control:-They-Can-Change-the-Rules">Carrier Control: They Can Change the Rules</a></strong><br><strong>17. <a href="#Chapter-17:-The-Complexity-Problem:-You-Don't-Understand-What-You-Bought">The Complexity Problem: You Don’t Understand What You Bought</a></strong><br><strong>18. <a href="#Chapter-18:-The-&quot;Rich-Person-Strategy&quot;-Myth">The “Rich Person Strategy” Myth</a></strong><br><strong>19. <a href="#Chapter-19:-The-Retirement-Illusion:-It's-Not-a-Real-Replacement-Plan">The Retirement Illusion: It’s Not a Real Replacement Plan</a></strong><br><strong>20. <a href="#Chapter-20:-Better-Uses-for-Your-Money">Better Uses for Your Money</a></strong><br><strong>21. <a href="#Chapter-21:-When-IUL-Actually-Makes-Sense">When IUL Actually Makes Sense</a></strong><br><strong>22. <a href="#Chapter-22:-Case-Studies:-Where-It-Works-vs.-Where-It-Fails">Case Studies: Where It Works vs. Where It Fails</a></strong><br><strong>23. <a href="#Chapter-23:-The-Bottom-Line:-Who-Should-Stay-Away">The Bottom Line: Who Should Stay Away</a></strong><br><strong>24.</strong> <a href="#24:-IUL-Suitability-by-Profession"><strong>IUL Suitability by Profession</strong></a></p>
 
-<p><strong>Click on my book cover to read my free IUL e-book &amp; buyer’s guide.</strong></p>
+<p class="book-disclaimer">Copyright © 2026 Randy VanderVaate. All rights reserved. No part of this book may be reproduced without written permission.</p>
 
-<figure><a href="/iul-book/" target="_blank" rel=" noreferrer noopener"><img fetchpriority="high" decoding="async" loading="eager" width="512" height="768" src="/wp-content/uploads/2026/04/IUL-PLAYBOOK-FREE-IUL-BOOK-PDF-512-X-768.png" alt="IUL Playbook"></a></figure>
-
-<p>Copyright © 2026 Randy VanderVaate. All rights reserved. No part of this book may be reproduced without written permission.<br>The information in this e-book is for educational purposes only and should not be considered financial, legal, or tax advice. While believed to be accurate at the time of writing, no guarantees are made regarding accuracy or completeness. Any numbers, examples, or illustrations are hypothetical and may not reflect actual results. Individual outcomes will vary based on personal circumstances, underwriting, and policy design.<br></p>
+<p class="book-disclaimer">The information in this e-book is for educational purposes only and should not be considered financial, legal, or tax advice. While believed to be accurate at the time of writing, no guarantees are made regarding accuracy or completeness. Any numbers, examples, or illustrations are hypothetical and may not reflect actual results. Individual outcomes will vary based on personal circumstances, underwriting, and policy design.</p>
 
 <hr>
 
@@ -487,6 +481,8 @@ sidebar: true
 <p>The typical Infinite Banking seminar or online course presents the concept in aspirational terms. You will stop paying interest to banks. You will build wealth that is protected from market losses. You will have access to capital on your own terms. You will leave a legacy for your family. The presentation is compelling, and the underlying ideas, taken on their own terms with the right product, are not entirely without merit.</p>
 
 <p>What the seminar does not tell you is that the strategy Nash developed took him decades to execute, required significant capital, depended on the specific contractual characteristics of dividend-paying whole life insurance, and was designed for a buyer with a long time horizon, substantial financial resources, and a high tolerance for complexity. It does not tell you that the IUL product being offered as a vehicle for this strategy lacks the contractual guarantees that the strategy depends on. It does not tell you that the agent presenting the seminar earns a substantially larger commission on the IUL policy than they would on the whole-life policy the strategy was actually built around.</p>
+
+<p>Some versions of this pitch also come with religious or faith-based branding, under names like “Kingdom Banking” or “Infinite Banking God’s Way.” If that’s where you heard about it, read <a href="/iul-book/iul-church-members-faith-based-communities/">what to know about faith-based IUL pitches</a>.</p>
 
 <h3>When Someone Asks You About Infinite Banking</h3>
 

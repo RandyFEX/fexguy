@@ -1,9 +1,9 @@
 ---
-title: "Prostate Cancer Burial Insurance - Instant Approval"
+title: "Burial Insurance With Prostate Cancer"
 description: "Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!"
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance/prostate-cancer/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Prostate Cancer Burial Insurance - Instant Approval"},{"property":"og:description","content":"Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!"},{"property":"og:url","content":"https://fexguy.com/burial-insurance/prostate-cancer/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-04-23T09:14:22-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"628"},{"property":"og:image:alt","content":"prostate cancer burial insurance"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Prostate Cancer Burial Insurance - Instant Approval"},{"name":"twitter:description","content":"Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"12 minutes"}]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance With Prostate Cancer"},{"property":"og:description","content":"Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!"},{"property":"og:url","content":"https://fexguy.com/burial-insurance/prostate-cancer/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-04-23T09:14:22-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"628"},{"property":"og:image:alt","content":"prostate cancer burial insurance"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance With Prostate Cancer"},{"name":"twitter:description","content":"Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"12 minutes"}]
 jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png\",\"url\":\"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/burial-insurance/\",\"name\":\"Burial Insurance &#8211; A Complete Final Expense Life Insurance Guide\"}},{\"@type\":\"ListItem\",\"position\":\"3\",\"item\":{\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/\",\"name\":\"Prostate Cancer Burial Insurance\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#webpage\",\"url\":\"https://fexguy.com/burial-insurance/prostate-cancer/\",\"name\":\"Prostate Cancer Burial Insurance - Instant Approval\",\"datePublished\":\"2026-02-11T10:24:07-06:00\",\"dateModified\":\"2026-04-23T09:14:22-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Prostate Cancer Burial Insurance - Instant Approval\",\"description\":\"Prostate cancer burial insurance allows you to get 1st day coverage if your are free of cancer. Currently have cancer? I can help!\",\"keywords\":\"prostate cancer burial insurance,life insurance for prostate cancer survivors 2026,final expense insurance after prostatectomy,burial insurance with high PSA levels,life insurance for seniors with gleason score 6,funeral insurance for prostate cancer patients,burial insurance for metastatic prostate cancer,prostate cancer remission life insurance rates,life insurance for seniors on lupron,burial insurance with no medical exam for cancer,first-day coverage for prostate cancer survivors,life insurance for stage 2 prostate cancer,burial insurance for seniors on eligard,funeral insurance for prostate cancer and diabetes,life insurance for localized prostate cancer,burial insurance with 24 month look back,prostate cancer burial insurance guaranteed issue,life insurance for seniors with rising PSA,burial insurance for prostate cancer and heart disease,final expense insurance for seniors on casodex,best burial insurance for prostate cancer 2026,cost of burial insurance for cancer survivors,life insurance for prostate cancer stage 4,burial insurance for seniors with bone metastasis,life insurance for survivors after radiation,funeral insurance for seniors on taxotere,burial insurance for prostate cancer and kidney issues,life insurance for seniors with prostate cancer history,burial insurance for prostate cancer and high blood pressure,funeral insurance for seniors with stable PSA levels\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Prostate Cancer Burial Insurance - Instant Approval\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"inLanguage\":\"en-US\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Can I get burial insurance with a prostate cancer diagnosis?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Many burial and final expense carriers offer coverage for people with a prostate cancer diagnosis. Options depend on whether you\\u2019re in active treatment or in remission, the stage, and the time since your last treatment. Some people qualify for level benefit day-1 coverage, while others may need graded or guaranteed issue coverage.\"}},{\"@type\":\"Question\",\"name\":\"Does a history of prostate cancer affect burial insurance eligibility?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Eligibility is often driven by time since treatment ended. Many carriers use a look-back period and 24 months is a common benchmark for considering level benefit day-1 coverage and better pricing. Exact rules vary by company and by treatment type.\"}},{\"@type\":\"Question\",\"name\":\"Can prostate cancer survivors get first-day coverage burial insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Often, yes. Many simplified issue carriers consider level benefit day-1 coverage after a stability period following surgery or radiation, and 2 years is common. For very early-stage cases with clean follow-up, some carriers may consider sooner eligibility, depending on their guidelines.\"}},{\"@type\":\"Question\",\"name\":\"Is there a waiting period for burial insurance with active prostate cancer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Usually, yes. Active treatment often limits options to graded or guaranteed issue plans. Guaranteed issue plans don\\u2019t ask health questions but commonly include a 2-year waiting period for natural death. During that period, the policy typically pays a return of premiums and may include interest depending on the contract instead of the full death benefit.\"}},{\"@type\":\"Question\",\"name\":\"What types of prostate cancer treatments impact burial insurance underwriting?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Underwriters consider treatment type and whether treatment is ongoing. Surgery can be viewed as a clear end date when follow-up is stable. Radiation and chemotherapy timing matters, and ongoing hormone therapy may be treated as maintenance or active treatment depending on the carrier\\u2019s rules. The plan offered usually depends on treatment dates and current monitoring results.\"}},{\"@type\":\"Question\",\"name\":\"Can I get burial insurance if my prostate cancer has metastasized?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Often, yes, through guaranteed issue coverage. Metastatic cases are commonly declined for traditional coverage, but guaranteed issue burial insurance is designed to accept applicants without health questions, typically with a 2-year waiting period for natural death benefits.\"}},{\"@type\":\"Question\",\"name\":\"Does a high PSA level prevent me from getting burial insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Not always, but it can cause postponement. A high PSA can signal an unresolved medical issue. If you have a pending biopsy or an ongoing workup with no clear diagnosis, many carriers may postpone a decision until results are back and a treatment or monitoring plan is established. Once the situation is clarified and stable, more options may open up.\"}},{\"@type\":\"Question\",\"name\":\"Are burial insurance rates higher for prostate cancer survivors?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"It depends on stability and plan type. Survivors who qualify for level benefit coverage after the carrier\\u2019s look-back period often receive standard pricing similar to applicants without cancer history. If you\\u2019re limited to graded or guaranteed issue coverage due to recency or severity, premiums are typically higher.\"}},{\"@type\":\"Question\",\"name\":\"How do burial insurance companies define remission for prostate cancer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Remission is usually treated as no evidence of active cancer and completion of primary treatment, supported by follow-up records. Many carriers start their time-since-treatment clock from the last treatment date, such as the last radiation session or the completion date of surgery and discharge, depending on documentation and carrier guidelines.\"}},{\"@type\":\"Question\",\"name\":\"Does burial insurance cover death caused by prostate cancer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, in general. Once the policy is active and any waiting period requirements are satisfied, burial insurance typically pays the death benefit even if death is caused by prostate cancer, as long as the application was truthful and premiums were paid. Waiting-period plans may limit natural death benefits during the first 2 years.\"}},{\"@type\":\"Question\",\"name\":\"Why should prostate cancer patients use a broker for burial insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Because underwriting varies widely between carriers. A broker can compare look-back periods, treatment rules, and pricing across multiple companies to find the most lenient option for your stage, treatment dates, and follow-up history, helping you avoid unnecessary waiting periods and overpaying.\"}}]}],\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#schema-753459\",\"isPartOf\":{\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"image\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/burial-insurance/prostate-cancer/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
@@ -11,17 +11,17 @@ sidebar: true
 
 <h1>Prostate Cancer Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Prostate cancer doesn’t mean automatic denial, but timing controls your options<br>• Active or recent diagnosis usually blocks first-day coverage approvals<br>• Applying too early often leads to overpriced guaranteed issue plans<br>• Waiting 2+ years after treatment can unlock better pricing and coverage<br>• Many people overpay by not matching their case to the right company</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Prostate cancer doesn’t mean automatic denial, but timing controls your options<br>• Active or recent diagnosis usually blocks first-day coverage approvals<br>• Applying too early often leads to overpriced guaranteed issue plans<br>• Remission or ongoing hormone therapy is not the same as being declared cancer-free<br>• Waiting 2+ years after treatment can unlock better pricing and coverage<br>• Many people overpay by not matching their case to the right company</p>
 
-<p>Getting burial insurance with prostate cancer depends heavily on your stage, treatment, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially if you’re still in treatment. If the cancer is recent, most companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If you’ve been in remission for a few years, you may qualify for better burial insurance with immediate coverage and lower rates. Timing matters because applying too early can lock you into weaker coverage.</p>
+<p>Getting burial insurance with prostate cancer depends heavily on your stage, treatment, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially if you’re still in treatment. If the cancer is recent, most companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If you’ve been cancer-free for a few years, you may qualify for better burial insurance with immediate coverage and lower rates. Timing matters because applying too early can lock you into weaker coverage.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2>Prostate Cancer Burial Insurance Key Insights</h2>
+<h2>Prostate cancer burial insurance key insights</h2>
 
 <ul>
 <li><strong>Prostate cancer success rates are high:</strong> This condition is one of the most curable cancers, and insurers view it more favorably than almost any other type.</li>
-<li><strong>Surgical removal often means an instant cure:</strong> When a doctor removes the prostate, insurers view you as cancer-free immediately because the source of the disease is gone.</li>
+<li><strong>Surgical removal often means an instant cure:</strong> When a doctor removes the prostate, certain insurers view you as cancer-free immediately because the source of the disease is gone.</li>
 <li><strong>The two-year rule governs first-day coverage:</strong> Most companies require you to be cancer-free or off treatment for at least 24 months to qualify for the best prices.</li>
 <li><strong>Active treatment </strong><strong>often involves waiting periods:</strong>&#160;if you are currently taking medication or undergoing radiation therapy, a guaranteed issue plan is typically the only option available.</li>
 <li><strong>PSA levels serve as the ultimate health signal:</strong> Stable or low PSA levels indicate to the insurance company that your condition is not progressing.</li>
@@ -31,13 +31,13 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/02/Prostate-Cancer-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
-<h2>Prostate Cancer Medical Definition &amp; Health Risks</h2>
+<h2>Prostate cancer medical definition &amp; health risks</h2>
 
 <p>Underwriters categorize prostate cancer risk by looking at the time passed since your last treatment date.</p>
 
 <p><a href="https://en.wikipedia.org/wiki/Prostate_cancer" target="_blank" rel="noreferrer noopener">Prostate cancer</a> occurs when cells in the prostate gland grow out of control and form a tumor. While many cases grow very slowly, untreated <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> can spread to the bones or other organs. Poor control of this condition increases the chance of the cancer returning or causing other major organ failure.</p>
 
-<h3>Life Insurance Companies Ask These Prostate Cancer Questions</h3>
+<h3>Life insurance companies ask these prostate cancer questions</h3>
 
 <p>Different life insurance companies ask different questions to decide which prostate cancer applicants they may approve.</p>
 
@@ -46,7 +46,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a>, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 Prostate Cancer, Carcinoma in Situ and Squamous Cell or <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell Carcinoma</a>) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -56,7 +55,7 @@ sidebar: true
 <li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
-<h3>Prostate Cancer Underwriting Basics</h3>
+<h3>Prostate cancer underwriting basics</h3>
 
 <p>Medical underwriters look for specific signals to decide if you are a safe bet for coverage:</p>
 
@@ -71,7 +70,7 @@ sidebar: true
 
 <p><strong>Why it Matters:</strong> Your PSA and Gleason scores indicate to the insurer how aggressive the cancer is. High scores lead to higher prices or a 2-year waiting period, while low scores help you get 1st-day coverage.</p>
 
-<h3>Prostate Cancer Prescription Medication Classes</h3>
+<h3>Prostate cancer prescription medication classes</h3>
 
 <ul>
 <li><strong>Hormone Therapy:</strong> Lupron, Eligard, or Casodex.</li>
@@ -79,7 +78,7 @@ sidebar: true
 <li><strong>Bone Health:</strong> Zometa or Xgeva is used to prevent bone metastasis.</li>
 </ul>
 
-<h2>Prostate Cancer with Comorbidities</h2>
+<h2>Prostate cancer with comorbidities</h2>
 
 <p>Combining multiple health conditions increases the total risk level for life insurance carriers.</p>
 
@@ -89,7 +88,7 @@ sidebar: true
 
 <p>In my experience, controlled prostate cancer qualifies people for immediate level burial insurance coverage even with secondary health issues.</p>
 
-<h2>Understanding Prostate Cancer Policy Types</h2>
+<h2>Understanding prostate cancer policy types</h2>
 
 <p>Carriers offer different plan categories based on an applicant’s cancer stage and long-term health stability.</p>
 
@@ -99,11 +98,11 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend <strong>Gerber</strong> for anyone currently in treatment or in remission.</li>
 </ul>
 
-<h2>Prostate Cancer Underwriting &amp; Medication History</h2>
+<h2>Prostate cancer underwriting &amp; medication history</h2>
 
 <p>Insurance companies review your pharmacy records to confirm how long you have been cancer-free.</p>
 
-<p><strong>Underwriting Approval Secrets:</strong> If you had your prostate surgically removed, many carriers view you as “cured” immediately. Also, attending every follow-up appointment is a positive sign to an underwriter.</p>
+<p><strong>Underwriting Approval Secrets:</strong> If you had your prostate surgically removed, certain carriers view you as “cured” immediately. Also, attending every follow-up appointment is a positive sign to an underwriter.</p>
 
 <p><strong>Short &amp; Long Term History:</strong> Maintenance meds are pills you take for years to keep things stable, while “rescue” meds are for emergencies. Your prescription history is how the insurance carriers verify medical stability.</p>
 
@@ -124,8 +123,13 @@ sidebar: true
 <td>None</td>
 </tr>
 <tr>
-<td>Recent Treatment</td>
-<td>Graded</td>
+<td>Prostate Removed, Declared Cancer-Free Under 2 Years</td>
+<td>Level (certain companies) or Guaranteed Issue</td>
+<td>None or 2 Years</td>
+</tr>
+<tr>
+<td>Remission or Ongoing Treatment (such as hormone therapy)</td>
+<td>Guaranteed Issue</td>
 <td>2 Years</td>
 </tr>
 <tr>
@@ -136,23 +140,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real Life Prostate Cancer Success Stories</h2>
+<h2>Real life prostate cancer success stories</h2>
 
 <p>Real-world examples illustrate how people with prostate cancer can find day-one protection for their final expenses.</p>
 
-<h3>James’s Story</h3>
+<h3>James’s story</h3>
 
 <p>James was diagnosed with Stage 2 prostate cancer 3 years ago and had a full surgery to remove it. Because he had no other major health issues and had passed the 2-year mark, we sought a top-tier plan. He wanted $15,000 to make sure his daughters wouldn’t have to pay for a funeral. I helped him qualify for a 1st-day coverage plan with Aflac. This saved him 30% compared to the graded plans he saw online. He now has peace of mind knowing his family is protected.</p>
 
-<h3>Robert’s Story</h3>
+<h3>Robert’s story</h3>
 
 <p>Robert found out he had prostate cancer last year and is currently taking hormone therapy. Since he is still in active treatment, he couldn’t qualify for a standard plan yet. He decided not to wait because he didn’t want to leave his wife with debt. We set him up with a $10,000 policy through Gerber. Even though it has a 2-year waiting period, he knows that if he passes away early, his wife gets every penny back plus 10% interest. This plan functions as a high-interest savings account while he recovers.</p>
 
-<h2>Rates &amp; Approvals</h2>
+<h2>Rates &amp; approvals</h2>
 
 <p>Here are some rates if your cancer was cured more than 24 months ago. If you still have cancer, I can help you find the right A-rated company for your needs.</p>
 
-<h3>TRINITY LIFE &amp; FAMILY BENEFIT INSURANCE RATES AGE 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -176,7 +180,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Prostate Cancer Burial Insurance</h2>
+<h2>Frequently asked questions: prostate cancer burial insurance</h2>
 
 <h3>Can I get burial insurance with a prostate cancer diagnosis?</h3>
 
@@ -188,7 +192,7 @@ sidebar: true
 
 <h3>Can prostate cancer survivors get first-day coverage burial insurance?</h3>
 
-<p>Prostate cancer survivors qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> if they have been in remission for a specific period. Most simplified-issue insurers allow immediate payouts once you have reached the two-year milestone following surgery or radiation therapy. For very early-stage survivors, some specialized carriers may even offer immediate coverage sooner.</p>
+<p>Prostate cancer survivors qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> if they have been cancer-free for a specific period. Most simplified-issue insurers allow immediate payouts once you have reached the two-year milestone following surgery or radiation therapy. For very early-stage survivors, some specialized carriers may even offer immediate coverage sooner.</p>
 
 <h3>Is there a waiting period for burial insurance with active prostate cancer?</h3>
 

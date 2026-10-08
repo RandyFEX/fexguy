@@ -1,9 +1,9 @@
 ---
-title: "Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage"
+title: "Burial Insurance With Pancreatic Cancer: What’s Available"
 description: "Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate \"Level\" benefits"
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance/pancreatic-cancer/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage"},{"property":"og:description","content":"Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate \"Level\" benefits"},{"property":"og:url","content":"https://fexguy.com/burial-insurance/pancreatic-cancer/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-04-23T09:12:01-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"628"},{"property":"og:image:alt","content":"pancreatic cancer burial insurance"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage"},{"name":"twitter:description","content":"Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate \"Level\" benefits"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"16 minutes"}]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance With Pancreatic Cancer: What’s Available"},{"property":"og:description","content":"Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate \"Level\" benefits"},{"property":"og:url","content":"https://fexguy.com/burial-insurance/pancreatic-cancer/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-04-23T09:12:01-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"628"},{"property":"og:image:alt","content":"pancreatic cancer burial insurance"},{"property":"og:image:type","content":"image/png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance With Pancreatic Cancer: What’s Available"},{"name":"twitter:description","content":"Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate \"Level\" benefits"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"16 minutes"}]
 jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image-1024x536.png\",\"url\":\"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image-1024x536.png\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/burial-insurance/\",\"name\":\"Burial Insurance &#8211; A Complete Final Expense Life Insurance Guide\"}},{\"@type\":\"ListItem\",\"position\":\"3\",\"item\":{\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/\",\"name\":\"Pancreatic Cancer Burial Insurance\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#webpage\",\"url\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/\",\"name\":\"Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage\",\"datePublished\":\"2026-04-23T09:11:26-05:00\",\"dateModified\":\"2026-04-23T09:12:01-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image-1024x536.png\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage\",\"description\":\"Pancreatic cancer burial insurance is available even during chemotherapy or active cycles. Learn how to qualify for immediate &quot;Level&quot; benefits\",\"keywords\":\"pancreatic cancer burial insurance,life insurance for pancreatic cancer survivors 2026,final expense insurance for seniors after pancreatic cancer,burial insurance with no medical exam for cancer,first-day coverage for pancreatic cancer survivors,funeral insurance for pancreatic cancer patients,guaranteed issue burial insurance for pancreatic cancer,life insurance for seniors in remission,burial insurance for pancreatic cancer and type 3c diabetes,funeral insurance for cancer with high blood pressure,pancreatic cancer life insurance waiting period,burial insurance for metastatic pancreatic cancer,life insurance for seniors on gemzar,best burial insurance for pancreatic cancer 2026,cost of burial insurance for pancreatic cancer survivors,life insurance for stage 4 pancreatic cancer,burial insurance for seniors with pancreatic insufficiency,life insurance for survivors after whipple procedure,funeral insurance for seniors on creon,burial insurance for pancreatic cancer and blood clots,life insurance for seniors with stable ca 19-9 levels,burial insurance for seniors over 80 with pancreatic cancer,final expense insurance for pancreatic stents,burial insurance for seniors on abraxane,life insurance impact of pancreatic cancer remission length,burial insurance for survivors with clear margins,funeral insurance for seniors with ascites history,life insurance for pancreatic cancer and peripheral neuropathy,burial insurance for seniors on tarceva,final expense insurance for pancreatic cancer and jaundice history,burial insurance impact of pancreatic cancer stage,life insurance for pancreatic adenocarcinoma vs neuroendocrine tumors,how ca 19-9 tumor markers affect insurance rates,burial insurance for stage 1 vs stage 4 pancreatic cancer,life insurance impact of recurring pancreatic tumors,how underwriters view whipple procedure surgery,life insurance for seniors with stable pet scans,burial insurance for asymptomatic pancreatic cysts,impact of age at diagnosis on pancreatic cancer insurance premiums\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"name\":\"Pancreatic Cancer Burial Insurance - Unlock Day 1 Coverage\",\"subjectOf\":[{\"@type\":\"FAQPage\",\"inLanguage\":\"en-US\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Can I get burial insurance with an active pancreatic cancer diagnosis?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. Guaranteed issue burial insurance is typically available for applicants with active pancreatic cancer because it doesn\\u2019t require a medical exam or health questions. These plans commonly include a 2-year waiting period for natural death, and during that period the policy usually pays a return of premiums and may include interest depending on the contract instead of the full death benefit.\"}},{\"@type\":\"Question\",\"name\":\"Can pancreatic cancer survivors qualify for first-day coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sometimes. Many carriers consider level benefit day-1 coverage when you\\u2019ve completed all active treatment and have been cancer-free for a period of time, and 24 months is a common benchmark. Exact rules vary by carrier, and eligibility depends on stage, treatment type, time since last treatment, and current follow-up results.\"}},{\"@type\":\"Question\",\"name\":\"Does a history of pancreatic enzymes affect burial insurance eligibility?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"It can. Prescription enzymes like Creon or Pancreaze can indicate ongoing pancreatic insufficiency and may trigger follow-up underwriting questions. Some carriers may treat them as maintenance therapy, while others may want clarification to confirm there\\u2019s no active cancer treatment or recent complications.\"}},{\"@type\":\"Question\",\"name\":\"Why is an independent broker important for pancreatic cancer coverage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Because cancer underwriting varies widely. Different carriers define active treatment, remission, and look-back periods differently. A broker can compare multiple A-rated companies to find which one is most lenient for your treatment dates, medications, and follow-up history, helping you avoid an unnecessary waiting-period plan.\"}},{\"@type\":\"Question\",\"name\":\"Does a family history of pancreatic cancer increase my burial insurance premiums?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Usually not for burial insurance. Final expense underwriting generally focuses on your personal medical history and current stability more than family history. Some companies may ask limited family history questions, but premiums are typically driven by your own health profile, age, tobacco status, and plan type.\"}},{\"@type\":\"Question\",\"name\":\"Can I qualify for burial insurance if I have a pancreatic cyst?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Often, yes, if the cyst is being monitored and shows stability. Underwriters commonly look for documented follow-up, no evidence of malignancy, and a stable scan history, sometimes around 24 months depending on the carrier. If your records show the cyst is benign and stable, level benefit day-1 coverage may be possible.\"}},{\"@type\":\"Question\",\"name\":\"Why do insurers track CA 19-9 blood test results?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"CA 19-9 is often used as a clinical marker in pancreatic cancer monitoring. Some insurers may review lab trends and oncology follow-up notes to help evaluate whether the disease is active or stable. Lab results and physician documentation can influence whether an applicant is eligible for level benefit day-1 coverage or needs graded or guaranteed issue coverage.\"}},{\"@type\":\"Question\",\"name\":\"What is the difference between hospice coverage and burial insurance?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Hospice is a medical care benefit that helps cover end-of-life care services like nursing, comfort care, and pain management. Burial insurance is life insurance that pays cash to your beneficiary to help cover final expenses like funeral, cremation, and cemetery costs. Hospice supports care while you\\u2019re living, while burial insurance provides money to your family after death.\"}}]}],\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#schema-753410\",\"isPartOf\":{\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"image\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image-1024x536.png\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/burial-insurance/pancreatic-cancer/#webpage\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://fexguy.com/randy-vandervaate/\",\"image\":\"https://fexguy.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png\\\"\",\"jobTitle\":\"Licensed Life Insurance Broker\",\"alternateName\":\"Final Expense Guy\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"FEX Guy\",\"url\":\"https://www.fexguy.com\",\"alternateName\":\"Funeral Funds\",\"logo\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\"},\"sameAs\":[\"https://www.linkedin.com/in/randyvandervaate/\",\"https://x.com/rvandervaate\",\"https://www.facebook.com/randyvandervaate.lifeinsurance/\",\"https://www.instagram.com/randyvandervaate\",\"https://www.youtube.com/@FEXGUY\",\"https://medium.com/@randyvandervaate/\",\"https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4\",\"https://medium.com/authority-magazine/randy-vandervaate-how-to-be-great-at-sales-without-seeming-salesey-4a76fc52fb9e\",\"https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/\",\"https://bestcompany.com/blog/life-insurance/living-benefits-questions\",\"https://www.insurance.com/life-insurance/how-do-you-get-a-life-insurance-policy-for-seniors\",\"https://perelson.com/why-should-business-owners-hire-accountants/\",\"https://www.themeetingmagazines.com/ifmm/home-work/\",\"https://www.opploans.com/oppu/financial-literacy/what-are-some-good-money-habits/\",\"https://bestcompany.com/blog/life-insurance/do-i-need-life-insurance\",\"https://sellingsignals.com/best-sales-techniques/\",\"https://www.ruleranalytics.com/wp-content/uploads/2016/04/Expert-Insight_-Converting-Marketing-Leads.pdf\",\"https://newlinlawoffices.com/blog/oregon-wrongful-death-claims\",\"https://www.insurance.com/life-insurance/best-life-insurance-policy-for-seniors\",\"https://finance.yahoo.com/news/5-types-insurance-protect-financial-140009326.html\"],\"knowsAbout\":{\"1\":\"Burial and Cremation Insurance\",\"2\":\"Burial Insurance\",\"3\":\"Cremation Insurance\",\"4\":\"Funeral Insurance\",\"5\":\"Term Life Insurance\",\"6\":\"Whole Life Insurance\",\"7\":\"Index Universal Life Insurance IUL\",\"8\":\"Serior Life Insurance\",\"@type\":\"knowsAbout\"}}]}"]
 source: "live"
 sidebar: true
@@ -17,10 +17,10 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2>Key Pancreatic Cancer Burial Insurance Insights</h2>
+<h2>Key pancreatic cancer burial insurance insights</h2>
 
 <ul>
-<li><strong>Immediate coverage is possible the moment you are cured:</strong> CICA Life offers a unique opportunity where you can potentially qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
+<li><strong>Immediate coverage is possible the moment you are cured:</strong> Certain companies offer a unique opportunity where you can potentially qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
 <li><strong>A two-year survival milestone opens most major carriers:</strong> If you have been cured for at least 2 years with no further treatments or medications, top-tier companies like Aflac and Family Benefit Life become available.</li>
 <li><strong>Active cancer diagnosis limits you to guaranteed-issue plans:</strong> If you are currently undergoing treatment or taking cancer medications, you will be restricted to a policy with a two-year waiting period.</li>
 <li><strong>Underwriters use prescription records to verify your health status:</strong> Insurance companies monitor your pharmacy history for cancer-related drugs and nausea medications to confirm if your condition is active or in remission.</li>
@@ -31,11 +31,11 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/02/Pancreatic-Cancer-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
-<h2>Pancreatic Cancer Burial Insurance Medical Definition &amp; Health Risks</h2>
+<h2>Pancreatic cancer burial insurance medical definition &amp; health risks</h2>
 
 <p>Underwriters determine your final expense insurance eligibility by calculating the exact number of months that have passed since your last active cancer treatment to confirm long-term stability. <a href="https://en.wikipedia.org/wiki/Pancreatic_cancer" target="_blank" rel="noreferrer noopener">Pancreatic cancer</a> is a disease in which malignant cells form in the pancreas, interfering with digestion and blood sugar regulation. Poor control of this condition often leads to rapid spread to the liver or lungs, which creates a significant risk for insurance companies and typically triggers a mandatory waiting period.</p>
 
-<h3>Life Insurance Companies Ask These Pancreatic Cancer Questions</h3>
+<h3>Life insurance companies ask these pancreatic cancer questions</h3>
 
 <p>Different life insurance companies ask different questions to decide which pancreatic cancer applicants they may approve.</p>
 
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a>, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell Carcinoma</a>) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -54,7 +53,7 @@ sidebar: true
 <li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
-<h3>Pancreatic Cancer Underwriting Basics</h3>
+<h3>Pancreatic cancer underwriting basics</h3>
 
 <ul>
 <li><strong>Time Since Cure:</strong> Carriers typically require at least 24 months of “clean” health to offer their best rates, though some specialty companies may require less.</li>
@@ -66,7 +65,7 @@ sidebar: true
 
 <p>Why it Matters: Test results and the duration of your remission determine your risk class and the monthly premium you pay.</p>
 
-<h3>Pancreatic Cancer Burial Insurance Prescription Medication Classes</h3>
+<h3>Pancreatic cancer burial insurance prescription medication classes</h3>
 
 <ul>
 <li><strong>Chemotherapy Agents:</strong> Drugs such as Gemzar (Gemcitabine), Abraxane, and 5-Fluorouracil (5-FU) indicate that the cancer is currently active or very recent.</li>
@@ -74,13 +73,13 @@ sidebar: true
 <li><strong>Targeted Therapy:</strong> Medications such as Tarceva (Erlotinib) are used for advanced-stage disease and typically carry a higher risk for insurers.</li>
 </ul>
 
-<h2>Pancreatic Cancer Burial Insurance With Comorbidities</h2>
+<h2>Pancreatic cancer burial insurance with comorbidities</h2>
 
 <p>Multiple health issues occurring at the same time increase the total risk because the combination of several chronic diseases makes it much harder for your body to recover from complications. Pancreatic cancer often comes with secondary issues like new-onset diabetes or respiratory problems that can further restrict your plan choices. Even after you beat the cancer, a condition like congestive heart failure or COPD might be the factor that slows down your approval for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a>.</p>
 
 <p>Insurance companies look at the totality of your health, so securing a plan now protects your family regardless of future medical changes. A past pancreatic cancer diagnosis doesn’t mean you can’t get quality burial insurance right now, even with secondary health issues.</p>
 
-<h2>Other Common Health Issues With Pancreatic Cancer</h2>
+<h2>Other common health issues with pancreatic cancer</h2>
 
 <p>Long-term pancreatic cancer complications increase your mortality risk because they affect your insulin production and cause severe digestive issues for many years. Insurance companies look at these secondary issues to see if your body is recovering well or if the cancer has caused permanent damage to your other organs.</p>
 
@@ -95,23 +94,23 @@ sidebar: true
 
 <p>A past pancreatic cancer diagnosis doesn’t mean you can’t get quality burial insurance right now, even with secondary health issues.</p>
 
-<h2>Understanding Pancreatic Cancer Burial Insurance Policy Types</h2>
+<h2>Understanding pancreatic cancer burial insurance policy types</h2>
 
 <p>Carriers offer different plan categories based on an applicant’s pancreatic cancer stage and their long-term or short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life if you were recently cured, or Family Benefit Life, Trinity Life, and Aflac if you have been cured for more than 2 years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it if you were recently cured, or Family Benefit Life, Trinity Life, and Aflac if you have been cured for more than 2 years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life if you have been cured of cancer, but also have other major issues like heart failure.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health or medically related causes of death. I recommend Gerber Life if you are currently in the middle of your battle with cancer or cannot perform daily tasks like bathing and dressing.</li>
 </ul>
 
-<h2>Sample Pancreatic Cancer Rate Snapshot for $10,000 Coverage </h2>
+<h2>Sample pancreatic cancer rate snapshot for $10,000 coverage </h2>
 
 <p>The monthly cost for your burial insurance increases every year you wait because your age is the primary factor used to calculate the insurance company’s risk. Rates vary by age and gender because women statistically live longer than men, which allows insurance companies to offer them lower monthly rates.</p>
 
 <p>Here are some preferred rates if you’re recently cured. If it’s been more than 2 years, I can save you even more money by identifying the A-rated carrier that’s best for your situation.</p>
 
-<h3>CICA LIFE LEVEL INSURANCE RATES AGE 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -135,9 +134,9 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>Rates may vary based on age, gender, health, and state. Click the form on this page for the lowest rates from the best carriers.</strong></p>
+<p><strong>Rates may vary based on age, gender, health, and state.</strong></p>
 
-<h2>Pancreatic Cancer Burial Insurance Underwriting &amp; Medication History</h2>
+<h2>Pancreatic cancer burial insurance underwriting &amp; medication history</h2>
 
 <p>Your prescription history provides insurance carriers with a reliable way to verify your medical stability and confirm that you are no longer receiving active <a href="https://www.mayoclinic.org/diseases-conditions/pancreatic-cancer/diagnosis-treatment/drc-20355427" target="_blank" rel="noreferrer noopener nofollow">cancer treatment</a>. One insider tip is to be completely honest about any nausea medications or enzymes, as these “dual-use” drugs can sometimes be mistaken for active cancer care. Your adherence to follow-up appointments is a positive signal to underwriters that you are committed to maintaining your health. If you have pending procedures or tests, it is often best to complete those first so that a “clean bill of health” can help you get an immediate approval.</p>
 
@@ -161,7 +160,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Cured 0-2 Years</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -172,25 +171,25 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real Life Pancreatic Cancer Burial Insurance Success Stories</h2>
+<h2>Real life pancreatic cancer burial insurance success stories</h2>
 
 <p>Real-world examples illustrate how people with pancreatic cancer can get day-one protection with anywhere from $5,000 to $25,000 for burial, cremation, or final expenses.</p>
 
-<h3>David’s Story</h3>
+<h3>David’s story</h3>
 
 <p>David was declared cancer-free three years ago after a successful surgery and several rounds of chemo. He wanted to make sure his funeral costs wouldn’t fall on his children, but he was afraid his medical history would get him declined. I helped him apply for a first-day coverage plan with Family Benefit Life because he had been healthy for over two years. He qualified for $10,000 in coverage at a preferred rate, saving him 25% compared to the graded plans he was looking at elsewhere. Now he has peace of mind knowing his legacy is protected from day one.</p>
 
-<h3>Susan’s Story</h3>
+<h3>Susan’s story</h3>
 
 <p>Susan was diagnosed with pancreatic cancer only six months ago and is currently undergoing regular treatments. She knew she couldn’t get a standard plan yet, but she wanted to start her two-year waiting period immediately, just in case. I placed her with Gerber Life in a guaranteed-issue policy that required no health questions or medical exams. This plan ensures that if she passes away from her illness in the next two years, her family gets all her money back plus 10%. If she beats the cancer and reaches the two-year mark, she will have a full $15,000 benefit ready for her family.</p>
 
-<h2>Pancreatic Cancer Financial Ratings &amp; Stability </h2>
+<h2>Pancreatic cancer financial ratings &amp; stability </h2>
 
 <p>Financial ratings verify that an insurance carrier possesses enough money to pay out death claims to your family by measuring their total cash reserves.</p>
 
 <p>A.M. Best ratings show us if a company is strong enough to pay your claim thirty years from today. The Better Business Bureau provides insight into how well a company treats customers when a family calls to report a loss. We also use the NAIC to monitor complaints and ensure the carrier complies with all applicable state regulations.</p>
 
-<h3>Insurance Carrier Ratings &amp; Comparisons</h3>
+<h3>Insurance carrier ratings &amp; comparisons</h3>
 
 <table>
 <thead>
@@ -247,7 +246,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Pancreatic Cancer Burial Insurance</h2>
+<h2>Frequently asked questions: pancreatic cancer burial insurance</h2>
 
 <h3>Can I get burial insurance with an active pancreatic cancer diagnosis?</h3>
 
@@ -255,7 +254,7 @@ sidebar: true
 
 <h3>Can pancreatic cancer survivors qualify for first-day coverage?</h3>
 
-<p>Pancreatic cancer survivors can qualify for first-day coverage if they have been declared “cancer-free” and have completed all active treatments at least two years ago. Some specialty carriers, such as CICA Life, may even offer immediate protection sooner if a doctor provides a clear “cured” status. If you have moved past the initial 24-month recovery window and are no longer taking chemotherapy or targeted therapies, you can likely bypass the waiting period entirely.</p>
+<p>Pancreatic cancer survivors can qualify for first-day coverage if they have been declared “cancer-free” and have completed all active treatments at least two years ago. Some specialty carriers may even offer immediate protection sooner if a doctor provides a clear “cured” status. If you have moved past the initial 24-month recovery window and are no longer taking chemotherapy or targeted therapies, you can likely bypass the waiting period entirely.</p>
 
 <h3>Does a history of pancreatic enzymes affect burial insurance eligibility?</h3>
 

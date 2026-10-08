@@ -56,7 +56,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="term-vs.-whole-life-insurance"><strong>What Is The Difference Between Term And Whole Life Policies</strong></h2>
+<h2 id="term-vs.-whole-life-insurance"><strong>What is the difference between term and whole life policies</strong></h2>
 
 <p>Term life insurance is designed to give financial protection for a specific time like 10, 20, or 30 years. The death benefit is the only benefit of this plan. When the term ends, your coverage expires.</p>
 
@@ -96,7 +96,7 @@ sidebar: true
 <li>It can be more costly than term life but has the potential to save more money if the policy is in force for a lifetime.</li>
 </ul>
 
-<h2 id="what-happens-when-term-policy-expires"><br><strong>What Happens When The Term Policy Expires?</strong></h2>
+<h2 id="what-happens-when-term-policy-expires"><br><strong>What happens when the term policy expires?</strong></h2>
 
 <p>There are two options available when the term period expires on your policy:</p>
 
@@ -112,7 +112,7 @@ sidebar: true
 
 <p><strong>Option 2:</strong> Pay an annual renewable rate. When the level term expires, the premium on the policy is no longer applicable and will increase yearly. You will never know the cost when you renew. There is an annual renewable premium amount in your initial contract, but it is not guaranteed to stay that way.</p>
 
-<h2 id="term-policy-conversion-to-whole-life"><br><strong>Term Policy Conversion To Whole Life</strong></h2>
+<h2 id="term-policy-conversion-to-whole-life"><br><strong>Term policy conversion to whole life</strong></h2>
 
 <p><strong>A term conversion </strong>means converting some or all of your term life insurance into a whole life insurance policy. This option is available if you want whole life insurance. Conversion options are typically included in your plan for free. </p>
 
@@ -120,7 +120,7 @@ sidebar: true
 
 <p>Don’t wait too long if you want to convert your policy to whole life. Premiums are based on age, which is bound to increase as you grow older. When you convert, the longer you wait, the higher the premium you’ll pay for a whole life insurance policy<strong>.</strong></p>
 
-<h2 id="what-is-partial-term-conversion"><br><strong>What Is Partial Term Conversion?</strong></h2>
+<h2 id="what-is-partial-term-conversion"><br><strong>What is partial term conversion?</strong></h2>
 
 <p>A partial term conversion means taking a portion of your term policy and converting it to your whole life. If you do this, you will have one term life and one whole life insurance or two separate insurance policies.</p>
 
@@ -142,7 +142,7 @@ sidebar: true
 
 <p>Many life insurance companies will allow you to convert your policy in different amounts at different times, which helps offset the cost of converting term to whole life.<strong> It’s important to note that only some life insurance carriers allow partial conversions.</strong></p>
 
-<h2 id="how-does-term-conversion-work"><br><strong>How Does A Term Policy Conversion To Whole Life Works?</strong></h2>
+<h2 id="how-does-term-conversion-work"><br><strong>How does a term policy conversion to whole life works?</strong></h2>
 
 <p>Term conversion to whole life has an expiration date. The expiration date depends on the insurance product and the company. You must convert your term policy to whole life before the expiration date. You don’t need to go through the underwriting again, but they will consider your age.</p>
 
@@ -179,7 +179,7 @@ sidebar: true
 <li>You can start building <a href="/burial-insurance/borrowing-against-cash-value/" target="_blank" rel="noreferrer noopener">cash value</a> with your new whole life policy.</li>
 </ul>
 
-<h2 id="why-convert-to-whole-life"><br><strong>Reasons For Term Policy Conversion To Whole Life</strong></h2>
+<h2 id="why-convert-to-whole-life"><br><strong>Reasons for term policy conversion to whole life</strong></h2>
 
 <p>Here are some of the reasons why you should think about converting term insurance to whole life.</p>
 
@@ -229,7 +229,7 @@ sidebar: true
 
 <p>When you’re looking for estate tax shelters, the best funding source is a whole life policy held in trust. It allows the proceeds to keep out of your estate when you die. The fund within the trust can be used to pay ongoing income to heirs depending on your estate planning goals.</p>
 
-<h2 id="what-to-do-when-you-missed-the-deadline"><br><strong>What To Do When You Miss Your Conversion Deadline</strong></h2>
+<h2 id="what-to-do-when-you-missed-the-deadline"><br><strong>What to do when you miss your conversion deadline</strong></h2>
 
 <p>If you’ve missed your term life insurance conversion period but are still in good health, you still have a few affordable options for life insurance.</p>
 
@@ -243,15 +243,9 @@ sidebar: true
 
 <p>If you’re considering converting your term life policy to whole life insurance, talk to our agents at Final Expense Guy to get answers to your questions about the term and whole life insurance.</p>
 
-<p><strong>Need burial insurance?</strong> Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance. Fill out the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page, and we will give you the best rates available for final expense life insurance.</p>
-
 <p><a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> is an independent insurance agency that can shop your application to many companies available. This way, you can be sure that you will get the best carrier that favors your age and health.</p>
 
-<p>We work with the top-rated life insurance companies in the United States, many of which offer immediate coverage at the lowest rates.</p>
-
-<p>If you need help finding burial life insurance, please don’t hesitate to contact us at (888) 862-9456.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can term life insurance be converted?</strong></p>
 
@@ -419,16 +413,16 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>

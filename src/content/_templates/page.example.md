@@ -22,7 +22,7 @@ draft: true
 # layout: landing
 
 # Optional: show the quote sidebar (Fillout form). Or place the form inside
-# the body with <div data-quote-form></div> on its own line — not both.
+# the body with <div data-quote-form></div> on its own line, not both.
 # sidebar: true
 
 # Optional exact social tags and JSON-LD (migrated pages carry these).

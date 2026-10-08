@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-are-blind"><br><strong>What Is My Best Insurance Option If I’m Blind?</strong></h2>
+<h2 id="best-insurance-option-if-you-are-blind"><br><strong>What is my best insurance option if I’m blind?</strong></h2>
 
 <p id="Factors-That-May-Affect-Insurance-Eligibility"><br><strong>BLINDNESS DUE TO AN ACCIDENT</strong></p>
 
@@ -130,7 +130,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -169,7 +169,7 @@ premiums you’ve paid plus 10% interest.</p>
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -218,7 +218,7 @@ premiums you’ve paid plus 10% interest.</p>
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I’m Blind, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I’m blind, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for the blind.</p>
 
@@ -226,7 +226,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-the-blind"><br><strong><strong>Burial Insurance Underwriting If You Are Blind </strong></strong></h2>
+<h2 id="insurance-underwriting-for-the-blind"><br><strong><strong>Burial insurance underwriting if you are blind </strong></strong></h2>
 
 <p>If you want the lowest-priced insurance coverage, go for a company that asks some health questions (underwriting). Underwriting is a process insurance companies use to evaluate your risk of death and insurability. </p>
 
@@ -244,7 +244,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p>Blindness as a standalone condition is never an issue. It will only be an issue if blindness is paired with some chronic illnesses, you need home health care, or you need help with activities of daily living.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I’m Blind?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I’m blind?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -352,11 +352,11 @@ premiums you’ve paid plus 10% interest.</p>
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="blindness-and-burial-insurance-riders"><br><strong>Blindness And Burial Insurance Riders</strong></h2>
+<h2 id="blindness-and-burial-insurance-riders"><br><strong>Blindness and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -381,7 +381,7 @@ premiums you’ve paid plus 10% interest.</p>
 </tbody>
 </table>
 
-<h2 id="burial-insurance-for-family-members"><strong><br>Burial Insurance For Family Members</strong></h2>
+<h2 id="burial-insurance-for-family-members"><strong><br>Burial insurance for family members</strong></h2>
 
 <p>In most cases, it is often the family members of the blind who are looking to get a life insurance policy for their loved ones.</p>
 
@@ -403,9 +403,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p>Your blind loved one must be aware of the policy because they must sign the application.</p>
 
-<p>If you have a family member with this condition, call us so we can help you understand your options.</p>
-
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -420,7 +418,7 @@ premiums you’ve paid plus 10% interest.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For The Blind</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for the blind</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -439,25 +437,11 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="what-if-you’re-declined-for-coverage"><br><strong>What If You’re Declined For Coverage Due To Blindness?</strong> </h2>
-
-<p>If you have been denied life insurance coverage due to blindness in the past, we can help you get affordable coverage.</p>
+<h2 id="what-if-you’re-declined-for-coverage"><br><strong>What if you’re declined for coverage due to blindness?</strong> </h2>
 
 <p>We represent many different life insurance companies and can shop for you to find the most affordable burial insurance you deserve.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy if you are blind needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for the blind, burial insurance for the blind, or life insurance for the blind. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I am </strong><strong>blind</strong><strong>?</strong></p>
 

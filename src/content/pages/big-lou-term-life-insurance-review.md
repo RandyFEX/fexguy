@@ -18,7 +18,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW BIG LOU MAKES MONEY</strong></h2>
+<h2><strong>How Big Lou makes money</strong></h2>
 
 <p>Big Lou’s agency earns commissions on policies sold, so agents are pushed to place larger or higher-priced term policies instead of what actually fits long-term needs.</p>
 
@@ -42,7 +42,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT KIND OF POLICIES DOES BIG LOU SELL?</strong></h2>
+<h2><strong>What kind of policies does Big Lou sell?</strong></h2>
 
 <p>Big Lou offers only traditional term life insurance, which lasts for a limited number of years and has no cash value upon expiration.</p>
 
@@ -75,7 +75,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>DOES BIG LOU HAVE A WAITING PERIOD?</strong></h2>
+<h2><strong>Does Big Lou have a waiting period?</strong></h2>
 
 <p>There’s no official waiting period, though underwriting and approval can still take weeks or months before coverage starts, leaving you unprotected until it’s done.</p>
 
@@ -93,7 +93,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT ARE THE BIGGEST COMPLAINTS ABOUT BIG LOU?</strong></h2>
+<h2><strong>What are the biggest complaints about Big Lou?</strong></h2>
 
 <p>Most complaints center on slow communications, confusing branding that blurs who actually holds the policy, and surprise rate changes after underwriting.</p>
 
@@ -115,7 +115,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>IS BIG LOU LEGITIMATE OR A SCAM?</strong></h2>
+<h2><strong>Is Big Lou legitimate or a scam?</strong></h2>
 
 <p>Big Lou isn’t a scam, but its branding often makes people think they’re buying from an insurance company rather than a brokerage.</p>
 
@@ -143,7 +143,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW MUCH DOES BIG LOU TERM LIFE COST</strong></h2>
+<h2><strong>How much does Big Lou term life cost</strong></h2>
 
 <p>The ultra-low prices shown in ads usually apply only to applicants in perfect health, while most people actually pay much more once underwriting is complete.</p>
 
@@ -157,7 +157,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHO SHOULD (AND SHOULDN’T) BUY BIG LOU TERM LIFE</strong></h2>
+<h2><strong>Who should (and shouldn’t) buy Big Lou term life</strong></h2>
 
 <p>Big Lou’s plans may work for younger, healthy buyers with short-term needs, but they’re a poor fit for people who need lifelong coverage.</p>
 
@@ -179,7 +179,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BIG LOU’S FINANCIAL STRENGTH AND COMPANY RATINGS</strong></h2>
+<h2><strong>Big Lou’s financial strength and company ratings</strong></h2>
 
 <p>Big Lou has no financial ratings because it doesn’t pay claims, since the actual insurance carriers carry that responsibility.</p>
 
@@ -207,7 +207,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BIG LOU VS FIRST-DAY COVERAGE WHOLE LIFE</strong></h2>
+<h2><strong>Big Lou vs first-day coverage whole life</strong></h2>
 
 <p>Term life expires after the term ends, while first-day whole life starts immediately and pays out no matter when death occurs.</p>
 
@@ -225,7 +225,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>COMMON MISCONCEPTIONS ABOUT BIG LOU ADS</strong></h2>
+<h2><strong>Common misconceptions about Big Lou ads</strong></h2>
 
 <p>Many people assume the ads mean instant approval or relaxed health rules, which isn’t how term life insurance underwriting works.</p>
 
@@ -253,7 +253,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>BETTER ALTERNATIVES FOR SENIORS AND VETERANS</strong></h2>
+<h2><strong>Better alternatives for seniors and veterans</strong></h2>
 
 <p>Older adults and fixed-income buyers usually benefit more from permanent coverage that never expires.</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>IS BIG LOU TERM LIFE INSURANCE WORTH IT?</strong></h2>
+<h2><strong>Is Big Lou term life insurance worth it?</strong></h2>
 
 <p>Big Lou can make sense for healthy people under about 55 who only want temporary coverage, though most seniors are better served elsewhere.</p>
 
@@ -285,7 +285,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: BIG LOU TERM LIFE INSURANCE</strong></h2>
+<h2><strong>Frequently asked questions: Big Lou term life insurance</strong></h2>
 
 <p><strong>Is Big Lou a real insurance company?</strong></p>
 

@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="reason-1---aarp-is-not-an-insurance-company"><br><strong>Reason #1 – AARP Is Not An Insurance Company</strong></h2>
+<h2 id="reason-1---aarp-is-not-an-insurance-company"><br><strong>Reason #1 – AARP is not an insurance company</strong></h2>
 
 <p>First, you should be worried about AARP life insurance because AARP is not even an insurance company to begin with.</p>
 
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>Permanent life insurance is available to <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> members who are 50 to 80 years old. You can buy up to $50,000 coverage without a medical exam.</p>
 
-<h2 id="reason-2---level-term-life-insurance-increase-in-price-every-5-years"><br><strong>Reason #2 – Level Term Life Insurance Increase In Price Every 5 Years</strong></h2>
+<h2 id="reason-2---level-term-life-insurance-increase-in-price-every-5-years"><br><strong>Reason #2 – level term life insurance increase in price every 5 years</strong></h2>
 
 <p>The second reason you need to be worried about AARP life insurance is that their level term life insurance increases in price every five years. If you bought a level term life insurance from AARP, I suggest you read the “fine print.”</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>Suppose you truly want a real level term life insurance. In that case, we can get you a level term life insurance policy with another company with a fixed premium that is guaranteed to never change for the term of the policy. If you’re interested in buying term life insurance, call us. We work with reputable life insurance companies that specialize in term life insurance.</p>
 
-<h2 id="reason-3---coverage-ends-at-age-80"><br><strong>Reason #3 – Coverage Ends At Age 80</strong></h2>
+<h2 id="reason-3---coverage-ends-at-age-80"><br><strong>Reason #3 – coverage ends at age 80</strong></h2>
 
 <p>AARP term life insurance is only available to members ages 50 to 74. It means, if you are 75 and older, you can’t buy a term life insurance policy with them.&#160;</p>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p>If you want a policy that will last, do not get term life insurance. Apply for permanent life insurance instead. AARP also offers permanent life insurance. However, they will not sell you this policy unless you specifically ask for it.</p>
 
-<h2 id="reason-4---you-need-to-be-in-great-health-to-qualify"><br><strong>Reason #4 – You Need To Be In Great Health To Qualify</strong></h2>
+<h2 id="reason-4---you-need-to-be-in-great-health-to-qualify"><br><strong>Reason #4 – you need to be in great health to qualify</strong></h2>
 
 <p>To qualify, you need to answer the health questions of the AARP insurance application. Both term life insurance and permanent life insurance ask three health questions.&#160;</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>If you have health issues, we can help. We work with many insurance companies that are exceptionally forgiving with these health issues, and they will approve you for first-day coverage.</p>
 
-<h2 id="reason-5---it-has-a-two-year-waiting-period"><br><strong>Reason #5 – It Has A Two-year Waiting Period</strong></h2>
+<h2 id="reason-5---it-has-a-two-year-waiting-period"><br><strong>Reason #5 – it has a two-year waiting period</strong></h2>
 
 <p>If you answered “yes” to the health questions in the AARP insurance application, expect to be offered a guaranteed issue life insurance.&#160;</p>
 
@@ -162,21 +162,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a></div>
 
-<h2 class="as-h5">1 Comment</h2>
+<h2 class="as-h5">1 comment</h2>
 
 <div class="comments">
 <div class="comment" id="comment-24840">

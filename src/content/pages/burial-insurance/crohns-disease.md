@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="your-best-insurance-option"><strong>What Is My Best Insurance Option If I Have A History Of Crohn’s Disease?</strong></h2>
+<h2 id="your-best-insurance-option"><strong>What is my best insurance option if I have a history of Crohn’s disease?</strong></h2>
 
 <p>Some life insurance providers are not concerned with Crohn’s disease. They don’t ask about it in their health questions on the application. Their easy underwriting allows people with Crohn’s disease to get level death benefit with first-day coverage, no waiting period, and the lowest pricing the company can offer.</p>
 
@@ -62,9 +62,9 @@ sidebar: true
 
 <p><br><strong>OTHER FACTORS THAT MAY AFFECT ELIGIBILITY</strong></p>
 
-<p>The only time Crohn’s disease will be a problem in getting first-day coverage is when it is paired with other medical conditions that could not qualify for a level death benefit plan. </p>
+<p>The main time Crohn’s disease will be a problem in getting first-day coverage is when it is paired with other medical conditions that could not qualify for a level death benefit plan. </p>
 
-<p>It’s estimated that 70% of Crohn’s disease patients will need colectomy or colon resectioning surgery at some point in their life. Surgery may be required if you develop a fistula or fissure. Also, if you develop an obstruction or experience worsening symptoms that require resection.&#160; </p>
+<p>Some Crohn’s disease patients will need colectomy or colon resectioning surgery at some point in their life. Surgery may be required if you develop a fistula or fissure. Also, if you develop an obstruction or experience worsening symptoms that require resection.&#160; </p>
 
 <ul>
 <li>If your surgery (colectomy) were within the last 24 months, insurance providers would require two years to pass before they give you a level death benefit plan. The actual time will depend on the company’s requirements, but most will want two years to see how successful the colectomy was and if there are any complications.</li>
@@ -84,7 +84,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> First-day benefit plan</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -123,7 +123,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -172,7 +172,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-a-medical-exam"><br><strong>If I Have, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-a-medical-exam"><br><strong>If I have, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with Crohn’s disease.</p>
 
@@ -180,7 +180,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="burial-insurance-underwriting"><br><strong>Burial Insurance Underwriting If You Have Crohn’s Disease</strong></h2>
+<h2 id="burial-insurance-underwriting"><br><strong>Burial insurance underwriting if you have Crohn’s disease</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -230,8 +230,6 @@ history check to look for medications you are taking and for what conditions. </
 as part of your overall health to determine what plan you will qualify for and
 the amount you need to pay.</p>
 
-<p>Studies show that people with Crohn’s disease have a 73% higher mortality rate than the general population.</p>
-
 <p>Crohn’s disease is a chronic medical condition that is usually not fatal. That’s why applicants with this disease can still qualify for life insurance. It is only when Crohn’s disease is severe that surgery is recommended that the applicant’s application is considered high-risk because it can lead to other serious health risks.</p>
 
 <p>Most of the time, underwriters are concerned about fistulas, abscesses, obstructions, perforations, the risk of colorectal cancer, and any surgery performed.</p>
@@ -240,7 +238,7 @@ the amount you need to pay.</p>
 
 <p>Underwriters review the type of surgery, time since surgery, current symptoms, and other factors in determining the plan you will be eligible for, and your rate.</p>
 
-<h2 id="how-much-coverage-you-need"><br><strong>How Much Insurance Do I Need If I Have Crohn’s Disease?</strong></h2>
+<h2 id="how-much-coverage-you-need"><br><strong>How much insurance do I need if I have Crohn’s disease?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -348,11 +346,11 @@ the amount you need to pay.</p>
 </tbody>
 </table>
 
-<h2 id="paying-the-premium"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="paying-the-premium"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Crohn’s Disease And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Crohn’s disease and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -377,7 +375,7 @@ the amount you need to pay.</p>
 </tbody>
 </table>
 
-<h2 id="information-we-need"><br><strong>Information We Need If You Have Crohn’s Disease</strong> </h2>
+<h2 id="information-we-need"><br><strong>Information we need if you have Crohn’s disease</strong> </h2>
 
 <p>When you reach us regarding buying burial insurance with Crohn’s disease, we will ask you a few health questions to better understand your current medical condition. These questions may include:</p>
 
@@ -394,7 +392,7 @@ the amount you need to pay.</p>
 
 <p>Your answers to these health questions will aid us in determining the type of burial insurance plan you qualify for and how much life insurance companies will charge you.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -409,7 +407,7 @@ the amount you need to pay.</p>
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Crohn’s Disease</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with Crohn’s disease</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -428,19 +426,7 @@ the amount you need to pay.</p>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
-
-<p>Finding a policy if you have Crohn’s disease needn’t be frustrating; working with an independent agency like Final Expense Guy will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for  Crohn’s disease funeral insurance, Crohn’s disease burial insurance, or  Crohn’s disease life insurance. </p>
-
-<p>Fill out our quote form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Additional Questions &amp; Answers On Burial Insurance With Crohn’s Disease</strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Additional questions &amp; answers on burial insurance with Crohn’s disease</strong></h2>
 
 <p><strong>Can I get life insurance if you have Crohn’s disease?</strong></p>
 
@@ -520,7 +506,7 @@ the amount you need to pay.</p>
 
 <p><br><strong>Can you be denied insurance for Crohn’s disease?</strong></p>
 
-<p>No, you cannot be denied insurance for Crohn’s disease. You can still get a first-day benefit plan if you have had surgery to treat your condition.</p>
+<p>No, Crohn’s disease alone usually won’t get you denied insurance. You can often still get a first-day benefit plan if you have had surgery to treat your condition.</p>
 
 <p><br><strong>Is there a waiting period for life insurance with Crohn’s disease?</strong></p>
 
@@ -589,5 +575,5 @@ the amount you need to pay.</p>
 <ul>
 <li>work with a qualified insurance agent,</li>
 <li>get a first-day coverage plan,</li>
-<li>remember that Crohn’s disease will not affect your life insurance rates.</li>
+<li>remember that Crohn’s disease will often not affect your life insurance rates.</li>
 </ul>

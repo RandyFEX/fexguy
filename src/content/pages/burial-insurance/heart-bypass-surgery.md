@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="heart-bypass-surgery"><strong>What Is A Heart Bypass Surgery?</strong></h2>
+<h2 id="heart-bypass-surgery"><strong>What is a heart bypass surgery?</strong></h2>
 
 <p>Your heart needs oxygen delivered through these handy dandy blood highways called arteries. But sometimes, there’s a traffic jam caused by “plaque” buildup. That’s coronary artery disease, and it can lead to chest pain, shortness of breath, and even a heart attack.</p>
 
@@ -66,7 +66,7 @@ sidebar: true
 <li>Quintuple bypass</li>
 </ul>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance If I Have Had Heart Bypass Surgery?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance if I have had heart bypass surgery?</strong></h2>
 
 <p><strong>YES:</strong>&#160; Depending on your health, you might score first-day coverage with some life insurance companies, as long as you haven’t been hospitalized two or more times in the past two years and you live in the right zip code!</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>If first-day coverage isn’t in the cards, don’t worry! You can still snag guaranteed-issue burial insurance, which welcomes everyone with open arms, no matter your health issues.</p>
 
-<h2 id="burial-insurance-available"><strong>Burial Insurance Available To People Who Had Heart Bypass Surgery?</strong></h2>
+<h2 id="burial-insurance-available"><strong>Burial insurance available to people who had heart bypass surgery?</strong></h2>
 
 <p><strong>FIRST-DAY COVERAGE</strong> – This burial insurance is as straightforward as it gets – no waiting around. You make the first payment, and bam, your loved ones get the full 100% death benefit when the time comes.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>If you kick the bucket during those first two years, your beneficiaries won’t get the jackpot payment. They’ll get back what you paid in premiums plus a smidge of interest, usually 7 to 10%.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Had Heart Bypass Surgery?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have had heart bypass surgery?</strong></h2>
 
 <p>Look, if you’ve had bypass surgery and you’re eyeing burial insurance, aim for that first-day coverage plan. It’s the gold standard.</p>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>Now, if you’re still in the hospital or you’ve clocked in two or more stays in the last few years, your next move is snagging guaranteed-issue whole life insurance. Sure, there’s a two-year waiting period, but hey, it’s better than a kick in the shins because you waited to long to get this insurance.</p>
 
-<h2 id="cost-of-burial-insurance"><strong>What Is The Cost Of Burial Insurance If I Had Heart Bypass Surgery?</strong></h2>
+<h2 id="cost-of-burial-insurance"><strong>What is the cost of burial insurance if I had heart bypass surgery?</strong></h2>
 
 <p><strong>The cost of burial insurance will depend on your:</strong></p>
 
@@ -115,7 +115,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>One insurance company – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -148,7 +148,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>One insurance company – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="burial-insurance-underwriting"><strong>Burial Insurance Underwriting If You Had Heart Bypass Surgery</strong></h2>
+<h2 id="burial-insurance-underwriting"><strong>Burial insurance underwriting if you had heart bypass surgery</strong></h2>
 
 <p><strong>Let’s dive into the heart bypass questions asked on your burial insurance questionnaire:</strong></p>
 
@@ -181,7 +181,7 @@ sidebar: true
 
 <p>Insurance companies are gonna check your prescriptions during their low-key underwriting process. Got meds for health stuff going on? Hang on, because that could totally shake up which plans and rates you’re eligible for in some cases.</p>
 
-<h2 id="information-we-need"><strong>Information We Need if You Had A History Of Heart Bypass Surgery</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you had a history of heart bypass surgery</strong></h2>
 
 <p><strong>Here’s what we gotta know to hook you up with the best plan and price:</strong></p>
 
@@ -195,7 +195,7 @@ sidebar: true
 <li>Why did you need to have bypass surgery?</li>
 </ul>
 
-<h2 id="getting-first-day-coverage"><strong>How to Get First-Day Coverage With A History Of Heart Bypass Surgery</strong></h2>
+<h2 id="getting-first-day-coverage"><strong>How to get first-day coverage with a history of heart bypass surgery</strong></h2>
 
 <p>Looking to snag first-day coverage even after a heart bypass? Companies don’t all play by the same rules with that. Your move? Team up with a professional outfit like Final Expense Guy.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <p>Don’t settle – get with the pros who’ve got your back!</p>
 
-<h2 id="applying-for-burial-insurance"><strong>How To Apply For Burial Insurance With Heart Bypass Surgery</strong></h2>
+<h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with heart bypass surgery</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent – </strong>Find yourself a savvy, independent agent from Final Expense Guy who knows the ins and outs of heart bypass survivors like you. They’ll break down all the burial insurance options, dish out price comparisons, and straight-up handle your queries.</li>
@@ -211,15 +211,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Carefully review the policy terms before you sign anything. Follow Final Expense Guy instructions for submitting your application.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Here at Final Expense Guy, we specialize in getting life insurance coverage for people with a history of heart bypass surgery.</p>
-
-<p>We work with A+-rated insurance all-stars, the kind of companies that understand that sometimes our reliable hearts take some health detours. We’ll search high and low (mostly online, thank goodness) to find the best rate for you.</p>
-
-<p>So, if you’re looking for some peace-of-mind insurance after that bypass surgery, we can definitely help. Fill out our quick quote form, it’s easier than remembering your grandkids’ names! Or, you can call us at   (888) 862-9456. Let’s get you covered before you start planning your shuffleboard team in the afterlife!</p>
-
-<h2 id="faq">Frequently Asked <strong>Questions </strong></h2>
+<h2 id="faq">Frequently asked <strong>questions </strong></h2>
 
 <p><strong>What is a pre-existing heart condition in life insurance?</strong></p>
 

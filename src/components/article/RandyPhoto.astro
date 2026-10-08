@@ -1,0 +1,39 @@
+---
+// Randy's headshot (the portrait from the homepage's Meet Randy section),
+// clipped to a circle. Small copies: public/images/randy/ (built by
+// scripts/optimize-randy-headshot.mjs).
+interface Props {
+  /** Displayed size in px. */
+  size: 48 | 120;
+  class?: string;
+}
+const { size, class: className } = Astro.props;
+const w = size === 48 ? 96 : 240;
+---
+
+<picture class:list={['randy-photo', className]}>
+  <source type="image/avif" srcset={`/images/randy/randy-vandervaate-${w}.avif`} />
+  <source type="image/webp" srcset={`/images/randy/randy-vandervaate-${w}.webp`} />
+  <img
+    src={`/images/randy/randy-vandervaate-${w}.jpg`}
+    alt="Randy VanderVaate"
+    width={size}
+    height={size}
+    loading={size === 48 ? 'eager' : 'lazy'}
+    decoding="async"
+  />
+</picture>
+
+<style>
+  .randy-photo {
+    display: block;
+    flex: none;
+    padding: 2px;
+    border-radius: 50%;
+    background: var(--home-stone);
+  }
+  .randy-photo img {
+    display: block;
+    border-radius: 50%;
+  }
+</style>

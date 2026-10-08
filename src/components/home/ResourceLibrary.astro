@@ -1,0 +1,277 @@
+---
+// Life insurance resources: a small editorial library — one featured guide
+// beside three secondary guides — rather than a feed of article cards. No
+// dates, reading times, categories or thumbnails; each description only
+// summarizes what its page covers (see src/lib/home/content.ts).
+import HomeIcon from './HomeIcon.astro';
+import { resources } from '@/lib/home/content';
+
+const [featured, ...more] = resources;
+---
+
+<section class="res" aria-labelledby="resources-title">
+  <div class="container">
+    <div class="res__head">
+      <h2 class="res__title" id="resources-title">Life Insurance Resources</h2>
+      <p class="res__text">
+        Straightforward information to help you understand costs, coverage and what to do when life insurance gets
+        complicated.
+      </p>
+    </div>
+    <div class="res__grid">
+      <a class="res__feature" href={featured.href}>
+        <span class="res__feature-icon">
+          <HomeIcon name="tag" size={32} />
+        </span>
+        <span class="res__feature-title">{featured.title}</span>{' '}
+        <span class="res__feature-desc">{featured.description}</span>{' '}
+        <span class="res__go">
+          Read the guide
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </span>
+      </a>
+      <ul class="res__list" role="list">
+        {
+          more.map((r) => (
+            <li class="res__item">
+              <a class="res__link" href={r.href}>
+                <span class="res__link-body">
+                  <span class="res__link-title">{r.title}</span>{' '}
+                  <span class="res__link-desc">{r.description}</span>
+                </span>
+                <svg class="res__arrow" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .res {
+    padding-block: var(--space-12);
+    background: var(--home-cream);
+  }
+  .res__head {
+    margin-bottom: var(--space-8);
+  }
+  .res__title {
+    margin: 0 0 var(--space-4);
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .res__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-bottom: var(--space-4);
+    background: var(--home-gold);
+  }
+  .res__text {
+    margin: 0;
+    max-width: 38rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  .res__grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  /* Featured guide: a white panel with a heritage-green rule on its left. */
+  .res__feature {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-left: 6px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  /* Desktop only: on phones it would just add height. */
+  .res__feature-icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: var(--space-2);
+    border-radius: 50%;
+    background: var(--home-green-tint);
+    color: var(--color-primary);
+  }
+  .res__feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+  .res__feature-desc {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+  }
+  .res__go {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  .res__go svg,
+  .res__arrow {
+    flex: none;
+    transition: transform 0.15s ease;
+  }
+  .res__feature:hover,
+  .res__feature:focus-visible {
+    border-color: var(--color-primary);
+    color: var(--color-text);
+  }
+  .res__feature:hover .res__feature-title,
+  .res__feature:focus-visible .res__feature-title {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
+  }
+  .res__feature:hover .res__go svg,
+  .res__feature:focus-visible .res__go svg {
+    transform: translateX(3px);
+  }
+
+  /* Secondary guides: rows under a charcoal rule, divided by hairlines. */
+  .res__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--color-text);
+  }
+  .res__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .res__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-2) var(--space-4) var(--space-1);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .res__link-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    min-width: 0;
+  }
+  .res__link-title {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-text);
+  }
+  .res__link-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+  }
+  .res__arrow {
+    color: var(--color-primary);
+  }
+  .res__link:hover,
+  .res__link:focus-visible {
+    background: var(--color-bg);
+  }
+  .res__link:hover .res__link-title,
+  .res__link:focus-visible .res__link-title {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .res__link:hover .res__arrow,
+  .res__link:focus-visible .res__arrow {
+    transform: translateX(3px);
+  }
+
+  /* Desktop: heading and introduction side by side; the featured guide
+     spans the first two columns of the 3-column grid, the three secondary
+     guides stack in the third. */
+  @media (min-width: 64rem) {
+    .res {
+      padding-block: 4.5rem;
+    }
+    .res__head {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: var(--space-6);
+      align-items: end;
+      margin-bottom: var(--space-12);
+    }
+    .res__title {
+      margin: 0;
+    }
+    .res__text {
+      grid-column: span 2;
+      font-size: 1.1875rem;
+    }
+    .res__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+    }
+    .res__feature {
+      grid-column: span 2;
+      justify-content: center;
+      gap: var(--space-4);
+      padding: var(--space-12);
+    }
+    .res__feature-icon {
+      display: inline-flex;
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: var(--space-4);
+    }
+    /* The content sits together in the middle of the panel (the panel is as
+       tall as the three guides beside it). */
+    .res__go {
+      margin-top: var(--space-2);
+    }
+    .res__feature-title {
+      max-width: 34rem;
+      font-size: 2.25rem;
+      line-height: 1.15;
+    }
+    .res__feature-desc {
+      max-width: 34rem;
+      font-size: 1.1875rem;
+    }
+    .res__list {
+      display: flex;
+      flex-direction: column;
+    }
+    .res__item {
+      flex: 1;
+      display: flex;
+    }
+    .res__link {
+      flex: 1;
+      padding-block: var(--space-6);
+    }
+    .res__link-title {
+      font-size: 1.25rem;
+    }
+  }
+</style>

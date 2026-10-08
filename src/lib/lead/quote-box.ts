@@ -11,13 +11,19 @@
 // after the page has loaded and the browser is idle, when it nears the
 // screen; either: immediately on click). Without JavaScript the button opens
 // the hosted Fillout form. All visible text is copy from the live site.
+//
+// With lead.quoteForm set to 'formspark' (the default), the native FEXGuy
+// form (lead-form.ts) is rendered instead and none of the Fillout code runs:
+// the native box has no [data-quote-slot], so quote-form.ts does nothing.
 import { lead } from '../../config/lead';
+import { leadFormHtml } from './lead-form';
 
 export type QuoteBoxVariant = 'sidebar' | 'inline';
 
 export function quoteBoxHtml(variant: QuoteBoxVariant): string {
+  if (lead.quoteForm === 'formspark') return leadFormHtml(variant);
   const title =
-    variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">NEED INFO...LETS TEXT FIRST</p>' : '';
+    variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
   // aria-labelledby needs a role on a <div>: the titled sidebar box is a named
   // region (landmark) for screen-reader users.
   const labelledBy = variant === 'sidebar' ? ' role="region" aria-labelledby="quote-title"' : '';

@@ -48,17 +48,17 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance With Kidney Disease?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance with kidney disease?</strong></h2>
 
 <p>Absolutely! You might even qualify for first-day coverage with no waiting period if you’re keeping up with your treatments and medications.</p>
 
-<h2 id="policies-available"><strong>Types Of Burial Insurance Available For Kidney Disease Patients</strong></h2>
+<h2 id="policies-available"><strong>Types of burial insurance available for kidney disease patients</strong></h2>
 
 <p><strong>First-Day Coverage</strong> – No medical exams required, just answer a few simple health questions. The best part? No waiting period. You’re covered from day one, and your beneficiary gets the full death benefit when you pass. Talk about instant peace of mind!</p>
 
 <p><strong>Guaranteed Issue Whole Life Insuranc</strong>e – There are no medical exams or health questions. However, there’s a two-year waiting period for health-related causes of death. If you pass from an illness during that time, your beneficiaries get all your premiums back plus 7-10% interest. Once those two years are up, it’s 100% death benefit, no matter how you go.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Kidney Disease?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have kidney disease?</strong></h2>
 
 <p><strong>Chronic Kidney Disease (Renal disease) – </strong>If you have kidney disease and aren’t on dialysis, first-day coverage insurance is your best bet. Some companies are fine to offer this, depending on your zip code (not all states allow this coverage).</p>
 
@@ -66,7 +66,7 @@ sidebar: true
 
 <p><strong>Kidney Transplant – </strong>Had a kidney transplant or been told you need one? Your go-to option is guaranteed issue life insurance – no medical exams, no health questions. If your transplant was more than five years ago, you might even qualify for first-day coverage, depending on your zip code.</p>
 
-<h2 id="burial-insurance-cost"><strong>How Much Does Burial Insurance Cost If I Have Kidney Disease?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>How much does burial insurance cost if I have kidney disease?</strong></h2>
 
 <p><strong>The cost of burial insurance if you have kidney disease will depend on your:</strong></p>
 
@@ -90,7 +90,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -123,7 +123,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -145,11 +145,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope, you don’t need a medical exam to get burial insurance if you have kidney disease or are on dialysis. Just answer a few basic health questions. The application process is a breeze – no medical records, blood, or urine samples are needed. We can often get you approved within minutes.</p>
 
-<h2 id="kidney-disease-underwriting"><strong>Burial Insurance Underwriting With Kidney Disease</strong></h2>
+<h2 id="kidney-disease-underwriting"><strong>Burial insurance underwriting with kidney disease</strong></h2>
 
 <p>Life insurance companies ask health questions and check your prescription history to decide if you’re eligible.</p>
 
@@ -203,7 +203,7 @@ sidebar: true
 
 <p>If you’re taking any of these medications, the insurance company will know you’re receiving kidney disease treatments.</p>
 
-<h2 id="information-we-need"><strong>Information We Need If You Have Kidney Disease</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you have kidney disease</strong></h2>
 
 <p><strong>To capture the best rates, here are some questions we might ask about your kidney disease:</strong></p>
 
@@ -220,27 +220,27 @@ sidebar: true
 
 <p>Answer every question honestly. The more details you provide, the better your chances of landing affordable first-day coverage insurance.</p>
 
-<h2 id="rejected-application"><strong>What If My Insurance Application Was Rejected Because of Kidney Disease?</strong></h2>
+<h2 id="rejected-application"><strong>What if my insurance application was rejected because of kidney disease?</strong></h2>
 
 <p>If your insurance application got the boot from another insurance company because of kidney disease, don’t stress! We help clients get approved by shopping around with multiple life insurance companies that actually accept applicants with kidney issues.</p>
 
 <p>If necessary, kidney transplant patients can request a guaranteed acceptance life insurance plan with no medical exam or health questions. Approval is guaranteed, no matter your health.</p>
 
-<h2 id="getting-first-day-coverage"><strong>How To Get First-Day Coverage Insurance</strong></h2>
+<h2 id="getting-first-day-coverage"><strong>How to get first-day coverage insurance</strong></h2>
 
 <p>Want first-day coverage burial insurance? Your best bet is to work with an independent life insurance agent from Final Expense Guy who knows the top companies offering first-day coverage for people with kidney disease.</p>
 
 <p>The life insurance experts at Final Expense Guy will guide you through the entire application process, making it as smooth as possible.</p>
 
-<h2 id="how-can-final-expense-guy-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
+<h2 id="how-can-final-expense-guy-help"><strong>How can Final Expense Guy help me?</strong></h2>
 
 <p>Why waste your time hunting down insurance companies when we can do it all for you? We work with top-rated insurance carriers that specialize in covering high-risk clients.</p>
 
 <p>Our licensed insurance agents will search for the best companies to find you the best rates, and we promise to make the process quick and easy.</p>
 
-<p>Just fill out our quote form on this page or call us at (888) 862-9456, and we’ll get you an accurate quote in no time.</p>
+<p>Just fill out our quote form on this page or call us at 888-862-9456, and we’ll get you an accurate quote in no time.</p>
 
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is kidney disease a pre-existing condition for life insurance?</strong></p>
 

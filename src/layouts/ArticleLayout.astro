@@ -1,0 +1,887 @@
+---
+// Article template v2 (approved design, October 2026), used only by the pages
+// opted in through src/config/article-pages.ts and rendered by
+// src/pages/[...article].astro. Every other page still renders through
+// ContentLayout, unchanged.
+//
+// It presents the page's migrated body without changing its words:
+//   breadcrumb › H1 › author row
+//   summary (Quick Answer + Here's the Bottom Line) › early quote button
+//   (phones/tablets) › header illustration (if any) › "In This Article" ›
+//   article (FAQ and case stories
+//   grouped) › About the author › Related Topics, with the quote form in the
+//   sidebar (after the article on phones, as the next step).
+// Variant 'hub' (link-collection pages such as /a-z-health/): the same
+// frame, with the page's "✓ / ✘" link lines shown as grouped lists.
+// The homepage palette is applied through <body class="page-article-v2">, so
+// the header, footer, buttons, quote form and mobile call bar match the
+// approved homepage; the old gray call-to-action bar is left out here.
+import BaseLayout from './BaseLayout.astro';
+import QuoteBox from '@/components/lead/QuoteBox.astro';
+import Breadcrumbs from '@/components/article/Breadcrumbs.astro';
+import ArticleByline from '@/components/article/ArticleByline.astro';
+import ArticleSummary from '@/components/article/ArticleSummary.astro';
+import ArticleToc from '@/components/article/ArticleToc.astro';
+import AuthorBio from '@/components/article/AuthorBio.astro';
+import RelatedTopics from '@/components/article/RelatedTopics.astro';
+import { enhanceArticle, htmlToText } from '@/lib/article/enhance';
+import { absoluteUrl, articleGraph, migratedDates } from '@/lib/seo/schema';
+import type { ResolvedArticle } from '@/lib/article/config';
+import type { PageEntry } from '@/lib/pages';
+import { isSearchable, pagePath } from '@/lib/pages';
+import { lead } from '@/config/lead';
+import { categoryMoreHtml } from '@/lib/hub-nav';
+import { HUB_SUMMARIES } from '@/config/hub-nav';
+import { LEGACY_INTROS } from '@/config/article-intros';
+
+export interface Props {
+  entry: PageEntry;
+  article: ResolvedArticle;
+}
+
+const { entry, article: config } = Astro.props;
+const d = entry.data;
+const article = enhanceArticle(entry.rendered?.html ?? '', {
+  variant: config.variant,
+  legacyIntro: LEGACY_INTROS[pagePath(entry)],
+});
+const hub = config.variant === 'hub';
+const searchable = isSearchable(entry) ? '' : undefined;
+// Health category pages: the conditions their article doesn't link yet
+// (src/config/hub-nav.ts), after the article.
+const categoryMore = categoryMoreHtml(pagePath(entry));
+
+// The page's real dates, from its migrated metadata only (never the build).
+const dates = migratedDates(d.jsonLd, d.headMeta);
+const updated = dates.modified?.slice(0, 10);
+
+// Structured data: the shared graph replaces the page's migrated WordPress
+// JSON-LD (which stays in frontmatter only as the source of its dates).
+// Breadcrumbs come from the same data as the visible trail.
+const canonical = d.canonical ?? pagePath(entry);
+const ogImage = d.headMeta?.find((m) => m.property === 'og:image')?.content;
+const ogSize = (p: string) => Number(d.headMeta?.find((m) => m.property === p)?.content) || undefined;
+const schema = articleGraph({
+  url: absoluteUrl(canonical),
+  headline: htmlToText(article.h1),
+  crumbs: config.breadcrumbs,
+  dates,
+  image: ogImage ? { url: ogImage, width: ogSize('og:image:width'), height: ogSize('og:image:height') } : undefined,
+});
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  robots={d.robots}
+  noindex={d.noindex}
+  canonical={canonical}
+  headMeta={d.headMeta}
+  jsonLd={[schema]}
+  bodyClass="page-article-v2"
+>
+  <header class="art-head">
+    <div class="container">
+      <div class="art-head__inner">
+        <Breadcrumbs crumbs={config.breadcrumbs} />
+        <h1 class="art-head__title" data-pagefind-body={searchable} set:html={article.h1} />
+        <ArticleByline updated={updated} />
+      </div>
+    </div>
+  </header>
+
+  <div class="container art-grid">
+    <article class="art-main">
+      <ArticleSummary quickAnswer={config.quickAnswer} guide={HUB_SUMMARIES[pagePath(entry)]} takeaways={article.takeaways} />
+
+      <p class="art-cta" data-pagefind-ignore>
+        <a class="btn btn--primary art-cta__btn" href="#quote">GET MY QUOTE</a>
+        <span class="art-cta__call">or call <a href={lead.phone.href}>{lead.phone.display}</a></span>
+      </p>
+
+      {article.feature && <div class="art-feature" set:html={article.feature} />}
+
+      <ArticleToc items={article.toc} />
+
+      {article.intro && <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />}
+
+      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-pagefind-body={searchable} set:html={article.body} />
+
+      {categoryMore && <div class="art-body art-catmore" set:html={categoryMore} />}
+
+      <div class="art-end">
+        <AuthorBio />
+        <RelatedTopics links={config.related} hub={config.relatedHub} />
+      </div>
+    </article>
+
+    <aside class="art-aside" aria-label="Get a quote">
+      <QuoteBox />
+    </aside>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  /* Palette: the site colors come from the global tokens (global.css); these
+     are the homepage's extra tokens (same values as body.page-home in
+     src/pages/index.astro), scoped to this template's pages. */
+  body.page-article-v2 {
+    --home-cream: #f7f3e8;
+    --home-stone: #efebe2;
+    --home-gold: #b68a35;
+    --home-green-tint: #e4ece7;
+    --home-radius: 0.375rem;
+  }
+  body.page-article-v2 .btn--secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  body.page-article-v2 .btn {
+    text-align: center;
+  }
+
+  /* --- Article body typography (migrated HTML) ---------------------------- */
+  body.page-article-v2 .art-body {
+    max-width: none;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body p {
+    margin: 0 0 1.25rem;
+  }
+  /* Rhythm: every H2 opens a new section — generous space above, a full
+     hairline and a short gold accent (the homepage's heading rule), so the
+     major landmarks are easy to spot while scrolling. One treatment for all
+     H2s; one for all H3s (green, smaller). Case is never changed by CSS. */
+  body.page-article-v2 .art-body h2 {
+    position: relative;
+    margin: 3.5rem 0 1.25rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.625rem);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    color: var(--color-text);
+    scroll-margin-top: var(--space-4);
+  }
+  body.page-article-v2 .art-body h2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 3rem;
+    height: 3px;
+    background: var(--home-gold);
+  }
+  body.page-article-v2 .art-body > h2:first-child {
+    margin-top: 2.5rem;
+  }
+  body.page-article-v2 .art-body h3 {
+    margin: 2.25rem 0 0.75rem;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body h3 strong {
+    font-weight: inherit;
+  }
+  /* The header illustration, between the summary and the contents panel. */
+  body.page-article-v2 .art-feature figure {
+    margin: 0 0 var(--space-6);
+  }
+  body.page-article-v2 .art-feature img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: var(--home-radius);
+  }
+  /* The opening paragraph(s) under the contents panel. */
+  body.page-article-v2 .art-body--intro {
+    margin-top: var(--space-8);
+  }
+  /* Calls to action written into the article (enhance.ts): same words, a
+     quiet note, so the page reads as editorial content. */
+  body.page-article-v2 .art-body .art-note {
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--color-border);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+  /* Case stories (enhance.ts): an occasional cream aside. */
+  body.page-article-v2 .art-body .art-story {
+    margin: 1.75rem 0;
+    padding: var(--space-6);
+    background: var(--home-cream);
+    border-left: 3px solid var(--home-gold);
+    border-radius: var(--home-radius);
+  }
+  body.page-article-v2 .art-body .art-story h3 {
+    margin-top: 0;
+  }
+  body.page-article-v2 .art-body .art-story p:last-child {
+    margin-bottom: 0;
+  }
+  body.page-article-v2 .art-body :is(ul, ol) {
+    margin: 0 0 1.5rem;
+    /* Same text indent as the global --list-indent: the list item adds
+       0.25rem of its own padding. */
+    padding-left: calc(var(--list-indent) - 0.25rem);
+  }
+  body.page-article-v2 .art-body li {
+    margin-bottom: 0.625rem;
+    padding-left: 0.25rem;
+  }
+  /* Ordinary lists (no class): no extra gap between items, as in the
+     global editorial lists; a nested list stays with its item. */
+  body.page-article-v2 .art-body :is(ul, ol):not([class]) > li {
+    margin-bottom: 0;
+  }
+  body.page-article-v2 .art-body :is(ul, ol):not([class]) > li > :is(ul, ol):not([class]) {
+    margin: var(--space-1) 0 0;
+  }
+  /* An introductory paragraph sits 4px above the list it introduces. */
+  body.page-article-v2 .art-body p:not([class]):has(+ :is(ul, ol):not([class])) {
+    margin-bottom: var(--space-1);
+  }
+  body.page-article-v2 .art-body li::marker {
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body a {
+    color: var(--color-primary);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  body.page-article-v2 .art-body a:hover {
+    color: var(--color-primary-hover);
+    text-decoration-thickness: 2px;
+  }
+  body.page-article-v2 .art-body figure {
+    margin: 2rem 0;
+  }
+  body.page-article-v2 .art-body figure img {
+    margin: 0;
+    border-radius: var(--home-radius);
+  }
+
+  /* Tables, calm and editorial: a stone header row over a green rule,
+     hairlines between rows, no heavy banding; wide tables scroll sideways
+     (src/scripts/scroll-tables.ts). */
+  body.page-article-v2 .art-body table {
+    /* The bordered box hugs the table; still scrolls when wider than the
+       column (display: block, overflow-x: auto from global.css). */
+    width: max-content;
+    max-width: 100%;
+    margin: 1.25rem 0 2.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius);
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  body.page-article-v2 .art-body th {
+    padding: 0.75rem 1rem;
+    background: var(--home-stone);
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-text);
+    font-weight: 700;
+    text-align: left;
+  }
+  body.page-article-v2 .art-body td {
+    padding: 0.7rem 1rem;
+    border-top: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  body.page-article-v2 .art-body tr:nth-child(even) td {
+    background: transparent;
+  }
+  body.page-article-v2 .art-body td:first-child {
+    font-weight: 700;
+  }
+
+  /* FAQ (grouped by enhance.ts): the homepage FAQ's look — gold rule, a
+     charcoal top rule and hairlines between questions — with every answer
+     shown (each question stays an H3). */
+  body.page-article-v2 .art-body .article-faq__list {
+    border-top: 2px solid var(--color-text);
+  }
+  body.page-article-v2 .art-body .article-faq__item {
+    padding-block: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+  }
+  body.page-article-v2 .art-body .article-faq__item h3 {
+    margin: 0 0 var(--space-3);
+    font-size: 1.1875rem;
+    line-height: 1.35;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .article-faq__item p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* --- Elements of other page types (the pilot pages beyond COPD) -------- */
+  /* H4: a small charcoal subheading under an H3. */
+  body.page-article-v2 .art-body h4 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: none;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body h4 strong {
+    font-weight: inherit;
+  }
+  /* Migrated reader comments (enhance.ts sets them after the article): a
+     small heading and compact names, so they read as comments, not as more
+     article sections. The comment list keeps the global .comments styles. */
+  body.page-article-v2 .art-body .art-comments h2 {
+    margin: 3.5rem 0 0;
+    padding-top: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  body.page-article-v2 .art-body .art-comments h2::before {
+    content: none;
+  }
+  body.page-article-v2 .art-body .art-comments .comments {
+    margin-top: var(--space-4);
+  }
+  body.page-article-v2 .art-body .art-comments .comment-name {
+    margin: 0 0 var(--space-2);
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-comments p {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  /* A rule right before an H2 would double the H2's own hairline. */
+  body.page-article-v2 .art-body hr:has(+ h2) {
+    display: none;
+  }
+  /* Tables whose header row was written with <td> cells. */
+  body.page-article-v2 .art-body thead td {
+    padding: 0.75rem 1rem;
+    background: var(--home-stone);
+    border-top: 0;
+    border-bottom: 2px solid var(--color-primary);
+    font-weight: 700;
+  }
+  /* A table wrapped in a <figure>: the figure keeps the table's spacing. */
+  body.page-article-v2 .art-body figure.table-wrap table {
+    margin: 0;
+  }
+  /* FAQ whose questions are bold paragraphs (same look as question H3s). */
+  body.page-article-v2 .art-body .article-faq__q {
+    margin: 0 0 var(--space-3);
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text);
+  }
+  /* Questions written as <details> (e.g. a review's "Top 10 Questions"):
+     the FAQ's rules, with each answer opened on demand. */
+  body.page-article-v2 .art-body .art-details {
+    margin: 1.25rem 0 2.5rem;
+    border-top: 2px solid var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-details details {
+    border-bottom: 1px solid var(--color-border);
+  }
+  body.page-article-v2 .art-body .art-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    min-height: var(--tap-target);
+    padding-block: var(--space-4);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
+    cursor: pointer;
+    list-style: none;
+  }
+  body.page-article-v2 .art-body .art-details summary::-webkit-details-marker {
+    display: none;
+  }
+  body.page-article-v2 .art-body .art-details summary::after {
+    content: '+';
+    flex: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+  body.page-article-v2 .art-body .art-details details[open] summary::after {
+    content: '−';
+  }
+  body.page-article-v2 .art-body .art-details summary:hover {
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .art-details details[open] {
+    padding-bottom: var(--space-5, 1.25rem);
+  }
+  body.page-article-v2 .art-body .art-details details :is(ul, p):last-child {
+    margin-bottom: 0;
+  }
+  /* Company reviews: a "PROS" list and its "CONS" list side by side. */
+  body.page-article-v2 .art-body .art-proscons {
+    display: grid;
+    gap: var(--space-4);
+    margin: 1rem 0 2rem;
+  }
+  body.page-article-v2 .art-body .art-proscons__col {
+    padding: var(--space-5, 1.25rem) var(--space-6);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+  }
+  body.page-article-v2 .art-body .art-proscons__col--cons {
+    border-top-color: var(--color-text-muted);
+    background: var(--home-cream);
+  }
+  body.page-article-v2 .art-body .art-proscons__label {
+    margin: 0 0 var(--space-3);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .art-proscons__col--cons .art-proscons__label {
+    color: var(--color-text);
+  }
+  body.page-article-v2 .art-body .art-proscons ul {
+    margin: 0;
+  }
+  body.page-article-v2 .art-body .art-proscons li:last-child {
+    margin-bottom: 0;
+  }
+  @media (min-width: 40rem) {
+    body.page-article-v2 .art-body .art-proscons {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Lists that are only links (enhance.ts), e.g. a pillar's condition
+     links: columns, so a long list stays short. */
+  body.page-article-v2 .art-body .art-linklist li {
+    break-inside: avoid;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body .art-linklist {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+  }
+  @media (min-width: 48rem) {
+    body.page-article-v2 .art-body .art-linklist {
+      columns: 3;
+    }
+  }
+
+  /* --- Hub variant: grouped link lists (enhance.ts, variant 'hub') -------- */
+  body.page-article-v2 .art-body--hub .hub-group {
+    margin: 2.5rem 0 0;
+  }
+  body.page-article-v2 .art-body--hub .hub-group__title {
+    margin: 0 0 var(--space-4);
+    padding-bottom: var(--space-3);
+    border-bottom: 2px solid var(--color-text);
+    font-size: 1.0625rem;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body--hub .hub-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 1;
+    column-gap: var(--space-8);
+  }
+  body.page-article-v2 .art-body--hub .hub-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--color-border);
+    break-inside: avoid;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body--hub .hub-item__mark {
+    flex: none;
+    width: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body--hub .hub-item--no .hub-item__mark {
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body--hub .hub-item a {
+    font-weight: 700;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body--hub .hub-list {
+      columns: 2;
+    }
+  }
+
+  /* --- Hub navigation (src/lib/hub-nav.ts) -------------------------------
+     Plain links in the article's own language (hairlines, green, the gold
+     accent). Nothing collapsed; case is never changed by CSS. */
+  body.page-article-v2 .art-body .hubnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body.page-article-v2 .art-body .hubnav li {
+    margin: 0;
+  }
+  body.page-article-v2 .art-body .hubnav a {
+    text-underline-offset: 0.18em;
+  }
+  /* Every listed link is a target of at least 24px (WCAG 2.5.8). */
+  body.page-article-v2 .art-body .hubnav li > a,
+  body.page-article-v2 .art-body .hubnav-all a,
+  body.page-article-v2 .art-body .hubnav-company__also a {
+    display: inline-block;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+  }
+  /* Burial Insurance Guides: one card per cluster, with one primary page,
+     its supporting pages, and "More guides" kept quiet underneath. */
+  body.page-article-v2 .art-body .hubnav-cards {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: 1.5rem;
+  }
+  body.page-article-v2 .art-body .hubnav-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5, 1.25rem) var(--space-5, 1.25rem) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+  }
+  body.page-article-v2 .art-body .hubnav-card__title {
+    margin: 0 0 var(--space-2);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: var(--tap-target);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary svg {
+    flex: none;
+    color: var(--home-gold);
+  }
+  body.page-article-v2 .art-body .hubnav-card__primary:hover span {
+    text-decoration: underline;
+  }
+  body.page-article-v2 .art-body .hubnav-card__links li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-card__more {
+    padding-top: var(--space-3);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  body.page-article-v2 .art-body .hubnav-card__more-label {
+    margin: 0 0 0.125rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+  body.page-article-v2 .art-body .hubnav-more li {
+    padding-block: 0.125rem;
+  }
+  /* Category tiles (health categories). */
+  body.page-article-v2 .art-body .hubnav-tiles {
+    display: grid;
+    gap: var(--space-3);
+    margin-top: 1rem;
+  }
+  body.page-article-v2 .art-body .hubnav .hubnav-tiles a {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    height: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--home-gold);
+    border-radius: var(--home-radius);
+    background: var(--color-bg);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  body.page-article-v2 .art-body .hubnav .hubnav-tiles a:hover {
+    background: var(--home-cream);
+    text-decoration: underline;
+  }
+  body.page-article-v2 .art-body .hubnav-all {
+    margin: var(--space-4) 0 0;
+    font-weight: 700;
+  }
+  /* Condition lists: short names in columns, one hairline each. */
+  body.page-article-v2 .art-body .hubnav-grid {
+    margin-top: 0.75rem;
+  }
+  body.page-article-v2 .art-body .hubnav-grid li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    break-inside: avoid;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-group__title {
+    margin-top: 2rem;
+  }
+  /* Company reviews A–Z: letter blocks; "also:" pages under their company. */
+  body.page-article-v2 .art-body .hubnav-az {
+    display: grid;
+    gap: var(--space-4) var(--space-8);
+    margin-top: 0.75rem;
+  }
+  body.page-article-v2 .art-body .hubnav-az__key {
+    margin: 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--color-text);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-primary);
+  }
+  body.page-article-v2 .art-body .hubnav-company > li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  body.page-article-v2 .art-body .hubnav-company__name {
+    font-weight: 700;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also {
+    margin-top: 0.25rem;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    padding-block: 0.125rem;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+  body.page-article-v2 .art-body .hubnav-company__also span {
+    color: var(--color-text-muted);
+  }
+  /* The category pages' list after the article. */
+  body.page-article-v2 .art-catmore {
+    margin-top: 1rem;
+  }
+  @media (min-width: 30rem) {
+    body.page-article-v2 .art-body .hubnav-tiles,
+    body.page-article-v2 .art-body .hubnav-az {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-grid,
+    body.page-article-v2 .art-body .hubnav-company--plain {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+    body.page-article-v2 .art-body .hubnav-company--plain > li {
+      break-inside: avoid;
+    }
+  }
+  @media (min-width: 48rem) {
+    body.page-article-v2 .art-body .hubnav-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-tiles,
+    body.page-article-v2 .art-body .hubnav-az {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    body.page-article-v2 .art-body .hubnav-grid {
+      columns: 3;
+    }
+  }
+
+  /* --- Sidebar quote form: the approved gray frame (global, f0c5152): the
+     footer's light gray (this template's --color-surface) behind the whole
+     box, and a narrow band of it around the white form (12px above and
+     below, 6px at the sides). --------------------------------------------- */
+  body.page-article-v2 .quote-box--sidebar {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    border-radius: var(--home-radius);
+  }
+  body.page-article-v2 .quote-box--sidebar .lead-form {
+    margin: var(--space-3) 0.375rem;
+    background: var(--color-bg);
+  }
+  body.page-article-v2 .quote-box__title {
+    padding-block: var(--space-4);
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+  }
+  /* Submit button: accessible orange (#c2410c, 5.2:1 with white; the old
+     global --color-accent), which the green palette would otherwise
+     replace with green. */
+  body.page-article-v2 .quote-box .lead-form__submit {
+    background: #c2410c;
+    color: #ffffff;
+  }
+  body.page-article-v2 .quote-box .lead-form__submit:hover {
+    background: #c2410c;
+    filter: brightness(0.9);
+  }
+
+  /* --- Pre-footer: cream band with the homepage's gold rule ---------------- */
+  body.page-article-v2 .pre-footer {
+    background: var(--home-cream);
+  }
+  body.page-article-v2 .pre-footer__text::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin: 0 auto var(--space-4);
+    background: var(--home-gold);
+  }
+</style>
+
+<style>
+  /* Header: plain and restrained (the green Quick Answer below is the one
+     strong landmark at the top). */
+  .art-head {
+    padding-block: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .art-head__inner {
+    max-width: 46rem;
+  }
+  .art-head__title {
+    margin: var(--space-2) 0 var(--space-6);
+    font-size: var(--article-h1-size);
+    font-weight: 700;
+    line-height: var(--article-h1-line);
+    letter-spacing: -0.015em;
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  .art-grid {
+    padding-block: var(--space-8) var(--space-12);
+  }
+  .art-main {
+    min-width: 0;
+  }
+  .art-main > :global(.summary) {
+    margin-bottom: var(--space-6);
+  }
+  .art-main > :global(.toc) {
+    margin-top: var(--space-2);
+  }
+
+  /* Early quote button: phones and tablets only (on desktop the form is
+     already in view in the sidebar). */
+  .art-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-4);
+    margin: 0 0 var(--space-8);
+  }
+  .art-cta__btn {
+    flex: 1 1 14rem;
+  }
+  .art-cta__call {
+    flex: 1 1 100%;
+    text-align: center;
+    color: var(--color-text-muted);
+  }
+  @media (min-width: 40rem) {
+    .art-cta__call {
+      flex: 0 1 auto;
+    }
+  }
+  .art-cta__call a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-primary);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  /* End of the article: a firm rule, then About the author and Related
+     Topics as separate steps; on phones the quote form follows as the next
+     step (the pre-footer and footer after it). */
+  .art-end {
+    display: grid;
+    gap: 3.5rem;
+    margin-top: 4rem;
+    padding-top: var(--space-12);
+    border-top: 2px solid var(--color-text);
+  }
+
+  .art-aside {
+    margin-top: 3.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    .art-head {
+      padding-block: var(--space-6) var(--space-8);
+    }
+  }
+  @media (min-width: 64rem) {
+    .art-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 46rem) 21rem;
+      justify-content: space-between;
+      align-items: start;
+      gap: var(--space-12);
+      padding-block: var(--space-12) 4.5rem;
+    }
+    .art-aside {
+      margin-top: 0;
+    }
+    .art-cta {
+      display: none;
+    }
+  }
+</style>

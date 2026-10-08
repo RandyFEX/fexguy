@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>CICA Life Burial Insurance Review</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• CICA Life is weaker financially than the top life insurance companies<br>• Guaranteed issue plans have a 2-year delay before full payout<br>• Coverage amounts are small and may not cover the full final expenses<br>• Customer complaints include slow claims and hard-to-reach service<br>• It works for serious health issues when other companies decline you<br>• Better carriers often offer stronger coverage at similar or lower cost</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• AM Best rates CICA Life B++ (Good), a lower financial strength rating than some top competitors<br>• Guaranteed issue plans have a 2-year delay before full payout<br>• Coverage amounts are small and may not cover the full final expenses<br>• It works for serious health issues when other companies decline you<br>• Healthier applicants may find lower first-day rates with other companies</p>
 
-<p>CICA Life burial insurance is a type of whole life insurance designed for final expenses, with easy approval and no medical exam. The appeal is simple. You can qualify even with serious health problems, and some plans offer first-day coverage. The problem is tradeoffs. The company has a lower financial strength rating than top competitors, and guaranteed issue plans come with a 2-year waiting period before full benefits pay. This makes it a backup option, not a first choice, unless your health limits everything else.</p>
+<p>CICA Life burial insurance is a type of whole life insurance designed for final expenses, with easy approval and no medical exam. The appeal is simple. You can qualify even with serious health problems, and some plans offer first-day coverage. The problem is tradeoffs. The company has a lower financial strength rating than top competitors, and guaranteed issue plans come with a 2-year waiting period before full benefits pay. This makes it a strong choice when your health limits everything else.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -45,9 +45,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="What-To-Ask-Before"><strong>WHAT TO ASK BEFORE BUYING CICA LIFE INSURANCE</strong></h2>
+<h2 id="What-To-Ask-Before"><strong>What to ask before buying CICA Life insurance</strong></h2>
 
-<h3 id="h-what-are-my-policy-options-with-cica-life"><strong>What Are My Policy Options With CICA Life?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-cica-life"><strong>What are my policy options with CICA Life?</strong></h3>
 
 <p><strong>CICA Life offers two final expense insurance products:</strong></p>
 
@@ -136,7 +136,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3 id="h-is-cica-life-burial-insurance-good-for-seniors"><strong>Is CICA Life Burial Insurance Good For Seniors?</strong></h3>
+<h3 id="h-is-cica-life-burial-insurance-good-for-seniors"><strong>Is CICA Life burial insurance good for seniors?</strong></h3>
 
 <p>CICA Life is best for seniors with significant health issues who would not qualify for a first-day coverage plan with other insurance companies.</p>
 
@@ -158,7 +158,7 @@ sidebar: true
 <li>Liver failure</li>
 </ul>
 
-<h3 id="h-health-conditions-not-accepted-for-1st-day-coverage"><strong>Health Conditions NOT Accepted For 1st-Day Coverage</strong></h3>
+<h3 id="h-health-conditions-not-accepted-for-1st-day-coverage"><strong>Health conditions not accepted for 1st-day coverage</strong></h3>
 
 <p><strong>If you have any of the medical conditions below, you will not qualify for CICA’s first-day coverage policy. However, you would qualify for their Guaranteed Issue life insurance product.</strong></p>
 
@@ -186,13 +186,13 @@ sidebar: true
 <li>Terminal illness</li>
 </ul>
 
-<h3 id="h-does-cica-life-have-any-hidden-fine-print-in-their-policy"><strong>Does CICA Life Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3 id="h-does-cica-life-have-any-hidden-fine-print-in-their-policy"><strong>Does CICA Life have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>CICAs Standard Plan offers 1ST-DAY COVERAGE and is a terrific plan with no worrisome fine print. It is a great  policy for people with serious health impairments.</p>
 
 <p>CICA guaranteed issue life insurance comes with a mandatory two-year waiting period. If the policyholder dies during the waiting period, CICA Life will return all the premiums paid plus 10%. We do not recommend CICAs guaranteed issue plan to our clients.</p>
 
-<h2 id="What-Are-The-Pros"><strong>PROS &amp; CONS Of CICA LIFE</strong><br><strong>STANDARD vs. GUARANTEED ISSUE</strong></h2>
+<h2 id="What-Are-The-Pros"><strong>Pros &amp; cons of CICA Life</strong><br><strong>standard vs. guaranteed issue</strong></h2>
 
 <p><strong>PROS</strong> – <strong>STANDARD PLAN (1st-day coverage)</strong></p>
 
@@ -247,7 +247,7 @@ sidebar: true
 </li>
 </ul>
 
-<h2 id="Are-There-Any-Riders"><strong>RIDERS OR OTHER BENEFITS INCLUDED</strong></h2>
+<h2 id="Are-There-Any-Riders"><strong>Riders or other benefits included</strong></h2>
 
 <ul>
 <li><strong>50% Accelerated Living Benefit Rider</strong> – this benefit pays out 50% of your death benefit if you are diagnosed with a terminal illness that is expected to result in death within one year.</li>
@@ -262,11 +262,11 @@ sidebar: true
 <li><strong>Extended Term</strong> – insurance allows you to use your policy’s cash value to buy single-premium term insurance with the same death benefit.</li>
 </ul>
 
-<h2 id="How-Do-I-Get-Approved"><strong>HOW DO I GET APPROVED BY CICA LIFE?</strong></h2>
+<h2 id="How-Do-I-Get-Approved"><strong>How do I get approved by CICA Life?</strong></h2>
 
 <p>CICA Life’s standard plan will ask if you’ve had health issues in the last 12, 24 months, 5 years, and 10 years.</p>
 
-<h3 id="h-cica-life-application-questions"><strong>CICA Life Application Questions</strong></h3>
+<h3 id="h-cica-life-application-questions"><strong>CICA Life application questions</strong></h3>
 
 <p><strong>A)</strong> Are you <strong>CURRENTLY</strong> hospitalized, confined to a bed or nursing facility, residing in an assisted living facility, receiving hospice care, or do you have any physical or mental impairment for which you need or receive assistance or supervision in performing normal activities of daily living, unable to care for yourself, or terminally ill? (Terminally ill means an illness or physical condition, including a physical injury, that can reasonably be expected to result in death within 12 months. A Terminal illness is based on diagnosis by a member of the medical profession.)</p>
 
@@ -286,13 +286,13 @@ sidebar: true
 
 <p><strong>I) </strong>Within the <strong>LAST 2 YEARS</strong>, have you received medical advice or treatment following an attempted suicide?</p>
 
-<h3 id="h-does-cica-life-have-same-day-approval-process"><strong>Does CICA Life Have Same Day Approval Process?</strong></h3>
+<h3 id="h-does-cica-life-have-same-day-approval-process"><strong>Does CICA Life have same day approval process?</strong></h3>
 
 <p>CICA Life has a simple <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application</a> process. You can apply over the phone with the help of Final Expense Guy independent agents.</p>
 
 <p>Your application only takes a few minutes over the phone.</p>
 
-<h2 id="How-Can-I-Get"><strong>CICA LIFE INSURANCE PRICING</strong></h2>
+<h2 id="How-Can-I-Get"><strong>CICA Life insurance pricing</strong></h2>
 
 <table class="table-wrap" id="tablepress-241">
 <thead>
@@ -306,7 +306,7 @@ sidebar: true
 </tr>
 <tr>
 <td>50</td><td>F: $15.10<br>
-M: $25.23</td><td>F: S30.21<br>
+M: $25.23</td><td>F: $30.21<br>
 M: $32.59</td><td>F: $45.31<br>
 M: $48.89</td><td>F: $60.42<br>
 M: $65.18</td>
@@ -337,7 +337,7 @@ M: $87.32</td>
 M: $24.08<br>
 </td><td>F: $43.05<br>
 M: $48.15</td><td>F: $64.58<br>
-$: 72.23</td><td>F: $86.10<br>
+M: $72.23</td><td>F: $86.10<br>
 M: $96.30</td>
 </tr>
 <tr>
@@ -410,13 +410,13 @@ M: $199.38</td><td></td><td></td>
 </tbody>
 </table>
 
-<h3 id="h-cica-life-insurance-compared-to-other-insurance-companies"><strong>CICA Life Insurance Compared To Other Insurance Companies</strong></h3>
+<h3 id="h-cica-life-insurance-compared-to-other-insurance-companies"><strong>CICA Life insurance compared to other insurance companies</strong></h3>
 
 <p>CICA Life is slightly more expensive than other first-day coverage programs, but it is the only one that offers coverage for so many health impairments that almost all other insurance companies would deny.</p>
 
-<h2 id="Company-Questions"><strong>COMMON CICA LIFE INSURANCE QUESTIONS</strong></h2>
+<h2 id="Company-Questions"><strong>Common CICA Life insurance questions</strong></h2>
 
-<h3 id="h-cica-life-s-operational-history"><strong>CICA Life’s Operational History</strong></h3>
+<h3 id="h-cica-life-s-operational-history"><strong>CICA Life’s operational history</strong></h3>
 
 <p>CICA Life of America was incorporated in Texas on June 2, 1965, and began selling life insurance in 1966. It is licensed in multiple states nationwide.</p>
 
@@ -424,21 +424,21 @@ M: $199.38</td><td></td><td></td>
 
 <p><strong>Contact Info</strong><br>Website:&#160;<a href="https://www.citizensinc.com/cica-life/" target="_blank" rel="noopener">https://www.citizensinc.com/cica-life/</a>&#160;<br>Emai &amp; Claims: claims@citizensinc.com<br>Phone: (512) 837-7100</p>
 
-<h3 id="h-cica-life-s-financial-rating"><strong>CICA Life’s Financial Rating</strong></h3>
+<h3 id="h-cica-life-s-financial-rating"><strong>CICA Life’s financial rating</strong></h3>
 
 <p>AM Best has assigned a Financial Strength Rating of B++ (Good) and a Long-Term Issuer Credit Rating of “bbb+” (Good) to CICA Life Insurance Company of America (CICA).</p>
 
-<h3><strong>Does CICA Life Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does CICA Life have any consumer complaints?</strong></h3>
 
-<p>CICA has 2 complaints closed in the last 3 years with the Better Business Bureau. This is remarkably low for ANY business, which means they are a great company to get a policy from.</p>
+<p>Complaint counts change over time, so check CICA’s current record with the Better Business Bureau or your state insurance department before you buy.</p>
 
-<h2 id="What-Should-You-Know"><strong>WHAT SHOULD YOU KNOW BEFORE BUYING CICA LIFE INSURANCE?</strong></h2>
+<h2 id="What-Should-You-Know"><strong>What should you know before buying CICA Life insurance?</strong></h2>
 
-<h3><strong>What is CICA Life’s Sales Process?</strong></h3>
+<h3><strong>What is CICA Life’s sales process?</strong></h3>
 
 <p>Independent life insurance agencies like Final Expense Guy sell CICA Life. We can help you buy life insurance over the phone.</p>
 
-<h2 id="Top-10-Questions"><strong>FREQUENTLY ASKED QUESTIONS ABOUT CICA LIFE</strong></h2>
+<h2 id="Top-10-Questions"><strong>Frequently asked questions about CICA Life</strong></h2>
 
 <details>
 <summary><b>Who owns CICA Life Insurance?</b></summary>
@@ -466,7 +466,7 @@ CICA Life provides non-forfeiture options for policyholders who cannot continue 
 </details>
 
 <details>
-<summary><b>Does Trinity Life insurance expire?</b></summary>
+<summary><b>Does CICA Life insurance expire?</b></summary>
 Both the Standard plan and guaranteed issue policy provide whole life protection.
 </details>
 
@@ -476,9 +476,9 @@ Yes, you can add or subtract coverage and change beneficiaries and address infor
 </details>
 
 <details>
-<summary><b>What are the common terms used when searching for Trinity Life Insurance</b></summary>
+<summary><b>What are the common terms used when searching for CICA Life Insurance</b></summary>
 <ul>
-Here are some common terms people use when searching for, or describing Trinity Life life insurance Products:
+Here are some common terms people use when searching for, or describing CICA Life insurance Products:
 <li>CICA Life Burial Insurance</li>
 <li>CICA Life Cremation Insurance</li>
 <li>CICA Life Final Expense Insurance</li>

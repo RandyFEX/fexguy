@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-cardiomyopathy?"><strong>What Is Cardiomyopathy?</strong></h2>
+<h2 id="what-is-cardiomyopathy?"><strong>What is cardiomyopathy?</strong></h2>
 
 <p>Cardiomyopathy is just a fancy way of saying your heart muscle isn’t working quite as well as it should. It’s like a weak link in the pump, making it harder for your heart to send blood on its grand tour throughout your body. There are a few different types of cardiomyopathy, each with its own cause, kind of like having different flavors of “uh oh” for your heart.</p>
 
@@ -65,11 +65,11 @@ sidebar: true
 
 <p>As for symptoms, they can be a real mixed bag, depending on how serious things are. Some folks might not feel a thing, while others might experience fatigue, shortness of breath, swollen ankles (like you’ve been standing in line all day!), chest pain, or even heart palpitations – that feeling like your heart is doing a little tap dance behind your ribs.</p>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance With Cardiomyopathy?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance with cardiomyopathy?</strong></h2>
 
 <p>Absolutely! You might even score first-day coverage burial insurance if you’re treating your cardiomyopathy and sticking to your doctor’s orders.</p>
 
-<h2 id="types-of-burial-insurance"><strong>What Are The Types Of Burial Insurance With Cardiomyopathy?</strong></h2>
+<h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance with cardiomyopathy?</strong></h2>
 
 <p><strong>First-day Coverage Plan</strong> – This no-medical exam policy kicks in right away with no waiting period. Just answer a few health questions and you’re good to go!</p>
 
@@ -79,17 +79,17 @@ sidebar: true
 
 <p>But heads up, guaranteed issue policies come with a mandatory two-year waiting period. If you pass away during this time, the insurance company will refund all your premiums plus 7-10% interest, depending on the company.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Cardiomyopathy?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have cardiomyopathy?</strong></h2>
 
 <p>First-day coverage is your top pick for burial insurance if you’ve been diagnosed with cardiomyopathy and are getting <a href="https://www.mayoclinic.org/diseases-conditions/cardiomyopathy/diagnosis-treatment/drc-20370714" target="_blank" rel="noreferrer noopener">treatment</a>, or following your doctor’s advice.</p>
 
-<h2 id="do-i-need-medical-exam?"><strong>Do I Need A Medical Exam To Qualify For Cardiomyopathy Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam?"><strong>Do I need a medical exam to qualify for cardiomyopathy burial insurance?</strong></h2>
 
 <p>Nope! Just answer some basic health questions. The application process is a breeze – you won’t need to fetch your medical records or send in blood and urine samples.</p>
 
 <p>With first-day coverage, you’ll often get the thumbs up from the insurance company within minutes!</p>
 
-<h2 id="burial-insurance-cost"><strong>What Is The Cost Of Burial Insurance If I Have Cardiomyopathy</strong>?</h2>
+<h2 id="burial-insurance-cost"><strong>What is the cost of burial insurance if I have cardiomyopathy</strong>?</h2>
 
 <p><strong>The price of burial insurance if you have cardiomyopathy will depend on your:</strong></p>
 
@@ -114,7 +114,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies – Level – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies – Level – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="burial-insurance-underwriting"><strong>Burial Insurance Underwriting For Cardiomyopathy Patients</strong></h2>
+<h2 id="burial-insurance-underwriting"><strong>Burial insurance underwriting for cardiomyopathy patients</strong></h2>
 
 <p><strong>Burial insurance companies offering first-day coverage have two sassy ways to check your health:</strong></p>
 
@@ -198,7 +198,7 @@ sidebar: true
 
 <p>If your prescription history includes common medications for cardiomyopathy, the insurance company will know you have a history of cardiomyopathy or heart disease.</p>
 
-<h2 id="information-we-need"><strong>Information We Need If You Have Cardiomyopathy</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you have cardiomyopathy</strong></h2>
 
 <p><strong>To qualify you for first-day coverage, we might ask you some of the following questions:&#160;</strong></p>
 
@@ -214,17 +214,17 @@ sidebar: true
 <li>Do you have any medical conditions aside from cardiomyopathy?</li>
 </ul>
 
-<h2 id="getting-first-day-coverage"><strong>How To Get First-Day Coverage Insurance If You Have Cardiomyopathy</strong></h2>
+<h2 id="getting-first-day-coverage"><strong>How to get first-day coverage insurance if you have cardiomyopathy</strong></h2>
 
 <p>Teaming up with an independent life insurance agency like Final Expense Guy is your best bet for snagging first-day coverage insurance if you have cardiomyopathy. We’ll shop around different insurance companies with generous underwriting for cardiomyopathy and compare prices to find you the best rate.</p>
 
-<h2 id="what-if-i’m-rejected?"><strong>What If My Application Was Rejected Because Of Cardiomyopathy?</strong></h2>
+<h2 id="what-if-i’m-rejected?"><strong>What if my application was rejected because of cardiomyopathy?</strong></h2>
 
 <p>Rejections happen, but we’re good at finding other options. It’s like having a backup plan for your backup plan! We can search for many companies that approve folks with cardiomyopathy for first-day coverage.</p>
 
 <p>Now, if you’ve been living life in the fast lane with two hospital stays in the past two years, first-day coverage might be a tough nut to crack. There’s always a guaranteed issue insurance. No doctor needed, and no health questions! It’s like a sure thing, even if life throws you a curveball.</p>
 
-<h2 id="applying-for-burial-insurance"><strong>How To Apply For Burial Insurance With Cardiomyopathy</strong></h2>
+<h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with cardiomyopathy</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Don’t try to navigate this insurance jungle alone! Find an independent agent from Final Expense Guy who specializes in cardiomyopathy. We’ll be your own personal insurance sherpa, guiding you through all the options and helping you snag the best deal.</li>
@@ -232,15 +232,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong> – Don’t just skim the paperwork! Take your time and make sure you understand everything in the policy before you sign. It’s your money, and you must ensure it covers what you need it to.</li>
 </ol>
 
-<h2 id="how-can-final-expense-guy-help?"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Here at Final Expense Guy, we’re the Cupid of life insurance, especially for folks with heart conditions.</p>
-
-<p>We work with a whole bunch of top-notch (think A+ rated!) insurance companies who don’t shy away from a little high risk. We’ll do the legwork, search through all those companies, and find you the best rate possible. Basically, we’ll play matchmaker and pair you with your perfect burial insurance option.</p>
-
-<p>We’ll make it easy. Fill out our quick quote form or call us at (888)862-9456. We’ll get you accurate quotes for burial insurance that fits your needs and budget. Let us handle the insurance stuff, so you can focus on what matters most!</p>
-
-<h2 id="faq">Frequently Asked Questions</h2>
+<h2 id="faq">Frequently asked questions</h2>
 
 <p><strong>Can you get cremation insurance with cardiomyopathy?</strong><br>Absolutely! Depending on your overall health and zip code, you might even snag first-day coverage.</p>
 

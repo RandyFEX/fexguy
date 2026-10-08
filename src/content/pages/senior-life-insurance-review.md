@@ -25,7 +25,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-life-insurance-pricing-and-value"><strong><strong>SENIOR LIFE INSURANCE</strong></strong> <strong>PRICING AND VALUE</strong></h2>
+<h2 id="h-senior-life-insurance-pricing-and-value"><strong><strong>Senior Life Insurance</strong></strong> <strong>pricing and value</strong></h2>
 
 <p>Senior Life Insurance pricing typically costs more per dollar of coverage than comparable final expense policies from independent insurers like the Final Expense Guy.</p>
 
@@ -42,7 +42,7 @@ sidebar: true
 
 <h3>
 ⚠️
-The Two-Year Wait Surprise
+The two-year wait surprise
 </h3>
 
 <p>
@@ -102,7 +102,7 @@ I reviewed her Senior Life Insurance contract and explained how guaranteed issue
 
 <hr>
 
-<h2 id="h-senior-life-insurance-product-line"><strong><strong>SENIOR LIFE INSURANCE</strong></strong> <strong>PRODUCT LINE</strong></h2>
+<h2 id="h-senior-life-insurance-product-line"><strong><strong>Senior Life Insurance</strong></strong> <strong>product line</strong></h2>
 
 <p>Senior Life focuses on basic term, final expense, and simplified products designed to cover small end-of-life costs rather than long-term financial needs.</p>
 
@@ -191,7 +191,7 @@ I reviewed her Senior Life Insurance contract and explained how guaranteed issue
 
 <hr>
 
-<h2 id="h-senior-life-insurance-legacy-assurance-explained"><strong><strong><strong>SENIOR LIFE INSURANCE</strong></strong></strong> <strong>LEGACY ASSURANCE EXPLAINED</strong></h2>
+<h2 id="h-senior-life-insurance-legacy-assurance-explained"><strong><strong><strong>Senior Life Insurance</strong></strong></strong> <strong>Legacy Assurance explained</strong></h2>
 
 <p>Legacy Assurance is an add-on membership with planning perks that’s separate from the actual life insurance payout.</p>
 
@@ -213,7 +213,7 @@ I reviewed her Senior Life Insurance contract and explained how guaranteed issue
 
 <h3>
 🔍
-The Accidental Rider Assumption
+The accidental rider assumption
 </h3>
 
 <p>
@@ -234,7 +234,7 @@ I reviewed the rider language and showed why it didn’t change the outcome they
 
 <hr>
 
-<h2 id="h-senior-life-insurance-customer-experiences"><strong><strong><strong>SENIOR LIFE INSURANCE</strong></strong> CUSTOMER EXPERIENCES</strong></h2>
+<h2 id="h-senior-life-insurance-customer-experiences"><strong><strong><strong>Senior Life Insurance</strong></strong> customer experiences</strong></h2>
 
 <p>Customer feedback shows a mix of outcomes, with common complaints centered on sales pressure, pricing confusion, and follow-up service.</p>
 
@@ -287,7 +287,7 @@ I reviewed the rider language and showed why it didn’t change the outcome they
 
 <h3>
 💡
-The Captive Agent Limitation
+The captive agent limitation
 </h3>
 
 <p>
@@ -308,7 +308,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 
 <hr>
 
-<h2 id="h-why-the-final-expense-guy-is-likely-a-better-fit"><strong>WHY “THE FINAL EXPENSE GUY” IS LIKELY A BETTER FIT</strong></h2>
+<h2 id="h-why-the-final-expense-guy-is-likely-a-better-fit"><strong>Why “the Final Expense Guy” is likely a better fit</strong></h2>
 
 <p>Working with an independent broker opens the door to more choices, clearer pricing, and policies that better match real health situations.</p>
 
@@ -368,7 +368,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 
 <hr>
 
-<h2 id="h-senior-life-insurance-company-history"><strong>SENIOR LIFE INSURANCE COMPANY HISTORY</strong></h2>
+<h2 id="h-senior-life-insurance-company-history"><strong>Senior Life Insurance Company history</strong></h2>
 
 <p>Senior Life has been around for decades, but longevity alone doesn’t mean the products are competitively priced or consumer-friendly.</p>
 
@@ -380,7 +380,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 
 <hr>
 
-<h2 id="h-what-you-should-know-about-senior-life-insurance"><strong>WHAT YOU SHOULD KNOW ABOUT SENIOR LIFE INSURANCE</strong></h2>
+<h2 id="h-what-you-should-know-about-senior-life-insurance"><strong>What you should know about Senior Life Insurance</strong></h2>
 
 <p>This section pulls together the key facts that matter most when deciding if Senior Life is worth considering.</p>
 
@@ -388,7 +388,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 
 <hr>
 
-<h2 id="h-senior-life-insurance-final-thoughts"><strong>SENIOR LIFE INSURANCE</strong> <strong>FINAL THOUGHTS</strong></h2>
+<h2 id="h-senior-life-insurance-final-thoughts"><strong>Senior Life Insurance</strong> <strong>final thoughts</strong></h2>
 
 <p>Senior Life isn’t a scam, but for most seniors, it’s a costly option compared to what’s available elsewhere.</p>
 
@@ -396,7 +396,7 @@ I reviewed George’s health details and matched them to a different lower cost 
 
 <hr>
 
-<h2 id="h-faq-senior-life-insurance-company"><strong>FREQUENTLY ASKED QUESTIONS: SENIOR LIFE INSURANCE COMPANY</strong></h2>
+<h2 id="h-faq-senior-life-insurance-company"><strong>Frequently asked questions: Senior Life Insurance Company</strong></h2>
 
 <p><strong>Is Senior Life Insurance Company legitimate?</strong></p>
 

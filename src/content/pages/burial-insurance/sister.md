@@ -47,7 +47,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="can-you-buy-burial-insurance-for-sister"><strong>Can You Buy Burial Insurance For Sister? </strong></h2>
+<h2 id="can-you-buy-burial-insurance-for-sister"><strong>Can you buy burial insurance for sister? </strong></h2>
 
 <p>The answer is YES! You can take out burial insurance on your sister, <a rel="noreferrer noopener" href="/burial-insurance/brother/" target="_blank">brother,</a> <a href="/burial-insurance/can-i-buy-life-insurance-on-my-mother/" target="_blank" rel="noreferrer noopener">mother</a>, or any family member.</p>
 
@@ -55,7 +55,7 @@ sidebar: true
 
 <p>Aside from insurable interest, your sister must consent because she needs to sign the application.</p>
 
-<h2 id="requirement-to-get-burial-insurance-for-sister"><br><strong>Requirements To Get Burial Insurance For Sister </strong></h2>
+<h2 id="requirement-to-get-burial-insurance-for-sister"><br><strong>Requirements to get burial insurance for sister </strong></h2>
 
 <p><strong>1. SHOW INSURABLE INTEREST</strong></p>
 
@@ -108,7 +108,7 @@ important documents.</p>
 <li>Profiting from insurance payout is fraudulent and illegal and can land you in jail.</li>
 </ol>
 
-<h2 id="why-you-should-buy-burial-insurance-for-sister"><strong>Why You Should Buy Burial Insurance For Sister </strong></h2>
+<h2 id="why-you-should-buy-burial-insurance-for-sister"><strong>Why you should buy burial insurance for sister </strong></h2>
 
 <p><strong>There are various reasons why you should buy life insurance for a sister:</strong></p>
 
@@ -124,7 +124,7 @@ important documents.</p>
 <li>If your sister is uninsurable or unable to get insured for any reason such as due to age, health, drug addiction, incarceration, driving record, or credit history, you can get burial insurance on her as well as long as she agrees to it.</li>
 </ul>
 
-<h2 id="burial-insurance-options-for-your-sister"><strong>Burial Insurance For Sister </strong></h2>
+<h2 id="burial-insurance-options-for-your-sister"><strong>Burial insurance for sister </strong></h2>
 
 <p><strong>Types of burial insurance:</strong></p>
 
@@ -156,7 +156,7 @@ important documents.</p>
 period. After the two-year waiting period, your sister is fully covered, and
 you will receive the full death benefit if she dies for any reason.</p>
 
-<h2 id="how-to-make-buying-burial-insurance-easier"><br><strong>How To Make Buying Burial Insurance Easier</strong> </h2>
+<h2 id="how-to-make-buying-burial-insurance-easier"><br><strong>How to make buying burial insurance easier</strong> </h2>
 
 <p>Let’s assume your sister consented to you purchasing burial insurance on her. </p>
 
@@ -168,7 +168,7 @@ you will receive the full death benefit if she dies for any reason.</p>
 <li>Complete the application process over the phone in just a few minutes.</li>
 </ol>
 
-<h2 id="how-to-get-burial-insurance-for-your-sister"><br><strong>How To Get Burial Insurance For Your Sister </strong></h2>
+<h2 id="how-to-get-burial-insurance-for-your-sister"><br><strong>How to get burial insurance for your sister </strong></h2>
 
 <p><strong>The process of purchasing burial insurance for your sister is simple and straightforward:</strong></p>
 
@@ -185,7 +185,7 @@ you will receive the full death benefit if she dies for any reason.</p>
 <li>Pay the monthly premium on whatever day you select.</li>
 </ol>
 
-<h2 id="avoid-the-tax-trap"><strong>Avoid The Tax Trap </strong></h2>
+<h2 id="avoid-the-tax-trap"><strong>Avoid the tax trap </strong></h2>
 
 <p>It’s crucial to set up your sister’s life insurance policy appropriately to avoid falling into a tax trap if your sister’s policy is not handled carefully. Life insurance payout is usually tax-free, but the policy owner can be taxed on the payout if the insured, owner, and beneficiary are three different people. This case is called the Goodman Triangle.</p>
 
@@ -209,7 +209,7 @@ taxed on the payout:</strong></p>
 
 <p>Make the two points of the triangle the same person. By assigning yourself as the policy owner and beneficiary, the Goodman Triangle does not exist.</p>
 
-<h2 id="information-we-need"><br><strong>Information We Need If You Want To Get Life Insurance On Your Sister </strong></h2>
+<h2 id="information-we-need"><br><strong>Information we need if you want to get life insurance on your sister </strong></h2>
 
 <p>Before you take life insurance on your sister, you must supply us with all the necessary information about her. We need to understand her health condition to help us determine what type of plan she will qualify for. </p>
 
@@ -231,21 +231,7 @@ taxed on the payout:</strong></p>
 
 <p>We will then provide you with an accurate quote.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy for your sister needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>If your sister has a health history and needs burial insurance, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance for your sister, sister burial insurance, or life insurance for your sister. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you accurate life insurance quotes.</p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance on my sister?</strong></p>
 

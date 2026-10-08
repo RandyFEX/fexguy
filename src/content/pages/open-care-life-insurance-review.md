@@ -23,7 +23,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>HOW MUCH DOES THE OPEN CARE SENIOR PLAN COST?</strong></h2>
+<h2><strong>How much does the Open Care Senior Plan cost?</strong></h2>
 
 <p>The premiums you see in Open Care ads often underrepresent real cost because rates vary widely by age, health, and the type of plan you qualify for.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>THE TRUTH ABOUT THE OPEN CARE WAITING PERIOD</strong></h2>
+<h2><strong>The truth about the Open Care waiting period</strong></h2>
 
 <p>Almost every policy sold through Open Care delays full benefits for 2 years for natural causes before paying the advertised death benefit.</p>
 
@@ -143,7 +143,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>WHAT IS OPEN CARE SENIOR PLAN?</strong></h2>
+<h2><strong>What is Open Care Senior Plan?</strong></h2>
 
 <p>Open Care Senior Plan presents itself as an insurer, but the brand actually gathers leads and passes them to call centers and agents.</p>
 
@@ -159,7 +159,7 @@ sidebar: true
 
 <h3>
 ⚠️
-The Accidental Death Assumption
+The accidental death assumption
 </h3>
 
 <p>An Open Care TV ad emphasized fast approval, which led Carlos to assume he had full coverage applied for all causes of death.</p>
@@ -178,7 +178,7 @@ The Accidental Death Assumption
 
 <hr>
 
-<h2><strong>HOW OPEN CARE SENIOR PLAN ACTUALLY WORKS</strong></h2>
+<h2><strong>How Open Care Senior Plan actually works</strong></h2>
 
 <p>When you respond to an Open Care ad, the marketing process funnels your info through scripted agents who aim to close a sale rather than find the best policy for you.</p>
 
@@ -243,7 +243,7 @@ The Accidental Death Assumption
 
 <h3>
 🔍
-The No-Questions Shortcut
+The no-questions shortcut
 </h3>
 
 <p>A call-center agent offered guaranteed acceptance, which led Denise to believe her health history left no other option.</p>
@@ -256,7 +256,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>WHAT TYPES OF POLICIES DOES OPEN CARE SELL?</strong></h2>
+<h2><strong>What types of policies does Open Care sell?</strong></h2>
 
 <p>Open Care markets mainly whole-life final expense policies with guaranteed-issue or simplified underwriting, along with occasional term life products.</p>
 
@@ -307,7 +307,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>IS OPEN CARE A CALL CENTER OR A BROKER?</strong></h2>
+<h2><strong>Is Open Care a call center or a broker?</strong></h2>
 
 <p>Open Care functions more like a call center that quickly routes leads than a transparent broker advocating for your best policy.</p>
 
@@ -325,7 +325,7 @@ The No-Questions Shortcut
 
 <hr>
 
-<h2><strong>IS OPEN CARE SENIOR PLAN AFFILIATED WITH THE GOVERNMENT?</strong></h2>
+<h2><strong>Is Open Care Senior Plan affiliated with the government?</strong></h2>
 
 <p>The language in Open Care marketing makes it sound official, but no government program endorses or funds their products.</p>
 
@@ -341,7 +341,7 @@ The No-Questions Shortcut
 
 <h3>
 💡
-The “State-Regulated” Mailer
+The “State-Regulated” mailer
 </h3>
 
 <p>Open Care Senior Plan mailer language implied a state approved program, which led Margaret to believe she was enrolling in a government-approved benefit.</p>
@@ -354,7 +354,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>COMMON COMPLAINTS AND CONSUMER ISSUES</strong></h2>
+<h2><strong>Common complaints and consumer issues</strong></h2>
 
 <p>Many consumers report misleading advertising, aggressive sales tactics, hidden terms, and confusion about billing and cancellations in Open Care’s model.</p>
 
@@ -370,7 +370,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>ARE OPEN CARE POLICIES LEGITIMATE?</strong></h2>
+<h2><strong>Are Open Care policies legitimate?</strong></h2>
 
 <p>The insurance policies you get through Open Care can be real, but Open Care itself isn’t issuing or managing them on its own.</p>
 
@@ -390,7 +390,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>IS OPEN CARE TOO GOOD TO BE TRUE</strong></h2>
+<h2><strong>Is Open Care too good to be true</strong></h2>
 
 <p>The marketing may look appealing, but Open Care’s model typically results in higher costs and delayed coverage compared with direct purchase from reputable insurers.</p>
 
@@ -414,7 +414,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>BETTER ALTERNATIVES TO OPEN CARE</strong></h2>
+<h2><strong>Better alternatives to Open Care</strong></h2>
 
 <p>You get better carrier options, clearer pricing, and dedicated support when you work with an independent broker instead of a marketing lead funnel.</p>
 
@@ -481,7 +481,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>WHO IS BEHIND OPEN CARE SENIOR PLAN?</strong></h2>
+<h2><strong>Who is behind Open Care Senior Plan?</strong></h2>
 
 <p>Open Care Senior Plan operates as a marketing brand and call funnel rather than an insurer with its own financial strength or underwriting authority.</p>
 
@@ -503,7 +503,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>WHO IS THE TARGET AUDIENCE FOR OPEN CARE?</strong></h2>
+<h2><strong>Who is the target audience for Open Care?</strong></h2>
 
 <p>Open Care targets older adults worried about leaving funeral and end-of-life costs to their families.</p>
 
@@ -517,7 +517,7 @@ The “State-Regulated” Mailer
 
 <hr>
 
-<h2><strong>FREQUENTLY ASKED QUESTIONS: OPEN CARE SENIORS</strong></h2>
+<h2><strong>Frequently asked questions: Open Care seniors</strong></h2>
 
 <p><strong>Is Open Care a legit company?</strong><br>Open Care Senior Plan is a marketing agency, not an insurance company.<br>The policies they sell come from other carriers that actually underwrite the coverage and pay claims. Open Care doesn’t set rates, approve applications, or manage benefits after purchase. Once you enroll, your relationship shifts to an insurer you didn’t choose upfront.</p>
 

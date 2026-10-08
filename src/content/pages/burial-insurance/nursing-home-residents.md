@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Nursing home residents usually can’t qualify for traditional life insurance<br>• Most get stuck with guaranteed issue policies that cost 25% to 40% more<br>• These plans almost always come with a 2 to 3-year waiting period<br>• Nursing homes cannot take your life insurance payout from your family<br>• Applying incorrectly can limit your already narrow approval options</p>
+<p>• Nursing home residents usually can’t qualify for traditional life insurance<br>• Most get stuck with guaranteed issue policies that cost 25% to 40% more<br>• These plans almost always come with a 2 to 3-year waiting period<br>• Nursing homes cannot take your life insurance payout from your family<br>• Applying incorrectly can limit your already narrow approval options<br>• Weigh the premiums against your life expectancy and your family’s needs</p>
 
 <p>Getting burial insurance as a nursing home resident is tough, but not impossible. Most people won’t qualify for term or traditional whole life insurance because of serious health conditions tied to long-term care. That’s why burial insurance usually becomes the main option, often offered as guaranteed-issue coverage with higher costs and waiting periods. The good news is the money still goes to your family, not the nursing home, as long as you name a beneficiary. The problem is that picking the wrong plan can cost more and delay protection when it matters most.</p>
 
@@ -21,7 +21,7 @@ sidebar: true
 
 <p><strong>!!! READ THIS FIRST !!! <br><br>Being in a nursing home often indicates that people have significant health or medical issues, and there are no insurance companies that offer 1st-day coverage to people in nursing homes.<br><br>We recommend people in nursing homes purchase a guaranteed issue life insurance that asks no health questions but does come with a 2-year waiting period.</strong></p>
 
-<p>This article will discuss why we don’t recommend burial insurance for people who an in nursing homes. We will also inform you about the non-burial insurance options open for you.</p>
+<p>This article will discuss what to weigh before buying burial insurance for people who are in nursing homes. We will also inform you about the non-burial insurance options open for you.</p>
 
 <table>
 <thead>
@@ -34,7 +34,7 @@ sidebar: true
 <td>
 <ul>
 <li><a href="#best-option-for-nursing-home-resident">Best Option For Nursing Home Resident</a></li>
-<li><a href="#why-we-don’t-recommend-guaranteed-issue-insurance">Why We Don’t Recommend Guaranteed Issue Insurance</a></li>
+<li><a href="#why-we-don’t-recommend-guaranteed-issue-insurance">What To Weigh Before Buying Guaranteed Issue</a></li>
 <li><a href="#who-should-buy-guaranteed-issue-insurance">Who Should Buy Guaranteed Issue Insurance</a></li>
 <li><a href="#burial-insurance-to-avoid">Burial Insurance To Avoid</a></li>
 <li><a href="#best-burial-insurance">Best Burial Insurance</a></li>
@@ -57,13 +57,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-option-for-nursing-home-resident"><br><strong>What Is My Best Insurance Option If I’m A Nursing Home Resident?</strong></h2>
+<h2 id="best-option-for-nursing-home-resident"><br><strong>What is my best insurance option if I’m a nursing home resident?</strong></h2>
 
 <p>If you are in a nursing home, your only option for insurance coverage is a guaranteed issue burial insurance.</p>
 
-<p>Guaranteed issue burial insurance is available without health questions, but you need to live for the first two years, making it a terrible plan for people in nursing homes with a short time to live.</p>
+<p>Guaranteed issue burial insurance is available without health questions, but you need to live for the first two years, making it a poor fit for people in nursing homes with a short time to live.</p>
 
-<p>Guaranteed issue life insurance would seem ideal for nursing home residents because they ask no health questions, but there is a catch; this plan has a mandatory 2-year waiting period before paying a death benefit for the natural cause of death. This 2-year waiting period makes guaranteed issue burial insurance a terrible choice for nursing home residents.</p>
+<p>Guaranteed issue life insurance would seem ideal for nursing home residents because they ask no health questions, but there is a catch; this plan has a mandatory 2-year waiting period before paying a death benefit for the natural cause of death. This 2-year waiting period is the most important thing to weigh before buying guaranteed issue burial insurance in a nursing home.</p>
 
 <p>Guaranteed issue life insurance will only pay from the first day if you die from accidental reasons. Death resulting from slips and falls, trips, car accidents, or other accidental causes is 100% covered from the first day.</p>
 
@@ -71,19 +71,19 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>Why We Don’t Recommend Guaranteed Issue Life Insurance For Nursing Home Residents</strong></h2>
+<h2 id="why-we-don’t-recommend-guaranteed-issue-insurance"><br><strong>What to weigh before buying guaranteed issue life insurance in a nursing home</strong></h2>
 
 <p>If you are in a nursing home with a terminal illness, buying <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> life insurance will not help your family much at all.&#160;</p>
 
-<p>Here are the reasons why I don’t recommend guaranteed acceptance life insurance for nursing home residents:</p>
+<p>Here are the things to weigh before buying guaranteed acceptance life insurance as a nursing home resident:</p>
 
 <p><strong>A 2-year Waiting Period</strong></p>
 
-<p>The number one reason we don’t recommend guaranteed life insurance for nursing home residents is the two-year waiting period.</p>
+<p>The number one thing to weigh before buying guaranteed life insurance as a nursing home resident is the two-year waiting period.</p>
 
 <p>Your beneficiary will not receive your full death benefit if you die during the waiting period.&#160;</p>
 
-<p>Guaranteed acceptance policies only offer immediate coverage for the accidental cause of death. It will not pay a full death benefit if you die from a natural cause or health-related cause of death. This reason makes these policies a terrible choice for nursing home residents with a shorter life expectancy.</p>
+<p>Guaranteed acceptance policies only offer immediate coverage for the accidental cause of death. It will not pay a full death benefit if you die from a natural cause or health-related cause of death. This reason makes these policies a poor fit for nursing home residents with a shorter life expectancy.</p>
 
 <p>The two-year waiting period is the insurance companies’ safety net against people who are literally on their deathbed trying to buy burial insurance.&#160;</p>
 
@@ -91,11 +91,13 @@ sidebar: true
 
 <p>Guaranteed issue <a href="/burial-insurance/no-questions-asked/" target="_blank" rel="noreferrer noopener">no-questions-asked</a> life insurance is the most expensive life insurance policy. It can be two to three times more expensive than simplified issue life insurance that asks health questions. The high premiums are because of the higher risk insurance companies take for approving coverage without asking any health questions.</p>
 
+<p>Compare the premiums you expect to pay with simply setting that money aside for your family. A refund of premiums plus the policy’s additional amount is not automatically better than saving the money yourself. The policy’s value is that once the waiting period passes, it pays the full death benefit, which can be far more than the premiums you paid.</p>
+
 <p><br><strong>Limited Death Benefit Option</strong></p>
 
 <p>Guaranteed issue burial insurance coverage is only available in small amounts, often between $2,000 and $25,000. This plan is only designed to cover final expenses such as medical bills, small debts, and end-of-life expenses. If you want to pay your mortgage or leave money for your children’s education, you need to buy multiple policies, which we don’t recommend because it will cost you an arm and a leg.</p>
 
-<h2 id="who-should-buy-guaranteed-issue-insurance"><br><strong>Who Should Buy Guaranteed Issue Life Insurance?</strong></h2>
+<h2 id="who-should-buy-guaranteed-issue-insurance"><br><strong>Who should buy guaranteed issue life insurance?</strong></h2>
 
 <p>We only sell guaranteed issue life insurance under these circumstances:</p>
 
@@ -130,7 +132,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance should be your last option. Don’t settle for a plan with a two-year waiting period if you are in good health or with some minor health issues that qualify for first-day coverage.</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -169,7 +171,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -218,7 +220,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for nursing home residents.</p>
 
@@ -226,7 +228,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I’m A Nursing Home Resident?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I’m a nursing home resident?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -286,11 +288,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premium"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premium"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Nursing Home Residents And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Nursing home residents and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while other riders can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -299,7 +301,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="non-burial-insurance-options"><br><strong>Non-burial Insurance Options For Nursing Home Residents</strong></h2>
+<h2 id="non-burial-insurance-options"><br><strong>Non-burial insurance options for nursing home residents</strong></h2>
 
 <p>If you are in a nursing home and cannot qualify for life insurance, here are your options to cover your funeral and final expenses:</p>
 
@@ -321,7 +323,7 @@ sidebar: true
 
 <p>If you don’t have burial insurance, you can opt to open a Payable On Death (POD) account or Totten Trust. POD allows you to name a beneficiary on your bank account. Your beneficiary can access the funds on your account upon your death to pay for your final expenses.</p>
 
-<h2 id="benefits-of-burial-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -336,7 +338,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Nursing Home Residents</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for nursing home residents</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -354,18 +356,10 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="best-time-to-buy-burial-insurance"><br><strong>When Is The Best Time To Buy Burial Insurance?</strong></h2>
+<h2 id="best-time-to-buy-burial-insurance"><br><strong>When is the best time to buy burial insurance?</strong></h2>
 
 <p>You should buy burial insurance NOW! Do not wait until you are a nursing home resident before you decide to purchase. That’s too late because you can no longer qualify for the best plan.</p>
 
 <p>If you have a loved one in a nursing home, learn from their mistake, and buy burial insurance now while you can still qualify for coverage. Waiting to buy burial insurance when you are in a nursing home is a huge mistake that you will regret later!</p>
 
 <p>The best time to buy burial insurance is now! The younger you buy, the lower your rates. The healthier you are, the lower your premiums will be.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>You should only buy burial insurance from an independent insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. Save yourself the effort of calling multiple insurance companies by working with us. Our agents and I can shop for over 30 insurance companies and compare prices to get you the best plan at the best rate.</p>
-
-<p>We will assist you in securing the insurance coverage you need at a rate you can afford.</p>
-
-<p>Answer the quote form on this page, and I will provide you with an accurate quote. Then, we will show you the plan with the most benefits at the lowest price. You can also call us at (888) 862-9456 if you have any questions regarding burial insurance.</p>

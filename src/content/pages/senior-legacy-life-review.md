@@ -23,15 +23,17 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-background"><strong><strong>SENIOR LEGACY LIFE </strong>BACKGROUND</strong></h2>
+<h2 id="h-senior-legacy-life-background"><strong><strong>Senior Legacy Life </strong>background</strong></h2>
 
 <p>Senior Legacy Life Insurance is NOT an insurance company. They DO NOT issue policies, pay claims, or provide any coverage.</p>
+
+<p>According to its own website, Senior Legacy Life is a branded referral network and a dba (doing-business-as name) of MJ Ventures LLC. The site says Senior Legacy Life does not sell insurance and is not an insurance company or agency.</p>
 
 <p>They are a marketing organization. They get somebody to call a toll-free number after seeing an ad.</p>
 
 <p>When you call Senior Legacy Life, you are asked to provide your information, and Senior Legacy Life will then sell your personal information to life insurance agents (often inexperienced “newby” agents) who will then call you and try to sell you their insurance product (often overpriced).</p>
 
-<p>This means you are giving your information over to a stranger company and agent. That agent pays for your info, often around $30-$60 on average for your private information.</p>
+<p>This means you are giving your information over to a stranger company and agent. That agent pays for your private information.</p>
 
 <p>Many seniors who have contacted Senior Legacy Life were absolutely shocked to learn that their personal information is being “sold”. Feelings of being violated in some cases.</p>
 
@@ -39,7 +41,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-products"><strong>SENIOR LEGACY LIFE PRODUCTS</strong></h2>
+<h2 id="h-senior-legacy-life-products"><strong>Senior Legacy Life products</strong></h2>
 
 <p>Senior Legacy Life ads highlight life insurance products intended to provide coverage for funeral, cremation, or final expense costs.</p>
 
@@ -61,7 +63,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-price-amp-value"><strong>SENIOR LEGACY LIFE PRICE &amp; VALUE</strong></h2>
+<h2 id="h-senior-legacy-life-price-amp-value"><strong>Senior Legacy Life price &amp; value</strong></h2>
 
 <p>Have you ever noticed that television commercials NEVER give you the exact pricing?</p>
 
@@ -73,7 +75,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-positive-features-of-senior-legacy-life"><strong>POSITIVE FEATURES OF SENIOR LEGACY LIFE</strong></h2>
+<h2 id="h-positive-features-of-senior-legacy-life"><strong>Positive features of Senior Legacy Life</strong></h2>
 
 <p><strong>Even with the concern raised, some seniors mention:</strong></p>
 
@@ -88,7 +90,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-negative-features-and-complaints"><strong>NEGATIVE FEATURES AND COMPLAINTS</strong></h2>
+<h2 id="h-negative-features-and-complaints"><strong>Negative features and complaints</strong></h2>
 
 <p>A common statement seniors say is that their experience does not live up to the advertising.</p>
 
@@ -108,7 +110,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-advertising-strategy"><strong>SENIOR LEGACY LIFE ADVERTISING STRATEGY</strong></h2>
+<h2 id="h-senior-legacy-life-advertising-strategy"><strong>Senior Legacy Life advertising strategy</strong></h2>
 
 <p>The TV commercials advertising Senior Legacy Life do get people’s attention.</p>
 
@@ -120,7 +122,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-customer-experience"><strong>SENIOR LEGACY LIFE CUSTOMER EXPERIENCE</strong></h2>
+<h2 id="h-senior-legacy-life-customer-experience"><strong>Senior Legacy Life customer experience</strong></h2>
 
 <p>Because the Senior Legacy Life isn’t the true insurer itself, customer service is inconsistent.</p>
 
@@ -132,7 +134,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-better-options"><strong>SENIOR LEGACY LIFE </strong> – <strong>BETTER OPTIONS?</strong></h2>
+<h2 id="h-senior-legacy-life-better-options"><strong>Senior Legacy Life </strong> – <strong>better options?</strong></h2>
 
 <p>The most important step is knowing your options. Many seniors who purchased policies as mentioned above are actually paying way more than they should be.</p>
 
@@ -142,7 +144,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-review-conclusion"><strong>SENIOR LEGACY LIFE REVIEW CONCLUSION</strong></h2>
+<h2 id="h-senior-legacy-life-review-conclusion"><strong>Senior Legacy Life review conclusion</strong></h2>
 
 <p>We receive reports from seniors who say they are shocked to receive upwards of hundreds of calls from agents representing different brands after calling Senior Legacy Life. We also hear lots of complaints regarding vague coverage details and disappointment when the benefits were smaller or altogether different from what they expected.</p>
 
@@ -152,20 +154,16 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-frequently-asked-questions"><strong>SENIOR LEGACY LIFE FREQUENTLY ASKED QUESTIONS</strong></h2>
+<h2 id="h-senior-legacy-life-frequently-asked-questions"><strong>Senior Legacy Life frequently asked questions</strong></h2>
 
-<p><strong>Is Senior Legacy Life legit?</strong> It is a legitimate insurance carrier. However, many consumers cite high premiums with little to no benefits, and they don’t actually sell life insurance.</p>
+<p><strong>Is Senior Legacy Life legit?</strong> It is a legitimate marketing business, not an insurance carrier. However, many consumers cite high premiums with little to no benefits, and they don’t actually sell life insurance.</p>
 
-<p><strong>Is Senior Legacy Life legitimate?</strong> Yes, it operates legally. However, it doesn’t actually sell life insurance. They just collect your information and sell it to life insurance agents willing to spend up to $30-$60 for your information.</p>
+<p><strong>Is Senior Legacy Life legitimate?</strong> Yes, it operates legally. However, it doesn’t actually sell life insurance. They just collect your information and sell it to life insurance agents willing to pay for your information.</p>
 
 <p><strong>Is Senior Legacy Life a good insurance company?</strong> Better pricing and options are available when working with independent agents such as The Final Expense Guy.</p>
 
-<p><strong>How much is Senior Legacy Life Insurance?</strong> Costs vary based on age and health, but premiums are typically higher than those of other senior life carriers.</p>
+<p><strong>How much is Senior Legacy Life Insurance?</strong> Costs vary based on age and health, but premiums are typically higher than those of the senior life carriers you can compare through an independent agent.</p>
 
 <p><strong>What is a good insurance company for seniors?</strong> A good insurance company for seniors is the Final Expense Guy. They offer affordable rates, and coverage begins immediately. An independent insurance agent will compare the best options available.</p>
 
 <p><strong>Can seniors get life insurance?</strong> Yes, seniors can qualify for life insurance, even if they have health issues. Most applicants qualify for simplified or guaranteed issue whole life plans.</p>
-
-<p><strong>Where is Senior Life Insurance Company located?</strong> They are located in Thomasville, Georgia.</p>
-
-<p><strong>Senior Life Insurance Company reviews</strong><br>Mixed reviews tell a story with common complaints about cancellations, bad customer service, and high premiums.</p>

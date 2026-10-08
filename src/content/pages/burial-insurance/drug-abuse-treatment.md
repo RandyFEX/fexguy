@@ -52,7 +52,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-drug-abuse-history"><br><strong>What Is My Best Insurance Option If I Have A History Of Drug Abuse?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-drug-abuse-history"><br><strong>What is my best insurance option if I have a history of drug abuse?</strong></h2>
 
 <p><br><strong>MARIJUANA USE</strong></p>
 
@@ -110,17 +110,17 @@ sidebar: true
 
 <p>Suppose you are currently using cocaine, heroin, or crystal meth. In that case, it is going to be very difficult for you to secure first-day coverage burial insurance with current drug abuse or treatment. One of the most important factors the company will consider is if you’re still using drugs and the type of drugs you’re using.</p>
 
-<p>If you’ve been diagnosed, received treatment, hospitalized, or recommended counseling or treatment within the last 2 years, you will qualify for a first-day benefit plan.</p>
+<p>If you’ve been diagnosed, received treatment, hospitalized, or recommended counseling or treatment within the last 2 years, guaranteed issue burial insurance is usually your option.</p>
 
-<p>You will be covered from the first day, and your death benefit will be phased in over time.</p>
+<p>It asks no health questions. The full death benefit for natural death starts after a two-year waiting period, and a natural death before then generally refunds your premiums plus the interest the contract specifies.</p>
 
-<p><strong>Best Option:</strong> First-day benefit plan</p>
+<p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
 <p>If you’re currently using drugs, do not lie on your life insurance application. It is considered fraud to lie about your drug use. If you have a drug-related death within the two years contestability period, there is a good chance your insurance company will thoroughly investigate your past.</p>
 
 <p><strong>If they find out that you lied on your application, they will not pay out your death benefit to your beneficiary.</strong></p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -159,7 +159,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -208,7 +208,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have A Drug Abuse History, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have a drug abuse history, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with drug abuse history.</p>
 
@@ -216,7 +216,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-drug-abuse"><br><strong>Burial Insurance Underwriting If You Have A Drug Abuse History</strong></h2>
+<h2 id="insurance-underwriting-for-drug-abuse"><br><strong>Burial insurance underwriting if you have a drug abuse history</strong></h2>
 
 <p>Underwriting is the process used by life insurance companies to determine your level of risk and how much they will charge you for your policy. It is part of the insurance companies’ “fact-finding” process.</p>
 
@@ -269,13 +269,11 @@ sidebar: true
 
 <p><strong>All the information you disclosed on the application is strictly private and confidential.</strong></p>
 
-<p>When you apply for life insurance, don’t worry about your drug history being used against you by law enforcement agencies because your rights are protected under <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noreferrer noopener">HIPPA</a> laws (Health Insurance Portability and Accountability Act 1996). HIPPA guarantees your privacy.</p>
-
 <p><br><strong>#2. PRESCRIPTION CHECK</strong></p>
 
 <p>Insurance companies will electronically review your prescription history to see what medications you are taking to identify any “red flags” that could indicate you are abusing your medications.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have A Drug Abuse History?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have a drug abuse history?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -335,11 +333,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="drug-abuse-and-burial-insurance-riders"><br><strong>Drug Abuse And Burial Insurance Riders</strong></h2>
+<h2 id="drug-abuse-and-burial-insurance-riders"><br><strong>Drug abuse and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -348,7 +346,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-drug-abuse-history"><br><strong>Information We Need If You Have A Drug Abuse History</strong></h2>
+<h2 id="information-we-need-if-you-have-drug-abuse-history"><br><strong>Information we need if you have a drug abuse history</strong></h2>
 
 <p>When applying for burial or funeral insurance for drug abuse, our agent will ask you a few questions about your past. We want to know more if you’ve tried hard drugs before.</p>
 
@@ -367,7 +365,7 @@ sidebar: true
 
 <p>It is important you answer these questions honestly. Your answer will help us determine which burial insurance company will best fit your needs and offer you the lowest price.</p>
 
-<h2 id="what-if-i’m-rejected-for-coverage"><br><strong>What If A Life Insurance Company Rejected My Application Due To My Drug History?</strong></h2>
+<h2 id="what-if-i’m-rejected-for-coverage"><br><strong>What if a life insurance company rejected my application due to my drug history?</strong></h2>
 
 <p>A life insurance company may deny your life insurance application because of your past drug history.</p>
 
@@ -377,7 +375,7 @@ sidebar: true
 
 <p><strong>You may have a better chance of getting approved for coverage now than when you previously applied.</strong></p>
 
-<h2 id="getting-approved-for-burial-insurance"><br><strong>How To Get Approved If You Have A History Of Drug Abuse</strong></h2>
+<h2 id="getting-approved-for-burial-insurance"><br><strong>How to get approved if you have a history of drug abuse</strong></h2>
 
 <p>When applying for life insurance, be honest about your drug use. If you’ve been declined in the past, admit it.</p>
 
@@ -385,13 +383,13 @@ sidebar: true
 
 <p>Most burial and life insurance companies require applicants to be drug-free or maintain sobriety for a minimum of two years.&#160;If you’ve been sober for several years, do not hesitate to apply for a new burial or life insurance because you have a better chance of getting approved.</p>
 
-<p>For recent drug abuse, and within less than two years, you may try to apply for a policy with first-day benefits</p>
+<p>For recent drug abuse, and within less than two years, guaranteed issue burial insurance is usually your option.</p>
 
 <p>If you’re currently using drugs, you’ll need an independent life insurance agency that can shop your case to multiple life insurance companies to get the best deal.</p>
 
 <p>The best way to go is to work with a competent insurance agent regarding your drug abuse history. One of our agents in Final Expense Guy will guide you to a company that is more lenient with your case.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -406,7 +404,7 @@ sidebar: true
 <li>Cash value builds up&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Drug Abuse History</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with drug abuse history</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -424,23 +422,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy with a history of drug abuse needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you have a health history of drug abuse, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to get the policy that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p><strong>We will shop for life insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies to find the lowest rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you’re looking for drug abuse funeral insurance, drug abuse burial insurance, or drug abuse life insurance, we can help. </p>
-
-<p>Fill out our quote form or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a>.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>What is considered drug abuse in insurance?</strong></p>
 

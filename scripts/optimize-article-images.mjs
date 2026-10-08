@@ -30,7 +30,6 @@ export const ARTICLE_IMAGES = {
   '016': 'iul-church-members-faith-based-communities',
   '017': 'iul-for-teachers',
   '018': 'lions-club-member-life-insurance-options',
-  '019': 'long-term-care-insurance-pros-cons',
   '020': 'prepaid-caskets-pros-cons',
   '021': 'term-life-insurance-doctors',
   '022': 'term-life-insurance-truck-drivers',

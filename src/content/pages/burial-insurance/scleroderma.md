@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-scleroderma"><br><strong>What Is My Best Insurance Option If I Have A History Of Scleroderma?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-scleroderma"><br><strong>What is my best insurance option if I have a history of scleroderma?</strong></h2>
 
 <p>Qualifying for burial insurance with scleroderma will depend on your type of scleroderma and the severity of your condition. Scleroderma on its own is a non-issue to most final expense insurance providers. However, scleroderma complications may affect your eligibility for the best plan.</p>
 
@@ -119,7 +119,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> First-day benefit plan</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -158,7 +158,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -207,7 +207,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-if-you-have-scleroderma"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-if-you-have-scleroderma"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with scleroderma.</p>
 
@@ -215,7 +215,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-scleroderma"><br><strong>Burial Insurance Underwriting If You Have Scleroderma</strong></h2>
+<h2 id="insurance-underwriting-for-scleroderma"><br><strong>Burial insurance underwriting if you have scleroderma</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -281,7 +281,7 @@ sidebar: true
 <li>Immunosuppressant (Mycophenolate, Cyclophosphamide, and Methotrexate). Immunosuppressant medications are used for treating scleroderma and other medical conditions like tissue or organ transplant. This may cause the life insurance agency to charge a higher premium and a waiting period.</li>
 </ul>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Scleroderma?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have scleroderma?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -341,11 +341,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="scleroderma-and-burial-insurance-riders"><br><strong>Scleroderma And Burial Insurance Riders</strong></h2>
+<h2 id="scleroderma-and-burial-insurance-riders"><br><strong>Scleroderma and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -354,7 +354,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-have-scleroderma"><br><strong>Information We Need If You Have Scleroderma</strong></h2>
+<h2 id="information-we-need-if-you-have-scleroderma"><br><strong>Information we need if you have scleroderma</strong></h2>
 
 <p>Scleroderma can cause severe health problems, so we would like to know which type and complications you have and your overall health condition.</p>
 
@@ -374,7 +374,7 @@ sidebar: true
 
 <p>We are experts in securing affordable burial insurance with scleroderma, and we know which companies will look at your condition favorably. We will evaluate your risk to provide the best company with the best rates.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -389,7 +389,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Scleroderma</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with scleroderma</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -408,7 +408,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="what-if-i-have-been-denied-life-insurance-coverage"><br><strong>What If I Have Been Denied Life Insurance Coverage?</strong></h2>
+<h2 id="what-if-i-have-been-denied-life-insurance-coverage"><br><strong>What if I have been denied life insurance coverage?</strong></h2>
 
 <p>If you have been rejected for a life insurance policy because of scleroderma complications or anything else, then you should know that life insurance companies underwriting is all different. One may reject your application, and another may underwrite your policy.</p>
 
@@ -416,19 +416,7 @@ sidebar: true
 
 <p>The truth is many high-risk life insurance cases like scleroderma are declined for life insurance coverage because you applied to the wrong insurance company, which is when an independent life insurance agency like Final Expense Guy can help.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy with Scleroderma needn’t be frustrating; working with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for Scleroderma funeral insurance, Scleroderma burial insurance, or Scleroderma life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions">Frequently Asked Questions </h2>
+<h2 id="frequently-asked-questions">Frequently asked questions </h2>
 
 <p><strong>Can I get life insurance if you have scleroderma?</strong></p>
 

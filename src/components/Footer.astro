@@ -3,6 +3,9 @@
 // copied from the live site (see site.footer in src/config/site.ts).
 import { site } from '@/config/site';
 const { columns, social, notes } = site.footer;
+// The phone number never breaks across lines (e.g. "888-862-" / "9456").
+const keepPhoneTogether = (html: string) =>
+  site.phoneDisplay ? html.replaceAll(site.phoneDisplay, `<span class="site-footer__nowrap">${site.phoneDisplay}</span>`) : html;
 ---
 
 <footer class="site-footer">
@@ -29,7 +32,15 @@ const { columns, social, notes } = site.footer;
         </ul>
       )
     }
-    {notes.length > 0 && <div class="site-footer__notes">{notes.map((html) => <p set:html={html} />)}</div>}
+    {
+      notes.length > 0 && (
+        <div class="site-footer__notes">
+          {notes.map((html) => (
+            <p set:html={keepPhoneTogether(html)} />
+          ))}
+        </div>
+      )
+    }
     {/* Site search (as on the live site, the footer's last element). Plain
        HTML: submits to /search/?q=… with no JavaScript on this page. */}
     <form class="site-footer__search" role="search" aria-label="Site search" action="/search/" method="get">
@@ -112,6 +123,10 @@ const { columns, social, notes } = site.footer;
     border-top: 1px solid var(--color-border);
     padding-top: var(--space-4);
     font-size: 0.875rem;
+  }
+  /* The phone number never breaks across lines. */
+  .site-footer__notes :global(.site-footer__nowrap) {
+    white-space: nowrap;
   }
   .site-footer__notes :global(small) {
     font-size: inherit;

@@ -19,7 +19,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<h2>Breast Cancer Burial Insurance Key Insights</h2>
+<h2>Breast cancer burial insurance key insights</h2>
 
 <ul>
 <li><strong>Remission differs from </strong><strong>cure:</strong>&#160;Insurers view remission as cancer that is simply held at bay rather than&#160;completely gone.</li>
@@ -33,11 +33,11 @@ sidebar: true
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/02/Breast-Cancer-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
-<h2>Breast Cancer Medical Definition &amp; Health Risks</h2>
+<h2>Breast cancer medical definition &amp; health risks</h2>
 
 <p>Underwriters determine your final expense insurance eligibility by calculating the exact number of months that have passed since your last active cancer treatment. Breast cancer occurs when abnormal cells grow in breast tissue and form a mass. This condition can spread to lymph nodes or other organs if it is not caught early. Poor control of the <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> or failing to finish treatments like radiation can lead to the disease returning and shortening your life span.</p>
 
-<h3>Life Insurance Companies Ask These Breast Cancer Questions</h3>
+<h3>Life insurance companies ask these breast cancer questions</h3>
 
 <p>Different life insurance companies ask different questions to decide which breast cancer applicants they may approve.</p>
 
@@ -46,7 +46,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Squamous Cell</a> or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -56,7 +55,7 @@ sidebar: true
 <li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
-<h3>Breast Cancer Underwriting Basics</h3>
+<h3>Breast cancer underwriting basics</h3>
 
 <ul>
 <li><strong>Stage and Grade:</strong> Stages 0 and 1 are low risk, while Stages 3 and 4 are high risk.</li>
@@ -70,7 +69,7 @@ sidebar: true
 
 <p><strong>Why it Matters:</strong> Test results and pathology notes dictate your risk class. Better scores allow you to get lower rates, while advanced stages or spreading to nodes usually trigger a 2-year waiting period.</p>
 
-<h3>Breast Cancer Prescription Medication Classes</h3>
+<h3>Breast cancer prescription medication classes</h3>
 
 <ul>
 <li><strong>Hormone Blockers:</strong> Tamoxifen, Arimidex, or Femara.</li>
@@ -78,11 +77,11 @@ sidebar: true
 <li><strong>Targeted Therapy:</strong> Herceptin or Perjeta.</li>
 </ul>
 
-<h2>Breast Cancer with Comorbidities</h2>
+<h2>Breast cancer with comorbidities</h2>
 
 <p>Multiple health issues occurring simultaneously will increase the total risk level for the insurer. Breast cancer often appears alongside other problems like high blood pressure, diabetes, or thyroid issues. If you have active cancer while also managing heart disease, the insurer sees a much higher risk of a claim. Addressing these issues together makes it more important to implement a policy now, before your health changes further.</p>
 
-<h2>Understanding Breast Cancer Policy Types</h2>
+<h2>Understanding breast cancer policy types</h2>
 
 <p>Insurance carriers offer different plan categories based on your cancer stage and current treatment status.</p>
 
@@ -92,7 +91,7 @@ sidebar: true
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life for those currently in treatment or hospice.</li>
 </ul>
 
-<h2>Breast Cancer Underwriting &amp; Medication History</h2>
+<h2>Breast cancer underwriting &amp; medication history</h2>
 
 <p>Insurance companies review your prescription history to confirm that your medical condition is stable and controlled.</p>
 
@@ -129,23 +128,23 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real Life Breast Cancer Burial Insurance Success Stories</h2>
+<h2>Real life breast cancer burial insurance success stories</h2>
 
 <p>Case studies show how survivors found day-one protection to pay for funeral and burial expenses for their loved ones.</p>
 
-<h3>David’s Story</h3>
+<h3>David’s story</h3>
 
 <p>David applied for a policy to cover his wife’s future expenses after she beat Stage 1 breast cancer. She had a lumpectomy 3 years ago and had not needed chemo or radiation. Since she was well past the two-year waiting period, I helped them find a level plan with Trinity Life. This plan provided them with immediate coverage of $15,000 to cover all cremation and memorial costs. They saved 25% by choosing a health-question plan instead of a no-exam option.</p>
 
-<h3>Linda’s Story</h3>
+<h3>Linda’s story</h3>
 
 <p>Linda had finished her last round of radiation only 6 months before she decided to look for insurance. Most companies told her she had to wait 2 years, but she wanted protection right now. We used a graded plan through Guaranteed Trust Life that accepted her recent history. This plan provided her with a path to full coverage without waiting for the two-year window to close. She now pays a steady rate and does not have to worry about her health changing in the future.</p>
 
-<h3>Breast Cancer Burial Insurance Rates &amp; Approvals</h3>
+<h3>Breast cancer burial insurance rates &amp; approvals</h3>
 
 <p>Here are some preferred rates for cancer cured more than 24 months ago. Your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>TRINITY LIFE &amp; FAMILY BENEFIT INSURANCE RATES AGE 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -169,7 +168,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Frequently Asked Questions: Breast Cancer Burial Insurance</h2>
+<h2>Frequently asked questions: breast cancer burial insurance</h2>
 
 <h3>Can I get burial insurance with an active breast cancer diagnosis?</h3>
 
@@ -183,7 +182,7 @@ sidebar: true
 
 <p>Insurance underwriters distinguish between “active treatment,” such as chemotherapy or radiation, and “maintenance therapy,” like taking daily hormonal pills (e.g., Tamoxifen or Arimidex). Many final expense carriers do not count maintenance hormones as “active treatment,” allowing survivors who are years into their hormonal therapy to qualify for the same rates as those with no cancer history. This distinction can save you significant money and eliminate the need for a two-year waiting period.</p>
 
-<h3>Can I get life insurance for Stage IV metastatic breast cancer?</h3>
+<h3>Can I get life insurance for stage IV metastatic breast cancer?</h3>
 
 <p>Stage IV breast cancer patients can obtain “guaranteed issue” life insurance that bypasses all health questions and medical records. While traditional term or whole-life policies will decline Stage IV applicants, guaranteed acceptance plans ensure you can still leave a legacy for your family. These policies are permanent whole life contracts, meaning the rate never increases and the coverage cannot be cancelled as long as you pay the monthly premiums.</p>
 

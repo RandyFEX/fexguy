@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-use-cbd-oil"><br><strong><strong>What Is My Best Insurance Option If I’m A CBD Oil User?</strong></strong></h2>
+<h2 id="best-insurance-option-if-you-use-cbd-oil"><br><strong><strong>What is my best insurance option if I’m a CBD oil user?</strong></strong></h2>
 
 <p>It’s important to understand that CBD oil users may be approved for burial insurance depending on the medical condition the CBD oil is treating.</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <p><strong>Best Option: </strong>Guaranteed issue burial insurance</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -117,7 +117,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -166,7 +166,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Use CBD Oil, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I use CBD oil, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for CBD oil users.</p>
 
@@ -174,7 +174,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-cbd-oil-user"><br><strong><strong>Burial Insurance Underwriting If You’re A CBD Oil User</strong></strong></h2>
+<h2 id="insurance-underwriting-for-cbd-oil-user"><br><strong><strong>Burial insurance underwriting if you’re a CBD oil user</strong></strong></h2>
 
 <p>Every final expense insurance company with underwriting will ask health questions and conduct a prescription history check to verify your health.</p>
 
@@ -198,7 +198,7 @@ sidebar: true
 
 <p>Lying on an insurance application is FRAUD, and you risk losing your benefits.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Use CBD Oil?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I use CBD oil?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -258,11 +258,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="cbd-oil-user-and-burial-insurance-riders"><br><strong>CBD Oil Users And Burial Insurance Riders</strong></h2>
+<h2 id="cbd-oil-user-and-burial-insurance-riders"><br><strong>CBD oil users and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -271,7 +271,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you-use-cbd-oil"><br><strong>Information We Need If You’re A CBD Oil User</strong></h2>
+<h2 id="information-we-need-if-you-use-cbd-oil"><br><strong>Information we need if you’re a CBD oil user</strong></h2>
 
 <p>When applying for burial insurance for CBD oil users, it is critical to disclose any medical conditions. This information will help us understand your current health and provide an accurate quote.</p>
 
@@ -288,7 +288,7 @@ sidebar: true
 
 <p>Answer each question honestly. We need more information about your CBD oil use so we can place you with the right insurance company that will look at you favorably and offer you the best-priced policy.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -303,7 +303,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For CBD Oil Users</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for CBD oil users</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -322,19 +322,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy for CBD Oil users needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers specializing in covering high-risk clients like you. We will search all those companies and match you with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for CBD Oil users’ funeral insurance, CBD Oil users’ burial insurance, or CBD Oil users’ life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Do I qualify for life insurance if I’m a CBD oil user?</strong></p>
 
@@ -414,7 +402,7 @@ sidebar: true
 
 <p><br><strong>How can I find an insurance company that offers burial insurance for CBD oil users?</strong></p>
 
-<p>To find an insurance company that offers burial insurance for CBD oil users, you can start by calling Final Expense Guy at (888) 862-9456.</p>
+<p>To find an insurance company that offers burial insurance for CBD oil users, you can start by calling Final Expense Guy at 888-862-9456.</p>
 
 <p><br><strong>What is the waiting period if I use CBD oil?</strong></p>
 

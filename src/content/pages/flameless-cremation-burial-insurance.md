@@ -56,7 +56,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-flameless-cremation"> <br>What Is Flameless Cremation? </h2>
+<h2 id="what-is-flameless-cremation"> <br>What is flameless cremation? </h2>
 
 <p>Alkaline hydrolysis or flameless cremation is a water-based chemical resolving process that uses strong alkali and water to reduce the body to bone fragments quickly. </p>
 
@@ -72,9 +72,9 @@ sidebar: true
 
 <p>Flameless cremation is also more environmentally friendly than embalming or traditional cremation. </p>
 
-<p>This disposition process is currently legal in sixteen states, including California, Colorado, Florida, Georgia, Idaho, Illinois, Kansas, Maine, Maryland, Michigan, Minnesota, Nevada, Oregon, Utah, and Wyoming.</p>
+<p>This disposition process is currently legal in a growing number of states, but not in all of them. Check your state’s current law and whether a provider near you offers it.</p>
 
-<h2 id="benefits-of-flameless-cremation"><br><strong>Benefits Of Flameless Cremation </strong></h2>
+<h2 id="benefits-of-flameless-cremation"><br><strong>Benefits of flameless cremation </strong></h2>
 
 <p>Burial and traditional cremations have a marked environmental cost. </p>
 
@@ -99,7 +99,7 @@ sidebar: true
 
 <p>Flameless cremation produces no fumes or smoke. It also requires less energy. It only uses a quarter of the energy needed for cremation and conserves more than a metric ton of (CO2) carbon dioxide for every person that uses it. It also produces no mercury emissions.</p>
 
-<h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost?</strong></h2>
+<h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost?</strong></h2>
 
 <p>The cost of a traditional funeral and burial is the most expensive final expense you will pay. </p>
 
@@ -134,9 +134,7 @@ sidebar: true
 
 <p>Depending on the state, the cost of alkaline hydrolysis differs.</p>
 
-<p>In Minnesota, flameless cremation cost about $2,400</p>
-
-<p>In Illinois, <a href="https://www.aquagreendispositions.com/" target="_blank" rel="noreferrer noopener">AquaGreen Disposition</a> offers a flameless cremation package with paperwork, urn, and transport for $1,795</p>
+<p>Prices differ from one provider to another, so ask the providers near you for a current price list.</p>
 
 <p>Flameless cremation is cheaper than burial and is price competitive with traditional cremation. This process will benefit those people who can’t afford burial or those who don’t want to be cremated.</p>
 
@@ -146,7 +144,7 @@ sidebar: true
 
 <p>This is the reason why having flameless burial cremation insurance is important. Cremation insurance can protect your family from the financial stress associated with dying.</p>
 
-<h2 id="what-is-flameless-cremation-burial-insurance"><br><strong>What Is Flameless Cremation Burial Insurance? </strong></h2>
+<h2 id="what-is-flameless-cremation-burial-insurance"><br><strong>What is flameless cremation burial insurance? </strong></h2>
 
 <p>Flameless burial cremation insurance is a whole life insurance policy designed to cover the cost of cremation and other end-of-life expenses. </p>
 
@@ -187,7 +185,7 @@ the years </p>
 
 <p>Even if you expect to leave enough funds to your family, you may not want your estate to shoulder your final expenses. Having cremation insurance is one way to ensure that your estate will be available to your family.</p>
 
-<h2 id="who-can-apply-for-flameless-cremation-burial-insurance"><br><strong>Who Can Apply For Flameless Cremation Burial Insurance?</strong></h2>
+<h2 id="who-can-apply-for-flameless-cremation-burial-insurance"><br><strong>Who can apply for flameless cremation burial insurance?</strong></h2>
 
 <p><strong>Age requirement</strong> – you must be 50 to 85 years old to
 be eligible for cremation insurance.</p>
@@ -197,7 +195,7 @@ permanent resident to be able to buy cremation insurance</p>
 
 <p><strong>Mental capacity</strong> – you must have the mental ability to enter into a legal contract to qualify for cremation insurance.</p>
 
-<h2 id="different-types-of-cremation-insurance"><br><strong>Different Types Of Cremation Insurance </strong></h2>
+<h2 id="different-types-of-cremation-insurance"><br><strong>Different types of cremation insurance </strong></h2>
 
 <p>You can either apply for cremation insurance with underwriting (answer health questions), or you can apply for a policy that does not have health questions. </p>
 
@@ -242,13 +240,13 @@ underwriting:</strong></p>
 
 <p>The company will not pay the full death benefit if you pass away from natural causes during the waiting period. Instead, they will return 100% of your premiums plus 7-10% interest. The insurance company will pay the full death benefit even during the waiting period for accidental death.</p>
 
-<h2><br><strong>Guaranteed Issue Cremation Insurance (No Health Questions)</strong></h2>
+<h2><br><strong>Guaranteed issue cremation insurance (no health questions)</strong></h2>
 
 <p>Cremation insurance has a lenient underwriting. However, some medical conditions are considered uninsurable. </p>
 
 <p><a rel="noreferrer noopener" href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> cremation insurance with no health questions is the only insurance option for people with severe medication conditions. GI policy requires no medical exam and health questions. Your approval is guaranteed if you pass the age requirement.</p>
 
-<p><strong>Guaranteed issue cremation insurance is your only insurance option if you have any of the following medical conditions:</strong></p>
+<p><strong>Guaranteed issue cremation insurance is usually your only insurance option if you have any of the following medical conditions:</strong></p>
 
 <ul>
 <li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or Dementia</li>
@@ -256,10 +254,9 @@ underwriting:</strong></p>
 <li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Circulatory surgery</a> within the previous 12 months</li>
 <li>Currently in a hospital, nursing facility, or Hospice Care</li>
 <li>Congestive heart failure</li>
-<li>Heart attack</li>
 <li>HIV or AIDS</li>
 <li>Kidney failure requiring dialysis</li>
-<li>Oxygen use</li>
+<li>Continuous oxygen use</li>
 <li>Terminal Illness</li>
 <li>Recommended to have an organ transplant</li>
 <li>Needing assistance with activities of daily living such as bathing, dressing, toileting, continence, and transferring </li>
@@ -267,7 +264,7 @@ underwriting:</strong></p>
 
 <p>Guaranteed issue cremation insurance has a two-year waiting period. If you die from natural causes during the first two years, the company would only refund your premiums plus 7-10% interest. </p>
 
-<h2 id="what-to-look-for-in-a-cremation-insurance-policy"><br><strong>What To Look For In A Cremation Insurance Policy </strong></h2>
+<h2 id="what-to-look-for-in-a-cremation-insurance-policy"><br><strong>What to look for in a cremation insurance policy </strong></h2>
 
 <p>If you’re shopping for cremation insurance, you need to pay attention to the price and the fine print. </p>
 
@@ -287,23 +284,7 @@ underwriting:</strong></p>
 
 <p>Before you decide which cremation insurance to buy, answer the instant pricing estimate box. This way, you can compare prices from different insurance companies and choose the one that fits your needs.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
-
-<p>Finding a policy if you want cremation insurance needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>If you have a health history or pre-existing medical condition, let us help you; we will work with you side by side to find a plan that fits your needs.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We will shop your case at different insurance carriers and get you the best price.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for cremation funeral insurance, or cremation burial insurance, or flameless burial cremation life insurance. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at 888) 862-9456, and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>How is flameless cremation done?</strong></p>
 
@@ -320,7 +301,7 @@ underwriting:</strong></p>
 <ul>
 <li>It is more environmentally friendly than traditional cremation, as it does not produce emissions or pollute the air.</li>
 <li>Flameless cremation can be completed much more quickly than traditional cremation, which typically takes several hours or even days to complete.</li>
-<li>The process is less expensive than traditional cremation, making it a more affordable option for families looking for end-of-life options.</li>
+<li>The process is usually less expensive than a traditional burial, making it a more affordable option for families looking for end-of-life options.</li>
 </ul>
 
 <p><br><strong>Does burial insurance cover flameless cremation?</strong></p>
@@ -345,11 +326,11 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation better than cremation?</strong></p>
 
-<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>How Much Does cremation cost?</strong></p>
 
-<p>The cost of cremation can vary depending on a number of different factors, such as the location and method used. On average, traditional cremation costs range from $1,000 to $3,000. The cost of flameless cremation is typically less expensive.</p>
+<p>The cost of cremation can vary depending on a number of different factors, such as the location and method used. On average, traditional cremation costs range from $1,000 to $3,000. The cost of flameless cremation can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>How long does it take to cremate a body?</strong></p>
 
@@ -361,7 +342,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation cheaper than cremation?</strong></p>
 
-<p>Aquamation is typically less expensive than traditional cremation, as it does not require the use of fuel or other resources. The exact cost of aquamation can vary depending on a number of different factors, such as the location and method used.</p>
+<p>Aquamation is not always less expensive than traditional cremation; its price can be comparable to or higher. The exact cost of aquamation can vary depending on a number of different factors, such as the location and method used.</p>
 
 <p><br><strong>What do aquamation remains look like?</strong></p>
 
@@ -373,11 +354,11 @@ underwriting:</strong></p>
 
 <p><br><strong>What is the difference between aquamation and cremation?</strong></p>
 
-<p>Aquamation is a newer method of body disposition that uses water to break down the body, while cremation uses fire. Aquamation is more environmentally friendly than cremation, as it does not produce emissions or pollution. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>Aquamation is a newer method of body disposition that uses water to break down the body, while cremation uses fire. Aquamation is more environmentally friendly than cremation, as it does not produce emissions or pollution. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>What is the cost of aquamation?</strong></p>
 
-<p>The cost of aquamation can vary depending on a number of different factors, such as the location and method used. On average, the cost of aquamation is typically less expensive than traditional cremation.</p>
+<p>The cost of aquamation can vary depending on a number of different factors, such as the location and method used. Its price can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>What is left after aquamation?</strong></p>
 
@@ -385,7 +366,7 @@ underwriting:</strong></p>
 
 <p><br><strong>What are the benefits of aquamation?</strong></p>
 
-<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>What are the disadvantages of aquamation?</strong></p>
 
@@ -401,7 +382,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation legal in the US?</strong></p>
 
-<p>Aquamation is legal in the US and is becoming an increasingly popular method of body disposition. Whether or not aquamation is available in a particular location will depend on local regulations and laws.</p>
+<p>Aquamation is legal in a growing number of US states and is becoming an increasingly popular method of body disposition. Whether or not aquamation is available in a particular location will depend on local regulations and laws.</p>
 
 <p><br><strong>What is liquid cremation?</strong></p>
 
@@ -421,7 +402,7 @@ underwriting:</strong></p>
 
 <p><br><strong>How much does aquamation cost?</strong></p>
 
-<p>The cost of aquamation can vary depending on a number of different factors, including the method and location used. On average, the cost of aquamation is typically less expensive than traditional cremation.</p>
+<p>The cost of aquamation can vary depending on a number of different factors, including the method and location used. Its price can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>Do bones melt in aquamation?</strong></p>
 
@@ -429,7 +410,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Are there any restrictions on aquamation?</strong></p>
 
-<p>While aquamation is legal in most locations, some restrictions or regulations may exist. You should check with your local governing body to learn more about the laws and regulations that apply to aquamation in your area.</p>
+<p>While aquamation is legal in many states, some restrictions or regulations may exist. You should check with your local governing body to learn more about the laws and regulations that apply to aquamation in your area.</p>
 
 <p><br><strong>What chemicals are used in aquamation?</strong></p>
 
@@ -469,21 +450,21 @@ underwriting:</strong></p>
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">4 Comments</h2>
+<h2 class="as-h5">4 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-1387">

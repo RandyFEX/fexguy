@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help with continence signals higher risk to insurance companies<br>• Most policies decline or limit coverage if you need help with ADLs<br>• Guaranteed issue is often the only option and has a 2-year wait<br>• You’ll pay more for less coverage compared to healthier applicants<br>• Waiting to apply makes approval harder and more expensive<br>• Not understanding ADLs can lead to picking the wrong policy</p>
 
-<p>Burial insurance with help for continence or other Activities of Daily Living (ADLs) is one of the toughest situations to get approved. ADLs include basic tasks like bathing, dressing, eating, and controlling bladder or bowel function, which is what continence refers to. Insurance companies use these as a major red flag because needing help with even 1 or 2 ADLs signals a serious health risk. In most cases, that pushes you into guaranteed-issue burial insurance, a type of whole life insurance with higher costs and a 2-year waiting period before full benefits begin.</p>
+<p>Burial insurance with help for continence or other Activities of Daily Living (ADLs) is one of the toughest situations to get approved. ADLs include basic tasks like bathing, dressing, eating, and controlling bladder or bowel function, which is what continence refers to. Insurance companies use these as a major red flag because needing help with even 1 or 2 ADLs signals a serious health risk. That pushes you into guaranteed-issue burial insurance, a type of whole life insurance with higher costs and a 2-year waiting period before full benefits begin.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -56,13 +56,15 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-need-help-with-continence"><br><strong>What Is My Best Insurance Option If I Need Help With Continence?</strong></h2>
+<h2 id="best-insurance-option-if-you-need-help-with-continence"><br><strong>What is my best insurance option if I need help with continence?</strong></h2>
 
 <p>Activities of daily living (<a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ADL)</a>  such as continence, eating, bathing, dressing, toileting, and transferring are used by life insurance companies to assess the applicants’ function and independence:</p>
 
 <p>Life insurance companies define continence as maintaining bladder and bowel control and performing personal hygiene tasks. It includes managing and caring for a catheter, ostomy, or urinary catheter collection bag and applying diapers or disposable barrier pads.</p>
 
 <p>Suppose you cannot retain control of your bladder or bowel function and need assistance from another person to do the associated personal hygiene tasks. In that case, you are dependent on help for continence.</p>
+
+<p>If you have occasional leakage, wear absorbent underwear, or use a catheter but take care of it yourself, you are not dependent on help for continence. Your options then depend on the medical condition behind it, your other health issues and each company’s health questions, and first-day coverage may still be possible.</p>
 
 <p>If you need help with continence, your best insurance option is guaranteed issue burial insurance.</p>
 
@@ -90,7 +92,7 @@ sidebar: true
 
 <p>You must also possess the mental capacity to enter into a legal contract to qualify for burial insurance.</p>
 
-<h2 id="how-does-needing-help-with-continence-affect-life-insurance"><br><strong>How Does Needing Help With Continence Affect Life Insurance?</strong></h2>
+<h2 id="how-does-needing-help-with-continence-affect-life-insurance"><br><strong>How does needing help with continence affect life insurance?</strong></h2>
 
 <p>Needing help from another person with continence will significantly affect your ability to qualify for the best-priced insurance coverage, as continence is an important self-care activity you must do on your own.</p>
 
@@ -116,7 +118,7 @@ sidebar: true
 
 <p>Therefore, they will need to pay more premiums and endure a waiting period.&#160; No life insurance company will offer you a first-day coverage plan if you need help in performing ADL.</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -135,7 +137,7 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
+<td>No health questions policies</td><td>With 2-year waiting period (unless you need help with ADLs: then it’s your best option)</td>
 </tr>
 <tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
@@ -155,7 +157,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -204,7 +206,9 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Need Help With Continence, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<p>These benefits describe our first-day coverage plans. If you need another person’s help with an ADL, first-day coverage isn’t available, and the guaranteed issue plan described above is your best option.</p>
+
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I need help with continence, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance if you need help with continence.</p>
 
@@ -212,7 +216,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-people-needing-help-with-continence"><br><strong>Burial Insurance Underwriting If You Need Help With Continence</strong></h2>
+<h2 id="insurance-underwriting-for-people-needing-help-with-continence"><br><strong>Burial insurance underwriting if you need help with continence</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -250,7 +254,7 @@ sidebar: true
 
 <p>Every life insurance company will ask if you need help with continence and activities of daily living. Suppose you answer “yes” to the ADL question. In that case, you will automatically be declined for life insurance except for guaranteed issue burial insurance, which does not ask any health questions and will take you in regardless of your current situation.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Need Help With Continence?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I need help with continence?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -358,11 +362,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="needing-help-with-continence-and-burial-insurance-riders"><br><strong>Needing Help With Continence And Burial Insurance Riders</strong></h2>
+<h2 id="needing-help-with-continence-and-burial-insurance-riders"><br><strong>Needing help with continence and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -387,13 +391,13 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why Do You Need Guaranteed Issue Burial Insurance If You Need Help With Continence?</strong></h2>
+<h2 id="why-you-need-guaranteed-issue-burial-insurance"><br><strong>Why do you need guaranteed issue burial insurance if you need help with continence?</strong></h2>
 
 <p>We recommend buying guaranteed issue burial insurance if you need help with continence and other ADLs because it’s the best life insurance plan you will qualify for. If you are relatively healthy and only need help with continence, you can have an average life expectancy and easily outlive the two-year waiting period.</p>
 
 <p>It is wise to invest in guaranteed issue life insurance now because your health may decline. Buying a guaranteed issue burial insurance if you need help with dressing is worth it. You won’t lose money with this policy, and it costs much less in the long run than having no insurance coverage.</p>
 
-<h2 id="benefits-of-guaranteed-issue-insurance"><br><strong>Benefits Of Guaranteed Issue Burial Insurance</strong></h2>
+<h2 id="benefits-of-guaranteed-issue-insurance"><br><strong>Benefits of guaranteed issue burial insurance</strong></h2>
 
 <ol>
 <li><strong>Easy application process</strong>. You skip the medical exam and health questions. You will only be asked about your basic information and approved.</li>
@@ -406,7 +410,7 @@ sidebar: true
 <li><strong>Cash value accumulation</strong>. Guaranteed acceptance life insurance accumulates cash value over the years.</li>
 </ol>
 
-<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The Best Guaranteed Issue Life Insurance Policy</strong></h2>
+<h2 id="the-best-guaranteed-issue-life-insurance-policy"><br><strong>The best guaranteed issue life insurance policy</strong></h2>
 
 <p>The best-guaranteed-issue life insurance policy will not have you wait more than two years to take effect. Some plans have three or even four-year waiting periods. 3-4-year waiting period plans are terrible, and you should avoid these plans.</p>
 
@@ -414,7 +418,7 @@ sidebar: true
 
 <p>If you need help with continence, then GI policy is your best choice. Your application will be quick and easy because there are no medical exams or health questions. You can even get approved for coverage in 15 minutes!</p>
 
-<h2 id="information-we-need-if-you-need-help-with-continence"><br><strong>Information We Need If You Need Help With Continence</strong></h2>
+<h2 id="information-we-need-if-you-need-help-with-continence"><br><strong>Information we need if you need help with continence</strong></h2>
 
 <p>When applying for burial insurance, if you need help with continence and personal hygiene tasks, we will need some information about your current health and functionality.</p>
 
@@ -431,7 +435,7 @@ sidebar: true
 
 <p>Your information will enable us to determine what insurance company will provide you with the lowest rate.</p>
 
-<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance If You Need Help With Continence</strong></h2>
+<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance if you need help with continence</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -448,15 +452,3 @@ sidebar: true
 </ul>
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy when you need help with continence needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>e work with many A+ rated insurance carriers specializing in covering high-risk clients like you. We will search&#160;for all those companies and match you up with the best burial insurance company with the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for needing help with continence funeral insurance, or need help with continence burial insurance, or need help with continence life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>

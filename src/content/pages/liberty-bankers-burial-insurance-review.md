@@ -1,10 +1,10 @@
 ---
 title: "Liberty Bankers Burial Insurance Review - [Pros & Cons]"
-description: "Liberty Bankers Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing..."
+description: "A review of Liberty Bankers burial insurance: the pros and cons, pricing information and what to consider before you apply."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/liberty-bankers-burial-insurance-review/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Liberty Bankers Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"Liberty Bankers Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing..."},{"property":"og:url","content":"https://fexguy.com/liberty-bankers-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-20T12:11:34-05:00"},{"property":"article:published_time","content":"2026-04-20T12:11:29-05:00"},{"property":"article:modified_time","content":"2026-04-20T12:11:34-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Liberty Bankers Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"Liberty Bankers Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing..."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"15 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/\",\"name\":\"Liberty Bankers Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/\",\"name\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-04-20T12:11:29-05:00\",\"dateModified\":\"2026-04-20T12:11:34-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"keywords\":\"Liberty Bankers Burial Insurance\",\"datePublished\":\"2026-04-20T12:11:29-05:00\",\"dateModified\":\"2026-04-20T12:11:34-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"Liberty Bankers Burial Insurance Review guarantees you the best cremation, final expense, or life insurance pricing...\",\"name\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Liberty Bankers Burial Insurance Review - [Pros & Cons]"},{"property":"og:description","content":"A review of Liberty Bankers burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"property":"og:url","content":"https://fexguy.com/liberty-bankers-burial-insurance-review/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Company Reviews Final Expense Whole Life Insurance"},{"property":"og:updated_time","content":"2026-04-20T12:11:34-05:00"},{"property":"article:published_time","content":"2026-04-20T12:11:29-05:00"},{"property":"article:modified_time","content":"2026-04-20T12:11:34-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Liberty Bankers Burial Insurance Review - [Pros & Cons]"},{"name":"twitter:description","content":"A review of Liberty Bankers burial insurance: the pros and cons, pricing information and what to consider before you apply."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"15 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/\",\"name\":\"Liberty Bankers Burial Insurance Review &#8211; Pros &amp; Cons\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\",\"url\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/\",\"name\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"datePublished\":\"2026-04-20T12:11:29-05:00\",\"dateModified\":\"2026-04-20T12:11:34-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"keywords\":\"Liberty Bankers Burial Insurance\",\"datePublished\":\"2026-04-20T12:11:29-05:00\",\"dateModified\":\"2026-04-20T12:11:34-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"A review of Liberty Bankers burial insurance: the pros and cons, pricing information and what to consider before you apply.\",\"name\":\"Liberty Bankers Burial Insurance Review - [Pros &amp; Cons]\",\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/liberty-bankers-burial-insurance-review/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -55,7 +55,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Liberty Bankers Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Liberty Bankers Life insurance</strong></h2>
 
 <h3 id="h-what-burial-insurance-plans-do-liberty-bankers-offer"><strong>What burial insurance plans do Liberty Bankers offer?</strong></h3>
 
@@ -151,13 +151,13 @@ sidebar: true
 
 <p>We believe a guaranteed issue policy is better than this graded plan since it only has a two-year waiting period and no health questions on the application.</p>
 
-<h3 id="h-does-liberty-bankers-life-insurance-have-a-waiting-period"><strong>Does Liberty Bankers Life Insurance Have A Waiting Period?</strong></h3>
+<h3 id="h-does-liberty-bankers-life-insurance-have-a-waiting-period"><strong>Does Liberty Bankers Life insurance have a waiting period?</strong></h3>
 
 <p>SIMPL Preferred and SIMPL Standard does not have a waiting period. Coverage starts on the first payment date.</p>
 
 <p>Modified whole life insurance, on the other hand, has a three-year waiting period. This is the worst plan they have. We do not recommend this. A guaranteed issue life insurance with a two-year waiting period with be a better option than this plan.</p>
 
-<h3 id="h-what-is-hidden-in-liberty-bankers-fine-print"><strong>What Is Hidden In Liberty Bankers’ Fine Print?</strong></h3>
+<h3 id="h-what-is-hidden-in-liberty-bankers-fine-print"><strong>What is hidden in Liberty Bankers’ fine print?</strong></h3>
 
 <p>“For individuals who cannot qualify for a SIMPL policy, our Modified Whole Life Policy (MWL) may be an alternative. Modified Whole Life is a final expense life insurance policy issued for those applicants with more complex medical issues. This policy offers a modified death benefit as follows: </p>
 
@@ -166,9 +166,9 @@ sidebar: true
 <li>During the 4th year, the death benefit is 100%; followed by 105% in the 5th year; and 110% in the 6th year and thereafter”</li>
 </ul>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Liberty Bankers Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Liberty Bankers insurance?</strong></h2>
 
-<h3><strong>#1 – SIMPL PREFERRED</strong></h3>
+<h3><strong>#1 – SIMPL preferred</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -185,7 +185,7 @@ sidebar: true
 <li>The underwriting is strict for some health issues.</li>
 </ul>
 
-<h3># 2 – SIMPL STANDARD</h3>
+<h3># 2 – SIMPL standard</h3>
 
 <p><strong>PROS</strong></p>
 
@@ -202,7 +202,7 @@ sidebar: true
 <li>Higher premium than the SIMPL preferred plan</li>
 </ul>
 
-<h3>#3 – Modified Whole Life</h3>
+<h3>#3 – modified whole life</h3>
 
 <p><strong>PROS</strong></p>
 
@@ -218,9 +218,9 @@ sidebar: true
 <li>You will pay a higher premium</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders Or Other Benefits With Liberty Bankers Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders or other benefits with Liberty Bankers Life insurance?</strong></h2>
 
-<h3>Liberty Bankers Riders</h3>
+<h3>Liberty Bankers riders</h3>
 
 <p><strong>POLICY RIDERS AVAILABLE FOR PREFERRED AND STANDARD PLANS</strong></p>
 
@@ -233,7 +233,7 @@ sidebar: true
 <li><strong>Accidental Death and Dismemberment</strong>: “Available for an additional premium on SIMPL Preferred and Standard only. It provides an additional death benefit if your death is a result from an accident. In addition, a benefit is provided if you should lose the use of arms, legs, or eyes as a result of an accident.”</li>
 </ol>
 
-<h3><strong>Liberty Bankers’ Other Benefits</strong></h3>
+<h3><strong>Liberty Bankers’ other benefits</strong></h3>
 
 <p>Liberty Bankers allows a funeral home to be the beneficiary of your policy. They are one of te few companies that allow this benefit. </p>
 
@@ -241,7 +241,7 @@ sidebar: true
 <li><strong>Funeral Home Assignment:</strong> “Your benefit can be assigned to a funeral home.”</li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Liberty Bankers?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Liberty Bankers?</strong></h2>
 
 <p>There are four ways in which Liberty Bankers will assess your health to determine your eligibility.</p>
 
@@ -254,7 +254,7 @@ sidebar: true
 
 <p>Your response to the health questions is the most important part of the application process. The health questionnaire has three parts 1. the knockout questions 2. Standard questions 3. The questions for modified whole life insurance.</p>
 
-<h3 id="h-what-are-liberty-bankers-application-questions"><strong>What Are Liberty Bankers’ Application Questions?</strong></h3>
+<h3 id="h-what-are-liberty-bankers-application-questions"><strong>What are Liberty Bankers’ application questions?</strong></h3>
 
 <p><strong>Here are the actual health question on the Liberty Bankers Burial Insurance Application</strong></p>
 
@@ -328,7 +328,7 @@ sidebar: true
 
 <p>After completing the health questionnaire during the tele-application, the underwriter will tell you whether you qualify for coverage.</p>
 
-<h3><strong>Who Is Suited for Liberty Bankers Life Insurance?</strong></h3>
+<h3><strong>Who is suited for Liberty Bankers Life insurance?</strong></h3>
 
 <p>Most applicants will qualify for the SIMPL Standard. It’s their best plan with the most competitive rate. It offers spectacular rates for people with difficult health issues.</p>
 
@@ -351,13 +351,13 @@ sidebar: true
 
 <p>If you have a severe medical condition and have no other options, there are guaranteed issue plans with no health questions. It is cheaper with only a two-year waiting period.</p>
 
-<h3 id="h-do-liberty-bankers-have-the-same-day-approval-process"><strong>Do Liberty Bankers Have The Same Day Approval Process?</strong></h3>
+<h3 id="h-do-liberty-bankers-have-the-same-day-approval-process"><strong>Do Liberty Bankers have the same day approval process?</strong></h3>
 
 <p>Applying for burial insurance with Liberty Bankers is straightforward. You can be approved by phone or computer with a licensed agent on the same day.</p>
 
 <p>Liberty Bankers has a tele-application as part of their application process. A Final Expense Guy or Final EXpense Guy agent will do a three-way call with an underwriter. By the end of the call, you will get an answer on your application approval.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Liberty Bankers Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get Liberty Bankers Life insurance pricing?</strong></h2>
 
 <p>Liberty Bankers rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -569,33 +569,33 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Liberty Bankers Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Liberty Bankers company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Liberty Bankers’ Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Liberty Bankers’ operational history</strong></h3>
 
 <p>Liberty Bankers Life started business in 1958 as Royal Oak Life Insurance Company. They are based in Dallas, Texas. Heritage Guaranty Holdings now own them.</p>
 
 <p>Liberty Bankers started offering burial insurance in 2006. They also offer other products like whole life insurance, senior life insurance, pre-need funeral insurance, immediate and deferred annuities, and Medicare Supplements.</p>
 
-<h4>Company Address</h4>
+<h4>Company address</h4>
 
 <p>Liberty Bankers Life<br>1605 LBJ Fwy Suite 700<br>Dallas, Texas 75234, US</p>
 
-<h4>Contact Info</h4>
+<h4>Contact info</h4>
 
 <p>Website: <a href="https://www.lbig.com" target="_blank" rel="noreferrer noopener">https://www.lbig.com</a><br>Customer Service: (800) 604-8002<br>Email: customerservice@lbig.com</p>
 
-<h3 id="Financial-Rating"><strong>What Is Liberty Bankers’ Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Liberty Bankers’ financial rating?</strong></h3>
 
 <p>Liberty Bankers is a well-respected company with solid financials. A.M. Best gives an A- ranking to the company. This is an indicator that they are financially “Good” or stable. You can be certain that the company has the funds to pay your beneficiaries when you’re gone.</p>
 
-<h3><strong>Do Liberty Bankers Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Do Liberty Bankers have any consumer complaints?</strong></h3>
 
 <p>Nine complaints are recorded in the National Association of Insurance Commissioners (NAIC) for 2021. Customers complain about claim handling delays, coverage questions, product suitability, replacement, premium refund, and surrender problems.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Liberty Bankers Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Liberty Bankers Life insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is Liberty Bankers’ Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Liberty Bankers’ sales process?</strong></h3>
 
 <p>Liberty Bankers Life sells its product through its agents. However, independent agencies like Final Expense Guy or Final EXpense Guy are often preferred for purchasing Liberty Bankers’ Life Insurance products.</p>
 
@@ -603,7 +603,7 @@ sidebar: true
 
 <p>Working with independent agents allows you to access&#160;<a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">other life insurance companies</a>&#160;that offer better coverage and rates, and most come with no waiting period.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-liberty-bankers"><strong>Are Any Health Conditions Not Accepted By Liberty Bankers?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-liberty-bankers"><strong>Are any health conditions not accepted by Liberty Bankers?</strong></h3>
 
 <p>These health issues are not accepted for SIMPL preferred and standard first-day coverage plans:</p>
 
@@ -625,7 +625,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-does-liberty-bankers-compare-to-other-insurance-companies"><strong>How Does Liberty Bankers Compare To Other Insurance Companies?</strong></h3>
+<h3 id="h-how-does-liberty-bankers-compare-to-other-insurance-companies"><strong>How does Liberty Bankers compare to other insurance companies?</strong></h3>
 
 <p>Use our quoting software below to see how Liberty Bankers’ pricing compares to other companies.</p>
 
@@ -636,7 +636,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Liberty Bankers?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Liberty Bankers?</strong></h2>
 
 <details>
 <summary><b>Is Liberty Bankers Insurance legitimate?</b></summary>
@@ -710,16 +710,16 @@ Here are some common terms people use when searching for, or describing Liberty 
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
-<h3 class="as-h5">TruStage Price Increase</h3>
+<h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
 </a></div>

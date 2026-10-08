@@ -1,0 +1,74 @@
+---
+// Compact author/trust row under the article title: Randy's photo, who wrote
+// it, his credentials (only what the site already states: a licensed life
+// insurance agent, and Founder of Final Expense Guy per /about/), the page's
+// real last-updated date and the editorial guidelines.
+import RandyPhoto from './RandyPhoto.astro';
+
+interface Props {
+  /** ISO date (YYYY-MM-DD) the page was last updated. */
+  updated?: string;
+}
+const { updated } = Astro.props;
+const label = updated
+  ? new Date(`${updated}T12:00:00Z`).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    })
+  : undefined;
+---
+
+<div class="byline" data-pagefind-ignore>
+  <RandyPhoto size={48} />
+  <div class="byline__text">
+    <p class="byline__name">Written by <a class="byline__author" href="/randy-vandervaate/">Randy VanderVaate</a></p>
+    <p class="byline__meta">Licensed Life Insurance Agent <span aria-hidden="true">•</span> Founder of Final Expense Guy</p>
+    <p class="byline__meta">
+      {label && (
+        <>
+          Updated <time datetime={updated}>{label}</time> <span aria-hidden="true">•</span>{' '}
+        </>
+      )}
+      <a href="/editorial-guidelines/">Editorial Guidelines</a>
+    </p>
+  </div>
+</div>
+
+<style>
+  .byline {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .byline__author {
+    white-space: nowrap;
+  }
+  @media (min-width: 30rem) {
+    .byline {
+      align-items: center;
+    }
+  }
+  .byline__text p {
+    margin: 0;
+    line-height: 1.4;
+  }
+  .byline__name {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .byline__name a {
+    color: var(--color-primary);
+  }
+  .byline__meta {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .byline__meta a {
+    color: var(--color-text-muted);
+  }
+  .byline__meta a:hover {
+    color: var(--color-primary);
+  }
+</style>

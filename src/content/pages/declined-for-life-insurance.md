@@ -45,7 +45,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="different-outcomes-of-life-insurance-application"><br><strong>Different Outcomes Of Life Insurance Application</strong></h2>
+<h2 id="different-outcomes-of-life-insurance-application"><br><strong>Different outcomes of life insurance application</strong></h2>
 
 <p><strong>After your life insurance application has gone through the life insurance company underwriting process, the life insurance company will decide on your approval in 1 of 4 ways:</strong></p>
 
@@ -56,7 +56,7 @@ sidebar: true
 <li><strong>Declined</strong> – this is the worst outcome. The insurance provider you applied for isn’t willing to give you any coverage. Read on to know why life insurance companies will decline your application.</li>
 </ol>
 
-<h2 id="reasons-you-ll-get-declined-for-life-insurance"><br><strong>Reasons You’ll Get Declined For Life Insurance</strong></h2>
+<h2 id="reasons-you-ll-get-declined-for-life-insurance"><br><strong>Reasons you’ll get declined for life insurance</strong></h2>
 
 <p><strong>Here are the reasons why you would be declined for life insurance:</strong></p>
 
@@ -155,11 +155,11 @@ sidebar: true
 
 <p><strong>#17. Previous Declines</strong></p>
 
-<p>Insurance companies subscribe to the Medical Information Bureau (MIB), which shares information about prior life insurance approvals and denials on their life insurance applications. MIB reports protecting the life insurance companies from applicants who lie about their current medical conditions.</p>
+<p>Insurance companies subscribe to the Medical Information Bureau (MIB), which shares coded information that member companies report from your past individually underwritten life insurance applications. MIB does not record whether you were approved or declined, and each insurance company makes its own decision. MIB reports protecting the life insurance companies from applicants who lie about their current medical conditions.</p>
 
-<p>Previous declines in MIB reports will be a problem for those who previously applied for life insurance for a medical reason that may no longer exist. However, just because you have been denied in the past doesn’t mean other life insurance companies can never approve you for life insurance.</p>
+<p>Medical information in MIB reports can be a problem for those who previously applied for life insurance for a medical reason that may no longer exist. However, just because you have been denied in the past doesn’t mean other life insurance companies can never approve you for life insurance.</p>
 
-<h2 id="what-to-do-after-you-have-been-declined-for-life-insurance"><br><strong>What To Do After You Have Been Declined For Life Insurance</strong></h2>
+<h2 id="what-to-do-after-you-have-been-declined-for-life-insurance"><br><strong>What to do after you have been declined for life insurance</strong></h2>
 
 <p>If you have been rejected for life insurance coverage recently, you must know why you had been declined to avoid more life insurance rejections in the future.</p>
 
@@ -193,7 +193,7 @@ sidebar: true
 
 <p>For instance, if you were denied coverage for having proteinuria or protein in the urine, extreme physical exercise is the cause. You can follow up with an exam from your primary care physician. Ask your doctor to write a letter and attach the test results to show otherwise.</p>
 
-<h2 id="what-are-your-options-for-life-insurance-coverage"><br><strong>What Are Your Options For Life Insurance Coverage</strong></h2>
+<h2 id="what-are-your-options-for-life-insurance-coverage"><br><strong>What are your options for life insurance coverage</strong></h2>
 
 <p><strong>If you’ve been declined for life insurance coverage, here are your options:</strong></p>
 
@@ -231,7 +231,7 @@ sidebar: true
 
 <p>If you die within the waiting period, your beneficiary will only receive the return of premium plus interest, commonly 10%. But, if you die from an accident, 100% of the death benefit will be available to your beneficiaries.</p>
 
-<h2 id="getting-approved-for-affordable-life-insurance"><br><strong>Getting Approved For Affordable Life Insurance</strong></h2>
+<h2 id="getting-approved-for-affordable-life-insurance"><br><strong>Getting approved for affordable life insurance</strong></h2>
 
 <p>Aside from working with an independent life insurance agency to help you get approved for coverage, you can do a couple of things to get affordable life insurance and increase your chances of getting covered.</p>
 
@@ -245,9 +245,9 @@ sidebar: true
 <li><strong>Switching insurers</strong> – you may be able to get better rates if you switch to another life insurance company that offers the same benefits at lower rates.</li>
 </ul>
 
-<h2 id="what’s-your-next-step-if-you-ve-been-declined-for-life-insurance"><br><strong>What’s Your Next Step If You’ve Been Declined For Life Insurance?</strong></h2>
+<h2 id="what’s-your-next-step-if-you-ve-been-declined-for-life-insurance"><br><strong>What’s your next step if you’ve been declined for life insurance?</strong></h2>
 
-<p>Life insurance companies will know if you applied with other companies and had an application that had been denied in the past. Records of approval and denials are recorded in your Medical Information Bureau. </p>
+<p>Life insurance companies can see if you applied with other companies in the past. Your Medical Information Bureau file can show coded information from past applications and which companies have checked it, but it does not show whether you were approved or declined. </p>
 
 <p>Life insurance companies don’t like many declines, which could hurt your future chances with a company willing to take your risk.</p>
 
@@ -255,23 +255,7 @@ sidebar: true
 
 <p>You may be frustrated with being declined for coverage, but remember you have options. We will help you find the life insurance company to take your risk and offer you coverage.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Finding a policy with a history of decline needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p><strong>If you have been declined life insurance, let us help you; we will work with you side by side to find a plan that fits your needs.</strong></p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies anymore because we will do the dirty work for you.</p>
-
-<p><strong>We will shop your case at different insurance carriers and get you the best price.</strong></p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for funeral insurance, burial insurance, or life insurance, we can help. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions</strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions</strong></h2>
 
 <p><strong>Can you get life insurance if you have been declined in the past?</strong></p>
 

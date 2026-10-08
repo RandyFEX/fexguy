@@ -22,12 +22,17 @@
     },
     {
       "source": "/how-much-does-cremation-cost/",
-      "destination": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
       "statusCode": 301
     },
     {
       "source": "/how-much-does-cremation-cost-od/",
-      "destination": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-much-cremation-cost/",
+      "destination": "/cremation-cost-and-info/",
       "statusCode": 301
     },
     {
@@ -177,17 +182,17 @@
     },
     {
       "source": "/category/burial-insurance-company-review/page/3/",
-      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "destination": "/a-z-companies/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-company-review/page/2/",
-      "destination": "/category/company-reviews-final-expense-whole-life-insurance/page/2/",
+      "destination": "/a-z-companies/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-company-review/page/4/",
-      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "destination": "/a-z-companies/",
       "statusCode": 301
     },
     {
@@ -197,7 +202,7 @@
     },
     {
       "source": "/category/burial-insurance-neurological-impairments/page/3/",
-      "destination": "/category/neurological-impairments-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/neurological-disorders/",
       "statusCode": 301
     },
     {
@@ -821,6 +826,11 @@
       "statusCode": 301
     },
     {
+      "source": "/burial-insurance/burial-insurance-medicaid/",
+      "destination": "/final-expense-life-insurance-medicaid/",
+      "statusCode": 301
+    },
+    {
       "source": "/how-much-does-a-funeral-cost-in-2022/",
       "destination": "/how-much-does-a-funeral-cost/",
       "statusCode": 301
@@ -838,11 +848,6 @@
     {
       "source": "/primerica-life-insurance-review-bad-deal/",
       "destination": "/primerica-life-insurance-review/",
-      "statusCode": 301
-    },
-    {
-      "source": "/long-term-care-insurance/",
-      "destination": "/long-term-care-insurance-guide/",
       "statusCode": 301
     },
     {
@@ -1087,7 +1092,7 @@
     },
     {
       "source": "/category/burial-insurance-company-review/",
-      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "destination": "/a-z-companies/",
       "statusCode": 301
     },
     {
@@ -1112,7 +1117,7 @@
     },
     {
       "source": "/category/burial-insurance-lung-respiratory/",
-      "destination": "/category/lung-respiratory-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/respiratory-lung-conditions/",
       "statusCode": 301
     },
     {
@@ -1402,42 +1407,97 @@
     },
     {
       "source": "/category/burial-insurance-diabetes/",
-      "destination": "/category/diabetes-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/diabetes/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-heart-circulatory-conditions/",
-      "destination": "/category/heart-issues-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/heart-conditions/",
       "statusCode": 301
     },
     {
       "source": "/category/heart-circulatory-final-expense-whole-life-insurance/",
-      "destination": "/category/heart-issues-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/heart-conditions/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-kidney-conditions/",
-      "destination": "/category/kidney-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/kidney-disease/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-liver/",
-      "destination": "/category/liver-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/liver-disease/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-cancer/",
-      "destination": "/category/cancer-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/cancer/",
       "statusCode": 301
     },
     {
       "source": "/category/burial-insurance-neurological-impairments/",
-      "destination": "/category/neurological-impairments-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/neurological-disorders/",
       "statusCode": 301
     },
     {
       "source": "/category/final-expense-whole-life-insurance-company-reviews/",
-      "destination": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "destination": "/a-z-companies/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/cancer-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/company-reviews-final-expense-whole-life-insurance/",
+      "destination": "/a-z-companies/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/company-reviews-final-expense-whole-life-insurance/page/2/",
+      "destination": "/a-z-companies/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/diabetes-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/diabetes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/heart-issues-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/heart-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/heart-issues-final-expense-whole-life-insurance/page/2/",
+      "destination": "/burial-insurance/heart-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/kidney-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/kidney-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/liver-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/liver-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/lung-respiratory-conditions-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/respiratory-lung-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/neurological-impairments-final-expense-whole-life-insurance/",
+      "destination": "/burial-insurance/neurological-disorders/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/term-life-insurance/",
+      "destination": "/term-life-insurance-guide-everyone/",
       "statusCode": 301
     },
     {

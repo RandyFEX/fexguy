@@ -1,6 +1,7 @@
 ---
 title: "Get Rates From Randy - Final Expense Guy"
-robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+robots: "noindex, follow"
+noindex: true
 canonical: "/rates-from-randy/"
 layout: "landing"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Get Rates From Randy - Final Expense Guy"},{"property":"og:description","content":"Final Expense"},{"property":"og:url","content":"https://fexguy.com/rates-from-randy/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-03-19T09:37:42-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2021/12/Randy-V-500x500-Left-Look-BW.png"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2021/12/Randy-V-500x500-Left-Look-BW.png"},{"property":"og:image:width","content":"500"},{"property":"og:image:height","content":"500"},{"property":"og:image:alt","content":"Get Rates From Randy"},{"property":"og:image:type","content":"image/png"},{"property":"article:published_time","content":"2022-03-15T13:32:01-05:00"},{"property":"article:modified_time","content":"2025-03-19T09:37:42-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Get Rates From Randy - Final Expense Guy"},{"name":"twitter:description","content":"Final Expense"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2021/12/Randy-V-500x500-Left-Look-BW.png"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"Less than a minute"}]

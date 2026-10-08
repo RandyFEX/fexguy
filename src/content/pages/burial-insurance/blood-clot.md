@@ -51,7 +51,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you-have-blood-clots"><br><strong>What Is My Best Insurance Option If I Have A History Of Blood Clots?</strong></h2>
+<h2 id="best-insurance-option-if-you-have-blood-clots"><br><strong>What is my best insurance option if I have a history of blood clots?</strong></h2>
 
 <p><br><strong>BLOOD CLOT TREATMENT WITH MEDICATIONS</strong></p>
 
@@ -73,7 +73,7 @@ sidebar: true
 
 <p><br><strong>TREATMENT OVER ONE YEAR BUT WITHIN THE LAST 24 MONTHS</strong></p>
 
-<p>If your blood clot treatment is over one year, but within the last 24 months, you will qualify for a first-day benefit plan. </p>
+<p>If your blood clot treatment is over one year, but within the last 24 months, you will qualify for a first-day benefit plan (a graded plan, not full first-day coverage). </p>
 
 <p>You will be covered from the first day, and your death benefit will be phased in over time.</p>
 
@@ -97,7 +97,7 @@ sidebar: true
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
-<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -136,7 +136,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="what-type-of-burial-insurance-is-best"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -185,7 +185,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I Have Blood Clot, Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I have blood clot, do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance with a blood clot.</p>
 
@@ -193,7 +193,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-blood-clots"><br><strong>Burial Insurance Underwriting If You Have A Blood Clot</strong></h2>
+<h2 id="insurance-underwriting-for-blood-clots"><br><strong>Burial insurance underwriting if you have a blood clot</strong></h2>
 
 <p>If you want to get the lowest life insurance premium, we recommend applying for a plan that asks some medical questions. </p>
 
@@ -249,7 +249,7 @@ sidebar: true
 
 <p>For the most part, blood clots are generally a non-issue with most insurance companies. We can help you qualify for the best plan with the lowest rate, even if you have had a pulmonary embolism.</p>
 
-<h2 id="determining-your-insurance-coverage-needs"><br><strong>How Much Insurance Do I Need If I Have Blood Clot?</strong></h2>
+<h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have blood clot?</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -357,11 +357,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-way-to-pay-your-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="best-way-to-pay-your-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="blood-clots-and-burial-insurance-riders"><br><strong>Blood Clot And Burial Insurance Riders</strong></h2>
+<h2 id="blood-clots-and-burial-insurance-riders"><br><strong>Blood clot and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -386,7 +386,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="information-we-need-if-you-have-blood-clots"><br><strong>Information We Need If You Have Blood Clots </strong></h2>
+<h2 id="information-we-need-if-you-have-blood-clots"><br><strong>Information we need if you have blood clots </strong></h2>
 
 <p>If you have blood clots, we will ask you questions to help you qualify for the lowest premium and avoid purchasing an expensive plan.</p>
 
@@ -402,7 +402,7 @@ sidebar: true
 
 <p>We will look for companies that favorably look at your medical conditions and medications. Our goal here is to get you first-day coverage without requiring a waiting period before your coverage starts.</p>
 
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -417,7 +417,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance With Blood Clot</strong></h2>
+<h2 id="uses-for-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance with blood clot</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -436,27 +436,13 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="finding-the-best-burial-insurance"><br><strong>Finding The Best Burial Insurance If You Have Blood Clots </strong></h2>
+<h2 id="finding-the-best-burial-insurance"><br><strong>Finding the best burial insurance if you have blood clots </strong></h2>
 
 <p>One factor most crucial when applying for burial insurance with a blood clot is applying with the right company because some companies ask about blood clots or embolisms on their application.</p>
 
 <p>Knowing which company is best for people with a blood clot or other health issues is something you can’t do alone. You’ll need the help of an independent insurance agency to identify those companies for you. This is where working with an insurance professional is a must.</p>
 
-<p>An independent insurance agency like Final Expense Guy works for your best interest. We will shop the market for you to get the best plan for your age, health, and budget. If you have a blood clot or embolism, give us a call or complete the instant quote box to get a free quote.</p>
-
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me? </strong></h2>
-
-<p>Finding a policy if you have blood clots or embolism needn’t be frustrating; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you to find the plan that fits your financial requirements and budget. You don’t have to waste your time searching for multiple insurance companies because we will do the dirty work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you.&#160; We will search all those companies and match you up with the best burial insurance company with the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford, so if you are looking for blood clot funeral insurance, burial insurance with a blood clot, or blood clot life insurance. </p>
-
-<p>Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at (888) 862-9456, and we can give you an accurate quote.</p>
-
-<h2 id="frequently-asked-questions"><strong> Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong> Frequently asked questions </strong></h2>
 
 <p><strong>Can you get life insurance if you had a blood clot?</strong></p>
 

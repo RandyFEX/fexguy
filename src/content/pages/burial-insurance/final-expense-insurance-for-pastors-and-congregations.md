@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="why-pastors-need-final-expense-insurance"><br><strong>Why Do Pastors And Congregations Need Final Expense Insurance?</strong></h2>
+<h2 id="why-pastors-need-final-expense-insurance"><br><strong>Why do pastors and congregations need final expense insurance?</strong></h2>
 
 <p>Pastors understand the impact of death better than most people. They officiate at funerals for the congregation every week, so they understand the financial struggles people suffer after the death of a loved one.</p>
 
@@ -62,7 +62,7 @@ sidebar: true
 
 <p>Final expense insurance for pastors and congregations is important to consider when planning for the future. Final expense insurance will help protect the financial stability of the minister’s family and the church.</p>
 
-<h2 id="need-to-preach-the-benefits-of-insurance"><br><strong>Why Pastors Need To Preach The Benefits Of Final Expense Insurance To Their Congregations</strong></h2>
+<h2 id="need-to-preach-the-benefits-of-insurance"><br><strong>Why pastors need to preach the benefits of final expense insurance to their congregations</strong></h2>
 
 <p>It can be a powerful message when your pastor preaches about the benefits of final expense insurance. This is a great way to get the word out to more people. Not only is he or she preaching the gospel, but also protecting the congregation members.</p>
 
@@ -72,7 +72,7 @@ sidebar: true
 
 <p>There are many reasons why both pastors and congregations should consider final expense insurance policies. It’s a vital part of any protection plan for clergy and church members. Final expense insurance provides peace of mind in knowing that your loved ones will be taken care of financially after you’re gone.&#160;</p>
 
-<h2 id="best-time-to-buy-final-expense-insurance"><br><strong>When Is The Best Time For Church Members To Buy Final Expense Life Insurance?</strong></h2>
+<h2 id="best-time-to-buy-final-expense-insurance"><br><strong>When is the best time for church members to buy final expense life insurance?</strong></h2>
 
 <p>The best time to buy final expense life insurance is when you are healthy and have no health issues. This will ensure that you qualify for the best rates. However, even if you do have health issues, it’s still possible to get coverage, but it may be at a higher premium rate.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>It is never too late to buy final expense insurance. You can still get coverage even if you are not in the best of health. Some companies offer life insurance policies without a medical exam if you’re worried about qualifying for life insurance with health conditions. So don’t let anything stop you from getting the coverage you need.</p>
 
-<h2 id="importance-of-insurance-to-church-members"><br><strong>Why Final Expense Insurance Is Important For Church Members After A Death Occurs</strong></h2>
+<h2 id="importance-of-insurance-to-church-members"><br><strong>Why final expense insurance is important for church members after a death occurs</strong></h2>
 
 <p>It is everyone’s responsibility to provide for his family. According to the scriptures in 1 Timothy 5:8 “But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever.”</p>
 
@@ -106,7 +106,7 @@ sidebar: true
 
 <p>Employees may need to purchase insurance privately if an employer does not offer final expense insurance. Those in the religious community should consider final expense insurance for Pastors and congregations as a way to protect the ministry and the congregation’s family and loved ones.</p>
 
-<h2 id="importance-of-final-expense-insurance"><br><strong>Why Final Expense Insurance Is Important For Both Pastors And Church Members</strong></h2>
+<h2 id="importance-of-final-expense-insurance"><br><strong>Why final expense insurance is important for both pastors and church members</strong></h2>
 
 <p>Pastors are concerned about how things would work out in case anything happens to them. They need final expense insurance so that their family can be taken care of financially and the congregation will have someone to lead them spiritually. Owning final expense insurance for congregations is also important because it helps the church cover final expenses.</p>
 
@@ -118,7 +118,7 @@ sidebar: true
 
 <p>Having final expense insurance for pastors and congregations is important because it protects in times of need. The policy will provide funds if the congregation needs to cover final expenses. This coverage can help keep a church running smoothly when it loses its pastor.</p>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Uses Of Final Expense Insurance For Pastors And Congregations</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Uses of final expense insurance for pastors and congregations</strong></h2>
 
 <p>Final expense insurance for pastors and congregations can be used while you live and when you pass away. Many people are unaware that final expense insurance also has savings and investment features in addition to providing death benefit protection.</p>
 
@@ -134,7 +134,7 @@ sidebar: true
 
 <p>When you pass away, the death benefit from your final expense insurance policy will help cover the cost of your funeral and other final expenses. The policy can also be used to pay off debts that you may have accumulated, such as credit card debt or medical bills.</p>
 
-<h2 id="features-of-final-expense-insurance"><br><strong>Features Of Final Expense Insurance</strong></h2>
+<h2 id="features-of-final-expense-insurance"><br><strong>Features of final expense insurance</strong></h2>
 
 <p><strong>No medical exam</strong> – final expense insurance for pastors and congregations does not require a medical exam. You only need to answer some health questions.</p>
 
@@ -150,15 +150,7 @@ sidebar: true
 
 <p><strong>Cash value build-up</strong> – cash value accumulates over time.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>The best way to find the right final expense insurance for pastors and congregations is to compare quotes from different life insurance companies to see who offers the best plan at the most affordable price.</p>
-
-<p>Final Expense Guy is an independent life insurance agency that can do the insurance shopping for you. We work with top-rated insurance companies and will help you compare policies and prices. You can be assured that you will get the best plan within your budget.</p>
-
-<p>If you have any questions regarding final expense insurance or want a free quote, fill in the quote form or call us at (888) 862-9456.</p>
-
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Do pastors get life insurance?</strong></p>
 

@@ -53,7 +53,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-insurance-option-if-you’re-a-wheelchair-user"><br><strong><strong>What Is My Best Insurance Option If I’m A Wheelchair User?</strong></strong></h2>
+<h2 id="best-insurance-option-if-you’re-a-wheelchair-user"><br><strong><strong>What is my best insurance option if I’m a wheelchair user?</strong></strong></h2>
 
 <p>The type of burial insurance you can qualify for will depend on why you use a wheelchair and if you need assistance in activities of daily living such as eating, bathing, dressing, toileting, transferring, and continence.</p>
 
@@ -91,7 +91,7 @@ sidebar: true
 <li>Recovering from surgery</li>
 </ul>
 
-<p>If you are using a wheelchair at home, your best life insurance option is guaranteed issue burial insurance.</p>
+<p>If you are using a wheelchair at home, some companies may still offer you first-day coverage, while others ask about wheelchair or scooter use and may decline. If no company with health questions will accept you, your best life insurance option is guaranteed issue burial insurance.</p>
 
 <p><br><strong><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ACTIVITIES OF DAILY LIVING</a></strong></p>
 
@@ -129,13 +129,13 @@ sidebar: true
 <li>Diabetes complications</li>
 </ul>
 
-<p>You will be ineligible for any coverage that has health questions. In this case, your only path to insurance coverage is through a guaranteed issue burial insurance.</p>
+<p>You will be ineligible for coverage with many companies that ask health questions, and Alzheimer’s disease or dementia means guaranteed issue only. For the other conditions, your usual path to insurance coverage is through a guaranteed issue burial insurance, although a company that doesn’t ask about wheelchair use may still consider you depending on the illness and how well it is controlled.</p>
 
-<p>Whether or not you need help with activities of daily living is irrelevant if you use a wheelchair because of a chronic illness.</p>
+<p>If you also need help with activities of daily living, guaranteed issue is your only option.</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 
-<h2 id="burial-insurance-to-avoid"><br><strong>What Types Of Burial Insurance Should I Avoid?</strong></h2>
+<h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 
 <table class="table-wrap" id="tablepress-23">
 <thead>
@@ -174,7 +174,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="best-type-of-burial-insurance"><br><strong>What Type Of Burial Insurance Is Best?</strong></h2>
+<h2 id="best-type-of-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
 <table>
 <thead>
@@ -223,7 +223,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="do-i-need-medical-exam"><br><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><br><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>You are NOT required to take a medical exam to qualify for burial insurance for wheelchair users.</p>
 
@@ -231,7 +231,7 @@ sidebar: true
 
 <p>You’ll get the official approval from the insurance company often within minutes!</p>
 
-<h2 id="insurance-underwriting-for-wheelchair-users"><br><strong>Burial Insurance Underwriting If You’re A Wheelchair User</strong></h2>
+<h2 id="insurance-underwriting-for-wheelchair-users"><br><strong>Burial insurance underwriting if you’re a wheelchair user</strong></h2>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
@@ -257,7 +257,7 @@ sidebar: true
 
 <p>Burial insurance companies will also check your medication history to verify your past and current health condition.</p>
 
-<h2 id="determining-your-insurance-needs"><br><strong>How Much Insurance Do I Need If I’m A Wheelchair User</strong></h2>
+<h2 id="determining-your-insurance-needs"><br><strong>How much insurance do I need if I’m a wheelchair user</strong></h2>
 
 <p>The amount of burial insurance you should buy varies depending on your personal and financial circumstances. However, burial insurance should cover the cost of your funeral, burial, and final expenses.</p>
 
@@ -317,11 +317,11 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="ways-to-pay-premiums"><br><strong>How Should I Pay My Premiums?</strong></h2>
+<h2 id="ways-to-pay-premiums"><br><strong>How should I pay my premiums?</strong></h2>
 
 <p>The best way to pay your premium is through a savings or checking account. We recommend you set a bank draft from your savings or checking account. That way, the bank will automatically pay your premium each month, and you don’t need to worry about your policy lapsing due to non-payment.</p>
 
-<h2 id="burial-insurance-riders"><br><strong>Wheelchair Use And Burial Insurance Riders</strong></h2>
+<h2 id="burial-insurance-riders"><br><strong>Wheelchair use and burial insurance riders</strong></h2>
 
 <p>Insurance policy riders add benefits to your policy. Adding insurance riders will enhance your policy to fit your needs. Some riders are built into your policy, while others can be added at an additional cost. Most riders are affordable, and it involves little to no underwriting.</p>
 
@@ -330,7 +330,7 @@ sidebar: true
 <p><br>
 </p>
 
-<h2 id="information-we-need-if-you’re-a-wheelchair-user"><br><strong>Information We Need If You’re A Wheelchair User</strong></h2>
+<h2 id="information-we-need-if-you’re-a-wheelchair-user"><br><strong>Information we need if you’re a wheelchair user</strong></h2>
 
 <p>When applying for final expense insurance for a wheelchair user, it is important to provide as much information as possible.</p>
 
@@ -348,15 +348,11 @@ sidebar: true
 
 <p>We need to know your medical condition to be able to provide you with the best recommendation. The more information we get, the better your chances of finding affordable insurance coverage.</p>
 
-<h2 id="getting-the-best-burial-insurance-rates"><br><strong><strong>How To Get The Best Burial Insurance Rates For Wheelchair Users?</strong></strong></h2>
+<h2 id="getting-the-best-burial-insurance-rates"><br><strong><strong>How to get the best burial insurance rates for wheelchair users?</strong></strong></h2>
 
 <p>Now that you know the different burial insurance options for wheelchair users, the best way to find the best burial insurance plan with the best rate is to employ the help of an independent insurance agency like Final Expense Guy. We represent multiple insurance companies.</p>
 
-<p>Instead of having to do the research and calling the companies yourself, let us help you through the process. Working with us is like working with 40 companies all at once. This is the quickest way to find the cheapest burial insurance.</p>
-
-<p>At Final Expense Guy, we are experts in finding the best companies based on your wheelchair use. We will help you find the lowest-priced burial insurance you can qualify for.</p>
-
-<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits Of Burial &amp; Funeral Insurance</strong></h2>
+<h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
@@ -371,7 +367,7 @@ sidebar: true
 <li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
-<h2 id="uses-of-final-expense-insurance"><br><strong>Other Common Uses For Final Expense Life Insurance For Wheelchair Users</strong></h2>
+<h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for wheelchair users</strong></h2>
 
 <p><strong>All of these examples are appropriate uses for Final Expense Life Insurance:</strong></p>
 
@@ -390,19 +386,7 @@ sidebar: true
 
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
-<h2 id="how-can-final-expense-guy-help"><br><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Trying to find a policy on wheelchair use needn’t be a frustrating process; working with an independent agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> will make the process easier and quicker.</p>
-
-<p>We will work with you every step to find the plan that fits your financial requirements and budget. You don’t have to waste your precious time searching for multiple insurance companies because we will do the work for you.</p>
-
-<p>We work with many A+ rated insurance carriers that specialize in covering high-risk clients like you. We will search all those companies and match you up with the best burial insurance company that gives the best rate.</p>
-
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for wheelchair use funeral insurance, wheelchair use burial insurance, or wheelchair use life insurance, we can help. </p>
-
-<p>Fill out our quote form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you accurate burial insurance <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quotes</a>.</p>
-
-<h2 id="frequently-asked-questions"><strong>   Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 
 <p><strong>Can I get life insurance if I use a wheelchair?</strong></p>
 

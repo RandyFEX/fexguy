@@ -4,11 +4,15 @@
 import { render } from 'astro:content';
 import ContentLayout from '@/layouts/ContentLayout.astro';
 import { getPublishedPages, pagePath, type PageEntry } from '@/lib/pages';
+import { isArticlePage } from '@/lib/article/config';
 
 export async function getStaticPaths() {
   const pages = await getPublishedPages();
   return pages
     .filter((entry) => pagePath(entry) !== '/') // homepage is src/pages/index.astro
+    // Pages opted in to the article template render through [...article].astro
+    // (src/config/article-pages.ts), so its styles reach only those pages.
+    .filter((entry) => !isArticlePage(pagePath(entry)))
     .map((entry) => ({
       params: { slug: pagePath(entry).replace(/^\/|\/$/g, '') },
       props: { entry },

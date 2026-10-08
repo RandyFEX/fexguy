@@ -1,0 +1,182 @@
+---
+// Health conditions: an introduction (heading, short explanation, link to
+// the full A–Z list) beside a 2 x 4 index of eight condition guides. An
+// index of rows rather than cards, so it reads differently from the service
+// tiles and scans quickly. Copy makes no approval or first-day promises.
+import { healthConditions } from '@/lib/home/content';
+---
+
+<section class="health" aria-labelledby="health-title">
+  <div class="container health__grid">
+    <h2 class="health__title" id="health-title">Health Problems Don’t Always Mean No</h2>
+    <p class="health__text">
+      Different life insurance companies look at health conditions differently. Randy can help you compare your
+      options.
+    </p>
+    <ul class="health__list" role="list">
+      {
+        healthConditions.map((c) => (
+          <li class="health__item">
+            <a class="health__link" href={c.href}>
+              <span class="health__name">{c.title}</span>
+              <svg class="health__chev" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="health__action">
+      <a class="btn btn--secondary" href="/a-z-health/">VIEW ALL HEALTH CONDITIONS</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .health {
+    padding-block: var(--space-12);
+    background: var(--home-cream);
+  }
+  .health__grid {
+    display: grid;
+    grid-template-areas:
+      'title'
+      'text'
+      'list'
+      'action';
+    row-gap: var(--space-4);
+  }
+  .health__title {
+    grid-area: title;
+    margin: 0;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  /* Gold rule above the heading, left-aligned like Meet Randy. */
+  .health__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-bottom: var(--space-4);
+    background: var(--home-gold);
+  }
+  .health__text {
+    grid-area: text;
+    margin: 0 0 var(--space-4);
+    max-width: 34rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  /* The index: a heritage-green rule on top, then rows divided by hairlines.
+     Phones: one column of compact rows. */
+  .health__list {
+    grid-area: list;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 3px solid var(--color-primary);
+  }
+  .health__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .health__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 3.5rem;
+    padding: var(--space-2) var(--space-2) var(--space-2) var(--space-1);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .health__name {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .health__chev {
+    flex: none;
+    color: var(--color-primary);
+    transition: transform 0.15s ease;
+  }
+  .health__link:hover,
+  .health__link:focus-visible {
+    background: var(--color-bg);
+  }
+  .health__link:hover .health__name,
+  .health__link:focus-visible .health__name {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .health__link:hover .health__chev,
+  .health__link:focus-visible .health__chev {
+    transform: translateX(3px);
+  }
+  .health__action {
+    grid-area: action;
+    margin: var(--space-4) 0 0;
+  }
+  .health__action .btn {
+    padding-inline: var(--space-4);
+  }
+
+  /* Wider phones and tablets: the index becomes 2 columns x 4 rows (reading
+     down each column). */
+  @media (min-width: 30rem) {
+    .health__list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(4, auto);
+      grid-auto-flow: column;
+      column-gap: var(--space-8);
+    }
+  }
+  /* Desktop: heading across the top; the explanation and button in the
+     first column of the 3-column grid used above, the index across the
+     other two. */
+  @media (min-width: 64rem) {
+    .health {
+      padding-block: 4.5rem;
+    }
+    .health__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto auto 1fr;
+      grid-template-areas:
+        'title title title'
+        'text list list'
+        'action list list';
+      column-gap: var(--space-6);
+      row-gap: 0;
+    }
+    .health__title {
+      margin-bottom: var(--space-12);
+    }
+    .health__text {
+      font-size: 1.1875rem;
+    }
+    .health__text {
+      margin: 0;
+      padding-right: var(--space-4);
+    }
+    .health__action {
+      align-self: start;
+      margin: var(--space-6) 0 0;
+    }
+    .health__list {
+      align-self: start;
+      column-gap: var(--space-12);
+    }
+    .health__link {
+      min-height: 4.5rem;
+      padding-inline: var(--space-2);
+    }
+    .health__name {
+      font-size: 1.375rem;
+    }
+  }
+</style>

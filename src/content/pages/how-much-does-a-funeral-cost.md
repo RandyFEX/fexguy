@@ -54,7 +54,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-much-does-a-funeral-cost"><br><strong>How Much Does A Funeral Cost?</strong></h2>
+<h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost?</strong></h2>
 
 <p>The median cost of an adult funeral with viewing and burial in the U.S. is $7,848. If the cemetery requires a vault, the average cost can go up to $9,420.</p>
 
@@ -136,7 +136,7 @@ sidebar: true
 <li>Musicians</li>
 </ul>
 
-<h2 id="how-much-does-cremation-cost"><br><strong>How Much Does Cremation Cost?</strong></h2>
+<h2 id="how-much-does-cremation-cost"><br><strong>How much does cremation cost?</strong></h2>
 
 <p>The adult funeral cost with viewing and cremation is $6,970.<br></p>
 
@@ -202,13 +202,13 @@ sidebar: true
 <li>Musicians</li>
 </ul>
 
-<h2 id="average-funeral-cost-by-region"><br><strong>What Is The Average Funeral Cost By Region?</strong></h2>
+<h2 id="average-funeral-cost-by-region"><br><strong>What is the average funeral cost by region?</strong></h2>
 
 <p>The average funeral cost is influenced by the location. Funerals in Arizona ($6,888) cost much less than a funeral in Kansas ($8,500)</p>
 
 <p>Here’s the average funeral cost per region to give you a ballpark figure and estimate how much you will pay for your end-of-life expenses.</p>
 
-<h2 id="average-funeral-cost-by-region"><br><strong>Median Cost Of Funerals And Cremation By Region</strong> </h2>
+<h2 id="average-funeral-cost-by-region"><br><strong>Median cost of funerals and cremation by region</strong> </h2>
 
 <table class="table-wrap" id="tablepress-182">
 <thead>
@@ -247,7 +247,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="funeral-expenses-people-often-overlook"><br><strong>Funeral Expenses People Often Overlook</strong></h2>
+<h2 id="funeral-expenses-people-often-overlook"><br><strong>Funeral expenses people often overlook</strong></h2>
 
 <p>Funeral expenses can be challenging. Most of the time, some miscellaneous funeral expenses are often overlooked. Here’s a rundown of the items that may be overlooked during funeral planning.</p>
 
@@ -275,7 +275,7 @@ sidebar: true
 
 <p>You may need to make allowances for these expenses in your funeral plan.</p>
 
-<h2 id="an-easier-way-to-pay-for-a-funeral"><br><strong>An Easier Way To Pay For A Funeral</strong></h2>
+<h2 id="an-easier-way-to-pay-for-a-funeral"><br><strong>An easier way to pay for a funeral</strong></h2>
 
 <p>One of the easier ways to pay for the funeral, burial, and final expenses and to ease the family’s financial worries is to purchase a final expense insurance policy.</p>
 
@@ -297,7 +297,7 @@ sidebar: true
 
 <p><strong>Small coverage options</strong> – you can buy as little as you need</p>
 
-<h2 id="paying-for-a-funeral-without-life-insurance"><br><strong>The Negatives Of Paying For A Funeral Without Life Insurance</strong></h2>
+<h2 id="paying-for-a-funeral-without-life-insurance"><br><strong>The negatives of paying for a funeral without life insurance</strong></h2>
 
 <p>Dying without life insurance if you have the funds to pay for your funeral is okay. However, dying without life insurance without the necessary funds will leave your family with financial stress.</p>
 
@@ -317,7 +317,7 @@ sidebar: true
 
 <p><strong>Veterans benefits</strong> – if your loved one is military, you can claim benefits from the Veterans Administration office.<br></p>
 
-<h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Are funerals expensive?</strong></p>
 
@@ -398,7 +398,7 @@ sidebar: true
 <p><strong><br>How can you save on funeral costs?</strong></p>
 
 <ul>
-<li>Donate your body to science.</li>
+<li><a href="/burial-insurance/donating-your-body-to-science/">Donate your body to science</a>.</li>
 <li>Compare prices before deciding on providers</li>
 <li>Skip embalming</li>
 <li>Opt for direct cremation or direct burial</li>
@@ -443,21 +443,21 @@ sidebar: true
 
 <p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
-<h2 class="as-h5">Keep Reading</h2>
+<h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/finding-affordable-burial-insurance/">
-<h3 class="as-h5">Key to Finding Affordable Burial Insurance</h3>
+<h3 class="as-h5">Key to finding affordable burial insurance</h3>
 </a>  <a href="/life-insurance-for-hiv-positive/">
-<h3 class="as-h5">Life Insurance for HIV Positive [Use Caution]</h3>
+<h3 class="as-h5">Life insurance for HIV positive [use caution]</h3>
 </a>  <a href="/how-much-does-final-expense-insurance-cost/">
-<h3 class="as-h5">How Much Does Final Expense Insurance Cost?</h3>
+<h3 class="as-h5">How much does final expense insurance cost?</h3>
 </a>  <a href="/funeral-plan-insurance-policies/">
-<h3 class="as-h5">Funeral Plan Insurance Policies</h3>
+<h3 class="as-h5">Funeral plan insurance policies</h3>
 </a>  <a href="/final-expense-life-insurance-complete-guide/">
-<h3 class="as-h5">Final Expense Whole Life Insurance Complete Guide</h3>
+<h3 class="as-h5">Final expense whole life insurance complete guide</h3>
 </a></div>
 
-<h2 class="as-h5">2 Comments</h2>
+<h2 class="as-h5">2 comments</h2>
 
 <div class="comments">
 <div class="comment" id="comment-20856">

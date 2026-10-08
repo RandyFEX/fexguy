@@ -19,7 +19,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-what-is-guaranteed-issue-final-expense-insurance"><strong>WHAT IS GUARANTEED ISSUE FINAL EXPENSE INSURANCE</strong></h2>
+<h2 id="h-what-is-guaranteed-issue-final-expense-insurance"><strong>What is guaranteed issue final expense insurance</strong></h2>
 
 <p>Guaranteed Issue means exactly what it sounds like. If you are between 50 and 80 years old, Gerber will sell you a policy regardless of your health…guaranteed!</p>
 
@@ -44,7 +44,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-the-gerber-life-two-year-waiting-period"><strong>THE GERBER LIFE TWO-YEAR WAITING PERIOD</strong></h2>
+<h2 id="h-the-gerber-life-two-year-waiting-period"><strong>The Gerber Life two-year waiting period</strong></h2>
 
 <p>The horrible feature about Gerber Life Guaranteed Issue is the graded death benefit. It won’t pay out a penny if you die of a health or medical reason in the first two years.</p>
 
@@ -70,7 +70,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-gerber-life-insurance-cost"><strong>GERBER LIFE INSURANCE COST</strong></h2>
+<h2 id="h-gerber-life-insurance-cost"><strong>Gerber Life insurance cost</strong></h2>
 
 <p>Gerber’s Guaranteed Issue premiums are significantly higher than those of most other insurance companies.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p><strong>Better:</strong> An independent broker like the Final Expense Guy can shop many carriers. This often results in lower premiums of 20 to 40 percent for the same amount of coverage. Many seniors who think they only qualify for guaranteed issue coverage at Gerber later discover they can receive first-day coverage from the Final Expense Guy, for significantly less premium each month.</p>
 
-<h2 id="h-gerber-life-insurance-pricing"><strong>GERBER LIFE INSURANCE PRICING</strong></h2>
+<h2 id="h-gerber-life-insurance-pricing"><strong>Gerber Life insurance pricing</strong></h2>
 
 <p>Gerber guaranteed issue life insurance rates are based on your age, gender, coverage amount, and the state you live in at the time of application.</p>
 
@@ -248,13 +248,13 @@ sidebar: true
 
 <p>Gerber life insurance for adults is expensive. It should only be your last option for insurance coverage.</p>
 
-<h3 id="h-how-does-gerber-compare-to-other-compani-es"><strong>HOW DOES GERBER COMPARE TO OTHER COMPANIES?</strong></h3>
+<h3 id="h-how-does-gerber-compare-to-other-compani-es"><strong>How does Gerber compare to other companies?</strong></h3>
 
 <p>If you are open to looking at better insurance companies with better rates, The Final Expense Guy can help!</p>
 
 <hr>
 
-<h2 id="h-gerber-life-cash-value-accumulation"><strong>GERBER LIFE CASH VALUE ACCUMULATION</strong></h2>
+<h2 id="h-gerber-life-cash-value-accumulation"><strong>Gerber Life cash value accumulation</strong></h2>
 
 <p>Gerber Life’s Guaranteed Issued Policies do build cash value, and seniors often ask us about this feature, as we often hear from customers who attempted to access their cash value and were unpleasantly surprised to find that only small amounts were available.</p>
 
@@ -264,7 +264,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-common-customer-complaints"><strong>COMMON CUSTOMER COMPLAINTS</strong></h2>
+<h2 id="h-common-customer-complaints"><strong>Common customer complaints</strong></h2>
 
 <p>When we review feedback regarding Gerber’s Guaranteed Issue policy, we often hear the same complaints.</p>
 
@@ -279,7 +279,7 @@ sidebar: true
 <li>Expecting higher cash values than they have been reported</li>
 </ul>
 
-<h3 id="h-gerber-life-hiring-amp-salespeople"><strong>GERBER LIFE HIRING &amp; SALESPEOPLE</strong></h3>
+<h3 id="h-gerber-life-hiring-amp-salespeople"><strong>Gerber Life hiring &amp; salespeople</strong></h3>
 
 <p>Gerber is not a “Captive Carrier,” which means that Independent agencies like Final Expense Guy can sell Gerber Life Insurance products.</p>
 
@@ -287,7 +287,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-pros-of-gerber-life-guaranteed-issue"><strong>PROS OF GERBER LIFE GUARANTEED ISSUE</strong></h2>
+<h2 id="h-pros-of-gerber-life-guaranteed-issue"><strong>Pros of Gerber Life guaranteed issue</strong></h2>
 
 <p>Many seniors, who cannot get other life insurance policies, found relief after getting a policy with Gerber Life. </p>
 
@@ -305,7 +305,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-cons-of-gerber-life-guaranteed-issue"><strong>CONS OF GERBER LIFE GUARANTEED ISSUE</strong></h2>
+<h2 id="h-cons-of-gerber-life-guaranteed-issue"><strong>Cons of Gerber Life guaranteed issue</strong></h2>
 
 <p><strong>The disadvantages many seniors have reported with Gerber Life after they have purchased:</strong></p>
 
@@ -321,7 +321,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-why-a-gerber-life-policy-review-is-smart"><strong>WHY A GERBER LIFE POLICY REVIEW IS SMART</strong></h2>
+<h2 id="h-why-a-gerber-life-policy-review-is-smart"><strong>Why a Gerber Life policy review is smart</strong></h2>
 
 <p>If you purchased a Gerber Life Guaranteed Issue policy in the last one to five years, you should have a policy review by the Final Expense Guy.</p>
 
@@ -335,7 +335,7 @@ sidebar: true
 <li>Eliminate the two-year waiting period</li>
 </ul>
 
-<h3 id="h-when-to-consider-gerber-life-insurance"><strong>WHEN TO CONSIDER GERBER LIFE INSURANCE?</strong></h3>
+<h3 id="h-when-to-consider-gerber-life-insurance"><strong>When to consider Gerber Life insurance?</strong></h3>
 
 <p><strong>Geber Life may be appropriate for the following health conditions:</strong></p>
 
@@ -357,7 +357,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-gerber-life-real-world-examples"><strong>GERBER LIFE REAL WORLD EXAMPLES</strong></h2>
+<h2 id="h-gerber-life-real-world-examples"><strong>Gerber Life real world examples</strong></h2>
 
 <p>We hear from many families frequently who have had different experiences with Gerber Life Guarantee Issue.</p>
 
@@ -371,7 +371,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-should-you-buy-gerber-life-guaranteed-issue"><strong>SHOULD YOU BUY GERBER LIFE GUARANTEED ISSUE?</strong></h2>
+<h2 id="h-should-you-buy-gerber-life-guaranteed-issue"><strong>Should you buy Gerber Life guaranteed issue?</strong></h2>
 
 <p>No…not if you qualify for 1st-day coverage.</p>
 
@@ -383,7 +383,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-company-background"><strong>COMPANY BACKGROUND</strong></h2>
+<h2 id="h-company-background"><strong>Company background</strong></h2>
 
 <p>Gerber Life Insurance Company began in 1967 as part of the Gerber Products Company, the same brand famous for baby food.</p>
 
@@ -395,17 +395,17 @@ sidebar: true
 
 <p>However, many seniors report later that they did not realize what was covered and the fine print, and or they felt the cost exceeded their needs and expectations.</p>
 
-<h3 class="as-h4"><strong>COMPANY ADDRESS</strong></h3>
+<h3 class="as-h4"><strong>Company address</strong></h3>
 
 <p>1311 Mamaroneck Avenue<br>White Plains, NY 10605<br>Phone: (800) 704-2180<br>Customer Service: (800) 628-0560</p>
 
-<h3 class="as-h4"><strong>Contact Info</strong></h3>
+<h3 class="as-h4"><strong>Contact info</strong></h3>
 
 <p>Email:&#160;<a href="mailto:info@gerberlife.com" target="_blank" rel="noreferrer noopener nofollow">info@gerberlife.com</a><br>Website:&#160;<a href="https://www.gerberlife.com/" target="_blank" rel="noreferrer noopener nofollow">https://www.gerberlife.com</a><br>Members Login:&#160;<a href="https://www.gerberlife.com/gl/view/service_center/self_service/login.jsp" target="_blank" rel="noreferrer noopener nofollow">eService</a></p>
 
 <hr>
 
-<h2 id="h-conclusion"><strong>CONCLUSION</strong></h2>
+<h2 id="h-conclusion"><strong>Conclusion</strong></h2>
 
 <p>We often hear many reports of customer dissatisfaction and complaints. Seniors sometimes report that there is a two-year waiting period, the cost was more than expected, and the coverage was limited. Other reports have been related to frustrations about delays, claims, and small cash values.</p>
 
@@ -413,7 +413,7 @@ sidebar: true
 
 <p><strong>Better: </strong>An independent agent like the Final Expense Guy can compare dozens of top-rated companies to help ensure that you are getting the best policy for your needs. If you already have a Gerber Life Guaranteed Issue or any Guaranteed Issue Life Policy, reviewing it can help you save money and provide your family with better protection.</p>
 
-<h2 id="h-faq-gerber-life-insurance"><strong>FAQ: Gerber Life Insurance</strong></h2>
+<h2 id="h-faq-gerber-life-insurance"><strong>FAQ: Gerber Life insurance</strong></h2>
 
 <p><strong>Gerber Whole Life Insurance Reviews</strong> Gerber’s whole life policies are&#160;simply&#160;designed&#160;and easy to&#160;obtain, but many seniors&#160;feel&#160;that&#160;the&#160;price&#160;is&#160;too&#160;high for the&#160;limited&#160;amount&#160;of&#160;insurance</p>
 

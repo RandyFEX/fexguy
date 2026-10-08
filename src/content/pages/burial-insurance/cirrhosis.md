@@ -48,7 +48,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="what-is-liver-cirrhosis"><strong>What Is Liver Cirrhosis?</strong></h2>
+<h2 id="what-is-liver-cirrhosis"><strong>What is liver cirrhosis?</strong></h2>
 
 <p>Liver cirrhosis is when your liver decides to replace its healthy tissue with scar tissue. This scar tissue isn’t exactly up to par with the liver’s usual duties, so your liver starts slacking off.</p>
 
@@ -84,17 +84,17 @@ sidebar: true
 <li><strong>Overall health:</strong>&#160;Any other health issues you’ve got going on will also factor into their decision.</li>
 </ul>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance With Liver Cirrhosis?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance with liver cirrhosis?</strong></h2>
 
 <p>Absolutely, as long as you find the right insurance company, live in the right zip code, and don’t have too many other health issues in the mix.</p>
 
-<h2 id="burial-insurance-available"><strong>What Are Types of Burial Insurance Available For People With Liver Cirrhosis?</strong></h2>
+<h2 id="burial-insurance-available"><strong>What are types of burial insurance available for people with liver cirrhosis?</strong></h2>
 
 <p><strong>First-Day Coverage – </strong>This one’s a breeze – no waiting period, no medical exam. Just answer a few simple health questions and your coverage kicks in right after your first premium payment.</p>
 
 <p><strong>Guaranteed Issue – </strong>Skip the medical exam and health questionnaire with this option, making it a cinch to get coverage if you have liver cirrhosis. But here’s the catch: it comes with a two-year waiting period. If you pass away within those two years for any health reason, your policy pays out your premium pulse 7-10% interest.</p>
 
-<h2 id="best-insurance-option"><strong>What Is My Best Insurance Option If I Have Liver Cirrhosis?</strong></h2>
+<h2 id="best-insurance-option"><strong>What is my best insurance option if I have liver cirrhosis?</strong></h2>
 
 <p><strong>Liver Cirrhosis Only&#160;– </strong>If your liver’s in decent shape and you’re on treatment, you might snag first-day coverage. It all depends on your health and where you live.</p>
 
@@ -102,19 +102,19 @@ sidebar: true
 
 <p><strong>Liver Transplant Recommended – </strong>If you’re looking at a future liver transplant, your only play might be a guaranteed issue policy with that pesky two-year waiting period.</p>
 
-<h2 id="do-i-need-medical-exam?"><strong>Do I Need A Medical Exam To Get Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam?"><strong>Do I need a medical exam to get burial insurance?</strong></h2>
 
 <p>Nope, you can breathe easy. With liver cirrhosis, you don’t have to take a medical exam. Just answer a few simple health questions, and you’ll usually get approved by the insurance company in no time flat!</p>
 
 <p>And no, you don’t need to fork over medical records or give blood and urine samples either.</p>
 
-<h2 id="declined-coverage"><strong>What If I’m Declined Coverage Because Of Liver Cirrhosis?</strong></h2>
+<h2 id="declined-coverage"><strong>What if I’m declined coverage because of liver cirrhosis?</strong></h2>
 
 <p>Not every insurer plays by the same rules. Some companies are all about first-day coverage for folks with liver cirrhosis.</p>
 
 <p>Partnering with Final Expense Guy can help you track down the best options and get the burial insurance you need.</p>
 
-<h2 id="burial-insurance-cost"><strong>How Much Does Liver Cirrhosis Burial Insurance Cost?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>How much does liver cirrhosis burial insurance cost?</strong></h2>
 
 <p>Premiums for burial insurance with liver cirrhosis can be all over the place. They’ll depend on your age, gender, where you live, the type of policy you pick, how much coverage you want, and, of course, the state of your health and how bad your liver cirrhosis is.</p>
 
@@ -129,7 +129,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies – Level – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies – Level – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="underwriting-liver-cirrhosis"><strong>Burial Insurance Underwriting With Liver Cirrhosis</strong></h2>
+<h2 id="underwriting-liver-cirrhosis"><strong>Burial insurance underwriting with liver cirrhosis</strong></h2>
 
 <p>When you apply for first-day coverage, insurance companies will want to check out your current health with some basic questions on their application form.</p>
 
@@ -214,19 +214,11 @@ sidebar: true
 <li>Within the LAST 5 YEARS have you been advised to by a member of the medical profession to have an organ transplant?</li>
 </ul>
 
-<h2 id="finding-affordable-burial-insurance"><strong>How To Find Affordable Burial Insurance With Cirrhosis of the Liver</strong></h2>
+<h2 id="finding-affordable-burial-insurance"><strong>How to find affordable burial insurance with cirrhosis of the liver</strong></h2>
 
 <p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans – they’ll end up being a pricey mistake you don’t need.</p>
 
-<h2 id="how-can-final-expense-guy-funds-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>Forget wasting your time bouncing between insurance companies. We’ve got you covered. We work with top-rated carriers that specialize in high-risk clients.</p>
-
-<p>Our savvy insurance agents will hunt down the best rates for you and make the whole process a breeze.</p>
-
-<p>Just fill out our quote form or give us a call at (888) 862-9456, and we’ll get you a spot-on <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> in no time.</p>
-
-<h2 id="faq"><strong>  Frequently Asked Questions</strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 
 <p><strong>Can you get life insurance if you have alcoholic-related cirrhosis of the liver?</strong></p>
 

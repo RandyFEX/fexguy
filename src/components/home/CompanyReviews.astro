@@ -1,0 +1,202 @@
+---
+// Company reviews: an editorial directory of six educational company
+// reviews (not a list of companies Randy represents or endorses). Names are
+// set in type (no carrier logos), with no ratings, rankings or taglines.
+import { companyReviews } from '@/lib/home/content';
+---
+
+<section class="co" aria-labelledby="companies-title">
+  <div class="container">
+    <div class="co__head">
+      <h2 class="co__title" id="companies-title">Research Life Insurance Companies Before You Buy</h2>
+      <p class="co__text">
+        Read Randy’s reviews of life insurance companies, coverage options, pricing and important details to know
+        before you buy.
+      </p>
+    </div>
+    <ul class="co__list" role="list">
+      {
+        companyReviews.map((c) => (
+          <li class="co__item">
+            <a class="co__link" href={c.href}>
+              <span class="co__name">{c.title}</span>{' '}
+              <span class="co__more">
+                Read review
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="co__action">
+      <a class="btn btn--secondary" href="/a-z-companies/">VIEW ALL COMPANY REVIEWS</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .co {
+    padding-block: var(--space-12);
+    background: var(--color-bg);
+  }
+  .co__head {
+    margin-bottom: var(--space-8);
+  }
+  .co__title {
+    margin: 0 0 var(--space-4);
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .co__title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-bottom: var(--space-4);
+    background: var(--home-gold);
+  }
+  .co__text {
+    margin: 0;
+    max-width: 36rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  /* The directory. Phones: one column of rows, name left, "Read review"
+     right, divided by hairlines under a charcoal rule. */
+  .co__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--color-text);
+  }
+  .co__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .co__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    min-height: 4rem;
+    padding: var(--space-3) var(--space-2) var(--space-3) var(--space-1);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  /* System serif (no web font): the names read as set type, like a masthead. */
+  .co__name {
+    min-width: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-text);
+  }
+  .co__more {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  .co__more svg {
+    transition: transform 0.15s ease;
+  }
+  .co__link:hover,
+  .co__link:focus-visible {
+    background: var(--home-cream);
+  }
+  .co__link:hover .co__name,
+  .co__link:focus-visible .co__name {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
+  }
+  .co__link:hover .co__more svg,
+  .co__link:focus-visible .co__more svg {
+    transform: translateX(3px);
+  }
+  .co__action {
+    margin: var(--space-8) 0 0;
+  }
+  .co__action .btn {
+    padding-inline: var(--space-4);
+  }
+
+  /* Phones under 400px: "Read review" drops to the arrow alone; the whole
+     row is still the link and its text stays in the accessible name. */
+  @media (max-width: 24.99rem) {
+    .co__more {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+    .co__more svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  /* Desktop: heading and explanation side by side; the directory becomes a
+     3 x 2 grid of tall name entries, each under its own charcoal rule. */
+  @media (min-width: 64rem) {
+    .co {
+      padding-block: 4.5rem;
+    }
+    .co__head {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: var(--space-6);
+      align-items: end;
+      margin-bottom: var(--space-12);
+    }
+    .co__title {
+      grid-column: span 2;
+      margin: 0;
+    }
+    .co__text {
+      font-size: 1.1875rem;
+    }
+    .co__list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: var(--space-6);
+      row-gap: var(--space-6);
+      border-top: 0;
+    }
+    .co__item {
+      display: flex;
+      border-top: 2px solid var(--color-text);
+      border-bottom: 0;
+    }
+    .co__link {
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-4);
+      min-height: 0;
+      padding: var(--space-4) var(--space-4) var(--space-4) 0;
+      transition: padding-left 0.15s ease;
+    }
+    .co__link:hover,
+    .co__link:focus-visible {
+      padding-left: var(--space-4);
+    }
+    .co__item:hover,
+    .co__item:focus-within {
+      border-top-color: var(--color-primary);
+    }
+    .co__name {
+      font-size: 2.125rem;
+    }
+  }
+</style>

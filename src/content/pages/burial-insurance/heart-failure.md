@@ -50,7 +50,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="getting-burial-insurance"><strong>Can I Get Burial Insurance If I Have Heart Failure?</strong></h2>
+<h2 id="getting-burial-insurance"><strong>Can I get burial insurance if I have heart failure?</strong></h2>
 
 <p>Answering YES or NO to this question depends on several factors.&#160;</p>
 
@@ -58,7 +58,7 @@ sidebar: true
 
 <p><strong>NO:</strong> If you’re currently hospitalized, have had multiple hospital overnight stays in the past two years, or need help with basic daily activities, the answer might be a bummer.</p>
 
-<h2 id="burial-insurance-available"><strong>What Are The Types Of Burial Insurance Available To Heart Failure Patients?</strong></h2>
+<h2 id="burial-insurance-available"><strong>What are the types of burial insurance available to heart failure patients?</strong></h2>
 
 <p><strong>FIRST-DAY COVERAGE – </strong>This gem kicks in from day one. Your beneficiaries get the full death benefit immediately upon your passing. And here’s the kicker: it’s cheaper than guaranteed issue life insurance -as long as you choose the right insurance company.</p>
 
@@ -66,7 +66,7 @@ sidebar: true
 
 <p>The catch? A mandatory two-year waiting period with Guaranteed Issue. If you pass during that time, your beneficiaries only get your premiums plus a little interest (7-10%, depending on the company).</p>
 
-<h2 id="best-option"><strong>What Is My Best Insurance Option If I Have Had Heart Failure?</strong></h2>
+<h2 id="best-option"><strong>What is my best insurance option if I have had heart failure?</strong></h2>
 
 <p>If you’ve been diagnosed with, treated for, or told to get treatment and meds for heart failure, your go-to should be a first-day coverage plan.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>But if your doctor says you need a heart transplant, you’re looking at guaranteed issue whole life insurance with a two-year waiting period. But, if your heart transplant was more than five years ago, some companies might welcome you back to the first-day coverage club.</p>
 
-<h2 id="do-i-need-medical-exam"><strong>Do I Need A Medical Exam To Qualify For Burial Insurance?</strong></h2>
+<h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope, no medical exams, blood tests, or pee samples are needed to get approved for these policies.</p>
 
@@ -82,7 +82,7 @@ sidebar: true
 
 <p>If you want to skip the health questions altogether, you can get guaranteed issue life insurance with a two-year waiting period (but we don’t recommend it!)</p>
 
-<h2 id="burial-insurance-cost"><strong>What Is The Cost Of Burial Insurance If I Have Heart Failure?</strong></h2>
+<h2 id="burial-insurance-cost"><strong>What is the cost of burial insurance if I have heart failure?</strong></h2>
 
 <p><strong>The cost of burial insurance with heart failure hinges on a few things:</strong></p>
 
@@ -107,7 +107,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="underwriting"><strong>Burial Insurance Underwriting If You Had Heart Failure</strong></h2>
+<h2 id="underwriting"><strong>Burial insurance underwriting if you had heart failure</strong></h2>
 
 <p><strong>Here’s the scoop on what some insurance companies ask about heart failure on the application:</strong></p>
 
@@ -200,11 +200,11 @@ sidebar: true
 
 <p>If you’re popping a mix of these meds, insurance companies might peg you as a heart failure patient.</p>
 
-<h2 id="why-companies-care"><strong>Companies Care If You Have Had Heart Failure?</strong></h2>
+<h2 id="why-companies-care"><strong>Companies care if you have had heart failure?</strong></h2>
 
 <p>Because heart failure is usually chronic and gets worse over time. Life insurance companies know it can lead to other serious issues like heart attacks, organ failure, brain damage, and, yep, death.</p>
 
-<h2 id="information-we-need"><strong>Information We Need if You Had A History Of Heart Failure</strong></h2>
+<h2 id="information-we-need"><strong>Information we need if you had a history of heart failure</strong></h2>
 
 <p><strong>To get you the best plan and pricing, we might ask:</strong></p>
 
@@ -218,17 +218,15 @@ sidebar: true
 <li>When were you diagnosed with heart failure?</li>
 </ol>
 
-<h2 id="rejected-application"><strong>What If My Application Was Rejected Because Of Heart Failure?</strong></h2>
+<h2 id="rejected-application"><strong>What if my application was rejected because of heart failure?</strong></h2>
 
 <p>If you’ve been turned down before, team up with an independent agency like Final Expense Guy. We know the ins and outs of multiple companies’ guidelines and can snag you a better plan with the lowest rates.</p>
 
-<p>With access to over 20 insurance companies, we can help you find a heart-friendly policy, saving you time and hassle during the application process.</p>
-
-<h2 id="getting-first-day-coverage"><strong>How to Get First-Day Coverage With A History Of Heart Failure</strong></h2>
+<h2 id="getting-first-day-coverage"><strong>How to get first-day coverage with a history of heart failure</strong></h2>
 
 <p>The slickest way to get first-day coverage burial insurance with heart failure? Team up with an independent agency like Final Expense Guy. Our savvy agents compare top companies and hook you up with the best plan at the best price.</p>
 
-<h2 id="application-process"><strong>How To Apply For Burial Insurance With Heart Failure</strong></h2>
+<h2 id="application-process"><strong>How to apply for burial insurance with heart failure</strong></h2>
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Seek guidance from agents from Final Expense Guy who know the ins and outs of underwriting for heart failure. They’ll help you understand your options, compare quotes, and choose the perfect burial insurance plan.</li>
@@ -236,15 +234,7 @@ sidebar: true
 <li><strong>Review and Confirm Policy Details</strong>&#160;– Give the policy terms a good once-over before signing. Make sure the coverage aligns with your needs and budget.</li>
 </ol>
 
-<h2 id="how-we-can-help"><strong>How Can Final Expense Guy Help Me?</strong></h2>
-
-<p>At Final Expense Guy, we’re pros at getting life insurance for those with heart failure.</p>
-
-<p>We partner with numerous A+ rated insurance companies that specialize in high-risk clients. We’ll scour these companies to find you the best rate and match you with the ideal life insurance option.</p>
-
-<p>We’ll help you get the coverage you need at a price you can afford. Looking for burial insurance for heart failure? We’ve got you covered. Fill out our quote form on this page or call us at (888) 862-9456 for spot-on burial insurance quotes.</p>
-
-<h2 id="faq"><strong>  Frequently Asked Questions </strong></h2>
+<h2 id="faq"><strong>  Frequently asked questions </strong></h2>
 
 <p><strong>Is heart failure a pre-existing condition?</strong></p>
 
