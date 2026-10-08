@@ -60,7 +60,7 @@ sidebar: true
 
 <p><br><strong>OTHER FACTORS THAT MAY AFFECT ELIGIBILITY</strong></p>
 
-<p>The only time you will be denied burial insurance with diverticulitis is if your condition is so severe that you are hospitalized multiple times and recommended for surgery because of it. </p>
+<p>The main time you may be denied burial insurance with diverticulitis is if your condition is so severe that you are hospitalized multiple times and recommended for surgery because of it.</p>
 
 <p><br><strong>Diverticulitis and Surgery</strong></p>
 
@@ -85,7 +85,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p><br><strong>BURIAL INSURANCE AFTER DIVERTICULITIS SURGERY</strong></p>
 
-<p>If your surgery has been completed, and you have been released from your doctor’s care and have no complications, you will qualify for a level death benefit plan with first-day coverage and the lowest possible premium. You will be treated like you never had diverticulitis in the first place!</p>
+<p>If your surgery has been completed, and you have been released from your doctor’s care and have no complications, you can qualify for a level death benefit plan with first-day coverage and the lowest possible premium. You will be treated like you never had diverticulitis in the first place!</p>
 
 <p><strong>Best Option:</strong>&#160;Level death benefit plan with first-day coverage</p>
 
@@ -197,7 +197,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p>You will rarely see “diverticulitis” asked in the health questionnaire. Life insurance companies are more concerned with health issues that significantly reduce life expectancy. If they never ask about your health issues, they are okay with it and accept your condition.</p>
 
-<p>Since insurance companies never ask about diverticulitis, the only way your application for burial insurance will be denied is if you answered “yes” to a different health condition that may be associated with diverticulitis like surgery. </p>
+<p>Since insurance companies rarely ask about diverticulitis, the main way your application for burial insurance may be denied is if you answered “yes” to a different health condition that may be associated with diverticulitis like surgery.</p>
 
 <p>They will typically ask it this way:</p>
 
@@ -460,7 +460,7 @@ obstruction in the intestine, or perforation in the bowel wall</li>
 
 <p><br><strong>Can I qualify for cremation insurance with a history of diverticulitis?</strong></p>
 
-<p>Yes, you can qualify for cremation insurance with a history of diverticulitis. Diverticulitis is a non-issue to most life insurance companies. </p>
+<p>Yes, you can qualify for cremation insurance with a history of diverticulitis. Diverticulitis is a non-issue to most life insurance companies.</p>
 
 <p><br><strong>Is diverticulitis fatal in life insurance?</strong></p>
 

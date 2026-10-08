@@ -56,7 +56,7 @@ sidebar: true
 
 <p><strong>YES</strong>, Security National offers two first-day coverage plans, but they are more expensive than other companies.    </p>
 
-<p>If you qualify, their Simple Security is preferred; standard whole life insurance gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.  </p>
+<p>If you qualify for their preferred or standard plan, the whole life insurance gives you full coverage from the first day. Your beneficiary will receive your full death benefit when you pass away.  </p>
 
 <h2 id="pros-of-security-national-burial-insurance"><strong>Pros of Security National burial insurance</strong></h2>
 
@@ -70,7 +70,7 @@ sidebar: true
 
 <p><strong>Have</strong> a <strong>height and weight chart</strong> – you may be disqualified if you are overweight, obese, or morbidly obese.</p>
 
-<p><strong>Not diabetic-friendly</strong> – you may only qualify for the standard plan if you currently use insulin</p>
+<p><strong>Not diabetic-friendly</strong> – if you currently use insulin, you may only qualify for the standard or modified plan, depending on your daily units, when you started insulin, and any complications</p>
 
 <h2 id="security-national-burial-insurance-products"><br><strong>Security National burial insurance products </strong></h2>
 
@@ -95,7 +95,7 @@ sidebar: true
 <td>Age Availability</td><td>40-90</td>
 </tr>
 <tr>
-<td>Immediate Coverage</td><td>100% coverage from day one</td>
+<td>Immediate Coverage</td><td>Preferred and standard plans: 100% coverage from day one</td>
 </tr>
 <tr>
 <td>Lifetime Coverage</td><td>Yes</td>
@@ -140,7 +140,7 @@ sidebar: true
 
 <p>This burial insurance plan from Security National offers first-day full coverage if you qualify. If you answer NO to the knockout and graded sections, you will be offered this plan. </p>
 
-<p>Insulin use is the only question under this section, but you will be offered the modified plan if you answer yes to the insulin use question.</p>
+<p>Insulin use is the only question under this section. If you answer yes to it (and no to the knockout and graded sections), you will be offered this plan. Using 100 units or more of insulin a day, or starting insulin before age 40, falls under the graded section and leads to the modified plan instead.</p>
 
 <p><br><strong>Standard Plan Product Features</strong></p>
 
@@ -156,7 +156,7 @@ sidebar: true
 
 <p><strong>Payout Schedule</strong>: immediate death benefit from day one</p>
 
-<p>Among the three plans, this plan is not the best. This product’s price is higher than most life insurance companies. If the company puts you under this plan, call us. We can get you approved by other companies with a less expensive premium.</p>
+<p>Among the three plans, this plan is not the best. This product’s price is higher than most life insurance companies. If the company puts you under this plan, call us. Other companies may offer first-day coverage at a lower premium for your health profile.</p>
 
 <p><br><strong>SIMPLE SECURITY MODIFIED PLAN</strong></p>
 
@@ -215,9 +215,9 @@ sidebar: true
 
 <p>Security National Life Simple Security plans offer reasonable coverage and rates, especially their preferred plan. </p>
 
-<p>Their graded plan is a better option for people with significant health conditions. The product’s price is more expensive compared to other higher-rated insurance companies. But beware, they will put you on the standard plan because of insulin use.</p>
+<p>Their modified plan is a better option for people with significant health conditions. The product’s price is more expensive compared to other higher-rated insurance companies. But beware, insulin use can keep you out of their preferred plan.</p>
 
-<p>If you are an insulin-dependent diabetic, we can get you approved by another company that accepts this condition and offer a lower premium. Most final expense companies didn’t penalize insulin users and approved them for first-day coverage.</p>
+<p>If you are an insulin-dependent diabetic, we may be able to get you approved by another company that accepts this condition and offers a lower premium. Most final expense companies don’t penalize insulin users without complications and may approve them for first-day coverage.</p>
 
 <p>Applications are made online, and policyholders can log in to submit a claim. This process is simple for internet users, but some customers uncomfortable with online applications and claims may look elsewhere for coverage.</p>
 
@@ -283,11 +283,13 @@ sidebar: true
 
 <p><strong>1.</strong> Do you use any type of insulin medication for any type of diabetes? If yes, how many total units per day?  (Yes – No) </p>
 
-<p>If you say YES to this one question, you will be offered the Standard Plan.</p>
+<p>If you say YES to this one question (and NO to the questions above), you will be offered the Standard Plan.</p>
 
 <p>If you answered NO to all the health questions, Security National would offer you their Preferred Plan, which is the best and cheapest among the three plans available.</p>
 
 <h2 id="security-national-pricing-examples"><br><strong>Security National pricing examples</strong></h2>
+
+<p>These are sample monthly rates from an earlier Security National rate book, from when we reviewed it. Current rates may differ.</p>
 
 <table class="table-wrap" id="tablepress-86">
 <thead>
@@ -596,7 +598,7 @@ sidebar: true
 
 <p><br><strong>FINANCIAL RATINGS</strong></p>
 
-<p>A.M. Best, one of the country’s top financial rating agencies, awarded Security National an A- (Excellent) rating. It means the company’s finances are stable, and clients can be confident that it will pay ongoing financial obligations. The company is financially secure, and they even post their financials for public scrutiny.</p>
+<p>We could not confirm a current A.M. Best rating for Security National Life. Check A.M. Best or your state insurance department before you buy.</p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 
@@ -618,7 +620,7 @@ sidebar: true
 
 <p><br><strong>What is Security National Life’s financial rating?</strong></p>
 
-<p>Security National Life is awarded Security National an A- (Excellent) rating by A.M. Best.</p>
+<p>We could not confirm a current A.M. Best rating for Security National Life. Check A.M. Best for the latest information.</p>
 
 <p><br><strong>What is Security National Life’s website?</strong></p>
 
@@ -635,10 +637,6 @@ sidebar: true
 <p><br><strong>What is Security National Life’s customer service number?</strong></p>
 
 <p>(800) 574-7117 is the customer service number for Security National Life Insurance.</p>
-
-<p><br><strong>What is Security National Life’s email address?</strong></p>
-
-<p>You can reach Security National Life Insurance at info@securitynationallife.com.</p>
 
 <p><br><strong>What is the mailing address for Security National Life?</strong></p>
 
@@ -678,7 +676,7 @@ sidebar: true
 
 <p><br><strong>Where can I check Security National Life insurance complaints?</strong></p>
 
-<p>You can check Security National Life insurance complaints by visiting https://www.ftccomplaintsearch.gov/.</p>
+<p>You can check Security National Life insurance complaints through your state insurance department or the National Association of Insurance Commissioners (NAIC) website.</p>
 
 <p><br><strong>What are the different life insurance products offered by Security National Life?</strong></p>
 
@@ -690,7 +688,7 @@ sidebar: true
 
 <p><br><strong>Can you get first-day coverage with Security National Life?</strong></p>
 
-<p>Yes, you can get first-day coverage with Security National Life.</p>
+<p>Yes, if you qualify for the preferred or standard plan. The modified plan does not give first-day coverage.</p>
 
 <p><br><strong>What is the maximum life insurance coverage that Security National Life offers?</strong></p>
 
@@ -734,7 +732,7 @@ sidebar: true
 
 <p><br><strong>Is Security National Life insurance expensive?</strong></p>
 
-<p>Security National Life insurance pricing is comparable to most life insurance companies.</p>
+<p>Prices vary by age, health, tobacco use, and plan, so compare quotes from several companies before you apply.</p>
 
 <p><br><strong>Do you need a medical exam to qualify for Security National Life insurance?</strong></p>
 
@@ -754,7 +752,7 @@ sidebar: true
 
 <p><br><strong>Does Security National Life have a waiting period?</strong></p>
 
-<p>No, Security National Life does not have a waiting period.</p>
+<p>The preferred and standard plans have no waiting period. The modified plan pays a reduced benefit for a natural death during the first two years instead of the full face amount.</p>
 
 <p><br><strong>Does Security National Life insurance accumulate cash value?</strong></p>
 

@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Active leukemia usually limits you to waiting period burial insurance plans<br>• Most companies require 2 years cancer-free for full coverage<br>• Guaranteed issue plans cost more and delay payouts early on<br>• Applying too soon after treatment leads to worse options and pricing<br>• Some companies still offer same-day coverage after long remission<br>• Not comparing carriers can cost you thousands over time</p>
+<p>• Active leukemia usually limits you to waiting period burial insurance plans<br>• Most companies require 2 years cancer-free for full coverage<br>• Guaranteed issue plans cost more and delay payouts early on<br>• Applying too soon after treatment leads to worse options and pricing<br>• Some companies still offer same-day coverage once you’re declared cancer-free<br>• Not comparing carriers can cost you thousands over time</p>
 
 <p>Burial insurance with leukemia depends heavily on timing and your current health status. If you’ve been treated or diagnosed within the last 2 years, most companies will only offer guaranteed-issue whole life burial insurance with a waiting period. Once you’ve been cancer-free for 2 years or more, some insurers will offer full coverage from day one at better rates. Burial insurance is still available either way, but choosing the wrong company or applying too early can cost you more and delay your protection.</p>
 
@@ -65,25 +65,25 @@ sidebar: true
 
 <p><strong>LEUKEMIA-FREE FOR TWO YEARS OR LONGER</strong></p>
 
-<p>If you’ve been cancer-free for more than two years, you will qualify for first-day coverage.</p>
+<p>If you’ve been cancer-free for more than two years, you may qualify for first-day coverage.</p>
 
 <p><strong>Best option:</strong> Level Death Benefit Plan</p>
 
-<p>It’s uncommon for burial insurance carriers to ask about Leukemia or cancer of the blood beyond the two-year mark. The great news is that you will now qualify for level death benefit with first-day coverage and no waiting period with many burial insurance companies. You also got to pick the best plan at the lowest rate.</p>
+<p>It’s uncommon for burial insurance carriers to ask about Leukemia or cancer of the blood beyond the two-year mark. The great news is that you may now qualify for level death benefit with first-day coverage and no waiting period with many burial insurance companies. You also got to pick the best plan at the lowest rate.</p>
 
 <p>Your death benefit payout is fixed; it will not decrease and will remain the same throughout your policy. Your beneficiary will receive the full payout when you pass away.</p>
 
 <p><br><strong>IF YOU ARE IN REMISSION FOR TWO YEARS</strong></p>
 
-<p>If you have been in remission, without symptoms for two years or longer, you may qualify for a better option.</p>
+<p>If you have been in remission, without symptoms for two years or longer, you may qualify for a better option once your doctor declares you cancer-free. Remission alone is not the same as being cancer-free.</p>
 
-<p><strong>Best option:</strong> First-day benefit</p>
+<p><strong>Best option:</strong> Guaranteed Issue Burial Insurance until you are declared cancer-free</p>
 
-<p>A handful of final expense companies offer first-day benefits to leukemia patients who have been in remission for two years or longer. You will be covered from the first day, and your death benefit will be phased out over time.</p>
+<p>A handful of final expense companies offer first-day benefits to leukemia patients who have been declared cancer-free for two years or longer. You will be covered from the first day, and your death benefit will be phased in over time.</p>
 
 <p><br><strong>IF YOU ARE CURRENTLY DIAGNOSED AND BEING TREATED FOR LEUKEMIA (LESS THAN TWO YEARS)</strong></p>
 
-<p>If you are presently diagnosed or treating your leukemia, you will not be eligible for first-day burial insurance coverage until you have beaten your blood cancer and have gone into remission for a minimum of three years.</p>
+<p>If you are presently diagnosed or treating your leukemia, you will not be eligible for first-day burial insurance coverage until you have beaten your blood cancer and have been cancer-free for two years, or three years with some companies.</p>
 
 <p>If you are currently diagnosed or treating your leukemia, it just means you will have a two-year waiting period.</p>
 
@@ -489,7 +489,7 @@ sidebar: true
 
 <p><br><strong>Can you get first-day coverage insurance if you have leukemia?</strong></p>
 
-<p>Yes, you can get first-day coverage insurance if you have leukemia. In fact, many insurance companies offer policies specifically for people with pre-existing conditions.</p>
+<p>Yes, you can get first-day coverage insurance if you have had leukemia and have been cancer-free for two years or longer. In fact, many insurance companies offer policies specifically for people with pre-existing conditions.</p>
 
 <p><br><strong>What are the things that may affect my eligibility if I have leukemia?</strong></p>
 
@@ -517,7 +517,7 @@ sidebar: true
 
 <p><br><strong>Can I get life insurance if I am in remission from leukemia?</strong></p>
 
-<p>Yes, you can get life insurance if you are in remission from leukemia. However, your eligibility may depend on how long you have been in remission, the stage of your leukemia, and whether you have any other health conditions.</p>
+<p>Yes, you can get life insurance if you are in remission from leukemia. However, your eligibility may depend on how long you have been in remission, the stage of your leukemia, and whether you have any other health conditions. Remission is not the same as being declared cancer-free, so guaranteed issue is generally the option until your doctor declares you cancer-free.</p>
 
 <p><br><strong>What is the life expectancy after leukemia?</strong></p>
 
@@ -537,7 +537,7 @@ sidebar: true
 
 <p><br><strong>What is my best insurance option if I have leukemia?</strong></p>
 
-<p>The best insurance option for you if you have leukemia will depend on your circumstances. However, many people with leukemia qualify for first-day coverage life insurance policies. These policies do not require a medical exam and are available to people with pre-existing conditions.</p>
+<p>The best insurance option for you if you have leukemia will depend on your circumstances. However, many people with a history of leukemia who have been cancer-free for two years or longer qualify for first-day coverage life insurance policies. These policies do not require a medical exam and are available to people with pre-existing conditions.</p>
 
 <p><br><strong>Is leukemia fatal in life insurance?</strong></p>
 

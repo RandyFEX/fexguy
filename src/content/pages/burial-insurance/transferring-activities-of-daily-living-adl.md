@@ -13,11 +13,11 @@ sidebar: true
 
 <p>Burial insurance if you need help with transferring or any activities of daily living (eating, bathing, dressing, toileting, and continence) is possible. However, your options are very limited.</p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Transferring burial insurance isn’t automatic and requires proper ownership changes<br>• The wrong setup can leave your policy stuck or canceled<br>• Many people don’t understand owner vs beneficiary roles<br>• Missed payments during transfer can cause policy lapse<br>• Not updating details can delay or block payout to your family</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Needing help with transferring signals a serious health risk to insurers<br>• Companies with health questions ask if you need help with activities of daily living<br>• If you need help with transferring, guaranteed issue is your only option<br>• Guaranteed issue plans have a 2-year waiting period for natural death<br>• Coverage amounts are smaller and cost more monthly</p>
 
-<p>Burial insurance transfer usually means changing the policy owner or who controls the policy, not the coverage itself. Burial insurance is a type of whole life insurance, and ownership matters because the owner controls payments, beneficiaries, and changes. If the owner dies or stops paying, the policy can lapse unless it’s transferred correctly. Most people don’t realize that simply naming someone isn’t enough; you have to formally update the policy with the insurance company. If it’s handled wrong, your family could face delays or lose the coverage entirely.</p>
+<p>Transferring means moving yourself between your bed, a chair, the toilet, or a wheelchair. Burial insurance is a type of whole life insurance, and every company with health questions asks whether you currently need help with activities of daily living like transferring. If you need another person’s help, you won’t qualify for first-day coverage, but you can still get guaranteed issue burial insurance with no health questions and a 2-year waiting period for natural death.</p>
 
-<p>Complete my quote request form on this page to quickly avoid costly transfer mistakes.</p>
+<p>Complete my quote request form on this page to quickly avoid costly mistakes.</p>
 
 <p><strong><strong>!!! READ THIS FIRST !!! </strong></strong><br><br><strong>If you need help with transferring or any ADLs, the only plan you will qualify for is a guaranteed issue burial insurance with a 2-year waiting. </strong><br><br><strong>You WILL NOT qualify for 1st-day coverage if you need help with ADLs.</strong></p>
 

@@ -20,7 +20,7 @@ sidebar: true
 <h2>Key esophageal cancer burial insurance insights</h2>
 
 <ul>
-<li><strong>1st-day coverage begins the day a doctor declares you cured:</strong> CICA Life offers a rare opportunity where you can qualify for first-day coverage as soon as you are officially cancer-free.</li>
+<li><strong>1st-day coverage may begin the day a doctor declares you cured:</strong> Certain companies offer a rare opportunity where you may qualify for first-day coverage as soon as you are officially cancer-free.</li>
 <li><strong>A two-year treatment-free window opens the most affordable rates.</strong>&#160;Most major carriers, such as Aflac and Family Benefit Life, require a 24-month cure period before offering their best plans.</li>
 <li><strong>Active treatment</strong> requires a 2-year waiting period: if you are currently fighting the disease or undergoing chemotherapy, you must use a guaranteed-issue plan that pays out fully after 2 years.</li>
 <li><strong>Low five-year survival rates make early enrollment vital:</strong> Because esophageal cancer is aggressive, with lower survival statistics, securing a policy today ensures your family has protection regardless of health changes.</li>
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell Carcinoma)</a> or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,7 +99,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s esophageal cancer stage and their long-term or short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life if you were just declared cured, or Aflac and Trinity Life if you have been cured for over 2 years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend a company with more lenient underwriting if you were just declared cured, or Aflac and Trinity Life if you have been cured for over 2 years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life if you have other significant health issues along with your cancer history.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health or medically related causes of death. I recommend Gerber Life if you are currently in treatment or have trouble with daily activities.</li>
 </ul>
@@ -159,7 +158,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Newly Cured</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -257,7 +256,7 @@ sidebar: true
 
 <h3>Can esophageal cancer survivors qualify for first-day coverage?</h3>
 
-<p>Esophageal cancer survivors can qualify for immediate first-day coverage if they have been officially declared “cancer-free” and have completed all treatments at least two years ago. Some specialized providers, such as CICA Life, may consider applicants for immediate benefits once they receive a “cured” status from their oncologist. For most major carriers, reaching the 24-month treatment-free milestone is the key to bypassing waiting periods and securing lower monthly premiums.</p>
+<p>Esophageal cancer survivors can qualify for immediate first-day coverage if they have been officially declared “cancer-free” and have completed all treatments at least two years ago. Some specialized providers may consider applicants for immediate benefits once they receive a “cured” status from their oncologist. For most major carriers, reaching the 24-month treatment-free milestone is the key to bypassing waiting periods and securing lower monthly premiums.</p>
 
 <h3>What type of death is not covered by esophageal cancer insurance?</h3>
 

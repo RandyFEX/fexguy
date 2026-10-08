@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Drug Or Alcohol Abuse Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Active drug or alcohol abuse usually leads to automatic denial<br>• Most companies require 2–3 years of sobriety before better options open<br>• Guaranteed issue plans cost more and delay full payout for 2 years<br>• Many agents skip details and stick you in overpriced plans fast<br>• Lying about past use can get your claim denied later</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Active drug or alcohol abuse usually leads to automatic denial<br>• Most companies require about 2 years of sobriety, some longer, before better options open<br>• Guaranteed issue plans cost more and delay full payout for 2 years<br>• Many agents skip details and stick you in overpriced plans fast<br>• Lying about past use can get your claim denied later</p>
 
 <p>Getting burial insurance with drug or alcohol abuse depends almost entirely on your sobriety timeline. If you’re currently using or recently stopped, most companies won’t offer first-day coverage and may decline you outright. Your fallback is usually guaranteed issue burial insurance, which costs more and comes with a 2-year waiting period. If you’ve been clean for 2–3 years or longer, your options improve and you may qualify for whole life or burial insurance with immediate coverage and better pricing. The mistake is applying too early or with the wrong company. That’s how people get stuck overpaying for weak coverage.</p>
 
@@ -140,13 +140,13 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Sober 2+ Years</td>
+<td>Sober 2+ Years (some companies require longer)</td>
 <td>Level (Day 1)</td>
 <td>None</td>
 </tr>
 <tr>
 <td>Recent Treatment</td>
-<td>Graded</td>
+<td>Graded or Guaranteed Issue</td>
 <td>2 Years</td>
 </tr>
 <tr>

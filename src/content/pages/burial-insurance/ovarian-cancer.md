@@ -22,7 +22,7 @@ sidebar: true
 <ul>
 <li><strong>Survival rates </strong><strong>vary significantly by age:</strong>&#160;For women younger than 50, the survival rate is around 72%, but it drops to 34% for those over 64, making insurers&#160;more cautious with older applicants.</li>
 <li><strong>Immediate coverage requires a “cured” status:</strong> You must be fully treated and deemed cancer-free to qualify for first-day coverage with traditional final expense companies.</li>
-<li><strong>One Company is a top choice for survivors:</strong> CICA Life allows first-day coverage the moment you are declared cancer-free and cured, although they can be selective about other health requirements.</li>
+<li><strong>Certain companies are a top choice for survivors:</strong> They may allow first-day coverage the moment you are declared cancer-free and cured, although they can be selective about other health requirements.</li>
 <li><strong>The two-year rule is the industry standard:</strong> Most carriers require you to be 2 years free of all cancer treatments, medications, or active diagnoses before they offer their best “level” rates.</li>
 <li><strong>Active cancer always defaults to a waiting period:</strong> If you currently have cancer, the only product you qualify for is guaranteed-issue, which comes with a mandatory two-year waiting period.</li>
 </ul>
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,7 +99,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s ovarian cancer history and long-term &amp; short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life for those recently cured, and Family Benefit Life and Trinity Life for those 2 years clear.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it to those recently cured, and Family Benefit Life and Trinity Life for those 2 years clear.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend companies like Aflac for individuals with minor secondary health issues who are in remission.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life if you currently have cancer, are in the hospital, or need help with daily activities.</li>
 </ul>
@@ -111,7 +110,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -161,7 +160,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Recently Declared Cured</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -182,7 +181,7 @@ sidebar: true
 
 <h3>Linda’s story</h3>
 
-<p>Linda had just finished her treatment six months ago and was officially declared “cured” and cancer-free by her doctor. Most companies told her she had to wait another 18 months, but she didn’t want to leave her funeral costs to her children. We selected CICA Life because it offers first-day coverage for fully cured individuals, regardless of the two-year rule. She was approved for $10,000 in first-day coverage at a price she could easily afford. Linda now has the assurance that her final bills are taken care of.</p>
+<p>Linda had just finished her treatment six months ago and was officially declared “cured” and cancer-free by her doctor. Most companies told her she had to wait another 18 months, but she didn’t want to leave her funeral costs to her children. We selected an insurance company that offers first-day coverage for fully cured individuals, regardless of the two-year rule. She was approved for $10,000 in first-day coverage at a price she could easily afford. Linda now has the assurance that her final bills are taken care of.</p>
 
 <h2>Ovarian cancer financial ratings &amp; stability </h2>
 
@@ -261,7 +260,7 @@ sidebar: true
 
 <h3>Does chemotherapy for ovarian cancer affect burial insurance?</h3>
 
-<p>Insurance companies treat active chemotherapy as a signal to move an applicant into a “Guaranteed Issue” or “Graded” policy category.<sup></sup> Once you have completed your last round of chemo and are declared “No Evidence of Disease” (NED), you begin the countdown toward qualifying for “Level” coverage. Some specialized carriers, like CICA Life, may even offer immediate coverage the moment you are declared “cured,” effectively ignoring the standard two-year waiting period.</p>
+<p>Insurance companies treat active chemotherapy as a signal to move an applicant into a “Guaranteed Issue” or “Graded” policy category.<sup></sup> Once you have completed your last round of chemo and are declared “No Evidence of Disease” (NED), you begin the countdown toward qualifying for “Level” coverage. Some specialized carriers may even offer immediate coverage the moment you are declared “cured,” effectively ignoring the standard two-year waiting period.</p>
 
 <h3>Why is an independent broker vital for ovarian cancer coverage?</h3>
 

@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance with AIDS or HIV [Use Caution]</h1>
 
-<p><strong>Here’s the Bottom Line:<br>• </strong>HIV doesn’t automatically disqualify you from burial insurance anymore<br>• Stable treatment and undetectable viral load improve approval chances<br>• Many companies still charge higher rates due to added risk<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Some applicants get declined if their health isn’t well-controlled<br>• Not comparing companies can leave you overpaying for limited coverage</p>
+<p><strong>Here’s the Bottom Line:<br>• </strong>HIV doesn’t automatically disqualify you from burial insurance anymore<br>• Stable treatment and undetectable viral load don’t remove the 2-year waiting period<br>• Many companies still charge higher rates due to added risk<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Some applicants get declined if their health isn’t well-controlled<br>• Not comparing companies can leave you overpaying for limited coverage</p>
 
-<p>Burial insurance with AIDS or HIV is more available today than it used to be. Medical advances have made it possible for people living with HIV to qualify for life insurance, including term, whole life, and burial insurance options, especially if the condition is well-managed with treatment. Burial insurance, a type of whole life insurance, is often the fallback option when traditional policies aren’t available. The biggest factors are your viral load, treatment history, and overall health. If those are stable, your options open up. If not, you’ll likely face higher costs or limited coverage.</p>
+<p>Burial insurance with AIDS or HIV is more available today than it used to be. Medical advances have made it possible for some people living with HIV to qualify for some types of life insurance, especially if the condition is well-managed with treatment. Burial insurance, a type of whole life insurance, is often the fallback option when traditional policies aren’t available. For burial insurance, though, having AIDS or HIV means a mandatory 2-year waiting period with every insurance company, even if your viral load is stable.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -104,9 +104,6 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
-</tr>
-<tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
 </tr>
 <tr>
@@ -134,10 +131,6 @@ sidebar: true
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1st Day Coverage</td>
-<td>YES</td>
-</tr>
 <tr>
 <td>Rates NEVER Increase</td>
 <td>YES</td>

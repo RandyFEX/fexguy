@@ -20,7 +20,7 @@ sidebar: true
 <h2>Key Hodgkin’s disease burial insurance insights</h2>
 
 <ul>
-<li><strong>1st-day coverage is possible from the moment you are cured:</strong> CICA Life offers a unique opportunity where you can qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
+<li><strong>1st-day coverage is possible from the moment you are cured:</strong> A more lenient carrier offers a unique opportunity where you can qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
 <li><strong>Most major carriers require a two-year recovery window:</strong> After you have been disease-free and treatment-free for 2 years, your options expand to include every major insurance company at their best prices.</li>
 <li><strong>Prescription history is viewed by the underwriters:</strong> Insurance companies monitor your medical records for cancer-related medications to confirm if your condition is active or resolved.</li>
 <li><strong>Hodgkin’s disease has a high survival rate:</strong> Because this form of cancer is highly curable with an 89% five-year survival rate, insurers are often more lenient once you finish treatment(s).</li>
@@ -81,7 +81,7 @@ sidebar: true
 <p>Insurance carriers offer different plan categories based on an applicant’s Hodgkin’s disease history and their long-term or short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life if you were recently cured, or Aflac, Family Benefit Life, and Trinity Life if you have been cured for over 2 years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend a carrier with more lenient underwriting if you were recently cured, or Aflac, Family Benefit Life, and Trinity Life if you have been cured for over 2 years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life if you are cured of cancer, but also deal with congestive heart failure.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life if you are currently in the middle of your battle or in the hospital.</li>
 </ul>
@@ -92,7 +92,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -140,7 +140,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Cured &lt; 2 Years</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -236,7 +236,7 @@ sidebar: true
 
 <h3>Can Hodgkin’s survivors qualify for first-day coverage?</h3>
 
-<p>Hodgkin’s survivors can qualify for immediate first-day coverage if they have been in complete remission and treatment-free for at least two years. Some specialized carriers, such as CICA Life, may consider applicants for immediate benefits upon receipt of an official “cancer-free” declaration from their physician. Once you have moved past the active treatment phase and have a stable history of clear follow-up scans, you are no longer restricted to policies with a two-year waiting period.</p>
+<p>Hodgkin’s survivors can qualify for immediate first-day coverage if they have been in complete remission and treatment-free for at least two years. Some specialized carriers may consider applicants for immediate benefits upon receipt of an official “cancer-free” declaration from their physician. Once you have moved past the active treatment phase and have a stable history of clear follow-up scans, you are no longer restricted to policies with a two-year waiting period.</p>
 
 <h3>Does burial insurance pay out if Hodgkin’s disease returns?</h3>
 

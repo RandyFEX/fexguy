@@ -110,11 +110,11 @@ sidebar: true
 
 <p>Suppose you are currently using cocaine, heroin, or crystal meth. In that case, it is going to be very difficult for you to secure first-day coverage burial insurance with current drug abuse or treatment. One of the most important factors the company will consider is if you’re still using drugs and the type of drugs you’re using.</p>
 
-<p>If you’ve been diagnosed, received treatment, hospitalized, or recommended counseling or treatment within the last 2 years, you will qualify for a first-day benefit plan.</p>
+<p>If you’ve been diagnosed, received treatment, hospitalized, or recommended counseling or treatment within the last 2 years, guaranteed issue burial insurance is usually your option.</p>
 
-<p>You will be covered from the first day, and your death benefit will be phased in over time.</p>
+<p>It asks no health questions. The full death benefit for natural death starts after a two-year waiting period, and a natural death before then generally refunds your premiums plus the interest the contract specifies.</p>
 
-<p><strong>Best Option:</strong> First-day benefit plan</p>
+<p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 
 <p>If you’re currently using drugs, do not lie on your life insurance application. It is considered fraud to lie about your drug use. If you have a drug-related death within the two years contestability period, there is a good chance your insurance company will thoroughly investigate your past.</p>
 
@@ -269,8 +269,6 @@ sidebar: true
 
 <p><strong>All the information you disclosed on the application is strictly private and confidential.</strong></p>
 
-<p>When you apply for life insurance, don’t worry about your drug history being used against you by law enforcement agencies because your rights are protected under <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noreferrer noopener">HIPPA</a> laws (Health Insurance Portability and Accountability Act 1996). HIPPA guarantees your privacy.</p>
-
 <p><br><strong>#2. PRESCRIPTION CHECK</strong></p>
 
 <p>Insurance companies will electronically review your prescription history to see what medications you are taking to identify any “red flags” that could indicate you are abusing your medications.</p>
@@ -385,7 +383,7 @@ sidebar: true
 
 <p>Most burial and life insurance companies require applicants to be drug-free or maintain sobriety for a minimum of two years.&#160;If you’ve been sober for several years, do not hesitate to apply for a new burial or life insurance because you have a better chance of getting approved.</p>
 
-<p>For recent drug abuse, and within less than two years, you may try to apply for a policy with first-day benefits</p>
+<p>For recent drug abuse, and within less than two years, guaranteed issue burial insurance is usually your option.</p>
 
 <p>If you’re currently using drugs, you’ll need an independent life insurance agency that can shop your case to multiple life insurance companies to get the best deal.</p>
 

@@ -23,7 +23,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• A defibrillator puts you in a high-risk category immediately<br>• Recent implant within 2 years limits you to guaranteed issue plans<br>• Most companies won’t offer first-day coverage with a serious heart history<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Applying wrong can get you declined or stuck with worse coverage<br>• Stable conditions over time may improve your approval options</p>
+<p>• A defibrillator puts you in a high-risk category immediately<br>• Recent implant within 2 years usually limits you to guaranteed issue plans<br>• Most companies won’t offer first-day coverage with a serious heart history<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Applying wrong can get you declined or stuck with worse coverage<br>• Stable conditions over time may improve your approval options</p>
 
 <p>Burial insurance with a defibrillator is still possible, but it depends heavily on when it was implanted and how stable your heart condition is today. Insurance companies see a defibrillator as a sign of serious cardiac risk, so your options are more limited. If your device was placed recently, many carriers will only offer guaranteed issue whole life insurance with a waiting period. Over time, if your condition stabilizes, you may qualify for better burial insurance options with full coverage. The key is to apply to the right company based on your exact timeline.</p>
 
@@ -143,7 +143,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -176,7 +176,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$53.09</td>
 </tr>
 <tr>

@@ -13,9 +13,9 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Needing help with bathing signals a higher risk to insurance companies<br>• ADL limitations often push you into expensive waiting period policies<br>• Most carriers decline or restrict coverage if multiple ADLs are impaired<br>• Applying wrong can lock you out of better first-day coverage options<br>• Some companies still approve immediate coverage if the condition is stable</p>
+<p>• Needing help with bathing signals a higher risk to insurance companies<br>• ADL limitations push you into expensive waiting period policies<br>• Carriers with health questions decline coverage if you currently need help with any ADL</p>
 
-<p>If you need help with bathing, that’s considered an <strong>ADL limitation</strong>, and it matters a lot for life insurance. ADLs are basic daily tasks like bathing, dressing, and eating, and needing help with even one can raise red flags for insurers. When it comes to burial insurance, whole life or final expense policies may still be available, but your options shrink fast. Some people can still qualify for first-day coverage if the condition is temporary or improving. Others are pushed into guaranteed-issue burial insurance with higher costs and a 2-year waiting period. The difference comes down to how severe and permanent your limitation is.</p>
+<p>If you need help with bathing, that’s considered an <strong>ADL limitation</strong>, and it matters a lot for life insurance. ADLs are basic daily tasks like bathing, dressing, and eating, and needing help with even one can raise red flags for insurers. When it comes to burial insurance, whole life or final expense policies may still be available, but your options shrink fast. If you currently need help with bathing, you are pushed into guaranteed-issue burial insurance with higher costs and a 2-year waiting period.</p>
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
@@ -150,7 +150,7 @@ sidebar: true
 <tbody>
 <tr>
 <td>1st Day Coverage</td>
-<td>YES</td>
+<td>Accidental death only (guaranteed issue: full natural-death benefit after 2 years)</td>
 </tr>
 <tr>
 <td>Rates NEVER Increase</td>

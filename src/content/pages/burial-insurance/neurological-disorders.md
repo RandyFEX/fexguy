@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Neurological Disorders Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Neurological disorders can limit options depending on severity and daily function<br>• Severe conditions often force expensive plans with 2-year waiting periods<br>• Needing help with daily activities usually blocks first-day coverage approvals<br>• Many agents skip details and push guaranteed issue too quickly<br>• Stable conditions may still qualify for better pricing and immediate coverage</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Neurological disorders can limit options depending on severity and daily function<br>• Severe conditions often force expensive plans with 2-year waiting periods<br>• Needing help with daily activities blocks first-day coverage approvals<br>• Many agents skip details and push guaranteed issue too quickly<br>• Stable conditions may still qualify for better pricing and immediate coverage</p>
 
-<p>Getting burial insurance with neurological disorders depends on how advanced your condition is and how it affects your daily life. Conditions like Parkinson’s, multiple sclerosis, epilepsy, or Alzheimer’s are all treated differently based on severity and stability. Burial insurance and whole life policies are still available, but if you need help with basic activities like eating, bathing, or dressing, most companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If your condition is stable and you’re independent, you may still qualify for first-day coverage with better rates.</p>
+<p>Getting burial insurance with neurological disorders depends on how advanced your condition is and how it affects your daily life. Conditions like Parkinson’s, multiple sclerosis, epilepsy, or Alzheimer’s are all treated differently based on severity and stability. Burial insurance and whole life policies are still available, but if you need help with basic activities like eating, bathing, or dressing, companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If your condition is stable and you’re independent, you may still qualify for first-day coverage with better rates.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -264,11 +264,11 @@ sidebar: true
 
 <h3>How does multiple sclerosis affect burial insurance rates?</h3>
 
-<p>Multiple Sclerosis impacts your insurance rates based primarily on the type of MS and your level of mobility. Applicants with Relapsing-Remitting MS who are still mobile and not using a wheelchair can often secure “Standard” or even “Preferred” rates with no waiting period. If you have Primary Progressive MS or require significant assistance with daily tasks, insurers will typically offer a modified plan with slightly higher monthly premiums.</p>
+<p>Multiple Sclerosis impacts your insurance rates based primarily on the type of MS and your level of mobility. Applicants with Relapsing-Remitting MS who are still mobile and not using a wheelchair can often secure “Standard” or even “Preferred” rates with no waiting period. If you have Primary Progressive MS, insurers will typically offer a modified plan with slightly higher monthly premiums. If you require assistance with daily tasks, a guaranteed issue plan is your option.</p>
 
 <h3>Is dementia covered by burial insurance plans?</h3>
 
-<p>Burial insurance plans specifically designed for dementia or Alzheimer’s typically fall into the “Guaranteed Issue” category.<sup></sup> Because these cognitive disorders are progressive and irreversible, insurers almost always require a two-year waiting period before the full death benefit is payable for natural causes. If the insured passes away during these first 24 months, the company will refund all premiums paid plus a set amount of interest (usually 10%).</p>
+<p>Burial insurance plans specifically designed for dementia or Alzheimer’s fall into the “Guaranteed Issue” category.<sup></sup> Because these cognitive disorders are progressive and irreversible, insurers require a two-year waiting period before the full death benefit is payable for natural causes. If the insured passes away during these first 24 months, the company will refund all premiums paid plus a set amount of interest (usually 10%).</p>
 
 <h3>Can I qualify for burial insurance if I have epilepsy or seizures?</h3>
 
@@ -276,7 +276,7 @@ sidebar: true
 
 <h3>Does a diagnosis of ALS prevent me from getting burial insurance?</h3>
 
-<p>A diagnosis of ALS (Amyotrophic Lateral Sclerosis) typically limits your options to a guaranteed acceptance policy. Because ALS is a rapidly progressive condition, no carrier will offer immediate first-day coverage for natural causes of death. However, a guaranteed issue plan ensures that you cannot be turned down, providing a way to build a death benefit for your family as long as you survive the initial two-year waiting period.</p>
+<p>A diagnosis of ALS (Amyotrophic Lateral Sclerosis) typically limits your options to a guaranteed acceptance policy. Because ALS is a rapidly progressive condition, most carriers will not offer immediate first-day coverage for natural causes of death. However, a guaranteed issue plan ensures that you cannot be turned down, providing a way to build a death benefit for your family as long as you survive the initial two-year waiting period.</p>
 
 <h3>What neurological conditions trigger a mandatory waiting period?</h3>
 

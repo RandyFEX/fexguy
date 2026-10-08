@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Organ Transplant Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Organ transplant history makes life insurance approval much harder<br>• Most companies require 1–3 years of stable health before approval<br>• Recent transplants often lead to declines or waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Severe cases may only qualify for small burial policies<br>• Not comparing companies can leave you overpaying for limited options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Organ transplant history makes life insurance approval much harder<br>• Most companies generally require guaranteed issue plans<br>• Recent transplants often lead to declines or waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Severe cases may only qualify for small burial policies<br>• Not comparing companies can leave you overpaying for limited options</p>
 
-<p>Burial insurance with an organ transplant depends heavily on timing and stability. Insurance companies look at the type of organ, how long it’s been since surgery, and whether your condition is stable with no rejection issues. Burial insurance, a type of whole life insurance, is often the most realistic option early on because it has easier approval requirements. If you’ve been stable for a few years, you may qualify for better coverage like term or standard whole life. If not, expect higher costs or guaranteed issue plans with waiting periods. The biggest factor is how your body has responded since the transplant.</p>
+<p>Burial insurance with an organ transplant depends heavily on timing and stability. Insurance companies look at the type of organ, how long it’s been since surgery, and whether your condition is stable with no rejection issues. Burial insurance, a type of whole life insurance, is often the most realistic option early on because it has easier approval requirements. If your transplant was more than five years ago and you’ve been stable, you may qualify for better coverage with certain companies in some states. If not, expect higher costs or guaranteed issue plans with waiting periods. The biggest factor is how your body has responded since the transplant.</p>
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
@@ -21,7 +21,7 @@ sidebar: true
 
 <ul>
 <li><strong>Organ transplants require waiting periods:</strong> Because organ replacements carry inherent risks like rejection or infection, burial life insurance companies classify every transplant recipient as a high-risk applicant.</li>
-<li><strong>Guaranteed issue is the only available lane:</strong> You will not qualify for first-day coverage plans because insurers view a transplanted organ as less stable than a healthy original organ.</li>
+<li><strong>Guaranteed issue is generally the only available lane:</strong> Most recipients will not qualify for first-day coverage plans because insurers view a transplanted organ as less stable than a healthy original organ.</li>
 <li><strong>Anti-rejection drugs result in a lifetime risk:</strong> Carriers identify transplant history through your prescription records since you must take immunosuppressant medications for the rest of your life.</li>
 <li><strong>Immune system health affects approval:</strong> Underwriters worry about your compromised immune system because it increases your risk of life-threatening complications or infections.</li>
 <li><strong>Accidental death benefits pay out immediately:</strong> Even though a natural death has a two-year waiting period, a guaranteed issue policy pays the full benefit from the first day if an accident occurs.</li>
@@ -48,7 +48,6 @@ sidebar: true
 <li><strong>Aflac Decline</strong>&#160;– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
 <li><strong>Aflac Modified</strong>&#160;– Within the past year, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
 <li><strong>Aflac Standard</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
-<li><strong>CICA Life Level</strong>&#160;– In the past 10 years, have you opted to not seek treatment, have not taken medication, or have not followed the prescribed treatment plan following a medical diagnosis by a member of the medical profession for any one or more of the following: uncontrolled diabetes, uncontrolled high blood pressure, stroke or TIA, paralysis, congestive heart failure, heart disease, cardiomyopathy, lung disease including COPD (chronic obstructive pulmonary disease) or emphysema, liver cirrhosis or failure, kidney (renal) failure or insufficiency, or chronic kidney disease including dialysis?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
 <li><strong>Family Benefit Life Level</strong>&#160;– During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
@@ -58,7 +57,7 @@ sidebar: true
 <li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
 <li><strong>Mutual of Omaha Decline</strong>&#160;– In the past 12 months, has the Proposed Insured been diagnosed by a licensed medical professional as having heart disease or heart surgery of any kind?</li>
 <li><strong>Mutual of Omaha Level</strong>&#160;– In the past 2 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Coronary Artery Disease, Heart Attack, Coronary Artery Bypass Surgery, Angioplasty, Cardiomyopathy, irregular heart rhythm, Pacemaker or Valvular Heart Disease with surgical repair or replacement?</li>
-<li><strong>Trinity Life Level</strong>&#160;– Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
+<li><strong>Trinity Life Decline</strong>&#160;– Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
 <li><strong>Trinity Life Decline</strong>&#160;– Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
 <li><strong>Trinity Life Level</strong>&#160;– During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
 </ul>
@@ -108,7 +107,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s organ transplant and long-term health stability.</p>
 
 <ul>
-<li>Level burial insurance provides 1st-day coverage and pays the full death benefit from day one; however, this plan is not available to transplant recipients. If you’ve had an organ transplant in the past, this will not be an option for you.</li>
+<li><strong>Level:</strong> Level burial insurance provides 1st-day coverage and pays the full death benefit from day one; however, this plan is generally not available to transplant recipients. If you’ve had an organ transplant within the last five years, this will not be an option for you.</li>
 <li><strong>Graded:</strong> Burial insurance limits benefits for 12 to 24 months for health-related causes of death, though most transplant cases still require guaranteed issue. If you’ve had an organ transplant in the past, this will not be an option for you.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before benefits are paid for health-related causes of death. I recommend <strong>Gerber Life</strong> for this.</li>
 </ul>
@@ -160,14 +159,14 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Organ Transplant History</td>
+<td>Transplant Within the Last 5 Years</td>
 <td>Guaranteed Issue</td>
 <td>2 Years</td>
 </tr>
 <tr>
-<td>On Anti-Rejection Meds</td>
-<td>Guaranteed Issue</td>
-<td>2 Years</td>
+<td>Transplant 5+ Years Ago, Otherwise Qualifies</td>
+<td>Level with certain companies in some states; otherwise Guaranteed Issue</td>
+<td>None (Level) or 2 Years</td>
 </tr>
 <tr>
 <td>Active Rejection Case</td>

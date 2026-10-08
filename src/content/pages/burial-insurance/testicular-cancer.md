@@ -20,8 +20,8 @@ sidebar: true
 <h2>Key testicular cancer burial insurance insights</h2>
 
 <ul>
-<li><strong>Some companies offer a loophole for the cured:</strong> If your doctor has officially declared you cured and you are currently treatment-free, CICA Life may offer you first-day coverage immediately, regardless of how recent your diagnosis was.</li>
-<li><strong>Germ cell tumors respond help with 1st-day coverage</strong><strong>:</strong>&#160;Most testicular cancers are germ cell tumors, which insurers view as highly treatable and lower-risk than other, more aggressive cancers.</li>
+<li><strong>Some companies offer a loophole for the cured:</strong> If your doctor has officially declared you cured and you are currently treatment-free, certain companies may offer you first-day coverage immediately, regardless of how recent your diagnosis was.</li>
+<li><strong>Germ cell tumors respond well, which helps with 1st-day coverage</strong><strong>:</strong>&#160;Most testicular cancers are germ cell tumors, which insurers view as highly treatable and lower-risk than other, more aggressive cancers.</li>
 <li><strong>The two-year rule is the standard for top rates:</strong> Most insurance carriers require you to be 24 months past your last treatment or surgery to qualify for level benefits with no waiting period.</li>
 <li><strong>Pending tests will trigger an automatic delay:</strong> If you have an upcoming CT scan or a follow-up appointment to check for recurrence, your insurer will postpone your application until they receive the final “all-clear” results.</li>
 <li><strong>Guaranteed-issue is </strong><strong>a reliable fallback:</strong>&#160;If you are currently undergoing chemotherapy or radiation, a guaranteed-issue plan like Gerber Life is the best way to secure coverage&#160;while you recover.</li>
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong> – Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac <strong>Decline</strong></strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac <strong>Decline</strong> </strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong> – Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong> – Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong> – Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received <a href="https://www.mayoclinic.org/diseases-conditions/testicular-cancer-care/diagnosis-treatment/drc-20352991" target="_blank" rel="noreferrer noopener nofollow">treatment</a> by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,8 +99,8 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s testicular cancer stage and length of remission.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life for those recently cured, or Aflac, Aetna, Trinity Life, and Family Benefit Life for those two years past treatment.</li>
-<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. This is often used if you have had a recent minor flare-up or are in a specific recovery window. I recommend Guaranteed Trust Life for these situations.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it to those recently cured, or Aflac, Aetna, Trinity Life, and Family Benefit Life for those two years past treatment.</li>
+<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. This is often used if you have had a recent minor flare-up or are in a specific recovery window. I recommend Guarantee Trust Life for these situations.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. Gerber Life is my top recommendation for anyone currently in treatment.</li>
 </ul>
 
@@ -111,7 +110,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -159,7 +158,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Cured (Less than 2 years)</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -176,7 +175,7 @@ sidebar: true
 
 <h3>Mark’s story</h3>
 
-<p>Mark was diagnosed with Stage 1 testicular cancer and had surgery to remove the tumor 18 months ago. He was concerned he wouldn’t qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> because he hadn’t yet reached the full two-year mark. I helped him apply with CICA Life because they are much more lenient with survivors who have been declared cured. Mark was approved for $20,000 in level coverage with no waiting period. This saved him over $40 per month compared to a graded plan.</p>
+<p>Mark was diagnosed with Stage 1 testicular cancer and had surgery to remove the tumor 18 months ago. He was concerned he wouldn’t qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> because he hadn’t yet reached the full two-year mark. I helped him apply with an insurance company that is much more lenient with survivors who have been declared cured. Mark was approved for $20,000 in level coverage with no waiting period. This saved him over $40 per month compared to a graded plan.</p>
 
 <h3>David’s story</h3>
 

@@ -44,7 +44,6 @@ sidebar: true
 <ul>
 <li><strong>Aetna Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
 <li><strong>Mutual of Omaha Level</strong>&#160;– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">Leukemia</a>, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
@@ -154,7 +153,7 @@ sidebar: true
 </tr>
 <tr>
 <td>History of Repeats</td>
-<td>Level</td>
+<td>Level (most carriers; some ask about multiple occurrences)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -254,7 +253,7 @@ sidebar: true
 
 <h3>Can I be denied burial insurance for multiple squamous cell occurrences?</h3>
 
-<p>Insurance providers do not deny coverage for recurrent squamous cell carcinoma, provided it remains localized to the skin. Since these growths are typically caused by cumulative sun exposure rather than a systemic failure, underwriters view them as recurring minor issues rather than life-threatening crises. Even if you have a spot removed every year, you can still qualify for “Level” protection that covers your final expenses without any medical exams or waiting periods.</p>
+<p>Insurance providers generally do not deny coverage for recurrent squamous cell carcinoma, provided it remains localized to the skin. Since these growths are typically caused by cumulative sun exposure rather than a systemic failure, underwriters view them as recurring minor issues rather than life-threatening crises. Even if you have a spot removed every year, you can still qualify for “Level” protection that covers your final expenses without any medical exams or waiting periods.</p>
 
 <h3>Does a history of squamous cell carcinoma increase insurance premiums?</h3>
 
@@ -278,7 +277,7 @@ sidebar: true
 
 <h3>Can I be denied burial insurance for repeat basal cell spots?</h3>
 
-<p>Insurance providers do not deny coverage for multiple basal cell carcinoma occurrences because they are localized events caused by cumulative sun exposure rather than systemic illness. Even if you have a history of having several spots removed every year, underwriters will still offer you “Level” coverage with no waiting period. As long as your skin checks remain current and all current spots have been removed, your history of repeat skin cancer will not prevent you from getting approved.</p>
+<p>Insurance providers generally do not deny coverage for multiple basal cell carcinoma occurrences because they are localized events caused by cumulative sun exposure rather than systemic illness. Even if you have a history of having several spots removed every year, underwriters will still offer you “Level” coverage with no waiting period. As long as your skin checks remain current and all current spots have been removed, your history of repeat skin cancer will not prevent you from getting approved.</p>
 
 <h3>Does a history of basal cell carcinoma increase burial insurance premiums?</h3>
 

@@ -282,7 +282,7 @@ sidebar: true
 
 <p>If you have any of these medical conditions, then guaranteed issue life insurance is your best option. Guaranteed issue burial insurance doesn’t ask health questions, so you will be approved for coverage even with these high-risk conditions.</p>
 
-<p>Guaranteed issue life insurance should be your last option and is inappropriate for hospice patients. </p>
+<p>Guaranteed issue life insurance should be your last option and is inappropriate for hospice patients.</p>
 
 <h2 id="non-burial-insurance-options-for-hospice-patients"><br><strong>Non-burial insurance options for hospice patients</strong></h2>
 
@@ -298,7 +298,7 @@ sidebar: true
 
 <p><br><strong>2. Savings Accounts</strong></p>
 
-<p>Since you cannot qualify for burial insurance, you can open a savings account or joint savings account to deposit money to take care of your funeral and final expenses.</p>
+<p>Since you cannot qualify for first-day burial insurance, you can open a savings account or joint savings account to deposit money to take care of your funeral and final expenses.</p>
 
 <p>If you choose this option, you need to deposit around $8,000 to $15,000 in your account so it could be enough to cover your final expenses.</p>
 
@@ -312,7 +312,7 @@ sidebar: true
 
 <h2 id="when-is-the-best-time-to-buy-burial-insurance"><br><strong>When is the best time to buy burial insurance?</strong></h2>
 
-<p>You should buy burial insurance just before you become a hospice patient. </p>
+<p>You should buy burial insurance just before you become a hospice patient.</p>
 
 <p>Waiting to buy burial insurance when you are in hospice is what procrastinators and poor planners do. Everyone knows they will die someday, so don’t wait until it’s too late to buy your burial, cremation, or final expense life insurance.</p>
 

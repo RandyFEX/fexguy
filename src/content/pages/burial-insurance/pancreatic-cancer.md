@@ -20,7 +20,7 @@ sidebar: true
 <h2>Key pancreatic cancer burial insurance insights</h2>
 
 <ul>
-<li><strong>Immediate coverage is possible the moment you are cured:</strong> CICA Life offers a unique opportunity where you can potentially qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
+<li><strong>Immediate coverage is possible the moment you are cured:</strong> Certain companies offer a unique opportunity where you can potentially qualify for first-day coverage as soon as a doctor declares you cancer-free.</li>
 <li><strong>A two-year survival milestone opens most major carriers:</strong> If you have been cured for at least 2 years with no further treatments or medications, top-tier companies like Aflac and Family Benefit Life become available.</li>
 <li><strong>Active cancer diagnosis limits you to guaranteed-issue plans:</strong> If you are currently undergoing treatment or taking cancer medications, you will be restricted to a policy with a two-year waiting period.</li>
 <li><strong>Underwriters use prescription records to verify your health status:</strong> Insurance companies monitor your pharmacy history for cancer-related drugs and nausea medications to confirm if your condition is active or in remission.</li>
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a>, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell Carcinoma</a>) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,7 +99,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s pancreatic cancer stage and their long-term or short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life if you were recently cured, or Family Benefit Life, Trinity Life, and Aflac if you have been cured for more than 2 years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it if you were recently cured, or Family Benefit Life, Trinity Life, and Aflac if you have been cured for more than 2 years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life if you have been cured of cancer, but also have other major issues like heart failure.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health or medically related causes of death. I recommend Gerber Life if you are currently in the middle of your battle with cancer or cannot perform daily tasks like bathing and dressing.</li>
 </ul>
@@ -111,7 +110,7 @@ sidebar: true
 
 <p>Here are some preferred rates if you’re recently cured. If it’s been more than 2 years, I can save you even more money by identifying the A-rated carrier that’s best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -161,7 +160,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Cured 0-2 Years</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
@@ -255,7 +254,7 @@ sidebar: true
 
 <h3>Can pancreatic cancer survivors qualify for first-day coverage?</h3>
 
-<p>Pancreatic cancer survivors can qualify for first-day coverage if they have been declared “cancer-free” and have completed all active treatments at least two years ago. Some specialty carriers, such as CICA Life, may even offer immediate protection sooner if a doctor provides a clear “cured” status. If you have moved past the initial 24-month recovery window and are no longer taking chemotherapy or targeted therapies, you can likely bypass the waiting period entirely.</p>
+<p>Pancreatic cancer survivors can qualify for first-day coverage if they have been declared “cancer-free” and have completed all active treatments at least two years ago. Some specialty carriers may even offer immediate protection sooner if a doctor provides a clear “cured” status. If you have moved past the initial 24-month recovery window and are no longer taking chemotherapy or targeted therapies, you can likely bypass the waiting period entirely.</p>
 
 <h3>Does a history of pancreatic enzymes affect burial insurance eligibility?</h3>
 

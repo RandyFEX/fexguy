@@ -21,13 +21,13 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• HIV doesn’t automatically disqualify you from life insurance anymore<br>• Stable treatment and undetectable viral load are key to approval<br>• Many companies still charge higher rates due to added risk<br>• Some applicants get declined if health history isn’t well controlled<br>• Guaranteed issue policies cost more and limit your coverage amount<br>• Lying about HIV status can void your policy and deny claims</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• HIV doesn’t automatically disqualify you from life insurance anymore<br>• For the final expense plans we recommend, HIV means guaranteed issue coverage with a two-year waiting period<br>• Stable treatment and undetectable viral load are key to approval<br>• Many companies still charge higher rates due to added risk<br>• Some applicants get declined if health history isn’t well controlled<br>• Guaranteed issue policies cost more and limit your coverage amount<br>• Lying about HIV status can void your policy and deny claims</p>
 
-<p>Getting life insurance for HIV positive individuals is possible today, but it depends heavily on how well the condition is managed. Insurance companies look closely at your viral load, CD4 count, and treatment history to decide if you qualify and what you’ll pay. If your health is stable and documented over time, you may qualify for term or whole life insurance. If not, you may be pushed into guaranteed issue policies that cost more and offer less coverage. The difference comes down to timing, medical consistency, and choosing the right company.</p>
+<p>Getting life insurance for HIV positive individuals is possible today, but it depends heavily on how well the condition is managed. Insurance companies look closely at your viral load, CD4 count, and treatment history to decide if you qualify and what you’ll pay. If your health is stable and documented over time, you may qualify for term or whole life insurance with some companies. If not, you may be pushed into guaranteed issue policies that cost more and offer less coverage. For the final expense plans we recommend, being HIV positive means guaranteed issue coverage with a two-year waiting period. The difference comes down to timing, medical consistency, and choosing the right company.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><strong>IMPORTANT: Being HIV positive puts you in the high-risk category which will result in a mandatory two-year waiting period with every insurance company. No life insurance company will offer you a first-day coverage plan if you are HIV positive.</strong></p>
+<p><strong>IMPORTANT: Being HIV positive puts you in the high-risk category which will result in a mandatory two-year waiting period with every final expense insurance company we recommend. None of these companies will offer you a first-day coverage plan if you are HIV positive.</strong></p>
 
 <p>In this article, we will discuss what options you have when you have been diagnosed with HIV. In addition, we will teach you how to find affordable burial insurance with HIV.</p>
 
@@ -128,9 +128,6 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
-</tr>
-<tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
 </tr>
 <tr>
@@ -150,6 +147,8 @@ sidebar: true
 
 <h2 id="best-burial-insurance"><br><strong>What type of burial insurance is best?</strong></h2>
 
+<p>For HIV-positive applicants, the best final expense option is a guaranteed issue whole life plan with a two-year waiting period. Here’s what it includes:</p>
+
 <table>
 <thead>
 <tr>
@@ -159,7 +158,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>1st Day Coverage</td>
+<td>1st Day Coverage (accidental death)</td>
 <td>YES</td>
 </tr>
 <tr>

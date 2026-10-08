@@ -21,9 +21,9 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Most people pay $30 to $100 per month for basic coverage<br>• Age and health are the biggest factors driving your monthly cost<br>• Guaranteed issue plans cost more and give you less value<br>• Smokers and serious health issues can double your premium<br>• Waiting to buy almost always means higher prices later<br>• Not comparing companies can cost you hundreds or thousands extra</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Sample rates on our site for $10,000 of coverage run from about $22 to $146 a month, depending on age and sex<br>• Age and health are the biggest factors driving your monthly cost<br>• Guaranteed issue plans cost more and give you less value<br>• Smokers and serious health issues can double your premium<br>• Waiting to buy almost always means higher prices later<br>• Not comparing companies can cost you hundreds or thousands extra</p>
 
-<p>Final expense insurance cost depends mainly on your age, health, and how much coverage you want. Most people pay around $50 to $100 per month for about $10,000 in coverage, while healthier applicants may pay closer to $30 to $70. Older applicants or those with health issues can pay $100 to $200 or more per month. Final expense insurance is a type of whole life insurance, so your rate stays fixed for life, but what you start at matters a lot. The biggest mistake people make is assuming all prices are the same when they’re not even close.</p>
+<p>Final expense insurance cost depends mainly on your age, health, and how much coverage you want. In the sample rates published on our company reviews, $10,000 of coverage costs about $22 to $146 a month with Family Benefit Life or Aetna, from a 50-year-old woman to an 80-year-old man, and more on a graded plan for people with health issues. Final expense insurance is a type of whole life insurance, so your rate stays fixed for life, but what you start at matters a lot. The biggest mistake people make is assuming all prices are the same when they’re not even close.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -161,7 +161,87 @@ sidebar: true
 
 <p>Final expense insurance policies can be purchased in the $5,000 to $25,000 range, although some companies offer up to $50,000.</p>
 
-<p>The average cost of whole life insurance per month is approximately $25, and the most common face amount purchased is $10,000. Your specific premium rate might be higher or lower depending on your age, gender, health when you apply, tobacco use, and the face amount of the policy you choose.</p>
+<p>The most common face amount purchased is $10,000. Your specific premium rate will depend on your age, gender, health when you apply, tobacco use, and the face amount of the policy you choose. We don’t quote a single “average” cost, because premiums vary too much from one person to the next.</p>
+
+<p><strong>Sample premiums for $10,000 of coverage</strong></p>
+
+<p>The tables below compare the sample rates published on our own company reviews, for the same $10,000 face amount at each age. On these samples, $10,000 of coverage with Family Benefit Life or Aetna ran from about $22 for a 50-year-old woman to about $146 for an 80-year-old man. Guarantee Trust Life’s Heritage Plan is a graded benefit plan, so its rates are higher and its full death benefit is phased in over the first two years.</p>
+
+<table class="table-wrap">
+<thead>
+<tr>
+<th>FEMALE AGE</th><th>Family Benefit Life</th><th>Aetna</th><th>Guarantee Trust Life (graded Heritage Plan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td><td>$21.78</td><td>$26.67</td><td>$38.17</td>
+</tr>
+<tr>
+<td>55</td><td>$26.26</td><td>$32.25</td><td>$46.50</td>
+</tr>
+<tr>
+<td>60</td><td>$32.60</td><td>$39.58</td><td>$54.00</td>
+</tr>
+<tr>
+<td>65</td><td>$41.28</td><td>$45.83</td><td>$64.83</td>
+</tr>
+<tr>
+<td>70</td><td>$52.03</td><td>$55.83</td><td>$79.00</td>
+</tr>
+<tr>
+<td>75</td><td>$71.64</td><td>$72.50</td><td>$114.00</td>
+</tr>
+<tr>
+<td>80</td><td>$104.83</td><td>$97.50</td><td>$178.99</td>
+</tr>
+</tbody>
+</table>
+
+<table class="table-wrap">
+<thead>
+<tr>
+<th>MALE AGE</th><th>Family Benefit Life</th><th>Aetna</th><th>Guarantee Trust Life (graded Heritage Plan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td><td>$27.35</td><td>$33.75</td><td>$54.83</td>
+</tr>
+<tr>
+<td>55</td><td>$32.77</td><td>$41.33</td><td>$59.83</td>
+</tr>
+<tr>
+<td>60</td><td>$41.74</td><td>$50.16</td><td>$69.00</td>
+</tr>
+<tr>
+<td>65</td><td>$53.75</td><td>$55.83</td><td>$87.33</td>
+</tr>
+<tr>
+<td>70</td><td>$69.23</td><td>$70.00</td><td>$104.00</td>
+</tr>
+<tr>
+<td>75</td><td>$96.58</td><td>$97.50</td><td>$147.33</td>
+</tr>
+<tr>
+<td>80</td><td>$145.79</td><td>$134.16</td><td>$245.66</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>What these samples do and don’t tell you:</strong></p>
+
+<ul>
+<li><strong>Source and date</strong> – Copied from the pricing tables on our <a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit Life</a>, <a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Aetna</a>, and <a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a> reviews (pages last updated May and June 2026). Those pages don’t say when the rates were quoted, and they are for illustration only and subject to change.</li>
+<li><strong>Billing period</strong> – The source tables don’t label it; we show them as monthly premiums, consistent with the monthly figures quoted elsewhere on this site.</li>
+<li><strong>Plan type</strong> – The Family Benefit Life and Aetna pages don’t say which plan or rate class their samples are for. The Guarantee Trust Life samples are for its graded Heritage Plan, the plan that review covers.</li>
+<li><strong>Tobacco</strong> – Not stated for Family Benefit Life or Aetna. Our Guarantee Trust Life review notes that it charges smokers non-smoker rates.</li>
+<li><strong>State</strong> – Not stated. Rates and plan availability vary by state.</li>
+<li><strong>Trinity Life</strong> – The sample rates on our <a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life review</a> match Family Benefit Life’s at ages 50, 60, 70, and 80, so they aren’t repeated here.</li>
+<li><strong>Guaranteed issue</strong> – None of these samples are for a guaranteed issue plan with a two-year waiting period.</li>
+</ul>
+
+<p>Your own quote can be higher or lower. Comparing several companies for your age, health, and state is the only way to know your actual price.</p>
 
 <p>Your funeral insurance cost can vary depending on the policy companies. Some factors that affect the price include:</p>
 
@@ -179,7 +259,7 @@ sidebar: true
 
 <p>Being male or female also determines the cost of a burial insurance plan.</p>
 
-<p>Look at the life insurance premium chart below, and you will see that life insurance is more expensive for men than for women. Men always pay more than women because, on average, women live longer than men. The average life expectancy of women is 81.1 years, while men are 76.2 years. Women live 5% longer than men.</p>
+<p>Look at the sample premium tables above, and you will see that life insurance is more expensive for men than for women. Men always pay more than women because, on average, women live longer than men. The average life expectancy of women is 81.1 years, while men are 76.2 years. Women live 5% longer than men.</p>
 
 <p>Final expense life insurance no exam rates are based on life expectancy. Since life expectancy is longer for women than it is for men, life insurance premiums are lower for women. Since men are expected to pass away several years sooner than women, men are considered a higher risk to life insurance companies than women, and they will pay more premiums for the same age.</p>
 
@@ -344,11 +424,11 @@ sidebar: true
 
 <p><br><strong>What is the average cost of final expense life insurance per month?</strong></p>
 
-<p>The average cost of final expense life insurance is $50 per month. Your monthly premium could be lower or higher depending on your age, gender, location, coverage amount, and general health.</p>
+<p>There is no single average we can stand behind, because premiums vary so much. In the sample rates on this page, $10,000 of coverage costs about $22 to $146 a month with Family Benefit Life or Aetna, depending on age and sex. Your monthly premium could be lower or higher depending on your age, gender, location, coverage amount, and general health.</p>
 
 <p><br><strong>How much is life insurance for a 50 year old?</strong></p>
 
-<p>The average monthly cost of final expense life insurance for a 50-year-old ranges from $20 to $50. Your actual cost varies by gender, state, coverage amount, and health.</p>
+<p>In the sample rates on this page, $10,000 of coverage for a 50-year-old costs about $22 to $34 a month with Family Benefit Life or Aetna, and about $38 to $55 on Guarantee Trust Life’s graded plan. Your actual cost varies by gender, state, coverage amount, and health.</p>
 
 <p><br><strong>Is final expense insurance whole life?</strong></p>
 
@@ -384,7 +464,7 @@ sidebar: true
 
 <p><br><strong>How much do final expense plans cost?</strong></p>
 
-<p>Final expense plans cost an average of $25 to $75 per month. The rate will vary depending on age, gender, state, coverage amount, and health.</p>
+<p>See the sample premium tables on this page for $10,000 of coverage at ages 50 to 80. The rate will vary depending on age, gender, state, coverage amount, and health.</p>
 
 <p><br><strong>What should someone do if they are denied final expense insurance?</strong></p>
 

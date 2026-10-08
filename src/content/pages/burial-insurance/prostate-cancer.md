@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Prostate Cancer Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Prostate cancer doesn’t mean automatic denial, but timing controls your options<br>• Active or recent diagnosis usually blocks first-day coverage approvals<br>• Applying too early often leads to overpriced guaranteed issue plans<br>• Waiting 2+ years after treatment can unlock better pricing and coverage<br>• Many people overpay by not matching their case to the right company</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Prostate cancer doesn’t mean automatic denial, but timing controls your options<br>• Active or recent diagnosis usually blocks first-day coverage approvals<br>• Applying too early often leads to overpriced guaranteed issue plans<br>• Remission or ongoing hormone therapy is not the same as being declared cancer-free<br>• Waiting 2+ years after treatment can unlock better pricing and coverage<br>• Many people overpay by not matching their case to the right company</p>
 
-<p>Getting burial insurance with prostate cancer depends heavily on your stage, treatment, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially if you’re still in treatment. If the cancer is recent, most companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If you’ve been in remission for a few years, you may qualify for better burial insurance with immediate coverage and lower rates. Timing matters because applying too early can lock you into weaker coverage.</p>
+<p>Getting burial insurance with prostate cancer depends heavily on your stage, treatment, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially if you’re still in treatment. If the cancer is recent, most companies will only offer guaranteed-issue plans with higher premiums and a 2-year waiting period. If you’ve been cancer-free for a few years, you may qualify for better burial insurance with immediate coverage and lower rates. Timing matters because applying too early can lock you into weaker coverage.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -21,7 +21,7 @@ sidebar: true
 
 <ul>
 <li><strong>Prostate cancer success rates are high:</strong> This condition is one of the most curable cancers, and insurers view it more favorably than almost any other type.</li>
-<li><strong>Surgical removal often means an instant cure:</strong> When a doctor removes the prostate, insurers view you as cancer-free immediately because the source of the disease is gone.</li>
+<li><strong>Surgical removal often means an instant cure:</strong> When a doctor removes the prostate, certain insurers view you as cancer-free immediately because the source of the disease is gone.</li>
 <li><strong>The two-year rule governs first-day coverage:</strong> Most companies require you to be cancer-free or off treatment for at least 24 months to qualify for the best prices.</li>
 <li><strong>Active treatment </strong><strong>often involves waiting periods:</strong>&#160;if you are currently taking medication or undergoing radiation therapy, a guaranteed issue plan is typically the only option available.</li>
 <li><strong>PSA levels serve as the ultimate health signal:</strong> Stable or low PSA levels indicate to the insurance company that your condition is not progressing.</li>
@@ -46,7 +46,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a>, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 Prostate Cancer, Carcinoma in Situ and Squamous Cell or <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Basal Cell Carcinoma</a>) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -103,7 +102,7 @@ sidebar: true
 
 <p>Insurance companies review your pharmacy records to confirm how long you have been cancer-free.</p>
 
-<p><strong>Underwriting Approval Secrets:</strong> If you had your prostate surgically removed, many carriers view you as “cured” immediately. Also, attending every follow-up appointment is a positive sign to an underwriter.</p>
+<p><strong>Underwriting Approval Secrets:</strong> If you had your prostate surgically removed, certain carriers view you as “cured” immediately. Also, attending every follow-up appointment is a positive sign to an underwriter.</p>
 
 <p><strong>Short &amp; Long Term History:</strong> Maintenance meds are pills you take for years to keep things stable, while “rescue” meds are for emergencies. Your prescription history is how the insurance carriers verify medical stability.</p>
 
@@ -124,8 +123,13 @@ sidebar: true
 <td>None</td>
 </tr>
 <tr>
-<td>Recent Treatment</td>
-<td>Graded</td>
+<td>Prostate Removed, Declared Cancer-Free Under 2 Years</td>
+<td>Level (certain companies) or Guaranteed Issue</td>
+<td>None or 2 Years</td>
+</tr>
+<tr>
+<td>Remission or Ongoing Treatment (such as hormone therapy)</td>
+<td>Guaranteed Issue</td>
 <td>2 Years</td>
 </tr>
 <tr>
@@ -188,7 +192,7 @@ sidebar: true
 
 <h3>Can prostate cancer survivors get first-day coverage burial insurance?</h3>
 
-<p>Prostate cancer survivors qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> if they have been in remission for a specific period. Most simplified-issue insurers allow immediate payouts once you have reached the two-year milestone following surgery or radiation therapy. For very early-stage survivors, some specialized carriers may even offer immediate coverage sooner.</p>
+<p>Prostate cancer survivors qualify for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a> if they have been cancer-free for a specific period. Most simplified-issue insurers allow immediate payouts once you have reached the two-year milestone following surgery or radiation therapy. For very early-stage survivors, some specialized carriers may even offer immediate coverage sooner.</p>
 
 <h3>Is there a waiting period for burial insurance with active prostate cancer?</h3>
 

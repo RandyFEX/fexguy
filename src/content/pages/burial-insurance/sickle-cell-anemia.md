@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance with Sickle Cell Anemia and Sickle Cell Trait</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Sickle cell doesn’t automatically disqualify you from burial insurance<br>• Severe complications or hospitalizations can limit approval or raise rates<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Mild or stable cases may still qualify for first-day coverage<br>• Many people assume denial when options still exist with the right company<br>• Not comparing companies can lead to overpriced, limited coverage</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Sickle cell doesn’t automatically disqualify you from burial insurance<br>• Severe complications or hospitalizations can limit approval or raise rates<br>• Companies look back different lengths of time for hospital stays, such as 6, 12, or 24 months<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Mild or stable cases may still qualify for first-day coverage<br>• Many people assume denial when options still exist with the right company<br>• Not comparing companies can lead to overpriced, limited coverage</p>
 
 <p>Burial insurance with sickle cell anemia depends heavily on severity, complications, and how well your condition is managed. Some people, especially with mild cases or sickle cell trait, can still qualify for burial insurance, which is a type of whole life insurance with immediate coverage. More severe cases or recent hospitalizations often push you into guaranteed issue plans with higher costs and a 2-year waiting period. Insurance companies look closely at complications like organ damage and recent treatment before deciding. The biggest mistake is assuming all companies treat sickle cell the same, because they don’t.</p>
 
@@ -140,9 +140,9 @@ sidebar: true
 
 <p>Your life insurance eligibility will be affected if you are hospitalized for sickle cell anemia. Some burial insurance companies asked if you’ve been hospitalized in the last six months or one year.</p>
 
-<p>If you’ve been hospitalized because of sickle cell anemia your only option for coverage is to take a guaranteed issue life insurance.</p>
+<p>If you’ve been hospitalized recently because of sickle cell anemia, your option for coverage may be a graded, modified, or guaranteed issue life insurance, depending on the company and how long ago your hospital stay was.</p>
 
-<p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
+<p><strong>Best Option:</strong> Graded, modified, or guaranteed issue burial insurance</p>
 
 <p><br><strong>BURIAL INSURANCE WITH PULMONARY HYPERTENSION</strong></p>
 

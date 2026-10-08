@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance with Down Syndrome</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Down syndrome makes traditional life insurance approval much harder<br>• Many companies decline applications or limit coverage amounts significantly<br>• Guaranteed issue plans are common but come with 2-year waiting periods<br>• Cognitive ability and independence affect what policies you can qualify for<br>• Most people only qualify for small burial policies around $25,000<br>• Not working with the right company can leave you with no options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Down syndrome makes traditional life insurance approval much harder<br>• Many companies decline applications or limit coverage amounts significantly<br>• Guaranteed issue plans are the option, and they come with 2-year waiting periods<br>• Cognitive ability affects whether the person can understand and sign the application<br>• Most people only qualify for small burial policies around $25,000<br>• Not working with the right company can leave you with no options</p>
 
-<p>Burial insurance for Down syndrome is possible, but it’s limited and depends heavily on the person’s independence, health, and ability to understand the policy. Many traditional term or fully underwritten policies decline applicants because of higher health risks and shorter life expectancy. Burial insurance, which is a type of whole life insurance, is usually the fallback option. These plans are easier to qualify for but offer smaller coverage amounts and often include a 2-year waiting period before full benefits pay out. The biggest mistake is assuming all companies treat this the same, because they don’t.</p>
+<p>Burial insurance for Down syndrome is possible, but it’s limited and depends heavily on the person’s ability to understand the policy. Many traditional term or fully underwritten policies decline applicants because of higher health risks and shorter life expectancy. Guaranteed issue burial insurance, which is a type of whole life insurance, is the fallback option. These plans are easier to qualify for but offer smaller coverage amounts and include a 2-year waiting period before full benefits pay out. The biggest mistake is assuming all companies treat this the same, because they don’t.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -143,7 +143,7 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
+<td>No health questions policies</td><td>2-year waiting period (avoid only if you can qualify for first-day coverage, which isn’t the case with Down syndrome)</td>
 </tr>
 <tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
@@ -173,10 +173,6 @@ sidebar: true
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1st Day Coverage</td>
-<td>YES</td>
-</tr>
 <tr>
 <td>Rates NEVER Increase</td>
 <td>YES</td>

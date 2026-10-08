@@ -21,9 +21,9 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Oxford Life is easy to qualify for but not always cheapest<br>• Many applicants get placed into 2-year waiting period plans<br>• Coverage amounts are smaller compared to other companies<br>• Rates can be higher depending on your health and age<br>• The wrong plan can limit payouts in the first 2 years</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Oxford Life’s health questions are relatively strict, and it’s not always cheapest<br>• Applicants who don’t qualify need a 2-year waiting period plan from another company<br>• Coverage amounts are smaller compared to other companies<br>• Rates can be higher depending on your health and age<br>• The wrong plan can limit payouts in the first 2 years</p>
 
-<p>Oxford Life burial insurance is a type of whole life insurance designed for people who want simple approval, even with health issues. The company offers several plan levels, including immediate coverage and graded policies with a waiting period. The catch is, many applicants don’t qualify for the best plan and end up in a 2-year delay option where full benefits don’t pay right away. If you don’t understand the differences, you can pay more for coverage that doesn’t fully protect your family early on.</p>
+<p>Oxford Life burial insurance is a type of whole life insurance designed for people who want simple approval with immediate coverage. The company offers first-day coverage plans, but we found no graded policies with a waiting period. The catch is, many applicants don’t qualify and end up in a 2-year delay option from another company where full benefits don’t pay right away. If you don’t understand the differences, you can pay more for coverage that doesn’t fully protect your family early on.</p>
 
 <p>Complete my quote request form on this page to quickly avoid choosing the wrong plan.</p>
 
@@ -77,6 +77,8 @@ sidebar: true
 <h2 id="cons-of-oxford-life-burial-insurance"><strong>Cons of Oxford Life burial insurance</strong></h2>
 
 <p><strong>Strict underwriting </strong>– only healthier people can qualify for this coverage</p>
+
+<p><strong>No backup plan</strong> – we found no graded, modified, or guaranteed issue plan from Oxford, so if you don’t qualify, you’ll need another company</p>
 
 <p><strong>Not available online –</strong> insurance agents must visit your home to sell this insurance.</p>
 
@@ -135,7 +137,7 @@ sidebar: true
 
 <p><br><strong>ASSURANCE ONE </strong> – <strong>Single-Premium Burial Insurance</strong><br>“Assurance One” is a single premium whole life insurance policy offered by Oxford Life. Single premium life (SPL) requires one lump-sum payment for the coverage to be fully paid. In return, you get a guaranteed full death benefit that will pay your beneficiary when you pass away.</p>
 
-<p>One of the most significant advantages of Assurance One is that the cash value builds up quickly because your policy is fully funded. <br><br>Another notable benefit of Oxford Life’s Assurance One is that your single premium will give you first-day full coverage. <br><br>If you choose to surrender your policy, you will receive 100% of your premiums back.</p>
+<p>One of the most significant advantages of Assurance One is that the cash value builds up quickly because your policy is fully funded. <br><br>Another notable benefit of Oxford Life’s Assurance One is that your single premium will give you first-day full coverage.</p>
 
 <h2 id="oxford-life-burial-insurance-riders"><br><strong>Oxford Life burial insurance riders</strong></h2>
 
@@ -199,6 +201,8 @@ sidebar: true
 </ol>
 
 <h2 id="oxford-life-pricing-examples"><br><strong>Oxford Life pricing examples</strong></h2>
+
+<p>These are sample monthly rates for Oxford’s Assurance plan from when we reviewed it. Rates and plan availability can change, so ask for a current quote.</p>
 
 <table class="table-wrap" id="tablepress-139">
 <thead>

@@ -62,9 +62,9 @@ sidebar: true
 
 <p><br><strong>OTHER FACTORS THAT MAY AFFECT ELIGIBILITY</strong></p>
 
-<p>The only time Crohn’s disease will be a problem in getting first-day coverage is when it is paired with other medical conditions that could not qualify for a level death benefit plan. </p>
+<p>The main time Crohn’s disease will be a problem in getting first-day coverage is when it is paired with other medical conditions that could not qualify for a level death benefit plan. </p>
 
-<p>It’s estimated that 70% of Crohn’s disease patients will need colectomy or colon resectioning surgery at some point in their life. Surgery may be required if you develop a fistula or fissure. Also, if you develop an obstruction or experience worsening symptoms that require resection.&#160; </p>
+<p>Some Crohn’s disease patients will need colectomy or colon resectioning surgery at some point in their life. Surgery may be required if you develop a fistula or fissure. Also, if you develop an obstruction or experience worsening symptoms that require resection.&#160; </p>
 
 <ul>
 <li>If your surgery (colectomy) were within the last 24 months, insurance providers would require two years to pass before they give you a level death benefit plan. The actual time will depend on the company’s requirements, but most will want two years to see how successful the colectomy was and if there are any complications.</li>
@@ -229,8 +229,6 @@ history check to look for medications you are taking and for what conditions. </
 <p>Life insurance companies will look at your Crohn’s disease
 as part of your overall health to determine what plan you will qualify for and
 the amount you need to pay.</p>
-
-<p>Studies show that people with Crohn’s disease have a 73% higher mortality rate than the general population.</p>
 
 <p>Crohn’s disease is a chronic medical condition that is usually not fatal. That’s why applicants with this disease can still qualify for life insurance. It is only when Crohn’s disease is severe that surgery is recommended that the applicant’s application is considered high-risk because it can lead to other serious health risks.</p>
 
@@ -508,7 +506,7 @@ the amount you need to pay.</p>
 
 <p><br><strong>Can you be denied insurance for Crohn’s disease?</strong></p>
 
-<p>No, you cannot be denied insurance for Crohn’s disease. You can still get a first-day benefit plan if you have had surgery to treat your condition.</p>
+<p>No, Crohn’s disease alone usually won’t get you denied insurance. You can often still get a first-day benefit plan if you have had surgery to treat your condition.</p>
 
 <p><br><strong>Is there a waiting period for life insurance with Crohn’s disease?</strong></p>
 
@@ -577,5 +575,5 @@ the amount you need to pay.</p>
 <ul>
 <li>work with a qualified insurance agent,</li>
 <li>get a first-day coverage plan,</li>
-<li>remember that Crohn’s disease will not affect your life insurance rates.</li>
+<li>remember that Crohn’s disease will often not affect your life insurance rates.</li>
 </ul>

@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Top 10 Final Expense Life Insurance Companies</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Most “top 10” lists mix good companies with overpriced, weak options<br>• Cheapest company depends on your health, not a generic ranking<br>• Some carriers push 2-year waiting periods when you could qualify day one<br>• Big brand names don’t always mean better coverage or lower prices<br>• Not all companies accept the same health conditions or medications<br>• Picking the wrong carrier can cost thousands over your lifetime</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Most “top 10” lists mix good companies with overpriced, weak options<br>• Cheapest company depends on your health, not a generic ranking<br>• Some carriers push 2-year waiting periods when you could qualify day one<br>• Not every company offers 1st-day coverage: guaranteed issue specialists have a 2-year waiting period<br>• Big brand names don’t always mean better coverage or lower prices<br>• Not all companies accept the same health conditions or medications<br>• Picking the wrong carrier can cost thousands over your lifetime</p>
 
 <p>There’s no single “top 10 final expense life insurance companies” that fits everyone. Final expense insurance is a type of whole life insurance, and the best company depends on your age, health, and budget. Some companies like Mutual of Omaha, Transamerica, Americo, Aetna, and AIG show up often in rankings because they balance price, approval, and financial strength. The problem is most lists don’t tell you which one fits your situation. That’s where people overpay or get stuck with waiting periods they didn’t need.</p>
 
@@ -53,7 +53,7 @@ sidebar: true
 <li><a href="#liberty-bankers">Liberty Bankers</a></li>
 <li><a href="#prosperity">Prosperity</a></li>
 <li><a href="#guarantee-trust-life">Guarantee Trust Life</a></li>         
-<li><a href="#aig">AIG</a></li>
+<li><a href="#aig">Corebridge (AIG)</a></li>
 <li><a href="#fearful-4">Fearful 4</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
@@ -68,7 +68,7 @@ sidebar: true
 
 <p><strong><strong>1ST-DAY COVERAGE:</strong></strong> Yes, with Final Expense Guy </p>
 
-<p><strong>Financial Rating: </strong>A+ BBB Rating</p>
+<p><strong>BBB Rating: </strong>A+</p>
 
 <p><strong>Age Availability: </strong>50-85</p>
 
@@ -132,7 +132,7 @@ sidebar: true
 
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE</strong></strong></strong></strong>: Yes, with Final Expense Guy</p>
 
-<p><strong>Financial Rating: </strong>A+ BBB Rating</p>
+<p><strong>BBB Rating: </strong>A+</p>
 
 <p><strong>Age Availability: &#160;</strong>50-85</p>
 
@@ -293,7 +293,8 @@ sidebar: true
 <ul>
 <li>Good prices compared to other companies.</li>
 <li>They are friendly for people with a history of seizures</li>
-<li>Riders?</li>
+<li>Terminal illness accelerated death benefit rider</li>
+<li>Nursing home provision rider</li>
 </ul>
 
 <p><strong>CONS:</strong></p>
@@ -302,8 +303,6 @@ sidebar: true
 <li>Mutual of Omaha does offer a 2-year wait-only policy…don’t get fooled into buying this type of policy.</li>
 <li>They do not offer same-day approvals, and you may have to wait up to a week to get your approval (which is unnecessary since other companies offer same-day coverage at lower prices in most cases)</li>
 <li>4-year lookback on some health issues results in more declined applications</li>
-<li>Terminal illness accelerated death benefit rider</li>
-<li>Nursing home provision rider</li>
 </ul>
 
 <p><strong>NOT APPROPRIATE FOR:</strong></p>
@@ -667,7 +666,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET GUARANTEE TRUST LIFE QUOTE</a></p>
 
-<h2 id="aig">#<strong>10 – AIG</strong></h2>
+<h2 id="aig">#<strong>10 – Corebridge Financial (formerly AIG)</strong></h2>
 
 <p><strong>1st-Day Coverage:</strong> 2-year waiting period only</p>
 
@@ -733,7 +732,11 @@ sidebar: true
 <li>Rates are determined by age, health, gender, state, and the coverage amount</li>
 </ul>
 
-<p class="quote-cta"><a class="button-link" href="#quote">GET AIG QUOTE</a></p>
+<p class="quote-cta"><a class="button-link" href="#quote">GET COREBRIDGE QUOTE</a></p>
+
+<p><strong>ALSO WORTH CONSIDERING (NOT PART OF THE RANKED LIST): GERBER LIFE GUARANTEED LIFE INSURANCE</strong></p>
+
+<p>Gerber Life Insurance Company is another guaranteed issue specialist worth comparing if you can’t qualify for 1st-day coverage. Its Guaranteed Life Insurance plan asks no health questions and requires no medical exam, and it is generally available for ages 50 to 80 with $5,000 to $25,000 of coverage (ages, amounts, and availability vary by state). If death from natural causes happens in the first two years, Gerber pays back the premiums plus 10%; an accidental death pays the full benefit. After two years, the full benefit is paid. Like any guaranteed issue plan, it costs more than a plan with health questions, so it makes sense only when 1st-day coverage isn’t available to you.</p>
 
 <h2 id="fearful-4"><strong>Our “Fearful 4” final expense policies</strong></h2>
 
@@ -939,10 +942,6 @@ sidebar: true
 <p><br><strong>What is the phone number for AARP?</strong></p>
 
 <p>The phone number for AARP is 1-888-687-2277.</p>
-
-<p><br><strong>What is the rating for AIG insurance?</strong></p>
-
-<p>AIG Insurance is rated A+ by the Better Business Bureau.</p>
 
 <p><br><strong>What is the phone number for Lincoln Heritage?</strong></p>
 

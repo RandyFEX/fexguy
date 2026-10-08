@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Dementia and Alzheimer’s Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Dementia or Alzheimer’s usually blocks first-day coverage with most companies<br>• You’ll likely be forced into expensive plans with 2-year waiting periods<br>• Many families overpay because they don’t know better options are gone<br>• Applying after diagnosis limits coverage amounts and raises costs fast<br>• Guaranteed issue plans pay less early and cost more long term</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Dementia or Alzheimer’s blocks first-day and graded coverage with all companies<br>• You’ll be forced into expensive plans with 2-year waiting periods<br>• Many families overpay because they don’t know better options are gone<br>• Applying after diagnosis limits coverage amounts and raises costs fast<br>• Guaranteed issue plans pay less early and cost more long term</p>
 
-<p>Getting burial insurance with dementia or Alzheimer’s is one of the toughest situations in life insurance. Most companies won’t offer first-day coverage once the condition is diagnosed, so you’re usually limited to guaranteed issue whole life with a 2-year waiting period and higher premiums. Burial insurance still provides a payout for funeral costs and final expenses, but the tradeoff is cost and delayed full benefits early on. The mistake people make is thinking they still have options to shop. At this stage, choices are limited, and picking the wrong plan just wastes money.</p>
+<p>Getting burial insurance with dementia or Alzheimer’s is one of the toughest situations in life insurance. Insurance companies won’t offer first-day coverage once the condition is diagnosed, so you’re limited to guaranteed issue whole life with a 2-year waiting period and higher premiums. Burial insurance still provides a payout for funeral costs and final expenses, but the tradeoff is cost and delayed full benefits early on. The mistake people make is thinking they still have options to shop. At this stage, choices are limited, and picking the wrong plan just wastes money.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -44,9 +44,7 @@ sidebar: true
 <ul>
 <li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
 <li><strong>Aflac Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>CICA Life Level</strong> – Have you ever been medically diagnosed, treated by a member of the medical profession, or prescribed medication for mental disorder, disorder of the brain or nervous system, systemic lupus (SLE), Alzheimer’s disease, dementia, brain disease, organic brain syndrome, Lou Gehrig’s disease (ALS), Huntington’s disease, muscular dystrophy, cystic fibrosis, pulmonary fibrosis, or multiple myeloma?</li>
 <li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Have you EVER been diagnosed with or treated by a medical professional for Alzheimer’s disease or dementia or are currently being treated for memory loss?</li>
 <li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
 <li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
 <li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
@@ -146,8 +144,6 @@ sidebar: true
 <p>Insurers use your prescription history to verify your medical stability and confirm the severity of any underlying health conditions. One insider tip I share is that being on Aricept provides a clear signal to underwriters regarding cognitive health, as this medication is primarily used to treat <a href="https://www.mayoclinic.org/diseases-conditions/dementia/symptoms-causes/syc-20352013" target="_blank" rel="noreferrer noopener nofollow">symptoms</a> of dementia or Alzheimer’s disease, even if you currently feel healthy. Applying early lets the person legally sign the forms before they lose cognitive capacity. If you wait until a nursing home is required, the legal hurdles become a nightmare for the family.</p>
 
 <p>Your prescription history is how the insurance carriers verify medical stability.</p>
-
-<p>Recent hospitalizations for crises trigger postponement rather than permanent decline.</p>
 
 <table>
 <thead>

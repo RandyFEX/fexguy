@@ -13,9 +13,9 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• “Rapture life insurance” is not a real or recognized insurance product<br>• Life insurance only pays when there’s a legal death, not disappearance<br>• No death certificate means no payout, no matter what happened<br>• These ideas are often jokes, scams, or misunderstood marketing<br>• You still need real coverage for real-world risks like illness or accidents<br>• Believing this concept can leave your family completely unprotected</p>
+<p>• “Rapture life insurance” is not a real or recognized insurance product<br>• Life insurance only pays when there’s a legal death, not disappearance<br>• A court can eventually declare a missing person legally dead under state law<br>• That declaration may let the beneficiary file a claim, but nothing is automatic<br>• These ideas are often jokes, scams, or misunderstood marketing<br>• You still need real coverage for real-world risks like illness or accidents<br>• Believing this concept can leave your family completely unprotected</p>
 
-<p>Rapture life insurance isn’t an actual type of policy you can rely on. Life insurance works based on a legal death being confirmed, which requires documentation like a death certificate. Events like disappearance or religious concepts such as the “rapture” don’t meet that requirement, so no benefit would be paid. If you want real protection, you need standard life insurance like term life or whole life that covers real, provable causes of death. That’s what actually protects your family financially.</p>
+<p>Rapture life insurance isn’t an actual type of policy you can rely on. Life insurance works based on a legal death being confirmed, which requires documentation like a death certificate. Events like disappearance or religious concepts such as the “rapture” don’t meet that requirement on their own, so no benefit would be paid unless a court eventually declares the person legally dead. If you want real protection, you need standard life insurance like term life or whole life that covers real, provable causes of death. That’s what actually protects your family financially.</p>
 
 <p>Complete my quote request form on this page to get real coverage that actually pays.</p>
 
@@ -67,11 +67,11 @@ sidebar: true
 
 <p>Most states follow guidelines developed by the National Association of Insurance Commissioners (NAIC).</p>
 
-<p>These standards ensure that insurance companies treat all claims fairly and consistently. Without legal proof of a death (meaning a body is available after a death), a claim cannot be processed, no matter how credible the story may seem.</p>
+<p>These standards ensure that insurance companies treat all claims fairly and consistently. Without legal proof of a death, a claim cannot be processed, no matter how credible the story may seem.</p>
 
 <p>If a person goes missing and no body is found, the law still provides a process.</p>
 
-<p>Under the Uniform Probate Code, a person can be declared “presumed dead” after seven years if there is no evidence of life. That declaration allows the estate to be settled and the life insurance benefit to be released.</p>
+<p>Under state law, a person can be declared “presumed dead” after a waiting period if there is no evidence of life. That declaration allows the estate to be settled and may allow the life insurance benefit to be released.</p>
 
 <p>Some states allow this process to move faster when the disappearance happens under clear fatal circumstances, such as plane crashes or natural disasters. But in all cases, the determination is legal, not religious.</p>
 
@@ -92,8 +92,8 @@ sidebar: true
 </tr>
 <tr>
 <td>Presumed Death (No Body Found)</td>
-<td>Must be declared by court under Uniform Probate Code</td>
-<td>Legal “Presumption of Death” order (usually after 7 years)</td>
+<td>Must be declared by a court under state law</td>
+<td>Legal “Presumption of Death” order (waiting period set by state law)</td>
 <td>Yes, once the legal declaration is issued</td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ sidebar: true
 
 <p>If someone were “raptured,” the same logic applies.</p>
 
-<p>Unless the event is legally classified as death (meaning there is a body left behind to verify death), no claim can be released. Without a death certificate, the insurer is bound by contract to wait until a legally verifiable proof of death is provided.</p>
+<p>Unless the event is legally classified as death, no claim can be released. Without a death certificate, the insurer is bound by contract to wait until a legally verifiable proof of death is provided.</p>
 
 <p>This might sound cold, but that structure protects everyone. It prevents fraudulent claims and ensures that real beneficiaries receive the money that is legally theirs.</p>
 
@@ -215,7 +215,7 @@ sidebar: true
 <td>No</td>
 </tr>
 <tr>
-<td>Presumed Death After 7 Years</td>
+<td>Presumed Death (Court Declaration Under State Law)</td>
 <td>Probate Court Declaration</td>
 <td>Yes</td>
 </tr>
@@ -258,7 +258,7 @@ sidebar: true
 
 <p>For example, some organizations market “Christian health shares” that resemble insurance but are not regulated by any Department of Insurance. These programs often make no contractual promise to pay.</p>
 
-<p>Life insurance, by contrast, is a legally binding contract. It must meet state and federal requirements, carry financial reserves, and be backed by licensed underwriters. The U.S. Constitution’s Establishment Clause ensures that no financial contract, including insurance, can depend on belief systems.</p>
+<p>Life insurance, by contrast, is a legally binding contract. It must meet state and federal requirements, carry financial reserves, and be backed by licensed underwriters.</p>
 
 <p>Life Insurance depends on law and evidence.</p>
 
@@ -345,7 +345,7 @@ sidebar: true
 
 <p>NAIC complaint ratios measure the number of verified consumer complaints relative to a company’s size. Together, they tell you whether an insurer is trustworthy and consistent in paying claims.</p>
 
-<p><strong>Here’s a comparison of five major life insurance carriers that regularly issue final expense or whole life coverage:</strong></p>
+<p><strong>Here’s a comparison of four major life insurance carriers that regularly issue final expense or whole life coverage:</strong></p>
 
 <table>
 <tr>
@@ -398,7 +398,7 @@ sidebar: true
 <p><strong>There are two main categories of final expense coverage:</strong></p>
 
 <ol>
-<li><strong>First-Day Coverage</strong> (Level Benefit)<br>Pays the full death benefit from day one. Available to about 97% of applicants who meet health qualifications.</li>
+<li><strong>First-Day Coverage</strong> (Level Benefit)<br>Pays the full death benefit from day one. Available to applicants who meet health qualifications.</li>
 <li><strong>Guaranteed Issue</strong> (Two-Year Waiting Period)<br>Available to those with serious health issues, but only refunds premiums plus interest if death occurs within the first two years. After two years, any type of death is 100% covered.</li>
 </ol>
 
@@ -506,9 +506,9 @@ sidebar: true
 <td>No</td>
 </tr>
 <tr>
-<td>Most Applicants Approved</td>
-<td>97%</td>
-<td>100% (but 2-year waiting period)</td>
+<td>Who Is Approved</td>
+<td>Applicants who meet the health qualifications</td>
+<td>Everyone within the age limits (but 2-year waiting period)</td>
 </tr>
 </table>
 
@@ -574,4 +574,4 @@ sidebar: true
 
 <p><strong>Why would life insurance payout be denied in a rapture?</strong></p>
 
-<p>A life insurance payout would be denied in a Rapture because no legal proof of death exists. Every payout requires official documentation such as a death certificate or court-issued declaration of death. If someone disappears, the law treats that person as missing, not deceased.</p>
+<p>A life insurance payout would be denied in a Rapture unless legal proof of death exists. Every payout requires official documentation such as a death certificate or court-issued declaration of death. If someone disappears, the law treats that person as missing, not deceased, until a court declares the person legally dead.</p>

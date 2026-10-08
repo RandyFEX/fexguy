@@ -95,7 +95,7 @@ sidebar: true
 
 <p><br><strong>HOME HEALTH CARE</strong></p>
 
-<p>This scenario is identical to needing help with daily living activities.</p>
+<p>This scenario is identical to needing help with daily living activities when your home health care is there to help you with those activities.</p>
 
 <p>There are only a few companies that accept home health care applicants. If you need permanent home health care, your best option to get coverage is to get a guaranteed issue burial insurance.</p>
 
@@ -393,17 +393,13 @@ sidebar: true
 
 <p>When applying for life insurance, you must disclose any pre-existing medical conditions. This includes muscular dystrophy. Failure to do so could result in your policy being canceled or denied.</p>
 
-<p><br><strong>Can muscular dystrophy be considered a critical illness in life insurance?</strong></p>
-
-<p>Yes, muscular dystrophy can be considered a critical illness in life insurance. If you are diagnosed with the condition, your policy will pay out a lump sum benefit.</p>
-
 <p><br><strong>What are the premiums for burial insurance with muscular dystrophy?</strong></p>
 
 <p>The premiums for burial insurance with muscular dystrophy will vary depending on the insurer. Some factors that can affect your premium include your age, health, and coverage amount.</p>
 
 <p><br><strong>Is there a waiting period for burial insurance with muscular dystrophy?</strong></p>
 
-<p>There is usually a two-year waiting period for burial insurance with muscular dystrophy. People with MS who need help with activities of daily living, use a wheelchair, or require home health care will only qualify for a guaranteed issue burial insurance with a two-year waiting period.</p>
+<p>There is usually a two-year waiting period for burial insurance with muscular dystrophy. People with MS who need help with activities of daily living, are confined to a wheelchair, or require home health care for that help will only qualify for a guaranteed issue burial insurance with a two-year waiting period.</p>
 
 <p><br><strong>Can you get first-day coverage insurance if you have muscular dystrophy?</strong></p>
 

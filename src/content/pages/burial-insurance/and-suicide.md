@@ -59,7 +59,9 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-have-a-history-of-suicide"> <br><strong><strong>What is my best insurance option if I have a history of suicide? </strong></strong></h2>
 
-<p>Most life insurance companies don’t ask about suicide or suicide attempts on the underwriting questionnaire. So, if you have a history of suicide, you can still qualify for a level death benefit plan with first-day coverage.</p>
+<p>Most life insurance companies don’t ask about suicide or suicide attempts on the underwriting questionnaire. So, if you have a history of suicide attempts, you may still qualify for a level death benefit plan with first-day coverage, depending on how long ago the attempt happened and your answers to the company’s health questions.</p>
+
+<p>These health questions affect whether you’re approved. They are separate from the suicide exclusion, which limits the benefit if death by suicide happens during the policy’s exclusion period (commonly two years, one year in some states).</p>
 
 <p>With a level death benefit plan, you will be covered from the first day, and your beneficiary will receive your full death benefit when you pass away.</p>
 
@@ -171,7 +173,7 @@ sidebar: true
 
 <p>Insurance companies can investigate claims during the waiting period and deny coverage for intentional death. If the company can demonstrate intentional death or the death was due to suicide, the policy will be denied, and the beneficiary’s claim will be denied.</p>
 
-<p>Life insurance companies will pay the death benefit as long as the policy was purchased at least two before the suicide; after the waiting period, the suicide clause expires.  </p>
+<p>Life insurance companies will pay the death benefit as long as the policy was purchased at least two years before the suicide; after the waiting period, the suicide clause expires.  </p>
 
 <p>Whenever an insured replaces an existing life insurance policy with a new one, the suicide clause reverts back to zero and starts over again. </p>
 
@@ -224,41 +226,28 @@ sidebar: true
 
 <p>Life insurance companies cover suicide after the first two years or the waiting period. The company will pay for suicide unless another exclusion is specifically outlined in the policy that forbids it. </p>
 
-<p>Insurance companies don’t cover suicide within the first two years of the policy, but they may refund all the premiums paid. </p>
+<p>Insurance companies don’t cover suicide within the first two years of the policy, but they may refund all the premiums paid, as its terms provide. </p>
+
+<p>Suicide is not an accidental death, so an accidental death benefit or rider will not pay for it.</p>
 
 <p><strong>There is insurance coverage if the insured:</strong></p>
 
 <ul>
 <li>Was insured for an individual policy that went into effect after two years or longer (one year in some states)</li>
-<li>Had free life insurance through work that the employer pays</li>
-<li>Purchased coverage through work, which went into effect more than two years ago.</li>
+<li>Had group life insurance through work, depending on that plan’s terms (check the certificate for any suicide exclusion)</li>
 </ul>
 
 <h2 id="does-insurance-cover-doctor-assisted-suicide"><br><strong>Does burial insurance cover doctor-assisted suicide?</strong></h2>
 
 <p>Doctor-assisted suicide is also called death with dignity or right to die. It involves people with terminal illnesses who choose to die rather than suffer through treatment or diminished quality of life. </p>
 
-<p>Doctor-assisted suicide would also fall under the same suicide clause – death would not be covered during the first two years of the policy. </p>
+<p>State medical aid-in-dying laws generally treat a death under the law differently from suicide. Oregon’s Death with Dignity Act, for example, says that actions taken under the Act do not constitute suicide, and that taking the medication has no effect on a life insurance policy.</p>
 
-<p>After the suicide and contestability period has expired, the company would pay for doctor-assisted suicide. However, you should consult your policy documents to make sure there are no exclusions that would negate your policy.</p>
+<p>The rules differ from state to state, so you should consult your state’s law and your policy documents to make sure there are no exclusions that would negate your policy.</p>
 
 <p>For example, an illegal activity could prevent your family from receiving the death benefit payout if you died from doctor-assisted suicide if it does not comply with your state regulations. </p>
 
-<p><strong>There are only 10 states, plus Washington, D.C, where doctor-assisted suicide is legal:</strong></p>
-
-<ol>
-<li>California</li>
-<li>Colorado</li>
-<li>District of Columbia</li>
-<li>Hawaii</li>
-<li>Maine</li>
-<li>Montana</li>
-<li>New Jersey</li>
-<li>New Mexico</li>
-<li>Oregon</li>
-<li>Vermont</li>
-<li>Washington</li>
-</ol>
+<p><strong>Medical aid in dying is legal in a limited number of states and Washington, D.C., and the list has changed over the years. Check your state’s current law.</strong></p>
 
 <h2 id="underwritng-for-people-with-a-history-of-suicide"><br><strong><strong>Burial insurance underwriting if you have a history of suicide</strong></strong></h2>
 
@@ -447,10 +436,6 @@ sidebar: true
 
 <p>A history of self-harm may impact your eligibility for life insurance coverage, depending on the severity and frequency of the incidents. The underwriting process will take your individual circumstances into account in order to determine whether or not you are eligible for coverage, as well as the terms of the policy.</p>
 
-<p><br><strong>Does burial insurance cover doctor-assisted suicide?</strong></p>
-
-<p>In most cases, yes. Burial insurance typically covers doctor-assisted suicide, as long as the policy had been active for two years or longer.</p>
-
 <p><br><strong>What are the benefits of burial insurance for people who had suicide attempts?</strong></p>
 
 <p>There are many benefits of burial insurance for people who have attempted suicide. Burial insurance can provide financial security for your loved ones in the event of your death, and it can also help to cover the costs of your funeral and burial. Burial insurance can also provide peace of mind knowing that your loved ones will be taken care of financially if you were to unexpectedly pass away.</p>
@@ -483,29 +468,13 @@ sidebar: true
 
 <p>In some cases, yes. Funeral insurance typically covers death by suicide. However, certain conditions must be met in order for this to occur. For example, many policies have a two-year exclusionary period following the purchase of the policy before they will cover death by suicide.</p>
 
-<p><br><strong>Will life insurance pay out in case of doctor-assisted suicide?</strong></p>
-
-<p>In most cases, yes. Life insurance typically covers doctor-assisted suicide, as long as the policy had been active for two years or longer.</p>
-
 <p><br><strong>What are the states that allowed doctor-assisted suicide?</strong></p>
 
-<ul>
-<li>California</li>
-<li>Colorado</li>
-<li>District of Columbia</li>
-<li>Hawaii</li>
-<li>Maine</li>
-<li>Montana</li>
-<li>New Jersey</li>
-<li>New Mexico</li>
-<li>Oregon</li>
-<li>Vermont</li>
-<li>Washington</li>
-</ul>
+<p>Medical aid in dying is legal in a limited number of states and Washington, D.C., and the list has changed over the years. Check your state’s current law.</p>
 
 <p><br><strong>What types of death are not covered by life insurance?</strong></p>
 
-<p>A few types of death are typically not covered by life insurance, such as death by suicide, natural causes, or accidents that occur while the policyholder is under the influence of drugs or alcohol. However, each life insurance policy is different, so it’s important to read the fine print to see what is and is not covered.</p>
+<p>A few types of death are typically not covered by life insurance, such as death by suicide during the policy’s exclusion period, or accidents that occur while the policyholder is under the influence of drugs or alcohol. However, each life insurance policy is different, so it’s important to read the fine print to see what is and is not covered.</p>
 
 <p><br><strong>What happens if I die by suicide within the first two years of my life insurance policy?</strong></p>
 
@@ -519,13 +488,9 @@ sidebar: true
 
 <p>The suicide provision is a life insurance policy section that outlines the conditions under which death by suicide will be covered. It typically includes an exclusionary period of two years, after which death by suicide will be covered.</p>
 
-<p><br><strong>Does life insurance cover death with dignity?</strong></p>
-
-<p>Some life insurance policies may cover death with dignity, depending on your policy’s specific terms and conditions. Typically, this will only apply if the policy has been active for two years or longer.</p>
-
 <p><br><strong>How do life insurance payouts work for suicide?</strong></p>
 
-<p>If you die by suicide while your life insurance policy is active, your beneficiaries will generally be able to receive the death benefit. However, there may be a waiting period of two years before the death benefit is paid out.</p>
+<p>If you die by suicide while your life insurance policy is active, your beneficiaries will generally be able to receive the death benefit. However, if the death happens during the policy’s suicide exclusion period (usually two years), the death benefit is not paid out.</p>
 
 <p><br><strong>Does cremation insurance pay for suicidal death?</strong></p>
 
@@ -534,10 +499,6 @@ sidebar: true
 <p><br><strong>Will I be denied life insurance if I have depression and a suicide attempt?</strong></p>
 
 <p>You may be denied life insurance if you have depression and a history of suicide attempts. However, each case is different, and it will depend on the insurer’s individual underwriting criteria. It is recommended that you work with a qualified life insurance agent to help you find a policy that meets your needs.</p>
-
-<p><br><strong>How does doctor-assisted suicide affect life insurance payouts?</strong></p>
-
-<p>In most cases, doctor-assisted suicide is covered by life insurance. However, there may be a waiting period of two years before the death benefit is paid out.</p>
 
 <p><br><strong>What is the difference between natural causes and suicide?</strong></p>
 
@@ -557,7 +518,7 @@ sidebar: true
 
 <p><br><strong>Does life insurance cover physician-assisted suicide?</strong></p>
 
-<p>In most cases, physician-assisted suicide is covered by life insurance. However, there may be an exclusionary period of two years before the death benefit is paid out.</p>
+<p>Medical aid-in-dying laws generally say that a death under the law is not suicide. The rules differ by state (see the doctor-assisted suicide section above), so check your state’s law and your policy’s terms.</p>
 
 <p><br><strong>What is the difference between active and passive euthanasia?</strong></p>
 

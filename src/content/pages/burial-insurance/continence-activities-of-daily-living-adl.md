@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help with continence signals higher risk to insurance companies<br>• Most policies decline or limit coverage if you need help with ADLs<br>• Guaranteed issue is often the only option and has a 2-year wait<br>• You’ll pay more for less coverage compared to healthier applicants<br>• Waiting to apply makes approval harder and more expensive<br>• Not understanding ADLs can lead to picking the wrong policy</p>
 
-<p>Burial insurance with help for continence or other Activities of Daily Living (ADLs) is one of the toughest situations to get approved. ADLs include basic tasks like bathing, dressing, eating, and controlling bladder or bowel function, which is what continence refers to. Insurance companies use these as a major red flag because needing help with even 1 or 2 ADLs signals a serious health risk. In most cases, that pushes you into guaranteed-issue burial insurance, a type of whole life insurance with higher costs and a 2-year waiting period before full benefits begin.</p>
+<p>Burial insurance with help for continence or other Activities of Daily Living (ADLs) is one of the toughest situations to get approved. ADLs include basic tasks like bathing, dressing, eating, and controlling bladder or bowel function, which is what continence refers to. Insurance companies use these as a major red flag because needing help with even 1 or 2 ADLs signals a serious health risk. That pushes you into guaranteed-issue burial insurance, a type of whole life insurance with higher costs and a 2-year waiting period before full benefits begin.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -63,6 +63,8 @@ sidebar: true
 <p>Life insurance companies define continence as maintaining bladder and bowel control and performing personal hygiene tasks. It includes managing and caring for a catheter, ostomy, or urinary catheter collection bag and applying diapers or disposable barrier pads.</p>
 
 <p>Suppose you cannot retain control of your bladder or bowel function and need assistance from another person to do the associated personal hygiene tasks. In that case, you are dependent on help for continence.</p>
+
+<p>If you have occasional leakage, wear absorbent underwear, or use a catheter but take care of it yourself, you are not dependent on help for continence. Your options then depend on the medical condition behind it, your other health issues and each company’s health questions, and first-day coverage may still be possible.</p>
 
 <p>If you need help with continence, your best insurance option is guaranteed issue burial insurance.</p>
 
@@ -135,7 +137,7 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
+<td>No health questions policies</td><td>With 2-year waiting period (unless you need help with ADLs: then it’s your best option)</td>
 </tr>
 <tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
@@ -203,6 +205,8 @@ sidebar: true
 </tr>
 </tbody>
 </table>
+
+<p>These benefits describe our first-day coverage plans. If you need another person’s help with an ADL, first-day coverage isn’t available, and the guaranteed issue plan described above is your best option.</p>
 
 <h2 id="do-i-need-medical-exam-to-qualify"><br><strong>If I need help with continence, do I need a medical exam to qualify for burial insurance?</strong></h2>
 

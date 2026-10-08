@@ -107,7 +107,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice</td>
+<td>Certain companies in some states – Level</td>
 <td>1st-Day Coverage</td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ sidebar: true
 
 <p><strong>DIABETIC AMPUTATION</strong><br>Got a diabetic amputation? Insurance companies will want to know if you can handle your daily activities (ADLs) on your own. If you can, you’re good to go with first-day coverage burial insurance with some companies. If you need help, guaranteed acceptance life insurance is your best friend. Most burial insurance companies won’t offer first-day coverage if you need assistance with ADLs.</p>
 
-<p><strong>DIABETIC COMA</strong><br>Had a diabetic coma in the last two years? Go for 1st-day coverage. If you’ve been hospitalized repeatedly in the last 2 years or need help with ADLs, you’ll likely need to go for guaranteed acceptance life insurance.</p>
+<p><strong>DIABETIC COMA</strong><br>Had a diabetic coma in the last two years? You can still go for 1st-day coverage with a limited number of companies. If you’ve been hospitalized repeatedly in the last 2 years or need help with ADLs, you’ll likely need to go for guaranteed acceptance life insurance.</p>
 
 <p><strong>INSULIN SHOCK</strong><br>If your insulin shock happened over two years ago, you’re in the clear for first-day coverage insurance. No need to sweat it!</p>
 
@@ -176,7 +176,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -209,7 +209,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>Certain companies in some states – Level – 1st-Day Coverage</td>
 <td>$53.09</td>
 </tr>
 <tr>

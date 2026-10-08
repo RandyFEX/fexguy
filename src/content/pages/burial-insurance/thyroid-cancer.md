@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Thyroid cancer doesn’t always block approval, but timing matters a lot<br>• Active or recent treatment usually blocks first-day coverage approvals<br>• Applying too early often leads to overpriced guaranteed issue plans<br>• Waiting 2+ years after treatment can unlock better pricing<br>• Different thyroid cancer types can change your options and rates</p>
 
-<p>Getting burial insurance with thyroid cancer depends on the type, stage, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially during treatment. Most companies won’t approve immediate coverage until treatment is complete and some recovery time has passed. If you’ve been in remission for at least 2 to 3 years, your options improve and you may qualify for better burial insurance with immediate coverage and lower rates. The mistake is applying too early or assuming all thyroid cancers are treated the same. They’re not, and timing changes everything.</p>
+<p>Getting burial insurance with thyroid cancer depends on the type, stage, and how long you’ve been cancer-free. Burial insurance and whole life are usually the main options right after diagnosis, especially during treatment. Most companies won’t approve immediate coverage until treatment is complete and some recovery time has passed. If you’ve been cancer-free for at least 2 to 3 years, your options improve and you may qualify for better burial insurance with immediate coverage and lower rates. The mistake is applying too early or assuming all thyroid cancers are treated the same. They’re not, and timing changes everything.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,7 +99,7 @@ sidebar: true
 <p>Insurance carriers offer different plan categories based on an applicant’s thyroid cancer history and their long-term or short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life, Aflac, Family Benefit Life, or Trinity Life if you have been cured for at least 2 years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Aflac, Family Benefit Life, or Trinity Life if you have been cured for at least 2 years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. I recommend Guarantee Trust Life if you have cured cancer but also struggle with heart issues or COPD.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life if you currently have other significant life-threatening issues.</li>
 </ul>
@@ -167,7 +166,7 @@ sidebar: true
 <td>Varies</td>
 </tr>
 <tr>
-<td>Active Treatment</td>
+<td>Active Cancer, Remission, or Treatment</td>
 <td>Guaranteed Issue</td>
 <td>2-year period</td>
 </tr>
@@ -259,7 +258,7 @@ sidebar: true
 
 <h3>Can thyroid cancer survivors qualify for first-day coverage?</h3>
 
-<p>Thyroid cancer survivors can qualify for immediate first-day coverage if they have been in remission for at least two years and have a history of successful surgical removal. Unlike more aggressive internal cancers, many final expense carriers view early-stage thyroid cancer as highly treatable and may offer their best “Level” benefits relatively quickly. If your cancer was localized and did not require chemotherapy or external radiation, you are a strong candidate for a policy that pays out 100% of the benefit from the first day.</p>
+<p>Thyroid cancer survivors can qualify for immediate first-day coverage if they have been cancer-free for at least two years and have a history of successful surgical removal. Unlike more aggressive internal cancers, many final expense carriers view early-stage thyroid cancer as highly treatable and may offer their best “Level” benefits relatively quickly. If your cancer was localized and did not require chemotherapy or external radiation, you are a strong candidate for a policy that pays out 100% of the benefit from the first day.</p>
 
 <h3>Does a total thyroidectomy impact burial insurance eligibility?</h3>
 
@@ -275,7 +274,7 @@ sidebar: true
 
 <h3>How long must I be cancer-free to get the lowest burial insurance rates?</h3>
 
-<p>The lowest “Preferred” rates are typically available to thyroid cancer survivors who have been in remission for five to ten years. For very early-stage papillary cases that were treated only with surgery, some specialized carriers may offer competitive rates in as little as three years. The “look-back” period varies significantly by company, making it important to shop around to find the carrier that views your specific remission length most favorably.</p>
+<p>The lowest “Preferred” rates are typically available to thyroid cancer survivors who have been cancer-free for five to ten years. For very early-stage papillary cases that were treated only with surgery, some specialized carriers may offer competitive rates in as little as three years. The “look-back” period varies significantly by company, making it important to shop around to find the carrier that views your specific cancer-free period most favorably.</p>
 
 <h3>Can I get burial insurance if I am taking radioactive iodine?</h3>
 

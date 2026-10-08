@@ -101,7 +101,7 @@ sidebar: true
 
 <p><strong>Kidney Failure with Dialysis</strong></p>
 
-<p>If you follow your doctor’s treatment plan, you can often still get “day one” coverage. But if you refuse dialysis, your only option is a guaranteed policy with a 2-year wait.</p>
+<p>If you follow your doctor’s treatment plan, you may still be able to get “day one” coverage in certain states. But if you refuse dialysis, your only option is a guaranteed policy with a 2-year wait.</p>
 
 <p><strong>Kidney Transplant</strong></p>
 
@@ -212,14 +212,14 @@ sidebar: true
 <p><strong>For example, here is pricing for a 60-year-old female with kidney failure undergoing dialysis.</strong></p>
 
 <ol>
-<li><strong>Superior Choice (Recommended) – 60-year-old female</strong>
+<li><strong>Level Coverage - Certain Companies (Recommended) – 60-year-old female</strong>
 <ul>
 <li><strong>FIRST-DAY COVERAGE</strong></li>
 <li><strong>Coverage:</strong> $10,000</li>
 <li><strong>Premium:</strong> $47.25</li>
 </ul>
 </li>
-<li><strong>Gerber Life (Avoid) – 60-year-old female</strong>
+<li><strong>Gerber Life – 60-year-old female</strong>
 <ul>
 <li>2-year Waiting period</li>
 <li><strong>Coverage:</strong> $10,000</li>

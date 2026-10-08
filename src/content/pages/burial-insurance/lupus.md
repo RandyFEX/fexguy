@@ -11,11 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance with Lupus</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• TruStage premiums increase every 5 years as you age<br>• Your rate isn’t locked like traditional level term policies<br>• What starts cheap can become expensive later on<br>• Many people don’t realize the increases are built into the policy<br>• Rising costs can make the policy hard to keep long-term</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Lupus doesn’t stop you from getting burial insurance, and no medical exam is required<br>• Diagnosis and treatment more than 2 years ago may qualify for first-day coverage with a few companies<br>• Diagnosis or treatment within 2 years usually means a plan where the death benefit is phased in<br>• Insurers check your health answers and your prescription history<br>• Companies that are lenient with lupus can give you the best rates</p>
 
-<p>TruStage price increases are built directly into how their term life insurance works. Instead of locking in your rate for 10, 20, or 30 years, your premium increases each time you reach a new age band, typically every 5 years. That means your cost keeps going up as you get older, even if your health stays the same. Over time, this can make the policy much more expensive than level term life insurance, where your payment stays the same the entire term. If you don’t understand this upfront, you can end up with coverage you can’t afford later.</p>
-
-<p>Complete my quote request form on this page to quickly avoid rising costs later.</p>
+<p>You can still get burial insurance with lupus, and no medical exam is required. If your lupus diagnosis and treatment were more than two years ago, a few companies may offer a level death benefit plan with first-day coverage. If your diagnosis or treatment was within the last two years, a graded or modified plan is usually the best option, which means the full death benefit is not paid for a natural death right away. Insurers look at your type of lupus, your medications, and any complications or hospitalizations, so the company you choose matters.</p>
 
 <table>
 <thead>

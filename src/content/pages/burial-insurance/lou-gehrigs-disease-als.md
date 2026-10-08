@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Lou Gehrig’s Disease (ALS) Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• ALS usually makes traditional life insurance completely unavailable<br>• Most people are forced into guaranteed issue with 2-year waiting periods<br>• Coverage amounts are small and often limited to final expense needs<br>• Waiting too long after diagnosis can reduce options and increase costs<br>• Many agents won’t explain that better plans aren’t even possible</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• ALS usually makes traditional life insurance completely unavailable<br>• Most people are forced into guaranteed issue with 2-year waiting periods<br>• Coverage amounts are small and often limited to final expense needs<br>• Waiting too long after diagnosis can reduce options and increase costs<br>• Many agents won’t explain that better plans usually aren’t possible</p>
 
 <p>Getting burial insurance with ALS is very different from most other conditions. Burial insurance is often the only realistic option because traditional term or whole life won’t approve after diagnosis. Guaranteed issue burial insurance is designed for situations like this, offering smaller coverage amounts with no health questions, but it comes with higher costs and a 2-year waiting period before full payout. This matters because your choices are limited, and picking the wrong plan means paying more for less protection when your family needs it most.</p>
 
@@ -20,7 +20,7 @@ sidebar: true
 <h2>Lou Gehrig’s disease (ALS) burial insurance key insights</h2>
 
 <ul>
-<li><strong>First Day Coverage is Not Possible:</strong> Because ALS is a progressive disease, no insurance company offers immediate full coverage for natural death; anyone promising “day one” protection for ALS is not telling you the truth.</li>
+<li><strong>First Day Coverage is Rarely Possible:</strong> Because ALS is a progressive disease, most insurance companies do not offer immediate full coverage for natural death; anyone promising easy “day one” protection for ALS is not telling you the truth.</li>
 <li><strong>Partial Benefits Help Early on:</strong> A “graded” plan with a company like Guarantee Trust Life is often your best move because it pays out a portion of the benefit much sooner than a standard two-year waiting period.</li>
 <li><strong>Early Action Locks in Lower Costs:</strong> Since ALS only moves in one direction, applying the moment you are diagnosed is the only way to secure the best possible rates before your options disappear.</li>
 <li><strong>Wheelchairs are Still Approved:</strong> Even if the disease has progressed and you now use a wheelchair or need help with daily tasks, I can still get you a guaranteed policy through companies like Gerber Life.</li>
@@ -44,7 +44,6 @@ sidebar: true
 <ul>
 <li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
 <li><strong>Aflac Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>CICA Life Level</strong> – Have you ever been medically diagnosed, treated by a member of the medical profession, or prescribed medication for mental disorder, disorder of the brain or nervous system, systemic lupus (SLE), Alzheimer’s disease, dementia, brain disease, organic brain syndrome, Lou Gehrig’s disease (ALS), Huntington’s disease, muscular dystrophy, cystic fibrosis, pulmonary fibrosis, or multiple myeloma?</li>
 <li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 <li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
 <li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
@@ -79,7 +78,7 @@ sidebar: true
 
 <p>If your condition has worsened significantly, Gerber Life will still accept your application regardless of your other <a href="/burial-insurance/neurological-disorders/" target="_blank" rel="noreferrer noopener">health problems</a>. You need to get this insurance now because additional health issues often arise as the disease progresses.</p>
 
-<p>Controlled ALS (Lou Gehrig’s Disease) qualifies people for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a> even with secondary health issues.</p>
+<p>A very limited first-day exception for ALS (Lou Gehrig’s Disease) may exist through certain companies in some states for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a>, depending on your other health issues.</p>
 
 <h2>Other common health issues with Lou Gehrig’s disease (ALS)</h2>
 
@@ -174,7 +173,7 @@ sidebar: true
 
 <h2>Real life Lou Gehrig’s disease (ALS) success stories</h2>
 
-<p>Real-world examples illustrate how people with ALS (Lou Gehrig’s Disease) secure day-one protection with anywhere from $5,000 to $25,000 for their final expenses.</p>
+<p>Real-world examples illustrate how people with ALS (Lou Gehrig’s Disease) secure protection with anywhere from $5,000 to $25,000 for their final expenses.</p>
 
 <h3>Thomas story:</h3>
 
@@ -253,7 +252,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with ALS?</h3>
 
-<p>The insurance company applies a two-year waiting period to all policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But accidental death still pays the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
+<p>Most insurance companies apply a two-year waiting period to policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But accidental death still pays the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
 
 <h3>How much does burial insurance cost for someone with ALS?</h3>
 
@@ -261,7 +260,7 @@ sidebar: true
 
 <h3>Does ALS qualify for immediate “Day One” burial insurance coverage?</h3>
 
-<p>Insurance companies do not offer immediate first-day coverage for natural death to any applicant currently living with ALS. If an insurance salesman tells you that you can get first-day coverage for ALS, they are lying to you. Honestly, it just does not make sense for a company to take that gamble on a progressive disease. Many of those flashy TV ads only cover accidental death immediately, which is a bad deal if you expect a full payout. Telling the truth about these waiting periods prevents your family from facing a nasty surprise when they go to file a claim.</p>
+<p>Most insurance companies do not offer immediate first-day coverage for natural death to applicants currently living with ALS. A very limited exception may exist through certain companies in some states, depending on your other health conditions. If an insurance salesman tells you that first-day coverage for ALS is easy to get, they are lying to you. Honestly, it just does not make sense for most companies to take that gamble on a progressive disease. Many of those flashy TV ads only cover accidental death immediately, which is a bad deal if you expect a full payout. Telling the truth about these waiting periods prevents your family from facing a nasty surprise when they go to file a claim.</p>
 
 <h3>Will burial insurance pay out if I pass away from ALS complications?</h3>
 

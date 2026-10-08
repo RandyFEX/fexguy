@@ -13,9 +13,9 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Brain cancer makes life insurance approval harder, but not impossible<br>• Active or recent cancer usually leads to waiting periods or limited options<br>• Remission for 2+ years can qualify you for first-day coverage<br>• Guaranteed issue plans cost more and delay full payout for 2 years<br>• Applying too early can get you declined and hurt future approvals</p>
+<p>• Brain cancer makes life insurance approval harder, but not impossible<br>• Active or recent cancer usually leads to waiting periods or limited options<br>• Being declared cured and cancer-free for 2+ years may qualify you for first-day coverage<br>• Guaranteed issue plans cost more and delay full payout for 2 years<br>• Applying too early can get you declined and hurt future approvals</p>
 
-<p>Getting burial insurance with brain cancer depends on timing, treatment, and stability. Burial insurance, which is a type of whole life insurance, is often still available, even with serious conditions. If the cancer is active or recently treated, most people are pushed into guaranteed issue policies with higher costs and waiting periods. If you’ve been in remission for a few years, some companies may offer immediate coverage at better rates. Insurance companies focus heavily on how long you’ve been cancer-free and overall health, not just the diagnosis itself.</p>
+<p>Getting burial insurance with brain cancer depends on timing, treatment, and stability. Burial insurance, which is a type of whole life insurance, is often still available, even with serious conditions. If the cancer is active or recently treated, most people are pushed into guaranteed issue policies with higher costs and waiting periods. If you’ve been cured and cancer-free for a few years, some companies may offer immediate coverage at better rates. Insurance companies focus heavily on how long you’ve been cancer-free and overall health, not just the diagnosis itself.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -23,7 +23,7 @@ sidebar: true
 
 <ul>
 <li><strong>Tumor grade determines eligibility:</strong>&#160;low-grade, benign tumors grow slowly and offer a higher chance of cure, making them easier to obtain first-day coverage for.</li>
-<li><strong>1st-day coverage for the cured:</strong> If a doctor declares you cured and disease-free, CICA Life may offer first-day coverage immediately, even if you have not finished a full two-year waiting period.</li>
+<li><strong>1st-day coverage for the cured:</strong> If a doctor declares you cured and disease-free, certain insurance companies in some states may offer first-day coverage immediately, even if you have not finished a full two-year waiting period.</li>
 <li><strong>Active cancer limits your options:</strong> If you currently have brain cancer or high-grade tumors, a guaranteed-issue policy with a two-year waiting period is usually the only choice available.</li>
 <li><strong>Daily living assistance triggers specific rules:</strong> Needing help with activities like bathing, dressing, or eating automatically moves you into a guaranteed-issue plan regardless of your cancer status.</li>
 <li><strong>The last treatment date is the primary approval metric:</strong> Insurance underwriters prioritize the date your last cancer treatment or medication ended, rather than the date of your initial diagnosis.</li>
@@ -46,7 +46,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Squamous Cell</a> or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -102,7 +101,7 @@ sidebar: true
 <p>Insurance carriers offer different plan categories based on an applicant’s tumor type and their short-term medical stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life if you are recently cured, or Aflac, Trinity Life, and Family Benefit Life if you have been cancer-free for over 2-years.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it if you are recently cured, and I recommend Aflac, Trinity Life, and Family Benefit Life if you have been cancer-free for over 2-years.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. This is often an option if you are in remission but still taking certain maintenance medications.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I recommend Gerber Life for anyone currently in treatment or needing help with daily activities.</li>
 </ul>
@@ -113,7 +112,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -155,17 +154,17 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>2+ Years Cancer Free</td>
+<td>Cured, 2+ Years Cancer Free</td>
 <td>Level</td>
 <td>None</td>
 </tr>
 <tr>
 <td>Cured (Less than 2 years)</td>
-<td>Level (CICA)</td>
+<td>Level (certain companies)</td>
 <td>None</td>
 </tr>
 <tr>
-<td>Active Treatment</td>
+<td>Active Cancer, Treatment, or Remission</td>
 <td>Guaranteed Issue</td>
 <td>2 Years</td>
 </tr>
@@ -182,7 +181,7 @@ sidebar: true
 
 <h3>Sharon’s story</h3>
 
-<p>Sharon was declared cured of a low-grade brain tumor only six months ago and wanted to protect her family right away. Most companies told her she had to wait two years, but she didn’t want to leave her children with the bill. We selected CICA Life because it offers first-day coverage for cured individuals, even without a long waiting period. She qualified for $10,000 in first-day coverage at an affordable price. Now Sharon can rest easy knowing her final expenses are handled.</p>
+<p>Sharon was declared cured of a low-grade brain tumor only six months ago and wanted to protect her family right away. Most companies told her she had to wait two years, but she didn’t want to leave her children with the bill. We selected a company that offers first-day coverage for cured individuals, even without a long waiting period. She qualified for $10,000 in first-day coverage at an affordable price. Now Sharon can rest easy knowing her final expenses are handled.</p>
 
 <h2>Brain cancer financial ratings &amp; stability </h2>
 
@@ -261,7 +260,7 @@ sidebar: true
 
 <h3>Can I qualify for first-day coverage burial insurance if I was recently cured?</h3>
 
-<p>CICA Life provides first-day coverage to individuals who have been declared “fully cured” of brain cancer, even if the two-year treatment window has not yet passed. While most traditional insurers require a strict 24-month waiting period after the last treatment, specialized carriers assess the doctor’s “cured” status to offer immediate protection. This allows survivors to secure a policy that pays the full death benefit from day one without the higher costs of a guaranteed-issue plan.</p>
+<p>Certain insurance companies in some states may provide first-day coverage to individuals who have been declared “fully cured” of brain cancer, even if the two-year treatment window has not yet passed. While most traditional insurers require a strict 24-month waiting period after the last treatment, specialized carriers assess the doctor’s “cured” status to offer immediate protection. This allows survivors to secure a policy that pays the full death benefit from day one without the higher costs of a guaranteed-issue plan.</p>
 
 <h3>How do anti-seizure medications impact brain cancer insurance underwriting?</h3>
 

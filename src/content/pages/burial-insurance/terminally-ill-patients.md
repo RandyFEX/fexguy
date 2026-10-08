@@ -13,13 +13,13 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Terminal illness usually disqualifies you from traditional life insurance approval<br>• Most people only qualify for guaranteed issue burial insurance policies<br>• These plans cost more and include a 2-year waiting period<br>• Early death often only returns premiums, not full coverage<br>• Waiting too long limits options even further and raises costs</p>
+<p>• Terminal illness usually disqualifies you from traditional life insurance approval<br>• Most people only qualify for guaranteed issue burial insurance policies<br>• These plans cost more and include a 2-year waiting period<br>• Early death often only returns premiums plus the contract’s interest, not full coverage<br>• Waiting too long limits options even further and raises costs</p>
 
 <p>Getting burial insurance for terminally ill patients is possible, but your options are limited. Most people won’t qualify for term or traditional whole life insurance once diagnosed. Instead, you’re usually left with guaranteed-issue burial insurance, which has higher costs and a 2-year waiting period before full benefits pay out. If death occurs early, the policy often refunds only the premiums rather than paying the full amount. The only real advantage is approval. No health questions, no exam. But you’re paying for that simplicity with less protection upfront.</p>
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
-<p> <strong>!!! IMPORTANT – READ THIS &amp; WATCH VIDEO !!! <br><br>We DO NOT offer insurance plans for anyone with a terminal illness.<br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
+<p> <strong>!!! IMPORTANT – READ THIS &amp; WATCH VIDEO !!! <br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
 
 <p>In this article, we will explain who should buy burial insurance, and the options you have if you are a terminally ill patient.</p>
 
@@ -106,6 +106,8 @@ sidebar: true
 <p>This policy will require you to live for the first two years before your policy pays for any health or medical-related cause of death. If you pass away during the waiting period, your beneficiary will not get your full death benefit. Instead, they will get a Return Of Premium (ROP) plus interest (usually 7-10%)</p>
 
 <p>If death occurs for natural causes within the first two policy years, your beneficiary will only receive all premiums plus 7% – 10% interest. If death is due to accidental reasons within the first two policy years, the full death benefit shall be paid to your beneficiary.</p>
+
+<p>If your doctor expects death within the next two years, your family would most likely receive the premium refund plus that contract amount, not the full death benefit. That’s why I generally don’t recommend buying a new guaranteed issue policy in that situation, although I can still help you get one if you decide it’s right for your family.</p>
 
 <p><br><strong>2.</strong> <strong>More Expensive</strong></p>
 

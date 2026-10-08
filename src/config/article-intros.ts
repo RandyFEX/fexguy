@@ -116,4 +116,10 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/the-importance-of-burial-insurance/': ["Burial insurance exists for one reason. To keep your"],
   '/transamerica-burial-insurance-review/': ["Transamerica burial insurance can work, but only in the"],
   '/what-happens-when-your-spouse-died-no-life-insurance/': ["When your spouse dies without life insurance, the financial"],
+  '/burial-insurance-substance-abuse-drug-abuse/': ["Burial insurance with substance abuse or drug abuse depends"],
+  '/burial-insurance/final-expense-life-insurance-dave-ramsey/': ["Many people want to know what Dave Ramsey says"],
+  '/burial-insurance/lupus/': ["You can still get burial insurance with lupus, and no"],
+  '/burial-insurance/transferring-activities-of-daily-living-adl/': ["Transferring means moving yourself between your bed, a chair,"],
+  '/final-expense-life-insurance-retired-truckers/': ["Final expense life insurance for retired truckers is usually easier"],
+  '/term-life-conversion-to-whole-life/': ["Term life conversion to whole life lets you convert a"],
 };

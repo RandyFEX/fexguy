@@ -21,9 +21,9 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Most VFW life insurance is accident-only, not full life coverage<br>• Free coverage pays only if you die from an accident<br>• Benefits are often small and drop by 50% after age 75<br>• Senior plans usually cap coverage around $10,000 to $20,000<br>• Many veterans think they’re covered when they’re not</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Most VFW life insurance is accident-only, not full life coverage<br>• The only no-cost coverage is a small accidental death benefit, up to $1,000, that drops to 50% at age 75<br>• Term life, senior term life and extra accident coverage must be bought separately through the VFW Insurance Program<br>• Term coverage can rise in price with age and may end at a set age<br>• Many veterans think they’re covered when they’re not</p>
 
-<p>VFW life insurance options sound helpful, but most of what’s offered is limited. The “free” coverage is accidental death insurance, which only pays if you die in an accident, not from natural causes like heart attack or illness. On top of that, benefits can be small and even get cut in half after age 75. Term life options exist, but senior plans often cap out at low amounts that may not fully cover final expenses. If you rely only on these programs, your family could still be left with bills.</p>
+<p>VFW life insurance options sound helpful, but what comes with membership is limited. The only “free” coverage is a small accidental death and dismemberment benefit, which only pays if you die in a covered accident, not from natural causes like a heart attack or illness. That benefit is up to $1,000 and is cut in half at age 75. Term life and other plans exist, but you have to apply and pay for them separately, and term premiums can rise as you age. If you rely only on these programs, your family could still be left with bills.</p>
 
 <p>Complete my quote request form on this page to quickly see real coverage options.</p>
 
@@ -41,7 +41,7 @@ sidebar: true
 
 <p>A member must complete an application, provide personal information, and choose a specific plan. Premiums must be paid every month. If the member stops paying, the coverage ends.</p>
 
-<p>The VFW website directs members to what it calls Life Insurance Central. This is a marketplace where private insurers advertise individual term and whole life products to VFW members.</p>
+<p>The VFW website directs members to the VFW Insurance Program. This is where private insurers offer term life and accident coverage to VFW members.</p>
 
 <p>The VFW Insurance Program also uses administrators such as Lockton Affinity or AGIA Affinity to manage member enrollment and service. These firms handle billing, confirmations, and policy questions but do not pay claims.</p>
 
@@ -59,11 +59,11 @@ sidebar: true
 
 <p>AGIA handles member communication, application processing, premium billing, and customer service. The actual risk is carried by the insurance company named in the policy, not by AGIA.</p>
 
-<p>For example, when the Guaranteed Acceptance term benefit is offered, the policy certificate clearly lists Securian Life Insurance Company as the underwriter.</p>
+<p>For example, Securian Life Insurance Company is listed as the underwriter of the no-cost accidental death benefit.</p>
 
 <p>This structure matters because insurance companies have no authority to customize underwriting. Their job is to process plans as written. Members who need more flexible underwriting or higher benefit limits must manually look beyond affinity contracts.</p>
 
-<table> <thead> <tr> <th>Feature</th> <th>What People Expect</th> <th>What Actually Happens</th> <th>Impact</th> </tr> </thead> <tbody> <tr> <td>Membership coverage</td> <td>Life insurance included with dues</td> <td>No life insurance unless the member buys a separate policy</td> <td>Many veterans have zero real coverage</td> </tr> </tbody> </table>
+<table> <thead> <tr> <th>Feature</th> <th>What People Expect</th> <th>What Actually Happens</th> <th>Impact</th> </tr> </thead> <tbody> <tr> <td>Membership coverage</td> <td>Life insurance included with dues</td> <td>Only a small no-cost accidental death benefit; life insurance that covers natural death must be bought separately</td> <td>Many veterans have no coverage for death from illness</td> </tr> </tbody> </table>
 
 <hr>
 
@@ -121,15 +121,13 @@ sidebar: true
 
 <hr>
 
-<h2><strong>The limits of VFW final expense plans and their low coverage caps</strong></h2>
+<h2><strong>The limits of VFW-affiliated plans for final expenses</strong></h2>
 
 <p>Final expense plans offered through VFW-affiliated programs typically provide small coverage amounts. These amounts are often far below the national funeral and cremation averages reported by the National Funeral Directors Association.</p>
 
-<p>The NFDA lists the median cost of a funeral with viewing and burial at $7,848. The median cost of a funeral with cremation is $6,280. These numbers come directly from NFDA research data.</p>
+<p>The NFDA lists the median cost of a funeral with viewing and burial at $8,300. The median cost of a funeral with cremation is $6,280. These numbers come directly from NFDA research data.</p>
 
-<p>Most VFW final expense packages fall well below these amounts.</p>
-
-<p>VFW life insurance options commonly include benefit caps around levels such as $5,000, $10,000, or $15,000, depending on the specific plan and carrier. These amounts may cover only part of a funeral, leaving the family responsible for the remainder.</p>
+<p>Coverage amounts depend on the specific plan and carrier, so check yours against these costs. A small benefit may cover only part of a funeral, leaving the family responsible for the remainder.</p>
 
 <p>Another limitation is the format of the benefit structure.</p>
 
@@ -181,9 +179,9 @@ sidebar: true
 
 <p>This gap is one of the biggest financial risks for families who assume their coverage will be enough.</p>
 
-<p>The National Funeral Directors Association reports the median cost of a funeral with burial at $7,848. Cremation with a service has a median cost of $6,280. These numbers come directly from NFDA research.</p>
+<p>The National Funeral Directors Association reports the median cost of a funeral with burial at $8,300. Cremation with a service has a median cost of $6,280. These numbers come directly from NFDA research.</p>
 
-<p>When a VFW-affiliated plan offers coverage amounts that commonly fall in the $5,000 to $15,000 range, the benefit may cover only part of the total expenses. It often does not include the cost of a burial plot, a headstone, upgrades to military honors, or family travel.</p>
+<p>When a VFW-affiliated plan offers a small coverage amount, the benefit may cover only part of the total expenses. It often does not include the cost of a burial plot, a headstone, upgrades to military honors, or family travel.</p>
 
 <p>Veterans who assume their benefits will stretch farther often leave their families with unexpected expenses. This creates stress and confusion during an emotional period when families are least prepared for sudden financial decisions.</p>
 
@@ -271,7 +269,7 @@ sidebar: true
 
 <p>Independent whole life carriers typically offer benefit amounts ranging from $5,000 to $25,000 or higher, depending on the applicant’s age and health. These benefit levels remain fixed for life. The premium remains unchanged, and coverage never expires as long as payments are made.</p>
 
-<p>VFW-affiliated plans often include coverage caps that do not exceed small final expense amounts. These limits can leave families underinsured. The cost per thousand of coverage can also be higher in some affinity programs compared to plans available through independent brokers.</p>
+<p>VFW-affiliated plans can include coverage caps that do not exceed small final expense amounts. These limits can leave families underinsured. The cost per thousand of coverage can also be higher in some affinity programs compared to plans available through independent brokers.</p>
 
 <p>Independent brokers like The Final Expense Guy can compare multiple carriers, determine which underwriting class best fits the veteran, and find the most efficient premium.</p>
 
@@ -363,7 +361,7 @@ sidebar: true
 
 <p>A broker can also provide higher coverage amounts.</p>
 
-<p>While many VFW-affiliated plans cap benefits in the final expense range, independent carriers allow larger amounts, such as $20,000, $25,000, $30,000, or more, depending on health and age. This can make the difference between covering the full cost of a funeral and leaving a large balance to the family.</p>
+<p>While some plans cap benefits in the final expense range, independent carriers allow larger amounts, such as $20,000, $25,000, $30,000, or more, depending on health and age. This can make the difference between covering the full cost of a funeral and leaving a large balance to the family.</p>
 
 <p>The claims process is also more straightforward.</p>
 
@@ -379,7 +377,7 @@ sidebar: true
 
 <p><strong>Does VFW membership include any free life insurance?</strong></p>
 
-<p>VFW membership does not include any free life insurance, according to the organization’s own materials, which state that all life insurance must be purchased separately through private affinity partners. Some veterans recall small accidental death promotions from past years, but those were temporary, covered accidents only, and did not apply to illness or natural causes. The VFW does not fund permanent or term life insurance benefits for dues-paying members. Veterans who assume they have automatic coverage may discover they do not. The Final Expense Guy helps veterans set up real policies that protect their families for both natural and accidental death without relying on limited promotional offers.</p>
+<p>VFW membership does not include any free life insurance that pays for death from illness or natural causes. Members in good standing get a no-cost accidental death and dismemberment benefit of up to $1,000, which drops to 50% at age 75 and covers accidents only. All other life insurance must be purchased separately through the VFW Insurance Program. The VFW does not fund permanent or term life insurance benefits for dues-paying members. Veterans who assume they have automatic coverage may discover they do not. The Final Expense Guy helps veterans set up real policies that protect their families for both natural and accidental death without relying on limited promotional offers.</p>
 
 <p><strong>Are VFW affiliated life insurance plans part of the VA?</strong></p>
 
@@ -387,7 +385,7 @@ sidebar: true
 
 <p><strong>Who underwrites the life insurance promoted through the VFW?</strong></p>
 
-<p>Life insurance promoted through the VFW is underwritten by private insurance companies, and each policy certificate identifies the carrier responsible for paying claims. A publicly documented example includes Securian Life Insurance Company, listed as the underwriter on certain guaranteed acceptance term plans. These carriers can change when the VFW updates its affinity contracts, meaning underwriting companies may differ from year to year. Administrative firms such as AGIA Affinity only process enrollment and billing, not claims. The Final Expense Guy works with consistently highly rated whole-life carriers so veterans know exactly who backs their coverage.</p>
+<p>Life insurance promoted through the VFW is underwritten by private insurance companies, and each policy certificate identifies the carrier responsible for paying claims. A publicly documented example includes Securian Life Insurance Company, listed as the underwriter of the no-cost accidental death benefit. These carriers can change when the VFW updates its affinity contracts, meaning underwriting companies may differ from year to year. Administrative firms such as AGIA Affinity only process enrollment and billing, not claims. The Final Expense Guy works with consistently highly rated whole-life carriers so veterans know exactly who backs their coverage.</p>
 
 <p><strong>Do VFW plans offer lower rates than regular life insurance?</strong></p>
 
@@ -403,7 +401,7 @@ sidebar: true
 
 <p><strong>Are VFW final expense benefits large enough to cover a full funeral?</strong></p>
 
-<p>Most VFW-associated final expense benefits fall below the median funeral costs published by the National Funeral Directors Association, which reports burial at $7,848 and cremation with a service at $6,280. Many affinity packages offer $5,000, $10,000, or $15,000, which may not cover the full cost once cemetery fees and additional services are factored in. These smaller caps often leave families to pay the remaining costs out of pocket. Veterans who assume their coverage is enough can unintentionally leave their families with a financial burden. The Final Expense Guy helps veterans secure whole life plans with coverage amounts that better match national funeral averages.</p>
+<p>Small final expense benefits can fall below the median funeral costs published by the National Funeral Directors Association, which reports burial at $8,300 and cremation with a service at $6,280. A benefit of $5,000, $10,000, or $15,000 may not cover the full cost once cemetery fees and additional services are factored in. These smaller caps often leave families to pay the remaining costs out of pocket. Veterans who assume their coverage is enough can unintentionally leave their families with a financial burden. The Final Expense Guy helps veterans secure whole life plans with coverage amounts that better match national funeral averages.</p>
 
 <p><strong>Does the VFW oversee claims or guarantee payouts?</strong></p>
 

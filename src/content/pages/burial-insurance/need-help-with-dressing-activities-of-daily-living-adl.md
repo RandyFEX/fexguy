@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance if You Need Help with Dressing [Activities of Daily Living – ADL’s]</h1>
 
-<p><strong>Here’s the Bottom Line:<br>• </strong>Needing help with dressing signals a serious health risk to insurers<br>• Most companies will limit you to 2-year waiting period policies<br>• Severe ADL limitations often lead to guaranteed issue only<br>• Coverage amounts are smaller and cost much more monthly<br>• Applying for better plans will usually result in denial</p>
+<p><strong>Here’s the Bottom Line:<br>• </strong>Needing help with dressing signals a serious health risk to insurers<br>• Companies will limit you to 2-year waiting period policies<br>• Current ADL limitations lead to guaranteed issue only<br>• Coverage amounts are smaller and cost much more monthly<br>• Applying for better plans will usually result in denial</p>
 
-<p>Needing help with dressing is part of what insurers call “activities of daily living” or ADLs, which include basic tasks like dressing, bathing, eating, and moving around. Burial insurance with ADL limitations is treated as high risk because it shows you can’t fully care for yourself. Burial insurance is a type of whole life insurance designed for these situations, but most companies offer only guaranteed-issue plans with a 2-year waiting period and higher premiums. The more ADLs you need help with, the fewer options you have and the more expensive it gets.</p>
+<p>Needing help with dressing is part of what insurers call “activities of daily living” or ADLs, which include basic tasks like dressing, bathing, eating, and moving around. Burial insurance with ADL limitations is treated as high risk because it shows you can’t fully care for yourself. Burial insurance is a type of whole life insurance designed for these situations, but companies offer only guaranteed-issue plans with a 2-year waiting period and higher premiums. The more ADLs you need help with, the fewer options you have and the more expensive it gets.</p>
 
 <p>Complete my quote request form on this page to quickly avoid costly mistakes.</p>
 

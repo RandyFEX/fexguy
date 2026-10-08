@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Multiple Myeloma Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Multiple myeloma is high risk and often limits your coverage options<br>• Active cancer usually forces expensive plans with 2-year waiting periods<br>• Applying during treatment almost always blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue too early<br>• Waiting for remission can improve pricing and open better options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Multiple myeloma is high risk and often limits your coverage options<br>• Active cancer usually forces expensive plans with 2-year waiting periods<br>• Applying during treatment almost always blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue too early<br>• Being declared cancer-free can improve pricing and open better options</p>
 
-<p>Getting burial insurance with multiple myeloma depends heavily on your treatment status and how long you’ve been stable. Burial insurance and whole life are usually the only realistic options after diagnosis because traditional policies often won’t approve active cancer cases. If you’re currently in treatment or recently diagnosed, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period. If you’ve been in remission for at least 2 years, better burial insurance options with immediate coverage may become available. Timing matters because applying too early can lock you into weaker, more expensive coverage.</p>
+<p>Getting burial insurance with multiple myeloma depends heavily on your treatment status and how long you’ve been stable. Burial insurance and whole life are usually the only realistic options after diagnosis because traditional policies often won’t approve active cancer cases. If you’re currently in treatment or recently diagnosed, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period. If you’ve been declared cancer-free for at least 2 years, better burial insurance options with immediate coverage may become available. Timing matters because applying too early can lock you into weaker, more expensive coverage.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -22,7 +22,7 @@ sidebar: true
 <ul>
 <li><strong>Active treatment requires a waiting period:</strong> If you are currently taking any medication, such as Revlimid or Velcade, to manage your condition, carriers will always place you in a two-year waiting period plan.</li>
 <li><strong>Maintenance drugs are viewed as active treatment:</strong> Underwriters do not distinguish between “maintenance” and “active” chemo; if you are taking a pill to hold cancer back, it is still considered to be in treatment.</li>
-<li><strong>Remission usually requires a two-year look-back:</strong> Most companies require you to be 100% treatment-free and cancer-free for at least 24 months before they will consider offering a first-day coverage plan.</li>
+<li><strong>Remission is not the same as being cured:</strong> Most companies require you to be 100% treatment-free and declared cancer-free for at least 24 months before they will consider offering a first-day coverage plan.</li>
 <li><strong>Pathology and bone health are major red flags:</strong>&#160;Any history of bone damage or fractures from your condition signals to the insurance company that&#160;the disease was aggressive, which often leads to higher rates or declines.</li>
 <li><strong>Guaranteed issue is the standard backup plan:</strong> Because this condition often involves long-term medication use, a guaranteed-acceptance policy with no health questions is the most common way to get covered.</li>
 </ul>
@@ -44,9 +44,7 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">basal cell</a> or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
 <li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
 <li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive <a href="https://www.mayoclinic.org/diseases-conditions/multiple-myeloma/diagnosis-treatment/drc-20353383" target="_blank" rel="noreferrer noopener nofollow">treatment</a> for any form of cancer (except basal or squamous cell skin cancer)?</li>
@@ -100,8 +98,8 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s current remission status and long-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Mutual of Omaha or Aetna if you have been in remission for at least 2 years.</li>
-<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. This is often the best choice for those on maintenance therapy or those with a more recent diagnosis.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Mutual of Omaha or Aetna if you have been declared cancer-free for at least 2 years.</li>
+<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. Maintenance therapy, remission or a more recent diagnosis generally means guaranteed issue instead.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I suggest AAA or Gerber Life if you are currently in active treatment.</li>
 </ul>
 
@@ -138,7 +136,7 @@ sidebar: true
 
 <h2>Multiple myeloma burial insurance underwriting &amp; medication history</h2>
 
-<p>Your prescription history helps verify your medical stability and current disease activity. One underwriting tip is that being on a “maintenance” dose of a drug is often seen as a sign of success, not a sign of active illness. You should also ensure your medical records clearly show the date of your most recent intensive treatment, as this serves as the “starting line” for most coverage look-back periods. Another tip is that having a low M-spike for several years can help your agent advocate for a lower-cost plan.</p>
+<p>Your prescription history helps verify your medical stability and current disease activity. One underwriting tip is that a “maintenance” dose of a drug still counts as treatment, so the look-back period starts only after you finish it. You should also ensure your medical records clearly show the date of your most recent intensive treatment, as this serves as the “starting line” for most coverage look-back periods. Another tip is that having a low M-spike for several years can help your agent advocate for a lower-cost plan.</p>
 
 <p>Your prescription history is how the insurance carriers verify medical stability.</p>
 
@@ -154,14 +152,14 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>2+ Years Remission</td>
-<td>Level</td>
+<td>Declared Cancer-Free 2+ Years</td>
+<td>Level (depends on the company’s look-back)</td>
 <td>None</td>
 </tr>
 <tr>
-<td>Maintenance Only</td>
-<td>Graded</td>
-<td>Limited</td>
+<td>Remission or Maintenance Only</td>
+<td>Guaranteed Issue</td>
+<td>2 Years</td>
 </tr>
 <tr>
 <td>Active Treatment</td>
@@ -171,17 +169,17 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Real life multiple myeloma burial insurance success stories</h2>
+<h2>Real life multiple myeloma burial insurance stories</h2>
 
 <p>Real-world examples illustrate how people with multiple myeloma can get day-one protection with anywhere from $5,000 to $25,000 for burial, cremation, or final expenses.</p>
 
 <h3>Robert’s story</h3>
 
-<p>Robert had been in stable remission for 3 years and was only taking a small maintenance dose of Revlimid. He was worried that any mention of “cancer” would mean he had to wait 2 years for his coverage to start. By applying to Mutual of Omaha, we demonstrated to the insurer that his blood levels were stable. Robert enrolled in a $15,000 level benefit plan that covers him from the first day. This plan saved him 25% over the other quotes he found online.</p>
+<p>Robert had been in stable remission for 3 years and was only taking a small maintenance dose of Revlimid. He was worried that any mention of “cancer” would mean he had to wait 2 years for his coverage to start. Remission with ongoing maintenance treatment is not the same as being cured, so a guaranteed issue plan is generally the option until all treatment is finished and his doctor declares him cancer-free for the company’s look-back period.</p>
 
 <h3>Sarah’s story</h3>
 
-<p>Sarah was diagnosed with smoldering myeloma, and her doctor was simply watching her levels without starting chemo. She wanted to lock in a small $10,000 policy to cover her cremation costs before her health changed. We found a carrier who views smoldering myeloma as a manageable risk since she had no active symptoms. Sarah was approved for a day-one coverage plan that fits her fixed-income budget. She now has peace of mind knowing her final expenses won’t fall on her children.</p>
+<p>Sarah was diagnosed with smoldering myeloma, and her doctor was simply watching her levels without starting chemo. She wanted to lock in a small $10,000 policy to cover her cremation costs before her health changed. Even without chemo, smoldering myeloma is a current diagnosis, so a guaranteed issue plan is generally the way to lock in that coverage.</p>
 
 <h2>Multiple myeloma financial ratings &amp; stability </h2>
 
@@ -254,27 +252,27 @@ sidebar: true
 
 <h3>Is multiple myeloma considered a terminal illness for burial insurance?</h3>
 
-<p>Insurance companies classify multiple myeloma as a terminal illness only when a licensed physician provides a written prognosis of 12 to 24 months or less to live. If your condition is stable or in a “smoldering” stage, underwriters treat it as a chronic health history rather than a terminal event. This distinction is critical because it allows many patients to qualify for standard policies instead of being restricted to higher-cost plans reserved for the terminally ill.</p>
+<p>Insurance companies classify multiple myeloma as a terminal illness only when a licensed physician provides a written prognosis of 12 to 24 months or less to live. If your condition is stable or in a “smoldering” stage, underwriters treat it as a chronic health history rather than a terminal event.</p>
 
 <h3>How do maintenance drugs like Revlimid affect burial insurance eligibility?</h3>
 
-<p>Insurance underwriters view maintenance medications as a form of active treatment when determining your eligibility for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a>. Because drugs like Revlimid or Velcade are used to suppress cancer cells, most carriers require you to be completely finished with all prescriptions for 24 months before offering a “Level” benefit. However, some specialized carriers may offer “Graded” plans that provide partial coverage during the first two years for those currently on a maintenance-only schedule.</p>
+<p>Insurance underwriters view maintenance medications as a form of active treatment when determining your eligibility for <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">first-day coverage</a>. Because drugs like Revlimid or Velcade are used to suppress cancer cells, most carriers require you to be completely finished with all prescriptions for 24 months before offering a “Level” benefit.</p>
 
 <h3>Does smoldering myeloma allow for immediate burial insurance?</h3>
 
-<p>Asymptomatic or “smoldering” myeloma often allows for immediate coverage because the patient is not yet experiencing active symptoms or requiring chemotherapy. Since this stage involves “watchful waiting” rather than aggressive intervention, some underwriters categorize it as a lower risk than active myeloma. If your lab results have remained stable for several years without the need for medication, you may qualify for a policy that pays the full benefit from day one.</p>
+<p>Asymptomatic or “smoldering” myeloma does not usually require chemotherapy, and this stage involves “watchful waiting” rather than aggressive intervention. It is still a current myeloma diagnosis, though, so a guaranteed issue plan with a two-year waiting period is generally the option, even if your lab results have remained stable for several years.</p>
 
 <h3>How do M-protein levels impact burial insurance underwriting?</h3>
 
-<p>Insurers monitor M-protein levels in your blood work to verify the stability of your remission. A stable or non-existent “M-spike” provides objective evidence to the underwriter that the cancer is not currently progressing or damaging the bone marrow. Consistently low lab results are the most effective tool your broker can use to advocate for a first-day coverage plan rather than a waiting-period policy.</p>
+<p>Insurers monitor M-protein levels in your blood work to verify the stability of your condition. A stable or non-existent “M-spike” provides objective evidence to the underwriter that the cancer is not currently progressing or damaging the bone marrow. Once you have finished treatment and been declared cancer-free, consistently low lab results are the most effective tool your broker can use to advocate for a first-day coverage plan rather than a waiting-period policy.</p>
 
 <h3>Does a history of stem cell transplant affect burial insurance rates?</h3>
 
-<p>A history of a stem cell transplant does not permanently increase your insurance rates once you have successfully completed the recovery and remission period. Underwriters focus on the time elapsed since the transplant and whether your immune system has fully recovered without signs of recurrence. If you are several years post-transplant and remain treatment-free, you can qualify for the same preferred rates as individuals with no history of cancer.</p>
+<p>A history of a stem cell transplant does not permanently increase your insurance rates once you have successfully completed the recovery period, finished all treatment and been declared cancer-free. Underwriters focus on the time elapsed since the transplant and whether your immune system has fully recovered without signs of recurrence. If you are several years post-transplant, cancer-free and treatment-free, you may qualify for the same preferred rates as individuals with no history of cancer.</p>
 
 <h3>Why should I use an independent broker for myeloma coverage?</h3>
 
-<p>An independent broker acts as your advocate by comparing the “look-back” periods and health questions of dozens of different insurance companies. Because some carriers are more lenient on maintenance therapy than others, a broker can help prevent you from being unnecessarily placed in an expensive waiting-period plan. They understand which A-rated companies currently accept blood cancer histories, ensuring you receive the fastest approval at the lowest possible price.</p>
+<p>An independent broker acts as your advocate by comparing the “look-back” periods and health questions of dozens of different insurance companies. Because some carriers have shorter look-back periods than others, a broker can help prevent you from being unnecessarily placed in an expensive waiting-period plan. They understand which A-rated companies currently accept blood cancer histories, ensuring you receive the fastest approval at the lowest possible price.</p>
 
 <h3>Does multiple myeloma qualify for “Accelerated Death Benefits”?</h3>
 
@@ -282,4 +280,4 @@ sidebar: true
 
 <h3>How does kidney function affect multiple myeloma insurance?</h3>
 
-<p>Insurance companies review your kidney function because the abnormal proteins produced by myeloma can cause long-term renal damage. If your lab results show healthy kidney filtration despite a past diagnosis, you are viewed as a much lower risk by the insurance underwriter. Maintaining good kidney health is often as important as cancer remission when qualifying for a policy with immediate, first-day protection.</p>
+<p>Insurance companies review your kidney function because the abnormal proteins produced by myeloma can cause long-term renal damage. If your lab results show healthy kidney filtration despite a past diagnosis, you are viewed as a much lower risk by the insurance underwriter. Maintaining good kidney health is often as important as being declared cancer-free when qualifying for a policy with immediate, first-day protection.</p>

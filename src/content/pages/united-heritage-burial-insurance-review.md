@@ -65,7 +65,7 @@ sidebar: true
 
 <h2 id="cons-of-united-heritage-burial-insurance"><strong>Cons of United Heritage burial insurance</strong></h2>
 
-<p><strong>Financial rating</strong> – their rating was downgraded from “A-” to “B++.” This rating is still good, and it shows they are still able to pay policyholders on time. But, if you want peace of mind, it’s better to get a plan from “A” rated or better company.</p>
+<p><strong>Financial rating</strong> – A.M. Best rates them “A-” (Excellent) with a negative outlook. This rating is still good, and it shows they are still able to pay policyholders on time. But, if you want peace of mind, it’s better to get a plan from “A” rated or better company.</p>
 
 <h2 id="united-heritage-burial-insurance-products"><br><strong>United Heritage burial insurance products</strong> </h2>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p>The other burial insurance plan offered by United Heritage is Protector modified benefit that acts like a guaranteed issue burial insurance. This policy is designed for those, not in the best of health or those with pre-existing medical conditions.</p>
 
-<p>The death benefit payout is modified for the first two years. If you die from non-accidental causes during the first two years, your beneficiaries will receive 100% of all the premiums you paid plus 5% interest. </p>
+<p>The death benefit payout is modified for the first two years. If you die from non-accidental causes during the first two years, your beneficiaries will receive 100% of all the premiums you paid plus interest. </p>
 
 <p>While it won’t be the full death benefit, it is better than letting your money sit in the bank for that time. The protector-modified benefit is very much similar to guaranteed issue policies.</p>
 
@@ -410,7 +410,7 @@ sidebar: true
 
 <p><br><strong>FINANCIAL RATING</strong></p>
 
-<p>Third-party rating organizations help applicants to get an idea of the overall financial stability of an insurance company. United Heritage Life Insurance Company is rated “B++” or “good” by A.M. Best. </p>
+<p>Third-party rating organizations help applicants to get an idea of the overall financial stability of an insurance company. United Heritage Life Insurance Company is rated “A-” or “excellent” by A.M. Best, with a negative outlook. </p>
 
 <p>United Heritage Financial Group has an A+ rating with the Better Business Bureau (BBB)</p>
 
@@ -422,7 +422,7 @@ sidebar: true
 
 <p><br><strong>Is United Heritage Life Insurance legitimate?</strong></p>
 
-<p>Yes, United Heritage Life Insurance is a legitimate company. It is licensed in all 50 states and has an A+ rating from the Better Business Bureau.</p>
+<p>Yes, United Heritage Life Insurance is a legitimate company. It offers products in 49 states and the District of Columbia and has an A+ rating from the Better Business Bureau.</p>
 
 <p><br><strong>Who owns United Heritage Life insurance?</strong></p>
 
@@ -434,7 +434,7 @@ sidebar: true
 
 <p><br><strong>What is United Heritage Life’s financial rating?</strong></p>
 
-<p>The company has an A+ rating from the Better Business Bureau. And A- with Kroll Bond Rating Agency.</p>
+<p>The company has an A+ rating from the Better Business Bureau. And A- with A.M. Best.</p>
 
 <p><br><strong>Is United Heritage Life a publicly-traded company?</strong></p>
 
@@ -470,7 +470,7 @@ sidebar: true
 
 <p><br><strong>What states does United Heritage Life operate in?</strong></p>
 
-<p>The company is licensed in all 50 states.</p>
+<p>The company offers products in 49 states and the District of Columbia.</p>
 
 <p><br><strong>Does United Heritage Life have a Facebook page?</strong></p>
 
@@ -534,7 +534,7 @@ sidebar: true
 
 <p><br><strong>Can you get first-day coverage with United Heritage Life?</strong></p>
 
-<p>Yes, you can get first-day coverage with the company.</p>
+<p>Yes, you can get first-day coverage with the company if you qualify for the Protector whole life plan.</p>
 
 <p><br><strong>What is the minimum and maximum coverage amount for United Heritage Life insurance?</strong></p>
 
@@ -578,7 +578,7 @@ sidebar: true
 
 <p><br><strong>Does United Heritage Life have a waiting period?</strong></p>
 
-<p>No, United Heritage Life does not have a waiting period.</p>
+<p>United Heritage’s Protector whole life plan does not have a waiting period. The Protector modified benefit plan pays back your premiums plus interest instead of the full death benefit for a non-accidental death in the first two years.</p>
 
 <p><br><strong>What are the riders offered by United Heritage Life insurance?</strong></p>
 

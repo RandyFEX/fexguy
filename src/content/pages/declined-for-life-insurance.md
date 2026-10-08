@@ -155,9 +155,9 @@ sidebar: true
 
 <p><strong>#17. Previous Declines</strong></p>
 
-<p>Insurance companies subscribe to the Medical Information Bureau (MIB), which shares information about prior life insurance approvals and denials on their life insurance applications. MIB reports protecting the life insurance companies from applicants who lie about their current medical conditions.</p>
+<p>Insurance companies subscribe to the Medical Information Bureau (MIB), which shares coded information that member companies report from your past individually underwritten life insurance applications. MIB does not record whether you were approved or declined, and each insurance company makes its own decision. MIB reports protecting the life insurance companies from applicants who lie about their current medical conditions.</p>
 
-<p>Previous declines in MIB reports will be a problem for those who previously applied for life insurance for a medical reason that may no longer exist. However, just because you have been denied in the past doesn’t mean other life insurance companies can never approve you for life insurance.</p>
+<p>Medical information in MIB reports can be a problem for those who previously applied for life insurance for a medical reason that may no longer exist. However, just because you have been denied in the past doesn’t mean other life insurance companies can never approve you for life insurance.</p>
 
 <h2 id="what-to-do-after-you-have-been-declined-for-life-insurance"><br><strong>What to do after you have been declined for life insurance</strong></h2>
 
@@ -247,7 +247,7 @@ sidebar: true
 
 <h2 id="what’s-your-next-step-if-you-ve-been-declined-for-life-insurance"><br><strong>What’s your next step if you’ve been declined for life insurance?</strong></h2>
 
-<p>Life insurance companies will know if you applied with other companies and had an application that had been denied in the past. Records of approval and denials are recorded in your Medical Information Bureau. </p>
+<p>Life insurance companies can see if you applied with other companies in the past. Your Medical Information Bureau file can show coded information from past applications and which companies have checked it, but it does not show whether you were approved or declined. </p>
 
 <p>Life insurance companies don’t like many declines, which could hurt your future chances with a company willing to take your risk.</p>
 

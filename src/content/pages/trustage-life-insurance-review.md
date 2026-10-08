@@ -21,7 +21,7 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• TruStage is easy to get, but usually costs more long-term<br>• Term life premiums increase every 5 years automatically<br>• Guaranteed issue plans include a 2-year waiting period<br>• Coverage amounts are lower than those of many competing companies<br>• Convenience often means paying more for less flexibility</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• TruStage is easy to get, but usually costs more long-term<br>• Term life premiums increase every 5 years as you enter a new age band, and coverage ends at 80<br>• Whole life premiums are level and do not increase<br>• Guaranteed issue plans include a 2-year waiting period<br>• Coverage amounts are lower than those of many competing companies<br>• Convenience often means paying more for less flexibility</p>
 
 <p>TruStage life insurance is designed to be simple and fast, but that simplicity comes with trade-offs. TruStage life insurance includes term life insurance, whole life insurance, and guaranteed issue options, all with no medical exam. The problem is cost and structure. Their term policies increase every 5 years and end at age 80, which can make them expensive over time. Their guaranteed issue plans include a 2-year waiting period before full benefits pay out. If you don’t compare options, you can end up paying more for less coverage than other companies offer.</p>
 
@@ -76,9 +76,9 @@ sidebar: true
 
 <h2 id="cons-of-trustage-burial-insurance"><strong>Cons of TruStage burial insurance</strong></h2>
 
-<p><strong>Expensive</strong> – TruStage life insurance products can be up to 38% more expensive than other life insurance products on the market.</p>
+<p><strong>Expensive</strong> – TruStage life insurance products can be more expensive than other life insurance products on the market.</p>
 
-<p><strong>No ability to compare prices</strong> – it is only a direct-to-consumer sales portal for CMGF Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
+<p><strong>No ability to compare prices</strong> – it is only a direct-to-consumer sales portal for CMFG Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
 
 <h2 id="trustage-burial-insurance-products"><strong>TruStage burial insurance products</strong></h2>
 
@@ -109,7 +109,7 @@ sidebar: true
 
 <p>TruStage advertises that their term life rate is based on age and gender…but there’s a catch!</p>
 
-<p>The premium is only level for the first five years and increases every five years as the policyholder reaches new age bands 30, 35, 45, 50, 55, 60, 65, 70, and 75. <br><br>The premium becomes more expensive as time passes, compared to many top insurance companies offering level-term policy plans.</p>
+<p>The premium is only level until the next five-year age band and increases every five years as the policyholder reaches new age bands 30, 35, 40, 45, 50, 55, 60, 65, 70, and 75. <br><br>The premium becomes more expensive as time passes, compared to many top insurance companies offering level-term policy plans.</p>
 
 <p>TruStage term plan terminates after age 80. If you outlive your term, you will not have any coverage. </p>
 
@@ -166,7 +166,7 @@ sidebar: true
 <ul>
 <li>Expensive compared to other companies offering guaranteed acceptance policy</li>
 <li>Cannot purchase a policy greater than $25,000</li>
-<li>No coverage if you die from a natural cause in the first two years – full death benefit only after year 2</li>
+<li>No full coverage if you die from a natural cause in the first two years (your premiums plus 10% are paid back) – full death benefit only after year 2</li>
 </ul>
 
 <p><br><strong>What’s wrong with TruStage Guaranteed Acceptance Whole Life?</strong></p>
@@ -620,7 +620,7 @@ sidebar: true
 
 <p><br><strong>Why did the price of TruStage Life Insurance increase?</strong></p>
 
-<p>The price of TruStage Life Insurance increased because the company is in business to make a profit.</p>
+<p>The price of TruStage term life insurance increased because the company is in business to make a profit.</p>
 
 <p><br><strong>Will the price of TruStage Life Insurance continue to increase?</strong></p>
 

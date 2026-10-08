@@ -21,7 +21,7 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Funeral plan insurance usually offers small coverage that won’t cover everything<br>• Many plans include waiting periods before full benefits are paid<br>• You can overpay if you don’t compare better life insurance options<br>• Some policies only pay for limited situations early on<br>• Choosing the wrong plan can leave your family short on cash</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Funeral plan insurance usually offers small coverage that won’t cover everything<br>• Many plans include waiting periods before full benefits are paid<br>• You can overpay if you don’t compare better life insurance options<br>• Some policies only pay for limited situations early on<br>• Choosing the wrong plan can leave your family short on cash<br>• Funeral insurance is not the same as a prepaid funeral contract with a funeral home</p>
 
 <p>Funeral plan insurance policies are a type of whole life insurance designed to cover end-of-life costs like funerals, medical bills, and small debts. They usually pay a lump sum to your family, often between $5,000 and $25,000, to handle those expenses. The appeal is easy approval and no medical exam, but that comes with trade-offs like higher costs and possible waiting periods before full benefits kick in. If you don’t understand how these policies work, you can end up paying more for less coverage than you actually need.</p>
 
@@ -38,10 +38,10 @@ sidebar: true
 <td>
 <ul>
 <li><a href="#how-much-does-a-funeral-cost">How Much Does A Funeral Cost?</a></li>
-<li><a href="#funeral-plan-insurance-policies-and-what-they-cover">Funeral Plan Insurance Policies And What They Cover</a></li>
+<li><a href="#funeral-plan-insurance-policies-and-what-they-cover">Prepaid Funeral Plans And What They Cover</a></li>
 <li><a href="#how-does-funeral-plan-insurance-policies-work">How Does Funeral Plan Insurance Policies Work?</a></li>
 <li><a href="#why-use-funeral-plan-insurance-policies">Why Use Funeral Plan Insurance Policies?</a></li>
-<li><a href="#funeral-plan-insurance-policies-pros-and-cons">Funeral Plan Insurance Policies Pros And Cons</a></li>
+<li><a href="#funeral-plan-insurance-policies-pros-and-cons">Prepaid Funeral Plan Pros And Cons</a></li>
 <li><a href="#questions-to-ask-the-funeral-provider">Questions To Ask The Funeral Provider</a></li>
 <li><a href="#communicating-with-your-family">Communicating With Your Family</a></li>
 <li><a href="#what-is-funeral-insurance">What Is Funeral Insurance?</a></li>
@@ -107,7 +107,7 @@ sidebar: true
 
 <p>Prices can significantly differ depending on the location. For example, a chapel service can be expensive, primarily if the service is conducted at a chapel separate from the funeral home.</p>
 
-<h2 id="funeral-plan-insurance-policies-and-what-they-cover"><br><strong>Funeral plan insurance policies and what they cover</strong></h2>
+<h2 id="funeral-plan-insurance-policies-and-what-they-cover"><br><strong>Prepaid funeral plans and what they cover</strong></h2>
 
 <p>Are prepaid funeral plans a good idea?</p>
 
@@ -151,7 +151,9 @@ sidebar: true
 
 <p>Some funeral plan providers give support as well as financial assistance. Support beyond financial help can include bereavement counseling, and legal assistance such as explaining funeral procedures like obtaining death certificates and helping to organize the details of the funeral.</p>
 
-<h2 id="funeral-plan-insurance-policies-pros-and-cons"><br><strong>Funeral plan insurance policies pros and cons</strong></h2>
+<h2 id="funeral-plan-insurance-policies-pros-and-cons"><br><strong>Prepaid funeral plan pros and cons</strong></h2>
+
+<p>These pros and cons apply to prepaid funeral contracts with a funeral home. The pros and cons of funeral insurance are covered further down this page.</p>
 
 <p><strong>PROS</strong></p>
 
@@ -229,9 +231,9 @@ sidebar: true
 
 <p>You are not even required to answer health questions. Since the insurance company assumes more risk in insuring you, your premiums may be higher than other policies.</p>
 
-<p>All <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a graded death benefit.</p>
+<p>All <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a waiting period, sometimes called a graded period, before the full natural-death benefit is available.</p>
 
-<p>The full death benefit will not be available to your burial insurance beneficiary until the policy has been in force for two to three years. The waiting period varies by the insurance carrier, so be sure to look out for this important detail. Should you die before the waiting period, your beneficiaries will only receive the premiums paid into the policy plus interest.</p>
+<p>The full death benefit will not be available to your burial insurance beneficiary until the policy has been in force for two to three years. The waiting period varies by the insurance carrier, so be sure to look out for this important detail. I generally recommend avoiding a three-year waiting period when a two-year plan is available. Should you die before the waiting period, your beneficiaries will only receive the premiums paid into the policy plus interest.</p>
 
 <p>After the graded period has passed, your family will receive the full life insurance benefit.</p>
 

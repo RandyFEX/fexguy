@@ -105,7 +105,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life Superior Choice – 1st-Day Coverage</td>
+<td>One insurance company – 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
@@ -138,7 +138,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>CICA Life – Superior Choice – 1st-Day Coverage </td>
+<td>One insurance company – 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>

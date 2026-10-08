@@ -22,7 +22,7 @@ sidebar: true
 <ul>
 <li><strong>Timing is more critical than the cancer type:</strong> Insurance companies prioritize the date you finished your last radiation, chemotherapy, or surgery and were declared cancer-free.</li>
 <li><strong>Active cases require waiting periods:</strong> Because any cancer is a risk, carriers typically require a two-year waiting period plan unless you have been cancer-free 1-2 years.</li>
-<li><strong>CICA Life provides a unique shortcut:</strong> Most carriers require a 24-month wait, but CICA Life may offer first-day coverage much sooner if your doctor officially declares your cancer cured.</li>
+<li><strong>One insurance company provides a unique shortcut:</strong> Most carriers require a 24-month wait, but one insurance company may offer first-day coverage much sooner if your doctor officially declares your cancer cured.</li>
 <li><strong>Spreading metastatic cancer limits your choices:</strong> If your sarcoma ever spreads to the lungs or other organs, you will likely be best served with a guaranteed-issue plan with a 2-year waiting period.</li>
 <li><strong>Ongoing checkups are usually not a decline:</strong> Attending regular follow-up scans or appointments is generally not counted as “active treatment” by most final expense companies.</li>
 </ul>
@@ -44,7 +44,6 @@ sidebar: true
 <li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
 <li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
 <li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>CICA Life Level</strong>&#160;– Have you been diagnosed by a member of the medical profession with more than one occurrence of any cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received <a href="https://www.mayoclinic.org/diseases-conditions/prostate-cancer/diagnosis-treatment/drc-20353093" target="_blank" rel="noreferrer noopener nofollow">treatment</a> by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
 <li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
@@ -100,7 +99,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s sarcoma grade and length of remission.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend CICA Life for those recently cured, or Aflac, Aetna, and Trinity Life for those 2 years past treatment.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. Certain companies may offer it to those recently cured, or Aflac, Aetna, and Trinity Life for those 2 years past treatment.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. This is common if your treatment ended within the last 2 years.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. Gerber Life is the gold standard if you are currently in treatment or have a high-grade history.</li>
 </ul>
@@ -111,7 +110,7 @@ sidebar: true
 
 <p>Here are some preferred rates if you’ve been diagnosed cancer-free, but you can save more money if it’s been 2 years since you were cancer-free.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -160,7 +159,7 @@ sidebar: true
 <td>None</td>
 </tr>
 <tr>
-<td>Recently Cured (CICA)</td>
+<td>Recently Cured (certain companies)</td>
 <td>Level</td>
 <td>None</td>
 </tr>
@@ -182,7 +181,7 @@ sidebar: true
 
 <h3>Linda’s story</h3>
 
-<p>Linda was diagnosed with a bone sarcoma and was told she was “cancer-free” only 6 months ago. Most insurance companies wanted her to wait 2 years, but she didn’t want to leave her family unprotected in the meantime. We used CICA Life to get her a policy because they are more flexible for people who have been declared cured by their doctors. Linda got a $10,000 first-day coverage policy with no medical exam. She was relieved to find a solution that didn’t make her wait for the protection she needed.</p>
+<p>Linda was diagnosed with a bone sarcoma and was told she was “cancer-free” only 6 months ago. Most insurance companies wanted her to wait 2 years, but she didn’t want to leave her family unprotected in the meantime. We used a company with more lenient underwriting to get her a policy because they are more flexible for people who have been declared cured by their doctors. Linda got a $10,000 first-day coverage policy with no medical exam. She was relieved to find a solution that didn’t make her wait for the protection she needed.</p>
 
 <h2>Sarcoma financial ratings &amp; stability </h2>
 
@@ -261,7 +260,7 @@ sidebar: true
 
 <h3>Can I qualify for first-day coverage if I was recently cured?</h3>
 
-<p>CICA Life offers first-day coverage to individuals who have been officially declared “cured” of sarcoma, even if they have not yet reached the standard 24-month waiting window. While most traditional burial insurance companies require a full two years of remission, specialized carriers focus on your doctor’s “all-clear” status to provide immediate protection. This allows recently recovered survivors to secure a policy that pays the full benefit from the moment the first premium is processed.</p>
+<p>One insurance company may offer first-day coverage to individuals who have been officially declared “cured” of sarcoma, even if they have not yet reached the standard 24-month waiting window. While most traditional burial insurance companies require a full two years of remission, specialized carriers focus on your doctor’s “all-clear” status to provide immediate protection. This allows recently recovered survivors to secure a policy that pays the full benefit from the moment the first premium is processed.</p>
 
 <h3>How do insurance underwriters view “clean margins” after sarcoma surgery?</h3>
 

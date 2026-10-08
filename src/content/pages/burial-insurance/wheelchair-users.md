@@ -91,7 +91,7 @@ sidebar: true
 <li>Recovering from surgery</li>
 </ul>
 
-<p>If you are using a wheelchair at home, your best life insurance option is guaranteed issue burial insurance.</p>
+<p>If you are using a wheelchair at home, some companies may still offer you first-day coverage, while others ask about wheelchair or scooter use and may decline. If no company with health questions will accept you, your best life insurance option is guaranteed issue burial insurance.</p>
 
 <p><br><strong><a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">ACTIVITIES OF DAILY LIVING</a></strong></p>
 
@@ -129,9 +129,9 @@ sidebar: true
 <li>Diabetes complications</li>
 </ul>
 
-<p>You will be ineligible for any coverage that has health questions. In this case, your only path to insurance coverage is through a guaranteed issue burial insurance.</p>
+<p>You will be ineligible for coverage with many companies that ask health questions, and Alzheimer’s disease or dementia means guaranteed issue only. For the other conditions, your usual path to insurance coverage is through a guaranteed issue burial insurance, although a company that doesn’t ask about wheelchair use may still consider you depending on the illness and how well it is controlled.</p>
 
-<p>Whether or not you need help with activities of daily living is irrelevant if you use a wheelchair because of a chronic illness.</p>
+<p>If you also need help with activities of daily living, guaranteed issue is your only option.</p>
 
 <p><strong>Best Option</strong>: Guaranteed issue burial insurance</p>
 

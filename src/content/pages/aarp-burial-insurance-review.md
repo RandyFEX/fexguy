@@ -143,7 +143,7 @@ sidebar: true
 
 <p>Medically underwritten burial insurance provides lower rates and immediate coverage for qualified applicants.</p>
 
-<p>Final Expense Guy companies like Family Benefit Life, Trinity Life, Aflac, or CICA provide “Day 1” coverage for conditions that AARP may force into higher rates or a 2-year wait. For example, some health issues that AARP declines under its “Level” plan can be covered immediately elsewhere at a much lower price.</p>
+<p>Final Expense Guy companies like Family Benefit Life, Trinity Life, Aflac, or certain other companies provide “Day 1” coverage for conditions that AARP may force into higher rates or a 2-year wait. For example, some health issues that AARP declines under its “Level” plan can be covered immediately elsewhere at a much lower price.</p>
 
 <h3>Comparison: AARP vs. standard level benefit</h3>
 

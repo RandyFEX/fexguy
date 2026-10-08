@@ -93,7 +93,7 @@ sidebar: true
 
 <h2 id="best-insurance-option"><strong>What is my best insurance option with uncontrolled high blood pressure?</strong></h2>
 
-<p><strong>CONTROLLED AND UNCONTROLLED HIGH BLOOD PRESSURE (with no hospitalization) –&#160;</strong>First-day coverage is your best option if you have high blood pressure problems. First-day coverage (level benefit plan) and no waiting period are available for people taking medication to control their blood pressure.</p>
+<p><strong>CONTROLLED AND UNCONTROLLED HIGH BLOOD PRESSURE (with no hospitalization) –&#160;</strong>First-day coverage is your best option if you have high blood pressure problems. First-day coverage (level benefit plan) and no waiting period are available for people taking medication to control their blood pressure. Several medications, readings that stay high, and related heart, kidney, or stroke history can complicate underwriting, so the company you apply to matters.</p>
 
 <p><strong>UNCONTROLLED HIGH BLOOD PRESSURE WITH 2 OR MORE HOSPITALIZATION IN THE LAST 2 YEARS – </strong>If you have had two or more hospitalizations in the last two years, your best option is often guaranteed acceptance life insurance.</p>
 

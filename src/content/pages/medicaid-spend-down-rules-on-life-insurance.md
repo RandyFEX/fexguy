@@ -21,7 +21,7 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Medicaid can count your life insurance as an asset<br>• Too much cash value can disqualify you from Medicaid benefits<br>• Term life usually doesn’t count because it has no cash value<br>• Whole life and burial insurance can affect eligibility if structured incorrectly<br>• Cashing out a policy can trigger penalties or delays<br>• Not planning correctly can cost you benefits and waste money</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Medicaid can count your life insurance as an asset<br>• Too much cash value can disqualify you from Medicaid benefits<br>• Term life usually doesn’t count because it has no cash value<br>• Whole life and burial insurance can affect eligibility if structured incorrectly<br>• Giving away or transferring a policy can trigger penalties or delays<br>• Not planning correctly can cost you benefits and waste money</p>
 
 <p>Medicaid spend-down rules for life insurance determine whether your policy counts against your asset limits. Term life insurance usually doesn’t matter because it has no cash value. Whole life and burial insurance can count if the cash value goes over certain limits, which can affect your eligibility. The key is how the policy is structured. Some burial insurance policies are designed to stay within Medicaid limits, while others can cause problems if set up incorrectly. Most people don’t realize this until it’s too late, risking the loss of benefits or a delay in approval.</p>
 
@@ -64,9 +64,9 @@ sidebar: true
 
 <h2 id="how-to-qualify-for-medicaid"><strong>How to qualify for Medicaid</strong></h2>
 
-<p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets should not be greater than $2,000 for one person or a maximum of $126,420 for married couples where one of them is trying to obtain Medicaid. </p>
+<p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets must be at or below their state’s limit. Asset limits vary by state and Medicaid category. For people who are 65 or older, blind, or disabled, many states start from the Supplemental Security Income (SSI) rules, which set a $2,000 limit for an individual, but states can use different limits. When one spouse needs nursing home care, the spouse at home can keep a larger protected amount, which changes each year. </p>
 
-<p>Each state has its asset limit, but these figures are used as a rule of thumb.</p>
+<p>Check the limit that applies in your parents’ state.</p>
 
 <p>There are two categories of assets – exempt and not-exempt. Exempt assets don’t factor in Medicaid <a rel="noreferrer noopener" href="/final-expense-life-insurance-medicaid/" target="_blank">eligibility</a>, while non-exempt assets are subject to the state’s spend-down requirements.</p>
 
@@ -74,21 +74,21 @@ sidebar: true
 
 <p>Exempt assets allow Medicaid applicant to keep their assets and qualify for Medicaid benefits. The biggest asset exemption is your parent’s family home and other necessary assets like the vehicle.</p>
 
-<p>Some types of qualified annuities are counted as exempt assets, income-producing IRA, and others. Converting some assets into Medicaid-friendly annuities or trusts requires Medicaid repayment or recovery.</p>
+<p>Some types of qualified annuities are counted as exempt assets, income-producing IRA, and others. Converting assets into annuities or trusts has strict Medicaid rules that vary by state, and some of these arrangements can still be subject to repayment to the state. Talk with an elder-law attorney before using one.</p>
 
 <p><br><strong>Non-exempt Medicaid Assets</strong></p>
 
-<p>The cash value in a whole life insurance policy does count as an asset. The cash value on your parent’s permanent life insurance is a non-exempt asset. </p>
+<p>Unless an exclusion applies (such as the face value rule explained below), the cash value in a whole life insurance policy does count as an asset. The cash value on your parent’s permanent life insurance is a non-exempt asset. </p>
 
 <p>Regardless if it’s a whole life or universal life insurance policy. Like other non-exempt assets, the cash value is subject to the spend-down rule. </p>
 
-<p>Cash value must be spent down to qualify for Medicaid.</p>
+<p>If countable cash value puts your parent over the limit, it may have to be spent down before they qualify for Medicaid.</p>
 
 <p><br><strong>Asset Transfer Alert</strong></p>
 
-<p>Depending on the state laws, Medicaid has a look-back period ranging between 36 months to five years. Gifting away or transferring assets for less than fair market value must be done before applying for Medicaid. If you don’t do this right, it may result in Medicaid penalties due to the look-back period requirements.</p>
+<p>For long-term care Medicaid (nursing home care and home and community-based waiver services), Medicaid looks back five years (60 months) before the application for assets that were given away or sold for less than fair market value. A transfer during the look-back period can result in a penalty period during which Medicaid won’t pay for long-term care.</p>
 
-<p>The look-back period also applies to life insurance and other non-exempt assets. To follow Medicaid’s spend-down rules, a life insurance policy should be surrendered for its cash value or converted to market value, and the proceeds can be used for long-term medical care.</p>
+<p>The look-back period also applies to life insurance and other non-exempt assets. Giving a policy with cash value to someone else, or changing the owner, can count as a transfer of assets. Surrendering a policy and using the cash for care is one way to spend down, but it ends the coverage.</p>
 
 <h2 id="understanding-life-insurance-impact-on-medicaid-eligibility"><br><strong>Understanding life insurance impact on Medicaid eligibility</strong></h2>
 
@@ -126,11 +126,11 @@ sidebar: true
 
 <p>Not all types of life insurance are considered assets. </p>
 
-<p>Small permanent life insurance policies are exempted from the calculation of assets according to Medicaid law. If your parent’s policy’s face value is $1,500 or less, it won’t count as a countable asset. However, if the policy’s face value exceeds $1,500, it is considered an available asset and will be counted for the $2,000 asset limit.</p>
+<p>Small permanent life insurance policies can be excluded from the calculation of assets. Under the SSI rules many states use, if the total face value of all life insurance on a person is $1,500 or less, none of the cash surrender value counts. If the total face value exceeds $1,500, the cash surrender value counts toward the asset limit. Term insurance, and burial insurance whose terms say the proceeds can only pay burial expenses, aren’t included in that face value total.</p>
 
 <p>For example, your parent has a $1,400 whole life insurance with a $700 cash value. The insurance policy is considered a non-countable asset and exempt from Medicaid.</p>
 
-<p>If your parents have permanent life insurance with a $1,600 face value and $800 cash value, the cash surrender value will count toward Medicaid’s $2,000 asset limit. If your parents only had $1,200 face value insurance, they would pass the Medicaid asset requirement for long-term care.</p>
+<p>If your parents have permanent life insurance with a $1,600 face value and $800 cash value, the cash surrender value will count toward their state’s asset limit. If your parents only had $1,200 face value insurance, the cash value wouldn’t count.</p>
 
 <p>But what if your parent owns a $100,000 face value term insurance? The policy is exempted since the term policy does not have a cash value.</p>
 
@@ -146,19 +146,19 @@ sidebar: true
 
 <p>Your father lives in Texas and has a permanent life insurance policy with a face amount of $1,300 with a $600 cash surrender value. If the Medicaid exemption limit in his state for life insurance is $1,500. Therefore, your father’s permanent insurance policy is exempted and will not be counted towards Medicaid’s asset limit.</p>
 
-<p>Your mother lives in Illinois; the allowed exemption in the state is $1,500. If your mom owns two whole life insurance policies with a $1,200 face value and $400 cash value and the second policy with a $1,400 face value and $600 cash value, the sum of the face value equals $2,600, and your mom exceeds the exemption limit. Therefore, the cash value of the two policies amounting to $1,100 will be a countable asset.</p>
+<p>Your mother lives in Illinois; the allowed exemption in the state is $1,500. If your mom owns two whole life insurance policies with a $1,200 face value and $400 cash value and the second policy with a $1,400 face value and $600 cash value, the sum of the face value equals $2,600, and your mom exceeds the exemption limit. Therefore, the cash value of the two policies amounting to $1,000 will be a countable asset.</p>
 
 <p>If your parents have a life insurance policy that may disqualify them from Medicaid, they have an option to qualify through Medicaid’s spend-down.</p>
 
 <h2 id="medicaid-spend-down-rules-on-life-insurance"><br><strong>Medicaid spend down rules on life insurance</strong></h2>
 
-<p>Can life insurance affect Medicaid eligibility? Yes. To qualify for Medicaid, your assets must be less than $2,000. So life insurance can be an asset depending on the type of life insurance and the policy’s value.</p>
+<p>Can life insurance affect Medicaid eligibility? Yes. To qualify for Medicaid, your countable assets must be at or below your state’s limit (often $2,000 for an individual in programs that follow the SSI rules). So life insurance can be an asset depending on the type of life insurance and the policy’s value.</p>
 
 <p>Medicaid law in most states exempts small whole life insurance policies from the calculation of assets. If your policy’s face value is less than $1,500, it won’t be considered an asset for Medicaid eligibility purposes. </p>
 
 <p>However, if your policy’s face amount is more than $1,500, the cash surrender value counts as an available asset.</p>
 
-<p>All non-exempt assets must be spent down five years before your parents apply for Medicaid and qualify for Medicaid’s asset limit.</p>
+<p>Your parents’ countable assets must be at or below the limit when they apply. Assets given away or sold for less than fair market value during the five-year look-back period before a long-term care Medicaid application can cause a penalty period.</p>
 
 <h2 id="how-to-spend-down-on-life-insurance"><br><strong>How to spend down on life insurance</strong></h2>
 
@@ -168,9 +168,9 @@ sidebar: true
 
 <p><br><strong>Transfer the policy</strong></p>
 
-<p>If your mother does not require long-term care Medicaid, you can transfer your father’s life insurance to her (non-applicant). The cash value on your dad’s plan would then go to your mom’s resource allowance. As of this year, most states permit the non-applicant spouse to own assets up to $128,640.</p>
+<p>If your mother does not require long-term care Medicaid, moving your father’s life insurance to her (the non-applicant spouse) may be an option. But this doesn’t automatically protect the policy: when one spouse applies for nursing home Medicaid, the spouse at home can keep only a protected amount that changes each year. Check your state’s rules before changing ownership.</p>
 
-<p>Transferring your father’s insurance policy to a funeral home to pay for a non-cancellable burial plan is another possible option. Burial plans are exempted from Medicaid’s asset limit.</p>
+<p>Transferring your father’s insurance policy to a funeral home to pay for a non-cancellable (irrevocable) burial plan is another possible option. Irrevocable burial plans are often excluded from countable assets, depending on state rules.</p>
 
 <p>Transferring your father’s policy to you or your adult siblings is not recommended because it is considered a gift that may violate Medicaid’s look-back rule. </p>
 
@@ -184,7 +184,7 @@ sidebar: true
 
 <p><br><strong>Sell the Policy</strong></p>
 
-<p>Your parents can sell their policy to relatives or friends at cash surrender value. The buyer can pay the premiums to keep the policy active. Since your parents are no longer the policy owner, it will not be counted as an asset.</p>
+<p>Your parents can sell their policy to relatives or friends at cash surrender value. The buyer can pay the premiums to keep the policy active. Since your parents are no longer the policy owner, the policy itself won’t be counted as their asset, but the money they receive counts, and selling for less than the policy is worth can be treated as a transfer under the look-back rules.</p>
 
 <p>A viatical settlement is another option to sell life insurance. They can sell the insurance policy to a settlement company that will be the beneficiary and takes over the premium payment. This is a good option for people with a life expectancy of 20 years or less.</p>
 
@@ -198,7 +198,7 @@ sidebar: true
 
 <p><br><strong>Important Note:</strong></p>
 
-<p>Before implementing any planning technique, you must be cautious not to violate Medicaid’s look-back rule. Most states have a five-year look-back period where they look at all your previous asset transfers to ensure you do not gift or sell assets under fair market value. If you violate Medicaid’s look-back rule, it will result in ineligibility.</p>
+<p>Before implementing any planning technique, you must be cautious not to violate Medicaid’s look-back rule. Long-term care Medicaid has a five-year look-back period to check whether you gave away or sold assets for less than fair market value. A transfer that breaks the rule can result in a penalty period during which Medicaid won’t pay for long-term care.</p>
 
 <p>Research Medicaid spend-down rules on life insurance in your state before making any spend-down strategy with a life insurance policy. It is best to talk to your attorney to determine the best strategy for your parents.</p>
 
@@ -206,7 +206,7 @@ sidebar: true
 
 <p><strong>What does insurance spend down mean?</strong></p>
 
-<p>This is a term used in the Medicaid program. It means that before Medicaid can pay for nursing home care, the person’s life insurance must be used to pay for care. The only exception is if the life insurance policy has a cash value, Medicaid will not require that it be used to pay for nursing home care.</p>
+<p>This is a term used in the Medicaid program. It means using money or assets, including a life insurance policy’s countable cash value, to bring countable assets down to the Medicaid limit before Medicaid pays for nursing home care. Medicaid doesn’t count the death benefit, but it can count a policy’s cash surrender value unless an exclusion applies, such as the $1,500 face value rule many states use.</p>
 
 <p><br><strong>Is Medicaid part of Medicare?</strong></p>
 
@@ -214,7 +214,7 @@ sidebar: true
 
 <p><br><strong>Can I get both Medicaid and Medicare?</strong></p>
 
-<p>It depends on your income and assets. If you have too much money or too many assets, you will not be able to get both Medicaid and Medicare. However, if you have too little income or assets, you will not be able to get Medicaid.</p>
+<p>Yes, many people qualify for both. Whether you can get Medicaid depends on your state’s income and asset rules.</p>
 
 <p><br><strong>What is the difference between Medicaid and Medicare?</strong></p>
 
@@ -230,15 +230,15 @@ sidebar: true
 
 <p><br><strong>Can you have Medicaid and private insurance?</strong></p>
 
-<p>It depends on your income and assets. If you have too much money or too many assets, you will not be able to have both Medicaid and private insurance. However, if you have too little income or assets, you will not be able to have Medicaid.</p>
+<p>Yes, you can have private insurance and Medicaid at the same time. Whether you qualify for Medicaid depends on your state’s income and asset rules.</p>
 
 <p><br><strong>What is the asset limit for Medicaid?</strong></p>
 
-<p>There is no asset limit for Medicaid. However, if you have too much money or too many assets, you will not be able to get Medicaid.</p>
+<p>It depends on your state and Medicaid category. Programs for people who are 65 or older, blind, or disabled that follow the SSI rules generally start from a $2,000 limit for an individual, but states can use different limits. Contact your state Medicaid agency for the limit that applies to you.</p>
 
 <p><br><strong>What is the income limit for Medicaid?</strong></p>
 
-<p>The income limit for Medicaid depends on your state. In some states, there is no income limit; in others, the income limit is very low. You can contact your state Medicaid agency to determine your state’s income limit.</p>
+<p>The income limit for Medicaid depends on your state and the Medicaid program. You can contact your state Medicaid agency to determine your state’s income limit.</p>
 
 <p><br><strong>Can I keep my house if I go on Medicaid?</strong></p>
 
@@ -254,7 +254,7 @@ sidebar: true
 
 <p><br><strong>What is a Medicaid spend down?</strong></p>
 
-<p>A spend down is when you use your money or assets to bring your income or assets below the limit for Medicaid. This can be done by spending money on food, clothes, or medical care. You can also give them money to someone else or use it to pay for nursing home care.</p>
+<p>A spend down is when you use your money or assets to bring your income or assets below the limit for Medicaid. This can be done by spending money on medical care, nursing home care, or other allowable expenses. Giving money away to someone else can cause a penalty under the look-back rules.</p>
 
 <p><br><br><strong>What is a Medicaid waiver?</strong></p>
 
@@ -266,7 +266,7 @@ sidebar: true
 
 <p><br><strong>How does Medicaid spend down work?</strong></p>
 
-<p>Spend down works by reducing your income or assets until they are below the limit for Medicaid. This can be done by spending money on food, clothes, or medical care. You can also give the money to someone else or use it to pay for nursing home care.</p>
+<p>Spend down works by reducing your income or assets until they are below the limit for Medicaid. This can be done by spending money on medical care, nursing home care, or other allowable expenses. Giving the money to someone else can cause a penalty under the look-back rules.</p>
 
 <p><br><strong>Can I get Medicaid if I have a job?</strong></p>
 
@@ -284,9 +284,9 @@ sidebar: true
 
 <p>The disadvantages of Medicaid are that it has very low income and asset limits and can be hard to qualify for.</p>
 
-<p><br><strong>What is the highest income to qualify for Medicaid 2022?</strong></p>
+<p><br><strong>What is the highest income to qualify for Medicaid?</strong></p>
 
-<p>There is no income limit for Medicaid. However, if you have too much money or too many assets, you will not be able to get Medicaid.</p>
+<p>Income limits vary by state and Medicaid program, and they change each year. Contact your state Medicaid agency for the current limits.</p>
 
 <p><br><strong>How do you qualify for Medicaid?</strong></p>
 
@@ -322,7 +322,7 @@ sidebar: true
 
 <p><br><strong>Do you have to pay back Medicaid?</strong></p>
 
-<p>No, you do not have to pay back Medicaid.</p>
+<p>You don’t pay Medicaid back while you receive benefits. But after a Medicaid recipient dies, the state may seek repayment from their estate for certain Medicaid costs (estate recovery). Recovery can’t be made while a surviving spouse is alive, or when there is a surviving child under age 21 or a child who is blind or disabled. Each state sets its own estate recovery rules, so check with your state.</p>
 
 <p><br><strong>Which state has best Medicaid program?</strong></p>
 
@@ -354,7 +354,7 @@ sidebar: true
 
 <p><br><strong>How do I contact my local Medicaid office?</strong></p>
 
-<p>You can contact your local Medicaid office by contacting your state Medicaid agency or calling 1-800-633-4227.</p>
+<p>You can contact your local Medicaid office through your state Medicaid agency.</p>
 
 <p><br><strong>How many people are on Medicaid?</strong></p>
 
@@ -363,6 +363,16 @@ sidebar: true
 <p><br><strong>Who finances Medicaid?</strong></p>
 
 <p>Medicaid is financed by both state and federal governments.</p>
+
+<h2><strong>Sources</strong></h2>
+
+<ul>
+<li>Electronic Code of Federal Regulations, <a href="https://www.ecfr.gov/current/title-20/chapter-III/part-416/subpart-L/section-416.1205" target="_blank" rel="noreferrer noopener">20 CFR 416.1205</a>, Limitation on resources (SSI)</li>
+<li>Electronic Code of Federal Regulations, <a href="https://www.ecfr.gov/current/title-20/chapter-III/part-416/subpart-L/section-416.1230" target="_blank" rel="noreferrer noopener">20 CFR 416.1230</a>, Exclusion of life insurance (SSI)</li>
+<li>Electronic Code of Federal Regulations, <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.601" target="_blank" rel="noreferrer noopener">42 CFR 435.601</a>, Application of financial eligibility methodologies (Medicaid)</li>
+<li>Electronic Code of Federal Regulations, <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-433/subpart-A/section-433.36" target="_blank" rel="noreferrer noopener">42 CFR 433.36</a>, Liens and recoveries (Medicaid)</li>
+<li>Medicaid.gov, <a href="https://www.medicaid.gov/medicaid/eligibility-policy" target="_blank" rel="noreferrer noopener">Eligibility Policy</a> (transfer of assets and the five-year look-back)</li>
+</ul>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
 

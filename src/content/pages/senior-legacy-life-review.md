@@ -27,11 +27,13 @@ sidebar: true
 
 <p>Senior Legacy Life Insurance is NOT an insurance company. They DO NOT issue policies, pay claims, or provide any coverage.</p>
 
+<p>According to its own website, Senior Legacy Life is a branded referral network and a dba (doing-business-as name) of MJ Ventures LLC. The site says Senior Legacy Life does not sell insurance and is not an insurance company or agency.</p>
+
 <p>They are a marketing organization. They get somebody to call a toll-free number after seeing an ad.</p>
 
 <p>When you call Senior Legacy Life, you are asked to provide your information, and Senior Legacy Life will then sell your personal information to life insurance agents (often inexperienced “newby” agents) who will then call you and try to sell you their insurance product (often overpriced).</p>
 
-<p>This means you are giving your information over to a stranger company and agent. That agent pays for your info, often around $30-$60 on average for your private information.</p>
+<p>This means you are giving your information over to a stranger company and agent. That agent pays for your private information.</p>
 
 <p>Many seniors who have contacted Senior Legacy Life were absolutely shocked to learn that their personal information is being “sold”. Feelings of being violated in some cases.</p>
 
@@ -154,18 +156,14 @@ sidebar: true
 
 <h2 id="h-senior-legacy-life-frequently-asked-questions"><strong>Senior Legacy Life frequently asked questions</strong></h2>
 
-<p><strong>Is Senior Legacy Life legit?</strong> It is a legitimate insurance carrier. However, many consumers cite high premiums with little to no benefits, and they don’t actually sell life insurance.</p>
+<p><strong>Is Senior Legacy Life legit?</strong> It is a legitimate marketing business, not an insurance carrier. However, many consumers cite high premiums with little to no benefits, and they don’t actually sell life insurance.</p>
 
-<p><strong>Is Senior Legacy Life legitimate?</strong> Yes, it operates legally. However, it doesn’t actually sell life insurance. They just collect your information and sell it to life insurance agents willing to spend up to $30-$60 for your information.</p>
+<p><strong>Is Senior Legacy Life legitimate?</strong> Yes, it operates legally. However, it doesn’t actually sell life insurance. They just collect your information and sell it to life insurance agents willing to pay for your information.</p>
 
 <p><strong>Is Senior Legacy Life a good insurance company?</strong> Better pricing and options are available when working with independent agents such as The Final Expense Guy.</p>
 
-<p><strong>How much is Senior Legacy Life Insurance?</strong> Costs vary based on age and health, but premiums are typically higher than those of other senior life carriers.</p>
+<p><strong>How much is Senior Legacy Life Insurance?</strong> Costs vary based on age and health, but premiums are typically higher than those of the senior life carriers you can compare through an independent agent.</p>
 
 <p><strong>What is a good insurance company for seniors?</strong> A good insurance company for seniors is the Final Expense Guy. They offer affordable rates, and coverage begins immediately. An independent insurance agent will compare the best options available.</p>
 
 <p><strong>Can seniors get life insurance?</strong> Yes, seniors can qualify for life insurance, even if they have health issues. Most applicants qualify for simplified or guaranteed issue whole life plans.</p>
-
-<p><strong>Where is Senior Life Insurance Company located?</strong> They are located in Thomasville, Georgia.</p>
-
-<p><strong>Senior Life Insurance Company reviews</strong><br>Mixed reviews tell a story with common complaints about cancellations, bad customer service, and high premiums.</p>

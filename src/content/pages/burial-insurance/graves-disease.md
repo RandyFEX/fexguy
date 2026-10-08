@@ -197,7 +197,7 @@ you from qualifying for a level death benefit plan.</p>
 
 <p><br><strong>PRESCRIPTION HISTORY CHECK</strong></p>
 
-<p>Some companies treat Graves’ disease as a high-risk condition if you have a prescription medication history with radioactive iodine, Propylthiouracil, or Methimazole. If they find those medications in your prescription history, they will deny your application or impose a waiting period on your plan.</p>
+<p>Some companies treat Graves’ disease as a high-risk condition if you have a prescription medication history with radioactive iodine, Propylthiouracil, or Methimazole. If they find those medications in your prescription history, they may deny your application or impose a waiting period on your plan.</p>
 
 <p>However, we work with burial insurance companies that don’t even care about Graves’ disease or Graves’ disease medication if they are considered maintenance medications. A well-managed Graves disease or hyperthyroidism does not pose a serious concern in burial insurance underwriting.</p>
 

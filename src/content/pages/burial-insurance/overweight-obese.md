@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance for Overweight and Obese People</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Being overweight won’t automatically disqualify you from burial insurance<br>• Higher BMI usually means higher rates and stricter underwriting rules<br>• Obesity can limit coverage amounts or trigger waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Many people assume denial when approval is still very possible<br>• Not comparing companies can lead to paying way more than needed</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Being overweight won’t automatically disqualify you from burial insurance<br>• Higher BMI usually means higher rates and stricter underwriting rules<br>• Obesity can limit coverage amounts or trigger waiting periods<br>• Your company, your state, and your other health conditions decide your options<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Many people assume denial when approval is still very possible<br>• Not comparing companies can lead to paying way more than needed</p>
 
 <p>Affordable burial insurance for overweight and obese people is more common than most expect. Insurance companies use your height and weight to calculate BMI and estimate health risk, which affects your price and options. Higher BMI is linked to conditions like heart disease and diabetes, so premiums often increase or coverage gets limited. Burial insurance, which is a type of whole life insurance, is usually the easiest option because it accepts higher-risk applicants. The key is how severe your weight-related issues are and choosing the right company, since underwriting rules vary widely.</p>
 
@@ -479,10 +479,6 @@ sidebar: true
 <p><br><strong>How does weight affect life insurance rates?</strong></p>
 
 <p>There is no relationship between weight and life insurance premiums. However, losing weight can improve your health and reduce your risk of health problems. This could make it easier for you to get life insurance.</p>
-
-<p><br><strong>Can you be denied health insurance because of weight?</strong></p>
-
-<p>Yes, you can be denied health insurance because of weight. However, this is becoming less common. Most insurance companies will not deny coverage to people who are overweight or obese.</p>
 
 <p><br><strong>What weight do you have to be to get life insurance?</strong></p>
 

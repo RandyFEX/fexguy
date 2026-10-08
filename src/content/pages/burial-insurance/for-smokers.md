@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>Burial Insurance for Smokers [Ex and Current]</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Smokers can get burial insurance, but you’ll pay higher premiums<br>• Most smokers pay 30% to 50% more than non-smokers<br>• Any tobacco use in the last 12 months counts against you<br>• Lying about smoking can void your policy and deny your payout<br>• Many smokers assume denial when approval is usually still possible<br>• Not comparing companies can cost you hundreds or thousands extra</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Smokers can get burial insurance, but you’ll usually pay higher premiums<br>• Most smokers pay 30% to 50% more than non-smokers<br>• Any tobacco use in the last 12 months usually counts against you<br>• Lying about smoking can void your policy and deny your payout<br>• Many smokers assume denial when approval is usually still possible<br>• Not comparing companies can cost you hundreds or thousands extra</p>
 
-<p>Burial insurance for smokers is widely available, but it comes at a cost. Smoking is considered a higher risk, so insurance companies charge more, often 30% to 50% higher than non-smoker rates. Burial insurance, which is a type of whole life insurance, is still one of the easiest options to qualify for because it usually doesn’t require a medical exam. The key factor is timing. If you’ve used tobacco in the last 12 months, you’ll be rated as a smoker. Wait long enough after quitting, and your rates can drop significantly. Most people don’t realize how much that timing affects what they pay.</p>
+<p>Burial insurance for smokers is widely available, but it comes at a cost. Smoking is considered a higher risk, so most insurance companies charge more, often 30% to 50% higher than non-smoker rates. Burial insurance, which is a type of whole life insurance, is still one of the easiest options to qualify for because it usually doesn’t require a medical exam. The key factor is timing. If you’ve used tobacco in the last 12 months, you’ll usually be rated as a smoker. Wait long enough after quitting, and your rates can drop significantly. Most people don’t realize how much that timing affects what they pay.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -59,8 +59,7 @@ sidebar: true
 
 <p>Most insurance companies will ask if you’ve ever used cigarettes in the last 12 months. You need to answer the health question about smoking honestly. If you answer “no” to the smoking question, you may be guilty of committing insurance fraud, even if you only had one cigarette in the past year.</p>
 
-<p>Because of the harmful effects of smoking cigarettes, no
-insurance companies will issue a nonsmoker rate to cigarette users.</p>
+<p>Because of the harmful effects of smoking cigarettes, most insurance companies will not issue a nonsmoker rate to cigarette users.</p>
 
 <p>Most insurance companies will require you to quit smoking cigarettes for at least 12 months before considering you a nonsmoker and decreasing your rate.</p>
 
@@ -68,7 +67,7 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 
 <p><br><strong>CIGARS AND PIPES</strong></p>
 
-<p>Smoking any tobacco products will result in you qualifying for smoker rates. Smoking just one cigar or pipe per month and never using other tobacco products is still considered tobacco use if done within the last 12 months.</p>
+<p>Smoking any tobacco products will usually result in you qualifying for smoker rates. Smoking just one cigar or pipe per month and never using other tobacco products is still considered tobacco use by most companies if done within the last 12 months.</p>
 
 <p><strong>Best Option:</strong> First-day coverage plan</p>
 
@@ -99,8 +98,6 @@ insurance companies will issue a nonsmoker rate to cigarette users.</p>
 <p>You can get insurance coverage even if you smoke marijuana. Depending on the insurance company, you may or may not be classified as a smoker. However, you will be charged a smoker rate if you qualify for coverage.</p>
 
 <p>If you use marijuana to treat a medical condition, your premium will depend on the medical condition it’s been treating.  Some companies ask about using any illegal drugs, which may result in a denial of coverage.</p>
-
-<p>If you smoke marijuana, your privacy is guaranteed by HIPAA Law.</p>
 
 <p><strong>Best Option</strong>: First-day coverage plan with Nonsmoker rate</p>
 
@@ -246,13 +243,13 @@ smoking question</p>
 
 <p>Most burial insurance companies will use any of these questions to define whether you are a smoker and needed to charge a smoker rate. </p>
 
-<p>A smoker is anybody who smokes or used any tobacco products in the last 12 months. You will be subject to the tobacco rate if you have smoked even one cigarette or cigar within that last year. </p>
+<p>A smoker is anybody who smokes or used any tobacco products in the last 12 months. With most companies, you will be subject to the tobacco rate if you have smoked even one cigarette or cigar within that last year.</p>
 
 <p>The companies do not care about the volume you smoke. It could be one cigar, one cigarette, or one nicotine gum. They won’t ask how many tobacco products you smoke per day. You should answer yes if you did.</p>
 
 <p>You need to stop smoking for 12 months before being considered a nonsmoker and offered a nonsmoker rate.</p>
 
-<p>Smokers are considered higher-risk applicants, so every insurance company imposes a more expensive premium rate on smokers and tobacco product users. </p>
+<p>Smokers are considered higher-risk applicants, so most insurance companies impose a more expensive premium rate on smokers and tobacco product users.</p>
 
 <p>Generally, smoker rates are 30-45% higher than the standard rate – although the exact premium will vary between insurance companies.</p>
 
@@ -267,7 +264,7 @@ smoking question</p>
 
 <p id="SMOKING-AND-BURIAL-INSURANCE-APPLICATION"> <br><strong>SMOKING AND BURIAL INSURANCE APPLICATION</strong> </p>
 
-<p>Every insurance company will ask if you smoke or use any tobacco products in their application. Lying about smoking on the life <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">insurance application</a> is a bad idea, and we strongly recommend against it, as you won’t be able to hide the fact that you are a smoker. </p>
+<p>Most insurance companies will ask if you smoke or use any tobacco products in their application. Lying about smoking on the life <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">insurance application</a> is a bad idea, and we strongly recommend against it, as you won’t be able to hide the fact that you are a smoker. </p>
 
 <p>First, your life insurance application will ask you if you smoke. If you do, you need to be honest and answer “yes” to the smoking question. Hiding this fact is a form of insurance fraud.</p>
 
@@ -431,7 +428,7 @@ smoking question</p>
 
 <p>It’s no wonder the insurance industry charge more on smokers. They are more likely to pay out a death benefit much earlier than they would have on policies for nonsmokers.</p>
 
-<p>However, if you quit smoking for good, you can decrease the risk of dying prematurely from smoking-related diseases by up to 90%. </p>
+<p>However, if you quit smoking for good, you can decrease the risk of dying prematurely from smoking-related diseases by up to 90%.</p>
 
 <p>If you quit using tobacco products for 12 months, it’s possible to have the insurance company e-evaluate your smoking situation and lower your premium payments.</p>
 
@@ -448,8 +445,6 @@ smoking question</p>
 </ul>
 
 <p>The cost of burial insurance for smokers versus nonsmokers are based on age. The price of coverage increases as you get older. </p>
-
-<p>The premium for burial insurance for smokers is 150% to 340% more than for nonsmokers.</p>
 
 <p>Each insurance company has a unique way of computing your rate. Smoking and your general health will help determine your premium. If you’re a current smoker, your premium would be higher when you buy burial or final expense insurance. </p>
 
@@ -575,7 +570,7 @@ smoking question</p>
 
 <p><br><strong>Can your lungs heal themselves after quitting smoking?</strong></p>
 
-<p>Yes, your lungs can heal themselves after quitting smoking. This is because the damage caused by smoking is reversible.</p>
+<p>Yes, your lungs can partly heal themselves after quitting smoking. This is because some of the damage caused by smoking is reversible.</p>
 
 <p><br><strong>Can I get life insurance if I’m a smoker and I have asthma?</strong></p>
 
@@ -636,10 +631,6 @@ smoking question</p>
 <p><br><strong>How much shorter do smokers live?</strong></p>
 
 <p>Smokers typically live around 10 years shorter than nonsmokers. Smoking causes many health problems, such as heart disease and lung cancer.</p>
-
-<p><br><strong>How long does it take for a smoker to get black lungs?</strong></p>
-
-<p>It can take smokers anywhere from 5 to 10 years to get black lungs. However, this varies depending on the person’s health and lifestyle.</p>
 
 <p><br><strong>What is the difference between a smoker and a nonsmoker life insurance?</strong></p>
 

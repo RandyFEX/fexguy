@@ -80,7 +80,7 @@ sidebar: true
 
 <p>You are considered cancer-free by most burial insurance companies after two years have passed since your last treatment. </p>
 
-<p>It’s very unusual for a final expense company to ask about melanoma or skin cancer beyond the two-year mark. You will easily qualify for level death benefit with first-day coverage and no waiting period on most final expense companies.</p>
+<p>It’s unusual for a final expense company to ask about melanoma or skin cancer beyond the two-year mark, although some companies look back three years. You may qualify for level death benefit with first-day coverage and no waiting period on most final expense companies.</p>
 
 <p><strong>Best Option</strong>: First-day coverage plan</p>
 
@@ -91,6 +91,8 @@ sidebar: true
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance with a waiting period</p>
 
 <p><strong>Important note</strong>: You cannot avoid a waiting period if you have been treated for melanoma within the last two years. If you pass during the waiting period, your beneficiaries will not receive the full death benefit; instead, they will receive the refund of all your premiums plus interest.</p>
+
+<p><strong>Melanoma vs. basal and squamous cell skin cancer:</strong> Melanoma is treated as a serious cancer in underwriting. Previously treated <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/">basal cell and squamous cell skin cancers</a> are underwritten differently and generally do not prevent first-day coverage.</p>
 
 <h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 

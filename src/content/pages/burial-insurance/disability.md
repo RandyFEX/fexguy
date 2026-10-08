@@ -11,7 +11,17 @@ sidebar: true
 
 <h1>Affordable Burial Insurance With Disability</h1>
 
-<p>Purchasing burial insurance with a disability is not out of reach. In fact, the <a href="https://www.ada.gov/" target="_blank" rel="noreferrer noopener">American Disabilities Act</a> prevents anyone from denying coverage to anyone because of their disability.</p>
+<p><strong>Here’s the Bottom Line:</strong></p>
+
+<ul>
+<li>The cause of your disability and your actual limitations matter more than the disability label</li>
+<li>Chronic pain, diabetes, mental health conditions and many heart conditions can still qualify for first-day coverage</li>
+<li>If you currently need another person’s help with activities of daily living, guaranteed issue burial insurance is your option</li>
+<li>Receiving Social Security disability (SSDI) or VA disability benefits is not an automatic denial</li>
+<li>Current cancer, remission or recent cancer treatment usually means guaranteed issue with a two-year waiting period</li>
+</ul>
+
+<p>Purchasing burial insurance with a disability is not out of reach. Your options depend on what caused your disability and how it affects your daily life, not on the fact that you are disabled.</p>
 
 <p>Most insurance companies handle disability applications on a case-to-case basis. Even if your application was denied in the past, there are still some options open for you to get life insurance coverage.</p>
 
@@ -553,14 +563,6 @@ sidebar: true
 <p><br><strong>Is disability insurance a waste of money?</strong></p>
 
 <p>No, disability insurance is not a waste of money. These policies provide a valuable benefit in the event of an unexpected illness or disability.</p>
-
-<p><br><strong>What is the most approved disability?</strong></p>
-
-<p>The most approved disability is cancer. Cancer is one of the most common conditions that qualify for disability benefits.</p>
-
-<p><br><strong>What is the number one disability in the world?</strong></p>
-
-<p>The number one disability in the world is stroke. Stroke is responsible for more disabilities than any other condition.</p>
 
 <p><br><strong>Does burial insurance affect SSI benefits?</strong></p>
 

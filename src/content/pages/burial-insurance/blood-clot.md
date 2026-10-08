@@ -73,7 +73,7 @@ sidebar: true
 
 <p><br><strong>TREATMENT OVER ONE YEAR BUT WITHIN THE LAST 24 MONTHS</strong></p>
 
-<p>If your blood clot treatment is over one year, but within the last 24 months, you will qualify for a first-day benefit plan. </p>
+<p>If your blood clot treatment is over one year, but within the last 24 months, you will qualify for a first-day benefit plan (a graded plan, not full first-day coverage). </p>
 
 <p>You will be covered from the first day, and your death benefit will be phased in over time.</p>
 

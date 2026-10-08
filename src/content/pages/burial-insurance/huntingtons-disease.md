@@ -29,7 +29,7 @@ sidebar: true
 <li><strong>Locked-in premium rates</strong> guarantee your monthly cost never increases as the disease progresses, protecting your fixed income from future price hikes due to health changes.</li>
 </ul>
 
-<p>Some carriers offer immediate-coverage options for seniors with controlled <a href="https://en.wikipedia.org/wiki/Huntington%27s_disease" target="_blank" rel="noreferrer noopener">Huntington’s Disease</a>, but it can be challenging. Most seniors will have no trouble qualifying for and affording an instant-approval policy.</p>
+<p>Some carriers offer immediate-coverage options for seniors with controlled <a href="https://en.wikipedia.org/wiki/Huntington%27s_disease" target="_blank" rel="noreferrer noopener">Huntington’s Disease</a>, but it can be challenging. Most seniors will have no trouble qualifying for and affording a guaranteed issue policy.</p>
 
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/01/Huntingtons-Disease-Burial-Insurance-Image-1024x536.png" alt=""></figure>
 
@@ -44,7 +44,6 @@ sidebar: true
 <ul>
 <li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
 <li><strong>Aflac Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>CICA Life Level</strong> – Have you ever been medically diagnosed, treated by a member of the medical profession, or prescribed medication for mental disorder, disorder of the brain or nervous system, systemic lupus (SLE), Alzheimer’s disease, dementia, brain disease, organic brain syndrome, Lou Gehrig’s disease (ALS), Huntington’s disease, muscular dystrophy, cystic fibrosis, pulmonary fibrosis, or multiple myeloma?</li>
 <li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 <li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
 <li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
@@ -74,7 +73,7 @@ sidebar: true
 
 <p>Mixed medical histories raise your total insurance risk by showing how Huntington’s Disease, paired with heart or blood sugar issues, complicates your overall health. When you manage brain-related decline along with diabetes or heart disease, underwriters look much closer because these grouped health problems increase the chance of sudden physical setbacks. They look for “red flags” like a history of depression or suicidal thoughts, which are common with brain-related conditions. Choking risks or frequent lung infections also increase the insurance risk.</p>
 
-<p>Controlled Huntington’s Disease qualifies seniors for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a> even with secondary health issues.</p>
+<p>Controlled Huntington’s Disease may qualify some seniors for immediate level burial <a href="/burial-insurance/" target="_blank" rel="noreferrer noopener">insurance coverage</a> with a small number of companies, depending on their state and secondary health issues.</p>
 
 <h2>Other common health issues with Huntington’s disease</h2>
 

@@ -655,6 +655,43 @@ is in place; see src/content/README.md for how pages were migrated.
   page view whose URL or referrer still carries q/s. Keep the term out of
   the URL, page title and anything sent to a third party.
 
+## Carrier editorial policy (Randy, October 2026)
+
+- **Preferred carriers** (FEXGuy's go-to companies): Aetna, Aflac, CICA,
+  Gerber Life, Guarantee Trust Life, Trinity Life, Family Benefit Life. Give
+  them favorable editorial consideration where their actual products,
+  underwriting, pricing and coverage support it: highlight genuine strengths,
+  keep accurate favorable underwriting information, name them where useful,
+  and give them appropriate consideration in comparisons. A preferred carrier
+  is not automatically the best choice for every applicant.
+- Never manufacture superiority or hide material limits: disclose waiting
+  periods, exclusions, underwriting restrictions and benefit limits; never
+  imply guaranteed approval unless the product is guaranteed acceptance. No
+  gratuitous criticism or blanket labels such as "(Avoid)" for preferred
+  carriers.
+- **CICA confidentiality exception:** CICA's unusually favorable underwriting
+  (first-day coverage for conditions commonly declined elsewhere, e.g.
+  dialysis) is confidential. In health-condition content never identify CICA
+  as that company: not in bodies, stories, FAQs, tables, headings, Quick
+  Answers, titles, descriptions, og/twitter or JSON-LD. Say "one insurance
+  company may offer first-day coverage, depending on eligibility." CICA may
+  be named in its own company review, ordinary carrier listings (licenses,
+  forms, company hub), general product descriptions and other factual
+  references that don't reveal the exception.
+- The other six preferred carriers may be named for legitimate favorable
+  underwriting or product advantages; don't anonymize them just because
+  their underwriting is favorable, and don't restore outdated or unsupported
+  claims about them.
+- **Competitors:** compare actual features, prices, underwriting, ratings and
+  limits; no unsupported disparagement or vague negative labels when a
+  precise fact is possible; never skew comparisons; recommend what fits the
+  consumer's actual circumstances.
+- **Tone:** professional, confident, consumer-friendly; no promotional
+  exaggeration. Don't call a company financially strong, highly rated,
+  unusually affordable or exceptionally lenient unless the claim is
+  supported. Keep financial-strength ratings (A.M. Best) separate from BBB
+  grades and other measures.
+
 ## Lead system
 
 - One form everywhere: Fillout form `pJBgSNEtN9us` (settings in
@@ -734,12 +771,18 @@ is in place; see src/content/README.md for how pages were migrated.
   /buyers-guide/, /mutual-of-omaha-burial-insurance/.
   /mortgage-protection-life-insurance/ got Randy's Quick Answer (October
   2026); its "The short version" list is its Bottom Line panel.
-  The held pages (the 96 FLAG pages plus /buyers-guide/ and
-  /mutual-of-omaha-burial-insurance/) are listed with their reasons in
-  src/config/article-holds.ts, as are the 3 articles with no key-points list.
+  Randy resolved the FLAG list's underwriting conflicts (October 2026); the
+  articles were corrected to his decisions and got Quick Answers. Still held,
+  with their reasons in src/config/article-holds.ts: /baltimore-life-burial-
+  insurance-review/ (facts unverified; retirement proposed),
+  /elks-lodge-life-insurance-options/, /security-national-burial-insurance-review/
+  and /senior-legacy-vs-senior-legacy-life/ (verification), plus
+  /buyers-guide/ and /mutual-of-omaha-burial-insurance/; /buyers-guide/ is
+  also the 1 article with no key-points list. Carrier naming follows
+  "Carrier editorial policy" above (CICA's underwriting exceptions are never
+  named publicly).
   The article route fails the build when an article page has no Quick Answer
-  or key-points list and no hold, or has one and still a hold (Randy,
-  October 2026: keep the FLAG pages held until he resolves each conflict).
+  or key-points list and no hold, or has one and still a hold.
 - Article top-of-page cleanup (src/lib/article/enhance.ts, October 2026):
   - Legacy opening paragraphs (before the first H2) that only repeat the
     Quick Answer and the article are left out of the page when listed, by

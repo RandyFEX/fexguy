@@ -11,9 +11,9 @@ sidebar: true
 
 <h1>CICA Life Burial Insurance Review</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• CICA Life is weaker financially than the top life insurance companies<br>• Guaranteed issue plans have a 2-year delay before full payout<br>• Coverage amounts are small and may not cover the full final expenses<br>• Customer complaints include slow claims and hard-to-reach service<br>• It works for serious health issues when other companies decline you<br>• Better carriers often offer stronger coverage at similar or lower cost</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• AM Best rates CICA Life B++ (Good), a lower financial strength rating than some top competitors<br>• Guaranteed issue plans have a 2-year delay before full payout<br>• Coverage amounts are small and may not cover the full final expenses<br>• It works for serious health issues when other companies decline you<br>• Healthier applicants may find lower first-day rates with other companies</p>
 
-<p>CICA Life burial insurance is a type of whole life insurance designed for final expenses, with easy approval and no medical exam. The appeal is simple. You can qualify even with serious health problems, and some plans offer first-day coverage. The problem is tradeoffs. The company has a lower financial strength rating than top competitors, and guaranteed issue plans come with a 2-year waiting period before full benefits pay. This makes it a backup option, not a first choice, unless your health limits everything else.</p>
+<p>CICA Life burial insurance is a type of whole life insurance designed for final expenses, with easy approval and no medical exam. The appeal is simple. You can qualify even with serious health problems, and some plans offer first-day coverage. The problem is tradeoffs. The company has a lower financial strength rating than top competitors, and guaranteed issue plans come with a 2-year waiting period before full benefits pay. This makes it a strong choice when your health limits everything else.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -306,7 +306,7 @@ sidebar: true
 </tr>
 <tr>
 <td>50</td><td>F: $15.10<br>
-M: $25.23</td><td>F: S30.21<br>
+M: $25.23</td><td>F: $30.21<br>
 M: $32.59</td><td>F: $45.31<br>
 M: $48.89</td><td>F: $60.42<br>
 M: $65.18</td>
@@ -337,7 +337,7 @@ M: $87.32</td>
 M: $24.08<br>
 </td><td>F: $43.05<br>
 M: $48.15</td><td>F: $64.58<br>
-$: 72.23</td><td>F: $86.10<br>
+M: $72.23</td><td>F: $86.10<br>
 M: $96.30</td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ M: $199.38</td><td></td><td></td>
 
 <h3><strong>Does CICA Life have any consumer complaints?</strong></h3>
 
-<p>CICA has 2 complaints closed in the last 3 years with the Better Business Bureau. This is remarkably low for ANY business, which means they are a great company to get a policy from.</p>
+<p>Complaint counts change over time, so check CICA’s current record with the Better Business Bureau or your state insurance department before you buy.</p>
 
 <h2 id="What-Should-You-Know"><strong>What should you know before buying CICA Life insurance?</strong></h2>
 
@@ -466,7 +466,7 @@ CICA Life provides non-forfeiture options for policyholders who cannot continue 
 </details>
 
 <details>
-<summary><b>Does Trinity Life insurance expire?</b></summary>
+<summary><b>Does CICA Life insurance expire?</b></summary>
 Both the Standard plan and guaranteed issue policy provide whole life protection.
 </details>
 
@@ -476,9 +476,9 @@ Yes, you can add or subtract coverage and change beneficiaries and address infor
 </details>
 
 <details>
-<summary><b>What are the common terms used when searching for Trinity Life Insurance</b></summary>
+<summary><b>What are the common terms used when searching for CICA Life Insurance</b></summary>
 <ul>
-Here are some common terms people use when searching for, or describing Trinity Life life insurance Products:
+Here are some common terms people use when searching for, or describing CICA Life insurance Products:
 <li>CICA Life Burial Insurance</li>
 <li>CICA Life Cremation Insurance</li>
 <li>CICA Life Final Expense Insurance</li>

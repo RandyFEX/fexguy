@@ -72,7 +72,7 @@ sidebar: true
 
 <p>Flameless cremation is also more environmentally friendly than embalming or traditional cremation. </p>
 
-<p>This disposition process is currently legal in sixteen states, including California, Colorado, Florida, Georgia, Idaho, Illinois, Kansas, Maine, Maryland, Michigan, Minnesota, Nevada, Oregon, Utah, and Wyoming.</p>
+<p>This disposition process is currently legal in a growing number of states, but not in all of them. Check your state’s current law and whether a provider near you offers it.</p>
 
 <h2 id="benefits-of-flameless-cremation"><br><strong>Benefits of flameless cremation </strong></h2>
 
@@ -134,9 +134,7 @@ sidebar: true
 
 <p>Depending on the state, the cost of alkaline hydrolysis differs.</p>
 
-<p>In Minnesota, flameless cremation cost about $2,400</p>
-
-<p>In Illinois, <a href="https://www.aquagreendispositions.com/" target="_blank" rel="noreferrer noopener">AquaGreen Disposition</a> offers a flameless cremation package with paperwork, urn, and transport for $1,795</p>
+<p>Prices differ from one provider to another, so ask the providers near you for a current price list.</p>
 
 <p>Flameless cremation is cheaper than burial and is price competitive with traditional cremation. This process will benefit those people who can’t afford burial or those who don’t want to be cremated.</p>
 
@@ -248,7 +246,7 @@ underwriting:</strong></p>
 
 <p><a rel="noreferrer noopener" href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank">Guaranteed issue</a> cremation insurance with no health questions is the only insurance option for people with severe medication conditions. GI policy requires no medical exam and health questions. Your approval is guaranteed if you pass the age requirement.</p>
 
-<p><strong>Guaranteed issue cremation insurance is your only insurance option if you have any of the following medical conditions:</strong></p>
+<p><strong>Guaranteed issue cremation insurance is usually your only insurance option if you have any of the following medical conditions:</strong></p>
 
 <ul>
 <li><a href="/burial-insurance/dementia-alzheimers/" target="_blank" rel="noreferrer noopener">Alzheimer’s</a> or Dementia</li>
@@ -256,10 +254,9 @@ underwriting:</strong></p>
 <li><a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">Circulatory surgery</a> within the previous 12 months</li>
 <li>Currently in a hospital, nursing facility, or Hospice Care</li>
 <li>Congestive heart failure</li>
-<li>Heart attack</li>
 <li>HIV or AIDS</li>
 <li>Kidney failure requiring dialysis</li>
-<li>Oxygen use</li>
+<li>Continuous oxygen use</li>
 <li>Terminal Illness</li>
 <li>Recommended to have an organ transplant</li>
 <li>Needing assistance with activities of daily living such as bathing, dressing, toileting, continence, and transferring </li>
@@ -304,7 +301,7 @@ underwriting:</strong></p>
 <ul>
 <li>It is more environmentally friendly than traditional cremation, as it does not produce emissions or pollute the air.</li>
 <li>Flameless cremation can be completed much more quickly than traditional cremation, which typically takes several hours or even days to complete.</li>
-<li>The process is less expensive than traditional cremation, making it a more affordable option for families looking for end-of-life options.</li>
+<li>The process is usually less expensive than a traditional burial, making it a more affordable option for families looking for end-of-life options.</li>
 </ul>
 
 <p><br><strong>Does burial insurance cover flameless cremation?</strong></p>
@@ -329,11 +326,11 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation better than cremation?</strong></p>
 
-<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>How Much Does cremation cost?</strong></p>
 
-<p>The cost of cremation can vary depending on a number of different factors, such as the location and method used. On average, traditional cremation costs range from $1,000 to $3,000. The cost of flameless cremation is typically less expensive.</p>
+<p>The cost of cremation can vary depending on a number of different factors, such as the location and method used. On average, traditional cremation costs range from $1,000 to $3,000. The cost of flameless cremation can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>How long does it take to cremate a body?</strong></p>
 
@@ -345,7 +342,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation cheaper than cremation?</strong></p>
 
-<p>Aquamation is typically less expensive than traditional cremation, as it does not require the use of fuel or other resources. The exact cost of aquamation can vary depending on a number of different factors, such as the location and method used.</p>
+<p>Aquamation is not always less expensive than traditional cremation; its price can be comparable to or higher. The exact cost of aquamation can vary depending on a number of different factors, such as the location and method used.</p>
 
 <p><br><strong>What do aquamation remains look like?</strong></p>
 
@@ -357,11 +354,11 @@ underwriting:</strong></p>
 
 <p><br><strong>What is the difference between aquamation and cremation?</strong></p>
 
-<p>Aquamation is a newer method of body disposition that uses water to break down the body, while cremation uses fire. Aquamation is more environmentally friendly than cremation, as it does not produce emissions or pollution. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>Aquamation is a newer method of body disposition that uses water to break down the body, while cremation uses fire. Aquamation is more environmentally friendly than cremation, as it does not produce emissions or pollution. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>What is the cost of aquamation?</strong></p>
 
-<p>The cost of aquamation can vary depending on a number of different factors, such as the location and method used. On average, the cost of aquamation is typically less expensive than traditional cremation.</p>
+<p>The cost of aquamation can vary depending on a number of different factors, such as the location and method used. Its price can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>What is left after aquamation?</strong></p>
 
@@ -369,7 +366,7 @@ underwriting:</strong></p>
 
 <p><br><strong>What are the benefits of aquamation?</strong></p>
 
-<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker and less expensive than cremation, making it an attractive option for many families.</p>
+<p>There are many benefits to aquamation, including the fact that it is more environmentally friendly than traditional cremation. Aquamation is also quicker than cremation, and its cost can be comparable to cremation, making it an attractive option for many families.</p>
 
 <p><br><strong>What are the disadvantages of aquamation?</strong></p>
 
@@ -385,7 +382,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Is aquamation legal in the US?</strong></p>
 
-<p>Aquamation is legal in the US and is becoming an increasingly popular method of body disposition. Whether or not aquamation is available in a particular location will depend on local regulations and laws.</p>
+<p>Aquamation is legal in a growing number of US states and is becoming an increasingly popular method of body disposition. Whether or not aquamation is available in a particular location will depend on local regulations and laws.</p>
 
 <p><br><strong>What is liquid cremation?</strong></p>
 
@@ -405,7 +402,7 @@ underwriting:</strong></p>
 
 <p><br><strong>How much does aquamation cost?</strong></p>
 
-<p>The cost of aquamation can vary depending on a number of different factors, including the method and location used. On average, the cost of aquamation is typically less expensive than traditional cremation.</p>
+<p>The cost of aquamation can vary depending on a number of different factors, including the method and location used. Its price can be comparable to or higher than traditional cremation.</p>
 
 <p><br><strong>Do bones melt in aquamation?</strong></p>
 
@@ -413,7 +410,7 @@ underwriting:</strong></p>
 
 <p><br><strong>Are there any restrictions on aquamation?</strong></p>
 
-<p>While aquamation is legal in most locations, some restrictions or regulations may exist. You should check with your local governing body to learn more about the laws and regulations that apply to aquamation in your area.</p>
+<p>While aquamation is legal in many states, some restrictions or regulations may exist. You should check with your local governing body to learn more about the laws and regulations that apply to aquamation in your area.</p>
 
 <p><br><strong>What chemicals are used in aquamation?</strong></p>
 

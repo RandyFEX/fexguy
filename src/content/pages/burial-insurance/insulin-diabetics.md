@@ -65,7 +65,7 @@ sidebar: true
 
 <p><br><strong>RETINOPATHY</strong> (Eye issues due to diabetes)</p>
 
-<p>Mild vision problems? You’re still golden. You’ll qualify for a level benefit plan, no problem.</p>
+<p>Mild vision problems? You’re still golden. You can qualify for a level benefit plan with the right company.</p>
 
 <p><br><strong>DIABETIC AMPUTATION</strong></p>
 
@@ -85,7 +85,7 @@ sidebar: true
 
 <p>If your last diabetic coma was over two years ago, congratulations! Most life insurance companies still offer first-day coverage.</p>
 
-<p>But if it happened within the last two years, you’ll qualify for a first-day coverage plan if you haven’t been hospitalized twice in the last couple of years. </p>
+<p>But if it happened within the last two years, you’ll qualify for a first-day coverage plan if you haven’t been hospitalized twice in the last couple of years.</p>
 
 <p>If you’re currently in the hospital or have had a couple of visits in the last few years, your best option is guaranteed-issue burial insurance.</p>
 

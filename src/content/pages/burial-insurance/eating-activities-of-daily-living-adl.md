@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help eating signals serious health risk to insurance companies<br>• Most policies will decline you or limit coverage heavily<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• You’ll get less coverage while paying higher monthly premiums<br>• Waiting to apply only makes approval harder and more expensive<br>• Not understanding ADL rules can lead to buying the wrong policy</p>
 
-<p>Burial insurance with help eating ADL is one of the hardest situations to get approved. Needing help with eating is a major red flag because it shows a high level of physical or cognitive decline. Most traditional life insurance policies, including term and simplified issue whole life, will decline you. That leaves burial insurance, which is a type of whole life insurance, usually in guaranteed issue form. These plans are easier to qualify for, but they cost more and come with a 2-year waiting period before full benefits pay out. That tradeoff catches a lot of people off guard.</p>
+<p>Burial insurance with help eating ADL is one of the hardest situations to get approved. Needing help with eating is a major red flag because it shows a high level of physical or cognitive decline. Most traditional life insurance policies, including term and simplified issue whole life, will decline you. That leaves burial insurance, which is a type of whole life insurance, in guaranteed issue form. These plans are easier to qualify for, but they cost more and come with a 2-year waiting period before full benefits pay out. That tradeoff catches a lot of people off guard.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -120,7 +120,7 @@ sidebar: true
 <td>Universal life</td><td>Tied with stocks</td>
 </tr>
 <tr>
-<td>No health questions policies</td><td>With 2-year waiting period</td>
+<td>No health questions policies</td><td>2-year waiting period (avoid only if you can qualify for first-day coverage, which isn’t the case if you need help with eating)</td>
 </tr>
 <tr>
 <td>Plans offering "teaser rates"</td><td>$9.95 per unit plans or $1 buys $100,000 coverage</td>
@@ -150,10 +150,6 @@ sidebar: true
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1st Day Coverage</td>
-<td>YES</td>
-</tr>
 <tr>
 <td>Rates NEVER Increase</td>
 <td>YES</td>

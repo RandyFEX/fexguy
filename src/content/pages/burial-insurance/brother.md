@@ -66,10 +66,6 @@ sidebar: true
 
 <p>The insurance companies need the applicant’s signature to access their medical history. According to <a href="https://www.hhs.gov/hipaa/for-individuals/faq/187/what-does-the-hipaa-privacy-rule-do/index.html" target="_blank" rel="noreferrer noopener">HIPAA</a>, the insured must give written consent to access all his medical records. If somebody managed to take out life insurance on another person without their permission, it would be considered insurance fraud which is punishable by law.</p>
 
-<p>The only exception to this rule is if you have a power of
-attorney for your brother. Some insurance companies would allow you to sign the
-application when you submit proof of power of attorney.</p>
-
 <h3><strong>What if my brother is not close by to sign the life insurance application?</strong></h3>
 
 <p>You can still take life insurance for your brother. Most life insurance companies only need recorded verbal consent and digital signature. We can accomplish the application over the phone or on your computer. But if your brother wants to sign the application form, it can often be mailed to him to fill out and return.</p>
@@ -149,6 +145,8 @@ the MIB and perform a prescription check to determine eligibility.</p>
 
 <p>Even with other medical conditions, getting simplified final expense insurance on your brother can potentially cover him from the first day.</p>
 
+<p>If his health keeps him from qualifying for first-day coverage, some companies offer graded or modified plans. These plans still ask health questions, but they limit the natural-death benefit for an initial period set by the policy, so they are not full first-day coverage.</p>
+
 <h2><br><strong>Guaranteed issue burial insurance (no health questions)</strong></h2>
 
 <p>If your brother is in bad health, for example, he has cancer or cardiac problems. It is still possible to get burial insurance coverage for him. You can get guaranteed issue burial insurance even if your brother has a terminal illness or if he is in very bad health.</p>
@@ -224,7 +222,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can I get life insurance on my brother without him knowing?</strong></p>
 
-<p>No, you cannot get life insurance on your brother without his consent. He would need to be the policyholder, and he would need to agree to the policy for it to be valid. If he did not want the policy, the company would not issue it.</p>
+<p>No, you cannot get life insurance on your brother without his consent. He would need to agree to the policy for it to be valid. If he did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>What is</strong> <strong>insurable interest?</strong></p>
 
@@ -236,7 +234,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can someone take out life insurance on me without me knowing?</strong></p>
 
-<p>No, someone cannot take a life insurance policy on you without your knowledge or consent. For the policy to be valid, you would need to be the policyholder, and you would need to agree to the policy. If you did not want the policy, the company would not issue it.</p>
+<p>No, someone cannot take a life insurance policy on you without your knowledge or consent. For the policy to be valid, you would need to agree to the policy. If you did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>What happens if I die and my brother is the policyholder?</strong></p>
 
@@ -268,7 +266,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can you buy life insurance on a brother without his consent?</strong></p>
 
-<p>No, you cannot buy life insurance on your brother without his consent. For the policy to be valid, he would need to be the policyholder, and he would need to agree to the policy. If he did not want the policy, the company would not issue it.</p>
+<p>No, you cannot buy life insurance on your brother without his consent. For the policy to be valid, he would need to agree to the policy. If he did not want the policy, the company would not issue it.</p>
 
 <p><br><strong>How many life insurance policies can one person have?</strong></p>
 

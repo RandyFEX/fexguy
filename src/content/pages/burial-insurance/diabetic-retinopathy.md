@@ -11,12 +11,22 @@ sidebar: true
 
 <h1>Diabetic Retinopathy Burial Insurance</h1>
 
+<p><strong>Here’s the Bottom Line:</strong></p>
+
+<ul>
+<li>A scheduled eye surgery or pending test results may get your application postponed</li>
+<li>Eye injections like Avastin or Eylea typically don’t raise your premium</li>
+<li>No change in your insulin or eye-injection dosage for 2 years makes you a lower risk</li>
+<li>Other conditions like COPD or congestive heart failure also count in the decision</li>
+<li>Insurers check your prescription history and Medical Information Bureau records, so answer honestly</li>
+</ul>
+
 <p>Most seniors get easy approval for diabetic retinopathy through my simple process that handles the hard work for your family. These diabetic retinopathy-approved policies I help people with pay out quickly to cover burial or cremation costs, or provide a tax-free legacy for your loved ones.</p>
 
 <h2><strong>Diabetic retinopathy burial insurance</strong> <strong>key insights</strong></h2>
 
 <ul>
-<li><strong>CICA Life</strong> is the premier choice for diabetic retinopathy because they are one of the only carriers offering 1st-day coverage for this complication.</li>
+<li><strong>One insurance company</strong> is the premier choice for diabetic retinopathy because they are one of the only carriers offering 1st-day coverage for this complication.</li>
 <li><strong>Avoid guaranteed issue</strong> plans if retinopathy is your only major concern, as you can often find immediate coverage without a two-year wait.</li>
 <li><strong>Guarantee Trust Life</strong> serves as a vital backup for those who take mood or anxiety medications that may cause a decline with other level-benefit carriers.</li>
 <li><strong>Stability is critical</strong>, and if you have upcoming eye surgeries or pending test results, it is best to wait until those are completed for the best rates.</li>
@@ -40,7 +50,6 @@ sidebar: true
 <li><strong>Aetna Modified</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
 <li><strong>Aflac Decline</strong>&#160;– Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
 <li><strong>Aflac Modified&#160;</strong>– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>CICA Life Level</strong>&#160;– In the past 10 years, have you opted to not seek treatment, have not taken medication, or have not followed the prescribed treatment plan following a medical diagnosis by a member of the medical profession for any one or more of the following: uncontrolled diabetes, uncontrolled high blood pressure, stroke or TIA, paralysis, congestive heart failure, heart disease, cardiomyopathy, lung disease including COPD (chronic obstructive pulmonary disease) or emphysema, liver cirrhosis or failure, kidney (renal) failure or insufficiency, or chronic kidney disease including dialysis?</li>
 <li><strong>Family Benefit Life Decline</strong>&#160;– During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
 <li><strong>Family Benefit Life Level</strong>&#160;– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 <li><strong>Guarantee Trust Life Graded</strong>&#160;– Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
@@ -103,7 +112,7 @@ sidebar: true
 <p>Carriers offer different plan categories based on an applicant’s diabetic retinopathy and long &amp; short-term health stability.</p>
 
 <ul>
-<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. CICA Life is the recommended choice for level coverage because they offer 1st-day benefits and a same-day approval process for retinopathy.</li>
+<li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. A company with more lenient underwriting is the recommended choice for level coverage because they offer 1st-day benefits and a same-day approval process for retinopathy.</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. Guarantee Trust Life is the best option for a graded plan if you take medications for anxiety or depression that other companies won’t accept.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for health or medical-related causes of death. I do not recommend these for retinopathy alone, but Gerber Life is the best pick if you have other major issues like kidney failure.</li>
 </ul>
@@ -114,7 +123,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>CICA Life level insurance rates age 50–85</h3>
+<h3>Sample level insurance rates age 50–85</h3>
 
 <table>
 <thead>
@@ -150,7 +159,7 @@ sidebar: true
 
 <p><strong>Could I Get Declined?:</strong> You might face a postponement if you have an eye surgery scheduled next week or if you are waiting on the results of a heart test. Recent hospitalizations for crises trigger postponement rather than permanent decline.</p>
 
-<table> <thead> <tr> <th>Health Profile</th> <th>Coverage Type</th> <th>Wait Period</th> </tr> </thead> <tbody> <tr> <td>Retinopathy (Stable)</td> <td>Level (CICA Life)</td> <td>None</td> </tr> <tr> <td>Retinopathy + Anxiety Meds</td> <td>Graded (GTL)</td> <td>12-24 Months</td> </tr> <tr> <td>Pending Surgery</td> <td>Postponed</td> <td>Until Recovered</td> </tr> </tbody> </table>
+<table> <thead> <tr> <th>Health Profile</th> <th>Coverage Type</th> <th>Wait Period</th> </tr> </thead> <tbody> <tr> <td>Retinopathy (Stable)</td> <td>Level (certain companies)</td> <td>None</td> </tr> <tr> <td>Retinopathy + Anxiety Meds</td> <td>Graded (GTL)</td> <td>12-24 Months</td> </tr> <tr> <td>Pending Surgery</td> <td>Postponed</td> <td>Until Recovered</td> </tr> </tbody> </table>
 
 <h2><strong>Real life diabetic retinopathy success stories</strong></h2>
 
@@ -158,11 +167,11 @@ sidebar: true
 
 <h3><strong>Robert’s story:</strong></h3>
 
-<p>Robert was a 66-year-old with Type 2 diabetes and retinopathy who had been told by other agents he had to wait two years for coverage. He was very frustrated because he wanted his family to be protected immediately. Since he didn’t take any mental health medications, I placed him with CICA Life, which approved him the same day for a $15,000 level benefit. This saved him over $40 a month compared to the guaranteed issue plans he was looking at online. Now, his funeral costs are fully covered from day one.</p>
+<p>Robert was a 66-year-old with Type 2 diabetes and retinopathy who had been told by other agents he had to wait two years for coverage. He was very frustrated because he wanted his family to be protected immediately. Since he didn’t take any mental health medications, I placed him with an insurance company that approved him the same day for a $15,000 level benefit. This saved him over $40 a month compared to the guaranteed issue plans he was looking at online. Now, his funeral costs are fully covered from day one.</p>
 
 <h3><strong>Mary’s story:</strong></h3>
 
-<p>Mary was 71 and had retinopathy, but she also took a mild medication for anxiety. Because CICA Life is strict about mood medications, we used Guarantee Trust Life to get her a graded policy. This plan still gave her a much better rate than the mail-in offers she received at home. She was able to secure $10,000 for her cremation and final expenses without needing a medical exam. Mary felt much better knowing she had a quality company that understood her unique health situation.</p>
+<p>Mary was 71 and had retinopathy, but she also took a mild medication for anxiety. Because that company is strict about mood medications, we used Guarantee Trust Life to get her a graded policy. This plan still gave her a much better rate than the mail-in offers she received at home. She was able to secure $10,000 for her cremation and final expenses without needing a medical exam. Mary felt much better knowing she had a quality company that understood her unique health situation.</p>
 
 <h2><strong>Diabetic retinopathy</strong> <strong>financial ratings &amp; stability</strong></h2>
 

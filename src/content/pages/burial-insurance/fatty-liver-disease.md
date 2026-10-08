@@ -56,11 +56,11 @@ sidebar: true
 
 <p><strong>NONALCOHOLIC FATTY LIVER DISEASE</strong></p>
 
-<p>If you have nonalcoholic fatty liver disease, your best option for insurance coverage is a first-day benefit plan. You will be covered from the first day, but your death benefit payout will be phased in over time.</p>
+<p>If you have nonalcoholic fatty liver disease, you may qualify for full first-day coverage through certain carriers. Otherwise, your best option for insurance coverage is a first-day benefit plan. You will be covered from the first day, but your death benefit payout will be phased in over time.</p>
 
 <p><br><strong>CIRRHOSIS DUE TO FATTY LIVER DISEASE</strong></p>
 
-<p>If you have alcohol-related fatty liver disease or your fatty liver disease turned into liver cirrhosis, your best option for insurance coverage is a first-day benefit plan. </p>
+<p>If you have alcohol-related fatty liver disease or your fatty liver disease turned into liver cirrhosis, your best option for insurance coverage may be a first-day benefit plan or, in more advanced cases, a guaranteed issue plan. </p>
 
 <p><br><strong>FATTY LIVER DISEASE DUE TO ALCOHOL ABUSE</strong> </p>
 
