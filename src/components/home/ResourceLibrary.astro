@@ -13,10 +13,6 @@ const [featured, ...more] = resources;
   <div class="container">
     <div class="res__head">
       <h2 class="res__title" id="resources-title">Life Insurance Resources</h2>
-      <p class="res__text">
-        Straightforward information to help you understand costs, coverage and what to do when life insurance gets
-        complicated.
-      </p>
     </div>
     <div class="res__grid">
       <a class="res__feature" href={featured.href}>
@@ -58,7 +54,7 @@ const [featured, ...more] = resources;
     margin-bottom: var(--space-8);
   }
   .res__title {
-    margin: 0 0 var(--space-4);
+    margin: 0;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
@@ -71,13 +67,6 @@ const [featured, ...more] = resources;
     height: 3px;
     margin-bottom: var(--space-4);
     background: var(--home-gold);
-  }
-  .res__text {
-    margin: 0;
-    max-width: 38rem;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: var(--color-text);
   }
   .res__grid {
     display: grid;
@@ -207,7 +196,7 @@ const [featured, ...more] = resources;
     transform: translateX(3px);
   }
 
-  /* Desktop: heading and introduction side by side; the featured guide
+  /* Desktop: the featured guide
      spans the first two columns of the 3-column grid, the three secondary
      guides stack in the third. */
   @media (min-width: 64rem) {
@@ -215,18 +204,7 @@ const [featured, ...more] = resources;
       padding-block: 4.5rem;
     }
     .res__head {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      column-gap: var(--space-6);
-      align-items: end;
       margin-bottom: var(--space-12);
-    }
-    .res__title {
-      margin: 0;
-    }
-    .res__text {
-      grid-column: span 2;
-      font-size: 1.1875rem;
     }
     .res__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));

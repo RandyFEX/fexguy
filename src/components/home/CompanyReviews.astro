@@ -9,10 +9,6 @@ import { companyReviews } from '@/lib/home/content';
   <div class="container">
     <div class="co__head">
       <h2 class="co__title" id="companies-title">Research Life Insurance Companies Before You Buy</h2>
-      <p class="co__text">
-        Read Randy’s reviews of life insurance companies, coverage options, pricing and important details to know
-        before you buy.
-      </p>
     </div>
     <ul class="co__list" role="list">
       {
@@ -44,7 +40,7 @@ import { companyReviews } from '@/lib/home/content';
     margin-bottom: var(--space-8);
   }
   .co__title {
-    margin: 0 0 var(--space-4);
+    margin: 0;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
@@ -57,13 +53,6 @@ import { companyReviews } from '@/lib/home/content';
     height: 3px;
     margin-bottom: var(--space-4);
     background: var(--home-gold);
-  }
-  .co__text {
-    margin: 0;
-    max-width: 36rem;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: var(--color-text);
   }
 
   /* The directory. Phones: one column of rows, name left, "Read review"
@@ -145,25 +134,13 @@ import { companyReviews } from '@/lib/home/content';
     }
   }
 
-  /* Desktop: heading and explanation side by side; the directory becomes a
-     3 x 2 grid of tall name entries, each under its own charcoal rule. */
+  /* Desktop: the directory becomes a 3 x 2 grid of tall name entries, each under its own charcoal rule. */
   @media (min-width: 64rem) {
     .co {
       padding-block: 4.5rem;
     }
     .co__head {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      column-gap: var(--space-6);
-      align-items: end;
       margin-bottom: var(--space-12);
-    }
-    .co__title {
-      grid-column: span 2;
-      margin: 0;
-    }
-    .co__text {
-      font-size: 1.1875rem;
     }
     .co__list {
       display: grid;

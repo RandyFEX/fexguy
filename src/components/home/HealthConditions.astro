@@ -1,6 +1,6 @@
 ---
-// Health conditions: an introduction (heading, short explanation, link to
-// the full A–Z list) beside a 2 x 4 index of eight condition guides. An
+// Health conditions: a heading, a 2 x 4 index of eight condition guides and
+// a link to the full A–Z list. An
 // index of rows rather than cards, so it reads differently from the service
 // tiles and scans quickly. Copy makes no approval or first-day promises.
 import { healthConditions } from '@/lib/home/content';
@@ -9,10 +9,6 @@ import { healthConditions } from '@/lib/home/content';
 <section class="health" aria-labelledby="health-title">
   <div class="container health__grid">
     <h2 class="health__title" id="health-title">Health Problems Don’t Always Mean No</h2>
-    <p class="health__text">
-      Different life insurance companies look at health conditions differently. Randy can help you compare your
-      options.
-    </p>
     <ul class="health__list" role="list">
       {
         healthConditions.map((c) => (
@@ -40,14 +36,13 @@ import { healthConditions } from '@/lib/home/content';
     display: grid;
     grid-template-areas:
       'title'
-      'text'
       'list'
       'action';
     row-gap: var(--space-4);
   }
   .health__title {
     grid-area: title;
-    margin: 0;
+    margin: 0 0 var(--space-4);
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
@@ -61,14 +56,6 @@ import { healthConditions } from '@/lib/home/content';
     height: 3px;
     margin-bottom: var(--space-4);
     background: var(--home-gold);
-  }
-  .health__text {
-    grid-area: text;
-    margin: 0 0 var(--space-4);
-    max-width: 34rem;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: var(--color-text);
   }
 
   /* The index: a heritage-green rule on top, then rows divided by hairlines.
@@ -136,39 +123,22 @@ import { healthConditions } from '@/lib/home/content';
       column-gap: var(--space-8);
     }
   }
-  /* Desktop: heading across the top; the explanation and button in the
-     first column of the 3-column grid used above, the index across the
-     other two. */
+  /* Desktop: the heading, then the index across the full width, then the
+     button (as in the company reviews section). */
   @media (min-width: 64rem) {
     .health {
       padding-block: 4.5rem;
     }
     .health__grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-rows: auto auto 1fr;
-      grid-template-areas:
-        'title title title'
-        'text list list'
-        'action list list';
-      column-gap: var(--space-6);
       row-gap: 0;
     }
     .health__title {
       margin-bottom: var(--space-12);
     }
-    .health__text {
-      font-size: 1.1875rem;
-    }
-    .health__text {
-      margin: 0;
-      padding-right: var(--space-4);
-    }
     .health__action {
-      align-self: start;
-      margin: var(--space-6) 0 0;
+      margin: var(--space-8) 0 0;
     }
     .health__list {
-      align-self: start;
       column-gap: var(--space-12);
     }
     .health__link {
