@@ -10,6 +10,8 @@
  * the article contradicts itself on its main question, so a faithful answer
  * needs Randy to resolve the conflict first (CLAUDE.md, "Quick Answers"). */
 export const QUICK_ANSWER_HELD: Record<string, string> = {
+  "/aflac-burial-insurance-review/":
+    "The opening paragraph a Quick Answer would come from says most people don’t qualify for the level (top tier) plan and get pushed into graded or modified plans, while the key points say underwriting is fairly lenient so many people will qualify for the best rates. Randy to resolve before a Quick Answer is added.",
   "/baltimore-life-burial-insurance-review/":
     "The page contradicts itself on the points a Quick Answer would lead with: price (more expensive vs average vs not expensive), whether there is any reduced-benefit period (Silver Guard II graded schedule vs FAQ “does not have a waiting period”), coverage size (Silver Guard maximums of $15,000–$25,000 vs FAQ minimum $50,000 and up to $1,000,000), and financial rating (A- vs B++). The FAQ appears to be generic text that doesn’t match the article.",
   "/buyers-guide/": "Held by Randy (October 2026).",

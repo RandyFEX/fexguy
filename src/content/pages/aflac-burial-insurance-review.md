@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Aflac Burial Insurance Review – Pros &amp; Cons</h1>
 
-<p><strong>Here’s What This Means for You:</strong></p>
+<p><strong>Here’s the Bottom Line:</strong></p>
 
 <p>• Aflac offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aflac is the #1 choice for COPD or very overweight – industry leader in these areas &amp; more</p>
 
@@ -48,15 +48,15 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 id="how-it-works"><strong>What to Ask Before Buying Aflac Life Insurance</strong></h2>
+<h2 id="how-it-works"><strong>What to ask before buying Aflac life insurance</strong></h2>
 
-<h3><strong>Does Aflac Offer First-day Coverage?</strong></h3>
+<h3><strong>Does Aflac offer first-day coverage?</strong></h3>
 
 <p>Aflac has a burial insurance plan that offers first-day coverage.</p>
 
 <p>If you qualify, their Whole Life Insurance Level Benefit Plan comes with immediate first-day coverage. You will be 100% covered from the first day, and your beneficiary will receive your full death benefit when you pass away.</p>
 
-<h3 id="h-what-are-my-policy-options-with-aetna"><strong>What Are My Policy Options With Aflac?</strong></h3>
+<h3 id="h-what-are-my-policy-options-with-aetna"><strong>What are my policy options with Aflac?</strong></h3>
 
 <p>Aflac, through American Continental, offers three types of burial insurance policy options:</p>
 
@@ -175,13 +175,13 @@ sidebar: true
 
 <p>Aflac’s modified benefit plan is expensive compared to a guaranteed issue, no health questions policy. GI policy costs less, and it will approve your application regardless of the severity of your medical condition.</p>
 
-<h3><strong>How Is Aflac Final Expense Whole Life Insurance Good For Seniors?</strong></h3>
+<h3><strong>How is Aflac final expense whole life insurance good for seniors?</strong></h3>
 
 <p>Aflac’s three final expense whole life insurance plans help ease the financial burden. However, among the three plans, the most beneficial is the level-benefit plan. This plan comes with first-day coverage, and the pricing is competitive. The graded plan is best for some health issues.</p>
 
 <p>We do not recommend the modified plan for seniors because it has a two-year waiting period. Seniors will be better off with a guaranteed issue life insurance compared with this plan. A guaranteed issue policy will accept all applicants regardless of their medical condition.</p>
 
-<h3><strong>Does Aflac Have Any Hidden “Fine Print” In Their Policy?</strong></h3>
+<h3><strong>Does Aflac have any hidden “Fine Print” in their policy?</strong></h3>
 
 <p>You must be aware of the death benefit schedule when considering Aflac’s graded and modified benefit plans. I don’t recommend these plans, as most people will qualify for Aflac’s 1st-day coverage plan.</p>
 
@@ -202,9 +202,9 @@ sidebar: true
 <li>Policy year 3: full death benefit</li>
 </ul>
 
-<h2 id="pros-&-cons"><strong>What Are The Pros &amp; Cons Of Aflac Insurance?</strong></h2>
+<h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Aflac insurance?</strong></h2>
 
-<h3><strong>#1- LEVEL BENEFIT PLAN</strong></h3>
+<h3><strong>#1- level benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -223,7 +223,7 @@ sidebar: true
 <li>Strict underwriting only healthy people qualify.</li>
 </ul>
 
-<h3><strong>#2 – GRADED BENEFIT PLAN</strong></h3>
+<h3><strong>#2 – graded benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -240,7 +240,7 @@ sidebar: true
 <li>Expensive premium compared to other companies.</li>
 </ul>
 
-<h3><strong>#3 – MODIFIED BENEFIT PLAN</strong></h3>
+<h3><strong>#3 – modified benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -257,7 +257,7 @@ sidebar: true
 <li>Super expensive pricing compared with other insurance companies</li>
 </ul>
 
-<h2 id="other-benefits"><strong>Are There Any Riders With Aflac Life Insurance?</strong></h2>
+<h2 id="other-benefits"><strong>Are there any riders with Aflac life insurance?</strong></h2>
 
 <p>Unfortunately, Aflac’s final expense whole life insurance does not offer any rider or additional benefits like most life insurance companies.</p>
 
@@ -267,7 +267,7 @@ sidebar: true
 <li><strong>Policy Loans</strong></li>
 </ul>
 
-<h2 id="getting-approved"><strong>How Do I Get Approved By Aflac?</strong></h2>
+<h2 id="getting-approved"><strong>How do I get approved by Aflac?</strong></h2>
 
 <p><strong>To qualify for burial insurance, ACI will check your health in three ways:</strong></p>
 
@@ -279,7 +279,7 @@ sidebar: true
 
 <p>They do this to verify your health and assess your level of risk.</p>
 
-<h3 id="h-what-are-aetna-s-application-questions">What Are Aflac’s Application Questions?</h3>
+<h3 id="h-what-are-aetna-s-application-questions">What are Aflac’s application questions?</h3>
 
 <p><strong>KNOCKOUT SECTION:</strong></p>
 
@@ -371,7 +371,7 @@ sidebar: true
 
 <p>If you answer no to all the health questions in the application, you will qualify for a level death benefit plan. This plan has first-day full coverage and pays 100% death benefit when you pass away.</p>
 
-<h2 id="when-it-makes-sense"><strong>When Does Aflac Burial Insurance Make The Most Sense?</strong></h2>
+<h2 id="when-it-makes-sense"><strong>When does Aflac burial insurance make the most sense?</strong></h2>
 
 <p>Aflac is a great choice for seniors 86 to 89 years old because they’re one of the few companies providing policies for that age. They don’t have height and weight restrictions, and those on the heavier side will qualify for coverage.</p>
 
@@ -387,7 +387,7 @@ sidebar: true
 <li><strong>Cancer –&#160;</strong>diagnosis, and treatment within 24 months will qualify for a graded benefit plan.</li>
 </ol>
 
-<h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What Are The Unique Features of Aflac Final Expense Insurance?</strong></h3>
+<h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What are the unique features of Aflac final expense insurance?</strong></h3>
 
 <p><strong>Here are some of Aflac’s unique features that make them shine from the competition and make them a better choice for you:</strong></p>
 
@@ -401,11 +401,11 @@ sidebar: true
 <li>Reduced paid-up option available</li>
 </ul>
 
-<h3 id="Getting-Approved"><strong>Does Aflac Offer The Same Day Phone Approval?</strong></h3>
+<h3 id="Getting-Approved"><strong>Does Aflac offer the same day phone approval?</strong></h3>
 
 <p>Aflac has an electronic submission process for all life insurance policies. Application and approval can be made with an agent over the phone.</p>
 
-<h2 id="pricing-examples"><strong>How Can I Get Aflac Life Insurance Pricing?</strong></h2>
+<h2 id="pricing-examples"><strong>How can I get Aflac life insurance pricing?</strong></h2>
 
 <p>Aflac burial insurance plan rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
@@ -605,29 +605,29 @@ sidebar: true
 
 <p> *Pricing is for illustration purposes only and is subject to change without notice. </p>
 
-<h3>How Does Aflac Burial Insurance Compare?</h3>
+<h3>How does Aflac burial insurance compare?</h3>
 
 <p>If you are open to looking at better insurance companies with better rates, we can offer you some help!</p>
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="company-overview"><strong>Common Aflac Company Questions</strong></h2>
+<h2 id="company-overview"><strong>Common Aflac company questions</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What Is Aflac’s Operational History</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aflac’s operational history</strong></h3>
 
 <p>Aflac Life Insurance was created in 1855.</p>
 
 <p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. The two Aflac insurance companies that write this policy are ACI and Continental Life Insurance Company of Brentwood, Tennessee. Their burial insurance is available in most states except West Coast and Northeast states.</p>
 
-<h4><strong>Company Address</strong></h4>
+<h4><strong>Company address</strong></h4>
 
 <p>Aflac Insurance Company<br>PO Box 5388<br>Columbus, GA 31906-0388</p>
 
-<h4><strong>Contact Info</strong></h4>
+<h4><strong>Contact info</strong></h4>
 
 <p>Website: www.aflac.com<br>Customer Service: 800-992-3522<br></p>
 
-<h3 id="Financial-Rating"><strong>What Is Aflac’s Financial Rating?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aflac’s financial rating?</strong></h3>
 
 <p>Aflac received the following rating from different rating agencies:</p>
 
@@ -640,17 +640,17 @@ sidebar: true
 
 <p>These ratings indicate the company’s financial stability and capability of paying its financial commitments to policyholders.</p>
 
-<h3><strong>Does Aflac Have Any Consumer Complaints?</strong></h3>
+<h3><strong>Does Aflac have any consumer complaints?</strong></h3>
 
 <p>Aflac has six complaints recorded with the National Association of Insurance Commissioners (NAIC). Most complaints are about claim handling, policyholder service, and underwriting.</p>
 
-<h2 id="before-you-buy"><strong>What Should You Know Before Buying Aflac Life Insurance?</strong></h2>
+<h2 id="before-you-buy"><strong>What should you know before buying Aflac life insurance?</strong></h2>
 
-<h3 id="Financial-Rating"><strong>What is Aflac’s Sales Process?</strong></h3>
+<h3 id="Financial-Rating"><strong>What is Aflac’s sales process?</strong></h3>
 
 <p>Aflac is not a “captive carrier.” Independent insurance agencies like Final Expense Guy can sell Aflac’s final expense insurance products.</p>
 
-<h3 id="h-are-any-health-conditions-not-accepted-by-aetna"><strong>Are Any Health Conditions Not Accepted By Aflac?</strong></h3>
+<h3 id="h-are-any-health-conditions-not-accepted-by-aetna"><strong>Are any health conditions not accepted by Aflac?</strong></h3>
 
 <p>These health issues are not accepted for level benefit insurance:</p>
 
@@ -672,7 +672,7 @@ sidebar: true
 <li>Terminal Illness</li>
 </ul>
 
-<h3 id="h-how-can-i-get-pricing-help-today"><strong>How Can I Get Pricing Help Today?</strong></h3>
+<h3 id="h-how-can-i-get-pricing-help-today"><strong>How can I get pricing help today?</strong></h3>
 
 <p>Use our quoting software below to see how Aflac’s pricing compares to other companies.</p>
 
@@ -683,7 +683,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
-<h2 id="top-10-questions"><strong>What Are The Top 10 Questions About Aflac?</strong></h2>
+<h2 id="top-10-questions"><strong>What are the top 10 questions about Aflac?</strong></h2>
 
 <details>
 <summary><b>Is Aflac Life Insurance legitimate?</b></summary>

@@ -776,7 +776,9 @@ is in place; see src/content/README.md for how pages were migrated.
   with their reasons in src/config/article-holds.ts: /baltimore-life-burial-
   insurance-review/ (facts unverified; retirement proposed),
   /elks-lodge-life-insurance-options/, /security-national-burial-insurance-review/
-  and /senior-legacy-vs-senior-legacy-life/ (verification), plus
+  and /senior-legacy-vs-senior-legacy-life/ (verification),
+  /aflac-burial-insurance-review/ (V16: its opening paragraph and key points
+  disagree on whether most applicants qualify for the level plan), plus
   /buyers-guide/ and /mutual-of-omaha-burial-insurance/; /buyers-guide/ is
   also the 1 article with no key-points list. Carrier naming follows
   "Carrier editorial policy" above (CICA's underwriting exceptions are never
@@ -789,7 +791,15 @@ is in place; see src/content/README.md for how pages were migrated.
     their opening words, in `src/config/article-intros.ts`; the Markdown
     keeps them. The guard in `src/pages/[...article].astro` fails the build
     if a listed page has no Quick Answer or a listed paragraph is no longer
-    found, so a listing never silently does nothing.
+    found, so a listing never silently does nothing. V16 (Randy, October
+    2026): the old WordPress answer paragraph ("X burial insurance is a whole
+    life policy...", "Getting burial insurance with X depends on...") counts
+    as a second Quick Answer and is listed on every page whose Quick Answer
+    and key points already carry its answer; it is kept visible where it
+    holds a fact the Quick Answer lacks or is not an answer block. Aflac and
+    Trinity reviews moved onto the article template in V16; the two Colonial
+    Penn pages are still outside it (their wording is on the post-migration
+    review list).
   - The header illustration (the first figure before the second H2 that
     shows an /images/articles/ image or a 2026 "…-Image" or
     Term-Life-Insurance.png upload) is moved
@@ -927,4 +937,8 @@ point to a missing page, and content guards fail on 888-656-4648, retired
 Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
 address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
-/gtl/ must stay a real 404 (not built, not redirected). Add `-- --strict` to fail on any.
+/gtl/ must stay a real 404 (not built, not redirected). Article pages must
+show at most one Quick Answer and one key-points box, in that order, above
+"In This Article", with neither label repeated as body text (pages outside
+the template that show the label are listed as a note). Add `-- --strict` to
+fail on any.

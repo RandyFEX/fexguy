@@ -238,6 +238,33 @@ const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
   existsSync(join(DIST, p, 'index.html')) && readFileSync(join(DIST, p, 'index.html'), 'utf8').includes('To be set at launch'),
 );
 
+// Article summary structure: at most one Quick Answer and one key-points box,
+// in that order, above "In This Article", and neither label repeated as
+// ordinary text in the article body. Pages outside the article template that
+// still show the key-points label as body text are listed, not failed.
+const SUMMARY_LABELS = /Here[’']s What This Means for You|Here[’']s the Bottom Line|Quick Answer/;
+const structureProblems = [];
+const strandedSummaries = [];
+for (const file of pages) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const bodies = [...html.matchAll(/<div class="prose wp-content art-body[^"]*"[^>]*>([\s\S]*?)<\/div>/g)].map((m) => m[1]);
+  if (!bodies.length) {
+    const prose = html.match(/data-pagefind-body[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? '';
+    if (/<strong>Here[’']s What This Means for You/.test(prose)) strandedSummaries.push(page);
+    continue;
+  }
+  const answers = [...html.matchAll(/<section class="summary__answer/g)].map((m) => m.index);
+  const points = [...html.matchAll(/<section class="summary__points/g)].map((m) => m.index);
+  const toc = html.indexOf('In This Article');
+  if (answers.length > 1) structureProblems.push(`${page} has ${answers.length} Quick Answer boxes`);
+  if (points.length > 1) structureProblems.push(`${page} has ${points.length} key-points boxes`);
+  if (answers.length && points.length && answers[0] > points[0]) structureProblems.push(`${page} shows its key points before its Quick Answer`);
+  if (answers.length && toc >= 0 && answers[0] > toc) structureProblems.push(`${page} shows its Quick Answer below "In This Article"`);
+  if (bodies.some((b) => SUMMARY_LABELS.test(b.replace(/<[^>]+>/g, ''))))
+    structureProblems.push(`${page} repeats a summary label ("Quick Answer" / key points) in the article body`);
+}
+
 const uniq = (list) => [...new Set(list.map((x) => x.path))];
 const visiblePages = new Set(img.visible.map((x) => x.page));
 const metaRefs = img.og.length + img.twitter.length + img.jsonld.length;
@@ -286,6 +313,10 @@ console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
 for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);
 if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 25} more`);
 if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
+console.log(`Article summary structure: problems: ${structureProblems.length}`);
+for (const p of structureProblems) console.log(`  [summary] ${p}`);
+if (strandedSummaries.length)
+  console.log(`  [note] key-points label shown as body text outside the article template: ${strandedSummaries.join(' ')}`);
 if (effectiveDatePending.length)
   console.log(`  [prelaunch] effective date still "To be set at launch" on: ${effectiveDatePending.map((p) => `/${p}/`).join(' ')}`);
 
@@ -296,5 +327,6 @@ const problems =
   allMissing.length +
   search.problems.length +
   redirectProblems.length +
-  guardProblems.length;
+  guardProblems.length +
+  structureProblems.length;
 if (strict && problems) process.exit(1);
