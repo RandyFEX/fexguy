@@ -106,3 +106,43 @@ conformance.
   email received, GA4 `generate_lead` and Meta `Lead` each fire once
   (tracking runs only on fexguy.com).
 - Phone tap on a real phone: GA4 `click_to_call`.
+
+## Launch preparation (October 8, 2026)
+
+- Public launch date: October 8, 2026. The Privacy Policy and Terms of
+  Use show "Effective date: October 8, 2026"; their og:updated_time,
+  article:modified_time and JSON-LD dateModified are
+  2026-10-08T00:00:00-05:00.
+- Google Search Console: a Domain property for fexguy.com was verified
+  through a Cloudflare DNS TXT record on October 8, 2026. The site needs
+  no verification file or meta tag; the old WordPress HTML-file and meta
+  methods were not carried over.
+- Cloudflare: no CAA records exist for fexguy.com. A DNS export was saved
+  before any cutover change. Rollback values: fexguy.com and
+  www.fexguy.com are CNAME wp.wpenginepowered.com, DNS only. WP Engine
+  stays running as the rollback origin.
+- fexguy.vercel.app: `vercel.json` sends `X-Robots-Tag: noindex,
+  nofollow` on every response for that host, so it cannot be indexed once
+  the production build has indexing enabled.
+- Indexing gate: `PUBLIC_ALLOW_INDEXING=true` is set only in the Vercel
+  Production environment, at cutover, followed by a fresh production
+  build.
+
+Remaining manual cutover steps, in order:
+
+1. Vercel > Settings > Environment Variables: add
+   `PUBLIC_ALLOW_INDEXING` = `true`, Production only.
+2. Vercel > Deployments: redeploy the current production deployment
+   (without the build cache) so the build picks up the variable; check it
+   is Ready.
+3. Vercel > Settings > Domains: add `fexguy.com` (production) and
+   `www.fexguy.com` set to redirect (308) to `fexguy.com`. Note the DNS
+   values Vercel shows.
+4. Cloudflare > DNS: change only the `fexguy.com` and `www` records to the
+   values Vercel shows, DNS only (grey cloud). Leave every other record,
+   including the Search Console TXT record, unchanged.
+5. Wait until Vercel shows both domains valid with SSL issued, then run
+   the post-cutover checks.
+
+Rollback: restore both records in Cloudflare to CNAME
+wp.wpenginepowered.com, DNS only.
