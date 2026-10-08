@@ -60,6 +60,9 @@ is in place; see src/content/README.md for how pages were migrated.
   unless a future business decision creates a genuinely matching page).
   Ordinary long-term-care wording elsewhere (nursing homes, Medicaid, ADLs,
   underwriting questions, riders, carrier products) stays.
+  Also /locations.kml (Randy, October 2026): the old WordPress/Rank Math
+  local-SEO KML file (still listed in the WordPress sitemap) is not
+  rebuilt; real 404 with no redirect and no replacement.
 - **/reviews/ restored** (Randy, October 2026; reverses the earlier decision
   to retire it): the 476 client reviews published on the WordPress /reviews/
   page were preserved word for word in data/customer-reviews.json (with
@@ -628,7 +631,9 @@ is in place; see src/content/README.md for how pages were migrated.
 - **No third-party video embeds** (YouTube, Vimeo, Adilo) — all removed with
   their VideoObject schema and og:video tags.
 - /privacy-policy/ and /terms-of-use/ were rewritten (`source: "new"`) to
-  describe the actual site and practices: Fillout form fields, CRM contents
+  describe the actual site and practices: the quote form's fields and its
+  form service (Formspark; a rollback to Fillout would need this page
+  updated first), CRM contents
   (no SSNs or banking data; the CRM vendor is not named), indefinite record
   retention, Randy's own calls (no AI or prerecorded calls), automated texts
   and emails with STOP/unsubscribe, no lead selling, carrier sharing, the
@@ -638,10 +643,12 @@ is in place; see src/content/README.md for how pages were migrated.
   promises or facts Randy hasn't provided.
 - Standard form disclosure, exactly: "Submit to give Randy permission to
   call, text, or email you. Msg & data rates may apply. No purchase
-  required." It lives inside the Fillout form (edited in Fillout, not in this
-  repo; Randy updated it October 2026). Don't duplicate it on the page and
-  don't add Privacy/Terms links under forms just for it (they're in the
-  footer). Don't hack Fillout's iframe internals from Astro.
+  required." It is part of the native lead form markup
+  (`src/lib/lead/lead-form.ts`, under the submit button), shown once per
+  form. Don't duplicate it elsewhere on the page and don't add Privacy/Terms
+  links under forms just for it (they're in the footer). The Fillout
+  rollback form carries the same text inside Fillout (edited in Fillout, not
+  in this repo); don't hack Fillout's iframe internals from Astro.
 - GA4 property settings (verified by Randy): Google Signals off,
   user-provided data off, optional enhanced measurement off, email redaction
   on, q/s URL-parameter redaction on, 14-month retention, no Google Ads links.
@@ -694,16 +701,33 @@ is in place; see src/content/README.md for how pages were migrated.
 
 ## Lead system
 
-- One form everywhere: Fillout form `pJBgSNEtN9us` (settings in
-  `src/config/lead.ts`). Markup: `src/lib/lead/quote-box.ts`; loader:
-  `src/scripts/quote-form.ts` (loads the ~4 MB embed late — keep it that way).
+- One form everywhere: the native FEXGuy lead form, posting to Formspark
+  form "FEXGUY LEAD FORM" (`https://submit-form.com/v3iwLYrWZ`), which emails
+  each submission to Randy. Settings in `src/config/lead.ts`
+  (`quoteForm: 'formspark'`). Markup: `src/lib/lead/lead-form.ts` (via
+  `src/lib/lead/quote-box.ts`); script: `src/scripts/lead-form.ts`. Fields
+  (all required): First Name, Last Name, Email, Phone Number (10-digit US),
+  State (the 50 states), "What can Randy help you with?"; plus a honeypot.
+  With JavaScript it validates inline (accessible per-field errors) and
+  submits in the background; only after Formspark confirms does it set the
+  one-time sessionStorage flag `fexguy:lead-pending` and go to /help/
+  (noindex). If the request fails, the answers stay and an inline message
+  offers the phone number. Without JavaScript the browser validates and the
+  form posts to Formspark, which redirects to /help/ (nothing is counted).
+- Fillout is the rollback only: form `pJBgSNEtN9us` stays in
+  `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
+  embed late; keep it that way). Setting `quoteForm: 'fillout'` restores it
+  (then update /privacy-policy/, which names Formspark).
 - Sidebar form: frontmatter `sidebar: true` (pages that had the WordPress
   sidebar). In-content form: put `<div data-quote-form></div>` on its own line
   in the page body. At most one form per page.
 - Tracking (`src/scripts/tracking.ts`): GA4 `G-JMYZE458HQ` and Meta pixel
   `2351342698972751`, loaded directly — no GTM, Stape, server-side tagging,
-  or Conversions API. GA4 `generate_lead` + Meta `Lead` fire only on Fillout's
-  verified `form_submit` message; GA4 `click_to_call` on taps of
+  or Conversions API. GA4 `generate_lead` + Meta `Lead` fire once on /help/,
+  only when the fresh `fexguy:lead-pending` flag set after Formspark's
+  confirmation is present (a direct visit, reload or Back never counts; with
+  the Fillout rollback, only on Fillout's verified `form_submit` message);
+  GA4 `click_to_call` on taps of
   `tel:8888629456` (no Meta event for phone taps). Never send personal
   information. Meta Automatic Advanced Matching and automatic event setup
   stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
@@ -840,8 +864,11 @@ is in place; see src/content/README.md for how pages were migrated.
   forms, a high-contrast two-tone focus ring (global.css `--color-focus`),
   focus kept clear of the mobile call bar (`--call-sticky-h`,
   src/scripts/sticky-call.ts), keyboard-focusable scrolling tables
-  (src/scripts/scroll-tables.ts), focus kept on the quote box when the
-  Fillout embed replaces its button, and a meaningful Fillout iframe title.
+  (src/scripts/scroll-tables.ts), and the native lead form's visible
+  labels, required-field note, per-field errors (aria-describedby) and
+  polite status region (src/lib/lead/lead-form.ts, src/scripts/lead-form.ts).
+  The Fillout rollback keeps focus on the quote box when its embed replaces
+  the button and gives the iframe a meaningful title.
 - Heading outline: one H1 per page (landing pages without a visible headline
   use `<h1 class="visually-hidden">` from the page title); no skipped
   levels. When a migrated heading's level is raised to repair the outline,
@@ -861,13 +888,18 @@ is in place; see src/content/README.md for how pages were migrated.
    3. focus order and focus visibility testing;
    4. zoom/reflow testing (200% text, 400% zoom / 320px width);
    5. screen-reader and semantic review;
-   6. form testing (the Fillout form, site search, footer search);
+   6. form testing (the native Formspark lead form, site search, footer
+      search);
    7. remediation of every identified issue;
    8. a final re-test.
-3. Fillout form (third-party iframe; Fillout itself is not proven WCAG 2.2
-   AA) — manual test and record: keyboard entry into and exit out of the
-   form, visible field labels, validation/error messages, focus order, zoom
-   behavior, contrast, and screen-reader behavior.
+3. Native Formspark lead form: manual test and record: keyboard entry
+   into and exit out of the form, visible field labels, required-field
+   validation and error messages, focus order and focus after an error,
+   zoom behavior, contrast, screen-reader behavior, a real submission that
+   reaches /help/ and Randy's email, and (on fexguy.com only) the GA4
+   `generate_lead` / Meta `Lead` conversion. If the site is ever rolled back
+   to Fillout (third-party iframe, not proven WCAG 2.2 AA), repeat this for
+   the Fillout form.
 
 ## Post-launch notes
 
@@ -876,11 +908,6 @@ is in place; see src/content/README.md for how pages were migrated.
   FEXGuy-branded videos would materially improve the page.
 - **Post-migration SEO/compliance review list** (existing wording carried
   over verbatim from WordPress; don't change it until reviewed with Randy):
-  - /trinity-life-insurance-review/: the meta description (also
-    og:description and twitter:description), "Trinity Life Burial Insurance
-    Review guarantees you the best cremation, final expense, or life
-    insurance pricing - 99% discount rate!" ("guarantees you the best",
-    "99% discount rate").
   - /colonial-penn-burial-insurance-review/:
     - aggressive title/meta wording ("It's Really Bad"; "now the worst life
       insurance plan senior citizens could ever buy") and scam wording (the
