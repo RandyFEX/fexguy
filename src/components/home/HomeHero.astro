@@ -179,7 +179,9 @@ import { lead } from '@/config/lead';
   }
 
   /* Tablet and desktop: the column sits on the left over the scrim; the
-     couple stays clear on the right. */
+     couple stays clear on the right. The scrim holds its strength to just
+     past the end of the text (the sunset glare sits there), so the white
+     text keeps WCAG AA contrast before fading out over the couple. */
   @media (min-width: 48rem) {
     .hero {
       min-height: 0;
@@ -188,9 +190,10 @@ import { lead } from '@/config/lead';
       background: linear-gradient(
         90deg,
         rgb(14 45 38 / 0.9) 0%,
-        rgb(14 45 38 / 0.78) 30%,
-        rgb(14 45 38 / 0.25) 58%,
-        rgb(14 45 38 / 0) 75%
+        rgb(14 45 38 / 0.82) 30%,
+        rgb(14 45 38 / 0.82) 52%,
+        rgb(14 45 38 / 0.45) 62%,
+        rgb(14 45 38 / 0) 78%
       );
     }
     .hero__img {
@@ -206,10 +209,21 @@ import { lead } from '@/config/lead';
     }
   }
   /* 768–1119px: the narrower desktop crop (less sky) keeps both faces
-     above the product line and clear of the H1. */
+     above the product line and clear of the H1. The text runs further
+     across here, so the scrim reaches a little further too. */
   @media (min-width: 48rem) and (max-width: 69.99rem) {
     .hero__img {
       object-position: 45% 35%;
+    }
+    .hero::before {
+      background: linear-gradient(
+        90deg,
+        rgb(14 45 38 / 0.9) 0%,
+        rgb(14 45 38 / 0.84) 30%,
+        rgb(14 45 38 / 0.84) 54%,
+        rgb(14 45 38 / 0.5) 64%,
+        rgb(14 45 38 / 0) 80%
+      );
     }
   }
   @media (min-width: 64rem) {
