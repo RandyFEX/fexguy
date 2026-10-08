@@ -10,6 +10,7 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/aarp-burial-insurance-review/': ["AARP burial insurance is marketed as simple and safe,"],
   '/aarp-life-insurance-review/': ["AARP life insurance sounds simple, but it comes with"],
   '/aetna-burial-insurance-review/': ["Aetna burial insurance is a whole life policy designed to"],
+  '/aflac-burial-insurance-review/': ["Aflac burial insurance is a whole life policy designed to"],
   '/american-legion-life-insurance/': ["American Legion member life insurance sounds like a solid"],
   '/americo-life-insurance-quit-smoking-advantage/': ["Americo’s Quit Smoking Advantage is a type of final"],
   '/big-lou-term-life-insurance-review/': ["Big Lou life insurance is really a brokerage using"],

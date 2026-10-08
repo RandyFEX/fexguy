@@ -872,7 +872,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'For most people, AARP life insurance delivers less coverage at a higher price than first-day coverage options elsewhere. Its term life premiums rise every 5 years, and the coverage ends at age 80. Permanent Life can pay the full benefit from day one, but it costs more per dollar of coverage. Guaranteed Acceptance has a mandatory two-year waiting period, and if death occurs during that time, the company refunds only premiums plus a small amount of interest.',
   },
-  '/aflac-burial-insurance-review/': { family: 'review', crumb: 'Aflac' },
+  '/aflac-burial-insurance-review/': {
+    family: 'review', crumb: 'Aflac',
+    // The article's own opening paragraph (V17).
+    quickAnswer:
+      'Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $1,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get pushed into graded or modified plans with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.',
+  },
   '/baltimore-life-burial-insurance-review/': { family: 'review', crumb: 'Baltimore Life' },
   '/big-lou-term-life-insurance-review/': {
     family: 'review', crumb: 'Big Lou',

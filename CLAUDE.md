@@ -776,9 +776,7 @@ is in place; see src/content/README.md for how pages were migrated.
   with their reasons in src/config/article-holds.ts: /baltimore-life-burial-
   insurance-review/ (facts unverified; retirement proposed),
   /elks-lodge-life-insurance-options/, /security-national-burial-insurance-review/
-  and /senior-legacy-vs-senior-legacy-life/ (verification),
-  /aflac-burial-insurance-review/ (V16: its opening paragraph and key points
-  disagree on whether most applicants qualify for the level plan), plus
+  and /senior-legacy-vs-senior-legacy-life/ (verification), plus
   /buyers-guide/ and /mutual-of-omaha-burial-insurance/; /buyers-guide/ is
   also the 1 article with no key-points list. Carrier naming follows
   "Carrier editorial policy" above (CICA's underwriting exceptions are never
@@ -797,7 +795,8 @@ is in place; see src/content/README.md for how pages were migrated.
     as a second Quick Answer and is listed on every page whose Quick Answer
     and key points already carry its answer; it is kept visible where it
     holds a fact the Quick Answer lacks or is not an answer block. Aflac and
-    Trinity reviews moved onto the article template in V16; the two Colonial
+    Trinity reviews moved onto the article template in V16 (Aflac's opening
+    paragraph, corrected in V17, is its Quick Answer); the two Colonial
     Penn pages are still outside it (their wording is on the post-migration
     review list).
   - The header illustration (the first figure before the second H2 that

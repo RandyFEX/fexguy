@@ -15,7 +15,7 @@ sidebar: true
 
 <p>• Aflac offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aflac is the #1 choice for COPD or very overweight – industry leader in these areas &amp; more</p>
 
-<p>Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $1,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that most people don’t qualify for that top tier and get pushed into graded or modified plans with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
+<p>Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $1,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get pushed into graded or modified plans with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
 
 <p>Complete my quote request form on this page to get fast rates without picking wrong.</p>
 
