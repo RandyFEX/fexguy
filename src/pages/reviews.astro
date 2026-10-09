@@ -22,7 +22,7 @@ const STEP = 25;
 ---
 
 <BaseLayout
-  title={pageTitle('Reviews')}
+  title={pageTitle('Reviews', 'Final Expense Guy Reviews')}
   description={`${count} reviews from Final Expense Guy clients, reproduced exactly as they were published.`}
   canonical="/reviews/"
 >
@@ -34,7 +34,12 @@ const STEP = 25;
         reviews.map((r) => (
           <li class="review" id={`review-${r.position}`}>
             <figure class="review__figure">
-              <p class="review__label">Review {r.label}</p>
+              <p class="review__label">
+                {r.label}<span class="review__sep" aria-hidden="true">|</span>Client Review<span
+                  class="review__check"
+                  aria-hidden="true"
+                ></span>
+              </p>
               <blockquote class="review__quote">
                 {r.paragraphs.map((p) => (
                   <p>{p}</p>
@@ -126,11 +131,39 @@ const STEP = 25;
     margin: 0;
   }
   .review__label {
+    display: flex;
+    align-items: center;
     margin: 0 0 var(--space-2);
-    font-size: 0.8125rem;
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 700;
     letter-spacing: 0.02em;
-    color: var(--color-text-muted);
+    color: var(--color-primary);
+  }
+  .review__sep {
+    margin-inline: var(--space-2);
+    font-weight: 400;
+  }
+  /* Decorative circular check, drawn in CSS (no image): a dark-green circle
+     with a white check made from two borders of a rotated box. */
+  .review__check {
+    position: relative;
+    flex: none;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-left: var(--space-2);
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+  .review__check::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    width: 0.3125rem;
+    height: 0.5625rem;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
   .review__quote {
     margin: 0;
