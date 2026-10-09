@@ -22,16 +22,12 @@ const STEP = 25;
 ---
 
 <BaseLayout
-  title={pageTitle('Client Reviews')}
+  title={pageTitle('Reviews')}
   description={`${count} reviews from Final Expense Guy clients, reproduced exactly as they were published.`}
   canonical="/reviews/"
 >
   <div class="container reviews-page">
-    <h1>Final Expense Guy Client Reviews</h1>
-    <p class="reviews-intro">
-      These are the {count} client reviews published on this page, reproduced word for word with the name and location
-      exactly as they were shown. They are listed in their published order, starting with review {reviews[0].label}.
-    </p>
+    <h1 class="reviews-title">Final Expense Guy Reviews</h1>
 
     <ul class="reviews" id="reviews-list" role="list" data-initial={INITIAL} data-step={STEP}>
       {
@@ -93,32 +89,47 @@ const STEP = 25;
 </script>
 
 <style>
+  /* Review cards: white cards with a hairline border and a heritage-green
+     accent on the left; the short gold rule (decorative, the homepage and
+     article heading accent) leads into the attribution. */
   .reviews-page {
+    --home-gold: #b68a35;
     padding-block: var(--space-8) var(--space-12);
     max-width: calc(var(--prose-max) + 2 * var(--space-6));
   }
-  .reviews-intro {
-    color: var(--color-text-muted);
+  .reviews-title {
+    margin-bottom: 0;
+  }
+  .reviews-title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-bottom: var(--space-4);
+    background: var(--home-gold);
   }
   .reviews {
+    display: grid;
+    gap: var(--space-3);
     list-style: none;
-    margin: var(--space-8) 0 0;
+    margin: var(--space-6) 0 0;
     padding: 0;
   }
   .review {
-    border-top: 1px solid var(--color-border);
-    padding-block: var(--space-6);
-  }
-  .review:last-child {
-    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius);
   }
   .review__figure {
     margin: 0;
   }
   .review__label {
     margin: 0 0 var(--space-2);
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     color: var(--color-text-muted);
   }
   .review__quote {
@@ -128,9 +139,26 @@ const STEP = 25;
   }
   .review__quote p {
     margin: 0 0 var(--space-3);
+    line-height: 1.6;
   }
   .review__by {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
     font-weight: 700;
+    color: var(--color-primary);
+  }
+  .review__by::before {
+    content: '';
+    flex: none;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--home-gold);
+  }
+  @media (min-width: 48rem) {
+    .review {
+      padding: var(--space-4) var(--space-6);
+    }
   }
   /* With JavaScript, only the first 25 reviews show at first (see INITIAL);
      without it, every review is visible. */
@@ -150,6 +178,6 @@ const STEP = 25;
   }
   .review:focus-visible {
     outline: 3px solid var(--color-focus);
-    outline-offset: 4px;
+    outline-offset: 3px;
   }
 </style>
