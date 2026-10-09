@@ -65,7 +65,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     section: 'none',
     crumb: 'Burial Insurance',
     quickAnswer:
-      'Burial insurance is a permanent whole life policy that pays your chosen beneficiary when you die, to cover funeral costs, medical bills, and other final expenses. Your premium stays the same for life, and coverage typically ranges from $5,000 to $25,000. You qualify by answering health questions instead of taking a medical exam. The most valuable policies give first-day coverage, while guaranteed acceptance plans with no health questions almost always include a two-year waiting period.',
+      'Burial insurance is a permanent whole life policy that pays your chosen beneficiary when you die, to cover funeral costs, medical bills, and other final expenses. Your premium stays the same for life, and coverage typically ranges from $5,000 to $25,000. You qualify by answering health questions instead of taking a medical exam. The most valuable policies give first-day coverage, while guaranteed acceptance plans with no health questions include a two-year waiting period for natural death.',
     related: [
       { href: '/how-much-does-final-expense-insurance-cost/' },
       { href: '/burial-insurance/for-seniors/' },
@@ -99,19 +99,19 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance-substance-abuse-drug-abuse/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with a history of substance abuse, but your options depend mostly on how long you’ve been sober. If you are currently using, guaranteed issue burial insurance is generally your option, and it has a 2-year waiting period. Recent treatment or hospitalization limits your options. Most companies look for about two years (24 months) of sobriety before offering first-day coverage, although exact lookback requirements vary by company.',
+      'Yes, you can get burial insurance with a history of substance abuse, but your options depend mostly on how long you’ve been sober and what each company’s application asks. If you are currently using, first-day coverage depends on whether you can truthfully answer that company’s questions, and if you can’t, guaranteed acceptance burial insurance, which asks no health questions and has a 2-year waiting period, is the option. Recent treatment or hospitalization limits your options. Most companies look for about two years (24 months) of sobriety before offering first-day coverage, although exact lookback requirements vary by company.',
   },
   '/burial-insurance/transferring-activities-of-daily-living-adl/': {
     family: 'health',
     crumb: 'Help with Transferring',
     quickAnswer:
-      'If you currently need another person’s help transferring between your bed, a chair, the toilet, or a wheelchair, you won’t qualify for first-day coverage, but you can still get burial insurance. Guaranteed issue burial insurance asks no health questions and is the option for anyone who needs help with an activity of daily living. It has a two-year waiting period: a covered accidental death can pay the full benefit right away, while a natural death in the first two years generally refunds your premiums plus a contract-specified amount.',
+      'If you currently need another person’s help transferring between your bed, a chair, the toilet, or a wheelchair, you won’t qualify for first-day coverage, but you can still get burial insurance. Guaranteed acceptance burial insurance asks no health questions and is the option for anyone who needs help with an activity of daily living. It has a two-year waiting period: a covered accidental death can pay the full benefit right away, while a natural death in the first two years refunds your premiums plus a contract-specified amount, typically 7% to 10%.',
   },
   '/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/': {
     family: 'health',
     crumb: 'Help with Dressing',
     quickAnswer:
-      'If another person currently helps you get dressed, a guaranteed issue burial insurance plan is the option we recommend, because plans that ask health questions will decline you while you need this help. Guaranteed issue asks no health questions, but it costs more and has a two-year waiting period for natural death. If you die of natural causes during that time, your beneficiaries generally get your premiums back plus an additional amount set by the policy, while a covered accidental death can pay the full benefit from day one.',
+      'If another person currently helps you get dressed, a guaranteed acceptance burial insurance plan is the option we recommend, because plans that ask health questions will decline you while you need this help. Guaranteed acceptance asks no health questions, but it costs more and has a two-year waiting period for natural death. If you die of natural causes during that time, your beneficiaries get your premiums back plus an additional amount set by the policy, typically 7% to 10%, while a covered accidental death can pay the full benefit from day one.',
   },
   '/burial-insurance/stent/': {
     family: 'health',
@@ -126,7 +126,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/hospitalized/': {
     family: 'health',
     quickAnswer:
-      'Burial insurance after being hospitalized depends on how recent the stay was and what caused it. No insurance company offers first-day coverage to people who are currently hospitalized, so guaranteed issue burial insurance with no health questions is your only option, and most companies put a two-year waiting period on it. If you die of natural causes during that period, your beneficiary receives the premiums paid plus interest. If your condition improves and enough time passes, better options can open up.',
+      'Burial insurance after being hospitalized depends on how recent the stay was and what caused it. No insurance company offers first-day coverage to people who are currently hospitalized, so guaranteed acceptance burial insurance with no health questions is your only option, and it has a two-year waiting period for natural death. If you die of natural causes during that period, your beneficiary receives the premiums paid plus an additional amount set by the policy, typically 7% to 10%. If your condition improves and enough time passes, better options can open up.',
   },
   '/burial-insurance/terminal-illness/': {
     family: 'health', crumb: 'Terminal Illness',
@@ -141,7 +141,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/sarcoidosis/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with sarcoidosis depends on how serious and stable your condition is. Mild sarcoidosis qualifies you for first-day coverage with most life insurance companies, and moderate sarcoidosis needing minimal treatment may qualify with some companies. If you need supplemental oxygen, it will be challenging to qualify for first-day coverage, but you will be eligible for guaranteed issue. Needing help with daily activities also points to guaranteed issue, which has a two-year waiting period for natural causes of death.',
+      'Getting burial insurance with sarcoidosis depends on how serious and stable your condition is. Mild sarcoidosis qualifies you for first-day coverage with most life insurance companies, and moderate sarcoidosis needing minimal treatment may qualify with some companies. If you need supplemental oxygen, it will be challenging to qualify for first-day coverage, but you will be eligible for guaranteed acceptance. Needing another person’s help with bathing, dressing, eating, toileting or transferring means guaranteed acceptance, which has a two-year waiting period for natural causes of death.',
   },
   '/final-expense-life-insurance-diabetics/': {
     family: 'health',
@@ -155,7 +155,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     // Summarized from the article's own text (October 2026 pilot).
     quickAnswer:
-      'If you’re currently in treatment or recently diagnosed, most companies will decline traditional coverage and only offer guaranteed issue plans with higher costs and waiting periods. If you’ve finished treatment, you’re cancer-free, and it’s been more than 24 months since your last treatment, you can honestly answer “no” to the breast cancer question. Then you’re eligible for a level death benefit plan with first-day coverage from companies with only a two-year look-back period on breast cancer.',
+      'If you currently have breast cancer, are in remission, or are in treatment because the cancer is still present, traditional coverage isn’t available, and guaranteed acceptance, with higher costs and a two-year waiting period, is the option. Hormone therapy you continue after successful treatment does not by itself mean the cancer is active, and how it’s treated depends on the company. If you’ve finished treatment, you’re cancer-free, and it’s been more than 24 months since your last treatment, you can honestly answer “no” to the breast cancer question. Then you’re eligible for a level death benefit plan with first-day coverage from companies with only a two-year look-back period on breast cancer.',
   },
   '/burial-insurance-defibrillator/': {
     family: 'health',
@@ -166,7 +166,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     crumb: 'Diabetic Complications',
     quickAnswer:
-      'Yes, you can get burial insurance with diabetic complications like amputation, diabetic coma, insulin shock, neuropathy, nephropathy, or retinopathy. What you qualify for depends on which complications you have, whether you can handle your daily activities (ADLs) on your own, and your full health history. A diabetic amputation or a recent diabetic coma is a significant underwriting issue, and needing help with ADLs usually means a guaranteed issue plan with a 2-year wait. Depending on your complications, some companies can still offer first-day coverage.',
+      'Yes, you can get burial insurance with diabetic complications like amputation, diabetic coma, insulin shock, neuropathy, nephropathy, or retinopathy. What you qualify for depends on which complications you have, whether you can handle your daily activities (ADLs) on your own, and your full health history. A diabetic amputation or a recent diabetic coma is a significant underwriting issue, and needing another person’s help with ADLs such as bathing, dressing, eating, toileting or transferring means a guaranteed acceptance plan with a 2-year wait. Depending on your complications, some companies can still offer first-day coverage.',
   },
   '/burial-insurance-kidney-failure/': {
     family: 'health',
@@ -176,7 +176,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance-with-lung-cancer/': {
     family: 'health',
     quickAnswer:
-      'If you currently have lung cancer or have been treated in the last 24 months, a waiting period is unavoidable, and guaranteed issue whole life insurance is your best option. If you die of lung cancer or another illness in the first two years, it refunds your premiums plus 10% interest. Once you’ve been done with treatment for over two years and are cancer-free, you’re eligible for first-day coverage with companies that only look back two years for lung cancer.',
+      'If you currently have lung cancer or are in remission, you need guaranteed acceptance whole life insurance, which has a two-year waiting period. If you die of lung cancer or another illness in those first two years, it refunds your premiums plus an additional amount set by the policy, typically 7% to 10%. If your doctor has declared you cancer-free but you were treated within the last 24 months, most companies will only offer a graded or guaranteed acceptance plan with a waiting period, but one insurance company may offer first-day coverage, depending on its eligibility rules and your state. Once you’ve been done with treatment for over two years and are cancer-free, you’re eligible for first-day coverage with companies that only look back two years for lung cancer.',
   },
   '/burial-insurance/adl-activities-of-daily-living/': {
     family: 'health', crumb: 'Activities of Daily Living',
@@ -234,7 +234,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     crumb: 'Help with Bathing',
     quickAnswer:
-      'If another person currently helps you bathe, guaranteed issue burial insurance is the only option among the plans this site recommends. Plans with health questions decline applicants who currently need help with bathing or any other activity of daily living. Guaranteed issue asks no health questions, but it has a two-year waiting period for the full natural-death benefit. A natural death during that time generally returns your premiums plus the interest set by the contract, while a covered accidental death can pay the full benefit right away.',
+      'If another person currently helps you bathe, guaranteed acceptance burial insurance is the only option among the plans this site recommends. Plans with health questions decline applicants who currently need help with bathing or any other activity of daily living. Guaranteed acceptance asks no health questions, but it has a two-year waiting period for the full natural-death benefit. A natural death during that time returns your premiums plus the interest set by the contract, typically 7% to 10%, while a covered accidental death can pay the full benefit right away.',
   },
   '/burial-insurance/bipolar-disorder/': {
     family: 'health',
@@ -244,7 +244,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/bladder-cancer/': {
     family: 'health',
     quickAnswer:
-      'Burial insurance is still available to many people with bladder cancer, especially if it was early-stage and treated successfully. Insurance companies focus on recurrence risk, stability, and time since treatment, not just the diagnosis. Many require around 2 years of remission before offering better coverage options. If you currently have bladder cancer or are in treatment, insurance companies will only approve you for a policy with a two-year waiting period.',
+      'Burial insurance is still available to many people with bladder cancer, especially if it was early-stage and treated successfully. Insurance companies focus on recurrence risk, stability, and time since treatment, not just the diagnosis. Many require around 2 years of being cancer-free before offering better coverage options. If you currently have bladder cancer, are in remission, or are in treatment, you need a guaranteed acceptance policy, which has a two-year waiting period.',
   },
   '/burial-insurance/blind/': {
     family: 'health',
@@ -254,7 +254,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/blood-cancer-leukemia/': {
     family: 'health',
     quickAnswer:
-      'You can get burial insurance with leukemia or another blood cancer, but remission is not the same as being declared cured. If you currently have leukemia, are in remission, or are receiving ongoing treatment, including maintenance therapy, a guaranteed issue plan with a two-year waiting period is generally your option. After your doctor declares you cancer-free and you pass the company’s cancer-free period, often two years, first-day coverage may be possible. Your other health conditions still affect eligibility.',
+      'You can get burial insurance with leukemia or another blood cancer, but remission is not the same as being declared cured. If you currently have leukemia, are in remission, or are receiving ongoing treatment, including maintenance therapy, you need a guaranteed acceptance plan with a two-year waiting period. After your doctor declares you cancer-free and you pass the company’s cancer-free period, often two years, you can qualify for first-day coverage.',
   },
   '/burial-insurance/blood-clot/': {
     family: 'health',
@@ -264,7 +264,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/brain-cancer/': {
     family: 'health',
     quickAnswer:
-      'You can get burial insurance with brain cancer, but your options depend on where you are in treatment. If you currently have brain cancer or are in remission, a guaranteed issue plan with a two-year waiting period for the full natural-death benefit is generally the option. Remission is not the same as being cured. After treatment and a documented cure, certain companies may consider first-day coverage, depending on your state, your tumor type, and your other health conditions.',
+      'You can get burial insurance with brain cancer, but your options depend on where you are in treatment. If you currently have brain cancer or are in remission, you need a guaranteed acceptance plan, which has a two-year waiting period for the full natural-death benefit. Remission is not the same as being cured. After treatment and a documented cure, certain companies may consider first-day coverage, depending on your state and your tumor type.',
   },
   '/burial-insurance/brain-tumor/': {
     family: 'health',
@@ -279,7 +279,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/burial-insurance-arthritis/': {
     family: 'health',
     quickAnswer:
-      'Yes. Getting burial insurance with arthritis is usually easier than people expect, especially if your condition is mild or well-controlled. Taking arthritis medication won’t keep you from securing the best policy. Most applicants with arthritis can still qualify for first-day coverage if they can handle daily activities on their own. If severe arthritis means you need help with daily activities, it’s harder to find a company that offers immediate coverage at the lowest rate, and your best option is guaranteed issue coverage with a two-year waiting period.',
+      'Yes. Getting burial insurance with arthritis is usually easier than people expect, especially if your condition is mild or well-controlled. Taking arthritis medication won’t keep you from securing the best policy. Most applicants with arthritis can still qualify for first-day coverage if they can handle daily activities on their own. If severe arthritis means you need another person’s help with bathing, dressing, eating, toileting or transferring, first-day coverage isn’t available, and you need guaranteed acceptance coverage with a two-year waiting period.',
   },
   '/burial-insurance/burial-insurance-with-diverticulitis/': {
     family: 'health',
@@ -294,7 +294,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/cancer/': {
     family: 'health',
     quickAnswer:
-      'Most carriers use a 24-month lookback, and some use three years: once you’ve been cancer-free and treatment-free for that period, you may qualify for a policy that pays in full from day one, depending on your cancer type, state and other health conditions. If your treatment ended 12 to 24 months ago, some carriers may offer a graded plan. If you have active cancer, are in remission, or take maintenance cancer medication, including daily maintenance pills, a guaranteed issue plan with a two-year waiting period for natural death is generally the option, though limited exceptions exist for certain cancers.',
+      'Most carriers use a 24-month lookback, and some use three years: once you’ve been cancer-free and treatment-free for that period, you can qualify for a policy that pays in full from day one, depending on your cancer type and state. If your treatment ended 12 to 24 months ago, some carriers may offer a graded plan. If you have active cancer, are in remission, or are still being treated, including with daily maintenance pills, before your doctor documents a cure, guaranteed acceptance with a two-year waiting period for natural death is the only coverage you qualify for. Medication you keep taking after a documented cure, such as hormone therapy, is treated differently by each company, and basal and squamous cell skin cancers are underwritten as their own category.',
   },
   '/burial-insurance/cardiomyopathy/': {
     family: 'health',
@@ -329,7 +329,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/colorectal-cancer/': {
     family: 'health',
     quickAnswer:
-      'Yes, but it depends heavily on timing and your current health. If you’re in active treatment, most companies won’t offer first-day coverage, so you’re pushed into guaranteed issue coverage with a two-year waiting period and a higher cost. Colorectal cancer survivors can often qualify for first-day coverage once they’ve been in remission and treatment-free for at least two years.',
+      'Yes, but it depends heavily on timing and your current health. If you have colorectal cancer now, are in remission, or are in active treatment, first-day coverage isn’t available, so you need guaranteed acceptance coverage, which has a two-year waiting period and a higher cost. Colorectal cancer survivors can qualify for first-day coverage once they’ve been cancer-free and treatment-free for at least two years.',
   },
   '/burial-insurance/congestive-heart-failure/': {
     family: 'health',
@@ -340,7 +340,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     crumb: 'Help with Continence',
     quickAnswer:
-      'Needing another person’s help with continence, toileting or transferring is an activity of daily living (ADL) limitation, and for the options recommended on this site that means guaranteed issue burial insurance only. Guaranteed issue plans ask no health questions but have a 2-year waiting period: a natural death in that time generally refunds premiums plus a contract-set extra amount, while a covered accidental death can pay the full benefit. Occasional leakage, absorbent underwear or a catheter you manage yourself is not the same as needing help, so your options then depend on your health and each company’s questions.',
+      'Needing another person’s help with toileting or transferring is an activity of daily living (ADL) limitation, and for the options recommended on this site that means guaranteed acceptance burial insurance only. Guaranteed acceptance plans ask no health questions but have a 2-year waiting period: a natural death in that time refunds premiums plus a contract-set extra amount, typically 7% to 10%, while a covered accidental death can pay the full benefit. Occasional leakage, absorbent underwear or a catheter you manage yourself is not the same as needing another person’s help with toileting, so your options then depend on your health and each company’s questions.',
   },
   '/burial-insurance/coronary-artery-disease/': {
     family: 'health',
@@ -360,7 +360,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/dementia-alzheimers/': {
     family: 'health',
     quickAnswer:
-      'Once someone has been diagnosed with dementia or Alzheimer’s, guaranteed issue burial insurance is the only option; first-day and graded plans are not available. Guaranteed issue plans ask no health questions, so memory medications like Aricept or Namenda don’t block approval. They have a 2-year waiting period: a natural death in that time generally refunds premiums plus a contract-set extra amount, while a covered accidental death can pay the full benefit. The person must still be able to understand and sign the application, so applying early matters.',
+      'Once someone has been diagnosed with dementia or Alzheimer’s, guaranteed acceptance burial insurance is the only option; first-day and graded plans are not available. Guaranteed acceptance plans ask no health questions, so memory medications like Aricept or Namenda don’t block approval. They have a 2-year waiting period: a natural death in that time refunds premiums plus a contract-set extra amount, typically 7% to 10%, while a covered accidental death can pay the full benefit. The person must still be able to understand and sign the application, so applying early matters.',
   },
   '/burial-insurance/depression/': {
     family: 'health',
@@ -406,7 +406,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/dialysis-patients/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance while on dialysis. Most life insurance companies won’t offer immediate coverage to someone receiving dialysis. However, there is an insurance company that may approve dialysis patients for first-day coverage in certain states, depending on their eligibility, such as being under a doctor’s care and taking prescribed medications. If you don’t qualify, a guaranteed issue policy asks no health questions but has a waiting period, usually 2 years: a natural death in that time generally returns the premiums paid plus interest, depending on the company.',
+      'Yes, you can get burial insurance while on dialysis. Most life insurance companies won’t offer immediate coverage to someone receiving dialysis. However, there is an insurance company that may approve dialysis patients for first-day coverage in certain states, depending on their eligibility, such as being under a doctor’s care and taking prescribed medications. If you don’t qualify, a guaranteed acceptance policy asks no health questions but has a two-year waiting period: a natural death in that time returns the premiums paid plus an additional amount set by the policy, typically 7% to 10%.',
   },
   '/burial-insurance/disability/': {
     family: 'health',
@@ -416,12 +416,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/disabled-persons/': {
     family: 'health',
     quickAnswer:
-      'Burial insurance for disabled persons is more accessible than most people think. Most companies don’t treat a disability itself as a problem unless it affects daily activities like eating, bathing, or moving around. If your disability is stable, you may qualify for immediate coverage with simple health questions and no medical exam. If you need help with daily activities, you’ll likely be pushed into guaranteed issue plans with higher costs and waiting periods.',
+      'Burial insurance for disabled persons is more accessible than most people think. Most companies don’t treat a disability itself as a problem unless you need another person’s help with daily activities like eating, bathing, dressing, toileting or transferring. If your disability is stable, you may qualify for immediate coverage with simple health questions and no medical exam. If you need help with any of those activities, you need a guaranteed acceptance plan, which costs more and has a two-year waiting period for natural death.',
   },
   '/burial-insurance/down-syndrome/': {
     family: 'health',
     quickAnswer:
-      'Guaranteed issue burial insurance is the option for someone with Down syndrome. Insurance companies don’t offer first-day or graded coverage for Down syndrome. A guaranteed issue plan asks no health questions, but it has a two-year waiting period: a natural death during that time generally refunds the premiums paid plus interest, and the full benefit is paid after that. The person being insured must be able to understand and sign the application.',
+      'Guaranteed acceptance burial insurance is the option for someone with Down syndrome. Insurance companies don’t offer first-day or graded coverage for Down syndrome. A guaranteed acceptance plan asks no health questions, but it has a two-year waiting period: a natural death during that time refunds the premiums paid plus an additional amount set by the policy, typically 7% to 10%, and the full benefit is paid after that. The person being insured must be able to understand and sign the application.',
   },
   '/burial-insurance/drug-abuse-treatment/': {
     family: 'health',
@@ -443,7 +443,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     // Summarized from the article's own text (October 2026 pilot).
     quickAnswer:
-      'Getting burial insurance with emphysema depends on how advanced and stable your condition is. If your symptoms are mild and well-managed, you may still qualify for burial insurance or whole life with immediate coverage. If it’s severe or requires 24/7 oxygen, you’ll likely be pushed into graded or guaranteed issue plans with higher costs and a waiting period of up to 2 years. Not all companies treat emphysema the same.',
+      'Getting burial insurance with emphysema depends on how advanced and stable your condition is. If your symptoms are mild and well-managed, you may still qualify for burial insurance or whole life with immediate coverage. If it’s severe or requires 24/7 oxygen, you’ll likely be pushed into a higher-cost graded plan, which limits what it pays during its first years, or a guaranteed acceptance plan, which has a two-year waiting period for natural death. Not all companies treat emphysema the same.',
   },
   '/burial-insurance/endocarditis-heart-infection/': {
     family: 'health',
@@ -507,7 +507,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/heart-failure/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with heart failure is possible, but your options are limited and depend on how serious your condition is. Depending on your health and what’s available in your zip code, you might even get first-day coverage with no waiting period. If you’re currently hospitalized or need help with basic daily activities, the answer might be no. Many people end up in guaranteed issue plans with higher costs and a 2-year waiting period.',
+      'Getting burial insurance with heart failure is possible, but your options are limited and depend on how serious your condition is. Depending on your health and what’s available in your zip code, you might even get first-day coverage with no waiting period. If you’re currently hospitalized or need another person’s help with bathing, dressing, eating, toileting or transferring, first-day coverage isn’t available, and guaranteed acceptance is the option. Many people end up in guaranteed acceptance plans with higher costs and a 2-year waiting period.',
   },
   '/burial-insurance/heart-murmur/': {
     family: 'health',
@@ -548,13 +548,13 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/hodgkins-disease/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with Hodgkin’s disease depends heavily on how long you’ve been cancer-free. If you’ve been in complete remission and treatment-free for at least two years, you can qualify for first-day coverage. Some specialized carriers may consider you for immediate benefits as soon as your doctor officially declares you cancer-free. If you’re still in chemotherapy or radiation, you can get a guaranteed-issue policy, which typically includes a two-year waiting period.',
+      'Getting burial insurance with Hodgkin’s disease depends heavily on how long you’ve been cancer-free. If you’ve been cancer-free and treatment-free for at least two years, you can qualify for first-day coverage. Some specialized carriers may consider you for immediate benefits as soon as your doctor officially declares you cancer-free. If you currently have Hodgkin’s disease, are in remission, or are still in chemotherapy or radiation, you need a guaranteed acceptance policy, which has a two-year waiting period for natural death.',
   },
   '/burial-insurance/hospice-patients/': {
     family: 'health',
     crumb: 'Hospice Patients',
     quickAnswer:
-      'Hospice patients can’t qualify for first-day burial insurance, so guaranteed issue is the only option. These plans accept you without health questions, but the full natural-death benefit has a two-year waiting period. If death from natural causes happens during that time, your family generally receives the premiums paid plus an extra amount set by the contract, not the full benefit. When life expectancy is much shorter than two years, we generally don’t recommend buying a new policy, and savings or a prepaid funeral plan may make more sense.',
+      'Hospice patients can’t qualify for first-day burial insurance, so guaranteed acceptance is the only option. These plans accept you without health questions, but the full natural-death benefit has a two-year waiting period. If death from natural causes happens during that time, your family receives the premiums paid plus an extra amount set by the contract, typically 7% to 10%, not the full benefit. When life expectancy is much shorter than two years, we generally don’t recommend buying a new policy, and savings or a prepaid funeral plan may make more sense.',
   },
   '/burial-insurance/huntingtons-disease/': {
     family: 'health',
@@ -564,7 +564,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/insulin-diabetics/': {
     family: 'health',
     quickAnswer:
-      'Yes, most insulin-dependent diabetics can still get burial insurance, and many with well-controlled diabetes qualify for first-day coverage. Complications such as neuropathy, retinopathy, nephropathy, and dialysis are serious underwriting factors that narrow your options. Some complications do not automatically mean guaranteed issue, because a limited number of companies may offer first-day coverage in some states, depending on your full medical picture. If you need help with daily activities or are on dialysis, guaranteed issue is often the practical option.',
+      'Yes, most insulin-dependent diabetics can still get burial insurance, and many with well-controlled diabetes qualify for first-day coverage. Complications such as neuropathy, retinopathy, nephropathy, and dialysis are serious underwriting factors that narrow your options. Some complications do not automatically mean guaranteed acceptance, because a limited number of companies may offer first-day coverage in some states, depending on your full medical picture. If you need another person’s help with bathing, dressing, eating, toileting or transferring, you need guaranteed acceptance, and if you are on dialysis, guaranteed acceptance is often the practical option.',
   },
   '/burial-insurance/kidney-disease/': {
     family: 'health',
@@ -575,7 +575,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/leukemia/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with leukemia, but what you qualify for depends on where you are in treatment. If you currently have leukemia, are in remission, or are on maintenance treatment, guaranteed issue with a two-year waiting period is generally the option. Remission is not the same as being declared cancer-free. Once your doctor declares you cancer-free and the company’s lookback period has passed, often two years and sometimes three, you may qualify for first-day coverage, depending on your other health issues.',
+      'Yes, you can get burial insurance with leukemia, but what you qualify for depends on where you are in treatment. If you currently have leukemia, are in remission, or are on maintenance treatment, you need guaranteed acceptance coverage, which has a two-year waiting period. Remission is not the same as being declared cancer-free. Once your doctor declares you cancer-free and the company’s lookback period has passed, often two years and sometimes three, you can qualify for first-day coverage.',
   },
   '/burial-insurance/liver-disease-liver-disorder/': {
     family: 'health',
@@ -595,7 +595,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/lung-cancer/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with lung cancer, but timing and treatment status matter most. If your cancer is active, in remission, or still being treated, guaranteed issue with a two-year waiting period is generally the option. Remission is not the same as being declared cancer-free. Once your doctor declares you cancer-free and the company’s lookback period has passed, often two years and sometimes longer, you may qualify for first-day coverage. Surgery alone does not guarantee immediate coverage, and other conditions such as COPD still matter.',
+      'Yes, you can get burial insurance with lung cancer, but timing and treatment status matter most. If your cancer is active, in remission, or still being treated, you need guaranteed acceptance coverage, which has a two-year waiting period. Remission is not the same as being declared cancer-free. Once your doctor declares you cancer-free and the company’s lookback period has passed, often two years and sometimes longer, you can qualify for first-day coverage. Surgery alone does not guarantee immediate coverage, and other conditions such as COPD still matter.',
   },
   '/burial-insurance/lung-disease/': {
     family: 'health',
@@ -626,27 +626,27 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/mental-health-conditions/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with a mental health condition is usually much easier than people think. Insurers focus more on stability than the diagnosis itself. If your condition is managed and you’re living normally, you can often qualify for first-day coverage. If you’ve had recent hospitalizations or severe episodes, your options can narrow and costs can rise. If your mental health requires help with eating or bathing, you’ll likely qualify only for a guaranteed issue plan.',
+      'Getting burial insurance with a mental health condition is usually much easier than people think. Insurers focus more on stability than the diagnosis itself. If your condition is managed and you’re living normally, you can often qualify for first-day coverage. If you’ve had recent hospitalizations or severe episodes, your options can narrow and costs can rise. If your condition means you need another person’s help with eating, bathing, dressing, toileting or transferring, you need a guaranteed acceptance plan.',
   },
   '/burial-insurance/multiple-myeloma/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with multiple myeloma, but your options depend on your cancer status. If you currently have myeloma, are in remission, or take maintenance medication, a guaranteed issue plan with a two-year waiting period is generally your option. Maintenance therapy and stable lab results are not the same as being cured. After your doctor declares you cancer-free and you have finished all treatment for the company’s lookback period, often two years or more, some companies may offer first-day coverage, depending on your other health conditions.',
+      'Yes, you can get burial insurance with multiple myeloma, but your options depend on your cancer status. If you currently have myeloma, are in remission, or take maintenance medication, you need a guaranteed acceptance plan with a two-year waiting period. Maintenance therapy and stable lab results are not the same as being cured. After your doctor declares you cancer-free and you have finished all treatment for the company’s lookback period, often two years or more, some companies may offer first-day coverage.',
   },
   '/burial-insurance/multiple-sclerosis/': {
     family: 'health',
     quickAnswer:
-      'Burial insurance with multiple sclerosis is still possible, but it depends on how your condition is managed and how recently symptoms have progressed. Insurers look closely at flare-ups, mobility, medications, and hospital history. If your MS is stable, some whole life burial insurance plans can offer full coverage from day one. If not, you’ll likely be placed into a policy with a waiting period that delays the payout, and needing help with activities like bathing, dressing, or eating is the primary trigger for a waiting-period plan.',
+      'Burial insurance with multiple sclerosis is still possible, but it depends on how your condition is managed and how recently symptoms have progressed. Insurers look closely at flare-ups, mobility, medications, and hospital history. If your MS is stable, some whole life burial insurance plans can offer full coverage from day one. If not, you’ll likely be placed into a policy with a waiting period that delays the payout, and needing another person’s help with bathing, dressing, eating, toileting or transferring means a guaranteed acceptance plan with a two-year waiting period for natural death.',
   },
   '/burial-insurance/muscular-dystrophy/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with muscular dystrophy, and how independent you are matters most. If you can handle daily activities on your own, you may qualify for a level plan with first-day coverage through select companies. If you are confined to a wheelchair, need another person’s help with activities like bathing or dressing, or need permanent home health care for that help, guaranteed issue with a two-year waiting period is the recommended option. Home health care alone is not automatically the same as needing that help.',
+      'Yes, you can get burial insurance with muscular dystrophy, and how independent you are matters most. If you can handle daily activities on your own, you may qualify for a level plan with first-day coverage through select companies. If you need another person’s help with activities like bathing or dressing, or need permanent home health care for that help, you need guaranteed acceptance coverage with a two-year waiting period. Using a wheelchair or receiving home health care is not automatically the same as needing that help.',
   },
   '/burial-insurance/myelodysplastic-syndrome/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with myelodysplastic syndrome (MDS), but your options depend on your status. If you currently have MDS, are in remission, or take maintenance treatment, a guaranteed issue plan with a two-year waiting period is generally your option, even when your blood counts are stable. Stable counts are not the same as being cured. If your doctor has documented that you are cancer-free and you pass the company’s lookback period, often two years, some companies may offer first-day coverage, depending on your other health conditions.',
+      'Yes, you can get burial insurance with myelodysplastic syndrome (MDS), but your options depend on your status. If you currently have MDS, are in remission, or take maintenance treatment, you need a guaranteed acceptance plan with a two-year waiting period, even when your blood counts are stable. Stable counts are not the same as being cured. If your doctor has documented that you are cancer-free and you pass the company’s lookback period, often two years, some companies may offer first-day coverage.',
   },
   '/burial-insurance/neurological-disorders/': {
     family: 'health',
@@ -657,7 +657,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     crumb: 'Nursing Home Residents',
     quickAnswer:
-      'A nursing home resident can usually get burial insurance through a guaranteed issue plan, which is the option we recommend because traditional and first-day plans generally are not available. Guaranteed issue asks no health questions but costs more, and it pays the full benefit for a natural death only after a two-year waiting period. Before that, it generally refunds premiums plus an additional amount set by the policy, which is not automatically better than saving the money yourself. Weigh the premiums against your life expectancy and what your family will need.',
+      'A nursing home resident can usually get burial insurance through a guaranteed acceptance plan, which is the option we recommend because traditional and first-day plans are not available to nursing home residents. Guaranteed acceptance asks no health questions but costs more, and it pays the full benefit for a natural death only after a two-year waiting period. Before that, it refunds premiums plus an additional amount set by the policy, typically 7% to 10%, which is not automatically better than saving the money yourself. Weigh the premiums against your life expectancy and what your family will need.',
   },
   '/burial-insurance/organ-transplant/': {
     family: 'health',
@@ -682,7 +682,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/pancreatic-cancer/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with pancreatic cancer is extremely limited. If you’re currently in treatment or taking cancer medications, you’ll be restricted to a guaranteed issue policy with a two-year waiting period. Once a doctor declares you cancer-free, certain companies may offer first-day coverage. After you’ve been cured for at least two years with no further treatment or medication, carriers like Aflac and Family Benefit Life become available.',
+      'Getting burial insurance with pancreatic cancer is extremely limited. If you’re currently in treatment or taking medication because the cancer is still present, you’ll be restricted to a guaranteed acceptance policy with a two-year waiting period. Once a doctor declares you cancer-free, certain companies may offer first-day coverage. After you’ve been cured for at least two years with no further treatment or medication, carriers like Aflac and Family Benefit Life become available.',
   },
   '/burial-insurance/paralysis-paralyzed/': {
     family: 'health',
@@ -703,12 +703,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/prion-disease/': {
     family: 'health',
     quickAnswer:
-      'Prion disease is one of the most severe conditions you can have when applying for burial insurance. Most life insurance companies won’t provide a first-day coverage plan, so it usually means a guaranteed issue plan, which asks no health questions but has a 2-year waiting period. During that time, it pays 100% only for accidental death; if you die from an illness, your beneficiary gets your premiums back plus 10% interest.',
+      'Prion disease is one of the most severe conditions you can have when applying for burial insurance. Most life insurance companies won’t provide a first-day coverage plan, so it usually means a guaranteed acceptance plan, which asks no health questions but has a 2-year waiting period. During that time, a covered accidental death can pay 100%, depending on the contract; if you die from an illness, your beneficiary gets your premiums back plus an additional amount set by the policy, typically 7% to 10%.',
   },
   '/burial-insurance/prostate-cancer/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with prostate cancer, but your options depend on whether your cancer is active, in remission, or medically declared cured. Active cancer, remission, or ongoing treatment such as hormone therapy generally means a guaranteed issue plan with a two-year waiting period. Once your doctor documents that you’re cancer-free, first-day coverage may become available. After surgical removal of the prostate, certain companies may offer it right away, while others want about two years after treatment.',
+      'Yes, you can get burial insurance with prostate cancer, but your options depend on whether your cancer is active, in remission, or medically declared cured. Active prostate cancer, remission, or treatment for cancer that is still present means you need a guaranteed acceptance plan with a two-year waiting period. Hormone therapy by itself does not mean the cancer is active: if your cancer has been cured or removed and you still take hormone therapy, how that is treated depends on the insurance company. Once your doctor documents that you’re cancer-free, first-day coverage may become available. After surgical removal of the prostate, certain companies may offer it right away, while others want about two years after treatment.',
   },
   '/burial-insurance/ptsd/': {
     family: 'health',
@@ -718,12 +718,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/respiratory-lung-conditions/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with a respiratory or lung condition depends on how serious and stable your condition is. Mild or well-managed conditions, like stable COPD or asthma, may still qualify for immediate coverage. Oxygen use typically triggers a two-year waiting period with most insurers, though some specialty carriers look at why you use oxygen and may offer immediate protection. If your lung condition keeps you from bathing, dressing, or eating without help, you’ll likely be limited to a plan with a two-year waiting period.',
+      'Getting burial insurance with a respiratory or lung condition depends on how serious and stable your condition is. Mild or well-managed conditions, like stable COPD or asthma, may still qualify for immediate coverage. Oxygen use typically triggers a two-year waiting period with most insurers, though some specialty carriers look at why you use oxygen and may offer immediate protection. If your lung condition means you need another person’s help with bathing, dressing, or eating, you need a guaranteed acceptance plan, which has a two-year waiting period for natural death.',
   },
   '/burial-insurance/sarcoma/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance with sarcoma depends almost entirely on timing and your treatment status. During treatment, you’re typically pushed into guaranteed issue burial insurance with a 2-year waiting period before full benefits pay. Most carriers require a 24-month wait after treatment for first-day coverage, but one insurance company may offer it much sooner if your doctor officially declares your cancer cured. If your sarcoma has spread to the lungs or other organs, a guaranteed issue plan will likely serve you best.',
+      'Getting burial insurance with sarcoma depends almost entirely on timing and your treatment status. During treatment, you need guaranteed acceptance burial insurance, which has a 2-year waiting period before full benefits pay for a natural death. Most carriers require a 24-month wait after treatment for first-day coverage, but one insurance company may offer it much sooner if your doctor officially declares your cancer cured. If your sarcoma has spread to the lungs or other organs, you need a guaranteed acceptance plan.',
   },
   '/burial-insurance/schizophrenia/': {
     family: 'health',
@@ -759,7 +759,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/terminally-ill-patients/': {
     family: 'health',
     quickAnswer:
-      'Yes, terminally ill patients can get burial insurance, but guaranteed issue coverage with no health questions is generally the only option. These plans have a two-year waiting period: a covered accidental death can pay the full benefit right away, while a natural death in the first two years generally refunds the premiums plus the interest or additional amount the contract specifies. We can help you get a guaranteed issue policy, but we generally don’t recommend buying a new one when death is expected within the two-year waiting period.',
+      'Yes, terminally ill patients can get burial insurance, but guaranteed acceptance coverage with no health questions is the only option. These plans have a two-year waiting period: a covered accidental death can pay the full benefit right away, while a natural death in the first two years refunds the premiums plus the interest or additional amount the contract specifies, typically 7% to 10%. We can help you get a guaranteed acceptance policy, but we generally don’t recommend buying a new one when death is expected within the two-year waiting period.',
   },
   '/burial-insurance/testicular-cancer/': {
     family: 'health',
@@ -769,7 +769,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/thyroid-cancer/': {
     family: 'health',
     quickAnswer:
-      'Yes, you can get burial insurance with thyroid cancer, but your options depend on whether the cancer is active, in remission, or medically declared cured. Active cancer, remission, or ongoing treatment such as radioactive iodine generally means a guaranteed issue plan with a two-year waiting period. After your doctor documents a cure, first-day coverage may be available through certain companies, while others use lookback periods of twelve, twenty-four, or thirty-six months. Your treatment history, your other health conditions, and the company you choose also affect your options.',
+      'Yes, you can get burial insurance with thyroid cancer, but your options depend on whether the cancer is active, in remission, or medically declared cured. Active cancer, remission, or ongoing treatment such as radioactive iodine means you need a guaranteed acceptance plan with a two-year waiting period. After your doctor documents a cure, first-day coverage may be available through certain companies, while others use lookback periods of twelve, twenty-four, or thirty-six months. Your treatment history and the company you choose also affect your options.',
   },
   '/burial-insurance/toileting-activities-of-daily-living-adl/': {
     family: 'health', crumb: 'Help with Toileting',
@@ -827,7 +827,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/lincoln-heritage-funeral-advantage-review-old/': {
     family: 'review', crumb: 'Lincoln Heritage',
     quickAnswer:
-      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a modified or guaranteed issue plan where a natural death during the waiting period only returns your premiums plus interest. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
+      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a graded or modified plan that limits what it pays for a natural death during the first years of the policy. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
   },
   '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
   '/senior-legacy-life-review/': {
@@ -840,7 +840,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'review',
     crumb: 'Life Insurance Savings Group',
     quickAnswer:
-      'Life Insurance Savings Group isn’t an insurance company. It is a SelectQuote marketing brand: its website’s terms say the site is operated by SelectQuote Insurance Services or its affiliates, and its TV commercials promote guaranteed acceptance life insurance. Those plans have a two-year waiting period, so a natural death in that time generally returns your premiums plus an additional amount set by the contract instead of the full benefit. Many people can qualify for first-day coverage at a lower price by comparing several companies through an independent agent.',
+      'Life Insurance Savings Group isn’t an insurance company. It is a SelectQuote marketing brand: its website’s terms say the site is operated by SelectQuote Insurance Services or its affiliates, and its TV commercials promote guaranteed acceptance life insurance. Those plans have a two-year waiting period, so a natural death in that time returns your premiums plus an additional amount set by the contract, instead of the full benefit. Many people can qualify for first-day coverage at a lower price by comparing several companies through an independent agent.',
   },
   '/trustage-life-insurance-review/': {
     family: 'review',
@@ -940,7 +940,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/open-care-life-insurance-review/': {
     family: 'review', crumb: 'Open Care',
     quickAnswer:
-      'Open Care is a marketing company, not an insurer. When you respond to its ads, you end up with a call center representative, and the policies come from other carriers that underwrite the coverage and pay claims. Open Care markets mostly guaranteed acceptance products, which always cost more, and most of its policies have a 2-year waiting period when a death from natural causes only returns the premiums paid plus about 10% interest. Many seniors with controlled conditions still qualify for first-day coverage at lower rates.',
+      'Open Care is a marketing company, not an insurer. When you respond to its ads, you end up with a call center representative, and the policies come from other carriers that underwrite the coverage and pay claims. Open Care markets mostly guaranteed acceptance products, which cost more than first-day coverage for people who qualify for it, and most of its policies have a 2-year waiting period when a death from natural causes only returns the premiums paid plus an additional amount, which varies by product. Many seniors with controlled conditions still qualify for first-day coverage at lower rates.',
   },
   '/phoenix-life-burial-insurance-review-pros-cons/': {
     family: 'review', crumb: 'Phoenix Life',
@@ -1095,7 +1095,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/no-questions-asked/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Burial insurance with no questions asked is guaranteed issue whole life insurance: there’s no medical exam and no health questions, and your approval is guaranteed regardless of your medical conditions. The catch is the waiting period. All guaranteed issue policies come with at least a 2-year waiting period, and if you die of natural causes during that time, your family usually only gets your premiums back. Burial insurance with a few health questions is usually better, since it can give you immediate coverage at a lower cost if you qualify.',
+      'Burial insurance with no questions asked is guaranteed acceptance whole life insurance: there’s no medical exam and no health questions, and your approval is guaranteed regardless of your medical conditions. The catch is the waiting period. Guaranteed acceptance policies have a two-year waiting period for natural death, and if you die of natural causes during that time, your family gets your premiums back plus an additional amount set by the contract, typically 7% to 10%. If you qualify, burial insurance with a few health questions is better, since it gives you immediate coverage at a lower cost.',
   },
   '/burial-insurance/online/': {
     section: 'burialInsurance',
@@ -1135,7 +1135,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/finding-affordable-burial-insurance/': {
     section: 'burialInsurance',
     quickAnswer:
-      'To find affordable burial insurance, shop around and compare prices from several companies before you apply. The cheapest policies typically ask health questions, because lower risk means lower cost. Guaranteed issue plans skip the health questions but cost more and often include waiting periods. Your price depends on your age, gender, height and weight, tobacco use, health, and coverage amount, and the younger you are, the cheaper it is.',
+      'To find affordable burial insurance, shop around and compare prices from several companies before you apply. The cheapest policies typically ask health questions, because lower risk means lower cost. Guaranteed acceptance plans skip the health questions but cost more and have a two-year waiting period for natural death. Your price depends on your age, gender, height and weight, tobacco use, health, and coverage amount, and the younger you are, the cheaper it is.',
   },
   '/how-much-burial-insurance-do-i-need/': {
     section: 'burialInsurance',
@@ -1145,7 +1145,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/is-burial-insurance-worth-it/': {
     section: 'burialInsurance',
     quickAnswer:
-      'For many families, yes. Burial insurance is a whole life policy that helps keep funeral and final expenses from becoming a burden on the people you leave behind, and its premiums stay the same for life. Most applicants can qualify for first-day coverage by answering health questions, while guaranteed issue plans accept anyone but have a two- to four-year waiting period for natural death, so avoid plans with a 3-4 year wait. It makes the most sense when your savings or existing life insurance wouldn’t cover your final expenses.',
+      'For many families, yes. Burial insurance is a whole life policy that helps keep funeral and final expenses from becoming a burden on the people you leave behind, and its premiums stay the same for life. Most applicants can qualify for first-day coverage by answering health questions, while guaranteed acceptance plans accept anyone but have a two-year waiting period for natural death, so avoid accepting a plan with a longer waiting period when a better option is available. It makes the most sense when your savings or existing life insurance wouldn’t cover your final expenses.',
   },
   '/the-importance-of-burial-insurance/': {
     section: 'burialInsurance',
@@ -1160,7 +1160,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/funeral-plan-insurance-policies/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Funeral plan insurance is a small whole life insurance policy that pays cash to your beneficiary when you die, to cover your funeral, medical bills, and other final expenses. It is different from a prepaid funeral contract, where you pay a funeral home in advance for specific goods and services. If you qualify by answering health questions, you can get first-day coverage with no waiting period. Guaranteed issue plans make you wait two years, or three with some products, before the full natural-death benefit pays, so a two-year plan is usually the better choice when one is available.',
+      'Funeral plan insurance is a small whole life insurance policy that pays cash to your beneficiary when you die, to cover your funeral, medical bills, and other final expenses. It is different from a prepaid funeral contract, where you pay a funeral home in advance for specific goods and services. If you qualify by answering health questions, you can get first-day coverage with no waiting period. Guaranteed acceptance plans make you wait two years before the full natural-death benefit pays, while some graded plans for people with health issues limit the benefit for three years, so if you need guaranteed acceptance, look for a two-year plan instead of accepting a longer waiting period when a better option is available.',
   },
   '/rapture-life-insurance/': {
     section: 'burialInsurance',
@@ -1171,12 +1171,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/brother/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Yes, you can own and pay for a burial insurance policy on your brother, subject to the insurance company’s insurable-interest, consent, and policy rules. Your brother generally must agree to the policy and sign the application. If he is healthy, first-day coverage may be available. If his health is poor, graded, modified, or guaranteed issue plans may be options, and guaranteed issue has a two-year waiting period for the full natural-death benefit.',
+      'Yes, you can own and pay for a burial insurance policy on your brother, subject to the insurance company’s insurable-interest, consent, and policy rules. Your brother must know about the policy, agree to it, and complete whatever signature or authorization process the insurance company requires. If he is healthy, first-day coverage may be available. If his health is poor, graded, modified, or guaranteed acceptance plans may be options, and guaranteed acceptance has a two-year waiting period for the full natural-death benefit.',
   },
   '/burial-insurance/sister/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Yes, you can buy burial insurance on your sister, but you must show “insurable interest,” meaning her death would cause you financial loss. That could be things like shared bills, caregiving, or debt responsibility. She also has to know about the policy and agree to it, and unless she is disabled, she must sign the application, even for no-exam policies. If you skip these steps or set it up wrong, the policy can be denied or canceled.',
+      'Yes, you can buy burial insurance on your sister, but you must show “insurable interest,” meaning her death would cause you financial loss. That could be things like shared bills, caregiving, or debt responsibility. She also has to know about the policy and agree to it, and she must complete whatever signature or authorization process the insurance company requires, even for no-exam policies. If you skip these steps or set it up wrong, the policy can be denied or canceled.',
   },
   '/burial-insurance/parents/': {
     section: 'burialInsurance',
@@ -1206,17 +1206,17 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/for-seniors/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Burial policies for seniors are small whole life insurance plans designed to cover funeral costs. They’re popular because approval is easier and coverage lasts your entire life. With a simplified issue plan, you answer a few health questions and get first-day coverage. Guaranteed issue plans ask no health questions, but they come with a waiting period, typically 24 months, before your beneficiary would receive the full death benefit.',
+      'Burial policies for seniors are small whole life insurance plans designed to cover funeral costs. They’re popular because approval is easier and coverage lasts your entire life. With a simplified issue plan, you answer a few health questions and get first-day coverage. Guaranteed acceptance plans ask no health questions, but they come with a two-year waiting period before your beneficiary would receive the full death benefit for a natural death.',
   },
   '/burial-insurance/funeral-insurance-for-seniors/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Funeral insurance for seniors is a type of whole life insurance designed to cover final expenses like funerals, medical bills, and small debts, usually for people between 50 and 85. Simplified issue plans ask basic health questions, and most health conditions will be approved with no waiting period. Guaranteed issue plans ask no health questions, but they typically impose a two-year waiting period before paying the full death benefit.',
+      'Funeral insurance for seniors is a type of whole life insurance designed to cover final expenses like funerals, medical bills, and small debts, usually for people between 50 and 85. Simplified issue plans ask basic health questions, and most health conditions will be approved with no waiting period. Guaranteed acceptance plans ask no health questions, but they have a two-year waiting period before paying the full death benefit for a natural death.',
   },
   '/burial-insurance/guaranteed-issue-life-insurance-for-seniors/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Guaranteed issue life insurance is a small whole life policy that accepts you without health questions or a medical exam. With the guaranteed issue plans we recommend, the full natural-death benefit has a two-year waiting period. If you die of natural causes in that time, your family generally receives the premiums you paid plus an extra amount set by the contract, while a covered accidental death can pay the full benefit from day one. Because these plans cost more and offer smaller amounts, it makes sense to check whether you qualify for first-day coverage first.',
+      'Guaranteed acceptance life insurance, sometimes called guaranteed issue, is a small whole life policy that accepts you without health questions or a medical exam. With the guaranteed acceptance plans we recommend, the full natural-death benefit has a two-year waiting period. If you die of natural causes in that time, your family receives the premiums you paid plus an extra amount set by the contract, typically 7% to 10%, while a covered accidental death can pay the full benefit from day one. Because these plans cost more, it makes sense to check whether you qualify for first-day coverage first.',
   },
   '/burial-insurance/life-insurance-for-seniors/': {
     section: 'burialInsurance', crumb: 'Life Insurance for Seniors',
@@ -1226,7 +1226,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/over-70/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Yes, burial insurance over 70 is still very possible, but your options depend heavily on your health and timing. Even with health problems, you can get approved. Whole life burial policies have monthly premiums that don’t increase as you age and won’t expire as long as you keep paying, but some TV and magazine policies may increase in price every five years. If you qualify for a plan with first-day coverage, it’s usually much better than guaranteed issue policies that come with a 2-year delay. Most companies accept applicants 85 and younger.',
+      'Yes, burial insurance over 70 is still very possible, but your options depend heavily on your health and timing. Even with health problems, you can get approved. Whole life burial policies have monthly premiums that don’t increase as you age and won’t expire as long as you keep paying, but some TV and magazine policies may increase in price every five years. If you qualify for a plan with first-day coverage, it’s much better than guaranteed acceptance policies, which cost more and come with a 2-year delay. Most companies accept applicants 85 and younger.',
   },
   '/burial-insurance/over-80/': {
     section: 'burialInsurance',
@@ -1329,12 +1329,12 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/veterans/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Burial insurance for veterans fills the gap that VA benefits don’t cover. The VA helps with burial allowances, transportation, and gravesites in national cemeteries, but these payments are limited and often only reimburse part of the cost. Burial insurance pays your family cash directly so they can cover all final expenses. You don’t need a medical exam, and most veterans can answer the health questions and get approved for simplified issue coverage with no waiting period. Veterans with severe conditions, like dialysis, dementia, or needing help with daily activities, qualify only for guaranteed issue, which is graded for the first two years.',
+      'Burial insurance for veterans fills the gap that VA benefits don’t cover. The VA helps with burial allowances, transportation, and gravesites in national cemeteries, but these payments are limited and often only reimburse part of the cost. Burial insurance pays your family cash directly so they can cover all final expenses. You don’t need a medical exam, and most veterans can answer the health questions and get approved for simplified issue coverage with no waiting period. Veterans with dementia or who need another person’s help with bathing, dressing, eating, toileting or transferring qualify only for guaranteed acceptance, which has a two-year waiting period for natural death, and dialysis usually means guaranteed acceptance as well.',
   },
   '/final-expense-life-insurance-retired-truckers/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Yes. Most retired truckers can get final expense life insurance, and many qualify for first-day coverage even with common conditions like controlled diabetes, high blood pressure, sleep apnea, mild COPD, or past heart procedures. Your options depend on how well your conditions are controlled, recent hospitalizations or procedures, the company, and your state. Serious conditions such as continuous oxygen use, dialysis, current cancer, or a recent heart attack usually lead to a graded, modified, or guaranteed issue plan, with only narrow exceptions. Comparing companies helps you avoid a two-year waiting period you don’t need.',
+      'Yes. Most retired truckers can get final expense life insurance, and many qualify for first-day coverage even with common conditions like controlled diabetes, high blood pressure, sleep apnea, mild COPD, or past heart procedures. Your options depend on how well your conditions are controlled, recent hospitalizations or procedures, the company, and your state. Serious conditions such as continuous oxygen use, dialysis, or a recent heart attack usually lead to a graded, modified, or guaranteed acceptance plan, with only narrow exceptions, and current cancer means a guaranteed acceptance plan. Comparing companies helps you avoid a two-year waiting period you don’t need.',
   },
   '/american-legion-life-insurance/': {
     section: 'burialInsurance',
@@ -1356,7 +1356,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/life-insurance-for-employees/': {
     section: 'none',
     quickAnswer:
-      'Life insurance through your job, usually called group life insurance, can be a good starting point, but it is usually not enough. It’s often free or very cheap, and many people get approved without a medical exam, but most plans only cover 1 to 2 times your salary. If you leave your job, you will usually lose the coverage. If it isn’t enough, you may need to add an individual policy, which you own and can keep even if you leave your job.',
+      'Life insurance through your job, usually classified as group life insurance, can be a good starting point, but it is usually not enough. It’s often free or very cheap, and many people get approved without a medical exam, but most plans only cover 1 to 2 times your salary. If you leave your job, you will usually lose the coverage. If it isn’t enough, you may need to add an individual policy, which you own and can keep even if you leave your job.',
   },
   // Term, mortgage protection and other products: top level for now.
   '/term-life-conversion-to-whole-life/': {
@@ -1440,7 +1440,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/final-expense-life-insurance-complete-guide/': {
     section: 'burialInsurance',
     quickAnswer:
-      'Final expense life insurance is a type of whole life insurance designed to cover funeral costs, small debts, and end-of-life expenses. You pay a fixed monthly premium that stays the same for life, and coverage is usually $5,000 to $25,000, sometimes more. There’s no medical exam; you answer health questions and the company checks your prescription history. If you qualify for level benefit coverage, the full amount pays from day one. Serious or recent health problems may mean a graded, modified, or guaranteed issue plan that limits the payout during the first 12 to 24 months.',
+      'Final expense life insurance is a type of whole life insurance designed to cover funeral costs, small debts, and end-of-life expenses. You pay a fixed monthly premium that stays the same for life, and coverage is usually $5,000 to $25,000, sometimes more. There’s no medical exam; you answer health questions and the company checks your prescription history. If you qualify for level benefit coverage, the full amount pays from day one. Serious or recent health problems may mean a graded or modified plan, which limits the payout during its first years, or a guaranteed acceptance plan, which has a two-year waiting period for natural death.',
   },
   '/burial-insurance/top-10-final-expense-life-insurance-companies/': {
     section: 'burialInsurance',
