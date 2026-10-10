@@ -633,7 +633,7 @@ is in place; see src/content/README.md for how pages were migrated.
 - /privacy-policy/ and /terms-of-use/ were rewritten (`source: "new"`) to
   describe the actual site and practices: the quote form's fields and its
   form service (Formspark; a rollback to Fillout would need this page
-  updated first), CRM contents
+  updated first) and its Cloudflare Turnstile spam check, CRM contents
   (no SSNs or banking data; the CRM vendor is not named), indefinite record
   retention, Randy's own calls (no AI or prerecorded calls), automated texts
   and emails with STOP/unsubscribe, no lead selling, carrier sharing, the
@@ -714,6 +714,32 @@ is in place; see src/content/README.md for how pages were migrated.
   (noindex). If the request fails, the answers stay and an inline message
   offers the phone number. Without JavaScript the browser validates and the
   form posts to Formspark, which redirects to /help/ (nothing is counted).
+- **Spam protection** (Randy, October 2026): the `_honeypot` trap (keep it)
+  plus Cloudflare Turnstile, Managed mode. Public Site Key
+  `0x4AAAAAAFTAF4WgYBf4SuWi` in `src/config/lead.ts`
+  (`formspark.turnstile`); the Secret Key lives only in Formspark (form
+  settings: Spam protection → Turnstile) and must never be in this repo.
+  `src/scripts/lead-form.ts` loads Cloudflare's official script
+  (`api.js?render=explicit`) only on pages with the form, when the form
+  comes near or is used, and renders the widget in the
+  `[data-turnstile]` slot above the button with `appearance:
+  'interaction-only'` (it takes no space unless Cloudflare asks for a
+  click). Each submission sends the token as `cf-turnstile-response`;
+  Formspark verifies it and rejects failures (HTTP 403), so no success is
+  shown. Tokens are single-use: after a failed attempt the widget is reset.
+  Expired tokens are refreshed before sending. A submission waits up to 60
+  seconds for the background check, with no deadline while the visitor is
+  completing a visible check (Cloudflare's own timeout applies). If the
+  check can't run, an inline error keeps the answers and offers the phone
+  number. Without JavaScript the check can't run, so a `<noscript>` line in
+  the form points to 888-862-9456. The site has no Content Security
+  Policy; if one is added it must allow https://challenges.cloudflare.com
+  (script and frame). The widget's Cloudflare hostname list must include
+  fexguy.com and www.fexguy.com; on other hosts (Vercel previews, local) the
+  form fails safely. Test with Cloudflare's test site keys (e.g.
+  1x00000000000000000000BB pass, 2x00000000000000000000BB fail,
+  3x00000000000000000000FF interactive), never with real leads.
+  /privacy-policy/ discloses Turnstile next to Formspark.
 - Fillout is the rollback only: form `pJBgSNEtN9us` stays in
   `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
   embed late; keep it that way). Setting `quoteForm: 'fillout'` restores it

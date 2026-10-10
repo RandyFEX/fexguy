@@ -56,6 +56,9 @@ export function leadFormHtml(variant: LeadFormVariant): string {
     title +
     `<form class="lead-form" id="quote" action="${endpoint}" method="post" data-lead-form${formName}>` +
     '<p class="lead-form__note">All fields are required.</p>' +
+    // Without JavaScript the security check can't run, so the form can't be
+    // sent: point those visitors to the phone (shown only then).
+    `<noscript><p class="lead-form__note">This form needs JavaScript, which is turned off in your browser. Please call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.</p></noscript>` +
     '<div class="lead-form__grid">' +
     field(
       'lf-first',
@@ -90,6 +93,10 @@ export function leadFormHtml(variant: LeadFormVariant): string {
       true,
     ) +
     '</div>' +
+    // Cloudflare Turnstile: src/scripts/lead-form.ts renders the widget here
+    // (shown only if Cloudflare needs the visitor to click) and sends its
+    // token to Formspark as cf-turnstile-response.
+    `<div class="lead-form__turnstile" data-turnstile data-sitekey="${lead.formspark.turnstile.siteKey}"></div>` +
     // Spam trap: Formspark discards any submission with _honeypot filled in.
     // Hidden from everyone (not just visually), so people never fill it in.
     '<div class="lead-form__trap" aria-hidden="true">' +

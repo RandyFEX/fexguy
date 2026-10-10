@@ -11,6 +11,14 @@
 // Without JavaScript none of this runs: the browser validates the fields and
 // the form posts to Formspark normally, which redirects to /help/ (no flag,
 // so nothing is counted).
+//
+// Spam protection: the _honeypot trap, plus Cloudflare Turnstile (Managed
+// mode). Cloudflare's script is loaded only when the form comes near the
+// screen or is used, and its widget stays hidden unless Cloudflare needs the
+// visitor to click. Each submission carries a fresh token as
+// cf-turnstile-response; Formspark verifies it (and rejects the submission
+// if it fails, so no success is shown). Tokens are single-use: after a failed
+// attempt the widget is reset so the retry gets a new one.
 import { lead } from '@/config/lead';
 
 const PHONE_DIGITS = /^[2-9]\d{9}$/;
@@ -26,6 +34,178 @@ const MESSAGES: Record<string, string> = {
 };
 
 type Control = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+
+// --- Cloudflare Turnstile ----------------------------------------------------
+
+/** The parts of Cloudflare's window.turnstile API used here. */
+interface TurnstileApi {
+  render(container: HTMLElement, options: Record<string, unknown>): string | undefined;
+  getResponse(widgetId: string): string | undefined;
+  isExpired(widgetId: string): boolean;
+  reset(widgetId: string): void;
+}
+
+declare global {
+  interface Window {
+    turnstile?: TurnstileApi;
+  }
+}
+
+/** How long a submission waits for the background check to produce a token.
+ * It never runs while Cloudflare is showing the visitor a check to click:
+ * then only Cloudflare's own timeout or error ends the wait. */
+const TOKEN_WAIT_MS = 60000;
+
+let scriptLoading: Promise<TurnstileApi> | null = null;
+
+/** Loads Cloudflare's script once per page. A failed load is forgotten, so
+ * the next attempt tries again. */
+const loadTurnstile = () => {
+  if (window.turnstile) return Promise.resolve(window.turnstile);
+  scriptLoading ??= new Promise<TurnstileApi>((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = lead.formspark.turnstile.script;
+    script.async = true;
+    script.onload = () =>
+      window.turnstile ? resolve(window.turnstile) : reject(new Error('turnstile'));
+    script.onerror = () => {
+      script.remove();
+      scriptLoading = null;
+      reject(new Error('turnstile'));
+    };
+    document.head.append(script);
+  });
+  return scriptLoading;
+};
+
+/** One Turnstile widget per form: renders it on demand and hands out tokens. */
+const turnstileFor = (
+  container: HTMLElement | null,
+  onInteractive: (needed: boolean) => void,
+) => {
+  let api: TurnstileApi | undefined;
+  let widgetId: string | undefined;
+  let rendering: Promise<void> | null = null;
+  let token = '';
+  let failed = false;
+  /** Cloudflare is showing the visitor a check to click. */
+  let interactive = false;
+  type Waiter = { done: (token: string) => void; timer?: ReturnType<typeof setTimeout> };
+  const waiters = new Set<Waiter>();
+
+  const settle = (value: string) => {
+    for (const waiter of waiters) {
+      clearTimeout(waiter.timer);
+      waiter.done(value);
+    }
+    waiters.clear();
+  };
+
+  /** The background-check deadline (off while the visitor has a check). */
+  const startTimer = (waiter: Waiter) => {
+    clearTimeout(waiter.timer);
+    waiter.timer = interactive
+      ? undefined
+      : setTimeout(() => {
+          waiters.delete(waiter);
+          waiter.done('');
+        }, TOKEN_WAIT_MS);
+  };
+
+  const ensure = () => {
+    if (!container) return Promise.reject(new Error('turnstile'));
+    rendering ??= loadTurnstile()
+      .then((turnstile) => {
+        api = turnstile;
+        widgetId = turnstile.render(container, {
+          sitekey: container.dataset.sitekey,
+          theme: 'light',
+          size: 'flexible',
+          appearance: 'interaction-only',
+          callback: (value: string) => {
+            token = value;
+            failed = false;
+            interactive = false;
+            onInteractive(false);
+            settle(value);
+          },
+          'expired-callback': () => {
+            token = '';
+          },
+          'error-callback': () => {
+            token = '';
+            failed = true;
+            interactive = false;
+            settle('');
+            return true;
+          },
+          'timeout-callback': () => {
+            token = '';
+            failed = true;
+            interactive = false;
+            settle('');
+          },
+          'before-interactive-callback': () => {
+            // The widget becomes visible: give it room (global.css).
+            container.classList.add('is-shown');
+            interactive = true;
+            for (const waiter of waiters) startTimer(waiter);
+            onInteractive(true);
+          },
+          'after-interactive-callback': () => {
+            interactive = false;
+            for (const waiter of waiters) startTimer(waiter);
+            onInteractive(false);
+          },
+        });
+        if (widgetId === undefined) throw new Error('turnstile');
+      })
+      .catch((error) => {
+        rendering = null;
+        throw error;
+      });
+    return rendering;
+  };
+
+  return {
+    /** Start loading early so a token is usually ready by submit time. */
+    prepare: () => {
+      ensure().catch(() => {});
+    },
+    /** A current token, or '' if none could be obtained. */
+    token: async () => {
+      try {
+        await ensure();
+      } catch {
+        return '';
+      }
+      if (!api || widgetId === undefined) return '';
+      if (api.isExpired(widgetId)) {
+        token = '';
+        interactive = false;
+        api.reset(widgetId);
+      } else if (failed) {
+        failed = false;
+        interactive = false;
+        api.reset(widgetId);
+      } else {
+        const current = token || api.getResponse(widgetId) || '';
+        if (current) return current;
+      }
+      return new Promise<string>((resolve) => {
+        const waiter: Waiter = { done: resolve };
+        waiters.add(waiter);
+        startTimer(waiter);
+      });
+    },
+    /** Tokens are single-use: get a fresh one for the next attempt. */
+    reset: () => {
+      token = '';
+      interactive = false;
+      if (api && widgetId !== undefined) api.reset(widgetId);
+    },
+  };
+};
 
 const phoneDigits = (value: string) => value.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
 
@@ -47,6 +227,34 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
   const buttonText = button?.textContent ?? '';
   let attempted = false;
   let sending = false;
+  let awaitingCheck = false;
+  let checkNeeded = false;
+  const CHECK_MESSAGE = 'Please complete the quick security check above the button.';
+
+  const turnstile = turnstileFor(
+    form.querySelector<HTMLElement>('[data-turnstile]'),
+    (needed) => {
+      // Cloudflare wants a click: say so while a submission waits for it.
+      checkNeeded = needed;
+      if (awaitingCheck && needed) setStatus(CHECK_MESSAGE);
+    },
+  );
+
+  // Load Turnstile once the form is near the screen or someone starts using it.
+  const prepare = () => {
+    observer?.disconnect();
+    form.removeEventListener('focusin', prepare);
+    turnstile.prepare();
+  };
+  const observer =
+    'IntersectionObserver' in window
+      ? new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) prepare();
+        }, { rootMargin: '300px' })
+      : null;
+  if (observer) observer.observe(form);
+  else prepare();
+  form.addEventListener('focusin', prepare);
 
   const showError = (control: Control, show: boolean) => {
     const error = form.querySelector<HTMLElement>(`#${control.id}-error`);
@@ -99,11 +307,35 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
     }
     setStatus('Sending your request…');
 
-    // Every named field except _redirect (only used without JavaScript).
+    // Cloudflare Turnstile token (usually ready already; otherwise this waits
+    // for it, including a click on the check if Cloudflare asks for one).
+    awaitingCheck = true;
+    if (checkNeeded) setStatus(CHECK_MESSAGE);
+    const token = await turnstile.token();
+    awaitingCheck = false;
+    if (!token) {
+      sending = false;
+      if (button) {
+        button.disabled = false;
+        button.textContent = buttonText;
+      }
+      setStatus(
+        `Sorry, we couldn’t complete the security check. Your answers are still here: please press the button again, or call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.`,
+        true,
+      );
+      status?.focus();
+      return;
+    }
+    setStatus('Sending your request…');
+
+    // Every named field except _redirect (only used without JavaScript) and
+    // the widget's own token field; the current token is added explicitly.
     const data: Record<string, string> = {};
     for (const [name, value] of new FormData(form)) {
-      if (name !== '_redirect' && typeof value === 'string') data[name] = value.trim();
+      if (name === '_redirect' || name === 'cf-turnstile-response') continue;
+      if (typeof value === 'string') data[name] = value.trim();
     }
+    data['cf-turnstile-response'] = token;
 
     const timeout = new AbortController();
     const timer = setTimeout(() => timeout.abort(), 20000);
@@ -139,6 +371,8 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
       return;
     }
 
+    // The token was used (or rejected): the retry needs a fresh one.
+    turnstile.reset();
     sending = false;
     if (button) {
       button.disabled = false;

@@ -24,6 +24,15 @@ export const lead = {
     successPath: '/help/',
     /** sessionStorage key set only after Formspark confirms a submission. */
     pendingLeadKey: 'fexguy:lead-pending',
+    /** Cloudflare Turnstile (Managed mode). The site key is public by
+     * design; the secret key lives only in Formspark, which verifies the
+     * cf-turnstile-response token sent with each submission. */
+    turnstile: {
+      siteKey: '0x4AAAAAAFTAF4WgYBf4SuWi',
+      /** Cloudflare's official script, explicit rendering (lead-form.ts
+       * loads it only on pages with the form, when the form comes near). */
+      script: 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit',
+    },
   },
 
   /** The Fillout quote/lead form (rollback; see quoteForm). */
