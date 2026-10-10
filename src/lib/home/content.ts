@@ -42,7 +42,14 @@ export const whyPoints: { title: string; text: string; icon: HomeIconName }[] = 
   },
 ];
 
-/** "What Do You Need Help With?": the three core products. */
+/** "What I Help People With": the three core products. */
+/** "What Does Final Expense Life Insurance Cover?" (Randy's wording,
+ * October 2026), between Why FEXGuy and the services. */
+export const coverage = {
+  title: 'What Does Final Expense Life Insurance Cover?',
+  text: 'Final expense life insurance covers any financial responsibility you’ll leave behind after your death. That includes paying off your home mortgage, car loans, credit cards, funeral bills, your kids’ education, everyday living expenses, or providing ongoing financial security for your family or business.',
+};
+
 export const services: (HomeLink & { icon: HomeIconName })[] = [
   { title: 'Final Expense Insurance', href: '/burial-insurance/', icon: 'shield' },
   { title: 'Term Life Insurance', href: '/term-life-insurance-guide-everyone/', icon: 'clock' },
@@ -141,21 +148,23 @@ export const companyReviews: HomeLink[] = [
   { title: 'Mutual of Omaha', href: '/mutual-of-omaha-burial-insurance/' },
 ];
 
-/** Educational guides. The first is featured. Each description only
- * summarizes what its destination page covers (its opening answer and
- * section headings); no figures, dates or reading times. */
-export const resources: (HomeLink & { description: string })[] = [
+/** Educational guides. The first is featured: the IUL Playbook, with
+ * Randy's headline, description and call to action (October 2026). The
+ * other descriptions only summarize what their destination pages cover
+ * (opening answer and section headings); no figures, dates or reading
+ * times. */
+export const resources: (HomeLink & { description: string; cta?: string })[] = [
   {
-    title: 'How Much Does Final Expense Insurance Cost?',
-    href: '/how-much-does-final-expense-insurance-cost/',
+    title: 'Thinking About Buying an IUL?',
+    href: '/iul-book/',
     description:
-      'What shapes the monthly price, including your age, health and coverage amount, and the kinds of policies to avoid.',
+      'Before you buy an indexed universal life policy, read why I believe IULs are the wrong choice for most people.',
+    cta: 'Read My Free IUL Playbook',
   },
   {
-    title: 'Term Life Insurance Guide For Everyone',
-    href: '/term-life-insurance-guide-everyone/',
-    description:
-      'How term life works, choosing a term length, how much coverage families usually need, and how pricing and medical underwriting affect your rate.',
+    title: 'Burial Insurance',
+    href: '/burial-insurance/',
+    description: 'Learn how burial insurance works, what it costs, and how to find the right coverage.',
   },
   {
     title: 'Mortgage Protection Life Insurance',
@@ -164,9 +173,10 @@ export const resources: (HomeLink & { description: string })[] = [
       'How mortgage protection works, how much coverage you need and for how long, and whether term, whole life or final expense fits best.',
   },
   {
-    title: 'Declined for Life Insurance: What To Do',
-    href: '/declined-for-life-insurance/',
-    description: 'Common reasons applications are declined, and what to do next.',
+    title: 'Term Life Insurance',
+    href: '/term-life-insurance-guide-everyone/',
+    description:
+      'How term life works, choosing a term length, how much coverage families usually need, and how pricing and medical underwriting affect your rate.',
   },
 ];
 

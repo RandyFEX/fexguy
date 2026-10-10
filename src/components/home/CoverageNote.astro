@@ -1,0 +1,44 @@
+---
+// "What Does Final Expense Life Insurance Cover?": a short explanation on the
+// white background between Why FEXGuy and "What I Help People With".
+// Same heading scale as the other sections, without a gold rule of its own:
+// the services section's gold rule follows it. No top/bottom band: the
+// services section's own top padding separates the two.
+import { coverage } from '@/lib/home/content';
+---
+
+<section class="cover" aria-labelledby="cover-title">
+  <div class="container">
+    <h2 class="cover__title" id="cover-title">{coverage.title}</h2>
+    <p class="cover__text">{coverage.text}</p>
+  </div>
+</section>
+
+<style>
+  .cover {
+    padding-top: var(--space-12);
+  }
+  .cover__title {
+    max-width: none;
+    margin: 0 auto var(--space-4);
+    text-align: center;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  /* Phones: left-aligned, easier to read over several lines; centered under
+     the heading once the line is long enough. */
+  .cover__text {
+    max-width: 46rem;
+    margin: 0 auto;
+    text-wrap: pretty;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  @media (min-width: 40rem) {
+    .cover__text {
+      text-align: center;
+    }
+  }
+</style>
