@@ -1,0 +1,21 @@
+{
+  "name": "fexguy-seo-monitor",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Read-only GA4 and Search Console access for FEXGUY.com SEO monitoring (Vercel Functions, keyless via Vercel OIDC + Google Workload Identity Federation).",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vercel/oidc": "^4.0.0",
+    "google-auth-library": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
