@@ -427,6 +427,6 @@ sidebar: true
 
 <p><strong>Gerber whole life insurance for seniors</strong>&#160;is marketed as Final Expense insurance to help with burial costs, but it comes with higher monthly premiums.</p>
 
-<p><strong>Guaranteed issue whole life policy?</strong> A policy that accepts all&#160;applications&#160;with no health questions.&#160;Usually, there are&#160;higher&#160;costs&#160;and a two-year waiting period before&#160;all&#160;benefits&#160;are&#160;paid.</p>
+<p><strong>Guaranteed issue whole life policy?</strong> A policy that accepts all&#160;applications&#160;with no health questions.&#160;These policies cost more than first-day coverage for people who qualify for it, and they have a two-year waiting period before the full natural-death benefit is paid.</p>
 
 <p><strong>Gerber Guaranteed Life Insurance Reviews Mixed&#160;reviews</strong>&#160;–&#160;some seniors&#160;enjoy&#160;the easy approval,&#160;and&#160;many&#160;seniors&#160;have&#160;complained&#160;about the&#160;2-year&#160;waiting period, high&#160;price,&#160;and small cash&#160;value.</p>

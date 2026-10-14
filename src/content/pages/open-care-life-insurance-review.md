@@ -303,7 +303,7 @@ The no-questions shortcut
 </tbody>
 </table>
 
-<p><br>Keep in mind that guaranteed-issue plans cost much more and delay protection 2-3 years.<br>Simplified-issue plans give you first-day coverage at a lower price if you answer a few basic health questions.</p>
+<p><br>Keep in mind that guaranteed-issue plans cost more than first-day coverage for people who qualify for it, and they have a two-year waiting period for natural death.<br>Simplified-issue plans give you first-day coverage at a lower price if you answer a few basic health questions.</p>
 
 <hr>
 

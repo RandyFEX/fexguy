@@ -245,7 +245,7 @@ export const faqs: { question: string; answer: string[]; sources: string[] }[] =
   {
     question: 'What’s the difference between first-day coverage and a two-year waiting period?',
     answer: [
-      'With first-day coverage, the full death benefit is available as soon as the policy is approved and in force. With a two-year waiting period, if you die from natural causes during the first two years, your beneficiary generally receives the premiums you paid plus interest instead of the full benefit. Which one you qualify for depends on your answers to the health questions and the company you apply with.',
+      'With first-day coverage, the full death benefit is available as soon as the policy is approved and in force. With a guaranteed acceptance plan’s two-year waiting period, if you die from natural causes during the first two years, your beneficiary receives the premiums you paid plus an additional amount set by the contract instead of the full benefit. Which one you qualify for depends on your answers to the health questions and the company you apply with.',
     ],
     sources: ['/burial-insurance/life-insurance-no-exam/', '/burial-insurance/with-first-day-coverage/'],
   },
