@@ -971,6 +971,9 @@ a:hover {
   margin-bottom: var(--space-6);
   text-align: center;
 }
+.roku__brand {
+  color: #662d91;
+}
 .roku__intro h1 {
   margin-bottom: var(--space-2);
 }
@@ -988,11 +991,25 @@ a:hover {
 .roku__cta p {
   margin: 0;
 }
+/* The site's existing orange call to action (the article template's quote
+   form button, ArticleLayout.astro): #c2410c with white text, 5.2:1. On
+   /roku/ it is used by the call buttons and the form's submit button. */
+.roku__call,
+.roku .lead-form__submit {
+  background: #c2410c;
+  color: #ffffff;
+}
 .roku__call {
   min-height: 3.5rem;
   padding-inline: var(--space-6);
   font-size: clamp(1.125rem, 1rem + 0.8vw, 1.375rem);
   white-space: nowrap;
+}
+.roku__call:hover,
+.roku .lead-form__submit:hover:not(:disabled) {
+  background: #c2410c;
+  color: #ffffff;
+  filter: brightness(0.9);
 }
 .roku__cta .roku__cta-note {
   margin-top: var(--space-3);

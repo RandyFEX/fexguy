@@ -14,7 +14,7 @@ phone: "ctv"
 <div class="roku">
 
 <header class="roku__intro">
-<h1>Welcome, Roku Viewers!</h1>
+<h1>Welcome, <span class="roku__brand">Roku</span> Viewers!</h1>
 <p class="roku__sub">You Saw Me on TV. Now Let’s See If I Can Help You.</p>
 </header>
 
