@@ -985,8 +985,9 @@ a:hover {
   text-wrap: balance;
 }
 /* Randy's headshot beside his name and title, under the first call
-   button: a centered row (photo left, text left-aligned) that stacks only
-   when the screen is too narrow (public/images/randy/, 240px source). */
+   button, in a light beige box: a centered row (photo left, text
+   left-aligned) that stacks only when the screen is too narrow
+   (public/images/randy/, 240px source). */
 .roku__agent {
   display: flex;
   flex-wrap: wrap;
@@ -994,6 +995,10 @@ a:hover {
   justify-content: center;
   gap: var(--space-3) var(--space-4);
   margin-block: var(--space-6);
+  padding: var(--space-4);
+  background: #f8f5ef;
+  border: 1px solid #ded8cc;
+  border-radius: 10px;
 }
 .roku .roku__agent img {
   display: block;
@@ -1004,7 +1009,7 @@ a:hover {
   object-fit: cover;
 }
 .roku__agent .roku__agent-id {
-  flex: 1 1 10.5rem;
+  flex: 1 1 9rem;
   max-width: max-content;
   margin: 0;
   text-align: left;
