@@ -269,7 +269,7 @@ sidebar: true
 
 <h3>What is the waiting period for burial insurance with active endocarditis?</h3>
 
-<p>If you currently have an active heart infection or are undergoing IV antibiotic treatment, you must use a guaranteed-issue policy, which always includes a mandatory two-year waiting period. Here is the part they do not tell you in the flashy commercials: insurance companies will not give you immediate coverage while you are still fighting an active infection. If you pass away from natural causes during the first 24 months of a guaranteed-issue plan, the company simply refunds your premiums plus about 10% interest. However, accidental death is covered for the full 100% starting on day one. It is better to start this clock now so your family is fully protected sooner rather than later.</p>
+<p>If you currently have an active heart infection or are undergoing IV antibiotic treatment, you must use a guaranteed-issue policy, which always includes a mandatory two-year waiting period. Here is the part they do not tell you in the flashy commercials: insurance companies will not give you immediate coverage while you are still fighting an active infection. If you pass away from natural causes during the first 24 months of a guaranteed-issue plan, the company simply refunds your premiums plus about 10% interest. However, a covered accidental death can be paid at the full 100% starting on day one. It is better to start this clock now so your family is fully protected sooner rather than later.</p>
 
 <h3>Will prophylactic antibiotics for endocarditis raise my burial insurance premiums?</h3>
 

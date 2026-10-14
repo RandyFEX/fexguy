@@ -198,7 +198,7 @@ the best rating.</p>
 
 <p>Health issues like heart attack, cancer, or stroke within the previous year will put you in the modified benefit plan. The company will charge 15-50% more on your premiums.</p>
 
-<p>There is a two-year waiting period for a modified plan. If you die during the waiting period, the company will return all the premiums you paid plus 10% interest. However, if you had an accidental death during the waiting period, they would pay out 100% death benefit.</p>
+<p>There is a two-year waiting period for a modified plan. If you die during the waiting period, the company will return all the premiums you paid plus 10% interest. However, a covered accidental death during the waiting period can be paid at 100% of the death benefit.</p>
 
 <p><br><strong>GUARANTEED ISSUE BURIAL INSURANCE</strong></p>
 
@@ -208,7 +208,7 @@ the best rating.</p>
 
 <p>A guaranteed issue plan has a two-year waiting period. If you pass away during the first two years, the company will refund all your premiums plus 7-10% interest. </p>
 
-<p>The company will pay the 100% death benefit when you live beyond the waiting period. However, the full cash benefit will be paid for accidental death, even during the waiting period.</p>
+<p>The company will pay the 100% death benefit when you live beyond the waiting period. However, the full cash benefit can be paid for a covered accidental death, even during the waiting period.</p>
 
 <p><strong>Guaranteed issue insurance is your only option for coverage if you have any of the following medical conditions:</strong></p>
 

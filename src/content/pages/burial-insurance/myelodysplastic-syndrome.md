@@ -260,7 +260,7 @@ sidebar: true
 
 <h3>Will regular blood transfusions for MDS affect my burial insurance eligibility?</h3>
 
-<p>Frequent blood transfusions often trigger a waiting period because underwriters view them as “active treatment” rather than “maintenance therapy.” If you require transfusions more than once every few months, the insurance company will likely place you in a guaranteed issue plan. Here is the part they do not tell you in the commercials: these plans come with a two-year waiting period for a natural death payout. But even then, your family still gets full accidental death coverage starting on day one. You should never let a transfusion schedule stop you from starting the clock on your two-year window.</p>
+<p>Frequent blood transfusions often trigger a waiting period because underwriters view them as “active treatment” rather than “maintenance therapy.” If you require transfusions more than once every few months, the insurance company will likely place you in a guaranteed issue plan. Here is the part they do not tell you in the commercials: these plans come with a two-year waiting period for a natural death payout. But even then, a covered accidental death can still pay your family the full benefit starting on day one. You should never let a transfusion schedule stop you from starting the clock on your two-year window.</p>
 
 <h3>What is the waiting period for burial insurance with severe MDS?</h3>
 

@@ -252,7 +252,7 @@ sidebar: true
 
 <h3>Can I get burial insurance with an active cervical cancer diagnosis?</h3>
 
-<p>Insurance companies offer “Guaranteed Issue” burial insurance to individuals currently undergoing treatment for cervical cancer, regardless of the stage. These policies do not require medical exams or health questions, meaning you cannot be denied based on your cancer status.<sup></sup> Because the insurer takes on a higher risk, these plans feature a standard two-year waiting period where a natural death results in a refund of all premiums plus interest, though accidental deaths are covered in full from day one.</p>
+<p>Insurance companies offer “Guaranteed Issue” burial insurance to individuals currently undergoing treatment for cervical cancer, regardless of the stage. These policies do not require medical exams or health questions, meaning you cannot be denied based on your cancer status.<sup></sup> Because the insurer takes on a higher risk, these plans feature a standard two-year waiting period where a natural death results in a refund of all premiums plus interest, though a covered accidental death can be paid in full from day one.</p>
 
 <h3>Can cervical cancer survivors qualify for first-day coverage?</h3>
 

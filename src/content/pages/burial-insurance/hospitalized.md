@@ -91,11 +91,11 @@ straightforward.</p>
 
 <p>A graded death benefit means there is a two to a four-year waiting period before they will give the full death benefit payout to the beneficiary. </p>
 
-<p>If death occurs during the waiting period, the beneficiary will only receive a return of premium plus 7% to 10% interest. If death occurs from accidental causes during the waiting period, 100% death benefit will be paid out.</p>
+<p>If death occurs during the waiting period, the beneficiary will only receive a return of premium plus 7% to 10% interest. If a covered accidental death occurs during the waiting period, the policy can pay the 100% death benefit.</p>
 
 <p><br><strong>HOW DOES A GRADED DEATH BENEFIT WORK?</strong></p>
 
-<p>Death from accidental causes will not have a waiting period. The full death benefit amount will be paid to your beneficiaries. </p>
+<p>Depending on the policy, a covered accidental death may not be subject to the waiting period, and the full death benefit can be paid to your beneficiaries. </p>
 
 <p>If you die from natural causes or any reason other than an accident during the waiting period, your beneficiary will receive all premiums paid plus interest. </p>
 

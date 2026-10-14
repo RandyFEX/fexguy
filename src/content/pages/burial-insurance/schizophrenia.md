@@ -307,7 +307,7 @@ sidebar: true
 
 <h3>How do recent mental health hospitalizations affect burial insurance options?</h3>
 
-<p>Recent psychiatric hospitalizations trigger a mandatory two-year waiting period because underwriters view recent crises as a higher risk to the insurance pool. If a crisis landed you in the hospital within the last 12 to 24 months, some insurance companies will change your policy to a waiting period type of plan. These plans make your family wait 2 years for a natural death payout. However, the company still covers accidental death for the full amount starting on day one. Check with me before getting into a waiting period plan.</p>
+<p>Recent psychiatric hospitalizations trigger a mandatory two-year waiting period because underwriters view recent crises as a higher risk to the insurance pool. If a crisis landed you in the hospital within the last 12 to 24 months, some insurance companies will change your policy to a waiting period type of plan. These plans make your family wait 2 years for a natural death payout. However, a covered accidental death can still be paid in full starting on day one. Check with me before getting into a waiting period plan.</p>
 
 <h3>Will taking antipsychotic medications increase burial insurance premiums?</h3>
 

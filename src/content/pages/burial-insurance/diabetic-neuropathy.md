@@ -345,7 +345,7 @@ sidebar: true
 
 <h3>Can I get burial insurance if my diabetic neuropathy is considered “uncontrolled”?</h3>
 
-<p>You can still qualify for burial insurance even if your doctor considers your condition “uncontrolled” by using a guaranteed-issue policy that asks zero health questions. If a recent crisis or hospitalization for out-of-control blood sugar makes regular companies nervous, these plans act as your safety net. You will face a two-year waiting period for a natural death payout, but accidental death is covered for the full amount starting on day one. Every dollar you pay into a plan like this grows with interest until you clear that two-year clock. It is the only way to ensure the most severe cases still leave a legacy for their loved ones.</p>
+<p>You can still qualify for burial insurance even if your doctor considers your condition “uncontrolled” by using a guaranteed-issue policy that asks zero health questions. If a recent crisis or hospitalization for out-of-control blood sugar makes regular companies nervous, these plans act as your safety net. You will face a two-year waiting period for a natural death payout, but a covered accidental death can be paid in full starting on day one. Every dollar you pay into a plan like this grows with interest until you clear that two-year clock. It is the only way to ensure the most severe cases still leave a legacy for their loved ones.</p>
 
 <h3>Will burial insurance cover a death caused by complications of diabetic neuropathy?</h3>
 

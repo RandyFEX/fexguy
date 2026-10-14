@@ -134,7 +134,7 @@ sidebar: true
 
 <p><strong>Your death benefit will never decrease.</strong></p>
 
-<p>Your death benefit is fixed and guaranteed never to decrease when you pass away. Your beneficiaries will get 100% of the face amount of your benefit right away if you die from an accident or after the two-year waiting period if you die from natural death.</p>
+<p>Your death benefit is fixed and guaranteed never to decrease when you pass away. Your beneficiaries can get 100% of the face amount right away for a covered accidental death, or after the two-year waiting period for a natural death.</p>
 
 <p>The death benefit is tax-free and your beneficiaries will receive your full death benefit free of tax when you pass away after waiting.</p>
 

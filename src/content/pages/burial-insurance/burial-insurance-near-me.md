@@ -122,7 +122,7 @@ year, </li>
 
 <p>There is a two-year waiting period for the modified benefit plan. If you pass away during the waiting period, the insurance company will not pay out the full benefit to your beneficiary. Instead, they will return 110% of your money. </p>
 
-<p>Modified benefit plans return premiums plus 7-10% interest during the first two years of the policy. However, in case of accidental death, the company would pay out 100% full death benefit even during the waiting period.</p>
+<p>Modified benefit plans return premiums plus 7-10% interest during the first two years of the policy. However, a covered accidental death can pay the full death benefit even during the waiting period.</p>
 
 <p><br><strong>GUARANTEED ISSUE BURIAL INSURANCE</strong></p>
 
@@ -160,7 +160,7 @@ insurance instantly, this is the best way to go.</p>
 
 <p>Guaranteed issue burial insurance policies have graded benefits for the first two years of the policy. The waiting period applies to the all-natural causes of death. </p>
 
-<p>If you die during the two-year waiting period, your beneficiaries will receive all the premiums you’ve paid plus 7-10% interest. The company will pay 100% of the death benefit if you die from an accident. After the two-year waiting period, you are covered for life.</p>
+<p>If you die during the two-year waiting period, your beneficiaries will receive all the premiums you’ve paid plus 7-10% interest. A covered accidental death can pay 100% of the death benefit. After the two-year waiting period, you are covered for life.</p>
 
 <p>Guaranteed issue burial insurance is the best option for getting life insurance as quickly as possible. In most cases, you can get life insurance coverage in less than 15 minutes. </p>
 

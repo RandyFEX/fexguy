@@ -139,7 +139,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance has a graded benefit for the first two years. The two-year waiting period applies to the natural cause of death. If you pass away due to natural causes during the two-year waiting period, your beneficiary will receive only the premiums you paid plus 7-10% interest. </p>
 
-<p>Accidental death is fully covered even during the two-year waiting period, and the life insurance company will pay your beneficiary 100% of the death benefit. After the waiting period, you are covered for life, and your beneficiary will receive a 100% death benefit if you die for any reason.</p>
+<p>A covered accidental death can be paid in full even during the two-year waiting period, with your beneficiary receiving 100% of the death benefit. After the waiting period, you are covered for life, and your beneficiary will receive a 100% death benefit if you die for any reason.</p>
 
 <h2 id="how-much-does-a-funeral-cost"><br><strong>How much does a funeral cost? </strong></h2>
 

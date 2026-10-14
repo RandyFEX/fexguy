@@ -124,7 +124,7 @@ sidebar: true
 
 <p>To guarantee insurance coverage for everybody regardless of their health conditions, these companies with television commercials offer guaranteed issue life insurance with a two-year waiting period.</p>
 
-<p>Guaranteed issue life insurance only offers first-day coverage for accidental death. However, it does not cover the natural causes of death for the first two years. You must live for the first two years before your beneficiary will receive the full death benefit.</p>
+<p>Guaranteed issue life insurance offers full first-day coverage only for a covered accidental death. However, it does not cover the natural causes of death for the first two years. You must live for the first two years before your beneficiary will receive the full death benefit.</p>
 
 <h2 id="3-avoid-junk-mail-burial-insurance"><br><strong>#3 avoid junk mail burial insurance</strong></h2>
 
@@ -191,7 +191,7 @@ sidebar: true
 
 <p><br><strong>3. TWO-YEAR WAITING PERIOD (Guaranteed issue life insurance)</strong></p>
 
-<p>Guaranteed issue life insurance offers immediate coverage for the accidental cause of death. However, it has a two-year waiting period for death’s health-related or natural cause.</p>
+<p>Guaranteed issue life insurance can pay a covered accidental death in full right away. However, it has a two-year waiting period for death’s health-related or natural cause.</p>
 
 <p>If you die during the two-year waiting period, your beneficiary will only receive a return of premium plus 7-10% interest.</p>
 

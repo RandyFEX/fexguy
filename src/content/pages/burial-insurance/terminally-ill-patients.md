@@ -97,7 +97,7 @@ sidebar: true
 
 <p><strong>1.</strong> <strong>2-Year Waiting Period</strong></p>
 
-<p>The #1 reason why I don’t recommend guaranteed issue life insurance for a terminal illness is the waiting period. This plan does not offer immediate coverage except for accidental death during the first two years.</p>
+<p>The #1 reason why I don’t recommend guaranteed issue life insurance for a terminal illness is the waiting period. During the first two years, this plan offers immediate full coverage only for a covered accidental death.</p>
 
 <p>When you take out this plan, you will automatically be approved for coverage with no questions. Your plan will also have a mandatory two-year waiting period for any health or medical-related cause of death.</p>
 
@@ -105,7 +105,7 @@ sidebar: true
 
 <p>This policy will require you to live for the first two years before your policy pays for any health or medical-related cause of death. If you pass away during the waiting period, your beneficiary will not get your full death benefit. Instead, they will get a Return Of Premium (ROP) plus an additional amount set by the contract, typically 7% to 10%.</p>
 
-<p>If death occurs for natural causes within the first two policy years, your beneficiary will only receive all premiums plus 7% – 10% interest. If death is due to accidental reasons within the first two policy years, the full death benefit shall be paid to your beneficiary.</p>
+<p>If death occurs for natural causes within the first two policy years, your beneficiary will only receive all premiums plus 7% – 10% interest. If a covered accidental death occurs within the first two policy years, the full death benefit can be paid to your beneficiary.</p>
 
 <p>If your doctor expects death within the next two years, your family would most likely receive the premium refund plus that contract amount, not the full death benefit. That’s why I generally don’t recommend buying a new guaranteed issue policy in that situation, although I can still help you get one if you decide it’s right for your family.</p>
 

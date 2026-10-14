@@ -66,7 +66,7 @@ sidebar: true
 
 <p>Guaranteed issue or guaranteed acceptance burial insurance doesn’t ask health questions when you apply. Your approval is guaranteed even if you have severe gout and you can’t perform activities of daily living on your own.</p>
 
-<p>You must be aware that guaranteed issue burial insurance has a two-year waiting period, and it cost more than a level death benefit plan. Guaranteed-issue policies will pay the death benefit if you die from an accident during the waiting period. However, if you die from natural causes during the waiting period, your beneficiary will only receive all the premiums you paid plus 7-10% interest.</p>
+<p>You must be aware that guaranteed issue burial insurance has a two-year waiting period, and it cost more than a level death benefit plan. Guaranteed-issue policies can pay the full death benefit for a covered accidental death during the waiting period. However, if you die from natural causes during the waiting period, your beneficiary will only receive all the premiums you paid plus 7-10% interest.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

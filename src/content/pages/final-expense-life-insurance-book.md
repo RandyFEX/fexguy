@@ -120,7 +120,7 @@ source: "live"
 
 <p><strong>TWO-YEAR WAIT PLANS</strong> (called <strong>graded or guaranteed issue</strong> policies) delay full benefits until after the first two years (or 3 years with some even worse policies).</p>
 
-<p>If a death occurs within the first two years due to a health or medical reason, your beneficiary will only receive a refund of premiums plus interest, <strong>not the full payout</strong>. These ONLY pay out in the first two years if you die in an <strong>accidental death</strong>.</p>
+<p>If a death occurs within the first two years due to a health or medical reason, your beneficiary will only receive a refund of premiums plus interest, <strong>not the full payout</strong>. In the first two years, these ONLY pay the full benefit for a <strong>covered accidental death</strong>.</p>
 
 <p>Unfortunately, 2-year wait policies are often sold to people who qualify for 1st-day coverage because most call centers want to avoid the medical underwriting training needed to get you 1st-day coverage.</p>
 

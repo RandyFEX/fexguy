@@ -290,7 +290,7 @@ sidebar: true
 <ul>
 <li><strong>Level Benefit:</strong> This is what you want. It indicates first-day coverage for both natural and accidental deaths.</li>
 <li><strong>Graded or Modified:</strong> These are major identifiers of a waiting period. Graded plans usually pay a percentage (e.g., 30% or 40%) in the first two years, while modified plans often only refund your premiums plus interest for natural deaths during that time. If you were told you have “immediate coverage” but see these terms, you should contact your agent immediately.</li>
-<li><strong>Guarantee Issue 2-Year Waiting Period: </strong>If a death occurs from natural causes (medical or health-related death) within the first 24 months of the policy, the insurer will not pay the full death benefit. Instead, they will refund the premiums you paid plus an additional amount set by the contract, typically 7% to 10%. Accidental death is still covered for the full amount from day one, but medical or health related deaths are excluded until the 25th month.</li>
+<li><strong>Guarantee Issue 2-Year Waiting Period: </strong>If a death occurs from natural causes (medical or health-related death) within the first 24 months of the policy, the insurer will not pay the full death benefit. Instead, they will refund the premiums you paid plus an additional amount set by the contract, typically 7% to 10%. A covered accidental death can still pay the full amount from day one, but medical or health related deaths don’t receive the full benefit until the 25th month.</li>
 </ul>
 
 <h4><strong>Reviewing the premium schedule</strong></h4>
@@ -370,7 +370,7 @@ sidebar: true
 
 <ul>
 <li><strong>Natural Death:</strong> If you pass away from natural causes, such as an illness or a chronic condition, within the first two years, the policy will not pay the full death benefit. Instead, the insurer will refund every dollar you paid in premiums, plus an additional amount set by the contract, typically 7% to 10%.</li>
-<li><strong>Accidental Death:</strong> These policies still provide full coverage for accidental deaths starting from the very first day.</li>
+<li><strong>Accidental Death:</strong> These policies can still pay the full benefit for a covered accidental death starting from the very first day.</li>
 <li><strong>Full Payout:</strong> Once you reach the 25th month of the policy, you are fully covered for any cause of death, regardless of your health at that time.</li>
 </ul>
 

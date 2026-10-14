@@ -269,7 +269,7 @@ sidebar: true
 
 <h3>How do burial insurance waiting periods apply to recent heart procedures?</h3>
 
-<p>Insurance companies typically trigger a graded benefit period if a doctor performed a <a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">heart surgery</a> or stent placement on you within the last 12 to 24 months. Some companies limit natural death payouts during the initial phase of the policy if your diagnosis is brand new. But accidental death protection begins the moment you pay your first premium, so your family is never completely on their own. You should lock in a plan now so you can start the two-year waiting period. Every day you wait is another day your family is left holding the bag for a $15,000 funeral bill.</p>
+<p>Insurance companies typically trigger a graded benefit period if a doctor performed a <a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">heart surgery</a> or stent placement on you within the last 12 to 24 months. Some companies limit natural death payouts during the initial phase of the policy if your diagnosis is brand new. But a covered accidental death can be paid from the moment you pay your first premium, so your family isn’t completely on their own. You should lock in a plan now so you can start the two-year waiting period. Every day you wait is another day your family is left holding the bag for a $15,000 funeral bill.</p>
 
 <h3>Does coronary artery disease count as a pre-existing condition in burial insurance?</h3>
 

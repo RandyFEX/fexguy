@@ -270,7 +270,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance after heart surgery?</h3>
 
-<p>You can qualify for a level plan with no waiting period if your heart surgery occurred more than 2 years ago and you have remained stable since that date. Here is the part they do not tell you in the TV commercials: many big-name insurers try to stick everyone with a heart history into a mandatory 2-year wait, but I know which companies offer first-day coverage for survivors. If your procedure was within the last 12 months, you might have to start with a graded or modified plan that pays a partial benefit at first. But accidental death always pays 100% from the very first day, so your family is never left completely in the lurch while your policy is in force.</p>
+<p>You can qualify for a level plan with no waiting period if your heart surgery occurred more than 2 years ago and you have remained stable since that date. Here is the part they do not tell you in the TV commercials: many big-name insurers try to stick everyone with a heart history into a mandatory 2-year wait, but I know which companies offer first-day coverage for survivors. If your procedure was within the last 12 months, you might have to start with a graded or modified plan that pays a partial benefit at first. But a covered accidental death can pay 100% from the very first day, so your family isn’t left completely in the lurch while your policy is in force.</p>
 
 <h3>Can I get first-day burial insurance coverage for a recent heart stent or bypass?</h3>
 

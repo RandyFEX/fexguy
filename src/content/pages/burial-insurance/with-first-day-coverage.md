@@ -131,7 +131,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance or guaranteed acceptance life insurance comes with a two-year waiting period.</p>
 
-<p>Guaranteed acceptance life insurance only offers first-day coverage for the accidental cause of death. However, it has a two-year waiting period for the natural cause of death or health-related death,</p>
+<p>With guaranteed acceptance life insurance, only a covered accidental death can be paid in full from the first day. However, it has a two-year waiting period for the natural cause of death or health-related death,</p>
 
 <p>If you have a guaranteed issue life insurance and die during the first two years, your beneficiary will only receive the premiums you paid plus 7-10% interest.</p>
 

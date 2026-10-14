@@ -87,7 +87,7 @@ sidebar: true
 
 <p>If you are 50 to 85 years old, a U.S. citizen who can enter into a legal contract, you will be eligible for this policy.</p>
 
-<p>A guaranteed acceptance policy is graded for the first two years for natural causes of death. The insurance company will only pay the full death benefit if you die from an accident during the first two years.</p>
+<p>A guaranteed acceptance policy is graded for the first two years for natural causes of death. During the first two years, only a covered accidental death can receive the full death benefit.</p>
 
 <p>If you pass away due to an illness during the two-year
 waiting period, the insurance company will pay your beneficiary with all the

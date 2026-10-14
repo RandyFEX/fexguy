@@ -24,7 +24,7 @@ sidebar: true
 <li><strong>Partial Benefits Help Early on:</strong> A “graded” plan with a company like Guarantee Trust Life is often your best move because it pays out a portion of the benefit much sooner than a standard two-year waiting period.</li>
 <li><strong>Early Action Locks in Lower Costs:</strong> Since ALS only moves in one direction, applying the moment you are diagnosed is the only way to secure the best possible rates before your options disappear.</li>
 <li><strong>Wheelchairs are Still Approved:</strong> Even if the disease has progressed and you now use a wheelchair or need help with daily tasks, I can still get you a guaranteed policy through companies like Gerber Life.</li>
-<li><strong>Accidental Death Coverage Starts Now:</strong> While there is a two-year wait for a full payout from illness, your policy will still pay the full 100% amount immediately if your death is caused by an accident.</li>
+<li><strong>Accidental Death Coverage Starts Now:</strong> While there is a two-year wait for a full payout from illness, your policy can still pay the full 100% amount immediately if your death is caused by a covered accident.</li>
 </ul>
 
 <p>Many insurance carriers now offer expanded options for people with complex health profiles. Most people will have no trouble qualifying for and affording an instant-approval policy through a graded or guaranteed-issue provider.</p>
@@ -252,7 +252,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with ALS?</h3>
 
-<p>Most insurance companies apply a two-year waiting period to policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But accidental death still pays the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
+<p>Most insurance companies apply a two-year waiting period to policies for applicants with progressive or terminal conditions like ALS. Here is the part they do not tell you in the TV commercials: if your health is too deteriorated, that will require a 24-month waiting period for a full natural death payout. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your family. But a covered accidental death can still pay the full benefit amount starting on day one. Starting this clock early protects your family from the financial mess that a long illness often leaves behind.</p>
 
 <h3>How much does burial insurance cost for someone with ALS?</h3>
 

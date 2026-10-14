@@ -74,7 +74,7 @@ sidebar: true
 
 <p>You can qualify for this plan if you are a U.S. citizen between 50 and 85 years old.</p>
 
-<p>Guaranteed issue policy has a two-year waiting period for a natural cause of death. If you pass away during the first two years due to any medical issues, your beneficiaries will receive all your premiums plus 10% interest. The policy will pay for accidental heath if you pass away during the waiting period. After the first two years, it will pay full death benefits for any cause of death.</p>
+<p>Guaranteed issue policy has a two-year waiting period for a natural cause of death. If you pass away during the first two years due to any medical issues, your beneficiaries will receive all your premiums plus 10% interest. The policy can pay the full benefit for a covered accidental death during the waiting period. After the first two years, it will pay full death benefits for any cause of death.</p>
 
 <p><strong>Best Option: </strong>Guaranteed issue burial insurance</p>
 

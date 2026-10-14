@@ -257,7 +257,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance after a TIA?</h3>
 
-<p>The insurance company determines your waiting period by checking the calendar to see how much time has passed since your last medical event. If your TIA occurred more than 2 years ago, most state-regulated policies offer first-day coverage with no waiting period. With some companies, if your TIA was within the last 12 months, it usually triggers a mandatory two-year waiting period for natural death benefits. If you pass away from natural causes during those first 24 months, the company simply refunds your premiums plus 10% interest to your beneficiaries. Accidental death still pays the full benefit starting on day one. Always check with me in specialty cases like this.</p>
+<p>The insurance company determines your waiting period by checking the calendar to see how much time has passed since your last medical event. If your TIA occurred more than 2 years ago, most state-regulated policies offer first-day coverage with no waiting period. With some companies, if your TIA was within the last 12 months, it usually triggers a mandatory two-year waiting period for natural death benefits. If you pass away from natural causes during those first 24 months, the company simply refunds your premiums plus 10% interest to your beneficiaries. A covered accidental death can still pay the full benefit starting on day one. Always check with me in specialty cases like this.</p>
 
 <h3>How do burial insurance companies distinguish between a TIA and a major stroke?</h3>
 

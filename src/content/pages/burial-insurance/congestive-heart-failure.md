@@ -274,7 +274,7 @@ sidebar: true
 
 <h3>Will using home oxygen for CHF disqualify me from burial insurance?</h3>
 
-<p>Using home oxygen does not disqualify you from insurance coverage, but it typically triggers a mandatory two-year waiting period. Most burial insurance companies view oxygen use as a high-risk indicator. In this case, a guaranteed issue policy is your best path. It ensures your family is covered for accidental death immediately and for natural death after the 24-month mark. It is a vital safety net that keeps the insurance company’s hands out of your medical business.</p>
+<p>Using home oxygen does not disqualify you from insurance coverage, but it typically triggers a mandatory two-year waiting period. Most burial insurance companies view oxygen use as a high-risk indicator. In this case, a guaranteed issue policy is your best path. It can pay the full benefit for a covered accidental death immediately and for natural death after the 24-month mark. It is a vital safety net that keeps the insurance company’s hands out of your medical business.</p>
 
 <h3>Does a recent hospitalization for fluid buildup trigger a waiting period?</h3>
 

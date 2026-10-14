@@ -108,7 +108,7 @@ insurance is your best option:</p>
 
 <p>If you pass away within the first two years or waiting period due to your lung cancer or other illness, the company will refund all your premiums plus 10% interest. If you live beyond the waiting period, 100% of the death benefit will be paid out to your beneficiaries regardless of the cause of your death.</p>
 
-<p>However, this plan will pay 100% of the death benefit if you pass away due to an accident, even during the waiting period.</p>
+<p>However, a covered accidental death can pay 100% of the death benefit, even during the waiting period.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

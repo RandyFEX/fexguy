@@ -229,7 +229,7 @@ sidebar: true
 
 <p>This type of policy works just like a graded death benefit policy. It has a two-year waiting period before you are fully covered for the natural cause of death. </p>
 
-<p>If you die within the waiting period, your beneficiary will only receive the return of premium plus interest, commonly 10%. But, if you die from an accident, 100% of the death benefit will be available to your beneficiaries.</p>
+<p>If you die within the waiting period, your beneficiary will only receive the return of premium plus interest, commonly 10%. But for a covered accidental death, 100% of the death benefit can be paid to your beneficiaries.</p>
 
 <h2 id="getting-approved-for-affordable-life-insurance"><br><strong>Getting approved for affordable life insurance</strong></h2>
 

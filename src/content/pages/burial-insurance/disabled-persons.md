@@ -71,7 +71,7 @@ sidebar: true
 
 <p>You will qualify for this plan regardless of your disability. You don’t need to answer health questions or take a medical exam to qualify for coverage.&#160;</p>
 
-<p>Guaranteed issue burial insurance has a graded period for the first two years of the policy for any natural causes of death. The policy will only pay the full death benefit if you die from an accident during the two-year waiting period.</p>
+<p>Guaranteed issue burial insurance has a graded period for the first two years of the policy for any natural causes of death. During the two-year waiting period, only a covered accidental death can receive the full death benefit.</p>
 
 <p>If you die from illness due to your other medical condition, the insurance company will pay your beneficiary all premiums you paid plus 10% interest (with most companies).</p>
 

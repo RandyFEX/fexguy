@@ -305,7 +305,7 @@ sidebar: true
 <p><strong>Two-Year Waiting Period (aka Modified Waiting Period)</strong> – This one comes with some perks:</p>
 
 <ul>
-<li>If death is accidental, you’re covered immediately.</li>
+<li>If death is a covered accident, the full benefit can be paid immediately.</li>
 <li>If it’s not, your premiums are refunded with 7–10% interest during the first 24 months.</li>
 <li>After two years, you’re fully covered, no questions asked.</li>
 </ul>

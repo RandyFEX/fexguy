@@ -277,7 +277,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance after a recent heart attack?</h3>
 
-<p>Recent cardiac events (within 12 to 24 months) usually require a two-year waiting period for a natural death payout. However, accidental death coverage begins the moment you make your first payment. A heart attack in the last 12 months is a major risk to a carrier. If your event was recent, you may need a “Guaranteed Issue” or “Graded” plan. If you die from a health-related cause within the first 2 years, the company refunds your premiums plus <strong>any additional amount or interest provided by the policy</strong>. But accidental death still pays the full amount starting on day one, so your family is never completely on their own.</p>
+<p>Recent cardiac events (within 12 to 24 months) usually require a two-year waiting period for a natural death payout. However, a covered accidental death can be paid in full from your first payment. A heart attack in the last 12 months is a major risk to a carrier. If your event was recent, you may need a “Guaranteed Issue” or “Graded” plan. If you die from a health-related cause within the first 2 years, the company refunds your premiums plus <strong>any additional amount or interest provided by the policy</strong>. But a covered accidental death can still pay the full amount starting on day one, so your family isn’t completely on their own.</p>
 
 <h3>Does burial insurance cover death by a second heart attack?</h3>
 

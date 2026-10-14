@@ -265,7 +265,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with an aneurysm?</h3>
 
-<p>You can qualify for immediate first-day coverage if your aneurysm surgery occurred more than 24 months ago and you have no other major health complications. Here is the part they don’t tell you in the TV commercials: most big-name insurers will impose a 2-year waiting period just for having a vascular history, but I know which carriers offer level benefits to stable survivors. If your aneurysm was discovered or treated within the last 2 years, you might have to accept a graded plan that pays a partial benefit at first. But accidental death always pays the full amount from day 1, so your family is never left completely unprotected while you wait for the full benefit to kick in.</p>
+<p>You can qualify for immediate first-day coverage if your aneurysm surgery occurred more than 24 months ago and you have no other major health complications. Here is the part they don’t tell you in the TV commercials: most big-name insurers will impose a 2-year waiting period just for having a vascular history, but I know which carriers offer level benefits to stable survivors. If your aneurysm was discovered or treated within the last 2 years, you might have to accept a graded plan that pays a partial benefit at first. But a covered accidental death can pay the full amount from day 1, so your family isn’t left completely unprotected while you wait for the full benefit to kick in.</p>
 
 <h3>How does the size of an aneurysm affect burial insurance qualification status?</h3>
 
@@ -293,7 +293,7 @@ sidebar: true
 
 <h3>Does burial insurance cover death from a ruptured aneurysm?</h3>
 
-<p>A permanent burial insurance policy covers death from any natural cause, including a ruptured aneurysm, once the initial period on the plan has passed. If you have a level plan, your family is safe from day 1, but a graded or guaranteed issue plan requires you to wait 2 years for a full natural death payout. If a tragic accident <a href="https://www.mayoclinic.org/diseases-conditions/aneurysms/symptoms-causes/syc-20354633" target="_blank" rel="noreferrer noopener">causes</a> the rupture, many policies will pay out the full benefit immediately through an accidental death rider. I help you understand these rules so your beneficiaries know exactly what to expect when they need the money most.</p>
+<p>A permanent burial insurance policy covers death from any natural cause, including a ruptured aneurysm, once the initial period on the plan has passed. If you have a level plan, your family is safe from day 1, but a graded or guaranteed issue plan requires you to wait 2 years for a full natural death payout. If a tragic accident <a href="https://www.mayoclinic.org/diseases-conditions/aneurysms/symptoms-causes/syc-20354633" target="_blank" rel="noreferrer noopener">causes</a> the rupture, many policies can pay the full benefit immediately as a covered accidental death. I help you understand these rules so your beneficiaries know exactly what to expect when they need the money most.</p>
 
 <h3>Can I get burial insurance if I have an abdominal aortic aneurysm (aaa)?</h3>
 

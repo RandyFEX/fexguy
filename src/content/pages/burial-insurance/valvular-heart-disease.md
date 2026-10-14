@@ -274,7 +274,7 @@ sidebar: true
 
 <h3>What are the waiting periods for heart-related burial insurance?</h3>
 
-<p>Waiting periods for heart-related burial insurance vary based on the stability of your heart condition and how long it has been since your last surgery. For stable valvular heart disease, I can often find you first-day coverage with no waiting period at all if you have been symptom-free for a long time. But for more severe diagnoses like congestive heart failure, a standard two-year waiting period for natural causes is common among national providers. Accidental death is still covered from the very first payment, so your family is never completely unprotected. I’ll run a quick background check on your prescriptions to see if we can bypass the waiting periods and get you full protection today.</p>
+<p>Waiting periods for heart-related burial insurance vary based on the stability of your heart condition and how long it has been since your last surgery. For stable valvular heart disease, I can often find you first-day coverage with no waiting period at all if you have been symptom-free for a long time. But for more severe diagnoses like congestive heart failure, a standard two-year waiting period for natural causes is common among national providers. A covered accidental death can still be paid from the very first payment, so your family isn’t completely unprotected. I’ll run a quick background check on your prescriptions to see if we can bypass the waiting periods and get you full protection today.</p>
 
 <h3>Is heart failure classed as an end-of-life condition for burial insurance?</h3>
 

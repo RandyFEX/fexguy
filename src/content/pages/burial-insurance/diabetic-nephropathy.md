@@ -248,7 +248,7 @@ sidebar: true
 
 <h3>Can I still get burial insurance coverage if I am currently on dialysis?</h3>
 
-<p>You can absolutely secure burial insurance while on dialysis with a guaranteed-issue policy that accepts every applicant, regardless of their treatment history. Dialysis usually stops you from getting first-day coverage with most standard carriers, but it does not make you uninsurable. A guaranteed-issue plan ensures the company cannot turn you away. These policies involve a two-year waiting period, but accidental death is covered for 100% of the benefit starting on day one. But if you pass away from natural causes during those first 24 months, the company refunds your premiums plus 10% interest. This ensures your family gets back at least every dollar you paid, plus a little extra.</p>
+<p>You can absolutely secure burial insurance while on dialysis with a guaranteed-issue policy that accepts every applicant, regardless of their treatment history. Dialysis usually stops you from getting first-day coverage with most standard carriers, but it does not make you uninsurable. A guaranteed-issue plan ensures the company cannot turn you away. These policies involve a two-year waiting period, but a covered accidental death can be paid at 100% of the benefit starting on day one. But if you pass away from natural causes during those first 24 months, the company refunds your premiums plus 10% interest. This ensures your family gets back at least every dollar you paid, plus a little extra.</p>
 
 <h3>Is kidney disease considered a terminal illness for burial insurance purposes?</h3>
 

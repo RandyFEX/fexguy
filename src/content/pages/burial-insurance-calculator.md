@@ -297,7 +297,7 @@ sidebar: true
 
 <p>They have a waiting period that applies to all-natural causes of death. If you die during the two-year waiting period, your beneficiary will receive all the premiums you paid plus 7-10% interest.</p>
 
-<p>The life insurance company will pay 100% of the death benefit if you die from an accident. After the waiting period, you are covered for life.</p>
+<p>The life insurance company can pay 100% of the death benefit for a covered accidental death. After the waiting period, you are covered for life.</p>
 
 <h2 id="calculating-burial-expenses"><br><strong>Calculating burial and funeral expenses</strong></h2>
 

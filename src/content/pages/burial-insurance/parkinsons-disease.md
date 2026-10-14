@@ -268,7 +268,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with Parkinson’s?</h3>
 
-<p>The insurance company applies a two-year waiting period to natural death benefits if the Parkinson’s symptoms have reached an advanced stage. If the disease has progressed significantly, you will likely face a 24-month waiting period for a natural death payout. If you pass away from health issues during those first 2 years, the company refunds your premiums plus 10% interest to your beneficiaries. But accidental death still pays the full amount starting on day one. This safety net protects the insurance company while still offering your spouse financial protection from the very start.</p>
+<p>The insurance company applies a two-year waiting period to natural death benefits if the Parkinson’s symptoms have reached an advanced stage. If the disease has progressed significantly, you will likely face a 24-month waiting period for a natural death payout. If you pass away from health issues during those first 2 years, the company refunds your premiums plus 10% interest to your beneficiaries. But a covered accidental death can still pay the full amount starting on day one. This safety net protects the insurance company while still offering your spouse financial protection from the very start.</p>
 
 <h3>Can Parkinson’s medications like Mirapex or Requip cause a higher burial insurance rate?</h3>
 

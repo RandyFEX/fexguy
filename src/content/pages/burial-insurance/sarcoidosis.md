@@ -88,7 +88,7 @@ you for first-day full coverage with some burial insurance companies. </p>
 
 <p>If you are a U.S citizen or permanent resident between the ages of 40 to 85, you can be eligible for guaranteed issue burial insurance.</p>
 
-<p>Guaranteed issue burial insurance comes with a graded death benefit that imposes a two-year waiting period. You will need to live two years before being fully covered for the natural cause of death. GI policy will only pay full death benefit during the waiting period for accidental death.</p>
+<p>Guaranteed issue burial insurance comes with a graded death benefit that imposes a two-year waiting period. You will need to live two years before being fully covered for the natural cause of death. During the waiting period, a GI policy can pay the full death benefit only for a covered accidental death.</p>
 
 <p><strong>Best Options:</strong> Guaranteed issue burial insurance</p>
 

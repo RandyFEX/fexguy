@@ -90,7 +90,7 @@ sidebar: true
 
 <p><br><strong>Guaranteed issue life insurance (Graded benefit)</strong> – this type of policy is designed specifically for seniors who may have difficulty gaining approval because of health issues. This is the most common type of burial insurance for elderly parents. The guaranteed issue final expense life insurance no exam does not require an applicant to undergo a medical exam or answer health questions for approval. Applicants with life-shortening pre-existing conditions can still be approved.</p>
 
-<p>Insurance companies take higher risks in offering guaranteed issue policies. That is why they typically impose a two-year waiting period before they pay the full death benefit (although accidental death is covered from the first day). If you were to die during the waiting period, your beneficiary would only receive the return on premiums plus interest.</p>
+<p>Insurance companies take higher risks in offering guaranteed issue policies. That is why they typically impose a two-year waiting period before they pay the full death benefit (although a covered accidental death can be paid from the first day). If you were to die during the waiting period, your beneficiary would only receive the return on premiums plus interest.</p>
 
 <h2 id="advantages-of-funeral-insurance"><strong>Advantages of funeral insurance for seniors</strong></h2>
 

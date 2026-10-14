@@ -152,7 +152,7 @@ important documents.</p>
 
 <p>This means it has a two-year waiting period, which means if your sister died from natural causes during the waiting period, you would not receive a 100% death benefit. You will only get all your premiums plus 7-10% interest.</p>
 
-<p>Accidental death is fully covered even during the waiting
+<p>A covered accidental death can be paid in full even during the waiting
 period. After the two-year waiting period, your sister is fully covered, and
 you will receive the full death benefit if she dies for any reason.</p>
 

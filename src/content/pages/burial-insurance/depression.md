@@ -264,7 +264,7 @@ sidebar: true
 
 <h3>What factors regarding depression could disqualify you from immediate burial insurance?</h3>
 
-<p>Recent psychiatric hospitalizations trigger a mandatory two-year waiting period because insurance companies view a mental health crisis within the last 24 months as a high-risk event. Here is the part they do not tell you in those flashy TV commercials: if a mental health ward admitted you in the last 2 years, some companies get nervous. They do not view you as a bad person, but they do see a higher risk for their bottom line. In that case, you will likely have to take a “Graded” plan. Your family will have to deal with a two-year waiting period for a natural death payout, but they still get full protection for accidental death.</p>
+<p>Recent psychiatric hospitalizations trigger a mandatory two-year waiting period because insurance companies view a mental health crisis within the last 24 months as a high-risk event. Here is the part they do not tell you in those flashy TV commercials: if a mental health ward admitted you in the last 2 years, some companies get nervous. They do not view you as a bad person, but they do see a higher risk for their bottom line. In that case, you will likely have to take a “Graded” plan. Your family will have to deal with a two-year waiting period for a natural death payout, but a covered accidental death can still be paid in full.</p>
 
 <h3>How does burial insurance underwriting view depression differently from traditional life insurance?</h3>
 

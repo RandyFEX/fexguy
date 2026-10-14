@@ -83,7 +83,7 @@ sidebar: true
 
 <p><strong>1. 2-Year Waiting Period</strong></p>
 
-<p>The #1 reason why I don’t recommend the guaranteed issue life insurance for a terminal illness is the waiting period. <strong>This plan does not offer immediate coverage other than for accidental death during the first two years.</strong></p>
+<p>The #1 reason why I don’t recommend the guaranteed issue life insurance for a terminal illness is the waiting period. <strong>During the first two years, this plan offers immediate full coverage only for a covered accidental death.</strong></p>
 
 <p>You will automatically be approved for coverage with no questions asked when you take out this plan. Your plan will also have a mandatory two-year waiting period for any health or medical-related cause of death.</p>
 
@@ -93,7 +93,7 @@ sidebar: true
 
 <p>For example, your monthly premium is $100. If you paid one year before passing away, your beneficiary would receive your $1,200 premium plus $120 to account for the 10% interest for a total of $1,320.</p>
 
-<p>The company will pay your full death benefit if you die from accidental death during the waiting period. It’s only for medical or health causes of death where the first-day coverage doesn’t take effect until after the two-year waiting period.</p>
+<p>The company can pay your full death benefit for a covered accidental death during the waiting period. It’s only for medical or health causes of death where the first-day coverage doesn’t take effect until after the two-year waiting period.</p>
 
 <p><br><strong>2. More Expensive</strong></p>
 

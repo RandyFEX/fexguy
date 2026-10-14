@@ -357,7 +357,7 @@ sidebar: true
 
 <p>Guaranteed issue policies come with a mandatory two-year waiting period for natural causes.</p>
 
-<p>If the insured passes during the first twenty-four months, the company returns all premiums paid plus interest. After the waiting period ends, the full benefit is paid out the same as with any other whole life policy. Accidental deaths pay the full benefit immediately at all times.</p>
+<p>If the insured passes during the first twenty-four months, the company returns all premiums paid plus interest. After the waiting period ends, the full benefit is paid out the same as with any other whole life policy. A covered accidental death can pay the full benefit immediately.</p>
 
 <p>Premiums are higher for guaranteed issue because the insurer accepts applicants with the highest medical risk.</p>
 

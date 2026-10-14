@@ -264,7 +264,7 @@ sidebar: true
 
 <h3>Does using oxygen automatically mean a 2-year waiting period for burial insurance?</h3>
 
-<p>Many insurance carriers require a two-year waiting period for oxygen users because underwriters view supplemental oxygen as a sign of advanced respiratory risk. Here is the part they do not tell you in those flashy TV commercials: if you use oxygen, the company sees a major risk to their bottom line. Because oxygen use often points to advanced lung issues, many carriers make your family wait 24 months for a natural death payout. If you pass away from health issues during that time, the company refunds your premiums plus 10% interest. But remember, accidental death still pays the full amount from the very first day.</p>
+<p>Many insurance carriers require a two-year waiting period for oxygen users because underwriters view supplemental oxygen as a sign of advanced respiratory risk. Here is the part they do not tell you in those flashy TV commercials: if you use oxygen, the company sees a major risk to their bottom line. Because oxygen use often points to advanced lung issues, many carriers make your family wait 24 months for a natural death payout. If you pass away from health issues during that time, the company refunds your premiums plus 10% interest. But remember, a covered accidental death can still pay the full amount from the very first day.</p>
 
 <h3>Are there any “Day One” burial insurance coverage options for oxygen users?</h3>
 

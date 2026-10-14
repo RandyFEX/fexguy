@@ -253,7 +253,7 @@ sidebar: true
 
 <h3>Can I get burial insurance with an active colorectal cancer diagnosis?</h3>
 
-<p>Insurance companies provide guaranteed issue burial insurance to individuals currently undergoing treatment for colorectal cancer. These policies do not require a medical exam or health questions, ensuring that every applicant is accepted regardless of their current cancer stage. Because the insurer takes on a higher risk, these plans almost always include a two-year waiting period for natural deaths, though accidental deaths are covered for the full amount starting on day one.</p>
+<p>Insurance companies provide guaranteed issue burial insurance to individuals currently undergoing treatment for colorectal cancer. These policies do not require a medical exam or health questions, ensuring that every applicant is accepted regardless of their current cancer stage. Because the insurer takes on a higher risk, these plans almost always include a two-year waiting period for natural deaths, though a covered accidental death can be paid in full starting on day one.</p>
 
 <h3>Can a colorectal cancer survivor qualify for first-day coverage?</h3>
 

@@ -159,7 +159,7 @@ health questions that you may see on the application:</strong></p>
 <li>There is a mandatory two to four-year waiting period (NEVER go with a 3-4 year waiting period plan!)  before the insurance company will pay the full death benefit for natural causes of death.</li>
 <li>The insurance company will refund all your premiums plus 7-10% interest if you pass away during the waiting period. </li>
 <li>If you survive the waiting period, the company will pay your beneficiary’s full death benefit amount.</li>
-<li>100% cash death benefit will be paid for accidental deaths even during the waiting period.</li>
+<li>The 100% cash death benefit can be paid for a covered accidental death, even during the waiting period.</li>
 </ul>
 
 <p><strong>Pros of Guaranteed Issue Burial Insurance</strong></p>

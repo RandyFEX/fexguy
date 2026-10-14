@@ -152,7 +152,7 @@ You can see where your health fits before you apply.
 
 <p>There are no exceptions.</p>
 
-<p>If you die from any natural cause or medical reason in the first 24 months, the company only has to refund the premiums your family paid in (plus a small amount of interest). Accidental death still pays the full amount right away.</p>
+<p>If you die from any natural cause or medical reason in the first 24 months, the company only has to refund the premiums your family paid in (plus a small amount of interest). A covered accidental death can still pay the full amount right away.</p>
 
 <p>These plans have higher rates because the insurance company is taking a huge risk in offering life insurance to someone they know absolutely nothing about. A higher risk always means you will have to pay a higher price.</p>
 
@@ -194,10 +194,10 @@ If you pass away from a medical reason in the first two years, your family only 
 Accidental death exception
 </td>
 <td>
-The only benefit that pays in full during the waiting period is accidental death.
+During the waiting period, only a covered accidental death can be paid in full.
 </td>
 <td>
-Your family is protected from accidents right away, but not from illness or natural causes.
+Your family can be protected from covered accidents right away, but not fully from illness or natural causes.
 </td>
 </tr>
 <tr>

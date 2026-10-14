@@ -238,7 +238,7 @@ underwriting:</strong></p>
 
 <p>The modified plan has a two-year waiting period. </p>
 
-<p>The company will not pay the full death benefit if you pass away from natural causes during the waiting period. Instead, they will return 100% of your premiums plus 7-10% interest. The insurance company will pay the full death benefit even during the waiting period for accidental death.</p>
+<p>The company will not pay the full death benefit if you pass away from natural causes during the waiting period. Instead, they will return 100% of your premiums plus 7-10% interest. The insurance company can pay the full death benefit for a covered accidental death, even during the waiting period.</p>
 
 <h2><br><strong>Guaranteed issue cremation insurance (no health questions)</strong></h2>
 

@@ -131,7 +131,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/terminal-illness/': {
     family: 'health', crumb: 'Terminal Illness',
     quickAnswer:
-      'Burial insurance with a terminal illness is limited. No insurance company offers first-day coverage to people with a terminal illness, and most traditional policies will decline you. Your only option is a guaranteed issue policy that asks no health questions but costs more and has a 2-year waiting period. If you die from a health-related cause during those 2 years, your beneficiary gets your premiums back plus interest instead of the full benefit, but accidental death is paid in full.',
+      'Burial insurance with a terminal illness is limited. No insurance company offers first-day coverage to people with a terminal illness, and most traditional policies will decline you. Your only option is a guaranteed issue policy that asks no health questions but costs more and has a 2-year waiting period. If you die from a health-related cause during those 2 years, your beneficiary gets your premiums back plus interest instead of the full benefit, but a covered accidental death can be paid in full.',
   },
   '/burial-insurance/blood-thinner/': {
     family: 'health',
@@ -795,7 +795,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     crumb: 'HIV Positive',
     quickAnswer:
-      'Yes, you can get burial insurance if you’re HIV positive, but for the final expense plans we recommend, your option is guaranteed issue coverage with a two-year waiting period. These plans ask no health questions, and none of these companies will offer you first-day coverage if you are HIV positive. If you die of natural causes during the waiting period, the insurance company refunds the premiums paid plus interest, and accidental causes of death are covered immediately.',
+      'Yes, you can get burial insurance if you’re HIV positive, but for the final expense plans we recommend, your option is guaranteed issue coverage with a two-year waiting period. These plans ask no health questions, and none of these companies will offer you first-day coverage if you are HIV positive. If you die of natural causes during the waiting period, the insurance company refunds the premiums paid plus interest, and a covered accidental death can be paid in full right away.',
   },
 
   // Review pilot (10 pages, October 2026): representative company-review

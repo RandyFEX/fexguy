@@ -65,7 +65,7 @@ sidebar: true
 
 <p>Guaranteed issue life insurance would seem ideal for nursing home residents because they ask no health questions, but there is a catch; this plan has a mandatory 2-year waiting period before paying a death benefit for the natural cause of death. This 2-year waiting period is the most important thing to weigh before buying guaranteed issue burial insurance in a nursing home.</p>
 
-<p>Guaranteed issue life insurance will only pay from the first day if you die from accidental reasons. Death resulting from slips and falls, trips, car accidents, or other accidental causes is 100% covered from the first day.</p>
+<p>With guaranteed issue life insurance, only a covered accidental death can be paid in full from the first day. A death from slips and falls, trips, car accidents or other accidental causes can be 100% covered from the first day, as long as it meets the policy’s definition of an accident and isn’t excluded.</p>
 
 <p>If you die for any health reason during the waiting period, the insurance company will only refund your premiums plus 5-10% interest. Your beneficiary will only receive your 100% death benefit after the waiting period has passed.</p>
 
@@ -83,7 +83,7 @@ sidebar: true
 
 <p>Your beneficiary will not receive your full death benefit if you die during the waiting period.&#160;</p>
 
-<p>Guaranteed acceptance policies only offer immediate coverage for the accidental cause of death. It will not pay a full death benefit if you die from a natural cause or health-related cause of death. This reason makes these policies a poor fit for nursing home residents with a shorter life expectancy.</p>
+<p>With guaranteed acceptance policies, only a covered accidental death can be paid in full right away. It will not pay a full death benefit if you die from a natural cause or health-related cause of death. This reason makes these policies a poor fit for nursing home residents with a shorter life expectancy.</p>
 
 <p>The two-year waiting period is the insurance companies’ safety net against people who are literally on their deathbed trying to buy burial insurance.&#160;</p>
 

@@ -269,7 +269,7 @@ sidebar: true
 
 <h3>What is the typical waiting period for burial insurance after a diabetic amputation?</h3>
 
-<p>Most seniors with a recent diabetic amputation will face a mandatory two-year waiting period for a natural death payout, which is a standard rule for high-risk or guaranteed-issue policies in 2026. If you pass away from health issues during these first 24 months, the company simply refunds every penny of your premiums plus 7-10% interest (on average) to your family. But remember, accidental death is covered for the full benefit starting on day one. Once you clear that two-year hurdle, the policy is fully vested and pays the full death benefit for any cause of death. Starting the clock today is the only way to ensure your family reaches that full protection as soon as possible.</p>
+<p>Most seniors with a recent diabetic amputation will face a mandatory two-year waiting period for a natural death payout, which is a standard rule for high-risk or guaranteed-issue policies in 2026. If you pass away from health issues during these first 24 months, the company simply refunds every penny of your premiums plus 7-10% interest (on average) to your family. But remember, a covered accidental death can be paid in full starting on day one. Once you clear that two-year hurdle, the policy is fully vested and pays the full death benefit for any cause of death. Starting the clock today is the only way to ensure your family reaches that full protection as soon as possible.</p>
 
 <h3>How do burial insurance companies verify a history of diabetic amputation?</h3>
 

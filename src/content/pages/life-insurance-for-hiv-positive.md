@@ -107,7 +107,7 @@ sidebar: true
 
 <p>If an insured dies due to natural causes during the waiting period, insurance companies will refund all the premiums paid to the beneficiary plus 7-10% interest.</p>
 
-<p>Guaranteed acceptance life insurance policies will immediately cover&#160;<strong>accidental causes of death,</strong>&#160;which include motor vehicle accidents, slips, and falls, natural disasters, etc.</p>
+<p>Guaranteed acceptance life insurance policies can cover&#160;<strong>accidental deaths</strong>&#160;immediately, such as motor vehicle accidents, slips and falls, or natural disasters, as long as the death meets the policy’s definition of an accident.</p>
 
 <h2 id="burial-insurance-to-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 

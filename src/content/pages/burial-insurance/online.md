@@ -200,8 +200,8 @@ receive the full death benefit payout if you pass away for any reason.</p>
 <p>Your premium will be based on age, gender, and state of residence. You can buy a face amount from $2,000 to $25,000 range. If you only need burial insurance for your parents to cover your funeral and final expenses, guaranteed issue burial insurance, which can be bought online, can be your best option.</p>
 
 <p>Guaranteed issue burial insurance has a graded death
-benefit, which means the company will only pay the full death benefit if you
-die during the waiting period from an accident. </p>
+benefit, which means the full death benefit can be paid during the waiting period only if your
+death is a covered accident. </p>
 
 <p>If you die from a natural cause such as an illness during the two-year waiting period, your beneficiary will only receive all the premiums you paid into the policy plus 7-10% interest, depending on the insurance company. </p>
 

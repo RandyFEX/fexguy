@@ -93,7 +93,7 @@ sidebar: true
 
 <p>If you die during the waiting period, your beneficiary will not receive the full death benefit. Your beneficiary will only receive all the premiums you paid into the policy plus 7-10% interest.</p>
 
-<p>You will need to live for the first two years before the company will pay for the natural or non-accidental cause of death. But, if you die from an accident even during the waiting period, your beneficiary will receive a 100% death benefit.</p>
+<p>You will need to live for the first two years before the company will pay for the natural or non-accidental cause of death. But a covered accidental death, even during the waiting period, can pay your beneficiary a 100% death benefit.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

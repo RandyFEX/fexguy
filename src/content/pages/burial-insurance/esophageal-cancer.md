@@ -248,7 +248,7 @@ sidebar: true
 
 <h3>Can I get burial insurance if I have esophageal cancer?</h3>
 
-<p>Insurance companies offer burial insurance to individuals with esophageal cancer through “Guaranteed Issue” plans that require no medical exams or health questions. These policies guarantee acceptance to all applicants, regardless of cancer stage or current treatment status, making them an essential option for those currently fighting the disease. However, because the insurer assumes greater risk, these plans almost always include a two-year waiting period during which the full benefit is paid only for accidental deaths.</p>
+<p>Insurance companies offer burial insurance to individuals with esophageal cancer through “Guaranteed Issue” plans that require no medical exams or health questions. These policies guarantee acceptance to all applicants, regardless of cancer stage or current treatment status, making them an essential option for those currently fighting the disease. However, because the insurer assumes greater risk, these plans almost always include a two-year waiting period during which the full benefit can be paid only for a covered accidental death.</p>
 
 <h3>How does a history of Barrett’s esophagus affect burial insurance?</h3>
 

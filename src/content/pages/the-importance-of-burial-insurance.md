@@ -161,7 +161,7 @@ sidebar: true
 
 <p>A modified plan with underwriting is designed for high-risk applicants, and the company charges 15-50% more on your premiums. They will offer you a modified plan if you answer yes to the health conditions under the “modified” part of the application. Events like stroke, heart attacks, or cancer within the last year will put you in modified benefit.</p>
 
-<p>There is a two-year waiting period. If you pass away during this time, the insurance company will not pay out the full benefit of your policy. Instead, they will return 110% of your money. Modified plans return premiums plus 10% interest during the first two years. However, they would pay out the full death benefit if you die from an accident.</p>
+<p>There is a two-year waiting period. If you pass away during this time, the insurance company will not pay out the full benefit of your policy. Instead, they will return 110% of your money. Modified plans return premiums plus 10% interest during the first two years. However, a modified plan can pay the full death benefit for a covered accidental death, depending on the plan.</p>
 
 <p><strong>Guaranteed Acceptance Burial Insurance</strong></p>
 

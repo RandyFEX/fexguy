@@ -68,7 +68,7 @@ sidebar: true
 
 <p id="REQUIREMENTS-TO-QUALIFY-FOR-GUARANTEED-ISSUE-BURIAL-INSURANCE"><br><strong>WHAT IS GUARANTEED ISSUE LIFE INSURANCE</strong></p>
 
-<p>This coverage has a death limitation for a natural cause of death during the first two years of the policy. The company will pay a full death benefit only if you die from an accident during the two-year waiting period.</p>
+<p>This coverage has a death limitation for a natural cause of death during the first two years of the policy. During the two-year waiting period, only a covered accidental death can receive the full death benefit.</p>
 
 <p>If you die from illness, the insurance company will return all your premiums to your beneficiaries plus 10% interest. After the two-year waiting period, you are fully protected for life. At this point, the insurance company will pay the full death benefit to your beneficiaries if you die for any reason.</p>
 

@@ -170,7 +170,7 @@ sidebar: true
 
 <p>Fast approval is the most significant advantage of guaranteed acceptance life insurance. Some companies can approve your policy in just 15 minutes to 48 hours. This is your best option if you need coverage due to a business loan or court requirement.</p>
 
-<p>Guaranteed issue burial insurance is graded for the first two years, which means the company will only pay 100% death benefit if you pass away due to an accident. If you die from natural death, your beneficiary will receive all premiums you paid plus interest, typically 7 to 10%. If you die after waiting, your beneficiaries will receive a 100% death benefit.</p>
+<p>Guaranteed issue burial insurance is graded for the first two years, which means only a covered accidental death can receive the 100% death benefit during that time. If you die from natural death, your beneficiary will receive all premiums you paid plus interest, typically 7 to 10%. If you die after waiting, your beneficiaries will receive a 100% death benefit.</p>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>
 

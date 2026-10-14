@@ -255,7 +255,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with dementia?</h3>
 
-<p>Insurance companies apply a mandatory two-year waiting period to all new burial policies for applicants living with dementia or Alzheimer’s. Here is the part they do not tell you in the flashy commercials: a dementia diagnosis makes first-day coverage for natural causes impossible to find. The insurance company knows the risk is high, so it protects its pool with a 24-month waiting period. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your beneficiaries. But accidental death still pays the full death benefit starting on day one, so your family has some protection immediately.</p>
+<p>Insurance companies apply a mandatory two-year waiting period to all new burial policies for applicants living with dementia or Alzheimer’s. Here is the part they do not tell you in the flashy commercials: a dementia diagnosis makes first-day coverage for natural causes impossible to find. The insurance company knows the risk is high, so it protects its pool with a 24-month waiting period. If you pass away due to health issues during those first 2 years, the company simply refunds your premiums, plus 10% interest, to your beneficiaries. But a covered accidental death can still pay the full death benefit starting on day one, so your family has some protection immediately.</p>
 
 <h3>Does having diabetes and dementia affect my burial insurance eligibility?</h3>
 

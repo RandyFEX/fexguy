@@ -259,7 +259,7 @@ sidebar: true
 <li>Funeral insurance is easy to set up. The application is easy, and acceptance is guaranteed if you pass the eligibility requirements by the underwriter. You can pay periodically, monthly, quarterly, semi-annually, and annually; there’s no need for an immediate lump sum payment to get covered.</li>
 <li>There is flexibility in the use of the funds. The death benefit is paid in cash the funds can be used in any way that is necessary at the time.</li>
 <li>The death benefit is paid regardless of how long you held your policy.</li>
-<li>A graded benefit pays out 100% for the first 2-3 years should you die in an accident. Accidental death is covered immediately and usually results in a higher claimable amount.</li>
+<li>During a graded or guaranteed issue plan’s early years, a covered accidental death can pay 100% of the benefit, depending on the policy.</li>
 <li>Funeral insurance allows the policyholder to plan for their funeral without choosing the exact suppliers and arrangements.</li>
 </ul>
 

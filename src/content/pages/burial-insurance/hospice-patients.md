@@ -69,7 +69,7 @@ sidebar: true
 
 <p>If your doctor thinks you’ll die in the next six months, buying guaranteed issue (GI) burial insurance will not help your family much.&#160;</p>
 
-<p>GI policies only offer immediate first-day coverage for accidental death. There is also a mandatory two-year waiting period for any medical or health-related cause of death.</p>
+<p>With GI policies, only a covered accidental death can be paid in full from the first day. There is also a mandatory two-year waiting period for any medical or health-related cause of death.</p>
 
 <p>You must live for the first two years before your policy pays for a medical-related cause of death. This requirement makes guaranteed issue life insurance a terrible choice for people in hospice or people that are expected to die in the next 24 months.</p>
 
@@ -77,7 +77,7 @@ sidebar: true
 
 <p>If you pass away during the waiting period for any reason other than an accident, your beneficiary will not receive the full death benefit. They will only receive the Return of Premium (ROP) plus an additional amount set by the contract, typically 7% to 10%.</p>
 
-<p>If you die from an accident, the policy will pay your beneficiaries a 100% death benefit, even if you bought the policy recently.</p>
+<p>If you die from a covered accident, the policy can pay your beneficiaries a 100% death benefit, even if you bought the policy recently.</p>
 
 <h2 id="what-types-of-burial-insurance-should-i-avoid"><br><strong>What types of burial insurance should I avoid?</strong></h2>
 

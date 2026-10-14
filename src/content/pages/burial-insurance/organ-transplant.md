@@ -24,7 +24,7 @@ sidebar: true
 <li><strong>Guaranteed issue is generally the only available lane:</strong> Most recipients will not qualify for first-day coverage plans because insurers view a transplanted organ as less stable than a healthy original organ.</li>
 <li><strong>Anti-rejection drugs result in a lifetime risk:</strong> Carriers identify transplant history through your prescription records since you must take immunosuppressant medications for the rest of your life.</li>
 <li><strong>Immune system health affects approval:</strong> Underwriters worry about your compromised immune system because it increases your risk of life-threatening complications or infections.</li>
-<li><strong>Accidental death benefits pay out immediately:</strong> Even though a natural death has a two-year waiting period, a guaranteed issue policy pays the full benefit from the first day if an accident occurs.</li>
+<li><strong>Accidental death benefits can pay out immediately:</strong> Even though a natural death has a two-year waiting period, a guaranteed issue policy can pay the full benefit from the first day for a covered accidental death.</li>
 </ul>
 
 <p>I’m always on the lookout for more insurance companies that offer affordable protection for organ transplant recipients. Because of this, most people I help will have no trouble qualifying for and affording an instant-approval policy.</p>

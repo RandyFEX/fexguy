@@ -282,7 +282,7 @@ sidebar: true
 
 <h3>What is the waiting period for burial insurance after a recent implant?</h3>
 
-<p>A pacemaker surgery performed within the last 12 months usually triggers a mandatory two-year waiting period for natural causes of death. If you pass away from health issues during those first 24 months, the company simply refunds your premiums plus 10% interest to your spouse or kids. This sounds like a raw deal, but accidental death still pays the full benefit starting on day 1. I always look for a “Graded” plan for my clients with recent surgeries so they can start the clock and reach full coverage as fast as possible. You protect your family’s future by locking in your age and health status today before things get more complicated.</p>
+<p>A pacemaker surgery performed within the last 12 months usually triggers a mandatory two-year waiting period for natural causes of death. If you pass away from health issues during those first 24 months, the company simply refunds your premiums plus 10% interest to your spouse or kids. This sounds like a raw deal, but a covered accidental death can still pay the full benefit starting on day 1. I always look for a “Graded” plan for my clients with recent surgeries so they can start the clock and reach full coverage as fast as possible. You protect your family’s future by locking in your age and health status today before things get more complicated.</p>
 
 <h3>Will a pending pacemaker surgery affect my burial insurance application?</h3>
 

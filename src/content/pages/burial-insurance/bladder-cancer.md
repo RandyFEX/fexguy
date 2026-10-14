@@ -252,7 +252,7 @@ sidebar: true
 
 <h3>How does the two-year burial insurance waiting period work for cancer patients?</h3>
 
-<p>The waiting period requires the policyholder to survive for 24 months before the insurance company pays out the full death benefit for death due to illness. If the insured passes away from bladder cancer during this initial window, the company will typically refund all premiums paid plus 10% interest to the beneficiaries.<sup></sup> Accidental deaths, however, are covered for the full amount starting from the very first day the policy is active.</p>
+<p>The waiting period requires the policyholder to survive for 24 months before the insurance company pays out the full death benefit for death due to illness. If the insured passes away from bladder cancer during this initial window, the company will typically refund all premiums paid plus 10% interest to the beneficiaries.<sup></sup> A covered accidental death, however, can be paid in full starting from the very first day the policy is active.</p>
 
 <h3>Can bladder cancer survivors qualify for first-day coverage?</h3>
 

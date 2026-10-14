@@ -255,7 +255,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with Huntington’s?</h3>
 
-<p>Most burial insurance policies for Huntington’s patients involve a two-year waiting period for natural causes of death because the condition is classified as a progressive neurological risk. If you pass away from health issues during the first 24 months, the insurance company will refund all your premiums plus about 10% interest to your beneficiaries. But here is a bit of good news: if an accident causes your death, the policy pays the full benefit to your family starting on day one. Every dollar you pay into the policy is either growing with interest or waiting to pay out the full amount to your kids. It is a win-win for your estate.</p>
+<p>Most burial insurance policies for Huntington’s patients involve a two-year waiting period for natural causes of death because the condition is classified as a progressive neurological risk. If you pass away from health issues during the first 24 months, the insurance company will refund all your premiums plus about 10% interest to your beneficiaries. But here is a bit of good news: if a covered accident causes your death, the policy can pay the full benefit to your family starting on day one. Every dollar you pay into the policy is either growing with interest or waiting to pay out the full amount to your kids. It is a win-win for your estate.</p>
 
 <h3>How does the progressive nature of HD affect burial insurance premiums?</h3>
 

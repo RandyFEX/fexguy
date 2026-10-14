@@ -84,7 +84,7 @@ sidebar: true
 
 <p>The application process is quick and easy. It only takes several minutes over the phone or computer.  </p>
 
-<p>Guaranteed issue policies pay 100% of the face amount from day one if you die from an accident but will not cover natural causes of death until the two-year waiting period is over.</p>
+<p>Guaranteed issue policies can pay 100% of the face amount from day one for a covered accidental death, but they don’t pay the full benefit for natural causes of death until the two-year waiting period is over.</p>
 
 <p>If you pass away from an illness as a consequence of Prion disease, the insurance company will pay your beneficiary all the premiums you paid plus 10% interest. After the waiting period, the company will pay 100% of the death benefit for any reason for death.</p>
 

@@ -82,7 +82,7 @@ sidebar: true
 
 <p>The best burial insurance option for overweight or obese people is to take a guaranteed issue, no health questions life insurance policy.</p>
 
-<p>If you’re a U.S. citizen or a permanent resident, you can enter into a legal contract, and your application for coverage will be approved. You will get immediate coverage for accidental death.</p>
+<p>If you’re a U.S. citizen or a permanent resident, you can enter into a legal contract, and your application for coverage will be approved. A covered accidental death can be paid in full right away.</p>
 
 <p>Guaranteed issue whole life insurance has a two-year graded benefit for a natural or disease-related cause of death. </p>
 

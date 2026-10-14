@@ -160,8 +160,8 @@ the MIB and perform a prescription check to determine eligibility.</p>
 <p>His premium will be based on his age, gender, and state of residence. You can buy a face amount from $2,000 to $25,000 range. If you only need life insurance to cover your brother’s funeral and final expenses, guaranteed issue burial insurance which can be bought online, can be your best option (we can help you with this).</p>
 
 <p>Guaranteed issue burial insurance has a graded death
-benefit, which means the company will only pay the full death benefit if your
-brother dies from an accident during the waiting period.</p>
+benefit, which means the full death benefit can be paid during the waiting period only if your
+brother’s death is a covered accident.</p>
 
 <p>If he dies from a natural cause or an illness during the
 two-year waiting period, you will only receive all the premiums paid into the

@@ -261,7 +261,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance if I have angina?</h3>
 
-<p>You can qualify for a level plan with no waiting period if you have been free of new angina symptoms or diagnosis for at least 24 months. Here is the part they don’t tell you in the flashy TV commercials: many big-name insurers try to impose a 2-year waiting period on anyone with a history of heart problems, but I know which carriers offer full protection from day 1. If your diagnosis was more recent, you might start with a graded plan that pays a partial benefit for the first 2 years. But accidental death always pays the full amount immediately, so your family is never left completely on their own while the policy is in effect.</p>
+<p>You can qualify for a level plan with no waiting period if you have been free of new angina symptoms or diagnosis for at least 24 months. Here is the part they don’t tell you in the flashy TV commercials: many big-name insurers try to impose a 2-year waiting period on anyone with a history of heart problems, but I know which carriers offer full protection from day 1. If your diagnosis was more recent, you might start with a graded plan that pays a partial benefit for the first 2 years. But a covered accidental death can pay the full amount immediately, so your family isn’t left completely on their own while the policy is in effect.</p>
 
 <h3>Does taking nitroglycerin affect my burial insurance qualification status?</h3>
 

@@ -70,7 +70,7 @@ sidebar: true
 
 <p>You can easily qualify for this plan if you are a U.S. citizen between 50 and 80 years old.</p>
 
-<p>The guaranteed issue policy has a two-year waiting period for a natural cause of death. The policy will pay for accidental heath if you pass away during the waiting period. If you pass away during the first two years as a consequence of any medical issues, your beneficiaries will receive all your premiums plus 10% interest.</p>
+<p>The guaranteed issue policy has a two-year waiting period for a natural cause of death. The policy can pay the full benefit for a covered accidental death during the waiting period. If you pass away during the first two years as a consequence of any medical issues, your beneficiaries will receive all your premiums plus 10% interest.</p>
 
 <p>After the first two years, it will pay full death benefits for any cause of death.</p>
 

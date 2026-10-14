@@ -394,7 +394,7 @@ sidebar: true
 
 <p>Guaranteed acceptance policies are whole life plans that approve every applicant regardless of health, but they come with a mandatory two-year waiting period for natural causes.</p>
 
-<p>This means the full benefit will not be paid if the insured passes during the first two years unless death is accidental. Families who do not understand this rule may believe they have full coverage when they do not.</p>
+<p>This means the full benefit will not be paid if the insured passes during the first two years unless it is a covered accidental death. Families who do not understand this rule may believe they have full coverage when they do not.</p>
 
 <p>The waiting period exists because the insurance company is accepting every applicant without health questions.</p>
 

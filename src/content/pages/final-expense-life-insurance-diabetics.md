@@ -332,7 +332,7 @@ sidebar: true
 
 <p>Instead, the insurance company refunds all premiums paid plus an additional amount set by the contract, typically 7% to 10%.</p>
 
-<p>This refund is far less than the coverage you intended to provide for your family. The only exception is accidental death, which pays the full benefit immediately because it falls outside the waiting-period clause.</p>
+<p>This refund is far less than the coverage you intended to provide for your family. The usual exception is a covered accidental death, which can pay the full benefit immediately.</p>
 
 <p>This limitation catches many diabetics by surprise. Families often believe their loved one’s coverage was active from day one, only to discover that the policy included fine print about delayed benefits.</p>
 
