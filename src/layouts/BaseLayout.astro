@@ -11,6 +11,7 @@ import Footer from '@/components/Footer.astro';
 import PreFooter from '@/components/lead/PreFooter.astro';
 import StickyCall from '@/components/lead/StickyCall.astro';
 import { site } from '@/config/site';
+import type { PagePhoneKey } from '@/config/phones';
 
 export interface Props {
   title: string;
@@ -29,9 +30,11 @@ export interface Props {
   /** Render the shared pre-footer call to action (off on the homepage, which
    * ends with its own). */
   preFooter?: boolean;
+  /** The page's phone number (src/config/phones.ts); default: the website number. */
+  phone?: PagePhoneKey;
 }
 
-const { layout = 'default', stickyCall = true, preFooter = true, bodyClass, ...seo } = Astro.props;
+const { layout = 'default', stickyCall = true, preFooter = true, bodyClass, phone = 'default', ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -68,13 +71,13 @@ const { layout = 'default', stickyCall = true, preFooter = true, bodyClass, ...s
   </head>
   <body class:list={[{ 'is-landing': layout === 'landing' }, bodyClass]}>
     <a class="skip-link" href="#main">Skip to main content</a>
-    {layout !== 'landing' && <Header />}
+    {layout !== 'landing' && <Header phone={phone} />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    {layout !== 'landing' && preFooter && <PreFooter />}
-    {layout !== 'landing' && <Footer />}
-    {stickyCall && <StickyCall />}
+    {layout !== 'landing' && preFooter && <PreFooter phone={phone} />}
+    {layout !== 'landing' && <Footer phone={phone} />}
+    {stickyCall && <StickyCall phone={phone} />}
     <script>
       import '@/scripts/tracking';
       import '@/scripts/quote-form';

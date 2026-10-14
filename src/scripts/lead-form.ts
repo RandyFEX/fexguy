@@ -230,6 +230,10 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
   const controls = Array.from(form.querySelectorAll<Control>('.lead-form__input'));
   const button = form.querySelector<HTMLButtonElement>('.lead-form__submit');
   const status = form.querySelector<HTMLElement>('[data-lead-status]');
+  // The form's own "Prefer to talk?" number (a page may use its own number).
+  const phoneLink = form.querySelector<HTMLAnchorElement>('.lead-form__phone');
+  const phoneHref = phoneLink?.getAttribute('href') ?? lead.phone.href;
+  const phoneText = phoneLink?.textContent ?? lead.phone.display;
   const buttonText = button?.textContent ?? '';
   let attempted = false;
   let sending = false;
@@ -326,7 +330,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
         button.textContent = buttonText;
       }
       setStatus(
-        `Sorry, we couldn’t complete the security check. Your answers are still here: please press the button again, or call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.`,
+        `Sorry, we couldn’t complete the security check. Your answers are still here: please press the button again, or call Randy at <a href="${phoneHref}">${phoneText}</a>.`,
         true,
       );
       status?.focus();
@@ -394,7 +398,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
       button.textContent = buttonText;
     }
     setStatus(
-      `Sorry, your request didn’t go through. Please try again, or call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.`,
+      `Sorry, your request didn’t go through. Please try again, or call Randy at <a href="${phoneHref}">${phoneText}</a>.`,
       true,
     );
     status?.focus();

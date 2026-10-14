@@ -4,7 +4,10 @@
 // JavaScript). Without JS the list is simply always visible. The website phone
 // number is the last item, as on the live site.
 import { site } from '@/config/site';
-import { lead } from '@/config/lead';
+import { PAGE_PHONES, type PagePhoneKey } from '@/config/phones';
+
+const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
+const pagePhone = PAGE_PHONES[phone];
 
 const current = Astro.url.pathname;
 const items = site.primaryNav;
@@ -43,7 +46,7 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
         ))}
         {site.phoneDisplay && (
           <li class="nav__phone">
-            <a href={lead.phone.href}>{site.phoneDisplay}</a>
+            <a href={pagePhone.href}>{pagePhone.display}</a>
           </li>
         )}
       </ul>

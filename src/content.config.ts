@@ -51,6 +51,10 @@ const pages = defineCollection({
      * pages are searchable; noindex, sitemap-false, landing and /category/
      * pages are not. true/false overrides that (see isSearchable). */
     search: z.boolean().optional(),
+    /** Phone number shown on this page (header, form, footer, mobile call
+     * bar): "default" (the website number) or "ctv" (the CTV ad number,
+     * /roku/ only; see src/config/phones.ts). */
+    phone: z.enum(['default', 'ctv']).default('default'),
   }),
 });
 

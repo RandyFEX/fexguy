@@ -2,10 +2,17 @@
 // Site footer: contact details, legal links, social links, and disclaimers,
 // copied from the live site (see site.footer in src/config/site.ts).
 import { site } from '@/config/site';
-const { columns, social, notes } = site.footer;
+import { PAGE_PHONES, withPagePhone, type PagePhoneKey } from '@/config/phones';
+
+const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
+const display = PAGE_PHONES[phone].display;
+// The page's own number (src/config/phones.ts) in place of the website number.
+const columns = site.footer.columns.map((html) => withPagePhone(html, phone));
+const notes = site.footer.notes.map((html) => withPagePhone(html, phone));
+const { social } = site.footer;
 // The phone number never breaks across lines (e.g. "888-862-" / "9456").
 const keepPhoneTogether = (html: string) =>
-  site.phoneDisplay ? html.replaceAll(site.phoneDisplay, `<span class="site-footer__nowrap">${site.phoneDisplay}</span>`) : html;
+  site.phoneDisplay ? html.replaceAll(display, `<span class="site-footer__nowrap">${display}</span>`) : html;
 ---
 
 <footer class="site-footer">

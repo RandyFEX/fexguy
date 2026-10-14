@@ -25,8 +25,11 @@ is in place; see src/content/README.md for how pages were migrated.
   tags, or JSON-LD without Randy's approval.
 - **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
   as a FEXGuy.com / Final Expense Guy / Randy / quote / sales contact number.
-  888-656-4648 is Randy's TV/streaming ad number and must never appear on the
-  site. Insurance companies' own customer-service numbers in reviews stay as
+  888-656-4648 is Randy's TV/streaming (CTV, currently Roku only) ad number:
+  it appears only on the Roku landing page /roku/ (Randy, October 2026;
+  `tel:8886564648`, noindex, not linked from navigation or other pages) and
+  must never appear anywhere else on the site (`npm run verify` allows it
+  only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
