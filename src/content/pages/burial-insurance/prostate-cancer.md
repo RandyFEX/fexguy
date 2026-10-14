@@ -196,7 +196,7 @@ sidebar: true
 
 <h3>Is there a waiting period for burial insurance with active prostate cancer?</h3>
 
-<p>Active prostate cancer treatment usually triggers a mandatory two-year waiting period for burial insurance benefits. Policies available during active treatment are typically “Guaranteed Issue,” meaning no medical questions are asked. During this initial period, if death occurs from natural causes, the company typically refunds premiums plus interest to the beneficiaries.</p>
+<p>Active prostate cancer, remission, or treatment for prostate cancer that is still present means you need a guaranteed issue plan, which has a two-year waiting period for the full natural-death benefit. Policies available during active treatment are typically “Guaranteed Issue,” meaning no medical questions are asked. During this initial period, if death occurs from natural causes, the company typically refunds premiums plus interest to the beneficiaries.</p>
 
 <h3>What types of prostate cancer treatments impact burial insurance underwriting?</h3>
 

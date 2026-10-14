@@ -24,7 +24,7 @@ sidebar: true
 <li><strong>Lookback windows dictate plan options:</strong> Underwriters examine the last 12 to 24 months of your medical history to see if you have had any major heart attacks, <a href="/burial-insurance/stent/" target="_blank" rel="noreferrer noopener">stents</a>, or bypass surgeries.</li>
 <li><strong>Medication records verify health status:</strong> Insurance companies review your pharmacy history to see if you take maintenance drugs like statins or higher-risk medications like short or long-acting nitrates.</li>
 <li><strong>Pending cardiac tests delay approvals:</strong> It’s smart to postpone your application if you have a stress test or heart procedure scheduled but not yet completed by a doctor.</li>
-<li><strong>ADL limitations trigger waiting periods:</strong> Needing help with daily tasks like bathing or dressing usually disqualifies you from immediate coverage and requires a guaranteed issue plan.</li>
+<li><strong>ADL limitations require guaranteed issue:</strong> Needing help with any core activity of daily living (bathing, dressing, eating, toileting or transferring, such as bed to chair) disqualifies you from immediate coverage and requires a guaranteed issue plan.</li>
 <li><strong>A narrow first-day exception:</strong> If coronary artery disease is your only significant condition, certain companies in some states may offer first-day coverage even after a recent event, if you meet their other requirements.</li>
 </ul>
 

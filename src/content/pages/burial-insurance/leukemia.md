@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Active leukemia usually limits you to waiting period burial insurance plans<br>• Most companies require 2 years cancer-free for full coverage<br>• Guaranteed issue plans cost more and delay payouts early on<br>• Applying too soon after treatment leads to worse options and pricing<br>• Some companies still offer same-day coverage once you’re declared cancer-free<br>• Not comparing carriers can cost you thousands over time</p>
+<p>• Active leukemia, remission or ongoing treatment requires a guaranteed issue plan with a 2-year waiting period<br>• Most companies require 2 years cancer-free for full coverage<br>• Guaranteed issue plans cost more and delay payouts early on<br>• Applying too soon after treatment leads to worse options and pricing<br>• Some companies still offer same-day coverage once you’re declared cancer-free<br>• Not comparing carriers can cost you thousands over time</p>
 
 <p>Burial insurance with leukemia depends heavily on timing and your current health status. If you’ve been treated or diagnosed within the last 2 years, most companies will only offer guaranteed-issue whole life burial insurance with a waiting period. Once you’ve been cancer-free for 2 years or more, some insurers will offer full coverage from day one at better rates. Burial insurance is still available either way, but choosing the wrong company or applying too early can cost you more and delay your protection.</p>
 
@@ -517,7 +517,7 @@ sidebar: true
 
 <p><br><strong>Can I get life insurance if I am in remission from leukemia?</strong></p>
 
-<p>Yes, you can get life insurance if you are in remission from leukemia. However, your eligibility may depend on how long you have been in remission, the stage of your leukemia, and whether you have any other health conditions. Remission is not the same as being declared cancer-free, so guaranteed issue is generally the option until your doctor declares you cancer-free.</p>
+<p>Yes, you can get life insurance if you are in remission from leukemia, but you need a guaranteed issue plan, which has a two-year waiting period. Remission is not the same as being declared cancer-free. Once your doctor declares you cancer-free and the company’s lookback period has passed, you may qualify for first-day coverage.</p>
 
 <p><br><strong>What is the life expectancy after leukemia?</strong></p>
 

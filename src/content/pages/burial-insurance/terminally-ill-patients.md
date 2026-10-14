@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Terminal illness usually disqualifies you from traditional life insurance approval<br>• Most people only qualify for guaranteed issue burial insurance policies<br>• These plans cost more and include a 2-year waiting period<br>• Early death often only returns premiums plus the contract’s interest, not full coverage<br>• Waiting too long limits options even further and raises costs</p>
+<p>• Terminal illness disqualifies you from traditional, medically underwritten life insurance<br>• Guaranteed issue burial insurance is still available and is the only option<br>• These plans cost more and include a 2-year waiting period<br>• Early death often only returns premiums plus the contract’s interest, not full coverage<br>• Waiting too long limits options even further and raises costs</p>
 
 <p>Getting burial insurance for terminally ill patients is possible, but your options are limited. Most people won’t qualify for term or traditional whole life insurance once diagnosed. Instead, you’re usually left with guaranteed-issue burial insurance, which has higher costs and a 2-year waiting period before full benefits pay out. If death occurs early, the policy often refunds only the premiums rather than paying the full amount. The only real advantage is approval. No health questions, no exam. But you’re paying for that simplicity with less protection upfront.</p>
 

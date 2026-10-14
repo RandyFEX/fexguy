@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Colorectal Cancer Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Active colorectal cancer usually forces expensive plans with 2-year waiting periods<br>• Applying during treatment almost always blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue without checking better options<br>• Waiting until after diagnosis limits coverage and raises your monthly cost<br>• Not knowing your remission date can lead to wrong plan and higher pricing</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Active colorectal cancer, remission or treatment requires a guaranteed issue plan with a two-year waiting period<br>• Applying during treatment for cancer that is still present blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue without checking better options<br>• Waiting until after diagnosis limits coverage and raises your monthly cost<br>• Not knowing your cancer-free date can lead to wrong plan and higher pricing</p>
 
 <p>Getting burial insurance with colorectal cancer depends heavily on timing and your current health status. If you’re in active treatment, most companies won’t offer first-day coverage, so you’re pushed into guaranteed-issue whole life with a 2-year waiting period and a higher cost. If you’ve been cancer-free for a while, you may qualify for better burial insurance or even term life with immediate coverage and lower rates. This isn’t something to guess on. Applying at the right time versus the wrong time can cost thousands and limit what your family actually receives.</p>
 

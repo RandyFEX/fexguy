@@ -241,7 +241,7 @@ sidebar: true
 
 <p>The inability to eat independently may be caused by physical and mental health. These conditions can cause the applicant to have a premature death. Anything that can cause premature death is considered high risk by life insurance companies.</p>
 
-<p>Needing help with eating is one of the determining factors of the insurance company whether they will provide coverage or decline your application. Needing help with eating is generally a decline for first-day coverage life insurance and the only coverage you will qualify for is guaranteed issue burial insurance.</p>
+<p>Needing help with eating is one of the determining factors of the insurance company whether they will provide coverage or decline your application. Needing help with eating is a decline for first-day coverage life insurance, and the only coverage you will qualify for is guaranteed issue burial insurance.</p>
 
 <h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I need help with eating?</strong></h2>
 

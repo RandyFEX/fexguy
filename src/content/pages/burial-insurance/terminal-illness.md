@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance for Terminal Illness [Use Caution]</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Terminal illness usually disqualifies you from most life insurance policies<br>• Guaranteed issue burial insurance is often your only real option<br>• These plans cost more and delay payouts for 2 years<br>• Coverage amounts are small and meant only for final expenses<br>• Buying late limits options and locks in higher premiums<br>• Not understanding waiting periods can leave your family with less</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Terminal illness disqualifies you from medically underwritten life insurance, including first-day coverage<br>• Guaranteed issue burial insurance is your only real option<br>• These plans cost more and delay payouts for 2 years<br>• Coverage amounts are small and meant only for final expenses<br>• Buying late limits options and locks in higher premiums<br>• Not understanding waiting periods can leave your family with less</p>
 
 <p>Burial insurance with a terminal illness is limited but still possible. Most traditional policies, like term or simplified issue whole life, will decline you after a terminal diagnosis. That leaves guaranteed-issue burial insurance, a type of whole life insurance designed for high-risk cases. These plans don’t ask health questions and almost always approve you, but they come with higher costs and a 2-year waiting period before full benefits pay out. Burial insurance is often the last option to cover funeral costs when other policies aren’t available, which is why timing matters so much.</p>
 

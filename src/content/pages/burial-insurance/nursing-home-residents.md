@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Nursing home residents usually can’t qualify for traditional life insurance<br>• Most get stuck with guaranteed issue policies that cost 25% to 40% more<br>• These plans come with a two-year waiting period for natural death<br>• Nursing homes cannot take your life insurance payout from your family<br>• Applying incorrectly can limit your already narrow approval options<br>• Weigh the premiums against your life expectancy and your family’s needs</p>
+<p>• Nursing home residents can’t qualify for traditional or first-day life insurance<br>• Nursing home residents need guaranteed issue coverage<br>• These plans come with a two-year waiting period for natural death<br>• Nursing homes cannot take your life insurance payout from your family<br>• Applying incorrectly can limit your already narrow approval options<br>• Weigh the premiums against your life expectancy and your family’s needs</p>
 
 <p>Getting burial insurance as a nursing home resident is tough, but not impossible. Most people won’t qualify for term or traditional whole life insurance because of serious health conditions tied to long-term care. That’s why burial insurance usually becomes the main option, often offered as guaranteed-issue coverage with higher costs and waiting periods. The good news is the money still goes to your family, not the nursing home, as long as you name a beneficiary. The problem is that picking the wrong plan can cost more and delay protection when it matters most.</p>
 

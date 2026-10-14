@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Multiple Myeloma Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Multiple myeloma is high risk and often limits your coverage options<br>• Active cancer usually forces expensive plans with 2-year waiting periods<br>• Applying during treatment almost always blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue too early<br>• Being declared cancer-free can improve pricing and open better options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Multiple myeloma is high risk and often limits your coverage options<br>• Active myeloma, remission or maintenance treatment requires a guaranteed issue plan with a two-year waiting period<br>• Applying during treatment for cancer that is still present blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue too early<br>• Being declared cancer-free can improve pricing and open better options</p>
 
 <p>Getting burial insurance with multiple myeloma depends heavily on your treatment status and how long you’ve been stable. Burial insurance and whole life are usually the only realistic options after diagnosis because traditional policies often won’t approve active cancer cases. If you’re currently in treatment or recently diagnosed, you’ll likely be pushed into guaranteed issue plans with higher costs and a 2-year waiting period. If you’ve been declared cancer-free for at least 2 years, better burial insurance options with immediate coverage may become available. Timing matters because applying too early can lock you into weaker, more expensive coverage.</p>
 
@@ -175,11 +175,11 @@ sidebar: true
 
 <h3>Robert’s story</h3>
 
-<p>Robert had been in stable remission for 3 years and was only taking a small maintenance dose of Revlimid. He was worried that any mention of “cancer” would mean he had to wait 2 years for his coverage to start. Remission with ongoing maintenance treatment is not the same as being cured, so a guaranteed issue plan is generally the option until all treatment is finished and his doctor declares him cancer-free for the company’s look-back period.</p>
+<p>Robert had been in stable remission for 3 years and was only taking a small maintenance dose of Revlimid. He was worried that any mention of “cancer” would mean he had to wait 2 years for his coverage to start. Remission with ongoing maintenance treatment is not the same as being cured, so while he is still on maintenance treatment, a guaranteed issue plan is his option. First-day coverage becomes possible only after all treatment is finished, his doctor declares him cancer-free and the company’s look-back period has passed.</p>
 
 <h3>Sarah’s story</h3>
 
-<p>Sarah was diagnosed with smoldering myeloma, and her doctor was simply watching her levels without starting chemo. She wanted to lock in a small $10,000 policy to cover her cremation costs before her health changed. Even without chemo, smoldering myeloma is a current diagnosis, so a guaranteed issue plan is generally the way to lock in that coverage.</p>
+<p>Sarah was diagnosed with smoldering myeloma, and her doctor was simply watching her levels without starting chemo. She wanted to lock in a small $10,000 policy to cover her cremation costs before her health changed. Even without chemo, smoldering myeloma is a current diagnosis, so she needs a guaranteed issue plan to lock in that coverage.</p>
 
 <h2>Multiple myeloma financial ratings &amp; stability </h2>
 
@@ -260,7 +260,7 @@ sidebar: true
 
 <h3>Does smoldering myeloma allow for immediate burial insurance?</h3>
 
-<p>Asymptomatic or “smoldering” myeloma does not usually require chemotherapy, and this stage involves “watchful waiting” rather than aggressive intervention. It is still a current myeloma diagnosis, though, so a guaranteed issue plan with a two-year waiting period is generally the option, even if your lab results have remained stable for several years.</p>
+<p>Asymptomatic or “smoldering” myeloma does not usually require chemotherapy, and this stage involves “watchful waiting” rather than aggressive intervention. It is still a current myeloma diagnosis, though, so you need a guaranteed issue plan with a two-year waiting period, even if your lab results have remained stable for several years.</p>
 
 <h3>How do M-protein levels impact burial insurance underwriting?</h3>
 

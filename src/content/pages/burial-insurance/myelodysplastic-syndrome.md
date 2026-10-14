@@ -22,7 +22,7 @@ sidebar: true
 <ul>
 <li><strong>First-day coverage</strong> remains a realistic goal for people whose doctor has documented they are cancer-free and who avoid recent hospitalizations.</li>
 <li><strong>Pending tests</strong> act as a major hurdle because underwriters refuse to offer immediate protection while a bone marrow biopsy is outstanding.</li>
-<li><strong>Mobility status</strong> dictates your eligibility since people who require help with daily tasks usually fall into a waiting-period plan.</li>
+<li><strong>Needing help with activities of daily living</strong> (bathing, dressing, eating, toileting or transferring, such as bed to chair) requires a guaranteed issue plan with a two-year waiting period.</li>
 <li><strong>Acting now</strong> protects your family from the higher premiums that come as this progressive blood disorder evolves over time.</li>
 </ul>
 
@@ -256,7 +256,7 @@ sidebar: true
 
 <h3>How do burial insurance companies define “controlled” MDS?</h3>
 
-<p>Underwriters define “controlled” MDS as a situation where your marrow function is stable enough that your doctor only requires routine monitoring or a consistent maintenance drug regimen. The insurance company is looking for stability because they want to know you are not in the middle of a medical crisis. If you haven’t needed emergency blood transfusions or a change in high-level treatment in the last year, you are viewed as a much lower risk. But controlled MDS is not the same as being cured: until your doctor documents that you are cancer-free, a guaranteed issue plan is generally your option.</p>
+<p>Underwriters define “controlled” MDS as a situation where your marrow function is stable enough that your doctor only requires routine monitoring or a consistent maintenance drug regimen. The insurance company is looking for stability because they want to know you are not in the middle of a medical crisis. If you haven’t needed emergency blood transfusions or a change in high-level treatment in the last year, you are viewed as a much lower risk. But controlled MDS is not the same as being cured: until your doctor documents that you are cancer-free, you need a guaranteed issue plan.</p>
 
 <h3>Will regular blood transfusions for MDS affect my burial insurance eligibility?</h3>
 
@@ -268,7 +268,7 @@ sidebar: true
 
 <h3>Do common MDS medications like Revlimid or Vidaza trigger a burial insurance decline?</h3>
 
-<p>Taking medications like Revlimid or Vidaza does not stop you from getting burial insurance, because guaranteed issue plans do not decline you for them. Underwriters perform a quick background check on your prescriptions to see if your health is steady. On a “Simplified Issue” application, these drugs show you are still being treated for MDS, which generally means a guaranteed issue plan. On a “Guaranteed Issue” application, the company does not even look at your meds. You can get approved regardless of your prescription history, ensuring your family has a financial safety net ready when they need it.</p>
+<p>Taking medications like Revlimid or Vidaza does not stop you from getting burial insurance, because guaranteed issue plans do not decline you for them. Underwriters perform a quick background check on your prescriptions to see if your health is steady. On a “Simplified Issue” application, these drugs show you are still being treated for MDS, and treatment for MDS that is still present means you need a guaranteed issue plan. On a “Guaranteed Issue” application, the company does not even look at your meds. You can get approved regardless of your prescription history, ensuring your family has a financial safety net ready when they need it.</p>
 
 <h3>Can I get burial insurance if I have a pending bone marrow biopsy?</h3>
 

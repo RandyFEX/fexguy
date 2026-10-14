@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Esophageal Cancer Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:<br>• </strong>Esophageal cancer is high-risk and often limits your coverage options<br>• Active cancer usually forces expensive plans with 2-year waiting periods<br>• Applying during treatment almost always blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue without checking timing<br>• Waiting until remission can open better pricing and stronger coverage</p>
+<p><strong>Here’s the Bottom Line:<br>• </strong>Esophageal cancer is high-risk and often limits your coverage options<br>• Active esophageal cancer, remission or treatment requires a guaranteed issue plan with a two-year waiting period<br>• Applying during treatment for cancer that is still present blocks first-day coverage approvals<br>• Many people overpay by choosing guaranteed issue without checking timing<br>• Being declared cancer-free can open better pricing and stronger coverage</p>
 
 <p>Getting burial insurance with esophageal cancer depends almost entirely on timing and recovery. Burial insurance and whole life options are still available, but if the cancer is active or you’re in treatment, most companies will only offer guaranteed-issue plans with higher premiums and delayed payouts. If you’ve been in remission for a few years, you may qualify for better burial insurance with immediate coverage and lower rates. The mistake is applying at the wrong time. That can lock you into expensive coverage that pays less when your family needs it most.</p>
 

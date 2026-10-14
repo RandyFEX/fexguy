@@ -24,7 +24,7 @@ sidebar: true
 <ul>
 <li><strong>Tumor grade determines eligibility:</strong>&#160;low-grade, benign tumors grow slowly and offer a higher chance of cure, making them easier to obtain first-day coverage for.</li>
 <li><strong>1st-day coverage for the cured:</strong> If a doctor declares you cured and disease-free, certain insurance companies in some states may offer first-day coverage immediately, even if you have not finished a full two-year waiting period.</li>
-<li><strong>Active cancer limits your options:</strong> If you currently have brain cancer or high-grade tumors, a guaranteed-issue policy with a two-year waiting period is usually the only choice available.</li>
+<li><strong>Active cancer limits your options:</strong> If you currently have brain cancer, including a high-grade tumor, or are in remission, a guaranteed-issue policy with a two-year waiting period is the only choice available.</li>
 <li><strong>Daily living assistance triggers specific rules:</strong> Needing help with activities like bathing, dressing, or eating automatically moves you into a guaranteed-issue plan regardless of your cancer status.</li>
 <li><strong>The last treatment date is the primary approval metric:</strong> Insurance underwriters prioritize the date your last cancer treatment or medication ended, rather than the date of your initial diagnosis.</li>
 </ul>

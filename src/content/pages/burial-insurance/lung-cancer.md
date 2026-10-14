@@ -155,11 +155,11 @@ sidebar: true
 
 <h3>Does oxygen use for lung cancer affect burial insurance eligibility?</h3>
 
-<p>Supplemental oxygen use for lung cancer treatment generally limits an applicant to a guaranteed-issue policy with a waiting period. Insurance underwriters view the need for oxygen as a sign of advanced respiratory distress, which falls outside the guidelines for “Simplified Issue” or immediate coverage plans. Even if your cancer is in remission, the ongoing need for oxygen will likely prevent you from qualifying for a policy that pays out on day one.</p>
+<p>If you use supplemental oxygen while your lung cancer is still present or in remission, you need a guaranteed-issue policy with a waiting period because of the cancer itself. If your doctor has declared you cancer-free and you still need oxygen, the oxygen becomes its own underwriting question, and each company handles it under its own rules.</p>
 
 <h3>How do burial insurance companies define “remission” for lung cancer?</h3>
 
-<p>Insurers generally define remission as the point when all active treatment, including chemotherapy, radiation, and surgery, has been completed and no signs of cancer remain. Remission is not the same as being declared cured or cancer-free. Some companies also consider “maintenance” drugs as active treatment, while others may overlook them after a certain period. The clock for “first-day coverage” eligibility typically starts on the date of your last active treatment session rather than the date of your initial diagnosis.</p>
+<p>For burial insurance, remission is still part of the cancer period. It is not the same as being declared cured or cancer-free, so someone in remission needs a guaranteed-issue policy with a two-year waiting period. Maintenance drugs taken because cancer is still present count as treatment. First-day coverage only becomes possible after your doctor declares you cancer-free and the company’s lookback period has passed, and each company sets its own lookback.</p>
 
 <h3>What is the most affordable burial insurance for cancer survivors?</h3>
 

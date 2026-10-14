@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance for Hospice Patients [Use Caution]</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Hospice patients usually can’t qualify for most life insurance policies<br>• Guaranteed issue burial insurance is often the only option available<br>• These plans cost more and delay payouts for 2 years<br>• Coverage amounts are small and only meant for final expenses<br>• Applying late limits options and locking in higher premiums<br>• Waiting periods can leave your family with less than expected</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Hospice patients can’t qualify for medically underwritten life insurance, including first-day coverage<br>• Guaranteed issue burial insurance is the only option available<br>• These plans cost more and delay payouts for 2 years<br>• Coverage amounts are small and only meant for final expenses<br>• Applying late limits options and locking in higher premiums<br>• Waiting periods can leave your family with less than expected</p>
 
 <p>Burial insurance for hospice patients is extremely limited because hospice care signals a serious, end-of-life condition. Most traditional policies, like term or simplified issue whole life, will decline you. That leaves burial insurance, a type of whole life insurance, usually in guaranteed-issue form. These plans don’t ask health questions and approve almost everyone, but they come with higher costs and a 2-year waiting period before full benefits pay out. If death occurs during that period, the payout is often limited to the premiums plus interest. That tradeoff is what most people don’t realize until it’s too late.</p>
 
