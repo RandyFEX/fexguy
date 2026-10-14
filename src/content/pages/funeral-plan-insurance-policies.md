@@ -231,11 +231,11 @@ sidebar: true
 
 <p>You are not even required to answer health questions. Since the insurance company assumes more risk in insuring you, your premiums may be higher than other policies.</p>
 
-<p>All <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a waiting period, sometimes called a graded period, before the full natural-death benefit is available.</p>
+<p>All <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue</a> policies have a two-year waiting period before the full natural-death benefit is available.</p>
 
-<p>The full death benefit will not be available to your burial insurance beneficiary until the policy has been in force for two to three years. The waiting period varies by the insurance carrier, so be sure to look out for this important detail. I generally recommend avoiding a three-year waiting period when a two-year plan is available. Should you die before the waiting period, your beneficiaries will only receive the premiums paid into the policy plus interest.</p>
+<p>The full death benefit for natural causes will not be available to your burial insurance beneficiary until a guaranteed issue policy has been in force for two years. Should you die from natural causes before that waiting period ends, your beneficiaries will receive the premiums paid into the policy plus an additional amount set by the contract, typically 7% to 10%. Graded plans for people with health issues limit the benefit under their own schedules, including some that last three years, so be sure to look out for this important detail. I generally recommend avoiding a three-year waiting period when a two-year plan is available.</p>
 
-<p>After the graded period has passed, your family will receive the full life insurance benefit.</p>
+<p>After the waiting period has passed, your family will receive the full life insurance benefit.</p>
 
 <h2 id="who-should-consider-a-funeral-insurance-policy"><br><strong>Who should consider a funeral insurance policy?</strong></h2>
 

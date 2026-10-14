@@ -256,7 +256,7 @@ sidebar: true
 
 <h3>How do burial insurance companies define “controlled” MDS?</h3>
 
-<p>Underwriters define “controlled” MDS as a situation where your marrow function is stable enough that your doctor only requires routine monitoring or a consistent maintenance drug regimen. The insurance company is looking for stability because they want to know you are not in the middle of a medical crisis. If you haven’t needed emergency blood transfusions or a change in high-level treatment in the last year, you are viewed as a much lower risk. But controlled MDS is not the same as being cured: until your doctor documents that you are cancer-free, you need a guaranteed issue plan.</p>
+<p>Underwriters define “controlled” MDS as a situation where your marrow function is stable enough that your doctor only requires routine monitoring or a consistent maintenance drug regimen. The insurance company is looking for stability because they want to know you are not in the middle of a medical crisis. If you haven’t needed emergency blood transfusions or a change in high-level treatment in the last year, your MDS is considered stable. But controlled MDS is not the same as being cured: until your doctor documents that you are cancer-free, you need a guaranteed issue plan.</p>
 
 <h3>Will regular blood transfusions for MDS affect my burial insurance eligibility?</h3>
 

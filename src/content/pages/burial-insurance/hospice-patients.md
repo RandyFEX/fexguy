@@ -75,7 +75,7 @@ sidebar: true
 
 <p>This two-year waiting period is the insurance company’s way of not paying money to people who have procrastinated purchasing this insurance and are literally on their deathbed trying to buy burial insurance.</p>
 
-<p>If you pass away during the waiting period for any reason other than an accident, your beneficiary will not receive the full death benefit. They will only receive the Return of Premium (ROP) plus interest, usually 5-10%.</p>
+<p>If you pass away during the waiting period for any reason other than an accident, your beneficiary will not receive the full death benefit. They will only receive the Return of Premium (ROP) plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p>If you die from an accident, the policy will pay your beneficiaries a 100% death benefit, even if you bought the policy recently.</p>
 

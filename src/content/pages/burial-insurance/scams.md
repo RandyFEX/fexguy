@@ -74,7 +74,7 @@ sidebar: true
 
 <p>What’s wrong with this plan?</p>
 
-<p>When you read the fine print, you will learn that their no-questions-asked policy DOES NOT provide 1st-day coverage for natural causes of death. There is always a two or three-year waiting period. If you die of an illness during the first two years, your beneficiary will only receive a return of the premium paid plus interest (typically 7-10%).</p>
+<p>When you read the fine print, you will learn that their no-questions-asked policy DOES NOT provide 1st-day coverage for natural causes of death. There is a two-year waiting period. If you die of an illness during the first two years, your beneficiary will only receive a return of the premium paid plus an additional amount set by the contract (typically 7% to 10%).</p>
 
 <p>For example, you bought a $25,000 face amount with no questions asked life insurance company like Gerber. You pay $108.85 for your coverage. After six months, you had a heart attack and died.</p>
 

@@ -549,7 +549,7 @@ sidebar: true
 
 <p><br><strong>Is there a waiting period for life insurance with leukemia?</strong></p>
 
-<p>Yes, there is a waiting period for life insurance with leukemia. The waiting period is generally two years, but this may vary depending on the insurance company and the type of policy you purchase.</p>
+<p>It depends on your cancer status. If you currently have leukemia, are in remission, or are on maintenance treatment, you need a guaranteed issue plan, which has a two-year waiting period for natural death. Once your doctor declares you cancer-free and the company’s lookback period has passed, you may qualify for first-day coverage with no waiting period.</p>
 
 <p><br><strong>Can leukemia affect your life insurance rates?</strong></p>
 

@@ -330,7 +330,7 @@ sidebar: true
 
 <p>If you die from natural causes during that waiting period, your beneficiaries do not receive the full death benefit.</p>
 
-<p>Instead, the insurance company refunds all premiums paid plus a small interest amount, usually around 10 percent.</p>
+<p>Instead, the insurance company refunds all premiums paid plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p>This refund is far less than the coverage you intended to provide for your family. The only exception is accidental death, which pays the full benefit immediately because it falls outside the waiting-period clause.</p>
 

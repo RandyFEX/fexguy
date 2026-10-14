@@ -86,7 +86,7 @@ sidebar: true
 
 <p>Worsening of anemia can cause enlargement of the spleen that requires multiple blood transfusions. If your anemia is severe, you may need to buy guaranteed issue life insurance.</p>
 
-<p>Guaranteed issue policies have a slightly higher monthly premium compared with a plan with underwriting. It also comes with a two-year waiting period. If you pass during the waiting period, your beneficiary will receive the refund of your premiums plus interest which is usually 10%.</p>
+<p>Guaranteed issue policies have a slightly higher monthly premium compared with a plan with underwriting. It also comes with a two-year waiting period. If you pass from natural causes during the waiting period, your beneficiary will receive a refund of your premiums plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

@@ -268,7 +268,7 @@ sidebar: true
 
 <h3>Is dementia covered by burial insurance plans?</h3>
 
-<p>Burial insurance plans specifically designed for dementia or Alzheimer’s fall into the “Guaranteed Issue” category.<sup></sup> Because these cognitive disorders are progressive and irreversible, insurers require a two-year waiting period before the full death benefit is payable for natural causes. If the insured passes away during these first 24 months, the company will refund all premiums paid plus a set amount of interest (usually 10%).</p>
+<p>Burial insurance plans specifically designed for dementia or Alzheimer’s fall into the “Guaranteed Issue” category.<sup></sup> Because these cognitive disorders are progressive and irreversible, insurers require a two-year waiting period before the full death benefit is payable for natural causes. If the insured passes away from natural causes during these first 24 months, the company will refund all premiums paid plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <h3>Can I qualify for burial insurance if I have epilepsy or seizures?</h3>
 

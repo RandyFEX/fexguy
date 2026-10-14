@@ -299,4 +299,4 @@ sidebar: true
 
 <h3>How does supplemental oxygen affect burial insurance eligibility?</h3>
 
-<p>Supplemental oxygen use typically triggers a mandatory two-year waiting period with most insurance providers. Because underwriters view the need for an oxygen tank as an indicator of advanced-stage respiratory failure, they usually move these applicants to a “Graded” or “Guaranteed Issue” plan. If you use oxygen, your beneficiaries will generally receive a refund of your premiums plus 10% interest if you die from natural causes within the first 24 months.</p>
+<p>Supplemental oxygen use typically triggers a mandatory two-year waiting period with most insurance providers. Because underwriters view the need for an oxygen tank as an indicator of advanced-stage respiratory failure, they usually move these applicants to a “Graded” or “Guaranteed Issue” plan. On a guaranteed issue plan, if you die from natural causes within the first 24 months, your beneficiaries receive a refund of your premiums plus an additional amount set by the contract, typically 7% to 10%. Graded plans limit the benefit in the early years under their own schedules.</p>

@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• “No questions asked” policies always come with a 2-year waiting period<br>• If you die early, your family usually only gets premiums back<br>• These plans cost more because the company takes on unknown risk<br>• Ads make them sound simple, but they hide major coverage limits<br>• Most people can qualify for better first-day coverage with some questions</p>
+<p>• “No questions asked” policies always come with a 2-year waiting period<br>• If you die of natural causes in the first two years, your family gets premiums back plus an additional amount set by the contract<br>• These plans cost more because the company takes on unknown risk<br>• Ads make them sound simple, but they hide major coverage limits<br>• Most people can qualify for better first-day coverage with some questions</p>
 
 <p>“Burial insurance no questions asked” sounds easy, but it comes with tradeoffs. These are called guaranteed-issue burial insurance policies, and they skip health questions, so anyone can be approved. The catch is the waiting period. Most have a 2 to 3-year delay before the full benefit pays out, and if you die during that time, your family usually only gets your premiums back instead of the full payout. That’s why burial insurance, even with a few health questions, is usually better. It can give you immediate coverage at a lower cost if you qualify.</p>
 

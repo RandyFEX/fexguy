@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Using oxygen can put you in the highest risk category immediately<br>• Most companies won’t offer first-day burial insurance coverage at all<br>• Continuous 24/7 use will commonly get you a 2-year waiting period plan<br>• Early death usually only returns premiums, not full coverage<br>• Guaranteed issue plans cost more for less protection upfront<br>• Lying about oxygen use will get your claim denied later</p>
+<p>• Using oxygen can put you in the highest risk category immediately<br>• Most companies won’t offer first-day burial insurance coverage at all<br>• Continuous 24/7 use will commonly get you a 2-year waiting period plan<br>• On a guaranteed issue plan, a natural death in the first two years returns premiums plus an additional amount set by the contract, not full coverage<br>• Guaranteed issue plans cost more for less protection upfront<br>• Lying about oxygen use will get your claim denied later</p>
 
 <p>Burial insurance with oxygen use is one of the toughest situations to get approved for immediate coverage. Insurance companies treat oxygen as a sign of serious lung or heart issues, so many will only offer graded or guaranteed issue whole life burial insurance with a waiting period. That means if you pass away in the first 2 years, your family usually only gets your premiums back plus interest, not the full benefit. The main exceptions are limited cases like oxygen for sleep apnea, and treatment varies by carrier. If you apply the wrong way, you’ll overpay and still have delayed protection.</p>
 

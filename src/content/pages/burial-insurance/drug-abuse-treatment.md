@@ -84,7 +84,7 @@ sidebar: true
 
 <p>This plan does not go into effect immediately like the level death benefit. You must live for two years before your beneficiary will receive your full death benefit if you pass away from a natural cause.</p>
 
-<p>If you die during the two-year waiting period, your beneficiary will only receive the full refund of all the premiums you paid plus interest which is usually 10%.</p>
+<p>If you die from natural causes during the two-year waiting period, your beneficiary will only receive a refund of all the premiums you paid plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p><strong>Best Option:</strong>&#160;Guaranteed issue burial insurance</p>
 

@@ -111,7 +111,7 @@ sidebar: true
 <li>Coverage amount</li>
 </ul>
 
-<p>1st-day coverage plans always start from your first payment date. Guaranteed Issue (GI) and Modified plans always have 2-3 year waiting periods.</p>
+<p>1st-day coverage plans always start from your first payment date. Guaranteed Issue (GI) plans have a two-year waiting period for natural death, and modified plans limit the benefit in the early years under their own schedules.</p>
 
 <p>The examples below show past sample premiums. The first-day plan is only available to applicants who meet the company’s underwriting requirements.</p>
 

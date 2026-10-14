@@ -278,7 +278,7 @@ sidebar: true
 
 <p id="8213c6f6-868b-43ee-8a16-a16cad89576d"><br><strong>What is meant by the waiting period?</strong></p>
 
-<p id="8213c6f6-868b-43ee-8a16-a16cad89576d">A waiting period is required before a new life insurance policy pays out the death benefit. The waiting period is generally two years.</p>
+<p id="8213c6f6-868b-43ee-8a16-a16cad89576d">A waiting period is the time a policy must be in force before it pays the full death benefit for a natural death. Guaranteed issue policies have a two-year waiting period, graded and modified plans limit the benefit in the early years under their own schedules, and policies with first-day coverage have no waiting period.</p>
 
 <p id="8213c6f6-868b-43ee-8a16-a16cad89576d"><br><strong>What is the difference between a waiting period and a grace period?</strong></p>
 

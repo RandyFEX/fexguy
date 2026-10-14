@@ -246,7 +246,7 @@ sidebar: true
 
 <p><strong>How long does it take for coverage to start?</strong></p>
 
-<p>For the policies we help people with, coverage starts on the first day of the policy. If you die on the first day of your policy, your beneficiaries will receive the death benefit. Other people’s policies have a waiting period, which is usually two years. If you die within the first two years of your policy, your beneficiaries will not receive the death benefit.</p>
+<p>For the policies we help people with, coverage starts on the first day of the policy. If you die on the first day of your policy, your beneficiaries will receive the death benefit. Other policies have waiting periods: guaranteed issue policies have a two-year waiting period for natural death, and graded or modified plans limit the benefit in the early years under their own schedules. If you die from natural causes within the first two years of a guaranteed issue policy, your beneficiaries will not receive the full death benefit.</p>
 
 <p><br><strong>What happens if I die before the policy starts?</strong></p>
 

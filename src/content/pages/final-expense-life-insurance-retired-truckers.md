@@ -377,7 +377,7 @@ sidebar: true
 
 <p>The opposite is true. A waiting period plan protects the insurance company first. The family receives limited support during the first two years when they need the help most.</p>
 
-<p>A two-year waiting period means the full benefit does not pay for natural causes until after the twenty-fourth month. If the insured passes away during the first twenty-four months, the company refunds the premiums paid plus interest. The interest rate is usually 7-10%.</p>
+<p>A two-year waiting period means the full benefit does not pay for natural causes until after the twenty-fourth month. If the insured passes away from natural causes during the first twenty-four months, the company refunds the premiums paid plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p>Most retired truckers do not realize that over 85 percent of deaths after age sixty come from natural causes. This means the benefit most seniors need is the benefit these plans do not pay during the waiting period.</p>
 

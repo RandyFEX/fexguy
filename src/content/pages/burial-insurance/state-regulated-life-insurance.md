@@ -233,7 +233,7 @@ After a doing a quick health review, I was able to place her into a $10,000 whol
 <li>Guaranteed-issue plans have a mandatory two-year waiting period for natural death.</li>
 <li>That means your coverage isn’t fully active until the 25th month.</li>
 <li>If you die during that time, your beneficiary won’t receive the full death benefit.</li>
-<li>They’ll usually receive a refund of premiums plus a small amount of interest.</li>
+<li>They’ll receive a refund of premiums plus an additional amount set by the contract, typically 7% to 10%.</li>
 </ul>
 
 <h3><strong>First-day coverage (best)</strong></h3>

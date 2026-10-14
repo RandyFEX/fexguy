@@ -80,7 +80,7 @@ sidebar: true
 
 <p><strong>GUARANTEED ISSUE LIFE INSURANCE</strong> – No medical exams, no health questions – it’s the easy road to coverage regardless of your health history. But, fair warning, this convenience comes at a price – about 50% more expensive – and there’s a mandatory two-year wait.</p>
 
-<p>If you kick the bucket during those first two years, your beneficiaries won’t get the jackpot payment. They’ll get back what you paid in premiums plus a smidge of interest, usually 7 to 10%.</p>
+<p>If you kick the bucket from natural causes during those first two years, your beneficiaries won’t get the jackpot payment. They’ll get back what you paid in premiums plus a smidge extra set by the contract, typically 7% to 10%.</p>
 
 <h2 id="best-insurance-option"><strong>What is my best insurance option if I have had heart bypass surgery?</strong></h2>
 

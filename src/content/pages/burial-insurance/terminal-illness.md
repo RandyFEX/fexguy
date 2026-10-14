@@ -89,7 +89,7 @@ sidebar: true
 
 <p>The two-year waiting period is a financial safety net for the insurance company. It is their way of protecting themselves from paying a lot of money to people who are literally on their deathbeds and trying to buy life insurance.</p>
 
-<p>This policy will require you to live for the first two years before your policy pays for any health or medical-related cause of death. If you pass away during the waiting period, your beneficiary will not get your full death benefit. Instead, they will get a Return Of Premium (ROP) plus interest (usually 7-10%)</p>
+<p>This policy will require you to live for the first two years before your policy pays for any health or medical-related cause of death. If you pass away during the waiting period, your beneficiary will not get your full death benefit. Instead, they will get a Return Of Premium (ROP) plus an additional amount set by the contract, typically 7% to 10%.</p>
 
 <p>For example, your monthly premium is $100. If you paid one year before passing away, your beneficiary would receive your $1,200 premium plus $120 to account for the 10% interest for a total of $1,320.</p>
 

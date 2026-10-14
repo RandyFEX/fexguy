@@ -83,7 +83,7 @@ sidebar: true
 
 <p>During that two-year period, the policy still functions, but it pays differently.</p>
 
-<p>If someone passes away from natural causes within those first two years, the payout is usually a refund of premiums plus a small amount of interest. After the waiting period ends, the full benefit becomes available with no limitations.</p>
+<p>On a guaranteed acceptance plan, if someone passes away from natural causes within those first two years, the payout is a refund of premiums plus an additional amount set by the contract, typically 7% to 10%. After the waiting period ends, the full benefit becomes available with no limitations.</p>
 
 <p>Accidental death is often covered in full, even during the waiting period, which is another detail people do not always realize.</p>
 
@@ -353,7 +353,7 @@ sidebar: true
 
 <p>The money goes directly to the beneficiary, giving them full control over how it is used. Some families apply it to funeral home costs immediately, while others handle bills first and then make arrangements. The flexibility is intentional because every family handles these moments differently.</p>
 
-<p>If the death occurred during a waiting period on a guaranteed acceptance policy, the claim payout is different. Instead of the full benefit, the insurer refunds the premiums paid in, usually with a modest amount of interest added. If the death occurred after the waiting period or under a simplified issue policy with first day coverage, the full benefit is paid without reduction.</p>
+<p>If a death from natural causes occurred during the waiting period on a guaranteed acceptance policy, the claim payout is different. Instead of the full benefit, the insurer refunds the premiums paid in, plus an additional amount set by the contract, typically 7% to 10%. If the death occurred after the waiting period or under a simplified issue policy with first day coverage, the full benefit is paid without reduction.</p>
 
 <p>Accidental death is often treated differently. Even during a waiting period, many policies pay the full benefit for accidental deaths because the risk is not tied to health. This makes claim outcomes more favorable in certain circumstances, though the exact details depend on the policy’s specific language.</p>
 
