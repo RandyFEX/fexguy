@@ -186,7 +186,7 @@ sidebar: true
 
 <h3>Is State Farm burial insurance a good deal for seniors?</h3>
 
-<p>State Farm’s final expense plan is generally more expensive than “level benefit” plans because the company accepts applicants with terminal illnesses. Since the insurer takes on much higher risk by skipping health questions, they charge everyone a higher premium to compensate. Most seniors in 2026 find they can get the same amount of coverage for nearly half the price by choosing a company that asks a few basic health questions.</p>
+<p>State Farm’s final expense coverage can be more expensive than first-day coverage available from other insurance companies. If you’re able to answer a few basic health questions and qualify for immediate coverage, you can often get the same amount of life insurance for considerably less money.</p>
 
 <h3>How does the State Farm two-year waiting period work?</h3>
 

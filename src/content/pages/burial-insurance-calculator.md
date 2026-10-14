@@ -291,7 +291,7 @@ sidebar: true
 <li>Mobility issue, needing help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> such as <a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">eating</a>, <a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">bathing</a>, <a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">dressing</a>, <a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">toileting</a>, <a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">continence</a>, transferring</li>
 </ul>
 
-<p>Guaranteed issue policies will accept applicants with these medical conditions. Since the insurance companies assume higher risk, the cost of GI policies is generally higher than other types of policies.</p>
+<p>Guaranteed issue policies will accept applicants with these medical conditions. Since the insurance companies assume higher risk, the cost of GI policies is higher than first-day coverage for people who qualify for it.</p>
 
 <p>Guaranteed issue policies have graded benefits for the first two years. </p>
 
