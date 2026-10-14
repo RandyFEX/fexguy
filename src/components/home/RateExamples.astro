@@ -10,7 +10,7 @@
 // Every example is in the HTML and they share one grid cell, so the card
 // keeps the height of the tallest and nothing shifts when they change.
 // Without JavaScript the first example simply stays visible. With it, the
-// examples change every 7 seconds, pausing while the pointer or keyboard
+// examples change every 3 seconds, pausing while the pointer or keyboard
 // focus is on the card or the tab is hidden. One small Pause/Play button is
 // the visible control: WCAG 2.2.2 requires a way to pause content that changes
 // on its own, and hover/focus pausing alone doesn't cover touch screens. With
@@ -19,7 +19,7 @@ import HomeIcon from './HomeIcon.astro';
 import { rateExamples } from '@/lib/home/content';
 ---
 
-<div class="rate" data-rate data-interval="7000" role="group" aria-label="Rate examples" data-pagefind-ignore>
+<div class="rate" data-rate data-interval="3000" role="group" aria-label="Rate examples" data-pagefind-ignore>
   {/* Automatic changes are not announced (aria-live off); only the shown
      example is exposed to screen readers. */}
   <ul class="rate__list" role="list" aria-live="off">
@@ -86,7 +86,7 @@ import { rateExamples } from '@/lib/home/content';
     const toggle = root.querySelector<HTMLButtonElement>('[data-rate-toggle]');
     if (items.length < 2 || !toggle) return;
 
-    const interval = Number(root.dataset.interval) || 7000;
+    const interval = Number(root.dataset.interval) || 3000;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
     let index = 0;
     let playing = !reduced.matches;
