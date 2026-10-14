@@ -29,7 +29,10 @@ phone: "ctv"
 <p class="roku__cta-note">Free, friendly, no-pressure conversation.</p>
 </div>
 
-<p class="roku__photo"><picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture></p>
+<div class="roku__agent">
+<picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture>
+<p class="roku__agent-id"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
+</div>
 
 <hr>
 
@@ -115,7 +118,5 @@ phone: "ctv"
 <p>No problem. Just fill out the contact form on this page, and I’ll be happy to reach out.</p>
 
 <div data-quote-form data-phone="ctv"></div>
-
-<p class="roku__sign"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
 
 </div>

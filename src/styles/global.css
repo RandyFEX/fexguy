@@ -984,24 +984,36 @@ a:hover {
   line-height: 1.3;
   text-wrap: balance;
 }
-/* Randy's headshot under his introduction: a circle, 105px on phones and
-   120px from tablet width up (public/images/randy/, 240px source). */
-.roku__photo {
+/* Randy's headshot beside his name and title, under the first call
+   button: a centered row (photo left, text left-aligned) that stacks only
+   when the screen is too narrow (public/images/randy/, 240px source). */
+.roku__agent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-4);
   margin-block: var(--space-6);
-  text-align: center;
 }
-.roku .roku__photo img {
-  display: inline-block;
-  width: 105px;
-  height: 105px;
+.roku .roku__agent img {
+  display: block;
+  width: 90px;
+  height: 90px;
   margin: 0;
   border-radius: 50%;
   object-fit: cover;
 }
+.roku__agent .roku__agent-id {
+  flex: 1 1 10.5rem;
+  max-width: max-content;
+  margin: 0;
+  text-align: left;
+  line-height: 1.4;
+}
 @media (min-width: 48rem) {
-  .roku .roku__photo img {
-    width: 120px;
-    height: 120px;
+  .roku .roku__agent img {
+    width: 104px;
+    height: 104px;
   }
 }
 /* Roku section headings use the full content width: the site-wide
@@ -1040,10 +1052,6 @@ a:hover {
   margin-top: var(--space-3);
   color: var(--color-text-muted);
   text-wrap: balance;
-}
-.roku__sign {
-  margin-top: var(--space-8);
-  text-align: center;
 }
 
 .call-sticky,
