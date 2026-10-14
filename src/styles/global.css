@@ -29,6 +29,10 @@
   /* Phone links and the mobile call button use heritage green too. */
   --color-accent: #173f35;
   --color-call: #173f35;
+  /* Primary conversion buttons (quote, call, lead-form submit): the Roku
+     orange, 5.2:1 with white text. */
+  --color-cta: #c2410c;
+  --color-on-cta: #ffffff;
   /* Form errors (6.5:1 on white, 5.4:1 on the stone surface). */
   --color-error: #b91c1c;
 
@@ -351,6 +355,30 @@ a:hover {
 
 .btn--block {
   width: 100%;
+}
+
+/* Primary conversion buttons share the orange CTA color: the lead form's
+   submit button, the pre-footer and quote-box GET QUOTES NOW, the article
+   GET MY QUOTE, and migrated quote/call buttons in page content. Secondary
+   buttons, search buttons and "Read More" links keep the brand green. */
+.lead-form__submit,
+.quote-box__open,
+.pre-footer .btn--primary,
+.art-cta__btn,
+.wp-content .button-link a:is([href^="tel:"], [href*="free-quote"], [href="#quote"]),
+.wp-content a.button-link:is([href^="tel:"], [href*="free-quote"], [href="#quote"]) {
+  background: var(--color-cta);
+  color: var(--color-on-cta);
+}
+.lead-form__submit:hover:not(:disabled),
+.quote-box__open:hover,
+.pre-footer .btn--primary:hover,
+.art-cta__btn:hover,
+.wp-content .button-link a:is([href^="tel:"], [href*="free-quote"], [href="#quote"]):hover,
+.wp-content a.button-link:is([href^="tel:"], [href*="free-quote"], [href="#quote"]):hover {
+  background: var(--color-cta);
+  color: var(--color-on-cta);
+  filter: brightness(0.9);
 }
 
 /* Migrated page content ---------------------------------------------------
@@ -1038,8 +1066,8 @@ a:hover {
    /roku/ it is used by the call buttons and the form's submit button. */
 .roku__call,
 .roku .lead-form__submit {
-  background: #c2410c;
-  color: #ffffff;
+  background: var(--color-cta);
+  color: var(--color-on-cta);
 }
 .roku__call {
   min-height: 3.5rem;
@@ -1049,8 +1077,8 @@ a:hover {
 }
 .roku__call:hover,
 .roku .lead-form__submit:hover:not(:disabled) {
-  background: #c2410c;
-  color: #ffffff;
+  background: var(--color-cta);
+  color: var(--color-on-cta);
   filter: brightness(0.9);
 }
 .roku__cta .roku__cta-note {

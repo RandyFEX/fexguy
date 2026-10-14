@@ -13,7 +13,7 @@ import { quoteBoxHtml } from '@/lib/lead/quote-box';
     <div class="final-cta__intro">
       <h2 class="final-cta__title" id="final-cta-title">Not Sure What Type of Life Insurance You Need?</h2>
       <p class="final-cta__text">Randy can help you compare your options.</p>
-      <a class="btn final-cta__btn final-cta__btn--light" href={lead.phone.href}>CALL {lead.phone.display}</a>
+      <a class="btn final-cta__btn final-cta__btn--cta" href={lead.phone.href}>CALL {lead.phone.display}</a>
     </div>
     <div class="final-cta__form">
       <Fragment set:html={quoteBoxHtml('inline')} />
@@ -54,13 +54,14 @@ import { quoteBoxHtml } from '@/lib/lead/quote-box';
   .final-cta__btn {
     width: 100%;
   }
-  .final-cta__btn--light {
-    background: #ffffff;
-    color: var(--color-primary);
+  .final-cta__btn--cta {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
   }
-  .final-cta__btn--light:hover {
-    background: var(--home-cream);
-    color: var(--color-primary-hover);
+  .final-cta__btn--cta:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    filter: brightness(0.9);
   }
   /* The white form box keeps the site's normal text color and focus ring
      (the band's white ring would vanish on white). */
