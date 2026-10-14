@@ -29,6 +29,8 @@ sidebar: true
 
 <p>Formspark receives and stores what you submit and sends it to us. It also receives the standard technical information your browser sends, such as your IP address, and our website’s address.</p>
 
+<p>When you submit a contact or quote request, we may also collect the page where you submitted the form, the first page you visited, and available referral or advertising campaign information to help us understand how visitors find our website.</p>
+
 <p>To keep automated spam out of the quote request form, the form uses Cloudflare Turnstile, a security check from Cloudflare. When you reach the form, the check runs in your browser, and Cloudflare receives technical information from your browser and device, such as your IP address and browser details, to tell people apart from automated programs. Most visitors never see it; occasionally it may ask you to click a box. We do not send Cloudflare your form answers. Formspark confirms the check with Cloudflare before accepting a submission. Cloudflare handles this information under its own privacy policy.</p>
 
 <p>The website does not ask for, and you should not enter, Social Security numbers, bank account or credit card information, or passwords. There are no user accounts on the website.</p>

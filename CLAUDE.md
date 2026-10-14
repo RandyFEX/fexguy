@@ -740,6 +740,16 @@ is in place; see src/content/README.md for how pages were migrated.
   1x00000000000000000000BB pass, 2x00000000000000000000BB fail,
   3x00000000000000000000FF interactive), never with real leads.
   /privacy-policy/ discloses Turnstile next to Formspark.
+- **Lead source attribution** (Randy, October 2026): hidden fields (the
+  visible form is unchanged) add Submission Page, the session's Landing Page
+  (no query string), Traffic Source (UTM source/medium, an identified ad
+  click such as "Google Ads click" without the click ID, "Referral: <host>",
+  or "Unknown"), the external Referrer hostname and any UTM values to the
+  existing Formspark submission; empty ones are omitted. Code:
+  `src/scripts/lead-source.ts` (session record in sessionStorage),
+  `src/scripts/lead-form.ts`, `src/lib/lead/lead-form.ts`. Nothing new goes
+  to GA4 or Meta. Keep the success redirect, Turnstile, honeypot and the
+  GA4/Meta conversion behavior unchanged. /privacy-policy/ discloses it.
 - Fillout is the rollback only: form `pJBgSNEtN9us` stays in
   `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
   embed late; keep it that way). Setting `quoteForm: 'fillout'` restores it

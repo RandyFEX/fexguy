@@ -30,6 +30,20 @@ export const US_STATES = [
  * script applies the same rule (see lead-form.ts). */
 export const US_PHONE_PATTERN = String.raw`\s*(\+?1[\s.\-]?)?\(?[2-9]\d{2}\)?[\s.\-]?\d{3}[\s.\-]?\d{4}\s*`;
 
+/** Hidden lead-source fields (filled by src/scripts/lead-source.ts at
+ * submission; empty ones are left out of the submission). */
+export const LEAD_SOURCE_FIELDS = [
+  'Submission Page',
+  'Landing Page',
+  'Traffic Source',
+  'Referrer',
+  'UTM Source',
+  'UTM Medium',
+  'UTM Campaign',
+  'UTM Term',
+  'UTM Content',
+] as const;
+
 const field = (id: string, label: string, control: string, wide = false) =>
   `<div class="lead-form__field${wide ? ' lead-form__field--wide' : ''}">` +
   `<label class="lead-form__label" for="${id}">${label}</label>` +
@@ -103,6 +117,8 @@ export function leadFormHtml(variant: LeadFormVariant): string {
     '<label for="lf-hp">Leave this field empty</label>' +
     '<input id="lf-hp" name="_honeypot" type="text" tabindex="-1" autocomplete="off">' +
     '</div>' +
+    // Where the lead came from (see src/scripts/lead-source.ts).
+    LEAD_SOURCE_FIELDS.map((name) => `<input type="hidden" name="${name}" value="">`).join('') +
     // Without JavaScript, Formspark sends the visitor here after submitting.
     `<input type="hidden" name="_redirect" value="${origin}">` +
     '<button class="btn btn--primary btn--block lead-form__submit" type="submit">YES, I WANT HELP!</button>' +

@@ -20,6 +20,12 @@
 // if it fails, so no success is shown). Tokens are single-use: after a failed
 // attempt the widget is reset so the retry gets a new one.
 import { lead } from '@/config/lead';
+import { LEAD_SOURCE_FIELDS } from '@/lib/lead/lead-form';
+import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
+
+// Remember this session's landing page and traffic source (every page).
+recordVisit();
+const SOURCE_FIELDS = new Set<string>(LEAD_SOURCE_FIELDS);
 
 const PHONE_DIGITS = /^[2-9]\d{9}$/;
 
@@ -328,11 +334,20 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
     }
     setStatus('Sending your request…');
 
+    // Lead source: the page submitted from, the session's landing page and
+    // traffic source, into the hidden fields.
+    const source = leadSourceFields();
+    for (const name of LEAD_SOURCE_FIELDS) {
+      const input = form.querySelector<HTMLInputElement>(`input[type="hidden"][name="${name}"]`);
+      if (input) input.value = source[name] ?? '';
+    }
+
     // Every named field except _redirect (only used without JavaScript) and
     // the widget's own token field; the current token is added explicitly.
     const data: Record<string, string> = {};
     for (const [name, value] of new FormData(form)) {
       if (name === '_redirect' || name === 'cf-turnstile-response') continue;
+      if (SOURCE_FIELDS.has(name) && !String(value).trim()) continue;
       if (typeof value === 'string') data[name] = value.trim();
     }
     data['cf-turnstile-response'] = token;
