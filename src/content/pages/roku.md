@@ -34,8 +34,6 @@ phone: "ctv"
 <p class="roku__agent-id"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
 </div>
 
-<hr>
-
 <h2>When You Become My Client, You Get My Personal Cell Phone Number.</h2>
 
 <p>Here’s something you don’t hear very often in insurance commercials.</p>
@@ -49,8 +47,6 @@ phone: "ctv"
 <p><strong>You’re not just another policy number to me. You’re my client, and I’m your agent.</strong></p>
 
 <p>That’s the kind of personal service I believe people deserve.</p>
-
-<hr>
 
 <h2>Not All Life Insurance Plans Are the Same.</h2>
 
