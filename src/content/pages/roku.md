@@ -62,7 +62,7 @@ phone: "ctv"
 
 <p>And the price you see advertised may not reflect what coverage would actually cost for someone your age.</p>
 
-<p><strong>Here’s what makes working with me different.</strong></p>
+<h2>Here’s What Makes Working with Me Different.</h2>
 
 <p>I’m an independent insurance agent. That means I can compare plans from multiple insurance companies instead of trying to fit everyone into the same policy.</p>
 
