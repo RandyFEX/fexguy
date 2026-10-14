@@ -1004,6 +1004,11 @@ a:hover {
     height: 120px;
   }
 }
+/* Roku section headings use the full content width: the site-wide
+   text-wrap: balance on headings split them into two short lines here. */
+.roku h2 {
+  text-wrap: wrap;
+}
 .roku__cta {
   margin-block: var(--space-8);
   text-align: center;

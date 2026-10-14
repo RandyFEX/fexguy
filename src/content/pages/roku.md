@@ -15,14 +15,12 @@ phone: "ctv"
 
 <header class="roku__intro">
 <h1>Welcome, <span class="roku__brand">Roku</span> Viewers!</h1>
-<p class="roku__sub">You Saw Me on TV. Now Let’s See If I Can Help You.</p>
+<p class="roku__sub">You Saw My Ad on TV. Now Let’s See If I Can Help You.</p>
 </header>
 
 <p>I’m Randy VanderVaate, the Final Expense Guy. My National Producer Number (NPN) is 17792459, which you can use to verify my insurance licensing credentials.</p>
 
 <p>I’ve been helping people with life insurance for over 11 years, and I’ve helped more than 10,000 people explore their options and decide whether life insurance makes sense for their situation.</p>
-
-<p class="roku__photo"><picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture></p>
 
 <p><strong>My job isn’t to talk you into buying insurance. It’s to help you make an informed decision, even if that decision is no.</strong></p>
 
@@ -30,6 +28,8 @@ phone: "ctv"
 <p><a class="btn btn--primary roku__call" href="tel:8886564648">CALL RANDY: 888-656-4648</a></p>
 <p class="roku__cta-note">Free, friendly, no-pressure conversation.</p>
 </div>
+
+<p class="roku__photo"><picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture></p>
 
 <hr>
 
