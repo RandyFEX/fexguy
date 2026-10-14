@@ -127,7 +127,7 @@ sidebar: true
 
 <p>Ethos promotes speed and convenience, but routinely comes at a higher financial cost.</p>
 
-<p>Guaranteed acceptance whole life commonly has a two to three-year waiting period before the full benefit is available. During that time, most policies refund paid premiums plus interest for natural death, not the full face amount. Ethos publishes that guidance directly.</p>
+<p>Guaranteed acceptance whole life has a two-year waiting period before the full natural-death benefit is available. If the insured dies from natural causes during that period, the beneficiary receives the premiums paid plus an additional amount set by the contract instead of the full death benefit.</p>
 
 <p>Some Ethos pages also note that many no-exam policies begin coverage right away once approved, except guaranteed acceptance, which is graded for the first two years. You should confirm the specific carrier language in the policy form.</p>
 

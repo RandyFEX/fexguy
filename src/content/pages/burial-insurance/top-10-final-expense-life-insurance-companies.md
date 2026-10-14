@@ -853,7 +853,7 @@ sidebar: true
 
 <p><br><strong>What type of insurance is Lincoln Heritage?</strong></p>
 
-<p>Lincoln Heritage is a final expense life insurance company that offers guaranteed issue life insurance policies. You do not have to take a medical exam to qualify for coverage.</p>
+<p>Lincoln Heritage sells Funeral Advantage whole life insurance, and applicants who do not qualify for immediate coverage may be offered a modified plan with a waiting period. You do not have to take a medical exam to qualify for coverage.</p>
 
 <p><br><strong>How does Lincoln Heritage funeral Advantage work?</strong></p>
 

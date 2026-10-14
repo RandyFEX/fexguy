@@ -68,7 +68,7 @@ source: "live"
 
 <p><strong>Common Guaranteed Issue Whole Life 2-year waiting period companies:</strong></p>
 
-<ul><li>AIG</li><li>American National</li><li>Colonial Penn</li><li>Gerber Life</li><li>Great Western</li><li>Lincoln Heritage (watch out for their 3-year wait plans…yikes!)</li><li>Mutual of Omaha</li></ul>
+<ul><li>AIG</li><li>American National</li><li>Colonial Penn</li><li>Gerber Life</li><li>Great Western</li><li>Lincoln Heritage (watch out for their modified plans with 2- or 3-year waits…yikes!)</li><li>Mutual of Omaha</li></ul>
 
 <h2 id="The-$9.95-“Per-Unit”-Myth" class="as-h3"><strong>THE $9.95 “PER UNIT” MYTH</strong></h2>
 
