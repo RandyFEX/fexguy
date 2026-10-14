@@ -269,7 +269,7 @@ sidebar: true
 
 <ul>
 <li>Class I &amp; II: Often eligible for simplified issue plans with immediate or graded benefits.</li>
-<li>Class III &amp; IV: Usually directed toward guaranteed issue plans with a two-year waiting period, especially if shortness of breath occurs at rest or you require assistance with daily activities.</li>
+<li>Class III &amp; IV: Usually directed toward guaranteed issue plans with a two-year waiting period, especially if shortness of breath occurs at rest. If you need another person’s help with bathing, dressing, eating, toileting or transferring, guaranteed issue is the only option.</li>
 </ul>
 
 <h3>Will using home oxygen for CHF disqualify me from burial insurance?</h3>

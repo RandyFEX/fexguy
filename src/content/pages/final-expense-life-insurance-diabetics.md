@@ -56,7 +56,7 @@ sidebar: true
 
 <p>Nearly all insurers offering diabetic-friendly final expense plans use simplified underwriting.</p>
 
-<p>That means the decision depends on your answers and a quick check of a prescription database rather than a medical exam. When handled correctly, around 97 percent of diabetic applicants qualify for first-day coverage with at least one carrier.</p>
+<p>That means the decision depends on your answers and a quick check of a prescription database rather than a medical exam. Diabetes itself is normally not the main obstacle to first-day coverage.</p>
 
 <p>Diabetes rarely prevents someone from getting life insurance. What matters is finding the right type of policy with the right carrier.</p>
 
@@ -69,7 +69,7 @@ sidebar: true
 <li><strong>Declined </strong>– extremely rare, reserved for uncontrolled or severe complications.</li>
 </ol>
 
-<p>Across thousands of applications, roughly 97 percent of diabetics qualify for first-day coverage with at least one reputable insurer. The remaining few usually need to stabilize medication or reapply after a recent hospital stay.</p>
+<p>Which of these results you get depends mainly on complications such as amputation, nephropathy, neuropathy or retinopathy, and on your related health history.</p>
 
 <p><strong>Each insurer asks simple questions like:</strong></p>
 

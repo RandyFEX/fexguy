@@ -99,7 +99,7 @@ sidebar: true
 
 <ul>
 <li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Mutual of Omaha or Aetna if you have been declared cancer-free for at least 2 years.</li>
-<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. Maintenance therapy, remission or a more recent diagnosis generally means guaranteed issue instead.</li>
+<li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death. Maintenance therapy or remission means guaranteed issue instead, and a more recent diagnosis generally does too.</li>
 <li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions and includes a 2-year waiting period before benefits are paid for health- or medically related causes of death. I suggest AAA or Gerber Life if you are currently in active treatment.</li>
 </ul>
 

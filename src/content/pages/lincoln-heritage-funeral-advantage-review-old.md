@@ -395,7 +395,7 @@ The “State-Regulated” mix-up
 
 <p><strong>Is Lincoln Heritage Funeral Advantage legit?</strong></p>
 
-<p>Yes, Lincoln Heritage is a real company that’s been around for decades, but that doesn’t make their policies a good deal.<br>They often sell expensive plans that only refund premiums if you die within the first two years instead of paying the full benefit. Around 97% of people qualify for immediate coverage with better companies, but Lincoln Heritage rarely offers it. So yes, it’s legitimate, but you’re paying more money for less protection.</p>
+<p>Yes, Lincoln Heritage is a real company that’s been around for decades, but that doesn’t make their policies a good deal.<br>They often sell expensive plans that only refund premiums if you die within the first two years instead of paying the full benefit. In my experience, around 97% of the people I help qualify for first-day coverage. So yes, it’s legitimate, but you’re paying more money for less protection.</p>
 
 <p><strong>How much is Lincoln Heritage Funeral Advantage?</strong></p>
 

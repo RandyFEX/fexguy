@@ -247,7 +247,7 @@ sidebar: true
 
 <p>If you are taking any of these blood thinners as a maintenance medication, most insurance companies will look at your health favorably because these medications prevent health problems in the future. </p>
 
-<p>For the most part, blood clots are generally a non-issue with most insurance companies. We can help you qualify for the best plan with the lowest rate, even if you have had a pulmonary embolism.</p>
+<p>Blood clots are an underwriting issue, but a blood clot doesn’t automatically disqualify you, and many people can still qualify with some insurance companies. We can help you qualify for the best plan with the lowest rate, even if you have had a pulmonary embolism.</p>
 
 <h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have blood clot?</strong></h2>
 
