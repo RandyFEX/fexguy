@@ -123,7 +123,7 @@ sidebar: true
 
 <h2>Sample aneurysm rate snapshot for $10,000 coverage</h2>
 
-<p>The cost of burial insurance is based on your age and sex because these factors help the company estimate how many years you will contribute to the plan. Women generally receive lower monthly rates than men because they statistically live longer, which makes them a safer long-term bet for the insurance carrier. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
+<p>The cost of burial insurance is based on your age and sex because these factors help the company estimate how many years you will contribute to the plan. With everything else equal, women receive lower monthly rates than men because they statistically live longer, which makes them a safer long-term bet for the insurance carrier. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
 <h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 

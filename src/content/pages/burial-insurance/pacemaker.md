@@ -121,7 +121,7 @@ sidebar: true
 
 <h2>Sample pacemaker rate snapshot for $10,000 coverage</h2>
 
-<p>The cost of your burial insurance is based on your age and sex because these factors help the company project how many years you will keep the policy. Women generally pay lower monthly rates than men because they statistically live longer, making them a lower risk for the insurance carrier.<br><br>It is the only time in life when being a woman gives you a better price on a monthly bill. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
+<p>The cost of your burial insurance is based on your age and sex because these factors help the company project how many years you will keep the policy. With everything else equal, women pay lower monthly rates than men because they statistically live longer, making them a lower risk for the insurance carrier.<br><br>It is the only time in life when being a woman gives you a better price on a monthly bill. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
 <h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 

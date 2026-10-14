@@ -402,7 +402,7 @@ sidebar: true
 
 <p><br><strong>Is final expense insurance a good deal?</strong></p>
 
-<p>Generally, a final expense policy could be a fantastic deal for people ages 50 to 85 years old who want to have their funeral and burial expenses covered. Final expense insurance has lenient underwriting, and most health issues are accepted. If you are disqualified from traditional life insurance, final expense life insurance can be a great option.</p>
+<p>A final expense policy could be a fantastic deal for people ages 50 to 85 years old who want to have their funeral and burial expenses covered. Final expense insurance has lenient underwriting, and most health issues are accepted. If you are disqualified from traditional life insurance, final expense life insurance can be a great option.</p>
 
 <p><br><strong>What kind of insurance is final expense?</strong></p>
 

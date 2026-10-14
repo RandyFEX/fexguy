@@ -135,7 +135,7 @@ sidebar: true
 
 <p>Guaranteed issue policies will accept applicants with these medical issues. </p>
 
-<p>Since insurance companies assume a higher risk in providing coverage, the cost of guaranteed acceptance policies is generally higher than other insurance policies.</p>
+<p>Since insurance companies assume a higher risk in providing coverage, the cost of guaranteed acceptance policies is higher than first-day coverage for the same applicant and coverage amount.</p>
 
 <p>Guaranteed issue life insurance has a graded benefit for the first two years. The two-year waiting period applies to the natural cause of death. If you pass away due to natural causes during the two-year waiting period, your beneficiary will receive only the premiums you paid plus 7-10% interest. </p>
 

@@ -236,4 +236,4 @@ sidebar: true
 
 <p><strong><br>Is there a difference in rates for men and women who have liver disease?</strong></p>
 
-<p>Yes, there’s a difference. Men usually get hit with higher rates compared to women.</p>
+<p>Yes, there’s a difference. With everything else equal, men get hit with higher rates compared to women.</p>

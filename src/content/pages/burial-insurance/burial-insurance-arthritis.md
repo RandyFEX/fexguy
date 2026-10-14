@@ -397,7 +397,7 @@ sidebar: true
 
 <p><strong>Accidental Death Rider</strong></p>
 
-<p>An accidental death rider is generally included in all plans. This rider increases your death benefit payout if you die from an accident.</p>
+<p>With first-day coverage, accidental death is covered under the base policy, subject to its terms and exclusions; an accidental death rider is a separate add-on that some companies offer, which may cost extra and isn’t included in every plan. If you add this optional rider, it increases your death benefit payout if you die from an accident.</p>
 
 <h2 id="getting-the-best-rates"><br><strong>How to get the best insurance rates for arthritis</strong></h2>
 

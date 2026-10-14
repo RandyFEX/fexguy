@@ -112,7 +112,7 @@ sidebar: true
 
 <h2>Sample emphysema rate snapshot for $10,000 coverage</h2>
 
-<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate how many years of payments you will make. Rates change as you get older, and women usually pay less than men because they statistically live longer.</p>
+<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate how many years of payments you will make. Rates change as you get older, and, with everything else equal, women pay less than men because they statistically live longer.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
@@ -277,7 +277,7 @@ sidebar: true
 
 <h3>Can I get immediate coverage burial insurance if I use oxygen for COPD?</h3>
 
-<p>Supplemental oxygen use may trigger a mandatory two-year waiting period for most carriers, as oxygen is typically associated with late-stage respiratory conditions such as <a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>. If you use oxygen, you may need a “Guaranteed Issue” policy. These plans do not ask about oxygen use and guarantee your approval, but the full death benefit for natural causes is usually not payable until the policy has been active for 24 months. If you pass away from health issues during that time, the company refunds your premiums plus interest. This ensures your family at least gets back what you put in while you wait for the full coverage to kick in.</p>
+<p>Supplemental oxygen use may trigger a mandatory two-year waiting period for most carriers, as oxygen is typically associated with late-stage respiratory conditions such as <a href="/burial-insurance/copd/" target="_blank" rel="noreferrer noopener">COPD</a>. If you use oxygen, you may need a “Guaranteed Issue” policy. These plans do not ask about oxygen use and guarantee your approval, but the full death benefit for natural causes is not payable until the policy has been active for 24 months. If you pass away from health issues during that time, the company refunds your premiums plus interest. This ensures your family at least gets back what you put in while you wait for the full coverage to kick in.</p>
 
 <h3>How do burial insurance companies verify if I have emphysema?</h3>
 

@@ -247,4 +247,4 @@ sidebar: true
 
 <p><br><strong>How long does it take for life insurance to kick in after heart bypass surgery?</strong></p>
 
-<p>Generally, most policies start working their magic immediately after your first payment. So, pay up, your loved ones will thank you later (hopefully much, much later).</p>
+<p>Most policies start working their magic immediately after your first payment. So, pay up, your loved ones will thank you later (hopefully much, much later).</p>

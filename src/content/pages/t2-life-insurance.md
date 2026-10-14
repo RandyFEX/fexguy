@@ -100,7 +100,7 @@ What you'd pay, whether you're approved, and whether the policy covers you fully
 - the policy you're offered
 - your answers on the real application
 
-Some final expense policies pay the full benefit from day one. Others, like [guaranteed issue policies](/burial-insurance/guaranteed-issue-life-insurance-for-seniors/), usually limit what they pay for a death from illness in the first two years. The mailer doesn't tell you which kind you'll be offered.
+Some final expense policies pay the full benefit from day one. Others, like [guaranteed issue policies](/burial-insurance/guaranteed-issue-life-insurance-for-seniors/), limit what they pay for a death from illness in the first two years. The mailer doesn't tell you which kind you'll be offered.
 
 ## Are regulators doing anything about these mailers?
 

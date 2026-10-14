@@ -119,7 +119,7 @@ sidebar: true
 <td>Yes</td>
 <td>Lower</td>
 <td>Full Benefit From Day One</td>
-<td>97% of Applicants</td>
+<td>Applicants who qualify through health questions</td>
 </tr>
 <tr>
 <td>Modified or Graded Plans (Other Carriers)</td>

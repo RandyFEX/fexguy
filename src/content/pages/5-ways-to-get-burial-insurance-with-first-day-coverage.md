@@ -298,7 +298,7 @@ sidebar: true
 
 <p id="8213c6f6-868b-43ee-8a16-a16cad89576d"><br><strong>What is a 2 year waiting period for life insurance?</strong></p>
 
-<p id="8213c6f6-868b-43ee-8a16-a16cad89576d">A 2 year waiting period for life insurance is the amount of time required before a new life insurance policy pays out the death benefit. The waiting period is generally two years for guaranteed issue-only life insurance policies (which we do not recommend purchasing in most cases).</p>
+<p id="8213c6f6-868b-43ee-8a16-a16cad89576d">A 2 year waiting period for life insurance is the amount of time required before a new life insurance policy pays out the death benefit. The waiting period is two years for guaranteed issue-only life insurance policies (which we do not recommend purchasing in most cases).</p>
 
 <p id="8213c6f6-868b-43ee-8a16-a16cad89576d"><br><strong>What is the effective date of an insurance policy?</strong></p>
 

@@ -133,7 +133,7 @@ sidebar: true
 
 <h3><strong>The impact of gender and mortality tables on rates</strong></h3>
 
-<p>Men generally pay higher premiums than women because insurers calculate risk using gender-based mortality tables. These statistics consistently show that women have a higher average life expectancy than men as they age (by approximately five to six years). Because men are statistically more likely to have shorter lifespans, insurance companies charge them higher premiums to offset the increased risk of earlier claims.</p>
+<p>With everything else equal, men pay higher premiums than women because insurers calculate risk using gender-based mortality tables. These statistics consistently show that women have a higher average life expectancy than men as they age (by approximately five to six years). Because men are statistically more likely to have shorter lifespans, insurance companies charge them higher premiums to offset the increased risk of earlier claims.</p>
 
 <h3><strong>How tobacco use and health history influence premiums</strong></h3>
 

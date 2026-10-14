@@ -111,7 +111,7 @@ sidebar: true
 
 <h2>Sample cerebral palsy rate snapshot for $10,000 coverage</h2>
 
-<p>Insurers use age and gender as the primary factors to determine the direct cost of your burial insurance premiums. Because women have a longer statistical life expectancy, they typically qualify for lower monthly rates compared to men of the same age. This means ladies usually pay a bit less for the same amount of protection.</p>
+<p>Insurers use age and gender as the primary factors to determine the direct cost of your burial insurance premiums. Because women have a longer statistical life expectancy, they typically qualify for lower monthly rates compared to men of the same age. This means ladies pay a bit less for the same amount of protection, with everything else equal.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

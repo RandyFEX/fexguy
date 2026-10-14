@@ -497,7 +497,7 @@ sidebar: true
 
 <p>That’s where American Amicable falls short. Their stricter underwriting results in higher pricing and, even worse, 2-year waiting-period plans that cost more and pay less.</p>
 
-<p>The truth is, about 97% of applicants can qualify for first-day coverage when they apply through a skilled broker like the Final Expense Guy who knows how to match health conditions to the right carrier.</p>
+<p>The truth is, in my experience, around 97% of the people I help qualify for first-day coverage. A skilled broker like the Final Expense Guy knows how to match health conditions to the right carrier.</p>
 
 <p>American Amicable should never be your first choice unless every other option is off the table.</p>
 
@@ -683,7 +683,7 @@ sidebar: true
 
 <p>The NAIC Complaint Index lists American Amicable as receiving more complaints than the average insurer of its size. Many customer issues involve unclear waiting periods, confusion over downgraded policies, and delayed service. The Better Business Bureau (BBB) gives the company an A+ rating but notes several unresolved communication complaints.</p>
 
-<p>Financial strength and legal standing make American Amicable reputable in solvency, but its customer experience is less consistent. Independent carriers such as Aetna, Family Benefit Life, or Trinity Life generally deliver faster claims service and lower costs through brokers like the Final Expense Guy.</p>
+<p>Financial strength and legal standing make American Amicable reputable in solvency, but its customer experience is less consistent.</p>
 
 <p><strong>Who owns American Amicable?</strong></p>
 

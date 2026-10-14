@@ -113,7 +113,7 @@ sidebar: true
 
 <h2><strong>Sample rate snapshot for $10,000 coverage</strong> </h2>
 
-<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate your remaining years. Rates vary by age and gender, as women statistically live longer than men and usually pay less for the same amount of coverage.</p>
+<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate your remaining years. Rates vary by age and gender, as women statistically live longer than men and pay less for the same amount of coverage, with everything else equal.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

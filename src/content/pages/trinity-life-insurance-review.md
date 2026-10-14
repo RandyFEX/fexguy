@@ -286,7 +286,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p>97% of people qualify for first-day coverage with the Final Expense Guy.   Call <strong>888-862-9456</strong> or visit <a href="/" target="_blank">www.FEXGUY.com</a> to find your best plan today.</p>
+<p>In my experience, around 97% of the people I help qualify for first-day coverage.   Call <strong>888-862-9456</strong> or visit <a href="/" target="_blank">www.FEXGUY.com</a> to find your best plan today.</p>
 
 <hr>
 

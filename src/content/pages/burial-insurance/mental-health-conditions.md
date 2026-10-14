@@ -122,7 +122,7 @@ sidebar: true
 
 <h2>Sample burial insurance mental health conditions rate snapshot for $10,000 coverage </h2>
 
-<p>Monthly premiums for new burial insurance policies increase every year because the insurance company takes on more risk as you get older. Rates for this insurance are based on how old you are and if you are male or female. Women usually pay less because they statistically live longer than men. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
+<p>Monthly premiums for new burial insurance policies increase every year because the insurance company takes on more risk as you get older. Rates for this insurance are based on how old you are and if you are male or female. With everything else equal, women pay less because they statistically live longer than men. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

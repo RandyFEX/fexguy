@@ -179,7 +179,7 @@ sidebar: true
 
 <p>Coverage levels for waiting period plans usually range from $5,000 to $25,000. These limits are often lower than comparable simplified issue policies.</p>
 
-<table> <thead> <tr> <th>Feature</th> <th>What People Expect</th> <th>What Actually Happens</th> <th>Impact</th> </tr> </thead> <tbody> <tr> <td>Underwriting</td> <td>Members expect quick approvals</td> <td>Guaranteed issue requires no health review but delays payout</td> <td>Members risk limited benefits for two years</td> </tr> <tr> <td>Coverage Availability</td> <td>Members expect full coverage immediately</td> <td>Only simplified issue provides first day coverage</td> <td>Members who qualify should avoid waiting period plans</td> </tr> <tr> <td>Price Differences</td> <td>Members expect similar costs</td> <td>Guaranteed issue is usually more expensive for less coverage</td> <td>Comparing options prevents unnecessary overspending</td> </tr> </tbody> </table>
+<table> <thead> <tr> <th>Feature</th> <th>What People Expect</th> <th>What Actually Happens</th> <th>Impact</th> </tr> </thead> <tbody> <tr> <td>Underwriting</td> <td>Members expect quick approvals</td> <td>Guaranteed issue requires no health review but delays payout</td> <td>Members risk limited benefits for two years</td> </tr> <tr> <td>Coverage Availability</td> <td>Members expect full coverage immediately</td> <td>Only simplified issue provides first day coverage</td> <td>Members who qualify should avoid waiting period plans</td> </tr> <tr> <td>Price Differences</td> <td>Members expect similar costs</td> <td>Guaranteed issue costs more than first-day coverage for the same applicant and coverage amount</td> <td>Comparing options prevents unnecessary overspending</td> </tr> </tbody> </table>
 
 <hr>
 

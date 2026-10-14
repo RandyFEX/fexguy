@@ -224,7 +224,7 @@ the best rating.</p>
 
 <h2 id="what-is-covered-by-burial-insurance"> <br><strong>What is covered by burial insurance? </strong></h2>
 
-<p>Burial insurance generally covers the insured person’s life. Cash benefit will be given to the beneficiary when the insured dies. You can buy burial insurance to cover your funeral, burial, and final expenses, especially if you don’t have a funeral budget.</p>
+<p>Burial insurance is designed to cover the insured person’s life. Cash benefit will be given to the beneficiary when the insured dies. You can buy burial insurance to cover your funeral, burial, and final expenses, especially if you don’t have a funeral budget.</p>
 
 <p><strong>Burial insurance can
 cover the cost of the following:</strong></p>

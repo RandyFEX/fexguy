@@ -409,7 +409,7 @@ sidebar: true
 
 <p>Another misleading tactic is “guaranteed acceptance for everyone.”</p>
 
-<p>These plans sound safe, but usually come with a two-year waiting period and higher premiums. For diabetics with controlled conditions, this is unnecessary and costly.</p>
+<p>These plans sound safe, but come with a two-year waiting period and higher premiums. For diabetics with controlled conditions, this is unnecessary and costly.</p>
 
 <p>Some ads claim to include “free benefits” such as discounts, gift cards, or memberships.</p>
 

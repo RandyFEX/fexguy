@@ -112,7 +112,7 @@ sidebar: true
 
 <p>If you’ve been diagnosed, received treatment, hospitalized, or recommended counseling or treatment within the last 2 years, guaranteed issue burial insurance is usually your option.</p>
 
-<p>It asks no health questions. The full death benefit for natural death starts after a two-year waiting period, and a natural death before then generally refunds your premiums plus the interest the contract specifies.</p>
+<p>It asks no health questions. The full death benefit for natural death starts after a two-year waiting period, and a natural death before then refunds your premiums plus the interest the contract specifies.</p>
 
 <p><strong>Best Option:</strong> Guaranteed issue burial insurance</p>
 

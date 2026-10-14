@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Organ Transplant Burial Insurance</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Organ transplant history makes life insurance approval much harder<br>• Most companies generally require guaranteed issue plans<br>• Recent transplants often lead to declines or waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Severe cases may only qualify for small burial policies<br>• Not comparing companies can leave you overpaying for limited options</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Organ transplant history makes life insurance approval much harder<br>• Most companies require guaranteed issue plans<br>• Recent transplants often lead to declines or waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Severe cases may only qualify for small burial policies<br>• Not comparing companies can leave you overpaying for limited options</p>
 
 <p>Burial insurance with an organ transplant depends heavily on timing and stability. Insurance companies look at the type of organ, how long it’s been since surgery, and whether your condition is stable with no rejection issues. Burial insurance, a type of whole life insurance, is often the most realistic option early on because it has easier approval requirements. If your transplant was more than five years ago and you’ve been stable, you may qualify for better coverage with certain companies in some states. If not, expect higher costs or guaranteed issue plans with waiting periods. The biggest factor is how your body has responded since the transplant.</p>
 

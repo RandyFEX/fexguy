@@ -485,7 +485,7 @@ sarcoidosis?</li>
 
 <p><br><strong>Is there a waiting period for life insurance with sarcoidosis?</strong></p>
 
-<p>No, often there is generally no waiting period for life insurance with sarcoidosis in its early stages.</p>
+<p>No, often there is no waiting period for life insurance with sarcoidosis in its early stages.</p>
 
 <p><br><strong>What are my chances of being approved for life insurance with sarcoidosis?</strong></p>
 

@@ -216,7 +216,7 @@ sidebar: true
 
 <p><strong>GENDER</strong></p>
 
-<p>Being male or female is one important factor determining your coverage’s cost. Men generally pay more than women. The reason is simple if you’re wondering why men need to pay more than women.</p>
+<p>Being male or female is one important factor determining your coverage’s cost. With everything else equal, men pay more than women. The reason is simple if you’re wondering why men need to pay more than women.</p>
 
 <p>Women, on average, live much longer than men do. Therefore, women will pay longer than men, and why do they pay less on life insurance.</p>
 

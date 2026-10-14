@@ -65,7 +65,7 @@ sidebar: true
 
 <p>Lincoln Heritage only sells its own life insurance products. So, if you qualify for a better policy with better pricing, they won’t tell you about it.</p>
 
-<p>The truth is, roughly 97% of people qualify for first-day coverage with the <a href="/licenses/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>. That’s because the Final Expense Guy is an independent broker who can compare multiple carriers for you all at the same time.</p>
+<p>In my experience, around 97% of the people I help at the <a href="/licenses/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a> qualify for first-day coverage. That’s because the Final Expense Guy is an independent broker who can compare multiple carriers for you all at the same time.</p>
 
 <h3>
 ⚠️

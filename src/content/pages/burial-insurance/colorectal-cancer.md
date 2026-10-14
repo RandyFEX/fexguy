@@ -273,7 +273,7 @@ sidebar: true
 
 <h3>How do insurance companies define “remission” for colorectal cancer?</h3>
 
-<p>Insurers define remission as the period during which a patient has completed all active treatments – including surgery, chemotherapy, and radiation – and shows no evidence of disease. Regular follow-up colonoscopies and blood tests are considered “surveillance” rather than active treatment and do not usually count against your remission time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your initial diagnosis.</p>
+<p>Insurers define remission as the period during which a patient has completed all active treatments – including surgery, chemotherapy, and radiation – and shows no evidence of disease. Regular follow-up colonoscopies and blood tests are considered “surveillance” rather than active treatment and do not usually count against your cancer-free time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your initial diagnosis.</p>
 
 <h3>Can I get burial insurance if I have a permanent ostomy bag?</h3>
 

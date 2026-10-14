@@ -264,7 +264,7 @@ sidebar: true
 
 <h3>How do burial insurance companies define “remission” for bladder cancer?</h3>
 
-<p>Insurers define remission as the period during which a patient has completed all active treatments – including surgery, chemotherapy, and radiation – and shows no evidence of disease. Regular surveillance visits, such as follow-up cystoscopies every few months, are considered “monitoring” rather than active treatment and do not usually count against your remission time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your original diagnosis.</p>
+<p>Insurers define remission as the period during which a patient has completed all active treatments – including surgery, chemotherapy, and radiation – and shows no evidence of disease. Regular surveillance visits, such as follow-up cystoscopies every few months, are considered “monitoring” rather than active treatment and do not usually count against your cancer-free time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your original diagnosis.</p>
 
 <h3>Does hydronephrosis from bladder cancer affect burial insurance eligibility?</h3>
 

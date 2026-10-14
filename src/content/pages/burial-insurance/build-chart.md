@@ -272,7 +272,7 @@ The agent who quoted preferred
 
 <p>Someone moderately overweight but otherwise healthy can usually still get first-day coverage through a simplified issue plan.</p>
 
-<p>The key is never to accept a graded or guaranteed issue policy until a broker checks every carrier’s chart. 97% of the people who apply at the Final Expense Guy qualify for 1st-day coverage and the lowest rates.</p>
+<p>The key is never to accept a graded or guaranteed issue policy until a broker checks every carrier’s chart. In my experience, around 97% of the people I help qualify for first-day coverage.</p>
 
 <h3>
 💡

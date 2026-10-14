@@ -351,7 +351,7 @@ sidebar: true
 
 <p><br><strong>Do life insurance companies consider felons as high-risk?</strong></p>
 
-<p>Generally speaking, felons may be considered high-risk applicants by some companies, but many providers offer coverage to people with criminal records.</p>
+<p>Felons may be considered high-risk applicants by some companies, but many providers offer coverage to people with criminal records.</p>
 
 <p><br><strong>Do life insurance companies care about your criminal records?</strong></p>
 

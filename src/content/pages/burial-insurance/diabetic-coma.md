@@ -107,7 +107,7 @@ sidebar: true
 
 <h2>Sample diabetic coma rate snapshot for $10,000 coverage</h2>
 
-<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate how long you will live. Women usually pay lower rates than men because they statistically have a longer life expectancy.</p>
+<p>Age and gender directly influence the cost of burial insurance premiums by helping companies estimate how long you will live. With everything else equal, women pay lower rates than men because they statistically have a longer life expectancy.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

@@ -266,7 +266,7 @@ sidebar: true
 
 <p><br><strong>What is a waiting period?</strong></p>
 
-<p>A waiting period is a specified length of time that must pass before coverage under an insurance policy begins. This period is usually two years; we do not recommend these plans.</p>
+<p>A waiting period is a specified length of time that must pass before coverage under an insurance policy begins. With guaranteed acceptance plans, this period is two years for natural death; we do not recommend these plans.</p>
 
 <p><br><strong>What are the benefits of first-day coverage insurance?</strong></p>
 
@@ -282,7 +282,7 @@ sidebar: true
 
 <p><br><strong>What is meant by the waiting period?</strong></p>
 
-<p>The waiting period is when a policy is issued and when coverage under the policy begins. This period is usually two years; we do not recommend these plans for the people we help.</p>
+<p>The waiting period is when a policy is issued and when coverage under the policy begins. With guaranteed acceptance plans, this period is two years for natural death; we do not recommend these plans for the people we help.</p>
 
 <p><br><strong>What are the rules for first-day coverage life insurance?</strong></p>
 

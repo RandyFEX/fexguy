@@ -31,7 +31,7 @@ sidebar: true
 
 <p>The first is a simplified issue, where you answer a few health questions but don’t take a medical exam.</p>
 
-<p>The second option is guaranteed issue, which requires no health questions but usually comes with a waiting period before full benefits take effect.</p>
+<p>The second option is guaranteed issue, which requires no health questions but comes with a two-year waiting period before the full benefit is paid for natural death.</p>
 
 <p>For healthy or moderately healthy widows, simplified issue plans are almost always the better choice. They cost less and often include first-day coverage, meaning the policy pays in full from the first day.</p>
 
@@ -208,7 +208,7 @@ sidebar: true
 
 <p>This process avoids unnecessary denials and puts applicants directly into the best-fit plan.</p>
 
-<p>At least 97% of applicants qualify for first-day coverage when properly matched, based on internal industry underwriting data.</p>
+<p>In my experience, around 97% of the people I help qualify for first-day coverage.</p>
 
 <p>That’s why it’s critical to talk with a licensed professional like the Final Expense Guy who can access multiple carriers instead of relying on a single brand.</p>
 

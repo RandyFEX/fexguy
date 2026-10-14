@@ -107,7 +107,7 @@ health questions that you may see on the application:</strong></p>
 
 <p>The majority of applicants can answer no to these health questions and qualify for simplified issue burial insurance with coverage from the very first day. </p>
 
-<p>Simplified issue burial insurance is generally cheaper and allows for higher death benefits.  It’s burial insurance with no waiting period. </p>
+<p>If you qualify, simplified issue burial insurance costs less than guaranteed issue for the same coverage amount.  It’s burial insurance with no waiting period. </p>
 
 <p><strong>How Simplified Issue Burial Insurance Companies Determine Your Eligibility</strong></p>
 

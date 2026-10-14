@@ -297,7 +297,7 @@ sidebar: true
 
 <p id="ef27c248-2a46-4c83-8492-66666bab1040"><br><strong>What information do I need to provide on an insurance application?</strong></p>
 
-<p id="ef27c248-2a46-4c83-8492-66666bab1040">When completing an insurance application, you will generally be asked to provide personal information such as your name, address, and date of birth. You will also be asked questions about your health history, family, and any current health problems or conditions. In some cases, you may also be asked to provide information about your lifestyle, such as whether you smoke or have any risky hobbies.</p>
+<p id="ef27c248-2a46-4c83-8492-66666bab1040">When completing an insurance application, you will be asked to provide personal information such as your name, address, and date of birth. You will also be asked questions about your health history, family, and any current health problems or conditions. In some cases, you may also be asked to provide information about your lifestyle, such as whether you smoke or have any risky hobbies.</p>
 
 <p id="ef27c248-2a46-4c83-8492-66666bab1040"><br><strong>Who can apply for burial insurance?</strong></p>
 

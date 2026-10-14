@@ -110,7 +110,7 @@ sidebar: true
 
 <p>Monthly premiums for $10,000 of coverage increase as you get older because the statistical risk of a claim rises with each passing year.</p>
 
-<p>Rates vary by age and gender because women statistically live longer than men, which is why female applicants usually pay less than male applicants.</p>
+<p>Rates vary by age and gender because women statistically live longer than men, which is why female applicants pay less than male applicants, with everything else equal.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

@@ -453,7 +453,7 @@ premiums you’ve paid plus 10% interest.</p>
 
 <p><br><strong>What is the cost of burial insurance for a blind person?</strong></p>
 
-<p>The cost of burial insurance for a blind person will depend on several factors, including the person’s age, health, and coverage amount. Generally speaking. However, burial insurance policies are relatively affordable.</p>
+<p>The cost of burial insurance for a blind person will depend on several factors, including the person’s age, health, and coverage amount. However, burial insurance policies are relatively affordable.</p>
 
 <p><br><strong>Is there a waiting period for burial insurance for a blind person?</strong></p>
 

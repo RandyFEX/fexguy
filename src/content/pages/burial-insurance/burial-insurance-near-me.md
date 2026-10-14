@@ -216,7 +216,7 @@ burial insurance plan.</p>
 
 <p><strong>GENDER</strong></p>
 
-<p>Being female or male is one crucial factor determining your premium amount. Men generally pay more than women because women live much longer than men. Therefore, women will pay longer than men, which is why they pay less on life insurance.</p>
+<p>Being female or male is one crucial factor determining your premium amount. With everything else equal, men pay more than women because women live much longer than men. Therefore, women will pay longer than men, which is why they pay less on life insurance.</p>
 
 <p><strong>FACE AMOUNT</strong></p>
 

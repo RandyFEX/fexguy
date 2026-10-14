@@ -121,7 +121,7 @@ sidebar: true
 
 <h2>Sample heart attack rate snapshot for $10,000 coverage</h2>
 
-<p>Your age and sex are the primary factors used to set burial insurance premiums, as insurers use these details to estimate how long you will live. Women usually pay less for their plans because they tend to live longer than men, which makes them a lower risk to the insurance company. It is like a longevity discount that men simply do not get.</p>
+<p>Your age and sex are the primary factors used to set burial insurance premiums, as insurers use these details to estimate how long you will live. With everything else equal, women pay less for their plans because they tend to live longer than men, which makes them a lower risk to the insurance company. It is like a longevity discount that men simply do not get.</p>
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 

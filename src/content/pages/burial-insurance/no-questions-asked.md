@@ -201,7 +201,7 @@ sidebar: true
 
 <h2 id="is-there-a-no-waiting-period-guaranteed-issue"><strong>Is there guaranteed acceptance life insurance with no waiting period?</strong></h2>
 
-<p>No. All guaranteed issue life insurance policies come with at least a 2-year waiting period.</p>
+<p>No. Guaranteed issue life insurance policies come with a two-year waiting period for natural death.</p>
 
 <p>We only recommend buying guaranteed issue life insurance if you have severe medical conditions because this is the only insurance coverage you will qualify for. Even if you have a terminal illness and are expected to expire in the next 24 months, these life insurance options are best for you.</p>
 

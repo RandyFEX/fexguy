@@ -63,7 +63,7 @@ Here's the basic idea:
 - What's left builds cash value.
 - The company credits interest to the cash value using a formula tied to a stock market index, such as the S&P 500.
 
-You generally aren't invested in the index. It's only used to figure out how much interest the company credits.
+You aren't invested directly in the index. It's only used to figure out how much interest the company credits.
 
 The policy's crediting terms limit how much of the index gain you get. Depending on the policy, these can include:
 
@@ -117,7 +117,7 @@ This is general information, not tax advice. Tax results depend on your policy a
 These strategies depend on borrowing from the policy for years while it stays in force. Here's what that means.
 
 - **Loans charge interest.** If you don't pay the interest, it may be added to the loan balance.
-- **Loans reduce what your family gets.** An unpaid loan is generally subtracted from the death benefit.
+- **Loans reduce what your family gets.** An unpaid loan is subtracted from the death benefit.
 - **Loans can cause a lapse.** If the loan and the policy charges grow larger than the cash value can support, the policy can lapse unless you pay more in. A lapse ends your coverage, and it can also create a tax bill, as explained above.
 - **Surrender can cost you.** Many policies have surrender charges in the early years. Check your contract to see how much you'd get back if you cashed it in.
 

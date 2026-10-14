@@ -24,7 +24,7 @@ sidebar: true
 <li><strong>Active cases require waiting periods:</strong> Because any cancer is a risk, carriers typically require a two-year waiting period plan unless you have been cancer-free 1-2 years.</li>
 <li><strong>One insurance company provides a unique shortcut:</strong> Most carriers require a 24-month wait, but one insurance company may offer first-day coverage much sooner if your doctor officially declares your cancer cured.</li>
 <li><strong>Spreading metastatic cancer limits your choices:</strong> If your sarcoma ever spreads to the lungs or other organs, you will likely be best served with a guaranteed-issue plan with a 2-year waiting period.</li>
-<li><strong>Ongoing checkups are usually not a decline:</strong> Attending regular follow-up scans or appointments is generally not counted as “active treatment” by most final expense companies.</li>
+<li><strong>Ongoing checkups are usually not a decline:</strong> Attending regular follow-up scans or appointments is not counted as “active treatment” by most final expense companies.</li>
 </ul>
 
 <p>I am constantly searching for insurance carriers that provide low-cost protection for families dealing with sarcoma. Because of this, most people I help will have no trouble qualifying for and affording an instant approval policy.</p>

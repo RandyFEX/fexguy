@@ -113,7 +113,7 @@ sidebar: true
 
 <h2><strong>Sample <strong><strong>diabetic amputation</strong></strong> rate snapshot for $10,000 coverage</strong></h2>
 
-<p>Age and gender directly influence burial insurance premiums. Women usually pay lower rates because they have a longer life expectancy than men.. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
+<p>Age and gender directly influence burial insurance premiums. With everything else equal, women pay lower rates because they have a longer life expectancy than men. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
 <h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
 
