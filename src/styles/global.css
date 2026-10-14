@@ -984,6 +984,26 @@ a:hover {
   line-height: 1.3;
   text-wrap: balance;
 }
+/* Randy's headshot under his introduction: a circle, 105px on phones and
+   120px from tablet width up (public/images/randy/, 240px source). */
+.roku__photo {
+  margin-block: var(--space-6);
+  text-align: center;
+}
+.roku .roku__photo img {
+  display: inline-block;
+  width: 105px;
+  height: 105px;
+  margin: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (min-width: 48rem) {
+  .roku .roku__photo img {
+    width: 120px;
+    height: 120px;
+  }
+}
 .roku__cta {
   margin-block: var(--space-8);
   text-align: center;

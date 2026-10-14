@@ -22,6 +22,8 @@ phone: "ctv"
 
 <p>I’ve been helping people with life insurance for over 11 years, and I’ve helped more than 10,000 people explore their options and decide whether life insurance makes sense for their situation.</p>
 
+<p class="roku__photo"><picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture></p>
+
 <p><strong>My job isn’t to talk you into buying insurance. It’s to help you make an informed decision, even if that decision is no.</strong></p>
 
 <div class="roku__cta">
