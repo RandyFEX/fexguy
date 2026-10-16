@@ -355,7 +355,7 @@ sidebar: true
 
 <p>First-day coverage means what it says: your policy pays the full death benefit from the very first day it takes effect. No testing. No waiting. No excuses.</p>
 
-<p>In my experience, around 97% of the people I help qualify for first-day coverage when they answer basic health questions truthfully. These are called simplified-issue whole life policies. They’re designed to give permanent protection with no retesting or future underwriting.</p>
+<p>In my experience, the vast majority of the people I help qualify for first-day coverage when they answer basic health questions truthfully. These are called simplified-issue whole life policies. They’re designed to give permanent protection with no retesting or future underwriting.</p>
 
 <p>Americo’s plan is complex, conditional, and more expensive for almost every other company.</p>
 

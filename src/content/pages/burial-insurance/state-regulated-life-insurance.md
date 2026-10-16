@@ -244,7 +244,7 @@ After a doing a quick health review, I was able to place her into a $10,000 whol
 <li>Simplified issue policies ask some basic health questions but provide first-day coverage.</li>
 <li>Most people qualify for these plans.</li>
 <li>They cost less than guaranteed-issue policies and provide immediate protection once the first payment is made.</li>
-<li>In my experience, around 97% of the people I help qualify for first-day coverage.</li>
+<li>In my experience, the vast majority of the people I help qualify for first-day coverage.</li>
 </ul>
 
 <hr>
@@ -383,7 +383,7 @@ The complaint file that wouldn’t stop growing
 <ol>
 <li><strong>Preferred (Healthy Applicants</strong>) – Immediate coverage at the lowest rates for the most common health conditions or medications that are prescribed</li>
 <li><strong>Standard (More significant Health Conditions) </strong>– Immediate coverage with short health questions, no exam, and very affordable rates.</li>
-<li><strong>Guaranteed Issue (Severe Conditions Only)</strong> – Two-year waiting period and the highest cost.<br>Most seniors qualify for one of the first two categories when they apply through an honest broker, rather than a call center. In my experience, around 97% of the people I help qualify for first-day coverage.</li>
+<li><strong>Guaranteed Issue (Severe Conditions Only)</strong> – Two-year waiting period and the highest cost.<br>Most seniors qualify for one of the first two categories when they apply through an honest broker, rather than a call center. In my experience, the vast majority of the people I help qualify for first-day coverage.</li>
 </ol>
 
 <p>Here’s how these underwriting types compare:</p>

@@ -497,7 +497,7 @@ sidebar: true
 
 <p>That’s where American Amicable falls short. Their stricter underwriting results in higher pricing and, even worse, 2-year waiting-period plans that cost more and pay less.</p>
 
-<p>The truth is, in my experience, around 97% of the people I help qualify for first-day coverage. A skilled broker like the Final Expense Guy knows how to match health conditions to the right carrier.</p>
+<p>The truth is, in my experience, the vast majority of the people I help qualify for first-day coverage. A skilled broker like the Final Expense Guy knows how to match health conditions to the right carrier.</p>
 
 <p>American Amicable should never be your first choice unless every other option is off the table.</p>
 

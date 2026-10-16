@@ -393,7 +393,7 @@ The “State-Regulated” mix-up
 
 <p><strong>Is Lincoln Heritage Funeral Advantage legit?</strong></p>
 
-<p>Yes, Lincoln Heritage is a real company that’s been around for decades, but that doesn’t make their policies a good deal.<br>Lincoln Heritage’s modified plans can limit the amount paid for a natural death during the waiting period, so buyers should review the benefit schedule before purchasing. In my experience, around 97% of the people I help qualify for first-day coverage. So yes, it’s legitimate, but you’re paying more money for less protection.</p>
+<p>Yes, Lincoln Heritage is a real company that’s been around for decades, but that doesn’t make their policies a good deal.<br>Lincoln Heritage’s modified plans can limit the amount paid for a natural death during the waiting period, so buyers should review the benefit schedule before purchasing. In my experience, the vast majority of the people I help qualify for first-day coverage. So yes, it’s legitimate, but you’re paying more money for less protection.</p>
 
 <p><strong>How much is Lincoln Heritage Funeral Advantage?</strong></p>
 
