@@ -208,7 +208,7 @@ sidebar: true
 
 <p>This process avoids unnecessary denials and puts applicants directly into the best-fit plan.</p>
 
-<p>In my experience, around 97% of the people I help qualify for first-day coverage.</p>
+<p>In my experience, the vast majority of the people I help qualify for first-day coverage.</p>
 
 <p>That’s why it’s critical to talk with a licensed professional like the Final Expense Guy who can access multiple carriers instead of relying on a single brand.</p>
 

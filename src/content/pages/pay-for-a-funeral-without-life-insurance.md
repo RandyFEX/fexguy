@@ -57,7 +57,7 @@ sidebar: true
 
 <p>Simplified issue whole life plans use short health questionnaires instead of medical exams, so approval often happens within minutes. There are no waiting periods for most applicants.</p>
 
-<p>In my experience, around 97% of the people I help qualify for first-day coverage, meaning the full death benefit is available as soon as the policy is active.</p>
+<p>In my experience, the vast majority of the people I help qualify for first-day coverage, meaning the full death benefit is available as soon as the policy is active.</p>
 
 <p>Plans that advertise “guaranteed acceptance” sound tempting, but they have a MANDATORY 2-year waiting period. If the insured passes away during that time, the family receives only a refund of premiums plus interest instead of the full benefit.</p>
 
