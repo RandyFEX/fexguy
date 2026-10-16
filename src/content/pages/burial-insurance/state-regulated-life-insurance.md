@@ -487,67 +487,6 @@ What happens when you respond to a state-regulated insurance mailer?
 
 <p>Then pricing gets compared across real scenarios. Same age. Same health. Same coverage amount. If a company consistently costs more without offering better approval odds or benefits, it gets flagged as a bad deal.</p>
 
-<table>
-<thead>
-<tr>
-<th>$10,000 Coverage &amp; Company</th>
-<th>Female<br>50 y/o</th>
-<th>Female<br>60 y/o</th>
-<th>Female<br>70 y/o</th>
-<th>Male<br>50 y/o</th>
-<th>Male<br>60 y/o</th>
-<th>Male<br>70 y/o</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FEXGUY #1 Carrier</td>
-<td>$21</td>
-<td>$32</td>
-<td>$52</td>
-<td>$27</td>
-<td>$41</td>
-<td>$69</td>
-</tr>
-<tr>
-<td>AETNA – Accendo<br>CVS Health</td>
-<td>$27</td>
-<td>$40</td>
-<td>$58</td>
-<td>$31</td>
-<td>$51</td>
-<td>$73</td>
-</tr>
-<tr>
-<td>American Amicable</td>
-<td>$26</td>
-<td>$38</td>
-<td>$60</td>
-<td>$31</td>
-<td>$47</td>
-<td>$78</td>
-</tr>
-<tr>
-<td>CICA Life</td>
-<td>$31</td>
-<td>$49</td>
-<td>$83</td>
-<td>$33</td>
-<td>$55</td>
-<td>$102</td>
-</tr>
-<tr>
-<td>Gerber Life</td>
-<td>$34</td>
-<td>$51</td>
-<td>$75</td>
-<td>$44</td>
-<td>$63</td>
-<td>$99</td>
-</tr>
-</tbody>
-</table>
-
 <p>Complaint history matters too. The NAIC publishes complaint data for insurance companies. One-off complaints can happen everywhere. Repeated issues with claims, billing, or policy changes don’t get ignored.</p>
 
 <p>Finally, real-world outcomes count. Over the years, I’ve helped thousands of people get approved for life insurance, and I’ve seen firsthand how differently insurance companies handle health conditions, applications, and underwriting decisions. If a company looks good on paper but causes problems after the sale, it doesn’t get my recommendation.</p>
@@ -587,37 +526,3 @@ What happens when you respond to a state-regulated insurance mailer?
 <p><b>Is life insurance regulated by the state or the federal government?</b></p>
 
 <p>Each state regulates life insurance through its own insurance department.<br>Every state has its own Department of Insurance that licenses companies and agents. That’s why rules and prices can differ from state to state. “State regulated” just means the policy is legal and approved to be sold in the state where you live.</p>
-
-<p><strong>How much does final expense life insurance cost?</strong></p>
-
-<p>The cost depends on your age, health, coverage amount, and the state you live in. Different insurance companies can charge very different rates for the same coverage, so it pays to compare your options before buying.</p>
-
-<table>
-<thead>
-<tr>
-<th>AGE</th>
-<th>$10,000</th>
-<th>$15,000</th>
-<th>$20,000</th>
-<th>$25,000</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>50</td><td>F: $21.78<br>M: $27.35</td><td>F: $31.37<br>M: $39.73</td><td>F: $40.97<br>M: $52.12</td><td>F: $50.57<br>M: $64.50</td></tr>
-<tr><td>52</td><td>F: $24.52<br>M: $29.26</td><td>F: $35.49<br>M: $42.60</td><td>F: $46.46<br>M: $55.93</td><td>F: $57.43<br>M: $69.27</td></tr>
-<tr><td>54</td><td>F: $25.62<br>M: $31.47</td><td>F: $37.14<br>M: $45.91</td><td>F: $48.66<br>M: $60.36</td><td>F: $60.18<br>M: $74.80</td></tr>
-<tr><td>56</td><td>F: $27.11<br>M: $34.25</td><td>F: $39.37<br>M: $50.08</td><td>F: $51.63<br>M: $65.91</td><td>F: $63.90<br>M: $81.74</td></tr>
-<tr><td>58</td><td>F: $29.51<br>M: $37.69</td><td>F: $42.97<br>M: $55.24</td><td>F: $56.43<br>M: $72.79</td><td>F: $69.90<br>M: $90.34</td></tr>
-<tr><td>60</td><td>F: $32.60<br>M: $41.74</td><td>F: $47.61<br>M: $61.31</td><td>F: $62.63<br>M: $80.89</td><td>F: $77.64<br>M: $100.47</td></tr>
-<tr><td>62</td><td>F: $36.02<br>M: $46.28</td><td>F: $52.74<br>M: $68.13</td><td>F: $69.45<br>M: $89.97</td><td>F: $86.17<br>M: $111.82</td></tr>
-<tr><td>64</td><td>F: $39.51<br>M: $51.17</td><td>F: $57.97<br>M: $75.47</td><td>F: $76.44<br>M: $99.76</td><td>F: $94.90<br>M: $124.06</td></tr>
-<tr><td>66</td><td>F: $43.10<br>M: $56.43</td><td>F: $63.37<br>M: $83.36</td><td>F: $83.63<br>M: $110.29</td><td>F: $103.89<br>M: $137.21</td></tr>
-<tr><td>68</td><td>F: $47.11<br>M: $62.29</td><td>F: $69.38<br>M: $92.15</td><td>F: $91.64<br>M: $122.00</td><td>F: $113.91<br>M: $151.86</td></tr>
-<tr><td>70</td><td>F: $52.03<br>M: $69.23</td><td>F: $76.76<br>M: $102.56</td><td>F: $101.48<br>M: $135.88</td><td>F: $126.21<br>M: $169.21</td></tr>
-<tr><td>72</td><td>F: $58.40<br>M: $78.01</td><td>F: $86.31<br>M: $115.73</td><td>F: $114.23<br>M: $153.44</td><td>F: $142.14<br>M: $191.16</td></tr>
-<tr><td>74</td><td>F: $66.68<br>M: $89.53</td><td>F: $98.74<br>M: $133.00</td><td>F: $130.79<br>M: $176.47</td><td>F: $162.84<br>M: $219.95</td></tr>
-<tr><td>76</td><td>F: $77.15<br>M: $104.59</td><td>F: $114.44<br>M: $155.60</td><td>F: $151.72<br>M: $206.61</td><td>F: $189.01<br>M: $257.61</td></tr>
-<tr><td>78</td><td>F: $89.87<br>M: $123.57</td><td>F: $133.52<br>M: $184.07</td><td>F: $177.16<br>M: $244.57</td><td>F: $220.81<br>M: $305.06</td></tr>
-<tr><td>80</td><td>F: $104.83<br>M: $145.79</td><td>F: $155.96<br>M: $217.39</td><td>F: $207.09<br>M: $288.99</td><td>F: $258.22<br>M: $360.60</td></tr>
-</tbody>
-</table>
