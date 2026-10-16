@@ -523,6 +523,6 @@ What happens when you respond to a state-regulated insurance mailer?
 
 <p>Regulated life insurance is life insurance sold under state insurance laws covering policy terms, pricing practices and company finances.<br>The goal is to make sure the company operates in a safe and fair manner. All real life insurance is regulated this way. The government doesn’t sell it; it just makes sure companies do what they promise.</p>
 
-<p><b>Is life insurance regulated by the state or the federal government?</b></p>
+<p><strong>Is life insurance regulated by the state or the federal government?</strong></p>
 
 <p>Each state regulates life insurance through its own insurance department.<br>Every state has its own Department of Insurance that licenses companies and agents. That’s why rules and prices can differ from state to state. “State regulated” just means the policy is legal and approved to be sold in the state where you live.</p>
