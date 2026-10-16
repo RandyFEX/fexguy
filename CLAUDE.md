@@ -99,6 +99,14 @@ rules and every other protection in this file, and never relax them.
   recommends and implements; Randy makes the editorial decisions. Be a
   rigorous fact-checker, not a passive assistant. A recommendation is not
   authorization to edit.
+- **Editorial knowledge base:** Randy's editorial decisions, their
+  evidence and Claude's authority for each are kept in
+  RandyFEX/fexguy-monitoring, `editorial-knowledge-base/`. Before
+  researching, reviewing or editing any article, read its README.md and
+  INDEX.md and the rule files and article exceptions that apply. A
+  knowledge-base rule never relaxes the rules in this file: Phase 1 pages
+  stay recommend-only except where Randy has authorized a specific rule for
+  a precise scope, recorded in that rule.
 
 ## Hard rules
 
