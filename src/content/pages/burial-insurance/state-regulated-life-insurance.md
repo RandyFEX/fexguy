@@ -385,7 +385,7 @@ After doing a quick health review, I was able to place her into a $10,000 whole 
 
 <h2><strong>Complaints, investigations, and consumer warnings</strong></h2>
 
-<p>Regulators and consumer groups have flagged these mailers for confusing people because they imply misleading state approval or backing, and several state insurance regulators have issued warnings or taken action against deceptive life insurance marketing.</p>
+<p>Regulators have flagged these mailers for confusing people because they imply misleading state approval or backing, and several state insurance regulators have issued warnings or taken action against deceptive life insurance marketing.</p>
 
 <p>State insurance regulators have both warned consumers about these mailers and taken action against companies that sent them. The Texas Department of Insurance puts it plainly in its <a href="https://www.tdi.texas.gov/pubs/consumer/cb044.html" target="_blank" rel="noreferrer noopener">consumer fraud guide</a>: “The government doesn’t sell insurance. Agents who say they’re with the government are breaking the law.” Here’s what regulators found about specific mailers:</p>
 
