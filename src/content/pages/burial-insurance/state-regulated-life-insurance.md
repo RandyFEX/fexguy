@@ -153,7 +153,7 @@ After reviewing her health, I helped her get a $15,000 whole life policy with im
 
 <p>These marketers often try to make these letters look more trustworthy by using patriotic colors, government-style fonts, and meaningless program codes, but you’re not being pre-approved for anything. You’re being targeted for what most people would agree is a substandard and very expensive life insurance plan.</p>
 
-<h3><strong>What happens after you respond</strong></h3>
+<h3><strong>Sales calls and policy offers after you reply</strong></h3>
 
 <p>Responding to these offers typically results in multiple sales contacts promoting high-cost policies with delayed benefits.</p>
 
@@ -385,13 +385,13 @@ After doing a quick health review, I was able to place her into a $10,000 whole 
 
 <h2><strong>Complaints, investigations, and consumer warnings</strong></h2>
 
-<p>Regulators have flagged these mailers for confusing people because they imply misleading state approval or backing, and several state insurance regulators have issued warnings or taken action against deceptive life insurance marketing.</p>
+<p>Several state insurance regulators have flagged these mailers for confusing people because they imply misleading state approval or backing, and some have issued warnings or taken action against deceptive life insurance marketing.</p>
 
 <p>State insurance regulators have both warned consumers about these mailers and taken action against companies that sent them. The Texas Department of Insurance puts it plainly in its <a href="https://www.tdi.texas.gov/pubs/consumer/cb044.html" target="_blank" rel="noreferrer noopener">consumer fraud guide</a>: “The government doesn’t sell insurance. Agents who say they’re with the government are breaking the law.” Here’s what regulators found about specific mailers:</p>
 
 <ul>
 <li><strong>Washington, D.C. (2020), consumer warning.</strong> The D.C. insurance department (DISB) <a href="https://disb.dc.gov/page/disb-warns-district-residents-deceptive-mailers-selling-funeral-insurance-policies" target="_blank" rel="noreferrer noopener">warned residents</a> about a mailer titled “F-1 2020 Benefit Information for District of Columbia Residents Only.” DISB said the mailer was not from the District government and was not sanctioned by DISB, and that the information people send back may be used by, or sold to, insurance companies so their agents can contact them.</li>
-<li><strong>Iowa (2020), enforcement action.</strong> The <a href="https://iid.iowa.gov/press-release/2020-12-28/georgia-mailers-sent-seniors" target="_blank" rel="noreferrer noopener">Iowa Insurance Division</a> took action against two Georgia companies, Direct Mail Processing, LLC and Rehg Data Assets, Inc., over official-looking insurance solicitation mailers sent to older Iowans. One mailer referred to a “state-regulated program” for final expenses. People who returned a card got a sales call from an insurance salesperson, and the mailer company was paid for each lead. The companies agreed to a $40,000 settlement and denied violating Iowa’s Consumer Fraud Act.</li>
+<li><strong>Iowa (2020), enforcement action.</strong> Two Georgia companies, Direct Mail Processing, LLC and Rehg Data Assets, Inc., sent official-looking insurance solicitation mailers to older Iowans. One mailer referred to a “state-regulated program” for final expenses. People who returned a card got a sales call from an insurance salesperson, and the mailer company was paid for each lead. The <a href="https://iid.iowa.gov/press-release/2020-12-28/georgia-mailers-sent-seniors" target="_blank" rel="noreferrer noopener">Iowa Insurance Division</a> issued a cease-and-desist order against the operation. Separately, the Iowa Attorney General’s Office reached a consent judgment with the two companies, which agreed to pay the state $40,000 and denied violating Iowa’s Consumer Fraud Act.</li>
 <li><strong>Nebraska (2022), consumer education.</strong> In a <a href="https://doi.nebraska.gov/sites/default/files/doc/NE%20Department%20of%20Insurance%20-%20Misleading%20Marketing_0.pdf" target="_blank" rel="noreferrer noopener">presentation on misleading insurance marketing</a>, the Nebraska Department of Insurance showed a T-2 mailer headed “2020 BENEFIT INFORMATION FOR NEBRASKA CITIZENS ONLY” and explained the lead-generation process behind it: the information people send back can be sold to insurance agents.</li>
 </ul>
 
