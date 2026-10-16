@@ -1110,7 +1110,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/state-regulated-life-insurance/': {
     section: 'burialInsurance',
     quickAnswer:
-      'No, “state-regulated life insurance” isn’t a government program. It only means a private policy follows your state’s insurance laws, which every legitimate life insurance policy already does. Mailers and ads use the phrase to sound official and collect your information to sell to insurance agents. Most of these offers lead to guaranteed-acceptance policies with a two-year waiting period, while first-day coverage plans pay the full death benefit right away.',
+      'These mailers generally advertise private life insurance, not a special government benefit. The companies sending them may sell your response to insurance agents, and the coverage you’re offered depends on the agent, the available products, and your health. Before buying, compare your options. You may qualify for first-day coverage instead of a policy with a waiting period.',
   },
   // Rewritten T2/T-2 mailer guide (October 2026; Randy's sourced research).
   '/t2-life-insurance/': {
