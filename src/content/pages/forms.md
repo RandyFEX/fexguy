@@ -10,7 +10,7 @@ search: false
 sidebar: true
 ---
 
-<h1>POLICY SUPPORT</h1>
+<h1>Policy Support</h1>
 
 <p>Click the company name to be directed to their help or contact page for policy updates, changes of payment, change of beneficiary forms, or policy support.</p>
 

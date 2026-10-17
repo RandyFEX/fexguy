@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance if you Need Help with ADL’s (Activities of Daily Living)</h1>
+<h1>Burial Insurance If You Need Help with ADL’s (Activities of Daily Living)</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help with ADLs signals high risk to insurance companies<br>• Most policies decline you or restrict coverage if you need assistance<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• You’ll pay higher premiums for smaller, limited coverage amounts<br>• Waiting to apply only makes your options worse and more expensive<br>• Not understanding ADLs can lead to buying the wrong policy</p>
 

@@ -250,9 +250,11 @@ a:hover {
 /* Article heading standard (Randy, October 2026): H2-H6 in the page body
    display in ALL CAPS; sizes, weights and spacing are unchanged. The source
    text stays as written (sentence case), so titles, metadata, the "In This
-   Article" list and search keep it. The H1 is never transformed. Landing
-   pages are not articles and keep their own headings. */
-:where(.page:not(.page--landing), .art-main) .prose :is(h2, h3, h4, h5, h6) {
+   Article" list and search keep it. The H1 is never transformed. It applies
+   only to article content: the article template (.art-main) and the content
+   pages listed in src/config/content-articles.ts (.page--article). About,
+   legal, form and other utility pages keep their own headings. */
+:where(.page--article, .art-main) .prose :is(h2, h3, h4, h5, h6) {
   text-transform: uppercase;
   overflow-wrap: break-word;
 }
