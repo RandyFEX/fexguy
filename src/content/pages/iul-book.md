@@ -22,9 +22,35 @@ sidebar: true
 
 <p>IUL Book Chapters:</p>
 
-<p><strong>1. <a href="#Chapter-1:-What-An-IUL-Actually-Is-(Before-We-Critique-It)">What An IUL Actually Is (Before We Critique It)</a></strong><br><strong>2. <a href="#Chapter-2:-The-Illustration-Problem:-How-the-Sale-Gets-Made">The Illustration Problem: How the Sale Gets Made</a></strong><br><strong>3. <a href="#Chapter-3:-The-Commission-Trap:-Why-the-Person-Selling-It-Won't-Be-Around">The Commission Trap: Why the Person Selling It Won’t Be Around</a></strong><br><strong>4. <a href="#Chapter-4:-The-Replacement-Game:-Churning-for-Commissions">The Replacement Game: Churning for Commissions</a></strong><br><strong>5. <a href="#Chapter-5:-The-Suitability-Problem:-Why-the-Guardrails-Are-Weak">The Suitability Problem: Why the Guardrails Are Weak</a></strong><br><strong>6. <a href="#Chapter-6:-&quot;Infinite-Banking&quot;-Is-Misapplied-to-IUL">“Infinite Banking” Is Misapplied to IUL</a></strong><br><strong>7. <a href="#Chapter-7:-&quot;Tax-Free-Income&quot;-Isn't-Free-or-Guaranteed">“Tax-Free Income” Isn’t Free or Guaranteed</a></strong><br><strong>8. <a href="#Chapter-8:-The-&quot;0%-Floor&quot;-Pitch-Hides-Real-Risk">The “0% Floor” Pitch Hides Real Risk</a></strong><br><strong>9. <a href="#Chapter-9:-Fees:-The-Silent-Killer-Nobody-Explains-Clearly">Fees: The Silent Killer Nobody Explains Clearly</a></strong><br><strong>10: <a href="#Chapter-10:-&quot;Overfunding-Fixes-Everything&quot;-Is-Misleading">“Overfunding Fixes Everything” Is Misleading</a></strong><br><strong>11. <a href="#Chapter-11:-&quot;Flexible-Premiums&quot;-Create-Bad-Behavior">“Flexible Premiums” Create Bad Behavior</a></strong><br><strong>12. <a href="#Chapter-12:-Income-Reality:-Why-Most-People-Can't-Sustain-It">Income Reality: Why Most People Can’t Sustain It</a></strong></p>
+<ul>
+<li><strong><a href="#Chapter-1:-What-An-IUL-Actually-Is-(Before-We-Critique-It)">What an IUL Actually Is (Before We Critique It)</a></strong></li>
+<li><strong><a href="#Chapter-2:-The-Illustration-Problem:-How-the-Sale-Gets-Made">The Illustration Problem: How the Sale Gets Made</a></strong></li>
+<li><strong><a href="#Chapter-3:-The-Commission-Trap:-Why-the-Person-Selling-It-Won't-Be-Around">The Commission Trap: Why the Person Selling It Won’t Be Around</a></strong></li>
+<li><strong><a href="#Chapter-4:-The-Replacement-Game:-Churning-for-Commissions">The Replacement Game: Churning for Commissions</a></strong></li>
+<li><strong><a href="#Chapter-5:-The-Suitability-Problem:-Why-the-Guardrails-Are-Weak">The Suitability Problem: Why the Guardrails Are Weak</a></strong></li>
+<li><strong><a href="#Chapter-6:-&quot;Infinite-Banking&quot;-Is-Misapplied-to-IUL">“Infinite Banking” Is Misapplied to IUL</a></strong></li>
+<li><strong><a href="#Chapter-7:-&quot;Tax-Free-Income&quot;-Isn't-Free-or-Guaranteed">“Tax-Free Income” Isn’t Free or Guaranteed</a></strong></li>
+<li><strong><a href="#Chapter-8:-The-&quot;0%-Floor&quot;-Pitch-Hides-Real-Risk">The “0% Floor” Pitch Hides Real Risk</a></strong></li>
+<li><strong><a href="#Chapter-9:-Fees:-The-Silent-Killer-Nobody-Explains-Clearly">Fees: The Silent Killer Nobody Explains Clearly</a></strong></li>
+<li><strong><a href="#Chapter-10:-&quot;Overfunding-Fixes-Everything&quot;-Is-Misleading">“Overfunding Fixes Everything” Is Misleading</a></strong></li>
+<li><strong><a href="#Chapter-11:-&quot;Flexible-Premiums&quot;-Create-Bad-Behavior">“Flexible Premiums” Create Bad Behavior</a></strong></li>
+<li><strong><a href="#Chapter-12:-Income-Reality:-Why-Most-People-Can't-Sustain-It">Income Reality: Why Most People Can’t Sustain It</a></strong></li>
+</ul>
 
-<p><strong>13. <a href="#Chapter-13:-Timing-and-Loan-Risk:-The-Two-Variables-Nobody-Models">Timing and Loan Risk: The Two Variables Nobody Models</a></strong><br><strong>14. <a href="#Chapter-14:-Policy-Lapse-Risk:-How-People-Lose-Everything">Policy Lapse Risk: How People Lose Everything</a></strong><br><strong>15. <a href="#Chapter-15:-What-Happens-at-Death:-The-Part-Nobody-Explains">What Happens at Death: The Part Nobody Explains</a></strong><br><strong>16. <a href="#Chapter-16:-Carrier-Control:-They-Can-Change-the-Rules">Carrier Control: They Can Change the Rules</a></strong><br><strong>17. <a href="#Chapter-17:-The-Complexity-Problem:-You-Don't-Understand-What-You-Bought">The Complexity Problem: You Don’t Understand What You Bought</a></strong><br><strong>18. <a href="#Chapter-18:-The-&quot;Rich-Person-Strategy&quot;-Myth">The “Rich Person Strategy” Myth</a></strong><br><strong>19. <a href="#Chapter-19:-The-Retirement-Illusion:-It's-Not-a-Real-Replacement-Plan">The Retirement Illusion: It’s Not a Real Replacement Plan</a></strong><br><strong>20. <a href="#Chapter-20:-Better-Uses-for-Your-Money">Better Uses for Your Money</a></strong><br><strong>21. <a href="#Chapter-21:-When-IUL-Actually-Makes-Sense">When IUL Actually Makes Sense</a></strong><br><strong>22. <a href="#Chapter-22:-Case-Studies:-Where-It-Works-vs.-Where-It-Fails">Case Studies: Where It Works vs. Where It Fails</a></strong><br><strong>23. <a href="#Chapter-23:-The-Bottom-Line:-Who-Should-Stay-Away">The Bottom Line: Who Should Stay Away</a></strong><br><strong>24.</strong> <a href="#24:-IUL-Suitability-by-Profession"><strong>IUL Suitability by Profession</strong></a></p>
+<ul>
+<li><strong><a href="#Chapter-13:-Timing-and-Loan-Risk:-The-Two-Variables-Nobody-Models">Timing and Loan Risk: The Two Variables Nobody Models</a></strong></li>
+<li><strong><a href="#Chapter-14:-Policy-Lapse-Risk:-How-People-Lose-Everything">Policy Lapse Risk: How People Lose Everything</a></strong></li>
+<li><strong><a href="#Chapter-15:-What-Happens-at-Death:-The-Part-Nobody-Explains">What Happens at Death: The Part Nobody Explains</a></strong></li>
+<li><strong><a href="#Chapter-16:-Carrier-Control:-They-Can-Change-the-Rules">Carrier Control: They Can Change the Rules</a></strong></li>
+<li><strong><a href="#Chapter-17:-The-Complexity-Problem:-You-Don't-Understand-What-You-Bought">The Complexity Problem: You Don’t Understand What You Bought</a></strong></li>
+<li><strong><a href="#Chapter-18:-The-&quot;Rich-Person-Strategy&quot;-Myth">The “Rich Person Strategy” Myth</a></strong></li>
+<li><strong><a href="#Chapter-19:-The-Retirement-Illusion:-It's-Not-a-Real-Replacement-Plan">The Retirement Illusion: It’s Not a Real Replacement Plan</a></strong></li>
+<li><strong><a href="#Chapter-20:-Better-Uses-for-Your-Money">Better Uses for Your Money</a></strong></li>
+<li><strong><a href="#Chapter-21:-When-IUL-Actually-Makes-Sense">When IUL Actually Makes Sense</a></strong></li>
+<li><strong><a href="#Chapter-22:-Case-Studies:-Where-It-Works-vs.-Where-It-Fails">Case Studies: Where It Works vs. Where It Fails</a></strong></li>
+<li><strong><a href="#Chapter-23:-The-Bottom-Line:-Who-Should-Stay-Away">The Bottom Line: Who Should Stay Away</a></strong></li>
+<li><a href="#24:-IUL-Suitability-by-Profession"><strong>IUL Suitability by Profession</strong></a></li>
+</ul>
 
 <p class="book-disclaimer">Copyright © 2026 Randy VanderVaate. All rights reserved. No part of this book may be reproduced without written permission.</p>
 

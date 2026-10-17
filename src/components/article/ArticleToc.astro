@@ -3,12 +3,27 @@
 // by src/lib/article/enhance.ts). A native disclosure: open on desktop,
 // closed on phones and tablets so it stays compact (the inline script runs
 // before the panel is painted; without JavaScript it starts closed).
+// Labels are Title Case, never ALL CAPS (Randy, October 2026): the heading
+// text with its major words raised (titleCase), or an explicit label from
+// src/config/toc-labels.ts for a heading stored in capitals; the build fails
+// on a capitals heading without one. The section heading keeps its own case.
 import type { TocItem } from '@/lib/article/enhance';
+import { isAllCaps, titleCase } from '@/lib/article/title-case';
+import { TOC_LABELS } from '@/config/toc-labels';
 
 interface Props {
   items: TocItem[];
+  /** The page's path, for its explicit labels. */
+  path: string;
 }
-const { items } = Astro.props;
+const { items: raw, path } = Astro.props;
+const own = TOC_LABELS[path] ?? {};
+const items = raw.map((it) => ({ ...it, text: own[it.id] ?? titleCase(it.text) }));
+const capitals = items.filter((it) => isAllCaps(it.text));
+if (capitals.length)
+  throw new Error(
+    `${path}: table-of-contents entries in capitals need a Title Case label in src/config/toc-labels.ts: ${capitals.map((it) => `#${it.id} "${it.text}"`).join(', ')}`,
+  );
 ---
 
 {
@@ -19,7 +34,7 @@ const { items } = Astro.props;
           <span class="toc__title" id="toc-title">In This Article</span>
           <svg class="toc__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>
         </summary>
-        <ol class="toc__list">
+        <ul class="toc__list">
           {items.map((it) => (
             <li class="toc__item">
               <a class="toc__link" href={`#${it.id}`}>
@@ -27,7 +42,7 @@ const { items } = Astro.props;
               </a>
             </li>
           ))}
-        </ol>
+        </ul>
       </details>
     </nav>
   )
@@ -85,10 +100,6 @@ const { items } = Astro.props;
     margin: 0;
     padding: 0 0 var(--space-5, 1.25rem);
     list-style: none;
-    counter-reset: toc;
-  }
-  .toc__item {
-    counter-increment: toc;
   }
   /* Entries sit about as close as the editorial lists: 2px above and below
      each link (4px between entries) instead of a 44px row each. The 1.4
@@ -104,12 +115,13 @@ const { items } = Astro.props;
     line-height: 1.4;
     text-decoration: none;
   }
+  /* Site standard (Randy, October 2026): every table of contents uses
+     bullets, never numbers. */
   .toc__link::before {
-    content: counter(toc) '.';
+    content: '\2022';
     flex: none;
-    min-width: 1.5rem;
+    min-width: 1rem;
     color: var(--color-text-muted);
-    font-variant-numeric: tabular-nums;
   }
   .toc__link:hover {
     color: var(--color-primary);

@@ -890,8 +890,8 @@ is in place; see src/content/README.md for how pages were migrated.
   spacing unchanged.
   The source text stays in sentence case (first word capitalized, proper
   nouns, company and product names, acronyms and people's names kept;
-  quoted terms kept as written), so the "In This Article" labels, metadata
-  and search show sentence case. Don't type headings in capitals in the
+  quoted terms kept as written), so metadata and search show sentence case.
+  Don't type headings in capitals in the
   source. H1s are Title Case as stored and are never transformed by CSS;
   changing a migrated H1's wording still needs Randy's approval.
 - Article summary (ArticleSummary.astro): the "Quick Answer" and "Key Points"
@@ -904,6 +904,29 @@ is in place; see src/content/README.md for how pages were migrated.
   markup in their body (the component's styles are global for that reason):
   each page's own opening answer paragraph, moved into the Quick Answer box,
   and its original points unchanged.
+- **ALL FEXGUY.COM ARTICLE TABLES OF CONTENTS MUST USE BULLET POINTS, NEVER
+  NUMBERED LISTS** (Randy, October 2026). This applies to new, revised and
+  migrated articles and to every article template: the shared "In This
+  Article" list (src/components/article/ArticleToc.astro, a `<ul>` with a
+  bullet marker, two columns from 48rem) and any table of contents written
+  in a page body (use `<ul>`, no typed "1." numbers in front of the links;
+  e.g. /colonial-penn-two-year-wait/, /iul-book/). Links, anchors, order and
+  link text stay as they are; ordinary numbered lists in article text are
+  not affected. `npm run verify` fails on a numbered table of contents.
+- **Table of contents entries are Title Case, never ALL CAPS** (Randy,
+  October 2026), even though the headings they point to display in ALL
+  CAPS. The shared ArticleToc converts each heading's stored text with
+  `titleCase()` (src/lib/article/title-case.ts): it only raises letters,
+  never lowers them, so acronyms, brand names and special capitalization
+  (IUL, ADL, BS, A.M. Best, HIV) stay as written; minor words (a, and, the,
+  of, to, for...) stay lowercase unless first, last or after a colon, dash
+  or question mark. A heading stored in capitals can't be converted safely,
+  so it needs an explicit entry in src/config/toc-labels.ts (page path →
+  heading id → label); the build fails, naming the entry, until it has one.
+  Manual tables of contents are written in Title Case in the page body.
+  The heading text, anchors and the headings' ALL CAPS display are not
+  changed. `npm run verify` fails on an ALL CAPS entry in any table of
+  contents (acronyms alone don't count).
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
@@ -1020,7 +1043,9 @@ point to a missing page, and content guards fail on 888-656-4648, retired
 Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
 address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
-/gtl/ must stay a real 404 (not built, not redirected). Article pages must
+/gtl/ must stay a real 404 (not built, not redirected). Tables of contents
+must be bulleted (no `<ol>` of in-page links, no typed numbers before
+them) and their entries never ALL CAPS. Article pages must
 show at most one Quick Answer and one key-points box, in that order, above
 "In This Article", with neither label repeated as body text (pages outside
 the template that show the label are listed as a note). Add `-- --strict` to
