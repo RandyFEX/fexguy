@@ -317,6 +317,101 @@ for (const file of pages) {
   }
 }
 
+// Article standard (Randy, October 2026). Every built page is classified:
+// an editorial article carries data-article-layout (the article template, or
+// ContentLayout for the pages in src/config/content-articles.ts); every other
+// page carries data-page-type with a reason. An editorial article must open
+// with, in this order: one H1, the shared byline (once), the Quick Answer (or
+// an A–Z hub's guide summary), Key Points, a bulleted table of contents when
+// it has 3 or more sections, then the body. A missing element is allowed only
+// when the page declares it in data-article-exceptions (from a documented
+// hold); a declared exception whose element is present fails too. No second
+// logo or loose "Written by" / "last updated" lines between the H1 and the
+// first section, and every table-of-contents link must reach a section.
+const PART = (name) => new RegExp(`data-article-part="${name}"`, 'g');
+const articleProblems = [];
+const articleStats = { template: 0, content: 0, exceptions: [], other: {} };
+for (const file of pages) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const layout = html.match(/data-article-layout="(template|content)"/)?.[1];
+  if (!layout) {
+    const type = html.match(/data-page-type="([a-z]+)"/)?.[1];
+    const reason = html.match(/data-page-reason="([^"]*)"/)?.[1];
+    if (!type || !reason) articleProblems.push(`${page}: page is not classified (no data-article-layout, or data-page-type without a reason)`);
+    else articleStats.other[type] = (articleStats.other[type] ?? 0) + 1;
+    continue;
+  }
+  articleStats[layout]++;
+  const fail = (msg) => articleProblems.push(`${page}: ${msg}`);
+  const exc = new Set((html.match(/data-article-exceptions="([^"]*)"/)?.[1] ?? '').split(/\s+/).filter(Boolean));
+  for (const e of exc) articleStats.exceptions.push(`${page} ${e}`);
+  const at = (re) => { const m = new RegExp(re.source).exec(html); return m ? m.index : -1; };
+  const count = (re) => (html.match(re) ?? []).length;
+
+  const h1 = at(/<h1\b/);
+  if (count(/<h1\b/g) !== 1) fail(`has ${count(/<h1\b/g)} H1s (exactly one required)`);
+  const h1Text = (html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? '').replace(/<[^>]+>/g, '');
+  if ((h1Text.match(/\b[A-Z]{4,}\b/g) ?? []).filter((w) => !['COPD', 'AARP', 'CICA', 'FEGLI', 'SGLI', 'VGLI', 'NAIC', 'HIPAA', 'USAA'].includes(w)).length >= 2)
+    fail('H1 is stored in capitals (Title Case required)');
+
+  const byline = at(PART('byline'));
+  if (count(PART('byline')) !== 1) fail(`has ${count(PART('byline'))} author bylines (exactly one required)`);
+  else if (byline < h1) fail('author byline comes before the H1');
+
+  const qa = Math.max(at(PART('quick-answer')), at(PART('guide-summary')));
+  const nQa = count(PART('quick-answer')) + count(PART('guide-summary'));
+  if (nQa > 1) fail('has more than one Quick Answer');
+  if (!nQa && !exc.has('quick-answer')) fail('Quick Answer is missing');
+  if (nQa && exc.has('quick-answer')) fail('declares no Quick Answer but shows one (remove the hold)');
+  const kp = at(PART('key-points'));
+  const nKp = count(PART('key-points'));
+  if (nKp > 1) fail('has more than one Key Points box');
+  if (!nKp && !exc.has('key-points')) fail('Key Points are missing');
+  if (nKp && exc.has('key-points')) fail('declares no Key Points but shows them (remove the hold)');
+
+  // Sections: the body's H2s (template: inside data-article-part="body";
+  // content pages: the H2s after the H1, without the summary labels).
+  let bodyHtml;
+  if (layout === 'template') bodyHtml = [...html.matchAll(/data-article-part="body"[^>]*>([\s\S]*?)<\/div>\s*(?=<div|<\/article)/g)].map((m) => m[1]).join('');
+  else bodyHtml = html.slice(h1, html.indexOf('<aside class="page__aside"') > h1 ? html.indexOf('<aside class="page__aside"') : html.indexOf('</main>'));
+  const sections = [...bodyHtml.matchAll(/<h2\b(?![^>]*summary__label)[^>]*>/g)].length;
+  const firstSection = (() => {
+    const re = /<h2\b(?![^>]*summary__label)[^>]*>/g;
+    re.lastIndex = h1;
+    let m;
+    while ((m = re.exec(html))) if (m.index > h1 && !/class="[^"]*(author|related)/.test(m[0])) return m.index;
+    return html.length;
+  })();
+
+  const nToc = count(PART('toc'));
+  const toc = at(PART('toc'));
+  const component = count(/<nav class="toc" data-article-part="toc"/g);
+  if (component > 1 || (component && nToc > component)) fail('has more than one table of contents');
+  if (sections >= 3 && !nToc && !exc.has('toc')) fail(`has ${sections} sections but no table of contents`);
+  if (nToc && exc.has('toc')) fail('declares no table of contents but shows one (remove the exception)');
+
+  // Order: H1, byline, Quick Answer, Key Points, table of contents, sections.
+  const order = [['H1', h1], ['byline', byline], ['Quick Answer', nQa ? qa : -1], ['Key Points', kp], ['table of contents', toc], ['first section', exc.has('toc-position') ? -1 : firstSection]].filter(([, i]) => i >= 0);
+  if (exc.has('toc-position') && !nToc) fail('declares a table-of-contents position exception but has no table of contents');
+  for (let i = 1; i < order.length; i++)
+    if (order[i][1] < order[i - 1][1]) fail(`${order[i][0]} appears before ${order[i - 1][0]}`);
+
+  // Nothing old between the H1 and the first section: no second logo, no
+  // loose author or date lines (the byline is the only "Written by").
+  const opening = html.slice(h1, firstSection);
+  if (/final-expense-guy-logo/.test(opening)) fail('shows a Final Expense Guy logo under the H1');
+  if ((opening.match(/Written by/g) ?? []).length > 1 || /last updated on/i.test(opening)) fail('has loose author or date lines under the H1');
+
+  // Table-of-contents links reach a section of the page.
+  const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"')));
+  for (const m of html.matchAll(/data-article-part="toc"[\s\S]*?<\/(?:nav|table|ul)>/g))
+    for (const [, href] of m[0].matchAll(/href="#([^"]+)"/g)) {
+      const id = href.replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+      if (!ids.has(id) && !ids.has(decodeURIComponent(id))) fail(`table-of-contents link #${href} has no matching section`);
+    }
+}
+
 const uniq = (list) => [...new Set(list.map((x) => x.path))];
 const visiblePages = new Set(img.visible.map((x) => x.page));
 const metaRefs = img.og.length + img.twitter.length + img.jsonld.length;
@@ -368,6 +463,12 @@ if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
 console.log(`Article summary structure: problems: ${structureProblems.length}`);
 for (const p of structureProblems) console.log(`  [summary] ${p}`);
 console.log(`Tables of contents (bullets, Title Case): problems: ${tocProblems.length}`);
+console.log(
+  `Article standard: ${articleStats.template + articleStats.content} editorial articles (template ${articleStats.template}, content layout ${articleStats.content}), ` +
+    `${Object.values(articleStats.other).reduce((a, b) => a + b, 0)} other pages (${Object.entries(articleStats.other).map(([k, v]) => `${k} ${v}`).join(', ')}), ` +
+    `${articleStats.exceptions.length} documented exceptions | problems: ${articleProblems.length}`,
+);
+for (const p of articleProblems) console.log(`  [article] ${p}`);
 for (const p of tocProblems) console.log(`  [toc] ${p}`);
 if (strandedSummaries.length)
   console.log(`  [note] key-points label shown as body text outside the article template: ${strandedSummaries.join(' ')}`);
@@ -383,5 +484,6 @@ const problems =
   redirectProblems.length +
   guardProblems.length +
   structureProblems.length +
-  tocProblems.length;
+  tocProblems.length +
+  articleProblems.length;
 if (strict && problems) process.exit(1);

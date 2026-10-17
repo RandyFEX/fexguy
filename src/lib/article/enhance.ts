@@ -97,7 +97,7 @@ export const htmlToText = (html: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-const slugify = (text: string) =>
+export const slugify = (text: string) =>
   text
     .toLowerCase()
     .replace(/[’']/g, '')

@@ -11,22 +11,12 @@ sidebar: true
 
 <h1>Colonial Penn Two Year Wait</h1>
 
-<picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
-
-<p>last updated on April 16, 2026</p>
-
-<p>Written by <a rel="noreferrer noopener" href="/randy-vandervaate/" target="_blank">Randy VanderVaate</a></p>
-
-<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Final Expense Guy</p>
-
-<p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
-
 <div class="summary" data-pagefind-ignore>
-<section class="summary__answer" aria-labelledby="quick-answer-title">
+<section class="summary__answer" data-article-part="quick-answer" aria-labelledby="quick-answer-title">
 <h2 class="summary__label" id="quick-answer-title">Quick Answer</h2>
 <p class="summary__text">The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family usually only gets your premiums back, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
 </section>
-<section class="summary__points" aria-labelledby="key-points-title">
+<section class="summary__points" data-article-part="key-points" aria-labelledby="key-points-title">
 <h2 class="summary__label" id="key-points-title">Key Points</h2>
 <ul class="summary__list" role="list">
 <li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Colonial Penn has a strict 2-year waiting period on all policies</span></li>
@@ -38,7 +28,7 @@ sidebar: true
 </section>
 </div>
 
-<table>
+<table data-article-part="toc">
 <thead>
 <tr>
 <th colspan="2">TABLE OF CONTENTS</th>

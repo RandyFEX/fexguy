@@ -6,11 +6,21 @@
 // Comments: migrated comments are static content in the page body, and new
 // comments are closed (no comment form). A comment service can be added
 // later below the page body.
+//
+// Every page is classified (src/config/content-articles.ts): an editorial
+// article opens like a template article (H1, ArticleByline, its Quick Answer
+// and Key Points, a bulleted table of contents, the body); any other page
+// carries its type and reason (data-page-type) for `npm run verify`. An
+// unclassified page fails the build.
 import BaseLayout from './BaseLayout.astro';
 import QuoteBox from '@/components/lead/QuoteBox.astro';
 import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
-import { contentArticles } from '@/config/content-articles';
+import ArticleByline from '@/components/article/ArticleByline.astro';
+import ArticleToc from '@/components/article/ArticleToc.astro';
+import { CONTENT_ARTICLES, nonArticlePage } from '@/config/content-articles';
+import { splitContentArticle } from '@/lib/article/content-article';
+import { migratedDates } from '@/lib/seo/schema';
 // Summary-box styles for content pages that carry Key Points markup.
 import '@/styles/article-summary.css';
 
@@ -22,6 +32,23 @@ const { entry } = Astro.props;
 const d = entry.data;
 // Landing pages carry the live site's own call button in their content.
 const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
+
+const path = pagePath(entry);
+const landing = d.layout === 'landing';
+const articleConfig = CONTENT_ARTICLES[path];
+const other = nonArticlePage(path);
+if (!landing && !articleConfig && !other)
+  throw new Error(`${path}: unclassified page. Add it to CONTENT_ARTICLES or NON_ARTICLE_PAGES in src/config/content-articles.ts`);
+if (articleConfig && other) throw new Error(`${path} is listed as both an article and a non-article page (src/config/content-articles.ts)`);
+const pageType = landing ? 'sales' : other?.type;
+const pageReason = landing ? 'Sales landing page (layout: landing).' : other?.reason;
+
+// Editorial article: the shared opening around the page's own text.
+const parts = articleConfig ? splitContentArticle(entry.rendered?.html ?? '') : undefined;
+const updated = articleConfig ? migratedDates(d.jsonLd, d.headMeta).modified?.slice(0, 10) : undefined;
+const ex = articleConfig?.exceptions ?? {};
+const exceptions =
+  [ex.quickAnswer && 'quick-answer', ex.keyPoints && 'key-points', ex.toc && 'toc', ex.tocPosition && 'toc-position'].filter(Boolean).join(' ') || undefined;
 ---
 
 <BaseLayout
@@ -37,11 +64,29 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   preFooter={d.preFooter}
   phone={d.phone}
 >
-  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing', 'page--article': contentArticles.has(pagePath(entry)) }]}>
+  <div
+    class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': landing, 'page--article': parts }]}
+    data-article-layout={parts ? 'content' : undefined}
+    data-article-exceptions={exceptions}
+    data-page-type={pageType}
+    data-page-reason={pageReason}
+  >
     {/* Pagefind indexes only this element (H1 + article body), never the
        header, nav, sidebar quote box or footer. */}
     <div class="prose wp-content" data-pagefind-body={isSearchable(entry) ? '' : undefined}>
-      <slot />
+      {
+        parts ? (
+          <>
+            <Fragment set:html={parts.head} />
+            <ArticleByline updated={updated} />
+            <Fragment set:html={parts.summary} />
+            {!parts.ownToc && !ex.toc && <ArticleToc items={parts.toc} path={path} />}
+            <Fragment set:html={parts.rest} />
+          </>
+        ) : (
+          <slot />
+        )
+      }
     </div>
     {
       d.sidebar && (
@@ -59,6 +104,16 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   }
   .page__aside {
     margin-top: var(--space-8);
+  }
+  /* Editorial articles: the shared opening's spacing (as on the template). */
+  .page--article :global(.byline) {
+    margin-block: var(--space-4) var(--space-6);
+  }
+  .page--article :global(.byline img) {
+    margin: 0;
+  }
+  .page--article :global(.toc) {
+    margin-block: var(--space-6);
   }
   /* Landing pages (no site header or sidebar): center the single column. */
   .page--landing .prose {
