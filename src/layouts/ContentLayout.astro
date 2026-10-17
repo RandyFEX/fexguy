@@ -10,6 +10,9 @@ import BaseLayout from './BaseLayout.astro';
 import QuoteBox from '@/components/lead/QuoteBox.astro';
 import type { PageEntry } from '@/lib/pages';
 import { isSearchable, pagePath } from '@/lib/pages';
+import { contentArticles } from '@/config/content-articles';
+// Summary-box styles for content pages that carry Key Points markup.
+import '@/styles/article-summary.css';
 
 export interface Props {
   entry: PageEntry;
@@ -34,7 +37,7 @@ const hasOwnCallButton = entry.body?.includes('id="callnowbutton"') ?? false;
   preFooter={d.preFooter}
   phone={d.phone}
 >
-  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing' }]}>
+  <div class:list={['container page', { 'page--sidebar': d.sidebar, 'page--landing': d.layout === 'landing', 'page--article': contentArticles.has(pagePath(entry)) }]}>
     {/* Pagefind indexes only this element (H1 + article body), never the
        header, nav, sidebar quote box or footer. */}
     <div class="prose wp-content" data-pagefind-body={isSearchable(entry) ? '' : undefined}>

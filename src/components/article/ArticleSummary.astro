@@ -15,6 +15,8 @@ interface Props {
   guide?: { label: string; text: string };
   takeaways?: { label: string; items: string[] };
 }
+import '@/styles/article-summary.css';
+
 const { quickAnswer, guide, takeaways } = Astro.props;
 ---
 
@@ -55,108 +57,3 @@ const { quickAnswer, guide, takeaways } = Astro.props;
     </div>
   )
 }
-
-<style>
-  .summary {
-    border-radius: var(--home-radius);
-    overflow: hidden;
-    border: 1px solid var(--color-border);
-  }
-
-  /* Quick Answer: white on heritage green (11.7:1), cream label. */
-  .summary__answer {
-    padding: var(--space-6) var(--space-5, 1.25rem);
-    background: var(--color-primary);
-    color: #ffffff;
-  }
-  .summary__label {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    margin: 0 0 var(--space-3);
-    font-size: 0.875rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--home-cream);
-  }
-  /* The short gold rule is decorative only (the label itself is cream). */
-  .summary__label::before {
-    content: '';
-    flex: none;
-    width: 1.5rem;
-    height: 3px;
-    background: var(--home-gold);
-  }
-  .summary__text {
-    margin: 0;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: #ffffff;
-  }
-
-  /* Here's the Bottom Line: the article's key points, white on heritage
-     green (11.7:1). Under a Quick Answer, a gold hairline separates the two. */
-  .summary__points {
-    padding: var(--space-6) var(--space-5, 1.25rem);
-    background: var(--color-primary);
-    color: #ffffff;
-  }
-  .summary__answer + .summary__points {
-    border-top: 1px solid var(--home-gold);
-  }
-  .summary__points :global(a) {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .summary__list {
-    display: grid;
-    gap: var(--space-3);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  /* One treatment for every point: same size, weight, case and spacing. */
-  .summary__item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-3);
-    font-size: 1.0625rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: none;
-    color: #ffffff;
-  }
-  .summary__item :global(strong) {
-    font-weight: inherit;
-  }
-  /* White circle, green check (heritage green on white, 11.7:1); the thin
-     neutral ring keeps the circle's edge visible. Centered on the first
-     line of text (1.0625rem × 1.5 line height). */
-  .summary__icon {
-    flex: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-top: calc((1.5em - 1.25rem) / 2);
-    border-radius: 50%;
-    background: #ffffff;
-    border: 1px solid var(--color-border);
-    color: var(--color-primary);
-  }
-  .summary__icon svg {
-    display: block;
-  }
-
-  @media (min-width: 48rem) {
-    .summary__answer,
-    .summary__points {
-      padding: var(--space-6) var(--space-8);
-    }
-    .summary__text {
-      font-size: 1.25rem;
-    }
-  }
-</style>

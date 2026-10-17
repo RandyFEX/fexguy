@@ -11,9 +11,19 @@ sidebar: true
 
 <h1>Colonial Penn $9.95 Life Insurance Review – Truth Revealed!</h1>
 
-<p><strong>Here’s What This Means for You:</strong></p>
-
-<p>• The $9.95 price hides how little coverage you actually get<br>• Coverage shrinks as you age, even though the price stays the same<br>• Most policies have a 2-year waiting period before full payout<br>• You often pay more for less coverage than other companies<br>• “Units” make it hard to understand real cost and value<br>• Complaint levels are higher than most competing insurers</p>
+<div class="summary" data-pagefind-ignore>
+<section class="summary__points" aria-labelledby="key-points-title">
+<h2 class="summary__label" id="key-points-title">Key Points</h2>
+<ul class="summary__list" role="list">
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>The $9.95 price hides how little coverage you actually get</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Coverage shrinks as you age, even though the price stays the same</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Most policies have a 2-year waiting period before full payout</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>You often pay more for less coverage than other companies</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>“Units” make it hard to understand real cost and value</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Complaint levels are higher than most competing insurers</span></li>
+</ul>
+</section>
+</div>
 
 <p>Colonial Penn burial insurance is a guaranteed-acceptance whole-life policy designed primarily for seniors who can’t qualify elsewhere. The appeal is simple: no health questions and easy approval. The problem is cost and value. Their “unit” pricing means $9.95 doesn’t buy much coverage, especially as you get older, and most policies include a 2-year waiting period before full benefits pay out. Compared to other burial insurance options, coverage is usually lower, and pricing is higher, which is why many people end up overpaying for less protection.</p>
 

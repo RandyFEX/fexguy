@@ -882,9 +882,12 @@ is in place; see src/content/README.md for how pages were migrated.
 
 - Exactly one `<h1>` per page, inside the page body.
 - Article heading display standard (Randy, October 2026, replacing the
-  earlier "never CSS text-transform" rule): body H2-H6 display in ALL CAPS
-  through one shared CSS rule (global.css, `.prose` in ArticleLayout and
-  ContentLayout, not landing pages); sizes, weights and spacing unchanged.
+  earlier "never CSS text-transform" rule): body H2-H6 of article content
+  display in ALL CAPS through one shared CSS rule (global.css): every
+  ArticleLayout page, plus the ContentLayout articles listed in
+  src/config/content-articles.ts. About, legal, form, contact, landing and
+  other utility pages keep their own heading typography. Sizes, weights and
+  spacing unchanged.
   The source text stays in sentence case (first word capitalized, proper
   nouns, company and product names, acronyms and people's names kept;
   quoted terms kept as written), so the "In This Article" labels, metadata
@@ -895,7 +898,11 @@ is in place; see src/content/README.md for how pages were migrated.
   labels share one treatment (gold accent, uppercase label, no colon); Key
   Points shows the page's "Here's the Bottom Line" lines with white circular
   icons holding a green check. The Markdown keeps its "Here's the Bottom
-  Line:" paragraph (enhance.ts finds it by that label).
+  Line:" paragraph (enhance.ts finds it by that label). The two Colonial
+  Penn pages outside the template (/colonial-penn-burial-insurance-review/,
+  /colonial-penn-two-year-wait/) carry the same Key Points markup in their
+  body (the component's styles are global for that reason), with their
+  original points unchanged.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.

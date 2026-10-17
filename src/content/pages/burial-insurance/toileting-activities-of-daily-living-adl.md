@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance If You Need Help with Toileting [ACTIVITIES OF DAILY LIVING]</h1>
+<h1>Burial Insurance If You Need Help with Toileting [Activities of Daily Living]</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help with toileting signals serious health risk to insurance companies<br>• Most policies will decline you or restrict coverage heavily<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• You’ll pay higher premiums for smaller, limited coverage amounts<br>• Waiting to apply makes approval harder and more expensive<br>• Not understanding ADL rules leads to choosing the wrong policy</p>
 
