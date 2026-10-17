@@ -289,6 +289,32 @@ for (const file of pages) {
   }
   const typed = [...html.matchAll(/(?:^|>|<br\s*\/?>)\s*(?:<strong>\s*)?\d{1,2}[.:]\s*(?:<\/strong>\s*)?<a\b[^>]*href="#/g)].length;
   if (typed >= 3) tocProblems.push(`${page}: ${typed} in-page links are preceded by typed numbers (numbered table of contents)`);
+  // Entries are Title Case, never ALL CAPS (Randy, October 2026). Covers the
+  // shared "In This Article" list and every manual table of contents (a list
+  // or table whose entries are in-page links). Acronyms are tolerated: an
+  // entry counts as ALL CAPS only when at least 3 of its words (3+ letters)
+  // are capitals and they are more than half of its words.
+  const lists = [
+    ...html.matchAll(/<ul\b[^>]*class="[^"]*toc__list[^"]*"[^>]*>([\s\S]*?)<\/ul>/g),
+    ...[...html.matchAll(/<(ul|ol)\b(?![^>]*toc__list)[^>]*>([\s\S]*?)<\/\1>/g)]
+      .filter((m) => {
+        const items = [...m[2].matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)].map((x) => x[1]);
+        return items.length >= 3 && items.filter((i) => ANCHOR_ONLY.test(i)).length / items.length >= 0.8;
+      })
+      .map((m) => [m[0], m[2]]),
+    ...[...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/g)].filter((m) => (m[1].match(/<a\b[^>]*href="#/g) ?? []).length >= 3),
+  ];
+  const seen = new Set();
+  for (const m of lists) {
+    for (const a of m[1].matchAll(/<a\b[^>]*href="#[^"]+"[^>]*>([\s\S]*?)<\/a>/g)) {
+      const text = a[1].replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, '’').trim();
+      if (seen.has(text)) continue;
+      seen.add(text);
+      const words = (text.match(/[\p{L}’'.-]{3,}/gu) ?? []).filter((x) => /\p{L}{3,}/u.test(x));
+      const caps = words.filter((x) => x === x.toUpperCase());
+      if (caps.length >= 3 && caps.length > words.length / 2) tocProblems.push(`${page}: table of contents entry in ALL CAPS: "${text}"`);
+    }
+  }
 }
 
 // Article standard (Randy, October 2026). Every built page is classified:
@@ -436,7 +462,7 @@ if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 
 if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
 console.log(`Article summary structure: problems: ${structureProblems.length}`);
 for (const p of structureProblems) console.log(`  [summary] ${p}`);
-console.log(`Tables of contents (bullets only): problems: ${tocProblems.length}`);
+console.log(`Tables of contents (bullets, Title Case): problems: ${tocProblems.length}`);
 console.log(
   `Article standard: ${articleStats.template + articleStats.content} editorial articles (template ${articleStats.template}, content layout ${articleStats.content}), ` +
     `${Object.values(articleStats.other).reduce((a, b) => a + b, 0)} other pages (${Object.entries(articleStats.other).map(([k, v]) => `${k} ${v}`).join(', ')}), ` +

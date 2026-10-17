@@ -113,7 +113,7 @@ const schema = articleGraph({
 
       {article.feature && <div class="art-feature" set:html={article.feature} />}
 
-      <ArticleToc items={article.toc} />
+      <ArticleToc items={article.toc} path={pagePath(entry)} />
 
       {article.intro && <div class="prose wp-content art-body art-body--intro" data-article-part="body" data-pagefind-body={searchable} set:html={article.intro} />}
 

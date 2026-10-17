@@ -890,8 +890,8 @@ is in place; see src/content/README.md for how pages were migrated.
   typography. Sizes, weights and spacing unchanged.
   The source text stays in sentence case (first word capitalized, proper
   nouns, company and product names, acronyms and people's names kept;
-  quoted terms kept as written), so the "In This Article" labels, metadata
-  and search show sentence case. Don't type headings in capitals in the
+  quoted terms kept as written), so metadata and search show sentence case.
+  Don't type headings in capitals in the
   source. H1s are Title Case as stored and are never transformed by CSS;
   changing a migrated H1's wording still needs Randy's approval.
 - Article summary (ArticleSummary.astro): the "Quick Answer" and "Key Points"
@@ -947,6 +947,20 @@ is in place; see src/content/README.md for how pages were migrated.
   committing"); run the full verification before any article publication.
   The inventory is in RandyFEX/fexguy-monitoring
   reports/site-audits/2026-10-17-article-standard-inventory.md.
+- **Table of contents entries are Title Case, never ALL CAPS** (Randy,
+  October 2026), even though the headings they point to display in ALL
+  CAPS. The shared ArticleToc converts each heading's stored text with
+  `titleCase()` (src/lib/article/title-case.ts): it only raises letters,
+  never lowers them, so acronyms, brand names and special capitalization
+  (IUL, ADL, BS, A.M. Best, HIV) stay as written; minor words (a, and, the,
+  of, to, for...) stay lowercase unless first, last or after a colon, dash
+  or question mark. A heading stored in capitals can't be converted safely,
+  so it needs an explicit entry in src/config/toc-labels.ts (page path →
+  heading id → label); the build fails, naming the entry, until it has one.
+  Manual tables of contents are written in Title Case in the page body.
+  The heading text, anchors and the headings' ALL CAPS display are not
+  changed. `npm run verify` fails on an ALL CAPS entry in any table of
+  contents (acronyms alone don't count).
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
@@ -1065,7 +1079,7 @@ address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
 /gtl/ must stay a real 404 (not built, not redirected). Tables of contents
 must be bulleted (no `<ol>` of in-page links, no typed numbers before
-them). The article standard: every page classified; every editorial article
+them) and their entries never ALL CAPS. The article standard: every page classified; every editorial article
 with one H1, one byline after it, its Quick Answer and Key Points (or a
 declared exception, and no stale exception), a table of contents when it has
 3 or more sections, all in the standard order, no logo or loose author lines

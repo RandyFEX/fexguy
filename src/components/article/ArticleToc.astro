@@ -3,12 +3,27 @@
 // by src/lib/article/enhance.ts). A native disclosure: open on desktop,
 // closed on phones and tablets so it stays compact (the inline script runs
 // before the panel is painted; without JavaScript it starts closed).
+// Labels are Title Case, never ALL CAPS (Randy, October 2026): the heading
+// text with its major words raised (titleCase), or an explicit label from
+// src/config/toc-labels.ts for a heading stored in capitals; the build fails
+// on a capitals heading without one. The section heading keeps its own case.
 import type { TocItem } from '@/lib/article/enhance';
+import { isAllCaps, titleCase } from '@/lib/article/title-case';
+import { TOC_LABELS } from '@/config/toc-labels';
 
 interface Props {
   items: TocItem[];
+  /** The page's path, for its explicit labels. */
+  path: string;
 }
-const { items } = Astro.props;
+const { items: raw, path } = Astro.props;
+const own = TOC_LABELS[path] ?? {};
+const items = raw.map((it) => ({ ...it, text: own[it.id] ?? titleCase(it.text) }));
+const capitals = items.filter((it) => isAllCaps(it.text));
+if (capitals.length)
+  throw new Error(
+    `${path}: table-of-contents entries in capitals need a Title Case label in src/config/toc-labels.ts: ${capitals.map((it) => `#${it.id} "${it.text}"`).join(', ')}`,
+  );
 ---
 
 {
