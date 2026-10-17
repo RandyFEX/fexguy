@@ -49,7 +49,7 @@ sidebar: true
 <td>
 <ul>
 <li><a href="#colonial-penn-two-year-wait">Colonial Penn Two Year Wait</a></li>
-<li><a href="#features-of-guaranteed-acceptance-life-insurance">Features Of Guaranteed Acceptance Life Insurance</a></li>
+<li><a href="#features-of-guaranteed-acceptance-life-insurance">Features of Guaranteed Acceptance Life Insurance</a></li>
 <li><a href="#colonial-penn-guaranteed-acceptance-pricing">Colonial Penn Guaranteed Acceptance Pricing</a></li>
 </ul>
 </td>

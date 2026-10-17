@@ -23,7 +23,7 @@ sidebar: true
 <p>IUL Book Chapters:</p>
 
 <ul>
-<li><strong><a href="#Chapter-1:-What-An-IUL-Actually-Is-(Before-We-Critique-It)">What An IUL Actually Is (Before We Critique It)</a></strong></li>
+<li><strong><a href="#Chapter-1:-What-An-IUL-Actually-Is-(Before-We-Critique-It)">What an IUL Actually Is (Before We Critique It)</a></strong></li>
 <li><strong><a href="#Chapter-2:-The-Illustration-Problem:-How-the-Sale-Gets-Made">The Illustration Problem: How the Sale Gets Made</a></strong></li>
 <li><strong><a href="#Chapter-3:-The-Commission-Trap:-Why-the-Person-Selling-It-Won't-Be-Around">The Commission Trap: Why the Person Selling It Won’t Be Around</a></strong></li>
 <li><strong><a href="#Chapter-4:-The-Replacement-Game:-Churning-for-Commissions">The Replacement Game: Churning for Commissions</a></strong></li>
