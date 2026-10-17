@@ -2,12 +2,14 @@
 // The article's opening summary, one block in two parts with two jobs:
 //  - Quick Answer: a short narrative answer (heritage green, the strongest
 //    landmark on the page);
-//  - Here's What This Means for You: the article's own "Here's the Bottom
-//    Line" points, unchanged (this heading is fixed here), as a
-//    scannable list (light cream, so it complements the answer above it).
+//  - Key Points: the article's own "Here's the Bottom Line" points,
+//    unchanged (this heading is fixed here), as a scannable list.
+// Both labels share one treatment (the Quick Answer label: gold accent,
+// uppercase cream text, no colon); each point gets a white circle with a
+// green check.
 // The A–Z hubs answer no single question, so instead of a Quick Answer they
 // get a guide summary (src/config/hub-nav.ts) in the same green treatment.
-// Every key point gets the same typography; nothing is uppercased by CSS.
+// Every key point gets the same typography; only the labels are uppercased.
 interface Props {
   quickAnswer?: string;
   guide?: { label: string; text: string };
@@ -37,13 +39,13 @@ const { quickAnswer, guide, takeaways } = Astro.props;
       )}
       {takeaways && (
         <section class="summary__points" aria-labelledby="bottom-line-title">
-          <p class="summary__points-title" id="bottom-line-title">
-            Here’s What This Means for You:
-          </p>
+          <h2 class="summary__label" id="bottom-line-title">
+            Key Points
+          </h2>
           <ul class="summary__list" role="list">
             {takeaways.items.map((item) => (
               <li class="summary__item">
-                <svg class="summary__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+                <span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span>
                 <span set:html={item} />
               </li>
             ))}
@@ -103,12 +105,6 @@ const { quickAnswer, guide, takeaways } = Astro.props;
   .summary__answer + .summary__points {
     border-top: 1px solid var(--home-gold);
   }
-  .summary__points-title {
-    margin: 0 0 var(--space-4);
-    font-size: 1.125rem;
-    font-weight: 800;
-    color: #ffffff;
-  }
   .summary__points :global(a) {
     color: #ffffff;
     text-decoration: underline;
@@ -134,10 +130,24 @@ const { quickAnswer, guide, takeaways } = Astro.props;
   .summary__item :global(strong) {
     font-weight: inherit;
   }
+  /* White circle, green check (heritage green on white, 11.7:1); the thin
+     neutral ring keeps the circle's edge visible. Centered on the first
+     line of text (1.0625rem × 1.5 line height). */
   .summary__icon {
     flex: none;
-    margin-top: 0.15em;
-    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: calc((1.5em - 1.25rem) / 2);
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    color: var(--color-primary);
+  }
+  .summary__icon svg {
+    display: block;
   }
 
   @media (min-width: 48rem) {

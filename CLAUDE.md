@@ -881,11 +881,21 @@ is in place; see src/content/README.md for how pages were migrated.
 ## Conventions
 
 - Exactly one `<h1>` per page, inside the page body.
-- Article H2-H4 headings (and so the "In This Article" labels) use sentence
-  case (Randy, October 2026): first word capitalized, proper nouns, company and
-  product names, acronyms and people's names kept; quoted terms kept as
-  written. Fix the source text, never CSS text-transform. H1s are not
-  changed by this rule.
+- Article heading display standard (Randy, October 2026, replacing the
+  earlier "never CSS text-transform" rule): body H2-H6 display in ALL CAPS
+  through one shared CSS rule (global.css, `.prose` in ArticleLayout and
+  ContentLayout, not landing pages); sizes, weights and spacing unchanged.
+  The source text stays in sentence case (first word capitalized, proper
+  nouns, company and product names, acronyms and people's names kept;
+  quoted terms kept as written), so the "In This Article" labels, metadata
+  and search show sentence case. Don't type headings in capitals in the
+  source. H1s are Title Case as stored and are never transformed by CSS;
+  changing a migrated H1's wording still needs Randy's approval.
+- Article summary (ArticleSummary.astro): the "Quick Answer" and "Key Points"
+  labels share one treatment (gold accent, uppercase label, no colon); Key
+  Points shows the page's "Here's the Bottom Line" lines with white circular
+  icons holding a green check. The Markdown keeps its "Here's the Bottom
+  Line:" paragraph (enhance.ts finds it by that label).
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
