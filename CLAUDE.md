@@ -912,7 +912,7 @@ is in place; see src/content/README.md for how pages were migrated.
   in a page body (use `<ul>`, no typed "1." numbers in front of the links;
   e.g. /colonial-penn-two-year-wait/, /iul-book/). Links, anchors, order and
   link text stay as they are; ordinary numbered lists in article text are
-  not affected. `npm run verify` fails on a numbered table of contents
+  not affected. `npm run verify` fails on a numbered table of contents.
 - **Table of contents entries are Title Case, never ALL CAPS** (Randy,
   October 2026), even though the headings they point to display in ALL
   CAPS. The shared ArticleToc converts each heading's stored text with
