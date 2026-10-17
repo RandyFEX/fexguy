@@ -904,6 +904,15 @@ is in place; see src/content/README.md for how pages were migrated.
   markup in their body (the component's styles are global for that reason):
   each page's own opening answer paragraph, moved into the Quick Answer box,
   and its original points unchanged.
+- **ALL FEXGUY.COM ARTICLE TABLES OF CONTENTS MUST USE BULLET POINTS, NEVER
+  NUMBERED LISTS** (Randy, October 2026). This applies to new, revised and
+  migrated articles and to every article template: the shared "In This
+  Article" list (src/components/article/ArticleToc.astro, a `<ul>` with a
+  bullet marker, two columns from 48rem) and any table of contents written
+  in a page body (use `<ul>`, no typed "1." numbers in front of the links;
+  e.g. /colonial-penn-two-year-wait/, /iul-book/). Links, anchors, order and
+  link text stay as they are; ordinary numbered lists in article text are
+  not affected. `npm run verify` fails on a numbered table of contents.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
@@ -1020,7 +1029,9 @@ point to a missing page, and content guards fail on 888-656-4648, retired
 Meta Pixel IDs, video embeds, Funeral Funds social links, a FEXGuy email
 address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
-/gtl/ must stay a real 404 (not built, not redirected). Article pages must
+/gtl/ must stay a real 404 (not built, not redirected). Tables of contents
+must be bulleted (no `<ol>` of in-page links, no typed numbers before
+them). Article pages must
 show at most one Quick Answer and one key-points box, in that order, above
 "In This Article", with neither label repeated as body text (pages outside
 the template that show the label are listed as a note). Add `-- --strict` to
