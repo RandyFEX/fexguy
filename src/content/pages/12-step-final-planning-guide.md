@@ -16,19 +16,19 @@ search: true
 <p><br><strong>FOR EASIER NAVIGATION:</strong></p>
 
 <ul data-article-part="toc">
-<li><strong><a href="#Week-1-–-Organ-And-Tissue-Donation">Step 1 – Organ And Tissue Donation</a></strong></li>
-<li><strong><a href="#Week-2-–-Choosing-Your-Method-Of-Disposition">Step 2 – Choosing Your Method Of Disposition</a></strong></li>
-<li><strong><a href="#Week-3-–-Choosing-A-Casket-Or-Urn">Step 3 – Choosing A Casket Or Urn</a></strong></li>
-<li><strong><a href="#Week-4-–-Choosing-A-Funeral-Home">Step 4 – Choosing A Funeral Home</a></strong></li>
-<li><strong><a href="#Week-5-–-Writing-An-Obituary">Step 5 – Writing An Obituary</a></strong></li>
-<li><strong><a href="#Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot">Step 6 – Choosing A Cemetery Or Burial Plot</a></strong></li>
-<li><strong><a href="#Week-7-–-Choosing-A-Headstone">Step 7 – Choosing A Headstone</a></strong></li>
+<li><strong><a href="#Week-1-–-Organ-And-Tissue-Donation">Step 1 – Organ and Tissue Donation</a></strong></li>
+<li><strong><a href="#Week-2-–-Choosing-Your-Method-Of-Disposition">Step 2 – Choosing Your Method of Disposition</a></strong></li>
+<li><strong><a href="#Week-3-–-Choosing-A-Casket-Or-Urn">Step 3 – Choosing a Casket or Urn</a></strong></li>
+<li><strong><a href="#Week-4-–-Choosing-A-Funeral-Home">Step 4 – Choosing a Funeral Home</a></strong></li>
+<li><strong><a href="#Week-5-–-Writing-An-Obituary">Step 5 – Writing an Obituary</a></strong></li>
+<li><strong><a href="#Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot">Step 6 – Choosing a Cemetery or Burial Plot</a></strong></li>
+<li><strong><a href="#Week-7-–-Choosing-A-Headstone">Step 7 – Choosing a Headstone</a></strong></li>
 <li><strong><a href="#Week-8-–-Choosing-Funeral-Flowers">Step 8 – Choosing Funeral Flowers</a></strong></li>
-<li><strong><a href="#Week-9-–-Selecting-The-Funeral-Service">Step 9 – Selecting The Funeral Service</a></strong></li>
+<li><strong><a href="#Week-9-–-Selecting-The-Funeral-Service">Step 9 – Selecting the Funeral Service</a></strong></li>
 <li><strong><a href="#Week-10-–-Preventing-Identity-Theft">Step 10 – Preventing Identity Theft</a></strong></li>
 <li><strong><a href="#Week-11-–-Proper-Medication-Disposal">Step 11 – Proper Medication Disposal</a></strong></li>
 <li><strong><a href="#Week-12-–-Liquidating-Assets-After-Your-Death">Step 12 – Liquidating Assets After Your Death</a></strong></li>
-<li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content – Selecting Bible Verses For Your Funeral</a></strong></li>
+<li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content – Selecting Bible Verses for Your Funeral</a></strong></li>
 </ul>
 
 <h2 id="Week-1-–-Organ-And-Tissue-Donation" class="as-h3"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h2>
