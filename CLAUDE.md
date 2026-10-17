@@ -883,11 +883,11 @@ is in place; see src/content/README.md for how pages were migrated.
 - Exactly one `<h1>` per page, inside the page body.
 - Article heading display standard (Randy, October 2026, replacing the
   earlier "never CSS text-transform" rule): body H2-H6 of article content
-  display in ALL CAPS through one shared CSS rule (global.css): every
-  ArticleLayout page, plus the ContentLayout articles listed in
-  src/config/content-articles.ts. About, legal, form, contact, landing and
-  other utility pages keep their own heading typography. Sizes, weights and
-  spacing unchanged.
+  display in ALL CAPS through one shared CSS rule (global.css, keyed on
+  `data-article-layout`): every ArticleLayout page, plus the ContentLayout
+  articles listed in src/config/content-articles.ts. About, legal, form,
+  contact, landing and other utility pages keep their own heading
+  typography. Sizes, weights and spacing unchanged.
   The source text stays in sentence case (first word capitalized, proper
   nouns, company and product names, acronyms and people's names kept;
   quoted terms kept as written), so the "In This Article" labels, metadata
@@ -913,6 +913,40 @@ is in place; see src/content/README.md for how pages were migrated.
   e.g. /colonial-penn-two-year-wait/, /iul-book/). Links, anchors, order and
   link text stay as they are; ordinary numbered lists in article text are
   not affected. `npm run verify` fails on a numbered table of contents.
+- **Editorial article standard** (Randy, October 2026). Every page is
+  classified. Article-template pages (src/config/article-pages.ts) are
+  editorial articles; every other content page is listed in
+  src/config/content-articles.ts either in `CONTENT_ARTICLES` (an editorial
+  article outside the template) or in `NON_ARTICLE_PAGES` (type and reason:
+  company, contact, legal, utility, sales, archive); landing-layout pages
+  are sales pages, and the homepage, /reviews/ and /search/ carry their own
+  type. ContentLayout fails the build on an unclassified page; classify a
+  new page by what it is, not by its layout.
+  Every editorial article opens in this order: breadcrumbs (template), the
+  H1 (Title Case, exactly one), the shared author block (ArticleByline:
+  photo, name, credentials, the page's real updated date from its migrated
+  metadata, Editorial Guidelines link; exactly one), the Quick Answer, Key
+  Points, a bulleted table of contents (when there are 3 or more sections),
+  then the body. No second logo or loose "Written by" / "last updated"
+  lines under the H1. Template pages get this from ArticleLayout; the
+  ContentLayout articles get the same ArticleByline and ArticleToc (built
+  from their H2s, or the page's own bulleted table of contents marked
+  `data-article-part="toc"`) around their own summary markup. The shared
+  components carry stable markers (`data-article-layout`,
+  `data-article-part` = byline, quick-answer, guide-summary, key-points,
+  toc, body; `data-article-exceptions`). A missing element is allowed only
+  as a documented exception with its reason (article-holds.ts for the
+  template; `exceptions` in content-articles.ts), never invented content.
+  Current exceptions: the six Quick Answer holds, /buyers-guide/'s missing
+  key points, the A-Z hubs' guide summary (no key points), and the books and
+  12-step guide (no approved Quick Answer/Key Points copy; the Final Expense
+  book's chapter list is unlinked; the IUL Playbook's chapter list sits in
+  its Introduction section). Redundant FAQs are flagged for a separate
+  decision, never deleted by layout work. `npm run verify -- --strict`
+  checks every article's rendered HTML against this standard (see "Before
+  committing"); run the full verification before any article publication.
+  The inventory is in RandyFEX/fexguy-monitoring
+  reports/site-audits/2026-10-17-article-standard-inventory.md.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
@@ -1031,7 +1065,11 @@ address, "licensed in all 50 states" about Randy, office hours, the old PO
 Box or old consent wording (the GA4/Meta IDs must still be present), and
 /gtl/ must stay a real 404 (not built, not redirected). Tables of contents
 must be bulleted (no `<ol>` of in-page links, no typed numbers before
-them). Article pages must
+them). The article standard: every page classified; every editorial article
+with one H1, one byline after it, its Quick Answer and Key Points (or a
+declared exception, and no stale exception), a table of contents when it has
+3 or more sections, all in the standard order, no logo or loose author lines
+under the H1, and table-of-contents links that reach their sections. Article pages must
 show at most one Quick Answer and one key-points box, in that order, above
 "In This Article", with neither label repeated as body text (pages outside
 the template that show the label are listed as a note). Add `-- --strict` to

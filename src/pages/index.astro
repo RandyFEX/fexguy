@@ -42,7 +42,7 @@ const searchable = isSearchable(entry) ? '' : undefined;
 >
   {/* Pagefind indexes the page content (H1, hero text and sections), never the
      calls to action, rate examples, header or footer (data-pagefind-ignore). */}
-  <div class="home" data-pagefind-body={searchable}>
+  <div class="home" data-page-type="home" data-page-reason="Homepage." data-pagefind-body={searchable}>
     <HomeHero />
 
     <WhyFexguy />

@@ -24,7 +24,7 @@ const { quickAnswer, guide, takeaways } = Astro.props;
   (quickAnswer || guide || takeaways) && (
     <div class="summary">
       {quickAnswer && (
-        <section class="summary__answer" aria-labelledby="quick-answer-title">
+        <section class="summary__answer" data-article-part="quick-answer" aria-labelledby="quick-answer-title">
           <h2 class="summary__label" id="quick-answer-title">
             Quick Answer
           </h2>
@@ -32,7 +32,7 @@ const { quickAnswer, guide, takeaways } = Astro.props;
         </section>
       )}
       {guide && (
-        <section class="summary__answer" aria-labelledby="guide-summary-title">
+        <section class="summary__answer" data-article-part="guide-summary" aria-labelledby="guide-summary-title">
           <h2 class="summary__label" id="guide-summary-title">
             {guide.label}
           </h2>
@@ -40,7 +40,7 @@ const { quickAnswer, guide, takeaways } = Astro.props;
         </section>
       )}
       {takeaways && (
-        <section class="summary__points" aria-labelledby="bottom-line-title">
+        <section class="summary__points" data-article-part="key-points" aria-labelledby="bottom-line-title">
           <h2 class="summary__label" id="bottom-line-title">
             Key Points
           </h2>

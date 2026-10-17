@@ -15,7 +15,7 @@ search: true
 
 <p><br><strong>FOR EASIER NAVIGATION:</strong></p>
 
-<ul>
+<ul data-article-part="toc">
 <li><strong><a href="#Week-1-–-Organ-And-Tissue-Donation">Step 1 – Organ And Tissue Donation</a></strong></li>
 <li><strong><a href="#Week-2-–-Choosing-Your-Method-Of-Disposition">Step 2 – Choosing Your Method Of Disposition</a></strong></li>
 <li><strong><a href="#Week-3-–-Choosing-A-Casket-Or-Urn">Step 3 – Choosing A Casket Or Urn</a></strong></li>

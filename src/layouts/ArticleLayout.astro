@@ -33,6 +33,7 @@ import { lead } from '@/config/lead';
 import { categoryMoreHtml } from '@/lib/hub-nav';
 import { HUB_SUMMARIES } from '@/config/hub-nav';
 import { LEGACY_INTROS } from '@/config/article-intros';
+import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
 
 export interface Props {
   entry: PageEntry;
@@ -46,6 +47,17 @@ const article = enhanceArticle(entry.rendered?.html ?? '', {
   legacyIntro: LEGACY_INTROS[pagePath(entry)],
 });
 const hub = config.variant === 'hub';
+// Opening elements this article legitimately lacks (the build guard in
+// [...article].astro requires each to have a hold or a guide summary), for
+// `npm run verify`: an A–Z hub's guide summary stands in for both.
+const guide = HUB_SUMMARIES[pagePath(entry)];
+const exceptions =
+  [
+    pagePath(entry) in QUICK_ANSWER_HELD && 'quick-answer',
+    (pagePath(entry) in SUMMARY_HELD || (guide && !article.takeaways)) && 'key-points',
+  ]
+    .filter(Boolean)
+    .join(' ') || undefined;
 const searchable = isSearchable(entry) ? '' : undefined;
 // Health category pages: the conditions their article doesn't link yet
 // (src/config/hub-nav.ts), after the article.
@@ -91,7 +103,7 @@ const schema = articleGraph({
   </header>
 
   <div class="container art-grid">
-    <article class="art-main">
+    <article class="art-main" data-article-layout="template" data-article-exceptions={exceptions}>
       <ArticleSummary quickAnswer={config.quickAnswer} guide={HUB_SUMMARIES[pagePath(entry)]} takeaways={article.takeaways} />
 
       <p class="art-cta" data-pagefind-ignore>
@@ -103,9 +115,9 @@ const schema = articleGraph({
 
       <ArticleToc items={article.toc} />
 
-      {article.intro && <div class="prose wp-content art-body art-body--intro" data-pagefind-body={searchable} set:html={article.intro} />}
+      {article.intro && <div class="prose wp-content art-body art-body--intro" data-article-part="body" data-pagefind-body={searchable} set:html={article.intro} />}
 
-      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-pagefind-body={searchable} set:html={article.body} />
+      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-article-part="body" data-pagefind-body={searchable} set:html={article.body} />
 
       {categoryMore && <div class="art-body art-catmore" set:html={categoryMore} />}
 

@@ -251,10 +251,10 @@ a:hover {
    display in ALL CAPS; sizes, weights and spacing are unchanged. The source
    text stays as written (sentence case), so titles, metadata, the "In This
    Article" list and search keep it. The H1 is never transformed. It applies
-   only to article content: the article template (.art-main) and the content
-   pages listed in src/config/content-articles.ts (.page--article). About,
+   only to editorial articles, marked data-article-layout by the article
+   template and by ContentLayout (src/config/content-articles.ts). About,
    legal, form and other utility pages keep their own headings. */
-:where(.page--article, .art-main) .prose :is(h2, h3, h4, h5, h6) {
+:where([data-article-layout]) .prose :is(h2, h3, h4, h5, h6) {
   text-transform: uppercase;
   overflow-wrap: break-word;
 }
