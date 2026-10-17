@@ -247,7 +247,7 @@ const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
 // in that order, above "In This Article", and neither label repeated as
 // ordinary text in the article body. Pages outside the article template that
 // still show the key-points label as body text are listed, not failed.
-const SUMMARY_LABELS = /Here[’']s What This Means for You|Here[’']s the Bottom Line|Quick Answer/;
+const SUMMARY_LABELS = /Key Points|Here[’']s What This Means for You|Here[’']s the Bottom Line|Quick Answer/;
 const structureProblems = [];
 const strandedSummaries = [];
 for (const file of pages) {

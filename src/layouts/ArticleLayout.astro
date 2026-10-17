@@ -153,7 +153,8 @@ const schema = articleGraph({
   /* Rhythm: every H2 opens a new section — generous space above, a full
      hairline and a short gold accent (the homepage's heading rule), so the
      major landmarks are easy to spot while scrolling. One treatment for all
-     H2s; one for all H3s (green, smaller). Case is never changed by CSS. */
+     H2s; one for all H3s (green, smaller). H2-H6 display in ALL CAPS (the
+     article heading standard in global.css); the source keeps its case. */
   body.page-article-v2 .art-body h2 {
     position: relative;
     margin: 3.5rem 0 1.25rem;
@@ -163,7 +164,7 @@ const schema = articleGraph({
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -0.01em;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--color-text);
     scroll-margin-top: var(--space-4);
   }
@@ -185,7 +186,7 @@ const schema = articleGraph({
     font-weight: 600;
     line-height: 1.35;
     letter-spacing: 0;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--color-primary);
   }
   body.page-article-v2 .art-body h3 strong {
@@ -332,7 +333,7 @@ const schema = articleGraph({
     font-size: 1.0625rem;
     font-weight: 700;
     line-height: 1.4;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--color-text);
   }
   body.page-article-v2 .art-body h4 strong {

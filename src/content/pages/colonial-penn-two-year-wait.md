@@ -21,7 +21,18 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p><strong>Here’s What This Means for You:</strong><br>• Colonial Penn has a strict 2-year waiting period on all policies<br>• Your family won’t get full benefits if you die early<br>• Most deaths in the first 2 years only return premiums paid<br>• You’re paying full price without full coverage during that time<br>• Better policies exist with first-day coverage at similar prices</p>
+<div class="summary" data-pagefind-ignore>
+<section class="summary__points" aria-labelledby="key-points-title">
+<h2 class="summary__label" id="key-points-title">Key Points</h2>
+<ul class="summary__list" role="list">
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Colonial Penn has a strict 2-year waiting period on all policies</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Your family won’t get full benefits if you die early</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Most deaths in the first 2 years only return premiums paid</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>You’re paying full price without full coverage during that time</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Better policies exist with first-day coverage at similar prices</span></li>
+</ul>
+</section>
+</div>
 
 <p>The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family usually only gets your premiums back, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
 

@@ -1,8 +1,8 @@
 // Article pages deliberately shipped without part of the opening summary
 // (src/components/article/ArticleSummary.astro). The article route checks
 // every page in src/config/article-pages.ts at build time: a page without a
-// Quick Answer, or without its key-points list ("Here’s What This Means for
-// You:"), fails the build unless it is listed here with the reason. A listed
+// Quick Answer, or without its key-points list (shown as "Key Points"),
+// fails the build unless it is listed here with the reason. A listed
 // page that has the element fails too, so a hold is removed with its fix.
 // The A–Z hubs use a guide summary instead (src/config/hub-nav.ts).
 

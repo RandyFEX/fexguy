@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Can I Buy Life Insurance on my Mother?</h1>
+<h1>Can I Buy Life Insurance on My Mother?</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
