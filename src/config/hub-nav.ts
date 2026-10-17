@@ -154,7 +154,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
       { href: '/medicaid-spend-down-rules-on-life-insurance/', label: 'Medicaid Spend Down Rules on Life Insurance' },
     ],
     more: [
-      { href: '/burial-insurance/state-regulated-life-insurance/', label: 'State Regulated Life Insurance…Is It A Lie?' },
+      { href: '/burial-insurance/state-regulated-life-insurance/', label: 'State Regulated Life Insurance: Is It BS?' },
     ],
   },
 ];
