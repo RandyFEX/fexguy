@@ -80,7 +80,7 @@ const exceptions =
             <Fragment set:html={parts.head} />
             <ArticleByline updated={updated} />
             <Fragment set:html={parts.summary} />
-            {!parts.ownToc && !ex.toc && <ArticleToc items={parts.toc} />}
+            {!parts.ownToc && !ex.toc && <ArticleToc items={parts.toc} path={path} />}
             <Fragment set:html={parts.rest} />
           </>
         ) : (
