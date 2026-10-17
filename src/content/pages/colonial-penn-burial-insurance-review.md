@@ -12,6 +12,10 @@ sidebar: true
 <h1>Colonial Penn $9.95 Life Insurance Review – Truth Revealed!</h1>
 
 <div class="summary" data-pagefind-ignore>
+<section class="summary__answer" aria-labelledby="quick-answer-title">
+<h2 class="summary__label" id="quick-answer-title">Quick Answer</h2>
+<p class="summary__text">Colonial Penn burial insurance is a guaranteed-acceptance whole-life policy designed primarily for seniors who can’t qualify elsewhere. The appeal is simple: no health questions and easy approval. The problem is cost and value. Their “unit” pricing means $9.95 doesn’t buy much coverage, especially as you get older, and most policies include a 2-year waiting period before full benefits pay out. Compared to other burial insurance options, coverage is usually lower, and pricing is higher, which is why many people end up overpaying for less protection.</p>
+</section>
 <section class="summary__points" aria-labelledby="key-points-title">
 <h2 class="summary__label" id="key-points-title">Key Points</h2>
 <ul class="summary__list" role="list">
@@ -24,10 +28,6 @@ sidebar: true
 </ul>
 </section>
 </div>
-
-<p>Colonial Penn burial insurance is a guaranteed-acceptance whole-life policy designed primarily for seniors who can’t qualify elsewhere. The appeal is simple: no health questions and easy approval. The problem is cost and value. Their “unit” pricing means $9.95 doesn’t buy much coverage, especially as you get older, and most policies include a 2-year waiting period before full benefits pay out. Compared to other burial insurance options, coverage is usually lower, and pricing is higher, which is why many people end up overpaying for less protection.</p>
-
-<p>Complete my quote request form on this page to get real coverage without overpaying or guessing.</p>
 
 <hr>
 

@@ -22,6 +22,10 @@ sidebar: true
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
 <div class="summary" data-pagefind-ignore>
+<section class="summary__answer" aria-labelledby="quick-answer-title">
+<h2 class="summary__label" id="quick-answer-title">Quick Answer</h2>
+<p class="summary__text">The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family usually only gets your premiums back, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
+</section>
 <section class="summary__points" aria-labelledby="key-points-title">
 <h2 class="summary__label" id="key-points-title">Key Points</h2>
 <ul class="summary__list" role="list">
@@ -33,10 +37,6 @@ sidebar: true
 </ul>
 </section>
 </div>
-
-<p>The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family usually only gets your premiums back, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
-
-<p>Complete my quote request form on this page to quickly avoid this mistake.</p>
 
 <table>
 <thead>

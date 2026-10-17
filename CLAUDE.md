@@ -900,9 +900,10 @@ is in place; see src/content/README.md for how pages were migrated.
   icons holding a green check. The Markdown keeps its "Here's the Bottom
   Line:" paragraph (enhance.ts finds it by that label). The two Colonial
   Penn pages outside the template (/colonial-penn-burial-insurance-review/,
-  /colonial-penn-two-year-wait/) carry the same Key Points markup in their
-  body (the component's styles are global for that reason), with their
-  original points unchanged.
+  /colonial-penn-two-year-wait/) carry the same Quick Answer and Key Points
+  markup in their body (the component's styles are global for that reason):
+  each page's own opening answer paragraph, moved into the Quick Answer box,
+  and its original points unchanged.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
