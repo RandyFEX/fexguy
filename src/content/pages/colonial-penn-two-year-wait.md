@@ -38,8 +38,6 @@ sidebar: true
 </section>
 </div>
 
-<p>Complete my quote request form on this page to quickly avoid this mistake.</p>
-
 <table>
 <thead>
 <tr>
