@@ -1,8 +1,9 @@
 ---
 // Compact author/trust row under the article title: Randy's photo, who wrote
 // it, his credentials (only what the site already states: a licensed life
-// insurance agent, and Founder of Final Expense Guy per /about/), the page's
-// real last-updated date and the editorial guidelines.
+// insurance agent, linked to /licenses/, and Founder of Final Expense Guy,
+// linked to /about/), the page's real last-updated date and the editorial
+// guidelines.
 import RandyPhoto from './RandyPhoto.astro';
 
 interface Props {
@@ -24,7 +25,7 @@ const label = updated
   <RandyPhoto size={48} />
   <div class="byline__text">
     <p class="byline__name">Written by <a class="byline__author" href="/randy-vandervaate/">Randy VanderVaate</a></p>
-    <p class="byline__meta">Licensed Life Insurance Agent <span aria-hidden="true">•</span> Founder of Final Expense Guy</p>
+    <p class="byline__meta"><a href="/licenses/">Licensed Life Insurance Agent</a> <span aria-hidden="true">•</span> <a href="/about/">Founder of Final Expense Guy</a></p>
     <p class="byline__meta">
       {label && (
         <>
