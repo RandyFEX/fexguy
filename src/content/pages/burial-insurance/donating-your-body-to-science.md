@@ -21,24 +21,6 @@ sidebar: true
 
 <p><strong>!!! DON’T CALL US ABOUT BODY DONATION !!!<br>Final Expense Guy or Final Expense Guy DOES NOT ACCEPT body donations!<br>DO NOT call us asking about body donation. <br>Read this our article so that you’ll know how do donate your body properly.</strong></p>
 
-<p>Donating your body to science is also an excellent way to avoid the cost of a funeral and burial. You don’t need to pay one dime for funeral if you choose to go this route.</p>
-
-<ul>
-<li>No embalming cost – embalming prevents the specific test from being performed because it damages the tissues</li>
-<li>No casket cost – you don’t need a coffin, but you can rent one from the      funeral home if you want to have a memorial service</li>
-<li>No cremation fee – facilities that accept whole body donations provide a free cremation.</li>
-</ul>
-
-<p>It is both a practical and ethical way of leaving a lasting
-legacy. </p>
-
-<p>In most cases, you will know in advance if you will qualify
-for this program. So if you feel like you would like to leave a legacy and help
-the continuance of medical training or you want to forego the cost of a funeral
-– then sign up for whole body donation.</p>
-
-<p>This article will give all the information you need to know about whole-body donations and if it’s right for you. </p>
-
 <table>
 <thead>
 <tr>
@@ -73,6 +55,13 @@ the continuance of medical training or you want to forego the cost of a funeral
 <p>For many years, only medical schools have accepted whole body donations. Today, private programs are also accepting whole bodies for donations. There are many private whole-body donation programs in the US. Most of these programs accept bodies from their surrounding areas.</p>
 
 <p>There is generally no cost to donate a body to science. Most programs cover the cremation cost once the remains have served its purpose and returned the ashes to the families.</p>
+
+<p>Donating your body can also remove these funeral costs:</p>
+
+<ul>
+<li>No embalming cost – embalming prevents the specific test from being performed because it damages the tissues</li>
+<li>No casket cost – you don’t need a coffin, but you can rent one from the      funeral home if you want to have a memorial service</li>
+</ul>
 
 <p>The Uniform Anatomical Gift Act governs a person’s legal right to choose whole body donation. Most states largely adopt it. </p>
 
@@ -115,6 +104,11 @@ their families.</p>
 <p>The whole body donation program is currently managed by the Institute for Plastination in Heidelberg, Germany, and is on display in different parts of the world. They are not accepting new body donations because they are at full capacity, but you can check back in as time progresses.</p>
 
 <h2 id="how-does-donating-your-body-to-science-work"><br><strong>How does donating your body to science really work? </strong></h2>
+
+<p>In most cases, you will know in advance if you will qualify
+for this program. So if you feel like you would like to leave a legacy and help
+the continuance of medical training or you want to forego the cost of a funeral
+– then sign up for whole body donation.</p>
 
 <p>How do you donate your body to science? Donating your body to science is an easy process. Here are the ways:</p>
 

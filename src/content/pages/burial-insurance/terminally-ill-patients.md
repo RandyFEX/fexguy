@@ -19,9 +19,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
-<p> <strong>!!! IMPORTANT – READ THIS &amp; WATCH VIDEO !!! <br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
-
-<p>In this article, we will explain who should buy burial insurance, and the options you have if you are a terminally ill patient.</p>
+<p> <strong>!!! IMPORTANT – READ THIS !!! <br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
 
 <table>
 <thead>

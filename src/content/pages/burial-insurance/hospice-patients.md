@@ -19,8 +19,6 @@ sidebar: true
 
 <p> <strong>!!! READ THIS FIRST !!! <br><br>Being in hospice indicates a life-threatening health condition, and there are no insurance companies that offer 1st-day coverage to people in hospice.<br><br>We recommend people in hospice NOT purchase any life insurance product, as hospice patients will pass away before the mandatory 2-year waiting is completed.</strong></p>
 
-<p>In this post, We will explain who should buy guaranteed issue life insurance and why we don’t recommend guaranteed issue life insurance for hospice patients. We will even explain a few non-burial insurance options available to you.</p>
-
 <table>
 <thead>
 <tr>

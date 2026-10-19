@@ -25,8 +25,6 @@ sidebar: true
 
 <p><strong>NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.</strong></p>
 
-<p>Most people can get easy approval for 1st-day coverage with great companies through my simple process, which handles the hard work for your family.</p>
-
 <figure><img fetchpriority="high" decoding="async" loading="eager" width="1024" height="536" src="/wp-content/uploads/2026/01/State-Farm-Burial-Insurance-Review-Image-1-1024x536.png" alt=""></figure>
 
 <h2>Expert 5-star burial insurance rating</h2>

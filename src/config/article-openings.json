@@ -108,8 +108,8 @@
     "/burial-insurance/terminally-ill-patients/": {
       "elements": [
         {
-          "starts": "!!! IMPORTANT – READ THIS & WATCH VIDEO !!!",
-          "reason": "Eligibility warning: terminally ill applicants can only get a 2-year waiting period policy. (Its \"WATCH VIDEO\" wording refers to a video embed removed in October 2026; see Unresolved.)"
+          "starts": "!!! IMPORTANT – READ THIS !!!",
+          "reason": "Eligibility warning: terminally ill applicants can only get a 2-year waiting period policy."
         }
       ]
     },
@@ -205,22 +205,5 @@
       "noHeadings": "The article body has no headings (its section labels are bold text); left as is by the closed migration-fidelity review (Randy, October 2026). Lapses if a heading is added."
     }
   },
-  "pendingReview": {
-    "/burial-insurance/aids-hiv/": "\"In this article, we will discuss what options you have...\" (after the notice)",
-    "/life-insurance-for-hiv-positive/": "\"In this article, we will discuss what options you have...\" (after the notice)",
-    "/burial-insurance/bathing-disability-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
-    "/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
-    "/burial-insurance/continence-activities-of-daily-living-adl/": "\"In this article, we are going to discuss...\" (after the notice)",
-    "/burial-insurance/eating-activities-of-daily-living-adl/": "\"If you or a loved one currently need assistance with eating...\" (after the notice)",
-    "/burial-insurance/transferring-activities-of-daily-living-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
-    "/burial-insurance/down-syndrome/": "\"In this article, we will discuss how life insurance companies respond...\" (after the notice)",
-    "/burial-insurance/hospice-patients/": "\"In this post, We will explain who should buy guaranteed issue...\" (after the notice)",
-    "/burial-insurance/nursing-home-residents/": "\"This article will discuss what to weigh...\" (after the notice)",
-    "/burial-insurance/terminal-illness/": "\"This article will explain when burial insurance is appropriate...\" (after the notice)",
-    "/burial-insurance/terminally-ill-patients/": "\"In this article, we will explain who should buy burial insurance...\" (after the notice)",
-    "/cancer-insurance/": "\"This article will discuss the importance of cancer insurance...\" (after the notice)",
-    "/burial-insurance/donating-your-body-to-science/": "five paragraphs and a list on body donation after the notice",
-    "/trustage-price-increase/": "three paragraphs on the 5-year price increase and the \"This article will examine...\" line (after the warning)",
-    "/state-farm/": "\"Most people can get easy approval for 1st-day coverage... through my simple process\" (after the note)"
-  }
+  "pendingReview": {}
 }

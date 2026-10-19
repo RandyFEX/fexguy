@@ -19,8 +19,6 @@ sidebar: true
 
 <p><strong><strong>!!! READ THIS FIRST !!! </strong></strong><br><br><strong>If you need help with ADL’s, the only plan you will qualify for is a 2-year waiting period policy. </strong><br><br><strong>You&#160;WILL NOT&#160;qualify for 1st-day coverage if you need help with ADLs.</strong></p>
 
-<p>If you or a loved one currently need assistance with eating and need to get a life insurance policy to cover your final expenses, keep reading. This article will help you understand your option.</p>
-
 <table>
 <thead>
 <tr>

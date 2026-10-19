@@ -21,8 +21,6 @@ sidebar: true
 
 <p><strong>!!! READ THIS FIRST !!! <br><br>Being in a nursing home often indicates that people have significant health or medical issues, and there are no insurance companies that offer 1st-day coverage to people in nursing homes.<br><br>We recommend people in nursing homes purchase a guaranteed issue life insurance that asks no health questions but does come with a 2-year waiting period.</strong></p>
 
-<p>This article will discuss what to weigh before buying burial insurance for people who are in nursing homes. We will also inform you about the non-burial insurance options open for you.</p>
-
 <table>
 <thead>
 <tr>

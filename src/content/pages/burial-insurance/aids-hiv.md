@@ -19,8 +19,6 @@ sidebar: true
 
 <p><strong>IMPORTANT: Having AIDS or HIV will result in a MANDATORY 2-YEAR WAITING PERIOD with every insurance company</strong>.</p>
 
-<p>In this article, we will discuss what options you have when you have been diagnosed with AIDS. In addition, we will teach you how to find affordable burial insurance with AIDS or HIV</p>
-
 <table>
 <thead>
 <tr>

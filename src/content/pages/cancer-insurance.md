@@ -19,8 +19,6 @@ sidebar: true
 
 <p><strong>YOU CAN’T GET CANCER INSURANCE IF YOU CURRENTLY HAVE CANCER! <br>ACT NOW, BEFORE IT’S TOO LATE!</strong></p>
 
-<p>This article will discuss the importance of cancer insurance and how it will benefit you and your loved ones.</p>
-
 <table>
 <thead>
 <tr>

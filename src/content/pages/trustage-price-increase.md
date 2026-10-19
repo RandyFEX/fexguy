@@ -29,12 +29,6 @@ sidebar: true
 
 <p><strong>WARNING!!! Let’s read the FINE PRINT print for a TruStage term life insurance policy: <br><br> “TruStage® Term Life Insurance to Age 80 is made available through TruStage Insurance Agency, LLC and issued by CMFG Life Insurance Company. This is a term policy that increases when entering each five-year band: 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, and 75. Renewable to age 80.”</strong></p>
 
-<p>TruStage term life policy offers are good until you turn 70. You start with a lower monthly premium, and then every five years, TruStage has a mandatory price increase. When you hit a new 5-year age band, the premium goes up in price.</p>
-
-<p>You pay more as you get older until you get to the point where it’s too expensive to pay the premium. And when you reach age 80, the coverage ends.</p>
-
-<p>This article will examine the TruStage price increase to see if their term life insurance is best for you. You can also read our other reviews on <a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>, <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>, <a href="/lumico-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Lumico</a>, and <a href="/colonial-penn-two-year-wait/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> by clicking the link. </p>
-
 <table>
 <thead>
 <tr>
@@ -109,6 +103,7 @@ sidebar: true
 
 <ul>
 <li>You can qualify for term life insurance without a medical exam.</li>
+<li>TruStage term life policy offers are good until you turn 70.</li>
 <li>Coverage lasts until age 80 instead of a fixed 10-, 20- or 30-year term.</li>
 <li>The premium goes up each time you enter a new five-year age band, through age 75.</li>
 <li>If you die during the term your policy covers, your beneficiaries will receive a cash payout in the face of your policy.</li>
@@ -195,6 +190,8 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 <h2 id="bottom-line"><br><strong>Bottom line:</strong></h2>
 
 <p>Based on the rate chart TruStage term life insurance tends to be more expensive than other companies offering level term policies. Additionally, term life insurance is never appropriate for your burial needs as you age. </p>
+
+<p>You can also read our other reviews on <a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>, <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>, <a href="/lumico-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Lumico</a>, and <a href="/colonial-penn-two-year-wait/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> by clicking the link. </p>
 
 <p>If you purchased term life insurance with TruStage with a premium that increases in price every five years, we hope you will replace it with level premium term life insurance.</p>
 

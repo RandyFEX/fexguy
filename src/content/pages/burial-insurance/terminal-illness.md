@@ -19,8 +19,6 @@ sidebar: true
 
 <p><strong>!!! READ THIS FIRST !!! <br><br>Having a terminal illness is a life-threatening health condition, and there are no insurance companies that offer 1st-day coverage to people with a <strong>terminal illness</strong>.<br><br>We recommend <strong>terminal illness</strong> patients purchase a guaranteed issue life insurance that asks no health questions but does come with a 2-year waiting.</strong></p>
 
-<p>This article will explain when burial insurance is appropriate, how to qualify for the best rates if you don’t have a terminal illness, and what non-burial insurance alternatives there are for terminally ill people.</p>
-
 <table>
 <thead>
 <tr>
