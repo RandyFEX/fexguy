@@ -13,8 +13,6 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Burial insurance gets more expensive every year after age 70<br>• Many seniors get stuck in 2-year waiting period policies<br>• Coverage amounts are usually small and won’t cover everything<br>• Applying with the wrong company can double your monthly cost<br>• Health issues can limit you to worse and more expensive plans</p>
 
-<p>Burial insurance is a type of whole life insurance designed to cover funeral costs and small expenses, typically with coverage of $50,000 or less. As you age, premiums rise quickly, often ranging from about $28 to over $100 per month, depending on health and coverage.</p>
-
 <p>Complete my quote request form on this page to quickly avoid overpaying.<audio></audio></p>
 
 <table>
@@ -109,6 +107,8 @@ sidebar: true
 <p>You may ask, “how much is life insurance for 70? Your funeral insurance rates and burial insurance costs will depend on your age, height and weight, medical records, and prescription history. The best funeral and burial insurance policies require no waiting period for immediate burial insurance coverage.</p>
 
 <p>The cost of a burial is in the $8,000-$10,000 range and will go up yearly with inflation. Purchasing your policy now is your best bet to save loads of money in the future.</p>
+
+<p>Burial insurance is a type of whole life insurance designed to cover funeral costs and small expenses, typically with coverage of $50,000 or less. As you age, premiums rise quickly, often ranging from about $28 to over $100 per month, depending on health and coverage.</p>
 
 <h2 id="what-is-the-best-life-insurance-option-for-70-and-older"><strong>What is the best life insurance option for 70 and older?</strong></h2>
 

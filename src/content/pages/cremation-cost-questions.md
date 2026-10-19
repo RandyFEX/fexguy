@@ -23,8 +23,6 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Cremation costs vary widely based on services and location<br>• Direct cremation is cheapest but skips the ceremony and viewing<br>• Funeral homes often bundle services that raise your total cost<br>• Prices for the same service can vary by thousands locally<br>• Add-ons like urns and services quickly increase the final bill</p>
 
-<p>Cremation cost questions usually come down to whether you want a simple or full service. A direct cremation can cost around $1,000 to $3,600, while a full cremation with a service can reach $5,500 to $6,300 or more. The reason is simple. The more services you add, like viewing, embalming, or memorials, the more the price climbs. Many families overpay because they don’t realize how much control they have over these choices.</p>
-
 <p>Complete my quote request form on this page to quickly compare real cremation costs.</p>
 
 <figure><picture><source type="image/avif" srcset="/images/articles/cremation-questions-save-money-800.avif 800w, /images/articles/cremation-questions-save-money-1200.avif 1200w, /images/articles/cremation-questions-save-money-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><source type="image/webp" srcset="/images/articles/cremation-questions-save-money-800.webp 800w, /images/articles/cremation-questions-save-money-1200.webp 1200w, /images/articles/cremation-questions-save-money-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img decoding="async" loading="lazy" alt="" width="2048" height="1152" src="/images/articles/cremation-questions-save-money.jpg"></picture></figure>
@@ -32,6 +30,8 @@ sidebar: true
 <hr>
 
 <h2 id="h-what-does-cremation-really-cost"><strong>What does cremation really cost?</strong></h2>
+
+<p>Cremation cost questions usually come down to whether you want a simple or full service. A direct cremation can cost around $1,000 to $3,600, while a full cremation with a service can reach $5,500 to $6,300 or more. The more services you add, like viewing, embalming, or memorials, the more the price climbs. Many families overpay because they don’t realize how much control they have over these choices.</p>
 
 <p>Low advertised prices rarely reflect the true cost of cremation once you add transportation, required fees, and even a basic memorial service.</p>
 

@@ -15,8 +15,6 @@ sidebar: true
 
 <p>• Cheap burial insurance usually means lower coverage or stricter limitations<br>• The lowest prices often come with waiting periods or reduced early payouts<br>• TV ads showing “cheap” rates are usually misleading and unrealistic<br>• Health questions can lower your cost, but limit who qualifies<br>• Guaranteed plans cost more, even though they seem easier to get<br>• Not comparing companies is why most people overpay long term</p>
 
-<p>Most burial insurance is whole life insurance with smaller coverage amounts, like $5,000 to $25,000. Monthly costs usually fall around $30 to $100, depending on your age, health, and coverage amount. The kind of policy you choose also affects where you land in that range, so it helps to know which “cheap” policies to avoid.</p>
-
 <p>Complete my quote request form on this page to get real rates fast without overpaying.</p>
 
 <table>
@@ -132,7 +130,7 @@ sidebar: true
 
 <p id="706a0ab0-c447-41ca-ba90-6a98a117d59f"><br><strong>How much does cheap burial insurance cost?</strong></p>
 
-<p id="706a0ab0-c447-41ca-ba90-6a98a117d59f">The cost of cheap burial insurance varies depending on your age, health, and other factors.</p>
+<p id="706a0ab0-c447-41ca-ba90-6a98a117d59f">The cost of cheap burial insurance varies depending on your age, health, coverage amount, and other factors. Monthly costs usually fall around $30 to $100.</p>
 
 <p id="706a0ab0-c447-41ca-ba90-6a98a117d59f"><br><strong>When should I buy burial insurance?</strong></p>
 
@@ -172,7 +170,7 @@ sidebar: true
 
 <p id="706a0ab0-c447-41ca-ba90-6a98a117d59f"><br><strong>What is the maximum amount of coverage I can get with cheap burial insurance?</strong></p>
 
-<p id="706a0ab0-c447-41ca-ba90-6a98a117d59f">The maximum coverage you can get with cheap burial insurance varies by insurer.</p>
+<p id="706a0ab0-c447-41ca-ba90-6a98a117d59f">The maximum coverage you can get with cheap burial insurance varies by insurer. Most burial insurance is whole life insurance with smaller coverage amounts, like $5,000 to $25,000.</p>
 
 <p id="706a0ab0-c447-41ca-ba90-6a98a117d59f"><br><strong>Can I get cheap burial insurance for my mom?</strong></p>
 

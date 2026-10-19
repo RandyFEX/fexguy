@@ -23,8 +23,6 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Cheapest burial insurance usually requires answering health questions upfront<br>• No-exam policies sound easy, but cost significantly more long term<br>• Prices vary widely based on age, health, and coverage amount<br>• Buying direct online often costs more than working with an agent<br>• Not comparing multiple companies can cost you thousands over time<br>• Waiting to apply increases your cost and limits your options</p>
 
-<p>Burial insurance, which is a type of whole life insurance, is designed to cover final expenses, usually in smaller amounts like $5,000 to $25,000. Most people don’t realize rates can range from around $20 to $200 per month, depending on age and health. The mistake is choosing convenience over price and locking into a bad deal.</p>
-
 <p>Get a quote on this page by completing my quote request form now.</p>
 
 <table>
@@ -192,7 +190,7 @@ sidebar: true
 <li>Pre-existing medical conditions</li>
 </ul>
 
-<p>The average monthly premium for a $10,000 burial insurance policy is around $49 per month for a non-tobacco user male. Depending on the different health factors, your premium amount might be higher or lower.</p>
+<p>The average monthly premium for a $10,000 burial insurance policy is around $49 per month for a non-tobacco user male. Depending on the different health factors, your premium amount might be higher or lower. Rates can range from around $20 to $200 per month, depending on age and health.</p>
 
 <blockquote>
 <p><strong>You can pay your premium weekly, monthly, or even annually.</strong></p>

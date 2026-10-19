@@ -23,8 +23,6 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Sample rates on our site for $10,000 of coverage run from about $22 to $146 a month, depending on age and sex<br>• Age and health are the biggest factors driving your monthly cost<br>• Guaranteed issue plans cost more and give you less value<br>• Smokers and serious health issues can double your premium<br>• Waiting to buy almost always means higher prices later<br>• Not comparing companies can cost you hundreds or thousands extra</p>
 
-<p>Final expense insurance is a type of whole life insurance, so your rate stays fixed for life, but what you start at matters a lot. The biggest mistake people make is assuming all prices are the same when they’re not even close.</p>
-
 <p>Get a quote on this page by completing my quote request form now.</p>
 
 <table>
