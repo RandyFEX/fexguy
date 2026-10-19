@@ -1,0 +1,9 @@
+{
+  "_comment": "Quick Answer sentences an article may deliberately repeat in its opening text (npm run verify, 'Quick Answer repeats'). Each entry is the page path, the opening words of the Quick Answer sentence, and why the repeat is intentional. Keep this list short: only notices a reader must not miss, never ordinary restatements.",
+  "/lumico-burial-insurance-review/": [
+    {
+      "sentence": "Lumico stopped accepting new applications",
+      "reason": "Application-status notice: the article body opens with the full notice and its sources, which the Quick Answer only summarizes."
+    }
+  ]
+}

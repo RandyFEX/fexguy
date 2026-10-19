@@ -17,14 +17,6 @@ sidebar: true
 
 <p>Complete my quote request form on this page to quickly find the best option.</p>
 
-<p>If you are <a href="/final-expense-life-insurance-over-80/" target="_blank" rel="noreferrer noopener nofollow">over age 80</a>, you’ve likely seen many friends and family members pass away. You understand life is a gift, and you must roll with the punches that life delivers you. Your guess is as good as mine as to when you will die. But it’s always good to be prepared.</p>
-
-<p>Life insurance for an 80-year-old male and life insurance for an 80-year-old female is available and affordable for most folks.</p>
-
-<p>Very few life insurance companies will consider coverage for folks over the age of 85 years. So, if you’re in that 80 to 85-year age range, now is the best time to purchase a policy if you haven’t done so already.</p>
-
-<p>If you are looking for life insurance for 86 to 90 years of age, the reality is that your options are extremely limited. Additionally, the few companies that offer this coverage don’t provide it in all states.</p>
-
 <table>
 <thead>
 <tr>
@@ -55,7 +47,11 @@ sidebar: true
 
 <h2 id="burial-insurance-over-80"><strong>Burial insurance over 80</strong></h2>
 
-<p>You have to apply for burial insurance for a company to accept you for burial insurance <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">coverage</a>. Just because you are over 80 doesn’t mean you cannot purchase burial and cremation insurance.</p>
+<p>You have to apply for burial insurance for a company to accept you for burial insurance <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">coverage</a>. Just because you are <a href="/final-expense-life-insurance-over-80/" target="_blank" rel="noreferrer noopener nofollow">over 80</a> doesn’t mean you cannot purchase burial and cremation insurance.</p>
+
+<p>Life insurance for an 80-year-old male and life insurance for an 80-year-old female is available and affordable for most folks.</p>
+
+<p>If you are looking for life insurance for 86 to 90 years of age, the reality is that your options are extremely limited. Additionally, the few companies that offer this coverage don’t provide it in all states.</p>
 
 <p><strong>Here’s the lowdown on burial insurance for 80-year-olds:</strong></p>
 

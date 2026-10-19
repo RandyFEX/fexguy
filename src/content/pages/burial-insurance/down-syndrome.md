@@ -19,8 +19,6 @@ sidebar: true
 
 <p><strong><strong>!!! READ THIS FIRST !!!</strong><br><br>Down Syndrome is a significant health condition, and there are no insurance companies that offer 1st-day coverage to  <strong>Down Syndrome</strong> patients.<br><br>We recommend <strong>Down Syndrome</strong> patients purchase a guaranteed issue life insurance that asks no health questions but does come with a 2-year waiting.</strong></p>
 
-<p>In this article, we will discuss how life insurance companies respond to applicants with Down syndrome, what option is open for you, and how to find the most affordable plan.</p>
-
 <table>
 <thead>
 <tr>

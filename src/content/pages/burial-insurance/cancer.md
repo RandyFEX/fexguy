@@ -15,8 +15,6 @@ sidebar: true
 
 <p>• Burial insurance is small whole life coverage meant for funeral costs<br>• Most policies are easy to qualify for with no medical exam<br>• Coverage is limited, usually $5,000 to $25,000 total<br>• Some plans include waiting periods that delay full payout<br>• Cheap-looking plans often hide higher long-term costs or restrictions</p>
 
-<p>Burial insurance is a type of whole life insurance designed to cover funeral, cremation, and other final expenses. The coverage is smaller than traditional life insurance, usually around $5,000 to $25,000, and it pays your beneficiary a lump sum they can use however they want. Most policies don’t require a medical exam, which makes them easier to get, especially for older adults or people with health issues. The tradeoff is cost and structure. Some policies include waiting periods, and others charge more for less coverage. If you pick wrong, your family could still be left short.</p>
-
 <p>Get a quote on this page by completing my quote request form now.</p>
 
 <h2>Key cancer burial insurance insights</h2>
@@ -89,6 +87,8 @@ sidebar: true
 <h2>Understanding cancer burial insurance policy types</h2>
 
 <p>Carriers offer different plan categories based on an applicant’s cancer history and the amount of time since their last treatment.</p>
+
+<p>Whichever plan you qualify for, burial insurance pays your beneficiary a lump sum they can use however they want.</p>
 
 <ul>
 <li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. I recommend Trinity Life, Family Benefit Life, or Aetna if you have been cancer-free and treatment-free for over 2 years.</li>

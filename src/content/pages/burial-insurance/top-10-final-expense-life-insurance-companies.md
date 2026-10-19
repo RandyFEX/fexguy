@@ -17,18 +17,6 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><strong>All the final expense life insurance companies we help people with at Final Expense Guy include the following benefits:</strong></p>
-
-<ul>
-<li><strong>1st-day coverage or benefits</strong></li>
-<li><strong>Permanent whole life protection</strong></li>
-<li><strong>Rates never increase (locked in for life)</strong></li>
-<li><strong>Coverage never decreases (locked in for life)</strong></li>
-<li><strong>Approvals are issued before you have to put any money down</strong></li>
-<li><strong>You get to choose your billing date</strong></li>
-<li><strong>Builds cash value that you can borrow against in an emergency</strong></li>
-</ul>
-
 <table>
 <thead>
 <tr>
@@ -63,6 +51,18 @@ sidebar: true
 </table>
 
 <h2 id="top-10-final-expense-insurance-companies"><br><strong>Our top 10 final expense life insurance companies</strong></h2>
+
+<p><strong>All the final expense life insurance companies we help people with at Final Expense Guy include the following benefits:</strong></p>
+
+<ul>
+<li><strong>1st-day coverage or benefits for applicants who qualify (Corebridge’s guaranteed issue plan, and graded plans, have a waiting period)</strong></li>
+<li><strong>Permanent whole life protection</strong></li>
+<li><strong>Rates never increase (locked in for life)</strong></li>
+<li><strong>Coverage never decreases (locked in for life)</strong></li>
+<li><strong>Approvals are issued before you have to put any money down</strong></li>
+<li><strong>You get to choose your billing date</strong></li>
+<li><strong>Builds cash value that you can borrow against in an emergency</strong></li>
+</ul>
 
 <h2 id="trinity-life">#<strong>1 – Trinity Life    </strong></h2>
 

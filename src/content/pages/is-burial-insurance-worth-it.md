@@ -21,11 +21,7 @@ sidebar: true
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
-<p>“Is burial insurance worth it”? is a common question we get asked from time to time. </p>
-
 <p><strong>Here’s the Bottom Line:</strong><br>• Burial insurance helps keep funeral and final expenses from becoming a burden on your family<br>• Burial insurance costs more for less coverage than other life insurance<br>• Many policies have waiting periods before full benefits actually pay out<br>• Coverage amounts are small and may not cover full funeral costs<br>• Easy approval can hide higher prices and weaker long-term value<br>• It makes sense if your health blocks better, cheaper options<br>• It’s often unnecessary if you already have enough life insurance</p>
-
-<p>Burial insurance is a type of whole life insurance designed to cover funeral and final expenses, usually with smaller payouts like $5,000 to $50,000. It’s easier to qualify for and doesn’t require a medical exam, which is why many seniors or people with health issues choose it. The tradeoff is cost and value. You pay more per dollar of coverage, and some policies limit payouts early on. It works if you have no savings and can’t qualify for term or traditional whole life, and it keeps funeral costs from becoming a burden on your family.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -234,6 +230,7 @@ see fit.</p>
 <li>If you have no life insurance coverage.</li>
 <li>If you want a different insurance policy to cover his final expenses</li>
 <li>If  your savings are not enough to cover the cost of a funeral</li>
+<li>If you can’t qualify for term or traditional whole life insurance</li>
 <li>If you have cash but would prefer it not to be used for final expenses</li>
 <li>If you don’t want to burden his family when he passes away</li>
 <li>If your family and friends do not have the financial capacity to cover the cost of funeral and burial expense</li>

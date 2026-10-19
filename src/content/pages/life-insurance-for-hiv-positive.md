@@ -29,8 +29,6 @@ sidebar: true
 
 <p><strong>IMPORTANT: Being HIV positive puts you in the high-risk category which will result in a mandatory two-year waiting period with every final expense insurance company we recommend. None of these companies will offer you a first-day coverage plan if you are HIV positive.</strong></p>
 
-<p>In this article, we will discuss what options you have when you have been diagnosed with HIV. In addition, we will teach you how to find affordable burial insurance with HIV.</p>
-
 <table>
 <thead>
 <tr>

@@ -1,0 +1,209 @@
+{
+  "_comment": "Articles with the green Quick Answer go straight from the table of contents to their first heading (npm run verify, 'Article openings'). exceptions: per page, the intentional notice elements allowed before the first heading, each named by its opening words with the reason (any other text there still counts), or noHeadings for an article whose body has no headings at all. pendingReview: pages where an ordinary opening paragraph remains (after any excepted notice), waiting for Randy's decision; reported as warnings until corrected, then removed from this list.",
+  "exceptions": {
+    "/lumico-burial-insurance-review/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Lumico stopped accepting new applications",
+          "reason": "Application-status notice: Lumico no longer accepts new applications, so readers must see it before the plan details."
+        }
+      ]
+    },
+    "/burial-insurance/aids-hiv/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Having AIDS or HIV will result in a MANDATORY 2-YEAR WAITING PERIOD",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/life-insurance-for-hiv-positive/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Being HIV positive puts you in the high-risk category",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/bathing-disability-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with toileting or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with toileting or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/continence-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with ADL’s",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/eating-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with ADL’s",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/transferring-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with transferring or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/down-syndrome/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Down Syndrome is a significant health condition",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/hospice-patients/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being in hospice",
+          "reason": "Eligibility warning: no first-day coverage in hospice, and the page advises against buying; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/hospitalized/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being hospitalized",
+          "reason": "Eligibility warning: no first-day coverage while hospitalized; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/nursing-home-residents/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being in a nursing home",
+          "reason": "Eligibility warning: no first-day coverage in a nursing home; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/terminal-illness/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Having a terminal illness",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/terminally-ill-patients/": {
+      "elements": [
+        {
+          "starts": "!!! IMPORTANT – READ THIS !!!",
+          "reason": "Eligibility warning: terminally ill applicants can only get a 2-year waiting period policy."
+        }
+      ]
+    },
+    "/cancer-insurance/": {
+      "elements": [
+        {
+          "starts": "YOU CAN’T GET CANCER INSURANCE IF YOU CURRENTLY HAVE CANCER!",
+          "reason": "Eligibility warning: cancer insurance must be bought before a diagnosis."
+        }
+      ]
+    },
+    "/burial-insurance/donating-your-body-to-science/": {
+      "elements": [
+        {
+          "starts": "!!! DON’T CALL US ABOUT BODY DONATION !!!",
+          "reason": "Service notice: Final Expense Guy does not accept body donations; stops misdirected calls."
+        }
+      ]
+    },
+    "/pay-for-a-funeral-without-life-insurance/": {
+      "elements": [
+        {
+          "starts": "We Sell With Final Expense Life Insurance!",
+          "reason": "Service notice: Final Expense Guy sells insurance and does not give money for funerals; stops misdirected calls."
+        }
+      ]
+    },
+    "/trustage-price-increase/": {
+      "elements": [
+        {
+          "starts": "WARNING!!! Let’s read the FINE PRINT",
+          "reason": "Consumer warning quoting the TruStage policy fine print the article examines."
+        }
+      ]
+    },
+    "/royal-neighbors-of-america/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/state-farm/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/valife/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/iul-book/iul-military-members-veterans/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Military Members & Veterans Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/iul-police-officers-firefighters/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Police Officers or Firefighters Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/iuls-for-truckers/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Truckers Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/teachers-indexed-universal-life-iul/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Teachers Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/final-expense-life-insurance-pre-existing-conditions/": {
+      "noHeadings": "The article body has no headings (its section labels are bold text); left as is by the closed migration-fidelity review (Randy, October 2026). Lapses if a heading is added."
+    }
+  },
+  "pendingReview": {}
+}

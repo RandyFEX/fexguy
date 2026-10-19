@@ -21,8 +21,6 @@ sidebar: true
 <li>Insurers check your prescription history and Medical Information Bureau records, so answer honestly</li>
 </ul>
 
-<p>Most seniors get easy approval for diabetic retinopathy through my simple process that handles the hard work for your family. These diabetic retinopathy-approved policies I help people with pay out quickly to cover burial or cremation costs, or provide a tax-free legacy for your loved ones.</p>
-
 <h2><strong>Diabetic retinopathy burial insurance</strong> <strong>key insights</strong></h2>
 
 <ul>
@@ -110,6 +108,8 @@ sidebar: true
 <h2><strong>Understanding diabetic retinopathy policy types</strong></h2>
 
 <p>Carriers offer different plan categories based on an applicant’s diabetic retinopathy and long &amp; short-term health stability.</p>
+
+<p>The diabetic retinopathy-approved policies I help people with pay out quickly to cover burial or cremation costs, or provide a tax-free legacy for your loved ones.</p>
 
 <ul>
 <li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. A company with more lenient underwriting is the recommended choice for level coverage because they offer 1st-day benefits and a same-day approval process for retinopathy.</li>

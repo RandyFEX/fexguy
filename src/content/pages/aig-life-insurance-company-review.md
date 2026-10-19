@@ -13,8 +13,6 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• AIG offers many policy types, but it isn’t always the cheapest option<br>• Term life rates can be competitive, but whole life gets expensive<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Customer complaints are higher than average for a company its size<br>• You’ll likely deal with agents instead of a simple online process<br>• Not comparing companies can leave you overpaying for similar coverage</p>
 
-<p>AIG life insurance company review comes down to flexibility versus trade-offs. AIG, now branded as Corebridge Financial, offers term, whole life, universal life, and burial insurance options, giving you a lot of choices. The upside is competitive term pricing and strong financial stability with an A rating, meaning they can pay claims. The downside is where people get burned. Customer complaints tend to be higher than average, and guaranteed-issue or whole-life policies can be expensive and have waiting periods. AIG can work in certain situations, especially for harder-to-approve cases, but it’s rarely the best deal if you actually shop around.</p>
-
 <p>Get a quote on this page by completing my quote request form now.</p>
 
 <table>

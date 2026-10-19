@@ -14,8 +14,6 @@ source: "new"
 
 <p>• Children’s life insurance is different from the final expense insurance adults buy for themselves<br>• On some policies, a grandparent can be the one who applies and pays<br>• Whether a parent or legal guardian has to sign depends on the insurance company and your state’s law<br>• Compare each policy’s issue ages, premium, ownership rules and any option to buy more coverage later<br>• Make sure the adults your family depends on have the coverage they need too</p>
 
-Grandparents often ask about buying a life insurance policy for a grandchild. Here's how children's life insurance works, who can apply, and what to check before you buy.
-
 ## What is children's life insurance?
 
 Children's life insurance is a life insurance policy where a child is the insured person. Most standalone children's policies are whole life insurance, sometimes called juvenile whole life.

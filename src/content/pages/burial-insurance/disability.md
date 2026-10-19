@@ -23,10 +23,6 @@ sidebar: true
 
 <p>Purchasing burial insurance with a disability is not out of reach. Your options depend on what caused your disability and how it affects your daily life, not on the fact that you are disabled.</p>
 
-<p>Most insurance companies handle disability applications on a case-to-case basis. Even if your application was denied in the past, there are still some options open for you to get life insurance coverage.</p>
-
-<p>Keep reading to learn more about what options are open for you if you have a disability and how to get the best plan at the lowest price.</p>
-
 <table>
 <thead>
 <tr>
@@ -64,6 +60,8 @@ sidebar: true
 <h2 id="best-insurance-option-if-you-have-a-disability"><br><strong>What is my best insurance option if I have a disability?</strong></h2>
 
 <p>The cause of your disability will play a major role in your life insurance eligibility.</p>
+
+<p>Most insurance companies handle disability applications on a case-to-case basis. Even if your application was denied in the past, there are still some options open for you to get life insurance coverage.</p>
 
 <p id="THE-CAUSE-OF-YOUR-DISABILITY-WILL-PLAY-A-MAJOR-ROLE-IN-LIFE-INSURANCE-APPROVAL"><strong>Here are the most common causes of disability:</strong></p>
 

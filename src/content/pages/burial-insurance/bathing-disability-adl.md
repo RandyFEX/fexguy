@@ -21,8 +21,6 @@ sidebar: true
 
 <p><strong><strong>!!! READ THIS FIRST !!! </strong></strong><br><br><strong>If you need help with toileting or any ADLs, the only plan you will qualify for is a guaranteed issue burial insurance with a 2-year waiting. </strong><br><br><strong>You WILL NOT qualify for 1st-day coverage if you need help with ADLs.</strong></p>
 
-<p>Here’s a detailed guide on what you need to expect when applying for burial insurance if you need help with bathing and other ADLs. We will cover everything you need to know about ADLs and how you can find the best burial and final expense insurance policy.</p>
-
 <table>
 <thead>
 <tr>

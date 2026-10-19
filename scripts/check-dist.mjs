@@ -452,6 +452,152 @@ console.log(
       .join(', '),
 );
 for (const p of search.problems) console.log(`  [search] ${p}`);
+// Quick Answer repeats (Randy, October 2026): the article's opening text
+// (the body before its first substantive heading) must not restate the green
+// Quick Answer. A Quick Answer sentence (6+ words) counts as repeated when at
+// least 60% of its four-word sequences appear in that opening. Two or more
+// repeated sentences, or 35% of the whole Quick Answer, is an error; a single
+// repeated sentence is a warning for editorial review. Sections after the
+// first heading are never compared, so detailed explanations are not flagged.
+// Intentional repeats (e.g. an application-status notice) are listed with a
+// reason in src/config/quick-answer-repeats.json; a listed sentence that is
+// no longer repeated is reported as stale.
+const QA_REPEAT_EXCEPTIONS = JSON.parse(readFileSync(new URL('../src/config/quick-answer-repeats.json', import.meta.url)));
+const qaRepeatProblems = [];
+const qaRepeatWarnings = [];
+let qaRepeatChecked = 0;
+const plainText = (h) =>
+  h
+    .replace(/<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;|&#160;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;|&rsquo;|&#8217;/g, '’')
+    .replace(/&quot;|&ldquo;|&rdquo;/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+const wordsOf = (t) => t.toLowerCase().replace(/[’']/g, "'").replace(/[^a-z0-9$%' ]+/g, ' ').split(' ').filter(Boolean);
+const grams4 = (w) => new Set(w.slice(0, Math.max(0, w.length - 3)).map((_, i) => w.slice(i, i + 4).join(' ')));
+function quickAnswerRepeats(qa, opening) {
+  const open = grams4(wordsOf(opening));
+  const sentences = qa.split(/(?<=[.!?;])\s+/).filter((x) => x.split(' ').length >= 6);
+  const repeated = sentences.filter((x) => {
+    const g = [...grams4(wordsOf(x))];
+    return g.length && g.filter((y) => open.has(y)).length / g.length >= 0.6;
+  });
+  const all = [...grams4(wordsOf(qa))];
+  const share = all.length ? all.filter((y) => open.has(y)).length / all.length : 0;
+  return { repeated, share };
+}
+for (const file of pages) {
+  const html = readFileSync(file, 'utf8');
+  const qaMatch = html.match(/data-article-part="quick-answer"[^>]*>([\s\S]*?)<\/section>/);
+  if (!qaMatch) continue;
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const qa = plainText(qaMatch[1].replace(/<h2\b[\s\S]*?<\/h2>/, ''));
+  // The opening: the body (template) or what follows Key Points (content
+  // layout), without any table of contents, up to the first heading with text.
+  let rest;
+  const bodyAt = html.search(/data-article-part="body"/);
+  if (bodyAt >= 0) rest = html.slice(html.indexOf('>', bodyAt) + 1);
+  else {
+    const kp = html.search(/data-article-part="key-points"/);
+    rest = html.slice(html.indexOf('</section>', kp >= 0 ? kp : qaMatch.index) + 10);
+  }
+  rest = rest
+    .replace(/<nav\b[^>]*data-article-part="toc"[\s\S]*?<\/nav>/g, ' ')
+    .replace(/<(table|ul)\b[^>]*data-article-part="toc"[\s\S]*?<\/\1>/g, ' ');
+  let end = rest.length;
+  for (const h of rest.matchAll(/<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g)) {
+    if (plainText(h[1])) { end = h.index; break; }
+  }
+  const opening = plainText(rest.slice(0, end));
+  qaRepeatChecked++;
+  const allowed = QA_REPEAT_EXCEPTIONS[page] ?? [];
+  let { repeated, share } = quickAnswerRepeats(qa, opening);
+  for (const ex of allowed) {
+    const hit = repeated.find((x) => x.startsWith(ex.sentence));
+    if (hit) repeated = repeated.filter((x) => x !== hit);
+    else qaRepeatWarnings.push(`${page}: stale exception in src/config/quick-answer-repeats.json, "${ex.sentence}" is no longer repeated`);
+  }
+  if (allowed.length) share = quickAnswerRepeats(qa.split(/(?<=[.!?;])\s+/).filter((x) => !allowed.some((ex) => x.startsWith(ex.sentence))).join(' '), opening).share;
+  const quote = (x) => `"${x.length > 90 ? x.slice(0, 87) + '...' : x}"`;
+  if (repeated.length >= 2 || share >= 0.35)
+    qaRepeatProblems.push(`${page}: the opening text repeats the Quick Answer (${repeated.length} sentence(s), ${Math.round(share * 100)}% of its wording): ${repeated.map(quote).join(' ')}`);
+  else if (repeated.length === 1) qaRepeatWarnings.push(`${page}: the opening text repeats one Quick Answer sentence: ${quote(repeated[0])}`);
+}
+
+// Article openings (Randy, October 2026): on an article with the green Quick
+// Answer, the table of contents (or Key Points, when there is none) is
+// followed directly by the first substantive heading. Any article text in
+// between, a second introduction, is a problem. Scripts, rules, empty
+// paragraphs, images without text and the quote-form slot are template or
+// layout elements and don't count. src/config/article-openings.json lists
+// documented exceptions, each a single notice element named by its opening
+// words with its reason (or, for an article with no headings at all, a
+// noHeadings exception), and the pages with an ordinary opening paragraph
+// that wait for Randy's decision (reported as warnings). Stale entries are
+// reported so the lists stay current.
+const ARTICLE_OPENINGS = JSON.parse(readFileSync(new URL('../src/config/article-openings.json', import.meta.url)));
+const openingProblems = [];
+const openingWarnings = [];
+let openingChecked = 0;
+for (const file of pages) {
+  const html = readFileSync(file, 'utf8');
+  if (!/data-article-layout="(template|content)"/.test(html) || !/data-article-part="quick-answer"/.test(html)) continue;
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  openingChecked++;
+  // Where the article's own text starts: the template's body (article text
+  // is only ever inside data-article-part="body"; the CTA, header image and
+  // table of contents are outside it), or, on content-layout articles, after
+  // the table of contents, else after Key Points.
+  let from = -1;
+  const body = html.search(/data-article-part="body"/);
+  const toc = /<(nav|table|ul)\b[^>]*data-article-part="toc"/.exec(html);
+  if (/data-article-layout="template"/.test(html) && body >= 0) from = html.indexOf('>', body) + 1;
+  else if (toc) from = html.indexOf(`</${toc[1]}>`, toc.index) + toc[1].length + 3;
+  else {
+    const kp = html.search(/data-article-part="key-points"/);
+    if (kp >= 0) from = html.indexOf('</section>', kp) + 10;
+  }
+  if (from < 0) continue;
+  let rest = html.slice(from);
+  const heading = /<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g;
+  let end = rest.length;
+  for (let m; (m = heading.exec(rest)); ) if (plainText(m[1])) { end = m.index; break; }
+  let region = rest
+    .slice(0, end)
+    .replace(/<div\b[^>]*data-quote-form[^>]*>[\s\S]*?<\/div>/g, ' ')
+    .replace(/<figure\b[\s\S]*?<\/figure>/g, (f) => (plainText(f) ? f : ' '));
+  const exception = ARTICLE_OPENINGS.exceptions[page] ?? {};
+  const pending = ARTICLE_OPENINGS.pendingReview[page];
+  const listed = `${page} in src/config/article-openings.json`;
+  // A page-level exception only for an article whose body has no headings at
+  // all; it lapses (and is reported) as soon as the body gets one.
+  if (exception.noHeadings) {
+    const bodyEnd = html.indexOf('class="art-end"', from);
+    const bodyHtml = html.slice(from, bodyEnd > 0 ? bodyEnd : undefined);
+    if ([...bodyHtml.matchAll(/<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g)].some((h) => plainText(h[1])))
+      openingWarnings.push(`${listed}: "noHeadings" exception, but the article now has headings; remove the exception`);
+    else continue;
+  }
+  // Element-level exceptions: each allowed notice is one block (paragraph,
+  // list, table) identified by its opening words; any other text still counts.
+  for (const el of exception.elements ?? []) {
+    const block = [...region.matchAll(/<(p|ul|ol|table|blockquote)\b[^>]*>[\s\S]*?<\/\1>/g)].find((b) => plainText(b[0]).startsWith(el.starts));
+    if (block) region = region.replace(block[0], ' ');
+    else openingWarnings.push(`${listed}: exception "${el.starts}" no longer matches an element before the first heading; remove it`);
+  }
+  const between = plainText(region);
+  if (!between) {
+    if (pending) openingWarnings.push(`${listed}: listed under pendingReview but no longer has an opening paragraph; remove it from the list`);
+    continue;
+  }
+  const quote = `"${between.length > 90 ? between.slice(0, 87) + '...' : between}"`;
+  if (pending) openingWarnings.push(`${page}: opening paragraph before the first heading (pending review): ${quote}`);
+  else openingProblems.push(`${page}: article text between the table of contents and the first heading (a second introduction): ${quote}`);
+}
+
 console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
@@ -463,6 +609,8 @@ if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
 console.log(`Article summary structure: problems: ${structureProblems.length}`);
 for (const p of structureProblems) console.log(`  [summary] ${p}`);
 console.log(`Tables of contents (bullets, Title Case): problems: ${tocProblems.length}`);
+console.log(`Article openings (no second introduction): ${openingChecked} articles checked | problems: ${openingProblems.length} | warnings: ${openingWarnings.length}`);
+console.log(`Quick Answer repeats: ${qaRepeatChecked} articles checked | problems: ${qaRepeatProblems.length} | warnings: ${qaRepeatWarnings.length}`);
 console.log(
   `Article standard: ${articleStats.template + articleStats.content} editorial articles (template ${articleStats.template}, content layout ${articleStats.content}), ` +
     `${Object.values(articleStats.other).reduce((a, b) => a + b, 0)} other pages (${Object.entries(articleStats.other).map(([k, v]) => `${k} ${v}`).join(', ')}), ` +
@@ -470,6 +618,10 @@ console.log(
 );
 for (const p of articleProblems) console.log(`  [article] ${p}`);
 for (const p of tocProblems) console.log(`  [toc] ${p}`);
+for (const p of openingProblems) console.log(`  [opening] ${p}`);
+for (const p of openingWarnings) console.log(`  [warning] ${p}`);
+for (const p of qaRepeatProblems) console.log(`  [quick-answer] ${p}`);
+for (const p of qaRepeatWarnings) console.log(`  [warning] ${p}`);
 if (strandedSummaries.length)
   console.log(`  [note] key-points label shown as body text outside the article template: ${strandedSummaries.join(' ')}`);
 if (effectiveDatePending.length)
@@ -485,5 +637,7 @@ const problems =
   guardProblems.length +
   structureProblems.length +
   tocProblems.length +
+  qaRepeatProblems.length +
+  openingProblems.length +
   articleProblems.length;
 if (strict && problems) process.exit(1);

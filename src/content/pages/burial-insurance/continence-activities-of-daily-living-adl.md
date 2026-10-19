@@ -19,8 +19,6 @@ sidebar: true
 
 <p> <strong>!!! READ THIS FIRST !!!</strong><br><br><strong>If you need help with ADL’s, the only plan you will qualify for is a guaranteed issue burial insurance with a 2-year waiting period. </strong><br><br><strong>You&#160;WILL NOT&#160;qualify for 1st-day coverage if you need help with ADLs.</strong></p>
 
-<p>In this article, we are going to discuss burial insurance if you need help with continence to know how to get the most affordable burial insurance plan.</p>
-
 <table>
 <thead>
 <tr>

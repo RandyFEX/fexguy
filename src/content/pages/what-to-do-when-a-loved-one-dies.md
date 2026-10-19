@@ -27,10 +27,6 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><strong>We prepared what to do when someone dies checklist to help you decide before and after the funeral. </strong></p>
-
-<p>This checklist will tell you what to do during this difficult time. It covers what to do after the death of your loved one and in the days and weeks following the death. Our checklist will guide you from making the first phone call, making the funeral arrangements, and preparing documents that you need to file and/or obtain.</p>
-
 <table>
 <thead>
 <tr>
@@ -59,7 +55,7 @@ sidebar: true
 
 <h2 id="steps-to-do-when-a-loved-one-dies"><strong>Steps to do when a loved one dies </strong> </h2>
 
-<p>Here’s a checklist to guide you on what needs to be done when a loved one dies.</p>
+<p>Here’s a checklist to guide you on what needs to be done when a loved one dies. It covers what to do after the death of your loved one and in the days and weeks following the death. Our checklist will guide you from making the first phone call, making the funeral arrangements, and preparing documents that you need to file and/or obtain.</p>
 
 <h2 id="what-to-do-immediately-after-death"><strong>What to do immediately after death</strong></h2>
 

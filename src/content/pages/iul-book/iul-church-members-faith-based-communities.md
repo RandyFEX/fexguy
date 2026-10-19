@@ -15,10 +15,6 @@ source: "new"
 
 <p>• Religious branding doesn’t change the insurance contract<br>• Know which parts of an illustration are guaranteed and which are only assumptions<br>• Policy charges come out of your cash value, so know what you must pay in, and for how long<br>• Loans, a lapse or a surrender can lead to a tax bill<br>• Compare an IUL with simpler coverage based on what you actually need the insurance to do</p>
 
-Did someone talk to you about indexed universal life insurance (IUL) at church, at a faith-based event or through a Christian money program? Maybe they called it "Kingdom Banking" or "Infinite Banking God's Way." This guide explains what's actually being offered, so you can judge the policy on its own terms.
-
-This isn't about anyone's faith, and it isn't a warning about churches. The question here is simple: does the policy do what the pitch says it does?
-
 <figure><picture><source type="image/avif" srcset="/images/articles/iul-church-members-faith-based-communities-800.avif 800w, /images/articles/iul-church-members-faith-based-communities-1200.avif 1200w, /images/articles/iul-church-members-faith-based-communities-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><source type="image/webp" srcset="/images/articles/iul-church-members-faith-based-communities-800.webp 800w, /images/articles/iul-church-members-faith-based-communities-1200.webp 1200w, /images/articles/iul-church-members-faith-based-communities-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img fetchpriority="high" decoding="async" loading="eager" alt="" width="2048" height="1152" src="/images/articles/iul-church-members-faith-based-communities.jpg"></picture></figure>
 
 ## What are "Kingdom Banking" and faith-based IUL pitches?
@@ -33,6 +29,8 @@ The strategy usually goes like this:
 - You pay the loan back to the policy, and the cycle repeats.
 
 The faith-based version adds religious language, such as stewardship, getting out of debt or leaving a legacy. Those are good goals, but they don't tell you how the policy works.
+
+You might hear this pitch at church, at a faith-based event or through a Christian money program. This isn't about anyone's faith, and it isn't a warning about churches. The question here is simple: does the policy do what the pitch says it does?
 
 The idea comes from a strategy called Infinite Banking. It was built around dividend-paying whole life insurance, not IUL. Chapter 6 of my [IUL Playbook](/iul-book/) explains why it doesn't carry over well to IUL.
 
