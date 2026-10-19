@@ -1086,5 +1086,9 @@ declared exception, and no stale exception), a table of contents when it has
 under the H1, and table-of-contents links that reach their sections. Article pages must
 show at most one Quick Answer and one key-points box, in that order, above
 "In This Article", with neither label repeated as body text (pages outside
-the template that show the label are listed as a note). Add `-- --strict` to
-fail on any.
+the template that show the label are listed as a note). An article's opening
+text (the body before its first heading with text) must not repeat its Quick
+Answer: two or more repeated Quick Answer sentences, or 35% of its wording,
+is a problem; one repeated sentence is a warning; intentional repeats are
+listed with a reason in src/config/quick-answer-repeats.json. Add
+`-- --strict` to fail on any.

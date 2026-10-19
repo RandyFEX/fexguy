@@ -452,6 +452,81 @@ console.log(
       .join(', '),
 );
 for (const p of search.problems) console.log(`  [search] ${p}`);
+// Quick Answer repeats (Randy, October 2026): the article's opening text
+// (the body before its first substantive heading) must not restate the green
+// Quick Answer. A Quick Answer sentence (6+ words) counts as repeated when at
+// least 60% of its four-word sequences appear in that opening. Two or more
+// repeated sentences, or 35% of the whole Quick Answer, is an error; a single
+// repeated sentence is a warning for editorial review. Sections after the
+// first heading are never compared, so detailed explanations are not flagged.
+// Intentional repeats (e.g. an application-status notice) are listed with a
+// reason in src/config/quick-answer-repeats.json; a listed sentence that is
+// no longer repeated is reported as stale.
+const QA_REPEAT_EXCEPTIONS = JSON.parse(readFileSync(new URL('../src/config/quick-answer-repeats.json', import.meta.url)));
+const qaRepeatProblems = [];
+const qaRepeatWarnings = [];
+let qaRepeatChecked = 0;
+const plainText = (h) =>
+  h
+    .replace(/<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;|&#160;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;|&rsquo;|&#8217;/g, '’')
+    .replace(/&quot;|&ldquo;|&rdquo;/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+const wordsOf = (t) => t.toLowerCase().replace(/[’']/g, "'").replace(/[^a-z0-9$%' ]+/g, ' ').split(' ').filter(Boolean);
+const grams4 = (w) => new Set(w.slice(0, Math.max(0, w.length - 3)).map((_, i) => w.slice(i, i + 4).join(' ')));
+function quickAnswerRepeats(qa, opening) {
+  const open = grams4(wordsOf(opening));
+  const sentences = qa.split(/(?<=[.!?;])\s+/).filter((x) => x.split(' ').length >= 6);
+  const repeated = sentences.filter((x) => {
+    const g = [...grams4(wordsOf(x))];
+    return g.length && g.filter((y) => open.has(y)).length / g.length >= 0.6;
+  });
+  const all = [...grams4(wordsOf(qa))];
+  const share = all.length ? all.filter((y) => open.has(y)).length / all.length : 0;
+  return { repeated, share };
+}
+for (const file of pages) {
+  const html = readFileSync(file, 'utf8');
+  const qaMatch = html.match(/data-article-part="quick-answer"[^>]*>([\s\S]*?)<\/section>/);
+  if (!qaMatch) continue;
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const qa = plainText(qaMatch[1].replace(/<h2\b[\s\S]*?<\/h2>/, ''));
+  // The opening: the body (template) or what follows Key Points (content
+  // layout), without any table of contents, up to the first heading with text.
+  let rest;
+  const bodyAt = html.search(/data-article-part="body"/);
+  if (bodyAt >= 0) rest = html.slice(html.indexOf('>', bodyAt) + 1);
+  else {
+    const kp = html.search(/data-article-part="key-points"/);
+    rest = html.slice(html.indexOf('</section>', kp >= 0 ? kp : qaMatch.index) + 10);
+  }
+  rest = rest
+    .replace(/<nav\b[^>]*data-article-part="toc"[\s\S]*?<\/nav>/g, ' ')
+    .replace(/<(table|ul)\b[^>]*data-article-part="toc"[\s\S]*?<\/\1>/g, ' ');
+  let end = rest.length;
+  for (const h of rest.matchAll(/<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g)) {
+    if (plainText(h[1])) { end = h.index; break; }
+  }
+  const opening = plainText(rest.slice(0, end));
+  qaRepeatChecked++;
+  const allowed = QA_REPEAT_EXCEPTIONS[page] ?? [];
+  let { repeated, share } = quickAnswerRepeats(qa, opening);
+  for (const ex of allowed) {
+    const hit = repeated.find((x) => x.startsWith(ex.sentence));
+    if (hit) repeated = repeated.filter((x) => x !== hit);
+    else qaRepeatWarnings.push(`${page}: stale exception in src/config/quick-answer-repeats.json, "${ex.sentence}" is no longer repeated`);
+  }
+  if (allowed.length) share = quickAnswerRepeats(qa.split(/(?<=[.!?;])\s+/).filter((x) => !allowed.some((ex) => x.startsWith(ex.sentence))).join(' '), opening).share;
+  const quote = (x) => `"${x.length > 90 ? x.slice(0, 87) + '...' : x}"`;
+  if (repeated.length >= 2 || share >= 0.35)
+    qaRepeatProblems.push(`${page}: the opening text repeats the Quick Answer (${repeated.length} sentence(s), ${Math.round(share * 100)}% of its wording): ${repeated.map(quote).join(' ')}`);
+  else if (repeated.length === 1) qaRepeatWarnings.push(`${page}: the opening text repeats one Quick Answer sentence: ${quote(repeated[0])}`);
+}
+
 console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
@@ -463,6 +538,7 @@ if (emDashHits.length) console.log(`  ${EM_DASH_MESSAGE}`);
 console.log(`Article summary structure: problems: ${structureProblems.length}`);
 for (const p of structureProblems) console.log(`  [summary] ${p}`);
 console.log(`Tables of contents (bullets, Title Case): problems: ${tocProblems.length}`);
+console.log(`Quick Answer repeats: ${qaRepeatChecked} articles checked | problems: ${qaRepeatProblems.length} | warnings: ${qaRepeatWarnings.length}`);
 console.log(
   `Article standard: ${articleStats.template + articleStats.content} editorial articles (template ${articleStats.template}, content layout ${articleStats.content}), ` +
     `${Object.values(articleStats.other).reduce((a, b) => a + b, 0)} other pages (${Object.entries(articleStats.other).map(([k, v]) => `${k} ${v}`).join(', ')}), ` +
@@ -470,6 +546,8 @@ console.log(
 );
 for (const p of articleProblems) console.log(`  [article] ${p}`);
 for (const p of tocProblems) console.log(`  [toc] ${p}`);
+for (const p of qaRepeatProblems) console.log(`  [quick-answer] ${p}`);
+for (const p of qaRepeatWarnings) console.log(`  [warning] ${p}`);
 if (strandedSummaries.length)
   console.log(`  [note] key-points label shown as body text outside the article template: ${strandedSummaries.join(' ')}`);
 if (effectiveDatePending.length)
@@ -485,5 +563,6 @@ const problems =
   guardProblems.length +
   structureProblems.length +
   tocProblems.length +
+  qaRepeatProblems.length +
   articleProblems.length;
 if (strict && problems) process.exit(1);
