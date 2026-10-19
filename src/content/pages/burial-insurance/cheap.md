@@ -44,8 +44,6 @@ sidebar: true
 </tbody>
 </table>
 
-<h2 class="as-h3"><strong>Is it expensive to buy burial insurance?</strong></h2>
-
 <h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What kind of cheap burial insurance policies should I avoid?</strong></h2>
 
 <p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>

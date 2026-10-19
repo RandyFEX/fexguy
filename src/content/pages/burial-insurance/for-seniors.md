@@ -15,7 +15,7 @@ sidebar: true
 
 <p>• Burial policies for seniors are easy to get, but often overpriced if bought from the wrong company<br>• The small coverage amounts some companies offer may not fully cover all funeral expenses<br>• Many plans are guaranteed plans that cost more and delay payouts for 2 years (not with me, though!)<br>• Waiting too long raises your monthly premium fast – don’t keep putting this off<br>• Many seniors overpay by not comparing multiple insurance companies with someone like fexguy.com<br>• Term life is rarely the best for seniors as it often expires before you need it most</p>
 
-<p>Burial policies for seniors are small whole life insurance plans designed to cover funeral costs, usually between $5,000 and $25,000. They’re popular because approval is easier and coverage lasts your entire life. The downside is cost. Monthly premiums can range from about $18 to over $200, depending on your age and health. If you pick the wrong plan, you might pay more and still face a waiting period before full benefits kick in. That’s where most people get burned.</p>
+<p>Coverage amounts usually run between $5,000 and $25,000. The downside is cost. Monthly premiums can range from about $18 to over $200, depending on your age and health. If you pick the wrong plan, you might pay more and still face a waiting period before full benefits kick in. That’s where most people get burned.</p>
 
 <p>Complete my quote request form on this page to get fast rates without overpaying.</p>
 
