@@ -876,7 +876,9 @@ is in place; see src/content/README.md for how pages were migrated.
     sections were removed from the Markdown where they held no article
     information.
   - Future migrations: don't add a pre-H2 summary that duplicates the Quick
-    Answer, legacy quote-form callouts, or new sales/CTA sections.
+    Answer, legacy quote-form callouts, or new sales/CTA sections. An article
+    with a Quick Answer has no introduction paragraph at all: its unique
+    facts go into the substantive section they belong to (Randy, October 2026).
 
 ## Conventions
 
@@ -1090,5 +1092,10 @@ the template that show the label are listed as a note). An article's opening
 text (the body before its first heading with text) must not repeat its Quick
 Answer: two or more repeated Quick Answer sentences, or 35% of its wording,
 is a problem; one repeated sentence is a warning; intentional repeats are
-listed with a reason in src/config/quick-answer-repeats.json. Add
-`-- --strict` to fail on any.
+listed with a reason in src/config/quick-answer-repeats.json. And on every
+article with the green Quick Answer, the table of contents is followed
+directly by the first substantive heading: any article text in between (a
+second introduction) is a problem, except the intentional notices in
+src/config/article-openings.json `exceptions`; the pages found with one in
+October 2026 are listed there under `pendingReview` (warnings) until Randy
+decides on them. Add `-- --strict` to fail on any.
