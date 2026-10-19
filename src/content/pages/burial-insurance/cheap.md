@@ -15,7 +15,7 @@ sidebar: true
 
 <p>• Cheap burial insurance usually means lower coverage or stricter limitations<br>• The lowest prices often come with waiting periods or reduced early payouts<br>• TV ads showing “cheap” rates are usually misleading and unrealistic<br>• Health questions can lower your cost, but limit who qualifies<br>• Guaranteed plans cost more, even though they seem easier to get<br>• Not comparing companies is why most people overpay long term</p>
 
-<p>Cheap burial insurance exists, but you have to understand what “cheap” actually means. Most burial insurance is whole life insurance with smaller coverage amounts, like $5,000 to $25,000. Monthly costs usually fall around $30 to $100, depending on your age, health, and coverage amount. The cheapest plans require answering health questions and qualifying for better rates. If you skip that, you’ll pay more and face a 2-year waiting period before full benefits take effect. That’s where most people think they’re saving money but aren’t.</p>
+<p>Most burial insurance is whole life insurance with smaller coverage amounts, like $5,000 to $25,000. Monthly costs usually fall around $30 to $100, depending on your age, health, and coverage amount. The kind of policy you choose also affects where you land in that range, so it helps to know which “cheap” policies to avoid.</p>
 
 <p>Complete my quote request form on this page to get real rates fast without overpaying.</p>
 
