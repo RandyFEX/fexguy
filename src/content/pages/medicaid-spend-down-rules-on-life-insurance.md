@@ -27,14 +27,6 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><br><strong>What is Medicaid Spend Down?</strong></p>
-
-<p>Medicaid “spend down” is a financial planning strategy used by an individual whose income is too high to qualify for Medicaid. To be accepted into this program, you must spend your current assets to a low enough level to qualify for Medicaid.</p>
-
-<p>You can apply for Medicaid through&#160;<a rel="noreferrer noopener" href="https://www.medicaid.gov/" target="_blank">Medicaid agency</a>&#160;in your state or the Health Insurance Marketplace. Keep in mind that each state has a different Medicaid spend-down eligibility requirement.</p>
-
-<p>If your parents have life insurance and want to qualify for Medicaid in the future, you’ll first need to understand the Medicaid spend-down rules on life insurance in your specific state.</p>
-
 <table>
 <thead>
 <tr>
@@ -63,6 +55,12 @@ sidebar: true
 </table>
 
 <h2 id="how-to-qualify-for-medicaid"><strong>How to qualify for Medicaid</strong></h2>
+
+<p>Medicaid “spend down” is a financial planning strategy used by an individual whose income is too high to qualify for Medicaid. To be accepted into this program, you must spend your current assets to a low enough level to qualify for Medicaid.</p>
+
+<p>You can apply for Medicaid through&#160;<a rel="noreferrer noopener" href="https://www.medicaid.gov/" target="_blank">Medicaid agency</a>&#160;in your state or the Health Insurance Marketplace. Keep in mind that each state has a different Medicaid spend-down eligibility requirement.</p>
+
+<p>If your parents have life insurance and want to qualify for Medicaid in the future, you’ll first need to understand the Medicaid spend-down rules on life insurance in your specific state.</p>
 
 <p>To be eligible for Medicaid to cover <a rel="noreferrer noopener" href="/burial-insurance/nursing-home-residents/" target="_blank">nursing home</a> care, your parents’ countable assets must be at or below their state’s limit. Asset limits vary by state and Medicaid category. For people who are 65 or older, blind, or disabled, many states start from the Supplemental Security Income (SSI) rules, which set a $2,000 limit for an individual, but states can use different limits. When one spouse needs nursing home care, the spouse at home can keep a larger protected amount, which changes each year. </p>
 

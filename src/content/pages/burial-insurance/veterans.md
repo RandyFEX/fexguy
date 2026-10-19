@@ -17,14 +17,6 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
-<p><strong>Two of the greatest benefits of burial insurance for veterans are that they do not require a medical exam to qualify, and underwriting is more lenient on PTSD and other health issues when purchased through Final Expense Guy.</strong></p>
-
-<p>It’s very easy to apply; all you need to do is fill out a very short application and answer no to the health questions on the application.</p>
-
-<p>Getting burial insurance for a disabled veteran is also possible. Many disabled veterans who collect VA disability benefits still have a job or a business. If you’re a disabled veteran who doesn’t receive Social Security disability income, you have a better chance of getting approved for burial insurance. Most of the time, you can expect to pay the same premium as people who are not on <a href="/burial-insurance/disability/" target="_blank" rel="noreferrer noopener">disability</a>.</p>
-
-<p>In this article, we will explore how military personnel can have burial insurance, funeral insurance, cremation insurance, or final expense insurance when they leave the military. We will learn what burial insurance options are open for them and how to get the best rates.</p>
-
 <table>
 <thead>
 <tr>
@@ -73,6 +65,10 @@ sidebar: true
 <p>If you have been previously in the military, you are automatically enrolled in SGLI. Following this, you may have converted your policy into VGLI. But it may not be the best option for you with other private insurance now available.</p>
 
 <p>As a veteran, you may find it difficult to get traditional life insurance, especially if you have been injured or disabled. However, this is not the case with burial insurance. Burial insurance for veterans, also referred to as final expense or funeral insurance, is easier to qualify for.</p>
+
+<p>It’s very easy to apply; all you need to do is fill out a very short application and answer no to the health questions on the application.</p>
+
+<p>Getting burial insurance for a disabled veteran is also possible. Many disabled veterans who collect VA disability benefits still have a job or a business. If you’re a disabled veteran who doesn’t receive Social Security disability income, you have a better chance of getting approved for burial insurance. Most of the time, you can expect to pay the same premium as people who are not on <a href="/burial-insurance/disability/" target="_blank" rel="noreferrer noopener">disability</a>.</p>
 
 <p>You probably have seen ads for this insurance product on TV or the internet. All of these terms for burial insurance refer to a whole life insurance policy designed for people and families to pay for funeral and final expenses.</p>
 

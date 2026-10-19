@@ -14,8 +14,6 @@ source: "new"
 
 <p>• The T2 or T-2 form is a mailer, not an insurance company or an insurance policy<br>• Sending it back is not the same as applying for coverage<br>• Your reply can lead to a call from an insurance agent or agency<br>• The mailer does not decide your price, your approval or any waiting period<br>• Before you buy, find out the insurance company, the type of coverage, the monthly premium, any waiting period and the policy terms</p>
 
-Did you get a card in the mail marked "T2" or "T-2" about burial or final expense benefits? Here's what that form is, what can happen if you mail it back, and how to judge a real insurance offer.
-
 ## What is the t2 life insurance form?
 
 The T2 form is a mailer about final expense insurance, the small life insurance policies people buy to cover funeral costs and final bills. It asks you to send back some personal information.
