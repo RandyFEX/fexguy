@@ -103,7 +103,6 @@ sidebar: true
 
 <ul>
 <li>You can qualify for term life insurance without a medical exam.</li>
-<li>TruStage term life policy offers are good until you turn 70.</li>
 <li>Coverage lasts until age 80 instead of a fixed 10-, 20- or 30-year term.</li>
 <li>The premium goes up each time you enter a new five-year age band, through age 75.</li>
 <li>If you die during the term your policy covers, your beneficiaries will receive a cash payout in the face of your policy.</li>
