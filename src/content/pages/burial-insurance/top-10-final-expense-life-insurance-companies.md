@@ -55,7 +55,7 @@ sidebar: true
 <p><strong>All the final expense life insurance companies we help people with at Final Expense Guy include the following benefits:</strong></p>
 
 <ul>
-<li><strong>1st-day coverage or benefits</strong></li>
+<li><strong>1st-day coverage or benefits for applicants who qualify (Corebridge’s guaranteed issue plan, and graded plans, have a waiting period)</strong></li>
 <li><strong>Permanent whole life protection</strong></li>
 <li><strong>Rates never increase (locked in for life)</strong></li>
 <li><strong>Coverage never decreases (locked in for life)</strong></li>

@@ -1,33 +1,226 @@
 {
-  "_comment": "Articles with the green Quick Answer go straight from the table of contents to their first heading (npm run verify, 'Article openings'). exceptions: intentional notices allowed before the first heading, with the reason. pendingReview: pages found in October 2026 with an opening paragraph there, waiting for Randy's decision; they are reported as warnings until corrected, then removed from this list.",
+  "_comment": "Articles with the green Quick Answer go straight from the table of contents to their first heading (npm run verify, 'Article openings'). exceptions: per page, the intentional notice elements allowed before the first heading, each named by its opening words with the reason (any other text there still counts), or noHeadings for an article whose body has no headings at all. pendingReview: pages where an ordinary opening paragraph remains (after any excepted notice), waiting for Randy's decision; reported as warnings until corrected, then removed from this list.",
   "exceptions": {
-    "/lumico-burial-insurance-review/": "Application-status notice: Lumico no longer accepts new applications, so readers must see it before the plan details."
+    "/lumico-burial-insurance-review/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Lumico stopped accepting new applications",
+          "reason": "Application-status notice: Lumico no longer accepts new applications, so readers must see it before the plan details."
+        }
+      ]
+    },
+    "/burial-insurance/aids-hiv/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Having AIDS or HIV will result in a MANDATORY 2-YEAR WAITING PERIOD",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/life-insurance-for-hiv-positive/": {
+      "elements": [
+        {
+          "starts": "IMPORTANT: Being HIV positive puts you in the high-risk category",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/bathing-disability-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with toileting or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with toileting or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/continence-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with ADL’s",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/eating-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with ADL’s",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/transferring-activities-of-daily-living-adl/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! If you need help with transferring or any ADLs",
+          "reason": "Eligibility warning: needing help with an activity of daily living rules out first-day coverage; readers must see it before the article."
+        }
+      ]
+    },
+    "/burial-insurance/down-syndrome/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Down Syndrome is a significant health condition",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/hospice-patients/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being in hospice",
+          "reason": "Eligibility warning: no first-day coverage in hospice, and the page advises against buying; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/hospitalized/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being hospitalized",
+          "reason": "Eligibility warning: no first-day coverage while hospitalized; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/nursing-home-residents/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Being in a nursing home",
+          "reason": "Eligibility warning: no first-day coverage in a nursing home; readers must see it first."
+        }
+      ]
+    },
+    "/burial-insurance/terminal-illness/": {
+      "elements": [
+        {
+          "starts": "!!! READ THIS FIRST !!! Having a terminal illness",
+          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
+        }
+      ]
+    },
+    "/burial-insurance/terminally-ill-patients/": {
+      "elements": [
+        {
+          "starts": "!!! IMPORTANT – READ THIS & WATCH VIDEO !!!",
+          "reason": "Eligibility warning: terminally ill applicants can only get a 2-year waiting period policy. (Its \"WATCH VIDEO\" wording refers to a video embed removed in October 2026; see Unresolved.)"
+        }
+      ]
+    },
+    "/cancer-insurance/": {
+      "elements": [
+        {
+          "starts": "YOU CAN’T GET CANCER INSURANCE IF YOU CURRENTLY HAVE CANCER!",
+          "reason": "Eligibility warning: cancer insurance must be bought before a diagnosis."
+        }
+      ]
+    },
+    "/burial-insurance/donating-your-body-to-science/": {
+      "elements": [
+        {
+          "starts": "!!! DON’T CALL US ABOUT BODY DONATION !!!",
+          "reason": "Service notice: Final Expense Guy does not accept body donations; stops misdirected calls."
+        }
+      ]
+    },
+    "/pay-for-a-funeral-without-life-insurance/": {
+      "elements": [
+        {
+          "starts": "We Sell With Final Expense Life Insurance!",
+          "reason": "Service notice: Final Expense Guy sells insurance and does not give money for funerals; stops misdirected calls."
+        }
+      ]
+    },
+    "/trustage-price-increase/": {
+      "elements": [
+        {
+          "starts": "WARNING!!! Let’s read the FINE PRINT",
+          "reason": "Consumer warning quoting the TruStage policy fine print the article examines."
+        }
+      ]
+    },
+    "/royal-neighbors-of-america/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/state-farm/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/valife/": {
+      "elements": [
+        {
+          "starts": "NOTE: Burial, cremation, funeral, and whole life insurance are all types of final expense life insurance.",
+          "reason": "Terminology note shared by the company reviews."
+        }
+      ]
+    },
+    "/iul-book/iul-military-members-veterans/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Military Members & Veterans Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/iul-police-officers-firefighters/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Police Officers or Firefighters Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/iuls-for-truckers/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Truckers Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/iul-book/teachers-indexed-universal-life-iul/": {
+      "elements": [
+        {
+          "starts": "Read My IUL For Teachers Book",
+          "reason": "IUL Playbook promotion: link line to the matching book."
+        }
+      ]
+    },
+    "/final-expense-life-insurance-pre-existing-conditions/": {
+      "noHeadings": "The article body has no headings (its section labels are bold text); left as is by the closed migration-fidelity review (Randy, October 2026). Lapses if a heading is added."
+    }
   },
   "pendingReview": {
-    "/burial-insurance/aids-hiv/": "warning banner: \"IMPORTANT: Having AIDS or HIV will result in a MANDATORY 2-YEAR WAITIN...\"",
-    "/burial-insurance/bathing-disability-adl/": "warning banner: \"!!! READ THIS FIRST !!! If you need help with toileting or any ADLs, t...\"",
-    "/burial-insurance/continence-activities-of-daily-living-adl/": "warning banner: \"!!! READ THIS FIRST !!! If you need help with ADL’s, the only plan you...\"",
-    "/burial-insurance/donating-your-body-to-science/": "warning banner: \"!!! DON’T CALL US ABOUT BODY DONATION !!! Final Expense Guy or Final E...\"",
-    "/burial-insurance/down-syndrome/": "warning banner: \"!!! READ THIS FIRST !!! Down Syndrome is a significant health conditio...\"",
-    "/burial-insurance/eating-activities-of-daily-living-adl/": "warning banner: \"!!! READ THIS FIRST !!! If you need help with ADL’s, the only plan you...\"",
-    "/burial-insurance/hospice-patients/": "warning banner: \"!!! READ THIS FIRST !!! Being in hospice indicates a life-threatening...\"",
-    "/burial-insurance/hospitalized/": "warning banner: \"!!! READ THIS FIRST !!! Being hospitalized can be a sign of a life-thr...\"",
-    "/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/": "warning banner: \"!!! READ THIS FIRST !!! If you need help with toileting or any ADLs, t...\"",
-    "/burial-insurance/nursing-home-residents/": "warning banner: \"!!! READ THIS FIRST !!! Being in a nursing home often indicates that p...\"",
-    "/burial-insurance/terminal-illness/": "warning banner: \"!!! READ THIS FIRST !!! Having a terminal illness is a life-threatenin...\"",
-    "/burial-insurance/terminally-ill-patients/": "warning banner: \"!!! IMPORTANT – READ THIS & WATCH VIDEO !!! T erminal illness policy s...\"",
-    "/burial-insurance/transferring-activities-of-daily-living-adl/": "warning banner: \"!!! READ THIS FIRST !!! If you need help with transferring or any ADLs...\"",
-    "/cancer-insurance/": "warning banner: \"YOU CAN’T GET CANCER INSURANCE IF YOU CURRENTLY HAVE CANCER! ACT NOW,...\"",
-    "/final-expense-life-insurance-pre-existing-conditions/": "intro paragraph: \"FINAL EXPENSE INSURANCE OFFERS SIMPLE PLAN OPTIONS Final expense life...\"",
-    "/iul-book/iul-military-members-veterans/": "book link: \"Read My IUL For Military Members & Veterans Book...\"",
-    "/iul-book/iul-police-officers-firefighters/": "book link: \"Read My IUL For Police Officers or Firefighters Book...\"",
-    "/iul-book/iuls-for-truckers/": "book link: \"Read My IUL For Truckers Book...\"",
-    "/iul-book/teachers-indexed-universal-life-iul/": "book link: \"Read My IUL For Teachers Book...\"",
-    "/life-insurance-for-hiv-positive/": "warning banner: \"IMPORTANT: Being HIV positive puts you in the high-risk category which...\"",
-    "/pay-for-a-funeral-without-life-insurance/": "warning banner: \"We Sell With Final Expense Life Insurance! - We DO NOT Give Away Money...\"",
-    "/royal-neighbors-of-america/": "warning banner: \"NOTE: Burial, cremation, funeral, and whole life insurance are all typ...\"",
-    "/state-farm/": "warning banner: \"NOTE: Burial, cremation, funeral, and whole life insurance are all typ...\"",
-    "/trustage-price-increase/": "warning banner: \"WARNING!!! Let’s read the FINE PRINT print for a TruStage term life in...\"",
-    "/valife/": "warning banner: \"NOTE: Burial, cremation, funeral, and whole life insurance are all typ...\""
+    "/burial-insurance/aids-hiv/": "\"In this article, we will discuss what options you have...\" (after the notice)",
+    "/life-insurance-for-hiv-positive/": "\"In this article, we will discuss what options you have...\" (after the notice)",
+    "/burial-insurance/bathing-disability-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
+    "/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
+    "/burial-insurance/continence-activities-of-daily-living-adl/": "\"In this article, we are going to discuss...\" (after the notice)",
+    "/burial-insurance/eating-activities-of-daily-living-adl/": "\"If you or a loved one currently need assistance with eating...\" (after the notice)",
+    "/burial-insurance/transferring-activities-of-daily-living-adl/": "\"Here’s a detailed guide on what you need to expect...\" (after the notice)",
+    "/burial-insurance/down-syndrome/": "\"In this article, we will discuss how life insurance companies respond...\" (after the notice)",
+    "/burial-insurance/hospice-patients/": "\"In this post, We will explain who should buy guaranteed issue...\" (after the notice)",
+    "/burial-insurance/nursing-home-residents/": "\"This article will discuss what to weigh...\" (after the notice)",
+    "/burial-insurance/terminal-illness/": "\"This article will explain when burial insurance is appropriate...\" (after the notice)",
+    "/burial-insurance/terminally-ill-patients/": "\"In this article, we will explain who should buy burial insurance...\" (after the notice)",
+    "/cancer-insurance/": "\"This article will discuss the importance of cancer insurance...\" (after the notice)",
+    "/burial-insurance/donating-your-body-to-science/": "five paragraphs and a list on body donation after the notice",
+    "/trustage-price-increase/": "three paragraphs on the 5-year price increase and the \"This article will examine...\" line (after the warning)",
+    "/state-farm/": "\"Most people can get easy approval for 1st-day coverage... through my simple process\" (after the note)"
   }
 }

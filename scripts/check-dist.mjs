@@ -533,10 +533,11 @@ for (const file of pages) {
 // between, a second introduction, is a problem. Scripts, rules, empty
 // paragraphs, images without text and the quote-form slot are template or
 // layout elements and don't count. src/config/article-openings.json lists
-// documented exceptions (an intentional notice, with its reason) and the
-// pages already found with an opening paragraph that wait for Randy's
-// decision (reported as warnings); a listed page that no longer has one is
-// reported so the list stays current.
+// documented exceptions, each a single notice element named by its opening
+// words with its reason (or, for an article with no headings at all, a
+// noHeadings exception), and the pages with an ordinary opening paragraph
+// that wait for Randy's decision (reported as warnings). Stale entries are
+// reported so the lists stay current.
 const ARTICLE_OPENINGS = JSON.parse(readFileSync(new URL('../src/config/article-openings.json', import.meta.url)));
 const openingProblems = [];
 const openingWarnings = [];
@@ -564,20 +565,35 @@ for (const file of pages) {
   const heading = /<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g;
   let end = rest.length;
   for (let m; (m = heading.exec(rest)); ) if (plainText(m[1])) { end = m.index; break; }
-  const between = plainText(
-    rest
-      .slice(0, end)
-      .replace(/<div\b[^>]*data-quote-form[^>]*>[\s\S]*?<\/div>/g, ' ')
-      .replace(/<figure\b[\s\S]*?<\/figure>/g, (f) => (plainText(f) ? f : ' ')),
-  );
-  const exception = ARTICLE_OPENINGS.exceptions[page];
+  let region = rest
+    .slice(0, end)
+    .replace(/<div\b[^>]*data-quote-form[^>]*>[\s\S]*?<\/div>/g, ' ')
+    .replace(/<figure\b[\s\S]*?<\/figure>/g, (f) => (plainText(f) ? f : ' '));
+  const exception = ARTICLE_OPENINGS.exceptions[page] ?? {};
   const pending = ARTICLE_OPENINGS.pendingReview[page];
+  const listed = `${page} in src/config/article-openings.json`;
+  // A page-level exception only for an article whose body has no headings at
+  // all; it lapses (and is reported) as soon as the body gets one.
+  if (exception.noHeadings) {
+    const bodyEnd = html.indexOf('class="art-end"', from);
+    const bodyHtml = html.slice(from, bodyEnd > 0 ? bodyEnd : undefined);
+    if ([...bodyHtml.matchAll(/<h[2-6]\b[^>]*>([\s\S]*?)<\/h[2-6]>/g)].some((h) => plainText(h[1])))
+      openingWarnings.push(`${listed}: "noHeadings" exception, but the article now has headings; remove the exception`);
+    else continue;
+  }
+  // Element-level exceptions: each allowed notice is one block (paragraph,
+  // list, table) identified by its opening words; any other text still counts.
+  for (const el of exception.elements ?? []) {
+    const block = [...region.matchAll(/<(p|ul|ol|table|blockquote)\b[^>]*>[\s\S]*?<\/\1>/g)].find((b) => plainText(b[0]).startsWith(el.starts));
+    if (block) region = region.replace(block[0], ' ');
+    else openingWarnings.push(`${listed}: exception "${el.starts}" no longer matches an element before the first heading; remove it`);
+  }
+  const between = plainText(region);
   if (!between) {
-    if (exception || pending) openingWarnings.push(`${page}: listed in src/config/article-openings.json but no longer has an opening paragraph; remove it from the list`);
+    if (pending) openingWarnings.push(`${listed}: listed under pendingReview but no longer has an opening paragraph; remove it from the list`);
     continue;
   }
   const quote = `"${between.length > 90 ? between.slice(0, 87) + '...' : between}"`;
-  if (exception) continue;
   if (pending) openingWarnings.push(`${page}: opening paragraph before the first heading (pending review): ${quote}`);
   else openingProblems.push(`${page}: article text between the table of contents and the first heading (a second introduction): ${quote}`);
 }

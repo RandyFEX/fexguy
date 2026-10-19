@@ -1095,7 +1095,9 @@ is a problem; one repeated sentence is a warning; intentional repeats are
 listed with a reason in src/config/quick-answer-repeats.json. And on every
 article with the green Quick Answer, the table of contents is followed
 directly by the first substantive heading: any article text in between (a
-second introduction) is a problem, except the intentional notices in
-src/config/article-openings.json `exceptions`; the pages found with one in
-October 2026 are listed there under `pendingReview` (warnings) until Randy
-decides on them. Add `-- --strict` to fail on any.
+second introduction) is a problem. src/config/article-openings.json
+`exceptions` allows only named notice elements (each by its opening words,
+with a reason; any other text there still counts) and, for the
+pre-existing-conditions page, `noHeadings` (it has no headings; lapses if
+one is added); pages whose ordinary opening paragraph waits for Randy's
+decision are listed under `pendingReview` (warnings). Add `-- --strict` to fail on any.
