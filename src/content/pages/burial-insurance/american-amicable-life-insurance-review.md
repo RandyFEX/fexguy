@@ -387,6 +387,8 @@ If your goal is real first-day coverage, there are better choices than American 
 
 **[Trinity Life Insurance Company](/trinity-life-insurance-review/)** offers full first-day coverage for most applicants in fair health. In my experience, Trinity is more forgiving with applicants who use insulin or have moderate heart conditions, situations where American Amicable would likely apply a waiting period. It also offers flexible payment options and quick e-applications through licensed brokers.
 
+**[CICA Life Insurance Company](/cica-life-burial-insurance-review/)** is another final expense company worth comparing. Its underwriting and pricing differ from American Amicable's, so it's worth getting a CICA quote alongside the others before you decide.
+
 Each of these companies is transparent about its health questions and pays full benefits immediately for the majority of qualified applicants.
 
 ### Final verdict: should you buy American Amicable life insurance?
@@ -404,17 +406,3 @@ Paying more for a policy that pays less doesn't make sense for most families.
 If you're in moderately poor to fair or good health, there are better choices.
 
 To compare your real first-day coverage options, call 888-862-9456 or visit www.FEXGUY.com. You'll see exactly what you qualify for before spending a penny.
-
-## Frequently asked questions: American Amicable life insurance
-
-### How do I cancel American Amicable life insurance?
-
-Call customer service at 800-736-7311 or send a written request. If you're still in your free-look period (check your policy for its length), you'll get your premiums back. If you're replacing the policy, make sure the new one is approved and in force before you cancel, so you're never without coverage.
-
-### What is the lawsuit against American Income Life?
-
-American Income Life is a separate company owned by Globe Life Inc. It isn't American Amicable, and lawsuits involving American Income Life have nothing to do with American Amicable policies.
-
-### How much did the American-Amicable lawsuit pay out?
-
-We're not aware of any court or regulator record of a class-action settlement or payout involving American Amicable. If you see a specific payout amount online, be cautious. You can check enforcement actions through the Texas Department of Insurance and your own state's Department of Insurance.
