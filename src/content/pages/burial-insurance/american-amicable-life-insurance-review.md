@@ -64,7 +64,7 @@ Senior Choice comes in three versions. Your health answers decide which one you 
 | Graded Benefit | Year 3 | 30% of the benefit in year 1, 70% in year 2 | $20,000 |
 | Return of Premium | After 3 years if you're under 65 when the policy starts, after 2 years if you're 65 or older | Your premiums back plus 10% interest | $20,000 |
 
-Plan details are from American Amicable's February 2020 Senior Choice agent guide.
+Plan details are from American Amicable's Senior Choice Agent Guide.
 
 - On the Graded and Return of Premium plans, an accidental death pays the full benefit from day one.
 - The smallest policy is $2,500 ($5,000 in Washington).
@@ -87,6 +87,28 @@ Like Senior Choice, Platinum Solution has Immediate, Graded and Return of Premiu
 - help for your family while they make funeral arrangements
 
 Because the Everest services are bundled into the policy, Platinum Solution costs more than comparable American Amicable coverage without them. We couldn't confirm Platinum Solution's current coverage limits or waiting-period terms, so if you're offered a policy, ask which plan you're approved for: Immediate, Graded or Return of Premium.
+
+## American Amicable term life insurance options
+
+American Amicable sells two no-exam term life policies: Term Made Simple and Easy Term. Here's how they compare side by side. Each one is explained in more detail below.
+
+| Feature | Term Made Simple | Easy Term |
+|---|---|---|
+| Coverage | $50,000 to $500,000 | $25,000 to $300,000 |
+| Term lengths | 10, 15, 20, 30 years | 10, 20, 30 years |
+| Oldest issue age (10-year term) | 75 | 70 |
+| Preferred rates | Yes | No |
+| Return-of-premium option | No | Yes (20 and 30 years) |
+| Coverage after the level period | To age 95, price rises yearly | To age 95, price rises yearly |
+| Conversion | Until about age 75 | Until about age 75 |
+
+**Who these term policies fit:** people with a temporary need, like a mortgage or dependents, who want quick no-exam approval and understand that the price climbs after the level period.
+
+**Who should look elsewhere:**
+
+- Healthy people who can qualify for fully underwritten term, which usually costs less.
+- Anyone who wants lifelong coverage, where whole life fits better.
+- Shoppers looking for the lowest term premium, who should compare several companies.
 
 ## Term Made Simple term life insurance
 
@@ -122,26 +144,6 @@ The diabetes rules match Term Made Simple's: no coverage for diabetes diagnosed 
 
 The Easy Term details above come from American Amicable's December 2021 agent guide. Easy Term still appears on the company's 2025 product summary, but ask your agent to confirm the current details.
 
-### Term Made Simple vs. Easy Term
-
-| Feature | Term Made Simple | Easy Term |
-|---|---|---|
-| Coverage | $50,000 to $500,000 | $25,000 to $300,000 |
-| Term lengths | 10, 15, 20, 30 years | 10, 20, 30 years |
-| Oldest issue age (10-year term) | 75 | 70 |
-| Preferred rates | Yes | No |
-| Return-of-premium option | No | Yes (20 and 30 years) |
-| Coverage after the level period | To age 95, price rises yearly | To age 95, price rises yearly |
-| Conversion | Until about age 75 | Until about age 75 |
-
-**Who these term policies fit:** people with a temporary need, like a mortgage or dependents, who want quick no-exam approval and understand that the price climbs after the level period.
-
-**Who should look elsewhere:**
-
-- Healthy people who can qualify for fully underwritten term, which usually costs less.
-- Anyone who wants lifelong coverage, where whole life fits better.
-- Shoppers looking for the lowest term premium, who should compare several companies.
-
 ## Underwriting and eligibility requirements
 
 None of American Amicable's policies requires a medical exam, but each one still checks your health. For every product, the company uses:
@@ -161,14 +163,14 @@ The big difference is what happens if you answer "yes" to a health question:
 
 This table summarizes the Senior Choice application we reviewed. The exact questions can vary by state and change over time.
 
-| If you… | You can usually get |
+| Plan you can usually get | If you… |
 |---|---|
-| Are currently in a hospital or nursing facility, confined to a bed or wheelchair by a chronic illness, using oxygen, receiving hospice or home health care, or have any cancer (except basal cell skin cancer); need help with bathing, dressing, eating or toileting; or have had an amputation caused by disease | No Senior Choice plan |
-| Have had, or been told you need, an organ transplant or kidney dialysis; have been diagnosed with congestive heart failure, Alzheimer's, dementia, mental incapacity, ALS, liver failure or respiratory failure; have a terminal condition expected to cause death within 12 months; or have HIV/AIDS | No Senior Choice plan |
-| Have ever had complications of diabetes (such as insulin shock, diabetic coma, or eye, kidney or nerve damage), used insulin before age 50, been diagnosed or treated for kidney failure, renal insufficiency or chronic kidney disease, or had cancer more than once (except basal cell skin cancer) | Return of Premium |
-| In the past 2 years: were diagnosed or treated for angina, stroke, TIA, cardiomyopathy, lupus (SLE), cirrhosis, hepatitis C, chronic hepatitis, chronic pancreatitis, COPD, emphysema or chronic bronchitis, or needed oxygen; had a heart attack or aneurysm, or had (or were advised to have) heart, brain or circulatory surgery or a procedure to improve circulation, including a pacemaker or defibrillator; were diagnosed, treated or took medication for any cancer (except basal cell skin cancer); abused drugs or alcohol or were advised to get treatment; or have tests, surgery or a hospital stay a doctor recommended that you haven't completed or gotten results for | Return of Premium |
-| In the past 3 years: were diagnosed, treated or hospitalized for a stroke, angina, heart attack, aneurysm, or heart or circulatory surgery or a procedure to improve circulation; were diagnosed, treated, hospitalized or took medication for cancer (except basal cell skin cancer), emphysema, chronic bronchitis, COPD, ulcerative colitis, cirrhosis, hepatitis C or liver disease; or were diagnosed, treated or hospitalized for paralysis of two or more limbs, cerebral palsy, MS, seizures, Parkinson's or muscular dystrophy | Graded Benefit |
-| Answer "no" to all of the health questions | Immediate Benefit |
+| No Senior Choice plan | Are currently in a hospital or nursing facility, confined to a bed or wheelchair by a chronic illness, using oxygen, receiving hospice or home health care, or have any cancer (except basal cell skin cancer); need help with bathing, dressing, eating or toileting; or have had an amputation caused by disease |
+| No Senior Choice plan | Have had, or been told you need, an organ transplant or kidney dialysis; have been diagnosed with congestive heart failure, Alzheimer's, dementia, mental incapacity, ALS, liver failure or respiratory failure; have a terminal condition expected to cause death within 12 months; or have HIV/AIDS |
+| Return of Premium | Have ever had complications of diabetes (such as insulin shock, diabetic coma, or eye, kidney or nerve damage), used insulin before age 50, been diagnosed or treated for kidney failure, renal insufficiency or chronic kidney disease, or had cancer more than once (except basal cell skin cancer) |
+| Return of Premium | In the past 2 years: were diagnosed or treated for angina, stroke, TIA, cardiomyopathy, lupus (SLE), cirrhosis, hepatitis C, chronic hepatitis, chronic pancreatitis, COPD, emphysema or chronic bronchitis, or needed oxygen; had a heart attack or aneurysm, or had (or were advised to have) heart, brain or circulatory surgery or a procedure to improve circulation, including a pacemaker or defibrillator; were diagnosed, treated or took medication for any cancer (except basal cell skin cancer); abused drugs or alcohol or were advised to get treatment; or have tests, surgery or a hospital stay a doctor recommended that you haven't completed or gotten results for |
+| Graded Benefit | In the past 3 years: were diagnosed, treated or hospitalized for a stroke, angina, heart attack, aneurysm, or heart or circulatory surgery or a procedure to improve circulation; were diagnosed, treated, hospitalized or took medication for cancer (except basal cell skin cancer), emphysema, chronic bronchitis, COPD, ulcerative colitis, cirrhosis, hepatitis C or liver disease; or were diagnosed, treated or hospitalized for paralysis of two or more limbs, cerebral palsy, MS, seizures, Parkinson's or muscular dystrophy |
+| Immediate Benefit | Answer "no" to all of the health questions |
 
 Some conditions appear in more than one row, with different time frames. A heart attack, stroke, angina, aneurysm, heart or circulatory surgery, cancer, COPD, emphysema, chronic bronchitis, cirrhosis or hepatitis C is asked about in both the 2-year and 3-year questions. Within the past two years, it points to Return of Premium. Two to three years ago, it points to Graded.
 
@@ -362,6 +364,8 @@ The same goes for most riders on small burial policies. They can sound comfortin
 
 American Amicable fits a narrow group of buyers who don't mind overpaying on a plan for the rest of their life. Its stricter underwriting results in higher pricing and, even worse, waiting-period plans that cost more and pay less.
 
+In my experience, American Amicable offers competitive smoker rates, although it isn't always the cheapest option for smokers.
+
 American Amicable should never be your first choice unless every other option is off the table.
 
 | Best For | Not Ideal For |
@@ -402,42 +406,6 @@ If you're in moderately poor to fair or good health, there are better choices.
 To compare your real first-day coverage options, call 888-862-9456 or visit www.FEXGUY.com. You'll see exactly what you qualify for before spending a penny.
 
 ## Frequently asked questions: American Amicable life insurance
-
-### Is American Amicable legit?
-
-Yes. American-Amicable Life Insurance Company of Texas is a legitimate, state-regulated life insurer, founded in 1910 and based in Waco, Texas. AM Best rates it A (Excellent) for financial strength. Even though it's legitimate, in my experience American Amicable often charges higher premiums than competitors offering the same type of coverage, so compare quotes before you buy.
-
-### Is American Amicable a reputable company?
-
-Financially, yes. Its customer reputation is mixed, though. Some online reviews describe waiting periods people didn't understand, policies that were issued as a lower plan, and slow service. Check BBB.org, NAIC's Consumer Insurance Search and your state Department of Insurance for the latest complaint information.
-
-### What is American Amicable's AM Best rating?
-
-A (Excellent), affirmed in 2026. Its parent company, Industrial Alliance, is rated A+ (Superior).
-
-### Who owns American Amicable?
-
-iA Financial Group, a Canadian insurance company based in Quebec City, bought American Amicable in 2010. American Amicable's policies are still regulated by U.S. state insurance departments.
-
-### What does American Amicable offer?
-
-Final expense whole life insurance (Senior Choice and Platinum Solution) and no-exam term life insurance (Term Made Simple and Easy Term). Products and riders vary by state.
-
-### What is American Amicable Senior Choice?
-
-A no-exam whole life policy for ages 50 to 85, with three versions: Immediate Benefit, Graded Benefit and Return of Premium. Your health answers decide which one you get, and only the Immediate plan pays the full benefit from day one.
-
-### Does American Amicable require a medical exam?
-
-No. All of its policies use health questions, a prescription history check, an MIB check and your height and weight instead. Some applicants also have a short phone interview, and term applicants have their driving record checked.
-
-### Does American Amicable sell term life insurance?
-
-Yes. Term Made Simple offers $50,000 to $500,000 for 10, 15, 20 or 30 years, and Easy Term offers $25,000 to $300,000 for 10, 20 or 30 years. Both can continue to age 95 after the level period, at a price that rises every year.
-
-### How do I contact American Amicable?
-
-American Amicable's main toll-free number is 800-736-7311. Its mailing address is P.O. Box 2549, Waco, TX 76702, and its website is americanamicable.com. If you want help reviewing your coverage or comparing first-day options, you can reach the Final Expense Guy at 888-862-9456.
 
 ### How do I cancel American Amicable life insurance?
 
