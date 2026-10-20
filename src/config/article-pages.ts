@@ -887,7 +887,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/american-amicable-life-insurance-review/': {
     family: 'review', crumb: 'American Amicable',
     quickAnswer:
-      'American Amicable is a legitimate, financially stable company that pays valid claims, but for most seniors it isn’t the strongest choice. Its policies are usually more expensive, and if your health isn’t great, you may be placed into a plan with a 2-year waiting period before full benefits pay out. If you’re healthy enough to qualify for first-day coverage, there’s no reason to buy a plan that limits benefits for two years.',
+      'American Amicable is a legitimate insurer founded in 1910 and rated A (Excellent) by AM Best. It sells no-exam final expense whole life insurance (Senior Choice and Platinum Solution) and no-exam term life insurance (Term Made Simple and Easy Term). In my experience, its final expense coverage is expensive, and its underwriting is stricter than many carriers I work with. If your health answers put you in a Graded or Return of Premium plan, your family gets a reduced payout or just a refund of premiums for at least the first two years.',
   },
   '/cica-life-burial-insurance-review/': {
     family: 'review',
