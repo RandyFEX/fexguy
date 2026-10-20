@@ -18,6 +18,11 @@ phone: "ctv"
 <p class="roku__sub">You Saw My Ad on TV. Now Let’s See If I Can Help You.</p>
 </header>
 
+<div class="roku__agent">
+<picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture>
+<p class="roku__agent-id"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
+</div>
+
 <p><strong>My job isn’t to talk you into buying insurance. My job is to help you make an informed decision, even if that decision is no.</strong></p>
 
 <p>I’m Randy VanderVaate, the Final Expense Guy, and I’m an independent life insurance broker. My National Producer Number (NPN) is 17792459, which you can use to verify my insurance licensing credentials.</p>
@@ -27,11 +32,6 @@ phone: "ctv"
 <div class="roku__cta">
 <p><a class="btn btn--primary roku__call" href="tel:8886564648">CALL RANDY: 888-656-4648</a></p>
 <p class="roku__cta-note">Free, friendly, no-pressure conversation.</p>
-</div>
-
-<div class="roku__agent">
-<picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture>
-<p class="roku__agent-id"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
 </div>
 
 <h2>Not All Life Insurance Plans Are the Same.</h2>
@@ -60,9 +60,9 @@ phone: "ctv"
 
 <hr>
 
-<h2>Prefer That I Call You?</h2>
+<h2>Don’t Have Time to Talk on the Phone Right Now?</h2>
 
-<p>No problem. Just fill out the contact form on this page, and I’ll be happy to reach out.</p>
+<p>No problem. Just fill out the contact form.</p>
 
 <div data-quote-form data-phone="ctv"></div>
 

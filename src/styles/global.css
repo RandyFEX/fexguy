@@ -1024,8 +1024,8 @@ a:hover {
   line-height: 1.3;
   text-wrap: balance;
 }
-/* Randy's headshot beside his name and title, under the first call
-   button, in a light beige box: a centered row (photo left, text
+/* Randy's headshot beside his name and title, right under the opening
+   headline, in a light beige box: a centered row (photo left, text
    left-aligned) that stacks only when the screen is too narrow
    (public/images/randy/, 240px source). */
 .roku__agent {
