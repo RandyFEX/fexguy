@@ -66,19 +66,4 @@ phone: "ctv"
 
 <div data-quote-form data-phone="ctv"></div>
 
-<hr>
-
-<h2>Let’s See If I Can Help You.</h2>
-
-<p>Whether you want to cover funeral costs, leave something behind for your family, or make sure the people you love aren’t left with unexpected bills, I’d be happy to help you look at your options.</p>
-
-<p>You might find a better option than what you’ve seen advertised. Or you might find that what you already have is just fine. Either way, you’ll know where you stand.</p>
-
-<p><strong>Give me a call. Let’s see what makes sense for you.</strong></p>
-
-<div class="roku__cta">
-<p><a class="btn btn--primary roku__call" href="tel:8886564648">CALL RANDY: 888-656-4648</a></p>
-<p class="roku__cta-note">Your independent life insurance agent. Licensed in most states, with coverage options subject to availability.</p>
-</div>
-
 </div>
