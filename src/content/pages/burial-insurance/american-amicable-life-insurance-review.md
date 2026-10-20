@@ -9,716 +9,444 @@ source: "live"
 sidebar: true
 ---
 
-<h1>American Amicable Burial Insurance Review – Pros &amp; Cons</h1>
+# American Amicable Life Insurance Review: Products, Pros & Cons
 
-<p><strong>Here’s the Bottom Line:<br>• </strong>American Amicable is easier to qualify for than most companies<br>• Simplified approval usually means you’ll pay higher monthly premiums<br>• Lower-tier plans often come with 2-year waiting periods<br>• Some customers report issues with billing or canceling policies<br>• It’s a good option for health issues, not always for the best pricing</p>
+<p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>American Amicable life insurance is known for being easy to get, especially if you have health issues or want to skip a medical exam. They focus on simplified issue whole life insurance, including final expense policies, which means faster approval and fewer questions. The trade-off is cost. These policies are usually more expensive than fully underwritten options, and if your health isn’t great, you may be placed into a plan with a 2-year waiting period before full benefits pay out. It works well for certain situations, but it’s not always the best value if you qualify for better options.</p>
-
-<p>Complete my quote request form on this page to quickly see better options.</p>
+<p>• American Amicable is stricter to qualify for than many final expense companies<br>• In my experience, its final expense coverage costs more than the other carriers I compare it against<br>• Only the Immediate Benefit plans pay the full death benefit from day one<br>• Graded and Return of Premium plans limit the payout for at least two years, and no plan is guaranteed acceptance<br>• Its no-exam term policies can last to age 95, but the price climbs every year after the level period ends</p>
 
 <figure><picture><source type="image/avif" srcset="/images/articles/american-amicable-burial-insurance-review-800.avif 800w, /images/articles/american-amicable-burial-insurance-review-1200.avif 1200w, /images/articles/american-amicable-burial-insurance-review-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><source type="image/webp" srcset="/images/articles/american-amicable-burial-insurance-review-800.webp 800w, /images/articles/american-amicable-burial-insurance-review-1200.webp 1200w, /images/articles/american-amicable-burial-insurance-review-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img fetchpriority="high" decoding="async" loading="eager" alt="American-Amicable-Burial-Insurance-Review" width="2048" height="1152" src="/images/articles/american-amicable-burial-insurance-review.jpg"></picture></figure>
 
-<hr>
+## Company history and ownership
 
-<h2><strong>Company history and ownership</strong></h2>
+American Amicable was founded in 1910 in Waco, Texas, and it's still based there today.
 
-<p>American Amicable began as a small regional life insurer serving Texas residents.</p>
+In 2010, Canada's Industrial Alliance, now called iA Financial Group, bought the company. The deal was announced in April 2010 and closed in July 2010. American Amicable became part of iA's group of U.S. life insurance companies.
 
-<p>For decades, it has built a reputation on conservative financial management and simple products.</p>
+Depending on where you live, your policy may be issued by American-Amicable Life Insurance Company of Texas or by a sister company, such as Occidental Life, Pioneer American, Pioneer Security or IA American Life. Not every product is sold in every state.
 
-<p>That conservative strategy helped the company avoid the financial troubles that hurt many competitors during the 2008 financial crisis.</p>
+American Amicable doesn't have its own employee agents. It sells through independent agents, marketing companies and call centers. That's why experiences with American Amicable can vary widely depending on the agent, the marketing group, or the call center a client buys through.
 
-<p>In 2010, the company was acquired by Industrial Alliance Insurance and Financial Services Inc. (iA Financial Group), one of Canada’s largest insurance corporations. That acquisition provided American Amicable with additional capital and reinsurance strength, allowing it to expand beyond Texas into all 50 states.</p>
+### Financial strength
 
-<p>While iA Financial Group is publicly traded and well-capitalized, it’s important to understand what that means for policyholders.</p>
+AM Best rates American-Amicable Life Insurance Company of Texas A (Excellent) for financial strength, and it affirmed that rating in 2026. Its parent, Industrial Alliance, is rated A+ (Superior). Those ratings are a good sign the company can pay its claims. Financial strength doesn't tell you anything about price or customer service, though.
 
-<p>Oversight for American Amicable policies still falls under U.S. state insurance regulators and the National Association of Insurance Commissioners (NAIC), not Canadian regulators.</p>
+## Is American Amicable state regulated?
 
-<p>This structure requires all policies to comply with the same U.S. consumer protections and solvency requirements as any other domestic insurer.</p>
+Like every legitimate life insurance company in the United States, American Amicable is regulated at the state level. Each state's Department of Insurance approves policy forms, sets solvency rules and enforces consumer protection laws. Having a Canadian parent company doesn't change that.
 
-<p>The company’s focus on growth means that it doesn’t have employee agents who sell its products. Rather, they contract with independent agents and call centers to sell their insurance on their behalf.</p>
+You might have seen ads that say you can "qualify for a state-regulated life insurance program." That wording misleads people into thinking a government program is involved when no such program exists. "State-regulated" only means the company is licensed to sell policies that meet your state's insurance laws. Our guide to [state-regulated life insurance](/burial-insurance/state-regulated-life-insurance/) explains these ads.
 
-<p>That’s why experiences with American Amicable can vary widely depending on the agent, the marketing group, or the call center a client buys through.</p>
+If you ever question whether a life insurance company is legitimate, you can check its license on your state's Department of Insurance website.
 
-<p>American Amicable’s Better Business Bureau record shows a mix of positive and neutral feedback.</p>
+## American Amicable's insurance products at a glance
 
-<p>Many people complain about confusion over waiting periods, misunderstanding policy terms, and long wait times for customer service.</p>
+American Amicable focuses on simplified issue life insurance. That means no medical exam. You answer health questions, and the company checks databases and your height and weight.
 
-<hr>
+| Product | Type | Issue ages | Coverage | Health underwriting | Early-year limits |
+|---|---|---|---|---|---|
+| Senior Choice | Whole life (final expense) | 50 to 85 | $2,500 to $35,000 | Health questions sort you into one of three plans | Graded and Return of Premium plans pay less for at least two years |
+| Platinum Solution | Whole life with Everest funeral concierge services | 50 to 85 (Legacy), 0 to 49 (Family) | Not confirmed | Three plans, like Senior Choice | Graded and Return of Premium plans available |
+| Term Made Simple | Level term to age 95 | 18 to 75 | $50,000 to $500,000 | Approved or declined; three price classes | None |
+| Easy Term | Level term to age 95 | 18 to 70 | $25,000 to $300,000 | Approved or declined; one price class | None |
 
-<h2><strong>Is American Amicable state regulated?</strong></h2>
+American Amicable has also sold other plans, including mortgage protection term and universal life policies. We couldn't confirm which of those are sold today, so ask the agent which products are available in your state.
 
-<p>Like every legitimate life insurance company in the United States, American Amicable is fully regulated at the state level.</p>
+## Senior Choice final expense insurance
 
-<p>Every state has its own Department of Insurance that sets solvency requirements, approves policy forms, and enforces consumer protection laws.</p>
+Senior Choice is American Amicable's main final expense policy. It's a whole life policy, so it lasts for life as long as you pay, builds a small cash value, and has premiums that never go up.
 
-<p>That means if you live in California, Texas, or Florida, American Amicable must follow the rules of that specific state.</p>
+Senior Choice comes in three versions. Your health answers decide which one you get.
 
-<p>These rules are coordinated nationally through the National Association of Insurance Commissioners (NAIC), which helps maintain consistent oversight across all fifty states.</p>
+| Senior Choice plan | Full benefit starts | If you die of natural causes before then | Maximum coverage |
+|---|---|---|---|
+| Immediate Benefit | Day one | Not applicable | $35,000 (ages 50 to 75), $20,000 (ages 76 to 85) |
+| Graded Benefit | Year 3 | 30% of the benefit in year 1, 70% in year 2 | $20,000 |
+| Return of Premium | After 3 years if you're under 65 when the policy starts, after 2 years if you're 65 or older | Your premiums back plus 10% interest | $20,000 |
 
-<p>You might have seen ads that say you can “qualify for a state-regulated life insurance program.” That wording misleads people into thinking a government program is involved when no such program exists.</p>
+Plan details are from American Amicable's February 2020 Senior Choice agent guide.
 
-<p>“State-regulated” means the company is licensed to sell policies that meet your state’s insurance laws. The government does not sponsor, pay for, or endorse private life insurance plans.</p>
+- On the Graded and Return of Premium plans, an accidental death pays the full benefit from day one.
+- The smallest policy is $2,500 ($5,000 in Washington).
+- Some states have different rules. In New Jersey, the Return of Premium waiting period is two years at every age, and the Graded and Return of Premium plans have lower maximum issue ages in New Jersey and Missouri.
+- The beneficiary must be someone with an insurable interest, such as a family member, a trust or your estate. A funeral home can't be named as the beneficiary.
+- The person being insured has to sign the application themselves. A power of attorney signature isn't accepted.
 
-<p>While American Amicable is legally compliant and financially supervised, it remains a private company that competes for profit like any other insurer. That’s why policy features, pricing, and waiting periods can vary between companies even though they’re all state-regulated.</p>
+## Platinum Solution whole life with Everest services
 
-<p>If you ever question whether a life insurance company is legitimate, you can verify its license directly through your state’s Department of Insurance website.</p>
+Platinum Solution is a separate American Amicable whole life product line. It comes in two versions: the Legacy Plan for ages 50 to 85 and the Family Plan for ages 0 to 49.
 
-<p>Every state keeps a searchable database that lists active life insurance carriers and the agents authorized to represent them.</p>
+Like Senior Choice, Platinum Solution has Immediate, Graded and Return of Premium versions. What sets it apart is that eligible policies come with funeral planning and concierge services from a separate company, Everest Funeral Package, LLC. According to Everest's materials, the services are available on Platinum Solution policies of $35,000 or less, and they include:
 
-<p>That’s the real meaning of “state-regulated”, not a special program or discount, just legal oversight to keep companies honest, and consumers safe.</p>
+- help from a funeral advisor
+- funeral home price comparisons
+- help negotiating funeral costs
+- online funeral planning tools
+- tools to prepare a will, healthcare directive and power of attorney
+- secure storage for important documents
+- help for your family while they make funeral arrangements
 
-<hr>
+Because the Everest services are bundled into the policy, Platinum Solution costs more than comparable American Amicable coverage without them. We couldn't confirm Platinum Solution's current coverage limits or waiting-period terms, so if you're offered a policy, ask which plan you're approved for: Immediate, Graded or Return of Premium.
 
-<h2><strong>How American Amicable final expense insurance works</strong></h2>
+## Term Made Simple term life insurance
 
-<p>American Amicable’s flagship senior product is a simplified issue whole life insurance policy, often marketed as “Senior Choice.”</p>
+Term Made Simple is American Amicable's main term life policy for people who want larger coverage without a medical exam.
 
-<p>These policies are designed for people who want permanent coverage without a medical exam.</p>
+- **Level premium periods:** 10 years (issue ages 18 to 75), 15 years (18 to 70), 20 years (18 to 65) or 30 years (18 to 55)
+- **Coverage:** $50,000 to $500,000. Policies of $250,000 or more get a lower price per $1,000 of coverage.
+- **Price classes:** Preferred Non-Tobacco, Standard Non-Tobacco and Standard Tobacco
+- **After the level period:** coverage can continue to age 95, but the premium goes up every year
+- **Conversion:** you can convert to a permanent policy without new health questions, until the earlier of the policy's expiration or the anniversary after your 75th birthday (or within five years of buying it, if that's later)
+- **Underwriting:** no medical exam, but the company checks MIB, your prescription history and your driving record. Applicants 65 and older have a phone interview.
+- **Approval:** you're either approved at the price class you qualify for or declined. There are no graded or waiting-period versions.
 
-<p>They remain in force for life, accumulate a small cash value, and have level premiums that never increase.</p>
+The health questions look back 10 years and cover a long list of conditions, including high blood pressure and high cholesterol. A "yes" answer doesn't always mean a decline. For example, high blood pressure controlled with two or fewer medications can still qualify. Serious conditions are a different story. In the underwriting guidelines we reviewed, a history of heart attack, stroke, angina, heart bypass or stents, COPD, kidney failure, or hepatitis B or C generally means you won't qualify. So does diabetes diagnosed before age 35, current insulin use, or diabetes combined with tobacco use in the past year.
 
-<p><strong>The company offers three versions of this plan depending on health and age:</strong></p>
+To get Preferred rates, you generally need no tobacco or nicotine for 36 months, no blood pressure or cholesterol medication for 10 years, a clean recent driving and criminal record, and a family history without early heart disease or certain cancers.
 
-<ul>
-<li>Immediate Benefit – first-day coverage</li>
-<li>Graded Benefit – partial payout during the first two years</li>
-<li>Return of Premium – refund of paid premiums plus interest if death occurs during the waiting period (this one is a terrible plan!)</li>
-</ul>
+Term Made Simple wasn't available in every state on the most recent state list we reviewed (2021).
 
-<p>The plan you qualify for depends entirely on your health answers.</p>
+## Easy Term life insurance
 
-<p>Applicants must complete a short health questionnaire that includes questions about heart disease, diabetes, oxygen use, or recent hospitalizations.</p>
+Easy Term is American Amicable's other no-exam term policy. It starts at smaller coverage amounts than Term Made Simple, and it has a return-of-premium version.
 
-<p>If you’re in reasonably good health, you can qualify for the Immediate Benefit plan with full coverage starting on day one.</p>
+- **Level premium periods:** 10 years (issue ages 18 to 70), 20 years (18 to 65) or 30 years (18 to 55)
+- **Return-of-premium version:** 20 years (ages 18 to 60) or 30 years (ages 18 to 50). If you're alive when the level period ends, you get back 75% of the base premiums you paid. It costs more than regular Easy Term.
+- **Coverage:** $25,000 to $300,000. Policies of $75,000 or more get a lower price per $1,000.
+- **Price classes:** standard only, tobacco or non-tobacco
+- **After the level period:** coverage can continue to age 95 at a price that goes up every year
+- **Conversion:** available without new health questions until about age 75. The return-of-premium version must be converted by the end of its level period.
+- **Underwriting:** no medical exam; MIB and prescription checks, plus a phone interview depending on your age and the coverage amount. You're approved or declined.
 
-<p>However, many agents fail to clarify that if you answer “yes” to certain questions, your plan will be downgraded to the Graded or Return of Premium version.</p>
+The diabetes rules match Term Made Simple's: no coverage for diabetes diagnosed before age 35, current insulin use, or diabetes with recent tobacco use.
 
-<p>Those downgraded plans have a two-year waiting period, which means your family won’t receive the full death benefit if you die within the first 24 months. Instead, they’ll receive a refund of premiums paid plus 10% interest. This is a horribly expensive plan compared to American Amicable’s rival insurance companies.</p>
+The Easy Term details above come from American Amicable's December 2021 agent guide. Easy Term still appears on the company's 2025 product summary, but ask your agent to confirm the current details.
 
-<p><strong>American Amicable Senior Choice Plan Types</strong></p>
+### Term Made Simple vs. Easy Term
 
-<table>
-<thead>
-<tr>
-<th>Plan Type</th>
-<th>Coverage Start</th>
-<th>Payout in First 2 Years</th>
-<th>Typical Qualification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Immediate Benefit</td>
-<td>Day 1</td>
-<td>Full Benefit</td>
-<td>Good Health, Minor Issues</td>
-</tr>
-<tr>
-<td>Graded Benefit</td>
-<td>Month 1</td>
-<td>40% Year 1, 75% Year 2</td>
-<td>Moderate Health Problems</td>
-</tr>
-<tr>
-<td>Return of Premium</td>
-<td>After 2 Years</td>
-<td>Premiums plus 10% Interest</td>
-<td>High Risk or Serious Conditions</td>
-</tr>
-</tbody>
-</table>
+| Feature | Term Made Simple | Easy Term |
+|---|---|---|
+| Coverage | $50,000 to $500,000 | $25,000 to $300,000 |
+| Term lengths | 10, 15, 20, 30 years | 10, 20, 30 years |
+| Oldest issue age (10-year term) | 75 | 70 |
+| Preferred rates | Yes | No |
+| Return-of-premium option | No | Yes (20 and 30 years) |
+| Coverage after the level period | To age 95, price rises yearly | To age 95, price rises yearly |
+| Conversion | Until about age 75 | Until about age 75 |
 
-<p><br>This system of tiered approval is common across final expense insurers.</p>
+**Who these term policies fit:** people with a temporary need, like a mortgage or dependents, who want quick no-exam approval and understand that the price climbs after the level period.
 
-<p>The difference lies in how many people can qualify for first-day coverage. With stronger underwriting flexibility, companies like Aetna, Family Benefit Life, Trinity Life, and others often approve applicants that American Amicable would downgrade.</p>
+**Who should look elsewhere:**
 
-<p>That’s why it’s important to work with a broker like the Final Expense Guy who compares multiple companies.</p>
+- Healthy people who can qualify for fully underwritten term, which usually costs less.
+- Anyone who wants lifelong coverage, where whole life fits better.
+- Shoppers looking for the lowest term premium, who should compare several companies.
 
-<p>A direct agent representing only one insurer might stop at “You’re approved,” without clarifying that your plan includes a waiting period.</p>
+## Underwriting and eligibility requirements
 
-<hr>
+None of American Amicable's policies requires a medical exam, but each one still checks your health. For every product, the company uses:
 
-<h2><strong>Waiting periods and benefit limits</strong></h2>
+- your answers to the application's health questions
+- the Medical Information Bureau (MIB), a database insurers use to share application information
+- your prescription history
+- your height and weight
+- sometimes, a short phone interview
 
-<p>The biggest misunderstanding in the entire final expense market comes down to waiting periods.</p>
+The big difference is what happens if you answer "yes" to a health question:
 
-<p>American Amicable offers multiple plan types, and only one provides full coverage from day one. The other options delay benefits for the first two years.</p>
+- **Final expense (Senior Choice and Platinum Solution):** a "yes" answer usually moves you to a Graded or Return of Premium plan instead of denying you. A few serious conditions mean no coverage at all.
+- **Term (Term Made Simple and Easy Term):** there's no lower plan to fall back on. You're approved or declined.
 
-<p>If you’re healthy enough to qualify for their Immediate Benefit plan, you’re covered from the moment your first premium clears.</p>
+### How Senior Choice health answers sort you into a plan
 
-<p>The problem is that most people applying online or through lead ads don’t realize they’re being steered toward the Graded or Return of Premium versions due to moderate health problems.</p>
-
-<p>Those downgraded plans only pay a partial benefit in the first 24 months, or refund your premiums plus 10% interest if you die early. For families counting on coverage to pay for a funeral, that delay can be devastating.</p>
-
-<p>American Amicable’s own policy documents spell this out in detail.</p>
-
-<p>The refund clause exists because the company is taking on higher-risk clients who otherwise wouldn’t qualify for traditional coverage.</p>
+This table summarizes the Senior Choice application we reviewed. The exact questions can vary by state and change over time.
 
-<p>The sad part is that there are other companies that will offer 1st-day coverage rather than a waiting period.</p>
+| If you… | You can usually get |
+|---|---|
+| Are currently in a hospital or nursing facility, confined to a bed or wheelchair by a chronic illness, using oxygen, receiving hospice or home health care, or have any cancer (except basal cell skin cancer); need help with bathing, dressing, eating or toileting; or have had an amputation caused by disease | No Senior Choice plan |
+| Have had, or been told you need, an organ transplant or kidney dialysis; have been diagnosed with congestive heart failure, Alzheimer's, dementia, mental incapacity, ALS, liver failure or respiratory failure; have a terminal condition expected to cause death within 12 months; or have HIV/AIDS | No Senior Choice plan |
+| Have ever had complications of diabetes (such as insulin shock, diabetic coma, or eye, kidney or nerve damage), used insulin before age 50, been diagnosed or treated for kidney failure, renal insufficiency or chronic kidney disease, or had cancer more than once (except basal cell skin cancer) | Return of Premium |
+| In the past 2 years: were diagnosed or treated for angina, stroke, TIA, cardiomyopathy, lupus (SLE), cirrhosis, hepatitis C, chronic hepatitis, chronic pancreatitis, COPD, emphysema or chronic bronchitis, or needed oxygen; had a heart attack or aneurysm, or had (or were advised to have) heart, brain or circulatory surgery or a procedure to improve circulation, including a pacemaker or defibrillator; were diagnosed, treated or took medication for any cancer (except basal cell skin cancer); abused drugs or alcohol or were advised to get treatment; or have tests, surgery or a hospital stay a doctor recommended that you haven't completed or gotten results for | Return of Premium |
+| In the past 3 years: were diagnosed, treated or hospitalized for a stroke, angina, heart attack, aneurysm, or heart or circulatory surgery or a procedure to improve circulation; were diagnosed, treated, hospitalized or took medication for cancer (except basal cell skin cancer), emphysema, chronic bronchitis, COPD, ulcerative colitis, cirrhosis, hepatitis C or liver disease; or were diagnosed, treated or hospitalized for paralysis of two or more limbs, cerebral palsy, MS, seizures, Parkinson's or muscular dystrophy | Graded Benefit |
+| Answer "no" to all of the health questions | Immediate Benefit |
 
-<p>If you want true first-day coverage, you must qualify for the Immediate Benefit plan. That means passing their health questionnaire with “no” answers to major medical conditions.</p>
+Some conditions appear in more than one row, with different time frames. A heart attack, stroke, angina, aneurysm, heart or circulatory surgery, cancer, COPD, emphysema, chronic bronchitis, cirrhosis or hepatitis C is asked about in both the 2-year and 3-year questions. Within the past two years, it points to Return of Premium. Two to three years ago, it points to Graded.
 
-<p><strong>American Amicable Waiting Period Comparison</strong></p>
+Other conditions are asked about in only one question:
 
-<table>
-<thead>
-<tr>
-<th>Plan Type</th>
-<th>First 12 Months</th>
-<th>Months 13 to 24</th>
-<th>After 24 Months</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Immediate Benefit</td>
-<td>100 percent payout</td>
-<td>100 percent payout</td>
-<td>100 percent payout</td>
-</tr>
-<tr>
-<td>Graded Benefit</td>
-<td>40 percent of benefit</td>
-<td>75 percent of benefit</td>
-<td>100 percent payout</td>
-</tr>
-<tr>
-<td>Return of Premium</td>
-<td>Premiums plus 10 percent interest</td>
-<td>Premiums plus 10 percent interest</td>
-<td>100 percent payout</td>
-</tr>
-</tbody>
-</table>
+- TIA, cardiomyopathy, lupus, chronic hepatitis and chronic pancreatitis are asked about only for the past two years.
+- Ulcerative colitis, liver disease, paralysis, cerebral palsy, MS, seizures, Parkinson's and muscular dystrophy are asked about only for the past three years.
+- Diabetic complications, early insulin use, kidney disease and repeat cancer are asked about with no time limit.
 
-<p><br>Every major carrier has some version of this structure.</p>
+Even a single "yes" answer or prescription match can mean a Graded plan, a Return of Premium plan or a denial.
 
-<p>The difference is how many applicants qualify for that top-tier, day-one plan. American Amicable’s underwriting is stricter than competitors like Foresters or Aetna.</p>
+The application also has a box you can check to say you'll accept whichever plan you qualify for. If it's checked, the company can issue a lower plan without asking you to sign anything new. Always ask which plan you were actually approved for.
 
-<p>That means more people get pushed into the waiting-period bucket unnecessarily.</p>
+## Waiting periods and benefit limits
 
-<p>If you’re in decent health, there’s no reason to settle for a plan that makes your family wait two years to receive what you’ve already paid for.</p>
+The biggest misunderstanding in the entire final expense market comes down to waiting periods.
 
-<hr>
+With American Amicable's final expense policies, only the Immediate Benefit plan pays the full benefit from day one. Here's what a death from natural causes would pay on a $10,000 Senior Choice policy:
 
-<h2><strong>Pricing and cost factors</strong></h2>
+| If death from natural causes happens in | Immediate Benefit | Graded Benefit | Return of Premium |
+|---|---|---|---|
+| Year 1 | $10,000 | $3,000 | Premiums paid plus 10% interest |
+| Year 2 | $10,000 | $7,000 | Premiums paid plus 10% interest |
+| Year 3 | $10,000 | $10,000 | Premiums paid plus 10% interest if you were under 65 when the policy started; $10,000 if you were 65 or older |
+| Year 4 and later | $10,000 | $10,000 | $10,000 |
 
-<p>American Amicable’s final expense prices are on the higher side.</p>
+An accidental death pays the full $10,000 on every plan from day one.
 
-<p>Premiums depend on your age, gender, tobacco use, and state of residence. They offer small coverage amounts, usually between $2,500 and $35,000, which is typical for funeral insurance.</p>
+If you want true first-day coverage, you have to qualify for the Immediate Benefit plan, which means answering "no" to all of the health questions. For families counting on coverage to pay for a funeral, a waiting period can be devastating. Our guide to [burial insurance with first-day coverage](/burial-insurance/with-first-day-coverage/) explains how to find it.
 
-<p>Their higher rates are locked for life, meaning your price and coverage never change as long as premiums are paid. That’s a good feature. The concern is that American Amicable’s premiums tend to be significantly higher than other top first-day coverage companies for similar age and health profiles.</p>
+The term policies don't have graded or waiting-period versions, but some of their riders have their own waiting periods:
 
-<p>This happens because American Amicable allows for fewer health risks. Their pricing model is built to protect their profit margins, not necessarily to compete aggressively on price.</p>
+- The unemployment premium waiver doesn't pay for the first 24 months.
+- The confined care benefit requires the nursing home stay to start at least 30 days after the policy is issued.
+- The disability riders don't pay for the first 60 days of a disability.
 
-<p>Another factor that raises cost is add-on riders.</p>
+## Riders and optional add-ons
 
-<p>Features like accidental death or child coverage increase premiums, sometimes significantly. While riders can sound appealing, most buyers don’t need the added expense on small burial policies.</p>
+Some riders are included at no extra cost. Others raise your premium. What's available depends on the product, the plan and your state.
 
-<p>American Amicable does not publish official rate charts on its website. You can’t see your actual premium until an agent quotes it.</p>
+### Senior Choice riders
 
-<p><strong>Sample Monthly Premium Comparison (Non-Smoker, $10,000 Coverage)</strong></p>
+| Rider | Cost | Plans | What it does |
+|---|---|---|---|
+| Terminal Illness Accelerated Benefit | Included | All | Pays up to 100% of the death benefit early if you're expected to live 24 months or less (12 months in some states). A $150 charge and an adjustment reduce the payment. |
+| Confined Care | Included | Immediate only | Pays up to 5% of the death benefit each month if you're confined to a nursing home at least 30 days after the policy is issued. It reduces the death benefit. Not available in every state. |
+| Nursing Home Waiver of Premium | Extra cost | Immediate only | Waives your premiums after you've been in a nursing home for 90 days in a row. |
+| Accidental Death Benefit | Extra cost | Immediate and Graded | Pays an extra benefit, up to the policy's face amount, if you die in an accident. |
+| Children's Insurance | Extra cost | Immediate and Graded | Term coverage of $3,000 per unit (up to 2 units) for your children, for buyers ages 50 to 60. |
+| Grandchild | Extra cost | All | $5,000 per unit (up to 2 units) for grandchildren and great-grandchildren through age 20, with the right to buy more coverage later regardless of health. |
 
-<table>
-<thead>
-<tr>
-<th>Company</th>
-<th>Age 60</th>
-<th>Age 65</th>
-<th>Age 70</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>American Amicable</td>
-<td>$35.12</td>
-<td>$41.88</td>
-<td>$52.45</td>
-</tr>
-<tr>
-<td>Mutual of Omaha</td>
-<td>$31.85</td>
-<td>$37.40</td>
-<td>$47.10</td>
-</tr>
-<tr>
-<td>Foresters Financial</td>
-<td>$32.20</td>
-<td>$38.05</td>
-<td>$47.55</td>
-</tr>
-</tbody>
-</table>
+### Term Made Simple and Easy Term riders
 
-<p><br>American Amicable tends to be more expensive.</p>
+| Rider | Cost | What it does |
+|---|---|---|
+| Terminal Illness Accelerated Benefit | Included | Up to 100% of the death benefit early if you're expected to live 24 months or less (12 in some states) |
+| Chronic Illness Accelerated Benefit | Included | Up to 25% of the death benefit per year (up to 95% or $150,000 in total) if you can't do two daily activities or have severe cognitive impairment |
+| Confined Care | Included | 2.5% of the death benefit per month, up to $5,000, while you're in a nursing home. Not available in every state. |
+| Critical Illness | Extra cost | Pays 25%, 50% or 100% of the death benefit early (up to $100,000) for illnesses such as heart attack, stroke, invasive cancer and kidney failure. Ends at age 70 on Term Made Simple. |
+| Disability Income | Extra cost | Monthly benefit of 2% of the death benefit, up to a set maximum, for up to two years after a 60-day wait |
+| Waiver of Premium | Extra cost | Waives premiums if you become totally disabled. Can't be combined with the critical illness rider. |
+| Unemployment Waiver of Premium | Extra cost | Waives up to six months of premiums if you lose your job, after a 24-month waiting period |
+| Children's Insurance | Extra cost | $3,000 per unit, up to five units, for buyers ages 18 to 50 |
+| Accidental Death Benefit | Extra cost | Up to $200,000 or five times the face amount, whichever is less; ends at age 65 |
 
-<p>If you qualify for first-day coverage elsewhere, paying extra for the same $10,000 benefit doesn’t make sense. Most families would rather put those extra dollars toward groceries or bills.</p>
+Accelerated benefits reduce the death benefit your family receives, and they may be taxable or affect Medicaid eligibility. Read the rider disclosure before you use one.
 
-<hr>
+The Everest funeral concierge services are covered in the Platinum Solution section above.
 
-<h2><strong>Term life insurance from American Amicable</strong></h2>
+## Pricing and cost factors
 
-<p>American Amicable offers a term life product called Term Made Simple.</p>
+Your premium depends on your age, sex, tobacco use, state, the product, the amount of coverage, which plan or price class you qualify for, and any riders you add. Every policy also has a yearly policy fee built into the price.
 
-<p>This is a level-premium term policy with durations of 10, 15, 20 or 30 years.</p>
+**Final expense policies**
 
-<p>Face amounts start from about $50,000 and go up to as much as $500,000 in some markets. Underwriting is “simplified,” meaning no full medical exam is required in many cases.</p>
+- Senior Choice rates are locked for life, meaning your price and coverage never change as long as premiums are paid. That's a good feature.
+- The plan you end up in matters most. The Graded and Return of Premium plans cost more than the Immediate plan for the same coverage, and they pay less if you die during the waiting period.
+- Senior Choice's tobacco question doesn't count occasional cigar or pipe use.
 
-<p>You select a term length (for example, 20 years) and you pay fixed premiums for that term.</p>
+**Term policies**
 
-<p>If you pass away during the term, your beneficiary will receive the death benefit. After the term ends, your coverage and locked-in rates end.</p>
+- Term Made Simple has three price classes; Easy Term has one.
+- Both get cheaper per $1,000 once you buy past a certain coverage amount ($250,000 for Term Made Simple, $75,000 for Easy Term).
+- Easy Term's return-of-premium version costs more in exchange for getting 75% of your base premiums back if you outlive the term.
+- After the level period ends, the premium goes up every year.
 
-<p>The policy allows riders to select options such as accelerated benefit for terminal illness and return-of-premium for specific term lengths.</p>
+**All products**
 
-<p><strong>Strengths</strong></p>
+- Riders like accidental death or child coverage increase your premium.
+- American Amicable can set up your bank draft to come out on the day your Social Security payment arrives.
+- You'll need a quote to see your actual premium. To compare fairly, look at the same coverage amount and the same type of plan from several companies: first-day coverage against first-day coverage.
 
-<ul>
-<li>Simplified underwriting means faster approval and fewer hoops.</li>
-<li>Flexibility in term lengths (10 to 30 years) gives you options.</li>
-<li>Several riders available give extra features (though at extra cost).</li>
-</ul>
+## Customer service, complaints and claims
 
-<p><strong>Risks and drawbacks</strong></p>
+### Contacting American Amicable
 
-<ul>
-<li>Though no exam is required, simplified underwriting still means you may pay higher rates than some carriers that allow full underwriting or “preferred” tiers. Independent reviews show that American Amicable’s term rates often run higher than those of better-value carriers.</li>
-<li>Conversion privileges may not be offered or present, depending on the policy you are offered.</li>
-<li>Term ends after the selected period. If you still need coverage after the term, renewal or new purchasing will be far more expensive. Some buyers expect “lifetime” protection even though it’s a term life insurance product.</li>
-<li>Being simplified issue means you won’t get the lowest rates or the best underwriting for your health profile.</li>
-</ul>
+American Amicable's main toll-free number is 800-736-7311. Its mailing address is P.O. Box 2549, Waco, TX 76702, and its website is americanamicable.com.
 
-<p><strong>Who is this product best suit</strong>ed for?</p>
+### How claims and payouts actually work
 
-<ul>
-<li>Individuals with a need for temporary large coverage (for mortgage, dependents, business obligations) where term life is appropriate.</li>
-<li>Applicants who want a relatively quick underwriting process and may not want or qualify for a full underwriting medical exam, and the lowest rates.</li>
-<li>Buyers who understand a term policy’s finite nature and plan accordingly.</li>
-</ul>
+When a policyholder dies, the beneficiary sends American Amicable a claim form and a certified death certificate. The company may ask for more information, such as medical records, if the death happens in the first two years.
 
-<p><strong>Who should look elsewhere?</strong></p>
+Those first two years are called the [contestability period](/burial-insurance/contestability-period/). If the death happens during that time, the company can review the application and deny the claim if important health information was left out or misstated.
 
-<ul>
-<li>Healthy applicants seeking lifelong coverage or cash-value accumulation may find a whole life or universal life product to be more suitable.</li>
-<li>Buyers focused solely on the lowest premium for a term: you should compare multiple carriers because American Amicable will not be the lowest.</li>
-<li>Clients who dislike policy details, riders, and conversion fine-print. Simpler may be better in that case.</li>
-</ul>
+On the Graded and Return of Premium plans, a natural death during the waiting period pays only the reduced amount or the premium refund. Many families only discover during the claim that the coverage was limited.
 
-<hr>
+If a beneficiary believes a claim is being unfairly delayed, they can file a complaint with their state Department of Insurance. State regulators have the authority to step in and require insurers to respond.
 
-<h2><strong>Underwriting and eligibility requirements</strong></h2>
+### Complaints and customer reviews
 
-<p>American Amicable uses simplified underwriting for its final expense and term life plans.</p>
+Some online reviews describe:
 
-<p>That means no medical exams or blood work, just a brief list of health questions.</p>
+- thinking they had full coverage, then learning it was a Graded or Return of Premium plan
+- billing and bank draft problems
+- trouble canceling a policy
+- slow responses from customer service
 
-<p>Applicants must answer “no” to conditions like heart disease, cancer, COPD, kidney failure, or insulin use before age 30.</p>
+| Measure | Result | Where to check |
+|---|---|---|
+| AM Best financial strength | A (Excellent), affirmed in 2026 | AM Best |
+| Better Business Bureau | Grades change; check the current profile | BBB.org |
+| NAIC complaint index | Changes every year; check the latest report | NAIC Consumer Insurance Search |
+| State complaints | File or look up complaints | Your state Department of Insurance |
 
-<p>They also check your prescription history through a national database called Milliman IntelliScript. If you’ve been prescribed certain medications linked to serious conditions, the system automatically flags your application for review.</p>
+The fine print about waiting periods and reduced benefits is often buried in paperwork that few seniors ever read. That's why consumer education matters more than ever.
 
-<p>In plain terms, American Amicable’s underwriting is stricter than it looks. Even a single “yes” answer or prescription match can downgrade you to a denial, graded, or return-of-premium plan.</p>
+## Common misunderstandings and sales tactics
 
-<p>They also use height and weight charts that exclude many applicants from coverage.</p>
+Most confusion around American Amicable comes from how its products are marketed, not from the contract itself.
 
-<p>If you have chronic health conditions, there’s nothing wrong with applying, but it’s best to do so through a broker who compares multiple carriers to increase your chances of approval and get the lowest rates.</p>
+Ads from agents and call centers often promise "no exam," "easy approval" or even "state-regulated coverage." Those phrases sound reassuring, but they often lead to misunderstandings.
 
-<hr>
+Many seniors believe "no medical exam" means automatic full coverage. It doesn't. The company still decides based on your health answers, prescription records and other checks, and you can still be placed in a plan with a waiting period without realizing it.
 
-<h2><strong>Riders and optional add-ons</strong></h2>
+Another sales tactic is emphasizing the word guaranteed. Agents often say "guaranteed acceptance," but none of American Amicable's policies described in this review is guaranteed acceptance. Even the Senior Choice Return of Premium plan can turn you down based on your health answers, and its tradeoff is a waiting period of at least two years with no full payout if you pass away early.
 
-<p>American Amicable includes a few optional riders with some policies.</p>
+These tactics work because they sound official and urgent. Some mailers even include fake government seals or talk about "state-regulated programs" to build trust. They're designed to make you respond emotionally, not logically.
 
-<p>Some are automatically included, others increase your premium. It’s critical to know which is which.</p>
+## How to compare first-day coverage options
 
-<p><strong>Common Riders Include:</strong></p>
+Comparing final expense policies can feel overwhelming, but the process is simple when you know what to look for.
 
-<ul>
-<li>Accelerated Death Benefit Rider: Allows early access to a portion of the death benefit if diagnosed with a terminal illness.</li>
-<li>Accidental Death Benefit Rider: Adds an extra payout if death results from an accident. This one increases your monthly premium.</li>
-<li>Children’s Insurance Rider: Provides small coverage amounts for dependent children or grandchildren.</li>
-<li>Nursing Home Confinement Rider: Some plans allow partial benefit access if you’re permanently confined to a nursing home.</li>
-</ul>
+1. **Check if the plan is truly first-day coverage.** If the brochure says "graded" or "return of premium," there's a waiting period. Always ask if your full death benefit starts immediately.
+2. **Review the health questions carefully.** Some companies have a short questionnaire; others ask in-depth questions about hospital visits or medications. The stricter the questions, the fewer people qualify for full coverage.
+3. **Look at the company's claim reputation.** Research complaint ratios through the NAIC, or ask your broker about claim turnaround times. Fast payouts matter when families are under stress.
+4. **Ask to see actual rates from multiple carriers.** Never buy from an agent who only shows one company. Independent brokers can show several options side by side, helping you compare prices and benefits.
+5. **Confirm the company's financial strength.** Stick with A-rated insurers from AM Best. A strong rating is a good sign the company will be around to pay your claim decades from now.
 
-<p>These riders can sound comforting, but they rarely justify the cost on small policies.</p>
+| Evaluation Point | Good Sign | Red Flag |
+|---|---|---|
+| Coverage Type | Immediate Full Benefit | Two Year Waiting Period |
+| Agent Type | Independent Broker | Captive Call Center Agent |
+| Underwriting | Flexible Health Questions | Strict or Automatic Downgrade |
+| Transparency | Publishes Rates and Policy Terms | Hides Costs Until After Application |
 
-<p>The accidental death rider is especially oversold. It adds cost but only pays if you die from a qualifying accident, not illness, which is how most people pass away.</p>
+When you know what to look for, it's easy to separate the good companies from the bad. If you're unsure which plan best fits your needs, call 888-862-9456 or visit www.FEXGUY.com for a free comparison quote. It takes five minutes to find out if you qualify for first-day coverage that never expires.
 
-<p>Many buyers think they’re adding “extra protection” when in reality they’re buying a feature that won’t apply in most situations.</p>
+## What Randy thinks about American Amicable
 
-<p><strong>Common American Amicable Riders and Key Facts</strong></p>
+This section is my professional opinion, based on 11 years as an independent life insurance broker.
 
-<table>
-<thead>
-<tr>
-<th>Rider</th>
-<th>Included or Optional</th>
-<th>What It Does</th>
-<th>Common Limitation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Accelerated Death Benefit</td>
-<td>Included</td>
-<td>Access part of benefit for terminal illness</td>
-<td>Requires medical certification of less than 12 months to live</td>
-</tr>
-<tr>
-<td>Accidental Death</td>
-<td>Optional</td>
-<td>Pays extra for accidental death</td>
-<td>No payout for illness, natural death, or medical complications</td>
-</tr>
-<tr>
-<td>Children’s Insurance</td>
-<td>Optional</td>
-<td>Small coverage for dependents</td>
-<td>Limited benefit and age restrictions</td>
-</tr>
-<tr>
-<td>Nursing Home Confinement</td>
-<td>Optional</td>
-<td>Allows partial access to benefit while living</td>
-<td>Must meet permanent confinement definition</td>
-</tr>
-</tbody>
-</table>
+### Its underwriting is stricter than many carriers I work with
 
-<p><br>Most people would be better served by focusing on strong first-day coverage instead of paying extra for riders they’ll never use. The policy itself is what protects your family, not the small add-ons that sound nice in marketing materials.</p>
+In my experience, American Amicable is generally stricter than many of the carriers I work with.
 
-<hr>
+My biggest concern is its three-year lookback for conditions like heart attack, stroke, angina, aneurysm, heart or circulatory surgery, certain cancer treatment, COPD and several neurological conditions. Inside that window, you'll usually get the Graded plan. Within two years, it's often the Return of Premium plan.
 
-<h2><strong>How claims and payouts actually work</strong></h2>
+Many competing final expense carriers use a two-year lookback for similar conditions. Some carriers I work with may offer first-day coverage for certain applicants with a history of heart attack, aneurysm or pacemaker placement, depending on eligibility. So someone American Amicable would put in a Graded or Return of Premium plan may qualify for immediate coverage somewhere else.
 
-<p>American Amicable’s claims process is straightforward on paper, but can be slow in practice depending on how the policy was written.</p>
+In my experience, the vast majority of the people I help qualify for first-day coverage. A skilled broker like the Final Expense Guy knows how to match health conditions to the right carrier.
 
-<p>When a policyholder passes away, the beneficiary must submit a death certificate, claim form, and sometimes a physician’s statement if the death occurred within the first two policy years.</p>
+### It's an expensive choice
 
-<p>This verification period is where most delays happen. The company reserves the right to review and deny any claim filed within the first two years of issue under what’s called the contestability period.</p>
+I haven't found American Amicable to be less expensive than the other carriers I compare it against. In my professional opinion, it's an expensive choice for final expense insurance, and its premiums can be significantly higher on its Graded and Return of Premium plans.
 
-<p>If your plan comes with immediate coverage, and death occurs after this period.  Payments are then typically made within 10 to 14 business days once documentation is complete, unless the death occurred in the first two years.</p>
+I'm especially critical of those two plans. In my opinion, the Return of Premium version is a terrible plan. If you have to accept a reduced death benefit for the first few years anyway, there's little reason to pay substantially more for it. When someone qualifies only for one of those plans, I generally find better value with other insurers.
 
-<p>For their whole life, graded or return of premium plan, the process can stretch longer because the company has to calculate the refund or partial payout. Many families only discover during the claim that the coverage was limited for two years.</p>
+For example, someone considering American Amicable's Return of Premium plan may be better served by [Gerber Life's](/gerber-life-insurance-review/) guaranteed issue whole life policy, depending on their age, health, coverage needs and actual quotes. Gerber's policy asks no health questions and has a two-year waiting period, but it's only available to ages 50 to 80, with coverage from $5,000 to $25,000.
 
-<p>If a beneficiary believes a claim is being unfairly delayed, they can file a complaint directly with their state Department of Insurance or the NAIC Consumer Information Source (CIS) database.</p>
+If you qualify for first-day coverage elsewhere, paying extra for the same benefit doesn't make sense. Most families would rather put those extra dollars toward groceries or bills.
 
-<p>State regulators have full authority to step in and require insurers to respond. The law requires all legitimate carriers to maintain sufficient reserves and pay legitimate claims promptly.</p>
+### Skip the bundled extras
 
-<hr>
+The Everest concierge services that come with Platinum Solution can help a family that doesn't know where to start. From selling and comparing these products, I know Platinum Solution costs more because the Everest services are bundled into the policy. That makes an already expensive product even more expensive. It's a similar approach to the one Lincoln Heritage uses.
 
-<h2><strong>Complaints, customer reviews, and regulatory standing</strong></h2>
+I generally recommend putting those premium dollars toward more life insurance instead. Your family can call several funeral homes, compare prices themselves and potentially save thousands of dollars without paying for a service package. Even a small extra cost each year adds up over the life of the policy.
 
-<p>American Amicable has an NAIC Complaint Index above the national average, meaning it receives more complaints than a typical company of its size (source: NAIC Consumer Information Source). The most common issues involve policy misunderstandings, waiting periods, and communication after purchase.</p>
+The same goes for most riders on small burial policies. They can sound comforting, but they rarely justify the cost. The accidental death rider is especially oversold. It only pays if you die from a qualifying accident, not illness, which is how most people pass away. Focus on strong first-day coverage instead of paying extra for add-ons you'll never use.
 
-<p>The company holds an A (Excellent) financial strength rating from A.M. Best, confirming it has the resources to pay claims. That’s good news from a solvency standpoint.</p>
+### Who American Amicable is best for
 
-<p>However, solvency isn’t the same as satisfaction.</p>
+American Amicable fits a narrow group of buyers who don't mind overpaying on a plan for the rest of their life. Its stricter underwriting results in higher pricing and, even worse, waiting-period plans that cost more and pay less.
 
-<p>The Better Business Bureau (BBB) lists an A+ rating with a moderate volume of complaints.</p>
+American Amicable should never be your first choice unless every other option is off the table.
 
-<p>Many customer reviews describe the same problem: they thought they had full coverage, only to find out later it was a graded or return-of-premium plan. This pattern traces back to inconsistent agent training rather than outright dishonesty from the company.</p>
+| Best For | Not Ideal For |
+|---|---|
+| Applicants with serious health conditions | Healthy applicants who can qualify for day one coverage |
+| People declined by other carriers | Seniors seeking the lowest possible price |
+| Those who understand waiting periods | Buyers who want transparent, instant quotes |
+| Families needing small coverage amounts | Anyone expecting immediate full payout protection |
 
-<p>Because American Amicable relies heavily on independent agents, the buyer experience varies dramatically. Some agents are experienced professionals who explain everything clearly. Others rush through applications and leave clients confused.</p>
+American Amicable serves a purpose, but it's not the most consumer-friendly option in the market.
 
-<p>Consumers also report that contacting the company directly can be time-consuming, with limited service agents compared to other companies.</p>
+### Better alternatives
 
-<p>Despite these issues, American Amicable remains financially stable and legally compliant. It’s not a scam, it’s just not a market leader for customer experience or product transparency.</p>
+If your goal is real first-day coverage, there are better choices than American Amicable. In my experience, these companies approve more applicants for immediate benefits and often offer the same protection at a lower cost.
 
-<p><strong>American Amicable Reputation Overview</strong></p>
+**[Aetna](/aetna-burial-insurance-review/)** has one of the most flexible final expense programs in the market. Its underwriting accepts many common health issues, such as controlled diabetes, mild COPD or high blood pressure. Its Level Benefit plan gives most seniors a fair chance at first-day coverage, and approval is fast, often completed within minutes.
 
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Rating or Result</th>
-<th>Source</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A.M. Best Rating</td>
-<td>A (Excellent)</td>
-<td><a href="https://www.ambest.com" target="_blank" rel="noopener">A.M. Best</a></td>
-</tr>
-<tr>
-<td>NAIC Complaint Index</td>
-<td>Above Average</td>
-<td><a href="https://content.naic.org/" target="_blank" rel="noopener">NAIC</a></td>
-</tr>
-<tr>
-<td>BBB Rating</td>
-<td>A plus</td>
-<td><a href="https://www.bbb.org/" target="_blank" rel="noopener">Better Business Bureau</a></td>
-</tr>
-<tr>
-<td>Common Complaint</td>
-<td>Misunderstood waiting period</td>
-<td>Consumer Reviews</td>
-</tr>
-</tbody>
-</table>
+**[Family Benefit Life](/family-benefit-life-burial-insurance-review/)** specializes in simple whole life insurance with straightforward underwriting. Its final expense plan is known for its leniency toward conditions such as high cholesterol or past minor surgeries. In my experience, the company is small but highly responsive, claims are handled quickly, and its rates are among the most competitive for seniors between 55 and 75.
 
-<p><br>The fine print about waiting periods and reduced benefits is often buried in paperwork that few seniors ever read.</p>
+**[Trinity Life Insurance Company](/trinity-life-insurance-review/)** offers full first-day coverage for most applicants in fair health. In my experience, Trinity is more forgiving with applicants who use insulin or have moderate heart conditions, situations where American Amicable would likely apply a waiting period. It also offers flexible payment options and quick e-applications through licensed brokers.
 
-<p>That’s why consumer education matters more than ever.</p>
+Each of these companies is transparent about its health questions and pays full benefits immediately for the majority of qualified applicants.
 
-<hr>
+### Final verdict: should you buy American Amicable life insurance?
 
-<h2><strong>Common misunderstandings and sales tactics</strong></h2>
+American Amicable is a legitimate, financially stable life insurance company with more than a century of experience. It's not a scam, and it pays valid claims.
 
-<p>Most confusion around American Amicable comes from how their products are marketed, not from the contract itself.</p>
+For most seniors, American Amicable isn't the strongest choice.
 
-<p>The company allows independent agents to advertise “no exam,” “easy approval,” and sometimes “state-regulated coverage,” which sounds reassuring, but often leads to misunderstanding.</p>
+The company's underwriting rules are strict, which means many people who could qualify for first-day coverage elsewhere end up in a plan with a waiting period of at least two years without realizing it.
 
-<p>Many seniors believe “no medical exam” means automatic full coverage. It doesn’t.</p>
+In my experience, the rates are also higher than comparable options from the other carriers I compare it against. That extra cost might seem small each month, but over time it adds up.
 
-<p>It simply means the insurer makes a decision based on your health questions and prescription record instead of lab results. You can still be downgraded to a plan with a waiting period without realizing it.</p>
+Paying more for a policy that pays less doesn't make sense for most families.
 
-<p>Another sales tactic is emphasizing the word guaranteed.</p>
+If you're in moderately poor to fair or good health, there are better choices.
 
-<p>Agents often say “guaranteed acceptance,” but that phrase only applies to the return-of-premium plan. It’s technically true, you can’t be denied, but the tradeoff is a two-year waiting period and no full payout if you pass away early.</p>
+To compare your real first-day coverage options, call 888-862-9456 or visit www.FEXGUY.com. You'll see exactly what you qualify for before spending a penny.
 
-<p>These tactics work because they sound official and urgent. Some mailers even include fake government seals or talk about “state-regulated programs” to build trust. They’re designed to make you respond emotionally, not logically.</p>
+## Frequently asked questions: American Amicable life insurance
 
-<p>Captive agents or call centers tend to use scripts that push you toward a policy that pays them the highest commission, not the one that protects your family the best. Once the policy is issued, you often never hear from that agent again.</p>
+### Is American Amicable legit?
 
-<p>If you’re healthy enough to qualify for first-day coverage, there’s no reason to buy a plan that limits benefits for two years.</p>
+Yes. American-Amicable Life Insurance Company of Texas is a legitimate, state-regulated life insurer, founded in 1910 and based in Waco, Texas. AM Best rates it A (Excellent) for financial strength. Even though it's legitimate, in my experience American Amicable often charges higher premiums than competitors offering the same type of coverage, so compare quotes before you buy.
 
-<p>That’s where experience matters.</p>
+### Is American Amicable a reputable company?
 
-<p>An independent broker like the Final Expense Guy who understands underwriting differences can place you with a company that fits your health profile, thereby saving you money and giving your family real protection from day one.</p>
+Financially, yes. Its customer reputation is mixed, though. Some online reviews describe waiting periods people didn't understand, policies that were issued as a lower plan, and slow service. Check BBB.org, NAIC's Consumer Insurance Search and your state Department of Insurance for the latest complaint information.
 
-<hr>
+### What is American Amicable's AM Best rating?
 
-<h2><strong>Who American Amicable is best for</strong></h2>
+A (Excellent), affirmed in 2026. Its parent company, Industrial Alliance, is rated A+ (Superior).
 
-<p>American Amicable fits a narrow group of buyers who don’t mind overpaying on a plan for the rest of their life.</p>
+### Who owns American Amicable?
 
-<p>That’s where American Amicable falls short. Their stricter underwriting results in higher pricing and, even worse, 2-year waiting-period plans that cost more and pay less.</p>
+iA Financial Group, a Canadian insurance company based in Quebec City, bought American Amicable in 2010. American Amicable's policies are still regulated by U.S. state insurance departments.
 
-<p>The truth is, in my experience, around 97% of the people I help qualify for first-day coverage. A skilled broker like the Final Expense Guy knows how to match health conditions to the right carrier.</p>
+### What does American Amicable offer?
 
-<p>American Amicable should never be your first choice unless every other option is off the table.</p>
+Final expense whole life insurance (Senior Choice and Platinum Solution) and no-exam term life insurance (Term Made Simple and Easy Term). Products and riders vary by state.
 
-<p><strong>Who Should and Should Not Choose American Amicable</strong></p>
+### What is American Amicable Senior Choice?
 
-<table>
-<thead>
-<tr>
-<th>Best For</th>
-<th>Not Ideal For</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Applicants with serious health conditions</td>
-<td>Healthy applicants who can qualify for day one coverage</td>
-</tr>
-<tr>
-<td>People declined by other carriers</td>
-<td>Seniors seeking the lowest possible price</td>
-</tr>
-<tr>
-<td>Those who understand waiting periods</td>
-<td>Buyers who want transparent, instant quotes</td>
-</tr>
-<tr>
-<td>Families needing small coverage amounts</td>
-<td>Anyone expecting immediate full payout protection</td>
-</tr>
-</tbody>
-</table>
+A no-exam whole life policy for ages 50 to 85, with three versions: Immediate Benefit, Graded Benefit and Return of Premium. Your health answers decide which one you get, and only the Immediate plan pays the full benefit from day one.
 
-<p><br>American Amicable serves a purpose, but it’s not the most consumer-friendly option in the market.</p>
+### Does American Amicable require a medical exam?
 
-<hr>
+No. All of its policies use health questions, a prescription history check, an MIB check and your height and weight instead. Some applicants also have a short phone interview, and term applicants have their driving record checked.
 
-<h2><strong>Better alternatives to American Amicable</strong></h2>
+### Does American Amicable sell term life insurance?
 
-<p>If your goal is real first-day coverage, there are better choices than American Amicable.</p>
+Yes. Term Made Simple offers $50,000 to $500,000 for 10, 15, 20 or 30 years, and Easy Term offers $25,000 to $300,000 for 10, 20 or 30 years. Both can continue to age 95 after the level period, at a price that rises every year.
 
-<p>These companies approve more applicants for immediate benefits and often offer the same protection at a lower cost.</p>
+### How do I contact American Amicable?
 
-<p>Aetna Final Expense is one of the most flexible programs in the market. Their underwriting accepts many common health issues such as controlled diabetes, mild COPD, or high blood pressure. Aetna’s Modified and Level Benefit plans give most seniors a fair chance at first-day coverage, and their approval process is fast, often completed within minutes. The company also holds a strong A (Excellent) rating from A.M. Best, demonstrating its long-term financial strength.</p>
+American Amicable's main toll-free number is 800-736-7311. Its mailing address is P.O. Box 2549, Waco, TX 76702, and its website is americanamicable.com. If you want help reviewing your coverage or comparing first-day options, you can reach the Final Expense Guy at 888-862-9456.
 
-<p>Family Benefit Life specializes in simple, affordable whole life insurance with straightforward underwriting. Their Final Expense plan is known for its leniency toward conditions such as high cholesterol or past minor surgeries. Family Benefit Life is small but highly responsive. Claims are handled quickly, and their rates are among the most competitive for seniors between 55 and 75. For applicants who prefer personalized customer service over a call center, this company stands out.</p>
+### How do I cancel American Amicable life insurance?
 
-<p>Trinity Life Insurance Company is another strong alternative. Their New Vista Final Expense plan offers full first-day coverage for most applicants in fair health. Trinity is more forgiving with applicants who use insulin or have moderate heart conditions, situations where American Amicable would likely apply a waiting period. They also offer flexible payment options and quick e-applications through licensed brokers nationwide.</p>
+Call customer service at 800-736-7311 or send a written request. If you're still in your free-look period (check your policy for its length), you'll get your premiums back. If you're replacing the policy, make sure the new one is approved and in force before you cancel, so you're never without coverage.
 
-<p>Each of these companies shares two major strengths. They’re transparent about their health questions, and they pay full benefits immediately for the majority of qualified applicants.</p>
+### What is the lawsuit against American Income Life?
 
-<p>None of them relies on misleading “state-regulated” advertising or two-year waiting period plans.</p>
+American Income Life is a separate company owned by Globe Life Inc. It isn't American Amicable, and lawsuits involving American Income Life have nothing to do with American Amicable policies.
 
-<p>If you’re healthy enough to qualify for first-day coverage, you don’t need to settle for higher costs or delayed protection.</p>
+### How much did the American-Amicable lawsuit pay out?
 
-<p>Independent brokers can compare all many companies side by side to find the best fit for your age, budget, and health profile.</p>
-
-<p><strong>Comparison of Final Expense Options</strong></p>
-
-<table>
-<thead>
-<tr>
-<th>Company</th>
-<th>Coverage Start</th>
-<th>Underwriting Leniency</th>
-<th>Average Monthly Cost, ten thousand Age 65</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Aetna</td>
-<td>Day 1</td>
-<td>High</td>
-<td>$39.10</td>
-</tr>
-<tr>
-<td>Family Benefit Life</td>
-<td>Day 1</td>
-<td>Moderate to High</td>
-<td>$37.85</td>
-</tr>
-<tr>
-<td>Trinity Life</td>
-<td>Day 1</td>
-<td>High</td>
-<td>$38.25</td>
-</tr>
-<tr>
-<td>American Amicable</td>
-<td>Up to 2 Year Wait</td>
-<td>Strict</td>
-<td>$41.88</td>
-</tr>
-</tbody>
-</table>
-
-<p><br>American Amicable is financially solid, but it’s not the best choice for most people or healthy applicants. You can often save hundreds to thousands of dollars over time and get complete protection right away with another carrier.</p>
-
-<p>A broker who works independently, like the Final Expense Guy, can compare dozens of carriers in minutes to match you with the right plan.</p>
-
-<hr>
-
-<h2><strong>How to compare first-day coverage options</strong></h2>
-
-<p>Comparing final expense policies can feel overwhelming, but the process is simple when you know what to look for.</p>
-
-<p><strong>You only need to focus on a few key points.</strong></p>
-
-<ol>
-<li>Check if the plan is truly first-day coverage.<br>If the brochure says “graded” or “return of premium,” that means there’s a waiting period. Always ask if your full death benefit starts immediately.</li>
-<li>Review the health questions carefully.<br>Some companies have a short questionnaire; others ask in-depth questions about hospital visits or medications. The stricter the questions, the fewer people qualify for full coverage.</li>
-<li>Look at the company’s claim reputation.<br>Research complaint ratios through the NAIC or ask your broker about claim turnaround times. Fast payouts matter when families are under stress.</li>
-<li>Ask to see actual rates from multiple carriers.<br>Never buy from an agent who only shows one company. Independent brokers can show several options side by side, helping you compare prices and benefits.</li>
-<li>Confirm the company’s financial strength.<br>Stick with A-rated insurers from A.M. Best. A strong financial rating ensures your policy will still be around decades from now.</li>
-</ol>
-
-<p><strong>What to Look for When Comparing First-Day Coverage</strong></p>
-
-<table>
-<thead>
-<tr>
-<th>Evaluation Point</th>
-<th>Good Sign</th>
-<th>Red Flag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Coverage Type</td>
-<td>Immediate Full Benefit</td>
-<td>Two Year Waiting Period</td>
-</tr>
-<tr>
-<td>Agent Type</td>
-<td>Independent Broker</td>
-<td>Captive Call Center Agent</td>
-</tr>
-<tr>
-<td>Underwriting</td>
-<td>Flexible Health Questions</td>
-<td>Strict or Automatic Downgrade</td>
-</tr>
-<tr>
-<td>Transparency</td>
-<td>Publishes Rates and Policy Terms</td>
-<td>Hides Costs Until After Application</td>
-</tr>
-</tbody>
-</table>
-
-<p><br>When you know what to look for, it’s easy to separate the good companies from the bad.<br><br>If you’re unsure which plan best fits your needs, call 888-862-9456 or visit www.FEXGUY.com for a free comparison quote. It takes five minutes to find out if you qualify for first-day coverage that never expires.</p>
-
-<hr>
-
-<h2><strong>Final verdict: should you buy American Amicable life insurance?</strong></h2>
-
-<p>American Amicable is a legitimate, financially stable life insurance company with more than a century of experience. It’s not a scam, and it pays valid claims.</p>
-
-<p>For most seniors, American Amicable isn’t the strongest choice.</p>
-
-<p>The company’s underwriting rules are strict, which means many people who could qualify for first-day coverage elsewhere end up in a two-year waiting period plan without realizing it.</p>
-
-<p>The rates are also higher than comparable options from Mutual of Omaha, Foresters, or Aetna. That extra cost might seem small each month, but over time it adds up.</p>
-
-<p>Paying more for a policy that pays less doesn’t make sense for most families.</p>
-
-<p>If you’re in moderately poor to fair or good health, there are better choices.</p>
-
-<p>To compare your real first-day coverage options, call 888-862-9456 or visit www.FEXGUY.com. You’ll see exactly what you qualify for before spending a penny.</p>
-
-<hr>
-
-<h2><strong>Frequently asked questions</strong>: <strong>American Amicable life insurance</strong></h2>
-
-<p><strong>Is American Amicable legit for life insurance?</strong></p>
-
-<p>Yes. American Amicable Life Insurance Company is a legitimate, state-regulated life insurer founded in 1910 and headquartered in Waco, Texas. It operates under the supervision of each state’s Department of Insurance and adheres to the consumer protection standards established by the National Association of Insurance Commissioners (NAIC). The company’s A (Excellent) rating from A.M. Best confirms it has the financial resources to pay valid claims.</p>
-
-<p>Even though it’s legitimate, American Amicable often charges higher premiums than competitors offering the same type of coverage. For most people, it makes more sense to work with an independent expert like the Final Expense Guy, who can compare multiple A-rated insurers and help you qualify for first-day coverage at a better price.</p>
-
-<p><strong>Is American Amicable a reputable company?</strong></p>
-
-<p>American Amicable is financially reputable and legally compliant, backed by iA Financial Group, one of Canada’s largest insurance corporations. The company maintains an A (Excellent) rating from A.M. Best, showing strong financial stability. However, its customer reputation is mixed.</p>
-
-<p>The NAIC Complaint Index lists American Amicable as receiving more complaints than the average insurer of its size. Many customer issues involve unclear waiting periods, confusion over downgraded policies, and delayed service. The Better Business Bureau (BBB) gives the company an A+ rating but notes several unresolved communication complaints.</p>
-
-<p>Financial strength and legal standing make American Amicable reputable in solvency, but its customer experience is less consistent.</p>
-
-<p><strong>Who owns American Amicable?</strong></p>
-
-<p>American Amicable is owned by Industrial Alliance Insurance and Financial Services Inc. (iA Financial Group), a publicly traded Canadian insurance company headquartered in Québec. iA Financial Group acquired American Amicable in 2010, giving it access to greater financial resources and reinsurance support.</p>
-
-<p>Although iA is a Canadian parent company, American Amicable’s operations and regulatory oversight remain under U.S. jurisdiction. Policies are still governed by U.S. state insurance departments and the NAIC, ensuring American Amicable complies with American consumer protection laws.</p>
-
-<p><strong>How do I contact American Amicable life insurance?</strong></p>
-
-<p>American Amicable’s corporate office is located in Waco, Texas, and its official website lists customer service options for policyholders. The company provides phone, email, and mail contact information directly on its site. Exact contact details are publicly available on the company’s official domain at www.americanamicable.com.</p>
-
-<p>For faster and more personalized help, especially if you’re comparing rates, applying for coverage, or canceling a policy, the Final Expense Guy can assist directly at 888-862-9456 or through www.FEXGUY.com.</p>
-
-<p><strong>What is the lawsuit against American Income Life?</strong></p>
-
-<p>American Income Life is a separate company owned by Globe Life Inc. It is not the same entity as American Amicable. Public court filings show that American Income Life has faced multiple lawsuits over employment practices and commission structures, but none of those are directed against American Amicable.</p>
-
-<p>There are no major active lawsuits publicly listed against American Amicable Life Insurance Company itself. Consumers can verify this through the NAIC Consumer Information Source or the Texas Department of Insurance database, which lists disciplinary actions and legal settlements for licensed insurers.</p>
-
-<p><strong>How to cancel American Amicable life insurance?</strong></p>
-
-<p>Policyholders can cancel American Amicable life insurance by contacting the company’s customer service department in writing or by phone. Because the company does not publish specific cancellation instructions on its website, you must request cancellation directly through their service team.</p>
-
-<p>If the policy was purchased through a call center or independent agent, it’s important to confirm the agent is licensed and authorized to process cancellations. For clients who want to replace or upgrade their policy, the Final Expense Guy can help you compare better options with first-day coverage before you cancel so your protection never lapses.</p>
-
-<p><strong>What is the phone number for American Amicable life insurance?</strong></p>
-
-<p>The official customer service phone number for American Amicable Life Insurance Company is published on the company’s website at www.americanamicable.com. That’s the most reliable and publicly verified source for current contact information.</p>
-
-<p>If you’re having trouble reaching them or want help reviewing your existing coverage before calling, you can speak directly with the Final Expense Guy at 888-862-9456 for no-cost guidance.</p>
-
-<p><strong>How much did the American-Amicable lawsuit pay out?</strong></p>
-
-<p>There are no publicly available records confirming a specific payout amount tied to any American Amicable lawsuit. While the company has been named in individual civil cases over the years, no verified source or regulatory filing shows a class-action settlement or large-scale payout currently in effect.</p>
-
-<p>If you see online references claiming a specific lawsuit payout amount, be cautious, as they’re not verified by court or regulator databases. Always check the NAIC Consumer Information Source or your state’s Department of Insurance for accurate, up-to-date complaint and enforcement history.</p>
-
-<p>For those who simply want to make sure their own coverage is with a reliable, transparent carrier, the Final Expense Guy can review your current plan and show legitimate first-day coverage options from proven A-rated companies.</p>
+We're not aware of any court or regulator record of a class-action settlement or payout involving American Amicable. If you see a specific payout amount online, be cautious. You can check enforcement actions through the Texas Department of Insurance and your own state's Department of Insurance.

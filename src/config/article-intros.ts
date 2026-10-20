@@ -26,7 +26,6 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/burial-insurance/afib/': ["Getting burial insurance with AFib comes down to how controlled"],
   '/burial-insurance/aids-hiv/': ["Burial insurance with AIDS or HIV is more available today"],
   '/burial-insurance/alcohol-or-drug-abuse/': ["Getting burial insurance with alcohol or drug abuse comes down"],
-  '/burial-insurance/american-amicable-life-insurance-review/': ["American Amicable life insurance is known for being easy"],
   '/burial-insurance/and-coronavirus/': ["Burial insurance and coronavirus caused a lot of confusion, but"],
   '/burial-insurance/and-suicide/': ["Most people think life insurance won’t pay for suicide. That’s"],
   '/burial-insurance/aneurysm/': ["Getting burial insurance with an aneurysm depends on timing, treatment,"],
