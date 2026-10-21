@@ -214,7 +214,6 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/life-insurance-for-hiv-positive/': ["Getting life insurance for HIV positive individuals is possible"],
   '/life-insurance-height-weight-guidelines/': ["Life insurance height and weight guidelines are used to"],
   '/life-insurance-savings-group-review/': ["Life Insurance Savings Group is a marketing name, not"],
-  '/lincoln-heritage-funeral-advantage-review-old/': ["Lincoln Heritage Funeral Advantage is a type of whole"],
   '/lions-club-member-life-insurance/': ["Lions Club member life insurance isn’t a special policy;"],
   '/lumico-burial-insurance-review/': ["Lumico burial insurance is a type of whole life"],
   '/medicaid-spend-down-rules-on-life-insurance/': ["Medicaid spend-down rules for life insurance determine whether your"],

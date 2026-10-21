@@ -353,7 +353,7 @@ export const COMPANY_GROUPS: { id: string; title: string; byLetter: boolean; ent
       { href: '/great-western-burial-insurance-review/', label: 'Great Western' },
       { href: '/guarantee-trust-life-insurance-review/', label: 'Guarantee Trust Life' },
       { href: '/liberty-bankers-burial-insurance-review/', label: 'Liberty Bankers' },
-      { href: '/lincoln-heritage-funeral-advantage-review-old/', label: 'Lincoln Heritage' },
+      { href: '/lincoln-heritage-funeral-advantage-review/', label: 'Lincoln Heritage' },
       { href: '/lumico-burial-insurance-review/', label: 'Lumico' },
       { href: '/mutual-of-omaha-burial-insurance/', label: 'Mutual of Omaha' },
       { href: '/oxford-life-burial-insurance-review/', label: 'Oxford Life' },

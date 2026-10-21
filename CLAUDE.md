@@ -426,8 +426,9 @@ is in place; see src/content/README.md for how pages were migrated.
     /category/burial-insurance-neurological-impairments/page/3/ →
     /burial-insurance/neurological-disorders/.
 - **Two more approved 301s** (Randy, October 2026):
-  /lincoln-heritage-funeral-advantage-review/ →
-  /lincoln-heritage-funeral-advantage-review-old/ and /sitemap_index.xml →
+  /lincoln-heritage-funeral-advantage-review-old/ →
+  /lincoln-heritage-funeral-advantage-review/ (reversed October 2026 when
+  the rewritten review moved to the clean URL) and /sitemap_index.xml →
   /sitemap-index.xml. vercel.json holds 308 redirects (with the 11 retired
   /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
