@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Lincoln Heritage charges substantially more than competing carriers for comparable first-day burial insurance coverage<br>• Its agents are captive. They can sell only Lincoln Heritage policies and can't compare other companies for you.<br>• Lincoln Heritage's published rate book shows a 65-year-old woman paying $107.70 a month for $10,000 of modified coverage versus $58.50 for immediate coverage. These are historical published rates, not current quotes.<br>• If you overpay by $40 a month for a Lincoln Heritage policy, that's $4,800 in additional premiums over 10 years<br>• The Funeral Consumer Guardian Society helps with funeral planning but doesn't pay funeral expenses<br>• Lincoln Heritage advertises payment within 24 hours after a claim is approved, not within 24 hours of death</p>
+<p>• Lincoln Heritage charges substantially more than competing carriers for comparable first-day burial insurance coverage<br>• Its agents are captive. They can sell only Lincoln Heritage policies and can't compare other companies for you.<br>• Lincoln Heritage's published rate book shows a 65-year-old woman paying $107.70 a month for $10,000 of modified coverage versus $58.50 for immediate coverage.<br>• If you overpay by $40 a month for a Lincoln Heritage policy, that's $4,800 in additional premiums over 10 years<br>• The Funeral Consumer Guardian Society helps with funeral planning but doesn't pay funeral expenses<br>• Lincoln Heritage advertises payment within 24 hours after a claim is approved, not within 24 hours of death</p>
 
 ## Company history and ownership
 
@@ -26,14 +26,6 @@ Funeral Advantage is underwritten by Lincoln Heritage Life Insurance Company. Th
 AM Best rates Lincoln Heritage A (Excellent) with a stable outlook. AM Best raised the rating from A- in July 2025 and confirmed it in August 2026.
 
 That rating means Lincoln Heritage has the financial strength to pay claims. It's important to separate financial strength from consumer value. A strong rating tells you nothing about whether the price is fair.
-
-## Is Funeral Advantage a government program?
-
-No. You may see ads for the "Funeral Advantage program," sometimes next to phrases like "aids seniors" or "state-regulated." Funeral Advantage is just a whole life final expense policy. It's not a government program, a special state benefit, or regulated differently from any other private life insurance policy. Lincoln Heritage's own website says that neither the federal government nor any state agency endorses or is affiliated with the company.
-
-Being "state regulated" only means the policy must follow the same rules as every other insurer. Our guide to [state-regulated life insurance](/burial-insurance/state-regulated-life-insurance/) explains these ads. The only federal funeral benefit is Social Security's one-time $255 death payment to an eligible spouse or child.
-
-So when you see a Lincoln Heritage postcard or Facebook ad that looks like a government form, remember this: the marketing is private, the program is private, and the purpose is to sell you one specific policy from one specific company.
 
 ## Funeral Advantage at a glance
 
