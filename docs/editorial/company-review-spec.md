@@ -302,13 +302,14 @@ Each company review has a folder in RandyFEX/fexguy-monitoring,
 - `auto-edit-log.md`, as the knowledge base already requires for
   rule-based edits.
 
-## 15. Planned validation (Phase 2, not yet implemented)
+## 15. Validation (Phase 2)
 
-Randy approved read-only validation scripts in principle. They will not be
-built until he separately authorizes Phase 2. They must be read-only, never
+Randy authorized Phase 2, and the on-demand, read-only validation tool has
+been implemented (`scripts/company-review-check.mjs`, run with
+`npm run review-check`). It must be read-only, never
 rewrite articles, and be tested against the actual Lincoln Heritage commit
-diffs, after verifying what each historical commit really changed. They
+diffs, after verifying what each historical commit really changed. It
 must catch unauthorized structural changes, unexpected paragraph edits,
 repeated numerical examples, excessive source-date references and
-prohibited wording without excessive false positives. Until then, the
-scope diff and audit are manual steps in the procedure.
+prohibited wording without excessive false positives. It supplements, and
+does not replace, the manual scope diff and audit in the procedure.
