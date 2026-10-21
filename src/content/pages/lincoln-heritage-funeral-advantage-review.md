@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• In my experience, Lincoln Heritage costs substantially more than comparable first-day coverage from competing carriers<br>• Its agents are captive: they can sell only Lincoln Heritage and can't shop other companies for you<br>• In Lincoln Heritage's published rate book, a 65-year-old woman buying $10,000 pays $107.70 a month for the modified plan versus $58.50 for the immediate plan. These are historical rates, not current quotes.<br>• Paying $40 more a month adds up to $4,800 over 10 years<br>• The Funeral Consumer Guardian Society helps with funeral planning, but it doesn't pay any funeral costs<br>• Lincoln Heritage advertises payment within 24 hours after a claim is approved, not 24 hours after the death</p>
+<p>• Lincoln Heritage charges substantially more than competing carriers for comparable first-day burial insurance coverage<br>• Its agents are captive. They can sell only Lincoln Heritage policies and can't compare other companies for you.<br>• Lincoln Heritage's published rate book shows a 65-year-old woman paying $107.70 a month for $10,000 of modified coverage versus $58.50 for immediate coverage. These are historical published rates, not current quotes.<br>• If you overpay by $40 a month for a Lincoln Heritage policy, that's $4,800 in additional premiums over 10 years<br>• The Funeral Consumer Guardian Society helps with funeral planning but doesn't pay funeral expenses<br>• Lincoln Heritage advertises payment within 24 hours after a claim is approved, not within 24 hours of death</p>
 
 ## Company history and ownership
 
@@ -193,7 +193,7 @@ Here's what $10,000 of coverage costs under Lincoln Heritage's published rates, 
 | 75 | $103.10 | $125.90 | $151.70 | $192.30 |
 | 80 | $145.00 | $183.20 | $188.70 | $212.70 |
 
-Source: Lincoln Heritage Life Insurance Company, Final Expense Plans Agent Rate Book, January 2024 edition. These are published historical rates, not verified current premiums.
+Source: Lincoln Heritage Life Insurance Company, Final Expense Plans Agent Rate Book. Rates shown are historical examples and may differ from current premiums.
 
 Each figure is Lincoln Heritage's monthly rate per $1,000 of coverage, times 10, plus the $3 policy fee. For example, a 65-year-old woman pays $5.55 × 10 + $3 = $58.50.
 
