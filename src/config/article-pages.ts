@@ -827,7 +827,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/lincoln-heritage-funeral-advantage-review/': {
     family: 'review', crumb: 'Lincoln Heritage',
     quickAnswer:
-      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a modified plan that limits what it pays for a natural death during the first years of the policy. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
+      'Lincoln Heritage sells legitimate whole life burial insurance through its Funeral Advantage program. In my experience as an independent broker, its premiums are consistently substantially higher than comparable first-day coverage from competing carriers. Its captive agents can sell only Lincoln Heritage policies, so they can’t shop other companies for a better price or better coverage. If you answer yes to one of its significant health questions, you get a modified plan. According to Lincoln Heritage’s rate book, the modified plan limits natural-death benefits for the first two years for ages 50 through 85, and for three years under age 50. During those years, a natural death pays back only the premiums paid plus 10%, 20% or 30%, depending on the policy year. Many applicants can qualify for immediate coverage elsewhere for substantially less.',
   },
   '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
   '/senior-legacy-life-review/': {
