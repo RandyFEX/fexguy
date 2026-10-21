@@ -13,7 +13,18 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Lincoln Heritage Funeral Advantage is usually more expensive than competitors<br>• Its agents are captive, so you won't see better options from other companies<br>• A "yes" to any significant health question means a modified death benefit<br>• A higher premium can cost you thousands of dollars over the life of the policy<br>• The Funeral Consumer Guardian Society helps with funeral planning, but it doesn't pay any funeral costs<br>• Approved claims are paid quickly, but the 24-hour clock starts after approval, not at the death</p>
+<p>• Lincoln Heritage Funeral Advantage is usually more expensive than competitors<br>• Its agents are captive, so you won't see better options from other companies<br>• On Lincoln Heritage's own January 2024 rates, its modified plan costs a 65-year-old woman about 84% more than immediate coverage, yet pays only premiums plus 10% or 20% for a natural death in the first two years<br>• A higher premium can cost you thousands of dollars over the life of the policy<br>• The Funeral Consumer Guardian Society helps with funeral planning, but it doesn't pay any funeral costs<br>• Approved claims are paid quickly, but the 24-hour clock starts after approval, not at the death</p>
+
+## Lincoln Heritage's own prices: modified vs. immediate coverage
+
+Lincoln Heritage's own published rates show what its modified plan really costs. Here's what a 65-year-old woman would pay for $10,000 of coverage under Lincoln Heritage's January 2024 rates:
+
+| Plan | Monthly premium (January 2024 rates) | What a natural death pays in the first two years |
+|---|---|---|
+| Immediate coverage (Final Expense) | $58.50 | The full $10,000 |
+| Modified coverage | $107.70 | Only the premiums paid, plus 10% in year one or 20% in year two |
+
+That's $49.20 more per month, about 84% higher, for coverage that limits natural-death benefits during the first two years. These are Lincoln Heritage's published January 2024 rates, including the $3 monthly policy fee, not current quotes.
 
 ## Company history and ownership
 
@@ -37,16 +48,20 @@ So when you see a Lincoln Heritage postcard or Facebook ad that looks like a gov
 
 ## Funeral Advantage at a glance
 
+This table combines Lincoln Heritage's website disclosure, its application, and its January 2024 agent rate book (marked "2024 guide"). Terms can vary by state and may have changed since 2024.
+
 | Feature | Funeral Advantage |
 |---|---|
-| Policy type | Whole life final expense, no medical exam |
-| Issue ages | 40 to 85 |
-| Coverage | $5,000 to $35,000; the maximum may be lower at older ages |
-| Plans on the application | Final Expense, 20 Year Pay or Modified Death Benefit; ask the agent how 20 Year Pay works and what it costs |
-| Premiums | Never increase |
+| Plans | Final Expense (level), Twenty Pay (premiums for 20 years) or Modified Death Benefit |
+| Issue ages (2024 guide) | 30 days to 85 (Twenty Pay: up to 80) |
+| Coverage limits (2024 guide) | Up to $35,000 through age 80; up to $15,000 at ages 81 to 85; up to $15,000 on a modified plan. Lower limits apply when someone other than you or your spouse owns the policy. |
+| Minimum premium (2024 guide) | $15 a month, before riders |
+| Premiums | Never increase; on Final Expense and modified plans they're payable to age 100 (2024 guide) |
+| Policy fee (2024 guide) | $3 a month on bank draft |
 | Coverage starts | When Lincoln Heritage approves the application and the first premium is paid |
 | Cancellation | Coverage stays in force as long as you pay the premiums |
-| Early-years benefit | Immediate coverage pays the full benefit from day one; the modified death benefit limits what's paid for a non-accidental death in the early policy years |
+| Modified death benefit (2024 guide) | Ages 50 to 85: premiums paid plus 10% in year one, plus 20% in year two, then the full benefit. Ages 0 to 49: a three-year schedule. |
+| Terminal illness benefit (2024 guide) | Included on the Final Expense and Twenty Pay plans |
 | Contestability period | 2 years |
 | Suicide exclusion | 2 years, with a refund of premium (1 year in Colorado, Minnesota, Missouri and North Dakota) |
 | Optional riders | Child rider and accidental death and dismemberment (AD&D) rider |
@@ -54,7 +69,7 @@ So when you see a Lincoln Heritage postcard or Facebook ad that looks like a gov
 | Not sold in | New York and Washington |
 | Who sells it | Lincoln Heritage's own agents |
 
-The death benefit goes to your beneficiary, who can use it for any purpose. That gives your family flexibility: the money isn't tied to one funeral home. Benefits can vary by state, so ask the agent for the exact terms and coverage limits where you live.
+The death benefit goes to your beneficiary, who can use it for any purpose. That gives your family flexibility: the money isn't tied to one funeral home.
 
 ## How Lincoln Heritage underwriting decides your coverage
 
@@ -75,21 +90,50 @@ The application sorts the health questions into two groups. A "yes" to an uninsu
 
 This summarizes Lincoln Heritage's Funeral Advantage application (form ICC13FEAPPR). Questions can vary by state and change over time.
 
+### What Lincoln Heritage told its agents in 2024
+
+Lincoln Heritage's January 2024 agent rate book explains how agents should answer these questions. Its instructions go further than the application's wording:
+
+| The 2024 agent guide says | What it means for you |
+|---|---|
+| For the significant health conditions, a chronic condition diagnosed, treated or medicated at any time results in a modified death benefit | The two-year window doesn't always help: an older chronic condition from the significant health list, such as chronic lung disease, can still mean the modified plan |
+| Significant conditions also include angina, coronary artery disease, TIA (mini-stroke), peripheral artery disease (PAD), oxygen use, chronic bronchitis, any chronic lung disease other than asthma, hepatitis C, cirrhosis, dialysis, being advised to have an organ transplant, and cancer in remission if you still take medication or get treatment to keep it from returning | Many common conditions lead to the modified plan |
+| Any memory-related illness counts, and someone else, such as a spouse, child or sibling, must own or pay for the policy | Dementia means the modified plan and a different owner or payer |
+| Diabetes without complications doesn't require a "yes" | Controlled diabetes alone doesn't trigger the modified plan |
+| A prescription check may be run on every Final Expense and Twenty Pay application, and if it shows you qualify only for the modified plan, the policy can be changed before it's mailed | Answering "no" doesn't lock in the level plan |
+| Bedridden includes anyone who can't get in or out of a bed or wheelchair without help; a care facility includes assisted living, nursing homes, group homes and rehab centers | More people are uninsurable than the short question suggests |
+| In North Carolina, the modified plan is guaranteed issue, with no health questions; in California, HIV that never progressed to AIDS can get the modified plan | Two state exceptions |
+
 Three things stand out:
 
-- **Most questions cover the past two years.** They ask whether you were diagnosed, treated by a doctor, or took medication for these conditions during that time. If you still take medication for an older condition on the list, the answer is "yes." This two-year look-back isn't the same thing as the modified plan's limited-benefit period.
-- **Common conditions aren't on the list.** The application doesn't ask about high blood pressure, high cholesterol or diabetes without complications. Lincoln Heritage still checks your prescription history, so answer every question accurately.
+- **The two-year look-back isn't the whole story.** Most questions ask about the past two years, and if you still take medication for an older condition on the list, the answer is "yes." Lincoln Heritage's January 2024 agent guide adds that a chronic condition from the significant health list leads to the modified plan no matter when it was diagnosed or treated.
+- **High blood pressure, high cholesterol and diabetes without complications aren't on the list.** The 2024 agent guide says diabetes without complications doesn't require a "yes." Lincoln Heritage still checks your prescription history, so answer every question accurately.
 - **One "yes" is enough.** A single "yes" to any significant health condition question means a modified death benefit.
+
+### Buying a policy for a parent or other relative
+
+According to the January 2024 agent guide, Lincoln Heritage lowers the coverage limit when someone other than the insured person, their spouse, or a parent of a minor child owns the policy. An adult child insuring a parent 60 or older can buy up to $15,000; for a parent under 60, the limit is $10,000. Lincoln Heritage also requires a phone interview with the person being insured. If that interview can't be completed, the policy may be issued as a modified plan.
 
 ## Waiting periods: immediate vs. modified coverage
 
-**Immediate coverage:** pays the full benefit from day one. Lincoln Heritage says most applicants qualify for it based on their health answers.
+**Immediate coverage:** the Final Expense and Twenty Pay plans pay the full benefit from day one. Lincoln Heritage says most applicants qualify for it based on their health answers.
 
-**Modified coverage:** Lincoln Heritage says it provides limited benefits for a non-accidental death during the early policy years. If you die from natural causes during that time, your family doesn't get the full amount. Neither Lincoln Heritage's website disclosure nor its application says how long that period lasts or exactly what it pays. Those details are in the benefit schedule of the policy you're offered, so get the schedule in writing before you sign.
+**Modified coverage:** if you die from natural causes in the early years, your family gets back the premiums you paid plus a percentage, not the face amount. The percentage is figured on your premiums, not on your coverage. Here's the schedule from Lincoln Heritage's January 2024 agent rate book:
+
+| If death from natural causes happens in | Ages 50 to 85 | Ages 0 to 49 |
+|---|---|---|
+| Year 1 | Premiums paid plus 10% | Premiums paid plus 10% |
+| Year 2 | Premiums paid plus 20% | Premiums paid plus 20% |
+| Year 3 | Full benefit | Premiums paid plus 30% |
+| After that | Full benefit | Full benefit |
+
+For example, take the 65-year-old woman above with a $10,000 modified plan at January 2024 rates. If she dies of natural causes at the end of the first year, her family gets back roughly $1,380, not $10,000. At the end of the second year, it's roughly $3,015.
+
+Lincoln Heritage's website describes the early-years limit as applying to non-accidental deaths. Its 2024 agent guide lists the schedule without mentioning accidents, so ask how your policy treats an accidental death in the early years.
 
 For some unfortunate applicants, full protection doesn't start for years. That's a terrible plan to buy if you truly qualify for first-day coverage.
 
-A modified plan is different from guaranteed acceptance life insurance, which asks no health questions at all.
+A modified plan is different from guaranteed acceptance life insurance, which asks no health questions at all. North Carolina is the exception: according to the 2024 agent guide, Lincoln Heritage's modified plan is guaranteed issue there.
 
 **Contestability is a separate rule.** Every Funeral Advantage policy, immediate or modified, has a two-year contestability period. During those two years, Lincoln Heritage can deny a claim if the application contained a material misstatement. Answer every health question accurately. Our guide to the [contestability period](/burial-insurance/contestability-period/) explains how this works.
 
@@ -117,11 +161,33 @@ The insurance policy is what pays.
 
 ## Riders and add-ons
 
-The application lists two optional riders: a child rider and an accidental death and dismemberment (AD&D) rider. Ask the agent what each rider covers in your state and how much it adds to your premium.
+These terms and prices come from Lincoln Heritage's January 2024 agent rate book. Ask the agent for the current terms in your state.
+
+- **Child rider:** covers a child, stepchild, grandchild or great-grandchild between 30 days old and 17. Each unit is $5,000 of term coverage that lasts to age 25, up to 5 units per child, for $2.00 a month per unit. The child must pass the rider's own health questions. At 25, it can be converted to a permanent policy of the same or a lower amount.
+- **Accidental death and dismemberment (AD&D) rider:** each unit pays $5,000 for an accidental death, $10,000 for a death in a car accident, $20,000 for a death in a common-carrier accident (such as a bus or plane) or from an act of war or terrorism, and $2,500 for a single dismemberment. It also pays up to $1,000 to bring the body home if death happens more than 200 miles from home. You can buy up to 8 units, at $1.00 to $2.25 a month per unit depending on age. It pays only for qualifying accidents, not illness.
 
 ## Pricing and cost factors
 
-Your premium depends on your age, sex, coverage amount, state, any riders, and whether you get the immediate or modified plan. Tobacco matters too: the application asks whether you've used any form of tobacco in the past 12 months. Premiums never increase.
+Your premium depends on your age, sex, coverage amount, any riders, and which plan you get. Tobacco matters too: the application asks whether you've used any form of tobacco in the past 12 months. According to the 2024 agent guide, chewing and smokeless tobacco count, but nicotine patches and vapes without tobacco don't. Premiums never increase.
+
+### Lincoln Heritage's published rates
+
+These are Lincoln Heritage's own January 2024 published rates for $10,000 of coverage, non-tobacco, paid monthly by bank draft. Each includes the $3 monthly policy fee. They aren't current quotes.
+
+| Age | Women, Final Expense (level) | Men, Final Expense (level) | Women, modified | Men, modified |
+|---|---|---|---|---|
+| 55 | $39.60 | $49.70 | $87.70 | $108.30 |
+| 65 | $58.50 | $69.30 | $107.70 | $131.30 |
+| 75 | $103.10 | $125.90 | $151.70 | $192.30 |
+| 80 | $145.00 | $183.20 | $188.70 | $212.70 |
+
+Each figure is Lincoln Heritage's 2024 monthly rate per $1,000 of coverage, times 10, plus the $3 policy fee. For example, a 65-year-old woman pays $5.55 × 10 + $3 = $58.50.
+
+Three things these numbers show:
+
+- **The modified plan costs far more and pays far less.** At 55 and 65, it costs roughly 85% to 120% more than Lincoln Heritage's own level plan. A 65-year-old man pays $131.30 a month instead of $69.30, and his family gets back only premiums plus 10% or 20% if he dies of natural causes in the first two years.
+- **Tobacco raises the level price.** A 65-year-old man who uses tobacco pays $97.10 a month for the Final Expense plan. Modified-plan rates are the same whether or not you use tobacco.
+- **Twenty Pay costs a little more each month, but premiums end after 20 years.** A 65-year-old woman would pay $63.30 a month for 20 years, compared with $58.50 a month for life on the Final Expense plan.
 
 In my experience, Lincoln Heritage is frequently substantially more expensive than competing first-day coverage. Its prices are often 30% to 60% higher than comparable first-day plans from Aetna, Family Benefit Life or Mutual of Omaha.
 
@@ -165,7 +231,8 @@ Online reviews are mixed. Positive reviews often mention fast claims and help wi
 
 ## Common misunderstandings and sales tactics
 
-- **"No medical exam" doesn't mean full coverage.** Your health answers can still put you in the modified plan, and Lincoln Heritage checks your prescription history.
+- **"No medical exam" doesn't mean full coverage.** Your health answers can still put you in the modified plan.
+- **Answering "no" doesn't lock in the level plan.** Lincoln Heritage's prescription check can move you to the modified plan before your policy is mailed.
 - **"Claims paid in 24 hours"** means 24 hours after approval, and approval can take longer during the contestability period.
 - **A no-cost funeral planning membership doesn't make a higher premium worth it.** Compare the price of the insurance itself.
 - **Government-style ads** for a "program" or "state benefit" are private marketing for one company's policy.
@@ -176,14 +243,22 @@ Online reviews are mixed. Positive reviews often mention fast claims and help wi
 |---|---|
 | People who want funeral-planning help included with the policy | Healthy applicants who can qualify for first-day coverage elsewhere |
 | People declined by other carriers for conditions Lincoln Heritage doesn't ask about | Anyone offered the modified plan who hasn't compared other companies |
-| People who prefer to meet an agent in person | Anyone who needs more than $35,000 of coverage |
-| Those who understand the modified plan's limits | Residents of New York or Washington |
+| People who prefer to meet an agent in person | Anyone who needs more than $35,000, or more than $15,000 after age 80 or on a modified plan |
+| North Carolina residents who can't qualify anywhere else, since the modified plan is guaranteed issue there | Residents of New York or Washington |
 
 ## Better alternatives to Lincoln Heritage Funeral Advantage
 
 The best alternatives are simplified issue whole life policies from highly rated companies that offer immediate first-day protection. These carriers use short health questionnaires to decide eligibility but don't require medical exams.
 
-Competitors like [Aetna](/aetna-burial-insurance-review/), [Trinity Life](/trinity-life-insurance-review/) and [Family Benefit Life](/family-benefit-life-burial-insurance-review/) routinely approve applicants for first-day coverage, and Mutual of Omaha is worth comparing too. These insurers offer the same lifetime coverage that Lincoln Heritage promises, without the inflated premiums or waiting periods. Which one is best depends on your age, health and state.
+Competitors like [Aetna](/aetna-burial-insurance-review/), [Trinity Life](/trinity-life-insurance-review/) and [Family Benefit Life](/family-benefit-life-burial-insurance-review/) routinely approve applicants for first-day coverage, and Mutual of Omaha is worth comparing too. Every insurer has its own health rules, so one of these companies may approve first-day coverage for someone Lincoln Heritage would place on its modified plan. Some competitors also offer graded or modified plans, so always ask which plan you qualify for before you buy. Which company is best depends on your age, health and state.
+
+## What this means for you
+
+- **If Lincoln Heritage offers you the modified plan,** get a first-day coverage quote from other companies before you sign. At Lincoln Heritage's January 2024 rates, the modified plan costs a 65-year-old woman about 84% more than its immediate plan, and it pays back only premiums plus 10% or 20% for a natural death in the first two years.
+- **If you qualify for Lincoln Heritage's immediate coverage,** compare the same coverage amount with other first-day plans. You may be able to pay less for the same protection.
+- **If you're buying for a parent or other relative,** expect a lower coverage limit and a phone interview with the person being insured.
+- **If you're over 80,** Lincoln Heritage's 2024 limit was $15,000, which may not cover a full funeral.
+- **Whatever you buy,** answer every health question accurately. Lincoln Heritage checks prescription history, and a wrong answer can cost your family the claim during the first two years.
 
 ## What Randy thinks about Lincoln Heritage
 

@@ -827,7 +827,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/lincoln-heritage-funeral-advantage-review/': {
     family: 'review', crumb: 'Lincoln Heritage',
     quickAnswer:
-      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a graded or modified plan that limits what it pays for a natural death during the first years of the policy. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
+      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a modified plan that limits what it pays for a natural death during the first years of the policy. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
   },
   '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
   '/senior-legacy-life-review/': {
