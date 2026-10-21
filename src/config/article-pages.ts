@@ -824,10 +824,10 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Royal Neighbors of America is a legitimate fraternal benefit society with an A (Excellent) rating from A.M. Best, but its burial insurance is often a poor fit. Its Level plan pays the full benefit from day one, yet tighter underwriting now makes first-day coverage harder to get with common chronic conditions, and healthy people often pay more than with other top-rated carriers. Its guaranteed issue plan has a two-year waiting period and can cost up to 2 or 3 times more than other leading companies.',
   },
-  '/lincoln-heritage-funeral-advantage-review-old/': {
+  '/lincoln-heritage-funeral-advantage-review/': {
     family: 'review', crumb: 'Lincoln Heritage',
     quickAnswer:
-      'Lincoln Heritage Funeral Advantage is a real whole life burial policy, but it’s usually more expensive than competitors and not the best value in most cases. Its captive agents can only sell Lincoln Heritage products, so if you qualify for a better policy with better pricing, they won’t tell you about it. If you have health issues the company doesn’t like, you may be placed in a graded or modified plan that limits what it pays for a natural death during the first years of the policy. Most people qualify for first-day coverage elsewhere at a significantly reduced cost.',
+      'Lincoln Heritage sells whole life burial insurance through its Funeral Advantage program. Its captive agents sell only Lincoln Heritage policies, so they can’t compare prices or coverage from other insurance companies. Lincoln Heritage’s premiums are substantially higher than comparable first-day coverage offered by competing carriers. Applicants who answer yes to certain significant health questions receive a modified plan that limits natural-death benefits for the first two years at ages 50 through 85, or three years under age 50. During those years, a natural death pays back only the premiums paid plus 10%, 20%, or 30%, depending on the policy year. Most all applicants can qualify for first-day coverage elsewhere at a lower price.',
   },
   '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
   '/senior-legacy-life-review/': {

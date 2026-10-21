@@ -521,7 +521,7 @@ Assuming permanent meant personal ownership
 
 <h2 class="as-h5">Keep reading</h2>
 
-<div><a href="/lincoln-heritage-funeral-advantage-review-old/">
+<div><a href="/lincoln-heritage-funeral-advantage-review/">
 <h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
 <h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>

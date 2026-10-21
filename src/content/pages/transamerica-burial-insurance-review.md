@@ -746,7 +746,7 @@ benefit plan.</p>
 
 <div><a href="/aarp-life-insurance-review/">
 <h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
-</a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
+</a>  <a href="/lincoln-heritage-funeral-advantage-review/">
 <h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
 <h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>

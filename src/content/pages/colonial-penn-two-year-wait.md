@@ -345,7 +345,7 @@ best value. Who do we recommend instead?</p>
 
 <div><a href="/aarp-life-insurance-review/">
 <h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
-</a>  <a href="/lincoln-heritage-funeral-advantage-review-old/">
+</a>  <a href="/lincoln-heritage-funeral-advantage-review/">
 <h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
 <h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>

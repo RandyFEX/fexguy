@@ -36,7 +36,7 @@ sidebar: true
 <li><strong><a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a>:</strong> GREAT for CHF, COPD, heart problems, and serious health issues.</li>
 <li><strong><a href="/liberty-bankers-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Liberty Bankers Life</a>:</strong> Niche carrier for specific health problems. Good for younger people.</li>
 <li><strong>Lifeshield Life Insurance Company:</strong> Average pricing.</li>
-<li><strong><a href="/lincoln-heritage-funeral-advantage-review-old/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! Some modified plans have a waiting period of up to 3 years.</li>
+<li><strong><a href="/lincoln-heritage-funeral-advantage-review/" target="_blank" rel="noreferrer noopener">Lincoln Heritage</a>: </strong>EXPENSIVE! Some modified plans have a waiting period of up to 3 years.</li>
 <li><strong><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual Of Omaha</a>:</strong> No same-day approval. More restrictive underwriting.</li>
 <li><strong>New York Life:</strong> Term life insurance. 5-year price increases. Cancels after age 80.</li>
 <li><strong><a href="/oxford-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Oxford Life</a>:</strong> Good pricing. In-person application only. Average underwriting.</li>
