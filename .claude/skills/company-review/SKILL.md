@@ -72,6 +72,10 @@ Open the first response with:
 - A failed item is fixed before delivery if the assignment authorizes it,
   otherwise flagged. Repetition in approved, locked text is reported, not
   removed.
+- **Run the checker before presenting** (see "The checker" below):
+  existing article, against the approved baseline with the authorized
+  scope; new article, without `--baseline`. Include its report in the
+  delivery.
 
 ## Checkpoint D: editorial approval
 
@@ -85,15 +89,36 @@ Open the first response with:
 
 1. Work on a feature branch from current `main`.
 2. Apply only the approved content.
-3. **Scope diff:** `git diff <baseline>..HEAD -- <files>`. Read every
-   hunk and list each changed paragraph or setting next to the approval
-   item it implements. Revert or report anything without a matching
-   approval before committing (rule F).
+3. **Scope diff:** run the checker on the working tree against the
+   approved baseline with the authorized scope, before committing. Also
+   read every hunk of `git diff <baseline> -- <files>` and list each
+   changed paragraph or setting next to the approval item it implements.
+   Revert or report anything without a matching approval (rule F).
 4. Run `npm run check`, `npm run build` and `npm run verify -- --strict`.
 5. Commit, push and provide the Vercel preview URL with the scope-diff
    report and check results.
 6. Stop. Merging to `main` and production need Randy's separate
    authorization; after a production merge, verify the live URLs.
+
+## The checker
+
+`npm run review-check -- --page <URL path> --baseline <approved commit>`
+followed by the authorized scope: `--allow "<H2 heading>"` (covers its
+subsections), `quick-answer`, `key-points`, `title` (SEO title, og and
+twitter titles, H1, structured-data names), `description`, `h1`,
+`structure` (reordering); `--expect "<scope>=<exact approved text>"` for
+each exact edit Randy approved; `--delete-section "<heading>"` for an
+approved deletion. Pages are listed in
+`docs/editorial/company-review-pages.json` (outline exceptions there need
+Randy's approval). The checker is read-only and on demand; it is not part
+of `verify`, the build or CI. Tests: `node --test
+scripts/company-review-check.test.mjs`.
+
+- **Scope violation:** revert the change, or get Randy's explicit
+  approval for it.
+- **Review required:** present the item for approval; never accept it
+  silently.
+- **Warning:** report it. A warning never authorizes changing content.
 
 ## Never
 

@@ -1,0 +1,38 @@
+{
+  "_about": "Machine-readable settings for scripts/company-review-check.mjs (read-only checker). The outline mirrors section 3 of docs/editorial/company-review-spec.md; approved extra sections mirror each article's approval record in RandyFEX/fexguy-monitoring. Changing an approved exception needs Randy's approval.",
+  "outline": [
+    { "item": 4, "name": "Company history, ownership, and financial strength", "keywords": ["history", "ownership"] },
+    { "item": 5, "name": "Products and coverage at a glance", "keywords": ["at a glance", "products", "plans and coverage"] },
+    { "item": 6, "name": "Underwriting and health qualifications", "keywords": ["underwriting", "health question", "qualif"] },
+    { "item": 7, "name": "Waiting periods and benefit limitations", "keywords": ["waiting period", "benefit limit"] },
+    { "item": 8, "name": "Distinctive services and benefits", "keywords": [], "optional": true },
+    { "item": 9, "name": "Riders and optional benefits", "keywords": ["rider", "add-on"] },
+    { "item": 10, "name": "Pricing and competing-company comparisons", "keywords": ["pric", "cost", "rates", "premium"] },
+    { "item": 11, "name": "Claims, cancellations, and replacements", "keywords": ["claim", "cancel", "replacement"] },
+    { "item": 12, "name": "Ratings, complaints, and customer reviews", "keywords": ["rating", "complaint", "customer review"] },
+    { "item": 13, "name": "Who the company may be suitable for", "keywords": ["suitable", "who should", "best for"] },
+    { "item": 14, "name": "Better alternatives", "keywords": ["alternative"] },
+    { "item": 15, "name": "What This Means for You", "keywords": ["what this means"] },
+    { "item": 16, "name": "What Randy Thinks", "keywords": ["what randy thinks"] }
+  ],
+  "matchOrder": [15, 16, 14, 13, 12, 11, 10, 9, 7, 6, 5, 4],
+  "ctaPhone": "888-862-9456",
+  "warningPhrases": {
+    "personal": ["in my experience", "in my opinion", "i think", "i believe", "i feel", "personally"],
+    "sensational": ["worst", "terrible", "scam", "rip-off", "ripoff", "nightmare", "shocking"]
+  },
+  "dateLimits": { "sameFullDate": 2, "sameYear": 3 },
+  "figureSectionSpread": 3,
+  "pages": {
+    "/lincoln-heritage-funeral-advantage-review/": {
+      "file": "src/content/pages/lincoln-heritage-funeral-advantage-review.md",
+      "aliases": {
+        "files": ["src/content/pages/lincoln-heritage-funeral-advantage-review-old.md"],
+        "quickAnswerKeys": ["/lincoln-heritage-funeral-advantage-review-old/"]
+      },
+      "headingMap": { "The Funeral Consumer Guardian Society (FCGS)": 8 },
+      "approvedExtraSections": ["Common misunderstandings and sales tactics"],
+      "notApplicable": []
+    }
+  }
+}
