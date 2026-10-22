@@ -17,6 +17,10 @@ const money = (n: number) => `$${n.toLocaleString('en-US')}`;
  *  dashes (CLAUDE.md; npm run verify fails on them). */
 const UNAVAILABLE = '\u2013';
 
+/** The advertised price of one unit, in cents; COST = units x $9.95. */
+const UNIT_PRICE_CENTS = 995;
+const cost = (units: number) => `$${((units * UNIT_PRICE_CENTS) / 100).toFixed(2)}`;
+
 /** Fails the build if a row's units or coverage don't follow from its per-unit amount. */
 function check(sex: string, rows: Row[]): void {
   rows.forEach((r) => {
@@ -36,12 +40,12 @@ function table(sex: 'male' | 'female', label: string): string {
   const max = data.maxUnits;
   let over = false;
   const groups = data.targets
-    .map((t, i) => `<th scope="colgroup" colspan="2" class="unit-table__g${i % 2 ? '' : ' is-shaded'}">${money(t)}</th>`)
+    .map((t, i) => `<th scope="colgroup" colspan="3" class="unit-table__g${i % 2 ? '' : ' is-shaded'}">${money(t)}</th>`)
     .join('');
   const sub = data.targets
     .map((_, i) => {
       const s = i % 2 ? '' : ' is-shaded';
-      return `<th scope="col" class="unit-table__g${s}">UNITS</th><th scope="col" class="${s.trim()}">COVERAGE</th>`;
+      return `<th scope="col" class="unit-table__g${s}">UNITS</th><th scope="col" class="${s.trim()}">COST</th><th scope="col" class="${s.trim()}">COVERAGE</th>`;
     })
     .join('');
   const body = rows
@@ -54,8 +58,10 @@ function table(sex: 'male' | 'female', label: string): string {
           const o = beyond ? ' is-over' : '';
           const na = `<span aria-hidden="true">${UNAVAILABLE}</span><span class="visually-hidden">not available</span>`;
           const units = beyond ? na : `${r.units[i]}`;
+          const monthly = beyond ? na : cost(r.units[i]);
           const coverage = beyond ? na : money(r.coverage[i]);
-          return `<td class="unit-table__g${s}${o}">${units}</td><td class="${(s + o).trim()}">${coverage}</td>`;
+          const c = (s + o).trim();
+          return `<td class="unit-table__g${s}${o}">${units}</td><td class="${c}">${monthly}</td><td class="${c}">${coverage}</td>`;
         })
         .join('');
       return `<tr><th scope="row">${r.age}</th><td class="unit-table__unit">${money(r.perUnit)}</td>${cells}</tr>`;
@@ -76,7 +82,7 @@ function table(sex: 'male' | 'female', label: string): string {
 }
 
 export function colonialPennUnitTablesHtml(): string {
-  return table('male', 'Male coverage') + table('female', 'Female coverage');
+  return table('male', 'Male Coverage - Colonial Penn $9.95 Plan') + table('female', 'Female Coverage - Colonial Penn $9.95 Plan');
 }
 
 const MARKER = '<div data-unit-table="colonial-penn"></div>';
