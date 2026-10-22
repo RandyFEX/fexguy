@@ -1,7 +1,7 @@
 {
-  "_about": "Colonial Penn guaranteed acceptance whole life: coverage per $9.95 unit by age and sex, and the whole units needed to reach each coverage target. Copied value for value from Randy's workbook COLONIAL_PENN_PRICE_LIST_FOR_VERCEL.xlsx (sheets MALE and FEMALE, ages 50-80; supplied October 2026). Rendered by src/lib/coverage/unit-table.ts, which fails the build if a row's units or coverage don't match ceil(target / perUnit). maxUnits: units above it are marked as beyond the stated maximum (pending Randy's confirmation; see maxUnitsNote).",
+  "_about": "Colonial Penn guaranteed acceptance whole life: coverage per $9.95 unit by age and sex, and the whole units needed to reach each coverage target. Copied value for value from Randy's workbook COLONIAL_PENN_PRICE_LIST_FOR_VERCEL.xlsx (sheets MALE and FEMALE, ages 50-80; supplied October 2026). Rendered by src/lib/coverage/unit-table.ts, which fails the build if a row's units or coverage don't match ceil(target / perUnit). maxUnits: units above it are marked as beyond the stated maximum (see maxUnitsNote).",
   "maxUnits": 25,
-  "maxUnitsNote": "Colonial Penn's website FAQ says customers can select up to 25 units (seen in search-result excerpts of colonialpenn.com, October 2026; the site itself could not be opened from the build environment). /colonial-penn-two-year-wait/ says 8 units. Awaiting Randy's decision.",
+  "maxUnitsNote": "Randy confirmed 25 (October 2026): Colonial Penn's Guaranteed Acceptance product page and current FAQs advertise up to 25 units. Sources: https://colonialpenn.com/service-support/faq/what-is-a-unit-in-guaranteed-acceptance-life-insurance, https://colonialpenn.com/service-support/faq/how-does-colonial-penns-9.95-guaranteed-acceptance-whole-life-insurance-work, https://assets.colonialpenn.com/products/guaranteedacceptance",
   "targets": [
     5000,
     10000,

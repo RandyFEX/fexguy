@@ -64,8 +64,6 @@ sidebar: true
 
 <p>The policy trades easy approval for limited coverage, lower payouts, and strict early restrictions.</p>
 
-<p><strong>Coverage options</strong>: $418-$16,664</p>
-
 <p><strong>NO MEDICAL EXAM</strong></p>
 
 <p>No health questions and physical or medical exams are required to qualify for this plan. You cannot be rejected because of your health; your approval is guaranteed. No medical exam from Colonial Penn skips the exams and paperwork, and you can get life insurance even if you have some health issues.</p>
@@ -90,13 +88,13 @@ sidebar: true
 
 <p>Colonial Penn prices coverage using a flat unit system that hides how little insurance you’re actually buying.</p>
 
-<p>Monthly premiums are computed based on the number of units of coverage purchased. A unit costs $9.95 for everyone, and the maximum you can buy is 8 units. A single unit always costs $9.95 whether you are young or old, male or female, smoker or not.</p>
+<p>Monthly premiums are computed based on the number of units of coverage purchased. A unit costs $9.95 for everyone, and Colonial Penn currently advertises up to 25 units. A single unit always costs $9.95 whether you are young or old, male or female, smoker or not.</p>
 
-<p>Since you can only purchase up to 8 units, your maximum monthly premium will be $79.60 [8 units x $9.95 per month]. If you choose to pay annually, you will get one month’s worth of premium or an 8.3% discount for the year.</p>
+<p>At the advertised maximum of 25 units, your monthly premium would be $248.75 [25 units x $9.95 per month]. If you choose to pay annually, you will get one month’s worth of premium or an 8.3% discount for the year.</p>
 
 <p><strong>What is a Unit?</strong></p>
 
-<p>A unit of coverage is the amount of death benefit you can buy depending on your age, gender, and state. You can request a quote on their website to see the death benefit amount you can buy up to 8 units of coverage.</p>
+<p>A unit of coverage is the amount of death benefit you can buy depending on your age, gender, and state. You can request a quote on their website to see the death benefit amount you can buy for up to 25 units of coverage.</p>
 
 <p><br><strong>How does it work?</strong></p>
 
@@ -104,15 +102,9 @@ sidebar: true
 
 <p>With Colonial Penn, the amount of coverage that the unit provides. The older you get, the less coverage a unit provides for you. In addition, a unit provides less death benefit for a man than it does for a woman.</p>
 
-<p>For example, for a 50-year-old woman, 8 units of coverage would provide a $16,664 death benefit. A 55-year-old woman would get $15,072 in coverage for 8 units, while a 60-year-old woman would only get $12,968 in coverage for 8 units.</p>
+<p>For example, for a 50-year-old woman, 8 units of coverage would provide a $16,000 death benefit. A 55-year-old woman would get $14,088 in coverage for 8 units, while a 60-year-old woman would only get $12,120 in coverage for 8 units.</p>
 
-<p>Since the price per unit is fixed, the amount of coverage available per unit decreases as you grow older. The minimum value per unit is $418, and the maximum is $2,083. The maximum death benefit available for 8 units is only $16,664.</p>
-
-<h3 id="colonial-penn-coverage-per-unit-by-age">Colonial Penn Coverage Per Unit by Age</h3>
-
-<p>Colonial Penn's advertised $9.95 monthly price buys one unit of coverage. The amount of insurance in each unit depends on your age and sex. These tables show how many whole units are needed to reach at least $5,000, $10,000, $15,000, $20,000, or $25,000 in coverage.</p>
-
-<div data-unit-table="colonial-penn"></div>
+<p>Since the price per unit is fixed, the amount of coverage available per unit decreases as you grow older.</p>
 
 <p>Restriction: Colonial Penn Guaranteed Acceptance Life Insurance Will Not Pay A Death Benefit If Death Occurs During The First 2 Years</p>
 
@@ -155,6 +147,12 @@ sidebar: true
 <p>Additionally, now that you know that Colonial Penn guaranteed acceptance policy has a limited death benefit period, you can now ask more specific questions about it as you shop for plans so that when you finally make your decision, it will surely fit your needs.</p>
 
 <p>Keep in mind that most people qualify for immediate coverage through other companies. This means you won’t have to endure a 2-year waiting period before you have 100% coverage.<br></p>
+
+<h3 id="colonial-penn-coverage-per-unit-by-age">Colonial Penn Coverage Per Unit by Age</h3>
+
+<p>Colonial Penn's advertised $9.95 monthly price buys one unit of coverage. The amount of insurance in each unit depends on your age and sex. These tables show how many whole units are needed to reach at least $5,000, $10,000, $15,000, $20,000, or $25,000 in coverage.</p>
+
+<div data-unit-table="colonial-penn"></div>
 
 <h2 id="why-not-guaranteed-acceptance-life-insurance"><strong>Why Not Guaranteed Acceptance Life Insurance?</strong> </h2>
 
@@ -240,7 +238,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-f018bb0e-4069-45af-9aef-86cfc3c84b32"><br><strong>What is the Colonial Penn $9.95 policy?</strong></p>
 
-<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). It has a two-year waiting period on all new policies and maximum coverage of $16,664.</p>
+<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). It has a two-year waiting period on all new policies.</p>
 
 <p id="block-5e64c3d5-e710-4712-bbcb-a72b2d36fd75"><br><strong>Is the Colonial Penn 9.95 plan a term policy?</strong></p>
 
@@ -252,11 +250,11 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-f894ca35-bc8f-4ef2-bc71-1b5e480b59e9"><br><strong>What is the maximum unit you can buy at Colonial Penn?</strong></p>
 
-<p id="block-bb16a575-8f1b-465d-a745-aa036ed9b7de">The maximum unit you can buy at Colonial Penn is 8 units at $9.95 per unit.</p>
+<p id="block-bb16a575-8f1b-465d-a745-aa036ed9b7de">Colonial Penn currently advertises up to 25 units at $9.95 per unit.</p>
 
 <p id="block-fe64ae16-7e0f-4744-8ae4-de2ebb98d9a5"><br><strong>How much insurance is in a unit of Colonial Penn?</strong></p>
 
-<p id="block-17b1f6cb-3e86-4af2-9d7e-06e4f9ff9c41">A unit of Colonial Penn life insurance is $9.95 and offers maximum coverage of $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
+<p id="block-17b1f6cb-3e86-4af2-9d7e-06e4f9ff9c41">A unit of Colonial Penn life insurance is $9.95, and the amount of insurance in each unit depends on your age and sex (see the <a href="#colonial-penn-coverage-per-unit-by-age">coverage tables above</a>). Meaningful coverage will be extremely expensive, as you have to add up multiple units.</p>
 
 <p id="block-0e6f19b2-5fee-4835-b007-f4439506d44f"><br><strong>What’s the deal with Colonial Penn?</strong></p>
 
@@ -264,15 +262,11 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-a70a4555-3846-474f-bb55-b086722c46ba"><br><strong>What is Colonial Penn guaranteed acceptance program?</strong></p>
 
-<p id="block-bad7ae38-1a87-4660-b7da-1289ea3abdec">The Colonial Penn guaranteed acceptance program is a policy that offers guaranteed acceptance for all applicants. It has a two-year waiting period on all new policies and maximum coverage of $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
-
-<p id="block-62700af4-c124-4fa4-8b81-8602aba11741"><br><strong>What is the maximum coverage I can get with Colonial Penn 9.95?</strong></p>
-
-<p id="block-c0cc291a-f5ec-4b2c-8e9c-768527bb0bd9">The maximum coverage you can get with Colonial Penn 9.95 is $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
+<p id="block-bad7ae38-1a87-4660-b7da-1289ea3abdec">The Colonial Penn guaranteed acceptance program is a policy that offers guaranteed acceptance for all applicants. It has a two-year waiting period on all new policies.</p>
 
 <p id="block-ec9c399a-273d-4a14-b414-9add108449b5"><br><strong>What does Colonial Penn 995 get you?</strong></p>
 
-<p id="block-e8782699-e392-449a-8391-6719294d7697">Colonial Penn 9.95 gets you a guaranteed acceptance life insurance policy with a two-year waiting period and maximum coverage of $16,664, which is very expensive.</p>
+<p id="block-e8782699-e392-449a-8391-6719294d7697">Colonial Penn 9.95 gets you a guaranteed acceptance life insurance policy with a two-year waiting period. Buying enough units for meaningful coverage is very expensive.</p>
 
 <p id="block-09a05028-236f-4dd0-ab29-e8292eeaea68"><br><strong>Do Colonial Penn whole life policies increase in value?</strong></p>
 
@@ -288,7 +282,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-786673d6-18cf-42f1-951f-ce2995d7b689"><br><strong>How much are Colonial Penn’s life insurance rates?</strong></p>
 
-<p id="block-6d54f1b2-7d0f-4cf3-bcf6-9eeefba3a986">The rate for Colonial Penn’s life insurance policies is $9.95 per unit; the maximum unit you can buy is eight.</p>
+<p id="block-6d54f1b2-7d0f-4cf3-bcf6-9eeefba3a986">The rate for Colonial Penn’s life insurance policies is $9.95 per unit; Colonial Penn currently advertises up to 25 units.</p>
 
 <p id="block-239c5aca-ab84-40a3-9572-706d8c0d22dd"><br><strong>How can I pay my Colonial Penn premiums?</strong></p>
 

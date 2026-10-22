@@ -103,52 +103,7 @@ sidebar: true
 
 <p>One $9.95 unit usually buys only a few hundred dollars of coverage, so real protection costs many times more than the ads suggest.</p>
 
-<p>According to Colonial Penn’s official rate chart, here’s exactly what one $9.95 unit buys:</p>
-
-<table>
-<thead>
-<tr>
-<th>Age</th>
-<th>Male<br>Coverage</th>
-<th>Female<br>Coverage</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>50</td><td>$1,669</td><td>$2,000</td></tr>
-<tr><td>51</td><td>$1,620</td><td>$1,942</td></tr>
-<tr><td>52</td><td>$1,565</td><td>$1,890</td></tr>
-<tr><td>53</td><td>$1,515</td><td>$1,845</td></tr>
-<tr><td>54</td><td>$1,460</td><td>$1,802</td></tr>
-<tr><td>55</td><td>$1,420</td><td>$1,761</td></tr>
-<tr><td>56</td><td>$1,370</td><td>$1,719</td></tr>
-<tr><td>57</td><td>$1,313</td><td>$1,669</td></tr>
-<tr><td>58</td><td>$1,258</td><td>$1,620</td></tr>
-<tr><td>59</td><td>$1,200</td><td>$1,565</td></tr>
-<tr><td>60</td><td>$1,167</td><td>$1,515</td></tr>
-<tr><td>61</td><td>$1,112</td><td>$1,460</td></tr>
-<tr><td>62</td><td>$1,057</td><td>$1,420</td></tr>
-<tr><td>63</td><td>$1,000</td><td>$1,370</td></tr>
-<tr><td>64</td><td>$949</td><td>$1,313</td></tr>
-<tr><td>65</td><td>$896</td><td>$1,258</td></tr>
-<tr><td>66</td><td>$846</td><td>$1,200</td></tr>
-<tr><td>67</td><td>$802</td><td>$1,167</td></tr>
-<tr><td>68</td><td>$762</td><td>$1,112</td></tr>
-<tr><td>69</td><td>$724</td><td>$1,057</td></tr>
-<tr><td>70</td><td>$689</td><td>$1,000</td></tr>
-<tr><td>71</td><td>$657</td><td>$949</td></tr>
-<tr><td>72</td><td>$627</td><td>$896</td></tr>
-<tr><td>73</td><td>$608</td><td>$845</td></tr>
-<tr><td>74</td><td>$578</td><td>$802</td></tr>
-<tr><td>75</td><td>$550</td><td>$762</td></tr>
-<tr><td>76</td><td>$521</td><td>$724</td></tr>
-<tr><td>77</td><td>$493</td><td>$689</td></tr>
-<tr><td>78</td><td>$468</td><td>$657</td></tr>
-<tr><td>79</td><td>$448</td><td>$627</td></tr>
-<tr><td>80</td><td>$426</td><td>$608</td></tr>
-</tbody>
-</table>
-
-<p>That means a 75-year-old man paying Colonial Penn $9.95 a month only has about $550 in life insurance. To reach $10,000 in coverage, he’d need 18 units, which would cost $179.10 per month.</p>
+<p>According to Colonial Penn’s official rate chart, a 75-year-old man paying Colonial Penn $9.95 a month only has about $550 in life insurance. To reach $10,000 in coverage, he’d need 19 units ($10,450 in coverage), which would cost $189.05 per month.</p>
 
 <p>Compare that to most first-day-coverage final expense plans, where a healthy 75-year-old woman might pay $71 per month for a $10,000 policy that pays immediately, not after two years.</p>
 

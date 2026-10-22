@@ -57,7 +57,7 @@ function table(sex: 'male' | 'female', label: string): string {
     })
     .join('');
   const note = over
-    ? `<p class="unit-table__note"><span aria-hidden="true">† </span>Needs more than ${max} units, the most Colonial Penn's website says you can select.</p>`
+    ? `<p class="unit-table__note"><span aria-hidden="true">† </span>Requires more than ${max} units. Colonial Penn currently advertises up to ${max} units; actual availability may vary.</p>`
     : '';
   return (
     `<div class="unit-table">` +
