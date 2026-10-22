@@ -93,7 +93,14 @@ import { rateExamples } from '@/lib/home/content';
     let held = false; // pointer or keyboard focus on the card
     let timer: ReturnType<typeof setInterval> | undefined;
 
+    // The hidden examples' photos wait for the page's load event (see the
+    // .is-ready styles), so they don't compete with the hero photo.
+    const ready = () => root.classList.add('is-ready');
+    if (document.readyState === 'complete') ready();
+    else window.addEventListener('load', ready, { once: true });
+
     const show = (i: number) => {
+      ready();
       items[index].classList.remove('is-active');
       index = (i + items.length) % items.length;
       items[index].classList.add('is-active');
@@ -182,6 +189,13 @@ import { rateExamples } from '@/lib/home/content';
     height: 100%;
     object-fit: cover;
     object-position: clamp(calc(100cqw - 177.78cqh), calc(50cqw - var(--focus, 0.5) * 177.78cqh), 0px) 50%;
+  }
+  /* The hidden examples' photos are not rendered until the page has loaded
+     (the script adds .is-ready), so their lazy loading waits and the hero
+     photo, the page's largest image, downloads first. Without JavaScript only
+     the first example is ever shown. */
+  .rate:not(.is-ready) .rate__item:not(.is-active) .rate__photo img {
+    display: none;
   }
   .rate__placeholder {
     position: absolute;
