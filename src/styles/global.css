@@ -485,6 +485,112 @@ a:hover {
   background: #fafaf9;
 }
 
+/* Colonial Penn coverage-per-unit tables (src/lib/coverage/unit-table.ts).
+   Compact: every column only as wide as its content. Coverage groups
+   alternate stone and white (vertical shading) with a thin divider before
+   each group; AGE and 1 UNIT stay visible while the table scrolls inside its
+   own container on narrow screens. Contrast: white on green 11.7:1, text on
+   stone 13.1:1, muted on stone 5.8:1. */
+.unit-table {
+  margin-block: var(--space-6);
+}
+.unit-table h4 {
+  margin: 0 0 var(--space-2);
+}
+.unit-table__scroll {
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+}
+.wp-content .unit-table__table {
+  display: table;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  overflow: visible;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.875rem;
+  line-height: 1.125rem; /* whole-pixel rows, so row lines render evenly */
+  font-variant-numeric: tabular-nums;
+}
+/* (tr > cells: outranks the site's every-other-row stripe above; these
+   tables shade by column group instead.) */
+.wp-content .unit-table__table tr > :is(th, td) {
+  padding: 0.25rem;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  white-space: nowrap;
+  background: #ffffff;
+}
+.wp-content .unit-table__table thead th {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+  border-bottom-color: rgb(255 255 255 / 0.5);
+}
+/* UNITS / COVERAGE: a little smaller, so the words are no wider than the
+   numbers under them. */
+.wp-content .unit-table__table thead tr + tr th {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.wp-content .unit-table__table tbody th {
+  font-weight: 800;
+}
+.wp-content .unit-table__table tbody .is-shaded {
+  background: var(--color-surface);
+}
+.wp-content .unit-table__table .is-over {
+  color: var(--color-text-muted);
+}
+/* Thin divider before each coverage group (white in the green header). */
+.wp-content .unit-table__table .unit-table__g {
+  border-left: 1px solid var(--color-text-muted);
+}
+.wp-content .unit-table__table thead .unit-table__g {
+  border-left-color: #ffffff;
+}
+/* The first group already has the divider after 1 UNIT. */
+.wp-content .unit-table__table :is(.unit-table__unit + .unit-table__g, tr > .unit-table__g:first-child) {
+  border-left: 0;
+}
+/* AGE and 1 UNIT: pinned while scrolling (AGE is a fixed 2.5rem wide, so
+   1 UNIT can sit right after it), with a divider after them. */
+.wp-content .unit-table__table :is(.unit-table__age, tbody th) {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  width: 2.5rem;
+  min-width: 2.5rem;
+}
+.wp-content .unit-table__table .unit-table__unit {
+  position: sticky;
+  left: 2.5rem;
+  z-index: 1;
+  border-right: 2px solid var(--color-primary);
+}
+.wp-content .unit-table__table thead .unit-table__unit {
+  border-right-color: #ffffff;
+}
+.wp-content .unit-table__table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.unit-table__note {
+  margin: var(--space-2) 0 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+.unit-table .table-scroll-hint {
+  margin-top: 0;
+}
+
 .wp-content details {
   border-bottom: 1px solid var(--color-border);
   padding-block: var(--space-3);

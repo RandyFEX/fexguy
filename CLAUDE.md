@@ -1149,16 +1149,19 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
     - aggressive title/meta wording ("It's Really Bad"; "now the worst life
       insurance plan senior citizens could ever buy") and scam wording (the
       "IS COLONIAL PENN $9.95 A SCAM?" verdict section);
-    - the undated Colonial Penn unit-value/rate table ("According to Colonial
-      Penn's official rate chart…", ages 50–80);
+    - resolved (Randy, October 2026): the undated unit-value/rate table was
+      replaced on both Colonial Penn pages by the shared coverage-per-unit
+      tables (src/lib/coverage/unit-table.ts, src/data/colonial-penn-units.json;
+      ages 50–80, 25-unit maximum), the unit, premium and per-unit examples on
+      both pages were corrected to those tables, and the conflicting 7%
+      refund-interest statements now say "premiums plus an additional amount
+      set by the policy";
     - current A.M. Best, BBB and other carrier-rating claims (A (Excellent)
       "which is average"; Mutual of Omaha and Aetna "A- or A+"; BBB A+);
     - BBB/NAIC complaint claims, including the inconsistent "hundreds of
       complaints" vs "thousands of reviews and complaints";
     - the NAIC "complaint index higher than the industry average" claim;
-    - undated premium/rate examples ($41 vs about $79.60, $71, $179.10 for 18
-      units, "$60 to $120… even over $200");
-    - the 7% refund-interest statement;
+    - undated premium/rate examples ($41 vs about $79.60, $71);
     - the "10-30% refund of premium interest rates" statement about other
       companies;
     - the absolute "Guaranteed-issue life insurance like Colonial Penn's
