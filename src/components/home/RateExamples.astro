@@ -45,6 +45,7 @@ import { rateExamples } from '@/lib/home/content';
                   width="960"
                   height="540"
                   loading={i === 0 ? 'eager' : 'lazy'}
+                  fetchpriority="low"
                   decoding="async"
                   style={`--focus: ${r.image.focus}`}
                 />
@@ -192,8 +193,9 @@ import { rateExamples } from '@/lib/home/content';
   }
   /* The hidden examples' photos are not rendered until the page has loaded
      (the script adds .is-ready), so their lazy loading waits and the hero
-     photo, the page's largest image, downloads first. Without JavaScript only
-     the first example is ever shown. */
+     photo, the page's largest image, downloads first (all the portraits
+     also load at low priority). Without JavaScript only the first example is
+     ever shown. */
   .rate:not(.is-ready) .rate__item:not(.is-active) .rate__photo img {
     display: none;
   }
