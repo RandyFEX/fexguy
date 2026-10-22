@@ -12,6 +12,11 @@ type Row = { age: number; perUnit: number; units: number[]; coverage: number[] }
 
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 
+/** Shown in both cells of a target that needs more than data.maxUnits units
+ *  (the data keeps the calculated values). An en dash: the site bans em
+ *  dashes (CLAUDE.md; npm run verify fails on them). */
+const UNAVAILABLE = '\u2013';
+
 /** Fails the build if a row's units or coverage don't follow from its per-unit amount. */
 function check(sex: string, rows: Row[]): void {
   rows.forEach((r) => {
@@ -47,17 +52,17 @@ function table(sex: 'male' | 'female', label: string): string {
           const beyond = r.units[i] > max;
           over ||= beyond;
           const o = beyond ? ' is-over' : '';
-          const mark = beyond
-            ? `<span aria-hidden="true">†</span><span class="visually-hidden"> (more than ${max} units)</span>`
-            : '';
-          return `<td class="unit-table__g${s}${o}">${r.units[i]}${mark}</td><td class="${(s + o).trim()}">${money(r.coverage[i])}</td>`;
+          const na = `<span aria-hidden="true">${UNAVAILABLE}</span><span class="visually-hidden">not available</span>`;
+          const units = beyond ? na : `${r.units[i]}`;
+          const coverage = beyond ? na : money(r.coverage[i]);
+          return `<td class="unit-table__g${s}${o}">${units}</td><td class="${(s + o).trim()}">${coverage}</td>`;
         })
         .join('');
       return `<tr><th scope="row">${r.age}</th><td class="unit-table__unit">${money(r.perUnit)}</td>${cells}</tr>`;
     })
     .join('');
   const note = over
-    ? `<p class="unit-table__note"><span aria-hidden="true">† </span>Requires more than ${max} units. Colonial Penn currently advertises up to ${max} units; actual availability may vary.</p>`
+    ? `<p class="unit-table__note">${UNAVAILABLE} means that coverage amount cannot be reached within Colonial Penn's advertised ${max}-unit maximum.</p>`
     : '';
   return (
     `<div class="unit-table">` +
