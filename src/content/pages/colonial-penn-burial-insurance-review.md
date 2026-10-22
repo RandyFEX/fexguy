@@ -462,7 +462,7 @@ Accidental Coverage Wasn’t the Plan
 
 <p>The Colonial Penn $9.95 offer hooks seniors with emotional messaging, then quietly delivers minimal coverage with a two-year waiting period.</p>
 
-<p>The company relies on misleading television marketing, and the numbers simply don’t justify the overpriced rates. In our age 50–80 tables, reaching at least $10,000 in coverage costs between $49.75 and $238.80 per month, for coverage that takes two years to activate. That is not a good deal.</p>
+<p>The company relies on misleading television marketing, and the numbers simply don’t justify the overpriced rates. In our tables for ages 50 through 80, reaching at least $10,000 in coverage costs between $49.75 and $238.80 per month, for coverage that takes two years to activate. That is not a good deal.</p>
 
 <p>For most people, there are far better options from the Final Expense Guy. Simplified-issue whole life policies from financially strong companies provide immediate benefits, lower premiums, and guaranteed lifetime coverage.</p>
 
