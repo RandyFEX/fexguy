@@ -43,7 +43,7 @@ sidebar: true
 
 <p>The older you are, the smaller your benefit per unit. You can buy multiple units, but each additional unit costs another $9.95!</p>
 
-<p>For someone who needs $10,000 in protection, the real price is $49.75 to $238.80 per month, not $9.95. Those are the lowest (a 50-year-old woman) and highest (an 80-year-old man) monthly costs in our coverage tables for ages 50 to 80 to reach at least $10,000 in coverage. Even over $200 a month is not uncommon.</p>
+<p>For someone who needs $10,000 in protection, the real price is $49.75 to $238.80 per month, not $9.95. Those are the lowest (a 50-year-old woman) and highest (an 80-year-old man) monthly costs in our coverage tables for ages 50 to 80 to reach at least $10,000 in coverage. For men ages 77 through 80, reaching at least $10,000 in coverage costs more than $200 per month.</p>
 
 <p>It’s also important to know that this plan is guaranteed issue, which means the company doesn’t ask health questions. Everyone gets approved if they can afford the outlandish prices Colonial Penn charges.</p>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <h2><strong>HOW MUCH COVERAGE DO YOU REALLY GET FOR $9.95?</strong></h2>
 
-<p>One $9.95 unit usually buys only a few hundred dollars of coverage, so real protection costs many times more than the ads suggest.</p>
+<p>For ages 50 through 80, one $9.95 unit provides between $426 and $2,000 in coverage, depending on age and sex, so real protection costs many times more than the ads suggest.</p>
 
 <p>According to Colonial Penn’s official rate chart, a 75-year-old man paying Colonial Penn $9.95 a month only has about $550 in life insurance. To reach $10,000 in coverage, he’d need 19 units ($10,450 in coverage), which would cost $189.05 per month.</p>
 
@@ -230,7 +230,7 @@ Guaranteed Acceptance, But Delayed Coverage
 
 <p>Many customers report confusion, disappointment, and frustration after learning how little coverage they actually received.</p>
 
-<p>On the Better Business Bureau (BBB) site, you’ll find thousands of reviews and complaints mentioning the same pattern: seniors believe they’re buying a full life insurance policy for $9.95, only to discover it buys one “unit” of coverage worth a few hundred dollars.</p>
+<p>On the Better Business Bureau (BBB) site, you’ll find thousands of reviews and complaints mentioning the same pattern: seniors believe they’re buying a full life insurance policy for $9.95, only to discover it buys one “unit” of coverage. For ages 50 through 80, one $9.95 unit provides between $426 and $2,000 in coverage, depending on age and sex.</p>
 
 <p>Others report that their claims were delayed or denied because the death occurred during the two-year waiting period.</p>
 
@@ -462,7 +462,7 @@ Accidental Coverage Wasn’t the Plan
 
 <p>The Colonial Penn $9.95 offer hooks seniors with emotional messaging, then quietly delivers minimal coverage with a two-year waiting period.</p>
 
-<p>The company relies on misleading television marketing, and the numbers simply don’t justify the overpriced rates. Paying $150-$200 a month for $10,000 of coverage that takes two years to activate is not a good deal.</p>
+<p>The company relies on misleading television marketing, and the numbers simply don’t justify the overpriced rates. In our age 50–80 tables, reaching at least $10,000 in coverage costs between $49.75 and $238.80 per month, for coverage that takes two years to activate. That is not a good deal.</p>
 
 <p>For most people, there are far better options from the Final Expense Guy. Simplified-issue whole life policies from financially strong companies provide immediate benefits, lower premiums, and guaranteed lifetime coverage.</p>
 
