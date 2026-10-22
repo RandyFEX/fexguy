@@ -76,7 +76,7 @@ function table(sex: 'male' | 'female', label: string): string {
 }
 
 export function colonialPennUnitTablesHtml(): string {
-  return table('male', 'Male coverage') + table('female', 'Female coverage');
+  return table('male', 'Male Coverage - Colonial Penn $9.95 Plan') + table('female', 'Female Coverage - Colonial Penn $9.95 Plan');
 }
 
 const MARKER = '<div data-unit-table="colonial-penn"></div>';
