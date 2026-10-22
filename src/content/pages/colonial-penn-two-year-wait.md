@@ -56,7 +56,7 @@ sidebar: true
 
 <h2 id="colonial-penn-two-year-wait"><strong>Colonial Penn Two Year Wait </strong></h2>
 
-<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 that’s built mainly for funeral costs, not full early protection.</p>
+<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 in most states that’s built mainly for funeral costs, not full early protection. Eligibility ages vary by state.</p>
 
 <p><strong>States available</strong>: All except New York<br></p>
 
@@ -108,7 +108,7 @@ sidebar: true
 
 <p>Restriction: Colonial Penn Guaranteed Acceptance Life Insurance Will Not Pay A Death Benefit If Death Occurs During The First 2 Years</p>
 
-<p>A guaranteed acceptance life insurance from Colonial Penn can be purchased between the ages of 50 and 85, and the death benefit is limited for the first 24 months of coverage. Colonial Penn’s two-year wait will not pay out a death benefit if you die from natural causes within the first two years of the policy.</p>
+<p>A guaranteed acceptance life insurance from Colonial Penn can be purchased between the ages of 50 and 85 in most states (eligibility ages vary by state), and the death benefit is limited for the first 24 months of coverage. Colonial Penn’s two-year wait will not pay out a death benefit if you die from natural causes within the first two years of the policy.</p>
 
 <p>Unlike other life insurance providers that do not indicate a two-year limited benefit period, Colonial Penn clearly states on their terms and conditions that life insurance death benefits will not be paid out to the beneficiaries if the insured passes away within the first two years of signing up for coverage.</p>
 
@@ -120,7 +120,7 @@ sidebar: true
 
 <p>The limited benefit clause states that your life insurance policy will have to be in force for two years before paying for death due to a natural cause. Natural causes of death are diseases that include heart attack, stroke, diabetes, or cancer. Colonial Penn will not pay a death benefit if you die from a natural cause during the first two years.</p>
 
-<p>Suppose death from natural death occurs during the first two years of the policy. In that case, the beneficiary will receive the return of premiums paid plus 7% interest compounded annually (you are wise to accept offers from many other companies that offer a 10% interest rate). </p>
+<p>Suppose death from natural death occurs during the first two years of the policy. In that case, the beneficiary will receive the return of premiums plus an additional amount set by the policy (you are wise to accept offers from many other companies that offer a 10% interest rate). </p>
 
 <p>After the two years limited benefit period, the 100% face amount will be paid for death from any cause.</p>
 
@@ -158,7 +158,7 @@ sidebar: true
 
 <p>Guaranteed acceptance costs more and gives less protection than most people actually need.</p>
 
-<p>This means the company will not pay the full death benefit if you die from natural causes or an illness within the first two years of your policy. They will only refund your premium to your beneficiary plus 7% interest.</p>
+<p>This means the company will not pay the full death benefit if you die from natural causes or an illness within the first two years of your policy. They will only refund your premiums plus an additional amount set by the policy to your beneficiary.</p>
 
 <p>There are better life insurance options available for
 seniors. If you want to provide your family with financial security when you
@@ -176,7 +176,7 @@ best value. Who do we recommend instead?</p>
 
 <p>The best-guaranteed issue final expense plan has only a two-year waiting period that costs the least. If you have any medical condition that disqualifies you from getting a level death benefit with no waiting period, then GI policy is an excellent choice. It doesn’t have a medical exam and asks no health questions.</p>
 
-<p>GI policy has a two-year waiting period, but if you pass away during that time, the insurer will return all your premiums plus 10% interest (this is way higher than the 7% that Colonial Penn is offering). Not all life insurance providers provide a return of premium at 10% interest.</p>
+<p>GI policy has a two-year waiting period, but if you pass away during that time, the insurer will return all your premiums plus 10% interest. Not all life insurance providers provide a return of premium at 10% interest.</p>
 
 <p>Click our free quote button on the right to get a free quote.</p>
 
@@ -214,7 +214,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-0ad1b3de-82de-4bef-b2fc-d8d2eb11457a"><br><strong>Do I have to take a medical exam for Colonial Penn 9.95?</strong></p>
 
-<p id="block-0b587667-071b-4b68-88ce-cec3f4c661ce">No, you do not have to take a medical exam for Colonial Penn 9.95. However, you will need to answer some health questions on the application and you will have a 2-year waiting period where it will not pay for any health or medical-related death.</p>
+<p id="block-0b587667-071b-4b68-88ce-cec3f4c661ce">No, you do not have to take a medical exam for Colonial Penn 9.95, and there are no health questions for acceptance. However, you will have a 2-year waiting period where it will not pay for any health or medical-related death.</p>
 
 <p id="block-f350b72e-686d-40a2-b2fe-c3dc758fa662"><br><strong>Does Colonial Penn 9.95 have a waiting period?</strong></p>
 
@@ -274,7 +274,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-96ec8d44-24c0-423f-a4ca-48e7b571c38f"><br><strong>What is the minimum age to apply for Colonial Penn?</strong></p>
 
-<p id="block-bcc89f25-d7b4-4457-ac43-ecf3ade4c10f">The minimum age to apply for Colonial Penn is 50 years old.</p>
+<p id="block-bcc89f25-d7b4-4457-ac43-ecf3ade4c10f">The minimum age to apply for Colonial Penn is 50 years old in most states.</p>
 
 <p id="block-3d6959c9-a382-4c35-9304-4796c9b10169"><br><strong>What is the payout for a Colonial Penn policy?</strong></p>
 
@@ -290,7 +290,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-fd5b0984-866f-483d-8530-e5452967fd00"><br><strong>Can I cancel my Colonial Penn policy at any time?</strong></p>
 
-<p id="block-0348c983-0e3e-48af-9437-2669e1bff160">Yes, you can cancel your Colonial Penn policy at any time. However, there are no refunds on premiums paid.</p>
+<p id="block-0348c983-0e3e-48af-9437-2669e1bff160">Yes, you can cancel your Colonial Penn policy at any time. If you cancel within the first 30 days (the free-look period), you can receive a refund of the premiums you paid. If you cancel after that, premiums you have already paid are not refunded.</p>
 
 <p id="block-f146eddc-d738-4c79-b394-169b3d0a424e"><br><strong>What is the Colonial Penn return policy?</strong></p>
 
@@ -332,7 +332,7 @@ best value. Who do we recommend instead?</p>
 <li>Guaranteed acceptance for all applicants = very expensive</li>
 <li>No health questions asked = very expensive</li>
 <li>A low monthly cost of $9.95 = is very expensive once you add multiple units of coverage</li>
-<li>A wide range of ages accepted (18-80)</li>
+<li>A wide range of ages accepted (50-85 in most states)</li>
 </ul>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
