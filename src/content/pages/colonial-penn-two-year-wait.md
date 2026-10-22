@@ -210,7 +210,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-7033daab-5d49-4833-8cd2-ea3b6e32b434"><br><strong>What is the Colonial Penn 9.95 plan?</strong></p>
 
-<p id="block-6795b11b-797a-42a5-b1d8-63a6281c2f47">The Colonial Penn 9.95 plan is a guaranteed acceptance life insurance policy with minimal coverage that costs $9.95 per month <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). This plan also has a 2-year waiting period.</p>
+<p id="block-6795b11b-797a-42a5-b1d8-63a6281c2f47">The Colonial Penn 9.95 plan is a guaranteed acceptance life insurance policy with minimal coverage that costs $9.95 per month <strong>PER UNIT</strong> of coverage (only $426-$2,000 for ages 50-80 in our coverage tables, depending on your age). This plan also has a 2-year waiting period.</p>
 
 <p id="block-0ad1b3de-82de-4bef-b2fc-d8d2eb11457a"><br><strong>Do I have to take a medical exam for Colonial Penn 9.95?</strong></p>
 
@@ -238,7 +238,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-f018bb0e-4069-45af-9aef-86cfc3c84b32"><br><strong>What is the Colonial Penn $9.95 policy?</strong></p>
 
-<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). It has a two-year waiting period on all new policies.</p>
+<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (only $426-$2,000 for ages 50-80 in our coverage tables, depending on your age). It has a two-year waiting period on all new policies.</p>
 
 <p id="block-5e64c3d5-e710-4712-bbcb-a72b2d36fd75"><br><strong>Is the Colonial Penn 9.95 plan a term policy?</strong></p>
 
