@@ -492,10 +492,20 @@ a:hover {
    own container on narrow screens. Contrast: white on green 11.7:1, text on
    stone 13.1:1, muted on stone 5.8:1. */
 .unit-table {
+  /* Title and "Scroll →" hint share the first row, so the green header sits
+     4px under the title (3px margin + the box's 1px border). */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  column-gap: var(--space-3);
   margin-block: var(--space-6);
 }
 .unit-table h4 {
-  margin: 0 0 var(--space-2);
+  margin: 0 0 3px;
+}
+.unit-table > :not(h4, .table-scroll-hint) {
+  grid-column: 1 / -1;
+  min-width: 0;
 }
 .unit-table__scroll {
   position: relative; /* keeps the cells' screen-reader labels inside the scroll box */
@@ -589,7 +599,7 @@ a:hover {
   color: var(--color-text-muted);
 }
 .unit-table .table-scroll-hint {
-  margin-top: 0;
+  margin: 0 0 3px;
 }
 
 .wp-content details {
