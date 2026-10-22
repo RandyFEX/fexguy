@@ -3,11 +3,15 @@
 // keyboard (WCAG 2.2 SC 2.1.1), so every table that actually overflows gets
 // tabindex="0" (arrow keys then scroll it) and a small "Scroll →" hint above
 // it, so readers can see there are more columns; tables that fit get neither.
-// Re-checked when the viewport size changes.
-const TABLES = '.wp-content table, .prose table';
+// Re-checked when the viewport size changes. A table that scrolls inside its
+// own container instead (data-scroll-region, e.g. the Colonial Penn unit
+// tables, src/lib/coverage/unit-table.ts) gets the same treatment on that
+// container.
+const TABLES = '.wp-content table, .prose table, [data-scroll-region]';
 
 function update(): void {
-  document.querySelectorAll<HTMLTableElement>(TABLES).forEach((table) => {
+  document.querySelectorAll<HTMLElement>(TABLES).forEach((table) => {
+    if (table instanceof HTMLTableElement && table.closest('[data-scroll-region]')) return;
     const scrolls = table.scrollWidth > table.clientWidth + 1;
     if (scrolls && !table.hasAttribute('tabindex')) {
       table.tabIndex = 0;

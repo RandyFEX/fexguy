@@ -156,6 +156,12 @@ sidebar: true
 
 <p>Colonial Penn’s $9.95 plan was designed for people with serious health conditions who can’t qualify anywhere else. But most applicants can.</p>
 
+<h3 id="colonial-penn-coverage-per-unit-by-age">Colonial Penn Coverage Per Unit by Age</h3>
+
+<p>Colonial Penn's advertised $9.95 monthly price buys one unit of coverage. The amount of insurance in each unit depends on your age and sex. These tables show how many whole units are needed to reach at least $5,000, $10,000, $15,000, $20,000, or $25,000 in coverage.</p>
+
+<div data-unit-table="colonial-penn"></div>
+
 <h3>
 ⚠️
 One $9.95 Unit Meant One Big Misunderstanding

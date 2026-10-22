@@ -108,6 +108,12 @@ sidebar: true
 
 <p>Since the price per unit is fixed, the amount of coverage available per unit decreases as you grow older. The minimum value per unit is $418, and the maximum is $2,083. The maximum death benefit available for 8 units is only $16,664.</p>
 
+<h3 id="colonial-penn-coverage-per-unit-by-age">Colonial Penn Coverage Per Unit by Age</h3>
+
+<p>Colonial Penn's advertised $9.95 monthly price buys one unit of coverage. The amount of insurance in each unit depends on your age and sex. These tables show how many whole units are needed to reach at least $5,000, $10,000, $15,000, $20,000, or $25,000 in coverage.</p>
+
+<div data-unit-table="colonial-penn"></div>
+
 <p>Restriction: Colonial Penn Guaranteed Acceptance Life Insurance Will Not Pay A Death Benefit If Death Occurs During The First 2 Years</p>
 
 <p>A guaranteed acceptance life insurance from Colonial Penn can be purchased between the ages of 50 and 85, and the death benefit is limited for the first 24 months of coverage. Colonial Penn’s two-year wait will not pay out a death benefit if you die from natural causes within the first two years of the policy.</p>

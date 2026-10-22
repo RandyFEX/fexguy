@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
 import { quoteFormPlugin } from './src/lib/lead/quote-form-plugin.ts';
+import { unitTablePlugin } from './src/lib/coverage/unit-table.ts';
 import { hubNavPlugin } from './src/lib/hub-nav.ts';
 
 // Keep in sync with `url` in src/config/site.ts.
@@ -64,8 +65,10 @@ export default defineConfig({
   },
   markdown: {
     // <div data-quote-form></div> in page Markdown -> the quote box (lead form);
-    // <div data-hub-nav="ID"></div> -> hub navigation (src/lib/hub-nav.ts).
-    processor: satteri({ hastPlugins: [quoteFormPlugin, hubNavPlugin] }),
+    // <div data-hub-nav="ID"></div> -> hub navigation (src/lib/hub-nav.ts);
+    // <div data-unit-table="colonial-penn"></div> -> the Colonial Penn
+    // coverage-per-unit tables (src/lib/coverage/unit-table.ts).
+    processor: satteri({ hastPlugins: [quoteFormPlugin, hubNavPlugin, unitTablePlugin] }),
   },
   integrations: [
     sitemap({
