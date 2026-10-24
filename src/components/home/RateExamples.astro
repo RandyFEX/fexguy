@@ -45,6 +45,7 @@ import { rateExamples } from '@/lib/home/content';
                   width="960"
                   height="540"
                   loading={i === 0 ? 'eager' : 'lazy'}
+                  fetchpriority="low"
                   decoding="async"
                   style={`--focus: ${r.image.focus}`}
                 />
@@ -93,15 +94,52 @@ import { rateExamples } from '@/lib/home/content';
     let held = false; // pointer or keyboard focus on the card
     let timer: ReturnType<typeof setInterval> | undefined;
 
+    // The hidden examples' photos wait for the page's load event (see the
+    // .is-ready styles), so they don't compete with the hero photo.
+    const ready = () => root.classList.add('is-ready');
+    if (document.readyState === 'complete') ready();
+    else window.addEventListener('load', ready, { once: true });
+
     const show = (i: number) => {
+      ready();
       items[index].classList.remove('is-active');
       index = (i + items.length) % items.length;
       items[index].classList.add('is-active');
     };
+    // Rotate only to an example whose photo has loaded: while the next photo
+    // is still downloading (slow connections), the current example stays up
+    // and the rotation continues as soon as it arrives. A photo that failed to
+    // load is skipped, so the carousel can't get stuck on it.
+    const photo = (item: HTMLElement) => item.querySelector<HTMLImageElement>('.rate__photo img');
+    const loaded = (img: HTMLImageElement | null) => !img || (img.complete && img.naturalWidth > 0);
+    const failed = (img: HTMLImageElement | null) => !!img && img.complete && img.naturalWidth === 0;
+    let waiting: HTMLImageElement | null = null;
+    const advance = () => {
+      ready();
+      for (let step = 1; step < items.length; step++) {
+        const i = (index + step) % items.length;
+        const img = photo(items[i]);
+        if (failed(img)) continue;
+        if (loaded(img)) return show(i);
+        if (img && waiting !== img) {
+          waiting = img;
+          const resume = () => {
+            waiting = null;
+            if (playing && !held && !document.hidden) {
+              advance();
+              run();
+            }
+          };
+          img.addEventListener('load', resume, { once: true });
+          img.addEventListener('error', resume, { once: true });
+        }
+        return;
+      }
+    };
     const run = () => {
       clearInterval(timer);
       timer = undefined;
-      if (playing && !held && !document.hidden) timer = setInterval(() => show(index + 1), interval);
+      if (playing && !held && !document.hidden) timer = setInterval(advance, interval);
     };
     const setPlaying = (on: boolean) => {
       playing = on;
@@ -182,6 +220,14 @@ import { rateExamples } from '@/lib/home/content';
     height: 100%;
     object-fit: cover;
     object-position: clamp(calc(100cqw - 177.78cqh), calc(50cqw - var(--focus, 0.5) * 177.78cqh), 0px) 50%;
+  }
+  /* The hidden examples' photos are not rendered until the page has loaded
+     (the script adds .is-ready), so their lazy loading waits and the hero
+     photo, the page's largest image, downloads first (all the portraits
+     also load at low priority). Without JavaScript only the first example is
+     ever shown. */
+  .rate:not(.is-ready) .rate__item:not(.is-active) .rate__photo img {
+    display: none;
   }
   .rate__placeholder {
     position: absolute;
