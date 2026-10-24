@@ -106,10 +106,40 @@ import { rateExamples } from '@/lib/home/content';
       index = (i + items.length) % items.length;
       items[index].classList.add('is-active');
     };
+    // Rotate only to an example whose photo has loaded: while the next photo
+    // is still downloading (slow connections), the current example stays up
+    // and the rotation continues as soon as it arrives. A photo that failed to
+    // load is skipped, so the carousel can't get stuck on it.
+    const photo = (item: HTMLElement) => item.querySelector<HTMLImageElement>('.rate__photo img');
+    const loaded = (img: HTMLImageElement | null) => !img || (img.complete && img.naturalWidth > 0);
+    const failed = (img: HTMLImageElement | null) => !!img && img.complete && img.naturalWidth === 0;
+    let waiting: HTMLImageElement | null = null;
+    const advance = () => {
+      ready();
+      for (let step = 1; step < items.length; step++) {
+        const i = (index + step) % items.length;
+        const img = photo(items[i]);
+        if (failed(img)) continue;
+        if (loaded(img)) return show(i);
+        if (img && waiting !== img) {
+          waiting = img;
+          const resume = () => {
+            waiting = null;
+            if (playing && !held && !document.hidden) {
+              advance();
+              run();
+            }
+          };
+          img.addEventListener('load', resume, { once: true });
+          img.addEventListener('error', resume, { once: true });
+        }
+        return;
+      }
+    };
     const run = () => {
       clearInterval(timer);
       timer = undefined;
-      if (playing && !held && !document.hidden) timer = setInterval(() => show(index + 1), interval);
+      if (playing && !held && !document.hidden) timer = setInterval(advance, interval);
     };
     const setPlaying = (on: boolean) => {
       playing = on;
