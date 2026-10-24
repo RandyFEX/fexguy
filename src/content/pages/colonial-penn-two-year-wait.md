@@ -14,14 +14,14 @@ sidebar: true
 <div class="summary" data-pagefind-ignore>
 <section class="summary__answer" data-article-part="quick-answer" aria-labelledby="quick-answer-title">
 <h2 class="summary__label" id="quick-answer-title">Quick Answer</h2>
-<p class="summary__text">The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family usually only gets your premiums back, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
+<p class="summary__text">The Colonial Penn two-year waiting period means your policy doesn’t fully protect your family right away. This is a type of whole life insurance called guaranteed issue, where approval is easy because there are no health questions. The trade-off is a 24-month delay before full benefits are paid out. If you die from natural causes during that time, your family gets a refund of your premiums plus an additional amount set by the policy, not the full payout. That’s a major risk most people don’t understand when they sign up.</p>
 </section>
 <section class="summary__points" data-article-part="key-points" aria-labelledby="key-points-title">
 <h2 class="summary__label" id="key-points-title">Key Points</h2>
 <ul class="summary__list" role="list">
 <li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Colonial Penn has a strict 2-year waiting period on all policies</span></li>
 <li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Your family won’t get full benefits if you die early</span></li>
-<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Most deaths in the first 2 years only return premiums paid</span></li>
+<li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Nonaccidental deaths in the first 2 years return premiums plus an additional amount set by the policy</span></li>
 <li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>You’re paying full price without full coverage during that time</span></li>
 <li class="summary__item"><span class="summary__icon" aria-hidden="true"><svg focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></span><span>Better policies exist with first-day coverage at similar prices</span></li>
 </ul>
@@ -56,15 +56,13 @@ sidebar: true
 
 <h2 id="colonial-penn-two-year-wait"><strong>Colonial Penn Two Year Wait </strong></h2>
 
-<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 that’s built mainly for funeral costs, not full early protection.</p>
+<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 in most states that’s built mainly for funeral costs, not full early protection. Eligibility ages vary by state.</p>
 
 <p><strong>States available</strong>: All except New York<br></p>
 
 <h2 id="features-of-guaranteed-acceptance-life-insurance"><strong>Features Of Colonial Penn’s Guaranteed Acceptance Life Insurance </strong></h2>
 
 <p>The policy trades easy approval for limited coverage, lower payouts, and strict early restrictions.</p>
-
-<p><strong>Coverage options</strong>: $418-$16,664</p>
 
 <p><strong>NO MEDICAL EXAM</strong></p>
 
@@ -90,13 +88,13 @@ sidebar: true
 
 <p>Colonial Penn prices coverage using a flat unit system that hides how little insurance you’re actually buying.</p>
 
-<p>Monthly premiums are computed based on the number of units of coverage purchased. A unit costs $9.95 for everyone, and the maximum you can buy is 8 units. A single unit always costs $9.95 whether you are young or old, male or female, smoker or not.</p>
+<p>Monthly premiums are computed based on the number of units of coverage purchased. A unit costs $9.95 for everyone, and Colonial Penn currently advertises up to 25 units. A single unit always costs $9.95 whether you are young or old, male or female, smoker or not.</p>
 
-<p>Since you can only purchase up to 8 units, your maximum monthly premium will be $79.60 [8 units x $9.95 per month]. If you choose to pay annually, you will get one month’s worth of premium or an 8.3% discount for the year.</p>
+<p>At the advertised maximum of 25 units, your monthly premium would be $248.75 [25 units x $9.95 per month]. If you choose to pay annually, you will get one month’s worth of premium or an 8.3% discount for the year.</p>
 
 <p><strong>What is a Unit?</strong></p>
 
-<p>A unit of coverage is the amount of death benefit you can buy depending on your age, gender, and state. You can request a quote on their website to see the death benefit amount you can buy up to 8 units of coverage.</p>
+<p>A unit of coverage is the amount of death benefit you can buy depending on your age, gender, and state. You can request a quote on their website to see the death benefit amount you can buy for up to 25 units of coverage.</p>
 
 <p><br><strong>How does it work?</strong></p>
 
@@ -104,13 +102,13 @@ sidebar: true
 
 <p>With Colonial Penn, the amount of coverage that the unit provides. The older you get, the less coverage a unit provides for you. In addition, a unit provides less death benefit for a man than it does for a woman.</p>
 
-<p>For example, for a 50-year-old woman, 8 units of coverage would provide a $16,664 death benefit. A 55-year-old woman would get $15,072 in coverage for 8 units, while a 60-year-old woman would only get $12,968 in coverage for 8 units.</p>
+<p>For example, for a 50-year-old woman, 8 units of coverage would provide a $16,000 death benefit. A 55-year-old woman would get $14,088 in coverage for 8 units, while a 60-year-old woman would only get $12,120 in coverage for 8 units.</p>
 
-<p>Since the price per unit is fixed, the amount of coverage available per unit decreases as you grow older. The minimum value per unit is $418, and the maximum is $2,083. The maximum death benefit available for 8 units is only $16,664.</p>
+<p>Since the price per unit is fixed, the amount of coverage available per unit decreases as you grow older.</p>
 
 <p>Restriction: Colonial Penn Guaranteed Acceptance Life Insurance Will Not Pay A Death Benefit If Death Occurs During The First 2 Years</p>
 
-<p>A guaranteed acceptance life insurance from Colonial Penn can be purchased between the ages of 50 and 85, and the death benefit is limited for the first 24 months of coverage. Colonial Penn’s two-year wait will not pay out a death benefit if you die from natural causes within the first two years of the policy.</p>
+<p>A guaranteed acceptance life insurance from Colonial Penn can be purchased between the ages of 50 and 85 in most states (eligibility ages vary by state), and the death benefit is limited for the first 24 months of coverage. Colonial Penn’s two-year wait will not pay out a death benefit if you die from natural causes within the first two years of the policy.</p>
 
 <p>Unlike other life insurance providers that do not indicate a two-year limited benefit period, Colonial Penn clearly states on their terms and conditions that life insurance death benefits will not be paid out to the beneficiaries if the insured passes away within the first two years of signing up for coverage.</p>
 
@@ -122,7 +120,7 @@ sidebar: true
 
 <p>The limited benefit clause states that your life insurance policy will have to be in force for two years before paying for death due to a natural cause. Natural causes of death are diseases that include heart attack, stroke, diabetes, or cancer. Colonial Penn will not pay a death benefit if you die from a natural cause during the first two years.</p>
 
-<p>Suppose death from natural death occurs during the first two years of the policy. In that case, the beneficiary will receive the return of premiums paid plus 7% interest compounded annually (you are wise to accept offers from many other companies that offer a 10% interest rate). </p>
+<p>Suppose death from natural death occurs during the first two years of the policy. In that case, the beneficiary will receive the return of premiums plus an additional amount set by the policy (you are wise to accept offers from many other companies that offer a 10% interest rate). </p>
 
 <p>After the two years limited benefit period, the 100% face amount will be paid for death from any cause.</p>
 
@@ -150,11 +148,17 @@ sidebar: true
 
 <p>Keep in mind that most people qualify for immediate coverage through other companies. This means you won’t have to endure a 2-year waiting period before you have 100% coverage.<br></p>
 
+<h3 id="colonial-penn-coverage-per-unit-by-age">Colonial Penn Coverage Per Unit by Age</h3>
+
+<p>Colonial Penn's advertised $9.95 monthly price buys one unit of coverage. The amount of insurance in each unit depends on your age and sex. These tables show how many whole units are needed to reach at least $5,000, $10,000, $15,000, $20,000, or $25,000 in coverage.</p>
+
+<div data-unit-table="colonial-penn"></div>
+
 <h2 id="why-not-guaranteed-acceptance-life-insurance"><strong>Why Not Guaranteed Acceptance Life Insurance?</strong> </h2>
 
 <p>Guaranteed acceptance costs more and gives less protection than most people actually need.</p>
 
-<p>This means the company will not pay the full death benefit if you die from natural causes or an illness within the first two years of your policy. They will only refund your premium to your beneficiary plus 7% interest.</p>
+<p>This means the company will not pay the full death benefit if you die from natural causes or an illness within the first two years of your policy. They will only refund your premiums plus an additional amount set by the policy to your beneficiary.</p>
 
 <p>There are better life insurance options available for
 seniors. If you want to provide your family with financial security when you
@@ -172,7 +176,7 @@ best value. Who do we recommend instead?</p>
 
 <p>The best-guaranteed issue final expense plan has only a two-year waiting period that costs the least. If you have any medical condition that disqualifies you from getting a level death benefit with no waiting period, then GI policy is an excellent choice. It doesn’t have a medical exam and asks no health questions.</p>
 
-<p>GI policy has a two-year waiting period, but if you pass away during that time, the insurer will return all your premiums plus 10% interest (this is way higher than the 7% that Colonial Penn is offering). Not all life insurance providers provide a return of premium at 10% interest.</p>
+<p>GI policy has a two-year waiting period, but if you pass away during that time, the insurer will return all your premiums plus 10% interest. Not all life insurance providers provide a return of premium at 10% interest.</p>
 
 <p>Click our free quote button on the right to get a free quote.</p>
 
@@ -206,11 +210,11 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-7033daab-5d49-4833-8cd2-ea3b6e32b434"><br><strong>What is the Colonial Penn 9.95 plan?</strong></p>
 
-<p id="block-6795b11b-797a-42a5-b1d8-63a6281c2f47">The Colonial Penn 9.95 plan is a guaranteed acceptance life insurance policy with minimal coverage that costs $9.95 per month <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). This plan also has a 2-year waiting period.</p>
+<p id="block-6795b11b-797a-42a5-b1d8-63a6281c2f47">The Colonial Penn 9.95 plan is a guaranteed acceptance life insurance policy with minimal coverage that costs $9.95 per month <strong>PER UNIT</strong> of coverage (only $426-$2,000 for ages 50-80 in our coverage tables, depending on your age). This plan also has a 2-year waiting period.</p>
 
 <p id="block-0ad1b3de-82de-4bef-b2fc-d8d2eb11457a"><br><strong>Do I have to take a medical exam for Colonial Penn 9.95?</strong></p>
 
-<p id="block-0b587667-071b-4b68-88ce-cec3f4c661ce">No, you do not have to take a medical exam for Colonial Penn 9.95. However, you will need to answer some health questions on the application and you will have a 2-year waiting period where it will not pay for any health or medical-related death.</p>
+<p id="block-0b587667-071b-4b68-88ce-cec3f4c661ce">No, you do not have to take a medical exam for Colonial Penn 9.95, and there are no health questions for acceptance. However, you will have a 2-year waiting period where it will not pay for any health or medical-related death.</p>
 
 <p id="block-f350b72e-686d-40a2-b2fe-c3dc758fa662"><br><strong>Does Colonial Penn 9.95 have a waiting period?</strong></p>
 
@@ -234,7 +238,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-f018bb0e-4069-45af-9aef-86cfc3c84b32"><br><strong>What is the Colonial Penn $9.95 policy?</strong></p>
 
-<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (often only between $400-$1,000 depending on your age). It has a two-year waiting period on all new policies and maximum coverage of $16,664.</p>
+<p id="block-afce1450-1a1d-44ca-8f35-c4f0c9686536">The Colonial Penn $9.95 policy is a guaranteed acceptance life insurance policy with a monthly cost of $9.95 <strong>PER UNIT</strong> of coverage (only $426-$2,000 for ages 50-80 in our coverage tables, depending on your age). It has a two-year waiting period on all new policies.</p>
 
 <p id="block-5e64c3d5-e710-4712-bbcb-a72b2d36fd75"><br><strong>Is the Colonial Penn 9.95 plan a term policy?</strong></p>
 
@@ -246,11 +250,11 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-f894ca35-bc8f-4ef2-bc71-1b5e480b59e9"><br><strong>What is the maximum unit you can buy at Colonial Penn?</strong></p>
 
-<p id="block-bb16a575-8f1b-465d-a745-aa036ed9b7de">The maximum unit you can buy at Colonial Penn is 8 units at $9.95 per unit.</p>
+<p id="block-bb16a575-8f1b-465d-a745-aa036ed9b7de">Colonial Penn currently advertises up to 25 units at $9.95 per unit.</p>
 
 <p id="block-fe64ae16-7e0f-4744-8ae4-de2ebb98d9a5"><br><strong>How much insurance is in a unit of Colonial Penn?</strong></p>
 
-<p id="block-17b1f6cb-3e86-4af2-9d7e-06e4f9ff9c41">A unit of Colonial Penn life insurance is $9.95 and offers maximum coverage of $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
+<p id="block-17b1f6cb-3e86-4af2-9d7e-06e4f9ff9c41">A unit of Colonial Penn life insurance is $9.95, and the amount of insurance in each unit depends on your age and sex (see the <a href="#colonial-penn-coverage-per-unit-by-age">coverage tables above</a>). Meaningful coverage will be extremely expensive, as you have to add up multiple units.</p>
 
 <p id="block-0e6f19b2-5fee-4835-b007-f4439506d44f"><br><strong>What’s the deal with Colonial Penn?</strong></p>
 
@@ -258,15 +262,11 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-a70a4555-3846-474f-bb55-b086722c46ba"><br><strong>What is Colonial Penn guaranteed acceptance program?</strong></p>
 
-<p id="block-bad7ae38-1a87-4660-b7da-1289ea3abdec">The Colonial Penn guaranteed acceptance program is a policy that offers guaranteed acceptance for all applicants. It has a two-year waiting period on all new policies and maximum coverage of $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
-
-<p id="block-62700af4-c124-4fa4-8b81-8602aba11741"><br><strong>What is the maximum coverage I can get with Colonial Penn 9.95?</strong></p>
-
-<p id="block-c0cc291a-f5ec-4b2c-8e9c-768527bb0bd9">The maximum coverage you can get with Colonial Penn 9.95 is $16,664 (but this will be extremely expensive as you have to add up multiple units to get that much coverage).</p>
+<p id="block-bad7ae38-1a87-4660-b7da-1289ea3abdec">The Colonial Penn guaranteed acceptance program is a policy that offers guaranteed acceptance for all applicants. It has a two-year waiting period on all new policies.</p>
 
 <p id="block-ec9c399a-273d-4a14-b414-9add108449b5"><br><strong>What does Colonial Penn 995 get you?</strong></p>
 
-<p id="block-e8782699-e392-449a-8391-6719294d7697">Colonial Penn 9.95 gets you a guaranteed acceptance life insurance policy with a two-year waiting period and maximum coverage of $16,664, which is very expensive.</p>
+<p id="block-e8782699-e392-449a-8391-6719294d7697">Colonial Penn 9.95 gets you a guaranteed acceptance life insurance policy with a two-year waiting period. Buying enough units for meaningful coverage is very expensive.</p>
 
 <p id="block-09a05028-236f-4dd0-ab29-e8292eeaea68"><br><strong>Do Colonial Penn whole life policies increase in value?</strong></p>
 
@@ -274,7 +274,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-96ec8d44-24c0-423f-a4ca-48e7b571c38f"><br><strong>What is the minimum age to apply for Colonial Penn?</strong></p>
 
-<p id="block-bcc89f25-d7b4-4457-ac43-ecf3ade4c10f">The minimum age to apply for Colonial Penn is 50 years old.</p>
+<p id="block-bcc89f25-d7b4-4457-ac43-ecf3ade4c10f">The minimum age to apply for Colonial Penn is 50 years old in most states.</p>
 
 <p id="block-3d6959c9-a382-4c35-9304-4796c9b10169"><br><strong>What is the payout for a Colonial Penn policy?</strong></p>
 
@@ -282,7 +282,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-786673d6-18cf-42f1-951f-ce2995d7b689"><br><strong>How much are Colonial Penn’s life insurance rates?</strong></p>
 
-<p id="block-6d54f1b2-7d0f-4cf3-bcf6-9eeefba3a986">The rate for Colonial Penn’s life insurance policies is $9.95 per unit; the maximum unit you can buy is eight.</p>
+<p id="block-6d54f1b2-7d0f-4cf3-bcf6-9eeefba3a986">The rate for Colonial Penn’s life insurance policies is $9.95 per unit; Colonial Penn currently advertises up to 25 units.</p>
 
 <p id="block-239c5aca-ab84-40a3-9572-706d8c0d22dd"><br><strong>How can I pay my Colonial Penn premiums?</strong></p>
 
@@ -290,7 +290,7 @@ best value. Who do we recommend instead?</p>
 
 <p id="block-fd5b0984-866f-483d-8530-e5452967fd00"><br><strong>Can I cancel my Colonial Penn policy at any time?</strong></p>
 
-<p id="block-0348c983-0e3e-48af-9437-2669e1bff160">Yes, you can cancel your Colonial Penn policy at any time. However, there are no refunds on premiums paid.</p>
+<p id="block-0348c983-0e3e-48af-9437-2669e1bff160">Yes, you can cancel your Colonial Penn policy at any time. If you cancel within the first 30 days (the free-look period), you can receive a refund of the premiums you paid. If you cancel after that, premiums you have already paid are not refunded.</p>
 
 <p id="block-f146eddc-d738-4c79-b394-169b3d0a424e"><br><strong>What is the Colonial Penn return policy?</strong></p>
 
@@ -332,7 +332,7 @@ best value. Who do we recommend instead?</p>
 <li>Guaranteed acceptance for all applicants = very expensive</li>
 <li>No health questions asked = very expensive</li>
 <li>A low monthly cost of $9.95 = is very expensive once you add multiple units of coverage</li>
-<li>A wide range of ages accepted (18-80)</li>
+<li>A wide range of ages accepted (50-85 in most states)</li>
 </ul>
 
 <h2 class="as-h5">About Final Expense Guy</h2>
