@@ -512,7 +512,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/burial-insurance/heart-surgery/': {
     family: 'health',
     quickAnswer:
-      'Getting burial insurance after heart surgery depends heavily on timing and recovery. If your surgery was more than 2 years ago and you’ve stayed stable, you can qualify for a level plan with no waiting period. If it was within the last 12 to 24 months, most companies will either decline you or make you wait, though some specialized carriers offer first-day coverage for recent procedures. If a heart procedure is still pending, you can’t qualify for a standard plan until it’s done.',
+      'Getting burial insurance after heart surgery depends heavily on timing and recovery. If your surgery was more than 2 years ago and you’ve stayed stable, you can qualify for a level plan with no waiting period. If it was within the last 2 years, most companies will either decline you or make you wait. One insurance company does offer first-day coverage after recent heart surgery if your doctor has medically cleared and released you, you’re stable, you meet its other underwriting requirements, and it is available in your state. If a heart procedure is still pending, you can’t qualify for a standard plan until it’s done.',
   },
   '/burial-insurance/hepatitis-b/': {
     family: 'health',

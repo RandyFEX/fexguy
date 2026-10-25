@@ -274,7 +274,15 @@ sidebar: true
 
 <p><strong>C)</strong> Have you <strong>BEEN DIAGNOSED</strong> by a member of the medical profession with MORE THAN ONE occurrence of <strong>ANY</strong> cancer, a recurrence of any cancer, metastasis of any cancer, or currently being treated for cancer (excluding basal cell or squamous cell skin cancer)?</p>
 
+<p>CICA Life uses two versions of Question D, depending on the state where you apply. Only one version applies in your state.</p>
+
+<p><strong>Version 1</strong></p>
+
 <p><strong>D)</strong> In the <strong>PAST 10 YEARS</strong>, have you been medically diagnosed, for which you have NOT been treated by a member of the medical profession, or have NOT taken medication for the following: uncontrolled diabetes, uncontrolled high blood pressure, stroke/TIA, paralysis, Congestive Heart Failure, heart disease, cardiomyopathy, lung disease (including COPD (Chronic Obstructive Pulmonary Disease)/emphysema), liver cirrhosis or failure, kidney (renal) failure/insufficiency, or chronic/end-stage kidney disease (including dialysis)?</p>
+
+<p><strong>Version 2</strong></p>
+
+<p><strong>D)</strong> In the <strong>PAST 10 YEARS</strong>, have you opted to NOT seek treatment, have NOT taken medication, and/or have NOT followed the prescribed treatment plan following a medical diagnosis by a member of the medical profession for any one or more the following: uncontrolled diabetes, uncontrolled high blood pressure, stroke/TIA, paralysis, Congestive Heart Failure, heart disease, cardiomyopathy, lung disease (including COPD (Chronic Obstructive Pulmonary Disease) emphysema), liver cirrhosis or failure, kidney (renal) failure/insufficiency, or chronic kidney disease (including dialysis)?</p>
 
 <p><strong>E)</strong> Have you <strong>EVER</strong> been medically diagnosed, treated by a member of the medical profession, or prescribed medication for mental disorder, disorder of the brain or nervous system, Systemic Lupus (SLE), Alzheimer’s disease, dementia, brain disease, organic brain syndrome, Lou Gehrig’s disease (ALS), Huntington’s disease, Muscular Dystrophy, Cystic Fibrosis, Pulmonary Fibrosis, or Multiple Myeloma?</p>
 
