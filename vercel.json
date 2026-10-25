@@ -1282,7 +1282,7 @@
     },
     {
       "source": "/burial-insurance-terminal-illness/",
-      "destination": "/burial-insurance/terminal-illness/",
+      "destination": "/burial-insurance/terminally-ill-patients/",
       "statusCode": 301
     },
     {
@@ -1544,6 +1544,16 @@
     {
       "source": "/facebook-2/",
       "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance/heart-surgery-2/",
+      "destination": "/burial-insurance/heart-surgery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance/terminal-illness/",
+      "destination": "/burial-insurance/terminally-ill-patients/",
       "statusCode": 301
     }
   ],

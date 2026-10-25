@@ -170,7 +170,7 @@ sidebar: true
 
 <p><strong>2.</strong> In the past 12 months, have you been confined to a nursing facility or received hospice care, or have you used <a href="/burial-insurance/oxygen-use/" target="_blank" rel="noreferrer noopener">oxygen</a> equipment to assist in breathing?  (Yes – No) </p>
 
-<p><strong>3.</strong> Have you been diagnosed by a licensed member of the medical profession as having a <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> (life expectancy of 12 months or less)?  (Yes – No) </p>
+<p><strong>3.</strong> Have you been diagnosed by a licensed member of the medical profession as having a <a href="/burial-insurance/terminally-ill-patients/" target="_blank" rel="noreferrer noopener">terminal illness</a> (life expectancy of 12 months or less)?  (Yes – No) </p>
 
 <p><strong>4.</strong> Have you ever been diagnosed, treated, tested positive for, taken medications, or been prescribed medications for, or been given medical advice by a licensed physician or other health care provider for:</p>
 

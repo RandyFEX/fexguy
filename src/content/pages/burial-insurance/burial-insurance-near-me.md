@@ -68,7 +68,7 @@ different types of burial insurance to compare:</strong></p>
 <p><strong>Here are some possible health questions you might see on the application:</strong></p>
 
 <ul>
-<li>Have you been diagnosed as having a <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> like <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> in the last two years?</li>
+<li>Have you been diagnosed as having a <a href="/burial-insurance/terminally-ill-patients/" target="_blank" rel="noreferrer noopener">terminal illness</a> like <a href="/burial-insurance/cancer/" target="_blank" rel="noreferrer noopener">cancer</a> in the last two years?</li>
 <li>Do you suffer from any heart disease or a <a href="/burial-insurance/stroke-tia/" target="_blank" rel="noreferrer noopener">stroke</a>?</li>
 <li>Do you have <a href="/burial-insurance/aids-hiv/" target="_blank" rel="noreferrer noopener">AIDS</a>, <a href="/life-insurance-for-hiv-positive/" target="_blank" rel="noreferrer noopener">HIV</a>,&#160; or AIDS-related complex?</li>
 <li>Do you have <a href="/burial-insurance-kidney-failure/" target="_blank" rel="noreferrer noopener">kidney failure</a> requiring <a href="/burial-insurance/dialysis-patients/">dialysis</a>?</li>
