@@ -128,11 +128,6 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Burial insurance after being hospitalized depends on how recent the stay was and what caused it. No insurance company offers first-day coverage to people who are currently hospitalized, so guaranteed acceptance burial insurance with no health questions is your only option, and it has a two-year waiting period for natural death. If you die of natural causes during that period, your beneficiary receives the premiums paid plus an additional amount set by the policy, typically 7% to 10%. If your condition improves and enough time passes, better options can open up.',
   },
-  '/burial-insurance/terminal-illness/': {
-    family: 'health', crumb: 'Terminal Illness',
-    quickAnswer:
-      'Burial insurance with a terminal illness is limited. No insurance company offers first-day coverage to people with a terminal illness, and most traditional policies will decline you. Your only option is a guaranteed issue policy that asks no health questions but costs more and has a 2-year waiting period. If you die from a health-related cause during those 2 years, your beneficiary gets your premiums back plus interest instead of the full benefit, but a covered accidental death can be paid in full.',
-  },
   '/burial-insurance/blood-thinner/': {
     family: 'health',
     quickAnswer:
@@ -513,11 +508,6 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'health',
     quickAnswer:
       'Getting burial insurance with a heart murmur depends on what’s causing it. Most insurance companies view a heart murmur as a minor health issue. If tests show it’s “innocent,” you can often qualify with normal rates, and immediate first-day coverage is widely available for people with heart murmurs. If the murmur is tied to valve problems or other heart issues, your options narrow and costs go up.',
-  },
-  '/burial-insurance/heart-surgery-2/': {
-    family: 'health',
-    quickAnswer:
-      'Getting burial insurance after heart surgery depends heavily on timing and recovery. If your surgery was within the last 12 months, many companies will either decline you or require a policy with a 2-year waiting period before full benefits pay out. If it was over two years ago, companies will treat you like you never had surgery and offer a level death benefit plan with first-day coverage.',
   },
   '/burial-insurance/heart-surgery/': {
     family: 'health',

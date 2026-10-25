@@ -57,7 +57,7 @@ sidebar: true
 
 <h2 id="best-insurance-option-if-you-are-terminally-ill"><br><strong>What is my best insurance option if I’m a terminally ill patient?</strong></h2>
 
-<p>A <a href="/burial-insurance/terminal-illness/" target="_blank" rel="noreferrer noopener">terminal illness</a> is a <a href="https://en.wikipedia.org/wiki/Terminal_illness" target="_blank" rel="noreferrer noopener">progressive disease</a> that is expected to end a person’s life within 12-24 months because the disease has no known cure or has progressed to the point where it can’t be cured.</p>
+<p>A terminal illness is a <a href="https://en.wikipedia.org/wiki/Terminal_illness" target="_blank" rel="noreferrer noopener">progressive disease</a> that is expected to end a person’s life within 12-24 months because the disease has no known cure or has progressed to the point where it can’t be cured.</p>
 
 <p><strong>If you’re a terminally ill patient, your only option for insurance coverage is a guaranteed issue burial insurance with a two-year waiting period.</strong></p>
 
@@ -418,6 +418,10 @@ sidebar: true
 <p>We can help you with any of the plans above. Your pricing will depend on your age, health, and coverage amount for each program option.</p>
 
 <h2 id="when-is-the-best-time-to-buy-burial-insurance"><br><strong>When is the best time to buy burial insurance?</strong></h2>
+
+<p>I often get calls from people asking for burial insurance because their loved ones have a terminal illness. It’s heartbreaking to tell them that it’s too late and that they have waited too long.</p>
+
+<p>Waiting until you have a terminal illness before buying burial insurance is like trying to buy a parachute after you have jumped out of a plane…it’s not a good idea to procrastinate.</p>
 
 <p>The best time to get life insurance is before you are sick or ill, as your health is a determining factor for insurability from first-day coverage companies.</p>
 

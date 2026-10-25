@@ -336,7 +336,7 @@ is in place; see src/content/README.md for how pages were migrated.
   /burial-insurance-peripheral-vascular-disease-pvd-pad/ → /burial-insurance/peripheral-vascular-disease-pvd-pad/
   /burial-insurance-scams/ → /burial-insurance/scams/
   /burial-insurance-scleroderma/ → /burial-insurance/scleroderma/
-  /burial-insurance-terminal-illness/ → /burial-insurance/terminal-illness/
+  /burial-insurance-terminal-illness/ → /burial-insurance/terminally-ill-patients/
   /burial-insurance-wheelchair-users/ → /burial-insurance/wheelchair-users/
   /burial-insurance-with-crohns-disease/ → /burial-insurance/crohns-disease/
   /burial-insurance-with-first-day-coverage/ → /burial-insurance/with-first-day-coverage/
@@ -459,6 +459,17 @@ is in place; see src/content/README.md for how pages were migrated.
   433.36); its MEDIUM items (trust-cap ranges, Medicaid.gov attribution, A.M.
   Best ratings, "less than $600", Colonial Penn wording, client stories) wait
   for the later content review.
+- **Heart surgery duplicate retired** (Randy, October 2026, V3.4):
+  /burial-insurance/heart-surgery-2/ was removed and 301s to
+  /burial-insurance/heart-surgery/ (one hop; no content carried over; the
+  survivor is unchanged).
+- **Terminal illness duplicate retired** (Randy, October 2026, V3.4):
+  /burial-insurance/terminal-illness/ was removed and 301s to
+  /burial-insurance/terminally-ill-patients/. Its "I often get calls…" and
+  parachute paragraphs were moved verbatim into the survivor's "When is the
+  best time to buy burial insurance?" section; the survivor's self-link was
+  unlinked and three other links retargeted. The Group D redirect
+  /burial-insurance-terminal-illness/ now goes straight to the survivor.
 - /mortgage-protection-life-insurance/ is a rewritten, fact-checked article
   Randy approved (October 2026; `source: "new"`), not the old WordPress post.
   Mortgage protection is a legitimate part of the business: present it as a

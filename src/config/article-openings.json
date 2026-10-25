@@ -97,14 +97,6 @@
         }
       ]
     },
-    "/burial-insurance/terminal-illness/": {
-      "elements": [
-        {
-          "starts": "!!! READ THIS FIRST !!! Having a terminal illness",
-          "reason": "Eligibility warning: tells readers before the article that this condition rules out first-day coverage (a guaranteed issue plan with a waiting period is the only option)."
-        }
-      ]
-    },
     "/burial-insurance/terminally-ill-patients/": {
       "elements": [
         {
