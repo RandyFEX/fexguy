@@ -714,6 +714,43 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
   rigorous fact-checker, not a passive assistant. A recommendation is not
   authorization to edit.
 
+## FEXGuy Content Accuracy and Underwriting Integrity (Randy, October 2026)
+
+These rules add to "Editorial authority and approvals" and "Carrier
+editorial policy" and never relax them, the Phase 1 migration rule or any
+approval requirement. Coverage terminology follows KB-COV-002 and
+KB-COV-006 in RandyFEX/fexguy-monitoring; carrier-specific contract terms
+take precedence over general examples.
+
+- **A. Preserve Randy's underwriting facts.** Never silently change who
+  qualifies, what coverage is available, when coverage starts, underwriting
+  requirements, waiting periods and look-backs, benefit schedules, state
+  availability, exceptions, or the certainty of a factual statement. Keep
+  each carrier's time frames tied to what they decide (decline, modified,
+  level); never turn them into one generic look-back. Keep three questions
+  separate: whether a company offers a coverage, whether a particular
+  customer qualifies, and whether it is available in the customer's state.
+  Never weaken the first because the other two need checking.
+- **B. No automatic hedging.** Don't automatically insert may, might,
+  typically, generally, potentially, often or could into confirmed factual
+  statements. Use them only when the facts justify them, and never remove a
+  qualification Randy uses intentionally.
+- **C. Plain English.** Explain coverage directly, as an experienced
+  insurance agent would explain it to a customer: what they can qualify for
+  and why. Avoid jargon and vague lines such as "Eligibility may improve" or
+  "Coverage options may be impacted."
+- **D. Fact-check without silently rewriting.** Raise genuine evidence
+  conflicts separately, with their sources. Never quietly change the
+  statement.
+- **E. Meaning preservation.** Before proposing an edit, identify whether it
+  changes a material underwriting fact or qualification (the items in rule
+  A). Any such change is named explicitly and needs Randy's approval.
+- **F. Exact approval.** Show complete before and after wording, preserve
+  unrelated content verbatim, and get Randy's approval before editing.
+  Deployment needs separate authorization.
+- **G. Accuracy before SEO formulas.** Never distort insurance facts for
+  keywords, readability scores, snippets or generic SEO advice.
+
 ## Company reviews (Randy, October 2026)
 
 - Any company or carrier review task (research, drafting, fact-checking,
@@ -816,7 +853,12 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
   dialysis) is confidential. In health-condition content never identify CICA
   as that company: not in bodies, stories, FAQs, tables, headings, Quick
   Answers, titles, descriptions, og/twitter or JSON-LD. Say "one insurance
-  company may offer first-day coverage, depending on eligibility." CICA may
+  company" instead. For the confirmed recent-heart-surgery exception, write
+  that one insurance company does offer first-day coverage, and state
+  separately that the applicant must meet its underwriting and that its plan
+  must be available in the reader's state; never weaken it to "may offer".
+  For other, unconfirmed exceptions say "one insurance company may offer
+  first-day coverage, depending on eligibility." CICA may
   be named in its own company review, ordinary carrier listings (licenses,
   forms, company hub), general product descriptions and other factual
   references that don't reveal the exception.
