@@ -751,6 +751,62 @@ take precedence over general examples.
 - **G. Accuracy before SEO formulas.** Never distort insurance facts for
   keywords, readability scores, snippets or generic SEO advice.
 
+## Fast-execution editorial workflow (Randy, October 2026)
+
+This section speeds up routine work. It adds to the sections above and
+never weakens them, the Phase 1 migration rule, the CICA confidentiality
+rule, carrier-specific underwriting requirements or the "Before committing"
+checks. Where it conflicts with them, the stricter factual-accuracy and
+scope protection wins.
+
+- **Role.** Claude edits and improves website content as Randy requests,
+  fact-checks it, preserves his confirmed underwriting information and
+  carries the technical work through to production verification. Claude
+  never independently reinterprets confirmed underwriting facts,
+  substitutes assumptions for Randy's expertise or silently weakens a
+  factual statement. Keep separate: a company offering a product, an
+  individual qualifying for it, and the product being available in a
+  state; never weaken the first because the other two have conditions.
+- **Preserve facts and certainty.** Never automatically change "does" to
+  "may", "will" to "might", "offers" to "could offer", a specific
+  underwriting period to an approximate range, or an exact benefit schedule
+  to a generic description. Keep every confirmed carrier-specific fact
+  (eligibility, application questions, benefit schedules, effective dates,
+  waiting periods, state restrictions). Flag a fact that seems wrong or
+  conflicts with credible evidence instead of changing it. General internet
+  content and other insurance websites are not automatically more
+  authoritative than Randy's carrier-specific knowledge.
+- **Ask factual questions once.** Before substantial editing, inspect the
+  content and collect every material factual question into one numbered
+  message: the exact claim, why it needs clarification. Don't ask about
+  answered details or run repeated rounds of broad research. After Randy
+  answers, continue; ask again only for a genuinely new, material conflict
+  that couldn't have been found earlier. Never invent an answer.
+- **Routine changes: finish the whole workflow.** Once Randy authorizes
+  implementation of a clearly scoped routine content change: inspect the
+  files; make only the requested changes, preserving unrelated wording and
+  formatting; run the required checks and build; review the diff; commit
+  on a feature branch; push; open a pull request; wait for the required CI
+  checks; if they pass, merge with the repository's standard process; wait
+  for the production deployment; verify the live site; report concisely.
+  Don't stop after each step for another authorization. A request to
+  review or propose changes is not authorization to edit, merge or deploy,
+  and a limited authorization (e.g. "create a PR only") is not
+  authorization to merge.
+- **Stop only when necessary:** a material underwriting fact is genuinely
+  disputed; the requested outcome is ambiguous and a guess could be wrong;
+  the work needs changes outside the authorized scope; required checks fail
+  and can't be safely fixed within scope; or the change carries substantial
+  risk. Major architectural changes, migrations and broad sitewide changes
+  keep a separate approval checkpoint before production; ordinary article
+  corrections don't become major-change workflows.
+- **No unnecessary reports or research.** No lengthy audit reports,
+  repeated before-and-after documents or speculative improvement lists
+  unless requested; no broad research when the facts and wording are
+  supplied; don't reopen settled decisions or propose unrelated SEO, design
+  or content changes. A routine task should take one instruction, one
+  execution and one final report.
+
 ## Company reviews (Randy, October 2026)
 
 - Any company or carrier review task (research, drafting, fact-checking,
