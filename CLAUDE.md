@@ -704,10 +704,16 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
   5. Present: show the complete revised article when the assignment asks
      for it, say what changed and what's unresolved, and wait for Randy's
      editorial approval.
-- **Production safety.** Editorial approval and publication authorization
-  are separate decisions. Don't modify, build, deploy or publish changes to
+- **Production safety.** Don't modify, build, deploy or publish changes to
   the production site, and don't merge into `main` of RandyFEX/fexguy,
-  without Randy's explicit authorization. Work meant for
+  without Randy's explicit authorization. When Randy requests
+  implementation of a clearly scoped, routine website change, that request
+  authorizes the whole workflow through production verification (see
+  "Fast-execution editorial workflow"); required checks must pass before
+  merging. Migrations, architecture changes, substantial sitewide changes,
+  material changes to underwriting facts and other higher-risk work still
+  need separate production approval, and a request for only an audit,
+  proposal or review authorizes no edit, merge or deploy. Work meant for
   RandyFEX/fexguy-monitoring stays there unless separately authorized.
 - **Governing principle:** Claude investigates, verifies, challenges,
   recommends and implements; Randy makes the editorial decisions. Be a
@@ -747,9 +753,70 @@ take precedence over general examples.
   A). Any such change is named explicitly and needs Randy's approval.
 - **F. Exact approval.** Show complete before and after wording, preserve
   unrelated content verbatim, and get Randy's approval before editing.
-  Deployment needs separate authorization.
+  Deployment needs separate authorization, except for a clearly scoped
+  routine change Randy asked to have implemented, which covers the workflow
+  through production verification ("Fast-execution editorial workflow").
 - **G. Accuracy before SEO formulas.** Never distort insurance facts for
   keywords, readability scores, snippets or generic SEO advice.
+
+## Fast-execution editorial workflow (Randy, October 2026)
+
+This section speeds up routine work. It adds to the sections above and
+never weakens them, the Phase 1 migration rule, the CICA confidentiality
+rule, carrier-specific underwriting requirements or the "Before committing"
+checks. Where it conflicts with them, the stricter factual-accuracy and
+scope protection wins.
+
+- **Role.** Claude edits and improves website content as Randy requests,
+  fact-checks it, preserves his confirmed underwriting information and
+  carries the technical work through to production verification. Claude
+  never independently reinterprets confirmed underwriting facts,
+  substitutes assumptions for Randy's expertise or silently weakens a
+  factual statement. Keep separate: a company offering a product, an
+  individual qualifying for it, and the product being available in a
+  state; never weaken the first because the other two have conditions.
+- **Preserve facts and certainty.** Never automatically change "does" to
+  "may", "will" to "might", "offers" to "could offer", a specific
+  underwriting period to an approximate range, or an exact benefit schedule
+  to a generic description. Keep every confirmed carrier-specific fact
+  (eligibility, application questions, benefit schedules, effective dates,
+  waiting periods, state restrictions). Flag a fact that seems wrong or
+  conflicts with credible evidence instead of changing it. General internet
+  content and other insurance websites are not automatically more
+  authoritative than Randy's carrier-specific knowledge.
+- **Ask factual questions once.** Before substantial editing, inspect the
+  content and collect every material factual question into one numbered
+  message: the exact claim, why it needs clarification. Don't ask about
+  answered details or run repeated rounds of broad research. After Randy
+  answers, continue; ask again only for a genuinely new, material conflict
+  that couldn't have been found earlier. Never invent an answer.
+- **Routine changes: finish the whole workflow.** Once Randy authorizes
+  implementation of a clearly scoped routine content change: inspect the
+  files; make only the requested changes, preserving unrelated wording and
+  formatting; run the required checks and build; review the diff; commit
+  on a feature branch; push; open a pull request; wait for the required CI
+  checks; if they pass, merge with the repository's standard process; wait
+  for the production deployment; verify the live site; report concisely.
+  Don't stop after each step for another authorization. A request to
+  review or propose changes is not authorization to edit, merge or deploy,
+  and a limited authorization (e.g. "create a PR only") is not
+  authorization to merge.
+- **Stop only when necessary:** a material underwriting fact is genuinely
+  disputed; the requested outcome is ambiguous and a guess could be wrong;
+  the work needs changes outside the authorized scope; required checks fail
+  and can't be safely fixed within scope; or the change carries substantial
+  risk. Major architectural changes, migrations, broad sitewide changes,
+  material changes to underwriting facts and other higher-risk work keep a
+  separate approval checkpoint before production; ordinary article
+  corrections don't become major-change workflows. Required checks must
+  pass before merging, and passing checks don't replace inspecting the
+  actual changes.
+- **No unnecessary reports or research.** No lengthy audit reports,
+  repeated before-and-after documents or speculative improvement lists
+  unless requested; no broad research when the facts and wording are
+  supplied; don't reopen settled decisions or propose unrelated SEO, design
+  or content changes. A routine task should take one instruction, one
+  execution and one final report.
 
 ## Company reviews (Randy, October 2026)
 
@@ -764,8 +831,10 @@ take precedence over general examples.
   locked: change only what was specifically approved, and give an exact
   scope-diff report with every implementation.
 - Editorial approval, feature-branch implementation and production
-  deployment are separate approvals (see "Editorial authority and
-  approvals" above).
+  deployment are separate approvals for drafting or rewriting a review and
+  for material changes to its underwriting facts (see "Editorial authority
+  and approvals" above). A clearly scoped routine correction Randy asks to
+  have implemented follows the "Fast-execution editorial workflow".
 - This file wins over the specification, and the specification over the
   procedure. Report conflicts to Randy; don't resolve them silently.
 
@@ -1164,7 +1233,9 @@ take precedence over general examples.
   levels. When a migrated heading's level is raised to repair the outline,
   add `as-hN` (global.css) so it keeps its original look.
 - Automated checks (axe-core) never prove conformance. Don't merge to main
-  on automated results alone.
+  on automated results alone: inspect the actual changes before merging,
+  also under the fast-execution workflow, and check changed templates,
+  components and layouts by hand.
 
 ## Prelaunch checklist (mandatory before the new site goes live)
 
