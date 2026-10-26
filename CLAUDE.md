@@ -702,8 +702,14 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
   4. Validate: check accuracy, technical correctness and compliance with
      the instructions.
   5. Present: show the complete revised article when the assignment asks
-     for it, say what changed and what's unresolved, and wait for Randy's
-     editorial approval.
+     for it and say what changed and what's unresolved. After a request
+     for only a review, audit or proposal, wait for Randy's explicit
+     implementation authorization. When Randy has authorized implementing
+     a routine change, or the content is already approved, don't ask for
+     approval again: finish the "Fast-execution editorial workflow". Ask
+     Randy before changing a fact that is genuinely and materially
+     disputed; major or higher-risk changes keep their separate approval
+     (see "Production safety").
 - **Production safety.** Don't modify, build, deploy or publish changes to
   the production site, and don't merge into `main` of RandyFEX/fexguy,
   without Randy's explicit authorization. When Randy requests
