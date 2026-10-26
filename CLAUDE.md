@@ -704,10 +704,16 @@ CLAUDE.md, October 2026, DL-0023; that file now refers here).
   5. Present: show the complete revised article when the assignment asks
      for it, say what changed and what's unresolved, and wait for Randy's
      editorial approval.
-- **Production safety.** Editorial approval and publication authorization
-  are separate decisions. Don't modify, build, deploy or publish changes to
+- **Production safety.** Don't modify, build, deploy or publish changes to
   the production site, and don't merge into `main` of RandyFEX/fexguy,
-  without Randy's explicit authorization. Work meant for
+  without Randy's explicit authorization. When Randy requests
+  implementation of a clearly scoped, routine website change, that request
+  authorizes the whole workflow through production verification (see
+  "Fast-execution editorial workflow"); required checks must pass before
+  merging. Migrations, architecture changes, substantial sitewide changes,
+  material changes to underwriting facts and other higher-risk work still
+  need separate production approval, and a request for only an audit,
+  proposal or review authorizes no edit, merge or deploy. Work meant for
   RandyFEX/fexguy-monitoring stays there unless separately authorized.
 - **Governing principle:** Claude investigates, verifies, challenges,
   recommends and implements; Randy makes the editorial decisions. Be a
@@ -747,7 +753,9 @@ take precedence over general examples.
   A). Any such change is named explicitly and needs Randy's approval.
 - **F. Exact approval.** Show complete before and after wording, preserve
   unrelated content verbatim, and get Randy's approval before editing.
-  Deployment needs separate authorization.
+  Deployment needs separate authorization, except for a clearly scoped
+  routine change Randy asked to have implemented, which covers the workflow
+  through production verification ("Fast-execution editorial workflow").
 - **G. Accuracy before SEO formulas.** Never distort insurance facts for
   keywords, readability scores, snippets or generic SEO advice.
 
@@ -797,9 +805,12 @@ scope protection wins.
   disputed; the requested outcome is ambiguous and a guess could be wrong;
   the work needs changes outside the authorized scope; required checks fail
   and can't be safely fixed within scope; or the change carries substantial
-  risk. Major architectural changes, migrations and broad sitewide changes
-  keep a separate approval checkpoint before production; ordinary article
-  corrections don't become major-change workflows.
+  risk. Major architectural changes, migrations, broad sitewide changes,
+  material changes to underwriting facts and other higher-risk work keep a
+  separate approval checkpoint before production; ordinary article
+  corrections don't become major-change workflows. Required checks must
+  pass before merging, and passing checks don't replace inspecting the
+  actual changes.
 - **No unnecessary reports or research.** No lengthy audit reports,
   repeated before-and-after documents or speculative improvement lists
   unless requested; no broad research when the facts and wording are
@@ -820,8 +831,10 @@ scope protection wins.
   locked: change only what was specifically approved, and give an exact
   scope-diff report with every implementation.
 - Editorial approval, feature-branch implementation and production
-  deployment are separate approvals (see "Editorial authority and
-  approvals" above).
+  deployment are separate approvals for drafting or rewriting a review and
+  for material changes to its underwriting facts (see "Editorial authority
+  and approvals" above). A clearly scoped routine correction Randy asks to
+  have implemented follows the "Fast-execution editorial workflow".
 - This file wins over the specification, and the specification over the
   procedure. Report conflicts to Randy; don't resolve them silently.
 
@@ -1220,7 +1233,9 @@ scope protection wins.
   levels. When a migrated heading's level is raised to repair the outline,
   add `as-hN` (global.css) so it keeps its original look.
 - Automated checks (axe-core) never prove conformance. Don't merge to main
-  on automated results alone.
+  on automated results alone: inspect the actual changes before merging,
+  also under the fast-execution workflow, and check changed templates,
+  components and layouts by hand.
 
 ## Prelaunch checklist (mandatory before the new site goes live)
 
