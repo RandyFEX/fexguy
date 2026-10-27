@@ -310,7 +310,7 @@ The no-questions shortcut
 <li><strong>Decline:</strong> If your build falls completely outside the insurer’s tolerance, or if your weight combines with serious health issues, the application can be declined. That doesn’t mean you’re out of options. It just means you need a company with broader charts or a simplified issue policy designed for seniors or higher-risk applicants.<br><br>Even slight differences in weight can result in hundreds of dollars of additional cost over the policy’s life. That’s why it’s critical to compare multiple companies instead of relying on a single quote engine that only assumes a Preferred rate.</li>
 </ol>
 
-<p>Independent brokers such as the Final Expense guy know which insurers allow wider build ranges and which ones tighten their charts for larger coverage amounts.</p>
+<p>Independent brokers such as Funeral Funds know which insurers allow wider build ranges and which ones tighten their charts for larger coverage amounts.</p>
 
 <p>They can often move someone from a Table 4 rating to a Standard rating just by choosing the right company.</p>
 

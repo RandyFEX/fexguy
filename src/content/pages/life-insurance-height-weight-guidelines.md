@@ -193,7 +193,7 @@ sidebar: true
 
 <p><strong>Does guaranteed issue life insurance eliminate the build chart and health questions, and what does this mean for cost?</strong> Guaranteed issue policies don’t have a build chart. They ask no health questions, require you to have a 2-year wait before your policy starts, and it will be much more expensive.</p>
 
-<p><strong>How can you lower your insurance rate if you have been</strong> overweight, but have had a gradual loss in weight? It’s best to have a broker, like the final Expense Guy, help you find coverage based on your current health situation.</p>
+<p><strong>How can you lower your insurance rate if you have been</strong> overweight, but have had a gradual loss in weight? It’s best to have a broker, like Funeral Funds, help you find coverage based on your current health situation.</p>
 
 <p><strong>How does BMI affect rates when companies also consider labs and other health factors?</strong> The higher your BMI, generally the higher your life insurance cost, but the insurance companies will also consider your prescription medications, lab samples, and other health factors.</p>
 

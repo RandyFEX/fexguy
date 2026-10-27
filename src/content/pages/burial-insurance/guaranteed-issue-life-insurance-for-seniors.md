@@ -133,7 +133,7 @@ sidebar: true
 
 <p>In reality, most seniors qualify for simplified-issue 1st-day coverage once their health issues are matched with the correct insurance company.</p>
 
-<p>Before buying a guaranteed issue, always ask for a policy review from the Final<br>Expense Guy of your health situation. Without it, you could end up paying the highest price for the smallest benefit.</p>
+<p>Before buying a guaranteed issue, always ask for a policy review from Funeral Funds of your health situation. Without it, you could end up paying the highest price for the smallest benefit.</p>
 
 <hr>
 
@@ -375,7 +375,7 @@ sidebar: true
 
 <p>Conditions such as diabetes, treated heart issues, high blood pressure, thyroid disorders, and joint replacements may still qualify for simplified-issue coverage with immediate benefits. Because this fact is rarely explained in advertising, many seniors buy guaranteed issue when better options exist.</p>
 
-<p>These misunderstandings occur because guaranteed-issue marketing focuses on approval rather than value. When buyers do not compare the contract details through the Final<br>Expense Guy, they miss the differences that determine what their families actually receive.</p>
+<p>These misunderstandings occur because guaranteed-issue marketing focuses on approval rather than value. When buyers do not compare the contract details through Funeral Funds, they miss the differences that determine what their families actually receive.</p>
 
 <hr>
 

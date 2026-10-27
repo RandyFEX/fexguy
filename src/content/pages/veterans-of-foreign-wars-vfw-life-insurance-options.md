@@ -151,7 +151,7 @@ sidebar: true
 
 <p>This misunderstanding leads many members to accept higher premiums or lower benefit amounts than necessary.</p>
 
-<p>Independent brokers like The Final Expense guy have access to multiple carriers and can compare rates from many different carriers, which affinity programs cannot do.</p>
+<p>Independent brokers like Funeral Funds have access to multiple carriers and can compare rates from many different carriers, which affinity programs cannot do.</p>
 
 <hr>
 

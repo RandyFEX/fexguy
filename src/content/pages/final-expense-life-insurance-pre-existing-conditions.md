@@ -130,7 +130,7 @@ You can see where your health fits before you apply.
 
 <p>Phased-in coverage is also an option for some people we help.</p>
 
-<p>If you don’t want to answer any health questions, you’ll have to accept <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue whole life insurance</a> with a mandatory 2-year waiting period. Just understand that most of the people I help at the Final Expense guy qualify for 1st-day coverage or benefits from us.</p>
+<p>If you don’t want to answer any health questions, you’ll have to accept <a href="/burial-insurance/guaranteed-issue-life-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">guaranteed issue whole life insurance</a> with a mandatory 2-year waiting period. Just understand that most of the people I help at Funeral Funds qualify for 1st-day coverage or benefits from us.</p>
 
 <p>We make sure you know exactly what you qualify for before you apply, so you don’t waste your time or get stuck with the wrong plan.</p>
 
