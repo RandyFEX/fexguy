@@ -25,7 +25,7 @@ export const absoluteUrl = (path: string): string => new URL(path, `${BASE}/`).t
 
 /** Funeral Funds, the public brand and publisher. */
 export function organizationEntity(): JsonLd {
-  const logo = absoluteUrl('/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png');
+  const logo = absoluteUrl(site.logo.src);
   return {
     '@type': 'Organization',
     '@id': IDS.organization,
@@ -33,7 +33,7 @@ export function organizationEntity(): JsonLd {
     alternateName: 'Final Expense Guy', // former name (2025-2026); the business began as Funeral Funds of America
     url: `${BASE}/`,
     telephone: '+1-888-862-9456',
-    logo: { '@type': 'ImageObject', '@id': IDS.logo, url: logo, contentUrl: logo, width: 1125, height: 1125, caption: 'Funeral Funds' },
+    logo: { '@type': 'ImageObject', '@id': IDS.logo, url: logo, contentUrl: logo, width: site.logo.width, height: site.logo.height, caption: 'Funeral Funds' },
     founder: { '@id': IDS.randy },
   };
 }

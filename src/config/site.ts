@@ -53,11 +53,13 @@ export const site: SiteConfig = {
   phoneDisplay: '888-862-9456',
   phoneE164: '+18888629456',
   email: '',
-  logo: { src: '/images/logo/final-expense-guy-logo.png', width: 2034, height: 250, alt: 'Final Expense Guy' },
+  logo: { src: '/images/logo/funeral-funds-logo.png', width: 1988, height: 413, alt: 'Funeral Funds' },
+  // FF favicon (scripts/build-brand-assets.mjs; /favicon.ico is built too).
   icons: [
-    { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-32x32.png`, sizes: '32x32' },
-    { rel: 'icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-192x192.png`, sizes: '192x192' },
-    { rel: 'apple-touch-icon', href: `${uploads}/2026/05/cropped-FEX-GUY-FAVICON-BLUE-WHITE-512-512-180x180.png` },
+    { rel: 'icon', href: '/images/favicon/funeral-funds-favicon-32.png', sizes: '32x32' },
+    { rel: 'icon', href: '/images/favicon/funeral-funds-favicon-192.png', sizes: '192x192' },
+    { rel: 'icon', href: '/images/favicon/funeral-funds-favicon.svg', sizes: 'any' },
+    { rel: 'apple-touch-icon', href: '/images/favicon/funeral-funds-favicon-180.png' },
   ],
   defaultOgImage: '',
   primaryNav: [
