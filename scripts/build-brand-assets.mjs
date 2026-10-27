@@ -7,8 +7,8 @@
 //   the structured-data logo) and -{400,800,1200,1600}.webp (header from
 //   40rem, landing pages). No AVIF: lossy AVIF shifts the green, and lossless
 //   WebP is already smaller than the old logo's AVIF files.
-// public/images/logo/funeral-funds-wordmark.svg  -> -{400,800}.webp (the
-//   name-only logo the header shows on phones, below 40rem)
+// public/images/logo/funeral-funds-wordmark.svg  -> -{400,800,1200}.webp (the
+//   name-only logo the header shows at every width)
 // public/images/favicon/funeral-funds-favicon.svg -> -32.png, -180.png (Apple
 //   touch icon), -192.png, -512.png and public/favicon.ico (16, 32, 48)
 // Lossless output keeps the green exact.
@@ -27,7 +27,7 @@ for (const w of [400, 800, 1200, 1600]) {
 
 const WORDMARK = 'public/images/logo/funeral-funds-wordmark';
 const wordmark = readFileSync(`${WORDMARK}.svg`);
-for (const w of [400, 800]) {
+for (const w of [400, 800, 1200]) {
   await sharp(wordmark, { density: 144 }).resize({ width: w }).webp({ lossless: true, effort: 6 }).toFile(`${WORDMARK}-${w}.webp`);
 }
 

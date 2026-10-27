@@ -8,12 +8,10 @@ import type { PagePhoneKey } from '@/config/phones';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
 
-// Sized copies of the logos (scripts/build-brand-assets.mjs, lossless WebP so
-// the green stays exactly #173F35). From 40rem the full two-line logo
-// (site.logo, 44px tall, so the tagline stays legible); on phones the
-// name-only wordmark (36px tall, narrower beside the Menu button). The
-// <picture> media switch downloads only the one that is shown.
-const full = '/images/logo/funeral-funds-logo';
+// The header shows the name-only Funeral Funds wordmark at every width (Randy,
+// V5.2): sized copies from scripts/build-brand-assets.mjs, lossless WebP so
+// the green stays exactly #173F35. The full two-line logo (site.logo) is
+// still used by structured data and the landing pages.
 const wordmark = '/images/logo/funeral-funds-wordmark';
 const WORDMARK = { width: 1987, height: 285 };
 const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${w}.webp ${w}w`).join(', ');
@@ -23,17 +21,10 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
   <div class="container site-header__inner">
     <a href="/" class="site-header__brand" aria-label={`${site.name} home`}>
       <picture>
-        <source
-          media="(min-width: 40rem)"
-          srcset={srcset(full, [400, 800, 1200])}
-          sizes="202px"
-          width={site.logo.width}
-          height={site.logo.height}
-        />
         <img
-          src={`${wordmark}-400.webp`}
-          srcset={srcset(wordmark, [400, 800])}
-          sizes="251px"
+          src={`${wordmark}-800.webp`}
+          srcset={srcset(wordmark, [400, 800, 1200])}
+          sizes="307px"
           alt={site.logo.alt}
           width={WORDMARK.width}
           height={WORDMARK.height}
@@ -59,11 +50,10 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
     min-height: 4rem;
     padding-block: var(--space-2);
   }
-  /* The logo is sized by width (the wordmark 36px tall on phones; the full
-     logo 44px tall from 40rem, inside the unchanged header height) and may
-     shrink beside the Menu button on narrow phones; height follows the
-     width so the logo keeps its proportions (wordmark 1987 x 285, full logo
-     1986 x 433) instead of being squeezed. */
+  /* The wordmark is sized by width: 44px tall (307px wide) wherever it fits,
+     the largest that leaves breathing room inside the unchanged header
+     height. It shrinks beside the Menu button on narrow phones; height
+     follows the width so it keeps its proportions (1987 x 285). */
   .site-header__brand {
     display: inline-flex;
     align-items: center;
@@ -75,13 +65,8 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
     min-width: 0;
   }
   .site-header__brand img {
-    width: calc(2.25rem * 1987 / 285);
+    width: calc(2.75rem * 1987 / 285);
     max-width: 100%;
     height: auto;
-  }
-  @media (min-width: 40rem) {
-    .site-header__brand img {
-      width: calc(2.75rem * 1986 / 433);
-    }
   }
 </style>
