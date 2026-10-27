@@ -1,6 +1,6 @@
 ---
 title: "Burial Insurance For Insulin Dependent Diabetics [LOWEST RATES]"
-description: "We offer life insurance, final expense, or burial insurance for insulin-dependent diabetics is available with no medical questions asked."
+description: "Life insurance, final expense, or burial insurance for insulin-dependent diabetics is available with no medical questions asked."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance/insulin-diabetics/"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance For Insulin Dependent Diabetics [LOWEST RATES]"},{"property":"og:description","content":"We offer life insurance, final expense, or burial insurance for insulin-dependent diabetics is available with no medical questions asked."},{"property":"og:url","content":"https://fexguy.com/burial-insurance/insulin-diabetics/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-05-29T11:42:09-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance For Insulin Dependent Diabetics [LOWEST RATES]"},{"name":"twitter:description","content":"We offer life insurance, final expense, or burial insurance for insulin-dependent diabetics is available with no medical questions asked."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"9 minutes"}]

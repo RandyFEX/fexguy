@@ -32,7 +32,7 @@ sidebar: true
 
 <h2><strong>What final expense insurance costs and why prices vary</strong></h2>
 
-<p>Final expense insurance costs depend on age, health, tobacco use, gender, and how each insurance company prices risk.</p>
+<p><a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">Final expense insurance costs</a> depend on age, health, tobacco use, gender, and how each insurance company prices risk.</p>
 
 <p>Younger applicants pay less because the insurer's risk is lower, and the cost rises steadily each year someone waits to apply, which is why early planning always leads to stronger pricing.</p>
 
@@ -115,7 +115,7 @@ The postcard that promised “Immediate Protection”
 
 <p>The right coverage amount comes from adding up funeral services, cemetery costs, and common extra expenses families forget.</p>
 
-<p>The National Funeral Directors Association reports that the median cost of a funeral with burial is $8,300, and the median cost of a funeral with cremation is $6,280.</p>
+<p>The National Funeral Directors Association reports that the <a href="/how-much-does-a-funeral-cost/" target="_blank" rel="noreferrer noopener">median cost of a funeral</a> with burial is $8,300, and the median cost of a funeral with cremation is $6,280.</p>
 
 <p>Burial requires cemetery charges, which are often billed separately.</p>
 

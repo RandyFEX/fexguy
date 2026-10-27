@@ -132,7 +132,7 @@ sidebar: true
 
 <p>The policy will be in force if your premiums are paid on time. A burial insurance policy gives you the coverage you need for your entire lifetime.</p>
 
-<p>Burial insurance for seniors can be an excellent way to manage your final expense, particularly if you do not own a life insurance policy. Setting up a burial policy allows you to make affordable payments over time. It also gives your family the financial means to pay a medical bill or remaining debts.</p>
+<p><a href="/burial-insurance/for-seniors/" target="_blank" rel="noreferrer noopener">Burial insurance for seniors</a> can be an excellent way to manage your final expense, particularly if you do not own a life insurance policy. Setting up a burial policy allows you to make affordable payments over time. It also gives your family the financial means to pay a medical bill or remaining debts.</p>
 
 <h2 id="features-of-burial-insurance"><strong>Features of burial insurance</strong></h2>
 

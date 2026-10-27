@@ -70,7 +70,6 @@ export function randyEntity(): JsonLd {
 // - the WordPress author "Final Expense Guy" (/author/rvanderv8/, a 404) is
 //   dropped and every reference to it points to Randy's canonical Person,
 //   which is added to the graph when it isn't already there;
-// - a Person named Randy VanderVaate without an @id gets Randy's @id;
 // - an Organization named "FEX Guy" without an @id becomes a reference to
 //   the canonical Organization;
 // - a stray quote at the end of an image URL is removed;
@@ -111,10 +110,6 @@ export function normalizeMigratedJsonLd(block: string): string {
     }
     const n: JsonLd = {};
     for (const [k, v] of Object.entries(o)) n[k] = fix(v);
-    if (n['@type'] === 'Person' && !n['@id'] && n.name === 'Randy VanderVaate') {
-      n['@id'] = IDS.randy;
-      changed = true;
-    }
     if (typeof n.image === 'string' && n.image.endsWith('"')) {
       n.image = n.image.replace(/"+$/, '');
       changed = true;

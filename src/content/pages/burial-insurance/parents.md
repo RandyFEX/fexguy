@@ -51,7 +51,7 @@ sidebar: true
 
 <p>Funerals are expensive, and finding a way to pay for the funeral while grieving is an additional emotional and financial burden.</p>
 
-<p>Burial insurance for seniors or final expense insurance can pay for the funeral, burial, and final expenses. A funeral can cost over $10,000 today; this includes burial, memorial service costs, and plot. A burial life insurance plan for your parents can help ease this financial burden.</p>
+<p><a href="/burial-insurance/for-seniors/" target="_blank" rel="noreferrer noopener">Burial insurance for seniors</a> or final expense insurance can pay for the funeral, burial, and final expenses. A funeral can cost over $10,000 today; this includes burial, memorial service costs, and plot. A burial life insurance plan for your parents can help ease this financial burden.</p>
 
 <p>If you purchase burial insurance for your parents, you can also pay off any credit card bills or unpaid debts.</p>
 
