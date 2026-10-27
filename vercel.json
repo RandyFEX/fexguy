@@ -1555,6 +1555,176 @@
       "source": "/burial-insurance/terminal-illness/",
       "destination": "/burial-insurance/terminally-ill-patients/",
       "statusCode": 301
+    },
+    {
+      "source": "/aig-burial-insurance-review/",
+      "destination": "/aig-life-insurance-company-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/american-legion-life-insurance-options/",
+      "destination": "/american-legion-life-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/americo-quit-smoking-advantage/",
+      "destination": "/americo-life-insurance-quit-smoking-advantage/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-arthritis-2/",
+      "destination": "/burial-insurance/burial-insurance-arthritis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-arthritis-2-2/",
+      "destination": "/burial-insurance/burial-insurance-arthritis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-arthritis-2-2-2/",
+      "destination": "/burial-insurance/burial-insurance-arthritis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-dui-dwi-history/",
+      "destination": "/burial-insurance/dui-dwi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-for-disabled-persons/",
+      "destination": "/burial-insurance/disabled-persons/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-if-you-need-help-with-toileting-activities-of-daily-living/",
+      "destination": "/burial-insurance/toileting-activities-of-daily-living-adl/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-terminally-ill-people/",
+      "destination": "/burial-insurance/terminally-ill-patients/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-a-brain-tumor/",
+      "destination": "/burial-insurance/brain-tumor/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-dementia/",
+      "destination": "/burial-insurance/dementia-alzheimers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-diabetic-coma/",
+      "destination": "/burial-insurance/diabetic-coma/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-heart-bypass-surgery/",
+      "destination": "/burial-insurance/heart-bypass-surgery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-paralysis/",
+      "destination": "/burial-insurance/paralysis-paralyzed/",
+      "statusCode": 301
+    },
+    {
+      "source": "/colonial-penn-885-life-insurance-scam-revealed/",
+      "destination": "/colonial-penn-burial-insurance-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-life-insurance-with-pre-existing-conditions-2/",
+      "destination": "/final-expense-life-insurance-pre-existing-conditions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/https-fexguy-com-big-lou-term-life-insurance-review/",
+      "destination": "/big-lou-term-life-insurance-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/iul-for-teachers-indexed-universal-life/",
+      "destination": "/iul-book/teachers-indexed-universal-life-iul/",
+      "statusCode": 301
+    },
+    {
+      "source": "/iul-police-officers-iul-firefighters/",
+      "destination": "/iul-book/iul-police-officers-firefighters/",
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-of-omaha-whole-life-insurance-and-burial-insurance/",
+      "destination": "/mutual-of-omaha-burial-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/purchasing-burial-insurance-disability/",
+      "destination": "/burial-insurance/disability/",
+      "statusCode": 301
+    },
+    {
+      "source": "/the-truth-about-senior-legacy-life-insurance/",
+      "destination": "/senior-legacy-life-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-heart-surgery/",
+      "destination": "/burial-insurance/heart-surgery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-online/",
+      "destination": "/burial-insurance/online/",
+      "statusCode": 301
+    },
+    {
+      "source": "/finding-burial-insurance-near-me/",
+      "destination": "/burial-insurance/burial-insurance-near-me/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-hepatitis-c-2/",
+      "destination": "/burial-insurance/hepatitis-c/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-heart-failure/",
+      "destination": "/burial-insurance/heart-failure/",
+      "statusCode": 301
+    },
+    {
+      "source": "/affordable-burial-insurance-near-me/",
+      "destination": "/burial-insurance/burial-insurance-near-me/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-fatty-liver-disease/",
+      "destination": "/burial-insurance/fatty-liver-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-with-graves-disease/",
+      "destination": "/burial-insurance/graves-disease/",
+      "statusCode": 301
+    },
+    {
+      "source": "/affordable-burial-insurance-with-diverticulitis/",
+      "destination": "/burial-insurance/burial-insurance-with-diverticulitis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-blood-clot/",
+      "destination": "/burial-insurance/blood-clot/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-for-native-americans/",
+      "destination": "/burial-insurance/native-americans/",
+      "statusCode": 301
     }
   ],
   "headers": [

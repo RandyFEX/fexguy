@@ -1,9 +1,9 @@
 ---
-title: "Life Insurance Height and Weight Guidelines - Final Expense Guy"
+title: "Life Insurance Height and Weight Guidelines - Funeral Funds"
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/life-insurance-height-weight-guidelines/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Life Insurance Height and Weight Guidelines - Final Expense Guy"},{"property":"og:description","content":"Here’s the Bottom Line:• Your height and weight directly affect your life insurance rates• Higher BMI usually means higher premiums or a worse rate class• Each company uses different charts, so results can vary widely• Being slightly overweight can still qualify for good coverage• Very high or low weight can limit options or increase costs…"},{"property":"og:url","content":"https://fexguy.com/life-insurance-height-weight-guidelines/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-23T18:54:18-05:00"},{"property":"og:image","content":"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"property":"og:image:secure_url","content":"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"property":"og:image:alt","content":"Life Insurance Height and Weight Guidelines"},{"property":"article:published_time","content":"2026-04-23T18:54:12-05:00"},{"property":"article:modified_time","content":"2026-04-23T18:54:18-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Life Insurance Height and Weight Guidelines - Final Expense Guy"},{"name":"twitter:description","content":"Here’s the Bottom Line:• Your height and weight directly affect your life insurance rates• Higher BMI usually means higher premiums or a worse rate class• Each company uses different charts, so results can vary widely• Being slightly overweight can still qualify for good coverage• Very high or low weight can limit options or increase costs…"},{"name":"twitter:image","content":"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"11 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg\",\"url\":\"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg\",\"width\":\"2048\",\"height\":\"1152\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/\",\"name\":\"Life Insurance Height and Weight Guidelines\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#webpage\",\"url\":\"https://fexguy.com/life-insurance-height-weight-guidelines/\",\"name\":\"Life Insurance Height and Weight Guidelines - Final Expense Guy\",\"datePublished\":\"2026-04-23T18:54:12-05:00\",\"dateModified\":\"2026-04-23T18:54:18-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Life Insurance Height and Weight Guidelines - Final Expense Guy\",\"datePublished\":\"2026-04-23T18:54:12-05:00\",\"dateModified\":\"2026-04-23T18:54:18-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"Here\\u2019s the Bottom Line:\\u2022 Your height and weight directly affect your life insurance rates\\u2022 Higher BMI usually means higher premiums or a worse rate class\\u2022 Each company uses different charts, so results can vary widely\\u2022 Being slightly overweight can still qualify for good coverage\\u2022 Very high or low weight can limit options or increase costs\",\"name\":\"Life Insurance Height and Weight Guidelines - Final Expense Guy\",\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#webpage\"},\"image\":{\"@id\":\"https://fexguy.com/images/articles/life-insurance-height-weight-guidelines.jpg\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/life-insurance-height-weight-guidelines/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Life Insurance Height and Weight Guidelines - Funeral Funds"},{"property":"og:description","content":"Here’s the Bottom Line:• Your height and weight directly affect your life insurance rates• Higher BMI usually means higher premiums or a worse rate class• Each company uses different charts, so results can vary widely• Being slightly overweight can still qualify for good coverage• Very high or low weight can limit options or increase costs…"},{"property":"og:url","content":"https://funeralfunds.com/life-insurance-height-weight-guidelines/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-23T18:54:18-05:00"},{"property":"og:image","content":"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"property":"og:image:secure_url","content":"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"property":"og:image:alt","content":"Life Insurance Height and Weight Guidelines"},{"property":"article:published_time","content":"2026-04-23T18:54:12-05:00"},{"property":"article:modified_time","content":"2026-04-23T18:54:18-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Life Insurance Height and Weight Guidelines - Funeral Funds"},{"name":"twitter:description","content":"Here’s the Bottom Line:• Your height and weight directly affect your life insurance rates• Higher BMI usually means higher premiums or a worse rate class• Each company uses different charts, so results can vary widely• Being slightly overweight can still qualify for good coverage• Very high or low weight can limit options or increase costs…"},{"name":"twitter:image","content":"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Funeral Funds"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"11 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://funeralfunds.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg\",\"url\":\"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg\",\"width\":\"2048\",\"height\":\"1152\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/\",\"name\":\"Life Insurance Height and Weight Guidelines\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#webpage\",\"url\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/\",\"name\":\"Life Insurance Height and Weight Guidelines - Funeral Funds\",\"datePublished\":\"2026-04-23T18:54:12-05:00\",\"dateModified\":\"2026-04-23T18:54:18-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Life Insurance Height and Weight Guidelines - Funeral Funds\",\"datePublished\":\"2026-04-23T18:54:12-05:00\",\"dateModified\":\"2026-04-23T18:54:18-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"description\":\"Here\\u2019s the Bottom Line:\\u2022 Your height and weight directly affect your life insurance rates\\u2022 Higher BMI usually means higher premiums or a worse rate class\\u2022 Each company uses different charts, so results can vary widely\\u2022 Being slightly overweight can still qualify for good coverage\\u2022 Very high or low weight can limit options or increase costs\",\"name\":\"Life Insurance Height and Weight Guidelines - Funeral Funds\",\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#webpage\"},\"image\":{\"@id\":\"https://funeralfunds.com/images/articles/life-insurance-height-weight-guidelines.jpg\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/life-insurance-height-weight-guidelines/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -16,7 +16,7 @@ sidebar: true
 
 <p>Written by <a rel="noreferrer noopener" href="/randy-vandervaate/" target="_blank">Randy VanderVaate</a></p>
 
-<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Final Expense Guy</p>
+<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Funeral Funds</p>
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
@@ -36,7 +36,7 @@ sidebar: true
 <li>Some life insurance companies are stricter than others, and some companies will allow a wider margin to older applicants or those with good health metrics in other areas, such as cholesterol or blood pressure.</li>
 </ul>
 
-<p><strong>Bonus: </strong>This often seems complicated because no single chart is used for all insurance companies. Each insurance company has its own version (view some examples at the end of this article). The Final Expense Guy can get you set up with the best company based on your height and weight.</p>
+<p><strong>Bonus: </strong>This often seems complicated because no single chart is used for all insurance companies. Each insurance company has its own version (view some examples at the end of this article). Funeral Funds can get you set up with the best company based on your height and weight.</p>
 
 <figure><picture><source type="image/avif" srcset="/images/articles/life-insurance-height-weight-guidelines-800.avif 800w, /images/articles/life-insurance-height-weight-guidelines-1200.avif 1200w, /images/articles/life-insurance-height-weight-guidelines-1600.avif 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><source type="image/webp" srcset="/images/articles/life-insurance-height-weight-guidelines-800.webp 800w, /images/articles/life-insurance-height-weight-guidelines-1200.webp 1200w, /images/articles/life-insurance-height-weight-guidelines-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)"><img decoding="async" loading="lazy" alt="" width="2048" height="1152" src="/images/articles/life-insurance-height-weight-guidelines.jpg"></picture></figure>
 
@@ -66,7 +66,7 @@ sidebar: true
 
 <p><strong>Underwriting Policies Differ Tremendously</strong><br>Some companies have lenient guidelines, but other companies have guidelines and reject or heavily rate if the applicant is over or under specific weight restrictions. Some people are shocked by their lab results that classify them as “high risk.”</p>
 
-<p><strong>Bonus:&#160;</strong>When you work with a broker like the Final Expense Guy, you set yourself up for the best rates and the greatest amount of coverage.</p>
+<p><strong>Bonus:&#160;</strong>When you work with a broker like Funeral Funds, you set yourself up for the best rates and the greatest amount of coverage.</p>
 
 <hr>
 
@@ -80,7 +80,7 @@ sidebar: true
 
 <p>More companies are now offering “simplified issue” or “no medical exam” guidelines, which often do not include strict build charts or provide more flexibility (at a higher price or other qualifications). Many insurance applicants prefer these options, especially in situations where build charts result in policies that are too costly or would result in a decline.</p>
 
-<p><strong>Bonus: </strong>There are options for almost every height and weight. When you check with the Final Expense Guy, he’ll make sure you get the best deal.</p>
+<p><strong>Bonus: </strong>There are options for almost every height and weight. When you check with Funeral Funds, he’ll make sure you get the best deal.</p>
 
 <hr>
 
@@ -98,7 +98,7 @@ sidebar: true
 
 <p>As an extreme example, a weight lifter or athlete could be rated in a lower class for having more muscle.</p>
 
-<p><strong>Bonus: </strong>If you are underweight or overweight, you need a broker like the Final Expense Guy who will shop your application with many different insurance companies so you can get the lowesnt rate and best coverage.</p>
+<p><strong>Bonus: </strong>If you are underweight or overweight, you need a broker like Funeral Funds who will shop your application with many different insurance companies so you can get the lowesnt rate and best coverage.</p>
 
 <hr>
 
@@ -110,7 +110,7 @@ sidebar: true
 
 <p>Insurance companies are also adapting and using alternative criteria, such as Body Mass Index (BMI), waist circumference, or laboratory data, instead of relying solely on weights measured on a scale.</p>
 
-<p><strong>Bonus: </strong>Some of these options are more appropriate than others for people whose height or weight would otherwise exclude them from coverage. It’s to your advantage to let the Final Expense Guy do the shopping for you.</p>
+<p><strong>Bonus: </strong>Some of these options are more appropriate than others for people whose height or weight would otherwise exclude them from coverage. It’s to your advantage to let Funeral Funds do the shopping for you.</p>
 
 <hr>
 
@@ -122,7 +122,7 @@ sidebar: true
 
 <p><strong>Wait And Stabilize Your Weight</strong><br>Sometimes the underwriters want your weight to be stable for a few months. If you’ve recently lost weight, your medical history still counts. Sometimes waiting until your weight stabilizes can be beneficial before you apply.</p>
 
-<p><strong>Consider More Than One Insurance Company</strong><br>Charts vary greatly in detail between carriers. Some are more forgiving. The Final Expense Guy can direct you to more forgiving or more favorable build charts, which can lead to better rates.</p>
+<p><strong>Consider More Than One Insurance Company</strong><br>Charts vary greatly in detail between carriers. Some are more forgiving. Funeral Funds can direct you to more forgiving or more favorable build charts, which can lead to better rates.</p>
 
 <p><strong>Consider Final Expense or Burial Insurance</strong><br>These types of policies often have less strict build charts or may not have them at all.</p>
 
@@ -130,9 +130,9 @@ sidebar: true
 
 <p><strong>Fully Disclose Your Health History</strong><br>Always be honest and upfront on your application. The underwriters will check your records for health or medical impairments. If they find out you have omitted specific details, it’s not going to benefit your application for coverage.</p>
 
-<p><strong>Seek Out Expert Or Broker Help</strong><br>Any broker or agent who knows the insurance market can get you set up with a company with more forgiving build charts or better underwriting. The Final Expense Guy is an example of someone who can help anyone with weight/build challenges find better rates and competent help.</p>
+<p><strong>Seek Out Expert Or Broker Help</strong><br>Any broker or agent who knows the insurance market can get you set up with a company with more forgiving build charts or better underwriting. Funeral Funds is an example of someone who can help anyone with weight/build challenges find better rates and competent help.</p>
 
-<p><strong>Bonus: </strong>You don’t have to decide on this today, but the Final Expense Guy recommends you at least look into your best options, and then decide what to do from there.</p>
+<p><strong>Bonus: </strong>You don’t have to decide on this today, but Funeral Funds recommends you at least look into your best options, and then decide what to do from there.</p>
 
 <hr>
 
@@ -147,11 +147,11 @@ sidebar: true
 <li>Also, be aware that many people put on weight after quitting smoking, so you may be better off applying at smoking rates rather than overweight rates.</li>
 </ul>
 
-<h2 id="h-why-the-final-expense-guy"><strong>Why the Final Expense Guy</strong></h2>
+<h2 id="h-why-the-final-expense-guy"><strong>Why Funeral Funds</strong></h2>
 
-<p>The Final Expense Guy shops multiple carriers to find the best match for height, weight, and general health.</p>
+<p>Funeral Funds shops multiple carriers to find the best match for height, weight, and general health.</p>
 
-<p>Instead of being punished by a chart they never saw, people can “work the system” and get the best company at he best rates through the Final Expense Guy.</p>
+<p>Instead of being punished by a chart they never saw, people can “work the system” and get the best company at he best rates through Funeral Funds.</p>
 
 <hr>
 
@@ -159,7 +159,7 @@ sidebar: true
 
 <p>Weigh charts are essential underwriting tools for the life insurance industry. You may feel they are unfair, but with the right company, you can find the best possible coverage.</p>
 
-<p>If you want competent help and honest answers, speak to the Final Expense Guy.</p>
+<p>If you want competent help and honest answers, speak to Funeral Funds.</p>
 
 <p>He can share options for insurance coverage if you are committed to finding the best life insurance for your family.</p>
 
@@ -199,11 +199,11 @@ sidebar: true
 
 <p><strong>Show weight differences by insurance companies for the same height, 5’8″, and what it can mean for  200 pounds versus 190 pounds.</strong> – If you are 5’8″, company A may permit a weight of 200 pounds, while company B may put that limit at 190.</p>
 
-<h2 class="as-h5">About Final Expense Guy</h2>
+<h2 class="as-h5">About Funeral Funds</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.funeralfunds.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h2 class="as-h5">Keep reading</h2>
 

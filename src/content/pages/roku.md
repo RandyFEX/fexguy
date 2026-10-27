@@ -1,12 +1,12 @@
 ---
-title: "Welcome, Roku Viewers | Final Expense Guy"
+title: "Welcome, Roku Viewers | Funeral Funds"
 description: "Saw Randy VanderVaate, the Final Expense Guy, on Roku? Call 888-656-4648 or request a call back for a free, friendly, no-pressure conversation."
 robots: "noindex, follow"
 canonical: "/roku/"
 sitemap: false
 search: false
 preFooter: false
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"website"},{"property":"og:title","content":"Welcome, Roku Viewers | Final Expense Guy"},{"property":"og:description","content":"Saw Randy VanderVaate, the Final Expense Guy, on Roku? Call 888-656-4648 or request a call back for a free, friendly, no-pressure conversation."},{"property":"og:url","content":"https://fexguy.com/roku/"},{"property":"og:site_name","content":"Final Expense Guy"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Welcome, Roku Viewers | Final Expense Guy"},{"name":"twitter:description","content":"Saw Randy VanderVaate, the Final Expense Guy, on Roku? Call 888-656-4648 or request a call back for a free, friendly, no-pressure conversation."}]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"website"},{"property":"og:title","content":"Welcome, Roku Viewers | Funeral Funds"},{"property":"og:description","content":"Saw Randy VanderVaate, the Final Expense Guy, on Roku? Call 888-656-4648 or request a call back for a free, friendly, no-pressure conversation."},{"property":"og:url","content":"https://funeralfunds.com/roku/"},{"property":"og:site_name","content":"Funeral Funds"},{"name":"twitter:card","content":"summary"},{"name":"twitter:title","content":"Welcome, Roku Viewers | Funeral Funds"},{"name":"twitter:description","content":"Saw Randy VanderVaate, the Final Expense Guy, on Roku? Call 888-656-4648 or request a call back for a free, friendly, no-pressure conversation."}]
 source: "new"
 phone: "ctv"
 ---
@@ -20,7 +20,7 @@ phone: "ctv"
 
 <div class="roku__agent">
 <picture><source type="image/avif" srcset="/images/randy/randy-vandervaate-240.avif"><source type="image/webp" srcset="/images/randy/randy-vandervaate-240.webp"><img src="/images/randy/randy-vandervaate-240.jpg" alt="Randy VanderVaate, the Final Expense Guy" width="120" height="120" decoding="async"></picture>
-<p class="roku__agent-id"><strong>Final Expense Guy | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
+<p class="roku__agent-id"><strong>Funeral Funds | Randy VanderVaate</strong><br>Independent Life Insurance Agent</p>
 </div>
 
 <p><strong>My job isn’t to talk you into buying insurance. My job is to help you make an informed decision, even if that decision is no.</strong></p>

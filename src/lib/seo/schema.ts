@@ -23,27 +23,27 @@ export const IDS = {
 
 export const absoluteUrl = (path: string): string => new URL(path, `${BASE}/`).toString();
 
-/** Final Expense Guy, the public brand and publisher. */
+/** Funeral Funds, the public brand and publisher. */
 export function organizationEntity(): JsonLd {
   const logo = absoluteUrl('/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png');
   return {
     '@type': 'Organization',
     '@id': IDS.organization,
-    name: 'Final Expense Guy',
-    alternateName: 'Funeral Funds', // historical name (Final Expense Guy was Funeral Funds of America)
+    name: 'Funeral Funds',
+    alternateName: 'Final Expense Guy', // former name (2025-2026); the business began as Funeral Funds of America
     url: `${BASE}/`,
     telephone: '+1-888-862-9456',
-    logo: { '@type': 'ImageObject', '@id': IDS.logo, url: logo, contentUrl: logo, width: 1125, height: 1125, caption: 'Final Expense Guy' },
+    logo: { '@type': 'ImageObject', '@id': IDS.logo, url: logo, contentUrl: logo, width: 1125, height: 1125, caption: 'Funeral Funds' },
     founder: { '@id': IDS.randy },
   };
 }
 
-/** FEXGuy.com. */
+/** FuneralFunds.com. */
 export function websiteEntity(): JsonLd {
   return {
     '@type': 'WebSite',
     '@id': IDS.website,
-    name: 'Final Expense Guy',
+    name: 'Funeral Funds',
     url: `${BASE}/`,
     publisher: { '@id': IDS.organization },
   };
@@ -70,7 +70,8 @@ export function randyEntity(): JsonLd {
 // - the WordPress author "Final Expense Guy" (/author/rvanderv8/, a 404) is
 //   dropped and every reference to it points to Randy's canonical Person,
 //   which is added to the graph when it isn't already there;
-// - an Organization named "FEX Guy" without an @id becomes a reference to
+// - an Organization named "FEX Guy" ("Funeral Funds" since the domain
+//   migration) without an @id becomes a reference to
 //   the canonical Organization;
 // - a stray quote at the end of an image URL is removed;
 // - a `knowsAbout` written as a numbered object becomes the plain list of
@@ -104,7 +105,7 @@ export function normalizeMigratedJsonLd(block: string): string {
       needsRandy = true;
       return { '@id': IDS.randy };
     }
-    if (o['@type'] === 'Organization' && !o['@id'] && o.name === 'FEX Guy') {
+    if (o['@type'] === 'Organization' && !o['@id'] && (o.name === 'FEX Guy' || o.name === 'Funeral Funds')) {
       changed = true;
       return { '@id': IDS.organization };
     }

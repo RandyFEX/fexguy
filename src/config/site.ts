@@ -45,10 +45,10 @@ export interface SiteConfig {
 const uploads = '/wp-content/uploads';
 
 export const site: SiteConfig = {
-  url: 'https://fexguy.com',
-  name: 'Final Expense Guy',
+  url: 'https://funeralfunds.com',
+  name: 'Funeral Funds',
   description: '',
-  organizationName: 'Final Expense Guy',
+  organizationName: 'Funeral Funds',
   locale: 'en_US',
   phoneDisplay: '888-862-9456',
   phoneE164: '+18888629456',
@@ -87,12 +87,12 @@ export const site: SiteConfig = {
     // old Funeral Funds profiles were removed and not replaced.
     social: [],
     notes: [
-      '<small>Final Expense Guy or fexguy.com is an independently operated life insurance agency licensed in most states. We specialize in locating 1st-day coverage insurance for our clients. Product and policy availability, features, and benefits may vary by state and health. </small>',
-      '<small>We are not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any companies mentioned within Final Expense Guy or fexguy.com. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.</small>',
-      '<small>All company names and products are the registered trademarks of their original owners and Final Expense Guy or fexguy.com declares no affiliation, sponsorship, nor any partnerships with any registered trademarks unless otherwise stated.</small>',
+      '<small>Funeral Funds or funeralfunds.com is an independently operated life insurance agency licensed in most states. We specialize in locating 1st-day coverage insurance for our clients. Product and policy availability, features, and benefits may vary by state and health. </small>',
+      '<small>We are not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any companies mentioned within Funeral Funds or funeralfunds.com. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.</small>',
+      '<small>All company names and products are the registered trademarks of their original owners and Funeral Funds or funeralfunds.com declares no affiliation, sponsorship, nor any partnerships with any registered trademarks unless otherwise stated.</small>',
       'The content on this website is for general informational and educational purposes only and should not be construed as professional advice. We make no warranties or guarantees regarding the accuracy, completeness, or currency of the information provided. For guidance specific to your situation, please call us directly at 888-862-9456.',
-      '<small>No portion of Final Expense Guy or fexguy.com may be copied, published, distributed, or used in any manner for any purpose without prior written authorization of Final Expense Guy or www.fexguy.com.</small>',
-      '<small>Copyright © 2026 Final Expense Guy or fexguy.com – All Rights Reserved</small>',
+      '<small>No portion of Funeral Funds or funeralfunds.com may be copied, published, distributed, or used in any manner for any purpose without prior written authorization of Funeral Funds or www.funeralfunds.com.</small>',
+      '<small>Copyright © 2026 Funeral Funds or funeralfunds.com – All Rights Reserved</small>',
     ],
   },
   cta: { heading: '', text: '' },

@@ -3,8 +3,8 @@ title: "Burial Insurance with Substance or Drug Abuse - [Save Money Now]"
 description: "Getting approved for burial life insurance with substance abuse can be challenging, especially if you've been drug dependent..."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance-substance-abuse-drug-abuse/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance with Substance or Drug Abuse - [Save Money Now]"},{"property":"og:description","content":"Getting approved for burial life insurance with substance abuse can be challenging, especially if you've been drug dependent..."},{"property":"og:url","content":"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-17T22:41:56-05:00"},{"property":"article:published_time","content":"2026-04-17T22:40:51-05:00"},{"property":"article:modified_time","content":"2026-04-17T22:41:56-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance with Substance or Drug Abuse - [Save Money Now]"},{"name":"twitter:description","content":"Getting approved for burial life insurance with substance abuse can be challenging, especially if you've been drug dependent..."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"21 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/\",\"name\":\"Burial Insurance With Substance Abuse\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#webpage\",\"url\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/\",\"name\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"datePublished\":\"2026-04-17T22:40:51-05:00\",\"dateModified\":\"2026-04-17T22:41:56-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"headline\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"description\":\"Getting approved for burial life insurance with substance abuse can be challenging, especially if you&#039;ve been drug dependent...\",\"datePublished\":\"2026-04-17T22:40:51-05:00\",\"dateModified\":\"2026-04-17T22:41:56-05:00\",\"keywords\":\"burial insurance with substance abuse\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"@type\":\"Article\",\"name\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#schema-744749\",\"isPartOf\":{\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#webpage\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/burial-insurance-substance-abuse-drug-abuse/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance with Substance or Drug Abuse - [Save Money Now]"},{"property":"og:description","content":"Getting approved for burial life insurance with substance abuse can be challenging, especially if you've been drug dependent..."},{"property":"og:url","content":"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-17T22:41:56-05:00"},{"property":"article:published_time","content":"2026-04-17T22:40:51-05:00"},{"property":"article:modified_time","content":"2026-04-17T22:41:56-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance with Substance or Drug Abuse - [Save Money Now]"},{"name":"twitter:description","content":"Getting approved for burial life insurance with substance abuse can be challenging, especially if you've been drug dependent..."},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Funeral Funds"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"21 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://funeralfunds.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/\",\"name\":\"Burial Insurance With Substance Abuse\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#webpage\",\"url\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/\",\"name\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"datePublished\":\"2026-04-17T22:40:51-05:00\",\"dateModified\":\"2026-04-17T22:41:56-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"headline\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"description\":\"Getting approved for burial life insurance with substance abuse can be challenging, especially if you&#039;ve been drug dependent...\",\"datePublished\":\"2026-04-17T22:40:51-05:00\",\"dateModified\":\"2026-04-17T22:41:56-05:00\",\"keywords\":\"burial insurance with substance abuse\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"@type\":\"Article\",\"name\":\"Burial Insurance with Substance or Drug Abuse - [Save Money Now]\",\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#schema-744749\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#webpage\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/burial-insurance-substance-abuse-drug-abuse/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Written by <a rel="noreferrer noopener" href="/randy-vandervaate/" target="_blank">Randy VanderVaate</a></p>
 
-<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Final Expense Guy</p>
+<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Funeral Funds</p>
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
@@ -53,7 +53,7 @@ sidebar: true
 <li><a href="#getting-approved-for-burial-insurance">Getting Approved For Burial Insurance</a></li>
 <li><a href="#benefits-of-burial-&-funeral-insurance">Benefits Of Burial &amp; Funeral Insurance</a></li>
 <li><a href="#uses-of-final-expense-insurance">Uses Of Final Expense Insurance</a></li>
-<li><a href="#how-can-final-expense-guy-help">How Can Final Expense Guy Help?</a></li>
+<li><a href="#how-can-final-expense-guy-help">How Can Funeral Funds Help?</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </td>
@@ -69,7 +69,7 @@ sidebar: true
 
 <p>If you are a former drug addict and you have maintained sobriety for longer than two years, you can easily qualify for level death benefit with first-day coverage and no waiting period.</p>
 
-<p>It is important to remember that whether or not you qualify for a level death benefit plan is completely up to each individual insurance company. Every life insurance company has different underwriting criteria. It is best to seek professional advice from an independent life insurance agency like Final Expense Guy about your specific case.</p>
+<p>It is important to remember that whether or not you qualify for a level death benefit plan is completely up to each individual insurance company. Every life insurance company has different underwriting criteria. It is best to seek professional advice from an independent life insurance agency like Funeral Funds about your specific case.</p>
 
 <p><strong>Best Option:</strong> Level death benefit plan with first-day coverage</p>
 
@@ -220,7 +220,7 @@ Level death benefit</p>
 <table>
 <thead>
 <tr>
-<th>FEX GUY PLAN BENEFITS</th>
+<th>FUNERAL FUNDS PLAN BENEFITS</th>
 <th>Included</th>
 </tr>
 </thead>
@@ -501,7 +501,7 @@ associated with illegal drug use:</strong></p>
 <table>
 <thead>
 <tr>
-<th>FEX Guy Add-Ons</th>
+<th>Funeral Funds Add-Ons</th>
 <th>Availability</th>
 </tr>
 </thead>
@@ -555,7 +555,7 @@ because you now have a better chance of getting approved.</p>
 
 <p>Even if your substance abuse is more recent, say within this year, you can apply for an insurance policy but may need to pay a higher premium and have a waiting period.</p>
 
-<p>If you’re currently using drugs, you’ll definitely need to work with an independent agency like Final Expense Guy that can shop your case to multiple life insurance companies to get the best deal.</p>
+<p>If you’re currently using drugs, you’ll definitely need to work with an independent agency like Funeral Funds that can shop your case to multiple life insurance companies to get the best deal.</p>
 
 <h2 id="benefits-of-burial-&-funeral-insurance"><br><strong>Benefits of burial &amp; funeral insurance</strong></h2>
 
@@ -739,11 +739,11 @@ because you now have a better chance of getting approved.</p>
 <li>Choose a life insurance company that understands your situation.</li>
 </ul>
 
-<h2 class="as-h5">About Final Expense Guy</h2>
+<h2 class="as-h5">About Funeral Funds</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.funeralfunds.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h2 class="as-h5">Keep reading</h2>
 

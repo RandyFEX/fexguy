@@ -63,7 +63,7 @@ export function leadFormHtml(variant: LeadFormVariant): string {
       ? ' aria-labelledby="quote-title"'
       : ' aria-label="Request help from Randy"';
   const states = US_STATES.map((s) => `<option>${s}</option>`).join('');
-  const origin = new URL(successPath, 'https://fexguy.com').href;
+  const origin = new URL(successPath, 'https://funeralfunds.com').href;
 
   return (
     `<div class="quote-box quote-box--${variant} quote-box--native" data-quote-box="${variant}"${region}>` +

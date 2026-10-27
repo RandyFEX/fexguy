@@ -55,7 +55,7 @@ export async function initSearch(): Promise<void> {
     return;
   }
   // Generic title: the term must not reach analytics through the page title.
-  document.title = 'Search results - Final Expense Guy';
+  document.title = 'Search results - Funeral Funds';
   status.textContent = 'Searching…';
 
   let results: PagefindResult[];
