@@ -8,26 +8,35 @@ import type { PagePhoneKey } from '@/config/phones';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
 
-// Sized copies of site.logo (scripts/build-brand-assets.mjs, lossless WebP so
-// the green stays exactly #173F35), for what the header displays (36–44px
-// tall).
-const optimized = '/images/logo/funeral-funds-logo';
-const widths = [400, 800, 1200];
-const srcset = (ext: string) => widths.map((w) => `${optimized}-${w}.${ext} ${w}w`).join(', ');
-const sizes = '(min-width: 56rem) 212px, 174px';
+// Sized copies of the logos (scripts/build-brand-assets.mjs, lossless WebP so
+// the green stays exactly #173F35). From 40rem the full two-line logo
+// (site.logo, 44px tall, so the tagline stays legible); on phones the
+// name-only wordmark (36px tall, narrower beside the Menu button). The
+// <picture> media switch downloads only the one that is shown.
+const full = '/images/logo/funeral-funds-logo';
+const wordmark = '/images/logo/funeral-funds-wordmark';
+const WORDMARK = { width: 1987, height: 285 };
+const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${w}.webp ${w}w`).join(', ');
 ---
 
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="/" class="site-header__brand" aria-label={`${site.name} home`}>
       <picture>
-        <img
-          src={`${optimized}-800.webp`}
-          srcset={srcset('webp')}
-          sizes={sizes}
-          alt={site.logo.alt}
+        <source
+          media="(min-width: 40rem)"
+          srcset={srcset(full, [400, 800, 1200])}
+          sizes="202px"
           width={site.logo.width}
           height={site.logo.height}
+        />
+        <img
+          src={`${wordmark}-400.webp`}
+          srcset={srcset(wordmark, [400, 800])}
+          sizes="251px"
+          alt={site.logo.alt}
+          width={WORDMARK.width}
+          height={WORDMARK.height}
           fetchpriority="high"
         />
       </picture>
@@ -50,10 +59,11 @@ const sizes = '(min-width: 56rem) 212px, 174px';
     min-height: 4rem;
     padding-block: var(--space-2);
   }
-  /* The logo is sized by width (36px tall, 44px from 56rem, as before the
-     Funeral Funds logo) and may shrink beside the Menu button on narrow
-     phones; height follows the width so the logo keeps its proportions
-     (1988 x 413) instead of being squeezed. */
+  /* The logo is sized by width (the wordmark 36px tall on phones; the full
+     logo 44px tall from 40rem, inside the unchanged header height) and may
+     shrink beside the Menu button on narrow phones; height follows the
+     width so the logo keeps its proportions (wordmark 1987 x 285, full logo
+     1986 x 433) instead of being squeezed. */
   .site-header__brand {
     display: inline-flex;
     align-items: center;
@@ -65,13 +75,13 @@ const sizes = '(min-width: 56rem) 212px, 174px';
     min-width: 0;
   }
   .site-header__brand img {
-    width: calc(2.25rem * 1988 / 413);
+    width: calc(2.25rem * 1987 / 285);
     max-width: 100%;
     height: auto;
   }
-  @media (min-width: 56rem) {
+  @media (min-width: 40rem) {
     .site-header__brand img {
-      width: calc(2.75rem * 1988 / 413);
+      width: calc(2.75rem * 1986 / 433);
     }
   }
 </style>

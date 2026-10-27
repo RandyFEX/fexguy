@@ -53,7 +53,7 @@ export const site: SiteConfig = {
   phoneDisplay: '888-862-9456',
   phoneE164: '+18888629456',
   email: '',
-  logo: { src: '/images/logo/funeral-funds-logo.png', width: 1988, height: 413, alt: 'Funeral Funds' },
+  logo: { src: '/images/logo/funeral-funds-logo.png', width: 1986, height: 433, alt: 'Funeral Funds' },
   // FF favicon (scripts/build-brand-assets.mjs; /favicon.ico is built too).
   icons: [
     { rel: 'icon', href: '/images/favicon/funeral-funds-favicon-32.png', sizes: '32x32' },
