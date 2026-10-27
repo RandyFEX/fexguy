@@ -5,6 +5,7 @@
 // without them get generated Open Graph/Twitter tags. Robots is always
 // "noindex, nofollow" unless PUBLIC_ALLOW_INDEXING=true (see .env.example).
 import { site, allowIndexing } from '@/config/site';
+import { normalizeMigratedJsonLd } from '@/lib/seo/schema';
 
 export interface HeadMeta {
   property?: string;
@@ -22,7 +23,8 @@ export interface Props {
   canonical?: string;
   /** Social meta tags emitted as-is (replaces generated OG/Twitter tags). */
   headMeta?: HeadMeta[];
-  /** Raw JSON-LD strings emitted verbatim. */
+  /** Raw JSON-LD strings, emitted as migrated apart from the entity
+   * corrections in normalizeMigratedJsonLd (src/lib/seo/schema.ts). */
   jsonLd?: string[];
 }
 
@@ -57,4 +59,4 @@ const ogImage = site.defaultOgImage ? new URL(site.defaultOgImage, Astro.site).t
   )
 }
 
-{jsonLd.map((block) => <script type="application/ld+json" is:inline set:html={block} />)}
+{jsonLd.map((block) => <script type="application/ld+json" is:inline set:html={normalizeMigratedJsonLd(block)} />)}

@@ -1,7 +1,8 @@
 // Shared structured data (JSON-LD). Today it is used only by the article
 // template (src/layouts/ArticleLayout.astro), which emits `articleGraph()` in
 // place of the page's migrated WordPress JSON-LD. Every other page still
-// prints its migrated `jsonLd` frontmatter verbatim (src/components/Seo.astro).
+// prints its migrated `jsonLd` frontmatter (src/components/Seo.astro), with
+// only the entity corrections in normalizeMigratedJsonLd() below.
 //
 // The canonical entities are defined once here. Only facts Randy has approved
 // are included; no sameAs, credentials, licenses, ratings, FAQ or other
@@ -61,6 +62,81 @@ export function randyEntity(): JsonLd {
     worksFor: { '@id': IDS.organization },
   };
 }
+
+// --- Migrated (WordPress/Rank Math) JSON-LD ---------------------------------
+// Pages outside the article template print their migrated JSON-LD. These
+// technical corrections (Randy, October 2026) point it at the canonical
+// entities above and leave every other value as migrated:
+// - the WordPress author "Final Expense Guy" (/author/rvanderv8/, a 404) is
+//   dropped and every reference to it points to Randy's canonical Person,
+//   which is added to the graph when it isn't already there;
+// - an Organization named "FEX Guy" without an @id becomes a reference to
+//   the canonical Organization;
+// - a stray quote at the end of an image URL is removed;
+// - a `knowsAbout` written as a numbered object becomes the plain list of
+//   its values (same values, same order);
+// - the homepage SearchAction targets the site search (/search/?q=), not
+//   WordPress's /?s=.
+
+const LEGACY_AUTHOR = `${BASE}/author/rvanderv8/`;
+
+export function normalizeMigratedJsonLd(block: string): string {
+  let data: unknown;
+  try {
+    data = JSON.parse(block);
+  } catch {
+    return block;
+  }
+  let changed = false;
+  let needsRandy = false;
+  const fix = (o: unknown): unknown => {
+    if (Array.isArray(o)) {
+      const out = o.filter((v) => !(isNode(v) && v['@type'] === 'Person' && v['@id'] === LEGACY_AUTHOR)).map(fix);
+      if (out.length !== o.length) {
+        changed = true;
+        needsRandy = true;
+      }
+      return out;
+    }
+    if (!isNode(o)) return o;
+    if (o['@id'] === LEGACY_AUTHOR) {
+      changed = true;
+      needsRandy = true;
+      return { '@id': IDS.randy };
+    }
+    if (o['@type'] === 'Organization' && !o['@id'] && o.name === 'FEX Guy') {
+      changed = true;
+      return { '@id': IDS.organization };
+    }
+    const n: JsonLd = {};
+    for (const [k, v] of Object.entries(o)) n[k] = fix(v);
+    if (typeof n.image === 'string' && n.image.endsWith('"')) {
+      n.image = n.image.replace(/"+$/, '');
+      changed = true;
+    }
+    if (isNode(n.knowsAbout) && n.knowsAbout['@type'] === 'knowsAbout') {
+      n.knowsAbout = Object.entries(n.knowsAbout)
+        .filter(([k]) => /^\d+$/.test(k))
+        .sort(([a], [b]) => Number(a) - Number(b))
+        .map(([, v]) => v);
+      changed = true;
+    }
+    if (n['@type'] === 'SearchAction' && n.target === `${BASE}/?s={search_term_string}`) {
+      n.target = `${BASE}/search/?q={search_term_string}`;
+      changed = true;
+    }
+    return n;
+  };
+  const fixed = fix(data);
+  if (!changed) return block;
+  if (needsRandy && isNode(fixed) && Array.isArray(fixed['@graph'])) {
+    const graph = fixed['@graph'] as unknown[];
+    if (!graph.some((v) => isNode(v) && v['@id'] === IDS.randy && v['@type'] === 'Person')) graph.push(randyEntity());
+  }
+  return JSON.stringify(fixed).replace(/</g, '\\u003c');
+}
+
+const isNode = (v: unknown): v is JsonLd => !!v && typeof v === 'object' && !Array.isArray(v);
 
 // --- Dates ------------------------------------------------------------------
 // A page's dates come only from its migrated values: the WordPress JSON-LD

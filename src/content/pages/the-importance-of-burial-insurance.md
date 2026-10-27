@@ -478,7 +478,7 @@ sidebar: true
 
 <p><br><strong>What is the best burial insurance for seniors?</strong></p>
 
-<p>The best burial insurance for seniors will depend on their age, health, coverage needs, and budget.</p>
+<p>The best <a href="/burial-insurance/for-seniors/" target="_blank" rel="noreferrer noopener">burial insurance for seniors</a> will depend on their age, health, coverage needs, and budget.</p>
 
 <p><br><strong>What is the best way to compare burial insurance policies?</strong></p>
 

@@ -1,6 +1,6 @@
 ---
 title: "Burial Insurance For Blood Thinner Users - [New & Updated]"
-description: "Life insurance, final expense, or burial insurance for blood thinner users are available with immediate coverage. Compare prices here!"
+description: "Life insurance, final expense, or burial insurance for blood thinner users is available with immediate coverage. Compare prices here!"
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance/blood-thinner/"
 headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial Insurance For Blood Thinner Users - [New & Updated]"},{"property":"og:description","content":"Life insurance, final expense, or burial insurance for blood thinner users are available with immediate coverage. Compare prices here!"},{"property":"og:url","content":"https://fexguy.com/burial-insurance/blood-thinner/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2026-05-26T16:39:21-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial Insurance For Blood Thinner Users - [New & Updated]"},{"name":"twitter:description","content":"Life insurance, final expense, or burial insurance for blood thinner users are available with immediate coverage. Compare prices here!"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"6 minutes"}]

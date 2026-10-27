@@ -17,7 +17,8 @@
 // on its own landing page, /roku/), no
 // retired Meta Pixel IDs, no third-party video embeds, no Funeral Funds
 // social links, no FEXGuy email address, no "licensed in all 50 states",
-// no published office hours or old PO Box address, no old consent wording;
+// no published office hours or old PO Box address, no old consent wording,
+// no WordPress author entity (/author/rvanderv8/);
 // the GA4 and Meta Pixel IDs must still be present.
 // Em dashes: none anywhere a visitor could see one - in the built site (pages,
 // metadata, JSON-LD, sitemap, llms.txt, scripts) and in the content sources
@@ -191,6 +192,9 @@ const GUARDS = [
   ['published office hours', /office hours|9:00 ?am ?(?:to|-) ?5:00 ?pm|\bCTL\b/i],
   ['old PO Box mailing address', /P\.? ?O\.? Box 270179/i],
   ['old consent wording', /By submitting this form, you agree|possibly using automated systems|SMS rates may apply/i],
+  // The WordPress author entity is replaced by Randy's canonical Person
+  // (normalizeMigratedJsonLd in src/lib/seo/schema.ts).
+  ['retired WordPress author entity /author/rvanderv8/', /fexguy\.com\/author\/rvanderv8/],
 ];
 const guardHits = {};
 let ga4Found = false;

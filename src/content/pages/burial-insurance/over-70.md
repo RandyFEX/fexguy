@@ -104,7 +104,7 @@ sidebar: true
 
 <h2 id="what-is-the-average-cost-of-burial-insurance"><br><strong>What is the average cost of burial insurance?</strong></h2>
 
-<p>You may ask, “how much is life insurance for 70? Your funeral insurance rates and burial insurance costs will depend on your age, height and weight, medical records, and prescription history. The best funeral and burial insurance policies require no waiting period for immediate burial insurance coverage.</p>
+<p>You may ask, “how much is life insurance for 70? Your funeral insurance rates and <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">burial insurance costs</a> will depend on your age, height and weight, medical records, and prescription history. The best funeral and burial insurance policies require no waiting period for immediate burial insurance coverage.</p>
 
 <p>The cost of a burial is in the $8,000-$10,000 range and will go up yearly with inflation. Purchasing your policy now is your best bet to save loads of money in the future.</p>
 

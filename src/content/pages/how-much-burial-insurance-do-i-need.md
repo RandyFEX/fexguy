@@ -311,7 +311,7 @@ e-cigarettes. Cigarette smoking has a tobacco rating.</p>
 
 <p id="f6a30f7f-4ca6-421a-80ff-bed897c92159"><br><strong>How do I decide how much burial insurance I need?</strong></p>
 
-<p id="f6a30f7f-4ca6-421a-80ff-bed897c92159">Calculate your final expenses: This includes the cost of your funeral, transportation, legal fees, and any other end-of-life costs.</p>
+<p id="f6a30f7f-4ca6-421a-80ff-bed897c92159"><a href="/burial-insurance-calculator/" target="_blank" rel="noreferrer noopener">Calculate your final expenses</a>: This includes the cost of your funeral, transportation, legal fees, and any other end-of-life costs.</p>
 
 <p id="f6a30f7f-4ca6-421a-80ff-bed897c92159">Add up your debts: If you have credit card debt, a mortgage, or other loans, you may want your policy to cover these expenses so your family doesn’t have to pay for them.</p>
 
