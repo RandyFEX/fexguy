@@ -15,7 +15,7 @@ source: "live"
 
 <p>He is <a href="/licenses/" target="_blank" rel="noreferrer noopener">licensed in most states</a> and has access to the best <a href="/about/" target="_blank" rel="noreferrer noopener">A-rated insurance companies</a> that offer burial, cremation, funeral, and final expense life insurance.</p>
 
-<p>Under Randy’s leadership,<a href="/" target="_blank">&#160;FEX Guy,</a>&#160;or Final Expense Guy, has become a top-rated and nationally respected final expense life insurance agency.</p>
+<p>Under Randy’s leadership, <a href="/" target="_blank">Funeral Funds</a> has become a top-rated and nationally respected final expense life insurance agency.</p>
 
 <p>Randy is a respected authority in the insurance, business, and marketing world and has been featured in many premier publications such as Investopedia, Medium, Authority Magazine, Best Company, Marketing Sherpa, The Simple Dollar, LegalZoom, Databox, Insurance Support World, and many more.</p>
 

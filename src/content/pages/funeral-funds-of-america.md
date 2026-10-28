@@ -1,16 +1,16 @@
 ---
-title: "Funeral Funds of America Is Now Final Expense Guy"
-description: "Funeral Funds of America (funeralfunds.com) is now Final Expense Guy. Randy VanderVaate still runs the business. Here's what changed and how to reach him."
+title: "Funeral Funds of America and Final Expense Guy Are Now Funeral Funds"
+description: "Funeral Funds of America, later Final Expense Guy, is now Funeral Funds at funeralfunds.com. Randy VanderVaate still runs the business. Here's what changed and how to reach him."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/funeral-funds-of-america/"
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"alternateName\":\"Final Expense Guy\",\"url\":\"https://funeralfunds.com/\",\"telephone\":\"+1-888-862-9456\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"width\":1986,\"height\":433,\"caption\":\"Funeral Funds\"},\"founder\":{\"@id\":\"https://funeralfunds.com/randy-vandervaate/#person\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://funeralfunds.com/randy-vandervaate/\",\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#webpage\",\"url\":\"https://funeralfunds.com/funeral-funds-of-america/\",\"name\":\"Funeral Funds of America Is Now Final Expense Guy\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"about\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#breadcrumb\"},\"datePublished\":\"2025-12-14T07:00:37-06:00\",\"dateModified\":\"2026-10-07\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://funeralfunds.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Funeral Funds of America\",\"item\":\"https://funeralfunds.com/funeral-funds-of-america/\"}]}]}"]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"alternateName\":\"Final Expense Guy\",\"url\":\"https://funeralfunds.com/\",\"telephone\":\"+1-888-862-9456\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"width\":1986,\"height\":433,\"caption\":\"Funeral Funds\"},\"founder\":{\"@id\":\"https://funeralfunds.com/randy-vandervaate/#person\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/randy-vandervaate/#person\",\"name\":\"Randy VanderVaate\",\"url\":\"https://funeralfunds.com/randy-vandervaate/\",\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#webpage\",\"url\":\"https://funeralfunds.com/funeral-funds-of-america/\",\"name\":\"Funeral Funds of America and Final Expense Guy Are Now Funeral Funds\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"about\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#breadcrumb\"},\"datePublished\":\"2025-12-14T07:00:37-06:00\",\"dateModified\":\"2026-10-07\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/funeral-funds-of-america/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://funeralfunds.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Funeral Funds of America\",\"item\":\"https://funeralfunds.com/funeral-funds-of-america/\"}]}]}"]
 source: "new"
 sidebar: true
 ---
 
-<h1>Funeral Funds of America Is Now Final Expense Guy</h1>
+<h1>Funeral Funds of America and Final Expense Guy Are Now Funeral Funds</h1>
 
-<p>If you're looking for Funeral Funds of America or funeralfunds.com, you're in the right place. Funeral Funds of America is now Final Expense Guy.</p>
+<p>If you're looking for Funeral Funds of America, Final Expense Guy, funeralfunds.com or fexguy.com, you're in the right place. The business is now Funeral Funds, at funeralfunds.com.</p>
 
 <h2>What happened to Funeral Funds of America?</h2>
 
@@ -20,11 +20,13 @@ sidebar: true
 
 <p>Why the new name? More and more people were coming to me for help with more than funeral costs, like protecting their family if they lose a paycheck or pass away early. The Funeral Funds name only described part of that work.</p>
 
+<p>In 2026, I brought back the Funeral Funds name, and the website returned to funeralfunds.com.</p>
+
 <h2>Is this the same business I worked with before?</h2>
 
 <p>Yes. I'm Randy VanderVaate, and I'm still the person you deal with. If you worked with Funeral Funds of America in the past, you're working with the same person today.</p>
 
-<p>Final Expense Guy is a DBA of Saturn Street, LLC. The website is now <a href="/">fexguy.com</a>.</p>
+<p>Funeral Funds is operated by Saturn Street, LLC. The website is <a href="/">funeralfunds.com</a>.</p>
 
 <h2>What I do today</h2>
 
@@ -38,4 +40,4 @@ sidebar: true
 
 <figure><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt="Randy VanderVaate"></figure>
 
-<p>Randy VanderVaate<br>Owner and President, Final Expense Guy</p>
+<p>Randy VanderVaate<br>Owner and President, Funeral Funds</p>
