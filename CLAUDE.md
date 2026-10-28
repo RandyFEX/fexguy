@@ -1000,15 +1000,37 @@ scope protection wins.
   (noindex). If the request fails, the answers stay and an inline message
   offers the phone number. Without JavaScript the browser validates and the
   form posts to Formspark, which redirects to /help/ (nothing is counted).
-- **Spam protection** (Randy, October 2026): the `_honeypot` trap only.
-  Cloudflare Turnstile was removed from the form code (Randy, October 2026,
-  FuneralFunds.com launch): Formspark's challenge provider is None, so the
-  form requests no Turnstile token and sends no `cf-turnstile-response`, and
-  no Cloudflare script loads. Don't re-add Turnstile or another CAPTCHA
-  without Randy's approval. Without JavaScript the form posts natively to
-  Formspark again (no `<noscript>` phone-only notice). The Turnstile widget
-  and its Secret Key in Formspark are unused; the /privacy-policy/
-  paragraph that discloses Turnstile awaits Randy's decision.
+- **Spam protection** (Randy, October 2026): the `_honeypot` trap (keep it)
+  plus Cloudflare Turnstile, Managed mode. Public Site Key
+  `0x4AAAAAAFTAF4WgYBf4SuWi` in `src/config/lead.ts`
+  (`formspark.turnstile`); the Secret Key lives only in Formspark (form
+  settings: Spam protection → Turnstile) and must never be in this repo.
+  `src/scripts/lead-form.ts` loads Cloudflare's official script
+  (`api.js?render=explicit`) only on pages with the form, when the form
+  comes near or is used, and renders the widget in the
+  `[data-turnstile]` slot above the button with `appearance:
+  'interaction-only'` (it takes no space unless Cloudflare asks for a
+  click). Each submission sends the token as `cf-turnstile-response`;
+  Formspark verifies it and rejects failures (HTTP 403), so no success is
+  shown. Tokens are single-use: after a failed attempt the widget is reset.
+  Expired tokens are refreshed before sending. A submission waits up to 60
+  seconds for the background check, with no deadline while the visitor is
+  completing a visible check (Cloudflare's own timeout applies). If the
+  check can't run, an inline error keeps the answers and offers the phone
+  number. Without JavaScript the check can't run, so a `<noscript>` line in
+  the form points to 888-862-9456. The site has no Content Security
+  Policy; if one is added it must allow https://challenges.cloudflare.com
+  (script and frame). The widget's Cloudflare hostname list must include
+  funeralfunds.com, www.funeralfunds.com, fexguy.com and www.fexguy.com
+  (Randy, October 2026: Turnstile kept for the FuneralFunds.com launch after
+  a brief removal in 71fd098 was reverted); on other hosts (Vercel previews,
+  local) the form fails safely. Server-side verification happens only when
+  Formspark's Spam protection is set to Turnstile with the widget's Secret
+  Key; with it set to None, Formspark ignores the token and the browser
+  check alone can be bypassed by posting to the endpoint directly. Test with Cloudflare's test site keys (e.g.
+  1x00000000000000000000BB pass, 2x00000000000000000000BB fail,
+  3x00000000000000000000FF interactive), never with real leads.
+  /privacy-policy/ discloses Turnstile next to Formspark.
 - **Lead source attribution** (Randy, October 2026): hidden fields (the
   visible form is unchanged) add Submission Page, the session's Landing Page
   (no query string), Traffic Source (UTM source/medium, an identified ad
@@ -1017,7 +1039,7 @@ scope protection wins.
   existing Formspark submission; empty ones are omitted. Code:
   `src/scripts/lead-source.ts` (session record in sessionStorage),
   `src/scripts/lead-form.ts`, `src/lib/lead/lead-form.ts`. Nothing new goes
-  to GA4 or Meta. Keep the success redirect, honeypot and the
+  to GA4 or Meta. Keep the success redirect, Turnstile, honeypot and the
   GA4/Meta conversion behavior unchanged. /privacy-policy/ discloses it.
 - Fillout is the rollback only: form `pJBgSNEtN9us` stays in
   `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
