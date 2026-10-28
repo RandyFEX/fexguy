@@ -3,7 +3,7 @@ title: "T2 Life Insurance Form: What Is It?"
 description: "Got a T2 life insurance form in the mail? Learn what the T2 form is, what happens if you return it, and how to compare actual final expense coverage."
 robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/t2-life-insurance/"
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/t2-life-insurance/#webpage\",\"url\":\"https://fexguy.com/t2-life-insurance/\",\"name\":\"T2 Life Insurance Form: What Is It?\",\"datePublished\":\"2026-02-11T10:29:43-06:00\",\"dateModified\":\"2026-10-07\"}"]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/t2-life-insurance/#webpage\",\"url\":\"https://funeralfunds.com/t2-life-insurance/\",\"name\":\"T2 Life Insurance Form: What Is It?\",\"datePublished\":\"2026-02-11T10:29:43-06:00\",\"dateModified\":\"2026-10-07\"}"]
 sidebar: true
 source: "new"
 ---

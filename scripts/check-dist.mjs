@@ -51,7 +51,7 @@ const decode = (s) =>
 function localPath(raw) {
   let u = decode(raw.trim());
   if (!u || /^(mailto|tel|javascript|sms|data):/i.test(u)) return null;
-  const abs = u.match(/^(?:https?:)?\/\/(?:www\.)?fexguy\.com(\/[^\s]*)?$/i);
+  const abs = u.match(/^(?:https?:)?\/\/(?:www\.)?funeralfunds\.com(\/[^\s]*)?$/i);
   if (abs) u = abs[1] || '/';
   else if (/^(?:[a-z]+:)?\/\//i.test(u) || !u.startsWith('/')) return null;
   u = u.split('#')[0].split('?')[0];
@@ -114,7 +114,7 @@ for (const file of pages) {
     else if (/^twitter:image(:src)?$/.test(key)) check('twitter', content);
   }
   for (const [, json] of scripts.filter(([tag]) => /application\/ld\+json/i.test(tag))) {
-    for (const m of json.matchAll(/"((?:https?:)?\/\/(?:www\.)?fexguy\.com\/[^"]+?\.(?:png|jpe?g|gif|webp|avif|svg))"/gi))
+    for (const m of json.matchAll(/"((?:https?:)?\/\/(?:www\.)?funeralfunds\.com\/[^"]+?\.(?:png|jpe?g|gif|webp|avif|svg))"/gi))
       check('jsonld', m[1]);
   }
 }
@@ -165,7 +165,7 @@ const searchHtml = existsSync(join(DIST, 'search/index.html')) ? readFileSync(jo
 if (!searchHtml) search.problems.push('/search/ page is missing');
 else if (!/<meta name="robots" content="[^"]*noindex/.test(searchHtml)) search.problems.push('/search/ is not noindex');
 for (const f of walk(DIST).filter((f) => /sitemap.*\.xml$|llms\.txt$/.test(f)))
-  if (/fexguy\.com\/search\//.test(readFileSync(f, 'utf8'))) search.problems.push(`/search/ is listed in ${f.slice(DIST.length)}`);
+  if (/funeralfunds\.com\/search\//.test(readFileSync(f, 'utf8'))) search.problems.push(`/search/ is listed in ${f.slice(DIST.length)}`);
 for (const [source, dest] of redirects)
   if (/^(https?:\/\/[^/]+)?\/search(\/|\?|$)/.test(dest)) search.problems.push(`redirect ${source} -> ${dest} (no catch-all to /search/)`);
 
@@ -185,16 +185,20 @@ const GUARDS = [
   ['retired Meta Pixel ID', /1757709920950272|422716154769594/],
   ['third-party video embed', /youtube(?:-nocookie)?\.com\/embed|player\.vimeo\.com|adilo\.|bigcommand\.com/i],
   ['Funeral Funds social link', /facebook\.com\/funeralfunds|youtube\.com\/(?:c\/|@)funeralfunds|linkedin\.com\/company\/funeral-funds/i],
-  ['FEXGuy email address', /[a-z0-9._%+-]+@(?:www\.)?fexguy\.com|mailto:[^"]*fexguy/i],
+  ['FEXGuy or Funeral Funds email address', /[a-z0-9._%+-]+@(?:www\.)?(?:fexguy|funeralfunds)\.com|mailto:[^"]*(?:fexguy|funeralfunds)/i],
+  // Domain migration: no URL may still point at the old domain (it only
+  // redirects). Visible mentions of the old name are checked by the
+  // preservation tests, not here.
+  ['URL on the old fexguy.com domain', /(?:https?:)?\/\/(?:www\.)?fexguy\.com(?=[\/"'\s<]|$)/i],
   // Randy's/Final Expense Guy's own licensing only (carriers' "licensed in all
   // 50 states" in reviews is about the insurance company and stays).
-  ['"licensed in all 50 states" (Randy)', /(?:He’s|He is|I’m|I am|Randy is|Final Expense Guy is|agency|agent|broker)[^.<]{0,40}licensed (?:to (?:sell|operate)[^.<]{0,40})?in (?:all |every )?(?:50 )?states?\b(?! *where)|licensed nationwide|broker operating nationwide|50-state licensed|<br>Licensed in all 50 States|LICENSED<\/strong><br>All 50 States|coverage is available in all 50 states/i],
+  ['"licensed in all 50 states" (Randy)', /(?:He’s|He is|I’m|I am|Randy is|Final Expense Guy is|Funeral Funds is|agency|agent|broker)[^.<]{0,40}licensed (?:to (?:sell|operate)[^.<]{0,40})?in (?:all |every )?(?:50 )?states?\b(?! *where)|licensed nationwide|broker operating nationwide|50-state licensed|<br>Licensed in all 50 States|LICENSED<\/strong><br>All 50 States|coverage is available in all 50 states/i],
   ['published office hours', /office hours|9:00 ?am ?(?:to|-) ?5:00 ?pm|\bCTL\b/i],
   ['old PO Box mailing address', /P\.? ?O\.? Box 270179/i],
   ['old consent wording', /By submitting this form, you agree|possibly using automated systems|SMS rates may apply/i],
   // The WordPress author entity is replaced by Randy's canonical Person
   // (normalizeMigratedJsonLd in src/lib/seo/schema.ts).
-  ['retired WordPress author entity /author/rvanderv8/', /fexguy\.com\/author\/rvanderv8/],
+  ['retired WordPress author entity /author/rvanderv8/', /(?:fexguy|funeralfunds)\.com\/author\/rvanderv8/],
 ];
 const guardHits = {};
 let ga4Found = false;

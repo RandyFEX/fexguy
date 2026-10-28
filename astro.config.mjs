@@ -8,7 +8,7 @@ import { unitTablePlugin } from './src/lib/coverage/unit-table.ts';
 import { hubNavPlugin } from './src/lib/hub-nav.ts';
 
 // Keep in sync with `url` in src/config/site.ts.
-const SITE_URL = 'https://fexguy.com';
+const SITE_URL = 'https://funeralfunds.com';
 
 // Fully static output: every page is pre-rendered HTML served from Vercel's
 // CDN. No adapter, no server functions — the single biggest lever for Core

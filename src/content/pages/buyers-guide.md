@@ -3,8 +3,8 @@ title: "Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!]"
 description: "Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/buyers-guide/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!]"},{"property":"og:description","content":"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance."},{"property":"og:url","content":"https://fexguy.com/buyers-guide/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-03-19T08:44:04-05:00"},{"property":"article:published_time","content":"2021-06-02T10:13:37-05:00"},{"property":"article:modified_time","content":"2025-03-19T08:44:04-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!]"},{"name":"twitter:description","content":"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/buyers-guide/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/buyers-guide/\",\"name\":\"Buyers Guide\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/buyers-guide/#webpage\",\"url\":\"https://fexguy.com/buyers-guide/\",\"name\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"datePublished\":\"2021-06-02T10:13:37-05:00\",\"dateModified\":\"2025-03-19T08:44:04-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/buyers-guide/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"datePublished\":\"2021-06-02T10:13:37-05:00\",\"dateModified\":\"2025-03-19T08:44:04-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance.\",\"name\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"@id\":\"https://fexguy.com/buyers-guide/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/buyers-guide/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/buyers-guide/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!]"},{"property":"og:description","content":"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance."},{"property":"og:url","content":"https://funeralfunds.com/buyers-guide/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"og:updated_time","content":"2025-03-19T08:44:04-05:00"},{"property":"article:published_time","content":"2021-06-02T10:13:37-05:00"},{"property":"article:modified_time","content":"2025-03-19T08:44:04-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!]"},{"name":"twitter:description","content":"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance."},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"10 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1986\",\"height\":\"433\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/buyers-guide/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/buyers-guide/\",\"name\":\"Buyers Guide\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/buyers-guide/#webpage\",\"url\":\"https://funeralfunds.com/buyers-guide/\",\"name\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"datePublished\":\"2021-06-02T10:13:37-05:00\",\"dateModified\":\"2025-03-19T08:44:04-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/buyers-guide/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"datePublished\":\"2021-06-02T10:13:37-05:00\",\"dateModified\":\"2025-03-19T08:44:04-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"description\":\"Our Buyers Guide for Burial, Cremation, Final Expense, or Funeral insurance will help you get affordable 1st-day coverage life insurance.\",\"name\":\"Burial &amp; Funeral Insurance Buyers Guide [DON&#039;T GET RIPPED OFF!]\",\"@id\":\"https://funeralfunds.com/buyers-guide/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/buyers-guide/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/buyers-guide/#webpage\"}}]}"]
 source: "live"
 ---
 
@@ -41,7 +41,7 @@ source: "live"
 
 <h2 id="h-what-s-your-pricing" class="as-h3"><br><strong><strong>What’s your pricing?</strong></strong></h2>
 
-<p>At Final Expense Guy, Randy works with many insurance companies and can price check over 30 different companies to find you the lowest rate and <strong>1st-day coverage</strong>.</p>
+<p>At Funeral Funds, Randy works with many insurance companies and can price check over 30 different companies to find you the lowest rate and <strong>1st-day coverage</strong>.</p>
 
 <p><strong>We have a “NO STRESS” quoting process. Here are the three easy steps:</strong></p>
 
@@ -80,7 +80,7 @@ source: "live"
 <li><strong>Graded Coverage</strong> – Expensive pricing and mandatory 2-year waiting period (NOT RECOMMENDED)</li>
 </ul>
 
-<p><strong>BEST PRICING: Level Coverage</strong> is the <strong>FIRST-DAY COVERAGE</strong> we help people with at Final Expense Guy. This coverage starts from the very first day and will pay out for any kind of death from the very first day. This is the best and lowest-priced insurance product you can purchase.</p>
+<p><strong>BEST PRICING: Level Coverage</strong> is the <strong>FIRST-DAY COVERAGE</strong> we help people with at Funeral Funds. This coverage starts from the very first day and will pay out for any kind of death from the very first day. This is the best and lowest-priced insurance product you can purchase.</p>
 
 <p><strong>BAD PRICING: Modified Coverage</strong> – These plans are very expensive; even more expensive than graded (2-year wait) coverage plans in many cases. We don’t recommend these plans because some of them won’t get you full coverage for up to 3 years.</p>
 
@@ -98,7 +98,7 @@ source: "live"
 
 <h2 id="h-avoiding-a-2-year-waiting-period" class="as-h3"><br><strong>Avoiding a 2-year waiting period</strong></h2>
 
-<p>As you already know, at Final Expense Guy we don’t sell 2-year waiting period plans…but that is not true of all companies.</p>
+<p>As you already know, at Funeral Funds we don’t sell 2-year waiting period plans…but that is not true of all companies.</p>
 
 <p>If you buy from the wrong company, you will always be sold a 2-year waiting period plan (even if you qualify for first-day coverage).</p>
 
@@ -124,7 +124,7 @@ source: "live"
 
 <h2 id="h-choosing-a-life-insurance-agent" class="as-h3"><br><strong>Choosing a life insurance agent</strong></h2>
 
-<p>At Final Expense Guy, Randy is an independent agent who can price shop about 30 different insurance companies for you so that you get approved for the lowest pricing. You will probably qualify for more than one program when working with an independent agent like Randy.</p>
+<p>At Funeral Funds, Randy is an independent agent who can price shop about 30 different insurance companies for you so that you get approved for the lowest pricing. You will probably qualify for more than one program when working with an independent agent like Randy.</p>
 
 <p>You should also do some research on the following:</p>
 
@@ -143,11 +143,11 @@ source: "live"
 
 <p>AARP, New York Life, Globe Life, and TruStage offer TERM life insurance that is lower priced at first, but then it will then go up in price every 5 years and cancel after you turn 80 years old (exactly when you need this coverage the most!). We don’t recommend these plans for final expense needs.</p>
 
-<p>At Final Expense Guy, our 1st-day coverage plans NEVER increase in price. Your prices are locked in at today’s low rates for the life of your policy.</p>
+<p>At Funeral Funds, our 1st-day coverage plans NEVER increase in price. Your prices are locked in at today’s low rates for the life of your policy.</p>
 
 <h2 id="h-will-your-coverage-go-down" class="as-h3"><br><strong>Will your coverage go down?</strong></h2>
 
-<p>Your coverage will NEVER go down over time as long as you purchase whole life insurance from Final Expense Guy.</p>
+<p>Your coverage will NEVER go down over time as long as you purchase whole life insurance from Funeral Funds.</p>
 
 <p>With expensive term life, it’s a different story! Term life insurance will cancel when you need it the most (after age 80). </p>
 
@@ -157,7 +157,7 @@ source: "live"
 
 <h2 id="h-what-companies-are-best" class="as-h3"><br><strong>What companies are best?</strong></h2>
 
-<p>At Final Expense Guy, we work with many companies, but our best companies offer 1st-day coverage or benefits. Below is a list of almost all the final expense life insurance companies. We have bolded the names of the companies that are most often the right choice for most people.</p>
+<p>At Funeral Funds, we work with many companies, but our best companies offer 1st-day coverage or benefits. Below is a list of almost all the final expense life insurance companies. We have bolded the names of the companies that are most often the right choice for most people.</p>
 
 <p>You can try to call them all yourself, or you can call us directly at 888-862-9456 and we can price shop them all for you in just a few minutes.</p>
 

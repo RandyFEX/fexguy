@@ -1,9 +1,9 @@
 ---
-title: "FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy"
+title: "FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/final-expense-life-insurance-book/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy"},{"property":"og:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"property":"og:url","content":"https://fexguy.com/final-expense-life-insurance-book/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"og:updated_time","content":"2025-10-14T13:01:17-05:00"},{"property":"og:image","content":"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:secure_url","content":"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:width","content":"1080"},{"property":"og:image:height","content":"1920"},{"property":"og:image:alt","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK"},{"property":"og:image:type","content":"image/jpeg"},{"property":"article:published_time","content":"2025-05-15T13:51:10-05:00"},{"property":"article:modified_time","content":"2025-10-14T13:01:17-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy"},{"name":"twitter:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"name":"twitter:image","content":"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"32 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#webpage\",\"url\":\"https://fexguy.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies &amp; AgentsChapter 2: What is Burial Insurance - And What Isn\\u2019t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of \\\"State-Regulated Programs\\\"Chapter 7: The Problem with Term Life InsuranceChapter 8: Social Security &amp; Burial Insurance: The ExploitationChapter 9: The Fine Print They Hope You Don\\u2019t ReadChapter 10: Who Really Benefits - You or the Insurance Company?Chapter 11: The Truth About Final Expense AgentsChapter 12: Already Covered? You Could Be Paying Too MuchChapter 13: What Happens When You Die?Chapter 14: A Buyer\\u2019s Guide to Protecting Your Family - Without Getting ScammedChapter 15: Real Stories, Real Regret - and RedemptionChapter 16: Prepaid Funeral Plans - A Safe Bet or a Death Trap?Chapter 17: Final Words - Freed by Truth\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Final Expense Guy\",\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#webpage\"},\"image\":{\"@id\":\"https://fexguy.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/final-expense-life-insurance-book/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"property":"og:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"property":"og:url","content":"https://funeralfunds.com/final-expense-life-insurance-book/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"og:updated_time","content":"2025-10-14T13:01:17-05:00"},{"property":"og:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:secure_url","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:width","content":"1080"},{"property":"og:image:height","content":"1920"},{"property":"og:image:alt","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK"},{"property":"og:image:type","content":"image/jpeg"},{"property":"article:published_time","content":"2025-05-15T13:51:10-05:00"},{"property":"article:modified_time","content":"2025-10-14T13:01:17-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"name":"twitter:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"name":"twitter:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"32 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1986\",\"height\":\"433\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"url\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\",\"url\":\"https://funeralfunds.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"description\":\"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies &amp; AgentsChapter 2: What is Burial Insurance - And What Isn\\u2019t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of \\\"State-Regulated Programs\\\"Chapter 7: The Problem with Term Life InsuranceChapter 8: Social Security &amp; Burial Insurance: The ExploitationChapter 9: The Fine Print They Hope You Don\\u2019t ReadChapter 10: Who Really Benefits - You or the Insurance Company?Chapter 11: The Truth About Final Expense AgentsChapter 12: Already Covered? You Could Be Paying Too MuchChapter 13: What Happens When You Die?Chapter 14: A Buyer\\u2019s Guide to Protecting Your Family - Without Getting ScammedChapter 15: Real Stories, Real Regret - and RedemptionChapter 16: Prepaid Funeral Plans - A Safe Bet or a Death Trap?Chapter 17: Final Words - Freed by Truth\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\"},\"image\":{\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\"}}]}"]
 source: "live"
 ---
 
@@ -29,7 +29,7 @@ source: "live"
 
 <p>Because of that, most agents have to sell the most expensive plans that generate the most revenue for the agent or the insurance company.</p>
 
-<p>That stops today with a bit of help from the Final Expense Guy.</p>
+<p>That stops today with a bit of help from Funeral Funds.</p>
 
 <p><strong>DON’T send your personal information to agents or call centers that use this language in their advertisements</strong>:</p>
 
@@ -70,7 +70,7 @@ source: "live"
 <li>Watch out for misleading phrases like “Guaranteed Acceptance,” “$9.95 per unit,” or “No Medical Exam”: they usually mean <strong>2-year waiting periods and overpriced plans.</strong></li>
 <li>Claims like “Pays in 24 hours,” “State Regulated,” or “Enrollment Ends Soon” are <strong>false or deceptive.</strong></li>
 <li>Giving your info to these ads can lead to <strong>endless robocalls</strong> and unwanted pressure.</li>
-<li>Work with a trusted, independent expert like Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to avoid the “bait &amp; switch”.</li>
+<li>Work with a trusted, independent expert like Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to avoid the “bait &amp; switch”.</li>
 </ul>
 
 <hr>
@@ -105,7 +105,7 @@ source: "live"
 <li>Avoid <strong>term life</strong> plans – they get more expensive every 5 years and <strong>cancel automatically by age 80.</strong></li>
 <li>If you outlive term life, your family gets <strong>nothing</strong>, no matter how long you’ve paid.</li>
 <li><strong>IULs are not designed for final expense</strong> and often come with high fees and risky performance.</li>
-<li>For the right policy at the right price, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For the right policy at the right price, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -116,7 +116,7 @@ source: "live"
 
 <p><strong>FIRST-DAY COVERAGE</strong>, also called <strong>level benefit coverage</strong>, pays the full death benefit from the very <strong>FIRST DAY</strong>. This is the type of Final Expense Life Insurance you want to purchase because you’ll get the most coverage for the least amount of money.</p>
 
-<p><strong>Whole life 1st-day coverage plans</strong> are available to people with a wide range of medical problems, so your health and medication are not your problem; they are my problem as the Final Expense Guy to solve, and that includes <strong>NO 2-year waiting period.</strong></p>
+<p><strong>Whole life 1st-day coverage plans</strong> are available to people with a wide range of medical problems, so your health and medication are not your problem; they are my problem as Funeral Funds to solve, and that includes <strong>NO 2-year waiting period.</strong></p>
 
 <p><strong>TWO-YEAR WAIT PLANS</strong> (called <strong>graded or guaranteed issue</strong> policies) delay full benefits until after the first two years (or 3 years with some even worse policies).</p>
 
@@ -148,7 +148,7 @@ source: "live"
 <li><strong>2-year wait plans</strong> only pay full benefits after two years and cost more than necessary.</li>
 <li>If death occurs early, your family may only receive a <strong>refund</strong>, not the full payout.</li>
 <li>Many call centers push wait-period plans to <strong>avoid underwriting</strong> and <strong>earn higher commissions.</strong></li>
-<li>Don’t settle – if you qualify for 1st-day coverage, Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
+<li>Don’t settle – if you qualify for 1st-day coverage, Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
 </ul>
 
 <hr>
@@ -165,9 +165,9 @@ source: "live"
 
 <p>You are also required to buy multiple units to get even close to a meaningful amount of insurance, and each unit adds more money that you have to pay.</p>
 
-<p>For a 70-year-old male, $10,000 in coverage from Colonial Penn would be $149.25/month (15 units).<br><br>The <strong>Final Expense Guy </strong>can get that same 70-year-old male $10,000 in 1st-day coverage for $66.23/month. <strong>That’s a 55% savings!</strong></p>
+<p>For a 70-year-old male, $10,000 in coverage from Colonial Penn would be $149.25/month (15 units).<br><br>The <strong>Funeral Funds </strong>can get that same 70-year-old male $10,000 in 1st-day coverage for $66.23/month. <strong>That’s a 55% savings!</strong></p>
 
-<p>For a 70-year-old female, $10,000 in coverage from Colonial Penn would be $99.50/month (15 units).<br><br>The <strong>Final Expense Guy </strong>can get that same 70-year-old male $10,000 in 1st-day coverage for $52.03/month. <strong>That’s a 48% savings!</strong></p>
+<p>For a 70-year-old female, $10,000 in coverage from Colonial Penn would be $99.50/month (15 units).<br><br>The <strong>Funeral Funds </strong>can get that same 70-year-old male $10,000 in 1st-day coverage for $52.03/month. <strong>That’s a 48% savings!</strong></p>
 
 <p>For most people, the real cost of Colonial Penn’s insurance quickly balloons beyond what they expected, making this one of the worst possible plans you could ever buy for your final expense needs.</p>
 
@@ -193,10 +193,10 @@ source: "live"
 <ul>
 <li>Colonial Penn’s “$9.95 per unit” plan is one of the <strong>worst deals</strong> in final expense insurance.</li>
 <li>Coverage per unit is <strong>extremely low</strong>, and most people need to buy 10–15 units for meaningful protection.</li>
-<li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage, more than <strong>double</strong> what The Final Expense Guy can offer.</li>
+<li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage, more than <strong>double</strong> what Funeral Funds can offer.</li>
 <li>“$1 a day” ads use <strong>teaser rates</strong> that apply only to younger, healthy individuals; real costs are much higher for everyone else.</li>
 <li>These ads are designed to collect your info and lead to <strong>aggressive sales calls</strong>, not to give you the best coverage.</li>
-<li>Don’t overpay – call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
+<li>Don’t overpay – call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
 </ul>
 
 <hr>
@@ -238,7 +238,7 @@ source: "live"
 <li>Your prescriptions, hospital records, and MIB report are still being reviewed behind the scenes.</li>
 <li>Many people can still qualify for 1st-day coverage, even with severe conditions like COPD, diabetes, heart issues, and more.</li>
 <li>Guaranteed issue plans skip health checks but come with a 2-year waiting period and higher costs.</li>
-<li>If you’re not sure what you qualify for, get a free expert review by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>If you’re not sure what you qualify for, get a free expert review by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -269,7 +269,7 @@ source: "live"
 <li>Final expense insurance is regulated by states, but <strong>never</strong> endorsed or paid for by the government.</li>
 <li>These deceptive ads twist regulatory language to look official and get your personal info.</li>
 <li>Don’t trust companies that use misleading phrases like “state-approved” or “new government benefit.”</li>
-<li>If you’re unsure what’s real and what’s a scam, get a free expert review by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>If you’re unsure what’s real and what’s a scam, get a free expert review by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -306,7 +306,7 @@ source: "live"
 <li>Most term policies <strong>cancel automatically by age 80</strong>, even if you’ve paid for decades.</li>
 <li>If you outlive the term, you get <strong>no money back, no coverage, and no refund.</strong></li>
 <li>Final expense needs call for <strong>permanent, fixed-rate whole life insurance</strong>, not expiring term plans.</li>
-<li>For a personalized, affordable plan that lasts for life, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert help.</li>
+<li>For a personalized, affordable plan that lasts for life, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert help.</li>
 </ul>
 
 <h2 id="Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation"><strong>Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</strong></h2>
@@ -333,7 +333,7 @@ source: "live"
 <li>Phrases like “new benefit for those on Social Security” are designed to create <strong>false urgency.</strong></li>
 <li>These tactics pressure seniors into buying overpriced policies with <strong>2-year waiting periods.</strong></li>
 <li>Many people on Social Security <strong>qualify for better, lower-cost, first-day coverage.</strong></li>
-<li>Get the truth and a fair review of your options by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>Get the truth and a fair review of your options by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -356,7 +356,7 @@ source: "live"
 <li>Even accidental mistakes on your application can lead to a <strong>denied payout</strong> during that time.</li>
 <li>A <strong>suicide clause</strong> also applies for the first two years – benefits may not be paid if triggered.</li>
 <li>Always review your policy carefully and be truthful on your application to protect your loved ones.</li>
-<li>For help understanding what you’re really signing up for, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For help understanding what you’re really signing up for, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -367,7 +367,7 @@ source: "live"
 
 <p>Here’s the sad truth: some independent agents, and almost all captive agents, won’t show you your most affordable options with the lowest-priced carrier; they’ll only show you the ones that pay them the most commission.</p>
 
-<p>Now, ethical brokers (like the Final Expense Guy) will shop across the best-rated companies to find you the lowest rates offered.</p>
+<p>Now, ethical brokers (like Funeral Funds) will shop across the best-rated companies to find you the lowest rates offered.</p>
 
 <p>But greedy agents? They’ll steer you toward overpriced companies…not because these companies are better for you…but because it’s better for the agent’s wallet.</p>
 
@@ -375,7 +375,7 @@ source: "live"
 
 <p>The sad part? Most consumers are unaware that they are overpaying for their life insurance.</p>
 
-<p>Consumers often trust the first agent who sounds friendly, not realizing they could’ve paid up to $20–$80 less per month with a trusted, independent broker like the Final Expense Guy who puts the client first.</p>
+<p>Consumers often trust the first agent who sounds friendly, not realizing they could’ve paid up to $20–$80 less per month with a trusted, independent broker like Funeral Funds who puts the client first.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
@@ -385,7 +385,7 @@ source: "live"
 <li>Overpriced plans often include hidden fees, health penalties, and unnecessary riders.</li>
 <li>Most people don’t realize they’re <strong>overpaying</strong> by $20–$80/month for the same coverage.</li>
 <li>Work with an ethical, independent broker who shops around for <strong>you</strong>, not for their wallet.</li>
-<li>For a fair and honest review of your options, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For a fair and honest review of your options, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -394,11 +394,11 @@ source: "live"
 
 <p>Not all insurance agents are created equal, and not all insurance agents are ethical.</p>
 
-<p>Many agents are ethical, experienced professionals who educate clients, shop for the best value, and provide real long-term service (like at fexguy.com).</p>
+<p>Many agents are ethical, experienced professionals who educate clients, shop for the best value, and provide real long-term service (like at funeralfunds.com).</p>
 
 <p>Others are new to the industry, poorly trained, and merely reading a script, and they care more about closing a sale than protecting your legacy.</p>
 
-<p>Some agents are <strong>independent brokers</strong>, meaning they can shop from a few of the best companies to find the best rate for your health and age. This describes FEXGUY.COM, and it’s ideal for you as a consumer.&#160;</p>
+<p>Some agents are <strong>independent brokers</strong>, meaning they can shop from a few of the best companies to find the best rate for your health and age. This describes FUNERALFUNDS.COM, and it’s ideal for you as a consumer.&#160;</p>
 
 <p>Others are <strong>captive agents</strong>, which means they can only sell ONE company’s policies…even if another company would offer you better coverage for 40-50% less money.</p>
 
@@ -414,11 +414,11 @@ source: "live"
 
 <ul>
 <li>Not all agents are ethical or qualified – some prioritize sales over your long-term protection.</li>
-<li>Independent brokers (like FEXGUY.COM) can shop multiple companies to find your <strong>best rate.</strong></li>
+<li>Independent brokers (like FUNERALFUNDS.COM) can shop multiple companies to find your <strong>best rate.</strong></li>
 <li>Captive agents can only sell one company’s plans – even if better options exist.</li>
 <li>Call center reps and lead vendors often rush you, skip fine print, and pressure you to buy fast.</li>
 <li>A good agent listens, explains your real options, and puts your needs before their commission.</li>
-<li>For honest advice and real coverage, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For honest advice and real coverage, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -458,7 +458,7 @@ source: "live"
 <li>You may qualify for <strong>thousands more in coverage</strong> or lower premiums just by switching providers.</li>
 <li>If your current policy has a <strong>2-year waiting period</strong>, you might now qualify for <strong>1st-day coverage.</strong></li>
 <li>Insurance companies <strong>won’t upgrade you automatically</strong> – it’s up to you to re-shop.</li>
-<li>For a fast, no-obligation review of your policy, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For a fast, no-obligation review of your policy, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -488,7 +488,7 @@ source: "live"
 
 <ul>
 <li>Tell your loved ones where to find your policy paperwork</li>
-<li>Write down your agent’s name and number (www.fexguy.com at 888-862-9456 is recommended)</li>
+<li>Write down your agent’s name and number (www.funeralfunds.com at 888-862-9456 is recommended)</li>
 <li>Store a copy of your policy in a fireproof safe or secure digital vault</li>
 <li>Include funeral preferences or instructions if you have them</li>
 </ul>
@@ -503,7 +503,7 @@ source: "live"
 <li>Claims during the first 2 years may be <strong>investigated</strong>, which can cause delays.</li>
 <li>Payouts typically arrive within <strong>7-30 days</strong>, longer if paperwork is missing or incomplete.</li>
 <li>Keep your policy in a <strong>safe place</strong>, share details with your family, and list your agent’s contact info.</li>
-<li>For help planning ahead, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For help planning ahead, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -589,7 +589,7 @@ source: "live"
 <li>Ask direct questions: Is the agent independent? How many companies do they represent?</li>
 <li>Never give banking info before reviewing your quote in writing.</li>
 <li>Store your documents safely, tell your family where to find them, and review your plan each year.</li>
-<li>For trusted guidance, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For trusted guidance, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -616,7 +616,7 @@ source: "live"
 
 <h3 id="h-case-3-redeemed-in-time"><strong>Case #3: Redeemed in Time</strong></h3>
 
-<p>Maria, 62, was about to sign with a company charging her $82/month for $10,000 in coverage. Her grandson urged her to speak to the Final Expense Guy at <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong>.</p>
+<p>Maria, 62, was about to sign with a company charging her $82/month for $10,000 in coverage. Her grandson urged her to speak to Funeral Funds at <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong>.</p>
 
 <p>That agent found her <strong>first-day coverage with a top-rated carrier for $52/month:&#160;</strong>the same benefits, same day-one coverage, but $30 cheaper per month.</p>
 
@@ -628,7 +628,7 @@ source: "live"
 <li>James’s policy paid <strong>nothing</strong> because it only covered accidental deaths – despite what the agent claimed.</li>
 <li>Maria saved $30/month for the <strong>same coverage</strong> by getting help from a trusted expert.</li>
 <li><strong>Always ask</strong> about waiting periods, get everything <strong>in writing</strong>, and shop with an ethical broker.</li>
-<li>Call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to make sure you’re getting the coverage your family can count on.</li>
+<li>Call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to make sure you’re getting the coverage your family can count on.</li>
 </ul>
 
 <hr>
@@ -666,7 +666,7 @@ source: "live"
 <li>If you move or the funeral home closes, your plan may not&#160;<strong>be transferable or refundable.</strong></li>
 <li>“Locked-in pricing” often excludes taxes, fees, and third-party costs that still increase.</li>
 <li>Burial insurance may provide <strong>more flexibility, better protection, and lower monthly costs.</strong></li>
-<li>Before you commit, compare all your options – or call  Randy the Final  Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
+<li>Before you commit, compare all your options – or call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
 </ul>
 
 <hr>
@@ -679,16 +679,16 @@ source: "live"
 
 <p>Call me today for a free quote!</p>
 
-<p>Randy VanderVaate<br>The Final Expense Guy<br><a href="/">fexguy.com<br></a><strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>
+<p>Randy VanderVaate<br>Funeral Funds<br><a href="/">funeralfunds.com<br></a><strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>
 
 <hr>
 
 <figure><img decoding="async" loading="lazy" width="667" height="1024" src="/wp-content/uploads/2025/05/FEXGUY.COM-BOOK-LAST-PAGE-667x1024.png" alt=""></figure>
 
-<p id="h-2025-final-expense-guy-all-rights-reserved-no-part-of-this-publication-may-be-copied-reproduced-stored-in-a-retrieval-system-or-transmitted-in-any-form-or-by-any-means-electronic-mechanical-photocopying-recording-or-otherwise-without-the-prior-written-permission-of-the-author-except-in-the-case-of-brief-quotations-used-for-the-purposes-of-review-or-commentary" class="as-h6">© 2025 Final Expense Guy. All rights reserved.<br>No part of this publication may be copied, reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations used for the purposes of review or commentary.</p>
+<p id="h-2025-final-expense-guy-all-rights-reserved-no-part-of-this-publication-may-be-copied-reproduced-stored-in-a-retrieval-system-or-transmitted-in-any-form-or-by-any-means-electronic-mechanical-photocopying-recording-or-otherwise-without-the-prior-written-permission-of-the-author-except-in-the-case-of-brief-quotations-used-for-the-purposes-of-review-or-commentary" class="as-h6">© 2025 Funeral Funds. All rights reserved.<br>No part of this publication may be copied, reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations used for the purposes of review or commentary.</p>
 
 <p id="h-this-book-is-intended-for-informational-and-educational-purposes-only-it-does-not-constitute-legal-financial-tax-or-insurance-advice-while-efforts-have-been-made-to-ensure-the-accuracy-of-the-content-at-the-time-of-publication-laws-products-and-regulations-may-change-and-the-author-assumes-no-responsibility-for-any-errors-omissions-or-outcomes-related-to-the-use-of-this-information" class="as-h6">This book is intended for informational and educational purposes only. It does not constitute legal, financial, tax, or insurance advice. While efforts have been made to ensure the accuracy of the content at the time of publication, laws, products, and regulations may change, and the author assumes no responsibility for any errors, omissions, or outcomes related to the use of this information.</p>
 
 <p id="h-before-making-any-decisions-regarding-insurance-coverage-or-financial-planning-you-are-strongly-advised-to-consult-with-a-licensed-insurance-agent-or-financial-professional-who-understands-your-situation" class="as-h6">Before making any decisions regarding insurance coverage or financial planning, you are strongly advised to consult with a licensed insurance agent or financial professional who understands your situation.</p>
 
-<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: fexguy.com – <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>
+<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: funeralfunds.com – <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>

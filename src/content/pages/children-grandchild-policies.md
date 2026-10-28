@@ -3,7 +3,7 @@ title: "Life Insurance for Children and Grandchildren"
 description: "Learn how life insurance for children and grandchildren works, who can apply, what children's whole life covers, and what grandparents should know before buying."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/children-grandchild-policies/"
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/children-grandchild-policies/#webpage\",\"url\":\"https://fexguy.com/children-grandchild-policies/\",\"name\":\"Life Insurance for Children and Grandchildren\",\"datePublished\":\"2023-02-09T08:23:30-06:00\",\"dateModified\":\"2026-10-07\"}"]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/children-grandchild-policies/#webpage\",\"url\":\"https://funeralfunds.com/children-grandchild-policies/\",\"name\":\"Life Insurance for Children and Grandchildren\",\"datePublished\":\"2023-02-09T08:23:30-06:00\",\"dateModified\":\"2026-10-07\"}"]
 sidebar: true
 source: "new"
 ---

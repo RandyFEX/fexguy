@@ -3,7 +3,7 @@ title: "Affordable Burial Insurance with Arthritis - [New & Updated]"
 description: "Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/burial-insurance/burial-insurance-arthritis/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"property":"og:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."},{"property":"og:url","content":"https://fexguy.com/burial-insurance/burial-insurance-arthritis/"},{"property":"og:site_name","content":"Final Expense Guy"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"name":"twitter:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."}]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"property":"og:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."},{"property":"og:url","content":"https://funeralfunds.com/burial-insurance/burial-insurance-arthritis/"},{"property":"og:site_name","content":"Funeral Funds"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Affordable Burial Insurance with Arthritis - [New & Updated]"},{"name":"twitter:description","content":"Life insurance, final expense, or burial insurance with arthritis, rheumatoid arthritis, osteoarthritis, or gout is available..."}]
 source: "wordpress-export"
 sidebar: true
 ---
@@ -42,7 +42,7 @@ sidebar: true
 <li><a href="#burial-insurance-riders">Burial Insurance Riders</a></li>
 <li><a href="#getting-the-best-rates">Getting The Best Rates</a></li>
 <li><a href="#information-we-need">Information We Need</a></li>
-<li><a href="#how-can-final-expense-guy-help">How Can Final Expense Guy Help</a></li>
+<li><a href="#how-can-final-expense-guy-help">How Can Funeral Funds Help</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </td>
@@ -110,7 +110,7 @@ sidebar: true
 <table>
 <thead>
 <tr>
-<th>FEX GUY PLAN BENEFITS</th>
+<th>FUNERAL FUNDS PLAN BENEFITS</th>
 <th>Included</th>
 </tr>
 </thead>
@@ -407,11 +407,11 @@ sidebar: true
 
 <p>You don't need to quit smoking before getting burial insurance. We work with some life insurance companies that offer the best rate for smokers.</p>
 
-<table class="table-wrap" id="tablepress-24"><thead><tr><th>GETTING THE BEST RATE</th><th><span class="visually-hidden">Effect on price</span></th></tr></thead><tbody><tr><td>Younger</td><td>Less Expensive</td></tr><tr><td>Older</td><td>More Expensive</td></tr><tr><td>Healthier </td><td>Less Expensive</td></tr><tr><td>Television Ads</td><td>More Expensive</td></tr><tr><td>Junk Mail</td><td>More Expensive</td></tr><tr><td>No Health Questions</td><td>More Expensive</td></tr><tr><td>Final Expense Guy</td><td>Less Expensive</td></tr></tbody></table>
+<table class="table-wrap" id="tablepress-24"><thead><tr><th>GETTING THE BEST RATE</th><th><span class="visually-hidden">Effect on price</span></th></tr></thead><tbody><tr><td>Younger</td><td>Less Expensive</td></tr><tr><td>Older</td><td>More Expensive</td></tr><tr><td>Healthier </td><td>Less Expensive</td></tr><tr><td>Television Ads</td><td>More Expensive</td></tr><tr><td>Junk Mail</td><td>More Expensive</td></tr><tr><td>No Health Questions</td><td>More Expensive</td></tr><tr><td>Funeral Funds</td><td>Less Expensive</td></tr></tbody></table>
 
 <p>Today is the best time to get burial insurance with arthritis. Each year you procrastinate, you pay a higher premium.</p>
 
-<p>And the best tip to get the best insurance rates is to work with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Final Expense Guy</a>.</p>
+<p>And the best tip to get the best insurance rates is to work with an independent life insurance agency like <a href="/" target="_blank" rel="noreferrer noopener">Funeral Funds</a>.</p>
 
 <h2 id="information-we-need"><br><strong>Information we need to help you if you have arthritis</strong></h2>
 
@@ -595,5 +595,5 @@ sidebar: true
 
 <ul>
 <li>Apply for a first-day coverage insurance plan. First-day coverage plans do not require a medical exam.</li>
-<li>Let our agents in Final Expense Guy shop around and compare life insurance rates from different companies.</li>
+<li>Let our agents in Funeral Funds shop around and compare life insurance rates from different companies.</li>
 </ul>

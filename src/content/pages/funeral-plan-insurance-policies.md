@@ -3,8 +3,8 @@ title: "Funeral Plan Insurance Policies [Get Funeral Insurance Info]"
 description: "Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid"
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/funeral-plan-insurance-policies/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Funeral Plan Insurance Policies [Get Funeral Insurance Info]"},{"property":"og:description","content":"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid"},{"property":"og:url","content":"https://fexguy.com/funeral-plan-insurance-policies/"},{"property":"og:site_name","content":"Final Expense Guy"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-16T17:31:28-05:00"},{"property":"article:published_time","content":"2026-04-16T17:30:52-05:00"},{"property":"article:modified_time","content":"2026-04-16T17:31:28-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Funeral Plan Insurance Policies [Get Funeral Insurance Info]"},{"name":"twitter:description","content":"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Final Expense Guy"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"25 minutes"}]
-jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://fexguy.com/#organization\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://fexguy.com/#logo\",\"url\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"contentUrl\":\"https://fexguy.com/wp-content/uploads/2025/09/FEX-GUY-SQUALE-FB-AD-IMAGE.png\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\",\"width\":\"1125\",\"height\":\"1125\"}},{\"@type\":\"WebSite\",\"@id\":\"https://fexguy.com/#website\",\"url\":\"https://fexguy.com\",\"name\":\"Final Expense Guy\",\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://fexguy.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/\",\"name\":\"Funeral Plan Insurance Policies\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#webpage\",\"url\":\"https://fexguy.com/funeral-plan-insurance-policies/\",\"name\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"datePublished\":\"2026-04-16T17:30:52-05:00\",\"dateModified\":\"2026-04-16T17:31:28-05:00\",\"isPartOf\":{\"@id\":\"https://fexguy.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\",\"url\":\"https://fexguy.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Final Expense Guy\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://fexguy.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"keywords\":\"funeral plan insurance policies\",\"datePublished\":\"2026-04-16T17:30:52-05:00\",\"dateModified\":\"2026-04-16T17:31:28-05:00\",\"author\":{\"@id\":\"https://fexguy.com/author/rvanderv8/\",\"name\":\"Final Expense Guy\"},\"publisher\":{\"@id\":\"https://fexguy.com/#organization\"},\"description\":\"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid\",\"name\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#richSnippet\",\"isPartOf\":{\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://fexguy.com/funeral-plan-insurance-policies/#webpage\"}}]}"]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"Funeral Plan Insurance Policies [Get Funeral Insurance Info]"},{"property":"og:description","content":"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid"},{"property":"og:url","content":"https://funeralfunds.com/funeral-plan-insurance-policies/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"article:section","content":"Uncategorized"},{"property":"og:updated_time","content":"2026-04-16T17:31:28-05:00"},{"property":"article:published_time","content":"2026-04-16T17:30:52-05:00"},{"property":"article:modified_time","content":"2026-04-16T17:31:28-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Funeral Plan Insurance Policies [Get Funeral Insurance Info]"},{"name":"twitter:description","content":"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid"},{"name":"twitter:label1","content":"Written by"},{"name":"twitter:data1","content":"Funeral Funds"},{"name":"twitter:label2","content":"Time to read"},{"name":"twitter:data2","content":"25 minutes"}]
+jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1986\",\"height\":\"433\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/\",\"name\":\"Funeral Plan Insurance Policies\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#webpage\",\"url\":\"https://funeralfunds.com/funeral-plan-insurance-policies/\",\"name\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"datePublished\":\"2026-04-16T17:30:52-05:00\",\"dateModified\":\"2026-04-16T17:31:28-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"keywords\":\"funeral plan insurance policies\",\"datePublished\":\"2026-04-16T17:30:52-05:00\",\"dateModified\":\"2026-04-16T17:31:28-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"description\":\"Funeral plan insurance policies, also known as funeral plans, are one of the ways to have peace of mind knowing your funeral cost will be paid\",\"name\":\"Funeral Plan Insurance Policies [Get Funeral Insurance Info]\",\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/funeral-plan-insurance-policies/#webpage\"}}]}"]
 source: "live"
 sidebar: true
 ---
@@ -17,7 +17,7 @@ sidebar: true
 
 <p>Written by <a rel="noreferrer noopener" href="/randy-vandervaate/" target="_blank">Randy VanderVaate</a></p>
 
-<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Final Expense Guy</p>
+<p><a href="/licenses/" target="_blank" rel="noreferrer noopener">Licensed Agent</a> | <a href="/about/" target="_blank" rel="noreferrer noopener">Founder</a> of Funeral Funds</p>
 
 <p>✓ Verified ✓ | View Our <a href="/editorial-guidelines/" target="_blank" rel="noreferrer noopener">Editorial Guidelines</a></p>
 
@@ -55,7 +55,7 @@ sidebar: true
 <li><a href="#alternatives-to-a-funeral-plan-or-funeral-insurance">Alternatives To A Funeral Plan Or Funeral Insurance</a></li>
 <li><a href="#getting-the-best-rates-on-final-expense-insurance">Getting The Best Rates On Final Expense Insurance</a></li>
 <li><a href="#what-kind-of-burial-policies-should-i-avoid">What Kind Of Burial Policies Should I Avoid?</a></li>
-<li><a href="#how-can-final-expense-guy-help-me">How Can Final Expense Guy Help Me?</a></li>
+<li><a href="#how-can-final-expense-guy-help-me">How Can Funeral Funds Help Me?</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
 </ul>
 </td>
@@ -289,7 +289,7 @@ sidebar: true
 
 <p>If you are interested in comparing life insurance policies with Gerber Life,&#160; Globe Life,&#160;and AARP New York Life,&#160; we have reviews to explore before you buy.</p>
 
-<p>When you are ready to compare life insurance coverage and the premiums available, Final Expense Guy can help you. We work with many top-rated final expense life insurance no-exam companies in the market today. We can supply you with all the essential information you need to make a well-informed insurance-buying decision.</p>
+<p>When you are ready to compare life insurance coverage and the premiums available, Funeral Funds can help you. We work with many top-rated final expense life insurance no-exam companies in the market today. We can supply you with all the essential information you need to make a well-informed insurance-buying decision.</p>
 
 <h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
@@ -299,7 +299,7 @@ sidebar: true
 
 <p>Everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
-<p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in burial insurance</strong>, like Final Expense Guy, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
+<p>To make a long story short,<strong> it is better to shop for burial policies with a specialist in burial insurance</strong>, like Funeral Funds, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
 <h3><strong>Increasing price policies</strong></h3>
 
@@ -315,7 +315,7 @@ sidebar: true
 
 <p><strong>Avoid policies that increase in price yearly or end at a certain age. You don’t want your family to get hung out to dry when they need this coverage the most.</strong></p>
 
-<h3><br><strong>Why choose Final Expense Guy for my burial policy?</strong></h3>
+<h3><br><strong>Why choose Funeral Funds for my burial policy?</strong></h3>
 
 <p>Most life insurance agents are fine, respectable people.</p>
 
@@ -393,7 +393,7 @@ sidebar: true
 
 <p><br><strong>Who is the best funeral plan provider?</strong></p>
 
-<p>Funeral plan providers offer affordable plans with various options, so you can choose one that fits your preferences. Check out our <strong>Top 10 final expense companies. </strong>https://fexguy.com/top-10-final-expense-life-insurance-companies/</p>
+<p>Funeral plan providers offer affordable plans with various options, so you can choose one that fits your preferences. Check out our <strong>Top 10 final expense companies. </strong>https://funeralfunds.com/top-10-final-expense-life-insurance-companies/</p>
 
 <p><br><strong>What happens if you have funeral insurance?</strong></p>
 
@@ -495,11 +495,11 @@ sidebar: true
 
 <p>You need to contact an independent insurance agency specializing in final expense insurance policies for all the details, comparisons, and costs of final expense funeral plans.</p>
 
-<h2 class="as-h5">About Final Expense Guy</h2>
+<h2 class="as-h5">About Funeral Funds</h2>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img decoding="async" loading="lazy" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="About Final Expense Guy"></picture>
 
-<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.fexguy.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
+<p>Randy VanderVaate created the Final Expense Guy brand, previously known as Funeral Funds of America, to give people clear and simple help with life insurance. He’s licensed in most states and works with clients who need whole life, burial, cremation, funeral coverage, term life, disability insurance, or IUL information. Randy uses every modern tool available to help people qualify for the lowest rates. He works with top carriers that offer strong pricing and flexible underwriting. He also teaches through articles and videos that use plain language, accurate details, and practical steps people can follow to make smart financial decisions. Find out more about me and my NPN (National Producer Number) and state licenses at <a href="/about/" target="_blank" rel="noopener">www.funeralfunds.com/about</a>. Here is a link to my <a href="/editorial-guidelines/" target="_blank" rel="noopener">editorial guidelines</a>.&#160;&#160;</p>
 
 <h2 class="as-h5">Keep reading</h2>
 
@@ -528,7 +528,7 @@ June 20, 2022 at 2:29 pm
 <div class="comment-replies">
 <div class="comment" id="comment-28625">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p><a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
+<p><a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 March 27, 2023 at 11:16 am                    
 </div>
@@ -544,7 +544,7 @@ August 13, 2022 at 5:16 pm
 <div class="comment-replies">
 <div class="comment" id="comment-28624">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p><a href="/free-quote/" rel="ugc">https://fexguy.com/free-quote/</a></p>
+<p><a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 March 27, 2023 at 11:14 am                    
 </div>

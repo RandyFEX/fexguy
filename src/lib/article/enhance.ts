@@ -279,7 +279,7 @@ export function enhanceArticle(
     },
   );
   rest = rest.replace(
-    /<h2[^>]*>\s*About Final Expense Guy\s*<\/h2>\s*(?:<p>\s*<picture>[\s\S]*?<\/picture>\s*<\/p>\s*)?<p>\s*Randy VanderVaate[\s\S]*?<\/p>\s*/,
+    /<h2[^>]*>\s*About (?:Final Expense Guy|Funeral Funds)\s*<\/h2>\s*(?:<p>\s*<picture>[\s\S]*?<\/picture>\s*<\/p>\s*)?<p>\s*Randy VanderVaate[\s\S]*?<\/p>\s*/,
     () => {
       report.oldBio = true;
       return '';

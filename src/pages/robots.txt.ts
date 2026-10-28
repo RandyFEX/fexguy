@@ -21,7 +21,7 @@ export const GET: APIRoute = ({ site }) => {
         `Sitemap: ${sitemap}`,
         '',
       ]
-    : ['# Indexing disabled: this is not the production FEXGUY.com site.', 'User-agent: *', 'Disallow: /', ''];
+    : ['# Indexing disabled: this is not the production FuneralFunds.com site.', 'User-agent: *', 'Disallow: /', ''];
 
   return new Response(body.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 };

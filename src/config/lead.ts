@@ -51,6 +51,6 @@ export const lead = {
     metaPixelId: '2351342698972751',
     /** Tracking runs only on these hostnames. Everywhere else (local dev,
      * Vercel previews) events are logged to the console instead. */
-    productionHosts: ['fexguy.com', 'www.fexguy.com'],
+    productionHosts: ['funeralfunds.com', 'www.funeralfunds.com'],
   },
 } as const;

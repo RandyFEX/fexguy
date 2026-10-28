@@ -23,8 +23,22 @@ is in place; see src/content/README.md for how pages were migrated.
 - Phase 1 is an exact migration: don't change any migrated page's URL,
   title, meta description, H1, body content, robots, canonical, social
   tags, or JSON-LD without Randy's approval.
+- **Current brand: Funeral Funds** (Randy, October 2026, FuneralFunds.com
+  migration branch). Funeral Funds is the only current public-facing brand;
+  the website is FuneralFunds.com. Author: Randy VanderVaate (never replaced
+  by a company name); affiliation "Founder of Funeral Funds"; legal operator
+  Saturn Street, LLC (no DBA registration is asserted). Final Expense Guy,
+  FEX Guy, FEXGUY and FEXGuy.com never appear in current public content.
+  Allowed exceptions: the history on /funeral-funds-of-america/ and /about/,
+  published press-article titles on /randy-vandervaate/, original comment
+  author names, customer reviews and testimonials (never edited), the
+  Organization JSON-LD `alternateName: "Final Expense Guy"` (former name;
+  never the current organization, publisher, author affiliation or website
+  name), and technical references to the old domain (redirects, the
+  old-hosts redirect project, tracking hosts). Older entries below that
+  describe Final Expense Guy / FEXGuy.com as the current brand are history.
 - **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
-  as a FEXGuy.com / Final Expense Guy / Randy / quote / sales contact number.
+  as a Funeral Funds / FuneralFunds.com / Randy / quote / sales contact number.
   888-656-4648 is Randy's TV/streaming (CTV, currently Roku only) ad number:
   it appears only on the Roku landing page /roku/ (Randy, October 2026;
   `tel:8886564648`, noindex, not linked from navigation or other pages) and
@@ -81,7 +95,9 @@ is in place; see src/content/README.md for how pages were migrated.
   its -old slug), /selling-a-burial-plot/ (draft not restored; don't rebuild
   this topic unless Randy asks — its traffic was people selling cemetery
   plots), /how-to-write-an-obituary/ (same: not restored, not rebuilt —
-  bereavement-writing intent). Don't redirect these without Randy's approval.
+  bereavement-writing intent; since V10, Randy, October 2026, it 301s to
+  /12-step-final-planning-guide/, whose Step 5 covers writing an obituary).
+  Don't redirect these without Randy's approval.
 - **The Life Insurance Podcast is permanently retired** (Randy, October 2026).
   Never restore or rebuild it: no podcast pages, episode pages, archives,
   categories, feeds, embeds, navigation or redirects. Its 36 URLs are
@@ -109,21 +125,31 @@ is in place; see src/content/README.md for how pages were migrated.
   /best-bible-verses-for-a-funeral/,
   /how-pilgrim-burials-were-handled-after-the-mayflower-landed-in-the-usa/,
   /mushroom-burial-suit-for-green-burial/, /tree-pod-burial-green-burials/,
-  /burial-insurance-human-composting/, /how-to-select-a-headstone/,
+  /burial-insurance-human-composting/,
   /how-to-liquidate-assets-after-parents-death/,
   /payable-on-death-account-pros-and-cons/, /how-to-post-an-obituary/,
   /medicare-coverage-helpline-review/,
   /jimmie-walker-medicare-tv-commercial-review/,
   /medicare-benefits-questions-line-tv-commercial-review/,
   /joe-namath-medicare-advantage-commercial-review/,
-  /lose-it-review-for-seniors/, /how-to-buy-a-casket/, /how-to-buy-an-urn/,
+  /lose-it-review-for-seniors/,
   /funeral-home-scams/, /funeral-scams-to-watch-out-for-how-to-protect-yourself/,
-  /how-to-sell-parents-house-after-their-death/,
-  /preventing-identity-theft-after-death/, /senior-discounts/,
-  /how-to-choose-a-funeral-home/,
+  /how-to-sell-parents-house-after-their-death/, /senior-discounts/,
   /nursing-home-checklist-find-the-best-nursing-home/,
-  /buying-flowers-for-a-funeral/, /how-to-dispose-of-medications-after-a-death/,
   /the-history-of-life-insurance/, /how-to-get-a-death-certificate/.
+  **V10 reversal** (Randy, October 2026, on the FuneralFunds.com migration
+  branch; evidence: Majestic backlinks and the now-indexable guide): eight
+  former G2 404s 301 to /12-step-final-planning-guide/, whose sections cover
+  their subjects: /how-to-select-a-headstone/, /how-to-buy-a-casket/,
+  /how-to-buy-an-urn/, /how-to-choose-a-funeral-home/,
+  /preventing-identity-theft-after-death/,
+  /how-to-dispose-of-medications-after-a-death/,
+  /best-bible-verses-for-a-funeral/ and /buying-flowers-for-a-funeral/.
+  The articles are not restored. The retiree URLs stay real 404s (Randy
+  rejected redirects in V10: they drew people seeking employer-benefit
+  contacts, not buyers): /burial-life-insurance-for-alcoa-retirees/,
+  /burial-life-insurance-sears-retirees/ and /life-insurance-att-retirees/;
+  never redirect them to /life-insurance-for-employees/ or anywhere else.
 - **Group G3 decided** (Randy, October 2026): the 31 remaining low-traffic
   URLs are intentional real 404s with no redirects (episodes 1 and 16 are in
   the podcast list above; the other 29 follow). Don't redirect old archives,
@@ -433,7 +459,10 @@ is in place; see src/content/README.md for how pages were migrated.
   /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
-  /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
+  /facebook-2/ → /free-quote/, Randy, October 2026). On the FuneralFunds.com
+  migration branch it holds 368: those 310, the 34 V3 historical redirects
+  and the 24 V10 approved rules (V9/V10 reports in RandyFEX/fexguy-monitoring).
+  /free-quote/ is the only quote landing
   page (linked from the homepage); new term-insurance landing pages come later.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
@@ -502,10 +531,11 @@ is in place; see src/content/README.md for how pages were migrated.
   or guardian must sign depends on the insurer and state law (the same
   correction was made on /burial-insurance/on-someone-else/, which links to it).
 - **/funeral-funds-of-america/ rewritten** (Randy, October 2026; `source:
-  "new"`, simple content layout): a short brand-transition notice, "Funeral
-  Funds of America Is Now Final Expense Guy" (2015 start, funeralfunds.com,
-  2025 rebrand, same owner, DBA of Saturn Street, LLC, "licensed in most
-  states", 888-862-9456). No service list, customer counts or licensing
+  "new"`, simple content layout): a short brand-history notice, "Funeral
+  Funds of America and Final Expense Guy Are Now Funeral Funds" (2015 start,
+  funeralfunds.com, 2025 rebrand to Final Expense Guy, 2026 return to
+  Funeral Funds and funeralfunds.com, same owner, operated by Saturn Street,
+  LLC, "licensed in most states", 888-862-9456). No service list, customer counts or licensing
   history. /about/ links to it; it links back to /about/.
 - **/iul-book/iul-church-members-faith-based-communities/ rewritten** (Randy,
   October 2026; `source: "new"`, IUL Playbook section): "IUL for Church
@@ -576,8 +606,9 @@ is in place; see src/content/README.md for how pages were migrated.
   headings, tone, carrier verdicts, old screenshots, the "quoting tool" and
   "few minutes" lines, Adviser/Advisor labels) waits for the later content
   audit.
-- **Funeral Funds branding** (Randy, October 2026): Final Expense Guy was
-  previously Funeral Funds of America. Keep the intentional history (the author
+- **Funeral Funds branding** (Randy, October 2026; superseded on the
+  migration branch by "Current brand: Funeral Funds" above): Final Expense
+  Guy was previously Funeral Funds of America. Keep the intentional history (the author
   bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
   press-article titles/URLs, customer reviews verbatim), ordinary "funeral
   funds" wording, and the JSON-LD `alternateName: "Funeral Funds"`. Obsolete
@@ -846,9 +877,12 @@ scope protection wins.
 
 ## Business identity, legal pages and privacy (Randy, October 2026)
 
-- Legal business: **Saturn Street, LLC, DBA Final Expense Guy** — used on the
-  legal pages and (Randy, October 2026) on /funeral-funds-of-america/ only. The public brand stays Final Expense Guy / FEXGuy.com.
-- Published contact details: website https://fexguy.com, phone 888-862-9456,
+- Legal operator: **Saturn Street, LLC** (Randy, October 2026, migration
+  branch). The legal pages say Saturn Street, LLC operates Funeral Funds;
+  don't assert a DBA registration unless Randy supplies it. The public brand
+  is Funeral Funds / FuneralFunds.com. The /contact/ mailing addressee is
+  "Funeral Funds" (Randy confirmed mail so addressed reaches the address).
+- Published contact details: website https://funeralfunds.com, phone 888-862-9456,
   mailing address **2300 Olympia Drive #270179, Flower Mound, TX 75027** (no
   "Dallas, TX Area" on the address; the old "PO Box 270179" form is retired).
   **Never publish an email address** (also not for privacy requests).
@@ -856,7 +890,7 @@ scope protection wins.
   metadata), and no "24/7" or other availability promise instead.
 - **Licensing wording:** Randy no longer holds licenses in all 50 states. The
   approved public wording is "Licensed in most states." Never write "licensed
-  in all 50 states" (or similar) about Randy/Final Expense Guy; don't publish a
+  in all 50 states" (or similar) about Randy/Funeral Funds; don't publish a
   list of states unless Randy asks (the old 50-state lists on /about/ and
   /licenses/, and the /about/ JSON-LD `providesServiceIn` list, were
   removed). /licenses/ shows the NPN (17792459), Randy's Texas resident
@@ -987,8 +1021,13 @@ scope protection wins.
   the form points to 888-862-9456. The site has no Content Security
   Policy; if one is added it must allow https://challenges.cloudflare.com
   (script and frame). The widget's Cloudflare hostname list must include
-  fexguy.com and www.fexguy.com; on other hosts (Vercel previews, local) the
-  form fails safely. Test with Cloudflare's test site keys (e.g.
+  funeralfunds.com, www.funeralfunds.com, fexguy.com and www.fexguy.com
+  (Randy, October 2026: Turnstile kept for the FuneralFunds.com launch after
+  a brief removal in 71fd098 was reverted); on other hosts (Vercel previews,
+  local) the form fails safely. Server-side verification happens only when
+  Formspark's Spam protection is set to Turnstile with the widget's Secret
+  Key; with it set to None, Formspark ignores the token and the browser
+  check alone can be bypassed by posting to the endpoint directly. Test with Cloudflare's test site keys (e.g.
   1x00000000000000000000BB pass, 2x00000000000000000000BB fail,
   3x00000000000000000000FF interactive), never with real leads.
   /privacy-policy/ discloses Turnstile next to Formspark.
@@ -1041,8 +1080,8 @@ scope protection wins.
   Which pages: `isSearchable()` in `src/lib/pages.ts` — content pages that
   are not draft, noindex, `sitemap: false`, landing layout or /category/
   archives. Frontmatter `search: true|false` overrides it (Randy, October
-  2026): `search: true` on /12-step-final-planning-guide/ (stays noindex for
-  Google); `search: false` on /lbl/, /forms/, /privacy-policy/,
+  2026): `search: true` on /12-step-final-planning-guide/ (indexable since
+  Randy's October 2026 approval); `search: false` on /lbl/, /forms/, /privacy-policy/,
   /funeral-relief-program/, /senior-benefits/, /welcome/. Redirected,
   retired and 404 URLs have no page, so they can't be indexed.
 - /search/ is `noindex, follow` (production), not in the sitemap, llms.txt
