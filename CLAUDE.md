@@ -23,8 +23,22 @@ is in place; see src/content/README.md for how pages were migrated.
 - Phase 1 is an exact migration: don't change any migrated page's URL,
   title, meta description, H1, body content, robots, canonical, social
   tags, or JSON-LD without Randy's approval.
+- **Current brand: Funeral Funds** (Randy, October 2026, FuneralFunds.com
+  migration branch). Funeral Funds is the only current public-facing brand;
+  the website is FuneralFunds.com. Author: Randy VanderVaate (never replaced
+  by a company name); affiliation "Founder of Funeral Funds"; legal operator
+  Saturn Street, LLC (no DBA registration is asserted). Final Expense Guy,
+  FEX Guy, FEXGUY and FEXGuy.com never appear in current public content.
+  Allowed exceptions: the history on /funeral-funds-of-america/ and /about/,
+  published press-article titles on /randy-vandervaate/, original comment
+  author names, customer reviews and testimonials (never edited), the
+  Organization JSON-LD `alternateName: "Final Expense Guy"` (former name;
+  never the current organization, publisher, author affiliation or website
+  name), and technical references to the old domain (redirects, the
+  old-hosts redirect project, tracking hosts). Older entries below that
+  describe Final Expense Guy / FEXGuy.com as the current brand are history.
 - **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
-  as a FEXGuy.com / Final Expense Guy / Randy / quote / sales contact number.
+  as a Funeral Funds / FuneralFunds.com / Randy / quote / sales contact number.
   888-656-4648 is Randy's TV/streaming (CTV, currently Roku only) ad number:
   it appears only on the Roku landing page /roku/ (Randy, October 2026;
   `tel:8886564648`, noindex, not linked from navigation or other pages) and
@@ -517,10 +531,11 @@ is in place; see src/content/README.md for how pages were migrated.
   or guardian must sign depends on the insurer and state law (the same
   correction was made on /burial-insurance/on-someone-else/, which links to it).
 - **/funeral-funds-of-america/ rewritten** (Randy, October 2026; `source:
-  "new"`, simple content layout): a short brand-transition notice, "Funeral
-  Funds of America Is Now Final Expense Guy" (2015 start, funeralfunds.com,
-  2025 rebrand, same owner, DBA of Saturn Street, LLC, "licensed in most
-  states", 888-862-9456). No service list, customer counts or licensing
+  "new"`, simple content layout): a short brand-history notice, "Funeral
+  Funds of America and Final Expense Guy Are Now Funeral Funds" (2015 start,
+  funeralfunds.com, 2025 rebrand to Final Expense Guy, 2026 return to
+  Funeral Funds and funeralfunds.com, same owner, operated by Saturn Street,
+  LLC, "licensed in most states", 888-862-9456). No service list, customer counts or licensing
   history. /about/ links to it; it links back to /about/.
 - **/iul-book/iul-church-members-faith-based-communities/ rewritten** (Randy,
   October 2026; `source: "new"`, IUL Playbook section): "IUL for Church
@@ -591,8 +606,9 @@ is in place; see src/content/README.md for how pages were migrated.
   headings, tone, carrier verdicts, old screenshots, the "quoting tool" and
   "few minutes" lines, Adviser/Advisor labels) waits for the later content
   audit.
-- **Funeral Funds branding** (Randy, October 2026): Final Expense Guy was
-  previously Funeral Funds of America. Keep the intentional history (the author
+- **Funeral Funds branding** (Randy, October 2026; superseded on the
+  migration branch by "Current brand: Funeral Funds" above): Final Expense
+  Guy was previously Funeral Funds of America. Keep the intentional history (the author
   bio "previously known as Funeral Funds of America", /funeral-funds-of-america/,
   press-article titles/URLs, customer reviews verbatim), ordinary "funeral
   funds" wording, and the JSON-LD `alternateName: "Funeral Funds"`. Obsolete
@@ -861,9 +877,12 @@ scope protection wins.
 
 ## Business identity, legal pages and privacy (Randy, October 2026)
 
-- Legal business: **Saturn Street, LLC, DBA Final Expense Guy** — used on the
-  legal pages and (Randy, October 2026) on /funeral-funds-of-america/ only. The public brand stays Final Expense Guy / FEXGuy.com.
-- Published contact details: website https://fexguy.com, phone 888-862-9456,
+- Legal operator: **Saturn Street, LLC** (Randy, October 2026, migration
+  branch). The legal pages say Saturn Street, LLC operates Funeral Funds;
+  don't assert a DBA registration unless Randy supplies it. The public brand
+  is Funeral Funds / FuneralFunds.com. The /contact/ mailing addressee is
+  "Funeral Funds" (Randy confirmed mail so addressed reaches the address).
+- Published contact details: website https://funeralfunds.com, phone 888-862-9456,
   mailing address **2300 Olympia Drive #270179, Flower Mound, TX 75027** (no
   "Dallas, TX Area" on the address; the old "PO Box 270179" form is retired).
   **Never publish an email address** (also not for privacy requests).
@@ -871,7 +890,7 @@ scope protection wins.
   metadata), and no "24/7" or other availability promise instead.
 - **Licensing wording:** Randy no longer holds licenses in all 50 states. The
   approved public wording is "Licensed in most states." Never write "licensed
-  in all 50 states" (or similar) about Randy/Final Expense Guy; don't publish a
+  in all 50 states" (or similar) about Randy/Funeral Funds; don't publish a
   list of states unless Randy asks (the old 50-state lists on /about/ and
   /licenses/, and the /about/ JSON-LD `providesServiceIn` list, were
   removed). /licenses/ shows the NPN (17792459), Randy's Texas resident

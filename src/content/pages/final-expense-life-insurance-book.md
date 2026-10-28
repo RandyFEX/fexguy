@@ -70,7 +70,7 @@ source: "live"
 <li>Watch out for misleading phrases like “Guaranteed Acceptance,” “$9.95 per unit,” or “No Medical Exam”: they usually mean <strong>2-year waiting periods and overpriced plans.</strong></li>
 <li>Claims like “Pays in 24 hours,” “State Regulated,” or “Enrollment Ends Soon” are <strong>false or deceptive.</strong></li>
 <li>Giving your info to these ads can lead to <strong>endless robocalls</strong> and unwanted pressure.</li>
-<li>Work with a trusted, independent expert like Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to avoid the “bait &amp; switch”.</li>
+<li>Work with a trusted, independent expert like Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to avoid the “bait &amp; switch”.</li>
 </ul>
 
 <hr>
@@ -105,7 +105,7 @@ source: "live"
 <li>Avoid <strong>term life</strong> plans – they get more expensive every 5 years and <strong>cancel automatically by age 80.</strong></li>
 <li>If you outlive term life, your family gets <strong>nothing</strong>, no matter how long you’ve paid.</li>
 <li><strong>IULs are not designed for final expense</strong> and often come with high fees and risky performance.</li>
-<li>For the right policy at the right price, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For the right policy at the right price, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -148,7 +148,7 @@ source: "live"
 <li><strong>2-year wait plans</strong> only pay full benefits after two years and cost more than necessary.</li>
 <li>If death occurs early, your family may only receive a <strong>refund</strong>, not the full payout.</li>
 <li>Many call centers push wait-period plans to <strong>avoid underwriting</strong> and <strong>earn higher commissions.</strong></li>
-<li>Don’t settle – if you qualify for 1st-day coverage, Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
+<li>Don’t settle – if you qualify for 1st-day coverage, Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
 </ul>
 
 <hr>
@@ -196,7 +196,7 @@ source: "live"
 <li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage, more than <strong>double</strong> what Funeral Funds can offer.</li>
 <li>“$1 a day” ads use <strong>teaser rates</strong> that apply only to younger, healthy individuals; real costs are much higher for everyone else.</li>
 <li>These ads are designed to collect your info and lead to <strong>aggressive sales calls</strong>, not to give you the best coverage.</li>
-<li>Don’t overpay – call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
+<li>Don’t overpay – call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
 </ul>
 
 <hr>
@@ -238,7 +238,7 @@ source: "live"
 <li>Your prescriptions, hospital records, and MIB report are still being reviewed behind the scenes.</li>
 <li>Many people can still qualify for 1st-day coverage, even with severe conditions like COPD, diabetes, heart issues, and more.</li>
 <li>Guaranteed issue plans skip health checks but come with a 2-year waiting period and higher costs.</li>
-<li>If you’re not sure what you qualify for, get a free expert review by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>If you’re not sure what you qualify for, get a free expert review by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -269,7 +269,7 @@ source: "live"
 <li>Final expense insurance is regulated by states, but <strong>never</strong> endorsed or paid for by the government.</li>
 <li>These deceptive ads twist regulatory language to look official and get your personal info.</li>
 <li>Don’t trust companies that use misleading phrases like “state-approved” or “new government benefit.”</li>
-<li>If you’re unsure what’s real and what’s a scam, get a free expert review by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>If you’re unsure what’s real and what’s a scam, get a free expert review by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -306,7 +306,7 @@ source: "live"
 <li>Most term policies <strong>cancel automatically by age 80</strong>, even if you’ve paid for decades.</li>
 <li>If you outlive the term, you get <strong>no money back, no coverage, and no refund.</strong></li>
 <li>Final expense needs call for <strong>permanent, fixed-rate whole life insurance</strong>, not expiring term plans.</li>
-<li>For a personalized, affordable plan that lasts for life, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert help.</li>
+<li>For a personalized, affordable plan that lasts for life, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert help.</li>
 </ul>
 
 <h2 id="Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation"><strong>Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</strong></h2>
@@ -333,7 +333,7 @@ source: "live"
 <li>Phrases like “new benefit for those on Social Security” are designed to create <strong>false urgency.</strong></li>
 <li>These tactics pressure seniors into buying overpriced policies with <strong>2-year waiting periods.</strong></li>
 <li>Many people on Social Security <strong>qualify for better, lower-cost, first-day coverage.</strong></li>
-<li>Get the truth and a fair review of your options by calling Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>Get the truth and a fair review of your options by calling Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -356,7 +356,7 @@ source: "live"
 <li>Even accidental mistakes on your application can lead to a <strong>denied payout</strong> during that time.</li>
 <li>A <strong>suicide clause</strong> also applies for the first two years – benefits may not be paid if triggered.</li>
 <li>Always review your policy carefully and be truthful on your application to protect your loved ones.</li>
-<li>For help understanding what you’re really signing up for, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For help understanding what you’re really signing up for, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -385,7 +385,7 @@ source: "live"
 <li>Overpriced plans often include hidden fees, health penalties, and unnecessary riders.</li>
 <li>Most people don’t realize they’re <strong>overpaying</strong> by $20–$80/month for the same coverage.</li>
 <li>Work with an ethical, independent broker who shops around for <strong>you</strong>, not for their wallet.</li>
-<li>For a fair and honest review of your options, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For a fair and honest review of your options, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -418,7 +418,7 @@ source: "live"
 <li>Captive agents can only sell one company’s plans – even if better options exist.</li>
 <li>Call center reps and lead vendors often rush you, skip fine print, and pressure you to buy fast.</li>
 <li>A good agent listens, explains your real options, and puts your needs before their commission.</li>
-<li>For honest advice and real coverage, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For honest advice and real coverage, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -458,7 +458,7 @@ source: "live"
 <li>You may qualify for <strong>thousands more in coverage</strong> or lower premiums just by switching providers.</li>
 <li>If your current policy has a <strong>2-year waiting period</strong>, you might now qualify for <strong>1st-day coverage.</strong></li>
 <li>Insurance companies <strong>won’t upgrade you automatically</strong> – it’s up to you to re-shop.</li>
-<li>For a fast, no-obligation review of your policy, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For a fast, no-obligation review of your policy, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -503,7 +503,7 @@ source: "live"
 <li>Claims during the first 2 years may be <strong>investigated</strong>, which can cause delays.</li>
 <li>Payouts typically arrive within <strong>7-30 days</strong>, longer if paperwork is missing or incomplete.</li>
 <li>Keep your policy in a <strong>safe place</strong>, share details with your family, and list your agent’s contact info.</li>
-<li>For help planning ahead, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For help planning ahead, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -589,7 +589,7 @@ source: "live"
 <li>Ask direct questions: Is the agent independent? How many companies do they represent?</li>
 <li>Never give banking info before reviewing your quote in writing.</li>
 <li>Store your documents safely, tell your family where to find them, and review your plan each year.</li>
-<li>For trusted guidance, call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
+<li>For trusted guidance, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
@@ -628,7 +628,7 @@ source: "live"
 <li>James’s policy paid <strong>nothing</strong> because it only covered accidental deaths – despite what the agent claimed.</li>
 <li>Maria saved $30/month for the <strong>same coverage</strong> by getting help from a trusted expert.</li>
 <li><strong>Always ask</strong> about waiting periods, get everything <strong>in writing</strong>, and shop with an ethical broker.</li>
-<li>Call Randy the Final Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> to make sure you’re getting the coverage your family can count on.</li>
+<li>Call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to make sure you’re getting the coverage your family can count on.</li>
 </ul>
 
 <hr>
@@ -666,7 +666,7 @@ source: "live"
 <li>If you move or the funeral home closes, your plan may not&#160;<strong>be transferable or refundable.</strong></li>
 <li>“Locked-in pricing” often excludes taxes, fees, and third-party costs that still increase.</li>
 <li>Burial insurance may provide <strong>more flexibility, better protection, and lower monthly costs.</strong></li>
-<li>Before you commit, compare all your options – or call  Randy the Final  Expense Guy at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
+<li>Before you commit, compare all your options – or call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
 </ul>
 
 <hr>

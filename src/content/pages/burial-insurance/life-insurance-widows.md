@@ -712,8 +712,6 @@ sidebar: true
 </tbody>
 </table>
 
-<p>✅ Now guaranteed for all FEXGUY tables: Header perfectly centered across all browser</p>
-
 <p><br>For widows aged 50 to 85, final expense whole life is almost always the smartest option. It delivers permanent protection, stable premiums, and no surprise expiration date.</p>
 
 <p>You also don’t outlive the coverage, and you don’t face renewal rate spikes like term life.</p>

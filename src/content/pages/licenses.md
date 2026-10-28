@@ -10,13 +10,13 @@ source: "live"
 
 <h1>Licenses &amp; Lines Of Authority</h1>
 
-<p>The Final Expense Guy is a business entity based in Texas and is licensed to sell life insurance products in most states.</p>
+<p>Funeral Funds is a business based in Texas and is licensed to sell life insurance products in most states.</p>
 
 <figure class="randy-portrait"><img decoding="async" loading="lazy" width="500" height="500" src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png" alt=""></figure>
 
 <h2 id="h-lines-of-authority"><br><strong>Lines Of Authority</strong></h2>
 
-<p>Randall “Randy” VanderVaate is the CEO, founder, and designated licensed life insurance agent/broker/producer for the Final Expense Guy.</p>
+<p>Randall “Randy” VanderVaate is the CEO, founder, and designated licensed life insurance agent/broker/producer for Funeral Funds.</p>
 
 <p>Randy is licensed to sell many types of insurance in the United States, including accidental death, annuities, disability, term life, universal life, and permanent whole life.</p>
 

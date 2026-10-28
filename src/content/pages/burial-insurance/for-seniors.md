@@ -406,7 +406,7 @@ sidebar: true
 
 <p>Moral of the story? Avoid the overhyped, overpriced policies and go with someone who puts your needs first. Your wallet, and your family, will thank you.</p>
 
-<h2 id="how-can-final-expense-guy-help-me"><strong>How can <strong>final expense</strong> guy help you?</strong></h2>
+<h2 id="how-can-final-expense-guy-help-me"><strong>How can Funeral Funds help you?</strong></h2>
 
 <p>Here’s the truth: some agents don’t know what they’re doing and might sell you overpriced burial insurance. Don’t let that happen to you.</p>
 

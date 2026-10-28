@@ -11,7 +11,7 @@ source: "live"
 
 <h1>CONTACT US</h1>
 
-<p><strong><strong>THE FINAL EXPENSE GUY</strong></strong></p>
+<p><strong><strong>FUNERAL FUNDS</strong></strong></p>
 
 <p>Randy VanderVaate<br>President &amp; Licensed Agent<br><em>Term Life &amp; Whole Life Insurance</em></p>
 
@@ -21,7 +21,7 @@ source: "live"
 
 <p><strong>LICENSED</strong><br>In most states</p>
 
-<p><strong>MAILING ADDRESS</strong><br>Final Expense Guy<br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>
+<p><strong>MAILING ADDRESS</strong><br>Funeral Funds<br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>
 
 <p><strong>ALREADY HAVE A POLICY?</strong><br>Need to update a beneficiary, payment information, or contact your insurance company? Visit <a href="/forms/">Policy Support</a>.</p>
 
