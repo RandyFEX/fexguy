@@ -1725,6 +1725,126 @@
       "source": "/burial-insurance-for-native-americans/",
       "destination": "/burial-insurance/native-americans/",
       "statusCode": 301
+    },
+    {
+      "source": "/globe-life-insurance-review/",
+      "destination": "/globe-life-price-increase/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-after-cancer-diagnosis/",
+      "destination": "/burial-insurance/cancer/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-neurological-disorder/",
+      "destination": "/burial-insurance/neurological-disorders/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-pacemaker-2/",
+      "destination": "/burial-insurance/pacemaker/",
+      "statusCode": 301
+    },
+    {
+      "source": "/guaranteed-issue-life-insurance-for-seniors-3/",
+      "destination": "/burial-insurance/guaranteed-issue-life-insurance-for-seniors/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-build-chart/",
+      "destination": "/burial-insurance/build-chart/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance/",
+      "destination": "/burial-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/rvanderv8/",
+      "destination": "/randy-vandervaate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-select-a-headstone/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-dispose-of-medications-after-a-death/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-buy-an-urn/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-buy-a-casket/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-bible-verses-for-a-funeral/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/preventing-identity-theft-after-death/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-choose-a-funeral-home/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/shopping-for-burial-insurance/",
+      "destination": "/buyers-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-by-health-condition/",
+      "destination": "/a-z-health/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/burial-insurance-medicaid/",
+      "destination": "/final-expense-life-insurance-medicaid/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/cancer-insurance/",
+      "destination": "/cancer-insurance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/free-quote-dfw-best/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
+      "source": "/burial-insurance-depression-2/",
+      "destination": "/burial-insurance/depression/",
+      "statusCode": 301
+    },
+    {
+      "source": "/trustage-life-insurance-revie/",
+      "destination": "/trustage-life-insurance-review/",
+      "statusCode": 301
+    },
+    {
+      "source": "/buying-flowers-for-a-funeral/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-write-an-obituary/",
+      "destination": "/12-step-final-planning-guide/",
+      "statusCode": 301
     }
   ],
   "headers": [

@@ -81,7 +81,9 @@ is in place; see src/content/README.md for how pages were migrated.
   its -old slug), /selling-a-burial-plot/ (draft not restored; don't rebuild
   this topic unless Randy asks — its traffic was people selling cemetery
   plots), /how-to-write-an-obituary/ (same: not restored, not rebuilt —
-  bereavement-writing intent). Don't redirect these without Randy's approval.
+  bereavement-writing intent; since V10, Randy, October 2026, it 301s to
+  /12-step-final-planning-guide/, whose Step 5 covers writing an obituary).
+  Don't redirect these without Randy's approval.
 - **The Life Insurance Podcast is permanently retired** (Randy, October 2026).
   Never restore or rebuild it: no podcast pages, episode pages, archives,
   categories, feeds, embeds, navigation or redirects. Its 36 URLs are
@@ -109,21 +111,31 @@ is in place; see src/content/README.md for how pages were migrated.
   /best-bible-verses-for-a-funeral/,
   /how-pilgrim-burials-were-handled-after-the-mayflower-landed-in-the-usa/,
   /mushroom-burial-suit-for-green-burial/, /tree-pod-burial-green-burials/,
-  /burial-insurance-human-composting/, /how-to-select-a-headstone/,
+  /burial-insurance-human-composting/,
   /how-to-liquidate-assets-after-parents-death/,
   /payable-on-death-account-pros-and-cons/, /how-to-post-an-obituary/,
   /medicare-coverage-helpline-review/,
   /jimmie-walker-medicare-tv-commercial-review/,
   /medicare-benefits-questions-line-tv-commercial-review/,
   /joe-namath-medicare-advantage-commercial-review/,
-  /lose-it-review-for-seniors/, /how-to-buy-a-casket/, /how-to-buy-an-urn/,
+  /lose-it-review-for-seniors/,
   /funeral-home-scams/, /funeral-scams-to-watch-out-for-how-to-protect-yourself/,
-  /how-to-sell-parents-house-after-their-death/,
-  /preventing-identity-theft-after-death/, /senior-discounts/,
-  /how-to-choose-a-funeral-home/,
+  /how-to-sell-parents-house-after-their-death/, /senior-discounts/,
   /nursing-home-checklist-find-the-best-nursing-home/,
-  /buying-flowers-for-a-funeral/, /how-to-dispose-of-medications-after-a-death/,
   /the-history-of-life-insurance/, /how-to-get-a-death-certificate/.
+  **V10 reversal** (Randy, October 2026, on the FuneralFunds.com migration
+  branch; evidence: Majestic backlinks and the now-indexable guide): eight
+  former G2 404s 301 to /12-step-final-planning-guide/, whose sections cover
+  their subjects: /how-to-select-a-headstone/, /how-to-buy-a-casket/,
+  /how-to-buy-an-urn/, /how-to-choose-a-funeral-home/,
+  /preventing-identity-theft-after-death/,
+  /how-to-dispose-of-medications-after-a-death/,
+  /best-bible-verses-for-a-funeral/ and /buying-flowers-for-a-funeral/.
+  The articles are not restored. The retiree URLs stay real 404s (Randy
+  rejected redirects in V10: they drew people seeking employer-benefit
+  contacts, not buyers): /burial-life-insurance-for-alcoa-retirees/,
+  /burial-life-insurance-sears-retirees/ and /life-insurance-att-retirees/;
+  never redirect them to /life-insurance-for-employees/ or anywhere else.
 - **Group G3 decided** (Randy, October 2026): the 31 remaining low-traffic
   URLs are intentional real 404s with no redirects (episodes 1 and 16 are in
   the podcast list above; the other 29 follow). Don't redirect old archives,
@@ -433,7 +445,10 @@ is in place; see src/content/README.md for how pages were migrated.
   /category/ archives, the cremation-cost consolidation, /planning-guide/,
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
-  /facebook-2/ → /free-quote/, Randy, October 2026). /free-quote/ is the only quote landing
+  /facebook-2/ → /free-quote/, Randy, October 2026). On the FuneralFunds.com
+  migration branch it holds 368: those 310, the 34 V3 historical redirects
+  and the 24 V10 approved rules (V9/V10 reports in RandyFEX/fexguy-monitoring).
+  /free-quote/ is the only quote landing
   page (linked from the homepage); new term-insurance landing pages come later.
 - Old WordPress drafts are not restored unless Randy decides so page by page.
   /funeral-expenses-people-overlook/ was consolidated into
