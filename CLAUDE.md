@@ -1041,8 +1041,8 @@ scope protection wins.
   Which pages: `isSearchable()` in `src/lib/pages.ts` — content pages that
   are not draft, noindex, `sitemap: false`, landing layout or /category/
   archives. Frontmatter `search: true|false` overrides it (Randy, October
-  2026): `search: true` on /12-step-final-planning-guide/ (stays noindex for
-  Google); `search: false` on /lbl/, /forms/, /privacy-policy/,
+  2026): `search: true` on /12-step-final-planning-guide/ (indexable since
+  Randy's October 2026 approval); `search: false` on /lbl/, /forms/, /privacy-policy/,
   /funeral-relief-program/, /senior-benefits/, /welcome/. Redirected,
   retired and 404 URLs have no page, so they can't be indexed.
 - /search/ is `noindex, follow` (production), not in the sitemap, llms.txt
