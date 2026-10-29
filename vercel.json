@@ -1845,6 +1845,11 @@
       "source": "/how-to-write-an-obituary/",
       "destination": "/12-step-final-planning-guide/",
       "statusCode": 301
+    },
+    {
+      "source": "/funeral-funds-of-america/",
+      "destination": "/",
+      "statusCode": 301
     }
   ],
   "headers": [

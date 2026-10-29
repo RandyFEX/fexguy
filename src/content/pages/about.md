@@ -14,7 +14,7 @@ source: "live"
 
 <p>I’m Randy VanderVaate, the Founder and President of Funeral Funds.</p>
 
-<p>My business began under the <a href="/funeral-funds-of-america/">Funeral Funds of America</a> name and operated as Final Expense Guy from 2025 until 2026.</p>
+<p>My business began under the Funeral Funds of America name and operated as Final Expense Guy from 2025 until 2026.</p>
 
 <p>I’m a national independent life insurance agent <a href="/licenses/" target="_blank" rel="noreferrer noopener">licensed in most states</a> with my main office located in the Dallas, TX area.</p>
 

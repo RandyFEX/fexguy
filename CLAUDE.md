@@ -29,7 +29,7 @@ is in place; see src/content/README.md for how pages were migrated.
   by a company name); affiliation "Founder of Funeral Funds"; legal operator
   Saturn Street, LLC (no DBA registration is asserted). Final Expense Guy,
   FEX Guy, FEXGUY and FEXGuy.com never appear in current public content.
-  Allowed exceptions: the history on /funeral-funds-of-america/ and /about/,
+  Allowed exceptions: the history on /about/,
   published press-article titles on /randy-vandervaate/, original comment
   author names, customer reviews and testimonials (never edited), the
   Organization JSON-LD `alternateName: "Final Expense Guy"` (former name;
@@ -460,7 +460,8 @@ is in place; see src/content/README.md for how pages were migrated.
   /terms-conditions/ → /terms-of-use/, and the five retired legacy quote
   landing pages /start/, /free-quote-fb/, /facebook-1/, /lowest-rates/ and
   /facebook-2/ → /free-quote/, Randy, October 2026). On the FuneralFunds.com
-  migration branch it holds 368: those 310, the 34 V3 historical redirects
+  migration branch it held 368 (369 on main since /funeral-funds-of-america/
+  was removed): those 310, the 34 V3 historical redirects
   and the 24 V10 approved rules (V9/V10 reports in RandyFEX/fexguy-monitoring).
   /free-quote/ is the only quote landing
   page (linked from the homepage); new term-insurance landing pages come later.
@@ -530,6 +531,9 @@ is in place; see src/content/README.md for how pages were migrated.
   per product, never as universal. No blanket consent rule: whether a parent
   or guardian must sign depends on the insurer and state law (the same
   correction was made on /burial-insurance/on-someone-else/, which links to it).
+- **/funeral-funds-of-america/ removed** (Randy, October 2026, after the
+  FuneralFunds.com launch): the page was deleted and 301s to the homepage
+  (vercel.json); /about/ no longer links to it. History of the earlier page:
 - **/funeral-funds-of-america/ rewritten** (Randy, October 2026; `source:
   "new"`, simple content layout): a short brand-history notice, "Funeral
   Funds of America and Final Expense Guy Are Now Funeral Funds" (2015 start,
