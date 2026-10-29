@@ -54,7 +54,38 @@ for (const [term, wording] of FIXTURES) {
 test('CICA Life Insurance is named, with D-1 and D-2 kept separate', { skip }, () => {
   const cica = built.payload.questions.filter((q) => q.carrierId === 'cica-life');
   assert.equal(cica.length, 10);
-  assert.deepEqual([...new Set(cica.map((q) => q.variant))].sort(), ['D-1', 'D-2']);
+  const d = cica.filter((q) => q.number === 'D');
+  assert.deepEqual(d.map((q) => q.variant), ['D-1', 'D-2'], 'question D has two separate versions');
+  assert.notEqual(d[0].text, d[1].text);
+  const r = search(prepare(dataset), 'COPD');
+  const pages = Array.from({ length: r.totalPages }, (_, i) => search(prepare(dataset), 'COPD', { page: i + 1 }));
+  const group = pages.flatMap((p) => p.groups).find((g) => g.carrier === 'CICA Life Insurance');
+  assert.ok(group, 'named exactly "CICA Life Insurance"');
+  assert.ok(group.questions.some((q) => q.variant === 'D-1') && group.questions.some((q) => q.variant === 'D-2'));
+  assert.ok(group.questions.every((q) => /age, state and product eligibility/.test(q.yes.explanation)), 'approved eligibility note');
+});
+
+test('every record keeps Randy\'s wording line for line', { skip }, () => {
+  const src = readFileSync(new URL('../../server/health-search/private/source/' + built.payload.questions[0].source.document, import.meta.url), 'utf8').split(/\r?\n/).map((l) => l.trim());
+  for (const q of built.payload.questions) {
+    const header = src[q.source.line - 1];
+    assert.ok(header.endsWith(': ' + q.text), `${q.id}: question text`);
+    for (const side of ['info', 'yes', 'no']) {
+      const o = q[side];
+      if (!o) continue;
+      const lines = (q.corrections?.find((c) => c.side === side) ? o.explanation.replace(q.corrections.find((c) => c.side === side).to, q.corrections.find((c) => c.side === side).from) : o.explanation).split('\n');
+      const at = src.indexOf(lines[0], q.source.line);
+      assert.ok(at > 0, `${q.id} ${side}: first line found`);
+      assert.deepEqual(src.slice(at, at + lines.length), lines, `${q.id} ${side}: lines in order`);
+    }
+  }
+});
+
+test('Aflac Part A 3A carries the correction and is flagged for confirmation', { skip }, () => {
+  const q = built.payload.questions.find((x) => x.id === 'aflac-A-3A');
+  assert.match(q.yes.explanation, /AFLAC/);
+  assert.doesNotMatch(q.yes.explanation, /Aetna/);
+  assert.equal(q.corrections.length, 1);
 });
 
 test('Gerber appears as guaranteed issue with no health questions', { skip }, () => {

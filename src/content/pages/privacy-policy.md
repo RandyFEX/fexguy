@@ -112,9 +112,15 @@ sidebar: true
 
 <p>Searches on our website are run in your browser. Search terms can be personal, so we remove them from the page address before Google Analytics or the Meta Pixel load, and we do not send search terms to either of them. As with any web page, the address your browser requests, which includes the search term, is received by our website hosting provider.</p>
 
+<h2>Health question search</h2>
+
+<p>Our health question search shows which insurance application questions relate to a health condition you type. The words you type are sent to our website hosting provider only to find the matching questions. We do not store them or log them, and we do not send them to Google Analytics or the Meta Pixel.</p>
+
+<p>To limit each browser to three searches in a rolling 24 hours, the search sets a cookie (ff_hqs) containing a random code that identifies your browser. It is used only for this limit and expires after 7 days. To apply the limit, we keep the following in coded form, never readable: a count of your recent searches and a fingerprint of each search, so that reopening or paging through the same search is not counted twice, both deleted automatically within 48 hours of your last search; and your network (IP) address, used to limit automated use and deleted automatically within two hours. This information is stored with Upstash, a database service.</p>
+
 <h2>Cookies and similar technologies</h2>
 
-<p>Our own website code does not set cookies. Google Analytics and the Meta Pixel set their own cookies, as described above. After a quote form submission, the website keeps a temporary marker in your browser’s session storage so the submission is not counted twice; it contains no form answers and is cleared when you close the browser tab. You can block or delete cookies in your browser settings.</p>
+<p>Our own website code sets one cookie, used only by the health question search as described above. Google Analytics and the Meta Pixel set their own cookies, as described above. After a quote form submission, the website keeps a temporary marker in your browser’s session storage so the submission is not counted twice; it contains no form answers and is cleared when you close the browser tab. You can block or delete cookies in your browser settings.</p>
 
 <h2>How long we keep information</h2>
 

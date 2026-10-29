@@ -116,7 +116,7 @@ export const config = {
    "rules": {
     "guaranteed-issue-referral": {
      "classification": "guaranteed-issue-referral",
-     "explanation": "A YES answer points to this company's guaranteed issue plan instead, subject to that plan's age, state and product eligibility rules."
+     "explanation": "Guaranteed issue plans are subject to the plan's age, state and product eligibility rules."
     }
    }
   },
@@ -128,18 +128,18 @@ export const config = {
    "expectedQuestionCount": 0,
    "sharedWordingGroup": null,
    "publicDisplay": "named",
-   "summary": "Gerber Life's guaranteed issue plan asks no health questions.",
+   "summary": "No health questions asked. Guaranteed approval.\nCall 888-862-9456 to compare first-day coverage options.",
    "schedules": {
     "guaranteed-issue": {
-     "label": "Guaranteed issue",
+     "label": "Graded coverage",
      "periods": [
       {
-       "months": "1-24",
-       "benefit": "Return of premiums paid plus 10% interest"
+       "months": "1–24",
+       "benefit": "Return of premium plus 10% interest."
       },
       {
-       "months": "25 and later",
-       "benefit": "100% of the death benefit"
+       "months": "25+",
+       "benefit": "100% coverage payout."
       }
      ],
      "verification": "From the general source supplied. State and product variations still need to be verified."
@@ -244,9 +244,10 @@ export const config = {
     {
      "section": "Part A",
      "number": "3A",
-     "mustInclude": "Aflac",
+     "field": "yes",
+     "mustInclude": "AFLAC",
      "mustNotInclude": "Aetna",
-     "reason": "Corrected Aflac Part A 3A references Aflac, not Aetna."
+     "reason": "Corrected Aflac Part A 3A: its outcome names Aflac, not Aetna."
     }
    ]
   }

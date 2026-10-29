@@ -1086,7 +1086,9 @@ scope protection wins.
   listing or dump. Production serves only the complete 88-record set.
 - Question wording is copied verbatim from the carriers' applications and
   never reworded; outcomes and schedules come only from Randy's approved
-  interpretations. Never invent questions, outcomes or schedules.
+  interpretations. Never invent questions, outcomes or schedules. Randy
+  supplied all 88 questions with their YES/NO outcomes (October 2026); they
+  are imported line for line with `scripts/health-search-import.mjs`.
 - CICA is named "CICA Life Insurance" in this tool (Randy, October 2026;
   never "CICA Life Insurance Company", "Seeker", "Sika" or "One insurance
   company" here). The CICA confidentiality rule for ordinary health-condition

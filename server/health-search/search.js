@@ -186,8 +186,9 @@ function publicName(carrier) {
 function outcome(carrier, o) {
   if (!o) return null;
   const rule = o.rule ? carrier.rules[o.rule] : null;
-  const classification = rule?.classification ?? o.classification ?? null;
-  const explanation = rule?.explanation ?? o.explanation ?? null;
+  const classification = o.classification ?? rule?.classification ?? null;
+  // A record's own wording comes first; an approved carrier rule adds its note.
+  const explanation = [o.explanation, rule?.explanation].filter(Boolean).join('\n') || null;
   return explanation ? { classification, explanation } : null;
 }
 
@@ -210,6 +211,7 @@ function presentGroup(carrier, ms) {
       text: q.text,
       match: type,
       because,
+      info: outcome(carrier, q.info),
       yes,
       no,
     };

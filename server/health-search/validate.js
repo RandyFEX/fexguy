@@ -11,7 +11,7 @@ const EM_DASH = /\u2014|&mdash;|&#8212;/;
 /**
  * @typedef {{ rule?: string, classification?: string, explanation?: string }} Outcome
  * @typedef {{ id: string, carrierId?: string, section: string, number: string, variant?: string | null,
- *   text: string, sharedKey?: string | null, yes?: Outcome, no?: Outcome,
+ *   text: string, sharedKey?: string | null, info?: Outcome, yes?: Outcome, no?: Outcome,
  *   search?: { direct?: string[], related?: string[] }, source?: { document?: string, page?: number | string } }} Question
  * @typedef {{ carrierId: string, status: string, source: unknown, questions: Question[] }} QuestionFile
  * @typedef {{ id: string, name: string, displayOrder: number, guaranteedIssue: boolean, expectedQuestionCount: number,
@@ -19,7 +19,7 @@ const EM_DASH = /\u2014|&mdash;|&#8212;/;
  *   publicDisplay: 'named' | 'anonymized', anonymizedName?: string, summary?: string,
  *   schedules: Record<string, { label: string, periods: { months: string, benefit: string }[], verification?: string }>,
  *   rules: Record<string, { classification: string, explanation: string }>,
- *   requiredWording?: { section: string, number: string, mustInclude?: string, mustNotInclude?: string, reason: string }[] }} Carrier
+ *   requiredWording?: { section: string, number: string, field?: 'text' | 'yes' | 'no', mustInclude?: string, mustNotInclude?: string, reason: string }[] }} Carrier
  * @typedef {{ id: string, label: string, terms: string[], indicators: string[], related: string[] }} Concept
  * @typedef {{ expectedQuestionTotal: number, carriers: Carrier[] }} CarrierFile
  */
@@ -77,19 +77,20 @@ export function validateDataset({ carriers, questionFiles, concepts }, opts = {}
       if (q.text && EM_DASH.test(q.text)) warnings.push(`${q.id}: source wording contains an em dash; kept verbatim, needs Randy's decision before publishing.`);
       if (!q.section || !q.number) errors.push(`${q.id}: section and number are required.`);
       sections[q.section] = (sections[q.section] ?? 0) + 1;
-      for (const side of /** @type {const} */ (['yes', 'no'])) {
+      for (const side of /** @type {const} */ (['info', 'yes', 'no'])) {
         const o = q[side];
         if (!o) continue;
         if (o.rule && !carrier.rules[o.rule]) errors.push(`${q.id}: ${side} rule "${o.rule}" is not defined for ${carrier.id}.`);
         if (!o.rule && !(o.classification && o.explanation)) errors.push(`${q.id}: ${side} needs a rule or a classification and explanation.`);
         if (o.explanation && EM_DASH.test(o.explanation)) errors.push(`${q.id}: ${side} explanation contains an em dash.`);
       }
-      if (!q.yes) warnings.push(`${q.id}: no YES outcome recorded.`);
+      if (!q.yes && !q.info) warnings.push(`${q.id}: no YES outcome recorded.`);
       for (const k of /** @type {const} */ (['direct', 'related'])) {
         for (const ref of q.search?.[k] ?? []) if (!conceptIds.has(ref)) errors.push(`${q.id}: search.${k} refers to unknown concept "${ref}".`);
       }
-      if (carrier.variants?.length && !carrier.variants.includes(q.variant ?? '')) {
-        errors.push(`${q.id}: ${carrier.id} questions must carry one of the variants ${carrier.variants.join(', ')}.`);
+      // Variants are versions of one question (CICA D-1 and D-2), kept separate.
+      if (q.variant && !(carrier.variants ?? []).includes(q.variant)) {
+        errors.push(`${q.id}: unknown variant "${q.variant}" for ${carrier.id}.`);
       }
     }
     for (const [section, n] of Object.entries(carrier.expectedSections ?? {})) {
@@ -101,8 +102,10 @@ export function validateDataset({ carriers, questionFiles, concepts }, opts = {}
     for (const req of carrier.requiredWording ?? []) {
       const q = file.questions.find((x) => x.section === req.section && x.number === req.number);
       if (!q) { errors.push(`${carrier.id}: ${req.section} ${req.number} not found (${req.reason}).`); continue; }
-      if (req.mustInclude && !q.text.includes(req.mustInclude)) errors.push(`${q.id}: must include "${req.mustInclude}" (${req.reason}).`);
-      if (req.mustNotInclude && q.text.includes(req.mustNotInclude)) errors.push(`${q.id}: must not include "${req.mustNotInclude}" (${req.reason}).`);
+      const field = req.field ?? 'text';
+      const value = field === 'text' ? q.text : q[field]?.explanation ?? '';
+      if (req.mustInclude && !value.includes(req.mustInclude)) errors.push(`${q.id}: ${field} must include "${req.mustInclude}" (${req.reason}).`);
+      if (req.mustNotInclude && value.includes(req.mustNotInclude)) errors.push(`${q.id}: ${field} must not include "${req.mustNotInclude}" (${req.reason}).`);
     }
   }
   for (const c of carriers.carriers) {

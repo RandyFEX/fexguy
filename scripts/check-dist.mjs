@@ -225,8 +225,14 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   const privateTexts = existsSync(privateDir)
     ? readdirSync(privateDir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(readFileSync(join(privateDir, f), 'utf8')).questions.map((q) => q.text))
     : [];
+  // A few application questions are already quoted word for word in published
+  // articles (e.g. the burial-insurance condition pages). That wording is
+  // public on its own; every other question still has to stay out of dist/.
+  const published = walk(new URL('../src/content/', import.meta.url).pathname).map((f) => readFileSync(f, 'utf8')).join('\n');
+  const quoted = privateTexts.filter((t) => published.includes(t));
+  if (quoted.length) console.log(`Health search: ${quoted.length} application questions are already quoted in published articles (not counted as leaks)`);
   const needles = [
-    ...[...sampleDataset.questions.map((q) => q.text), ...privateTexts].filter((t) => t.length >= 25),
+    ...[...sampleDataset.questions.map((q) => q.text), ...privateTexts.filter((t) => !quoted.includes(t))].filter((t) => t.length >= 25),
     'expectedQuestionCount', 'sharedWordingGroup', 'anonymizedName', '"indicators":', 'SAMPLE QUESTION, not real carrier wording',
   ];
   for (const file of walk(DIST)) {

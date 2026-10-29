@@ -4,7 +4,8 @@
 // increment are atomic: parallel requests cannot slip past the limit.
 //
 // Stored (all keys are HMACs, never raw cookie values, IPs or search terms;
-// everything expires with the window):
+// entries older than the window are removed on every call and each key
+// expires one window after its last use):
 //   hqs:v:<visitor>   sorted set of accepted searches (score = time)
 //   hqs:q:<visitor>   hash of accepted query fingerprints -> time, so reopening
 //                     or paging an already accepted search costs nothing
@@ -34,6 +35,11 @@ local mode = ARGV[7]
 local member = ARGV[8]
 
 redis.call('ZREMRANGEBYSCORE', KEYS[1], '-inf', now - window)
+-- Drop query fingerprints older than the window (never kept longer).
+local fps = redis.call('HGETALL', KEYS[2])
+for i = 1, #fps, 2 do
+  if tonumber(fps[i + 1]) <= now - window then redis.call('HDEL', KEYS[2], fps[i]) end
+end
 local used = redis.call('ZCARD', KEYS[1])
 local function oldest()
   local o = redis.call('ZRANGE', KEYS[1], 0, 0, 'WITHSCORES')

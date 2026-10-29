@@ -7,7 +7,7 @@ const API = '/api/health-search/';
 
 type Outcome = { classification: string | null; explanation: string } | null;
 type Schedule = { label: string; periods: { months: string; benefit: string }[]; verification?: string };
-type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; yes: Outcome; no: Outcome };
+type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; info?: Outcome; yes: Outcome; no: Outcome };
 type Group = { carrier: string; anonymized: boolean; questions: Question[]; schedules: Schedule[] };
 type GiCard = { carrier: string; summary: string; schedules: Schedule[] };
 type Response = {
@@ -84,10 +84,14 @@ function renderSchedules(schedules: Schedule[]) {
 function renderOutcome(label: string, o: Outcome) {
   if (!o) return null;
   const div = el('div', 'hqs-outcome');
-  const head = el('p', 'hqs-outcome__head');
-  head.append(el('strong', undefined, label));
-  if (o.classification && CLASS_LABELS[o.classification]) head.append(el('span', 'hqs-outcome__class', CLASS_LABELS[o.classification]));
-  div.append(head, el('p', 'hqs-outcome__text', o.explanation));
+  const chip = o.classification ? CLASS_LABELS[o.classification] : undefined;
+  if (label || chip) {
+    const head = el('p', 'hqs-outcome__head');
+    if (label) head.append(el('strong', undefined, label));
+    if (chip) head.append(el('span', 'hqs-outcome__class', chip));
+    div.append(head);
+  }
+  div.append(el('p', 'hqs-outcome__text', o.explanation));
   return div;
 }
 
@@ -98,12 +102,12 @@ function renderGroup(g: Group) {
     const item = el('div', `hqs-q hqs-q--${q.match}`);
     const meta = el('p', 'hqs-q__meta');
     meta.append(el('span', `hqs-badge hqs-badge--${q.match}`, q.match === 'direct' ? 'Direct match' : 'Related'));
-    meta.append(el('span', 'hqs-q__num', [q.variant, q.section, `Question ${q.number}`].filter(Boolean).join(', ')));
+    meta.append(el('span', 'hqs-q__num', `${q.section}, Question ${q.variant ?? q.number}`));
     item.append(meta);
     const quote = el('blockquote', 'hqs-q__text');
     quote.append(el('p', undefined, q.text));
     item.append(quote, el('p', 'hqs-q__why', q.because));
-    for (const o of [renderOutcome('If you answer YES', q.yes), renderOutcome('If you answer NO', q.no)]) if (o) item.append(o);
+    for (const o of [renderOutcome('', q.info ?? null), renderOutcome('If you answer YES', q.yes), renderOutcome('If you answer NO', q.no)]) if (o) item.append(o);
     card.append(item);
   }
   if (g.schedules.length) card.append(renderSchedules(g.schedules));

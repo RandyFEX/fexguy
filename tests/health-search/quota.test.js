@@ -93,3 +93,24 @@ test('keys expire with the window (no long-term storage)', async () => {
   const ipTtl = await redis.command(['PTTL', `hqs:ip:${p.ip}`]);
   assert.ok(ipTtl > 0 && ipTtl <= QUOTA.ipWindowMs);
 });
+
+test('query fingerprints older than 24 hours are deleted, even for a visitor who keeps searching', async () => {
+  const p = ids();
+  const t0 = 9_000_000;
+  await run(p, { queryFp: 'old', now: t0 });
+  await run(p, { queryFp: 'new', now: t0 + QUOTA.windowMs - 1000 });
+  await run(p, { mode: 'status', now: t0 + QUOTA.windowMs + 1 });
+  const fields = await redis.command(['HKEYS', `hqs:q:${p.visitor}`]);
+  assert.deepEqual(fields, ['new']);
+  const members = await redis.command(['ZCARD', `hqs:v:${p.visitor}`]);
+  assert.equal(members, 1);
+});
+
+test('the IP record expires one hour after its last use', async () => {
+  const p = ids();
+  await run(p, { queryFp: 'a' });
+  const ttl = await redis.command(['PTTL', `hqs:ip:${p.ip}`]);
+  assert.ok(ttl > 0 && ttl <= QUOTA.ipWindowMs, String(ttl));
+  const vttl = await redis.command(['PTTL', `hqs:v:${p.visitor}`]);
+  assert.ok(vttl > 0 && vttl <= QUOTA.windowMs, String(vttl));
+});

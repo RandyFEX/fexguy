@@ -30,7 +30,7 @@ test('approved benefit schedules are recorded exactly', () => {
     assert.ok(!/\d+%/.test(m[0]), 'no invented first-year percentage');
     assert.deepEqual(m.slice(1), ['13-24: 50% of the death benefit', '25 and later: 100% of the death benefit']);
   }
-  assert.deepEqual(months('gerber-life', 'guaranteed-issue'), ['1-24: Return of premiums paid plus 10% interest', '25 and later: 100% of the death benefit']);
+  assert.deepEqual(months('gerber-life', 'guaranteed-issue'), ['1–24: Return of premium plus 10% interest.', '25+: 100% coverage payout.']);
   assert.ok(by['gerber-life'].guaranteedIssue);
   assert.equal(by['cica-life'].name, 'CICA Life Insurance');
   assert.equal(by['cica-life'].publicDisplay, 'named');
@@ -48,7 +48,7 @@ function synthetic() {
   out.push({ carrierId: 'gerber-life', status: 'complete', source: 'test', questions: [] });
   for (const c of ['aetna', 'aflac']) {
     const qs = [];
-    for (const [section, n] of [['Part A', 13], ['Part B', 5], ['Part C', 4]]) for (let i = 1; i <= n; i++) qs.push(q(c, section, i === 3 && section === 'Part A' ? '3A' : `${i}`, { sharedKey: `${section}${i}`, text: i === 3 && section === 'Part A' ? `Coverage with ${c === 'aflac' ? 'Aflac' : 'Aetna'}` : `Q ${section} ${i}` }));
+    for (const [section, n] of [['Part A', 13], ['Part B', 5], ['Part C', 4]]) for (let i = 1; i <= n; i++) qs.push(q(c, section, i === 3 && section === 'Part A' ? '3A' : `${i}`, { sharedKey: `${section}${i}`, ...(i === 3 && section === 'Part A' ? { yes: { classification: 'decline', explanation: `You do not qualify for ${c === 'aflac' ? 'AFLAC' : 'Aetna Accendo CVS'} whole life insurance.` } } : {}) }));
     out.push({ carrierId: c, status: 'complete', source: 'test', questions: qs });
   }
   return out;
@@ -63,11 +63,11 @@ test('a complete dataset that follows every rule validates as complete', () => {
 
 test('each inventory rule is enforced', () => {
   const cases = [
-    [(d) => d.find((f) => f.carrierId === 'aflac').questions.find((q) => q.number === '3A').text = 'Coverage with Aetna', /must include "Aflac"/],
+    [(d) => (d.find((f) => f.carrierId === 'aflac').questions.find((q) => q.number === '3A').yes.explanation = 'You do not qualify for Aetna Accendo CVS whole life insurance.'), /yes must include "AFLAC"/],
     [(d) => d.find((f) => f.carrierId === 'aetna').questions.pop(), /aetna: 21 questions, expected 22/],
     [(d) => { const a = d.find((f) => f.carrierId === 'aetna').questions; a.find((q) => q.section === 'Part C').section = 'Part B'; }, /Part B has 6 questions, expected 5/],
     [(d) => d.find((f) => f.carrierId === 'cica-life').questions.forEach((q) => (q.variant = 'D-1')), /no questions for variant D-2/],
-    [(d) => (d.find((f) => f.carrierId === 'cica-life').questions[0].variant = null), /must carry one of the variants/],
+    [(d) => (d.find((f) => f.carrierId === 'cica-life').questions[0].variant = 'D-9'), /unknown variant "D-9"/],
     [(d) => (d.find((f) => f.carrierId === 'trinity-life').questions[0].id = 'family-benefit-life-Q-1'), /duplicate question id/],
     [(d) => (d.find((f) => f.carrierId === 'aetna').questions[0].yes = { rule: 'nope' }), /rule "nope" is not defined/],
     [(d) => (d.find((f) => f.carrierId === 'aetna').questions[0].search = { direct: ['not-a-concept'] }), /unknown concept/],
@@ -87,8 +87,8 @@ test('shared wording differences beyond the carrier name are reported, not chang
   d.find((f) => f.carrierId === 'trinity-life').questions[2].text = 'Q different wording';
   const r = validateDataset({ carriers, questionFiles: d, concepts });
   assert.ok(r.warnings.some((w) => /share key k2 but the wording differs/.test(w)));
-  // Name-only differences (Aetna vs Aflac in 3A) are not flagged.
-  assert.ok(!r.warnings.some((w) => /3A/.test(w)));
+  // Aetna and Aflac share identical wording: nothing is flagged for them.
+  assert.ok(!r.warnings.some((w) => /aetna-aflac/.test(w)));
 });
 
 test('em dashes in verbatim source wording are flagged, not rewritten', () => {

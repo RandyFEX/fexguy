@@ -172,6 +172,7 @@
 }
 .hqs-outcome__text {
   margin: var(--space-1) 0 0;
+  white-space: pre-line;
 }
 .hqs-schedules {
   margin-top: var(--space-4);
@@ -288,4 +289,7 @@
   @keyframes hqs-in {
     from { opacity: 0; transform: translateY(0.5rem); }
   }
+}
+.hqs-gi__summary {
+  white-space: pre-line;
 }

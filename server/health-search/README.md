@@ -62,6 +62,18 @@ fall back to the fictional sample when nothing is published.
 Each file is `{ "carrierId": "<id>", "status": "complete", "source":
 "<document and version>", "questions": [ ... ] }`.
 
+## Importing Randy's question set
+
+Randy supplies the questions and their YES/NO outcomes as plain text (one
+entry per question: `Carrier N: question`, a `CARRIER: ... | QUESTION N`
+line, then `IF YOU ANSWER "YES"` / `"NO"` blocks). Save it in
+`private/source/` (git-ignored) and run `npm run health-search:import`. It
+writes `private/questions/<carrier>.json`, copying question text and each
+outcome line for line (outcomes keep their line breaks and are displayed as
+written). Corrections Randy approves go in `private/source/corrections.json`
+and are recorded on the record. The real-data tests check every record
+against the source text.
+
 ## Publishing the records
 
 ```
@@ -101,8 +113,12 @@ offers the phone number: the limit is never faked.
 ## Privacy and limits
 
 - Search terms are never logged or stored. Redis keeps only HMACs of the
-  visitor cookie, the IP and the normalized query, all expiring within 24
-  hours.
+  visitor cookie, the IP and the normalized query. Entries older than their
+  window (24 hours; 1 hour for IPs) are removed on every call, and each key
+  expires one window after its last use: visitor data is gone within 48
+  hours of the last search, IP data within 2 hours (as /privacy-policy/
+  states). The question records (`hqs:questions:*`) never expire. Keep the
+  Upstash database's eviction setting off so they are never evicted.
 - Visitor cookie `ff_hqs`: random, HttpOnly, Secure, SameSite=Strict,
   path `/api/health-search`, 7 days.
 - Each visitor gets 3 new searches per rolling 24 hours. Reopening or paging

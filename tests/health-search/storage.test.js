@@ -27,7 +27,7 @@ function synthetic() {
     const qs = [];
     for (const [s, n] of [['Part A', 13], ['Part B', 5], ['Part C', 4]]) for (let i = 1; i <= n; i++) {
       const is3A = s === 'Part A' && i === 3;
-      qs.push(q(c, s, is3A ? '3A' : `${i}`, { sharedKey: `${s}${i}`, text: is3A ? `Q with ${c === 'aflac' ? 'Aflac' : 'Aetna'}` : `Q ${s} ${i}` }));
+      qs.push(q(c, s, is3A ? '3A' : `${i}`, { sharedKey: `${s}${i}`, text: `Q ${s} ${i}`, ...(is3A ? { yes: { classification: 'decline', explanation: `x ${c === 'aflac' ? 'AFLAC' : 'Aetna'}` } } : {}) }));
     }
     files.push({ carrierId: c, status: 'complete', source: 't', questions: qs });
   }
@@ -76,7 +76,7 @@ test('production loads only a complete, valid payload from the store', async () 
 test('a tampered or malformed payload is refused', async () => {
   const env = { VERCEL_ENV: 'production' };
   const full = buildPayload(carriers, concepts, synthetic(), 'production').payload;
-  const bad = { ...full, questions: full.questions.map((q) => (q.carrierId === 'aflac' && q.number === '3A' ? { ...q, text: 'Q with Aetna' } : q)) };
+  const bad = { ...full, questions: full.questions.map((q) => (q.carrierId === 'aflac' && q.number === '3A' ? { ...q, yes: { classification: 'decline', explanation: 'x Aetna' } } : q)) };
   assert.equal(checkPayload(bad, config).ok, false);
   await redis.store.set('hqs:questions:production', JSON.stringify(bad));
   assert.equal(await loadDataset(redis.store, env, config, sampleDataset, 10), null);
@@ -134,4 +134,13 @@ test('this public repository holds no question records', () => {
   assert.ok(readFileSync(new URL('../../.gitignore', import.meta.url), 'utf8').includes('server/health-search/private/'));
   const generated = readFileSync(new URL('../../server/health-search/config.generated.js', import.meta.url), 'utf8');
   assert.ok(!/"questions"\s*:/.test(generated), 'generated config has no questions');
+});
+
+test('published records persist (no expiry) and preview and production use separate keys', async () => {
+  const payload = JSON.stringify(buildPayload(carriers, concepts, synthetic(), 'production').payload);
+  await redis.store.set(questionsKey({ VERCEL_ENV: 'production' }), payload);
+  assert.equal(await redis.command(['PTTL', 'hqs:questions:production']), -1, 'no TTL on the records');
+  assert.equal(questionsKey({ VERCEL_ENV: 'preview' }), 'hqs:questions:preview');
+  assert.equal(questionsKey({}), 'hqs:questions:preview', 'local runs never read production records');
+  assert.ok(!readFileSync(new URL('../../scripts/health-search-publish.mjs', import.meta.url), 'utf8').match(/\b(EX|PX|EXPIRE|PEXPIRE)\b/), 'publish sets no expiry');
 });

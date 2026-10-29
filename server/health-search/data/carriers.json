@@ -1,5 +1,5 @@
 {
-  "_about": "Carrier identities, plan classifications, benefit schedules and outcome rules for the health-question search. Schedules and rules come from Randy's approved underwriting interpretations (October 2026). Question wording is NOT here and never in this public repository: the verbatim question records live only in the private search store (see server/health-search/README.md). Consumer-facing text in this file must be plain English with no em dashes.",
+  "_about": "Carrier identities, plan classifications, benefit schedules and outcome rules for the health-question search. Schedules and rules come from Randy's approved underwriting interpretations (October 2026). Question wording is NOT here and never in this public repository: the verbatim question records live only in the private search store (see server/health-search/README.md). Consumer-facing text in this file must be plain English with no em dashes. Each question's YES/NO outcomes are Randy's wording, stored with the question in the private store; the schedules and rules here back the public configuration and the Gerber card.",
   "expectedQuestionTotal": 88,
   "carriers": [
     {
@@ -115,7 +115,7 @@
       "rules": {
         "guaranteed-issue-referral": {
           "classification": "guaranteed-issue-referral",
-          "explanation": "A YES answer points to this company's guaranteed issue plan instead, subject to that plan's age, state and product eligibility rules."
+          "explanation": "Guaranteed issue plans are subject to the plan's age, state and product eligibility rules."
         }
       },
       "_nameNote": "Approved public name (Randy, October 2026). Named in this tool by Randy's decision; the CLAUDE.md rule against naming CICA as an underwriting exception in ordinary health articles is unchanged."
@@ -128,18 +128,18 @@
       "expectedQuestionCount": 0,
       "sharedWordingGroup": null,
       "publicDisplay": "named",
-      "summary": "Gerber Life's guaranteed issue plan asks no health questions.",
+      "summary": "No health questions asked. Guaranteed approval.\nCall 888-862-9456 to compare first-day coverage options.",
       "schedules": {
         "guaranteed-issue": {
-          "label": "Guaranteed issue",
+          "label": "Graded coverage",
           "periods": [
             {
-              "months": "1-24",
-              "benefit": "Return of premiums paid plus 10% interest"
+              "months": "1–24",
+              "benefit": "Return of premium plus 10% interest."
             },
             {
-              "months": "25 and later",
-              "benefit": "100% of the death benefit"
+              "months": "25+",
+              "benefit": "100% coverage payout."
             }
           ],
           "verification": "From the general source supplied. State and product variations still need to be verified."
@@ -244,9 +244,10 @@
         {
           "section": "Part A",
           "number": "3A",
-          "mustInclude": "Aflac",
+          "field": "yes",
+          "mustInclude": "AFLAC",
           "mustNotInclude": "Aetna",
-          "reason": "Corrected Aflac Part A 3A references Aflac, not Aetna."
+          "reason": "Corrected Aflac Part A 3A: its outcome names Aflac, not Aetna."
         }
       ]
     }
