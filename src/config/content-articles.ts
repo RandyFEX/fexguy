@@ -57,7 +57,6 @@ export const NON_ARTICLE_PAGES: Record<string, { type: PageType; reason: string 
   '/randy-vandervaate/': { type: 'company', reason: 'Author profile page.' },
   '/licenses/': { type: 'company', reason: 'License numbers and lines of authority.' },
   '/editorial-guidelines/': { type: 'company', reason: 'Editorial policy page.' },
-  '/funeral-funds-of-america/': { type: 'company', reason: 'Brand-transition notice.' },
   '/contact/': { type: 'contact', reason: 'Contact page.' },
   '/forms/': { type: 'contact', reason: 'Links to insurance companies’ policy-service forms.' },
   '/get-help/': { type: 'contact', reason: 'Short help/contact prompt.' },
