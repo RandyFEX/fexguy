@@ -1,0 +1,44 @@
+---
+// The search panel shared by both presentations of HealthQuestionSearch.
+// Results are rendered into [data-hqs-results] by src/scripts/health-search.ts.
+import { lead } from '@/config/lead';
+
+export interface Props {
+  uid: string;
+  title: string;
+  headingLevel: 2 | 3;
+  intro: string;
+}
+
+const { uid, title, headingLevel, intro } = Astro.props;
+const Heading = `h${headingLevel}` as 'h2' | 'h3';
+---
+
+<Heading class="hqs__title" id={`${uid}-title`}>{title}</Heading>
+<p class="hqs__intro">{intro}</p>
+<form class="hqs__form" data-hqs-form novalidate>
+  <label class="hqs__label" for={`${uid}-q`}>Health condition, procedure or medication</label>
+  <div class="hqs__row">
+    <input
+      class="hqs__input"
+      id={`${uid}-q`}
+      name="q"
+      type="search"
+      autocomplete="off"
+      spellcheck="true"
+      maxlength="60"
+      required
+      aria-describedby={`${uid}-hint ${uid}-allowance`}
+    />
+    <button class="btn btn--primary hqs__submit" type="submit">Search</button>
+  </div>
+  <p class="hqs__hint" id={`${uid}-hint`}>For example: COPD, heart attack, stent, insulin or oxygen.</p>
+  <p class="hqs__allowance" id={`${uid}-allowance`} data-hqs-allowance>You can run 3 searches a day.</p>
+</form>
+<div class="hqs__status" role="status" aria-live="polite" tabindex="-1" data-hqs-status></div>
+<div class="hqs__results" data-hqs-results></div>
+<p class="hqs__fine">
+  These are the insurance companies' own application questions. One answer does not decide whether you qualify: the
+  insurance company reviews the whole application, and plans and questions can vary by state.
+</p>
+<p class="hqs__call">Questions about your health history? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>

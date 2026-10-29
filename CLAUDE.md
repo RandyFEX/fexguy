@@ -1067,6 +1067,25 @@ scope protection wins.
   bar under the header was removed site-wide (Randy, October 2026; the header
   already has GET A QUOTE and the phone number): don't bring it back.
 
+## Health Question Search (Randy, October 2026; in preview, not launched)
+
+- Reusable component `src/components/health-search/HealthQuestionSearch.astro`
+  (`variant="inline"` or `"modal"`), inserted only on pages Randy chooses,
+  never site-wide. Non-indexed review page: /health-question-search-preview/
+  (noindex, nofollow, not in sitemap/llms.txt/search, not linked).
+- The site stays static; the only server code is the Vercel Function
+  `api/health-search.js`. Data and logic live in `server/health-search/`
+  (see its README). The private data must never reach dist/ or public/:
+  `npm run verify` fails if it does. No public listing or dump of questions.
+- Question wording is copied verbatim from the carriers' applications and
+  never reworded; outcomes and schedules come only from Randy's approved
+  interpretations. Never invent questions, outcomes or schedules.
+- CICA is shown anonymized ("One insurance company") under the CICA
+  confidentiality rule until Randy decides otherwise.
+- 3 searches per visitor per rolling 24 hours, enforced server-side (Redis
+  Lua, atomic); per-IP limit separately. Search terms are never stored or
+  sent to GA4/Meta.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index

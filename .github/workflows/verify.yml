@@ -24,3 +24,19 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm run verify -- --strict
+
+  # Health-question search (server/health-search/, api/health-search.js):
+  # dataset validation, search, API handler and the 3-searches-a-day quota
+  # (run against a real local Redis, as in production).
+  health-search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq redis-server
+      - run: npm run health-search:data -- --check
+      - run: npm run test:health-search

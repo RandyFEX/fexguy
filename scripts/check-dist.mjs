@@ -213,6 +213,28 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
+// Health-question search: the private underwriting data is bundled only into
+// the serverless function (api/health-search.js). Nothing from it may reach
+// dist/: no data file, no question wording, no dataset metadata, and not the
+// fictional sample set either. Checked across every file, Pagefind included.
+{
+  const { dataset: hqs } = await import('../server/health-search/dataset.generated.js');
+  const { sampleDataset } = await import('../server/health-search/sample-dataset.js');
+  const needles = [
+    ...[...hqs.questions, ...sampleDataset.questions].map((q) => q.text).filter((t) => t.length >= 25),
+    'expectedQuestionCount', 'sharedWordingGroup', 'anonymizedName', '"indicators":', 'SAMPLE QUESTION, not real carrier wording',
+  ];
+  for (const file of walk(DIST)) {
+    const rel = '/' + file.slice(DIST.length);
+    if (/(dataset\.generated|concepts|carriers)\.(js|json)$|\/questions\/[^/]+\.json$|health-search\/data\//.test(rel)) {
+      (guardHits['private health-search data file in the public build'] ??= []).push(rel);
+      continue;
+    }
+    if (!/\.(html|js|mjs|json|xml|txt|css|webmanifest|pf_[a-z]+)$/.test(file) && !file.includes('/pagefind/')) continue;
+    const text = readFileSync(file, 'latin1');
+    if (needles.some((n) => text.includes(n))) (guardHits['private health-search data in the public build'] ??= []).push(rel);
+  }
+}
 // Retired pages that must stay real 404s (not built, not redirected).
 const MUST_404 = ['/gtl/'];
 for (const p of MUST_404) {
