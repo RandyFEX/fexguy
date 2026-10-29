@@ -86,7 +86,7 @@ source: "live"
 <h3 id="Business-Articles">BUSINESS ARTICLES</h3>
 
 <ul class="media-articles">
-<li><strong>Randy VanderVaate – Dedicated to Protecting Individuals and Families Throughout the United States With the Best Life Insurance </strong>(<a href="https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/" target="_blank" rel="noreferrer noopener nofollow">VALIANTCEO</a>)</li>
+<li><strong>Randy VanderVaate – Funeral Funds of America – Dedicated to Protecting Individuals and Families Throughout the United States With the Best Life Insurance </strong>(<a href="https://valiantceo.com/randy-vandervaate-funeral-funds-of-america/" target="_blank" rel="noreferrer noopener nofollow">VALIANTCEO</a>)</li>
 <li><strong>Ultimate Expert Tips To Modernize Your Business in 2022 </strong>(<a href="https://spyier.com/marketing/ultimate-expert-tips-to-modernize-your-business-in-2022/" target="_blank" rel="noreferrer noopener nofollow">SPYIER</a>)</li>
 <li><strong>What I Love About Being an Entrepreneur, According to 21 Entrepreneurs</strong> (<a href="https://blog.mycorporation.com/2022/02/being-an-entrepreneur/" target="_blank" rel="noreferrer noopener nofollow">MYCORPORATION</a>)</li>
 <li><strong>Randy VanderVaate Of Final Expense Guy: 5 Ways To Create A Wow! Customer Experience</strong> (<a href="https://medium.com/authority-magazine/randy-vandervaate-of-funeral-funds-5-ways-to-create-a-wow-customer-experience-7d56eaeff7e4" target="_blank" rel="noreferrer noopener nofollow">AUTHORITY MAGAZINE</a>)</li>
