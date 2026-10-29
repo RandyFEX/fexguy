@@ -1089,6 +1089,11 @@ scope protection wins.
   interpretations. Never invent questions, outcomes or schedules. Randy
   supplied all 88 questions with their YES/NO outcomes (October 2026); they
   are imported line for line with `scripts/health-search-import.mjs`.
+  Randy's wording decisions (October 2026): Aflac Part A 3A's outcome names
+  Aflac, not Aetna Accendo CVS (the one approved correction); CICA results
+  show his guaranteed-issue explanation followed by the age, state and
+  product eligibility note; Family Benefit Life and Trinity Life keep both
+  first-year graded explanations exactly as supplied (never standardize).
 - CICA is named "CICA Life Insurance" in this tool (Randy, October 2026;
   never "CICA Life Insurance Company", "Seeker", "Sika" or "One insurance
   company" here). The CICA confidentiality rule for ordinary health-condition

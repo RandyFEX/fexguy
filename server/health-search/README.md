@@ -135,4 +135,5 @@ offers the phone number: the limit is never faked.
 npm run health-search:data -- --check   # generated data is current
 npm run test:health-search              # needs redis-server installed locally
 npm run build && node tests/health-search/ui-smoke.mjs   # browser checks
+HQS_BASE=<preview URL> VERCEL_AUTOMATION_BYPASS_SECRET=... npm run test:health-search:live   # deployed preview
 ```
