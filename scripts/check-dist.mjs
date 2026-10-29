@@ -218,15 +218,20 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
 // dist/: no data file, no question wording, no dataset metadata, and not the
 // fictional sample set either. Checked across every file, Pagefind included.
 {
-  const { dataset: hqs } = await import('../server/health-search/dataset.generated.js');
   const { sampleDataset } = await import('../server/health-search/sample-dataset.js');
+  // The real records are never in this repository; when a local private copy
+  // exists (server/health-search/private/questions/), check its wording too.
+  const privateDir = new URL('../server/health-search/private/questions/', import.meta.url).pathname;
+  const privateTexts = existsSync(privateDir)
+    ? readdirSync(privateDir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(readFileSync(join(privateDir, f), 'utf8')).questions.map((q) => q.text))
+    : [];
   const needles = [
-    ...[...hqs.questions, ...sampleDataset.questions].map((q) => q.text).filter((t) => t.length >= 25),
+    ...[...sampleDataset.questions.map((q) => q.text), ...privateTexts].filter((t) => t.length >= 25),
     'expectedQuestionCount', 'sharedWordingGroup', 'anonymizedName', '"indicators":', 'SAMPLE QUESTION, not real carrier wording',
   ];
   for (const file of walk(DIST)) {
     const rel = '/' + file.slice(DIST.length);
-    if (/(dataset\.generated|concepts|carriers)\.(js|json)$|\/questions\/[^/]+\.json$|health-search\/data\//.test(rel)) {
+    if (/(config\.generated|concepts|carriers)\.(js|json)$|\/questions\/[^/]+\.json$|health-search\/(data|private)\//.test(rel)) {
       (guardHits['private health-search data file in the public build'] ??= []).push(rel);
       continue;
     }

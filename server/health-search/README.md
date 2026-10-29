@@ -6,14 +6,23 @@ server code is the Vercel Function `api/health-search.js`
 (`POST /api/health-search/`). Nothing in this folder is ever copied to
 `dist/` or `public/`; `npm run verify` fails if any of it reaches the build.
 
+**This repository is public, so the carriers' question records are never
+committed here.** They live only in the search store (the same Upstash Redis
+database as the search limit) under `hqs:questions:preview` and
+`hqs:questions:production`. The function loads them at request time (cached
+for 5 minutes) and returns only the matching questions. Production serves
+records only when the complete, valid 88-question set is published; previews
+fall back to the fictional sample when nothing is published.
+
 ## Files
 
 | Path | What it is |
 |---|---|
 | `data/carriers.json` | Carrier identities, plan schedules, outcome rules (approved interpretations) |
-| `data/questions/<carrier>.json` | The application questions, **verbatim** from the source application |
+| `private/questions/<carrier>.json` | Local working copy of the application questions, **verbatim** (git-ignored, never committed) |
 | `data/concepts.json` | Search metadata only: medical terms, equivalents, indicators, related conditions |
-| `dataset.generated.js` | Generated from `data/` by `npm run health-search:data` (do not edit) |
+| `config.generated.js` | Carriers and concepts, generated from `data/` by `npm run health-search:data` (no questions; do not edit) |
+| `question-store.js`, `publish.js` | Loading and checking the stored records; building and exporting the payload |
 | `validate.js` | Inventory and consistency rules (7 carriers, 88 questions, sections, variants, shared wording) |
 | `search.js`, `normalize.js` | Matching and ranking |
 | `quota.js`, `stores.js` | 3-searches-per-24-hours allowance (Redis Lua, atomic) and the Upstash REST client |
@@ -50,15 +59,31 @@ server code is the Vercel Function `api/health-search.js`
   (Family Benefit Life and Trinity Life; Aetna and Aflac). The validator
   reports any difference beyond the carrier name.
 
-When a carrier's file is filled in, set its `"status"` to `"complete"` and
-record the source document in `"source"`.
+Each file is `{ "carrierId": "<id>", "status": "complete", "source":
+"<document and version>", "questions": [ ... ] }`.
+
+## Publishing the records
+
+```
+vercel env pull .env.local                       # store credentials (never commit)
+node --env-file=.env.local scripts/health-search-publish.mjs --dry-run
+node --env-file=.env.local scripts/health-search-publish.mjs --target preview
+node --env-file=.env.local scripts/health-search-publish.mjs --target production   # complete 88 only
+node --env-file=.env.local scripts/health-search-publish.mjs --export --target preview   # back to private/
+```
+
+The script validates the files against `data/carriers.json` with the same
+inventory rules the function applies, uploads, reads back and prints counts
+only (never wording or credentials). Production refuses anything but the
+complete set. Keep a backup of `private/questions/` outside this repository.
 
 ## Adding a carrier
 
 1. Add it to `data/carriers.json` (id, name, displayOrder, expected count,
    schedules, rules, `publicDisplay`) and raise `expectedQuestionTotal`.
-2. Add `data/questions/<id>.json` with its verbatim questions.
-3. Run `npm run health-search:data` and `npm run test:health-search`.
+2. Add `private/questions/<id>.json` with its verbatim questions.
+3. Run `npm run health-search:data`, `npm run test:health-search`, then
+   publish (above).
 
 No component or API code changes are needed.
 

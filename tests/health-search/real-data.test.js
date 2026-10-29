@@ -1,19 +1,31 @@
-// Search fixtures on the REAL carrier data. Skipped until the original
-// applications are loaded (dataset status "complete"). Expectations use only
-// medically supportable associations: each term must find at least one
-// DIRECT match whose verbatim wording names it or a medical equivalent.
+// Acceptance fixtures on the REAL carrier records. They are never in this
+// public repository: these tests read the local private copy
+// (server/health-search/private/questions/, git-ignored, e.g. exported with
+// `npm run health-search:publish -- --export`) and are skipped without it.
+// Each term must find at least one DIRECT match whose verbatim wording names
+// it or a medical equivalent (medically supportable associations only).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dataset } from '../../server/health-search/dataset.generated.js';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { config } from '../../server/health-search/config.generated.js';
+import { checkPayload } from '../../server/health-search/question-store.js';
+import { buildPayload } from '../../server/health-search/publish.js';
 import { prepare, search } from '../../server/health-search/search.js';
 
-const ready = dataset.status === 'complete';
-const skip = ready ? false : 'real carrier questions not loaded yet (awaiting source applications)';
+const dir = new URL('../../server/health-search/private/questions/', import.meta.url);
+const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(new URL(f, dir), 'utf8'))) : [];
+const read = (p) => JSON.parse(readFileSync(new URL(`../../server/health-search/data/${p}`, import.meta.url), 'utf8'));
+const built = files.length ? buildPayload(read('carriers.json'), read('concepts.json'), files, 'production') : null;
+const skip = built?.ok ? false : files.length ? `private records do not validate yet: ${built?.result.errors.slice(0, 2).join(' | ')}` : 'real records not available locally (private, not in this repository)';
+const dataset = built?.payload ? { carriers: config.carriers, concepts: config.concepts, questions: built.payload.questions } : null;
 
-test('88 records across 7 carrier identities', { skip }, () => {
-  assert.equal(dataset.total, 88);
-  assert.equal(dataset.carriers.length, 7);
-  assert.equal(new Set(dataset.questions.map((q) => q.id)).size, 88);
+test('88 records across 7 carrier identities, complete and valid', { skip }, () => {
+  const check = checkPayload(built.payload, config);
+  assert.deepEqual(check.errors, []);
+  assert.equal(check.complete, true);
+  assert.equal(check.total, 88);
+  assert.equal(config.carriers.length, 7);
+  assert.equal(new Set(built.payload.questions.map((q) => q.id)).size, 88);
 });
 
 const FIXTURES = [
@@ -33,14 +45,21 @@ for (const [term, wording] of FIXTURES) {
   test(`fixture: "${term}" finds a direct match that names it`, { skip }, () => {
     const r = search(prepare(dataset), term);
     assert.ok(r.ok && r.directCount > 0, `${term}: no direct match`);
-    const direct = r.groups.flatMap((g) => g.questions).filter((q) => q.match === 'direct');
+    const pages = Array.from({ length: r.totalPages }, (_, i) => search(prepare(dataset), term, { page: i + 1 }));
+    const direct = pages.flatMap((p) => p.groups.flatMap((g) => g.questions)).filter((q) => q.match === 'direct');
     assert.ok(direct.some((q) => wording.test(q.text)), `${term}: no direct match names it`);
   });
 }
 
+test('CICA Life Insurance is named, with D-1 and D-2 kept separate', { skip }, () => {
+  const cica = built.payload.questions.filter((q) => q.carrierId === 'cica-life');
+  assert.equal(cica.length, 10);
+  assert.deepEqual([...new Set(cica.map((q) => q.variant))].sort(), ['D-1', 'D-2']);
+});
+
 test('Gerber appears as guaranteed issue with no health questions', { skip }, () => {
   const r = search(prepare(dataset), 'COPD');
-  const pages = Array.from({ length: r.totalPages }, (_, i) => search(prepare(dataset), 'COPD', { page: i + 1 }));
-  assert.ok(pages.at(-1).guaranteedIssue.some((g) => /Gerber/.test(g.carrier)));
-  assert.equal(dataset.questions.filter((q) => q.carrierId === 'gerber-life').length, 0);
+  const last = search(prepare(dataset), 'COPD', { page: r.totalPages });
+  assert.ok(last.guaranteedIssue.some((g) => /Gerber/.test(g.carrier)));
+  assert.equal(built.payload.questions.filter((q) => q.carrierId === 'gerber-life').length, 0);
 });

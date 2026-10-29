@@ -64,8 +64,11 @@ export async function startRedis() {
     try { await command(port, ['PING']); break; } catch { await new Promise((r) => setTimeout(r, 100)); }
   }
   return {
-    /** @type {import('../../server/health-search/quota.js').QuotaStore} */
-    store: { eval: (script, keys, args) => command(port, ['EVAL', script, keys.length, ...keys, ...args]) },
+    store: {
+      eval: (script, keys, args) => command(port, ['EVAL', script, keys.length, ...keys, ...args]),
+      get: (key) => command(port, ['GET', key]),
+      set: (key, value) => command(port, ['SET', key, value]),
+    },
     /** @param {(string | number)[]} parts */
     command: (parts) => command(port, parts),
     stop: () => proc.kill(),

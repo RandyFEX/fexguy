@@ -1074,14 +1074,23 @@ scope protection wins.
   never site-wide. Non-indexed review page: /health-question-search-preview/
   (noindex, nofollow, not in sitemap/llms.txt/search, not linked).
 - The site stays static; the only server code is the Vercel Function
-  `api/health-search.js`. Data and logic live in `server/health-search/`
-  (see its README). The private data must never reach dist/ or public/:
-  `npm run verify` fails if it does. No public listing or dump of questions.
+  `api/health-search.js`. Logic and public configuration (carriers,
+  schedules, rules, medical terms) live in `server/health-search/` (see its
+  README). This repository is public: the carriers' question records are
+  never committed to it (nor generated copies); they live only in the
+  Upstash Redis search store, published with
+  `scripts/health-search-publish.mjs` from the git-ignored
+  `server/health-search/private/`. Don't use RandyFEX/fexguy-monitoring as
+  the database. The data must never reach dist/ or public/: `npm run verify`
+  fails if it does. The API returns only matching questions; no public
+  listing or dump. Production serves only the complete 88-record set.
 - Question wording is copied verbatim from the carriers' applications and
   never reworded; outcomes and schedules come only from Randy's approved
   interpretations. Never invent questions, outcomes or schedules.
-- CICA is shown anonymized ("One insurance company") under the CICA
-  confidentiality rule until Randy decides otherwise.
+- CICA is named "CICA Life Insurance" in this tool (Randy, October 2026;
+  never "CICA Life Insurance Company", "Seeker", "Sika" or "One insurance
+  company" here). The CICA confidentiality rule for ordinary health-condition
+  articles is unchanged.
 - 3 searches per visitor per rolling 24 hours, enforced server-side (Redis
   Lua, atomic); per-IP limit separately. Search terms are never stored or
   sent to GA4/Meta.

@@ -5,7 +5,7 @@
 // every response built from it carries `sample: true`, and the component
 // shows a "sample data" notice.
 
-import { dataset as generated } from './dataset.generated.js';
+import { config as generated } from './config.generated.js';
 
 const SAMPLE = 'SAMPLE QUESTION, not real carrier wording: ';
 

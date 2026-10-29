@@ -20,20 +20,25 @@ export function redisConfig(env) {
 /**
  * @param {{ url: string, token: string }} cfg
  * @param {typeof fetch} [fetchImpl]
- * @returns {import('./quota.js').QuotaStore}
+ * @returns {import('./quota.js').QuotaStore & import('./question-store.js').DataStore & { set(key: string, value: string): Promise<unknown> }}
  */
 export function upstashStore(cfg, fetchImpl = fetch) {
+  /** @param {(string | number)[]} command @param {number} [timeoutMs] */
+  const run = async (command, timeoutMs = 4000) => {
+    const res = await fetchImpl(cfg.url, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${cfg.token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(command.map(String)),
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+    const body = /** @type {{ result?: unknown, error?: string }} */ (await res.json().catch(() => ({})));
+    // Never echo the command (it may hold data) or the token in errors.
+    if (!res.ok || body.error !== undefined) throw new Error(`search store error (${res.status})`);
+    return body.result;
+  };
   return {
-    async eval(script, keys, args) {
-      const res = await fetchImpl(cfg.url, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${cfg.token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify(['EVAL', script, String(keys.length), ...keys, ...args.map(String)]),
-        signal: AbortSignal.timeout(4000),
-      });
-      const body = /** @type {{ result?: unknown, error?: string }} */ (await res.json().catch(() => ({})));
-      if (!res.ok || body.error !== undefined) throw new Error(`quota store error (${res.status})`);
-      return body.result;
-    },
+    eval: (script, keys, args) => run(['EVAL', script, keys.length, ...keys, ...args]),
+    get: async (key) => /** @type {string | null} */ (await run(['GET', key])),
+    set: (key, value) => run(['SET', key, value], 15000),
   };
 }

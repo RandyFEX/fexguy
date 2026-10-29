@@ -2,23 +2,21 @@
 // counts, CICA variants, shared wording, Aflac 3A) and the current data.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { validateDataset } from '../../server/health-search/validate.js';
 
 const dir = new URL('../../server/health-search/data/', import.meta.url);
 const read = (p) => JSON.parse(readFileSync(new URL(p, dir), 'utf8'));
 const carriers = read('carriers.json');
 const concepts = read('concepts.json');
-const files = () => readdirSync(new URL('questions/', dir)).filter((f) => f.endsWith('.json')).map((f) => read(`questions/${f}`));
-
-test('current data: 7 carriers, 88 expected, no errors, carriers awaiting source are listed', () => {
-  const r = validateDataset({ carriers, questionFiles: files(), concepts });
+test('public configuration: 7 carriers, 88 expected, no errors; question records are not in the repository', () => {
+  const r = validateDataset({ carriers, questionFiles: [], concepts }, { configOnly: true });
   assert.deepEqual(r.errors, []);
+  assert.equal(r.pending.length, 6, 'every carrier except Gerber waits for its private records');
   assert.equal(carriers.carriers.length, 7);
   assert.equal(carriers.expectedQuestionTotal, 88);
   const expected = Object.fromEntries(carriers.carriers.map((c) => [c.id, c.expectedQuestionCount]));
   assert.deepEqual(expected, { 'family-benefit-life': 14, 'trinity-life': 14, 'guarantee-trust-life': 6, 'cica-life': 10, 'gerber-life': 0, aetna: 22, aflac: 22 });
-  assert.ok(r.pending.length <= 6);
 });
 
 test('approved benefit schedules are recorded exactly', () => {
@@ -34,7 +32,9 @@ test('approved benefit schedules are recorded exactly', () => {
   }
   assert.deepEqual(months('gerber-life', 'guaranteed-issue'), ['1-24: Return of premiums paid plus 10% interest', '25 and later: 100% of the death benefit']);
   assert.ok(by['gerber-life'].guaranteedIssue);
-  assert.equal(by['cica-life'].publicDisplay, 'anonymized');
+  assert.equal(by['cica-life'].name, 'CICA Life Insurance');
+  assert.equal(by['cica-life'].publicDisplay, 'named');
+  assert.match(by['cica-life'].rules['guaranteed-issue-referral'].explanation, /age, state and product eligibility/);
 });
 
 // A synthetic complete dataset (placeholder wording "Q") exercises every

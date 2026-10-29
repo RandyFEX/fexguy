@@ -25,8 +25,11 @@ const EM_DASH = /\u2014|&mdash;|&#8212;/;
  */
 
 /**
+ * Validates the public carrier configuration and, when given, the private
+ * question records. With `configOnly`, only the configuration is checked and
+ * every carrier with expected questions is listed as pending.
  * @param {{ carriers: CarrierFile, questionFiles: QuestionFile[], concepts: { concepts: Concept[] } }} input
- * @param {{ requireComplete?: boolean }} [opts]
+ * @param {{ requireComplete?: boolean, configOnly?: boolean }} [opts]
  * @returns {{ errors: string[], warnings: string[], pending: string[], counts: Record<string, number>, total: number, complete: boolean }}
  */
 export function validateDataset({ carriers, questionFiles, concepts }, opts = {}) {
@@ -103,7 +106,12 @@ export function validateDataset({ carriers, questionFiles, concepts }, opts = {}
     }
   }
   for (const c of carriers.carriers) {
-    if (!questionFiles.some((f) => f.carrierId === c.id)) errors.push(`${c.id}: no question file.`);
+    if (questionFiles.some((f) => f.carrierId === c.id)) continue;
+    // Guaranteed issue carriers have no health questions: nothing to load.
+    if (c.guaranteedIssue && c.expectedQuestionCount === 0) { counts[c.id] = 0; continue; }
+    // A full publish needs every carrier; a preview may carry only some.
+    if (opts.requireComplete) errors.push(`${c.id}: no question records.`);
+    else pending.push(`${c.name}: questions not loaded (${c.expectedQuestionCount} expected).`);
   }
 
   // Shared wording: questions with the same sharedKey in one group must read

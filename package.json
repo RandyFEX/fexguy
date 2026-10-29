@@ -13,6 +13,7 @@
     "check": "astro check",
     "verify": "node scripts/check-dist.mjs",
     "health-search:data": "node scripts/health-search-data.mjs",
+    "health-search:publish": "node scripts/health-search-publish.mjs",
     "test:health-search": "node --test 'tests/health-search/*.test.js'"
   },
   "dependencies": {

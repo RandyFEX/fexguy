@@ -1,5 +1,5 @@
 {
-  "_about": "Carrier identities, plan classifications, benefit schedules and outcome rules for the health-question search. Schedules and rules come from Randy's approved underwriting interpretations (October 2026). Question wording is NOT here: it lives verbatim in questions/<carrier-id>.json, copied from the original application. Consumer-facing text in this file must be plain English with no em dashes.",
+  "_about": "Carrier identities, plan classifications, benefit schedules and outcome rules for the health-question search. Schedules and rules come from Randy's approved underwriting interpretations (October 2026). Question wording is NOT here and never in this public repository: the verbatim question records live only in the private search store (see server/health-search/README.md). Consumer-facing text in this file must be plain English with no em dashes.",
   "expectedQuestionTotal": 88,
   "carriers": [
     {
@@ -14,9 +14,18 @@
         "graded": {
           "label": "Graded benefit",
           "periods": [
-            { "months": "1-12", "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule" },
-            { "months": "13-24", "benefit": "50% of the death benefit" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-12",
+              "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ]
         }
       },
@@ -39,9 +48,18 @@
         "graded": {
           "label": "Graded benefit",
           "periods": [
-            { "months": "1-12", "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule" },
-            { "months": "13-24", "benefit": "50% of the death benefit" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-12",
+              "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ]
         }
       },
@@ -64,9 +82,18 @@
         "graded": {
           "label": "Graded benefit",
           "periods": [
-            { "months": "1-12", "benefit": "Return of premiums paid plus 5% interest" },
-            { "months": "13-24", "benefit": "50% of the death benefit" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ]
         }
       },
@@ -74,22 +101,24 @@
     },
     {
       "id": "cica-life",
-      "name": "CICA Life",
+      "name": "CICA Life Insurance",
       "displayOrder": 4,
       "guaranteedIssue": false,
       "expectedQuestionCount": 10,
-      "variants": ["D-1", "D-2"],
+      "variants": [
+        "D-1",
+        "D-2"
+      ],
       "sharedWordingGroup": null,
-      "publicDisplay": "anonymized",
-      "anonymizedName": "One insurance company",
-      "_publicDisplayNote": "CLAUDE.md's CICA confidentiality rule: CICA's favorable underwriting must not be identified publicly in health-condition content. Kept anonymized until Randy decides how this tool may name CICA.",
+      "publicDisplay": "named",
       "schedules": {},
       "rules": {
         "guaranteed-issue-referral": {
           "classification": "guaranteed-issue-referral",
-          "explanation": "A YES answer points to this company's guaranteed issue plan instead, if the applicant meets that plan's eligibility rules."
+          "explanation": "A YES answer points to this company's guaranteed issue plan instead, subject to that plan's age, state and product eligibility rules."
         }
-      }
+      },
+      "_nameNote": "Approved public name (Randy, October 2026). Named in this tool by Randy's decision; the CLAUDE.md rule against naming CICA as an underwriting exception in ordinary health articles is unchanged."
     },
     {
       "id": "gerber-life",
@@ -104,8 +133,14 @@
         "guaranteed-issue": {
           "label": "Guaranteed issue",
           "periods": [
-            { "months": "1-24", "benefit": "Return of premiums paid plus 10% interest" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-24",
+              "benefit": "Return of premiums paid plus 10% interest"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ],
           "verification": "From the general source supplied. State and product variations still need to be verified."
         }
@@ -118,16 +153,29 @@
       "displayOrder": 6,
       "guaranteedIssue": false,
       "expectedQuestionCount": 22,
-      "expectedSections": { "Part A": 13, "Part B": 5, "Part C": 4 },
+      "expectedSections": {
+        "Part A": 13,
+        "Part B": 5,
+        "Part C": 4
+      },
       "sharedWordingGroup": "aetna-aflac",
       "publicDisplay": "named",
       "schedules": {
         "modified": {
           "label": "Modified benefit",
           "periods": [
-            { "months": "1-12", "benefit": "Return of premiums paid plus 5% interest" },
-            { "months": "13-24", "benefit": "50% of the death benefit" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ]
         }
       },
@@ -152,16 +200,29 @@
       "displayOrder": 7,
       "guaranteedIssue": false,
       "expectedQuestionCount": 22,
-      "expectedSections": { "Part A": 13, "Part B": 5, "Part C": 4 },
+      "expectedSections": {
+        "Part A": 13,
+        "Part B": 5,
+        "Part C": 4
+      },
       "sharedWordingGroup": "aetna-aflac",
       "publicDisplay": "named",
       "schedules": {
         "modified": {
           "label": "Modified benefit",
           "periods": [
-            { "months": "1-12", "benefit": "Return of premiums paid plus 5% interest" },
-            { "months": "13-24", "benefit": "50% of the death benefit" },
-            { "months": "25 and later", "benefit": "100% of the death benefit" }
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
           ]
         }
       },
@@ -180,7 +241,13 @@
         }
       },
       "requiredWording": [
-        { "section": "Part A", "number": "3A", "mustInclude": "Aflac", "mustNotInclude": "Aetna", "reason": "Corrected Aflac Part A 3A references Aflac, not Aetna." }
+        {
+          "section": "Part A",
+          "number": "3A",
+          "mustInclude": "Aflac",
+          "mustNotInclude": "Aetna",
+          "reason": "Corrected Aflac Part A 3A references Aflac, not Aetna."
+        }
       ]
     }
   ]
