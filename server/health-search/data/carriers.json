@@ -1,0 +1,255 @@
+{
+  "_about": "Carrier identities, plan classifications, benefit schedules and outcome rules for the health-question search. Schedules and rules come from Randy's approved underwriting interpretations (October 2026). Question wording is NOT here and never in this public repository: the verbatim question records live only in the private search store (see server/health-search/README.md). Consumer-facing text in this file must be plain English with no em dashes. Each question's YES/NO outcomes are Randy's wording, stored with the question in the private store; the schedules and rules here back the public configuration and the Gerber card.",
+  "expectedQuestionTotal": 88,
+  "carriers": [
+    {
+      "id": "family-benefit-life",
+      "name": "Family Benefit Life",
+      "displayOrder": 1,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 14,
+      "sharedWordingGroup": "fbl-trinity",
+      "publicDisplay": "named",
+      "schedules": {
+        "graded": {
+          "label": "Graded benefit",
+          "periods": [
+            {
+              "months": "1-12",
+              "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
+          ]
+        }
+      },
+      "rules": {
+        "cardiac-timeframe": {
+          "classification": "timeframe",
+          "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
+        }
+      }
+    },
+    {
+      "id": "trinity-life",
+      "name": "Trinity Life",
+      "displayOrder": 2,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 14,
+      "sharedWordingGroup": "fbl-trinity",
+      "publicDisplay": "named",
+      "schedules": {
+        "graded": {
+          "label": "Graded benefit",
+          "periods": [
+            {
+              "months": "1-12",
+              "benefit": "A partial benefit that varies by age, sex and tobacco use, set by the carrier's schedule"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
+          ]
+        }
+      },
+      "rules": {
+        "cardiac-timeframe": {
+          "classification": "timeframe",
+          "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
+        }
+      }
+    },
+    {
+      "id": "guarantee-trust-life",
+      "name": "Guarantee Trust Life",
+      "displayOrder": 3,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 6,
+      "sharedWordingGroup": null,
+      "publicDisplay": "named",
+      "schedules": {
+        "graded": {
+          "label": "Graded benefit",
+          "periods": [
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
+          ]
+        }
+      },
+      "rules": {}
+    },
+    {
+      "id": "cica-life",
+      "name": "CICA Life Insurance",
+      "displayOrder": 4,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 10,
+      "variants": [
+        "D-1",
+        "D-2"
+      ],
+      "sharedWordingGroup": null,
+      "publicDisplay": "named",
+      "schedules": {},
+      "rules": {
+        "guaranteed-issue-referral": {
+          "classification": "guaranteed-issue-referral",
+          "explanation": "Guaranteed issue plans are subject to the plan's age, state and product eligibility rules."
+        }
+      },
+      "_nameNote": "Approved public name (Randy, October 2026). Named in this tool by Randy's decision; the CLAUDE.md rule against naming CICA as an underwriting exception in ordinary health articles is unchanged."
+    },
+    {
+      "id": "gerber-life",
+      "name": "Gerber Life",
+      "displayOrder": 5,
+      "guaranteedIssue": true,
+      "expectedQuestionCount": 0,
+      "sharedWordingGroup": null,
+      "publicDisplay": "named",
+      "summary": "No health questions asked. Guaranteed approval.\nCall 888-862-9456 to compare first-day coverage options.",
+      "schedules": {
+        "guaranteed-issue": {
+          "label": "Graded coverage",
+          "periods": [
+            {
+              "months": "1–24",
+              "benefit": "Return of premium plus 10% interest."
+            },
+            {
+              "months": "25+",
+              "benefit": "100% coverage payout."
+            }
+          ],
+          "verification": "From the general source supplied. State and product variations still need to be verified."
+        }
+      },
+      "rules": {}
+    },
+    {
+      "id": "aetna",
+      "name": "Aetna (Accendo, a CVS Health company)",
+      "displayOrder": 6,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 22,
+      "expectedSections": {
+        "Part A": 13,
+        "Part B": 5,
+        "Part C": 4
+      },
+      "sharedWordingGroup": "aetna-aflac",
+      "publicDisplay": "named",
+      "schedules": {
+        "modified": {
+          "label": "Modified benefit",
+          "periods": [
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
+          ]
+        }
+      },
+      "rules": {
+        "part-a": {
+          "classification": "decline",
+          "explanation": "A YES answer to any Part A question means the applicant does not qualify for this plan. Part A answers come first: they decide eligibility before Parts B and C."
+        },
+        "part-b": {
+          "classification": "modified",
+          "explanation": "If every Part A answer is NO, a YES answer here points to the modified benefit plan."
+        },
+        "part-c": {
+          "classification": "standard-or-preferred",
+          "explanation": "Part C answers decide between the standard and preferred rate classes. Both give full coverage from the first day; they differ in price."
+        }
+      }
+    },
+    {
+      "id": "aflac",
+      "name": "Aflac",
+      "displayOrder": 7,
+      "guaranteedIssue": false,
+      "expectedQuestionCount": 22,
+      "expectedSections": {
+        "Part A": 13,
+        "Part B": 5,
+        "Part C": 4
+      },
+      "sharedWordingGroup": "aetna-aflac",
+      "publicDisplay": "named",
+      "schedules": {
+        "modified": {
+          "label": "Modified benefit",
+          "periods": [
+            {
+              "months": "1-12",
+              "benefit": "Return of premiums paid plus 5% interest"
+            },
+            {
+              "months": "13-24",
+              "benefit": "50% of the death benefit"
+            },
+            {
+              "months": "25 and later",
+              "benefit": "100% of the death benefit"
+            }
+          ]
+        }
+      },
+      "rules": {
+        "part-a": {
+          "classification": "decline",
+          "explanation": "A YES answer to any Part A question means the applicant does not qualify for this plan. Part A answers come first: they decide eligibility before Parts B and C."
+        },
+        "part-b": {
+          "classification": "modified",
+          "explanation": "If every Part A answer is NO, a YES answer here points to the modified benefit plan."
+        },
+        "part-c": {
+          "classification": "standard-or-preferred",
+          "explanation": "Part C answers decide between the standard and preferred rate classes. Both give full coverage from the first day; they differ in price."
+        }
+      },
+      "requiredWording": [
+        {
+          "section": "Part A",
+          "number": "3A",
+          "field": "yes",
+          "mustInclude": "AFLAC",
+          "mustNotInclude": "Aetna",
+          "reason": "Corrected Aflac Part A 3A: its outcome names Aflac, not Aetna."
+        }
+      ]
+    }
+  ]
+}

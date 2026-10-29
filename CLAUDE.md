@@ -1067,6 +1067,41 @@ scope protection wins.
   bar under the header was removed site-wide (Randy, October 2026; the header
   already has GET A QUOTE and the phone number): don't bring it back.
 
+## Health Question Search (Randy, October 2026; in preview, not launched)
+
+- Reusable component `src/components/health-search/HealthQuestionSearch.astro`
+  (`variant="inline"` or `"modal"`), inserted only on pages Randy chooses,
+  never site-wide. Non-indexed review page: /health-question-search-preview/
+  (noindex, nofollow, not in sitemap/llms.txt/search, not linked).
+- The site stays static; the only server code is the Vercel Function
+  `api/health-search.js`. Logic and public configuration (carriers,
+  schedules, rules, medical terms) live in `server/health-search/` (see its
+  README). This repository is public: the carriers' question records are
+  never committed to it (nor generated copies); they live only in the
+  Upstash Redis search store, published with
+  `scripts/health-search-publish.mjs` from the git-ignored
+  `server/health-search/private/`. Don't use RandyFEX/fexguy-monitoring as
+  the database. The data must never reach dist/ or public/: `npm run verify`
+  fails if it does. The API returns only matching questions; no public
+  listing or dump. Production serves only the complete 88-record set.
+- Question wording is copied verbatim from the carriers' applications and
+  never reworded; outcomes and schedules come only from Randy's approved
+  interpretations. Never invent questions, outcomes or schedules. Randy
+  supplied all 88 questions with their YES/NO outcomes (October 2026); they
+  are imported line for line with `scripts/health-search-import.mjs`.
+  Randy's wording decisions (October 2026): Aflac Part A 3A's outcome names
+  Aflac, not Aetna Accendo CVS (the one approved correction); CICA results
+  show his guaranteed-issue explanation followed by the age, state and
+  product eligibility note; Family Benefit Life and Trinity Life keep both
+  first-year graded explanations exactly as supplied (never standardize).
+- CICA is named "CICA Life Insurance" in this tool (Randy, October 2026;
+  never "CICA Life Insurance Company", "Seeker", "Sika" or "One insurance
+  company" here). The CICA confidentiality rule for ordinary health-condition
+  articles is unchanged.
+- 3 searches per visitor per rolling 24 hours, enforced server-side (Redis
+  Lua, atomic); per-IP limit separately. Search terms are never stored or
+  sent to GA4/Meta.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index

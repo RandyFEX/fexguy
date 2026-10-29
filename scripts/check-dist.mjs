@@ -213,6 +213,39 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
+// Health-question search: the private underwriting data is bundled only into
+// the serverless function (api/health-search.js). Nothing from it may reach
+// dist/: no data file, no question wording, no dataset metadata, and not the
+// fictional sample set either. Checked across every file, Pagefind included.
+{
+  const { sampleDataset } = await import('../server/health-search/sample-dataset.js');
+  // The real records are never in this repository; when a local private copy
+  // exists (server/health-search/private/questions/), check its wording too.
+  const privateDir = new URL('../server/health-search/private/questions/', import.meta.url).pathname;
+  const privateTexts = existsSync(privateDir)
+    ? readdirSync(privateDir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(readFileSync(join(privateDir, f), 'utf8')).questions.map((q) => q.text))
+    : [];
+  // A few application questions are already quoted word for word in published
+  // articles (e.g. the burial-insurance condition pages). That wording is
+  // public on its own; every other question still has to stay out of dist/.
+  const published = walk(new URL('../src/content/', import.meta.url).pathname).map((f) => readFileSync(f, 'utf8')).join('\n');
+  const quoted = privateTexts.filter((t) => published.includes(t));
+  if (quoted.length) console.log(`Health search: ${quoted.length} application questions are already quoted in published articles (not counted as leaks)`);
+  const needles = [
+    ...[...sampleDataset.questions.map((q) => q.text), ...privateTexts.filter((t) => !quoted.includes(t))].filter((t) => t.length >= 25),
+    'expectedQuestionCount', 'sharedWordingGroup', 'anonymizedName', '"indicators":', 'SAMPLE QUESTION, not real carrier wording',
+  ];
+  for (const file of walk(DIST)) {
+    const rel = '/' + file.slice(DIST.length);
+    if (/(config\.generated|concepts|carriers)\.(js|json)$|\/questions\/[^/]+\.json$|health-search\/(data|private)\//.test(rel)) {
+      (guardHits['private health-search data file in the public build'] ??= []).push(rel);
+      continue;
+    }
+    if (!/\.(html|js|mjs|json|xml|txt|css|webmanifest|pf_[a-z]+)$/.test(file) && !file.includes('/pagefind/')) continue;
+    const text = readFileSync(file, 'latin1');
+    if (needles.some((n) => text.includes(n))) (guardHits['private health-search data in the public build'] ??= []).push(rel);
+  }
+}
 // Retired pages that must stay real 404s (not built, not redirected).
 const MUST_404 = ['/gtl/'];
 for (const p of MUST_404) {

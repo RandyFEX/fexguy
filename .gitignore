@@ -13,3 +13,6 @@ node_modules/
 
 # editor/OS
 .DS_Store
+
+# Health Question Search: private question records (never committed; this repository is public)
+server/health-search/private/

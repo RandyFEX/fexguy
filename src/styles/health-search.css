@@ -1,0 +1,295 @@
+/* Health Question Search (src/components/health-search/). Uses the site's
+   design tokens (global.css). Sized for readers 50-85: 18px body text, 20px
+   field text, 48px controls, strong contrast. Results are created by
+   src/scripts/health-search.ts, so these rules are global, scoped by class. */
+
+.hqs {
+  --hqs-gap: var(--space-4);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-6) var(--space-4);
+  margin-block: var(--space-8);
+}
+.hqs-shell--modal .hqs {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.hqs__title {
+  margin: 0 0 var(--space-2);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-transform: none;
+}
+.hqs__intro {
+  margin: 0 0 var(--space-4);
+}
+.hqs__label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+.hqs__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.hqs__input {
+  width: 100%;
+  min-height: 3rem;
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  background: #fff;
+  border: 2px solid var(--color-text-muted);
+  border-radius: var(--radius);
+}
+.hqs__input:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-focus-inner);
+}
+.hqs__submit,
+.hqs-more,
+.hqs-callbox__btn,
+.hqs-launch {
+  min-height: 3rem;
+  font-size: 1.125rem;
+}
+.hqs__hint,
+.hqs__allowance {
+  margin: var(--space-2) 0 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+.hqs__allowance.is-out {
+  color: var(--color-text);
+  font-weight: 700;
+}
+.hqs__status:focus {
+  outline: none;
+}
+.hqs__status > p {
+  margin: var(--space-4) 0 0;
+  font-weight: 600;
+}
+.hqs__results > * + * {
+  margin-top: var(--space-4);
+}
+.hqs__results:not(:empty) {
+  margin-top: var(--space-4);
+}
+.hqs-summary,
+.hqs-sample {
+  margin: 0;
+  font-weight: 600;
+}
+.hqs-sample {
+  padding: var(--space-2) var(--space-3);
+  background: #fff7e6;
+  border-left: 4px solid var(--color-cta);
+}
+.hqs-empty p {
+  margin: 0 0 var(--space-2);
+}
+.hqs-carrier {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+}
+.hqs-carrier__name {
+  margin: 0 0 var(--space-3);
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  text-transform: none;
+}
+.hqs-q + .hqs-q {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+.hqs-q__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-2);
+  font-size: 1rem;
+}
+.hqs-badge {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.hqs-badge--direct {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.hqs-badge--related {
+  background: #fff;
+  color: var(--color-text);
+  border: 2px solid var(--color-text-muted);
+}
+.hqs-q__num {
+  color: var(--color-text-muted);
+}
+.hqs-q__text {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-primary);
+  font-style: normal;
+}
+.hqs-q__text p {
+  margin: 0;
+}
+.hqs-q__why {
+  margin: var(--space-2) 0 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+.hqs-outcome {
+  margin-top: var(--space-3);
+}
+.hqs-outcome__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+}
+.hqs-outcome__class {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.hqs-outcome__text {
+  margin: var(--space-1) 0 0;
+  white-space: pre-line;
+}
+.hqs-schedules {
+  margin-top: var(--space-4);
+}
+.hqs-schedule {
+  padding: var(--space-3);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+.hqs-schedule + .hqs-schedule {
+  margin-top: var(--space-2);
+}
+.hqs-schedule__label {
+  margin: 0 0 var(--space-1);
+  font-weight: 700;
+}
+.hqs-schedule__list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.hqs-schedule__note {
+  margin: var(--space-2) 0 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+.hqs-callbox {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+}
+.hqs-callbox--strong {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.hqs-callbox--strong .hqs-callbox__btn {
+  background: var(--color-cta);
+  color: var(--color-on-cta);
+  border-color: var(--color-cta);
+}
+.hqs-callbox__text {
+  margin: 0 0 var(--space-3);
+  font-weight: 600;
+}
+.hqs__fine {
+  margin: var(--space-6) 0 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+.hqs__call {
+  margin: var(--space-2) 0 0;
+}
+.hqs__call a {
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+/* Modal presentation */
+.hqs-dialog {
+  width: min(100% - 1rem, 44rem);
+  max-height: calc(100dvh - 1rem);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+.hqs-dialog::backdrop {
+  background: rgb(16 24 20 / 0.6);
+}
+.hqs-dialog__bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-2);
+  background: var(--color-surface);
+}
+.hqs-dialog__close {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-text);
+  background: #fff;
+  border: 2px solid var(--color-text-muted);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.hqs-dialog__close:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+@media (min-width: 40rem) {
+  .hqs {
+    padding: var(--space-8);
+  }
+  .hqs__row {
+    flex-direction: row;
+  }
+  .hqs__input {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hqs-dialog[open] {
+    animation: hqs-in 0.15s ease-out;
+  }
+  @keyframes hqs-in {
+    from { opacity: 0; transform: translateY(0.5rem); }
+  }
+}
+.hqs-gi__summary {
+  white-space: pre-line;
+}

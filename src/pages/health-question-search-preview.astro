@@ -1,0 +1,27 @@
+---
+// Non-indexed preview of the Health Question Search component, for review
+// only: noindex, nofollow, not in the sitemap, llms.txt or site search, and
+// not linked from navigation. It shows both presentations of the component.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HealthQuestionSearch from '@/components/health-search/HealthQuestionSearch.astro';
+import { pageTitle } from '@/lib/seo/meta';
+---
+
+<BaseLayout
+  title={pageTitle('Health Question Search Preview')}
+  description="Preview of the health question search."
+  robots="noindex, nofollow"
+  noindex
+>
+  <div class="container" data-page-type="utility" data-page-reason="Non-indexed preview of the health question search component.">
+    <h1>Health Question Search Preview</h1>
+    <p>This page is for review only. It is not linked from the site and is not indexed by search engines.</p>
+
+    <h2>Inline version</h2>
+    <HealthQuestionSearch headingLevel={3} />
+
+    <h2>Button and pop-up version</h2>
+    <p>Placed in an article, this shows only the button until someone opens it.</p>
+    <HealthQuestionSearch variant="modal" />
+  </div>
+</BaseLayout>
