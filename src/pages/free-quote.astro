@@ -51,16 +51,18 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
 
     <div class="fq-top">
       <div class="container fq-top__inner">
-        <img
-          class="fq-top__logo"
-          src="/images/logo/funeral-funds-wordmark-800.webp"
-          srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
-          sizes="14rem"
-          width="1987"
-          height="285"
-          alt="Funeral Funds"
-          fetchpriority="high"
-        />
+        <a class="fq-top__home" href="/" aria-label="Funeral Funds Home">
+          <img
+            class="fq-top__logo"
+            src="/images/logo/funeral-funds-wordmark-800.webp"
+            srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
+            sizes="14rem"
+            width="1987"
+            height="285"
+            alt="Funeral Funds"
+            fetchpriority="high"
+          />
+        </a>
         <a class="fq-top__phone" href={phone.href}>
           <span class="fq-top__phone-label">Call Randy</span>
           <span class="fq-nowrap">{phone.display}</span>
@@ -221,6 +223,13 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     justify-content: space-between;
     gap: var(--space-4);
     padding-block: var(--space-3);
+  }
+  /* The logo links home; the link is a 44px touch target, no taller than
+     the header's phone link. */
+  .fq-top__home {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
   }
   .fq-top__logo {
     width: 8rem;
