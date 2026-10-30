@@ -9,7 +9,9 @@
 // noindex, follow; kept out of the sitemap, llms.txt and site search.
 //
 // V1.2 (Randy): burial insurance headline, callback band linking to the form,
-// two-line starting-rate note, tighter spacing.
+// two-line starting-rate note, tighter spacing. V1.3: checkmark wording and
+// order, solid callback button, smaller gap before Meet Randy, title and
+// description.
 //
 // GA4: page views as everywhere; the body class `track-page-calls` makes
 // src/scripts/tracking.ts count taps on this page's call links as
@@ -27,8 +29,8 @@ const phone = PAGE_PHONES.ctv;
 const quoteBox = withPagePhone(quoteBoxHtml('inline', 'short'), 'ctv');
 const notes = site.footer.notes.map((html) => withPagePhone(html, 'ctv'));
 
-const title = 'Affordable Life Insurance for Ages 50-85 | Funeral Funds';
-const description = `Permanent whole life insurance for ages 50 to 85 with no medical exam. Call Randy VanderVaate at ${phone.display} for a free quote.`;
+const title = 'Burial Insurance Quotes | Funeral Funds';
+const description = 'Compare affordable burial insurance options for ages 50-85. No medical exam required. Call Funeral Funds for your free quote.';
 const url = 'https://funeralfunds.com/facebook/';
 const headMeta = [
   { property: 'og:locale', content: 'en_US' },
@@ -95,13 +97,13 @@ const benefits = [
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
         <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Burial Insurance Starting at Just $2 a Day!</h1>
-        <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50–85</span>.</p>
+        <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50-85</span>.</p>
         <ul class="fb-hero__points" role="list">
-          <li>Helps Pay for Burial, Cremation, Funeral &amp; Final Expenses</li>
-          <li>No medical exam.</li>
-          <li>Rates never increase.</li>
-          <li>Coverage never expires.</li>
-          <li>First-day coverage available for eligible applicants.</li>
+          <li>No Medical Exam</li>
+          <li>Rates Never Increase</li>
+          <li>Coverage Never Expires</li>
+          <li>1st-Day Coverage for Eligible Applicants</li>
+          <li>Pays for Burial, Cremation, Funeral or Final Expenses</li>
         </ul>
         <p class="fb-hero__note">
           <span>Starting rates vary by age, health, and coverage.</span>
@@ -118,7 +120,7 @@ const benefits = [
       <div class="container fb-callback__inner">
         <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
         <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
-        <a class="btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
+        <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
       </div>
     </section>
 
@@ -269,10 +271,30 @@ const benefits = [
   body.page-fb .rev__count {
     padding-block: var(--space-6);
   }
+  /* The call band and Meet Randy: one modest gap between the band's phone
+     number and the gold rule above "Meet Randy" (the two sections' paddings
+     used to add up, and on phones the heading sat centered beside the photo). */
+  body.page-fb .fb-band {
+    padding-bottom: var(--space-4);
+  }
+  body.page-fb .randy {
+    padding-top: var(--space-4);
+  }
+  @media (max-width: 63.99rem) {
+    body.page-fb .randy__title {
+      align-self: start;
+    }
+  }
   @media (min-width: 64rem) {
     body.page-fb .rev,
     body.page-fb .randy {
       padding-block: var(--space-12);
+    }
+    body.page-fb .fb-band {
+      padding-bottom: var(--space-6);
+    }
+    body.page-fb .randy {
+      padding-top: var(--space-6);
     }
     body.page-fb .rev__title {
       margin-bottom: var(--space-8);
@@ -404,8 +426,9 @@ const benefits = [
     display: block;
   }
 
-  /* Callback band: a compact, secondary alternative to calling (outlined in
-     the CTA orange, smaller than the solid call buttons). */
+  /* Callback band: a compact alternative to calling. Its button is a solid
+     orange call-style button (auto width, so the full-width call button
+     stays dominant); on hover it turns white with orange text and border. */
   .fb-callback {
     padding-block: var(--space-6);
     background: var(--color-bg);
@@ -426,16 +449,13 @@ const benefits = [
     font-size: 1.125rem;
     line-height: 1.4;
   }
-  .fb-callback__btn {
+  .fb-call__btn.fb-callback__btn {
     border: 2px solid var(--color-cta);
+  }
+  .fb-call__btn.fb-callback__btn:hover {
     background: var(--color-bg);
     color: var(--color-cta);
-    font-weight: 800;
-    letter-spacing: 0.01em;
-  }
-  .fb-callback__btn:hover {
-    background: var(--color-cta);
-    color: var(--color-on-cta);
+    filter: none;
   }
   /* The callback link lands on the form heading with a little room above. */
   .fb-form__title {
