@@ -11,7 +11,9 @@
 // V1.2 (Randy): burial insurance headline, callback band linking to the form,
 // two-line starting-rate note, tighter spacing. V1.3: checkmark wording and
 // order, solid callback button, smaller gap before Meet Randy, title and
-// description.
+// description. V1.4: disclosure back under the phone number (call bar waits
+// until it scrolls away), centered hero, full-size callback button, three-row
+// short form.
 //
 // GA4: page views as everywhere; the body class `track-page-calls` makes
 // src/scripts/tracking.ts count taps on this page's call links as
@@ -105,14 +107,14 @@ const benefits = [
           <li>1st-Day Coverage for Eligible Applicants</li>
           <li>Pays for Burial, Cremation, Funeral or Final Expenses</li>
         </ul>
-        <p class="fb-hero__note">
-          <span>Starting rates vary by age, health, and coverage.</span>
-          <span>$2/day does not necessarily buy $25,000 in coverage.</span>
-        </p>
         <div class="fb-call">
           <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
+        <p class="fb-hero__note">
+          <span>Starting rates vary by age, health, and coverage.</span>
+          <span>$2/day does not necessarily buy $25,000 in coverage.</span>
+        </p>
       </div>
     </section>
 
@@ -236,10 +238,29 @@ const benefits = [
   const bar = document.querySelector<HTMLElement>('.call-sticky');
   document.addEventListener('focusin', (e) => {
     const el = e.target as HTMLElement | null;
-    if (!bar || !el?.getBoundingClientRect || getComputedStyle(bar).display === 'none') return;
+    if (!bar || !el?.getBoundingClientRect) return;
+    const style = getComputedStyle(bar);
+    if (style.display === 'none' || style.visibility === 'hidden') return;
     const overlap = el.getBoundingClientRect().bottom - bar.getBoundingClientRect().top;
     if (overlap > 0 && el !== bar) window.scrollBy(0, overlap + 16);
   });
+
+  // The mobile call bar waits until the hero's own call button, phone number
+  // and starting-rate disclosure have left the screen, so it never sits on
+  // top of the disclosure (on any phone height) or repeats the button right
+  // above it. Without JavaScript the bar simply shows.
+  const heroCall = [...document.querySelectorAll<HTMLElement>('.fb-hero .fb-call, .fb-hero__note')];
+  if (bar && heroCall.length && 'IntersectionObserver' in window) {
+    const visible = new Set<Element>();
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      }
+      document.body.classList.toggle('fb-hero-call-visible', visible.size > 0);
+    });
+    heroCall.forEach((el) => io.observe(el));
+  }
 </script>
 
 <style is:global>
@@ -256,6 +277,27 @@ const benefits = [
   }
   body.page-fb .btn {
     text-align: center;
+  }
+  /* The short form (src/lib/lead/lead-form.ts, used only here): First | Last,
+     State | Phone, then the message across both columns, from a form width of
+     18rem (phones from about 360px wide); narrower forms keep one column.
+     Paired labels stay on one line so each row's boxes line up ("Phone
+     Number" runs a few pixels into the gap at 360px, never past the form). */
+  @container (min-width: 18rem) {
+    .lead-form--short .lead-form__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lead-form--short .lead-form__field--wide {
+      grid-column: 1 / -1;
+    }
+    .lead-form--short .lead-form__field:not(.lead-form__field--wide) .lead-form__label {
+      white-space: nowrap;
+    }
+  }
+  /* The mobile call bar waits while the hero's call button and disclosure are
+     on screen (script on this page; visibility keeps its space reserved). */
+  body.page-fb.fb-hero-call-visible .call-sticky {
+    visibility: hidden;
   }
   /* Tighter spacing for the reused homepage sections on this page only. */
   body.page-fb .rev,
@@ -366,8 +408,12 @@ const benefits = [
     color: #ffffff;
     padding-block: var(--space-6);
   }
+  /* The hero is one centered column, lined up with the centered callback
+     band below; the checkmark list is centered as a block with its rows
+     left-aligned. */
   .fb-hero__inner {
     max-width: 48rem;
+    text-align: center;
   }
   .fb-hero__title {
     margin: 0 0 var(--space-4);
@@ -385,8 +431,11 @@ const benefits = [
   }
   .fb-hero__points {
     list-style: none;
-    margin: 0 0 var(--space-4);
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto var(--space-4);
     padding: 0;
+    text-align: left;
     display: grid;
     gap: var(--space-2);
     font-size: 1.1875rem;
@@ -407,18 +456,16 @@ const benefits = [
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
-  /* The starting-rate qualification: two short sentences stacked tightly,
-     centered just above the call button (clear of the mobile call bar on the
-     first screen), small but readable (cream on green
-     10.5:1). */
+  /* The starting-rate qualification, under the hero phone number: two short
+     sentences stacked tightly, centered, fine print (10px, about 70% of the
+     earlier desktop size; cream on green 10.5:1). The mobile call bar stays
+     hidden while it is on screen (script above). */
   .fb-hero__note {
     max-width: 28rem;
-    margin: 0 0 var(--space-3);
+    margin: var(--space-1) auto 0;
     text-align: center;
-    /* 12px on small phones up to 14px: each sentence fits on one line from
-       about 360px wide (wraps, balanced, only on the narrowest screens). */
-    font-size: clamp(0.75rem, 3.3vw, 0.875rem);
-    line-height: 1.2;
+    font-size: 0.625rem;
+    line-height: 1.15;
     color: var(--home-cream);
     text-wrap: balance;
   }
@@ -435,7 +482,6 @@ const benefits = [
     border-bottom: 1px solid var(--color-border);
   }
   .fb-callback__inner {
-    max-width: 28rem;
     text-align: center;
   }
   .fb-callback__title {
@@ -449,7 +495,11 @@ const benefits = [
     font-size: 1.125rem;
     line-height: 1.4;
   }
+  /* Same size and padding as the hero's call button (full width up to the
+     same 28rem). */
   .fb-call__btn.fb-callback__btn {
+    width: 100%;
+    max-width: 28rem;
     border: 2px solid var(--color-cta);
   }
   .fb-call__btn.fb-callback__btn:hover {
@@ -468,6 +518,7 @@ const benefits = [
     align-items: stretch;
     gap: var(--space-3);
     max-width: 28rem;
+    margin-inline: auto;
   }
   .fb-call--center {
     margin-inline: auto;
