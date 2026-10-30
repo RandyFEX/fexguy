@@ -8,6 +8,9 @@
 // message; Formspark, Turnstile, /help/ confirmation as everywhere).
 // noindex, follow; kept out of the sitemap, llms.txt and site search.
 //
+// V1.2 (Randy): burial insurance headline, callback band linking to the form,
+// two-line starting-rate note, tighter spacing.
+//
 // GA4: page views as everywhere; the body class `track-page-calls` makes
 // src/scripts/tracking.ts count taps on this page's call links as
 // click_to_call (never a Meta Lead). A completed quote request is counted on
@@ -91,22 +94,31 @@ const benefits = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Life Insurance Starting at Just $2 a Day!</h1>
+        <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Burial Insurance Starting at Just $2 a Day!</h1>
         <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50–85</span>.</p>
         <ul class="fb-hero__points" role="list">
+          <li>Helps Pay for Burial, Cremation, Funeral &amp; Final Expenses</li>
           <li>No medical exam.</li>
           <li>Rates never increase.</li>
           <li>Coverage never expires.</li>
           <li>First-day coverage available for eligible applicants.</li>
         </ul>
+        <p class="fb-hero__note">
+          <span>Starting rates vary by age, health, and coverage.</span>
+          <span>$2/day does not necessarily buy $25,000 in coverage.</span>
+        </p>
         <div class="fb-call">
           <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
-        <p class="fb-hero__note">
-          Starting premiums vary by age, health, coverage amount, and eligibility. $2 a day is a starting rate, not the
-          price of every plan or of $25,000 in coverage.
-        </p>
+      </div>
+    </section>
+
+    <section class="fb-callback" aria-labelledby="fb-callback-title">
+      <div class="container fb-callback__inner">
+        <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
+        <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
+        <a class="btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
       </div>
     </section>
 
@@ -182,7 +194,7 @@ const benefits = [
 
     <section class="fb-form" aria-labelledby="fb-form-title">
       <div class="container fb-form__inner">
-        <h2 class="fb-section-title" id="fb-form-title">Prefer a Call Back?</h2>
+        <h2 class="fb-section-title fb-form__title" id="fb-form-title">Request a Callback</h2>
         <p class="fb-form__lede">
           Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fb-nowrap">{phone.display}</a>.
         </p>
@@ -215,6 +227,19 @@ const benefits = [
   </div>
 </BaseLayout>
 
+<script>
+  // Browsers only scroll a focused field into view when it is outside the
+  // window, so a field partly behind the fixed mobile call bar stays there.
+  // On this page, scroll such a field just clear of the bar (WCAG 2.2 SC 2.4.11).
+  const bar = document.querySelector<HTMLElement>('.call-sticky');
+  document.addEventListener('focusin', (e) => {
+    const el = e.target as HTMLElement | null;
+    if (!bar || !el?.getBoundingClientRect || getComputedStyle(bar).display === 'none') return;
+    const overlap = el.getBoundingClientRect().bottom - bar.getBoundingClientRect().top;
+    if (overlap > 0 && el !== bar) window.scrollBy(0, overlap + 16);
+  });
+</script>
+
 <style is:global>
   /* Tokens the reused homepage sections (reviews, Meet Randy) rely on; the same
      values as the homepage palette (src/pages/index.astro). Contrast (WCAG 2.2
@@ -229,6 +254,29 @@ const benefits = [
   }
   body.page-fb .btn {
     text-align: center;
+  }
+  /* Tighter spacing for the reused homepage sections on this page only. */
+  body.page-fb .rev,
+  body.page-fb .randy {
+    padding-block: var(--space-8);
+  }
+  body.page-fb .rev__title {
+    margin-bottom: var(--space-6);
+  }
+  body.page-fb .rev__title::before {
+    margin-bottom: var(--space-4);
+  }
+  body.page-fb .rev__count {
+    padding-block: var(--space-6);
+  }
+  @media (min-width: 64rem) {
+    body.page-fb .rev,
+    body.page-fb .randy {
+      padding-block: var(--space-12);
+    }
+    body.page-fb .rev__title {
+      margin-bottom: var(--space-8);
+    }
   }
   body.page-fb .btn--secondary:hover {
     background: var(--color-primary);
@@ -294,7 +342,7 @@ const benefits = [
     --color-focus-inner: var(--color-text);
     background: var(--color-primary);
     color: #ffffff;
-    padding-block: var(--space-8) var(--space-12);
+    padding-block: var(--space-6);
   }
   .fb-hero__inner {
     max-width: 48rem;
@@ -315,7 +363,7 @@ const benefits = [
   }
   .fb-hero__points {
     list-style: none;
-    margin: 0 0 var(--space-6);
+    margin: 0 0 var(--space-4);
     padding: 0;
     display: grid;
     gap: var(--space-2);
@@ -337,11 +385,61 @@ const benefits = [
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
+  /* The starting-rate qualification: two short sentences stacked tightly,
+     centered just above the call button (clear of the mobile call bar on the
+     first screen), small but readable (cream on green
+     10.5:1). */
   .fb-hero__note {
-    margin: var(--space-6) 0 0;
-    font-size: 1rem;
-    line-height: 1.5;
+    max-width: 28rem;
+    margin: 0 0 var(--space-3);
+    text-align: center;
+    /* 12px on small phones up to 14px: each sentence fits on one line from
+       about 360px wide (wraps, balanced, only on the narrowest screens). */
+    font-size: clamp(0.75rem, 3.3vw, 0.875rem);
+    line-height: 1.2;
     color: var(--home-cream);
+    text-wrap: balance;
+  }
+  .fb-hero__note span {
+    display: block;
+  }
+
+  /* Callback band: a compact, secondary alternative to calling (outlined in
+     the CTA orange, smaller than the solid call buttons). */
+  .fb-callback {
+    padding-block: var(--space-6);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .fb-callback__inner {
+    max-width: 28rem;
+    text-align: center;
+  }
+  .fb-callback__title {
+    margin: 0 0 var(--space-1);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+  .fb-callback__text {
+    margin: 0 0 var(--space-3);
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+  .fb-callback__btn {
+    border: 2px solid var(--color-cta);
+    background: var(--color-bg);
+    color: var(--color-cta);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+  .fb-callback__btn:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+  }
+  /* The callback link lands on the form heading with a little room above. */
+  .fb-form__title {
+    scroll-margin-top: var(--space-4);
   }
 
   .fb-call {
@@ -371,7 +469,7 @@ const benefits = [
   }
 
   .fb-section-title {
-    margin: 0 auto var(--space-8);
+    margin: 0 auto var(--space-6);
     text-align: center;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
@@ -383,12 +481,12 @@ const benefits = [
     display: block;
     width: 3.5rem;
     height: 3px;
-    margin: 0 auto var(--space-6);
+    margin: 0 auto var(--space-4);
     background: var(--home-gold);
   }
 
   .fb-benefits {
-    padding-block: var(--space-12);
+    padding-block: var(--space-8);
     background: var(--home-cream);
   }
   .fb-benefits__grid {
@@ -449,28 +547,28 @@ const benefits = [
   }
 
   .fb-band {
-    padding-block: var(--space-12);
+    padding-block: var(--space-8);
     background: var(--color-bg);
   }
   .fb-band__inner {
     text-align: center;
   }
   .fb-band__text {
-    margin: 0 0 var(--space-6);
+    margin: 0 0 var(--space-4);
     font-size: 1.375rem;
     font-weight: 700;
     color: var(--color-text);
   }
 
   .fb-form {
-    padding-block: var(--space-12);
+    padding-block: var(--space-8);
     background: var(--home-stone);
   }
   .fb-form__inner {
     max-width: 40rem;
   }
   .fb-form__lede {
-    margin: 0 0 var(--space-6);
+    margin: 0 0 var(--space-4);
     text-align: center;
     font-size: 1.125rem;
     line-height: 1.55;
@@ -479,7 +577,7 @@ const benefits = [
   .fb-final {
     --color-focus: #ffffff;
     --color-focus-inner: var(--color-text);
-    padding-block: var(--space-12);
+    padding-block: var(--space-8);
     background: var(--color-primary);
     color: #ffffff;
     text-align: center;
@@ -491,7 +589,7 @@ const benefits = [
     color: #ffffff;
   }
   .fb-final__text {
-    margin: 0 0 var(--space-6);
+    margin: 0 0 var(--space-4);
     font-size: 1.1875rem;
     color: var(--home-cream);
   }
@@ -541,13 +639,13 @@ const benefits = [
   }
   @media (min-width: 64rem) {
     .fb-hero {
-      padding-block: var(--space-16);
+      padding-block: var(--space-12);
     }
     .fb-benefits,
     .fb-band,
     .fb-form,
     .fb-final {
-      padding-block: 4.5rem;
+      padding-block: var(--space-12);
     }
     .fb-benefits__grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
