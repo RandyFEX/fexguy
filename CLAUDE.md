@@ -1301,7 +1301,9 @@ scope protection wins.
   focus kept clear of the mobile call bar (`--call-sticky-h`,
   src/scripts/sticky-call.ts), keyboard-focusable scrolling tables
   (src/scripts/scroll-tables.ts), and the native lead form's visible
-  labels, required-field note, per-field errors (aria-describedby) and
+  labels, required attributes (no visible required-fields note since Randy's
+  V1.3, October 2026; the optional field says "(optional)"), per-field
+  errors (aria-describedby) and
   polite status region (src/lib/lead/lead-form.ts, src/scripts/lead-form.ts).
   The Fillout rollback keeps focus on the quote box when its embed replaces
   the button and gives the iframe a meaningful title.

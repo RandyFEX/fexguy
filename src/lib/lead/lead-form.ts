@@ -96,7 +96,6 @@ export function leadFormHtml(
     `<div class="quote-box quote-box--${variant} quote-box--native" data-quote-box="${variant}"${region}>` +
     title +
     `<form class="lead-form${short ? ' lead-form--short' : ''}" id="quote" action="${endpoint}" method="post" data-lead-form${formName}>` +
-    `<p class="lead-form__note">${short ? 'All fields are required except Question or Message.' : 'All fields are required.'}</p>` +
     // Without JavaScript the security check can't run, so the form can't be
     // sent: point those visitors to the phone (shown only then).
     `<noscript><p class="lead-form__note">This form needs JavaScript, which is turned off in your browser. Please call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.</p></noscript>` +
