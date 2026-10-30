@@ -5,6 +5,8 @@
 //   confirmed lead, on /help/         GA4 generate_lead  Meta Lead
 //   (native form → Formspark; or a verified Fillout form_submit, rollback)
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
+//   click on any call link on a page  GA4 click_to_call  (nothing to Meta)
+//   whose <body> has track-page-calls (/facebook/, campaign number)
 //
 // Rules:
 //  - Runs only on the production hostnames in src/config/lead.ts. Anywhere
@@ -193,5 +195,5 @@ document.addEventListener('click', (e) => {
   const link = (e.target as Element | null)?.closest?.('a[href^="tel:"]');
   if (!link) return;
   const digits = (link.getAttribute('href') ?? '').replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
-  if (digits === lead.phone.digits) ga4('event', 'click_to_call');
+  if (digits === lead.phone.digits || document.body.classList.contains('track-page-calls')) ga4('event', 'click_to_call');
 });

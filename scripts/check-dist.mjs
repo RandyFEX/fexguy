@@ -14,7 +14,7 @@
 // Redirects: no source may also be a built page, and every internal
 // destination must be a built page (no chains, no redirects to 404s).
 // Content guards (decisions recorded in CLAUDE.md): no 888-656-4648 (except
-// on its own landing page, /roku/), no
+// on its ad landing pages, /roku/ and /facebook/), no
 // retired Meta Pixel IDs, no third-party video embeds, no Funeral Funds
 // social links, no FEXGuy email address, no "licensed in all 50 states",
 // no published office hours or old PO Box address, no old consent wording,
@@ -208,8 +208,8 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   if (text.includes('G-JMYZE458HQ')) ga4Found = true;
   if (text.includes('2351342698972751')) metaFound = true;
   for (const [label, re] of GUARDS) {
-    // The CTV ad number is allowed only on its own landing page, /roku/.
-    if (label.startsWith('TV/streaming') && file.slice(DIST.length) === 'roku/index.html') continue;
+    // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/.
+    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html'].includes(file.slice(DIST.length))) continue;
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
