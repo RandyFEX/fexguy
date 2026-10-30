@@ -11,7 +11,8 @@
 // V1.2 (Randy): burial insurance headline, callback band linking to the form,
 // two-line starting-rate note, tighter spacing. V1.3: checkmark wording and
 // order, solid callback button, smaller gap before Meet Randy, title and
-// description. V1.4: disclosure back under the phone number (call bar waits
+// description. V1.5: headline "That Can Start Today!", one-sentence rate
+// disclosure, no $2/day offer. V1.4: disclosure back under the phone number (call bar waits
 // until it scrolls away), centered hero, full-size callback button, three-row
 // short form.
 //
@@ -98,7 +99,7 @@ const benefits = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Burial Insurance Starting at Just $2 a Day!</h1>
+        <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Burial Insurance That Can Start Today!</h1>
         <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50-85</span>.</p>
         <ul class="fb-hero__points" role="list">
           <li>No Medical Exam</li>
@@ -112,8 +113,7 @@ const benefits = [
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
         <p class="fb-hero__note">
-          <span>Starting rates vary by age, health, and coverage.</span>
-          <span>$2/day does not necessarily buy $25,000 in coverage.</span>
+          <span>Rates vary by age, health, and coverage.</span>
         </p>
       </div>
     </section>
@@ -246,7 +246,7 @@ const benefits = [
   });
 
   // The mobile call bar waits until the hero's own call button, phone number
-  // and starting-rate disclosure have left the screen, so it never sits on
+  // and rate disclosure have left the screen, so it never sits on
   // top of the disclosure (on any phone height) or repeats the button right
   // above it. Without JavaScript the bar simply shows.
   const heroCall = [...document.querySelectorAll<HTMLElement>('.fb-hero .fb-call, .fb-hero__note')];
@@ -456,8 +456,8 @@ const benefits = [
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
-  /* The starting-rate qualification, under the hero phone number: two short
-     sentences stacked tightly, centered, fine print (10px, about 70% of the
+  /* The rate disclosure, under the hero phone number (V1.5: one sentence;
+     the $2/day offer is gone from this page), centered, fine print (10px, about 70% of the
      earlier desktop size; cream on green 10.5:1). The mobile call bar stays
      hidden while it is on screen (script above). */
   .fb-hero__note {
