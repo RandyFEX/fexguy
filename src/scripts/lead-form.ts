@@ -217,7 +217,8 @@ const phoneDigits = (value: string) => value.replace(/\D/g, '').replace(/^1(?=\d
 
 const isValid = (control: Control) => {
   const value = control.value.trim();
-  if (!value) return false;
+  // Empty is fine only for an optional field (the short form's message).
+  if (!value) return !control.required;
   if (control.name === 'Phone Number') return PHONE_DIGITS.test(phoneDigits(value));
   // Email format (and anything else the markup declares) via the browser.
   return control.checkValidity();

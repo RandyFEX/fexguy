@@ -14,6 +14,11 @@ import { lead } from '../../config/lead';
 
 export type LeadFormVariant = 'sidebar' | 'inline';
 
+/** Field sets: 'standard' (every placement) or 'short' (the /facebook/ ad
+ * landing page, Randy, October 2026: no Email, and an optional Question or
+ * Message instead of the required "What can Randy help you with?"). */
+export type LeadFormFields = 'standard' | 'short';
+
 /** The 50 US states, as on the Fillout form (no DC or territories). */
 export const US_STATES = [
   'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
@@ -51,7 +56,8 @@ const field = (id: string, label: string, control: string, wide = false) =>
   `<p class="lead-form__error" id="${id}-error" hidden></p>` +
   '</div>';
 
-export function leadFormHtml(variant: LeadFormVariant): string {
+export function leadFormHtml(variant: LeadFormVariant, fields: LeadFormFields = 'standard'): string {
+  const short = fields === 'short';
   const { endpoint, successPath } = lead.formspark;
   const title =
     variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
@@ -69,7 +75,7 @@ export function leadFormHtml(variant: LeadFormVariant): string {
     `<div class="quote-box quote-box--${variant} quote-box--native" data-quote-box="${variant}"${region}>` +
     title +
     `<form class="lead-form" id="quote" action="${endpoint}" method="post" data-lead-form${formName}>` +
-    '<p class="lead-form__note">All fields are required.</p>' +
+    `<p class="lead-form__note">${short ? 'All fields are required except Question or Message.' : 'All fields are required.'}</p>` +
     // Without JavaScript the security check can't run, so the form can't be
     // sent: point those visitors to the phone (shown only then).
     `<noscript><p class="lead-form__note">This form needs JavaScript, which is turned off in your browser. Please call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.</p></noscript>` +
@@ -84,11 +90,13 @@ export function leadFormHtml(variant: LeadFormVariant): string {
       'Last Name',
       '<input class="lead-form__input" id="lf-last" name="Last Name" type="text" autocomplete="family-name" required aria-describedby="lf-last-error">',
     ) +
-    field(
-      'lf-email',
-      'Email',
-      '<input class="lead-form__input" id="lf-email" name="Email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="lf-email-error">',
-    ) +
+    (short
+      ? ''
+      : field(
+          'lf-email',
+          'Email',
+          '<input class="lead-form__input" id="lf-email" name="Email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="lf-email-error">',
+        )) +
     field(
       'lf-phone',
       'Phone Number',
@@ -100,12 +108,19 @@ export function leadFormHtml(variant: LeadFormVariant): string {
       `<select class="lead-form__input lead-form__select" id="lf-state" name="State" autocomplete="address-level1" required aria-describedby="lf-state-error"><option value="">Select your state</option>${states}</select>`,
       true,
     ) +
-    field(
-      'lf-help',
-      'What can Randy help you with?',
-      '<textarea class="lead-form__input lead-form__textarea" id="lf-help" name="What can Randy help you with?" rows="4" required aria-describedby="lf-help-error"></textarea>',
-      true,
-    ) +
+    (short
+      ? field(
+          'lf-help',
+          'Question or Message (optional)',
+          '<textarea class="lead-form__input lead-form__textarea" id="lf-help" name="Question or Message" rows="3" aria-describedby="lf-help-error"></textarea>',
+          true,
+        )
+      : field(
+          'lf-help',
+          'What can Randy help you with?',
+          '<textarea class="lead-form__input lead-form__textarea" id="lf-help" name="What can Randy help you with?" rows="4" required aria-describedby="lf-help-error"></textarea>',
+          true,
+        )) +
     '</div>' +
     // Cloudflare Turnstile: src/scripts/lead-form.ts renders the widget here
     // (shown only if Cloudflare needs the visitor to click) and sends its

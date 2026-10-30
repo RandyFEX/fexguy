@@ -4,7 +4,8 @@
 // here and on /roku/ (CLAUDE.md, "Phone"). Landing layout: no site header,
 // navigation, pre-footer or site footer; the sticky mobile call bar stays.
 // Reuses the homepage's review highlights and Meet Randy sections and the
-// site's one native quote form (Formspark, Turnstile, /help/ confirmation).
+// site's native quote form in its short field set (no Email, optional
+// message; Formspark, Turnstile, /help/ confirmation as everywhere).
 // noindex, follow; kept out of the sitemap, llms.txt and site search.
 //
 // GA4: page views as everywhere; the body class `track-page-calls` makes
@@ -19,7 +20,8 @@ import { quoteBoxHtml } from '@/lib/lead/quote-box';
 import { site } from '@/config/site';
 
 const phone = PAGE_PHONES.ctv;
-const quoteBox = withPagePhone(quoteBoxHtml('inline'), 'ctv');
+// The short field set: no Email, optional Question or Message (Randy, V1.1).
+const quoteBox = withPagePhone(quoteBoxHtml('inline', 'short'), 'ctv');
 const notes = site.footer.notes.map((html) => withPagePhone(html, 'ctv'));
 
 const title = 'Affordable Life Insurance for Ages 50-85 | Funeral Funds';
@@ -148,14 +150,10 @@ const benefits = [
         </ul>
         <div class="fb-exam">
           <h3 class="fb-exam__title">No Medical Exam Required</h3>
+          <p>There’s no medical exam. First-day coverage is available if you meet the plan’s health requirements.</p>
           <p>
-            You never need a medical exam. Plans with first-day coverage ask a few health questions on the application,
-            and the full benefit starts on the first day only for applicants who qualify.
-          </p>
-          <p>
-            If your health keeps you from qualifying, guaranteed-issue plans are available. They don’t depend on your health,
-            but they have a waiting period before the full death benefit is paid for death from natural causes. Randy will
-            tell you which kind of plan you qualify for before you apply.
+            Guaranteed-issue plans are another option, but they have a waiting period before the full benefit is paid for a
+            death from natural causes. Talk with Randy about your health history to see which options are open to you.
           </p>
         </div>
       </div>
@@ -175,9 +173,8 @@ const benefits = [
 
     <MeetRandy>
       <p slot="extra">
-        Randy VanderVaate is an independent licensed life insurance agent with more than 11 years of experience. He shops
-        multiple insurance companies to help you compare prices and coverage options, and he’s there to help you before and
-        after you buy your policy. You can verify his licensing with his National Producer Number (NPN), 17792459, on{' '}
+        With over a decade of experience, Randy helps you before and after you buy your policy. You can verify his
+        licensing with his National Producer Number (NPN), 17792459, on{' '}
         <a href="/licenses/">his licenses page</a>.
       </p>
       <a slot="action" class="btn fb-call__btn" href={phone.href}><span>CALL RANDY: <span class="fb-nowrap">{phone.display}</span></span></a>

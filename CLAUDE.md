@@ -1068,8 +1068,13 @@ scope protection wins.
   sitemap, llms.txt and site search). Phone-first with the campaign number
   888-656-4648; reuses the homepage ReviewHighlights and MeetRandy sections
   (MeetRandy's "extra"/"action" slots; the homepage uses neither) and the
-  native lead form. Its hero copy and the four benefit descriptions are
-  Randy's wording.
+  native lead form in its short field set (`quoteBoxHtml('inline', 'short')`:
+  First Name, Last Name, Phone Number, State required; optional "Question or
+  Message"; no Email; same Formspark endpoint, Turnstile, consent text,
+  /help/ redirect and lead tracking). Every other form keeps the standard
+  fields. Its hero copy and the four benefit descriptions are Randy's
+  wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
+  (campaigns are told apart by when ads run).
 - Phone placements: header nav, pre-footer CTA, mobile call button
   (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header
