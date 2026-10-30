@@ -1035,6 +1035,7 @@ a:hover {
 
 .lead-form__submit {
   margin-top: var(--space-6);
+  text-wrap: balance;
 }
 
 .lead-form__submit:disabled {

@@ -149,7 +149,7 @@ export function leadFormHtml(
     LEAD_SOURCE_FIELDS.map((name) => `<input type="hidden" name="${name}" value="">`).join('') +
     // Without JavaScript, Formspark sends the visitor here after submitting.
     `<input type="hidden" name="_redirect" value="${origin}">` +
-    '<button class="btn btn--primary btn--block lead-form__submit" type="submit">YES, I WANT HELP!</button>' +
+    '<button class="btn btn--primary btn--block lead-form__submit" type="submit">REQUEST RATES OR INFO</button>' +
     '<p class="lead-form__status" role="status" aria-live="polite" tabindex="-1" data-lead-status></p>' +
     '<p class="lead-form__consent">Submit to give Randy permission to call, text, or email you. Msg &amp; data rates may apply. No purchase required.</p>' +
     `<p class="lead-form__call">Prefer to talk? Call Randy at <a class="lead-form__phone" href="${lead.phone.href}">${lead.phone.display}</a></p>` +
