@@ -2,7 +2,10 @@
 // Primary navigation. Small screens: collapses behind a Menu button.
 // Items with children render as a native <details> disclosure (works without
 // JavaScript). Without JS the list is simply always visible. The website phone
-// number is the last item, as on the live site.
+// number is the last item, as on the live site. On desktop the website number
+// shows as two right-aligned lines ("Speak with a licensed agent" over a phone
+// icon and the number; Randy, V2.0). Pages with their own number (/roku/)
+// and the mobile menu keep the plain number.
 import { site } from '@/config/site';
 import { PAGE_PHONES, type PagePhoneKey } from '@/config/phones';
 
@@ -46,7 +49,19 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
         ))}
         {site.phoneDisplay && (
           <li class="nav__phone">
-            <a href={pagePhone.href}>{pagePhone.display}</a>
+            {phone === 'default' ? (
+              <a href={pagePhone.href} class="nav__phone-link">
+                <span class="nav__phone-intro">Speak with a licensed agent</span>{" "}
+                <span class="nav__phone-number">
+                  <svg class="nav__phone-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z" />
+                  </svg>
+                  {pagePhone.display}
+                </span>
+              </a>
+            ) : (
+              <a href={pagePhone.href}>{pagePhone.display}</a>
+            )}
           </li>
         )}
       </ul>
@@ -172,6 +187,11 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     color: var(--color-accent);
     font-weight: 700;
   }
+  /* Mobile menu: the plain number, as before. */
+  .nav__phone-intro,
+  .nav__phone-icon {
+    display: none;
+  }
   .nav__list a:hover,
   .nav__list a[aria-current='page'] {
     color: var(--color-primary);
@@ -199,6 +219,36 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     }
     .nav__group {
       position: relative;
+    }
+    /* Two-line phone block, right-aligned; it fits inside the 44px tap
+       target, so the header height is unchanged. */
+    .nav__list .nav__phone-link {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 0.125rem;
+      text-align: right;
+      line-height: 1.15;
+      color: #173f35;
+    }
+    .nav__phone-intro {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+    .nav__phone-number {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .nav__phone-icon {
+      display: block;
+      flex: none;
+      color: #173f35;
     }
     .nav__group .nav__sub {
       position: absolute;
