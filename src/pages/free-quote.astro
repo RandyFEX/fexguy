@@ -21,8 +21,13 @@ import { site } from '@/config/site';
 
 const phone = PAGE_PHONES.default;
 // The short field set (no Email, optional Question or Message), posting to
-// the website form.
-const quoteBox = quoteBoxHtml('inline', 'short', lead.formspark.endpoint);
+// the website form. On this page only, the line under the form reads "For
+// the fastest answers, call Randy at ..." (Randy, V1.2); the link and its
+// class (styling, click_to_call tracking) are the shared form's.
+const formHtml = quoteBoxHtml('inline', 'short', lead.formspark.endpoint);
+const callLine = /<p class="lead-form__call">Prefer to talk\? Call Randy at (<a class="lead-form__phone" href="tel:8888629456">[^<]*<\/a>)<\/p>/;
+if (!callLine.test(formHtml)) throw new Error('free-quote: the lead form call line changed; update src/pages/free-quote.astro');
+const quoteBox = formHtml.replace(callLine, '<p class="lead-form__call">For the fastest answers, call Randy at $1.</p>');
 const notes = site.footer.notes;
 
 const title = "A - FINAL EXPENSE QUOTER - Funeral Funds";
@@ -67,7 +72,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
       <div class="container fq-hero__inner">
         <h2 class="fq-hero__title" id="fq-form-title">Request a Callback</h2>
         <p class="fq-hero__lede">
-          Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fq-nowrap">{phone.display}</a>.
+          Send Randy your details and he’ll get back to you.
         </p>
         <div class="fq-hero__form">
           <Fragment set:html={quoteBox} />
