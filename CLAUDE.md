@@ -1072,12 +1072,24 @@ scope protection wins.
   First Name, Last Name, Phone Number, State required; optional "Question or
   Message"; no Email; same Formspark endpoint, Turnstile, consent text,
   /help/ redirect and lead tracking). Every other form keeps the standard
-  fields. It posts to the separate marketing Formspark form
-  (`lead.formspark.marketingEndpoint`, https://submit-form.com/7HBVq4vTa;
-  Randy, October 2026); every other form posts to the website form. The
+  fields, except /free-quote/ (below). It posts to the separate marketing
+  Formspark form (`lead.formspark.marketingEndpoint`,
+  https://submit-form.com/7HBVq4vTa; Randy, October 2026); every other form
+  posts to the website form. The
   script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
+- **/free-quote/** (Randy, October 2026): the general life insurance quote
+  page (final expense, term, mortgage protection and other coverage),
+  `src/pages/free-quote.astro` (landing layout; the migrated title, robots,
+  social tags and JSON-LD unchanged; out of the sitemap, llms.txt and site
+  search). Built from the /facebook/ sections with the website number
+  888-862-9456 only: a green "Request a Callback" hero holding the short
+  callback form, Meet Randy, the review highlights, "Get Your Free Quote
+  Today" and the slim footer; hidden H1 "Request Life Insurance Quote". Its
+  short form posts to the website Formspark form (`lead.formspark.endpoint`,
+  https://submit-form.com/v3iwLYrWZ), never the marketing form. No coverage
+  amounts, whole life benefits or extra sections.
 - Phone placements: header nav, pre-footer CTA, mobile call button
   (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header

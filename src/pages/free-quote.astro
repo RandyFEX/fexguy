@@ -1,0 +1,369 @@
+---
+// General life insurance quote page (Randy, October 2026). Rebuilt from the
+// approved /facebook/ sections for every kind of life insurance shopper:
+// a green "Request a Callback" hero holding the short callback form, Meet
+// Randy, the review highlights, "Get Your Free Quote Today" and the slim
+// footer. Standalone like /facebook/ (landing layout: no site header,
+// navigation, pre-footer or site footer; the sticky mobile call bar stays).
+// Every call link is the website number, and the form posts to the website
+// Formspark form (lead.formspark.endpoint), never the marketing form.
+//
+// The SEO head (title, robots, social tags, JSON-LD) is the migrated
+// WordPress page's, unchanged; noindex keeps it out of the sitemap
+// (astro.config.mjs), llms.txt and site search.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
+import MeetRandy from '@/components/home/MeetRandy.astro';
+import { PAGE_PHONES } from '@/config/phones';
+import { quoteBoxHtml } from '@/lib/lead/quote-box';
+import { lead } from '@/config/lead';
+import { site } from '@/config/site';
+
+const phone = PAGE_PHONES.default;
+// The short field set (no Email, optional Question or Message), posting to
+// the website form.
+const quoteBox = quoteBoxHtml('inline', 'short', lead.formspark.endpoint);
+const notes = site.footer.notes;
+
+const title = "A - FINAL EXPENSE QUOTER - Funeral Funds";
+const robots = "nofollow, noindex";
+const headMeta = [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"A - FINAL EXPENSE QUOTER - Funeral Funds"},{"property":"og:url","content":"https://funeralfunds.com/free-quote/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"og:updated_time","content":"2026-06-01T12:02:19-05:00"},{"property":"article:published_time","content":"2016-08-25T19:28:51-05:00"},{"property":"article:modified_time","content":"2026-06-01T12:02:19-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"A - FINAL EXPENSE QUOTER - Funeral Funds"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"Less than a minute"}];
+const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1986\",\"height\":\"433\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/free-quote/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/free-quote/\",\"name\":\"A &#8211; FINAL EXPENSE QUOTER\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/free-quote/#webpage\",\"url\":\"https://funeralfunds.com/free-quote/\",\"name\":\"A - FINAL EXPENSE QUOTER - Funeral Funds\",\"datePublished\":\"2016-08-25T19:28:51-05:00\",\"dateModified\":\"2026-06-01T12:02:19-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/free-quote/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"A - FINAL EXPENSE QUOTER - Funeral Funds\",\"datePublished\":\"2016-08-25T19:28:51-05:00\",\"dateModified\":\"2026-06-01T12:02:19-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"name\":\"A - FINAL EXPENSE QUOTER - Funeral Funds\",\"@id\":\"https://funeralfunds.com/free-quote/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/free-quote/#webpage\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/free-quote/#webpage\"}}]}"];
+---
+
+<BaseLayout
+  title={title}
+  robots={robots}
+  noindex={true}
+  canonical="/free-quote/"
+  headMeta={headMeta}
+  jsonLd={jsonLd}
+  layout="landing"
+  bodyClass="page-fq"
+>
+  <div class="fq" data-page-type="sales" data-page-reason="Quote request landing page (noindex).">
+    <h1 class="visually-hidden">Request Life Insurance Quote</h1>
+
+    <div class="fq-top">
+      <div class="container fq-top__inner">
+        <img
+          class="fq-top__logo"
+          src="/images/logo/funeral-funds-wordmark-800.webp"
+          srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
+          sizes="14rem"
+          width="1987"
+          height="285"
+          alt="Funeral Funds"
+          fetchpriority="high"
+        />
+        <a class="fq-top__phone" href={phone.href}>
+          <span class="fq-top__phone-label">Call Randy</span>
+          <span class="fq-nowrap">{phone.display}</span>
+        </a>
+      </div>
+    </div>
+
+    <section class="fq-hero" aria-labelledby="fq-form-title">
+      <div class="container fq-hero__inner">
+        <h2 class="fq-hero__title" id="fq-form-title">Request a Callback</h2>
+        <p class="fq-hero__lede">
+          Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fq-nowrap">{phone.display}</a>.
+        </p>
+        <div class="fq-hero__form">
+          <Fragment set:html={quoteBox} />
+        </div>
+      </div>
+    </section>
+
+    <MeetRandy>
+      <p slot="extra">
+        With over a decade of experience, Randy helps you before and after you buy your policy. You can verify his
+        licensing with his National Producer Number (NPN), 17792459, on{' '}
+        <a href="/licenses/">his licenses page</a>.
+      </p>
+      <a slot="action" class="btn fq-call__btn" href={phone.href}><span>CALL RANDY: <span class="fq-nowrap">{phone.display}</span></span></a>
+    </MeetRandy>
+
+    <ReviewHighlights />
+
+    <section class="fq-final" aria-labelledby="fq-final-title">
+      <div class="container fq-final__inner">
+        <h2 class="fq-final__title" id="fq-final-title">Get Your Free Quote Today</h2>
+        <p class="fq-final__text">Free, friendly, no-pressure conversation with an independent agent.</p>
+        <div class="fq-call">
+          <a class="btn fq-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+          <a class="fq-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fq-foot">
+      <div class="container">
+        <ul class="fq-foot__links" role="list">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+          <li><a href="/licenses/">Licenses</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="fq-foot__notes">{notes.map((html) => <p set:html={html} />)}</div>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<script>
+  // Browsers only scroll a focused field into view when it is outside the
+  // window, so a field partly behind the fixed mobile call bar stays there.
+  // On this page, scroll such a field just clear of the bar (WCAG 2.2 SC 2.4.11).
+  const bar = document.querySelector<HTMLElement>('.call-sticky');
+  document.addEventListener('focusin', (e) => {
+    const el = e.target as HTMLElement | null;
+    if (!bar || !el?.getBoundingClientRect) return;
+    const style = getComputedStyle(bar);
+    if (style.display === 'none' || style.visibility === 'hidden') return;
+    const overlap = el.getBoundingClientRect().bottom - bar.getBoundingClientRect().top;
+    if (overlap > 0 && el !== bar) window.scrollBy(0, overlap + 16);
+  });
+</script>
+
+<style is:global>
+  /* Tokens the reused homepage sections (Meet Randy, reviews) rely on; the
+     same values as /facebook/ and the homepage palette. */
+  body.page-fq {
+    --home-cream: #f7f3e8;
+    --home-stone: #efebe2;
+    --home-gold: #b68a35;
+    --home-green-tint: #e4ece7;
+    --home-radius: 0.375rem;
+  }
+  body.page-fq .btn {
+    text-align: center;
+  }
+  /* The short form, laid out as on /facebook/: First | Last, State | Phone,
+     then the message across both columns, from a form width of 18rem. */
+  @container (min-width: 18rem) {
+    .lead-form--short .lead-form__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lead-form--short .lead-form__field--wide {
+      grid-column: 1 / -1;
+    }
+    .lead-form--short .lead-form__field:not(.lead-form__field--wide) .lead-form__label {
+      white-space: nowrap;
+    }
+  }
+  /* Spacing for the reused homepage sections, as on /facebook/. */
+  body.page-fq .rev,
+  body.page-fq .randy {
+    padding-block: var(--space-8);
+  }
+  body.page-fq .rev__title {
+    margin-bottom: var(--space-6);
+  }
+  body.page-fq .rev__title::before {
+    margin-bottom: var(--space-4);
+  }
+  body.page-fq .rev__count {
+    padding-block: var(--space-6);
+  }
+  @media (max-width: 63.99rem) {
+    body.page-fq .randy__title {
+      align-self: start;
+    }
+  }
+  @media (min-width: 64rem) {
+    body.page-fq .rev,
+    body.page-fq .randy {
+      padding-block: var(--space-12);
+    }
+    body.page-fq .rev__title {
+      margin-bottom: var(--space-8);
+    }
+  }
+  body.page-fq .btn--secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  /* The call buttons share the site's orange conversion color. */
+  .fq-call__btn {
+    min-height: 3.5rem;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    white-space: normal;
+  }
+  .fq-call__btn:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    filter: brightness(0.9);
+  }
+</style>
+
+<style>
+  .fq-nowrap {
+    white-space: nowrap;
+  }
+  .fq-top {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .fq-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-block: var(--space-3);
+  }
+  .fq-top__logo {
+    width: 8rem;
+    height: auto;
+  }
+  .fq-top__phone {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: var(--tap-target);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  .fq-top__phone-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  /* Green hero: heading, one line of text and the form in a white card. */
+  .fq-hero {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    background: var(--color-primary);
+    color: #ffffff;
+    padding-block: var(--space-6) var(--space-8);
+  }
+  .fq-hero__inner {
+    max-width: 40rem;
+    text-align: center;
+  }
+  .fq-hero__title {
+    margin: 0 0 var(--space-2);
+    font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+  .fq-hero__lede {
+    margin: 0 0 var(--space-4);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: var(--home-cream);
+  }
+  .fq-hero__lede a {
+    color: #ffffff;
+    font-weight: 700;
+  }
+  /* The form's own white box sits directly on the green, with its normal
+     text and focus colors. */
+  .fq-hero__form {
+    --color-focus: #1a1a1a;
+    --color-focus-inner: #ffffff;
+    color: var(--color-text);
+    text-align: left;
+  }
+
+  .fq-call {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+    max-width: 28rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .fq-call__number {
+    display: block;
+    min-height: var(--tap-target);
+    font-size: clamp(2rem, 1.6rem + 2vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .fq-final {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    padding-block: var(--space-8);
+    background: var(--color-primary);
+    color: #ffffff;
+    text-align: center;
+  }
+  .fq-final__title {
+    margin: 0 0 var(--space-3);
+    font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .fq-final__text {
+    margin: 0 0 var(--space-4);
+    font-size: 1.1875rem;
+    color: var(--home-cream);
+  }
+
+  .fq-foot {
+    padding-block: var(--space-8) calc(var(--space-8) + var(--call-sticky-h, 0px));
+    background: var(--color-bg);
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .fq-foot__links {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2) var(--space-6);
+  }
+  .fq-foot__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .fq-foot__notes p {
+    margin: 0 0 var(--space-3);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 24rem) {
+    .fq-top__logo {
+      width: 10.5rem;
+    }
+  }
+  @media (min-width: 48rem) {
+    .fq-top__logo {
+      width: 14rem;
+    }
+    .fq-top__phone {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 64rem) {
+    .fq-hero {
+      padding-block: var(--space-12);
+    }
+    .fq-final {
+      padding-block: var(--space-12);
+    }
+  }
+</style>
