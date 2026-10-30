@@ -73,9 +73,13 @@ const stateField = (states: string, wide: boolean, prompt = 'Select your state')
     wide,
   );
 
-export function leadFormHtml(variant: LeadFormVariant, fields: LeadFormFields = 'standard'): string {
+export function leadFormHtml(
+  variant: LeadFormVariant,
+  fields: LeadFormFields = 'standard',
+  endpoint: string = lead.formspark.endpoint,
+): string {
   const short = fields === 'short';
-  const { endpoint, successPath } = lead.formspark;
+  const { successPath } = lead.formspark;
   const title =
     variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
   // The titled sidebar box is a named region (landmark); the form itself is

@@ -1072,7 +1072,10 @@ scope protection wins.
   First Name, Last Name, Phone Number, State required; optional "Question or
   Message"; no Email; same Formspark endpoint, Turnstile, consent text,
   /help/ redirect and lead tracking). Every other form keeps the standard
-  fields. Its hero copy and the four benefit descriptions are Randy's
+  fields. It posts to the separate marketing Formspark form
+  (`lead.formspark.marketingEndpoint`, https://submit-form.com/7HBVq4vTa;
+  Randy, October 2026); every other form posts to the website form. The
+  script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
 - Phone placements: header nav, pre-footer CTA, mobile call button

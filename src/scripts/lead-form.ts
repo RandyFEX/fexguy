@@ -361,7 +361,9 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
     const timer = setTimeout(() => timeout.abort(), 20000);
     let ok = false;
     try {
-      const res = await fetch(lead.formspark.endpoint, {
+      // Each form posts to its own Formspark form (its action): the website
+      // form everywhere, the marketing form on /facebook/.
+      const res = await fetch(form.getAttribute('action') || lead.formspark.endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(data),

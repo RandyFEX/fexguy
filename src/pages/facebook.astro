@@ -26,11 +26,13 @@ import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
 import { PAGE_PHONES, withPagePhone } from '@/config/phones';
 import { quoteBoxHtml } from '@/lib/lead/quote-box';
+import { lead } from '@/config/lead';
 import { site } from '@/config/site';
 
 const phone = PAGE_PHONES.ctv;
 // The short field set: no Email, optional Question or Message (Randy, V1.1).
-const quoteBox = withPagePhone(quoteBoxHtml('inline', 'short'), 'ctv');
+// Posts to the marketing Formspark form, not the website form (Randy, V1.8).
+const quoteBox = withPagePhone(quoteBoxHtml('inline', 'short', lead.formspark.marketingEndpoint), 'ctv');
 const notes = site.footer.notes.map((html) => withPagePhone(html, 'ctv'));
 
 const title = 'Burial Insurance Quotes | Funeral Funds';

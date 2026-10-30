@@ -20,9 +20,10 @@ import { leadFormHtml, type LeadFormFields } from './lead-form';
 
 export type QuoteBoxVariant = 'sidebar' | 'inline';
 
-export function quoteBoxHtml(variant: QuoteBoxVariant, fields: LeadFormFields = 'standard'): string {
-  // `fields` picks the native form's field set; the Fillout rollback has one form.
-  if (lead.quoteForm === 'formspark') return leadFormHtml(variant, fields);
+export function quoteBoxHtml(variant: QuoteBoxVariant, fields: LeadFormFields = 'standard', endpoint?: string): string {
+  // `fields` picks the native form's field set and `endpoint` its Formspark
+  // form (default: the website form); the Fillout rollback has one form.
+  if (lead.quoteForm === 'formspark') return leadFormHtml(variant, fields, endpoint);
   const title =
     variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
   // aria-labelledby needs a role on a <div>: the titled sidebar box is a named
