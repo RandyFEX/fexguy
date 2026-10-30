@@ -27,7 +27,16 @@ const phone = PAGE_PHONES.default;
 const formHtml = quoteBoxHtml('inline', 'short', lead.formspark.endpoint);
 const callLine = /<p class="lead-form__call">Prefer to talk\? Call Randy at (<a class="lead-form__phone" href="tel:8888629456">[^<]*<\/a>)<\/p>/;
 if (!callLine.test(formHtml)) throw new Error('free-quote: the lead form call line changed; update src/pages/free-quote.astro');
-const quoteBox = formHtml.replace(callLine, '<p class="lead-form__call">For the fastest answers, call Randy at $1.</p>');
+// The consent disclosure under the button reads, on this page only, as two
+// centered lines (Randy, V1.4).
+const consent = '<p class="lead-form__consent">Submit to give Randy permission to call, text, or email you. Msg &amp; data rates may apply. No purchase required.</p>';
+if (!formHtml.includes(consent)) throw new Error('free-quote: the lead form consent text changed; update src/pages/free-quote.astro');
+const quoteBox = formHtml
+  .replace(callLine, '<p class="lead-form__call">For the fastest answers, call Randy at $1.</p>')
+  .replace(
+    consent,
+    '<p class="lead-form__consent fq-consent"><span>By submitting your information, you give Funeral Funds permission to call or text you.</span> <span>Message and data rates may apply. No purchase required.</span></p>',
+  );
 const notes = site.footer.notes;
 
 const title = "A - FINAL EXPENSE QUOTER - Funeral Funds";
@@ -74,7 +83,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
       <div class="container fq-hero__inner">
         <h2 class="fq-hero__title" id="fq-form-title">Request a Callback</h2>
         <p class="fq-hero__lede">
-          Send Randy your details and he’ll get back to you.
+          Send us your details and we’ll get back to you.
         </p>
         <div class="fq-hero__form">
           <Fragment set:html={quoteBox} />
@@ -289,6 +298,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     --color-focus-inner: #ffffff;
     color: var(--color-text);
     text-align: left;
+  }
+
+  /* The two-line consent disclosure under the button: centered, compact,
+     wrapping naturally on narrow screens. */
+  .fq-hero__form :global(.fq-consent) {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+  .fq-hero__form :global(.fq-consent span) {
+    display: block;
+  }
+  .fq-hero__form :global(.fq-consent span + span) {
+    margin-top: 2px;
   }
 
   .fq-call {
