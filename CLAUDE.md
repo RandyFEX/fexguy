@@ -39,11 +39,11 @@ is in place; see src/content/README.md for how pages were migrated.
   describe Final Expense Guy / FEXGuy.com as the current brand are history.
 - **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
   as a Funeral Funds / FuneralFunds.com / Randy / quote / sales contact number.
-  888-656-4648 is Randy's TV/streaming (CTV, currently Roku only) ad number:
-  it appears only on the Roku landing page /roku/ (Randy, October 2026;
-  `tel:8886564648`, noindex, not linked from navigation or other pages) and
-  must never appear anywhere else on the site (`npm run verify` allows it
-  only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
+  888-656-4648 is Randy's ad campaign number (TV/streaming and Facebook):
+  it appears only on the ad landing pages /roku/ and (Randy, October 2026)
+  /facebook/ (`tel:8886564648`, noindex, not linked from navigation or other
+  pages) and must never appear anywhere else on the site (`npm run verify`
+  allows it only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
@@ -1059,9 +1059,17 @@ scope protection wins.
   confirmation is present (a direct visit, reload or Back never counts; with
   the Fillout rollback, only on Fillout's verified `form_submit` message);
   GA4 `click_to_call` on taps of
-  `tel:8888629456` (no Meta event for phone taps). Never send personal
+  `tel:8888629456`, and on taps of any call link on /facebook/ (body class
+  `track-page-calls`; Randy, October 2026) (no Meta event for phone taps). Never send personal
   information. Meta Automatic Advanced Matching and automatic event setup
   stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
+- **/facebook/** (Randy, October 2026): the Facebook ad landing page,
+  `src/pages/facebook.astro` (landing layout, noindex, follow; out of the
+  sitemap, llms.txt and site search). Phone-first with the campaign number
+  888-656-4648; reuses the homepage ReviewHighlights and MeetRandy sections
+  (MeetRandy's "extra"/"action" slots; the homepage uses neither) and the
+  native lead form. Its hero copy and the four benefit descriptions are
+  Randy's wording.
 - Phone placements: header nav, pre-footer CTA, mobile call button
   (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header

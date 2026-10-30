@@ -8,7 +8,7 @@ export type PagePhone = { display: string; paren: string; href: string };
 
 export const PAGE_PHONES = {
   default: { display: lead.phone.display, paren: '(888) 862-9456', href: lead.phone.href },
-  /** Randy's CTV (Roku) ad number: only on /roku/ (CLAUDE.md, "Phone"). */
+  /** Randy's ad campaign number: only on /roku/ and /facebook/ (CLAUDE.md, "Phone"). */
   ctv: { display: '888-656-4648', paren: '(888) 656-4648', href: 'tel:8886564648' },
 } satisfies Record<string, PagePhone>;
 

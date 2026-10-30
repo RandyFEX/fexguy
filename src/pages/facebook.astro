@@ -1,0 +1,559 @@
+---
+// Facebook ad landing page (Randy, October 2026). Phone-first: every call link
+// uses the campaign number (src/config/phones.ts, "ctv"), which is allowed only
+// here and on /roku/ (CLAUDE.md, "Phone"). Landing layout: no site header,
+// navigation, pre-footer or site footer; the sticky mobile call bar stays.
+// Reuses the homepage's review highlights and Meet Randy sections and the
+// site's one native quote form (Formspark, Turnstile, /help/ confirmation).
+// noindex, follow; kept out of the sitemap, llms.txt and site search.
+//
+// GA4: page views as everywhere; the body class `track-page-calls` makes
+// src/scripts/tracking.ts count taps on this page's call links as
+// click_to_call (never a Meta Lead). A completed quote request is counted on
+// /help/ as on every other page.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
+import MeetRandy from '@/components/home/MeetRandy.astro';
+import { PAGE_PHONES, withPagePhone } from '@/config/phones';
+import { quoteBoxHtml } from '@/lib/lead/quote-box';
+import { site } from '@/config/site';
+
+const phone = PAGE_PHONES.ctv;
+const quoteBox = withPagePhone(quoteBoxHtml('inline'), 'ctv');
+const notes = site.footer.notes.map((html) => withPagePhone(html, 'ctv'));
+
+const title = 'Affordable Life Insurance for Ages 50-85 | Funeral Funds';
+const description = `Permanent whole life insurance for ages 50 to 85 with no medical exam. Call Randy VanderVaate at ${phone.display} for a free quote.`;
+const url = 'https://funeralfunds.com/facebook/';
+const headMeta = [
+  { property: 'og:locale', content: 'en_US' },
+  { property: 'og:type', content: 'website' },
+  { property: 'og:title', content: title },
+  { property: 'og:description', content: description },
+  { property: 'og:url', content: url },
+  { property: 'og:site_name', content: 'Funeral Funds' },
+  { name: 'twitter:card', content: 'summary' },
+  { name: 'twitter:title', content: title },
+  { name: 'twitter:description', content: description },
+];
+
+const benefits = [
+  {
+    icon: 'shield',
+    title: 'Covers All Causes of Death',
+    text: 'Life insurance protection for covered causes of death, subject to the policy’s terms, exclusions, and any applicable waiting period.',
+  },
+  { icon: 'level', title: 'Rates Never Increase', text: 'Premiums remain level for the life of the policy.' },
+  {
+    icon: 'forever',
+    title: 'Coverage Never Expires',
+    text: 'Permanent whole life protection as long as required premiums are paid.',
+  },
+  {
+    icon: 'support',
+    title: 'Lifetime Policy Support',
+    text: 'Personal service and assistance from an independent insurance agent.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  robots="noindex, follow"
+  canonical="/facebook/"
+  headMeta={headMeta}
+  layout="landing"
+  phone="ctv"
+  bodyClass="page-fb track-page-calls"
+>
+  <div class="fb" data-page-type="sales" data-page-reason="Facebook ad landing page (noindex, campaign phone number).">
+    <div class="fb-top">
+      <div class="container fb-top__inner">
+        <img
+          class="fb-top__logo"
+          src="/images/logo/funeral-funds-wordmark-800.webp"
+          srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
+          sizes="14rem"
+          width="1987"
+          height="285"
+          alt="Funeral Funds"
+          fetchpriority="high"
+        />
+        <a class="fb-top__phone" href={phone.href}>
+          <span class="fb-top__phone-label">Call Randy</span>
+          <span class="fb-nowrap">{phone.display}</span>
+        </a>
+      </div>
+    </div>
+
+    <section class="fb-hero" aria-labelledby="fb-title">
+      <div class="container fb-hero__inner">
+        <h1 class="fb-hero__title" id="fb-title">Up to $25,000 in Life Insurance Starting at Just $2 a Day!</h1>
+        <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50–85</span>.</p>
+        <ul class="fb-hero__points" role="list">
+          <li>No medical exam.</li>
+          <li>Rates never increase.</li>
+          <li>Coverage never expires.</li>
+          <li>First-day coverage available for eligible applicants.</li>
+        </ul>
+        <div class="fb-call">
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+          <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        </div>
+        <p class="fb-hero__note">
+          Starting premiums vary by age, health, coverage amount, and eligibility. $2 a day is a starting rate, not the
+          price of every plan or of $25,000 in coverage.
+        </p>
+      </div>
+    </section>
+
+    <section class="fb-benefits" aria-labelledby="fb-benefits-title">
+      <div class="container">
+        <h2 class="fb-section-title" id="fb-benefits-title">Whole Life Insurance Built for Peace of Mind</h2>
+        <ul class="fb-benefits__grid" role="list">
+          {
+            benefits.map((b) => (
+              <li class="fb-benefit">
+                <span class="fb-benefit__icon" aria-hidden="true">
+                  {b.icon === 'shield' && (
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  )}
+                  {b.icon === 'level' && (
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="10" width="14" height="10" rx="2" />
+                      <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                    </svg>
+                  )}
+                  {b.icon === 'forever' && (
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7.5 15c-2 0-3.5-1.4-3.5-3s1.5-3 3.5-3c3.5 0 5.5 6 9 6 2 0 3.5-1.4 3.5-3s-1.5-3-3.5-3c-3.5 0-5.5 6-9 6z" />
+                    </svg>
+                  )}
+                  {b.icon === 'support' && (
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="4" />
+                      <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                  )}
+                </span>
+                <h3 class="fb-benefit__title">{b.title}</h3>
+                <p class="fb-benefit__text">{b.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="fb-exam">
+          <h3 class="fb-exam__title">No Medical Exam Required</h3>
+          <p>
+            You never need a medical exam. Plans with first-day coverage ask a few health questions on the application,
+            and the full benefit starts on the first day only for applicants who qualify.
+          </p>
+          <p>
+            If your health keeps you from qualifying, guaranteed-issue plans are available. They don’t depend on your health,
+            but they have a waiting period before the full death benefit is paid for death from natural causes. Randy will
+            tell you which kind of plan you qualify for before you apply.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <ReviewHighlights />
+
+    <section class="fb-band" aria-label="Call Randy">
+      <div class="container fb-band__inner">
+        <p class="fb-band__text">Have questions? Talk with Randy directly.</p>
+        <div class="fb-call fb-call--center">
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+          <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        </div>
+      </div>
+    </section>
+
+    <MeetRandy>
+      <p slot="extra">
+        Randy VanderVaate is an independent licensed life insurance agent with more than 11 years of experience. He shops
+        multiple insurance companies to help you compare prices and coverage options, and he’s there to help you before and
+        after you buy your policy. You can verify his licensing with his National Producer Number (NPN), 17792459, on{' '}
+        <a href="/licenses/">his licenses page</a>.
+      </p>
+      <a slot="action" class="btn fb-call__btn" href={phone.href}><span>CALL RANDY: <span class="fb-nowrap">{phone.display}</span></span></a>
+    </MeetRandy>
+
+    <section class="fb-form" aria-labelledby="fb-form-title">
+      <div class="container fb-form__inner">
+        <h2 class="fb-section-title" id="fb-form-title">Prefer a Call Back?</h2>
+        <p class="fb-form__lede">
+          Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fb-nowrap">{phone.display}</a>.
+        </p>
+        <Fragment set:html={quoteBox} />
+      </div>
+    </section>
+
+    <section class="fb-final" aria-labelledby="fb-final-title">
+      <div class="container fb-final__inner">
+        <h2 class="fb-final__title" id="fb-final-title">Get Your Free Quote Today</h2>
+        <p class="fb-final__text">Free, friendly, no-pressure conversation with an independent agent.</p>
+        <div class="fb-call fb-call--center">
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+          <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fb-foot">
+      <div class="container">
+        <ul class="fb-foot__links" role="list">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+          <li><a href="/licenses/">Licenses</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="fb-foot__notes">{notes.map((html) => <p set:html={html} />)}</div>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  /* Tokens the reused homepage sections (reviews, Meet Randy) rely on; the same
+     values as the homepage palette (src/pages/index.astro). Contrast (WCAG 2.2
+     AA): white on #173F35 11.7:1; cream #F7F3E8 on #173F35 10.5:1; white on the
+     CTA orange #C2410C 5.2:1; charcoal on stone 13.1:1. */
+  body.page-fb {
+    --home-cream: #f7f3e8;
+    --home-stone: #efebe2;
+    --home-gold: #b68a35;
+    --home-green-tint: #e4ece7;
+    --home-radius: 0.375rem;
+  }
+  body.page-fb .btn {
+    text-align: center;
+  }
+  body.page-fb .btn--secondary:hover {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  /* The call buttons share the site's orange conversion color. */
+  .fb-call__btn {
+    min-height: 3.5rem;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    white-space: normal;
+  }
+  .fb-call__btn:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    filter: brightness(0.9);
+  }
+</style>
+
+<style>
+  .fb-nowrap {
+    white-space: nowrap;
+  }
+  .fb-top {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .fb-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-block: var(--space-3);
+  }
+  .fb-top__logo {
+    width: 8rem;
+    height: auto;
+  }
+  .fb-top__phone {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: var(--tap-target);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  .fb-top__phone-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  .fb-hero {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    background: var(--color-primary);
+    color: #ffffff;
+    padding-block: var(--space-8) var(--space-12);
+  }
+  .fb-hero__inner {
+    max-width: 48rem;
+  }
+  .fb-hero__title {
+    margin: 0 0 var(--space-4);
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+  .fb-hero__lead {
+    margin: 0 0 var(--space-4);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--home-cream);
+  }
+  .fb-hero__points {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    display: grid;
+    gap: var(--space-2);
+    font-size: 1.1875rem;
+    line-height: 1.4;
+  }
+  .fb-hero__points li {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .fb-hero__points li::before {
+    content: '';
+    position: absolute;
+    left: 0.25rem;
+    top: 0.35em;
+    width: 0.6rem;
+    height: 1rem;
+    border: solid var(--home-gold);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  .fb-hero__note {
+    margin: var(--space-6) 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--home-cream);
+  }
+
+  .fb-call {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+    max-width: 28rem;
+  }
+  .fb-call--center {
+    margin-inline: auto;
+    text-align: center;
+  }
+  .fb-call__number {
+    display: block;
+    min-height: var(--tap-target);
+    font-size: clamp(2rem, 1.6rem + 2vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+  .fb-call__number--dark {
+    color: var(--color-primary);
+  }
+
+  .fb-section-title {
+    margin: 0 auto var(--space-8);
+    text-align: center;
+    font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+  .fb-section-title::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin: 0 auto var(--space-6);
+    background: var(--home-gold);
+  }
+
+  .fb-benefits {
+    padding-block: var(--space-12);
+    background: var(--home-cream);
+  }
+  .fb-benefits__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+  }
+  .fb-benefit {
+    padding: var(--space-6);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--home-radius);
+  }
+  .fb-benefit__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--space-3);
+    border-radius: 50%;
+    background: var(--home-green-tint);
+    color: var(--color-primary);
+  }
+  .fb-benefit__title {
+    margin: 0 0 var(--space-2);
+    font-size: 1.375rem;
+    line-height: 1.25;
+    color: var(--color-primary);
+  }
+  .fb-benefit__text {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--color-text);
+  }
+  .fb-exam {
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    background: var(--color-bg);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--home-radius);
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  .fb-exam__title {
+    margin: 0 0 var(--space-3);
+    font-size: 1.375rem;
+    color: var(--color-primary);
+  }
+  .fb-exam p {
+    margin: 0;
+  }
+  .fb-exam p + p {
+    margin-top: var(--space-3);
+  }
+
+  .fb-band {
+    padding-block: var(--space-12);
+    background: var(--color-bg);
+  }
+  .fb-band__inner {
+    text-align: center;
+  }
+  .fb-band__text {
+    margin: 0 0 var(--space-6);
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .fb-form {
+    padding-block: var(--space-12);
+    background: var(--home-stone);
+  }
+  .fb-form__inner {
+    max-width: 40rem;
+  }
+  .fb-form__lede {
+    margin: 0 0 var(--space-6);
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.55;
+  }
+
+  .fb-final {
+    --color-focus: #ffffff;
+    --color-focus-inner: var(--color-text);
+    padding-block: var(--space-12);
+    background: var(--color-primary);
+    color: #ffffff;
+    text-align: center;
+  }
+  .fb-final__title {
+    margin: 0 0 var(--space-3);
+    font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .fb-final__text {
+    margin: 0 0 var(--space-6);
+    font-size: 1.1875rem;
+    color: var(--home-cream);
+  }
+
+  .fb-foot {
+    padding-block: var(--space-8) calc(var(--space-8) + var(--call-sticky-h, 0px));
+    background: var(--color-bg);
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .fb-foot__links {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2) var(--space-6);
+  }
+  .fb-foot__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .fb-foot__notes p {
+    margin: 0 0 var(--space-3);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 24rem) {
+    .fb-top__logo {
+      width: 10.5rem;
+    }
+  }
+  @media (min-width: 48rem) {
+    .fb-top__logo {
+      width: 14rem;
+    }
+    .fb-top__phone {
+      font-size: 1.5rem;
+    }
+    .fb-benefits__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 64rem) {
+    .fb-hero {
+      padding-block: var(--space-16);
+    }
+    .fb-benefits,
+    .fb-band,
+    .fb-form,
+    .fb-final {
+      padding-block: 4.5rem;
+    }
+    .fb-benefits__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

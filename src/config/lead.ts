@@ -4,7 +4,7 @@
 
 export const lead = {
   /** The ONLY phone number presented as a FEXGuy.com contact number.
-   * (888-656-4648 is a TV/streaming ad number and never appears on the site.) */
+   * (888-656-4648 is an ad campaign number, used only on /roku/ and /facebook/.) */
   phone: {
     display: '888-862-9456',
     href: 'tel:8888629456',

@@ -75,7 +75,8 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         // /search/ is an internal search-results page (noindex, follow).
-        return !path.startsWith('/404') && path !== '/search/' && !excluded.has(path);
+        // /facebook/ is a noindex ad landing page (src/pages/facebook.astro).
+        return !path.startsWith('/404') && path !== '/search/' && path !== '/facebook/' && !excluded.has(path);
       },
     }),
   ],
