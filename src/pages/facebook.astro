@@ -157,8 +157,8 @@ const advantage = [
       <div class="container fb-callback__inner">
         <div class="fb-callback__grid">
           <div class="fb-call fb-call--center fb-callback__call">
-            <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
             <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+            <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
           </div>
           <div class="fb-callback__ask">
             <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
@@ -739,9 +739,36 @@ const advantage = [
     .fb-callback__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    /* V7.0: both columns join one shared grid (4 rows: heading, text,
+       button, rates note) so the two orange buttons sit on the same row and
+       line up top and bottom. The phone number spans the first two rows,
+       bottom-aligned above its button. */
     .fb-callback__grid {
-      gap: var(--space-4);
+      grid-template-rows: auto auto auto auto;
+      gap: 0 var(--space-4);
+      align-items: stretch;
     }
+    .fb-callback__call,
+    .fb-callback__ask {
+      display: contents;
+    }
+    .fb-callback__call .fb-call__number {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      align-self: end;
+      margin-bottom: var(--space-3);
+    }
+    .fb-callback__call .fb-call__btn {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .fb-callback__ask > * {
+      grid-column: 2;
+    }
+    .fb-callback__title { grid-row: 1; }
+    .fb-callback__text { grid-row: 2; }
+    .fb-call__btn.fb-callback__btn { grid-row: 3; }
+    .fb-callback__note { grid-row: 4; }
   }
   @media (min-width: 64rem) {
     .fb-hero {
