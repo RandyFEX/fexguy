@@ -150,6 +150,7 @@ const advantage = [
           <h3 class="fb-exam__title">No Medical Exam Required</h3>
           <p>There’s no medical exam. First-day coverage is available if you meet the plan’s health requirements.</p>
         </div>
+        <p class="fb-rates-note">Rates vary by age, health, and coverage.</p>
       </div>
     </section>
 
@@ -164,7 +165,6 @@ const advantage = [
             <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
             <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
             <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
-            <p class="fb-callback__note">Rates vary by age, health, and coverage.</p>
           </div>
         </div>
       </div>
@@ -497,14 +497,16 @@ const advantage = [
     color: var(--color-cta);
     filter: none;
   }
-  /* The rate disclosure (V1.6): gray fine print right under the callback
-     button. 10px, #767676 on white (4.5:1). */
-  .fb-callback__note {
-    margin: var(--space-2) 0 0;
+  /* The rate disclosure (V1.6 type; moved under the No Medical Exam box on
+     the cream Advantage background in V8.0). 10px, centered; #6b6b6b
+     instead of #767676 keeps 4.8:1 contrast on #f7f3e8 (#767676 is 4.1:1). */
+  .fb-rates-note {
+    margin: var(--space-3) 0 0;
     font-size: 0.625rem;
     font-weight: 400;
     line-height: 1.2;
-    color: #767676;
+    text-align: center;
+    color: #6b6b6b;
   }
   /* The callback link lands on the form heading with a little room above. */
   .fb-form__title {
@@ -739,12 +741,12 @@ const advantage = [
     .fb-callback__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    /* V7.0: both columns join one shared grid (4 rows: heading, text,
-       button, rates note) so the two orange buttons sit on the same row and
+    /* V7.0: both columns join one shared grid (3 rows: heading, text,
+       button) so the two orange buttons sit on the same row and
        line up top and bottom. The phone number spans the first two rows,
        bottom-aligned above its button. */
     .fb-callback__grid {
-      grid-template-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto;
       gap: 0 var(--space-4);
       align-items: stretch;
     }
@@ -768,7 +770,6 @@ const advantage = [
     .fb-callback__title { grid-row: 1; }
     .fb-callback__text { grid-row: 2; }
     .fb-call__btn.fb-callback__btn { grid-row: 3; }
-    .fb-callback__note { grid-row: 4; }
   }
   @media (min-width: 64rem) {
     .fb-hero {
