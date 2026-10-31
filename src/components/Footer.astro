@@ -3,6 +3,7 @@
 // copied from the live site (see site.footer in src/config/site.ts).
 import { site } from '@/config/site';
 import { PAGE_PHONES, withPagePhone, type PagePhoneKey } from '@/config/phones';
+import { footerDisclaimer } from '@/lib/footer-notes';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
 const display = PAGE_PHONES[phone].display;
@@ -13,14 +14,9 @@ const { social } = site.footer;
 // The phone number never breaks across lines (e.g. "888-862-" / "9456").
 const keepPhoneTogether = (html: string) =>
   site.phoneDisplay ? html.replaceAll(display, `<span class="site-footer__nowrap">${display}</span>`) : html;
-// Standard pages show the disclaimer sentences as one compact 12px paragraph
-// (Randy, October 2026; wording unchanged), with the copyright line after it.
-// /roku/ (its own campaign number) keeps one paragraph per note.
-const compact = phone === 'default';
-const isCopyright = (html: string) => html.includes('Copyright');
-const unwrap = (html: string) => html.replace(/^<small>|<\/small>$/g, '').trim();
-const disclaimer = notes.filter((html) => !isCopyright(html)).map(unwrap).join(' ');
-const copyright = notes.filter(isCopyright);
+// The disclaimer notes, copyright line last, as one compact paragraph
+// (src/lib/footer-notes.ts).
+const disclaimer = footerDisclaimer(notes);
 ---
 
 <footer class="site-footer">
@@ -50,16 +46,7 @@ const copyright = notes.filter(isCopyright);
     {
       notes.length > 0 && (
         <div class="site-footer__notes">
-          {compact ? (
-            <>
-              <p class="site-footer__disclaimer" set:html={keepPhoneTogether(disclaimer)} />
-              {copyright.map((html) => (
-                <p set:html={keepPhoneTogether(html)} />
-              ))}
-            </>
-          ) : (
-            notes.map((html) => <p set:html={keepPhoneTogether(html)} />)
-          )}
+          <p class="site-footer__disclaimer" set:html={keepPhoneTogether(disclaimer)} />
         </div>
       )
     }
@@ -112,11 +99,13 @@ const copyright = notes.filter(isCopyright);
     align-items: center;
     min-height: var(--tap-target);
   }
+  /* Centered in the footer (Randy, October 2026). */
   .site-footer__search {
     border-top: 1px solid var(--color-border);
-    margin-top: var(--space-6);
+    margin: var(--space-6) auto 0;
     padding-top: var(--space-6);
     max-width: 32rem;
+    text-align: center;
   }
   .site-footer__search label {
     display: block;
@@ -126,6 +115,7 @@ const copyright = notes.filter(isCopyright);
   }
   .site-footer__search-row {
     display: flex;
+    justify-content: center;
     gap: var(--space-2);
   }
   .site-footer__search input {
@@ -149,9 +139,6 @@ const copyright = notes.filter(isCopyright);
   /* The phone number never breaks across lines. */
   .site-footer__notes :global(.site-footer__nowrap) {
     white-space: nowrap;
-  }
-  .site-footer__notes :global(small) {
-    font-size: inherit;
   }
   .site-footer__disclaimer {
     font-size: 0.75rem;

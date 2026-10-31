@@ -28,6 +28,7 @@ import { PAGE_PHONES, withPagePhone } from '@/config/phones';
 import { quoteBoxHtml } from '@/lib/lead/quote-box';
 import { lead } from '@/config/lead';
 import { site } from '@/config/site';
+import { footerDisclaimer } from '@/lib/footer-notes';
 
 const phone = PAGE_PHONES.ctv;
 // The short field set: no Email, optional Question or Message (Randy, V1.1).
@@ -215,7 +216,7 @@ const advantage = [
           <li><a href="/licenses/">Licenses</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
-        <div class="fb-foot__notes">{notes.map((html) => <p set:html={html} />)}</div>
+        <div class="fb-foot__notes"><p class="fb-foot__disclaimer" set:html={footerDisclaimer(notes)} /></div>
       </div>
     </footer>
   </div>
@@ -696,9 +697,11 @@ const advantage = [
     color: var(--color-primary);
     font-weight: 700;
   }
-  .fb-foot__notes p {
-    margin: 0 0 var(--space-3);
-    line-height: 1.5;
+  /* The disclaimer as one compact paragraph, as in the site footer. */
+  .fb-foot__disclaimer {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
   }
 
   @media (min-width: 24rem) {
