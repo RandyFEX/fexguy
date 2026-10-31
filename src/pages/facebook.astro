@@ -155,14 +155,18 @@ const advantage = [
 
     <section class="fb-callback" aria-labelledby="fb-callback-title">
       <div class="container fb-callback__inner">
-        <div class="fb-call fb-call--center fb-callback__call">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
-          <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        <div class="fb-callback__grid">
+          <div class="fb-call fb-call--center fb-callback__call">
+            <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+            <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+          </div>
+          <div class="fb-callback__ask">
+            <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
+            <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
+            <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
+            <p class="fb-callback__note">Rates vary by age, health, and coverage.</p>
+          </div>
         </div>
-        <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
-        <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
-        <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
-        <p class="fb-callback__note">Rates vary by age, health, and coverage.</p>
       </div>
     </section>
 
@@ -596,10 +600,24 @@ const advantage = [
     line-height: 1.4;
     color: var(--color-text);
   }
-  /* Phone-call CTA at the top of the white callback band, above
-     "Prefer a Callback?" (V5.0). */
+  /* White contact band (V6.0): the phone CTA and "Prefer a Callback?"
+     stacked on phones (phone first), two equal columns from 48rem on the
+     same 56rem width and gap as the 4-IN-1 cards above, vertically
+     centered. */
+  .fb-callback__grid {
+    display: grid;
+    gap: var(--space-6);
+    max-width: 56rem;
+    margin-inline: auto;
+    align-items: center;
+  }
   .fb-callback__call {
-    margin-bottom: var(--space-6);
+    width: 100%;
+  }
+  .fb-callback__ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .fb-adv-card__check {
     flex: none;
@@ -717,8 +735,12 @@ const advantage = [
     .fb-top__phone {
       font-size: 1.5rem;
     }
-    .fb-advantage__grid {
+    .fb-advantage__grid,
+    .fb-callback__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .fb-callback__grid {
+      gap: var(--space-4);
     }
   }
   @media (min-width: 64rem) {
