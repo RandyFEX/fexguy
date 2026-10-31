@@ -183,7 +183,7 @@ const advantage = [
         licensing with his National Producer Number (NPN), 17792459, on{' '}
         <a href="/licenses/">his licenses page</a>.
       </p>
-      <a slot="action" class="btn fb-call__btn" href={phone.href}><span>CALL RANDY: <span class="fb-nowrap">{phone.display}</span></span></a>
+      <Fragment slot="action" />
     </MeetRandy>
 
     <section class="fb-form" aria-labelledby="fb-form-title">
@@ -303,7 +303,11 @@ const advantage = [
     margin-bottom: var(--space-6);
   }
   body.page-fb .rev__title::before {
-    margin-bottom: var(--space-4);
+    display: none;
+  }
+  /* Meet Randy has no button row on this page (V4.0). */
+  body.page-fb .randy__action {
+    display: none;
   }
   body.page-fb .rev__count {
     padding-block: var(--space-6);
@@ -537,19 +541,12 @@ const advantage = [
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
-  .fb-section-title::before {
-    content: '';
-    display: block;
-    width: 3.5rem;
-    height: 3px;
-    margin: 0 auto var(--space-4);
-    background: var(--home-gold);
-  }
 
   /* "Your Funeral Funds Advantage": two equal white cards on the cream
-     background, stacked on phones (Protection first). */
+     background, stacked on phones (Protection first). Top: the same 16px as
+     between the hero's phone number and the green edge above it (V4.0). */
   .fb-advantage {
-    padding-block: var(--space-8);
+    padding-block: var(--space-4) var(--space-8);
     background: var(--home-cream);
   }
   .fb-advantage__title {
@@ -724,7 +721,9 @@ const advantage = [
     .fb-hero {
       padding-block: var(--space-12) var(--space-4);
     }
-    .fb-advantage,
+    .fb-advantage {
+      padding-bottom: var(--space-12);
+    }
     .fb-band,
     .fb-form,
     .fb-final {
