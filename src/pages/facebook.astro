@@ -122,15 +122,6 @@ const advantage = [
       </div>
     </section>
 
-    <section class="fb-callback" aria-labelledby="fb-callback-title">
-      <div class="container fb-callback__inner">
-        <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
-        <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
-        <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
-        <p class="fb-callback__note">Rates vary by age, health, and coverage.</p>
-      </div>
-    </section>
-
     <section class="fb-advantage" aria-labelledby="fb-advantage-title">
       <div class="container">
         <h2 class="fb-section-title fb-advantage__title" id="fb-advantage-title">Your Funeral Funds Advantage</h2>
@@ -161,6 +152,25 @@ const advantage = [
       </div>
     </section>
 
+    <section class="fb-callback" aria-labelledby="fb-callback-title">
+      <div class="container fb-callback__inner">
+        <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
+        <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
+        <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
+        <p class="fb-callback__note">Rates vary by age, health, and coverage.</p>
+      </div>
+    </section>
+
+    <section class="fb-form" aria-labelledby="fb-form-title">
+      <div class="container fb-form__inner">
+        <h2 class="fb-section-title fb-form__title" id="fb-form-title">Request a Callback</h2>
+        <p class="fb-form__lede">
+          Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fb-nowrap">{phone.display}</a>.
+        </p>
+        <Fragment set:html={quoteBox} />
+      </div>
+    </section>
+
     <ReviewHighlights />
 
     <section class="fb-band" aria-label="Call Randy">
@@ -181,16 +191,6 @@ const advantage = [
       </p>
       <a slot="action" class="btn fb-call__btn" href={phone.href}><span>CALL RANDY: <span class="fb-nowrap">{phone.display}</span></span></a>
     </MeetRandy>
-
-    <section class="fb-form" aria-labelledby="fb-form-title">
-      <div class="container fb-form__inner">
-        <h2 class="fb-section-title fb-form__title" id="fb-form-title">Request a Callback</h2>
-        <p class="fb-form__lede">
-          Send Randy your details and he’ll get back to you. For the fastest answers, call <a href={phone.href} class="fb-nowrap">{phone.display}</a>.
-        </p>
-        <Fragment set:html={quoteBox} />
-      </div>
-    </section>
 
     <section class="fb-final" aria-labelledby="fb-final-title">
       <div class="container fb-final__inner">
@@ -262,6 +262,12 @@ const advantage = [
   }
   body.page-fb .btn {
     text-align: center;
+  }
+  /* REQUEST A CALLBACK scrolls smoothly to the form (not with reduced motion). */
+  @media (prefers-reduced-motion: no-preference) {
+    html:has(body.page-fb) {
+      scroll-behavior: smooth;
+    }
   }
   /* The short form (src/lib/lead/lead-form.ts, used only here): First | Last,
      State | Phone, then the message across both columns, from a form width of
