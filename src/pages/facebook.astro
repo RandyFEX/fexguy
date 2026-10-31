@@ -150,15 +150,15 @@ const advantage = [
           <h3 class="fb-exam__title">No Medical Exam Required</h3>
           <p>There’s no medical exam. First-day coverage is available if you meet the plan’s health requirements.</p>
         </div>
-        <div class="fb-call fb-call--center fb-advantage__call">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
-          <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
-        </div>
       </div>
     </section>
 
     <section class="fb-callback" aria-labelledby="fb-callback-title">
       <div class="container fb-callback__inner">
+        <div class="fb-call fb-call--center fb-callback__call">
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
+          <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        </div>
         <h2 class="fb-callback__title" id="fb-callback-title">Prefer a Callback?</h2>
         <p class="fb-callback__text">Fill out the short form and Randy will give you a call.</p>
         <a class="btn fb-call__btn fb-callback__btn" href="#fb-form-title">REQUEST A CALLBACK</a>
@@ -596,9 +596,10 @@ const advantage = [
     line-height: 1.4;
     color: var(--color-text);
   }
-  /* Phone-call CTA under the No Medical Exam box. */
-  .fb-advantage__call {
-    margin-top: var(--space-6);
+  /* Phone-call CTA at the top of the white callback band, above
+     "Prefer a Callback?" (V5.0). */
+  .fb-callback__call {
+    margin-bottom: var(--space-6);
   }
   .fb-adv-card__check {
     flex: none;
