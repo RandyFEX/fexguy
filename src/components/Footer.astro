@@ -13,6 +13,14 @@ const { social } = site.footer;
 // The phone number never breaks across lines (e.g. "888-862-" / "9456").
 const keepPhoneTogether = (html: string) =>
   site.phoneDisplay ? html.replaceAll(display, `<span class="site-footer__nowrap">${display}</span>`) : html;
+// Standard pages show the disclaimer sentences as one compact 12px paragraph
+// (Randy, October 2026; wording unchanged), with the copyright line after it.
+// /roku/ (its own campaign number) keeps one paragraph per note.
+const compact = phone === 'default';
+const isCopyright = (html: string) => html.includes('Copyright');
+const unwrap = (html: string) => html.replace(/^<small>|<\/small>$/g, '').trim();
+const disclaimer = notes.filter((html) => !isCopyright(html)).map(unwrap).join(' ');
+const copyright = notes.filter(isCopyright);
 ---
 
 <footer class="site-footer">
@@ -42,9 +50,16 @@ const keepPhoneTogether = (html: string) =>
     {
       notes.length > 0 && (
         <div class="site-footer__notes">
-          {notes.map((html) => (
-            <p set:html={keepPhoneTogether(html)} />
-          ))}
+          {compact ? (
+            <>
+              <p class="site-footer__disclaimer" set:html={keepPhoneTogether(disclaimer)} />
+              {copyright.map((html) => (
+                <p set:html={keepPhoneTogether(html)} />
+              ))}
+            </>
+          ) : (
+            notes.map((html) => <p set:html={keepPhoneTogether(html)} />)
+          )}
         </div>
       )
     }
@@ -137,5 +152,9 @@ const keepPhoneTogether = (html: string) =>
   }
   .site-footer__notes :global(small) {
     font-size: inherit;
+  }
+  .site-footer__disclaimer {
+    font-size: 0.75rem;
+    line-height: 1.4;
   }
 </style>
