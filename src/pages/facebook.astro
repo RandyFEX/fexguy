@@ -551,9 +551,10 @@ const advantage = [
 
   /* "Your Funeral Funds Advantage": two equal white cards on the cream
      background, stacked on phones (Protection first). Top: the same 16px as
-     between the hero's phone number and the green edge above it (V4.0). */
+     between the hero's phone number and the green edge above it (V4.0).
+     Bottom: the same 16px below the rates note (V9.0), at every width. */
   .fb-advantage {
-    padding-block: var(--space-4) var(--space-8);
+    padding-block: var(--space-4);
     background: var(--home-cream);
   }
   .fb-advantage__title {
@@ -774,9 +775,6 @@ const advantage = [
   @media (min-width: 64rem) {
     .fb-hero {
       padding-block: var(--space-12) var(--space-4);
-    }
-    .fb-advantage {
-      padding-bottom: var(--space-12);
     }
     .fb-band,
     .fb-form,
