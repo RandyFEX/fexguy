@@ -18,6 +18,7 @@ import { PAGE_PHONES } from '@/config/phones';
 import { quoteBoxHtml } from '@/lib/lead/quote-box';
 import { lead } from '@/config/lead';
 import { site } from '@/config/site';
+import { footerDisclaimer } from '@/lib/footer-notes';
 
 const phone = PAGE_PHONES.default;
 // The short field set (no Email, optional Question or Message), posting to
@@ -121,7 +122,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           <li><a href="/licenses/">Licenses</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
-        <div class="fq-foot__notes">{notes.map((html) => <p set:html={html} />)}</div>
+        <div class="fq-foot__notes"><p class="fq-foot__disclaimer" set:html={footerDisclaimer(notes)} /></div>
       </div>
     </footer>
   </div>
@@ -377,9 +378,11 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     color: var(--color-primary);
     font-weight: 700;
   }
-  .fq-foot__notes p {
-    margin: 0 0 var(--space-3);
-    line-height: 1.5;
+  /* The disclaimer as one compact paragraph, as in the site footer. */
+  .fq-foot__disclaimer {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
   }
 
   @media (min-width: 24rem) {
