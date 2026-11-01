@@ -1094,7 +1094,8 @@ scope protection wins.
   page every lead form (website and /facebook/) redirects to,
   `src/pages/help.astro` (landing layout; the migrated title, robots, social
   tags and JSON-LD unchanged; out of the sitemap, llms.txt and site search).
-  Slim branded header ("Speak With a Licensed Agent" over 888-862-9456; V3.1),
+  Slim branded header ("Speak With a Licensed Agent" over the site
+  header's filled handset icon and 888-862-9456; V3.1/V3.2),
   green hero ("Your Request Was Received!", H1 "Get Your Life Insurance
   Answers Now.", "You don't have to wait for a callback to review your
   coverage options.", 888-862-9456 and an orange CALL FUNERAL FUNDS NOW
