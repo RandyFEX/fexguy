@@ -1098,8 +1098,8 @@ scope protection wins.
   header's filled handset icon and 888-862-9456; V3.1/V3.2),
   green hero ("Your Request Was Received!", H1 "Get Your Life Insurance
   Answers Now.", "You don't have to wait for a callback to review your
-  options." (V3.3), 888-862-9456 and an orange CALL FUNERAL FUNDS NOW
-  button; V3.1 wording), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
+  options." (V3.3), then the orange CALL FUNERAL FUNDS NOW button above
+  the large white 888-862-9456 (V3.3 order); V3.1 wording), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
   items, exact wording and order), then (V2.0) a second call CTA on the
   cream (888-862-9456 in green and an orange CALL FUNERAL FUNDS NOW button; it
   replaced "Prefer to Wait?") and a compact legal footer. Website number only (no campaign routing: /facebook/ leads also
