@@ -2,7 +2,8 @@
 // /help/: the confirmation page after a lead form submission (Randy, /help/
 // redesign V1.0, November 2026). Every form (website and /facebook/) lands
 // here; it confirms the request, asks the visitor to call Randy now on the
-// website number, and shows the 4-IN-1 Funeral Funds Commitment. Standalone
+// website number, and shows the 4-IN-1 Funeral Funds Commitment followed by
+// a second call CTA (V2.0, replacing "Prefer to Wait?"). Standalone
 // like /free-quote/ (landing layout: a slim branded header, no site
 // navigation, pre-footer or site footer; the sticky mobile call bar stays).
 //
@@ -106,9 +107,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             }
           </ul>
         </div>
-        <div class="hp-wait">
-          <h2 class="hp-wait__title">Prefer to Wait?</h2>
-          <p class="hp-wait__text">Your request has already been submitted. Randy will follow up with you.</p>
+        <div class="hp-call hp-call--bottom">
+          <a class="hp-call__number hp-call__number--green" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+          <a class="btn hp-call__btn" href={phone.href}>CALL RANDY NOW</a>
         </div>
       </div>
     </section>
@@ -265,7 +266,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     color: var(--home-cream);
   }
 
-  /* Cream band: the white 4-IN-1 Commitment card, then the reassurance. */
+  /* Cream band: the white 4-IN-1 Commitment card, then the second call CTA. */
   .hp-commit {
     padding-block: var(--space-8);
     background: var(--home-cream);
@@ -305,21 +306,14 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     margin-top: 0.1em;
     color: var(--color-primary);
   }
-  .hp-wait {
-    max-width: 44rem;
-    margin: var(--space-6) auto 0;
+  /* Second call CTA under the Commitment card (V2.0): the hero's number
+     (in green on cream) and orange button, centered, same sizes. */
+  .hp-call--bottom {
+    margin-top: var(--space-6);
     text-align: center;
   }
-  .hp-wait__title {
-    margin: 0 0 var(--space-1);
-    font-size: 1.25rem;
-    line-height: 1.2;
-    color: var(--color-text);
-  }
-  .hp-wait__text {
-    margin: 0;
-    font-size: 1.0625rem;
-    line-height: 1.5;
+  .hp-call__number--green {
+    color: var(--color-primary);
   }
 
   /* Compact footer (as on /free-quote/): legal links and the disclaimer. */

@@ -1097,8 +1097,9 @@ scope protection wins.
   Slim branded header, green hero ("Your Request Was Received!", H1 "Get Your
   Life Insurance Answers Now.", 888-862-9456 and an orange CALL RANDY NOW
   button), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
-  items, exact wording and order), "Prefer to Wait?" and a compact legal
-  footer. Website number only (no campaign routing: /facebook/ leads also
+  items, exact wording and order), then (V2.0) a second call CTA on the
+  cream (888-862-9456 in green and an orange CALL RANDY NOW button; it
+  replaced "Prefer to Wait?") and a compact legal footer. Website number only (no campaign routing: /facebook/ leads also
   see 888-862-9456 here). The old "Why Go With FuneralFunds.com?" and "WHY NO
   INSTANT QUOTER?" sections were removed. tracking.ts keys the lead
   conversion on the path, so the page markup doesn't affect it.
