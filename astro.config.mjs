@@ -75,9 +75,9 @@ export default defineConfig({
       filter: (page) => {
         const path = new URL(page).pathname;
         // /search/ is an internal search-results page (noindex, follow).
-        // /facebook/ and /free-quote/ are noindex landing pages (src/pages/).
+        // /facebook/, /free-quote/ and /help/ are noindex landing pages (src/pages/).
         return (
-          !path.startsWith('/404') && path !== '/search/' && path !== '/facebook/' && path !== '/free-quote/' && !excluded.has(path)
+          !path.startsWith('/404') && path !== '/search/' && path !== '/facebook/' && path !== '/free-quote/' && path !== '/help/' && !excluded.has(path)
         );
       },
     }),
