@@ -51,18 +51,9 @@ const headMeta = [
   { name: 'twitter:description', content: description },
 ];
 
-// "Your Funeral Funds Advantage" (Randy, October 2026): his exact wording.
+// "The Funeral Funds Advantage" (Randy, October 2026): his exact wording;
+// Commitment first, Protection second (V10.0).
 const advantage = [
-  {
-    id: 'fb-adv-protection',
-    title: '4-IN-1 PROTECTION',
-    items: [
-      'Accident, Illness & Disease Death Covered',
-      'No Requalification Ever Required',
-      'Guaranteed to Last a Lifetime',
-      'Unaffected by Rising Costs',
-    ],
-  },
   {
     id: 'fb-adv-commitment',
     title: '4-IN-1 COMMITMENT',
@@ -71,6 +62,16 @@ const advantage = [
       'Family Death Claim Assistance',
       'One Personal Agent for Life',
       'Direct Agent Cell Phone Access',
+    ],
+  },
+  {
+    id: 'fb-adv-protection',
+    title: '4-IN-1 PROTECTION',
+    items: [
+      'Accident, Illness & Disease Death Covered',
+      'No Requalification Ever Required',
+      'Guaranteed to Last a Lifetime',
+      'Unaffected by Rising Costs',
     ],
   },
 ];
@@ -125,7 +126,7 @@ const advantage = [
 
     <section class="fb-advantage" aria-labelledby="fb-advantage-title">
       <div class="container">
-        <h2 class="fb-section-title fb-advantage__title" id="fb-advantage-title">Your Funeral Funds Advantage</h2>
+        <h2 class="fb-section-title fb-advantage__title" id="fb-advantage-title">The Funeral Funds Advantage</h2>
         <p class="fb-advantage__subtitle">Affordable Options. Generous Coverage. Lifetime Protection. Personal Service.</p>
         <div class="fb-advantage__grid">
           {
@@ -549,8 +550,8 @@ const advantage = [
     color: var(--color-text);
   }
 
-  /* "Your Funeral Funds Advantage": two equal white cards on the cream
-     background, stacked on phones (Protection first). Top: the same 16px as
+  /* "The Funeral Funds Advantage": two equal white cards on the cream
+     background, stacked on phones (Commitment first, V10.0). Top: the same 16px as
      between the hero's phone number and the green edge above it (V4.0).
      Bottom: the same 16px below the rates note (V9.0), at every width. */
   .fb-advantage {
