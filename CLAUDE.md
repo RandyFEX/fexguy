@@ -1094,11 +1094,13 @@ scope protection wins.
   page every lead form (website and /facebook/) redirects to,
   `src/pages/help.astro` (landing layout; the migrated title, robots, social
   tags and JSON-LD unchanged; out of the sitemap, llms.txt and site search).
-  Slim branded header, green hero ("Your Request Was Received!", H1 "Get Your
-  Life Insurance Answers Now.", 888-862-9456 and an orange CALL RANDY NOW
-  button), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
+  Slim branded header ("Speak With a Licensed Agent" over 888-862-9456; V3.1),
+  green hero ("Your Request Was Received!", H1 "Get Your Life Insurance
+  Answers Now.", "You don't have to wait for a callback to review your
+  coverage options.", 888-862-9456 and an orange CALL FUNERAL FUNDS NOW
+  button; V3.1 wording), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
   items, exact wording and order), then (V2.0) a second call CTA on the
-  cream (888-862-9456 in green and an orange CALL RANDY NOW button; it
+  cream (888-862-9456 in green and an orange CALL FUNERAL FUNDS NOW button; it
   replaced "Prefer to Wait?") and a compact legal footer. Website number only (no campaign routing: /facebook/ leads also
   see 888-862-9456 here). The old "Why Go With FuneralFunds.com?" and "WHY NO
   INSTANT QUOTER?" sections were removed. tracking.ts keys the lead
