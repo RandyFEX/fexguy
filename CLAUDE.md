@@ -1090,6 +1090,18 @@ scope protection wins.
   short form posts to the website Formspark form (`lead.formspark.endpoint`,
   https://submit-form.com/v3iwLYrWZ), never the marketing form. No coverage
   amounts, whole life benefits or extra sections.
+- **/help/** (Randy, November 2026, /help/ redesign V1.0): the confirmation
+  page every lead form (website and /facebook/) redirects to,
+  `src/pages/help.astro` (landing layout; the migrated title, robots, social
+  tags and JSON-LD unchanged; out of the sitemap, llms.txt and site search).
+  Slim branded header, green hero ("Your Request Was Received!", H1 "Get Your
+  Life Insurance Answers Now.", 888-862-9456 and an orange CALL RANDY NOW
+  button), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
+  items, exact wording and order), "Prefer to Wait?" and a compact legal
+  footer. Website number only (no campaign routing: /facebook/ leads also
+  see 888-862-9456 here). The old "Why Go With FuneralFunds.com?" and "WHY NO
+  INSTANT QUOTER?" sections were removed. tracking.ts keys the lead
+  conversion on the path, so the page markup doesn't affect it.
 - Phone placements: header nav, pre-footer CTA, mobile call button
   (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header
