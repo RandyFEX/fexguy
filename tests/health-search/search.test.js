@@ -106,3 +106,19 @@ test('anonymized carriers are never named', () => {
   assert.ok(JSON.stringify(r).includes('One insurance company'));
   assert.ok(!JSON.stringify(r).includes('Sample Carrier A'));
 });
+
+test('a carrier name narrows results to that carrier; on its own it is not a search', () => {
+  const only = search(prep, 'Sample Carrier B');
+  assert.equal(only.ok, false);
+  assert.equal(only.reason, 'carrier-only');
+  assert.deepEqual(only.carriers, ['Sample Carrier B']);
+
+  const narrowed = search(prep, 'sample carrier b heart attack');
+  assert.ok(narrowed.ok);
+  assert.ok(narrowed.groups.length > 0);
+  assert.ok(narrowed.groups.every((g) => g.carrier === 'Sample Carrier B'));
+  assert.deepEqual(narrowed.carrierFilter, ['Sample Carrier B']);
+
+  // Other carriers' guaranteed issue cards are not added to a narrowed search.
+  assert.deepEqual(narrowed.guaranteedIssue, []);
+});

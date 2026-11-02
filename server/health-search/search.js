@@ -33,7 +33,13 @@ export function prepare(dataset) {
   const conceptById = new Map(concepts.map((c) => [c.id, c]));
   const carrierById = new Map(dataset.carriers.map((c) => [c.id, c]));
   const questions = dataset.questions.map((q, order) => ({ ...q, order, textKey: phraseKey(q.text) }));
-  return { dataset, concepts, conceptById, carrierById, questions };
+  // Carrier names a visitor may type ("Aflac COPD"); longest first so
+  // "family benefit life" is removed whole before "family benefit".
+  const carrierNames = dataset.carriers
+    .flatMap((c) => (c.searchNames ?? [c.name]).map((n) => ({ id: c.id, key: phraseKey(n) })))
+    .filter((n) => n.key)
+    .sort((a, b) => b.key.length - a.key.length);
+  return { dataset, concepts, conceptById, carrierById, questions, carrierNames };
 }
 
 /** @typedef {ReturnType<typeof prepare>} Prepared */
@@ -81,6 +87,43 @@ export function detectConcepts(prep, query) {
  * @param {{ page?: number }} [opts]
  */
 export function search(prep, rawQuery, opts = {}) {
+  // A carrier name narrows the results to that carrier. On its own it is not
+  // a search: the API never lists a carrier's whole question set.
+  const named = findCarriers(prep, rawQuery);
+  if (named.ids.size) {
+    if (!tokens(normalize(named.rest)).join('').length) {
+      return { ok: false, reason: 'carrier-only', carriers: [...named.ids].map((id) => publicName(/** @type {Carrier} */ (prep.carrierById.get(id)))) };
+    }
+    const r = searchConditions(prep, named.rest, opts, named.ids);
+    return r.ok ? { ...r, carrierFilter: [...named.ids].map((id) => publicName(/** @type {Carrier} */ (prep.carrierById.get(id)))) } : r;
+  }
+  return searchConditions(prep, rawQuery, opts, null);
+}
+
+/**
+ * Carrier names in the query, and the query without them.
+ * @param {Prepared} prep @param {string} rawQuery
+ */
+export function findCarriers(prep, rawQuery) {
+  let rest = ` ${phraseKey(rawQuery)} `;
+  /** @type {Set<string>} */
+  const ids = new Set();
+  for (const n of prep.carrierNames) {
+    if (rest.includes(` ${n.key} `)) {
+      ids.add(n.id);
+      rest = rest.split(` ${n.key} `).join(' ');
+    }
+  }
+  return { ids, rest: rest.trim() };
+}
+
+/**
+ * @param {Prepared} prep
+ * @param {string} rawQuery
+ * @param {{ page?: number }} opts
+ * @param {Set<string> | null} onlyCarriers
+ */
+function searchConditions(prep, rawQuery, opts, onlyCarriers) {
   const query = normalize(rawQuery);
   const meaningful = tokens(query);
   if (meaningful.join('').length < LIMITS.minQueryChars) return { ok: false, reason: 'too-short' };
@@ -100,6 +143,7 @@ export function search(prep, rawQuery, opts = {}) {
 
   const matches = [];
   for (const q of prep.questions) {
+    if (onlyCarriers && !onlyCarriers.has(q.carrierId)) continue;
     let score = 0;
     /** @type {'direct' | 'related' | null} */
     let type = null;
@@ -161,7 +205,7 @@ export function search(prep, rawQuery, opts = {}) {
     .map(({ carrier, ms }) => presentGroup(carrier, ms));
 
   // Guaranteed issue carriers (no health questions) close the list.
-  const giCarriers = prep.dataset.carriers.filter((c) => c.guaranteedIssue).sort((a, b) => a.displayOrder - b.displayOrder);
+  const giCarriers = prep.dataset.carriers.filter((c) => c.guaranteedIssue && (!onlyCarriers || onlyCarriers.has(c.id))).sort((a, b) => a.displayOrder - b.displayOrder);
   const page = Math.min(Math.max(1, Math.trunc(opts.page ?? 1) || 1), LIMITS.maxPage);
   const totalPages = Math.max(1, Math.ceil(groups.length / LIMITS.groupsPerPage));
   const pageGroups = groups.slice((page - 1) * LIMITS.groupsPerPage, page * LIMITS.groupsPerPage);
@@ -172,7 +216,7 @@ export function search(prep, rawQuery, opts = {}) {
     page: Math.min(page, totalPages),
     totalPages,
     groups: pageGroups,
-    guaranteedIssue: page >= totalPages && capped.length ? giCarriers.map(presentGuaranteedIssue) : [],
+    guaranteedIssue: page >= totalPages && (capped.length || onlyCarriers) ? giCarriers.map(presentGuaranteedIssue) : [],
     sample: Boolean(prep.dataset.sample),
   };
 }

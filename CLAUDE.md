@@ -1156,7 +1156,9 @@ scope protection wins.
   company" here). The CICA confidentiality rule for ordinary health-condition
   articles is unchanged.
 - 3 searches per visitor per rolling 24 hours, enforced server-side (Redis
-  Lua, atomic); per-IP limit separately. Search terms are never stored or
+  Lua, atomic); per-IP limit separately. A carrier name narrows a search
+  ("Aflac COPD"); on its own it returns a prompt, never a carrier's whole
+  question set. Medication names only produce RELATED matches. Search terms are never stored or
   sent to GA4/Meta.
 
 ## Site search (Pagefind, built October 2026)

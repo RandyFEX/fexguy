@@ -1,5 +1,5 @@
 {
- "_about": "Search metadata only. Medical terminology groups used to match consumer wording (plain language, abbreviations, brand-free medication classes) to the exact application wording in the question records. Terms in one group are medically equivalent names for the same thing. 'indicators' are medications, devices, treatments or broader symptoms that point to a concept without being another name for it; 'related' links a concept to a different but medically connected concept; matches through it are always labeled RELATED, never presented as something a carrier asks about directly. Never put carrier wording, outcomes or eligibility statements here.",
+ "_about": "Search metadata only. Medical terminology groups used to match consumer wording (plain language, abbreviations, common medication names (generic and brand)) to the exact application wording in the question records. Terms in one group are medically equivalent names for the same thing. 'indicators' are medications, devices, treatments or broader symptoms that point to a concept without being another name for it; 'related' links a concept to a different but medically connected concept; matches through it are always labeled RELATED, never presented as something a carrier asks about directly. Never put carrier wording, outcomes or eligibility statements here.",
  "concepts": [
   {
    "id": "heart-attack",
@@ -134,7 +134,12 @@
    "indicators": [
     "chest pain",
     "nitroglycerin",
-    "nitro"
+    "nitro",
+    "isosorbide",
+    "imdur",
+    "ranexa",
+    "ranolazine",
+    "nitrostat"
    ],
    "related": [
     "coronary-artery-disease"
@@ -148,7 +153,9 @@
     "chf",
     "heart failure"
    ],
-   "indicators": [],
+   "indicators": [
+    "entresto"
+   ],
    "related": [
     "cardiomyopathy"
    ]
@@ -256,7 +263,21 @@
     "chronic obstructive pulmonary disease",
     "chronic obstructive lung disease"
    ],
-   "indicators": [],
+   "indicators": [
+    "spiriva",
+    "trelegy",
+    "breztri",
+    "anoro",
+    "stiolto",
+    "daliresp",
+    "advair",
+    "symbicort",
+    "breo",
+    "albuterol",
+    "proair",
+    "ventolin",
+    "nebulizer"
+   ],
    "related": [
     "emphysema",
     "chronic-bronchitis",
@@ -311,7 +332,17 @@
     "asthma"
    ],
    "indicators": [
-    "inhaler"
+    "inhaler",
+    "advair",
+    "symbicort",
+    "breo",
+    "albuterol",
+    "proair",
+    "ventolin",
+    "singulair",
+    "montelukast",
+    "flovent",
+    "qvar"
    ],
    "related": []
   },
@@ -339,7 +370,17 @@
    ],
    "indicators": [
     "high blood sugar",
-    "metformin"
+    "metformin",
+    "glipizide",
+    "glimepiride",
+    "januvia",
+    "jardiance",
+    "farxiga",
+    "ozempic",
+    "trulicity",
+    "mounjaro",
+    "victoza",
+    "rybelsus"
    ],
    "related": [
     "insulin",
@@ -356,7 +397,16 @@
     "insulin pump",
     "insulin dependent"
    ],
-   "indicators": [],
+   "indicators": [
+    "lantus",
+    "humalog",
+    "novolog",
+    "tresiba",
+    "basaglar",
+    "levemir",
+    "toujeo",
+    "admelog"
+   ],
    "related": [
     "diabetes"
    ]
@@ -405,11 +455,36 @@
     "sarcoma"
    ],
    "indicators": [
+    "tamoxifen",
+    "anastrozole",
+    "arimidex",
+    "letrozole",
+    "femara",
+    "keytruda",
+    "herceptin"
+   ],
+   "related": [
+    "chemotherapy"
+   ]
+  },
+  {
+   "id": "chemotherapy",
+   "label": "Chemotherapy or radiation",
+   "terms": [
     "chemotherapy",
     "chemo",
-    "radiation therapy"
+    "radiation",
+    "radiation therapy",
+    "radiation treatment",
+    "immunotherapy"
    ],
-   "related": []
+   "indicators": [
+    "oral chemotherapy",
+    "infusion"
+   ],
+   "related": [
+    "cancer"
+   ]
   },
   {
    "id": "kidney-dialysis",
@@ -418,7 +493,8 @@
     "dialysis",
     "kidney dialysis",
     "hemodialysis",
-    "peritoneal dialysis"
+    "peritoneal dialysis",
+    "on dialysis"
    ],
    "indicators": [],
    "related": [
@@ -468,7 +544,11 @@
     "arc",
     "aids related complex"
    ],
-   "indicators": [],
+   "indicators": [
+    "biktarvy",
+    "genvoya",
+    "triumeq"
+   ],
    "related": []
   },
   {
@@ -481,7 +561,13 @@
     "alzheimers disease"
    ],
    "indicators": [
-    "memory loss"
+    "memory loss",
+    "aricept",
+    "donepezil",
+    "namenda",
+    "memantine",
+    "exelon",
+    "razadyne"
    ],
    "related": []
   },
@@ -505,7 +591,11 @@
     "parkinson",
     "parkinsons disease"
    ],
-   "indicators": [],
+   "indicators": [
+    "sinemet",
+    "carbidopa",
+    "levodopa"
+   ],
    "related": []
   },
   {
@@ -515,7 +605,11 @@
     "multiple sclerosis",
     "ms"
    ],
-   "indicators": [],
+   "indicators": [
+    "copaxone",
+    "ocrevus",
+    "tecfidera"
+   ],
    "related": []
   },
   {
@@ -648,9 +742,23 @@
     "addiction",
     "rehab",
     "alcohol treatment",
-    "drug treatment"
+    "drug treatment",
+    "drug addiction",
+    "alcohol addiction",
+    "opioid addiction",
+    "opioid use disorder"
    ],
-   "indicators": [],
+   "indicators": [
+    "suboxone",
+    "methadone",
+    "naltrexone",
+    "vivitrol",
+    "antabuse",
+    "disulfiram",
+    "buprenorphine",
+    "campral",
+    "acamprosate"
+   ],
    "related": []
   },
   {
@@ -660,7 +768,11 @@
     "schizophrenia",
     "schizophrenic"
    ],
-   "indicators": [],
+   "indicators": [
+    "clozapine",
+    "clozaril",
+    "invega"
+   ],
    "related": [
     "mental-health"
    ]
@@ -684,13 +796,15 @@
    "terms": [
     "mental illness",
     "mental health",
-    "psychiatric"
-   ],
-   "indicators": [
+    "psychiatric",
+    "mental disorder",
     "depression",
     "anxiety",
-    "ptsd"
+    "ptsd",
+    "post traumatic stress disorder",
+    "panic disorder"
    ],
+   "indicators": [],
    "related": []
   },
   {
@@ -702,7 +816,14 @@
     "warfarin",
     "coumadin",
     "eliquis",
-    "xarelto"
+    "xarelto",
+    "pradaxa",
+    "plavix",
+    "clopidogrel",
+    "apixaban",
+    "rivaroxaban",
+    "lovenox",
+    "brilinta"
    ],
    "indicators": [],
    "related": [
@@ -801,7 +922,12 @@
     "epilepsy",
     "convulsions"
    ],
-   "indicators": [],
+   "indicators": [
+    "keppra",
+    "levetiracetam",
+    "dilantin",
+    "phenytoin"
+   ],
    "related": []
   },
   {
@@ -849,11 +975,22 @@
     "pending test",
     "awaiting results",
     "scheduled surgery",
-    "planned surgery"
+    "planned surgery",
+    "pending surgery",
+    "upcoming surgery",
+    "surgery not done",
+    "diagnostic test",
+    "diagnostic testing",
+    "medical procedure",
+    "to have surgery",
+    "not been received or completed"
    ],
    "indicators": [
     "test results",
-    "biopsy"
+    "biopsy",
+    "surgery",
+    "mri",
+    "ct scan"
    ],
    "related": []
   },

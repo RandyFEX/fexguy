@@ -35,7 +35,12 @@ export const config = {
      "classification": "timeframe",
      "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
     }
-   }
+   },
+   "searchNames": [
+    "family benefit life",
+    "family benefit",
+    "fbl"
+   ]
   },
   {
    "id": "trinity-life",
@@ -69,7 +74,11 @@ export const config = {
      "classification": "timeframe",
      "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
     }
-   }
+   },
+   "searchNames": [
+    "trinity life",
+    "trinity"
+   ]
   },
   {
    "id": "guarantee-trust-life",
@@ -98,7 +107,12 @@ export const config = {
      ]
     }
    },
-   "rules": {}
+   "rules": {},
+   "searchNames": [
+    "guarantee trust life",
+    "guarantee trust",
+    "gtl"
+   ]
   },
   {
    "id": "cica-life",
@@ -118,7 +132,12 @@ export const config = {
      "classification": "guaranteed-issue-referral",
      "explanation": "Guaranteed issue plans are subject to the plan's age, state and product eligibility rules."
     }
-   }
+   },
+   "searchNames": [
+    "cica life insurance",
+    "cica life",
+    "cica"
+   ]
   },
   {
    "id": "gerber-life",
@@ -145,7 +164,11 @@ export const config = {
      "verification": "From the general source supplied. State and product variations still need to be verified."
     }
    },
-   "rules": {}
+   "rules": {},
+   "searchNames": [
+    "gerber life",
+    "gerber"
+   ]
   },
   {
    "id": "aetna",
@@ -192,7 +215,12 @@ export const config = {
      "classification": "standard-or-preferred",
      "explanation": "Part C answers decide between the standard and preferred rate classes. Both give full coverage from the first day; they differ in price."
     }
-   }
+   },
+   "searchNames": [
+    "aetna",
+    "accendo",
+    "cvs"
+   ]
   },
   {
    "id": "aflac",
@@ -249,6 +277,9 @@ export const config = {
      "mustNotInclude": "Aetna",
      "reason": "Corrected Aflac Part A 3A: its outcome names Aflac, not Aetna."
     }
+   ],
+   "searchNames": [
+    "aflac"
    ]
   }
  ],
@@ -386,7 +417,12 @@ export const config = {
    "indicators": [
     "chest pain",
     "nitroglycerin",
-    "nitro"
+    "nitro",
+    "isosorbide",
+    "imdur",
+    "ranexa",
+    "ranolazine",
+    "nitrostat"
    ],
    "related": [
     "coronary-artery-disease"
@@ -400,7 +436,9 @@ export const config = {
     "chf",
     "heart failure"
    ],
-   "indicators": [],
+   "indicators": [
+    "entresto"
+   ],
    "related": [
     "cardiomyopathy"
    ]
@@ -508,7 +546,21 @@ export const config = {
     "chronic obstructive pulmonary disease",
     "chronic obstructive lung disease"
    ],
-   "indicators": [],
+   "indicators": [
+    "spiriva",
+    "trelegy",
+    "breztri",
+    "anoro",
+    "stiolto",
+    "daliresp",
+    "advair",
+    "symbicort",
+    "breo",
+    "albuterol",
+    "proair",
+    "ventolin",
+    "nebulizer"
+   ],
    "related": [
     "emphysema",
     "chronic-bronchitis",
@@ -563,7 +615,17 @@ export const config = {
     "asthma"
    ],
    "indicators": [
-    "inhaler"
+    "inhaler",
+    "advair",
+    "symbicort",
+    "breo",
+    "albuterol",
+    "proair",
+    "ventolin",
+    "singulair",
+    "montelukast",
+    "flovent",
+    "qvar"
    ],
    "related": []
   },
@@ -591,7 +653,17 @@ export const config = {
    ],
    "indicators": [
     "high blood sugar",
-    "metformin"
+    "metformin",
+    "glipizide",
+    "glimepiride",
+    "januvia",
+    "jardiance",
+    "farxiga",
+    "ozempic",
+    "trulicity",
+    "mounjaro",
+    "victoza",
+    "rybelsus"
    ],
    "related": [
     "insulin",
@@ -608,7 +680,16 @@ export const config = {
     "insulin pump",
     "insulin dependent"
    ],
-   "indicators": [],
+   "indicators": [
+    "lantus",
+    "humalog",
+    "novolog",
+    "tresiba",
+    "basaglar",
+    "levemir",
+    "toujeo",
+    "admelog"
+   ],
    "related": [
     "diabetes"
    ]
@@ -657,11 +738,36 @@ export const config = {
     "sarcoma"
    ],
    "indicators": [
+    "tamoxifen",
+    "anastrozole",
+    "arimidex",
+    "letrozole",
+    "femara",
+    "keytruda",
+    "herceptin"
+   ],
+   "related": [
+    "chemotherapy"
+   ]
+  },
+  {
+   "id": "chemotherapy",
+   "label": "Chemotherapy or radiation",
+   "terms": [
     "chemotherapy",
     "chemo",
-    "radiation therapy"
+    "radiation",
+    "radiation therapy",
+    "radiation treatment",
+    "immunotherapy"
    ],
-   "related": []
+   "indicators": [
+    "oral chemotherapy",
+    "infusion"
+   ],
+   "related": [
+    "cancer"
+   ]
   },
   {
    "id": "kidney-dialysis",
@@ -670,7 +776,8 @@ export const config = {
     "dialysis",
     "kidney dialysis",
     "hemodialysis",
-    "peritoneal dialysis"
+    "peritoneal dialysis",
+    "on dialysis"
    ],
    "indicators": [],
    "related": [
@@ -720,7 +827,11 @@ export const config = {
     "arc",
     "aids related complex"
    ],
-   "indicators": [],
+   "indicators": [
+    "biktarvy",
+    "genvoya",
+    "triumeq"
+   ],
    "related": []
   },
   {
@@ -733,7 +844,13 @@ export const config = {
     "alzheimers disease"
    ],
    "indicators": [
-    "memory loss"
+    "memory loss",
+    "aricept",
+    "donepezil",
+    "namenda",
+    "memantine",
+    "exelon",
+    "razadyne"
    ],
    "related": []
   },
@@ -757,7 +874,11 @@ export const config = {
     "parkinson",
     "parkinsons disease"
    ],
-   "indicators": [],
+   "indicators": [
+    "sinemet",
+    "carbidopa",
+    "levodopa"
+   ],
    "related": []
   },
   {
@@ -767,7 +888,11 @@ export const config = {
     "multiple sclerosis",
     "ms"
    ],
-   "indicators": [],
+   "indicators": [
+    "copaxone",
+    "ocrevus",
+    "tecfidera"
+   ],
    "related": []
   },
   {
@@ -900,9 +1025,23 @@ export const config = {
     "addiction",
     "rehab",
     "alcohol treatment",
-    "drug treatment"
+    "drug treatment",
+    "drug addiction",
+    "alcohol addiction",
+    "opioid addiction",
+    "opioid use disorder"
    ],
-   "indicators": [],
+   "indicators": [
+    "suboxone",
+    "methadone",
+    "naltrexone",
+    "vivitrol",
+    "antabuse",
+    "disulfiram",
+    "buprenorphine",
+    "campral",
+    "acamprosate"
+   ],
    "related": []
   },
   {
@@ -912,7 +1051,11 @@ export const config = {
     "schizophrenia",
     "schizophrenic"
    ],
-   "indicators": [],
+   "indicators": [
+    "clozapine",
+    "clozaril",
+    "invega"
+   ],
    "related": [
     "mental-health"
    ]
@@ -936,13 +1079,15 @@ export const config = {
    "terms": [
     "mental illness",
     "mental health",
-    "psychiatric"
-   ],
-   "indicators": [
+    "psychiatric",
+    "mental disorder",
     "depression",
     "anxiety",
-    "ptsd"
+    "ptsd",
+    "post traumatic stress disorder",
+    "panic disorder"
    ],
+   "indicators": [],
    "related": []
   },
   {
@@ -954,7 +1099,14 @@ export const config = {
     "warfarin",
     "coumadin",
     "eliquis",
-    "xarelto"
+    "xarelto",
+    "pradaxa",
+    "plavix",
+    "clopidogrel",
+    "apixaban",
+    "rivaroxaban",
+    "lovenox",
+    "brilinta"
    ],
    "indicators": [],
    "related": [
@@ -1053,7 +1205,12 @@ export const config = {
     "epilepsy",
     "convulsions"
    ],
-   "indicators": [],
+   "indicators": [
+    "keppra",
+    "levetiracetam",
+    "dilantin",
+    "phenytoin"
+   ],
    "related": []
   },
   {
@@ -1101,11 +1258,22 @@ export const config = {
     "pending test",
     "awaiting results",
     "scheduled surgery",
-    "planned surgery"
+    "planned surgery",
+    "pending surgery",
+    "upcoming surgery",
+    "surgery not done",
+    "diagnostic test",
+    "diagnostic testing",
+    "medical procedure",
+    "to have surgery",
+    "not been received or completed"
    ],
    "indicators": [
     "test results",
-    "biopsy"
+    "biopsy",
+    "surgery",
+    "mri",
+    "ct scan"
    ],
    "related": []
   },

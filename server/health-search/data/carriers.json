@@ -34,7 +34,12 @@
           "classification": "timeframe",
           "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
         }
-      }
+      },
+      "searchNames": [
+        "family benefit life",
+        "family benefit",
+        "fbl"
+      ]
     },
     {
       "id": "trinity-life",
@@ -68,7 +73,11 @@
           "classification": "timeframe",
           "explanation": "For this question the timing matters. Within 12 months: declined. From 12 through 24 months: graded benefit. More than 24 months ago: level coverage is possible, subject to the other questions. The exact time limits are in the question wording above."
         }
-      }
+      },
+      "searchNames": [
+        "trinity life",
+        "trinity"
+      ]
     },
     {
       "id": "guarantee-trust-life",
@@ -97,7 +106,12 @@
           ]
         }
       },
-      "rules": {}
+      "rules": {},
+      "searchNames": [
+        "guarantee trust life",
+        "guarantee trust",
+        "gtl"
+      ]
     },
     {
       "id": "cica-life",
@@ -118,7 +132,12 @@
           "explanation": "Guaranteed issue plans are subject to the plan's age, state and product eligibility rules."
         }
       },
-      "_nameNote": "Approved public name (Randy, October 2026). Named in this tool by Randy's decision; the CLAUDE.md rule against naming CICA as an underwriting exception in ordinary health articles is unchanged."
+      "_nameNote": "Approved public name (Randy, October 2026). Named in this tool by Randy's decision; the CLAUDE.md rule against naming CICA as an underwriting exception in ordinary health articles is unchanged.",
+      "searchNames": [
+        "cica life insurance",
+        "cica life",
+        "cica"
+      ]
     },
     {
       "id": "gerber-life",
@@ -145,7 +164,11 @@
           "verification": "From the general source supplied. State and product variations still need to be verified."
         }
       },
-      "rules": {}
+      "rules": {},
+      "searchNames": [
+        "gerber life",
+        "gerber"
+      ]
     },
     {
       "id": "aetna",
@@ -192,7 +215,12 @@
           "classification": "standard-or-preferred",
           "explanation": "Part C answers decide between the standard and preferred rate classes. Both give full coverage from the first day; they differ in price."
         }
-      }
+      },
+      "searchNames": [
+        "aetna",
+        "accendo",
+        "cvs"
+      ]
     },
     {
       "id": "aflac",
@@ -249,6 +277,9 @@
           "mustNotInclude": "Aetna",
           "reason": "Corrected Aflac Part A 3A: its outcome names Aflac, not Aetna."
         }
+      ],
+      "searchNames": [
+        "aflac"
       ]
     }
   ]

@@ -17,6 +17,7 @@ const EM_DASH = /\u2014|&mdash;|&#8212;/;
  * @typedef {{ id: string, name: string, displayOrder: number, guaranteedIssue: boolean, expectedQuestionCount: number,
  *   expectedSections?: Record<string, number>, variants?: string[], sharedWordingGroup: string | null,
  *   publicDisplay: 'named' | 'anonymized', anonymizedName?: string, summary?: string,
+ *   searchNames?: string[],
  *   schedules: Record<string, { label: string, periods: { months: string, benefit: string }[], verification?: string }>,
  *   rules: Record<string, { classification: string, explanation: string }>,
  *   requiredWording?: { section: string, number: string, field?: 'text' | 'yes' | 'no', mustInclude?: string, mustNotInclude?: string, reason: string }[] }} Carrier

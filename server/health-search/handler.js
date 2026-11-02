@@ -120,6 +120,10 @@ export async function handleSearch(request, env, deps) {
     }
 
     const result = search(prepFor(deps.dataset), q, { page });
+    if (!result.ok && result.reason === 'carrier-only') {
+      const name = result.carriers?.[0] ?? 'that company';
+      return json(400, { status: 'too-short', message: `Add a health condition to see ${name}'s questions about it, such as "${name.split(' (')[0]} COPD" or "${name.split(' (')[0]} heart attack".` }, headers);
+    }
     if (!result.ok) {
       return json(400, { status: 'too-short', message: 'Please type a health condition, procedure or medication, such as "COPD".' }, headers);
     }

@@ -128,6 +128,13 @@ offers the phone number: the limit is never faked.
   count, so this discourages scraping without preventing it.
 - Responses contain only the matched questions (at most 40, 3 carriers per
   page), never search metadata or internal ids.
+- A carrier name (`searchNames` in `data/carriers.json`) narrows a search to
+  that carrier ("Aflac COPD"). A carrier name on its own is not a search: the
+  API answers with a prompt to add a condition and never lists a carrier's
+  whole question set.
+- Medication names in `data/concepts.json` are `indicators`: they only ever
+  produce RELATED matches, because a medication alone doesn't establish a
+  diagnosis.
 
 ## Testing
 

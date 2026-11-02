@@ -94,3 +94,28 @@ test('Gerber appears as guaranteed issue with no health questions', { skip }, ()
   assert.ok(last.guaranteedIssue.some((g) => /Gerber/.test(g.carrier)));
   assert.equal(built.payload.questions.filter((q) => q.carrierId === 'gerber-life').length, 0);
 });
+
+test('carrier names narrow the real results and never list a whole carrier', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  for (const name of ['Aflac', 'aetna', 'CICA', 'Trinity', 'Family Benefit Life', 'Guarantee Trust', 'Gerber']) {
+    const r = search(prep, name);
+    assert.equal(r.ok, false, name);
+    assert.equal(r.reason, 'carrier-only', name);
+  }
+  const aflac = search(prep, 'Aflac COPD');
+  assert.ok(aflac.ok && aflac.groups.length === 1 && aflac.groups[0].carrier === 'Aflac');
+  assert.ok(aflac.groups[0].questions.some((q) => q.match === 'direct' && /chronic obstructive pulmonary disease/i.test(q.text)));
+  const trinity = search(prep, 'trinity heart attack');
+  assert.ok(trinity.groups.every((g) => g.carrier === 'Trinity Life'));
+});
+
+test('common consumer searches reach the right questions', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  const direct = (q) => search(prep, q).groups.flatMap((g) => g.questions.filter((x) => x.match === 'direct').map((x) => `${g.carrier}|${x.number}`));
+  assert.ok(direct('chemo').includes('Guarantee Trust Life|3'), 'chemo finds the chemotherapy question');
+  assert.ok(direct('depression').some((k) => k.startsWith('CICA Life Insurance|')), 'depression finds the mental disorder question');
+  assert.ok(direct('pending surgery').includes('Family Benefit Life|9'), 'pending surgery finds the not-yet-done surgery question');
+  // A medication only ever produces RELATED matches.
+  const sub = search(prep, 'suboxone');
+  assert.ok(sub.matchCount > 0 && sub.directCount === 0);
+});
