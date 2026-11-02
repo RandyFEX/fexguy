@@ -22,6 +22,7 @@
 // click_to_call (never a Meta Lead). A completed quote request is counted on
 // /help/ as on every other page.
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeaderPhone from '@/components/HeaderPhone.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
 import { PAGE_PHONES, withPagePhone } from '@/config/phones';
@@ -121,10 +122,7 @@ const advantage = [
           alt="Funeral Funds"
           fetchpriority="high"
         />
-        <a class="fb-top__phone" href={phone.href}>
-          <span class="fb-top__phone-label">Call Randy</span>
-          <span class="fb-nowrap">{phone.display}</span>
-        </a>
+        <HeaderPhone phone={phone} />
       </div>
     </div>
 
@@ -401,23 +399,6 @@ const advantage = [
   .fb-top__logo {
     width: 8rem;
     height: auto;
-  }
-  .fb-top__phone {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: var(--tap-target);
-    font-size: 1.125rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-  .fb-top__phone-label {
-    font-size: 0.875rem;
-    font-weight: 700;
-    color: var(--color-text-muted);
   }
 
   .fb-hero {
@@ -713,9 +694,6 @@ const advantage = [
   @media (min-width: 48rem) {
     .fb-top__logo {
       width: 14rem;
-    }
-    .fb-top__phone {
-      font-size: 1.5rem;
     }
     .fb-advantage__grid,
     .fb-callback__grid {

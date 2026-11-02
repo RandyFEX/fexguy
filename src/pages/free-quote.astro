@@ -12,6 +12,7 @@
 // WordPress page's, unchanged; noindex keeps it out of the sitemap
 // (astro.config.mjs), llms.txt and site search.
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeaderPhone from '@/components/HeaderPhone.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
 import { PAGE_PHONES } from '@/config/phones';
@@ -73,10 +74,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             fetchpriority="high"
           />
         </a>
-        <a class="fq-top__phone" href={phone.href}>
-          <span class="fq-top__phone-label">Call Randy</span>
-          <span class="fq-nowrap">{phone.display}</span>
-        </a>
+        <HeaderPhone phone={phone} />
       </div>
     </div>
 
@@ -245,23 +243,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     width: 8rem;
     height: auto;
   }
-  .fq-top__phone {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: var(--tap-target);
-    font-size: 1.125rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-  .fq-top__phone-label {
-    font-size: 0.875rem;
-    font-weight: 700;
-    color: var(--color-text-muted);
-  }
 
   /* Green hero: heading, one line of text and the form in a white card. */
   .fq-hero {
@@ -393,9 +374,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   @media (min-width: 48rem) {
     .fq-top__logo {
       width: 14rem;
-    }
-    .fq-top__phone {
-      font-size: 1.5rem;
     }
   }
   @media (min-width: 64rem) {
