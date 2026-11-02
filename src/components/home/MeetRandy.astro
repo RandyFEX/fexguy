@@ -3,6 +3,8 @@
 // at up to 300px inside a thin stone ring) beside a short explanation of how Randy works. Copy uses
 // only approved facts: independent broker, licensed in most states, compares
 // multiple companies, no call center, you deal directly with Randy.
+// Landing pages may add copy (slot "extra") and replace the ABOUT RANDY button
+// (slot "action"); the homepage uses neither.
 ---
 
 <section class="randy" aria-labelledby="meet-randy-title">
@@ -26,8 +28,9 @@
         company, he can compare options from multiple companies to help you find the right fit.
       </p>
       <p>You won’t be handed off from one representative to the next. You’ll talk with Randy.</p>
+      <slot name="extra" />
       <p class="randy__action">
-        <a class="btn btn--secondary" href="/about/">ABOUT RANDY</a>
+        <slot name="action"><a class="btn btn--secondary" href="/about/">ABOUT RANDY</a></slot>
       </p>
     </div>
   </div>

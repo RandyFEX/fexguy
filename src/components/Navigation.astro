@@ -2,9 +2,12 @@
 // Primary navigation. Small screens: collapses behind a Menu button.
 // Items with children render as a native <details> disclosure (works without
 // JavaScript). Without JS the list is simply always visible. The website phone
-// number is the last item, as on the live site.
+// number is the last item, as on the live site. On desktop the page's number
+// (the website number, or /roku/'s campaign number) shows as two lines ("Speak
+// With a Licensed Agent" over the approved phone icon and the number; Randy,
+// V2.0, and V14.0 for every page). The mobile menu shows the plain number.
 import { site } from '@/config/site';
-import { PAGE_PHONES, type PagePhoneKey } from '@/config/phones';
+import { HEADER_PHONE_ICON_PATH, HEADER_PHONE_LABEL, PAGE_PHONES, type PagePhoneKey } from '@/config/phones';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
 const pagePhone = PAGE_PHONES[phone];
@@ -46,7 +49,15 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
         ))}
         {site.phoneDisplay && (
           <li class="nav__phone">
-            <a href={pagePhone.href}>{pagePhone.display}</a>
+            <a href={pagePhone.href} class="nav__phone-link" data-header-phone>
+              <span class="nav__phone-intro">{HEADER_PHONE_LABEL}</span>{" "}
+              <span class="nav__phone-number">
+                <svg class="nav__phone-icon" aria-hidden="true" width="10" height="10" viewBox="1.5 1.5 21 21" fill="currentColor">
+                  <path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" />
+                </svg>
+                <span class="nav__phone-digits">{pagePhone.display}</span>
+              </span>
+            </a>
           </li>
         )}
       </ul>
@@ -172,6 +183,11 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     color: var(--color-accent);
     font-weight: 700;
   }
+  /* Mobile menu: the plain number, as before. */
+  .nav__phone-intro,
+  .nav__phone-icon {
+    display: none;
+  }
   .nav__list a:hover,
   .nav__list a[aria-current='page'] {
     color: var(--color-primary);
@@ -199,6 +215,43 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     }
     .nav__group {
       position: relative;
+    }
+    /* Two-line phone block: the icon and number centered under the intro
+       line, about 2px apart, the block centered in the unchanged header. */
+    .nav__list .nav__phone-link {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      text-align: center;
+      line-height: 1.15;
+      color: #173f35;
+    }
+    .nav__phone-intro {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+    .nav__phone-number {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    /* Small filled handset, smaller than the digits. */
+    .nav__phone-icon {
+      display: block;
+      flex: none;
+      color: #173f35;
+    }
+    /* Trim the number's line box to the digits (cap height to baseline) so
+       the handset centers on the digits themselves in every font. */
+    .nav__phone-digits {
+      text-box: trim-both cap alphabetic;
     }
     .nav__group .nav__sub {
       position: absolute;

@@ -1,6 +1,8 @@
 // Builds the small copies of Randy's headshot used by the article byline and
 // author bio (public/images/randy/) from the portrait the homepage's Meet
-// Randy section uses. Resized only (no crop or other change).
+// Randy section uses. Resized only (no crop or other change). The portrait
+// is a transparent circle: WebP and AVIF keep the transparency, the JPEG
+// fallback gets a white background.
 //
 //   node scripts/optimize-randy-headshot.mjs
 import sharp from 'sharp';
@@ -16,6 +18,6 @@ for (const w of WIDTHS) {
   const img = sharp(SRC).resize({ width: w });
   await img.clone().avif({ quality: 60, effort: 6 }).toFile(`${OUT}/randy-vandervaate-${w}.avif`);
   await img.clone().webp({ quality: 82 }).toFile(`${OUT}/randy-vandervaate-${w}.webp`);
-  await img.clone().jpeg({ quality: 82, mozjpeg: true }).toFile(`${OUT}/randy-vandervaate-${w}.jpg`);
+  await img.clone().flatten({ background: '#ffffff' }).jpeg({ quality: 82, mozjpeg: true }).toFile(`${OUT}/randy-vandervaate-${w}.jpg`);
 }
 console.log(`Wrote ${OUT}/randy-vandervaate-{${WIDTHS.join(',')}}.{avif,webp,jpg}`);

@@ -62,7 +62,6 @@ export const NON_ARTICLE_PAGES: Record<string, { type: PageType; reason: string 
   '/get-help/': { type: 'contact', reason: 'Short help/contact prompt.' },
   '/privacy-policy/': { type: 'legal', reason: 'Legal page.' },
   '/terms-of-use/': { type: 'legal', reason: 'Legal page (holds the accessibility statement).' },
-  '/help/': { type: 'utility', reason: 'Thank-you page after a quote request.' },
   '/welcome/': { type: 'utility', reason: 'Welcome page for new clients (instructions, not an article).' },
   '/lbl/': { type: 'utility', reason: 'Carrier page with no article text.' },
   '/trin-fbl/': { type: 'sales', reason: 'Product sheet for two carriers’ plans (noindex), not an article.' },

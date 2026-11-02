@@ -217,7 +217,8 @@ const phoneDigits = (value: string) => value.replace(/\D/g, '').replace(/^1(?=\d
 
 const isValid = (control: Control) => {
   const value = control.value.trim();
-  if (!value) return false;
+  // Empty is fine only for an optional field (the short form's message).
+  if (!value) return !control.required;
   if (control.name === 'Phone Number') return PHONE_DIGITS.test(phoneDigits(value));
   // Email format (and anything else the markup declares) via the browser.
   return control.checkValidity();
@@ -360,7 +361,9 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-lead-form]'
     const timer = setTimeout(() => timeout.abort(), 20000);
     let ok = false;
     try {
-      const res = await fetch(lead.formspark.endpoint, {
+      // Each form posts to its own Formspark form (its action): the website
+      // form everywhere, the marketing form on /facebook/.
+      const res = await fetch(form.getAttribute('action') || lead.formspark.endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(data),

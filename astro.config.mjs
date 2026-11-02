@@ -75,9 +75,18 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const path = new URL(page).pathname;
-        // /search/ is an internal search-results page (noindex, follow);
+        // /search/ is an internal search-results page (noindex, follow).
+        // /facebook/, /free-quote/ and /help/ are noindex landing pages (src/pages/).
         // /health-question-search-preview/ is a non-indexed review page.
-        return !path.startsWith('/404') && path !== '/search/' && path !== '/health-question-search-preview/' && !excluded.has(path);
+        return (
+          !path.startsWith('/404') &&
+          path !== '/search/' &&
+          path !== '/facebook/' &&
+          path !== '/free-quote/' &&
+          path !== '/help/' &&
+          path !== '/health-question-search-preview/' &&
+          !excluded.has(path)
+        );
       },
     }),
   ],

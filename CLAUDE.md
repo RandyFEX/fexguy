@@ -39,12 +39,25 @@ is in place; see src/content/README.md for how pages were migrated.
   describe Final Expense Guy / FEXGuy.com as the current brand are history.
 - **Phone:** 888-862-9456 (`tel:8888629456`) is the ONLY number ever presented
   as a Funeral Funds / FuneralFunds.com / Randy / quote / sales contact number.
-  888-656-4648 is Randy's TV/streaming (CTV, currently Roku only) ad number:
-  it appears only on the Roku landing page /roku/ (Randy, October 2026;
-  `tel:8886564648`, noindex, not linked from navigation or other pages) and
-  must never appear anywhere else on the site (`npm run verify` allows it
-  only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
+  888-656-4648 is Randy's ad campaign number (TV/streaming and Facebook):
+  it appears only on the ad landing pages /roku/ and (Randy, October 2026)
+  /facebook/ (`tel:8886564648`, noindex, not linked from navigation or other
+  pages) and must never appear anywhere else on the site (`npm run verify`
+  allows it only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
+- **Header phone (Randy, November 2026, V14.0):** Every upper-right phone
+  contact area on Funeral Funds pages must display Speak With a Licensed
+  Agent, include the approved Funeral Funds phone icon, and preserve the
+  correct page-specific telephone number. Never use Call Randy as an
+  upper-right header label. ("Call Randy" elsewhere in marketing content,
+  buttons and copy is fine.) The label and icon live in `src/config/phones.ts`
+  (`HEADER_PHONE_LABEL`, `HEADER_PHONE_ICON_PATH`); the site header uses them
+  in `src/components/Navigation.astro` (desktop nav; the mobile menu shows the
+  plain number) and the standalone landing headers (/facebook/, /free-quote/,
+  /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
+  every built header: one `data-header-phone` link with that label and icon,
+  a tel: link that dials the number shown, 888-656-4648 on /roku/ and
+  /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
   change what is sent to GA4/Meta, without his approval.
@@ -1059,9 +1072,53 @@ scope protection wins.
   confirmation is present (a direct visit, reload or Back never counts; with
   the Fillout rollback, only on Fillout's verified `form_submit` message);
   GA4 `click_to_call` on taps of
-  `tel:8888629456` (no Meta event for phone taps). Never send personal
+  `tel:8888629456`, and on taps of any call link on /facebook/ (body class
+  `track-page-calls`; Randy, October 2026) (no Meta event for phone taps). Never send personal
   information. Meta Automatic Advanced Matching and automatic event setup
   stay off. Tracking runs only on fexguy.com; elsewhere it logs to the console.
+- **/facebook/** (Randy, October 2026): the Facebook ad landing page,
+  `src/pages/facebook.astro` (landing layout, noindex, follow; out of the
+  sitemap, llms.txt and site search). Phone-first with the campaign number
+  888-656-4648; reuses the homepage ReviewHighlights and MeetRandy sections
+  (MeetRandy's "extra"/"action" slots; the homepage uses neither) and the
+  native lead form in its short field set (`quoteBoxHtml('inline', 'short')`:
+  First Name, Last Name, Phone Number, State required; optional "Question or
+  Message"; no Email; same Formspark endpoint, Turnstile, consent text,
+  /help/ redirect and lead tracking). Every other form keeps the standard
+  fields, except /free-quote/ (below). It posts to the separate marketing
+  Formspark form (`lead.formspark.marketingEndpoint`,
+  https://submit-form.com/7HBVq4vTa; Randy, October 2026); every other form
+  posts to the website form. The
+  script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
+  wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
+  (campaigns are told apart by when ads run).
+- **/free-quote/** (Randy, October 2026): the general life insurance quote
+  page (final expense, term, mortgage protection and other coverage),
+  `src/pages/free-quote.astro` (landing layout; the migrated title, robots,
+  social tags and JSON-LD unchanged; out of the sitemap, llms.txt and site
+  search). Built from the /facebook/ sections with the website number
+  888-862-9456 only: a green "Request a Callback" hero holding the short
+  callback form, Meet Randy, the review highlights, "Get Your Free Quote
+  Today" and the slim footer; hidden H1 "Request Life Insurance Quote". Its
+  short form posts to the website Formspark form (`lead.formspark.endpoint`,
+  https://submit-form.com/v3iwLYrWZ), never the marketing form. No coverage
+  amounts, whole life benefits or extra sections.
+- **/help/** (Randy, November 2026, /help/ redesign V1.0): the confirmation
+  page every lead form (website and /facebook/) redirects to,
+  `src/pages/help.astro` (landing layout; the migrated title, robots, social
+  tags and JSON-LD unchanged; out of the sitemap, llms.txt and site search).
+  Slim branded header ("Speak With a Licensed Agent" over the site
+  header's filled handset icon and 888-862-9456; V3.1/V3.2),
+  green hero ("Your Request Was Received!", H1 "Get Your Life Insurance
+  Answers Now.", "You don't have to wait for a callback to review your
+  options." (V3.3), then the orange CALL FUNERAL FUNDS NOW button above
+  the large white 888-862-9456 (V3.3 order); V3.1 wording), the cream 4-IN-1 Funeral Funds Commitment card (Randy's four
+  items, exact wording and order), then (V2.0) a second call CTA on the
+  cream (888-862-9456 in green and an orange CALL FUNERAL FUNDS NOW button; it
+  replaced "Prefer to Wait?") and a compact legal footer. Website number only (no campaign routing: /facebook/ leads also
+  see 888-862-9456 here). The old "Why Go With FuneralFunds.com?" and "WHY NO
+  INSTANT QUOTER?" sections were removed. tracking.ts keys the lead
+  conversion on the path, so the page markup doesn't affect it.
 - Phone placements: header nav, pre-footer CTA, mobile call button
   (`src/components/lead/`). No pop-ups. The old "UNBEATABLE PROTECTION!" CTA
   bar under the header was removed site-wide (Randy, October 2026; the header
@@ -1308,7 +1365,9 @@ scope protection wins.
   focus kept clear of the mobile call bar (`--call-sticky-h`,
   src/scripts/sticky-call.ts), keyboard-focusable scrolling tables
   (src/scripts/scroll-tables.ts), and the native lead form's visible
-  labels, required-field note, per-field errors (aria-describedby) and
+  labels, required attributes (no visible required-fields note since Randy's
+  V1.3, October 2026; the optional field says "(optional)"), per-field
+  errors (aria-describedby) and
   polite status region (src/lib/lead/lead-form.ts, src/scripts/lead-form.ts).
   The Fillout rollback keeps focus on the quote box when its embed replaces
   the button and gives the iframe a meaningful title.

@@ -4,7 +4,7 @@
 
 export const lead = {
   /** The ONLY phone number presented as a FEXGuy.com contact number.
-   * (888-656-4648 is a TV/streaming ad number and never appears on the site.) */
+   * (888-656-4648 is an ad campaign number, used only on /roku/ and /facebook/.) */
   phone: {
     display: '888-862-9456',
     href: 'tel:8888629456',
@@ -20,6 +20,10 @@ export const lead = {
    * secret); Formspark emails each submission to randy@fexguy.com. */
   formspark: {
     endpoint: 'https://submit-form.com/v3iwLYrWZ',
+    /** Marketing leads (Randy, October 2026): the separate Formspark form the
+     * /facebook/ ad landing page posts to. Every other form uses `endpoint`.
+     * It must have the same Turnstile secret in its Spam protection setting. */
+    marketingEndpoint: 'https://submit-form.com/7HBVq4vTa',
     /** Where a successful submission goes; that page fires the conversion. */
     successPath: '/help/',
     /** sessionStorage key set only after Formspark confirms a submission. */
