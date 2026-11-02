@@ -753,7 +753,7 @@ sidebar: true
 <li>So you get terrible pricing and a terrible 2-year waiting period.</li>
 </ul>
 
-<p><br><strong>TERM LIFE INSURANCE FROM GLOBE LIFE, AARP, NEW YORK LIFE, &amp; TRUESTAGE. NOT RECOMMENDED </strong></p>
+<p><br><strong>TERM LIFE INSURANCE FROM GLOBE LIFE, AARP, NEW YORK LIFE, &amp; TRUESTAGE: NOT RECOMMENDED </strong></p>
 
 <ul>
 <li>This company’s most advertised and sold consumer product is their TERM LIFE insurance.
@@ -767,7 +767,7 @@ sidebar: true
 <li>Globe Life &amp; AARP &amp; New York Life &amp; TruStage’s term life insurance policies are almost identical… disappointing term life insurance products that go up in price every five years and cancel when you need them the most.</li>
 </ul>
 
-<p><br> <strong><strong>2-YEAR WAITING PERIOD PLAN</strong></strong> <strong>MUTUAL OF OMAHA (UNITED OF OHAMA)</strong> <strong>. NOT RECOMMENDED </strong></p>
+<p><br> <strong><strong>2-YEAR WAITING PERIOD PLAN</strong></strong> <strong>MUTUAL OF OMAHA (UNITED OF OHAMA)</strong><strong>: NOT RECOMMENDED </strong></p>
 
 <ul>
 <li>Because Mutual of Omaha sells 1st-day coverage, some people mistakenly believe this plan offers that protection; it does not!</li>

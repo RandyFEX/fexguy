@@ -521,7 +521,7 @@ June 10, 2020 at 10:13 am
 <div class="comment-replies">
 <div class="comment" id="comment-4647">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Barbara: You can get a free quote here, <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Barbara: You can get a free quote here: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 July 2, 2020 at 2:31 pm                    
 </div>

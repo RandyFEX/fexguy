@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Funeral Insurance for Seniors</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Funeral insurance for seniors offers smaller and more affordable coverage amounts<br>• Avoid $9.95 plans, $1 a day, or plans that include 2-year waiting periods before full payout<br>• Lock in your coverage now as costs increase with age and can become expensive over time<br>• Some policies charge much more than others: Funeral Funds can shop around for the best rates<br>• Most families don’t have $10,000 to $15,000 to “donate” for your funeral service, don’t be a burden!</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Funeral insurance for seniors offers smaller and more affordable coverage amounts<br>• Avoid $9.95 plans, $1 a day, or plans that include 2-year waiting periods before full payout<br>• Lock in your coverage now as costs increase with age and can become expensive over time<br>• Some policies charge much more than others: Funeral Funds can shop around for the best rates<br>• Most families don’t have $10,000 to $15,000 to “donate” for your funeral service. Don’t be a burden!</p>
 
 <p>Funeral insurance for seniors is a type of whole life insurance designed to cover final expenses like funerals, medical bills, and small debts. Coverage is usually limited, often between $5,000 and $25,000, and is meant to ease the financial burden on your family. The appeal is easy approval, often without a medical exam, but that convenience comes with higher costs and possible waiting periods before full benefits pay out. If you don’t understand how these policies work, your family could still be left with unexpected bills.</p>
 
@@ -98,7 +98,7 @@ sidebar: true
 
 <p><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener"><strong>No medical exam</strong></a>: Funeral insurance for seniors does not require you to undergo a medical exam. These policies can be completed on a simplified basis. You only have to answer some health questions, and the guaranteed issue policy doesn’t even have any health questions.</p>
 
-<p><strong>No health questions policies available</strong>: if you have health issues and don’t want a medical exam and questions asked, there is a funeral insurance option for you, it is called a guaranteed issue policy. Everyone is guaranteed to be approved regardless of health issues. The only drawback is the price and the two-year waiting period.</p>
+<p><strong>No health questions policies available</strong>: if you have health issues and don’t want a medical exam and questions asked, there is a funeral insurance option for you: it is called a guaranteed issue policy. Everyone is guaranteed to be approved regardless of health issues. The only drawback is the price and the two-year waiting period.</p>
 
 <p><strong>Relaxed underwriting</strong>: since there is no medical exam and you only have to answer a few health questions, it is uncommon for applicants not to qualify. Guaranteed issue policies even accept all applicants without underwriting.</p>
 

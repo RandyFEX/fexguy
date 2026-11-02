@@ -477,7 +477,7 @@ November 19, 2019 at 5:09 am
 <div class="comment-replies">
 <div class="comment" id="comment-3480">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Lou: You can get a free quote by visiting this page, <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Lou: You can get a free quote by visiting this page: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 April 24, 2020 at 8:08 am                    
 </div>

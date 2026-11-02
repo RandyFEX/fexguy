@@ -479,7 +479,7 @@ The “State-Regulated” postcard confusion
 
 <p><strong>Does life insurance kick in right away?</strong></p>
 
-<p>Most seniors qualify for plans that pay full benefits from day one. These are the plans 97% of seniors qualify for, they pay full benefits from day one.</p>
+<p>Most seniors qualify for plans that pay full benefits from day one. These are the plans 97% of seniors qualify for: they pay full benefits from day one.</p>
 
 <p><strong>Is there any insurance with no waiting period?</strong></p>
 

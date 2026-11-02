@@ -190,7 +190,7 @@ sidebar: true
 
 <p>You are not obliged to disclose your CBD oil use if the insurance company does not ask about it. Most companies never ask about CBD oil; they will only ask about your medical condition.</p>
 
-<p>If the insurance company asks about CBD oil use, answer it honestly, do not lie. Tell them about your CBD oil use, including the amount you use and the frequency of usage. </p>
+<p>If the insurance company asks about CBD oil use, answer it honestly. Do not lie. Tell them about your CBD oil use, including the amount you use and the frequency of usage. </p>
 
 <p>There is no need to worry about negative repercussions for you. Your rights are protected under the HIPPA laws (Health Insurance Portability and Accountability Act 1996) and will never be released to law enforcement or public officials.</p>
 

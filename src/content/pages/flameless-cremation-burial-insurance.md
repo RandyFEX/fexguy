@@ -93,7 +93,7 @@ sidebar: true
 
 <p>The environmental impact of traditional cremation is not minor. Cremation releases 250,000 tons of carbon dioxide into the atmosphere yearly, the same as burning 30 million gallons of gasoline. </p>
 
-<p>In spite of this, traditional cremation still has an environmental advantage over burial, think of all the resources used to bury a deceased person.</p>
+<p>In spite of this, traditional cremation still has an environmental advantage over burial: think of all the resources used to bury a deceased person.</p>
 
 <p>Traditional cremation and burial have a higher carbon footprint than alkaline hydrolysis. </p>
 

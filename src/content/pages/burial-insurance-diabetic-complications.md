@@ -86,7 +86,7 @@ sidebar: true
 
 <p>Insurance companies aren’t blind to these risks. They know diabetic complications can cut life short and rack up healthcare costs, which means higher premiums for those with these conditions. </p>
 
-<p>The severity and type of complication will influence the rates, well-managed diabetes with fewer complications might see smaller increases compared to poorly controlled diabetes with multiple issues.</p>
+<p>The severity and type of complication will influence the rates: well-managed diabetes with fewer complications might see smaller increases compared to poorly controlled diabetes with multiple issues.</p>
 
 <h3>⚠️ <strong>Most dangerous diabetes complications &amp; their impact</strong></h3>
 

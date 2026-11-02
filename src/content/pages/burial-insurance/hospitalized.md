@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Being hospitalized recently can limit your burial insurance options, depending on the insurance company<br>• Some companies will decline you or require a waiting period plan for hospital visits in the last 1-2 years<br>• Guaranteed issue plans cost much more and delay full payouts for 2 years, avoid these plans!<br>• Applying too soon after discharge can lead to worse coverage, depends on the company<br>• Some companies are more flexible depending on your recovery timeline &amp; progress<br>• Applying wrong can lock you into higher premiums for life or delayed benefits</p>
+<p>• Being hospitalized recently can limit your burial insurance options, depending on the insurance company<br>• Some companies will decline you or require a waiting period plan for hospital visits in the last 1-2 years<br>• Guaranteed issue plans cost much more and delay full payouts for 2 years, avoid these plans!<br>• Applying too soon after discharge can lead to worse coverage; depends on the company<br>• Some companies are more flexible depending on your recovery timeline &amp; progress<br>• Applying wrong can lock you into higher premiums for life or delayed benefits</p>
 
 <p>Burial insurance after being hospitalized depends on how recent the stay was and what caused it. Insurance companies see recent hospital visits as a higher risk, especially within the last 30 to 90 days. That usually means you won’t qualify for immediate coverage and may need a guaranteed issue whole life policy with a waiting period. Burial insurance is still available, but timing and company choice matter more than anything. If your condition improves and enough time passes, better options can open up.</p>
 

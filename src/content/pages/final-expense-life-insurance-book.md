@@ -13,7 +13,7 @@ source: "live"
 
 <hr>
 
-<p><strong>BOOK CHAPTERS</strong><br><a href="#Chapter-1:-WARNING-About-Life-Insurance-Companies-&-Agents">Chapter 1: WARNING About Life Insurance Companies &amp; Agents</a><br><a href="#Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?">Chapter 2: What Is Burial Insurance, And What Isn’t It?</a><br><a href="#Chapter-3:-First-Day-Coverage-vs.-Two-Year-Traps">Chapter 3: First-Day Coverage vs. Two-Year Traps</a><br><a href="#Chapter-4:-Why-$9.95-per-unit-or-$1-a-Day-is-a-Marketing-Mirage">Chapter 4: Why $9.95 per Unit or $1 a Day Is a Marketing Mirage</a><br><a href="#Chapter-5:-The-Truth-About-No-Medical-Exam-Policies">Chapter 5: The Truth About No Medical Exam Policies</a><br><a href="#Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;">Chapter 6: The Myth of “State-Regulated Programs”</a><br><a href="#Chapter-7:-The-Problem-with-Term-Life-Insurance">Chapter 7: The Problem with Term Life Insurance</a><br><a href="#Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation">Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</a><br><a href="#Chapter-9:-The-Fine-Print-They-Hope-You-Don’t-Read">Chapter 9: The Fine Print They Hope You Don’t Read</a><br><a href="#Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?">Chapter 10: Who Really Benefits: You or the Insurance Company?</a><br><a href="#Chapter-11:-The-Truth-About-Final-Expense-Agents">Chapter 11: The Truth About Final Expense Agents</a><br><a href="#Chapter-12:-Already-Covered?-You-Could-Be-Paying-Too-Much">Chapter 12: Already Covered? You Could Be Paying Too Much</a><br><a href="#Chapter-13:-What-Happens-When-You-Die?">Chapter 13: What Happens When You Die?</a><br><a href="#Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed">Chapter 14: A Buyer’s Guide to Protecting Your Family. Without Getting Scammed</a><br><a href="#Chapter-15:-Real-Stories,-Real-Regret---and-Redemption">Chapter 15: Real Stories, Real Regret, And Redemption</a><br><a href="#Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?">Chapter 16: Prepaid Funeral Plans: A Safe Bet or a Death Trap?</a><br><a href="#Chapter-17:-Final-Words---Freed-by-Truth">Chapter 17: Final Words: Freed by Truth</a></p>
+<p><strong>BOOK CHAPTERS</strong><br><a href="#Chapter-1:-WARNING-About-Life-Insurance-Companies-&-Agents">Chapter 1: WARNING About Life Insurance Companies &amp; Agents</a><br><a href="#Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?">Chapter 2: What Is Burial Insurance, And What Isn’t It?</a><br><a href="#Chapter-3:-First-Day-Coverage-vs.-Two-Year-Traps">Chapter 3: First-Day Coverage vs. Two-Year Traps</a><br><a href="#Chapter-4:-Why-$9.95-per-unit-or-$1-a-Day-is-a-Marketing-Mirage">Chapter 4: Why $9.95 per Unit or $1 a Day Is a Marketing Mirage</a><br><a href="#Chapter-5:-The-Truth-About-No-Medical-Exam-Policies">Chapter 5: The Truth About No Medical Exam Policies</a><br><a href="#Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;">Chapter 6: The Myth of “State-Regulated Programs”</a><br><a href="#Chapter-7:-The-Problem-with-Term-Life-Insurance">Chapter 7: The Problem with Term Life Insurance</a><br><a href="#Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation">Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</a><br><a href="#Chapter-9:-The-Fine-Print-They-Hope-You-Don’t-Read">Chapter 9: The Fine Print They Hope You Don’t Read</a><br><a href="#Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?">Chapter 10: Who Really Benefits: You or the Insurance Company?</a><br><a href="#Chapter-11:-The-Truth-About-Final-Expense-Agents">Chapter 11: The Truth About Final Expense Agents</a><br><a href="#Chapter-12:-Already-Covered?-You-Could-Be-Paying-Too-Much">Chapter 12: Already Covered? You Could Be Paying Too Much</a><br><a href="#Chapter-13:-What-Happens-When-You-Die?">Chapter 13: What Happens When You Die?</a><br><a href="#Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed">Chapter 14: A Buyer’s Guide to Protecting Your Family Without Getting Scammed</a><br><a href="#Chapter-15:-Real-Stories,-Real-Regret---and-Redemption">Chapter 15: Real Stories, Real Regret, And Redemption</a><br><a href="#Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?">Chapter 16: Prepaid Funeral Plans: A Safe Bet or a Death Trap?</a><br><a href="#Chapter-17:-Final-Words---Freed-by-Truth">Chapter 17: Final Words: Freed by Truth</a></p>
 
 <hr>
 
@@ -245,7 +245,7 @@ source: "live"
 
 <h2 id="Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;"><strong>Chapter 6: The Myth of “State-Regulated Programs”</strong></h2>
 
-<p>The phrase “State Regulated Programs”: or anything that sounds like it, is your first <strong>RED FLAG</strong> telling you to be suspicious.</p>
+<p>The phrase “State Regulated Programs”, or anything that sounds like it, is your first <strong>RED FLAG</strong> telling you to be suspicious.</p>
 
 <p>One of the <strong>most common deceptive marketing tactics</strong> is the claim that there’s a new “State-Regulated Burial Insurance Program” available. They say this to make you think the government or state endorses their final expense insurance policies.&#160;</p>
 
@@ -257,7 +257,7 @@ source: "live"
 
 <p><strong>Let’s be 100% clear:</strong> the government&#160;<strong>NEVER</strong> offers, endorses, or pays claims for these life insurance policies. Deceptive ads twist regulatory language to appear “official” when they are just trying to mislead you to get your name and telephone information.</p>
 
-<p>When you see claims like “New benefit for residents receiving Social Security,” or “State-regulated program just released,” or “state-approved,” <strong>it’s not new, it’s not state-sponsored, and it’s not exclusive, it’s just a scam.</strong></p>
+<p>When you see claims like “New benefit for residents receiving Social Security,” or “State-regulated program just released,” or “state-approved,” <strong>it’s not new, it’s not state-sponsored, and it’s not exclusive; it’s just a scam.</strong></p>
 
 <p><strong>NEVER work with companies</strong> that advertise with this “State Regulated” or similar language that tries to deceive you.</p>
 
@@ -354,7 +354,7 @@ source: "live"
 <li>Misunderstanding life insurance clauses can leave your family vulnerable and unprotected.</li>
 <li>Most policies have a <strong>2-year contestability period</strong> where claims can be denied for incorrect info.</li>
 <li>Even accidental mistakes on your application can lead to a <strong>denied payout</strong> during that time.</li>
-<li>A <strong>suicide clause</strong> also applies for the first two years, benefits may not be paid if triggered.</li>
+<li>A <strong>suicide clause</strong> also applies for the first two years. Benefits may not be paid if triggered.</li>
 <li>Always review your policy carefully and be truthful on your application to protect your loved ones.</li>
 <li>For help understanding what you’re really signing up for, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
@@ -453,7 +453,7 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>Just because you have a policy doesn’t mean it’s the <strong>best</strong> one, many people are overpaying or under-covered.</li>
+<li>Just because you have a policy doesn’t mean it’s the <strong>best</strong> one. Many people are overpaying or under-covered.</li>
 <li>Final expense prices for the <strong>same coverage</strong> can vary by 40-100% depending on the company.</li>
 <li>You may qualify for <strong>thousands more in coverage</strong> or lower premiums just by switching providers.</li>
 <li>If your current policy has a <strong>2-year waiting period</strong>, you might now qualify for <strong>1st-day coverage.</strong></li>
@@ -508,7 +508,7 @@ source: "live"
 
 <hr>
 
-<h2 id="Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed"><strong>Chapter 14: A Buyer’s Guide to Protecting Your Family. Without Getting Scammed</strong></h2>
+<h2 id="Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed"><strong>Chapter 14: A Buyer’s Guide to Protecting Your Family Without Getting Scammed</strong></h2>
 
 <p>With the rise in misleading ads and aggressive call center agents, consumers need a checklist to separate fact from fiction.&#160;</p>
 
@@ -610,7 +610,7 @@ source: "live"
 
 <p>James, 73, bought a policy over the phone after receiving a mailer claiming he could get “coverage regardless of health.” The agent promised it was “full coverage, no matter what.”&#160;</p>
 
-<p>But when James’s son tried to file a claim after his father’s cancer death, he learned the plan only paid out for <strong>accidental deaths</strong> in the last two years, total payout: $0.</p>
+<p>But when James’s son tried to file a claim after his father’s cancer death, he learned the plan only paid out for <strong>accidental deaths</strong> in the last two years. Total payout: $0.</p>
 
 <p><strong>Lesson:</strong> Never accept verbal promises. Get the policy details in writing.</p>
 
@@ -624,7 +624,7 @@ source: "live"
 
 <ul>
 <li>Real stories show how the <strong>wrong policy</strong> can leave families with little to nothing.</li>
-<li>Linda’s daughter received only a refund: not the $15,000, because of a <strong>2-year waiting period.</strong></li>
+<li>Linda’s daughter received only a refund, not the $15,000, because of a <strong>2-year waiting period.</strong></li>
 <li>James’s policy paid <strong>nothing</strong> because it only covered accidental deaths, despite what the agent claimed.</li>
 <li>Maria saved $30/month for the <strong>same coverage</strong> by getting help from a trusted expert.</li>
 <li><strong>Always ask</strong> about waiting periods, get everything <strong>in writing</strong>, and shop with an ethical broker.</li>
@@ -691,4 +691,4 @@ source: "live"
 
 <p id="h-before-making-any-decisions-regarding-insurance-coverage-or-financial-planning-you-are-strongly-advised-to-consult-with-a-licensed-insurance-agent-or-financial-professional-who-understands-your-situation" class="as-h6">Before making any decisions regarding insurance coverage or financial planning, you are strongly advised to consult with a licensed insurance agent or financial professional who understands your situation.</p>
 
-<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: funeralfunds.com: <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>
+<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: funeralfunds.com, <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>

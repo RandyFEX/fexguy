@@ -145,7 +145,7 @@ sidebar: true
 
 <p>Your first step is determining how much burial insurance you will need to know your end-of-life expenses. </p>
 
-<p>Your <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider, outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
+<p>Your <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider: outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
 
 <p>According to the National Funeral Directors Association (NFDA) website, the average cost of an adult funeral today is $8,755. </p>
 

@@ -159,7 +159,7 @@ sidebar: true
 
 <p>The death benefit is payable when you die, whether you live to be 75 or 105; permanent life insurance will pay the benefit if the premiums are paid.</p>
 
-<p>This contrasts with term life insurance, where death benefits are paid during a specified timeframe, for example, you are 40 years old and bought a 20-year term life insurance. Your beneficiary will only receive a death benefit if you die before the age of 60.</p>
+<p>This contrasts with term life insurance, where death benefits are paid during a specified timeframe. For example, you are 40 years old and bought a 20-year term life insurance. Your beneficiary will only receive a death benefit if you die before the age of 60.</p>
 
 <p>Permanent life insurance does not have a timeframe; it will give your family continued protection as long as you live.</p>
 

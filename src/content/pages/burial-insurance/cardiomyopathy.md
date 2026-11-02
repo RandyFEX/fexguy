@@ -85,7 +85,7 @@ sidebar: true
 
 <h2 id="do-i-need-medical-exam?"><strong>Do I need a medical exam to qualify for cardiomyopathy burial insurance?</strong></h2>
 
-<p>Nope! Just answer some basic health questions. The application process is a breeze, you won’t need to fetch your medical records or send in blood and urine samples.</p>
+<p>Nope! Just answer some basic health questions. The application process is a breeze: you won’t need to fetch your medical records or send in blood and urine samples.</p>
 
 <p>With first-day coverage, you’ll often get the thumbs up from the insurance company within minutes!</p>
 
@@ -228,7 +228,7 @@ sidebar: true
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Don’t try to navigate this insurance jungle alone! Find an independent agent from Funeral Funds who specializes in cardiomyopathy. We’ll be your own personal insurance sherpa, guiding you through all the options and helping you snag the best deal.</li>
-<li><strong>Complete the Application Honestly</strong>: When filling out the application, think about your health. Lying is a big no-no and could mess with the whole payout thing later. Think of it as spilling the tea to your best friend, gotta be truthful!</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the application, think about your health. Lying is a big no-no and could mess with the whole payout thing later. Think of it as spilling the tea to your best friend: gotta be truthful!</li>
 <li><strong>Review and Confirm Policy Details</strong>: Don’t just skim the paperwork! Take your time and make sure you understand everything in the policy before you sign. It’s your money, and you must ensure it covers what you need it to.</li>
 </ol>
 

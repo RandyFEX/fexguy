@@ -417,7 +417,7 @@ State-regulated language trap
 
 <p>Finally, make sure your loved ones know exactly who to contact. Add the insurance company’s name, policy number, and agent information to your family documents. Inform your beneficiaries of the policy’s location and the contact information for assistance. This step prevents delays during the claim process.</p>
 
-<p>You can start today with a quick phone call. Contact 888-862-9456 or visit www.FuneralFunds.com to compare first-day coverage options from top-rated companies. It’s simple, fast, and gives your family one thing they’ll never forget, peace of mind.</p>
+<p>You can start today with a quick phone call. Contact 888-862-9456 or visit www.FuneralFunds.com to compare first-day coverage options from top-rated companies. It’s simple, fast, and gives your family one thing they’ll never forget: peace of mind.</p>
 
 <hr>
 

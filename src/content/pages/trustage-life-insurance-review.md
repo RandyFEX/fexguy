@@ -874,7 +874,7 @@ June 10, 2021 at 2:04 am
 <div class="comment" id="comment-11216">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
 <p>Carlota: Thank you for your comments…even if they do leave us confused.</p>
-<p>Please read this article again if you are confused. This article is a review of one company only. Trustage Life Insurance. </p>
+<p>Please read this article again if you are confused. This article is a review of one company only: Trustage Life Insurance. </p>
 <p>Baltimore Life Insurance would need to have its own review article if we wanted to write one about them. </p>
 <p>The "suggested companies" you mentioned are not suggested companies. They are just review pages on other companies. We provide the facts and you can decide if you like those companies or not.</p>
 <div class="comment-meta">

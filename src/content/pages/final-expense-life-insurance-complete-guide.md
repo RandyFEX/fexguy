@@ -79,7 +79,7 @@ sidebar: true
 The postcard that promised “Immediate Protection”
 </h3>
 
-<p>Postcard offer: simplified whole life with instant approval, led Carol, age 72, to believe her family would receive full benefits right away.</p>
+<p>Postcard offer, simplified whole life with instant approval, led Carol, age 72, to believe her family would receive full benefits right away.</p>
 
 <p>Carol filled out a brightly colored postcard that arrived in her mailbox after her neighbor passed. The card said no medical questions and implied coverage would start immediately, so she mailed it back without talking to anyone. A few weeks later, she had a policy in hand and assumed everything was done.</p>
 
@@ -224,7 +224,7 @@ The postcard that promised “Immediate Protection”
 The no-exam shortcut that backfired
 </h3>
 
-<p>Online ad: no exam and instant approval: pushed Denise, age 70, to skip underwriting questions she actually could’ve passed.</p>
+<p>Online ad, no exam and instant approval, pushed Denise, age 70, to skip underwriting questions she actually could’ve passed.</p>
 
 <p>Denise clicked an ad late one night promising fast approval with no exams. She had controlled diabetes and assumed answering health questions would only complicate things. The application went through in minutes, and she felt relieved.</p>
 
@@ -371,7 +371,7 @@ The no-exam shortcut that backfired
 The “State-Regulated” sales call
 </h3>
 
-<p>Phone call pitch: state-regulated senior benefit: caused James and Linda, both 68, to assume the plan was backed by a public program.</p>
+<p>Phone call pitch, state-regulated senior benefit, caused James and Linda, both 68, to assume the plan was backed by a public program.</p>
 
 <p>James took a call after dinner from someone claiming to review a state-regulated benefit tied to their ZIP code. The agent spoke quickly, referenced compliance language, and pushed them to apply before a deadline. Linda heard “state-regulated” and thought it worked like a government benefit.</p>
 
@@ -490,7 +490,7 @@ The “State-Regulated” sales call
 The accidental rider confusion
 </h3>
 
-<p>Agent explanation: accidental death rider attached to a small policy, led Miguel, age 64, to believe natural causes were fully covered.</p>
+<p>Agent explanation, accidental death rider attached to a small policy, led Miguel, age 64, to believe natural causes were fully covered.</p>
 
 <p>Miguel met an agent at a community center who highlighted an accidental death rider and glossed over the base policy. The conversation focused on accidents, and Miguel assumed natural causes worked the same way since the paperwork showed a benefit amount.</p>
 

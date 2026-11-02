@@ -203,11 +203,11 @@ sidebar: true
 
 <ul>
 <li>Full coverage starts upon the first payment: you will be fully covered after your first payment. Your beneficiary will receive 100% of your coverage amount, whether you die in an accident or due to health problems.</li>
-<li>The Premium amount will never increase for any reason, your monthly premium will remain the same trough the life of the policy. It will never increase due to worsening health conditions or your age because you lock the price at the age you bought the policy.</li>
+<li>The Premium amount will never increase for any reason. Your monthly premium will remain the same trough the life of the policy. It will never increase due to worsening health conditions or your age because you lock the price at the age you bought the policy.</li>
 <li>The death benefit never decreases: your death benefit is level and guaranteed never to decrease. Your beneficiary will receive the full amount when you pass away.</li>
-<li>You can never outlive your policy with lifetime coverage, whole life insurance will never terminate or end. You have covered your whole life or until age 121. You will never outlive your policy.</li>
+<li>You can never outlive your policy with lifetime coverage. Whole life insurance will never terminate or end. You have covered your whole life or until age 121. You will never outlive your policy.</li>
 <li>The policy cannot be canceled except for non-payment: whole life insurance cannot be canceled due to age. It will stay in force as long as you keep paying the premium.</li>
-<li>It has a cash value component that grows over time, whole life insurance with first-day coverage comes with an investment component. Your cash value grows over time. You can withdraw from it or file a policy loan if you need funds.</li>
+<li>It has a cash value component that grows over time. Whole life insurance with first-day coverage comes with an investment component. Your cash value grows over time. You can withdraw from it or file a policy loan if you need funds.</li>
 </ul>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>

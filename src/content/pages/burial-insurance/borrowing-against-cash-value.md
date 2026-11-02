@@ -79,7 +79,7 @@ sidebar: true
 
 <p>Using life insurance to pay off debt is possible <strong>if your permanent life insurance policy is accumulating cash value. You can borrow or take a personal life insurance loan against the cash value.</strong> The insurance carrier will use the cash value as collateral for your loan. Borrowing against cash value is only available once your life insurance cash value has reached a certain level, which may take about five to ten years of premium payments.</p>
 
-<p>While the insurance carrier may limit the amount you can borrow up to a certain percentage, usually 90% of the policy’s cash value, most carriers will allow you to borrow the full amount. As with any other kind of loan, cash value loans require repayment according to the standard interest rate and the full amount you borrow.</p>
+<p>While the insurance carrier may limit the amount you can borrow up to a certain percentage, usually 90% of the policy’s cash value. Most carriers will allow you to borrow the full amount. As with any other kind of loan, cash value loans require repayment according to the standard interest rate and the full amount you borrow.</p>
 
 <h2 id="how-life-insurance-policy-loan-works"><br><strong>How life insurance policy loan works</strong></h2>
 

@@ -62,7 +62,7 @@ sidebar: true
 
 <p>How long your defibrillator has been hanging out in your chest is a big deal when it comes to your insurance options.<br><br><strong>DEFIBRILLATOR IMPLANTED OVER 2 YEARS AGO</strong></p>
 
-<p>An implantable cardioverter defibrillator (ICD) isn’t just a mouthful, it’s your lifeline. These gadgets are implanted in your chest or abdomen to save you from sudden cardiac arrest. Yep, it’s a big deal and counts as circulatory surgery.</p>
+<p>An implantable cardioverter defibrillator (ICD) isn’t just a mouthful; it’s your lifeline. These gadgets are implanted in your chest or abdomen to save you from sudden cardiac arrest. Yep, it’s a big deal and counts as circulatory surgery.</p>
 
 <p>If your ICD has been in place for over 24 months, congrats! You can get a level death benefit plan with first-day coverage from a bunch of burial insurance companies.</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 <li>Type of policy</li>
 </ul>
 
-<p>Hunting for the best life insurance rates with a defibrillator? Partner up with the top insurance matchmaker in town. Funeral Funds. We’ll scour the market, compare rates from various carriers, and find your perfect insurance match.</p>
+<p>Hunting for the best life insurance rates with a defibrillator? Partner up with the top insurance matchmaker in town: Funeral Funds. We’ll scour the market, compare rates from various carriers, and find your perfect insurance match.</p>
 
 <p><strong>Check out these sample rates for a fabulous 60-year-old female with a defibrillator:</strong></p>
 
@@ -230,7 +230,7 @@ sidebar: true
 
 <p><br><strong>What heart conditions require a defibrillator?</strong></p>
 
-<p>A defibrillator is your heart’s best friend when it stops beating, a condition known as cardiac arrest. But it’s not just for that, it also zaps other pesky heart issues like ventricular tachycardia or fibrillation back into line.</p>
+<p>A defibrillator is your heart’s best friend when it stops beating, a condition known as cardiac arrest. But it’s not just for that; it also zaps other pesky heart issues like ventricular tachycardia or fibrillation back into line.</p>
 
 <p><br><strong>Is a defibrillator implant considered surgery in life insurance?</strong></p>
 

@@ -74,7 +74,7 @@ sidebar: true
 
 <p>Burial insurance is, in fact, a form of life insurance with a smaller face amount than traditional life insurance policies. It’s because burial insurance is designed to cover your final expenses. </p>
 
-<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement or mortgage protection, the difference between the two lies in your purpose of buying.</p>
+<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement or mortgage protection. The difference between the two lies in your purpose of buying.</p>
 
 <p>The death benefit payout from burial insurance can be used for other expenses depending on your beneficiary. However, benefit payouts are designed to cover final expenses primarily. </p>
 

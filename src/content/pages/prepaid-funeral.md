@@ -312,7 +312,7 @@ sidebar: true
 
 <p><br><strong>Can I get out of my prepaid burial plan if I change my mind?</strong></p>
 
-<p>No. It is a legally binding contract and can only be changed in certain circumstances such as death, divorce, bankruptcy, or a case where the Federal Trade Commission. Federal Trade Commission rules that your contract is unfair or deceptive.</p>
+<p>No. It is a legally binding contract and can only be changed in certain circumstances such as death, divorce, bankruptcy, or a case where the Federal Trade Commission rules that your contract is unfair or deceptive.</p>
 
 <p><br><strong>Do I have to pay upfront for pre-need funeral insurance?</strong></p>
 

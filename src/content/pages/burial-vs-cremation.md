@@ -95,7 +95,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>State laws: burial and cremation procedures: paperwork, timing, and final cost</strong></h2>
+<h2><strong>State laws: burial and cremation procedures, paperwork, timing, and final cost</strong></h2>
 
 <p>Every state has its own rules that determine how quickly burial or cremation can occur, what paperwork is required, and what professionals must be involved.</p>
 

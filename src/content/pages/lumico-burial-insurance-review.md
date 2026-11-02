@@ -708,7 +708,7 @@ February 9, 2020 at 4:08 pm
 <div class="comment-replies">
 <div class="comment" id="comment-3469">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Cathy: We don't even offer plans that have 3-year waiting periods. We don't even recommend them as they are the most expensive and risky plans available. You would have to contact the company that your plan was purchased through in order to cancel your plan. If you are interested, you can get a free quote by visiting this page, <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Cathy: We don't even offer plans that have 3-year waiting periods. We don't even recommend them as they are the most expensive and risky plans available. You would have to contact the company that your plan was purchased through in order to cancel your plan. If you are interested, you can get a free quote by visiting this page: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 April 24, 2020 at 7:54 am                    
 </div>

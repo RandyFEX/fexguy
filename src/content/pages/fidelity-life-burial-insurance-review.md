@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Fidelity Life can offer somewhat speedy approvals but often charges much higher premiums<br>• First-day coverage is possible, but only if your health qualifies, and it may take days to get approved<br>• Fidelity Life Guaranteed issue plan has a 3-year waiting period, not 2-year wait, this is terrible<br>• Coverage caps out around $35,000, which may or may not be enough for some seniors<br>• Not built for serious health issues or recent hospitalizations, 3-year wait, keep shopping!<br>• I can shop around for better burial insurance rates and underwriting with other companies</p>
+<p>• Fidelity Life can offer somewhat speedy approvals but often charges much higher premiums<br>• First-day coverage is possible, but only if your health qualifies, and it may take days to get approved<br>• Fidelity Life Guaranteed issue plan has a 3-year waiting period, not 2-year wait; this is terrible<br>• Coverage caps out around $35,000, which may or may not be enough for some seniors<br>• Not built for serious health issues or recent hospitalizations, 3-year wait, keep shopping!<br>• I can shop around for better burial insurance rates and underwriting with other companies</p>
 
 <p>Fidelity Life burial insurance is a whole life policy designed for smaller coverage amounts, usually $5,000 to $35,000, aimed at covering funeral costs. The big selling point is speed. You can sometimes get approved quickly, sometimes within days, without a medical exam. The problem is cost and limitations. Their best plan only works if you’re relatively healthy, and their guaranteed issue option makes you wait 3 years for full benefits. That’s longer than most companies and more expensive than many alternatives.</p>
 

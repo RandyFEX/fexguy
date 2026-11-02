@@ -21,23 +21,23 @@ source: "live"
 
 <p><img decoding="async" loading="lazy" src="/wp-content/uploads/2019/10/READ-OUR-REVIEWS.png" alt="" width="462" height="61"></p>
 
-<p><em><strong>“</strong></em><strong> Randy was great! An awesome, honest, caring person that really takes the time to address all your insurance needs. If you need life insurance please contact him.</strong><em><strong>“</strong></em><br><br><em>Donna S., Crossville, TN</em></p>
+<p><em><strong>“</strong></em><strong> Randy was great! An awesome, honest, caring person that really takes the time to address all your insurance needs. If you need life insurance please contact him.</strong><em><strong>“</strong></em><br><br><em>Donna S. - Crossville, TN</em></p>
 
-<p><em><strong>“Had a great experience with Randy during this process and really liked that coverage starts from day one, will highly recommend.”</strong></em> <br><br><em>Carolyn R., Albany, GA</em></p>
+<p><em><strong>“Had a great experience with Randy during this process and really liked that coverage starts from day one – will highly recommend.”</strong></em> <br><br><em>Carolyn R. - Albany, GA</em></p>
 
-<p><em><strong>“After many turn downs on insurance, I was so happy they said yes. Randy is awesome to talk with and very thorough. Great experience! And I love the no waiting period! Hope I don’t pass anytime soon, however I feel a great relief now (that) I have insurance.”</strong></em> <br><br><em>Regina M., Bloomington, IN</em></p>
+<p><em><strong>“After many turn downs on insurance, I was so happy they said yes. Randy is awesome to talk with and very thorough. Great experience! And I love the no waiting period! Hope I don’t pass anytime soon, however I feel a great relief now (that) I have insurance.”</strong></em> <br><br><em>Regina M. - Bloomington, IN</em></p>
 
-<p><em><strong>“So grateful for Randy’s help. He found a company that would accept me. I have been looking for final expenses insurance for a very long time, each time I was told I would have to wait 2 years for the insurance to take effect. Randy found a insurance company that will take effect immediately. I am so happy. My family will not have to worry about anything when I am gone.”</strong></em> <br><br><em>Rhonda W., Lexington, KY</em></p>
+<p><em><strong>“So grateful for Randy’s help. He found a company that would accept me. I have been looking for final expenses insurance for a very long time, each time I was told I would have to wait 2 years for the insurance to take effect. Randy found a insurance company that will take effect immediately. I am so happy. My family will not have to worry about anything when I am gone.”</strong></em> <br><br><em>Rhonda W. - Lexington, KY</em></p>
 
-<p> <em><strong>“Randy made the process so easy. Excellent Agent, VERY knowledgeable, answered my many questions &amp; found the right policy for me within my fixed-income budget. Simply a joy to talk with, so courteous &amp; helpful. Randy went above &amp; beyond in helping me get the right coverage for my golden years.”</strong></em> <br><br><em>Linda T., Bowling Green, KY</em></p>
+<p> <em><strong>“Randy made the process so easy. Excellent Agent, VERY knowledgeable, answered my many questions &amp; found the right policy for me within my fixed-income budget. Simply a joy to talk with, so courteous &amp; helpful. Randy went above &amp; beyond in helping me get the right coverage for my golden years.”</strong></em> <br><br><em>Linda T. - Bowling Green, KY</em></p>
 
-<p><em><strong>“Randy was an excellent agent for me to work with. He’s kind and very knowledgeable about his policies. It was quick and easy and I felt the greatest amount of confidence. Talking about death and funerals is not the most pleasant topics, however, it was managed with total dignity. I highly recommend this company.”</strong></em> <br><br><em>Meri M., Cedar Park, TX</em></p>
+<p><em><strong>“Randy was an excellent agent for me to work with. He’s kind and very knowledgeable about his policies. It was quick and easy and I felt the greatest amount of confidence. Talking about death and funerals is not the most pleasant topics, however, it was managed with total dignity. I highly recommend this company.”</strong></em> <br><br><em>Meri M. - Cedar Park, TX</em></p>
 
-<p><em><strong>“Randy has been most helpful to me I sent a message and he got back with me quickly he answered the questions and I was well pleased I highly recommend Funeral Funds to anyone that is looking for this type of insurance.”</strong></em> <br><br><em>Pamela K., Morrilton, AR</em></p>
+<p><em><strong>“Randy has been most helpful to me I sent a message and he got back with me quickly he answered the questions and I was well pleased I highly recommend Funeral Funds to anyone that is looking for this type of insurance.”</strong></em> <br><br><em>Pamela K. - Morrilton, AR</em></p>
 
-<p><br><em><strong>“I had a most completely (wonderful) experience today with Randy, who was very helpful in finding me the best policy. I recommend Randy and this company to anyone needing insurance.”</strong></em> <br><br><em>Marilyn K., Moultrie, GA</em></p>
+<p><br><em><strong>“I had a most completely (wonderful) experience today with Randy, who was very helpful in finding me the best policy. I recommend Randy and this company to anyone needing insurance.”</strong></em> <br><br><em>Marilyn K. - Moultrie, GA</em></p>
 
-<p> <em><strong>“Very easy application to get insurance for funerals. You never know when your time is up.”</strong></em>  <br><br><em>Irvina L., Breckenridge, TX</em></p>
+<p> <em><strong>“Very easy application to get insurance for funerals. You never know when your time is up.”</strong></em>  <br><br><em>Irvina L. - Breckenridge, TX</em></p>
 
 <p><img decoding="async" loading="lazy" src="/wp-content/uploads/2019/10/WHO-ARE-WE.png" alt="" width="465" height="63"></p>
 

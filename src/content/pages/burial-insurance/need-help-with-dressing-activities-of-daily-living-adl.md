@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance if You Need Help with Dressing [Activities of Daily Living. ADL’s]</h1>
+<h1>Burial Insurance if You Need Help with Dressing [Activities of Daily Living (ADL’s)]</h1>
 
 <p><strong>Here’s the Bottom Line:<br>• </strong>Needing help with dressing signals a serious health risk to insurers<br>• Companies will limit you to 2-year waiting period policies<br>• Current ADL limitations lead to guaranteed issue only<br>• Coverage amounts are smaller and cost much more monthly<br>• Applying for better plans will usually result in denial</p>
 

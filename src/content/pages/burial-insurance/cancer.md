@@ -282,7 +282,7 @@ sidebar: true
 
 <h3>Why is an independent broker vital for cancer burial insurance?</h3>
 
-<p>An independent broker acts as your advocate by comparing the specific “look-back” periods of dozens of different insurance companies. Since carriers have different rules -some require two years of remission, while others require five, a broker ensures you are matched with the company that offers the fastest approval. Their specialized knowledge prevents you from accidentally applying to a company that would automatically decline your history.</p>
+<p>An independent broker acts as your advocate by comparing the specific “look-back” periods of dozens of different insurance companies. Since carriers have different rules -some require two years of remission, while others require five. A broker ensures you are matched with the company that offers the fastest approval. Their specialized knowledge prevents you from accidentally applying to a company that would automatically decline your history.</p>
 
 <h3>Does a history of chemotherapy increase burial insurance premiums?</h3>
 

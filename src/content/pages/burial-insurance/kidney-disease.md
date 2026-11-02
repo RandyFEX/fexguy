@@ -147,7 +147,7 @@ sidebar: true
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
-<p>Nope, you don’t need a medical exam to get burial insurance if you have kidney disease or are on dialysis. Just answer a few basic health questions. The application process is a breeze, no medical records, blood, or urine samples are needed. We can often get you approved within minutes.</p>
+<p>Nope, you don’t need a medical exam to get burial insurance if you have kidney disease or are on dialysis. Just answer a few basic health questions. The application process is a breeze: no medical records, blood, or urine samples are needed. We can often get you approved within minutes.</p>
 
 <h2 id="kidney-disease-underwriting"><strong>Burial insurance underwriting with kidney disease</strong></h2>
 

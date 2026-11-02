@@ -23,7 +23,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Cremation costs vary widely depending on services, add-ons, and where you live<br>• Direct cremation is cheapest but removes viewing and ceremony options, around $2,000 average<br>• Full-service cremation can cost 3x more than basic options, up to $4,000-$7,000 average<br>• Funeral homes often bundle extras that drive prices up fast, you get upsold when you are vulnerable<br>• Prices can vary by thousands, even within the same city, funeral homes have different overhead costs<br>• Most families overpay because they don’t compare providers first or have cremation insurance</p>
+<p>• Cremation costs vary widely depending on services, add-ons, and where you live<br>• Direct cremation is cheapest but removes viewing and ceremony options, around $2,000 average<br>• Full-service cremation can cost 3x more than basic options, up to $4,000-$7,000 average<br>• Funeral homes often bundle extras that drive prices up fast; you get upsold when you are vulnerable<br>• Prices can vary by thousands, even within the same city; funeral homes have different overhead costs<br>• Most families overpay because they don’t compare providers first or have cremation insurance</p>
 
 <p>Cremation cost and info comes down to one thing, how simple or complicated you make it. A direct cremation usually runs about $1,000 to $3,000, while a full cremation with a service can hit $5,500 to $6,300 or more. The difference is all the extras like viewings, ceremonies, and funeral home fees. Burial insurance is designed to cover these costs with cash paid directly to your family, so they don’t have to make rushed decisions or overpay under pressure.</p>
 

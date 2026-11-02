@@ -196,7 +196,7 @@ sidebar: true
 <li>In the PAST 10 YEARS, have you opted to NOT seek treatment, have NOT taken medication, and/or have NOT followed the prescribed treatment plan following a medical diagnosis by a member of the medical profession for liver cirrhosis?</li>
 </ul>
 
-<p>And don’t be surprised if they don’t use the exact phrase “liver cirrhosis”, they might phrase it differently, but it’s still asking about your liver health. Make sure to answer honestly because, yes, cirrhosis is a liver disease.</p>
+<p>And don’t be surprised if they don’t use the exact phrase “liver cirrhosis”; they might phrase it differently, but it’s still asking about your liver health. Make sure to answer honestly because, yes, cirrhosis is a liver disease.</p>
 
 <ul>
 <li>Have you been diagnosed or treated for any liver condition?</li>
@@ -216,7 +216,7 @@ sidebar: true
 
 <h2 id="finding-affordable-burial-insurance"><strong>How to find affordable burial insurance with cirrhosis of the liver</strong></h2>
 
-<p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans, they’ll end up being a pricey mistake you don’t need.</p>
+<p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans; they’ll end up being a pricey mistake you don’t need.</p>
 
 <h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 

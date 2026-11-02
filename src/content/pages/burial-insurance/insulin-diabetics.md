@@ -93,7 +93,7 @@ sidebar: true
 
 <p>No medical exam needed for your burial insurance. When you’re ready to cash in your chips, the last thing you want is paperwork.</p>
 
-<p>Just answer a few quick questions about your health, don’t worry, we’re not asking for your life story. No needles, no blood draws, just pure, unadulterated simplicity. You’ll get the green light faster than you can say “six feet under.”</p>
+<p>Just answer a few quick questions about your health. Don’t worry, we’re not asking for your life story. No needles, no blood draws, just pure, unadulterated simplicity. You’ll get the green light faster than you can say “six feet under.”</p>
 
 <h2 id="underwriting"><br><strong><strong>Burial insurance underwriting for insulin-dependent diabetics</strong></strong></h2>
 

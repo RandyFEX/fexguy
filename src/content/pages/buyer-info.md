@@ -275,34 +275,34 @@ source: "live"
 </thead>
 <tbody>
 <tr>
-<td>$1,500: AK</td><td>$1,500: HI</td><td>$1,318: ME</td><td>$3,979: NJ</td><td>$2,250: SD</td>
+<td>$1,500 - AK</td><td>$1,500 - HI</td><td>$1,318 - ME</td><td>$3,979 - NJ</td><td>$2,250 - SD</td>
 </tr>
 <tr>
-<td>$3,300: AL</td><td>$2,700: IA</td><td>$2,375: MI</td><td>$895: NM</td><td>$2,043: TN</td>
+<td>$3,300 - AL</td><td>$2,700 - IA</td><td>$2,375 - MI</td><td>$895 - NM</td><td>$2,043 - TN</td>
 </tr>
 <tr>
-<td>$1,885: AR</td><td>$1,400: ID</td><td>$750: MN</td><td>$595: NV</td><td>$1,000: TX</td>
+<td>$1,885 - AR</td><td>$1,400 - ID</td><td>$750 - MN</td><td>$595 - NV</td><td>$1,000 - TX</td>
 </tr>
 <tr>
-<td>$675: AZ</td><td>$1,949: IL</td><td>$2,700: MO</td><td>$1,969: NY</td><td>$1,462: UT</td>
+<td>$675 - AZ</td><td>$1,949 - IL</td><td>$2,700 - MO</td><td>$1,969 - NY</td><td>$1,462 - UT</td>
 </tr>
 <tr>
-<td>$1,300: CA</td><td>$2,375 -IN</td><td>$995: MS</td><td>$1,600: OH</td><td>$2,195: VA</td>
+<td>$1,300 - CA</td><td>$2,375 -IN</td><td>$995 - MS</td><td>$1,600 - OH</td><td>$2,195 - VA</td>
 </tr>
 <tr>
-<td>$2,250: CO</td><td>$1,817: KS</td><td>$2,250: MT</td><td>$600: OK</td><td>$1,395: VT</td>
+<td>$2,250 - CO</td><td>$1,817 - KS</td><td>$2,250 - MT</td><td>$600 - OK</td><td>$1,395 - VT</td>
 </tr>
 <tr>
-<td>$2,200: CT</td><td>$1,075: KY</td><td>$895: NC</td><td>$1,595: OR</td><td>$1,363: WA</td>
+<td>$2,200 - CT</td><td>$1,075 - KY</td><td>$895 - NC</td><td>$1,595 - OR</td><td>$1,363 - WA</td>
 </tr>
 <tr>
-<td>$995: DE</td><td>$2,175: LA</td><td>$1,000: ND</td><td>$1,816: PA</td><td>$1,000: WI</td>
+<td>$995 - DE</td><td>$2,175 - LA</td><td>$1,000 - ND</td><td>$1,816 - PA</td><td>$1,000 - WI</td>
 </tr>
 <tr>
-<td>$3,407: FL</td><td>$1,318: MA</td><td>$990: NE</td><td>$1,400: RI</td><td>$1,125: WV</td>
+<td>$3,407 - FL</td><td>$1,318 - MA</td><td>$990 - NE</td><td>$1,400 - RI</td><td>$1,125 - WV</td>
 </tr>
 <tr>
-<td>$1,808: GA</td><td>$2,515: MD</td><td>$2,515: NH</td><td>$950: SC</td><td>$1,885: WY</td>
+<td>$1,808 - GA</td><td>$2,515 - MD</td><td>$2,515 - NH</td><td>$950 - SC</td><td>$1,885 - WY</td>
 </tr>
 </tbody>
 </table>
@@ -321,38 +321,38 @@ source: "live"
 </thead>
 <tbody>
 <tr>
-<td>$10,084: AK</td><td>$14,975: HI </td><td>$9,122: ME</td><td>$9,712: NJ </td><td>$7,748: SD</td>
+<td>$10,084 - AK</td><td>$14,975 - HI </td><td>$9,122 - ME</td><td>$9,712 - NJ </td><td>$7,748 - SD</td>
 </tr>
 <tr>
-<td>$6,933: AL</td><td>$6,995: IA</td><td>$6,902: MI </td><td>$6,793: NM </td><td>$6,886: TN </td>
+<td>$6,933 - AL</td><td>$6,995 - IA</td><td>$6,902 - MI </td><td>$6,793 - NM </td><td>$6,886 - TN </td>
 </tr>
 <tr>
-<td>$6,746: AR</td><td>$7,165: ID </td><td>$7,887: MN </td><td>$8,423: NV </td><td>$7,103: TX </td>
+<td>$6,746 - AR</td><td>$7,165 - ID </td><td>$7,887 - MN </td><td>$8,423 - NV </td><td>$7,103 - TX </td>
 </tr>
 <tr>
-<td>$7,530: AZ</td><td>$7,336: IL</td><td>$6,762: MO <br>
+<td>$7,530 - AZ</td><td>$7,336 - IL</td><td>$6,762: MO <br>
 </td><td>$10,799: NY <br>
-</td><td>$7,639: UT</td>
+</td><td>$7,639 - UT</td>
 </tr>
 <tr>
-<td>$11,777: CA</td><td>$6,987: IN</td><td>$6,684: MS </td><td>$7,049: OH </td><td>$7,818: VA</td>
+<td>$11,777 - CA</td><td>$6,987 - IN</td><td>$6,684 - MS </td><td>$7,049 - OH </td><td>$7,818 - VA</td>
 </tr>
 <tr>
-<td>$8,198: CO</td><td>$6,909: KS</td><td>$8,229: MT</td><td>$6,754: OK </td><td>$8,889: VT </td>
+<td>$8,198 - CO</td><td>$6,909 - KS</td><td>$8,229 - MT</td><td>$6,754 - OK </td><td>$8,889 - VT </td>
 </tr>
 <tr>
-<td>$9,914: CT </td><td>$7,057: KY </td><td>$7,367: NC </td><td>$10,418: OR</td><td>$8,594: WA</td>
+<td>$9,914 - CT </td><td>$7,057 - KY </td><td>$7,367 - NC </td><td>$10,418 - OR</td><td>$8,594 - WA</td>
 </tr>
 <tr>
-<td>$8,392: DE</td><td>$7,290: LA</td><td>$7,670: ND</td><td>$7,895: PA<br>
-</td><td>$7,554: WI</td>
+<td>$8,392 - DE</td><td>$7,290 - LA</td><td>$7,670 - ND</td><td>$7,895: PA<br>
+</td><td>$7,554 - WI</td>
 </tr>
 <tr>
-<td>$7,600: FL</td><td>$10,216: MA</td><td>$7,049: NE</td><td>$9,269: RI</td><td>$7,072:  WV</td>
+<td>$7,600 - FL</td><td>$10,216 - MA</td><td>$7,049 - NE</td><td>$9,269 - RI</td><td>$7,072:  WV</td>
 </tr>
 <tr>
 <td>$6,925: GA<br>
-</td><td>$10,069: MD</td><td>$8,516: NH</td><td>$7,445: SC</td><td>$6,933: WY</td>
+</td><td>$10,069 - MD</td><td>$8,516 - NH</td><td>$7,445 - SC</td><td>$6,933 - WY</td>
 </tr>
 </tbody>
 </table>

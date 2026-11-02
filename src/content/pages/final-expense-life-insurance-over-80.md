@@ -51,7 +51,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>Guaranteed acceptance plans always include a two-year waiting period, avoid these!</strong></h2>
+<h2><strong>Guaranteed acceptance plans always include a two-year waiting period. Avoid these!</strong></h2>
 
 <p>Guaranteed acceptance plans are heavily advertised to seniors over 80 because they approve everyone. </p>
 

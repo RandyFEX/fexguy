@@ -235,11 +235,11 @@ sidebar: true
 
 <p>If you don’t have any life insurance, your loved ones would likely have to bear the burden of your final expenses and other financial obligations if you died unexpectedly. </p>
 
-<p>A life insurance policy can help ease that burden and provide much-needed financial stability during a difficult time. So please, don’t go without life insurance, it’s just not worth the risk.</p>
+<p>A life insurance policy can help ease that burden and provide much-needed financial stability during a difficult time. So please, don’t go without life insurance; it’s just not worth the risk.</p>
 
 <p><br><strong>Can you buy life insurance for someone who is dying?</strong></p>
 
-<p>Yes. You can purchase life insurance for someone who is dying, but be careful, it’s almost always more expensive than standard life insurance because the policy doesn’t go into effect until two years have passed.</p>
+<p>Yes. You can purchase life insurance for someone who is dying, but be careful: it’s almost always more expensive than standard life insurance because the policy doesn’t go into effect until two years have passed.</p>
 
 <p><br><strong>Who pays for funeral if no life insurance?</strong></p>
 

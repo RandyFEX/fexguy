@@ -76,7 +76,7 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>Burial insurance available to people who had heart bypass surgery?</strong></h2>
 
-<p><strong>FIRST-DAY COVERAGE</strong>: This burial insurance is as straightforward as it gets, no waiting around. You make the first payment, and bam, your loved ones get the full 100% death benefit when the time comes.</p>
+<p><strong>FIRST-DAY COVERAGE</strong>: This burial insurance is as straightforward as it gets: no waiting around. You make the first payment, and bam, your loved ones get the full 100% death benefit when the time comes.</p>
 
 <p><strong>GUARANTEED ISSUE LIFE INSURANCE</strong>: No medical exams, no health questions, it’s the easy road to coverage regardless of your health history. But, fair warning, this convenience comes at a price, about 50% more expensive, and there’s a mandatory two-year wait.</p>
 
@@ -207,7 +207,7 @@ sidebar: true
 
 <ol>
 <li><strong>Consult with an Independent Insurance Agent: </strong>Find yourself a savvy, independent agent from Funeral Funds who knows the ins and outs of heart bypass survivors like you. They’ll break down all the burial insurance options, dish out price comparisons, and straight-up handle your queries.</li>
-<li><strong>Complete the Application Honestly</strong>: Pick a plan that fits your vibe and wallet. No fibs! Lay it all out, your health scoop, treatments, and any lifestyle tweaks you’ve made.</li>
+<li><strong>Complete the Application Honestly</strong>: Pick a plan that fits your vibe and wallet. No fibs! Lay it all out: your health scoop, treatments, and any lifestyle tweaks you’ve made.</li>
 <li><strong>Review and Confirm Policy Details</strong>: Carefully review the policy terms before you sign anything. Follow Funeral Funds instructions for submitting your application.</li>
 </ol>
 
@@ -219,7 +219,7 @@ sidebar: true
 
 <p><br><strong>Do I need to tell the insurance company about heart bypass surgery?</strong></p>
 
-<p>Big yes. It’s like trying to sneak a giraffe into a movie theater, they’ll find out, and it won’t be pretty. Not telling them could mean your policy evaporates faster than your New Year’s resolutions.</p>
+<p>Big yes. It’s like trying to sneak a giraffe into a movie theater: they’ll find out, and it won’t be pretty. Not telling them could mean your policy evaporates faster than your New Year’s resolutions.</p>
 
 <p><br><strong>How long does bypass surgery affect life insurance?</strong></p>
 

@@ -226,7 +226,7 @@ sidebar: true
 
 <p>You are not obliged to disclose your marijuana use if the insurance company does not ask about it. Some companies don’t ask about marijuana use; generally, they will only ask about your health and any medical conditions you have had in the past.</p>
 
-<p>If the insurance company asks about marijuana use, answer it honestly, do not lie. Tell them about your marijuana use, including the amount you use and the frequency of usage. Lying about marijuana use on an insurance application is a fraud, and you risk losing your benefits if you are dishonest on your application.</p>
+<p>If the insurance company asks about marijuana use, answer it honestly. Do not lie. Tell them about your marijuana use, including the amount you use and the frequency of usage. Lying about marijuana use on an insurance application is a fraud, and you risk losing your benefits if you are dishonest on your application.</p>
 
 <p id="RIGHTS-OF-A-MARIJUANA-USER"><br><strong>RIGHTS OF A MARIJUANA USER</strong></p>
 

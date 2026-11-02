@@ -200,7 +200,7 @@ sidebar: true
 
 <h2 id="best-burial-insurance"><strong>How to find the best burial insurance for dialysis patients?</strong></h2>
 
-<p>Don’t sweat it! Finding the right plan is like finding the best video game, there are tons out there, but only one is perfect for you.</p>
+<p>Don’t sweat it! Finding the right plan is like finding the best video game: there are tons out there, but only one is perfect for you.</p>
 
 <p>An independent life insurance agent from Funeral Funds is like your own personal insurance superhero. They know which insurance companies may offer “first-day coverage” for people with kidney stuff and dialysis. They’ll help you find the perfect plan, so you can relax and focus on feeling better.</p>
 

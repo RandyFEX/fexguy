@@ -53,7 +53,7 @@ sidebar: true
 
 <h2 id="what-is-heart-disease"><strong>What is heart disease?</strong></h2>
 
-<p>Heart disease isn’t just one thing; it’s a whole party of conditions crashing your heart. The star of the show? Coronary artery disease (CAD). It’s when your arteries get all gunked up with plaque, think fatty deposits clogging up the works. This narrows those arteries and slows down the blood flow to your heart.</p>
+<p>Heart disease isn’t just one thing; it’s a whole party of conditions crashing your heart. The star of the show? Coronary artery disease (CAD). It’s when your arteries get all gunked up with plaque: think fatty deposits clogging up the works. This narrows those arteries and slows down the blood flow to your heart.</p>
 
 <p>When blood flow gets choked off, say hello to chest pain (angina), shortness of breath, and other unpleasant surprises. And if things really go south with a complete blockage, that’s when a heart attack barges in, with part of your heart muscle getting starved of oxygen and calling it quits.</p>
 
@@ -205,7 +205,7 @@ sidebar: true
 
 <p>Did you get turned down before because of heart disease? No sweat. We’ll shop around with multiple life insurance companies that accept applicants with heart disease to get you that first-day coverage.</p>
 
-<p>While guaranteed acceptance life insurance isn’t our top pick, it’s there for you, no medical exam, no health questions, and you’re in, no matter your health.</p>
+<p>While guaranteed acceptance life insurance isn’t our top pick, it’s there for you: no medical exam, no health questions, and you’re in, no matter your health.</p>
 
 <h2 id="required-information"><strong>Information we need if you have heart disease</strong></h2>
 
