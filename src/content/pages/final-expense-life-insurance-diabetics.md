@@ -63,10 +63,10 @@ sidebar: true
 <p><strong>Most diabetics fit into one of four categories:</strong></p>
 
 <ol>
-<li><strong>First-Day Coverage</strong> – immediate protection from the first premium payment.</li>
-<li><strong>Modified Start</strong> – partial coverage that increases after the first year.</li>
-<li><strong>Two-Year Waiting Period</strong> – refund of premiums, plus a small interest payment if death occurs early.</li>
-<li><strong>Declined </strong>– extremely rare, reserved for uncontrolled or severe complications.</li>
+<li><strong>First-Day Coverage</strong>: immediate protection from the first premium payment.</li>
+<li><strong>Modified Start</strong>: partial coverage that increases after the first year.</li>
+<li><strong>Two-Year Waiting Period</strong>: refund of premiums, plus a small interest payment if death occurs early.</li>
+<li><strong>Declined </strong>: extremely rare, reserved for uncontrolled or severe complications.</li>
 </ol>
 
 <p>Which of these results you get depends mainly on complications such as amputation, nephropathy, neuropathy or retinopathy, and on your related health history.</p>

@@ -9,11 +9,11 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Fidelity Life Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Fidelity Life Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Fidelity Life can offer somewhat speedy approvals but often charges much higher premiums<br>• First-day coverage is possible, but only if your health qualifies, and it may take days to get approved<br>• Fidelity Life Guaranteed issue plan has a 3-year waiting period, not 2-year wait – this is terrible<br>• Coverage caps out around $35,000, which may or may not be enough for some seniors<br>• Not built for serious health issues or recent hospitalizations – 3-year wait – keep shopping!<br>• I can shop around for better burial insurance rates and underwriting with other companies</p>
+<p>• Fidelity Life can offer somewhat speedy approvals but often charges much higher premiums<br>• First-day coverage is possible, but only if your health qualifies, and it may take days to get approved<br>• Fidelity Life Guaranteed issue plan has a 3-year waiting period, not 2-year wait; this is terrible<br>• Coverage caps out around $35,000, which may or may not be enough for some seniors<br>• Not built for serious health issues or recent hospitalizations, 3-year wait, keep shopping!<br>• I can shop around for better burial insurance rates and underwriting with other companies</p>
 
 <p>Fidelity Life burial insurance is a whole life policy designed for smaller coverage amounts, usually $5,000 to $35,000, aimed at covering funeral costs. The big selling point is speed. You can sometimes get approved quickly, sometimes within days, without a medical exam. The problem is cost and limitations. Their best plan only works if you’re relatively healthy, and their guaranteed issue option makes you wait 3 years for full benefits. That’s longer than most companies and more expensive than many alternatives.</p>
 
@@ -60,17 +60,17 @@ sidebar: true
 
 <h2 id="pros-of-fidelity-life-burial-insurance"><strong>Pros of Fidelity Life burial insurance</strong></h2>
 
-<p><strong>Quick and easy application process</strong> – their electronic application system makes it faster to get coverage. </p>
+<p><strong>Quick and easy application process</strong>: their electronic application system makes it faster to get coverage. </p>
 
-<p><strong>Higher coverage amount </strong>– you can buy up to $35,000 face amount</p>
+<p><strong>Higher coverage amount </strong>: you can buy up to $35,000 face amount</p>
 
 <h2 id="cons-of-fidelity-life-burial-insurance"><strong>Cons of Fidelity Life burial insurance</strong></h2>
 
-<p><strong>Designed for people with minor health issues only</strong> – it is not suitable for applicants with significant medical conditions. </p>
+<p><strong>Designed for people with minor health issues only</strong>: it is not suitable for applicants with significant medical conditions. </p>
 
-<p><strong>Has a height and weight chart</strong> – you may not qualify if you are overweight</p>
+<p><strong>Has a height and weight chart</strong>: you may not qualify if you are overweight</p>
 
-<p><strong>RapiDecision guaranteed issue has a three-year waiting period</strong> – before the policy will pay for a natural cause of death. Most guaranteed issue plans have a two-year waiting period. </p>
+<p><strong>RapiDecision guaranteed issue has a three-year waiting period</strong>: before the policy will pay for a natural cause of death. Most guaranteed issue plans have a two-year waiting period. </p>
 
 <h2 id="fidelity-life-burial-insurance-products"><br><strong>Fidelity Life burial insurance products</strong></h2>
 
@@ -158,7 +158,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><br><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-does-fidelity-life-make-sense"><br><strong>When does Fidelity Life burial insurance make the most sense?</strong></h2>
 
@@ -509,7 +509,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><br><strong>What are the hours of operation for Fidelity Life</strong></p>
 
-<p>Monday through Friday, 8 a.m. – 5 p.m. CT</p>
+<p>Monday through Friday, 8 a.m. to 5 p.m. CT</p>
 
 <p><br><strong>What is Fidelity Life’s members’ login?</strong></p>
 

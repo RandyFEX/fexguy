@@ -56,7 +56,7 @@ sidebar: true
 
 <h2 id="colonial-penn-two-year-wait"><strong>Colonial Penn Two Year Wait </strong></h2>
 
-<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50–85 in most states that’s built mainly for funeral costs, not full early protection. Eligibility ages vary by state.</p>
+<p><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn</a> sells a no-exam whole life policy to people ages 50 to 85 in most states that’s built mainly for funeral costs, not full early protection. Eligibility ages vary by state.</p>
 
 <p><strong>States available</strong>: All except New York<br></p>
 
@@ -344,15 +344,15 @@ best value. Who do we recommend instead?</p>
 <h2 class="as-h5">Keep Reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP Life Insurance Review – Is It Worth It?</h3>
+<h3 class="as-h5">AARP Life Insurance Review: Is It Worth It?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review – Worst Insurance EVER?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage Review: Worst Insurance EVER?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">TruStage Burial Insurance Review: Pros &amp; Cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage Price Increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico Burial Insurance Review – Pros &amp; Cons</h3>
+<h3 class="as-h5">Lumico Burial Insurance Review: Pros &amp; Cons</h3>
 </a></div>
 
 <h2 class="as-h5">3 Comments</h2>
@@ -368,7 +368,7 @@ June 8, 2023 at 11:42 am
 <div class="comment-replies">
 <div class="comment" id="comment-32515">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Visit this page for quotes – <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Visit this page for quotes: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 September 14, 2023 at 8:08 am                    
 </div>

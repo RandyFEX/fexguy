@@ -87,9 +87,9 @@ sidebar: true
 <p><strong>Graded benefit or Guarantee Issue</strong></p>
 
 <ol>
-<li><strong><a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">No waiting period</a> –</strong>&#160;burial insurance with no waiting period is the preferred option for all funeral funding and burial plans, as it gives you immediate coverage with 100% payout of the funds from day one.</li>
-<li><strong>Partial waiting period –&#160;</strong> These plans give you immediate partial coverage. The first 12 months of coverage will be 30 to 40% of the face amount, the following 13 to 24 months will be 60 to 70% of the face amount, and after 24 months, you will have 100% coverage.</li>
-<li><strong>Two-year waiting period (Modified or Guaranteed&#160;Issue Policy) –</strong> The best plans offer immediate coverage if accidental death occurs, a return of premiums, 8 to 10% interest on these premiums if a death occurs in the first 24 months, and a guaranteed payout of funds after 24 months.</li>
+<li><strong><a href="/burial-insurance/life-insurance-with-no-waiting-period/" target="_blank" rel="noreferrer noopener">No waiting period</a>: </strong>&#160;burial insurance with no waiting period is the preferred option for all funeral funding and burial plans, as it gives you immediate coverage with 100% payout of the funds from day one.</li>
+<li><strong>Partial waiting period:&#160;</strong> These plans give you immediate partial coverage. The first 12 months of coverage will be 30 to 40% of the face amount, the following 13 to 24 months will be 60 to 70% of the face amount, and after 24 months, you will have 100% coverage.</li>
+<li><strong>Two-year waiting period (Modified or Guaranteed&#160;Issue Policy):</strong> The best plans offer immediate coverage if accidental death occurs, a return of premiums, 8 to 10% interest on these premiums if a death occurs in the first 24 months, and a guaranteed payout of funds after 24 months.</li>
 </ol>
 
 <p><strong>All insurance companies have different eligibility and waiting period criteria. Here is one example of insurance company waiting period:</strong></p>

@@ -75,16 +75,16 @@ source: "live"
 <p><strong>There are three basic types of plans available:</strong></p>
 
 <ul>
-<li><strong>Level Coverage</strong> – Best pricing &amp; 1st-day coverage (RECOMMENDED)</li>
-<li><strong>Modified Coverage</strong> – Expensive pricing and coverage phased in over 1 to 3 years (NOT RECOMMENDED)</li>
-<li><strong>Graded Coverage</strong> – Expensive pricing and mandatory 2-year waiting period (NOT RECOMMENDED)</li>
+<li><strong>Level Coverage</strong>: Best pricing &amp; 1st-day coverage (RECOMMENDED)</li>
+<li><strong>Modified Coverage</strong>: Expensive pricing and coverage phased in over 1 to 3 years (NOT RECOMMENDED)</li>
+<li><strong>Graded Coverage</strong>: Expensive pricing and mandatory 2-year waiting period (NOT RECOMMENDED)</li>
 </ul>
 
 <p><strong>BEST PRICING: Level Coverage</strong> is the <strong>FIRST-DAY COVERAGE</strong> we help people with at Funeral Funds. This coverage starts from the very first day and will pay out for any kind of death from the very first day. This is the best and lowest-priced insurance product you can purchase.</p>
 
-<p><strong>BAD PRICING: Modified Coverage</strong> – These plans are very expensive; even more expensive than graded (2-year wait) coverage plans in many cases. We don’t recommend these plans because some of them won’t get you full coverage for up to 3 years.</p>
+<p><strong>BAD PRICING: Modified Coverage</strong>: These plans are very expensive; even more expensive than graded (2-year wait) coverage plans in many cases. We don’t recommend these plans because some of them won’t get you full coverage for up to 3 years.</p>
 
-<p><strong>WORST PRICING: Graded Coverage</strong> – These expensive plans are also called “Guaranteed Issue Life Insurance” and are most often sold by television commercials (they call it “limited benefit period” life insurance) and through junk mail they send to your mailbox every week. These plans place your family and loved ones at great risk in the first two years when no death benefit will be paid. </p>
+<p><strong>WORST PRICING: Graded Coverage</strong>: These expensive plans are also called “Guaranteed Issue Life Insurance” and are most often sold by television commercials (they call it “limited benefit period” life insurance) and through junk mail they send to your mailbox every week. These plans place your family and loved ones at great risk in the first two years when no death benefit will be paid. </p>
 
 <h2 id="h-internet-and-tv-advertisements" class="as-h3"><br><strong>Internet and TV advertisements?</strong></h2>
 

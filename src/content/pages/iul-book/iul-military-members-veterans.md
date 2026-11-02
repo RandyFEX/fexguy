@@ -196,7 +196,7 @@ sidebar: true
 
 <p>Term life insurance is straightforward. It covers you for a set number of years, usually 10, 20, or 30, and pays your family a tax-free benefit if you pass away during that period. Premiums stay level for the full term, and coverage ends when the contract expires.</p>
 
-<p>It’s ideal for veterans who want affordable protection while raising a family, paying off a mortgage, or planning for retirement income gaps. There’s no cash value, no market risk, and no hidden charges – just simple, guaranteed protection for the years that matter most.</p>
+<p>It’s ideal for veterans who want affordable protection while raising a family, paying off a mortgage, or planning for retirement income gaps. There’s no cash value, no market risk, and no hidden charges, just simple, guaranteed protection for the years that matter most.</p>
 
 <p>IULs often reward the life insurance company, not the policyholder. Simpler plans pay, and you’re covered, and your family gets what was promised.</p>
 

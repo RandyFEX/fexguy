@@ -11,8 +11,9 @@ import { hubNavPlugin } from './src/lib/hub-nav.ts';
 const SITE_URL = 'https://funeralfunds.com';
 
 // Fully static output: every page is pre-rendered HTML served from Vercel's
-// CDN. No adapter, no server functions — the single biggest lever for Core
-// Web Vitals, and nothing to maintain at runtime.
+// CDN. No adapter: the single biggest lever for Core Web Vitals. The only
+// server code is the separate Vercel Function api/health-search.js (the
+// health-question search API); it does not affect any page.
 
 // Pages marked `noindex: true`, `draft: true`, or `sitemap: false` in their
 // frontmatter must not appear in the sitemap. The sitemap integration can't read content
@@ -76,8 +77,15 @@ export default defineConfig({
         const path = new URL(page).pathname;
         // /search/ is an internal search-results page (noindex, follow).
         // /facebook/, /free-quote/ and /help/ are noindex landing pages (src/pages/).
+        // /health-question-search-preview/ is a non-indexed review page.
         return (
-          !path.startsWith('/404') && path !== '/search/' && path !== '/facebook/' && path !== '/free-quote/' && path !== '/help/' && !excluded.has(path)
+          !path.startsWith('/404') &&
+          path !== '/search/' &&
+          path !== '/facebook/' &&
+          path !== '/free-quote/' &&
+          path !== '/help/' &&
+          path !== '/health-question-search-preview/' &&
+          !excluded.has(path)
         );
       },
     }),

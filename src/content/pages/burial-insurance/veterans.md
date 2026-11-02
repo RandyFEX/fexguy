@@ -52,10 +52,10 @@ sidebar: true
 <p>Your timeframe after separation from the military will look like this:</p>
 
 <ul>
-<li>During service – you will be automatically covered with SGLI. You can convert SGLI to VGLI without medical underwriting.</li>
-<li>120-240 days – but you have the option to convert SGLI to VGLI without evidence of good health or medical underwriting.</li>
-<li>240-480 days – but you can convert your SGLI to VGLI.&#160; You need to answer health questions to do this.</li>
-<li>485 days onwards – Too late to convert your SGLI to VGLI. You are no longer covered by SGLI and can’t convert to VGLI. Private life insurance is your only option for insurance coverage.</li>
+<li>During service: you will be automatically covered with SGLI. You can convert SGLI to VGLI without medical underwriting.</li>
+<li>120-240 days: but you have the option to convert SGLI to VGLI without evidence of good health or medical underwriting.</li>
+<li>240-480 days: but you can convert your SGLI to VGLI.&#160; You need to answer health questions to do this.</li>
+<li>485 days onwards: Too late to convert your SGLI to VGLI. You are no longer covered by SGLI and can’t convert to VGLI. Private life insurance is your only option for insurance coverage.</li>
 </ul>
 
 <h2 id="burial-insurance-for-veterans"><br><strong>Burial insurance for veterans</strong></h2>
@@ -77,21 +77,21 @@ sidebar: true
 <h2 id="best-features-of-burial-insurance-for-veterans"><br><strong>Best features of burial insurance for veterans</strong></h2>
 
 <ol>
-<li><strong>Immediate approval</strong> – there is fast approval for burial insurance for veterans. The approval time can generally range from 15 minutes to a few business days. The time it takes to be approved depends on the company you apply with, but most insurance companies offer instant approval over the phone.</li>
-<li>No medical exam – all insurance companies offering burial insurance for veterans will not require you to undergo a medical exam. You will never need to give a blood or urine sample or provide your medical records. The application process is simplified; you only need to answer a few health questions. Some plans don’t even ask health questions on the application.</li>
-<li>Lenient underwriting – Veterans with pre-existing medical conditions like PTSD could still qualify for burial insurance. There is lenient underwriting, and applicants only need to answer a few health questions. This type of burial insurance policy was designed to accept the risk of some fairly major health issues. Despite some problematic illnesses, you can still get a policy!</li>
-<li>No health questions – Guaranteed issue policy won’t ask health questions, and applicants with severe medical conditions can qualify. Guaranteed acceptance whole life insurance is best for veterans with a disability or severe health conditions.</li>
-<li>Permanent coverage – burial insurance for veterans are whole life insurance policies that will last your whole life. You have permanent coverage, and the policy will not expire at any age. The death benefit will not decrease, and the premium you pay will never increase.</li>
-<li>Fast death benefit payout – there is a quicker claims payout with burial insurance for veterans. The claim will be paid to your beneficiaries within a week after the company receives the proper paperwork.</li>
-<li>Portability – the payout is paid in cash to the beneficiary upon the insured’s death (not to a funeral home). It does not matter where you are…the insurance company will pay even if you pass away in another country. Your beneficiary will receive 100% face amount of the policy tax-free and can be used to pay final expenses or anything they see fit.</li>
-<li>Accumulates cash value – burial insurance for veterans is a whole life policy with a cash value component that grows over time. You can use the cash value for financial emergencies or pay premiums to ensure your policy will never lapse from non-payment.</li>
-<li>Small coverage options – burial insurance for veterans is offered at a small face value. If you want to be cremated, you only need between $2,000 and $5,000 in coverage. You can buy as little as $2,000 or as much as you need. This is a fantastic feature of burial insurance because it allows you to buy what you need to cover your end-of-life expenses.</li>
+<li><strong>Immediate approval</strong>: there is fast approval for burial insurance for veterans. The approval time can generally range from 15 minutes to a few business days. The time it takes to be approved depends on the company you apply with, but most insurance companies offer instant approval over the phone.</li>
+<li>No medical exam: all insurance companies offering burial insurance for veterans will not require you to undergo a medical exam. You will never need to give a blood or urine sample or provide your medical records. The application process is simplified; you only need to answer a few health questions. Some plans don’t even ask health questions on the application.</li>
+<li>Lenient underwriting: Veterans with pre-existing medical conditions like PTSD could still qualify for burial insurance. There is lenient underwriting, and applicants only need to answer a few health questions. This type of burial insurance policy was designed to accept the risk of some fairly major health issues. Despite some problematic illnesses, you can still get a policy!</li>
+<li>No health questions: Guaranteed issue policy won’t ask health questions, and applicants with severe medical conditions can qualify. Guaranteed acceptance whole life insurance is best for veterans with a disability or severe health conditions.</li>
+<li>Permanent coverage: burial insurance for veterans are whole life insurance policies that will last your whole life. You have permanent coverage, and the policy will not expire at any age. The death benefit will not decrease, and the premium you pay will never increase.</li>
+<li>Fast death benefit payout: there is a quicker claims payout with burial insurance for veterans. The claim will be paid to your beneficiaries within a week after the company receives the proper paperwork.</li>
+<li>Portability: the payout is paid in cash to the beneficiary upon the insured’s death (not to a funeral home). It does not matter where you are…the insurance company will pay even if you pass away in another country. Your beneficiary will receive 100% face amount of the policy tax-free and can be used to pay final expenses or anything they see fit.</li>
+<li>Accumulates cash value: burial insurance for veterans is a whole life policy with a cash value component that grows over time. You can use the cash value for financial emergencies or pay premiums to ensure your policy will never lapse from non-payment.</li>
+<li>Small coverage options: burial insurance for veterans is offered at a small face value. If you want to be cremated, you only need between $2,000 and $5,000 in coverage. You can buy as little as $2,000 or as much as you need. This is a fantastic feature of burial insurance because it allows you to buy what you need to cover your end-of-life expenses.</li>
 </ol>
 
 <p>Most burial insurance companies offer a maximum face amount of $25,000 to $50,000. If you want to buy more than $50,000, you can purchase multiple policies to get the total face amount you need.</p>
 
 <ol>
-<li><strong>Many insurance providers offer</strong> burial insurance to veterans – more and more insurance companies are now providing coverage to veterans. They are all competing for your business, so you can choose the best company offering the best price at the best value.</li>
+<li><strong>Many insurance providers offer</strong> burial insurance to veterans: more and more insurance companies are now providing coverage to veterans. They are all competing for your business, so you can choose the best company offering the best price at the best value.</li>
 </ol>
 
 <h2 id="burial-insurance-options-for-veterans"><br><strong>Burial insurance options for veterans</strong></h2>
@@ -135,9 +135,9 @@ sidebar: true
 <p>This policy is graded because it does not have immediate coverage. You will need to wait two years before your policy will pay the full death benefit. The death benefit grows in increments. Let’s say you purchased a $10,000 policy.</p>
 
 <ul>
-<li>If you die within the 1st year – your beneficiary will receive a 30% death benefit</li>
-<li>If you die within the 2nd year – your beneficiary will receive 70% of the death benefit.</li>
-<li>If you die within the 3rd year – your beneficiary will receive 100% of the death benefit</li>
+<li>If you die within the 1st year: your beneficiary will receive a 30% death benefit</li>
+<li>If you die within the 2nd year: your beneficiary will receive 70% of the death benefit.</li>
+<li>If you die within the 3rd year: your beneficiary will receive 100% of the death benefit</li>
 </ul>
 
 <p>A graded death benefit plan has a higher coverage amount than guaranteed acceptance life insurance. The coverage is usually capped at $50,000 compared with $25,000 for guaranteed issue. It is also a bit more expensive than traditional life insurance policies but less costly than guaranteed issue whole life insurance because there are some health questions to qualify.</p>

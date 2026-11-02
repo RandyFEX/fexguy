@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Security National Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Security National Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -60,26 +60,26 @@ sidebar: true
 
 <h2 id="pros-of-security-national-burial-insurance"><strong>Pros of Security National burial insurance</strong></h2>
 
-<p><strong>Easy application process</strong> – can be done over the phone or online</p>
+<p><strong>Easy application process</strong>: can be done over the phone or online</p>
 
-<p><strong>Good pricing for smokers</strong> – who are 70 years and older</p>
+<p><strong>Good pricing for smokers</strong>: who are 70 years and older</p>
 
-<p><strong>Coverage available</strong> – to 86-90 years old</p>
+<p><strong>Coverage available</strong>: to 86-90 years old</p>
 
 <h2 id="cons-of-security-national-burial-insurance"><strong>Cons of Security National burial insurance</strong></h2>
 
-<p><strong>Have</strong> a <strong>height and weight chart</strong> – you may be disqualified if you are overweight, obese, or morbidly obese.</p>
+<p><strong>Have</strong> a <strong>height and weight chart</strong>: you may be disqualified if you are overweight, obese, or morbidly obese.</p>
 
-<p><strong>Not diabetic-friendly</strong> – if you currently use insulin, you may only qualify for the standard or modified plan, depending on your daily units, when you started insulin, and any complications</p>
+<p><strong>Not diabetic-friendly</strong>: if you currently use insulin, you may only qualify for the standard or modified plan, depending on your daily units, when you started insulin, and any complications</p>
 
 <h2 id="security-national-burial-insurance-products"><br><strong>Security National burial insurance products </strong></h2>
 
 <p><strong>Security National calls its burial insurance products “Simple Security.” The Simple Security whole life insurance has three plans:</strong></p>
 
 <ol>
-<li>&#160; Preferred – first-day full coverage</li>
-<li>&#160; Standard – first-day full coverage</li>
-<li>&#160; Modified – <strong>two-year waiting period</strong></li>
+<li>&#160; Preferred: first-day full coverage</li>
+<li>&#160; Standard: first-day full coverage</li>
+<li>&#160; Modified: <strong>two-year waiting period</strong></li>
 </ol>
 
 <p>The type of plan you will be eligible for is based on your answer to the health questions on the application and your prescription history.</p>
@@ -125,8 +125,8 @@ sidebar: true
 <p><strong>Face Amounts Available</strong>:</p>
 
 <ul>
-<li>Ages 40–75 maximum of $35,000</li>
-<li>Ages 76–80 maximum of $15,000</li>
+<li>Ages 40 to 75 maximum of $35,000</li>
+<li>Ages 76 to 80 maximum of $15,000</li>
 <li>Ages 81-90 maximum of $10,000</li>
 </ul>
 
@@ -149,8 +149,8 @@ sidebar: true
 <p><strong>Face Amounts Available:</strong></p>
 
 <ul>
-<li>Ages 40–75 maximum of $25,000</li>
-<li>Ages 76–80 maximum of $15,000</li>
+<li>Ages 40 to 75 maximum of $25,000</li>
+<li>Ages 76 to 80 maximum of $15,000</li>
 <li>Ages 81-90 maximum of $10,000</li>
 </ul>
 
@@ -171,8 +171,8 @@ sidebar: true
 <p><strong>Face Amounts Available:</strong></p>
 
 <ul>
-<li>Ages 40–75 maximum of $25,000</li>
-<li>Ages 76–80 maximum of $15,000</li>
+<li>Ages 40 to 75 maximum of $25,000</li>
+<li>Ages 76 to 80 maximum of $15,000</li>
 <li>Ages 81-85 maximum of $10,000</li>
 </ul>
 
@@ -199,15 +199,15 @@ sidebar: true
 
 <h2 id="security-national-burial-insurance-riders"><br><strong>Security National burial insurance riders</strong></h2>
 
-<p><strong>Accidental Death Benefit Rider – </strong>doubles the death benefit amount if you die from an accident.</p>
+<p><strong>Accidental Death Benefit Rider: </strong>doubles the death benefit amount if you die from an accident.</p>
 
-<p><strong>Dependent Child Rider – </strong>you can get coverage for your children or legally adopted children 0-17 years old</p>
+<p><strong>Dependent Child Rider: </strong>you can get coverage for your children or legally adopted children 0-17 years old</p>
 
 <p><br></p>
 
 <p><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-does-security-national-make-the-most-sense"><br><br><strong>When does Security National burial insurance make the most sense? </strong></h2>
 

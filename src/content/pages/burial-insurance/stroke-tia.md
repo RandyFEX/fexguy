@@ -42,18 +42,18 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with stroke or TIA they may approve.</p>
 
 <ul>
-<li><strong>Aetna Modified</strong> – Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aetna Standard Level</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aflac Modified</strong> – Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aflac Standard Level</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Family Benefit Life Decline</strong> – Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
-<li><strong>Family Benefit Life Level</strong> – During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for stroke (excluding Transient Ischemic Attack/TIA/mini-stroke) or paralysis?</li>
-<li><strong>Liberty Bankers Life Preferred</strong> – Have you, the Proposed Insured, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for epileptic seizures or a Transient Ischemic Attack (TIA/ministroke)?</li>
-<li><strong>Mutual of Omaha Level</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
-<li><strong>Mutual of Omaha Level</strong> – In the past 2 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Stroke or Transient Ischemic Attack (TIA)?</li>
-<li><strong>Trinity Life Decline</strong> – Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
-<li><strong>Trinity Life Level</strong> – During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
+<li><strong>Aetna Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aetna Standard Level</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aflac Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aflac Standard Level</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Family Benefit Life Decline</strong>: Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
+<li><strong>Family Benefit Life Level</strong>: During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for stroke (excluding Transient Ischemic Attack/TIA/mini-stroke) or paralysis?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for epileptic seizures or a Transient Ischemic Attack (TIA/ministroke)?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 2 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Stroke or Transient Ischemic Attack (TIA)?</li>
+<li><strong>Trinity Life Decline</strong>: Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
+<li><strong>Trinity Life Level</strong>: During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
 </ul>
 
 <h3>Stroke &amp; TIA underwriting basics</h3>
@@ -87,16 +87,16 @@ sidebar: true
 <p>Stroke and TIA disrupt blood flow to the brain, causing tissue injury and neurological damage that can impair movement, speech, and cognition, and these resulting complications can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Physical weakness or paralysis</strong> – Muscle control loss limits mobility, balance, and physical work capacity.</li>
-<li><strong>Speech and language problems</strong> – Aphasia and slurred speech interfere with communication and job performance.</li>
-<li><strong>Cognitive impairment</strong> – Memory loss, slowed thinking, and poor judgment affect daily decision-making.</li>
-<li><strong>Vision problems</strong> – Partial vision loss or visual field defects increase accident and safety risk.</li>
-<li><strong>Swallowing difficulties</strong>&#160;– Dysphagia raises the risk of choking and aspiration pneumonia.</li>
-<li><strong>Emotional and behavioral changes</strong> – Depression, anxiety, irritability, and mood swings are common.</li>
-<li><strong>Fatigue</strong> – Post-stroke exhaustion limits stamina even with mild physical effort.</li>
-<li><strong>Increased fall risk</strong> – Balance and coordination problems lead to higher injury risk.</li>
-<li><strong>Recurrent stroke risk</strong> – Prior stroke or TIA significantly increases the chance of another event.</li>
-<li><strong>Loss of independence</strong> – Ongoing impairments may require assistance with daily activities and work adjustments.</li>
+<li><strong>Physical weakness or paralysis</strong>: Muscle control loss limits mobility, balance, and physical work capacity.</li>
+<li><strong>Speech and language problems</strong>: Aphasia and slurred speech interfere with communication and job performance.</li>
+<li><strong>Cognitive impairment</strong>: Memory loss, slowed thinking, and poor judgment affect daily decision-making.</li>
+<li><strong>Vision problems</strong>: Partial vision loss or visual field defects increase accident and safety risk.</li>
+<li><strong>Swallowing difficulties</strong>: Dysphagia raises the risk of choking and aspiration pneumonia.</li>
+<li><strong>Emotional and behavioral changes</strong>: Depression, anxiety, irritability, and mood swings are common.</li>
+<li><strong>Fatigue</strong>: Post-stroke exhaustion limits stamina even with mild physical effort.</li>
+<li><strong>Increased fall risk</strong>: Balance and coordination problems lead to higher injury risk.</li>
+<li><strong>Recurrent stroke risk</strong>: Prior stroke or TIA significantly increases the chance of another event.</li>
+<li><strong>Loss of independence</strong>: Ongoing impairments may require assistance with daily activities and work adjustments.</li>
 </ul>
 
 <h2>Understanding stroke and TIA policy types</h2>
@@ -115,7 +115,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your final price depends on which A-rated carrier fits your specific health history.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

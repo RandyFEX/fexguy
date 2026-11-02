@@ -62,7 +62,7 @@ sidebar: true
 
 <p>How long your defibrillator has been hanging out in your chest is a big deal when it comes to your insurance options.<br><br><strong>DEFIBRILLATOR IMPLANTED OVER 2 YEARS AGO</strong></p>
 
-<p>An implantable cardioverter defibrillator (ICD) isn’t just a mouthful – it’s your lifeline. These gadgets are implanted in your chest or abdomen to save you from sudden cardiac arrest. Yep, it’s a big deal and counts as circulatory surgery.</p>
+<p>An implantable cardioverter defibrillator (ICD) isn’t just a mouthful; it’s your lifeline. These gadgets are implanted in your chest or abdomen to save you from sudden cardiac arrest. Yep, it’s a big deal and counts as circulatory surgery.</p>
 
 <p>If your ICD has been in place for over 24 months, congrats! You can get a level death benefit plan with first-day coverage from a bunch of burial insurance companies.</p>
 
@@ -86,7 +86,7 @@ sidebar: true
 
 <p>Absolutely not! No medical exams required for getting burial insurance with a defibrillator.</p>
 
-<p>You’ll just need to answer a few straightforward questions about your health. It’s smooth sailing from there – no medical records, no blood, no urine samples.</p>
+<p>You’ll just need to answer a few straightforward questions about your health. It’s smooth sailing from there, no medical records, no blood, no urine samples.</p>
 
 <p>You’ll get the green light from the insurance company, often in a matter of minutes!</p>
 
@@ -94,9 +94,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of digging into your health:</strong></p>
 
-<p><strong>FIRST</strong> – They’ll hit you with a bunch of health questions. Your answers will make or break your eligibility.</p>
+<p><strong>FIRST</strong>: They’ll hit you with a bunch of health questions. Your answers will make or break your eligibility.</p>
 
-<p><strong>SECOND</strong> – They’ll snoop through your prescription history electronically to see what’s really going on with your health.</p>
+<p><strong>SECOND</strong>: They’ll snoop through your prescription history electronically to see what’s really going on with your health.</p>
 
 <p>A defibrillator implant is considered a <a href="/burial-insurance/heart-surgery/" target="_blank" rel="noreferrer noopener">circulatory surgery</a>. Most burial insurance companies are nosy about recent circulatory surgeries, usually within the last 24 months. It’s rare for them to care about surgeries beyond two years ago.</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 <li>Type of policy</li>
 </ul>
 
-<p>Hunting for the best life insurance rates with a defibrillator? Partner up with the top insurance matchmaker in town – Funeral Funds. We’ll scour the market, compare rates from various carriers, and find your perfect insurance match.</p>
+<p>Hunting for the best life insurance rates with a defibrillator? Partner up with the top insurance matchmaker in town: Funeral Funds. We’ll scour the market, compare rates from various carriers, and find your perfect insurance match.</p>
 
 <p><strong>Check out these sample rates for a fabulous 60-year-old female with a defibrillator:</strong></p>
 
@@ -143,23 +143,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies in some states – Level – 1st-Day Coverage</td>
+<td>Certain companies in some states: Level, 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -176,23 +176,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies in some states – Level – 1st-Day Coverage</td>
+<td>Certain companies in some states: Level, 1st-Day Coverage</td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -230,7 +230,7 @@ sidebar: true
 
 <p><br><strong>What heart conditions require a defibrillator?</strong></p>
 
-<p>A defibrillator is your heart’s best friend when it stops beating, a condition known as cardiac arrest. But it’s not just for that – it also zaps other pesky heart issues like ventricular tachycardia or fibrillation back into line.</p>
+<p>A defibrillator is your heart’s best friend when it stops beating, a condition known as cardiac arrest. But it’s not just for that; it also zaps other pesky heart issues like ventricular tachycardia or fibrillation back into line.</p>
 
 <p><br><strong>Is a defibrillator implant considered surgery in life insurance?</strong></p>
 

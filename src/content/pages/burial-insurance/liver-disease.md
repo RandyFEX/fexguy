@@ -75,11 +75,11 @@ sidebar: true
 
 <h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance available to people with liver disease?</strong></h2>
 
-<p><strong>First-Day Coverage</strong> – No medical exam? No problem! This policy just needs you to answer a few health questions, and boom – you’re covered immediately with no waiting period.</p>
+<p><strong>First-Day Coverage</strong>: No medical exam? No problem! This policy just needs you to answer a few health questions, and boom, you’re covered immediately with no waiting period.</p>
 
-<p><strong>Guaranteed Issue Life Insurance</strong> – Forget the medical exams and health questions altogether! Guaranteed issue life insurance is your go-to if first-day coverage is playing hard to get due to serious health issues.</p>
+<p><strong>Guaranteed Issue Life Insurance</strong>: Forget the medical exams and health questions altogether! Guaranteed issue life insurance is your go-to if first-day coverage is playing hard to get due to serious health issues.</p>
 
-<p><strong>Now, here’s the catch</strong> – the guaranteed issue comes with a two-year waiting period before the full death benefit kicks in. If you happen to pass away during this time, they’ll just return the premiums you’ve paid plus a sweet 7-10% interest (depending on the company).</p>
+<p><strong>Now, here’s the catch</strong>: the guaranteed issue comes with a two-year waiting period before the full death benefit kicks in. If you happen to pass away during this time, they’ll just return the premiums you’ve paid plus a sweet 7-10% interest (depending on the company).</p>
 
 <h2 id="best-option"><strong>What is my best insurance option if I have liver disease?</strong></h2>
 
@@ -87,13 +87,13 @@ sidebar: true
 
 <p><strong>Let’s break down the most common liver diseases and the best policy options you’ll likely qualify for:</strong></p>
 
-<p><strong>FATTY LIVER –&#160;</strong>Got some extra fat in your liver? Whether it’s from hitting the bottle too hard or other reasons, you can still get first-day coverage.<br><br><strong>HEPATITIS A – </strong>This short-term infection doesn’t stick around long. If you’ve got Hep A, first-day coverage is on the table for you.<br><strong><br>HEPATITIS B –&#160;</strong>Starting as an acute infection, Hep B can turn into a chronic issue. If you’re still battling the virus or getting treatment, some insurance companies will still hook you up with first-day coverage.<br><br><strong>HEPATITIS C – </strong>Hep C can be a short-term visitor or an unwelcome long-term guest. If you’re in treatment or cured, you’re in luck – first-day coverage with no waiting period is within reach.<br><strong><br>LIVER CIRRHOSIS – </strong>Cirrhosis is serious business, often caused by chronic alcoholism, hepatitis, cystic fibrosis, fat buildup, bile duct issues, or medications. Depending on your state, you might qualify for first-day coverage.<br><strong><br>LIVER CANCER – </strong>If you’ve beaten liver cancer and are now cancer-free, some insurance companies will offer you first-day coverage.<br><br><strong>LIVER TRANSPLANT – </strong>Had a liver transplant over five years ago? You could qualify for first-day coverage. If it’s been less than five years, look into guaranteed issue life insurance.</p>
+<p><strong>FATTY LIVER:&#160;</strong>Got some extra fat in your liver? Whether it’s from hitting the bottle too hard or other reasons, you can still get first-day coverage.<br><br><strong>HEPATITIS A: </strong>This short-term infection doesn’t stick around long. If you’ve got Hep A, first-day coverage is on the table for you.<br><strong><br>HEPATITIS B:&#160;</strong>Starting as an acute infection, Hep B can turn into a chronic issue. If you’re still battling the virus or getting treatment, some insurance companies will still hook you up with first-day coverage.<br><br><strong>HEPATITIS C: </strong>Hep C can be a short-term visitor or an unwelcome long-term guest. If you’re in treatment or cured, you’re in luck: first-day coverage with no waiting period is within reach.<br><strong><br>LIVER CIRRHOSIS: </strong>Cirrhosis is serious business, often caused by chronic alcoholism, hepatitis, cystic fibrosis, fat buildup, bile duct issues, or medications. Depending on your state, you might qualify for first-day coverage.<br><strong><br>LIVER CANCER: </strong>If you’ve beaten liver cancer and are now cancer-free, some insurance companies will offer you first-day coverage.<br><br><strong>LIVER TRANSPLANT: </strong>Had a liver transplant over five years ago? You could qualify for first-day coverage. If it’s been less than five years, look into guaranteed issue life insurance.</p>
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
 <p>Nope! No medical exams are needed to get burial insurance with liver disease.</p>
 
-<p>When you apply, your agent will just ask you a few basic health questions. The application process is a breeze – no need to dig up medical records or deal with blood and urine samples. Most of the time, you’ll get the green light from the insurance company within minutes!</p>
+<p>When you apply, your agent will just ask you a few basic health questions. The application process is a breeze: no need to dig up medical records or deal with blood and urine samples. Most of the time, you’ll get the green light from the insurance company within minutes!</p>
 
 <h2 id="impact-of-liver-disease"><strong>What is the impact of liver disease on insurance eligibility?</strong></h2>
 
@@ -101,7 +101,7 @@ sidebar: true
 
 <p>While it guaranteed issue promises you coverage, it’s pricier than first-day coverage and comes with a two-year waiting period.</p>
 
-<p>So, keep in mind – liver disease can affect your options, but there’s always a way to get covered!</p>
+<p>So, keep in mind: liver disease can affect your options, but there’s always a way to get covered!</p>
 
 <h2 id="liver-disease-underwriting"><strong>Burial insurance underwriting for liver disease</strong></h2>
 
@@ -145,23 +145,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage</td>
+<td>Certain companies: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -178,23 +178,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage </td>
+<td>Certain companies: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -209,9 +209,9 @@ sidebar: true
 <h2 id="application-process"><strong>How to apply for life insurance if you have liver disease</strong></h2>
 
 <ol>
-<li><strong>Consult with Independent Agents</strong> – Work with independent insurance agents from Funeral Funds who specialize in liver disease underwriting. We’ll break down your options, compare quotes, and help you pick the best policy for your situation.</li>
-<li><strong>Complete the Application Honestly</strong> –&#160;When filling out your life insurance application, don’t hold back. Be upfront about your liver disease history, treatments, and any lifestyle changes. Honesty guarantees a fair assessment and the right coverage.</li>
-<li><strong>Review and Confirm Policy Details</strong> –&#160;Give those finalized policy terms a thorough review before you say yes. Make sure the coverage fits your needs and your budget.</li>
+<li><strong>Consult with Independent Agents</strong>: Work with independent insurance agents from Funeral Funds who specialize in liver disease underwriting. We’ll break down your options, compare quotes, and help you pick the best policy for your situation.</li>
+<li><strong>Complete the Application Honestly</strong>:&#160;When filling out your life insurance application, don’t hold back. Be upfront about your liver disease history, treatments, and any lifestyle changes. Honesty guarantees a fair assessment and the right coverage.</li>
+<li><strong>Review and Confirm Policy Details</strong>:&#160;Give those finalized policy terms a thorough review before you say yes. Make sure the coverage fits your needs and your budget.</li>
 </ol>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>

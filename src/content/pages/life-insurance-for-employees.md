@@ -115,10 +115,10 @@ sidebar: true
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e"><strong>Some of the pros of employer-provided life insurance include:</strong></p>
 
 <ul>
-<li><strong>Free or subsidized life insurance</strong> – Employers typically pay all or subsidize a portion of the life insurance premium, making it a less expensive option for employees.</li>
-<li><strong>Automatic enrollment</strong> – Employees are often automatically enrolled in employer-provided life insurance, which makes it easy to get coverage.</li>
-<li><strong>Convenient</strong> – Employer-provided life insurance is typically easy to sign up for and doesn’t require a medical exam.</li>
-<li><strong>Guaranteed Eligibility</strong> – Employer-provided life insurance typically doesn’t require a medical exam, and employees with significant medical conditions can qualify.</li>
+<li><strong>Free or subsidized life insurance</strong>: Employers typically pay all or subsidize a portion of the life insurance premium, making it a less expensive option for employees.</li>
+<li><strong>Automatic enrollment</strong>: Employees are often automatically enrolled in employer-provided life insurance, which makes it easy to get coverage.</li>
+<li><strong>Convenient</strong>: Employer-provided life insurance is typically easy to sign up for and doesn’t require a medical exam.</li>
+<li><strong>Guaranteed Eligibility</strong>: Employer-provided life insurance typically doesn’t require a medical exam, and employees with significant medical conditions can qualify.</li>
 </ul>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e"><strong>CONS:</strong></p>
@@ -126,13 +126,13 @@ sidebar: true
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e"><strong>Some of the cons of employer-provided life insurance include:</strong></p>
 
 <ul>
-<li><strong>Coverage is rarely enough</strong> – The death benefit of an employer-provided life insurance policy is usually capped at around one-year replacement of your income, which may not be enough to cover all the expenses and debt you will leave behind. </li>
-<li><strong>Coverage is tied to your job</strong> – If you leave, you will usually lose your employer-provided life insurance coverage.</li>
-<li><strong>Premiums may increase</strong> – The employer typically pays the employer-provided life insurance policy premium. However, the premium can increase if the insurance company raises rates or the employee’s health status changes.</li>
-<li><strong>Coverage can expire </strong>– Employer-provided life insurance policies typically have a term of five, ten, 20, or 30 years. If you don’t die during the policy term, your beneficiaries won’t receive a death benefit.</li>
-<li><strong>Not portable</strong> – Employer-provided life insurance policies are not portable, so you can’t take the policy with you if you leave your job.</li>
-<li><strong>Limited option</strong> – Employer-provided life insurance typically only offers term life insurance.</li>
-<li><strong>No cash value</strong> – Employer-provided life insurance does not have a cash value and cannot be used as collateral for a loan.</li>
+<li><strong>Coverage is rarely enough</strong>: The death benefit of an employer-provided life insurance policy is usually capped at around one-year replacement of your income, which may not be enough to cover all the expenses and debt you will leave behind. </li>
+<li><strong>Coverage is tied to your job</strong>: If you leave, you will usually lose your employer-provided life insurance coverage.</li>
+<li><strong>Premiums may increase</strong>: The employer typically pays the employer-provided life insurance policy premium. However, the premium can increase if the insurance company raises rates or the employee’s health status changes.</li>
+<li><strong>Coverage can expire </strong>: Employer-provided life insurance policies typically have a term of five, ten, 20, or 30 years. If you don’t die during the policy term, your beneficiaries won’t receive a death benefit.</li>
+<li><strong>Not portable</strong>: Employer-provided life insurance policies are not portable, so you can’t take the policy with you if you leave your job.</li>
+<li><strong>Limited option</strong>: Employer-provided life insurance typically only offers term life insurance.</li>
+<li><strong>No cash value</strong>: Employer-provided life insurance does not have a cash value and cannot be used as collateral for a loan.</li>
 </ul>
 
 <h2 id="is-employer-provided-life-insurance-enough"><br><strong>Is employer-provided life insurance enough?</strong></h2>
@@ -202,11 +202,11 @@ sidebar: true
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e"><strong>Your employer-provided life insurance may be right for you if:</strong></p>
 
 <ul>
-<li><strong>Free</strong> – It’s offered at no cost to you.</li>
-<li><strong>Generous</strong> – It provides generous guarantee issue amounts and low premiums.</li>
-<li><strong>Portable</strong> – You can convert it to an individual policy when you leave your job.</li>
-<li><strong>Additional riders</strong> – It offers additional riders, such as long-term care insurance.</li>
-<li><strong>Easy enrollment</strong> – It’s easy to enroll in the program.</li>
+<li><strong>Free</strong>: It’s offered at no cost to you.</li>
+<li><strong>Generous</strong>: It provides generous guarantee issue amounts and low premiums.</li>
+<li><strong>Portable</strong>: You can convert it to an individual policy when you leave your job.</li>
+<li><strong>Additional riders</strong>: It offers additional riders, such as long-term care insurance.</li>
+<li><strong>Easy enrollment</strong>: It’s easy to enroll in the program.</li>
 </ul>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">Talk to an insurance professional if you’re unsure whether employer-provided life insurance is right for you. They can help you compare options and choose the best life insurance policy.</p>
@@ -224,11 +224,11 @@ sidebar: true
 <h2 id="life-insurance-policy-options-if-you-leave-your-employer"><br><strong>Life insurance policy options if you leave your employer</strong></h2>
 
 <ul>
-<li><strong>Cancel your employer-provided life insurance policy </strong>– If you’re leaving your job, your employer will often automatically cancel your employer-provided life insurance policy. </li>
-<li><strong>Convert your employer-provided life insurance policy into an individual policy</strong> – If you’re leaving your job, you can sometimes convert your employer-provided life insurance policy into an individual policy. This will usually require medical underwriting and can increase your rates significantly.</li>
-<li><strong>Inquire if your employer-provided life insurance is portable</strong> – Some employer-provided life insurance policies are portable, so you can take the policy with you when you leave your job. This is usually a good option if you’re healthy and can’t qualify for an individual life insurance policy.</li>
-<li><strong>Keep your employer-provided life insurance coverage</strong> – If you’re leaving your job, you may be able to keep your employer-provided life insurance coverage if you’re willing to pay the increased premiums yourself. This is called continuation coverage.</li>
-<li><strong>Buy an individual life insurance policy</strong> – If you’re leaving your job, you may want to buy an individual life insurance policy. This is often the best option to save money and qualify for more coverage than your employer-provided life insurance.</li>
+<li><strong>Cancel your employer-provided life insurance policy </strong>: If you’re leaving your job, your employer will often automatically cancel your employer-provided life insurance policy. </li>
+<li><strong>Convert your employer-provided life insurance policy into an individual policy</strong>. If you’re leaving your job, you can sometimes convert your employer-provided life insurance policy into an individual policy. This will usually require medical underwriting and can increase your rates significantly.</li>
+<li><strong>Inquire if your employer-provided life insurance is portable</strong>: Some employer-provided life insurance policies are portable, so you can take the policy with you when you leave your job. This is usually a good option if you’re healthy and can’t qualify for an individual life insurance policy.</li>
+<li><strong>Keep your employer-provided life insurance coverage</strong>: If you’re leaving your job, you may be able to keep your employer-provided life insurance coverage if you’re willing to pay the increased premiums yourself. This is called continuation coverage.</li>
+<li><strong>Buy an individual life insurance policy</strong>: If you’re leaving your job, you may want to buy an individual life insurance policy. This is often the best option to save money and qualify for more coverage than your employer-provided life insurance.</li>
 </ul>
 
 <h2 id="what-are-the-benefits-of-individual-life-insurance"><br><strong>What are the benefits of individual life insurance?</strong></h2>
@@ -236,22 +236,22 @@ sidebar: true
 <p><strong><strong>Individual life insurance policies through Funeral Funds offer many benefits for employees, including:</strong></strong></p>
 
 <ul>
-<li><strong>You own the policy, so your employer can’t cancel it</strong> – You can keep it even if you leave your job.</li>
-<li><strong>You can choose the amount of coverage you need</strong> – With an individual life insurance policy, you can choose the amount you need. This allows you to ensure your family is sufficiently taken care of if something happens to you.</li>
-<li><strong>You may get a lower premium</strong> – If you’re healthy, you may get a lower premium on individual life insurance.</li>
-<li><strong>You can choose the term length that fits your needs</strong> – With an individual life insurance policy, you can choose the term length that fits your needs. This allows you to ensure you’re covered for as long as needed.</li>
-<li><strong>It’s portable</strong> – So you can keep it even if you change jobs.</li>
-<li><strong>You can name anyone as the beneficiary</strong> – With an individual life insurance policy, you can name anyone as the beneficiary. This allows you to ensure your family is taken care of if something happens to you.</li>
+<li><strong>You own the policy, so your employer can’t cancel it</strong>. You can keep it even if you leave your job.</li>
+<li><strong>You can choose the amount of coverage you need</strong>. With an individual life insurance policy, you can choose the amount you need. This allows you to ensure your family is sufficiently taken care of if something happens to you.</li>
+<li><strong>You may get a lower premium</strong>: If you’re healthy, you may get a lower premium on individual life insurance.</li>
+<li><strong>You can choose the term length that fits your needs</strong>. With an individual life insurance policy, you can choose the term length that fits your needs. This allows you to ensure you’re covered for as long as needed.</li>
+<li><strong>It’s portable</strong>: So you can keep it even if you change jobs.</li>
+<li><strong>You can name anyone as the beneficiary</strong>: With an individual life insurance policy, you can name anyone as the beneficiary. This allows you to ensure your family is taken care of if something happens to you.</li>
 </ul>
 
 <h2 id="what-are-the-different-types-of-individual-life-insurance"><br><strong>What are the different types of individual life insurance?</strong></h2>
 
 <ul>
-<li><strong>Term life insurance</strong> – Term life insurance is the most affordable type of life insurance. It provides coverage for 5, 10, 20, or 30 years.</li>
-<li><strong>Whole life insurance</strong> – This type provides coverage for your entire life. It’s more expensive than term life insurance but also permanent and has a cash value component that you can borrow against.</li>
-<li><strong>Universal life insurance</strong> – This type of life insurance is similar to whole life insurance but has more flexible premium payments and death benefit options.</li>
-<li><strong>Index universal</strong> – This type of universal life insurance has some of the features of whole life insurance but also offers the potential for cash value growth.</li>
-<li><strong>Variable universal life</strong> – This type of universal life insurance offers more flexibility than other types. It also has investment options that can offer the potential for cash value growth.</li>
+<li><strong>Term life insurance</strong>: Term life insurance is the most affordable type of life insurance. It provides coverage for 5, 10, 20, or 30 years.</li>
+<li><strong>Whole life insurance</strong>: This type provides coverage for your entire life. It’s more expensive than term life insurance but also permanent and has a cash value component that you can borrow against.</li>
+<li><strong>Universal life insurance</strong>: This type of life insurance is similar to whole life insurance but has more flexible premium payments and death benefit options.</li>
+<li><strong>Index universal</strong>: This type of universal life insurance has some of the features of whole life insurance but also offers the potential for cash value growth.</li>
+<li><strong>Variable universal life</strong>: This type of universal life insurance offers more flexibility than other types. It also has investment options that can offer the potential for cash value growth.</li>
 </ul>
 
 <p id="a9c9eed5-9eda-4deb-9a4c-7f1886373d8e">When shopping for an individual life insurance policy, work with a qualified life insurance agent who can compare the premiums, coverage limits, and rider options for you.</p>

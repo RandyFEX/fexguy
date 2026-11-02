@@ -11,7 +11,12 @@
     "build": "astro build --force && pagefind",
     "preview": "astro preview",
     "check": "astro check",
-    "verify": "node scripts/check-dist.mjs"
+    "verify": "node scripts/check-dist.mjs",
+    "health-search:data": "node scripts/health-search-data.mjs",
+    "health-search:publish": "node scripts/health-search-publish.mjs",
+    "health-search:import": "node scripts/health-search-import.mjs",
+    "test:health-search": "node --test 'tests/health-search/*.test.js'",
+    "test:health-search:live": "node tests/health-search/live-preview.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.2",

@@ -72,35 +72,35 @@ sidebar: true
 <p><strong>Average Cost of an Adult Funeral with Viewing and Burial</strong></p>
 
 <ul>
-<li>$2,195 – Basic services fee</li>
-<li>$750 – Embalming</li>
-<li>$350 – Removal of remains to funeral home</li>
-<li>$255 – Other preparation of the body</li>
-<li>$425 – Use of facilities and staff for viewing</li>
-<li>$500 – Use of facilities and staff for the funeral ceremony</li>
-<li>$340 – Hearse</li>
-<li>$150 – Service car</li>
-<li>$175 – Basic memorial printed package</li>
-<li>$2,500 – Metal Casket</li>
-<li>$1,495 – Vault</li>
-<li><strong>$9,135 – TOTAL</strong></li>
+<li>$2,195: Basic services fee</li>
+<li>$750: Embalming</li>
+<li>$350: Removal of remains to funeral home</li>
+<li>$255: Other preparation of the body</li>
+<li>$425: Use of facilities and staff for viewing</li>
+<li>$500: Use of facilities and staff for the funeral ceremony</li>
+<li>$340: Hearse</li>
+<li>$150: Service car</li>
+<li>$175: Basic memorial printed package</li>
+<li>$2,500: Metal Casket</li>
+<li>$1,495: Vault</li>
+<li><strong>$9,135: TOTAL</strong></li>
 </ul>
 
 <p><strong>Average Cost of an Adult Funeral with Viewing and Cremation</strong></p>
 
 <ul>
-<li>$2,195 – Non-declinable basic services fee</li>
-<li>$350 – Removal of remains to funeral home</li>
-<li>$750 – Embalming</li>
-<li>$255 – Other preparation of the body</li>
-<li>$425 – Use of facilities and staff for viewing</li>
-<li>$500 – Use of facilities and staff for the funeral ceremony</li>
-<li>$150 – Service car</li>
-<li>$175 – Basic memorial printed package</li>
-<li>$350 – Cremation fee</li>
-<li>$1,000 – Cremation Casket</li>
-<li>$295 – Urn</li>
-<li><strong>$6,445 – TOTAL</strong></li>
+<li>$2,195: Non-declinable basic services fee</li>
+<li>$350: Removal of remains to funeral home</li>
+<li>$750: Embalming</li>
+<li>$255: Other preparation of the body</li>
+<li>$425: Use of facilities and staff for viewing</li>
+<li>$500: Use of facilities and staff for the funeral ceremony</li>
+<li>$150: Service car</li>
+<li>$175: Basic memorial printed package</li>
+<li>$350: Cremation fee</li>
+<li>$1,000: Cremation Casket</li>
+<li>$295: Urn</li>
+<li><strong>$6,445: TOTAL</strong></li>
 </ul>
 
 <p>There may be other funeral expenses depending on the funeral home that you choose and the type of casket, headstone, and services you want to be provided.</p>
@@ -158,12 +158,12 @@ sidebar: true
 <p><strong>PROS</strong></p>
 
 <ol>
-<li><strong>Fixed amount</strong> – the funeral costs are lock-in in today’s prices and guaranteed not to increase with market conditions or inflation. Your cost is fixed at today’s prices.</li>
-<li><strong>Complete control</strong> – you have full control over the details of your funeral. You can choose the type of casket, burial plot, headstone floral arrangement, facilities, clergy, and the order of service you like.</li>
-<li>Peace of mind – a prepaid life insurance plan can provide peace of mind for you and your family, knowing your funeral cost is already paid. A prepaid funeral alleviates the stress during the time of grief since your funeral is already paid, and your final wishes are carried out. The plan gives detailed instructions about your last wishes at a stressful time.</li>
-<li>You can get what you want – a funeral plan ensures you get what you want, especially the cemetery plot. The location you want today may not be available five or ten years from now. Buying in advance ensures you get the location you want.</li>
-<li>Lower cost – arranging and paying for a funeral in advance can result in a lower price versus waiting until death when family emotions may influence financial decisions.</li>
-<li><strong>Beneficial when you need to qualify for Medicaid</strong> – the funeral plan can be helpful when you need to be eligible for government services or long-term nursing home care. That’s because funeral expenses paid in advance don’t count against your estate when the government determines your financial eligibility.</li>
+<li><strong>Fixed amount</strong>: the funeral costs are lock-in in today’s prices and guaranteed not to increase with market conditions or inflation. Your cost is fixed at today’s prices.</li>
+<li><strong>Complete control</strong>: you have full control over the details of your funeral. You can choose the type of casket, burial plot, headstone floral arrangement, facilities, clergy, and the order of service you like.</li>
+<li>Peace of mind: a prepaid life insurance plan can provide peace of mind for you and your family, knowing your funeral cost is already paid. A prepaid funeral alleviates the stress during the time of grief since your funeral is already paid, and your final wishes are carried out. The plan gives detailed instructions about your last wishes at a stressful time.</li>
+<li>You can get what you want: a funeral plan ensures you get what you want, especially the cemetery plot. The location you want today may not be available five or ten years from now. Buying in advance ensures you get the location you want.</li>
+<li>Lower cost: arranging and paying for a funeral in advance can result in a lower price versus waiting until death when family emotions may influence financial decisions.</li>
+<li><strong>Beneficial when you need to qualify for Medicaid</strong>: the funeral plan can be helpful when you need to be eligible for government services or long-term nursing home care. That’s because funeral expenses paid in advance don’t count against your estate when the government determines your financial eligibility.</li>
 </ol>
 
 <p><strong>CONS</strong></p>
@@ -293,7 +293,7 @@ sidebar: true
 
 <h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p><strong>In reality, most of these policies rely on you having NO BRAIN to purchase them.</strong></p>
 

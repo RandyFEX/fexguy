@@ -79,11 +79,11 @@ sidebar: true
 
 <p>Using life insurance to pay off debt is possible <strong>if your permanent life insurance policy is accumulating cash value. You can borrow or take a personal life insurance loan against the cash value.</strong> The insurance carrier will use the cash value as collateral for your loan. Borrowing against cash value is only available once your life insurance cash value has reached a certain level, which may take about five to ten years of premium payments.</p>
 
-<p>While the insurance carrier may limit the amount you can borrow up to a certain percentage, usually 90% of the policy’s cash value – most carriers will allow you to borrow the full amount. As with any other kind of loan, cash value loans require repayment according to the standard interest rate and the full amount you borrow.</p>
+<p>While the insurance carrier may limit the amount you can borrow up to a certain percentage, usually 90% of the policy’s cash value. Most carriers will allow you to borrow the full amount. As with any other kind of loan, cash value loans require repayment according to the standard interest rate and the full amount you borrow.</p>
 
 <h2 id="how-life-insurance-policy-loan-works"><br><strong>How life insurance policy loan works</strong></h2>
 
-<p>Monthly premium payments in a permanent life insurance policy change over time. You pay more during the first 10 to 15 years – you are technically overpaying for the policy – and then, as the years go by, premium amounts start to decline. This method creates cash value and keeps the premium payments at the same price as you age.</p>
+<p>Monthly premium payments in a permanent life insurance policy change over time. You pay more during the first 10 to 15 years, you are technically overpaying for the policy, and then, as the years go by, premium amounts start to decline. This method creates cash value and keeps the premium payments at the same price as you age.</p>
 
 <p>If you want to cancel the policy during the early years, the insurance carrier protects itself by setting a surrender charge to cover policy-related costs such as sales commissions. The real cash value of the policy or the surrender value is the difference between the cash value and the total surrender charge.</p>
 
@@ -213,7 +213,7 @@ sidebar: true
 
 <p>The borrower and the property must pass lending requirements, such as sufficient equity and a steady job with good credit standing. There are generally fees and interest involved in borrowing money against the property. Many lenders also charge substantial prepayment fees for short-term borrowers.</p>
 
-<p><br><strong>Retirement Savings Plan – 401(K)</strong></p>
+<p><br><strong>Retirement Savings Plan: 401(K)</strong></p>
 
 <p>You might also borrow from your <a href="https://www.irs.gov/retirement-plans/401k-plans" target="_blank" rel="noreferrer noopener">401(K)</a> or take an early withdrawal from your IRA. If you borrow from your 401(K), your payments will be automatically deducted from your paycheck, and you need to pay interest on the amount you borrow. <strong>If you leave your job before the loan is paid, you must pay the total due amount to avoid a tax penalty.</strong></p>
 

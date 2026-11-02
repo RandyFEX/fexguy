@@ -529,7 +529,7 @@ Five calls after one form
 
 <p><strong>What is a Senior Legacy Life plan?</strong></p>
 
-<p>Senior Legacy operates as a sales agency that markets life insurance policies from other companies.<br>It’s not a separate insurer – it’s a sales agency.</p>
+<p>Senior Legacy operates as a sales agency that markets life insurance policies from other companies.<br>It’s not a separate insurer: it’s a sales agency.</p>
 
 <p><strong>How does Senior Legacy Life Insurance work?</strong></p>
 

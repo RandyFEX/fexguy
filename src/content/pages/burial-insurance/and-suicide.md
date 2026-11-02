@@ -15,7 +15,7 @@ sidebar: true
 
 <p>• Suicide within the first 2 years usually voids the full death benefit<br>• Most policies only refund premiums if death happens early<br>• After 2 years, policies typically pay full benefit with no issues<br>• Switching policies resets the suicide clause back to zero<br>• Lying on the application can still void payout even after 2 years</p>
 
-<p>Most people think life insurance won’t pay for suicide. That’s wrong. Burial insurance, whole life, and term life insurance usually do pay, but only after a waiting period. Nearly every policy has a suicide clause that blocks the full payout for the first 1–2 years. If death occurs during that time, the company often just refunds premiums rather than paying the benefit. After that window, coverage is typically paid in full. The biggest mistake people make is not understanding that restarting or replacing a policy resets that clock.</p>
+<p>Most people think life insurance won’t pay for suicide. That’s wrong. Burial insurance, whole life, and term life insurance usually do pay, but only after a waiting period. Nearly every policy has a suicide clause that blocks the full payout for the first 1 to 2 years. If death occurs during that time, the company often just refunds premiums rather than paying the benefit. After that window, coverage is typically paid in full. The biggest mistake people make is not understanding that restarting or replacing a policy resets that clock.</p>
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
@@ -255,9 +255,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>Depression is a risk factor for suicide, and this condition should be disclosed during the application. Insurance policies with health questions may ask about when you were first diagnosed with depression and its severity. </p>
 
@@ -365,14 +365,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with suicide attempts</strong></h2>

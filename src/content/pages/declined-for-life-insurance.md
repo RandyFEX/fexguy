@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Declined for Life Insurance – What To Do Now?</h1>
+<h1>Declined for Life Insurance: What To Do Now?</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Getting declined doesn’t mean you can’t get life insurance elsewhere<br>• Every company underwrites differently, so approval varies widely<br>• Not knowing why you were declined leads to repeat denials<br>• Guaranteed issue plans cost more and limit early payouts<br>• Waiting and improving health can reopen better, cheaper options<br>• Applying blindly again can make your situation worse</p>
 
@@ -50,10 +50,10 @@ sidebar: true
 <p><strong>After your life insurance application has gone through the life insurance company underwriting process, the life insurance company will decide on your approval in 1 of 4 ways:</strong></p>
 
 <ol>
-<li><strong> Approved as applied</strong> – this is the best application outcome. Your application is approved at the same amount of premium you were initially quoted.<br></li>
-<li><strong> Approved other than applied</strong> – you are approved for coverage but at a different rate from what you applied for. The rate or premium amount could be better, but it is usually worse than expected. You will need to approve the new premium amount before they finally issue the policy.<br><br>There are many reasons why your approval decision is different than what was applied for. The result of your medical exam may cause you to be rated, or you may have neglected to give relevant information discovered during underwriting.<br></li>
-<li> <strong>Postponed – </strong>typically happens if a disease diagnosis or treatment is very recent, and the insurer is unwilling to gamble on a medical issue reoccurring. Most insurance companies will tell you to apply again 6 months to 5 years after treatment. If your application is postponed, expect to get detailed information on how to get coverage in the future.<br></li>
-<li><strong>Declined</strong> – this is the worst outcome. The insurance provider you applied for isn’t willing to give you any coverage. Read on to know why life insurance companies will decline your application.</li>
+<li><strong> Approved as applied</strong>: this is the best application outcome. Your application is approved at the same amount of premium you were initially quoted.<br></li>
+<li><strong> Approved other than applied</strong>: you are approved for coverage but at a different rate from what you applied for. The rate or premium amount could be better, but it is usually worse than expected. You will need to approve the new premium amount before they finally issue the policy.<br><br>There are many reasons why your approval decision is different than what was applied for. The result of your medical exam may cause you to be rated, or you may have neglected to give relevant information discovered during underwriting.<br></li>
+<li> <strong>Postponed: </strong>typically happens if a disease diagnosis or treatment is very recent, and the insurer is unwilling to gamble on a medical issue reoccurring. Most insurance companies will tell you to apply again 6 months to 5 years after treatment. If your application is postponed, expect to get detailed information on how to get coverage in the future.<br></li>
+<li><strong>Declined</strong>: this is the worst outcome. The insurance provider you applied for isn’t willing to give you any coverage. Read on to know why life insurance companies will decline your application.</li>
 </ol>
 
 <h2 id="reasons-you-ll-get-declined-for-life-insurance"><br><strong>Reasons you’ll get declined for life insurance</strong></h2>
@@ -217,7 +217,7 @@ sidebar: true
 
 <p>If you don’t qualify for simplified issue life insurance, a graded death benefit is your next best option. Graded death benefit has two to three years before the death benefit kicks in. </p>
 
-<p>During the waiting period, if you suddenly pass away – the life insurance company would only refund your premiums plus interest, or they would give a percentage of your death benefit.</p>
+<p>During the waiting period, if you suddenly pass away, the life insurance company would only refund your premiums plus interest, or they would give a percentage of your death benefit.</p>
 
 <p>If you pass away during the first year, the company will pay your beneficiary 40% of the death benefit. The death benefit payout will be 70% if you die in the second year. After the waiting period, your beneficiary would receive 100% of the death benefit.</p>
 
@@ -238,11 +238,11 @@ sidebar: true
 <p><strong>You could lower your life insurance premium if you:</strong></p>
 
 <ul>
-<li><strong>Quit using tobacco products</strong> – non-smokers have lower rates compared with smokers. Smokers pay up to three times the rate of a non-smoker.</li>
-<li><strong>Lose weight</strong> – losing weight often means lower blood pressure and cholesterol levels, decreasing your chances of developing chronic diseases.</li>
-<li><strong>Reduce alcohol intake</strong> – drinking less alcohol or completely stopping will make less of a risk to the insurer, giving you lower premiums.</li>
-<li><strong>Improve your driving</strong> – DWIs or DUIs can cause life insurance companies to give you a higher rating or decline your application.</li>
-<li><strong>Switching insurers</strong> – you may be able to get better rates if you switch to another life insurance company that offers the same benefits at lower rates.</li>
+<li><strong>Quit using tobacco products</strong>: non-smokers have lower rates compared with smokers. Smokers pay up to three times the rate of a non-smoker.</li>
+<li><strong>Lose weight</strong>: losing weight often means lower blood pressure and cholesterol levels, decreasing your chances of developing chronic diseases.</li>
+<li><strong>Reduce alcohol intake</strong>: drinking less alcohol or completely stopping will make less of a risk to the insurer, giving you lower premiums.</li>
+<li><strong>Improve your driving</strong>: DWIs or DUIs can cause life insurance companies to give you a higher rating or decline your application.</li>
+<li><strong>Switching insurers</strong>: you may be able to get better rates if you switch to another life insurance company that offers the same benefits at lower rates.</li>
 </ul>
 
 <h2 id="what’s-your-next-step-if-you-ve-been-declined-for-life-insurance"><br><strong>What’s your next step if you’ve been declined for life insurance?</strong></h2>

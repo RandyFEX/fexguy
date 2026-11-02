@@ -67,16 +67,16 @@ sidebar: true
 <p>Marijuana use affects brain signaling, cardiovascular response, and respiratory function, which can impair cognition, coordination, and heart rate regulation, and can affect underwriting and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Cognitive impairment</strong> – Slowed reaction time, reduced attention, and memory issues affect daily tasks and work performance.</li>
-<li><strong>Impaired coordination</strong> – Altered motor control increases accident and injury risk.</li>
-<li><strong>Anxiety and panic symptoms</strong> – THC can trigger paranoia, panic attacks, and emotional instability.</li>
-<li><strong>Mood changes</strong> – Chronic use may worsen depression, motivation loss, or emotional blunting.</li>
-<li><strong>Respiratory irritation</strong> – Smoking marijuana inflames the airways and can cause chronic cough or bronchitis symptoms.</li>
-<li><strong>Heart rate changes</strong> – Increased heart rate and blood pressure fluctuations strain the cardiovascular system.</li>
-<li><strong>Reduced motivation</strong> – Ongoing use can lower drive, consistency, and productivity.</li>
-<li><strong>Sleep disruption</strong> – Use may interfere with normal sleep cycles and restorative rest.</li>
-<li><strong>Dependency risk</strong> – Regular use can lead to cannabis use disorder with withdrawal symptoms.</li>
-<li><strong>Work and driving limitations</strong> – Impaired judgment and reaction time increase safety and reliability concerns.</li>
+<li><strong>Cognitive impairment</strong>: Slowed reaction time, reduced attention, and memory issues affect daily tasks and work performance.</li>
+<li><strong>Impaired coordination</strong>: Altered motor control increases accident and injury risk.</li>
+<li><strong>Anxiety and panic symptoms</strong>: THC can trigger paranoia, panic attacks, and emotional instability.</li>
+<li><strong>Mood changes</strong>: Chronic use may worsen depression, motivation loss, or emotional blunting.</li>
+<li><strong>Respiratory irritation</strong>: Smoking marijuana inflames the airways and can cause chronic cough or bronchitis symptoms.</li>
+<li><strong>Heart rate changes</strong>: Increased heart rate and blood pressure fluctuations strain the cardiovascular system.</li>
+<li><strong>Reduced motivation</strong>: Ongoing use can lower drive, consistency, and productivity.</li>
+<li><strong>Sleep disruption</strong>: Use may interfere with normal sleep cycles and restorative rest.</li>
+<li><strong>Dependency risk</strong>: Regular use can lead to cannabis use disorder with withdrawal symptoms.</li>
+<li><strong>Work and driving limitations</strong>: Impaired judgment and reaction time increase safety and reliability concerns.</li>
 </ul>
 
 <h2>Understanding marijuana use policy types</h2>
@@ -95,7 +95,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

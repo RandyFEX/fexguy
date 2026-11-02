@@ -15,22 +15,22 @@ search: true
 <p><br><strong>FOR EASIER NAVIGATION:</strong></p>
 
 <ul data-article-part="toc">
-<li><strong><a href="#Week-1-–-Organ-And-Tissue-Donation">Step 1 – Organ and Tissue Donation</a></strong></li>
-<li><strong><a href="#Week-2-–-Choosing-Your-Method-Of-Disposition">Step 2 – Choosing Your Method of Disposition</a></strong></li>
-<li><strong><a href="#Week-3-–-Choosing-A-Casket-Or-Urn">Step 3 – Choosing a Casket or Urn</a></strong></li>
-<li><strong><a href="#Week-4-–-Choosing-A-Funeral-Home">Step 4 – Choosing a Funeral Home</a></strong></li>
-<li><strong><a href="#Week-5-–-Writing-An-Obituary">Step 5 – Writing an Obituary</a></strong></li>
-<li><strong><a href="#Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot">Step 6 – Choosing a Cemetery or Burial Plot</a></strong></li>
-<li><strong><a href="#Week-7-–-Choosing-A-Headstone">Step 7 – Choosing a Headstone</a></strong></li>
-<li><strong><a href="#Week-8-–-Choosing-Funeral-Flowers">Step 8 – Choosing Funeral Flowers</a></strong></li>
-<li><strong><a href="#Week-9-–-Selecting-The-Funeral-Service">Step 9 – Selecting the Funeral Service</a></strong></li>
-<li><strong><a href="#Week-10-–-Preventing-Identity-Theft">Step 10 – Preventing Identity Theft</a></strong></li>
-<li><strong><a href="#Week-11-–-Proper-Medication-Disposal">Step 11 – Proper Medication Disposal</a></strong></li>
-<li><strong><a href="#Week-12-–-Liquidating-Assets-After-Your-Death">Step 12 – Liquidating Assets After Your Death</a></strong></li>
-<li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content – Selecting Bible Verses for Your Funeral</a></strong></li>
+<li><strong><a href="#Week-1-–-Organ-And-Tissue-Donation">Step 1: Organ and Tissue Donation</a></strong></li>
+<li><strong><a href="#Week-2-–-Choosing-Your-Method-Of-Disposition">Step 2: Choosing Your Method of Disposition</a></strong></li>
+<li><strong><a href="#Week-3-–-Choosing-A-Casket-Or-Urn">Step 3: Choosing a Casket or Urn</a></strong></li>
+<li><strong><a href="#Week-4-–-Choosing-A-Funeral-Home">Step 4: Choosing a Funeral Home</a></strong></li>
+<li><strong><a href="#Week-5-–-Writing-An-Obituary">Step 5: Writing an Obituary</a></strong></li>
+<li><strong><a href="#Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot">Step 6: Choosing a Cemetery or Burial Plot</a></strong></li>
+<li><strong><a href="#Week-7-–-Choosing-A-Headstone">Step 7: Choosing a Headstone</a></strong></li>
+<li><strong><a href="#Week-8-–-Choosing-Funeral-Flowers">Step 8: Choosing Funeral Flowers</a></strong></li>
+<li><strong><a href="#Week-9-–-Selecting-The-Funeral-Service">Step 9: Selecting the Funeral Service</a></strong></li>
+<li><strong><a href="#Week-10-–-Preventing-Identity-Theft">Step 10: Preventing Identity Theft</a></strong></li>
+<li><strong><a href="#Week-11-–-Proper-Medication-Disposal">Step 11: Proper Medication Disposal</a></strong></li>
+<li><strong><a href="#Week-12-–-Liquidating-Assets-After-Your-Death">Step 12: Liquidating Assets After Your Death</a></strong></li>
+<li><strong><a href="#Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral">Bonus Content: Selecting Bible Verses for Your Funeral</a></strong></li>
 </ul>
 
-<h2 id="Week-1-–-Organ-And-Tissue-Donation" class="as-h3"><strong>STEP 1 – ORGAN AND TISSUE DONATION</strong></h2>
+<h2 id="Week-1-–-Organ-And-Tissue-Donation" class="as-h3"><strong>STEP 1: ORGAN AND TISSUE DONATION</strong></h2>
 
 <p>Thinking about organ, tissue, or whole-body donation should be part of your funeral planning. Donation is a great way to help others and advance science. Whole-body donation is an excellent way to avoid the cost of funerals and burial.</p>
 
@@ -44,7 +44,7 @@ search: true
 
 <div class="button-link"><a href="/burial-insurance/donating-your-body-to-science/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 1 ARTICLE</a></div>
 
-<h2 id="Week-2-–-Choosing-Your-Method-Of-Disposition" class="as-h3"><strong><strong>STEP </strong>2 – CHOOSING YOUR METHOD OF DISPOSITION</strong></h2>
+<h2 id="Week-2-–-Choosing-Your-Method-Of-Disposition" class="as-h3"><strong><strong>STEP </strong>2: CHOOSING YOUR METHOD OF DISPOSITION</strong></h2>
 
 <p>Determine if you want to be buried or cremated. Choosing the best option should be made before you pass away so that your loved ones will know your final wishes.</p>
 
@@ -89,7 +89,7 @@ search: true
 
 <div class="button-link"><a href="/burial-vs-cremation/" target="_blank" rel="noreferrer noopener">READ THE FULL WEEK 2 ARTICLE</a></div>
 
-<h2 id="Week-3-–-Choosing-A-Casket-Or-Urn" class="as-h3"><strong><strong>STEP </strong>3 – CHOOSING A CASKET OR URN</strong></h2>
+<h2 id="Week-3-–-Choosing-A-Casket-Or-Urn" class="as-h3"><strong><strong>STEP </strong>3: CHOOSING A CASKET OR URN</strong></h2>
 
 <p>After determining your method of disposition, you can now choose if you want a casket or an urn.</p>
 
@@ -124,19 +124,19 @@ search: true
 
 <p><strong>How to Buy a Casket</strong></p>
 
-<p>Step 1 – Determine what type of casket you want</p>
+<p>Step 1: Determine what type of casket you want</p>
 
-<p>Step 2 – Consider your budget</p>
+<p>Step 2: Consider your budget</p>
 
-<p>Step 3 – Do your research</p>
+<p>Step 3: Do your research</p>
 
-<p>Step 4 – Visit funeral home or retail showroom</p>
+<p>Step 4: Visit funeral home or retail showroom</p>
 
-<p>Step 5 – Gather necessary information</p>
+<p>Step 5: Gather necessary information</p>
 
-<p>Step 6 – Compare prices</p>
+<p>Step 6: Compare prices</p>
 
-<p>Step 7 – Document your casket choice</p>
+<p>Step 7: Document your casket choice</p>
 
 <p><br><strong>CHOOSING AN URN</strong></p>
 
@@ -146,40 +146,40 @@ search: true
 
 <p><strong>How to Buy an Urn</strong></p>
 
-<p>Step 1 – Consider your final resting place</p>
+<p>Step 1: Consider your final resting place</p>
 
-<p>Step 2 – Determine your budget</p>
+<p>Step 2: Determine your budget</p>
 
-<p>Step 3 – Figure out the size of the urn your need</p>
+<p>Step 3: Figure out the size of the urn your need</p>
 
-<p>Step 4 – Determine the type of materials</p>
+<p>Step 4: Determine the type of materials</p>
 
-<p>Step 5 – Choose the type of urn you want and write it in your funeral planning guide.</p>
+<p>Step 5: Choose the type of urn you want and write it in your funeral planning guide.</p>
 
 
-<h2 id="Week-4-–-Choosing-A-Funeral-Home" class="as-h3"><strong><strong>STEP </strong>4 – CHOOSING A FUNERAL HOME</strong></h2>
+<h2 id="Week-4-–-Choosing-A-Funeral-Home" class="as-h3"><strong><strong>STEP </strong>4: CHOOSING A FUNERAL HOME</strong></h2>
 
 <p>Determine what type of funeral services and goods you need to let your family know your preferences.</p>
 
-<p>Step 1 – Determine your method of disposition.</p>
+<p>Step 1: Determine your method of disposition.</p>
 
-<p>Step 2 – Determine your funeral service preferences</p>
+<p>Step 2: Determine your funeral service preferences</p>
 
-<p>Step 3 – Set a budget</p>
+<p>Step 3: Set a budget</p>
 
-<p>Step 4 – Do your research</p>
+<p>Step 4: Do your research</p>
 
-<p>Step 5 – Get quotes</p>
+<p>Step 5: Get quotes</p>
 
 <p>Step 6- Compare prices</p>
 
-<p>Step 7 – Visit the funeral home facilities</p>
+<p>Step 7: Visit the funeral home facilities</p>
 
-<p>Step 8 – Narrow down your selection</p>
+<p>Step 8: Narrow down your selection</p>
 
-<p>Step 9 – Know the payment options</p>
+<p>Step 9: Know the payment options</p>
 
-<p>Step 10 – Make your decision</p>
+<p>Step 10: Make your decision</p>
 
 <p><br><strong>Guide Questions In Choosing The Right Funeral Home?</strong></p>
 
@@ -221,7 +221,7 @@ search: true
 <p>10. Provides education and community programs</p>
 
 
-<h2 id="Week-5-–-Writing-An-Obituary" class="as-h3"><strong><strong>STEP </strong>5 – WRITING AN OBITUARY</strong></h2>
+<h2 id="Week-5-–-Writing-An-Obituary" class="as-h3"><strong><strong>STEP </strong>5: WRITING AN OBITUARY</strong></h2>
 
 <p>Before you draft your obituary, check your local newspaper and note the format to know what to include. Obituaries are no longer restricted to newspapers. It can also be published on memorial sites and social media.</p>
 
@@ -274,7 +274,7 @@ search: true
 <p>The reason for not including this information is that identity thieves can be a real problem. Some unscrupulous people may try to use your loved one’s identity to access bank accounts and personal credit.</p>
 
 
-<h2 id="Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot" class="as-h3"><strong><strong>STEP </strong>6 – CHOOSING A CEMETERY OR BURIAL PLOT</strong></h2>
+<h2 id="Week-6-–-Choosing-A-Cemetery-Or-Burial-Plot" class="as-h3"><strong><strong>STEP </strong>6: CHOOSING A CEMETERY OR BURIAL PLOT</strong></h2>
 
 <p>Reserving a burial plot or buying a plot in advance can be cheaper than buying a plot at the last minute.</p>
 
@@ -289,7 +289,7 @@ search: true
 <p>3. Check what you are paying for. Some sellers only sell the rights to the plot, and you need to pay for an in-ground crypt which may incur additional costs and fees.</p>
 
 
-<h2 id="Week-7-–-Choosing-A-Headstone" class="as-h3"><strong><strong>STEP </strong>7 – CHOOSING A HEADSTONE</strong></h2>
+<h2 id="Week-7-–-Choosing-A-Headstone" class="as-h3"><strong><strong>STEP </strong>7: CHOOSING A HEADSTONE</strong></h2>
 
 <p>Choosing a headstone is one important aspect if you want to be buried. Your headstone is one way of memorializing your life after you are gone.</p>
 
@@ -297,28 +297,28 @@ search: true
 
 <p><strong>Steps in Selecting a Headstone:</strong></p>
 
-<p>Step 1 – Consult the memorial park or cemetery you want to be interned about their headstone regulations.</p>
+<p>Step 1: Consult the memorial park or cemetery you want to be interned about their headstone regulations.</p>
 
-<p>Step 2 – Ask for the cemetery’s installation services</p>
+<p>Step 2: Ask for the cemetery’s installation services</p>
 
-<p>Step 3 – Set a budget</p>
+<p>Step 3: Set a budget</p>
 
-<p>Step 4 – Get yourself familiar with headstone designs and materials</p>
+<p>Step 4: Get yourself familiar with headstone designs and materials</p>
 
-<p>Step 5 – Decide on the type of headstone you need</p>
+<p>Step 5: Decide on the type of headstone you need</p>
 
-<p>Step 6 – Select the headstone material</p>
+<p>Step 6: Select the headstone material</p>
 
-<p>Step 7 – Select the headstone finish</p>
+<p>Step 7: Select the headstone finish</p>
 
-<p>Step 8 – Prepare the inscriptions</p>
+<p>Step 8: Prepare the inscriptions</p>
 
-<p>Step 9 – Select a headstone supplier</p>
+<p>Step 9: Select a headstone supplier</p>
 
-<p>Step 10 – Write your draft</p>
+<p>Step 10: Write your draft</p>
 
 
-<h2 id="Week-8-–-Choosing-Funeral-Flowers" class="as-h3"><strong><strong>STEP </strong>8 – CHOOSING FUNERAL FLOWERS</strong></h2>
+<h2 id="Week-8-–-Choosing-Funeral-Flowers" class="as-h3"><strong><strong>STEP </strong>8: CHOOSING FUNERAL FLOWERS</strong></h2>
 
 <p>You can choose your funeral flowers or opt to donate to a charity instead of flowers. Write your choice in your funeral planning guide.</p>
 
@@ -341,7 +341,7 @@ search: true
 <p>Write the charity or foundation you want and the details if you opt for a donation in lieu of flowers.</p>
 
 
-<h2 id="Week-9-–-Selecting-The-Funeral-Service" class="as-h3"><strong><strong>STEP </strong>9 – <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h2>
+<h2 id="Week-9-–-Selecting-The-Funeral-Service" class="as-h3"><strong><strong>STEP </strong>9: <strong>SELECTING THE FUNERAL SERVICE&#160;</strong></strong></h2>
 
 <p>A funeral service can be a valuable part of the grieving process for your loved ones. Choose the type of funeral service you want.</p>
 
@@ -363,7 +363,7 @@ search: true
 <p>A funeral service program can feature some songs, a short biography, and your favorite quotes. It will serve as a fitting tribute to your life. After the service, your loved ones can have the time to socialize and enjoy a refreshment while offering support to one another.</p>
 
 
-<h2 id="Week-10-–-Preventing-Identity-Theft" class="as-h3"><strong><strong>STEP </strong>10 </strong>– <strong>PREVENTING IDENTITY THEFT</strong></h2>
+<h2 id="Week-10-–-Preventing-Identity-Theft" class="as-h3"><strong><strong>STEP </strong>10 </strong>: <strong>PREVENTING IDENTITY THEFT</strong></h2>
 
 <p>Preventing identity theft after your death must also be included in your funeral planning guide.</p>
 
@@ -418,7 +418,7 @@ search: true
 <p>11. Don’t share personal information</p>
 
 
-<h2 id="Week-11-–-Proper-Medication-Disposal" class="as-h3"><strong><strong>STEP </strong>11 – PROPER MEDICATION DISPOSAL</strong></h2>
+<h2 id="Week-11-–-Proper-Medication-Disposal" class="as-h3"><strong><strong>STEP </strong>11: PROPER MEDICATION DISPOSAL</strong></h2>
 
 <p>Remind your family to dispose of your medication after you are gone. This is necessary if there are small children in the home. Exposure to dangerous medicine is a major cause of unintentional poisoning in children.</p>
 
@@ -434,13 +434,13 @@ search: true
 
 <p><strong>Proper medication disposal:</strong></p>
 
-<p>1. Take-back programs – drop the unused medications at the take-back site. Authorized take-back centers may include hospitals, pharmacies, and local law enforcement agencies.</p>
+<p>1. Take-back programs: drop the unused medications at the take-back site. Authorized take-back centers may include hospitals, pharmacies, and local law enforcement agencies.</p>
 
-<p>2. Donation – if the unused medication is unexpired, sealed, and not a narcotic or opioid, you can donate them to some authorized collectors like hospitals, non-profit clinics, law enforcement collection sites, pharmacies, or prescription drug collection programs.</p>
+<p>2. Donation: if the unused medication is unexpired, sealed, and not a narcotic or opioid, you can donate them to some authorized collectors like hospitals, non-profit clinics, law enforcement collection sites, pharmacies, or prescription drug collection programs.</p>
 
-<p>3. Flushing – some medications are labeled good for flushing down the sink or toilet. Check the <a href="https://www.fda.gov/drugs/disposal-unused-medicines-what-you-should-know/drug-disposal-flush-potentially-dangerous-medicine#FlushList" target="_blank" rel="noreferrer noopener">FDA flush list</a> if the unused medication can be flushed. </p>
+<p>3. Flushing: some medications are labeled good for flushing down the sink or toilet. Check the <a href="https://www.fda.gov/drugs/disposal-unused-medicines-what-you-should-know/drug-disposal-flush-potentially-dangerous-medicine#FlushList" target="_blank" rel="noreferrer noopener">FDA flush list</a> if the unused medication can be flushed. </p>
 
-<p>4. Dispose of in the trash – follow these steps for proper trash disposal</p>
+<p>4. Dispose of in the trash: follow these steps for proper trash disposal</p>
 
 <ul>
 <li>Do not crush the pills. Keep the medications in its original container to help identify the contents if they are accidentally ingested.</li>
@@ -456,7 +456,7 @@ search: true
 </ul>
 
 
-<h2 id="Week-12-–-Liquidating-Assets-After-Your-Death" class="as-h3"><strong><strong>STEP </strong>12 – LIQUIDATING ASSETS AFTER YOUR DEATH</strong></h2>
+<h2 id="Week-12-–-Liquidating-Assets-After-Your-Death" class="as-h3"><strong><strong>STEP </strong>12: LIQUIDATING ASSETS AFTER YOUR DEATH</strong></h2>
 
 <p>Liquidating assets after your death can be a problem with your beneficiaries. It is important to leave instructions on your funeral planning guide on how you want your assets to be distributed to your beneficiaries to avoid this issue.</p>
 
@@ -471,67 +471,67 @@ search: true
 <p>4. Leave detailed instructions on what to do with your unwanted stuff.</p>
 
 
-<p id="Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral"><strong>BONUS CONTENT – SELECTING BIBLE VERSES FOR YOUR FUNERAL</strong></p>
+<p id="Bonus-Content-–-Selecting-Bible-Verses-For-Your-Funeral"><strong>BONUS CONTENT: SELECTING BIBLE VERSES FOR YOUR FUNERAL</strong></p>
 
 <p>You can select the bible verses you want to be read at your funeral or memorial service. When selecting the bible verses, look for words that can give comfort to your loved ones upon your passing.</p>
 
 <p><strong>Here are some bible verses that can give comfort:</strong></p>
 
-<p><strong>Ecclesiastes 3:1-4</strong> – For everything, there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted; a time to kill, and a time to heal; a time to break down, and a time to build up; a time to weep, and a time to laugh; a time to mourn, and a time to dance.</p>
+<p><strong>Ecclesiastes 3:1-4</strong>: For everything, there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted; a time to kill, and a time to heal; a time to break down, and a time to build up; a time to weep, and a time to laugh; a time to mourn, and a time to dance.</p>
 
-<p><strong>Ecclesiastes 3:11</strong> – He has made everything appropriate in its time. He has also set eternity in their heart, yet so that man will not find out the work which God has done from the beginning even to the end. </p>
+<p><strong>Ecclesiastes 3:11</strong>: He has made everything appropriate in its time. He has also set eternity in their heart, yet so that man will not find out the work which God has done from the beginning even to the end. </p>
 
-<p><strong>Isaiah 25:8</strong> – He will swallow up death forever, and the Lord God will wipe away tears from all faces, and the reproach of his people he will take away from all the earth, for the Lord has spoken. </p>
+<p><strong>Isaiah 25:8</strong>: He will swallow up death forever, and the Lord God will wipe away tears from all faces, and the reproach of his people he will take away from all the earth, for the Lord has spoken. </p>
 
-<p><strong>Deuteronomy 31:8</strong> – The Lord himself goes before you and will be with you; he will never leave you nor forsake you.</p>
+<p><strong>Deuteronomy 31:8</strong>: The Lord himself goes before you and will be with you; he will never leave you nor forsake you.</p>
 
-<p><strong>Corinthians 1:5</strong> – For as we share abundantly in Christ’s sufferings, so through Christ, we share abundantly in comfort too.</p>
+<p><strong>Corinthians 1:5</strong>: For as we share abundantly in Christ’s sufferings, so through Christ, we share abundantly in comfort too.</p>
 
-<p><strong>2 Corinthians 1:3-4</strong> – who comforts us in all our affliction so that we will be able to comfort those who are in any affliction with the comfort with which we ourselves are comforted by God.</p>
+<p><strong>2 Corinthians 1:3-4</strong>: who comforts us in all our affliction so that we will be able to comfort those who are in any affliction with the comfort with which we ourselves are comforted by God.</p>
 
-<p><strong>Isaiah 57:1-2 </strong>– The righteous perish, and no one takes it to heart; the devout are taken away, and no one understands that the righteous are taken away to be spared from evil. Those who walk uprightly enter into peace; they find rest as they lie in death.</p>
+<p><strong>Isaiah 57:1-2 </strong>: The righteous perish, and no one takes it to heart; the devout are taken away, and no one understands that the righteous are taken away to be spared from evil. Those who walk uprightly enter into peace; they find rest as they lie in death.</p>
 
-<p><strong>John 16:22</strong> – Therefore, you too have grief now; but I will see you again, and your heart will rejoice, and no one will take your joy away from you.</p>
+<p><strong>John 16:22</strong>: Therefore, you too have grief now; but I will see you again, and your heart will rejoice, and no one will take your joy away from you.</p>
 
-<p><strong>Psalm 9:9</strong> – The LORD also will be a stronghold for the oppressed, A stronghold in times of trouble;</p>
+<p><strong>Psalm 9:9</strong>: The LORD also will be a stronghold for the oppressed, A stronghold in times of trouble;</p>
 
-<p><strong>Psalm 46:1</strong> – God is our refuge and strength. A very present help in trouble.</p>
+<p><strong>Psalm 46:1</strong>: God is our refuge and strength. A very present help in trouble.</p>
 
-<p><strong>Psalms 34:18</strong> – The Lord is near to the brokenhearted and saves the crushed in Spirit.</p>
+<p><strong>Psalms 34:18</strong>: The Lord is near to the brokenhearted and saves the crushed in Spirit.</p>
 
-<p><strong>Revelation 21:4</strong> – He will wipe every tear from their eyes. There will be no more death or mourning or crying or pain, for the old order of things has passed away.</p>
+<p><strong>Revelation 21:4</strong>: He will wipe every tear from their eyes. There will be no more death or mourning or crying or pain, for the old order of things has passed away.</p>
 
-<p><strong>Hebrews 13:5</strong> – God has said, ‘Never will I leave you; never will I forsake you.</p>
+<p><strong>Hebrews 13:5</strong>: God has said, ‘Never will I leave you; never will I forsake you.</p>
 
-<p><strong>Isaiah 41:10</strong> – So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.</p>
+<p><strong>Isaiah 41:10</strong>: So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.</p>
 
-<p><strong>Isaiah 66:13</strong> – As a mother comforts her child, so will I comfort you.</p>
+<p><strong>Isaiah 66:13</strong>: As a mother comforts her child, so will I comfort you.</p>
 
-<p><strong>Jeremiah 31:13</strong> – For I will turn their mourning into joy and will comfort them, and make them rejoice from their sorrow.</p>
+<p><strong>Jeremiah 31:13</strong>: For I will turn their mourning into joy and will comfort them, and make them rejoice from their sorrow.</p>
 
-<p><strong>John 14:18</strong> – I will not leave you comfortless: I will come to you.</p>
+<p><strong>John 14:18</strong>: I will not leave you comfortless: I will come to you.</p>
 
-<p><strong>John 16:22</strong> – You are now very sad. But later, I will see you, and you will be so happy that no one will be able to change the way you feel.</p>
+<p><strong>John 16:22</strong>: You are now very sad. But later, I will see you, and you will be so happy that no one will be able to change the way you feel.</p>
 
-<p><strong>Lamentations 3:31-33</strong> – For no one is cast off by the Lord forever.&#160;</p>
+<p><strong>Lamentations 3:31-33</strong>: For no one is cast off by the Lord forever.&#160;</p>
 
 <p>Though he brings grief, he will show compassion, so great is his unfailing love. For he does not willingly bring affliction or grief to anyone.</p>
 
-<p><strong>1 Chronicle 16:11</strong> – Seek the LORD and his strength; seek his presence continually!</p>
+<p><strong>1 Chronicle 16:11</strong>: Seek the LORD and his strength; seek his presence continually!</p>
 
-<p><strong>Deuteronomy 31:8 </strong>– It is the Lord who goes before you. He will be with you; he will not fail you or forsake you. Do not fear or be dismayed.</p>
+<p><strong>Deuteronomy 31:8 </strong>: It is the Lord who goes before you. He will be with you; he will not fail you or forsake you. Do not fear or be dismayed.</p>
 
-<p><strong>Exodus 15:2</strong> – The Lord is my strength and my song; he has given me victory. This is my God, and I will praise him, my Father’s God, and I will exalt him!</p>
+<p><strong>Exodus 15:2</strong>: The Lord is my strength and my song; he has given me victory. This is my God, and I will praise him, my Father’s God, and I will exalt him!</p>
 
-<p><strong>Exodus 33:14</strong> – My presence will go with you, and I will give you rest.</p>
+<p><strong>Exodus 33:14</strong>: My presence will go with you, and I will give you rest.</p>
 
-<p><strong>Isaiah 26: 3-4</strong> – Those of steadfast mind you keep in peace, because they trust in you. Trust in the Lord forever, for, in the Lord God, you have an everlasting rock.</p>
+<p><strong>Isaiah 26: 3-4</strong>: Those of steadfast mind you keep in peace, because they trust in you. Trust in the Lord forever, for, in the Lord God, you have an everlasting rock.</p>
 
-<p><strong>Isaiah 41:10</strong> – So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.</p>
+<p><strong>Isaiah 41:10</strong>: So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.</p>
 
-<p><strong>Nehemiah 8:10 </strong>– Do not grieve, for the joy of the Lord is your strength.</p>
+<p><strong>Nehemiah 8:10 </strong>: Do not grieve, for the joy of the Lord is your strength.</p>
 
-<p><strong>Proverbs 18:</strong>10 – The name of the Lord is a strong tower; the righteous run into it and are safe.</p>
+<p><strong>Proverbs 18:</strong>10: The name of the Lord is a strong tower; the righteous run into it and are safe.</p>
 
 
 <p><a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a> · <a href="/contact/" target="_blank" rel="noopener">Contact</a></p>

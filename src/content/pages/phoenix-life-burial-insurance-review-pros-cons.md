@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Phoenix Life Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Phoenix Life Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -67,19 +67,19 @@ sidebar: true
 
 <h2 id="pros-of-phoenix-life-burial-insurance"><strong>Pros of Phoenix Life burial insurance</strong></h2>
 
-<p><strong>Higher face amount option</strong> – maximum coverage depends on your age</p>
+<p><strong>Higher face amount option</strong>: maximum coverage depends on your age</p>
 
-<p><strong>First-day full coverage</strong> – to some medical impairments like mental disorders such as anxiety disorders, Bipolar disorder, depression, nervous disorder, and seizures.</p>
+<p><strong>First-day full coverage</strong>: to some medical impairments like mental disorders such as anxiety disorders, Bipolar disorder, depression, nervous disorder, and seizures.</p>
 
-<p><strong>Simplified application process</strong> – the whole application can be made over the phone in less than 15 minutes.</p>
+<p><strong>Simplified application process</strong>: the whole application can be made over the phone in less than 15 minutes.</p>
 
 <h2 id="cons-of-phoenix-life-burial-insurance"><strong>Cons of Phoenix Life burial insurance</strong></h2>
 
-<p><strong>Not competitively priced</strong> – compared with other non-medical exam burial insurance companies. Other companies are priced much lower than this plan.</p>
+<p><strong>Not competitively priced</strong>: compared with other non-medical exam burial insurance companies. Other companies are priced much lower than this plan.</p>
 
-<p><strong>Five years lookback period – </strong>on alcohol and drug use </p>
+<p><strong>Five years lookback period: </strong>on alcohol and drug use </p>
 
-<p><strong>Designed for healthier individuals</strong> – significant medical conditions will not qualify for a first-day coverage plan.</p>
+<p><strong>Designed for healthier individuals</strong>: significant medical conditions will not qualify for a first-day coverage plan.</p>
 
 <h2 id="phoenix-life-burial-insurance-products"><br><strong>Phoenix Life burial insurance products</strong></h2>
 
@@ -89,18 +89,18 @@ sidebar: true
 
 <p><br><strong>PHOENIX REMEMBRANCE LIFE FEATURES:</strong></p>
 
-<p><strong>Simplified issue</strong> – no medical exam required</p>
+<p><strong>Simplified issue</strong>: no medical exam required</p>
 
-<p><strong>Whole life</strong> – coverage does not expire</p>
+<p><strong>Whole life</strong>: coverage does not expire</p>
 
-<p><strong>First-day coverage</strong> – no waiting period</p>
+<p><strong>First-day coverage</strong>: no waiting period</p>
 
 <p><strong>Coverage Amount Available</strong>:&#160;</p>
 
 <ul>
-<li>Ages 30–59 can get $10,000–$100,000&#160;</li>
-<li>Ages 60–69 can get $10,000–$75,000&#160;</li>
-<li>Ages 70–80 can get $10,000–$50,000&#160;</li>
+<li>Ages 30 to 59 can get $10,000 to $100,000&#160;</li>
+<li>Ages 60 to 69 can get $10,000 to $75,000&#160;</li>
+<li>Ages 70 to 80 can get $10,000 to $50,000&#160;</li>
 </ul>
 
 <p><strong>Premium payment options</strong>: Monthly bank draft, Quarterly, Semi-annual, or Annual.</p>
@@ -109,31 +109,31 @@ sidebar: true
 
 <h2 id="phoenix-life-burial-insurance-riders"><br><strong>Phoenix Life burial insurance riders</strong></h2>
 
-<p><strong>Terminal Illness Rider</strong> – this accelerated death benefit rider is included in the burial insurance at no additional fee. You can accelerate a portion, usually up to 95% of your death benefit, if you get a terminal illness diagnosis or a life expectancy of 12 months or less.&#160;</p>
+<p><strong>Terminal Illness Rider</strong>: this accelerated death benefit rider is included in the burial insurance at no additional fee. You can accelerate a portion, usually up to 95% of your death benefit, if you get a terminal illness diagnosis or a life expectancy of 12 months or less.&#160;</p>
 
-<p><strong>Critical Illness Rider</strong> – advances up to 95% of the death benefit amount if you are diagnosed with any critical illness such as stroke, heart attack, kidney failure, cancer, ALS, or major organ transplant.</p>
+<p><strong>Critical Illness Rider</strong>: advances up to 95% of the death benefit amount if you are diagnosed with any critical illness such as stroke, heart attack, kidney failure, cancer, ALS, or major organ transplant.</p>
 
-<p><strong>Accidental Death Benefit Rider</strong> – this rider will pay an additional lump-sum amount equal to 100% of your face amount if you die from an accident. To be eligible, you must be under age 65 when applying. This benefit ends when you turn 75 years old.</p>
+<p><strong>Accidental Death Benefit Rider</strong>: this rider will pay an additional lump-sum amount equal to 100% of your face amount if you die from an accident. To be eligible, you must be under age 65 when applying. This benefit ends when you turn 75 years old.</p>
 
 <p><br><strong>OPTIONAL RIDERS</strong></p>
 
-<p><strong>Education Benefit Rider</strong> – helps pay college education expenses for children or grandchildren after the insured’s death. This rider provides up to 4 annual installments between the beneficiary’s 18th and 22nd birthday.</p>
+<p><strong>Education Benefit Rider</strong>: helps pay college education expenses for children or grandchildren after the insured’s death. This rider provides up to 4 annual installments between the beneficiary’s 18th and 22nd birthday.</p>
 
 <p>To receive payments, the beneficiary must provide annual written verification of attendance at a federal-aid eligible college or university. Full-time active-duty enlistment in the military may also meet the attendance requirement. </p>
 
 <p>Payment will stop if the beneficiary fails to provide annual verification or after the four-yearly payments have been made. You can add up to 5 education benefit riders.</p>
 
-<p><strong>Income Protection Lifetime Income Rider</strong> – this rider will provide the beneficiary with a reliable lifetime income after the insured’s death. Monthly payments begin after the insured dies and continue until the beneficiary passes away.</p>
+<p><strong>Income Protection Lifetime Income Rider</strong>: this rider will provide the beneficiary with a reliable lifetime income after the insured’s death. Monthly payments begin after the insured dies and continue until the beneficiary passes away.</p>
 
-<p><strong>Income Term Rider</strong> – for younger age clients during their working years. This rider helps replace employment income lost due to the insured’s death. This rider provides a monthly income stream to the beneficiary until age 65. Monthly payments begin after the end of the insured life or the beneficiary’s 65th birthday or death.</p>
+<p><strong>Income Term Rider</strong>: for younger age clients during their working years. This rider helps replace employment income lost due to the insured’s death. This rider provides a monthly income stream to the beneficiary until age 65. Monthly payments begin after the end of the insured life or the beneficiary’s 65th birthday or death.</p>
 
-<p><strong>Continuing Family Traditions Legacy Rider </strong>– this rider helps to keep birthday traditions between the insured and their children or grandchildren. It provides annual birthday gift money to the beneficiary. </p>
+<p><strong>Continuing Family Traditions Legacy Rider </strong>: this rider helps to keep birthday traditions between the insured and their children or grandchildren. It provides annual birthday gift money to the beneficiary. </p>
 
 <p>The payments begin until the beneficiary’s birthday after the insured’s death and continue until the beneficiary’s 22nd birthday or death. You may choose to add five legacy riders to your policy.</p>
 
 <p><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-does-phoenix-life-make-the-most-sense"><br><strong>When does Phoenix Life burial insurance make the most sense?</strong></h2>
 
@@ -464,9 +464,9 @@ sidebar: true
 <p><strong>Here’s Phoenix Life’s financial rating from top rating agencies in the country:</strong></p>
 
 <ul>
-<li>A.M. Best rating – B or stable </li>
-<li>Standard and Poor’s rating – B+ </li>
-<li>Better Business Bureau rating – A+</li>
+<li>A.M. Best rating: B or stable </li>
+<li>Standard and Poor’s rating: B+ </li>
+<li>Better Business Bureau rating: A+</li>
 </ul>
 
 <p>Even though Phoenix Life is not an A-rated company, they had a long history of satisfying its financial obligations to its policyholders. Their high ratings from BBB indicate superior customer service. </p>
@@ -480,13 +480,13 @@ sidebar: true
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>

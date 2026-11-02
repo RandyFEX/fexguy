@@ -90,7 +90,7 @@ export const BURIAL_GUIDES: GuideCluster[] = [
     supporting: [
       { href: '/burial-insurance/top-10-final-expense-life-insurance-companies/', label: 'Top 10 Final Expense Life Insurance Companies' },
       { href: '/burial-insurance/how-to-apply-for-burial-insurance/', label: 'How to Apply For Burial Insurance' },
-      { href: '/declined-for-life-insurance/', label: 'Declined for Life Insurance – What To Do Now?' },
+      { href: '/declined-for-life-insurance/', label: 'Declined for Life Insurance: What To Do Now?' },
     ],
     more: [
       { href: '/burial-insurance/burial-insurance-application-process/', label: 'Burial Insurance Application Process' },
@@ -107,14 +107,14 @@ export const BURIAL_GUIDES: GuideCluster[] = [
     title: 'Coverage by age and life stage',
     primary: { href: '/burial-insurance/for-seniors/', label: 'Burial Policies for Seniors' },
     supporting: [
-      { href: '/burial-insurance/over-70/', label: 'Burial Insurance Over 70 – What You Need To Know' },
+      { href: '/burial-insurance/over-70/', label: 'Burial Insurance Over 70: What You Need To Know' },
       { href: '/burial-insurance/over-80/', label: 'Burial Insurance Over 80' },
       { href: '/burial-insurance/life-insurance-for-seniors/', label: 'Life Insurance for Seniors' },
     ],
     more: [
       { href: '/burial-insurance/funeral-insurance-for-seniors/', label: 'Funeral Insurance for Seniors' },
       { href: '/final-expense-life-insurance-over-80/', label: 'Final Expense Insurance for Seniors Over 80' },
-      { href: '/burial-insurance/life-insurance-widows/', label: 'Final Expense Life Insurance – Widows Age 50-85' },
+      { href: '/burial-insurance/life-insurance-widows/', label: 'Final Expense Life Insurance: Widows Age 50-85' },
       { href: '/what-happens-when-your-spouse-died-no-life-insurance/', label: 'When a Spouse Dies Without Life Insurance' },
     ],
   },

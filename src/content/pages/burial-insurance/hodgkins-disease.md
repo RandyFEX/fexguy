@@ -92,7 +92,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Level insurance rates age 50–85</h3>
+<h3>Level insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

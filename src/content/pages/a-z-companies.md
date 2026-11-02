@@ -66,13 +66,13 @@ sidebar: true
 <p><strong>Guaranteed Issue WHOLE LIFE 2-year waiting period companies:</strong></p>
 
 <ul>
-<li>AAA Life Insurance – 2-year wait</li>
-<li><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG</a> (Corebridge) – 2-year wait</li>
-<li>American National – 2-year wait</li>
-<li><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn $9.95 Plan</a> – 2-year wait</li>
-<li><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> – 2-year wait</li>
-<li><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a> – Out of business!</li>
-<li><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual of Omaha</a> (United of Omaha plan) – 2-year wait</li>
+<li>AAA Life Insurance: 2-year wait</li>
+<li><a href="/aig-life-insurance-company-review/" target="_blank" rel="noreferrer noopener">AIG</a> (Corebridge): 2-year wait</li>
+<li>American National: 2-year wait</li>
+<li><a href="/colonial-penn-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Colonial Penn $9.95 Plan</a>: 2-year wait</li>
+<li><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a>: 2-year wait</li>
+<li><a href="/great-western-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Great Western</a>: Out of business!</li>
+<li><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual of Omaha</a> (United of Omaha plan): 2-year wait</li>
 </ul>
 
 <p>NOTE: Most plans that advertise on TV only offer 2-year waiting periods plans.</p>
@@ -86,11 +86,11 @@ sidebar: true
 <p><strong>Common TERM Life Companies:</strong></p>
 
 <ul>
-<li>AAA Life Insurance – Rate increases every 5 years &amp; cancels after age 80</li>
-<li><a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
-<li><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
-<li>New York Life  – Rate increases every 5 years &amp; cancels after age 80</li>
-<li><a href="/trustage-price-increase/" target="_blank" rel="noreferrer noopener">TruStage</a>  – Rate increases every 5 years &amp; cancels after age 80</li>
+<li>AAA Life Insurance: Rate increases every 5 years &amp; cancels after age 80</li>
+<li><a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a>: Rate increases every 5 years &amp; cancels after age 80</li>
+<li><a href="/globe-life-price-increase/" target="_blank" rel="noreferrer noopener">Globe Life</a>: Rate increases every 5 years &amp; cancels after age 80</li>
+<li>New York Life: Rate increases every 5 years &amp; cancels after age 80</li>
+<li><a href="/trustage-price-increase/" target="_blank" rel="noreferrer noopener">TruStage</a>: Rate increases every 5 years &amp; cancels after age 80</li>
 </ul>
 
 <h2><strong> Life insurance qualifying questions</strong></h2>
@@ -118,11 +118,11 @@ sidebar: true
 <p><strong>Here are some rider-specific features:</strong></p>
 
 <ul>
-<li><strong>Terminal Illness</strong> – Generally included at no extra cost.</li>
-<li><strong>Nursing Home Confinement</strong> – Sometimes included at no extra cost.</li>
-<li><strong>Accidental Death</strong> – Often an additional fee to add to a policy. Often cancels at age 70.</li>
-<li><strong>Children Rider</strong> – Only some companies offer this, and there is an additional fee.</li>
-<li><strong>Grandchildren Rider</strong> – Only some companies offer this, and there is an additional fee.</li>
+<li><strong>Terminal Illness</strong>: Generally included at no extra cost.</li>
+<li><strong>Nursing Home Confinement</strong>: Sometimes included at no extra cost.</li>
+<li><strong>Accidental Death</strong>: Often an additional fee to add to a policy. Often cancels at age 70.</li>
+<li><strong>Children Rider</strong>: Only some companies offer this, and there is an additional fee.</li>
+<li><strong>Grandchildren Rider</strong>: Only some companies offer this, and there is an additional fee.</li>
 </ul>
 
 <table class="table-wrap" id="tablepress-107">

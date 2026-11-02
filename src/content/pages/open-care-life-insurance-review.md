@@ -123,7 +123,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Modified or Graded Plans (Other Carriers)</td>
-<td>Partial Protection First 1–2 Years</td>
+<td>Partial Protection First 1 to 2 Years</td>
 <td>Moderate</td>
 <td>Partial Payout Before Full Benefit Begins</td>
 <td>Those With Specific Conditions</td>
@@ -225,8 +225,8 @@ The accidental death assumption
 <ul>
 <li>Primary physician information</li>
 <li>PHYSICIAN or CLINIC with the most recent medical records</li>
-<li>Physician/clinic – phone number</li>
-<li>Physician/clinic – address</li>
+<li>Physician/clinic: phone number</li>
+<li>Physician/clinic: address</li>
 <li>Date last seen</li>
 <li>Reason for doctor visits</li>
 </ul>
@@ -283,21 +283,21 @@ The no-questions shortcut
 <td>Guaranteed-Issue Whole Life</td>
 <td>No</td>
 <td>Yes, 2 Years</td>
-<td>$2,000–$25,000</td>
+<td>$2,000 to $25,000</td>
 <td>Varies</td>
 </tr>
 <tr>
 <td>Simplified-Issue Whole Life</td>
 <td>Yes</td>
 <td>No</td>
-<td>$5,000–$50,000</td>
+<td>$5,000 to $50,000</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Term Life (Rebranded as “Senior Plan”)</td>
 <td>Yes</td>
 <td>No</td>
-<td>$25,000–$100,000+</td>
+<td>$25,000 to $100,000+</td>
 <td>Yes</td>
 </tr>
 </tbody>

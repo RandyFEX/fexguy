@@ -97,7 +97,7 @@ sidebar: true
 
 <ol>
 <li><strong>Proof of Insurable interest</strong>&#160;means you would have a financial loss if your parent passes. Financial loss could include funeral, medical, or leftover credit card bills.&#160;</li>
-<li><strong>Consent to review Medical History</strong> – The Health Insurance Portability and Accountability Act HIPPA indicates that your parents must give full consent for their medical history to be reviewed. Without this consent, your application cannot proceed.&#160;</li>
+<li><strong>Consent to review Medical History</strong>: The Health Insurance Portability and Accountability Act HIPPA indicates that your parents must give full consent for their medical history to be reviewed. Without this consent, your application cannot proceed.&#160;</li>
 </ol>
 
 <p>There’s no need to have an actual medical exam, but your parents will have to answer some health questions and allow the carrier to check your parent’s prescription history. This allows the insurance company to determine medically if they are eligible for coverage.</p>
@@ -133,10 +133,10 @@ sidebar: true
 <ul>
 <li><strong>Important Things to Consider Before Buying Life Insurance For Your Parents</strong><strong>There are four parties involved in the purchase of a life insurance policy:</strong>
 <ul>
-<li><strong>Insured</strong>&#160;– The insured is the person covered by the life insurance; her death will result in a death benefit payout. In this instance, it will be your mother.</li>
-<li><strong>Owner</strong>&#160;– The policy owner holds the rights to the life insurance contract and has the right to change the policy, such as changing the beneficiary, transferring ownership, lowering death benefits, adding or deleting riders, and requesting a rating change for the insured.</li>
-<li><strong>Payor</strong>&#160;– is the person who will be paying the premium. The payor is also considered the owner of the policy.</li>
-<li><strong>Beneficiary</strong>&#160;– is the person designated to receive the death benefit payout. You can be the beneficiary of your mom’s policy.</li>
+<li><strong>Insured</strong>: The insured is the person covered by the life insurance; her death will result in a death benefit payout. In this instance, it will be your mother.</li>
+<li><strong>Owner</strong>: The policy owner holds the rights to the life insurance contract and has the right to change the policy, such as changing the beneficiary, transferring ownership, lowering death benefits, adding or deleting riders, and requesting a rating change for the insured.</li>
+<li><strong>Payor</strong>: is the person who will be paying the premium. The payor is also considered the owner of the policy.</li>
+<li><strong>Beneficiary</strong>: is the person designated to receive the death benefit payout. You can be the beneficiary of your mom’s policy.</li>
 </ul>
 </li>
 </ul>

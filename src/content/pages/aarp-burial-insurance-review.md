@@ -56,7 +56,7 @@ sidebar: true
 <ul>
 <li><strong>Level:</strong> Level burial insurance offers 1st-day coverage and pays the full death benefit from day one. (AARP Term and Whole Life).</li>
 <li><strong>Graded:</strong> Graded burial insurance limits benefits during the 12 to 24 months for health or medical-related causes of death.</li>
-<li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for causes of death related to health or medical conditions. (AARP Guaranteed Acceptance – NEVER recommended).</li>
+<li><strong>Guaranteed Issue:</strong> Guaranteed issue burial insurance requires no health questions but includes a 2-year waiting period before it pays out for causes of death related to health or medical conditions. (AARP Guaranteed Acceptance, NEVER recommended).</li>
 </ul>
 
 <h3>AARP policy payout comparison</h3>
@@ -179,7 +179,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h2>Pros and cons – AARP</h2>
+<h2>Pros and cons: AARP</h2>
 
 <p>Comparing AARP advantages and limitations helps seniors make informed decisions.</p>
 

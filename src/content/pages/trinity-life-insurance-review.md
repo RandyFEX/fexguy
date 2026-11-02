@@ -66,7 +66,7 @@ sidebar: true
 <td>$69</td>
 </tr>
 <tr>
-<td>AETNA – Accendo<br>CVS Health</td>
+<td>AETNA: Accendo<br>CVS Health</td>
 <td>$27</td>
 <td>$40</td>
 <td>$58</td>
@@ -171,7 +171,7 @@ sidebar: true
 <tbody>
 <tr>
 <td>ISSUE AGES</td>
-<td>50–85 YEARS OLD</td>
+<td>50 to 85 YEARS OLD</td>
 </tr>
 <tr>
 <td>BENEFIT AMOUNT</td>
@@ -290,7 +290,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-trinity-life-riders-what-s-included-vs-optional"><strong>Trinity Life riders – what’s included vs. optional</strong></h2>
+<h2 id="h-trinity-life-riders-what-s-included-vs-optional"><strong>Trinity Life riders: what’s included vs. optional</strong></h2>
 
 <p>Riders are the little extras that can make a big difference when life takes a tough turn. With Trinity’s Golden Eagle plan, two of the most valuable riders are built right in.</p>
 
@@ -335,7 +335,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-term-life-from-trinity-25-000-to-5-000-000-with-conversion-when-it-beats-final-expense"><strong>Term life from Trinity: $25,000 to $5,000,000 with conversion – when it beats final expense</strong></h2>
+<h2 id="h-term-life-from-trinity-25-000-to-5-000-000-with-conversion-when-it-beats-final-expense"><strong>Term life from Trinity: $25,000 to $5,000,000 with conversion, when it beats final expense</strong></h2>
 
 <p>Most people know Trinity for final expense, but here’s a surprise: they also offer term life insurance with coverage amounts as high as $5 million.</p>
 

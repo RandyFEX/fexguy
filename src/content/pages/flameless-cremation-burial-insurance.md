@@ -93,7 +93,7 @@ sidebar: true
 
 <p>The environmental impact of traditional cremation is not minor. Cremation releases 250,000 tons of carbon dioxide into the atmosphere yearly, the same as burning 30 million gallons of gasoline. </p>
 
-<p>In spite of this, traditional cremation still has an environmental advantage over burial – think of all the resources used to bury a deceased person.</p>
+<p>In spite of this, traditional cremation still has an environmental advantage over burial: think of all the resources used to bury a deceased person.</p>
 
 <p>Traditional cremation and burial have a higher carbon footprint than alkaline hydrolysis. </p>
 
@@ -110,23 +110,23 @@ sidebar: true
 <p><strong>AVERAGE FUNERAL COST WITH VIEWING AND CREMATION</strong>:</p>
 
 <ul>
-<li>$725 – Embalming</li>
-<li>&#160; $325 – Removal of the body to funeral home </li>
-<li>$250 – Other preparation of the body</li>
-<li>$2,100 – Non-declinable funeral services fee</li>
-<li>&#160; $435 – Use of staff and funeral facilities for viewing</li>
-<li>&#160; $500 – Use of staff and funeral facilities for a funeral ceremony</li>
-<li>&#160;&#160; $150 – Service car</li>
-<li>&#160;&#160; $160 – Basic memorial printed package</li>
-<li>&#160;&#160; $350 – Cremation fee</li>
-<li>$1,000 – Cremation Casket</li>
-<li>&#160;&#160; $275 – Urn </li>
-<li><strong>$6,260 – TOTAL</strong></li>
+<li>$725: Embalming</li>
+<li>&#160; $325: Removal of the body to funeral home </li>
+<li>$250: Other preparation of the body</li>
+<li>$2,100: Non-declinable funeral services fee</li>
+<li>&#160; $435: Use of staff and funeral facilities for viewing</li>
+<li>&#160; $500: Use of staff and funeral facilities for a funeral ceremony</li>
+<li>&#160;&#160; $150: Service car</li>
+<li>&#160;&#160; $160: Basic memorial printed package</li>
+<li>&#160;&#160; $350: Cremation fee</li>
+<li>$1,000: Cremation Casket</li>
+<li>&#160;&#160; $275: Urn </li>
+<li><strong>$6,260: TOTAL</strong></li>
 </ul>
 
-<p><strong>Cost of Direct Cremation with viewing</strong> – $1,400-$3,200</p>
+<p><strong>Cost of Direct Cremation with viewing</strong>: $1,400-$3,200</p>
 
-<p><strong>Average Basic Cremation fee</strong> – $350-$1,200 this low-cost cremation does not include a traditional funeral. The remains are cremated in a simple container. There no viewing or wake that’s why the cost of embalming and body preparation is eliminated.</p>
+<p><strong>Average Basic Cremation fee</strong>: $350-$1,200 this low-cost cremation does not include a traditional funeral. The remains are cremated in a simple container. There no viewing or wake that’s why the cost of embalming and body preparation is eliminated.</p>
 
 <p><strong>COST OF FLAMELESS CREMATION</strong></p>
 
@@ -168,17 +168,17 @@ month or longer to know if you qualify.</p>
 
 <p><strong>Features of Cremation Insurance</strong>:</p>
 
-<p><strong><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong> – only health questions to answer</p>
+<p><strong><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong>: only health questions to answer</p>
 
-<p><strong>Level premium</strong> – premiums are guaranteed never to
+<p><strong>Level premium</strong>: premiums are guaranteed never to
 increase</p>
 
-<p><strong>Fixed death benefit</strong> – benefit amount is guaranteed
+<p><strong>Fixed death benefit</strong>: benefit amount is guaranteed
 never to decrease</p>
 
-<p><strong>The policy will not expire</strong> – it will never expire and lasts up to age 121 years old.</p>
+<p><strong>The policy will not expire</strong>: it will never expire and lasts up to age 121 years old.</p>
 
-<p><strong>Cash value builds up</strong> – accumulates cash value over
+<p><strong>Cash value builds up</strong>: accumulates cash value over
 the years </p>
 
 <p>If you do not expect to have enough money at the end of your life to cover your funeral or burial expenses, then a cremation insurance policy might make sense to you. </p>
@@ -187,13 +187,13 @@ the years </p>
 
 <h2 id="who-can-apply-for-flameless-cremation-burial-insurance"><br><strong>Who can apply for flameless cremation burial insurance?</strong></h2>
 
-<p><strong>Age requirement</strong> – you must be 50 to 85 years old to
+<p><strong>Age requirement</strong>: you must be 50 to 85 years old to
 be eligible for cremation insurance.</p>
 
-<p><strong>U.S citizen</strong> – you must be a U.S. citizen or a
+<p><strong>U.S citizen</strong>: you must be a U.S. citizen or a
 permanent resident to be able to buy cremation insurance</p>
 
-<p><strong>Mental capacity</strong> – you must have the mental ability to enter into a legal contract to qualify for cremation insurance.</p>
+<p><strong>Mental capacity</strong>: you must have the mental ability to enter into a legal contract to qualify for cremation insurance.</p>
 
 <h2 id="different-types-of-cremation-insurance"><br><strong>Different types of cremation insurance </strong></h2>
 
@@ -276,10 +276,10 @@ underwriting:</strong></p>
 
 <ul>
 <li><strong>No medical exam</strong> but with health questions </li>
-<li><strong>Top-rated insurance company</strong> – with an “A” rating or better from financial rating agencies</li>
-<li><strong>Fixed premiums</strong> – your premiums will never increase as you get older</li>
-<li><strong>Fixed death benefit</strong> – the benefit amount will not decrease with age or declining health</li>
-<li><strong>Whole life policy</strong> – your policy will not expire until age 121 years old</li>
+<li><strong>Top-rated insurance company</strong>: with an “A” rating or better from financial rating agencies</li>
+<li><strong>Fixed premiums</strong>: your premiums will never increase as you get older</li>
+<li><strong>Fixed death benefit</strong>: the benefit amount will not decrease with age or declining health</li>
+<li><strong>Whole life policy</strong>: your policy will not expire until age 121 years old</li>
 </ul>
 
 <p>Before you decide which cremation insurance to buy, answer the instant pricing estimate box. This way, you can compare prices from different insurance companies and choose the one that fits your needs.</p>
@@ -493,7 +493,7 @@ April 13, 2020 at 11:53 am
 <div class="comment-replies">
 <div class="comment" id="comment-3445">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Franklin – We are happy that you found our article informative. Thank you for visiting our website!</p>
+<p>Franklin: We are happy that you found our article informative. Thank you for visiting our website!</p>
 <div class="comment-meta">
 April 24, 2020 at 6:30 am                    
 </div>

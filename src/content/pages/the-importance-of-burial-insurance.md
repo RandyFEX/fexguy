@@ -113,19 +113,19 @@ sidebar: true
 
 <h2 id="burial-insurance-is-unique-in-three-different-ways"><br><strong>Burial insurance is unique in three different ways:</strong></h2>
 
-<h3><strong>#1 – relaxed underwriting</strong></h3>
+<h3><strong>#1: relaxed underwriting</strong></h3>
 
 <p>One of the unique characteristics of burial insurance is relaxed underwriting. Most of the health conditions accepted by burial insurance would get auto declined for any traditional life insurance policies.</p>
 
 <p>Relaxed underwriting enables most seniors with high-risk conditions to easily qualify for a policy.</p>
 
-<p><strong>#2 – No Health questions policies</strong></p>
+<p><strong>#2: No Health questions policies</strong></p>
 
 <p>Even though burial insurance has relaxed underwriting, some health conditions are so risky they are classified as uninsurable. There is a guaranteed issue policy with no exam or health questions for these high-risk health conditions.</p>
 
 <p>Applicants are guaranteed acceptance regardless of medical conditions!</p>
 
-<p><strong>#3 – Low face value options</strong></p>
+<p><strong>#3: Low face value options</strong></p>
 
 <p>Some burial insurance companies will let you purchase as little as $1,000 in coverage; no other type of life insurance will let you buy such a small amount of protection.</p>
 
@@ -521,7 +521,7 @@ June 10, 2020 at 10:13 am
 <div class="comment-replies">
 <div class="comment" id="comment-4647">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Barbara – You can get a free quote here – <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Barbara: You can get a free quote here: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 July 2, 2020 at 2:31 pm                    
 </div>
@@ -537,7 +537,7 @@ June 10, 2020 at 10:17 am
 <div class="comment-replies">
 <div class="comment" id="comment-4579">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Barbara – We recommend you start here – <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Barbara: We recommend you start here: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 June 29, 2020 at 8:49 am                    
 </div>

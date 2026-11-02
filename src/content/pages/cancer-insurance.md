@@ -93,14 +93,14 @@ sidebar: true
 <p><strong>Cancer insurance will cover things that Medicare won’t, such as:</strong></p>
 
 <ul>
-<li><strong>Experimental medicines and trial drugs</strong> – Medicare only covers certain experimental drugs if they’re part of a clinical trial.</li>
-<li><strong>Second opinions </strong>– You may need a second opinion from another doctor to confirm your diagnosis or treatment plan. Medicare will only cover one-second opinion per diagnosis.</li>
-<li><strong>Out-of-pocket costs</strong> – Even with Medicare, you may have to pay out-of-pocket costs for your cancer treatment, such as deductibles, copayments, and coinsurance. Cancer insurance will help you pay these costs.</li>
-<li>Transportation – You may need to travel for your cancer treatment. Cancer insurance will help you pay for transportation costs, such as gas, tolls, parking, rental car, and airfare.</li>
-<li>Hotels or lodging – If you travel for your cancer treatment, you may need to stay in a hotel or other lodging. Cancer insurance will help you pay for these costs.</li>
-<li><strong>Home care </strong>– You may need help with cooking, cleaning, and transportation if your cancer treatment makes it difficult to do these things yourself.</li>
-<li><strong>Clothing and hair pieces</strong> – Some cancer treatments, such as chemotherapy, will cause you to lose your hair. Cancer insurance will help you pay for wigs and other hair pieces.</li>
-<li><strong>Loss of income</strong> – If your cancer treatment prevents you from working, cancer insurance will help you replace some of your lost income.</li>
+<li><strong>Experimental medicines and trial drugs</strong>: Medicare only covers certain experimental drugs if they’re part of a clinical trial.</li>
+<li><strong>Second opinions </strong>: You may need a second opinion from another doctor to confirm your diagnosis or treatment plan. Medicare will only cover one-second opinion per diagnosis.</li>
+<li><strong>Out-of-pocket costs</strong>: Even with Medicare, you may have to pay out-of-pocket costs for your cancer treatment, such as deductibles, copayments, and coinsurance. Cancer insurance will help you pay these costs.</li>
+<li>Transportation: You may need to travel for your cancer treatment. Cancer insurance will help you pay for transportation costs, such as gas, tolls, parking, rental car, and airfare.</li>
+<li>Hotels or lodging: If you travel for your cancer treatment, you may need to stay in a hotel or other lodging. Cancer insurance will help you pay for these costs.</li>
+<li><strong>Home care </strong>: You may need help with cooking, cleaning, and transportation if your cancer treatment makes it difficult to do these things yourself.</li>
+<li><strong>Clothing and hair pieces</strong>: Some cancer treatments, such as chemotherapy, will cause you to lose your hair. Cancer insurance will help you pay for wigs and other hair pieces.</li>
+<li><strong>Loss of income</strong>: If your cancer treatment prevents you from working, cancer insurance will help you replace some of your lost income.</li>
 </ul>
 
 <h2 id="what-are-the-benefits-of-cancer-insurance"><br><strong>What are the benefits of cancer insurance?</strong></h2>
@@ -108,16 +108,16 @@ sidebar: true
 <p><strong>Here are the benefits of cancer insurance:</strong></p>
 
 <ul>
-<li><strong>Affordable</strong> – Cancer insurance plans are very affordable. You can get a cancer insurance policy for as little as $20 per month.</li>
-<li><strong>Flexible</strong> – Cancer insurance plans are flexible. You can choose the benefits that you want and need.</li>
-<li><strong>Customizable</strong> – Cancer insurance plans are customizable. You can add riders to your policy to cover experimental drugs and home care.</li>
-<li><strong>Portable</strong> – Cancer insurance plans are portable. You can keep your policy even if you change jobs or retire.</li>
-<li><strong>Easily available</strong> – Cancer insurance plans are easily available. You can get a policy from a life insurance company, an insurance agent, or online.</li>
-<li><strong>No need for hospitalization</strong> – You don’t need to be hospitalized to claim your benefits.</li>
-<li><strong>Lump-sum payout</strong> – You will receive a lump-sum payout if you are diagnosed with cancer.</li>
-<li><strong>Wide coverage</strong> – Cancer insurance plans have wide coverage. You can get coverage for most types of cancers.</li>
-<li><strong>Compensates for loss of income</strong> – Cancer insurance plans can help you replace your lost income if you cannot work because of your cancer diagnosis.</li>
-<li><strong>Coverage against high treatment costs</strong> – Cancer insurance plans can help you pay for expensive cancer treatments, such as chemotherapy and radiation therapy.</li>
+<li><strong>Affordable</strong>: Cancer insurance plans are very affordable. You can get a cancer insurance policy for as little as $20 per month.</li>
+<li><strong>Flexible</strong>: Cancer insurance plans are flexible. You can choose the benefits that you want and need.</li>
+<li><strong>Customizable</strong>: Cancer insurance plans are customizable. You can add riders to your policy to cover experimental drugs and home care.</li>
+<li><strong>Portable</strong>: Cancer insurance plans are portable. You can keep your policy even if you change jobs or retire.</li>
+<li><strong>Easily available</strong>: Cancer insurance plans are easily available. You can get a policy from a life insurance company, an insurance agent, or online.</li>
+<li><strong>No need for hospitalization</strong>: You don’t need to be hospitalized to claim your benefits.</li>
+<li><strong>Lump-sum payout</strong>: You will receive a lump-sum payout if you are diagnosed with cancer.</li>
+<li><strong>Wide coverage</strong>: Cancer insurance plans have wide coverage. You can get coverage for most types of cancers.</li>
+<li><strong>Compensates for loss of income</strong>: Cancer insurance plans can help you replace your lost income if you cannot work because of your cancer diagnosis.</li>
+<li><strong>Coverage against high treatment costs</strong>: Cancer insurance plans can help you pay for expensive cancer treatments, such as chemotherapy and radiation therapy.</li>
 </ul>
 
 <h2 id="why-should-you-buy-cancer-insurance"><br><strong>When does cancer insurance make sense?</strong></h2>

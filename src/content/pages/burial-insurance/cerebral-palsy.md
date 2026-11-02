@@ -44,10 +44,10 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with cerebral palsy they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
-<li><strong>Aflac Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Aetna Decline </strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
+<li><strong>Aflac Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 </ul>
 
 <h3>Cerebral palsy underwriting basics</h3>
@@ -87,16 +87,16 @@ sidebar: true
 <p>Cerebral palsy affects brain control of movement and muscle coordination, leading to lifelong motor limitations and related neurological and orthopedic complications that can affect underwriting decisions and policy selection when these conditions are present.</p>
 
 <ul>
-<li><strong>Muscle stiffness and spasticity</strong> – Abnormal muscle tone causes tightness, pain, and restricted movement.</li>
-<li><strong>Mobility limitations</strong> – Difficulty walking or transferring reduces independence and physical work capacity.</li>
-<li><strong>Joint and bone problems</strong> – Muscle imbalance leads to contractures, hip displacement, and scoliosis.</li>
-<li><strong>Chronic pain</strong> – Muscle tension and joint stress cause ongoing discomfort and fatigue.</li>
-<li><strong>Fine motor difficulties</strong> – Impaired hand control affects writing, dressing, and task precision.</li>
-<li><strong>Speech and communication challenges</strong> – Muscle control issues affect speech clarity and expressive language.</li>
-<li><strong>Swallowing and feeding difficulties</strong> – Poor muscle coordination increases choking risk and nutritional problems.</li>
-<li><strong>Seizure disorders</strong> – Epilepsy occurs more often and adds ongoing medical risk.</li>
-<li><strong>Respiratory complications</strong> – Weak trunk and swallowing muscles raise pneumonia risk.</li>
-<li><strong>Fatigue and reduced stamina</strong> – Increased effort for basic movement leads to early exhaustion and lower endurance.</li>
+<li><strong>Muscle stiffness and spasticity</strong>: Abnormal muscle tone causes tightness, pain, and restricted movement.</li>
+<li><strong>Mobility limitations</strong>: Difficulty walking or transferring reduces independence and physical work capacity.</li>
+<li><strong>Joint and bone problems</strong>: Muscle imbalance leads to contractures, hip displacement, and scoliosis.</li>
+<li><strong>Chronic pain</strong>: Muscle tension and joint stress cause ongoing discomfort and fatigue.</li>
+<li><strong>Fine motor difficulties</strong>: Impaired hand control affects writing, dressing, and task precision.</li>
+<li><strong>Speech and communication challenges</strong>: Muscle control issues affect speech clarity and expressive language.</li>
+<li><strong>Swallowing and feeding difficulties</strong>: Poor muscle coordination increases choking risk and nutritional problems.</li>
+<li><strong>Seizure disorders</strong>: Epilepsy occurs more often and adds ongoing medical risk.</li>
+<li><strong>Respiratory complications</strong>: Weak trunk and swallowing muscles raise pneumonia risk.</li>
+<li><strong>Fatigue and reduced stamina</strong>: Increased effort for basic movement leads to early exhaustion and lower endurance.</li>
 </ul>
 
 <h2>Understanding cerebral palsy policy types</h2>
@@ -115,7 +115,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Guarantee Trust Life insurance rates age 50–85</h3>
+<h3>Guarantee Trust Life insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

@@ -179,7 +179,7 @@ sidebar: true
 
 <p>VALife serves as a last-resort profile for veterans with such terrible health that no private carrier will touch them. If you cannot qualify for any other plan, this is better than nothing, but it should never be your first choice.</p>
 
-<h2>Frequently asked questions – VALife burial insurance review</h2>
+<h2>Frequently asked questions: VALife burial insurance review</h2>
 
 <h3>Is VALife a legitimate insurance program?</h3>
 

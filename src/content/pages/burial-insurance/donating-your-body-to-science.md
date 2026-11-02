@@ -59,8 +59,8 @@ sidebar: true
 <p>Donating your body can also remove these funeral costs:</p>
 
 <ul>
-<li>No embalming cost – embalming prevents the specific test from being performed because it damages the tissues</li>
-<li>No casket cost – you don’t need a coffin, but you can rent one from the      funeral home if you want to have a memorial service</li>
+<li>No embalming cost: embalming prevents the specific test from being performed because it damages the tissues</li>
+<li>No casket cost: you don’t need a coffin, but you can rent one from the      funeral home if you want to have a memorial service</li>
 </ul>
 
 <p>The Uniform Anatomical Gift Act governs a person’s legal right to choose whole body donation. Most states largely adopt it. </p>
@@ -107,8 +107,8 @@ their families.</p>
 
 <p>In most cases, you will know in advance if you will qualify
 for this program. So if you feel like you would like to leave a legacy and help
-the continuance of medical training or you want to forego the cost of a funeral
-– then sign up for whole body donation.</p>
+the continuance of medical training or you want to forego the cost of a funeral,
+then sign up for whole body donation.</p>
 
 <p>How do you donate your body to science? Donating your body to science is an easy process. Here are the ways:</p>
 
@@ -248,17 +248,17 @@ diabetes will not disqualify you for donation. </p>
 
 <h2 id="donating-to-science-resources"><br><strong>Donating to science resources</strong></h2>
 
-<p><strong>Listing of U.S. body donation programs</strong> – <a rel="noreferrer noopener" href="http://anatbd.acb.med.ufl.edu/usprograms/" target="_blank">http://anatbd.acb.med.ufl.edu/usprograms/</a></p>
+<p><strong>Listing of U.S. body donation programs</strong>: <a rel="noreferrer noopener" href="http://anatbd.acb.med.ufl.edu/usprograms/" target="_blank">http://anatbd.acb.med.ufl.edu/usprograms/</a></p>
 
 <p> <strong>International Society for Organ Donation</strong>:  <a href="https://www.tts.org/isodp/about-isodp/welcome-to-isodp" target="_blank" rel="noreferrer noopener">https://www.tts.org/isodp/about-isodp/welcome-to-isodp</a>  </p>
 
-<p><strong>Organ Donor</strong> – <a rel="noreferrer noopener" href="https://www.organdonor.gov/about/facts-terms/donation-faqs.html" target="_blank">https://www.organdonor.gov/about/facts-terms/donation-faqs.html</a></p>
+<p><strong>Organ Donor</strong>: <a rel="noreferrer noopener" href="https://www.organdonor.gov/about/facts-terms/donation-faqs.html" target="_blank">https://www.organdonor.gov/about/facts-terms/donation-faqs.html</a></p>
 
 <p><strong>Forensic Anthropology Center</strong> <a rel="noreferrer noopener" href="https://fac.utk.edu/" target="_blank">https://fac.utk.edu/</a></p>
 
 <p><strong>Private Anatomical Donation Programs:</strong></p>
 
-<p><strong>Science Care</strong> – <a rel="noreferrer noopener" href="https://www.sciencecare.com/" target="_blank">https://www.sciencecare.com/</a></p>
+<p><strong>Science Care</strong>: <a rel="noreferrer noopener" href="https://www.sciencecare.com/" target="_blank">https://www.sciencecare.com/</a></p>
 
 <p><strong>Anatomical Gift Association</strong> <a href="https://www.agaillinois.org/" target="_blank" rel="noreferrer noopener">https://www.agaillinois.org/</a></p>
 

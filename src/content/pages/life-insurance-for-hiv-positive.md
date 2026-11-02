@@ -94,7 +94,7 @@ sidebar: true
 <ol>
 <li>Guaranteed acceptance life insurance policies are&#160;<strong>usually limited to $25,000 in coverage</strong>. While it’s possible to buy multiple policies to make the total coverage exceed the $25,000 in coverage, it’s not a great option to consider financially.</li>
 <li>Most guaranteed acceptance life insurance policies cost more than traditional term or whole life insurance policies that require a medical exam. The cost of the premium is higher because insurance companies take on higher risk with this type of policy; they must charge more to cover their increased risk.</li>
-<li>Waiting period – All guaranteed issue life insurance policies have a graded benefit clause which states guaranteed life insurance policy will not provide coverage for natural causes of death for a specified period, typically two years once you purchase your life insurance policy.</li>
+<li>Waiting period: All guaranteed issue life insurance policies have a graded benefit clause which states guaranteed life insurance policy will not provide coverage for natural causes of death for a specified period, typically two years once you purchase your life insurance policy.</li>
 </ol>
 
 <p>A two-year waiting period before your guaranteed acceptance life insurance policy will provide coverage for natural causes of death.</p>
@@ -306,14 +306,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is </strong>required&#160;– easy to get approved.</li>
-<li>Ease of issue&#160;– easy to qualify and get insurance coverage.</li>
-<li>No Money Down to get approved&#160;– have your policy start whenever you want.</li>
-<li>Level premium&#160;– your premium will never increase.</li>
-<li>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</li>
-<li>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is </strong>required: easy to get approved.</li>
+<li>Ease of issue: easy to qualify and get insurance coverage.</li>
+<li>No Money Down to get approved: have your policy start whenever you want.</li>
+<li>Level premium: your premium will never increase.</li>
+<li>Fixed death benefit: your death benefit will never decrease for any reason.</li>
+<li>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance </strong></h2>

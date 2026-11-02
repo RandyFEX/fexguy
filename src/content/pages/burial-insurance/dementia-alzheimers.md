@@ -42,12 +42,12 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with dementia and Alzheimer’s disease they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Aflac Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Aflac Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 </ul>
 
 <h3>Dementia &amp; Alzheimer’s underwriting basics</h3>
@@ -86,16 +86,16 @@ sidebar: true
 <p>Dementia and Alzheimer’s cause progressive degeneration of brain cells, leading to declining memory, judgment, and functional ability, and those resulting impairments can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Memory loss</strong> – Short- and long-term memory decline interferes with daily tasks, medication use, and safety.</li>
-<li><strong>Cognitive impairment</strong> – Reduced reasoning, problem-solving, and judgment limit independence and decision-making.</li>
-<li><strong>Behavioral changes</strong> – Agitation, aggression, paranoia, and personality shifts strain relationships and care needs.</li>
-<li><strong>Loss of executive function</strong> – Difficulty planning, organizing, and following instructions affects work and self-care.</li>
-<li><strong>Communication difficulties</strong> – Word-finding problems and language loss impair effective communication.</li>
-<li><strong>Disorientation and wandering</strong> – Confusion about time and place increases injury and safety risk.</li>
-<li><strong>Decline in daily living abilities</strong> – Dressing, bathing, eating, and toileting often require assistance.</li>
-<li><strong>Sleep disturbances</strong> – Day-night reversal and insomnia worsen fatigue and caregiver burden.</li>
-<li><strong>Increased fall risk</strong> – Poor coordination and judgment lead to frequent falls and injuries.</li>
-<li><strong>Progressive loss of independence</strong> – Ongoing decline eventually requires full-time supervision or care.</li>
+<li><strong>Memory loss</strong>: Short- and long-term memory decline interferes with daily tasks, medication use, and safety.</li>
+<li><strong>Cognitive impairment</strong>: Reduced reasoning, problem-solving, and judgment limit independence and decision-making.</li>
+<li><strong>Behavioral changes</strong>: Agitation, aggression, paranoia, and personality shifts strain relationships and care needs.</li>
+<li><strong>Loss of executive function</strong>: Difficulty planning, organizing, and following instructions affects work and self-care.</li>
+<li><strong>Communication difficulties</strong>: Word-finding problems and language loss impair effective communication.</li>
+<li><strong>Disorientation and wandering</strong>: Confusion about time and place increases injury and safety risk.</li>
+<li><strong>Decline in daily living abilities</strong>: Dressing, bathing, eating, and toileting often require assistance.</li>
+<li><strong>Sleep disturbances</strong>: Day-night reversal and insomnia worsen fatigue and caregiver burden.</li>
+<li><strong>Increased fall risk</strong>: Poor coordination and judgment lead to frequent falls and injuries.</li>
+<li><strong>Progressive loss of independence</strong>: Ongoing decline eventually requires full-time supervision or care.</li>
 </ul>
 
 <h2>Understanding dementia and Alzheimer’s policy types</h2>
@@ -114,7 +114,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Gerber Life insurance rates age 50–80</h3>
+<h3>Gerber Life insurance rates age 50 to 80</h3>
 
 <table>
 <thead>

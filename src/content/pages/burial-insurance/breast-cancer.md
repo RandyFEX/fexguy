@@ -42,17 +42,17 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which breast cancer applicants they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Squamous Cell</a> or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
-<li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
-<li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Aetna Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Aflac&#160;Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aflac&#160;Decline&#160;</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Family Benefit Life Decline</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">Squamous Cell</a> or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Decline&#160;</strong>: In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
+<li><strong>Trinity Life Decline&#160;</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
 <h3>Breast cancer underwriting basics</h3>
@@ -97,7 +97,7 @@ sidebar: true
 
 <p><strong>Underwriting Approval Secrets:</strong> If you completed surgery and your doctor declared you “cured” more than 2 years ago, you are a prime candidate for first-day coverage. Being honest about the exact date of your last chemo session helps an agent find the right carrier immediately.</p>
 
-<p><strong>Short</strong><strong>–&#160;</strong>and<strong>&#160;Long-Term History:</strong>&#160;Maintenance medications like Tamoxifen are often seen as a positive sign that you are preventing recurrence. Your prescription history is how the insurance carriers verify medical stability.</p>
+<p><strong>Short</strong><strong>:&#160;</strong>and<strong>&#160;Long-Term History:</strong>&#160;Maintenance medications like Tamoxifen are often seen as a positive sign that you are preventing recurrence. Your prescription history is how the insurance carriers verify medical stability.</p>
 
 <p><strong>Could I Get Declined?:</strong> Being in hospice or needing help with activities like bathing or dressing will lead to a decline for standard plans. Recent hospitalizations for crises trigger postponement rather than permanent decline.</p>
 
@@ -144,7 +144,7 @@ sidebar: true
 
 <p>Here are some preferred rates for cancer cured more than 24 months ago. Your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>
@@ -192,8 +192,8 @@ sidebar: true
 
 <h3>Can a breast cancer survivor get a “Preferred” burial insurance rate?</h3>
 
-<p>Breast cancer survivors can qualify for “Preferred” insurance rates – the lowest available – if they have been cancer-free for a significant amount of time, typically five to ten years. For those with a very early-stage diagnosis (Stage 0 or 1), some carriers may offer preferred rates in as little as three years post-treatment. Achieving a preferred rating means you will pay the same low premium as someone who has never had a serious medical condition.</p>
+<p>Breast cancer survivors can qualify for “Preferred” insurance rates, the lowest available, if they have been cancer-free for a significant amount of time, typically five to ten years. For those with a very early-stage diagnosis (Stage 0 or 1), some carriers may offer preferred rates in as little as three years post-treatment. Achieving a preferred rating means you will pay the same low premium as someone who has never had a serious medical condition.</p>
 
 <h3>Why should I use an independent broker for breast cancer burial insurance?</h3>
 
-<p>An independent broker can compare dozens of insurance companies to find the one with the most lenient rules for your specific breast cancer history. Since every company has different “look-back” periods – some look back two years while others look back five – a broker ensures you don’t accidentally apply for a plan that forces you into a waiting period. This personalized shopping approach is the most effective way to secure immediate coverage at the lowest possible monthly cost.</p>
+<p>An independent broker can compare dozens of insurance companies to find the one with the most lenient rules for your specific breast cancer history. Since every company has different “look-back” periods, some look back two years while others look back five, a broker ensures you don’t accidentally apply for a plan that forces you into a waiting period. This personalized shopping approach is the most effective way to secure immediate coverage at the lowest possible monthly cost.</p>

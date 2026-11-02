@@ -65,7 +65,7 @@ sidebar: true
 
 <h2><strong>Policies that claim “no waiting period” but delay payouts</strong></h2>
 
-<p>Many policies marketed as immediate coverage actually delay full benefits for 1–2 years through graded or guaranteed-issue rules.</p>
+<p>Many policies marketed as immediate coverage actually delay full benefits for 1 to 2 years through graded or guaranteed-issue rules.</p>
 
 <p>Some companies use soft phrases like “benefits begin immediately” or “coverage starts the day you’re approved.” That wording sounds like first-day coverage, but it often only means they’ll refund your premiums for two years before paying full benefits.</p>
 
@@ -479,7 +479,7 @@ The “State-Regulated” postcard confusion
 
 <p><strong>Does life insurance kick in right away?</strong></p>
 
-<p>Most seniors qualify for plans that pay full benefits from day one. These are the plans 97% of seniors qualify for – they pay full benefits from day one.</p>
+<p>Most seniors qualify for plans that pay full benefits from day one. These are the plans 97% of seniors qualify for: they pay full benefits from day one.</p>
 
 <p><strong>Is there any insurance with no waiting period?</strong></p>
 

@@ -23,7 +23,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Cremation costs vary widely depending on services, add-ons, and where you live<br>• Direct cremation is cheapest but removes viewing and ceremony options – around $2,000 average<br>• Full-service cremation can cost 3x more than basic options – up to $4,000-$7,000 average<br>• Funeral homes often bundle extras that drive prices up fast – you get upsold when you are vulnerable<br>• Prices can vary by thousands, even within the same city – funeral homes have different overhead costs<br>• Most families overpay because they don’t compare providers first or have cremation insurance</p>
+<p>• Cremation costs vary widely depending on services, add-ons, and where you live<br>• Direct cremation is cheapest but removes viewing and ceremony options, around $2,000 average<br>• Full-service cremation can cost 3x more than basic options, up to $4,000-$7,000 average<br>• Funeral homes often bundle extras that drive prices up fast; you get upsold when you are vulnerable<br>• Prices can vary by thousands, even within the same city; funeral homes have different overhead costs<br>• Most families overpay because they don’t compare providers first or have cremation insurance</p>
 
 <p>Cremation cost and info comes down to one thing, how simple or complicated you make it. A direct cremation usually runs about $1,000 to $3,000, while a full cremation with a service can hit $5,500 to $6,300 or more. The difference is all the extras like viewings, ceremonies, and funeral home fees. Burial insurance is designed to cover these costs with cash paid directly to your family, so they don’t have to make rushed decisions or overpay under pressure.</p>
 
@@ -80,13 +80,13 @@ sidebar: true
 
 <p>Cremation prices rise or fall based on location, transportation, timing, and optional services added by the funeral home.</p>
 
-<p>Location and facility fees – This has the biggest impact. Urban centers charge more due to overhead and staff costs.</p>
+<p>Location and facility fees: This has the biggest impact. Urban centers charge more due to overhead and staff costs.</p>
 
-<p><strong>Transportation</strong> – This adds up quickly. If the deceased must be moved from one county or state to another, each leg adds mileage and permit charges.</p>
+<p><strong>Transportation</strong>: This adds up quickly. If the deceased must be moved from one county or state to another, each leg adds mileage and permit charges.</p>
 
-<p><strong>Containers and urns –</strong> This is another profit center. Many funeral homes mark them up 200% or more. You’re legally allowed to bring your own urn or purchase one online, a fact that many providers often overlook.</p>
+<p><strong>Containers and urns:</strong> This is another profit center. Many funeral homes mark them up 200% or more. You’re legally allowed to bring your own urn or purchase one online, a fact that many providers often overlook.</p>
 
-<p><strong>Timing matters </strong>– Weekend or holiday cremations often include surcharges.</p>
+<p><strong>Timing matters </strong>: Weekend or holiday cremations often include surcharges.</p>
 
 <p><strong>Optional services</strong>, such as embalming, public viewings, or obituary notices, can double the base price. The funeral home may make them sound mandatory, but under the FTC Funeral Rule, they are entirely optional unless required by public health law.</p>
 
@@ -254,11 +254,11 @@ The $795 mailer that wasn’t complete
 <p><strong>These are the warning signs that should stop you immediately.</strong></p>
 
 <ul>
-<li><strong>No physical address </strong>– Any cremation company that lists only a P.O. box or vague website location is hiding something.</li>
-<li><strong>“State-regulated benefit” ads </strong>– There is no such program. Those are lead-generation scams using government-sounding language.</li>
-<li><strong>Refusal to provide an itemized price list </strong>– Federal law requires every funeral home to do this.</li>
-<li><strong>Pressure tactics</strong> – Legitimate providers never rush you to “decide today.”</li>
-<li><strong>No license or complaint record </strong>– You can verify every funeral home and crematory through your state’s Department of Insurance or Board of Funeral Directors.</li>
+<li><strong>No physical address </strong>: Any cremation company that lists only a P.O. box or vague website location is hiding something.</li>
+<li><strong>“State-regulated benefit” ads </strong>: There is no such program. Those are lead-generation scams using government-sounding language.</li>
+<li><strong>Refusal to provide an itemized price list </strong>: Federal law requires every funeral home to do this.</li>
+<li><strong>Pressure tactics</strong>: Legitimate providers never rush you to “decide today.”</li>
+<li><strong>No license or complaint record </strong>: You can verify every funeral home and crematory through your state’s Department of Insurance or Board of Funeral Directors.</li>
 </ul>
 
 <p>If any of these apply, find another provider. Protecting your family starts with avoiding anyone who hides the details.</p>
@@ -501,7 +501,7 @@ The prepaid contract that couldn’t move
 
 <p>County indigent programs handle cremation when the family has no funds and the death meets eligibility rules.<br>If you can’t afford cremation, contact your county social services or local funeral director to ask about indigent cremation programs. States cover this under public assistance laws for unclaimed or low-income deaths. The process includes only the most basic direct cremation, and there’s no choice in provider or ceremony.</p>
 
-<p>Because these programs are slow and limited, the most reliable way to avoid this hardship is with a small whole life insurance policy ($5,000–$15,000). It’s inexpensive, quick to approve, and gives your family dignity and flexibility.</p>
+<p>Because these programs are slow and limited, the most reliable way to avoid this hardship is with a small whole life insurance policy ($5,000 to $15,000). It’s inexpensive, quick to approve, and gives your family dignity and flexibility.</p>
 
 <p><strong>What’s the difference between a simple and a direct cremation?</strong></p>
 

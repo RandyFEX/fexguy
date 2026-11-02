@@ -145,7 +145,7 @@ sidebar: true
 
 <p>Your first step is determining how much burial insurance you will need to know your end-of-life expenses. </p>
 
-<p>Your <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider – outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
+<p>Your <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">funeral cost</a> is the first thing that will come to your mind because it’s often the biggest single expense. Other “final expenses” to consider: outstanding medical bills, living expenses, legal costs, and credit card bills, to name a few.</p>
 
 <p>According to the National Funeral Directors Association (NFDA) website, the average cost of an adult funeral today is $8,755. </p>
 
@@ -157,35 +157,35 @@ cost breakdown from NFDA: </strong></p>
 <p><strong>AVERAGE COST OF AN ADULT FUNERAL WITH VIEWING AND BURIAL </strong></p>
 
 <ul>
-<li>$2,100 – Basic services fee</li>
-<li>$325 – Removal of remains to funeral home</li>
-<li>$725 – Embalming</li>
-<li>$250 – Other preparation of the body</li>
-<li>$500 – Use of funeral facilities and staff for a funeral ceremony</li>
-<li>$435 – Use of funeral facilities and staff for viewing</li>
-<li>$325 – Hearse </li>
-<li>$150 – Service car</li>
-<li>$160 – Basic memorial printed package</li>
-<li>$2,400 – Metal Casket</li>
-<li>$1,395 – Vault</li>
-<li><strong>$8,755 – TOTAL</strong></li>
+<li>$2,100: Basic services fee</li>
+<li>$325: Removal of remains to funeral home</li>
+<li>$725: Embalming</li>
+<li>$250: Other preparation of the body</li>
+<li>$500: Use of funeral facilities and staff for a funeral ceremony</li>
+<li>$435: Use of funeral facilities and staff for viewing</li>
+<li>$325: Hearse </li>
+<li>$150: Service car</li>
+<li>$160: Basic memorial printed package</li>
+<li>$2,400: Metal Casket</li>
+<li>$1,395: Vault</li>
+<li><strong>$8,755: TOTAL</strong></li>
 </ul>
 
 <p><strong>AVERAGE COST OF AN ADULT FUNERAL WITH VIEWING AND CREMATION</strong></p>
 
 <ul>
-<li>$2,100 – Non-declinable basic services fee</li>
-<li>$325 – Removal of remains to funeral home</li>
-<li>$725 – Embalming</li>
-<li>$250 – Other preparation of the body</li>
-<li>$500 – Use of funeral facilities and staff for a funeral ceremony</li>
-<li>$435 – Use of funeral facilities and staff for viewing</li>
-<li>$150 – Service car</li>
-<li>$160 – Basic memorial printed package</li>
-<li>$350 – Cremation fee</li>
-<li>$1,000 – Cremation Casket</li>
-<li>$275 – Urn </li>
-<li><strong>$6,260 – TOTAL</strong></li>
+<li>$2,100: Non-declinable basic services fee</li>
+<li>$325: Removal of remains to funeral home</li>
+<li>$725: Embalming</li>
+<li>$250: Other preparation of the body</li>
+<li>$500: Use of funeral facilities and staff for a funeral ceremony</li>
+<li>$435: Use of funeral facilities and staff for viewing</li>
+<li>$150: Service car</li>
+<li>$160: Basic memorial printed package</li>
+<li>$350: Cremation fee</li>
+<li>$1,000: Cremation Casket</li>
+<li>$275: Urn </li>
+<li><strong>$6,260: TOTAL</strong></li>
 </ul>
 
 <p>There may be other funeral and burial expenses depending on the funeral service you choose and the type of casket, headstone, services, and miscellaneous items you want to be included. </p>

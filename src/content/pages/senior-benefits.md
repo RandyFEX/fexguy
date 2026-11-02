@@ -32,7 +32,7 @@ sidebar: true
 <p><strong>Here are some medical conditions that we cannot get people approved for 1st-day coverage or benefits:</strong></p>
 
 <ul>
-<li>ADLs – unable to perform bathing, dressing, eating, transfering, toiletring, continence </li>
+<li>ADLs: unable to perform bathing, dressing, eating, transfering, toiletring, continence </li>
 <li>Alzheimers</li>
 <li>Cancer diagnosis or treatment in the last 24 months</li>
 <li>Confined to bed </li>

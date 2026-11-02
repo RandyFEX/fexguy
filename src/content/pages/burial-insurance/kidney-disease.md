@@ -54,17 +54,17 @@ sidebar: true
 
 <h2 id="policies-available"><strong>Types of burial insurance available for kidney disease patients</strong></h2>
 
-<p><strong>First-Day Coverage</strong> – No medical exams required, just answer a few simple health questions. The best part? No waiting period. You’re covered from day one, and your beneficiary gets the full death benefit when you pass. Talk about instant peace of mind!</p>
+<p><strong>First-Day Coverage</strong>: No medical exams required, just answer a few simple health questions. The best part? No waiting period. You’re covered from day one, and your beneficiary gets the full death benefit when you pass. Talk about instant peace of mind!</p>
 
-<p><strong>Guaranteed Issue Whole Life Insuranc</strong>e – There are no medical exams or health questions. However, there’s a two-year waiting period for health-related causes of death. If you pass from an illness during that time, your beneficiaries get all your premiums back plus 7-10% interest. Once those two years are up, it’s 100% death benefit, no matter how you go.</p>
+<p><strong>Guaranteed Issue Whole Life Insuranc</strong>e: There are no medical exams or health questions. However, there’s a two-year waiting period for health-related causes of death. If you pass from an illness during that time, your beneficiaries get all your premiums back plus 7-10% interest. Once those two years are up, it’s 100% death benefit, no matter how you go.</p>
 
 <h2 id="best-insurance-option"><strong>What is my best insurance option if I have kidney disease?</strong></h2>
 
-<p><strong>Chronic Kidney Disease (Renal disease) – </strong>If you have kidney disease and aren’t on dialysis, first-day coverage insurance is your best bet. Some companies are fine to offer this, depending on your zip code (not all states allow this coverage).</p>
+<p><strong>Chronic Kidney Disease (Renal disease): </strong>If you have kidney disease and aren’t on dialysis, first-day coverage insurance is your best bet. Some companies are fine to offer this, depending on your zip code (not all states allow this coverage).</p>
 
-<p><strong>Kidney disease with Dialysis – </strong>Got end-stage kidney disease or on dialysis? First-day coverage insurance is still your top pick, but you have to be following your doctor’s treatment plan. Refusing dialysis? Then,  you’re looking at guaranteed acceptance life insurance with a two-year waiting period.</p>
+<p><strong>Kidney disease with Dialysis: </strong>Got end-stage kidney disease or on dialysis? First-day coverage insurance is still your top pick, but you have to be following your doctor’s treatment plan. Refusing dialysis? Then,  you’re looking at guaranteed acceptance life insurance with a two-year waiting period.</p>
 
-<p><strong>Kidney Transplant – </strong>Had a kidney transplant or been told you need one? Your go-to option is guaranteed issue life insurance – no medical exams, no health questions. If your transplant was more than five years ago, you might even qualify for first-day coverage, depending on your zip code.</p>
+<p><strong>Kidney Transplant: </strong>Had a kidney transplant or been told you need one? Your go-to option is guaranteed issue life insurance, no medical exams, no health questions. If your transplant was more than five years ago, you might even qualify for first-day coverage, depending on your zip code.</p>
 
 <h2 id="burial-insurance-cost"><strong>How much does burial insurance cost if I have kidney disease?</strong></h2>
 
@@ -90,23 +90,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage</td>
+<td>Certain companies: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -123,23 +123,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage </td>
+<td>Certain companies: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -147,7 +147,7 @@ sidebar: true
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
-<p>Nope, you don’t need a medical exam to get burial insurance if you have kidney disease or are on dialysis. Just answer a few basic health questions. The application process is a breeze – no medical records, blood, or urine samples are needed. We can often get you approved within minutes.</p>
+<p>Nope, you don’t need a medical exam to get burial insurance if you have kidney disease or are on dialysis. Just answer a few basic health questions. The application process is a breeze: no medical records, blood, or urine samples are needed. We can often get you approved within minutes.</p>
 
 <h2 id="kidney-disease-underwriting"><strong>Burial insurance underwriting with kidney disease</strong></h2>
 

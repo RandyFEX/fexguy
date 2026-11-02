@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance with Blood Clot</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Blood clots won’t automatically disqualify you from burial insurance<br>• Recent clots or treatment can raise rates or limit approval<br>• Surgery within 12–24 months may trigger waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Many people assume denial when timing is the real issue<br>• Not comparing companies can lead to overpriced, limited coverage</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Blood clots won’t automatically disqualify you from burial insurance<br>• Recent clots or treatment can raise rates or limit approval<br>• Surgery within 12 to 24 months may trigger waiting periods<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Many people assume denial when timing is the real issue<br>• Not comparing companies can lead to overpriced, limited coverage</p>
 
 <p>Burial insurance with a blood clot depends heavily on when it happened and how well you’ve recovered. Insurance companies look at timing, number of clot events, treatment, and overall health before approving you. If your blood clot was over 24 months ago and you’ve had no complications, you may still qualify for burial insurance, which is a type of whole life insurance, with first-day coverage. If it’s recent or you’re still on treatment, expect higher costs or a waiting period. The key is timing and choosing the right company, because they don’t all treat blood clots the same.</p>
 
@@ -201,9 +201,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 
@@ -407,14 +407,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-for-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance with blood clot</strong></h2>

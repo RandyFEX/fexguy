@@ -13,9 +13,9 @@ type Row = { age: number; perUnit: number; units: number[]; coverage: number[] }
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 
 /** Shown in both cells of a target that needs more than data.maxUnits units
- *  (the data keeps the calculated values). An en dash: the site bans em
- *  dashes (CLAUDE.md; npm run verify fails on them). */
-const UNAVAILABLE = '\u2013';
+ *  (the data keeps the calculated values). "N/A", not a dash: the site bans
+ *  em and en dashes in visible copy (CLAUDE.md; npm run verify). */
+const UNAVAILABLE = 'N/A';
 
 /** The advertised price of one unit, in cents; COST = units x $9.95. */
 const UNIT_PRICE_CENTS = 995;

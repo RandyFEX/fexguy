@@ -350,14 +350,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong> – easy to get approved.</li>
-<li><strong>Ease of issue</strong> – easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved </strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong> – your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong> – your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong> – your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong> – the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong> – burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved </strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for Native Americans</strong></h2>

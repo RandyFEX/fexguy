@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Senior Legacy Life Insurance – Are They A Hoax?</h1>
+<h1>Senior Legacy Life Insurance: Are They A Hoax?</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -134,7 +134,7 @@ sidebar: true
 
 <hr>
 
-<h2 id="h-senior-legacy-life-better-options"><strong>Senior Legacy Life </strong> – <strong>better options?</strong></h2>
+<h2 id="h-senior-legacy-life-better-options"><strong>Senior Legacy Life </strong>: <strong>better options?</strong></h2>
 
 <p>The most important step is knowing your options. Many seniors who purchased policies as mentioned above are actually paying way more than they should be.</p>
 

@@ -26,7 +26,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
 
-<h2 id="h-1-know-what-plans-to-shop-for">#1 – KNOW WHAT PLANS TO SHOP FOR</h2>
+<h2 id="h-1-know-what-plans-to-shop-for">#1: KNOW WHAT PLANS TO SHOP FOR</h2>
 
 <p><strong>BEST: BURIAL, CREMATION, FUNERAL, FINAL EXPENSES</strong></p>
 
@@ -47,25 +47,25 @@ source: "live"
 <ul>
 <li><strong>TERM LIFE:</strong> 
 <ul>
-<li><strong>AARP</strong> – Price increases every 5 years, cancels after age 80</li>
-<li><strong>Globe Life</strong> – Price increases every 5 years, cancels after age 80</li>
-<li><strong>New York Life</strong> – Price increases every 5 years, cancels after age 80</li>
-<li><strong>TruStage</strong> – Price increases every 5 years, cancels after age 80</li>
+<li><strong>AARP</strong>: Price increases every 5 years, cancels after age 80</li>
+<li><strong>Globe Life</strong>: Price increases every 5 years, cancels after age 80</li>
+<li><strong>New York Life</strong>: Price increases every 5 years, cancels after age 80</li>
+<li><strong>TruStage</strong>: Price increases every 5 years, cancels after age 80</li>
 </ul>
 </li>
 <li><strong>2-YEAR WAITING PERIOD:</strong> Will not pay out for any health or medical-related death for 2 years.
 <ul>
-<li><strong>AIG</strong> – 2-year wait, 50-100% more expensive than 1st-day coverage</li>
-<li><strong>AAA Life Insurance Company</strong> – 2-year wait, 50-100% more expensive than 1st-day coverage</li>
-<li><strong>Colonial Penn $9.95 plan </strong>– 2-year wait, 50-100% more expensive than 1st-day coverage</li>
-<li><strong>Corbridge Financial (AIG) </strong>– 2-year wait, 50-100% more expensive than 1st-day coverage</li>
-<li><strong>Gerber Life </strong>– 2-year wait, 50-100% more expensive than 1st-day coverage</li>
-<li><strong>United (Mutual) of Omaha </strong>– 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>AIG</strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>AAA Life Insurance Company</strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>Colonial Penn $9.95 plan </strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>Corbridge Financial (AIG) </strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>Gerber Life </strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
+<li><strong>United (Mutual) of Omaha </strong>: 2-year wait, 50-100% more expensive than 1st-day coverage</li>
 </ul>
 </li>
 <li><strong>PER UNIT PRICING:</strong>  
 <ul>
-<li><strong>Colonial Penn’s $9.95 plan </strong>– Mandatory 2-year waiting period and is up to double the cost of other first-day coverage plans.</li>
+<li><strong>Colonial Penn’s $9.95 plan </strong>: Mandatory 2-year waiting period and is up to double the cost of other first-day coverage plans.</li>
 </ul>
 </li>
 <li><strong>CAPTIVE INSURANCE COMPANIES: </strong>These companies and their agents only sell their own products, and their rates may be 30-100% higher than our non-captive companies.
@@ -79,7 +79,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
-<h2 id="h-2-find-the-best-funeral-insurance-company"># 2 – FIND THE BEST FUNERAL INSURANCE COMPANY</h2>
+<h2 id="h-2-find-the-best-funeral-insurance-company"># 2: FIND THE BEST FUNERAL INSURANCE COMPANY</h2>
 
 <p>It’s hard to choose the right plan if you don’t know what you’re looking for.  Individual companies may offer multiple plans based on age, health, coverage amount, and state of residence.</p>
 
@@ -196,7 +196,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong>CALL RANDY NOW (888) 862-9456</strong></a></div>
 
-<h2 id="h-3-consider-your-health-amp-illnesses"># 3 – CONSIDER YOUR HEALTH &amp; ILLNESSES</h2>
+<h2 id="h-3-consider-your-health-amp-illnesses"># 3: CONSIDER YOUR HEALTH &amp; ILLNESSES</h2>
 
 <p>Most people underestimate how poor their health is, and overestimate how long the will live.</p>
 
@@ -259,7 +259,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></a></div>
 
-<h2 id="h-4-determine-how-much-coverage-you-need"># 4 – DETERMINE HOW MUCH COVERAGE YOU NEED</h2>
+<h2 id="h-4-determine-how-much-coverage-you-need"># 4: DETERMINE HOW MUCH COVERAGE YOU NEED</h2>
 
 <h3 id="h-cremation-cost-per-state-average">CREMATION COST PER STATE (AVERAGE)</h3>
 
@@ -275,41 +275,41 @@ source: "live"
 </thead>
 <tbody>
 <tr>
-<td>$1,500 – AK</td><td>$1,500 – HI</td><td>$1,318 – ME</td><td>$3,979 – NJ</td><td>$2,250 – SD</td>
+<td>$1,500 - AK</td><td>$1,500 - HI</td><td>$1,318 - ME</td><td>$3,979 - NJ</td><td>$2,250 - SD</td>
 </tr>
 <tr>
-<td>$3,300 – AL</td><td>$2,700 – IA</td><td>$2,375 – MI</td><td>$895 – NM</td><td>$2,043 – TN</td>
+<td>$3,300 - AL</td><td>$2,700 - IA</td><td>$2,375 - MI</td><td>$895 - NM</td><td>$2,043 - TN</td>
 </tr>
 <tr>
-<td>$1,885 – AR</td><td>$1,400 – ID</td><td>$750 – MN</td><td>$595 – NV</td><td>$1,000 – TX</td>
+<td>$1,885 - AR</td><td>$1,400 - ID</td><td>$750 - MN</td><td>$595 - NV</td><td>$1,000 - TX</td>
 </tr>
 <tr>
-<td>$675 – AZ</td><td>$1,949 – IL</td><td>$2,700 – MO</td><td>$1,969 – NY</td><td>$1,462 – UT</td>
+<td>$675 - AZ</td><td>$1,949 - IL</td><td>$2,700 - MO</td><td>$1,969 - NY</td><td>$1,462 - UT</td>
 </tr>
 <tr>
-<td>$1,300 – CA</td><td>$2,375 -IN</td><td>$995 – MS</td><td>$1,600 – OH</td><td>$2,195 – VA</td>
+<td>$1,300 - CA</td><td>$2,375 -IN</td><td>$995 - MS</td><td>$1,600 - OH</td><td>$2,195 - VA</td>
 </tr>
 <tr>
-<td>$2,250 – CO</td><td>$1,817 – KS</td><td>$2,250 – MT</td><td>$600 – OK</td><td>$1,395 – VT</td>
+<td>$2,250 - CO</td><td>$1,817 - KS</td><td>$2,250 - MT</td><td>$600 - OK</td><td>$1,395 - VT</td>
 </tr>
 <tr>
-<td>$2,200 – CT</td><td>$1,075 – KY</td><td>$895 – NC</td><td>$1,595 – OR</td><td>$1,363 – WA</td>
+<td>$2,200 - CT</td><td>$1,075 - KY</td><td>$895 - NC</td><td>$1,595 - OR</td><td>$1,363 - WA</td>
 </tr>
 <tr>
-<td>$995 – DE</td><td>$2,175 – LA</td><td>$1,000 – ND</td><td>$1,816 – PA</td><td>$1,000 – WI</td>
+<td>$995 - DE</td><td>$2,175 - LA</td><td>$1,000 - ND</td><td>$1,816 - PA</td><td>$1,000 - WI</td>
 </tr>
 <tr>
-<td>$3,407 – FL</td><td>$1,318 – MA</td><td>$990 – NE</td><td>$1,400 – RI</td><td>$1,125 – WV</td>
+<td>$3,407 - FL</td><td>$1,318 - MA</td><td>$990 - NE</td><td>$1,400 - RI</td><td>$1,125 - WV</td>
 </tr>
 <tr>
-<td>$1,808 – GA</td><td>$2,515 – MD</td><td>$2,515 – NH</td><td>$950 – SC</td><td>$1,885 – WY</td>
+<td>$1,808 - GA</td><td>$2,515 - MD</td><td>$2,515 - NH</td><td>$950 - SC</td><td>$1,885 - WY</td>
 </tr>
 </tbody>
 </table>
 
 <h3 id="h-funeral-cost-per-state-average">FUNERAL COST PER STATE (AVERAGE)</h3>
 
-<p>At today’s burial pricing, <strong>$10,000 – $15,000 </strong>is generally the minimum for a simple funeral and burial service. </p>
+<p>At today’s burial pricing, <strong>$10,000 to $15,000 </strong>is generally the minimum for a simple funeral and burial service. </p>
 
 <p>Some people want <strong>$15,000-$20,000</strong> to inflation-proof their plan for the future.</p>
 
@@ -321,38 +321,38 @@ source: "live"
 </thead>
 <tbody>
 <tr>
-<td>$10,084 – AK</td><td>$14,975 – HI </td><td>$9,122 – ME</td><td>$9,712 – NJ </td><td>$7,748 – SD</td>
+<td>$10,084 - AK</td><td>$14,975 - HI </td><td>$9,122 - ME</td><td>$9,712 - NJ </td><td>$7,748 - SD</td>
 </tr>
 <tr>
-<td>$6,933 – AL</td><td>$6,995 – IA</td><td>$6,902 – MI </td><td>$6,793 – NM </td><td>$6,886 – TN </td>
+<td>$6,933 - AL</td><td>$6,995 - IA</td><td>$6,902 - MI </td><td>$6,793 - NM </td><td>$6,886 - TN </td>
 </tr>
 <tr>
-<td>$6,746 – AR</td><td>$7,165 – ID </td><td>$7,887 – MN </td><td>$8,423 – NV </td><td>$7,103 – TX </td>
+<td>$6,746 - AR</td><td>$7,165 - ID </td><td>$7,887 - MN </td><td>$8,423 - NV </td><td>$7,103 - TX </td>
 </tr>
 <tr>
-<td>$7,530 – AZ</td><td>$7,336 – IL</td><td>$6,762 – MO <br>
-</td><td>$10,799 – NY <br>
-</td><td>$7,639 – UT</td>
+<td>$7,530 - AZ</td><td>$7,336 - IL</td><td>$6,762: MO <br>
+</td><td>$10,799: NY <br>
+</td><td>$7,639 - UT</td>
 </tr>
 <tr>
-<td>$11,777 – CA</td><td>$6,987 – IN</td><td>$6,684 – MS </td><td>$7,049 – OH </td><td>$7,818 – VA</td>
+<td>$11,777 - CA</td><td>$6,987 - IN</td><td>$6,684 - MS </td><td>$7,049 - OH </td><td>$7,818 - VA</td>
 </tr>
 <tr>
-<td>$8,198  – CO</td><td>$6,909 – KS</td><td>$8,229 – MT</td><td>$6,754 – OK </td><td>$8,889 – VT </td>
+<td>$8,198 - CO</td><td>$6,909 - KS</td><td>$8,229 - MT</td><td>$6,754 - OK </td><td>$8,889 - VT </td>
 </tr>
 <tr>
-<td>$9,914 – CT </td><td>$7,057 – KY </td><td>$7,367 – NC </td><td>$10,418 – OR</td><td>$8,594 – WA</td>
+<td>$9,914 - CT </td><td>$7,057 - KY </td><td>$7,367 - NC </td><td>$10,418 - OR</td><td>$8,594 - WA</td>
 </tr>
 <tr>
-<td>$8,392 – DE</td><td>$7,290 – LA</td><td>$7,670 – ND</td><td>$7,895 – PA<br>
-</td><td>$7,554 – WI</td>
+<td>$8,392 - DE</td><td>$7,290 - LA</td><td>$7,670 - ND</td><td>$7,895: PA<br>
+</td><td>$7,554 - WI</td>
 </tr>
 <tr>
-<td>$7,600 – FL</td><td>$10,216 – MA</td><td>$7,049 – NE</td><td>$9,269 – RI</td><td>$7,072 –  WV</td>
+<td>$7,600 - FL</td><td>$10,216 - MA</td><td>$7,049 - NE</td><td>$9,269 - RI</td><td>$7,072:  WV</td>
 </tr>
 <tr>
-<td>$6,925 – GA<br>
-</td><td>$10,069 – MD</td><td>$8,516 – NH</td><td>$7,445 – SC</td><td>$6,933 – WY</td>
+<td>$6,925: GA<br>
+</td><td>$10,069 - MD</td><td>$8,516 - NH</td><td>$7,445 - SC</td><td>$6,933 - WY</td>
 </tr>
 </tbody>
 </table>
@@ -361,7 +361,7 @@ source: "live"
 
 <div class="button-link"><a href="tel:8888629456" target="_blank" rel="noreferrer noopener"><strong><strong><strong><strong><strong><strong><strong><strong>CALL RANDY NOW (888) 862-9456</strong></strong></strong></strong></strong></strong></strong></strong></a></div>
 
-<h2 id="h-5-get-qualified"># 5 – GET QUALIFIED</h2>
+<h2 id="h-5-get-qualified"># 5: GET QUALIFIED</h2>
 
 <p>I’ll help you with your eligibility and final approval. Not everyone will qualify for every company or plan, so call me to understand your best options.</p>
 

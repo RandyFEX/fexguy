@@ -62,25 +62,25 @@ sidebar: true
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022">A first-day coverage plan is a life insurance policy that does not require a medical exam. If you qualify for this plan, your life insurance coverage will start on the first day, and you will be covered your whole life.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>First-day Benefit Plan</strong> – A first-day benefit plan becomes active on the first day, but the death benefit is phased in over time.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>First-day Benefit Plan</strong>: A first-day benefit plan becomes active on the first day, but the death benefit is phased in over time.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Guaranteed Issue Life Insurance</strong> – A guaranteed issue life insurance policy does not require a medical exam. Anyone can qualify, regardless of their health, but this plan has a 2-year waiting period.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Guaranteed Issue Life Insurance</strong>: A guaranteed issue life insurance policy does not require a medical exam. Anyone can qualify, regardless of their health, but this plan has a 2-year waiting period.</p>
 
 <h2 id="characteristics-of-life-insurance"><br><strong>What are the characteristics of life insurance for seniors?</strong></h2>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Permanent coverage</strong>&#160;– You will have lifetime coverage. The insurance provider cannot cancel your coverage because of your growing age or new medical problems that you develop with time.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Permanent coverage</strong>: You will have lifetime coverage. The insurance provider cannot cancel your coverage because of your growing age or new medical problems that you develop with time.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Level premiums</strong>&#160;– Your premium will not change throughout your policy. Your premium is locked in and guaranteed to never increase in the future. You’ll pay the same low monthly premium for the rest of your life.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Level premiums</strong>: Your premium will not change throughout your policy. Your premium is locked in and guaranteed to never increase in the future. You’ll pay the same low monthly premium for the rest of your life.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Fix death benefit</strong>&#160;– Your death benefit will never decrease for any reason.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Fix death benefit</strong>: Your death benefit will never decrease for any reason.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Beneficiary</strong>&#160;– When you pass away, your death benefit will be paid to your beneficiary. Your beneficiary might be a spouse, partner, child, family member, or another person who helps make your end-of-life arrangements.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Beneficiary</strong>: When you pass away, your death benefit will be paid to your beneficiary. Your beneficiary might be a spouse, partner, child, family member, or another person who helps make your end-of-life arrangements.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>No medical exam</strong>&#160;– Seniors’ life insurance has simplified underwriting that does not require you to take a medical exam. You will only need to answer a few health questions. A guaranteed issue life insurance does not ask any health questions!</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>No medical exam</strong>: Seniors’ life insurance has simplified underwriting that does not require you to take a medical exam. You will only need to answer a few health questions. A guaranteed issue life insurance does not ask any health questions!</p>
 
 <p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Lower coverage: Life</strong> insurance coverage is typically capped at $25,000 to $50,000. The lower coverage is because life insurance is specifically designed to cover final expenses and is not intended to provide supplemental income to beneficiaries.</p>
 
-<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Builds cash value</strong>&#160;– Life insurance for seniors is whole life insurance that builds cash value on a tax-free basis with every premium payment you make. This cash value can be borrowed for emergency purposes or can be used to pay your premiums.</p>
+<p id="ce37a76c-7220-43f5-8a6b-02162eb97022"><strong>Builds cash value</strong>: Life insurance for seniors is whole life insurance that builds cash value on a tax-free basis with every premium payment you make. This cash value can be borrowed for emergency purposes or can be used to pay your premiums.</p>
 
 <h2 id="benefits-of-life-insurance-for-seniors"><br><strong>What are the benefits of life insurance for seniors?</strong></h2>
 

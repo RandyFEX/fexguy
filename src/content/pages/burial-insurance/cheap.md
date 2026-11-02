@@ -44,13 +44,13 @@ sidebar: true
 
 <h2 id="what-kind-of-cheap-burial-insurance-policies-should-i-avoid"><strong>What kind of cheap burial insurance policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or <a href="/final-expense-life-insurance-complete-guide/" target="_blank" rel="noreferrer noopener">final expense life insurance no exam policies</a> you see advertised on television or in magazines are promoted as the simplest approach to obtain this coverage. </p>
 
 <p>Everyone is eligible for immediate coverage and better pricing; however, these heavily advertised policies are so expensive.</p>
 
 <p>To make a long story short, it is better to shop with a specialist in burial insurance, like Funeral Funds, than to sign up with a company that spends millions of dollars each month advertising on television and in magazines.</p>
 
-<p><strong>INCREASING PRICE POLICIES</strong> – Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! </p>
+<p><strong>INCREASING PRICE POLICIES</strong>: Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! </p>
 
 <p><strong>These policies aren’t what they seem, so do not be deceived.</strong></p>
 
@@ -87,11 +87,11 @@ sidebar: true
 <h2 id="what-to-avoid-when-shopping-for-burial-insurance-policy"><strong>Here’s what to avoid when shopping for the best burial insurance policy:</strong></h2>
 
 <ul>
-<li><strong>Generalists</strong> – avoid life insurance agents that sell every life insurance product available. You need a specialist who understands final expense underwriting to get the best pricing.</li>
-<li><strong>Newbies</strong> – avoid agents who are new to the insurance industry. These “greenhorns” often sell only one or two expensive insurance products with unforgiving underwriting (that will get you denied).</li>
-<li><strong>Television Advertisements &amp; Magazine Advertisements</strong> – we’ve already talked about how they’re not all they are cracked up to be. Don’t jump the gun and purchase one of these expensive policies that will force you to wait two years before the coverage begins.</li>
-<li><strong>Lone Wolves</strong> – these are “captive” insurance company agents that work for a single company and sell a single final expense product. If you have any health problems, you’ll often get denied burial insurance through these companies.</li>
-<li><strong>Getting Denied</strong> – going with an inexperienced, newbie, or lone wolf agent will often result in a declined or denied burial policy if you have any health problems (they will also be more expensive). Having a recent decline in your life insurance records rules you out of many of the best insurance companies.</li>
+<li><strong>Generalists</strong>: avoid life insurance agents that sell every life insurance product available. You need a specialist who understands final expense underwriting to get the best pricing.</li>
+<li><strong>Newbies</strong>: avoid agents who are new to the insurance industry. These “greenhorns” often sell only one or two expensive insurance products with unforgiving underwriting (that will get you denied).</li>
+<li><strong>Television Advertisements &amp; Magazine Advertisements</strong>: we’ve already talked about how they’re not all they are cracked up to be. Don’t jump the gun and purchase one of these expensive policies that will force you to wait two years before the coverage begins.</li>
+<li><strong>Lone Wolves</strong>: these are “captive” insurance company agents that work for a single company and sell a single final expense product. If you have any health problems, you’ll often get denied burial insurance through these companies.</li>
+<li><strong>Getting Denied</strong>: going with an inexperienced, newbie, or lone wolf agent will often result in a declined or denied burial policy if you have any health problems (they will also be more expensive). Having a recent decline in your life insurance records rules you out of many of the best insurance companies.</li>
 </ul>
 
 <p>Don’t let an inexperienced agent get you declined, as this will limit your options in the future and increase any future pricing as a result of your denied funeral policy.</p>

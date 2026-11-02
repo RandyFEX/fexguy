@@ -158,9 +158,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>You will rarely see felony convictions asked on the application questionnaire. Very few insurance companies care about felony convictions. So, if you have a history of felony convictions but are generally healthy or have some <a href="/final-expense-life-insurance-pre-existing-conditions/" target="_blank" rel="noreferrer noopener">pre-existing</a> medication condition, you will still qualify for affordable burial insurance. </p>
 
@@ -242,14 +242,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required&#160;– easy to get approved.</strong></li>
-<li><strong>Ease of issue&#160;– easy to qualify and get insurance coverage.</strong></li>
-<li><strong>No Money Down to get approved&#160;– have your policy start whenever you want.</strong></li>
-<li><strong>Level premium&#160;– your premium will never increase.</strong></li>
-<li><strong>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</strong></li>
-<li><strong>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</strong></li>
-<li><strong>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</strong></li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required: easy to get approved.</strong></li>
+<li><strong>Ease of issue: easy to qualify and get insurance coverage.</strong></li>
+<li><strong>No Money Down to get approved: have your policy start whenever you want.</strong></li>
+<li><strong>Level premium: your premium will never increase.</strong></li>
+<li><strong>Fixed death benefit: your death benefit will never decrease for any reason.</strong></li>
+<li><strong>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</strong></li>
+<li><strong>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</strong></li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-for-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with a felony conviction</strong></h2>

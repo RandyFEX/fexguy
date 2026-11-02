@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Foresters Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Foresters Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:<br>• </strong>Foresters offers solid coverage, but often isn’t the cheapest option<br>• Some plans include waiting periods before full benefits actually pay<br>• Coverage amounts are smaller compared to traditional life insurance policies<br>• You must go through an agent, no easy online quotes or signup<br>• Customer complaints and slow claims processes show up in reviews<br>• Better companies may offer lower rates for the same coverage</p>
 
@@ -83,7 +83,7 @@ sidebar: true
 </tbody>
 </table>
 
-<h3>#1 – <strong>PlanRight level death benefit plan</strong></h3>
+<h3>#1: <strong>PlanRight level death benefit plan</strong></h3>
 
 <p>This is a reasonably good option in certain situations and can be competitively priced for specific health issues.</p>
 
@@ -103,7 +103,7 @@ sidebar: true
 
 <p>The level death benefit plan is their best plan. If you are generally healthy, you can qualify for this plan. This plan is also designed to accept minor health conditions for first-day coverage.</p>
 
-<h3><br><strong>#2 –</strong> <strong>PlanRight graded death benefit plan</strong></h3>
+<h3><br><strong>#2:</strong> <strong>PlanRight graded death benefit plan</strong></h3>
 
 <p>The graded death benefit by Foresters is often overly expensive for most people, and we would rarely even consider recommending this coverage option.</p>
 
@@ -119,16 +119,16 @@ sidebar: true
 <p><strong>Death Benefit schedule:</strong></p>
 
 <ul>
-<li>First-year – 30%</li>
-<li>Second-year – 70%</li>
-<li>Third-year – 100%</li>
+<li>First-year: 30%</li>
+<li>Second-year: 70%</li>
+<li>Third-year: 100%</li>
 </ul>
 
 <p>To qualify for the graded death benefit plan, you must answer no to all the questions in the knockout section and no to all the questions in the modified section. </p>
 
 <p>You will notice that all the questions here are related to chronic illnesses. If you answer yes to any questions, you will be approved for the graded death benefit plan.</p>
 
-<h3><br><strong>#3 –</strong> <strong>PlanRight modified death benefit plan</strong></h3>
+<h3><br><strong>#3:</strong> <strong>PlanRight modified death benefit plan</strong></h3>
 
 <p>This is a terrible plan price-wise, which costs more than other plans with two-year waiting periods. </p>
 
@@ -164,7 +164,7 @@ sidebar: true
 
 <h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Foresters burial insurance?</strong></h2>
 
-<h3><strong>#1 – PlanRight level death benefit plan</strong></h3>
+<h3><strong>#1: PlanRight level death benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -503,7 +503,7 @@ sidebar: true
 <p><strong>These include:</strong></p>
 
 <ul>
-<li>Life insurance – term and permanent</li>
+<li>Life insurance: term and permanent</li>
 <li>Mutual funds</li>
 <li>Retirement annuities</li>
 <li>Savings and planning solutions</li>
@@ -515,15 +515,15 @@ sidebar: true
 <p>Aside from insurance and financial protection and guidance, there are many benefits that Foresters members can enjoy, such as:</p>
 
 <ol>
-<li>The Legal Link – members can get discounted legal services like family law, estate planning, wills, and homeownership.</li>
-<li>Emergency Assistance Program – members can avail of short-term, temporary financial assistance if they encounter disaster, significant personal hardship, or large-scale emergency.</li>
-<li>Orphan Scholarship – children of deceased members will be provided a renewable higher learning scholarship of up to $6,000 per year for up to four years.</li>
-<li>Orphan Benefit – members’ children will be provided a $900 per month stipend if the member and spouse die.</li>
-<li>Competitive scholarship Program – the company awards almost $2 million per year in renewable tuition to members or their family members.</li>
-<li>Terminal Illness Loan – members who become terminally ill may be eligible to receive an interest-free loan of up to 75% of the face value of their insurance.</li>
-<li>Everyday Money – free financial counseling about personal financial matters such as debt management and budgeting</li>
-<li>Community Grants Program – offers members exclusive access to different hands-on volunteer activities and complimentary events, including sporting events, movie nights, amusement parks, and other fun and family-friendly events.</li>
-<li>National Charitable Partnerships – members can get involved with the work of National Charitable Partners by volunteering for an activity or hosting their event.</li>
+<li>The Legal Link: members can get discounted legal services like family law, estate planning, wills, and homeownership.</li>
+<li>Emergency Assistance Program: members can avail of short-term, temporary financial assistance if they encounter disaster, significant personal hardship, or large-scale emergency.</li>
+<li>Orphan Scholarship: children of deceased members will be provided a renewable higher learning scholarship of up to $6,000 per year for up to four years.</li>
+<li>Orphan Benefit: members’ children will be provided a $900 per month stipend if the member and spouse die.</li>
+<li>Competitive scholarship Program: the company awards almost $2 million per year in renewable tuition to members or their family members.</li>
+<li>Terminal Illness Loan: members who become terminally ill may be eligible to receive an interest-free loan of up to 75% of the face value of their insurance.</li>
+<li>Everyday Money: free financial counseling about personal financial matters such as debt management and budgeting</li>
+<li>Community Grants Program: offers members exclusive access to different hands-on volunteer activities and complimentary events, including sporting events, movie nights, amusement parks, and other fun and family-friendly events.</li>
+<li>National Charitable Partnerships: members can get involved with the work of National Charitable Partners by volunteering for an activity or hosting their event.</li>
 </ol>
 
 <h4><strong>Company address</strong></h4>

@@ -187,12 +187,12 @@ sidebar: true
 <p>Life insurance companies use six activities of daily living to measure functionality and determine if you will be eligible for immediate coverage. You must be able to do these ADL on your own to prove that you can take care of yourself properly.</p>
 
 <ol>
-<li><strong>Eating</strong> – the process of feeding yourself using a container like a cup, plate, utensils, feeding tube, or intravenously.</li>
-<li><strong>Bathing</strong> – your ability to safely get in and out of the bathtub or shower. Washing your whole body in a basin, a shower, or a bathtub.</li>
-<li><strong>Dressing</strong> – taking off and putting on an item of clothing. Putting on and taking off fasteners, braces, and prostheses are also a part of the dressing.</li>
-<li><strong>Toileting</strong> – your ability to safely get on and off the toilet and perform necessary personal hygiene tasks.</li>
+<li><strong>Eating</strong>: the process of feeding yourself using a container like a cup, plate, utensils, feeding tube, or intravenously.</li>
+<li><strong>Bathing</strong>: your ability to safely get in and out of the bathtub or shower. Washing your whole body in a basin, a shower, or a bathtub.</li>
+<li><strong>Dressing</strong>: taking off and putting on an item of clothing. Putting on and taking off fasteners, braces, and prostheses are also a part of the dressing.</li>
+<li><strong>Toileting</strong>: your ability to safely get on and off the toilet and perform necessary personal hygiene tasks.</li>
 <li><strong>Transferring</strong> is moving in or out of bed, a chair, or a wheelchair. Includes getting in and out of vehicles.</li>
-<li><strong>Continence</strong> – the ability to control your bladder and bowel functions. Continence also includes performing related personal hygiene tasks such as caring for a colostomy or catheter bag.</li>
+<li><strong>Continence</strong>: the ability to control your bladder and bowel functions. Continence also includes performing related personal hygiene tasks such as caring for a colostomy or catheter bag.</li>
 </ol>
 
 <p>If you have a severe form of arthritis and it causes you to require help with any of the activities of daily living, it will be harder to find a company that will offer you immediate coverage at the lowest rate (although you will qualify for a&#160;guaranteed issue life insurance policy).</p>

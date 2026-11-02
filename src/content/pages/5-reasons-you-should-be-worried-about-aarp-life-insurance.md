@@ -37,22 +37,22 @@ sidebar: true
 <tr>
 <td>
 <ul>
-<li><a href="#reason-1---aarp-is-not-an-insurance-company">REASON #1 – AARP Is Not an Insurance Company</a></li>
-<li><a href="#reason-2---level-term-life-insurance-increase-in-price-every-5-years">REASON #2 – Level Term Life Insurance Increase in Price Every 5 Years</a></li>
-<li><a href="#reason-3---coverage-ends-at-age-80">REASON #3 – Coverage Ends at Age 80</a></li>
+<li><a href="#reason-1---aarp-is-not-an-insurance-company">REASON #1: AARP Is Not an Insurance Company</a></li>
+<li><a href="#reason-2---level-term-life-insurance-increase-in-price-every-5-years">REASON #2: Level Term Life Insurance Increase in Price Every 5 Years</a></li>
+<li><a href="#reason-3---coverage-ends-at-age-80">REASON #3: Coverage Ends at Age 80</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li><a href="#reason-4---you-need-to-be-in-great-health-to-qualify">REASON #4 – You Need to Be In Great Health to Qualify</a></li>
-<li><a href="#reason-5---it-has-a-two-year-waiting-period">REASON #5 – It Has a Two-year Waiting Period</a></li>
+<li><a href="#reason-4---you-need-to-be-in-great-health-to-qualify">REASON #4: You Need to Be In Great Health to Qualify</a></li>
+<li><a href="#reason-5---it-has-a-two-year-waiting-period">REASON #5: It Has a Two-year Waiting Period</a></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="reason-1---aarp-is-not-an-insurance-company"><br><strong>Reason #1 – AARP is not an insurance company</strong></h2>
+<h2 id="reason-1---aarp-is-not-an-insurance-company"><br><strong>Reason #1: AARP is not an insurance company</strong></h2>
 
 <p>First, you should be worried about AARP life insurance because AARP is not even an insurance company to begin with.</p>
 
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>Permanent life insurance is available to <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> members who are 50 to 80 years old. You can buy up to $50,000 coverage without a medical exam.</p>
 
-<h2 id="reason-2---level-term-life-insurance-increase-in-price-every-5-years"><br><strong>Reason #2 – level term life insurance increase in price every 5 years</strong></h2>
+<h2 id="reason-2---level-term-life-insurance-increase-in-price-every-5-years"><br><strong>Reason #2: level term life insurance increase in price every 5 years</strong></h2>
 
 <p>The second reason you need to be worried about AARP life insurance is that their level term life insurance increases in price every five years. If you bought a level term life insurance from AARP, I suggest you read the “fine print.”</p>
 
@@ -84,7 +84,7 @@ sidebar: true
 
 <p>Suppose you truly want a real level term life insurance. In that case, we can get you a level term life insurance policy with another company with a fixed premium that is guaranteed to never change for the term of the policy. If you’re interested in buying term life insurance, call us. We work with reputable life insurance companies that specialize in term life insurance.</p>
 
-<h2 id="reason-3---coverage-ends-at-age-80"><br><strong>Reason #3 – coverage ends at age 80</strong></h2>
+<h2 id="reason-3---coverage-ends-at-age-80"><br><strong>Reason #3: coverage ends at age 80</strong></h2>
 
 <p>AARP term life insurance is only available to members ages 50 to 74. It means, if you are 75 and older, you can’t buy a term life insurance policy with them.&#160;</p>
 
@@ -92,7 +92,7 @@ sidebar: true
 
 <p>If you want a policy that will last, do not get term life insurance. Apply for permanent life insurance instead. AARP also offers permanent life insurance. However, they will not sell you this policy unless you specifically ask for it.</p>
 
-<h2 id="reason-4---you-need-to-be-in-great-health-to-qualify"><br><strong>Reason #4 – you need to be in great health to qualify</strong></h2>
+<h2 id="reason-4---you-need-to-be-in-great-health-to-qualify"><br><strong>Reason #4: you need to be in great health to qualify</strong></h2>
 
 <p>To qualify, you need to answer the health questions of the AARP insurance application. Both term life insurance and permanent life insurance ask three health questions.&#160;</p>
 
@@ -122,7 +122,7 @@ sidebar: true
 
 <p>5. Any type of cancer</p>
 
-<p>7. Diabetes and diabetic complications such as retinopathy, neuropathy, nephropathy, diabetic coma, or insulin shock –  if you have diabetes and take medications to manage your condition – you will not qualify for coverage with them.</p>
+<p>7. Diabetes and diabetic complications such as retinopathy, neuropathy, nephropathy, diabetic coma, or insulin shock,  if you have diabetes and take medications to manage your condition, you will not qualify for coverage with them.</p>
 
 <p>The biggest problem with AARP underwriting is that only people in great health will qualify for coverage.</p>
 
@@ -130,7 +130,7 @@ sidebar: true
 
 <p>If you have health issues, we can help. We work with many insurance companies that are exceptionally forgiving with these health issues, and they will approve you for first-day coverage.</p>
 
-<h2 id="reason-5---it-has-a-two-year-waiting-period"><br><strong>Reason #5 – it has a two-year waiting period</strong></h2>
+<h2 id="reason-5---it-has-a-two-year-waiting-period"><br><strong>Reason #5: it has a two-year waiting period</strong></h2>
 
 <p>If you answered “yes” to the health questions in the AARP insurance application, expect to be offered a guaranteed issue life insurance.&#160;</p>
 
@@ -154,7 +154,7 @@ sidebar: true
 
 <p>My first goal is to find you a company that will accept your health issues at affordable rates.</p>
 
-<p>I work with over 50 life insurance companies, most of which offer better rates than AARP – New York Life. Fill in our quote form to compare prices from different life insurance companies.</p>
+<p>I work with over 50 life insurance companies, most of which offer better rates than AARP (New York Life). Fill in our quote form to compare prices from different life insurance companies.</p>
 
 <h2 class="as-h5">About Funeral Funds</h2>
 
@@ -165,15 +165,15 @@ sidebar: true
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>
 
 <h2 class="as-h5">1 comment</h2>

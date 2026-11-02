@@ -50,7 +50,7 @@ function burialHealth(): string {
   return (
     `<div class="hubnav" data-pagefind-ignore>` +
     list(HEALTH_CATEGORIES, 'hubnav-tiles') +
-    `<p class="hubnav-all"><a href="/a-z-health/">All Health Conditions (A–Z)</a></p></div>`
+    `<p class="hubnav-all"><a href="/a-z-health/">All Health Conditions (A to Z)</a></p></div>`
   );
 }
 

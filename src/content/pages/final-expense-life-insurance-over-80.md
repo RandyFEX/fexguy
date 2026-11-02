@@ -51,7 +51,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>Guaranteed acceptance plans always include a two-year waiting period – avoid these!</strong></h2>
+<h2><strong>Guaranteed acceptance plans always include a two-year waiting period. Avoid these!</strong></h2>
 
 <p>Guaranteed acceptance plans are heavily advertised to seniors over 80 because they approve everyone. </p>
 
@@ -737,7 +737,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>Guaranteed issue plans can help seniors over 80 – avoid these</strong></h2>
+<h2><strong>Guaranteed issue plans can help seniors over 80: avoid these</strong></h2>
 
 <p>Guaranteed issue plans allow seniors to get coverage without answering health questions.</p>
 
@@ -892,7 +892,7 @@ February 23, 2022 at 3:04 pm
 <div class="comment-replies">
 <div class="comment" id="comment-19153">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Leroy – You can get a quote here – <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Leroy, you can get a quote here: <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 March 18, 2022 at 10:32 am                    
 </div>
@@ -908,7 +908,7 @@ October 12, 2022 at 11:47 pm
 <div class="comment-replies">
 <div class="comment" id="comment-25187">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Hey Melissa – Thank you for allowing us to help you with this. You can use the quoting tool on this page to get a quote for your grandmother. Feel free to call us at 888-862-9456 if you have any more questions.</p>
+<p>Hey Melissa: Thank you for allowing us to help you with this. You can use the quoting tool on this page to get a quote for your grandmother. Feel free to call us at 888-862-9456 if you have any more questions.</p>
 <div class="comment-meta">
 October 13, 2022 at 3:08 am                    
 </div>

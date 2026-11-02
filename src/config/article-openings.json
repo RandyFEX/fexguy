@@ -100,7 +100,7 @@
     "/burial-insurance/terminally-ill-patients/": {
       "elements": [
         {
-          "starts": "!!! IMPORTANT – READ THIS !!!",
+          "starts": "!!! IMPORTANT: READ THIS !!!",
           "reason": "Eligibility warning: terminally ill applicants can only get a 2-year waiting period policy."
         }
       ]

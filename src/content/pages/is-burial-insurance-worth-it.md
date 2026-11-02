@@ -74,7 +74,7 @@ sidebar: true
 
 <p>Burial insurance is, in fact, a form of life insurance with a smaller face amount than traditional life insurance policies. It’s because burial insurance is designed to cover your final expenses. </p>
 
-<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement or mortgage protection – the difference between the two lies in your purpose of buying.</p>
+<p>On the other hand, life insurance policies are purchased to cover a wide variety of needs like income replacement or mortgage protection. The difference between the two lies in your purpose of buying.</p>
 
 <p>The death benefit payout from burial insurance can be used for other expenses depending on your beneficiary. However, benefit payouts are designed to cover final expenses primarily. </p>
 
@@ -177,37 +177,37 @@ health questions that you may see on the application:</strong></p>
 
 <p><strong>What’s good about burial insurance?</strong></p>
 
-<p>1. <strong>No medical exam</strong>
-– burial insurance does not require you to undergo a physical or medical exam.
+<p>1. <strong>No medical exam</strong>:
+burial insurance does not require you to undergo a physical or medical exam.
 It can be completed on a simplified basis by answering some health questions.
 Guaranteed issue burial insurance doesn’t even have any health questions at
 all.</p>
 
 <p>2. <strong>No health
-questions policy available</strong> – if you have severe medical conditions and
+questions policy available</strong>: if you have severe medical conditions and
 don’t want to take a medical exam, you can opt for a guaranteed issue no health
 question policy. You will be approved for coverage regardless of your health.</p>
 
 <p>Those with chronic illnesses like COPD or renal failure and the elderly often have difficulty getting life insurance. In this case, burial insurance will be your best option for insurance coverage.</p>
 
-<p>3. <strong>Relaxed underwriting</strong> – health issues like high blood pressure, high cholesterol, and diabetes are accepted for first-day coverage.</p>
+<p>3. <strong>Relaxed underwriting</strong>: health issues like high blood pressure, high cholesterol, and diabetes are accepted for first-day coverage.</p>
 
-<p>4. <strong>Fast approval</strong> – burial insurance for seniors doesn’t require a medical exam, so you save time in underwriting. The application can be approved within minutes to a few days after applying.</p>
+<p>4. <strong>Fast approval</strong>: burial insurance for seniors doesn’t require a medical exam, so you save time in underwriting. The application can be approved within minutes to a few days after applying.</p>
 
-<p>5. <strong>Fixed premium</strong> – the amount you will pay will remain the same throughout the policy’s life. It will not increase due to age or health conditions.</p>
+<p>5. <strong>Fixed premium</strong>: the amount you will pay will remain the same throughout the policy’s life. It will not increase due to age or health conditions.</p>
 
-<p>6. <strong>Permanent coverage</strong> – burial insurance policies are whole life insurance that will remain in force as long as you pay the premiums. The coverage will not expire when you reach 80 years old. The death benefit is guaranteed to never decrease for any reason.</p>
+<p>6. <strong>Permanent coverage</strong>: burial insurance policies are whole life insurance that will remain in force as long as you pay the premiums. The coverage will not expire when you reach 80 years old. The death benefit is guaranteed to never decrease for any reason.</p>
 
-<p>7. <strong>Accumulates cash value</strong> – burial insurance has a <a href="https://en.wikipedia.org/wiki/Cash_value" target="_blank" rel="noreferrer noopener">cash value</a> component that accumulates over time. The cash value may be used to pay your premiums, or you can borrow from it during emergencies.</p>
+<p>7. <strong>Accumulates cash value</strong>: burial insurance has a <a href="https://en.wikipedia.org/wiki/Cash_value" target="_blank" rel="noreferrer noopener">cash value</a> component that accumulates over time. The cash value may be used to pay your premiums, or you can borrow from it during emergencies.</p>
 
-<p>8<strong>. Fast claims payout</strong> – since burial insurance is designed to pay for the funeral and final expenses, the beneficiary gives payouts quickly. Once all the paperwork is submitted, they will pay the death benefit within a few days to a week.</p>
+<p>8<strong>. Fast claims payout</strong>: since burial insurance is designed to pay for the funeral and final expenses, the beneficiary gives payouts quickly. Once all the paperwork is submitted, they will pay the death benefit within a few days to a week.</p>
 
-<p>9. <strong>Flexible</strong> –
+<p>9. <strong>Flexible</strong>:
 burial insurance plans are not locked up with any funeral home. The insurance
 provider pays in cash, and your beneficiary can use the funds in any way they
 see fit.</p>
 
-<p>10. <strong>Small face value options</strong> – you can purchase as little or as much insurance coverage as you need. The face amount you can purchase ranges from $2,000 to $25,000; some companies offer up to $50,000 in coverage.</p>
+<p>10. <strong>Small face value options</strong>: you can purchase as little or as much insurance coverage as you need. The face amount you can purchase ranges from $2,000 to $25,000; some companies offer up to $50,000 in coverage.</p>
 
 <h2 id="disadvantages-of-burial-insurance"><br><strong>Disadvantages of burial insurance</strong></h2>
 
@@ -218,8 +218,8 @@ see fit.</p>
 <li>Burial insurance plans are a little more expensive than traditional life insurance.</li>
 <li>If you stop paying your premium for a significant period, your policy will be canceled, and you cannot get your premiums back.</li>
 <li>Low coverage amount averaging $5,000 to $25,000.</li>
-<li>Waiting period for some plans – Guaranteed issue burial insurance comes with a waiting period. If you die from natural causes during the waiting period, the insurance company will refund your premiums plus 7-10% interest.</li>
-<li>Contestability period – burial insurance policies have a two-year contestability period where the company can investigate your death. If they discovered that you died from a medical condition you did not disclose on your application, your beneficiary would be denied the death benefit.</li>
+<li>Waiting period for some plans: Guaranteed issue burial insurance comes with a waiting period. If you die from natural causes during the waiting period, the insurance company will refund your premiums plus 7-10% interest.</li>
+<li>Contestability period: burial insurance policies have a two-year contestability period where the company can investigate your death. If they discovered that you died from a medical condition you did not disclose on your application, your beneficiary would be denied the death benefit.</li>
 </ol>
 
 <h2 id="who-needs-burial-insurance"> <br><strong>Who needs burial insurance? </strong></h2>

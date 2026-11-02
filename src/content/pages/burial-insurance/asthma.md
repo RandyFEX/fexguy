@@ -42,19 +42,19 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with asthma they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>– Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
-<li><strong>Aetna Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
-<li><strong>Aflac Decline</strong> – Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
-<li><strong>Aflac Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
-<li><strong>Family Benefit Life Decline</strong> – Are you currently, or within the past 6 months have you been, hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Do you require daily oxygen use (excluding when used with CPAP, after exercise, and for seasonal allergies), have an implanted defibrillator, received or been advised by a medical professional to receive an organ transplant or received dialysis within the LAST 24 MONTHS?</li>
-<li><strong>Liberty Bankers Life Decline </strong>– Within the last year, have you been confined to a hospital for more than 5 days total, been advised by a member of the medical profession to have surgery or hospitalization which you are still awaiting, used oxygen due to a medical condition, been unable to care for yourself or been bedridden at home or in a nursing home, hospice, long-term care, or assisted living facility?</li>
-<li><strong>Liberty Bankers Life Preferred</strong> – Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Is the Proposed Insured currently requiring any of the following other than fractures, bone or joint surgery, including replacement: wheelchair, electric scooter, oxygen equipment to assist breathing (excluding use for sleep apnea) or defibrillator?</li>
-<li><strong>Mutual of Omaha Level</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Chronic Lung Disease, including Chronic Obstructive Pulmonary Disease (COPD), Chronic Bronchitis, emphysema, or Sarcoidosis?</li>
-<li><strong>Trinity Life Decline</strong> – Are you currently, or within the past 6 months have you been hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
+<li><strong>Aetna Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
+<li><strong>Aflac Decline</strong>: Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
+<li><strong>Aflac Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
+<li><strong>Family Benefit Life Decline</strong>: Are you currently, or within the past 6 months have you been, hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Do you require daily oxygen use (excluding when used with CPAP, after exercise, and for seasonal allergies), have an implanted defibrillator, received or been advised by a medical professional to receive an organ transplant or received dialysis within the LAST 24 MONTHS?</li>
+<li><strong>Liberty Bankers Life Decline </strong>: Within the last year, have you been confined to a hospital for more than 5 days total, been advised by a member of the medical profession to have surgery or hospitalization which you are still awaiting, used oxygen due to a medical condition, been unable to care for yourself or been bedridden at home or in a nursing home, hospice, long-term care, or assisted living facility?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Is the Proposed Insured currently requiring any of the following other than fractures, bone or joint surgery, including replacement: wheelchair, electric scooter, oxygen equipment to assist breathing (excluding use for sleep apnea) or defibrillator?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Chronic Lung Disease, including Chronic Obstructive Pulmonary Disease (COPD), Chronic Bronchitis, emphysema, or Sarcoidosis?</li>
+<li><strong>Trinity Life Decline</strong>: Are you currently, or within the past 6 months have you been hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Asthma underwriting basics</h3>
@@ -89,16 +89,16 @@ sidebar: true
 <p>Asthma causes chronic airway inflammation and episodic bronchoconstriction, which restricts airflow and oxygen delivery during flare-ups and can lead to secondary respiratory and cardiovascular strain that may affect underwriting and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Shortness of breath</strong> – Airway narrowing limits airflow and reduces tolerance for physical activity.</li>
-<li><strong>Wheezing and chest tightness</strong> – Bronchospasm causes breathing discomfort and limits exertion.</li>
-<li><strong>Exercise intolerance</strong> – Physical activity can trigger symptoms and reduce endurance.</li>
-<li><strong>Frequent asthma attacks</strong> – Acute flare-ups may require urgent treatment or hospitalization.</li>
-<li><strong>Sleep disruption</strong> – Nighttime symptoms reduce sleep quality and daily energy.</li>
-<li><strong>Respiratory infections</strong> – Inflamed airways increase susceptibility to colds and <a href="/burial-insurance/chronic-bronchitis/" target="_blank" rel="noreferrer noopener">bronchitis</a>.</li>
-<li><strong>Medication side effects</strong> – Steroid use can affect weight, bone density, and immune function.</li>
-<li><strong>Anxiety related to breathing</strong> – Fear of attacks increases stress and activity avoidance.</li>
-<li><strong>Reduced work reliability</strong> – Unpredictable symptoms interfere with consistent performance.</li>
-<li><strong>Risk of severe attacks</strong> – Poorly controlled asthma can cause life-threatening respiratory events.</li>
+<li><strong>Shortness of breath</strong>: Airway narrowing limits airflow and reduces tolerance for physical activity.</li>
+<li><strong>Wheezing and chest tightness</strong>: Bronchospasm causes breathing discomfort and limits exertion.</li>
+<li><strong>Exercise intolerance</strong>: Physical activity can trigger symptoms and reduce endurance.</li>
+<li><strong>Frequent asthma attacks</strong>: Acute flare-ups may require urgent treatment or hospitalization.</li>
+<li><strong>Sleep disruption</strong>: Nighttime symptoms reduce sleep quality and daily energy.</li>
+<li><strong>Respiratory infections</strong>: Inflamed airways increase susceptibility to colds and <a href="/burial-insurance/chronic-bronchitis/" target="_blank" rel="noreferrer noopener">bronchitis</a>.</li>
+<li><strong>Medication side effects</strong>: Steroid use can affect weight, bone density, and immune function.</li>
+<li><strong>Anxiety related to breathing</strong>: Fear of attacks increases stress and activity avoidance.</li>
+<li><strong>Reduced work reliability</strong>: Unpredictable symptoms interfere with consistent performance.</li>
+<li><strong>Risk of severe attacks</strong>: Poorly controlled asthma can cause life-threatening respiratory events.</li>
 </ul>
 
 <h2>Understanding asthma policy types</h2>
@@ -117,7 +117,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>
