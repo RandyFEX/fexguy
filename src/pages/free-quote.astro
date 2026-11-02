@@ -13,6 +13,7 @@
 // (astro.config.mjs), llms.txt and site search.
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
+import HeaderLogo from '@/components/HeaderLogo.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
 import { PAGE_PHONES } from '@/config/phones';
@@ -62,7 +63,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
 
     <div class="fq-top">
       <div class="container fq-top__inner">
-        <a class="fq-top__home" href="/" aria-label="Funeral Funds Home">
+        <HeaderLogo>
           <img
             class="fq-top__logo"
             src="/images/logo/funeral-funds-wordmark-800.webp"
@@ -73,7 +74,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             alt="Funeral Funds"
             fetchpriority="high"
           />
-        </a>
+        </HeaderLogo>
         <HeaderPhone phone={phone} />
       </div>
     </div>
@@ -231,13 +232,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     justify-content: space-between;
     gap: var(--space-4);
     padding-block: var(--space-3);
-  }
-  /* The logo links home; the link is a 44px touch target, no taller than
-     the header's phone link. */
-  .fq-top__home {
-    display: inline-flex;
-    align-items: center;
-    min-height: var(--tap-target);
   }
   .fq-top__logo {
     width: 8rem;

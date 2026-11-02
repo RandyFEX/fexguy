@@ -58,6 +58,19 @@ is in place; see src/content/README.md for how pages were migrated.
   every built header: one `data-header-phone` link with that label and icon,
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
   /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
+- **Header logo link (Randy, November 2026):** the upper-left Funeral Funds
+  logo on every page links to exactly `https://funeralfunds.com/` (never a
+  relative path, tracking URL or script navigation), with the accessible
+  name "Funeral Funds home". `HOME_URL` and `HOME_LINK_LABEL` live in
+  `src/config/site.ts`; `src/components/HeaderLogo.astro` (marker
+  `data-header-logo`) wraps the logo in the site header (Header.astro) and
+  the /facebook/, /free-quote/ and /help/ landing headers; any new header
+  must use it. The six landing-layout content pages with a logo at the top
+  of their body (/buyer-info/, /888-672-0762/, /pricing/, /congratulations/,
+  /rates-from-randy/, /call-now/) carry the same link in their Markdown.
+  `npm run verify` checks every built header, flags any logo image before
+  `<main>`/the first `<section>` (or, on landing pages, before the first
+  heading) that isn't in such a link, and any linked logo pointing elsewhere.
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
   change what is sent to GA4/Meta, without his approval.

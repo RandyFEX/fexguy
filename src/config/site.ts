@@ -44,6 +44,12 @@ export interface SiteConfig {
 
 const uploads = '/wp-content/uploads';
 
+/** The header logo's link target on every page (Randy, November 2026): the
+ * canonical homepage, absolute. Used by src/components/HeaderLogo.astro. */
+export const HOME_URL = 'https://funeralfunds.com/';
+/** Accessible name of the header logo link. */
+export const HOME_LINK_LABEL = 'Funeral Funds home';
+
 export const site: SiteConfig = {
   url: 'https://funeralfunds.com',
   name: 'Funeral Funds',

@@ -1,0 +1,22 @@
+---
+// The upper-left Funeral Funds header logo link (Randy, November 2026): on
+// every page the logo links to the canonical homepage, HOME_URL
+// (https://funeralfunds.com/), never a relative path or a tracking URL. The
+// site header (Header.astro) and the standalone landing headers (/facebook/,
+// /free-quote/, /help/) all wrap their logo image in this component. A plain
+// anchor, no script; `npm run verify` fails on any header logo outside it.
+import { HOME_LINK_LABEL, HOME_URL } from '@/config/site';
+
+const { class: className } = Astro.props as { class?: string };
+---
+
+<a href={HOME_URL} class:list={['header-logo', className]} aria-label={HOME_LINK_LABEL} data-header-logo><slot /></a>
+
+<style>
+  /* A 44px touch target, no taller than the header's phone link. */
+  .header-logo {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+  }
+</style>

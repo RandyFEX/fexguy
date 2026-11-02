@@ -646,10 +646,64 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     headerProblems.push(`${page}: landing header not recognized by the header check`);
 }
 
+// ---- Upper-left header logo link (Randy, November 2026) ---------------------
+// Every page header (the site header and the .fb-top/.fq-top/.hp-top landing
+// headers) has exactly one logo link marked data-header-logo, a plain anchor to
+// the canonical homepage (HOME_URL in src/config/site.ts, exactly) with an
+// accessible name, wrapping the logo image. Future-layout safeguard: on every
+// built page, every Funeral Funds logo image anywhere before <main> or the
+// first <section> (wherever a new header puts it) must sit inside such a link.
+const SITE_SRC = readFileSync(new URL('../src/config/site.ts', import.meta.url), 'utf8');
+const HOME_URL = SITE_SRC.match(/export const HOME_URL = '([^']+)'/)?.[1];
+const logoProblems = [];
+let logosChecked = 0;
+if (HOME_URL !== 'https://funeralfunds.com/') logoProblems.push(`src/config/site.ts: HOME_URL is ${HOME_URL}, expected https://funeralfunds.com/`);
+const LOGO_IMG = /<img\b[^>]*\bsrc="\/images\/logo\/[^"]*"[^>]*>/g;
+const logoLinkOk = (attrs) =>
+  attrs.match(/\bhref="([^"]*)"/)?.[1] === HOME_URL &&
+  /\baria-label="[^"]*\S[^"]*"/.test(attrs) &&
+  !/\b(?:onclick|target|rel)=/i.test(attrs);
+for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f))) {
+  const html = readFileSync(file, 'utf8').replace(/<script\b[\s\S]*?<\/script>/gi, '');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const regions = [];
+  for (const m of html.matchAll(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/g)) regions.push(['site header', m[0]]);
+  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
+  for (const [kind, region] of regions) {
+    logosChecked++;
+    const links = [...region.matchAll(/<a\b([^>]*\bdata-header-logo\b[^>]*)>([\s\S]*?)<\/a>/g)];
+    if (links.length !== 1) { logoProblems.push(`${page}: ${kind} has ${links.length} data-header-logo links (expected 1)`); continue; }
+    const [, attrs, inner] = links[0];
+    if (!logoLinkOk(attrs)) logoProblems.push(`${page}: ${kind} logo link is not a plain labelled link to ${HOME_URL} (<a${attrs}>)`);
+    if (!/<img\b[^>]*\bsrc="\/images\/logo\//.test(inner)) logoProblems.push(`${page}: ${kind} logo link has no logo image`);
+  }
+  // Safeguard for headers this check doesn't know yet.
+  const top = html.slice(0, Math.min(...[html.search(/<main\b/), html.search(/<section\b/)].filter((i) => i >= 0), html.length));
+  const linked = [...top.matchAll(/<a\b([^>]*\bdata-header-logo\b[^>]*)>([\s\S]*?)<\/a>/g)];
+  for (const [, attrs] of linked) if (!logoLinkOk(attrs)) logoProblems.push(`${page}: header logo link is not a plain labelled link to ${HOME_URL}`);
+  const outside = linked.reduce((t, m) => t.replace(m[0], ''), top);
+  for (const m of outside.matchAll(LOGO_IMG)) logoProblems.push(`${page}: header logo image is not inside a data-header-logo link to ${HOME_URL} (${m[0].slice(0, 90)}...)`);
+  // Landing-layout content pages have no header: their logo heads the page
+  // body. A logo there before the first heading is the page's header logo.
+  if (/\bpage--landing\b/.test(html)) {
+    const main = html.slice(Math.max(0, html.search(/<main\b/)));
+    const head = main.slice(0, main.search(/<h[1-6]\b/) >= 0 ? main.search(/<h[1-6]\b/) : main.length);
+    const ok = [...head.matchAll(/<a\b([^>]*\bdata-header-logo\b[^>]*)>([\s\S]*?)<\/a>/g)];
+    for (const [, attrs] of ok) { logosChecked++; if (!logoLinkOk(attrs)) logoProblems.push(`${page}: landing logo link is not a plain labelled link to ${HOME_URL}`); }
+    const rest = ok.reduce((t, m) => t.replace(m[0], ''), head);
+    for (const m of rest.matchAll(LOGO_IMG)) logoProblems.push(`${page}: landing page logo is not inside a data-header-logo link to ${HOME_URL}`);
+  }
+  // Anywhere on the page, a linked Funeral Funds logo goes to the homepage.
+  for (const m of html.matchAll(/<a\b([^>]*)>((?:(?!<\/a>)[\s\S])*?<img\b[^>]*\bsrc="\/images\/logo\/[\s\S]*?)<\/a>/g))
+    if (!logoLinkOk(m[1])) logoProblems.push(`${page}: linked logo is not a plain labelled link to ${HOME_URL} (<a${m[1].slice(0, 80)}>)`);
+}
+
 console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
 console.log(`Header phone (label, icon, number): ${headersChecked} headers checked | problems: ${headerProblems.length}`);
 for (const p of headerProblems) console.log(`  [header] ${p}`);
+console.log(`Header logo link (${HOME_URL}): ${logosChecked} headers checked | problems: ${logoProblems.length}`);
+for (const p of logoProblems) console.log(`  [logo] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
@@ -685,6 +739,7 @@ const problems =
   search.problems.length +
   redirectProblems.length +
   headerProblems.length +
+  logoProblems.length +
   guardProblems.length +
   structureProblems.length +
   tocProblems.length +
