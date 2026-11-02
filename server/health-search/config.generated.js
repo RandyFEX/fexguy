@@ -160,8 +160,7 @@ export const config = {
        "months": "25+",
        "benefit": "100% coverage payout."
       }
-     ],
-     "verification": "From the general source supplied. State and product variations still need to be verified."
+     ]
     }
    },
    "rules": {},

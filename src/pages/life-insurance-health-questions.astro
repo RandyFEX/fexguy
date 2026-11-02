@@ -1,0 +1,46 @@
+---
+// Public Health Question Database page (Randy, November 2026). Indexable and
+// in the sitemap. The search itself runs server-side (api/health-search.js);
+// the carriers' question records are never in this page or its scripts.
+// The review copy stays at /health-question-search-preview/ (noindex).
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HealthQuestionSearch from '@/components/health-search/HealthQuestionSearch.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+---
+
+<BaseLayout
+  title={pageTitle('Life Insurance Health Questions')}
+  description="Search the health questions life insurance companies ask on their applications."
+>
+  <div class="container hqs-page" data-page-type="utility" data-page-reason="Health question search tool.">
+    <h1>Life Insurance Health Questions</h1>
+    <p class="hqs-page__lead">
+      Type a health condition, procedure, medication or insurance company name to see the exact questions on the
+      application and what a YES or NO answer means for your coverage.
+    </p>
+    <p class="hqs-page__call">
+      Prefer to talk it through? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.
+    </p>
+
+    <HealthQuestionSearch title="Search health questions" intro="Search by condition, procedure or medication. Add a company name to see only that company, such as Aflac COPD." />
+  </div>
+</BaseLayout>
+
+<style>
+  .hqs-page {
+    padding-block: var(--space-4, 1.5rem);
+    max-width: 52rem;
+  }
+  .hqs-page__lead {
+    font-size: 1.125rem;
+    margin-block: 0.5rem;
+  }
+  .hqs-page__call {
+    margin-bottom: 1.25rem;
+  }
+  .hqs-page__call a {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+</style>

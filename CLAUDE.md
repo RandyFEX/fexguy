@@ -1124,12 +1124,15 @@ scope protection wins.
   bar under the header was removed site-wide (Randy, October 2026; the header
   already has GET A QUOTE and the phone number): don't bring it back.
 
-## Health Question Search (Randy, October 2026; in preview, not launched)
+## Health Question Search (Randy, October 2026; launched November 2026)
 
 - Reusable component `src/components/health-search/HealthQuestionSearch.astro`
   (`variant="inline"` or `"modal"`), inserted only on pages Randy chooses,
-  never site-wide. Non-indexed review page: /health-question-search-preview/
-  (noindex, nofollow, not in sitemap/llms.txt/search, not linked).
+  never site-wide. Public page (Randy, November 2026):
+  /life-insurance-health-questions/ (src/pages/life-insurance-health-questions.astro;
+  indexable, in the sitemap, no review-only parts). The review copy
+  /health-question-search-preview/ stays noindex, nofollow, out of the
+  sitemap/llms.txt/search and unlinked.
 - The site stays static; the only server code is the Vercel Function
   `api/health-search.js`. Logic and public configuration (carriers,
   schedules, rules, medical terms) live in `server/health-search/` (see its
