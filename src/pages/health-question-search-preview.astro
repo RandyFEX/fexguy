@@ -1,17 +1,16 @@
 ---
 // Non-indexed preview of the Health Question Search database page, for
 // review only: noindex, nofollow, not in the sitemap, llms.txt or site
-// search, and not linked from navigation. The top of the page is the
-// consumer page as it would launch; the bottom shows the article button
-// version of the same component.
+// search, and not linked from navigation. The page is the consumer page as it
+// would launch. Review-only parts (the preview note and the article button
+// demo) are built only outside Production (VERCEL_ENV), so they can never
+// ship with the public page.
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HealthQuestionSearch from '@/components/health-search/HealthQuestionSearch.astro';
 import { pageTitle } from '@/lib/seo/meta';
 import { lead } from '@/config/lead';
-import { config } from '../../server/health-search/config.generated.js';
 
-// Carrier names only (public configuration); never question records.
-const carriers = [...config.carriers].sort((a, b) => a.displayOrder - b.displayOrder);
+const reviewOnly = process.env.VERCEL_ENV !== 'production';
 ---
 
 <BaseLayout
@@ -21,7 +20,7 @@ const carriers = [...config.carriers].sort((a, b) => a.displayOrder - b.displayO
   noindex
 >
   <div class="container hqs-page" data-page-type="utility" data-page-reason="Non-indexed preview of the health question search page.">
-    <p class="hqs-page__flag">Preview for review only. Not linked from the site and not indexed by search engines.</p>
+    {reviewOnly && <p class="hqs-page__flag">Preview for review only. Not linked from the site and not indexed by search engines.</p>}
     <h1>Life Insurance Health Questions</h1>
     <p class="hqs-page__lead">
       Type a health condition, procedure, medication or insurance company name to see the exact questions on the
@@ -33,18 +32,15 @@ const carriers = [...config.carriers].sort((a, b) => a.displayOrder - b.displayO
 
     <HealthQuestionSearch title="Search health questions" intro="Search by condition, procedure or medication. Add a company name to see only that company, such as Aflac COPD." />
 
-    <section class="hqs-page__carriers" aria-labelledby="hqs-carriers-title">
-      <h2 id="hqs-carriers-title">Insurance companies included</h2>
-      <ul>
-        {carriers.map((c) => <li>{c.name}{c.guaranteedIssue ? ' (guaranteed issue, no health questions)' : ''}</li>)}
-      </ul>
-    </section>
-
-    <section class="hqs-page__review" aria-labelledby="hqs-review-title">
-      <h2 id="hqs-review-title">For review: article button version</h2>
-      <p>Placed in an article, the search shows only this button until someone opens it.</p>
-      <HealthQuestionSearch variant="modal" />
-    </section>
+    {
+      reviewOnly && (
+        <section class="hqs-page__review" aria-labelledby="hqs-review-title">
+          <h2 id="hqs-review-title">For review: article button version</h2>
+          <p>Placed in an article, the search shows only this button until someone opens it.</p>
+          <HealthQuestionSearch variant="modal" />
+        </section>
+      )
+    }
   </div>
 </BaseLayout>
 
@@ -69,15 +65,7 @@ const carriers = [...config.carriers].sort((a, b) => a.displayOrder - b.displayO
     font-weight: 700;
     white-space: nowrap;
   }
-  .hqs-page__carriers,
   .hqs-page__review {
     margin-top: 2rem;
-  }
-  .hqs-page__carriers ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1.25rem;
-  }
-  .hqs-page__carriers li {
-    margin-block: 0.25rem;
   }
 </style>

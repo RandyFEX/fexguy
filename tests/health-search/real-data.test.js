@@ -10,7 +10,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { config } from '../../server/health-search/config.generated.js';
 import { checkPayload } from '../../server/health-search/question-store.js';
 import { buildPayload } from '../../server/health-search/publish.js';
-import { prepare, search } from '../../server/health-search/search.js';
+import { prepare, search, answerRows } from '../../server/health-search/search.js';
 
 const dir = new URL('../../server/health-search/private/questions/', import.meta.url);
 const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(new URL(f, dir), 'utf8'))) : [];
@@ -129,4 +129,41 @@ test('outcomes that point to a modified or graded plan show its approved payout 
   assert.ok(label('cancer', 'Guarantee Trust Life').includes('Graded benefit'), 'GTL graded schedule');
   // A question whose outcomes never point to a reduced plan shows no schedule.
   assert.deepEqual(label('hiv', 'Family Benefit Life'), []);
+});
+
+test('answer rows keep every approved line, on the right YES/NO, and add nothing new', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  const SECTION = /^[A-Z][A-Z -]*? COVERAGE:$/;
+  const carrierLines = new Map();
+  for (const q of dataset.questions) {
+    const set = carrierLines.get(q.carrierId) ?? new Set();
+    for (const o of [q.yes, q.no]) for (const l of (o?.explanation ?? '').split('\n')) set.add(l.trim());
+    carrierLines.set(q.carrierId, set);
+  }
+  let multi = 0;
+  for (const q of dataset.questions) {
+    const carrier = prep.carrierById.get(q.carrierId);
+    for (const [key, A] of [['yes', 'YES'], ['no', 'NO']]) {
+      const o = q[key];
+      if (!o) continue;
+      const rows = answerRows(carrier, A, o, prep.planLines.get(q.carrierId) ?? {});
+      assert.ok(rows.length >= 1, `${q.id} ${A} has a row`);
+      assert.ok(rows.every((r) => r.answer === A), `${q.id} ${A} rows keep the answer`);
+      const lines = (o.explanation ?? '').split('\n').map((l) => l.trim()).filter(Boolean);
+      const sections = lines.filter((l) => SECTION.test(l)).length;
+      if (sections > 1) { multi++; assert.equal(rows.length, sections, `${q.id} ${A}: one row per approved outcome`); }
+      const shown = rows.flatMap((r) => [r.primary, ...r.details]);
+      for (const l of lines) {
+        if (SECTION.test(l)) continue;
+        if (sections > 1 && /coverage may be available\.?$/.test(l) && / or /.test(l)) continue; // distributed into the rows
+        assert.ok(shown.includes(l) || shown.includes(l.replace(/\.$/, '')), `${q.id} ${A}: line kept: ${l.slice(0, 40)}`);
+      }
+      const rule = o.rule ? carrier.rules[o.rule]?.explanation : null;
+      for (const r of rows) for (const d of r.details) {
+        assert.ok(carrierLines.get(q.carrierId).has(d) || d === rule, `${q.id} ${A}: detail comes from the approved wording: ${d.slice(0, 40)}`);
+      }
+      assert.ok(!shown.some((x) => SECTION.test(x)), `${q.id} ${A}: no COVERAGE subheading`);
+    }
+  }
+  assert.ok(multi > 0, 'multi-outcome answers exist and are split');
 });

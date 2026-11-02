@@ -67,6 +67,13 @@ try {
     assert.ok((await inline.locator('.hqs-q__text').first().innerText()).includes('heart attack'));
     assert.match(await inline.locator('.hqs-sample').innerText(), /sample questions/);
     assert.match(await inline.locator('[data-hqs-allowance]').innerText(), /9 of 10/);
+    // Answer rows: YES/NO tag beside a bold outcome; no COVERAGE subheadings.
+    const row = inline.locator('.hqs-ans__row').first();
+    assert.match(await row.locator('.hqs-ans__tag').innerText(), /^(YES|NO)$/);
+    assert.ok((await row.locator('.hqs-ans__primary').innerText()).length > 0);
+    const results = await inline.locator('[data-hqs-results]').innerText();
+    assert.doesNotMatch(results, /COVERAGE:/);
+    assert.equal(await inline.locator('.hqs-carrier:not(.hqs-carrier--gi) .hqs-schedules').count(), 0, 'no separate schedule box on question results');
   });
   await check('a search with no matches is free and explains what to try', async () => {
     await inline.getByLabel('Health condition, procedure or medication').fill('hip replacement');

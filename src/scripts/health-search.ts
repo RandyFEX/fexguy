@@ -1,13 +1,14 @@
 // Health Question Search (src/components/health-search/). Talks only to the
 // protected API; renders with DOM methods (never innerHTML of server data).
-// The 3-searches-a-day allowance is enforced on the server; this script only
+// The daily search allowance is enforced on the server; this script only
 // shows it. Nothing here is sent to GA4 or Meta.
 
 const API = '/api/health-search/';
 
 type Outcome = { classification: string | null; explanation: string } | null;
 type Schedule = { label: string; periods: { months: string; benefit: string }[]; verification?: string };
-type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; info?: Outcome; yes: Outcome; no: Outcome };
+type Answer = { answer: 'YES' | 'NO'; primary: string; details: string[] };
+type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; info?: Outcome; yes: Outcome; no: Outcome; answers?: Answer[] };
 type Group = { carrier: string; anonymized: boolean; questions: Question[]; schedules: Schedule[] };
 type GiCard = { carrier: string; summary: string; schedules: Schedule[] };
 type Response = {
@@ -24,16 +25,6 @@ type Response = {
   groups?: Group[];
   guaranteedIssue?: GiCard[];
   sample?: boolean;
-};
-
-const CLASS_LABELS: Record<string, string> = {
-  decline: 'Not eligible for this plan',
-  modified: 'Modified benefit plan',
-  graded: 'Graded benefit plan',
-  timeframe: 'Depends on timing',
-  'standard-or-preferred': 'Standard or preferred rates',
-  'guaranteed-issue-referral': 'Guaranteed issue plan instead',
-  level: 'Full coverage from the first day',
 };
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, cls?: string, text?: string) {
@@ -81,21 +72,45 @@ function renderSchedules(schedules: Schedule[]) {
   return wrap;
 }
 
-function renderOutcome(label: string, o: Outcome) {
-  if (!o) return null;
-  const div = el('div', 'hqs-outcome');
-  const chip = o.classification ? CLASS_LABELS[o.classification] : undefined;
-  if (label || chip) {
-    const head = el('p', 'hqs-outcome__head');
-    if (label) head.append(el('strong', undefined, label));
-    if (chip) head.append(el('span', 'hqs-outcome__class', chip));
-    div.append(head);
+const PHONE = /888-862-9456/g;
+
+/** Text with the Funeral Funds number as a tap-to-call link. */
+function withCallLinks(text: string, href: string) {
+  const frag = document.createDocumentFragment();
+  let last = 0;
+  for (const m of text.matchAll(PHONE)) {
+    frag.append(document.createTextNode(text.slice(last, m.index)));
+    const a = el('a', 'hqs-tel', m[0]);
+    a.href = href;
+    frag.append(a);
+    last = (m.index ?? 0) + m[0].length;
   }
-  div.append(el('p', 'hqs-outcome__text', o.explanation));
-  return div;
+  frag.append(document.createTextNode(text.slice(last)));
+  return frag;
 }
 
-function renderGroup(g: Group) {
+/** One row per approved outcome: YES/NO beside the bold outcome, details below. */
+function renderAnswers(answers: Answer[], phoneHref: string) {
+  const list = el('ul', 'hqs-ans');
+  for (const a of answers) {
+    const row = el('li', 'hqs-ans__row');
+    row.append(el('span', `hqs-ans__tag hqs-ans__tag--${a.answer.toLowerCase()}`, a.answer));
+    row.append(el('strong', 'hqs-ans__primary', a.primary));
+    if (a.details.length) {
+      const ul = el('ul', 'hqs-ans__details');
+      for (const d of a.details) {
+        const li = el('li');
+        li.append(withCallLinks(d, phoneHref));
+        ul.append(li);
+      }
+      row.append(ul);
+    }
+    list.append(row);
+  }
+  return list;
+}
+
+function renderGroup(g: Group, phoneHref: string) {
   const card = el('article', 'hqs-carrier');
   card.append(el('h3', 'hqs-carrier__name', g.carrier));
   for (const q of g.questions) {
@@ -107,10 +122,14 @@ function renderGroup(g: Group) {
     const quote = el('blockquote', 'hqs-q__text');
     quote.append(el('p', undefined, q.text));
     item.append(quote, el('p', 'hqs-q__why', q.because));
-    for (const o of [renderOutcome('', q.info ?? null), renderOutcome('If you answer YES', q.yes), renderOutcome('If you answer NO', q.no)]) if (o) item.append(o);
+    if (q.info?.explanation) {
+      const info = el('p', 'hqs-q__info');
+      info.append(withCallLinks(q.info.explanation, phoneHref));
+      item.append(info);
+    }
+    if (q.answers?.length) item.append(renderAnswers(q.answers, phoneHref));
     card.append(item);
   }
-  if (g.schedules.length) card.append(renderSchedules(g.schedules));
   return card;
 }
 
@@ -186,7 +205,7 @@ function setup(root: HTMLElement) {
           : `No question asks about "${q}" by name. These questions are related to it.`));
       }
     }
-    for (const g of data.groups ?? []) frag.append(renderGroup(g));
+    for (const g of data.groups ?? []) frag.append(renderGroup(g, phoneHref));
     for (const c of data.guaranteedIssue ?? []) frag.append(renderGi(c));
     results.querySelector('[data-hqs-more]')?.remove();
     results.append(frag);

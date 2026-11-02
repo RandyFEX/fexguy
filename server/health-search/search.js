@@ -39,7 +39,27 @@ export function prepare(dataset) {
     .flatMap((c) => (c.searchNames ?? [c.name]).map((n) => ({ id: c.id, key: phraseKey(n) })))
     .filter((n) => n.key)
     .sort((a, b) => b.key.length - a.key.length);
-  return { dataset, concepts, conceptById, carrierById, questions, carrierNames };
+  // Each carrier's own payout lines per plan, from the "MODIFIED COVERAGE:" /
+  // "GRADED COVERAGE:" sections of its records (Randy's wording), used where
+  // an outcome points to that plan without listing the payouts itself.
+  /** @type {Map<string, Record<string, string[]>>} */
+  const planLines = new Map();
+  for (const q of dataset.questions) {
+    for (const o of [q.yes, q.no]) {
+      let plan = null;
+      for (const line of (o?.explanation ?? '').split('\n').map((l) => l.trim())) {
+        const m = line.match(SECTION);
+        if (m) { plan = schedulePlan(m[1].toLowerCase()); continue; }
+        if (plan && /^Months\b/.test(line)) {
+          const own = planLines.get(q.carrierId) ?? {};
+          if (!own[plan]) own[plan] = [];
+          if (!own[plan].includes(line) && own[plan].length < 3) own[plan].push(line);
+          planLines.set(q.carrierId, own);
+        }
+      }
+    }
+  }
+  return { dataset, concepts, conceptById, carrierById, questions, carrierNames, planLines };
 }
 
 /** @typedef {ReturnType<typeof prepare>} Prepared */
@@ -202,7 +222,7 @@ function searchConditions(prep, rawQuery, opts, onlyCarriers) {
       const bestB = Math.max(...b.ms.map((m) => (m.type === 'direct' ? 1000 : 0) + m.score));
       return bestB - bestA || a.carrier.displayOrder - b.carrier.displayOrder;
     })
-    .map(({ carrier, ms }) => presentGroup(carrier, ms));
+    .map(({ carrier, ms }) => presentGroup(carrier, ms, prep.planLines.get(carrier.id) ?? {}));
 
   // Guaranteed issue carriers (no health questions) close the list.
   const giCarriers = prep.dataset.carriers.filter((c) => c.guaranteedIssue && (!onlyCarriers || onlyCarriers.has(c.id))).sort((a, b) => a.displayOrder - b.displayOrder);
@@ -224,6 +244,84 @@ function searchConditions(prep, rawQuery, opts, onlyCarriers) {
 /** @param {Carrier} carrier */
 function publicName(carrier) {
   return carrier.publicDisplay === 'anonymized' ? carrier.anonymizedName ?? 'One insurance company' : carrier.name;
+}
+
+// Answer rows for display: "YES/NO + primary outcome" with its supporting
+// lines underneath. Built only from the approved wording, never reworded:
+// - "X COVERAGE:" labels in Randy's text start a section; the label itself
+//   isn't shown, its section becomes one row (so an answer with two approved
+//   outcomes, e.g. first-day or modified, shows two rows with the same
+//   YES/NO), and the section's lines become the details.
+// - Otherwise the first line is the primary outcome and the rest are details.
+//   Where that first line is only a call instruction, the primary names the
+//   outcome the line itself states (CALL_PRIMARY) and the line stays a detail.
+// - An outcome that points to a modified or graded plan without payout lines
+//   of its own gets the carrier's approved schedule as details.
+// - A carrier rule's note (e.g. CICA's eligibility note) is the last detail.
+const SECTION = /^([A-Z][A-Z -]*?) COVERAGE:$/;
+const CALL_PRIMARY = /** @type {Record<string, string>} */ ({
+  'first-day-standard': 'First-day standard coverage',
+  'first-day-preferred': 'First-day preferred coverage',
+  'non-smoker-rates': 'Lower "non-smoker" rates',
+});
+/** @param {string} label e.g. "FIRST-DAY" -> "First-day coverage" */
+const sectionName = (label) => `${label.charAt(0)}${label.slice(1).toLowerCase()} coverage`;
+
+/**
+ * @param {Carrier} carrier
+ * @param {'YES' | 'NO'} answer
+ * @param {import('./validate.js').Outcome | undefined} o
+ * @param {Record<string, string[]>} [ownPlanLines] the carrier's own payout lines per plan
+ * @returns {{ answer: 'YES' | 'NO', primary: string, details: string[] }[]}
+ */
+export function answerRows(carrier, answer, o, ownPlanLines = {}) {
+  if (!o) return [];
+  const rule = o.rule ? carrier.rules[o.rule] : null;
+  const classification = o.classification ?? rule?.classification ?? null;
+  const lines = (o.explanation ?? '').split('\n').map((l) => l.trim()).filter(Boolean);
+  /** @type {string[]} */
+  const head = [];
+  /** @type {{ label: string, lines: string[] }[]} */
+  const sections = [];
+  for (const line of lines) {
+    const m = line.match(SECTION);
+    if (m) sections.push({ label: m[1], lines: [] });
+    else if (sections.length) sections[sections.length - 1].lines.push(line);
+    else head.push(line);
+  }
+  /** @type {{ answer: 'YES' | 'NO', primary: string, details: string[] }[]} */
+  let rows;
+  if (sections.length > 1) {
+    // "First-day or modified coverage may be available." + one section each.
+    const may = head.some((l) => /may be available/i.test(l)) ? ' may be available' : '';
+    rows = sections.map((sec) => ({ answer, primary: `${sectionName(sec.label)}${may}`, details: sec.lines }));
+  } else if (sections.length === 1) {
+    const sec = sections[0];
+    const first = head[0];
+    if (first && !/^Call\b/.test(first)) rows = [{ answer, primary: first, details: [...head.slice(1), ...sec.lines] }];
+    else rows = [{ answer, primary: (classification && CALL_PRIMARY[classification]) || sectionName(sec.label), details: [...head, ...sec.lines] }];
+  } else if (head.length) {
+    const first = head[0];
+    if (/^Call\b/.test(first) && classification && CALL_PRIMARY[classification]) rows = [{ answer, primary: CALL_PRIMARY[classification], details: head }];
+    else rows = [{ answer, primary: first, details: head.slice(1) }];
+  } else if (rule?.explanation) {
+    return [{ answer, primary: rule.explanation, details: [] }];
+  } else {
+    return [];
+  }
+  // Exact repeats of a line add nothing (the wording itself is never changed).
+  for (const r of rows) r.details = r.details.filter((d, i, all) => d !== r.primary && all.indexOf(d) === i);
+  const plan = schedulePlan(classification);
+  if (plan && rows.length === 1 && !rows[0].details.some((d) => /^Months\b/.test(d))) {
+    const own = ownPlanLines[plan];
+    const schedule = carrier.schedules[plan];
+    if (own?.length) rows[0].details.push(...own);
+    else if (schedule) rows[0].details.push(...schedule.periods.map((p) => `Months ${p.months}: ${p.benefit}`));
+  }
+  if (rule?.explanation) rows[rows.length - 1].details.push(rule.explanation);
+  // The bold primary line reads as a label, without a closing period.
+  for (const r of rows) r.primary = r.primary.replace(/\.$/, '');
+  return rows;
 }
 
 /** @param {Carrier} carrier @param {import('./validate.js').Outcome | undefined} o */
@@ -253,8 +351,8 @@ function schedulePlan(c) {
   return c ? SCHEDULE_FOR[c] ?? null : null;
 }
 
-/** @param {Carrier} carrier @param {{ q: Question, type: 'direct' | 'related', because: string }[]} ms */
-function presentGroup(carrier, ms) {
+/** @param {Carrier} carrier @param {{ q: Question, type: 'direct' | 'related', because: string }[]} ms @param {Record<string, string[]>} [planLines] */
+function presentGroup(carrier, ms, planLines = {}) {
   // Direct matches first, then related ones; each in the application's own order.
   const ordered = [...ms].sort((a, b) => (a.type === b.type ? 0 : a.type === 'direct' ? -1 : 1) || /** @type {any} */ (a.q).order - /** @type {any} */ (b.q).order);
   const usedSchedules = new Set();
@@ -273,6 +371,7 @@ function presentGroup(carrier, ms) {
       match: type,
       because,
       info: outcome(carrier, q.info),
+      answers: [...answerRows(carrier, 'YES', q.yes, planLines), ...answerRows(carrier, 'NO', q.no, planLines)],
       yes,
       no,
     };
