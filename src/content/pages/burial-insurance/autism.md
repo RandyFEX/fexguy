@@ -44,20 +44,20 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with autism or mental conditions they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
-<li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Aflac Decline</strong> – Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
-<li><strong>Aflac Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Are you CURRENTLY bedridden, confined to a hospital, nursing home, mental care facility, long term care facility, hospice or have you been diagnosed with an end-stage or terminal illness, or been told by a medical professional that you have less than 12 months to live?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Level</strong> – In the past 2 years, has the Proposed Insured been hospitalized by a licensed medical professional for any mental or nervous disorder?</li>
-<li><strong>Mutual of Omaha Level </strong>– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
-<li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Aflac Decline</strong>: Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
+<li><strong>Aflac Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Are you CURRENTLY bedridden, confined to a hospital, nursing home, mental care facility, long term care facility, hospice or have you been diagnosed with an end-stage or terminal illness, or been told by a medical professional that you have less than 12 months to live?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 2 years, has the Proposed Insured been hospitalized by a licensed medical professional for any mental or nervous disorder?</li>
+<li><strong>Mutual of Omaha Level </strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Autism underwriting basics</h3>
@@ -97,16 +97,16 @@ sidebar: true
 <p>Autism affects brain development and nervous system processing in ways that influence communication, behavior, and sensory regulation, and these related challenges can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Communication difficulties</strong> – Delayed or limited speech and language processing affect social interaction, learning, and daily functioning.</li>
-<li><strong>Sensory processing issues</strong> – Heightened or reduced sensitivity to sound, light, touch, or texture can cause distress and limit the environments a person can tolerate.</li>
-<li><strong>Anxiety disorders</strong> – High rates of chronic anxiety lead to sleep disruption, avoidance behaviors, and reduced independence.</li>
-<li><strong>Depression</strong> – Social isolation and ongoing stress increase depression risk, especially in adolescents and adults.</li>
-<li><strong>Sleep disorders</strong> – Difficulty falling or staying asleep affects mood, attention, and daytime performance.</li>
-<li><strong>Behavioral challenges</strong> – Repetitive behaviors, rigidity, and emotional dysregulation interfere with school, work, and relationships.</li>
-<li><strong>Intellectual disability</strong> – Some individuals experience cognitive limitations that affect learning speed, reasoning, and independent living.</li>
-<li><strong>ADHD symptoms</strong> – Inattention, impulsivity, and hyperactivity complicate focus, organization, and task completion.</li>
-<li><strong>Seizure disorders</strong> – Epilepsy occurs more frequently and can affect safety, independence, and medical risk profiles.</li>
-<li><strong>Gastrointestinal issues</strong> – Chronic constipation, diarrhea, or abdominal pain affect comfort, nutrition, and daily routines.</li>
+<li><strong>Communication difficulties</strong>: Delayed or limited speech and language processing affect social interaction, learning, and daily functioning.</li>
+<li><strong>Sensory processing issues</strong>: Heightened or reduced sensitivity to sound, light, touch, or texture can cause distress and limit the environments a person can tolerate.</li>
+<li><strong>Anxiety disorders</strong>: High rates of chronic anxiety lead to sleep disruption, avoidance behaviors, and reduced independence.</li>
+<li><strong>Depression</strong>: Social isolation and ongoing stress increase depression risk, especially in adolescents and adults.</li>
+<li><strong>Sleep disorders</strong>: Difficulty falling or staying asleep affects mood, attention, and daytime performance.</li>
+<li><strong>Behavioral challenges</strong>: Repetitive behaviors, rigidity, and emotional dysregulation interfere with school, work, and relationships.</li>
+<li><strong>Intellectual disability</strong>: Some individuals experience cognitive limitations that affect learning speed, reasoning, and independent living.</li>
+<li><strong>ADHD symptoms</strong>: Inattention, impulsivity, and hyperactivity complicate focus, organization, and task completion.</li>
+<li><strong>Seizure disorders</strong>: Epilepsy occurs more frequently and can affect safety, independence, and medical risk profiles.</li>
+<li><strong>Gastrointestinal issues</strong>: Chronic constipation, diarrhea, or abdominal pain affect comfort, nutrition, and daily routines.</li>
 </ul>
 
 <h2>Understanding autism policy types</h2>
@@ -125,7 +125,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your final cost depends on which A-rated carrier best fits your specific health profile.</p>
 
-<h3>Aflac preferred life insurance rates age 50–80</h3>
+<h3>Aflac preferred life insurance rates age 50 to 80</h3>
 
 <table>
 <thead>

@@ -100,9 +100,9 @@ sidebar: true
 <h2 id="how-to-apply-for-burial-insurance"><strong>How to apply for burial insurance with high cholesterol</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Ask for assistance from independent insurance agents specializing in underwriting for people who have high cholesterol. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – When filling out the life insurance application with your agent, be truthful about your high cholesterol level and provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
-<li><strong>Review and Confirm Policy Details</strong> – Carefully review the life insurance policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Ask for assistance from independent insurance agents specializing in underwriting for people who have high cholesterol. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the life insurance application with your agent, be truthful about your high cholesterol level and provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
+<li><strong>Review and Confirm Policy Details</strong>: Carefully review the life insurance policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>

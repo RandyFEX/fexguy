@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Lumico Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Lumico Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -70,19 +70,19 @@ sidebar: true
 
 <h2 id="pros-of-lumico-burial-insurance"><strong>Pros of Lumico burial insurance</strong></h2>
 
-<p><strong>Diabetes-friendly</strong> – accepted insulin use if you used less than 40 units daily.</p>
+<p><strong>Diabetes-friendly</strong>: accepted insulin use if you used less than 40 units daily.</p>
 
-<p><strong>Seizure friendly</strong> – seizures qualified for the preferred plan</p>
+<p><strong>Seizure friendly</strong>: seizures qualified for the preferred plan</p>
 
-<p><strong>Accepted mild mental health disorders</strong> – depression and anxiety qualified for the preferred plan</p>
+<p><strong>Accepted mild mental health disorders</strong>: depression and anxiety qualified for the preferred plan</p>
 
 <h2 id="cons-of-lumico-burial-insurance"><strong>Cons of Lumico burial insurance</strong></h2>
 
-<p><strong>Strict underwriting</strong> – most health issues were not eligible for the preferred plan</p>
+<p><strong>Strict underwriting</strong>: most health issues were not eligible for the preferred plan</p>
 
-<p><strong>3-year waiting period</strong> – standard and modified plans have a 3-year waiting period</p>
+<p><strong>3-year waiting period</strong>: standard and modified plans have a 3-year waiting period</p>
 
-<p><strong>Blood thinners were a red flag</strong> – If they found blood thinners on your prescription history, you were offered a standard plan with a 3-year waiting period</p>
+<p><strong>Blood thinners were a red flag</strong>: If they found blood thinners on your prescription history, you were offered a standard plan with a 3-year waiting period</p>
 
 <h2 id="lumico-burial-insurance-products"><br><strong>Lumico burial insurance products</strong></h2>
 
@@ -126,10 +126,10 @@ amount was $5,000 and went as high as $30,000.</p>
 <p><strong>Death benefit schedule: </strong></p>
 
 <ul>
-<li>First-year – 25%</li>
-<li>Second-year – 50%</li>
-<li><strong>Third-year – 75%</strong></li>
-<li>Fourth-year – 100%</li>
+<li>First-year: 25%</li>
+<li>Second-year: 50%</li>
+<li><strong>Third-year: 75%</strong></li>
+<li>Fourth-year: 100%</li>
 </ul>
 
 <p><strong>Can we be honest here….waiting three years for full coverage is a terrible idea! </strong></p>
@@ -150,10 +150,10 @@ amount was $5,000 and went as high as $30,000.</p>
 <p><strong>Payout schedule:</strong></p>
 
 <ul>
-<li>First-year – 10%</li>
-<li>Second-year – 25%</li>
-<li><strong>Third-year – 50%</strong></li>
-<li>Fourth-year – 100%</li>
+<li>First-year: 10%</li>
+<li>Second-year: 25%</li>
+<li><strong>Third-year: 50%</strong></li>
+<li>Fourth-year: 100%</li>
 </ul>
 
 <p><strong>Holy cow…there is that three-year waiting period again!</strong></p>
@@ -174,9 +174,9 @@ amount was $5,000 and went as high as $30,000.</p>
 
 <h2 id="lumico-burial-insurance-riders"><br><strong>Lumico burial insurance riders</strong></h2>
 
-<p><strong>Accidental Death Rider</strong> – pays out an additional lump sum if you die from an accident.</p>
+<p><strong>Accidental Death Rider</strong>: pays out an additional lump sum if you die from an accident.</p>
 
-<p><strong>Accelerated Death Benefit Rider</strong> – accelerates a portion of the death benefit if you’re diagnosed with a terminal condition with a life expectancy of 12 months or less.</p>
+<p><strong>Accelerated Death Benefit Rider</strong>: accelerates a portion of the death benefit if you’re diagnosed with a terminal condition with a life expectancy of 12 months or less.</p>
 
 <h2 id="when-does-lumico-make-the-most-sense"><br><strong>When does Lumico burial insurance make the most sense?</strong></h2>
 
@@ -515,11 +515,11 @@ of their underwriting process.</p>
 
 <p id="block-fb79e2ca-75d9-4554-98e4-6f67d27c3dbd"><br><strong>What is Lumico’s fax number?</strong></p>
 
-<p id="block-6f8e783d-f825-4600-9f00-2c2d595fb77a">Lumico’s fax number – 816-701-2549</p>
+<p id="block-6f8e783d-f825-4600-9f00-2c2d595fb77a">Lumico’s fax number: 816-701-2549</p>
 
 <p id="block-3d5bc37d-4738-4a43-b5cf-b4b102e8e3e6"><br><strong>What is Lumico’s customer service number?</strong></p>
 
-<p id="block-73ba7c92-cf1b-4355-ab56-b49daeed0e1f">Lumico’s Customer Care Team – 855-774-4491</p>
+<p id="block-73ba7c92-cf1b-4355-ab56-b49daeed0e1f">Lumico’s Customer Care Team: 855-774-4491</p>
 
 <p id="block-72d58f47-fdaa-4243-bc2e-5c5a5e2bda41"><strong>Where is Lumico located?</strong></p>
 
@@ -552,9 +552,9 @@ of their underwriting process.</p>
 <p id="block-143c7d04-9189-44c7-a327-b55714322758">Lumico sold <strong>three final expense insurance products to seniors</strong> before it stopped accepting new applications:</p>
 
 <ul>
-<li>Preferred Plan – first-day coverage</li>
-<li>Standard Plan – with a three-year waiting period</li>
-<li>Modified Plan – with a three-year waiting period</li>
+<li>Preferred Plan: first-day coverage</li>
+<li>Standard Plan: with a three-year waiting period</li>
+<li>Modified Plan: with a three-year waiting period</li>
 </ul>
 
 <p id="block-40bb5d7b-d483-46d8-b349-a801b91c94a8"><br><strong>How old do you have to be to apply for Lumico insurance coverage?</strong></p>
@@ -570,17 +570,17 @@ of their underwriting process.</p>
 <p id="block-3cec7413-2b9d-493c-8125-81b7e1573980"><strong>Pros:</strong></p>
 
 <ul>
-<li><strong>Diabetes-friendly</strong>&#160;– accepted insulin use if you used less than 40 units daily</li>
-<li><strong>Seizure friendly</strong>&#160;– seizures qualified for the preferred plan</li>
-<li><strong>Accepted mild mental health disorders</strong>&#160;– depression and anxiety qualified for the preferred plan</li>
+<li><strong>Diabetes-friendly</strong>: accepted insulin use if you used less than 40 units daily</li>
+<li><strong>Seizure friendly</strong>: seizures qualified for the preferred plan</li>
+<li><strong>Accepted mild mental health disorders</strong>: depression and anxiety qualified for the preferred plan</li>
 </ul>
 
 <p id="block-e3f509f5-12af-4805-b014-136e86152cd9"><strong>Cons:</strong></p>
 
 <ul>
-<li><strong>Strict underwriting</strong>&#160;– most health issues were not eligible for the preferred plan</li>
-<li><strong>3-year waiting period</strong>&#160;– standard and modified plans have a 3-year waiting period</li>
-<li><strong>Blood thinners were a red flag</strong>&#160;– If they found blood thinners on your prescription history, you were offered a standard plan with a 3-year waiting period.</li>
+<li><strong>Strict underwriting</strong>: most health issues were not eligible for the preferred plan</li>
+<li><strong>3-year waiting period</strong>: standard and modified plans have a 3-year waiting period</li>
+<li><strong>Blood thinners were a red flag</strong>: If they found blood thinners on your prescription history, you were offered a standard plan with a 3-year waiting period.</li>
 </ul>
 
 <p id="block-0c2d2476-106a-4c18-8276-243ebf0c0081"><br><strong>How much life insurance can you get with Lumico life insurance?</strong></p>
@@ -596,15 +596,15 @@ of their underwriting process.</p>
 <p id="block-9e50141c-51c0-4ed2-9faf-102e5a18efc0"><strong>Female Preferred Plan</strong></p>
 
 <ul>
-<li>$5,000 coverage – up to $82.85 (depending on age and health)</li>
-<li>$10,000 coverage – up to $165.69 (depending on age and health)</li>
+<li>$5,000 coverage: up to $82.85 (depending on age and health)</li>
+<li>$10,000 coverage: up to $165.69 (depending on age and health)</li>
 </ul>
 
-<p id="block-e85afab9-e048-47af-b4c8-0709ded9b8bf"><strong>Male – Preferred Plan</strong></p>
+<p id="block-e85afab9-e048-47af-b4c8-0709ded9b8bf"><strong>Male: Preferred Plan</strong></p>
 
 <ul>
-<li>$5,000 coverage – up to $100.37 (depending on age and health)</li>
-<li>$10,000 coverage – up to $200.73 (depending on age and health)</li>
+<li>$5,000 coverage: up to $100.37 (depending on age and health)</li>
+<li>$10,000 coverage: up to $200.73 (depending on age and health)</li>
 </ul>
 
 <p id="block-87468bfd-ad23-417b-8292-ee15d6ad08f6"><br><strong>Is Lumico insurance expensive?</strong></p>
@@ -634,28 +634,28 @@ of their underwriting process.</p>
 <p id="block-5453a07b-83d7-4ccc-9e9f-2e067f721b0a"><strong>Here is the death benefit payout schedule for the Standard Plan:</strong></p>
 
 <ul>
-<li>First-year – 25%</li>
-<li>Second-year – 50%</li>
-<li><strong>Third-year – 75%</strong></li>
-<li>Fourth-year – 100%</li>
+<li>First-year: 25%</li>
+<li>Second-year: 50%</li>
+<li><strong>Third-year: 75%</strong></li>
+<li>Fourth-year: 100%</li>
 </ul>
 
 <p id="block-99520b19-a614-418d-9f2b-fe178a94d603"><strong><br>Here is the death benefit payout schedule for the Modified Plan:</strong></p>
 
 <ul>
-<li>First-year – 10%</li>
-<li>Second-year – 25%</li>
-<li><strong>Third-year – 50%</strong></li>
-<li>Fourth-year – 100%</li>
+<li>First-year: 10%</li>
+<li>Second-year: 25%</li>
+<li><strong>Third-year: 50%</strong></li>
+<li>Fourth-year: 100%</li>
 </ul>
 
 <p id="block-00ef3e43-d2aa-4a01-bad8-dc76dc15ef01"><br><strong>LUMICO LIFE INSURANCE BENEFITS</strong></p>
 
 <p id="block-67a9c30a-f0f6-4265-a551-e3c1650ffba6"><strong>What benefits does Lumico offer?</strong></p>
 
-<p id="block-27795525-cebc-4875-8b2f-26897061a3f3"><strong>Accidental Death Rider</strong>&#160;– pays out an additional lump sum if you die from an accident.</p>
+<p id="block-27795525-cebc-4875-8b2f-26897061a3f3"><strong>Accidental Death Rider</strong>: pays out an additional lump sum if you die from an accident.</p>
 
-<p id="block-e4fa4839-739b-40cd-9f82-58fb9b853d5c"><strong>Accelerated Death Benefit Rider</strong>&#160;– accelerates a portion of the death benefit if you’re diagnosed with a terminal condition with a life expectancy of 12 months or less.</p>
+<p id="block-e4fa4839-739b-40cd-9f82-58fb9b853d5c"><strong>Accelerated Death Benefit Rider</strong>: accelerates a portion of the death benefit if you’re diagnosed with a terminal condition with a life expectancy of 12 months or less.</p>
 
 <p id="block-4f35233a-3c39-4587-a9cd-cc840654c5d2"><br><strong>LUMICO LIFE INSURANCE LENGTH OF COVERAGE</strong></p>
 
@@ -684,11 +684,11 @@ of their underwriting process.</p>
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
@@ -708,7 +708,7 @@ February 9, 2020 at 4:08 pm
 <div class="comment-replies">
 <div class="comment" id="comment-3469">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Cathy – We don't even offer plans that have 3-year waiting periods. We don't even recommend them as they are the most expensive and risky plans available. You would have to contact the company that your plan was purchased through in order to cancel your plan. If you are interested, you can get a free quote by visiting this page – <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Cathy: We don't even offer plans that have 3-year waiting periods. We don't even recommend them as they are the most expensive and risky plans available. You would have to contact the company that your plan was purchased through in order to cancel your plan. If you are interested, you can get a free quote by visiting this page, <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 April 24, 2020 at 7:54 am                    
 </div>
@@ -724,7 +724,7 @@ February 20, 2020 at 6:29 pm
 <div class="comment-replies">
 <div class="comment" id="comment-3463">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Suze – We saw that episode as well. To be clear…we don't work with or represent Lumico.</p>
+<p>Suze: We saw that episode as well. To be clear…we don't work with or represent Lumico.</p>
 <div class="comment-meta">
 April 24, 2020 at 7:44 am                    
 </div>
@@ -740,7 +740,7 @@ April 9, 2020 at 5:57 pm
 <div class="comment-replies">
 <div class="comment" id="comment-3448">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Victor – We are sorry to hear of your poor experience. We don't work with Lumico, so you will have to call them directly for service and help with your policy.</p>
+<p>Victor: We are sorry to hear of your poor experience. We don't work with Lumico, so you will have to call them directly for service and help with your policy.</p>
 <div class="comment-meta">
 April 24, 2020 at 6:37 am                    
 </div>
@@ -757,7 +757,7 @@ May 24, 2020 at 7:34 am
 <div class="comment-replies">
 <div class="comment" id="comment-3987">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Jay – As a reminder…we don't work with Lumico or represent or use them in any way. With that said, we are sorry you had such a poor customer service experience when you needed this help the most. As you found out, choosing a company with superior customer service is an important factor when you purchase your final expense policy from any company.</p>
+<p>Jay: As a reminder…we don't work with Lumico or represent or use them in any way. With that said, we are sorry you had such a poor customer service experience when you needed this help the most. As you found out, choosing a company with superior customer service is an important factor when you purchase your final expense policy from any company.</p>
 <div class="comment-meta">
 May 24, 2020 at 9:26 pm                    
 </div>
@@ -773,7 +773,7 @@ May 14, 2021 at 11:34 am
 <div class="comment-replies">
 <div class="comment" id="comment-10789">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Hey James – Lumico isn't an insurance company and all the insurance plans they sell are from are routed through an actual insurance company. So they are kind of a "middle-man" between you and the insurance company. With that said, we never have a problem beating their prices. Let us know if you need help with a policy in the future.</p>
+<p>Hey James: Lumico isn't an insurance company and all the insurance plans they sell are from are routed through an actual insurance company. So they are kind of a "middle-man" between you and the insurance company. With that said, we never have a problem beating their prices. Let us know if you need help with a policy in the future.</p>
 <div class="comment-meta">
 May 19, 2021 at 4:14 pm                    
 </div>
@@ -789,7 +789,7 @@ September 24, 2022 at 3:06 pm
 <div class="comment-replies">
 <div class="comment" id="comment-24754">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Kimberly – I'm so sorry that you are having this difficulty. If you feel it would be appropriate or helpful, I'd be happy to hop on the phone with you and Lumico to identify the problem that's delaying your claim payment. Call me at 888-862-9456 and ask for Randy.</p>
+<p>Kimberly: I'm so sorry that you are having this difficulty. If you feel it would be appropriate or helpful, I'd be happy to hop on the phone with you and Lumico to identify the problem that's delaying your claim payment. Call me at 888-862-9456 and ask for Randy.</p>
 <div class="comment-meta">
 September 27, 2022 at 7:49 am                    
 </div>

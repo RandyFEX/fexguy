@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• The process is simple, but applying to the wrong company can cost thousands of dollars more<br>• You’ll answer health questions (you want to do this!) unless you choose guaranteed issue plans<br>• A quick phone interview is often required before approval – I make this easy<br>• Picking the wrong policy can force you into a mandatory 2-year waiting period &amp; reduce your payout<br>• Most applications get approved within minutes if you choose the right company<br>• Not comparing carriers is the biggest mistake people make – I can help you with that</p>
+<p>• The process is simple, but applying to the wrong company can cost thousands of dollars more<br>• You’ll answer health questions (you want to do this!) unless you choose guaranteed issue plans<br>• A quick phone interview is often required before approval, I make this easy<br>• Picking the wrong policy can force you into a mandatory 2-year waiting period &amp; reduce your payout<br>• Most applications get approved within minutes if you choose the right company<br>• Not comparing carriers is the biggest mistake people make, I can help you with that</p>
 
 <p>The final expense insurance application process is straightforward, but small mistakes can cost you money or delay coverage. You start by getting a quote, choosing a policy, and filling out basic personal and health information. Then most people complete a short phone interview and wait for underwriting to approve the policy. Some burial insurance plans offer same-day approval with no exam, while others add waiting periods if your health is higher risk. The key is applying with the right company from the start so you don’t get stuck with worse coverage.</p>
 
@@ -63,15 +63,15 @@ sidebar: true
 <p><strong>Use our EASY ONLINE QUOTE FORM to check out the rates and insurers available. Just fill out our instant QUOTE form with a few pieces of information:</strong></p>
 
 <ul>
-<li>State of residence – rates may vary because states regulate life insurance carriers.</li>
-<li>Birthday – insurance rates vary by age</li>
-<li>Health class – your health class will vary depending on your excellent, decent, or poor health.</li>
-<li>Coverage amount you want – select from $2,000 to $100,000</li>
-<li>Gender – insurance rates vary for men and women</li>
-<li>Smoker/Tobacco – insurers want to know if you are currently using tobacco or if you have done so in the past.</li>
-<li>Your name – Your full name</li>
-<li>Phone number – where you can be reached at</li>
-<li>Email address – most used email address</li>
+<li>State of residence: rates may vary because states regulate life insurance carriers.</li>
+<li>Birthday: insurance rates vary by age</li>
+<li>Health class: your health class will vary depending on your excellent, decent, or poor health.</li>
+<li>Coverage amount you want: select from $2,000 to $100,000</li>
+<li>Gender: insurance rates vary for men and women</li>
+<li>Smoker/Tobacco: insurers want to know if you are currently using tobacco or if you have done so in the past.</li>
+<li>Your name: Your full name</li>
+<li>Phone number: where you can be reached at</li>
+<li>Email address: most used email address</li>
 </ul>
 
 <p>Once you input your information in our free <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form, click “Display Quotes,” You will see a list of quotes, sorted by lowest price. You will see the lowest rate at the top of the list.</p>
@@ -84,11 +84,11 @@ sidebar: true
 
 <p><strong>Types of Final Expense Insurance</strong></p>
 
-<p><strong>Simplified Issue</strong> – this type of policy is a simplified version of regular insurance. It does not require a <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-no-exam/" target="_blank">medical exam</a>, but some health questions will be asked on the application. This final expense life insurance no exam has immediate coverage starting on the first day.</p>
+<p><strong>Simplified Issue</strong>: this type of policy is a simplified version of regular insurance. It does not require a <a rel="noreferrer noopener" href="/burial-insurance/life-insurance-no-exam/" target="_blank">medical exam</a>, but some health questions will be asked on the application. This final expense life insurance no exam has immediate coverage starting on the first day.</p>
 
 <p>If you answer NO to the health questions, your coverage will be approved. Part of the underwriting process is a background check on medical history, prescription medication, and motor vehicle records.</p>
 
-<p><strong>Guaranteed issue</strong> – is a type of policy that guarantees approval regardless of your existing health condition. You are not required to take a medical exam or answer any health questions.</p>
+<p><strong>Guaranteed issue</strong>: is a type of policy that guarantees approval regardless of your existing health condition. You are not required to take a medical exam or answer any health questions.</p>
 
 <p>As long as the policy is available in your state and you fall in the age bracket, the company is guaranteed to offer you a policy.</p>
 
@@ -98,7 +98,7 @@ sidebar: true
 
 <ul>
 <li><a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent</a> whole life policy</li>
-<li>Level premium – premiums never increase</li>
+<li>Level premium: premiums never increase</li>
 <li>Benefits never decrease for any reason</li>
 <li>Available for seniors ages 50 to 85</li>
 <li>Minimal face amount $2,000 up to $25,000</li>
@@ -149,7 +149,7 @@ sidebar: true
 
 <p>When filling out your application, you will be asked to supply your beneficiary or the person who will receive the cash benefit if you pass away.</p>
 
-<p>It is wise to supply contingent beneficiary information in case something happens to your primary beneficiary and the policy owner simultaneously (for example – husband and wife both die in an automobile accident together).</p>
+<p>It is wise to supply contingent beneficiary information in case something happens to your primary beneficiary and the policy owner simultaneously (for example, husband and wife both die in an automobile accident together).</p>
 
 <p>When the application is completed, we will need your signature. Many insurance carriers do this digitally. We sometimes will email you a copy of the completed application form for you to sign.</p>
 
@@ -179,11 +179,11 @@ sidebar: true
 <p><strong>The specific information that will be asked in the follow-up underwriting phone call will be:</strong></p>
 
 <ol>
-<li>Social Security Number – social security numbers are required on all applicants. This number act as your unique identifier.</li>
-<li>Driver’s license – your driver’s license number is required in the application because your driving history may be part of the underwriting process.</li>
-<li>Prescription medication – this information will be asked about during the phone interview. However, prescription history is always double-checked.</li>
+<li>Social Security Number: social security numbers are required on all applicants. This number act as your unique identifier.</li>
+<li>Driver’s license: your driver’s license number is required in the application because your driving history may be part of the underwriting process.</li>
+<li>Prescription medication: this information will be asked about during the phone interview. However, prescription history is always double-checked.</li>
 <li>Checking the account number is necessary to choose the drafting day for your payment.</li>
-<li>Beneficiary information – supply the name and birthdate of your primary beneficiary and a contingent beneficiary.</li>
+<li>Beneficiary information: supply the name and birthdate of your primary beneficiary and a contingent beneficiary.</li>
 </ol>
 
 <p><strong>Simplified issue policies are often approved during the telephone interview with the applicant still on the phone.</strong></p>

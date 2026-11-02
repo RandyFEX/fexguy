@@ -63,7 +63,7 @@ sidebar: true
 <li><strong>Arrhythmogenic Right Ventricular Cardiomyopathy:</strong> This one targets the right side of your heart, potentially causing some funky electrical issues and messing with your heart rhythm.</li>
 </ul>
 
-<p>As for symptoms, they can be a real mixed bag, depending on how serious things are. Some folks might not feel a thing, while others might experience fatigue, shortness of breath, swollen ankles (like you’ve been standing in line all day!), chest pain, or even heart palpitations – that feeling like your heart is doing a little tap dance behind your ribs.</p>
+<p>As for symptoms, they can be a real mixed bag, depending on how serious things are. Some folks might not feel a thing, while others might experience fatigue, shortness of breath, swollen ankles (like you’ve been standing in line all day!), chest pain, or even heart palpitations, that feeling like your heart is doing a little tap dance behind your ribs.</p>
 
 <h2 id="getting-burial-insurance"><strong>Can I get burial insurance with cardiomyopathy?</strong></h2>
 
@@ -71,11 +71,11 @@ sidebar: true
 
 <h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance with cardiomyopathy?</strong></h2>
 
-<p><strong>First-day Coverage Plan</strong> – This no-medical exam policy kicks in right away with no waiting period. Just answer a few health questions and you’re good to go!</p>
+<p><strong>First-day Coverage Plan</strong>: This no-medical exam policy kicks in right away with no waiting period. Just answer a few health questions and you’re good to go!</p>
 
-<p><strong>Modified Coverage</strong> – This one starts from day one, but the benefits gradually increase over time.</p>
+<p><strong>Modified Coverage</strong>: This one starts from day one, but the benefits gradually increase over time.</p>
 
-<p><strong>Guaranteed Issue Whole Life Insurance</strong> – No medical exam, no health questions, just straight-up coverage. Perfect for those with serious heart conditions who can’t get traditional life insurance.</p>
+<p><strong>Guaranteed Issue Whole Life Insurance</strong>: No medical exam, no health questions, just straight-up coverage. Perfect for those with serious heart conditions who can’t get traditional life insurance.</p>
 
 <p>But heads up, guaranteed issue policies come with a mandatory two-year waiting period. If you pass away during this time, the insurance company will refund all your premiums plus 7-10% interest, depending on the company.</p>
 
@@ -85,7 +85,7 @@ sidebar: true
 
 <h2 id="do-i-need-medical-exam?"><strong>Do I need a medical exam to qualify for cardiomyopathy burial insurance?</strong></h2>
 
-<p>Nope! Just answer some basic health questions. The application process is a breeze – you won’t need to fetch your medical records or send in blood and urine samples.</p>
+<p>Nope! Just answer some basic health questions. The application process is a breeze, you won’t need to fetch your medical records or send in blood and urine samples.</p>
 
 <p>With first-day coverage, you’ll often get the thumbs up from the insurance company within minutes!</p>
 
@@ -114,23 +114,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – Level – 1st-Day Coverage</td>
+<td>Certain companies: Level, 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -147,23 +147,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – Level – 1st-Day Coverage </td>
+<td>Certain companies: Level, 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -173,9 +173,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies offering first-day coverage have two sassy ways to check your health:</strong></p>
 
-<p><strong>FIRST</strong>&#160;– They’ll ask you a bunch of health questions.</p>
+<p><strong>FIRST</strong>: They’ll ask you a bunch of health questions.</p>
 
-<p><strong>SECOND</strong> – They’ll peek at your prescription history to see how you’re really doing.</p>
+<p><strong>SECOND</strong>: They’ll peek at your prescription history to see how you’re really doing.</p>
 
 <p><strong>They’ll inquire about cardiomyopathy in several ways. Here are some examples:</strong></p>
 
@@ -227,9 +227,9 @@ sidebar: true
 <h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with cardiomyopathy</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Don’t try to navigate this insurance jungle alone! Find an independent agent from Funeral Funds who specializes in cardiomyopathy. We’ll be your own personal insurance sherpa, guiding you through all the options and helping you snag the best deal.</li>
-<li><strong>Complete the Application Honestly</strong>&#160;– When filling out the application, think about your health. Lying is a big no-no and could mess with the whole payout thing later. Think of it as spilling the tea to your best friend – gotta be truthful!</li>
-<li><strong>Review and Confirm Policy Details</strong> – Don’t just skim the paperwork! Take your time and make sure you understand everything in the policy before you sign. It’s your money, and you must ensure it covers what you need it to.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Don’t try to navigate this insurance jungle alone! Find an independent agent from Funeral Funds who specializes in cardiomyopathy. We’ll be your own personal insurance sherpa, guiding you through all the options and helping you snag the best deal.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the application, think about your health. Lying is a big no-no and could mess with the whole payout thing later. Think of it as spilling the tea to your best friend, gotta be truthful!</li>
+<li><strong>Review and Confirm Policy Details</strong>: Don’t just skim the paperwork! Take your time and make sure you understand everything in the policy before you sign. It’s your money, and you must ensure it covers what you need it to.</li>
 </ol>
 
 <h2 id="faq">Frequently asked questions</h2>

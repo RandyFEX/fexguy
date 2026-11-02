@@ -149,7 +149,7 @@ After reviewing her health, I helped her get a $15,000 whole life policy with im
 <p><strong>Here’s how the state-regulated life insurance letter works:</strong></p>
 
 <ul>
-<li>You receive a mailer or online ad with flags, seals, and urgent wording, such as “Final Expense Benefit Information – Respond immediately.”</li>
+<li>You receive a mailer or online ad with flags, seals, and urgent wording, such as “Final Expense Benefit Information. Respond immediately.”</li>
 <li>You fill out the form, thinking you’re contacting an official state office.</li>
 <li>Your information is then sold to multiple call centers and independent life insurance agents who struggle to get their own legitimate leads.</li>
 <li>Within hours, multiple agents may start calling to sell guaranteed-acceptance policies that carry two-year waiting periods and high premiums.</li>

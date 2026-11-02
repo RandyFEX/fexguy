@@ -42,20 +42,20 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with schizophrenia they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
-<li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Aflac Decline</strong> – Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
-<li><strong>Aflac Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Are you CURRENTLY bedridden, confined to a hospital, nursing home, mental care facility, long term care facility, hospice or have you been diagnosed with an end-stage or terminal illness, or been told by a medical professional that you have less than 12 months to live?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Level</strong> – In the past 2 years, has the Proposed Insured been hospitalized by a licensed medical professional for any mental or nervous disorder?</li>
-<li><strong>Mutual of Omaha Level </strong>– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
-<li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Aflac Decline</strong>: Do you use a wheelchair or mobility scooter, or do you have any physical or mental impairment requiring assistance from another person with activities of daily living such as taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</li>
+<li><strong>Aflac Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for Alzheimer’s disease, dementia, or mental incapacity?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Are you CURRENTLY bedridden, confined to a hospital, nursing home, mental care facility, long term care facility, hospice or have you been diagnosed with an end-stage or terminal illness, or been told by a medical professional that you have less than 12 months to live?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 2 years, has the Proposed Insured been hospitalized by a licensed medical professional for any mental or nervous disorder?</li>
+<li><strong>Mutual of Omaha Level </strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Schizophrenia underwriting basics</h3>
@@ -94,16 +94,16 @@ sidebar: true
 <p>Schizophrenia disrupts brain chemistry and information processing, leading to persistent symptoms that affect perception, thinking, behavior, and daily functioning, and those related complications can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Psychotic symptoms</strong> – Hallucinations and delusions interfere with judgment, safety, and consistent daily performance.</li>
-<li><strong>Disorganized thinking</strong> – Difficulty organizing thoughts and speech limits communication and task completion.</li>
-<li><strong>Negative symptoms</strong> – Low motivation, flat emotion, and social withdrawal reduce independence and work capacity.</li>
-<li><strong>Cognitive impairment</strong> – Problems with memory, attention, and processing speed affect decision-making and learning.</li>
-<li><strong>Medication side effects</strong> – Antipsychotics can cause weight gain, sedation, movement disorders, and metabolic issues.</li>
-<li><strong>Metabolic syndrome</strong> – Higher risk of diabetes, high cholesterol, and heart disease worsens overall health.</li>
-<li><strong>Substance use issues</strong> – Alcohol or <a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">drug use</a> often co-occurs and increases relapse and health risks.</li>
-<li><strong>Sleep disturbances</strong> – Irregular sleep patterns worsen symptoms, fatigue, and daily stability.</li>
-<li><strong>Social and occupational impairment</strong> – Difficulty maintaining relationships and employment is common.</li>
-<li><strong>Increased suicide risk</strong> – Ongoing symptoms and impaired insight raise risk of self-harm and crisis events.</li>
+<li><strong>Psychotic symptoms</strong>: Hallucinations and delusions interfere with judgment, safety, and consistent daily performance.</li>
+<li><strong>Disorganized thinking</strong>: Difficulty organizing thoughts and speech limits communication and task completion.</li>
+<li><strong>Negative symptoms</strong>: Low motivation, flat emotion, and social withdrawal reduce independence and work capacity.</li>
+<li><strong>Cognitive impairment</strong>: Problems with memory, attention, and processing speed affect decision-making and learning.</li>
+<li><strong>Medication side effects</strong>: Antipsychotics can cause weight gain, sedation, movement disorders, and metabolic issues.</li>
+<li><strong>Metabolic syndrome</strong>: Higher risk of diabetes, high cholesterol, and heart disease worsens overall health.</li>
+<li><strong>Substance use issues</strong>: Alcohol or <a href="/burial-insurance/drug-alcohol-abuse/" target="_blank" rel="noreferrer noopener">drug use</a> often co-occurs and increases relapse and health risks.</li>
+<li><strong>Sleep disturbances</strong>: Irregular sleep patterns worsen symptoms, fatigue, and daily stability.</li>
+<li><strong>Social and occupational impairment</strong>: Difficulty maintaining relationships and employment is common.</li>
+<li><strong>Increased suicide risk</strong>: Ongoing symptoms and impaired insight raise risk of self-harm and crisis events.</li>
 </ul>
 
 <h2>Understanding schizophrenia policy types</h2>
@@ -122,7 +122,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Aflac preferred life insurance rates age 50–80</h3>
+<h3>Aflac preferred life insurance rates age 50 to 80</h3>
 
 <table>
 <thead>

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>AIG (Corebridge) Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>AIG (Corebridge) Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• AIG offers many policy types, but it isn’t always the cheapest option<br>• Term life rates can be competitive, but whole life gets expensive<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Customer complaints are higher than average for a company its size<br>• You’ll likely deal with agents instead of a simple online process<br>• Not comparing companies can leave you overpaying for similar coverage</p>
 
@@ -53,12 +53,12 @@ sidebar: true
 
 <p>They offer three whole life insurance plans for people aged 50 to 85.</p>
 
-<p><strong>SimpliNow Legacy Max – First-Day Coverage Plan</strong></p>
+<p><strong>SimpliNow Legacy Max: First-Day Coverage Plan</strong></p>
 
 <ul>
-<li>First-day coverage – protection starts on the first day.</li>
-<li>No medical exam – you only need to answer a few health questions</li>
-<li>Coverage amount available – $5,000 – $35,000</li>
+<li>First-day coverage: protection starts on the first day.</li>
+<li>No medical exam: you only need to answer a few health questions</li>
+<li>Coverage amount available: $5,000 to $35,000</li>
 <li>Permanent whole life insurance that lasts until the age of 121 years old</li>
 <li>Builds cash value that you can borrow against</li>
 <li>Fixed pricing that never increases</li>
@@ -70,10 +70,10 @@ sidebar: true
 <li>Accidental death benefit rider</li>
 </ul>
 </li>
-<li>Limited-pay feature – you will not have to pay your premium if you reach the maximum payment age between 90 and 95. Maximum payment age is determined by gender, age, and face amount.</li>
+<li>Limited-pay feature: you will not have to pay your premium if you reach the maximum payment age between 90 and 95. Maximum payment age is determined by gender, age, and face amount.</li>
 </ul>
 
-<p><strong>SimpliNow Legacy – Graded Benefit Plan</strong></p>
+<p><strong>SimpliNow Legacy: Graded Benefit Plan</strong></p>
 
 <ul>
 <li>2-year waiting period</li>
@@ -82,7 +82,7 @@ sidebar: true
 <li>Builds cash value that you can borrow against</li>
 <li>Fixed pricing that never increases</li>
 <li>Coverage that never decreases</li>
-<li>Coverage amount available: $5,000 – $25,000</li>
+<li>Coverage amount available: $5,000 to $25,000</li>
 <li>100% death benefit if you die from an accident</li>
 <li>110% of the premium will be paid if you die during the first two years from natural or medical-related death.</li>
 </ul>
@@ -96,7 +96,7 @@ sidebar: true
 <li>Builds cash value that you can borrow against</li>
 <li>Fixed pricing that never increases</li>
 <li>Coverage that never decreases</li>
-<li>Coverage amount available: $5,000 – $25,000</li>
+<li>Coverage amount available: $5,000 to $25,000</li>
 <li>Available riders:
 <ul>
 <li>Chronic illness rider</li>
@@ -121,7 +121,7 @@ sidebar: true
 
 <h2 id="pros-&-cons"><strong>What are the pros &amp; cons of AIG&#160;burial insurance?</strong></h2>
 
-<h3 id="h-1st-day-coverage-plan-limited-availability"><strong>1st day coverage plan</strong> – <strong>(limited availability)</strong> </h3>
+<h3 id="h-1st-day-coverage-plan-limited-availability"><strong>1st day coverage plan</strong>: <strong>(limited availability)</strong> </h3>
 
 <p><strong>PROS</strong></p>
 
@@ -171,8 +171,8 @@ sidebar: true
 <ul>
 <li><strong>Terminal Illness Rider: </strong>Death benefit can be accessed if the insured is diagnosed with a terminal illness resulting in death in 12 months or less.</li>
 <li><strong>Nursing Home Confinement Rider: </strong>Death benefit can also be accessed if the insured is continuously confined in a nursing home and expected to be confined until death.</li>
-<li><strong>Chronic Illness Rider</strong> – Access up to 25% death benefit when insured is diagnosed with chronic illness.</li>
-<li><strong>Limited-Pay Feature</strong> – you will not have to pay additional premiums and your coverage will remain in-force until age 100 when you reach your maximum payment age. Maximum payment age is determined by gender, face amount and age.</li>
+<li><strong>Chronic Illness Rider</strong>: Access up to 25% death benefit when insured is diagnosed with chronic illness.</li>
+<li><strong>Limited-Pay Feature</strong>: you will not have to pay additional premiums and your coverage will remain in-force until age 100 when you reach your maximum payment age. Maximum payment age is determined by gender, face amount and age.</li>
 <li><strong>Policy Loans: </strong> You can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</li>
 </ul>
 
@@ -377,11 +377,11 @@ sidebar: true
 <p>AIG Life received the following rating from different rating agencies:</p>
 
 <ul>
-<li>A.M. Best – A (excellent)&#160;</li>
-<li>Fitch – A – (stable)</li>
-<li>Moodys – Baa2 (stable)</li>
-<li>Standard &amp; Poor’s – A+ (Strong)</li>
-<li>Better Business Bureau – A+</li>
+<li>A.M. Best: A (excellent)&#160;</li>
+<li>Fitch: A (stable)</li>
+<li>Moodys: Baa2 (stable)</li>
+<li>Standard &amp; Poor’s: A+ (Strong)</li>
+<li>Better Business Bureau: A+</li>
 </ul>
 
 <p>These ratings indicate the financial strength of the company and its ability to pay claims on time.</p>

@@ -42,11 +42,11 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with Huntington’s disease they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>Aflac Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
+<li><strong>Aflac Decline </strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
 </ul>
 
 <h3>Huntington’s disease underwriting basics</h3>
@@ -80,16 +80,16 @@ sidebar: true
 <p>Huntington’s disease causes progressive degeneration of nerve cells in the brain, which disrupts movement, cognition, and emotional control and can lead to secondary complications that affect underwriting and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Involuntary movements</strong> – Chorea causes uncontrolled movements that interfere with walking, balance, and fine-motor tasks.</li>
-<li><strong>Cognitive decline</strong> – Memory loss and impaired reasoning reduce decision-making ability and independence.</li>
-<li><strong>Psychiatric symptoms</strong> – Depression, anxiety, and irritability affect behavior and daily stability.</li>
-<li><strong>Speech difficulties</strong> – Slurred or slowed speech interferes with clear communication.</li>
-<li><strong>Swallowing problems</strong> – Issues such as dysphagia increase the risk of choking and poor nutrition.</li>
-<li><strong>Balance and coordination issues</strong> – Motor control loss raises fall and injury risk.</li>
-<li><strong>Weight loss</strong> – Increased calorie use and swallowing difficulty lead to unintended weight loss.</li>
-<li><strong>Sleep disturbances</strong> – Irregular sleep patterns worsen fatigue and cognitive function.</li>
-<li><strong>Loss of independence</strong> – Progressive impairment increases the need for assistance with daily activities.</li>
-<li><strong>Reduced life expectancy</strong> – Ongoing neurological decline leads to increasing disability and higher mortality risk.</li>
+<li><strong>Involuntary movements</strong>: Chorea causes uncontrolled movements that interfere with walking, balance, and fine-motor tasks.</li>
+<li><strong>Cognitive decline</strong>: Memory loss and impaired reasoning reduce decision-making ability and independence.</li>
+<li><strong>Psychiatric symptoms</strong>: Depression, anxiety, and irritability affect behavior and daily stability.</li>
+<li><strong>Speech difficulties</strong>: Slurred or slowed speech interferes with clear communication.</li>
+<li><strong>Swallowing problems</strong>: Issues such as dysphagia increase the risk of choking and poor nutrition.</li>
+<li><strong>Balance and coordination issues</strong>: Motor control loss raises fall and injury risk.</li>
+<li><strong>Weight loss</strong>: Increased calorie use and swallowing difficulty lead to unintended weight loss.</li>
+<li><strong>Sleep disturbances</strong>: Irregular sleep patterns worsen fatigue and cognitive function.</li>
+<li><strong>Loss of independence</strong>: Progressive impairment increases the need for assistance with daily activities.</li>
+<li><strong>Reduced life expectancy</strong>: Ongoing neurological decline leads to increasing disability and higher mortality risk.</li>
 </ul>
 
 <h2>Understanding Huntington’s disease policy types</h2>
@@ -108,7 +108,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Guarantee Trust Life insurance rates age 50–85</h3>
+<h3>Guarantee Trust Life insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

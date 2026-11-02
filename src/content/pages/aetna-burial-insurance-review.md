@@ -9,11 +9,11 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Aetna Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Aetna Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aetna is the #1 choice for COPD or very overweight – industry leader in these areas &amp; more</p>
+<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aetna is the #1 choice for COPD or very overweight, industry leader in these areas &amp; more</p>
 
 <p>Aetna burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $2,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that people who don’t qualify for that top tier get pushed into a modified plan with delays. Compared to other burial insurance options, Aetna sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
 
@@ -61,9 +61,9 @@ sidebar: true
 <p>Aetna, through its affiliated insurance companies, offers three types of burial insurance policy options:</p>
 
 <ol>
-<li><strong>Level benefit</strong>&#160;– first-day immediate coverage</li>
-<li><strong>Graded benefit</strong>&#160;– limited benefits during the first two years</li>
-<li><strong>Modified benefit</strong>&#160;– two-year waiting period</li>
+<li><strong>Level benefit</strong>: first-day immediate coverage</li>
+<li><strong>Graded benefit</strong>: limited benefits during the first two years</li>
+<li><strong>Modified benefit</strong>: two-year waiting period</li>
 </ol>
 
 <p>Your age and current health status will determine which plan you will be eligible for and the amount you will pay.</p>
@@ -79,7 +79,7 @@ sidebar: true
 <td>Issue ages</td><td>40 to 89</td>
 </tr>
 <tr>
-<td>Face amount available</td><td>$2,000–$50,000</td>
+<td>Face amount available</td><td>$2,000 to $50,000</td>
 </tr>
 <tr>
 <td> Simplified issue</td><td>No medical exam required</td>
@@ -96,9 +96,9 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>#1</strong> – <strong>LEVEL BENEFIT PLAN:</strong></p>
+<p><strong>#1</strong>: <strong>LEVEL BENEFIT PLAN:</strong></p>
 
-<p>Issue ages: 40 – 89, age last birthday</p>
+<p>Issue ages: 40 to 89, age last birthday</p>
 
 <ul>
 <li>40-55 death benefit: $2,000-$50,000</li>
@@ -120,11 +120,11 @@ sidebar: true
 
 <p>Aetna’s level benefit plans are generally competitively priced.</p>
 
-<p><strong>#2 – GRADED BENEFIT</strong></p>
+<p><strong>#2: GRADED BENEFIT</strong></p>
 
 <p>This graded plan is from an older version of Aetna’s final expense product. Current carrier materials we found list only level and modified benefits, so ask whether a graded plan is available in your state.</p>
 
-<p>Issue ages: 40 – 75, age last birthday</p>
+<p>Issue ages: 40 to 75, age last birthday</p>
 
 <ul>
 <li>Minimum death benefit amount: $2,000</li>
@@ -139,7 +139,7 @@ sidebar: true
 
 <ul>
 <li>First 12 Months: 40% of the benefit amount</li>
-<li>12 – 24 Months: 75% of the benefit amount</li>
+<li>12 to 24 Months: 75% of the benefit amount</li>
 <li>After 24 Months: full death benefit</li>
 </ul>
 
@@ -155,16 +155,16 @@ sidebar: true
 <li>Cancer diagnosis in the last 12-24 months</li>
 </ul>
 
-<p><strong>#3</strong> – <strong>MODIFIED BENEFIT PLAN </strong></p>
+<p><strong>#3</strong>: <strong>MODIFIED BENEFIT PLAN </strong></p>
 
 <ul>
-<li>Issue ages: 40 – 75, age last birthday</li>
+<li>Issue ages: 40 to 75, age last birthday</li>
 <li>Minimum death benefit amount: $2,000</li>
 <li>Maximum death benefit amount: $25,000</li>
 <li>Death Benefits Schedule:</li>
 </ul>
 
-<p>Accidental death – 100% benefit immediately</p>
+<p>Accidental death: 100% benefit immediately</p>
 
 <p><strong>Non-accidental death:</strong></p>
 
@@ -225,7 +225,7 @@ sidebar: true
 <li>Strict underwriting only healthy people qualify.</li>
 </ul>
 
-<h3><strong>#2 – graded benefit plan (older product)</strong></h3>
+<h3><strong>#2: graded benefit plan (older product)</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -242,7 +242,7 @@ sidebar: true
 <li>Expensive premium compared to other companies.</li>
 </ul>
 
-<h3><strong>#3 – modified benefit plan</strong></h3>
+<h3><strong>#3: modified benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -386,11 +386,11 @@ sidebar: true
 <p><strong>Aetna’s</strong>&#160;<strong>final expense plans accept the following health conditions, which other burial insurance companies typically decline:</strong></p>
 
 <ol>
-<li><strong>COPD</strong>&#160;– Chronic obstructive pulmonary disease patients who do not smoke or use supplementary oxygen in the last two years will qualify for a graded benefit plan. Without treatment for more than 24 months, you will be eligible for level death benefit without a waiting period.</li>
-<li><strong>Diabetes</strong>&#160;– diagnosed after 40 years old and does not use 40 units of insulin daily may qualify for the level death benefit.</li>
-<li><strong>Heart attack</strong>&#160;– after 24 months, will qualify for the graded death benefit. A heart attack over 24 months ago qualifies for the level death benefit.</li>
-<li><strong>Congestive heart failure –&#160;</strong>will qualify for the graded death benefit at any time.</li>
-<li><strong>Cancer –&#160;</strong>diagnosis, and treatment within 24 months will qualify for a graded benefit plan.</li>
+<li><strong>COPD</strong>: Chronic obstructive pulmonary disease patients who do not smoke or use supplementary oxygen in the last two years will qualify for a graded benefit plan. Without treatment for more than 24 months, you will be eligible for level death benefit without a waiting period.</li>
+<li><strong>Diabetes</strong>: diagnosed after 40 years old and does not use 40 units of insulin daily may qualify for the level death benefit.</li>
+<li><strong>Heart attack</strong>: after 24 months, will qualify for the graded death benefit. A heart attack over 24 months ago qualifies for the level death benefit.</li>
+<li><strong>Congestive heart failure:&#160;</strong>will qualify for the graded death benefit at any time.</li>
+<li><strong>Cancer:&#160;</strong>diagnosis, and treatment within 24 months will qualify for a graded benefit plan.</li>
 </ol>
 
 <h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What are the unique features of Aetna final expense insurance?</strong></h3>

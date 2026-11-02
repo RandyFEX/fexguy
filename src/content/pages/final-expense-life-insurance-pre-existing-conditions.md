@@ -29,7 +29,7 @@ sidebar: true
 
 <p>You can pick a monthly payment that fits your budget, and your coverage will stay the same for life. The premiums never climb, the benefit never drops, and the policy never expires because you get older.</p>
 
-<p>Most companies offer somewhere between $2,500 – $25,000. A few companies go up to $50,000, but these larger coverage plans can get a bit expensive for people on fixed incomes who have put off getting this coverage for too long…especially if they now have significant health problems.</p>
+<p>Most companies offer somewhere between $2,500 and $25,000. A few companies go up to $50,000, but these larger coverage plans can get a bit expensive for people on fixed incomes who have put off getting this coverage for too long…especially if they now have significant health problems.</p>
 
 <p>Be sure to scroll down to the bottom of this article to view almost 300 individual A to Z health issues with likely policy type decisions.</p>
 
@@ -110,7 +110,7 @@ Choose a realistic amount first. If budget allows, then consider more coverage.
 </tr>
 <tr>
 <td>
-A–Z health condition guide
+A to Z health condition guide
 </td>
 <td>
 Nearly 300 health issues are listed below with the likely policy type you’ll qualify for.
@@ -335,25 +335,25 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td colspan="2">A</td></tr>
 <tr><td>ABLATION (HEART PROCEDURE)</td><td>✔️ Immediate Coverage Available (24 Months After Procedure)</td></tr>
 <tr><td>ADDISON’S DISEASE</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>ADL’S (IMPAIRMENTS OF ACTIVITIES OF DAILY LIVING)</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – BEDRIDDEN</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – CONFINED TO BED</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – DISABLED</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – HOME HEALTH CARE</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – HOSPICE</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – HOSPITAL ADVISED OR CONFINED</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – HOSPITALIZED</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – LONG TERM CARE / NURSING FACILITY</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – MENTAL FACILITY / DISORDER / INCAPACITY</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>ADL’S – MENTAL RETARDATION</td><td>❌ Not Available If Insured Can’t Make Legal Decisions</td></tr>
-<tr><td>ADL’S – NURSING HOME / IN-HOME CARE</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>AIDS</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>AIDS – PREP</td><td>✔️ Immediate Coverage Available (Depends On Company) | Graded Otherwise</td></tr>
-<tr><td>AIDS / HIV</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S (IMPAIRMENTS OF ACTIVITIES OF DAILY LIVING)</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: BEDRIDDEN</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: CONFINED TO BED</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: DISABLED</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: HOME HEALTH CARE</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: HOSPICE</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: HOSPITAL ADVISED OR CONFINED</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: HOSPITALIZED</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: LONG TERM CARE / NURSING FACILITY</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: MENTAL FACILITY / DISORDER / INCAPACITY</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>ADL’S: MENTAL RETARDATION</td><td>❌ Not Available If Insured Can’t Make Legal Decisions</td></tr>
+<tr><td>ADL’S: NURSING HOME / IN-HOME CARE</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>AIDS</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>AIDS: PREP</td><td>✔️ Immediate Coverage Available (Depends On Company) | Graded Otherwise</td></tr>
+<tr><td>AIDS / HIV</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>ALCOHOL ABUSE (CURRENT)</td><td>❌✔️ Guaranteed Issue Only If Current | Immediate Available 24 Months After Treatment</td></tr>
 <tr><td>ALCOHOL COUNSELING</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>ALS</td><td>✔️ Graded Coverage Available (Company &amp; State Specific)</td></tr>
-<tr><td>ALZHEIMER’S</td><td>❌ Guaranteed Issue Only – 2-Year Wait</td></tr>
+<tr><td>ALZHEIMER’S</td><td>❌ Guaranteed Issue Only: 2-Year Wait</td></tr>
 <tr><td>AMIODARONE MONITORING</td><td>❌✔️ Not Available Until Tests Finished | Immediate If Clear</td></tr>
 <tr><td>AMPUTATION</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Cause)</td></tr>
 <tr><td>ANEMIA</td><td>✔️ Immediate Coverage Available If No Further Testing</td></tr>
@@ -376,7 +376,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td>BACK SURGERY (COMPLETED)</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>BARRETT’S ESOPHAGUS</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>BASAL CELL CARCINOMA</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>BEDRIDDEN</td><td>❌ GI Only – 2-Year Wait</td></tr>
+<tr><td>BEDRIDDEN</td><td>❌ GI Only: 2-Year Wait</td></tr>
 <tr><td>BPH (BENIGN PROSTATIC HYPERPLASIA)</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>BIPOLAR DISORDER</td><td>✔️ Immediate Coverage (Company Dependent)</td></tr>
 <tr><td>BLIND / BLINDNESS</td><td>✔️ Immediate If Not Due To Diabetic Retinopathy</td></tr>
@@ -386,7 +386,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td>BONE MARROW TRANSPLANT</td><td>✔️ Immediate Coverage Unless Cancer Related</td></tr>
 <tr><td>BRAIN ANEURYSM (CLIPPED/COILED)</td><td>✔️ Immediate 24 Months After Procedure</td></tr>
 <tr><td>BRAIN SURGERY (CIRCULATION)</td><td>✔️ Immediate 24 Months After Procedure</td></tr>
-<tr><td>BRAIN TUMOR (CURRENT)</td><td>❌ Guaranteed Issue Only – 2-Year Wait</td></tr>
+<tr><td>BRAIN TUMOR (CURRENT)</td><td>❌ Guaranteed Issue Only: 2-Year Wait</td></tr>
 <tr><td>BRONCHIECTASIS</td><td>✔️ Immediate Coverage (Company Specific)</td></tr>
 <tr><td>BRONCHITIS (CHRONIC)</td><td>✔️ Immediate Coverage Available</td></tr>
 </table>
@@ -412,7 +412,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td colspan="2">D</td></tr>
 <tr><td>DECLINED FOR LIFE INSURANCE</td><td>✔️ Immediate (Company Specific)</td></tr>
 <tr><td>DEFIBRILLATOR (IMPLANTED)</td><td>✔️ Immediate 24 Months After Procedure</td></tr>
-<tr><td>DEMENTIA</td><td>❌ Guaranteed Issue Only – 2-Year Wait</td></tr>
+<tr><td>DEMENTIA</td><td>❌ Guaranteed Issue Only: 2-Year Wait</td></tr>
 <tr><td>DEPRESSION</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>DIABETES</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>DIAGNOSTIC TESTING</td><td>❌ Guaranteed Issue Only Until Testing Complete</td></tr>
@@ -456,7 +456,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td>HEART FAILURE / CHF</td><td>✔️ Immediate Coverage (Company Specific) | Graded Otherwise</td></tr>
 <tr><td>HEPATITIS A / B / C</td><td>✔️ Immediate Coverage (Company Dependent)</td></tr>
 <tr><td>HIGH BLOOD PRESSURE</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>HIV</td><td>❌ Guaranteed Issue Only – 2-Year Wait</td></tr>
+<tr><td>HIV</td><td>❌ Guaranteed Issue Only: 2-Year Wait</td></tr>
 </table>
 
 <table>
@@ -475,10 +475,10 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 
 <table>
 <tr><td colspan="2">K</td></tr>
-<tr><td>KIDNEY – DIALYSIS</td><td>✔️ Immediate Coverage Available (Depends On Company) | Graded Otherwise</td></tr>
-<tr><td>KIDNEY – DISEASE OR FAILURE</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
-<tr><td>KIDNEY – FAILURE</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
-<tr><td>KIDNEY – NEPHROPATHY</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
+<tr><td>KIDNEY: DIALYSIS</td><td>✔️ Immediate Coverage Available (Depends On Company) | Graded Otherwise</td></tr>
+<tr><td>KIDNEY: DISEASE OR FAILURE</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
+<tr><td>KIDNEY: FAILURE</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
+<tr><td>KIDNEY: NEPHROPATHY</td><td>✔️ Immediate Coverage (Depends On Company) | Graded Otherwise</td></tr>
 <tr><td>KIDNEY STONES</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>KNEE REPLACEMENT</td><td>✔️ Immediate Coverage Available If Surgery Complete &amp; No Further Testing</td></tr>
 </table>
@@ -487,22 +487,22 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td colspan="2">L</td></tr>
 <tr><td>LEFT VENTRICULAR HYPERTROPHY (LVH)</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>LEUKEMIA (CURRENT)</td><td>❌✔️ Guaranteed Issue If Current | Immediate If Cancer Free Past 24 Months</td></tr>
-<tr><td>LIVER – CIRRHOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
-<tr><td>LIVER – DISEASE &amp; HEPATITIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
+<tr><td>LIVER: CIRRHOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
+<tr><td>LIVER: DISEASE &amp; HEPATITIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>LIVER CANCER (CURRENT)</td><td>❌✔️ Guaranteed Issue Only If Current | Immediate If Cancer Free Past 24 Months</td></tr>
 <tr><td>LIVER ENZYME ELEVATION</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LONG TERM CARE OR NURSING FACILITY</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>LONG TERM CARE OR NURSING FACILITY</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>LOW TESTOSTERONE</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>LUNG DISEASE</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNG – SARCOIDOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – ASTHMA</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>LUNGS – BRONCHITIS (CHRONIC)</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – COPD / EMPHYSEMA</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – OXYGEN</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – OXYGEN CPAP</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – PULMONARY FIBROSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>LUNGS – PULMONARY HYPERTENSION</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>LUNGS – TUBERCULOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNG: SARCOIDOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: ASTHMA</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>LUNGS: BRONCHITIS (CHRONIC)</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: COPD / EMPHYSEMA</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: OXYGEN</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: OXYGEN CPAP</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: PULMONARY FIBROSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
+<tr><td>LUNGS: PULMONARY HYPERTENSION</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>LUNGS: TUBERCULOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
 <tr><td>LUPUS (SYSTEMIC)</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 </table>
 
@@ -510,8 +510,8 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td colspan="2">M</td></tr>
 <tr><td>MACULAR DEGENERATION</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>MALNUTRITION</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Current Testing)</td></tr>
-<tr><td>MEMORY – ALZHEIMER’S</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>MEMORY – DEMENTIA</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>MEMORY: ALZHEIMER’S</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>MEMORY: DEMENTIA</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>MEMORY LOSS / MILD COGNITIVE IMPAIRMENT</td><td>✔️ Immediate Coverage Available If Not Alzheimer’s Or Dementia</td></tr>
 <tr><td>MENTAL HEALTH DISORDERS</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>MENTAL RETARDATION</td><td>❌ Not Available If Insured Can’t Make Legal Decisions</td></tr>
@@ -528,12 +528,12 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <table>
 <tr><td colspan="2">N</td></tr>
 <tr><td>NEPHROPATHY</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
-<tr><td>NEUROLOGICAL – ALS</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>NEUROLOGICAL – DOWN SYNDROME</td><td>❌ Not Available If Insured Can’t Make Legal Decisions</td></tr>
-<tr><td>NEUROLOGICAL – MULTIPLE SCLEROSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
-<tr><td>NEUROLOGICAL – MUSCULAR DYSTROPHY</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
-<tr><td>NEUROLOGICAL – NERVOUS DISORDER</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>NEUROLOGICAL – PARKINSON’S</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
+<tr><td>NEUROLOGICAL: ALS</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>NEUROLOGICAL: DOWN SYNDROME</td><td>❌ Not Available If Insured Can’t Make Legal Decisions</td></tr>
+<tr><td>NEUROLOGICAL: MULTIPLE SCLEROSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
+<tr><td>NEUROLOGICAL: MUSCULAR DYSTROPHY</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
+<tr><td>NEUROLOGICAL: NERVOUS DISORDER</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>NEUROLOGICAL: PARKINSON’S</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>NEUROLOGICAL DISORDER (TESTING PENDING)</td><td>❌✔️ Guaranteed Issue Until Testing Complete | Immediate If Clear</td></tr>
 <tr><td>NEUROMUSCULAR DISEASE</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>NEUROPATHY (NON-DIABETIC)</td><td>✔️ Immediate Coverage Available</td></tr>
@@ -544,7 +544,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td>OBESITY</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>OBESITY SURGERY (PAST)</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>OCD</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>ORGAN TRANSPLANT</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>ORGAN TRANSPLANT</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>OSTEOARTHRITIS</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>OSTEOPENIA</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>OSTEOPOROSIS</td><td>✔️ Immediate Coverage Available</td></tr>
@@ -565,7 +565,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 <tr><td>POLYMYALGIA RHEUMATICA</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>PROTEINURIA</td><td>✔️ Immediate Coverage Available (Depends On Company &amp; Testing)</td></tr>
 <tr><td>PSORIASIS</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>PSYCHIATRIC FACILITY (CONFINED)</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>PSYCHIATRIC FACILITY (CONFINED)</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>PULMONARY FIBROSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>PULMONARY HYPERTENSION</td><td>✔️ Immediate Coverage Available If No Further Testing</td></tr>
 <tr><td>PULMONARY NODULES (CURRENT)</td><td>✔️ Immediate Coverage Available If No Further Testing</td></tr>
@@ -578,7 +578,7 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 
 <table>
 <tr><td colspan="2">R</td></tr>
-<tr><td>RENAL DISEASE / END STAGE KIDNEY</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
+<tr><td>RENAL DISEASE / END STAGE KIDNEY</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
 <tr><td>RESTLESS LEG SYNDROME</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>RETINOPATHY</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>RHEUMATOID ARTHRITIS</td><td>✔️ Immediate Coverage Available</td></tr>
@@ -608,14 +608,14 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 
 <table>
 <tr><td colspan="2">T</td></tr>
-<tr><td>TERMINAL ILLNESS / END STAGE</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>TESTING – DIAGNOSTIC</td><td>❌✔️ No Immediate Until Testing Complete</td></tr>
+<tr><td>TERMINAL ILLNESS / END STAGE</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>TESTING: DIAGNOSTIC</td><td>❌✔️ No Immediate Until Testing Complete</td></tr>
 <tr><td>THYROID CANCER (CURRENT)</td><td>❌✔️ No Immediate Until Testing Complete | Immediate After 24 Months Cancer-Free</td></tr>
 <tr><td>TIA</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>TISSUE TRANSPLANT</td><td>❌ Guaranteed Issue Only – 2-Year Wait Plan Only</td></tr>
-<tr><td>TOBACCO – CIGAR</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>TOBACCO – CHEW / DIP</td><td>✔️ Immediate Coverage Available</td></tr>
-<tr><td>TOBACCO – VAPE</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>TISSUE TRANSPLANT</td><td>❌ Guaranteed Issue Only: 2-Year Wait Plan Only</td></tr>
+<tr><td>TOBACCO: CIGAR</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>TOBACCO: CHEW / DIP</td><td>✔️ Immediate Coverage Available</td></tr>
+<tr><td>TOBACCO: VAPE</td><td>✔️ Immediate Coverage Available</td></tr>
 <tr><td>TUBERCULOSIS</td><td>✔️ Immediate Coverage Available (Depends On Company)</td></tr>
 <tr><td>TUMORS (BENIGN)</td><td>✔️ Immediate Coverage Available</td></tr>
 </table>
@@ -642,6 +642,6 @@ I help you set a realistic benefit and payment so the coverage stays in place an
 </table>
 
 <table>
-<tr><td colspan="2">X–Z</td></tr>
+<tr><td colspan="2">X to Z</td></tr>
 <tr><td>(NONE)</td><td>(NONE)</td></tr>
 </table>

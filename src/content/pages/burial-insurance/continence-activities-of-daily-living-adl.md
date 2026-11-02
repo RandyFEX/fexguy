@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance if You Need Help with Continence [Activities of Daily Living – ADLs]</h1>
+<h1>Burial Insurance if You Need Help with Continence [Activities of Daily Living. ADLs]</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help with continence signals higher risk to insurance companies<br>• Most policies decline or limit coverage if you need help with ADLs<br>• Guaranteed issue is often the only option and has a 2-year wait<br>• You’ll pay more for less coverage compared to healthier applicants<br>• Waiting to apply makes approval harder and more expensive<br>• Not understanding ADLs can lead to picking the wrong policy</p>
 
@@ -218,9 +218,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 

@@ -57,9 +57,9 @@ sidebar: true
 
 <h2 id="types-of-burial-insurance-available-for-blood-thinner-users"><strong>Types of burial insurance available for blood thinner users</strong></h2>
 
-<p><strong>FIRST-DAY COVERAGE – </strong>This burial insurance covers you from the first day. Your beneficiaries will receive the full death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance (as long as you go with the correct insurance company).&#160;</p>
+<p><strong>FIRST-DAY COVERAGE: </strong>This burial insurance covers you from the first day. Your beneficiaries will receive the full death benefit when you pass away. Burial insurance with no waiting period is always cheaper than guaranteed issue life insurance (as long as you go with the correct insurance company).&#160;</p>
 
-<p><strong>GUARANTEED ISSUE WHOLE LIFE (GIWL) – </strong>This policy has no medical exam or health question questions. You will be approved regardless of any health issues. Guaranteed issue whole life insurance is designed for people with significant health issues who may not qualify for a traditional term life or whole life insurance.</p>
+<p><strong>GUARANTEED ISSUE WHOLE LIFE (GIWL): </strong>This policy has no medical exam or health question questions. You will be approved regardless of any health issues. Guaranteed issue whole life insurance is designed for people with significant health issues who may not qualify for a traditional term life or whole life insurance.</p>
 
 <p>The downside of a GIWL policy is the mandatory two-year waiting period. If you pass away during the waiting period, the policy would only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
@@ -152,9 +152,9 @@ sidebar: true
 <h2 id="how-to-apply-for-burial-insurance"><strong>How to apply for burial insurance for blood thinner users</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Ask for guidance from independent insurance agents specializing in underwriting for people who use blood thinners. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – When filling out the life insurance application with your agent, be truthful about your blood thinner use. Provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
-<li><strong>Review and Confirm Policy Details</strong> – Carefully review the life insurance policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Ask for guidance from independent insurance agents specializing in underwriting for people who use blood thinners. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the life insurance application with your agent, be truthful about your blood thinner use. Provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
+<li><strong>Review and Confirm Policy Details</strong>: Carefully review the life insurance policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>

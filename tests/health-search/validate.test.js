@@ -30,7 +30,7 @@ test('approved benefit schedules are recorded exactly', () => {
     assert.ok(!/\d+%/.test(m[0]), 'no invented first-year percentage');
     assert.deepEqual(m.slice(1), ['13-24: 50% of the death benefit', '25 and later: 100% of the death benefit']);
   }
-  assert.deepEqual(months('gerber-life', 'guaranteed-issue'), ['1–24: Return of premium plus 10% interest.', '25+: 100% coverage payout.']);
+  assert.deepEqual(months('gerber-life', 'guaranteed-issue'), ['1-24: Return of premium plus 10% interest.', '25+: 100% coverage payout.']);
   assert.ok(by['gerber-life'].guaranteedIssue);
   assert.equal(by['cica-life'].name, 'CICA Life Insurance');
   assert.equal(by['cica-life'].publicDisplay, 'named');

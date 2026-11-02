@@ -76,9 +76,9 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>Burial insurance available to people who had heart bypass surgery?</strong></h2>
 
-<p><strong>FIRST-DAY COVERAGE</strong> – This burial insurance is as straightforward as it gets – no waiting around. You make the first payment, and bam, your loved ones get the full 100% death benefit when the time comes.</p>
+<p><strong>FIRST-DAY COVERAGE</strong>: This burial insurance is as straightforward as it gets, no waiting around. You make the first payment, and bam, your loved ones get the full 100% death benefit when the time comes.</p>
 
-<p><strong>GUARANTEED ISSUE LIFE INSURANCE</strong> – No medical exams, no health questions – it’s the easy road to coverage regardless of your health history. But, fair warning, this convenience comes at a price – about 50% more expensive – and there’s a mandatory two-year wait.</p>
+<p><strong>GUARANTEED ISSUE LIFE INSURANCE</strong>: No medical exams, no health questions, it’s the easy road to coverage regardless of your health history. But, fair warning, this convenience comes at a price, about 50% more expensive, and there’s a mandatory two-year wait.</p>
 
 <p>If you kick the bucket from natural causes during those first two years, your beneficiaries won’t get the jackpot payment. They’ll get back what you paid in premiums plus a smidge extra set by the contract, typically 7% to 10%.</p>
 
@@ -115,23 +115,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage</td>
+<td>One insurance company: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -148,23 +148,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage </td>
+<td>One insurance company: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -201,14 +201,14 @@ sidebar: true
 
 <p>Our insurance pros will hunt down the best first-day coverage deals out there and hook you up with a killer plan at the right price.</p>
 
-<p>Don’t settle – get with the pros who’ve got your back!</p>
+<p>Don’t settle: get with the pros who’ve got your back!</p>
 
 <h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with heart bypass surgery</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent – </strong>Find yourself a savvy, independent agent from Funeral Funds who knows the ins and outs of heart bypass survivors like you. They’ll break down all the burial insurance options, dish out price comparisons, and straight-up handle your queries.</li>
-<li><strong>Complete the Application Honestly</strong> – Pick a plan that fits your vibe and wallet. No fibs! Lay it all out – your health scoop, treatments, and any lifestyle tweaks you’ve made.</li>
-<li><strong>Review and Confirm Policy Details</strong> – Carefully review the policy terms before you sign anything. Follow Funeral Funds instructions for submitting your application.</li>
+<li><strong>Consult with an Independent Insurance Agent: </strong>Find yourself a savvy, independent agent from Funeral Funds who knows the ins and outs of heart bypass survivors like you. They’ll break down all the burial insurance options, dish out price comparisons, and straight-up handle your queries.</li>
+<li><strong>Complete the Application Honestly</strong>: Pick a plan that fits your vibe and wallet. No fibs! Lay it all out, your health scoop, treatments, and any lifestyle tweaks you’ve made.</li>
+<li><strong>Review and Confirm Policy Details</strong>: Carefully review the policy terms before you sign anything. Follow Funeral Funds instructions for submitting your application.</li>
 </ol>
 
 <h2 id="faq">Frequently asked <strong>questions </strong></h2>
@@ -219,7 +219,7 @@ sidebar: true
 
 <p><br><strong>Do I need to tell the insurance company about heart bypass surgery?</strong></p>
 
-<p>Big yes. It’s like trying to sneak a giraffe into a movie theater – they’ll find out, and it won’t be pretty. Not telling them could mean your policy evaporates faster than your New Year’s resolutions.</p>
+<p>Big yes. It’s like trying to sneak a giraffe into a movie theater, they’ll find out, and it won’t be pretty. Not telling them could mean your policy evaporates faster than your New Year’s resolutions.</p>
 
 <p><br><strong>How long does bypass surgery affect life insurance?</strong></p>
 

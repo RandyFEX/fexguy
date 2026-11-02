@@ -76,11 +76,11 @@ sidebar: true
 
 <h2 id="types-of-burial-insurance"><strong>What are the types of burial insurance available for dialysis patients?</strong></h2>
 
-<p><strong>First-Day Coverage</strong> – It’s like the fast-pass to insurance. No medical drama, just a few questions and boom – you’re covered! It’s like insurance companies decided to be nice for once.</p>
+<p><strong>First-Day Coverage</strong>: It’s like the fast-pass to insurance. No medical drama, just a few questions and boom, you’re covered! It’s like insurance companies decided to be nice for once.</p>
 
-<p><strong>Modified Coverage</strong> – Think of this as the “patience is a virtue” option. You get some coverage right away, but don’t expect a big payday right off the bat. Your benefits are phased in over two years.</p>
+<p><strong>Modified Coverage</strong>: Think of this as the “patience is a virtue” option. You get some coverage right away, but don’t expect a big payday right off the bat. Your benefits are phased in over two years.</p>
 
-<p><strong>Guaranteed Issue</strong> – It’s like the insurance world’s last resort. No questions asked, you’re in! But, there’s a catch: if you bite the dust too soon, your family gets a tiny refund, not the big bucks. The policy would only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
+<p><strong>Guaranteed Issue</strong>: It’s like the insurance world’s last resort. No questions asked, you’re in! But, there’s a catch: if you bite the dust too soon, your family gets a tiny refund, not the big bucks. The policy would only pay out the premiums you have paid plus 7-10% interest (depending on the company).</p>
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
@@ -130,19 +130,19 @@ sidebar: true
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -163,19 +163,19 @@ sidebar: true
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -200,7 +200,7 @@ sidebar: true
 
 <h2 id="best-burial-insurance"><strong>How to find the best burial insurance for dialysis patients?</strong></h2>
 
-<p>Don’t sweat it! Finding the right plan is like finding the best video game – there are tons out there, but only one is perfect for you.</p>
+<p>Don’t sweat it! Finding the right plan is like finding the best video game, there are tons out there, but only one is perfect for you.</p>
 
 <p>An independent life insurance agent from Funeral Funds is like your own personal insurance superhero. They know which insurance companies may offer “first-day coverage” for people with kidney stuff and dialysis. They’ll help you find the perfect plan, so you can relax and focus on feeling better.</p>
 
@@ -208,7 +208,7 @@ sidebar: true
 
 <p id="Additional-Questions-&-Answers-On-Insurance-For-Dialysis-Patients"><strong>Is there any insurance for dialysis patients?</strong></p>
 
-<p>Yes, There is actually a cool insurance company out there that may not make you wait forever to get covered, if you qualify. It’s like first-day coverage – bam, you’re in!</p>
+<p>Yes, There is actually a cool insurance company out there that may not make you wait forever to get covered, if you qualify. It’s like first-day coverage, bam, you’re in!</p>
 
 <p><strong><br>Which insurance is best for dialysis?</strong></p>
 

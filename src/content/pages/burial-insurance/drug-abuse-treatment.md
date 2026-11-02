@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Burial Insurance with Drug Abuse or Treatment</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Recent drug rehab can get your life insurance application denied<br>• Most companies want 2–5 years clean before better options open<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Relapse history or ongoing treatment raises rates or limits coverage<br>• Lying about rehab can cancel your policy and deny your claim<br>• Not comparing companies can trap you in overpriced, weak policies</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Recent drug rehab can get your life insurance application denied<br>• Most companies want 2 to 5 years clean before better options open<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• Relapse history or ongoing treatment raises rates or limits coverage<br>• Lying about rehab can cancel your policy and deny your claim<br>• Not comparing companies can trap you in overpriced, weak policies</p>
 
 <p>Burial insurance after drug abuse treatment depends on timing and recovery. If you’re still in treatment or have recently finished, most companies will decline traditional policies and push you toward guaranteed-issue whole life insurance, which costs more and delays full payouts. If you’ve been clean for a few years and can show stability, your options improve, and you may qualify for better whole life or even term life insurance at lower rates. Insurance companies focus on how long you’ve been sober, your health, and your track record since rehab. The biggest mistake is assuming you have no options or hiding your history.</p>
 
@@ -394,14 +394,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li>No medical exam or doctor’s visit is required&#160;– easy to get approved.</li>
-<li>Ease of issue&#160;– easy to qualify and get insurance coverage.</li>
-<li>No Money Down to get approved&#160;– have your policy start whenever you want.</li>
-<li>Level premium&#160;– your premium will never increase.</li>
-<li>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</li>
-<li>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li>Cash value builds up&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li>No medical exam or doctor’s visit is required: easy to get approved.</li>
+<li>Ease of issue: easy to qualify and get insurance coverage.</li>
+<li>No Money Down to get approved: have your policy start whenever you want.</li>
+<li>Level premium: your premium will never increase.</li>
+<li>Fixed death benefit: your death benefit will never decrease for any reason.</li>
+<li>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li>Cash value builds up: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with drug abuse history</strong></h2>

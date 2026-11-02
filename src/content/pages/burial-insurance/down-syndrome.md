@@ -218,9 +218,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>You can hardly see Down syndrome asked in the health questionnaire. However, life insurance companies care about Down syndrome because people with Down syndrome can develop health <a href="https://www.mayoclinic.org/diseases-conditions/down-syndrome/symptoms-causes/syc-20355977" target="_blank" rel="noreferrer noopener">complications</a>. </p>
 

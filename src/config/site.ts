@@ -94,7 +94,7 @@ export const site: SiteConfig = {
       '<small>All company names and products are the registered trademarks of their original owners and Funeral Funds or funeralfunds.com declares no affiliation, sponsorship, nor any partnerships with any registered trademarks unless otherwise stated.</small>',
       '<small>The content on this website is for general informational and educational purposes only and should not be construed as professional advice. We make no warranties or guarantees regarding the accuracy, completeness, or currency of the information provided. For guidance specific to your situation, please call us directly at 888-862-9456.</small>',
       '<small>No portion of Funeral Funds or funeralfunds.com may be copied, published, distributed, or used in any manner for any purpose without prior written authorization of Funeral Funds or www.funeralfunds.com.</small>',
-      '<small>Copyright © 2026 Funeral Funds or funeralfunds.com – All Rights Reserved</small>',
+      '<small>Copyright © 2026 Funeral Funds or funeralfunds.com. All Rights Reserved</small>',
     ],
   },
   cta: { heading: '', text: '' },

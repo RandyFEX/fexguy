@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Current or recent drug or alcohol abuse usually means guaranteed issue, not first-day coverage<br>• Most companies require about 2 years of sobriety, some longer, before better options open<br>• Guaranteed issue plans cost more and delay full payout for 2 years<br>• Many agents skip details and stick you in overpriced plans fast<br>• Lying about past use can get your claim denied later</p>
 
-<p>Getting burial insurance with drug or alcohol abuse depends almost entirely on your sobriety timeline. If you’re currently using or recently stopped, most companies won’t offer first-day coverage and may decline you outright. Your fallback is usually guaranteed issue burial insurance, which costs more and comes with a 2-year waiting period. If you’ve been clean for 2–3 years or longer, your options improve and you may qualify for whole life or burial insurance with immediate coverage and better pricing. The mistake is applying too early or with the wrong company. That’s how people get stuck overpaying for weak coverage.</p>
+<p>Getting burial insurance with drug or alcohol abuse depends almost entirely on your sobriety timeline. If you’re currently using or recently stopped, most companies won’t offer first-day coverage and may decline you outright. Your fallback is usually guaranteed issue burial insurance, which costs more and comes with a 2-year waiting period. If you’ve been clean for 2 to 3 years or longer, your options improve and you may qualify for whole life or burial insurance with immediate coverage and better pricing. The mistake is applying too early or with the wrong company. That’s how people get stuck overpaying for weak coverage.</p>
 
 <p>Get a quote on this page by completing my quote request form now.</p>
 
@@ -70,16 +70,16 @@ sidebar: true
 <p>Drug or alcohol abuse disrupts normal brain chemistry and organ function, leading to physical, psychological, and social complications that can impair judgment, damage vital organs, and affect underwriting decisions and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Liver disease</strong> – Chronic use damages liver cells, leading to fatty liver, hepatitis, cirrhosis, and liver failure.</li>
-<li><strong>Cardiovascular problems</strong> – Substance use increases risk of high blood pressure, heart rhythm disorders, and heart attacks.</li>
-<li><strong>Cognitive impairment</strong> – Memory loss, poor concentration, and slowed thinking interfere with daily functioning.</li>
-<li><strong><a href="/burial-insurance/mental-health-conditions/" target="_blank" rel="noreferrer noopener">Mental health disorders</a></strong> – <a href="/burial-insurance/depression/" target="_blank" rel="noreferrer noopener">Depression</a>, anxiety, and mood instability frequently coexist and worsen outcomes.</li>
-<li><strong>Increased injury risk</strong> – Impaired coordination and judgment raise the likelihood of accidents and trauma.</li>
-<li><strong>Withdrawal complications</strong> – Sudden cessation can cause seizures, hallucinations, or life-threatening reactions.</li>
-<li><strong>Immune system suppression</strong> – Reduced immune response increases infection frequency and severity.</li>
-<li><strong>Gastrointestinal issues</strong> – Chronic use causes ulcers, pancreatitis, and digestive bleeding.</li>
-<li><strong>Social and occupational impairment</strong> – Work instability, legal issues, and relationship strain are common.</li>
-<li><strong>Higher mortality risk</strong> – Long-term substance abuse significantly increases risk of early death.</li>
+<li><strong>Liver disease</strong>: Chronic use damages liver cells, leading to fatty liver, hepatitis, cirrhosis, and liver failure.</li>
+<li><strong>Cardiovascular problems</strong>: Substance use increases risk of high blood pressure, heart rhythm disorders, and heart attacks.</li>
+<li><strong>Cognitive impairment</strong>: Memory loss, poor concentration, and slowed thinking interfere with daily functioning.</li>
+<li><strong><a href="/burial-insurance/mental-health-conditions/" target="_blank" rel="noreferrer noopener">Mental health disorders</a></strong>: <a href="/burial-insurance/depression/" target="_blank" rel="noreferrer noopener">Depression</a>, anxiety, and mood instability frequently coexist and worsen outcomes.</li>
+<li><strong>Increased injury risk</strong>: Impaired coordination and judgment raise the likelihood of accidents and trauma.</li>
+<li><strong>Withdrawal complications</strong>: Sudden cessation can cause seizures, hallucinations, or life-threatening reactions.</li>
+<li><strong>Immune system suppression</strong>: Reduced immune response increases infection frequency and severity.</li>
+<li><strong>Gastrointestinal issues</strong>: Chronic use causes ulcers, pancreatitis, and digestive bleeding.</li>
+<li><strong>Social and occupational impairment</strong>: Work instability, legal issues, and relationship strain are common.</li>
+<li><strong>Higher mortality risk</strong>: Long-term substance abuse significantly increases risk of early death.</li>
 </ul>
 
 <h2>Understanding drug or alcohol abuse policy types</h2>
@@ -98,7 +98,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your specific price may change depending on which A-rated carrier best fits your recovery history.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

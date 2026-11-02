@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Guarantee Trust Life uses graded policies that are massively better than 2-year wait plans<br>• Months 1-12 policy returns premiums + 5% – no risk of losing money – great interest rate<br>• Months 13-24 policy pays out 50% of the death benefit – much better than a 2-year wait<br>• Easy approval for people with higher-risk health issues without a full 2-year wait<br>• Coverage amounts can be adjusted based on your needs and funeral costs<br>• Always let me shop for you to find the best first-day coverage options</p>
+<p>• Guarantee Trust Life uses graded policies that are massively better than 2-year wait plans<br>• Months 1-12 policy returns premiums + 5%: no risk of losing money, great interest rate<br>• Months 13-24 policy pays out 50% of the death benefit, much better than a 2-year wait<br>• Easy approval for people with higher-risk health issues without a full 2-year wait<br>• Coverage amounts can be adjusted based on your needs and funeral costs<br>• Always let me shop for you to find the best first-day coverage options</p>
 
 <p>Guarantee Trust Life burial insurance is a whole life policy designed for final expenses, but it comes with tradeoffs. Their main product uses a graded benefit structure, which means your family doesn’t get full coverage right away. In the first year, it typically returns only your premiums plus a small percentage, and in year two, it may pay only about 50% of the benefit. That’s the catch behind the easy approval. If your goal is immediate protection, this type of policy can leave a gap when your family needs money most.</p>
 
@@ -63,7 +63,7 @@ sidebar: true
 <li>Ages 50-90 years old are accepted</li>
 <li>Permanent Coverage that never expires</li>
 <li>Your monthly premium will never increase</li>
-<li>$2,500 – $20,000 available coverage amount</li>
+<li>$2,500 to $20,000 available coverage amount</li>
 <li>Cash value buildup that can be borrowed against in emergencies</li>
 </ul>
 
@@ -78,10 +78,10 @@ sidebar: true
 <p><strong>Death Benefit Payout Schedule:</strong></p>
 
 <ul>
-<li><strong>1st-Day Coverage </strong>– Any accidental or catastrophic cause of death</li>
-<li><strong>Months 1-12</strong> – Death benefit is equal to premiums paid plus 5%</li>
-<li><strong>Months 13-24</strong> – Death benefit is 50% of the coverage amount</li>
-<li><strong>After 24 Months</strong> – Death benefit is 100% of the coverage amount</li>
+<li><strong>1st-Day Coverage </strong>: Any accidental or catastrophic cause of death</li>
+<li><strong>Months 1-12</strong>: Death benefit is equal to premiums paid plus 5%</li>
+<li><strong>Months 13-24</strong>: Death benefit is 50% of the coverage amount</li>
+<li><strong>After 24 Months</strong>: Death benefit is 100% of the coverage amount</li>
 </ul>
 
 <p>For accidental death (during the first two years) GTL would pay the full coverage amount.</p>

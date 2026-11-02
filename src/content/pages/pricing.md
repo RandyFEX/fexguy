@@ -180,7 +180,7 @@ FEMALE</th>
 
 <p><strong>Here are some rider-specific features:</strong></p>
 
-<ul><li><strong>Terminal Illness</strong> – included at no extra cost</li><li><strong>Nursing Home Confinement</strong> – included at no extra cost</li><li><strong>Accidental Death</strong> – additional fee to add to policy &amp; often cancels at age 70</li><li><strong>Children Rider</strong> – additional fee to add to a policy</li><li><strong>Grandchildren Rider</strong> – additional fee to add to policy</li></ul>
+<ul><li><strong>Terminal Illness</strong>: included at no extra cost</li><li><strong>Nursing Home Confinement</strong>: included at no extra cost</li><li><strong>Accidental Death</strong>: additional fee to add to policy &amp; often cancels at age 70</li><li><strong>Children Rider</strong>: additional fee to add to a policy</li><li><strong>Grandchildren Rider</strong>: additional fee to add to policy</li></ul>
 
 <table class="table-wrap" id="tablepress-107">
 <thead>

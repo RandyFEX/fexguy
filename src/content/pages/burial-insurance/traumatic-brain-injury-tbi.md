@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Traumatic brain injury makes it important to go with the right insurance company<br>• Recent or severe cases usually limit you to waiting period plans<br>• Needing help with daily activities like bathing or dressing means guaranteed issue only<br>• Some companies decline you while others still offer your 1st-day coverage<br>• Guaranteed issue plans cost more and delay payouts for 2 years – avoid these<br>• Old, fully recovered injuries are generally not an issue for full 1st-day coverage<br>• Applying incorrectly can lock you into higher prices or denied applications</p>
+<p>• Traumatic brain injury makes it important to go with the right insurance company<br>• Recent or severe cases usually limit you to waiting period plans<br>• Needing help with daily activities like bathing or dressing means guaranteed issue only<br>• Some companies decline you while others still offer your 1st-day coverage<br>• Guaranteed issue plans cost more and delay payouts for 2 years, avoid these<br>• Old, fully recovered injuries are generally not an issue for full 1st-day coverage<br>• Applying incorrectly can lock you into higher prices or denied applications</p>
 
 <p>Burial insurance with traumatic brain injury depends on how serious the injury was and how well you’ve recovered. Insurance companies consider factors such as memory loss, seizures, mobility, and how recently the injury occurred. If the brain injury was mild and occurred years ago, you may still qualify for full coverage whole life burial insurance. If it’s recent or ongoing, you’ll likely be pushed into a graded or guaranteed issue policy with a waiting period. People with disabilities can still get life insurance, but it often comes with higher costs and stricter approval rules. The difference comes down to timing and choosing the right company.</p>
 
@@ -74,16 +74,16 @@ sidebar: true
 <p>Traumatic brain injury disrupts normal brain structure and function, leading to lasting cognitive, physical, and emotional impairments, and these related effects can influence underwriting decisions and policy selection depending on severity and stability.</p>
 
 <ul>
-<li><strong>Cognitive impairment</strong> – Memory loss, slowed processing, and reduced attention interfere with learning, work, and decision making.</li>
-<li><strong>Headaches</strong> – Chronic or recurrent headaches affect concentration, sleep, and daily comfort.</li>
-<li><strong>Dizziness and balance problems</strong> – Inner ear and brain signaling disruption increases fall and injury risk.</li>
-<li><strong>Seizure disorders</strong> – Post-traumatic seizures raise safety concerns and require long-term medication management.</li>
-<li><strong>Emotional and behavioral changes</strong> – Irritability, mood swings, depression, and impulsivity affect relationships and job performance.</li>
-<li><strong>Sleep disturbances</strong> – Insomnia or fragmented sleep worsen fatigue, mood, and cognitive function.</li>
-<li><strong>Sensitivity to light and noise</strong> – Sensory overload limits tolerance for busy environments.</li>
-<li><strong>Motor weakness or coordination loss</strong> – Impaired movement affects physical work and daily activities.</li>
-<li><strong>Speech and communication difficulties</strong> – Language processing or articulation problems limit effective communication.</li>
-<li><strong>Reduced work capacity</strong> – Combined cognitive and physical deficits restrict endurance, reliability, and functional independence.</li>
+<li><strong>Cognitive impairment</strong>: Memory loss, slowed processing, and reduced attention interfere with learning, work, and decision making.</li>
+<li><strong>Headaches</strong>: Chronic or recurrent headaches affect concentration, sleep, and daily comfort.</li>
+<li><strong>Dizziness and balance problems</strong>: Inner ear and brain signaling disruption increases fall and injury risk.</li>
+<li><strong>Seizure disorders</strong>: Post-traumatic seizures raise safety concerns and require long-term medication management.</li>
+<li><strong>Emotional and behavioral changes</strong>: Irritability, mood swings, depression, and impulsivity affect relationships and job performance.</li>
+<li><strong>Sleep disturbances</strong>: Insomnia or fragmented sleep worsen fatigue, mood, and cognitive function.</li>
+<li><strong>Sensitivity to light and noise</strong>: Sensory overload limits tolerance for busy environments.</li>
+<li><strong>Motor weakness or coordination loss</strong>: Impaired movement affects physical work and daily activities.</li>
+<li><strong>Speech and communication difficulties</strong>: Language processing or articulation problems limit effective communication.</li>
+<li><strong>Reduced work capacity</strong>: Combined cognitive and physical deficits restrict endurance, reliability, and functional independence.</li>
 </ul>
 
 <h2>Understanding TBI traumatic brain injury policy types</h2>
@@ -102,7 +102,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

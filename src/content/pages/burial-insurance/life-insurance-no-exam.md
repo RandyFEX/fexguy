@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Final Expense Life Insurance With No Exam</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• No-exam policies are easier and better priced, depending on the life insurance company<br>• Coverage amounts can be lower than term life insurance as these plans are designed for senior citizens<br>• Some plans include a 2-year waiting period before full payout – avoid these plans if possible!<br>• You’ll still answer health questions even without a medical exam – these questions are rarely an issue<br>• Fast approvals, often within minutes, are possible with the right companies – let me price check for you</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• No-exam policies are easier and better priced, depending on the life insurance company<br>• Coverage amounts can be lower than term life insurance as these plans are designed for senior citizens<br>• Some plans include a 2-year waiting period before full payout, avoid these plans if possible!<br>• You’ll still answer health questions even without a medical exam, these questions are rarely an issue<br>• Fast approvals, often within minutes, are possible with the right companies, let me price check for you</p>
 
 <p>Final expense life insurance with no exam is a type of whole life insurance designed for fast approval, especially if you have health issues. You won’t need bloodwork or a doctor visit, and many policies approve you in days using basic health questions. The trade-off is a higher cost per dollar of coverage and lower benefit amounts, often meant just for funeral and final bills. Some plans also include a waiting period before full benefits pay out, which can leave your family short if you choose the wrong plan.</p>
 

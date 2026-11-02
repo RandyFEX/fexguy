@@ -44,11 +44,11 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with a brain tumor they may approve.</p>
 
 <ul>
-<li><strong>Aetna Modified</strong> – Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aetna Standard Level</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aflac Modified</strong> – Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Aflac Standard Level</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for aneurysm, brain tumor, or sickle cell anemia?</li>
+<li><strong>Aetna Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aetna Standard Level</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aflac Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Aflac Standard Level</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for stroke or transient ischemic attack (TIA or mini-stroke), aneurysm, or brain tumor?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for aneurysm, brain tumor, or sickle cell anemia?</li>
 </ul>
 
 <h3>Brain tumor underwriting basics</h3>
@@ -88,16 +88,16 @@ sidebar: true
 <p>Brain tumors disrupt normal brain function by compressing or damaging neural tissue, leading to neurological, cognitive, and physical impairments that can affect underwriting decisions and policy selection depending on tumor type, treatment status, and stability.</p>
 
 <ul>
-<li><strong>Headaches</strong> – Increased intracranial pressure causes persistent or worsening headaches.</li>
-<li><strong>Seizure disorders</strong> – Tumor-related brain irritation increases seizure risk and safety concerns.</li>
-<li><strong>Cognitive impairment</strong> – Memory loss, slowed thinking, and reduced concentration affect daily function and work capacity.</li>
-<li><strong>Vision problems</strong> – Pressure on the optic pathways causes blurred vision, double vision, or vision loss.</li>
-<li><strong>Motor weakness</strong> – Tumor location affects strength, coordination, and balance.</li>
-<li><strong>Speech and language difficulties</strong> – Damage to language centers impairs communication and comprehension.</li>
-<li><strong>Personality or behavior changes</strong> – Frontal lobe involvement alters judgment, mood, and emotional regulation.</li>
-<li><strong>Hormonal dysfunction</strong> – Pituitary or hypothalamic tumors disrupt hormone balance and metabolism.</li>
-<li><strong>Fatigue</strong> – Tumor burden and treatments like radiation or chemotherapy cause persistent exhaustion.</li>
-<li><strong>Treatment-related complications</strong> – Surgery, radiation, or chemotherapy add infection risk, swelling, and long-term neurological effects.</li>
+<li><strong>Headaches</strong>: Increased intracranial pressure causes persistent or worsening headaches.</li>
+<li><strong>Seizure disorders</strong>: Tumor-related brain irritation increases seizure risk and safety concerns.</li>
+<li><strong>Cognitive impairment</strong>: Memory loss, slowed thinking, and reduced concentration affect daily function and work capacity.</li>
+<li><strong>Vision problems</strong>: Pressure on the optic pathways causes blurred vision, double vision, or vision loss.</li>
+<li><strong>Motor weakness</strong>: Tumor location affects strength, coordination, and balance.</li>
+<li><strong>Speech and language difficulties</strong>: Damage to language centers impairs communication and comprehension.</li>
+<li><strong>Personality or behavior changes</strong>: Frontal lobe involvement alters judgment, mood, and emotional regulation.</li>
+<li><strong>Hormonal dysfunction</strong>: Pituitary or hypothalamic tumors disrupt hormone balance and metabolism.</li>
+<li><strong>Fatigue</strong>: Tumor burden and treatments like radiation or chemotherapy cause persistent exhaustion.</li>
+<li><strong>Treatment-related complications</strong>: Surgery, radiation, or chemotherapy add infection risk, swelling, and long-term neurological effects.</li>
 </ul>
 
 <h2>Understanding brain tumor policy types</h2>
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

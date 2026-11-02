@@ -225,7 +225,7 @@ sidebar: true
 <tr>
 <td>Globe Life</td>
 <td>Whole Life</td>
-<td>$40–$50</td>
+<td>$40 to $50</td>
 <td>Up to 2 Years</td>
 <td>Yes (for Term)</td>
 </tr>

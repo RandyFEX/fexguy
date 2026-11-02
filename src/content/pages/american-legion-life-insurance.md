@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• The “free” coverage is accidental only, not actual life insurance – oops!<br>• Deaths like cancer, heart disease, or other medical emergencies won’t pay anything<br>• Coverage is extremely small, often $1,000 to $5,000 total – burials = $10,000 to $15,000<br>• Term options have low limits, and prices increase as you age  – when you can least afford it<br>• Benefits can shrink or cap out right as you age – just when you need them the most<br>• You may think you’re covered when you actually have no real life insurance – you got fooled!</p>
+<p>• The “free” coverage is accidental only, not actual life insurance, oops!<br>• Deaths like cancer, heart disease, or other medical emergencies won’t pay anything<br>• Coverage is extremely small, often $1,000 to $5,000 total, burials = $10,000 to $15,000<br>• Term options have low limits, and prices increase as you age, when you can least afford it<br>• Benefits can shrink or cap out right as you age, just when you need them the most<br>• You may think you’re covered when you actually have no real life insurance, you got fooled!</p>
 
 <p>American Legion member life insurance sounds like a solid benefit, but it’s limited. The “no cost” plan is accidental death coverage, meaning it only pays if you die from a qualifying accident, not illness. The term life option is guaranteed acceptance, but it usually caps coverage at around $5,000 to $25,000, and rates increase over time. That’s not enough for most funerals, and it doesn’t give long-term protection. If you’re relying on this alone, your family could be left short.</p>
 

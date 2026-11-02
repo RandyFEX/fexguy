@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Burial policies for seniors are easy to get, but often overpriced if bought from the wrong company<br>• The small coverage amounts some companies offer may not fully cover all funeral expenses<br>• Many plans are guaranteed plans that cost more and delay payouts for 2 years (not with me, though!)<br>• Waiting too long raises your monthly premium fast – don’t keep putting this off<br>• Many seniors overpay by not comparing multiple insurance companies with someone like funeralfunds.com<br>• Term life is rarely the best for seniors as it often expires before you need it most</p>
+<p>• Burial policies for seniors are easy to get, but often overpriced if bought from the wrong company<br>• The small coverage amounts some companies offer may not fully cover all funeral expenses<br>• Many plans are guaranteed plans that cost more and delay payouts for 2 years (not with me, though!)<br>• Waiting too long raises your monthly premium fast, don’t keep putting this off<br>• Many seniors overpay by not comparing multiple insurance companies with someone like funeralfunds.com<br>• Term life is rarely the best for seniors as it often expires before you need it most</p>
 
 <p>Complete my quote request form on this page to get fast rates without overpaying.</p>
 
@@ -78,7 +78,7 @@ sidebar: true
 
 <h2 id="burial-policies-for-seniors"><strong>Burial policies for seniors</strong></h2>
 
-<p><strong>Simplified Issue Life Insurance – Level Benefit Plans</strong></p>
+<p><strong>Simplified Issue Life Insurance: Level Benefit Plans</strong></p>
 
 <p>The underwriting process has been simplified compared to full life insurance, where you must have a medical exam. Final expense insurance no exam let you skip the needles.</p>
 
@@ -104,7 +104,7 @@ sidebar: true
 
 <p>Burial insurance with no waiting period provides full death benefits when the policy is issued.<strong> If the insured dies after the policy is approved, 100% of the death benefit will be given to the beneficiary.</strong></p>
 
-<p><strong>Guaranteed Issue Life insurance – Graded Benefit Plans</strong></p>
+<p><strong>Guaranteed Issue Life insurance: Graded Benefit Plans</strong></p>
 
 <p>There is no medical exam or any health questions asked with this policy.&#160;It has guaranteed approval which is best for people with severe health conditions.&#160;A waiting period before the death benefit typically occurs after 24 months.</p>
 
@@ -113,9 +113,9 @@ sidebar: true
 <h2 id="burial-insurance-waiting-periods"><strong>Burial policy waiting periods &amp; payouts</strong></h2>
 
 <ol>
-<li><strong>No waiting period –</strong>&#160;no waiting period life insurance is the preferred option for all funeral funding and burial plans, as it gives you immediate coverage with 100% payout of the funds from day one.</li>
-<li><strong>Partial waiting period –&#160;</strong> These plans give you immediate partial coverage. The first 12 months of coverage will be 30 to 40% of the face amount, the following 13 to 24 months will be 60 to 70% of the face amount, and after 24 months, you will have 100% coverage.</li>
-<li><strong>Two-year waiting period (or Modified waiting period) –</strong> The best plans offer immediate coverage if accidental death occurs, a return of premiums, 8 to 10% interest on these premiums if a death occurs in the first 24 months, and a guaranteed payout of funds after 24 months.</li>
+<li><strong>No waiting period: </strong>&#160;no waiting period life insurance is the preferred option for all funeral funding and burial plans, as it gives you immediate coverage with 100% payout of the funds from day one.</li>
+<li><strong>Partial waiting period:&#160;</strong> These plans give you immediate partial coverage. The first 12 months of coverage will be 30 to 40% of the face amount, the following 13 to 24 months will be 60 to 70% of the face amount, and after 24 months, you will have 100% coverage.</li>
+<li><strong>Two-year waiting period (or Modified waiting period):</strong> The best plans offer immediate coverage if accidental death occurs, a return of premiums, 8 to 10% interest on these premiums if a death occurs in the first 24 months, and a guaranteed payout of funds after 24 months.</li>
 </ol>
 
 <p><strong>All insurance companies have different eligibility and waiting period criteria. Here is one example of an insurance company waiting period:</strong></p>
@@ -125,16 +125,16 @@ sidebar: true
 <h2 id="best-features-of-burial-insurance"><br><strong>Best features of burial policies for seniors</strong></h2>
 
 <ol>
-<li><strong>Instant approval –</strong>&#160;There is fast approval for final expense insurance for seniors. The longest time you will ever wait for the application to be approved is just a few business days, but most insurance companies offer instant approval.</li>
-<li><strong>Lenient underwriting</strong> –&#160;Seniors with pre-existing conditions may still qualify for a guaranteed acceptance policy. There are relaxed underwriting requirements, and only a few health questions are asked of the applicants. No health questions are asked to qualify for guaranteed issue life insurance.</li>
-<li><strong>No medical exam</strong> –&#160;All funeral insurance companies will not require you to undergo a medical exam. The application process is simplified. That means you only need to answer health questions and don’t even ask for it.</li>
-<li><strong>No health questions</strong> –&#160;Some burial insurance policies for seniors do not ask health questions. Guaranteed acceptance policies are best for people with severe health conditions.</li>
-<li><strong>The coverage is permanent</strong> –&#160;Burial policies for seniors are whole-life policies locked in for the duration of the policy. You are covered for life, and the coverage cannot decrease; it does not expire at any age. The premiums are leveled and do not increase.</li>
-<li><strong>It has a cash value component</strong> –&#160;Burial insurance policies for seniors are a whole life with a cash value that grows over time. The cash value can be used to pay for premiums. It acts as a safety net to ensure the policy never lapses from nonpayment.</li>
-<li><strong>Fast payout</strong> –&#160;There is a quicker claims payout with burial insurance for seniors. The claim will be paid within a week once the proper paperwork is received.</li>
-<li><strong>Small value options</strong> –&#160;Burial policies for seniors are offered at small face value. You can buy as little as $1,000, so you can buy as much or as little as you need.</li>
-<li><strong>Portability</strong> –&#160;The payout for funeral insurance for seniors is in cash upon the insured’s death. The beneficiary will receive the full face amount of the policy, and they can use it as a final expense.</li>
-<li><strong>Many insurance company options</strong> – Many carriers offer seniors burial policies. More and more insurance companies are offering insurance because more than 10,000 people are turning 65 each day. All of those are competing for your business which drives the prices of premiums down.</li>
+<li><strong>Instant approval: </strong>&#160;There is fast approval for final expense insurance for seniors. The longest time you will ever wait for the application to be approved is just a few business days, but most insurance companies offer instant approval.</li>
+<li><strong>Lenient underwriting</strong>:&#160;Seniors with pre-existing conditions may still qualify for a guaranteed acceptance policy. There are relaxed underwriting requirements, and only a few health questions are asked of the applicants. No health questions are asked to qualify for guaranteed issue life insurance.</li>
+<li><strong>No medical exam</strong>:&#160;All funeral insurance companies will not require you to undergo a medical exam. The application process is simplified. That means you only need to answer health questions and don’t even ask for it.</li>
+<li><strong>No health questions</strong>:&#160;Some burial insurance policies for seniors do not ask health questions. Guaranteed acceptance policies are best for people with severe health conditions.</li>
+<li><strong>The coverage is permanent</strong>:&#160;Burial policies for seniors are whole-life policies locked in for the duration of the policy. You are covered for life, and the coverage cannot decrease; it does not expire at any age. The premiums are leveled and do not increase.</li>
+<li><strong>It has a cash value component</strong>:&#160;Burial insurance policies for seniors are a whole life with a cash value that grows over time. The cash value can be used to pay for premiums. It acts as a safety net to ensure the policy never lapses from nonpayment.</li>
+<li><strong>Fast payout</strong>:&#160;There is a quicker claims payout with burial insurance for seniors. The claim will be paid within a week once the proper paperwork is received.</li>
+<li><strong>Small value options</strong>:&#160;Burial policies for seniors are offered at small face value. You can buy as little as $1,000, so you can buy as much or as little as you need.</li>
+<li><strong>Portability</strong>:&#160;The payout for funeral insurance for seniors is in cash upon the insured’s death. The beneficiary will receive the full face amount of the policy, and they can use it as a final expense.</li>
+<li><strong>Many insurance company options</strong>: Many carriers offer seniors burial policies. More and more insurance companies are offering insurance because more than 10,000 people are turning 65 each day. All of those are competing for your business which drives the prices of premiums down.</li>
 </ol>
 
 <h2 id="what-does-burial-insurance-cover"><br><strong>What does a burial insurance policy cover?</strong></h2>
@@ -164,9 +164,9 @@ sidebar: true
 <p>Here are some average costs from the National Funeral Directors’ Association:</p>
 
 <ul>
-<li>Full-service Funeral – with burial and burial vault – $9,135</li>
-<li>Full-service Funeral and Cremation – $5,150</li>
-<li>Direct Cremation with Urn – $2,000</li>
+<li>Full-service Funeral: with burial and burial vault: $9,135</li>
+<li>Full-service Funeral and Cremation: $5,150</li>
+<li>Direct Cremation with Urn: $2,000</li>
 <li>Memorial Service (Varies)</li>
 </ul>
 
@@ -210,7 +210,7 @@ sidebar: true
 
 <h2 id="burial-insurance-to-avoid"><strong>What kind of burial policies for senior should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p>Just about everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
@@ -248,9 +248,9 @@ sidebar: true
 
 <p>Did you know the average funeral costs $8,755? Yep, that’s straight from the NFDA (National Funeral Directors Association). And guess what? That number could climb to $10,000 in no time. Without a burial life insurance policy, that cost could land on your family’s plate, adding even more stress during an already tough time.</p>
 
-<p>Burial insurance for seniors covers those unexpected funeral costs. The best part? Tons of companies offer affordable options for people 50 – 80 years old. And guess what? Around 95% of the folks we help get coverage without a waiting period.</p>
+<p>Burial insurance for seniors covers those unexpected funeral costs. The best part? Tons of companies offer affordable options for people 50 to 80 years old. And guess what? Around 95% of the folks we help get coverage without a waiting period.</p>
 
-<p>In this article, we’ll break down how funeral insurance for seniors works, how to find the best company, what goes into the approval process, and how to apply. Let’s make sure you’ve got all the info to protect your family – stress-free!</p>
+<p>In this article, we’ll break down how funeral insurance for seniors works, how to find the best company, what goes into the approval process, and how to apply. Let’s make sure you’ve got all the info to protect your family, stress-free!</p>
 
 <h2 id="h-what-is-burial-insurance"><strong>What is burial insurance?</strong></h2>
 
@@ -270,47 +270,47 @@ sidebar: true
 
 <h2 id="h-best-features-of-burial-insurance"><strong>Best features of burial insurance</strong></h2>
 
-<p><strong>1. Instant Approval</strong> – No waiting forever here. Most companies approve you instantly, and the longest you’ll ever wait is just a few business days. Fast and painless.</p>
+<p><strong>1. Instant Approval</strong>: No waiting forever here. Most companies approve you instantly, and the longest you’ll ever wait is just a few business days. Fast and painless.</p>
 
-<p><strong>2. Chill Underwriting</strong> – Got some health issues? No big deal. With lenient rules, you can still qualify, and if you go for guaranteed acceptance, there aren’t even health questions. It’s practically a breeze.</p>
+<p><strong>2. Chill Underwriting</strong>: Got some health issues? No big deal. With lenient rules, you can still qualify, and if you go for guaranteed acceptance, there aren’t even health questions. It’s practically a breeze.</p>
 
-<p><strong>3. No Medical Exams</strong> – Forget the needles, forget the tests. No funeral insurance company will make you go through a medical exam. Answer a few health questions, and you’re good to go.</p>
+<p><strong>3. No Medical Exams</strong>: Forget the needles, forget the tests. No funeral insurance company will make you go through a medical exam. Answer a few health questions, and you’re good to go.</p>
 
-<p><strong>4. No Health Questions? Even Better</strong> – Some policies don’t even bother with health questions. Guaranteed acceptance is perfect for folks with serious health conditions.</p>
+<p><strong>4. No Health Questions? Even Better</strong>: Some policies don’t even bother with health questions. Guaranteed acceptance is perfect for folks with serious health conditions.</p>
 
-<p><strong>5. Coverage is for Life</strong> – These are whole-life policies, locked in for good. Coverage doesn’t shrink, doesn’t expire, and your premiums? They’ll never go up. You’re set for life.</p>
+<p><strong>5. Coverage is for Life</strong>: These are whole-life policies, locked in for good. Coverage doesn’t shrink, doesn’t expire, and your premiums? They’ll never go up. You’re set for life.</p>
 
-<p><strong>6. Builds Cash Value</strong> – This policy isn’t just about coverage; it grows cash value over time. You can even use that cash to pay premiums if you’re ever in a pinch. It’s like a safety net for your safety net.</p>
+<p><strong>6. Builds Cash Value</strong>: This policy isn’t just about coverage; it grows cash value over time. You can even use that cash to pay premiums if you’re ever in a pinch. It’s like a safety net for your safety net.</p>
 
-<p><strong>7. Fast Payout</strong> – Claims are processed super quickly. As soon as the paperwork is in, your beneficiary gets the money, usually within a few days.</p>
+<p><strong>7. Fast Payout</strong>: Claims are processed super quickly. As soon as the paperwork is in, your beneficiary gets the money, usually within a few days.</p>
 
-<p><strong>8. Small Coverage Options</strong> – Only need $1,000? No problem. Want more? You can get that, too. Buy as much or as little as you need.</p>
+<p><strong>8. Small Coverage Options</strong>: Only need $1,000? No problem. Want more? You can get that, too. Buy as much or as little as you need.</p>
 
-<p><strong>9. Portable Cash Payout</strong> – When you’re gone, the payout is cash, and your beneficiaries can use it however they want, for funeral costs, bills, or whatever they need.</p>
+<p><strong>9. Portable Cash Payout</strong>: When you’re gone, the payout is cash, and your beneficiaries can use it however they want, for funeral costs, bills, or whatever they need.</p>
 
-<p><strong>10. Tons of Choices</strong> – With so many insurance companies competing for your business (because thousands of people turn 65 every day), you can shop around and find the best deal at a great price.</p>
+<p><strong>10. Tons of Choices</strong>: With so many insurance companies competing for your business (because thousands of people turn 65 every day), you can shop around and find the best deal at a great price.</p>
 
 <h2 id="h-what-s-the-deal-with-burial-insurance-waiting-periods"><strong>What’s the deal with burial insurance waiting periods?</strong></h2>
 
-<p><strong>No Waiting Period</strong> – This is the gold standard. You’re covered 100% from day one, with no delays and no drama. If you want peace of mind ASAP, this is the way to go.</p>
+<p><strong>No Waiting Period</strong>: This is the gold standard. You’re covered 100% from day one, with no delays and no drama. If you want peace of mind ASAP, this is the way to go.</p>
 
-<p><strong>Partial Waiting Period</strong> – It’s a “sort of now, sort of later” deal. You get partial coverage right away:</p>
+<p><strong>Partial Waiting Period</strong>: It’s a “sort of now, sort of later” deal. You get partial coverage right away:</p>
 
 <ul>
-<li>First 12 months? 30–40% of the payout.</li>
-<li>Months 13–24? Bumps up to 60–70%.</li>
+<li>First 12 months? 30 to 40% of the payout.</li>
+<li>Months 13 to 24? Bumps up to 60 to 70%.</li>
 <li>After 24 months? Boom, you’re at 100% coverage.</li>
 </ul>
 
-<p><strong>Two-Year Waiting Period (aka Modified Waiting Period)</strong> – This one comes with some perks:</p>
+<p><strong>Two-Year Waiting Period (aka Modified Waiting Period)</strong>: This one comes with some perks:</p>
 
 <ul>
 <li>If death is a covered accident, the full benefit can be paid immediately.</li>
-<li>If it’s not, your premiums are refunded with 7–10% interest during the first 24 months.</li>
+<li>If it’s not, your premiums are refunded with 7 to 10% interest during the first 24 months.</li>
 <li>After two years, you’re fully covered, no questions asked.</li>
 </ul>
 
-<p><strong>Here’s the catch</strong> – Every insurance company does things a little differently. Eligibility and waiting periods can vary, so read the fine print and know what you’re signing up for.</p>
+<p><strong>Here’s the catch</strong>: Every insurance company does things a little differently. Eligibility and waiting periods can vary, so read the fine print and know what you’re signing up for.</p>
 
 <p>Bottom line: Whether you need coverage now or are okay waiting a bit, there’s a plan that fits. Just make sure you know what you’re getting into!</p>
 
@@ -392,13 +392,13 @@ sidebar: true
 
 <h2 id="h-burial-insurance-to-avoid"><strong>Burial insurance to avoid</strong></h2>
 
-<p><strong>TV and Magazine Ads</strong> – You’ve seen them. Those flashy ads promise “the no-brainer way” to get burial insurance. Sounds good, right? Wrong.</p>
+<p><strong>TV and Magazine Ads</strong>: You’ve seen them. Those flashy ads promise “the no-brainer way” to get burial insurance. Sounds good, right? Wrong.</p>
 
 <p>These policies might say <em>“everyone qualifies”</em> and act like they’re the best deal ever. But spoiler alert: they’ll cost you an arm and a leg.</p>
 
 <p>Here’s the deal: companies that spend millions on TV and magazine ads aren’t giving you the best price; they’re passing those ad costs onto <em>you</em>. Instead, shop smart. Work with a burial insurance specialist, like Funeral Funds, and skip the overpriced hype.</p>
 
-<p><strong>Increasing Price Policies</strong> – Those sneaky TV and magazine plans often come with a big catch: the price goes up every five years.</p>
+<p><strong>Increasing Price Policies</strong>: Those sneaky TV and magazine plans often come with a big catch: the price goes up every five years.</p>
 
 <p>At first, the rate seems affordable, but it keeps climbing until you’re priced out. Then what? You’re forced to cancel the policy because you can’t afford it anymore.</p>
 

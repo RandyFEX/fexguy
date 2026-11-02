@@ -156,7 +156,7 @@ sidebar: true
 
 <p>When you convert, you need to pay the insurance company an amount equal to the difference between the term life policy and what the premium amount would have been if you originally bought a whole life policy.</p>
 
-<p><strong>10 years of whole life premium –&#160;10 years of term life premium&#160;= Lump-sum due to the insurance company</strong></p>
+<p><strong>10 years of whole life premium:&#160;10 years of term life premium&#160;= Lump-sum due to the insurance company</strong></p>
 
 <p>Your premium may be 10-15 times higher than your term life policy premiums when you convert to a whole life policy. That’s the cost to convert from term to permanent life insurance. Converting to whole life will increase your premiums because whole life insurance costs more.</p>
 

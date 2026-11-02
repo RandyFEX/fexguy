@@ -54,7 +54,7 @@ sidebar: true
 
 <p>Paralysis is when you lose control over your muscles in part or all of your body. This can happen due to damage to the brain, spinal cord, or nerves, and it can be a temporary hiccup or a permanent situation.</p>
 
-<p>Paralysis comes in all shapes and sizes. It can be complete – where you can’t move or feel anything in the affected area – or incomplete, also known as paresis, where you’ve got some weakness or movement loss.</p>
+<p>Paralysis comes in all shapes and sizes. It can be complete, where you can’t move or feel anything in the affected area, or incomplete, also known as paresis, where you’ve got some weakness or movement loss.</p>
 
 <p>You’ve also got localized paralysis, which is like a targeted attack on a specific area (think just your face, arm, or leg), and generalized paralysis, which takes a broader swipe at your body.</p>
 
@@ -85,7 +85,7 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>What are the types of burial insurance for people with paralysis?</strong></h2>
 
-<p><strong>First-Day Coverage – </strong>This one’s a breeze. No medical exam is needed – just a few health questions. With first-day coverage, you’re in the game right away with no waiting period to worry about.</p>
+<p><strong>First-Day Coverage: </strong>This one’s a breeze. No medical exam is needed, just a few health questions. With first-day coverage, you’re in the game right away with no waiting period to worry about.</p>
 
 <p><strong>No medical exam, no health questions. Th</strong>is is your go-to if you have serious health issues that might keep you from qualifying for traditional life insurance. Guaranteed issue life insurance is here to cover you, no matter what.</p>
 
@@ -111,23 +111,23 @@ sidebar: true
 <p><strong>To qualify for that sweet spot, you’ve gotta handle these tasks all on your own:</strong></p>
 
 <ol>
-<li><strong>EATING</strong>&#160;–  Whether you’re using a cup, plate, or feeding tube, you’ve gotta manage your chow time.</li>
-<li><strong>BATHING</strong>&#160;–  Yep, this means washing yourself and getting in and out of the bath or shower without a hitch.</li>
-<li><strong>DRESSING</strong>&#160;– Getting dressed, undressed, and dealing with any braces, fasteners, or artificial limbs.</li>
-<li><strong>TOILETING</strong>&#160;– Handling personal hygiene and navigating the toilet.</li>
-<li><strong>TRANFERING </strong>– Moving in and out of chairs, beds, or wheelchairs like a pro.</li>
-<li><strong>CONTINENCE</strong>&#160;– Controlling your bladder and bowels, plus managing any colostomy or catheter bag.</li>
+<li><strong>EATING</strong>:  Whether you’re using a cup, plate, or feeding tube, you’ve gotta manage your chow time.</li>
+<li><strong>BATHING</strong>:  Yep, this means washing yourself and getting in and out of the bath or shower without a hitch.</li>
+<li><strong>DRESSING</strong>: Getting dressed, undressed, and dealing with any braces, fasteners, or artificial limbs.</li>
+<li><strong>TOILETING</strong>: Handling personal hygiene and navigating the toilet.</li>
+<li><strong>TRANFERING </strong>: Moving in and out of chairs, beds, or wheelchairs like a pro.</li>
+<li><strong>CONTINENCE</strong>: Controlling your bladder and bowels, plus managing any colostomy or catheter bag.</li>
 </ol>
 
 <p>If you’re dealing with severe paraplegia, hemiplegia, or quadriplegia and need help with these daily activities, your best bet is a guaranteed issue burial insurance.</p>
 
-<p><strong>TEMPORARY WHEELCHAIR USE – </strong>If you’re temporarily in a wheelchair but still manage your ADLs on your own, you might qualify for first-day coverage with some insurers in specific states.</p>
+<p><strong>TEMPORARY WHEELCHAIR USE: </strong>If you’re temporarily in a wheelchair but still manage your ADLs on your own, you might qualify for first-day coverage with some insurers in specific states.</p>
 
-<p><strong>WHEELCHAIR USE BUT NEEDS HELP WITH ADLS – </strong>If you’re using a wheelchair due to an accident and need help with ADLs but don’t have a chronic disease, go for guaranteed issue burial insurance.</p>
+<p><strong>WHEELCHAIR USE BUT NEEDS HELP WITH ADLS: </strong>If you’re using a wheelchair due to an accident and need help with ADLs but don’t have a chronic disease, go for guaranteed issue burial insurance.</p>
 
-<p><strong>HOME HEALTH CARE –</strong> If you need home health care due to paralysis, most carriers offer guaranteed-issue life insurance.</p>
+<p><strong>HOME HEALTH CARE:</strong> If you need home health care due to paralysis, most carriers offer guaranteed-issue life insurance.</p>
 
-<p><strong>NURSING HOME OR ASSISTED LIVING FACILITY – </strong>Confined to a nursing home or assisted living? Guaranteed issue life insurance is likely your best policy.</p>
+<p><strong>NURSING HOME OR ASSISTED LIVING FACILITY: </strong>Confined to a nursing home or assisted living? Guaranteed issue life insurance is likely your best policy.</p>
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam to qualify for burial insurance?</strong></h2>
 
@@ -160,23 +160,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage</td>
+<td>One insurance company: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -193,23 +193,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage </td>
+<td>One insurance company: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -219,9 +219,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies with first-day coverage have two ways of getting the scoop on you:</strong></p>
 
-<p><strong>FIRST</strong>&#160;– They’ll hit you up with a series of health questions.</p>
+<p><strong>FIRST</strong>: They’ll hit you up with a series of health questions.</p>
 
-<p><strong>SECOND</strong>&#160;– They’ll do a quick digital dive into your prescription history to check out your health.</p>
+<p><strong>SECOND</strong>: They’ll do a quick digital dive into your prescription history to check out your health.</p>
 
 <p><strong>COMMON HEALTH QUESTIONS:</strong></p>
 
@@ -255,9 +255,9 @@ sidebar: true
 <h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with paralysis</strong></h2>
 
 <ol>
-<li><strong>Work with an Independent Insurance Agent –&#160;</strong>Get some backup from independent insurance agents from Funeral Funds who know their way around paralysis <a href="https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm" target="_blank" rel="noreferrer noopener">underwriting</a>. An agent from Funeral Funds can help you navigate your options, compare quotes, and find the perfect burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – When you’re filling out that health questionnaire, spill the beans about your paralysis and any other health issues. Accurate details about your health, treatments, and lifestyle changes are key.</li>
-<li><strong>Review and Confirm Policy Details</strong>&#160;– Take a good look at the policy terms before giving the thumbs up. Make sure the coverage fits your needs and your wallet.</li>
+<li><strong>Work with an Independent Insurance Agent:&#160;</strong>Get some backup from independent insurance agents from Funeral Funds who know their way around paralysis <a href="https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm" target="_blank" rel="noreferrer noopener">underwriting</a>. An agent from Funeral Funds can help you navigate your options, compare quotes, and find the perfect burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: When you’re filling out that health questionnaire, spill the beans about your paralysis and any other health issues. Accurate details about your health, treatments, and lifestyle changes are key.</li>
+<li><strong>Review and Confirm Policy Details</strong>: Take a good look at the policy terms before giving the thumbs up. Make sure the coverage fits your needs and your wallet.</li>
 </ol>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>

@@ -93,15 +93,15 @@ sidebar: true
 
 <p>No medical exam needed for your burial insurance. When you’re ready to cash in your chips, the last thing you want is paperwork.</p>
 
-<p>Just answer a few quick questions about your health – don’t worry, we’re not asking for your life story. No needles, no blood draws, just pure, unadulterated simplicity. You’ll get the green light faster than you can say “six feet under.”</p>
+<p>Just answer a few quick questions about your health, don’t worry, we’re not asking for your life story. No needles, no blood draws, just pure, unadulterated simplicity. You’ll get the green light faster than you can say “six feet under.”</p>
 
 <h2 id="underwriting"><br><strong><strong>Burial insurance underwriting for insulin-dependent diabetics</strong></strong></h2>
 
 <p><strong>There are two ways these insurance folks figure out if you’re a good risk:</strong></p>
 
-<p><strong>FIRST</strong> – They’ll grill you with a bunch of health questions.</p>
+<p><strong>FIRST</strong>: They’ll grill you with a bunch of health questions.</p>
 
-<p><strong>SECOND</strong> – They’ll dig through your medicine cabinet like a detective.</p>
+<p><strong>SECOND</strong>: They’ll dig through your medicine cabinet like a detective.</p>
 
 <p><strong>HEALTH QUESTIONS</strong></p>
 
@@ -182,14 +182,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit required</strong>&#160;– Forget about those pesky medical exams. It’s as easy as pie to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– You can get covered faster than you can say “final expenses.”</li>
-<li><strong>No Money Down to get approved&#160;</strong>– You don’t have to break the bank to get started.</li>
-<li><strong>Level premium</strong>&#160;– Your monthly payments stay the same, no surprises.</li>
-<li><strong>Fixed death benefit</strong>&#160;– Your loved ones get the full amount, no matter what.</li>
-<li><strong>Permanent protection</strong>&#160;– Your insurance stays in place as long as you pay your bills.</li>
-<li><strong>Tax-free</strong>&#160;– Your family keeps all the money, no Uncle Sam taking a bite.</li>
-<li><strong>Cash value builds up</strong>&#160;– Your policy can actually make you some money over time.</li>
+<li><strong>No medical exam or doctor’s visit required</strong>: Forget about those pesky medical exams. It’s as easy as pie to get approved.</li>
+<li><strong>Ease of issue</strong>: You can get covered faster than you can say “final expenses.”</li>
+<li><strong>No Money Down to get approved&#160;</strong>: You don’t have to break the bank to get started.</li>
+<li><strong>Level premium</strong>: Your monthly payments stay the same, no surprises.</li>
+<li><strong>Fixed death benefit</strong>: Your loved ones get the full amount, no matter what.</li>
+<li><strong>Permanent protection</strong>: Your insurance stays in place as long as you pay your bills.</li>
+<li><strong>Tax-free</strong>: Your family keeps all the money, no Uncle Sam taking a bite.</li>
+<li><strong>Cash value builds up</strong>: Your policy can actually make you some money over time.</li>
 </ul>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>

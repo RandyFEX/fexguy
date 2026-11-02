@@ -222,9 +222,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>To get the lowest rates and level death benefit that protects you immediately from day one, you need to apply for burial insurance that has underwriting (asks a few health questions).</p>
 

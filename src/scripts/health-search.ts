@@ -6,9 +6,9 @@
 const API = '/api/health-search/';
 
 type Outcome = { classification: string | null; explanation: string } | null;
-type Schedule = { label: string; periods: { months: string; benefit: string }[]; verification?: string };
+type Schedule = { label: string; periods: { months: string; benefit: string; label?: string }[]; verification?: string };
 type Answer = { answer: 'YES' | 'NO'; primary: string; details: string[] };
-type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; info?: Outcome; yes: Outcome; no: Outcome; answers?: Answer[] };
+type Question = { section: string; number: string; variant: string | null; text: string; match: 'direct' | 'related'; because: string; info?: Outcome; answers?: Answer[] };
 type Group = { carrier: string; anonymized: boolean; questions: Question[]; schedules: Schedule[] };
 type GiCard = { carrier: string; summary: string; schedules: Schedule[] };
 type Response = {
@@ -62,7 +62,7 @@ function renderSchedules(schedules: Schedule[]) {
     const list = el('ul', 'hqs-schedule__list');
     for (const p of s.periods) {
       const li = el('li');
-      li.append(el('strong', undefined, `Months ${p.months}: `), document.createTextNode(p.benefit));
+      li.append(el('strong', undefined, `${p.label ?? `Months ${p.months}`}: `), document.createTextNode(p.benefit));
       list.append(li);
     }
     box.append(list);

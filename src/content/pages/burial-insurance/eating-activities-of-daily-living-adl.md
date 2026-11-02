@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance if You Need Help with Eating – Activities of Daily Living</h1>
+<h1>Burial Insurance if You Need Help with Eating: Activities of Daily Living</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Needing help eating signals serious health risk to insurance companies<br>• Most policies will decline you or limit coverage heavily<br>• Guaranteed issue plans cost more and delay payouts for 2 years<br>• You’ll get less coverage while paying higher monthly premiums<br>• Waiting to apply only makes approval harder and more expensive<br>• Not understanding ADL rules can lead to buying the wrong policy</p>
 
@@ -195,9 +195,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 

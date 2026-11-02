@@ -262,6 +262,23 @@ function publicName(carrier) {
 // - A carrier rule's note (e.g. CICA's eligibility note) is the last detail.
 const SECTION = /^([A-Z][A-Z -]*?) COVERAGE:$/;
 export const LUCK = "You're in luck! ";
+
+// Payout lines are shown without dashes (Randy, November 2026): "Months 1 to
+// 12", and an open-ended last period as "Month 25 onward". The records and
+// schedules keep their stored form; only the displayed line changes.
+/** @param {string} months e.g. "1-12", "1–24", "25+", "25 and later" */
+export function monthsLabel(months) {
+  const m = String(months).trim();
+  let r;
+  if ((r = m.match(/^(\d+)\s*[-\u2013\u2014]\s*(\d+)$/))) return `Months ${r[1]} to ${r[2]}`;
+  if ((r = m.match(/^(\d+)\s*(?:\+|and later|or later|onward)$/i))) return `Month ${r[1]} onward`;
+  return `Months ${m}`;
+}
+/** A "Months …:" payout line in display form; other lines unchanged. @param {string} line */
+export function tidyLine(line) {
+  const r = line.match(/^Months?\s+([^:]+):(.*)$/);
+  return r ? `${monthsLabel(r[1])}:${r[2]}` : line;
+}
 const CALL_PRIMARY = /** @type {Record<string, string>} */ ({
   'first-day-standard': 'First-day standard coverage',
   'first-day-preferred': 'First-day preferred coverage',
@@ -319,11 +336,12 @@ export function answerRows(carrier, answer, o, ownPlanLines = {}) {
     const own = ownPlanLines[plan];
     const schedule = carrier.schedules[plan];
     if (own?.length) rows[0].details.push(...own);
-    else if (schedule) rows[0].details.push(...schedule.periods.map((p) => `Months ${p.months}: ${p.benefit}`));
+    else if (schedule) rows[0].details.push(...schedule.periods.map((p) => `${monthsLabel(p.months)}: ${p.benefit}`));
   }
   if (rule?.explanation) rows[rows.length - 1].details.push(rule.explanation);
   // The bold primary line reads as a label, without a closing period.
   for (const r of rows) r.primary = r.primary.replace(/\.$/, '');
+  for (const r of rows) r.details = r.details.map(tidyLine);
   // First-day outcomes: the first call instruction opens with "You're in
   // luck!" (Randy, November 2026). Presentation only; the records keep their
   // wording. Never on graded, modified, guaranteed issue or decline rows.
@@ -382,9 +400,8 @@ function presentGroup(carrier, ms, planLines = {}) {
       match: type,
       because,
       info: outcome(carrier, q.info),
+      // Only the display rows go out; the stored outcome text stays server-side.
       answers: [...answerRows(carrier, 'YES', q.yes, planLines), ...answerRows(carrier, 'NO', q.no, planLines)],
-      yes,
-      no,
     };
   });
   return {
@@ -400,6 +417,6 @@ function presentGuaranteedIssue(carrier) {
   return {
     carrier: publicName(carrier),
     summary: carrier.summary ?? '',
-    schedules: Object.values(carrier.schedules),
+    schedules: Object.values(carrier.schedules).map((sch) => ({ ...sch, periods: sch.periods.map((p) => ({ ...p, label: monthsLabel(p.months) })) })),
   };
 }

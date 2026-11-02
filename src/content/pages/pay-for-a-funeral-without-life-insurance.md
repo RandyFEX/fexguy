@@ -23,7 +23,7 @@ sidebar: true
 
 <hr>
 
-<h2><strong>Cost comparison – paying out of pocket vs. life insurance</strong></h2>
+<h2><strong>Cost comparison: paying out of pocket vs. life insurance</strong></h2>
 
 <p>Paying for a funeral after death costs far more over time than spreading the cost through a small life insurance policy.</p>
 
@@ -280,10 +280,10 @@ State-regulated language trap
 <p><strong>Some require planning, but each can reduce the financial pressure on your family.</strong></p>
 
 <ol>
-<li><strong>Guaranteed Issue Whole Life</strong> – These policies accept anyone between certain ages, typically 45 to 85, with no health questions. They carry a two-year waiting period, during which the insurer only refunds premiums plus interest if death occurs. After that period ends, the full benefit becomes payable. These plans are expensive for the coverage amount but remain the simplest choice for those with significant medical issues.</li>
-<li><strong>Funeral Trusts</strong> – A funeral trust allows you to set aside funds specifically for burial or cremation costs. The money is legally protected and paid directly to the funeral provider when needed. While this guarantees the funds will be available, there’s no growth or multiplier effect, unlike life insurance.</li>
-<li><strong>Payable-on-Death (POD) Accounts</strong> – A POD account allows you to designate a trusted person as the beneficiary of a specific bank account. Upon your death, that person can access the money immediately, thereby bypassing the probate process. The downside is that most people don’t keep enough in these accounts to cover a full funeral, and any remaining funds earn minimal interest.</li>
-<li><strong>Small Coverage Strategy</strong> – Even limited health may qualify you for a smaller first-day coverage plan, such as $3,000 to $5,000. Starting small ensures at least part of the funeral is covered right away, and you can layer on additional coverage later as finances allow. An experienced broker can find policies that accept moderate health conditions, such as diabetes, high blood pressure, or a history of heart issues.<br>The key is to take action rather than do nothing. Delaying only narrows your options and raises the eventual cost.</li>
+<li><strong>Guaranteed Issue Whole Life</strong>: These policies accept anyone between certain ages, typically 45 to 85, with no health questions. They carry a two-year waiting period, during which the insurer only refunds premiums plus interest if death occurs. After that period ends, the full benefit becomes payable. These plans are expensive for the coverage amount but remain the simplest choice for those with significant medical issues.</li>
+<li><strong>Funeral Trusts</strong>: A funeral trust allows you to set aside funds specifically for burial or cremation costs. The money is legally protected and paid directly to the funeral provider when needed. While this guarantees the funds will be available, there’s no growth or multiplier effect, unlike life insurance.</li>
+<li><strong>Payable-on-Death (POD) Accounts</strong>: A POD account allows you to designate a trusted person as the beneficiary of a specific bank account. Upon your death, that person can access the money immediately, thereby bypassing the probate process. The downside is that most people don’t keep enough in these accounts to cover a full funeral, and any remaining funds earn minimal interest.</li>
+<li><strong>Small Coverage Strategy</strong>: Even limited health may qualify you for a smaller first-day coverage plan, such as $3,000 to $5,000. Starting small ensures at least part of the funeral is covered right away, and you can layer on additional coverage later as finances allow. An experienced broker can find policies that accept moderate health conditions, such as diabetes, high blood pressure, or a history of heart issues.<br>The key is to take action rather than do nothing. Delaying only narrows your options and raises the eventual cost.</li>
 </ol>
 
 <hr>
@@ -417,7 +417,7 @@ State-regulated language trap
 
 <p>Finally, make sure your loved ones know exactly who to contact. Add the insurance company’s name, policy number, and agent information to your family documents. Inform your beneficiaries of the policy’s location and the contact information for assistance. This step prevents delays during the claim process.</p>
 
-<p>You can start today with a quick phone call. Contact 888-862-9456 or visit www.FuneralFunds.com to compare first-day coverage options from top-rated companies. It’s simple, fast, and gives your family one thing they’ll never forget – peace of mind.</p>
+<p>You can start today with a quick phone call. Contact 888-862-9456 or visit www.FuneralFunds.com to compare first-day coverage options from top-rated companies. It’s simple, fast, and gives your family one thing they’ll never forget, peace of mind.</p>
 
 <hr>
 

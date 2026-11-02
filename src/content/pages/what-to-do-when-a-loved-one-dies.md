@@ -59,7 +59,7 @@ sidebar: true
 
 <h2 id="what-to-do-immediately-after-death"><strong>What to do immediately after death</strong></h2>
 
-<p><strong>#1 – Get legal certification of Death</strong></p>
+<p><strong>#1: Get legal certification of Death</strong></p>
 
 <p>When a loved one dies, have the death officially pronounced by someone in authority, such as a doctor, an emergency medical technician, nursing facility, hospice nurse, coroner, or medical examiner. This person will fill out the forms certifying death’s time, cause, and place.</p>
 
@@ -75,17 +75,17 @@ sidebar: true
 
 <p>Once the death is pronounced, you can work with the funeral director to obtain the actual death certificate.</p>
 
-<p><br><strong>#2 – Arrange for organ donation</strong>.</p>
+<p><br><strong>#2: Arrange for organ donation</strong>.</p>
 
 <p>If your loved one has in the event of my death checklist and specifically indicate organ donation. This process must be done immediately at the time of death to be able to harvest the organs as soon as possible. If your loved one died in a hospital, ask a nurse to help you make arrangements. Call the nearest hospital if your loved one passed away in a nursing home or hospice.</p>
 
-<p><br><strong>#3 – Notify close family and friends</strong>.</p>
+<p><br><strong>#3: Notify close family and friends</strong>.</p>
 
 <p>Contact immediate family members. Find contacts through an email account, personal telephone books, and social media. You can give comfort and ask for help with the important decision you must make.</p>
 
 <p>Notify close friends. Make a list and put as many people on it as you can. Ask them to contact other family members and friends. You can also contact a Minister, pastor, or priest.</p>
 
-<p><br><strong>#4 – Notify the funeral home to arrange for transportation of the body</strong>.</p>
+<p><br><strong>#4: Notify the funeral home to arrange for transportation of the body</strong>.</p>
 
 <p>Call the funeral home to arrange the transportation of the body. A mortuary can pick up the body if an autopsy is not needed. Make the arrangements as soon as your family is ready.</p>
 
@@ -95,7 +95,7 @@ sidebar: true
 
 <p><strong>Spend time researching your options when selecting a funeral home.</strong> The cost will vary from one funeral home to another, depending on the service they provide. Ask the funeral homes for pricing over the phone, which will make researching prices much easier.</p>
 
-<p><br><strong>#5 – Meet with the funeral director who will handle the funeral</strong></p>
+<p><br><strong>#5: Meet with the funeral director who will handle the funeral</strong></p>
 
 <p>Honor your loved one’s wishes by following their instructions regarding the kind of funeral they want. You can also use your family discussions to guide you on the decisions that must be made.</p>
 
@@ -108,19 +108,19 @@ sidebar: true
 <li>Where will you bury the remains?</li>
 </ul>
 
-<p><br><strong>#6 – Handle care of dependents and pets</strong></p>
+<p><br><strong>#6: Handle care of dependents and pets</strong></p>
 
 <p>Ask someone to look after your loved ones’ homes and pets. Lock the house and vehicle. Make sure to park the car in a secure and legal area. Ask someone to look after the house to prevent theft. If the house is vacant, notify the landlord, property manager, and police.</p>
 
 <p>Ask a relative or friend to keep an eye on the house, answer the phone, throw all perishable food out, collect mail, and water the plants. Arrange for pet care until you make the necessary arrangements.</p>
 
-<p><br><strong>#7 – Call the person’s employer</strong></p>
+<p><br><strong>#7: Call the person’s employer</strong></p>
 
 <p>Call your loved one’s employer if he is working. Also, request information about company benefits, including life insurance, and if there are any outstanding payments due that your loved one is entitled to.</p>
 
 <h2 id="what-to-do-within-a-few-days-after-death"><br><strong>What to do within a few days after death</strong></h2>
 
-<p><strong>#1 – Arrange for funeral and burial or cremation</strong></p>
+<p><strong>#1: Arrange for funeral and burial or cremation</strong></p>
 
 <p>Contact the funeral director and the people who will help you arrange the service. Factors to consider in arranging the funeral:</p>
 
@@ -130,81 +130,81 @@ sidebar: true
 <li>What will help the family the most</li>
 </ul>
 
-<p><br><strong>#2 – Search the person’s documents</strong></p>
+<p><br><strong>#2: Search the person’s documents</strong></p>
 
 <p>Search your loved one’s papers to find out if there was a prepaid funeral plan. Locate the will, birth certificate, Social Security information, life insurance or <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> policies, financial documents, and marriage and divorce certificates.</p>
 
-<p><br><strong>#3 – Prepare an obituary</strong></p>
+<p><br><strong>#3: Prepare an obituary</strong></p>
 
 <p>Ask the funeral director if obituary writing is part of their service. If not, you need to write one. When is the obituary published? If you publish the obituary in the newspaper, check on their rates, deadline, and guidelines for submission. Don’t include the birthday of your loved one to prevent identity theft.</p>
 
-<p><br><strong>#4 – Let people know about the service</strong></p>
+<p><br><strong>#4: Let people know about the service</strong></p>
 
 <p>If the date and time for the funeral and <a rel="noreferrer noopener" href="/finding-affordable-burial-insurance/" target="_blank">burial</a> are set, let your friends and relatives know about it. Give them the address to send flowers, sympathy cards, or donations.</p>
 
-<p><br><strong>#5 – Organize the funeral or wake</strong></p>
+<p><br><strong>#5: Organize the funeral or wake</strong></p>
 
 <p>Organize the wake according to your tradition. The wake can be held at the <a href="/burial-insurance/funeral-insurance-for-seniors/" target="_blank" rel="noreferrer noopener">funeral</a> home, church, banquet hall, or relatives’ house. Enlist the help of your relatives and friends to plan.</p>
 
 <p>If your loved one was in the military, contact the Veterans Administration. They may have burial benefits or conduct funeral services.&#160; Ask if you can get assistance with the funeral, burial plot, or other benefits. Call Veterans Affairs at 1-800-827-1000 to inquire about<a href="/burial-insurance/veterans/" target="_blank" rel="noreferrer noopener"> veteran’s</a> survivor benefits.</p>
 
-<p><br><strong>#6 – Determine if you need help or financial assistance for the funeral and burial</strong>.</p>
+<p><br><strong>#6: Determine if you need help or financial assistance for the funeral and burial</strong>.</p>
 
 <p>You can get help from different organizations, including a fraternal organization, union, or church to which your loved one belonged. Send an email or call your local group for help.</p>
 
 <h2 id="what-to-do-up-to-10-days-after-death"><br><strong>What to do up to 10 days after death</strong></h2>
 
-<p><strong>#1 – Obtain death certificates</strong></p>
+<p><strong>#1: Obtain death certificates</strong></p>
 
 <p>Obtain death certificates. Ask the funeral director to help you order death certificates from the vital statistics office in the state where the death occurred. Get multiple copies to complete future tasks. Each death certificate can cost around $10 or $20.</p>
 
-<p><br><strong>#2 – Meet with the probate attorney</strong></p>
+<p><br><strong>#2: Meet with the probate attorney</strong></p>
 
 <p>What to do when a parent dies, and you are the executor?</p>
 
 <p>Get a recommendation from family and friends to get a lawyer. Meet the probate attorney to seek legal and financial advice. If you’re the executor of the will, you and your lawyer must take the will to the probate court for admission. Inventory of all the assets is the start of the probate process.</p>
 
-<p><br><strong>#3 – Notify life insurance companies</strong></p>
+<p><br><strong>#3: Notify life insurance companies</strong></p>
 
 <p>If your loved one had life insurance or <a href="/burial-insurance/how-to-apply-for-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>, call the life insurance agent to get claim forms. You need to contact the insurance company as soon as possible to start the claim process. Provide a death certificate with the insurance policy numbers. You could take days to weeks to get the life insurance payout.</p>
 
-<p><br><strong>#4 – Notify local Social Security office</strong></p>
+<p><br><strong>#4: Notify local Social Security office</strong></p>
 
 <p>How to report a death to Medicare and Social Security?</p>
 
 <p>Notify Social Security when someone dies by calling your local office or Social Security at 800-772-1213. If your loved one is receiving benefits, ask them to stop payments and return the payment given for the month of death. Ask about applicable survivor benefits and the one-time payment of $255.</p>
 
-<p><br><strong>#5 – Notify the bank and mortgage companies</strong></p>
+<p><br><strong>#5: Notify the bank and mortgage companies</strong></p>
 
 <p>Notifying the bank of death and the mortgage companies; Take the death certificates to the bank and ask for assistance. If you have joint bank accounts, change the ownership. If your loved one has a safe deposit box and you don’t have the key, you will need a court order to open the safe deposit box.</p>
 
-<p><br><strong>#6 – Look into employment benefits</strong></p>
+<p><br><strong>#6: Look into employment benefits</strong></p>
 
 <p>If your loved one is working, contact his employer to know about benefits such as pension plans and credit union benefits. You need to present a death certificate to make each claim.</p>
 
 <p><br><strong>Accounts to cancel when a loved one dies:</strong></p>
 
-<p><strong>#7 – Cancel utility companies and postal services</strong></p>
+<p><strong>#7: Cancel utility companies and postal services</strong></p>
 
 <p>Here are some accounts to cancel when a loved one dies. Ask the utility companies and postal service to stop or forward mail. Use the forward mail option to prevent accumulating mail to the address. Check the mail about creditors, subscriptions, and other accounts you have to cancel. Changing names on utilities after death should be coordinated with the company.</p>
 
-<p><br><strong>#8 – Close credit card accounts</strong></p>
+<p><br><strong>#8: Close credit card accounts</strong></p>
 
 <p>Contact customer service on each credit card and ask them to close the account due to the death of your loved one. Give a copy of the death certificate to enable the company to have the account closed. Notify the estate executor if the agent refused to waive interest or fees because of outstanding debts.</p>
 
-<p><br><strong>#9 – Notify credit reporting agencies</strong></p>
+<p><br><strong>#9: Notify credit reporting agencies</strong></p>
 
 <p>When a loved one dies, call the credit reporting agencies such as TransUnion, Equifax, and Experian must be given a copy of the death certificate to flag your loved one’s account and avoid identity theft. After 4-6 weeks, check the account again to ensure no fraudulent accounts are opened in your loved one’s name.</p>
 
-<p><br><strong>#10 – Cancel driver’s license</strong></p>
+<p><br><strong>#10: Cancel driver’s license</strong></p>
 
 <p>Submit a copy of the death certificate to the State Department of Motor Vehicles to cancel your loved one’s driver’s license. Canceling the driver’s license will remove your loved one’s name from their records. This will prevent identity theft. Call the customer service center for instructions.</p>
 
-<p><br><strong>#11 – Cancel membership in organizations</strong></p>
+<p><br><strong>#11: Cancel membership in organizations</strong></p>
 
 <p>When a loved one dies, you need to contact professional organizations, sororities, fraternities, or other organizations where your loved one belongs to know how to cancel your membership status.</p>
 
-<p><br><strong>#12 – Notify the election board</strong></p>
+<p><br><strong>#12: Notify the election board</strong></p>
 
 <p>Lastly, notify the election board when a loved one dies by presenting a copy of the death certificate.</p>
 
@@ -259,7 +259,7 @@ sidebar: true
 <p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e"><br><strong>What not to do when someone dies?</strong></p>
 
 <ul>
-<li>Do not try to revive the person – this could be dangerous.</li>
+<li>Do not try to revive the person: this could be dangerous.</li>
 <li>Do not touch the body if you suspect foul play.</li>
 <li>Do not move the body unless it is necessary.</li>
 </ul>
@@ -426,7 +426,7 @@ August 31, 2021 at 11:58 pm
 <div class="comment-replies">
 <div class="comment" id="comment-12963">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Taylor – Sorry for your friends loss.</p>
+<p>Taylor: Sorry for your friends loss.</p>
 <div class="comment-meta">
 September 1, 2021 at 1:25 pm                    
 </div>

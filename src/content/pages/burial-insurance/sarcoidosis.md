@@ -219,9 +219,9 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>Burial insurance with sarcoidosis is easy. Several burial insurance companies are not concerned with sarcoidosis. In fact, they don’t even ask about it in their health questions. Their relaxed underwriting standard allows people with sarcoidosis to get full first-day coverage without a waiting period and at the lowest rate the company can offer.</p>
 
@@ -234,11 +234,11 @@ However, you will be eligible for a guaranteed issue burial insurance plan.</p>
 <p><strong>Sarcoidosis Complications and Life Insurance</strong></p>
 
 <ol>
-<li>Sarcoidosis in the lungs – untreated sarcoidosis in the lungs can lead to permanent scarring the lungs, which makes breathing difficult. Difficulty in breathing may require you to use supplemental oxygen. Supplementary oxygen use may affect life insurance eligibility.</li>
-<li>Sarcoidosis in the eyes – inflammation due to sarcoidosis may affect any part of the eyes. And, it can cause cataracts and glaucoma, which can eventually lead to blindness. Blindness and the need for help with activities of daily living may affect life insurance eligibility.</li>
-<li>Sarcoidosis in the kidneys – inflammation due to sarcoidosis may affect how the body handles calcium. This condition can lead to <a href="/burial-insurance/kidney-disease/" target="_blank" rel="noreferrer noopener">kidney failure</a>. Kidney failure will affect your life insurance eligibility.</li>
-<li>Sarcoidosis in the heart – granulomas in the heart can cause irregular heart rhythms, arrhythmias, and other heart problems. Some cases can be severe, which may lead to premature death. Heart problems may affect your life insurance eligibility.</li>
-<li>Sarcoidosis in the nervous system – some people will develop problems in their central nervous system due to sarcoidosis. Granulomas formed in the brain and the spinal cord can cause paralysis. <a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a>, which will require you to need hospice care or help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>, will affect your life insurance eligibility.</li>
+<li>Sarcoidosis in the lungs: untreated sarcoidosis in the lungs can lead to permanent scarring the lungs, which makes breathing difficult. Difficulty in breathing may require you to use supplemental oxygen. Supplementary oxygen use may affect life insurance eligibility.</li>
+<li>Sarcoidosis in the eyes: inflammation due to sarcoidosis may affect any part of the eyes. And, it can cause cataracts and glaucoma, which can eventually lead to blindness. Blindness and the need for help with activities of daily living may affect life insurance eligibility.</li>
+<li>Sarcoidosis in the kidneys: inflammation due to sarcoidosis may affect how the body handles calcium. This condition can lead to <a href="/burial-insurance/kidney-disease/" target="_blank" rel="noreferrer noopener">kidney failure</a>. Kidney failure will affect your life insurance eligibility.</li>
+<li>Sarcoidosis in the heart: granulomas in the heart can cause irregular heart rhythms, arrhythmias, and other heart problems. Some cases can be severe, which may lead to premature death. Heart problems may affect your life insurance eligibility.</li>
+<li>Sarcoidosis in the nervous system: some people will develop problems in their central nervous system due to sarcoidosis. Granulomas formed in the brain and the spinal cord can cause paralysis. <a href="/burial-insurance/paralysis-paralyzed/" target="_blank" rel="noreferrer noopener">Paralysis</a>, which will require you to need hospice care or help with <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a>, will affect your life insurance eligibility.</li>
 </ol>
 
 <h2 id="determining-your-insurance-coverage-needs"><br><strong>How much insurance do I need if I have sarcoidosis?</strong></h2>
@@ -341,14 +341,14 @@ sarcoidosis?</li>
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="common-uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with sarcoidosis</strong></h2>

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Baltimore Life Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Baltimore Life Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Baltimore Life offers first-day coverage, but it’s often more expensive<br>• Many applicants get pushed into graded plans with reduced early benefits<br>• Tobacco users can face significantly higher monthly premiums<br>• Coverage options are limited compared to top-rated competitors<br>• You can find better pricing with other companies for similar coverage</p>
 
@@ -58,17 +58,17 @@ sidebar: true
 
 <h2 id="pros-of-baltimore-life-burial-insurance"><strong>Pros of Baltimore Life burial insurance</strong></h2>
 
-<p><strong>Average pricing –</strong> Silver Guard 1 is comparable to other A-rated companies</p>
+<p><strong>Average pricing:</strong> Silver Guard 1 is comparable to other A-rated companies</p>
 
-<p><strong>Relaxed underwriting</strong> – on circulatory issues</p>
+<p><strong>Relaxed underwriting</strong>: on circulatory issues</p>
 
-<p><strong>Cash draft benefit rider</strong> – allow beneficiaries to advance a $1,000 death benefit while the claim is pending.</p>
+<p><strong>Cash draft benefit rider</strong>: allow beneficiaries to advance a $1,000 death benefit while the claim is pending.</p>
 
 <h2 id="cons-of-baltimore-life-burial-insurance"><strong>Cons of Baltimore Life burial insurance</strong></h2>
 
-<p><strong>Higher premium on tobacco use –</strong> if you smoke tobacco, chewed tobacco, or use nicotine expect a higher premium.</p>
+<p><strong>Higher premium on tobacco use:</strong> if you smoke tobacco, chewed tobacco, or use nicotine expect a higher premium.</p>
 
-<p><strong>Graded benefit</strong> – many health issues will only qualify for the graded plan.</p>
+<p><strong>Graded benefit</strong>: many health issues will only qualify for the graded plan.</p>
 
 <h2 id="baltimore-life-burial-insurance-product"><br><strong>Baltimore Life burial insurance products</strong></h2>
 
@@ -111,7 +111,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><br><strong>SILVER GUARD 1 – Guaranteed Level Death Benefit</strong></p>
+<p><br><strong>SILVER GUARD 1: Guaranteed Level Death Benefit</strong></p>
 
 <p><strong>Product Features:</strong></p>
 
@@ -121,18 +121,18 @@ sidebar: true
 <p><strong>Face Amount
 Available:</strong></p>
 
-<p>Ages 50–75 – $25,000 maximum</p>
+<p>Ages 50 to 75 to $25,000 maximum</p>
 
-<p>Ages 76–80 – $15,000 maximum</p>
+<p>Ages 76 to 80 to $15,000 maximum</p>
 
 <ul>
-<li><strong>Guaranteed level premium</strong> – premium will never increase</li>
-<li><strong>Level death benefit</strong> – coverage will never decrease</li>
+<li><strong>Guaranteed level premium</strong>: premium will never increase</li>
+<li><strong>Level death benefit</strong>: coverage will never decrease</li>
 <li><strong>Availability</strong>: all states except New York and Washington</li>
-<li><strong>Available riders</strong> – accidental death benefit rider at minimal cost</li>
+<li><strong>Available riders</strong>: accidental death benefit rider at minimal cost</li>
 </ul>
 
-<p><strong>Accidental Death Benefit Rider – </strong>this rider doubles the payable death benefit amount if the cause of death is accidental. This rider is available to Life Pay policyholders who are 50 to 65 years old and only lasts until you are 70. After 70, this rider is no longer applicable. </p>
+<p><strong>Accidental Death Benefit Rider: </strong>this rider doubles the payable death benefit amount if the cause of death is accidental. This rider is available to Life Pay policyholders who are 50 to 65 years old and only lasts until you are 70. After 70, this rider is no longer applicable. </p>
 
 <p>You can choose either lifetime payments or 10 Pay. The 10 Pay option allows you to pay for ten years, after which the policy becomes paid up, you stop paying, but you get lifetime coverage.</p>
 
@@ -158,7 +158,7 @@ Accepted</strong></p>
 
 <p>This plan also includes a $1,000 cash draft benefit that allows the beneficiary to withdraw up to $1,000 of the death benefit immediately after the insured’s death. This can be done as long as the policy is in force while processing the claim. It will be deducted from the total amount after the company completes the claims process.<br></p>
 
-<p><strong>SILVER GUARD II – Guaranteed Graded Death Benefit</strong></p>
+<p><strong>SILVER GUARD II: Guaranteed Graded Death Benefit</strong></p>
 
 <p><strong>Face Amount Available</strong>:
 $2,500 to $15,000</p>
@@ -166,9 +166,9 @@ $2,500 to $15,000</p>
 <p><strong>Benefit Schedule:</strong></p>
 
 <ul>
-<li>1st year – 30% of the face amount</li>
-<li>2nd year – 70% of the face amount</li>
-<li>3rd year – 100% of the face amount</li>
+<li>1st year: 30% of the face amount</li>
+<li>2nd year: 70% of the face amount</li>
+<li>3rd year: 100% of the face amount</li>
 </ul>
 
 <p>The company pays 100% of the face amount in all years if
@@ -209,7 +209,7 @@ Loan (APL) Option</strong></p>
 
 <p><br><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-does-baltimore-life-make-sense"><br><strong>When does Baltimore Life burial insurance make the most sense?</strong></h2>
 

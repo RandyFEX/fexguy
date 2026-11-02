@@ -63,7 +63,7 @@ sidebar: true
 <li>My <a href="/licenses/">“Licenses Page”</a></li>
 </ul>
 
-<p>If you’re just window shopping, go ahead and give me a ring at (888) 862-9456. No pressure, no sales pitch – just a friendly chat about your options that only takes a few minutes to see if you qualify.</p>
+<p>If you’re just window shopping, go ahead and give me a ring at (888) 862-9456. No pressure, no sales pitch, just a friendly chat about your options that only takes a few minutes to see if you qualify.</p>
 
 <p>If you decide you’re not interested, just let me know. I promise I won’t take it personally!</p>
 

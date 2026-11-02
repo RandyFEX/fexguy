@@ -80,7 +80,7 @@ await check('COPD: grouped results, CICA Life Insurance named, no internal field
   assert.ok(pages.every((p) => p.counted === false || p === r.body), 'paging is free');
   const cica = pages.flatMap(shown).filter((q) => q.carrier === 'CICA Life Insurance');
   assert.ok(cica.some((q) => q.variant === 'D-1') && cica.some((q) => q.variant === 'D-2'), 'D-1 and D-2');
-  assert.ok(cica.every((q) => /age, state and product eligibility/.test(q.yes.explanation)));
+  assert.ok(cica.every((q) => q.answers.some((a) => a.answer === 'YES' && a.details.some((d) => /age, state and product eligibility/.test(d)))));
   assert.ok(pages.some((p) => (p.guaranteedIssue ?? []).some((g) => /Gerber/.test(g.carrier))), 'Gerber card');
 });
 
@@ -124,8 +124,9 @@ await check('Aflac Part A 3A outcome names Aflac', async () => {
   const pages = [r.body, ...(await Promise.all(Array.from({ length: r.body.totalPages - 1 }, (_, i) => b({ q: 'oxygen', page: i + 2 }))).then((x) => x.map((y) => y.body)))];
   const q = pages.flatMap(shown).find((x) => x.carrier === 'Aflac' && x.number === '3A');
   assert.ok(q, 'Aflac 3A shown');
-  assert.match(q.yes.explanation, /AFLAC/);
-  assert.doesNotMatch(q.yes.explanation, /Aetna/);
+  const yes = q.answers.filter((a) => a.answer === 'YES').map((a) => [a.primary, ...a.details].join(' ')).join(' ');
+  assert.match(yes, /AFLAC/);
+  assert.doesNotMatch(yes, /Aetna/);
 });
 
 console.log(results.join('\n'));

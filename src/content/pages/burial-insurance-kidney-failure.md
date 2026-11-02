@@ -124,7 +124,7 @@ sidebar: true
 
 <h2 id="do-i-need-medical-exam"><strong>Do I need a medical exam for burial insurance with kidney failure?</strong></h2>
 
-<p>Even with kidney failure, getting burial insurance is possible! Forget needles and white coats – you won’t need a medical exam. The application is simple, just answer some basic health questions. No need to dig up old records or provide samples.</p>
+<p>Even with kidney failure, getting burial insurance is possible! Forget needles and white coats, you won’t need a medical exam. The application is simple, just answer some basic health questions. No need to dig up old records or provide samples.</p>
 
 <p>The best part? Approval can be super quick, sometimes just minutes!</p>
 
@@ -183,9 +183,9 @@ sidebar: true
 
 <h2 id="rejected-for-burial-insurance"><strong>What if my application was rejected because of kidney failure?</strong></h2>
 
-<p>Getting rejected for life insurance because of kidney problems can be frustrating. But don’t worry – there are still options! We specialize in helping clients with kidney issues find more understanding life insurance companies.</p>
+<p>Getting rejected for life insurance because of kidney problems can be frustrating. But don’t worry, there are still options! We specialize in helping clients with kidney issues find more understanding life insurance companies.</p>
 
-<p>We work with a variety of insurers, so even if you’ve been denied before, there’s a good chance we can find a plan that fits your needs. Don’t let a past rejection discourage you – we can help you qualify for the life insurance coverage you deserve.</p>
+<p>We work with a variety of insurers, so even if you’ve been denied before, there’s a good chance we can find a plan that fits your needs. Don’t let a past rejection discourage you, we can help you qualify for the life insurance coverage you deserve.</p>
 
 <h2 id="information-we-need"><strong>Information we need to help you with this insurance</strong></h2>
 
@@ -212,21 +212,21 @@ sidebar: true
 <p><strong>For example, here is pricing for a 60-year-old female with kidney failure undergoing dialysis.</strong></p>
 
 <ol>
-<li><strong>Level Coverage - Certain Companies (Recommended) – 60-year-old female</strong>
+<li><strong>Level Coverage - Certain Companies (Recommended): 60-year-old female</strong>
 <ul>
 <li><strong>FIRST-DAY COVERAGE</strong></li>
 <li><strong>Coverage:</strong> $10,000</li>
 <li><strong>Premium:</strong> $47.25</li>
 </ul>
 </li>
-<li><strong>Gerber Life – 60-year-old female</strong>
+<li><strong>Gerber Life: 60-year-old female</strong>
 <ul>
 <li>2-year Waiting period</li>
 <li><strong>Coverage:</strong> $10,000</li>
 <li><strong>Premium: </strong>$51.06</li>
 </ul>
 </li>
-<li><strong>Lincoln Heritage (Avoid) – 60-year-old female</strong>
+<li><strong>Lincoln Heritage (Avoid): 60-year-old female</strong>
 <ul>
 <li>2-year Waiting period&#160;</li>
 <li><strong>Coverage:</strong> $10,000</li>

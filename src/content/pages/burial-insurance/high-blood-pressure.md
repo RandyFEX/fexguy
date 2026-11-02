@@ -85,17 +85,17 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>Types of burial insurance for people with uncontrolled high blood pressure?</strong></h2>
 
-<p><strong>First-Day Coverage</strong> – This is a no-medical exam life insurance policy. You only need to answer a few health questions. The first-day coverage plan has immediate coverage and no waiting period.&#160;</p>
+<p><strong>First-Day Coverage</strong>: This is a no-medical exam life insurance policy. You only need to answer a few health questions. The first-day coverage plan has immediate coverage and no waiting period.&#160;</p>
 
-<p><strong>Guaranteed Issue</strong> – This is a no medical exam and no health questions insurance policy. Guaranteed issue life insurance policies are designed for people with significant health issues who may not qualify for traditional term life insurance or whole life insurance.&#160;</p>
+<p><strong>Guaranteed Issue</strong>: This is a no medical exam and no health questions insurance policy. Guaranteed issue life insurance policies are designed for people with significant health issues who may not qualify for traditional term life insurance or whole life insurance.&#160;</p>
 
 <p>Guaranteed issue whole life insurance comes with a two-year waiting period, and the premiums are higher than first-day coverage insurance. During this waiting period, if you were to pass away, you would not get the full death benefit. The policy would only pay out the premiums you have paid plus 7-10% interest (depending on the insurance carrier.</p>
 
 <h2 id="best-insurance-option"><strong>What is my best insurance option with uncontrolled high blood pressure?</strong></h2>
 
-<p><strong>CONTROLLED AND UNCONTROLLED HIGH BLOOD PRESSURE (with no hospitalization) –&#160;</strong>First-day coverage is your best option if you have high blood pressure problems. First-day coverage (level benefit plan) and no waiting period are available for people taking medication to control their blood pressure. Several medications, readings that stay high, and related heart, kidney, or stroke history can complicate underwriting, so the company you apply to matters.</p>
+<p><strong>CONTROLLED AND UNCONTROLLED HIGH BLOOD PRESSURE (with no hospitalization).&#160;</strong>First-day coverage is your best option if you have high blood pressure problems. First-day coverage (level benefit plan) and no waiting period are available for people taking medication to control their blood pressure. Several medications, readings that stay high, and related heart, kidney, or stroke history can complicate underwriting, so the company you apply to matters.</p>
 
-<p><strong>UNCONTROLLED HIGH BLOOD PRESSURE WITH 2 OR MORE HOSPITALIZATION IN THE LAST 2 YEARS – </strong>If you have had two or more hospitalizations in the last two years, your best option is often guaranteed acceptance life insurance.</p>
+<p><strong>UNCONTROLLED HIGH BLOOD PRESSURE WITH 2 OR MORE HOSPITALIZATION IN THE LAST 2 YEARS. </strong>If you have had two or more hospitalizations in the last two years, your best option is often guaranteed acceptance life insurance.</p>
 
 <h2 id="do-i-need-a-medical-exam"><strong>Do I need a medical exam?</strong></h2>
 
@@ -188,9 +188,9 @@ sidebar: true
 <h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with high blood pressure</strong></h2>
 
 <ol>
-<li><strong>Work with an Independent Insurance Agent –&#160;</strong>Ask for assistance from independent insurance agents specializing in underwriting for high blood pressure. An independent insurance agent can help you understand your options and choose the best burial insurance plan that best suits your needs and budget.</li>
-<li><strong>Complete the Application Honestly</strong> – When filling out the life insurance health questionnaire, be truthful about your stroke and other health issues. You need to provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
-<li><strong>Review and Confirm Policy Details</strong>&#160;– Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
+<li><strong>Work with an Independent Insurance Agent:&#160;</strong>Ask for assistance from independent insurance agents specializing in underwriting for high blood pressure. An independent insurance agent can help you understand your options and choose the best burial insurance plan that best suits your needs and budget.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the life insurance health questionnaire, be truthful about your stroke and other health issues. You need to provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
+<li><strong>Review and Confirm Policy Details</strong>: Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions</strong></h2>

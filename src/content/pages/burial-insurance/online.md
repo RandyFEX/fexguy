@@ -181,7 +181,7 @@ receive the full death benefit payout if you pass away for any reason.</p>
 <li>You’ve been diagnosed with a terminal illness like cancer or kidney failure.</li>
 <li>You have impaired mobility, and you need a wheelchair.</li>
 <li>You have cognitive impairments like dementia or Alzheimer’s disease.</li>
-<li>You need assistance with ADL – activities of daily living</li>
+<li>You need assistance with ADL: activities of daily living</li>
 <li>You need oxygen because of COPD or any lung disease.</li>
 </ul>
 

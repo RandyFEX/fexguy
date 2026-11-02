@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance – A Complete Final Expense Life Insurance Guide</h1>
+<h1>Burial Insurance: A Complete Final Expense Life Insurance Guide</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -208,7 +208,7 @@ sidebar: true
 
 <p>Burial requires cemetery charges, which are almost always billed separately from the funeral home. These include the plot, the professional “opening and closing” of the grave, and the mandatory burial vault or grave liner. In 2026, these charges can easily add <strong>$3,000 to $5,000</strong> to your total.</p>
 
-<figure class="table-wrap"><table><thead><tr><td><strong>Burial Expense Item</strong></td><td><strong>Estimated 2026 Cost</strong></td></tr></thead><tbody><tr><td><strong>Cemetery Plot</strong></td><td>$1,000 – $4,500</td></tr><tr><td><strong>Opening and Closing Labor</strong></td><td>$500 – $2,500</td></tr><tr><td><strong>Burial Vault / Liner</strong></td><td>$900 – $1,500</td></tr><tr><td><strong>Flat Grave Marker</strong></td><td>$1,000 – $2,000</td></tr></tbody></table></figure>
+<figure class="table-wrap"><table><thead><tr><td><strong>Burial Expense Item</strong></td><td><strong>Estimated 2026 Cost</strong></td></tr></thead><tbody><tr><td><strong>Cemetery Plot</strong></td><td>$1,000 to $4,500</td></tr><tr><td><strong>Opening and Closing Labor</strong></td><td>$500 to $2,500</td></tr><tr><td><strong>Burial Vault / Liner</strong></td><td>$900 to $1,500</td></tr><tr><td><strong>Flat Grave Marker</strong></td><td>$1,000 to $2,000</td></tr></tbody></table></figure>
 
 <h3><strong>Cremation: level of service drives the price</strong></h3>
 
@@ -222,7 +222,7 @@ sidebar: true
 <li><strong>Obituaries:</strong> A full notice in a local newspaper can cost $400 or more.</li>
 <li><strong>Death Certificates:</strong> Essential for legal matters, these cost about $20 per copy; most families need 10 or more.</li>
 <li><strong>Transportation:</strong> Mileage fees for a hearse or service van typically range from $350 to $500.</li>
-<li><strong>Catering/Reception:</strong> A simple post-service meal for 50 people can add $500 – $1,000.</li>
+<li><strong>Catering/Reception:</strong> A simple post-service meal for 50 people can add $500 to $1,000.</li>
 </ul>
 
 <h3><strong>Choosing your target number for burial, cremation, or final expenses</strong></h3>

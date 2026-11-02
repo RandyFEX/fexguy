@@ -44,7 +44,7 @@ sidebar: true
 <li><a href="#trustage-life-insurance-products">Trustage Life Insurance Products</a></li>
 <li><a href="#key-features-of-trustage-term-life-insurance">Key Features Of Trustage Term Life Insurance</a></li>
 <li><a href="#pros-&-cons-of-trustage-term-life-insurance">Pros &amp; Cons Of Trustage Term Life Insurance</a></li>
-<li><a href="#traditional-term-life-how-it-works">Traditional Term Life – How It Works</a></li>
+<li><a href="#traditional-term-life-how-it-works">Traditional Term Life: How It Works</a></li>
 </ul>
 </td>
 <td>
@@ -132,7 +132,7 @@ sidebar: true
 <li>Rates appear to be expensive compared to other companies.</li>
 </ul>
 
-<h2 id="traditional-term-life-how-it-works"><br><strong>Traditional term life – how it works</strong></h2>
+<h2 id="traditional-term-life-how-it-works"><br><strong>Traditional term life: how it works</strong></h2>
 
 <p>Term life insurance is simple and affordable and protects for a specific period, typically 10 to 30 years. This type of insurance policy endorsed by Dave Ramsey and other financial gurus. Some insurance companies offer level term life insurance where the premiums remain fixed for the duration of the policy.</p>
 
@@ -351,13 +351,13 @@ premium factor for death benefits of $101,000 through $300,000.”</p>
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
 <h3 class="as-h5">Colonial Penn two year wait</h3>
 </a></div>

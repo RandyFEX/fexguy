@@ -44,12 +44,12 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with multiple sclerosis they may approve.</p>
 
 <ul>
-<li><strong>Aetna Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
-<li><strong>Aflac Standard Level </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for multiple sclerosis, Parkinson’s disease, or required the use of a walker, wheelchair, or electric scooter due to chronic illness or disease?</li>
-<li><strong>Mutual of Omaha Level </strong>– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
+<li><strong>Aflac Standard Level </strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for multiple sclerosis, Parkinson’s disease, or required the use of a walker, wheelchair, or electric scooter due to chronic illness or disease?</li>
+<li><strong>Mutual of Omaha Level </strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Multiple sclerosis underwriting basics</h3>
@@ -89,16 +89,16 @@ sidebar: true
 <p>Multiple sclerosis causes immune-mediated damage to the central nervous system, disrupting nerve signal transmission and leading to physical, sensory, and cognitive impairments that can affect underwriting decisions and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Mobility impairment</strong> – Muscle weakness, spasticity, and poor coordination limit walking and physical endurance.</li>
-<li><strong>Chronic fatigue</strong> – Neurological fatigue reduces stamina and consistency with daily activities and work.</li>
-<li><strong>Sensory disturbances</strong> – Numbness, tingling, and pain interfere with balance and fine motor tasks.</li>
-<li><strong>Vision problems</strong> – Optic neuritis and blurred vision affect reading, driving, and safety.</li>
-<li><strong>Cognitive impairment</strong> – Slowed processing, memory issues, and attention problems impact decision-making.</li>
-<li><strong>Bladder and bowel dysfunction</strong> – Urgency, incontinence, and constipation disrupt daily routines.</li>
-<li><strong>Spasticity and muscle stiffness</strong> – Muscle tightness causes pain and limits range of motion.</li>
-<li><strong>Depression and anxiety</strong> – Mood disorders are common due to neurological changes and disease uncertainty.</li>
-<li><strong>Heat sensitivity</strong> – Elevated temperature worsens symptoms and reduces functional capacity.</li>
-<li><strong>Progressive disability</strong> – Accumulating nerve damage increases long-term dependence and care needs.</li>
+<li><strong>Mobility impairment</strong>: Muscle weakness, spasticity, and poor coordination limit walking and physical endurance.</li>
+<li><strong>Chronic fatigue</strong>: Neurological fatigue reduces stamina and consistency with daily activities and work.</li>
+<li><strong>Sensory disturbances</strong>: Numbness, tingling, and pain interfere with balance and fine motor tasks.</li>
+<li><strong>Vision problems</strong>: Optic neuritis and blurred vision affect reading, driving, and safety.</li>
+<li><strong>Cognitive impairment</strong>: Slowed processing, memory issues, and attention problems impact decision-making.</li>
+<li><strong>Bladder and bowel dysfunction</strong>: Urgency, incontinence, and constipation disrupt daily routines.</li>
+<li><strong>Spasticity and muscle stiffness</strong>: Muscle tightness causes pain and limits range of motion.</li>
+<li><strong>Depression and anxiety</strong>: Mood disorders are common due to neurological changes and disease uncertainty.</li>
+<li><strong>Heat sensitivity</strong>: Elevated temperature worsens symptoms and reduces functional capacity.</li>
+<li><strong>Progressive disability</strong>: Accumulating nerve damage increases long-term dependence and care needs.</li>
 </ul>
 
 <h2>Understanding multiple sclerosis policy types</h2>
@@ -115,7 +115,7 @@ sidebar: true
 
 <p>Insurers use age and gender as primary factors in determining premiums, as both directly impact statistical life expectancy. Rates vary by these markers because women generally have a longer life expectancy than men, allowing carriers to offer them lower monthly costs. This is just the “math of the heart” at work: women get a better deal because they stick around longer. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Aflac standard life insurance rates age 50–80</h3>
+<h3>Aflac standard life insurance rates age 50 to 80</h3>
 
 <table>
 <thead>

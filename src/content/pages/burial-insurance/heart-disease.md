@@ -53,7 +53,7 @@ sidebar: true
 
 <h2 id="what-is-heart-disease"><strong>What is heart disease?</strong></h2>
 
-<p>Heart disease isn’t just one thing; it’s a whole party of conditions crashing your heart. The star of the show? Coronary artery disease (CAD). It’s when your arteries get all gunked up with plaque – think fatty deposits clogging up the works. This narrows those arteries and slows down the blood flow to your heart.</p>
+<p>Heart disease isn’t just one thing; it’s a whole party of conditions crashing your heart. The star of the show? Coronary artery disease (CAD). It’s when your arteries get all gunked up with plaque, think fatty deposits clogging up the works. This narrows those arteries and slows down the blood flow to your heart.</p>
 
 <p>When blood flow gets choked off, say hello to chest pain (angina), shortness of breath, and other unpleasant surprises. And if things really go south with a complete blockage, that’s when a heart attack barges in, with part of your heart muscle getting starved of oxygen and calling it quits.</p>
 
@@ -66,13 +66,13 @@ sidebar: true
 <li>Congenital heart defects (birth defects of the heart)</li>
 </ul>
 
-<p>Heart disease isn’t just a big deal; it’s the leading cause of death for both men and women in the US. The good news? You can often dodge or manage it with some lifestyle tweaks – like eating right, breaking a sweat regularly, and keeping that waistline in check.</p>
+<p>Heart disease isn’t just a big deal; it’s the leading cause of death for both men and women in the US. The good news? You can often dodge or manage it with some lifestyle tweaks, like eating right, breaking a sweat regularly, and keeping that waistline in check.</p>
 
 <h2 id="burial-insurance-availability"><strong>What are the types of burial insurance available to people with heart disease?</strong></h2>
 
-<p><strong>First-day Coverage Plan</strong> – This one’s the VIP treatment of life insurance policies. You get immediate coverage with no waiting period, and the best part? No medical exam required. Just answer a few health questions, and you’re good to go.</p>
+<p><strong>First-day Coverage Plan</strong>: This one’s the VIP treatment of life insurance policies. You get immediate coverage with no waiting period, and the best part? No medical exam required. Just answer a few health questions, and you’re good to go.</p>
 
-<p><strong>Guaranteed Issue Whole Life Insurance</strong> – No medical exams, no health questions, no worries! This policy takes you in, no matter what shape your health is in. It’s perfect for those who can’t catch a break with traditional term or whole life insurance due to serious health issues.</p>
+<p><strong>Guaranteed Issue Whole Life Insurance</strong>: No medical exams, no health questions, no worries! This policy takes you in, no matter what shape your health is in. It’s perfect for those who can’t catch a break with traditional term or whole life insurance due to serious health issues.</p>
 
 <p>But here’s the catch with guaranteed issue whole life insurance: there’s a mandatory two-year waiting period. If you happen to kick the bucket during this time, the insurance company only pays back the premiums you’ve shelled out, plus 7-10% interest (depending on the company). So, it’s not all sunshine and rainbows, but it’s still a solid option!</p>
 
@@ -105,23 +105,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage</td>
+<td>One insurance company: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -138,23 +138,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>One insurance company – 1st-Day Coverage </td>
+<td>One insurance company: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ sidebar: true
 
 <p>Nope, no medical exams needed! Just answer a few basic health questions.</p>
 
-<p>The application process is a breeze – no need to hunt down your medical records or send in any blood or urine samples.</p>
+<p>The application process is a breeze: no need to hunt down your medical records or send in any blood or urine samples.</p>
 
 <p>With first-day coverage, you’ll often get the green light from the insurance company in minutes!</p>
 
@@ -172,9 +172,9 @@ sidebar: true
 
 <p><strong>Insurance companies have two ways to find out about you about your health</strong>:</p>
 
-<p><strong>FIRST</strong>&#160;– You’ll be hit with a series of health questions.</p>
+<p><strong>FIRST</strong>: You’ll be hit with a series of health questions.</p>
 
-<p><strong>SECOND</strong>&#160;– They’ll snoop through your prescription history to check out your overall health.</p>
+<p><strong>SECOND</strong>: They’ll snoop through your prescription history to check out your overall health.</p>
 
 <p><br><strong>HEALTH QUESTIONS</strong></p>
 
@@ -205,7 +205,7 @@ sidebar: true
 
 <p>Did you get turned down before because of heart disease? No sweat. We’ll shop around with multiple life insurance companies that accept applicants with heart disease to get you that first-day coverage.</p>
 
-<p>While guaranteed acceptance life insurance isn’t our top pick, it’s there for you – no medical exam, no health questions, and you’re in, no matter your health.</p>
+<p>While guaranteed acceptance life insurance isn’t our top pick, it’s there for you, no medical exam, no health questions, and you’re in, no matter your health.</p>
 
 <h2 id="required-information"><strong>Information we need if you have heart disease</strong></h2>
 
@@ -230,9 +230,9 @@ sidebar: true
 <h2 id="application-process"><strong>How to apply for burial insurance with heart disease</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Get advice from an independent insurance agent fom Funeral Funds who knows the ins and outs of underwriting for heart disease. They’ll help you explore your options, compare quotes, and pick the perfect burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – When filling out your life insurance application, spill the truth about your heart disease. Give accurate details about your health, treatments, and any lifestyle changes you’ve made.</li>
-<li><strong>Review and Confirm Policy Details</strong> – Before you sign on the dotted line, make sure you’ve reviewed the policy terms and that the coverage fits your needs and budget perfectly.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Get advice from an independent insurance agent fom Funeral Funds who knows the ins and outs of underwriting for heart disease. They’ll help you explore your options, compare quotes, and pick the perfect burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out your life insurance application, spill the truth about your heart disease. Give accurate details about your health, treatments, and any lifestyle changes you’ve made.</li>
+<li><strong>Review and Confirm Policy Details</strong>: Before you sign on the dotted line, make sure you’ve reviewed the policy terms and that the coverage fits your needs and budget perfectly.</li>
 </ol>
 
 <h2 id="faq">Frequently asked questions</h2>
@@ -243,7 +243,7 @@ sidebar: true
 
 <p><strong><br>Can I get life insurance if I have had a heart attack?</strong></p>
 
-<p>Yes, you’ve survived a heart attack – you’re a survivor! Plenty of insurers will want to insure you.</p>
+<p>Yes, you’ve survived a heart attack: you’re a survivor! Plenty of insurers will want to insure you.</p>
 
 <p><strong><br>Can I get life insurance if I have had open heart surgery?</strong></p>
 

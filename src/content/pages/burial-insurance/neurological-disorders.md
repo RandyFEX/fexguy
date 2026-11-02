@@ -112,7 +112,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>
@@ -256,7 +256,7 @@ sidebar: true
 
 <h3>Does a stroke history disqualify me from burial insurance?</h3>
 
-<p>A history of stroke or TIA (mini-stroke) does not disqualify you from obtaining a burial insurance policy. Most carriers use a “look-back” period – typically 12 to 24 months – to determine your eligibility for the best rates and immediate coverage. If your last stroke occurred more than two years ago and you are not currently on blood thinners or in a nursing facility, you can often qualify for a “Level” plan that pays the full benefit from day one.</p>
+<p>A history of stroke or TIA (mini-stroke) does not disqualify you from obtaining a burial insurance policy. Most carriers use a “look-back” period, typically 12 to 24 months, to determine your eligibility for the best rates and immediate coverage. If your last stroke occurred more than two years ago and you are not currently on blood thinners or in a nursing facility, you can often qualify for a “Level” plan that pays the full benefit from day one.</p>
 
 <h3>Can I get first-day burial insurance coverage with Parkinson’s disease?</h3>
 
@@ -280,7 +280,7 @@ sidebar: true
 
 <h3>What neurological conditions trigger a mandatory waiting period?</h3>
 
-<p>Neurological conditions that involve cognitive decline or severe physical disability – such as late-stage Parkinson’s, advanced MS, or any form of dementia – usually trigger a mandatory waiting period. Additionally, if your condition requires you to live in a skilled nursing facility or use a wheelchair for mobility, insurers will categorize you as high-risk. In these cases, the policy will only pay the full benefit after the first 24 months of coverage have passed.</p>
+<p>Neurological conditions that involve cognitive decline or severe physical disability, such as late-stage Parkinson’s, advanced MS, or any form of dementia, usually trigger a mandatory waiting period. Additionally, if your condition requires you to live in a skilled nursing facility or use a wheelchair for mobility, insurers will categorize you as high-risk. In these cases, the policy will only pay the full benefit after the first 24 months of coverage have passed.</p>
 
 <h3>Can I get burial insurance after a traumatic brain injury?</h3>
 

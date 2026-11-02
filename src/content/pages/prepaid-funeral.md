@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Prepaid Funeral – Pros and Cons</h1>
+<h1>Prepaid Funeral: Pros and Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -213,7 +213,7 @@ sidebar: true
 
 <p><br><strong>Are prepaid funeral plans protected?</strong></p>
 
-<p>No. The FTC – Federal Trade Commission has no laws regulating prepaid funeral plans, so you do not get the same protections from fraud and abuse as you would from an insurance policy.</p>
+<p>No. The FTC: Federal Trade Commission has no laws regulating prepaid funeral plans, so you do not get the same protections from fraud and abuse as you would from an insurance policy.</p>
 
 <p><br><strong>How do I find out the price of a prepaid funeral plan?</strong></p>
 
@@ -312,7 +312,7 @@ sidebar: true
 
 <p><br><strong>Can I get out of my prepaid burial plan if I change my mind?</strong></p>
 
-<p>No. It is a legally binding contract and can only be changed in certain circumstances such as death, divorce, bankruptcy, or a case where the Federal Trade Commission – Federal Trade Commission rules that your contract is unfair or deceptive.</p>
+<p>No. It is a legally binding contract and can only be changed in certain circumstances such as death, divorce, bankruptcy, or a case where the Federal Trade Commission. Federal Trade Commission rules that your contract is unfair or deceptive.</p>
 
 <p><br><strong>Do I have to pay upfront for pre-need funeral insurance?</strong></p>
 

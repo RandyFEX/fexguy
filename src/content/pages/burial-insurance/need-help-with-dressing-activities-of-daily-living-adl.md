@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance if You Need Help with Dressing [Activities of Daily Living – ADL’s]</h1>
+<h1>Burial Insurance if You Need Help with Dressing [Activities of Daily Living. ADL’s]</h1>
 
 <p><strong>Here’s the Bottom Line:<br>• </strong>Needing help with dressing signals a serious health risk to insurers<br>• Companies will limit you to 2-year waiting period policies<br>• Current ADL limitations lead to guaranteed issue only<br>• Coverage amounts are smaller and cost much more monthly<br>• Applying for better plans will usually result in denial</p>
 
@@ -74,11 +74,11 @@ sidebar: true
 
 <p id="REQUIREMENTS-TO-QUALIFY-FOR-GUARANTEED-ISSUE-BURIAL-INSURANCE"><br><strong>REQUIREMENTS TO QUALIFY FOR GUARANTEED ISSUE BURIAL INSURANCE</strong></p>
 
-<p><strong>#1 –&#160;AGE REQUIREMENT –&#160;</strong>Every final expense company has its own age availability, but most guaranteed issue burial insurance companies accept applicants who are 50 to 85 years old.</p>
+<p><strong>#1:&#160;AGE REQUIREMENT:&#160;</strong>Every final expense company has its own age availability, but most guaranteed issue burial insurance companies accept applicants who are 50 to 85 years old.</p>
 
-<p><strong>#2 – STATE AVAILABILITY –&#160;</strong>Not every insurance company offers its insurance products in every state. Make sure the company has a guaranteed acceptance life insurance policy available in your state before applying.</p>
+<p><strong>#2: STATE AVAILABILITY:&#160;</strong>Not every insurance company offers its insurance products in every state. Make sure the company has a guaranteed acceptance life insurance policy available in your state before applying.</p>
 
-<p><strong>#3 – ABILITY TO ENTER A LEGAL CONTRACT –&#160;</strong>You must possess a mental capacity to enter into a legal contract. For example, the company may reject your application if you have advanced dementia or Alzheimer’s disease and cannot legally consent to an agreement.</p>
+<p><strong>#3: ABILITY TO ENTER A LEGAL CONTRACT:&#160;</strong>You must possess a mental capacity to enter into a legal contract. For example, the company may reject your application if you have advanced dementia or Alzheimer’s disease and cannot legally consent to an agreement.</p>
 
 <h2 id="why-you-need-guaranteed-issue-insurance"><br><strong>Why do you need a guaranteed issue burial insurance if you need help with dressing?</strong></h2>
 
@@ -139,9 +139,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 

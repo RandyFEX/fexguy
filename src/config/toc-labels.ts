@@ -15,7 +15,7 @@ export const TOC_LABELS: Record<string, Record<string, string>> = {
     'who-is-the-colonial-penn-9-95-plan-good-for': 'Who Is the Colonial Penn $9.95 Plan Good For?',
     'better-alternatives-to-colonial-penn': 'Better Alternatives to Colonial Penn',
     'how-to-compare-final-expense-policies-properly': 'How to Compare Final Expense Policies Properly',
-    'final-verdict-is-colonial-penn-9-95-a-scam': 'Final Verdict – Is Colonial Penn $9.95 a Scam?',
+    'final-verdict-is-colonial-penn-9-95-a-scam': 'Final Verdict: Is Colonial Penn $9.95 a Scam?',
     'frequently-asked-questions-colonial-penn-9-95-life-insurance': 'Frequently Asked Questions: Colonial Penn $9.95 Life Insurance Review',
   },
 };

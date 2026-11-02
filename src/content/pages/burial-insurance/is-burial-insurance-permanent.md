@@ -56,7 +56,7 @@ sidebar: true
 
 <p>There are two types of burial insurance on offer in the U.S. today:</p>
 
-<p><strong>Simplified Issue Plan</strong> – life insurance application is simplified because this plan does not require you to undergo a medical exam. All you have to do is just answer a few health questions to qualify.</p>
+<p><strong>Simplified Issue Plan</strong>: life insurance application is simplified because this plan does not require you to undergo a medical exam. All you have to do is just answer a few health questions to qualify.</p>
 
 <p>This burial insurance with no waiting period offers immediate coverage if you qualify, meaning you are covered from day one and don’t have to wait two years before your policy is in force. Your beneficiary will receive full death benefit any time you pass away.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 
 <p>If you have severe health conditions that will prevent you from life insurance eligibility, there is one burial insurance that can be your best option.</p>
 
-<p><strong>Guaranteed Issue Plan</strong> – guaranteed acceptance life insurance is a burial insurance policy where all applicants will be approved regardless of their medical condition as long as they fall in the age category.</p>
+<p><strong>Guaranteed Issue Plan</strong>: guaranteed acceptance life insurance is a burial insurance policy where all applicants will be approved regardless of their medical condition as long as they fall in the age category.</p>
 
 <p>This plan is available for people between the ages of 50 and 85. A guaranteed issue plan does not require a medical examination or health questions. It is your last option if you can’t qualify for any other type of life insurance.</p>
 
@@ -101,28 +101,28 @@ sidebar: true
 
 <h2 id="why-do-you-need-burial-insurance"><strong>Why do you need burial insurance?</strong></h2>
 
-<p><strong>Funerals are expensive</strong> – the average cost of an adult funeral with viewing and burial, according to the <a href="http://www.nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">NFDA</a>– National Funeral Directors Association, is $8,755. The cost is broken down as follows:</p>
+<p><strong>Funerals are expensive</strong>: the average cost of an adult funeral with viewing and burial, according to the <a href="http://www.nfda.org/news/statistics" target="_blank" rel="noreferrer noopener">NFDA</a>. National Funeral Directors Association, is $8,755. The cost is broken down as follows:</p>
 
 <ul>
-<li>$2,100 – Basic services fee</li>
-<li>$325 – Removal and transfer of remains to funeral home</li>
-<li>$725 – Embalming</li>
-<li>$250 – Other preparation of the body</li>
-<li>$425 – Use of facilities for viewing</li>
-<li>$500 – Use of facilities for the funeral ceremony</li>
-<li>$325 – Hearse</li>
-<li>$150 – Service car</li>
-<li>$160 – Basic memorial printed package</li>
-<li>$2,400 – Metal Casket</li>
-<li>$1,395 – Vault</li>
-<li><strong>$8,755 – Total cost of a funeral with viewing</strong></li>
+<li>$2,100: Basic services fee</li>
+<li>$325: Removal and transfer of remains to funeral home</li>
+<li>$725: Embalming</li>
+<li>$250: Other preparation of the body</li>
+<li>$425: Use of facilities for viewing</li>
+<li>$500: Use of facilities for the funeral ceremony</li>
+<li>$325: Hearse</li>
+<li>$150: Service car</li>
+<li>$160: Basic memorial printed package</li>
+<li>$2,400: Metal Casket</li>
+<li>$1,395: Vault</li>
+<li><strong>$8,755: Total cost of a funeral with viewing</strong></li>
 </ul>
 
 <p>The cost estimate listed here does not include an additional cost for obituaries, headstones, grave plots,s, and flowers. Funerals can <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">cost</a> more than you think; that’s why burial insurance can be a clever way to relieve the financial burden after the death of a family member.</p>
 
-<p><strong> Burial Insurance is affordable</strong> – burial insurance policy is cheaper because the face value is smaller than traditional life insurance policies. You can buy coverage up to $50,000 but down to $1,000. You have the option to purchase what you need that fits your budget. It can be a small price to help your family get the financial protection they need.</p>
+<p><strong> Burial Insurance is affordable</strong>: burial insurance policy is cheaper because the face value is smaller than traditional life insurance policies. You can buy coverage up to $50,000 but down to $1,000. You have the option to purchase what you need that fits your budget. It can be a small price to help your family get the financial protection they need.</p>
 
-<p><strong> Underwriting is easy</strong> – most burial insurance policies have simplified underwriting. There is no medical examination necessary.&#160;You only need to answer some health questions.</p>
+<p><strong> Underwriting is easy</strong>: most burial insurance policies have simplified underwriting. There is no medical examination necessary.&#160;You only need to answer some health questions.</p>
 
 <p>If you answer no to the health questions, your application is approved. If you have severe health issues, you can still buy guaranteed issue burial insurance. There is no medical exam and no questions asked. You don’t have the perfect health to qualify; your approval is guaranteed.</p>
 
@@ -145,25 +145,25 @@ sidebar: true
 <li>Builds cash value</li>
 </ul>
 
-<p><strong>Permanent coverage</strong> – Coverage can’t be canceled because of age or health conditions. Coverage will last for the policyholder’s whole life, unlike term life insurance, which expires after a specific term like 10, 20, or 30 years.</p>
+<p><strong>Permanent coverage</strong>: Coverage can’t be canceled because of age or health conditions. Coverage will last for the policyholder’s whole life, unlike term life insurance, which expires after a specific term like 10, 20, or 30 years.</p>
 
 <p>While term life is best for short-term financial planning, such as paying off student loans, caring for young children, or paying off a mortgage. Permanent life insurance is designed for estate planning, burial expenses, and charitable donations after you die. This is the best feature of funeral insurance for parents.</p>
 
 <p>Coverage will be in force if you don’t allow your permanent life insurance policy to lapse due to non-payment; you’ll have the life coverage.</p>
 
-<p><strong>Level premiums</strong> – whole life insurance premiums stay the same for the duration of the policy. You’ll pay the same amount every month, without increasing. Level premiums give you the advantage of predictability. You can easily fit the payment into the budget since you know what is due every month.</p>
+<p><strong>Level premiums</strong>: whole life insurance premiums stay the same for the duration of the policy. You’ll pay the same amount every month, without increasing. Level premiums give you the advantage of predictability. You can easily fit the payment into the budget since you know what is due every month.</p>
 
 <p>Some insurance carriers offer the option of limited payment plans, where you are allowed to pay the full premium over a short period, such as ten or twenty years. The premiums are still the same each month, but you have the option to pay the insurance faster rather than paying the monthly payment for the rest of your life.</p>
 
-<p><strong>Death benefit does not decrease</strong> – Permanent life insurance pays a benefit if you pass away. The best funeral insurance policy guarantees that the death benefit amount will not decrease due to your advancing years or health.</p>
+<p><strong>Death benefit does not decrease</strong>: Permanent life insurance pays a benefit if you pass away. The best funeral insurance policy guarantees that the death benefit amount will not decrease due to your advancing years or health.</p>
 
 <p>The death benefit is payable when you die, whether you live to be 75 or 105; permanent life insurance will pay the benefit if the premiums are paid.</p>
 
-<p>This contrasts with term life insurance, where death benefits are paid during a specified timeframe – for example, you are 40 years old and bought a 20-year term life insurance. Your beneficiary will only receive a death benefit if you die before the age of 60.</p>
+<p>This contrasts with term life insurance, where death benefits are paid during a specified timeframe, for example, you are 40 years old and bought a 20-year term life insurance. Your beneficiary will only receive a death benefit if you die before the age of 60.</p>
 
 <p>Permanent life insurance does not have a timeframe; it will give your family continued protection as long as you live.</p>
 
-<p><strong>Builds cash value</strong> – Aside from the death benefit, permanent life insurance policies let you build up cash value with every premium payment you make during your life. It is a form of forced savings that can help you stay insured while building an asset that grows on a tax-deferred basis.</p>
+<p><strong>Builds cash value</strong>: Aside from the death benefit, permanent life insurance policies let you build up cash value with every premium payment you make during your life. It is a form of forced savings that can help you stay insured while building an asset that grows on a tax-deferred basis.</p>
 
 <p>Permanent life insurance cash value is an available asset that can be borrowed for emergency funds. You can use your cash value if you don’t want to apply for a loan with a high-interest credit card.</p>
 
@@ -181,23 +181,23 @@ sidebar: true
 <li>Indexed Universal</li>
 </ul>
 
-<p><strong>Whole Life insurance</strong> – this is the most common type of permanent insurance. Burial insurance or final expense life insurance no exam falls under this category.&#160; Premiums are fixed and will remain the same; it is guaranteed not to increase your whole life.</p>
+<p><strong>Whole Life insurance</strong>: this is the most common type of permanent insurance. Burial insurance or final expense life insurance no exam falls under this category.&#160; Premiums are fixed and will remain the same; it is guaranteed not to increase your whole life.</p>
 
 <p>The death benefit will not decrease for any reason. There is cash value build-up, and participating in whole life insurance gives dividends. You have the option to use the dividends to pay premiums, leave them to accumulate interest, or receive them as cash.  </p>
 
-<p><strong>Universal Life </strong>– is different from whole life insurance, where the premium is fixed. Universal life has greater flexibility. Premiums can be adjusted; you can pay a higher premium if you’ve got the money or make lower premiums when your budget is tight.</p>
+<p><strong>Universal Life </strong>: is different from whole life insurance, where the premium is fixed. Universal life has greater flexibility. Premiums can be adjusted; you can pay a higher premium if you’ve got the money or make lower premiums when your budget is tight.</p>
 
 <p>You can also increase your death benefit and pay your monthly premiums once you have enough cash value in your policy.</p>
 
-<p><strong>Variable Life</strong> – this policy provides death benefits and cash values depending on the performance of a portfolio of investment options. It is designed to combine the protection and savings features of regular life insurance with the growth potential of common stocks.</p>
+<p><strong>Variable Life</strong>: this policy provides death benefits and cash values depending on the performance of a portfolio of investment options. It is designed to combine the protection and savings features of regular life insurance with the growth potential of common stocks.</p>
 
 <p>This policy provides you with a guaranteed minimum death benefit and cash value that may increase or decrease daily. The benefits of variable life insurance are payable upon death or surrender.</p>
 
-<p><strong>Variable Universal</strong> – allows you to allocate funds to different investment options. It also allows you some flexibility in decreasing or increasing your coverage amount.</p>
+<p><strong>Variable Universal</strong>: allows you to allocate funds to different investment options. It also allows you some flexibility in decreasing or increasing your coverage amount.</p>
 
 <p>You also have the option to increase the cash value of your policy by making a lump-sum payment. You can also let your cash value pay your premiums.</p>
 
-<p><strong>Indexed Universal</strong> – part of the premium you pay in the Indexed Universal policy goes toward the cash value account and the other part to the death benefit. The money in the cash value account has the potential to earn interest based on the index chosen by your insurance carrier. The index tracks the performance of specified investments, such as stocks or bonds.</p>
+<p><strong>Indexed Universal</strong>: part of the premium you pay in the Indexed Universal policy goes toward the cash value account and the other part to the death benefit. The money in the cash value account has the potential to earn interest based on the index chosen by your insurance carrier. The index tracks the performance of specified investments, such as stocks or bonds.</p>
 
 <p>Your insurance carrier selects the index and then calculates the interest rate based on the index’s performance. They credit the interest to your cash-value account. You may use those funds to help pay your premiums if you have money in your cash-value account.</p>
 

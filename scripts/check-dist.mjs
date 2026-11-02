@@ -274,10 +274,35 @@ for (const dir of ['src/content', 'data'])
   for (const file of walk(join(ROOT, dir)).filter((f) => /\.(md|mdx|json|csv|ya?ml|txt)$/.test(f)))
     scanEmDashes(readFileSync(file, 'utf8'), file.slice(ROOT.length));
 
+// ---- En and em dashes in visible copy -------------------------------------------
+// FEXGUY.com style rule (Randy, November 2026): no en dash (U+2013) or em dash
+// in copy a visitor can see: page text, the title, meta descriptions and social
+// titles/descriptions, and alt text. Scripts (including JSON-LD), styles and
+// tag attributes (ids, links, file names) are technical and not scanned.
+// Verbatim sources are listed in src/config/dash-exceptions.json.
+const dashExceptions = JSON.parse(readFileSync(new URL('../src/config/dash-exceptions.json', import.meta.url), 'utf8')).exceptions;
+const VISIBLE_META = /<meta\s[^>]*(?:name|property)="(?:description|og:title|og:description|og:image:alt|twitter:title|twitter:description|twitter:image:alt)"[^>]*>/gi;
+const decodeDashes = (t) => t.replace(/&ndash;|&#0*8211;|&#x0*2013;/gi, '\u2013').replace(/&mdash;|&#0*8212;|&#x0*2014;/gi, '\u2014').replace(/&#160;|&nbsp;/g, ' ').replace(/&amp;/g, '&');
+const visibleDashHits = [];
+for (const file of walk(DIST).filter((f) => f.endsWith('.html') && !f.includes('/pagefind/'))) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '').replace(/^\//, '');
+  const metas = [...html.matchAll(VISIBLE_META)].map((m) => (m[0].match(/content="([^"]*)"/) || [])[1] || '');
+  const alts = [...html.matchAll(/\salt="([^"]*)"/g)].map((m) => m[1]);
+  const body = html.replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(/<style\b[\s\S]*?<\/style>/gi, ' ').replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]+>/g, ' ');
+  const text = decodeDashes([body, ...metas, ...alts].join('\n'));
+  for (const m of text.matchAll(/[\u2013\u2014]/g)) {
+    const around = text.slice(Math.max(0, m.index - 80), m.index + 80);
+    const ok = dashExceptions.some((e) => (!e.page || e.page === page) && (!e.text || around.includes(e.text)));
+    if (!ok) visibleDashHits.push(`${page}  "${text.slice(Math.max(0, m.index - 40), m.index + 40).replace(/\s+/g, ' ')}"`);
+  }
+}
+
 const guardProblems = Object.entries(guardHits).map(([label, files]) => `${label}: ${files.slice(0, 5).join(' ')}${files.length > 5 ? ` (+${files.length - 5} more)` : ''}`);
 if (!ga4Found) guardProblems.push('GA4 measurement ID G-JMYZE458HQ not found in the build');
 if (!metaFound) guardProblems.push('Meta Pixel ID 2351342698972751 not found in the build');
 if (emDashHits.length) guardProblems.push(`em dash (${emDashHits.length}): ${EM_DASH_MESSAGE}`);
+if (visibleDashHits.length) guardProblems.push(`en/em dash in visible copy (${visibleDashHits.length}): rewrite with "to", a comma, colon or period (verbatim sources: src/config/dash-exceptions.json)`);
 // Not a failure before launch: the legal pages' effective dates are set to the
 // actual publication date at launch (CLAUDE.md "Prelaunch checklist").
 const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
@@ -685,6 +710,9 @@ console.log(`Header phone (label, icon, number): ${headersChecked} headers check
 for (const p of headerProblems) console.log(`  [header] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
+console.log(`En/em dashes in visible copy (built pages, exceptions in src/config/dash-exceptions.json): ${visibleDashHits.length}`);
+for (const h of visibleDashHits.slice(0, 25)) console.log(`  [dash] ${h}`);
+if (visibleDashHits.length > 25) console.log(`  [dash] ... +${visibleDashHits.length - 25} more`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
 for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);
 if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 25} more`);

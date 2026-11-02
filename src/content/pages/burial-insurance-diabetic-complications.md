@@ -64,7 +64,7 @@ sidebar: true
 
 <h3><strong>Diabetes health statistics (U.S.)</strong></h3>
 
-<figure class="table-wrap"><table><thead><tr><th><strong>Category</strong></th><th><strong>Statistic</strong></th></tr></thead><tbody><tr><td><strong>Total with Diabetes</strong></td><td>38.4 million (11.6% of the U.S. population)</td></tr><tr><td><strong>Undiagnosed Cases</strong></td><td>~20% (1 in 5 people with diabetes don’t know they have it)</td></tr><tr><td><strong>Prediabetes</strong></td><td>96 million adults (38%); over 80% unaware</td></tr><tr><td><strong>Type 2 Diabetes</strong></td><td>90–95% of all diagnosed cases</td></tr><tr><td><strong>Type 1 Diabetes</strong></td><td>5–10% of all diagnosed cases</td></tr><tr><td><strong>Leading Cause Of</strong></td><td>Kidney failure, amputations, adult blindness</td></tr><tr><td><strong>Cardiovascular Risk</strong></td><td>2x higher risk of heart attack or stroke</td></tr><tr><td><strong>Early Death Risk</strong></td><td>50% higher risk of early death</td></tr><tr><td><strong>Chronic Kidney Disease</strong></td><td>37% of diabetics have CKD</td></tr><tr><td><strong>Vision Problems</strong></td><td>~1 in 6 have diabetic retinopathy</td></tr><tr><td><strong>Amputations (Non-traumatic)</strong></td><td>Most common cause among adults</td></tr><tr><td><strong>Age 65+ Prevalence</strong></td><td>26.4% of seniors have diabetes</td></tr><tr><td><strong>Medical Cost</strong></td><td>$327 billion total (as of 2017)</td></tr><tr><td><strong>Personal Medical Cost Impact</strong></td><td>2.3x higher annual cost for diabetics vs. non-diabetics</td></tr><tr><td><strong>Demographics at Higher Risk</strong></td><td>Older adults, Non-Hispanic Black, Hispanic, Native American populations</td></tr><tr><td><strong>Gender Distribution</strong></td><td>Slightly more common in men than women</td></tr><tr><td><strong>Ranking in Cause of Death</strong></td><td>8th leading cause of death in the U.S.</td></tr></tbody></table></figure>
+<figure class="table-wrap"><table><thead><tr><th><strong>Category</strong></th><th><strong>Statistic</strong></th></tr></thead><tbody><tr><td><strong>Total with Diabetes</strong></td><td>38.4 million (11.6% of the U.S. population)</td></tr><tr><td><strong>Undiagnosed Cases</strong></td><td>~20% (1 in 5 people with diabetes don’t know they have it)</td></tr><tr><td><strong>Prediabetes</strong></td><td>96 million adults (38%); over 80% unaware</td></tr><tr><td><strong>Type 2 Diabetes</strong></td><td>90 to 95% of all diagnosed cases</td></tr><tr><td><strong>Type 1 Diabetes</strong></td><td>5 to 10% of all diagnosed cases</td></tr><tr><td><strong>Leading Cause Of</strong></td><td>Kidney failure, amputations, adult blindness</td></tr><tr><td><strong>Cardiovascular Risk</strong></td><td>2x higher risk of heart attack or stroke</td></tr><tr><td><strong>Early Death Risk</strong></td><td>50% higher risk of early death</td></tr><tr><td><strong>Chronic Kidney Disease</strong></td><td>37% of diabetics have CKD</td></tr><tr><td><strong>Vision Problems</strong></td><td>~1 in 6 have diabetic retinopathy</td></tr><tr><td><strong>Amputations (Non-traumatic)</strong></td><td>Most common cause among adults</td></tr><tr><td><strong>Age 65+ Prevalence</strong></td><td>26.4% of seniors have diabetes</td></tr><tr><td><strong>Medical Cost</strong></td><td>$327 billion total (as of 2017)</td></tr><tr><td><strong>Personal Medical Cost Impact</strong></td><td>2.3x higher annual cost for diabetics vs. non-diabetics</td></tr><tr><td><strong>Demographics at Higher Risk</strong></td><td>Older adults, Non-Hispanic Black, Hispanic, Native American populations</td></tr><tr><td><strong>Gender Distribution</strong></td><td>Slightly more common in men than women</td></tr><tr><td><strong>Ranking in Cause of Death</strong></td><td>8th leading cause of death in the U.S.</td></tr></tbody></table></figure>
 
 <h2 id="different-diabetic-complications"><strong>What are the different diabetic complications?</strong></h2>
 
@@ -86,11 +86,11 @@ sidebar: true
 
 <p>Insurance companies aren’t blind to these risks. They know diabetic complications can cut life short and rack up healthcare costs, which means higher premiums for those with these conditions. </p>
 
-<p>The severity and type of complication will influence the rates – well-managed diabetes with fewer complications might see smaller increases compared to poorly controlled diabetes with multiple issues.</p>
+<p>The severity and type of complication will influence the rates, well-managed diabetes with fewer complications might see smaller increases compared to poorly controlled diabetes with multiple issues.</p>
 
 <h3>⚠️ <strong>Most dangerous diabetes complications &amp; their impact</strong></h3>
 
-<figure class="table-wrap"><table><thead><tr><th><strong>Complication</strong></th><th><strong>Impact on Patient</strong></th></tr></thead><tbody><tr><td><strong>Cardiovascular Disease</strong></td><td>Major cause of death; 2–4x increased risk of heart attack and stroke</td></tr><tr><td><strong>Chronic Kidney Disease (CKD)</strong></td><td>Gradual kidney failure; may require dialysis or transplant</td></tr><tr><td><strong>Diabetic Retinopathy</strong></td><td>Eye damage leading to vision loss or blindness</td></tr><tr><td><strong>Peripheral Neuropathy</strong></td><td>Numbness, pain, or weakness in hands and feet; risk of injury and amputation</td></tr><tr><td><strong>Foot Ulcers &amp; Infections</strong></td><td>Poor healing can lead to serious infections and limb amputation</td></tr><tr><td><strong>Stroke</strong></td><td>Higher risk due to damaged blood vessels; can result in paralysis or death</td></tr><tr><td><strong>Diabetic Ketoacidosis (DKA)</strong></td><td>Life-threatening emergency from high blood sugar and ketones</td></tr><tr><td><strong>Hypoglycemia (Low Blood Sugar)</strong></td><td>Sudden onset can cause seizures, unconsciousness, or death</td></tr><tr><td><strong>Cognitive Decline &amp; Dementia</strong></td><td>Elevated risk of Alzheimer’s and other forms of dementia</td></tr><tr><td><strong>Depression &amp; Mental Health</strong></td><td>Chronic illness stress increases risk of depression, impacting treatment adherence</td></tr></tbody></table></figure>
+<figure class="table-wrap"><table><thead><tr><th><strong>Complication</strong></th><th><strong>Impact on Patient</strong></th></tr></thead><tbody><tr><td><strong>Cardiovascular Disease</strong></td><td>Major cause of death; 2 to 4x increased risk of heart attack and stroke</td></tr><tr><td><strong>Chronic Kidney Disease (CKD)</strong></td><td>Gradual kidney failure; may require dialysis or transplant</td></tr><tr><td><strong>Diabetic Retinopathy</strong></td><td>Eye damage leading to vision loss or blindness</td></tr><tr><td><strong>Peripheral Neuropathy</strong></td><td>Numbness, pain, or weakness in hands and feet; risk of injury and amputation</td></tr><tr><td><strong>Foot Ulcers &amp; Infections</strong></td><td>Poor healing can lead to serious infections and limb amputation</td></tr><tr><td><strong>Stroke</strong></td><td>Higher risk due to damaged blood vessels; can result in paralysis or death</td></tr><tr><td><strong>Diabetic Ketoacidosis (DKA)</strong></td><td>Life-threatening emergency from high blood sugar and ketones</td></tr><tr><td><strong>Hypoglycemia (Low Blood Sugar)</strong></td><td>Sudden onset can cause seizures, unconsciousness, or death</td></tr><tr><td><strong>Cognitive Decline &amp; Dementia</strong></td><td>Elevated risk of Alzheimer’s and other forms of dementia</td></tr><tr><td><strong>Depression &amp; Mental Health</strong></td><td>Chronic illness stress increases risk of depression, impacting treatment adherence</td></tr></tbody></table></figure>
 
 <h2 id="getting-burial-insurance"><strong>Can I get burial insurance if I have diabetes with diabetic complications?</strong></h2>
 
@@ -107,33 +107,33 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies in some states – Level</td>
+<td>Certain companies in some states: Level</td>
 <td>1st-Day Coverage</td>
 </tr>
 <tr>
-<td>Colonial Penn – Guaranteed Issue</td>
+<td>Colonial Penn: Guaranteed Issue</td>
 <td>2-Year Wait</td>
 </tr>
 <tr>
-<td>Gerber Life – Guaranteed Issue</td>
+<td>Gerber Life: Guaranteed Issue</td>
 <td>2-Year Wait</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified</td>
+<td>Lincoln Heritage: Modified</td>
 <td>2-Year Wait</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – Guaranteed Issue</td>
+<td>Mutual Of Omaha: Guaranteed Issue</td>
 <td>2-Year Wait</td>
 </tr>
 </tbody>
 </table>
 
-<p><strong>First-Day Coverage</strong> – No medical exam needed! Just answer a few health questions and boom, you’re covered from day one. No waiting around, just instant coverage. How fabulous is that?</p>
+<p><strong>First-Day Coverage</strong>: No medical exam needed! Just answer a few health questions and boom, you’re covered from day one. No waiting around, just instant coverage. How fabulous is that?</p>
 
-<p><strong>Modified Coverage </strong>– You’re covered from day one, but your benefits ramp up gradually over time.</p>
+<p><strong>Modified Coverage </strong>: You’re covered from day one, but your benefits ramp up gradually over time.</p>
 
-<p><strong>Guaranteed Issue</strong> – This policy does not require a medical exam or health questions, and it offers straightforward coverage. It is perfect for those with serious health issues who can’t get traditional life insurance.</p>
+<p><strong>Guaranteed Issue</strong>: This policy does not require a medical exam or health questions, and it offers straightforward coverage. It is perfect for those with serious health issues who can’t get traditional life insurance.</p>
 
 <p>But hold up, there’s a catch: guaranteed issue whole life insurance has a two-year waiting period and higher premiums than first-day coverage. If you kick the bucket during this period, you won’t get the full death benefit.</p>
 
@@ -176,23 +176,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies in some states – Level – 1st-Day Coverage</td>
+<td>Certain companies in some states: Level, 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -209,23 +209,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies in some states – Level – 1st-Day Coverage</td>
+<td>Certain companies in some states: Level, 1st-Day Coverage</td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>

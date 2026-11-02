@@ -42,17 +42,17 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which colorectal cancer applicants they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">basal cell or squamous cell</a> skin cancer?</li>
-<li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
-<li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
-<li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Aetna Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding <a href="/burial-insurance/basal-cell-squamous-cell-carcinoma/" target="_blank" rel="noreferrer noopener">basal cell or squamous cell</a> skin cancer?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Aflac&#160;Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aflac&#160;Decline&#160;</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Family Benefit Life Decline</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Decline&#160;</strong>: In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
+<li><strong>Trinity Life Decline&#160;</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
 <h3>Colorectal cancer underwriting basics</h3>
@@ -113,7 +113,7 @@ sidebar: true
 
 <p>Here are some preferred rates for cancer cured more than 24 months ago. Your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>
@@ -265,7 +265,7 @@ sidebar: true
 
 <h3>What is the difference between “Level” and “Graded” benefits for cancer survivors?</h3>
 
-<p>Level benefits provide the full face amount of the policy to your beneficiaries from the very first day the coverage is active. Graded benefits are a hybrid option for those with a more recent cancer history, typically paying out a percentage of the death benefit (such as 30% or 40%) if death occurs in the first year. Choosing between these depends on whether your health history – specifically, the time since your last oncology check-up – meets the insurance carrier’s “look-back” requirements.</p>
+<p>Level benefits provide the full face amount of the policy to your beneficiaries from the very first day the coverage is active. Graded benefits are a hybrid option for those with a more recent cancer history, typically paying out a percentage of the death benefit (such as 30% or 40%) if death occurs in the first year. Choosing between these depends on whether your health history, specifically, the time since your last oncology check-up, meets the insurance carrier’s “look-back” requirements.</p>
 
 <h3>What type of death is not covered by colorectal cancer burial insurance?</h3>
 
@@ -273,7 +273,7 @@ sidebar: true
 
 <h3>How do insurance companies define “remission” for colorectal cancer?</h3>
 
-<p>Insurers define remission as the period during which a patient has completed all active treatments – including surgery, chemotherapy, and radiation – and shows no evidence of disease. Regular follow-up colonoscopies and blood tests are considered “surveillance” rather than active treatment and do not usually count against your cancer-free time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your initial diagnosis.</p>
+<p>Insurers define remission as the period during which a patient has completed all active treatments, including surgery, chemotherapy, and radiation, and shows no evidence of disease. Regular follow-up colonoscopies and blood tests are considered “surveillance” rather than active treatment and do not usually count against your cancer-free time. Most carriers start their eligibility clock on the date of your last active treatment session rather than the date of your initial diagnosis.</p>
 
 <h3>Can I get burial insurance if I have a permanent ostomy bag?</h3>
 

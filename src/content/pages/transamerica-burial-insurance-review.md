@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>TransAmerica Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>TransAmerica Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -70,11 +70,11 @@ sidebar: true
 
 <h2 id="pros-of-transamerica-burial-insurance"><strong>Pros of TransAmerica burial insurance </strong></h2>
 
-<p><strong>No height &amp; weight chart</strong> – No height and weight chart; you can qualify even if you are on the heavier side<br><strong>Coverage amount</strong> – Higher coverage amount available<br><strong>Pricing</strong> – Competitive premium rates for the Immediate Solution preferred plan</p>
+<p><strong>No height &amp; weight chart</strong>: No height and weight chart; you can qualify even if you are on the heavier side<br><strong>Coverage amount</strong>: Higher coverage amount available<br><strong>Pricing</strong>: Competitive premium rates for the Immediate Solution preferred plan</p>
 
 <h2 id="cons-of-transamerica-burial-insurance"><strong>Cons of TransAmerica burial insurance</strong> </h2>
 
-<p><strong>Higher rates</strong> – Higher premium rate on Immediate Solution standard plan<br><strong>Underwriting</strong> – The company may ask for the attending physician’s statement if they want to clarify something about your health<br><strong>Waiting period</strong> – Higher premium rate on Easy Solution plan with a waiting period</p>
+<p><strong>Higher rates</strong>: Higher premium rate on Immediate Solution standard plan<br><strong>Underwriting</strong>: The company may ask for the attending physician’s statement if they want to clarify something about your health<br><strong>Waiting period</strong>: Higher premium rate on Easy Solution plan with a waiting period</p>
 
 <h2 id="transamerica-burial-insurance-products"><br><strong>TransAmerica burial insurance products</strong></h2>
 
@@ -169,9 +169,9 @@ sidebar: true
 
 <p><strong>Additional Riders at no extra cost</strong></p>
 
-<p><strong>1. Accelerated death benefit rider</strong> – this benefit will be available when you are diagnosed with a qualifying event like a terminal illness.</p>
+<p><strong>1. Accelerated death benefit rider</strong>: this benefit will be available when you are diagnosed with a qualifying event like a terminal illness.</p>
 
-<p><strong>2. Accelerated Death benefit rider with Nursing home rider</strong> – You won’t qualify for the nursing home benefit if you already need assistance with daily living activities, including eating, dressing, bathing, toileting, continence, and transferring.</p>
+<p><strong>2. Accelerated Death benefit rider with Nursing home rider</strong>. You won’t qualify for the nursing home benefit if you already need assistance with daily living activities, including eating, dressing, bathing, toileting, continence, and transferring.</p>
 
 <p>(Riders not available in New York)</p>
 
@@ -183,7 +183,7 @@ sidebar: true
 
 <p><br><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-does-transamerica-make-sense"><br><strong>When does TransAmerica burial insurance make the most sense?</strong></h2>
 
@@ -745,13 +745,13 @@ benefit plan.</p>
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>

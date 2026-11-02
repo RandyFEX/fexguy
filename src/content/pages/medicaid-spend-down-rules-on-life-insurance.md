@@ -66,7 +66,7 @@ sidebar: true
 
 <p>Check the limit that applies in your parents’ state.</p>
 
-<p>There are two categories of assets – exempt and not-exempt. Exempt assets don’t factor in Medicaid <a rel="noreferrer noopener" href="/final-expense-life-insurance-medicaid/" target="_blank">eligibility</a>, while non-exempt assets are subject to the state’s spend-down requirements.</p>
+<p>There are two categories of assets: exempt and not-exempt. Exempt assets don’t factor in Medicaid <a rel="noreferrer noopener" href="/final-expense-life-insurance-medicaid/" target="_blank">eligibility</a>, while non-exempt assets are subject to the state’s spend-down requirements.</p>
 
 <p><br><strong>Exempt Medicaid Assets</strong></p>
 
@@ -92,13 +92,13 @@ sidebar: true
 
 <p>Understanding the different life insurance policies is critical to determine if your parent’s life insurance policies are within Medicaid limits.</p>
 
-<p><br><strong>Term Life Insurance</strong>&#160;– a temporary plan that only pays a death benefit if the insured dies during the policy’s timeframe. You can choose coverage terms, but the typical periods are multiples of 5: five, 10, 15 to 30 years.</p>
+<p><br><strong>Term Life Insurance</strong>: a temporary plan that only pays a death benefit if the insured dies during the policy’s timeframe. You can choose coverage terms, but the typical periods are multiples of 5: five, 10, 15 to 30 years.</p>
 
 <p>If the insured outlives this period, the beneficiaries will not receive a death benefit because it will expire (if it’s not renewed or converted into a permanent policy). </p>
 
 <p><a rel="noreferrer noopener" href="/term-life-conversion-to-whole-life/" target="_blank">Term life insurance</a> doesn’t accumulate cash value.</p>
 
-<p><br><strong>Permanent Life Insurance</strong>&#160;– also called cash-value life insurance, does not expire and will last a lifetime. The insured is covered until death as long as the insurance policy is in force. </p>
+<p><br><strong>Permanent Life Insurance</strong>: also called cash-value life insurance, does not expire and will last a lifetime. The insured is covered until death as long as the insurance policy is in force. </p>
 
 <p>Aside from the death benefit payout, permanent life insurance accumulates cash value. <a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent life insurance</a>, such as whole life insurance, universal, and variable life insurance, accumulates cash value over time.</p>
 
@@ -114,7 +114,7 @@ sidebar: true
 
 <p><br><strong>Face value</strong>&#160;is the death benefit the company would pay the beneficiaries should the insured die, assuming the policy is still in force.</p>
 
-<p><br><strong>Surrender value</strong>&#160;– the amount the life insurance provider will pay out if the insured decides to surrender the policy before becoming payable upon maturity or death. The surrender value is computed by the cash value amount less any fees associated with early termination.</p>
+<p><br><strong>Surrender value</strong>: the amount the life insurance provider will pay out if the insured decides to surrender the policy before becoming payable upon maturity or death. The surrender value is computed by the cash value amount less any fees associated with early termination.</p>
 
 <p><br><strong>Face Value vs. Cash Value</strong></p>
 

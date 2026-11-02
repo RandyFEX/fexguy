@@ -3,7 +3,7 @@
 // real-data.test.js and run once the carrier questions are loaded.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { prepare, search, detectConcepts, LIMITS } from '../../server/health-search/search.js';
+import { prepare, search, detectConcepts, LIMITS, monthsLabel, tidyLine } from '../../server/health-search/search.js';
 import { sampleDataset } from '../../server/health-search/sample-dataset.js';
 import { normalize, tokens, editDistance } from '../../server/health-search/normalize.js';
 
@@ -66,7 +66,7 @@ test('outcomes come from the carrier rules; schedules are attached where used', 
   const r = search(prep, 'copd');
   const g = r.groups.find((x) => x.carrier === 'Sample Carrier A');
   const q = g.questions.find((x) => x.section === 'Part B');
-  assert.equal(q.yes.classification, 'modified');
+  assert.ok(q.answers.some((a) => a.answer === 'YES'), 'YES row from the carrier rule');
   assert.equal(g.schedules[0].label, 'Modified benefit (sample)');
 });
 
@@ -121,4 +121,15 @@ test('a carrier name narrows results to that carrier; on its own it is not a sea
 
   // Other carriers' guaranteed issue cards are not added to a narrowed search.
   assert.deepEqual(narrowed.guaranteedIssue, []);
+});
+
+test('search results never contain an en or em dash; payout months read "1 to 12" / "25 onward"', () => {
+  const out = JSON.stringify(['copd', 'heart attack', 'insulin', 'stent', 'oxygen', 'dialysis'].map((q) => search(prep, q)));
+  assert.doesNotMatch(out, /[–—]/);
+  assert.equal(monthsLabel('1–12'), 'Months 1 to 12');
+  assert.equal(monthsLabel('13-24'), 'Months 13 to 24');
+  assert.equal(monthsLabel('25+'), 'Month 25 onward');
+  assert.equal(monthsLabel('25 and later'), 'Month 25 onward');
+  assert.equal(tidyLine('Months 25+: 100% coverage payout.'), 'Month 25 onward: 100% coverage payout.');
+  assert.equal(tidyLine('Call 888-862-9456 to qualify.'), 'Call 888-862-9456 to qualify.');
 });

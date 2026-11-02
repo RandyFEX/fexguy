@@ -10,7 +10,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { config } from '../../server/health-search/config.generated.js';
 import { checkPayload } from '../../server/health-search/question-store.js';
 import { buildPayload } from '../../server/health-search/publish.js';
-import { prepare, search, answerRows, LUCK } from '../../server/health-search/search.js';
+import { prepare, search, answerRows, LUCK, tidyLine } from '../../server/health-search/search.js';
 
 const dir = new URL('../../server/health-search/private/questions/', import.meta.url);
 const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(new URL(f, dir), 'utf8'))) : [];
@@ -62,7 +62,7 @@ test('CICA Life Insurance is named, with D-1 and D-2 kept separate', { skip }, (
   const group = pages.flatMap((p) => p.groups).find((g) => g.carrier === 'CICA Life Insurance');
   assert.ok(group, 'named exactly "CICA Life Insurance"');
   assert.ok(group.questions.some((q) => q.variant === 'D-1') && group.questions.some((q) => q.variant === 'D-2'));
-  assert.ok(group.questions.every((q) => /age, state and product eligibility/.test(q.yes.explanation)), 'approved eligibility note');
+  assert.ok(group.questions.every((q) => q.answers.some((a) => a.answer === 'YES' && a.details.some((d) => /age, state and product eligibility/.test(d)))), 'approved eligibility note');
 });
 
 test('every record keeps Randy\'s wording line for line', { skip }, () => {
@@ -137,7 +137,7 @@ test('answer rows keep every approved line, on the right YES/NO, and add nothing
   const carrierLines = new Map();
   for (const q of dataset.questions) {
     const set = carrierLines.get(q.carrierId) ?? new Set();
-    for (const o of [q.yes, q.no]) for (const l of (o?.explanation ?? '').split('\n')) set.add(l.trim());
+    for (const o of [q.yes, q.no]) for (const l of (o?.explanation ?? '').split('\n')) set.add(tidyLine(l.trim()));
     carrierLines.set(q.carrierId, set);
   }
   let multi = 0;
@@ -160,7 +160,8 @@ test('answer rows keep every approved line, on the right YES/NO, and add nothing
       for (const l of lines) {
         if (SECTION.test(l)) continue;
         if (sections > 1 && /coverage may be available\.?$/.test(l) && / or /.test(l)) continue; // distributed into the rows
-        assert.ok(shown.includes(l) || shown.includes(l.replace(/\.$/, '')), `${q.id} ${A}: line kept: ${l.slice(0, 40)}`);
+        const t = tidyLine(l);
+        assert.ok(shown.includes(t) || shown.includes(t.replace(/\.$/, '')), `${q.id} ${A}: line kept: ${l.slice(0, 40)}`);
       }
       const rule = o.rule ? carrier.rules[o.rule]?.explanation : null;
       for (const r of rows) for (const d of r.details.map(unluck)) {
@@ -195,4 +196,19 @@ test('"You\'re in luck!" appears on first-day call lines only', { skip }, () => 
   const firstDay = rows.find((r) => r.primary === 'First-day coverage may be available');
   assert.ok(firstDay && firstDay.details[0] === "You're in luck! Call 888-862-9456 to qualify.");
   assert.ok(rows.filter((r) => /^Graded/.test(r.primary)).every((r) => !r.details.some((d) => d.startsWith(LUCK))));
+});
+
+test('payout lines show no dashes: "Months 1 to 12", "Month 25 onward"', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  const r = search(prep, 'Guarantee Trust cancer');
+  const rows = r.groups.flatMap((g) => g.questions.flatMap((q) => q.answers));
+  const graded = rows.find((x) => x.primary === 'Graded coverage');
+  assert.deepEqual(graded.details, [
+    'Call 888-862-9456 to compare first-day coverage options.',
+    'Months 1 to 12: Return of premium plus 5% interest.',
+    'Months 13 to 24: 50% coverage payout.',
+    'Month 25 onward: 100% coverage payout.',
+  ]);
+  const everything = JSON.stringify(['COPD', 'heart attack', 'cancer', 'oxygen', 'diabetes', 'stroke', 'hiv'].map((t) => search(prep, t)));
+  assert.doesNotMatch(everything, /[\u2013\u2014]/, 'no en or em dash anywhere in API results');
 });

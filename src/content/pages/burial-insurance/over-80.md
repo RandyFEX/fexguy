@@ -155,7 +155,7 @@ sidebar: true
 
 <h2 id="what-kind-of-burial-policies-should-i-avoid"><strong>What kind of burial policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p><strong>In reality, most of these policies rely on you having NO BRAIN to purchase them.</strong></p>
 
@@ -163,7 +163,7 @@ sidebar: true
 
 <p>To make a long story short, it is better to shop with a specialist in burial insurance, like Funeral Funds, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
-<p><strong>INCREASING PRICE POLICIES</strong> – Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! What in tarnation!?!</p>
+<p><strong>INCREASING PRICE POLICIES</strong>: Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! What in tarnation!?!</p>
 
 <p><strong>These policies aren’t all they’re cracked up to be, and you often end up at the short end of the stick by purchasing burial insurance this way.</strong></p>
 

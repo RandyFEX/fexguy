@@ -1,0 +1,10 @@
+{
+  "_about": "Verbatim sources that keep their original en dashes (Randy, November 2026). The visible-copy dash check in scripts/check-dist.mjs fails on any en or em dash a visitor can see, except the ones matched here. 'page' limits an entry to one URL; 'text' is a phrase that must contain the dash. Never add consumer copy here: rewrite it instead.",
+  "exceptions": [
+    { "page": "/reviews/", "reason": "Customer reviews are published word for word and are never edited (CLAUDE.md: /reviews/ restored)." },
+    { "page": "/trin-fbl/", "reason": "Verbatim regulatory notice about replacing life insurance; its dashes are list markers in the quoted form text." },
+    { "text": "(Yes – No)", "reason": "Answer choices inside carrier application questions quoted word for word." },
+    { "page": "/randy-vandervaate/", "text": "Randy VanderVaate – Funeral Funds of America – Dedicated", "reason": "Published press-article title (VALIANTCEO), quoted verbatim." },
+    { "page": "/randy-vandervaate/", "text": "Our Top Picks – Job Tracking Software", "reason": "Published press-article title (WELP Magazine), quoted verbatim." }
+  ]
+}

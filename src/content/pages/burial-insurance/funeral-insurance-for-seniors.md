@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>Funeral Insurance for Seniors</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• Funeral insurance for seniors offers smaller and more affordable coverage amounts<br>• Avoid $9.95 plans, $1 a day, or plans that include 2-year waiting periods before full payout<br>• Lock in your coverage now as costs increase with age and can become expensive over time<br>• Some policies charge much more than others – Funeral Funds can shop around for the best rates<br>• Most families don’t have $10,000 to $15,000 to “donate” for your funeral service – don’t be a burden!</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• Funeral insurance for seniors offers smaller and more affordable coverage amounts<br>• Avoid $9.95 plans, $1 a day, or plans that include 2-year waiting periods before full payout<br>• Lock in your coverage now as costs increase with age and can become expensive over time<br>• Some policies charge much more than others: Funeral Funds can shop around for the best rates<br>• Most families don’t have $10,000 to $15,000 to “donate” for your funeral service, don’t be a burden!</p>
 
 <p>Funeral insurance for seniors is a type of whole life insurance designed to cover final expenses like funerals, medical bills, and small debts. Coverage is usually limited, often between $5,000 and $25,000, and is meant to ease the financial burden on your family. The appeal is easy approval, often without a medical exam, but that convenience comes with higher costs and possible waiting periods before full benefits pay out. If you don’t understand how these policies work, your family could still be left with unexpected bills.</p>
 
@@ -68,7 +68,7 @@ sidebar: true
 
 <p>There are two types of burial insurance or funeral insurance for seniors:</p>
 
-<p><strong>Simplified issue life insurance (Level benefit)</strong> – the <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> is simplified compared to traditional life insurance for seniors that requires a medical exam. Simplified issue policies ask basic health questions to better look at your overall health.</p>
+<p><strong>Simplified issue life insurance (Level benefit)</strong>: the <a href="/burial-insurance/burial-insurance-application-process/" target="_blank" rel="noreferrer noopener">application process</a> is simplified compared to traditional life insurance for seniors that requires a medical exam. Simplified issue policies ask basic health questions to better look at your overall health.</p>
 
 <p>Potential questions life insurance companies would ask:</p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p>Simplified issue life insurance is a great option for people over 55 years old who may have health problems that could make it difficult for them to get coverage through the normal life insurance underwriting process. Simplified issue final expense life insurance no exam could be a great option if you’re not in perfect health or have a&#160; busy schedule that will not allow you to have a medical exam.</p>
 
-<p><br><strong>Guaranteed issue life insurance (Graded benefit)</strong> – this type of policy is designed specifically for seniors who may have difficulty gaining approval because of health issues. This is the most common type of burial insurance for elderly parents. The guaranteed issue final expense life insurance no exam does not require an applicant to undergo a medical exam or answer health questions for approval. Applicants with life-shortening pre-existing conditions can still be approved.</p>
+<p><br><strong>Guaranteed issue life insurance (Graded benefit)</strong>: this type of policy is designed specifically for seniors who may have difficulty gaining approval because of health issues. This is the most common type of burial insurance for elderly parents. The guaranteed issue final expense life insurance no exam does not require an applicant to undergo a medical exam or answer health questions for approval. Applicants with life-shortening pre-existing conditions can still be approved.</p>
 
 <p>Insurance companies take higher risks in offering guaranteed issue policies. That is why they typically impose a two-year waiting period before they pay the full death benefit (although a covered accidental death can be paid from the first day). If you were to die during the waiting period, your beneficiary would only receive the return on premiums plus interest.</p>
 
@@ -96,25 +96,25 @@ sidebar: true
 
 <p>If you are asking yourself is it worth getting funeral insurance? Here are the advantages of funeral insurance for seniors.</p>
 
-<p><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener"><strong>No medical exam</strong></a>&#160; – Funeral insurance for seniors does not require you to undergo a medical exam. These policies can be completed on a simplified basis. You only have to answer some health questions, and the guaranteed issue policy doesn’t even have any health questions.</p>
+<p><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener"><strong>No medical exam</strong></a>: Funeral insurance for seniors does not require you to undergo a medical exam. These policies can be completed on a simplified basis. You only have to answer some health questions, and the guaranteed issue policy doesn’t even have any health questions.</p>
 
-<p><strong>No health questions policies available</strong> – if you have health issues and don’t want a medical exam and questions asked, there is a funeral insurance option for you – it is called a guaranteed issue policy. Everyone is guaranteed to be approved regardless of health issues. The only drawback is the price and the two-year waiting period.</p>
+<p><strong>No health questions policies available</strong>: if you have health issues and don’t want a medical exam and questions asked, there is a funeral insurance option for you, it is called a guaranteed issue policy. Everyone is guaranteed to be approved regardless of health issues. The only drawback is the price and the two-year waiting period.</p>
 
-<p><strong>Relaxed underwriting</strong> – since there is no medical exam and you only have to answer a few health questions, it is uncommon for applicants not to qualify. Guaranteed issue policies even accept all applicants without underwriting.</p>
+<p><strong>Relaxed underwriting</strong>: since there is no medical exam and you only have to answer a few health questions, it is uncommon for applicants not to qualify. Guaranteed issue policies even accept all applicants without underwriting.</p>
 
-<p><strong>Fast approval</strong> – final expense life insurance for senior applicants does not have a medical exam, so there is quick approval of the application. Your application can be approved in minutes to a few business days.</p>
+<p><strong>Fast approval</strong>: final expense life insurance for senior applicants does not have a medical exam, so there is quick approval of the application. Your application can be approved in minutes to a few business days.</p>
 
-<p><strong>Permanent coverage</strong> – burial insurance plans are whole life policies locked in for life. The coverage cannot expire because of increasing age or worsening health conditions. The premiums remain level and cannot increase for the policy’s life. The death benefit is locked in and cannot decrease for any reason.</p>
+<p><strong>Permanent coverage</strong>: burial insurance plans are whole life policies locked in for life. The coverage cannot expire because of increasing age or worsening health conditions. The premiums remain level and cannot increase for the policy’s life. The death benefit is locked in and cannot decrease for any reason.</p>
 
-<p><strong>Cash value</strong> – funeral insurance is whole life insurance that accumulates cash value over time. You can use the cash value to pay the premiums or borrow from the policy when you have emergencies.</p>
+<p><strong>Cash value</strong>: funeral insurance is whole life insurance that accumulates cash value over time. You can use the cash value to pay the premiums or borrow from the policy when you have emergencies.</p>
 
-<p><strong>Small face value options</strong> – you can buy as little or as much coverage as you need. The face amount you can buy ranges from $1,000 to $50,000 in coverage.</p>
+<p><strong>Small face value options</strong>: you can buy as little or as much coverage as you need. The face amount you can buy ranges from $1,000 to $50,000 in coverage.</p>
 
-<p><strong>Fast claims payout</strong> – since funeral insurance is designed to pay for the funeral and other final expenses, payouts are done quickly (unlike traditional insurance, which may take months to payout). Once the proper paperwork is submitted, you can wait for your claim to be paid within a few days to a week.</p>
+<p><strong>Fast claims payout</strong>: since funeral insurance is designed to pay for the funeral and other final expenses, payouts are done quickly (unlike traditional insurance, which may take months to payout). Once the proper paperwork is submitted, you can wait for your claim to be paid within a few days to a week.</p>
 
-<p><strong>Portable</strong> – senior final expense life insurance plan is not “locked-in” with any funeral parlor. The insurance company pays in cash, and your beneficiary will receive a tax-free check equivalent to your policy’s face amount; your loved ones have the flexibility to have your funeral service wherever they choose.</p>
+<p><strong>Portable</strong>: senior final expense life insurance plan is not “locked-in” with any funeral parlor. The insurance company pays in cash, and your beneficiary will receive a tax-free check equivalent to your policy’s face amount; your loved ones have the flexibility to have your funeral service wherever they choose.</p>
 
-<p><strong>Many carriers to choose from</strong> – there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
+<p><strong>Many carriers to choose from</strong>: there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
 
 <h2 id="what-does-funeral-insurance-cover"><strong>What does funeral insurance cover?</strong></h2>
 
@@ -169,13 +169,13 @@ sidebar: true
 
 <p>Age Limits: 50-85</p>
 
-<p>Face Amount Options: $2,500 – $25,000</p>
+<p>Face Amount Options: $2,500 to $25,000</p>
 
 <p><a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life Insurance&#160;Company </a>offers their Golden Eagle final expense plan with first-day coverage for people 50-85 years old.</p>
 
 <p>They have has flexible underwriting, and most health conditions qualify for first-day coverage. They also have an easy same-day application and phone approval process (Trinity Life &amp; Family Benefit Life use the same application questions).<br></p>
 
-<p><strong>AARP/New York Life (A++ – Superior)</strong></p>
+<p><strong>AARP/New York Life (A++: Superior)</strong></p>
 
 <p>First Year in Business: 1845</p>
 
@@ -185,7 +185,7 @@ sidebar: true
 
 <p><a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> Life insurance sold through New York Life has one of the best financial ratings from A.M. Best. AARP easy acceptance life insurance is a <strong>guaranteed issue policy (more expensive)</strong>&#160;where you cannot be rejected regardless of your health condition. The death benefit range from $2,500 to $25,000, and you need to be 50 to 80 years old to qualify</p>
 
-<p><strong>CAUTION</strong> – New York life or AARP burial insurance is easy to apply for, but the pricing increases as you get older. Many people have to cancel their policies because they get too expensive as they age (when they need this coverage the most). Burial insurance for seniors AARP has high prices, increasing over time. Contact us for better pricing and coverage options.</p>
+<p><strong>CAUTION</strong>: New York life or AARP burial insurance is easy to apply for, but the pricing increases as you get older. Many people have to cancel their policies because they get too expensive as they age (when they need this coverage the most). Burial insurance for seniors AARP has high prices, increasing over time. Contact us for better pricing and coverage options.</p>
 
 <p><br><strong>Mutual of Omaha (A+ -Superior)</strong></p>
 
@@ -197,7 +197,7 @@ sidebar: true
 
 <p><a href="/mutual-of-omaha-burial-insurance/" target="_blank" rel="noreferrer noopener">Mutual of Omaha</a> provides some of the lowest rates on funeral insurance for seniors, particularly those over 80 years old. If you don’t have cancer, heart ailments, or major chronic diseases, there’s a good chance you will qualify for their plans. If you get approved, Mutual of Omaha burial insurance offers immediate coverage with no waiting period.</p>
 
-<p><br><strong>TransAmerica (A+ – Superior)</strong></p>
+<p><br><strong>TransAmerica (A+: Superior)</strong></p>
 
 <p>First Year in Business: 1904</p>
 
@@ -207,7 +207,7 @@ sidebar: true
 
 <p>TransAmerica offers two plans with immediate coverage. Both their Preferred and Standard plans come with no waiting period. TransAmerica has a competitive price for most ages. The Immediate Solution plan has no medical exams or health questions asked. It offers no waiting period to people with COPD, emphysema, or kidney disease.</p>
 
-<p><br><strong>AIG (A – Excellent)</strong></p>
+<p><br><strong>AIG (A: Excellent)</strong></p>
 
 <p>First Year in Business: 1919</p>
 
@@ -217,7 +217,7 @@ sidebar: true
 
 <p>AIG has some of the lowest rates for guaranteed issue life insurance today. AIG burial insurance is a  guaranteed issue life insurance for people between 50 and 85 years old. AIG final expense insurance is issued by American General Life in all states except New York. The maximum death benefit is $25,000. Chronic illness riders and Terminal illness riders are included in the plan at no extra cost.</p>
 
-<p><br><strong>Foresters (A – Excellent)</strong></p>
+<p><br><strong>Foresters (A: Excellent)</strong></p>
 
 <p>First Year in Business: 1874</p>
 
@@ -227,17 +227,17 @@ sidebar: true
 
 <p>Foresters offer simplified issue funeral insurance policies. Their Plan Right whole life policy has reasonable rates. The policy is priced well, making it one of the most affordable burial insurance in the market today. The death benefit ranges from $2,000 to $35,000; you can purchase it up to age 80.</p>
 
-<p><br><strong>Gerber (A – Excellent)</strong></p>
+<p><br><strong>Gerber (A: Excellent)</strong></p>
 
 <p>First Year in Business: 1967</p>
 
 <p>Age Limits: 50-85</p>
 
-<p>Face amount options: $5,000 – $25,000</p>
+<p>Face amount options: $5,000 to $25,000</p>
 
 <p><a href="/gerber-life-insurance-review/" target="_blank" rel="noreferrer noopener">Gerber Life</a> only offers a guaranteed issue whole-life policy designed for people with health issues who want to secure affordable insurance coverage. Gerber offers some of the most affordable prices for guaranteed issue life insurance. The plan has a two-year graded benefit, but if the insured dies from accidental death, the full face amount will be paid even during the waiting period.</p>
 
-<p><br><strong>Assurity (A – Excellent)</strong></p>
+<p><br><strong>Assurity (A: Excellent)</strong></p>
 
 <p>First Year in Business: 1890</p>
 
@@ -247,7 +247,7 @@ sidebar: true
 
 <p>Assurity offers a simplified issue policy with level benefit and a guaranteed issue with graded benefit. LifeScape is a simplified issue policy with immediate coverage from day 1. It does not require a medical exam, but you must answer some health questions. Assurity offers immediate coverage to people with COPD and emphysema.</p>
 
-<p><br><strong>Americo ( A – Excellent)</strong></p>
+<p><br><strong>Americo ( A: Excellent)</strong></p>
 
 <p>First Year in Business: 1909</p>
 
@@ -265,7 +265,7 @@ sidebar: true
 
 <h2 id="types-of-funeral-insurance-to-avoid"><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p><strong>In reality, most of these policies rely on you having NO BRAIN to purchase them.</strong></p>
 
