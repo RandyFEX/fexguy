@@ -236,6 +236,23 @@ function outcome(carrier, o) {
   return explanation ? { classification, explanation } : null;
 }
 
+// Outcomes that point to a reduced-benefit plan show that plan's approved
+// payout schedule. Randy's records name them "modified-may-be-available",
+// "graded-may-be-available" and "graded-plan" (the sample data uses the
+// short forms). "first-day-or-…" outcomes don't point to one plan.
+const SCHEDULE_FOR = /** @type {Record<string, 'modified' | 'graded'>} */ ({
+  modified: 'modified',
+  'modified-may-be-available': 'modified',
+  graded: 'graded',
+  'graded-may-be-available': 'graded',
+  'graded-plan': 'graded',
+  timeframe: 'graded',
+});
+/** @param {string | null | undefined} c */
+function schedulePlan(c) {
+  return c ? SCHEDULE_FOR[c] ?? null : null;
+}
+
 /** @param {Carrier} carrier @param {{ q: Question, type: 'direct' | 'related', because: string }[]} ms */
 function presentGroup(carrier, ms) {
   // Direct matches first, then related ones; each in the application's own order.
@@ -245,8 +262,8 @@ function presentGroup(carrier, ms) {
     const yes = outcome(carrier, q.yes);
     const no = outcome(carrier, q.no);
     for (const c of [yes?.classification, no?.classification]) {
-      if (c === 'modified' && carrier.schedules.modified) usedSchedules.add('modified');
-      if ((c === 'graded' || c === 'timeframe') && carrier.schedules.graded) usedSchedules.add('graded');
+      const plan = schedulePlan(c);
+      if (plan && carrier.schedules[plan]) usedSchedules.add(plan);
     }
     return {
       section: q.section,

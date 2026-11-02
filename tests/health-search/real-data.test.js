@@ -119,3 +119,14 @@ test('common consumer searches reach the right questions', { skip }, () => {
   const sub = search(prep, 'suboxone');
   assert.ok(sub.matchCount > 0 && sub.directCount === 0);
 });
+
+test('outcomes that point to a modified or graded plan show its approved payout schedule', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  const groups = (q) => [1, 2, 3].flatMap((page) => search(prep, q, { page }).groups ?? []);
+  const label = (q, carrier) => groups(q).find((g) => g.carrier === carrier)?.schedules.map((s) => s.label) ?? [];
+  assert.ok(label('heart attack', 'Aflac').includes('Modified benefit'), 'Aflac modified schedule');
+  assert.ok(label('heart attack', 'Family Benefit Life').includes('Graded benefit'), 'FBL graded schedule');
+  assert.ok(label('cancer', 'Guarantee Trust Life').includes('Graded benefit'), 'GTL graded schedule');
+  // A question whose outcomes never point to a reduced plan shows no schedule.
+  assert.deepEqual(label('hiv', 'Family Benefit Life'), []);
+});
