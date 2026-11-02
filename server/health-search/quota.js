@@ -1,7 +1,8 @@
 // @ts-check
-// Three searches per visitor in a rolling 24-hour window, plus a separate
-// per-IP abuse limit. Enforced by one Redis Lua script, so the check and the
-// increment are atomic: parallel requests cannot slip past the limit.
+// Ten searches per visitor in a rolling 24-hour window, plus two separate
+// per-IP abuse limits (searches per hour, and any request in a short burst).
+// Enforced by one Redis Lua script, so the check and the increment are
+// atomic: parallel requests cannot slip past the limit.
 //
 // Stored (all keys are HMACs, never raw cookie values, IPs or search terms;
 // entries older than the window are removed on every call and each key
@@ -10,16 +11,21 @@
 //   hqs:q:<visitor>   hash of accepted query fingerprints -> time, so reopening
 //                     or paging an already accepted search costs nothing
 //   hqs:ip:<ip>       sorted set of search requests from one IP
+//   hqs:b:<ip>:<n>    count of all requests from one IP in 10-minute block n
+//                     (status checks and reopened searches included, so
+//                     nothing reaches the store without a limit)
 
 export const QUOTA = {
-  perVisitor: 3,
+  perVisitor: 10,
   windowMs: 24 * 60 * 60 * 1000,
   ipPerHour: 40,
   ipWindowMs: 60 * 60 * 1000,
+  burstPerIp: 30,
+  burstWindowMs: 10 * 60 * 1000,
 };
 
-// KEYS[1] visitor set, KEYS[2] visitor query hash, KEYS[3] ip set
-// ARGV: now, windowMs, limit, queryFp, ipLimit, ipWindowMs, mode, member
+// KEYS[1] visitor set, KEYS[2] visitor query hash, KEYS[3] ip set, KEYS[4] ip burst counter
+// ARGV: now, windowMs, limit, queryFp, ipLimit, ipWindowMs, mode, member, burstLimit, burstWindowMs, burstEnd
 // mode: 'status' (read only), 'search' (count if new), 'nomatch' (ip only)
 // Returns { code, used, oldest } where code is
 //   'ok' (counted), 'repeat' (already accepted, not counted),
@@ -33,6 +39,16 @@ local ipLimit = tonumber(ARGV[5])
 local ipWindow = tonumber(ARGV[6])
 local mode = ARGV[7]
 local member = ARGV[8]
+local burstLimit = tonumber(ARGV[9])
+local burstWindow = tonumber(ARGV[10])
+local burstEnd = tonumber(ARGV[11])
+
+-- Every request from an IP counts toward the burst limit, whatever it asks.
+local burst = redis.call('INCR', KEYS[4])
+if burst == 1 then redis.call('PEXPIRE', KEYS[4], burstWindow) end
+if burst > burstLimit then
+  return {'ip-limited', 0, burstEnd - window}
+end
 
 redis.call('ZREMRANGEBYSCORE', KEYS[1], '-inf', now - window)
 -- Drop query fingerprints older than the window (never kept longer).
@@ -85,14 +101,16 @@ return {'ok', used + 1, oldest()}
  * @param {{ visitor: string, ip: string, queryFp: string, now: number, mode: 'status' | 'search' | 'nomatch', member: string }} p
  */
 export async function runQuota(store, p) {
+  const block = Math.floor(p.now / QUOTA.burstWindowMs);
   const raw = /** @type {[string, number, number]} */ (await store.eval(
     QUOTA_SCRIPT,
-    [`hqs:v:${p.visitor}`, `hqs:q:${p.visitor}`, `hqs:ip:${p.ip}`],
-    [p.now, QUOTA.windowMs, QUOTA.perVisitor, p.queryFp, QUOTA.ipPerHour, QUOTA.ipWindowMs, p.mode, p.member],
+    [`hqs:v:${p.visitor}`, `hqs:q:${p.visitor}`, `hqs:ip:${p.ip}`, `hqs:b:${p.ip}:${block}`],
+    [p.now, QUOTA.windowMs, QUOTA.perVisitor, p.queryFp, QUOTA.ipPerHour, QUOTA.ipWindowMs, p.mode, p.member, QUOTA.burstPerIp, QUOTA.burstWindowMs, (block + 1) * QUOTA.burstWindowMs],
   ));
   const [code, used, oldest] = [String(raw[0]), Number(raw[1]), Number(raw[2])];
   const remaining = Math.max(0, QUOTA.perVisitor - used);
   // The allowance frees up one search when the oldest accepted one ages out.
-  const resetAt = used > 0 && oldest > 0 ? oldest + QUOTA.windowMs : null;
+  // For an IP limit, "oldest" is set so that oldest + windowMs is when it lifts.
+  const resetAt = code === 'ip-limited' ? oldest + QUOTA.windowMs : used > 0 && oldest > 0 ? oldest + QUOTA.windowMs : null;
   return { code, used, remaining, resetAt };
 }

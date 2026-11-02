@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Our health question search shows which insurance application questions relate to a health condition you type. The words you type are sent to our website hosting provider only to find the matching questions. We do not store them or log them, and we do not send them to Google Analytics or the Meta Pixel.</p>
 
-<p>To limit each browser to three searches in a rolling 24 hours, the search sets a cookie (ff_hqs) containing a random code that identifies your browser. It is used only for this limit and expires after 7 days. To apply the limit, we keep the following in coded form, never readable: a count of your recent searches and a fingerprint of each search, so that reopening or paging through the same search is not counted twice, both deleted automatically within 48 hours of your last search; and your network (IP) address, used to limit automated use and deleted automatically within two hours. This information is stored with Upstash, a database service.</p>
+<p>To limit each browser to ten searches in a rolling 24 hours, the search sets a cookie (ff_hqs) containing a random code that identifies your browser. It is used only for this limit and expires after 7 days. To apply the limit, we keep the following in coded form, never readable: a count of your recent searches and a fingerprint of each search, so that reopening or paging through the same search is not counted twice, both deleted automatically within 48 hours of your last search; and your network (IP) address, used to limit automated use and deleted automatically within two hours. This information is stored with Upstash, a database service.</p>
 
 <h2>Cookies and similar technologies</h2>
 

@@ -58,18 +58,21 @@ await check('only same-site POST requests are accepted', async () => {
 });
 
 const a = visitor();
-await check('real records are served (not the sample), 3 searches available', async () => {
+let L = 10;
+await check('real records are served (not the sample), 10 searches available', async () => {
   const s = await a({ action: 'status' });
   assert.equal(s.http, 200, JSON.stringify(s.body.status));
   assert.equal(s.body.sample, false);
-  assert.equal(s.body.remaining, 3);
+  assert.equal(s.body.limit, 10);
+  L = s.body.limit;
+  assert.equal(s.body.remaining, L);
 });
 
 await check('COPD: grouped results, CICA Life Insurance named, no internal fields, counted once', async () => {
   const r = await a({ q: 'COPD' });
   assert.equal(r.http, 200);
   assert.equal(r.body.counted, true);
-  assert.equal(r.body.remaining, 2);
+  assert.equal(r.body.remaining, L - 1);
   assert.ok(r.body.directCount > 0);
   const text = JSON.stringify(r.body);
   for (const f of ['"search"', '"id"', '"sharedKey"', '"source"', '"carrierId"', '"corrections"']) assert.ok(!text.includes(f), f);
@@ -84,15 +87,25 @@ await check('COPD: grouped results, CICA Life Insurance named, no internal field
 await check('a repeated search is not counted', async () => {
   const r = await a({ q: 'COPD' });
   assert.equal(r.body.counted, false);
-  assert.equal(r.body.remaining, 2);
+  assert.equal(r.body.remaining, L - 1);
 });
 
-await check('third search uses the last one; the fourth new search is refused', async () => {
-  assert.equal((await a({ q: 'heart attack' })).body.remaining, 1);
-  assert.equal((await a({ q: 'stroke' })).body.remaining, 0);
-  const fourth = await a({ q: 'insulin' });
-  assert.equal(fourth.http, 429);
-  assert.equal(fourth.body.status, 'exhausted');
+await check('the rest of the daily allowance, then a new search is refused', async () => {
+  const terms = ['heart attack', 'stroke', 'insulin', 'oxygen', 'dialysis', 'cancer', 'hospice', 'dementia', 'stent', 'diabetes', 'hiv'];
+  for (let i = 0; i < L - 1; i++) assert.equal((await a({ q: terms[i] })).body.remaining, L - 2 - i, terms[i]);
+  const over = await a({ q: terms[L - 1] });
+  assert.equal(over.http, 429);
+  assert.equal(over.body.status, 'exhausted');
+});
+
+await check('a carrier name alone is not a search; with a condition it narrows', async () => {
+  const c = visitor();
+  const only = await c({ q: 'Aflac' });
+  assert.equal(only.http, 400);
+  assert.match(only.body.message, /Aflac COPD/);
+  const r = await c({ q: 'Aflac COPD' });
+  assert.equal(r.http, 200);
+  assert.ok(r.body.groups.length === 1 && r.body.groups[0].carrier === 'Aflac');
 });
 
 await check('an earlier search still reopens after the limit', async () => {

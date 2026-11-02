@@ -3,6 +3,7 @@ import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { startRedis } from './redis-test-server.js';
 import { handleSearch, COOKIE } from '../../server/health-search/handler.js';
+import { QUOTA } from '../../server/health-search/quota.js';
 import { sampleDataset } from '../../server/health-search/sample-dataset.js';
 import { upstashStore, redisConfig } from '../../server/health-search/stores.js';
 
@@ -50,24 +51,53 @@ test('issues an HttpOnly visitor cookie and reuses it', async () => {
   assert.equal(r1.headers.get('x-robots-tag'), 'noindex, nofollow');
 });
 
-test('three searches, then exhausted; earlier results can still be reopened', async () => {
+test('the daily allowance, then exhausted; earlier results can still be reopened', async () => {
+  const L = QUOTA.perVisitor;
   const first = await handleSearch(req({ action: 'status' }), env, deps());
   const cookie = cookieOf(first);
   const ip = '203.0.113.7';
   const body = async (r) => ({ ...(await r.json()), http: r.status });
-  const a = await body(await handleSearch(req({ q: 'COPD' }, { cookie, ip }), env, deps()));
-  assert.equal(a.http, 200); assert.equal(a.remaining, 2); assert.equal(a.counted, true); assert.equal(a.sample, true);
-  const b = await body(await handleSearch(req({ q: 'heart attack' }, { cookie, ip }), env, deps()));
-  assert.equal(b.remaining, 1);
-  const none = await body(await handleSearch(req({ q: 'hip replacement' }, { cookie, ip }), env, deps()));
-  assert.equal(none.http, 200); assert.equal(none.matchCount, 0); assert.equal(none.remaining, 1, 'no-match search is free');
-  const c = await body(await handleSearch(req({ q: 'insulin' }, { cookie, ip }), env, deps()));
-  assert.equal(c.remaining, 0);
-  const d = await body(await handleSearch(req({ q: 'stroke' }, { cookie, ip }), env, deps()));
+  const terms = ['COPD', 'heart attack', 'insulin', 'stroke', 'oxygen', 'dialysis', 'hospice', 'ALS', 'emphysema', 'stent', 'diabetes', 'angioplasty'];
+  assert.ok(terms.length > L);
+  for (let i = 0; i < L; i++) {
+    const r = await body(await handleSearch(req({ q: terms[i] }, { cookie, ip }), env, deps()));
+    assert.equal(r.http, 200, terms[i]); assert.equal(r.counted, true, terms[i]); assert.equal(r.remaining, L - 1 - i); assert.equal(r.limit, L);
+    assert.equal(r.sample, true);
+    if (i === 1) {
+      const none = await body(await handleSearch(req({ q: 'hip replacement' }, { cookie, ip }), env, deps()));
+      assert.equal(none.http, 200); assert.equal(none.matchCount, 0); assert.equal(none.remaining, L - 2, 'no-match search is free');
+    }
+  }
+  const d = await body(await handleSearch(req({ q: terms[L] }, { cookie, ip }), env, deps()));
   assert.equal(d.http, 429); assert.equal(d.status, 'exhausted'); assert.equal(d.remaining, 0); assert.ok(d.resetAt > Date.now());
   // Reopening an accepted search (same words, different spacing/case) is allowed and free.
   const again = await body(await handleSearch(req({ q: '  copd ' }, { cookie, ip }), env, deps()));
   assert.equal(again.http, 200); assert.equal(again.counted, false); assert.equal(again.remaining, 0);
+});
+
+test('records are loaded only after a request passes every check', async () => {
+  let loads = 0;
+  const lazy = () => ({ store: redis.store, getDataset: async () => { loads++; return sampleDataset; } });
+  for (const r of [
+    req({ q: 'copd' }, { origin: 'https://example.com' }),
+    req({ q: 'copd' }, { type: 'text/plain' }),
+    req('not json'),
+    req({ q: '12345' }),
+    req({ q: 'one two three four five six seven eight nine' }),
+    req({ q: 'x'.repeat(61) }),
+  ]) assert.notEqual((await handleSearch(r, env, lazy())).status, 200);
+  assert.equal(loads, 0);
+  assert.equal((await handleSearch(req({ q: 'copd' }), env, lazy())).status, 200);
+  assert.equal(loads, 1);
+});
+
+test('one IP sending many requests of any kind is slowed down (status checks included)', async () => {
+  const ip = '203.0.113.99';
+  let last;
+  for (let i = 0; i <= QUOTA.burstPerIp; i++) last = await handleSearch(req({ action: 'status' }, { ip }), env, deps());
+  assert.equal(last.status, 429);
+  assert.equal((await last.json()).status, 'rate-limited');
+  assert.ok(Number(last.headers.get('retry-after')) >= 60);
 });
 
 test('stores no readable cookie, IP or search text in Redis', async () => {

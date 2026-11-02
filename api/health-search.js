@@ -22,15 +22,10 @@ const cfg = redisConfig(process.env);
 const store = cfg ? upstashStore(cfg) : null;
 
 export async function POST(request) {
-  let dataset = null;
-  if (store) {
-    try {
-      dataset = await loadDataset(store, process.env, config, sampleDataset);
-    } catch {
-      dataset = null; // store unreachable: the handler answers 503
-    }
-  }
-  return handleSearch(request, process.env, { store, dataset });
+  // The records are read only after the request passes every check in the
+  // handler, so malformed or forged requests never reach the store.
+  const getDataset = store ? () => loadDataset(store, process.env, config, sampleDataset) : undefined;
+  return handleSearch(request, process.env, { store, getDataset });
 }
 
 export async function GET(request) {

@@ -14,9 +14,17 @@ import { runQuota, QUOTA } from './quota.js';
 export const COOKIE = 'ff_hqs';
 const COOKIE_RE = /^[A-Za-z0-9_-]{22}$/;
 const QUERY_RE = /^[\p{L}\p{N}\s'’.,()&/+-]+$/u;
+const HAS_LETTER = /\p{L}/u;
+const MAX_WORDS = 8;
 const MAX_BODY = 2048;
 
-/** @typedef {{ store: import('./quota.js').QuotaStore | null, dataset: import('./search.js').Dataset | null, now?: () => number }} Deps */
+/**
+ * `getDataset` loads the records only once a request has passed every check,
+ * so malformed or forged requests never read the store. (`dataset` is the
+ * same thing, already loaded; used by tests.)
+ * @typedef {{ store: import('./quota.js').QuotaStore | null, dataset?: import('./search.js').Dataset | null,
+ *   getDataset?: () => Promise<import('./search.js').Dataset | null>, now?: () => number }} Deps
+ */
 
 /** Origins allowed to call the API (same-site browser requests only). @param {string | null} origin @param {Record<string, string | undefined>} env */
 function allowedOrigin(origin, env) {
@@ -28,6 +36,13 @@ function allowedOrigin(origin, env) {
   if (env.VERCEL_ENV !== 'production' && /^https:\/\/fexguy-[a-z0-9-]+\.vercel\.app$/.test(origin)) return true;
   if (env.VERCEL_ENV === undefined && /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return true;
   return false;
+}
+
+/** @param {number | null} resetAt @param {number} now @param {Record<string, string>} headers */
+function rateLimited(resetAt, now, headers) {
+  return json(429, { status: 'rate-limited', message: 'Too many searches from this network. Please try again later.', resetAt }, {
+    ...headers, 'Retry-After': String(Math.max(60, Math.ceil(((resetAt ?? now + 3600000) - now) / 1000))),
+  });
 }
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
@@ -78,9 +93,15 @@ export async function handleSearch(request, env, deps) {
     return json(415, { status: 'unsupported-media-type' });
   }
   const secret = env.HEALTH_SEARCH_SECRET ?? '';
-  if (!deps.store || secret.length < 32 || !deps.dataset) {
+  if (!deps.store || secret.length < 32 || (!deps.dataset && !deps.getDataset)) {
     return json(503, { status: 'unavailable', message: 'The health question search is not available right now.' });
   }
+  const store = deps.store;
+  /** @returns {Promise<import('./search.js').Dataset | null>} */
+  const getDataset = async () => {
+    if (deps.dataset) return deps.dataset;
+    try { return (await deps.getDataset?.()) ?? null; } catch { return null; }
+  };
 
   const raw = await request.text();
   if (raw.length > MAX_BODY) return json(413, { status: 'too-large' });
@@ -101,12 +122,15 @@ export async function handleSearch(request, env, deps) {
   const ip = mac('ip', clientIp(request));
   const now = (deps.now ?? Date.now)();
   const member = `${now}:${randomBytes(6).toString('base64url')}`;
-  const sample = Boolean(deps.dataset.sample);
+  const unavailable = () => json(503, { status: 'unavailable', message: 'The health question search is not available right now.' }, headers);
 
   try {
     if (body.action === 'status') {
-      const s = await runQuota(deps.store, { visitor, ip, queryFp: '-', now, mode: 'status', member });
-      return json(200, { status: 'quota', remaining: s.remaining, limit: QUOTA.perVisitor, resetAt: s.resetAt, sample }, headers);
+      const s = await runQuota(store, { visitor, ip, queryFp: '-', now, mode: 'status', member });
+      if (s.code === 'ip-limited') return rateLimited(s.resetAt, now, headers);
+      const dataset = await getDataset();
+      if (!dataset) return unavailable();
+      return json(200, { status: 'quota', remaining: s.remaining, limit: QUOTA.perVisitor, resetAt: s.resetAt, sample: Boolean(dataset.sample) }, headers);
     }
 
     const q = typeof body.q === 'string' ? body.q.trim() : '';
@@ -115,11 +139,14 @@ export async function handleSearch(request, env, deps) {
     if (q.length < LIMITS.minQueryChars) {
       return json(400, { status: 'too-short', message: 'Please type at least 2 letters, such as "COPD" or "heart attack".' }, headers);
     }
-    if (q.length > LIMITS.maxQueryChars || !QUERY_RE.test(q)) {
+    if (q.length > LIMITS.maxQueryChars || !QUERY_RE.test(q) || !HAS_LETTER.test(q) || q.split(/\s+/).length > MAX_WORDS) {
       return json(400, { status: 'invalid', message: `Please use letters and numbers only, up to ${LIMITS.maxQueryChars} characters.` }, headers);
     }
 
-    const result = search(prepFor(deps.dataset), q, { page });
+    const dataset = await getDataset();
+    if (!dataset) return unavailable();
+    const sample = Boolean(dataset.sample);
+    const result = search(prepFor(dataset), q, { page });
     if (!result.ok && result.reason === 'carrier-only') {
       const name = result.carriers?.[0] ?? 'that company';
       return json(400, { status: 'too-short', message: `Add a health condition to see ${name}'s questions about it, such as "${name.split(' (')[0]} COPD" or "${name.split(' (')[0]} heart attack".` }, headers);
@@ -129,13 +156,9 @@ export async function handleSearch(request, env, deps) {
     }
     const queryFp = mac('query', normalize(q));
     const found = (result.matchCount ?? 0) > 0;
-    const quota = await runQuota(deps.store, { visitor, ip, queryFp, now, mode: found ? 'search' : 'nomatch', member });
+    const quota = await runQuota(store, { visitor, ip, queryFp, now, mode: found ? 'search' : 'nomatch', member });
 
-    if (quota.code === 'ip-limited') {
-      return json(429, { status: 'rate-limited', message: 'Too many searches from this network. Please try again later.', resetAt: quota.resetAt }, {
-        ...headers, 'Retry-After': String(Math.max(60, Math.ceil(((quota.resetAt ?? now + 3600000) - now) / 1000))),
-      });
-    }
+    if (quota.code === 'ip-limited') return rateLimited(quota.resetAt, now, headers);
     if (quota.code === 'exhausted') {
       return json(429, { status: 'exhausted', remaining: 0, limit: QUOTA.perVisitor, resetAt: quota.resetAt, sample }, headers);
     }

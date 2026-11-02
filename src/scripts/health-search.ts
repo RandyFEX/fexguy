@@ -133,11 +133,15 @@ function setup(root: HTMLElement) {
   const phoneHref = root.dataset.phoneHref ?? 'tel:8888629456';
   const phoneDisplay = root.dataset.phoneDisplay ?? '888-862-9456';
   let busy = false;
+  // The daily allowance comes from the server (QUOTA.perVisitor); the page
+  // states it too (data-limit), for the moment before the first answer.
+  let limit = Number(allowance.dataset.limit) || 10;
 
-  const showAllowance = (remaining: number | undefined, resetAt?: number | null) => {
+  const showAllowance = (remaining: number | undefined, resetAt?: number | null, max?: number) => {
     if (remaining === undefined) return;
+    if (max) limit = max;
     if (remaining > 0) {
-      allowance.textContent = `${remaining} of 3 searches left today.`;
+      allowance.textContent = `${remaining} of ${limit} searches left today.`;
       allowance.classList.remove('is-out');
     } else {
       allowance.textContent = `No searches left until ${whenText(resetAt)}.`;
@@ -162,7 +166,7 @@ function setup(root: HTMLElement) {
 
   const showExhausted = (resetAt?: number | null) => {
     showAllowance(0, resetAt);
-    setStatus('', callBox(`You've used your 3 searches for today. You can search again ${resetAt ? `after ${whenText(resetAt)}` : 'tomorrow'}. To go over more health questions and your coverage options, call Funeral Funds.`));
+    setStatus('', callBox(`You've used your ${limit} searches for today. You can search again ${resetAt ? `after ${whenText(resetAt)}` : 'tomorrow'}. To go over more health questions and your coverage options, call Funeral Funds.`));
     status.querySelector('.hqs-callbox')?.classList.add('hqs-callbox--strong');
   };
 
@@ -204,7 +208,7 @@ function setup(root: HTMLElement) {
     busy = false;
     button.disabled = false;
     if (data.status === 'ok') {
-      showAllowance(data.remaining, data.resetAt);
+      showAllowance(data.remaining, data.resetAt, data.limit);
       setStatus(page === 1 ? `${data.matchCount ? `${data.matchCount} matching question${data.matchCount === 1 ? '' : 's'} found.` : 'No matching questions found.'}` : 'More insurance companies loaded.');
       renderResults(q, data, page > 1);
       if (data.remaining === 0 && data.counted) showExhausted(data.resetAt);
@@ -248,7 +252,7 @@ function setup(root: HTMLElement) {
   const loadStatus = async () => {
     const { data } = await call({ action: 'status' });
     if (data.status === 'quota') {
-      showAllowance(data.remaining, data.resetAt);
+      showAllowance(data.remaining, data.resetAt, data.limit);
     }
   };
   if ('IntersectionObserver' in window) {

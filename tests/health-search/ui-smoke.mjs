@@ -1,7 +1,7 @@
 // Browser check of the Health Question Search on the built preview page:
 //   npm run build && node tests/health-search/ui-smoke.mjs
 // Serves dist/ plus the real API handler (local redis-server, fictional
-// sample data), then drives Chromium: search, results, three-search limit,
+// sample data), then drives Chromium: search, results, the daily search limit,
 // reopening results, modal keyboard behavior, phone link, mobile layout.
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -18,13 +18,16 @@ const DIST = new URL('../../dist/', import.meta.url).pathname;
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.avif': 'image/avif' };
 
 const redis = await startRedis();
+// Each request gets its own address so the per-IP burst limit (tested in
+// quota/handler tests) doesn't interfere with the per-visitor allowance here.
+let ipN = 0;
 const env = { HEALTH_SEARCH_SECRET: 'u'.repeat(40) };
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
   if (url.pathname === '/api/health-search/') {
     const chunks = [];
     for await (const c of req) chunks.push(c);
-    const request = new Request(url, { method: req.method, headers: { ...req.headers, 'x-real-ip': '127.0.0.1' }, body: req.method === 'POST' ? Buffer.concat(chunks) : undefined });
+    const request = new Request(url, { method: req.method, headers: { ...req.headers, 'x-real-ip': `127.0.0.${(ipN++ % 250) + 1}` }, body: req.method === 'POST' ? Buffer.concat(chunks) : undefined });
     const r = await handleSearch(request, env, { store: redis.store, dataset: sampleDataset });
     res.writeHead(r.status, Object.fromEntries(r.headers));
     return res.end(Buffer.from(await r.arrayBuffer()));
@@ -53,8 +56,8 @@ try {
   await page.goto(`${base}/health-question-search-preview/`);
   const inline = page.locator('section.hqs').first();
 
-  await check('allowance shows 3 searches on load', async () => {
-    await inline.locator('[data-hqs-allowance]').filter({ hasText: '3 of 3 searches left today.' }).waitFor({ timeout: 5000 });
+  await check('allowance shows 10 searches on load', async () => {
+    await inline.locator('[data-hqs-allowance]').filter({ hasText: '10 of 10 searches left today.' }).waitFor({ timeout: 5000 });
   });
   await check('search shows grouped results with direct/related labels and verbatim question', async () => {
     await inline.getByLabel('Health condition, procedure or medication').fill('heart attack');
@@ -63,16 +66,16 @@ try {
     assert.ok(await inline.locator('.hqs-badge--direct').count() >= 1);
     assert.ok((await inline.locator('.hqs-q__text').first().innerText()).includes('heart attack'));
     assert.match(await inline.locator('.hqs-sample').innerText(), /sample questions/);
-    assert.match(await inline.locator('[data-hqs-allowance]').innerText(), /2 of 3/);
+    assert.match(await inline.locator('[data-hqs-allowance]').innerText(), /9 of 10/);
   });
   await check('a search with no matches is free and explains what to try', async () => {
     await inline.getByLabel('Health condition, procedure or medication').fill('hip replacement');
     await inline.getByRole('button', { name: 'Search' }).click();
     await inline.locator('.hqs-empty').waitFor();
-    assert.match(await inline.locator('[data-hqs-allowance]').innerText(), /2 of 3/);
+    assert.match(await inline.locator('[data-hqs-allowance]').innerText(), /9 of 10/);
   });
-  await check('third search, then the allowance is exhausted with a prominent call option', async () => {
-    for (const q of ['copd', 'insulin']) {
+  await check('tenth search, then the allowance is exhausted with a prominent call option', async () => {
+    for (const q of ['copd', 'oxygen', 'dialysis', 'hospice', 'als', 'emphysema', 'stroke', 'stent', 'insulin']) {
       await inline.getByLabel('Health condition, procedure or medication').fill(q);
       await inline.getByRole('button', { name: 'Search' }).click();
       await inline.locator('.hqs-carrier').first().waitFor();
@@ -81,15 +84,15 @@ try {
     const call = inline.locator('.hqs-callbox--strong a');
     assert.equal(await call.getAttribute('href'), 'tel:8888629456');
     assert.match(await call.innerText(), /888-862-9456/);
-    assert.ok((await inline.locator('.hqs-q__text').first().innerText()).includes('insulin'), 'third result stays visible');
+    assert.ok((await inline.locator('.hqs-q__text').first().innerText()).includes('insulin'), 'last result stays visible');
   });
-  await check('a fourth new search is blocked; the server agrees after reload', async () => {
-    await inline.getByLabel('Health condition, procedure or medication').fill('stroke');
+  await check('an eleventh new search is blocked; the server agrees after reload', async () => {
+    await inline.getByLabel('Health condition, procedure or medication').fill('diabetes');
     await inline.getByRole('button', { name: 'Search' }).click();
     assert.ok((await inline.locator('.hqs-q__text').first().innerText()).includes('insulin'));
     await page.reload();
     await page.locator('section.hqs [data-hqs-allowance]').filter({ hasText: 'No searches left' }).waitFor({ timeout: 5000 });
-    const res = await page.evaluate(async () => (await fetch('/api/health-search/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q: 'stroke' }) })).status);
+    const res = await page.evaluate(async () => (await fetch('/api/health-search/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q: 'diabetes' }) })).status);
     assert.equal(res, 429);
   });
   await check('an earlier search can be reopened after exhaustion (not counted)', async () => {

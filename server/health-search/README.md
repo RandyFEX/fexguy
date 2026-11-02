@@ -25,7 +25,7 @@ fall back to the fictional sample when nothing is published.
 | `question-store.js`, `publish.js` | Loading and checking the stored records; building and exporting the payload |
 | `validate.js` | Inventory and consistency rules (7 carriers, 88 questions, sections, variants, shared wording) |
 | `search.js`, `normalize.js` | Matching and ranking |
-| `quota.js`, `stores.js` | 3-searches-per-24-hours allowance (Redis Lua, atomic) and the Upstash REST client |
+| `quota.js`, `stores.js` | 10-searches-per-24-hours allowance (Redis Lua, atomic) and the Upstash REST client |
 | `handler.js` | Request validation, cookie, quota, response |
 | `sample-dataset.js` | Fictional sample data for previews and tests only |
 
@@ -121,9 +121,11 @@ offers the phone number: the limit is never faked.
   Upstash database's eviction setting off so they are never evicted.
 - Visitor cookie `ff_hqs`: random, HttpOnly, Secure, SameSite=Strict,
   path `/api/health-search`, 7 days.
-- Each visitor gets 3 new searches per rolling 24 hours. Reopening or paging
+- Each visitor gets 10 new searches per rolling 24 hours. Reopening or paging
   a search already accepted is free, and so are searches with no matches.
-  Each IP also has a separate limit of 40 searches an hour, so shared networks
+  Each IP also has a separate limit of 40 searches an hour, and of 30
+  requests of any kind (status checks and reopened searches included) per
+  10 minutes, so shared networks
   work while bulk scraping is slowed. Clearing cookies resets the per-visitor
   count, so this discourages scraping without preventing it.
 - Responses contain only the matched questions (at most 40, 3 carriers per
