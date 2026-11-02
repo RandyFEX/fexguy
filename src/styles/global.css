@@ -1199,11 +1199,19 @@ a:hover {
   background: var(--color-cta);
   color: var(--color-on-cta);
 }
+/* One line wherever it fits; on the narrowest phones (under 24rem) it
+   wraps, balanced, inside the screen instead of overflowing it. */
 .roku__call {
   min-height: 3.5rem;
+  max-width: 100%;
   padding-inline: var(--space-6);
   font-size: clamp(1.125rem, 1rem + 0.8vw, 1.375rem);
-  white-space: nowrap;
+  text-wrap: balance;
+}
+@media (min-width: 24rem) {
+  .roku__call {
+    white-space: nowrap;
+  }
 }
 .roku__call:hover,
 .roku .lead-form__submit:hover:not(:disabled) {
