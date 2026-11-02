@@ -131,13 +131,6 @@ const advantage = [
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
         <h1 class="fb-hero__title" id="fb-title">Burial Insurance That Can Start Today!</h1>
-        <p class="fb-hero__lead">Affordable permanent whole life insurance for ages <span class="fb-nowrap">50-85</span>.</p>
-        <ul class="fb-hero__points" role="list">
-          <li>Rates Never Increase</li>
-          <li>Coverage Never Expires</li>
-          <li>1st-Day Coverage for Eligible Applicants</li>
-          <li>Pays for Burial, Cremation, Funeral or Final Expenses</li>
-        </ul>
         <div class="fb-call">
           <a class="btn fb-call__btn" href={phone.href}>CALL NOW FOR YOUR FREE QUOTE</a>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
@@ -432,13 +425,12 @@ const advantage = [
     --color-focus-inner: var(--color-text);
     background: var(--color-primary);
     color: #ffffff;
-    /* Bottom: about the same space under the phone number as there is from
-       the green/white edge to "Prefer a Callback?" (V1.6). */
-    padding-block: var(--space-6) var(--space-4);
+    /* V13.0: headline, call button and number only, with the same space
+       above and below. */
+    padding-block: var(--space-6);
   }
   /* The hero is one centered column, lined up with the centered callback
-     band below; the checkmark list is centered as a block with its rows
-     left-aligned. */
+     band below. */
   .fb-hero__inner {
     max-width: 48rem;
     text-align: center;
@@ -450,41 +442,6 @@ const advantage = [
     letter-spacing: -0.01em;
     color: #ffffff;
   }
-  .fb-hero__lead {
-    margin: 0 0 var(--space-4);
-    font-size: 1.3125rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--home-cream);
-  }
-  .fb-hero__points {
-    list-style: none;
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto var(--space-4);
-    padding: 0;
-    text-align: left;
-    display: grid;
-    gap: var(--space-2);
-    font-size: 1.1875rem;
-    line-height: 1.4;
-  }
-  .fb-hero__points li {
-    position: relative;
-    padding-left: 2rem;
-  }
-  .fb-hero__points li::before {
-    content: '';
-    position: absolute;
-    left: 0.25rem;
-    top: 0.35em;
-    width: 0.6rem;
-    height: 1rem;
-    border: solid var(--home-gold);
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-  }
-
   /* Callback band: a compact alternative to calling. Its button is a solid
      orange call-style button (auto width, so the full-width call button
      stays dominant); on hover it turns white with orange text and border. */
@@ -796,7 +753,7 @@ const advantage = [
   }
   @media (min-width: 64rem) {
     .fb-hero {
-      padding-block: var(--space-12) var(--space-4);
+      padding-block: var(--space-8);
     }
     .fb-band,
     .fb-form,
