@@ -763,6 +763,15 @@ const advantage = [
     .fb-callback__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    /* Two-column cards (V12.0): the card headings wrap alike ("4-IN-1
+       FUNERAL / FUNDS ...") so the checklists in a row start at the same
+       height. 16em is narrower than any full heading on one line and wider
+       than its longest second line ("FUNDS COMMITMENT"); the two-line
+       minimum keeps rows aligned even if a heading still fits on one line. */
+    .fb-adv-card__title {
+      max-width: 16em;
+      min-height: 2.4em;
+    }
     /* V7.0: both columns join one shared grid (3 rows: heading, text,
        button) so the two orange buttons sit on the same row and
        line up top and bottom. The phone number spans the first two rows,
