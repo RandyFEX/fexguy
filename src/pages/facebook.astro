@@ -51,31 +51,51 @@ const headMeta = [
   { name: 'twitter:description', content: description },
 ];
 
-// "The Funeral Funds Advantage" (Randy, October 2026): his exact wording;
-// Commitment first, Protection second (V10.0).
+// "Why Families Choose Funeral Funds Coverage" (Randy, V11.0, November
+// 2026): four cards, his exact headings, wording and order (2-by-2 from 48rem;
+// stacked in this order on phones).
 const advantage = [
   {
-    id: 'fb-adv-commitment',
-    title: '4-IN-1 COMMITMENT',
+    id: 'fb-adv-advantage',
+    title: '4-IN-1 FUNERAL FUNDS ADVANTAGE',
     items: [
-      'Lifetime Policy Service & Updates',
-      'Family Death Claim Assistance',
-      'One Personal Agent for Life',
-      'Direct Agent Cell Phone Access',
+      'Compare Rates From Many Insurance Companies',
+      'Get Coverage That Fits Your Budget',
+      'Get Matched With the Right Insurance Company',
+      'You get 30 Days to Review Your Coverage',
     ],
   },
   {
     id: 'fb-adv-protection',
-    title: '4-IN-1 PROTECTION',
+    title: '4-IN-1 FUNERAL FUNDS PROTECTION',
     items: [
+      '1st-Day Coverage for Eligible Applicants',
       'Accident, Illness & Disease Death Covered',
       'No Requalification Ever Required',
-      'Guaranteed to Last a Lifetime',
       'Unaffected by Rising Costs',
     ],
   },
-];
----
+  {
+    id: 'fb-adv-benefits',
+    title: '4-IN-1 FUNERAL FUNDS BENEFITS',
+    items: [
+      'Pays for Burial, Cremation, Funeral, or Your Bills',
+      'Coverage Never Expires',
+      'Rates Never Increase',
+      'Options to Add More Coverage Later',
+    ],
+  },
+  {
+    id: 'fb-adv-commitment',
+    title: '4-IN-1 FUNERAL FUNDS COMMITMENT',
+    items: [
+      'One Personal Agent for Life',
+      'Direct Agent Cell Phone Access',
+      'Lifetime Policy Service & Updates',
+      'Family Death Claim Assistance',
+    ],
+  },
+];---
 
 <BaseLayout
   title={title}
@@ -126,7 +146,7 @@ const advantage = [
 
     <section class="fb-advantage" aria-labelledby="fb-advantage-title">
       <div class="container">
-        <h2 class="fb-section-title fb-advantage__title" id="fb-advantage-title">The Funeral Funds Advantage</h2>
+        <h2 class="fb-section-title fb-advantage__title" id="fb-advantage-title">Why Families Choose Funeral Funds Coverage</h2>
         <p class="fb-advantage__subtitle">Affordable Options. Generous Coverage. Lifetime Protection. Personal Service.</p>
         <div class="fb-advantage__grid">
           {
@@ -550,8 +570,8 @@ const advantage = [
     color: var(--color-text);
   }
 
-  /* "The Funeral Funds Advantage": two equal white cards on the cream
-     background, stacked on phones (Commitment first, V10.0). Top: the same 16px as
+  /* "Why Families Choose Funeral Funds Coverage": four white cards (2-by-2) on the cream
+     background, stacked on phones in the V11.0 order. Top: the same 16px as
      between the hero's phone number and the green edge above it (V4.0).
      Bottom: the same 16px below the rates note (V9.0), at every width. */
   .fb-advantage {
