@@ -606,8 +606,50 @@ for (const file of pages) {
   else openingProblems.push(`${page}: article text between the table of contents and the first heading (a second introduction): ${quote}`);
 }
 
+// ---- Upper-right header phone (Randy, V14.0) -----------------------------------
+// Every page header (the site header, and the standalone landing headers
+// .fb-top/.fq-top/.hp-top) has one phone contact marked data-header-phone:
+// "Speak With a Licensed Agent", the approved handset icon, and the page's own
+// number (the campaign number on /roku/ and /facebook/, the website number
+// elsewhere), with a tel: link that dials the number shown. "Call Randy" is
+// never a header label (it stays fine elsewhere on the page).
+const PHONES_SRC = readFileSync(new URL('../src/config/phones.ts', import.meta.url), 'utf8');
+const HEADER_LABEL = PHONES_SRC.match(/HEADER_PHONE_LABEL = '([^']+)'/)?.[1];
+const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1];
+const CAMPAIGN_PAGES = new Set(['/roku/', '/facebook/']);
+const headerProblems = [];
+let headersChecked = 0;
+if (!HEADER_LABEL || !HEADER_ICON) headerProblems.push('src/config/phones.ts: HEADER_PHONE_LABEL or HEADER_PHONE_ICON_PATH not found');
+for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f))) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const regions = [];
+  for (const m of html.matchAll(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/g)) regions.push(['site header', m[0]]);
+  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
+  for (const [kind, region] of regions) {
+    headersChecked++;
+    if (/call\s+randy/i.test(region.replace(/<[^>]+>/g, ' '))) headerProblems.push(`${page}: ${kind} says "Call Randy"`);
+    const links = [...region.matchAll(/<a\b([^>]*\bdata-header-phone\b[^>]*)>([\s\S]*?)<\/a>/g)];
+    if (links.length !== 1) { headerProblems.push(`${page}: ${kind} has ${links.length} data-header-phone links (expected 1)`); continue; }
+    const [, attrs, inner] = links[0];
+    const text = inner.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!text.startsWith(HEADER_LABEL + ' ')) headerProblems.push(`${page}: ${kind} label is not "${HEADER_LABEL}" ("${text}")`);
+    const paths = [...inner.matchAll(/<svg\b[\s\S]*?<path\b[^>]*\bd="([^"]+)"/g)].map((m) => m[1]);
+    if (!paths.includes(HEADER_ICON)) headerProblems.push(`${page}: ${kind} phone has no approved handset icon`);
+    const href = attrs.match(/href="tel:(\d+)"/)?.[1];
+    const shown = text.slice(HEADER_LABEL.length).replace(/\D/g, '');
+    const expected = CAMPAIGN_PAGES.has(page) ? '8886564648' : '8888629456';
+    if (href !== shown) headerProblems.push(`${page}: ${kind} link dials ${href} but shows ${shown}`);
+    if (shown !== expected) headerProblems.push(`${page}: ${kind} shows ${shown}, expected ${expected}`);
+  }
+  if (!regions.length && /<body\b[^>]*class="[^"]*\bis-landing\b/.test(html) && /class="(?:fb|fq|hp)-top/.test(html))
+    headerProblems.push(`${page}: landing header not recognized by the header check`);
+}
+
 console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
+console.log(`Header phone (label, icon, number): ${headersChecked} headers checked | problems: ${headerProblems.length}`);
+for (const p of headerProblems) console.log(`  [header] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
@@ -642,6 +684,7 @@ const problems =
   allMissing.length +
   search.problems.length +
   redirectProblems.length +
+  headerProblems.length +
   guardProblems.length +
   structureProblems.length +
   tocProblems.length +

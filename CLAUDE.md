@@ -45,6 +45,19 @@ is in place; see src/content/README.md for how pages were migrated.
   pages) and must never appear anywhere else on the site (`npm run verify`
   allows it only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
+- **Header phone (Randy, November 2026, V14.0):** Every upper-right phone
+  contact area on Funeral Funds pages must display Speak With a Licensed
+  Agent, include the approved Funeral Funds phone icon, and preserve the
+  correct page-specific telephone number. Never use Call Randy as an
+  upper-right header label. ("Call Randy" elsewhere in marketing content,
+  buttons and copy is fine.) The label and icon live in `src/config/phones.ts`
+  (`HEADER_PHONE_LABEL`, `HEADER_PHONE_ICON_PATH`); the site header uses them
+  in `src/components/Navigation.astro` (desktop nav; the mobile menu shows the
+  plain number) and the standalone landing headers (/facebook/, /free-quote/,
+  /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
+  every built header: one `data-header-phone` link with that label and icon,
+  a tel: link that dials the number shown, 888-656-4648 on /roku/ and
+  /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
 - The lead system (below) was approved by Randy in October 2026. Don't add
   other forms, quoters, pop-ups, trackers, pixels, or tracking events, or
   change what is sent to GA4/Meta, without his approval.
