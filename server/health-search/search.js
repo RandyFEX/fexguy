@@ -13,7 +13,9 @@
 
 import { normalize, tokens, phraseKey, containsPhrase, editDistance, allowedTypos } from './normalize.js';
 
-export const LIMITS = { minQueryChars: 2, maxQueryChars: 60, groupsPerPage: 3, maxMatches: 40, maxPage: 10 };
+// groupsPerPage covers every carrier (7), so all matching carriers show on
+// the first page instead of behind "Show more" (Randy, November 2026).
+export const LIMITS = { minQueryChars: 2, maxQueryChars: 60, groupsPerPage: 7, maxMatches: 40, maxPage: 10 };
 
 /** @typedef {import('./validate.js').Carrier} Carrier */
 /** @typedef {import('./validate.js').Question} Question */
@@ -259,6 +261,7 @@ function publicName(carrier) {
 //   of its own gets the carrier's approved schedule as details.
 // - A carrier rule's note (e.g. CICA's eligibility note) is the last detail.
 const SECTION = /^([A-Z][A-Z -]*?) COVERAGE:$/;
+export const LUCK = "You're in luck! ";
 const CALL_PRIMARY = /** @type {Record<string, string>} */ ({
   'first-day-standard': 'First-day standard coverage',
   'first-day-preferred': 'First-day preferred coverage',
@@ -321,6 +324,14 @@ export function answerRows(carrier, answer, o, ownPlanLines = {}) {
   if (rule?.explanation) rows[rows.length - 1].details.push(rule.explanation);
   // The bold primary line reads as a label, without a closing period.
   for (const r of rows) r.primary = r.primary.replace(/\.$/, '');
+  // First-day outcomes: the first call instruction opens with "You're in
+  // luck!" (Randy, November 2026). Presentation only; the records keep their
+  // wording. Never on graded, modified, guaranteed issue or decline rows.
+  for (const r of rows) {
+    if (!/^First-day\b/.test(r.primary)) continue;
+    const i = r.details.findIndex((d) => /^Call 888-862-9456\b/.test(d));
+    if (i >= 0) r.details[i] = `${LUCK}${r.details[i]}`;
+  }
   return rows;
 }
 

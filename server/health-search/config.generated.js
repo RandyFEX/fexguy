@@ -564,7 +564,8 @@ export const config = {
    "related": [
     "emphysema",
     "chronic-bronchitis",
-    "oxygen"
+    "oxygen",
+    "chronic-respiratory"
    ]
   },
   {
@@ -576,7 +577,8 @@ export const config = {
    "indicators": [],
    "related": [
     "copd",
-    "oxygen"
+    "oxygen",
+    "chronic-respiratory"
    ]
   },
   {
@@ -587,7 +589,8 @@ export const config = {
    ],
    "indicators": [],
    "related": [
-    "copd"
+    "copd",
+    "chronic-respiratory"
    ]
   },
   {
@@ -627,7 +630,29 @@ export const config = {
     "flovent",
     "qvar"
    ],
-   "related": []
+   "related": [
+    "chronic-respiratory"
+   ]
+  },
+  {
+   "id": "chronic-respiratory",
+   "label": "Chronic respiratory or lung condition",
+   "terms": [
+    "chronic respiratory condition",
+    "chronic respiratory disease",
+    "chronic lung disease",
+    "lung disease",
+    "lung impairment",
+    "lung impairments",
+    "respiratory condition"
+   ],
+   "indicators": [],
+   "related": [
+    "copd",
+    "asthma",
+    "emphysema",
+    "chronic-bronchitis"
+   ]
   },
   {
    "id": "sleep-apnea",

@@ -10,7 +10,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { config } from '../../server/health-search/config.generated.js';
 import { checkPayload } from '../../server/health-search/question-store.js';
 import { buildPayload } from '../../server/health-search/publish.js';
-import { prepare, search, answerRows } from '../../server/health-search/search.js';
+import { prepare, search, answerRows, LUCK } from '../../server/health-search/search.js';
 
 const dir = new URL('../../server/health-search/private/questions/', import.meta.url);
 const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(new URL(f, dir), 'utf8'))) : [];
@@ -152,18 +152,47 @@ test('answer rows keep every approved line, on the right YES/NO, and add nothing
       const lines = (o.explanation ?? '').split('\n').map((l) => l.trim()).filter(Boolean);
       const sections = lines.filter((l) => SECTION.test(l)).length;
       if (sections > 1) { multi++; assert.equal(rows.length, sections, `${q.id} ${A}: one row per approved outcome`); }
-      const shown = rows.flatMap((r) => [r.primary, ...r.details]);
+      // "You're in luck!" opens the call line of first-day rows only.
+      for (const r of rows) for (const d of r.details) if (d.startsWith(LUCK)) assert.match(r.primary, /^First-day\b/, `${q.id} ${A}: luck only on first-day rows`);
+      for (const r of rows) if (/^(Graded|Modified)\b|not qualify|Guaranteed Issue/i.test(r.primary)) assert.ok(!r.details.some((d) => d.startsWith(LUCK)), `${q.id} ${A}: no luck on ${r.primary}`);
+      const unluck = (d) => (d.startsWith(LUCK) ? d.slice(LUCK.length) : d);
+      const shown = rows.flatMap((r) => [r.primary, ...r.details.map(unluck)]);
       for (const l of lines) {
         if (SECTION.test(l)) continue;
         if (sections > 1 && /coverage may be available\.?$/.test(l) && / or /.test(l)) continue; // distributed into the rows
         assert.ok(shown.includes(l) || shown.includes(l.replace(/\.$/, '')), `${q.id} ${A}: line kept: ${l.slice(0, 40)}`);
       }
       const rule = o.rule ? carrier.rules[o.rule]?.explanation : null;
-      for (const r of rows) for (const d of r.details) {
+      for (const r of rows) for (const d of r.details.map(unluck)) {
         assert.ok(carrierLines.get(q.carrierId).has(d) || d === rule, `${q.id} ${A}: detail comes from the approved wording: ${d.slice(0, 40)}`);
       }
       assert.ok(!shown.some((x) => SECTION.test(x)), `${q.id} ${A}: no COVERAGE subheading`);
     }
   }
   assert.ok(multi > 0, 'multi-outcome answers exist and are split');
+});
+
+test('COPD and related terms show every matching carrier, Aetna and Aflac included, on the first page', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  for (const term of ['COPD', 'emphysema', 'chronic bronchitis', 'chronic obstructive pulmonary disease', 'lung disease', 'asthma']) {
+    const r = search(prep, term);
+    assert.equal(r.totalPages, 1, `${term}: one page`);
+    const names = r.groups.map((g) => g.carrier);
+    for (const c of ['Aetna (Accendo, a CVS Health company)', 'Aflac']) {
+      const g = r.groups.find((x) => x.carrier === c);
+      assert.ok(g, `${term}: ${c} shown`);
+      assert.ok(g.questions.some((q) => /chronic respiratory condition/.test(q.text)), `${term}: ${c} respiratory question`);
+    }
+    assert.ok(names.length >= 4, term);
+  }
+  // Every search that finds matches shows all of them on page 1.
+  for (const term of ['heart attack', 'cancer', 'stroke', 'surgery', 'treatment', 'oxygen', 'insulin']) assert.equal(search(prep, term).totalPages, 1, term);
+});
+
+test('"You\'re in luck!" appears on first-day call lines only', { skip }, () => {
+  const prep = prepare(/** @type {any} */ (dataset));
+  const rows = search(prep, 'Trinity heart attack').groups.flatMap((g) => g.questions.flatMap((q) => q.answers));
+  const firstDay = rows.find((r) => r.primary === 'First-day coverage may be available');
+  assert.ok(firstDay && firstDay.details[0] === "You're in luck! Call 888-862-9456 to qualify.");
+  assert.ok(rows.filter((r) => /^Graded/.test(r.primary)).every((r) => !r.details.some((d) => d.startsWith(LUCK))));
 });

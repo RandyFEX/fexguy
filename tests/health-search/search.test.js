@@ -3,7 +3,7 @@
 // real-data.test.js and run once the carrier questions are loaded.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { prepare, search, detectConcepts } from '../../server/health-search/search.js';
+import { prepare, search, detectConcepts, LIMITS } from '../../server/health-search/search.js';
 import { sampleDataset } from '../../server/health-search/sample-dataset.js';
 import { normalize, tokens, editDistance } from '../../server/health-search/normalize.js';
 
@@ -87,13 +87,13 @@ test('empty and short queries, and no-match queries', () => {
 
 test('pagination splits carrier groups and clamps out-of-range pages', () => {
   const many = { ...sampleDataset, carriers: [...sampleDataset.carriers], questions: [...sampleDataset.questions] };
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < LIMITS.groupsPerPage + 2; i++) {
     many.carriers.push({ ...sampleDataset.carriers[0], id: `extra-${i}`, name: `Extra ${i}`, displayOrder: 10 + i });
     many.questions.push({ ...sampleDataset.questions[4], id: `x-${i}`, carrierId: `extra-${i}` });
   }
   const p = prepare(many);
   const r1 = search(p, 'copd', { page: 1 });
-  assert.equal(r1.groups.length, 3);
+  assert.equal(r1.groups.length, LIMITS.groupsPerPage);
   assert.ok(r1.totalPages >= 2);
   assert.equal(r1.guaranteedIssue.length, 0, 'guaranteed issue card is on the last page');
   const last = search(p, 'copd', { page: 99 });

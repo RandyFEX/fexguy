@@ -122,10 +122,9 @@ test('search results come from the stored records and expose no internal fields'
   const text = JSON.stringify(body);
   for (const field of ['"search"', '"id"', '"sharedKey"', '"source"', '"carrierId"']) assert.ok(!text.includes(field), field);
   assert.equal(body.sample, false);
-  // Three carriers per page: CICA Life Insurance (fourth in order) is named on page 2.
-  const req2 = new Request(req.url, { method: 'POST', headers: req.headers, body: JSON.stringify({ q: 'heart attack', page: 2 }) });
-  const page2 = await (await handleSearch(req2, { HEALTH_SEARCH_SECRET: 's'.repeat(40), VERCEL_ENV: 'production' }, { store: redis.store, dataset: ds })).json();
-  assert.ok(page2.groups.some((g) => g.carrier === 'CICA Life Insurance'), JSON.stringify(page2.groups.map((g) => g.carrier)));
+  // Every matching carrier is on the first page (CICA Life Insurance is fourth in order).
+  assert.equal(body.totalPages, 1);
+  assert.ok(body.groups.some((g) => g.carrier === 'CICA Life Insurance'), JSON.stringify(body.groups.map((g) => g.carrier)));
 });
 
 test('this public repository holds no question records', () => {
