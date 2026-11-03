@@ -197,8 +197,9 @@ if (root) {
     if (!quoteReady() || !answers.state) return show(1);
     track('quote_contact_submit');
     complete(6);
-    // The pricing screen, blurred, with the number already filled in.
+    // The pricing screen, blurred, with the number already entered (not asked again).
     unlockPhone.value = phoneInput.value.trim();
+    showPhoneSummary();
     lockCards();
     show(7);
   });
@@ -213,6 +214,24 @@ if (root) {
 
   // Step 7 (locked): send the code from the pricing screen.
   const unlockPanel = $('[data-qf-unlock]');
+  const phoneSummary = $('[data-qf-phone-summary]');
+  const phoneShow = $('[data-qf-phone-show]');
+  const phoneField = $('[data-qf-phone-field]');
+  const formatPhone = (v: string) => {
+    const d = v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
+    return d.length === 10 ? `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` : v;
+  };
+  function showPhoneSummary() {
+    phoneShow.textContent = formatPhone(unlockPhone.value);
+    phoneSummary.hidden = false;
+    phoneField.hidden = true;
+  }
+  function editPhone() {
+    phoneSummary.hidden = true;
+    phoneField.hidden = false;
+    unlockPhone.focus();
+    unlockPhone.select();
+  }
   const sendForm = $<HTMLFormElement>('[data-qf-send-form]');
   const sendBtn = $<HTMLButtonElement>('[data-qf-send]');
   const sendStatus = $('[data-qf-send-status]');
@@ -240,7 +259,7 @@ if (root) {
   sendForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     fieldError(unlockPhone, phoneOk(unlockPhone.value) ? '' : 'Please enter a 10-digit US mobile number.');
-    if (!phoneOk(unlockPhone.value)) return unlockPhone.focus();
+    if (!phoneOk(unlockPhone.value)) return editPhone();
     const quote = quoteReady();
     if (!quote || !answers.state) return show(1);
     sendBtn.disabled = true;
@@ -308,9 +327,9 @@ if (root) {
   $('[data-qf-change]').addEventListener('click', () => {
     verifyForm.hidden = true;
     sendForm.hidden = false;
-    unlockPhone.focus();
-    unlockPhone.select();
+    editPhone();
   });
+  $('[data-qf-edit-phone]').addEventListener('click', editPhone);
 
   /** Randy's notification through the existing Formspark website form. */
   async function notifyRandy(fields: Record<string, string>) {
@@ -613,6 +632,7 @@ if (root) {
       contactForm.reset();
       consentBox.checked = false;
       unlockPhone.value = '';
+      showPhoneSummary();
       codeInput.value = '';
       sendForm.hidden = false;
       verifyForm.hidden = true;

@@ -37,8 +37,7 @@ const TOTAL = 7;
   >
     <section class="qf-hero">
       <div class="container qf-hero__inner">
-        <h1 class="qf-hero__title">Final Expense Insurance Prices by Age</h1>
-        <p class="qf-hero__intro">Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use.</p>
+        <h1 class="qf-hero__title">Get Your Final Expense Insurance Quote</h1>
       </div>
     </section>
 
@@ -148,7 +147,54 @@ const TOTAL = 7;
 
         <!-- Step 7: the pricing screen (blurred until the phone is verified, then live) -->
         <section class="qf-step qf-results" data-step="7" data-locked="true" aria-labelledby="qf-s7" hidden>
-          <h2 class="qf-q" id="qf-s7" tabindex="-1">Your insurance prices</h2>
+          <h2 class="qf-q" id="qf-s7" tabindex="-1">Your Insurance Prices</h2>
+
+
+          <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
+          <div class="qf-cards">
+            {cards.map((c, i) => (
+              <article class="qf-card" data-qf-card={c.id} data-state="locked">
+                <div class="qf-card__logo" aria-hidden="true" data-qf-logo><span class="qf-logo-blank"></span></div>
+                <h3 class="qf-card__label">{c.label}</h3>
+                <p class="qf-card__carrier qf-blur" aria-hidden="true">{['Insurance Company Name', 'Life Insurance Company', 'Insurance Company Plan'][i]}</p>
+                <p class="qf-card__price">
+                  <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span></span>
+                  <span class="qf-card__per">per month</span>
+                </p>
+                <p class="qf-card__note" data-qf-note></p>
+                <button class="btn btn--primary qf-card__apply" type="button" data-qf-apply disabled>Apply Now</button>
+              </article>
+            ))}
+          </div>
+
+          <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
+            <h3 class="qf-unlock__title" id="qf-unlock-title">Unlock Your Insurance Prices</h3>
+            <form class="qf-form qf-form--compact" data-qf-send-form novalidate>
+              <p class="qf-unlock__number" data-qf-phone-summary>Text a code to <strong data-qf-phone-show></strong> <button class="qf-link" type="button" data-qf-edit-phone>Change Number</button></p>
+              <div class="qf-field" data-qf-phone-field hidden>
+                <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
+                <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note" />
+                <p class="qf-error" id="qf-unlock-phone-error" hidden></p>
+              </div>
+              <p class="qf-note qf-note--small" id="qf-verify-note">{VERIFY_NOTICE_TEXT}</p>
+              <button class="btn btn--primary qf-continue" type="submit" data-qf-send>Text Me a Code</button>
+              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
+            </form>
+            <form class="qf-form qf-form--compact" data-qf-verify novalidate hidden>
+              <p class="qf-note">Enter the 6-digit code sent to <strong data-qf-masked></strong>.</p>
+              <label class="visually-hidden" for="qf-code">6-digit code</label>
+              <div class="qf-code-row">
+                <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" placeholder="000000" required />
+                <button class="btn btn--primary qf-continue" type="submit" data-qf-verify-btn>Verify Code</button>
+              </div>
+              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-verify-status></p>
+              <div class="qf-links">
+                <button class="qf-link" type="button" data-qf-resend>Resend Code</button>
+                <button class="qf-link" type="button" data-qf-change>Change Number</button>
+              </div>
+            </form>
+          </section>
+          <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
 
           <form class="qf-adjust" data-qf-adjust aria-label="Change your quote" novalidate hidden>
             <div class="qf-group qf-group--age">
@@ -187,52 +233,8 @@ const TOTAL = 7;
               </div>
             </fieldset>
           </form>
-
-          <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
-          <div class="qf-cards">
-            {cards.map((c, i) => (
-              <article class="qf-card" data-qf-card={c.id} data-state="locked">
-                <div class="qf-card__logo" aria-hidden="true" data-qf-logo><span class="qf-logo-blank"></span></div>
-                <h3 class="qf-card__label">{c.label}</h3>
-                <p class="qf-card__carrier qf-blur" aria-hidden="true">{['Insurance Company Name', 'Life Insurance Company', 'Insurance Company Plan'][i]}</p>
-                <p class="qf-card__price">
-                  <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span></span>
-                  <span class="qf-card__per">per month</span>
-                </p>
-                <p class="qf-card__note" data-qf-note></p>
-                <button class="btn btn--primary qf-card__apply" type="button" data-qf-apply disabled>Apply Now</button>
-              </article>
-            ))}
-          </div>
-          <p class="qf-ref">Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
-          <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
           <p class="qf-restart-row"><button class="qf-link" type="button" data-qf-restart>Start New Quote</button></p>
-
-          <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
-            <h3 class="qf-unlock__title" id="qf-unlock-title">Unlock Your Insurance Prices</h3>
-            <p class="qf-unlock__text">Enter your mobile number to receive a 6-digit verification code and unlock your prices.</p>
-            <form class="qf-form" data-qf-send-form novalidate>
-              <div class="qf-field">
-                <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
-                <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note" />
-                <p class="qf-error" id="qf-unlock-phone-error" hidden></p>
-              </div>
-              <p class="qf-note" id="qf-verify-note">{VERIFY_NOTICE_TEXT}</p>
-              <button class="btn btn--primary qf-continue" type="submit" data-qf-send>Text Me My Code</button>
-              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
-            </form>
-            <form class="qf-form" data-qf-verify novalidate hidden>
-              <p class="qf-note">We sent a 6-digit code to <strong data-qf-masked></strong>.</p>
-              <label class="qf-label" for="qf-code">6-digit code</label>
-              <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" required />
-              <button class="btn btn--primary qf-continue" type="submit" data-qf-verify-btn>Verify Code</button>
-              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-verify-status></p>
-              <div class="qf-links">
-                <button class="qf-link" type="button" data-qf-resend>Resend Code</button>
-                <button class="qf-link" type="button" data-qf-change>Change Number</button>
-              </div>
-            </form>
-          </section>
+          <p class="qf-ref">Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
         </section>
 
         <!-- Step 8: carrier-specific health questions after Apply Now -->
@@ -258,17 +260,6 @@ const TOTAL = 7;
         <div class="lead-form__turnstile" data-turnstile data-sitekey={lead.formspark.turnstile.siteKey}></div>
       </div>
 
-      <p class="qf-call">Questions? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
-
-      <section class="qf-about" aria-labelledby="qf-about-title">
-        <h2 id="qf-about-title">How these prices work</h2>
-        <ul>
-          <li><strong>Lowest Preferred Rate</strong> means the lowest verified rate among the selected preferred products included in our comparison.</li>
-          <li><strong>Standard Rate</strong> is the verified standard-rate monthly premium in our comparison.</li>
-          <li><strong>Guaranteed Acceptance Rate</strong> uses a verified guaranteed-issue product that is available for the selected age and coverage amount.</li>
-        </ul>
-        <p>The three categories are pricing comparisons, not guaranteed underwriting outcomes. Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
-      </section>
     </div>
   </div>
 </BaseLayout>
@@ -278,9 +269,8 @@ const TOTAL = 7;
 </script>
 
 <style>
-  .qf-hero { background: var(--color-primary); color: var(--color-on-primary); padding-block: var(--space-6) var(--space-12); }
-  .qf-hero__title { color: inherit; font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem); line-height: 1.15; margin: 0 0 var(--space-2); }
-  .qf-hero__intro { font-size: 1.125rem; line-height: 1.5; max-width: 40rem; margin: 0; }
+  .qf-hero { background: var(--color-primary); color: var(--color-on-primary); padding-block: var(--space-4) var(--space-12); }
+  .qf-hero__title { color: inherit; font-size: clamp(1.375rem, 1.15rem + 1.2vw, 2.25rem); line-height: 1.2; margin: 0; }
   .qf-body { padding-block: 0 var(--space-12); max-width: 60rem; }
   .qf-panel {
     background: #fff;
@@ -357,7 +347,7 @@ const TOTAL = 7;
 
   /* Results */
   /* Pricing controls: four separate tan groups (Age | Gender | Tobacco, then Coverage). */
-  .qf-adjust { display: grid; gap: var(--space-3); margin-bottom: var(--space-2); }
+  .qf-adjust { display: grid; gap: var(--space-3); margin: var(--space-6) 0 var(--space-2); }
   .qf-adjust[hidden] { display: none; }
   @media (min-width: 48rem) {
     .qf-adjust { grid-template-columns: minmax(7.5rem, 0.6fr) 1fr 1fr; }
@@ -389,10 +379,18 @@ const TOTAL = 7;
   .qf-card[data-state='locked'] .qf-card__amount { color: var(--color-text); }
 
   /* Unlock panel */
-  .qf-unlock { margin-top: var(--space-6); border: 2px solid var(--color-primary); border-radius: 0.75rem; padding: var(--space-4); background: #f6faf8; }
+  .qf-unlock { margin-top: var(--space-4); border: 2px solid var(--color-primary); border-radius: 0.75rem; padding: var(--space-3) var(--space-4); background: #f6faf8; }
+  .qf-form--compact { gap: var(--space-2); }
+  .qf-form--compact .qf-status:empty { display: none; }
+  .qf-unlock .qf-links { margin-top: 0; }
+  .qf-unlock__number { margin: 0; text-align: center; font-size: 1.0625rem; }
+  .qf-unlock__number .qf-link { min-height: 2.75rem; }
+  .qf-note--small { font-size: 0.9375rem; }
+  .qf-code-row { display: grid; gap: var(--space-2); }
+  @media (min-width: 30rem) { .qf-code-row { grid-template-columns: 1fr auto; } .qf-code-row .qf-continue { width: auto; padding-inline: var(--space-6); } }
+  .qf-field[hidden], .qf-unlock__number[hidden] { display: none; }
   .qf-unlock[hidden] { display: none; }
-  .qf-unlock__title { margin: 0 0 var(--space-2); font-size: 1.5rem; color: var(--color-primary); text-align: center; }
-  .qf-unlock__text { margin: 0 auto var(--space-4); max-width: 30rem; text-align: center; font-size: 1.0625rem; }
+  .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.375rem; color: var(--color-primary); text-align: center; }
   .qf-form[hidden] { display: none; }
 
   /* Health questions */
@@ -403,7 +401,7 @@ const TOTAL = 7;
   .qf-call-btn { display: flex; align-items: center; justify-content: center; text-decoration: none; }
   .qf-secondary { background: #fff; color: var(--color-primary); border: 2px solid var(--color-primary); }
 
-  .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-6); }
+  .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-3); }
   @media (min-width: 56rem) { .qf-cards { grid-template-columns: repeat(3, 1fr); } }
   .qf-card {
     display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'label logo' 'carrier carrier' 'price price' 'note note' 'apply apply';
@@ -432,9 +430,4 @@ const TOTAL = 7;
   .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
   .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
 
-  .qf-call { margin-top: var(--space-6); font-size: 1.125rem; text-align: center; }
-  .qf-call a { font-weight: 800; white-space: nowrap; }
-  .qf-about { margin-top: var(--space-8); max-width: var(--prose-max); }
-  .qf-about h2 { font-size: 1.375rem; color: var(--color-primary); }
-  .qf-about li { margin-bottom: var(--space-2); }
 </style>
