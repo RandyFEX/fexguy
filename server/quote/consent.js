@@ -16,10 +16,17 @@ export const CONSENT_TEXT =
   'including automated texts. Msg & data rates may apply. Reply STOP to opt out. ' +
   'Consent is not required to see prices or to buy.';
 
-export const VERIFY_NOTICE_VERSION = 'ff-quote-verify-notice-v2-2026-11';
-export const VERIFY_NOTICE_TEXT = "We'll text a 6-digit verification code to your mobile number. Msg & data rates may apply.";
+// The Unlock Your Rates panel shows these two lines (the explanation above the
+// number, the rates line under the orange button); the evidence record keeps
+// them together as VERIFY_NOTICE_TEXT under this version. The page imports
+// them from here, so the panel and the evidence can't drift apart.
+export const VERIFY_NOTICE_VERSION = 'ff-quote-verify-notice-v3-2026-11';
+export const VERIFY_NOTICE_EXPLAIN = "We'll text a 6-digit verification code to your mobile number.";
+export const VERIFY_NOTICE_RATES = 'Message and data rates may apply.';
+export const VERIFY_NOTICE_TEXT = `${VERIFY_NOTICE_EXPLAIN} ${VERIFY_NOTICE_RATES}`;
 const VERIFY_NOTICE_V1 = 'We will text a 6-digit code to this number to verify it. Msg & data rates may apply.';
+const VERIFY_NOTICE_V2 = "We'll text a 6-digit verification code to your mobile number. Msg & data rates may apply.";
 
 /** Text of every version ever shown (never remove an entry: old evidence refers to it). */
 export const CONSENT_VERSIONS = { [CONSENT_VERSION]: CONSENT_TEXT };
-export const VERIFY_NOTICE_VERSIONS = { 'ff-quote-verify-notice-v1-2026-11': VERIFY_NOTICE_V1, [VERIFY_NOTICE_VERSION]: VERIFY_NOTICE_TEXT };
+export const VERIFY_NOTICE_VERSIONS = { 'ff-quote-verify-notice-v1-2026-11': VERIFY_NOTICE_V1, 'ff-quote-verify-notice-v2-2026-11': VERIFY_NOTICE_V2, [VERIFY_NOTICE_VERSION]: VERIFY_NOTICE_TEXT };

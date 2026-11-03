@@ -14,7 +14,7 @@ import { pageTitle } from '@/lib/seo/meta';
 import { lead } from '@/config/lead';
 import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../server/rates/pricing-categories.js';
-import { CONSENT_TEXT, CONSENT_VERSION, VERIFY_NOTICE_TEXT, VERIFY_NOTICE_VERSION } from '../../server/quote/consent.js';
+import { CONSENT_TEXT, CONSENT_VERSION, VERIFY_NOTICE_EXPLAIN, VERIFY_NOTICE_RATES, VERIFY_NOTICE_VERSION } from '../../server/quote/consent.js';
 
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -222,18 +222,19 @@ const TOTAL = 8;
           <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
             <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1">Unlock Your Rates</h3>
             <form class="qf-form qf-form--compact" data-qf-send-form novalidate>
-              <p class="qf-note" id="qf-verify-note">{VERIFY_NOTICE_TEXT}</p>
-              <p class="qf-unlock__number" data-qf-phone-summary><strong data-qf-phone-show></strong> <button class="qf-link" type="button" data-qf-edit-phone>Change Number</button></p>
+              <p class="qf-unlock__explain" id="qf-verify-note" data-qf-unlock-part="explain">{VERIFY_NOTICE_EXPLAIN}</p>
+              <p class="qf-unlock__number" data-qf-phone-summary data-qf-unlock-part="number"><strong data-qf-phone-show></strong> <button class="qf-link" type="button" data-qf-edit-phone>Change Number</button></p>
               <div class="qf-field" data-qf-phone-field hidden>
                 <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
-                <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note" />
+                <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note qf-verify-rates" />
                 <p class="qf-error" id="qf-unlock-phone-error" hidden></p>
               </div>
-              <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-send>Text Me My Access Code</button>
+              <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-send data-qf-unlock-part="send">Text Me My Access Code</button>
+              <p class="qf-unlock__rates" id="qf-verify-rates" data-qf-unlock-part="rates">{VERIFY_NOTICE_RATES}</p>
               <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
             </form>
             <form class="qf-form qf-form--compact" data-qf-verify novalidate hidden>
-              <p class="qf-code-note">Enter the 6-digit code sent to <strong data-qf-masked></strong>.</p>
+              <h4 class="qf-code-title" data-qf-code-title>Enter the 6-digit code</h4>
               <label class="visually-hidden" for="qf-code">6-digit code</label>
               <div class="qf-code-row">
                 <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" placeholder="000000" required />
@@ -387,6 +388,8 @@ const TOTAL = 8;
   .qf-opts--two { grid-template-columns: 1fr 1fr; }
   .qf-opts--use { grid-template-columns: 1fr; }
   @media (min-width: 40rem) { .qf-opts--use { grid-template-columns: repeat(3, 1fr); } }
+  /* Step 4: tighter line spacing, label centered with balanced padding (correction v3.7). */
+  .qf-opts--use .qf-opt { display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.75rem; line-height: 1.15; }
   .qf-opts--coverage { grid-template-columns: 1fr 1fr; }
   @media (min-width: 40rem) { .qf-opts--coverage { grid-template-columns: repeat(3, 1fr); } }
   .qf-opt {
@@ -442,7 +445,7 @@ const TOTAL = 8;
   .qf-btn-cta:hover:not(:disabled), .qf-card__call:hover { background: var(--color-cta); color: var(--color-on-cta); filter: brightness(0.9); }
   .qf-btn-cta:active:not(:disabled), .qf-card__call:active { filter: brightness(0.82); }
   .qf-btn-cta:disabled { background: var(--color-cta); color: var(--color-on-cta); opacity: 0.6; cursor: not-allowed; filter: none; }
-  .qf-adjust-intro { margin: 12px 0 0; text-align: center; font-weight: 700; font-size: 1.125rem; color: #173f35; }
+  .qf-adjust-intro { margin: 12px 0 0; text-align: center; font-weight: 700; font-size: 1.125rem; color: #4a504e; }
   .qf-adjust-intro[hidden] { display: none; }
   .qf-adjust-intro + .qf-adjust { margin-top: var(--space-2); }
 
@@ -454,12 +457,14 @@ const TOTAL = 8;
     .qf-adjust { grid-template-columns: minmax(7.5rem, 0.6fr) 1fr 1fr; }
     .qf-group--coverage { grid-column: 1 / -1; }
   }
-  .qf-group { background: var(--color-surface); border: 0; border-radius: 0.625rem; margin: 0; padding: var(--space-3); min-width: 0; }
+  /* Compact, balanced group padding (correction v3.7). */
+  .qf-group { background: var(--color-surface); border: 0; border-radius: 0.625rem; margin: 0; padding: var(--space-2) var(--space-3); min-width: 0; }
   /* v4.3: each label centered over its own controls. */
-  .qf-group__title { display: block; float: left; width: 100%; text-align: center; font-weight: 800; font-size: 1rem; color: var(--color-primary); margin: 0 0 var(--space-2); padding: 0; }
+  .qf-group__title { display: block; float: left; width: 100%; text-align: center; font-weight: 800; font-size: 1rem; color: #4a504e; margin: 0 0 6px; padding: 0; }
   .qf-group__title + * { clear: both; }
   .qf-control { min-height: 2.75rem; font-size: 1.0625rem; }
-  .qf-adjust .qf-select { max-width: none; min-height: 2.75rem; padding: 0 var(--space-2); }
+  .qf-adjust .qf-select { max-width: none; min-height: 2.75rem; padding: 0 var(--space-2); border-color: #6f7673; color: #2f3432; }
+  .qf-adjust .qf-input { border-color: #6f7673; color: #2f3432; }
   /* v4.5: desktop selection controls about the height of Apply Online Now (40px); phones keep 44px. */
   @media (min-width: 52rem) { .qf-control, .qf-adjust .qf-select { min-height: 2.25rem; } }
   .qf-seg__opts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
@@ -470,10 +475,11 @@ const TOTAL = 8;
   .qf-seg__opt input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
   .qf-seg__opt span {
     display: flex; align-items: center; justify-content: center; padding: 0 var(--space-2);
-    border: 2px solid #173f35; border-radius: var(--radius); background: #fff; color: #173f35;
+    border: 2px solid #6f7673; border-radius: var(--radius); background: #fff; color: #4a504e;
     font-weight: 700; text-align: center; line-height: 1.1;
   }
-  /* v4.7: the visitor's current selections are charcoal; unselected stay white with a green outline. */
+  /* The adjustment section is neutral gray only (correction v3.7): selected darker gray with white text;
+     unselected white with gray text and border. */
   .qf-seg__opt input:checked + span { background: #454b49; color: #fff; border-color: #454b49; }
   .qf-seg__opt input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; box-shadow: 0 0 0 2px var(--color-focus-inner); }
   .qf-other--inline { max-width: 18rem; margin: var(--space-3) 0 0; }
@@ -491,9 +497,11 @@ const TOTAL = 8;
   .qf-unlock__number .qf-link { min-height: 2.75rem; }
   .qf-note--small { font-size: 0.9375rem; }
   /* v4.7: the code instruction is readable dark text (not muted gray), the number in bold. */
-  .qf-code-note { margin: 0; text-align: center; font-size: 1rem; line-height: 1.4; color: #1f2926; }
-  .qf-code-note strong { font-weight: 800; }
-  .qf-unlock #qf-verify-note { font-size: 1rem; color: #1f2926; }
+  /* Unlock panel (correction v3.7): bold black explanation and number, small gray rates line under the button. */
+  .qf-unlock__explain { margin: 0; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 700; color: #111; }
+  .qf-unlock__number strong { color: #111; font-weight: 800; }
+  .qf-unlock__rates { margin: 0; text-align: center; font-size: 0.875rem; line-height: 1.3; color: #5b6560; }
+  .qf-code-title { margin: 0; text-align: center; font-size: 1.125rem; line-height: 1.3; font-weight: 800; color: #111; }
   .qf-code-row { display: grid; gap: var(--space-2); }
   @media (min-width: 30rem) { .qf-code-row { grid-template-columns: 1fr auto; } .qf-code-row .qf-continue { width: auto; padding-inline: var(--space-6); } }
   .qf-field[hidden], .qf-unlock__number[hidden] { display: none; }

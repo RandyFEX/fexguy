@@ -1296,6 +1296,17 @@ scope protection wins.
   (4.5rem logo area, 8px row gap, centered product line, 16px padding),
   12px under the cards; the code instruction reads "Enter the 6-digit code
   sent to (***) ***-1234." in dark #1F2926 16px text, number in bold.
+  Correction v3.7 (after v4.7): the Unlock Your Rates panel reads, in
+  order, the red title, "We'll text a 6-digit verification code to your
+  mobile number." (bold black), the masked number (bold black) with
+  Change Number, the orange "Text Me My Access Code", then "Message and
+  data rates may apply." in small gray text under the button; after the
+  code is requested, a bold black "Enter the 6-digit code" heading. Both
+  notice lines come only from `server/quote/consent.js`
+  (`VERIFY_NOTICE_EXPLAIN`, `VERIFY_NOTICE_RATES`; evidence version v3).
+  The adjustment section is neutral gray only (no green): gray labels and
+  intro, white/gray unselected, #454B49 selected, gray borders, compact
+  balanced group padding; Step 4 labels use tight, centered line spacing.
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your

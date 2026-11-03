@@ -294,9 +294,6 @@ if (root) {
     leadId = body.lead;
     testBanner.hidden = !body.testMode;
     setStatus(sendStatus, '');
-    // v4.7: "(***) ***-1234", the last four digits of the number the code went to.
-    const last4 = unlockPhone.value.replace(/\D/g, '').slice(-4);
-    $('[data-qf-masked]').textContent = last4.length === 4 ? `(***) ***-${last4}` : body.masked;
     sendForm.hidden = true;
     verifyForm.hidden = false;
     setStatus(verifyStatus, '');

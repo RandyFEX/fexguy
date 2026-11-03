@@ -147,6 +147,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         const o = await page.$$eval('[data-pick="use"]', (els) => els.map((e) => [e.textContent, Math.round(e.getBoundingClientRect().height), Math.round(e.getBoundingClientRect().width)]));
         assert(o.map((x) => x[0]).join('|') === 'Burial Expenses|Cremation Expenses|Other Expenses', JSON.stringify(o));
         assert(new Set(o.map((x) => x[1])).size === 1 && new Set(o.map((x) => x[2])).size === 1 && o[0][1] >= 44, `button sizes ${JSON.stringify(o)}`);
+        const lab = await page.$$eval('[data-pick="use"]', (els) => els.map((e) => { const range = document.createRange(); range.selectNodeContents(e); const t = range.getBoundingClientRect(); const r = e.getBoundingClientRect(); const cs = getComputedStyle(e); return { off: Math.abs(t.top + t.height / 2 - (r.top + r.height / 2)), lh: parseFloat(cs.lineHeight) / parseFloat(cs.fontSize), pad: [cs.paddingTop, cs.paddingBottom] }; }));
+        assert(lab.every((x) => x.off <= 1.5 && x.lh <= 1.2 && x.pad[0] === x.pad[1]) && new Set(lab.map((x) => x.pad.join())).size === 1, `step 4 labels ${JSON.stringify(lab)}`);
         await page.waitForTimeout(400);
         await shot(page, `v35-${name}-2-use.png`);
         await page.click('[data-pick="use"][data-value="cremation"]');
@@ -245,7 +247,25 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       return { title: t.textContent.trim(), color: getComputedStyle(t).color, size: parseFloat(getComputedStyle(t).fontSize), note: document.querySelector('#qf-verify-note').textContent, btn: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor, fg: getComputedStyle(b).color, shown: document.querySelector('[data-qf-phone-show]').textContent, change: document.querySelector('[data-qf-edit-phone]').textContent, h: document.querySelector('[data-qf-unlock]').getBoundingClientRect().height };
     });
     assert(u.title === 'Unlock Your Rates' && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
-    assert(u.note.startsWith("We'll text a 6-digit verification code to your mobile number."), u.note);
+    const panel = await page.evaluate(() => {
+      const parts = ['#qf-unlock-title', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="number"]', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
+      const cs = (e) => getComputedStyle(e);
+      return {
+        texts: parts.map((e) => e.textContent.replace(/\s+/g, ' ').trim()),
+        tops: parts.map((e) => Math.round(e.getBoundingClientRect().top)),
+        titleColor: cs(parts[0]).color,
+        explain: [Number(cs(parts[1]).fontWeight), cs(parts[1]).color],
+        number: [Number(cs(parts[2].querySelector('strong')).fontWeight), cs(parts[2].querySelector('strong')).color],
+        rates: [parseFloat(cs(parts[4]).fontSize), cs(parts[4]).color],
+        changeIsButton: parts[2].querySelector('[data-qf-edit-phone]')?.tagName === 'BUTTON',
+        oldText: /Msg & data rates/.test(document.querySelector('[data-qf-unlock]').textContent),
+      };
+    });
+    const last4u = PHONES[name].replace(/\D/g, '').slice(-4);
+    assert(JSON.stringify(panel.texts) === JSON.stringify(['Unlock Your Rates', "We'll text a 6-digit verification code to your mobile number.", `(•••) •••-${last4u} Change Number`, 'Text Me My Access Code', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
+    assert(panel.tops.every((t, k) => k === 0 || t > panel.tops[k - 1]), `unlock panel order ${panel.tops}`);
+    assert(panel.titleColor === 'rgb(185, 28, 28)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
+    assert(panel.rates[0] <= 14 && /^rgb\((\d+), \1, \1\)$|^rgb\(91, 101, 96\)$/.test(panel.rates[1]) && panel.changeIsButton && !panel.oldText, `rates line ${JSON.stringify(panel)}`);
     assert(u.btn === 'Text Me My Access Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
     const digits = PHONES[name].replace(/\D/g, '');
     assert(u.shown.endsWith(digits.slice(6)) && !u.shown.includes(digits.slice(0, 3)), `number shown ${u.shown}`);
@@ -259,9 +279,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.evaluate(() => { window.__same = true; });
     await page.click('[data-qf-send]');
     await page.waitForSelector('[data-qf-verify]:not([hidden])');
-    const note = await page.$eval('[data-qf-verify] .qf-code-note', (e) => ({ text: e.textContent.trim(), fs: parseFloat(getComputedStyle(e).fontSize), color: getComputedStyle(e).color, bold: Number(getComputedStyle(e.querySelector('strong')).fontWeight) }));
-    const last4 = PHONES[name].replace(/\D/g, '').slice(-4);
-    assert(note.text === `Enter the 6-digit code sent to (***) ***-${last4}.` && note.fs >= 15 && note.fs <= 16 && note.color === 'rgb(31, 41, 38)' && note.bold >= 700, `code instruction ${JSON.stringify(note)}`);
+    const ct = await page.$eval('[data-qf-code-title]', (e) => ({ text: e.textContent.trim(), weight: Number(getComputedStyle(e).fontWeight), color: getComputedStyle(e).color, visible: e.getClientRects().length > 0 }));
+    assert(ct.text === 'Enter the 6-digit code' && ct.weight >= 700 && ct.color === 'rgb(17, 17, 17)' && ct.visible, `code heading ${JSON.stringify(ct)}`);
+    if (OUT) await page.locator('[data-qf-unlock]').screenshot({ path: `${OUT}/v37c-${name}-code-entry.png` });
     const v = await page.evaluate(() => ({ btn: getComputedStyle(document.querySelector('[data-qf-verify-btn]')).backgroundColor, fg: getComputedStyle(document.querySelector('[data-qf-verify-btn]')).color, resend: !!document.querySelector('[data-qf-resend]').offsetParent, change: !!document.querySelector('[data-qf-change]').offsetParent }));
     assert(v.btn === HOME_ORANGE && v.fg === 'rgb(255, 255, 255)' && v.resend && v.change, JSON.stringify(v));
     await page.fill('#qf-code', '123456');
@@ -411,9 +431,25 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
     const seg = await page.$$eval('.qf-adjust .qf-seg__opt', (els) => els.map((l) => { const sp = l.querySelector('span'); const cs = getComputedStyle(sp); return { on: l.querySelector('input').checked, bg: cs.backgroundColor, fg: cs.color, border: cs.borderTopColor }; }));
     const CHAR = 'rgb(69, 75, 73)';
-    assert(seg.filter((x) => x.on).length === 3 && seg.every((x) => (x.on ? x.bg === CHAR && x.fg === 'rgb(255, 255, 255)' && x.border === CHAR : x.bg === 'rgb(255, 255, 255)' && x.fg === GREEN && x.border === GREEN)), `selection colors ${JSON.stringify(seg)}`);
+    assert(seg.filter((x) => x.on).length === 3 && seg.every((x) => (x.on ? x.bg === CHAR && x.fg === 'rgb(255, 255, 255)' && x.border === CHAR : x.bg === 'rgb(255, 255, 255)' && x.fg === 'rgb(74, 80, 78)' && x.border === 'rgb(111, 118, 115)')), `selection colors ${JSON.stringify(seg)}`);
     const titles = await page.$$eval('.qf-adjust .qf-group__title', (els) => els.map((e) => getComputedStyle(e).color));
-    assert(titles.every((c) => c === GREEN), `label colors ${titles}`);
+    assert(titles.every((c) => c === 'rgb(74, 80, 78)'), `label colors ${titles}`);
+    const greens = await page.evaluate(() => {
+      const isGreen = (c) => { const m = c.match(/rgba?\((\d+), (\d+), (\d+)(?:, ([\d.]+))?\)/); if (!m || m[4] === '0') return false; const [r, g, b] = [+m[1], +m[2], +m[3]]; return g - Math.max(r, b) > 8; };
+      const els = [document.querySelector('[data-qf-adjust-intro]'), ...document.querySelectorAll('[data-qf-adjust], [data-qf-adjust] *')];
+      const bad = [];
+      for (const e of els) {
+        if (!e.getClientRects().length) continue;
+        const cs = getComputedStyle(e);
+        for (const prop of ['color', 'backgroundColor', 'borderTopColor', 'borderBottomColor', 'borderLeftColor', 'borderRightColor', 'outlineColor', 'accentColor'])
+          if (isGreen(cs[prop]) && !(prop.startsWith('border') && cs.borderTopStyle === 'none' && parseFloat(cs.borderTopWidth) === 0)) bad.push(`${e.tagName}.${e.className}:${prop}=${cs[prop]}`);
+      }
+      return bad;
+    });
+    assert(greens.length === 0, `green in the adjustment section: ${greens.slice(0, 5).join('; ')}`);
+    const pads = await page.$$eval('.qf-adjust .qf-group', (gs) => gs.map((g) => { const r = g.getBoundingClientRect(); const t = g.querySelector('.qf-group__title').getBoundingClientRect(); const kids = [...g.querySelectorAll('select, .qf-seg__opts')].map((k) => k.getBoundingClientRect()); const bottom = Math.max(...kids.map((k) => k.bottom)); return { top: Math.round(t.top - r.top), bottom: Math.round(r.bottom - bottom) }; }));
+    assert(pads.every((x) => Math.abs(x.top - x.bottom) <= 2 && x.top <= 10), `group padding ${JSON.stringify(pads)}`);
+    if (OUT) await page.locator('[data-qf-adjust]').screenshot({ path: `${OUT}/v37c-${name}-adjust.png` });
     const q = await page.$$eval('[data-step="1"] .qf-person, [data-step="3"] .qf-opt', (els) => els.map((e) => getComputedStyle(e).backgroundColor));
     assert(!q.includes(CHAR), 'charcoal leaked into the questionnaire');
     const heights = await page.$$eval('.qf-adjust .qf-control', (els) => els.filter((e) => e.offsetParent).map((e) => Math.round(e.getBoundingClientRect().height)));
@@ -476,7 +512,7 @@ await check('evidence: verified leads, consent records, intended use, Apply Now 
   for (const r of v)
     assert(
       (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
-        r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v2-2026-11' &&
+        r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v3-2026-11' && r.verifyNotice.text === "We'll text a 6-digit verification code to your mobile number. Message and data rates may apply." &&
         r.applications[0].attribution[0] === 'FF-101' && r.intakes['average-standard'].answers.length === 2 && r.intakes['average-standard'].flag === 'may-not-qualify',
       JSON.stringify(r).slice(0, 300),
     );
