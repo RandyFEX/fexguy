@@ -566,7 +566,7 @@ sidebar: true
 
 <p><br><strong>Is United of Omaha the same as Mutual of Omaha?</strong></p>
 
-<p>United of Omaha is a subsidiary of Mutual of Omaha, and they write different insurance products.</p>
+<p>United of Omaha Life Insurance Company is a Mutual of Omaha company. It underwrites Living Promise Whole Life Insurance.</p>
 
 <p><br><strong>Is Mutual of Omaha owned by policyholders?</strong></p>
 

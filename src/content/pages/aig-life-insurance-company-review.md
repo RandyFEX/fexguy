@@ -47,7 +47,7 @@ sidebar: true
 
 <h3 id="h-what-are-my-policy-options-with-aig"><strong>What are my policy options with AIG?</strong></h3>
 
-<p>Be aware that AIG Life Insurance changed its name to Corebridge Financial in 2022. Your AIG policy is valid with Corebridge Financial as long as you keep your current payments.</p>
+<p>Be aware that AIG’s life insurance and retirement business became a separate company called Corebridge Financial in 2022. AIG sold the last of its Corebridge shares in 2026, so AIG no longer owns it. Your old AIG policy is still good with Corebridge as long as you keep paying.</p>
 
 <p>Since this name change is fairly recent, we will use the AIG name through this article, but understand that everything we say about AIG also pertains to Corebridge financial.</p>
 
@@ -350,23 +350,15 @@ sidebar: true
 
 <p>AIG or American International Group, Inc. is an American multinational insurance company with more than 90 million customers worldwide. AIG traced its beginnings to 1919, and AIG continues to grow its business and operations domestically and internationally. </p>
 
-<p>On September 2022, AIG was rebranded and now goes by the business name of Corebridge Financial. </p>
+<p>In September 2022, AIG’s life insurance and retirement business became a separate public company, Corebridge Financial.</p>
 
 <p>Corebridge now handles the company’s life insurance and retirement accounts from the former AIG insurance company.</p>
 
-<p><strong>The different subsidiaries of AIG include:</strong></p>
-
-<ul>
-<li>AIG American General Life Insurance Company</li>
-<li>AIG Life and Retirement Company</li>
-<li>The Variable Annuity Life Insurance Company (VALIC)</li>
-<li>AIG Global Real Estate</li>
-<li>AIG Property Casualty</li>
-</ul>
+<p>Corebridge’s burial policies are issued by American General Life Insurance Company (in New York, The United States Life Insurance Company in the City of New York).</p>
 
 <h4>Corebridge Financial, Inc</h4>
 
-<p>175 Water St<br>New York City, NY 10038<br>Customer Service: (800) 225-5244<br><br></p>
+<p>2919 Allen Parkway<br>Houston, TX 77019<br>Customer Service: (800) 225-5244<br><br></p>
 
 <h4><strong>Contact info</strong></h4>
 
@@ -405,8 +397,6 @@ sidebar: true
 <p>Beware: Some agencies only sell one product and never tell you about other companies’ lower rates.</p>
 
 <p>Informed buyers know that almost all&#160;<a href="/a-z-companies/" target="_blank" rel="noreferrer noopener">life insurance companies</a>&#160;offer better coverage and rates than AIG, and most come with no waiting period.</p>
-
-<p>Funeral Funds has full access to all AIG products if we want to sell them.</p>
 
 <p>AIG is expensive for significant health issues, so it’s rarely your best choice in most cases.</p>
 
@@ -472,7 +462,7 @@ sidebar: true
 <details>
 <summary><b>Is AIG insurance still in business?
 </b></summary>
-American International Group, Inc is now operating under Corebridge Financial.
+Yes. AIG is still in business as a property and casualty insurer. Its former life insurance business is now Corebridge Financial, a separate company.
 </details>
 
 <details>
@@ -482,7 +472,7 @@ AIG Life &amp; Retirement is now Corebridge Financial starting September 15, 202
 
 <details>
 <summary><b>What is another name for AIG?</b></summary>
-AIG, or American International Group, Inc., is now called Corebridge Financial. Corebridge is now responsible for the company’s life insurance and retirement portfolio.
+AIG’s former life insurance and retirement business is now Corebridge Financial, a separate company. Corebridge is responsible for those life insurance and retirement policies.
 </details>
 
 <details>

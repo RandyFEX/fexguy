@@ -481,7 +481,7 @@ sidebar: true
 
 <p>Globe Life operates under state insurance regulations. Every life insurance company must comply with the laws of the state where the policyholder lives.</p>
 
-<p>For Globe Life, the primary regulator is the Texas Department of Insurance, but the company must also comply with rules in each state where it sells policies. These state agencies oversee solvency, claim practices, and consumer complaints.</p>
+<p>Globe Life And Accident Insurance Company is based (domiciled) in Nebraska, so the Nebraska Department of Insurance is its primary regulator, but the company must also comply with rules in each state where it sells policies. These state agencies oversee solvency, claim practices, and consumer complaints.</p>
 
 <p>The National Association of Insurance Commissioners (NAIC) also plays a significant role in protecting consumers. The NAIC maintains a public database that tracks complaints, regulatory actions, and financial filings for all licensed insurers in the United States.</p>
 

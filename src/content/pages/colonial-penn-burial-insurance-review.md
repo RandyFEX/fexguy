@@ -105,7 +105,7 @@ sidebar: true
 
 <p>According to Colonial Penn’s official rate chart, a 75-year-old man paying Colonial Penn $9.95 a month only has about $550 in life insurance. To reach $10,000 in coverage, he’d need 19 units ($10,450 in coverage), which would cost $189.05 per month.</p>
 
-<p>Compare that to most first-day-coverage final expense plans, where a healthy 75-year-old woman might pay $71 per month for a $10,000 policy that pays immediately, not after two years.</p>
+<p>Compare that to most first-day-coverage final expense plans, which pay the full benefit immediately, not after two years.</p>
 
 <p>The difference isn’t small, it’s massive. You’re paying more, waiting longer, and getting less coverage.</p>
 

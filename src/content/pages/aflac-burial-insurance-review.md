@@ -143,13 +143,13 @@ sidebar: true
 
 <h3><strong>How is Aflac final expense whole life insurance good for seniors?</strong></h3>
 
-<p>Aflac’s three final expense whole life insurance plans help ease the financial burden. However, among the three plans, the most beneficial is the level-benefit plan. This plan comes with first-day coverage, and the pricing is competitive. The graded plan is best for some health issues.</p>
+<p>Aflac’s two final expense whole life insurance plans help ease the financial burden. However, between the two plans, the most beneficial is the level-benefit plan. This plan comes with first-day coverage, and the pricing is competitive.</p>
 
 <p>We do not recommend the modified plan for seniors because it has a two-year waiting period. Seniors will be better off with a guaranteed issue life insurance compared with this plan. A guaranteed issue policy will accept all applicants regardless of their medical condition.</p>
 
 <h3><strong>Does Aflac have any hidden “Fine Print” in their policy?</strong></h3>
 
-<p>You must be aware of the death benefit schedule when considering Aflac’s graded and modified benefit plans. I don’t recommend these plans, as most people will qualify for Aflac’s 1st-day coverage plan.</p>
+<p>You must be aware of the death benefit schedule when considering Aflac’s modified benefit plan. I don’t recommend this plan, as most people will qualify for Aflac’s 1st-day coverage plan.</p>
 
 <p><strong>Modified Death Benefit</strong></p>
 
@@ -209,7 +209,7 @@ sidebar: true
 
 <h2 id="getting-approved"><strong>How do I get approved by Aflac?</strong></h2>
 
-<p><strong>To qualify for burial insurance, ACI will check your health in three ways:</strong></p>
+<p><strong>To qualify for burial insurance, Aflac will check your health in three ways:</strong></p>
 
 <ul>
 <li>They will ask health questions in the application</li>
@@ -230,11 +230,9 @@ sidebar: true
 <p><strong>Aflac’s</strong>&#160;<strong>final expense plans accept the following health conditions, which other burial insurance companies typically decline:</strong></p>
 
 <ol>
-<li><strong>COPD</strong>: Chronic obstructive pulmonary disease patients who do not smoke or use supplementary oxygen in the last two years will qualify for a graded benefit plan. Without treatment for more than 24 months, you will be eligible for level death benefit without a waiting period.</li>
+<li><strong>COPD</strong>: Without treatment for more than 24 months, you will be eligible for level death benefit without a waiting period.</li>
 <li><strong>Diabetes</strong>: diagnosed after 40 years old and does not use 40 units of insulin daily may qualify for the level death benefit.</li>
-<li><strong>Heart attack</strong>: after 24 months, will qualify for the graded death benefit. A heart attack over 24 months ago qualifies for the level death benefit.</li>
-<li><strong>Congestive heart failure:&#160;</strong>will qualify for the graded death benefit at any time.</li>
-<li><strong>Cancer:&#160;</strong>diagnosis, and treatment within 24 months will qualify for a graded benefit plan.</li>
+<li><strong>Heart attack</strong>: A heart attack over 24 months ago qualifies for the level death benefit.</li>
 </ol>
 
 <h3 id="h-what-are-the-unique-features-of-aetna-final-expense-insurance"><strong>What are the unique features of Aflac final expense insurance?</strong></h3>
@@ -242,7 +240,6 @@ sidebar: true
 <p><strong>Here are some of Aflac’s unique features that make them shine from the competition and make them a better choice for you:</strong></p>
 
 <ul>
-<li>Wheelchair use may qualify for a graded benefit plan</li>
 <li>No build chart</li>
 <li>Underwriting is based only on health questions, prescription history checks, and telephone interviews.</li>
 <li>Does not perform Medical Information Bureau check</li>

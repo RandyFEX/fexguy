@@ -1234,7 +1234,8 @@ scope protection wins.
   Don't add one to a page whose article contradicts itself on its main
   question (the audit's FLAG list) until Randy resolves the conflict; no
   Quick Answer on /a-z-health/, /a-z-companies/, and (held by Randy)
-  /buyers-guide/, /mutual-of-omaha-burial-insurance/.
+  /buyers-guide/. /mutual-of-omaha-burial-insurance/ got its opening
+  paragraph as its Quick Answer (Randy, November 2026, audit round 2).
   /mortgage-protection-life-insurance/ got Randy's Quick Answer (October
   2026); its "The short version" list is its Bottom Line panel.
   Randy resolved the FLAG list's underwriting conflicts (October 2026); the

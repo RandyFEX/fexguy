@@ -33,7 +33,7 @@ sidebar: true
 
 <h2>VALife burial insurance basics</h2>
 
-<p>VALife offers a government-sponsored life insurance product for veterans with service-connected disability ratings ranging from 0% to 100%. While the VA positions this as a benefit, VALife operates as a high-volume direct marketer of guaranteed acceptance insurance, lacking the efficiency of private-sector competition.</p>
+<p>VALife offers a government-sponsored life insurance product for veterans with service-connected disability ratings ranging from 0% to 100%. VALife is run by the VA itself. It is not a private insurance company or a marketer, and every applicant gets the same guaranteed acceptance plan.</p>
 
 <p>Because the government manages this program, the plan is often overpriced relative to the value it provides to your family. Most veterans assume a government plan will be the best deal, but I find that these policies often drain veterans’ monthly incomes when they could have qualified for much better rates and protection elsewhere.</p>
 
@@ -94,28 +94,26 @@ sidebar: true
 <thead>
 <tr>
 <th>Age</th>
-<th>Monthly Premium (Male)</th>
-<th>Monthly Premium (Female)</th>
+<th>Monthly Premium</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Age 60</td>
-<td>$45.40</td>
-<td>$33.00</td>
+<td>$50.00</td>
 </tr>
 <tr>
 <td>Age 65</td>
-<td>$57.10</td>
-<td>$41.00</td>
+<td>$62.00</td>
 </tr>
 <tr>
 <td>Age 70</td>
-<td>$74.50</td>
-<td>$53.00</td>
+<td>$78.00</td>
 </tr>
 </tbody>
 </table>
+
+<p>Source: VA.gov VALife rates for $10,000 of coverage.</p>
 
 <p>VALife carries a two-year waiting period plan that wastes your hard-earned money because the total premiums you pay may often exceed the actual death benefit. This specific policy charges much higher monthly rates because the government accepts the sickest applicants without asking any health questions.</p>
 
@@ -227,4 +225,4 @@ sidebar: true
 
 <h3>How does a beneficiary file a VALife claim in 2026?</h3>
 
-<p>Beneficiaries must submit a claim through the VA Life Insurance portal or by mailing the appropriate forms to the VA Insurance Center in Philadelphia. The process requires a certified death certificate and a completed claimant’s statement. Once the two-year waiting period has passed, the VA is known for relatively efficient processing, typically releasing the funds to the veteran’s family within a few weeks of receiving the necessary documentation.</p>
+<p>Beneficiaries must submit a claim through the VA Life Insurance portal or by mailing the appropriate forms to the VA Insurance Center in Philadelphia. The process requires a certified death certificate and a completed claimant’s statement. Once the two-year waiting period has passed, the VA says it usually pays VALife death claims within 2 to 5 business days once it has what it needs.</p>

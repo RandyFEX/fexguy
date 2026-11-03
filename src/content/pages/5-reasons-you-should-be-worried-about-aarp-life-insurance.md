@@ -58,13 +58,13 @@ sidebar: true
 
 <p>AARP is a popular organization selling life insurance for seniors. Don’t be misled; AARP is not an insurance company. The organization does not provide AARP insurance products. The term and whole life insurance policies sold to senior members over 50 with no medical exam are actually underwritten by New York Life.&#160;</p>
 
-<p>AARP has been endorsing New York Life since 2011. It’s an open secret that AARP endorses life insurance companies that give them the most benefits. AARP only serves as the marketing arm of New York Life. New York Life provides all life insurance policies acquired through AARP.</p>
+<p>New York Life has provided AARP’s life insurance since 1994. It’s an open secret that AARP endorses life insurance companies that give them the most benefits. AARP only serves as the marketing arm of New York Life. New York Life provides all life insurance policies acquired through AARP.</p>
 
 <p>You need to be an AARP member to buy life insurance. This is the one important requirement you cannot escape.</p>
 
-<p>AARP members, ages 50 through 79, can buy life insurance. There are two types of AARP life insurance available: term life insurance and permanent life insurance.</p>
+<p>AARP members ages 50 to 85 can buy at least one of three types of AARP life insurance: term, permanent and guaranteed acceptance.</p>
 
-<p>Term life insurance is available to members who are 50 to 74 years old. You can buy up to $100,000 coverage. You can qualify for coverage without undergoing a medical exam.</p>
+<p>Term life insurance is available to members who are 50 to 74 years old. You can buy up to $150,000 of coverage ($100,000 in New York). You can qualify for coverage without undergoing a medical exam.</p>
 
 <p>Permanent life insurance is available to <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> members who are 50 to 80 years old. You can buy up to $50,000 coverage without a medical exam.</p>
 
@@ -138,7 +138,7 @@ sidebar: true
 
 <p>The number five reason you should be worried about AARP guaranteed issue life insurance is that it has a two-year waiting period.</p>
 
-<p>Because your acceptance is guaranteed, New York Life takes a significant risk in insuring you for coverage. They put a two-year waiting period on your policy as a safety net. This means that if you die from natural causes during the first two years of the policy, your beneficiary will not receive your full death benefit. They will only receive all the premiums you paid into the policy plus 25% interest.</p>
+<p>Because your acceptance is guaranteed, New York Life takes a significant risk in insuring you for coverage. They put a two-year waiting period on your policy as a safety net. This means that if you die from natural causes during the first two years of the policy, your beneficiary will not receive your full death benefit. They will only receive all the premiums you paid into the policy plus 10%.</p>
 
 <p>New York Life will only pay full death benefit for accidental death during the first two years.</p>
 

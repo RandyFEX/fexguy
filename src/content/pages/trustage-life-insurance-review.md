@@ -640,7 +640,7 @@ sidebar: true
 
 <p><br><strong>When was TruStage founded?</strong></p>
 
-<p>TruStage was founded in 1934. It is a subsidiary of CUNA Mutual Group, one of the largest insurance companies in the United States.</p>
+<p>TruStage’s parent company was founded in 1935 as CUNA Mutual. It is a subsidiary of CUNA Mutual Group, one of the largest insurance companies in the United States.</p>
 
 <p><br><strong>What is the difference between TruStage and other life insurance companies?</strong></p>
 
@@ -656,7 +656,7 @@ sidebar: true
 
 <p><br><strong>How long has CMFG Life Insurance Company been in business?</strong></p>
 
-<p>CMFG Life Insurance Company has been in business for more than 100 years. It is a subsidiary of CUNA Mutual Group, one of the largest insurance companies in the United States. CMFG Life Insurance Company offers life insurance, disability insurance, and long-term care insurance. It is headquartered in Wisconsin.</p>
+<p>CMFG Life Insurance Company traces back to CUNA Mutual, founded in 1935. It is a subsidiary of CUNA Mutual Group, one of the largest insurance companies in the United States. CMFG Life Insurance Company offers life insurance, disability insurance, and long-term care insurance. It is headquartered in Wisconsin.</p>
 
 <p><br><strong>What does CUNA stand for?</strong></p>
 

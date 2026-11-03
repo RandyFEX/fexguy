@@ -164,6 +164,6 @@ sidebar: true
 
 <p><strong>How much is Senior Legacy Life Insurance?</strong> Costs vary based on age and health, but premiums are typically higher than those of the senior life carriers you can compare through an independent agent.</p>
 
-<p><strong>What is a good insurance company for seniors?</strong> A good insurance company for seniors is Funeral Funds. They offer affordable rates, and coverage begins immediately. An independent insurance agent will compare the best options available.</p>
+<p><strong>What is a good insurance company for seniors?</strong> A good choice is to work with an independent broker like Funeral Funds, who compares several insurance companies for you. An independent insurance agent will compare the best options available.</p>
 
 <p><strong>Can seniors get life insurance?</strong> Yes, seniors can qualify for life insurance, even if they have health issues. Most applicants qualify for simplified or guaranteed issue whole life plans.</p>

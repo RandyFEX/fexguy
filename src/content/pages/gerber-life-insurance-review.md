@@ -46,7 +46,7 @@ sidebar: true
 
 <h2 id="h-the-gerber-life-two-year-waiting-period"><strong>The Gerber Life two-year waiting period</strong></h2>
 
-<p>The horrible feature about Gerber Life Guaranteed Issue is the graded death benefit. It won’t pay out a penny if you die of a health or medical reason in the first two years.</p>
+<p>The horrible feature about Gerber Life Guaranteed Issue is the graded death benefit. It won’t pay the full benefit if you die of a health or medical reason in the first two years.</p>
 
 <p>Instead, they simply refund your premiums paid plus an extra 10 percent interest. The only exception is accidental death, which is payable from day one.</p>
 
@@ -76,7 +76,7 @@ sidebar: true
 
 <p>Because there are no health questions or qualification criteria, Gerber Life spreads the risk among all applicants. This significantly increases the price compared to standard 1st-day coverage plans.</p>
 
-<p>For example, a 65-year-old woman buying $10,000 of coverage might pay about $65 per month. A man of the same age would pay close to $85. These are estimates, but they line up with the reports from many customers. If they increase the coverage amount to $25,000, the monthly cost rises considerably to more than $200.</p>
+<p>For example, a 65-year-old woman buying $10,000 of coverage might pay about $65 per month. A man of the same age would pay close to $85. These are estimates, but they line up with the reports from many customers. If they increase the coverage amount to $25,000, the monthly cost rises to about $155 for her and about $212 for him.</p>
 
 <p>With Gerber, seniors are often confused and complain about the cost once they see how little the amount of coverage is for all of the premiums that they are paying. </p>
 
@@ -389,7 +389,7 @@ sidebar: true
 
 <p>The purpose of Gerber Life was to provide a means for families to protect both their children and parents with simple insurance policies. In 2018, Western &amp; Southern Financial purchased Gerber Life, but the company continues to operate under the Gerber name.</p>
 
-<p>The company is licensed in all 50 states and backed by excellent financial ratings. A.M. Best has given Gerber Life an “A,” which is an “Excellent” rating. Millions of policies are enforced today.</p>
+<p>The company is licensed in all 50 states and backed by excellent financial ratings. AM Best rates Gerber Life A+ (Superior). Millions of policies are enforced today.</p>
 
 <p>This means the company will have no difficulty paying insurance claims or meeting financial obligations in the future.</p>
 
