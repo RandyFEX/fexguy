@@ -11,6 +11,22 @@ export interface NavItem {
   children?: NavItem[];
 }
 
+/** A labelled group of links inside a mega-menu panel. */
+export interface NavGroup {
+  heading: string;
+  links: NavItem[];
+}
+
+/** A top-level category of the site header's mega menu. */
+export interface MegaNavItem {
+  label: string;
+  /** Stable id for the panel (used for aria-controls). */
+  id: string;
+  groups: NavGroup[];
+  /** Prominent "All ..." link at the foot of the panel. */
+  all?: NavItem;
+}
+
 export interface SiteConfig {
   /** Canonical origin, no trailing slash. Also set in astro.config.mjs. */
   url: string;
@@ -30,7 +46,13 @@ export interface SiteConfig {
   icons: { rel: string; href: string; sizes?: string }[];
   /** Default social-share image, path under /public. */
   defaultOgImage: string;
+  /** Compact menu kept on campaign landing pages that use the site header
+   * (/roku/), and the source of /search/'s "Popular guides". */
   primaryNav: NavItem[];
+  /** The site header's mega menu on regular pages (Randy, November 2026). */
+  megaNav: MegaNavItem[];
+  /** The header's quote button beside the phone number. */
+  quoteLink: NavItem;
   footer: {
     /** Footer columns as HTML (copied from the live site). */
     columns: string[];
@@ -79,6 +101,196 @@ export const site: SiteConfig = {
     { label: 'REVIEWS', href: '/reviews/' },
     { label: 'ABOUT', href: '/about/' },
   ],
+  // Sitewide mega menu (Randy, November 2026, navigation V1.0). Only
+  // published pages that build and aren't redirects: npm run verify checks
+  // every link. Labels are short Title Case (destination titles unchanged).
+  megaNav: [
+    {
+      label: 'Life Insurance',
+      id: 'life-insurance',
+      groups: [
+        {
+          heading: 'Coverage Types',
+          links: [
+            { label: 'Burial & Final Expense', href: '/burial-insurance/' },
+            { label: 'Final Expense Whole Life', href: '/final-expense-life-insurance-complete-guide/' },
+            { label: 'Term Life', href: '/term-life-insurance-guide-everyone/' },
+            { label: 'Mortgage Protection', href: '/mortgage-protection-life-insurance/' },
+            { label: 'Children & Grandchildren', href: '/children-grandchild-policies/' },
+            { label: 'Cancer Insurance', href: '/cancer-insurance/' },
+          ],
+        },
+        {
+          heading: 'Coverage Options',
+          links: [
+            { label: 'First-Day Coverage', href: '/burial-insurance/with-first-day-coverage/' },
+            { label: 'Guaranteed Issue', href: '/burial-insurance/guaranteed-issue-life-insurance-for-seniors/' },
+            { label: 'No Waiting Period', href: '/burial-insurance/life-insurance-with-no-waiting-period/' },
+            { label: 'No Medical Exam', href: '/burial-insurance/life-insurance-no-exam/' },
+            { label: 'Term to Whole Life Conversion', href: '/term-life-conversion-to-whole-life/' },
+          ],
+        },
+        {
+          heading: 'Costs & Coverage Amounts',
+          links: [
+            { label: 'Final Expense Insurance Cost', href: '/how-much-does-final-expense-insurance-cost/' },
+            { label: 'How Much Coverage Do I Need?', href: '/how-much-burial-insurance-do-i-need/' },
+            { label: 'Affordable Burial Insurance', href: '/finding-affordable-burial-insurance/' },
+            { label: 'Is Burial Insurance Worth It?', href: '/is-burial-insurance-worth-it/' },
+          ],
+        },
+        {
+          heading: 'Coverage by Age & Family',
+          links: [
+            { label: 'Seniors 50 to 85', href: '/burial-insurance/life-insurance-for-seniors/' },
+            { label: 'Over 70', href: '/burial-insurance/over-70/' },
+            { label: 'Over 80', href: '/burial-insurance/over-80/' },
+            { label: 'For Parents', href: '/burial-insurance/parents/' },
+            { label: 'For Veterans', href: '/burial-insurance/veterans/' },
+          ],
+        },
+      ],
+    },
+    {
+      label: 'Company Reviews',
+      id: 'company-reviews',
+      groups: [
+        {
+          heading: 'Well-Known Companies',
+          links: [
+            { label: 'AARP', href: '/aarp-life-insurance-review/' },
+            { label: 'Colonial Penn', href: '/colonial-penn-burial-insurance-review/' },
+            { label: 'Globe Life', href: '/globe-life-price-increase/' },
+            { label: 'Lincoln Heritage', href: '/lincoln-heritage-funeral-advantage-review/' },
+            { label: 'Mutual of Omaha', href: '/mutual-of-omaha-burial-insurance/' },
+            { label: 'State Farm', href: '/state-farm/' },
+            { label: 'TruStage', href: '/trustage-life-insurance-review/' },
+          ],
+        },
+        {
+          heading: 'Final Expense Companies',
+          links: [
+            { label: 'Aetna', href: '/aetna-burial-insurance-review/' },
+            { label: 'Aflac', href: '/aflac-burial-insurance-review/' },
+            { label: 'American Amicable', href: '/burial-insurance/american-amicable-life-insurance-review/' },
+            { label: 'CICA Life', href: '/cica-life-burial-insurance-review/' },
+            { label: 'Family Benefit Life', href: '/family-benefit-life-burial-insurance-review/' },
+            { label: 'Foresters', href: '/foresters-burial-insurance-review/' },
+            { label: 'Gerber Life', href: '/gerber-life-insurance-review/' },
+          ],
+        },
+        {
+          heading: 'More Reviews',
+          links: [
+            { label: 'Guarantee Trust Life', href: '/guarantee-trust-life-insurance-review/' },
+            { label: 'Transamerica', href: '/transamerica-burial-insurance-review/' },
+            { label: 'Trinity Life', href: '/trinity-life-insurance-review/' },
+            { label: 'Ethos', href: '/ethos-life-insurance-review/' },
+            { label: 'Primerica', href: '/primerica-life-insurance-review/' },
+            { label: 'Top 10 Final Expense Companies', href: '/burial-insurance/top-10-final-expense-life-insurance-companies/' },
+          ],
+        },
+      ],
+      all: { label: 'All Company Reviews', href: '/a-z-companies/' },
+    },
+    {
+      label: 'Health & Eligibility',
+      id: 'health-eligibility',
+      groups: [
+        {
+          heading: 'Common Health Conditions',
+          links: [
+            { label: 'Cancer', href: '/burial-insurance/cancer/' },
+            { label: 'Diabetes', href: '/burial-insurance/diabetes/' },
+            { label: 'Heart Conditions', href: '/burial-insurance/heart-conditions/' },
+            { label: 'COPD', href: '/burial-insurance/copd/' },
+            { label: 'Stroke & TIA', href: '/burial-insurance/stroke-tia/' },
+            { label: 'High Blood Pressure', href: '/burial-insurance/high-blood-pressure/' },
+          ],
+        },
+        {
+          heading: 'More Conditions',
+          links: [
+            { label: 'Kidney Disease', href: '/burial-insurance/kidney-disease/' },
+            { label: 'Liver Disease', href: '/burial-insurance/liver-disease/' },
+            { label: 'Dementia & Alzheimer\'s', href: '/burial-insurance/dementia-alzheimers/' },
+            { label: 'Mental Health Conditions', href: '/burial-insurance/mental-health-conditions/' },
+            { label: 'Neurological Disorders', href: '/burial-insurance/neurological-disorders/' },
+            { label: 'Smokers', href: '/burial-insurance/for-smokers/' },
+          ],
+        },
+        {
+          heading: 'Eligibility & Underwriting',
+          links: [
+            { label: 'Health Question Search', href: '/life-insurance-health-questions/' },
+            { label: 'Pre-Existing Conditions', href: '/final-expense-life-insurance-pre-existing-conditions/' },
+            { label: 'Height & Weight Guidelines', href: '/life-insurance-height-weight-guidelines/' },
+            { label: 'Activities of Daily Living', href: '/burial-insurance/adl-activities-of-daily-living/' },
+            { label: 'Declined for Life Insurance', href: '/declined-for-life-insurance/' },
+            { label: 'Application Process', href: '/burial-insurance/burial-insurance-application-process/' },
+          ],
+        },
+      ],
+      all: { label: 'All Health Conditions', href: '/a-z-health/' },
+    },
+    {
+      label: 'Guides & Tools',
+      id: 'guides-tools',
+      groups: [
+        {
+          heading: 'Guides',
+          links: [
+            { label: 'Burial Insurance Guide', href: '/burial-insurance/' },
+            { label: 'First-Time Shopper Guide', href: '/final-expense-life-insurance-book/' },
+            { label: 'Funeral Planning Guide', href: '/12-step-final-planning-guide/' },
+            { label: 'IUL Playbook', href: '/iul-book/' },
+            { label: 'Buyers Guide', href: '/buyers-guide/' },
+          ],
+        },
+        {
+          heading: 'Funeral & Cremation',
+          links: [
+            { label: 'Funeral Costs', href: '/how-much-does-a-funeral-cost/' },
+            { label: 'Cremation Costs', href: '/cremation-cost-and-info/' },
+            { label: 'Burial vs. Cremation', href: '/burial-vs-cremation/' },
+            { label: 'Prepaid Funerals', href: '/prepaid-funeral/' },
+            { label: 'When a Loved One Dies', href: '/what-to-do-when-a-loved-one-dies/' },
+          ],
+        },
+        {
+          heading: 'Tools',
+          links: [
+            { label: 'Health Question Search', href: '/life-insurance-health-questions/' },
+            { label: 'Burial Insurance Calculator', href: '/burial-insurance-calculator/' },
+            { label: 'Search the Site', href: '/search/' },
+          ],
+        },
+      ],
+    },
+    {
+      label: 'About Us',
+      id: 'about-us',
+      groups: [
+        {
+          heading: 'Funeral Funds',
+          links: [
+            { label: 'About Funeral Funds', href: '/about/' },
+            { label: 'Meet Randy', href: '/randy-vandervaate/' },
+            { label: 'Customer Reviews', href: '/reviews/' },
+          ],
+        },
+        {
+          heading: 'Trust & Contact',
+          links: [
+            { label: 'Licenses', href: '/licenses/' },
+            { label: 'Editorial Guidelines', href: '/editorial-guidelines/' },
+            { label: 'Contact Us', href: '/contact/' },
+          ],
+        },
+      ],
+    },
+  ],
+  quoteLink: { label: 'GET A QUOTE', href: '/free-quote/' },
   footer: {
     columns: [
       '<p><strong>Mailing Address</strong><br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>',

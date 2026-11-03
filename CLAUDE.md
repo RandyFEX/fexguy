@@ -1356,6 +1356,24 @@ scope protection wins.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
+- **Site header navigation (Randy, November 2026, navigation V1.0):** regular
+  pages carry a mega menu with five categories, Life Insurance, Company
+  Reviews, Health & Eligibility, Guides & Tools and About Us, each a panel of
+  grouped links (`megaNav` in src/config/site.ts; component
+  src/components/Navigation.astro). Desktop (64rem+): two header rows (logo,
+  GET A QUOTE and the phone contact; then the categories); panels open on
+  hover, click, Enter/Space or Down Arrow and close on Escape (focus returns
+  to the button), an outside click, focus leaving, or another category
+  opening. Small screens: the Menu button, then GET A QUOTE, the plain number
+  and the categories as a one-open-at-a-time accordion. All links are in the
+  HTML; without JavaScript panels open on hover/focus (desktop) or are listed
+  open. Only published, built, non-redirect pages go in the menu: never "#",
+  placeholders, unpublished or review-only tools
+  (/health-question-search-preview/), or campaign pages. /roku/ (campaign
+  number, site header) keeps the compact menu (`primaryNav`: GET A QUOTE,
+  RESOURCES, REVIEWS, ABOUT); /facebook/, /free-quote/ and /help/ keep their
+  own simplified headers. `npm run verify` checks all of this;
+  `npm run test:nav` (Playwright, after a build) tests the interactions.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).

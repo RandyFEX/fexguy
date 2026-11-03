@@ -1,56 +1,50 @@
 ---
-// Primary navigation. Small screens: collapses behind a Menu button.
-// Items with children render as a native <details> disclosure (works without
-// JavaScript). Without JS the list is simply always visible. The website phone
-// number is the last item, as on the live site. On desktop the page's number
-// (the website number, or /roku/'s campaign number) shows as two lines ("Speak
-// With a Licensed Agent" over the approved phone icon and the number; Randy,
-// V2.0, and V14.0 for every page). The mobile menu shows the plain number.
-import { site } from '@/config/site';
+// Site header navigation (Randy, November 2026, navigation V1.0).
+//
+// Regular pages: the mega menu. Desktop (64rem and up) shows two rows in the
+// header: the logo with GET A QUOTE and the phone contact ("Speak With a
+// Licensed Agent", the approved icon and the page's number), then the five
+// categories. Each category is a disclosure button; its panel (grouped links,
+// full header width) opens on hover, click, Enter/Space or Down Arrow, and
+// closes on Escape, an outside click, focus leaving it or another category
+// opening. Small screens: a Menu button opens a panel with GET A QUOTE, the
+// plain phone number and the categories as an accordion.
+//
+// Campaign pages that use the site header with their own number (/roku/)
+// keep the compact menu (GET A QUOTE, RESOURCES, REVIEWS, ABOUT).
+//
+// Every link is in the HTML; without JavaScript the panels open on hover and
+// focus (desktop) or are listed open (small screens). The links come from
+// src/config/site.ts (megaNav, quoteLink, primaryNav); npm run verify checks
+// them (no placeholders, no redirects, only built pages).
+import { site, type NavItem } from '@/config/site';
 import { HEADER_PHONE_ICON_PATH, HEADER_PHONE_LABEL, PAGE_PHONES, type PagePhoneKey } from '@/config/phones';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
 const pagePhone = PAGE_PHONES[phone];
+const variant = phone === 'default' ? 'mega' : 'compact';
 
 const current = Astro.url.pathname;
-const items = site.primaryNav;
-const isCurrent = (href: string) => href !== '#' && (href === current || (href !== '/' && current.startsWith(href)));
+const isCurrent = (href: string) => href === current;
+const hasCurrent = (links: NavItem[]) => links.some((l) => isCurrent(l.href));
+const compactItems = site.primaryNav;
 ---
 
-{
-  items.length > 0 && (
-    <nav class="nav" aria-label="Primary">
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav-list" hidden>
-        <span class="nav__toggle-bar" aria-hidden="true" />
-        <span>Menu</span>
-      </button>
-      <ul id="primary-nav-list" class="nav__list">
-        {items.map((item) => (
-          <li>
-            {item.children?.length ? (
-              <details class="nav__group">
-                <summary>{item.label}</summary>
-                <ul class="nav__sub">
-                  {item.children.map((child) => (
-                    <li>
-                      <a href={child.href} aria-current={isCurrent(child.href) ? 'page' : undefined}>
-                        {child.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            ) : (
-              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
-                {item.label}
-              </a>
-            )}
-          </li>
-        ))}
-        {site.phoneDisplay && (
-          <li class="nav__phone">
+<div class={`nav nav--${variant}`} data-nav={variant}>
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+    <span class="nav__toggle-bar" aria-hidden="true"></span>
+    <span>Menu</span>
+  </button>
+  <div id="site-menu" class="nav__panel">
+    {
+      variant === 'mega' ? (
+        <>
+          <div class="nav__actions">
+            <a class="nav__quote" href={site.quoteLink.href} aria-current={isCurrent(site.quoteLink.href) ? 'page' : undefined}>
+              {site.quoteLink.label}
+            </a>
             <a href={pagePhone.href} class="nav__phone-link" data-header-phone>
-              <span class="nav__phone-intro">{HEADER_PHONE_LABEL}</span>{" "}
+              <span class="nav__phone-intro">{HEADER_PHONE_LABEL}</span>{' '}
               <span class="nav__phone-number">
                 <svg class="nav__phone-icon" aria-hidden="true" width="10" height="10" viewBox="1.5 1.5 21 21" fill="currentColor">
                   <path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" />
@@ -58,40 +52,215 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
                 <span class="nav__phone-digits">{pagePhone.display}</span>
               </span>
             </a>
-          </li>
-        )}
-      </ul>
-    </nav>
-  )
-}
+          </div>
+          <nav class="nav__main" aria-label="Primary" data-mega-nav>
+            <ul class="nav__list">
+              {site.megaNav.map((item) => {
+                const links = [...item.groups.flatMap((g) => g.links), ...(item.all ? [item.all] : [])];
+                return (
+                  <li class="nav__item" data-nav-item>
+                    <button
+                      class="nav__trigger"
+                      type="button"
+                      id={`nav-trigger-${item.id}`}
+                      aria-expanded="false"
+                      aria-controls={`nav-panel-${item.id}`}
+                      data-current={hasCurrent(links) ? 'true' : undefined}
+                    >
+                      {item.label}
+                      <svg class="nav__chevron" aria-hidden="true" width="10" height="10" viewBox="0 0 10 10">
+                        <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                      </svg>
+                    </button>
+                    <div class="nav__mega" id={`nav-panel-${item.id}`} data-nav-panel>
+                      <div class="container nav__mega-inner">
+                        <div class="nav__cols" style={`--nav-cols: ${item.groups.length}`}>
+                          {item.groups.map((group, gi) => (
+                            <div class="nav__col">
+                              <span class="nav__heading" id={`nav-${item.id}-${gi}`}>
+                                {group.heading}
+                              </span>
+                              <ul class="nav__links" aria-labelledby={`nav-${item.id}-${gi}`}>
+                                {group.links.map((link) => (
+                                  <li>
+                                    <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+                                      {link.label}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                        {item.all && (
+                          <a class="nav__all" href={item.all.href} aria-current={isCurrent(item.all.href) ? 'page' : undefined}>
+                            {item.all.label}
+                            <span class="nav__arrow" aria-hidden="true">→</span>
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        </>
+      ) : (
+        <nav class="nav__main" aria-label="Primary">
+          <ul class="nav__list">
+            {compactItems.map((item) => (
+              <li class={item.children?.length ? 'nav__item nav__item--small' : 'nav__item'} data-nav-item={item.children?.length ? '' : undefined}>
+                {item.children?.length ? (
+                  <>
+                    <button class="nav__trigger" type="button" id="nav-trigger-resources" aria-expanded="false" aria-controls="nav-panel-resources">
+                      {item.label}
+                      <svg class="nav__chevron" aria-hidden="true" width="10" height="10" viewBox="0 0 10 10">
+                        <path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                      </svg>
+                    </button>
+                    <div class="nav__dropdown" id="nav-panel-resources" data-nav-panel>
+                      <ul class="nav__links">
+                        {item.children.map((child) => (
+                          <li>
+                            <a href={child.href} aria-current={isCurrent(child.href) ? 'page' : undefined}>
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                ) : (
+                  <a class="nav__top-link" href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                )}
+              </li>
+            ))}
+            <li class="nav__phone">
+              <a href={pagePhone.href} class="nav__phone-link" data-header-phone>
+                <span class="nav__phone-intro">{HEADER_PHONE_LABEL}</span>{' '}
+                <span class="nav__phone-number">
+                  <svg class="nav__phone-icon" aria-hidden="true" width="10" height="10" viewBox="1.5 1.5 21 21" fill="currentColor">
+                    <path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" />
+                  </svg>
+                  <span class="nav__phone-digits">{pagePhone.display}</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )
+    }
+  </div>
+</div>
 
 <script>
-  const toggle = document.querySelector<HTMLButtonElement>('.nav__toggle');
-  const list = document.getElementById('primary-nav-list');
-  if (toggle && list) {
+  const root = document.querySelector<HTMLElement>('[data-nav]');
+  const toggle = root?.querySelector<HTMLButtonElement>('.nav__toggle');
+  const panel = document.getElementById('site-menu');
+  if (root && toggle && panel) {
+    const desktop = window.matchMedia('(min-width: 64rem)');
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const items = [...root.querySelectorAll<HTMLElement>('[data-nav-item]')];
+    const triggerOf = (item: HTMLElement) => item.querySelector<HTMLButtonElement>('.nav__trigger')!;
+    const timers = new WeakMap<HTMLElement, number>();
+    // When hover has just opened a panel, the click that usually follows
+    // keeps it open instead of closing it again.
+    const hoverOpened = new WeakMap<HTMLElement, number>();
+
     toggle.hidden = false;
-    list.dataset.collapsible = 'true';
-    toggle.addEventListener('click', () => {
-      toggle.setAttribute('aria-expanded', String(toggle.getAttribute('aria-expanded') !== 'true'));
-    });
+    panel.dataset.collapsible = 'true';
+
+    const isOpen = (item: HTMLElement) => triggerOf(item).getAttribute('aria-expanded') === 'true';
+    const setOpen = (item: HTMLElement, open: boolean) => {
+      triggerOf(item).setAttribute('aria-expanded', String(open));
+      item.toggleAttribute('data-open', open);
+    };
+    const closeAll = (except?: HTMLElement) => items.forEach((i) => i !== except && isOpen(i) && setOpen(i, false));
+    const open = (item: HTMLElement) => {
+      closeAll(item);
+      setOpen(item, true);
+    };
+    const setMenu = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      if (!open) closeAll();
+    };
+    const clearTimer = (item: HTMLElement) => {
+      const t = timers.get(item);
+      if (t) window.clearTimeout(t);
+      timers.delete(item);
+    };
+
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+
+    for (const item of items) {
+      const trigger = triggerOf(item);
+      trigger.addEventListener('click', () => {
+        if (isOpen(item) && Date.now() - (hoverOpened.get(item) ?? 0) < 600) return;
+        if (isOpen(item)) setOpen(item, false);
+        else open(item);
+      });
+      trigger.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowDown') return;
+        e.preventDefault();
+        open(item);
+        item.querySelector<HTMLAnchorElement>('[data-nav-panel] a')?.focus();
+      });
+      // Desktop hover: open at once, close after a short pause so moving the
+      // pointer from the button into the panel never closes it.
+      item.addEventListener('pointerenter', (e) => {
+        if (e.pointerType !== 'mouse' || !desktop.matches || !canHover.matches) return;
+        clearTimer(item);
+        if (!isOpen(item)) {
+          open(item);
+          hoverOpened.set(item, Date.now());
+        }
+      });
+      item.addEventListener('pointerleave', (e) => {
+        if (e.pointerType !== 'mouse' || !desktop.matches) return;
+        clearTimer(item);
+        timers.set(item, window.setTimeout(() => setOpen(item, false), 300));
+      });
+      // Desktop: a panel closes when keyboard focus leaves it.
+      item.addEventListener('focusout', (e) => {
+        if (!desktop.matches) return;
+        const next = e.relatedTarget as Node | null;
+        if (next && !item.contains(next)) setOpen(item, false);
+      });
+    }
+
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      document.querySelectorAll<HTMLDetailsElement>('.nav__group[open]').forEach((d) => (d.open = false));
+      const openItem = items.find(isOpen);
+      if (openItem) {
+        setOpen(openItem, false);
+        if (openItem.contains(document.activeElement)) triggerOf(openItem).focus();
+        return;
+      }
       if (toggle.getAttribute('aria-expanded') === 'true') {
-        toggle.setAttribute('aria-expanded', 'false');
+        setMenu(false);
         toggle.focus();
       }
     });
-    // Close an open dropdown when clicking elsewhere.
+    // Desktop: clicking anywhere outside an open panel closes it.
     document.addEventListener('click', (e) => {
-      document.querySelectorAll<HTMLDetailsElement>('.nav__group[open]').forEach((d) => {
-        if (!d.contains(e.target as Node)) d.open = false;
-      });
+      if (!desktop.matches) return;
+      items.forEach((i) => isOpen(i) && !i.contains(e.target as Node) && setOpen(i, false));
     });
+    // Choosing a destination closes the menu (also when the page is restored
+    // from the back/forward cache).
+    panel.addEventListener('click', (e) => {
+      if ((e.target as Element).closest('a')) setMenu(false);
+    });
+    window.addEventListener('pageshow', () => setMenu(false));
+    desktop.addEventListener('change', () => setMenu(false));
   }
 </script>
 
 <style>
+  /* ---- Menu button (small screens) ------------------------------------- */
   .nav__toggle {
     display: inline-flex;
     align-items: center;
@@ -114,7 +283,7 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
   :global(.js) .nav__toggle[hidden] {
     display: inline-flex;
   }
-  :global(.js) .nav__list {
+  :global(.js) .nav__panel {
     display: none;
   }
   .nav__toggle-bar,
@@ -138,87 +307,212 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
     top: 6px;
   }
 
-  .nav__list,
-  .nav__sub {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .nav__list[data-collapsible] {
+  /* ---- Small-screen menu panel ----------------------------------------- */
+  .nav__panel[data-collapsible] {
     display: none;
   }
-  .nav__toggle[aria-expanded='true'] + .nav__list {
+  .nav__toggle[aria-expanded='true'] + .nav__panel {
     display: block;
     position: absolute;
     inset-inline: 0;
     top: 100%;
     z-index: 50;
+    max-height: calc(100vh - 5rem);
+    max-height: calc(100dvh - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 12px 24px rgb(0 0 0 / 0.08);
     padding: var(--space-2) var(--space-4) var(--space-4);
   }
-  .nav__list a,
-  .nav__group summary {
-    display: flex;
-    align-items: center;
-    min-height: var(--tap-target);
+  .nav__list,
+  .nav__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav a {
     color: var(--color-text);
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9375rem;
-    cursor: pointer;
   }
-  .nav__group summary::after {
-    content: '▾';
-    margin-left: var(--space-1);
-    font-size: 0.8em;
-  }
-  .nav__sub {
-    padding-left: var(--space-4);
-  }
-  .nav__sub a {
-    font-weight: 400;
-  }
-  .nav__list .nav__phone a {
-    color: var(--color-accent);
-    font-weight: 700;
-  }
-  /* Mobile menu: the plain number, as before. */
-  .nav__phone-intro,
-  .nav__phone-icon {
-    display: none;
-  }
-  .nav__list a:hover,
-  .nav__list a[aria-current='page'] {
+  .nav a:hover,
+  .nav a[aria-current='page'] {
     color: var(--color-primary);
     text-decoration: underline;
   }
 
-  /* Desktop nav from 64rem: GET A QUOTE, RESOURCES, REVIEWS, ABOUT and the
-     phone fit on one line beside the logo from there; narrower screens use
-     the Menu button. */
+  .nav__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-4);
+    padding-block: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav .nav__quote {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--tap-target);
+    padding: 0 var(--space-4);
+    border-radius: var(--radius);
+    background: var(--color-primary);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+  }
+  .nav .nav__quote:hover,
+  .nav .nav__quote[aria-current='page'] {
+    color: #ffffff;
+    background: #0f2c25;
+    text-decoration: none;
+  }
+  .nav .nav__phone-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+  /* Small screens: the plain number, as before. */
+  .nav__phone-intro,
+  .nav__phone-icon {
+    display: none;
+  }
+
+  .nav__trigger,
+  .nav__top-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    width: 100%;
+    min-height: var(--tap-target);
+    padding: 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text);
+    text-align: left;
+    cursor: pointer;
+  }
+  .nav__list > li + li {
+    border-top: 1px solid var(--color-border);
+  }
+  .nav__chevron {
+    flex: none;
+    transition: transform 0.15s ease;
+  }
+  .nav__trigger[aria-expanded='true'] .nav__chevron {
+    transform: rotate(180deg);
+  }
+  .nav__trigger[data-current] {
+    color: var(--color-primary);
+  }
+
+  /* Accordion panels: closed with JavaScript until opened; without it they
+     are listed open. */
+  :global(.js) .nav__mega,
+  :global(.js) .nav__dropdown {
+    display: none;
+  }
+  :global(.js) .nav__item[data-open] .nav__mega,
+  :global(.js) .nav__item[data-open] .nav__dropdown {
+    display: block;
+  }
+  .nav__mega-inner {
+    padding: 0 0 var(--space-3);
+  }
+  /* The panel's own container keeps the page gutters on desktop only; inside
+     the small-screen menu the menu's padding already provides them. */
+  .nav__mega .container {
+    padding-inline: 0;
+  }
+  .nav__cols {
+    display: grid;
+    gap: var(--space-3) var(--space-6);
+  }
+  .nav__heading {
+    display: block;
+    margin: var(--space-2) 0 var(--space-1);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  /* Small screens: one column on phones, more columns on tablets. */
+  .nav__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    column-gap: var(--space-4);
+  }
+  .nav__arrow {
+    margin-left: 0.35em;
+  }
+  .nav__links a,
+  .nav__all {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    font-size: 0.9375rem;
+    line-height: 1.3;
+  }
+  .nav .nav__all {
+    margin-top: var(--space-2);
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  .nav__dropdown .nav__links {
+    padding-bottom: var(--space-2);
+  }
+
+  /* ---- Desktop (64rem and up) ------------------------------------------ */
   @media (min-width: 64rem) {
     .nav__toggle,
     .nav__toggle:not([hidden]),
     :global(.js) .nav__toggle[hidden] {
       display: none;
     }
-    .nav__list,
-    .nav__list[data-collapsible],
-    :global(.js) .nav__list {
+    .nav__panel,
+    .nav__panel[data-collapsible],
+    :global(.js) .nav__panel {
       display: flex;
       align-items: center;
       gap: var(--space-6);
       position: static;
       padding: 0;
       border: 0;
+      box-shadow: none;
+      max-height: none;
+      overflow: visible;
     }
-    .nav__group {
-      position: relative;
+    .nav__list {
+      display: flex;
+      align-items: center;
     }
+    .nav__list > li + li {
+      border-top: 0;
+    }
+    .nav__trigger,
+    .nav__top-link {
+      width: auto;
+      justify-content: flex-start;
+      gap: var(--space-1);
+      font-size: 0.9375rem;
+    }
+    .nav__trigger:hover,
+    .nav__trigger[aria-expanded='true'] {
+      color: var(--color-primary);
+    }
+
     /* Two-line phone block: the icon and number centered under the intro
-       line, about 2px apart, the block centered in the unchanged header. */
-    .nav__list .nav__phone-link {
+       line. */
+    .nav .nav__phone-link {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -242,23 +536,123 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
       line-height: 1.1;
       white-space: nowrap;
     }
-    /* Small filled handset, smaller than the digits. */
     .nav__phone-icon {
       display: block;
       flex: none;
       color: #173f35;
     }
-    /* Trim the number's line box to the digits (cap height to baseline) so
-       the handset centers on the digits themselves in every font. */
     .nav__phone-digits {
       text-box: trim-both cap alphabetic;
     }
-    .nav__group .nav__sub {
+
+    /* Mega menu: the header becomes two rows. Row 1: logo, then GET A QUOTE
+       and the phone on the right. Row 2: the five categories. */
+    :global(.site-header__inner) {
+      flex-wrap: wrap;
+    }
+    .nav--mega,
+    .nav--mega .nav__panel {
+      display: contents;
+    }
+    .nav--mega .nav__actions {
+      margin-left: auto;
+      padding: 0;
+      border: 0;
+      gap: var(--space-6);
+    }
+    .nav--mega .nav__main {
+      flex: 1 0 100%;
+      margin-bottom: calc(-1 * var(--space-2));
+    }
+    .nav--mega .nav__list {
+      gap: var(--space-8, 2.5rem);
+    }
+    .nav--mega .nav__trigger {
+      min-height: 2.75rem;
+      border-bottom: 3px solid transparent;
+    }
+    .nav--mega .nav__trigger[aria-expanded='true'],
+    .nav--mega .nav__trigger[data-current] {
+      border-bottom-color: var(--color-primary);
+    }
+    /* The panel spans the header (.site-header is the positioned box), so it
+       never runs past the viewport, and starts right at the header's edge. */
+    .nav--mega .nav__mega {
+      position: absolute;
+      inset-inline: 0;
+      top: 100%;
+      z-index: 50;
+      max-height: calc(100vh - 8rem);
+      max-height: calc(100dvh - 8rem);
+      overflow-y: auto;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: 0 16px 32px rgb(0 0 0 / 0.1);
+    }
+    .nav__mega .container {
+      padding-inline: var(--space-4);
+    }
+    .nav__mega-inner {
+      padding-block: var(--space-4) var(--space-6);
+    }
+    .nav__cols {
+      grid-template-columns: repeat(var(--nav-cols, 3), minmax(0, 1fr));
+      max-width: calc(var(--nav-cols, 3) * 16rem);
+    }
+    .nav__links {
+      display: block;
+    }
+    .nav__links a {
+      min-height: 2.25rem;
+    }
+    .nav__heading {
+      margin-top: 0;
+      padding-bottom: var(--space-1);
+      border-bottom: 2px solid var(--color-primary);
+      color: var(--color-primary);
+    }
+    .nav .nav__all {
+      display: inline-flex;
+      min-height: var(--tap-target);
+      margin-top: var(--space-3);
+      padding: 0 var(--space-4);
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius);
+    }
+    .nav .nav__all:hover {
+      background: var(--color-primary);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    /* Without JavaScript: open on hover and keyboard focus. */
+    :global(html:not(.js)) .nav__mega,
+    :global(html:not(.js)) .nav__dropdown {
+      display: none;
+    }
+    :global(html:not(.js)) .nav__item:hover .nav__mega,
+    :global(html:not(.js)) .nav__item:focus-within .nav__mega,
+    :global(html:not(.js)) .nav__item:hover .nav__dropdown,
+    :global(html:not(.js)) .nav__item:focus-within .nav__dropdown {
+      display: block;
+    }
+
+    /* Compact menu (/roku/): one row beside the logo, as before. */
+    .nav--compact .nav__list {
+      gap: var(--space-6);
+    }
+    .nav--compact .nav__top-link,
+    .nav--compact .nav__trigger {
+      font-size: 0.9375rem;
+    }
+    .nav--compact .nav__item--small {
+      position: relative;
+    }
+    .nav--compact .nav__dropdown {
       position: absolute;
       right: 0;
       top: 100%;
       z-index: 50;
-      /* As wide as the longest label (one line each), never over 22rem. */
       width: max-content;
       max-width: 22rem;
       padding: var(--space-2) var(--space-4);
@@ -266,6 +660,9 @@ const isCurrent = (href: string) => href !== '#' && (href === current || (href !
       border: 1px solid var(--color-border);
       border-radius: var(--radius);
       box-shadow: 0 8px 24px rgb(0 0 0 / 0.08);
+    }
+    .nav--compact .nav__dropdown .nav__links {
+      padding: 0;
     }
   }
 </style>
