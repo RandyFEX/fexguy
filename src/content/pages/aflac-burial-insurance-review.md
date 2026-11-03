@@ -199,12 +199,12 @@ sidebar: true
 
 <h2 id="other-benefits"><strong>Are there any riders with Aflac life insurance?</strong></h2>
 
-<p>Unfortunately, Aflac’s final expense whole life insurance does not offer any rider or additional benefits like most life insurance companies.</p>
+<p>Yes. Aflac’s Level Plan offers three optional riders. The Modified Plan does not offer them. Rider availability varies by state.</p>
 
 <ul>
-<li><strong>Accelerated Living Benefit Rider</strong></li>
-<li><strong>Nursing Home Confinement Rider</strong></li>
-<li><strong>Policy Loans</strong></li>
+<li><strong>Accelerated Death Benefit Rider</strong></li>
+<li><strong>Accidental Death Benefit Rider</strong></li>
+<li><strong>Children’s Term Rider</strong></li>
 </ul>
 
 <h2 id="getting-approved"><strong>How do I get approved by Aflac?</strong></h2>

@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not</p>
+<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Aetna checks your health answers, prescription history and MIB records, and may do a phone interview<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not</p>
 
 <p>Aetna burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $2,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that people who don’t qualify for that top tier get pushed into a modified plan with delays. Compared to other burial insurance options, Aetna sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
 
@@ -222,7 +222,7 @@ sidebar: true
 
 <ul>
 <li>Final expense plan not available in all states</li>
-<li>Strict underwriting only healthy people qualify.</li>
+<li>Some health answers place you in Standard Level or the Modified plan instead of the best rates.</li>
 </ul>
 
 <h3><strong>#2: graded benefit plan (older product)</strong></h3>

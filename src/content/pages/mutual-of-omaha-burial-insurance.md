@@ -105,7 +105,7 @@ sidebar: true
 <td>Immediate Coverage</td><td>100% coverage from day one</td>
 </tr>
 <tr>
-<td>Coverage Amount</td><td>$2,000 - $40,000</td>
+<td>Coverage Amount</td><td>$2,000 - $50,000</td>
 </tr>
 <tr>
 <td>Level Premium</td><td>Price never increases</td>
@@ -686,7 +686,7 @@ sidebar: true
 <p><strong>Cons:</strong></p>
 
 <ul>
-<li>Easily confused with Mutual of Omaha’s other company, United of Omaha, which has a mandatory 2-year waiting period.</li>
+<li>Living Promise Whole Life Insurance is underwritten by United of Omaha Life Insurance Company, a Mutual of Omaha company. Product availability and provisions vary by state.</li>
 <li>Has build chart: You may not qualify if you are on the heavy side (obese or morbidly obese).</li>
 <li>Waiting period: The graded benefit plan comes with a 2-year waiting period.</li>
 <li>Not all health issues qualify: significant medical conditions can be denied even with the graded plan.</li>
@@ -694,7 +694,7 @@ sidebar: true
 
 <p><br><strong>How much life insurance can you get with Mutual of Omaha life insurance?</strong></p>
 
-<p>You can buy $2,000 to $40,000 coverage.</p>
+<p>You can buy $2,000 to $50,000 of Level coverage, or up to $20,000 of Graded coverage. Limits vary by state.</p>
 
 <p><br><strong>What does Mutual of Omaha life insurance cost?</strong></p>
 
