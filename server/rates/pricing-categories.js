@@ -39,9 +39,9 @@ export const ATTRIBUTION_CODES = {
 export const CARRIER_DISPLAY = {
   // timing: the coverage timing of the priced benefit tier (Level/Standard
   // pay the full benefit from the first day; Gerber Guaranteed Life is a
-  // two-year graded benefit). logo: the carrier's own artwork (null until an
-  // authentic file is supplied; the card then shows the carrier name).
-  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: null },
+  // two-year graded benefit). logo: the carrier's own artwork (CVS/aetna as
+  // supplied by Randy; null would show the carrier name in plain text).
+  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' },
   'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' },
   'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' },
 };

@@ -765,6 +765,9 @@ const PHONES_SRC = readFileSync(new URL('../src/config/phones.ts', import.meta.u
 const HEADER_LABEL = PHONES_SRC.match(/HEADER_PHONE_LABEL = '([^']+)'/)?.[1];
 const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1];
 const CAMPAIGN_PAGES = new Set(['/roku/', '/facebook/']);
+// The one approved exception (Randy, Quote System v3.6): the dedicated quote
+// funnel's minimal header shows Secure Form above the number, with no label.
+const NO_LABEL_PAGES = new Set(['/final-expense-insurance-prices/']);
 const headerProblems = [];
 let headersChecked = 0;
 if (!HEADER_LABEL || !HEADER_ICON) headerProblems.push('src/config/phones.ts: HEADER_PHONE_LABEL or HEADER_PHONE_ICON_PATH not found');
@@ -781,11 +784,13 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     if (links.length !== 1) { headerProblems.push(`${page}: ${kind} has ${links.length} data-header-phone links (expected 1)`); continue; }
     const [, attrs, inner] = links[0];
     const text = inner.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-    if (!text.startsWith(HEADER_LABEL + ' ')) headerProblems.push(`${page}: ${kind} label is not "${HEADER_LABEL}" ("${text}")`);
+    const noLabel = NO_LABEL_PAGES.has(page);
+    if (noLabel ? text.includes(HEADER_LABEL) : !text.startsWith(HEADER_LABEL + ' ')) headerProblems.push(`${page}: ${kind} label is not ${noLabel ? 'absent' : `"${HEADER_LABEL}"`} ("${text}")`);
+    if (noLabel && !/Secure Form/.test(region.replace(/<[^>]+>/g, ' '))) headerProblems.push(`${page}: ${kind} has no Secure Form line`);
     const paths = [...inner.matchAll(/<svg\b[\s\S]*?<path\b[^>]*\bd="([^"]+)"/g)].map((m) => m[1]);
     if (!paths.includes(HEADER_ICON)) headerProblems.push(`${page}: ${kind} phone has no approved handset icon`);
     const href = attrs.match(/href="tel:(\d+)"/)?.[1];
-    const shown = text.slice(HEADER_LABEL.length).replace(/\D/g, '');
+    const shown = (noLabel ? text : text.slice(HEADER_LABEL.length)).replace(/\D/g, '');
     const expected = CAMPAIGN_PAGES.has(page) ? '8886564648' : '8888629456';
     if (href !== shown) headerProblems.push(`${page}: ${kind} link dials ${href} but shows ${shown}`);
     if (shown !== expected) headerProblems.push(`${page}: ${kind} shows ${shown}, expected ${expected}`);

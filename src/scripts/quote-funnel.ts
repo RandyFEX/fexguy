@@ -392,6 +392,24 @@ if (root) {
     b.textContent = text;
     return b;
   };
+  /** The approved card icons: a filled check for first-day coverage, a calendar for a waiting period. */
+  function timingIcon(kind: 'check' | 'calendar') {
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.dataset.icon = kind;
+    const shapes =
+      kind === 'check'
+        ? [['circle', { cx: '12', cy: '12', r: '11', fill: '#0b2e22' }], ['path', { d: 'M6.8 12.4l3.4 3.4 7-7.2', fill: 'none', stroke: '#fff', 'stroke-width': '2.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }]]
+        : [['rect', { x: '3', y: '4.5', width: '18', height: '16', rx: '2', fill: 'none', stroke: '#0b2e22', 'stroke-width': '2' }], ['path', { d: 'M3 9.5h18M8 2.5v4M16 2.5v4', fill: 'none', stroke: '#0b2e22', 'stroke-width': '2', 'stroke-linecap': 'round' }], ['rect', { x: '13', y: '13', width: '4', height: '4', rx: '0.5', fill: '#0b2e22' }]];
+    for (const [tag, attrs] of shapes as [string, Record<string, string>][]) {
+      const el = document.createElementNS(ns, tag);
+      for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+      svg.append(el);
+    }
+    return svg;
+  }
   function lockCards() {
     unlocked = false;
     pricing.dataset.locked = 'true';
@@ -465,6 +483,7 @@ if (root) {
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     timing.textContent = state === 'ok' ? timings.join(' / ') : '';
     timing.hidden = !timing.textContent;
+    if (!timing.hidden) timing.prepend(timingIcon(/waiting period/i.test(timing.textContent) ? 'calendar' : 'check'));
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
       ...names.map((n) => {
         if (n.logo) {

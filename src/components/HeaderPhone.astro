@@ -7,11 +7,13 @@
 // two-line nav block. `npm run verify` checks every built header.
 import { HEADER_PHONE_ICON_PATH, HEADER_PHONE_LABEL, type PagePhone } from '@/config/phones';
 
-const { phone } = Astro.props as { phone: PagePhone };
+// showLabel={false}: only the dedicated quote funnel (Randy, v3.6), whose
+// header shows Secure Form above the number instead.
+const { phone, showLabel = true } = Astro.props as { phone: PagePhone; showLabel?: boolean };
 ---
 
 <a class="header-phone" href={phone.href} data-header-phone>
-  <span class="header-phone__label">{HEADER_PHONE_LABEL}</span>
+  {showLabel && <span class="header-phone__label">{HEADER_PHONE_LABEL}</span>}
   <span class="header-phone__number">
     <svg class="header-phone__icon" aria-hidden="true" width="10" height="10" viewBox="1.5 1.5 21 21" fill="currentColor">
       <path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" />

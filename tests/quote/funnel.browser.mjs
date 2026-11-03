@@ -58,6 +58,7 @@ async function minimalLayout(page) {
       legal: [...document.querySelectorAll('.qh-foot a')].map((a) => a.textContent.trim()),
       sticky: !!document.querySelector('.sticky-call, [data-sticky-call]'),
       headerH: Math.round(document.querySelector('.qh-top').getBoundingClientRect().height),
+      label: /Speak With a Licensed Agent/i.test(document.querySelector('.qh-top').textContent),
     };
   });
   assert(!r.siteHeader && !r.menus.length && !r.promo && !r.sticky, `regular site parts present ${JSON.stringify(r)}`);
@@ -65,6 +66,7 @@ async function minimalLayout(page) {
   assert(r.logo === 'https://funeralfunds.com/' && r.secure && r.tel === 'tel:8888629456', `header ${JSON.stringify(r)}`);
   assert(r.legal.includes('Privacy Policy') && r.legal.includes('Terms of Use'), `legal links ${r.legal}`);
   assert(r.headerH <= 90, `header ${r.headerH}px tall`);
+  assert(!r.label, 'header still shows Speak With a Licensed Agent');
 }
 
 async function walk(page, phone) {
@@ -240,7 +242,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     );
     assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.ratio < 0.03), JSON.stringify(cards));
     assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense/First-Day Coverage|Gerber Life/Guaranteed Life/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
-    assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[2].src === '/images/carriers/gerber-life-logo.png', 'logo files');
+    assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
+    const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));
+    assert(icons.join('|') === 'check|check|calendar', `timing icons ${icons}`);
+    const fit = await page.$$eval('.qf-card__logo img', (els) => els.map((e) => getComputedStyle(e).objectFit));
+    assert(fit.every((f) => f === 'contain'), `object-fit ${fit}`);
     const exp = expected({ age: 60, gender: 'female', tobacco: false, coverage: 10000 });
     assert(cards[0].amount === exp['lowest-preferred'] && cards[1].amount === exp['average-standard'] && cards[2].amount === exp['guaranteed-acceptance'], `premiums ${cards.map((c) => c.amount)} vs ${JSON.stringify(exp)}`);
     assert(cards[2].amount === '$51.06', `Gerber benchmark ${cards[2].amount}`);

@@ -55,7 +55,11 @@ is in place; see src/content/README.md for how pages were migrated.
   in `src/components/Navigation.astro` (the header contact from 48rem; the
   phone menu shows the plain number) and the standalone landing headers (/facebook/, /free-quote/,
   /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
-  every built header: one `data-header-phone` link with that label and icon,
+  every built header: one `data-header-phone` link with that label and icon
+  (one exception, Randy, Quote System v3.6: the quote funnel's minimal
+  header on /final-expense-insurance-prices/ shows a lock and "Secure
+  Form" above the icon and number, with no label; HeaderPhone
+  `showLabel={false}`; the site header and other headers are unchanged),
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
   /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
 - **Header logo link (Randy, November 2026):** the upper-left Funeral Funds
@@ -1239,7 +1243,7 @@ scope protection wins.
   to edit), then the controls, Start New Quote and the representative-rates
   note. v3.5: the page uses its own minimal layout (BaseLayout
   `layout="landing"`, no sticky call): the `.qh-top` header (logo; "Secure
-  Form" with a lock over the standard header phone) and a compact legal
+  Form" with a lock over the phone icon and number, no label since v3.6) and a compact legal
   footer (Privacy Policy, Terms of Use, Licenses, the footer disclaimer);
   no site menus, page heading, pre-footer, address or full footer. Title
   Case questions; step 4 "How Would You Use These Funds?" (Burial
@@ -1249,7 +1253,9 @@ scope protection wins.
   sage coverage-timing panel (First-Day Coverage for MOO Level and Aetna
   Standard, 2-Year Waiting Period for Gerber), green Apply Now; logo,
   plan and timing come only from the verified pricing response
-  (`CARRIER_DISPLAY`; logos in public/images/carriers/, Aetna's pending).
+  (`CARRIER_DISPLAY`; authentic logos in public/images/carriers/: Mutual
+  of Omaha, Randy's CVS/aetna file (v3.6), Gerber Life; timing icons: a
+  check for first-day coverage, a calendar for the waiting period).
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your
