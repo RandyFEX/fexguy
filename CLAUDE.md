@@ -1372,8 +1372,17 @@ scope protection wins.
   (/health-question-search-preview/), or campaign pages. /roku/ (campaign
   number, site header) keeps the compact menu (`primaryNav`: GET A QUOTE,
   RESOURCES, REVIEWS, ABOUT); /facebook/, /free-quote/ and /help/ keep their
-  own simplified headers. `npm run verify` checks all of this;
-  `npm run test:nav` (Playwright, after a build) tests the interactions.
+  own simplified headers. Phone menu (Randy, November 2026, V2.1): under
+  48rem each category shows its priority links plus its directory link (Life
+  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 13,
+  About Us 6); links marked `phoneHidden` are left out there only when the
+  category's directory page (/a-z-companies/, /a-z-health/) or the
+  /burial-insurance/ hub links to them. CICA Life stays in Company Reviews on
+  every screen size. Opening a category on a phone scrolls it to the top of
+  the menu. Tablets (48rem+) and desktop show every link; desktop is
+  unchanged. `npm run verify` checks all of this; `npm run test:nav`
+  (Playwright, after a build) tests the interactions; `npm run test` runs it
+  with the health-search tests.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).

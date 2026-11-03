@@ -17,7 +17,8 @@
     "health-search:import": "node scripts/health-search-import.mjs",
     "test:health-search": "node --test 'tests/health-search/*.test.js'",
     "test:health-search:live": "node tests/health-search/live-preview.mjs",
-    "test:nav": "node tests/navigation/nav.browser.mjs"
+    "test:nav": "node tests/navigation/nav.browser.mjs",
+    "test": "npm run test:health-search && npm run test:nav"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.2",

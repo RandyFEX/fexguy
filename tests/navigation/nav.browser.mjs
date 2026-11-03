@@ -153,6 +153,46 @@ for (const width of [320, 375, 390, 768]) {
     await p.context().close();
   });
 }
+// Phone menu (V2.1): priority links plus the directory link per category;
+// tablets and desktop show every link.
+const PHONE_COUNTS = { 'life-insurance': 11, 'company-reviews': 9, 'health-eligibility': 8, 'guides-tools': 13, 'about-us': 6 };
+const shownLinks = (p, id) => p.$$eval(`#nav-panel-${id} a`, (els) => els.filter((e) => e.getClientRects().length).map((e) => e.textContent.trim()));
+for (const width of [320, 375, 390]) {
+  await test(`phone ${width}: short categories, directory links, CICA Life, opened category at the top`, async () => {
+    const p = await page('/about/', { width, height: 667 });
+    await p.click('.nav__toggle');
+    for (const [id, n] of Object.entries(PHONE_COUNTS)) {
+      await p.click(`#nav-trigger-${id}`);
+      const links = await shownLinks(p, id);
+      assert.equal(links.length, n, `${id} shows ${links.length} links`);
+      const top = await p.evaluate((id) => document.getElementById(`nav-trigger-${id}`).getBoundingClientRect().top - document.getElementById('site-menu').getBoundingClientRect().top, id);
+      assert.ok(Math.abs(top) <= 2 || (await p.evaluate(() => { const m = document.getElementById('site-menu'); return m.scrollTop >= m.scrollHeight - m.clientHeight - 1; })), `${id} not scrolled to the top of the menu`);
+    }
+    await p.click('#nav-trigger-company-reviews');
+    const reviews = await shownLinks(p, 'company-reviews');
+    for (const name of ['CICA Life', 'Aetna', 'Aflac', 'Gerber Life', 'All Company Reviews']) assert.ok(reviews.some((t) => t.startsWith(name)), `${name} missing on phones`);
+    await p.click('#nav-trigger-health-eligibility');
+    assert.ok((await shownLinks(p, 'health-eligibility')).some((t) => t.startsWith('All Health Conditions')));
+    await p.context().close();
+  });
+}
+for (const width of [768, 1024, 1440]) {
+  await test(`${width}: every menu link is shown`, async () => {
+    const p = await page('/about/', { width });
+    if (width < 1024) await p.click('.nav__toggle');
+    let total = 0;
+    for (const id of Object.keys(PHONE_COUNTS)) {
+      await p.click(`#nav-trigger-${id}`);
+      const all = await p.locator(`#nav-panel-${id} a`).count();
+      assert.equal((await shownLinks(p, id)).length, all, `${id} hides links at ${width}`);
+      total += all;
+      if (width >= 1024) await p.mouse.move(width / 2, 880);
+      if (width >= 1024) await p.waitForTimeout(700);
+    }
+    assert.equal(total, 79, `menu has ${total} links`);
+    await p.context().close();
+  });
+}
 await test('small screen: choosing a destination closes the menu and navigates', async () => {
   const p = await page('/about/', { width: 375 });
   await p.click('.nav__toggle');
