@@ -679,6 +679,9 @@ let navPages = 0;
 let navSignature = null;
 let navLinkCount = 0;
 let navCategories = [];
+let navPhoneChecked = false;
+const navPhoneCounts = [];
+const navDirCache = new Map();
 for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f))) {
   const html = readFileSync(file, 'utf8');
   const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
@@ -707,6 +710,23 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     if (!navSignature) { navSignature = sig; navLinkCount = new Set(hrefs).size; navCategories = cats; }
     else if (sig !== navSignature) navProblems.push(`${page}: mega menu links differ from the other pages`);
     if (cats.length !== 5) navProblems.push(`${page}: mega menu has ${cats.length} categories (expected 5)`);
+    // Phone menu (Randy, November 2026, V2.1): a link left out on phones
+    // must be on its category's directory page (the panel's "All ..." link)
+    // or the Burial Insurance hub, and every category keeps links on phones.
+    {
+      const first = !navPhoneChecked;
+      navPhoneChecked = true;
+      for (const m of header.matchAll(/<div class="nav__mega" id="nav-panel-([^"]+)"[\s\S]*?(?=<li class="nav__item"|<\/ul><\/nav>)/g)) {
+        const [panelHtml, id] = m;
+        const allHref = panelHtml.match(/<a class="nav__all" href="([^"]+)"/)?.[1];
+        const dirs = [allHref, '/burial-insurance/'].filter(Boolean).map((d) => navDirCache.get(d) ?? navDirCache.set(d, readFileSync(join(DIST, d, 'index.html'), 'utf8').replace(/<header\b[\s\S]*?<\/header>/, '')).get(d));
+        const hidden = [...panelHtml.matchAll(/<li class="nav__phone-hidden"[^>]*><a href="([^"]+)"/g)].map((x) => x[1]);
+        const shown = [...panelHtml.matchAll(/<li(?! class="nav__phone-hidden")[^>]*><a href="([^"]+)"/g)].length;
+        if (first) navPhoneCounts.push(`${id} ${shown + (allHref ? 1 : 0)}`);
+        if (!shown) navProblems.push(`${page}: ${id} shows no links on phones`);
+        for (const h of hidden) if (!dirs.some((d) => d.includes(`href="${h}"`))) navProblems.push(`${page}: ${id}: ${h} is left out on phones but its directory page doesn't link to it`);
+      }
+    }
   }
 }
 for (const p of NO_NAV_PAGES) {
@@ -765,7 +785,7 @@ for (const p of guardProblems) console.log(`  [guard] ${p}`);
 console.log(`En/em dashes in visible copy (built pages, exceptions in src/config/dash-exceptions.json): ${visibleDashHits.length}`);
 for (const h of visibleDashHits.slice(0, 25)) console.log(`  [dash] ${h}`);
 if (visibleDashHits.length > 25) console.log(`  [dash] ... +${visibleDashHits.length - 25} more`);
-console.log(`Site menu: ${navPages} site headers checked | mega menu: ${navCategories.join(', ')} (${navLinkCount} links) | problems: ${navProblems.length}`);
+console.log(`Site menu: ${navPages} site headers checked | mega menu: ${navCategories.join(', ')} (${navLinkCount} links; phone menu: ${navPhoneCounts.join(', ')}) | problems: ${navProblems.length}`);
 for (const p of navProblems) console.log(`  [nav] ${p}`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
 for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);

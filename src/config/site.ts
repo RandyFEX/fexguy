@@ -9,6 +9,11 @@ export interface NavItem {
   label: string;
   href: string;
   children?: NavItem[];
+  /** Mega menu only: left out of the phone menu (under 48rem) to keep each
+   * category short. Only for links the category's directory page (its `all`
+   * link, or the Burial Insurance hub) also lists. Desktop and tablet show
+   * every link. */
+  phoneHidden?: boolean;
 }
 
 /** A labelled group of links inside a mega-menu panel. */
@@ -125,8 +130,8 @@ export const site: SiteConfig = {
           links: [
             { label: 'First-Day Coverage', href: '/burial-insurance/with-first-day-coverage/' },
             { label: 'Guaranteed Issue', href: '/burial-insurance/guaranteed-issue-life-insurance-for-seniors/' },
-            { label: 'No Waiting Period', href: '/burial-insurance/life-insurance-with-no-waiting-period/' },
-            { label: 'No Medical Exam', href: '/burial-insurance/life-insurance-no-exam/' },
+            { label: 'No Waiting Period', href: '/burial-insurance/life-insurance-with-no-waiting-period/', phoneHidden: true },
+            { label: 'No Medical Exam', href: '/burial-insurance/life-insurance-no-exam/', phoneHidden: true },
             { label: 'Term to Whole Life Conversion', href: '/term-life-conversion-to-whole-life/' },
           ],
         },
@@ -134,19 +139,19 @@ export const site: SiteConfig = {
           heading: 'Costs & Coverage Amounts',
           links: [
             { label: 'Final Expense Insurance Cost', href: '/how-much-does-final-expense-insurance-cost/' },
-            { label: 'How Much Coverage Do I Need?', href: '/how-much-burial-insurance-do-i-need/' },
-            { label: 'Affordable Burial Insurance', href: '/finding-affordable-burial-insurance/' },
-            { label: 'Is Burial Insurance Worth It?', href: '/is-burial-insurance-worth-it/' },
+            { label: 'How Much Coverage Do I Need?', href: '/how-much-burial-insurance-do-i-need/', phoneHidden: true },
+            { label: 'Affordable Burial Insurance', href: '/finding-affordable-burial-insurance/', phoneHidden: true },
+            { label: 'Is Burial Insurance Worth It?', href: '/is-burial-insurance-worth-it/', phoneHidden: true },
           ],
         },
         {
           heading: 'Coverage by Age & Family',
           links: [
             { label: 'Seniors 50 to 85', href: '/burial-insurance/life-insurance-for-seniors/' },
-            { label: 'Over 70', href: '/burial-insurance/over-70/' },
-            { label: 'Over 80', href: '/burial-insurance/over-80/' },
-            { label: 'For Parents', href: '/burial-insurance/parents/' },
-            { label: 'For Veterans', href: '/burial-insurance/veterans/' },
+            { label: 'Over 70', href: '/burial-insurance/over-70/', phoneHidden: true },
+            { label: 'Over 80', href: '/burial-insurance/over-80/', phoneHidden: true },
+            { label: 'For Parents', href: '/burial-insurance/parents/', phoneHidden: true },
+            { label: 'For Veterans', href: '/burial-insurance/veterans/', phoneHidden: true },
           ],
         },
       ],
@@ -161,10 +166,10 @@ export const site: SiteConfig = {
             { label: 'AARP', href: '/aarp-life-insurance-review/' },
             { label: 'Colonial Penn', href: '/colonial-penn-burial-insurance-review/' },
             { label: 'Globe Life', href: '/globe-life-price-increase/' },
-            { label: 'Lincoln Heritage', href: '/lincoln-heritage-funeral-advantage-review/' },
+            { label: 'Lincoln Heritage', href: '/lincoln-heritage-funeral-advantage-review/', phoneHidden: true },
             { label: 'Mutual of Omaha', href: '/mutual-of-omaha-burial-insurance/' },
-            { label: 'State Farm', href: '/state-farm/' },
-            { label: 'TruStage', href: '/trustage-life-insurance-review/' },
+            { label: 'State Farm', href: '/state-farm/', phoneHidden: true },
+            { label: 'TruStage', href: '/trustage-life-insurance-review/', phoneHidden: true },
           ],
         },
         {
@@ -172,22 +177,22 @@ export const site: SiteConfig = {
           links: [
             { label: 'Aetna', href: '/aetna-burial-insurance-review/' },
             { label: 'Aflac', href: '/aflac-burial-insurance-review/' },
-            { label: 'American Amicable', href: '/burial-insurance/american-amicable-life-insurance-review/' },
+            { label: 'American Amicable', href: '/burial-insurance/american-amicable-life-insurance-review/', phoneHidden: true },
             { label: 'CICA Life', href: '/cica-life-burial-insurance-review/' },
-            { label: 'Family Benefit Life', href: '/family-benefit-life-burial-insurance-review/' },
-            { label: 'Foresters', href: '/foresters-burial-insurance-review/' },
+            { label: 'Family Benefit Life', href: '/family-benefit-life-burial-insurance-review/', phoneHidden: true },
+            { label: 'Foresters', href: '/foresters-burial-insurance-review/', phoneHidden: true },
             { label: 'Gerber Life', href: '/gerber-life-insurance-review/' },
           ],
         },
         {
           heading: 'More Reviews',
           links: [
-            { label: 'Guarantee Trust Life', href: '/guarantee-trust-life-insurance-review/' },
-            { label: 'Transamerica', href: '/transamerica-burial-insurance-review/' },
-            { label: 'Trinity Life', href: '/trinity-life-insurance-review/' },
-            { label: 'Ethos', href: '/ethos-life-insurance-review/' },
-            { label: 'Primerica', href: '/primerica-life-insurance-review/' },
-            { label: 'Top 10 Final Expense Companies', href: '/burial-insurance/top-10-final-expense-life-insurance-companies/' },
+            { label: 'Guarantee Trust Life', href: '/guarantee-trust-life-insurance-review/', phoneHidden: true },
+            { label: 'Transamerica', href: '/transamerica-burial-insurance-review/', phoneHidden: true },
+            { label: 'Trinity Life', href: '/trinity-life-insurance-review/', phoneHidden: true },
+            { label: 'Ethos', href: '/ethos-life-insurance-review/', phoneHidden: true },
+            { label: 'Primerica', href: '/primerica-life-insurance-review/', phoneHidden: true },
+            { label: 'Top 10 Final Expense Companies', href: '/burial-insurance/top-10-final-expense-life-insurance-companies/', phoneHidden: true },
           ],
         },
       ],
@@ -205,18 +210,18 @@ export const site: SiteConfig = {
             { label: 'Heart Conditions', href: '/burial-insurance/heart-conditions/' },
             { label: 'COPD', href: '/burial-insurance/copd/' },
             { label: 'Stroke & TIA', href: '/burial-insurance/stroke-tia/' },
-            { label: 'High Blood Pressure', href: '/burial-insurance/high-blood-pressure/' },
+            { label: 'High Blood Pressure', href: '/burial-insurance/high-blood-pressure/', phoneHidden: true },
           ],
         },
         {
           heading: 'More Conditions',
           links: [
-            { label: 'Kidney Disease', href: '/burial-insurance/kidney-disease/' },
-            { label: 'Liver Disease', href: '/burial-insurance/liver-disease/' },
-            { label: 'Dementia & Alzheimer\'s', href: '/burial-insurance/dementia-alzheimers/' },
-            { label: 'Mental Health Conditions', href: '/burial-insurance/mental-health-conditions/' },
-            { label: 'Neurological Disorders', href: '/burial-insurance/neurological-disorders/' },
-            { label: 'Smokers', href: '/burial-insurance/for-smokers/' },
+            { label: 'Kidney Disease', href: '/burial-insurance/kidney-disease/', phoneHidden: true },
+            { label: 'Liver Disease', href: '/burial-insurance/liver-disease/', phoneHidden: true },
+            { label: 'Dementia & Alzheimer\'s', href: '/burial-insurance/dementia-alzheimers/', phoneHidden: true },
+            { label: 'Mental Health Conditions', href: '/burial-insurance/mental-health-conditions/', phoneHidden: true },
+            { label: 'Neurological Disorders', href: '/burial-insurance/neurological-disorders/', phoneHidden: true },
+            { label: 'Smokers', href: '/burial-insurance/for-smokers/', phoneHidden: true },
           ],
         },
         {
@@ -224,10 +229,10 @@ export const site: SiteConfig = {
           links: [
             { label: 'Health Question Search', href: '/life-insurance-health-questions/' },
             { label: 'Pre-Existing Conditions', href: '/final-expense-life-insurance-pre-existing-conditions/' },
-            { label: 'Height & Weight Guidelines', href: '/life-insurance-height-weight-guidelines/' },
-            { label: 'Activities of Daily Living', href: '/burial-insurance/adl-activities-of-daily-living/' },
-            { label: 'Declined for Life Insurance', href: '/declined-for-life-insurance/' },
-            { label: 'Application Process', href: '/burial-insurance/burial-insurance-application-process/' },
+            { label: 'Height & Weight Guidelines', href: '/life-insurance-height-weight-guidelines/', phoneHidden: true },
+            { label: 'Activities of Daily Living', href: '/burial-insurance/adl-activities-of-daily-living/', phoneHidden: true },
+            { label: 'Declined for Life Insurance', href: '/declined-for-life-insurance/', phoneHidden: true },
+            { label: 'Application Process', href: '/burial-insurance/burial-insurance-application-process/', phoneHidden: true },
           ],
         },
       ],
