@@ -640,7 +640,7 @@ sidebar: true
 
 <p><br><strong>When was TruStage founded?</strong></p>
 
-<p>TruStage’s parent company was founded in 1935 as CUNA Mutual. It is a subsidiary of CUNA Mutual Group, one of the largest insurance companies in the United States.</p>
+<p>TruStage was founded in 1935 as CUNA Mutual Society and was known as CUNA Mutual Group until 2023. It is one of the largest insurance companies in the United States.</p>
 
 <p><br><strong>What is the difference between TruStage and other life insurance companies?</strong></p>
 
