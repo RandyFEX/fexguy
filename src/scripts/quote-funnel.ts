@@ -11,9 +11,8 @@
 //
 // Privacy: the name and phone number stay in memory only (never storage,
 // URLs, the console or analytics). Analytics get event names and step
-// numbers only (tracking.ts, GA4). Randy's notifications are sent by the
-// server (server/quote/notify.js, v6.1); this page makes no Formspark or
-// Turnstile requests.
+// numbers only (tracking.ts, GA4). Leads are saved in the server's Redis
+// record (v6.2); this page makes no Formspark, Turnstile or email requests.
 import { lead } from '@/config/lead';
 import { leadSourceFields } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
@@ -698,8 +697,8 @@ if (root) {
         return;
       }
       setStatus(applyStatus, '');
-      // The server notified Randy (v6.1); /help/ counts the lead only if it did.
-      applyNotified = body.notified !== false;
+      // v6.2: /help/ counts the lead once the server has saved the Apply Now record.
+      applyNotified = body.saved === true;
       intakeCategory = id;
       intakeTitle.textContent = 'Application questions';
       intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;

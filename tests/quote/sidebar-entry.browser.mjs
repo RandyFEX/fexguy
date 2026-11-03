@@ -15,8 +15,8 @@ const OUT = process.env.OUT ?? '';
 const ARTICLE = '/burial-insurance/cancer/';
 const ARTICLE_PATH = ARTICLE;
 const browser = await chromium.launch();
-// v6.1: requests the quote funnel must never make (Formspark, Cloudflare Turnstile).
-const FORBIDDEN = /^https:\/\/([a-z0-9-]+\.)*(submit-form\.com|challenges\.cloudflare\.com)\//;
+// v6.1/v6.2: requests the quote funnel must never make (Formspark, Cloudflare Turnstile, Resend).
+const FORBIDDEN = /^https:\/\/([a-z0-9-]+\.)*(submit-form\.com|challenges\.cloudflare\.com|api\.resend\.com|resend\.com)\//;
 const forbidden = [];
 const results = [];
 const check = async (name, fn) => {
@@ -36,7 +36,7 @@ const svgs = (html) => [...html.matchAll(/<svg viewBox="0 0 120 120"[\s\S]*?<\/s
 
 async function newPage(opts) {
   const ctx = await browser.newContext(opts);
-  // v6.1: the funnel never contacts Formspark or Cloudflare Turnstile; any such request is recorded and fails the test.
+  // v6.2: the funnel never contacts Formspark, Cloudflare Turnstile or Resend; any such request is recorded and fails the test.
   await ctx.route(FORBIDDEN, (r) => { forbidden.push(`${r.request().url()} (from ${r.request().frame()?.url() ?? '?'})`); return r.abort(); });
   await ctx.addInitScript(() => {
     window.__ev = [];
@@ -223,7 +223,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   }
 }
 
-await check('v6.1: no Formspark or Turnstile request from the quote funnel (contact, code, prices, Apply Now)', async () => {
+await check('v6.2: no Formspark, Turnstile or Resend request from the quote funnel (contact, code, prices, Apply Now)', async () => {
   if (forbidden.length) throw new Error(forbidden.join('; '));
 });
 

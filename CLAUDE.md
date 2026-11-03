@@ -1395,18 +1395,15 @@ scope protection wins.
   (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
   events (tracking.ts), no personal data, nothing to Meta.
-  v6.1 (Randy, November 2026): the funnel uses no Formspark and no
-  Cloudflare Turnstile (never add them back to it; the site's other forms
-  keep both). Randy's notifications are sent by the server through Resend
-  (server/quote/notify.js; RESEND_API_KEY, QUOTE_NOTIFY_TO, optional
-  QUOTE_NOTIFY_FROM and QUOTE_NOTIFY_DAILY_LIMIT, server-side only): one
-  email when name and mobile are submitted (before any code), one per Apply
-  Now category, one when the health questions end. The Redis evidence
-  record is saved first and is authoritative; email outcomes are lead
-  events (notify-accepted/-failed/-suppressed; accepted is not delivered);
-  a failed email never blocks the visitor. Caps: 6 lead emails per phone
-  per day, 300 per day overall (Redis). The browser tests fail on any
-  Formspark or Turnstile request from the funnel.
+  v6.1/v6.2 (Randy, November 2026): the funnel uses no Formspark, no
+  Cloudflare Turnstile and no email service (never add them back to it;
+  the site's other forms keep Formspark and Turnstile). v6.2 dropped the
+  v6.1 Resend emails: there are no lead notifications for now (a
+  GoHighLevel integration is planned separately). Every lead is saved in
+  the Redis evidence record at contact submission (before any code) and is
+  the lead record; /help/ counts the conversion once `apply` returns
+  `saved: true`. The unit and browser tests fail on any Formspark,
+  Turnstile or Resend request from the funnel.
 
 ## Site search (Pagefind, built October 2026)
 
