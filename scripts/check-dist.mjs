@@ -664,6 +664,58 @@ for (const file of pages) {
   else openingProblems.push(`${page}: article text between the table of contents and the first heading (a second introduction): ${quote}`);
 }
 
+// ---- Site header navigation (Randy, November 2026, navigation V1.0) ---------
+// Regular pages carry the mega menu (data-nav="mega"); campaign pages on the
+// site header (/roku/) keep the compact menu; the standalone landing pages
+// (/facebook/, /free-quote/, /help/) have no site header or menu at all. Every
+// menu link is a real link to a built page (no "#", placeholders, redirects,
+// external URLs, review-only or campaign pages), every category button
+// controls its own panel, and the mega menu is identical on every page.
+const COMPACT_NAV_PAGES = new Set(['/roku/']);
+const NO_NAV_PAGES = ['/facebook/', '/free-quote/', '/help/'];
+const NAV_FORBIDDEN = new Set(['/health-question-search-preview/', '/facebook/', '/roku/', '/help/']);
+const navProblems = [];
+let navPages = 0;
+let navSignature = null;
+let navLinkCount = 0;
+let navCategories = [];
+for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f))) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const header = html.match(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/)?.[0];
+  if (!header) continue;
+  navPages++;
+  const variant = header.match(/\bdata-nav="(mega|compact)"/)?.[1];
+  const expected = COMPACT_NAV_PAGES.has(page) ? 'compact' : 'mega';
+  if (variant !== expected) { navProblems.push(`${page}: site header menu is ${variant ?? 'missing'}, expected ${expected}`); continue; }
+  const hrefs = [...header.matchAll(/<a\b[^>]*\bhref="([^"]*)"/g)].map((m) => m[1]).filter((h) => !h.startsWith('tel:'));
+  for (const h of hrefs) {
+    const p = /^https:\/\/funeralfunds\.com\/$/.test(h) ? '/' : h;
+    if (!p || p === '#' || !p.startsWith('/') || p.startsWith('//')) { navProblems.push(`${page}: menu link "${h}" is not an internal page link`); continue; }
+    if (!p.endsWith('/')) navProblems.push(`${page}: menu link ${h} has no trailing slash`);
+    else if (!isPage(p)) navProblems.push(`${page}: menu link ${h} is not a built page${redirects.has(p) ? ' (redirect)' : ''}`);
+    if (NAV_FORBIDDEN.has(p)) navProblems.push(`${page}: menu links to ${h}, which must not be in the menu`);
+  }
+  for (const m of header.matchAll(/<button\b[^>]*class="nav__trigger"[^>]*>/g)) {
+    const ctl = m[0].match(/aria-controls="([^"]+)"/)?.[1];
+    if (!/aria-expanded="false"/.test(m[0])) navProblems.push(`${page}: a menu button doesn't start collapsed`);
+    if (!ctl || !header.includes(`id="${ctl}"`)) navProblems.push(`${page}: menu button controls missing panel ${ctl}`);
+  }
+  if (variant === 'mega') {
+    const sig = hrefs.join(' ');
+    const cats = [...header.matchAll(/<button\b[^>]*class="nav__trigger"[^>]*>\s*([^<]+?)\s*</g)].map((m) => decode(m[1]));
+    if (!navSignature) { navSignature = sig; navLinkCount = new Set(hrefs).size; navCategories = cats; }
+    else if (sig !== navSignature) navProblems.push(`${page}: mega menu links differ from the other pages`);
+    if (cats.length !== 5) navProblems.push(`${page}: mega menu has ${cats.length} categories (expected 5)`);
+  }
+}
+for (const p of NO_NAV_PAGES) {
+  const f = join(DIST, p, 'index.html');
+  if (!existsSync(f)) { navProblems.push(`${p}: page not built`); continue; }
+  const html = readFileSync(f, 'utf8');
+  if (/class="site-header"|\bdata-nav=|\bdata-mega-nav\b/.test(html)) navProblems.push(`${p}: landing page shows the site menu (it keeps its simplified header)`);
+}
+
 // ---- Upper-right header phone (Randy, V14.0) -----------------------------------
 // Every page header (the site header, and the standalone landing headers
 // .fb-top/.fq-top/.hp-top) has one phone contact marked data-header-phone:
@@ -713,6 +765,8 @@ for (const p of guardProblems) console.log(`  [guard] ${p}`);
 console.log(`En/em dashes in visible copy (built pages, exceptions in src/config/dash-exceptions.json): ${visibleDashHits.length}`);
 for (const h of visibleDashHits.slice(0, 25)) console.log(`  [dash] ${h}`);
 if (visibleDashHits.length > 25) console.log(`  [dash] ... +${visibleDashHits.length - 25} more`);
+console.log(`Site menu: ${navPages} site headers checked | mega menu: ${navCategories.join(', ')} (${navLinkCount} links) | problems: ${navProblems.length}`);
+for (const p of navProblems) console.log(`  [nav] ${p}`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
 for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);
 if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 25} more`);
@@ -742,6 +796,7 @@ const problems =
   links.redirect.length +
   links['missing-slash'].length +
   links.broken.length +
+  navProblems.length +
   allMissing.length +
   search.problems.length +
   redirectProblems.length +
