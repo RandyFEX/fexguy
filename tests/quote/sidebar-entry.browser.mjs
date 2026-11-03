@@ -156,6 +156,20 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
       assert(t.talk === 'Prefer to talk directly?' && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
       if (name === 'mobile') assert(t.callFull && t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
+      if (name === 'mobile') {
+        const look = await page.evaluate(() => {
+          const one = (sel) => { const b = document.querySelector(sel); const g = (q) => getComputedStyle(b.querySelector(q)); const title = b.querySelector('.quote-box__title').getBoundingClientRect(), body = b.querySelector('.gp__body').getBoundingClientRect();
+            return { gap: Math.round(body.top - title.bottom), q: [g('.gp__q').fontSize, g('.gp__q').color, g('.gp__q').marginBottom], talk: [g('.gp__talk').fontSize, g('.gp__talk').marginTop, g('.gp__talk').marginBottom], call: [g('[data-gp-call]').color, g('.gp__call-label').color, g('[data-gp-call]').textDecorationLine], person: g('a.qf-person').textDecorationLine }; };
+          document.querySelector('[data-get-prices="article-aside"]').style.display = 'block';
+          const r = { inline: one('[data-get-prices="inline"]'), aside: one('[data-get-prices="article-aside"]') };
+          document.querySelector('[data-get-prices="article-aside"]').style.display = '';
+          return r;
+        });
+        assert(JSON.stringify(look.inline) === JSON.stringify(look.aside) && look.inline.gap === 0 && look.inline.call[1] === 'rgb(255, 255, 255)', `phone copy differs from the sidebar copy ${JSON.stringify(look)}`);
+        await box.locator('[data-gp-call]').hover();
+        const hoverColor = await box.locator('.gp__call-label').evaluate((e) => getComputedStyle(e).color);
+        assert(hoverColor === 'rgb(255, 255, 255)', `CALL NOW text on hover ${hoverColor}`);
+      }
       // CALL NOW: a tap is recorded with the article (never as a completed call).
       await page.evaluate(() => document.addEventListener('click', (e) => { if (e.target.closest('a[href^="tel:"]')) e.preventDefault(); }, true));
       await box.locator('[data-gp-call]').click();

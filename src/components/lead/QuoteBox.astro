@@ -58,7 +58,7 @@ const phone = PAGE_PHONES.default;
   .gp .qf-person { padding: var(--space-3) var(--space-1); text-decoration: none; min-height: var(--tap-target, 44px); }
   .gp .qf-person__art { width: min(6rem, 100%); }
   .gp .qf-person__label { font-size: 1.125rem; }
-  .gp__talk { margin: var(--space-4) 0 var(--space-2); text-align: center; font-weight: 700; color: var(--color-text); }
+  .gp__talk { margin: var(--space-4) 0 var(--space-2); text-align: center; font-size: 1rem; line-height: 1.5; font-weight: 700; color: var(--color-text); }
   /* The funnel's orange CTA (homepage GET A QUOTE tokens). */
   .gp__call {
     display: flex; align-items: center; justify-content: center; gap: var(--space-2); width: 100%;
@@ -71,12 +71,19 @@ const phone = PAGE_PHONES.default;
   .gp__call-text { display: flex; flex-direction: column; align-items: flex-start; }
   .gp__call-label { font-size: 1.125rem; letter-spacing: 0.02em; }
   .gp__call-number { font-size: 1.125rem; white-space: nowrap; }
-  .wp-content .gp a.gp__call { color: var(--color-on-cta); text-decoration: none; }
-  /* Inside the article text: the prose styles never reach the module. */
+  /* Inside the article text: the article's paragraph and link styles never
+     reach the module, so it looks exactly like the sidebar copy. */
   .gp--inline { margin-block: var(--space-8); }
-  .wp-content .gp :is(p, a) { margin: 0; }
-  .wp-content .gp .gp__q { margin: 0 0 var(--space-3); }
-  .wp-content .gp a.qf-person { color: inherit; text-decoration: none; }
+  body.page-article-v2 .art-body .gp p { margin: 0; font-size: 1rem; line-height: 1.5; }
+  body.page-article-v2 .art-body .gp .quote-box__title { font-size: 1.125rem; }
+  body.page-article-v2 .art-body .gp .gp__q { margin: 0 0 var(--space-3); font-size: 1.125rem; line-height: 1.3; }
+  body.page-article-v2 .art-body .gp .gp__talk { margin: var(--space-4) 0 var(--space-2); }
+  body.page-article-v2 .art-body .gp a,
+  body.page-article-v2 .art-body .gp a:hover { text-decoration: none; }
+  body.page-article-v2 .art-body .gp a.qf-person,
+  body.page-article-v2 .art-body .gp a.qf-person:hover { color: inherit; }
+  body.page-article-v2 .art-body .gp a.gp__call,
+  body.page-article-v2 .art-body .gp a.gp__call:is(:hover, :focus-visible, :active, :visited) { color: var(--color-on-cta); }
 
   @media (max-width: 63.999rem) {
     .gp--article-aside { display: none; }
