@@ -234,7 +234,7 @@ if (root) {
   const phoneField = $('[data-qf-phone-field]');
   const formatPhone = (v: string) => {
     const d = v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
-    return d.length === 10 ? `(•••) •••-${d.slice(6)}` : '';
+    return d.length === 10 ? `(***) ***-${d.slice(6)}` : '';
   };
   function showPhoneSummary() {
     phoneShow.textContent = formatPhone(unlockPhone.value);
@@ -383,6 +383,7 @@ if (root) {
   const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
+  const resultsSub = $('[data-qf-results-sub]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
   const blurred = (text: string) => {
@@ -421,6 +422,7 @@ if (root) {
     // "Your Insurance Quotes" appears only after verification.
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
+    resultsSub.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
       el.dataset.state = 'locked';
@@ -575,6 +577,7 @@ if (root) {
     refNote.hidden = false;
     resultsTitle.textContent = 'Your Insurance Quotes';
     resultsTitle.classList.remove('visually-hidden');
+    resultsSub.hidden = false;
     fillAdjust(quote);
     show(8, false);
     // Stay on the page; bring the top of the results into view.

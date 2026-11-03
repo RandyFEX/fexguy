@@ -1304,6 +1304,12 @@ scope protection wins.
   code is requested, a bold black "Enter the 6-digit code" heading. Both
   notice lines come only from `server/quote/consent.js`
   (`VERIFY_NOTICE_EXPLAIN`, `VERIFY_NOTICE_RATES`; evidence version v3).
+  v5.0 (replaces that panel order): the red title, the orange "Text Me
+  My Access Code", one sentence "We'll text a 6-digit verification code
+  to (***) ***-1234." (bold black; evidence v4 stores it with ***-XXXX),
+  Change Number, then the small gray rates line; after verification a
+  centered #173F35 14px line "Here Are 3 of Your 30+ Insurance Company
+  Options" sits under "Your Insurance Quotes" (never before it).
   The adjustment section is neutral gray only (no green): gray labels and
   intro, white/gray unselected, #454B49 selected, gray borders, compact
   balanced group padding; Step 4 labels use tight, centered line spacing.

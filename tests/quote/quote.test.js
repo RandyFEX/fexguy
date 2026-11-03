@@ -186,7 +186,7 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.equal(r.verification.status, 'approved');
   assert.deepEqual([r.consent.given, r.consent.action, r.consent.text], [false, 'left consent box unchecked', null]);
   assert.equal(r.verifyNotice.version, VERIFY_NOTICE_VERSION);
-  assert.equal(r.verifyNotice.text, "We'll text a 6-digit verification code to your mobile number. Message and data rates may apply.");
+  assert.equal(r.verifyNotice.text, "We'll text a 6-digit verification code to (***) ***-XXXX. Message and data rates may apply.");
   assert.equal(r.source.utmSource, 'google');
   assert.equal(r.client.userAgent, 'TestAgent/1.0');
   assert.ok(r.client.ip);
