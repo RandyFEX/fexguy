@@ -113,6 +113,8 @@ export async function handleQuote(request, env, deps) {
   const hash = (/** @type {string} */ s) => createHmac('sha256', secret).update(s).digest('hex').slice(0, 32);
   const ipHash = hash(`ip:${clientIp(request)}`);
   const test = verify.mode === 'test';
+  // v5.3: the temporary public test code (production, no Twilio): real leads, never SMS-verified.
+  const publicTest = verify.mode === 'public-test';
 
   switch (body.action) {
     case 'start': {
@@ -161,7 +163,7 @@ export async function handleQuote(request, env, deps) {
           text: consentText,
         },
         verifyNotice: { version: body.verifyNoticeVersion, text: VERIFY_NOTICE_VERSIONS[/** @type {keyof typeof VERIFY_NOTICE_VERSIONS} */ (body.verifyNoticeVersion)] },
-        verification: { status: 'pending', requestedAt: iso, verifiedAt: null, provider: test ? 'test-mode' : 'twilio-verify', startSid: null, checkSid: null },
+        verification: { status: 'pending', requestedAt: iso, verifiedAt: null, provider: test ? 'test-mode' : publicTest ? 'temporary-public-test-code' : 'twilio-verify', startSid: null, checkSid: null },
         quoteAtSubmission: quote,
         source: parseSource(body.source),
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
@@ -220,10 +222,15 @@ export async function handleQuote(request, env, deps) {
 
       const record = await store.getLead(leadId);
       if (!record) return json(410, { status: 'expired', message: 'Please start again.' });
-      record.verification = { ...record.verification, status: 'approved', verifiedAt: iso, checkSid: result.sid };
+      // The temporary public test code unlocks the quotes but never marks the phone SMS-verified.
+      record.verification = publicTest
+        ? { ...record.verification, status: 'test-code-accepted', phoneVerified: false, verifiedAt: null, testCodeAcceptedAt: iso, checkSid: null }
+        : { ...record.verification, status: 'approved', verifiedAt: iso, checkSid: result.sid };
       await store.putLead(leadId, record);
       await store.dropPending(leadId);
-      await store.event(leadId, { at: iso, type: 'verified', provider: record.verification.provider, sid: result.sid, outcome: 'approved' });
+      await store.event(leadId, publicTest
+        ? { at: iso, type: 'test-code-accepted', provider: record.verification.provider, phoneVerified: false }
+        : { at: iso, type: 'verified', provider: record.verification.provider, sid: result.sid, outcome: 'approved' });
 
       const sid = newSid();
       const exp = now + SESSION_MS;
@@ -232,12 +239,12 @@ export async function handleQuote(request, env, deps) {
       // One notification per verified lead, never for test-mode leads.
       const notify = !test && (await store.once(leadId, 'verified'))
         ? {
-            'Quote Event': 'Verified quote request',
+            'Quote Event': publicTest ? 'Quote request (temporary test code)' : 'Verified quote request',
             'Quote Lead ID': leadId,
             Name: record.firstName,
             'Phone Number': displayPhone(record.phone),
             State: record.state,
-            'Phone Verified': `Yes (${iso})`,
+            'Phone Verified': publicTest ? 'No (temporary test code; no SMS sent)' : `Yes (${iso})`,
             'Intended Use': record.intendedUse?.label ?? '',
             'Contact Consent': record.consent.given ? `Yes (${record.consent.version})` : 'No',
             ...quoteFields(record.quoteAtSubmission),

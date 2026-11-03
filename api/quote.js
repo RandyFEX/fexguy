@@ -6,7 +6,8 @@
 // Server-side environment variables:
 //   TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN (or TWILIO_API_KEY_SID +
 //   TWILIO_API_KEY_SECRET), TWILIO_VERIFY_SERVICE_SID   real SMS codes
-//     (without them: clearly marked test mode on previews; refused in production)
+//     (without them: clearly marked test mode on previews; in production the
+//     temporary public test code 123456 (v5.3), never recorded as SMS-verified)
 //   KV_REST_API_URL / KV_REST_API_TOKEN                  evidence and sessions
 //   QUOTE_SESSION_SECRET (or HEALTH_SEARCH_SECRET)       session signing, hashing
 //   QUOTE_SMS_DAILY_LIMIT (optional, default 300)        global daily SMS cap

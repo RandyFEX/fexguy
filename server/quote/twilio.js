@@ -12,10 +12,20 @@
 //   'test'    PREVIEW ONLY (VERCEL_ENV !== 'production') when credentials are
 //             missing, or QUOTE_VERIFY_MODE=test outside production. No SMS
 //             is sent; the code is TEST_CODE; every record is marked test.
-//   'off'     production without credentials: verification is refused (503).
-//             Production never falls back to test mode.
+//   'public-test'  TEMPORARY (Randy, Quote System v5.3, November 2026):
+//             production without Twilio credentials while
+//             PUBLIC_TEST_CODE_ENABLED is true. No SMS is sent; TEST_CODE
+//             unlocks that visitor's own quotes only. The phone is never
+//             recorded as SMS-verified, and the records are real leads
+//             (Randy is notified). It switches off by itself once the
+//             Twilio variables are set ('twilio' wins), or at once with
+//             QUOTE_PUBLIC_TEST_CODE=off or PUBLIC_TEST_CODE_ENABLED = false.
+//   'off'     production without credentials and with the public test code
+//             disabled: verification is refused (503).
 
 export const TEST_CODE = '123456';
+/** TEMPORARY public test code in production until Twilio is connected (v5.3). */
+export const PUBLIC_TEST_CODE_ENABLED = true;
 
 /** @param {Record<string, string | undefined>} env */
 export function verifyMode(env) {
@@ -26,7 +36,8 @@ export function verifyMode(env) {
   const configured = /^AC[0-9a-f]{32}$/i.test(sid) && /^VA[0-9a-f]{32}$/i.test(service) && hasAuth;
   if (!production && env.QUOTE_VERIFY_MODE === 'test') return 'test';
   if (configured) return 'twilio';
-  return production ? 'off' : 'test';
+  if (!production) return 'test';
+  return PUBLIC_TEST_CODE_ENABLED && env.QUOTE_PUBLIC_TEST_CODE !== 'off' ? 'public-test' : 'off';
 }
 
 /**
@@ -35,7 +46,7 @@ export function verifyMode(env) {
  */
 export function verifyClient(env, fetchImpl = fetch) {
   const mode = verifyMode(env);
-  if (mode === 'test')
+  if (mode === 'test' || mode === 'public-test')
     return {
       mode,
       /** @param {string} _to */

@@ -1333,7 +1333,14 @@ scope protection wins.
   session (HttpOnly signed cookie checked against Redis) with opaque codes
   FF-101/102/201, never product ids, rates or keys. Previews without Twilio
   credentials run a clearly marked test mode (code 123456, no SMS, no
-  notification); production never does. Consent box optional and unchecked;
+  notification). v5.3 (Randy, November 2026, temporary until Twilio is
+  connected): production without Twilio credentials accepts the same code
+  123456 (`public-test` mode, `PUBLIC_TEST_CODE_ENABLED` in
+  server/quote/twilio.js; `QUOTE_PUBLIC_TEST_CODE=off` disables it). No SMS
+  is sent; the code unlocks only that visitor's own session and quotes; the
+  record says `test-code-accepted`, `phoneVerified: false` (never SMS
+  verified); the leads are real (Randy is notified, the /help/ conversion
+  counts). Setting the Twilio variables ends it automatically. Consent box optional and unchecked;
   its wording (`server/quote/consent.js`) is a DRAFT pending Randy's legal
   review. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel

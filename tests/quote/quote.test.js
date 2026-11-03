@@ -99,15 +99,55 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
 test('verification modes: real Twilio when configured; test mode only outside production; never in production', () => {
   assert.equal(verifyMode(TWILIO), 'twilio');
   assert.equal(verifyMode(PREVIEW), 'test');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'off');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'off');
+  // v5.3: production without Twilio uses the temporary public test code; Twilio always wins.
+  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'public-test');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'public-test');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'off' }), 'off');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'twilio');
+  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
 });
 
-test('production without Twilio credentials refuses verification (503), never a bypass', async () => {
-  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
+test('production without Twilio and with the public test code switched off refuses verification (503)', async () => {
+  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
   assert.equal(r.http, 503);
+});
+
+test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, never marks the phone SMS-verified, real lead', async () => {
+  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+  const PO = { origin: 'https://funeralfunds.com' };
+  const c = client(PROD);
+  const prodPrice = async (cl) => {
+    const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://funeralfunds.com', 'x-real-ip': '10.9.9.9', 'x-quote-visit': cl.visit, ...(cl.cookie ? { cookie: cl.cookie } : {}) }, body: JSON.stringify({ age: 65, gender: 'male', tobacco: false, coverage: 10000 }) }),
+      { ...PROD, HEALTH_SEARCH_SECRET: SECRET }, { store: redis.store, getEngine: async () => ({ engine }), isVerified: async (r) => Boolean(await verifiedLead(r, PROD, cl.store)) });
+    return res.status;
+  };
+  const start = await c.call(startBody({ consent: false }), PO);
+  assert.equal(start.http, 200);
+  assert.equal(start.body.status, 'sent');
+  assert.equal(start.body.testMode, false);
+  assert.equal(await prodPrice(c), 401, 'no prices before the code');
+  const wrong = await c.call({ action: 'check', lead: start.body.lead, code: '654321' }, PO);
+  assert.equal(wrong.body.status, 'wrong-code');
+  const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
+  assert.equal(ok.body.status, 'verified');
+  assert.equal(ok.body.testMode, false);
+  assert.equal(ok.body.notify['Phone Verified'], 'No (temporary test code; no SMS sent)');
+  assert.equal(ok.body.notify['Quote Event'], 'Quote request (temporary test code)');
+  assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
+  const rec = await c.store.getLead(start.body.lead);
+  assert.equal(rec.mode, 'public-test');
+  assert.equal(rec.verification.status, 'test-code-accepted');
+  assert.equal(rec.verification.phoneVerified, false);
+  assert.equal(rec.verification.verifiedAt, null);
+  assert.equal(rec.consent.given, false);
+  // Production records stay in the production namespace, never the preview one.
+  assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
+  // The code alone opens nothing: another visitor without their own request gets no prices or session.
+  const other = client(PROD);
+  assert.equal((await other.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).http, 410);
+  assert.equal(await prodPrice(other), 401);
+  assert.equal((await other.call({ action: 'session' }, PO)).body.status, 'not-verified');
 });
 
 test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', async () => {
