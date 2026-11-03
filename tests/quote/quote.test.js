@@ -422,3 +422,19 @@ test('intended use reaches the Formspark notification (real Twilio mode)', async
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   assert.equal(ok.body.notify['Intended Use'], 'Other Expenses');
 });
+
+test('Call to Get Approved tap (v3.7): verified session only, server price and official product name recorded, no completed call claimed', async () => {
+  const c = await verifiedClient();
+  const quote = { age: 70, gender: 'female', tobacco: false, coverage: 10000 };
+  const ok = await c.call({ action: 'call-click', category: 'guaranteed-acceptance', quote, quoteRef: 'abcDEF1234567890', monthlyPremium: '0.01' });
+  assert.equal(ok.http, 200);
+  const r = await c.store.getLead(c.lead);
+  const click = r.callClicks[0];
+  assert.deepEqual([click.carrier, click.product, click.categoryId, click.coverage, click.quoteRef], ['Gerber Life', 'Guaranteed Life', 'guaranteed-acceptance', 10000, 'abcDEF1234567890']);
+  assert.match(click.monthlyPremium, /^\d+\.\d{2}$/);
+  assert.notEqual(click.monthlyPremium, '0.01', 'the browser price is never trusted');
+  assert.ok(click.at && !('callCompleted' in click) && !('approved' in click));
+  assert.equal((await c.store.events(c.lead)).filter((e) => e.type === 'call-click').length, 1);
+  assert.equal((await client(PREVIEW).call({ action: 'call-click', category: 'guaranteed-acceptance', quote })).http, 401, 'needs a verified session');
+  assert.equal((await c.call({ action: 'call-click', category: 'nope', quote })).http, 400);
+});

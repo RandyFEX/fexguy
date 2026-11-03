@@ -56,6 +56,7 @@ async function minimalLayout(page) {
       secure: visible(document.querySelector('.qh-secure')) && /Secure Form/.test(document.querySelector('.qh-secure')?.textContent ?? '') && !!document.querySelector('.qh-secure svg'),
       tel: document.querySelector('.qh-top a[data-header-phone]')?.getAttribute('href'),
       legal: [...document.querySelectorAll('.qh-foot a')].map((a) => a.textContent.trim()),
+      footText: document.querySelector('.qh-foot').innerText.replace(/\s+/g, ' ').trim(),
       sticky: !!document.querySelector('.sticky-call, [data-sticky-call]'),
       headerH: Math.round(document.querySelector('.qh-top').getBoundingClientRect().height),
       label: /Speak With a Licensed Agent/i.test(document.querySelector('.qh-top').textContent),
@@ -64,7 +65,8 @@ async function minimalLayout(page) {
   assert(!r.siteHeader && !r.menus.length && !r.promo && !r.sticky, `regular site parts present ${JSON.stringify(r)}`);
   assert(r.h1Count === 1 && !r.h1Visible, 'page heading visible');
   assert(r.logo === 'https://funeralfunds.com/' && r.secure && r.tel === 'tel:8888629456', `header ${JSON.stringify(r)}`);
-  assert(r.legal.includes('Privacy Policy') && r.legal.includes('Terms of Use'), `legal links ${r.legal}`);
+  assert(r.legal.join('|') === 'Privacy Policy|Terms of Use|Licenses', `legal links ${r.legal}`);
+  assert(r.footText === 'Privacy Policy Terms of Use Licenses', `footer holds more than the three links: ${r.footText.slice(0, 80)}`);
   assert(r.headerH <= 90, `header ${r.headerH}px tall`);
   assert(!r.label, 'header still shows Speak With a Licensed Agent');
 }
@@ -161,7 +163,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const over = await page.$$eval('[data-qf-summary] > div', (els) => els.filter((e) => e.scrollWidth > e.clientWidth + 1).length);
     assert(over === 0, `${over} summary values overflow their box`);
     const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.previousElementSibling?.textContent.trim()]);
-    assert(btn[0] === 'See My Instant Quotes' && btn[1] === 'No junk mail. No unwanted sales calls.', JSON.stringify(btn));
+    assert(btn[0] === 'See My Instant Quotes' && btn[1] === 'Our Promise: No Spam Calls. No Junk Mail.', JSON.stringify(btn));
+    const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
+    assert(cta[0] === ORANGE && cta[1] === 'rgb(0, 0, 0)', `contact button colors ${cta}`);
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
     assert(/Consent is not required to see prices or to buy\./.test(await page.textContent('.qf-consent')), 'consent text');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
@@ -187,11 +191,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const state = await page.$$eval('.qf-card', (els) =>
       els.map((e) => {
         const b = (sel) => { const x = e.querySelector(sel); return !!x && /blur/.test(getComputedStyle(x).filter); };
-        return { s: e.dataset.state, amt: b('[data-qf-amount] .qf-blur'), plan: b('[data-qf-plan] .qf-blur'), logo: b('[data-qf-logo] .qf-blur'), img: !!e.querySelector('img'), timing: getComputedStyle(e.querySelector('[data-qf-timing]')).visibility === 'hidden' || e.querySelector('[data-qf-timing]').hidden, timingText: e.querySelector('[data-qf-timing]').textContent, dis: e.querySelector('[data-qf-apply]').disabled, bars: !!e.querySelector('.qf-logo-blank'), lock: /🔒|lock/i.test(e.innerHTML), text: e.textContent };
+        return { s: e.dataset.state, amt: b('[data-qf-amount] .qf-blur'), plan: b('[data-qf-plan] .qf-blur'), logo: b('[data-qf-logo] .qf-blur'), img: !!e.querySelector('img'), timing: getComputedStyle(e.querySelector('[data-qf-timing]')).visibility === 'hidden' || e.querySelector('[data-qf-timing]').hidden, timingText: e.querySelector('[data-qf-timing]').textContent, dis: e.querySelector('[data-qf-apply]').disabled, call: !!e.querySelector('[data-qf-call]')?.getClientRects().length, bars: !!e.querySelector('.qf-logo-blank'), lock: /🔒|lock/i.test(e.innerHTML), text: e.textContent };
       }),
     );
     void blur;
-    assert(state.every((c) => c.s === 'locked' && c.amt && c.plan && c.logo && !c.img && c.timing && !c.timingText && c.dis && !c.bars && !c.lock), JSON.stringify(state.map(({ text, ...r }) => r)));
+    assert(state.every((c) => c.s === 'locked' && c.amt && c.plan && c.logo && !c.img && c.timing && !c.timingText && c.dis && !c.call && !c.bars && !c.lock), JSON.stringify(state.map(({ text, ...r }) => r)));
     assert(!/Coming soon|Aetna|Omaha|Gerber|Living Promise|Accendo|Guaranteed Life|First-Day|Waiting Period/.test(state.map((c) => c.text).join(' ')), 'real data before verification');
     assert((await priceStatus(page)) === 401, 'pricing endpoint answered an unverified visit');
     const order = await page.evaluate(() => ({ next: document.querySelector('.qf-cards').nextElementSibling?.matches('[data-qf-unlock]'), adjust: !!document.querySelector('[data-qf-adjust]').offsetParent, intro: !!document.querySelector('[data-qf-adjust-intro]').offsetParent }));
@@ -241,7 +245,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.ratio < 0.03), JSON.stringify(cards));
-    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense/First-Day Coverage|Gerber Life/Guaranteed Life/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
+    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
     assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
     const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));
     assert(icons.join('|') === 'check|check|calendar', `timing icons ${icons}`);
@@ -271,7 +275,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
           cat: getComputedStyle(e.querySelector('.qf-card__cat')).backgroundColor, timing: getComputedStyle(e.querySelector('[data-qf-timing]')).backgroundColor,
           apply: getComputedStyle(e.querySelector('[data-qf-apply]')).backgroundColor, amt: parseFloat(getComputedStyle(e.querySelector('[data-qf-amount]')).fontSize), per: parseFloat(getComputedStyle(e.querySelector('.qf-card__per')).fontSize),
           logoH: Math.round(e.querySelector('[data-qf-logo]').getBoundingClientRect().height),
-          rows: [top('.qf-card__cat'), top('[data-qf-plan]'), top('.qf-card__price'), top('[data-qf-timing]'), top('[data-qf-apply]')], x: Math.round(r.x), y: Math.round(r.y), w: Math.round(r.width),
+          rows: [top('.qf-card__cat'), top('[data-qf-plan]'), top('.qf-card__price'), top('[data-qf-timing]'), top('[data-qf-call]'), top('[data-qf-apply]')], h: Math.round(r.height), x: Math.round(r.x), y: Math.round(r.y), w: Math.round(r.width),
         };
       }),
     );
@@ -283,13 +287,54 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(new Set(d.map((c) => c.logoH)).size === 1, 'logo areas differ in size');
     if (name === 'desktop') {
       assert(new Set(d.map((c) => c.w)).size === 1 && new Set(d.map((c) => c.y)).size === 1, `not three equal cards in a row ${JSON.stringify(d.map((c) => [c.x, c.y, c.w]))}`);
-      for (let k = 0; k < 5; k++) assert(new Set(d.map((c) => c.rows[k])).size === 1, `row ${k} not aligned ${JSON.stringify(d.map((c) => c.rows))}`);
+      assert(new Set(d.map((c) => c.h)).size === 1, `card heights differ ${d.map((c) => c.h)}`);
+      for (let k = 0; k < 6; k++) assert(new Set(d.map((c) => c.rows[k])).size === 1, `row ${k} not aligned ${JSON.stringify(d.map((c) => c.rows))}`);
     } else {
       assert(d.every((c, i) => i === 0 || c.y > d[i - 1].y), 'mobile cards not stacked');
       assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     }
   });
 
+  await check(`${name}: Call to Get Approved (orange tel: link above green Apply Online) with first-party attribution and no personal data`, async () => {
+    const b = await page.$$eval('.qf-card', (els) =>
+      els.map((e) => {
+        const call = e.querySelector('[data-qf-call]');
+        const apply = e.querySelector('[data-qf-apply]');
+        const cr = call.getBoundingClientRect();
+        const ar = apply.getBoundingClientRect();
+        return { href: call.getAttribute('href'), text: call.textContent.replace(/\s+/g, ' ').trim(), icon: !!call.querySelector('svg'), bg: getComputedStyle(call).backgroundColor, applyText: apply.textContent.trim(), applyBg: getComputedStyle(apply).backgroundColor, above: cr.bottom <= ar.top, ch: Math.round(cr.height), ah: Math.round(ar.height) };
+      }),
+    );
+    for (const c of b) {
+      assert(c.href === 'tel:8888629456' && c.text === 'Call to Get Approved' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
+      assert(c.applyText === 'Apply Online' && c.applyBg === GREEN && c.above && c.ch === c.ah && c.ch >= 44, `apply button ${JSON.stringify(c)}`);
+    }
+    assert(!/Apply Now|instant approval|guaranteed approval/i.test(await page.textContent('.qf-cards')), 'old or overpromising wording');
+    await page.evaluate(() => {
+      window.__funnel = [];
+      window.addEventListener('ff:funnel', (e) => window.__funnel.push(e.detail));
+      document.addEventListener('click', (e) => { if (e.target.closest('a[href^="tel:"]')) e.preventDefault(); }, true);
+    });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-call]');
+    await page.waitForTimeout(500);
+    const ev = await page.evaluate(() => window.__funnel.filter((d) => d.name === 'quote_call_click'));
+    assert(ev.length === 1, `${ev.length} call events`);
+    const d = ev[0];
+    const exp = expected({ age: 60, gender: 'female', tobacco: false, coverage: 10000 });
+    assert(d.category === 'lowest-preferred' && d.carrier === 'Mutual of Omaha' && d.product === 'Living Promise' && d.coverage === 10000 && `$${d.premium}` === exp['lowest-preferred'] && /^[A-Za-z0-9]{16}$/.test(d.quoteRef) && !Number.isNaN(Date.parse(d.at)), JSON.stringify(d));
+    const keys = Object.keys(d).sort().join(',');
+    assert(keys === 'at,carrier,category,coverage,name,premium,product,quoteRef', `unexpected event fields ${keys}`);
+    const raw = JSON.stringify(d);
+    assert(!raw.includes('Mary') && !raw.includes(PHONES[name].replace(/\D/g, '').slice(-4)) && !/Ohio/.test(raw), 'personal information in the analytics event');
+    const recs = await (await fetch(`${BASE}/__evidence/`)).json();
+    const mine = recs.find((r) => (r.callClicks ?? []).some((c) => c.quoteRef === d.quoteRef));
+    assert(mine && mine.callClicks.at(-1).carrier === 'Mutual of Omaha' && mine.callClicks.at(-1).product === 'Living Promise', 'call tap not in the lead record');
+    await page.click('[data-qf-card="guaranteed-acceptance"] [data-qf-call]');
+    await page.waitForTimeout(500);
+    const g = await page.evaluate(() => window.__funnel.filter((x) => x.name === 'quote_call_click').at(-1));
+    assert(g.carrier === 'Gerber Life' && g.product === 'Guaranteed Life', `Gerber attribution keeps the official product name ${JSON.stringify(g)}`);
+    return `${d.carrier} / ${d.product} $${d.premium}`;
+  });
   await check(`${name}: repricing without another code; accurate premiums; layout groups intact`, async () => {
     await page.click('.qf-adjust label:has(input[name="gender"][value="male"])');
     await page.waitForFunction(() => document.querySelector('[data-qf-card="guaranteed-acceptance"] [data-qf-amount]')?.textContent === '$63.89', null, { timeout: 5000 });

@@ -214,14 +214,30 @@ const FUNNEL_EVENTS = new Set([
   'quote_pricing_view',
   'quote_pricing_adjust',
   'quote_apply_now',
+  'quote_call_click',
 ]);
 const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
 
 window.addEventListener('ff:funnel', (e) => {
-  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown }>).detail ?? {};
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown }>).detail ?? {};
   if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
   const params: Record<string, string | number> = {};
   if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
   if (typeof detail.category === 'string' && FUNNEL_CATEGORIES.has(detail.category)) params.price_category = detail.category;
+  // "Call to Get Approved" taps (v3.7): which quote was on the card when the
+  // visitor tapped it. A company or plan name, the coverage and premium shown,
+  // a random per-visit quote reference and the time; never a name or phone
+  // number, and nothing to Meta. A tap is not a completed call.
+  if (detail.name === 'quote_call_click') {
+    const label = (v: unknown) => (typeof v === 'string' && /^[A-Za-z][A-Za-z .&'/-]{0,59}$/.test(v) ? v : null);
+    const carrier = label(detail.carrier);
+    const product = label(detail.product);
+    if (carrier) params.carrier = carrier;
+    if (product) params.product = product;
+    if (typeof detail.coverage === 'number' && Number.isInteger(detail.coverage) && detail.coverage >= 5000 && detail.coverage <= 25000) params.coverage_amount = detail.coverage;
+    if (typeof detail.premium === 'string' && /^\d{1,4}\.\d{2}$/.test(detail.premium)) params.monthly_premium = Number(detail.premium);
+    if (typeof detail.quoteRef === 'string' && /^[A-Za-z0-9]{12,32}$/.test(detail.quoteRef)) params.quote_ref = detail.quoteRef;
+    if (typeof detail.at === 'string' && /^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(detail.at)) params.event_time = detail.at;
+  }
   ga4('event', detail.name, params);
 });

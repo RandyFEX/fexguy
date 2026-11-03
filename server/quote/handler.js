@@ -290,6 +290,31 @@ export async function handleQuote(request, env, deps) {
       return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
     }
 
+    // "Call to Get Approved" tap on a revealed card (v3.7): a first-party
+    // record of the tap only (never a completed call or an approval). The
+    // price is re-calculated here; the browser's value is never trusted.
+    case 'call-click': {
+      const v = await verifiedLead(request, env, store, now);
+      if (!v) return json(401, { status: 'verify-required' });
+      const category = CATEGORIES.find((c) => c.id === body.category);
+      const quote = parseInput(body.quote);
+      const ref = typeof body.quoteRef === 'string' && /^[A-Za-z0-9]{12,32}$/.test(body.quoteRef) ? body.quoteRef : null;
+      if (!category || !quote) return bad();
+      if (await store.limit([{ key: `call:h:${v.leadId}:${Math.floor(now / HOUR)}`, limit: 30, windowMs: HOUR }])) return json(429, { status: 'rate-limited' });
+      const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
+      if (!loaded) return json(503, { status: 'unavailable' });
+      const priced = priceCategories(loaded.engine, quote).find((c) => c.id === category.id);
+      if (!priced || priced.status !== 'ok') return json(409, { status: 'unavailable' });
+      const record = await store.getLead(v.leadId);
+      if (!record) return json(401, { status: 'verify-required' });
+      const shown = priced.carriers?.[0] ?? null;
+      const click = { at: iso, type: 'call-click', categoryId: category.id, category: priced.label, carrier: shown?.carrier ?? null, product: shown?.plan ?? null, coverage: quote.coverage, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution, quoteRef: ref };
+      record.callClicks = [...(record.callClicks ?? []), click].slice(-50);
+      await store.putLead(v.leadId, record);
+      await store.event(v.leadId, click);
+      return json(200, { status: 'ok' });
+    }
+
     // Carrier-specific health questions, one at a time, after Apply Now.
     case 'intake-next':
     case 'intake-answer': {

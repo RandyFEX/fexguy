@@ -75,7 +75,7 @@ test('v3.5 card content: carrier, plan, coverage timing and logo per category', 
   const c = byId(priceCategories(engine, input()));
   assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
   assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
-  assert.deepEqual(c['guaranteed-acceptance'].carriers, [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }]);
+  assert.deepEqual(c['guaranteed-acceptance'].carriers, [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }]);
 });
 
 test('verified results carry carrier names but never product ids, rates or fees', () => {

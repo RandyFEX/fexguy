@@ -1256,6 +1256,19 @@ scope protection wins.
   (`CARRIER_DISPLAY`; authentic logos in public/images/carriers/: Mutual
   of Omaha, Randy's CVS/aetna file (v3.6), Gerber Life; timing icons: a
   check for first-day coverage, a calendar for the waiting period).
+  v3.7: the quote footer is only Privacy Policy | Terms of Use | Licenses
+  (no disclaimer paragraph; the legal pages hold it); the contact screen
+  shows "Our Promise: No Spam Calls. No Junk Mail." above the orange "See
+  My Instant Quotes" (black text, 4.06:1, large bold); each revealed card
+  ends with the orange "Call to Get Approved" tel:8888629456 link above
+  the green "Apply Online" button (hidden/disabled before verification).
+  A call tap fires the GA4-only `quote_call_click` event (carrier,
+  product, category, coverage, premium, a random per-visit quote ref,
+  time; nothing personal, nothing to Meta) and is kept in the lead record
+  (`callClicks`, server-priced, `call-click` action); a tap is never
+  recorded as a completed call or an approval. v3.8: Gerber's card line
+  reads "No Health Questions" (`CARRIER_DISPLAY` `subtitle`); the official
+  product name Guaranteed Life stays in records, attribution and analytics.
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your

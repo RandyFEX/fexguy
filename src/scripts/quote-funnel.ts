@@ -21,7 +21,7 @@ import { turnstileFor } from '@/scripts/turnstile';
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
 type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[]; carriers?: (Carrier | null)[] };
-type Carrier = { carrier: string; plan: string; timing?: string; logo?: string | null };
+type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: string; logo?: string | null };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
@@ -426,6 +426,7 @@ if (root) {
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+      el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
       const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
       timing.textContent = '';
@@ -478,7 +479,8 @@ if (root) {
     // Verified: everything is shown, nothing blurred.
     if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
-    el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.plan).join(' / ');
+    el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
+    el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = state !== 'ok';
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     timing.textContent = state === 'ok' ? timings.join(' / ') : '';
@@ -641,6 +643,35 @@ if (root) {
     btn.addEventListener('click', () => intakeStep({ action: 'intake-answer', category: intakeCategory, questionId, answer: btn.dataset.qfAnswer })),
   );
 
+  // "Call to Get Approved" (v3.7): the tel: link dials 888-862-9456 itself;
+  // this only records which quote was on the card (a tap, not a call).
+  const QUOTE_REF_KEY = 'ff:quote-ref';
+  const quoteRef = () => {
+    try {
+      let r = sessionStorage.getItem(QUOTE_REF_KEY) ?? '';
+      if (!/^[A-Za-z0-9]{16}$/.test(r)) {
+        r = newVisitId().slice(0, 16);
+        sessionStorage.setItem(QUOTE_REF_KEY, r);
+      }
+      return r;
+    } catch {
+      return '';
+    }
+  };
+  for (const [id, el] of cards) {
+    el.querySelector<HTMLAnchorElement>('[data-qf-call]')!.addEventListener('click', () => {
+      if (!shown || !unlocked) return;
+      const cat = shown.categories.find((c) => c.id === id);
+      if (!cat || cat.status !== 'ok') return;
+      const first = (cat.carriers ?? []).find(Boolean) as Carrier | undefined;
+      const ref = quoteRef();
+      const at = new Date().toISOString();
+      track('quote_call_click', { category: id, carrier: first?.carrier, product: first?.plan, coverage: shown.quote.coverage, premium: cat.monthlyPremium, quoteRef: ref, at });
+      try {
+        void fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ action: 'call-click', category: id, quote: shown.quote, quoteRef: ref || undefined }), credentials: 'same-origin', keepalive: true }).catch(() => {});
+      } catch {}
+    });
+  }
   for (const [id, el] of cards) {
     el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.addEventListener('click', async (e) => {
       const btn = e.currentTarget as HTMLButtonElement;
@@ -682,6 +713,7 @@ if (root) {
       for (const k of Object.keys(answers)) delete (answers as Record<string, unknown>)[k];
       try {
         sessionStorage.removeItem(STEPS_KEY);
+        sessionStorage.removeItem(QUOTE_REF_KEY);
       } catch {}
       contactForm.reset();
       consentBox.checked = false;

@@ -43,9 +43,11 @@ export const CARRIER_DISPLAY = {
   // supplied by Randy; null would show the carrier name in plain text).
   'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' },
   'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' },
-  'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' },
+  // subtitle (v3.8): the card's consumer-facing line when it differs from the
+  // official product name, which stays in plan for records and analytics.
+  'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' },
 };
-/** @typedef {{ carrier: string, plan: string, timing: string, logo: string | null }} CarrierDisplay */
+/** @typedef {{ carrier: string, plan: string, subtitle?: string, timing: string, logo: string | null }} CarrierDisplay */
 /** @param {string} c */
 const display = (c) => /** @type {Record<string, CarrierDisplay>} */ (CARRIER_DISPLAY)[c] ?? null;
 /** @param {string} id */
