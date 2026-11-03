@@ -102,6 +102,14 @@ const HOME_ORANGE = await (async () => {
   if (c[1] !== 'rgb(255, 255, 255)') throw new Error(`homepage button text ${c[1]}`);
   return c[0];
 })();
+const HOME_HOVER = await (async () => {
+  const p = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  await p.goto(`${BASE}/`);
+  await p.hover('.hero__btn--primary');
+  const f = await p.$eval('.hero__btn--primary', (e) => getComputedStyle(e).filter);
+  await p.close();
+  return f;
+})();
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
   const ctx = await browser.newContext(opts);
   await ctx.route('https://submit-form.com/**', (r) => r.fulfill({ status: 200, body: '{}' }));
@@ -175,6 +183,17 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(btn[0] === 'See My Instant Quotes' && btn[1] === 'Our Promise: No Spam Calls. No Junk Mail.', JSON.stringify(btn));
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
+    const sel = '[data-qf-contact] button[type="submit"]';
+    const colors = async () => page.$eval(sel, (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color, getComputedStyle(b).filter]);
+    await page.hover(sel);
+    const hov = await colors();
+    await page.focus(sel);
+    const foc = await colors();
+    await page.mouse.move(0, 0);
+    assert(hov[0] === HOME_ORANGE && hov[1] === 'rgb(255, 255, 255)' && foc[0] === HOME_ORANGE && foc[1] === 'rgb(255, 255, 255)', `hover/focus colors ${hov} / ${foc}`);
+    if (HOME_HOVER && name === 'desktop') assert(hov[2] === HOME_HOVER, `hover ${hov[2]} vs homepage ${HOME_HOVER}`);
+    const dis = await page.$eval(sel, (b) => { b.disabled = true; const r = [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]; b.disabled = false; return r; });
+    assert(dis[0] === HOME_ORANGE && dis[1] === 'rgb(255, 255, 255)', `disabled colors ${dis}`);
     const cw = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => getComputedStyle(b).fontWeight);
     assert(Number(cw) >= 700, `contact button weight ${cw}`);
     const order = await page.$eval('.qf-reassure', (e) => [e.previousElementSibling?.matches('.qf-consent'), e.nextElementSibling?.matches('button[type="submit"]')]);
@@ -215,6 +234,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await priceStatus(page)) === 401, 'pricing endpoint answered an unverified visit');
     const order = await page.evaluate(() => ({ next: document.querySelector('.qf-cards').nextElementSibling?.matches('[data-qf-unlock]'), adjust: !!document.querySelector('[data-qf-adjust]').offsetParent, intro: !!document.querySelector('[data-qf-adjust-intro]').offsetParent }));
     assert(order.next && !order.adjust && !order.intro, JSON.stringify(order));
+    assert(!(await page.evaluate(() => !!document.querySelector('[data-qf-ref]').getClientRects().length || /Representative monthly rates/.test(document.body.innerText))), 'rate note shown before verification');
     const u = await page.evaluate(() => {
       const t = document.querySelector('#qf-unlock-title');
       const b = document.querySelector('[data-qf-send]');
@@ -222,7 +242,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     });
     assert(u.title === 'Unlock Your Rates' && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
     assert(u.note.startsWith("We'll text a 6-digit verification code to your mobile number."), u.note);
-    assert(u.btn === 'Text Me a Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
+    assert(u.btn === 'Text Me My Access Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
     const digits = PHONES[name].replace(/\D/g, '');
     assert(u.shown.endsWith(digits.slice(6)) && !u.shown.includes(digits.slice(0, 3)), `number shown ${u.shown}`);
     assert(u.h < 300, `unlock panel ${u.h}px tall`);
@@ -272,7 +292,19 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(await page.isHidden('[data-qf-unlock]'), 'verification panel still shown');
     const intro = await page.textContent('[data-qf-adjust-intro]');
     assert(intro === 'Adjust your coverage and compare rates below.', intro);
-    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-restart-row', '.qf-ref'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
+    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '.qf-restart-row'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
+    const ref = await page.$eval('[data-qf-ref]', (e) => ({ visible: e.getClientRects().length > 0, text: e.textContent.trim() }));
+    assert(ref.visible && ref.text === 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.', `rate note after verification ${JSON.stringify(ref)}`);
+    // v4.3: each adjustment label is centered over its own controls.
+    const centers = await page.$$eval('.qf-adjust .qf-group', (gs) => gs.map((g) => {
+      const t = g.querySelector('.qf-group__title');
+      const range = document.createRange();
+      range.selectNodeContents(t);
+      const tr = range.getBoundingClientRect();
+      const ctl = g.querySelector('select, .qf-seg__opts').getBoundingClientRect();
+      return { label: t.textContent.trim(), off: Math.round(Math.abs(tr.left + tr.width / 2 - (ctl.left + ctl.width / 2))) };
+    }));
+    assert(centers.map((c) => c.label).join('|') === 'Age|Gender|Tobacco|Coverage' && centers.every((c) => c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
     assert(o.every((t, i) => i === 0 || t > o[i - 1]), `order ${o}`);
     await shot(page, `v35-${name}-5-revealed.png`);
     await shot(page, `v35-${name}-5-revealed-full.png`, true);
@@ -324,7 +356,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     );
     for (const c of b) {
       assert(c.href === 'tel:8888629456' && c.text === 'Call to Get Approved' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
-      assert(c.applyText === 'Apply Online' && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 50 && c.ah >= 40 && c.ah <= 46 && c.ch > c.ah && c.cw === c.aw, `apply button ${JSON.stringify(c)}`);
+      assert(c.applyText === 'Apply Online Now' && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 50 && c.ah >= 40 && c.ah <= 46 && c.ch > c.ah && c.cw === c.aw, `apply button ${JSON.stringify(c)}`);
       assert(c.bg === HOME_ORANGE && c.fg === 'rgb(255, 255, 255)', `call colors ${JSON.stringify(c)}`);
       assert(c.th <= c.ah + 2 && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
     }

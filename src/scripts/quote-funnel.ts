@@ -385,6 +385,7 @@ if (root) {
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
   const adjustIntro = $('[data-qf-adjust-intro]');
+  const refNote = $('[data-qf-ref]');
   const blurred = (text: string) => {
     const b = document.createElement('span');
     b.className = 'qf-blur';
@@ -415,6 +416,8 @@ if (root) {
     pricing.dataset.locked = 'true';
     adjust.hidden = true;
     adjustIntro.hidden = true;
+    // The representative-rates note shows only with real prices (v4.3).
+    refNote.hidden = true;
     unlockPanel.hidden = false;
     // "Your Insurance Quotes" appears only after verification.
     resultsTitle.textContent = 'Your quote results';
@@ -483,7 +486,7 @@ if (root) {
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
     el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = state !== 'ok';
-    el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.textContent = 'Apply Online';
+    el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.textContent = 'Apply Online Now';
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     timing.textContent = state === 'ok' ? timings.join(' / ') : '';
@@ -570,6 +573,7 @@ if (root) {
     unlockPanel.hidden = true;
     adjust.hidden = false;
     adjustIntro.hidden = false;
+    refNote.hidden = false;
     resultsTitle.textContent = 'Your Insurance Quotes';
     resultsTitle.classList.remove('visually-hidden');
     fillAdjust(quote);

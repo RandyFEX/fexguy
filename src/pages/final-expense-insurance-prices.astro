@@ -229,7 +229,7 @@ const TOTAL = 8;
                 <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note" />
                 <p class="qf-error" id="qf-unlock-phone-error" hidden></p>
               </div>
-              <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-send>Text Me a Code</button>
+              <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-send>Text Me My Access Code</button>
               <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
             </form>
             <form class="qf-form qf-form--compact" data-qf-verify novalidate hidden>
@@ -286,8 +286,8 @@ const TOTAL = 8;
               </div>
             </fieldset>
           </form>
+          <p class="qf-ref" data-qf-ref hidden>Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
           <p class="qf-restart-row"><button class="qf-link" type="button" data-qf-restart>Start New Quote</button></p>
-          <p class="qf-ref">Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
         </section>
 
         <!-- Step 9: carrier-specific health questions after Apply Now -->
@@ -453,7 +453,8 @@ const TOTAL = 8;
     .qf-group--coverage { grid-column: 1 / -1; }
   }
   .qf-group { background: var(--color-surface); border: 0; border-radius: 0.625rem; margin: 0; padding: var(--space-3); min-width: 0; }
-  .qf-group__title { display: block; float: left; width: 100%; font-weight: 800; font-size: 1rem; color: var(--color-primary); margin: 0 0 var(--space-2); padding: 0; }
+  /* v4.3: each label centered over its own controls. */
+  .qf-group__title { display: block; float: left; width: 100%; text-align: center; font-weight: 800; font-size: 1rem; color: var(--color-primary); margin: 0 0 var(--space-2); padding: 0; }
   .qf-group__title + * { clear: both; }
   .qf-control { min-height: 2.875rem; font-size: 1.0625rem; }
   .qf-adjust .qf-select { max-width: none; min-height: 2.875rem; padding: 0 var(--space-2); }
@@ -549,6 +550,7 @@ const TOTAL = 8;
   .qf-card[data-state='loading'] .qf-card__amount { color: var(--color-border); }
   .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
   .qf-restart-row { margin: var(--space-2) 0 0; text-align: center; }
+  .qf-ref[hidden] { display: none; }
   .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
 
 </style>

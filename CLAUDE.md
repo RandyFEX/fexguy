@@ -1277,6 +1277,11 @@ scope protection wins.
   lines at 16px; locked cards' disabled button reads "Unlock to See
   Rates"; revealed cards: 48px orange call button above the 44px green
   Apply Online, and compact one-line timing panels (5px padding).
+  v4.3: the unlock button reads "Text Me My Access Code"; revealed cards'
+  green button reads "Apply Online Now"; the representative-rates note
+  shows only after verification, directly under the adjustment controls
+  (above Start New Quote); the Age, Gender, Tobacco and Coverage labels
+  are centered over their own controls.
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your
