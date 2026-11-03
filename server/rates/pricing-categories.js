@@ -37,12 +37,17 @@ export const ATTRIBUTION_CODES = {
 };
 /** Carrier and plan names shown only to a verified visitor (never before verification). */
 export const CARRIER_DISPLAY = {
-  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense' },
-  'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise' },
-  'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life' },
+  // timing: the coverage timing of the priced benefit tier (Level/Standard
+  // pay the full benefit from the first day; Gerber Guaranteed Life is a
+  // two-year graded benefit). logo: the carrier's own artwork (null until an
+  // authentic file is supplied; the card then shows the carrier name).
+  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: null },
+  'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' },
+  'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' },
 };
+/** @typedef {{ carrier: string, plan: string, timing: string, logo: string | null }} CarrierDisplay */
 /** @param {string} c */
-const display = (c) => /** @type {Record<string, { carrier: string, plan: string }>} */ (CARRIER_DISPLAY)[c] ?? null;
+const display = (c) => /** @type {Record<string, CarrierDisplay>} */ (CARRIER_DISPLAY)[c] ?? null;
 /** @param {string} id */
 const code = (id) => /** @type {Record<string, string>} */ (ATTRIBUTION_CODES)[id] ?? 'FF-000';
 export const COVERAGE = { min: 5000, max: 25000, presets: [5000, 10000, 15000, 20000, 25000], default: 10000 };

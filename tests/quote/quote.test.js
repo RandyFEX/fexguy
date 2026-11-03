@@ -186,6 +186,7 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.equal(r.verification.status, 'approved');
   assert.deepEqual([r.consent.given, r.consent.action, r.consent.text], [false, 'left consent box unchecked', null]);
   assert.equal(r.verifyNotice.version, VERIFY_NOTICE_VERSION);
+  assert.equal(r.verifyNotice.text, "We'll text a 6-digit verification code to your mobile number. Msg & data rates may apply.");
   assert.equal(r.source.utmSource, 'google');
   assert.equal(r.client.userAgent, 'TestAgent/1.0');
   assert.ok(r.client.ip);
@@ -407,9 +408,9 @@ test('intended use is required, stored with the lead, in the notifications, Appl
   assert.equal(apply.body.status, 'ok');
   await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
   const r = await c.store.getLead(start.body.lead);
-  assert.deepEqual(r.intendedUse, { value: 'burial', label: 'Burial & Funeral Expenses' });
-  assert.equal(r.applications[0].intendedUse, 'Burial & Funeral Expenses');
-  assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial & Funeral Expenses');
+  assert.deepEqual(r.intendedUse, { value: 'burial', label: 'Burial Expenses' });
+  assert.equal(r.applications[0].intendedUse, 'Burial Expenses');
+  assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial Expenses');
   // Same prices whatever the answer (the pricing endpoint only accepts the four rating inputs).
   assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
 });
@@ -419,5 +420,5 @@ test('intended use reaches the Formspark notification (real Twilio mode)', async
   const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
   const start = await c.call(startBody({ phone: '214-867-5390', intendedUse: 'other' }));
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
-  assert.equal(ok.body.notify['Intended Use'], 'Other Final Expenses');
+  assert.equal(ok.body.notify['Intended Use'], 'Other Expenses');
 });

@@ -16,9 +16,10 @@ export const CONSENT_TEXT =
   'including automated texts. Msg & data rates may apply. Reply STOP to opt out. ' +
   'Consent is not required to see prices or to buy.';
 
-export const VERIFY_NOTICE_VERSION = 'ff-quote-verify-notice-v1-2026-11';
-export const VERIFY_NOTICE_TEXT = 'We will text a 6-digit code to this number to verify it. Msg & data rates may apply.';
+export const VERIFY_NOTICE_VERSION = 'ff-quote-verify-notice-v2-2026-11';
+export const VERIFY_NOTICE_TEXT = "We'll text a 6-digit verification code to your mobile number. Msg & data rates may apply.";
+const VERIFY_NOTICE_V1 = 'We will text a 6-digit code to this number to verify it. Msg & data rates may apply.';
 
 /** Text of every version ever shown (never remove an entry: old evidence refers to it). */
 export const CONSENT_VERSIONS = { [CONSENT_VERSION]: CONSENT_TEXT };
-export const VERIFY_NOTICE_VERSIONS = { [VERIFY_NOTICE_VERSION]: VERIFY_NOTICE_TEXT };
+export const VERIFY_NOTICE_VERSIONS = { 'ff-quote-verify-notice-v1-2026-11': VERIFY_NOTICE_V1, [VERIFY_NOTICE_VERSION]: VERIFY_NOTICE_TEXT };

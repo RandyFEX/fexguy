@@ -756,7 +756,7 @@ for (const p of NO_NAV_PAGES) {
 
 // ---- Upper-right header phone (Randy, V14.0) -----------------------------------
 // Every page header (the site header, and the standalone landing headers
-// .fb-top/.fq-top/.hp-top) has one phone contact marked data-header-phone:
+// .fb-top/.fq-top/.hp-top and the quote page .qh-top) has one phone contact marked data-header-phone:
 // "Speak With a Licensed Agent", the approved handset icon, and the page's own
 // number (the campaign number on /roku/ and /facebook/, the website number
 // elsewhere), with a tel: link that dials the number shown. "Call Randy" is
@@ -773,7 +773,7 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
   const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
   const regions = [];
   for (const m of html.matchAll(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/g)) regions.push(['site header', m[0]]);
-  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
+  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp|qh)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
   for (const [kind, region] of regions) {
     headersChecked++;
     if (/call\s+randy/i.test(region.replace(/<[^>]+>/g, ' '))) headerProblems.push(`${page}: ${kind} says "Call Randy"`);
@@ -790,7 +790,7 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     if (href !== shown) headerProblems.push(`${page}: ${kind} link dials ${href} but shows ${shown}`);
     if (shown !== expected) headerProblems.push(`${page}: ${kind} shows ${shown}, expected ${expected}`);
   }
-  if (!regions.length && /<body\b[^>]*class="[^"]*\bis-landing\b/.test(html) && /class="(?:fb|fq|hp)-top/.test(html))
+  if (!regions.length && /<body\b[^>]*class="[^"]*\bis-landing\b/.test(html) && /class="(?:fb|fq|hp|qh)-top/.test(html))
     headerProblems.push(`${page}: landing header not recognized by the header check`);
 }
 
@@ -816,7 +816,7 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
   const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
   const regions = [];
   for (const m of html.matchAll(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/g)) regions.push(['site header', m[0]]);
-  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
+  for (const m of html.matchAll(/<div\b[^>]*class="(?:fb|fq|hp|qh)-top"[\s\S]*?(?=<section\b)/g)) regions.push(['landing header', m[0]]);
   for (const [kind, region] of regions) {
     logosChecked++;
     const links = [...region.matchAll(/<a\b([^>]*\bdata-header-logo\b[^>]*)>([\s\S]*?)<\/a>/g)];

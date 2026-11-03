@@ -45,7 +45,7 @@ export const US_STATES = [
 ];
 const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSource', 'utmMedium', 'utmCampaign', 'utmTerm', 'utmContent'];
 /** Intended use (lead information only; never a pricing input). */
-export const INTENDED_USES = { burial: 'Burial & Funeral Expenses', cremation: 'Cremation Expenses', other: 'Other Final Expenses' };
+export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
 const NAME_RE = /^[\p{L}][\p{L}\p{M} .'-]{0,39}$/u;
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */

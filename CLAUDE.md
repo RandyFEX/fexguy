@@ -1237,13 +1237,30 @@ scope protection wins.
   intro, no phone line or price explanations under the questions); pricing
   screen order: cards, unlock panel (number already entered, Change Number
   to edit), then the controls, Start New Quote and the representative-rates
-  note. v3.3: the pricing screen heading is "Your Insurance Quotes". v2.9: question 4 "What Will Your Insurance Money Be Used For?"
-  (Burial & Funeral Expenses, Cremation Expenses, Other Final Expenses;
+  note. v3.5: the page uses its own minimal layout (BaseLayout
+  `layout="landing"`, no sticky call): the `.qh-top` header (logo; "Secure
+  Form" with a lock over the standard header phone) and a compact legal
+  footer (Privacy Policy, Terms of Use, Licenses, the footer disclaimer);
+  no site menus, page heading, pre-footer, address or full footer. Title
+  Case questions; step 4 "How Would You Use These Funds?" (Burial
+  Expenses, Cremation Expenses, Other Expenses); the contact screen shows
+  the selections and "No junk mail. No unwanted sales calls." above "See
+  My Instant Quotes". Cards: logo, sage category panel, plan, premium,
+  sage coverage-timing panel (First-Day Coverage for MOO Level and Aetna
+  Standard, 2-Year Waiting Period for Gerber), green Apply Now; logo,
+  plan and timing come only from the verified pricing response
+  (`CARRIER_DISPLAY`; logos in public/images/carriers/, Aetna's pending).
+  Before verification the cards are blurred stand-ins under a hidden
+  heading, followed by the red "Unlock Your Rates" panel (orange Text Me
+  a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your
+  coverage and compare rates below." and the controls. Browser test:
+  `npm run test:quote:browser` (after a build). v2.9: question 4
+  (intended use;
   8 steps) is lead information only, never a pricing input: stored in the
   evidence record, Apply Now and intake, and in Randy's Formspark
   notifications, never sent to analytics.
   v2.5: after name + mobile the pricing screen shows blurred safe stand-ins
-  (never real prices or carriers) with the Unlock Your Insurance Prices
+  (never real prices or carriers) with the Unlock Your Rates (v3.5)
   panel (number prefilled); verification reveals prices in place; carrier
   names and logos stay blurred. Apply Now opens carrier-specific health
   questions one at a time from the published Health Question Search records

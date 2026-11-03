@@ -33,7 +33,7 @@ server decides when. Test mode never notifies.
 - After name and mobile, the pricing screen shows the three cards with
   blurred, safe stand-ins: fixed example amounts and generic company text,
   never real prices or carriers. The browser can't get prices until the
-  server verifies the phone. The Unlock Your Insurance Prices panel has the
+  server verifies the phone. The Unlock Your Rates panel has the
   number prefilled; verifying reveals the prices in place. Carrier names and
   logos stay blurred.
 - Categories: Lowest Preferred = Mutual of Omaha Living Promise Level;

@@ -1,4 +1,4 @@
-// Quote funnel (Quote System v2.2) for /final-expense-insurance-prices/.
+// Quote funnel (Quote System v2.2; v3.5 layout and cards) for /final-expense-insurance-prices/.
 //
 // Steps 1-5 collect sex, age, tobacco, coverage and state, one per screen
 // (they advance on their own). Step 6 takes first name, mobile number and an
@@ -20,14 +20,14 @@ import { turnstileFor } from '@/scripts/turnstile';
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
-type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[]; carriers?: ({ carrier: string; plan: string } | null)[] };
+type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[]; carriers?: (Carrier | null)[] };
+type Carrier = { carrier: string; plan: string; timing?: string; logo?: string | null };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
 const MAX = 25000;
 const TOTAL = 8;
 const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, intended use, coverage)
-const LOGOS: Record<string, string> = { 'FF-102': '/wp-content/uploads/2018/05/Mutual-of-Omaha-Logo.jpg' };
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const track = (name: string, extra: Record<string, unknown> = {}) => window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...extra } }));
 
@@ -98,9 +98,23 @@ if (root) {
     progress.style.width = `${(Math.min(n, TOTAL) / TOTAL) * 100}%`;
     progressLabel.textContent = `Step ${Math.min(n, TOTAL)} of ${TOTAL}`;
     if (!focus) return;
-    steps.get(n)?.querySelector<HTMLElement>('.qf-q')?.focus({ preventScroll: true });
+    if (n === 7) fillSummary();
+    const target = n === 8 && !unlocked ? root!.querySelector<HTMLElement>('#qf-unlock-title') : steps.get(n)?.querySelector<HTMLElement>('.qf-q');
+    target?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     if (n === 7 || n === 8) turnstile.prepare();
+  }
+  /** Step 7: the visitor's own selections (Gender | Age | State | Tobacco | Coverage). */
+  function fillSummary() {
+    const put = (k: string, v: string) => {
+      const el = root!.querySelector<HTMLElement>(`[data-qf-sum="${k}"]`);
+      if (el) el.textContent = v;
+    };
+    put('gender', answers.gender === 'female' ? 'Female' : answers.gender === 'male' ? 'Male' : '');
+    put('age', answers.age ? String(answers.age) : '');
+    put('state', answers.state ?? '');
+    put('tobacco', typeof answers.tobacco === 'boolean' ? (answers.tobacco ? 'Smoker' : 'Non-Smoker') : '');
+    put('coverage', answers.coverage ? money(answers.coverage) : '');
   }
   const complete = (step: number) => {
     if (!started) {
@@ -220,7 +234,7 @@ if (root) {
   const phoneField = $('[data-qf-phone-field]');
   const formatPhone = (v: string) => {
     const d = v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
-    return d.length === 10 ? `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` : v;
+    return d.length === 10 ? `(•••) •••-${d.slice(6)}` : '';
   };
   function showPhoneSummary() {
     phoneShow.textContent = formatPhone(unlockPhone.value);
@@ -364,30 +378,45 @@ if (root) {
   let seq = 0;
   let firstView = true;
 
-  // Safe stand-ins for the blurred, locked cards: never real prices or carriers.
+  // Safe stand-ins for the blurred, locked cards: never real prices, carriers or plans.
   const STAND_INS = ['$38.47', '$52.19', '$71.36'];
-  const NAME_STAND_INS = ['Insurance Company Name', 'Life Insurance Company', 'Insurance Company Plan'];
+  const LOGO_STAND_INS = ['Insurance Co.', 'Life Company', 'Insurance Co.'];
+  const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
+  const resultsTitle = $('[data-qf-results-title]');
+  const adjustIntro = $('[data-qf-adjust-intro]');
+  const blurred = (text: string) => {
+    const b = document.createElement('span');
+    b.className = 'qf-blur';
+    b.setAttribute('aria-hidden', 'true');
+    b.textContent = text;
+    return b;
+  };
   function lockCards() {
     unlocked = false;
     pricing.dataset.locked = 'true';
     adjust.hidden = true;
+    adjustIntro.hidden = true;
     unlockPanel.hidden = false;
+    // "Your Insurance Quotes" appears only after verification.
+    resultsTitle.textContent = 'Your quote results';
+    resultsTitle.classList.add('visually-hidden');
     let i = 0;
     for (const el of cards.values()) {
       el.dataset.state = 'locked';
       const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
-      amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
+      amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
-      const carrier = el.querySelector<HTMLElement>('.qf-card__carrier')!;
-      carrier.textContent = NAME_STAND_INS[i - 1];
-      carrier.classList.add('qf-blur');
-      carrier.setAttribute('aria-hidden', 'true');
-      el.querySelector('.qf-card__label')!.textContent = DEFAULT_LABELS[i - 1];
-      const blank = document.createElement('span');
-      blank.className = 'qf-logo-blank';
-      el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(blank);
+      el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
+      const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
+      timing.textContent = '';
+      timing.hidden = true;
+      el.querySelector('.qf-card__label')!.textContent = DEFAULT_LABELS[i];
+      const stand = blurred(LOGO_STAND_INS[i]);
+      stand.classList.add('qf-logo-stand');
+      el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(stand);
+      i++;
     }
   }
 
@@ -430,25 +459,25 @@ if (root) {
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
     if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
-    const names = (cat?.carriers ?? []).filter(Boolean) as { carrier: string; plan: string }[];
-    const carrier = el.querySelector<HTMLElement>('.qf-card__carrier')!;
-    carrier.classList.remove('qf-blur');
-    carrier.removeAttribute('aria-hidden');
-    carrier.textContent = names.map((n) => `${n.carrier} ${n.plan}`).join(' / ');
-    const ids = cat?.attribution ?? [];
+    const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
+    el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.plan).join(' / ');
+    const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
+    const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
+    timing.textContent = state === 'ok' ? timings.join(' / ') : '';
+    timing.hidden = !timing.textContent;
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
-      ...ids.map((id, k) => {
-        if (LOGOS[id]) {
+      ...names.map((n) => {
+        if (n.logo) {
           const img = new Image();
-          img.src = LOGOS[id];
-          img.alt = names[k]?.carrier ?? '';
+          img.src = n.logo;
+          img.alt = n.carrier;
           img.decoding = 'async';
           return img;
         }
-        // No logo file yet: the company name as a simple wordmark.
+        // No authentic logo file yet: the company name in plain text.
         const w = document.createElement('span');
         w.className = 'qf-logo-name';
-        w.textContent = names[k]?.carrier ?? '';
+        w.textContent = n.carrier;
         return w;
       }),
     );
@@ -516,9 +545,14 @@ if (root) {
     testBanner.hidden = !test;
     unlockPanel.hidden = true;
     adjust.hidden = false;
+    adjustIntro.hidden = false;
+    resultsTitle.textContent = 'Your Insurance Quotes';
+    resultsTitle.classList.remove('visually-hidden');
     fillAdjust(quote);
-    if (current !== 8) show(8);
-    else show(8, false);
+    show(8, false);
+    // Stay on the page; bring the top of the results into view.
+    resultsTitle.focus({ preventScroll: true });
+    root!.scrollIntoView({ block: 'start', behavior: 'auto' });
     void reprice(quote);
   }
 
