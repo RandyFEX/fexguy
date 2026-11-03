@@ -83,7 +83,7 @@ const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + p
 const startBody = (o = {}) => ({
   action: 'start', firstName: 'Mary', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
   verifyNoticeVersion: VERIFY_NOTICE_VERSION, quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
-  source: { page: '/final-expense-insurance-prices/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
+  source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
 
 test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and fictional rejected', () => {
@@ -507,4 +507,29 @@ test('one "Your Name" field (v4.5): a first name or a full name is accepted and 
   }
   assert.equal((await client(PREVIEW).call(startBody({ firstName: 'x'.repeat(61) }))).http, 200, 'over-long names are trimmed, not refused');
   assert.equal((await client(PREVIEW).call(startBody({ firstName: '' }))).http, 400);
+});
+
+test('v5.8: the article-sidebar entry is stored with the lead and appears in Randy\'s notifications', async () => {
+  const tw = fakeTwilio();
+  const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
+  const source = { page: 'https://funeralfunds.com/free-quote/', utmSource: 'newsletter', entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'female', entryAt: '2026-11-03T22:00:00.000Z' };
+  const start = await c.call(startBody({ source }));
+  const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
+  assert.equal(ok.body.notify['Entry Location'], 'Article sidebar');
+  assert.equal(ok.body.notify['Original Article'], 'Cancer Burial Insurance');
+  assert.equal(ok.body.notify['Original Article URL'], 'https://funeralfunds.com/burial-insurance/cancer/');
+  assert.equal(ok.body.notify['Entry Gender'], 'Female');
+  assert.equal(ok.body.notify['Entry Time'], '2026-11-03T22:00:00.000Z');
+  const rec = await c.store.getLead(start.body.lead);
+  assert.deepEqual({ ...rec.source }, source);
+  const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  assert.equal(apply.body.notify['Original Article'], 'Cancer Burial Insurance');
+  // Unknown entry types, genders and non-URL origins are dropped, never stored.
+  const bad = await client(TWILIO, { fetchImpl: tw.fetchImpl }).call(startBody({ source: { entryType: 'popup', entryGender: 'x', originUrl: 'javascript:alert(1)', originTitle: 'T' } }));
+  const badRec = await c.store.getLead(bad.body.lead);
+  assert.deepEqual({ ...badRec.source }, { originTitle: 'T' });
+  // A direct entry is labelled as one.
+  const d = client(TWILIO, { fetchImpl: tw.fetchImpl });
+  const ds = await d.call(startBody({ source: { entryType: 'direct', entryAt: '2026-11-03T22:00:00.000Z' } }));
+  assert.equal((await d.call({ action: 'check', lead: ds.body.lead, code: '654321' })).body.notify['Entry Location'], 'Direct funnel entry');
 });

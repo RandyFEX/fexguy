@@ -1,5 +1,5 @@
 // @ts-check
-// Consent disclosures for the quote funnel (/final-expense-insurance-prices/,
+// Consent disclosures for the quote funnel (/free-quote/,
 // Quote System v2.2). The page renders these exact strings from this module
 // and the server records the text of the version the visitor saw, so the
 // evidence record always holds the wording that was on screen.

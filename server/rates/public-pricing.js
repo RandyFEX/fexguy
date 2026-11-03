@@ -1,6 +1,6 @@
 // @ts-check
 // Request handling for POST /api/price-explorer/ (Pricing Explorer v1.0): the
-// narrowly scoped public endpoint behind /final-expense-insurance-prices/.
+// narrowly scoped public endpoint behind /free-quote/.
 //
 // - Same-site browser requests only (Origin check), JSON body of at most
 //   256 bytes with exactly age, gender, tobacco and coverage.

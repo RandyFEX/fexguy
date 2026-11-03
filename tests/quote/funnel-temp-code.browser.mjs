@@ -8,7 +8,7 @@ import { startFunnelServer } from './funnel-server.mjs';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer({ production: true });
-const URL_ = `${srv.base}/final-expense-insurance-prices/`;
+const URL_ = `${srv.base}/free-quote/`;
 const OUT = process.env.OUT ?? '';
 const NOTE = 'Enter access code 123456 to view your insurance quotes.';
 const browser = await chromium.launch();

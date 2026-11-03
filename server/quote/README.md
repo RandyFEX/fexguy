@@ -1,7 +1,7 @@
 # Quote funnel (server side)
 
 Phone verification, verified sessions, and consent and verification evidence
-for `/final-expense-insurance-prices/` (Quote System v2.2, Randy, November
+for `/free-quote/` (Quote System v2.2, Randy, November
 2026). The page is `src/pages/final-expense-insurance-prices.astro` and its
 script is `src/scripts/quote-funnel.ts`. Prices come from the rate engine
 (`server/rates/`) only after the server has verified the phone.

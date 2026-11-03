@@ -1,7 +1,44 @@
 ---
-// Sidebar quote box (the native lead form, or the Fillout embed as rollback).
-// Markup lives in src/lib/lead/quote-box.ts so in-content placements share it.
-import { quoteBoxHtml } from '@/lib/lead/quote-box';
+// Article sidebar "Get Prices" module (Randy, Quote System v5.8): replaces the
+// old sidebar lead form. The funnel's own Male and Female choices
+// (GenderChoice.astro) link to /free-quote/, which opens at the age question
+// with that choice already made. The click records where the visitor came
+// from (this article's title and URL, the sidebar, the choice and the time)
+// for the lead record and Randy's notification (src/scripts/quote-entry.ts).
+// Without JavaScript the links still open the funnel with the choice made.
+// Keeps id="quote" so the article's GET MY QUOTE button still lands here.
+import GenderChoice from '@/components/quote/GenderChoice.astro';
 ---
 
-<Fragment set:html={quoteBoxHtml('sidebar')} />
+<div class="quote-box quote-box--sidebar gp" id="quote" data-get-prices role="region" aria-labelledby="quote-title">
+  <p class="quote-box__title" id="quote-title">Get Prices</p>
+  <div class="gp__body">
+    <p class="gp__q">Who Needs Coverage?</p>
+    <GenderChoice as="link" />
+  </div>
+</div>
+
+<style is:global>
+  .gp__body { padding: var(--space-4) var(--space-3); background: var(--color-bg); }
+  .gp__q { margin: 0 0 var(--space-3); text-align: center; font-weight: 800; font-size: 1.125rem; color: var(--color-primary); }
+  .gp .qf-people { gap: var(--space-3); }
+  .gp .qf-person { padding: var(--space-3) var(--space-1); text-decoration: none; min-height: var(--tap-target, 44px); }
+  .gp .qf-person__art { width: min(6rem, 100%); }
+  .gp .qf-person__label { font-size: 1.125rem; }
+</style>
+
+<script>
+  import { rememberSidebarEntry } from '@/scripts/quote-entry';
+
+  for (const link of document.querySelectorAll<HTMLAnchorElement>('[data-get-prices] [data-gp-gender]')) {
+    link.addEventListener('click', (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+        // A new tab or window still gets the choice and the article from the URL.
+        link.href = rememberSidebarEntry(link.dataset.gpGender === 'female' ? 'female' : 'male');
+        return;
+      }
+      e.preventDefault();
+      location.assign(rememberSidebarEntry(link.dataset.gpGender === 'female' ? 'female' : 'male'));
+    });
+  }
+</script>

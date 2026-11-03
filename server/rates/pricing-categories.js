@@ -1,5 +1,5 @@
 // @ts-check
-// The three pricing categories on /final-expense-insurance-prices/ (Pricing
+// The three pricing categories on /free-quote/ (Pricing
 // Explorer v1.0, Randy, November 2026). Each category is an explicitly
 // defined set of verified products; premiums come only from the rate engine
 // (createEngine().quote) and nothing is estimated or extrapolated.

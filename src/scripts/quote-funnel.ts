@@ -1,4 +1,4 @@
-// Quote funnel (Quote System v2.2; v3.5 layout and cards) for /final-expense-insurance-prices/.
+// Quote funnel (Quote System v2.2; v3.5 layout and cards) for /free-quote/ (moved from /final-expense-insurance-prices/ in v5.8).
 //
 // Steps 1-5 collect sex, age, tobacco, coverage and state, one per screen
 // (they advance on their own). Step 6 takes first name, mobile number and an
@@ -17,6 +17,7 @@
 import { lead } from '@/config/lead';
 import { leadSourceFields } from '@/scripts/lead-source';
 import { turnstileFor } from '@/scripts/turnstile';
+import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
@@ -29,7 +30,11 @@ const MAX = 25000;
 const TOTAL = 8;
 const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, intended use, coverage)
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
-const track = (name: string, extra: Record<string, unknown> = {}) => window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...extra } }));
+// v5.8: where this visit started (article sidebar, campaign or direct); every
+// funnel event carries the entry type and the article's path (never personal data).
+const arrival = root ? readFunnelEntry() : null;
+const track = (name: string, extra: Record<string, unknown> = {}) =>
+  window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...(arrival ? entryAnalytics(arrival.entry) : {}), ...extra } }));
 
 // Visit-scoped verification (v2.7): one random visit id per browser tab,
 // in sessionStorage (gone when the tab closes; a new tab gets a new one). The
@@ -224,6 +229,7 @@ if (root) {
     return {
       page: f['Submission Page'], landingPage: f['Landing Page'], trafficSource: f['Traffic Source'], referrer: f['Referrer'],
       utmSource: f['UTM Source'], utmMedium: f['UTM Medium'], utmCampaign: f['UTM Campaign'], utmTerm: f['UTM Term'], utmContent: f['UTM Content'],
+      ...(arrival ? entrySource(arrival.entry) : {}),
     };
   }
 
@@ -756,10 +762,23 @@ if (root) {
 
   // Start: only this tab's own verified visit returns to the live prices;
   // any other (new tab, new visit) starts at the first question.
+  // v5.8: the visit's entry; a Male or Female choice made in an article's
+  // sidebar is applied here, so the visitor starts at the age question (Back
+  // still returns to the choice).
+  track('quote_funnel_entry');
+  if (arrival?.fromSidebar) track('quote_sidebar_select');
+  const preselect = arrival?.preselect ?? null;
+  if (preselect) {
+    answers.gender = preselect;
+    root.querySelectorAll('[data-pick="gender"]').forEach((b) => b.setAttribute('aria-pressed', String((b as HTMLElement).dataset.value === preselect)));
+    saveSteps();
+    complete(1);
+    show(2);
+  }
   (async () => {
     const { http, body } = await api({ action: 'session' });
     temporaryCode(body.temporaryCodeNote);
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
-    show(1, false);
+    if (!preselect) show(1, false);
   })();
 }

@@ -12,7 +12,7 @@ const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
 const BASE = srv.base;
 const OUT = process.env.OUT ?? '';
-const URL_ = `${BASE}/final-expense-insurance-prices/`;
+const URL_ = `${BASE}/free-quote/`;
 const browser = await chromium.launch();
 const results = [];
 const check = async (name, fn) => {
@@ -428,7 +428,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const exp = expected({ age: 60, gender: 'female', tobacco: false, coverage: 10000 });
     assert(d.category === 'lowest-preferred' && d.carrier === 'Mutual of Omaha' && d.product === 'Living Promise' && d.coverage === 10000 && `$${d.premium}` === exp['lowest-preferred'] && /^[A-Za-z0-9]{16}$/.test(d.quoteRef) && !Number.isNaN(Date.parse(d.at)), JSON.stringify(d));
     const keys = Object.keys(d).sort().join(',');
-    assert(keys === 'at,carrier,category,coverage,name,premium,product,quoteRef', `unexpected event fields ${keys}`);
+    // v5.8: the entry type (a direct visit here: no article path) rides on every funnel event.
+    assert(keys === 'at,carrier,category,coverage,entryType,name,premium,product,quoteRef' && d.entryType === 'direct', `unexpected event fields ${keys}`);
     const raw = JSON.stringify(d);
     assert(!raw.includes('Mary') && !raw.includes(PHONES[name].replace(/\D/g, '').slice(-4)) && !/Ohio/.test(raw), 'personal information in the analytics event');
     const recs = await (await fetch(`${BASE}/__evidence/`)).json();

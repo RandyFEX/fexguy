@@ -1535,6 +1535,11 @@
       "statusCode": 301
     },
     {
+      "source": "/final-expense-insurance-prices/",
+      "destination": "/free-quote/",
+      "statusCode": 301
+    },
+    {
       "source": "/start/",
       "destination": "/free-quote/",
       "statusCode": 301

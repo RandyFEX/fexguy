@@ -1,6 +1,6 @@
 // @ts-check
 // POST /api/quote/ (Quote System v2.2): the phone-verification gate and the
-// consent/verification evidence for /final-expense-insurance-prices/.
+// consent/verification evidence for /free-quote/.
 //
 // Actions (JSON body { action, ... }):
 //   start    first name, mobile number, state, consent choice, quote inputs
@@ -33,7 +33,8 @@ export const MAX_ATTEMPTS = 5;
 const HOUR = 60 * 60 * 1000;
 const DAY = 24 * HOUR;
 export const SMS_LIMITS = { ipHour: 5, ipDay: 15, phoneHour: 4, phoneDay: 6, globalDayDefault: 300 };
-const MAX_BODY = 2048;
+// v5.8: room for the entry fields (article title and URL) in the start request.
+const MAX_BODY = 4096;
 
 export const US_STATES = [
   'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia',
@@ -43,7 +44,10 @@ export const US_STATES = [
   'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
   'West Virginia', 'Wisconsin', 'Wyoming',
 ];
-const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSource', 'utmMedium', 'utmCampaign', 'utmTerm', 'utmContent'];
+const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSource', 'utmMedium', 'utmCampaign', 'utmTerm', 'utmContent',
+  // v5.8: where the funnel visit started (src/scripts/quote-entry.ts).
+  'entryType', 'originTitle', 'originUrl', 'entryGender', 'entryAt'];
+const ENTRY_LABELS = { 'article-sidebar': 'Article sidebar', direct: 'Direct funnel entry', campaign: 'Campaign' };
 /** Intended use (lead information only; never a pricing input). */
 export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
 // v4.5: one "Your Name" field: a first name alone or a full name.
@@ -74,6 +78,22 @@ function parseSource(src) {
     const v = clean(src[key], 300);
     if (v) out[key] = v;
   }
+  if (out.entryType && !Object.hasOwn(ENTRY_LABELS, out.entryType)) delete out.entryType;
+  if (out.entryGender && !['male', 'female'].includes(out.entryGender)) delete out.entryGender;
+  if (out.originUrl && !/^https?:\/\/[^\s]+$/.test(out.originUrl)) delete out.originUrl;
+  return out;
+}
+
+/** v5.8: the visit's entry for Randy's notifications (empty fields left out). @param {Record<string, string> | undefined} src */
+function entryFields(src) {
+  /** @type {Record<string, string>} */
+  const out = {};
+  if (!src) return out;
+  if (src.entryType) out['Entry Location'] = ENTRY_LABELS[/** @type {keyof typeof ENTRY_LABELS} */ (src.entryType)];
+  if (src.originTitle) out['Original Article'] = src.originTitle;
+  if (src.originUrl) out['Original Article URL'] = src.originUrl;
+  if (src.entryGender) out['Entry Gender'] = src.entryGender === 'female' ? 'Female' : 'Male';
+  if (src.entryAt) out['Entry Time'] = src.entryAt;
   return out;
 }
 
@@ -252,6 +272,7 @@ export async function handleQuote(request, env, deps) {
             'Intended Use': record.intendedUse?.label ?? '',
             'Contact Consent': record.consent.given ? `Yes (${record.consent.version})` : 'No',
             ...quoteFields(record.quoteAtSubmission),
+            ...entryFields(record.source),
           }
         : null;
       return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, notify }, { 'Set-Cookie': cookie });
@@ -295,6 +316,7 @@ export async function handleQuote(request, env, deps) {
             'Quote Monthly Premium': `$${priced.monthlyPremium}`,
             'Quote Product Codes': priced.attribution.join(', '),
             ...quoteFields(quote),
+            ...entryFields(record.source),
           }
         : null;
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };

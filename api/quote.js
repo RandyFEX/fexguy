@@ -1,6 +1,6 @@
 // Vercel Function: POST /api/quote/ (Quote System v2.2): phone verification
 // (Twilio Verify), verified sessions, consent/verification evidence and
-// Apply Now records for /final-expense-insurance-prices/. See
+// Apply Now records for /free-quote/. See
 // server/quote/handler.js.
 //
 // Server-side environment variables:

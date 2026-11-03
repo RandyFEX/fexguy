@@ -767,7 +767,7 @@ const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1
 const CAMPAIGN_PAGES = new Set(['/roku/', '/facebook/']);
 // The one approved exception (Randy, Quote System v3.6): the dedicated quote
 // funnel's minimal header shows Secure Form above the number, with no label.
-const NO_LABEL_PAGES = new Set(['/final-expense-insurance-prices/']);
+const NO_LABEL_PAGES = new Set(['/free-quote/']); // the funnel's page since v5.8
 const headerProblems = [];
 let headersChecked = 0;
 if (!HEADER_LABEL || !HEADER_ICON) headerProblems.push('src/config/phones.ts: HEADER_PHONE_LABEL or HEADER_PHONE_ICON_PATH not found');

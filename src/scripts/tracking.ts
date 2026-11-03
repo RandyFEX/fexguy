@@ -215,15 +215,22 @@ const FUNNEL_EVENTS = new Set([
   'quote_pricing_adjust',
   'quote_apply_now',
   'quote_call_click',
+  // v5.8: funnel entry (every load of /free-quote/) and an article sidebar choice.
+  'quote_funnel_entry',
+  'quote_sidebar_select',
 ]);
+const ENTRY_TYPES = new Set(['article-sidebar', 'direct', 'campaign']);
 const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
 
 window.addEventListener('ff:funnel', (e) => {
-  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown }>).detail ?? {};
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown }>).detail ?? {};
   if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
   const params: Record<string, string | number> = {};
   if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
   if (typeof detail.category === 'string' && FUNNEL_CATEGORIES.has(detail.category)) params.price_category = detail.category;
+  // v5.8: where the visit started: the entry type and the article's path (never personal data).
+  if (typeof detail.entryType === 'string' && ENTRY_TYPES.has(detail.entryType)) params.entry_type = detail.entryType;
+  if (typeof detail.entryPath === 'string' && /^\/[A-Za-z0-9._~\-/]{0,200}$/.test(detail.entryPath)) params.entry_path = detail.entryPath;
   // "Call to Get Approved" taps (v3.7): which quote was on the card when the
   // visitor tapped it. A company or plan name, the coverage and premium shown,
   // a random per-visit quote reference and the time; never a name or phone

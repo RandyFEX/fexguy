@@ -57,7 +57,8 @@ is in place; see src/content/README.md for how pages were migrated.
   /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
   every built header: one `data-header-phone` link with that label and icon
   (one exception, Randy, Quote System v3.6: the quote funnel's minimal
-  header on /final-expense-insurance-prices/ shows a lock and "Secure
+  header on /free-quote/ (moved from /final-expense-insurance-prices/ in
+  v5.8) shows a lock and "Secure
   Form" above the icon and number, with no label; HeaderPhone
   `showLabel={false}`; the site header and other headers are unchanged),
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
@@ -1079,8 +1080,8 @@ scope protection wins.
   `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
   embed late; keep it that way). Setting `quoteForm: 'fillout'` restores it
   (then update /privacy-policy/, which names Formspark).
-- Sidebar form: frontmatter `sidebar: true` (pages that had the WordPress
-  sidebar). In-content form: put `<div data-quote-form></div>` on its own line
+- Sidebar: frontmatter `sidebar: true` (pages that had the WordPress
+  sidebar) shows the Get Prices module (v5.8, no form; see /free-quote/). In-content form: put `<div data-quote-form></div>` on its own line
   in the page body. At most one form per page.
 - Tracking (`src/scripts/tracking.ts`): GA4 `G-JMYZE458HQ` and Meta pixel
   `2351342698972751`, loaded directly — no GTM, Stape, server-side tagging,
@@ -1109,7 +1110,31 @@ scope protection wins.
   script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
-- **/free-quote/** (Randy, October 2026): the general life insurance quote
+- **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
+  v5.8): the interactive funnel (below, "Quote funnel") replaced the
+  callback form described in the next item and moved here from
+  /final-expense-insurance-prices/, which 301s to /free-quote/ (query
+  parameters pass through). One implementation: src/pages/free-quote.astro
+  (the migrated title, robots, social tags, JSON-LD and canonical kept;
+  hidden H1 "Request Life Insurance Quote"). The article sidebar's old lead
+  form was replaced by the "Get Prices" module (src/components/lead/
+  QuoteBox.astro, id="quote" so GET MY QUOTE still lands on it): "Who Needs
+  Coverage?" and the funnel's own Male/Female drawings
+  (src/components/quote/GenderChoice.astro, shared with the funnel), each a
+  link to /free-quote/?gender=...&entry=sidebar&origin=<article path> (UTM
+  values carried). The funnel then opens at the age question with that
+  choice made (Back changes it). src/scripts/quote-entry.ts keeps the
+  visit's entry (article sidebar with the article title and URL, the choice
+  and the time; campaign; or direct) in sessionStorage, removes the
+  gender/entry/origin parameters from the address bar, and sends it with
+  the contact submission (lead record `source.entryType`, `originTitle`,
+  `originUrl`, `entryGender`, `entryAt`; Randy's notifications show Entry
+  Location, Original Article, Original Article URL, Entry Gender, Entry
+  Time). Every GA4 quote_* event carries `entry_type` and `entry_path` (the
+  article's path only; nothing personal, nothing to Meta), plus
+  `quote_funnel_entry` and `quote_sidebar_select`. Test:
+  tests/quote/sidebar-entry.browser.mjs (in `npm run test:quote:browser`).
+- **/free-quote/** (Randy, October 2026; superseded by v5.8 above): the general life insurance quote
   page (final expense, term, mortgage protection and other coverage),
   `src/pages/free-quote.astro` (landing layout; the migrated title, robots,
   social tags and JSON-LD unchanged; out of the sitemap, llms.txt and site
@@ -1221,7 +1246,7 @@ scope protection wins.
 - The engine assigns no tier labels itself.
 - **Quote funnel** (Randy, November 2026, Pricing Explorer v1.0 then Quote
   System v2.2; preview branch `claude/pricing-explorer`, PR #79, not merged):
-  /final-expense-insurance-prices/ (`src/pages/final-expense-insurance-prices.astro`,
+  /free-quote/ since v5.8, formerly /final-expense-insurance-prices/ (`src/pages/free-quote.astro`,
   `src/scripts/quote-funnel.ts`, `server/quote/`, `api/quote.js`; see
   server/quote/README.md). One question per screen (sex, age 50-89,
   tobacco, coverage $5,000-$25,000, state as lead information only), first
