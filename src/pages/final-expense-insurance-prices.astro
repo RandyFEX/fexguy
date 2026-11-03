@@ -1,0 +1,312 @@
+---
+// Final Expense Insurance Prices by Age (Pricing Explorer v1.0, Randy,
+// November 2026). The prices come from the server (api/price-explorer.js,
+// server/rates/): this page and its script hold no rate tables, rates or
+// keys. Texas reference pricing. "Apply Now" opens the native lead form in
+// its 'pricing' field set, with the chosen quote in hidden fields.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+import { leadFormHtml } from '@/lib/lead/lead-form';
+import { AGES, COVERAGE } from '../../server/rates/pricing-categories.js';
+
+const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
+const money = (n: number) => `$${n.toLocaleString('en-US')}`;
+const defaults = { age: 65, gender: 'male', tobacco: false, coverage: COVERAGE.default };
+const cards = [
+  { id: 'lowest-preferred', label: 'Lowest Preferred Rate' },
+  { id: 'average-standard', label: 'Average Standard Rate' },
+  { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
+];
+---
+
+<BaseLayout
+  title={pageTitle('Final Expense Insurance Prices by Age')}
+  description="Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use."
+>
+  <div class="px" data-page-type="utility" data-page-reason="Interactive final expense pricing tool." data-price-explorer>
+    <section class="px-hero">
+      <div class="container px-hero__inner">
+        <h1 class="px-hero__title">Final Expense Insurance Prices by Age</h1>
+        <p class="px-hero__intro">Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use.</p>
+      </div>
+    </section>
+
+    <div class="container px-body">
+      <form class="px-controls" data-px-controls aria-label="Your pricing choices" novalidate>
+        <div class="px-field">
+          <label class="px-label" for="px-age">Age</label>
+          <select class="px-select" id="px-age" name="age">
+            {ages.map((a) => <option value={a} selected={a === defaults.age}>{a}</option>)}
+          </select>
+        </div>
+
+        <fieldset class="px-field px-seg">
+          <legend class="px-label">Sex</legend>
+          <div class="px-seg__opts">
+            <label class="px-seg__opt"><input type="radio" name="gender" value="male" checked /><span>Male</span></label>
+            <label class="px-seg__opt"><input type="radio" name="gender" value="female" /><span>Female</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="px-field px-seg">
+          <legend class="px-label">Tobacco</legend>
+          <div class="px-seg__opts">
+            <label class="px-seg__opt"><input type="radio" name="tobacco" value="no" checked /><span>Non-Smoker</span></label>
+            <label class="px-seg__opt"><input type="radio" name="tobacco" value="yes" /><span>Smoker</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="px-field px-field--wide px-seg">
+          <legend class="px-label">Coverage</legend>
+          <div class="px-seg__opts px-seg__opts--coverage">
+            {COVERAGE.presets.map((c) => (
+              <label class="px-seg__opt"><input type="radio" name="coverage" value={c} checked={c === defaults.coverage} /><span>{money(c)}</span></label>
+            ))}
+            <label class="px-seg__opt"><input type="radio" name="coverage" value="other" /><span>Other</span></label>
+          </div>
+          <div class="px-other" data-px-other hidden>
+            <label class="px-label px-label--small" for="px-other">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
+            <div class="px-other__row">
+              <span class="px-other__dollar" aria-hidden="true">$</span>
+              <input class="px-input" id="px-other" name="other" type="text" inputmode="numeric" autocomplete="off" placeholder="12,000" aria-describedby="px-other-error" />
+            </div>
+            <p class="px-error" id="px-other-error" data-px-other-error hidden></p>
+          </div>
+        </fieldset>
+        <p class="px-ref">Texas reference pricing. Monthly premiums.</p>
+      </form>
+
+      <p class="visually-hidden" role="status" aria-live="polite" data-px-live></p>
+
+      <div class="px-cards" data-px-cards>
+        {cards.map((c) => (
+          <article class="px-card" data-px-card={c.id} data-state="loading">
+            <div class="px-card__logo" aria-hidden="true" data-px-logo></div>
+            <h2 class="px-card__label">{c.label}</h2>
+            <p class="px-card__price" data-px-price>
+              <span class="px-card__amount" data-px-amount>&nbsp;</span>
+              <span class="px-card__per">per month</span>
+            </p>
+            <p class="px-card__note" data-px-note>Loading prices…</p>
+            <button class="btn btn--primary px-card__apply" type="button" data-px-apply disabled>Apply Now</button>
+          </article>
+        ))}
+      </div>
+
+      <p class="px-call">Questions? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
+
+      <section class="px-about" aria-labelledby="px-about-title">
+        <h2 id="px-about-title">How these prices work</h2>
+        <ul>
+          <li><strong>Lowest Preferred Rate</strong> means the lowest verified rate among the selected preferred products included in our comparison.</li>
+          <li><strong>Average Standard Rate</strong> is calculated from a defined set of verified standard-rate products.</li>
+          <li><strong>Guaranteed Acceptance Rate</strong> uses a verified guaranteed-issue product that is available for the selected age and coverage amount.</li>
+        </ul>
+        <p>The three categories are pricing comparisons, not guaranteed underwriting outcomes. Texas reference pricing.</p>
+      </section>
+    </div>
+
+    <dialog class="px-dialog" data-px-dialog aria-labelledby="px-dialog-title">
+      <div class="px-dialog__head">
+        <h2 class="px-dialog__title" id="px-dialog-title">Apply Now</h2>
+        <button class="px-dialog__close" type="button" data-px-close aria-label="Close">×</button>
+      </div>
+      <p class="px-dialog__summary" data-px-summary></p>
+      <Fragment set:html={leadFormHtml('inline', 'pricing')} />
+    </dialog>
+  </div>
+</BaseLayout>
+
+<script>
+  import '@/scripts/price-explorer';
+</script>
+
+<style>
+  .px-hero {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    padding-block: var(--space-8) var(--space-6);
+  }
+  .px-hero__title {
+    color: inherit;
+    font-size: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
+    line-height: 1.15;
+    margin: 0 0 var(--space-3);
+  }
+  .px-hero__intro {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 40rem;
+    margin: 0;
+  }
+  .px-body {
+    padding-block: var(--space-6) var(--space-12);
+    max-width: 64rem;
+  }
+
+  /* Controls */
+  .px-controls {
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+    display: grid;
+    gap: var(--space-4);
+    margin-top: calc(-1 * var(--space-8));
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.08);
+  }
+  @media (min-width: 48rem) {
+    .px-controls { grid-template-columns: 9rem 1fr 1fr; padding: var(--space-6); }
+    .px-field--wide, .px-ref { grid-column: 1 / -1; }
+  }
+  .px-field { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .px-label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    margin-bottom: var(--space-2);
+    padding: 0;
+  }
+  .px-label--small { font-size: 1rem; font-weight: 600; }
+  .px-select, .px-input {
+    width: 100%;
+    min-height: 3.25rem;
+    font-size: 1.25rem;
+    padding: 0 var(--space-3);
+    border: 2px solid #8a8f8b;
+    border-radius: var(--radius);
+    background: #fff;
+    color: var(--color-text);
+  }
+  .px-seg__opts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+  .px-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 48rem) { .px-seg__opts--coverage { grid-template-columns: repeat(6, 1fr); } }
+  .px-seg__opt { position: relative; }
+  .px-seg__opt input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .px-seg__opt span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: 0 var(--space-2);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius);
+    background: #fff;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .px-seg__opt input:checked + span { background: var(--color-primary); color: #fff; }
+  .px-seg__opt input:focus-visible + span {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--color-focus-inner);
+  }
+  .px-other { margin-top: var(--space-3); max-width: 18rem; }
+  .px-other__row { display: flex; align-items: center; gap: var(--space-2); }
+  .px-other__dollar { font-size: 1.375rem; font-weight: 700; }
+  .px-error { color: var(--color-error); font-weight: 600; margin: var(--space-2) 0 0; }
+  .px-ref { margin: 0; color: var(--color-text-muted); font-size: 1rem; }
+
+  /* Pricing cards */
+  .px-cards {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+  @media (min-width: 56rem) { .px-cards { grid-template-columns: repeat(3, 1fr); } }
+  .px-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'label logo' 'price price' 'note note' 'apply apply';
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    background: #fff;
+    border: 2px solid var(--color-border);
+    border-top: 6px solid var(--color-primary);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+  }
+  @media (min-width: 56rem) {
+    .px-card { grid-template-columns: 1fr; grid-template-areas: 'logo' 'label' 'price' 'note' 'apply'; text-align: center; padding: var(--space-6) var(--space-4); }
+    .px-card__logo { justify-self: center; }
+  }
+  .px-card__label { grid-area: label; margin: 0; font-size: 1.25rem; line-height: 1.25; color: var(--color-primary); }
+  .px-card__logo {
+    grid-area: logo;
+    width: 6.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    overflow: hidden;
+    border-radius: 0.375rem;
+  }
+  .px-card__logo :global(img) {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: blur(5px) saturate(0.9);
+    opacity: 0.85;
+  }
+  .px-card__logo :global(.px-logo-blank) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+    background: linear-gradient(90deg, #c9d3cf, #9fb3ab 45%, #c9d3cf);
+    filter: blur(4px);
+  }
+  .px-card__price { grid-area: price; margin: var(--space-1) 0 0; line-height: 1; }
+  .px-card__amount { display: block; font-size: 2.75rem; font-weight: 800; color: var(--color-text); letter-spacing: -0.01em; }
+  .px-card__per { display: block; margin-top: var(--space-2); font-size: 1.0625rem; color: var(--color-text-muted); font-weight: 600; }
+  .px-card__note { grid-area: note; margin: 0; min-height: 1.5em; color: var(--color-text-muted); font-size: 1rem; }
+  .px-card__apply { grid-area: apply; width: 100%; min-height: 3.25rem; font-size: 1.1875rem; font-weight: 800; letter-spacing: 0.02em; }
+  .px-card__apply:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }
+  .px-card[data-state='pending'] .px-card__amount,
+  .px-card[data-state='unavailable'] .px-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
+  .px-card[data-state='loading'] .px-card__amount { color: var(--color-border); }
+  .px-card[data-state='pending'] .px-card__per,
+  .px-card[data-state='unavailable'] .px-card__per { display: none; }
+
+  .px-call { margin-top: var(--space-6); font-size: 1.125rem; text-align: center; }
+  .px-call a { font-weight: 800; white-space: nowrap; }
+  .px-about { margin-top: var(--space-8); max-width: var(--prose-max); }
+  .px-about h2 { font-size: 1.375rem; color: var(--color-primary); }
+  .px-about li { margin-bottom: var(--space-2); }
+
+  /* Apply Now dialog */
+  .px-dialog {
+    width: min(32rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 2rem);
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    border: 0;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 40px rgb(0 0 0 / 0.3);
+  }
+  .px-dialog::backdrop { background: rgb(0 0 0 / 0.55); }
+  .px-dialog__head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+  .px-dialog__title { margin: 0; font-size: 1.5rem; color: var(--color-primary); }
+  .px-dialog__close {
+    width: var(--tap-target);
+    height: var(--tap-target);
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-surface);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .px-dialog__summary { font-size: 1.0625rem; font-weight: 600; margin: var(--space-2) 0 var(--space-4); }
+</style>

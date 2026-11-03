@@ -9,6 +9,9 @@
     },
     "api/rate-quote.js": {
       "maxDuration": 10
+    },
+    "api/price-explorer.js": {
+      "maxDuration": 10
     }
   },
   "trailingSlash": true,

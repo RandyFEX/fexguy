@@ -1214,7 +1214,21 @@ scope protection wins.
 - Unverified limits are reported, never invented: Aetna's face limits and
   state availability, and MOO's state availability, carry `verified: false`
   in every result until Randy supplies the carrier documents.
-- The engine assigns no tier labels; it isn't connected to any page yet.
+- The engine assigns no tier labels itself.
+- **Pricing Explorer v1.0** (Randy, November 2026; preview branch
+  `claude/pricing-explorer`, not merged): /final-expense-insurance-prices/
+  (`src/pages/final-expense-insurance-prices.astro`,
+  `src/scripts/price-explorer.ts`). Exact labels Lowest Preferred Rate,
+  Average Standard Rate, Guaranteed Acceptance Rate, defined in
+  `server/rates/pricing-categories.js`: preferred = no verified products yet
+  ("Coming soon"); average = mean of Aetna Standard and MOO Level, only when
+  both are available (never one carrier); guaranteed = Gerber. Texas
+  reference pricing, ages 50-89, $5,000-$25,000. Prices come from the
+  public, same-site, per-IP rate-limited `api/price-explorer.js`
+  (`server/rates/public-pricing.js`), which returns category results with
+  opaque attribution codes (FF-101 Aetna Standard, FF-102 MOO Level, FF-201
+  Gerber), never product ids, rates or keys. Apply Now opens the native lead
+  form's 'pricing' field set (First Name, Phone, hidden Quote fields).
 
 ## Site search (Pagefind, built October 2026)
 

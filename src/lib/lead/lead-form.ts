@@ -17,7 +17,21 @@ export type LeadFormVariant = 'sidebar' | 'inline';
 /** Field sets: 'standard' (every placement) or 'short' (the /facebook/ ad
  * landing page, Randy, October 2026: no Email, and an optional Question or
  * Message instead of the required "What can Randy help you with?"). */
-export type LeadFormFields = 'standard' | 'short';
+export type LeadFormFields = 'standard' | 'short' | 'pricing';
+
+/** Hidden quote fields of the 'pricing' field set (/final-expense-insurance-prices/,
+ * Pricing Explorer v1.0): filled by src/scripts/price-explorer.ts when a
+ * visitor presses a category's Apply Now, so Randy's email shows the quote. */
+export const PRICING_FIELDS = [
+  'Quote Category',
+  'Quote Monthly Premium',
+  'Quote Age',
+  'Quote Sex',
+  'Quote Tobacco',
+  'Quote Coverage',
+  'Quote Reference State',
+  'Quote Product Codes',
+] as const;
 
 /** The 50 US states, as on the Fillout form (no DC or territories). */
 export const US_STATES = [
@@ -79,6 +93,7 @@ export function leadFormHtml(
   endpoint: string = lead.formspark.endpoint,
 ): string {
   const short = fields === 'short';
+  const pricing = fields === 'pricing';
   const { successPath } = lead.formspark;
   const title =
     variant === 'sidebar' ? '<p class="quote-box__title" id="quote-title">Get a Quote</p>' : '';
@@ -95,7 +110,7 @@ export function leadFormHtml(
   return (
     `<div class="quote-box quote-box--${variant} quote-box--native" data-quote-box="${variant}"${region}>` +
     title +
-    `<form class="lead-form${short ? ' lead-form--short' : ''}" id="quote" action="${endpoint}" method="post" data-lead-form${formName}>` +
+    `<form class="lead-form${short ? ' lead-form--short' : ''}${pricing ? ' lead-form--pricing' : ''}" id="quote" action="${endpoint}" method="post" data-lead-form${formName}>` +
     // Without JavaScript the security check can't run, so the form can't be
     // sent: point those visitors to the phone (shown only then).
     `<noscript><p class="lead-form__note">This form needs JavaScript, which is turned off in your browser. Please call Randy at <a href="${lead.phone.href}">${lead.phone.display}</a>.</p></noscript>` +
@@ -105,12 +120,14 @@ export function leadFormHtml(
       'First Name',
       '<input class="lead-form__input" id="lf-first" name="First Name" type="text" autocomplete="given-name" required aria-describedby="lf-first-error">',
     ) +
-    field(
-      'lf-last',
-      'Last Name',
-      '<input class="lead-form__input" id="lf-last" name="Last Name" type="text" autocomplete="family-name" required aria-describedby="lf-last-error">',
-    ) +
-    (short
+    (pricing
+      ? phoneField()
+      : field(
+          'lf-last',
+          'Last Name',
+          '<input class="lead-form__input" id="lf-last" name="Last Name" type="text" autocomplete="family-name" required aria-describedby="lf-last-error">',
+        )) +
+    (short || pricing
       ? ''
       : field(
           'lf-email',
@@ -119,8 +136,10 @@ export function leadFormHtml(
         )) +
     // Standard: Phone, then State on its own row. Short: State | Phone on one
     // row (Randy, V1.4), in that order for keyboard and screen readers too.
-    (short ? stateField(states, false, 'Select') + phoneField() : phoneField() + stateField(states, true)) +
-    (short
+    (pricing ? '' : short ? stateField(states, false, 'Select') + phoneField() : phoneField() + stateField(states, true)) +
+    (pricing
+      ? ''
+      : short
       ? field(
           'lf-help',
           'Question or Message (optional)',
@@ -146,9 +165,10 @@ export function leadFormHtml(
     '</div>' +
     // Where the lead came from (see src/scripts/lead-source.ts).
     LEAD_SOURCE_FIELDS.map((name) => `<input type="hidden" name="${name}" value="">`).join('') +
+    (pricing ? PRICING_FIELDS.map((name) => `<input type="hidden" name="${name}" value="" data-pricing-field>`).join('') : '') +
     // Without JavaScript, Formspark sends the visitor here after submitting.
     `<input type="hidden" name="_redirect" value="${origin}">` +
-    '<button class="btn btn--primary btn--block lead-form__submit" type="submit">REQUEST RATES OR INFO</button>' +
+    `<button class="btn btn--primary btn--block lead-form__submit" type="submit">${pricing ? 'SUBMIT MY REQUEST' : 'REQUEST RATES OR INFO'}</button>` +
     '<p class="lead-form__status" role="status" aria-live="polite" tabindex="-1" data-lead-status></p>' +
     '<p class="lead-form__consent">Submit to give Randy permission to call, text, or email you. Msg &amp; data rates may apply. No purchase required.</p>' +
     `<p class="lead-form__call">Prefer to talk? Call Randy at <a class="lead-form__phone" href="${lead.phone.href}">${lead.phone.display}</a></p>` +
