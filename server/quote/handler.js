@@ -46,7 +46,8 @@ export const US_STATES = [
 const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSource', 'utmMedium', 'utmCampaign', 'utmTerm', 'utmContent'];
 /** Intended use (lead information only; never a pricing input). */
 export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
-const NAME_RE = /^[\p{L}][\p{L}\p{M} .'-]{0,39}$/u;
+// v4.5: one "Your Name" field: a first name alone or a full name.
+const NAME_RE = /^[\p{L}][\p{L}\p{M} .'-]{0,59}$/u;
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
 function json(status, body, headers = {}) {
@@ -115,11 +116,11 @@ export async function handleQuote(request, env, deps) {
 
   switch (body.action) {
     case 'start': {
-      const firstName = clean(body.firstName, 40);
+      const firstName = clean(body.firstName, 60);
       const phone = toE164US(body.phone);
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
-      if (!firstName || !NAME_RE.test(firstName)) return bad('Please enter your first name.');
+      if (!firstName || !NAME_RE.test(firstName)) return bad('Please enter your name.');
       if (!phone) return bad('Please enter a valid 10-digit US mobile number.');
       if (!state) return bad('Please choose your state.');
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
@@ -233,7 +234,7 @@ export async function handleQuote(request, env, deps) {
         ? {
             'Quote Event': 'Verified quote request',
             'Quote Lead ID': leadId,
-            'First Name': record.firstName,
+            Name: record.firstName,
             'Phone Number': displayPhone(record.phone),
             State: record.state,
             'Phone Verified': `Yes (${iso})`,
@@ -275,7 +276,7 @@ export async function handleQuote(request, env, deps) {
         ? {
             'Quote Event': 'Apply Now',
             'Quote Lead ID': v.leadId,
-            'First Name': record.firstName,
+            Name: record.firstName,
             'Phone Number': displayPhone(record.phone),
             State: record.state,
             'Intended Use': record.intendedUse?.label ?? '',
@@ -355,7 +356,7 @@ export async function handleQuote(request, env, deps) {
           ? {
               'Quote Event': 'Health questions answered',
               'Quote Lead ID': v.leadId,
-              'First Name': record.firstName,
+              Name: record.firstName,
               'Phone Number': displayPhone(record.phone),
               'Quote Category': applied.category,
               'Intended Use': record.intendedUse?.label ?? '',

@@ -1282,6 +1282,13 @@ scope protection wins.
   shows only after verification, directly under the adjustment controls
   (above Start New Quote); the Age, Gender, Tobacco and Coverage labels
   are centered over their own controls.
+  v4.5: one "Your Name" field (first name or full name, up to 60
+  characters; stored in `firstName`, "Name" in Randy's notifications) and
+  the mobile number are the only personal inputs (no email); the
+  instruction under the cards reads "Adjust Your Quote Below" (14px below
+  the cards); desktop heights: call 48px, Apply Online Now 40px (flex
+  centered), adjustment controls 40px, timing panels about 26px; phones
+  keep 44px touch targets.
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your

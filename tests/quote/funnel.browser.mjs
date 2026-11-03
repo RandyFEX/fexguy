@@ -30,6 +30,7 @@ const shot = async (page, file, fullPage = false) => {
   if (OUT) await page.screenshot({ path: `${OUT}/${file}`, fullPage });
 };
 const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
+const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
 const TITLES = ['Who Needs Coverage?', 'How Old Are You?', 'Do You Use Tobacco?', 'How Would You Use These Funds?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
@@ -71,7 +72,7 @@ async function minimalLayout(page) {
   assert(!r.label, 'header still shows Speak With a Licensed Agent');
 }
 
-async function walk(page, phone) {
+async function walk(page, phone, who = NAMES[phone === PHONES.mobile ? 'mobile' : 'desktop']) {
   await atStart(page);
   await page.click('[data-pick="gender"][data-value="female"]');
   await page.click('[data-pick="age"][data-value="60"]');
@@ -79,7 +80,7 @@ async function walk(page, phone) {
   await page.click('[data-pick="use"][data-value="cremation"]');
   await page.click('[data-pick="coverage"][data-value="10000"]');
   await page.selectOption('[data-qf-state]', 'Ohio');
-  await page.fill('#qf-first', 'Mary');
+  await page.fill('#qf-first', who);
   await page.fill('#qf-phone', phone);
   await page.click('[data-qf-contact] button[type="submit"]');
 }
@@ -183,6 +184,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(btn[0] === 'See My Instant Quotes' && btn[1] === 'Our Promise: No Spam Calls. No Junk Mail.', JSON.stringify(btn));
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
+    const inputs = await page.$$eval('[data-qf-contact] input:not([type="checkbox"]):not([type="hidden"])', (els) => els.map((e) => [e.id, document.querySelector(`label[for="${e.id}"]`)?.textContent.trim(), e.type]));
+    assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'Your Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
+    assert(!(await page.$('[data-step="7"] input[type="email"], [data-step="7"] [name*="mail" i]')), 'an email field is on the contact screen');
     const sel = '[data-qf-contact] button[type="submit"]';
     const colors = async () => page.$eval(sel, (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color, getComputedStyle(b).filter]);
     await page.hover(sel);
@@ -203,7 +207,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
     assert(/Consent is not required to see prices or to buy\./.test(await page.textContent('.qf-consent')), 'consent text');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
-    await page.fill('#qf-first', 'Mary');
+    await page.fill('#qf-first', NAMES[name]);
     await page.fill('#qf-phone', PHONES[name]);
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(400);
@@ -291,7 +295,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(cards[2].amount === '$51.06', `Gerber benchmark ${cards[2].amount}`);
     assert(await page.isHidden('[data-qf-unlock]'), 'verification panel still shown');
     const intro = await page.textContent('[data-qf-adjust-intro]');
-    assert(intro === 'Adjust your coverage and compare rates below.', intro);
+    assert(intro === 'Adjust Your Quote Below', intro);
+    const gaps = await page.evaluate(() => { const c = document.querySelector('.qf-cards').getBoundingClientRect(), i = document.querySelector('[data-qf-adjust-intro]'), r = i.getBoundingClientRect(), a = document.querySelector('[data-qf-adjust]').getBoundingClientRect(); return { cards: Math.round(r.top - c.bottom), controls: Math.round(a.top - r.bottom), align: getComputedStyle(i).textAlign }; });
+    assert(gaps.cards >= 12 && gaps.cards <= 16 && gaps.controls <= 12 && gaps.align === 'center', `spacing under the cards ${JSON.stringify(gaps)}`);
     const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '.qf-restart-row'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
     const ref = await page.$eval('[data-qf-ref]', (e) => ({ visible: e.getClientRects().length > 0, text: e.textContent.trim() }));
     assert(ref.visible && ref.text === 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.', `rate note after verification ${JSON.stringify(ref)}`);
@@ -351,14 +357,14 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         const ar = apply.getBoundingClientRect();
         const timing = e.querySelector('[data-qf-timing]');
         const tr = timing.getBoundingClientRect();
-        return { href: call.getAttribute('href'), text: call.textContent.replace(/\s+/g, ' ').trim(), icon: !!call.querySelector('svg'), bg: getComputedStyle(call).backgroundColor, applyText: apply.textContent.trim(), applyBg: getComputedStyle(apply).backgroundColor, applyFg: getComputedStyle(apply).color, fg: getComputedStyle(call).color, above: cr.bottom <= ar.top, ch: Math.round(cr.height), ah: Math.round(ar.height), cw: Math.round(cr.width), aw: Math.round(ar.width), th: Math.round(tr.height), tLines: Math.round((tr.height - 10) / parseFloat(getComputedStyle(timing).lineHeight)), tOver: timing.scrollWidth - timing.clientWidth, gap: Math.round(cr.top - tr.bottom) };
+        return { href: call.getAttribute('href'), text: call.textContent.replace(/\s+/g, ' ').trim(), icon: !!call.querySelector('svg'), bg: getComputedStyle(call).backgroundColor, applyText: apply.textContent.trim(), applyBg: getComputedStyle(apply).backgroundColor, applyFg: getComputedStyle(apply).color, applyCentered: (() => { const range = document.createRange(); range.selectNodeContents(apply); const t = range.getBoundingClientRect(); return Math.abs(t.top + t.height / 2 - (ar.top + ar.height / 2)) <= 1.5 && Math.abs(t.left + t.width / 2 - (ar.left + ar.width / 2)) <= 1.5; })(), fg: getComputedStyle(call).color, above: cr.bottom <= ar.top, ch: Math.round(cr.height), ah: Math.round(ar.height), cw: Math.round(cr.width), aw: Math.round(ar.width), th: Math.round(tr.height), tLines: Math.round((tr.height - 10) / parseFloat(getComputedStyle(timing).lineHeight)), tOver: timing.scrollWidth - timing.clientWidth, gap: Math.round(cr.top - tr.bottom) };
       }),
     );
     for (const c of b) {
       assert(c.href === 'tel:8888629456' && c.text === 'Call to Get Approved' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
-      assert(c.applyText === 'Apply Online Now' && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 50 && c.ah >= 40 && c.ah <= 46 && c.ch > c.ah && c.cw === c.aw, `apply button ${JSON.stringify(c)}`);
+      assert(c.applyText === 'Apply Online Now' && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 38 && c.ah <= 40 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
       assert(c.bg === HOME_ORANGE && c.fg === 'rgb(255, 255, 255)', `call colors ${JSON.stringify(c)}`);
-      assert(c.th <= c.ah + 2 && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
+      assert((name === 'desktop' ? c.th >= 25 && c.th <= 28 : c.th <= 30) && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
     }
     assert(!/Apply Now|instant approval|guaranteed approval/i.test(await page.textContent('.qf-cards')), 'old or overpromising wording');
     await page.evaluate(() => {
@@ -401,7 +407,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     if (name === 'desktop') assert(boxes[0].y === boxes[1].y && boxes[1].y === boxes[2].y && boxes[3].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
     const heights = await page.$$eval('.qf-adjust .qf-control', (els) => els.filter((e) => e.offsetParent).map((e) => Math.round(e.getBoundingClientRect().height)));
-    assert(Math.max(...heights) - Math.min(...heights) <= 2, 'heights');
+    assert(Math.max(...heights) - Math.min(...heights) <= 2 && (name === 'desktop' ? Math.min(...heights) >= 38 && Math.max(...heights) <= 41 : Math.min(...heights) >= 44), `control heights ${heights}`);
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.selectOption('#qf-adj-age', '70');
     await page.click('.qf-adjust label:has(input[name="tobacco"][value="no"])');
@@ -459,7 +465,7 @@ await check('evidence: verified leads, consent records, intended use, Apply Now 
   assert(v.length === 2, `${v.length} verified`);
   for (const r of v)
     assert(
-      r.firstName === 'Mary' && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
+      (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
         r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v2-2026-11' &&
         r.applications[0].attribution[0] === 'FF-101' && r.intakes['average-standard'].answers.length === 2 && r.intakes['average-standard'].flag === 'may-not-qualify',
       JSON.stringify(r).slice(0, 300),

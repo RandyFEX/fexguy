@@ -438,3 +438,14 @@ test('Call to Get Approved tap (v3.7): verified session only, server price and o
   assert.equal((await client(PREVIEW).call({ action: 'call-click', category: 'guaranteed-acceptance', quote })).http, 401, 'needs a verified session');
   assert.equal((await c.call({ action: 'call-click', category: 'nope', quote })).http, 400);
 });
+
+test('one "Your Name" field (v4.5): a first name or a full name is accepted and stored as typed; nothing else is required', async () => {
+  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith"]) {
+    const c = client(PREVIEW);
+    const r = await c.call(startBody({ firstName: name }));
+    assert.equal(r.http, 200, name);
+    assert.equal((await c.store.getLead(r.body.lead)).firstName, name);
+  }
+  assert.equal((await client(PREVIEW).call(startBody({ firstName: 'x'.repeat(61) }))).http, 200, 'over-long names are trimmed, not refused');
+  assert.equal((await client(PREVIEW).call(startBody({ firstName: '' }))).http, 400);
+});

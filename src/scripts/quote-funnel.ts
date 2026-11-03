@@ -180,7 +180,7 @@ if (root) {
   });
 
 
-  // Step 6: first name, mobile number and the optional consent box.
+  // Step 7: the visitor's name (first name or full name), mobile number and the optional consent box.
   const contactForm = $<HTMLFormElement>('[data-qf-contact]');
   const firstInput = $<HTMLInputElement>('#qf-first');
   const phoneInput = $<HTMLInputElement>('#qf-phone');
@@ -205,7 +205,7 @@ if (root) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const firstName = firstInput.value.trim();
-    fieldError(firstInput, firstName ? '' : 'Please enter your first name.');
+    fieldError(firstInput, firstName ? '' : 'Please enter your name.');
     fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
     if (!firstName) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
