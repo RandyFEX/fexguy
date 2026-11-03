@@ -10,6 +10,12 @@
 //   session  is this browser verified? (restores the results after a refresh)
 //   apply    Apply Now on a category: server re-prices and records it
 //
+// v6.1: Randy's notifications are sent from this server (notify.js, Resend)
+// when the visitor submits name and mobile (start), on Apply Now and after
+// the health questions. The browser never sends them (no Formspark, no
+// Turnstile). The evidence record is saved first; a failed email is logged
+// as an event and never blocks the visitor or loses the lead.
+//
 // Security: same-site Origin only; strict input whitelists; per-IP,
 // per-phone and global SMS limits (SMS-pumping protection: US numbers only);
 // 5 code attempts per verification; codes expire with Twilio's 10-minute
@@ -25,6 +31,7 @@ import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sig
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
+import { NOTIFY_LIMITS, notifier } from './notify.js';
 
 export const PENDING_MS = 10 * 60 * 1000;
 export const RESEND_COOLDOWN_MS = 30 * 1000;
@@ -107,7 +114,7 @@ const quoteFields = (q) => ({
 
 /**
  * @typedef {ReturnType<typeof import('./store.js').quoteStore>} QuoteStore
- * @typedef {{ store: QuoteStore | null, raw?: { get(key: string): Promise<string | null> } | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, now?: () => number }} Deps
+ * @typedef {{ store: QuoteStore | null, raw?: { get(key: string): Promise<string | null> } | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, emailFetch?: typeof fetch, now?: () => number }} Deps
  * @param {Request} request @param {Record<string, string | undefined>} env @param {Deps} deps
  */
 export async function handleQuote(request, env, deps) {
@@ -137,6 +144,35 @@ export async function handleQuote(request, env, deps) {
   const publicTest = verify.mode === 'public-test';
   // v5.4: the temporary-code instruction goes to the page only in that mode (never with Twilio).
   const temp = publicTest ? { temporaryCodeNote: PUBLIC_TEST_CODE_NOTE } : {};
+  const mail = notifier(env, deps.emailFetch);
+  const notifyDay = Number(env.QUOTE_NOTIFY_DAILY_LIMIT) > 0 ? Number(env.QUOTE_NOTIFY_DAILY_LIMIT) : NOTIFY_LIMITS.globalDayDefault;
+
+  /**
+   * v6.1: one server-side notification (`what` is sent at most once per lead).
+   * Returns false only when Randy should have been told and the email was not
+   * accepted; every outcome is an event on the lead. Never throws.
+   * @param {string} leadId @param {string} what @param {string | null} phoneHash @param {string} subject @param {Record<string, string>} fields
+   */
+  const deliver = async (leadId, what, phoneHash, subject, fields) => {
+    try {
+      if (!(await store.once(leadId, `notify:${what}`))) return true;
+      const over = await store.limit([
+        ...(phoneHash ? [{ key: `nt:ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: NOTIFY_LIMITS.phoneDay, windowMs: DAY }] : []),
+        { key: `nt:all:d:${Math.floor(now / DAY)}`, limit: notifyDay, windowMs: DAY },
+      ]);
+      if (over) {
+        await store.event(leadId, { at: iso, type: 'notify-suppressed', what, reason: 'rate-limit' });
+        return false;
+      }
+      const r = await mail.send(subject, fields);
+      await store.event(leadId, r.ok
+        ? { at: iso, type: 'notify-accepted', what, provider: 'resend', id: r.id }
+        : { at: iso, type: 'notify-failed', what, provider: 'resend', error: r.error });
+      return r.ok;
+    } catch {
+      return false;
+    }
+  };
 
   switch (body.action) {
     case 'start': {
@@ -193,11 +229,31 @@ export async function handleQuote(request, env, deps) {
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
         applications: [],
       };
-      const sent = await verify.start(phone);
+      // v6.1: the lead is saved before anything else can fail.
+      await store.putLead(leadId, record);
+      await store.indexPhone(phoneHash, leadId);
+      const [sent] = await Promise.all([
+        verify.start(phone),
+        // Randy hears about the lead now, before any code is entered (never in test mode).
+        test ? Promise.resolve(true) : deliver(leadId, 'lead', phoneHash, `New quote request: ${firstName} (${state})`, {
+          'Quote Event': 'New quote request',
+          'Quote Lead ID': leadId,
+          'Submitted At': iso,
+          Name: firstName,
+          'Phone Number': displayPhone(phone),
+          State: state,
+          'Intended Use': INTENDED_USES[intendedUse],
+          'Contact Consent': body.consent ? `Yes (${body.consentVersion})` : 'No',
+          ...quoteFields(quote),
+          ...entryFields(record.source),
+          'Landing Page': record.source.landingPage ?? '',
+          'Traffic Source': record.source.trafficSource ?? '',
+          'Phone Verification': publicTest ? 'Temporary access code mode (no SMS sent; not SMS-verified)' : 'Code sent; not yet verified',
+        }),
+      ]);
       record.verification.startSid = sent.ok ? sent.sid : null;
       if (!sent.ok) record.verification.status = 'send-failed';
       await store.putLead(leadId, record);
-      await store.indexPhone(phoneHash, leadId);
       await store.event(leadId, { at: iso, type: sent.ok ? 'sms-sent' : 'sms-send-failed', provider: record.verification.provider, sid: sent.ok ? sent.sid : null, error: sent.ok ? null : sent.error });
       if (!sent.ok) return json(502, { status: 'send-failed', message: 'We could not send a code to that number. Please check it or call 888-862-9456.' });
       await store.putPending(leadId, { phone, phoneHash, attempts: 0, resends: 0, lastSentAt: now }, PENDING_MS);
@@ -260,22 +316,8 @@ export async function handleQuote(request, env, deps) {
       const exp = now + SESSION_MS;
       await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
       const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
-      // One notification per verified lead, never for test-mode leads.
-      const notify = !test && (await store.once(leadId, 'verified'))
-        ? {
-            'Quote Event': publicTest ? 'Quote request (temporary test code)' : 'Verified quote request',
-            'Quote Lead ID': leadId,
-            Name: record.firstName,
-            'Phone Number': displayPhone(record.phone),
-            State: record.state,
-            'Phone Verified': publicTest ? 'No (temporary test code; no SMS sent)' : `Yes (${iso})`,
-            'Intended Use': record.intendedUse?.label ?? '',
-            'Contact Consent': record.consent.given ? `Yes (${record.consent.version})` : 'No',
-            ...quoteFields(record.quoteAtSubmission),
-            ...entryFields(record.source),
-          }
-        : null;
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, notify }, { 'Set-Cookie': cookie });
+      // v6.1: Randy was already notified at contact submission (start).
+      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test }, { 'Set-Cookie': cookie });
     }
 
     case 'session': {
@@ -304,24 +346,22 @@ export async function handleQuote(request, env, deps) {
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
       await store.event(v.leadId, { at: iso, type: 'apply-now', ...application });
-      const notify = record.mode !== 'test' && (await store.once(v.leadId, `apply:${category.id}`))
-        ? {
-            'Quote Event': 'Apply Now',
-            'Quote Lead ID': v.leadId,
-            Name: record.firstName,
-            'Phone Number': displayPhone(record.phone),
-            State: record.state,
-            'Intended Use': record.intendedUse?.label ?? '',
-            'Quote Category': priced.label,
-            'Quote Monthly Premium': `$${priced.monthlyPremium}`,
-            'Quote Product Codes': priced.attribution.join(', '),
-            ...quoteFields(quote),
-            ...entryFields(record.source),
-          }
-        : null;
+      const notified = record.mode === 'test' || (await deliver(v.leadId, `apply:${category.id}`, null, `Apply Now: ${record.firstName} (${priced.label})`, {
+        'Quote Event': 'Apply Now',
+        'Quote Lead ID': v.leadId,
+        Name: record.firstName,
+        'Phone Number': displayPhone(record.phone),
+        State: record.state,
+        'Intended Use': record.intendedUse?.label ?? '',
+        'Quote Category': priced.label,
+        'Quote Monthly Premium': `$${priced.monthlyPremium}`,
+        'Quote Product Codes': priced.attribution.join(', '),
+        ...quoteFields(quote),
+        ...entryFields(record.source),
+        }));
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
       const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
-      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
+      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notified, intake });
     }
 
     // "Call to Get Approved" tap on a revealed card (v3.7): a first-party
@@ -385,19 +425,17 @@ export async function handleQuote(request, env, deps) {
       }
       await store.putLead(v.leadId, record);
       if (intake.status !== 'in-progress') {
-        const notify = record.mode !== 'test' && (await store.once(v.leadId, `intake:${category.id}`))
-          ? {
-              'Quote Event': 'Health questions answered',
-              'Quote Lead ID': v.leadId,
-              Name: record.firstName,
-              'Phone Number': displayPhone(record.phone),
-              'Quote Category': applied.category,
-              'Intended Use': record.intendedUse?.label ?? '',
-              'Health Answers': intake.answers.map((a) => `${a.section} ${a.number}: ${a.answer.toUpperCase()}`).join('; '),
-              'Health Review': intake.flag === 'may-not-qualify' ? 'A YES answer may rule out this plan: review other coverage' : 'No answer ruled out this plan',
-            }
-          : null;
-        return json(200, { status: 'done', reason: intake.status, flag: intake.flag, notify });
+        if (record.mode !== 'test') await deliver(v.leadId, `intake:${category.id}`, null, `Health questions answered: ${record.firstName} (${applied.category})`, {
+          'Quote Event': 'Health questions answered',
+          'Quote Lead ID': v.leadId,
+          Name: record.firstName,
+          'Phone Number': displayPhone(record.phone),
+          'Quote Category': applied.category,
+          'Intended Use': record.intendedUse?.label ?? '',
+          'Health Answers': intake.answers.map((a) => `${a.section} ${a.number}: ${a.answer.toUpperCase()}`).join('; '),
+          'Health Review': intake.flag === 'may-not-qualify' ? 'A YES answer may rule out this plan: review other coverage' : 'No answer ruled out this plan',
+          });
+        return json(200, { status: 'done', reason: intake.status, flag: intake.flag });
       }
       const next = plan.questions[intake.answers.length];
       return json(200, { status: 'question', question: publicQuestion(next, intake.answers.length + 1, plan.questions.length) });

@@ -24,9 +24,21 @@ script is `src/scripts/quote-funnel.ts`. Prices come from the rate engine
 5. `apply` re-prices the chosen category on the server, records it, and the
    page continues to /help/.
 
-Randy is notified through the existing Formspark website form, with a
-Turnstile token, once per verified lead and once per Apply Now category. The
-server decides when. Test mode never notifies.
+Randy's notifications (v6.1) are sent by this server through Resend
+(`notify.js`), never by the browser: the funnel makes no Formspark or
+Cloudflare Turnstile requests. One email per lead when the visitor submits
+name and mobile (`start`, before any code is entered), one per Apply Now
+category and one when a carrier's health questions end. The Redis evidence
+record is saved first and stays the authoritative lead record; every email
+outcome is an event on the lead (`notify-accepted` with Resend's message id,
+`notify-failed` with the error, `notify-suppressed` for the caps below).
+`notify-accepted` means Resend accepted the message, not that it was
+delivered. A failed or unconfigured email never blocks the visitor or the
+prices; `apply` returns `notified: false`, and then /help/ does not count
+the lead as a conversion (unchanged rule). Caps (Redis counters): 6 lead
+emails per phone per day and `QUOTE_NOTIFY_DAILY_LIMIT` (default 300) per
+day overall, on top of the existing per-IP, per-phone and global request
+limits. Test mode never notifies.
 
 ## v2.5 pricing screen and Apply Now intake
 
@@ -76,6 +88,10 @@ server decides when. Test mode never notifies.
 | `KV_REST_API_URL` / `KV_REST_API_TOKEN` | The existing Upstash Redis |
 | `QUOTE_SESSION_SECRET` (optional; else `HEALTH_SEARCH_SECRET`) | Session signing and HMAC hashing (32+ chars) |
 | `QUOTE_SMS_DAILY_LIMIT` (optional, default 300) | Global daily SMS cap |
+| `RESEND_API_KEY` | Resend API key for Randy's lead emails (v6.1); without it no email is sent (logged as `notify-failed: not-configured`) |
+| `QUOTE_NOTIFY_TO` | Recipient address(es), comma-separated |
+| `QUOTE_NOTIFY_FROM` (optional) | Sender on a domain verified in Resend; default Resend's test sender `onboarding@resend.dev`, which only delivers to the Resend account's own address |
+| `QUOTE_NOTIFY_DAILY_LIMIT` (optional, default 300) | Global daily email cap |
 | `QUOTE_VERIFY_MODE=test` (optional, previews only) | Force test mode |
 | `QUOTE_PUBLIC_TEST_CODE=off` (optional, production) | Switch off the temporary public test code (v5.3) |
 

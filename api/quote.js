@@ -11,6 +11,8 @@
 //   KV_REST_API_URL / KV_REST_API_TOKEN                  evidence and sessions
 //   QUOTE_SESSION_SECRET (or HEALTH_SEARCH_SECRET)       session signing, hashing
 //   QUOTE_SMS_DAILY_LIMIT (optional, default 300)        global daily SMS cap
+//   RESEND_API_KEY, QUOTE_NOTIFY_TO, QUOTE_NOTIFY_FROM   Randy's lead emails (v6.1,
+//     server/quote/notify.js); QUOTE_NOTIFY_DAILY_LIMIT (default 300)
 
 import { handleQuote } from '../server/quote/handler.js';
 import { quoteStore } from '../server/quote/store.js';

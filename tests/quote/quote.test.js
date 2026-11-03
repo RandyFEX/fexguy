@@ -37,7 +37,21 @@ function fakeEngine() {
 const engine = fakeEngine();
 
 const SECRET = 'q'.repeat(48);
-const PREVIEW = { VERCEL_ENV: 'preview', QUOTE_SESSION_SECRET: SECRET };
+// v6.1: Randy's notifications go from the server to Resend (a fake here; nothing is sent).
+const MAIL = { RESEND_API_KEY: 're_test_key', QUOTE_NOTIFY_TO: 'leads@example.test' };
+const PREVIEW = { VERCEL_ENV: 'preview', QUOTE_SESSION_SECRET: SECRET, ...MAIL };
+/** Every email the server handed to the fake Resend API, as { subject, fields }. */
+const outbox = [];
+let resendStatus = 200;
+const fakeResend = async (url, init) => {
+  assert.equal(url, 'https://api.resend.com/emails');
+  assert.equal(init.headers.Authorization, 'Bearer re_test_key');
+  const b = JSON.parse(init.body);
+  if (resendStatus !== 200) return new Response('{"message":"fail"}', { status: resendStatus });
+  outbox.push({ to: b.to, from: b.from, subject: b.subject, fields: Object.fromEntries(b.text.split('\n').map((l) => [l.slice(0, l.indexOf(': ')), l.slice(l.indexOf(': ') + 2)])) });
+  return new Response(JSON.stringify({ id: `em_${outbox.length}` }), { status: 200 });
+};
+const mailsFor = (leadId) => outbox.filter((m) => m.fields['Quote Lead ID'] === leadId);
 const TWILIO = { ...PREVIEW, TWILIO_ACCOUNT_SID: `AC${'1'.repeat(32)}`, TWILIO_AUTH_TOKEN: 'tok', TWILIO_VERIFY_SERVICE_SID: `VA${'2'.repeat(32)}` };
 const ORIGIN = 'https://fexguy-test-final-expense-guys-projects.vercel.app';
 let ipCounter = 0;
@@ -55,10 +69,10 @@ function fakeTwilio() {
   return { calls, fetchImpl };
 }
 
-function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `visit${String(++ipCounter).padStart(12, '0')}` } = {}) {
+function client(env, { fetchImpl, emailFetch = fakeResend, ip = `10.0.0.${++ipCounter}`, now, visit = `visit${String(++ipCounter).padStart(12, '0')}` } = {}) {
   let cookie = '';
   const store = quoteStore(redis.store, env);
-  const deps = { store, getEngine: async () => ({ engine }), fetchImpl, now };
+  const deps = { store, getEngine: async () => ({ engine }), fetchImpl, emailFetch, now };
   const call = async (body, { origin = ORIGIN, withCookie = true } = {}) => {
     const res = await handleQuote(new Request('https://x.test/api/quote/', {
       method: 'POST',
@@ -114,7 +128,7 @@ test('production without Twilio and with the public test code switched off refus
 });
 
 test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, never marks the phone SMS-verified, real lead', async () => {
-  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, ...MAIL };
   const PO = { origin: 'https://funeralfunds.com' };
   const c = client(PROD);
   const prodPrice = async (cl) => {
@@ -126,14 +140,18 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   assert.equal(start.http, 200);
   assert.equal(start.body.status, 'sent');
   assert.equal(start.body.testMode, false);
+  // v6.1: Randy is emailed at contact submission, before any code is entered.
+  assert.equal(mailsFor(start.body.lead).length, 1);
+  assert.equal(mailsFor(start.body.lead)[0].fields['Phone Verification'], 'Temporary access code mode (no SMS sent; not SMS-verified)');
+  assert.equal(mailsFor(start.body.lead)[0].fields['Quote Event'], 'New quote request');
   assert.equal(await prodPrice(c), 401, 'no prices before the code');
   const wrong = await c.call({ action: 'check', lead: start.body.lead, code: '654321' }, PO);
   assert.equal(wrong.body.status, 'wrong-code');
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.testMode, false);
-  assert.equal(ok.body.notify['Phone Verified'], 'No (temporary test code; no SMS sent)');
-  assert.equal(ok.body.notify['Quote Event'], 'Quote request (temporary test code)');
+  assert.equal('notify' in ok.body, false, 'nothing for the browser to send');
+  assert.equal(mailsFor(start.body.lead).length, 1, 'the code adds no second email');
   assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
   const rec = await c.store.getLead(start.body.lead);
   assert.equal(rec.mode, 'public-test');
@@ -185,9 +203,18 @@ test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', asy
   assert.equal(ok.body.status, 'verified');
   assert.equal(tw.calls.at(-1).url.endsWith('/VerificationCheck'), true);
   assert.deepEqual(tw.calls.at(-1).form, { To: '+12148675309', Code: '654321' });
-  // One notification for the verified lead, with the quote and consent, never twice.
-  assert.equal(ok.body.notify['Quote Event'], 'Verified quote request');
-  assert.equal(ok.body.notify['Contact Consent'], `Yes (${CONSENT_VERSION})`);
+  // One notification per lead (sent at start), with the quote and consent, never twice.
+  const mails = mailsFor(start.body.lead);
+  assert.equal(mails.length, 1);
+  assert.deepEqual(mails[0].to, ['leads@example.test']);
+  assert.equal(mails[0].subject, 'New quote request: Mary (Ohio)');
+  assert.equal(mails[0].fields['Contact Consent'], `Yes (${CONSENT_VERSION})`);
+  assert.equal(mails[0].fields['Phone Number'], '(214) 867-5309');
+  assert.equal(mails[0].fields['Quote Coverage'], '$10,000');
+  assert.equal(mails[0].fields['Quote Age'], '70');
+  assert.equal(mails[0].fields['Quote Sex'], 'Female');
+  assert.ok(!Number.isNaN(Date.parse(mails[0].fields['Submitted At'])));
+  assert.equal(mails[0].fields['Phone Verification'], 'Code sent; not yet verified');
   const again = await c.call({ action: 'session' });
   assert.equal(again.body.status, 'verified');
 });
@@ -234,7 +261,8 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   await c.call({ action: 'check', lead: id, code: TEST_CODE });
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
-  assert.equal(apply.body.notify, null, 'test mode never notifies');
+  assert.equal(mailsFor(id).length, 0, 'test mode never notifies');
+  assert.equal(apply.body.notified, true);
   // A forged price in the request is ignored: the server re-prices.
   const r = await c.store.getLead(id);
   assert.equal(r.mode, 'test');
@@ -474,12 +502,11 @@ test('intended use is required, stored with the lead, in the notifications, Appl
   assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
 });
 
-test('intended use reaches the Formspark notification (real Twilio mode)', async () => {
+test('intended use reaches Randy\'s notification (real Twilio mode)', async () => {
   const tw = fakeTwilio();
   const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
   const start = await c.call(startBody({ phone: '214-867-5390', intendedUse: 'other' }));
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
-  assert.equal(ok.body.notify['Intended Use'], 'Other Expenses');
+  assert.equal(mailsFor(start.body.lead)[0].fields['Intended Use'], 'Other Expenses');
 });
 
 test('Call to Get Approved tap (v3.7): verified session only, server price and official product name recorded, no completed call claimed', async () => {
@@ -514,16 +541,19 @@ test('v5.8: the article-sidebar entry is stored with the lead and appears in Ran
   const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
   const source = { page: 'https://funeralfunds.com/free-quote/', utmSource: 'newsletter', entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'female', entryAt: '2026-11-03T22:00:00.000Z' };
   const start = await c.call(startBody({ source }));
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
-  assert.equal(ok.body.notify['Entry Location'], 'Article sidebar');
-  assert.equal(ok.body.notify['Original Article'], 'Cancer Burial Insurance');
-  assert.equal(ok.body.notify['Original Article URL'], 'https://funeralfunds.com/burial-insurance/cancer/');
-  assert.equal(ok.body.notify['Entry Gender'], 'Female');
-  assert.equal(ok.body.notify['Entry Time'], '2026-11-03T22:00:00.000Z');
+  const m = mailsFor(start.body.lead)[0].fields;
+  assert.equal(m['Entry Location'], 'Article sidebar');
+  assert.equal(m['Original Article'], 'Cancer Burial Insurance');
+  assert.equal(m['Original Article URL'], 'https://funeralfunds.com/burial-insurance/cancer/');
+  assert.equal(m['Entry Gender'], 'Female');
+  assert.equal(m['Entry Time'], '2026-11-03T22:00:00.000Z');
+  await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   const rec = await c.store.getLead(start.body.lead);
   assert.deepEqual({ ...rec.source }, source);
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
-  assert.equal(apply.body.notify['Original Article'], 'Cancer Burial Insurance');
+  assert.equal(apply.body.notified, true);
+  const applyMail = mailsFor(start.body.lead).find((x) => x.fields['Quote Event'] === 'Apply Now');
+  assert.equal(applyMail.fields['Original Article'], 'Cancer Burial Insurance');
   // Unknown entry types, genders and non-URL origins are dropped, never stored.
   const bad = await client(TWILIO, { fetchImpl: tw.fetchImpl }).call(startBody({ source: { entryType: 'popup', entryGender: 'x', originUrl: 'javascript:alert(1)', originTitle: 'T' } }));
   const badRec = await c.store.getLead(bad.body.lead);
@@ -531,5 +561,49 @@ test('v5.8: the article-sidebar entry is stored with the lead and appears in Ran
   // A direct entry is labelled as one.
   const d = client(TWILIO, { fetchImpl: tw.fetchImpl });
   const ds = await d.call(startBody({ source: { entryType: 'direct', entryAt: '2026-11-03T22:00:00.000Z' } }));
-  assert.equal((await d.call({ action: 'check', lead: ds.body.lead, code: '654321' })).body.notify['Entry Location'], 'Direct funnel entry');
+  assert.equal(mailsFor(ds.body.lead)[0].fields['Entry Location'], 'Direct funnel entry');
+});
+
+test('v6.1: a failed or unconfigured email never loses the lead or blocks the prices', async () => {
+  const tw = fakeTwilio();
+  for (const [label, env, status] of [['Resend error', TWILIO, 500], ['not configured', { ...TWILIO, RESEND_API_KEY: '' }, 200]]) {
+    resendStatus = status;
+    const c = client(env, { fetchImpl: tw.fetchImpl });
+    const start = await c.call(startBody());
+    resendStatus = 200;
+    assert.equal(start.http, 200, label);
+    assert.equal(mailsFor(start.body.lead).length, 0, label);
+    const rec = await c.store.getLead(start.body.lead);
+    assert.ok(rec && rec.firstName === 'Mary', `${label}: lead saved`);
+    const ev = (await c.store.events(start.body.lead)).find((e) => e.type === 'notify-failed');
+    assert.equal(ev.error, status === 500 ? 'http-500' : 'not-configured', label);
+    assert.equal((await c.call({ action: 'check', lead: start.body.lead, code: '654321' })).body.status, 'verified', label);
+    assert.equal((await c.price()).http, 200, `${label}: prices still shown`);
+    resendStatus = status;
+    const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+    resendStatus = 200;
+    assert.equal(apply.body.status, 'ok', label);
+    assert.equal(apply.body.notified, false, `${label}: /help/ will not count an un-notified lead`);
+  }
+  // A network failure (thrown fetch) is caught the same way.
+  const c = client(TWILIO, { fetchImpl: tw.fetchImpl, emailFetch: async () => { throw new TypeError('fetch failed'); } });
+  const start = await c.call(startBody());
+  assert.equal(start.http, 200);
+  assert.equal((await c.store.events(start.body.lead)).find((e) => e.type === 'notify-failed').error, 'network-error');
+});
+
+test('v6.1: email abuse caps (global daily limit) suppress emails, never leads; accepted sends are logged', async () => {
+  const tw = fakeTwilio();
+  const day = Date.UTC(2031, 0, 5, 12);
+  const env = { ...TWILIO, QUOTE_NOTIFY_DAILY_LIMIT: '1' };
+  const a = client(env, { fetchImpl: tw.fetchImpl, now: () => day });
+  const first = await a.call(startBody());
+  assert.equal(mailsFor(first.body.lead).length, 1);
+  assert.equal((await a.store.events(first.body.lead)).find((e) => e.type === 'notify-accepted').provider, 'resend');
+  const b = client(env, { fetchImpl: tw.fetchImpl, now: () => day });
+  const second = await b.call(startBody());
+  assert.equal(second.http, 200);
+  assert.equal(mailsFor(second.body.lead).length, 0);
+  assert.ok(await b.store.getLead(second.body.lead));
+  assert.equal((await b.store.events(second.body.lead)).find((e) => e.type === 'notify-suppressed').reason, 'rate-limit');
 });

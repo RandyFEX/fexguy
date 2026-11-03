@@ -1395,6 +1395,18 @@ scope protection wins.
   (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
   events (tracking.ts), no personal data, nothing to Meta.
+  v6.1 (Randy, November 2026): the funnel uses no Formspark and no
+  Cloudflare Turnstile (never add them back to it; the site's other forms
+  keep both). Randy's notifications are sent by the server through Resend
+  (server/quote/notify.js; RESEND_API_KEY, QUOTE_NOTIFY_TO, optional
+  QUOTE_NOTIFY_FROM and QUOTE_NOTIFY_DAILY_LIMIT, server-side only): one
+  email when name and mobile are submitted (before any code), one per Apply
+  Now category, one when the health questions end. The Redis evidence
+  record is saved first and is authoritative; email outcomes are lead
+  events (notify-accepted/-failed/-suppressed; accepted is not delivered);
+  a failed email never blocks the visitor. Caps: 6 lead emails per phone
+  per day, 300 per day overall (Redis). The browser tests fail on any
+  Formspark or Turnstile request from the funnel.
 
 ## Site search (Pagefind, built October 2026)
 
