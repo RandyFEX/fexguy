@@ -20,7 +20,7 @@ import { turnstileFor } from '@/scripts/turnstile';
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
-type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[] };
+type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[]; carriers?: ({ carrier: string; plan: string } | null)[] };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
@@ -31,9 +31,31 @@ const LOGOS: Record<string, string> = { 'FF-102': '/wp-content/uploads/2018/05/M
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const track = (name: string, extra: Record<string, unknown> = {}) => window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...extra } }));
 
+// Visit-scoped verification (v2.7): one random visit id per browser tab,
+// in sessionStorage (gone when the tab closes; a new tab gets a new one). The
+// server only treats a session as verified for the visit it was verified in,
+// so an earlier visit never skips the questions or unlocks prices.
+const VISIT_KEY = 'ff:quote-visit';
+let memoryVisit = '';
+const newVisitId = () => (crypto.randomUUID?.() ?? `${Date.now()}${Math.random()}`).replace(/[^A-Za-z0-9]/g, '').slice(0, 32).padEnd(16, '0');
+function visitId(fresh = false) {
+  try {
+    let v = fresh ? '' : sessionStorage.getItem(VISIT_KEY) ?? '';
+    if (!/^[A-Za-z0-9_-]{16,64}$/.test(v)) {
+      v = newVisitId();
+      sessionStorage.setItem(VISIT_KEY, v);
+    }
+    return v;
+  } catch {
+    if (fresh || !memoryVisit) memoryVisit = newVisitId();
+    return memoryVisit;
+  }
+}
+const jsonHeaders = () => ({ 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visitId() });
+
 async function api(body: Record<string, unknown>) {
   try {
-    const res = await fetch('/api/quote/', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(body), credentials: 'same-origin' });
+    const res = await fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify(body), credentials: 'same-origin' });
     return { http: res.status, body: (await res.json().catch(() => ({}))) as Record<string, any> };
   } catch {
     return { http: 0, body: {} as Record<string, any> };
@@ -322,8 +344,10 @@ if (root) {
   let seq = 0;
   let firstView = true;
 
-  // Safe stand-ins for the blurred, locked cards: never real prices.
+  // Safe stand-ins for the blurred, locked cards: never real prices or carriers.
   const STAND_INS = ['$38.47', '$52.19', '$71.36'];
+  const NAME_STAND_INS = ['Insurance Company Name', 'Life Insurance Company', 'Insurance Company Plan'];
+  const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   function lockCards() {
     unlocked = false;
     pricing.dataset.locked = 'true';
@@ -336,6 +360,14 @@ if (root) {
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+      const carrier = el.querySelector<HTMLElement>('.qf-card__carrier')!;
+      carrier.textContent = NAME_STAND_INS[i - 1];
+      carrier.classList.add('qf-blur');
+      carrier.setAttribute('aria-hidden', 'true');
+      el.querySelector('.qf-card__label')!.textContent = DEFAULT_LABELS[i - 1];
+      const blank = document.createElement('span');
+      blank.className = 'qf-logo-blank';
+      el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(blank);
     }
   }
 
@@ -376,19 +408,28 @@ if (root) {
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
     el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = state !== 'ok';
     if (state === 'loading') return;
-    const ids = cat?.attribution?.length ? cat.attribution : [''];
+    // Verified: everything is shown, nothing blurred.
+    if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
+    const names = (cat?.carriers ?? []).filter(Boolean) as { carrier: string; plan: string }[];
+    const carrier = el.querySelector<HTMLElement>('.qf-card__carrier')!;
+    carrier.classList.remove('qf-blur');
+    carrier.removeAttribute('aria-hidden');
+    carrier.textContent = names.map((n) => `${n.carrier} ${n.plan}`).join(' / ');
+    const ids = cat?.attribution ?? [];
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
-      ...ids.map((id) => {
+      ...ids.map((id, k) => {
         if (LOGOS[id]) {
           const img = new Image();
           img.src = LOGOS[id];
-          img.alt = '';
+          img.alt = names[k]?.carrier ?? '';
           img.decoding = 'async';
           return img;
         }
-        const s = document.createElement('span');
-        s.className = 'qf-logo-blank';
-        return s;
+        // No logo file yet: the company name as a simple wordmark.
+        const w = document.createElement('span');
+        w.className = 'qf-logo-name';
+        w.textContent = names[k]?.carrier ?? '';
+        return w;
       }),
     );
   }
@@ -411,7 +452,7 @@ if (root) {
     if (hit) return render(quote, hit);
     const mine = ++seq;
     try {
-      const res = await fetch('/api/price-explorer/', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: k, credentials: 'same-origin' });
+      const res = await fetch('/api/price-explorer/', { method: 'POST', headers: jsonHeaders(), body: k, credentials: 'same-origin' });
       const body = await res.json().catch(() => ({}));
       if (mine !== seq) return;
       if (res.status === 401) {
@@ -559,7 +600,36 @@ if (root) {
     });
   }
 
-  // Start: a verified session goes straight to the live prices.
+  // Start New Quote: end this visit's session (the lead's records are kept),
+  // clear the answers and return to the first question with a new visit id.
+  root.querySelectorAll<HTMLButtonElement>('[data-qf-restart]').forEach((btn) =>
+    btn.addEventListener('click', async () => {
+      await api({ action: 'end-session' });
+      visitId(true);
+      for (const k of Object.keys(answers)) delete (answers as Record<string, unknown>)[k];
+      try {
+        sessionStorage.removeItem(STEPS_KEY);
+      } catch {}
+      contactForm.reset();
+      consentBox.checked = false;
+      unlockPhone.value = '';
+      codeInput.value = '';
+      sendForm.hidden = false;
+      verifyForm.hidden = true;
+      testBanner.hidden = true;
+      cache.clear();
+      shown = null;
+      firstView = true;
+      leadId = '';
+      lockCards();
+      root!.querySelectorAll('[aria-pressed]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+      stateSelect.value = '';
+      show(1);
+    }),
+  );
+
+  // Start: only this tab's own verified visit returns to the live prices;
+  // any other (new tab, new visit) starts at the first question.
   (async () => {
     const { http, body } = await api({ action: 'session' });
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);

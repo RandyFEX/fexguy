@@ -17,7 +17,7 @@ const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min 
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const cards = [
   { id: 'lowest-preferred', label: 'Lowest Preferred Rate' },
-  { id: 'average-standard', label: 'Average Standard Rate' },
+  { id: 'average-standard', label: 'Standard Rate' },
   { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
 ];
 const TOTAL = 7;
@@ -206,6 +206,7 @@ const TOTAL = 7;
           </div>
           <p class="qf-ref">Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
+          <p class="qf-restart-row"><button class="qf-link" type="button" data-qf-restart>Start New Quote</button></p>
 
           <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
             <h3 class="qf-unlock__title" id="qf-unlock-title">Unlock Your Insurance Prices</h3>
@@ -263,7 +264,7 @@ const TOTAL = 7;
         <h2 id="qf-about-title">How these prices work</h2>
         <ul>
           <li><strong>Lowest Preferred Rate</strong> means the lowest verified rate among the selected preferred products included in our comparison.</li>
-          <li><strong>Average Standard Rate</strong> is calculated from a defined set of verified standard-rate products.</li>
+          <li><strong>Standard Rate</strong> is the verified standard-rate monthly premium in our comparison.</li>
           <li><strong>Guaranteed Acceptance Rate</strong> uses a verified guaranteed-issue product that is available for the selected age and coverage amount.</li>
         </ul>
         <p>The three categories are pricing comparisons, not guaranteed underwriting outcomes. Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
@@ -415,7 +416,10 @@ const TOTAL = 7;
   }
   .qf-card__label { grid-area: label; margin: 0; font-size: 1.25rem; line-height: 1.25; color: var(--color-primary); }
   .qf-card__logo { grid-area: logo; width: 6.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.375rem; overflow: hidden; border-radius: 0.375rem; }
-  .qf-card__logo :global(img) { max-width: 100%; max-height: 100%; object-fit: contain; filter: blur(5px) saturate(0.9); opacity: 0.85; }
+  .qf-card__logo :global(img) { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .qf-card__logo :global(.qf-logo-name) { font-weight: 800; font-size: 1rem; line-height: 1.1; color: var(--color-primary); text-align: right; }
+  @media (min-width: 56rem) { .qf-card__logo :global(.qf-logo-name) { text-align: center; } }
+  .qf-restart-row { margin: var(--space-2) 0 0; text-align: center; }
   .qf-card__logo :global(.qf-logo-blank) { width: 100%; height: 100%; border-radius: 0.375rem; background: linear-gradient(90deg, #c9d3cf, #9fb3ab 45%, #c9d3cf); filter: blur(4px); }
   .qf-card__price { grid-area: price; margin: var(--space-1) 0 0; line-height: 1; }
   .qf-card__amount { display: block; font-size: 2.75rem; font-weight: 800; color: var(--color-text); }

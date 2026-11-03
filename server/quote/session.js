@@ -2,14 +2,33 @@
 // Verified-session tokens for the quote funnel. Issued only by the server
 // after Twilio (or Preview test mode) approves the code; carried in an
 // HttpOnly, Secure, SameSite=Strict cookie the page's scripts can't read.
-// A token is valid only when its HMAC signature checks, it hasn't expired AND
+// A token is valid only when its HMAC signature checks, it hasn't expired,
 // its session record still exists in the store (so a token can't be forged,
-// replayed after expiry, or reused for another lead).
+// replayed after expiry, or reused for another lead) AND the request carries
+// the same visit id the session was verified for (Quote System v2.7).
+//
+// Visit-scoped sessions (v2.7): the page keeps a random visit id in
+// sessionStorage (one per browser tab, gone when the tab closes) and sends it
+// as the x-quote-visit header. The server stores only its hash in the
+// session record and requires a match on every use, so a new tab or a new
+// visit is never verified by an earlier visit's cookie. The cookie itself is
+// a browser-session cookie (no Max-Age) and the server record expires after
+// SESSION_MS even if the tab stays open.
 
-import { createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
+import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 
 export const COOKIE = 'ff_qs';
-export const SESSION_MS = 24 * 60 * 60 * 1000;
+export const SESSION_MS = 12 * 60 * 60 * 1000;
+export const VISIT_HEADER = 'x-quote-visit';
+const VISIT_RE = /^[A-Za-z0-9_-]{16,64}$/;
+
+/** The request's visit id, or null. @param {Request | { headers: Headers }} request */
+export const visitOf = (request) => {
+  const v = request.headers.get(VISIT_HEADER) ?? '';
+  return VISIT_RE.test(v) ? v : null;
+};
+/** Only a hash of the visit id is stored. @param {string} visit */
+export const visitHash = (visit) => createHash('sha256').update(`ff-quote-visit:${visit}`).digest('hex');
 
 /** The signing key: QUOTE_SESSION_SECRET, else HEALTH_SEARCH_SECRET (domain-separated). @param {Record<string, string | undefined>} env */
 export function sessionKey(env) {
@@ -53,9 +72,8 @@ export function readCookie(request) {
   return null;
 }
 
-/** @param {string} token @param {number} maxAgeMs */
-export const setCookie = (token, maxAgeMs) =>
-  `${COOKIE}=${token}; Path=/api/; Max-Age=${Math.floor(maxAgeMs / 1000)}; HttpOnly; Secure; SameSite=Strict`;
+/** A browser-session cookie (no Max-Age): it ends with the browser session. @param {string} token */
+export const setCookie = (token) => `${COOKIE}=${token}; Path=/api/; HttpOnly; Secure; SameSite=Strict`;
 export const clearCookie = () => `${COOKIE}=; Path=/api/; Max-Age=0; HttpOnly; Secure; SameSite=Strict`;
 
 /**
@@ -70,5 +88,7 @@ export async function verifiedLead(request, env, store, now = Date.now()) {
   if (!claims) return null;
   const s = await store.getSession(claims.sid);
   if (!s || s.lid !== claims.lid) return null;
+  const visit = visitOf(request);
+  if (!visit || !s.visit || s.visit !== visitHash(visit)) return null;
   return { leadId: claims.lid, sid: claims.sid, exp: claims.exp };
 }

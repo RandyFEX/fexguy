@@ -48,6 +48,24 @@ server decides when. Test mode never notifies.
   questions; Mutual of Omaha has no question set in the database yet, so the
   visitor continues to agent assistance.
 
+## v2.7 visit-scoped sessions and full reveal
+
+- Every new visit or tab starts at the first question. The page keeps a
+  random visit id in sessionStorage (per tab, gone when the tab closes) and
+  sends it as `x-quote-visit`. The session record stores its hash, and
+  `verifiedLead` requires a match, so an earlier visit's cookie never
+  verifies a new tab or visit. The cookie is a browser-session cookie; the
+  server record expires after 12 hours.
+- A reload in the same tab keeps the verified prices and selections.
+- Start New Quote (`end-session`) removes the session record and clears the
+  cookie. The lead, its consent record and events are kept, and a
+  `quote-restarted` event is added. Each new request is a new lead with its
+  own consent choice (never carried forward); the CRM handles duplicates.
+- With one verified standard product (Aetna Standard) the card is "Standard
+  Rate" with its own premium. After verification all blurring is removed:
+  prices, carrier names (`CARRIER_DISPLAY`, only in verified pricing
+  responses) and logos. Products without a logo file show the company name.
+
 ## Environment variables (server-side only)
 
 | Variable | Purpose |

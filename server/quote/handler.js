@@ -14,14 +14,14 @@
 // per-phone and global SMS limits (SMS-pumping protection: US numbers only);
 // 5 code attempts per verification; codes expire with Twilio's 10-minute
 // window (pending state expires at 10 minutes too); sessions are signed,
-// HttpOnly, 24 hours, and checked against the store on every use. Personal
+// HttpOnly, visit-scoped (12 hours max), and checked against the store on every use. Personal
 // data never goes into logs, URLs or analytics.
 
 import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_VERSIONS, VERIFY_NOTICE_VERSIONS } from './consent.js';
 import { displayPhone, maskPhone, toE164US } from './phone.js';
 import { verifyClient } from './twilio.js';
-import { SESSION_MS, newSid, sessionKey, setCookie, sign, verifiedLead } from './session.js';
+import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
@@ -196,6 +196,9 @@ export async function handleQuote(request, env, deps) {
       const leadId = typeof body.lead === 'string' && /^[0-9a-f-]{36}$/.test(body.lead) ? body.lead : null;
       const code = typeof body.code === 'string' && /^\d{6}$/.test(body.code) ? body.code : null;
       if (!code) return bad('Enter the 6-digit code from the text message.');
+      // The session will belong to this visit (tab) only.
+      const visit = visitOf(request);
+      if (!visit) return bad('Please reload the page and try again.');
       const pending = leadId ? await store.getPending(leadId) : null;
       if (!leadId || !pending) return json(410, { status: 'expired', message: 'This code has expired. Please ask for a new code.' });
       if (pending.attempts >= MAX_ATTEMPTS) return json(429, { status: 'too-many-attempts', message: 'Too many incorrect codes. Please ask for a new code.' });
@@ -218,8 +221,8 @@ export async function handleQuote(request, env, deps) {
 
       const sid = newSid();
       const exp = now + SESSION_MS;
-      await store.putSession(sid, { lid: leadId, createdAt: iso }, SESSION_MS);
-      const cookie = setCookie(sign(key, { sid, lid: leadId, exp }), SESSION_MS);
+      await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
+      const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
       // One notification per verified lead, never for test-mode leads.
       const notify = !test && (await store.once(leadId, 'verified'))
         ? {
@@ -257,7 +260,7 @@ export async function handleQuote(request, env, deps) {
       if (!priced || priced.status !== 'ok') return json(409, { status: 'unavailable', message: 'This price is not available for these choices.' });
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
-      const application = { at: iso, category: category.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
+      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
       record.applications = [...(record.applications ?? []), application];
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
@@ -269,7 +272,7 @@ export async function handleQuote(request, env, deps) {
             'First Name': record.firstName,
             'Phone Number': displayPhone(record.phone),
             State: record.state,
-            'Quote Category': category.label,
+            'Quote Category': priced.label,
             'Quote Monthly Premium': `$${priced.monthlyPremium}`,
             'Quote Product Codes': priced.attribution.join(', '),
             ...quoteFields(quote),
@@ -277,7 +280,7 @@ export async function handleQuote(request, env, deps) {
         : null;
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
       const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
-      return json(200, { status: 'ok', category: category.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
+      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
     }
 
     // Carrier-specific health questions, one at a time, after Apply Now.
@@ -289,7 +292,7 @@ export async function handleQuote(request, env, deps) {
       if (!category) return bad();
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
-      const applied = [...(record.applications ?? [])].reverse().find((a) => a.category === category.label);
+      const applied = [...(record.applications ?? [])].reverse().find((a) => a.categoryId === category.id || a.category === category.label);
       if (!applied) return json(409, { status: 'apply-first' });
       const code = applied.attribution?.[0] ?? '';
       const plan = deps.raw ? await intakePlan(deps.raw, env, code) : { mode: 'none', reason: 'no-question-set', carrierId: null };
@@ -331,6 +334,20 @@ export async function handleQuote(request, env, deps) {
       }
       const next = plan.questions[intake.answers.length];
       return json(200, { status: 'question', question: publicQuestion(next, intake.answers.length + 1, plan.questions.length) });
+    }
+
+    // Start New Quote: end this visit's verified session. The lead's
+    // evidence and events are kept; only the session record is removed.
+    case 'end-session': {
+      const claims = unsign(key, readCookie(request), now);
+      if (claims) {
+        const s = await store.getSession(claims.sid);
+        if (s && s.lid === claims.lid) {
+          await store.dropSession(claims.sid);
+          await store.event(claims.lid, { at: iso, type: 'quote-restarted' });
+        }
+      }
+      return json(200, { status: 'ended' }, { 'Set-Cookie': clearCookie() });
     }
 
     default:

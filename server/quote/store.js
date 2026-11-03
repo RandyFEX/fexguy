@@ -78,6 +78,7 @@ export function quoteStore(raw, env) {
     dropPending: (/** @type {string} */ id) => raw.eval(DEL, [k.pending(id)], []),
     getSession: (/** @type {string} */ sid) => getJson(k.session(sid)),
     putSession: (/** @type {string} */ sid, /** @type {any} */ s, /** @type {number} */ ttlMs) => setJson(k.session(sid), s, ttlMs),
+    dropSession: (/** @type {string} */ sid) => raw.eval(DEL, [k.session(sid)], []),
     /** true the first time only */
     once: async (/** @type {string} */ id, /** @type {string} */ what) => Number(await raw.eval(SET_NX, [k.flag(id, what)], [new Date().toISOString()])) === 1,
   };

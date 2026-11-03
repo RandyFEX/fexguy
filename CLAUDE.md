@@ -1223,10 +1223,16 @@ scope protection wins.
   tobacco, coverage $5,000-$25,000, state as lead information only), first
   name + mobile, Twilio Verify SMS code, then the three cards with the exact
   labels Lowest Preferred Rate, Average Standard Rate, Guaranteed
-  Acceptance Rate (`server/rates/pricing-categories.js`, v2.5: preferred =
-  Mutual of Omaha Living Promise Level; average = mean of at least two
-  verified standard products, so "Coming soon" while Aetna Standard is the
-  only one; guaranteed = Gerber ACH), freely repriceable after verification.
+  Acceptance Rate (`server/rates/pricing-categories.js`: preferred = Mutual
+  of Omaha Living Promise Level; standard = Aetna Standard, labelled
+  "Standard Rate" while it is the only verified standard product (v2.7;
+  "Average Standard Rate", the mean, from two products); guaranteed =
+  Gerber ACH), freely repriceable after verification. v2.7: sessions are
+  visit-scoped (a tab-scoped visit id the server checks with the cookie):
+  every new visit or tab starts at Male/Female and must verify again;
+  Start New Quote ends the session (records kept); after verification
+  prices, carrier names and logos are fully shown (names come only from the
+  verified pricing API).
   v2.5: after name + mobile the pricing screen shows blurred safe stand-ins
   (never real prices or carriers) with the Unlock Your Insurance Prices
   panel (number prefilled); verification reveals prices in place; carrier

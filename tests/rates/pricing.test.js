@@ -28,7 +28,7 @@ const byId = (cats) => Object.fromEntries(cats.map((c) => [c.id, c]));
 const input = (o = {}) => ({ age: 65, gender: 'male', tobacco: false, coverage: 10000, ...o });
 
 test('exact labels, in order', () => {
-  assert.deepEqual(CATEGORIES.map((c) => c.label), ['Lowest Preferred Rate', 'Average Standard Rate', 'Guaranteed Acceptance Rate']);
+  assert.deepEqual(CATEGORIES.map((c) => c.label), ['Lowest Preferred Rate', 'Standard Rate', 'Guaranteed Acceptance Rate']);
 });
 
 test('mean of cents rounds half up', () => {
@@ -50,14 +50,16 @@ test('Lowest Preferred Rate is Mutual of Omaha Living Promise Level (exact engin
   assert.equal(byId(priceCategories(engine, input({ age: 86 })))['lowest-preferred'].status, 'unavailable');
 });
 
-test('Average Standard Rate is pending: one verified standard product is never shown as an average', () => {
+test('Standard Rate is Aetna Standard (one verified standard product, its own premium, never called an average)', () => {
   for (const age of [50, 65, 89]) {
     const c = byId(priceCategories(engine, input({ age })))['average-standard'];
-    assert.equal(c.status, 'pending');
-    assert.equal(c.monthlyPremium, undefined);
+    const a = engine.quote({ productId: 'aetna-accendo-standard', ...input({ age }), state: 'TX' });
+    assert.equal(c.status, 'ok');
+    assert.equal(c.label, 'Standard Rate');
+    assert.equal(c.monthlyPremium, a.monthlyPremium);
+    assert.deepEqual(c.attribution, ['FF-101']);
   }
   assert.deepEqual(CATEGORIES.find((c) => c.id === 'average-standard').products, ['aetna-accendo-standard']);
-  assert.ok(!CATEGORIES.find((c) => c.id === 'average-standard').products.includes('moo-living-promise-level'));
 });
 
 test('Guaranteed Acceptance uses Gerber where available; tobacco never changes it', () => {
@@ -69,9 +71,12 @@ test('Guaranteed Acceptance uses Gerber where available; tobacco never changes i
   assert.equal(byId(priceCategories(engine, input({ age: 81 })))['guaranteed-acceptance'].status, 'unavailable');
 });
 
-test('no product ids, carrier names, rates or fees in category results', () => {
-  const text = JSON.stringify(priceCategories(engine, input()));
-  for (const banned of ['aetna', 'omaha', 'moo-', 'gerber', 'annualRatePer1000', 'policyFee', 'modalFactor']) assert.ok(!text.toLowerCase().includes(banned), banned);
+test('verified results carry carrier names but never product ids, rates or fees', () => {
+  const cats = priceCategories(engine, input());
+  assert.deepEqual(cats.map((c) => c.carriers[0].carrier), ['Mutual of Omaha', 'Aetna', 'Gerber Life']);
+  const text = JSON.stringify(cats);
+  for (const banned of ['moo-', 'aetna-accendo', 'gerber-guaranteed', 'annualRatePer1000', 'policyFee', 'modalFactor']) assert.ok(!text.includes(banned), banned);
+  assert.ok(!cats.some((c) => c.status === 'pending'), 'no Coming soon when every product is available');
 });
 
 test('input validation: exact fields and ranges only', () => {
@@ -109,7 +114,7 @@ test('endpoint: returns the three categories for a same-site request', async () 
   assert.equal(res.headers.get('cache-control'), 'no-store');
   const b = await res.json();
   assert.equal(b.state, 'TX');
-  assert.deepEqual(b.categories.map((c) => c.label), ['Lowest Preferred Rate', 'Average Standard Rate', 'Guaranteed Acceptance Rate']);
+  assert.deepEqual(b.categories.map((c) => c.label), ['Lowest Preferred Rate', 'Standard Rate', 'Guaranteed Acceptance Rate']);
 });
 
 test('endpoint: rejects other origins, methods, bad input; fails closed without store or engine', async () => {

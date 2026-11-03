@@ -14,8 +14,9 @@
 //                               when the set has at least MIN_AVERAGE_PRODUCTS
 //                               products and every one is available for the
 //                               inputs (never one carrier labelled as an
-//                               average). Aetna Standard is the only verified
-//                               standard product left, so this is "pending".
+//                               average). With one verified standard product
+//                               (Aetna Standard, v2.7) the card is "Standard
+//                               Rate" with that product's own premium.
 //   Guaranteed Acceptance Rate  the verified guaranteed-acceptance product
 //                               available for the inputs.
 //
@@ -34,6 +35,14 @@ export const ATTRIBUTION_CODES = {
   'moo-living-promise-level': 'FF-102',
   'gerber-guaranteed-life': 'FF-201',
 };
+/** Carrier and plan names shown only to a verified visitor (never before verification). */
+export const CARRIER_DISPLAY = {
+  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense' },
+  'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise' },
+  'FF-201': { carrier: 'Gerber Life', plan: 'Guaranteed Life' },
+};
+/** @param {string} c */
+const display = (c) => /** @type {Record<string, { carrier: string, plan: string }>} */ (CARRIER_DISPLAY)[c] ?? null;
 /** @param {string} id */
 const code = (id) => /** @type {Record<string, string>} */ (ATTRIBUTION_CODES)[id] ?? 'FF-000';
 export const COVERAGE = { min: 5000, max: 25000, presets: [5000, 10000, 15000, 20000, 25000], default: 10000 };
@@ -45,9 +54,13 @@ export const MIN_AVERAGE_PRODUCTS = 2;
 /** @typedef {'lowest' | 'average' | 'guaranteed'} CategoryRule */
 export const CATEGORIES = [
   { id: 'lowest-preferred', label: 'Lowest Preferred Rate', rule: /** @type {CategoryRule} */ ('lowest'), products: ['moo-living-promise-level'] },
+  // One verified standard product (Aetna Standard) -> "Standard Rate", its
+  // own premium. With MIN_AVERAGE_PRODUCTS or more it becomes "Average
+  // Standard Rate", the mean of all of them (Randy, Quote System v2.7).
   {
     id: 'average-standard',
-    label: 'Average Standard Rate',
+    label: 'Standard Rate',
+    averageLabel: 'Average Standard Rate',
     rule: /** @type {CategoryRule} */ ('average'),
     products: ['aetna-accendo-standard'],
   },
@@ -74,14 +87,15 @@ export function meanCents(cents) {
 export function priceCategories(engine, input) {
   const applicant = { ...input, state: REFERENCE_STATE };
   return CATEGORIES.map((cat) => {
-    const base = { id: cat.id, label: cat.label, attribution: [] };
-    if (cat.products.length === 0 || (cat.rule === 'average' && cat.products.length < MIN_AVERAGE_PRODUCTS))
-      return { ...base, status: 'pending', message: 'Rates for this category are being added.' };
+    const averaged = cat.rule === 'average' && cat.products.length >= MIN_AVERAGE_PRODUCTS;
+    const label = averaged ? cat.averageLabel ?? cat.label : cat.label;
+    const base = { id: cat.id, label, attribution: [], carriers: [] };
+    if (cat.products.length === 0) return { ...base, status: 'pending', message: 'Rates for this category are being added.' };
 
     const quotes = cat.products.map((productId) => engine.quote({ ...applicant, productId }));
     const ok = quotes.filter((q) => q.ok);
 
-    if (cat.rule === 'average') {
+    if (averaged) {
       if (ok.length !== cat.products.length) {
         const failed = quotes.find((q) => !q.ok);
         const reason = failed?.reason;
@@ -89,7 +103,8 @@ export function priceCategories(engine, input) {
         return { ...base, status: 'unavailable', message: UNAVAILABLE[/** @type {keyof typeof UNAVAILABLE} */ (reason)] ?? 'Not available for these choices.' };
       }
       const cents = meanCents(ok.map((q) => q.monthlyPremiumCents));
-      return { ...base, status: 'ok', monthlyPremiumCents: cents, monthlyPremium: (cents / 100).toFixed(2), attribution: ok.map((q) => code(q.productId)) };
+      const codes = ok.map((q) => code(q.productId));
+      return { ...base, status: 'ok', monthlyPremiumCents: cents, monthlyPremium: (cents / 100).toFixed(2), attribution: codes, carriers: codes.map(display) };
     }
 
     if (!ok.length) {
@@ -98,6 +113,6 @@ export function priceCategories(engine, input) {
       return { ...base, status: 'unavailable', message: UNAVAILABLE[/** @type {keyof typeof UNAVAILABLE} */ (reason)] ?? 'Not available for these choices.' };
     }
     const best = ok.reduce((a, b) => (b.monthlyPremiumCents < a.monthlyPremiumCents ? b : a));
-    return { ...base, status: 'ok', monthlyPremiumCents: best.monthlyPremiumCents, monthlyPremium: best.monthlyPremium, attribution: [code(best.productId)] };
+    return { ...base, status: 'ok', monthlyPremiumCents: best.monthlyPremiumCents, monthlyPremium: best.monthlyPremium, attribution: [code(best.productId)], carriers: [display(code(best.productId))] };
   });
 }

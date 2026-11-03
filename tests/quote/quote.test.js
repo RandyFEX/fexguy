@@ -55,27 +55,27 @@ function fakeTwilio() {
   return { calls, fetchImpl };
 }
 
-function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now } = {}) {
+function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `visit${String(++ipCounter).padStart(12, '0')}` } = {}) {
   let cookie = '';
   const store = quoteStore(redis.store, env);
   const deps = { store, getEngine: async () => ({ engine }), fetchImpl, now };
   const call = async (body, { origin = ORIGIN, withCookie = true } = {}) => {
     const res = await handleQuote(new Request('https://x.test/api/quote/', {
       method: 'POST',
-      headers: { 'content-type': 'application/json', origin, 'x-real-ip': ip, 'user-agent': 'TestAgent/1.0', ...(withCookie && cookie ? { cookie } : {}) },
+      headers: { 'content-type': 'application/json', origin, 'x-real-ip': ip, 'user-agent': 'TestAgent/1.0', 'x-quote-visit': visit, ...(withCookie && cookie ? { cookie } : {}) },
       body: JSON.stringify(body),
     }), env, deps);
     const set = res.headers.get('set-cookie');
     if (set) cookie = set.split(';')[0];
     return { http: res.status, body: await res.json(), setCookie: set };
   };
-  const price = async (q = { age: 65, gender: 'male', tobacco: false, coverage: 10000 }, { withCookie = true, cookieValue } = {}) => {
+  const price = async (q = { age: 65, gender: 'male', tobacco: false, coverage: 10000 }, { withCookie = true, cookieValue, visitId = visit } = {}) => {
     const c = cookieValue ?? (withCookie ? cookie : '');
-    const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, 'x-real-ip': ip, ...(c ? { cookie: c } : {}) }, body: JSON.stringify(q) }),
+    const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, 'x-real-ip': ip, ...(visitId ? { 'x-quote-visit': visitId } : {}), ...(c ? { cookie: c } : {}) }, body: JSON.stringify(q) }),
       { ...env, HEALTH_SEARCH_SECRET: SECRET }, { store: redis.store, getEngine: async () => ({ engine }), isVerified: async (r) => Boolean(await verifiedLead(r, env, store, now ? now() : Date.now())) });
     return { http: res.status, body: await res.json() };
   };
-  return { call, price, store, get cookie() { return cookie; } };
+  return { call, price, store, visit, get cookie() { return cookie; } };
 }
 
 let phoneN = 2000;
@@ -145,6 +145,7 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   assert.equal(ok.body.status, 'verified');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
+  assert.doesNotMatch(ok.setCookie, /Max-Age/, 'a browser-session cookie, not a persistent one');
   assert.equal((await c.price()).http, 200, 'verified session gets prices');
   // Tampered payload (another lead id) fails the signature.
   const [body, mac] = c.cookie.split('=')[1].split('.');
@@ -271,7 +272,7 @@ async function verifiedClient() {
   await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const quoteClient = { ...c, raw: redis.store };
   const call = async (body) => {
-    const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie }, body: JSON.stringify(body) }),
+    const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': c.visit }, body: JSON.stringify(body) }),
       PREVIEW, { store: c.store, raw: redis.store, getEngine: async () => ({ engine }) });
     return { http: res.status, body: await res.json() };
   };
@@ -309,7 +310,11 @@ test('Apply Now on Lowest Preferred (Mutual of Omaha): agent-assistance continua
   assert.deepEqual(apply.body.intake, { mode: 'none', reason: 'no-question-set' });
   assert.equal((await c.store.getLead(c.lead)).applications[0].attribution[0], 'FF-102');
   assert.equal((await c.call({ action: 'intake-next', category: 'lowest-preferred' })).body.reason, 'no-question-set');
-  assert.equal((await c.call({ action: 'apply', category: 'average-standard', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } })).http, 409, 'pending category cannot be applied for');
+  // Standard Rate (Aetna) is now quotable and carries its own attribution.
+  const std = await c.call({ action: 'apply', category: 'average-standard', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  assert.equal(std.body.status, 'ok');
+  assert.equal(std.body.category, 'Standard Rate');
+  assert.equal((await c.store.getLead(c.lead)).applications[1].attribution[0], 'FF-101');
 });
 
 test('carrier questions one at a time; answers kept; a declining YES stops and flags without ending the lead', async () => {
@@ -317,7 +322,7 @@ test('carrier questions one at a time; answers kept; a declining YES stops and f
   const c = await verifiedClient();
   // An Aetna application on the lead (Aetna has the question set).
   const rec = await c.store.getLead(c.lead);
-  rec.applications = [{ at: 't', category: 'Average Standard Rate', monthlyPremium: '1.00', quote: rec.quoteAtSubmission, attribution: ['FF-101'] }];
+  rec.applications = [{ at: 't', categoryId: 'average-standard', category: 'Standard Rate', monthlyPremium: '1.00', quote: rec.quoteAtSubmission, attribution: ['FF-101'] }];
   await c.store.putLead(c.lead, rec);
   assert.equal((await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' })).http, 409, 'no Apply Now for that category');
   let r = await c.call({ action: 'intake-next', category: 'average-standard' });
@@ -345,7 +350,7 @@ test('repricing updates the lead\'s current quote; session restore returns it', 
   const start = await c.call(startBody());
   await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const q = { age: 77, gender: 'male', tobacco: true, coverage: 15000 };
-  const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie }, body: JSON.stringify(q) }),
+  const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': c.visit }, body: JSON.stringify(q) }),
     { ...PREVIEW, HEALTH_SEARCH_SECRET: SECRET }, {
       store: redis.store, getEngine: async () => ({ engine }),
       isVerified: async (r) => (await verifiedLead(r, PREVIEW, c.store))?.leadId ?? false,
@@ -353,4 +358,40 @@ test('repricing updates the lead\'s current quote; session restore returns it', 
     });
   assert.equal(res.status, 200);
   assert.deepEqual((await c.call({ action: 'session' })).body.quote, q);
+});
+
+// ---- Quote System v2.7: visit-scoped verification ----
+test('a verified session works only for the visit (tab) it was verified in', async () => {
+  const c = client(PREVIEW);
+  const start = await c.call(startBody());
+  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  assert.equal((await c.price()).http, 200, 'same visit');
+  assert.equal((await c.price(undefined, { visitId: 'another-visit-0000001' })).http, 401, 'a new tab or visit reusing the cookie');
+  assert.equal((await c.price(undefined, { visitId: null })).http, 401, 'no visit id');
+  // The session action used on page load: a new visit is not verified.
+  const other = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': 'another-visit-0000002' }, body: JSON.stringify({ action: 'session' }) }), PREVIEW, { store: c.store });
+  assert.equal((await other.json()).status, 'not-verified');
+  // Verifying needs a visit id.
+  const noVisit = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN }, body: JSON.stringify({ action: 'check', lead: start.body.lead, code: TEST_CODE }) }), PREVIEW, { store: c.store });
+  assert.equal(noVisit.status, 400);
+});
+
+test('Start New Quote ends the session but keeps the lead, its consent record and events', async () => {
+  const c = client(PREVIEW);
+  const start = await c.call(startBody());
+  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const before = await c.store.getLead(start.body.lead);
+  const end = await c.call({ action: 'end-session' });
+  assert.equal(end.body.status, 'ended');
+  assert.match(end.setCookie, /Max-Age=0/);
+  assert.equal((await c.price()).http, 401, 'prices need a new verification');
+  const after = await c.store.getLead(start.body.lead);
+  assert.deepEqual(after.consent, before.consent);
+  assert.equal(after.verification.status, 'approved');
+  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['sms-sent', 'verified', 'quote-restarted']);
+  // A repeat request from the same phone is a new lead (the CRM handles duplicates); consent is asked again.
+  const again = await c.call(startBody({ phone: '214-867-5309', consent: false, consentVersion: undefined }));
+  assert.equal(again.http, 200);
+  assert.notEqual(again.body.lead, start.body.lead);
+  assert.equal((await c.store.getLead(again.body.lead)).consent.given, false);
 });
