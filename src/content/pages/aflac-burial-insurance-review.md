@@ -15,7 +15,7 @@ sidebar: true
 
 <p>• Aflac offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aflac is the #1 choice for COPD or very overweight, industry leader in these areas &amp; more</p>
 
-<p>Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $1,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get pushed into graded or modified plans with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
+<p>Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $2,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get offered its Modified Plan with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
 
 <p>Complete my quote request form on this page to get fast rates without picking wrong.</p>
 
@@ -58,11 +58,10 @@ sidebar: true
 
 <h3 id="h-what-are-my-policy-options-with-aetna"><strong>What are my policy options with Aflac?</strong></h3>
 
-<p>Aflac, through American Continental, offers three types of burial insurance policy options:</p>
+<p>Aflac offers two final expense plans: a Level Plan and a Modified Plan.</p>
 
 <ol>
 <li><strong>Level benefit</strong>: first-day immediate coverage</li>
-<li><strong>Graded benefit</strong>: limited benefits during the first two years</li>
 <li><strong>Modified benefit</strong>: two-year waiting period</li>
 </ol>
 
@@ -76,10 +75,10 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Issue ages</td><td>45 to 89</td>
+<td>Issue ages</td><td>45 to 80</td>
 </tr>
 <tr>
-<td>Face amount available</td><td>$1,000 to $50,000</td>
+<td>Face amount available</td><td>$2,000 to $50,000</td>
 </tr>
 <tr>
 <td> Simplified issue</td><td>No medical exam required</td>
@@ -101,7 +100,7 @@ sidebar: true
 <p>Issue ages: 45 to 80, age last birthday</p>
 
 <ul>
-<li>40-55 death benefit: $5,000-$50,000</li>
+<li>45-55 death benefit: $2,000-$50,000</li>
 <li>56-65 death benefit: $5,000-$40,000</li>
 <li>66-75 death benefit: $5,000-$30,000</li>
 <li>76-80 death benefit: $5,000-$20,000</li>
@@ -120,43 +119,10 @@ sidebar: true
 
 <p>Aflac’s level benefit plans are generally competitively priced.</p>
 
-<p><strong>#2: GRADED BENEFIT </strong></p>
-
-<p>Issue ages: 40 to 75, age last birthday</p>
+<p><strong>#2</strong>: <strong>MODIFIED BENEFIT PLAN </strong></p>
 
 <ul>
-<li>Minimum death benefit amount: $2,000</li>
-<li>Maximum death benefit: $25,000</li>
-</ul>
-
-<p><strong>Death Benefits Schedule:</strong></p>
-
-<p>Accidental death: full benefit immediately</p>
-
-<p><strong>Non-accidental death:</strong></p>
-
-<ul>
-<li>First 12 Months: 40% of the benefit amount</li>
-<li>12 to 24 Months: 75% of the benefit amount</li>
-<li>After 24 Months: full death benefit</li>
-</ul>
-
-<p>Aflac takes a higher risk for insuring you that’s why your beneficiary will receive 40% if you pass away in the first year of the policy. 75% in the second year, and only in the third year will they receive 100% of your benefit.</p>
-
-<p><strong>Health conditions that will qualify for this plan:</strong></p>
-
-<ul>
-<li>Congestive heart failure</li>
-<li>Cardiomyopathy</li>
-<li>COPD</li>
-<li>Emphysema</li>
-<li>Cancer diagnosis in the last 12-24 months</li>
-</ul>
-
-<p><strong>#3</strong>: <strong>MODIFIED BENEFIT PLAN </strong></p>
-
-<ul>
-<li>Issue ages: 40 to 75, age last birthday</li>
+<li>Issue ages: 45 to 75, age last birthday</li>
 <li>Minimum death benefit amount: $2,000</li>
 <li>Maximum death benefit amount: $25,000</li>
 <li>Death Benefits Schedule:</li>
@@ -185,14 +151,6 @@ sidebar: true
 
 <p>You must be aware of the death benefit schedule when considering Aflac’s graded and modified benefit plans. I don’t recommend these plans, as most people will qualify for Aflac’s 1st-day coverage plan.</p>
 
-<p><strong>Graded Death Benefit</strong><br>Non-accidental death </p>
-
-<ul>
-<li>Policy year 1: 40%of benefit amount </li>
-<li>Policy year 2: 75% of benefit amount </li>
-<li>Policy year 3: Full death benefit</li>
-</ul>
-
 <p><strong>Modified Death Benefit</strong></p>
 
 <p>Non-accidental death</p>
@@ -212,7 +170,6 @@ sidebar: true
 <li>Financially stable company</li>
 <li>First-day coverage for healthy folks</li>
 <li>Easy phone application and approval</li>
-<li>Accepts people who are 86-89 years old</li>
 <li>Competitive pricing compared to other life insurance companies</li>
 </ul>
 
@@ -223,24 +180,7 @@ sidebar: true
 <li>Strict underwriting only healthy people qualify.</li>
 </ul>
 
-<h3><strong>#2: graded benefit plan</strong></h3>
-
-<p><strong>PROS</strong></p>
-
-<ul>
-<li>Good for some heart and respiratory issues</li>
-<li>Fast application and approval over the phone</li>
-<li>No built chart, overweight and obese can easily qualify.</li>
-</ul>
-
-<p><strong>CONS</strong></p>
-
-<ul>
-<li>Phased in death benefit schedule</li>
-<li>Expensive premium compared to other companies.</li>
-</ul>
-
-<h3><strong>#3: modified benefit plan</strong></h3>
+<h3><strong>#2: modified benefit plan</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -259,12 +199,12 @@ sidebar: true
 
 <h2 id="other-benefits"><strong>Are there any riders with Aflac life insurance?</strong></h2>
 
-<p>Unfortunately, Aflac’s final expense whole life insurance does not offer any rider or additional benefits like most life insurance companies.</p>
+<p>Yes. Aflac’s Level Plan offers three optional riders. The Modified Plan does not offer them. Rider availability varies by state.</p>
 
 <ul>
-<li><strong>Accelerated Living Benefit Rider</strong></li>
-<li><strong>Nursing Home Confinement Rider</strong></li>
-<li><strong>Policy Loans</strong></li>
+<li><strong>Accelerated Death Benefit Rider</strong></li>
+<li><strong>Accidental Death Benefit Rider</strong></li>
+<li><strong>Children’s Term Rider</strong></li>
 </ul>
 
 <h2 id="getting-approved"><strong>How do I get approved by Aflac?</strong></h2>
@@ -279,101 +219,11 @@ sidebar: true
 
 <p>They do this to verify your health and assess your level of risk.</p>
 
-<h3 id="h-what-are-aetna-s-application-questions">What are Aflac’s application questions?</h3>
-
-<p><strong>KNOCKOUT SECTION:</strong></p>
-
-<p><strong>1.</strong>&#160;Do any of the following apply to you?</p>
-
-<p><strong>a.</strong>&#160;currently&#160;<a rel="noreferrer noopener" href="/burial-insurance/hospitalized/" target="_blank">hospitalized</a>, in a&#160;<a href="/burial-insurance/nursing-home-residents/" target="_blank" rel="noreferrer noopener">nursing facility</a>, confined to a bed, receiving hospice care? (Yes – No)</p>
-
-<p><strong>b.</strong>&#160;require the use of oxygen for any lung or respiratory disorder (Yes – No)</p>
-
-<p><strong>c.</strong>&#160;have been diagnosed by a medical professional to have an&#160;<a href="/burial-insurance/aneurysm/" target="_blank" rel="noreferrer noopener">aneurysm</a>&#160;that has not been surgically repaired (Yes – No)</p>
-
-<p><strong>MODIFIED BENEFIT PLAN</strong></p>
-
-<p>If you answered any questions in Section B YES, you qualify for the Modified benefit plan.</p>
-
-<p><strong>2.</strong>&#160;At any time have you been diagnosed or treated by a medical professional or had surgery for any of the following?</p>
-
-<p><strong>a.</strong>&#160;any condition requiring bone marrow, stem cell, or&#160;<a href="/burial-insurance/organ-transplant/" target="_blank" rel="noreferrer noopener">organ transplant</a>&#160;(Yes – No)</p>
-
-<p><strong>b.</strong>&#160;<a href="/burial-insurance/kidney-disease/" target="_blank" rel="noreferrer noopener">kidney disease</a>&#160;requiring dialysis (Yes – No)</p>
-
-<p><strong>c.</strong>&#160;Alzheimer’s disease, dementia, mental incapacity (Yes – No)</p>
-
-<p><strong>d.</strong>&#160;Lou Gehrig’s disease (ALS) (Yes – No)</p>
-
-<p><strong>e.</strong>&#160;a life expectancy of 12 months or less (Yes – No)</p>
-
-<p><strong>f.</strong>&#160;Acquired Immune Deficiency Syndrome (AIDS), AIDS Related Complex (ARC), tested positive for the Human Immunodeficiency Virus (HIV) (Yes – No)</p>
-
-<p>Those who answered yes to the above health conditions will be offered a modified benefit plan.&#160; This plan is offered to people in the highest-risk category.</p>
-
-<p><br><strong>GRADED BENEFIT HEALTH QUESTIONS</strong></p>
-
-<p>If you answered any health questions in Section C YES, you qualify for the Graded benefit plan.</p>
-
-<p>If you answered NO to ALL questions in Section C, you qualify for the Level benefit plan</p>
-
-<p><strong>3.</strong>&#160;Do you have diabetes? (Yes – No)</p>
-
-<p><strong>a.&#160;</strong>diagnosed by a medical professional before age 40 (Yes – No)</p>
-
-<p><strong>b.</strong>&#160;in combination with any heart or circulatory disorder diagnosed by a medical professional (excluding high blood pressure) (Yes – No)</p>
-
-<p><strong>c.</strong>&#160;requiring 40 or more units of insulin daily (Yes – No)</p>
-
-<p><strong>4.</strong>&#160;Within the past 12 months, have you been diagnosed or treated by a medical professional or had surgery or any of the following? (Yes – No)</p>
-
-<p><strong>a.</strong>&#160;heart attack,&#160;<a href="/burial-insurance/valvular-heart-disease/" target="_blank" rel="noreferrer noopener">heart valve disorder</a>, heart blockage, stroke, or transient ischemic attack (TIA) (Yes – No)</p>
-
-<p>b<strong>.</strong>&#160;any lung or respiratory disorder requiring the use of a nebulizer (Yes – No)</p>
-
-<p>c<strong>.</strong>&#160;any lung or respiratory disorder and currently use&#160;<a href="/burial-insurance/for-smokers/" target="_blank" rel="noreferrer noopener">tobacco</a>&#160;(Yes – No)</p>
-
-<p><strong>d.</strong>&#160;internal cancer, melanoma, lymphoma, multiple myeloma, systemic leukemia, lupus (SLE) (Yes – No)</p>
-
-<p><strong>e.</strong>&#160;chronic pancreatitis, chronic hepatitis, cirrhosis (Yes – No)</p>
-
-<p><strong>5.</strong>&#160;Within the past 12 months, have you been recommended by a medical professional to have any of the following? (Yes – No)</p>
-
-<p><strong>a.</strong>&#160;treatment or counseling for alcohol or drug abuse (Yes – No)</p>
-
-<p><strong>b.</strong>&#160;test, surgery, treatment, or further evaluation that has not been performed, or are there any test results pending (Yes – No)</p>
-
-<p>You would qualify for the Aflac graded benefit plan if you answered NO to the knockout and modified sections. If you answer Yes to any of the health questions in this section, you will be offered a graded death benefit plan.</p>
-
-<p>A graded death benefit plan is offered to those not in the best health. If you qualify, you will pay a little bit more for this plan, but you will have partial benefits on the first day.&#160;</p>
-
-<p><strong>LEVEL BENEFIT PLAN HEALTH QUESTIONS</strong></p>
-
-<p><strong>6.</strong>&#160;Within the past 24 months, have you been diagnosed or treated by a medical professional or had surgery for any of the following? (Yes – No)</p>
-
-<p><strong>a.</strong>&#160;aneurysm, heart attack, any circulatory disorder, stroke, or transient ischemic attack (TIA) (Yes – No)</p>
-
-<p><strong>b.</strong>&#160;emphysema, chronic obstructive pulmonary disease (COPD) (Yes – No)</p>
-
-<p><strong>c.</strong>&#160;internal cancer, melanoma, leukemia (Yes – No)</p>
-
-<p><strong>d.</strong>&#160;neuromuscular disorder including, but not limited to cerebral palsy, multiple sclerosis, muscular dystrophy (Yes – No)</p>
-
-<p><strong>f.</strong>&#160;any connective tissue disorder, ulcerative colitis, Crohn’s disease (Yes – No)</p>
-
-<p><strong>7.</strong>&#160;Have you been diagnosed or treated by a medical professional or had surgery for any of the following? (Yes – No)</p>
-
-<p>a<strong>.</strong>&#160;congestive heart failure, cardiomyopathy, Parkinson’s disease (Yes – No)</p>
-
-<p><strong>b.</strong>&#160;any permanent paralysis, amputation caused by disease (Yes – No)</p>
-
-<p><strong>8.&#160;</strong>Are you dependent on a wheelchair or motorized mobility device? (Yes – No)</p>
-
 <p>If you answer no to all the health questions in the application, you will qualify for a level death benefit plan. This plan has first-day full coverage and pays 100% death benefit when you pass away.</p>
 
 <h2 id="when-it-makes-sense"><strong>When does Aflac burial insurance make the most sense?</strong></h2>
 
-<p>Aflac is a great choice for seniors 86 to 89 years old because they’re one of the few companies providing policies for that age. They don’t have height and weight restrictions, and those on the heavier side will qualify for coverage.</p>
+<p>They don’t have height and weight restrictions, and those on the heavier side will qualify for coverage.</p>
 
 <p>Avoid their modified benefit plan; it’s a poor option because you can often get a better-priced policy with other insurance companies. If you are considering purchasing burial insurance from Aflac or other companies, comparing plans and rates is best before choosing the one that fits your needs.</p>
 
@@ -392,7 +242,6 @@ sidebar: true
 <p><strong>Here are some of Aflac’s unique features that make them shine from the competition and make them a better choice for you:</strong></p>
 
 <ul>
-<li>Coverage for people who are 86 to 89 years old</li>
 <li>Wheelchair use may qualify for a graded benefit plan</li>
 <li>No build chart</li>
 <li>Underwriting is based only on health questions, prescription history checks, and telephone interviews.</li>
@@ -409,202 +258,6 @@ sidebar: true
 
 <p>Aflac burial insurance plan rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
-<table class="table-wrap" id="tablepress-102">
-<thead>
-<tr>
-<th>FEMALE AGE<br>
-</th><th>$5,000 <br>
-</th><th>$10,000 <br>
-</th><th>$15,000 <br>
-</th><th>$20,000 <br>
-</th><th>$25,000 <br>
-</th><th>$30,000</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>45</td><td>$13.42 </td><td> $23.50 <br>
-</td><td> $33.58 <br>
-</td><td> $43.66 <br>
-</td><td> $53.75 <br>
-</td><td> $63.83 <br>
-</td>
-</tr>
-<tr>
-<td>50<br>
-</td><td> $15.00 <br>
-</td><td> $26.67 <br>
-</td><td> $38.33 <br>
-</td><td> $50.00 <br>
-</td><td> $61.66 <br>
-</td><td> $73.33 <br>
-</td>
-</tr>
-<tr>
-<td>55<br>
-</td><td> $17.79<br>
-</td><td> $32.25 <br>
-</td><td> $46.71 <br>
-</td><td> $61.16 <br>
-</td><td> $75.62 <br>
-</td><td> $90.08 <br>
-</td>
-</tr>
-<tr>
-<td>60</td><td>   $21.46 <br>
-<br>
-</td><td> $39.58 <br>
-</td><td> $57.71 <br>
-</td><td> $75.83 <br>
-</td><td> $93.95 <br>
-</td><td> $112.08 <br>
-</td>
-</tr>
-<tr>
-<td>65</td><td> $24.58 <br>
-</td><td> $45.83 <br>
-</td><td> $67.08 <br>
-</td><td> $88.33 <br>
-</td><td> $109.58 <br>
-</td><td> $130.83 <br>
-</td>
-</tr>
-<tr>
-<td>70</td><td> $29.58 <br>
-</td><td> $55.83 <br>
-</td><td> $82.08 <br>
-</td><td> $108.33 <br>
-</td><td> $134.58 <br>
-</td><td> $160.83 <br>
-</td>
-</tr>
-<tr>
-<td>75</td><td> $37.92 <br>
-</td><td> $72.50 <br>
-</td><td> $107.08 <br>
-</td><td> $141.66 <br>
-</td><td> $176.24 <br>
-</td><td> $210.82 <br>
-</td>
-</tr>
-<tr>
-<td>80</td><td> $50.41 <br>
-</td><td> $97.50 <br>
-</td><td> $144.58 <br>
-</td><td> $191.66 <br>
-</td><td> $238.74 <br>
-</td><td></td>
-</tr>
-<tr>
-<td>85</td><td> $67.50 <br>
-</td><td> $131.66 <br>
-</td><td> $195.83 <br>
-</td><td> $259.99 <br>
-</td><td> $324.15 <br>
-</td><td></td>
-</tr>
-</tbody>
-</table>
-
-<table class="table-wrap" id="tablepress-103">
-<thead>
-<tr>
-<th>MALE AGE<br>
-</th><th>$5,000 <br>
-</th><th>$10,000 <br>
-</th><th>$15,000 <br>
-</th><th>$20,000 <br>
-</th><th>$25,000 <br>
-</th><th>$30,000</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>45</td><td> $14.62 <br>
-</td><td> $25.92 <br>
-</td><td> $37.21 <br>
-</td><td> $48.50 <br>
-</td><td> $59.79 <br>
-</td><td> $71.08 <br>
-</td>
-</tr>
-<tr>
-<td>50<br>
-</td><td> $18.54 <br>
-</td><td> $33.75 <br>
-</td><td> $48.96 <br>
-</td><td> $64.16 <br>
-</td><td> $79.37 <br>
-</td><td> $94.58 <br>
-</td>
-</tr>
-<tr>
-<td>55<br>
-</td><td> $22.33 <br>
-</td><td> $41.33 <br>
-</td><td> $60.33 <br>
-</td><td> $79.33 <br>
-</td><td> $98.33 <br>
-</td><td> $117.33 <br>
-</td>
-</tr>
-<tr>
-<td>60</td><td> $26.75 <br>
-</td><td> $50.16 <br>
-</td><td> $73.58 <br>
-</td><td> $97.00 <br>
-</td><td> $120.41 <br>
-</td><td> $143.83 <br>
-</td>
-</tr>
-<tr>
-<td>65</td><td> $29.58 <br>
-</td><td> $55.83 <br>
-</td><td> $82.08 <br>
-</td><td> $108.33 <br>
-</td><td> $134.58 <br>
-</td><td> $160.83 <br>
-</td>
-</tr>
-<tr>
-<td>70</td><td> $36.67 <br>
-</td><td> $70.00 <br>
-</td><td> $103.33 <br>
-</td><td> $136.66 <br>
-</td><td> $169.99 <br>
-</td><td> $203.33 <br>
-</td>
-</tr>
-<tr>
-<td>75</td><td> $50.41 <br>
-</td><td> $97.50 <br>
-</td><td> $144.58 <br>
-</td><td> $191.66 <br>
-</td><td> $238.74 <br>
-</td><td> $285.82 <br>
-</td>
-</tr>
-<tr>
-<td>80</td><td> $68.75 <br>
-</td><td> $134.16 <br>
-</td><td> $199.58 <br>
-</td><td> $264.99 <br>
-</td><td> $330.40 <br>
-</td><td></td>
-</tr>
-<tr>
-<td>85</td><td> $95.41 <br>
-</td><td> $187.49 <br>
-</td><td> $279.57 <br>
-</td><td> $371.65 <br>
-</td><td> $463.73 <br>
-</td><td></td>
-</tr>
-</tbody>
-</table>
-
-<p> *Pricing is for illustration purposes only and is subject to change without notice. </p>
-
 <h3>How does Aflac burial insurance compare?</h3>
 
 <p>If you are open to looking at better insurance companies with better rates, we can offer you some help!</p>
@@ -615,9 +268,9 @@ sidebar: true
 
 <h3 id="Financial-Rating"><strong>What is Aflac’s operational history</strong></h3>
 
-<p>Aflac Life Insurance was created in 1855.</p>
+<p>Aflac was founded in 1955.</p>
 
-<p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. The two Aflac insurance companies that write this policy are ACI and Continental Life Insurance Company of Brentwood, Tennessee. Their burial insurance is available in most states except West Coast and Northeast states.</p>
+<p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. Aflac Final Expense is underwritten by Tier One Insurance Company, a subsidiary of Aflac Incorporated, and administered by Aetna Life Insurance Company. Their burial insurance is available in most states except West Coast and Northeast states.</p>
 
 <h4><strong>Company address</strong></h4>
 
