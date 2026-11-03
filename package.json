@@ -18,7 +18,12 @@
     "test:health-search": "node --test 'tests/health-search/*.test.js'",
     "test:health-search:live": "node tests/health-search/live-preview.mjs",
     "test:nav": "node tests/navigation/nav.browser.mjs",
-    "test": "npm run test:health-search && npm run test:nav"
+    "test": "npm run test:health-search && npm run test:rates && npm run test:nav",
+    "rates:extract": "node scripts/rates-extract.mjs",
+    "rates:workbook": "node scripts/rates-workbook.mjs",
+    "rates:publish": "node scripts/rates-publish.mjs",
+    "test:rates": "node --test 'tests/rates/*.test.js'",
+    "test:rates:live": "node tests/rates/live-preview.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.2",

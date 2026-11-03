@@ -16,3 +16,6 @@ node_modules/
 
 # Health Question Search: private question records (never committed; this repository is public)
 server/health-search/private/
+
+# Rate engine: producer-only carrier rate tables and the generated workbook (never committed; this repository is public)
+server/rates/private/

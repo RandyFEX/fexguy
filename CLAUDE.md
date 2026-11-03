@@ -1178,6 +1178,44 @@ scope protection wins.
   question set. Medication names only produce RELATED matches. Search terms are never stored or
   sent to GA4/Meta.
 
+## Rate engine (Randy, November 2026, Rate Engine V2.0)
+
+- `server/rates/` (see its README) calculates monthly premiums from verified
+  carrier rate tables: Aetna CVS/Accendo Standard ($40 fee, 0.0875 EFT, ages
+  40-89), Mutual of Omaha Living Promise Level Benefit ($36, 0.089, ages
+  45-85) and Gerber Guaranteed Life ($11, 0.083334 ACH, ages 50-80; one rate
+  whatever the tobacco answer). Never substitute another tier or plan
+  (Preferred, Super Preferred, Modified, Graded, Direct Bill).
+- The rate guides are producer-only and this repository is public: the rate
+  tables and the pricing workbook live only in the git-ignored
+  `server/rates/private/` (`npm run rates:extract`, `npm run rates:workbook`).
+  Never commit them, never put them in `public/`, and never expose complete
+  rate tables through an endpoint; `npm run verify` fails if rate data reaches
+  the site. Rates are copied exactly from the source; never interpolate,
+  estimate or invent one, and never change a rate to make a test pass.
+- Gerber's card (GL-RC 0922, September 2022) prints monthly ACH premiums
+  (Randy: ACH is the correct Gerber pricing, never card/debit or Direct
+  Bill; card accepted in V2.1); the stored rates are the unique 2-decimal
+  values that reproduce every printed premium. The printed premiums are
+  kept as separate source data (`printedPremiums`) and a table whose rates
+  don't reproduce all 310 of them is refused. Benchmark: age 60, $10,000 =
+  $63.89 male, $51.06 female. MOO's two age-50 dips are kept as printed.
+- Storage (V2.1): production tables live only in the Health Question
+  Search's Upstash Redis under their own keys `rates:v1:preview` /
+  `rates:v1:production` (`npm run rates:publish`; production needs
+  `--confirm-production` and Randy's approval); never touch the `hqs:*`
+  keys. `api/rate-quote.js` (POST /api/rate-quote/) is server-to-server
+  only: header `x-rate-engine-key` must equal `RATE_ENGINE_API_KEY` (32+
+  characters; without it the endpoint answers 404). It returns calculated
+  premiums and status only, never tables, rates or printed premiums. Never
+  put that key in browser code. A future public pricing page needs its own
+  server-side integration with abuse protection and rate limiting (see
+  server/rates/README.md), never a browser call to this endpoint.
+- Unverified limits are reported, never invented: Aetna's face limits and
+  state availability, and MOO's state availability, carry `verified: false`
+  in every result until Randy supplies the carrier documents.
+- The engine assigns no tier labels; it isn't connected to any page yet.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
