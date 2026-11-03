@@ -1208,7 +1208,9 @@ scope protection wins.
   only: header `x-rate-engine-key` must equal `RATE_ENGINE_API_KEY` (32+
   characters; without it the endpoint answers 404). It returns calculated
   premiums and status only, never tables, rates or printed premiums. Never
-  put that key in browser code.
+  put that key in browser code. A future public pricing page needs its own
+  server-side integration with abuse protection and rate limiting (see
+  server/rates/README.md), never a browser call to this endpoint.
 - Unverified limits are reported, never invented: Aetna's face limits and
   state availability, and MOO's state availability, carry `verified: false`
   in every result until Randy supplies the carrier documents.

@@ -97,6 +97,19 @@ RATES_BASE=https://<preview>.vercel.app VERCEL_AUTOMATION_BYPASS_SECRET=... \
 RATE_ENGINE_API_KEY=... npm run test:rates:live
 ```
 
+### Security boundary for a future public pricing page
+
+`RATE_ENGINE_API_KEY` is a server-side secret: it never goes into browser
+JavaScript, HTML, `PUBLIC_` variables or client bundles. A public pricing
+interface must not call `/api/rate-quote/` from the browser. It needs its own
+server-side integration (a separate function that holds the key or calls the
+engine directly) with abuse protection and rate limiting (for example the
+per-visitor and per-IP limits the Health Question Search uses), only the
+coverage amounts it shows ($5,000, $10,000, $15,000, $20,000, $25,000), and
+no display of unverified state availability as confirmed. Each premium a
+public page reveals discloses a rate, so unlimited queries could rebuild a
+table: the limits are part of keeping the tables private.
+
 ## Calling the engine
 
 ```js
