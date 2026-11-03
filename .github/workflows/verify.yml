@@ -40,3 +40,16 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq redis-server
       - run: npm run health-search:data -- --check
       - run: npm run test:health-search
+
+  # Rate engine (server/rates/): formulas, rounding, limits and state rules,
+  # tested with made-up rates (the real tables are private and never in CI).
+  rates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:rates

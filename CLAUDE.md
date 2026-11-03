@@ -1178,6 +1178,26 @@ scope protection wins.
   question set. Medication names only produce RELATED matches. Search terms are never stored or
   sent to GA4/Meta.
 
+## Rate engine (Randy, November 2026, Rate Engine V2.0)
+
+- `server/rates/` (see its README) calculates monthly premiums from verified
+  carrier rate tables: Aetna CVS/Accendo Standard ($40 fee, 0.0875 EFT, ages
+  40-89), Mutual of Omaha Living Promise Level Benefit ($36, 0.089, ages
+  45-85) and Gerber Guaranteed Life ($11, 0.083334 ACH, ages 50-80; one rate
+  whatever the tobacco answer). Never substitute another tier or plan
+  (Preferred, Super Preferred, Modified, Graded, Direct Bill).
+- The rate guides are producer-only and this repository is public: the rate
+  tables and the pricing workbook live only in the git-ignored
+  `server/rates/private/` (`npm run rates:extract`, `npm run rates:workbook`).
+  Never commit them, never put them in `public/`, and never expose complete
+  rate tables through an endpoint; `npm run verify` fails if rate data reaches
+  the site. Rates are copied exactly from the source; never interpolate,
+  estimate or invent one, and never change a rate to make a test pass.
+- Gerber's card (GL-RC 0922) prints monthly ACH premiums (Randy: ACH is the
+  correct Gerber pricing); the stored rates are the unique 2-decimal values
+  that reproduce every printed premium, pending Randy's approval.
+- The engine assigns no tier labels; it isn't connected to any page yet.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
