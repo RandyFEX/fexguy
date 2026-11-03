@@ -1237,7 +1237,7 @@ scope protection wins.
   intro, no phone line or price explanations under the questions); pricing
   screen order: cards, unlock panel (number already entered, Change Number
   to edit), then the controls, Start New Quote and the representative-rates
-  note. v2.9: question 4 "What Will Your Insurance Money Be Used For?"
+  note. v3.3: the pricing screen heading is "Your Insurance Quotes". v2.9: question 4 "What Will Your Insurance Money Be Used For?"
   (Burial & Funeral Expenses, Cremation Expenses, Other Final Expenses;
   8 steps) is lead information only, never a pricing input: stored in the
   evidence record, Apply Now and intake, and in Randy's Formspark
