@@ -1233,6 +1233,15 @@ scope protection wins.
   Start New Quote ends the session (records kept); after verification
   prices, carrier names and logos are fully shown (names come only from the
   verified pricing API).
+  v2.8: compact header (H1 "Get Your Final Expense Insurance Quote", no
+  intro, no phone line or price explanations under the questions); pricing
+  screen order: cards, unlock panel (number already entered, Change Number
+  to edit), then the controls, Start New Quote and the representative-rates
+  note. v2.9: question 4 "What Will Your Insurance Money Be Used For?"
+  (Burial & Funeral Expenses, Cremation Expenses, Other Final Expenses;
+  8 steps) is lead information only, never a pricing input: stored in the
+  evidence record, Apply Now and intake, and in Randy's Formspark
+  notifications, never sent to analytics.
   v2.5: after name + mobile the pricing screen shows blurred safe stand-ins
   (never real prices or carriers) with the Unlock Your Insurance Prices
   panel (number prefilled); verification reveals prices in place; carrier

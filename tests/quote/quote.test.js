@@ -81,7 +81,7 @@ function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `vi
 let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
-  action: 'start', firstName: 'Mary', phone: nextPhone(), state: 'Ohio', consent: true, consentVersion: CONSENT_VERSION,
+  action: 'start', firstName: 'Mary', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
   verifyNoticeVersion: VERIFY_NOTICE_VERSION, quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/final-expense-insurance-prices/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
@@ -394,4 +394,30 @@ test('Start New Quote ends the session but keeps the lead, its consent record an
   assert.equal(again.http, 200);
   assert.notEqual(again.body.lead, start.body.lead);
   assert.equal((await c.store.getLead(again.body.lead)).consent.given, false);
+});
+
+// ---- Quote System v2.9: intended use (lead information only) ----
+test('intended use is required, stored with the lead, in the notifications, Apply Now and intake; never a pricing input', async () => {
+  const c = client(PREVIEW);
+  assert.equal((await c.call(startBody({ intendedUse: undefined }))).http, 400);
+  assert.equal((await c.call(startBody({ intendedUse: 'vacation' }))).http, 400);
+  const start = await c.call(startBody({ intendedUse: 'burial' }));
+  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  assert.equal(apply.body.status, 'ok');
+  await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
+  const r = await c.store.getLead(start.body.lead);
+  assert.deepEqual(r.intendedUse, { value: 'burial', label: 'Burial & Funeral Expenses' });
+  assert.equal(r.applications[0].intendedUse, 'Burial & Funeral Expenses');
+  assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial & Funeral Expenses');
+  // Same prices whatever the answer (the pricing endpoint only accepts the four rating inputs).
+  assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
+});
+
+test('intended use reaches the Formspark notification (real Twilio mode)', async () => {
+  const tw = fakeTwilio();
+  const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
+  const start = await c.call(startBody({ phone: '214-867-5390', intendedUse: 'other' }));
+  const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
+  assert.equal(ok.body.notify['Intended Use'], 'Other Final Expenses');
 });

@@ -25,8 +25,8 @@ type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavail
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
 const MAX = 25000;
-const TOTAL = 7;
-const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, coverage)
+const TOTAL = 8;
+const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, intended use, coverage)
 const LOGOS: Record<string, string> = { 'FF-102': '/wp-content/uploads/2018/05/Mutual-of-Omaha-Logo.jpg' };
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const track = (name: string, extra: Record<string, unknown> = {}) => window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...extra } }));
@@ -72,14 +72,14 @@ if (root) {
   const testBanner = $('[data-qf-test]');
   const turnstile = turnstileFor(root.querySelector<HTMLElement>('[data-turnstile]'), () => {});
 
-  const answers: Partial<Quote> & { state?: string } = {};
+  const answers: Partial<Quote> & { state?: string; use?: string } = {};
   try {
     Object.assign(answers, JSON.parse(sessionStorage.getItem(STEPS_KEY) ?? '{}'));
   } catch {}
   const saveSteps = () => {
     try {
-      const { age, gender, tobacco, coverage } = answers;
-      sessionStorage.setItem(STEPS_KEY, JSON.stringify({ age, gender, tobacco, coverage }));
+      const { age, gender, tobacco, use, coverage } = answers;
+      sessionStorage.setItem(STEPS_KEY, JSON.stringify({ age, gender, tobacco, use, coverage }));
     } catch {}
   };
   let leadId = '';
@@ -90,7 +90,7 @@ if (root) {
   function show(n: number, focus = true) {
     current = n;
     for (const [i, el] of steps) el.hidden = i !== n;
-    const results = (n === 7 && unlocked) || n === 8;
+    const results = (n === 8 && unlocked) || n === 9;
     back.hidden = n === 1 || results;
     root!.querySelector<HTMLElement>('[data-qf-top]')!.hidden = results;
     progressWrap.hidden = results;
@@ -100,7 +100,7 @@ if (root) {
     if (!focus) return;
     steps.get(n)?.querySelector<HTMLElement>('.qf-q')?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    if (n === 6 || n === 7) turnstile.prepare();
+    if (n === 7 || n === 8) turnstile.prepare();
   }
   const complete = (step: number) => {
     if (!started) {
@@ -120,6 +120,7 @@ if (root) {
     if (pick === 'gender') answers.gender = value === 'female' ? 'female' : 'male';
     if (pick === 'age') answers.age = Number(value);
     if (pick === 'tobacco') answers.tobacco = value === 'yes';
+    if (pick === 'use') answers.use = value;
     if (pick === 'coverage') answers.coverage = Number(value);
     saveSteps();
     complete(current);
@@ -147,8 +148,8 @@ if (root) {
     if (n === null) return otherInput.focus();
     answers.coverage = n;
     saveSteps();
-    complete(4);
-    show(5);
+    complete(5);
+    show(6);
   };
   $('[data-qf-other-next]').addEventListener('click', otherNext);
   otherInput.addEventListener('keydown', (e) => {
@@ -160,8 +161,8 @@ if (root) {
   stateSelect.addEventListener('change', () => {
     if (!stateSelect.value) return;
     answers.state = stateSelect.value;
-    complete(5);
-    show(6);
+    complete(6);
+    show(7);
   });
 
 
@@ -194,14 +195,14 @@ if (root) {
     fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
     if (!firstName) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
-    if (!quoteReady() || !answers.state) return show(1);
+    if (!quoteReady() || !answers.state || !answers.use) return show(1);
     track('quote_contact_submit');
-    complete(6);
+    complete(7);
     // The pricing screen, blurred, with the number already entered (not asked again).
     unlockPhone.value = phoneInput.value.trim();
     showPhoneSummary();
     lockCards();
-    show(7);
+    show(8);
   });
 
   function sourceInfo() {
@@ -261,11 +262,11 @@ if (root) {
     fieldError(unlockPhone, phoneOk(unlockPhone.value) ? '' : 'Please enter a 10-digit US mobile number.');
     if (!phoneOk(unlockPhone.value)) return editPhone();
     const quote = quoteReady();
-    if (!quote || !answers.state) return show(1);
+    if (!quote || !answers.state || !answers.use) return show(1);
     sendBtn.disabled = true;
     setStatus(sendStatus, 'Sending your code…');
     const { http, body } = await api({
-      action: 'start', firstName: firstInput.value.trim(), phone: unlockPhone.value.trim(), state: answers.state, quote,
+      action: 'start', firstName: firstInput.value.trim(), phone: unlockPhone.value.trim(), state: answers.state, intendedUse: answers.use, quote,
       consent: consentBox.checked, consentVersion: root!.dataset.consentVersion, verifyNoticeVersion: root!.dataset.verifyVersion,
       source: sourceInfo(),
     });
@@ -307,7 +308,7 @@ if (root) {
       return;
     }
     track('quote_sms_verified');
-    complete(7);
+    complete(8);
     setStatus(verifyStatus, '');
     if (body.notify) void notifyRandy(body.notify);
     unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
@@ -355,7 +356,7 @@ if (root) {
   const adjOtherError = $('[data-qf-adj-other-error]');
   const live = $('[data-qf-live]');
   const applyStatus = $('[data-qf-apply-status]');
-  const pricing = steps.get(7)!;
+  const pricing = steps.get(8)!;
   const cards = new Map(Array.from(root.querySelectorAll<HTMLElement>('[data-qf-card]')).map((el) => [el.dataset.qfCard!, el]));
   const cache = new Map<string, Category[]>();
   let shown: { quote: Quote; categories: Category[] } | null = null;
@@ -480,7 +481,7 @@ if (root) {
         lockCards();
         sendForm.hidden = false;
         verifyForm.hidden = true;
-        show(7);
+        show(8);
         setStatus(sendStatus, 'Please verify your phone number again to see prices.', true);
         return;
       }
@@ -516,8 +517,8 @@ if (root) {
     unlockPanel.hidden = true;
     adjust.hidden = false;
     fillAdjust(quote);
-    if (current !== 7) show(7);
-    else show(7, false);
+    if (current !== 8) show(8);
+    else show(8, false);
     void reprice(quote);
   }
 
@@ -563,7 +564,7 @@ if (root) {
     const r = await api(body);
     if (r.http === 401) {
       lockCards();
-      show(7);
+      show(8);
       return;
     }
     if (r.http !== 200) {
@@ -600,7 +601,7 @@ if (root) {
       btn.disabled = false;
       if (http === 401) {
         lockCards();
-        show(7);
+        show(8);
         return;
       }
       if (http !== 200 || body.status !== 'ok') {
@@ -614,7 +615,7 @@ if (root) {
       intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;
       intakeQ.hidden = true;
       intakeDone.hidden = true;
-      show(8);
+      show(9);
       await intakeStep({ action: 'intake-next', category: id });
     });
   }

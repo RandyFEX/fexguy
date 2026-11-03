@@ -44,6 +44,8 @@ export const US_STATES = [
   'West Virginia', 'Wisconsin', 'Wyoming',
 ];
 const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSource', 'utmMedium', 'utmCampaign', 'utmTerm', 'utmContent'];
+/** Intended use (lead information only; never a pricing input). */
+export const INTENDED_USES = { burial: 'Burial & Funeral Expenses', cremation: 'Cremation Expenses', other: 'Other Final Expenses' };
 const NAME_RE = /^[\p{L}][\p{L}\p{M} .'-]{0,39}$/u;
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
@@ -120,6 +122,8 @@ export async function handleQuote(request, env, deps) {
       if (!firstName || !NAME_RE.test(firstName)) return bad('Please enter your first name.');
       if (!phone) return bad('Please enter a valid 10-digit US mobile number.');
       if (!state) return bad('Please choose your state.');
+      const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
+      if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
       if (!quote) return bad();
       if (typeof body.consent !== 'boolean') return bad();
       if (body.consent && !CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)]) return bad();
@@ -145,6 +149,7 @@ export async function handleQuote(request, env, deps) {
         firstName,
         phone,
         state,
+        intendedUse: { value: intendedUse, label: INTENDED_USES[intendedUse] },
         submittedAt: iso,
         consent: {
           given: body.consent,
@@ -232,6 +237,7 @@ export async function handleQuote(request, env, deps) {
             'Phone Number': displayPhone(record.phone),
             State: record.state,
             'Phone Verified': `Yes (${iso})`,
+            'Intended Use': record.intendedUse?.label ?? '',
             'Contact Consent': record.consent.given ? `Yes (${record.consent.version})` : 'No',
             ...quoteFields(record.quoteAtSubmission),
           }
@@ -260,7 +266,7 @@ export async function handleQuote(request, env, deps) {
       if (!priced || priced.status !== 'ok') return json(409, { status: 'unavailable', message: 'This price is not available for these choices.' });
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
-      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
+      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution, intendedUse: record.intendedUse?.label ?? null };
       record.applications = [...(record.applications ?? []), application];
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
@@ -272,6 +278,7 @@ export async function handleQuote(request, env, deps) {
             'First Name': record.firstName,
             'Phone Number': displayPhone(record.phone),
             State: record.state,
+            'Intended Use': record.intendedUse?.label ?? '',
             'Quote Category': priced.label,
             'Quote Monthly Premium': `$${priced.monthlyPremium}`,
             'Quote Product Codes': priced.attribution.join(', '),
@@ -297,7 +304,7 @@ export async function handleQuote(request, env, deps) {
       const code = applied.attribution?.[0] ?? '';
       const plan = deps.raw ? await intakePlan(deps.raw, env, code) : { mode: 'none', reason: 'no-question-set', carrierId: null };
       record.intakes = record.intakes ?? {};
-      const intake = (record.intakes[category.id] ??= { code, carrierId: plan.carrierId ?? null, startedAt: iso, status: 'in-progress', flag: null, answers: [] });
+      const intake = (record.intakes[category.id] ??= { code, carrierId: plan.carrierId ?? null, startedAt: iso, status: 'in-progress', flag: null, intendedUse: record.intendedUse?.label ?? null, quote: applied.quote, answers: [] });
       if (plan.mode !== 'questions') {
         intake.status = 'no-questions';
         intake.reason = plan.reason;
@@ -325,7 +332,8 @@ export async function handleQuote(request, env, deps) {
               'Quote Lead ID': v.leadId,
               'First Name': record.firstName,
               'Phone Number': displayPhone(record.phone),
-              'Quote Category': category.label,
+              'Quote Category': applied.category,
+              'Intended Use': record.intendedUse?.label ?? '',
               'Health Answers': intake.answers.map((a) => `${a.section} ${a.number}: ${a.answer.toUpperCase()}`).join('; '),
               'Health Review': intake.flag === 'may-not-qualify' ? 'A YES answer may rule out this plan: review other coverage' : 'No answer ruled out this plan',
             }

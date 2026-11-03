@@ -221,7 +221,7 @@ window.addEventListener('ff:funnel', (e) => {
   const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown }>).detail ?? {};
   if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
   const params: Record<string, string | number> = {};
-  if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 8) params.funnel_step = detail.step;
+  if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
   if (typeof detail.category === 'string' && FUNNEL_CATEGORIES.has(detail.category)) params.price_category = detail.category;
   ga4('event', detail.name, params);
 });
