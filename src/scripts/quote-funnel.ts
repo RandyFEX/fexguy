@@ -11,12 +11,10 @@
 //
 // Privacy: the name and phone number stay in memory only (never storage,
 // URLs, the console or analytics). Analytics get event names and step
-// numbers only (tracking.ts, GA4). Randy's notification goes through the
-// existing Formspark website form, with Turnstile, once per verified lead and
-// once per Apply Now category (the server decides; never in test mode).
+// numbers only (tracking.ts, GA4). Leads are saved in the server's Redis
+// record (v6.2); this page makes no Formspark, Turnstile or email requests.
 import { lead } from '@/config/lead';
 import { leadSourceFields } from '@/scripts/lead-source';
-import { turnstileFor } from '@/scripts/turnstile';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 
 type Gender = 'male' | 'female';
@@ -75,7 +73,6 @@ if (root) {
   const progressLabel = $('[data-qf-progress-label]');
   const progressWrap = $('[data-qf-progress-wrap]');
   const testBanner = $('[data-qf-test]');
-  const turnstile = turnstileFor(root.querySelector<HTMLElement>('[data-turnstile]'), () => {});
 
   const answers: Partial<Quote> & { state?: string; use?: string } = {};
   try {
@@ -107,7 +104,6 @@ if (root) {
     const target = n === 8 && !unlocked ? root!.querySelector<HTMLElement>('#qf-unlock-title') : steps.get(n)?.querySelector<HTMLElement>('.qf-q');
     target?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    if (n === 7 || n === 8) turnstile.prepare();
   }
   /** Step 7: the visitor's own selections (Gender | Age | State | Tobacco | Coverage). */
   function fillSummary() {
@@ -340,7 +336,6 @@ if (root) {
     track('quote_sms_verified');
     complete(8);
     setStatus(verifyStatus, '');
-    if (body.notify) void notifyRandy(body.notify);
     unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
   });
   resendBtn.addEventListener('click', async () => {
@@ -361,22 +356,6 @@ if (root) {
     editPhone();
   });
   $('[data-qf-edit-phone]').addEventListener('click', editPhone);
-
-  /** Randy's notification through the existing Formspark website form. */
-  async function notifyRandy(fields: Record<string, string>) {
-    const token = await turnstile.token();
-    if (!token) return false;
-    const data: Record<string, string> = { ...fields, 'cf-turnstile-response': token };
-    for (const [k, v] of Object.entries(leadSourceFields())) if (v) data[k] = v;
-    try {
-      const res = await fetch(lead.formspark.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
-      turnstile.reset();
-      return res.ok;
-    } catch {
-      turnstile.reset();
-      return false;
-    }
-  }
 
   // Step 7 (unlocked): live prices with free repricing. Carrier names and
   // logos stay blurred; the browser only ever gets attribution codes.
@@ -652,7 +631,6 @@ if (root) {
       setStatus(intakeStatus, r.body.message ?? `Sorry, something went wrong. Please call ${lead.phone.display}.`, true);
       return;
     }
-    if (r.body.notify) void notifyRandy(r.body.notify);
     if (r.body.status === 'question') {
       const q = r.body.question;
       questionId = q.id;
@@ -719,7 +697,8 @@ if (root) {
         return;
       }
       setStatus(applyStatus, '');
-      applyNotified = body.notify ? await notifyRandy(body.notify) : true;
+      // v6.2: /help/ counts the lead once the server has saved the Apply Now record.
+      applyNotified = body.saved === true;
       intakeCategory = id;
       intakeTitle.textContent = 'Application questions';
       intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;

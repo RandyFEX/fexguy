@@ -24,9 +24,14 @@ script is `src/scripts/quote-funnel.ts`. Prices come from the rate engine
 5. `apply` re-prices the chosen category on the server, records it, and the
    page continues to /help/.
 
-Randy is notified through the existing Formspark website form, with a
-Turnstile token, once per verified lead and once per Apply Now category. The
-server decides when. Test mode never notifies.
+v6.2: the funnel sends no notifications and makes no Formspark, Cloudflare
+Turnstile or email-service requests. Every lead is saved in the Redis
+evidence record at contact submission (`start`, before any code is
+entered): name, mobile, state, intended use, quote, consent, attribution
+(`source`) and client details; Apply Now, call taps and health answers are
+added to the same record. Retrieve leads with `scripts/quote-evidence.mjs`.
+`apply` returns `saved: true` once the record is written; /help/ counts the
+conversion only then.
 
 ## v2.5 pricing screen and Apply Now intake
 

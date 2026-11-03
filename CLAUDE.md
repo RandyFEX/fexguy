@@ -1395,6 +1395,15 @@ scope protection wins.
   (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
   events (tracking.ts), no personal data, nothing to Meta.
+  v6.1/v6.2 (Randy, November 2026): the funnel uses no Formspark, no
+  Cloudflare Turnstile and no email service (never add them back to it;
+  the site's other forms keep Formspark and Turnstile). v6.2 dropped the
+  v6.1 Resend emails: there are no lead notifications for now (a
+  GoHighLevel integration is planned separately). Every lead is saved in
+  the Redis evidence record at contact submission (before any code) and is
+  the lead record; /help/ counts the conversion once `apply` returns
+  `saved: true`. The unit and browser tests fail on any Formspark,
+  Turnstile or Resend request from the funnel.
 
 ## Site search (Pagefind, built October 2026)
 

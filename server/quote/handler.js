@@ -10,6 +10,10 @@
 //   session  is this browser verified? (restores the results after a refresh)
 //   apply    Apply Now on a category: server re-prices and records it
 //
+// v6.2: no notifications. The funnel makes no Formspark, Turnstile or email
+// requests; every lead (contact details, quote, attribution, consent) is
+// saved in the Redis evidence record, which is the lead record.
+//
 // Security: same-site Origin only; strict input whitelists; per-IP,
 // per-phone and global SMS limits (SMS-pumping protection: US numbers only);
 // 5 code attempts per verification; codes expire with Twilio's 10-minute
@@ -19,7 +23,7 @@
 
 import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_VERSIONS, VERIFY_NOTICE_VERSIONS } from './consent.js';
-import { displayPhone, maskPhone, toE164US } from './phone.js';
+import { maskPhone, toE164US } from './phone.js';
 import { PUBLIC_TEST_CODE_NOTE, verifyClient } from './twilio.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
@@ -83,27 +87,6 @@ function parseSource(src) {
   if (out.originUrl && !/^https?:\/\/[^\s]+$/.test(out.originUrl)) delete out.originUrl;
   return out;
 }
-
-/** v5.8: the visit's entry for Randy's notifications (empty fields left out). @param {Record<string, string> | undefined} src */
-function entryFields(src) {
-  /** @type {Record<string, string>} */
-  const out = {};
-  if (!src) return out;
-  if (src.entryType) out['Entry Location'] = ENTRY_LABELS[/** @type {keyof typeof ENTRY_LABELS} */ (src.entryType)];
-  if (src.originTitle) out['Original Article'] = src.originTitle;
-  if (src.originUrl) out['Original Article URL'] = src.originUrl;
-  if (src.entryGender) out['Entry Gender'] = src.entryGender === 'female' ? 'Female' : 'Male';
-  if (src.entryAt) out['Entry Time'] = src.entryAt;
-  return out;
-}
-
-/** @param {{ age: number, gender: string, tobacco: boolean, coverage: number }} q */
-const quoteFields = (q) => ({
-  'Quote Age': String(q.age),
-  'Quote Sex': q.gender === 'female' ? 'Female' : 'Male',
-  'Quote Tobacco': q.tobacco ? 'Smoker' : 'Non-Smoker',
-  'Quote Coverage': `$${q.coverage.toLocaleString('en-US')}`,
-});
 
 /**
  * @typedef {ReturnType<typeof import('./store.js').quoteStore>} QuoteStore
@@ -193,11 +176,13 @@ export async function handleQuote(request, env, deps) {
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
         applications: [],
       };
+      // The lead is saved before anything else can fail.
+      await store.putLead(leadId, record);
+      await store.indexPhone(phoneHash, leadId);
       const sent = await verify.start(phone);
       record.verification.startSid = sent.ok ? sent.sid : null;
       if (!sent.ok) record.verification.status = 'send-failed';
       await store.putLead(leadId, record);
-      await store.indexPhone(phoneHash, leadId);
       await store.event(leadId, { at: iso, type: sent.ok ? 'sms-sent' : 'sms-send-failed', provider: record.verification.provider, sid: sent.ok ? sent.sid : null, error: sent.ok ? null : sent.error });
       if (!sent.ok) return json(502, { status: 'send-failed', message: 'We could not send a code to that number. Please check it or call 888-862-9456.' });
       await store.putPending(leadId, { phone, phoneHash, attempts: 0, resends: 0, lastSentAt: now }, PENDING_MS);
@@ -260,22 +245,7 @@ export async function handleQuote(request, env, deps) {
       const exp = now + SESSION_MS;
       await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
       const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
-      // One notification per verified lead, never for test-mode leads.
-      const notify = !test && (await store.once(leadId, 'verified'))
-        ? {
-            'Quote Event': publicTest ? 'Quote request (temporary test code)' : 'Verified quote request',
-            'Quote Lead ID': leadId,
-            Name: record.firstName,
-            'Phone Number': displayPhone(record.phone),
-            State: record.state,
-            'Phone Verified': publicTest ? 'No (temporary test code; no SMS sent)' : `Yes (${iso})`,
-            'Intended Use': record.intendedUse?.label ?? '',
-            'Contact Consent': record.consent.given ? `Yes (${record.consent.version})` : 'No',
-            ...quoteFields(record.quoteAtSubmission),
-            ...entryFields(record.source),
-          }
-        : null;
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, notify }, { 'Set-Cookie': cookie });
+      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test }, { 'Set-Cookie': cookie });
     }
 
     case 'session': {
@@ -304,24 +274,9 @@ export async function handleQuote(request, env, deps) {
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
       await store.event(v.leadId, { at: iso, type: 'apply-now', ...application });
-      const notify = record.mode !== 'test' && (await store.once(v.leadId, `apply:${category.id}`))
-        ? {
-            'Quote Event': 'Apply Now',
-            'Quote Lead ID': v.leadId,
-            Name: record.firstName,
-            'Phone Number': displayPhone(record.phone),
-            State: record.state,
-            'Intended Use': record.intendedUse?.label ?? '',
-            'Quote Category': priced.label,
-            'Quote Monthly Premium': `$${priced.monthlyPremium}`,
-            'Quote Product Codes': priced.attribution.join(', '),
-            ...quoteFields(quote),
-            ...entryFields(record.source),
-          }
-        : null;
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
       const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
-      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
+      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', saved: true, intake });
     }
 
     // "Call to Get Approved" tap on a revealed card (v3.7): a first-party
@@ -385,19 +340,7 @@ export async function handleQuote(request, env, deps) {
       }
       await store.putLead(v.leadId, record);
       if (intake.status !== 'in-progress') {
-        const notify = record.mode !== 'test' && (await store.once(v.leadId, `intake:${category.id}`))
-          ? {
-              'Quote Event': 'Health questions answered',
-              'Quote Lead ID': v.leadId,
-              Name: record.firstName,
-              'Phone Number': displayPhone(record.phone),
-              'Quote Category': applied.category,
-              'Intended Use': record.intendedUse?.label ?? '',
-              'Health Answers': intake.answers.map((a) => `${a.section} ${a.number}: ${a.answer.toUpperCase()}`).join('; '),
-              'Health Review': intake.flag === 'may-not-qualify' ? 'A YES answer may rule out this plan: review other coverage' : 'No answer ruled out this plan',
-            }
-          : null;
-        return json(200, { status: 'done', reason: intake.status, flag: intake.flag, notify });
+        return json(200, { status: 'done', reason: intake.status, flag: intake.flag });
       }
       const next = plan.questions[intake.answers.length];
       return json(200, { status: 'question', question: publicQuestion(next, intake.answers.length + 1, plan.questions.length) });

@@ -12,6 +12,9 @@ const URL_ = `${srv.base}/free-quote/`;
 const OUT = process.env.OUT ?? '';
 const NOTE = 'Enter access code 123456 to view your insurance quotes.';
 const browser = await chromium.launch();
+// v6.1/v6.2: requests the quote funnel must never make (Formspark, Cloudflare Turnstile, Resend).
+const FORBIDDEN = /^https:\/\/([a-z0-9-]+\.)*(submit-form\.com|challenges\.cloudflare\.com|api\.resend\.com|resend\.com)\//;
+const forbidden = [];
 const results = [];
 const check = async (name, fn) => {
   try {
@@ -30,8 +33,8 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
   const ctx = await browser.newContext(opts);
-  await ctx.route('https://submit-form.com/**', (r) => r.fulfill({ status: 200, body: '{}' }));
-  await ctx.route('https://challenges.cloudflare.com/**', (r) => r.fulfill({ status: 200, contentType: 'text/javascript', body: '' }));
+  // v6.2: the funnel never contacts Formspark, Cloudflare Turnstile or Resend; any such request is recorded and fails the test.
+  await ctx.route(FORBIDDEN, (r) => { forbidden.push(`${r.request().url()} (from ${r.request().frame()?.url() ?? '?'})`); return r.abort(); });
   const page = await ctx.newPage();
 
   await check(`${name}: unlock panel shows the access-code instruction instead of the SMS sentence`, async () => {
@@ -118,6 +121,10 @@ await check('evidence: real production leads, consent kept, never marked SMS-ver
     assert(r.temporaryCodeNotice === NOTE, 'instruction shown not recorded');
   }
   return `${recs.length} records`;
+});
+
+await check('v6.2: no Formspark, Turnstile or Resend request from the quote funnel (contact, code, prices, Apply Now)', async () => {
+  if (forbidden.length) throw new Error(forbidden.join('; '));
 });
 
 await browser.close();
