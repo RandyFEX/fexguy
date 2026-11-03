@@ -49,7 +49,7 @@ const visible = (p, sel) => p.isVisible(sel);
 const noHScroll = (p) => p.evaluate(() => document.documentElement.scrollWidth <= innerWidth);
 
 // ---- Desktop ---------------------------------------------------------------
-for (const width of [1024, 1440]) {
+for (const width of [1200, 1440, 1920]) {
   await test(`desktop ${width}: hover opens, moving into the panel keeps it open, leaving closes it`, async () => {
     const p = await page('/about/', { width });
     await p.hover('#nav-trigger-company-reviews');
@@ -121,6 +121,58 @@ await test('desktop: phone contact unchanged (label, icon, website number)', asy
   assert.ok(await visible(p, 'header [data-header-phone] .nav__phone-icon'));
   await p.context().close();
 });
+// One-row desktop header (Randy, V3.1): logo, categories, phone contact,
+// centered on one line; no GET A QUOTE button; the logo stays prominent.
+for (const width of [1200, 1280, 1440, 1920]) {
+  await test(`desktop ${width}: one-row header, prominent logo, no header quote button`, async () => {
+    const p = await page('/about/', { width });
+    const m = await p.evaluate(() => {
+      const box = (sel) => { const e = [...document.querySelectorAll(sel)].find((x) => x.getClientRects().length); return e && e.getBoundingClientRect(); };
+      const mid = (r) => r.top + r.height / 2;
+      const header = box('header.site-header'), logo = box('.site-header__brand img'), phone = box('header [data-header-phone]');
+      const trigs = [...document.querySelectorAll('[data-mega-nav] .nav__trigger')].map((t) => t.getBoundingClientRect());
+      return {
+        h: header.height, logoW: logo.width, logoRatio: logo.width / logo.height,
+        mids: [mid(logo), mid(phone), ...trigs.map(mid)], tops: trigs.map((t) => Math.round(t.top)),
+        order: logo.right <= trigs[0].left && trigs.at(-1).right <= phone.left,
+        quote: [...document.querySelectorAll('header .nav__quote')].some((q) => q.getClientRects().length),
+        toggle: !!box('.nav__toggle'),
+      };
+    });
+    assert.ok(m.h <= 80, `header ${m.h}px tall`);
+    assert.ok(m.logoW >= (width >= 1260 ? 306 : 245), `logo ${m.logoW}px wide`);
+    assert.ok(Math.abs(m.logoRatio - 1987 / 285) < 0.05, 'logo proportions changed');
+    assert.ok(Math.max(...m.mids) - Math.min(...m.mids) <= 2, `not vertically centered: ${m.mids.map(Math.round)}`);
+    assert.equal(new Set(m.tops).size, 1, 'categories not on one row');
+    assert.ok(m.order, 'logo, categories, phone are not in that order');
+    assert.ok(!m.quote, 'GET A QUOTE still in the desktop header');
+    assert.ok(!m.toggle, 'Menu button shown on desktop');
+    await p.context().close();
+  });
+}
+for (const width of [768, 1024, 1199]) {
+  await test(`tablet ${width}: Menu button with the phone contact beside it`, async () => {
+    const p = await page('/about/', { width });
+    assert.ok(await visible(p, '.nav__toggle'));
+    const contact = p.locator('header [data-header-phone]');
+    assert.ok(await contact.isVisible());
+    assert.match((await contact.innerText()).replace(/\s+/g, ' '), /^Speak With a Licensed Agent 888-862-9456$/);
+    assert.ok(await visible(p, 'header [data-header-phone] .nav__phone-icon'));
+    await p.click('.nav__toggle');
+    assert.ok(await visible(p, '#site-menu .nav__quote'), 'menu lost GET A QUOTE');
+    assert.ok(await noHScroll(p));
+    await p.context().close();
+  });
+}
+await test('phone 375: header shows logo and Menu; the menu has GET A QUOTE and the number', async () => {
+  const p = await page('/about/', { width: 375 });
+  assert.ok(!(await p.locator('header [data-header-phone]').isVisible()));
+  await p.click('.nav__toggle');
+  assert.ok(await visible(p, '#site-menu .nav__quote'));
+  assert.equal(await p.getAttribute('#site-menu .nav__menu-phone', 'href'), 'tel:8888629456');
+  assert.ok(await visible(p, '#site-menu .nav__menu-phone'));
+  await p.context().close();
+});
 await test('desktop without JavaScript: links in the HTML, panels open on hover and focus', async () => {
   const p = await page('/about/', { js: false });
   assert.ok((await p.locator('[data-mega-nav] a').count()) > 60);
@@ -133,7 +185,7 @@ await test('desktop without JavaScript: links in the HTML, panels open on hover 
 });
 
 // ---- Small screens ---------------------------------------------------------
-for (const width of [320, 375, 390, 768]) {
+for (const width of [320, 375, 390, 768, 1024]) {
   await test(`small screen ${width}: Menu opens, accordion, one category open, no horizontal scroll`, async () => {
     const p = await page('/about/', { width });
     assert.ok(!(await visible(p, '#nav-trigger-life-insurance')));
@@ -176,18 +228,18 @@ for (const width of [320, 375, 390]) {
     await p.context().close();
   });
 }
-for (const width of [768, 1024, 1440]) {
+for (const width of [768, 1024, 1200, 1440]) {
   await test(`${width}: every menu link is shown`, async () => {
     const p = await page('/about/', { width });
-    if (width < 1024) await p.click('.nav__toggle');
+    if (width < 1200) await p.click('.nav__toggle');
     let total = 0;
     for (const id of Object.keys(PHONE_COUNTS)) {
       await p.click(`#nav-trigger-${id}`);
       const all = await p.locator(`#nav-panel-${id} a`).count();
       assert.equal((await shownLinks(p, id)).length, all, `${id} hides links at ${width}`);
       total += all;
-      if (width >= 1024) await p.mouse.move(width / 2, 880);
-      if (width >= 1024) await p.waitForTimeout(700);
+      if (width >= 1200) await p.mouse.move(width / 2, 780);
+      if (width >= 1200) await p.waitForTimeout(700);
     }
     assert.equal(total, 79, `menu has ${total} links`);
     await p.context().close();
