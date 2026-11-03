@@ -52,8 +52,8 @@ is in place; see src/content/README.md for how pages were migrated.
   upper-right header label. ("Call Randy" elsewhere in marketing content,
   buttons and copy is fine.) The label and icon live in `src/config/phones.ts`
   (`HEADER_PHONE_LABEL`, `HEADER_PHONE_ICON_PATH`); the site header uses them
-  in `src/components/Navigation.astro` (desktop nav; the mobile menu shows the
-  plain number) and the standalone landing headers (/facebook/, /free-quote/,
+  in `src/components/Navigation.astro` (the header contact from 48rem; the
+  phone menu shows the plain number) and the standalone landing headers (/facebook/, /free-quote/,
   /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
   every built header: one `data-header-phone` link with that label and icon,
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
@@ -1360,18 +1360,24 @@ scope protection wins.
   pages carry a mega menu with five categories, Life Insurance, Company
   Reviews, Health & Eligibility, Guides & Tools and About Us, each a panel of
   grouped links (`megaNav` in src/config/site.ts; component
-  src/components/Navigation.astro). Desktop (64rem+): two header rows (logo,
-  GET A QUOTE and the phone contact; then the categories); panels open on
+  src/components/Navigation.astro). Desktop (75rem+; Randy, November 2026,
+  V3.1): one header row, 65px tall: the logo, the five categories centered,
+  and the phone contact on the right; no GET A QUOTE button in the desktop
+  header (the homepage hero keeps its own). On these pages the header runs up
+  to 80rem wide so the wordmark keeps its full 307px from 1260px up (246px,
+  80%, at 1200px; proportions never change). Under 75rem: the Menu button,
+  with the phone contact beside it from 48rem; the menu keeps GET A QUOTE
+  (and the plain number on phones). Panels open on
   hover, click, Enter/Space or Down Arrow and close on Escape (focus returns
   to the button), an outside click, focus leaving, or another category
-  opening. Small screens: the Menu button, then GET A QUOTE, the plain number
-  and the categories as a one-open-at-a-time accordion. All links are in the
+  opening; on desktop a panel starts right under its button. In the Menu
+  panel the categories are a one-open-at-a-time accordion. All links are in the
   HTML; without JavaScript panels open on hover/focus (desktop) or are listed
   open. Only published, built, non-redirect pages go in the menu: never "#",
   placeholders, unpublished or review-only tools
   (/health-question-search-preview/), or campaign pages. /roku/ (campaign
   number, site header) keeps the compact menu (`primaryNav`: GET A QUOTE,
-  RESOURCES, REVIEWS, ABOUT); /facebook/, /free-quote/ and /help/ keep their
+  RESOURCES, REVIEWS, ABOUT; one row from 64rem, unchanged); /facebook/, /free-quote/ and /help/ keep their
   own simplified headers. Phone menu (Randy, November 2026, V2.1): under
   48rem each category shows its priority links plus its directory link (Life
   Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 13,
