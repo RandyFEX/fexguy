@@ -1269,6 +1269,14 @@ scope protection wins.
   recorded as a completed call or an approval. v3.8: Gerber's card line
   reads "No Health Questions" (`CARRIER_DISPLAY` `subtitle`); the official
   product name Guaranteed Life stays in records, attribution and analytics.
+  v4.1: every orange button (See My Instant Quotes, Text Me a Code,
+  Verify Code, Call to Get Approved) uses the homepage GET A QUOTE tokens
+  exactly (--color-cta #c2410c, --color-on-cta white, hover brightness
+  0.9) with bold white text (the v3.7 black text is gone); the contact
+  form is 40rem wide on desktop so the consent text fits in about three
+  lines at 16px; locked cards' disabled button reads "Unlock to See
+  Rates"; revealed cards: 48px orange call button above the 44px green
+  Apply Online, and compact one-line timing panels (5px padding).
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your

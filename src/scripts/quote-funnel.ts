@@ -425,7 +425,9 @@ if (root) {
       const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
-      el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+      const lockedApply = el.querySelector<HTMLButtonElement>('[data-qf-apply]')!;
+      lockedApply.disabled = true;
+      lockedApply.textContent = 'Unlock to See Rates';
       el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
       const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
@@ -481,6 +483,7 @@ if (root) {
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
     el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = state !== 'ok';
+    el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.textContent = 'Apply Online';
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
     timing.textContent = state === 'ok' ? timings.join(' / ') : '';
