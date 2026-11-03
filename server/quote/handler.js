@@ -20,7 +20,7 @@
 import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_VERSIONS, VERIFY_NOTICE_VERSIONS } from './consent.js';
 import { displayPhone, maskPhone, toE164US } from './phone.js';
-import { verifyClient } from './twilio.js';
+import { PUBLIC_TEST_CODE_NOTE, verifyClient } from './twilio.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
@@ -115,6 +115,8 @@ export async function handleQuote(request, env, deps) {
   const test = verify.mode === 'test';
   // v5.3: the temporary public test code (production, no Twilio): real leads, never SMS-verified.
   const publicTest = verify.mode === 'public-test';
+  // v5.4: the temporary-code instruction goes to the page only in that mode (never with Twilio).
+  const temp = publicTest ? { temporaryCodeNote: PUBLIC_TEST_CODE_NOTE } : {};
 
   switch (body.action) {
     case 'start': {
@@ -162,6 +164,8 @@ export async function handleQuote(request, env, deps) {
           version: body.consent ? body.consentVersion : null,
           text: consentText,
         },
+        // v5.4: in temporary-code mode the visitor saw this instruction instead of the SMS sentence.
+        ...(publicTest ? { temporaryCodeNotice: PUBLIC_TEST_CODE_NOTE } : {}),
         verifyNotice: { version: body.verifyNoticeVersion, text: VERIFY_NOTICE_VERSIONS[/** @type {keyof typeof VERIFY_NOTICE_VERSIONS} */ (body.verifyNoticeVersion)] },
         verification: { status: 'pending', requestedAt: iso, verifiedAt: null, provider: test ? 'test-mode' : publicTest ? 'temporary-public-test-code' : 'twilio-verify', startSid: null, checkSid: null },
         quoteAtSubmission: quote,
@@ -177,7 +181,7 @@ export async function handleQuote(request, env, deps) {
       await store.event(leadId, { at: iso, type: sent.ok ? 'sms-sent' : 'sms-send-failed', provider: record.verification.provider, sid: sent.ok ? sent.sid : null, error: sent.ok ? null : sent.error });
       if (!sent.ok) return json(502, { status: 'send-failed', message: 'We could not send a code to that number. Please check it or call 888-862-9456.' });
       await store.putPending(leadId, { phone, phoneHash, attempts: 0, resends: 0, lastSentAt: now }, PENDING_MS);
-      return json(200, { status: 'sent', lead: leadId, masked: maskPhone(phone), resendAfterMs: RESEND_COOLDOWN_MS, testMode: test });
+      return json(200, { status: 'sent', lead: leadId, masked: maskPhone(phone), resendAfterMs: RESEND_COOLDOWN_MS, testMode: test, ...temp });
     }
 
     case 'resend': {
@@ -255,9 +259,9 @@ export async function handleQuote(request, env, deps) {
 
     case 'session': {
       const v = await verifiedLead(request, env, store, now);
-      if (!v) return json(200, { status: 'not-verified' });
+      if (!v) return json(200, { status: 'not-verified', ...temp });
       const record = await store.getLead(v.leadId);
-      if (!record) return json(200, { status: 'not-verified' });
+      if (!record) return json(200, { status: 'not-verified', ...temp });
       return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' });
     }
 

@@ -1340,7 +1340,13 @@ scope protection wins.
   is sent; the code unlocks only that visitor's own session and quotes; the
   record says `test-code-accepted`, `phoneVerified: false` (never SMS
   verified); the leads are real (Randy is notified, the /help/ conversion
-  counts). Setting the Twilio variables ends it automatically. Consent box optional and unchecked;
+  counts). Setting the Twilio variables ends it automatically. v5.4: in
+  that mode only, the server sends the instruction "Enter access code
+  123456 to view your insurance quotes." (`PUBLIC_TEST_CODE_NOTE`; never in
+  the page HTML or in Twilio mode); it replaces the masked-number SMS
+  sentence in the Unlock panel, shows under "Enter the 6-digit code", and
+  Resend Code is hidden (no message is sent). Test:
+  tests/quote/funnel-temp-code.browser.mjs (in `npm run test:quote:browser`). Consent box optional and unchecked;
   its wording (`server/quote/consent.js`) is a DRAFT pending Randy's legal
   review. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel

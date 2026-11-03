@@ -20,7 +20,9 @@ import { config as hqsConfig } from '../../server/health-search/config.generated
 const DIST = fileURLToPath(new URL('../../dist/', import.meta.url));
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.avif': 'image/avif', '.svg': 'image/svg+xml', '.json': 'application/json' };
 
-export async function startFunnelServer() {
+// production: true runs the handlers as Production without Twilio (the v5.4 temporary
+// access-code mode); requests are given the funeralfunds.com origin.
+export async function startFunnelServer({ production = false } = {}) {
   const redis = await startRedis();
   const concept = hqsConfig.concepts[0].id;
   const qs = [];
@@ -29,7 +31,7 @@ export async function startFunnelServer() {
       qs.push({ id: `aetna-${sec.slice(-1).toLowerCase()}${i}`, carrierId: 'aetna', section: sec, number: String(i), text: `TEST ONLY ${sec} question ${i}?`, yes: { rule }, no: { classification: 'none', explanation: 'No effect.' }, search: { direct: [concept], related: [] } });
   await redis.store.set('hqs:questions:preview', JSON.stringify({ format: 1, target: 'preview', publishedAt: 't', total: qs.length, complete: false, questions: qs }));
   const engine = createEngine(loadDatasets());
-  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40) };
+  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production' } : {}) };
   const store = quoteStore(redis.store, env);
   const getEngine = async () => ({ engine, publishedAt: 'local' });
 
@@ -40,7 +42,7 @@ export async function startFunnelServer() {
       res.end(await out.text());
     };
     if (url.pathname === '/__evidence/') {
-      const ids = await redis.command(['KEYS', 'qe:preview:lead:*']);
+      const ids = await redis.command(['KEYS', `qe:${production ? 'production' : 'preview'}:lead:*`]);
       const records = [];
       for (const k of ids) records.push(JSON.parse(await redis.store.get(k)));
       res.writeHead(200, { 'content-type': 'application/json' });
@@ -49,7 +51,8 @@ export async function startFunnelServer() {
     if (url.pathname === '/api/quote/' || url.pathname === '/api/price-explorer/') {
       const chunks = [];
       for await (const c of req) chunks.push(c);
-      const r = new Request(url, { method: req.method, headers: /** @type {any} */ (req.headers), body: req.method === 'POST' ? Buffer.concat(chunks) : undefined });
+      const headers = /** @type {any} */ ({ ...req.headers, ...(production && req.headers.origin ? { origin: 'https://funeralfunds.com' } : {}) });
+      const r = new Request(url, { method: req.method, headers, body: req.method === 'POST' ? Buffer.concat(chunks) : undefined });
       if (url.pathname === '/api/quote/') return send(await handleQuote(r, env, { store, raw: redis.store, getEngine }));
       return send(await handlePriceExplorer(r, env, {
         store: redis.store, getEngine,

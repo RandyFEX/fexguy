@@ -26,6 +26,8 @@
 export const TEST_CODE = '123456';
 /** TEMPORARY public test code in production until Twilio is connected (v5.3). */
 export const PUBLIC_TEST_CODE_ENABLED = true;
+/** v5.4: the instruction shown in 'public-test' mode only (sent by the server, never in the page HTML). */
+export const PUBLIC_TEST_CODE_NOTE = `Enter access code ${TEST_CODE} to view your insurance quotes.`;
 
 /** @param {Record<string, string | undefined>} env */
 export function verifyMode(env) {

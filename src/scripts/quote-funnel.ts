@@ -255,6 +255,16 @@ if (root) {
   const verifyStatus = $('[data-qf-verify-status]');
   const verifyBtn = $<HTMLButtonElement>('[data-qf-verify-btn]');
   const resendBtn = $<HTMLButtonElement>('[data-qf-resend]');
+  // v5.4: temporary access-code mode. Only the server sends this instruction (never in Twilio
+  // mode); it replaces the SMS sentence, and no text claims a message was sent.
+  let tempCode = false;
+  function temporaryCode(note: unknown) {
+    if (typeof note !== 'string' || !note) return;
+    tempCode = true;
+    unlockPanel.dataset.tempCode = '';
+    root!.querySelectorAll<HTMLElement>('[data-qf-temp-note]').forEach((p) => { p.textContent = note; p.hidden = false; });
+    resendBtn.hidden = true;
+  }
   let resendTimer: number | undefined;
   function cooldown(ms: number) {
     window.clearInterval(resendTimer);
@@ -278,7 +288,7 @@ if (root) {
     const quote = quoteReady();
     if (!quote || !answers.state || !answers.use) return show(1);
     sendBtn.disabled = true;
-    setStatus(sendStatus, 'Sending your code…');
+    setStatus(sendStatus, tempCode ? '' : 'Sending your code…');
     const { http, body } = await api({
       action: 'start', firstName: firstInput.value.trim(), phone: unlockPhone.value.trim(), state: answers.state, intendedUse: answers.use, quote,
       consent: consentBox.checked, consentVersion: root!.dataset.consentVersion, verifyNoticeVersion: root!.dataset.verifyVersion,
@@ -292,13 +302,14 @@ if (root) {
     }
     track('quote_sms_request');
     leadId = body.lead;
+    temporaryCode(body.temporaryCodeNote);
     testBanner.hidden = !body.testMode;
     setStatus(sendStatus, '');
     sendForm.hidden = true;
     verifyForm.hidden = false;
     setStatus(verifyStatus, '');
     codeInput.value = '';
-    cooldown(body.resendAfterMs ?? 30000);
+    if (!tempCode) cooldown(body.resendAfterMs ?? 30000);
     codeInput.focus();
   });
 
@@ -747,6 +758,7 @@ if (root) {
   // any other (new tab, new visit) starts at the first question.
   (async () => {
     const { http, body } = await api({ action: 'session' });
+    temporaryCode(body.temporaryCodeNote);
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
     show(1, false);
   })();

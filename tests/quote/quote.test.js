@@ -141,6 +141,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   assert.equal(rec.verification.phoneVerified, false);
   assert.equal(rec.verification.verifiedAt, null);
   assert.equal(rec.consent.given, false);
+  assert.equal(rec.temporaryCodeNotice, 'Enter access code 123456 to view your insurance quotes.');
   // Production records stay in the production namespace, never the preview one.
   assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
   // The code alone opens nothing: another visitor without their own request gets no prices or session.
@@ -148,6 +149,24 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   assert.equal((await other.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).http, 410);
   assert.equal(await prodPrice(other), 401);
   assert.equal((await other.call({ action: 'session' }, PO)).body.status, 'not-verified');
+});
+
+test('v5.4: the access-code instruction is sent only in temporary-code mode, never with Twilio or on previews', async () => {
+  const NOTE = 'Enter access code 123456 to view your insurance quotes.';
+  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
+  const PO = { origin: 'https://funeralfunds.com' };
+  assert.equal((await prod.call({ action: 'session' }, PO)).body.temporaryCodeNote, NOTE);
+  assert.equal((await prod.call(startBody(), PO)).body.temporaryCodeNote, NOTE);
+  const tw = fakeTwilio();
+  const live = client({ ...TWILIO, VERCEL_ENV: 'production' }, { fetchImpl: tw.fetchImpl });
+  const liveSession = await live.call({ action: 'session' }, PO);
+  const liveStart = await live.call(startBody(), PO);
+  assert.equal(liveStart.body.status, 'sent');
+  assert.ok(!('temporaryCodeNote' in liveSession.body) && !('temporaryCodeNote' in liveStart.body));
+  assert.ok(!JSON.stringify(liveStart.body).includes('123456'));
+  assert.equal((await live.call({ action: 'check', lead: liveStart.body.lead, code: TEST_CODE }, PO)).body.status, 'wrong-code', 'Twilio mode never accepts the temporary code');
+  const preview = client(PREVIEW);
+  assert.ok(!('temporaryCodeNote' in (await preview.call({ action: 'session' })).body));
 });
 
 test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', async () => {
