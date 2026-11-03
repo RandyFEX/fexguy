@@ -64,7 +64,7 @@ sidebar: true
 
 <p>AARP members ages 50 to 85 can buy at least one of three types of AARP life insurance: term, permanent and guaranteed acceptance.</p>
 
-<p>Term life insurance is available to members who are 50 to 74 years old. You can buy up to $150,000 of coverage ($100,000 in New York). You can qualify for coverage without undergoing a medical exam.</p>
+<p>Term life insurance is available to members who are 50 to 74 years old. You can buy up to $150,000 of coverage ($100,000 in New York and Montana). You can qualify for coverage without undergoing a medical exam.</p>
 
 <p>Permanent life insurance is available to <a href="/aarp-burial-insurance-review/" target="_blank" rel="noreferrer noopener">AARP</a> members who are 50 to 80 years old. You can buy up to $50,000 coverage without a medical exam.</p>
 

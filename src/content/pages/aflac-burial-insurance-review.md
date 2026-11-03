@@ -100,7 +100,7 @@ sidebar: true
 <p>Issue ages: 45 to 80, age last birthday</p>
 
 <ul>
-<li>45-55 death benefit: $2,000-$50,000</li>
+<li>45-55 death benefit: $5,000-$50,000</li>
 <li>56-65 death benefit: $5,000-$40,000</li>
 <li>66-75 death benefit: $5,000-$30,000</li>
 <li>76-80 death benefit: $5,000-$20,000</li>
@@ -267,7 +267,7 @@ sidebar: true
 
 <p>Aflac was founded in 1955.</p>
 
-<p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. Aflac Final Expense is underwritten by Tier One Insurance Company, a subsidiary of Aflac Incorporated, and administered by Aetna Life Insurance Company. Their burial insurance is available in most states except West Coast and Northeast states.</p>
+<p>They only offer one life insurance product, the final expense or burial insurance, in their senior product suite. Aflac Final Expense is underwritten by Tier One Insurance Company, a subsidiary of Aflac Incorporated. Their burial insurance is available in most states except West Coast and Northeast states.</p>
 
 <h4><strong>Company address</strong></h4>
 

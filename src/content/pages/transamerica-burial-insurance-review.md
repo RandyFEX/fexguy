@@ -540,7 +540,7 @@ benefit plan.</p>
 
 <p>In 1930, the company purchased Occidental Life Insurance and started offering life insurance. Life insurance became their flagship product and remained the biggest part of the company’s operation. Their life insurance products include term life, whole life, final expense, and other supplemental products like long-term care and accidental death insurance.</p>
 
-<p>In 1956, the company became Transamerica Corporation. It became a part of one of the world’s leading financial institutions Aegon in 1999. Its final expense policies are issued by Transamerica Life Insurance Company.</p>
+<p>In 1956, the company became Transamerica Corporation. It became a part of one of the world’s leading financial institutions Aegon in 1999. Its final expense policies are issued by Transamerica Life Insurance Company (in New York, Transamerica Financial Life Insurance Company).</p>
 
 <p>Today Transamerica focuses on life insurance, retirement and investment products.</p>
 

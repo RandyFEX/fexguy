@@ -457,7 +457,7 @@ sidebar: true
 
 <p>Phoenix became a stock company in 2001, known as The Phoenix Companies, Inc. Nassau Re agreed to buy the company in 2015 and closed the deal in June 2016, improving the liquidity and financial strength of the organization. By 2018, Phoenix rebranded as Nassau Re. Phoenix Life continues to provide <a href="https://nsre.com/apply-for-final-expense-intro.html" target="_blank" rel="noreferrer noopener">insurance solutions</a> for the middle market.</p>
 
-<p>In most states, Phoenix Remembrance Life policies were issued by PHL Variable Insurance Company. In May 2024, PHL Variable was placed in rehabilitation under the supervision of the Connecticut Insurance Department. If you own one of these policies, check the Connecticut Insurance Department’s PHL Variable updates for how your coverage is affected.</p>
+<p>In most states, Phoenix Remembrance Life policies were issued by PHL Variable Insurance Company. In May 2024, PHL Variable was placed in rehabilitation under the supervision of the Connecticut Insurance Department. In December 2025, the Department told the court that PHL Variable needs to be liquidated. If you own one of these policies, check the Connecticut Insurance Department’s PHL Variable updates for how your coverage is affected.</p>
 
 <p><br><strong>PHOENIX LIFE FINANCIAL RATINGS</strong></p>
 
