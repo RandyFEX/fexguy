@@ -233,7 +233,7 @@ const TOTAL = 8;
               <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
             </form>
             <form class="qf-form qf-form--compact" data-qf-verify novalidate hidden>
-              <p class="qf-note">Enter the 6-digit code sent to <strong data-qf-masked></strong>.</p>
+              <p class="qf-code-note">Enter the 6-digit code sent to <strong data-qf-masked></strong>.</p>
               <label class="visually-hidden" for="qf-code">6-digit code</label>
               <div class="qf-code-row">
                 <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" placeholder="000000" required />
@@ -442,7 +442,7 @@ const TOTAL = 8;
   .qf-btn-cta:hover:not(:disabled), .qf-card__call:hover { background: var(--color-cta); color: var(--color-on-cta); filter: brightness(0.9); }
   .qf-btn-cta:active:not(:disabled), .qf-card__call:active { filter: brightness(0.82); }
   .qf-btn-cta:disabled { background: var(--color-cta); color: var(--color-on-cta); opacity: 0.6; cursor: not-allowed; filter: none; }
-  .qf-adjust-intro { margin: 14px 0 0; text-align: center; font-weight: 700; font-size: 1.125rem; color: #173f35; }
+  .qf-adjust-intro { margin: 12px 0 0; text-align: center; font-weight: 700; font-size: 1.125rem; color: #173f35; }
   .qf-adjust-intro[hidden] { display: none; }
   .qf-adjust-intro + .qf-adjust { margin-top: var(--space-2); }
 
@@ -461,7 +461,7 @@ const TOTAL = 8;
   .qf-control { min-height: 2.75rem; font-size: 1.0625rem; }
   .qf-adjust .qf-select { max-width: none; min-height: 2.75rem; padding: 0 var(--space-2); }
   /* v4.5: desktop selection controls about the height of Apply Online Now (40px); phones keep 44px. */
-  @media (min-width: 52rem) { .qf-control, .qf-adjust .qf-select { min-height: 2.5rem; } }
+  @media (min-width: 52rem) { .qf-control, .qf-adjust .qf-select { min-height: 2.25rem; } }
   .qf-seg__opts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
   .qf-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
   @media (max-width: 22rem) { .qf-seg__opts--coverage { grid-template-columns: 1fr 1fr; } }
@@ -470,10 +470,11 @@ const TOTAL = 8;
   .qf-seg__opt input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
   .qf-seg__opt span {
     display: flex; align-items: center; justify-content: center; padding: 0 var(--space-2);
-    border: 2px solid var(--color-primary); border-radius: var(--radius); background: #fff; color: var(--color-primary);
+    border: 2px solid #173f35; border-radius: var(--radius); background: #fff; color: #173f35;
     font-weight: 700; text-align: center; line-height: 1.1;
   }
-  .qf-seg__opt input:checked + span { background: var(--color-primary); color: #fff; }
+  /* v4.7: the visitor's current selections are charcoal; unselected stay white with a green outline. */
+  .qf-seg__opt input:checked + span { background: #454b49; color: #fff; border-color: #454b49; }
   .qf-seg__opt input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; box-shadow: 0 0 0 2px var(--color-focus-inner); }
   .qf-other--inline { max-width: 18rem; margin: var(--space-3) 0 0; }
 
@@ -489,6 +490,10 @@ const TOTAL = 8;
   .qf-unlock__number { margin: 0; text-align: center; font-size: 1.0625rem; }
   .qf-unlock__number .qf-link { min-height: 2.75rem; }
   .qf-note--small { font-size: 0.9375rem; }
+  /* v4.7: the code instruction is readable dark text (not muted gray), the number in bold. */
+  .qf-code-note { margin: 0; text-align: center; font-size: 1rem; line-height: 1.4; color: #1f2926; }
+  .qf-code-note strong { font-weight: 800; }
+  .qf-unlock #qf-verify-note { font-size: 1rem; color: #1f2926; }
   .qf-code-row { display: grid; gap: var(--space-2); }
   @media (min-width: 30rem) { .qf-code-row { grid-template-columns: 1fr auto; } .qf-code-row .qf-continue { width: auto; padding-inline: var(--space-6); } }
   .qf-field[hidden], .qf-unlock__number[hidden] { display: none; }
@@ -512,24 +517,25 @@ const TOTAL = 8;
   .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-2); }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
-    display: grid; grid-template-rows: auto auto auto auto auto auto auto auto; justify-items: stretch; text-align: center; gap: var(--space-3);
+    display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);
     background: #fff; border: 1.5px solid #173f35; border-top: 8px solid #173f35; border-radius: 0.875rem;
-    padding: var(--space-4) var(--space-4) var(--space-5, 1.25rem);
+    padding: var(--space-4);
   }
   @media (min-width: 52rem) { .qf-card { grid-row: span 8; grid-template-rows: subgrid; } }
-  .qf-card__logo { height: 5.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; overflow: hidden; }
+  .qf-card__logo { height: 4.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; overflow: hidden; }
   .qf-card__logo :global(img) { display: block; max-width: 92%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .qf-card__logo :global(.qf-logo-name) { font-weight: 800; font-size: 1.375rem; line-height: 1.1; color: #173f35; }
   .qf-card__logo :global(.qf-logo-stand) { font-weight: 800; font-size: 1.5rem; color: #173f35; }
   .qf-card__cat { background: #e3ece0; border-radius: 0.625rem; padding: 0.5rem var(--space-3); display: flex; align-items: center; justify-content: center; }
   .qf-card__label { margin: 0; font-size: 1.1875rem; line-height: 1.2; font-weight: 800; color: #1c2b26; text-wrap: balance; }
-  .qf-card__plan { margin: 0; font-size: 1.1875rem; font-weight: 500; color: #4a524e; line-height: 1.3; }
+  /* v4.7: the product line is centered in an equal-height row (subgrid on desktop). */
+  .qf-card__plan { margin: 0; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; font-weight: 500; color: #4a524e; line-height: 1.25; }
   .qf-card__price { margin: 0; line-height: 1; }
   .qf-card__amount { display: block; font-size: 3rem; font-weight: 800; color: #111; letter-spacing: -0.01em; }
-  .qf-card__per { display: block; margin-top: var(--space-1); font-size: 1.125rem; color: #5b6560; font-weight: 500; }
+  .qf-card__per { display: block; margin-top: 2px; font-size: 1.125rem; color: #5b6560; font-weight: 500; }
   /* v4.1: compact (5px vertical padding, one line on desktop), about the
      height of Apply Online, close to the call button. */
-  .qf-card__timing { margin: 0 0 calc(-1 * var(--space-1)); background: #e3ece0; border-radius: 0.5rem; padding: 4px var(--space-2); font-weight: 800; font-size: 0.9375rem; line-height: 1.2; color: #1c2b26; display: flex; align-items: center; justify-content: center; gap: 0.375rem; }
+  .qf-card__timing { margin: 0; min-height: 26px; background: #e3ece0; border-radius: 0.5rem; padding: 4px var(--space-2); font-weight: 800; font-size: 0.9375rem; line-height: 1.2; color: #1c2b26; display: flex; align-items: center; justify-content: center; gap: 0.375rem; }
   .qf-card__timing :global(svg) { flex: none; width: 1.125rem; height: 1.125rem; }
   @media (min-width: 52rem) { .qf-card__timing { white-space: nowrap; } }
   @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__timing { font-size: 0.8125rem; padding-inline: 0.375rem; gap: 0.25rem; } .qf-card__timing :global(svg) { width: 1rem; height: 1rem; } }
@@ -541,14 +547,13 @@ const TOTAL = 8;
   .qf-card__call svg { flex: none; }
   @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__call { font-size: 0.9375rem; gap: 0.3rem; } }
   .qf-card__call[hidden] { display: none; }
-  .qf-card__call + .qf-card__apply { margin-top: calc(-1 * var(--space-1)); }
   /* Desktop keeps the hidden timing row's space so the rows line up. */
   @media (min-width: 52rem) { .qf-card__timing[hidden] { display: block; visibility: hidden; } }
   .qf-card__note { margin: 0; color: var(--color-text-muted); }
   .qf-card__note:empty { display: none; }
   /* Secondary (v4.1): 44px, below and smaller than the 48px orange call button. */
   .qf-card__apply { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 2.75rem; padding: 0 var(--space-2); font-size: 1.0625rem; font-weight: 800; background: #173f35; border-color: #173f35; color: #fff; border-radius: 0.625rem; }
-  @media (min-width: 52rem) { .qf-card__apply { min-height: 2.5rem; } }
+  @media (min-width: 52rem) { .qf-card__apply { min-height: 2.25rem; } }
   @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__apply { font-size: 0.9375rem; } }
   .qf-card__apply:hover:not(:disabled) { background: #0f2d25; }
   .qf-card__apply:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }

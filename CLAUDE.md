@@ -1289,6 +1289,13 @@ scope protection wins.
   the cards); desktop heights: call 48px, Apply Online Now 40px (flex
   centered), adjustment controls 40px, timing panels about 26px; phones
   keep 44px touch targets.
+  v4.7: the results-screen selections are charcoal (#454B49, white text,
+  #454B49 border; unselected white with #173F35 text and border; the
+  questionnaire steps keep green); desktop: Apply Online Now and the
+  adjustment controls 36px, call 48px, timing panels 26px; tighter cards
+  (4.5rem logo area, 8px row gap, centered product line, 16px padding),
+  12px under the cards; the code instruction reads "Enter the 6-digit code
+  sent to (***) ***-1234." in dark #1F2926 16px text, number in bold.
   Before verification the cards are blurred stand-ins under a hidden
   heading, followed by the red "Unlock Your Rates" panel (orange Text Me
   a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your
