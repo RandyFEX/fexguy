@@ -248,7 +248,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     });
     assert(u.title === 'Unlock Your Rates' && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
     const panel = await page.evaluate(() => {
-      const parts = ['#qf-unlock-title', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="number"]', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
+      const parts = ['#qf-unlock-title', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="number"]', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="change"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
       const cs = (e) => getComputedStyle(e);
       return {
         texts: parts.map((e) => e.textContent.replace(/\s+/g, ' ').trim()),
@@ -256,16 +256,22 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         titleColor: cs(parts[0]).color,
         explain: [Number(cs(parts[1]).fontWeight), cs(parts[1]).color],
         number: [Number(cs(parts[2].querySelector('strong')).fontWeight), cs(parts[2].querySelector('strong')).color],
-        rates: [parseFloat(cs(parts[4]).fontSize), cs(parts[4]).color],
-        changeIsButton: parts[2].querySelector('[data-qf-edit-phone]')?.tagName === 'BUTTON',
+        rates: [parseFloat(cs(parts[5]).fontSize), cs(parts[5]).color],
+        changeIsButton: parts[4].querySelector('[data-qf-edit-phone]')?.tagName === 'BUTTON' && !parts[2].querySelector('[data-qf-edit-phone]'),
+        changeCentered: (() => { const b = parts[3].getBoundingClientRect(), c = parts[4].querySelector('button').getBoundingClientRect(); return Math.abs(b.left + b.width / 2 - (c.left + c.width / 2)) <= 1.5; })(),
         oldText: /Msg & data rates/.test(document.querySelector('[data-qf-unlock]').textContent),
       };
     });
     const last4u = PHONES[name].replace(/\D/g, '').slice(-4);
-    assert(JSON.stringify(panel.texts) === JSON.stringify(['Unlock Your Rates', "We'll text a 6-digit verification code to your mobile number.", `(•••) •••-${last4u} Change Number`, 'Text Me My Access Code', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
+    assert(JSON.stringify(panel.texts) === JSON.stringify(['Unlock Your Rates', "We'll text a 6-digit verification code to your mobile number.", `(•••) •••-${last4u}`, 'Text Me My Access Code', 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
     assert(panel.tops.every((t, k) => k === 0 || t > panel.tops[k - 1]), `unlock panel order ${panel.tops}`);
     assert(panel.titleColor === 'rgb(185, 28, 28)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
-    assert(panel.rates[0] <= 14 && /^rgb\((\d+), \1, \1\)$|^rgb\(91, 101, 96\)$/.test(panel.rates[1]) && panel.changeIsButton && !panel.oldText, `rates line ${JSON.stringify(panel)}`);
+    assert(panel.rates[0] <= 14 && /^rgb\((\d+), \1, \1\)$|^rgb\(91, 101, 96\)$/.test(panel.rates[1]) && panel.changeIsButton && panel.changeCentered && !panel.oldText, `rates line ${JSON.stringify(panel)}`);
+    // Change Number still opens the number field (prefilled), then the panel is put back as it was.
+    await page.click('[data-qf-edit-phone]');
+    const edit = await page.evaluate(() => ({ field: !document.querySelector('[data-qf-phone-field]').hidden, focused: document.activeElement?.id === 'qf-unlock-phone', value: document.querySelector('#qf-unlock-phone').value }));
+    assert(edit.field && edit.focused && edit.value.replace(/\D/g, '') === PHONES[name].replace(/\D/g, ''), `Change Number ${JSON.stringify(edit)}`);
+    await page.evaluate(() => { document.querySelector('[data-qf-phone-field]').hidden = true; document.querySelector('[data-qf-phone-summary]').hidden = false; });
     assert(u.btn === 'Text Me My Access Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
     const digits = PHONES[name].replace(/\D/g, '');
     assert(u.shown.endsWith(digits.slice(6)) && !u.shown.includes(digits.slice(0, 3)), `number shown ${u.shown}`);
