@@ -541,7 +541,7 @@ sidebar: true
 
 <ul>
 <li>A+ (Superior): A.M. Best</li>
-<li>AA- (Very Strong): Standard &amp; Poor’s</li>
+<li>A+ (Strong): Standard &amp; Poor’s</li>
 <li>A1 (Good): Moody’s</li>
 <li>A+: Better Business Bureau</li>
 </ul>
@@ -570,11 +570,11 @@ sidebar: true
 
 <p><br><strong>Is Mutual of Omaha owned by policyholders?</strong></p>
 
-<p>Mutual of Omaha is a mutual company that its policyholders own.</p>
+<p>Mutual of Omaha is owned by its policyholders. In April 2026 it reorganized under a mutual holding company, Mutual of Omaha Holding Company.</p>
 
 <p><br><strong>How long has Mutual of Omaha been in business?</strong></p>
 
-<p>Mutual of Omaha was founded in 1909, they had been in business for 112 years.</p>
+<p>Mutual of Omaha was founded in 1909.</p>
 
 <p><br><strong>What is the Mutual of Omaha financial rating?</strong></p>
 

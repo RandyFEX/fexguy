@@ -866,7 +866,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     family: 'review', crumb: 'Aflac',
     // The article's own opening paragraph (V17).
     quickAnswer:
-      'Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $1,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get pushed into graded or modified plans with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.',
+      'Aflac burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $2,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that if you don’t qualify for that top tier, you get offered its Modified Plan with delays. Compared to other burial insurance options, Aflac sits in the middle. It’s solid, but not the cheapest or most flexible choice.',
   },
   '/baltimore-life-burial-insurance-review/': { family: 'review', crumb: 'Baltimore Life' },
   '/big-lou-term-life-insurance-review/': {

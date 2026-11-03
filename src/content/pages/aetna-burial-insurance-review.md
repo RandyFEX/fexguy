@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not<br>• Aetna is the #1 choice for COPD or very overweight, industry leader in these areas &amp; more</p>
+<p>• Aetna offers first-day coverage if you pass health questions<br>• I don’t recommend their modified plan with a 2-year waiting period<br>• Underwriting is fairly lenient, so many people will qualify for their best rates<br>• Coverage isn’t available in all 50 states, but they are in the majority of states<br>• They offer some riders or extra benefits that other burial insurance companies do not</p>
 
 <p>Aetna burial insurance is a whole life policy designed to cover funeral and final expenses, with coverage typically ranging from $2,000 to $50,000. If you qualify for their level benefit plan, you get full coverage from day one at competitive rates. The problem is that people who don’t qualify for that top tier get pushed into a modified plan with delays. Compared to other burial insurance options, Aetna sits in the middle. It’s solid, but not the cheapest or most flexible choice.</p>
 
@@ -173,7 +173,7 @@ sidebar: true
 <li>After 24 Months: Full death benefit</li>
 </ul>
 
-<p>The modified benefit plan has a full two-year waiting period. If you pass away during the first two years, they will pay your beneficiary the premium you paid plus 10% interest. Only in the third year will Aetna pay your full death benefit amount.</p>
+<p>The modified benefit plan has a full two-year waiting period. If you pass away during the first two years, they will pay your beneficiary 110% of the premiums paid. Only in the third year will Aetna pay your full death benefit amount.</p>
 
 <p>Aetna’s modified benefit plan is expensive compared to a guaranteed issue, no health questions policy. GI policy costs less, and it will approve your application regardless of the severity of your medical condition.</p>
 
@@ -248,7 +248,6 @@ sidebar: true
 
 <ul>
 <li>Accepts significant health issues</li>
-<li>Higher death benefit max at $35,000</li>
 </ul>
 
 <p><strong>CONS</strong></p>
@@ -686,6 +685,10 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 
+<h2 id="what-randy-thinks"><strong>What Randy thinks about Aetna</strong></h2>
+
+<p>In my experience, Aetna is often my first choice for COPD or for applicants who are very overweight.</p>
+
 <h2 id="top-10-questions"><strong>What are the top 10 questions about Aetna?</strong></h2>
 
 <details>
@@ -695,7 +698,7 @@ Aetna is a legitimate life insurance company that has been in business for over 
 
 <details>
 <summary><b>What types of life insurance does Aetna offer?</b></summary>
-Aetna offers term life insurance, whole life insurance, and universal life insurance policies.
+Aetna’s senior product is final expense whole life insurance.
 </details>
 
 <details>
@@ -715,7 +718,7 @@ Aetna offers whole life insurance, term life insurance, and universal insurance 
 
 <details>
 <summary><b>How old do you have to be to apply for Aetna insurance coverage?</b></summary>
-You need to be 18 years old to be able to apply for Aetna insurance coverage. 
+You must be 40 to 89 to apply for Aetna’s final expense plan. 
 </details>
 
 <details>
@@ -741,8 +744,6 @@ Here are some common terms people use when searching for, or describing Aetna li
 <li>Aetna Cremation Insurance</li>
 <li>Aetna Final Expense Insurance</li>
 <li>Aetna Funeral Insurance</li>
-<li>Aetna Term Life Insurance</li>
-<li>Aetna Universal Life Insurance</li>
 <li>Aetna Whole Life Insurance</li>
 </ul>
 </details>
