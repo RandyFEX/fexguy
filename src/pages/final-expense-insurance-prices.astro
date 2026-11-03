@@ -1,312 +1,376 @@
 ---
-// Final Expense Insurance Prices by Age (Pricing Explorer v1.0, Randy,
-// November 2026). The prices come from the server (api/price-explorer.js,
-// server/rates/): this page and its script hold no rate tables, rates or
-// keys. Texas reference pricing. "Apply Now" opens the native lead form in
-// its 'pricing' field set, with the chosen quote in hidden fields.
+// Final Expense Insurance Prices by Age (Quote System v2.2, Randy, November
+// 2026): a one-question-per-screen quote funnel with Twilio phone
+// verification. Prices come only from the server after the server has
+// verified the phone (api/quote.js, api/price-explorer.js); this page and its
+// script hold no rate tables, rates, keys or Twilio credentials.
+// Representative (Texas) rates are shown for every state; state is lead
+// information only.
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { pageTitle } from '@/lib/seo/meta';
 import { lead } from '@/config/lead';
-import { leadFormHtml } from '@/lib/lead/lead-form';
+import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../server/rates/pricing-categories.js';
+import { CONSENT_TEXT, CONSENT_VERSION, VERIFY_NOTICE_TEXT, VERIFY_NOTICE_VERSION } from '../../server/quote/consent.js';
 
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
-const defaults = { age: 65, gender: 'male', tobacco: false, coverage: COVERAGE.default };
 const cards = [
   { id: 'lowest-preferred', label: 'Lowest Preferred Rate' },
   { id: 'average-standard', label: 'Average Standard Rate' },
   { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
 ];
+const TOTAL = 7;
 ---
 
 <BaseLayout
   title={pageTitle('Final Expense Insurance Prices by Age')}
   description="Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use."
 >
-  <div class="px" data-page-type="utility" data-page-reason="Interactive final expense pricing tool." data-price-explorer>
-    <section class="px-hero">
-      <div class="container px-hero__inner">
-        <h1 class="px-hero__title">Final Expense Insurance Prices by Age</h1>
-        <p class="px-hero__intro">Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use.</p>
+  <div
+    class="qf"
+    data-page-type="utility"
+    data-page-reason="Interactive final expense quote tool."
+    data-quote-funnel
+    data-consent-version={CONSENT_VERSION}
+    data-verify-version={VERIFY_NOTICE_VERSION}
+  >
+    <section class="qf-hero">
+      <div class="container qf-hero__inner">
+        <h1 class="qf-hero__title">Final Expense Insurance Prices by Age</h1>
+        <p class="qf-hero__intro">Compare estimated monthly final expense insurance rates based on your age, coverage amount, and tobacco use.</p>
       </div>
     </section>
 
-    <div class="container px-body">
-      <form class="px-controls" data-px-controls aria-label="Your pricing choices" novalidate>
-        <div class="px-field">
-          <label class="px-label" for="px-age">Age</label>
-          <select class="px-select" id="px-age" name="age">
-            {ages.map((a) => <option value={a} selected={a === defaults.age}>{a}</option>)}
-          </select>
+    <div class="container qf-body">
+      <div class="qf-panel" data-qf-panel>
+        <div class="qf-top" data-qf-top>
+          <button class="qf-back" type="button" data-qf-back hidden><span aria-hidden="true">‹</span> Back</button>
+          <p class="qf-progress-label" data-qf-progress-label>Step 1 of {TOTAL}</p>
         </div>
+        <div class="qf-progress" aria-hidden="true" data-qf-progress-wrap><span class="qf-progress__bar" data-qf-progress></span></div>
 
-        <fieldset class="px-field px-seg">
-          <legend class="px-label">Sex</legend>
-          <div class="px-seg__opts">
-            <label class="px-seg__opt"><input type="radio" name="gender" value="male" checked /><span>Male</span></label>
-            <label class="px-seg__opt"><input type="radio" name="gender" value="female" /><span>Female</span></label>
-          </div>
-        </fieldset>
+        <p class="qf-test" data-qf-test hidden><strong>TEST MODE (preview only):</strong> no text message is sent. Use code 123456.</p>
 
-        <fieldset class="px-field px-seg">
-          <legend class="px-label">Tobacco</legend>
-          <div class="px-seg__opts">
-            <label class="px-seg__opt"><input type="radio" name="tobacco" value="no" checked /><span>Non-Smoker</span></label>
-            <label class="px-seg__opt"><input type="radio" name="tobacco" value="yes" /><span>Smoker</span></label>
+        <!-- Step 1 -->
+        <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
+          <h2 class="qf-q" id="qf-s1" tabindex="-1">Who needs coverage?</h2>
+          <div class="qf-people">
+            <button class="qf-person" type="button" data-pick="gender" data-value="male">
+              <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
+                <circle cx="60" cy="60" r="58" fill="#e6ece9" />
+                <path d="M22 112c4-24 20-36 38-36s34 12 38 36" fill="#173f35" />
+                <path d="M50 74h20l-10 14z" fill="#fff" />
+                <circle cx="60" cy="48" r="20" fill="#e9c4a4" />
+                <path d="M40 46c0-14 9-22 20-22s20 7 20 20c-5-6-12-8-20-8s-15 3-20 10z" fill="#6b4a33" />
+              </svg>
+              <span class="qf-person__label">Male</span>
+            </button>
+            <button class="qf-person" type="button" data-pick="gender" data-value="female">
+              <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
+                <circle cx="60" cy="60" r="58" fill="#e6ece9" />
+                <path d="M36 70c-6-10-6-26 0-36 6-10 16-14 24-14s18 4 24 14c6 10 6 26 0 36z" fill="#8a5a3c" />
+                <path d="M22 112c4-24 20-36 38-36s34 12 38 36" fill="#2f6b5a" />
+                <circle cx="60" cy="50" r="19" fill="#efcdb0" />
+                <path d="M41 48c1-13 9-20 19-20s18 6 19 18c-6-5-11-9-19-9-7 0-13 4-19 11z" fill="#8a5a3c" />
+              </svg>
+              <span class="qf-person__label">Female</span>
+            </button>
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="px-field px-field--wide px-seg">
-          <legend class="px-label">Coverage</legend>
-          <div class="px-seg__opts px-seg__opts--coverage">
-            {COVERAGE.presets.map((c) => (
-              <label class="px-seg__opt"><input type="radio" name="coverage" value={c} checked={c === defaults.coverage} /><span>{money(c)}</span></label>
-            ))}
-            <label class="px-seg__opt"><input type="radio" name="coverage" value="other" /><span>Other</span></label>
+        <!-- Step 2 -->
+        <section class="qf-step" data-step="2" aria-labelledby="qf-s2" hidden>
+          <h2 class="qf-q" id="qf-s2" tabindex="-1">How old are you?</h2>
+          <div class="qf-ages" role="group" aria-labelledby="qf-s2">
+            {ages.map((a) => <button class="qf-opt qf-opt--age" type="button" data-pick="age" data-value={a}>{a}</button>)}
           </div>
-          <div class="px-other" data-px-other hidden>
-            <label class="px-label px-label--small" for="px-other">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
-            <div class="px-other__row">
-              <span class="px-other__dollar" aria-hidden="true">$</span>
-              <input class="px-input" id="px-other" name="other" type="text" inputmode="numeric" autocomplete="off" placeholder="12,000" aria-describedby="px-other-error" />
+        </section>
+
+        <!-- Step 3 -->
+        <section class="qf-step" data-step="3" aria-labelledby="qf-s3" hidden>
+          <h2 class="qf-q" id="qf-s3" tabindex="-1">Do you use tobacco?</h2>
+          <div class="qf-opts qf-opts--two">
+            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="no">Non-Smoker</button>
+            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="yes">Smoker</button>
+          </div>
+        </section>
+
+        <!-- Step 4 -->
+        <section class="qf-step" data-step="4" aria-labelledby="qf-s4" hidden>
+          <h2 class="qf-q" id="qf-s4" tabindex="-1">How much coverage would you like?</h2>
+          <div class="qf-opts qf-opts--coverage">
+            {COVERAGE.presets.map((c) => <button class="qf-opt qf-opt--big" type="button" data-pick="coverage" data-value={c}>{money(c)}</button>)}
+            <button class="qf-opt qf-opt--big" type="button" data-qf-other-open>Other</button>
+          </div>
+          <div class="qf-other" data-qf-other hidden>
+            <label class="qf-label" for="qf-other-input">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
+            <div class="qf-other__row">
+              <span class="qf-other__dollar" aria-hidden="true">$</span>
+              <input class="qf-input" id="qf-other-input" type="text" inputmode="numeric" autocomplete="off" placeholder="12,000" aria-describedby="qf-other-error" />
             </div>
-            <p class="px-error" id="px-other-error" data-px-other-error hidden></p>
+            <p class="qf-error" id="qf-other-error" data-qf-other-error hidden></p>
+            <button class="btn btn--primary qf-continue" type="button" data-qf-other-next>Continue</button>
           </div>
-        </fieldset>
-        <p class="px-ref">Texas reference pricing. Monthly premiums.</p>
-      </form>
+        </section>
 
-      <p class="visually-hidden" role="status" aria-live="polite" data-px-live></p>
+        <!-- Step 5 -->
+        <section class="qf-step" data-step="5" aria-labelledby="qf-s5" hidden>
+          <h2 class="qf-q" id="qf-s5" tabindex="-1">What state do you live in?</h2>
+          <label class="visually-hidden" for="qf-state">State</label>
+          <select class="qf-input qf-select" id="qf-state" data-qf-state>
+            <option value="">Select your state</option>
+            {US_STATES.map((s) => <option>{s}</option>)}
+          </select>
+        </section>
 
-      <div class="px-cards" data-px-cards>
-        {cards.map((c) => (
-          <article class="px-card" data-px-card={c.id} data-state="loading">
-            <div class="px-card__logo" aria-hidden="true" data-px-logo></div>
-            <h2 class="px-card__label">{c.label}</h2>
-            <p class="px-card__price" data-px-price>
-              <span class="px-card__amount" data-px-amount>&nbsp;</span>
-              <span class="px-card__per">per month</span>
-            </p>
-            <p class="px-card__note" data-px-note>Loading prices…</p>
-            <button class="btn btn--primary px-card__apply" type="button" data-px-apply disabled>Apply Now</button>
-          </article>
-        ))}
+        <!-- Step 6 -->
+        <section class="qf-step" data-step="6" aria-labelledby="qf-s6" hidden>
+          <h2 class="qf-q" id="qf-s6" tabindex="-1">Your contact information</h2>
+          <form class="qf-form" data-qf-contact novalidate>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-first">First Name</label>
+              <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="given-name" required aria-describedby="qf-first-error" />
+              <p class="qf-error" id="qf-first-error" hidden></p>
+            </div>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
+              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error qf-verify-note" />
+              <p class="qf-error" id="qf-phone-error" hidden></p>
+            </div>
+            <p class="qf-note" id="qf-verify-note">{VERIFY_NOTICE_TEXT}</p>
+            <label class="qf-consent">
+              <input type="checkbox" name="consent" data-qf-consent />
+              <span>{CONSENT_TEXT}</span>
+            </label>
+            <button class="btn btn--primary qf-continue" type="submit" data-qf-send>Text Me My Code</button>
+            <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
+          </form>
+        </section>
+
+        <!-- Step 7 -->
+        <section class="qf-step" data-step="7" aria-labelledby="qf-s7" hidden>
+          <h2 class="qf-q" id="qf-s7" tabindex="-1">Enter your verification code</h2>
+          <p class="qf-note">We sent a 6-digit code to <strong data-qf-masked></strong>.</p>
+          <form class="qf-form" data-qf-verify novalidate>
+            <label class="qf-label" for="qf-code">6-digit code</label>
+            <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" required />
+            <button class="btn btn--primary qf-continue" type="submit" data-qf-verify-btn>Verify</button>
+            <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-verify-status></p>
+          </form>
+          <div class="qf-links">
+            <button class="qf-link" type="button" data-qf-resend>Resend Code</button>
+            <button class="qf-link" type="button" data-qf-change>Change Number</button>
+          </div>
+        </section>
+
+        <!-- Step 8 -->
+        <section class="qf-step qf-results" data-step="8" aria-labelledby="qf-s8" hidden>
+          <h2 class="qf-q" id="qf-s8" tabindex="-1">Your insurance prices</h2>
+          <form class="qf-adjust" data-qf-adjust aria-label="Change your quote" novalidate>
+            <div class="qf-adjust__field">
+              <label class="qf-label" for="qf-adj-age">Age</label>
+              <select class="qf-input qf-select" id="qf-adj-age" name="age">
+                {ages.map((a) => <option value={a}>{a}</option>)}
+              </select>
+            </div>
+            <fieldset class="qf-adjust__field qf-seg">
+              <legend class="qf-label">Sex</legend>
+              <div class="qf-seg__opts">
+                <label class="qf-seg__opt"><input type="radio" name="gender" value="male" /><span>Male</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="gender" value="female" /><span>Female</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="qf-adjust__field qf-seg">
+              <legend class="qf-label">Tobacco</legend>
+              <div class="qf-seg__opts">
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="no" /><span>Non-Smoker</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="yes" /><span>Smoker</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="qf-adjust__field qf-adjust__field--wide qf-seg">
+              <legend class="qf-label">Coverage</legend>
+              <div class="qf-seg__opts qf-seg__opts--coverage">
+                {COVERAGE.presets.map((c) => <label class="qf-seg__opt"><input type="radio" name="coverage" value={c} /><span>{money(c)}</span></label>)}
+                <label class="qf-seg__opt"><input type="radio" name="coverage" value="other" /><span>Other</span></label>
+              </div>
+              <div class="qf-other" data-qf-adj-other hidden>
+                <label class="qf-label qf-label--small" for="qf-adj-other">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
+                <div class="qf-other__row">
+                  <span class="qf-other__dollar" aria-hidden="true">$</span>
+                  <input class="qf-input" id="qf-adj-other" type="text" inputmode="numeric" autocomplete="off" placeholder="12,000" aria-describedby="qf-adj-other-error" />
+                </div>
+                <p class="qf-error" id="qf-adj-other-error" data-qf-adj-other-error hidden></p>
+              </div>
+            </fieldset>
+          </form>
+
+          <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
+          <div class="qf-cards">
+            {cards.map((c) => (
+              <article class="qf-card" data-qf-card={c.id} data-state="loading">
+                <div class="qf-card__logo" aria-hidden="true" data-qf-logo></div>
+                <h3 class="qf-card__label">{c.label}</h3>
+                <p class="qf-card__price">
+                  <span class="qf-card__amount" data-qf-amount>&nbsp;</span>
+                  <span class="qf-card__per">per month</span>
+                </p>
+                <p class="qf-card__note" data-qf-note>Loading prices…</p>
+                <button class="btn btn--primary qf-card__apply" type="button" data-qf-apply disabled>Apply Now</button>
+              </article>
+            ))}
+          </div>
+          <p class="qf-ref">Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
+          <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
+        </section>
+
+        <div class="lead-form__turnstile" data-turnstile data-sitekey={lead.formspark.turnstile.siteKey}></div>
       </div>
 
-      <p class="px-call">Questions? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
+      <p class="qf-call">Questions? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
 
-      <section class="px-about" aria-labelledby="px-about-title">
-        <h2 id="px-about-title">How these prices work</h2>
+      <section class="qf-about" aria-labelledby="qf-about-title">
+        <h2 id="qf-about-title">How these prices work</h2>
         <ul>
           <li><strong>Lowest Preferred Rate</strong> means the lowest verified rate among the selected preferred products included in our comparison.</li>
           <li><strong>Average Standard Rate</strong> is calculated from a defined set of verified standard-rate products.</li>
           <li><strong>Guaranteed Acceptance Rate</strong> uses a verified guaranteed-issue product that is available for the selected age and coverage amount.</li>
         </ul>
-        <p>The three categories are pricing comparisons, not guaranteed underwriting outcomes. Texas reference pricing.</p>
+        <p>The three categories are pricing comparisons, not guaranteed underwriting outcomes. Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
       </section>
     </div>
-
-    <dialog class="px-dialog" data-px-dialog aria-labelledby="px-dialog-title">
-      <div class="px-dialog__head">
-        <h2 class="px-dialog__title" id="px-dialog-title">Apply Now</h2>
-        <button class="px-dialog__close" type="button" data-px-close aria-label="Close">×</button>
-      </div>
-      <p class="px-dialog__summary" data-px-summary></p>
-      <Fragment set:html={leadFormHtml('inline', 'pricing')} />
-    </dialog>
   </div>
 </BaseLayout>
 
 <script>
-  import '@/scripts/price-explorer';
+  import '@/scripts/quote-funnel';
 </script>
 
 <style>
-  .px-hero {
-    background: var(--color-primary);
-    color: var(--color-on-primary);
-    padding-block: var(--space-8) var(--space-6);
-  }
-  .px-hero__title {
-    color: inherit;
-    font-size: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
-    line-height: 1.15;
-    margin: 0 0 var(--space-3);
-  }
-  .px-hero__intro {
-    font-size: 1.1875rem;
-    line-height: 1.5;
-    max-width: 40rem;
-    margin: 0;
-  }
-  .px-body {
-    padding-block: var(--space-6) var(--space-12);
-    max-width: 64rem;
-  }
-
-  /* Controls */
-  .px-controls {
-    background: var(--color-surface);
-    border-radius: var(--radius);
-    padding: var(--space-4);
-    display: grid;
-    gap: var(--space-4);
+  .qf-hero { background: var(--color-primary); color: var(--color-on-primary); padding-block: var(--space-6) var(--space-12); }
+  .qf-hero__title { color: inherit; font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem); line-height: 1.15; margin: 0 0 var(--space-2); }
+  .qf-hero__intro { font-size: 1.125rem; line-height: 1.5; max-width: 40rem; margin: 0; }
+  .qf-body { padding-block: 0 var(--space-12); max-width: 60rem; }
+  .qf-panel {
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.12);
+    padding: var(--space-4) var(--space-4) var(--space-6);
     margin-top: calc(-1 * var(--space-8));
-    box-shadow: 0 2px 10px rgb(0 0 0 / 0.08);
+    min-height: 22rem;
   }
-  @media (min-width: 48rem) {
-    .px-controls { grid-template-columns: 9rem 1fr 1fr; padding: var(--space-6); }
-    .px-field--wide, .px-ref { grid-column: 1 / -1; }
+  @media (min-width: 48rem) { .qf-panel { padding: var(--space-6) var(--space-8) var(--space-8); } }
+  .qf-top { display: flex; align-items: center; justify-content: space-between; min-height: var(--tap-target); gap: var(--space-3); }
+  .qf-back {
+    min-height: var(--tap-target); min-width: var(--tap-target); padding: 0 var(--space-3);
+    border: 2px solid var(--color-border); border-radius: 999px; background: #fff;
+    color: var(--color-primary); font-weight: 700; font-size: 1.0625rem; cursor: pointer;
   }
-  .px-field { border: 0; margin: 0; padding: 0; min-width: 0; }
-  .px-label {
-    display: block;
-    font-weight: 700;
-    font-size: 1.0625rem;
-    margin-bottom: var(--space-2);
-    padding: 0;
-  }
-  .px-label--small { font-size: 1rem; font-weight: 600; }
-  .px-select, .px-input {
-    width: 100%;
-    min-height: 3.25rem;
-    font-size: 1.25rem;
-    padding: 0 var(--space-3);
-    border: 2px solid #8a8f8b;
-    border-radius: var(--radius);
-    background: #fff;
-    color: var(--color-text);
-  }
-  .px-seg__opts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2);
-  }
-  .px-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
-  @media (min-width: 48rem) { .px-seg__opts--coverage { grid-template-columns: repeat(6, 1fr); } }
-  .px-seg__opt { position: relative; }
-  .px-seg__opt input {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    margin: 0;
-    cursor: pointer;
-  }
-  .px-seg__opt span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 3.25rem;
-    padding: 0 var(--space-2);
-    border: 2px solid var(--color-primary);
-    border-radius: var(--radius);
-    background: #fff;
-    color: var(--color-primary);
-    font-weight: 700;
-    font-size: 1.125rem;
-    text-align: center;
-  }
-  .px-seg__opt input:checked + span { background: var(--color-primary); color: #fff; }
-  .px-seg__opt input:focus-visible + span {
-    outline: 3px solid var(--color-focus);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 2px var(--color-focus-inner);
-  }
-  .px-other { margin-top: var(--space-3); max-width: 18rem; }
-  .px-other__row { display: flex; align-items: center; gap: var(--space-2); }
-  .px-other__dollar { font-size: 1.375rem; font-weight: 700; }
-  .px-error { color: var(--color-error); font-weight: 600; margin: var(--space-2) 0 0; }
-  .px-ref { margin: 0; color: var(--color-text-muted); font-size: 1rem; }
+  .qf-progress-label { margin: 0 0 0 auto; font-weight: 700; color: var(--color-text-muted); }
+  .qf-progress { height: 0.5rem; background: #e3e8e5; border-radius: 999px; overflow: hidden; margin: var(--space-2) 0 var(--space-4); }
+  .qf-progress__bar { display: block; height: 100%; width: 14%; background: var(--color-primary); border-radius: inherit; transition: width 0.3s ease; }
+  .qf-test { background: #fff4d6; border: 2px solid #b7791f; border-radius: var(--radius); padding: var(--space-3); margin: 0 0 var(--space-4); }
+  .qf-step { animation: qf-in 0.25s ease; }
+  @keyframes qf-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .qf-step { animation: none; } .qf-progress__bar { transition: none; } }
+  .qf-q { font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem); line-height: 1.2; color: var(--color-primary); margin: 0 0 var(--space-4); text-align: center; }
+  .qf-q:focus { outline: none; }
 
-  /* Pricing cards */
-  .px-cards {
-    display: grid;
-    gap: var(--space-4);
-    margin-top: var(--space-6);
+  .qf-people { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); max-width: 30rem; margin-inline: auto; }
+  .qf-person {
+    display: flex; flex-direction: column; align-items: center; gap: var(--space-2);
+    padding: var(--space-4) var(--space-2); border: 3px solid var(--color-border); border-radius: 0.75rem;
+    background: #fff; cursor: pointer;
   }
-  @media (min-width: 56rem) { .px-cards { grid-template-columns: repeat(3, 1fr); } }
-  .px-card {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: 'label logo' 'price price' 'note note' 'apply apply';
-    align-items: center;
-    gap: var(--space-2) var(--space-3);
-    background: #fff;
-    border: 2px solid var(--color-border);
-    border-top: 6px solid var(--color-primary);
-    border-radius: var(--radius);
-    padding: var(--space-4);
+  .qf-person:hover, .qf-person[aria-pressed='true'] { border-color: var(--color-primary); background: #f3f7f5; }
+  .qf-person__art { width: min(8rem, 100%); height: auto; }
+  .qf-person__label { font-size: 1.375rem; font-weight: 800; color: var(--color-primary); }
+
+  .qf-ages { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); }
+  @media (min-width: 40rem) { .qf-ages { grid-template-columns: repeat(8, 1fr); } }
+  .qf-opts { display: grid; gap: var(--space-3); max-width: 34rem; margin-inline: auto; }
+  .qf-opts--two { grid-template-columns: 1fr 1fr; }
+  .qf-opts--coverage { grid-template-columns: 1fr 1fr; }
+  @media (min-width: 40rem) { .qf-opts--coverage { grid-template-columns: repeat(3, 1fr); } }
+  .qf-opt {
+    min-height: 3.25rem; border: 2px solid var(--color-primary); border-radius: var(--radius);
+    background: #fff; color: var(--color-primary); font-weight: 800; font-size: 1.25rem; cursor: pointer;
+  }
+  .qf-opt--big { min-height: 4rem; font-size: 1.375rem; }
+  .qf-opt:hover, .qf-opt[aria-pressed='true'] { background: var(--color-primary); color: #fff; }
+
+  .qf-form { display: grid; gap: var(--space-4); max-width: 30rem; margin-inline: auto; }
+  .qf-field { display: grid; gap: var(--space-2); }
+  .qf-label { display: block; font-weight: 700; font-size: 1.0625rem; padding: 0; margin-bottom: var(--space-1); }
+  .qf-label--small { font-size: 1rem; font-weight: 600; }
+  .qf-input {
+    width: 100%; min-height: 3.5rem; font-size: 1.25rem; padding: 0 var(--space-3);
+    border: 2px solid #8a8f8b; border-radius: var(--radius); background: #fff; color: var(--color-text);
+  }
+  .qf-select { max-width: 30rem; display: block; margin-inline: auto; }
+  .qf-code { font-size: 2rem; letter-spacing: 0.4em; text-align: center; }
+  .qf-note { color: var(--color-text-muted); margin: 0; text-align: center; }
+  .qf-consent { display: flex; gap: var(--space-3); align-items: flex-start; font-size: 1rem; line-height: 1.45; cursor: pointer; }
+  .qf-consent input { width: 1.75rem; height: 1.75rem; flex: none; margin-top: 0.1rem; accent-color: var(--color-primary); }
+  .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
+  .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }
+  .qf-status { margin: 0; text-align: center; font-weight: 600; min-height: 1.5em; }
+  .qf-status.is-error { color: var(--color-error); }
+  .qf-links { display: flex; justify-content: center; gap: var(--space-6); margin-top: var(--space-4); }
+  .qf-link { min-height: var(--tap-target); padding: 0 var(--space-2); border: 0; background: none; color: var(--color-primary); font-weight: 700; font-size: 1.0625rem; text-decoration: underline; cursor: pointer; }
+  .qf-link:disabled { color: var(--color-text-muted); text-decoration: none; cursor: default; }
+  .qf-other { margin-top: var(--space-4); max-width: 22rem; margin-inline: auto; display: grid; gap: var(--space-2); }
+  .qf-other[hidden], .qf-step[hidden], .qf-back[hidden], .qf-progress[hidden], .qf-test[hidden] { display: none; }
+  .qf-other__row { display: flex; align-items: center; gap: var(--space-2); }
+  .qf-other__dollar { font-size: 1.375rem; font-weight: 700; }
+
+  /* Results */
+  .qf-adjust { display: grid; gap: var(--space-4); background: var(--color-surface); border-radius: var(--radius); padding: var(--space-4); }
+  @media (min-width: 48rem) { .qf-adjust { grid-template-columns: 8rem 1fr 1fr; } .qf-adjust__field--wide { grid-column: 1 / -1; } }
+  .qf-adjust .qf-select { max-width: none; }
+  .qf-seg { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .qf-seg__opts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  .qf-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 48rem) { .qf-seg__opts--coverage { grid-template-columns: repeat(6, 1fr); } }
+  .qf-seg__opt { position: relative; }
+  .qf-seg__opt input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+  .qf-seg__opt span {
+    display: flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 var(--space-2);
+    border: 2px solid var(--color-primary); border-radius: var(--radius); background: #fff; color: var(--color-primary);
+    font-weight: 700; font-size: 1.125rem; text-align: center;
+  }
+  .qf-seg__opt input:checked + span { background: var(--color-primary); color: #fff; }
+  .qf-seg__opt input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; box-shadow: 0 0 0 2px var(--color-focus-inner); }
+
+  .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-6); }
+  @media (min-width: 56rem) { .qf-cards { grid-template-columns: repeat(3, 1fr); } }
+  .qf-card {
+    display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'label logo' 'price price' 'note note' 'apply apply';
+    align-items: center; gap: var(--space-2) var(--space-3); background: #fff;
+    border: 2px solid var(--color-border); border-top: 6px solid var(--color-primary); border-radius: var(--radius); padding: var(--space-4);
   }
   @media (min-width: 56rem) {
-    .px-card { grid-template-columns: 1fr; grid-template-areas: 'logo' 'label' 'price' 'note' 'apply'; text-align: center; padding: var(--space-6) var(--space-4); }
-    .px-card__logo { justify-self: center; }
+    .qf-card { grid-template-columns: 1fr; grid-template-areas: 'logo' 'label' 'price' 'note' 'apply'; text-align: center; padding: var(--space-6) var(--space-4); }
+    .qf-card__logo { justify-self: center; }
   }
-  .px-card__label { grid-area: label; margin: 0; font-size: 1.25rem; line-height: 1.25; color: var(--color-primary); }
-  .px-card__logo {
-    grid-area: logo;
-    width: 6.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.375rem;
-    overflow: hidden;
-    border-radius: 0.375rem;
-  }
-  .px-card__logo :global(img) {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    filter: blur(5px) saturate(0.9);
-    opacity: 0.85;
-  }
-  .px-card__logo :global(.px-logo-blank) {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.375rem;
-    background: linear-gradient(90deg, #c9d3cf, #9fb3ab 45%, #c9d3cf);
-    filter: blur(4px);
-  }
-  .px-card__price { grid-area: price; margin: var(--space-1) 0 0; line-height: 1; }
-  .px-card__amount { display: block; font-size: 2.75rem; font-weight: 800; color: var(--color-text); letter-spacing: -0.01em; }
-  .px-card__per { display: block; margin-top: var(--space-2); font-size: 1.0625rem; color: var(--color-text-muted); font-weight: 600; }
-  .px-card__note { grid-area: note; margin: 0; min-height: 1.5em; color: var(--color-text-muted); font-size: 1rem; }
-  .px-card__apply { grid-area: apply; width: 100%; min-height: 3.25rem; font-size: 1.1875rem; font-weight: 800; letter-spacing: 0.02em; }
-  .px-card__apply:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }
-  .px-card[data-state='pending'] .px-card__amount,
-  .px-card[data-state='unavailable'] .px-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
-  .px-card[data-state='loading'] .px-card__amount { color: var(--color-border); }
-  .px-card[data-state='pending'] .px-card__per,
-  .px-card[data-state='unavailable'] .px-card__per { display: none; }
+  .qf-card__label { grid-area: label; margin: 0; font-size: 1.25rem; line-height: 1.25; color: var(--color-primary); }
+  .qf-card__logo { grid-area: logo; width: 6.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.375rem; overflow: hidden; border-radius: 0.375rem; }
+  .qf-card__logo :global(img) { max-width: 100%; max-height: 100%; object-fit: contain; filter: blur(5px) saturate(0.9); opacity: 0.85; }
+  .qf-card__logo :global(.qf-logo-blank) { width: 100%; height: 100%; border-radius: 0.375rem; background: linear-gradient(90deg, #c9d3cf, #9fb3ab 45%, #c9d3cf); filter: blur(4px); }
+  .qf-card__price { grid-area: price; margin: var(--space-1) 0 0; line-height: 1; }
+  .qf-card__amount { display: block; font-size: 2.75rem; font-weight: 800; color: var(--color-text); }
+  .qf-card__per { display: block; margin-top: var(--space-2); font-size: 1.0625rem; color: var(--color-text-muted); font-weight: 600; }
+  .qf-card__note { grid-area: note; margin: 0; min-height: 1.5em; color: var(--color-text-muted); }
+  .qf-card__apply { grid-area: apply; width: 100%; min-height: 3.25rem; font-size: 1.1875rem; font-weight: 800; }
+  .qf-card__apply:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }
+  .qf-card[data-state='pending'] .qf-card__amount, .qf-card[data-state='unavailable'] .qf-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
+  .qf-card[data-state='loading'] .qf-card__amount { color: var(--color-border); }
+  .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
+  .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
 
-  .px-call { margin-top: var(--space-6); font-size: 1.125rem; text-align: center; }
-  .px-call a { font-weight: 800; white-space: nowrap; }
-  .px-about { margin-top: var(--space-8); max-width: var(--prose-max); }
-  .px-about h2 { font-size: 1.375rem; color: var(--color-primary); }
-  .px-about li { margin-bottom: var(--space-2); }
-
-  /* Apply Now dialog */
-  .px-dialog {
-    width: min(32rem, calc(100vw - 2rem));
-    max-height: calc(100dvh - 2rem);
-    padding: var(--space-4) var(--space-4) var(--space-6);
-    border: 0;
-    border-radius: var(--radius);
-    box-shadow: 0 10px 40px rgb(0 0 0 / 0.3);
-  }
-  .px-dialog::backdrop { background: rgb(0 0 0 / 0.55); }
-  .px-dialog__head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
-  .px-dialog__title { margin: 0; font-size: 1.5rem; color: var(--color-primary); }
-  .px-dialog__close {
-    width: var(--tap-target);
-    height: var(--tap-target);
-    border: 0;
-    border-radius: 50%;
-    background: var(--color-surface);
-    font-size: 1.75rem;
-    line-height: 1;
-    cursor: pointer;
-  }
-  .px-dialog__summary { font-size: 1.0625rem; font-weight: 600; margin: var(--space-2) 0 var(--space-4); }
+  .qf-call { margin-top: var(--space-6); font-size: 1.125rem; text-align: center; }
+  .qf-call a { font-weight: 800; white-space: nowrap; }
+  .qf-about { margin-top: var(--space-8); max-width: var(--prose-max); }
+  .qf-about h2 { font-size: 1.375rem; color: var(--color-primary); }
+  .qf-about li { margin-bottom: var(--space-2); }
 </style>

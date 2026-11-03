@@ -53,3 +53,18 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:rates
+
+  # Quote funnel (server/quote/, api/quote.js): Twilio Verify (fake API),
+  # verification gate, sessions, consent evidence and SMS limits, against a
+  # real local Redis. No SMS is sent.
+  quote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq redis-server
+      - run: npm run test:quote

@@ -12,6 +12,9 @@
     },
     "api/price-explorer.js": {
       "maxDuration": 10
+    },
+    "api/quote.js": {
+      "maxDuration": 15
     }
   },
   "trailingSlash": true,

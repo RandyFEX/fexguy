@@ -7,6 +7,7 @@
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
 //   click on any call link on a page  GA4 click_to_call  (nothing to Meta)
 //   whose <body> has track-page-calls (/facebook/, campaign number)
+//   quote funnel steps (Quote System v2.2)  GA4 quote_* events  (nothing to Meta)
 //
 // Rules:
 //  - Runs only on the production hostnames in src/config/lead.ts. Anywhere
@@ -196,4 +197,31 @@ document.addEventListener('click', (e) => {
   if (!link) return;
   const digits = (link.getAttribute('href') ?? '').replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
   if (digits === lead.phone.digits || document.body.classList.contains('track-page-calls')) ga4('event', 'click_to_call');
+});
+
+// --- Quote funnel (GA4 only; Randy, November 2026, Quote System v2.2) ---------
+// src/scripts/quote-funnel.ts dispatches `ff:funnel` events on window. Only
+// these event names and a step number or category label are sent, never a
+// name, phone number, state or any other personal information, and nothing
+// goes to Meta.
+
+const FUNNEL_EVENTS = new Set([
+  'quote_funnel_start',
+  'quote_step_complete',
+  'quote_contact_submit',
+  'quote_sms_request',
+  'quote_sms_verified',
+  'quote_pricing_view',
+  'quote_pricing_adjust',
+  'quote_apply_now',
+]);
+const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
+
+window.addEventListener('ff:funnel', (e) => {
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown }>).detail ?? {};
+  if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
+  const params: Record<string, string | number> = {};
+  if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 8) params.funnel_step = detail.step;
+  if (typeof detail.category === 'string' && FUNNEL_CATEGORIES.has(detail.category)) params.price_category = detail.category;
+  ga4('event', detail.name, params);
 });

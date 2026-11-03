@@ -97,7 +97,7 @@ function limitStore() {
   const counts = new Map();
   return { counts, eval: async (_s, keys, args) => { for (const k of keys) counts.set(k, (counts.get(k) ?? 0) + 1); return counts.get(keys[0]) > args[0] || counts.get(keys[1]) > args[2] ? 0 : 1; } };
 }
-const deps = (store = limitStore()) => ({ store, getEngine: async () => ({ engine, publishedAt: 'v' }) });
+const deps = (store = limitStore()) => ({ store, getEngine: async () => ({ engine, publishedAt: 'v' }), isVerified: async () => true });
 
 test('endpoint: returns the three categories for a same-site request', async () => {
   const res = await handlePriceExplorer(req(input()), ENV, deps());
@@ -113,9 +113,12 @@ test('endpoint: rejects other origins, methods, bad input; fails closed without 
   assert.equal((await handlePriceExplorer(req(input(), { origin: null }), ENV, deps())).status, 403);
   assert.equal((await handlePriceExplorer(req(null, { method: 'GET' }), ENV, deps())).status, 405);
   assert.equal((await handlePriceExplorer(req({ ...input(), x: 1 }), ENV, deps())).status, 400);
-  assert.equal((await handlePriceExplorer(req(input()), ENV, { store: null })).status, 503);
+  assert.equal((await handlePriceExplorer(req(input()), ENV, { store: null, isVerified: async () => true })).status, 503);
   assert.equal((await handlePriceExplorer(req(input()), { VERCEL_ENV: 'preview' }, deps())).status, 503, 'no hashing secret');
-  assert.equal((await handlePriceExplorer(req(input()), ENV, { store: limitStore(), getEngine: async () => null })).status, 503);
+  assert.equal((await handlePriceExplorer(req(input()), ENV, { store: limitStore(), getEngine: async () => null, isVerified: async () => true })).status, 503);
+  // Quote System v2.2: no verified session, no prices.
+  assert.equal((await handlePriceExplorer(req(input()), ENV, { ...deps(), isVerified: async () => false })).status, 401);
+  assert.equal((await handlePriceExplorer(req(input()), ENV, { ...deps(), isVerified: undefined })).status, 401);
 });
 
 test('endpoint: per-IP burst limit', async () => {

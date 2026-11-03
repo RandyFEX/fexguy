@@ -73,7 +73,7 @@ export function parseInput(b) {
 
 /**
  * @typedef {{ eval(script: string, keys: string[], args: (string | number)[]): Promise<unknown> }} LimitStore
- * @typedef {{ store: LimitStore | null, getEngine?: () => Promise<{ engine: any, publishedAt: string } | null>, now?: () => number }} Deps
+ * @typedef {{ store: LimitStore | null, getEngine?: () => Promise<{ engine: any, publishedAt: string } | null>, isVerified?: (request: Request) => Promise<boolean>, now?: () => number }} Deps
  * @param {Request} request @param {Record<string, string | undefined>} env @param {Deps} deps
  */
 export async function handlePriceExplorer(request, env, deps) {
@@ -87,6 +87,11 @@ export async function handlePriceExplorer(request, env, deps) {
   try { body = JSON.parse(text); } catch { return json(400, { status: 'bad-request' }); }
   const input = parseInput(body);
   if (!input) return json(400, { status: 'bad-request', message: 'Choose an age from 50 to 89 and coverage from $5,000 to $25,000.' });
+
+  // Quote System v2.2: prices only for a phone-verified session (server-checked
+  // cookie, see server/quote/session.js). No session check configured = no prices.
+  const verified = deps.isVerified ? await deps.isVerified(request).catch(() => false) : false;
+  if (!verified) return json(401, { status: 'verify-required', message: 'Please verify your phone number to see prices.' });
 
   const secret = env.PRICE_EXPLORER_SECRET || env.HEALTH_SEARCH_SECRET || '';
   if (!deps.store || secret.length < 32) return json(503, { status: 'unavailable', message: 'Prices are not available right now.' });

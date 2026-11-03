@@ -1215,20 +1215,27 @@ scope protection wins.
   state availability, and MOO's state availability, carry `verified: false`
   in every result until Randy supplies the carrier documents.
 - The engine assigns no tier labels itself.
-- **Pricing Explorer v1.0** (Randy, November 2026; preview branch
-  `claude/pricing-explorer`, not merged): /final-expense-insurance-prices/
-  (`src/pages/final-expense-insurance-prices.astro`,
-  `src/scripts/price-explorer.ts`). Exact labels Lowest Preferred Rate,
-  Average Standard Rate, Guaranteed Acceptance Rate, defined in
-  `server/rates/pricing-categories.js`: preferred = no verified products yet
-  ("Coming soon"); average = mean of Aetna Standard and MOO Level, only when
-  both are available (never one carrier); guaranteed = Gerber. Texas
-  reference pricing, ages 50-89, $5,000-$25,000. Prices come from the
-  public, same-site, per-IP rate-limited `api/price-explorer.js`
-  (`server/rates/public-pricing.js`), which returns category results with
-  opaque attribution codes (FF-101 Aetna Standard, FF-102 MOO Level, FF-201
-  Gerber), never product ids, rates or keys. Apply Now opens the native lead
-  form's 'pricing' field set (First Name, Phone, hidden Quote fields).
+- **Quote funnel** (Randy, November 2026, Pricing Explorer v1.0 then Quote
+  System v2.2; preview branch `claude/pricing-explorer`, PR #79, not merged):
+  /final-expense-insurance-prices/ (`src/pages/final-expense-insurance-prices.astro`,
+  `src/scripts/quote-funnel.ts`, `server/quote/`, `api/quote.js`; see
+  server/quote/README.md). One question per screen (sex, age 50-89,
+  tobacco, coverage $5,000-$25,000, state as lead information only), first
+  name + mobile, Twilio Verify SMS code, then the three cards with the exact
+  labels Lowest Preferred Rate, Average Standard Rate, Guaranteed
+  Acceptance Rate (`server/rates/pricing-categories.js`: preferred = no
+  verified products yet, "Coming soon"; average = mean of Aetna Standard and
+  MOO Level, only when both are available; guaranteed = Gerber), freely
+  repriceable after verification. Representative (Texas) rates for every
+  state. `api/price-explorer.js` returns prices only for a server-verified
+  session (HttpOnly signed cookie checked against Redis) with opaque codes
+  FF-101/102/201, never product ids, rates or keys. Previews without Twilio
+  credentials run a clearly marked test mode (code 123456, no SMS, no
+  notification); production never does. Consent box optional and unchecked;
+  its wording (`server/quote/consent.js`) is a DRAFT pending Randy's legal
+  review. Evidence records (`qe:<ns>:*`) never expire; retrieval via
+  `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
+  events (tracking.ts), no personal data, nothing to Meta.
 
 ## Site search (Pagefind, built October 2026)
 
