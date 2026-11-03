@@ -103,7 +103,7 @@ sidebar: true
 <td>Payout Schedule </td><td>1st day full coverage</td>
 </tr>
 <tr>
-<td>Coverage Amount </td><td>$5,000 to $25,000</td>
+<td>Coverage Amount </td><td>$1,000 up to $50,000, depending on age</td>
 </tr>
 <tr>
 <td>Age &amp; Coverage</td><td>0-55 - $50,000</td>
@@ -153,7 +153,7 @@ sidebar: true
 <td>Level premiums </td><td>premium never increase</td>
 </tr>
 <tr>
-<td>Policy loans</td><td>premium never increase</td>
+<td>Policy loans</td><td>available against cash value</td>
 </tr>
 <tr>
 <td>Payout Schedule</td><td>graded in the first two years</td>
@@ -536,19 +536,19 @@ benefit plan.</p>
 
 <h2 id="transamerica-company-overview"><br><strong>TransAmerica company overview </strong></h2>
 
-<p>Transamerica was founded in 1905 in San Francisco by an Italian American entrepreneur, Amadeo Giannini. Transamerica was created as a holding <a href="https://www.transamerica.com/individual/what-we-offer/products/insurance/final-expense-life/" target="_blank" rel="noreferrer noopener">company</a> after the merger of Bank of Italy with Bank of America in 1928.</p>
+<p>Transamerica traces back to A.P. Giannini, the San Francisco banker who founded Bank of Italy in 1904. Transamerica was created as a holding <a href="https://www.transamerica.com/individual/what-we-offer/products/insurance/final-expense-life/" target="_blank" rel="noreferrer noopener">company</a> after the merger of Bank of Italy with Bank of America in 1928.</p>
 
 <p>In 1930, the company purchased Occidental Life Insurance and started offering life insurance. Life insurance became their flagship product and remained the biggest part of the company’s operation. Their life insurance products include term life, whole life, final expense, and other supplemental products like long-term care and accidental death insurance.</p>
 
-<p>In 1956, the company became Transamerica Corporation. It became a part of one of the world’s leading financial institutions Aegon in 1999. The company recently acquired two other life insurance companies, Monumental Life and Stonebridge Life. These companies are now offering Transamerica Premier Life Insurance burial insurance products.</p>
+<p>In 1956, the company became Transamerica Corporation. It became a part of one of the world’s leading financial institutions Aegon in 1999. Its final expense policies are issued by Transamerica Life Insurance Company (in New York, Transamerica Financial Life Insurance Company).</p>
 
-<p>Today, Transamerica is involved in banking, airlines, movies, and the car rental business. </p>
+<p>Today Transamerica focuses on life insurance, retirement and investment products.</p>
 
 <p><br><strong>FINANCIAL RATING</strong></p>
 
 <p>When evaluating a life insurance company, it’s important to look at its financial strength. You will be more confident knowing your beneficiary can get its claim when you’re gone.</p>
 
-<p>Transamerica has the highest A.M. Best rating of A+ today. Many other financial rating agencies have awarded Transamerica very high ratings. Some of the other rating agencies have given Transamerica high marks, including:</p>
+<p>A.M. Best rates Transamerica Life Insurance Company A (Excellent), affirmed February 2026. Many other financial rating agencies have awarded Transamerica very high ratings. Some of the other rating agencies have given Transamerica high marks, including:</p>
 
 <ul>
 <li>A &#160;&#160;  A.M. Best</li>
@@ -577,7 +577,7 @@ benefit plan.</p>
 
 <p><br><strong>What is TransAmerica’s financial rating?</strong></p>
 
-<p>A.M. Best gives TransAmerica an A+ rating.</p>
+<p>A.M. Best gives Transamerica an A (Excellent) rating.</p>
 
 <p><br><strong>What is TransAmerica’s website?</strong></p>
 
@@ -671,7 +671,7 @@ benefit plan.</p>
 
 <ul>
 <li>TransAmerica has been in business for over 90 years.</li>
-<li>A.M. Best gives TransAmerica an A+ rating.</li>
+<li>A.M. Best gives Transamerica an A (Excellent) rating.</li>
 <li>TransAmerica offers a variety of life insurance products.</li>
 <li>First-day coverage is available for some policies.</li>
 </ul>

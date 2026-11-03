@@ -455,7 +455,9 @@ sidebar: true
 
 <p>By 1967, they began offering lower rates for non-smoker applicants. Phoenix Life and Home Life merged in 1992, making them in the top 25 life insurance companies in the U.S.</p>
 
-<p>Phoenix became a stock company in 2001, known as The Phoenix Companies, Inc. In 2015, Nassau Re. acquired the company, improving the liquidity and financial strength of the organization. By 2018, Phoenix rebranded as Nassau Re. Phoenix Life continues to provide <a href="https://nsre.com/apply-for-final-expense-intro.html" target="_blank" rel="noreferrer noopener">insurance solutions</a> for the middle market.</p>
+<p>Phoenix became a stock company in 2001, known as The Phoenix Companies, Inc. Nassau Re agreed to buy the company in 2015 and closed the deal in June 2016, improving the liquidity and financial strength of the organization. By 2018, Phoenix rebranded as Nassau Re. Phoenix Life continues to provide <a href="https://nsre.com/apply-for-final-expense-intro.html" target="_blank" rel="noreferrer noopener">insurance solutions</a> for the middle market.</p>
+
+<p>In most states, Phoenix Remembrance Life policies were issued by PHL Variable Insurance Company. In May 2024, PHL Variable was placed in rehabilitation under the supervision of the Connecticut Insurance Department. In December 2025, the Department told the court that PHL Variable needs to be liquidated. If you own one of these policies, check the Connecticut Insurance Department’s PHL Variable updates for how your coverage is affected.</p>
 
 <p><br><strong>PHOENIX LIFE FINANCIAL RATINGS</strong></p>
 
@@ -464,7 +466,7 @@ sidebar: true
 <p><strong>Here’s Phoenix Life’s financial rating from top rating agencies in the country:</strong></p>
 
 <ul>
-<li>A.M. Best rating: B or stable </li>
+<li>A.M. Best rating: B++ (Good) for Nassau Life Insurance Company (formerly Phoenix Life Insurance Company), affirmed February 2025</li>
 <li>Standard and Poor’s rating: B+ </li>
 <li>Better Business Bureau rating: A+</li>
 </ul>

@@ -105,7 +105,7 @@ sidebar: true
 <td>Immediate Coverage</td><td>100% coverage from day one</td>
 </tr>
 <tr>
-<td>Coverage Amount</td><td>$2,000 - $40,000</td>
+<td>Coverage Amount</td><td>$2,000 - $50,000</td>
 </tr>
 <tr>
 <td>Level Premium</td><td>Price never increases</td>
@@ -541,7 +541,7 @@ sidebar: true
 
 <ul>
 <li>A+ (Superior): A.M. Best</li>
-<li>AA- (Very Strong): Standard &amp; Poor’s</li>
+<li>A+ (Strong): Standard &amp; Poor’s</li>
 <li>A1 (Good): Moody’s</li>
 <li>A+: Better Business Bureau</li>
 </ul>
@@ -566,15 +566,15 @@ sidebar: true
 
 <p><br><strong>Is United of Omaha the same as Mutual of Omaha?</strong></p>
 
-<p>United of Omaha is a subsidiary of Mutual of Omaha, and they write different insurance products.</p>
+<p>United of Omaha Life Insurance Company is a Mutual of Omaha company. It underwrites Living Promise Whole Life Insurance.</p>
 
 <p><br><strong>Is Mutual of Omaha owned by policyholders?</strong></p>
 
-<p>Mutual of Omaha is a mutual company that its policyholders own.</p>
+<p>Mutual of Omaha is owned by its policyholders. In April 2026 it reorganized under a mutual holding company, Mutual of Omaha Holding Company.</p>
 
 <p><br><strong>How long has Mutual of Omaha been in business?</strong></p>
 
-<p>Mutual of Omaha was founded in 1909, they had been in business for 112 years.</p>
+<p>Mutual of Omaha was founded in 1909.</p>
 
 <p><br><strong>What is the Mutual of Omaha financial rating?</strong></p>
 
@@ -686,7 +686,7 @@ sidebar: true
 <p><strong>Cons:</strong></p>
 
 <ul>
-<li>Easily confused with Mutual of Omaha’s other company, United of Omaha, which has a mandatory 2-year waiting period.</li>
+<li>Living Promise Whole Life Insurance is underwritten by United of Omaha Life Insurance Company, a Mutual of Omaha company. Product availability and provisions vary by state.</li>
 <li>Has build chart: You may not qualify if you are on the heavy side (obese or morbidly obese).</li>
 <li>Waiting period: The graded benefit plan comes with a 2-year waiting period.</li>
 <li>Not all health issues qualify: significant medical conditions can be denied even with the graded plan.</li>
@@ -694,7 +694,7 @@ sidebar: true
 
 <p><br><strong>How much life insurance can you get with Mutual of Omaha life insurance?</strong></p>
 
-<p>You can buy $2,000 to $40,000 coverage.</p>
+<p>You can buy $2,000 to $50,000 of Level coverage, or up to $20,000 of Graded coverage. Limits vary by state.</p>
 
 <p><br><strong>What does Mutual of Omaha life insurance cost?</strong></p>
 

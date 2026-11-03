@@ -11,7 +11,7 @@ sidebar: true
 
 <h1>AARP Burial Insurance Review</h1>
 
-<p><strong>Here’s the Bottom Line:</strong><br>• AARP burial insurance is easy to get but often overpriced<br>• Guaranteed acceptance plans come with a 2-year waiting period<br>• Coverage is limited, usually maxing out around $25,000 to $30,000<br>• Term policies can expire at age 80 with no payout<br>• You’re only getting one company’s pricing, not true comparison shopping</p>
+<p><strong>Here’s the Bottom Line:</strong><br>• AARP burial insurance is easy to get but often overpriced<br>• Guaranteed acceptance plans come with a 2-year waiting period<br>• The Guaranteed Acceptance plan tops out at $30,000 in most states ($25,000 in a few)<br>• Term policies can expire at age 80 with no payout<br>• You’re only getting one company’s pricing, not true comparison shopping</p>
 
 <p>AARP burial insurance is marketed as simple and safe, but it comes with tradeoffs most people miss. It’s actually a group policy through New York Life, not AARP itself, and you must be a member to qualify. The guaranteed acceptance option has no health questions, but it includes a limited benefit for the first 2 years and caps coverage around $30,000. Term options can also expire at age 80, which creates a real risk of paying for years and getting nothing. AARP burial insurance works best as a last resort, not a first choice, especially if you can qualify for better coverage elsewhere.</p>
 
