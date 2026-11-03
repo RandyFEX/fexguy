@@ -102,7 +102,7 @@ sidebar: true
 
 <p>Here are some preferred rates from one of my top-recommended companies, but your rates may vary depending on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>
@@ -269,11 +269,11 @@ sidebar: true
 <p>Here is one example of a company that will deny you for 1st-day coverage for most cancers, but they allow Basal cancer:</p>
 
 <ul>
-<li><strong>Aetna Preferred</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, <strong>excluding basal cell or squamous cell skin cancer</strong>? (YES or NO)</li>
-<li><strong>Aflac Preferred</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, <strong>excluding basal cell or squamous cell skin cancer</strong>? (YES or NO)</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (<strong>excluding Stage or Grade 1 Prostate Cancer, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma)</strong> or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy; including oral medication or immunotherapy? (YES or NO)</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 3 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for lymphoma, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a> or any form of cancer or received or been advised to receive chemotherapy or radiation for cancer <strong>(the term “cancer” includes melanoma, but excludes basal cell skin cancer)</strong>? (YES or NO)</li>
-<li><strong>Mutual of Omaha Level</strong> – In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer <strong>(except basal or squamous cell skin cancer)</strong>? (YES or NO)</li>
+<li><strong>Aetna Preferred</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, <strong>excluding basal cell or squamous cell skin cancer</strong>? (YES or NO)</li>
+<li><strong>Aflac Preferred</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, <strong>excluding basal cell or squamous cell skin cancer</strong>? (YES or NO)</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (<strong>excluding Stage or Grade 1 Prostate Cancer, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma)</strong> or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy; including oral medication or immunotherapy? (YES or NO)</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 3 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for lymphoma, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">leukemia</a> or any form of cancer or received or been advised to receive chemotherapy or radiation for cancer <strong>(the term “cancer” includes melanoma, but excludes basal cell skin cancer)</strong>? (YES or NO)</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer <strong>(except basal or squamous cell skin cancer)</strong>? (YES or NO)</li>
 </ul>
 
 <h3>How do burial insurance underwriters view a recurrence of cancer?</h3>
@@ -282,7 +282,7 @@ sidebar: true
 
 <h3>Why is an independent broker vital for cancer burial insurance?</h3>
 
-<p>An independent broker acts as your advocate by comparing the specific “look-back” periods of dozens of different insurance companies. Since carriers have different rules -some require two years of remission, while others require five – a broker ensures you are matched with the company that offers the fastest approval. Their specialized knowledge prevents you from accidentally applying to a company that would automatically decline your history.</p>
+<p>An independent broker acts as your advocate by comparing the specific “look-back” periods of dozens of different insurance companies. Since carriers have different rules -some require two years of remission, while others require five. A broker ensures you are matched with the company that offers the fastest approval. Their specialized knowledge prevents you from accidentally applying to a company that would automatically decline your history.</p>
 
 <h3>Does a history of chemotherapy increase burial insurance premiums?</h3>
 

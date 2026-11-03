@@ -90,17 +90,17 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>What are types of burial insurance available for people with liver cirrhosis?</strong></h2>
 
-<p><strong>First-Day Coverage – </strong>This one’s a breeze – no waiting period, no medical exam. Just answer a few simple health questions and your coverage kicks in right after your first premium payment.</p>
+<p><strong>First-Day Coverage: </strong>This one’s a breeze: no waiting period, no medical exam. Just answer a few simple health questions and your coverage kicks in right after your first premium payment.</p>
 
-<p><strong>Guaranteed Issue – </strong>Skip the medical exam and health questionnaire with this option, making it a cinch to get coverage if you have liver cirrhosis. But here’s the catch: it comes with a two-year waiting period. If you pass away within those two years for any health reason, your policy pays out your premium pulse 7-10% interest.</p>
+<p><strong>Guaranteed Issue: </strong>Skip the medical exam and health questionnaire with this option, making it a cinch to get coverage if you have liver cirrhosis. But here’s the catch: it comes with a two-year waiting period. If you pass away within those two years for any health reason, your policy pays out your premium pulse 7-10% interest.</p>
 
 <h2 id="best-insurance-option"><strong>What is my best insurance option if I have liver cirrhosis?</strong></h2>
 
-<p><strong>Liver Cirrhosis Only&#160;– </strong>If your liver’s in decent shape and you’re on treatment, you might snag first-day coverage. It all depends on your health and where you live.</p>
+<p><strong>Liver Cirrhosis Only: </strong>If your liver’s in decent shape and you’re on treatment, you might snag first-day coverage. It all depends on your health and where you live.</p>
 
-<p><strong>Past Liver Transplant – </strong>If you’ve had a liver transplant, first-day coverage might still be on the table, depending on how many years have passed since the procedure and where you’re located.</p>
+<p><strong>Past Liver Transplant: </strong>If you’ve had a liver transplant, first-day coverage might still be on the table, depending on how many years have passed since the procedure and where you’re located.</p>
 
-<p><strong>Liver Transplant Recommended – </strong>If you’re looking at a future liver transplant, your only play might be a guaranteed issue policy with that pesky two-year waiting period.</p>
+<p><strong>Liver Transplant Recommended: </strong>If you’re looking at a future liver transplant, your only play might be a guaranteed issue policy with that pesky two-year waiting period.</p>
 
 <h2 id="do-i-need-medical-exam?"><strong>Do I need a medical exam to get burial insurance?</strong></h2>
 
@@ -129,23 +129,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – Level – 1st-Day Coverage</td>
+<td>Certain companies: Level, 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -162,23 +162,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – Level – 1st-Day Coverage </td>
+<td>Certain companies: Level, 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -196,7 +196,7 @@ sidebar: true
 <li>In the PAST 10 YEARS, have you opted to NOT seek treatment, have NOT taken medication, and/or have NOT followed the prescribed treatment plan following a medical diagnosis by a member of the medical profession for liver cirrhosis?</li>
 </ul>
 
-<p>And don’t be surprised if they don’t use the exact phrase “liver cirrhosis” – they might phrase it differently, but it’s still asking about your liver health. Make sure to answer honestly because, yes, cirrhosis is a liver disease.</p>
+<p>And don’t be surprised if they don’t use the exact phrase “liver cirrhosis”; they might phrase it differently, but it’s still asking about your liver health. Make sure to answer honestly because, yes, cirrhosis is a liver disease.</p>
 
 <ul>
 <li>Have you been diagnosed or treated for any liver condition?</li>
@@ -216,7 +216,7 @@ sidebar: true
 
 <h2 id="finding-affordable-burial-insurance"><strong>How to find affordable burial insurance with cirrhosis of the liver</strong></h2>
 
-<p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans – they’ll end up being a pricey mistake you don’t need.</p>
+<p>Want the best deal? Go for plans with health questions and first-day coverage. Avoid those two-year waiting period plans; they’ll end up being a pricey mistake you don’t need.</p>
 
 <h2 id="faq"><strong>  Frequently asked questions</strong></h2>
 

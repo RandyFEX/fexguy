@@ -54,7 +54,7 @@ sidebar: true
 
 <p>Pastors also see financial devastation on the family when there is no life insurance or funds to cover the cost of a funeral and final expenses.</p>
 
-<p>Many churches rely on donations from members, but it’s not always enough. Churches need people who are willing to give back through generous contributions or be prepared if someone were to pass away unexpectedly – especially their Pastor! </p>
+<p>Many churches rely on donations from members, but it’s not always enough. Churches need people who are willing to give back through generous contributions or be prepared if someone were to pass away unexpectedly, especially their Pastor! </p>
 
 <p>Many small congregations do not offer personal life insurance for pastors within their benefits packages. That’s why if pastors do not purchase final expense insurance, their families will be at financial risk when death occurs. </p>
 
@@ -136,19 +136,19 @@ sidebar: true
 
 <h2 id="features-of-final-expense-insurance"><br><strong>Features of final expense insurance</strong></h2>
 
-<p><strong>No medical exam</strong> – final expense insurance for pastors and congregations does not require a medical exam. You only need to answer some health questions.</p>
+<p><strong>No medical exam</strong>: final expense insurance for pastors and congregations does not require a medical exam. You only need to answer some health questions.</p>
 
-<p><strong>Lenient underwriting</strong> – most health issues will qualify for a first-day coverage plan.</p>
+<p><strong>Lenient underwriting</strong>: most health issues will qualify for a first-day coverage plan.</p>
 
-<p><strong>Fast approval</strong> – the application can be accomplished over the phone, and approval is known after a few minutes to a few business days.</p>
+<p><strong>Fast approval</strong>: the application can be accomplished over the phone, and approval is known after a few minutes to a few business days.</p>
 
 <p><strong>Permanent </strong>coverage does not expire due to age or worsening health conditions.</p>
 
-<p><strong>Level premium</strong> – the premium is fixed and will not increase as you get older.</p>
+<p><strong>Level premium</strong>: the premium is fixed and will not increase as you get older.</p>
 
-<p><strong>Level benefit</strong> – the death benefit is guaranteed never to go down</p>
+<p><strong>Level benefit</strong>: the death benefit is guaranteed never to go down</p>
 
-<p><strong>Cash value build-up</strong> – cash value accumulates over time.</p>
+<p><strong>Cash value build-up</strong>: cash value accumulates over time.</p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 

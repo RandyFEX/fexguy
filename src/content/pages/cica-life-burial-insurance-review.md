@@ -56,11 +56,11 @@ sidebar: true
 <li>Superior Choice Guaranteed Issue policy</li>
 </ul>
 
-<p><strong>CICA Life Superior Choice Standard</strong> – CICA Life’s first-day coverage plan. It does not require a medical exam, you only need to answer basic health questions.</p>
+<p><strong>CICA Life Superior Choice Standard</strong>: CICA Life’s first-day coverage plan. It does not require a medical exam, you only need to answer basic health questions.</p>
 
 <p>We highly recommend this plan for people with significant health issues like uncontrolled high blood pressure, stroke, TIA, uncontrolled diabetes and diabetic complications, congestive heart failure, heart disease, cardiomyopathy, lung diseases including COPD and emphysema, liver cirrhosis, liver failure, kidney failure, kidney insufficiency, kidney disease even kidney dialysis.</p>
 
-<p><strong>CICA Life Superior Choice Guaranteed Issue</strong> – CICA Life’s burial insurance product that accepts all health issues. The only downside to this plan is the two-year waiting period. If you die during the waiting period, CICA Life will pay 110% of the premiums you paid.</p>
+<p><strong>CICA Life Superior Choice Guaranteed Issue</strong>: CICA Life’s burial insurance product that accepts all health issues. The only downside to this plan is the two-year waiting period. If you die during the waiting period, CICA Life will pay 110% of the premiums you paid.</p>
 
 <table class="table-wrap" id="tablepress-239">
 <thead>
@@ -73,16 +73,16 @@ sidebar: true
 <td>Issue Ages </td><td>0-85 years old</td>
 </tr>
 <tr>
-<td>Benefit amount </td><td>$1,000 – $30,000</td>
+<td>Benefit amount </td><td>$1,000 to $30,000</td>
 </tr>
 <tr>
-<td>0 – 50 years old</td><td>$1,000 – $30,000</td>
+<td>0 to 50 years old</td><td>$1,000 to $30,000</td>
 </tr>
 <tr>
-<td>51 – 70 years old</td><td>$1,000 – $20,000</td>
+<td>51 to 70 years old</td><td>$1,000 to $20,000</td>
 </tr>
 <tr>
-<td>71 – 85 years old</td><td>$1,000 – $10,000</td>
+<td>71 to 85 years old</td><td>$1,000 to $10,000</td>
 </tr>
 <tr>
 <td>Level premiums</td><td>Premiums will never increase</td>
@@ -110,16 +110,16 @@ sidebar: true
 <td>Issue Ages </td><td>0-85 years old</td>
 </tr>
 <tr>
-<td>Benefit amount </td><td>$1,000 – $30,000</td>
+<td>Benefit amount </td><td>$1,000 to $30,000</td>
 </tr>
 <tr>
-<td>0 – 50 years old</td><td>$1,000 – $30,000</td>
+<td>0 to 50 years old</td><td>$1,000 to $30,000</td>
 </tr>
 <tr>
-<td>51 – 70 years old</td><td>$1,000 – $30,000</td>
+<td>51 to 70 years old</td><td>$1,000 to $30,000</td>
 </tr>
 <tr>
-<td>71 – 85 years old</td><td>$1,000 – $10,000</td>
+<td>71 to 85 years old</td><td>$1,000 to $10,000</td>
 </tr>
 <tr>
 <td>Level premiums</td><td>Premiums will never increase</td>
@@ -194,7 +194,7 @@ sidebar: true
 
 <h2 id="What-Are-The-Pros"><strong>Pros &amp; cons of CICA Life</strong><br><strong>standard vs. guaranteed issue</strong></h2>
 
-<p><strong>PROS</strong> – <strong>STANDARD PLAN (1st-day coverage)</strong></p>
+<p><strong>PROS</strong>: <strong>STANDARD PLAN (1st-day coverage)</strong></p>
 
 <ul>
 <li>First-day coverage&#160;</li>
@@ -204,27 +204,27 @@ sidebar: true
 <li>No Height or Weight Requirement</li>
 <li>No Medical Information Bureau or Prescription Check.</li>
 <li>Nonforfeiture Options</li>
-<li>Physician information is recommended but not required&#160;–</li>
+<li>Physician information is recommended but not required:</li>
 <li>Simple application and approval process over the phone</li>
 <li>Terminal Illness Accelerated living benefits are added with no additional costs.</li>
 <li>Accidental dismemberment benefit</li>
 <li>CICA life has lenient underwriting significant health issues like uncontrolled high blood pressure, diabetic complications, heart disease, lung disease, kidney failure, and dialysis qualify for a first-day coverage plan.</li>
 </ul>
 
-<p><strong>CONS</strong> – <strong>STANDARD PLAN (1st-day coverage)</strong></p>
+<p><strong>CONS</strong>: <strong>STANDARD PLAN (1st-day coverage)</strong></p>
 
 <ul>
 <li>Not available in 50 states</li>
 <li>Maximum coverage amount is:
 <ul>
-<li><strong>0-50:</strong>&#160;$1,000 – $30,000</li>
-<li><strong>51-70:</strong>&#160;$1,000 – $20,000</li>
-<li><strong>71-85:&#160;</strong>$1,000 – $10,000</li>
+<li><strong>0-50:</strong>&#160;$1,000 to $30,000</li>
+<li><strong>51-70:</strong>&#160;$1,000 to $20,000</li>
+<li><strong>71-85:&#160;</strong>$1,000 to $10,000</li>
 </ul>
 </li>
 </ul>
 
-<p><strong>PROS</strong> – <strong>GUARANTEED ISSUE PLAN</strong></p>
+<p><strong>PROS</strong>: <strong>GUARANTEED ISSUE PLAN</strong></p>
 
 <ul>
 <li>Accepts all health issues</li>
@@ -233,7 +233,7 @@ sidebar: true
 <li>Death benefit will never decrease</li>
 </ul>
 
-<p><strong>CONS</strong> – <strong>GUARANTEED ISSUE PLAN</strong></p>
+<p><strong>CONS</strong>: <strong>GUARANTEED ISSUE PLAN</strong></p>
 
 <ul>
 <li>Two-year waiting period</li>
@@ -241,8 +241,8 @@ sidebar: true
 <li>Not available in 50 states</li>
 <li>Maximum coverage amount is:
 <ul>
-<li><strong>0-70:&#160;</strong>$1,000 – $30,000</li>
-<li><strong>71-85:&#160;</strong>$1,000 – $10,000</li>
+<li><strong>0-70:&#160;</strong>$1,000 to $30,000</li>
+<li><strong>71-85:&#160;</strong>$1,000 to $10,000</li>
 </ul>
 </li>
 </ul>
@@ -250,16 +250,16 @@ sidebar: true
 <h2 id="Are-There-Any-Riders"><strong>Riders or other benefits included</strong></h2>
 
 <ul>
-<li><strong>50% Accelerated Living Benefit Rider</strong> – this benefit pays out 50% of your death benefit if you are diagnosed with a terminal illness that is expected to result in death within one year.</li>
-<li><strong>Accidental Death Benefit</strong> – doubles the face amount if you die from an accident</li>
-<li><strong>Dismemberment</strong> – pays out an amount if you have a dismemberment.&#160;</li>
+<li><strong>50% Accelerated Living Benefit Rider</strong>: this benefit pays out 50% of your death benefit if you are diagnosed with a terminal illness that is expected to result in death within one year.</li>
+<li><strong>Accidental Death Benefit</strong>: doubles the face amount if you die from an accident</li>
+<li><strong>Dismemberment</strong>: pays out an amount if you have a dismemberment.&#160;</li>
 </ul>
 
 <p><strong>Other Benefits</strong>:</p>
 
 <ul>
-<li><strong>Reduced Paid Up</strong> – allows you to use your policy’s cash value to buy a smaller amount of paid-up insurance. If you stop paying your premiums, you are still covered.</li>
-<li><strong>Extended Term</strong> – insurance allows you to use your policy’s cash value to buy single-premium term insurance with the same death benefit.</li>
+<li><strong>Reduced Paid Up</strong>: allows you to use your policy’s cash value to buy a smaller amount of paid-up insurance. If you stop paying your premiums, you are still covered.</li>
+<li><strong>Extended Term</strong>: insurance allows you to use your policy’s cash value to buy single-premium term insurance with the same death benefit.</li>
 </ul>
 
 <h2 id="How-Do-I-Get-Approved"><strong>How do I get approved by CICA Life?</strong></h2>

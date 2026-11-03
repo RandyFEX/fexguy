@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Prosperity Life Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Prosperity Life Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -68,19 +68,19 @@ sidebar: true
 
 <h2 id="pros-of-prosperity-burial-insurance"><strong>Pros of Prosperity Life burial insurance</strong></h2>
 
-<p><strong>Average pricing</strong> – the Level benefit plan pricing has average pricing that is in the same range as other big insurance companies offering first-day coverage plan.</p>
+<p><strong>Average pricing</strong>: the Level benefit plan pricing has average pricing that is in the same range as other big insurance companies offering first-day coverage plan.</p>
 
-<p><strong>Non-smoker rates</strong> – smoker rate only applies to cigarette smoking. Tobacco and nicotine users can get non-tobacco rates equal to 30-40% savings on their premium.</p>
+<p><strong>Non-smoker rates</strong>: smoker rate only applies to cigarette smoking. Tobacco and nicotine users can get non-tobacco rates equal to 30-40% savings on their premium.</p>
 
-<p><strong>Semi-lenient underwriting</strong> – some medical conditions will qualify for first-day coverage.</p>
+<p><strong>Semi-lenient underwriting</strong>: some medical conditions will qualify for first-day coverage.</p>
 
 <h2 id="cons-of-prosperity-burial-insurance"><strong>Cons of Prosperity Life burial insurance</strong></h2>
 
-<p><strong>After approval policy support</strong> – getting policy support to get updates or changes to your policy is below average </p>
+<p><strong>After approval policy support</strong>: getting policy support to get updates or changes to your policy is below average </p>
 
-<p><strong>3-year lookback period</strong> – on cancer diagnosis and treatment</p>
+<p><strong>3-year lookback period</strong>: on cancer diagnosis and treatment</p>
 
-<p><strong>Restrictive underwriting for blood thinner use</strong> – if you are using Coumadin, Warfarin, and other blood thinners for angina and heart attack prevention, you may be disqualified for coverage.</p>
+<p><strong>Restrictive underwriting for blood thinner use</strong>: if you are using Coumadin, Warfarin, and other blood thinners for angina and heart attack prevention, you may be disqualified for coverage.</p>
 
 <h2 id="prosperity-burial-insurance-products"><br><strong>Prosperity Life burial insurance product</strong>s</h2>
 
@@ -141,7 +141,7 @@ coverage.</p>
 
 <p><strong>Issue ages:</strong> 50-75 Golden Promise                    </p>
 
-<p><strong>Limited payout</strong> – The Golden Promise has a <strong>limited payout</strong> of benefits for the natural cause of death during the first two years. A graded benefit plan works this way:</p>
+<p><strong>Limited payout</strong>: The Golden Promise has a <strong>limited payout</strong> of benefits for the natural cause of death during the first two years. A graded benefit plan works this way:</p>
 
 <p><strong>If the insured dies due to natural causes, the beneficiary will receive:</strong></p>
 
@@ -151,7 +151,7 @@ coverage.</p>
 <li><strong>3rd year and beyond: 100% of the face amount</strong></li>
 </ul>
 
-<p>For accidental death from the first day of coverage – 100% of the face amount will be given to the beneficiary.<br></p>
+<p>For accidental death from the first day of coverage, 100% of the face amount will be given to the beneficiary.<br></p>
 
 <p>Their graded benefit plan is only suitable in a few rare situations. Some medical conditions on the graded plan will qualify for first-day coverage in other companies.</p>
 
@@ -165,7 +165,7 @@ coverage.</p>
 
 <p><strong>Issue ages:</strong> 50-80</p>
 
-<p><strong>2-year waiting period</strong> – The modified plan will payout 100% accidental death benefit from the first day of coverage.</p>
+<p><strong>2-year waiting period</strong>: The modified plan will payout 100% accidental death benefit from the first day of coverage.</p>
 
 <p>If you pass away due to natural causes during the first year, the company will return 110% of the annual premium (excluding the policy fee).</p>
 
@@ -713,13 +713,13 @@ their burial insurance policies. </p>
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>

@@ -13,7 +13,7 @@ sidebar: true
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
-<p>• Being hospitalized recently can limit your burial insurance options, depending on the insurance company<br>• Some companies will decline you or require a waiting period plan for hospital visits in the last 1-2 years<br>• Guaranteed issue plans cost much more and delay full payouts for 2 years – avoid these plans!<br>• Applying too soon after discharge can lead to worse coverage – depends on the company<br>• Some companies are more flexible depending on your recovery timeline &amp; progress<br>• Applying wrong can lock you into higher premiums for life or delayed benefits</p>
+<p>• Being hospitalized recently can limit your burial insurance options, depending on the insurance company<br>• Some companies will decline you or require a waiting period plan for hospital visits in the last 1-2 years<br>• Guaranteed issue plans cost much more and delay full payouts for 2 years, avoid these plans!<br>• Applying too soon after discharge can lead to worse coverage; depends on the company<br>• Some companies are more flexible depending on your recovery timeline &amp; progress<br>• Applying wrong can lock you into higher premiums for life or delayed benefits</p>
 
 <p>Burial insurance after being hospitalized depends on how recent the stay was and what caused it. Insurance companies see recent hospital visits as a higher risk, especially within the last 30 to 90 days. That usually means you won’t qualify for immediate coverage and may need a guaranteed issue whole life policy with a waiting period. Burial insurance is still available, but timing and company choice matter more than anything. If your condition improves and enough time passes, better options can open up.</p>
 
@@ -66,11 +66,11 @@ sidebar: true
 
 <p id="REQUIREMENTS-TO-QUALIFY-FOR-BURIAL-INSURANCE-IF-YOU-ARE-HOSPITALIZED"><br><strong>REQUIREMENTS TO QUALIFY FOR BURIAL INSURANCE IF YOU ARE HOSPITALIZED</strong></p>
 
-<p><strong>AGE –</strong> Most companies offering guaranteed issue burial insurance accept applicants 50-85 years old, although some companies have their age requirements.</p>
+<p><strong>AGE:</strong> Most companies offering guaranteed issue burial insurance accept applicants 50-85 years old, although some companies have their age requirements.</p>
 
-<p><br><strong>STATE AVAILABILITY –</strong> Some insurance companies are not licensed in every state. Ensure the company is licensed in your state before applying for coverage.</p>
+<p><br><strong>STATE AVAILABILITY:</strong> Some insurance companies are not licensed in every state. Ensure the company is licensed in your state before applying for coverage.</p>
 
-<p><br><strong>ABILITY TO ENTER A LEGAL CONTRACT – </strong>Mental capacity to enter into a legal contract is one of the requirements to qualify for burial insurance. </p>
+<p><br><strong>ABILITY TO ENTER A LEGAL CONTRACT: </strong>Mental capacity to enter into a legal contract is one of the requirements to qualify for burial insurance. </p>
 
 <p>If you have any cognitive impairment, such as advanced Alzheimer’s disease or dementia, and unable to give legal consent to an agreement, the company may reject your application. </p>
 
@@ -331,7 +331,7 @@ questions; there’s no medical exam either!</p>
 
 <p>All you have to do is sign on the application over the phone or on your computer or laptop, we will send it to the insurance company, and it’s approved in a couple of minutes. </p>
 
-<p><br><strong>EASY TO QUALIFY – SIMPLE APPLICATION PROCESS</strong></p>
+<p><br><strong>EASY TO QUALIFY: SIMPLE APPLICATION PROCESS</strong></p>
 
 <p>When you apply for a guaranteed issue plan, you only need to provide your personal information, beneficiary, and payment information. You will easily qualify for this plan, and all you need is the ability to sign your name on the application for coverage.</p>
 

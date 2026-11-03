@@ -128,16 +128,16 @@ sidebar: true
 <p>Liver disease or disorder compromises the liver’s ability to detoxify blood, regulate circulation, and support organ systems, which can trigger cascading failures in the brain, kidneys, heart, and gastrointestinal tract and can affect underwriting and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Hepatic encephalopathy</strong> – Toxin buildup impairs brain function, causing confusion, personality changes, and loss of consciousness.</li>
-<li><strong>Ascites</strong> – Severe fluid accumulation in the abdomen signals advanced liver failure and impairs breathing and mobility.</li>
-<li><strong>Esophageal varices</strong> – Enlarged veins in the esophagus can rupture and cause sudden, life-threatening internal bleeding.</li>
-<li><strong>Kidney failure</strong> – Altered blood flow and toxin overload can lead to hepatorenal syndrome and rapid kidney shutdown.</li>
-<li><strong>Sepsis risk</strong> – Immune dysfunction increases the risk of overwhelming infections, which can be fatal.</li>
-<li><strong>Severe bleeding disorders</strong> – Loss of clotting factor production raises the risk of uncontrolled bleeding from minor injuries.</li>
-<li><strong>Cardiac strain</strong> – Circulatory imbalance and chronic inflammation increase the risk of heart failure and arrhythmias.</li>
-<li><strong>Severe malnutrition</strong> – Impaired bile and protein metabolism leads to muscle wasting and organ weakness.</li>
-<li><strong>Portal hypertension</strong> – Elevated pressure in the liver’s blood vessels damages surrounding organs and worsens bleeding risk.</li>
-<li><strong>Liver failure progression</strong> – Advanced dysfunction may require transplant evaluation and carries a high mortality risk.</li>
+<li><strong>Hepatic encephalopathy</strong>: Toxin buildup impairs brain function, causing confusion, personality changes, and loss of consciousness.</li>
+<li><strong>Ascites</strong>: Severe fluid accumulation in the abdomen signals advanced liver failure and impairs breathing and mobility.</li>
+<li><strong>Esophageal varices</strong>: Enlarged veins in the esophagus can rupture and cause sudden, life-threatening internal bleeding.</li>
+<li><strong>Kidney failure</strong>: Altered blood flow and toxin overload can lead to hepatorenal syndrome and rapid kidney shutdown.</li>
+<li><strong>Sepsis risk</strong>: Immune dysfunction increases the risk of overwhelming infections, which can be fatal.</li>
+<li><strong>Severe bleeding disorders</strong>: Loss of clotting factor production raises the risk of uncontrolled bleeding from minor injuries.</li>
+<li><strong>Cardiac strain</strong>: Circulatory imbalance and chronic inflammation increase the risk of heart failure and arrhythmias.</li>
+<li><strong>Severe malnutrition</strong>: Impaired bile and protein metabolism leads to muscle wasting and organ weakness.</li>
+<li><strong>Portal hypertension</strong>: Elevated pressure in the liver’s blood vessels damages surrounding organs and worsens bleeding risk.</li>
+<li><strong>Liver failure progression</strong>: Advanced dysfunction may require transplant evaluation and carries a high mortality risk.</li>
 </ul>
 
 <h2>Understanding liver disease or liver disorder policy types</h2>
@@ -156,7 +156,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

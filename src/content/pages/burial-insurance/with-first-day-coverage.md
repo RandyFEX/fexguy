@@ -50,17 +50,17 @@ sidebar: true
 
 <p>Burial insurance with first-day coverage has many benefits, including:</p>
 
-<p>1.&#160;<strong>Full insurance coverage starts upon first payment</strong>&#160;– your insurance coverage begins after you pay your first premium. Your beneficiary is entitled to receive 100% of your face amount when you pass away due to an accident or a medical reason.</p>
+<p>1.&#160;<strong>Full insurance coverage starts upon first payment</strong>: your insurance coverage begins after you pay your first premium. Your beneficiary is entitled to receive 100% of your face amount when you pass away due to an accident or a medical reason.</p>
 
-<p>2.&#160;<strong>Level premium</strong>&#160;– your monthly premium will remain the same. It will never increase due to your age or worsening health condition. You lock the price at the age you bought the policy so it will remain the same throughout your life.</p>
+<p>2.&#160;<strong>Level premium</strong>: your monthly premium will remain the same. It will never increase due to your age or worsening health condition. You lock the price at the age you bought the policy so it will remain the same throughout your life.</p>
 
-<p>3.&#160;<strong>Level benefit</strong>&#160;– your death benefit will never decrease. It is guaranteed to remain the same, and your beneficiary will receive the full death benefit when you pass away.</p>
+<p>3.&#160;<strong>Level benefit</strong>: your death benefit will never decrease. It is guaranteed to remain the same, and your beneficiary will receive the full death benefit when you pass away.</p>
 
-<p>4.&#160;<strong>Lifetime coverage</strong>&#160;– you are fully covered your whole life. You can never outlive your policy because it will remain in force until age 121.</p>
+<p>4.&#160;<strong>Lifetime coverage</strong>: you are fully covered your whole life. You can never outlive your policy because it will remain in force until age 121.</p>
 
-<p>5.&#160;<strong>Non-cancelable</strong>&#160;– your policy cannot be canceled except for non-payment. Life insurance with first-day coverage will never be canceled due to age. Your policy will remain in force if you keep paying your premium on time.</p>
+<p>5.&#160;<strong>Non-cancelable</strong>: your policy cannot be canceled except for non-payment. Life insurance with first-day coverage will never be canceled due to age. Your policy will remain in force if you keep paying your premium on time.</p>
 
-<p>6.&#160;<strong>Cash value grows over time</strong>&#160;– burial insurance with first-day coverage has a <a href="https://www.forbes.com/advisor/life-insurance/cash-value-life-insurance/" target="_blank" rel="noreferrer noopener">cash value</a> that grows over time. You can withdraw your cash value or file a policy loan if you need funds.</p>
+<p>6.&#160;<strong>Cash value grows over time</strong>: burial insurance with first-day coverage has a <a href="https://www.forbes.com/advisor/life-insurance/cash-value-life-insurance/" target="_blank" rel="noreferrer noopener">cash value</a> that grows over time. You can withdraw your cash value or file a policy loan if you need funds.</p>
 
 <h2 id="what-is-a-waiting-period"><br><strong>What is a waiting period?</strong></h2>
 
@@ -111,9 +111,9 @@ sidebar: true
 <p>The partial waiting period plan death benefit schedule looks like this:</p>
 
 <ul>
-<li>First 12 months – 30%-40% death benefit</li>
-<li>13-24 months – 70%-80% death benefit</li>
-<li>After 24 months – 100% death benefit</li>
+<li>First 12 months: 30%-40% death benefit</li>
+<li>13-24 months: 70%-80% death benefit</li>
+<li>After 24 months: 100% death benefit</li>
 </ul>
 
 <p>Some health issues will not qualify for first-day coverage like:</p>

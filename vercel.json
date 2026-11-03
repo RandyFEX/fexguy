@@ -3,6 +3,11 @@
   "framework": "astro",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "functions": {
+    "api/health-search.js": {
+      "maxDuration": 10
+    }
+  },
   "trailingSlash": true,
   "redirects": [
     {
@@ -1509,8 +1514,7 @@
       "source": "/sitemap_index.xml",
       "destination": "/sitemap-index.xml",
       "statusCode": 301
-    }
-,
+    },
     {
       "source": "/planning-guide/",
       "destination": "/12-step-final-planning-guide/",

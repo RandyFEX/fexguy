@@ -64,7 +64,7 @@ sidebar: true
 <li><strong>Builds cash value that you can borrow against in an emergency</strong></li>
 </ul>
 
-<h2 id="trinity-life">#<strong>1 – Trinity Life    </strong></h2>
+<h2 id="trinity-life">#<strong>1: Trinity Life    </strong></h2>
 
 <p><strong><strong>1ST-DAY COVERAGE:</strong></strong> Yes, with Funeral Funds </p>
 
@@ -72,7 +72,7 @@ sidebar: true
 
 <p><strong>Age Availability: </strong>50-85</p>
 
-<p><strong>Face Amount Range: </strong>$2,500 – $25,000</p>
+<p><strong>Face Amount Range: </strong>$2,500 to $25,000</p>
 
 <p><strong>Lowest Rate: </strong>$7.38 per month* </p>
 
@@ -128,7 +128,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET TRINITY LIFE QUOTE</a></p>
 
-<h2 id="family-benefit-life">#<strong>2 – Family Benefit Life</strong></h2>
+<h2 id="family-benefit-life">#<strong>2: Family Benefit Life</strong></h2>
 
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE</strong></strong></strong></strong>: Yes, with Funeral Funds</p>
 
@@ -136,7 +136,7 @@ sidebar: true
 
 <p><strong>Age Availability: &#160;</strong>50-85</p>
 
-<p><strong>Face Amount Range: </strong>$2,500 – $25,000</p>
+<p><strong>Face Amount Range: </strong>$2,500 to $25,000</p>
 
 <p><strong>Lowest Rate: </strong>$7.38 per month*</p>
 
@@ -192,11 +192,11 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET FAMILY BENEFIT LIFE QUOTE</a></p>
 
-<h2 id="royal-neighbors">#<strong>3 – Royal Neighbors of America</strong></h2>
+<h2 id="royal-neighbors">#<strong>3: Royal Neighbors of America</strong></h2>
 
 <p><strong><strong>1ST-DAY COVERAGE:</strong></strong> Yes, with Funeral Funds</p>
 
-<p><strong>Business Rating</strong>: A.M. Best – A-</p>
+<p><strong>Business Rating</strong>: A.M. Best: A-</p>
 
 <p><strong>Age Availability</strong>: 50-85</p>
 
@@ -264,7 +264,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET ROYAL NEIGHBORS QUOTE</a></p>
 
-<h2 id="mutual-of-omaha">#<strong>4 – Mutual of Omaha</strong></h2>
+<h2 id="mutual-of-omaha">#<strong>4: Mutual of Omaha</strong></h2>
 
 <p><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong>Yes, with Funeral Funds</p>
 
@@ -333,7 +333,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET MUTUAL OF OMAHA QUOTE</a></p>
 
-<h2 id="american-amicable">#<strong>5 – American Amicable</strong></h2>
+<h2 id="american-amicable">#<strong>5: American Amicable</strong></h2>
 
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong>Yes, with Funeral Funds</p>
 
@@ -400,11 +400,11 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET AMERICAN AMICABLE QUOTE</a></p>
 
-<h2 id="aetna">#<strong>6 – Aetna</strong></h2>
+<h2 id="aetna">#<strong>6: Aetna</strong></h2>
 
 <p><strong><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong></strong>Yes, with Funeral Funds</p>
 
-<p><strong>Business Rating</strong>: A.M. Best – A</p>
+<p><strong>Business Rating</strong>: A.M. Best: A</p>
 
 <p><strong>Age Availability</strong>: 60-89</p>
 
@@ -465,7 +465,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET AETNA QUOTE</a></p>
 
-<h2 id="liberty-bankers">#<strong>7 –  Liberty Bankers</strong></h2>
+<h2 id="liberty-bankers">#<strong>7:  Liberty Bankers</strong></h2>
 
 <p><strong><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong></strong>Yes, with Funeral Funds</p>
 
@@ -541,7 +541,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET LIBERTY BANKERS QUOTE</a></p>
 
-<h2 id="prosperity">#<strong>8 – Prosperity Life</strong></h2>
+<h2 id="prosperity">#<strong>8: Prosperity Life</strong></h2>
 
 <p><strong><strong><strong><strong>1ST-DAY COVERAGE:</strong></strong> </strong></strong>Yes, with Funeral Funds </p>
 
@@ -559,7 +559,7 @@ sidebar: true
 
 <p>This is best for non-cigarette smokers. Their smoker rate only applies to cigarette smoking. Tobacco and nicotine users can get non-tobacco rates equal to 30-40% savings on their premiums.</p>
 
-<p>Semi-lenient underwriting – most medical conditions will qualify for first-day coverage.</p>
+<p>Semi-lenient underwriting: most medical conditions will qualify for first-day coverage.</p>
 
 <p><strong>PROS:</strong></p>
 
@@ -606,7 +606,7 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET PROSPERITY LIFE QUOTE</a></p>
 
-<h2 id="guarantee-trust-life">#<strong>9 – Guarantee Trust Life</strong></h2>
+<h2 id="guarantee-trust-life">#<strong>9: Guarantee Trust Life</strong></h2>
 
 <p><strong><strong><strong><strong><strong>1ST-DAY BENEFITS:</strong></strong> </strong></strong></strong>Yes, with Funeral Funds </p>
 
@@ -666,11 +666,11 @@ sidebar: true
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET GUARANTEE TRUST LIFE QUOTE</a></p>
 
-<h2 id="aig">#<strong>10 – Corebridge Financial (formerly AIG)</strong></h2>
+<h2 id="aig">#<strong>10: Corebridge Financial (formerly AIG)</strong></h2>
 
 <p><strong>1st-Day Coverage:</strong> 2-year waiting period only</p>
 
-<p><strong>Business Rating</strong>: A.M. Best – A</p>
+<p><strong>Business Rating</strong>: A.M. Best: A</p>
 
 <p><strong>Age Availability</strong>: 50-80</p>
 
@@ -744,7 +744,7 @@ sidebar: true
 
 <p>There are some companies we DON’T recommend because they are term life policies, have 2-year waiting periods or their marketing practices are often described by many consumers as deceptive.</p>
 
-<p><strong>$9.95 POLICIES FROM COLONIAL PENN – NOT RECOMMENDED</strong></p>
+<p><strong>$9.95 POLICIES FROM COLONIAL PENN: NOT RECOMMENDED</strong></p>
 
 <ul>
 <li>Your insurance through Colonial Penn WILL NOT cost $9.95 unless you only want a meaningless amount of coverage.</li>
@@ -753,7 +753,7 @@ sidebar: true
 <li>So you get terrible pricing and a terrible 2-year waiting period.</li>
 </ul>
 
-<p><br><strong>TERM LIFE INSURANCE FROM GLOBE LIFE, AARP, NEW YORK LIFE, &amp; TRUESTAGE  – NOT RECOMMENDED </strong></p>
+<p><br><strong>TERM LIFE INSURANCE FROM GLOBE LIFE, AARP, NEW YORK LIFE, &amp; TRUESTAGE: NOT RECOMMENDED </strong></p>
 
 <ul>
 <li>This company’s most advertised and sold consumer product is their TERM LIFE insurance.
@@ -767,7 +767,7 @@ sidebar: true
 <li>Globe Life &amp; AARP &amp; New York Life &amp; TruStage’s term life insurance policies are almost identical… disappointing term life insurance products that go up in price every five years and cancel when you need them the most.</li>
 </ul>
 
-<p><br> <strong><strong>2-YEAR WAITING PERIOD PLAN</strong></strong> <strong>MUTUAL OF OMAHA (UNITED OF OHAMA)</strong> <strong>– NOT RECOMMENDED </strong></p>
+<p><br> <strong><strong>2-YEAR WAITING PERIOD PLAN</strong></strong> <strong>MUTUAL OF OMAHA (UNITED OF OHAMA)</strong><strong>: NOT RECOMMENDED </strong></p>
 
 <ul>
 <li>Because Mutual of Omaha sells 1st-day coverage, some people mistakenly believe this plan offers that protection; it does not!</li>

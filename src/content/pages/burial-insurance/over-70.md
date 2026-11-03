@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Burial Insurance Over 70 – What You Need To Know</h1>
+<h1>Burial Insurance Over 70: What You Need To Know</h1>
 
 <p><strong>Here’s the Bottom Line:</strong><br>• Burial insurance gets more expensive every year after age 70<br>• Many seniors get stuck in 2-year waiting period policies<br>• Coverage amounts are usually small and won’t cover everything<br>• Applying with the wrong company can double your monthly cost<br>• Health issues can limit you to worse and more expensive plans</p>
 
@@ -160,13 +160,13 @@ sidebar: true
 
 <h2 id="what-kind-of-burial-policies-should-i-avoid"><br><strong>What kind of burial policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p>Just about everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
 <p>To make a long story short, it is better to shop with a specialist in burial insurance, like Funeral Funds, than to sign up with a company that spends ba-zillions of dollars each month advertising on television and in magazines.</p>
 
-<p><strong>INCREASING PRICE POLICIES</strong> – Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! </p>
+<p><strong>INCREASING PRICE POLICIES</strong>: Those TV and magazine final expense policies may increase in price every five years or have a two-year waiting period before your benefits kick in! </p>
 
 <p>These tricky television magazine ads will lure you in with an attractive rate, only to have the cost of your insurance increase every five years until you cannot afford the premiums, then you must cancel your policy.</p>
 

@@ -237,12 +237,12 @@ sidebar: true
 <tr>
 <td>Waiting Period</td>
 <td>Possible delay under certain smoking provisions</td>
-<td>None – pays from day one</td>
+<td>None: pays from day one</td>
 </tr>
 <tr>
 <td>Future Testing or Proof Required</td>
-<td>Yes – must verify nicotine-free status</td>
-<td>No – approval based on current health</td>
+<td>Yes: must verify nicotine-free status</td>
+<td>No: approval based on current health</td>
 </tr>
 <tr>
 <td>Full First-Day Coverage?</td>
@@ -462,7 +462,7 @@ sidebar: true
 
 <p><strong>What kind of insurance does Americo sell?</strong></p>
 
-<p>Americo offers whole life, term life, and final expense policies, as well as indexed and fixed annuities. Their Eagle Premier line is one of the most popular final expense products for seniors aged 50–85.</p>
+<p>Americo offers whole life, term life, and final expense policies, as well as indexed and fixed annuities. Their Eagle Premier line is one of the most popular final expense products for seniors aged 50 to 85.</p>
 
 <p><strong>What are the benefits of an Americo policy?</strong></p>
 
@@ -490,7 +490,7 @@ sidebar: true
 
 <p><strong>What is the phone number for Americo Life Insurance Company?</strong></p>
 
-<p>You can reach Americo’s customer service at 800-231-0801 (Mon–Fri 8 a.m.–5 p.m. CST).</p>
+<p>You can reach Americo’s customer service at 800-231-0801 (Mon to Fri 8 a.m. to 5 p.m. CST).</p>
 
 <p><strong>How do I contact Americo customer service?</strong></p>
 

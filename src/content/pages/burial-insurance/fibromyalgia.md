@@ -184,9 +184,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies will evaluate your level of risk in two ways:</strong></p>
 
-<p><strong>First</strong> – they will ask you questions about your overall health.</p>
+<p><strong>First</strong>: they will ask you questions about your overall health.</p>
 
-<p><strong>Second</strong> – they will conduct a prescription history check to validate your answer to the health questions.</p>
+<p><strong>Second</strong>: they will conduct a prescription history check to validate your answer to the health questions.</p>
 
 <p>Your answer to the health questions and your prescription history will help the insurance companies to determine your eligibility and the amount of premium they will charge.</p>
 
@@ -352,14 +352,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with fibromyalgia</strong></h2>

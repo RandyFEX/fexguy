@@ -251,27 +251,27 @@ sidebar: true
 
 <p>Funeral expenses can be challenging. Most of the time, some miscellaneous funeral expenses are often overlooked. Here’s a rundown of the items that may be overlooked during funeral planning.</p>
 
-<p><strong>TRANSPORTATION OF THE BODY</strong> – Transportation expenses include transporting the remains to the funeral home. If your loved one dies locally, it will not be a problem. However, additional costs may be incurred if death happens out of state.</p>
+<p><strong>TRANSPORTATION OF THE BODY</strong>: Transportation expenses include transporting the remains to the funeral home. If your loved one dies locally, it will not be a problem. However, additional costs may be incurred if death happens out of state.</p>
 
-<p><strong>BURIAL OR CREMATION COST</strong> – some funeral home does not include the actual cost of cremation in the funeral package. If they do not have a crematory, ask the funeral director if the cremation fee is included in the funeral package.</p>
+<p><strong>BURIAL OR CREMATION COST</strong>: some funeral home does not include the actual cost of cremation in the funeral package. If they do not have a crematory, ask the funeral director if the cremation fee is included in the funeral package.</p>
 
-<p><strong>BURIAL PLOT</strong> – cemetery or burial plot is often not included in the funeral bill. A burial plot in a public cemetery can cost between $200 and $2,000, while a private cemetery plot can cost between $2,000 and $5,000, depending on the location.</p>
+<p><strong>BURIAL PLOT</strong>: cemetery or burial plot is often not included in the funeral bill. A burial plot in a public cemetery can cost between $200 and $2,000, while a private cemetery plot can cost between $2,000 and $5,000, depending on the location.</p>
 
-<p><strong>HEADSTONE OR GRAVE MARKER</strong> – headstones, monuments, or grave markers are often not included in the funeral bill. The engraving, delivery, and installation of grave markers can cost $500 to $12,000.</p>
+<p><strong>HEADSTONE OR GRAVE MARKER</strong>: headstones, monuments, or grave markers are often not included in the funeral bill. The engraving, delivery, and installation of grave markers can cost $500 to $12,000.</p>
 
-<p><strong>OBITUARY COST</strong> – the cost of the obituary is often overlooked because it’s not included in the funeral cost. A newspaper obituary can cost between $298 to more than $600.</p>
+<p><strong>OBITUARY COST</strong>: the cost of the obituary is often overlooked because it’s not included in the funeral cost. A newspaper obituary can cost between $298 to more than $600.</p>
 
-<p><strong>BURIAL CLOTHES</strong> – most funeral homes offer burial clothes, but it’s not included in the funeral cost. Men’s burial clothing can cost $170 to $400. Women’s burial clothing can cost $95 to $350.</p>
+<p><strong>BURIAL CLOTHES</strong>: most funeral homes offer burial clothes, but it’s not included in the funeral cost. Men’s burial clothing can cost $170 to $400. Women’s burial clothing can cost $95 to $350.</p>
 
-<p><strong>CHURCH OR VENUE FEE</strong> – if you decide to have a funeral or memorial service outside the funeral home, you may need to pay for the venue.</p>
+<p><strong>CHURCH OR VENUE FEE</strong>: if you decide to have a funeral or memorial service outside the funeral home, you may need to pay for the venue.</p>
 
-<p><strong>FUNERAL MUSIC</strong> – if you choose to have special music at the funeral, you may need to pay the musicians by the hour. Some charge a flat rate depending on the number of songs to play. The average musician’s cost is $150.</p>
+<p><strong>FUNERAL MUSIC</strong>: if you choose to have special music at the funeral, you may need to pay the musicians by the hour. Some charge a flat rate depending on the number of songs to play. The average musician’s cost is $150.</p>
 
-<p><strong>CLERGY AND CELEBRANT COSTS</strong> – most of the time, clergy and celebrant cost is not included in the funeral package. You may need to offer an honorarium if it’s not included. The clergy and celebrant cost ranges from $50 to $500.</p>
+<p><strong>CLERGY AND CELEBRANT COSTS</strong>: most of the time, clergy and celebrant cost is not included in the funeral package. You may need to offer an honorarium if it’s not included. The clergy and celebrant cost ranges from $50 to $500.</p>
 
-<p><strong>FLOWERS</strong> – flower arrangements are often an expensive hidden cost that is not factored into the funeral cost. The cost of flowers varies at the time of the year.</p>
+<p><strong>FLOWERS</strong>: flower arrangements are often an expensive hidden cost that is not factored into the funeral cost. The cost of flowers varies at the time of the year.</p>
 
-<p><strong>PALLBEARERS</strong> – the funeral home can provide pallbearers, but you will need to pay for their services.</p>
+<p><strong>PALLBEARERS</strong>: the funeral home can provide pallbearers, but you will need to pay for their services.</p>
 
 <p>You may need to make allowances for these expenses in your funeral plan.</p>
 
@@ -283,19 +283,19 @@ sidebar: true
 
 <p><br><strong>BENEFITS OF FINAL EXPENSE INSURANCE:</strong></p>
 
-<p><strong>Ease of issue</strong> – no medical exam required</p>
+<p><strong>Ease of issue</strong>: no medical exam required</p>
 
-<p><strong>Level premium</strong> – your premium will never increase</p>
+<p><strong>Level premium</strong>: your premium will never increase</p>
 
-<p><strong>Fixed death benefit</strong> – death benefit will never decrease</p>
+<p><strong>Fixed death benefit</strong>: death benefit will never decrease</p>
 
-<p><strong>Tax-free</strong> – death benefit payout is given tax-free</p>
+<p><strong>Tax-free</strong>: death benefit payout is given tax-free</p>
 
-<p><strong>Not cancelable</strong> – the policy will not be canceled as long as payment is made</p>
+<p><strong>Not cancelable</strong>: the policy will not be canceled as long as payment is made</p>
 
-<p><strong>Cash value</strong> – accumulates cash value over time.</p>
+<p><strong>Cash value</strong>: accumulates cash value over time.</p>
 
-<p><strong>Small coverage options</strong> – you can buy as little as you need</p>
+<p><strong>Small coverage options</strong>: you can buy as little as you need</p>
 
 <h2 id="paying-for-a-funeral-without-life-insurance"><br><strong>The negatives of paying for a funeral without life insurance</strong></h2>
 
@@ -303,19 +303,19 @@ sidebar: true
 
 <p>Here are some ways to <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">pay for a funeral</a> if you don’t have life insurance.</p>
 
-<p><strong>Personal loan</strong> – a personal loan from banks, credit unions, and specialized lenders can help pay for the funeral if you don’t have life insurance. Interest rates can range from 16-35% on funeral loans.</p>
+<p><strong>Personal loan</strong>: a personal loan from banks, credit unions, and specialized lenders can help pay for the funeral if you don’t have life insurance. Interest rates can range from 16-35% on funeral loans.</p>
 
-<p><strong>Credit Card Payment </strong>– you can use your credit card to pay for a funeral. Some funeral home accepts credit card as a payment option.</p>
+<p><strong>Credit Card Payment </strong>: you can use your credit card to pay for a funeral. Some funeral home accepts credit card as a payment option.</p>
 
-<p><strong>Ask for contributions</strong> – you can ask your family and friends to contribute to the funeral payment.</p>
+<p><strong>Ask for contributions</strong>: you can ask your family and friends to contribute to the funeral payment.</p>
 
-<p><strong>Ask the Funeral Director for a payment plan</strong> – some funeral directors finance the funeral cost and allow the family members to pay them for up to 36 months.</p>
+<p><strong>Ask the Funeral Director for a payment plan</strong>: some funeral directors finance the funeral cost and allow the family members to pay them for up to 36 months.</p>
 
-<p><strong>Contact a non-profit organization</strong> – some non-profit organizations provide financial assistance to survivors.</p>
+<p><strong>Contact a non-profit organization</strong>: some non-profit organizations provide financial assistance to survivors.</p>
 
-<p><strong>Start a fundraising campaign</strong> – you can start fundraising on crowdfunding sites like gofundme.com or kickstarter.com</p>
+<p><strong>Start a fundraising campaign</strong>: you can start fundraising on crowdfunding sites like gofundme.com or kickstarter.com</p>
 
-<p><strong>Veterans benefits</strong> – if your loved one is military, you can claim benefits from the Veterans Administration office.<br></p>
+<p><strong>Veterans benefits</strong>: if your loved one is military, you can claim benefits from the Veterans Administration office.<br></p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
 

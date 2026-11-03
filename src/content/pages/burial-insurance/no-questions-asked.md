@@ -210,9 +210,9 @@ sidebar: true
 <h2 id="common-life-insurance-to-avoid"><strong>Commonly advertised insurance options in TV and magazines to avoid</strong></h2>
 
 <ol>
-<li><strong>Increasing premium</strong>&#160;– Many of these life insurance companies on TV offer premium increases every five years. A real guaranteed acceptance whole life insurance has a fixed premium throughout the life of the policy.</li>
-<li><strong>Policy ends after age 80</strong>&#160;– Some policies terminate when you pass 80. Guaranteed acceptance burial insurance is a type of whole life insurance policy that lasts a lifetime.</li>
-<li><strong>3-year waiting period</strong>&#160;– Avoid these GI plans at all costs. The best-guaranteed issue life insurance has only a two-year waiting period. It is important to work with an independent life insurance agency like Funeral Funds that will prevent you from being led into agreeing to buy life insurance with a 3-year waiting period.</li>
+<li><strong>Increasing premium</strong>: Many of these life insurance companies on TV offer premium increases every five years. A real guaranteed acceptance whole life insurance has a fixed premium throughout the life of the policy.</li>
+<li><strong>Policy ends after age 80</strong>: Some policies terminate when you pass 80. Guaranteed acceptance burial insurance is a type of whole life insurance policy that lasts a lifetime.</li>
+<li><strong>3-year waiting period</strong>: Avoid these GI plans at all costs. The best-guaranteed issue life insurance has only a two-year waiting period. It is important to work with an independent life insurance agency like Funeral Funds that will prevent you from being led into agreeing to buy life insurance with a 3-year waiting period.</li>
 </ol>
 
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions</strong></h2>

@@ -42,9 +42,9 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with epilepsy or seizures they may approve.</p>
 
 <ul>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?\</li>
-<li><strong>Liberty Bankers Life Preferred</strong> – Have you, the Proposed Insured, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for epileptic seizures or a Transient Ischemic Attack (TIA/ministroke)?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?\</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for epileptic seizures or a Transient Ischemic Attack (TIA/ministroke)?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Seizures &amp; epilepsy underwriting basics</h3>
@@ -82,16 +82,16 @@ sidebar: true
 <p>Epilepsy causes recurrent abnormal electrical activity in the brain that disrupts consciousness, movement, and neurological function, which can lead to secondary injuries, cognitive effects, and medication complications that may affect underwriting decisions and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Injury from seizures</strong> – Falls, burns, and head trauma occur during loss of control and can cause lasting physical limitations.</li>
-<li><strong>Cognitive impairment</strong> – Repeated seizures and underlying brain conditions affect memory, attention, and processing speed.</li>
-<li><strong>Loss of consciousness</strong> – Sudden blackouts increase safety risks at work, while driving, or during daily activities.</li>
-<li><strong>Medication side effects</strong> – Anti-seizure drugs can cause fatigue, dizziness, coordination problems, and mood changes.</li>
-<li><strong>Sleep disruption</strong> – Nocturnal seizures and medication effects interfere with restorative sleep and recovery.</li>
-<li><strong>Mental health conditions</strong> – Depression and anxiety are more common due to <a href="/burial-insurance/neurological-disorders/" target="_blank" rel="noreferrer noopener">neurological</a> changes and lifestyle restrictions.</li>
-<li><strong>Work and activity limitations</strong> – Seizure risk restricts certain jobs, machinery use, and independent activities.</li>
-<li><strong>Driving restrictions</strong> – Seizure history often limits or suspends driving privileges, affecting independence and employment.</li>
-<li><strong>Increased injury risk over time</strong> – Recurrent seizures raise the cumulative risk of physical and neurological harm.</li>
-<li><strong>Sudden unexpected death risk</strong> – Severe or uncontrolled epilepsy carries a small but serious risk of sudden death.</li>
+<li><strong>Injury from seizures</strong>: Falls, burns, and head trauma occur during loss of control and can cause lasting physical limitations.</li>
+<li><strong>Cognitive impairment</strong>: Repeated seizures and underlying brain conditions affect memory, attention, and processing speed.</li>
+<li><strong>Loss of consciousness</strong>: Sudden blackouts increase safety risks at work, while driving, or during daily activities.</li>
+<li><strong>Medication side effects</strong>: Anti-seizure drugs can cause fatigue, dizziness, coordination problems, and mood changes.</li>
+<li><strong>Sleep disruption</strong>: Nocturnal seizures and medication effects interfere with restorative sleep and recovery.</li>
+<li><strong>Mental health conditions</strong>: Depression and anxiety are more common due to <a href="/burial-insurance/neurological-disorders/" target="_blank" rel="noreferrer noopener">neurological</a> changes and lifestyle restrictions.</li>
+<li><strong>Work and activity limitations</strong>: Seizure risk restricts certain jobs, machinery use, and independent activities.</li>
+<li><strong>Driving restrictions</strong>: Seizure history often limits or suspends driving privileges, affecting independence and employment.</li>
+<li><strong>Increased injury risk over time</strong>: Recurrent seizures raise the cumulative risk of physical and neurological harm.</li>
+<li><strong>Sudden unexpected death risk</strong>: Severe or uncontrolled epilepsy carries a small but serious risk of sudden death.</li>
 </ul>
 
 <h2>Understanding epilepsy &amp; seizures policy types</h2>
@@ -112,7 +112,7 @@ sidebar: true
 
 <p>These are preferred rates, but your final price depends on which A-rated carrier fits your specific health history.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

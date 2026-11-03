@@ -42,11 +42,11 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which basal cell &amp; squamous cell carcinoma applicants they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
-<li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">Leukemia</a>, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
+<li><strong>Aetna Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aflac&#160;Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Within the last 24 months, have you been diagnosed by a member of the medical profession with Cancer (excluding Stage or Grade 1 <a href="/burial-insurance/prostate-cancer/" target="_blank" rel="noreferrer noopener">Prostate Cancer</a>, Carcinoma in Situ and Squamous Cell or Basal Cell Carcinoma) or received treatment by a member of the medical profession (excluding checkups while in remission, routine screening and maintenance medications) with radiation therapy, chemotherapy including oral medication or immunotherapy?</li>
+<li><strong>Mutual of Omaha Decline&#160;</strong>: In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, <a href="/burial-insurance/blood-cancer-leukemia/" target="_blank" rel="noreferrer noopener">Leukemia</a>, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
 </ul>
 
 <h3>Basal cell &amp; squamous cell carcinoma underwriting basics</h3>
@@ -105,7 +105,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

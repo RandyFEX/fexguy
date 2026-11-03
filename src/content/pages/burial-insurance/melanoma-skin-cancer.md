@@ -386,14 +386,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is </strong>required&#160;– easy to get approved.</li>
-<li>Ease of issue&#160;– easy to qualify and get insurance coverage.</li>
-<li>No Money Down to get approved&#160;– have your policy start whenever you want.</li>
-<li>Level premium&#160;– your premium will never increase.</li>
-<li>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</li>
-<li>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is </strong>required: easy to get approved.</li>
+<li>Ease of issue: easy to qualify and get insurance coverage.</li>
+<li>No Money Down to get approved: have your policy start whenever you want.</li>
+<li>Level premium: your premium will never increase.</li>
+<li>Fixed death benefit: your death benefit will never decrease for any reason.</li>
+<li>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with melanoma</strong></h2>

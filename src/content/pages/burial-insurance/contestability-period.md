@@ -140,11 +140,11 @@ sidebar: true
 
 <p>If an insurance company discovers you have misrepresented something on your application, they will generally do one of two things:</p>
 
-<p><strong>FIRST</strong> – Pay the death benefit minus the premiums they would have charged in the first place. For example, they would deduct a smoker’s additional amount if he paid a nonsmoking rate.</p>
+<p><strong>FIRST</strong>: Pay the death benefit minus the premiums they would have charged in the first place. For example, they would deduct a smoker’s additional amount if he paid a nonsmoking rate.</p>
 
 <p> For example,  if the company finds out that you are 60 instead of 55 as you claimed to be, it will charge the difference in premium and subtract it from the death benefit amount.</p>
 
-<p><strong>SECOND</strong> –   Can life insurance deny a claim? If a mistake could lead to a coverage denial, they will return all the premiums to your beneficiary but deny the claim. </p>
+<p><strong>SECOND</strong>:   Can life insurance deny a claim? If a mistake could lead to a coverage denial, they will return all the premiums to your beneficiary but deny the claim. </p>
 
 <p>For example, if you didn’t disclose your cancer in the application and died one year after buying the policy.</p>
 

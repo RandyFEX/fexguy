@@ -128,7 +128,7 @@ any reason.</p>
 <li>He’s been diagnosed with a terminal illness like cancer or kidney failure.</li>
 <li>He has impaired mobility, and you need a wheelchair.</li>
 <li>He has cognitive impairments like Alzheimer’s disease or dementia.</li>
-<li>He needs assistance with ADL – activities of daily living.</li>
+<li>He needs assistance with ADL: activities of daily living.</li>
 <li>He needs oxygen because of COPD or any lung disease.</li>
 </ul>
 
@@ -179,7 +179,7 @@ waiting period, you will get the full death benefit.</p>
 </ol>
 
 <ul>
-<li><strong>The Owner</strong> – The policy owner usually pays for the insurance policy, which holds the rights to the life insurance contract. The owner can make changes to the policy, such as changing the beneficiary, adding or deleting riders, lowering the death benefit, transferring ownership, and requesting a rating change for the insured.</li>
+<li><strong>The Owner</strong>: The policy owner usually pays for the insurance policy, which holds the rights to the life insurance contract. The owner can make changes to the policy, such as changing the beneficiary, adding or deleting riders, lowering the death benefit, transferring ownership, and requesting a rating change for the insured.</li>
 </ul>
 
 <p>If you are the owner of your brother’s life insurance policy, you must submit proof of insurable interest.</p>
@@ -206,7 +206,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><strong>Can I get life insurance on my brother?</strong></p>
 
-<p>Yes, you can get life insurance on your brother if he consents to the policy and if he is insurable. To get a life insurance policy on someone else, you must generally have an “insurable interest” in that person – meaning that their death would cause you financial harm.</p>
+<p>Yes, you can get life insurance on your brother if he consents to the policy and if he is insurable. To get a life insurance policy on someone else, you must generally have an “insurable interest” in that person, meaning that their death would cause you financial harm.</p>
 
 <p><br><strong>Can you take life insurance out on a sibling?</strong></p>
 
@@ -226,7 +226,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>What is</strong> <strong>insurable interest?</strong></p>
 
-<p>An insurable interest is someone who would suffer financially if the insured person died. This could be a spouse, child, parent, or sibling. To get a life insurance policy on someone else, you must generally have an “insurable interest” in that person – meaning that their death would cause you financial harm.</p>
+<p>An insurable interest is someone who would suffer financially if the insured person died. This could be a spouse, child, parent, or sibling. To get a life insurance policy on someone else, you must generally have an “insurable interest” in that person, meaning that their death would cause you financial harm.</p>
 
 <p><br><strong>Can I get life insurance on my brother if he is not insurable?</strong></p>
 
@@ -242,7 +242,7 @@ both the owner and the beneficiary, then the Goodman Triangle doesn’t happen.<
 
 <p><br><strong>Can I insure someone else?</strong></p>
 
-<p>To insure someone else, you must generally have an “insurable interest” in that person – meaning that their death would cause you financial harm. This could be a spouse, child, parent, or sibling.</p>
+<p>To insure someone else, you must generally have an “insurable interest” in that person, meaning that their death would cause you financial harm. This could be a spouse, child, parent, or sibling.</p>
 
 <p><br><strong>What do you do if your brother doesn’t have life insurance?</strong></p>
 

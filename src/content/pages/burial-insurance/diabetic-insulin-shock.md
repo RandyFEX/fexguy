@@ -40,22 +40,22 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with diabetic insulin shock they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aetna Modified</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Aflac Decline</strong>&#160;– Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aflac Modified&#160;</strong>– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
-<li><strong>Family Benefit Life Level</strong>&#160;– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
-<li><strong>Liberty Bankers Life Modified</strong>&#160;– Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for complications of diabetes such as nephropathy (kidney), neuropathy (nerve, circulatory), retinopathy (eye)?</li>
-<li><strong>Liberty Bankers Life Preferred</strong>&#160;– Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
-<li><strong>Mutual of Omaha Graded</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
-<li><strong>Trinity Life Decline</strong>&#160;– During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
-<li><strong>Trinity Life Level&#160;</strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aetna Modified</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Aflac Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aflac Modified&#160;</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Family Benefit Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for complications of diabetes such as nephropathy (kidney), neuropathy (nerve, circulatory), retinopathy (eye)?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
+<li><strong>Mutual of Omaha Graded</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
+<li><strong>Trinity Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Trinity Life Level&#160;</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3><strong>Diabetic insulin shock underwriting basics</strong></h3>
@@ -89,16 +89,16 @@ sidebar: true
 <p>Diabetic insulin shock occurs when blood sugar drops dangerously low, disrupting brain and nervous system function and causing acute physical and cognitive impairment, and those resulting complications can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Loss of consciousness</strong> – Severe hypoglycemia deprives the brain of glucose, leading to fainting or collapse.</li>
-<li><strong>Seizures</strong> – Critically low blood sugar can trigger convulsions and neurological injury.</li>
-<li><strong>Confusion and disorientation</strong> – Impaired brain function causes poor judgment, slowed thinking, and unsafe decision-making.</li>
-<li><strong>Falls and injuries</strong> – Sudden weakness or blackout increases the risk of fractures, head injury, and trauma.</li>
-<li><strong>Cardiac rhythm disturbances</strong> – Hypoglycemia stresses the heart and can provoke dangerous arrhythmias.</li>
-<li><strong>Emergency medical intervention</strong> – Insulin shock often requires ambulance care, IV glucose, or hospitalization.</li>
-<li><strong>Recurrent hypoglycemia risk</strong> – Prior insulin shock increases the likelihood of future severe episodes.</li>
-<li><strong>Cognitive impact over time</strong> – Repeated episodes may contribute to memory loss and reduced mental processing.</li>
-<li><strong>Work and driving limitations</strong> – Unpredictable episodes increase accident risk and limit job reliability.</li>
-<li><strong>Increased mortality risk</strong> – Severe untreated hypoglycemia can be fatal.</li>
+<li><strong>Loss of consciousness</strong>: Severe hypoglycemia deprives the brain of glucose, leading to fainting or collapse.</li>
+<li><strong>Seizures</strong>: Critically low blood sugar can trigger convulsions and neurological injury.</li>
+<li><strong>Confusion and disorientation</strong>: Impaired brain function causes poor judgment, slowed thinking, and unsafe decision-making.</li>
+<li><strong>Falls and injuries</strong>: Sudden weakness or blackout increases the risk of fractures, head injury, and trauma.</li>
+<li><strong>Cardiac rhythm disturbances</strong>: Hypoglycemia stresses the heart and can provoke dangerous arrhythmias.</li>
+<li><strong>Emergency medical intervention</strong>: Insulin shock often requires ambulance care, IV glucose, or hospitalization.</li>
+<li><strong>Recurrent hypoglycemia risk</strong>: Prior insulin shock increases the likelihood of future severe episodes.</li>
+<li><strong>Cognitive impact over time</strong>: Repeated episodes may contribute to memory loss and reduced mental processing.</li>
+<li><strong>Work and driving limitations</strong>: Unpredictable episodes increase accident risk and limit job reliability.</li>
+<li><strong>Increased mortality risk</strong>: Severe untreated hypoglycemia can be fatal.</li>
 </ul>
 
 <h2><strong>Understanding <strong>diabetic insulin shock</strong></strong> <strong>policy types</strong></h2>
@@ -117,7 +117,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

@@ -2,7 +2,7 @@
 title: "FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"
 robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
 canonical: "/final-expense-life-insurance-book/"
-headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"property":"og:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"property":"og:url","content":"https://funeralfunds.com/final-expense-life-insurance-book/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"og:updated_time","content":"2025-10-14T13:01:17-05:00"},{"property":"og:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:secure_url","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:width","content":"1080"},{"property":"og:image:height","content":"1920"},{"property":"og:image:alt","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK"},{"property":"og:image:type","content":"image/jpeg"},{"property":"article:published_time","content":"2025-05-15T13:51:10-05:00"},{"property":"article:modified_time","content":"2025-10-14T13:01:17-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"name":"twitter:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance – And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"name":"twitter:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"32 minutes"}]
+headMeta: [{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"article"},{"property":"og:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"property":"og:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance, And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"property":"og:url","content":"https://funeralfunds.com/final-expense-life-insurance-book/"},{"property":"og:site_name","content":"Funeral Funds"},{"property":"og:updated_time","content":"2025-10-14T13:01:17-05:00"},{"property":"og:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:secure_url","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"property":"og:image:width","content":"1080"},{"property":"og:image:height","content":"1920"},{"property":"og:image:alt","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK"},{"property":"og:image:type","content":"image/jpeg"},{"property":"article:published_time","content":"2025-05-15T13:51:10-05:00"},{"property":"article:modified_time","content":"2025-10-14T13:01:17-05:00"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds"},{"name":"twitter:description","content":"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies & AgentsChapter 2: What is Burial Insurance, And What Isn’t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of “State-Regulated Programs”Chapter 7: The…"},{"name":"twitter:image","content":"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK.jpg"},{"name":"twitter:label1","content":"Time to read"},{"name":"twitter:data1","content":"32 minutes"}]
 jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://funeralfunds.com/#organization\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/#logo\",\"url\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"contentUrl\":\"https://funeralfunds.com/images/logo/funeral-funds-logo.png\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\",\"width\":\"1986\",\"height\":\"433\"}},{\"@type\":\"WebSite\",\"@id\":\"https://funeralfunds.com/#website\",\"url\":\"https://funeralfunds.com\",\"name\":\"Funeral Funds\",\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"url\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\",\"width\":\"200\",\"height\":\"200\",\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://funeralfunds.com\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":\"2\",\"item\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK\"}}]},{\"@type\":\"WebPage\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\",\"url\":\"https://funeralfunds.com/final-expense-life-insurance-book/\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"breadcrumb\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#breadcrumb\"}},{\"@type\":\"Person\",\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\",\"url\":\"https://funeralfunds.com/author/rvanderv8/\",\"image\":{\"@type\":\"ImageObject\",\"@id\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"url\":\"https://secure.gravatar.com/avatar/6c2b5808968ca3dac4835c35ea01d5bf7da74269c97eef788fabb1d048328e42?s=96&amp;d=mm&amp;r=g\",\"caption\":\"Funeral Funds\",\"inLanguage\":\"en-US\"},\"worksFor\":{\"@id\":\"https://funeralfunds.com/#organization\"}},{\"@type\":\"Article\",\"headline\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"datePublished\":\"2025-05-15T13:51:10-05:00\",\"dateModified\":\"2025-10-14T13:01:17-05:00\",\"author\":{\"@id\":\"https://funeralfunds.com/author/rvanderv8/\",\"name\":\"Funeral Funds\"},\"publisher\":{\"@id\":\"https://funeralfunds.com/#organization\"},\"description\":\"BOOK CHAPTERSChapter 1: WARNING About Life Insurance Companies &amp; AgentsChapter 2: What is Burial Insurance - And What Isn\\u2019t It?Chapter 3: First-Day Coverage vs. Two-Year TrapsChapter 4: Why $9.95 per unit or $1 a Day is a Marketing MirageChapter 5: The Truth About No Medical Exam PoliciesChapter 6: The Myth of \\\"State-Regulated Programs\\\"Chapter 7: The Problem with Term Life InsuranceChapter 8: Social Security &amp; Burial Insurance: The ExploitationChapter 9: The Fine Print They Hope You Don\\u2019t ReadChapter 10: Who Really Benefits - You or the Insurance Company?Chapter 11: The Truth About Final Expense AgentsChapter 12: Already Covered? You Could Be Paying Too MuchChapter 13: What Happens When You Die?Chapter 14: A Buyer\\u2019s Guide to Protecting Your Family - Without Getting ScammedChapter 15: Real Stories, Real Regret - and RedemptionChapter 16: Prepaid Funeral Plans - A Safe Bet or a Death Trap?Chapter 17: Final Words - Freed by Truth\",\"name\":\"FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds\",\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#richSnippet\",\"isPartOf\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\"},\"image\":{\"@id\":\"https://funeralfunds.com/wp-content/uploads/2025/07/FEX-GUY-BOOK-COVER-916-FACEBOOK-AD-BOOK-576x1024.jpg\"},\"inLanguage\":\"en-US\",\"mainEntityOfPage\":{\"@id\":\"https://funeralfunds.com/final-expense-life-insurance-book/#webpage\"}}]}"]
 source: "live"
 ---
@@ -13,7 +13,7 @@ source: "live"
 
 <hr>
 
-<p><strong>BOOK CHAPTERS</strong><br><a href="#Chapter-1:-WARNING-About-Life-Insurance-Companies-&-Agents">Chapter 1: WARNING About Life Insurance Companies &amp; Agents</a><br><a href="#Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?">Chapter 2: What Is Burial Insurance – And What Isn’t It?</a><br><a href="#Chapter-3:-First-Day-Coverage-vs.-Two-Year-Traps">Chapter 3: First-Day Coverage vs. Two-Year Traps</a><br><a href="#Chapter-4:-Why-$9.95-per-unit-or-$1-a-Day-is-a-Marketing-Mirage">Chapter 4: Why $9.95 per Unit or $1 a Day Is a Marketing Mirage</a><br><a href="#Chapter-5:-The-Truth-About-No-Medical-Exam-Policies">Chapter 5: The Truth About No Medical Exam Policies</a><br><a href="#Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;">Chapter 6: The Myth of “State-Regulated Programs”</a><br><a href="#Chapter-7:-The-Problem-with-Term-Life-Insurance">Chapter 7: The Problem with Term Life Insurance</a><br><a href="#Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation">Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</a><br><a href="#Chapter-9:-The-Fine-Print-They-Hope-You-Don’t-Read">Chapter 9: The Fine Print They Hope You Don’t Read</a><br><a href="#Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?">Chapter 10: Who Really Benefits – You or the Insurance Company?</a><br><a href="#Chapter-11:-The-Truth-About-Final-Expense-Agents">Chapter 11: The Truth About Final Expense Agents</a><br><a href="#Chapter-12:-Already-Covered?-You-Could-Be-Paying-Too-Much">Chapter 12: Already Covered? You Could Be Paying Too Much</a><br><a href="#Chapter-13:-What-Happens-When-You-Die?">Chapter 13: What Happens When You Die?</a><br><a href="#Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed">Chapter 14: A Buyer’s Guide to Protecting Your Family – Without Getting Scammed</a><br><a href="#Chapter-15:-Real-Stories,-Real-Regret---and-Redemption">Chapter 15: Real Stories, Real Regret – And Redemption</a><br><a href="#Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?">Chapter 16: Prepaid Funeral Plans – A Safe Bet or a Death Trap?</a><br><a href="#Chapter-17:-Final-Words---Freed-by-Truth">Chapter 17: Final Words – Freed by Truth</a></p>
+<p><strong>BOOK CHAPTERS</strong><br><a href="#Chapter-1:-WARNING-About-Life-Insurance-Companies-&-Agents">Chapter 1: WARNING About Life Insurance Companies &amp; Agents</a><br><a href="#Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?">Chapter 2: What Is Burial Insurance, And What Isn’t It?</a><br><a href="#Chapter-3:-First-Day-Coverage-vs.-Two-Year-Traps">Chapter 3: First-Day Coverage vs. Two-Year Traps</a><br><a href="#Chapter-4:-Why-$9.95-per-unit-or-$1-a-Day-is-a-Marketing-Mirage">Chapter 4: Why $9.95 per Unit or $1 a Day Is a Marketing Mirage</a><br><a href="#Chapter-5:-The-Truth-About-No-Medical-Exam-Policies">Chapter 5: The Truth About No Medical Exam Policies</a><br><a href="#Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;">Chapter 6: The Myth of “State-Regulated Programs”</a><br><a href="#Chapter-7:-The-Problem-with-Term-Life-Insurance">Chapter 7: The Problem with Term Life Insurance</a><br><a href="#Chapter-8:-Social-Security-&-Burial-Insurance:-The-Exploitation">Chapter 8: Social Security &amp; Burial Insurance: The Exploitation</a><br><a href="#Chapter-9:-The-Fine-Print-They-Hope-You-Don’t-Read">Chapter 9: The Fine Print They Hope You Don’t Read</a><br><a href="#Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?">Chapter 10: Who Really Benefits: You or the Insurance Company?</a><br><a href="#Chapter-11:-The-Truth-About-Final-Expense-Agents">Chapter 11: The Truth About Final Expense Agents</a><br><a href="#Chapter-12:-Already-Covered?-You-Could-Be-Paying-Too-Much">Chapter 12: Already Covered? You Could Be Paying Too Much</a><br><a href="#Chapter-13:-What-Happens-When-You-Die?">Chapter 13: What Happens When You Die?</a><br><a href="#Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed">Chapter 14: A Buyer’s Guide to Protecting Your Family Without Getting Scammed</a><br><a href="#Chapter-15:-Real-Stories,-Real-Regret---and-Redemption">Chapter 15: Real Stories, Real Regret, And Redemption</a><br><a href="#Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?">Chapter 16: Prepaid Funeral Plans: A Safe Bet or a Death Trap?</a><br><a href="#Chapter-17:-Final-Words---Freed-by-Truth">Chapter 17: Final Words: Freed by Truth</a></p>
 
 <hr>
 
@@ -35,7 +35,7 @@ source: "live"
 
 <ul>
 <li><strong>“Guaranteed Acceptance” </strong>is a MANDATORY 2-YEAR WAIT policy that is sold at outrageous rates.</li>
-<li><strong>“Instant Approval” – No Questions Asked!”</strong> will have a MANDATORY 2-YEAR WAIT policy.</li>
+<li><strong>“Instant Approval”: No Questions Asked!”</strong> will have a MANDATORY 2-YEAR WAIT policy.</li>
 <li><strong>“Accepts All Health Conditions”</strong> will have a MANDATORY 2-YEAR WAITING period.</li>
 <li><strong>“$9.95 Per Unit”</strong> is a MANDATORY 2-YEAR WAITING period policy with low coverage.</li>
 <li><strong>“Pays Out In 24 Hours”</strong> is false, as it takes longer than 24 hours to get a death certificate.</li>
@@ -44,7 +44,7 @@ source: "live"
 <li><strong>“Enrollment Ends Soon”</strong> is a ridiculous claim, as burial insurance can be purchased year-round.</li>
 <li><strong>“Limited-Time Offer”</strong> is just a scare tactic because you can buy this insurance year-round.</li>
 <li><strong>“$1 a Day”</strong> (or other “teaser” rates) is a classic Bait &amp; Switch sales tactic…don’t get fooled.</li>
-<li>“<strong>$1 buys $100,000″ </strong>is term insurance where pricing goes up every 5 years – $1 is for 1st month.</li>
+<li>“<strong>$1 buys $100,000″ </strong>is term insurance where pricing goes up every 5 years, $1 is for 1st month.</li>
 <li><strong>“Designed For People On Social Security”</strong> is a lie, as these plans are NOT based on income.</li>
 <li><strong>“Covers You For Life”</strong>&#160;only applies if they sell you whole life insurance, not term life insurance. </li>
 <li><strong>“New Programs Available”</strong> doesn’t mean you qualify or they’ll sell you that “New Program.”</li>
@@ -75,7 +75,7 @@ source: "live"
 
 <hr>
 
-<h2 id="Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?"><strong>Chapter 2: What is Burial Insurance – And What Isn’t It?</strong></h2>
+<h2 id="Chapter-2:-What-is-Burial-Insurance---And-What-Isn’t-It?"><strong>Chapter 2: What is Burial Insurance, And What Isn’t It?</strong></h2>
 
 <p>The first rule of Final Expense Life Insurance is to <strong>purchase the correct type of insurance policy</strong>, the first time!</p>
 
@@ -102,7 +102,7 @@ source: "live"
 <ul>
 <li>The #1 rule: <strong>Get the right policy the first time</strong>: final expense insurance should always be <strong>whole life.</strong></li>
 <li>Burial insurance is a <strong>whole-life policy</strong> designed to cover funeral, burial, or cremation costs.</li>
-<li>Avoid <strong>term life</strong> plans – they get more expensive every 5 years and <strong>cancel automatically by age 80.</strong></li>
+<li>Avoid <strong>term life</strong> plans: they get more expensive every 5 years and <strong>cancel automatically by age 80.</strong></li>
 <li>If you outlive term life, your family gets <strong>nothing</strong>, no matter how long you’ve paid.</li>
 <li><strong>IULs are not designed for final expense</strong> and often come with high fees and risky performance.</li>
 <li>For the right policy at the right price, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
@@ -143,12 +143,12 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>Always choose <strong>1st-day coverage</strong> (also called level benefit) – it pays the full death benefit from day one.</li>
-<li>1st-day whole life plans are available even with health issues – <strong>no 2-year waiting period required.</strong></li>
+<li>Always choose <strong>1st-day coverage</strong> (also called level benefit): it pays the full death benefit from day one.</li>
+<li>1st-day whole life plans are available even with health issues, <strong>no 2-year waiting period required.</strong></li>
 <li><strong>2-year wait plans</strong> only pay full benefits after two years and cost more than necessary.</li>
 <li>If death occurs early, your family may only receive a <strong>refund</strong>, not the full payout.</li>
 <li>Many call centers push wait-period plans to <strong>avoid underwriting</strong> and <strong>earn higher commissions.</strong></li>
-<li>Don’t settle – if you qualify for 1st-day coverage, Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
+<li>Don’t settle: if you qualify for 1st-day coverage, Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get it done right.</li>
 </ul>
 
 <hr>
@@ -159,7 +159,7 @@ source: "live"
 
 <p><strong>$9.95 PER UNIT</strong></p>
 
-<p>Colonial Penn built an empire on their famous “$9.95 per unit” offer (that comes with a 2-year waiting period), which sounds affordable – but the coverage is laughably low.</p>
+<p>Colonial Penn built an empire on their famous “$9.95 per unit” offer (that comes with a 2-year waiting period), which sounds affordable, but the coverage is laughably low.</p>
 
 <p>They also don’t tell you up front how much coverage you get for more than one unit, as it’s minimal coverage.</p>
 
@@ -173,30 +173,30 @@ source: "live"
 
 <p><strong>$1.00 A DAY LIFE INSURANCE</strong></p>
 
-<p>“Coverage for just $1 a day!” You’ve probably heard or seen this tagline if you’ve watched TV or social media advertisements. It’s catchy, it’s memorable – and it’s garbage.</p>
+<p>“Coverage for just $1 a day!” You’ve probably heard or seen this tagline if you’ve watched TV or social media advertisements. It’s catchy, it’s memorable, and it’s garbage.</p>
 
-<p>The truth is that $1 a day (approximately $30 a month) only provides&#160;<strong>limited coverage</strong>&#160;for most individuals – and only if you’re in excellent health, female, and on the younger side of the burial insurance target market (think early to mid-40s in age).&#160;</p>
+<p>The truth is that $1 a day (approximately $30 a month) only provides&#160;<strong>limited coverage</strong>&#160;for most individuals, and only if you’re in excellent health, female, and on the younger side of the burial insurance target market (think early to mid-40s in age).&#160;</p>
 
 <p>For everyone else, the actual cost is often well beyond that “$1 a day” number.</p>
 
 <p><strong>Let’s break down a real-world example:</strong></p>
 
 <ul>
-<li>A 45-year-old <strong>non-smoking female</strong>&#160;may receive $6,000–$8,000 of level benefit coverage for $30/month.</li>
-<li>A 45-year-old <strong>male smoker</strong> might receive only $2,000–$3,000 for the same $30.</li>
+<li>A 45-year-old <strong>non-smoking female</strong>&#160;may receive $6,000 to $8,000 of level benefit coverage for $30/month.</li>
+<li>A 45-year-old <strong>male smoker</strong> might receive only $2,000 to $3,000 for the same $30.</li>
 </ul>
 
-<p>These “$1 a day” ads use a&#160;<strong>“Teaser Rate”</strong>&#160;to get your name and phone number, allowing an insurance company or agent to contact you hundreds of times – day and night.</p>
+<p>These “$1 a day” ads use a&#160;<strong>“Teaser Rate”</strong>&#160;to get your name and phone number, allowing an insurance company or agent to contact you hundreds of times, day and night.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
 <li>Colonial Penn’s “$9.95 per unit” plan is one of the <strong>worst deals</strong> in final expense insurance.</li>
-<li>Coverage per unit is <strong>extremely low</strong>, and most people need to buy 10–15 units for meaningful protection.</li>
+<li>Coverage per unit is <strong>extremely low</strong>, and most people need to buy 10 to 15 units for meaningful protection.</li>
 <li>A 70-year-old male pays <strong>$149.25/month</strong> for $10,000 in Colonial Penn coverage, more than <strong>double</strong> what Funeral Funds can offer.</li>
 <li>“$1 a day” ads use <strong>teaser rates</strong> that apply only to younger, healthy individuals; real costs are much higher for everyone else.</li>
 <li>These ads are designed to collect your info and lead to <strong>aggressive sales calls</strong>, not to give you the best coverage.</li>
-<li>Don’t overpay – call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
+<li>Don’t overpay: call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to get real 1st-day coverage at a fair price.</li>
 </ul>
 
 <hr>
@@ -222,19 +222,19 @@ source: "live"
 <li>Diabetes with or without insulin</li>
 <li>Diabetic complications</li>
 <li>Cancer history</li>
-<li>Heart Issues – AFIB, HBP, etc.</li>
+<li>Heart Issues: AFIB, HBP, etc.</li>
 <li>Kidney or Liver issues</li>
-<li>Mood disorders – bipolar, schizophrenia, depression, etc</li>
+<li>Mood disorders: bipolar, schizophrenia, depression, etc</li>
 <li>See a complete list here&gt;&gt;&gt; <a href="/a-z-health/" target="_blank" rel="noreferrer noopener">A to Z Health Conditions Accepted</a></li>
 </ul>
 
-<p><strong>Guaranteed issue</strong> policies ask no health questions, don’t check your background, and approve everyone who qualifies – but as discussed in the last chapter, they have a MANDATORY 2-YEAR waiting period and cost significantly more per thousand dollars of coverage.</p>
+<p><strong>Guaranteed issue</strong> policies ask no health questions, don’t check your background, and approve everyone who qualifies, but as discussed in the last chapter, they have a MANDATORY 2-YEAR waiting period and cost significantly more per thousand dollars of coverage.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
 <li>“No medical exam” doesn’t mean the insurance company isn’t checking your health.</li>
-<li>Most burial insurance uses simplified issue underwriting – no lab work, but full health checks through databases.</li>
+<li>Most burial insurance uses simplified issue underwriting: no lab work, but full health checks through databases.</li>
 <li>Your prescriptions, hospital records, and MIB report are still being reviewed behind the scenes.</li>
 <li>Many people can still qualify for 1st-day coverage, even with severe conditions like COPD, diabetes, heart issues, and more.</li>
 <li>Guaranteed issue plans skip health checks but come with a 2-year waiting period and higher costs.</li>
@@ -245,7 +245,7 @@ source: "live"
 
 <h2 id="Chapter-6:-The-Myth-of-&quot;State-Regulated-Programs&quot;"><strong>Chapter 6: The Myth of “State-Regulated Programs”</strong></h2>
 
-<p>The phrase “State Regulated Programs” – or anything that sounds like it – is your first <strong>RED FLAG</strong> telling you to be suspicious.</p>
+<p>The phrase “State Regulated Programs”, or anything that sounds like it, is your first <strong>RED FLAG</strong> telling you to be suspicious.</p>
 
 <p>One of the <strong>most common deceptive marketing tactics</strong> is the claim that there’s a new “State-Regulated Burial Insurance Program” available. They say this to make you think the government or state endorses their final expense insurance policies.&#160;</p>
 
@@ -257,14 +257,14 @@ source: "live"
 
 <p><strong>Let’s be 100% clear:</strong> the government&#160;<strong>NEVER</strong> offers, endorses, or pays claims for these life insurance policies. Deceptive ads twist regulatory language to appear “official” when they are just trying to mislead you to get your name and telephone information.</p>
 
-<p>When you see claims like “New benefit for residents receiving Social Security,” or “State-regulated program just released,” or “state-approved,” <strong>it’s not new, it’s not state-sponsored, and it’s not exclusive – it’s just a scam.</strong></p>
+<p>When you see claims like “New benefit for residents receiving Social Security,” or “State-regulated program just released,” or “state-approved,” <strong>it’s not new, it’s not state-sponsored, and it’s not exclusive; it’s just a scam.</strong></p>
 
 <p><strong>NEVER work with companies</strong> that advertise with this “State Regulated” or similar language that tries to deceive you.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>“State-Regulated Program” is a red flag – it’s private insurance, not government-sponsored.</li>
+<li>“State-Regulated Program” is a red flag: it’s private insurance, not government-sponsored.</li>
 <li>Ads using patriotic language or Social Security references are designed to mislead you.</li>
 <li>Final expense insurance is regulated by states, but <strong>never</strong> endorsed or paid for by the government.</li>
 <li>These deceptive ads twist regulatory language to look official and get your personal info.</li>
@@ -280,7 +280,7 @@ source: "live"
 
 <p>If you’ve seen ads from <strong>AARP</strong>, <strong>New York Life</strong>, <strong>Globe Life</strong>, or <strong>TruStage</strong> promising cheap term life insurance for seniors, you’re not alone.</p>
 
-<p>These companies spend millions each year advertising coverage <strong>that appears to be affordable</strong> – but almost always ends up being a terrible deal if you live long enough to need it.</p>
+<p>These companies spend millions each year advertising coverage <strong>that appears to be affordable</strong>, but almost always ends up being a terrible deal if you live long enough to need it.</p>
 
 <p>That’s because it <strong>gets more expensive over time</strong>…like REAL FAST!</p>
 
@@ -296,12 +296,12 @@ source: "live"
 
 <p>That means if you outlive the policy, <strong>it expires exactly when your family may need it most</strong>.</p>
 
-<p>So ask yourself: What’s the point of paying into a life insurance policy for 15 or 20 years – <strong>only for it to vanish</strong> right when you’re nearing the finish line?</p>
+<p>So ask yourself: What’s the point of paying into a life insurance policy for 15 or 20 years, <strong>only for it to vanish</strong> right when you’re nearing the finish line?</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li><strong>Term Life = Terminating or Temporary life insurance</strong> – not designed for final expenses.</li>
+<li><strong>Term Life = Terminating or Temporary life insurance</strong>: not designed for final expenses.</li>
 <li>Ads from AARP, New York Life, Globe Life, and TruStage promote cheap rates that rise sharply every 5 years.</li>
 <li>Most term policies <strong>cancel automatically by age 80</strong>, even if you’ve paid for decades.</li>
 <li>If you outlive the term, you get <strong>no money back, no coverage, and no refund.</strong></li>
@@ -323,13 +323,13 @@ source: "live"
 
 <p>Sadly, people end up buying overpriced, underperforming policies because they’re made to believe it’s their only option.</p>
 
-<p>They might get a $7,000 policy with a 2-year waiting period for $60/month – when they could’ve qualified for $10,000 of first-day coverage for a massively lower price.</p>
+<p>They might get a $7,000 policy with a 2-year waiting period for $60/month, when they could’ve qualified for $10,000 of first-day coverage for a massively lower price.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
 <li>Social Security does <strong>not</strong> offer burial, cremation, or final expense insurance.</li>
-<li>Ads targeting SSI or SSDI recipients are <strong>misleading</strong> – there’s no government-backed plan.</li>
+<li>Ads targeting SSI or SSDI recipients are <strong>misleading</strong>: there’s no government-backed plan.</li>
 <li>Phrases like “new benefit for those on Social Security” are designed to create <strong>false urgency.</strong></li>
 <li>These tactics pressure seniors into buying overpriced policies with <strong>2-year waiting periods.</strong></li>
 <li>Many people on Social Security <strong>qualify for better, lower-cost, first-day coverage.</strong></li>
@@ -344,7 +344,7 @@ source: "live"
 
 <p>One of the most common is the <strong>contestability period, typically</strong> the first two years of the policy. If you pass away during this window, the insurance company CAN investigate the claim.&#160;</p>
 
-<p>If they discover that you provided incorrect or incomplete information on your application – even unintentionally – they can deny the payout.</p>
+<p>If they discover that you provided incorrect or incomplete information on your application, even unintentionally, they can deny the payout.</p>
 
 <p>Then there’s the <strong>suicide clause</strong>, which is standard in most life insurance policies. If the insured dies by suicide within the first two years, the insurer may not pay the death benefit; they will often only return the premiums paid so far.</p>
 
@@ -354,14 +354,14 @@ source: "live"
 <li>Misunderstanding life insurance clauses can leave your family vulnerable and unprotected.</li>
 <li>Most policies have a <strong>2-year contestability period</strong> where claims can be denied for incorrect info.</li>
 <li>Even accidental mistakes on your application can lead to a <strong>denied payout</strong> during that time.</li>
-<li>A <strong>suicide clause</strong> also applies for the first two years – benefits may not be paid if triggered.</li>
+<li>A <strong>suicide clause</strong> also applies for the first two years. Benefits may not be paid if triggered.</li>
 <li>Always review your policy carefully and be truthful on your application to protect your loved ones.</li>
 <li>For help understanding what you’re really signing up for, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
 <hr>
 
-<h2 id="Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?"><strong>Chapter 10: Who Really Benefits – You or the Insurance Company?</strong></h2>
+<h2 id="Chapter-10:-Who-Really-Benefits---You-or-the-Insurance-Company?"><strong>Chapter 10: Who Really Benefits: You or the Insurance Company?</strong></h2>
 
 <p>With the right life insurance agent, you will “win” by them getting you the most amount of whole life coverage for the least amount of money.</p>
 
@@ -375,15 +375,15 @@ source: "live"
 
 <p>The sad part? Most consumers are unaware that they are overpaying for their life insurance.</p>
 
-<p>Consumers often trust the first agent who sounds friendly, not realizing they could’ve paid up to $20–$80 less per month with a trusted, independent broker like Funeral Funds who puts the client first.</p>
+<p>Consumers often trust the first agent who sounds friendly, not realizing they could’ve paid up to $20 to $80 less per month with a trusted, independent broker like Funeral Funds who puts the client first.</p>
 
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
 <li>The right agent helps you get the <strong>most whole life coverage</strong> for the <strong>least amount of money.</strong></li>
-<li>Many agents only show policies that pay <strong>them</strong> the highest commission – not what’s best for <strong>you.</strong></li>
+<li>Many agents only show policies that pay <strong>them</strong> the highest commission, not what’s best for <strong>you.</strong></li>
 <li>Overpriced plans often include hidden fees, health penalties, and unnecessary riders.</li>
-<li>Most people don’t realize they’re <strong>overpaying</strong> by $20–$80/month for the same coverage.</li>
+<li>Most people don’t realize they’re <strong>overpaying</strong> by $20 to $80/month for the same coverage.</li>
 <li>Work with an ethical, independent broker who shops around for <strong>you</strong>, not for their wallet.</li>
 <li>For a fair and honest review of your options, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
@@ -413,9 +413,9 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>Not all agents are ethical or qualified – some prioritize sales over your long-term protection.</li>
+<li>Not all agents are ethical or qualified: some prioritize sales over your long-term protection.</li>
 <li>Independent brokers (like FUNERALFUNDS.COM) can shop multiple companies to find your <strong>best rate.</strong></li>
-<li>Captive agents can only sell one company’s plans – even if better options exist.</li>
+<li>Captive agents can only sell one company’s plans: even if better options exist.</li>
 <li>Call center reps and lead vendors often rush you, skip fine print, and pressure you to buy fast.</li>
 <li>A good agent listens, explains your real options, and puts your needs before their commission.</li>
 <li>For honest advice and real coverage, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
@@ -425,13 +425,13 @@ source: "live"
 
 <h2 id="Chapter-12:-Already-Covered?-You-Could-Be-Paying-Too-Much"><strong>Chapter 12: Already Covered? You Could Be Paying Too Much</strong></h2>
 
-<p><strong>Just because you have a policy doesn’t mean it’s the best one.</strong> There’s a high chance you’re either overpaying or under-covered – or both.</p>
+<p><strong>Just because you have a policy doesn’t mean it’s the best one.</strong> There’s a high chance you’re either overpaying or under-covered, or both.</p>
 
 <p>Dozens of carriers sell final expense insurance, and their prices for the exact same coverage can vary by <strong>40% to 100%</strong> (that’s not an exaggeration).</p>
 
 <p>Some companies charge $72/month for $10,000 in coverage, while others offer the same coverage for $40 or less. It all depends on age, gender, and health. If you haven’t compared prices in the last few years, there’s a good chance you could be paying more than necessary.</p>
 
-<p>Many people are surprised to learn that they can keep their monthly payment the same but&#160;get thousands more in coverage&#160;by switching to a different company. Other people can reduce their monthly cost significantly – sometimes by $20 to $50 a month – while maintaining the same death benefit.</p>
+<p>Many people are surprised to learn that they can keep their monthly payment the same but&#160;get thousands more in coverage&#160;by switching to a different company. Other people can reduce their monthly cost significantly, sometimes by $20 to $50 a month, while maintaining the same death benefit.</p>
 
 <p>If your current policy has a <strong>two-year waiting period</strong> (a guaranteed issue plan) you should consider re-shopping. If you’ve had that policy for more than two years, you’re now likely eligible for a <strong>first-day coverage plan</strong>, especially if your health has improved or stabilized.</p>
 
@@ -440,9 +440,9 @@ source: "live"
 <p><strong>Steps to Take if You Already Have a Policy:</strong></p>
 
 <ol start="1">
-<li><strong>Review your policy paperwork</strong> – What’s your monthly premium? What’s your benefit? Does it have 1st-day coverage or a waiting period?</li>
+<li><strong>Review your policy paperwork</strong>: What’s your monthly premium? What’s your benefit? Does it have 1st-day coverage or a waiting period?</li>
 <li><strong>Ask yourself if your health has improved or deteriorated.</strong> If your health was poor when you applied but has since improved, you may qualify for lower-priced coverage.</li>
-<li><strong>Speak to an independent agent</strong> – Request quotes from at least three to five top-rated carriers.</li>
+<li><strong>Speak to an independent agent</strong>: Request quotes from at least three to five top-rated carriers.</li>
 <li><strong>Don’t cancel your current policy until your new one is approved and active.</strong> This ensures you’re never uninsured.</li>
 </ol>
 
@@ -453,11 +453,11 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>Just because you have a policy doesn’t mean it’s the <strong>best</strong> one – many people are overpaying or under-covered.</li>
+<li>Just because you have a policy doesn’t mean it’s the <strong>best</strong> one. Many people are overpaying or under-covered.</li>
 <li>Final expense prices for the <strong>same coverage</strong> can vary by 40-100% depending on the company.</li>
 <li>You may qualify for <strong>thousands more in coverage</strong> or lower premiums just by switching providers.</li>
 <li>If your current policy has a <strong>2-year waiting period</strong>, you might now qualify for <strong>1st-day coverage.</strong></li>
-<li>Insurance companies <strong>won’t upgrade you automatically</strong> – it’s up to you to re-shop.</li>
+<li>Insurance companies <strong>won’t upgrade you automatically</strong>: it’s up to you to re-shop.</li>
 <li>For a fast, no-obligation review of your policy, call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong>.</li>
 </ul>
 
@@ -508,7 +508,7 @@ source: "live"
 
 <hr>
 
-<h2 id="Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed"><strong>Chapter 14: A Buyer’s Guide to Protecting Your Family – Without Getting Scammed</strong></h2>
+<h2 id="Chapter-14:-A-Buyer’s-Guide-to-Protecting-Your-Family---Without-Getting-Scammed"><strong>Chapter 14: A Buyer’s Guide to Protecting Your Family Without Getting Scammed</strong></h2>
 
 <p>With the rise in misleading ads and aggressive call center agents, consumers need a checklist to separate fact from fiction.&#160;</p>
 
@@ -519,7 +519,7 @@ source: "live"
 <ol>
 <li><strong>Know precisely what you need.</strong>
 <ul>
-<li>Add up potential costs (dependent on where you live – burial average: $8,000–$12,000 | cremation average $2,000-$5,000)</li>
+<li>Add up potential costs (dependent on where you live, burial average: $8,000 to $12,000 | cremation average $2,000-$5,000)</li>
 <li>Consider extra funds for medical bills, unpaid debts, or family travel expenses.</li>
 </ul>
 </li>
@@ -594,15 +594,15 @@ source: "live"
 
 <hr>
 
-<h2 id="Chapter-15:-Real-Stories,-Real-Regret---and-Redemption"><strong>Chapter 15: Real Stories, Real Regret – and Redemption</strong></h2>
+<h2 id="Chapter-15:-Real-Stories,-Real-Regret---and-Redemption"><strong>Chapter 15: Real Stories, Real Regret: and Redemption</strong></h2>
 
-<p>This chapter shares real examples from people across the country who purchased burial insurance – some who got it right, and others who paid the price for believing false hype from bad agents or insurance companies.&#160;</p>
+<p>This chapter shares real examples from people across the country who purchased burial insurance, some who got it right, and others who paid the price for believing false hype from bad agents or insurance companies.&#160;</p>
 
 <h3 id="h-case-1-the-two-year-trap"><strong>Case #1: The Two-Year Trap</strong></h3>
 
 <p>Linda, a 67-year-old widow from Ohio, purchased a guaranteed issue policy after seeing an ad on TV. She thought her $15,000 policy would protect her daughter in the event of her passing. But no one explained the <strong>2-year waiting period</strong>.&#160;</p>
 
-<p>Linda passed away from a stroke 18 months later. Her daughter received a refund of premiums – just $700 – instead of the $15,000 she was expecting.</p>
+<p>Linda passed away from a stroke 18 months later. Her daughter received a refund of premiums, just $700, instead of the $15,000 she was expecting.</p>
 
 <p><strong>Lesson:</strong> Always ask if your plan has a 2-year waiting period.</p>
 
@@ -610,7 +610,7 @@ source: "live"
 
 <p>James, 73, bought a policy over the phone after receiving a mailer claiming he could get “coverage regardless of health.” The agent promised it was “full coverage, no matter what.”&#160;</p>
 
-<p>But when James’s son tried to file a claim after his father’s cancer death, he learned the plan only paid out for <strong>accidental deaths</strong> in the last two years – total payout: $0.</p>
+<p>But when James’s son tried to file a claim after his father’s cancer death, he learned the plan only paid out for <strong>accidental deaths</strong> in the last two years. Total payout: $0.</p>
 
 <p><strong>Lesson:</strong> Never accept verbal promises. Get the policy details in writing.</p>
 
@@ -624,8 +624,8 @@ source: "live"
 
 <ul>
 <li>Real stories show how the <strong>wrong policy</strong> can leave families with little to nothing.</li>
-<li>Linda’s daughter received only a refund – not the $15,000 – because of a <strong>2-year waiting period.</strong></li>
-<li>James’s policy paid <strong>nothing</strong> because it only covered accidental deaths – despite what the agent claimed.</li>
+<li>Linda’s daughter received only a refund, not the $15,000, because of a <strong>2-year waiting period.</strong></li>
+<li>James’s policy paid <strong>nothing</strong> because it only covered accidental deaths, despite what the agent claimed.</li>
 <li>Maria saved $30/month for the <strong>same coverage</strong> by getting help from a trusted expert.</li>
 <li><strong>Always ask</strong> about waiting periods, get everything <strong>in writing</strong>, and shop with an ethical broker.</li>
 <li>Call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> to make sure you’re getting the coverage your family can count on.</li>
@@ -633,7 +633,7 @@ source: "live"
 
 <hr>
 
-<h2 id="Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?"><strong>Chapter 16: Prepaid Funeral Plans – A Safe Bet or a Death Trap?</strong></h2>
+<h2 id="Chapter-16:-Prepaid-Funeral-Plans---A-Safe-Bet-or-a-Death-Trap?"><strong>Chapter 16: Prepaid Funeral Plans: A Safe Bet or a Death Trap?</strong></h2>
 
 <p>Prepaid funeral plans can sound appealing: lock in today’s prices, spare your family from financial stress, and make your final arrangements in advance. </p>
 
@@ -661,19 +661,19 @@ source: "live"
 <p><strong>CHAPTER REVIEW:</strong></p>
 
 <ul>
-<li>Prepaid funeral plans <strong>can</strong> offer peace of mind – but only if structured correctly.</li>
+<li>Prepaid funeral plans <strong>can</strong> offer peace of mind: but only if structured correctly.</li>
 <li>Some plans <strong>aren’t backed</strong> by insurance or regulated trusts, putting your money at risk.</li>
 <li>If you move or the funeral home closes, your plan may not&#160;<strong>be transferable or refundable.</strong></li>
 <li>“Locked-in pricing” often excludes taxes, fees, and third-party costs that still increase.</li>
 <li>Burial insurance may provide <strong>more flexibility, better protection, and lower monthly costs.</strong></li>
-<li>Before you commit, compare all your options – or call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
+<li>Before you commit, compare all your options: or call Randy VanderVaate of Funeral Funds at <strong><a href="tel:8888629456">888-862-9456</a></strong> for expert guidance.</li>
 </ul>
 
 <hr>
 
-<h2 id="Chapter-17:-Final-Words---Freed-by-Truth"><strong>Chapter 17: Final Words – Freed by Truth</strong></h2>
+<h2 id="Chapter-17:-Final-Words---Freed-by-Truth"><strong>Chapter 17: Final Words: Freed by Truth</strong></h2>
 
-<p>The right plan <em>is</em> out there – and you now know how to find it. Call me for guidance and your lowest possible pricing from each insurance carrier at <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong>.</p>
+<p>The right plan <em>is</em> out there: and you now know how to find it. Call me for guidance and your lowest possible pricing from each insurance carrier at <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong>.</p>
 
 <p>If this book helped you avoid a scam or make a more informed decision, please share it with a friend, a parent, or a neighbor. Because too many people are being buried in lies, and they deserve the truth.</p>
 
@@ -691,4 +691,4 @@ source: "live"
 
 <p id="h-before-making-any-decisions-regarding-insurance-coverage-or-financial-planning-you-are-strongly-advised-to-consult-with-a-licensed-insurance-agent-or-financial-professional-who-understands-your-situation" class="as-h6">Before making any decisions regarding insurance coverage or financial planning, you are strongly advised to consult with a licensed insurance agent or financial professional who understands your situation.</p>
 
-<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: funeralfunds.com – <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>
+<p id="h-for-permissions-or-inquiries-contact-fexguy-com-888-862-945" class="as-h6">For permissions or inquiries, contact: funeralfunds.com, <strong><strong><a href="tel:8888629456">888-862-9456</a></strong></strong></p>

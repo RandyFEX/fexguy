@@ -40,18 +40,18 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with diabetic coma they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aetna Modified</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Aflac Decline</strong>&#160;– Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aflac Modified&#160;</strong>– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
-<li><strong>Guarantee Trust Life Graded</strong>&#160;– Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
-<li><strong>Liberty Bankers Life Preferred</strong>&#160;– Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
-<li><strong>Mutual of Omaha Graded</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
-<li><strong>Trinity Life Decline</strong>&#160;– During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Aetna Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aetna Modified</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Aflac Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aflac Modified&#160;</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Family Benefit Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
+<li><strong>Mutual of Omaha Graded</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
+<li><strong>Trinity Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
 </ul>
 
 <h3>Diabetic coma underwriting basics</h3>
@@ -83,16 +83,16 @@ sidebar: true
 <p>Diabetic coma occurs when blood sugar reaches life-threatening extremes and disrupts brain and organ function, causing severe neurological and systemic damage that can affect underwriting decisions and policy selection when these related complications are present.</p>
 
 <ul>
-<li><strong>Loss of consciousness</strong> – Extreme blood sugar imbalance shuts down normal brain function and causes prolonged unconsciousness.</li>
-<li><strong>Brain injury</strong> – Prolonged glucose deprivation or toxicity can result in permanent cognitive impairment.</li>
-<li><strong>Seizures</strong> – Severe metabolic instability increases seizure risk during and after the event.</li>
-<li><strong>Kidney failure</strong> – Dehydration and toxin buildup strain the kidneys and can cause acute or chronic damage.</li>
-<li><strong>Cardiac complications</strong> – Electrolyte imbalance increases risk of dangerous heart rhythm disturbances.</li>
-<li><strong>Respiratory failure</strong> – Acidosis or brain suppression can impair breathing and require mechanical support.</li>
-<li><strong>Severe dehydration</strong> – Fluid loss thickens the blood and reduces circulation to vital organs.</li>
-<li><strong>Recurrent coma risk</strong> – Prior diabetic coma strongly increases the likelihood of future life-threatening episodes.</li>
-<li><strong>Long recovery and disability</strong> – Survivors often experience lasting weakness, fatigue, and reduced independence.</li>
-<li><strong>Elevated mortality risk</strong> – Diabetic coma carries a high risk of death without rapid medical intervention.</li>
+<li><strong>Loss of consciousness</strong>: Extreme blood sugar imbalance shuts down normal brain function and causes prolonged unconsciousness.</li>
+<li><strong>Brain injury</strong>: Prolonged glucose deprivation or toxicity can result in permanent cognitive impairment.</li>
+<li><strong>Seizures</strong>: Severe metabolic instability increases seizure risk during and after the event.</li>
+<li><strong>Kidney failure</strong>: Dehydration and toxin buildup strain the kidneys and can cause acute or chronic damage.</li>
+<li><strong>Cardiac complications</strong>: Electrolyte imbalance increases risk of dangerous heart rhythm disturbances.</li>
+<li><strong>Respiratory failure</strong>: Acidosis or brain suppression can impair breathing and require mechanical support.</li>
+<li><strong>Severe dehydration</strong>: Fluid loss thickens the blood and reduces circulation to vital organs.</li>
+<li><strong>Recurrent coma risk</strong>: Prior diabetic coma strongly increases the likelihood of future life-threatening episodes.</li>
+<li><strong>Long recovery and disability</strong>: Survivors often experience lasting weakness, fatigue, and reduced independence.</li>
+<li><strong>Elevated mortality risk</strong>: Diabetic coma carries a high risk of death without rapid medical intervention.</li>
 </ul>
 
 <h2>Understanding diabetic coma policy types</h2>
@@ -111,7 +111,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

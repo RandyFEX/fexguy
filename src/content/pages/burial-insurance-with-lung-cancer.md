@@ -92,12 +92,12 @@ insurance is your best option:</p>
 <p><br><strong>A few of these medical treatments include:</strong></p>
 
 <ol>
-<li><strong>Surgery</strong> – operations performed by doctors to cut out cancer tissues from the lungs.</li>
-<li><strong>Chemotherapy</strong> – This treatment uses special medicines to kill cancer. The drugs can be taken orally, through the veins, or sometimes both.</li>
-<li><strong>Radiation therapy</strong> – uses high-energy rays or radiation to kill the cancer</li>
-<li><strong>Targeted therapy</strong> – use drugs to hinder the growth and spread of cancer cells. The drugs can be taken orally or given through the veins.</li>
-<li><strong>Immunotherapy</strong> – uses the immune system to fight cancer.</li>
-<li><strong>Radiosurgery</strong> – also known as stereotactic body radiotherapy, uses intense radiation to kill lung cancer cells.</li>
+<li><strong>Surgery</strong>: operations performed by doctors to cut out cancer tissues from the lungs.</li>
+<li><strong>Chemotherapy</strong>: This treatment uses special medicines to kill cancer. The drugs can be taken orally, through the veins, or sometimes both.</li>
+<li><strong>Radiation therapy</strong>: uses high-energy rays or radiation to kill the cancer</li>
+<li><strong>Targeted therapy</strong>: use drugs to hinder the growth and spread of cancer cells. The drugs can be taken orally or given through the veins.</li>
+<li><strong>Immunotherapy</strong>: uses the immune system to fight cancer.</li>
+<li><strong>Radiosurgery</strong>: also known as stereotactic body radiotherapy, uses intense radiation to kill lung cancer cells.</li>
 </ol>
 
 <p>If you are undertaking any of these treatments for the last 24 months, you cannot avoid a waiting period on your plan. You must be done with the treatments for over two years before qualifying for a first-day coverage plan.</p>
@@ -229,9 +229,9 @@ affect Lung cancer burial insurance eligibility:</strong></p>
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS</strong></p>
 
@@ -386,14 +386,14 @@ premium you will pay.</p>
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is </strong>required&#160;– easy to get approved.</li>
-<li>Ease of issue&#160;– easy to qualify and get insurance coverage.</li>
-<li>No Money Down to get approved&#160;– have your policy start whenever you want.</li>
-<li>Level premium&#160;– your premium will never increase.</li>
-<li>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</li>
-<li>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is </strong>required: easy to get approved.</li>
+<li>Ease of issue: easy to qualify and get insurance coverage.</li>
+<li>No Money Down to get approved: have your policy start whenever you want.</li>
+<li>Level premium: your premium will never increase.</li>
+<li>Fixed death benefit: your death benefit will never decrease for any reason.</li>
+<li>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with lung cancer</strong></h2>

@@ -190,7 +190,7 @@ sidebar: true
 
 <p>You are not obliged to disclose your CBD oil use if the insurance company does not ask about it. Most companies never ask about CBD oil; they will only ask about your medical condition.</p>
 
-<p>If the insurance company asks about CBD oil use, answer it honestly – do not lie. Tell them about your CBD oil use, including the amount you use and the frequency of usage. </p>
+<p>If the insurance company asks about CBD oil use, answer it honestly. Do not lie. Tell them about your CBD oil use, including the amount you use and the frequency of usage. </p>
 
 <p>There is no need to worry about negative repercussions for you. Your rights are protected under the HIPPA laws (Health Insurance Portability and Accountability Act 1996) and will never be released to law enforcement or public officials.</p>
 
@@ -293,14 +293,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for CBD oil users</strong></h2>

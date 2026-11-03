@@ -51,22 +51,22 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which diabetes applicants they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aetna Modified</strong> – Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Aflac Decline</strong> – Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
-<li><strong>Aflac Modified </strong>– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
-<li><strong>Family Benefit Life Decline</strong> – During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for complications of diabetes such as nephropathy (kidney), neuropathy (nerve, circulatory), retinopathy (eye)?</li>
-<li><strong>Liberty Bankers Life Preferred</strong> – Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
-<li><strong>Mutual of Omaha Graded</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
-<li><strong>Mutual of Omaha Level</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
-<li><strong>Mutual of Omaha Level</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
-<li><strong>Trinity Life Decline</strong> – During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aetna Modified</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Aflac Decline</strong>: Have you ever received, or been advised to receive, an organ or bone marrow transplant, or an amputation due to any disease or complications of diabetes?</li>
+<li><strong>Aflac Modified </strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment or medication for complications of diabetes such as diabetic coma, insulin shock, retinopathy (eye disorder), nephropathy (kidney disorder), or neuropathy (nerve or circulatory disorder)?</li>
+<li><strong>Family Benefit Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Have you EVER been advised by a member of the medical profession to have an amputation due to complications from diabetes?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for diabetes at age 9 or younger?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, by a member of the medical profession, within the prior 2 years, been diagnosed with, or received, or been advised to receive treatment or medication for uncontrolled diabetes, uncontrolled high blood pressure, a diabetic coma or insulin shock, amputation due to diabetic complications, schizophrenia, alcohol or drug abuse, illegal use of drugs, or dependency on prescription medication?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for complications of diabetes such as nephropathy (kidney), neuropathy (nerve, circulatory), retinopathy (eye)?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for insulin dependent diabetes?</li>
+<li><strong>Mutual of Omaha Graded</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for insulin shock, diabetic coma, amputation due to diabetic complications, End Stage Renal Disease or requiring dialysis?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for diabetes before age 45?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Diabetes at any age with complications or history of Retinopathy (eye), Nephropathy (kidney), Neuropathy (nerve), Peripheral Vascular Disease (PVD or PAD), Coronary Artery Disease (CAD) or Stroke?</li>
+<li><strong>Trinity Life Decline</strong>: During the past 24 months, have you been treated by a medical professional for insulin shock, diabetic coma, or amputation caused by disease, or have you ever taken insulin shots prior to age 40?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3><strong>Diabetes underwriting basics</strong></h3>
@@ -100,16 +100,16 @@ sidebar: true
 <p>Diabetes disrupts normal blood sugar regulation and damages blood vessels and nerves over time, which affects multiple organs and body systems and can affect underwriting and policy selection when these related complications are present.</p>
 
 <ul>
-<li><strong>Heart disease</strong> – Vascular damage increases risk of heart attack, heart failure, and reduced physical endurance.</li>
-<li><strong>Stroke</strong> – Impaired circulation and clot risk raise the chance of brain injury and long-term disability.</li>
-<li><strong>Kidney disease</strong> – Progressive filtration damage leads to fatigue, fluid retention, and possible dialysis.</li>
-<li><strong>Nerve damage</strong> – Loss of sensation and chronic pain interfere with balance, sleep, and daily function.</li>
-<li><strong>Vision problems</strong> – Retinal damage causes blurred vision, poor night vision, and potential blindness.</li>
-<li><strong>Foot ulcers and infections</strong> – Poor circulation and sensation allow wounds to worsen and heal slowly.</li>
-<li><strong>Amputation risk</strong> – Advanced nerve and vascular damage increase limb loss likelihood.</li>
-<li><strong>Frequent infections</strong> – High blood sugar weakens immune response and slows recovery.</li>
-<li><strong>Chronic fatigue</strong> – Inefficient glucose use reduces energy and work capacity.</li>
-<li><strong>Cognitive effects</strong> – Long-term vascular damage affects memory, focus, and mental processing speed.</li>
+<li><strong>Heart disease</strong>: Vascular damage increases risk of heart attack, heart failure, and reduced physical endurance.</li>
+<li><strong>Stroke</strong>: Impaired circulation and clot risk raise the chance of brain injury and long-term disability.</li>
+<li><strong>Kidney disease</strong>: Progressive filtration damage leads to fatigue, fluid retention, and possible dialysis.</li>
+<li><strong>Nerve damage</strong>: Loss of sensation and chronic pain interfere with balance, sleep, and daily function.</li>
+<li><strong>Vision problems</strong>: Retinal damage causes blurred vision, poor night vision, and potential blindness.</li>
+<li><strong>Foot ulcers and infections</strong>: Poor circulation and sensation allow wounds to worsen and heal slowly.</li>
+<li><strong>Amputation risk</strong>: Advanced nerve and vascular damage increase limb loss likelihood.</li>
+<li><strong>Frequent infections</strong>: High blood sugar weakens immune response and slows recovery.</li>
+<li><strong>Chronic fatigue</strong>: Inefficient glucose use reduces energy and work capacity.</li>
+<li><strong>Cognitive effects</strong>: Long-term vascular damage affects memory, focus, and mental processing speed.</li>
 </ul>
 
 <h2><strong>Understanding diabetes policy types</strong></h2>
@@ -128,7 +128,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

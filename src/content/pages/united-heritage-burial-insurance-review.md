@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>United Heritage Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>United Heritage Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -59,13 +59,13 @@ sidebar: true
 
 <h2 id="pros-of-united-heritage-burial-insurance"><strong>Pros of United Heritage burial insurance</strong></h2>
 
-<p><strong>1-year lookback period</strong> – on cancer and heart issues. Pacemaker implants after one year are considered for immediate coverage.</p>
+<p><strong>1-year lookback period</strong>: on cancer and heart issues. Pacemaker implants after one year are considered for immediate coverage.</p>
 
-<p><strong>Simple application</strong> – the company also does not conduct a point-of-sale interview as part of the underwriting process.</p>
+<p><strong>Simple application</strong>: the company also does not conduct a point-of-sale interview as part of the underwriting process.</p>
 
 <h2 id="cons-of-united-heritage-burial-insurance"><strong>Cons of United Heritage burial insurance</strong></h2>
 
-<p><strong>Financial rating</strong> – A.M. Best rates them “A-” (Excellent) with a negative outlook. This rating is still good, and it shows they are still able to pay policyholders on time. But, if you want peace of mind, it’s better to get a plan from “A” rated or better company.</p>
+<p><strong>Financial rating</strong>: A.M. Best rates them “A-” (Excellent) with a negative outlook. This rating is still good, and it shows they are still able to pay policyholders on time. But, if you want peace of mind, it’s better to get a plan from “A” rated or better company.</p>
 
 <h2 id="united-heritage-burial-insurance-products"><br><strong>United Heritage burial insurance products</strong> </h2>
 
@@ -74,13 +74,13 @@ sidebar: true
 <p><strong>United Heritage Burial Insurance Product Features</strong></p>
 
 <ol>
-<li><strong>Simplified Issue</strong> – no medical exam, just a few health questions</li>
-<li>Guaranteed premiums – premiums will remain the same for life</li>
-<li><strong>Guaranteed death benefit</strong> – death benefit will never decrease</li>
-<li><strong>No cancellations due to age</strong> – the policy will not be canceled when you reach 80 years old</li>
+<li><strong>Simplified Issue</strong>: no medical exam, just a few health questions</li>
+<li>Guaranteed premiums: premiums will remain the same for life</li>
+<li><strong>Guaranteed death benefit</strong>: death benefit will never decrease</li>
+<li><strong>No cancellations due to age</strong>: the policy will not be canceled when you reach 80 years old</li>
 </ol>
 
-<p><strong>Protector Whole Life – Immediate coverage</strong></p>
+<p><strong>Protector Whole Life: Immediate coverage</strong></p>
 
 <p>This is a whole life insurance policy. It is issued to people from 0-85 years old. </p>
 
@@ -88,7 +88,7 @@ sidebar: true
 
 <p>The Protector whole life plan is a level death benefit with immediate coverage from day one. Once approved, the company will pay the full death benefit when you die. </p>
 
-<p><br><strong>Protector – Modified Benefit </strong></p>
+<p><br><strong>Protector: Modified Benefit </strong></p>
 
 <p>The other burial insurance plan offered by United Heritage is Protector modified benefit that acts like a guaranteed issue burial insurance. This policy is designed for those, not in the best of health or those with pre-existing medical conditions.</p>
 

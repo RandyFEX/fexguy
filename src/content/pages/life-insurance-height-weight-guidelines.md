@@ -197,7 +197,7 @@ sidebar: true
 
 <p><strong>How does BMI affect rates when companies also consider labs and other health factors?</strong> The higher your BMI, generally the higher your life insurance cost, but the insurance companies will also consider your prescription medications, lab samples, and other health factors.</p>
 
-<p><strong>Show weight differences by insurance companies for the same height, 5’8″, and what it can mean for  200 pounds versus 190 pounds.</strong> – If you are 5’8″, company A may permit a weight of 200 pounds, while company B may put that limit at 190.</p>
+<p><strong>Show weight differences by insurance companies for the same height, 5’8″, and what it can mean for  200 pounds versus 190 pounds.</strong> If you are 5’8″, company A may permit a weight of 200 pounds, while company B may put that limit at 190.</p>
 
 <h2 class="as-h5">About Funeral Funds</h2>
 

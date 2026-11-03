@@ -62,21 +62,21 @@ sidebar: true
 
 <h2 id="pros-of-mutual-of-omaha"><strong>Pros of Mutual of Omaha burial insurance</strong></h2>
 
-<p><strong>First-day coverage </strong>– The Living Promise level benefit plan comes with first-day coverage and no waiting period.</p>
+<p><strong>First-day coverage </strong>: The Living Promise level benefit plan comes with first-day coverage and no waiting period.</p>
 
-<p><strong>Competitive pricing</strong> – their level benefit plan has low pricing.</p>
+<p><strong>Competitive pricing</strong>: their level benefit plan has low pricing.</p>
 
-<p><strong>Accelerated death benefit rider – </strong>available with level benefit plan.</p>
+<p><strong>Accelerated death benefit rider: </strong>available with level benefit plan.</p>
 
-<p><strong>Application process</strong> – In-person or digital online application completed by a licensed agent.</p>
+<p><strong>Application process</strong>: In-person or digital online application completed by a licensed agent.</p>
 
 <h2 id="cons-of-mutual-of-omaha"><strong>Cons of Mutual of Omaha </strong></h2>
 
-<p><strong>Has build chart</strong> – You may not qualify if you are on the heavy side (obese or morbidly obese).</p>
+<p><strong>Has build chart</strong>: You may not qualify if you are on the heavy side (obese or morbidly obese).</p>
 
-<p><strong>Waiting period</strong> – The graded benefit plan comes with a 2-year waiting period.</p>
+<p><strong>Waiting period</strong>: The graded benefit plan comes with a 2-year waiting period.</p>
 
-<p><strong>Not all health issues will qualify</strong> – significant medical conditions can be denied even with the graded plan.</p>
+<p><strong>Not all health issues will qualify</strong>: significant medical conditions can be denied even with the graded plan.</p>
 
 <h2 id="moo-burial-insurance-products"><br><strong>Mutual of Omaha burial insurance products</strong></h2>
 
@@ -168,7 +168,7 @@ sidebar: true
 
 <p><br><strong>OTHER BENEFITS:</strong></p>
 
-<p><strong>POLICY LOANS </strong>– you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
+<p><strong>POLICY LOANS </strong>: you can borrow up to 100% of your cash value. This is tax-free. Loans reduce your cash value amount and are subtracted from your death benefit. The interest on policy loans varies by state.</p>
 
 <h2 id="when-moo-makes-sense"><br><strong>When does Mutual of Omaha make the most sense?</strong></h2>
 
@@ -540,10 +540,10 @@ sidebar: true
 <p><br><strong>MUTUAL OF OMAHA FINANCIAL RATINGS</strong></p>
 
 <ul>
-<li>A+ (Superior) – A.M. Best</li>
-<li>AA- (Very Strong) – Standard &amp; Poor’s</li>
-<li>A1 (Good) – Moody’s</li>
-<li>A+ – Better Business Bureau</li>
+<li>A+ (Superior): A.M. Best</li>
+<li>AA- (Very Strong): Standard &amp; Poor’s</li>
+<li>A1 (Good): Moody’s</li>
+<li>A+: Better Business Bureau</li>
 </ul>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently asked questions </strong></h2>
@@ -677,19 +677,19 @@ sidebar: true
 <p><strong>Pros:</strong></p>
 
 <ul>
-<li>First-day coverage – The Living Promise level benefit plan comes with first-day coverage and no waiting period.</li>
-<li>Competitive pricing – their level benefit plan has low pricing.</li>
-<li>Accelerated death benefit rider – available with level benefit plan.</li>
-<li>Application process – In-person or digital online application completed by a licensed agent.</li>
+<li>First-day coverage: The Living Promise level benefit plan comes with first-day coverage and no waiting period.</li>
+<li>Competitive pricing: their level benefit plan has low pricing.</li>
+<li>Accelerated death benefit rider: available with level benefit plan.</li>
+<li>Application process: In-person or digital online application completed by a licensed agent.</li>
 </ul>
 
 <p><strong>Cons:</strong></p>
 
 <ul>
 <li>Easily confused with Mutual of Omaha’s other company, United of Omaha, which has a mandatory 2-year waiting period.</li>
-<li>Has build chart&#160;– You may not qualify if you are on the heavy side (obese or morbidly obese).</li>
-<li>Waiting period&#160;– The graded benefit plan comes with a 2-year waiting period.</li>
-<li>Not all health issues qualify&#160;– significant medical conditions can be denied even with the graded plan.</li>
+<li>Has build chart: You may not qualify if you are on the heavy side (obese or morbidly obese).</li>
+<li>Waiting period: The graded benefit plan comes with a 2-year waiting period.</li>
+<li>Not all health issues qualify: significant medical conditions can be denied even with the graded plan.</li>
 </ul>
 
 <p><br><strong>How much life insurance can you get with Mutual of Omaha life insurance?</strong></p>

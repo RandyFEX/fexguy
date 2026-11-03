@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>TruStage Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>TruStage Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -68,17 +68,17 @@ sidebar: true
 
 <h2 id="pros-of-trustage-burial-insurance"><strong>Pros of TruStage burial insurance</strong></h2>
 
-<p><strong>3 products to choose from</strong> – OK products, but not the best or most affordable</p>
+<p><strong>3 products to choose from</strong>: OK products, but not the best or most affordable</p>
 
-<p><strong>Application process – </strong>TruStage life insurance products generally offer quick approvals.</p>
+<p><strong>Application process: </strong>TruStage life insurance products generally offer quick approvals.</p>
 
-<p><strong>First-day coverage (kind of…)</strong> – two out of three burial insurance products with first-day coverage</p>
+<p><strong>First-day coverage (kind of…)</strong>: two out of three burial insurance products with first-day coverage</p>
 
 <h2 id="cons-of-trustage-burial-insurance"><strong>Cons of TruStage burial insurance</strong></h2>
 
-<p><strong>Expensive</strong> – TruStage life insurance products can be more expensive than other life insurance products on the market.</p>
+<p><strong>Expensive</strong>: TruStage life insurance products can be more expensive than other life insurance products on the market.</p>
 
-<p><strong>No ability to compare prices</strong> – it is only a direct-to-consumer sales portal for CMFG Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
+<p><strong>No ability to compare prices</strong>: it is only a direct-to-consumer sales portal for CMFG Life. They sell directly to the consumer via their website or telephone. They do not let you compare prices with other companies!</p>
 
 <h2 id="trustage-burial-insurance-products"><strong>TruStage burial insurance products</strong></h2>
 
@@ -127,7 +127,7 @@ sidebar: true
 
 <ul>
 <li>Available from ages 18 to 85</li>
-<li>Low available death benefits – as low as $1,000 of coverage</li>
+<li>Low available death benefits: as low as $1,000 of coverage</li>
 </ul>
 
 <p><strong>Whole Life Insurance Cons</strong></p>
@@ -166,7 +166,7 @@ sidebar: true
 <ul>
 <li>Expensive compared to other companies offering guaranteed acceptance policy</li>
 <li>Cannot purchase a policy greater than $25,000</li>
-<li>No full coverage if you die from a natural cause in the first two years (your premiums plus 10% are paid back) – full death benefit only after year 2</li>
+<li>No full coverage if you die from a natural cause in the first two years (your premiums plus 10% are paid back), full death benefit only after year 2</li>
 </ul>
 
 <p><br><strong>What’s wrong with TruStage Guaranteed Acceptance Whole Life?</strong></p>
@@ -676,7 +676,7 @@ sidebar: true
 
 <p><br><strong>What are TruStage operating hours?</strong></p>
 
-<p>TruStage is open Monday – Friday, 7 a.m. – 9 p.m. CST (Saturday 8 a.m. – 4 p.m. CST).</p>
+<p>TruStage is open Monday to Friday, 7 a.m. to 9 p.m. CST (Saturday 8 a.m. to 4 p.m. CST).</p>
 
 <p><br><strong>What is TruStage’s email address?</strong></p>
 
@@ -847,13 +847,13 @@ sidebar: true
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/colonial-penn-two-year-wait/">
 <h3 class="as-h5">Colonial Penn two year wait</h3>
 </a></div>
@@ -873,8 +873,8 @@ June 10, 2021 at 2:04 am
 <div class="comment-replies">
 <div class="comment" id="comment-11216">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Carlota – Thank you for your comments…even if they do leave us confused.</p>
-<p>Please read this article again if you are confused. This article is a review of one company only – Trustage Life Insurance. </p>
+<p>Carlota: Thank you for your comments…even if they do leave us confused.</p>
+<p>Please read this article again if you are confused. This article is a review of one company only: Trustage Life Insurance. </p>
 <p>Baltimore Life Insurance would need to have its own review article if we wanted to write one about them. </p>
 <p>The "suggested companies" you mentioned are not suggested companies. They are just review pages on other companies. We provide the facts and you can decide if you like those companies or not.</p>
 <div class="comment-meta">

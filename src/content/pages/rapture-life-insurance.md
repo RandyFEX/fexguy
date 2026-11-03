@@ -105,7 +105,7 @@ sidebar: true
 <tr>
 <td>Unverified or Spiritual Death</td>
 <td>No recognition under civil law</td>
-<td>None – no legal documentation</td>
+<td>None: no legal documentation</td>
 <td>No, claim cannot be processed</td>
 </tr>
 </table>
@@ -291,27 +291,27 @@ sidebar: true
 </tr>
 <tr>
 <td>Licensed Life Insurance (State Regulated)</td>
-<td>Yes – overseen by State Department of Insurance</td>
-<td>Yes – legally binding policy contract</td>
+<td>Yes: overseen by State Department of Insurance</td>
+<td>Yes: legally binding policy contract</td>
 <td>Guaranteed by law through carrier reserves</td>
 </tr>
 <tr>
 <td>Faith-Based “End Times” Coverage</td>
-<td>No – not recognized by insurance regulators</td>
-<td>No – donation-based promise</td>
-<td>None – no legal recourse or payout protection</td>
+<td>No: not recognized by insurance regulators</td>
+<td>No: donation-based promise</td>
+<td>None: no legal recourse or payout protection</td>
 </tr>
 <tr>
 <td>Christian Health Sharing Ministry</td>
-<td>No – exempt from insurance regulation</td>
+<td>No: exempt from insurance regulation</td>
 <td>Membership agreement only</td>
-<td>Not guaranteed – payments depend on group funds</td>
+<td>Not guaranteed: payments depend on group funds</td>
 </tr>
 <tr>
 <td>Online Prophecy Donation Scheme</td>
-<td>No – unlicensed financial solicitation</td>
-<td>No – no enforceable contract</td>
-<td>None – zero guarantee of benefit or refund</td>
+<td>No: unlicensed financial solicitation</td>
+<td>No: no enforceable contract</td>
+<td>None: zero guarantee of benefit or refund</td>
 </tr>
 </table>
 
@@ -448,7 +448,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Term Life</td>
-<td>10–30 Years</td>
+<td>10 to 30 Years</td>
 <td>No</td>
 <td>Only if death occurs within term</td>
 </tr>

@@ -61,7 +61,7 @@ sidebar: true
 
 <p>What is final expense insurance? Final expense insurance is a form of whole life insurance that provides funds for burial, funeral, and other end-of-life expenses. Burial insurance is different from prepaid burial plans. The funeral home is the beneficiary of preneed funeral insurance. While you can designate a beneficiary if you purchase burial insurance.</p>
 
-<p>The face amount of this coverage is often smaller, with proceeds usually ranging between $5,000 and $50,000 per policy. Policyholders are allowed to make manageable monthly payments – which can be convenient for seniors living on a fixed income.</p>
+<p>The face amount of this coverage is often smaller, with proceeds usually ranging between $5,000 and $50,000 per policy. Policyholders are allowed to make manageable monthly payments, which can be convenient for seniors living on a fixed income.</p>
 
 <p>Some funeral expenses that burial insurance may cover include:</p>
 
@@ -89,15 +89,15 @@ sidebar: true
 
 <p>There are two types of final expense insurance:</p>
 
-<p><strong>Simplified Issue Final Expense Insurance –</strong> requires no medical exam to qualify. This is final expense insurance that starts immediately, on the very first day. This final expense insurance with no waiting period will payout 100% of your death benefit if you die for whatever reason.</p>
+<p><strong>Simplified Issue Final Expense Insurance:</strong> requires no medical exam to qualify. This is final expense insurance that starts immediately, on the very first day. This final expense insurance with no waiting period will payout 100% of your death benefit if you die for whatever reason.</p>
 
-<p><strong>Guaranteed Issue Final Expense Insurance</strong> – is also called final expense insurance no exam, no questions asked. Your approval is guaranteed regardless of your medical condition. This is the best option for people with significant health problems who cannot qualify for traditional life insurance. </p>
+<p><strong>Guaranteed Issue Final Expense Insurance</strong>: is also called final expense insurance no exam, no questions asked. Your approval is guaranteed regardless of your medical condition. This is the best option for people with significant health problems who cannot qualify for traditional life insurance. </p>
 
 <p>Here are our <a rel="noreferrer noopener" href="/burial-insurance/top-10-final-expense-life-insurance-companies/" target="_blank">Top 10 Final Expense insurance companies</a>.</p>
 
 <p><br><strong>ADVANTAGES OF GUARANTEED COVERAGE BURIAL INSURANCE</strong></p>
 
-<p><strong>Guaranteed acceptance</strong> <strong>life insurance</strong> – every applicant will be approved regardless of any medical condition. <a rel="noreferrer noopener" href="/finding-affordable-burial-insurance/" target="_blank">Burial insurance</a> is particularly beneficial to people with:</p>
+<p><strong>Guaranteed acceptance</strong> <strong>life insurance</strong>: every applicant will be approved regardless of any medical condition. <a rel="noreferrer noopener" href="/finding-affordable-burial-insurance/" target="_blank">Burial insurance</a> is particularly beneficial to people with:</p>
 
 <ul>
 <li>Alzheimer’s disease</li>
@@ -108,17 +108,17 @@ sidebar: true
 <li>AIDS or HIV</li>
 </ul>
 
-<p><strong>No medical exam</strong> – guaranteed issue life insurance policies will never require you to undergo a medical exam or answer health-related questions as part of the application process.</p>
+<p><strong>No medical exam</strong>: guaranteed issue life insurance policies will never require you to undergo a medical exam or answer health-related questions as part of the application process.</p>
 
-<p><strong>Low face amount options</strong> – if you’re only interested in buying little coverage to take care of your final expense, burial insurance for seniors will allow you to do that. You can buy as low as $2,000 in coverage with some companies.</p>
+<p><strong>Low face amount options</strong>: if you’re only interested in buying little coverage to take care of your final expense, burial insurance for seniors will allow you to do that. You can buy as low as $2,000 in coverage with some companies.</p>
 
-<p><strong>Cash paid directly to your beneficiary</strong> – when you die, the insurance company will pay out the total death benefit to your beneficiary. If there is some money left over after the funeral expenses your beneficiary can use it any way they like.</p>
+<p><strong>Cash paid directly to your beneficiary</strong>: when you die, the insurance company will pay out the total death benefit to your beneficiary. If there is some money left over after the funeral expenses your beneficiary can use it any way they like.</p>
 
 <p><br><strong>DISADVANTAGES OF GUARANTEED COVERAGE BURIAL INSURANCE</strong></p>
 
-<p><strong>Waiting period</strong> – all guaranteed issue policies come with a two-year waiting period. In case you die during the waiting period, the insurance company will refund all premiums paid plus interest.</p>
+<p><strong>Waiting period</strong>: all guaranteed issue policies come with a two-year waiting period. In case you die during the waiting period, the insurance company will refund all premiums paid plus interest.</p>
 
-<p><strong>Graded death benefit</strong> – the beneficiary is paid a percentage of the death benefit if the policyholder dies during the first two years of the policy. For example: in the first year, 30% death benefit will be paid, 70% in the second year, and 100% in the third year.</p>
+<p><strong>Graded death benefit</strong>: the beneficiary is paid a percentage of the death benefit if the policyholder dies during the first two years of the policy. For example: in the first year, 30% death benefit will be paid, 70% in the second year, and 100% in the third year.</p>
 
 <h2 id="what-if-my-health-is-good-or-even-kind-of-bad"><br><strong>What if my health is good, or even kind of bad?</strong></h2>
 
@@ -230,13 +230,13 @@ sidebar: true
 <p><strong>What these samples do and don’t tell you:</strong></p>
 
 <ul>
-<li><strong>Source and date</strong> – Copied from the pricing tables on our <a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit Life</a>, <a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Aetna</a>, and <a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a> reviews (pages last updated May and June 2026). Those pages don’t say when the rates were quoted, and they are for illustration only and subject to change.</li>
-<li><strong>Billing period</strong> – The source tables don’t label it; we show them as monthly premiums, consistent with the monthly figures quoted elsewhere on this site.</li>
-<li><strong>Plan type</strong> – The Family Benefit Life and Aetna pages don’t say which plan or rate class their samples are for. The Guarantee Trust Life samples are for its graded Heritage Plan, the plan that review covers.</li>
-<li><strong>Tobacco</strong> – Not stated for Family Benefit Life or Aetna. Our Guarantee Trust Life review notes that it charges smokers non-smoker rates.</li>
-<li><strong>State</strong> – Not stated. Rates and plan availability vary by state.</li>
-<li><strong>Trinity Life</strong> – The sample rates on our <a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life review</a> match Family Benefit Life’s at ages 50, 60, 70, and 80, so they aren’t repeated here.</li>
-<li><strong>Guaranteed issue</strong> – None of these samples are for a guaranteed issue plan with a two-year waiting period.</li>
+<li><strong>Source and date</strong>: Copied from the pricing tables on our <a href="/family-benefit-life-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Family Benefit Life</a>, <a href="/aetna-burial-insurance-review/" target="_blank" rel="noreferrer noopener">Aetna</a>, and <a href="/guarantee-trust-life-insurance-review/" target="_blank" rel="noreferrer noopener">Guarantee Trust Life</a> reviews (pages last updated May and June 2026). Those pages don’t say when the rates were quoted, and they are for illustration only and subject to change.</li>
+<li><strong>Billing period</strong>: The source tables don’t label it; we show them as monthly premiums, consistent with the monthly figures quoted elsewhere on this site.</li>
+<li><strong>Plan type</strong>: The Family Benefit Life and Aetna pages don’t say which plan or rate class their samples are for. The Guarantee Trust Life samples are for its graded Heritage Plan, the plan that review covers.</li>
+<li><strong>Tobacco</strong>: Not stated for Family Benefit Life or Aetna. Our Guarantee Trust Life review notes that it charges smokers non-smoker rates.</li>
+<li><strong>State</strong>: Not stated. Rates and plan availability vary by state.</li>
+<li><strong>Trinity Life</strong>: The sample rates on our <a href="/trinity-life-insurance-review/" target="_blank" rel="noreferrer noopener">Trinity Life review</a> match Family Benefit Life’s at ages 50, 60, 70, and 80, so they aren’t repeated here.</li>
+<li><strong>Guaranteed issue</strong>: None of these samples are for a guaranteed issue plan with a two-year waiting period.</li>
 </ul>
 
 <p>Your own quote can be higher or lower. Comparing several companies for your age, health, and state is the only way to know your actual price.</p>
@@ -348,7 +348,7 @@ sidebar: true
 
 <h2 id="what-kind-of-final-expense-policies-should-i-avoid"><br><strong>What kind of final expense policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial insurance for parents or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial insurance for parents or final expense policies you see advertised on television or in magazines are sold as “the no-brainer way” to shop for this protection.</p>
 
 <p><strong>In reality, most of these policies rely on you having NO BRAIN to purchase them.</strong></p>
 

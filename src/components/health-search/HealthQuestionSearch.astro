@@ -1,0 +1,70 @@
+---
+// Health Question Search: lets a visitor look up how life insurance
+// applications ask about a health condition, procedure or medication.
+// Insert it only where it belongs (never site-wide):
+//
+//   import HealthQuestionSearch from '@/components/health-search/HealthQuestionSearch.astro';
+//   <HealthQuestionSearch />                       full inline search
+//   <HealthQuestionSearch variant="modal" />       button that opens it in a dialog
+//
+// Everything is fetched from the protected API (/api/health-search/); no
+// question data is in this page's HTML or JavaScript. Behavior lives in
+// src/scripts/health-search.ts; styles in src/styles/health-search.css.
+import '@/styles/health-search.css';
+import { lead } from '@/config/lead';
+import HealthSearchPanel from './HealthSearchPanel.astro';
+
+export interface Props {
+  /** 'inline' (default) shows the search in the page; 'modal' shows a button that opens it. */
+  variant?: 'inline' | 'modal';
+  /** Heading text. */
+  title?: string;
+  /** Heading level for the inline title, to keep the page outline valid (the dialog always uses h2). */
+  headingLevel?: 2 | 3;
+  /** One short sentence under the title. */
+  intro?: string;
+  /** Text of the launch button (modal variant). */
+  buttonLabel?: string;
+}
+
+const {
+  variant = 'inline',
+  title = 'Search life insurance health questions',
+  headingLevel = 2,
+  intro = 'See how insurance companies ask about a health condition, procedure or medication on their applications.',
+  buttonLabel = 'Search health questions',
+} = Astro.props;
+
+// Unique ids so the component can appear more than once on a page.
+const uid = `hqs-${Math.random().toString(36).slice(2, 8)}`;
+const data = { 'data-hqs': '', 'data-phone-href': lead.phone.href, 'data-phone-display': lead.phone.display };
+---
+
+{
+  variant === 'modal' ? (
+    <div class="hqs-shell hqs-shell--modal">
+      <button type="button" class="btn btn--primary hqs-launch" data-hqs-open={`${uid}-dialog`} aria-haspopup="dialog">
+        {buttonLabel}
+      </button>
+      <dialog class="hqs-dialog" id={`${uid}-dialog`} aria-labelledby={`${uid}-title`}>
+        <div class="hqs-dialog__bar">
+          <button type="button" class="hqs-dialog__close" data-hqs-close aria-label="Close health question search">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="hqs" {...data}>
+          <HealthSearchPanel uid={uid} title={title} headingLevel={2} intro={intro} />
+        </div>
+      </dialog>
+    </div>
+  ) : (
+    <section class="hqs-shell hqs" aria-labelledby={`${uid}-title`} {...data}>
+      <HealthSearchPanel uid={uid} title={title} headingLevel={headingLevel} intro={intro} />
+    </section>
+  )
+}
+
+<script>
+  import { initHealthSearch } from '@/scripts/health-search';
+  initHealthSearch();
+</script>

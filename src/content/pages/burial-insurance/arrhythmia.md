@@ -165,9 +165,9 @@ sidebar: true
 <h2 id="applying-for-burial-insurance"><strong>How to apply for burial insurance with arrhythmia</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Ask independent insurance agents specializing in underwriting for arrhythmia for guidance. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – Be truthful when filling out the life insurance application with your agent. Provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
-<li><strong>Review and Confirm Policy Details</strong>&#160;– Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Ask independent insurance agents specializing in underwriting for arrhythmia for guidance. They can help you understand your options, compare quotes, and choose the most suitable burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: Be truthful when filling out the life insurance application with your agent. Provide accurate details about your health, treatments, and any lifestyle changes you’ve made.&#160;</li>
+<li><strong>Review and Confirm Policy Details</strong>: Carefully review the policy terms before confirming your acceptance. Make sure the insurance coverage meets your needs and your budget.</li>
 </ol>
 
 <h2 id="frequently-asked-questions"><strong>   Frequently asked questions </strong></h2>

@@ -1,0 +1,71 @@
+---
+// Non-indexed preview of the Health Question Search database page, for
+// review only: noindex, nofollow, not in the sitemap, llms.txt or site
+// search, and not linked from navigation. The page is the consumer page as it
+// would launch. Review-only parts (the preview note and the article button
+// demo) are built only outside Production (VERCEL_ENV), so they can never
+// ship with the public page.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HealthQuestionSearch from '@/components/health-search/HealthQuestionSearch.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+
+const reviewOnly = process.env.VERCEL_ENV !== 'production';
+---
+
+<BaseLayout
+  title={pageTitle('Life Insurance Health Questions')}
+  description="Search the health questions life insurance companies ask on their applications."
+  robots="noindex, nofollow"
+  noindex
+>
+  <div class="container hqs-page" data-page-type="utility" data-page-reason="Non-indexed preview of the health question search page.">
+    {reviewOnly && <p class="hqs-page__flag">Preview for review only. Not linked from the site and not indexed by search engines.</p>}
+    <h1>Life Insurance Health Questions</h1>
+    <p class="hqs-page__lead">
+      Type a health condition, procedure, medication or insurance company name to see the exact questions on the
+      application and what a YES or NO answer means for your coverage.
+    </p>
+    <p class="hqs-page__call">
+      Prefer to talk it through? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.
+    </p>
+
+    <HealthQuestionSearch title="Search health questions" intro="Search by condition, procedure or medication. Add a company name to see only that company, such as Aflac COPD." />
+
+    {
+      reviewOnly && (
+        <section class="hqs-page__review" aria-labelledby="hqs-review-title">
+          <h2 id="hqs-review-title">For review: article button version</h2>
+          <p>Placed in an article, the search shows only this button until someone opens it.</p>
+          <HealthQuestionSearch variant="modal" />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .hqs-page {
+    padding-block: var(--space-4, 1.5rem);
+    max-width: 52rem;
+  }
+  .hqs-page__flag {
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #555);
+    margin-bottom: 0.5rem;
+  }
+  .hqs-page__lead {
+    font-size: 1.125rem;
+    margin-block: 0.5rem;
+  }
+  .hqs-page__call {
+    margin-bottom: 1.25rem;
+  }
+  .hqs-page__call a {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .hqs-page__review {
+    margin-top: 2rem;
+  }
+</style>

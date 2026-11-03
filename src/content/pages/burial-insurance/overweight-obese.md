@@ -70,12 +70,12 @@ sidebar: true
 <p>There are six <a href="/burial-insurance/adl-activities-of-daily-living/" target="_blank" rel="noreferrer noopener">activities of daily living</a> or self-care used by insurance companies to measure your mobility and functionality to determine if you will qualify for first-day coverage.</p>
 
 <ol>
-<li><a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a> – feeding yourself using utensils, feeding tube, or intravenously</li>
-<li>Bathing – washing your body and getting in or out of the bathtub or shower safely</li>
-<li>Dressing – means putting on and taking off clothing, fasteners, braces, and prosthesis</li>
-<li>Toileting – is getting on and off the toilet and performing necessary personal hygiene</li>
-<li>Transferring – moving in and out of bed, chair, or wheelchair</li>
-<li><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a> – controlling the bladder and bowel functions</li>
+<li><a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a>: feeding yourself using utensils, feeding tube, or intravenously</li>
+<li>Bathing: washing your body and getting in or out of the bathtub or shower safely</li>
+<li>Dressing: means putting on and taking off clothing, fasteners, braces, and prosthesis</li>
+<li>Toileting: is getting on and off the toilet and performing necessary personal hygiene</li>
+<li>Transferring: moving in and out of bed, chair, or wheelchair</li>
+<li><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a>: controlling the bladder and bowel functions</li>
 </ol>
 
 <p>If you are obese and you need help with these activities of daily living, you will not qualify for first-day coverage even if the company does not have a build chart. </p>
@@ -218,9 +218,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>Underwriting for burial insurance is different from traditional life insurance. </p>
 
@@ -357,14 +357,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is </strong>required&#160;– easy to get approved.</li>
-<li>Ease of issue&#160;– easy to qualify and get insurance coverage.</li>
-<li>No Money Down to get approved&#160;– have your policy start whenever you want.</li>
-<li>Level premium&#160;– your premium will never increase.</li>
-<li>Fixed death benefit&#160;– your death benefit will never decrease for any reason.</li>
-<li>Permanent protection&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li>Tax-free&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is </strong>required: easy to get approved.</li>
+<li>Ease of issue: easy to qualify and get insurance coverage.</li>
+<li>No Money Down to get approved: have your policy start whenever you want.</li>
+<li>Level premium: your premium will never increase.</li>
+<li>Fixed death benefit: your death benefit will never decrease for any reason.</li>
+<li>Permanent protection: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li>Tax-free: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-life-insurance"><br><strong>Other common uses for final expense life insurance for overweight or obese</strong></h2>

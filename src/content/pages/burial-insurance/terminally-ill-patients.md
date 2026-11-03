@@ -19,7 +19,7 @@ sidebar: true
 
 <p>Get a quote on this page by completing my quote request form now</p>
 
-<p> <strong>!!! IMPORTANT – READ THIS !!! <br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
+<p> <strong>!!! IMPORTANT: READ THIS !!! <br><br>T<strong>erminal illness</strong> policy shoppers can only qualify for a policy with a 2-year waiting period, which we DO NOT recommend.</strong> </p>
 
 <table>
 <thead>
@@ -103,7 +103,7 @@ sidebar: true
 
 <p>This policy will require you to live for the first two years before your policy pays for any health or medical-related cause of death. If you pass away during the waiting period, your beneficiary will not get your full death benefit. Instead, they will get a Return Of Premium (ROP) plus an additional amount set by the contract, typically 7% to 10%.</p>
 
-<p>If death occurs for natural causes within the first two policy years, your beneficiary will only receive all premiums plus 7% – 10% interest. If a covered accidental death occurs within the first two policy years, the full death benefit can be paid to your beneficiary.</p>
+<p>If death occurs for natural causes within the first two policy years, your beneficiary will only receive all premiums plus 7% to 10% interest. If a covered accidental death occurs within the first two policy years, the full death benefit can be paid to your beneficiary.</p>
 
 <p>If your doctor expects death within the next two years, your family would most likely receive the premium refund plus that contract amount, not the full death benefit. That’s why I generally don’t recommend buying a new guaranteed issue policy in that situation, although I can still help you get one if you decide it’s right for your family.</p>
 
@@ -215,9 +215,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p><br><strong>HEALTH QUESTIONS:</strong></p>
 
@@ -389,14 +389,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for terminally ill patients</strong></h2>

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Great Western Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Great Western Burial Insurance Review: Pros &amp; Cons</h1>
 
 <p><strong>Here’s the Bottom Line:</strong></p>
 
@@ -53,9 +53,9 @@ sidebar: true
 
 <p>Great Western offered three burial insurance products.</p>
 
-<p><strong>#1</strong> – Great&#160;Assurance Plan&#160;– Level benefit plan with first-day coverage.<br><strong>#2 </strong>– Graded Benefit Plan&#160;– Death benefit is phased in for the first two years.<br><strong>#3 </strong>– Guaranteed Assurance&#160;Plan –&#160;This is a 2-year waiting period plan.</p>
+<p><strong>#1</strong>: Great&#160;Assurance Plan: Level benefit plan with first-day coverage.<br><strong>#2 </strong>: Graded Benefit Plan: Death benefit is phased in for the first two years.<br><strong>#3 </strong>: Guaranteed Assurance&#160;Plan:&#160;This is a 2-year waiting period plan.</p>
 
-<p><strong><br>#1 – GREAT&#160;ASSURANCE – Level Benefit Plan&#160;with first-day coverage</strong></p>
+<p><strong><br>#1: GREAT&#160;ASSURANCE: Level Benefit Plan&#160;with first-day coverage</strong></p>
 
 <p>Great Assurance is a simplified issue plan with no medical exam. You will only need to answer three health questions on the application. To qualify for this plan, you must respond “NO” to all the health questions.</p>
 
@@ -74,7 +74,7 @@ sidebar: true
 <td>Issue ages</td><td>50 to 85</td>
 </tr>
 <tr>
-<td>Face amount available</td><td>$1,000–$40,000</td>
+<td>Face amount available</td><td>$1,000 to $40,000</td>
 </tr>
 <tr>
 <td> Simplified issue</td><td>No medical exam required</td>
@@ -97,7 +97,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>#2 – GRADED BENEFIT PLAN – First-day benefit</strong></p>
+<p><strong>#2: GRADED BENEFIT PLAN: First-day benefit</strong></p>
 
 <p>The Graded Benefit Plan is designed for people who will not qualify for the Great Assurance plan because of health issues. Your death benefit will be phased in if you qualify for this plan. </p>
 
@@ -114,7 +114,7 @@ sidebar: true
 <td>Issue ages</td><td>50 to 85</td>
 </tr>
 <tr>
-<td>Face amount available</td><td>$1,000–$40,000</td>
+<td>Face amount available</td><td>$1,000 to $40,000</td>
 </tr>
 <tr>
 <td> Simplified issue</td><td>No medical exam required</td>
@@ -139,7 +139,7 @@ sidebar: true
 
 <p>(Not available in A.K. HI, NY, and WA)</p>
 
-<p><strong>#3 – GUARANTEED ASSURANCE – 2-Year waiting period</strong></p>
+<p><strong>#3: GUARANTEED ASSURANCE: 2-Year waiting period</strong></p>
 
 <p>The Guaranteed Assurance plan has a two-year waiting period. Great Western will pay the full death benefit if death occurs by accident. </p>
 
@@ -158,7 +158,7 @@ sidebar: true
 <td>Issue Ages</td><td>40-80</td>
 </tr>
 <tr>
-<td>Face Amount</td><td>$1,000–$40,000</td>
+<td>Face Amount</td><td>$1,000 to $40,000</td>
 </tr>
 <tr>
 <td>Simplified issue</td><td>No exam required</td>
@@ -188,7 +188,7 @@ sidebar: true
 
 <p>These pros and cons describe the plans as they were sold before Great Western stopped offering new final expense policies.</p>
 
-<h3>#1 – <strong>great assurance</strong></h3>
+<h3>#1: <strong>great assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -206,7 +206,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies offering first-day coverage plan</li>
 </ul>
 
-<h3>#2 – <strong>graded benefit</strong></h3>
+<h3>#2: <strong>graded benefit</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -223,7 +223,7 @@ sidebar: true
 <li>Expensive rates compared with other insurance companies</li>
 </ul>
 
-<h3>#3 – <strong>guaranteed assurance</strong></h3>
+<h3>#3: <strong>guaranteed assurance</strong></h3>
 
 <p><strong>PROS</strong></p>
 

@@ -42,12 +42,12 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with ALS Lou Gehrig’s disease they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>Aflac Decline </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
-<li><strong>Family Benefit Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
-<li><strong>Liberty Bankers Life Decline</strong> – Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Trinity Life Decline</strong> – Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
+<li><strong>Aflac Decline </strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for amyotrophic Lateral Sclerosis (Lou Gehrig’s Disease), Huntington’s Disease, or sickle cell anemia?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; organ transplant (other than corneal), bone marrow transplant, stem cell treatment, kidney failure or dialysis, muscular dystrophy, mental incapacity, amyotrophic lateral sclerosis (ALS) or Lou Gehrig’s disease, Down’s syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington’s disease?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional for, or taken medication for, dementia, Alzheimer’s disease, mental incapacity, Down syndrome, Huntington’s disease, Lou Gehrig’s disease (ALS), cystic fibrosis, cerebral palsy, muscular dystrophy, or sickle cell anemia?</li>
 </ul>
 
 <h3>Lou Gehrig’s disease (ALS) underwriting basics</h3>
@@ -85,16 +85,16 @@ sidebar: true
 <p>ALS causes progressive degeneration of motor neurons, which leads to worsening muscle weakness, loss of voluntary movement, and impaired breathing and swallowing, and these related complications can directly affect underwriting decisions and policy selection as the disease progresses.</p>
 
 <ul>
-<li><strong>Progressive muscle weakness</strong> – Ongoing nerve degeneration leads to loss of strength and reduced ability to perform daily tasks.</li>
-<li><strong>Loss of mobility</strong> – Declining muscle control results in difficulty walking, standing, and eventually transferring or sitting without support.</li>
-<li><strong>Respiratory muscle failure</strong> – Weakening of breathing muscles causes shortness of breath, reduced oxygen levels, and ventilatory support needs.</li>
-<li><strong>Difficulty swallowing (dysphagia)</strong> – Impaired throat muscles increase choking risk, weight loss, and aspiration pneumonia.</li>
-<li><strong>Speech impairment</strong> – Loss of muscle control affects speech clarity and communication ability.</li>
-<li><strong>Severe fatigue</strong> – Muscle inefficiency and breathing strain cause constant exhaustion.</li>
-<li><strong>Muscle cramps and spasticity</strong> – Nerve damage leads to painful muscle stiffness and involuntary contractions.</li>
-<li><strong>Weight loss and malnutrition</strong> – Increased calorie needs and swallowing difficulty lead to rapid physical decline.</li>
-<li><strong>Cognitive or behavioral changes</strong> – Some individuals develop frontotemporal impairment affecting judgment and behavior.</li>
-<li><strong>Reduced life expectancy</strong> – Progressive neuromuscular failure leads to increasing disability and mortality risk.</li>
+<li><strong>Progressive muscle weakness</strong>: Ongoing nerve degeneration leads to loss of strength and reduced ability to perform daily tasks.</li>
+<li><strong>Loss of mobility</strong>: Declining muscle control results in difficulty walking, standing, and eventually transferring or sitting without support.</li>
+<li><strong>Respiratory muscle failure</strong>: Weakening of breathing muscles causes shortness of breath, reduced oxygen levels, and ventilatory support needs.</li>
+<li><strong>Difficulty swallowing (dysphagia)</strong>: Impaired throat muscles increase choking risk, weight loss, and aspiration pneumonia.</li>
+<li><strong>Speech impairment</strong>: Loss of muscle control affects speech clarity and communication ability.</li>
+<li><strong>Severe fatigue</strong>: Muscle inefficiency and breathing strain cause constant exhaustion.</li>
+<li><strong>Muscle cramps and spasticity</strong>: Nerve damage leads to painful muscle stiffness and involuntary contractions.</li>
+<li><strong>Weight loss and malnutrition</strong>: Increased calorie needs and swallowing difficulty lead to rapid physical decline.</li>
+<li><strong>Cognitive or behavioral changes</strong>: Some individuals develop frontotemporal impairment affecting judgment and behavior.</li>
+<li><strong>Reduced life expectancy</strong>: Progressive neuromuscular failure leads to increasing disability and mortality risk.</li>
 </ul>
 
 <h2>Understanding Lou Gehrig’s disease (ALS) policy types</h2>
@@ -113,7 +113,7 @@ sidebar: true
 
 <p>Rates vary by age and gender because women statistically live longer than men. I want you to see how these numbers look so you can plan your budget. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Guarantee Trust Life insurance rates age 50–85</h3>
+<h3>Guarantee Trust Life insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

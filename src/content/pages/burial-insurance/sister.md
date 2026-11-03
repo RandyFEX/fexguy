@@ -189,13 +189,13 @@ you will receive the full death benefit if she dies for any reason.</p>
 
 <p>It’s crucial to set up your sister’s life insurance policy appropriately to avoid falling into a tax trap if your sister’s policy is not handled carefully. Life insurance payout is usually tax-free, but the policy owner can be taxed on the payout if the insured, owner, and beneficiary are three different people. This case is called the Goodman Triangle.</p>
 
-<p><strong>The Insured </strong>– The insured is covered by the life insurance policy, in this case, your sister, whose death will result in a death benefit payout. </p>
+<p><strong>The Insured </strong>: The insured is covered by the life insurance policy, in this case, your sister, whose death will result in a death benefit payout. </p>
 
-<p><strong>The Policy Owner</strong> – The owner is usually the person paying for the policy. She holds the rights to the life insurance contract. She can make changes to the policy, such as changing the beneficiary, transferring ownership, adding or deleting riders, lowering the death benefit, and requesting a rating change for the insured. </p>
+<p><strong>The Policy Owner</strong>: The owner is usually the person paying for the policy. She holds the rights to the life insurance contract. She can make changes to the policy, such as changing the beneficiary, transferring ownership, adding or deleting riders, lowering the death benefit, and requesting a rating change for the insured. </p>
 
 <p>If you are the owner of your sister’s life insurance policy, you must give proof of insurable interest.</p>
 
-<p><strong>The Beneficiary</strong> – the beneficiary is designated to receive the life insurance benefit payout. Assign yourself as the beneficiary to avoid the tax trap.</p>
+<p><strong>The Beneficiary</strong>: the beneficiary is designated to receive the life insurance benefit payout. Assign yourself as the beneficiary to avoid the tax trap.</p>
 
 <p><strong>The Goodman Triangle
 can happen this way:</strong></p>

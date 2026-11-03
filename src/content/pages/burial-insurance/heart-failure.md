@@ -60,9 +60,9 @@ sidebar: true
 
 <h2 id="burial-insurance-available"><strong>What are the types of burial insurance available to heart failure patients?</strong></h2>
 
-<p><strong>FIRST-DAY COVERAGE – </strong>This gem kicks in from day one. Your beneficiaries get the full death benefit immediately upon your passing. And here’s the kicker: it’s cheaper than guaranteed issue life insurance -as long as you choose the right insurance company.</p>
+<p><strong>FIRST-DAY COVERAGE: </strong>This gem kicks in from day one. Your beneficiaries get the full death benefit immediately upon your passing. And here’s the kicker: it’s cheaper than guaranteed issue life insurance -as long as you choose the right insurance company.</p>
 
-<p><strong>GUARANTEED ISSUE LIFE INSURANCE – </strong>No medical exams, no health questions, no problem. You’re in no matter what. </p>
+<p><strong>GUARANTEED ISSUE LIFE INSURANCE: </strong>No medical exams, no health questions, no problem. You’re in no matter what. </p>
 
 <p>The catch? A mandatory two-year waiting period with Guaranteed Issue. If you pass during that time, your beneficiaries only get your premiums plus a little interest (7-10%, depending on the company).</p>
 
@@ -107,23 +107,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage</td>
+<td>Certain companies: 1st-Day Coverage</td>
 <td>$47.25</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$49.75 5 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$51.06</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$96.80</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$42.70</td>
 </tr>
 </tbody>
@@ -140,23 +140,23 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Certain companies – 1st-Day Coverage </td>
+<td>Certain companies: 1st-Day Coverage </td>
 <td>$53.09</td>
 </tr>
 <tr>
-<td>Colonial Penn – GI – 2-Year Wait</td>
+<td>Colonial Penn: GI, 2-Year Wait</td>
 <td>$59.70 6 units</td>
 </tr>
 <tr>
-<td>Gerber Life – GI – 2-Year Wait</td>
+<td>Gerber Life: GI, 2-Year Wait</td>
 <td>$63.89</td>
 </tr>
 <tr>
-<td>Lincoln Heritage – Modified – 2-Year Wait</td>
+<td>Lincoln Heritage: Modified, 2-Year Wait</td>
 <td>$114.14</td>
 </tr>
 <tr>
-<td>Mutual Of Omaha – GI – 2-Year Wait</td>
+<td>Mutual Of Omaha: GI, 2-Year Wait</td>
 <td>$56.90</td>
 </tr>
 </tbody>
@@ -229,9 +229,9 @@ sidebar: true
 <h2 id="application-process"><strong>How to apply for burial insurance with heart failure</strong></h2>
 
 <ol>
-<li><strong>Consult with an Independent Insurance Agent –&#160;</strong>Seek guidance from agents from Funeral Funds who know the ins and outs of underwriting for heart failure. They’ll help you understand your options, compare quotes, and choose the perfect burial insurance plan.</li>
-<li><strong>Complete the Application Honestly</strong> – When filling out the application with our agent, spill the truth about your heart failure. Lay out all the details about your health, treatments, and any lifestyle changes you’ve made.</li>
-<li><strong>Review and Confirm Policy Details</strong>&#160;– Give the policy terms a good once-over before signing. Make sure the coverage aligns with your needs and budget.</li>
+<li><strong>Consult with an Independent Insurance Agent:&#160;</strong>Seek guidance from agents from Funeral Funds who know the ins and outs of underwriting for heart failure. They’ll help you understand your options, compare quotes, and choose the perfect burial insurance plan.</li>
+<li><strong>Complete the Application Honestly</strong>: When filling out the application with our agent, spill the truth about your heart failure. Lay out all the details about your health, treatments, and any lifestyle changes you’ve made.</li>
+<li><strong>Review and Confirm Policy Details</strong>: Give the policy terms a good once-over before signing. Make sure the coverage aligns with your needs and budget.</li>
 </ol>
 
 <h2 id="faq"><strong>  Frequently asked questions </strong></h2>

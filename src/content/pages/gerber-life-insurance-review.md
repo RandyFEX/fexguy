@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Gerber Guaranteed Life Insurance – This Policy Sucks!</h1>
+<h1>Gerber Guaranteed Life Insurance: This Policy Sucks!</h1>
 
 <p><strong>Here’s the Bottom Line:<br>• </strong>Gerber Life is easy to get, but often costs more overall<br>• Guaranteed issue plans come with a strict 2-year waiting period<br>• Coverage amounts are smaller than those of many competing companies<br>• Most policies focus on whole life, not flexible options<br>• Many people choose it for the brand, not the best value</p>
 
@@ -57,9 +57,9 @@ sidebar: true
 <p><strong>This will be the death benefit payout schedule with Gerber guaranteed acceptance insurance:</strong></p>
 
 <ul>
-<li>First Year – Premiums Refunded + 10%</li>
-<li>Second Year – Premiums Refunded + 10%</li>
-<li>Third Year and Beyond – 100% death benefit</li>
+<li>First Year: Premiums Refunded + 10%</li>
+<li>Second Year: Premiums Refunded + 10%</li>
+<li>Third Year and Beyond: 100% death benefit</li>
 </ul>
 
 <p>This means that if a senior buys a $15,000 policy and dies from cancer in the first or second year, the family wouldn’t get anything to help defray burial, cremation, or funeral costs. They would merely get back what they had paid plus interest.</p>
@@ -429,4 +429,4 @@ sidebar: true
 
 <p><strong>Guaranteed issue whole life policy?</strong> A policy that accepts all&#160;applications&#160;with no health questions.&#160;These policies cost more than first-day coverage for people who qualify for it, and they have a two-year waiting period before the full natural-death benefit is paid.</p>
 
-<p><strong>Gerber Guaranteed Life Insurance Reviews Mixed&#160;reviews</strong>&#160;–&#160;some seniors&#160;enjoy&#160;the easy approval,&#160;and&#160;many&#160;seniors&#160;have&#160;complained&#160;about the&#160;2-year&#160;waiting period, high&#160;price,&#160;and small cash&#160;value.</p>
+<p><strong>Gerber Guaranteed Life Insurance Reviews Mixed&#160;reviews</strong>:&#160;some seniors&#160;enjoy&#160;the easy approval,&#160;and&#160;many&#160;seniors&#160;have&#160;complained&#160;about the&#160;2-year&#160;waiting period, high&#160;price,&#160;and small cash&#160;value.</p>

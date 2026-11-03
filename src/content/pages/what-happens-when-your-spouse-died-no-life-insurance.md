@@ -51,35 +51,35 @@ sidebar: true
 
 <p>Without life insurance, your family will be left to pay the final expenses. How much does a funeral cost? The funeral cost can be quite expensive, and the funeral expenses can vary depending on the type of service and goods used during the service.</p>
 
-<p><strong>Casket</strong> – This is commonly the largest <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> expense. Starting at around $2,400, the casket can get really expensive if you would like to be buried in metal or bronze.</p>
+<p><strong>Casket</strong>: This is commonly the largest <a href="/pay-for-a-funeral-without-life-insurance/" target="_blank" rel="noreferrer noopener">funeral</a> expense. Starting at around $2,400, the casket can get really expensive if you would like to be buried in metal or bronze.</p>
 
-<p><strong>Embalming</strong> – This is needed if there will be visitation or viewing. Embalming will not be required if there won’t be any viewing. According to the National Funeral Directors Association, embalming costs around $750.</p>
+<p><strong>Embalming</strong>: This is needed if there will be visitation or viewing. Embalming will not be required if there won’t be any viewing. According to the National Funeral Directors Association, embalming costs around $750.</p>
 
 <p><strong>Cremation:</strong> direct cremation costs between $500 and $1,500, depending on your area. In most metro areas, direct cremation costs between $800 and $1,200.</p>
 
 <p><strong>Memorial Service,</strong> according to NFDA this service costs around $2,000. The memorial service includes planning, preparing obituaries, getting permits and death certificates, and viewing and coordinating with the gravesite.</p>
 
-<p><strong>Gravesite</strong> – the price of a plot in a cemetery depends on many variables, like the type of cemetery or the size of the plot. In some larger cities, most plots cost between $1,000 and $2,500 or higher. In a private transaction, it is possible to purchase plots in advance in some states.</p>
+<p><strong>Gravesite</strong>: the price of a plot in a cemetery depends on many variables, like the type of cemetery or the size of the plot. In some larger cities, most plots cost between $1,000 and $2,500 or higher. In a private transaction, it is possible to purchase plots in advance in some states.</p>
 
-<p><strong>Transportation</strong>– the use of a hearse cost around $300.  A van or service car will cost another $150. </p>
+<p><strong>Transportation</strong>: the use of a hearse cost around $300.  A van or service car will cost another $150. </p>
 
-<p><strong>Obituary</strong> –It may cost up to $600 to publish an obituary in a national newspaper. The cost may vary depending on the publishing day, the obituary’s length, and if there’s a picture.</p>
+<p><strong>Obituary</strong>: It may cost up to $600 to publish an obituary in a national newspaper. The cost may vary depending on the publishing day, the obituary’s length, and if there’s a picture.</p>
 
 <p><strong>Gravestone</strong> costs around $1,000 to pay for a flat grave marker, while a kerbed or upright may cost up to $10,000. Prices depend on the color, material, and finish of the marker. You can choose from sandstone, granite, concrete, or metal. Metal markers are the most expensive, but if you’re a military veteran you will have a gravemarker for free.</p>
 
-<p><strong>Flowers</strong>– funeral flowers, including bouquets, sprays, and boutonnieres, can cost around $200 to $1,000 for the whole complete package.</p>
+<p><strong>Flowers</strong>: funeral flowers, including bouquets, sprays, and boutonnieres, can cost around $200 to $1,000 for the whole complete package.</p>
 
 <p><strong>Other Expenses:</strong></p>
 
 <p>These are the other expenses your survivor will have to pay when you pass away:</p>
 
-<p><strong>Travel expenses</strong> – if your survivors don’t live in the same city, they may have to make a flight and stay in a hotel for a few days to be with their loved ones during the funeral.</p>
+<p><strong>Travel expenses</strong>: if your survivors don’t live in the same city, they may have to make a flight and stay in a hotel for a few days to be with their loved ones during the funeral.</p>
 
-<p><strong>Lost Wages</strong>– your death will not only cause emotional grieving, but it will be impossible for your loved ones to go back to work after a traumatic loss. It would take a few weeks to a month before your spouse can return to work.</p>
+<p><strong>Lost Wages</strong>: your death will not only cause emotional grieving, but it will be impossible for your loved ones to go back to work after a traumatic loss. It would take a few weeks to a month before your spouse can return to work.</p>
 
-<p><strong>Taxes and debt</strong> – your spouse will be responsible for paying your medical bills and taxes. If your spouse is still living in your own house, they will owe some type of estate tax, which they may not be ready to do without selling the home.</p>
+<p><strong>Taxes and debt</strong>: your spouse will be responsible for paying your medical bills and taxes. If your spouse is still living in your own house, they will owe some type of estate tax, which they may not be ready to do without selling the home.</p>
 
-<p><strong>Counseling</strong> – your spouse may need to go on counseling to process their emotions and grief. Counseling sessions cost around $100 or more an hour.</p>
+<p><strong>Counseling</strong>: your spouse may need to go on counseling to process their emotions and grief. Counseling sessions cost around $100 or more an hour.</p>
 
 <h2 id="what-happens-when-your-spouse-died-no-life-insurance"><br><strong>What happens when your spouse died no life insurance?</strong></h2>
 
@@ -87,9 +87,9 @@ sidebar: true
 
 <p>There is limited financial assistance available for funeral and <a href="/how-much-does-final-expense-insurance-cost/" target="_blank" rel="noreferrer noopener">burial costs</a>. If your spouse does not have the financial means to pay for your funeral and needs help with funeral costs, she may have to do with these alternatives:</p>
 
-<p><strong>Loan</strong> – your spouse will have to get a loan to fund the funeral expenses. They will not only have to pay for the funeral but also pay interest on the loan.</p>
+<p><strong>Loan</strong>: your spouse will have to get a loan to fund the funeral expenses. They will not only have to pay for the funeral but also pay interest on the loan.</p>
 
-<p><strong>Funeral payment plan</strong> – some funeral directors offer loans for those unable to pay. You will only have to deposit up-front and pay back in installments. Your spouse would need to shop around to find a funeral director that offers excellent value.</p>
+<p><strong>Funeral payment plan</strong>: some funeral directors offer loans for those unable to pay. You will only have to deposit up-front and pay back in installments. Your spouse would need to shop around to find a funeral director that offers excellent value.</p>
 
 <h2 id="programs-that-can-help-your-family-if-you-die-without-life-insurance"><br><strong>Programs that can help your family if you die without life insurance</strong></h2>
 
@@ -133,7 +133,7 @@ sidebar: true
 
 <h2 id="what-kind-of-burial-policies-and-final-expense-policies-should-i-avoid"><br><strong>What kind of burial policies and final expense policies should I avoid?</strong></h2>
 
-<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong> – Most burial policies or final expense policies you see advertised on television or in magazines are sold as the easiest way to shop for this protection.</p>
+<p><strong>TV AND MAGAZINE ADVERTISEMENTS</strong>: Most burial policies or final expense policies you see advertised on television or in magazines are sold as the easiest way to shop for this protection.</p>
 
 <p>Everyone is eligible for immediate coverage and better pricing allowed by these heavily advertised policies that cost an arm and leg.</p>
 
@@ -235,11 +235,11 @@ sidebar: true
 
 <p>If you don’t have any life insurance, your loved ones would likely have to bear the burden of your final expenses and other financial obligations if you died unexpectedly. </p>
 
-<p>A life insurance policy can help ease that burden and provide much-needed financial stability during a difficult time. So please, don’t go without life insurance – it’s just not worth the risk.</p>
+<p>A life insurance policy can help ease that burden and provide much-needed financial stability during a difficult time. So please, don’t go without life insurance; it’s just not worth the risk.</p>
 
 <p><br><strong>Can you buy life insurance for someone who is dying?</strong></p>
 
-<p>Yes. You can purchase life insurance for someone who is dying, but be careful – it’s almost always more expensive than standard life insurance because the policy doesn’t go into effect until two years have passed.</p>
+<p>Yes. You can purchase life insurance for someone who is dying, but be careful: it’s almost always more expensive than standard life insurance because the policy doesn’t go into effect until two years have passed.</p>
 
 <p><br><strong>Who pays for funeral if no life insurance?</strong></p>
 

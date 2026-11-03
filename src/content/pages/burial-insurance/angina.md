@@ -40,26 +40,26 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with angina they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline&#160;</strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for congestive heart failure, pulmonary fibrosis, any terminal condition, or end-stage disease?</li>
-<li><strong>Aetna Decline&#160;</strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
-<li><strong>Aetna Modified</strong>&#160;– Within the past year, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
-<li><strong>Aetna Level&#160;</strong>– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
-<li><strong>Aflac Decline&#160;</strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for congestive heart failure, pulmonary fibrosis, any terminal condition, or end-stage disease?</li>
-<li><strong>Aflac Decline</strong>&#160;– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
-<li><strong>Aflac Modified</strong>&#160;– Within the past year, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
-<li><strong>Aflac Standard</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
-<li><strong>Family Benefit Life Level</strong>&#160;– During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
-<li><strong>Liberty Bankers Life Modified</strong>&#160;– Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; angina (chest pain), any type of heart or circulatory surgery or disease, heart valve disorder, heart attack, or received a pacemaker or stent?</li>
-<li><strong>Liberty Bankers Life Preferred</strong>&#160;– Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
-<li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Decline</strong>&#160;– In the past 12 months, has the Proposed Insured been diagnosed by a licensed medical professional as having heart disease or heart surgery of any kind?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– In the past 2 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Coronary Artery Disease, Heart Attack, Coronary Artery Bypass Surgery, Angioplasty, Cardiomyopathy, irregular heart rhythm, Pacemaker or Valvular Heart Disease with surgical repair or replacement?</li>
-<li><strong>Trinity Life Decline</strong>&#160;– Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
-<li><strong>Trinity Life Decline</strong>&#160;– Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
-<li><strong>Trinity Life Level</strong>&#160;– During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
+<li><strong>Aetna Decline&#160;</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for congestive heart failure, pulmonary fibrosis, any terminal condition, or end-stage disease?</li>
+<li><strong>Aetna Decline&#160;</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
+<li><strong>Aetna Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
+<li><strong>Aetna Level&#160;</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
+<li><strong>Aflac Decline&#160;</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for congestive heart failure, pulmonary fibrosis, any terminal condition, or end-stage disease?</li>
+<li><strong>Aflac Decline</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for cerebral palsy, cystic fibrosis, muscular dystrophy, or un-operated heart defects?</li>
+<li><strong>Aflac Modified</strong>: Within the past year, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
+<li><strong>Aflac Standard</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive treatment for angina (chest pain), heart attack, cardiomyopathy, or any type of heart or circulatory procedure or surgery?</li>
+<li><strong>Family Benefit Life Decline</strong>: Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
+<li><strong>Family Benefit Life Decline</strong>: Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
+<li><strong>Family Benefit Life Level</strong>: During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for; angina (chest pain), any type of heart or circulatory surgery or disease, heart valve disorder, heart attack, or received a pacemaker or stent?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Decline</strong>: In the past 12 months, has the Proposed Insured been diagnosed by a licensed medical professional as having heart disease or heart surgery of any kind?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 2 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for; Coronary Artery Disease, Heart Attack, Coronary Artery Bypass Surgery, Angioplasty, Cardiomyopathy, irregular heart rhythm, Pacemaker or Valvular Heart Disease with surgical repair or replacement?</li>
+<li><strong>Trinity Life Decline</strong>: Have you ever been diagnosed by a medical professional with a terminal illness, end-stage disease, congestive heart failure, or cardiomyopathy?</li>
+<li><strong>Trinity Life Decline</strong>: Within the past 12 months, have you been diagnosed by a medical professional for, or hospitalized for, a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind to improve circulation to the heart or brain?</li>
+<li><strong>Trinity Life Level</strong>: During the past 24 months, have you been diagnosed, treated, tested positive for, or given medical advice by a medical professional for a heart attack, stroke, transient ischemic attack (TIA), angina, aneurysm, or had cardiac or circulatory surgery of any kind such as a pacemaker, heart valve replacement, bypass, angioplasty, or stent implant to improve circulation to the heart or brain?</li>
 </ul>
 
 <h3>Angina underwriting basics</h3>
@@ -93,16 +93,16 @@ sidebar: true
 <p>Angina results from reduced blood flow to the heart muscle due to <a href="/burial-insurance/coronary-artery-disease/" target="_blank" rel="noreferrer noopener">coronary artery disease</a>, which limits oxygen delivery during exertion and signals underlying cardiovascular instability that can affect underwriting and policy selection when these related issues are present.</p>
 
 <ul>
-<li><strong>Chest pain or pressure</strong> – Reduced blood flow causes discomfort during activity or stress, limiting exertion.</li>
-<li><strong>Exercise intolerance</strong> – Physical activity triggers symptoms that reduce stamina and work capacity.</li>
-<li><strong>Shortness of breath</strong> – Inadequate oxygen delivery to the heart increases breathing difficulty during exertion.</li>
-<li><strong>Fatigue</strong> – The heart works less efficiently, lowering overall energy levels.</li>
-<li><strong>Increased heart attack risk</strong> – Ongoing ischemia raises the chance of myocardial infarction.</li>
-<li><strong>Activity restrictions</strong> – Symptom-triggering movements require pacing and strain avoidance.</li>
-<li><strong>Medication dependence</strong> – Nitrates and other drugs may cause headaches, dizziness, or blood pressure drops.</li>
-<li><strong>Anxiety related to symptoms</strong> – Fear of chest pain or heart attack increases stress and activity avoidance.</li>
-<li><strong>Emergency care risk</strong> – Worsening angina often leads to urgent evaluations and hospital visits.</li>
-<li><strong>Reduced work reliability</strong> – Unpredictable symptoms interfere with consistent physical or high-stress tasks.</li>
+<li><strong>Chest pain or pressure</strong>: Reduced blood flow causes discomfort during activity or stress, limiting exertion.</li>
+<li><strong>Exercise intolerance</strong>: Physical activity triggers symptoms that reduce stamina and work capacity.</li>
+<li><strong>Shortness of breath</strong>: Inadequate oxygen delivery to the heart increases breathing difficulty during exertion.</li>
+<li><strong>Fatigue</strong>: The heart works less efficiently, lowering overall energy levels.</li>
+<li><strong>Increased heart attack risk</strong>: Ongoing ischemia raises the chance of myocardial infarction.</li>
+<li><strong>Activity restrictions</strong>: Symptom-triggering movements require pacing and strain avoidance.</li>
+<li><strong>Medication dependence</strong>: Nitrates and other drugs may cause headaches, dizziness, or blood pressure drops.</li>
+<li><strong>Anxiety related to symptoms</strong>: Fear of chest pain or heart attack increases stress and activity avoidance.</li>
+<li><strong>Emergency care risk</strong>: Worsening angina often leads to urgent evaluations and hospital visits.</li>
+<li><strong>Reduced work reliability</strong>: Unpredictable symptoms interfere with consistent physical or high-stress tasks.</li>
 </ul>
 
 <h2>Understanding angina policy types</h2>
@@ -121,7 +121,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

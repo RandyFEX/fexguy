@@ -42,19 +42,19 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with sleep apnea they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>– Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
-<li><strong>Aetna Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
-<li><strong>Aflac Decline</strong> – Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
-<li><strong>Aflac Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
-<li><strong>Family Benefit Life Decline</strong> – Are you currently, or within the past 6 months have you been, hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Guarantee Trust Life Graded</strong> – Do you require daily oxygen use (excluding when used with CPAP, after exercise, and for seasonal allergies), have an implanted defibrillator, received or been advised by a medical professional to receive an organ transplant or received dialysis within the LAST 24 MONTHS?</li>
-<li><strong>Liberty Bankers Life Decline </strong>– Within the last year, have you been confined to a hospital for more than 5 days total, been advised by a member of the medical profession to have surgery or hospitalization which you are still awaiting, used oxygen due to a medical condition, been unable to care for yourself or been bedridden at home or in a nursing home, hospice, long-term care, or assisted living facility?</li>
-<li><strong>Liberty Bankers Life Preferred</strong> – Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
-<li><strong>Mutual of Omaha Decline</strong> – Is the Proposed Insured currently requiring any of the following other than fractures, bone or joint surgery, including replacement: wheelchair, electric scooter, oxygen equipment to assist breathing (excluding use for sleep apnea) or defibrillator?</li>
-<li><strong>Mutual of Omaha Level</strong> – Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Chronic Lung Disease, including Chronic Obstructive Pulmonary Disease (COPD), Chronic Bronchitis, emphysema, or Sarcoidosis?</li>
-<li><strong>Trinity Life Decline</strong> – Are you currently, or within the past 6 months have you been hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Decline</strong>: Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
+<li><strong>Aetna Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
+<li><strong>Aflac Decline</strong>: Within the past year, have you used or been advised to use oxygen equipment to assist with breathing, excluding CPAP for sleep apnea, or been advised to have kidney dialysis?</li>
+<li><strong>Aflac Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema, or any other chronic respiratory condition?</li>
+<li><strong>Family Benefit Life Decline</strong>: Are you currently, or within the past 6 months have you been, hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Guarantee Trust Life Graded</strong>: Do you require daily oxygen use (excluding when used with CPAP, after exercise, and for seasonal allergies), have an implanted defibrillator, received or been advised by a medical professional to receive an organ transplant or received dialysis within the LAST 24 MONTHS?</li>
+<li><strong>Liberty Bankers Life Decline </strong>: Within the last year, have you been confined to a hospital for more than 5 days total, been advised by a member of the medical profession to have surgery or hospitalization which you are still awaiting, used oxygen due to a medical condition, been unable to care for yourself or been bedridden at home or in a nursing home, hospice, long-term care, or assisted living facility?</li>
+<li><strong>Liberty Bankers Life Preferred</strong>: Have you, the Proposed Insured, by a member of the medical profession, ever been diagnosed with, or received, or been advised to receive treatment or medication for Chronic Obstructive Pulmonary Disease (COPD), chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Is the Proposed Insured currently requiring any of the following other than fractures, bone or joint surgery, including replacement: wheelchair, electric scooter, oxygen equipment to assist breathing (excluding use for sleep apnea) or defibrillator?</li>
+<li><strong>Mutual of Omaha Level</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Chronic Lung Disease, including Chronic Obstructive Pulmonary Disease (COPD), Chronic Bronchitis, emphysema, or Sarcoidosis?</li>
+<li><strong>Trinity Life Decline</strong>: Are you currently, or within the past 6 months have you been hospitalized, bedridden, using oxygen to assist breathing, confined to a wheelchair, in a nursing home or hospice, receiving home health care, or on dialysis?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Sleep apnea underwriting basics</h3>
@@ -88,16 +88,16 @@ sidebar: true
 <p>Sleep apnea causes repeated breathing interruptions during sleep that lower oxygen levels and strain the heart, brain, and metabolic systems, and those related complications can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Chronic daytime fatigue</strong> – Repeated sleep disruption prevents restorative rest and reduces work capacity and alertness.</li>
-<li><strong>Cardiovascular disease</strong> – Oxygen drops increase risk of high blood pressure, heart attack, heart failure, and arrhythmias.</li>
-<li><strong>Stroke risk</strong> – Intermittent hypoxia and blood pressure spikes raise the likelihood of stroke and TIA.</li>
-<li><strong>Cognitive impairment</strong> – Poor sleep quality affects memory, concentration, reaction time, and decision-making.</li>
-<li><strong>Mood disorders</strong> – Depression, anxiety, and irritability increase due to chronic sleep deprivation.</li>
-<li><strong>Metabolic dysfunction</strong> – Insulin resistance and weight gain raise diabetes risk and worsen existing metabolic disease.</li>
-<li><strong>Morning headaches</strong> – Overnight oxygen deprivation and carbon dioxide buildup trigger frequent headaches.</li>
-<li><strong>Work and driving impairment</strong> – Excessive sleepiness increases accident risk and limits job performance.</li>
-<li><strong>Sexual dysfunction</strong> – Hormonal disruption and fatigue reduce libido and sexual function.</li>
-<li><strong>Reduced life expectancy</strong> – Untreated sleep apnea increases long-term cardiovascular and mortality risk.</li>
+<li><strong>Chronic daytime fatigue</strong>: Repeated sleep disruption prevents restorative rest and reduces work capacity and alertness.</li>
+<li><strong>Cardiovascular disease</strong>: Oxygen drops increase risk of high blood pressure, heart attack, heart failure, and arrhythmias.</li>
+<li><strong>Stroke risk</strong>: Intermittent hypoxia and blood pressure spikes raise the likelihood of stroke and TIA.</li>
+<li><strong>Cognitive impairment</strong>: Poor sleep quality affects memory, concentration, reaction time, and decision-making.</li>
+<li><strong>Mood disorders</strong>: Depression, anxiety, and irritability increase due to chronic sleep deprivation.</li>
+<li><strong>Metabolic dysfunction</strong>: Insulin resistance and weight gain raise diabetes risk and worsen existing metabolic disease.</li>
+<li><strong>Morning headaches</strong>: Overnight oxygen deprivation and carbon dioxide buildup trigger frequent headaches.</li>
+<li><strong>Work and driving impairment</strong>: Excessive sleepiness increases accident risk and limits job performance.</li>
+<li><strong>Sexual dysfunction</strong>: Hormonal disruption and fatigue reduce libido and sexual function.</li>
+<li><strong>Reduced life expectancy</strong>: Untreated sleep apnea increases long-term cardiovascular and mortality risk.</li>
 </ul>
 
 <h2>Understanding sleep apnea policy types</h2>
@@ -116,7 +116,7 @@ sidebar: true
 
 <p>Waiting to buy insurance is like trying to catch a train that has already left the station: it only gets more expensive. Rates depend on your age and gender, and since women statistically live longer, they pay slightly less. Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Oxford Life Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Oxford Life Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -68,19 +68,19 @@ sidebar: true
 
 <h2 id="pros-of-oxford-life-burial-insurance"><strong>Pros of Oxford Life burial insurance</strong></h2>
 
-<p><strong>First-day coverage – </strong>Assurance and Assurance One both have first-day coverage.</p>
+<p><strong>First-day coverage: </strong>Assurance and Assurance One both have first-day coverage.</p>
 
-<p><strong>Immediate decision</strong> – you will instantly know if you qualify after submitting your application.</p>
+<p><strong>Immediate decision</strong>: you will instantly know if you qualify after submitting your application.</p>
 
-<p><strong>Competitively priced</strong> – affordable premiums</p>
+<p><strong>Competitively priced</strong>: affordable premiums</p>
 
 <h2 id="cons-of-oxford-life-burial-insurance"><strong>Cons of Oxford Life burial insurance</strong></h2>
 
-<p><strong>Strict underwriting </strong>– only healthier people can qualify for this coverage</p>
+<p><strong>Strict underwriting </strong>: only healthier people can qualify for this coverage</p>
 
-<p><strong>No backup plan</strong> – we found no graded, modified, or guaranteed issue plan from Oxford, so if you don’t qualify, you’ll need another company</p>
+<p><strong>No backup plan</strong>: we found no graded, modified, or guaranteed issue plan from Oxford, so if you don’t qualify, you’ll need another company</p>
 
-<p><strong>Not available online –</strong> insurance agents must visit your home to sell this insurance.</p>
+<p><strong>Not available online:</strong> insurance agents must visit your home to sell this insurance.</p>
 
 <h2 id="oxford-life-burial-insurance-products"><br><strong>Oxford Life burial insurance products</strong></h2>
 
@@ -90,7 +90,7 @@ sidebar: true
 
 <p>Assurance One, it’s a single-premium policy, so you need to pay one premium to fund the policy.</p>
 
-<p><strong>ASSURANCE – </strong> <strong>Policy Features</strong><br>
+<p><strong>ASSURANCE: </strong> <strong>Policy Features</strong><br>
 </p>
 
 <table class="table-wrap" id="tablepress-137">
@@ -135,15 +135,15 @@ sidebar: true
 
 <p>Assurance burial insurance comes with immediate first-day coverage, which means the benefit payout will be 100% of the face amount, whether you die one day or three years after buying the policy.</p>
 
-<p><br><strong>ASSURANCE ONE </strong> – <strong>Single-Premium Burial Insurance</strong><br>“Assurance One” is a single premium whole life insurance policy offered by Oxford Life. Single premium life (SPL) requires one lump-sum payment for the coverage to be fully paid. In return, you get a guaranteed full death benefit that will pay your beneficiary when you pass away.</p>
+<p><br><strong>ASSURANCE ONE </strong>: <strong>Single-Premium Burial Insurance</strong><br>“Assurance One” is a single premium whole life insurance policy offered by Oxford Life. Single premium life (SPL) requires one lump-sum payment for the coverage to be fully paid. In return, you get a guaranteed full death benefit that will pay your beneficiary when you pass away.</p>
 
 <p>One of the most significant advantages of Assurance One is that the cash value builds up quickly because your policy is fully funded. <br><br>Another notable benefit of Oxford Life’s Assurance One is that your single premium will give you first-day full coverage.</p>
 
 <h2 id="oxford-life-burial-insurance-riders"><br><strong>Oxford Life burial insurance riders</strong></h2>
 
 <ul>
-<li><strong>Terminal Illness Rider</strong> – paid in when a physician has diagnosed you to have a terminal illness that may cause death within 12 months.</li>
-<li><strong>Common Carrier Rider</strong> – paid in the event of accidental death while riding as a fare-paying passenger on a common carrier conveyance (plane, train, bus, or Uber)</li>
+<li><strong>Terminal Illness Rider</strong>: paid in when a physician has diagnosed you to have a terminal illness that may cause death within 12 months.</li>
+<li><strong>Common Carrier Rider</strong>: paid in the event of accidental death while riding as a fare-paying passenger on a common carrier conveyance (plane, train, bus, or Uber)</li>
 <li>Nursing Home Rider: This benefit allows you to collect a monthly benefit if you are confined to a nursing home and expected to stay there forever. The amount you can get determines how many years the policy is in force before you make a claim.</li>
 <li>Chronic Illness Rider: This benefit allows you to collect a monthly benefit if ever you were diagnosed with a chronic illness. Your monthly benefit amount equals the lesser of $2,000 or 1% of your death benefit.</li>
 </ul>
@@ -152,13 +152,13 @@ sidebar: true
 
 <p><strong>Oxford Life burial insurance products make the most sense in these instances:</strong></p>
 
-<p><strong>Oxford Life is diabetic-friendly</strong> – as long as you do not have diabetes before age 30, you will qualify for coverage even if you take insulin.</p>
+<p><strong>Oxford Life is diabetic-friendly</strong>: as long as you do not have diabetes before age 30, you will qualify for coverage even if you take insulin.</p>
 
-<p><strong>Liberal on cancer</strong> – you will qualify for coverage if you’ve had no cancer or treatment for two years or longer.</p>
+<p><strong>Liberal on cancer</strong>: you will qualify for coverage if you’ve had no cancer or treatment for two years or longer.</p>
 
-<p><strong>Liberal on some heart issues</strong> – heart attacks, stents, and strokes would qualify for coverage if they occurred for two years or longer. Atrial fibrillation is not an issue.</p>
+<p><strong>Liberal on some heart issues</strong>: heart attacks, stents, and strokes would qualify for coverage if they occurred for two years or longer. Atrial fibrillation is not an issue.</p>
 
-<p><strong>Marijuana use</strong> – is not an issue, and you will still qualify for first-day coverage.</p>
+<p><strong>Marijuana use</strong>: is not an issue, and you will still qualify for first-day coverage.</p>
 
 <p>Oxford Life also has competitive prices when it comes to burial insurance, especially if you are healthy and can qualify for their plans. </p>
 
@@ -189,7 +189,7 @@ sidebar: true
 <li>Do you currently require human assistance or supervision with any specified activities such as: eating, bathing<gwmw>, ,</gwmw> bathing, transferring from bed to chair, walking or maintaining continence? (Yes – No)</li>
 </ol>
 
-<p><strong>STANDARD SECTION</strong> – If any question in this section is answered “Yes,” it may not necessarily exclude coverage.</p>
+<p><strong>STANDARD SECTION</strong>: If any question in this section is answered “Yes,” it may not necessarily exclude coverage.</p>
 
 <p><strong>Other eligibility considerations:</strong></p>
 
@@ -680,15 +680,15 @@ sidebar: true
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>
 
 <h2 class="as-h5">2 comments</h2>
@@ -704,7 +704,7 @@ June 15, 2021 at 10:54 pm
 <div class="comment-replies">
 <div class="comment" id="comment-11303">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Michael – Here is our buyer's guide page for you to check out. <a href="/buyers-guide/" rel="ugc">https://funeralfunds.com/buyers-guide/</a></p>
+<p>Michael: Here is our buyer's guide page for you to check out. <a href="/buyers-guide/" rel="ugc">https://funeralfunds.com/buyers-guide/</a></p>
 <div class="comment-meta">
 June 16, 2021 at 3:18 pm                    
 </div>

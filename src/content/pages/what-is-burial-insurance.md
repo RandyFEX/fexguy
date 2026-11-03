@@ -69,22 +69,22 @@ sidebar: true
 
 <p><strong>HOW DOES BURIAL INSURANCE WORK?</strong></p>
 
-<p><strong><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong> – final expense insurance plans have simplified underwriting, which does not require you to take a physical or medical exam. You will only need to answer some health questions. The guaranteed issue policy will not even require you to answer any health questions.</p>
+<p><strong><a href="/burial-insurance/life-insurance-no-exam/" target="_blank" rel="noreferrer noopener">No medical exam</a></strong>: final expense insurance plans have simplified underwriting, which does not require you to take a physical or medical exam. You will only need to answer some health questions. The guaranteed issue policy will not even require you to answer any health questions.</p>
 
-<p><strong><a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent coverage</a></strong> – Coverage will last a lifetime and won’t expire at age 80. The insurance company can’t cancel your policy because of your health conditions or advancing age. </p>
+<p><strong><a href="/burial-insurance/is-burial-insurance-permanent/" target="_blank" rel="noreferrer noopener">Permanent coverage</a></strong>: Coverage will last a lifetime and won’t expire at age 80. The insurance company can’t cancel your policy because of your health conditions or advancing age. </p>
 
 <p><strong>CAUTION! Burial insurance is not a term life insurance policy that increases in price every 5 years and expires after you reach age 80! Be careful of these policies you see advertised on TV, in junk mail, and with credit unions!</strong></p>
 
-<p><strong>Level premiums</strong> –
+<p><strong>Level premiums</strong>:
 the amount you pay will stay the same for life. Your premiums are guaranteed
 never to increase because they are locked in at the age when you bought the
 policy.</p>
 
-<p><strong>Fix death benefit</strong>
-– your death benefit amount will never decrease for any reason. Your
+<p><strong>Fix death benefit</strong>:
+your death benefit amount will never decrease for any reason. Your
 beneficiaries will receive your death benefit when you pass away.</p>
 
-<p><strong>Builds cash value</strong> – your whole life insurance allows you to build up cash value with every payment you make. You can borrow from your cash value or use it to pay your premiums.</p>
+<p><strong>Builds cash value</strong>: your whole life insurance allows you to build up cash value with every payment you make. You can borrow from your cash value or use it to pay your premiums.</p>
 
 <h2 id="uniqueness-of-burial-insurance"> <br><strong>Burial insurance is unique in three ways: </strong></h2>
 
@@ -535,7 +535,7 @@ May 15, 2022 at 7:07 pm
 <div class="comment-replies">
 <div class="comment" id="comment-21228">
 <h3 class="comment-name as-h6">Final Expense Guy </h3>                                            
-<p>Mildred – We are happy to help you with this. Visit this page to get a quote. <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
+<p>Mildred: We are happy to help you with this. Visit this page to get a quote. <a href="/free-quote/" rel="ugc">https://funeralfunds.com/free-quote/</a></p>
 <div class="comment-meta">
 May 18, 2022 at 3:09 pm                    
 </div>

@@ -69,16 +69,16 @@ sidebar: true
 <p>Alcohol abuse and drug abuse disrupt normal brain chemistry and damage vital organs over time, which impairs judgment, metabolism, cardiovascular function, and immune response, and can affect underwriting and policy selection when these related complications are present.</p>
 
 <ul>
-<li><strong>Liver disease</strong> – Toxic exposure damages liver cells and leads to fatty liver, hepatitis, cirrhosis, or liver failure.</li>
-<li><strong>Cardiovascular problems</strong> – Substance use increases the risk of high blood pressure, arrhythmias, heart attack, and stroke.</li>
-<li><strong>Cognitive impairment</strong> – Long-term use affects memory, focus, and decision-making ability.</li>
-<li><strong>Mental health disorders</strong> – Depression, anxiety, psychosis, and mood instability frequently worsen with use.</li>
-<li><strong>Increased injury risk</strong> – Impaired coordination and judgment raise accident and trauma risk.</li>
-<li><strong>Withdrawal complications</strong> – Sudden cessation can cause seizures, hallucinations, or life-threatening instability.</li>
-<li><strong>Immune suppression</strong> – Chronic use weakens immune defenses and increases infection frequency.</li>
-<li><strong>Gastrointestinal damage</strong> – Substance use causes ulcers, pancreatitis, bleeding, and digestive dysfunction.</li>
-<li><strong>Work and social impairment</strong> – Attendance issues, job loss, and relationship strain are common.</li>
-<li><strong>Elevated mortality risk</strong> – Long-term abuse significantly increases the risk of early death from disease or overdose.</li>
+<li><strong>Liver disease</strong>: Toxic exposure damages liver cells and leads to fatty liver, hepatitis, cirrhosis, or liver failure.</li>
+<li><strong>Cardiovascular problems</strong>: Substance use increases the risk of high blood pressure, arrhythmias, heart attack, and stroke.</li>
+<li><strong>Cognitive impairment</strong>: Long-term use affects memory, focus, and decision-making ability.</li>
+<li><strong>Mental health disorders</strong>: Depression, anxiety, psychosis, and mood instability frequently worsen with use.</li>
+<li><strong>Increased injury risk</strong>: Impaired coordination and judgment raise accident and trauma risk.</li>
+<li><strong>Withdrawal complications</strong>: Sudden cessation can cause seizures, hallucinations, or life-threatening instability.</li>
+<li><strong>Immune suppression</strong>: Chronic use weakens immune defenses and increases infection frequency.</li>
+<li><strong>Gastrointestinal damage</strong>: Substance use causes ulcers, pancreatitis, bleeding, and digestive dysfunction.</li>
+<li><strong>Work and social impairment</strong>: Attendance issues, job loss, and relationship strain are common.</li>
+<li><strong>Elevated mortality risk</strong>: Long-term abuse significantly increases the risk of early death from disease or overdose.</li>
 </ul>
 
 <h2>Understanding alcohol or drug abuse policy types</h2>
@@ -97,7 +97,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your rates can vary based on which A-rated carrier is best for your situation.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

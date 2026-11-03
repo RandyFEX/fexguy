@@ -44,12 +44,12 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which applicants with Parkinson’s Disease they may approve.</p>
 
 <ul>
-<li><strong>Aetna Standard Level</strong> – Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
-<li><strong>Aflac Standard Level </strong>– Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
-<li><strong>Family Benefit Life Level</strong> – Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
-<li><strong>Liberty Bankers Life Modified</strong> – Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for multiple sclerosis, Parkinson’s disease, or required the use of a walker, wheelchair, or electric scooter due to chronic illness or disease?</li>
-<li><strong>Mutual of Omaha Level </strong>– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
-<li><strong>Trinity Life Level </strong>– Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Aetna Standard Level</strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
+<li><strong>Aflac Standard Level </strong>: Have you ever been diagnosed with, received, or been advised to receive treatment or medication for parkinson’s disease, multiple sclerosis, or systemic lupus erythematosus (SLE)?</li>
+<li><strong>Family Benefit Life Level</strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
+<li><strong>Liberty Bankers Life Modified</strong>: Within the past 2 years have you, the Proposed Insured, been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for multiple sclerosis, Parkinson’s disease, or required the use of a walker, wheelchair, or electric scooter due to chronic illness or disease?</li>
+<li><strong>Mutual of Omaha Level </strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Bipolar Depression, Schizophrenia, Parkinson’s Disease or Multiple Sclerosis?</li>
+<li><strong>Trinity Life Level </strong>: Have you ever been diagnosed as having multiple sclerosis, epilepsy, schizophrenia, Parkinson’s disease, nephropathy, neuropathy, retinopathy, chronic kidney disease or failure, systemic lupus, hepatitis B or C, cirrhosis of the liver, liver disease, liver failure, or lung impairments including chronic obstructive pulmonary disease (COPD), chronic asthma, chronic bronchitis, emphysema, or fibrosis?</li>
 </ul>
 
 <h3>Parkinson’s disease underwriting basics</h3>
@@ -87,16 +87,16 @@ sidebar: true
 <p>Parkinson’s disease causes progressive loss of dopamine-producing brain cells, leading to worsening motor and non-motor symptoms that affect movement, cognition, and autonomic function, and those related complications can affect underwriting decisions and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Tremors and rigidity</strong> – Involuntary shaking and muscle stiffness interfere with fine motor control and daily tasks.</li>
-<li><strong>Bradykinesia</strong> – Slowed movement reduces reaction time, walking speed, and work efficiency.</li>
-<li><strong>Balance and gait problems</strong> – Postural instability increases fall and injury risk.</li>
-<li><strong>Speech and swallowing difficulties</strong> – Soft speech and dysphagia affect communication and nutrition.</li>
-<li><strong>Cognitive impairment</strong> – Memory loss and slowed thinking may progress to dementia.</li>
-<li><strong>Autonomic dysfunction</strong> – Blood pressure drops, constipation, and bladder issues affect daily stability.</li>
-<li><strong>Sleep disorders</strong> – REM behavior disorder and insomnia disrupt rest and recovery.</li>
-<li><strong>Depression and anxiety</strong> – Mood changes are common due to neurological and chemical changes.</li>
-<li><strong>Medication complications</strong> – Long-term treatment can cause dyskinesias and symptom fluctuations.</li>
-<li><strong>Progressive loss of independence</strong> – Worsening symptoms increase reliance on assistance over time.</li>
+<li><strong>Tremors and rigidity</strong>: Involuntary shaking and muscle stiffness interfere with fine motor control and daily tasks.</li>
+<li><strong>Bradykinesia</strong>: Slowed movement reduces reaction time, walking speed, and work efficiency.</li>
+<li><strong>Balance and gait problems</strong>: Postural instability increases fall and injury risk.</li>
+<li><strong>Speech and swallowing difficulties</strong>: Soft speech and dysphagia affect communication and nutrition.</li>
+<li><strong>Cognitive impairment</strong>: Memory loss and slowed thinking may progress to dementia.</li>
+<li><strong>Autonomic dysfunction</strong>: Blood pressure drops, constipation, and bladder issues affect daily stability.</li>
+<li><strong>Sleep disorders</strong>: REM behavior disorder and insomnia disrupt rest and recovery.</li>
+<li><strong>Depression and anxiety</strong>: Mood changes are common due to neurological and chemical changes.</li>
+<li><strong>Medication complications</strong>: Long-term treatment can cause dyskinesias and symptom fluctuations.</li>
+<li><strong>Progressive loss of independence</strong>: Worsening symptoms increase reliance on assistance over time.</li>
 </ul>
 
 <h2>Understanding policy types</h2>
@@ -115,7 +115,7 @@ sidebar: true
 
 <p>Here are some preferred rates, but your final cost depends on which A-rated carrier matches your specific health history.</p>
 
-<h3>Aflac standard life insurance rates age 50–80</h3>
+<h3>Aflac standard life insurance rates age 50 to 80</h3>
 
 <table>
 <thead>

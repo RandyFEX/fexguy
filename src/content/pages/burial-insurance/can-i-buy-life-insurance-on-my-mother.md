@@ -170,15 +170,15 @@ sidebar: true
 <li>The beneficiary</li>
 </ul>
 
-<p><strong>The insured</strong> – The insured is the person covered by the life insurance; her death will result in a death benefit payout. In this instance, it will be your mother.</p>
+<p><strong>The insured</strong>: The insured is the person covered by the life insurance; her death will result in a death benefit payout. In this instance, it will be your mother.</p>
 
-<p><strong>The Owner</strong> – The policy owner holds the rights to the life insurance contract and has the right to make changes to the policy, such as changing the beneficiary, transferring ownership, lowering death benefits, adding or deleting riders, and requesting a rating change for the insured.</p>
+<p><strong>The Owner</strong>: The policy owner holds the rights to the life insurance contract and has the right to make changes to the policy, such as changing the beneficiary, transferring ownership, lowering death benefits, adding or deleting riders, and requesting a rating change for the insured.</p>
 
 <p>The insurance company will require you to submit proof of insurable interest if you are the policy owner.</p>
 
-<p><strong>The payor</strong> – is the person who will be paying the premium. The payor is also considered the owner of the policy.</p>
+<p><strong>The payor</strong>: is the person who will be paying the premium. The payor is also considered the owner of the policy.</p>
 
-<p><strong>The beneficiary</strong> – is the person designated to receive the death benefit payout. You can be the beneficiary of your mom’s policy.</p>
+<p><strong>The beneficiary</strong>: is the person designated to receive the death benefit payout. You can be the beneficiary of your mom’s policy.</p>
 
 <p>It’s important to set up your mom’s policy appropriately. There’s a danger of getting into a tax trap if your mom’s life insurance is not set up properly. The death benefit payout is tax-free unless all the parties (insured, owner, and beneficiary) involved in life insurance are different people. It’s called the Goodman Triangle.</p>
 

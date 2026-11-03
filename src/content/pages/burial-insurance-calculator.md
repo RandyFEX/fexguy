@@ -115,16 +115,16 @@ sidebar: true
 <h2 id="burial-insurance-features"><br><strong>Best features of burial insurance</strong> </h2>
 
 <ol>
-<li><strong>Instant approval –</strong>&#160;There is fast approval for burial insurance. Most insurance companies offer instant approval over the phone.</li>
-<li><strong>Lenient underwriting</strong> – If you have pre-existing health conditions such as diabetes, high blood pressure, or asthma, you will still qualify for burial insurance. Even no health questions are asked if you choose to go for guaranteed issue life insurance.</li>
-<li>No medical exam –&#160;That’s right…no medical exam is ever needed! You only have to answer a few easy health questions to qualify for the best rates.</li>
-<li>No health questions –&#160;Some burial insurance policies do not even ask health questions. Guaranteed acceptance of burial insurance policies is ideal for people with severe health conditions or criminal or felony histories.</li>
-<li>The coverage is permanent –&#160;Burial policies are whole life policies with locked-in rates and coverage forever. You are covered&#160;for your whole life, and the premiums will never increase in the future (beware of some policies advertised on TV that expire after you pass 80 years of age).</li>
-<li>It has a cash value component –&#160;Burial insurance for seniors are whole life insurance policies that accumulate a cash value that grows over time. The cash value can be used to pay for your premiums and act as a safety net to ensure your policy will never lapse from nonpayment.</li>
-<li>Fast payout –&#160;There is a quicker claims payout with burial insurance. Your claim will be paid within a week once the proper paperwork is received.</li>
-<li>Small value options –&#160;Burial policies for seniors are offered at small face value. You can buy as little as $2,000, so you can buy as much or as little as you need.</li>
-<li>Portability –&#160;Your loved ones will receive a payout upon your death, no matter where you live in the future. Your beneficiary will receive 100% of the face amount of the policy tax-free, and they can use it for final expenses, medical bills, or other debts.</li>
-<li>Many companies offer burial policies for seniors –&#160;More and more insurance companies are offering burial insurance because more than 10,000 people turn 65 daily. All those insurance companies are competing for your business which drives the prices of premiums down.</li>
+<li><strong>Instant approval: </strong>&#160;There is fast approval for burial insurance. Most insurance companies offer instant approval over the phone.</li>
+<li><strong>Lenient underwriting</strong>: If you have pre-existing health conditions such as diabetes, high blood pressure, or asthma, you will still qualify for burial insurance. Even no health questions are asked if you choose to go for guaranteed issue life insurance.</li>
+<li>No medical exam:&#160;That’s right…no medical exam is ever needed! You only have to answer a few easy health questions to qualify for the best rates.</li>
+<li>No health questions:&#160;Some burial insurance policies do not even ask health questions. Guaranteed acceptance of burial insurance policies is ideal for people with severe health conditions or criminal or felony histories.</li>
+<li>The coverage is permanent:&#160;Burial policies are whole life policies with locked-in rates and coverage forever. You are covered&#160;for your whole life, and the premiums will never increase in the future (beware of some policies advertised on TV that expire after you pass 80 years of age).</li>
+<li>It has a cash value component:&#160;Burial insurance for seniors are whole life insurance policies that accumulate a cash value that grows over time. The cash value can be used to pay for your premiums and act as a safety net to ensure your policy will never lapse from nonpayment.</li>
+<li>Fast payout:&#160;There is a quicker claims payout with burial insurance. Your claim will be paid within a week once the proper paperwork is received.</li>
+<li>Small value options:&#160;Burial policies for seniors are offered at small face value. You can buy as little as $2,000, so you can buy as much or as little as you need.</li>
+<li>Portability:&#160;Your loved ones will receive a payout upon your death, no matter where you live in the future. Your beneficiary will receive 100% of the face amount of the policy tax-free, and they can use it for final expenses, medical bills, or other debts.</li>
+<li>Many companies offer burial policies for seniors:&#160;More and more insurance companies are offering burial insurance because more than 10,000 people turn 65 daily. All those insurance companies are competing for your business which drives the prices of premiums down.</li>
 </ol>
 
 <h2 id="when-to-buy-burial-insurance"><br><strong>When do you need to buy burial insurance?</strong></h2>

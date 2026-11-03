@@ -9,7 +9,7 @@ source: "live"
 sidebar: true
 ---
 
-<h1>Liberty Bankers Burial Insurance Review – Pros &amp; Cons</h1>
+<h1>Liberty Bankers Burial Insurance Review: Pros &amp; Cons</h1>
 
 <picture><source type="image/avif" srcset="/images/logo/final-expense-guy-logo-400.avif 400w, /images/logo/final-expense-guy-logo-800.avif 800w" sizes="300px"><img fetchpriority="high" decoding="async" loading="eager" width="300" height="37" src="/images/logo/final-expense-guy-logo-400.webp" srcset="/images/logo/final-expense-guy-logo-400.webp 400w, /images/logo/final-expense-guy-logo-800.webp 800w" sizes="300px" alt="Final Expense Guy"></picture>
 
@@ -81,7 +81,7 @@ sidebar: true
 </thead>
 <tbody>
 <tr>
-<td>Issue Ages</td><td>18–80</td>
+<td>Issue Ages</td><td>18 to 80</td>
 </tr>
 <tr>
 <td>Minimum Face Amount</td><td>$3,000</td>
@@ -107,7 +107,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>#1 – SIMPL PREFERRED – First-Day Coverage</strong></p>
+<p><strong>#1: SIMPL PREFERRED: First-Day Coverage</strong></p>
 
 <p>SIMPL Preferred is the most affordable plan for people in good to average health.</p>
 
@@ -117,13 +117,13 @@ sidebar: true
 
 <p>A unique feature of this plan is the children’s benefit rider or the grandchild rider.</p>
 
-<p><br><strong>#2 – SIMPL STANDARD – First-Day Coverage</strong></p>
+<p><br><strong>#2: SIMPL STANDARD: First-Day Coverage</strong></p>
 
 <p>SIMPL Standard is the second-tier plan for people with minor health issues. This plan also offers first-day coverage with no waiting period. </p>
 
 <p>The underwriting is more relaxed. Many health conditions accepted for the SIMPLE STANDARD would have a 2-year waiting period with other companies.</p>
 
-<p><br><strong>#3 – MODIFIED WHOLE LIFE – Three-year Waiting Period Plan</strong></p>
+<p><br><strong>#3: MODIFIED WHOLE LIFE: Three-year Waiting Period Plan</strong></p>
 
 <p>The modified insurance plan is offered to people with major health issues. However, this plan comes with a three-year waiting period.</p>
 
@@ -132,7 +132,7 @@ sidebar: true
 <p><strong>FEATURES OF MODIFIED WHOLE</strong></p>
 
 <ul>
-<li>Issue ages: 40–80, age of last birthday</li>
+<li>Issue ages: 40 to 80, age of last birthday</li>
 <li>Minimum face amount: $1,000</li>
 <li>Maximum face amount: $20,000</li>
 <li>3-year graded death benefit</li>
@@ -168,7 +168,7 @@ sidebar: true
 
 <h2 id="pros-&-cons"><strong>What are the pros &amp; cons of Liberty Bankers insurance?</strong></h2>
 
-<h3><strong>#1 – SIMPL preferred</strong></h3>
+<h3><strong>#1: SIMPL preferred</strong></h3>
 
 <p><strong>PROS</strong></p>
 
@@ -185,7 +185,7 @@ sidebar: true
 <li>The underwriting is strict for some health issues.</li>
 </ul>
 
-<h3># 2 – SIMPL standard</h3>
+<h3># 2: SIMPL standard</h3>
 
 <p><strong>PROS</strong></p>
 
@@ -202,7 +202,7 @@ sidebar: true
 <li>Higher premium than the SIMPL preferred plan</li>
 </ul>
 
-<h3>#3 – modified whole life</h3>
+<h3>#3: modified whole life</h3>
 
 <p><strong>PROS</strong></p>
 
@@ -361,7 +361,7 @@ sidebar: true
 
 <p>Liberty Bankers rates are based on your age, gender, health, coverage amount, and the state you live in at the time of application.</p>
 
-<p><strong>LIBERTY BANKERS SIMPL STANDARD – FEMALE</strong></p>
+<p><strong>LIBERTY BANKERS SIMPL STANDARD: FEMALE</strong></p>
 
 <table class="table-wrap" id="tablepress-65">
 <thead>
@@ -461,7 +461,7 @@ sidebar: true
 </tbody>
 </table>
 
-<p><strong>LIBERTY BANKERS SIMPL STANDARD – MALE</strong></p>
+<p><strong>LIBERTY BANKERS SIMPL STANDARD: MALE</strong></p>
 
 <table class="table-wrap" id="tablepress-66">
 <thead>
@@ -713,13 +713,13 @@ Here are some common terms people use when searching for, or describing Liberty 
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>

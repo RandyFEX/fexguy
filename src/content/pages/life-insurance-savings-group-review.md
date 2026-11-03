@@ -59,11 +59,11 @@ sidebar: true
 <h2 id="what’s-wrong-with-life-insurance-savings-group"><strong>What’s wrong with the final expense insurance offered by Life Insurance Savings Group?</strong></h2>
 
 <ol>
-<li><strong>Their ads push one insurance product</strong> – Life Insurance Savings Group’s TV commercials are selling guaranteed acceptance life insurance. This limits your options, is massively more expensive, and doesn’t allow you to compare rates and coverage from different companies.</li>
-<li><strong>Two-year waiting period</strong> – Guaranteed acceptance life insurance has a two-year waiting period. If you die of natural causes within the first two years of the policy, your beneficiaries will not receive the death benefit, only your premiums back plus an additional amount set by the contract.</li>
-<li><strong>Most people will qualify with a</strong> <strong>first-day coverage</strong> – People with high blood pressure, diabetes, or obesity can still qualify for a first-day coverage plan at Funeral Funds or Funeral Funds. First-day coverage plan rates will always be lower than guaranteed acceptance life insurance.</li>
-<li><strong>Their premium claim of $1 a day is stupid</strong> – The premium for a policy with $25,000 in coverage will NEVER be less than a dollar a day for the average person. </li>
-<li><strong>Limited option</strong> – Life Insurance Savings Group’s TV ads sell a guaranteed acceptance plan from AIG. You have limited options and cannot compare rates or coverage from different companies.</li>
+<li><strong>Their ads push one insurance product</strong>: Life Insurance Savings Group’s TV commercials are selling guaranteed acceptance life insurance. This limits your options, is massively more expensive, and doesn’t allow you to compare rates and coverage from different companies.</li>
+<li><strong>Two-year waiting period</strong>: Guaranteed acceptance life insurance has a two-year waiting period. If you die of natural causes within the first two years of the policy, your beneficiaries will not receive the death benefit, only your premiums back plus an additional amount set by the contract.</li>
+<li><strong>Most people will qualify with a</strong> <strong>first-day coverage</strong>: People with high blood pressure, diabetes, or obesity can still qualify for a first-day coverage plan at Funeral Funds or Funeral Funds. First-day coverage plan rates will always be lower than guaranteed acceptance life insurance.</li>
+<li><strong>Their premium claim of $1 a day is stupid</strong>. The premium for a policy with $25,000 in coverage will NEVER be less than a dollar a day for the average person. </li>
+<li><strong>Limited option</strong>: Life Insurance Savings Group’s TV ads sell a guaranteed acceptance plan from AIG. You have limited options and cannot compare rates or coverage from different companies.</li>
 </ol>
 
 <h2 id="what-is-life-insurance-savings-group"><br><strong>What is Life Insurance Savings Group?</strong></h2>
@@ -159,13 +159,13 @@ sidebar: true
 <h2 class="as-h5">Keep reading</h2>
 
 <div><a href="/aarp-life-insurance-review/">
-<h3 class="as-h5">AARP life insurance review – is it worth it?</h3>
+<h3 class="as-h5">AARP life insurance review: is it worth it?</h3>
 </a>  <a href="/lincoln-heritage-funeral-advantage-review/">
-<h3 class="as-h5">Lincoln Heritage Funeral Advantage review – worst insurance ever?</h3>
+<h3 class="as-h5">Lincoln Heritage Funeral Advantage review: worst insurance ever?</h3>
 </a>  <a href="/trustage-life-insurance-review/">
-<h3 class="as-h5">TruStage burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">TruStage burial insurance review: pros &amp; cons</h3>
 </a>  <a href="/trustage-price-increase/">
 <h3 class="as-h5">TruStage price increase</h3>
 </a>  <a href="/lumico-burial-insurance-review/">
-<h3 class="as-h5">Lumico burial insurance review – pros &amp; cons</h3>
+<h3 class="as-h5">Lumico burial insurance review: pros &amp; cons</h3>
 </a></div>

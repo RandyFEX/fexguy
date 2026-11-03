@@ -52,8 +52,8 @@ is in place; see src/content/README.md for how pages were migrated.
   upper-right header label. ("Call Randy" elsewhere in marketing content,
   buttons and copy is fine.) The label and icon live in `src/config/phones.ts`
   (`HEADER_PHONE_LABEL`, `HEADER_PHONE_ICON_PATH`); the site header uses them
-  in `src/components/Navigation.astro` (desktop nav; the mobile menu shows the
-  plain number) and the standalone landing headers (/facebook/, /free-quote/,
+  in `src/components/Navigation.astro` (the header contact from 48rem; the
+  phone menu shows the plain number) and the standalone landing headers (/facebook/, /free-quote/,
   /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
   every built header: one `data-header-phone` link with that label and icon,
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
@@ -1137,6 +1137,47 @@ scope protection wins.
   bar under the header was removed site-wide (Randy, October 2026; the header
   already has GET A QUOTE and the phone number): don't bring it back.
 
+## Health Question Search (Randy, October 2026; launched November 2026)
+
+- Reusable component `src/components/health-search/HealthQuestionSearch.astro`
+  (`variant="inline"` or `"modal"`), inserted only on pages Randy chooses,
+  never site-wide. Public page (Randy, November 2026):
+  /life-insurance-health-questions/ (src/pages/life-insurance-health-questions.astro;
+  indexable, in the sitemap, no review-only parts). The review copy
+  /health-question-search-preview/ stays noindex, nofollow, out of the
+  sitemap/llms.txt/search and unlinked.
+- The site stays static; the only server code is the Vercel Function
+  `api/health-search.js`. Logic and public configuration (carriers,
+  schedules, rules, medical terms) live in `server/health-search/` (see its
+  README). This repository is public: the carriers' question records are
+  never committed to it (nor generated copies); they live only in the
+  Upstash Redis search store, published with
+  `scripts/health-search-publish.mjs` from the git-ignored
+  `server/health-search/private/`. Don't use RandyFEX/fexguy-monitoring as
+  the database. The data must never reach dist/ or public/: `npm run verify`
+  fails if it does. The API returns only matching questions; no public
+  listing or dump. Production serves only the complete 88-record set.
+- Question wording is copied verbatim from the carriers' applications and
+  never reworded; outcomes and schedules come only from Randy's approved
+  interpretations. Never invent questions, outcomes or schedules. Randy
+  supplied all 88 questions with their YES/NO outcomes (October 2026); they
+  are imported line for line with `scripts/health-search-import.mjs`.
+  Randy's wording decisions (October 2026): Aflac Part A 3A's outcome names
+  Aflac, not Aetna Accendo CVS (the one approved correction); CICA results
+  show his guaranteed-issue explanation followed by the age, state and
+  product eligibility note; Family Benefit Life and Trinity Life keep both
+  first-year graded explanations exactly as supplied (never standardize).
+- CICA is named "CICA Life Insurance" in this tool (Randy, October 2026;
+  never "CICA Life Insurance Company", "Seeker", "Sika" or "One insurance
+  company" here). The CICA confidentiality rule for ordinary health-condition
+  articles is unchanged.
+- 10 searches per visitor per rolling 24 hours (Randy, November 2026; was 3),
+  enforced server-side (Redis Lua, atomic); per IP separately: 40 searches an
+  hour and 30 requests of any kind per 10 minutes. A carrier name narrows a search
+  ("Aflac COPD"); on its own it returns a prompt, never a carrier's whole
+  question set. Medication names only produce RELATED matches. Search terms are never stored or
+  sent to GA4/Meta.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
@@ -1328,6 +1369,39 @@ scope protection wins.
 - Navigation labels (primary nav and the Resources dropdown) are short Title
   Case labels (Randy, October 2026), e.g. "A to Z Final Expense Companies",
   "IUL Playbook"; destination pages keep their full titles and H1s.
+- **Site header navigation (Randy, November 2026, navigation V1.0):** regular
+  pages carry a mega menu with five categories, Life Insurance, Company
+  Reviews, Health & Eligibility, Guides & Tools and About Us, each a panel of
+  grouped links (`megaNav` in src/config/site.ts; component
+  src/components/Navigation.astro). Desktop (75rem+; Randy, November 2026,
+  V3.1): one header row, 65px tall: the logo, the five categories centered,
+  and the phone contact on the right; no GET A QUOTE button in the desktop
+  header (the homepage hero keeps its own). On these pages the header runs up
+  to 80rem wide so the wordmark keeps its full 307px from 1260px up (246px,
+  80%, at 1200px; proportions never change). Under 75rem: the Menu button,
+  with the phone contact beside it from 48rem; the menu keeps GET A QUOTE
+  (and the plain number on phones). Panels open on
+  hover, click, Enter/Space or Down Arrow and close on Escape (focus returns
+  to the button), an outside click, focus leaving, or another category
+  opening; on desktop a panel starts right under its button. In the Menu
+  panel the categories are a one-open-at-a-time accordion. All links are in the
+  HTML; without JavaScript panels open on hover/focus (desktop) or are listed
+  open. Only published, built, non-redirect pages go in the menu: never "#",
+  placeholders, unpublished or review-only tools
+  (/health-question-search-preview/), or campaign pages. /roku/ (campaign
+  number, site header) keeps the compact menu (`primaryNav`: GET A QUOTE,
+  RESOURCES, REVIEWS, ABOUT; one row from 64rem, unchanged); /facebook/, /free-quote/ and /help/ keep their
+  own simplified headers. Phone menu (Randy, November 2026, V2.1): under
+  48rem each category shows its priority links plus its directory link (Life
+  Insurance 11, Company Reviews 9, Health & Eligibility 8, Guides & Tools 13,
+  About Us 6); links marked `phoneHidden` are left out there only when the
+  category's directory page (/a-z-companies/, /a-z-health/) or the
+  /burial-insurance/ hub links to them. CICA Life stays in Company Reviews on
+  every screen size. Opening a category on a phone scrolls it to the top of
+  the menu. Tablets (48rem+) and desktop show every link; desktop is
+  unchanged. `npm run verify` checks all of this; `npm run test:nav`
+  (Playwright, after a build) tests the interactions; `npm run test` runs it
+  with the health-search tests.
 - Components that depend on unset config render nothing. Keep that pattern.
 - Mobile-first CSS: base styles for small screens, `min-width` queries up.
   Touch targets ≥ 44px (`--tap-target`).

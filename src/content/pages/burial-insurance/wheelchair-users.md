@@ -101,11 +101,11 @@ sidebar: true
 
 <ol>
 <li><strong><a href="/burial-insurance/eating-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Eating</a></strong> is putting food into your body using a plate, cup, feeding tube, or intravenously.</li>
-<li><strong><a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">Bathing</a></strong> – washing your body in a shower or bathtub, it also refers to your ability to get in and out of the shower or bathtub safely.</li>
-<li><strong><a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Dressing</a></strong> – taking off and putting an article of clothing on your body. It also includes taking off and putting on fasteners, braces, and artificial limbs.</li>
-<li><strong><a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Toileting</a></strong> – getting on and off the toilet and performing necessary personal hygiene.</li>
-<li><strong><a href="/burial-insurance/transferring-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Transferring</a></strong> – moving in or out of bed, a chair, or a wheelchair.</li>
-<li><strong><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></strong> – controlling the bladder and bowel functions. Continence includes performing related personal hygiene tasks like caring for a colostomy or catheter bag.</li>
+<li><strong><a href="/burial-insurance/bathing-disability-adl/" target="_blank" rel="noreferrer noopener">Bathing</a></strong>: washing your body in a shower or bathtub, it also refers to your ability to get in and out of the shower or bathtub safely.</li>
+<li><strong><a href="/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Dressing</a></strong>: taking off and putting an article of clothing on your body. It also includes taking off and putting on fasteners, braces, and artificial limbs.</li>
+<li><strong><a href="/burial-insurance/toileting-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Toileting</a></strong>: getting on and off the toilet and performing necessary personal hygiene.</li>
+<li><strong><a href="/burial-insurance/transferring-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Transferring</a></strong>: moving in or out of bed, a chair, or a wheelchair.</li>
+<li><strong><a href="/burial-insurance/continence-activities-of-daily-living-adl/" target="_blank" rel="noreferrer noopener">Continence</a></strong>: controlling the bladder and bowel functions. Continence includes performing related personal hygiene tasks like caring for a colostomy or catheter bag.</li>
 </ol>
 
 <p><br><strong>WHEELCHAIR USE&#160; (no chronic illness but need help in ADL)</strong></p>
@@ -235,9 +235,9 @@ sidebar: true
 
 <p><strong>Burial insurance companies have two ways of underwriting:</strong></p>
 
-<p><strong>FIRST</strong> – They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
+<p><strong>FIRST</strong>: They may ask you a series of health questions. Your answers to their questions will determine your eligibility.</p>
 
-<p><strong>SECOND</strong> – They will electronically review your prescription history to verify your health.</p>
+<p><strong>SECOND</strong>: They will electronically review your prescription history to verify your health.</p>
 
 <p>Every final expense company asks about wheelchair usage in their health questionnaire. They all have their unique underwriting guidelines and requirements; some look at wheelchair use more favorably than others.</p>
 
@@ -357,14 +357,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company as long as you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance for wheelchair users</strong></h2>

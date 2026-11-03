@@ -41,16 +41,16 @@ sidebar: true
 <p>Different life insurance companies ask different questions to decide which Myelodysplastic Syndrome applicants they may approve.</p>
 
 <ul>
-<li><strong>Aetna Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aetna Decline</strong>&#160;– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Aflac&#160;Decline</strong>&#160;– Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
-<li><strong>Aflac&#160;Decline&#160;</strong>– Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
-<li><strong>Family Benefit Life Decline</strong>&#160;– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
-<li><strong>Liberty Bankers Life Decline</strong>&#160;– Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
-<li><strong>Mutual of Omaha Decline</strong>&#160;– Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
-<li><strong>Mutual of Omaha Decline&#160;</strong>– In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
-<li><strong>Mutual of Omaha Level</strong>&#160;– In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
-<li><strong>Trinity Life Decline&#160;</strong>– Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Aetna Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aetna Decline</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Aflac&#160;Decline</strong>: Within the past 2 years, have you been diagnosed with, received, or been advised to receive chemotherapy or radiation for any form of cancer, excluding basal cell or squamous cell skin cancer?</li>
+<li><strong>Aflac&#160;Decline&#160;</strong>: Have you ever been diagnosed with more than one occurrence of the same or a different type of cancer?</li>
+<li><strong>Family Benefit Life Decline</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
+<li><strong>Liberty Bankers Life Decline</strong>: Have you, the Proposed Insured, ever been diagnosed, treated, tested positive for, or been given medical advice by a member of the medical profession for congestive heart failure (CHF), cardiomyopathy, memory loss, Alzheimer’s, senile dementia, dementia, heart defibrillator implant, 2 or more instances of internal cancer(s), or terminal illness (“terminal illness” means a disease or illness that is expected to result in death within 24 months)?</li>
+<li><strong>Mutual of Omaha Decline</strong>: Has the Proposed Insured ever been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Alzheimer’s Disease, Dementia, Huntington’s Disease, Sickle Cell Anemia, Myelodysplastic Syndrome (MDS), Lou Gehrig’s Disease (ALS), Hydrocephalus, Muscular Dystrophy, Quadriplegia, Paraplegia, Down Syndrome, Intellectual Developmental Disorder, Congestive Heart Failure, Cirrhosis, Metastatic Cancer or recurrent Cancer of the same type?</li>
+<li><strong>Mutual of Omaha Decline&#160;</strong>: In the past 2 years, has the Proposed Insured been diagnosed with, been treated for or advised by a licensed medical professional to receive treatment for any form of cancer (except basal or squamous cell skin cancer)?</li>
+<li><strong>Mutual of Omaha Level</strong>: In the past 4 years, has the Proposed Insured been diagnosed by a licensed medical professional with, received treatment by a licensed medical professional for, or been advised to seek treatment by a licensed medical professional for Cancer, Leukemia, or any other internal cancer or melanoma (except basal or squamous cell skin cancer)?</li>
+<li><strong>Trinity Life Decline&#160;</strong>: Within the past 24 months, have you been diagnosed or treated by a medical professional for, or taken medication for, internal cancer, leukemia, or melanoma?</li>
 </ul>
 
 <h3>Myelodysplastic syndrome MDS underwriting basics</h3>
@@ -84,16 +84,16 @@ sidebar: true
 <p>Myelodysplastic syndrome disrupts normal bone marrow function and blood cell production, reducing oxygen delivery, weakening immune defense, and impairing clotting; these complications can affect underwriting and policy selection when they’re present.</p>
 
 <ul>
-<li><strong>Anemia</strong> – Low red blood cell counts cause fatigue, weakness, and reduced work capacity.</li>
-<li><strong>Infection risk</strong> – Low white blood cell levels increase susceptibility to frequent or severe infections.</li>
-<li><strong>Bleeding and bruising</strong> – Low platelet counts lead to easy bruising, nosebleeds, and prolonged bleeding.</li>
-<li><strong>Shortness of breath</strong> – Reduced oxygen-carrying capacity limits physical exertion and endurance.</li>
-<li><strong>Chronic fatigue</strong> – Ongoing marrow failure causes persistent exhaustion even with rest.</li>
-<li><strong>Transfusion dependence</strong> – Regular blood transfusions disrupt routines and indicate advanced disease.</li>
-<li><strong>Iron overload</strong> – Repeated transfusions can damage the liver, heart, and endocrine organs.</li>
-<li><strong>Progression to leukemia</strong> – Some cases evolve into acute myeloid leukemia with higher mortality risk.</li>
-<li><strong>Medication side effects</strong> – Treatments can suppress immunity further and worsen fatigue or nausea.</li>
-<li><strong>Reduced life expectancy</strong> – Disease severity and complications increase long-term disability and mortality risk.</li>
+<li><strong>Anemia</strong>: Low red blood cell counts cause fatigue, weakness, and reduced work capacity.</li>
+<li><strong>Infection risk</strong>: Low white blood cell levels increase susceptibility to frequent or severe infections.</li>
+<li><strong>Bleeding and bruising</strong>: Low platelet counts lead to easy bruising, nosebleeds, and prolonged bleeding.</li>
+<li><strong>Shortness of breath</strong>: Reduced oxygen-carrying capacity limits physical exertion and endurance.</li>
+<li><strong>Chronic fatigue</strong>: Ongoing marrow failure causes persistent exhaustion even with rest.</li>
+<li><strong>Transfusion dependence</strong>: Regular blood transfusions disrupt routines and indicate advanced disease.</li>
+<li><strong>Iron overload</strong>: Repeated transfusions can damage the liver, heart, and endocrine organs.</li>
+<li><strong>Progression to leukemia</strong>: Some cases evolve into acute myeloid leukemia with higher mortality risk.</li>
+<li><strong>Medication side effects</strong>: Treatments can suppress immunity further and worsen fatigue or nausea.</li>
+<li><strong>Reduced life expectancy</strong>: Disease severity and complications increase long-term disability and mortality risk.</li>
 </ul>
 
 <h2>Understanding myelodysplastic syndrome policy types</h2>
@@ -112,7 +112,7 @@ sidebar: true
 
 <p>Here are some preferred rates if you’ve beaten cancer and 24 months have passed. If you are currently battling cancer, I have other plans available from A-rated companies.</p>
 
-<h3>Trinity Life &amp; Family Benefit insurance rates age 50–85</h3>
+<h3>Trinity Life &amp; Family Benefit insurance rates age 50 to 85</h3>
 
 <table>
 <thead>

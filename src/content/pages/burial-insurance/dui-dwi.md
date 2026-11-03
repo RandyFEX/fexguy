@@ -70,22 +70,22 @@ sidebar: true
 <p><br><strong>Drunk driving charges can be referred to by the following acronyms:</strong></p>
 
 <ul>
-<li>DUI – Driving Under the Influence</li>
-<li>DWI – Driving While Intoxicated</li>
-<li>OWI – Operating While Intoxicated</li>
-<li>OVI – Operating a Vehicle While Intoxicated</li>
-<li>OUI – Operating Under the Influence While Impaired</li>
+<li>DUI: Driving Under the Influence</li>
+<li>DWI: Driving While Intoxicated</li>
+<li>OWI: Operating While Intoxicated</li>
+<li>OVI: Operating a Vehicle While Intoxicated</li>
+<li>OUI: Operating Under the Influence While Impaired</li>
 </ul>
 
 <p><br><strong>Other acronyms that refer to charges related to the severity of drunken driving charges include:</strong></p>
 
 <ul>
-<li>ADWI – Aggravated Driving While Intoxicated</li>
-<li>DWAI – Driving While Ability Impaired</li>
-<li>DUII – Driving Under the Influence of Intoxicants</li>
-<li>DUII-CS – Driving Under the Influence of Intoxicants: Controlled Substances</li>
-<li>OMVI – Operating a Motor Vehicle While Impaired</li>
-<li>OUII – Operating Under the Influence of intoxicating liquor</li>
+<li>ADWI: Aggravated Driving While Intoxicated</li>
+<li>DWAI: Driving While Ability Impaired</li>
+<li>DUII: Driving Under the Influence of Intoxicants</li>
+<li>DUII-CS: Driving Under the Influence of Intoxicants: Controlled Substances</li>
+<li>OMVI: Operating a Motor Vehicle While Impaired</li>
+<li>OUII: Operating Under the Influence of intoxicating liquor</li>
 </ul>
 
 <p>DUI is the most common acronym used in most states for driving under the influence. States that use the DWI include Arkansas, Alaska, Connecticut, Louisiana, Missouri, New Jersey, New Mexico, New York, Nebraska, Texas, and West Virginia.</p>
@@ -93,10 +93,10 @@ sidebar: true
 <p><br><strong>The following acronyms are used in the states listed below:</strong></p>
 
 <ul>
-<li>OUI – Massachusetts, Rhode Island</li>
-<li>OVI – Ohio</li>
-<li>OWI – Indiana, Iowa</li>
-<li>DUII – Oregon</li>
+<li>OUI: Massachusetts, Rhode Island</li>
+<li>OVI: Ohio</li>
+<li>OWI: Indiana, Iowa</li>
+<li>DUII: Oregon</li>
 </ul>
 
 <p>Many burial insurance companies will ask you about DUI using any of these terms and deny your application if you have a DUI or DWI…but not all of them!</p>
@@ -327,14 +327,14 @@ sidebar: true
 <p><strong>Here are some of the benefits of purchasing a burial or funeral policy:</strong></p>
 
 <ul>
-<li><strong>No medical exam or doctor’s visit is required</strong>&#160;– easy to get approved.</li>
-<li><strong>Ease of issue</strong>&#160;– easy to qualify and get insurance coverage.</li>
-<li><strong>No Money Down to get approved&#160;</strong>– have your policy start whenever you want.</li>
-<li><strong>Level premium</strong>&#160;– your premium will never increase.</li>
-<li><strong>Fixed death benefit</strong>&#160;– your death benefit will never decrease for any reason.</li>
-<li><strong>Permanent protection</strong>&#160;– your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
-<li><strong>Tax-free</strong>&#160;– the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
-<li><strong>Cash value builds up</strong>&#160;– burial insurance is a whole life policy that builds cash value over time.</li>
+<li><strong>No medical exam or doctor’s visit is required</strong>: easy to get approved.</li>
+<li><strong>Ease of issue</strong>: easy to qualify and get insurance coverage.</li>
+<li><strong>No Money Down to get approved&#160;</strong>: have your policy start whenever you want.</li>
+<li><strong>Level premium</strong>: your premium will never increase.</li>
+<li><strong>Fixed death benefit</strong>: your death benefit will never decrease for any reason.</li>
+<li><strong>Permanent protection</strong>: your policy can not be canceled by the life insurance company if you continue to pay your premiums.</li>
+<li><strong>Tax-free</strong>: the death benefit is directly paid to your beneficiary tax-free upon your death.</li>
+<li><strong>Cash value builds up</strong>: burial insurance is a whole life policy that builds cash value over time.</li>
 </ul>
 
 <h2 id="uses-of-final-expense-insurance"><br><strong>Other common uses for final expense life insurance with a DUI or DWI history</strong></h2>

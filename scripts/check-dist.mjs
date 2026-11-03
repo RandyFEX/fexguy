@@ -213,6 +213,39 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
+// Health-question search: the private underwriting data is bundled only into
+// the serverless function (api/health-search.js). Nothing from it may reach
+// dist/: no data file, no question wording, no dataset metadata, and not the
+// fictional sample set either. Checked across every file, Pagefind included.
+{
+  const { sampleDataset } = await import('../server/health-search/sample-dataset.js');
+  // The real records are never in this repository; when a local private copy
+  // exists (server/health-search/private/questions/), check its wording too.
+  const privateDir = new URL('../server/health-search/private/questions/', import.meta.url).pathname;
+  const privateTexts = existsSync(privateDir)
+    ? readdirSync(privateDir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(readFileSync(join(privateDir, f), 'utf8')).questions.map((q) => q.text))
+    : [];
+  // A few application questions are already quoted word for word in published
+  // articles (e.g. the burial-insurance condition pages). That wording is
+  // public on its own; every other question still has to stay out of dist/.
+  const published = walk(new URL('../src/content/', import.meta.url).pathname).map((f) => readFileSync(f, 'utf8')).join('\n');
+  const quoted = privateTexts.filter((t) => published.includes(t));
+  if (quoted.length) console.log(`Health search: ${quoted.length} application questions are already quoted in published articles (not counted as leaks)`);
+  const needles = [
+    ...[...sampleDataset.questions.map((q) => q.text), ...privateTexts.filter((t) => !quoted.includes(t))].filter((t) => t.length >= 25),
+    'expectedQuestionCount', 'sharedWordingGroup', 'anonymizedName', '"indicators":', 'SAMPLE QUESTION, not real carrier wording',
+  ];
+  for (const file of walk(DIST)) {
+    const rel = '/' + file.slice(DIST.length);
+    if (/(config\.generated|concepts|carriers)\.(js|json)$|\/questions\/[^/]+\.json$|health-search\/(data|private)\//.test(rel)) {
+      (guardHits['private health-search data file in the public build'] ??= []).push(rel);
+      continue;
+    }
+    if (!/\.(html|js|mjs|json|xml|txt|css|webmanifest|pf_[a-z]+)$/.test(file) && !file.includes('/pagefind/')) continue;
+    const text = readFileSync(file, 'latin1');
+    if (needles.some((n) => text.includes(n))) (guardHits['private health-search data in the public build'] ??= []).push(rel);
+  }
+}
 // Retired pages that must stay real 404s (not built, not redirected).
 const MUST_404 = ['/gtl/'];
 for (const p of MUST_404) {
@@ -241,10 +274,35 @@ for (const dir of ['src/content', 'data'])
   for (const file of walk(join(ROOT, dir)).filter((f) => /\.(md|mdx|json|csv|ya?ml|txt)$/.test(f)))
     scanEmDashes(readFileSync(file, 'utf8'), file.slice(ROOT.length));
 
+// ---- En and em dashes in visible copy -------------------------------------------
+// FEXGUY.com style rule (Randy, November 2026): no en dash (U+2013) or em dash
+// in copy a visitor can see: page text, the title, meta descriptions and social
+// titles/descriptions, and alt text. Scripts (including JSON-LD), styles and
+// tag attributes (ids, links, file names) are technical and not scanned.
+// Verbatim sources are listed in src/config/dash-exceptions.json.
+const dashExceptions = JSON.parse(readFileSync(new URL('../src/config/dash-exceptions.json', import.meta.url), 'utf8')).exceptions;
+const VISIBLE_META = /<meta\s[^>]*(?:name|property)="(?:description|og:title|og:description|og:image:alt|twitter:title|twitter:description|twitter:image:alt)"[^>]*>/gi;
+const decodeDashes = (t) => t.replace(/&ndash;|&#0*8211;|&#x0*2013;/gi, '\u2013').replace(/&mdash;|&#0*8212;|&#x0*2014;/gi, '\u2014').replace(/&#160;|&nbsp;/g, ' ').replace(/&amp;/g, '&');
+const visibleDashHits = [];
+for (const file of walk(DIST).filter((f) => f.endsWith('.html') && !f.includes('/pagefind/'))) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '').replace(/^\//, '');
+  const metas = [...html.matchAll(VISIBLE_META)].map((m) => (m[0].match(/content="([^"]*)"/) || [])[1] || '');
+  const alts = [...html.matchAll(/\salt="([^"]*)"/g)].map((m) => m[1]);
+  const body = html.replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(/<style\b[\s\S]*?<\/style>/gi, ' ').replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]+>/g, ' ');
+  const text = decodeDashes([body, ...metas, ...alts].join('\n'));
+  for (const m of text.matchAll(/[\u2013\u2014]/g)) {
+    const around = text.slice(Math.max(0, m.index - 80), m.index + 80);
+    const ok = dashExceptions.some((e) => (!e.page || e.page === page) && (!e.text || around.includes(e.text)));
+    if (!ok) visibleDashHits.push(`${page}  "${text.slice(Math.max(0, m.index - 40), m.index + 40).replace(/\s+/g, ' ')}"`);
+  }
+}
+
 const guardProblems = Object.entries(guardHits).map(([label, files]) => `${label}: ${files.slice(0, 5).join(' ')}${files.length > 5 ? ` (+${files.length - 5} more)` : ''}`);
 if (!ga4Found) guardProblems.push('GA4 measurement ID G-JMYZE458HQ not found in the build');
 if (!metaFound) guardProblems.push('Meta Pixel ID 2351342698972751 not found in the build');
 if (emDashHits.length) guardProblems.push(`em dash (${emDashHits.length}): ${EM_DASH_MESSAGE}`);
+if (visibleDashHits.length) guardProblems.push(`en/em dash in visible copy (${visibleDashHits.length}): rewrite with "to", a comma, colon or period (verbatim sources: src/config/dash-exceptions.json)`);
 // Not a failure before launch: the legal pages' effective dates are set to the
 // actual publication date at launch (CLAUDE.md "Prelaunch checklist").
 const effectiveDatePending = ['privacy-policy', 'terms-of-use'].filter((p) =>
@@ -606,6 +664,78 @@ for (const file of pages) {
   else openingProblems.push(`${page}: article text between the table of contents and the first heading (a second introduction): ${quote}`);
 }
 
+// ---- Site header navigation (Randy, November 2026, navigation V1.0) ---------
+// Regular pages carry the mega menu (data-nav="mega"); campaign pages on the
+// site header (/roku/) keep the compact menu; the standalone landing pages
+// (/facebook/, /free-quote/, /help/) have no site header or menu at all. Every
+// menu link is a real link to a built page (no "#", placeholders, redirects,
+// external URLs, review-only or campaign pages), every category button
+// controls its own panel, and the mega menu is identical on every page.
+const COMPACT_NAV_PAGES = new Set(['/roku/']);
+const NO_NAV_PAGES = ['/facebook/', '/free-quote/', '/help/'];
+const NAV_FORBIDDEN = new Set(['/health-question-search-preview/', '/facebook/', '/roku/', '/help/']);
+const navProblems = [];
+let navPages = 0;
+let navSignature = null;
+let navLinkCount = 0;
+let navCategories = [];
+let navPhoneChecked = false;
+const navPhoneCounts = [];
+const navDirCache = new Map();
+for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f))) {
+  const html = readFileSync(file, 'utf8');
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const header = html.match(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/)?.[0];
+  if (!header) continue;
+  navPages++;
+  const variant = header.match(/\bdata-nav="(mega|compact)"/)?.[1];
+  const expected = COMPACT_NAV_PAGES.has(page) ? 'compact' : 'mega';
+  if (variant !== expected) { navProblems.push(`${page}: site header menu is ${variant ?? 'missing'}, expected ${expected}`); continue; }
+  const hrefs = [...header.matchAll(/<a\b[^>]*\bhref="([^"]*)"/g)].map((m) => m[1]).filter((h) => !h.startsWith('tel:'));
+  for (const h of hrefs) {
+    const p = /^https:\/\/funeralfunds\.com\/$/.test(h) ? '/' : h;
+    if (!p || p === '#' || !p.startsWith('/') || p.startsWith('//')) { navProblems.push(`${page}: menu link "${h}" is not an internal page link`); continue; }
+    if (!p.endsWith('/')) navProblems.push(`${page}: menu link ${h} has no trailing slash`);
+    else if (!isPage(p)) navProblems.push(`${page}: menu link ${h} is not a built page${redirects.has(p) ? ' (redirect)' : ''}`);
+    if (NAV_FORBIDDEN.has(p)) navProblems.push(`${page}: menu links to ${h}, which must not be in the menu`);
+  }
+  for (const m of header.matchAll(/<button\b[^>]*class="nav__trigger"[^>]*>/g)) {
+    const ctl = m[0].match(/aria-controls="([^"]+)"/)?.[1];
+    if (!/aria-expanded="false"/.test(m[0])) navProblems.push(`${page}: a menu button doesn't start collapsed`);
+    if (!ctl || !header.includes(`id="${ctl}"`)) navProblems.push(`${page}: menu button controls missing panel ${ctl}`);
+  }
+  if (variant === 'mega') {
+    const sig = hrefs.join(' ');
+    const cats = [...header.matchAll(/<button\b[^>]*class="nav__trigger"[^>]*>\s*([^<]+?)\s*</g)].map((m) => decode(m[1]));
+    if (!navSignature) { navSignature = sig; navLinkCount = new Set(hrefs).size; navCategories = cats; }
+    else if (sig !== navSignature) navProblems.push(`${page}: mega menu links differ from the other pages`);
+    if (cats.length !== 5) navProblems.push(`${page}: mega menu has ${cats.length} categories (expected 5)`);
+    // Phone menu (Randy, November 2026, V2.1): a link left out on phones
+    // must be on its category's directory page (the panel's "All ..." link)
+    // or the Burial Insurance hub, and every category keeps links on phones.
+    {
+      const first = !navPhoneChecked;
+      navPhoneChecked = true;
+      for (const m of header.matchAll(/<div class="nav__mega" id="nav-panel-([^"]+)"[\s\S]*?(?=<li class="nav__item"|<\/ul><\/nav>)/g)) {
+        const [panelHtml, id] = m;
+        const allHref = panelHtml.match(/<a class="nav__all" href="([^"]+)"/)?.[1];
+        const dirs = [allHref, '/burial-insurance/'].filter(Boolean).map((d) => navDirCache.get(d) ?? navDirCache.set(d, readFileSync(join(DIST, d, 'index.html'), 'utf8').replace(/<header\b[\s\S]*?<\/header>/, '')).get(d));
+        const hidden = [...panelHtml.matchAll(/<li class="nav__phone-hidden"[^>]*><a href="([^"]+)"/g)].map((x) => x[1]);
+        const shown = [...panelHtml.matchAll(/<li(?! class="nav__phone-hidden")[^>]*><a href="([^"]+)"/g)].length;
+        if (first) navPhoneCounts.push(`${id} ${shown + (allHref ? 1 : 0)}`);
+        if (!shown) navProblems.push(`${page}: ${id} shows no links on phones`);
+        for (const h of hidden) if (!dirs.some((d) => d.includes(`href="${h}"`))) navProblems.push(`${page}: ${id}: ${h} is left out on phones but its directory page doesn't link to it`);
+      }
+    }
+  }
+}
+for (const p of NO_NAV_PAGES) {
+  const f = join(DIST, p, 'index.html');
+  if (!existsSync(f)) { navProblems.push(`${p}: page not built`); continue; }
+  const html = readFileSync(f, 'utf8');
+  if (/class="site-header"|\bdata-nav=|\bdata-mega-nav\b/.test(html)) navProblems.push(`${p}: landing page shows the site menu (it keeps its simplified header)`);
+}
+
 // ---- Upper-right header phone (Randy, V14.0) -----------------------------------
 // Every page header (the site header, and the standalone landing headers
 // .fb-top/.fq-top/.hp-top) has one phone contact marked data-header-phone:
@@ -706,6 +836,11 @@ console.log(`Header logo link (${HOME_URL}): ${logosChecked} headers checked | p
 for (const p of logoProblems) console.log(`  [logo] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
+console.log(`En/em dashes in visible copy (built pages, exceptions in src/config/dash-exceptions.json): ${visibleDashHits.length}`);
+for (const h of visibleDashHits.slice(0, 25)) console.log(`  [dash] ${h}`);
+if (visibleDashHits.length > 25) console.log(`  [dash] ... +${visibleDashHits.length - 25} more`);
+console.log(`Site menu: ${navPages} site headers checked | mega menu: ${navCategories.join(', ')} (${navLinkCount} links; phone menu: ${navPhoneCounts.join(', ')}) | problems: ${navProblems.length}`);
+for (const p of navProblems) console.log(`  [nav] ${p}`);
 console.log(`Em dashes (built site + content sources): ${emDashHits.length}`);
 for (const h of emDashHits.slice(0, 25)) console.log(`  [em dash] ${h}`);
 if (emDashHits.length > 25) console.log(`  [em dash] ... +${emDashHits.length - 25} more`);
@@ -735,6 +870,7 @@ const problems =
   links.redirect.length +
   links['missing-slash'].length +
   links.broken.length +
+  navProblems.length +
   allMissing.length +
   search.problems.length +
   redirectProblems.length +
