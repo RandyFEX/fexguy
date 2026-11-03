@@ -23,6 +23,7 @@
 // /help/ as on every other page.
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
+import HeaderLogo from '@/components/HeaderLogo.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
 import { PAGE_PHONES, withPagePhone } from '@/config/phones';
@@ -112,16 +113,18 @@ const advantage = [
   <div class="fb" data-page-type="sales" data-page-reason="Facebook ad landing page (noindex, campaign phone number).">
     <div class="fb-top">
       <div class="container fb-top__inner">
-        <img
-          class="fb-top__logo"
-          src="/images/logo/funeral-funds-wordmark-800.webp"
-          srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
-          sizes="14rem"
-          width="1987"
-          height="285"
-          alt="Funeral Funds"
-          fetchpriority="high"
-        />
+        <HeaderLogo>
+          <img
+            class="fb-top__logo"
+            src="/images/logo/funeral-funds-wordmark-800.webp"
+            srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
+            sizes="14rem"
+            width="1987"
+            height="285"
+            alt="Funeral Funds"
+            fetchpriority="high"
+          />
+        </HeaderLogo>
         <HeaderPhone phone={phone} />
       </div>
     </div>
@@ -396,7 +399,10 @@ const advantage = [
     gap: var(--space-4);
     padding-block: var(--space-3);
   }
+  /* The logo keeps its size inside its home link (HeaderLogo) beside the
+     phone, as it did before it was linked. */
   .fb-top__logo {
+    flex-shrink: 0;
     width: 8rem;
     height: auto;
   }

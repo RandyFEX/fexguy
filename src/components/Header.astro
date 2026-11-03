@@ -4,6 +4,7 @@
 // lead-generation elements and are intentionally not built yet.
 import { site } from '@/config/site';
 import Navigation from './Navigation.astro';
+import HeaderLogo from './HeaderLogo.astro';
 import type { PagePhoneKey } from '@/config/phones';
 
 const { phone = 'default' } = Astro.props as { phone?: PagePhoneKey };
@@ -19,7 +20,7 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <a href="/" class="site-header__brand" aria-label={`${site.name} home`}>
+    <HeaderLogo class="site-header__brand">
       <picture>
         <img
           src={`${wordmark}-800.webp`}
@@ -31,7 +32,7 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
           fetchpriority="high"
         />
       </picture>
-    </a>
+    </HeaderLogo>
     <Navigation phone={phone} />
   </div>
 </header>
@@ -54,17 +55,14 @@ const srcset = (base: string, widths: number[]) => widths.map((w) => `${base}-${
      the largest that leaves breathing room inside the unchanged header
      height. It shrinks beside the Menu button on narrow phones; height
      follows the width so it keeps its proportions (1987 x 285). */
-  .site-header__brand {
-    display: inline-flex;
-    align-items: center;
+  .site-header__inner > :global(.site-header__brand) {
     min-width: 0;
-    min-height: var(--tap-target);
   }
-  .site-header__brand picture {
+  :global(.site-header__brand) picture {
     display: block;
     min-width: 0;
   }
-  .site-header__brand img {
+  :global(.site-header__brand) img {
     width: calc(2.75rem * 1987 / 285);
     max-width: 100%;
     height: auto;

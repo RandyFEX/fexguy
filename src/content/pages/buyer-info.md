@@ -10,7 +10,7 @@ jsonLd: ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organiza
 source: "live"
 ---
 
-<p><a href="/"><picture><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="443" src="/images/logo/funeral-funds-logo-800.webp" srcset="/images/logo/funeral-funds-logo-400.webp 400w, /images/logo/funeral-funds-logo-800.webp 800w, /images/logo/funeral-funds-logo-1200.webp 1200w, /images/logo/funeral-funds-logo-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)" alt="Funeral Funds"></picture></a>   Call us at (888) 862-9456</p>
+<p><a href="https://funeralfunds.com/" aria-label="Funeral Funds home" data-header-logo><picture><img fetchpriority="high" decoding="async" loading="eager" width="2034" height="443" src="/images/logo/funeral-funds-logo-800.webp" srcset="/images/logo/funeral-funds-logo-400.webp 400w, /images/logo/funeral-funds-logo-800.webp 800w, /images/logo/funeral-funds-logo-1200.webp 1200w, /images/logo/funeral-funds-logo-1600.webp 1600w" sizes="(min-width: 50rem) 768px, calc(100vw - 2rem)" alt="Funeral Funds"></picture></a>   Call us at (888) 862-9456</p>
 
 <h1>Burial, Cremation, or Funeral Insurance Buyers Information</h1>
 
