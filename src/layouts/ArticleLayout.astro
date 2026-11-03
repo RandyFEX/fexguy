@@ -34,6 +34,7 @@ import { categoryMoreHtml } from '@/lib/hub-nav';
 import { HUB_SUMMARIES } from '@/config/hub-nav';
 import { LEGACY_INTROS } from '@/config/article-intros';
 import { QUICK_ANSWER_HELD, SUMMARY_HELD } from '@/config/article-holds';
+import { splitForInlinePricing } from '@/lib/article/inline-pricing';
 
 export interface Props {
   entry: PageEntry;
@@ -80,6 +81,7 @@ const schema = articleGraph({
   dates,
   image: ogImage ? { url: ogImage, width: ogSize('og:image:width'), height: ogSize('og:image:height') } : undefined,
 });
+const bodyParts = splitForInlinePricing(article.body);
 ---
 
 <BaseLayout
@@ -117,7 +119,12 @@ const schema = articleGraph({
 
       {article.intro && <div class="prose wp-content art-body art-body--intro" data-article-part="body" data-pagefind-body={searchable} set:html={article.intro} />}
 
-      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-article-part="body" data-pagefind-body={searchable} set:html={article.body} />
+      <div class:list={['prose wp-content art-body', { 'art-body--hub': hub }]} data-article-part="body" data-pagefind-body={searchable}>
+        {/* v5.9: the phone copy of Get Pricing, between two complete sections (text unchanged). */}
+        <Fragment set:html={bodyParts[0]} />
+        <QuoteBox placement="inline" />
+        <Fragment set:html={bodyParts[1]} />
+      </div>
 
       {categoryMore && <div class="art-body art-catmore" set:html={categoryMore} />}
 
@@ -128,7 +135,7 @@ const schema = articleGraph({
     </article>
 
     <aside class="art-aside" aria-label="Get a quote">
-      <QuoteBox />
+      <QuoteBox placement="article-aside" />
     </aside>
   </div>
 </BaseLayout>
@@ -892,6 +899,8 @@ const schema = articleGraph({
     }
     .art-aside {
       margin-top: 0;
+      /* v5.9: the full height of the article, so the module can stay in view (sticky). */
+      align-self: stretch;
     }
     .art-cta {
       display: none;

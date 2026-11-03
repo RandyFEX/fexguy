@@ -1134,6 +1134,21 @@ scope protection wins.
   article's path only; nothing personal, nothing to Meta), plus
   `quote_funnel_entry` and `quote_sidebar_select`. Test:
   tests/quote/sidebar-entry.browser.mjs (in `npm run test:quote:browser`).
+  v5.9 (Randy): the module is titled "Get Pricing" and ends with "Prefer to
+  talk directly?" and an orange CALL NOW 888-862-9456 tel: button (GA4
+  `quote_module_call_click` with `entry_path` and `module_placement`; a tap,
+  never a completed call). Desktop (64rem+): Male above Female, sticky in
+  the sidebar column (scrolls inside itself on short screens). Phones and
+  tablets on ArticleLayout pages: a second copy inside the article, Male and
+  Female side by side, placed before the first top-level H2 that follows at
+  least 500 characters of article text (src/lib/article/inline-pricing.ts;
+  never inside a list, table, figure, quote or paragraph, never between a
+  heading and its text; fallback: after the article body); the sidebar copy
+  is hidden there, so one shows at a time, and the in-article copy has
+  id="quote" for GET MY QUOTE. The 21 ContentLayout sidebar pages keep the
+  single sidebar copy (after the content on phones). /free-quote/'s title
+  is "Free Burial Insurance Quotes | Compare Rates | Funeral Funds" (title,
+  og:title, twitter:title and JSON-LD names); it stays noindex.
 - **/free-quote/** (Randy, October 2026; superseded by v5.8 above): the general life insurance quote
   page (final expense, term, mortgage protection and other coverage),
   `src/pages/free-quote.astro` (landing layout; the migrated title, robots,

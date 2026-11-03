@@ -1,4 +1,5 @@
-// Quote System v5.8 browser test: the article sidebar's Get Prices module
+// Quote System v5.8/v5.9 browser test: the article's Get Pricing module
+// (desktop sticky sidebar, phone in-article copy, CALL NOW)
 // hands the Male/Female choice and the article's attribution to the funnel on
 // /free-quote/. Built site + real handlers (tests/quote/funnel-server.mjs,
 // Preview test mode: code 123456, no SMS, Formspark and Cloudflare
@@ -12,6 +13,7 @@ const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
 const OUT = process.env.OUT ?? '';
 const ARTICLE = '/burial-insurance/cancer/';
+const ARTICLE_PATH = ARTICLE;
 const browser = await chromium.launch();
 const results = [];
 const check = async (name, fn) => {
@@ -60,7 +62,7 @@ async function finish(page, phone) {
 const funnelHtml = readFileSync(new URL('../../dist/free-quote/index.html', import.meta.url), 'utf8');
 const articleHtml = readFileSync(new URL(`../../dist${ARTICLE}index.html`, import.meta.url), 'utf8');
 await check('the sidebar shows the funnel\'s exact Male and Female illustrations, and no old lead form', async () => {
-  const a = svgs(articleHtml.match(/<div class="quote-box[^"]*gp"[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/)?.[0] ?? '');
+  const a = svgs(articleHtml.match(/<div class="quote-box[^"]*gp--article-aside"[\s\S]*?data-gp-call/)?.[0] ?? '');
   const f = svgs(funnelHtml);
   assert(a.length === 2 && f.length === 2 && a[0] === f[0] && a[1] === f[1], `illustrations differ (${a.length}/${f.length})`);
   assert(!/data-lead-form|Request Rates or Info/.test(articleHtml), 'old sidebar form still on the article');
@@ -68,6 +70,54 @@ await check('the sidebar shows the funnel\'s exact Male and Female illustrations
 });
 
 const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
+
+await check('/free-quote/: new title, still noindex, canonical kept; the old URL 301s to it', async () => {
+  const title = funnelHtml.match(/<title>([^<]*)<\/title>/)?.[1];
+  assert(title === 'Free Burial Insurance Quotes | Compare Rates | Funeral Funds', `title ${title}`);
+  // noindex pages carry no canonical tag (Seo.astro, by design, as before v5.8); og:url names the page.
+  assert(/<meta name="robots" content="[^"]*noindex/.test(funnelHtml) && /<meta property="og:url" content="https:\/\/funeralfunds\.com\/free-quote\/"/.test(funnelHtml), 'robots/og:url');
+  const v = JSON.parse(readFileSync(new URL('../../vercel.json', import.meta.url), 'utf8'));
+  const r = v.redirects.filter((x) => x.source === '/final-expense-insurance-prices/');
+  assert(r.length === 1 && r[0].destination === '/free-quote/' && r[0].statusCode === 301 && !v.redirects.some((x) => x.source === '/free-quote/'), JSON.stringify(r));
+});
+
+// Desktop sticky sidebar: follows the scroll, stays in its column, never over the footer,
+// and on short laptop screens both choices and the call button stay reachable.
+for (const [w, h] of [[1920, 1080], [1440, 900], [1366, 768], [1280, 720]]) {
+  await check(`desktop ${w}x${h}: sticky Get Pricing follows the article, stops above the footer, every option reachable`, async () => {
+    const { ctx, page } = await newPage({ viewport: { width: w, height: h } });
+    await page.goto(`${srv.base}${ARTICLE}`);
+    const geo = () => page.evaluate(() => {
+      const b = document.querySelector('[data-get-prices="article-aside"]').getBoundingClientRect();
+      const aside = document.querySelector('.art-aside').getBoundingClientRect();
+      const main = document.querySelector('.art-main').getBoundingClientRect();
+      const foot = document.querySelector('.pre-footer, footer.site-footer')?.getBoundingClientRect();
+      return { top: Math.round(b.top), bottom: Math.round(b.bottom), left: Math.round(b.left), asideBottom: Math.round(aside.bottom), mainRight: Math.round(main.right), footTop: foot ? Math.round(foot.top) : null };
+    });
+    await page.evaluate(() => scrollTo(0, document.querySelector('.art-main').offsetTop + 1500));
+    await page.waitForTimeout(100);
+    const mid = await geo();
+    assert(mid.top >= 20 && mid.top <= 28 && mid.left > mid.mainRight, `not sticky mid-article ${JSON.stringify(mid)}`);
+    await page.evaluate(() => scrollTo(0, document.body.scrollHeight));
+    await page.waitForTimeout(100);
+    const end = await geo();
+    assert(end.bottom <= end.asideBottom + 1 && (end.footTop === null || end.bottom <= end.footTop), `over the footer ${JSON.stringify(end)}`);
+    // Every option can be reached: either the module fits, or it scrolls inside itself.
+    await page.evaluate(() => scrollTo(0, document.querySelector('.art-main').offsetTop + 1500));
+    const reach = await page.evaluate(() => {
+      const b = document.querySelector('[data-get-prices="article-aside"]');
+      const f = b.querySelector('[data-gp-gender="female"]');
+      const c = b.querySelector('[data-gp-call]');
+      c.scrollIntoView({ block: 'nearest' });
+      const br = b.getBoundingClientRect(), cr = c.getBoundingClientRect(), fr = f.getBoundingClientRect();
+      return { fits: b.scrollHeight <= b.clientHeight + 1, callIn: cr.bottom <= Math.min(br.bottom, innerHeight) + 1 && cr.top >= br.top - 1, femaleH: fr.height, h: Math.round(br.height), vh: innerHeight };
+    });
+    assert(reach.callIn && reach.femaleH > 40 && reach.h <= reach.vh, `not reachable ${JSON.stringify(reach)}`);
+    if (OUT && w === 1366) await page.screenshot({ path: `${OUT}/sticky-${w}.png` });
+    await ctx.close();
+    return reach.fits ? 'fits' : 'scrolls inside';
+  });
+}
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
   await check(`${name}: direct /free-quote/ starts at Who Needs Coverage? (direct entry)`, async () => {
     const { ctx, page } = await newPage(opts);
@@ -83,10 +133,34 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await check(`${name}: sidebar ${gender} opens /free-quote/ at the age question with the choice kept`, async () => {
       const { ctx, page } = await newPage(opts);
       await page.goto(`${srv.base}${ARTICLE}?utm_source=newsletter&utm_campaign=fall`);
-      const box = page.locator('[data-get-prices]');
+      // v5.9: one visible copy: the sidebar on desktop, inside the article on phones.
+      const visible = await page.$$eval('[data-get-prices]', (els) => els.filter((e) => e.getClientRects().length).map((e) => e.dataset.getPrices));
+      assert(visible.join() === (name === 'desktop' ? 'article-aside' : 'inline'), `visible modules ${visible}`);
+      const box = page.locator(`[data-get-prices="${visible[0]}"]`);
       await box.scrollIntoViewIfNeeded();
-      const t = await box.evaluate((b) => ({ title: b.querySelector('.quote-box__title').textContent.trim(), q: b.querySelector('.gp__q').textContent.trim(), w: b.getBoundingClientRect().width, links: [...b.querySelectorAll('a.qf-person')].map((a) => a.textContent.trim()) }));
-      assert(t.title === 'Get Prices' && t.q === 'Who Needs Coverage?' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      const t = await box.evaluate((b) => {
+        const [m, f] = [...b.querySelectorAll('a.qf-person')].map((a) => a.getBoundingClientRect());
+        const call = b.querySelector('[data-gp-call]');
+        const cr = call.getBoundingClientRect(), body = b.querySelector('.gp__body').getBoundingClientRect();
+        const cs = getComputedStyle(call);
+        const prev = b.previousElementSibling;
+        let next = b.nextElementSibling;
+        while (next && next.tagName === 'SCRIPT') next = next.nextElementSibling;
+        return { title: b.querySelector('.quote-box__title').textContent.trim(), q: b.querySelector('.gp__q').textContent.trim(), links: [...b.querySelectorAll('a.qf-person')].map((a) => a.textContent.trim()),
+          stacked: f.top >= m.bottom - 1 && Math.abs(f.left - m.left) < 2, sideBySide: Math.abs(f.top - m.top) < 2 && f.left > m.right - 1,
+          talk: b.querySelector('.gp__talk')?.textContent.trim(), callText: call.textContent.replace(/\s+/g, ' ').trim(), href: call.getAttribute('href'), icon: !!call.querySelector('svg path'),
+          bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - (body.width - 2 * parseFloat(getComputedStyle(b.querySelector('.gp__body')).paddingLeft))) < 2,
+          prev: prev?.tagName ?? null, next: next?.tagName ?? null };
+      });
+      assert(t.title === 'Get Pricing' && t.q === 'Who Needs Coverage?' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
+      assert(t.talk === 'Prefer to talk directly?' && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
+      if (name === 'mobile') assert(t.callFull && t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
+      // CALL NOW: a tap is recorded with the article (never as a completed call).
+      await page.evaluate(() => document.addEventListener('click', (e) => { if (e.target.closest('a[href^="tel:"]')) e.preventDefault(); }, true));
+      await box.locator('[data-gp-call]').click();
+      const callEv = await page.evaluate(() => window.__ev.find((e) => e.name === 'quote_module_call_click'));
+      assert(callEv && callEv.entryType === 'article-sidebar' && callEv.entryPath === ARTICLE_PATH && callEv.placement === (name === 'desktop' ? 'sidebar' : 'in-article'), `call event ${JSON.stringify(callEv)}`);
       if (OUT && gender === 'male') await box.screenshot({ path: `${OUT}/sidebar-${name}.png` });
       await box.locator(`[data-gp-gender="${gender}"]`).click();
       await page.waitForURL(/\/free-quote\//);
