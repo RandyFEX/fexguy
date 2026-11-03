@@ -63,12 +63,14 @@ if (root) {
   let leadId = '';
   let current = 1;
   let started = false;
+  let unlocked = false;
 
   function show(n: number, focus = true) {
     current = n;
     for (const [i, el] of steps) el.hidden = i !== n;
-    back.hidden = n === 1 || n === 8;
-    const results = n === 8;
+    const results = (n === 7 && unlocked) || n === 8;
+    back.hidden = n === 1 || results;
+    root!.querySelector<HTMLElement>('[data-qf-top]')!.hidden = results;
     progressWrap.hidden = results;
     progressLabel.hidden = results;
     progress.style.width = `${(Math.min(n, TOTAL) / TOTAL) * 100}%`;
@@ -85,7 +87,7 @@ if (root) {
     }
     track('quote_step_complete', { step });
   };
-  back.addEventListener('click', () => show(current === 7 ? 6 : Math.max(1, current - 1)));
+  back.addEventListener('click', () => show(Math.max(1, current - 1)));
 
   // Steps 1-4: tap to answer and advance.
   root.addEventListener('click', (e) => {
@@ -140,13 +142,13 @@ if (root) {
     show(6);
   });
 
-  // Step 6: contact + consent -> send code.
+
+  // Step 6: first name, mobile number and the optional consent box.
   const contactForm = $<HTMLFormElement>('[data-qf-contact]');
   const firstInput = $<HTMLInputElement>('#qf-first');
   const phoneInput = $<HTMLInputElement>('#qf-phone');
   const consentBox = $<HTMLInputElement>('[data-qf-consent]');
-  const contactStatus = $('[data-qf-contact-status]');
-  const sendBtn = $<HTMLButtonElement>('[data-qf-send]');
+  const unlockPhone = $<HTMLInputElement>('#qf-unlock-phone');
   const fieldError = (input: HTMLInputElement, message: string) => {
     const err = root!.querySelector<HTMLElement>(`#${input.id}-error`)!;
     err.textContent = message;
@@ -157,10 +159,27 @@ if (root) {
     el.textContent = text;
     el.classList.toggle('is-error', isError);
   };
+  const phoneOk = (v: string) => /^[2-9]\d{9}$/.test(v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, ''));
   const quoteReady = (): Quote | null =>
     answers.gender && answers.age && typeof answers.tobacco === 'boolean' && answers.coverage
       ? { age: answers.age, gender: answers.gender, tobacco: answers.tobacco, coverage: answers.coverage }
       : null;
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const firstName = firstInput.value.trim();
+    fieldError(firstInput, firstName ? '' : 'Please enter your first name.');
+    fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
+    if (!firstName) return firstInput.focus();
+    if (!phoneOk(phoneInput.value)) return phoneInput.focus();
+    if (!quoteReady() || !answers.state) return show(1);
+    track('quote_contact_submit');
+    complete(6);
+    // The pricing screen, blurred, with the number already filled in.
+    unlockPhone.value = phoneInput.value.trim();
+    lockCards();
+    show(7);
+  });
 
   function sourceInfo() {
     const f = leadSourceFields();
@@ -170,8 +189,17 @@ if (root) {
     };
   }
 
-  let resendTimer: number | undefined;
+  // Step 7 (locked): send the code from the pricing screen.
+  const unlockPanel = $('[data-qf-unlock]');
+  const sendForm = $<HTMLFormElement>('[data-qf-send-form]');
+  const sendBtn = $<HTMLButtonElement>('[data-qf-send]');
+  const sendStatus = $('[data-qf-send-status]');
+  const verifyForm = $<HTMLFormElement>('[data-qf-verify]');
+  const codeInput = $<HTMLInputElement>('#qf-code');
+  const verifyStatus = $('[data-qf-verify-status]');
+  const verifyBtn = $<HTMLButtonElement>('[data-qf-verify-btn]');
   const resendBtn = $<HTMLButtonElement>('[data-qf-resend]');
+  let resendTimer: number | undefined;
   function cooldown(ms: number) {
     window.clearInterval(resendTimer);
     let left = Math.ceil(ms / 1000);
@@ -187,48 +215,38 @@ if (root) {
     }, 1000);
   }
 
-  contactForm.addEventListener('submit', async (e) => {
+  sendForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const firstName = firstInput.value.trim();
-    const phone = phoneInput.value.trim();
-    const digits = phone.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
-    fieldError(firstInput, firstName ? '' : 'Please enter your first name.');
-    fieldError(phoneInput, /^[2-9]\d{9}$/.test(digits) ? '' : 'Please enter a 10-digit US mobile number.');
-    if (!firstName) return firstInput.focus();
-    if (!/^[2-9]\d{9}$/.test(digits)) return phoneInput.focus();
+    fieldError(unlockPhone, phoneOk(unlockPhone.value) ? '' : 'Please enter a 10-digit US mobile number.');
+    if (!phoneOk(unlockPhone.value)) return unlockPhone.focus();
     const quote = quoteReady();
     if (!quote || !answers.state) return show(1);
-    track('quote_contact_submit');
     sendBtn.disabled = true;
-    setStatus(contactStatus, 'Sending your code…');
+    setStatus(sendStatus, 'Sending your code…');
     const { http, body } = await api({
-      action: 'start', firstName, phone, state: answers.state, quote,
+      action: 'start', firstName: firstInput.value.trim(), phone: unlockPhone.value.trim(), state: answers.state, quote,
       consent: consentBox.checked, consentVersion: root!.dataset.consentVersion, verifyNoticeVersion: root!.dataset.verifyVersion,
       source: sourceInfo(),
     });
     sendBtn.disabled = false;
     if (http !== 200 || body.status !== 'sent') {
-      setStatus(contactStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
-      contactStatus.focus();
+      setStatus(sendStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
+      sendStatus.focus();
       return;
     }
     track('quote_sms_request');
     leadId = body.lead;
     testBanner.hidden = !body.testMode;
-    setStatus(contactStatus, '');
+    setStatus(sendStatus, '');
     $('[data-qf-masked]').textContent = body.masked;
+    sendForm.hidden = true;
+    verifyForm.hidden = false;
+    setStatus(verifyStatus, '');
+    codeInput.value = '';
     cooldown(body.resendAfterMs ?? 30000);
-    complete(6);
-    show(7);
-    $<HTMLInputElement>('#qf-code').value = '';
-    $<HTMLInputElement>('#qf-code').focus();
+    codeInput.focus();
   });
 
-  // Step 7: verify.
-  const verifyForm = $<HTMLFormElement>('[data-qf-verify]');
-  const codeInput = $<HTMLInputElement>('#qf-code');
-  const verifyStatus = $('[data-qf-verify-status]');
-  const verifyBtn = $<HTMLButtonElement>('[data-qf-verify-btn]');
   codeInput.addEventListener('input', () => {
     codeInput.value = codeInput.value.replace(/\D/g, '').slice(0, 6);
   });
@@ -251,7 +269,7 @@ if (root) {
     complete(7);
     setStatus(verifyStatus, '');
     if (body.notify) void notifyRandy(body.notify);
-    openResults(body.quote as Quote, body.testMode);
+    unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
   });
   resendBtn.addEventListener('click', async () => {
     resendBtn.disabled = true;
@@ -266,18 +284,18 @@ if (root) {
     }
   });
   $('[data-qf-change]').addEventListener('click', () => {
-    show(6);
-    phoneInput.focus();
-    phoneInput.select();
+    verifyForm.hidden = true;
+    sendForm.hidden = false;
+    unlockPhone.focus();
+    unlockPhone.select();
   });
 
   /** Randy's notification through the existing Formspark website form. */
   async function notifyRandy(fields: Record<string, string>) {
     const token = await turnstile.token();
     if (!token) return false;
-    const source = leadSourceFields();
     const data: Record<string, string> = { ...fields, 'cf-turnstile-response': token };
-    for (const [k, v] of Object.entries(source)) if (v) data[k] = v;
+    for (const [k, v] of Object.entries(leadSourceFields())) if (v) data[k] = v;
     try {
       const res = await fetch(lead.formspark.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
       turnstile.reset();
@@ -288,20 +306,38 @@ if (root) {
     }
   }
 
-  // Step 8: results with free repricing.
+  // Step 7 (unlocked): live prices with free repricing. Carrier names and
+  // logos stay blurred; the browser only ever gets attribution codes.
   const adjust = $<HTMLFormElement>('[data-qf-adjust]');
   const adjOther = $('[data-qf-adj-other]');
   const adjOtherInput = $<HTMLInputElement>('#qf-adj-other');
   const adjOtherError = $('[data-qf-adj-other-error]');
   const live = $('[data-qf-live]');
   const applyStatus = $('[data-qf-apply-status]');
+  const pricing = steps.get(7)!;
   const cards = new Map(Array.from(root.querySelectorAll<HTMLElement>('[data-qf-card]')).map((el) => [el.dataset.qfCard!, el]));
   const cache = new Map<string, Category[]>();
   let shown: { quote: Quote; categories: Category[] } | null = null;
   let timer: number | undefined;
   let seq = 0;
   let firstView = true;
-  let testMode = false;
+
+  // Safe stand-ins for the blurred, locked cards: never real prices.
+  const STAND_INS = ['$38.47', '$52.19', '$71.36'];
+  function lockCards() {
+    unlocked = false;
+    pricing.dataset.locked = 'true';
+    adjust.hidden = true;
+    unlockPanel.hidden = false;
+    let i = 0;
+    for (const el of cards.values()) {
+      el.dataset.state = 'locked';
+      const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
+      amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
+      el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
+      el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+    }
+  }
 
   function fillAdjust(q: Quote) {
     ($('#qf-adj-age') as HTMLSelectElement).value = String(q.age);
@@ -339,6 +375,7 @@ if (root) {
       state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
     el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = state !== 'ok';
+    if (state === 'loading') return;
     const ids = cat?.attribution?.length ? cat.attribution : [''];
     el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(
       ...ids.map((id) => {
@@ -373,16 +410,18 @@ if (root) {
     const hit = cache.get(k);
     if (hit) return render(quote, hit);
     const mine = ++seq;
-    for (const el of cards.values()) if (el.dataset.state !== 'ok') setCard(el, null, 'loading', 'Loading prices…');
     try {
       const res = await fetch('/api/price-explorer/', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: k, credentials: 'same-origin' });
       const body = await res.json().catch(() => ({}));
       if (mine !== seq) return;
       if (res.status === 401) {
-        // The verified session ended: back to the contact step.
+        // The verified session ended: back to the locked pricing screen.
         shown = null;
-        show(6);
-        setStatus(contactStatus, 'Please verify your phone number again to see prices.', true);
+        lockCards();
+        sendForm.hidden = false;
+        verifyForm.hidden = true;
+        show(7);
+        setStatus(sendStatus, 'Please verify your phone number again to see prices.', true);
         return;
       }
       if (!res.ok || body.status !== 'ok') {
@@ -409,50 +448,121 @@ if (root) {
   adjOtherInput.addEventListener('input', () => adjust.dispatchEvent(new Event('change')));
   adjust.addEventListener('submit', (e) => e.preventDefault());
 
-  function openResults(quote: Quote, test: boolean) {
-    testMode = Boolean(test);
-    testBanner.hidden = !testMode;
+  /** Reveal prices in place (no navigation, no reload). */
+  function unlock(quote: Quote, test: boolean) {
+    unlocked = true;
+    pricing.dataset.locked = 'false';
+    testBanner.hidden = !test;
+    unlockPanel.hidden = true;
+    adjust.hidden = false;
     fillAdjust(quote);
-    show(8);
+    if (current !== 7) show(7);
+    else show(7, false);
     void reprice(quote);
   }
+
+  // Apply Now -> server records the choice -> carrier-specific questions.
+  const intakeTitle = $('[data-qf-intake-title]');
+  const intakeSub = $('[data-qf-intake-sub]');
+  const intakeQ = $('[data-qf-intake-q]');
+  const intakeCount = $('[data-qf-intake-count]');
+  const intakeText = $('[data-qf-intake-text]');
+  const intakeDone = $('[data-qf-intake-done]');
+  const intakeDoneText = $('[data-qf-intake-done-text]');
+  const intakeStatus = $('[data-qf-intake-status]');
+  let intakeCategory = '';
+  let questionId = '';
+  let applyNotified = true;
+  let completed = false;
+
+  function intakeFinished(reason: string, flag: string | null) {
+    intakeQ.hidden = true;
+    intakeDone.hidden = false;
+    intakeDoneText.textContent =
+      reason === 'guaranteed-issue' ? 'No health questions asked. Your selection was saved.'
+      : flag === 'may-not-qualify' ? 'Thank you. Your answers were saved, and Funeral Funds can help you find other coverage.'
+      : reason === 'no-question-set' ? 'Your selection was saved.'
+      : 'Thank you. Your answers were saved.';
+  }
+  function finish() {
+    if (completed) return;
+    completed = true;
+    if (!testMode() && applyNotified) {
+      // Lead completed: /help/ counts it once (tracking.ts).
+      try {
+        sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
+      } catch {}
+    }
+    location.assign(lead.formspark.successPath);
+  }
+  const testMode = () => !testBanner.hidden;
+  $('[data-qf-intake-finish]').addEventListener('click', finish);
+
+  async function intakeStep(body: Record<string, unknown>) {
+    setStatus(intakeStatus, '');
+    const r = await api(body);
+    if (r.http === 401) {
+      lockCards();
+      show(7);
+      return;
+    }
+    if (r.http !== 200) {
+      setStatus(intakeStatus, r.body.message ?? `Sorry, something went wrong. Please call ${lead.phone.display}.`, true);
+      return;
+    }
+    if (r.body.notify) void notifyRandy(r.body.notify);
+    if (r.body.status === 'question') {
+      const q = r.body.question;
+      questionId = q.id;
+      intakeQ.hidden = false;
+      intakeDone.hidden = true;
+      intakeCount.textContent = `Question ${q.index} of ${q.total}`;
+      intakeText.textContent = q.text;
+      intakeText.focus?.();
+      return;
+    }
+    intakeFinished(r.body.reason, r.body.flag);
+  }
+  root.querySelectorAll<HTMLButtonElement>('[data-qf-answer]').forEach((btn) =>
+    btn.addEventListener('click', () => intakeStep({ action: 'intake-answer', category: intakeCategory, questionId, answer: btn.dataset.qfAnswer })),
+  );
 
   for (const [id, el] of cards) {
     el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.addEventListener('click', async (e) => {
       const btn = e.currentTarget as HTMLButtonElement;
-      if (!shown) return;
+      if (!shown || !unlocked) return;
       const cat = shown.categories.find((c) => c.id === id);
       if (!cat || cat.status !== 'ok') return;
       btn.disabled = true;
       setStatus(applyStatus, 'Saving your selection…');
       track('quote_apply_now', { category: id });
       const { http, body } = await api({ action: 'apply', category: id, quote: shown.quote });
+      btn.disabled = false;
       if (http === 401) {
-        show(6);
-        setStatus(contactStatus, 'Please verify your phone number again.', true);
+        lockCards();
+        show(7);
         return;
       }
       if (http !== 200 || body.status !== 'ok') {
-        btn.disabled = false;
         setStatus(applyStatus, body.message ?? `Sorry, something went wrong. Please call ${lead.phone.display}.`, true);
         return;
       }
-      let delivered = true;
-      if (body.notify) delivered = await notifyRandy(body.notify);
-      if (!body.testMode && delivered) {
-        // Lead completed: /help/ counts it once (tracking.ts).
-        try {
-          sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
-        } catch {}
-      }
-      location.assign(lead.formspark.successPath);
+      setStatus(applyStatus, '');
+      applyNotified = body.notify ? await notifyRandy(body.notify) : true;
+      intakeCategory = id;
+      intakeTitle.textContent = 'Application questions';
+      intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;
+      intakeQ.hidden = true;
+      intakeDone.hidden = true;
+      show(8);
+      await intakeStep({ action: 'intake-next', category: id });
     });
   }
 
-  // Start: a verified session goes straight to the results.
+  // Start: a verified session goes straight to the live prices.
   (async () => {
     const { http, body } = await api({ action: 'session' });
-    if (http === 200 && body.status === 'verified' && body.quote) return openResults(quoteReady() ?? (body.quote as Quote), body.testMode);
+    if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
     show(1, false);
   })();
 }

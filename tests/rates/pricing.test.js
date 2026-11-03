@@ -37,23 +37,27 @@ test('mean of cents rounds half up', () => {
   assert.equal(meanCents([5000, 5000]), 5000);
 });
 
-test('Lowest Preferred is pending until preferred products are verified', () => {
+test('Lowest Preferred Rate is Mutual of Omaha Living Promise Level (exact engine premium, its own limits)', () => {
   const c = byId(priceCategories(engine, input()))['lowest-preferred'];
-  assert.equal(c.status, 'pending');
-  assert.equal(c.monthlyPremium, undefined);
-});
-
-test('Average Standard is the mean of every product in its set, never one carrier', () => {
-  const c = byId(priceCategories(engine, input()))['average-standard'];
-  const a = engine.quote({ productId: 'aetna-accendo-standard', ...input(), state: 'TX' });
   const m = engine.quote({ productId: 'moo-living-promise-level', ...input(), state: 'TX' });
   assert.equal(c.status, 'ok');
-  assert.equal(c.monthlyPremiumCents, meanCents([a.monthlyPremiumCents, m.monthlyPremiumCents]));
-  assert.deepEqual(c.attribution, ['FF-101', 'FF-102']);
-  // Ages 86-89: only Aetna is available, so no average is shown.
-  const old = byId(priceCategories(engine, input({ age: 87 })))['average-standard'];
-  assert.equal(old.status, 'unavailable');
-  assert.equal(old.monthlyPremium, undefined);
+  assert.equal(c.monthlyPremium, m.monthlyPremium);
+  assert.deepEqual(c.attribution, ['FF-102']);
+  // Smokers and women use their own MOO tables.
+  const s = engine.quote({ productId: 'moo-living-promise-level', ...input({ tobacco: true, gender: 'female' }), state: 'TX' });
+  assert.equal(byId(priceCategories(engine, input({ tobacco: true, gender: 'female' })))['lowest-preferred'].monthlyPremium, s.monthlyPremium);
+  // MOO issues to age 85: ages 86-89 are unavailable, never forced.
+  assert.equal(byId(priceCategories(engine, input({ age: 86 })))['lowest-preferred'].status, 'unavailable');
+});
+
+test('Average Standard Rate is pending: one verified standard product is never shown as an average', () => {
+  for (const age of [50, 65, 89]) {
+    const c = byId(priceCategories(engine, input({ age })))['average-standard'];
+    assert.equal(c.status, 'pending');
+    assert.equal(c.monthlyPremium, undefined);
+  }
+  assert.deepEqual(CATEGORIES.find((c) => c.id === 'average-standard').products, ['aetna-accendo-standard']);
+  assert.ok(!CATEGORIES.find((c) => c.id === 'average-standard').products.includes('moo-living-promise-level'));
 });
 
 test('Guaranteed Acceptance uses Gerber where available; tobacco never changes it', () => {

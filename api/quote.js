@@ -22,7 +22,7 @@ const store = raw ? quoteStore(raw, process.env) : null;
 const getEngine = raw ? () => loadRateEngine(raw, process.env) : undefined;
 
 export async function POST(request) {
-  return handleQuote(request, process.env, { store, getEngine });
+  return handleQuote(request, process.env, { store, raw, getEngine });
 }
 
 export async function GET(request) {

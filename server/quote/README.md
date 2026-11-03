@@ -28,6 +28,26 @@ Randy is notified through the existing Formspark website form, with a
 Turnstile token, once per verified lead and once per Apply Now category. The
 server decides when. Test mode never notifies.
 
+## v2.5 pricing screen and Apply Now intake
+
+- After name and mobile, the pricing screen shows the three cards with
+  blurred, safe stand-ins: fixed example amounts and generic company text,
+  never real prices or carriers. The browser can't get prices until the
+  server verifies the phone. The Unlock Your Insurance Prices panel has the
+  number prefilled; verifying reveals the prices in place. Carrier names and
+  logos stay blurred.
+- Categories: Lowest Preferred = Mutual of Omaha Living Promise Level;
+  Average Standard = mean of at least two verified standard products, so it
+  is pending while Aetna Standard is the only one; Guaranteed Acceptance =
+  Gerber ACH.
+- Apply Now -> `intake-next` / `intake-answer`: the carrier's own questions,
+  one at a time, from the published Health Question Search records (never
+  the sample). Every answer is stored with its outcome. A YES the carrier
+  treats as a decline stops that carrier's questions and flags
+  `may-not-qualify`; the lead stays open. Gerber (guaranteed issue) has no
+  questions; Mutual of Omaha has no question set in the database yet, so the
+  visitor continues to agent assistance.
+
 ## Environment variables (server-side only)
 
 | Variable | Purpose |

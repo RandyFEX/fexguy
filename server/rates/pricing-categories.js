@@ -5,15 +5,17 @@
 // (createEngine().quote) and nothing is estimated or extrapolated.
 //
 //   Lowest Preferred Rate       lowest verified premium among the preferred
-//                               products in the comparison. None are verified
-//                               yet (Trinity Life, Family Benefit Life and
-//                               American Amicable are planned), so the
-//                               category is "pending".
+//                               products in the comparison: Mutual of Omaha
+//                               Living Promise Level (Randy, Quote System
+//                               v2.5); Trinity Life, Family Benefit Life and
+//                               American Amicable join when verified.
 //   Average Standard Rate       the arithmetic mean of the standard-class
-//                               premiums of every product in its set, and
-//                               only when every one of them is available for
-//                               the inputs (never one carrier labelled as an
-//                               average).
+//                               premiums of every product in its set, only
+//                               when the set has at least MIN_AVERAGE_PRODUCTS
+//                               products and every one is available for the
+//                               inputs (never one carrier labelled as an
+//                               average). Aetna Standard is the only verified
+//                               standard product left, so this is "pending".
 //   Guaranteed Acceptance Rate  the verified guaranteed-acceptance product
 //                               available for the inputs.
 //
@@ -37,14 +39,17 @@ const code = (id) => /** @type {Record<string, string>} */ (ATTRIBUTION_CODES)[i
 export const COVERAGE = { min: 5000, max: 25000, presets: [5000, 10000, 15000, 20000, 25000], default: 10000 };
 export const AGES = { min: 50, max: 89 };
 
+/** An average needs at least this many verified products. */
+export const MIN_AVERAGE_PRODUCTS = 2;
+
 /** @typedef {'lowest' | 'average' | 'guaranteed'} CategoryRule */
 export const CATEGORIES = [
-  { id: 'lowest-preferred', label: 'Lowest Preferred Rate', rule: /** @type {CategoryRule} */ ('lowest'), products: [] },
+  { id: 'lowest-preferred', label: 'Lowest Preferred Rate', rule: /** @type {CategoryRule} */ ('lowest'), products: ['moo-living-promise-level'] },
   {
     id: 'average-standard',
     label: 'Average Standard Rate',
     rule: /** @type {CategoryRule} */ ('average'),
-    products: ['aetna-accendo-standard', 'moo-living-promise-level'],
+    products: ['aetna-accendo-standard'],
   },
   { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate', rule: /** @type {CategoryRule} */ ('guaranteed'), products: ['gerber-guaranteed-life'] },
 ];
@@ -70,7 +75,7 @@ export function priceCategories(engine, input) {
   const applicant = { ...input, state: REFERENCE_STATE };
   return CATEGORIES.map((cat) => {
     const base = { id: cat.id, label: cat.label, attribution: [] };
-    if (cat.products.length === 0)
+    if (cat.products.length === 0 || (cat.rule === 'average' && cat.products.length < MIN_AVERAGE_PRODUCTS))
       return { ...base, status: 'pending', message: 'Rates for this category are being added.' };
 
     const quotes = cat.products.map((productId) => engine.quote({ ...applicant, productId }));

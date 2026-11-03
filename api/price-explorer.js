@@ -17,10 +17,15 @@ const cfg = redisConfig(process.env);
 const store = cfg ? upstashStore(cfg) : null;
 const quotes = store ? quoteStore(store, process.env) : null;
 const getEngine = store ? () => loadRateEngine(store, process.env) : undefined;
-const isVerified = async (request) => Boolean(quotes && (await verifiedLead(request, process.env, quotes)));
+// Returns the verified lead id (or false); repricing updates that lead's current quote.
+const isVerified = async (request) => (quotes ? (await verifiedLead(request, process.env, quotes))?.leadId ?? false : false);
+const onPriced = async (leadId, input) => {
+  const record = await quotes.getLead(leadId);
+  if (record) await quotes.putLead(leadId, { ...record, lastQuote: input, lastQuoteAt: new Date().toISOString() });
+};
 
 export async function POST(request) {
-  return handlePriceExplorer(request, process.env, { store, getEngine, isVerified });
+  return handlePriceExplorer(request, process.env, { store, getEngine, isVerified, onPriced });
 }
 
 export async function GET(request) {

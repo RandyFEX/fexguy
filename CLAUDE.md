@@ -1223,10 +1223,17 @@ scope protection wins.
   tobacco, coverage $5,000-$25,000, state as lead information only), first
   name + mobile, Twilio Verify SMS code, then the three cards with the exact
   labels Lowest Preferred Rate, Average Standard Rate, Guaranteed
-  Acceptance Rate (`server/rates/pricing-categories.js`: preferred = no
-  verified products yet, "Coming soon"; average = mean of Aetna Standard and
-  MOO Level, only when both are available; guaranteed = Gerber), freely
-  repriceable after verification. Representative (Texas) rates for every
+  Acceptance Rate (`server/rates/pricing-categories.js`, v2.5: preferred =
+  Mutual of Omaha Living Promise Level; average = mean of at least two
+  verified standard products, so "Coming soon" while Aetna Standard is the
+  only one; guaranteed = Gerber ACH), freely repriceable after verification.
+  v2.5: after name + mobile the pricing screen shows blurred safe stand-ins
+  (never real prices or carriers) with the Unlock Your Insurance Prices
+  panel (number prefilled); verification reveals prices in place; carrier
+  names and logos stay blurred. Apply Now opens carrier-specific health
+  questions one at a time from the published Health Question Search records
+  (`server/quote/intake.js`: Aetna yes; Gerber guaranteed issue, none; MOO
+  no question set yet, agent continuation), answers kept in the evidence. Representative (Texas) rates for every
   state. `api/price-explorer.js` returns prices only for a server-verified
   session (HttpOnly signed cookie checked against Redis) with opaque codes
   FF-101/102/201, never product ids, rates or keys. Previews without Twilio

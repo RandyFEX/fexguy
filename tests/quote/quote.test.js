@@ -251,3 +251,106 @@ test('preview and production records never mix', async () => {
   assert.ok(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead));
   assert.equal(await quoteStore(redis.store, { VERCEL_ENV: 'production' }).getLead(start.body.lead), null);
 });
+
+// ---- Quote System v2.5: Apply Now -> carrier-specific health questions ----
+import { config as hqsConfig } from '../../server/health-search/config.generated.js';
+import { intakePlan, INTAKE_CARRIER } from '../../server/quote/intake.js';
+
+function fakeAetnaQuestions() {
+  const concept = hqsConfig.concepts[0].id;
+  const qs = [];
+  for (const [sec, n, rule] of [['Part A', 13, 'part-a'], ['Part B', 5, 'part-b'], ['Part C', 4, 'part-c']])
+    for (let i = 1; i <= n; i++)
+      qs.push({ id: `aetna-${sec.slice(-1).toLowerCase()}${i}`, carrierId: 'aetna', section: sec, number: String(i), text: `Test ${sec} question ${i}?`, yes: { rule }, no: { classification: 'none', explanation: 'No effect.' }, search: { direct: [concept], related: [] } });
+  return { format: 1, target: 'preview', publishedAt: 't', total: qs.length, complete: false, questions: qs };
+}
+
+async function verifiedClient() {
+  const c = client(PREVIEW);
+  const start = await c.call(startBody());
+  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const quoteClient = { ...c, raw: redis.store };
+  const call = async (body) => {
+    const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie }, body: JSON.stringify(body) }),
+      PREVIEW, { store: c.store, raw: redis.store, getEngine: async () => ({ engine }) });
+    return { http: res.status, body: await res.json() };
+  };
+  return { ...quoteClient, lead: start.body.lead, call };
+}
+
+test('intake map: Aetna -> its 22 verified questions; Gerber guaranteed issue; Mutual of Omaha no question set', async () => {
+  assert.deepEqual(INTAKE_CARRIER, { 'FF-101': 'aetna', 'FF-102': null, 'FF-201': 'gerber-life' });
+  await redis.store.set('hqs:questions:preview', JSON.stringify(fakeAetnaQuestions()));
+  const a = await intakePlan(redis.store, PREVIEW, 'FF-101');
+  assert.equal(a.mode, 'questions');
+  assert.equal(a.questions.length, 22);
+  assert.deepEqual(await intakePlan(redis.store, PREVIEW, 'FF-201'), { mode: 'none', reason: 'guaranteed-issue', carrierId: 'gerber-life' });
+  assert.deepEqual(await intakePlan(redis.store, PREVIEW, 'FF-102'), { mode: 'none', reason: 'no-question-set', carrierId: null });
+  // Never the fictional sample: no published records = no questions.
+  await redis.command(['DEL', 'hqs:questions:preview']);
+  assert.equal((await intakePlan(redis.store, PREVIEW, 'FF-101')).reason, 'no-question-set');
+});
+
+test('Apply Now on Guaranteed Acceptance (Gerber): no health questions, application interest recorded', async () => {
+  const c = await verifiedClient();
+  const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  assert.deepEqual(apply.body.intake, { mode: 'none', reason: 'guaranteed-issue' });
+  const next = await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
+  assert.deepEqual([next.body.status, next.body.reason], ['done', 'guaranteed-issue']);
+  const r = await c.store.getLead(c.lead);
+  assert.equal(r.applications[0].attribution[0], 'FF-201');
+  assert.equal(r.intakes['guaranteed-acceptance'].status, 'no-questions');
+});
+
+test('Apply Now on Lowest Preferred (Mutual of Omaha): agent-assistance continuation, nothing invented', async () => {
+  const c = await verifiedClient();
+  const apply = await c.call({ action: 'apply', category: 'lowest-preferred', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  assert.equal(apply.body.status, 'ok');
+  assert.deepEqual(apply.body.intake, { mode: 'none', reason: 'no-question-set' });
+  assert.equal((await c.store.getLead(c.lead)).applications[0].attribution[0], 'FF-102');
+  assert.equal((await c.call({ action: 'intake-next', category: 'lowest-preferred' })).body.reason, 'no-question-set');
+  assert.equal((await c.call({ action: 'apply', category: 'average-standard', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } })).http, 409, 'pending category cannot be applied for');
+});
+
+test('carrier questions one at a time; answers kept; a declining YES stops and flags without ending the lead', async () => {
+  await redis.store.set('hqs:questions:preview', JSON.stringify(fakeAetnaQuestions()));
+  const c = await verifiedClient();
+  // An Aetna application on the lead (Aetna has the question set).
+  const rec = await c.store.getLead(c.lead);
+  rec.applications = [{ at: 't', category: 'Average Standard Rate', monthlyPremium: '1.00', quote: rec.quoteAtSubmission, attribution: ['FF-101'] }];
+  await c.store.putLead(c.lead, rec);
+  assert.equal((await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' })).http, 409, 'no Apply Now for that category');
+  let r = await c.call({ action: 'intake-next', category: 'average-standard' });
+  assert.equal(r.body.question.index, 1);
+  assert.equal(r.body.question.total, 22);
+  assert.ok(!('yes' in r.body.question) && !('no' in r.body.question), 'no outcomes or rules sent to the browser');
+  // Wrong question id is refused (answers must follow the order).
+  assert.equal((await c.call({ action: 'intake-answer', category: 'average-standard', questionId: 'aetna-a5', answer: 'no' })).http, 400);
+  for (let i = 1; i <= 2; i++) {
+    r = await c.call({ action: 'intake-answer', category: 'average-standard', questionId: r.body.question.id, answer: 'no' });
+    assert.equal(r.body.question.index, i + 1);
+  }
+  r = await c.call({ action: 'intake-answer', category: 'average-standard', questionId: r.body.question.id, answer: 'yes' });
+  assert.deepEqual([r.body.status, r.body.reason, r.body.flag], ['done', 'stopped', 'may-not-qualify']);
+  const saved = (await c.store.getLead(c.lead)).intakes['average-standard'];
+  assert.deepEqual(saved.answers.map((a) => [a.questionId, a.answer, a.outcome]), [['aetna-a1', 'no', 'none'], ['aetna-a2', 'no', 'none'], ['aetna-a3', 'yes', 'decline']]);
+  assert.equal(saved.answers[0].text, 'Test Part A question 1?');
+  const evs = (await c.store.events(c.lead)).filter((e) => e.type === 'intake-answer');
+  assert.equal(evs.length, 3);
+  await redis.command(['DEL', 'hqs:questions:preview']);
+});
+
+test('repricing updates the lead\'s current quote; session restore returns it', async () => {
+  const c = client(PREVIEW);
+  const start = await c.call(startBody());
+  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const q = { age: 77, gender: 'male', tobacco: true, coverage: 15000 };
+  const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie }, body: JSON.stringify(q) }),
+    { ...PREVIEW, HEALTH_SEARCH_SECRET: SECRET }, {
+      store: redis.store, getEngine: async () => ({ engine }),
+      isVerified: async (r) => (await verifiedLead(r, PREVIEW, c.store))?.leadId ?? false,
+      onPriced: async (leadId, input) => { const rec = await c.store.getLead(leadId); await c.store.putLead(leadId, { ...rec, lastQuote: input }); },
+    });
+  assert.equal(res.status, 200);
+  assert.deepEqual((await c.call({ action: 'session' })).body.quote, q);
+});

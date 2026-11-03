@@ -73,7 +73,7 @@ export function parseInput(b) {
 
 /**
  * @typedef {{ eval(script: string, keys: string[], args: (string | number)[]): Promise<unknown> }} LimitStore
- * @typedef {{ store: LimitStore | null, getEngine?: () => Promise<{ engine: any, publishedAt: string } | null>, isVerified?: (request: Request) => Promise<boolean>, now?: () => number }} Deps
+ * @typedef {{ store: LimitStore | null, getEngine?: () => Promise<{ engine: any, publishedAt: string } | null>, isVerified?: (request: Request) => Promise<unknown>, onPriced?: (verified: unknown, input: any) => Promise<unknown>, now?: () => number }} Deps
  * @param {Request} request @param {Record<string, string | undefined>} env @param {Deps} deps
  */
 export async function handlePriceExplorer(request, env, deps) {
@@ -110,5 +110,8 @@ export async function handlePriceExplorer(request, env, deps) {
 
   const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
   if (!loaded) return json(503, { status: 'unavailable', message: 'Prices are not available right now.' });
-  return json(200, { status: 'ok', state: 'TX', inputs: input, categories: priceCategories(loaded.engine, input) });
+  const categories = priceCategories(loaded.engine, input);
+  // Keep the verified lead's current quote selections up to date (best effort).
+  if (deps.onPriced) await deps.onPriced(verified, input).catch(() => {});
+  return json(200, { status: 'ok', state: 'TX', inputs: input, categories });
 }

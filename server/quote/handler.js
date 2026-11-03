@@ -24,6 +24,7 @@ import { verifyClient } from './twilio.js';
 import { SESSION_MS, newSid, sessionKey, setCookie, sign, verifiedLead } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
+import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 
 export const PENDING_MS = 10 * 60 * 1000;
 export const RESEND_COOLDOWN_MS = 30 * 1000;
@@ -83,7 +84,7 @@ const quoteFields = (q) => ({
 
 /**
  * @typedef {ReturnType<typeof import('./store.js').quoteStore>} QuoteStore
- * @typedef {{ store: QuoteStore | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, now?: () => number }} Deps
+ * @typedef {{ store: QuoteStore | null, raw?: { get(key: string): Promise<string | null> } | null, getEngine?: () => Promise<{ engine: any } | null>, fetchImpl?: typeof fetch, now?: () => number }} Deps
  * @param {Request} request @param {Record<string, string | undefined>} env @param {Deps} deps
  */
 export async function handleQuote(request, env, deps) {
@@ -274,7 +275,62 @@ export async function handleQuote(request, env, deps) {
             ...quoteFields(quote),
           }
         : null;
-      return json(200, { status: 'ok', category: category.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify });
+      const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
+      const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
+      return json(200, { status: 'ok', category: category.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', notify, intake });
+    }
+
+    // Carrier-specific health questions, one at a time, after Apply Now.
+    case 'intake-next':
+    case 'intake-answer': {
+      const v = await verifiedLead(request, env, store, now);
+      if (!v) return json(401, { status: 'verify-required' });
+      const category = CATEGORIES.find((c) => c.id === body.category);
+      if (!category) return bad();
+      const record = await store.getLead(v.leadId);
+      if (!record) return json(401, { status: 'verify-required' });
+      const applied = [...(record.applications ?? [])].reverse().find((a) => a.category === category.label);
+      if (!applied) return json(409, { status: 'apply-first' });
+      const code = applied.attribution?.[0] ?? '';
+      const plan = deps.raw ? await intakePlan(deps.raw, env, code) : { mode: 'none', reason: 'no-question-set', carrierId: null };
+      record.intakes = record.intakes ?? {};
+      const intake = (record.intakes[category.id] ??= { code, carrierId: plan.carrierId ?? null, startedAt: iso, status: 'in-progress', flag: null, answers: [] });
+      if (plan.mode !== 'questions') {
+        intake.status = 'no-questions';
+        intake.reason = plan.reason;
+        await store.putLead(v.leadId, record);
+        return json(200, { status: 'done', reason: plan.reason, flag: null });
+      }
+      if (body.action === 'intake-answer' && intake.status === 'in-progress') {
+        const expected = plan.questions[intake.answers.length];
+        if (!expected || body.questionId !== String(expected.id) || !['yes', 'no'].includes(body.answer)) return bad();
+        const outcome = outcomeOf(plan.carrierId, expected, body.answer);
+        intake.answers.push({ at: iso, questionId: String(expected.id), section: expected.section, number: expected.number, text: expected.text, answer: body.answer, outcome });
+        await store.event(v.leadId, { at: iso, type: 'intake-answer', category: category.label, questionId: String(expected.id), answer: body.answer, outcome });
+        // A YES that the carrier treats as a decline: stop this carrier's
+        // questions, keep the lead, and offer other coverage help.
+        if (outcome === 'decline') {
+          intake.status = 'stopped';
+          intake.flag = 'may-not-qualify';
+        } else if (intake.answers.length >= plan.questions.length) intake.status = 'complete';
+      }
+      await store.putLead(v.leadId, record);
+      if (intake.status !== 'in-progress') {
+        const notify = record.mode !== 'test' && (await store.once(v.leadId, `intake:${category.id}`))
+          ? {
+              'Quote Event': 'Health questions answered',
+              'Quote Lead ID': v.leadId,
+              'First Name': record.firstName,
+              'Phone Number': displayPhone(record.phone),
+              'Quote Category': category.label,
+              'Health Answers': intake.answers.map((a) => `${a.section} ${a.number}: ${a.answer.toUpperCase()}`).join('; '),
+              'Health Review': intake.flag === 'may-not-qualify' ? 'A YES answer may rule out this plan: review other coverage' : 'No answer ruled out this plan',
+            }
+          : null;
+        return json(200, { status: 'done', reason: intake.status, flag: intake.flag, notify });
+      }
+      const next = plan.questions[intake.answers.length];
+      return json(200, { status: 'question', question: publicQuestion(next, intake.answers.length + 1, plan.questions.length) });
     }
 
     default:
