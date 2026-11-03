@@ -9,6 +9,12 @@
     },
     "api/rate-quote.js": {
       "maxDuration": 10
+    },
+    "api/price-explorer.js": {
+      "maxDuration": 10
+    },
+    "api/quote.js": {
+      "maxDuration": 15
     }
   },
   "trailingSlash": true,
@@ -1526,6 +1532,11 @@
     {
       "source": "/terms-conditions/",
       "destination": "/terms-of-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/final-expense-insurance-prices/",
+      "destination": "/free-quote/",
       "statusCode": 301
     },
     {

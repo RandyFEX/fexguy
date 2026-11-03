@@ -55,7 +55,12 @@ is in place; see src/content/README.md for how pages were migrated.
   in `src/components/Navigation.astro` (the header contact from 48rem; the
   phone menu shows the plain number) and the standalone landing headers (/facebook/, /free-quote/,
   /help/) use `src/components/HeaderPhone.astro`. `npm run verify` checks
-  every built header: one `data-header-phone` link with that label and icon,
+  every built header: one `data-header-phone` link with that label and icon
+  (one exception, Randy, Quote System v3.6: the quote funnel's minimal
+  header on /free-quote/ (moved from /final-expense-insurance-prices/ in
+  v5.8) shows a lock and "Secure
+  Form" above the icon and number, with no label; HeaderPhone
+  `showLabel={false}`; the site header and other headers are unchanged),
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
   /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
 - **Header logo link (Randy, November 2026):** the upper-left Funeral Funds
@@ -1075,8 +1080,8 @@ scope protection wins.
   `src/config/lead.ts` and `src/scripts/quote-form.ts` (it loads the ~4 MB
   embed late; keep it that way). Setting `quoteForm: 'fillout'` restores it
   (then update /privacy-policy/, which names Formspark).
-- Sidebar form: frontmatter `sidebar: true` (pages that had the WordPress
-  sidebar). In-content form: put `<div data-quote-form></div>` on its own line
+- Sidebar: frontmatter `sidebar: true` (pages that had the WordPress
+  sidebar) shows the Get Prices module (v5.8, no form; see /free-quote/). In-content form: put `<div data-quote-form></div>` on its own line
   in the page body. At most one form per page.
 - Tracking (`src/scripts/tracking.ts`): GA4 `G-JMYZE458HQ` and Meta pixel
   `2351342698972751`, loaded directly — no GTM, Stape, server-side tagging,
@@ -1105,7 +1110,46 @@ scope protection wins.
   script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
-- **/free-quote/** (Randy, October 2026): the general life insurance quote
+- **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
+  v5.8): the interactive funnel (below, "Quote funnel") replaced the
+  callback form described in the next item and moved here from
+  /final-expense-insurance-prices/, which 301s to /free-quote/ (query
+  parameters pass through). One implementation: src/pages/free-quote.astro
+  (the migrated title, robots, social tags, JSON-LD and canonical kept;
+  hidden H1 "Request Life Insurance Quote"). The article sidebar's old lead
+  form was replaced by the "Get Prices" module (src/components/lead/
+  QuoteBox.astro, id="quote" so GET MY QUOTE still lands on it): "Who Needs
+  Coverage?" and the funnel's own Male/Female drawings
+  (src/components/quote/GenderChoice.astro, shared with the funnel), each a
+  link to /free-quote/?gender=...&entry=sidebar&origin=<article path> (UTM
+  values carried). The funnel then opens at the age question with that
+  choice made (Back changes it). src/scripts/quote-entry.ts keeps the
+  visit's entry (article sidebar with the article title and URL, the choice
+  and the time; campaign; or direct) in sessionStorage, removes the
+  gender/entry/origin parameters from the address bar, and sends it with
+  the contact submission (lead record `source.entryType`, `originTitle`,
+  `originUrl`, `entryGender`, `entryAt`; Randy's notifications show Entry
+  Location, Original Article, Original Article URL, Entry Gender, Entry
+  Time). Every GA4 quote_* event carries `entry_type` and `entry_path` (the
+  article's path only; nothing personal, nothing to Meta), plus
+  `quote_funnel_entry` and `quote_sidebar_select`. Test:
+  tests/quote/sidebar-entry.browser.mjs (in `npm run test:quote:browser`).
+  v5.9 (Randy): the module is titled "Get Pricing" and ends with "Prefer to
+  talk directly?" and an orange CALL NOW 888-862-9456 tel: button (GA4
+  `quote_module_call_click` with `entry_path` and `module_placement`; a tap,
+  never a completed call). Desktop (64rem+): Male above Female, sticky in
+  the sidebar column (scrolls inside itself on short screens). Phones and
+  tablets on ArticleLayout pages: a second copy inside the article, Male and
+  Female side by side, placed before the first top-level H2 that follows at
+  least 500 characters of article text (src/lib/article/inline-pricing.ts;
+  never inside a list, table, figure, quote or paragraph, never between a
+  heading and its text; fallback: after the article body); the sidebar copy
+  is hidden there, so one shows at a time, and the in-article copy has
+  id="quote" for GET MY QUOTE. The 21 ContentLayout sidebar pages keep the
+  single sidebar copy (after the content on phones). /free-quote/'s title
+  is "Free Burial Insurance Quotes | Compare Rates | Funeral Funds" (title,
+  og:title, twitter:title and JSON-LD names); it stays noindex.
+- **/free-quote/** (Randy, October 2026; superseded by v5.8 above): the general life insurance quote
   page (final expense, term, mortgage protection and other coverage),
   `src/pages/free-quote.astro` (landing layout; the migrated title, robots,
   social tags and JSON-LD unchanged; out of the sitemap, llms.txt and site
@@ -1214,7 +1258,143 @@ scope protection wins.
 - Unverified limits are reported, never invented: Aetna's face limits and
   state availability, and MOO's state availability, carry `verified: false`
   in every result until Randy supplies the carrier documents.
-- The engine assigns no tier labels; it isn't connected to any page yet.
+- The engine assigns no tier labels itself.
+- **Quote funnel** (Randy, November 2026, Pricing Explorer v1.0 then Quote
+  System v2.2; preview branch `claude/pricing-explorer`, PR #79, not merged):
+  /free-quote/ since v5.8, formerly /final-expense-insurance-prices/ (`src/pages/free-quote.astro`,
+  `src/scripts/quote-funnel.ts`, `server/quote/`, `api/quote.js`; see
+  server/quote/README.md). One question per screen (sex, age 50-89,
+  tobacco, coverage $5,000-$25,000, state as lead information only), first
+  name + mobile, Twilio Verify SMS code, then the three cards with the exact
+  labels Lowest Preferred Rate, Average Standard Rate, Guaranteed
+  Acceptance Rate (`server/rates/pricing-categories.js`: preferred = Mutual
+  of Omaha Living Promise Level; standard = Aetna Standard, labelled
+  "Standard Rate" while it is the only verified standard product (v2.7;
+  "Average Standard Rate", the mean, from two products); guaranteed =
+  Gerber ACH), freely repriceable after verification. v2.7: sessions are
+  visit-scoped (a tab-scoped visit id the server checks with the cookie):
+  every new visit or tab starts at Male/Female and must verify again;
+  Start New Quote ends the session (records kept); after verification
+  prices, carrier names and logos are fully shown (names come only from the
+  verified pricing API).
+  v2.8: compact header (H1 "Get Your Final Expense Insurance Quote", no
+  intro, no phone line or price explanations under the questions); pricing
+  screen order: cards, unlock panel (number already entered, Change Number
+  to edit), then the controls, Start New Quote and the representative-rates
+  note. v3.5: the page uses its own minimal layout (BaseLayout
+  `layout="landing"`, no sticky call): the `.qh-top` header (logo; "Secure
+  Form" with a lock over the phone icon and number, no label since v3.6) and a compact legal
+  footer (Privacy Policy, Terms of Use, Licenses, the footer disclaimer);
+  no site menus, page heading, pre-footer, address or full footer. Title
+  Case questions; step 4 "How Would You Use These Funds?" (Burial
+  Expenses, Cremation Expenses, Other Expenses); the contact screen shows
+  the selections and "No junk mail. No unwanted sales calls." above "See
+  My Instant Quotes". Cards: logo, sage category panel, plan, premium,
+  sage coverage-timing panel (First-Day Coverage for MOO Level and Aetna
+  Standard, 2-Year Waiting Period for Gerber), green Apply Now; logo,
+  plan and timing come only from the verified pricing response
+  (`CARRIER_DISPLAY`; authentic logos in public/images/carriers/: Mutual
+  of Omaha, Randy's CVS/aetna file (v3.6), Gerber Life; timing icons: a
+  check for first-day coverage, a calendar for the waiting period).
+  v3.7: the quote footer is only Privacy Policy | Terms of Use | Licenses
+  (no disclaimer paragraph; the legal pages hold it); the contact screen
+  shows "Our Promise: No Spam Calls. No Junk Mail." above the orange "See
+  My Instant Quotes" (black text, 4.06:1, large bold); each revealed card
+  ends with the orange "Call to Get Approved" tel:8888629456 link above
+  the green "Apply Online" button (hidden/disabled before verification).
+  A call tap fires the GA4-only `quote_call_click` event (carrier,
+  product, category, coverage, premium, a random per-visit quote ref,
+  time; nothing personal, nothing to Meta) and is kept in the lead record
+  (`callClicks`, server-priced, `call-click` action); a tap is never
+  recorded as a completed call or an approval. v3.8: Gerber's card line
+  reads "No Health Questions" (`CARRIER_DISPLAY` `subtitle`); the official
+  product name Guaranteed Life stays in records, attribution and analytics.
+  v4.1: every orange button (See My Instant Quotes, Text Me a Code,
+  Verify Code, Call to Get Approved) uses the homepage GET A QUOTE tokens
+  exactly (--color-cta #c2410c, --color-on-cta white, hover brightness
+  0.9) with bold white text (the v3.7 black text is gone); the contact
+  form is 40rem wide on desktop so the consent text fits in about three
+  lines at 16px; locked cards' disabled button reads "Unlock to See
+  Rates"; revealed cards: 48px orange call button above the 44px green
+  Apply Online, and compact one-line timing panels (5px padding).
+  v4.3: the unlock button reads "Text Me My Access Code"; revealed cards'
+  green button reads "Apply Online Now"; the representative-rates note
+  shows only after verification, directly under the adjustment controls
+  (above Start New Quote); the Age, Gender, Tobacco and Coverage labels
+  are centered over their own controls.
+  v4.5: one "Your Name" field (first name or full name, up to 60
+  characters; stored in `firstName`, "Name" in Randy's notifications) and
+  the mobile number are the only personal inputs (no email); the
+  instruction under the cards reads "Adjust Your Quote Below" (14px below
+  the cards); desktop heights: call 48px, Apply Online Now 40px (flex
+  centered), adjustment controls 40px, timing panels about 26px; phones
+  keep 44px touch targets.
+  v4.7: the results-screen selections are charcoal (#454B49, white text,
+  #454B49 border; unselected white with #173F35 text and border; the
+  questionnaire steps keep green); desktop: Apply Online Now and the
+  adjustment controls 36px, call 48px, timing panels 26px; tighter cards
+  (4.5rem logo area, 8px row gap, centered product line, 16px padding),
+  12px under the cards; the code instruction reads "Enter the 6-digit code
+  sent to (***) ***-1234." in dark #1F2926 16px text, number in bold.
+  Correction v3.7 (after v4.7): the Unlock Your Rates panel reads, in
+  order, the red title, "We'll text a 6-digit verification code to your
+  mobile number." (bold black), the masked number (bold black) with
+  Change Number, the orange "Text Me My Access Code", then "Message and
+  data rates may apply." in small gray text under the button; after the
+  code is requested, a bold black "Enter the 6-digit code" heading. Both
+  notice lines come only from `server/quote/consent.js`
+  (`VERIFY_NOTICE_EXPLAIN`, `VERIFY_NOTICE_RATES`; evidence version v3).
+  v5.0 (replaces that panel order): the red title, the orange "Text Me
+  My Access Code", one sentence "We'll text a 6-digit verification code
+  to (***) ***-1234." (bold black; evidence v4 stores it with ***-XXXX),
+  Change Number, then the small gray rates line; after verification a
+  centered #173F35 14px line "Here Are 3 of Your 30+ Insurance Company
+  Options" sits under "Your Insurance Quotes" (never before it).
+  The adjustment section is neutral gray only (no green): gray labels and
+  intro, white/gray unselected, #454B49 selected, gray borders, compact
+  balanced group padding; Step 4 labels use tight, centered line spacing.
+  Before verification the cards are blurred stand-ins under a hidden
+  heading, followed by the red "Unlock Your Rates" panel (orange Text Me
+  a Code / Verify Code); after it "Your Insurance Quotes", "Adjust your
+  coverage and compare rates below." and the controls. Browser test:
+  `npm run test:quote:browser` (after a build). v2.9: question 4
+  (intended use;
+  8 steps) is lead information only, never a pricing input: stored in the
+  evidence record, Apply Now and intake, and in Randy's Formspark
+  notifications, never sent to analytics.
+  v2.5: after name + mobile the pricing screen shows blurred safe stand-ins
+  (never real prices or carriers) with the Unlock Your Rates (v3.5)
+  panel (number prefilled); verification reveals prices in place; carrier
+  names and logos stay blurred. Apply Now opens carrier-specific health
+  questions one at a time from the published Health Question Search records
+  (`server/quote/intake.js`: Aetna yes; Gerber guaranteed issue, none; MOO
+  no question set yet, agent continuation), answers kept in the evidence. Representative (Texas) rates for every
+  state. `api/price-explorer.js` returns prices only for a server-verified
+  session (HttpOnly signed cookie checked against Redis) with opaque codes
+  FF-101/102/201, never product ids, rates or keys. Previews without Twilio
+  credentials run a clearly marked test mode (code 123456, no SMS, no
+  notification). v5.3 (Randy, November 2026, temporary until Twilio is
+  connected): production without Twilio credentials accepts the same code
+  123456 (`public-test` mode, `PUBLIC_TEST_CODE_ENABLED` in
+  server/quote/twilio.js; `QUOTE_PUBLIC_TEST_CODE=off` disables it). No SMS
+  is sent; the code unlocks only that visitor's own session and quotes; the
+  record says `test-code-accepted`, `phoneVerified: false` (never SMS
+  verified); the leads are real (Randy is notified, the /help/ conversion
+  counts). Setting the Twilio variables ends it automatically. v5.4: in
+  that mode only, the server sends the instruction "Enter access code
+  123456 to view your insurance quotes." (`PUBLIC_TEST_CODE_NOTE`; never in
+  the page HTML or in Twilio mode); it replaces the masked-number SMS
+  sentence in the Unlock panel, shows under "Enter the 6-digit code", and
+  Resend Code is hidden (no message is sent). Test:
+  tests/quote/funnel-temp-code.browser.mjs (in `npm run test:quote:browser`). Consent box optional and unchecked;
+  its wording (`server/quote/consent.js`, v6.0, Randy approved, version
+  ff-quote-consent-v2-2026-11): "I agree Funeral Funds may call or text me
+  at the number I provided about life insurance, including automated
+  messages. Msg & data rates may apply. Reply STOP to opt out. Consent is
+  not required to get prices or buy insurance." Recorded only when checked
+  (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
+  `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
+  events (tracking.ts), no personal data, nothing to Meta.
 
 ## Site search (Pagefind, built October 2026)
 

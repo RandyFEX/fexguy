@@ -7,6 +7,7 @@
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
 //   click on any call link on a page  GA4 click_to_call  (nothing to Meta)
 //   whose <body> has track-page-calls (/facebook/, campaign number)
+//   quote funnel steps (Quote System v2.2)  GA4 quote_* events  (nothing to Meta)
 //
 // Rules:
 //  - Runs only on the production hostnames in src/config/lead.ts. Anywhere
@@ -196,4 +197,57 @@ document.addEventListener('click', (e) => {
   if (!link) return;
   const digits = (link.getAttribute('href') ?? '').replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
   if (digits === lead.phone.digits || document.body.classList.contains('track-page-calls')) ga4('event', 'click_to_call');
+});
+
+// --- Quote funnel (GA4 only; Randy, November 2026, Quote System v2.2) ---------
+// src/scripts/quote-funnel.ts dispatches `ff:funnel` events on window. Only
+// these event names and a step number or category label are sent, never a
+// name, phone number, state or any other personal information, and nothing
+// goes to Meta.
+
+const FUNNEL_EVENTS = new Set([
+  'quote_funnel_start',
+  'quote_step_complete',
+  'quote_contact_submit',
+  'quote_sms_request',
+  'quote_sms_verified',
+  'quote_pricing_view',
+  'quote_pricing_adjust',
+  'quote_apply_now',
+  'quote_call_click',
+  // v5.8: funnel entry (every load of /free-quote/) and an article sidebar choice.
+  'quote_funnel_entry',
+  'quote_sidebar_select',
+  // v5.9: CALL NOW in an article's Get Pricing module (a tap, never a completed call).
+  'quote_module_call_click',
+]);
+const ENTRY_TYPES = new Set(['article-sidebar', 'direct', 'campaign']);
+const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
+
+window.addEventListener('ff:funnel', (e) => {
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown; placement?: unknown }>).detail ?? {};
+  if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
+  const params: Record<string, string | number> = {};
+  if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
+  if (typeof detail.category === 'string' && FUNNEL_CATEGORIES.has(detail.category)) params.price_category = detail.category;
+  // v5.8: where the visit started: the entry type and the article's path (never personal data).
+  if (typeof detail.entryType === 'string' && ENTRY_TYPES.has(detail.entryType)) params.entry_type = detail.entryType;
+  if (detail.placement === 'sidebar' || detail.placement === 'in-article') params.module_placement = detail.placement;
+  if (typeof detail.entryPath === 'string' && /^\/[A-Za-z0-9._~\-/]{0,200}$/.test(detail.entryPath)) params.entry_path = detail.entryPath;
+  // "Call to Get Approved" taps (v3.7): which quote was on the card when the
+  // visitor tapped it. A company or plan name, the coverage and premium shown,
+  // a random per-visit quote reference and the time; never a name or phone
+  // number, and nothing to Meta. A tap is not a completed call.
+  if (detail.name === 'quote_call_click') {
+    const label = (v: unknown) => (typeof v === 'string' && /^[A-Za-z][A-Za-z .&'/-]{0,59}$/.test(v) ? v : null);
+    const carrier = label(detail.carrier);
+    const product = label(detail.product);
+    if (carrier) params.carrier = carrier;
+    if (product) params.product = product;
+    if (typeof detail.coverage === 'number' && Number.isInteger(detail.coverage) && detail.coverage >= 5000 && detail.coverage <= 25000) params.coverage_amount = detail.coverage;
+    if (typeof detail.premium === 'string' && /^\d{1,4}\.\d{2}$/.test(detail.premium)) params.monthly_premium = Number(detail.premium);
+    if (typeof detail.quoteRef === 'string' && /^[A-Za-z0-9]{12,32}$/.test(detail.quoteRef)) params.quote_ref = detail.quoteRef;
+    if (typeof detail.at === 'string' && /^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(detail.at)) params.event_time = detail.at;
+  }
+  ga4('event', detail.name, params);
 });

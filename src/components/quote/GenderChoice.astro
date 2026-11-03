@@ -1,0 +1,65 @@
+---
+// The Male and Female choices of the quote funnel (Randy, Quote System v5.8):
+// one source for the funnel's first screen (/free-quote/, buttons) and the
+// article sidebar's Get Prices module (links to /free-quote/ that carry the
+// choice). The illustrations are the funnel's original inline drawings.
+interface Props {
+  /** 'button': the funnel's own step buttons; 'link': links into the funnel. */
+  as: 'button' | 'link';
+}
+const { as } = Astro.props;
+const people = [
+  { value: 'male', label: 'Male' },
+  { value: 'female', label: 'Female' },
+] as const;
+---
+
+<div class="qf-people">
+  {
+    people.map((p) => {
+      const art =
+        p.value === 'male' ? (
+          <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
+            <circle cx="60" cy="60" r="58" fill="#e6ece9" />
+            <path d="M22 112c4-24 20-36 38-36s34 12 38 36" fill="#173f35" />
+            <path d="M50 74h20l-10 14z" fill="#fff" />
+            <circle cx="60" cy="48" r="20" fill="#e9c4a4" />
+            <path d="M40 46c0-14 9-22 20-22s20 7 20 20c-5-6-12-8-20-8s-15 3-20 10z" fill="#6b4a33" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
+            <circle cx="60" cy="60" r="58" fill="#e6ece9" />
+            <path d="M36 70c-6-10-6-26 0-36 6-10 16-14 24-14s18 4 24 14c6 10 6 26 0 36z" fill="#8a5a3c" />
+            <path d="M22 112c4-24 20-36 38-36s34 12 38 36" fill="#2f6b5a" />
+            <circle cx="60" cy="50" r="19" fill="#efcdb0" />
+            <path d="M41 48c1-13 9-20 19-20s18 6 19 18c-6-5-11-9-19-9-7 0-13 4-19 11z" fill="#8a5a3c" />
+          </svg>
+        );
+      return as === 'button' ? (
+        <button class="qf-person" type="button" data-pick="gender" data-value={p.value}>
+          {art}
+          <span class="qf-person__label">{p.label}</span>
+        </button>
+      ) : (
+        <a class="qf-person" href={`/free-quote/?gender=${p.value}`} data-gp-gender={p.value}>
+          {art}
+          <span class="qf-person__label">{p.label}</span>
+        </a>
+      );
+    })
+  }
+</div>
+
+<style is:global>
+  /* Moved unchanged from the funnel page (v5.8) so the sidebar shares them. */
+  .qf-people { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); max-width: 30rem; margin-inline: auto; }
+  .qf-person {
+    display: flex; flex-direction: column; align-items: center; gap: var(--space-2);
+    padding: var(--space-4) var(--space-2); border: 3px solid var(--color-border); border-radius: 0.75rem;
+    background: #fff; cursor: pointer;
+  }
+  .qf-person[aria-pressed='true'] { border-color: var(--color-primary); background: #f3f7f5; }
+  @media (hover: hover) { .qf-person:hover { border-color: var(--color-primary); background: #f3f7f5; } }
+  .qf-person__art { width: min(8rem, 100%); height: auto; }
+  .qf-person__label { font-size: 1.375rem; font-weight: 800; color: var(--color-primary); }
+</style>
