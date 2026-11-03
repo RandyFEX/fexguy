@@ -207,7 +207,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const consent = await page.$eval('.qf-consent span', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
     assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 3), `consent text ${JSON.stringify(consent)}`);
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
-    assert(/Consent is not required to see prices or to buy\./.test(await page.textContent('.qf-consent')), 'consent text');
+    assert((await page.textContent('.qf-consent span')).trim() === 'I agree Funeral Funds may call or text me at the number I provided about life insurance, including automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
+    assert(!(await page.isChecked('[data-qf-consent]')), 'consent box pre-checked');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.fill('#qf-first', NAMES[name]);
     await page.fill('#qf-phone', PHONES[name]);

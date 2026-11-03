@@ -1387,8 +1387,12 @@ scope protection wins.
   sentence in the Unlock panel, shows under "Enter the 6-digit code", and
   Resend Code is hidden (no message is sent). Test:
   tests/quote/funnel-temp-code.browser.mjs (in `npm run test:quote:browser`). Consent box optional and unchecked;
-  its wording (`server/quote/consent.js`) is a DRAFT pending Randy's legal
-  review. Evidence records (`qe:<ns>:*`) never expire; retrieval via
+  its wording (`server/quote/consent.js`, v6.0, Randy approved, version
+  ff-quote-consent-v2-2026-11): "I agree Funeral Funds may call or text me
+  at the number I provided about life insurance, including automated
+  messages. Msg & data rates may apply. Reply STOP to opt out. Consent is
+  not required to get prices or buy insurance." Recorded only when checked
+  (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
   events (tracking.ts), no personal data, nothing to Meta.
 
