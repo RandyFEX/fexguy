@@ -15,7 +15,16 @@ function fakeDataset(id, offsets = { 'male|non-tobacco': 0.17, 'male|tobacco': 0
     for (const gender of ['male', 'female'])
       for (const tobacco of p.tobaccoClasses)
         records.push({ issueAge: age, gender, tobacco, annualRatePer1000: (age + offsets[`${gender}|${tobacco}`]).toFixed(2), sourcePage: 1 });
-  return { productId: id, extractedAt: 'test', sourceSha256: 'test', records };
+  const ds = { productId: id, extractedAt: 'test', sourceSha256: 'test', records };
+  // A product whose card prints premiums needs them, consistent with its rates.
+  if (p.printedPremiums)
+    ds.printedPremiums = records.flatMap((r) =>
+      p.printedPremiums.coverage.map((coverage) => ({
+        issueAge: r.issueAge, gender: r.gender, coverage, sourcePage: 1,
+        monthlyPremium: toFixed(monthlyPremium({ coverage, annualRatePer1000: r.annualRatePer1000, policyFee: p.policyFee, modalFactor: p.modalFactor }), 2),
+      })),
+    );
+  return ds;
 }
 const all = () => Object.fromEntries(Object.keys(PRODUCTS).map((id) => [id, fakeDataset(id)]));
 const engine = createEngine(all());
@@ -139,6 +148,35 @@ test('no tier substitution: a product only quotes from its own complete table', 
   const none = createEngine({});
   assert.equal(none.quote({ productId: 'gerber-guaranteed-life', age: 60, gender: 'male', tobacco: false, coverage: 10000 }).reason, 'rates_not_loaded');
   assert.equal(none.quote({ productId: 'nope', age: 60 }).reason, 'unknown_product');
+});
+
+test('Gerber: printed premiums are kept apart from the derived rates and must all be reproduced', () => {
+  const good = fakeDataset('gerber-guaranteed-life');
+  assert.deepEqual(validateDataset(PRODUCTS['gerber-guaranteed-life'], good), []);
+  assert.equal(good.printedPremiums.length, 31 * 2 * 5);
+  // A printed premium the derived rate doesn't reproduce: the whole table is refused.
+  const off = structuredClone(good);
+  off.printedPremiums[7].monthlyPremium = (Number(off.printedPremiums[7].monthlyPremium) + 0.01).toFixed(2);
+  const e = createEngine({ 'gerber-guaranteed-life': off });
+  assert.equal(e.quote({ productId: 'gerber-guaranteed-life', age: 60, gender: 'male', tobacco: false, coverage: 10000 }).reason, 'rates_invalid');
+  assert.ok(e.loadProblems['gerber-guaranteed-life'].some((p) => /does not reproduce the printed premium/.test(p)));
+  // Missing printed premiums are refused too.
+  const missing = structuredClone(good);
+  missing.printedPremiums.pop();
+  assert.ok(validateDataset(PRODUCTS['gerber-guaranteed-life'], missing).some((p) => /missing printed premium/.test(p)));
+  delete missing.printedPremiums;
+  assert.ok(validateDataset(PRODUCTS['gerber-guaranteed-life'], missing).some((p) => /expected 310 printed premiums/.test(p)));
+});
+
+test('results flag unverified face limits and state availability instead of assuming them', () => {
+  const a = q({ productId: 'aetna-accendo-standard', age: 60, state: 'TX' });
+  assert.equal(a.ok, true);
+  assert.deepEqual([a.limits.verified, a.limits.increment, a.availability.verified], [false, null, false]);
+  assert.match(a.limits.basis, /working range/);
+  const m = q({ productId: 'moo-living-promise-level', age: 60, state: 'TX' });
+  assert.deepEqual([m.limits.min, m.limits.max, m.limits.verified, m.availability.verified], [2000, 40000, true, false]);
+  const g = q({ productId: 'gerber-guaranteed-life', age: 60, state: 'TX' });
+  assert.deepEqual([g.limits.verified, g.availability.verified], [true, true]);
 });
 
 test('quoteMany returns each product in order with its own status and no tier', () => {

@@ -250,11 +250,11 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
 // live only in the git-ignored server/rates/private/. No rate dataset, rate
 // workbook or source PDF may reach dist/ or public/ (Randy, Rate Engine V2.0).
 {
-  const rateNeedles = ['fexguyRateData', 'annualRatePer1000', 'moo-living-promise-level', 'aetna-accendo-standard', 'gerber-guaranteed-life'];
+  const rateNeedles = ['fexguyRateData', 'annualRatePer1000', 'printedPremiums', 'fexguy-rates-1', 'moo-living-promise-level', 'aetna-accendo-standard', 'gerber-guaranteed-life'];
   for (const root of [DIST, new URL('../public/', import.meta.url).pathname]) {
     for (const file of walk(root)) {
       const rel = file.slice(root.length);
-      if (/rates\/private\/|rate-workbook|\.xlsx$|ACCENDO|LIVING[ _-]PROMISE.*RATE|GL-RC-2/i.test(rel)) {
+      if (/rates\/private\/|rate-workbook|\.xlsx$|ACCENDO|LIVING[ _-]PROMISE.*RATE|GERBER.*RATE|GL-RC/i.test(rel)) {
         (guardHits['private rate data or rate guide in the public site'] ??= []).push(rel);
         continue;
       }

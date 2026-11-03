@@ -6,6 +6,9 @@
   "functions": {
     "api/health-search.js": {
       "maxDuration": 10
+    },
+    "api/rate-quote.js": {
+      "maxDuration": 10
     }
   },
   "trailingSlash": true,

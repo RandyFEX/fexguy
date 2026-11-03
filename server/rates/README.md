@@ -23,8 +23,16 @@ computed with exact decimals (`decimal.js`) and rounded half up to the cent.
 
 Gerber's card prints monthly ACH premiums, not annual rates: each stored rate is
 the single 2-decimal value that reproduces all five printed premiums
-($5,000-$25,000) for that age and gender, and the tests check that the engine
-reproduces every printed premium. The Direct Bill table on page 2 is never used.
+($5,000-$25,000) for that age and gender. The dataset keeps the 310 printed
+premiums separately (`printedPremiums`, exactly as printed) next to the 62
+derived rates (`records`) and a `derivation` note; the engine refuses the table
+if any printed premium isn't reproduced to the cent. The Direct Bill table on
+page 2 and card/debit premiums are never used.
+
+Every result says how sure its limits are: `limits.verified` and
+`availability.verified` are `false` where the carrier documents weren't
+available (Aetna face limits and state availability; MOO state availability),
+so a caller can show or hold those results; nothing is assumed nationwide.
 
 State rules come only from the guides: Mutual of Omaha unisex (male) rates in
 MT, $5,000-$40,000 in WA, not available in NY; Gerber not issued in MT,
@@ -41,6 +49,8 @@ uses the $5,000-$25,000 working range and says so in every result.
 | `engine.js` | `loadDatasets()`, `createEngine()`, `quote()`, `quoteMany()`, dataset validation |
 | `decimal.js` | Exact decimal arithmetic and half-up rounding |
 | `xlsx.js` | Dependency-free .xlsx writer for the workbook |
+| `rate-store.js` | Private Redis storage: keys, payload, validated 5-minute cache |
+| `handler.js` | Key-protected request handling for `POST /api/rate-quote/` |
 | `private/<product id>.json` | Extracted rate tables (git-ignored, never committed) |
 | `private/funeral-funds-rate-workbook.xlsx` | Generated pricing workbook (git-ignored) |
 
@@ -55,6 +65,36 @@ npm run rates:workbook -- --source-dir <folder>
 # Tests: engine rules with made-up rates (always), real-table checks when
 # private/ exists, PDF re-extraction when RATES_SOURCE_DIR is set:
 npm run test:rates
+```
+
+## Private storage and the rate API
+
+Deployments never read `private/`: the tables are published to the Upstash
+Redis store the Health Question Search uses, under their own keys
+(`rates:v1:preview`, `rates:v1:production`; the search's `hqs:*` keys are never
+read or written). `rate-store.js` loads them, re-validates every table and
+caches them for 5 minutes; a missing or invalid table fails closed.
+
+```sh
+vercel env pull .env.local                                    # KV_REST_API_URL / _TOKEN
+node --env-file=.env.local scripts/rates-publish.mjs --dry-run
+node --env-file=.env.local scripts/rates-publish.mjs --target preview
+# Live site only with Randy's approval:
+node --env-file=.env.local scripts/rates-publish.mjs --target production --confirm-production
+```
+
+`POST /api/rate-quote/` (`api/rate-quote.js`, `handler.js`) is for server-side
+callers only. It needs the header `x-rate-engine-key` equal to the
+`RATE_ENGINE_API_KEY` environment variable (32+ characters; without it the
+endpoint answers 404), a JSON body of at most 1 KB with only `age`, `gender`,
+`tobacco`, `coverage`, `state` and optional `products`, and returns calculated
+monthly premiums, reasons for unavailable products, limits, availability flags
+and the published rates version. It never returns tables, annual rates, printed
+premiums, fees, factors or checksums. Responses are `no-store`.
+
+```sh
+RATES_BASE=https://<preview>.vercel.app VERCEL_AUTOMATION_BYPASS_SECRET=... \
+RATE_ENGINE_API_KEY=... npm run test:rates:live
 ```
 
 ## Calling the engine

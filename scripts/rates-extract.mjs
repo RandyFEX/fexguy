@@ -91,6 +91,7 @@ export function parseGerberAch(text, page = 1) {
   const amounts = [5000, 10000, 15000, 20000, 25000];
   const group = /(\d{2})\s+\$(\d+\.\d{2})\s+\$(\d+\.\d{2})\s+\$(\d+\.\d{2})\s+\$(\d+\.\d{2})\s+\$(\d+\.\d{2})/g;
   const records = [];
+  const printedPremiums = [];
   for (const line of text.split('\n')) {
     let i = 0;
     for (const m of line.matchAll(group)) {
@@ -106,12 +107,22 @@ export function parseGerberAch(text, page = 1) {
         tobacco: 'any',
         annualRatePer1000: (fits[0] / 100).toFixed(2),
         sourcePage: page,
-        derivedFrom: Object.fromEntries(amounts.map((c, k) => [c, printed[k]])),
       });
+      amounts.forEach((coverage, k) =>
+        printedPremiums.push({ issueAge: Number(m[1]), gender, coverage, monthlyPremium: printed[k], sourcePage: page }),
+      );
     }
   }
+  // The printed premiums are the source; the rates are derived from them and
+  // kept separately so both can be checked.
+  records.printedPremiums = printedPremiums;
   return records;
 }
+
+export const GERBER_DERIVATION =
+  'The card prints monthly ACH premiums, not annual rates. Each annualRatePer1000 is the single 2-decimal value for which ' +
+  'ROUND(((coverage / 1000 x rate) + 11) x 0.083334, 2) reproduces all five printed premiums ($5,000-$25,000) for that ' +
+  'issue age and gender. printedPremiums holds the card values exactly as printed.';
 
 const EXTRACTORS = {
   aetna: { productId: 'aetna-accendo-standard', page: 2, parse: parseAetnaStandard },
@@ -121,9 +132,9 @@ const EXTRACTORS = {
 
 export function extract(key, pdf) {
   const { productId, page, parse } = EXTRACTORS[key];
-  const records = parse(pageText(pdf, page), page).sort(
-    (a, b) => a.issueAge - b.issueAge || a.gender.localeCompare(b.gender) || a.tobacco.localeCompare(b.tobacco),
-  );
+  const parsed = parse(pageText(pdf, page), page);
+  const order = (a, b) => a.issueAge - b.issueAge || a.gender.localeCompare(b.gender);
+  const records = [...parsed].sort((a, b) => order(a, b) || a.tobacco.localeCompare(b.tobacco));
   const dataset = {
     fexguyRateData: true,
     productId,
@@ -132,6 +143,10 @@ export function extract(key, pdf) {
     sourceSha256: sha256(pdf),
     extractedAt: new Date().toISOString(),
     records,
+    ...(parsed.printedPremiums && {
+      derivation: GERBER_DERIVATION,
+      printedPremiums: [...parsed.printedPremiums].sort((a, b) => order(a, b) || a.coverage - b.coverage),
+    }),
   };
   const problems = validateDataset(PRODUCTS[productId], dataset);
   if (problems.length) throw new Error(`${productId}: ${problems.length} problems\n  ${problems.slice(0, 20).join('\n  ')}`);
@@ -149,6 +164,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const ds = extract(k, args[k]);
     writeFileSync(new URL(`${ds.productId}.json`, PRIVATE_DIR), JSON.stringify(ds, null, 2) + '\n');
     const ages = new Set(ds.records.map((r) => r.issueAge));
-    console.log(`${ds.productId}: ${ds.records.length} rates, ages ${Math.min(...ages)}-${Math.max(...ages)} (page ${ds.sourcePage}, sha256 ${ds.sourceSha256.slice(0, 12)})`);
+    console.log(`${ds.productId}: ${ds.records.length} rates${ds.printedPremiums ? ` + ${ds.printedPremiums.length} printed premiums` : ''}, ages ${Math.min(...ages)}-${Math.max(...ages)} (page ${ds.sourcePage}, sha256 ${ds.sourceSha256.slice(0, 12)})`);
   }
 }

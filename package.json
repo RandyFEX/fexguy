@@ -21,7 +21,9 @@
     "test": "npm run test:health-search && npm run test:rates && npm run test:nav",
     "rates:extract": "node scripts/rates-extract.mjs",
     "rates:workbook": "node scripts/rates-workbook.mjs",
-    "test:rates": "node --test 'tests/rates/*.test.js'"
+    "rates:publish": "node scripts/rates-publish.mjs",
+    "test:rates": "node --test 'tests/rates/*.test.js'",
+    "test:rates:live": "node tests/rates/live-preview.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.2",

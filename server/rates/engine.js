@@ -46,6 +46,39 @@ export function validateDataset(product, dataset) {
     for (const gender of ['male', 'female'])
       for (const tobacco of product.tobaccoClasses)
         if (!seen.has(keyOf(age, gender, tobacco))) problems.push(`missing rate: age ${age}, ${gender}, ${tobacco}`);
+  if (product.printedPremiums) problems.push(...checkPrintedPremiums(product, dataset, seen));
+  return problems;
+}
+
+const TWO_DP = /^\d+\.\d{2}$/;
+
+/** Products whose card prints premiums (Gerber): every printed premium must
+ *  be present and the derived rate must reproduce it to the cent, or the
+ *  whole table is refused. */
+function checkPrintedPremiums(product, dataset, seen) {
+  const problems = [];
+  const printed = new Map();
+  for (const p of dataset.printedPremiums ?? []) {
+    const k = `${p.issueAge}|${p.gender}|${p.coverage}`;
+    if (printed.has(k)) problems.push(`duplicate printed premium ${k}`);
+    printed.set(k, p);
+    if (!TWO_DP.test(String(p.monthlyPremium))) problems.push(`printed premium is not a 2-decimal string: ${k}`);
+  }
+  const expected = (product.issueAges.max - product.issueAges.min + 1) * 2 * product.printedPremiums.coverage.length;
+  if (printed.size !== expected) problems.push(`expected ${expected} printed premiums, found ${printed.size}`);
+  for (let age = product.issueAges.min; age <= product.issueAges.max; age++)
+    for (const gender of ['male', 'female']) {
+      const rec = seen.get(keyOf(age, gender, 'any'));
+      for (const coverage of product.printedPremiums.coverage) {
+        const p = printed.get(`${age}|${gender}|${coverage}`);
+        if (!p) problems.push(`missing printed premium: age ${age}, ${gender}, $${coverage}`);
+        else if (rec && TWO_DP.test(String(rec.annualRatePer1000))) {
+          const calc = toFixed(monthlyPremium({ coverage, annualRatePer1000: rec.annualRatePer1000, policyFee: product.policyFee, modalFactor: product.modalFactor }), 2);
+          if (calc !== p.monthlyPremium)
+            problems.push(`derived rate does not reproduce the printed premium: age ${age}, ${gender}, $${coverage} (${calc} vs ${p.monthlyPremium})`);
+        }
+      }
+    }
   return problems;
 }
 
@@ -75,9 +108,11 @@ export function createEngine(datasets = {}) {
   /** Face-amount limits that apply, and where they come from. */
   function limitsFor(product, state) {
     const rule = state ? product.stateRules[state] : null;
-    if (rule?.faceAmount) return { ...rule.faceAmount, basis: `carrier (${state})` };
-    if (product.faceAmount.min != null) return { min: product.faceAmount.min, max: product.faceAmount.max, basis: 'carrier' };
-    return { min: WORKING_COVERAGE.min, max: WORKING_COVERAGE.max, basis: 'working range (carrier limits not in the supplied source)' };
+    const increment = product.faceAmount.increment ?? null;
+    if (rule?.faceAmount) return { ...rule.faceAmount, increment, verified: true, basis: `carrier (${state})` };
+    if (product.faceAmount.min != null)
+      return { min: product.faceAmount.min, max: product.faceAmount.max, increment, verified: product.faceAmount.verified !== false, basis: 'carrier' };
+    return { min: WORKING_COVERAGE.min, max: WORKING_COVERAGE.max, increment: null, verified: false, basis: 'working range (carrier limits not in the supplied source)' };
   }
 
   function quote(input) {
@@ -134,6 +169,7 @@ export function createEngine(datasets = {}) {
       formula: { policyFee: product.policyFee, modalFactor: product.modalFactor, modalMode: product.modalMode, rounding: product.rounding },
       limits,
       stateRule: rule?.note ?? null,
+      availability: { verified: Boolean(product.availability?.verified), note: product.availability?.note ?? null },
       source: { ...product.source, extractedAt: tables[productId].meta.extractedAt, sourceSha256: tables[productId].meta.sourceSha256 },
     };
   }

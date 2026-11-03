@@ -57,11 +57,11 @@ const rateSheets = Object.entries(PRODUCTS).map(([id, p]) => {
   for (let age = p.issueAges.min; age <= p.issueAges.max; age++) {
     const row = [age];
     if (ds)
-      for (const r of ds.records.filter((x) => x.issueAge === age)) {
+      for (const r of ds.records.filter((x) => x.issueAge === age))
         row[CLASS_COLUMNS[`${r.tobacco}|${r.gender}`]] = { v: num(r.annualRatePer1000), s: S.rate };
-        if (r.derivedFrom)
-          printedAmounts.forEach((a, k) => (row[3 + (r.gender === 'female' ? 5 : 0) + k] = { v: num(r.derivedFrom[a]), s: S.money }));
-      }
+    if (ds?.printedPremiums)
+      for (const pp of ds.printedPremiums.filter((x) => x.issueAge === age))
+        row[3 + (pp.gender === 'female' ? 5 : 0) + printedAmounts.indexOf(pp.coverage)] = { v: num(pp.monthlyPremium), s: S.money };
     rows.push(row);
   }
   return { id, name: SHEETS[id], rows, widths: gerber ? [12, 18, 18, ...Array(10).fill(14)] : [12, 24, 24, 24, 24], freezeRow: FIRST_DATA_ROW };
@@ -116,7 +116,8 @@ for (const [id, p] of Object.entries(PRODUCTS)) {
   const pdf = sourceDir && key && join(sourceDir, `${key}.pdf`);
   if (pdf && existsSync(pdf)) {
     const fresh = extract(key, pdf);
-    const same = fresh.sourceSha256 === ds.sourceSha256 && JSON.stringify(fresh.records) === JSON.stringify(ds.records);
+    const same = fresh.sourceSha256 === ds.sourceSha256 && JSON.stringify(fresh.records) === JSON.stringify(ds.records)
+      && JSON.stringify(fresh.printedPremiums) === JSON.stringify(ds.printedPremiums);
     checks.push([p.carrier, 'Every rate re-extracted from the source PDF and compared', same ? 'PASS' : 'FAIL', `page ${ds.sourcePage}`]);
   } else checks.push([p.carrier, 'Every rate re-extracted from the source PDF and compared', 'NOT RUN', 'Source PDF not given to this run']);
 }

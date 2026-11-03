@@ -31,18 +31,22 @@ for (const [id, key] of [['aetna-accendo-standard', 'aetna'], ['moo-living-promi
     const fresh = extract(key, pdf);
     assert.equal(fresh.sourceSha256, datasets[id].sourceSha256, 'stored rates came from a different PDF');
     assert.deepEqual(fresh.records, datasets[id].records);
+    assert.deepEqual(fresh.printedPremiums, datasets[id].printedPremiums);
   });
 }
 
 test('Gerber: the engine reproduces every printed monthly ACH premium on the rate card', { skip: !has('gerber-guaranteed-life') && 'Gerber rates not extracted yet' }, () => {
   let n = 0;
-  for (const r of datasets['gerber-guaranteed-life'].records)
-    for (const [coverage, printed] of Object.entries(r.derivedFrom))
-      for (const tobacco of [false, true]) {
-        const q = engine.quote({ productId: 'gerber-guaranteed-life', age: r.issueAge, gender: r.gender, tobacco, coverage: Number(coverage), state: 'TX' });
-        assert.equal(q.monthlyPremium, printed, `age ${r.issueAge} ${r.gender} $${coverage}`);
-        n++;
-      }
+  const ds = datasets['gerber-guaranteed-life'];
+  assert.ok(ds.derivation, 'the dataset documents how the rates were derived');
+  for (const p of ds.printedPremiums)
+    for (const tobacco of [false, true]) {
+      const q = engine.quote({ productId: 'gerber-guaranteed-life', age: p.issueAge, gender: p.gender, tobacco, coverage: p.coverage, state: 'TX' });
+      assert.equal(q.monthlyPremium, p.monthlyPremium, `age ${p.issueAge} ${p.gender} $${p.coverage}`);
+      n++;
+    }
+  // Rates and printed premiums are stored separately.
+  assert.ok(ds.records.every((r) => !('derivedFrom' in r) && !('monthlyPremium' in r)));
   assert.equal(n, 62 * 5 * 2);
 });
 

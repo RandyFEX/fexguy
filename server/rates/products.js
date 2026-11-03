@@ -24,8 +24,17 @@ export const PRODUCTS = {
     rounding: 'nearest whole cent (half up)',
     issueAges: { min: 40, max: 89 },
     tobaccoClasses: ['non-tobacco', 'tobacco'],
-    // The supplied guide gives no face-amount limits.
-    faceAmount: { min: null, max: null, source: null },
+    // The supplied guide gives no face-amount limits or increments, and no
+    // carrier document with them could be reached (V2.1 research): the engine
+    // uses the working range and labels every result as such.
+    faceAmount: { min: null, max: null, increment: null, verified: false, source: null },
+    // The rate guide lists no state exceptions. That is not evidence of
+    // nationwide availability, so availability is reported as unverified
+    // until Randy supplies Accendo's product availability chart.
+    availability: {
+      verified: false,
+      note: 'State availability not verified: the supplied rate guide lists no state exceptions and the carrier availability chart was not available.',
+    },
     stateRules: {},
     source: {
       document: '2026 AETNA ACCENDO RATE GUIDE.pdf',
@@ -47,7 +56,16 @@ export const PRODUCTS = {
     rounding: 'nearest cent (half up)',
     issueAges: { min: 45, max: 85 },
     tobaccoClasses: ['non-tobacco', 'tobacco'],
-    faceAmount: { min: 2000, max: 40000, source: 'Guide page 2: Face Amounts $2,000 - $40,000 (in WA, $5,000 - $40,000)' },
+    // Supplied guide page 2. Secondary (non-carrier) sources describe a $50,000
+    // maximum after an August 2023 change; unconfirmed, so the guide stands.
+    faceAmount: {
+      min: 2000, max: 40000, increment: null, verified: true,
+      source: 'Guide page 2: Face Amounts $2,000 - $40,000 (in WA, $5,000 - $40,000)',
+    },
+    availability: {
+      verified: false,
+      note: 'The supplied guide names only New York as unavailable; availability in other states is not confirmed by a state approval list.',
+    },
     stateRules: {
       // Guide page 3: "In MT only, Unisex rates apply. The male rates listed
       // apply to Unisex rates in MT."
@@ -79,7 +97,14 @@ export const PRODUCTS = {
     // One rate per age and gender: smokers and non-smokers pay the same.
     tobaccoClasses: ['any'],
     // The supplied card prints premiums for $5,000 - $25,000 only.
-    faceAmount: { min: 5000, max: 25000, source: 'Rate card page 1 prints $5,000 - $25,000 (other amounts: Gerber agent portal)' },
+    faceAmount: {
+      min: 5000, max: 25000, increment: null, verified: true,
+      source: 'Rate card page 1 prints $5,000 - $25,000 (other amounts: Gerber agent portal)',
+    },
+    availability: { verified: true, note: 'Rate card footer: issued in all states except MT.' },
+    // The card prints these monthly ACH premiums; they are stored apart from
+    // the derived rates and every one must be reproduced exactly.
+    printedPremiums: { coverage: [5000, 10000, 15000, 20000, 25000] },
     stateRules: {
       // Rate card footer: "Guaranteed Life is issued in all states except MT.
       // ... Maximum face amount is $15,000 in South Dakota. For New York
