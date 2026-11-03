@@ -191,7 +191,7 @@ sidebar: true
 
 <p>Ethos relies on automation and algorithms, not a human understanding their needs, both now, and decades into the future.</p>
 
-<table> <thead> <tr> <th>Company</th> <th>Coverage Type</th> <th>Waiting Period</th> <th>Renewal Rates</th> <th>Permanent Coverage</th> </tr> </thead> <tbody> <tr> <td>Ethos (via Legal &amp; General, Ameritas, TruStage)</td> <td>Term or Simplified Issue</td> <td>Up to Two Years (Guaranteed Issue)</td> <td>Yes, after Term Ends</td> <td>No</td> </tr> <tr> <td>Aetna</td> <td>Whole Life (Final Expense)</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Mutual of Omaha</td> <td>Whole Life (Living Promise)</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Trinity Life</td> <td>Whole Life</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Family Benefit Life</td> <td>Whole Life</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> </tbody> </table>
+<table> <thead> <tr> <th>Company</th> <th>Coverage Type</th> <th>Waiting Period</th> <th>Renewal Rates</th> <th>Permanent Coverage</th> </tr> </thead> <tbody> <tr> <td>Ethos (via Legal &amp; General, Ameritas, TruStage)</td> <td>Term or Simplified Issue</td> <td>Up to Two Years (Guaranteed Issue)</td> <td>Yes, after Term Ends</td> <td>Yes (whole life)</td> </tr> <tr> <td>Aetna</td> <td>Whole Life (Final Expense)</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Mutual of Omaha</td> <td>Whole Life (Living Promise)</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Trinity Life</td> <td>Whole Life</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Family Benefit Life</td> <td>Whole Life</td> <td>None (First-Day Coverage)</td> <td>No</td> <td>Yes</td> </tr> </tbody> </table>
 
 <h2><strong>Regulation and oversight of online insurance companies</strong></h2>
 
@@ -263,7 +263,7 @@ sidebar: true
 
 <p><strong>Is Ethos Life Insurance legal?</strong></p>
 
-<p>Yes, Ethos is a legally licensed life insurance agency that operates under state Department of Insurance regulations. It adheres to the same consumer protection standards as any other broker. However, legality doesn’t automatically mean the best fit for every client. Many seniors find that Ethos’ system prioritizes fast approvals over quality coverage, resulting in limited policies or potential waiting periods. Funeral Funds offers fully legal and state-regulated compliant policies too, but with personalized guidance to guarantee permanent first-day coverage instead of promises of automated shortcuts.</p>
+<p>Yes, Ethos is a legally licensed life insurance agency that operates under state Department of Insurance regulations. It adheres to the same consumer protection standards as any other broker. However, legality doesn’t automatically mean the best fit for every client. Many seniors find that Ethos’ system prioritizes fast approvals over quality coverage, resulting in limited policies or potential waiting periods. Funeral Funds offers fully legal and state-regulated compliant policies too, but with personalized guidance to find permanent first-day coverage for applicants who qualify, instead of promises of automated shortcuts.</p>
 
 <p><strong>Is Ethos legitimate?</strong></p>
 

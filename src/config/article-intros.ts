@@ -215,6 +215,7 @@ export const LEGACY_INTROS: Record<string, readonly string[]> = {
   '/lions-club-member-life-insurance/': ["Lions Club member life insurance isn’t a special policy;"],
   '/lumico-burial-insurance-review/': ["Lumico burial insurance is a type of whole life"],
   '/medicaid-spend-down-rules-on-life-insurance/': ["Medicaid spend-down rules for life insurance determine whether your"],
+  '/mutual-of-omaha-burial-insurance/': ["Mutual of Omaha burial insurance is a whole life policy designed"],
   '/open-care-life-insurance-review/': ["Open Care life insurance is a marketing platform that"],
   '/oxford-life-burial-insurance-review/': ["Oxford Life burial insurance is a type of whole"],
   '/pay-for-a-funeral-without-life-insurance/': ["If you die without life insurance, your family is"],

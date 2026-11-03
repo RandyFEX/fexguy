@@ -801,7 +801,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/aig-life-insurance-company-review/': {
     family: 'review', crumb: 'AIG',
     quickAnswer:
-      'AIG, now called Corebridge Financial, offers three whole life burial plans for people aged 50 to 85. SimpliNow Legacy Max is the first-day coverage plan, and it asks a few health questions instead of a medical exam. The graded SimpliNow Legacy plan and the guaranteed issue plan both have a 2-year waiting period that pays 110% of premiums for a natural death. AIG is expensive for significant health issues, so it’s rarely your best choice.',
+      'AIG’s former life insurance business, now Corebridge Financial, offers three whole life burial plans for people aged 50 to 85. SimpliNow Legacy Max is the first-day coverage plan, and it asks a few health questions instead of a medical exam. The graded SimpliNow Legacy plan and the guaranteed issue plan both have a 2-year waiting period that pays 110% of premiums for a natural death. AIG is expensive for significant health issues, so it’s rarely your best choice.',
   },
   '/oxford-life-burial-insurance-review/': {
     family: 'review',
@@ -819,7 +819,13 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Lincoln Heritage sells whole life burial insurance through its Funeral Advantage program. Its captive agents sell only Lincoln Heritage policies, so they can’t compare prices or coverage from other insurance companies. Lincoln Heritage’s premiums are substantially higher than comparable first-day coverage offered by competing carriers. Applicants who answer yes to certain significant health questions receive a modified plan that limits natural-death benefits for the first two years at ages 50 through 85, or three years under age 50. During those years, a natural death pays back only the premiums paid plus 10%, 20%, or 30%, depending on the policy year. Most all applicants can qualify for first-day coverage elsewhere at a lower price.',
   },
-  '/mutual-of-omaha-burial-insurance/': { family: 'review', crumb: 'Mutual of Omaha' },
+  '/mutual-of-omaha-burial-insurance/': {
+    family: 'review',
+    crumb: 'Mutual of Omaha',
+    // The article's own opening paragraph (audit round 2, November 2026).
+    quickAnswer:
+      'Mutual of Omaha burial insurance is a whole life policy designed to cover final expenses, typically ranging from $2,000 to $50,000. The key difference is how you apply. If you go through an agent and qualify, you can get full coverage from day one with no waiting period. If you apply directly or have certain health issues, you’ll likely be placed into a plan that delays the payout for 2 years and costs more. That’s where most people get it wrong and overpay.',
+  },
   '/senior-legacy-life-review/': {
     family: 'review',
     crumb: 'Senior Legacy Life',

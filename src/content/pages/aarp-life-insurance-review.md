@@ -39,7 +39,7 @@ sidebar: true
 
 <p>The Guaranteed Acceptance application version, the one often promoted, is a guaranteed-acceptance policy with a MANDATORY two-year waiting period.</p>
 
-<p>If death occurs during those first two years, your family receives only the premiums you paid plus a token amount of interest, typically around 7-10%. No full death benefit, no real protection.</p>
+<p>If death occurs during those first two years, your family receives only the premiums you paid plus 10%. No full death benefit, no real protection.</p>
 
 <table>
 <thead>
@@ -52,7 +52,7 @@ sidebar: true
 <tbody>
 <tr>
 <td>AARP Guaranteed Acceptance plan</td>
-<td>Full payout is blocked for the first 2 years no matter the cause of death</td>
+<td>Full payout is limited for the first 2 years for natural deaths. Accidental deaths pay in full.</td>
 <td>Only the premiums paid plus small interest during the first 2 years</td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ We replaced it with a simplified issue whole life plan that paid a $20,000 benef
 
 <p>First, the <a href="https://en.wikipedia.org/wiki/Term_life_insurance" target="_blank" rel="noreferrer noopener">Level Benefit Term Life</a> plan ends at age 80. If you live beyond that point, the coverage disappears, and every premium paid is gone. For people buying protection meant to last a lifetime, that’s a serious problem.</p>
 
-<p>Second, the Guaranteed Acceptance plan requires a mandatory two-year waiting period. If death occurs during that time, the company refunds only premiums plus a small amount of interest, often around 7-10%. Your family does not receive the death benefit.</p>
+<p>Second, the Guaranteed Acceptance plan requires a mandatory two-year waiting period. If death occurs during that time, the company refunds only premiums plus 10%. Your family does not receive the death benefit.</p>
 
 <p>Third, the coverage limits are low for some people. Even their “Permanent Life” option caps at $100 000.</p>
 
@@ -128,7 +128,7 @@ We replaced it with a simplified issue whole life plan that paid a $20,000 benef
 
 <p>Here’s what you actually get when you look past the brochures:<br><br><strong>Level Benefit Term Life</strong>: Coverage lasts until age 80. Premiums start low but increase every five years. That pattern makes it far more expensive over time than most people realize.</p>
 
-<p>Once you reach 80, the policy expires. There is no refund or conversion into permanent coverage. Families who rely on this policy often find themselves uninsured exactly when they need it most.</p>
+<p>Once you reach 80, the term policy ends. You can exchange it for AARP Permanent Life at or before 80, but you’ll pay Permanent Life rates for your age then. Families who rely on this policy often find themselves uninsured exactly when they need it most.</p>
 
 <p><strong>Permanent Life Insurance</strong>: This option provides lifetime coverage with fixed premiums and a modest cash value. The maximum benefit is $100 000.</p>
 
@@ -152,7 +152,7 @@ We replaced it with a simplified issue whole life plan that paid a $20,000 benef
 <tr>
 <td>Level Benefit Term Life</td>
 <td>Coverage ends at age 80 and premiums rise every 5 years</td>
-<td>Policy expires with no payout or conversion once age 80 is reached</td>
+<td>Policy expires at age 80 unless exchanged for Permanent Life</td>
 </tr>
 <tr>
 <td>Permanent Life Insurance</td>
@@ -226,7 +226,7 @@ We replaced it with a simplified issue whole life plan that paid a $20,000 benef
 
 <p>This plan skips health questions but delays real insurance protection for a full 2 years.</p>
 
-<p>It has a MANDATORY two-year waiting period. If you pass away during those first twenty-four months, your beneficiary receives only the premiums paid plus about 7-10% interest. Only accidental deaths pay the full benefit immediately.</p>
+<p>It has a MANDATORY two-year waiting period. If you pass away during those first twenty-four months, your beneficiary receives only the premiums paid plus 10%. Only accidental deaths pay the full benefit immediately.</p>
 
 <p>This design protects the insurer, not the policyholder. It’s meant for people who are already in poor health or who would otherwise be declined.</p>
 
@@ -397,7 +397,7 @@ I reviewed her application history, confirmed her health answers qualified for s
 
 <p>Some states restrict terms such as “state-regulated benefit” or “government-approved plan” because they can mislead consumers into thinking the product is sponsored by the government. AARP’s partners have faced compliance warnings in states such as Texas and Florida for using similar advertising language.</p>
 
-<p>Funeral expenses and inflation rates differ, too. The National Funeral Directors Association (NFDA) reports that the average funeral cost in 2024 was $8,300 nationwide, but exceeded $9,500 in states such as Massachusetts and New York.</p>
+<p>Funeral expenses and inflation rates differ, too. The National Funeral Directors Association (NFDA) reports that the median cost of a funeral with viewing and burial was $8,300 in its 2023 study.</p>
 
 <p>Understanding local rules helps you choose the right plan. An independent broker licensed in your state can compare policies side by side within your state’s limits.</p>
 
