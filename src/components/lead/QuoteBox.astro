@@ -40,10 +40,9 @@ const phone = PAGE_PHONES.default;
 >
   <p class="quote-box__title gp__title" id={titleId}><span class="gp__title-text" data-gp-title>GET PRICING HERE</span></p>
   <div class="gp__body">
-    <p class="gp__q">Who Needs Coverage?</p>
+    <p class="gp__q">I need pricing for a...</p>
     <GenderChoice as="link" />
     {/* v5.9 (Randy): a direct call option under the choices; a tap is recorded, never a completed call. */}
-    <p class="gp__talk">Prefer to talk directly?</p>
     <a class="btn gp__call" href={phone.href} data-gp-call>
       <svg aria-hidden="true" width="22" height="22" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
       <span class="gp__call-text"><span class="gp__call-label">CALL NOW</span> <span class="gp__call-number">{phone.display}</span></span>
@@ -73,12 +72,25 @@ const phone = PAGE_PHONES.default;
      FEMALE at 18px, weight 900; a subtle hover on desktop. The whole card
      stays the link; the site's focus ring is unchanged. */
   .gp .qf-person { gap: 2px; padding-block: 5px; min-height: 163px; justify-content: center; }
-  .gp .qf-person__art { width: min(7.8rem, 100%); }
+  /* Layout (Randy, November 2026): cards and CALL NOW at 91% of the module's
+     inner width, centered; illustrations about 22% larger (up to the card
+     width on phones); one even 12px gap between every element and the same
+     padding above and below; CALL NOW 888-862-9456 on one line, its type a
+     little smaller only where the button is narrow. */
+  .gp .gp__body { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-3) 0; container-type: inline-size; }
+  .gp .gp__q { margin: 0; font-weight: 800; }
+  .gp .gp__body > .qf-people,
+  .gp .gp__body > .gp__call { width: 91%; max-width: none; margin-inline: auto; }
+  .gp .qf-people { gap: var(--space-3); }
+  .gp .gp__call { padding-inline: var(--space-2); }
+  .gp .gp__call-text { flex-direction: row; align-items: center; gap: 0.35em; white-space: nowrap; font-size: clamp(0.875rem, 5.4cqi, 1.125rem); }
+  .gp .gp__call-label,
+  .gp .gp__call-number { font-size: 1em; }
+  .gp .qf-person__art { width: min(9.6rem, 100%); }
   .gp .qf-person__label { font-size: 1.125rem; font-weight: 900; line-height: 1; text-transform: uppercase; letter-spacing: 0.02em; padding-bottom: 2px; }
   @media (hover: hover) {
     .gp .qf-person:hover { border-color: #c9c1ae; background: #f7f6f2; }
   }
-  .gp__talk { margin: var(--space-4) 0 var(--space-2); text-align: center; font-size: 1rem; line-height: 1.5; font-weight: 700; color: var(--color-text); }
   /* The funnel's orange CTA (homepage GET A QUOTE tokens). */
   .gp__call {
     display: flex; align-items: center; justify-content: center; gap: var(--space-2); width: 100%;
@@ -97,8 +109,7 @@ const phone = PAGE_PHONES.default;
   body.page-article-v2 .art-body .gp p { margin: 0; font-size: 1rem; line-height: 1.5; }
   body.page-article-v2 .art-body .gp .quote-box__title { font-size: 1.125rem; }
   body.page-article-v2 .quote-box.gp .gp__title { padding: var(--space-3) 8px; letter-spacing: 0; }
-  body.page-article-v2 .art-body .gp .gp__q { margin: 0 0 var(--space-3); font-size: 1.125rem; line-height: 1.3; }
-  body.page-article-v2 .art-body .gp .gp__talk { margin: var(--space-4) 0 var(--space-2); }
+  body.page-article-v2 .art-body .gp .gp__q { margin: 0; font-size: 1.125rem; line-height: 1.3; }
   body.page-article-v2 .art-body .gp a,
   body.page-article-v2 .art-body .gp a:hover { text-decoration: none; }
   body.page-article-v2 .art-body .gp a.qf-person,
@@ -113,9 +124,7 @@ const phone = PAGE_PHONES.default;
     .gp--inline { display: none; }
     /* Sidebar: Male on top, Female underneath; sticky within the sidebar column. */
     .gp--aside .qf-people,
-    .gp--article-aside .qf-people { grid-template-columns: 1fr; max-width: 13rem; }
-    .gp--aside .gp__call,
-    .gp--article-aside .gp__call { max-width: 15rem; margin-inline: auto; }
+    .gp--article-aside .qf-people { grid-template-columns: 1fr; }
     .gp--aside,
     .gp--article-aside {
       position: sticky;

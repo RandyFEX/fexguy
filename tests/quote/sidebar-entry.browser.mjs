@@ -152,17 +152,18 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         return { title: b.querySelector('.quote-box__title').textContent.trim(), q: b.querySelector('.gp__q').textContent.trim(), links: [...b.querySelectorAll('a.qf-person')].map((a) => a.textContent.trim()),
           stacked: f.top >= m.bottom - 1 && Math.abs(f.left - m.left) < 2, sideBySide: Math.abs(f.top - m.top) < 2 && f.left > m.right - 1,
           talk: b.querySelector('.gp__talk')?.textContent.trim(), callText: call.textContent.replace(/\s+/g, ' ').trim(), href: call.getAttribute('href'), icon: !!call.querySelector('svg path'),
-          bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - (body.width - 2 * parseFloat(getComputedStyle(b.querySelector('.gp__body')).paddingLeft))) < 2,
+          bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - b.querySelector('.qf-people').getBoundingClientRect().width) < 2 && Math.abs(cr.width / b.querySelector('.gp__body').clientWidth - 0.91) < 0.01, callOneLine: new Set([...call.querySelectorAll('.gp__call-text > span')].map((x) => Math.round(x.getBoundingClientRect().top))).size === 1,
           prev: prev?.tagName ?? null, next: next?.tagName ?? null };
       });
-      assert(t.title === 'GET PRICING HERE' && t.q === 'Who Needs Coverage?' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(t.title === 'GET PRICING HERE' && t.q === 'I need pricing for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
-      assert(t.talk === 'Prefer to talk directly?' && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
-      if (name === 'mobile') assert(t.callFull && t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
+      assert(t.talk === undefined && t.callOneLine && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
+      assert(t.callFull, `call width ${JSON.stringify(t)}`);
+      if (name === 'mobile') assert(t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
       if (name === 'mobile') {
         const look = await page.evaluate(() => {
           const one = (sel) => { const b = document.querySelector(sel); const g = (q) => getComputedStyle(b.querySelector(q)); const title = b.querySelector('.quote-box__title').getBoundingClientRect(), body = b.querySelector('.gp__body').getBoundingClientRect();
-            return { gap: Math.round(body.top - title.bottom), q: [g('.gp__q').fontSize, g('.gp__q').color, g('.gp__q').marginBottom], talk: [g('.gp__talk').fontSize, g('.gp__talk').marginTop, g('.gp__talk').marginBottom], call: [g('[data-gp-call]').color, g('.gp__call-label').color, g('[data-gp-call]').textDecorationLine], person: g('a.qf-person').textDecorationLine }; };
+            return { gap: Math.round(body.top - title.bottom), q: [g('.gp__q').fontSize, g('.gp__q').color, g('.gp__q').marginBottom], talk: [g('.gp__call-text').fontSize, g('.gp__body').rowGap, g('.gp__body').paddingBottom], call: [g('[data-gp-call]').color, g('.gp__call-label').color, g('[data-gp-call]').textDecorationLine], person: g('a.qf-person').textDecorationLine }; };
           document.querySelector('[data-get-prices="article-aside"]').style.display = 'block';
           const r = { inline: one('[data-get-prices="inline"]'), aside: one('[data-get-prices="article-aside"]') };
           document.querySelector('[data-get-prices="article-aside"]').style.display = '';
