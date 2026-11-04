@@ -29,8 +29,13 @@
 export const TEST_CODE = '123456';
 /** TEMPORARY public test code in production until Twilio is connected (v5.3). */
 export const PUBLIC_TEST_CODE_ENABLED = true;
+/** Facebook ad launch (Randy, November 2026): the temporary code is switched on
+ * in production here, explicitly, until Twilio is connected. Twilio credentials
+ * still win automatically; QUOTE_PUBLIC_TEST_CODE=off or setting this to false
+ * switches it off at once. */
+export const PUBLIC_TEST_CODE_LAUNCH = true;
 /** v5.4: the instruction shown in 'public-test' mode only (sent by the server, never in the page HTML). */
-export const PUBLIC_TEST_CODE_NOTE = `Enter access code ${TEST_CODE} to view your insurance quotes.`;
+export const PUBLIC_TEST_CODE_NOTE = `Temporary access code: ${TEST_CODE}. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.`;
 
 /** @param {Record<string, string | undefined>} env */
 export function verifyMode(env) {
@@ -42,7 +47,8 @@ export function verifyMode(env) {
   if (!production && env.QUOTE_VERIFY_MODE === 'test') return 'test';
   if (configured) return 'twilio';
   if (!production) return 'test';
-  return PUBLIC_TEST_CODE_ENABLED && env.QUOTE_PUBLIC_TEST_CODE === 'on' ? 'public-test' : 'off';
+  const on = env.QUOTE_PUBLIC_TEST_CODE === 'on' || (PUBLIC_TEST_CODE_LAUNCH && env.QUOTE_PUBLIC_TEST_CODE !== 'off');
+  return PUBLIC_TEST_CODE_ENABLED && on ? 'public-test' : 'off';
 }
 
 /**

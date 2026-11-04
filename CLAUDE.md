@@ -1402,7 +1402,13 @@ scope protection wins.
   server/quote/twilio.js) only when `QUOTE_PUBLIC_TEST_CODE=on` is set
   explicitly (Randy, November 2026: production never falls back to it by
   itself; without Twilio and without that variable, verification is
-  refused with the phone number). No SMS
+  refused with the phone number). Facebook ad launch (Randy, November 2026): switched
+  on explicitly in code (`PUBLIC_TEST_CODE_LAUNCH = true`) until Twilio is
+  connected; Twilio credentials win automatically, `QUOTE_PUBLIC_TEST_CODE=off`
+  or `PUBLIC_TEST_CODE_LAUNCH = false` turns it off. Its notice reads
+  "Temporary access code: 123456. Text message verification is temporarily
+  unavailable, and entering this code does not verify that you own this
+  phone number." No SMS
   is sent; the code unlocks only that visitor's own session and quotes; the
   record says `test-code-accepted`, `phoneVerified: false` (never SMS
   verified); the leads are real (Randy is notified, the /help/ conversion

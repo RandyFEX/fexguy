@@ -106,18 +106,18 @@ test('verification modes: real Twilio when configured; test mode only outside pr
   assert.equal(verifyMode(PREVIEW), 'test');
   // Production never falls back to the universal code by itself: without Twilio it refuses
   // verification unless QUOTE_PUBLIC_TEST_CODE=on is set explicitly (v5.3 code); Twilio always wins.
-  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'off');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'off');
+  // Facebook ad launch: switched on explicitly in code (PUBLIC_TEST_CODE_LAUNCH); 'off' disables it.
+  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'public-test');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'public-test');
   assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'off' }), 'off');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'true' }), 'off');
   assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'public-test');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
 });
 
-test('production without Twilio (no explicit QUOTE_PUBLIC_TEST_CODE=on) refuses verification (503)', async () => {
-  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
+test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
+  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
   assert.equal(r.http, 503);
 });
@@ -152,7 +152,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   assert.equal(rec.verification.phoneVerified, false);
   assert.equal(rec.verification.verifiedAt, null);
   assert.equal(rec.consent.given, false);
-  assert.equal(rec.temporaryCodeNotice, 'Enter access code 123456 to view your insurance quotes.');
+  assert.equal(rec.temporaryCodeNotice, 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.');
   // Production records stay in the production namespace, never the preview one.
   assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
   // The code alone opens nothing: another visitor without their own request gets no prices or session.
@@ -163,7 +163,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
 });
 
 test('v5.4: the access-code instruction is sent only in temporary-code mode, never with Twilio or on previews', async () => {
-  const NOTE = 'Enter access code 123456 to view your insurance quotes.';
+  const NOTE = 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.';
   const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' });
   const PO = { origin: 'https://funeralfunds.com' };
   assert.equal((await prod.call({ action: 'session' }, PO)).body.temporaryCodeNote, NOTE);
