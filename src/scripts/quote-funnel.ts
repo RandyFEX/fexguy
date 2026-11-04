@@ -14,9 +14,13 @@
 // numbers only (tracking.ts, GA4). Leads are saved in the server's Redis
 // record (v6.2); this page makes no Formspark, Turnstile or email requests.
 import { lead } from '@/config/lead';
-import { leadSourceFields } from '@/scripts/lead-source';
+import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 import { saveHandoff } from '@/scripts/quote-handoff';
+
+// The session's traffic source (first landing, UTM, ad click) is kept for
+// /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
+recordVisit();
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
@@ -623,17 +627,12 @@ if (root) {
   const testMode = () => !testBanner.hidden;
   $('[data-qf-intake-finish]').addEventListener('click', finish);
   /** Apply Now (Randy, November 2026): the temporary phone-assisted
-   * application on /facebook/. The lead counts once there, as it did on
-   * /help/ (tracking.ts); the page's own query string (campaign values) goes
-   * along. */
+   * application on /facebook/, with the page's own query string (campaign
+   * values). Apply Now is an application intent (GA4 quote_apply_now, sent
+   * above), never a GA4 generate_lead or Meta Lead. */
   function handoffToApplication() {
     if (completed) return;
     completed = true;
-    if (!testMode() && applyNotified) {
-      try {
-        sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
-      } catch {}
-    }
     location.assign(`/facebook/${location.search}`);
   }
 

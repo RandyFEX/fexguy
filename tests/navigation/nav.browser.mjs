@@ -265,7 +265,8 @@ await test('/roku/ keeps its compact menu and campaign number', async () => {
 });
 for (const path of ['/facebook/', '/free-quote/', '/help/']) {
   await test(`${path} keeps its simplified header`, async () => {
-    const p = await page(path);
+    // /facebook/: a Facebook ad visit shows the campaign number (others get the main number; tests/quote).
+    const p = await page(path === '/facebook/' ? '/facebook/?utm_source=facebook' : path);
     assert.equal(await p.locator('header.site-header, [data-nav]').count(), 0);
     assert.equal(await p.locator('[data-header-phone]').count(), 1);
     assert.equal(await p.getAttribute('[data-header-phone]', 'href'), path === '/facebook/' ? 'tel:8886564648' : 'tel:8888629456');

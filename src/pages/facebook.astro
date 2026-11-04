@@ -21,8 +21,10 @@
 //
 // GA4: page views as everywhere; the body class `track-page-calls` makes
 // src/scripts/tracking.ts count taps on this page's call links as
-// click_to_call (never a Meta Lead). A /free-quote/ Apply Now arriving here
-// counts its lead once (tracking.ts), as it did on /help/.
+// click_to_call (never a Meta Lead). Arriving here (Apply Now or directly)
+// is never a GA4 generate_lead or Meta Lead. Phone number by source: the
+// campaign number for Facebook/Instagram ad visits, the main website number
+// otherwise (page script; the HTML carries the campaign number).
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
@@ -137,7 +139,7 @@ const advantage = [
             <div><dt>Coverage Amount</dt><dd data-fb-quote-coverage></dd></div>
             <div><dt>Estimated Monthly Rate</dt><dd data-fb-quote-premium></dd></div>
           </dl>
-          <p class="fb-quote__note">Estimate only. Your final premium is set when the insurance company approves your application.</p>
+          <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
         <div class="fb-call">
           <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
@@ -236,6 +238,37 @@ const advantage = [
 
 <script>
   import { readHandoff } from '@/scripts/quote-handoff';
+  import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
+  import { lead } from '@/config/lead';
+
+  // Phone number by traffic source (Randy, November 2026): Facebook/Instagram
+  // ad visitors keep the campaign number the page is built with; everyone
+  // else (website visitors from /free-quote/ Apply Now, direct visits) gets
+  // the main website number, in every visible number, tel: link and label.
+  recordVisit();
+  // The campaign number is read from this page's own header link (it lives
+  // only in this page's HTML, never in a script).
+  const fmt = (href: string) => {
+    const d = href.replace(/\D/g, '').slice(-10);
+    return { href: `tel:${d}`, display: `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}`, paren: `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` };
+  };
+  const headerHref = document.querySelector('[data-header-phone]')?.getAttribute('href') ?? '';
+  if (!isFacebookAdVisit() && headerHref && headerHref !== lead.phone.href) {
+    const from = fmt(headerHref), to = fmt(lead.phone.href);
+    const swap = (t: string) => t.replaceAll(from.paren, to.paren).replaceAll(from.display, to.display);
+    for (const a of document.querySelectorAll<HTMLAnchorElement>(`a[href="${from.href}"]`)) {
+      a.href = to.href;
+      const label = a.getAttribute('aria-label');
+      if (label) a.setAttribute('aria-label', swap(label));
+    }
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      if (n.nodeValue && (n.nodeValue.includes(from.display) || n.nodeValue.includes(from.paren))) n.nodeValue = swap(n.nodeValue);
+    }
+    document.body.dataset.phoneSource = 'website';
+  } else {
+    document.body.dataset.phoneSource = 'facebook-ad';
+  }
 
   // Apply Now from /free-quote/: show the selected coverage and server-priced
   // estimate. Missing, stale or invalid data keeps the summary hidden.

@@ -114,8 +114,25 @@ const HOME_HOVER = await (async () => {
   await p.close();
   return f;
 })();
-/** /facebook/ after the handoff: no old callback form, CTA wording updated. */
-async function minimalCheckFacebook(page) {
+/** /facebook/ after the handoff: no old callback form, CTA wording updated,
+ * and every phone link and visible number is the expected one (campaign
+ * number for Facebook/Instagram ad visits, the main number otherwise). */
+const CAMPAIGN = { href: 'tel:8886564648', display: '888-656-4648', source: 'facebook-ad' };
+const MAIN = { href: 'tel:8888629456', display: '888-862-9456', source: 'website' };
+async function minimalCheckFacebook(page, phone = CAMPAIGN) {
+  const other = phone === CAMPAIGN ? MAIN : CAMPAIGN;
+  const ph = await page.evaluate(() => ({
+    tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href')),
+    labels: [...document.querySelectorAll('a[href^="tel:"][aria-label]')].map((a) => a.getAttribute('aria-label')).join(' '),
+    text: document.body.innerText,
+    source: document.body.dataset.phoneSource,
+    disclosure: document.querySelector('.fb-quote__note')?.textContent.trim(),
+  }));
+  assert(ph.tels.length >= 5 && ph.tels.every((h) => h === phone.href), `facebook tel links ${JSON.stringify(ph.tels)}`);
+  const digits = other.display.replace(/-/g, '');
+  assert(ph.text.includes(phone.display) && !ph.text.includes(other.display) && !ph.text.includes(`(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`) && !ph.labels.includes(other.display), `facebook numbers shown ${phone.display} / ${other.display}`);
+  assert(ph.source === phone.source, `phone source ${ph.source}`);
+  assert(ph.disclosure === 'Your final premium and coverage are subject to insurance company approval.', `disclosure ${ph.disclosure}`);
   const f = await page.evaluate(() => ({
     forms: document.querySelectorAll('form').length,
     oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
@@ -123,7 +140,7 @@ async function minimalCheckFacebook(page) {
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === 'tel:8886564648'), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -567,7 +584,27 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="lowest-preferred"] [data-qf-amount]').textContent.trim() !== b, seen[1], { timeout: 8000 });
     const later = await applyAndRead('lowest-preferred');
     assert(later.fb.coverage === '$25,000' && later.fb.premium === later.card && later.card !== seen[1], `stale summary ${JSON.stringify(later)}`);
-    await minimalCheckFacebook(page);
+    await minimalCheckFacebook(page, CAMPAIGN);
+  });
+  await check(`${name}: Apply Now is an application intent only (quote_apply_now; no generate_lead, no Meta Lead, no lead flag); website visitors get the main number`, async () => {
+    const logs = [];
+    const onLog = (m) => logs.push(m.text());
+    page.on('console', onLog);
+    // A website visitor (no ad parameters): drop the session's earlier ad landing.
+    await page.evaluate(() => sessionStorage.removeItem('fexguy:lead-source'));
+    await page.goto(URL_);
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    await page.evaluate(() => { window.__ffEvents = []; window.addEventListener('ff:funnel', (e) => window.__ffEvents.push(e.detail.name)); window.addEventListener('pagehide', () => sessionStorage.setItem('__ffEvents', JSON.stringify(window.__ffEvents))); });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
+    await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
+    await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+    await page.waitForTimeout(300);
+    const r = await page.evaluate(() => ({ pending: sessionStorage.getItem('fexguy:lead-pending'), events: JSON.parse(sessionStorage.getItem('__ffEvents') || '[]') }));
+    page.off('console', onLog);
+    assert(r.pending === null, 'lead flag set by Apply Now');
+    assert(r.events.includes('quote_apply_now'), `events ${r.events}`);
+    assert(!logs.some((t) => /generate_lead|'Lead'|\bLead\b/.test(t)), `lead conversion fired: ${logs.filter((t) => /Lead|lead/.test(t)).join(' | ')}`);
+    await minimalCheckFacebook(page, MAIN);
   });
   await check(`${name}: every pricing input can be changed on the results screen (so no Start New Quote control)`, async () => {
     await page.goto(URL_);
@@ -586,7 +623,7 @@ await check('evidence: verified leads, consent records, intended use and every A
     assert(
       (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
         r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v4-2026-11' && r.verifyNotice.text === "We'll text a 6-digit verification code to (***) ***-XXXX. Message and data rates may apply." &&
-        r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 4 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred' && r.applications[3].quote.coverage === 25000,
+        r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
     );
   return `${recs.length} lead records (${v.length} verified)`;
@@ -604,8 +641,37 @@ await check('/facebook/ opened directly, or with a stale or invalid handoff, hid
     await p.reload();
     assert(await p.isHidden('[data-fb-quote]'), `summary shown for ${JSON.stringify(bad)}`);
   }
-  await minimalCheckFacebook(p);
+  await minimalCheckFacebook(p, MAIN);
   await p.close();
+});
+await check('/facebook/ phone by source: direct visit main number and no Lead; utm_source=facebook, fbclid and an earlier ad landing keep the campaign number', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  const logs = [];
+  p.on('console', (m) => logs.push(m.text()));
+  await p.goto(`${BASE}/facebook/`);
+  await minimalCheckFacebook(p, MAIN);
+  assert(!logs.some((t) => /generate_lead|\bLead\b/.test(t)), `direct visit counted a lead: ${logs.join(' | ')}`);
+  await ctx.close();
+  for (const q of ['?utm_source=facebook&utm_medium=paid', '?fbclid=abc123', '?utm_source=ig']) {
+    const c = await browser.newContext();
+    const pg = await c.newPage();
+    await pg.goto(`${BASE}/facebook/${q}`);
+    await minimalCheckFacebook(pg, CAMPAIGN);
+    await c.close();
+  }
+  // Source survives the funnel: ad landing on /free-quote/, then /facebook/ without parameters.
+  const c2 = await browser.newContext();
+  const p2 = await c2.newPage();
+  await p2.goto(`${BASE}/free-quote/?fbclid=xyz789`);
+  await p2.goto(`${BASE}/facebook/`);
+  await minimalCheckFacebook(p2, CAMPAIGN);
+  // Other referral sources (e.g. google) get the main number.
+  const p3 = await (await browser.newContext()).newPage();
+  await p3.goto(`${BASE}/facebook/?utm_source=google`);
+  await minimalCheckFacebook(p3, MAIN);
+  await c2.close();
+  await p3.context().close();
 });
 
 await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {

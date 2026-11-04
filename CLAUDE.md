@@ -1119,9 +1119,13 @@ scope protection wins.
   structured for a later CRM) the hero shows "Your Selected Coverage"
   (Coverage Amount, Estimated Monthly Rate). The short callback form, its
   "Prefer a Callback?" block, the 'short' field set and the marketing
-  Formspark endpoint were removed. The funnel lead counts once on /facebook/
-  (tracking.ts, same flag and events as /help/). No HubSpot integration
-  exists in this repository.
+  Formspark endpoint were removed. Apply Now is GA4 quote_apply_now only;
+  arriving at /facebook/ never fires generate_lead or Meta Lead. Phone by
+  source (lead-source.ts isFacebookAdVisit: Facebook/Instagram click ID or
+  utm_source on the session's first landing or the page address): campaign
+  number 888-656-4648 for ad visits, 888-862-9456 for everyone else (the
+  HTML keeps the campaign number; the page script swaps it). No HubSpot
+  integration exists in this repository.
 - **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
   v5.8): the interactive funnel (below, "Quote funnel") replaced the
   callback form described in the next item and moved here from

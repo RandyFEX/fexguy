@@ -71,6 +71,17 @@ function write(source: Source) {
   }
 }
 
+const FACEBOOK_SOURCE = /^(facebook|fb|meta|instagram|ig)$/i;
+const fromFacebookAd = (s: Source) => s.click === 'Facebook/Instagram click' || FACEBOOK_SOURCE.test(s.utm.utm_source ?? '');
+
+/** True when this session came from a Facebook/Instagram ad: a Facebook or
+ * Instagram click ID or utm_source, on the session's first landing (recorded
+ * here) or on this page's address. Used for /facebook/'s phone number. */
+export function isFacebookAdVisit(): boolean {
+  const stored = read();
+  return (stored ? fromFacebookAd(stored) : false) || fromFacebookAd(fromCurrentPage());
+}
+
 /** Call once per page view, before the visitor can submit. */
 export function recordVisit() {
   const current = fromCurrentPage();
