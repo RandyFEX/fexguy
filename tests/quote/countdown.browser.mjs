@@ -93,6 +93,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
     const t = await page.$eval('[data-fb-offer]', (e) => ({ text: e.textContent.trim(), color: getComputedStyle(e.querySelector('[data-fb-offer-time]')).color, pColor: getComputedStyle(e).color, children: e.children.length, lines: Math.round(e.getBoundingClientRect().height / parseFloat(getComputedStyle(e).lineHeight)) }));
     assert(t.text === 'Your offer will expire in: 2:00' && t.color === YELLOW && t.pColor === 'rgb(255, 255, 255)' && t.children === 1 && t.lines === 1, JSON.stringify(t));
     assert(await page.isVisible('[data-fb-quote]'), 'selected quote hidden');
+    assert(!(await page.evaluate(() => /remain active for the next 12 hours/i.test(document.body.innerText))), 'old 12-hour message shown');
     if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/${name}-apply-timer.png` });
     await page.clock.runFor(30000);
     assert(APPLY.exec((await page.textContent('[data-fb-offer]')).trim())[1] === '1:30', 'not 1:30 after 30s');

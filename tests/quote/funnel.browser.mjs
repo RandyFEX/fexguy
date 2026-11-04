@@ -569,7 +569,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         title: document.querySelector('#fb-title').textContent.trim(),
         coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
         premium: document.querySelector('[data-fb-quote-premium]').textContent.trim(),
-        labels: [...document.querySelectorAll('.fb-quote dt, .fb-quote__title')].map((e) => e.textContent.trim()),
+        labels: [...document.querySelectorAll('.fb-quote dt, .fb-quote__title')].map((e) => e.textContent.trim()), twelveHours: /remain active for the next 12 hours/i.test(document.body.innerText),
         handoff: JSON.parse(localStorage.getItem('ff:quote-handoff')),
       }));
       return { card, coverage, fb };
@@ -582,7 +582,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
       assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
-      assert(r.fb.labels.join('|') === 'Your quote will remain active for the next 12 hours.|Coverage Amount|Estimated Monthly Rate', `labels ${r.fb.labels}`);
+      assert(r.fb.labels.join('|') === 'Coverage Amount|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
@@ -757,9 +757,9 @@ await check('SMS: Text Me My Access Code works with the contact-step number (390
   await p3.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
   await c3.close();
 });
-// /facebook/ quote box (v1.3): 12-hour heading, figures twice the former 1.75rem (identical,
+// /facebook/ quote box (v1.3; the 12-hour heading was removed in Countdown V2.0): figures twice the former 1.75rem (identical,
 // side by side on desktop, stacked on phones), the disclaimer as one-line fine print on desktop.
-await check('/facebook/ quote box v1.3: heading, large identical figures, fine-print disclaimer (390px and 1440px)', async () => {
+await check('/facebook/ quote box v1.3: no 12-hour heading, large identical figures, fine-print disclaimer (390px and 1440px)', async () => {
   for (const [w, opts] of [['390', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }], ['1440', { viewport: { width: 1440, height: 900 } }]]) {
     const ctx = await browser.newContext(opts);
     const p = await ctx.newPage();
@@ -769,12 +769,12 @@ await check('/facebook/ quote box v1.3: heading, large identical figures, fine-p
     await p.waitForSelector('[data-fb-quote]:not([hidden])');
     const r = await p.evaluate(() => {
       const box = document.querySelector('[data-fb-quote]');
-      const t = box.querySelector('.fb-quote__title'), n = box.querySelector('.fb-quote__note');
+      const n = box.querySelector('.fb-quote__note');
       const dd = [...box.querySelectorAll('dd')].map((d) => ({ text: d.textContent.trim(), size: getComputedStyle(d).fontSize, weight: getComputedStyle(d).fontWeight, top: Math.round(d.getBoundingClientRect().top), right: d.getBoundingClientRect().right, scroll: d.scrollWidth <= d.clientWidth + 1 }));
-      const cs = getComputedStyle(t), ns = getComputedStyle(n);
-      return { title: t.textContent.trim(), titleColor: cs.color, titleWeight: cs.fontWeight, titleAlign: cs.textAlign, dt: [...box.querySelectorAll('dt')].map((d) => d.textContent.trim()), dd, note: n.textContent.trim(), noteSize: parseFloat(ns.fontSize), noteLines: Math.round(n.getBoundingClientRect().height / parseFloat(ns.lineHeight)), boxRight: box.getBoundingClientRect().right, vw: document.documentElement.clientWidth, docW: document.documentElement.scrollWidth };
+      const ns = getComputedStyle(n);
+      return { title: !!box.querySelector('.fb-quote__title'), twelveHours: /remain active for the next 12 hours/i.test(document.body.innerText), dt: [...box.querySelectorAll('dt')].map((d) => d.textContent.trim()), dd, note: n.textContent.trim(), noteSize: parseFloat(ns.fontSize), noteLines: Math.round(n.getBoundingClientRect().height / parseFloat(ns.lineHeight)), boxRight: box.getBoundingClientRect().right, vw: document.documentElement.clientWidth, docW: document.documentElement.scrollWidth };
     });
-    assert(r.title === 'Your quote will remain active for the next 12 hours.' && r.titleColor === 'rgb(255, 255, 255)' && Number(r.titleWeight) >= 700 && r.titleAlign === 'center', `${w}: title ${JSON.stringify(r)}`);
+    assert(!r.title && !r.twelveHours, `${w}: old 12-hour message still shown ${JSON.stringify(r)}`);
     assert(r.dt.join('|') === 'Coverage Amount|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
     assert(r.dd[0].size === r.dd[1].size && r.dd[0].weight === r.dd[1].weight && parseFloat(r.dd[0].size) >= (w === '1440' ? 56 : 42), `${w}: figure sizes ${JSON.stringify(r.dd)}`);
     assert(w === '1440' ? r.dd[0].top === r.dd[1].top : r.dd[0].top < r.dd[1].top, `${w}: layout ${JSON.stringify(r.dd)}`);
