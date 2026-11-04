@@ -730,7 +730,7 @@ await check('verified lead: GA4 generate_lead + Meta Lead once at SMS verificati
   assert(leadLogs(logs2).length === 0, `test mode counted a lead: ${JSON.stringify(leadLogs(logs2))}`);
   await ctx2.close();
 });
-await check('/facebook/: no phone number shows or can be tapped before this visitor\'s number is set (fallback after 3 seconds)', async () => {
+await check('/facebook/: no phone number shows or can be tapped before this visitor\'s number is set (fallback: the main number)', async () => {
   const ctx = await browser.newContext();
   const p = await ctx.newPage();
   await p.route(/\/_astro\/facebook\.astro_astro_type_script[^/]*\.js$/, (r) => r.abort());
@@ -741,7 +741,18 @@ await check('/facebook/: no phone number shows or can be tapped before this visi
   }));
   assert(hidden.tels.length >= 5 && hidden.tels.every((v) => v === 'hidden') && hidden.note === 'hidden', `shown while loading ${JSON.stringify(hidden)}`);
   await p.waitForFunction(() => !document.documentElement.classList.contains('fb-phone-pending'), null, { timeout: 5000 });
+  // The script-failure fallback is the main website number (never the campaign number), links and text alike.
+  const fb = await p.evaluate(() => ({ tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => [a.getAttribute('href'), getComputedStyle(a).visibility]), text: document.body.innerText }));
+  assert(fb.tels.every(([h, v]) => h === 'tel:8888629456' && v === 'visible') && fb.text.includes('888-862-9456') && !/656-4648/.test(fb.text), `fallback ${JSON.stringify(fb.tels)}`);
   await ctx.close();
+  // Without JavaScript: the main number at once.
+  const nojs = await browser.newContext({ javaScriptEnabled: false });
+  const pn = await nojs.newPage();
+  await pn.goto(`${BASE}/facebook/?utm_source=facebook`);
+  const nj = await pn.evaluate(() => [...document.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href')));
+  const njText = await pn.innerText('body');
+  assert(nj.length >= 5 && nj.every((h) => h === 'tel:8888629456') && !/656-4648/.test(njText), `no-JS numbers ${JSON.stringify(nj)}`);
+  await nojs.close();
 });
 
 await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {

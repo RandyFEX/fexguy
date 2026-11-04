@@ -24,7 +24,9 @@
 // click_to_call (never a Meta Lead). Arriving here (Apply Now or directly)
 // is never a GA4 generate_lead or Meta Lead. Phone number by source: the
 // campaign number for Facebook/Instagram ad visits, the main website number
-// otherwise (page script; the HTML carries the campaign number).
+// otherwise. The HTML carries the main number (the fallback without
+// JavaScript or if the page script fails); the page script switches known
+// ad visitors to the campaign number held in data-campaign-phone.
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
@@ -34,8 +36,11 @@ import { PAGE_PHONES, withPagePhone } from '@/config/phones';
 import { site } from '@/config/site';
 import { footerDisclaimer } from '@/lib/footer-notes';
 
-const phone = PAGE_PHONES.ctv;
-const notes = site.footer.notes.map((html) => withPagePhone(html, 'ctv'));
+// Main number by default; the campaign number is applied by the page script
+// for Facebook/Instagram ad visits only (Randy, November 2026).
+const phone = PAGE_PHONES.default;
+const campaignPhone = PAGE_PHONES.ctv;
+const notes = site.footer.notes.map((html) => withPagePhone(html, 'default'));
 
 const title = 'Burial Insurance Quotes | Funeral Funds';
 const description = 'Compare affordable burial insurance options for ages 50-85. No medical exam required. Call Funeral Funds for your free quote.';
@@ -106,14 +111,13 @@ const advantage = [
   canonical="/facebook/"
   headMeta={headMeta}
   layout="landing"
-  phone="ctv"
   bodyClass="page-fb track-page-calls"
 >
-  <div class="fb" data-page-type="sales" data-page-reason="Facebook ad landing page (noindex, campaign phone number).">
+  <div class="fb" data-campaign-phone={campaignPhone.href} data-page-type="sales" data-page-reason="Facebook ad landing page (noindex, campaign phone number).">
     <!-- Phone numbers stay hidden until the page script sets the right one for
          this visitor (no wrong number shows or can be tapped while loading).
-         If that script never runs, they show after 3 seconds; without
-         JavaScript they show at once. -->
+         If that script never runs, the main number shows after 3 seconds;
+         without JavaScript it shows at once. -->
     <script is:inline>document.documentElement.classList.add('fb-phone-pending');setTimeout(function(){document.documentElement.classList.remove('fb-phone-pending')},3000);</script>
     <div class="fb-top">
       <div class="container fb-top__inner">
@@ -246,20 +250,20 @@ const advantage = [
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
 
-  // Phone number by traffic source (Randy, November 2026): Facebook/Instagram
-  // ad visitors keep the campaign number the page is built with; everyone
-  // else (website visitors from /free-quote/ Apply Now, direct visits) gets
-  // the main website number, in every visible number, tel: link and label.
+  // Phone number by traffic source (Randy, November 2026): the page is built
+  // with the main website number (also the fallback without JavaScript);
+  // Facebook/Instagram ad visitors are switched to the campaign number in
+  // every visible number, tel: link and label.
   recordVisit();
-  // The campaign number is read from this page's own header link (it lives
-  // only in this page's HTML, never in a script).
+  // The campaign number is read from this page's HTML (data-campaign-phone;
+  // it lives only in this page's HTML, never in a script).
   const fmt = (href: string) => {
     const d = href.replace(/\D/g, '').slice(-10);
     return { href: `tel:${d}`, display: `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}`, paren: `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}` };
   };
-  const headerHref = document.querySelector('[data-header-phone]')?.getAttribute('href') ?? '';
-  if (!isFacebookAdVisit() && headerHref && headerHref !== lead.phone.href) {
-    const from = fmt(headerHref), to = fmt(lead.phone.href);
+  const campaignHref = document.querySelector('[data-campaign-phone]')?.getAttribute('data-campaign-phone') ?? '';
+  if (isFacebookAdVisit() && /^tel:\d{10}$/.test(campaignHref) && campaignHref !== lead.phone.href) {
+    const from = fmt(lead.phone.href), to = fmt(campaignHref);
     const swap = (t: string) => t.replaceAll(from.paren, to.paren).replaceAll(from.display, to.display);
     for (const a of document.querySelectorAll<HTMLAnchorElement>(`a[href="${from.href}"]`)) {
       a.href = to.href;
@@ -270,9 +274,9 @@ const advantage = [
     for (let n = walker.nextNode(); n; n = walker.nextNode()) {
       if (n.nodeValue && (n.nodeValue.includes(from.display) || n.nodeValue.includes(from.paren))) n.nodeValue = swap(n.nodeValue);
     }
-    document.body.dataset.phoneSource = 'website';
-  } else {
     document.body.dataset.phoneSource = 'facebook-ad';
+  } else {
+    document.body.dataset.phoneSource = 'website';
   }
   document.documentElement.classList.remove('fb-phone-pending');
 

@@ -62,7 +62,8 @@ is in place; see src/content/README.md for how pages were migrated.
   Form" above the icon and number, with no label; HeaderPhone
   `showLabel={false}`; the site header and other headers are unchanged),
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
-  /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
+  888-862-9456 elsewhere (/facebook/ is built with 888-862-9456; its page
+  script shows 888-656-4648 to Facebook/Instagram ad visitors), and no "Call Randy" in the header.
 - **Header logo link (Randy, November 2026):** the upper-left Funeral Funds
   logo on every page links to exactly `https://funeralfunds.com/` (never a
   relative path, tracking URL or script navigation), with the accessible
@@ -1124,9 +1125,10 @@ scope protection wins.
   source (lead-source.ts isFacebookAdVisit: Facebook/Instagram click ID or
   utm_source on the session's first landing or the page address): campaign
   number 888-656-4648 for ad visits, 888-862-9456 for everyone else (the
-  HTML keeps the campaign number; the page script swaps it, and every tel:
-  link and the footer disclaimer stay hidden until it has, with a 3-second
-  fallback). The funnel's conversion (GA4 generate_lead + Meta Lead) fires
+  HTML carries the main number, the fallback without JavaScript or if the
+  script fails; the page script switches ad visitors to the campaign number
+  in `data-campaign-phone`, and every tel: link and the footer disclaimer
+  stay hidden until it has, 3 seconds at most). The funnel's conversion (GA4 generate_lead + Meta Lead) fires
   once when the server's `check` returns `leadVerified: true` (a real
   Twilio-approved SMS verification; never in test or temporary-code mode),
   via the `ff:lead` event in tracking.ts, deduplicated per lead id. No HubSpot
@@ -1397,7 +1399,10 @@ scope protection wins.
   notification). v5.3 (Randy, November 2026, temporary until Twilio is
   connected): production without Twilio credentials accepts the same code
   123456 (`public-test` mode, `PUBLIC_TEST_CODE_ENABLED` in
-  server/quote/twilio.js; `QUOTE_PUBLIC_TEST_CODE=off` disables it). No SMS
+  server/quote/twilio.js) only when `QUOTE_PUBLIC_TEST_CODE=on` is set
+  explicitly (Randy, November 2026: production never falls back to it by
+  itself; without Twilio and without that variable, verification is
+  refused with the phone number). No SMS
   is sent; the code unlocks only that visitor's own session and quotes; the
   record says `test-code-accepted`, `phoneVerified: false` (never SMS
   verified); the leads are real (Randy is notified, the /help/ conversion

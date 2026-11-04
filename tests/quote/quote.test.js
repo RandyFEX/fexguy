@@ -99,22 +99,26 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
 test('verification modes: real Twilio when configured; test mode only outside production; never in production', () => {
   assert.equal(verifyMode(TWILIO), 'twilio');
   assert.equal(verifyMode(PREVIEW), 'test');
-  // v5.3: production without Twilio uses the temporary public test code; Twilio always wins.
-  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'public-test');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'public-test');
+  // Production never falls back to the universal code by itself: without Twilio it refuses
+  // verification unless QUOTE_PUBLIC_TEST_CODE=on is set explicitly (v5.3 code); Twilio always wins.
+  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'off');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'off');
   assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'off' }), 'off');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'true' }), 'off');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'public-test');
+  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
 });
 
-test('production without Twilio and with the public test code switched off refuses verification (503)', async () => {
-  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
+test('production without Twilio (no explicit QUOTE_PUBLIC_TEST_CODE=on) refuses verification (503)', async () => {
+  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
   assert.equal(r.http, 503);
 });
 
 test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, never marks the phone SMS-verified, real lead', async () => {
-  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
   const PO = { origin: 'https://funeralfunds.com' };
   const c = client(PROD);
   const prodPrice = async (cl) => {
@@ -155,7 +159,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
 
 test('v5.4: the access-code instruction is sent only in temporary-code mode, never with Twilio or on previews', async () => {
   const NOTE = 'Enter access code 123456 to view your insurance quotes.';
-  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
+  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' });
   const PO = { origin: 'https://funeralfunds.com' };
   assert.equal((await prod.call({ action: 'session' }, PO)).body.temporaryCodeNote, NOTE);
   assert.equal((await prod.call(startBody(), PO)).body.temporaryCodeNote, NOTE);
@@ -544,7 +548,7 @@ test('v6.2: the funnel saves the lead and makes no outbound request (no Formspar
   const realFetch = globalThis.fetch;
   globalThis.fetch = async (url, ...rest) => { calls.push(String(url)); return realFetch(url, ...rest); };
   try {
-    const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+    const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
     const PO = { origin: 'https://funeralfunds.com' };
     const c = client(PROD);
     const source = { entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'male', entryAt: '2026-11-03T22:00:00.000Z' };
