@@ -68,6 +68,16 @@ const phone = PAGE_PHONES.default;
   .gp .qf-person { padding: var(--space-3) var(--space-1); text-decoration: none; min-height: var(--tap-target, 44px); }
   .gp .qf-person__art { width: min(6rem, 100%); }
   .gp .qf-person__label { font-size: 1.125rem; }
+  /* Cards (Randy, November 2026): the illustrations about 30% larger in the
+     same card size (less padding and space above the label), labels MALE /
+     FEMALE at 18px, weight 900; a subtle hover on desktop. The whole card
+     stays the link; the site's focus ring is unchanged. */
+  .gp .qf-person { gap: 2px; padding-block: 5px; min-height: 163px; justify-content: center; }
+  .gp .qf-person__art { width: min(7.8rem, 100%); }
+  .gp .qf-person__label { font-size: 1.125rem; font-weight: 900; line-height: 1; text-transform: uppercase; letter-spacing: 0.02em; padding-bottom: 2px; }
+  @media (hover: hover) {
+    .gp .qf-person:hover { border-color: #c9c1ae; background: #f7f6f2; }
+  }
   .gp__talk { margin: var(--space-4) 0 var(--space-2); text-align: center; font-size: 1rem; line-height: 1.5; font-weight: 700; color: var(--color-text); }
   /* The funnel's orange CTA (homepage GET A QUOTE tokens). */
   .gp__call {
