@@ -853,12 +853,60 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     if (!logoLinkOk(m[1])) logoProblems.push(`${page}: linked logo is not a plain labelled link to ${HOME_URL} (<a${m[1].slice(0, 80)}>)`);
 }
 
+// ---- Pricing CTAs (Randy, November 2026, Free-Quote CTA Standardization V3.0) ----
+// Every button-style link to the quote funnel (/free-quote/, relative or
+// absolute) reads exactly SEE PRICES NOW: the homepage hero, the menu, the
+// compact /roku/ menu, the pre-footer and content buttons; the article
+// pricing module's header ([data-gp-title]) reads the same. Exceptions: the
+// module's Male/Female choices (data-gp-gender) and ordinary editorial links
+// (no button class), unless their text is an old pricing label.
+const CTA_TEXT = 'SEE PRICES NOW';
+const FREE_QUOTE_HREF = /^(?:https?:\/\/(?:www\.)?(?:funeralfunds|fexguy)\.com)?\/free-quote(?:\/|\?|#|$)/i;
+const CTA_CLASS = /\b(?:btn|button|button-link|nav__quote|nav__top-link|cta)\b/;
+const OLD_PRICING_LABEL = /\b(?:GET PRICING|GET (?:A |MY |YOUR )?(?:FREE )?(?:QUOTES?|PRICES?|RATES)|SEE PRICES|VIEW PRICES|FREE FINAL EXPENSE QUOTE)\b/i;
+const ctaProblems = [];
+let ctaChecked = 0;
+let ctaTitles = 0;
+const textOf = (s) => s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;|&#160;/g, ' ').replace(/\s+/g, ' ').trim();
+for (const file of pages) {
+  const page = '/' + file.slice(DIST.length).replace(/index\.html$/, '');
+  const html = readFileSync(file, 'utf8');
+  for (const m of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)) {
+    const href = (m[1].match(/\bhref="([^"]*)"/) || [])[1];
+    if (!href || !FREE_QUOTE_HREF.test(href) || /\bdata-gp-gender=/.test(m[1])) continue;
+    const cls = (m[1].match(/\bclass="([^"]*)"/) || [])[1] || '';
+    const text = textOf(m[2]);
+    if (CTA_CLASS.test(cls)) {
+      ctaChecked++;
+      if (text !== CTA_TEXT) ctaProblems.push(`${page}: pricing CTA to ${href} reads "${text}" (class "${cls}"); it must read ${CTA_TEXT}`);
+    } else if (text !== CTA_TEXT && OLD_PRICING_LABEL.test(text)) {
+      ctaProblems.push(`${page}: link to ${href} uses an old pricing label "${text}"`);
+    }
+  }
+  for (const m of html.matchAll(/<([a-z]+)\b[^>]*\bdata-gp-title\b[^>]*>([\s\S]*?)<\/\1>/g)) {
+    ctaTitles++;
+    if (textOf(m[2]) !== CTA_TEXT) ctaProblems.push(`${page}: pricing module header reads "${textOf(m[2])}"; it must read ${CTA_TEXT}`);
+  }
+  if (/\bGET PRICING HERE\b/i.test(textOf(html.replace(/<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>/g, '')))) ctaProblems.push(`${page}: old label GET PRICING HERE still shown`);
+}
+{
+  const home = readFileSync(join(DIST, 'index.html'), 'utf8');
+  const hero = home.match(/<a\b([^>]*\bhero__btn--primary\b[^>]*)>([\s\S]*?)<\/a>/);
+  if (!hero) ctaProblems.push('/: homepage hero pricing button not found');
+  else {
+    if ((hero[1].match(/\bhref="([^"]*)"/) || [])[1] !== '/free-quote/') ctaProblems.push('/: homepage hero button does not link to /free-quote/');
+    if (textOf(hero[2]) !== CTA_TEXT) ctaProblems.push(`/: homepage hero button reads "${textOf(hero[2])}"; it must read ${CTA_TEXT}`);
+  }
+}
+
 console.log(`Redirects: ${redirects.size} | problems: ${redirectProblems.length}`);
 for (const p of redirectProblems) console.log(`  [redirect] ${p}`);
 console.log(`Header phone (label, icon, number): ${headersChecked} headers checked | problems: ${headerProblems.length}`);
 for (const p of headerProblems) console.log(`  [header] ${p}`);
 console.log(`Header logo link (${HOME_URL}): ${logosChecked} headers checked | problems: ${logoProblems.length}`);
 for (const p of logoProblems) console.log(`  [logo] ${p}`);
+console.log(`Pricing CTAs (${CTA_TEXT}): ${ctaChecked} buttons + ${ctaTitles} module headers checked | problems: ${ctaProblems.length}`);
+for (const p of ctaProblems) console.log(`  [cta] ${p}`);
 console.log(`Content guards: ${GUARDS.length} checks + GA4/Meta IDs | problems: ${guardProblems.length}`);
 for (const p of guardProblems) console.log(`  [guard] ${p}`);
 console.log(`En/em dashes in visible copy (built pages, exceptions in src/config/dash-exceptions.json): ${visibleDashHits.length}`);
@@ -901,6 +949,7 @@ const problems =
   redirectProblems.length +
   headerProblems.length +
   logoProblems.length +
+  ctaProblems.length +
   guardProblems.length +
   structureProblems.length +
   tocProblems.length +

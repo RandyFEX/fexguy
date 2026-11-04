@@ -53,7 +53,7 @@ async function minimalLayout(page) {
     return {
       siteHeader: !!document.querySelector('header.site-header, .nav--mega, [data-mega-nav], footer.site-footer, .pre-footer'),
       menus: ['Company Reviews', 'Health & Eligibility', 'Guides & Tools', 'About Us'].filter((t) => text.includes(t)),
-      promo: /Compare Quotes From Top Life Insurance Companies|GET QUOTES NOW|Get Your Final Expense Insurance Quote|Olympia Drive|Flower Mound|Mailing Address/i.test(text),
+      promo: /Compare Quotes From Top Life Insurance Companies|GET QUOTES NOW|SEE PRICES NOW|Get Your Final Expense Insurance Quote|Olympia Drive|Flower Mound|Mailing Address/i.test(text),
       h1Visible: h1 ? h1.getBoundingClientRect().height > 2 : false,
       h1Count: document.querySelectorAll('h1').length,
       logo: document.querySelector('.qh-top a[data-header-logo]')?.getAttribute('href'),
@@ -97,7 +97,7 @@ async function verify(page) {
   await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
 }
 
-// The homepage GET A QUOTE button is the source of truth for the orange (v4.1).
+// The homepage SEE PRICES NOW button is the source of truth for the orange (v4.1).
 const HOME_ORANGE = await (async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);
@@ -885,10 +885,11 @@ await check('/facebook/: no phone number shows or can be tapped before this visi
   await nojs.close();
 });
 
-await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {
+await check('homepage SEE PRICES NOW opens the pricing funnel at the first question (not the old homepage form)', async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);
-  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero GET A QUOTE href');
+  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero SEE PRICES NOW href');
+  if ((await p.innerText('.hero__btn--primary')).trim() !== 'SEE PRICES NOW') throw new Error('hero button wording');
   await p.click('.hero__btn--primary');
   await p.waitForURL(/\/free-quote\/$/);
   await p.waitForSelector('[data-step="1"]:not([hidden])');
