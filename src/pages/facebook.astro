@@ -154,7 +154,7 @@ const advantage = [
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
         <div class="fb-call">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO SPEAK WITH A LICENSED AGENT</a>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
       </div>
@@ -196,7 +196,7 @@ const advantage = [
         <div class="fb-callback__grid">
           <div class="fb-call fb-call--center fb-callback__call">
             <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
-            <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
+            <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO SPEAK WITH A LICENSED AGENT</a>
           </div>
         </div>
       </div>
@@ -208,7 +208,7 @@ const advantage = [
       <div class="container fb-band__inner">
         <p class="fb-band__text">Have questions? Talk with Randy directly.</p>
         <div class="fb-call fb-call--center">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO SPEAK WITH A LICENSED AGENT</a>
           <a class="fb-call__number fb-call__number--dark" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
       </div>
@@ -228,7 +228,7 @@ const advantage = [
         <h2 class="fb-final__title" id="fb-final-title">Get Your Free Quote Today</h2>
         <p class="fb-final__text">Free, friendly, no-pressure conversation with an independent agent.</p>
         <div class="fb-call fb-call--center">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
+          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO SPEAK WITH A LICENSED AGENT</a>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
       </div>
@@ -428,6 +428,7 @@ const advantage = [
     font-weight: 800;
     letter-spacing: 0.01em;
     white-space: normal;
+    text-wrap: balance;
   }
   .fb-call__btn:hover {
     background: var(--color-cta);
@@ -578,6 +579,14 @@ const advantage = [
     gap: var(--space-3);
     max-width: 28rem;
     margin-inline: auto;
+  }
+  /* Ready to Apply button V1.0 (Randy, November 2026): from tablets up the
+     column is just wide enough for CALL NOW TO SPEAK WITH A LICENSED AGENT on
+     one line (same font size); phones wrap it into two centered lines. */
+  @media (min-width: 48rem) {
+    .fb-call {
+      max-width: 32.5rem;
+    }
   }
   .fb-call--center {
     margin-inline: auto;

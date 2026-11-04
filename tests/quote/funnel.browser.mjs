@@ -141,7 +141,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO SPEAK WITH A LICENSED AGENT' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
