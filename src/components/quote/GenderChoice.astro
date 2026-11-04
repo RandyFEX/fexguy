@@ -2,10 +2,10 @@
 // The Male and Female choices of the quote funnel (Randy, Quote System v5.8):
 // one source for the funnel's first screen (/free-quote/, buttons) and the
 // article sidebar's Get Prices module (links to /free-quote/ that carry the
-// choice). The illustrations are the funnel's inline drawings of adults of
-// about 60-65 (Randy, November 2026): the person fills most of the circle
-// (hair near the top, shoulders to the bottom edge), warm skin, gray hair with
-// contrast, a visible neck and collar, and features bold enough for 110px.
+// choice). The illustrations are new flat busts of adults of about 60-65
+// (Randy, November 2026): natural head-to-shoulder proportions, short necks
+// mostly hidden by the collar, salt-and-pepper / gray hair, warm skin, simple
+// features, no background circle; they fill most of the illustration area.
 interface Props {
   /** 'button': the funnel's own step buttons; 'link': links into the funnel. */
   as: 'button' | 'link';
@@ -23,35 +23,32 @@ const people = [
       const art =
         p.value === 'male' ? (
           <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
-            <circle cx="60" cy="60" r="58" fill="#e6ece9"/>
-            <path d="M8 120c2-22 20-36 52-36s50 14 52 36z" fill="#173f35"/>
-            <path d="M50 60h20v20c-4 5-16 5-20 0z" fill="#c4865f"/>
-            <path d="M46 82l14 15 14-15-5-4-9 8-9-8z" fill="#fff"/>
-            <circle cx="35.5" cy="45" r="5.5" fill="#d39a73"/><circle cx="84.5" cy="45" r="5.5" fill="#d39a73"/>
-            <ellipse cx="60" cy="43" rx="24.5" ry="27" fill="#dca57d"/>
-            <path d="M35.5 41c-2-17 9-29 24.5-29s26.5 12 24.5 29c-2.6-7.4-7.6-12-14-13.6c-6.2 2.6-14.8 2.6-21 0c-6.4 1.6-11.4 6.2-14 13.6z" fill="#7e8388"/>
-            <path d="M44 21.5c4.6-4 10-6 16-6s11.6 2 16 6c-5 1.2-10.4 1.8-16 1.8s-11-0.6-16-1.8z" fill="#aeb3b7"/>
-            <path d="M36 41c0.4-4.6 1.8-8.6 4.2-11.8c0.6 4 0.2 8-1.4 11.8z M84 41c-0.4-4.6-1.8-8.6-4.2-11.8c-0.6 4-0.2 8 1.4 11.8z" fill="#b9bec1"/>
-            <path d="M45.5 36.2q5.5-3.4 11 0 M63.5 36.2q5.5-3.4 11 0" stroke="#5c6166" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-            <circle cx="51" cy="43.5" r="2.7" fill="#2b2420"/><circle cx="69" cy="43.5" r="2.7" fill="#2b2420"/>
-            <path d="M60.5 46.5c-1.6 4-1.8 6.4 1.6 7.4" stroke="#a8694a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-            <path d="M52 57.4q8 6 16 0" stroke="#8a3b2b" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-            <path d="M43.6 52.6q0.8 4.4 4.4 6.6 M76.4 52.6q-0.8 4.4-4.4 6.6" stroke="#b97f5c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M52 58h16v20h-16z" fill="#c4875f"/>
+            <path d="M14 120V106C14 95 22 89 34 86C41 84 46.5 79.5 50 73L60 89L70 73C73.5 79.5 79 84 86 86C98 89 106 95 106 106V120Z" fill="#173f35"/>
+            <path d="M50 73l10 16 10-16-4-2-6 9-6-9z" fill="#f4f6f5"/>
+            <path d="M52.5 72.5l7.5 10 7.5-10c-2 2.8-4.6 4.4-7.5 4.4s-5.5-1.6-7.5-4.4z" fill="#c4875f"/>
+            <ellipse cx="40.5" cy="46" rx="4" ry="6" fill="#cf9269"/><ellipse cx="79.5" cy="46" rx="4" ry="6" fill="#cf9269"/>
+            <ellipse cx="60" cy="44" rx="20" ry="24" fill="#d89d74"/>
+            <path d="M39.5 42c-2-16 7-27 20.5-27s22.5 11 20.5 27c-1.6-6-4-10-7.2-12.4c-4.6 1.8-8.8 2.4-13.3 2.4s-8.7-0.6-13.3-2.4c-3.2 2.4-5.6 6.4-7.2 12.4z" fill="#6f7479"/>
+            <path d="M46 22.5c4.2-3.2 8.8-4.6 14-4.6s9.8 1.4 14 4.6c-4.6 1-9.2 1.5-14 1.5s-9.4-0.5-14-1.5z" fill="#a9aeb2"/>
+            <path d="M40.2 41.5c0.4-4.4 1.4-8 3.2-10.8c0.4 3.8 0 7.4-1.4 10.8z M79.8 41.5c-0.4-4.4-1.4-8-3.2-10.8c-0.4 3.8 0 7.4 1.4 10.8z" fill="#b6bbbe"/>
+            <path d="M48.2 37.6q4.4-1.8 8.8 0 M63 37.6q4.4-1.8 8.8 0" stroke="#55595e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <ellipse cx="52.6" cy="43.6" rx="2.1" ry="2.3" fill="#2e2723"/><ellipse cx="67.4" cy="43.6" rx="2.1" ry="2.3" fill="#2e2723"/>
+            <path d="M60 45.5v5.5 M57.4 52.6q2.6 1.6 5.2 0" stroke="#b07250" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+            <path d="M54.2 58.2q5.8 3.8 11.6 0" stroke="#8c4431" stroke-width="2.2" fill="none" stroke-linecap="round"/>
           </svg>
         ) : (
           <svg viewBox="0 0 120 120" aria-hidden="true" class="qf-person__art">
-            <circle cx="60" cy="60" r="58" fill="#e6ece9"/>
-            <path d="M30 47c-2-22 11.5-37 30-37s32 15 30 37c-0.4 9-2.4 17-6 23H36c-3.6-6-5.6-14-6-23z" fill="#8f897f"/>
-            <path d="M51 61h18v27q-9 6-18 0z" fill="#c78a64"/>
-            <path d="M8 120c2-22 18-35 38-36q14 13 28 0c20 1 36 14 38 36z" fill="#2f6b5a"/>
-            <ellipse cx="60" cy="44" rx="23" ry="26" fill="#e0a982"/>
-            <path d="M37.2 46c-1.6-19 8.8-31 22.8-31s24 11.4 23 29c-5-10-13.6-16.4-25.6-16.6c-8 3.6-14.6 9.6-20.2 18.6z" fill="#aaa49b"/>
-            <path d="M45.6 22.8c4.4-3.4 9.6-5 15.2-4.8c-5 1.8-9.6 4.6-13.2 8.6c-0.6-1.6-1.2-2.8-2-3.8z" fill="#cdc8c0"/>
-            <path d="M46.2 37.6q5-3.2 10 0 M63.8 37.6q5-3.2 10 0" stroke="#6a625a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-            <circle cx="51.4" cy="44.5" r="2.6" fill="#2b2420"/><circle cx="68.6" cy="44.5" r="2.6" fill="#2b2420"/>
-            <path d="M60.4 47.4c-1.4 3.6-1.6 5.8 1.4 6.8" stroke="#ad6d4e" stroke-width="2.1" fill="none" stroke-linecap="round"/>
-            <path d="M53 58q7 5.6 14 0" stroke="#9a3b33" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M45 53.4q0.8 4 4 6 M75 53.4q-0.8 4-4 6" stroke="#bd8461" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M36 50c-3-22 8-36 24-36s27 14 24 36c-1 7-3 12-6 15l-4-6H46l-4 6c-3-3-5-8-6-15z" fill="#857f77"/>
+            <path d="M52.5 58h15v19h-15z" fill="#c78a63"/>
+            <path d="M14 120V106C14 95 22 89 34 86C41 84 46.5 79.5 50 73.5Q60 80 70 73.5C73.5 79.5 79 84 86 86C98 89 106 95 106 106V120Z" fill="#2f6b5a"/>
+            <ellipse cx="60" cy="45" rx="19" ry="23" fill="#dca077"/>
+            <path d="M41.2 45c-1.4-16 7.4-25.6 19.6-25.6c11.6 0 19.6 8.4 19 22.6c-5-8.6-12.2-13-21.6-13.4c-6.6 2.8-12.4 8.2-17 16.4z" fill="#a19b93"/>
+            <path d="M47 25.6c4-3 8.6-4.4 13.6-4.2c-4.4 1.6-8.4 4.2-11.6 7.6c-0.6-1.4-1.2-2.6-2-3.4z" fill="#c9c4bd"/>
+            <path d="M49 38.8q4.2-2.2 8.4-0.2 M62.6 38.6q4.2-2 8.4 0.2" stroke="#655d56" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <ellipse cx="53" cy="44.6" rx="2" ry="2.2" fill="#2e2723"/><ellipse cx="67" cy="44.6" rx="2" ry="2.2" fill="#2e2723"/>
+            <path d="M60 46.6v5 M57.6 53.2q2.4 1.4 4.8 0" stroke="#b37452" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M54.8 58.6q5.2 3.4 10.4 0" stroke="#a0423a" stroke-width="2.1" fill="none" stroke-linecap="round"/>
           </svg>
         );
       return as === 'button' ? (
