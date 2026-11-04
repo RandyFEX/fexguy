@@ -37,8 +37,9 @@
 </section>
 
 <style>
+  /* V1.0 cleanup: no gold rule above the heading, tighter padding. */
   .randy {
-    padding-block: var(--space-12);
+    padding-block: 2.5rem;
     background: var(--color-bg);
   }
   /* Phones: a compact identity row (portrait beside the heading), then the
@@ -75,15 +76,6 @@
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
-  /* Gold rule above the heading, left-aligned in this editorial section. */
-  .randy__title::before {
-    content: '';
-    display: block;
-    width: 3.5rem;
-    height: 3px;
-    margin-bottom: var(--space-4);
-    background: var(--home-gold);
-  }
   .randy__body {
     grid-area: body;
     font-size: 1.125rem;
@@ -110,7 +102,7 @@
      heading and copy across the other two. */
   @media (min-width: 64rem) {
     .randy {
-      padding-block: 4.5rem;
+      padding-block: 3.5rem;
     }
     .randy__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
