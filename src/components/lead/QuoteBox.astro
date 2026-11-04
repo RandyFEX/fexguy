@@ -38,7 +38,7 @@ const phone = PAGE_PHONES.default;
   role="region"
   aria-labelledby={titleId}
 >
-  <p class="quote-box__title" id={titleId}>Get Pricing</p>
+  <p class="quote-box__title gp__title" id={titleId}><span class="gp__title-text" data-gp-title>GET PRICING HERE</span></p>
   <div class="gp__body">
     <p class="gp__q">Who Needs Coverage?</p>
     <GenderChoice as="link" />
@@ -52,6 +52,16 @@ const phone = PAGE_PHONES.default;
 </div>
 
 <style is:global>
+  /* Header (Randy, November 2026): GET PRICING HERE in yellow, weight 900, as
+     large as fits on one line with about 8px each side (26px minimum, 40px
+     cap for the wide tablet copy). CSS
+     sizes it from the bar's width (safe without JavaScript); the script
+     below then sets the exact largest size for the visitor's actual font. */
+  .gp .gp__title { padding: var(--space-3) 8px; container-type: inline-size; letter-spacing: 0; line-height: 1.1; }
+  .gp .gp__title-text {
+    display: block; white-space: nowrap; color: #ffeb3b; font-weight: 900;
+    font-size: clamp(26px, calc(100cqi / 10.4), 40px); line-height: 1.1;
+  }
   .gp__body { padding: var(--space-4) var(--space-3); background: var(--color-bg); }
   .gp__q { margin: 0 0 var(--space-3); text-align: center; font-weight: 800; font-size: 1.125rem; line-height: 1.3; color: var(--color-primary); }
   .gp .qf-people { gap: var(--space-3); }
@@ -76,6 +86,7 @@ const phone = PAGE_PHONES.default;
   .gp--inline { margin-block: var(--space-8); }
   body.page-article-v2 .art-body .gp p { margin: 0; font-size: 1rem; line-height: 1.5; }
   body.page-article-v2 .art-body .gp .quote-box__title { font-size: 1.125rem; }
+  body.page-article-v2 .quote-box.gp .gp__title { padding: var(--space-3) 8px; letter-spacing: 0; }
   body.page-article-v2 .art-body .gp .gp__q { margin: 0 0 var(--space-3); font-size: 1.125rem; line-height: 1.3; }
   body.page-article-v2 .art-body .gp .gp__talk { margin: var(--space-4) 0 var(--space-2); }
   body.page-article-v2 .art-body .gp a,
@@ -109,6 +120,27 @@ const phone = PAGE_PHONES.default;
 
 <script>
   import { rememberSidebarEntry } from '@/scripts/quote-entry';
+
+  // GET PRICING HERE: the largest whole-pixel size that keeps it on one line
+  // inside the bar's content width (26px minimum; 40px cap for the wide
+  // in-article copy on tablets); re-fit when the bar resizes.
+  const fitTitle = (text: HTMLElement) => {
+    const bar = text.parentElement;
+    if (!bar || !bar.clientWidth) return;
+    const cs = getComputedStyle(bar);
+    const avail = bar.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    text.style.fontSize = '100px';
+    const w = text.scrollWidth;
+    text.style.fontSize = `${Math.min(40, Math.max(26, Math.floor((100 * avail) / w)))}px`;
+  };
+  const titles = [...document.querySelectorAll<HTMLElement>('[data-gp-title]')];
+  const refit = () => titles.forEach(fitTitle);
+  refit();
+  document.fonts?.ready.then(refit);
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(refit);
+    titles.forEach((t) => t.parentElement && ro.observe(t.parentElement));
+  }
 
   // Call taps (GA4 only, via tracking.ts): the article's path and which copy of
   // the module; never a name or number, and a tap is not a completed call.
