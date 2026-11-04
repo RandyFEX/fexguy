@@ -36,6 +36,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   // v6.2: the funnel never contacts Formspark, Cloudflare Turnstile or Resend; any such request is recorded and fails the test.
   await ctx.route(FORBIDDEN, (r) => { forbidden.push(`${r.request().url()} (from ${r.request().frame()?.url() ?? '?'})`); return r.abort(); });
   const page = await ctx.newPage();
+  const logs = [];
+  page.on('console', (m) => logs.push(m.text()));
+  const leadLogs = () => logs.filter((t) => /GA4 event generate_lead|Meta track Lead/.test(t));
 
   await check(`${name}: unlock panel shows the access-code instruction instead of the SMS sentence`, async () => {
     await page.goto(URL_);
@@ -96,6 +99,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     }));
     assert(r.title === 'Call Funeral Funds for Access to Even Lower Rates!' && r.sub === 'Let us check for the lowest rates from 30+ insurance companies.' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
     assert((await priceStatus(page)) === 200, 'no prices after the code');
+    // A completed temporary-code lead (not labeled TEST) counts once: GA4 generate_lead + Meta Lead.
+    const once = leadLogs();
+    assert(once.length === 2 && once.some((t) => /GA4 event generate_lead/.test(t)) && once.some((t) => /Meta track Lead/.test(t)), `lead events ${JSON.stringify(once)}`);
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    assert(leadLogs().length === 2, 'reload counted the lead again');
     if (OUT) await page.screenshot({ path: `${OUT}/temp-${name}-revealed.png` });
     return r.prices.join(', ');
   });

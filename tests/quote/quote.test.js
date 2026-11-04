@@ -116,6 +116,20 @@ test('verification modes: real Twilio when configured; test mode only outside pr
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
 });
 
+test('temporary code: a lead labeled TEST is never an advertising conversion; a repeat check never counts twice', async () => {
+  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
+  const PO = { origin: 'https://funeralfunds.com' };
+  for (const [name, counted] of [['TEST Lead Smoke', false], ['test mary', false], ['Testa Rossi', true]]) {
+    const c = client(PROD);
+    const start = await c.call(startBody({ firstName: name }), PO);
+    const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
+    assert.equal(ok.body.leadConversion, counted, name);
+    assert.equal(ok.body.leadVerified, false, name);
+    assert.equal((await c.store.getLead(start.body.lead)).verification.phoneVerified, false, name);
+    assert.equal((await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).http, 410, 'repeat check refused');
+  }
+});
+
 test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
   const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
@@ -143,7 +157,8 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.testMode, false);
-  assert.equal(ok.body.leadVerified, false, 'the temporary code is never a verified lead (no ad conversion)');
+  assert.equal(ok.body.leadVerified, false, 'the temporary code is never an SMS-verified lead');
+  assert.equal(ok.body.leadConversion, true, 'a saved temporary-code lead counts once as an advertising lead');
   assert.equal('notify' in ok.body, false, 'nothing for the browser to send');
   assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
   const rec = await c.store.getLead(start.body.lead);
@@ -195,6 +210,7 @@ test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', asy
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.leadVerified, true, 'a real SMS verification is the verified lead');
+  assert.equal(ok.body.leadConversion, true);
   const repeat = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   assert.equal(repeat.http, 410, 'the same lead cannot be verified (counted) twice');
   assert.equal(repeat.body.leadVerified, undefined);
@@ -222,6 +238,7 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.leadVerified, false, 'preview test mode never counts a lead');
+  assert.equal(ok.body.leadConversion, false, 'preview test mode never counts a lead');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
   assert.doesNotMatch(ok.setCookie, /Max-Age/, 'a browser-session cookie, not a persistent one');
   assert.equal((await c.price()).http, 200, 'verified session gets prices');
