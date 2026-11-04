@@ -191,8 +191,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <!-- Step 8: the pricing screen (blurred until the phone is verified, then live) -->
         <section class="qf-step qf-results" data-step="8" data-locked="true" aria-labelledby="qf-s8" hidden>
           <h2 class="qf-q visually-hidden" id="qf-s8" tabindex="-1" data-qf-results-title>Your quote results</h2>
-          <p class="qf-results-lead" data-qf-results-lead hidden>Call your Funeral Funds agent to compare all rate and coverage options from up to 30 additional insurance companies.</p>
-          <p class="qf-results-sub" data-qf-results-sub hidden>Here Are 3 of Your 30+ Insurance Company Options</p>
+          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check for the lowest rates from 30+ insurance companies.</p>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
           <div class="qf-cards">
             {cards.map((c, i) => (
@@ -525,15 +524,11 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
      large premium, green Apply Now. The rows line up across the three
      cards (subgrid) on desktop. */
   .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-2); }
-  /* v5.0: the subtitle under the results headline (after verification only): about 5px under
-     the heading and 8px above the cards. */
-  .qf-results-sub { margin: -11px 0 0; text-align: center; font-size: 0.875rem; line-height: 1.3; font-weight: 500; color: #173f35; text-wrap: balance; }
-  .qf-results-sub[hidden] { display: none; }
-  /* Supporting line under the results headline (Randy, November 2026; after
-     verification only): smaller than the headline, centered, wraps on phones. */
+  /* Supporting line under the results headline, directly above the cards
+     (Randy, November 2026; after verification only): smaller than the
+     headline, centered, wraps on phones. */
   .qf-results-lead { margin: -8px auto 0; max-width: 40rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: balance; }
   .qf-results-lead[hidden] { display: none; }
-  .qf-results-lead:not([hidden]) + .qf-results-sub { margin-top: var(--space-2); }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
     display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);

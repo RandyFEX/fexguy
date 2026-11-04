@@ -227,9 +227,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await step(page)) === 8, 'pricing screen');
     await minimalLayout(page);
     const title = await page.$eval('#qf-s8', (e) => ({ t: e.textContent.trim(), h: e.getBoundingClientRect().height }));
-    assert(title.t !== 'You May Qualify for Even Lower Rates Than Shown Below!' && title.h <= 2, `heading shown ${JSON.stringify(title)}`);
-    assert(!(await page.evaluate(() => document.body.innerText.includes('Even Lower Rates') || document.body.innerText.includes('up to 30 additional'))) && (await page.isHidden('[data-qf-results-lead]')), 'results headline or supporting line visible before verification');
-    assert(!(await page.evaluate(() => document.body.innerText.includes('Insurance Company Options'))) && (await page.isHidden('[data-qf-results-sub]')), 'subtitle shown before verification');
+    assert(title.t !== 'Call Funeral Funds for Access to Even Lower Rates!' && title.h <= 2, `heading shown ${JSON.stringify(title)}`);
+    assert(!(await page.evaluate(() => document.body.innerText.includes('Even Lower Rates') || document.body.innerText.includes('Let us check'))) && (await page.isHidden('[data-qf-results-lead]')), 'results headline or supporting line visible before verification');
     const labels = await page.$$eval('.qf-card__label', (els) => els.map((e) => e.textContent));
     assert(labels.join('|') === 'Lowest Preferred Rate|Standard Rate|Guaranteed Acceptance Rate', labels.join('|'));
     const blur = (el) => /blur/.test(getComputedStyle(el).filter);
@@ -307,22 +306,15 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
     const h = await page.$eval('#qf-s8', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
-    assert(h.t === 'You May Qualify for Even Lower Rates Than Shown Below!' && h.h > 10, JSON.stringify(h));
-    const sub = await page.evaluate(() => {
-      const e = document.querySelector('[data-qf-results-sub]'), t = document.querySelector('#qf-s8'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
-      const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect();
-      const cs = getComputedStyle(e), r = e.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
-      const range = document.createRange(); range.selectNodeContents(e);
-      const glyphs = range.getBoundingClientRect();
-      return { lead: { text: lead.textContent.trim(), afterHeading: lead.previousElementSibling === t, fs: parseFloat(ls.fontSize), align: ls.textAlign, color: ls.color, gap: Math.round(lr.top - tr.bottom), centered: Math.abs(lr.left + lr.width / 2 - (cr.left + cr.width / 2)) <= 2 },
-        text: e.textContent.trim(), prev: e.previousElementSibling === lead, fs: parseFloat(cs.fontSize), color: cs.color, weight: Number(cs.fontWeight), align: cs.textAlign,
-        above: Math.round(r.top - lr.bottom), below: Math.round(cr.top - r.bottom), lines: new Set([...range.getClientRects()].map((x) => Math.round(x.top))).size,
-        centered: Math.abs(glyphs.left + glyphs.width / 2 - (cr.left + cr.width / 2)) <= 2,
-        heading: [getComputedStyle(t).fontSize, getComputedStyle(t).fontWeight, getComputedStyle(t).color] };
+    assert(h.t === 'Call Funeral Funds for Access to Even Lower Rates!' && h.h > 10, JSON.stringify(h));
+    const resIntro = await page.evaluate(() => {
+      const t = document.querySelector('#qf-s8'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
+      const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
+      const between = [...t.parentElement.children].filter((el) => el.getClientRects().length && el.getBoundingClientRect().top >= tr.top - 1 && el.getBoundingClientRect().bottom <= cr.top + 1 && el !== t && el !== lead && !el.classList.contains('visually-hidden'));
+      return { text: lead.textContent.trim(), afterHeading: lead.previousElementSibling === t, nextIsCards: (() => { let n = lead.nextElementSibling; while (n && n.classList.contains('visually-hidden')) n = n.nextElementSibling; return n === c; })(), fs: parseFloat(ls.fontSize), align: ls.textAlign, color: ls.color, gap: Math.round(lr.top - tr.bottom), below: Math.round(cr.top - lr.bottom),
+        centered: Math.abs(lr.left + lr.width / 2 - (cr.left + cr.width / 2)) <= 2, headingAlign: getComputedStyle(t).textAlign, headingColor: getComputedStyle(t).color, headingFs: parseFloat(getComputedStyle(t).fontSize), others: between.map((el) => el.className), oldGone: !document.querySelector('[data-qf-results-sub]') && !/Insurance Company Options|up to 30 additional|May Qualify/.test(document.body.innerText) };
     });
-    assert(sub.text === 'Here Are 3 of Your 30+ Insurance Company Options' && sub.prev && sub.fs >= 13 && sub.fs <= 14 && sub.color === GREEN && sub.weight === 500 && sub.align === 'center' && sub.centered, `subtitle ${JSON.stringify(sub)}`);
-    assert(sub.lead.text === 'Call your Funeral Funds agent to compare all rate and coverage options from up to 30 additional insurance companies.' && sub.lead.afterHeading && sub.lead.fs < parseFloat(sub.heading[0]) && sub.lead.fs >= 15 && sub.lead.align === 'center' && sub.lead.centered && sub.lead.color === GREEN && sub.lead.gap >= 4 && sub.lead.gap <= 12, `supporting line ${JSON.stringify(sub.lead)}`);
-    assert(sub.above >= 6 && sub.above <= 10 && sub.below >= 8 && sub.below <= 10 && (name === 'desktop' ? sub.lines === 1 : sub.lines <= 2), `subtitle spacing ${JSON.stringify(sub)}`);
+    assert(resIntro.text === 'Let us check for the lowest rates from 30+ insurance companies.' && resIntro.afterHeading && resIntro.nextIsCards && resIntro.fs < resIntro.headingFs && resIntro.fs >= 15 && resIntro.align === 'center' && resIntro.centered && resIntro.color === GREEN && resIntro.headingColor === GREEN && resIntro.headingAlign === 'center' && resIntro.gap >= 4 && resIntro.gap <= 12 && resIntro.below >= 6 && resIntro.below <= 12 && resIntro.others.length === 0 && resIntro.oldGone, `results intro ${JSON.stringify(resIntro)}`);
     const vh = await page.evaluate(() => window.innerHeight);
     assert(h.top >= 0 && h.top < vh / 3, `results heading at ${Math.round(h.top)}px (viewport ${vh})`);
     assert(!(await page.content()).includes('Your Insurance Prices'), 'old heading present');

@@ -58,7 +58,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         sms: vis(document.querySelector('[data-qf-phone-summary]')),
         panel: document.querySelector('[data-qf-unlock]').innerText,
         banner: vis(document.querySelector('[data-qf-test]')),
-        subtitle: vis(document.querySelector('[data-qf-results-sub]')),
+        subtitle: vis(document.querySelector('[data-qf-results-lead]')),
       };
     });
     assert(JSON.stringify(p.texts) === JSON.stringify(['Unlock Your Rates', 'Text Me My Access Code', NOTE, 'Change Number', 'Message and data rates may apply.']), `panel ${JSON.stringify(p.texts)}`);
@@ -89,12 +89,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
     const r = await page.evaluate(() => ({
       title: document.querySelector('#qf-s8').textContent.trim(),
-      sub: document.querySelector('[data-qf-results-sub]').textContent.trim(),
+      sub: document.querySelector('[data-qf-results-lead]').textContent.trim(),
       cards: [...document.querySelectorAll('.qf-card')].map((e) => e.dataset.state),
       prices: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent.trim()),
       banner: document.querySelector('[data-qf-test]').getClientRects().length > 0,
     }));
-    assert(r.title === 'You May Qualify for Even Lower Rates Than Shown Below!' && r.sub === 'Here Are 3 of Your 30+ Insurance Company Options' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
+    assert(r.title === 'Call Funeral Funds for Access to Even Lower Rates!' && r.sub === 'Let us check for the lowest rates from 30+ insurance companies.' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
     assert((await priceStatus(page)) === 200, 'no prices after the code');
     if (OUT) await page.screenshot({ path: `${OUT}/temp-${name}-revealed.png` });
     return r.prices.join(', ');

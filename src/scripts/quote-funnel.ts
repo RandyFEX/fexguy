@@ -379,7 +379,6 @@ if (root) {
   const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
-  const resultsSub = $('[data-qf-results-sub]');
   const resultsLead = $('[data-qf-results-lead]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
@@ -422,7 +421,6 @@ if (root) {
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
     resultsLead.hidden = true;
-    resultsSub.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
       el.dataset.state = 'locked';
@@ -576,10 +574,9 @@ if (root) {
     adjustIntro.hidden = false;
     refNote.hidden = false;
     tiers.hidden = false;
-    resultsTitle.textContent = 'You May Qualify for Even Lower Rates Than Shown Below!';
+    resultsTitle.textContent = 'Call Funeral Funds for Access to Even Lower Rates!';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
-    resultsSub.hidden = false;
     fillAdjust(quote);
     show(8, false);
     // Stay on the page; bring the top of the results into view.
