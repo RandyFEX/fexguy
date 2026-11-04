@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ['Who Needs Coverage?', 'How Old Are You?', 'Do You Use Tobacco?', 'How Would You Use These Funds?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ['I need pricing for a...', 'How Old Are You?', 'Do You Use Tobacco?', 'How Would You Use These Funds?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
@@ -122,7 +122,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
 
-  await check(`${name}: a new visit starts at Who Needs Coverage? in the minimal quote layout`, async () => {
+  await check(`${name}: a new visit starts at I need pricing for a... in the minimal quote layout`, async () => {
     await page.goto(URL_);
     await atStart(page);
     assert((await page.textContent('#qf-s1')).trim() === TITLES[0], 'title');
@@ -495,7 +495,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])') && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 6000 });
     assert((await page.inputValue('#qf-adj-age')) === '70', 'selection not kept');
   });
-  await check(`${name}: a new tab starts fresh at Who Needs Coverage? and cannot get prices`, async () => {
+  await check(`${name}: a new tab starts fresh at I need pricing for a... and cannot get prices`, async () => {
     const tab = await ctx.newPage();
     await tab.goto(URL_);
     await atStart(tab);
@@ -522,7 +522,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => !document.querySelector('[data-qf-intake-done]')?.hidden, null, { timeout: 5000 });
     assert(/other coverage/.test(await page.textContent('[data-qf-intake-done-text]')), 'done text');
   });
-  await check(`${name}: Start New Quote returns to Who Needs Coverage? and needs a new verification`, async () => {
+  await check(`${name}: Start New Quote returns to I need pricing for a... and needs a new verification`, async () => {
     await page.goto(URL_);
     await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])'), null, { timeout: 6000 });
     await page.click('[data-qf-restart]');
