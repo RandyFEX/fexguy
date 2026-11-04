@@ -62,7 +62,8 @@ is in place; see src/content/README.md for how pages were migrated.
   Form" above the icon and number, with no label; HeaderPhone
   `showLabel={false}`; the site header and other headers are unchanged),
   a tel: link that dials the number shown, 888-656-4648 on /roku/ and
-  /facebook/ and 888-862-9456 elsewhere, and no "Call Randy" in the header.
+  888-862-9456 elsewhere (/facebook/ is built with 888-862-9456; its page
+  script shows 888-656-4648 to Facebook/Instagram ad visitors), and no "Call Randy" in the header.
 - **Header logo link (Randy, November 2026):** the upper-left Funeral Funds
   logo on every page links to exactly `https://funeralfunds.com/` (never a
   relative path, tracking URL or script navigation), with the accessible
@@ -1110,6 +1111,28 @@ scope protection wins.
   script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
+  Apply Now handoff (Randy, November 2026; supersedes the form details
+  above): /free-quote/ Apply Now opens /facebook/ (query string kept) for a
+  temporary phone-assisted application. Headline "Ready to Apply for Your
+  Burial Insurance?"; the four call buttons read CALL NOW TO COMPLETE YOUR
+  APPLICATION; with a valid handoff (sessionStorage `ff:quote-handoff`,
+  src/scripts/quote-handoff.ts: versioned, 60-minute limit, no medical data,
+  structured for a later CRM) the hero shows "Your Selected Coverage"
+  (Coverage Amount, Estimated Monthly Rate). The short callback form, its
+  "Prefer a Callback?" block, the 'short' field set and the marketing
+  Formspark endpoint were removed. Apply Now is GA4 quote_apply_now only;
+  arriving at /facebook/ never fires generate_lead or Meta Lead. Phone by
+  source (lead-source.ts isFacebookAdVisit: Facebook/Instagram click ID or
+  utm_source on the session's first landing or the page address): campaign
+  number 888-656-4648 for ad visits, 888-862-9456 for everyone else (the
+  HTML carries the main number, the fallback without JavaScript or if the
+  script fails; the page script switches ad visitors to the campaign number
+  in `data-campaign-phone`, and every tel: link and the footer disclaimer
+  stay hidden until it has, 3 seconds at most). The funnel's conversion (GA4 generate_lead + Meta Lead) fires
+  once when the server's `check` returns `leadVerified: true` (a real
+  Twilio-approved SMS verification; never in test or temporary-code mode),
+  via the `ff:lead` event in tracking.ts, deduplicated per lead id. No HubSpot
+  integration exists in this repository.
 - **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
   v5.8): the interactive funnel (below, "Quote funnel") replaced the
   callback form described in the next item and moved here from
@@ -1376,7 +1399,16 @@ scope protection wins.
   notification). v5.3 (Randy, November 2026, temporary until Twilio is
   connected): production without Twilio credentials accepts the same code
   123456 (`public-test` mode, `PUBLIC_TEST_CODE_ENABLED` in
-  server/quote/twilio.js; `QUOTE_PUBLIC_TEST_CODE=off` disables it). No SMS
+  server/quote/twilio.js) only when `QUOTE_PUBLIC_TEST_CODE=on` is set
+  explicitly (Randy, November 2026: production never falls back to it by
+  itself; without Twilio and without that variable, verification is
+  refused with the phone number). Facebook ad launch (Randy, November 2026): switched
+  on explicitly in code (`PUBLIC_TEST_CODE_LAUNCH = true`) until Twilio is
+  connected; Twilio credentials win automatically, `QUOTE_PUBLIC_TEST_CODE=off`
+  or `PUBLIC_TEST_CODE_LAUNCH = false` turns it off. Its notice reads
+  "Temporary access code: 123456. Text message verification is temporarily
+  unavailable, and entering this code does not verify that you own this
+  phone number." No SMS
   is sent; the code unlocks only that visitor's own session and quotes; the
   record says `test-code-accepted`, `phoneVerified: false` (never SMS
   verified); the leads are real (Randy is notified, the /help/ conversion
@@ -1387,11 +1419,12 @@ scope protection wins.
   sentence in the Unlock panel, shows under "Enter the 6-digit code", and
   Resend Code is hidden (no message is sent). Test:
   tests/quote/funnel-temp-code.browser.mjs (in `npm run test:quote:browser`). Consent box optional and unchecked;
-  its wording (`server/quote/consent.js`, v6.0, Randy approved, version
-  ff-quote-consent-v2-2026-11): "I agree Funeral Funds may call or text me
-  at the number I provided about life insurance, including automated
-  messages. Msg & data rates may apply. Reply STOP to opt out. Consent is
-  not required to get prices or buy insurance." Recorded only when checked
+  its wording (`server/quote/consent.js`, version ff-quote-consent-v3-2026-11;
+  Randy's opening sentence, November 2026, replacing v2): "I welcome help
+  from Funeral Funds and agree to receive calls and texts at the number I
+  provided. These calls and texts are about life insurance and may include
+  automated messages. Msg & data rates may apply. Reply STOP to opt out.
+  Consent is not required to get prices or buy insurance." Recorded only when checked
   (version, exact text, time); the 123456 code is never consent. Evidence records (`qe:<ns>:*`) never expire; retrieval via
   `scripts/quote-evidence.mjs` is access-logged. GA4-only quote_* funnel
   events (tracking.ts), no personal data, nothing to Meta.

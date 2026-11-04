@@ -114,6 +114,36 @@ const HOME_HOVER = await (async () => {
   await p.close();
   return f;
 })();
+/** /facebook/ after the handoff: no old callback form, CTA wording updated,
+ * and every phone link and visible number is the expected one (campaign
+ * number for Facebook/Instagram ad visits, the main number otherwise). */
+const CAMPAIGN = { href: 'tel:8886564648', display: '888-656-4648', source: 'facebook-ad' };
+const MAIN = { href: 'tel:8888629456', display: '888-862-9456', source: 'website' };
+async function minimalCheckFacebook(page, phone = CAMPAIGN) {
+  const other = phone === CAMPAIGN ? MAIN : CAMPAIGN;
+  const ph = await page.evaluate(() => ({
+    tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href')),
+    labels: [...document.querySelectorAll('a[href^="tel:"][aria-label]')].map((a) => a.getAttribute('aria-label')).join(' '),
+    text: document.body.innerText,
+    source: document.body.dataset.phoneSource,
+    disclosure: document.querySelector('.fb-quote__note')?.textContent.trim(),
+  }));
+  assert(ph.tels.length >= 5 && ph.tels.every((h) => h === phone.href), `facebook tel links ${JSON.stringify(ph.tels)}`);
+  const digits = other.display.replace(/-/g, '');
+  assert(ph.text.includes(phone.display) && !ph.text.includes(other.display) && !ph.text.includes(`(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`) && !ph.labels.includes(other.display), `facebook numbers shown ${phone.display} / ${other.display}`);
+  assert(ph.source === phone.source, `phone source ${ph.source}`);
+  assert(!(await page.evaluate(() => document.documentElement.classList.contains('fb-phone-pending'))), 'phone numbers still hidden');
+  assert(ph.disclosure === 'Your final premium and coverage are subject to insurance company approval.', `disclosure ${ph.disclosure}`);
+  const f = await page.evaluate(() => ({
+    forms: document.querySelectorAll('form').length,
+    oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
+    ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
+    benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
+  }));
+  assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
+  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+}
+
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
   const ctx = await browser.newContext(opts);
   // v6.2: the funnel never contacts Formspark, Cloudflare Turnstile or Resend; any such request is recorded and fails the test.
@@ -207,10 +237,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(Number(cw) >= 700, `contact button weight ${cw}`);
     const order = await page.$eval('.qf-reassure', (e) => [e.previousElementSibling?.matches('.qf-consent'), e.nextElementSibling?.matches('button[type="submit"]')]);
     assert(order[0] && order[1], 'promise is not between the consent text and the button');
+    // v3 consent wording (Randy, November 2026) is one sentence longer: up to 4 lines on desktop at 16px (was 3).
     const consent = await page.$eval('.qf-consent span', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
-    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 3), `consent text ${JSON.stringify(consent)}`);
+    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 4), `consent text ${JSON.stringify(consent)}`);
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
-    assert((await page.textContent('.qf-consent span')).trim() === 'I agree Funeral Funds may call or text me at the number I provided about life insurance, including automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
+    assert((await page.textContent('.qf-consent span')).trim() === 'I welcome help from Funeral Funds and agree to receive calls and texts at the number I provided. These calls and texts are about life insurance and may include automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent box pre-checked');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.fill('#qf-first', NAMES[name]);
@@ -227,9 +258,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await step(page)) === 8, 'pricing screen');
     await minimalLayout(page);
     const title = await page.$eval('#qf-s8', (e) => ({ t: e.textContent.trim(), h: e.getBoundingClientRect().height }));
-    assert(title.t !== 'Your Insurance Quotes' && title.h <= 2, `heading shown ${JSON.stringify(title)}`);
-    assert(!(await page.evaluate(() => document.body.innerText.includes('Your Insurance Quotes'))), 'Your Insurance Quotes visible');
-    assert(!(await page.evaluate(() => document.body.innerText.includes('Insurance Company Options'))) && (await page.isHidden('[data-qf-results-sub]')), 'subtitle shown before verification');
+    assert(title.t !== 'Call Funeral Funds for Access to Even Lower Rates!' && title.h <= 2, `heading shown ${JSON.stringify(title)}`);
+    assert(!(await page.evaluate(() => document.body.innerText.includes('Even Lower Rates') || document.body.innerText.includes('Let us check'))) && (await page.isHidden('[data-qf-results-lead]')), 'results headline or supporting line visible before verification');
     const labels = await page.$$eval('.qf-card__label', (els) => els.map((e) => e.textContent));
     assert(labels.join('|') === 'Lowest Preferred Rate|Standard Rate|Guaranteed Acceptance Rate', labels.join('|'));
     const blur = (el) => /blur/.test(getComputedStyle(el).filter);
@@ -249,14 +279,17 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const u = await page.evaluate(() => {
       const t = document.querySelector('#qf-unlock-title');
       const b = document.querySelector('[data-qf-send]');
-      return { title: t.textContent.trim(), color: getComputedStyle(t).color, size: parseFloat(getComputedStyle(t).fontSize), note: document.querySelector('#qf-verify-note').textContent, btn: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor, fg: getComputedStyle(b).color, shown: document.querySelector('[data-qf-phone-show]').textContent, change: document.querySelector('[data-qf-edit-phone]').textContent, h: document.querySelector('[data-qf-unlock]').getBoundingClientRect().height };
+      const ready = document.querySelector('.qf-unlock__ready'), u0 = document.querySelector('[data-qf-unlock]').getBoundingClientRect(), c0 = document.querySelector('.qf-cards').getBoundingClientRect();
+      return { title: t.innerText.trim(), ready: ready.getClientRects().length ? ready.textContent.trim() : null, above: u0.bottom <= c0.top + 1, panels: document.querySelectorAll('[data-qf-unlock]').length, color: getComputedStyle(t).color, size: parseFloat(getComputedStyle(t).fontSize), note: document.querySelector('#qf-verify-note').textContent, btn: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor, fg: getComputedStyle(b).color, shown: document.querySelector('[data-qf-phone-show]').textContent, change: document.querySelector('[data-qf-edit-phone]').textContent, h: document.querySelector('[data-qf-unlock]').getBoundingClientRect().height };
     });
-    assert(u.title === 'Unlock Your Rates' && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
+    // Phones: the panel comes first as "Your Rates Are Ready!"; tablets and desktop keep "Unlock Your Rates" under the cards.
+    const phone = name === 'mobile';
+    assert(u.title === (phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates') && u.ready === (phone ? 'Verify your phone number by text to reveal your prices.' : null) && u.above === phone && u.panels === 1 && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
     const panel = await page.evaluate(() => {
       const parts = ['#qf-unlock-title', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="change"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
       const cs = (e) => getComputedStyle(e);
       return {
-        texts: parts.map((e) => e.textContent.replace(/\s+/g, ' ').trim()),
+        texts: parts.map((e, k) => (k === 0 ? e.innerText : e.textContent).replace(/\s+/g, ' ').trim()),
         tops: parts.map((e) => Math.round(e.getBoundingClientRect().top)),
         bottoms: parts.map((e) => Math.round(e.getBoundingClientRect().bottom)),
         explainLines: (() => { const r = document.createRange(); r.selectNodeContents(parts[2]); return new Set([...r.getClientRects()].map((x) => Math.round(x.top))).size; })(),
@@ -273,7 +306,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       };
     });
     const last4u = PHONES[name].replace(/\D/g, '').slice(-4);
-    assert(JSON.stringify(panel.texts) === JSON.stringify(['Unlock Your Rates', 'Text Me My Access Code', `We'll text a 6-digit verification code to (***) ***-${last4u}.`, 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
+    assert(JSON.stringify(panel.texts) === JSON.stringify([phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates', 'Text Me My Access Code', `We'll text a 6-digit verification code to (***) ***-${last4u}.`, 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
     assert(panel.between && panel.explainCentered && panel.numberLine && (name === 'desktop' ? panel.explainLines === 1 : panel.explainLines <= 2), `unlock sentence layout ${JSON.stringify(panel)}`);
     assert(panel.tops.every((t, k) => k === 0 || t > panel.tops[k - 1]), `unlock panel order ${panel.tops}`);
     assert(panel.titleColor === 'rgb(185, 28, 28)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
@@ -286,7 +319,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(u.btn === 'Text Me My Access Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
     const digits = PHONES[name].replace(/\D/g, '');
     assert(u.shown.endsWith(digits.slice(6)) && !u.shown.includes(digits.slice(0, 3)), `number shown ${u.shown}`);
-    assert(u.h < 300, `unlock panel ${u.h}px tall`);
+    assert(u.h < (phone ? 350 : 300), `unlock panel ${u.h}px tall`);
     assert(await page.isHidden('#qf-unlock-phone'), 'phone asked again');
     await page.waitForTimeout(300);
     await shot(page, `v35-${name}-4-blurred.png`, true);
@@ -307,19 +340,15 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
     const h = await page.$eval('#qf-s8', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
-    assert(h.t === 'Your Insurance Quotes' && h.h > 10, JSON.stringify(h));
-    const sub = await page.evaluate(() => {
-      const e = document.querySelector('[data-qf-results-sub]'), t = document.querySelector('#qf-s8'), c = document.querySelector('.qf-cards');
-      const cs = getComputedStyle(e), r = e.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
-      const range = document.createRange(); range.selectNodeContents(e);
-      const glyphs = range.getBoundingClientRect();
-      return { text: e.textContent.trim(), prev: e.previousElementSibling === t, fs: parseFloat(cs.fontSize), color: cs.color, weight: Number(cs.fontWeight), align: cs.textAlign,
-        above: Math.round(r.top - tr.bottom), below: Math.round(cr.top - r.bottom), lines: new Set([...range.getClientRects()].map((x) => Math.round(x.top))).size,
-        centered: Math.abs(glyphs.left + glyphs.width / 2 - (cr.left + cr.width / 2)) <= 2,
-        heading: [getComputedStyle(t).fontSize, getComputedStyle(t).fontWeight, getComputedStyle(t).color] };
+    assert(h.t === 'Call Funeral Funds for Access to Even Lower Rates!' && h.h > 10, JSON.stringify(h));
+    const resIntro = await page.evaluate(() => {
+      const t = document.querySelector('#qf-s8'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
+      const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
+      const between = [...t.parentElement.children].filter((el) => el.getClientRects().length && el.getBoundingClientRect().top >= tr.top - 1 && el.getBoundingClientRect().bottom <= cr.top + 1 && el !== t && el !== lead && !el.classList.contains('visually-hidden'));
+      return { text: lead.textContent.trim(), afterHeading: lead.previousElementSibling === t, nextIsCards: (() => { let n = lead.nextElementSibling; while (n && n.classList.contains('visually-hidden')) n = n.nextElementSibling; return n === c; })(), fs: parseFloat(ls.fontSize), align: ls.textAlign, color: ls.color, gap: Math.round(lr.top - tr.bottom), below: Math.round(cr.top - lr.bottom),
+        centered: Math.abs(lr.left + lr.width / 2 - (cr.left + cr.width / 2)) <= 2, headingAlign: getComputedStyle(t).textAlign, headingColor: getComputedStyle(t).color, headingFs: parseFloat(getComputedStyle(t).fontSize), others: between.map((el) => el.className), oldGone: !document.querySelector('[data-qf-results-sub]') && !/Insurance Company Options|up to 30 additional|May Qualify/.test(document.body.innerText) };
     });
-    assert(sub.text === 'Here Are 3 of Your 30+ Insurance Company Options' && sub.prev && sub.fs >= 13 && sub.fs <= 14 && sub.color === GREEN && sub.weight === 500 && sub.align === 'center' && sub.centered, `subtitle ${JSON.stringify(sub)}`);
-    assert(sub.above >= 4 && sub.above <= 6 && sub.below >= 8 && sub.below <= 10 && (name === 'desktop' ? sub.lines === 1 : sub.lines <= 2), `subtitle spacing ${JSON.stringify(sub)}`);
+    assert(resIntro.text === 'Let us check for the lowest rates from 30+ insurance companies.' && resIntro.afterHeading && resIntro.nextIsCards && resIntro.fs < resIntro.headingFs && resIntro.fs >= 15 && resIntro.align === 'center' && resIntro.centered && resIntro.color === GREEN && resIntro.headingColor === GREEN && resIntro.headingAlign === 'center' && resIntro.gap >= 4 && resIntro.gap <= 12 && resIntro.below >= 6 && resIntro.below <= 12 && resIntro.others.length === 0 && resIntro.oldGone, `results intro ${JSON.stringify(resIntro)}`);
     const vh = await page.evaluate(() => window.innerHeight);
     assert(h.top >= 0 && h.top < vh / 3, `results heading at ${Math.round(h.top)}px (viewport ${vh})`);
     assert(!(await page.content()).includes('Your Insurance Prices'), 'old heading present');
@@ -350,9 +379,13 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(intro === 'Adjust Your Quote Below', intro);
     const gaps = await page.evaluate(() => { const c = document.querySelector('.qf-cards').getBoundingClientRect(), i = document.querySelector('[data-qf-adjust-intro]'), r = i.getBoundingClientRect(), a = document.querySelector('[data-qf-adjust]').getBoundingClientRect(); return { cards: Math.round(r.top - c.bottom), controls: Math.round(a.top - r.bottom), align: getComputedStyle(i).textAlign }; });
     assert(gaps.cards >= 10 && gaps.cards <= 14 && gaps.controls <= 12 && gaps.align === 'center', `spacing under the cards ${JSON.stringify(gaps)}`);
-    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '.qf-restart-row'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
+    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '[data-qf-tiers]'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
     const ref = await page.$eval('[data-qf-ref]', (e) => ({ visible: e.getClientRects().length > 0, text: e.textContent.trim() }));
     assert(ref.visible && ref.text === 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.', `rate note after verification ${JSON.stringify(ref)}`);
+    // Rate-tier explanations directly under the disclaimer; no Start New Quote control.
+    const tiers = await page.evaluate(() => { const t = document.querySelector('[data-qf-tiers]'), r = document.querySelector('[data-qf-ref]'); const cs = getComputedStyle(t);
+      return { after: r.nextElementSibling === t, visible: t.getClientRects().length > 0, text: t.innerText.replace(/\s+/g, ' ').trim(), align: cs.textAlign, color: cs.color, fs: parseFloat(cs.fontSize), refFs: parseFloat(getComputedStyle(r).fontSize), bold: [...t.querySelectorAll('strong, .qf-tiers__title')].map((e) => Number(getComputedStyle(e).fontWeight)), restart: !!document.querySelector('[data-qf-restart]') || /Start New Quote/.test(document.body.innerText), overflow: t.scrollWidth > t.clientWidth }; });
+    assert(tiers.after && tiers.visible && tiers.text === "Understanding Your 3 Rate Options Lowest Preferred Rate: Covers those in generally good health, including multiple common medical conditions controlled with medication(s). Standard Rate: Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions. Guaranteed Acceptance Rate: Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death." && tiers.align === 'left' && tiers.color === 'rgb(32, 37, 34)' && tiers.fs >= 14 && tiers.fs <= 15 && tiers.bold.length === 4 && tiers.bold.every((w) => w >= 700) && !tiers.restart && !tiers.overflow, `rate tiers ${JSON.stringify(tiers)}`);
     // v4.3: each adjustment label is centered over its own controls.
     const centers = await page.$$eval('.qf-adjust .qf-group', (gs) => gs.map((g) => {
       const t = g.querySelector('.qf-group__title');
@@ -511,31 +544,80 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await priceStatus(p2)) === 401, 'reopened visit got prices');
     await ctx2.close();
   });
-  await check(`${name}: Apply Now keeps attribution and runs the carrier questions one at a time`, async () => {
-    await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
-    await page.waitForFunction(() => !document.querySelector('[data-qf-intake-q]')?.hidden, null, { timeout: 6000 });
-    await minimalLayout(page);
-    assert(/Question 1 of 22/.test(await page.textContent('[data-qf-intake-count]')), 'count');
-    await page.click('[data-qf-answer="no"]');
-    await page.waitForFunction(() => /Question 2 of 22/.test(document.querySelector('[data-qf-intake-count]')?.textContent ?? ''));
-    await page.click('[data-qf-answer="yes"]');
-    await page.waitForFunction(() => !document.querySelector('[data-qf-intake-done]')?.hidden, null, { timeout: 5000 });
-    assert(/other coverage/.test(await page.textContent('[data-qf-intake-done-text]')), 'done text');
+  await check(`${name}: Apply Now on each card opens /facebook/ with that card's coverage and estimate (no stale values)`, async () => {
+    const results = async () => {
+      await page.goto(`${URL_}?utm_source=facebook&utm_campaign=test`);
+      await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    };
+    const applyAndRead = async (id) => {
+      const card = await page.$eval(`[data-qf-card="${id}"]`, (e) => e.querySelector('[data-qf-amount]').textContent.trim());
+      const coverage = await page.$eval('.qf-adjust input[name="coverage"]:checked', (e) => e.value);
+      await page.click(`[data-qf-card="${id}"] [data-qf-apply]`);
+      await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+      await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+      const fb = await page.evaluate(() => ({
+        url: location.pathname + location.search,
+        title: document.querySelector('#fb-title').textContent.trim(),
+        coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
+        premium: document.querySelector('[data-fb-quote-premium]').textContent.trim(),
+        labels: [...document.querySelectorAll('.fb-quote dt, .fb-quote__title')].map((e) => e.textContent.trim()),
+        handoff: JSON.parse(sessionStorage.getItem('ff:quote-handoff')),
+      }));
+      return { card, coverage, fb };
+    };
+    await results();
+    const seen = [];
+    for (const id of ['average-standard', 'lowest-preferred', 'guaranteed-acceptance']) {
+      if (seen.length) await results();
+      const r = await applyAndRead(id);
+      const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
+      assert(r.fb.labels.join('|') === 'Your Selected Coverage|Coverage Amount|Estimated Monthly Rate', `labels ${r.fb.labels}`);
+      const h = r.fb.handoff;
+      assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
+      assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
+      seen.push(r.card);
+    }
+    // A different selection replaces the earlier one (no stale values).
+    await results();
+    await page.click('.qf-adjust label:has(input[name="coverage"][value="25000"])');
+    await page.waitForFunction(() => document.querySelector('.qf-adjust input[name="coverage"][value="25000"]').checked, null, { timeout: 5000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="lowest-preferred"] [data-qf-amount]').textContent.trim() !== b, seen[1], { timeout: 8000 });
+    const later = await applyAndRead('lowest-preferred');
+    assert(later.fb.coverage === '$25,000' && later.fb.premium === later.card && later.card !== seen[1], `stale summary ${JSON.stringify(later)}`);
+    await minimalCheckFacebook(page, CAMPAIGN);
   });
-  await check(`${name}: Start New Quote returns to I need pricing for a... and needs a new verification`, async () => {
+  await check(`${name}: Apply Now is an application intent only (quote_apply_now; no generate_lead, no Meta Lead, no lead flag); website visitors get the main number`, async () => {
+    const logs = [];
+    const onLog = (m) => logs.push(m.text());
+    page.on('console', onLog);
+    // A website visitor (no ad parameters): drop the session's earlier ad landing.
+    await page.evaluate(() => sessionStorage.removeItem('fexguy:lead-source'));
+    await page.goto(URL_);
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    await page.evaluate(() => { window.__ffEvents = []; window.addEventListener('ff:funnel', (e) => window.__ffEvents.push(e.detail.name)); window.addEventListener('pagehide', () => sessionStorage.setItem('__ffEvents', JSON.stringify(window.__ffEvents))); });
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
+    await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
+    await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+    await page.waitForTimeout(300);
+    const r = await page.evaluate(() => ({ pending: sessionStorage.getItem('fexguy:lead-pending'), events: JSON.parse(sessionStorage.getItem('__ffEvents') || '[]') }));
+    page.off('console', onLog);
+    assert(r.pending === null, 'lead flag set by Apply Now');
+    assert(r.events.includes('quote_apply_now'), `events ${r.events}`);
+    assert(!logs.some((t) => /generate_lead|'Lead'|\bLead\b/.test(t)), `lead conversion fired: ${logs.filter((t) => /Lead|lead/.test(t)).join(' | ')}`);
+    await minimalCheckFacebook(page, MAIN);
+  });
+  await check(`${name}: every pricing input can be changed on the results screen (so no Start New Quote control)`, async () => {
     await page.goto(URL_);
     await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])'), null, { timeout: 6000 });
-    await page.click('[data-qf-restart]');
-    await atStart(page);
-    assert((await priceStatus(page)) === 401, 'still verified after restart');
-    assert(!(await page.isChecked('[data-qf-consent]')), 'consent carried forward');
-    await walk(page, PHONES[name]);
-    assert(await page.$$eval('.qf-card', (els) => els.every((e) => e.dataset.state === 'locked')), 'prices visible without verification');
+    const r = await page.evaluate(() => ({ age: !!document.querySelector('.qf-adjust select[name="age"]'), gender: document.querySelectorAll('.qf-adjust input[name="gender"]').length, tobacco: document.querySelectorAll('.qf-adjust input[name="tobacco"]').length, coverage: document.querySelectorAll('.qf-adjust input[name="coverage"]').length, restart: !!document.querySelector('[data-qf-restart]') }));
+    assert(r.age && r.gender === 2 && r.tobacco === 2 && r.coverage >= 6 && !r.restart, JSON.stringify(r));
     assert(errors.length === 0, errors.join('; '));
   });
   await ctx.close();
 }
-await check('evidence: verified leads, consent records, intended use, Apply Now attribution and answers kept', async () => {
+await check('evidence: verified leads, consent records, intended use and every Apply Now selection kept', async () => {
   const recs = await (await fetch(`${BASE}/__evidence/`)).json();
   const v = recs.filter((r) => r.verification.status === 'approved');
   assert(v.length === 2, `${v.length} verified`);
@@ -543,11 +625,207 @@ await check('evidence: verified leads, consent records, intended use, Apply Now 
     assert(
       (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
         r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v4-2026-11' && r.verifyNotice.text === "We'll text a 6-digit verification code to (***) ***-XXXX. Message and data rates may apply." &&
-        r.applications[0].attribution[0] === 'FF-101' && r.intakes['average-standard'].answers.length === 2 && r.intakes['average-standard'].flag === 'may-not-qualify',
+        r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
     );
   return `${recs.length} lead records (${v.length} verified)`;
 });
+await check('/facebook/ opened directly, or with a stale or invalid handoff, hides the quote summary', async () => {
+  const p = await browser.newPage();
+  await p.goto(`${BASE}/facebook/`);
+  assert(await p.isHidden('[data-fb-quote]'), 'summary shown on a direct visit');
+  for (const bad of [
+    { v: 1, createdAt: Date.now() - 2 * 60 * 60 * 1000, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: '43.76' } },
+    { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 999999, monthlyPremium: '43.76' } },
+    { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: 'abc' } },
+  ]) {
+    await p.evaluate((h) => sessionStorage.setItem('ff:quote-handoff', JSON.stringify(h)), bad);
+    await p.reload();
+    assert(await p.isHidden('[data-fb-quote]'), `summary shown for ${JSON.stringify(bad)}`);
+  }
+  await minimalCheckFacebook(p, MAIN);
+  await p.close();
+});
+await check('/facebook/ phone by source: direct visit main number and no Lead; utm_source=facebook, fbclid and an earlier ad landing keep the campaign number', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  const logs = [];
+  p.on('console', (m) => logs.push(m.text()));
+  await p.goto(`${BASE}/facebook/`);
+  await minimalCheckFacebook(p, MAIN);
+  assert(!logs.some((t) => /generate_lead|\bLead\b/.test(t)), `direct visit counted a lead: ${logs.join(' | ')}`);
+  await ctx.close();
+  for (const q of ['?utm_source=facebook&utm_medium=paid', '?fbclid=abc123', '?utm_source=ig']) {
+    const c = await browser.newContext();
+    const pg = await c.newPage();
+    await pg.goto(`${BASE}/facebook/${q}`);
+    await minimalCheckFacebook(pg, CAMPAIGN);
+    await c.close();
+  }
+  // Source survives the funnel: ad landing on /free-quote/, then /facebook/ without parameters.
+  const c2 = await browser.newContext();
+  const p2 = await c2.newPage();
+  await p2.goto(`${BASE}/free-quote/?fbclid=xyz789`);
+  await p2.goto(`${BASE}/facebook/`);
+  await minimalCheckFacebook(p2, CAMPAIGN);
+  // Other referral sources (e.g. google) get the main number.
+  const p3 = await (await browser.newContext()).newPage();
+  await p3.goto(`${BASE}/facebook/?utm_source=google`);
+  await minimalCheckFacebook(p3, MAIN);
+  await c2.close();
+  await p3.context().close();
+});
+
+// SMS regression (Randy, November 2026): the page and the server use one phone check, so a number
+// accepted on the contact step is never refused at Text Me My Access Code; autofill punctuation works;
+// a refused number opens the number field. Full journey at 390px and 1440px.
+await check('SMS: Text Me My Access Code works with the contact-step number (390px and 1440px), refused numbers stay correctable, returning visitor keeps prices', async () => {
+  const sizes = [['390', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }, '214\u2011837\u20119301'], ['1440', { viewport: { width: 1440, height: 900 } }, '\u202a(214) 837-9302\u202c']];
+  // Own client address per visitor, so this test stays under the per-IP code limit (5 an hour).
+  let ip = 10;
+  for (const [w, opts, typed] of sizes) {
+    const ctx = await browser.newContext({ ...opts, extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+    const page = await ctx.newPage();
+    await page.goto(URL_);
+    // A number the server would refuse is caught on the contact step, with its field.
+    await walk(page, '214-555-0123', 'Sms Test');
+    assert(await page.isVisible('#qf-phone') && /10-digit/.test(await page.textContent('#qf-phone-error')), `${w}: refused number not caught on the contact step`);
+    await page.fill('#qf-phone', typed);
+    await page.click('[data-qf-contact] button[type="submit"]');
+    await page.waitForSelector('[data-qf-send]:not([hidden])');
+    await page.click('[data-qf-send]');
+    await page.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+    assert(!(await page.textContent('[data-qf-send-status]')).trim(), `${w}: send error`);
+    await page.fill('#qf-code', '123456');
+    await page.click('[data-qf-verify-btn]');
+    await page.waitForFunction(() => ['lowest-preferred', 'average-standard', 'guaranteed-acceptance'].every((c) => document.querySelector(`[data-qf-card="${c}"]`)?.getAttribute('data-state') === 'ok'), null, { timeout: 8000 });
+    // Returning visitor (reload): prices stay unlocked, no new code needed.
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    await ctx.close();
+  }
+  // If the server still refuses the number, the field opens so it can be corrected (no dead end).
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+  const page = await ctx.newPage();
+  let refuse = true;
+  await page.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    if (req.action === 'start' && refuse) { refuse = false; return route.fulfill({ status: 400, json: { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' } }); }
+    return route.fulfill({ response: await route.fetch() });
+  });
+  await page.goto(URL_);
+  await walk(page, '214-837-9303', 'Sms Test');
+  await page.waitForSelector('[data-qf-send]:not([hidden])');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('#qf-unlock-phone', { state: 'visible', timeout: 5000 });
+  assert(/10-digit/.test(await page.textContent('#qf-unlock-phone-error')), 'refusal not shown at the field');
+  await page.fill('#qf-unlock-phone', '214-837-9304');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+  await ctx.close();
+  // A phone's curly apostrophe in the name (O’Neil) is accepted; a name the server refuses
+  // returns to the contact step at the name field with the answers kept.
+  const c3 = await browser.newContext({ ...devices['iPhone 13'], extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+  const p3 = await c3.newPage();
+  let refuseName = true;
+  await p3.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    if (req.action === 'start' && refuseName) { refuseName = false; return route.fulfill({ status: 400, json: { status: 'bad-request', field: 'name', message: 'Please enter your name.' } }); }
+    return route.fulfill({ response: await route.fetch() });
+  });
+  await p3.goto(URL_);
+  await walk(p3, '214-837-9305', 'Pat O\u2019Neil');
+  await p3.waitForSelector('[data-qf-send]:not([hidden])');
+  await p3.click('[data-qf-send]');
+  await p3.waitForSelector('#qf-first', { state: 'visible', timeout: 5000 });
+  const kept = await p3.evaluate(() => ({ name: document.querySelector('#qf-first').value, phone: document.querySelector('#qf-phone').value, err: document.querySelector('#qf-first-error').textContent, focus: document.activeElement?.id }));
+  assert(kept.name === 'Pat O\u2019Neil' && kept.phone === '214-837-9305' && kept.err === 'Please enter your name.' && kept.focus === 'qf-first', `name recovery ${JSON.stringify(kept)}`);
+  await p3.click('[data-qf-contact] button[type="submit"]');
+  await p3.waitForSelector('[data-qf-send]:not([hidden])');
+  await p3.click('[data-qf-send]');
+  await p3.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+  await c3.close();
+});
+// Verified quote lead (Randy, November 2026): GA4 generate_lead + Meta Lead once, at a real SMS
+// verification. The test server runs in test mode (never a lead), so the real-verification case
+// marks the check response as the server does after a Twilio 'approved' check.
+const leadLogs = (logs) => logs.filter((t) => /GA4 event generate_lead|Meta track Lead/.test(t));
+await check('verified lead: GA4 generate_lead + Meta Lead once at SMS verification; never at contact, code request, reload, Apply Now or /facebook/', async () => {
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const page = await ctx.newPage();
+  const logs = [];
+  page.on('console', (m) => logs.push(m.text()));
+  await page.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    const res = await route.fetch();
+    if (req.action !== 'check') return route.fulfill({ response: res });
+    const body = await res.json();
+    if (body.status === 'verified') { body.leadVerified = true; body.testMode = false; }
+    return route.fulfill({ response: res, json: body });
+  });
+  await page.goto(URL_);
+  await walk(page, '214-867-5377', 'Lead Test');
+  await page.waitForSelector('[data-qf-send]:not([hidden])');
+  assert(leadLogs(logs).length === 0, 'contact entry counted a lead');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('[data-qf-verify]:not([hidden])');
+  assert(leadLogs(logs).length === 0, 'code request counted a lead');
+  await page.fill('#qf-code', '123456');
+  await page.click('[data-qf-verify-btn]');
+  await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+  const at = leadLogs(logs);
+  assert(at.length === 2 && at.some((t) => /GA4 event generate_lead$/.test(t.trim())) && at.some((t) => /Meta track Lead$/.test(t.trim())), `verification events ${JSON.stringify(at)}`);
+  // The same lead id again (e.g. a repeated message) never counts twice in the tab.
+  const id = await page.evaluate(() => Object.keys(sessionStorage).find((k) => k.startsWith('lead:quote:'))?.slice('lead:quote:'.length));
+  assert(id, 'lead id not remembered');
+  await page.evaluate((i) => window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: i } })), id);
+  assert(leadLogs(logs).length === 2, 'duplicate lead counted');
+  logs.length = 0;
+  await page.reload();
+  await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+  assert(leadLogs(logs).length === 0, 'revisiting results counted a lead');
+  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
+  await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+  await page.waitForTimeout(300);
+  assert(leadLogs(logs).length === 0, `Apply Now or /facebook/ counted a lead: ${JSON.stringify(leadLogs(logs))}`);
+  assert((await page.evaluate(() => sessionStorage.getItem('fexguy:lead-pending'))) === null, 'old /help/ lead flag set');
+  await ctx.close();
+  // Test-mode verification (the server's real response) never counts a lead.
+  const ctx2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const p2 = await ctx2.newPage();
+  const logs2 = [];
+  p2.on('console', (m) => logs2.push(m.text()));
+  await p2.goto(URL_);
+  await walk(p2, '214-867-5378', 'Lead Test Two');
+  await verify(p2);
+  assert(leadLogs(logs2).length === 0, `test mode counted a lead: ${JSON.stringify(leadLogs(logs2))}`);
+  await ctx2.close();
+});
+await check('/facebook/: no phone number shows or can be tapped before this visitor\'s number is set (fallback: the main number)', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  await p.route(/\/_astro\/facebook\.astro_astro_type_script[^/]*\.js$/, (r) => r.abort());
+  await p.goto(`${BASE}/facebook/`, { waitUntil: 'domcontentloaded' });
+  const hidden = await p.evaluate(() => ({
+    tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => getComputedStyle(a).visibility),
+    note: getComputedStyle(document.querySelector('.fb-foot__disclaimer')).visibility,
+  }));
+  assert(hidden.tels.length >= 5 && hidden.tels.every((v) => v === 'hidden') && hidden.note === 'hidden', `shown while loading ${JSON.stringify(hidden)}`);
+  await p.waitForFunction(() => !document.documentElement.classList.contains('fb-phone-pending'), null, { timeout: 5000 });
+  // The script-failure fallback is the main website number (never the campaign number), links and text alike.
+  const fb = await p.evaluate(() => ({ tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => [a.getAttribute('href'), getComputedStyle(a).visibility]), text: document.body.innerText }));
+  assert(fb.tels.every(([h, v]) => h === 'tel:8888629456' && v === 'visible') && fb.text.includes('888-862-9456') && !/656-4648/.test(fb.text), `fallback ${JSON.stringify(fb.tels)}`);
+  await ctx.close();
+  // Without JavaScript: the main number at once.
+  const nojs = await browser.newContext({ javaScriptEnabled: false });
+  const pn = await nojs.newPage();
+  await pn.goto(`${BASE}/facebook/?utm_source=facebook`);
+  const nj = await pn.evaluate(() => [...document.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href')));
+  const njText = await pn.innerText('body');
+  assert(nj.length >= 5 && nj.every((h) => h === 'tel:8888629456') && !/656-4648/.test(njText), `no-JS numbers ${JSON.stringify(nj)}`);
+  await nojs.close();
+});
+
 await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);

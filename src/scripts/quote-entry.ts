@@ -10,7 +10,7 @@
 // visit, a campaign visit with UTM values, or a direct visit), removes the
 // gender/entry/origin parameters from the address bar (UTM values stay) and
 // returns the gender to preselect. The record stays for the whole visit
-// (Back, adjustments, Start New Quote) and goes with the contact submission
+// (Back, adjustments) and goes with the contact submission
 // into the lead record and Randy's notification. Analytics get only the entry
 // type and the article's path, never a name or phone number.
 import { leadSourceFields } from '@/scripts/lead-source';

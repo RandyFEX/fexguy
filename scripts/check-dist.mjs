@@ -758,13 +758,15 @@ for (const p of NO_NAV_PAGES) {
 // Every page header (the site header, and the standalone landing headers
 // .fb-top/.fq-top/.hp-top and the quote page .qh-top) has one phone contact marked data-header-phone:
 // "Speak With a Licensed Agent", the approved handset icon, and the page's own
-// number (the campaign number on /roku/ and /facebook/, the website number
+// number (the campaign number on /roku/, the website number
 // elsewhere), with a tel: link that dials the number shown. "Call Randy" is
 // never a header label (it stays fine elsewhere on the page).
 const PHONES_SRC = readFileSync(new URL('../src/config/phones.ts', import.meta.url), 'utf8');
 const HEADER_LABEL = PHONES_SRC.match(/HEADER_PHONE_LABEL = '([^']+)'/)?.[1];
 const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1];
-const CAMPAIGN_PAGES = new Set(['/roku/', '/facebook/']);
+// /facebook/ (Randy, November 2026) is built with the main number; its page
+// script switches Facebook/Instagram ad visitors to the campaign number.
+const CAMPAIGN_PAGES = new Set(['/roku/']);
 // The one approved exception (Randy, Quote System v3.6): the dedicated quote
 // funnel's minimal header shows Secure Form above the number, with no label.
 const NO_LABEL_PAGES = new Set(['/free-quote/']); // the funnel's page since v5.8

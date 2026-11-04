@@ -13,21 +13,29 @@
 //             missing, or QUOTE_VERIFY_MODE=test outside production. No SMS
 //             is sent; the code is TEST_CODE; every record is marked test.
 //   'public-test'  TEMPORARY (Randy, Quote System v5.3, November 2026):
-//             production without Twilio credentials while
-//             PUBLIC_TEST_CODE_ENABLED is true. No SMS is sent; TEST_CODE
+//             production without Twilio credentials, ONLY when
+//             QUOTE_PUBLIC_TEST_CODE=on is set explicitly (Randy, November
+//             2026: production never falls back to a universal code by
+//             itself) and PUBLIC_TEST_CODE_ENABLED is true. No SMS is sent; TEST_CODE
 //             unlocks that visitor's own quotes only. The phone is never
 //             recorded as SMS-verified, and the records are real leads
 //             (Randy is notified). It switches off by itself once the
-//             Twilio variables are set ('twilio' wins), or at once with
-//             QUOTE_PUBLIC_TEST_CODE=off or PUBLIC_TEST_CODE_ENABLED = false.
-//   'off'     production without credentials and with the public test code
-//             disabled: verification is refused (503).
+//             Twilio variables are set ('twilio' wins), or at once by
+//             removing QUOTE_PUBLIC_TEST_CODE=on.
+//   'off'     production without credentials and without
+//             QUOTE_PUBLIC_TEST_CODE=on: verification is refused (503, with
+//             the phone number to call).
 
 export const TEST_CODE = '123456';
 /** TEMPORARY public test code in production until Twilio is connected (v5.3). */
 export const PUBLIC_TEST_CODE_ENABLED = true;
+/** Facebook ad launch (Randy, November 2026): the temporary code is switched on
+ * in production here, explicitly, until Twilio is connected. Twilio credentials
+ * still win automatically; QUOTE_PUBLIC_TEST_CODE=off or setting this to false
+ * switches it off at once. */
+export const PUBLIC_TEST_CODE_LAUNCH = true;
 /** v5.4: the instruction shown in 'public-test' mode only (sent by the server, never in the page HTML). */
-export const PUBLIC_TEST_CODE_NOTE = `Enter access code ${TEST_CODE} to view your insurance quotes.`;
+export const PUBLIC_TEST_CODE_NOTE = `Temporary access code: ${TEST_CODE}. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.`;
 
 /** @param {Record<string, string | undefined>} env */
 export function verifyMode(env) {
@@ -39,7 +47,8 @@ export function verifyMode(env) {
   if (!production && env.QUOTE_VERIFY_MODE === 'test') return 'test';
   if (configured) return 'twilio';
   if (!production) return 'test';
-  return PUBLIC_TEST_CODE_ENABLED && env.QUOTE_PUBLIC_TEST_CODE !== 'off' ? 'public-test' : 'off';
+  const on = env.QUOTE_PUBLIC_TEST_CODE === 'on' || (PUBLIC_TEST_CODE_LAUNCH && env.QUOTE_PUBLIC_TEST_CODE !== 'off');
+  return PUBLIC_TEST_CODE_ENABLED && on ? 'public-test' : 'off';
 }
 
 /**

@@ -3,6 +3,7 @@
 //
 //   page view                         GA4 page_view      Meta PageView
 //   confirmed lead, on /help/         GA4 generate_lead  Meta Lead
+//   SMS-verified quote funnel lead    GA4 generate_lead  Meta Lead
 //   (native form → Formspark; or a verified Fillout form_submit, rollback)
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
 //   click on any call link on a page  GA4 click_to_call  (nothing to Meta)
@@ -189,6 +190,20 @@ if (location.pathname === lead.formspark.successPath) {
     meta('track', 'Lead');
   }
 }
+
+// --- Lead: verified quote funnel lead ----------------------------------------
+// src/scripts/quote-funnel.ts sends ff:lead with the lead id only when the
+// server reports that this check SMS-verified the lead (never in test or
+// temporary-code mode). The server accepts a lead's code once; the id is
+// also remembered for the tab, so a repeat never counts twice. The id is
+// used only for that and is never sent.
+
+window.addEventListener('ff:lead', (e) => {
+  const id = (e as CustomEvent<{ id?: unknown }>).detail?.id;
+  if (typeof id !== 'string' || !/^[0-9a-f-]{36}$/.test(id) || alreadyCounted(`quote:${id}`)) return;
+  ga4('event', 'generate_lead');
+  meta('track', 'Lead');
+});
 
 // --- Phone: tap on the website number (GA4 only) -----------------------------
 

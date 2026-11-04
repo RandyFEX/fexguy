@@ -31,7 +31,7 @@ export async function startFunnelServer({ production = false } = {}) {
       qs.push({ id: `aetna-${sec.slice(-1).toLowerCase()}${i}`, carrierId: 'aetna', section: sec, number: String(i), text: `TEST ONLY ${sec} question ${i}?`, yes: { rule }, no: { classification: 'none', explanation: 'No effect.' }, search: { direct: [concept], related: [] } });
   await redis.store.set('hqs:questions:preview', JSON.stringify({ format: 1, target: 'preview', publishedAt: 't', total: qs.length, complete: false, questions: qs }));
   const engine = createEngine(loadDatasets());
-  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production' } : {}) };
+  const env = { HEALTH_SEARCH_SECRET: 'x'.repeat(40), QUOTE_SESSION_SECRET: 'y'.repeat(40), ...(production ? { VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' } : {}) };
   const store = quoteStore(redis.store, env);
   const getEngine = async () => ({ engine, publishedAt: 'local' });
 

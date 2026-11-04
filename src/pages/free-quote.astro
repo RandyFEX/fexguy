@@ -100,7 +100,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
           <h2 class="qf-q" id="qf-s1" tabindex="-1">I need pricing for a...</h2>
           <GenderChoice as="button" />
-          <p class="qf-start-note">Your Burial Insurance Quote Starts Here. No Agent Needed. Less Than 60 Seconds.</p>
+          <p class="qf-start-note">Your Burial Insurance Quote Starts Here. No Agent Required. Less Than 60 Seconds.</p>
         </section>
 
         <!-- Step 2 -->
@@ -191,7 +191,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <!-- Step 8: the pricing screen (blurred until the phone is verified, then live) -->
         <section class="qf-step qf-results" data-step="8" data-locked="true" aria-labelledby="qf-s8" hidden>
           <h2 class="qf-q visually-hidden" id="qf-s8" tabindex="-1" data-qf-results-title>Your quote results</h2>
-          <p class="qf-results-sub" data-qf-results-sub hidden>Here Are 3 of Your 30+ Insurance Company Options</p>
+          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check for the lowest rates from 30+ insurance companies.</p>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
           <div class="qf-cards">
             {cards.map((c, i) => (
@@ -215,7 +215,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
 
           <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
-            <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1">Unlock Your Rates</h3>
+            <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1"><span class="qf-unlock__t-wide">Unlock Your Rates</span><span class="qf-unlock__t-phone">Your Rates Are Ready!</span></h3>
+            <p class="qf-unlock__ready">Verify your phone number by text to reveal your prices.</p>
             <form class="qf-form qf-form--compact" data-qf-send-form novalidate>
               <div class="qf-field" data-qf-phone-field hidden>
                 <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
@@ -285,7 +286,12 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             </fieldset>
           </form>
           <p class="qf-ref" data-qf-ref hidden>Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
-          <p class="qf-restart-row"><button class="qf-link" type="button" data-qf-restart>Start New Quote</button></p>
+          <div class="qf-tiers" data-qf-tiers hidden>
+            <h3 class="qf-tiers__title">Understanding Your 3 Rate Options</h3>
+            <p><strong>Lowest Preferred Rate:</strong> Covers those in generally good health, including multiple common medical conditions controlled with medication(s).</p>
+            <p><strong>Standard Rate:</strong> Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions.</p>
+            <p><strong>Guaranteed Acceptance Rate:</strong> Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death.</p>
+          </div>
         </section>
 
         <!-- Step 9: carrier-specific health questions after Apply Now -->
@@ -504,6 +510,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-unlock[hidden] { display: none; }
   .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.625rem; font-weight: 800; color: var(--color-error); text-align: center; }
   .qf-unlock__title:focus { outline: none; }
+  /* Phones (Randy, November 2026): before verification the same unlock panel
+     comes first, above the blurred cards, as "Your Rates Are Ready!" with a
+     one-line instruction (CSS order only: one panel, one set of controls).
+     Tablets and desktop (48rem+) keep "Unlock Your Rates" under the cards. */
+  .qf-unlock__t-wide { display: none; }
+  .qf-unlock__ready { margin: 0 0 var(--space-3); text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 600; color: var(--color-text); }
+  @media (max-width: 47.99rem) {
+    .qf-results[data-locked='true']:not([hidden]) { display: flex; flex-direction: column; }
+    .qf-results[data-locked='true'] > .qf-unlock { order: -1; margin: 0 0 var(--space-4); }
+  }
+  @media (min-width: 48rem) {
+    .qf-unlock__t-wide { display: inline; }
+    .qf-unlock__t-phone, .qf-unlock__ready { display: none; }
+  }
   .qf-form[hidden] { display: none; }
 
   /* Health questions */
@@ -519,10 +539,11 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
      large premium, green Apply Now. The rows line up across the three
      cards (subgrid) on desktop. */
   .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-2); }
-  /* v5.0: the subtitle under "Your Insurance Quotes" (after verification only): about 5px under
-     the heading and 8px above the cards. */
-  .qf-results-sub { margin: -11px 0 0; text-align: center; font-size: 0.875rem; line-height: 1.3; font-weight: 500; color: #173f35; text-wrap: balance; }
-  .qf-results-sub[hidden] { display: none; }
+  /* Supporting line under the results headline, directly above the cards
+     (Randy, November 2026; after verification only): smaller than the
+     headline, centered, wraps on phones. */
+  .qf-results-lead { margin: -8px auto 0; max-width: 40rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: balance; }
+  .qf-results-lead[hidden] { display: none; }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
     display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);
@@ -571,8 +592,15 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-card[data-state='pending'] .qf-card__amount, .qf-card[data-state='unavailable'] .qf-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
   .qf-card[data-state='loading'] .qf-card__amount { color: var(--color-border); }
   .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
-  .qf-restart-row { margin: var(--space-2) 0 0; text-align: center; }
   .qf-ref[hidden] { display: none; }
   .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
+  /* Rate-tier explanations directly under the disclaimer (Randy, November
+     2026; after verification only): plain dark-gray text, bold heading and
+     labels, left-aligned, compact; no cards, borders or backgrounds. */
+  .qf-tiers { margin: var(--space-3) auto 0; max-width: 46rem; color: var(--color-text); font-size: 0.9375rem; line-height: 1.45; text-align: left; }
+  .qf-tiers[hidden] { display: none; }
+  .qf-tiers__title { margin: 0 0 var(--space-1); font-size: 0.9375rem; font-weight: 700; line-height: 1.4; color: var(--color-text); }
+  .qf-tiers p { margin: 0; }
+  .qf-tiers p + p { margin-top: var(--space-2); }
 
 </style>

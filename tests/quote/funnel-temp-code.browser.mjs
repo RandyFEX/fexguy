@@ -10,7 +10,7 @@ const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer({ production: true });
 const URL_ = `${srv.base}/free-quote/`;
 const OUT = process.env.OUT ?? '';
-const NOTE = 'Enter access code 123456 to view your insurance quotes.';
+const NOTE = 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.';
 const browser = await chromium.launch();
 // v6.1/v6.2: requests the quote funnel must never make (Formspark, Cloudflare Turnstile, Resend).
 const FORBIDDEN = /^https:\/\/([a-z0-9-]+\.)*(submit-form\.com|challenges\.cloudflare\.com|api\.resend\.com|resend\.com)\//;
@@ -42,7 +42,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForSelector('[data-step="1"]:not([hidden])');
     // The instruction is not in the page HTML; only the server sends it (the hidden Preview
     // banner, unchanged, is the only other place the test code appears, and it stays hidden).
-    assert(!(await (await fetch(URL_)).text()).includes('Enter access code'), 'instruction in the HTML');
+    assert(!(await (await fetch(URL_)).text()).includes('Temporary access code'), 'instruction in the HTML');
     for (const s of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="use"][data-value="cremation"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
     await page.selectOption('[data-qf-state]', 'Ohio');
     await page.fill('#qf-first', 'Mary');
@@ -53,15 +53,15 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const vis = (e) => !!e && e.getClientRects().length > 0;
       const parts = ['#qf-unlock-title', '[data-qf-send]', '[data-qf-send-form] [data-qf-temp-note]', '[data-qf-edit-phone]', '#qf-verify-rates'].map((s) => document.querySelector(s));
       return {
-        texts: parts.map((e) => (vis(e) ? e.textContent.trim() : null)),
+        texts: parts.map((e, k) => (vis(e) ? (k === 0 ? e.innerText : e.textContent).trim() : null)),
         tops: parts.map((e) => e.getBoundingClientRect().top),
         sms: vis(document.querySelector('[data-qf-phone-summary]')),
         panel: document.querySelector('[data-qf-unlock]').innerText,
         banner: vis(document.querySelector('[data-qf-test]')),
-        subtitle: vis(document.querySelector('[data-qf-results-sub]')),
+        subtitle: vis(document.querySelector('[data-qf-results-lead]')),
       };
     });
-    assert(JSON.stringify(p.texts) === JSON.stringify(['Unlock Your Rates', 'Text Me My Access Code', NOTE, 'Change Number', 'Message and data rates may apply.']), `panel ${JSON.stringify(p.texts)}`);
+    assert(JSON.stringify(p.texts) === JSON.stringify([name === 'mobile' ? 'Your Rates Are Ready!' : 'Unlock Your Rates', 'Text Me My Access Code', NOTE, 'Change Number', 'Message and data rates may apply.']), `panel ${JSON.stringify(p.texts)}`);
     assert(p.tops.every((t, i) => i === 0 || t > p.tops[i - 1]), `order ${p.tops}`);
     assert(!p.sms && !/We'll text|sent to|on its way/i.test(p.panel), `SMS wording shown: ${p.panel}`);
     assert(!p.banner && !p.subtitle, 'preview banner or subtitle shown before unlocking');
@@ -78,7 +78,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       return { text: f.innerText, note: vis(f.querySelector('[data-qf-temp-note]')), resend: vis(f.querySelector('[data-qf-resend]')), field: vis(f.querySelector('#qf-code')), focused: document.activeElement?.id === 'qf-code' };
     });
     assert(c.note && c.text.includes('Enter the 6-digit code') && c.text.includes(NOTE) && c.field && c.focused, `code screen ${JSON.stringify(c)}`);
-    assert(!c.resend && !/sent|on its way|text message/i.test(c.text), `SMS claim on the code screen: ${c.text}`);
+    assert(!c.resend && !/sent|on its way|text message/i.test(c.text.replace(NOTE, '')), `SMS claim on the code screen: ${c.text}`);
     if (OUT) await page.locator('[data-qf-unlock]').screenshot({ path: `${OUT}/temp-${name}-code.png` });
     await page.fill('#qf-code', '000000');
     await page.click('[data-qf-verify-btn]');
@@ -89,12 +89,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
     const r = await page.evaluate(() => ({
       title: document.querySelector('#qf-s8').textContent.trim(),
-      sub: document.querySelector('[data-qf-results-sub]').textContent.trim(),
+      sub: document.querySelector('[data-qf-results-lead]').textContent.trim(),
       cards: [...document.querySelectorAll('.qf-card')].map((e) => e.dataset.state),
       prices: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent.trim()),
       banner: document.querySelector('[data-qf-test]').getClientRects().length > 0,
     }));
-    assert(r.title === 'Your Insurance Quotes' && r.sub === 'Here Are 3 of Your 30+ Insurance Company Options' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
+    assert(r.title === 'Call Funeral Funds for Access to Even Lower Rates!' && r.sub === 'Let us check for the lowest rates from 30+ insurance companies.' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
     assert((await priceStatus(page)) === 200, 'no prices after the code');
     if (OUT) await page.screenshot({ path: `${OUT}/temp-${name}-revealed.png` });
     return r.prices.join(', ');

@@ -14,8 +14,14 @@
 // numbers only (tracking.ts, GA4). Leads are saved in the server's Redis
 // record (v6.2); this page makes no Formspark, Turnstile or email requests.
 import { lead } from '@/config/lead';
-import { leadSourceFields } from '@/scripts/lead-source';
+import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
+import { saveHandoff } from '@/scripts/quote-handoff';
+import { toE164US } from '../../server/quote/phone.js';
+
+// The session's traffic source (first landing, UTM, ad click) is kept for
+// /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
+recordVisit();
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
@@ -41,16 +47,16 @@ const track = (name: string, extra: Record<string, unknown> = {}) =>
 const VISIT_KEY = 'ff:quote-visit';
 let memoryVisit = '';
 const newVisitId = () => (crypto.randomUUID?.() ?? `${Date.now()}${Math.random()}`).replace(/[^A-Za-z0-9]/g, '').slice(0, 32).padEnd(16, '0');
-function visitId(fresh = false) {
+function visitId() {
   try {
-    let v = fresh ? '' : sessionStorage.getItem(VISIT_KEY) ?? '';
+    let v = sessionStorage.getItem(VISIT_KEY) ?? '';
     if (!/^[A-Za-z0-9_-]{16,64}$/.test(v)) {
       v = newVisitId();
       sessionStorage.setItem(VISIT_KEY, v);
     }
     return v;
   } catch {
-    if (fresh || !memoryVisit) memoryVisit = newVisitId();
+    if (!memoryVisit) memoryVisit = newVisitId();
     return memoryVisit;
   }
 }
@@ -197,7 +203,8 @@ if (root) {
     el.textContent = text;
     el.classList.toggle('is-error', isError);
   };
-  const phoneOk = (v: string) => /^[2-9]\d{9}$/.test(v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, ''));
+  // The server's own check (server/quote/phone.js), so a number accepted here is never refused there.
+  const phoneOk = (v: string) => toE164US(v) !== null;
   const quoteReady = (): Quote | null =>
     answers.gender && answers.age && typeof answers.tobacco === 'boolean' && answers.coverage
       ? { age: answers.age, gender: answers.gender, tobacco: answers.tobacco, coverage: answers.coverage }
@@ -298,6 +305,19 @@ if (root) {
     });
     sendBtn.disabled = false;
     if (http !== 200 || body.status !== 'sent') {
+      // A number the server refuses: show the field so it can be corrected here.
+      if (body.field === 'phone') {
+        fieldError(unlockPhone, body.message ?? 'Please enter a 10-digit US mobile number.');
+        setStatus(sendStatus, '');
+        return editPhone();
+      }
+      // A name the server refuses: back to the contact step, answers kept, at the name field.
+      if (body.field === 'name') {
+        setStatus(sendStatus, '');
+        show(7);
+        fieldError(firstInput, body.message ?? 'Please enter your name.');
+        return firstInput.focus();
+      }
       setStatus(sendStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
       sendStatus.focus();
       return;
@@ -334,6 +354,11 @@ if (root) {
       return;
     }
     track('quote_sms_verified');
+    // Verified quote lead (Randy, November 2026): the conversion (GA4
+    // generate_lead, Meta Lead) is counted once, by tracking.ts, when the
+    // server reports a real SMS verification; never for a code request,
+    // Apply Now, /facebook/, a resumed session or test/temporary-code mode.
+    if (body.leadVerified === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(8);
     setStatus(verifyStatus, '');
     unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
@@ -379,9 +404,10 @@ if (root) {
   const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
-  const resultsSub = $('[data-qf-results-sub]');
+  const resultsLead = $('[data-qf-results-lead]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
+  const tiers = $('[data-qf-tiers]');
   const blurred = (text: string) => {
     const b = document.createElement('span');
     b.className = 'qf-blur';
@@ -414,11 +440,12 @@ if (root) {
     adjustIntro.hidden = true;
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
+    tiers.hidden = true;
     unlockPanel.hidden = false;
-    // "Your Insurance Quotes" appears only after verification.
+    // The results headline and its supporting line appear only after verification.
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
-    resultsSub.hidden = true;
+    resultsLead.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
       el.dataset.state = 'locked';
@@ -571,9 +598,10 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Your Insurance Quotes';
+    tiers.hidden = false;
+    resultsTitle.textContent = 'Call Funeral Funds for Access to Even Lower Rates!';
     resultsTitle.classList.remove('visually-hidden');
-    resultsSub.hidden = false;
+    resultsLead.hidden = false;
     fillAdjust(quote);
     show(8, false);
     // Stay on the page; bring the top of the results into view.
@@ -608,16 +636,19 @@ if (root) {
   function finish() {
     if (completed) return;
     completed = true;
-    if (!testMode() && applyNotified) {
-      // Lead completed: /help/ counts it once (tracking.ts).
-      try {
-        sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
-      } catch {}
-    }
+    // The funnel's lead is counted at verification (ff:lead), never on /help/.
     location.assign(lead.formspark.successPath);
   }
-  const testMode = () => !testBanner.hidden;
   $('[data-qf-intake-finish]').addEventListener('click', finish);
+  /** Apply Now (Randy, November 2026): the temporary phone-assisted
+   * application on /facebook/, with the page's own query string (campaign
+   * values). Apply Now is an application intent (GA4 quote_apply_now, sent
+   * above), never a GA4 generate_lead or Meta Lead. */
+  function handoffToApplication() {
+    if (completed) return;
+    completed = true;
+    location.assign(`/facebook/${location.search}`);
+  }
 
   async function intakeStep(body: Record<string, unknown>) {
     setStatus(intakeStatus, '');
@@ -697,47 +728,19 @@ if (root) {
         return;
       }
       setStatus(applyStatus, '');
-      // v6.2: /help/ counts the lead once the server has saved the Apply Now record.
+      // v6.2: the lead counts once the server has saved the Apply Now record.
       applyNotified = body.saved === true;
-      intakeCategory = id;
-      intakeTitle.textContent = 'Application questions';
-      intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;
-      intakeQ.hidden = true;
-      intakeDone.hidden = true;
-      show(9);
-      await intakeStep({ action: 'intake-next', category: id });
+      // The selected card, server-priced, for /facebook/ (quote-handoff.ts).
+      const first = cat.carriers?.find((c): c is Carrier => Boolean(c)) ?? null;
+      const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
+      saveHandoff({
+        selection: { tierId: id, tier: String(body.category ?? cat.label), carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: shown.quote.coverage, monthlyPremium: String(body.monthlyPremium ?? cat.monthlyPremium) },
+        inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, intendedUse: answers.use ?? null, state: answers.state ?? null },
+        attribution,
+      });
+      handoffToApplication();
     });
   }
-
-  // Start New Quote: end this visit's session (the lead's records are kept),
-  // clear the answers and return to the first question with a new visit id.
-  root.querySelectorAll<HTMLButtonElement>('[data-qf-restart]').forEach((btn) =>
-    btn.addEventListener('click', async () => {
-      await api({ action: 'end-session' });
-      visitId(true);
-      for (const k of Object.keys(answers)) delete (answers as Record<string, unknown>)[k];
-      try {
-        sessionStorage.removeItem(STEPS_KEY);
-        sessionStorage.removeItem(QUOTE_REF_KEY);
-      } catch {}
-      contactForm.reset();
-      consentBox.checked = false;
-      unlockPhone.value = '';
-      showPhoneSummary();
-      codeInput.value = '';
-      sendForm.hidden = false;
-      verifyForm.hidden = true;
-      testBanner.hidden = true;
-      cache.clear();
-      shown = null;
-      firstView = true;
-      leadId = '';
-      lockCards();
-      root!.querySelectorAll('[aria-pressed]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
-      stateSelect.value = '';
-      show(1);
-    }),
-  );
 
   // Start: only this tab's own verified visit returns to the live prices;
   // any other (new tab, new visit) starts at the first question.

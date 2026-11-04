@@ -6,8 +6,12 @@
 /** @param {unknown} raw @returns {string | null} */
 export function toE164US(raw) {
   if (typeof raw !== 'string' || raw.length > 32) return null;
-  let d = raw.replace(/[\s().+-]/g, '');
-  if (!/^\d+$/.test(d)) return null;
+  // Letters are refused; any other punctuation or spacing (including the
+  // non-breaking hyphens and invisible marks phones add when autofilling or
+  // pasting a number) is ignored, as on the page, which uses this same check.
+  if (/[A-Za-z]/.test(raw)) return null;
+  let d = raw.replace(/\D/g, '');
+  if (!d) return null;
   if (d.length === 11 && d.startsWith('1')) d = d.slice(1);
   if (d.length !== 10) return null;
   const area = d.slice(0, 3);

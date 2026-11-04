@@ -92,6 +92,11 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
   assert.equal(toE164US('214-867-5309'), '+12148675309');
   assert.equal(toE164US('+1 214 867 5309'), '+12148675309');
   assert.equal(toE164US('12148675309'), '+12148675309');
+  // Autofill/paste punctuation (non-breaking hyphens, invisible marks, slashes) is ignored, as on the page.
+  assert.equal(toE164US('214\u2011867\u20115309'), '+12148675309');
+  assert.equal(toE164US('\u202a(214) 867-5309\u202c'), '+12148675309');
+  assert.equal(toE164US('214/867/5309'), '+12148675309');
+  assert.equal(toE164US('214-867-5309 ext 2'), null);
   for (const bad of ['888-862-9456', '900-555-0000', '411-555-1234', '214-411-1234', '555-867-5309', '+44 20 7946 0958', '123', '', null, 'abc', '014-867-5309'])
     assert.equal(toE164US(bad), null, String(bad));
 });
@@ -99,22 +104,26 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
 test('verification modes: real Twilio when configured; test mode only outside production; never in production', () => {
   assert.equal(verifyMode(TWILIO), 'twilio');
   assert.equal(verifyMode(PREVIEW), 'test');
-  // v5.3: production without Twilio uses the temporary public test code; Twilio always wins.
+  // Production never falls back to the universal code by itself: without Twilio it refuses
+  // verification unless QUOTE_PUBLIC_TEST_CODE=on is set explicitly (v5.3 code); Twilio always wins.
+  // Facebook ad launch: switched on explicitly in code (PUBLIC_TEST_CODE_LAUNCH); 'off' disables it.
   assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'public-test');
   assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'public-test');
   assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'off' }), 'off');
+  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'public-test');
+  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'twilio');
   assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
 });
 
-test('production without Twilio and with the public test code switched off refuses verification (503)', async () => {
+test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
   const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
   assert.equal(r.http, 503);
 });
 
 test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, never marks the phone SMS-verified, real lead', async () => {
-  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
   const PO = { origin: 'https://funeralfunds.com' };
   const c = client(PROD);
   const prodPrice = async (cl) => {
@@ -134,6 +143,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.testMode, false);
+  assert.equal(ok.body.leadVerified, false, 'the temporary code is never a verified lead (no ad conversion)');
   assert.equal('notify' in ok.body, false, 'nothing for the browser to send');
   assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
   const rec = await c.store.getLead(start.body.lead);
@@ -142,7 +152,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   assert.equal(rec.verification.phoneVerified, false);
   assert.equal(rec.verification.verifiedAt, null);
   assert.equal(rec.consent.given, false);
-  assert.equal(rec.temporaryCodeNotice, 'Enter access code 123456 to view your insurance quotes.');
+  assert.equal(rec.temporaryCodeNotice, 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.');
   // Production records stay in the production namespace, never the preview one.
   assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
   // The code alone opens nothing: another visitor without their own request gets no prices or session.
@@ -153,8 +163,8 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
 });
 
 test('v5.4: the access-code instruction is sent only in temporary-code mode, never with Twilio or on previews', async () => {
-  const NOTE = 'Enter access code 123456 to view your insurance quotes.';
-  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET });
+  const NOTE = 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.';
+  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' });
   const PO = { origin: 'https://funeralfunds.com' };
   assert.equal((await prod.call({ action: 'session' }, PO)).body.temporaryCodeNote, NOTE);
   assert.equal((await prod.call(startBody(), PO)).body.temporaryCodeNote, NOTE);
@@ -184,6 +194,10 @@ test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', asy
   assert.equal(wrong.body.status, 'wrong-code');
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   assert.equal(ok.body.status, 'verified');
+  assert.equal(ok.body.leadVerified, true, 'a real SMS verification is the verified lead');
+  const repeat = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
+  assert.equal(repeat.http, 410, 'the same lead cannot be verified (counted) twice');
+  assert.equal(repeat.body.leadVerified, undefined);
   assert.equal(tw.calls.at(-1).url.endsWith('/VerificationCheck'), true);
   assert.deepEqual(tw.calls.at(-1).form, { To: '+12148675309', Code: '654321' });
   // v6.2: the saved lead holds the contact details, quote and consent.
@@ -207,6 +221,7 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   const start = await c.call(startBody());
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   assert.equal(ok.body.status, 'verified');
+  assert.equal(ok.body.leadVerified, false, 'preview test mode never counts a lead');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
   assert.doesNotMatch(ok.setCookie, /Max-Age/, 'a browser-session cookie, not a persistent one');
   assert.equal((await c.price()).http, 200, 'verified session gets prices');
@@ -502,14 +517,18 @@ test('Call to Get Approved tap (v3.7): verified session only, server price and o
 });
 
 test('one "Your Name" field (v4.5): a first name or a full name is accepted and stored as typed; nothing else is required', async () => {
-  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith"]) {
+  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil']) {
     const c = client(PREVIEW);
     const r = await c.call(startBody({ firstName: name }));
     assert.equal(r.http, 200, name);
     assert.equal((await c.store.getLead(r.body.lead)).firstName, name);
   }
   assert.equal((await client(PREVIEW).call(startBody({ firstName: 'x'.repeat(61) }))).http, 200, 'over-long names are trimmed, not refused');
-  assert.equal((await client(PREVIEW).call(startBody({ firstName: '' }))).http, 400);
+  const refused = await client(PREVIEW).call(startBody({ firstName: '' }));
+  assert.equal(refused.http, 400);
+  assert.equal(refused.body.field, 'name', 'the page reopens the name field');
+  const badPhone = await client(PREVIEW).call(startBody({ phone: '214-555-0123' }));
+  assert.equal(badPhone.body.field, 'phone', 'the page reopens the phone field');
 });
 
 test('v5.8: the article-sidebar entry is stored with the lead and is saved with the lead', async () => {
@@ -538,7 +557,7 @@ test('v6.2: the funnel saves the lead and makes no outbound request (no Formspar
   const realFetch = globalThis.fetch;
   globalThis.fetch = async (url, ...rest) => { calls.push(String(url)); return realFetch(url, ...rest); };
   try {
-    const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET };
+    const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
     const PO = { origin: 'https://funeralfunds.com' };
     const c = client(PROD);
     const source = { entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'male', entryAt: '2026-11-03T22:00:00.000Z' };
