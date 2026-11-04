@@ -74,6 +74,24 @@ await check('the sidebar shows the funnel\'s exact Male and Female illustrations
 
 const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 
+// SEE PRICES NOW (V2.0) sits on one line inside its bar on desktop and phones,
+// also with reduced motion (the global 0.01ms transition must not skew the fit).
+for (const [n, o] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['iphone13', devices['iPhone 13']], ['320', { viewport: { width: 320, height: 640 }, isMobile: true, hasTouch: true }]])
+  for (const motion of ['no-preference', 'reduce'])
+    await check(`${n} (${motion} motion): the module header SEE PRICES NOW fits on one line`, async () => {
+      const { ctx, page } = await newPage({ ...o, reducedMotion: motion });
+      await page.goto(`${srv.base}${ARTICLE}`);
+      await page.evaluate(() => document.fonts.ready);
+      await page.waitForTimeout(300);
+      const r = await page.$eval(n === 'desktop' ? '[data-get-prices="article-aside"] [data-gp-title]' : '[data-get-prices="inline"] [data-gp-title]', (t) => {
+        const cs = getComputedStyle(t);
+        return { text: t.textContent, fs: parseFloat(cs.fontSize), fits: t.scrollWidth <= t.clientWidth + 1, lines: Math.round(t.getBoundingClientRect().height / parseFloat(cs.lineHeight)), color: cs.color, weight: cs.fontWeight };
+      });
+      assert(r.text === 'SEE PRICES NOW' && r.fits && r.lines === 1 && r.fs >= 26 && r.fs <= 40 && r.color === 'rgb(255, 235, 59)' && r.weight === '900', JSON.stringify(r));
+      await ctx.close();
+      return `${r.fs}px`;
+    });
+
 await check('/free-quote/: new title, still noindex, canonical kept; the old URL 301s to it', async () => {
   const title = funnelHtml.match(/<title>([^<]*)<\/title>/)?.[1];
   assert(title === 'Free Burial Insurance Quotes | Compare Rates | Funeral Funds', `title ${title}`);
@@ -155,7 +173,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
           bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - b.querySelector('.qf-people').getBoundingClientRect().width) < 2 && Math.abs(cr.width / b.querySelector('.gp__body').clientWidth - 0.91) < 0.01, callOneLine: new Set([...call.querySelectorAll('.gp__call-text > span')].map((x) => Math.round(x.getBoundingClientRect().top))).size === 1,
           prev: prev?.tagName ?? null, next: next?.tagName ?? null };
       });
-      assert(t.title === 'GET PRICING HERE' && t.q === 'I need pricing for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(t.title === 'SEE PRICES NOW' && t.q === 'I need pricing for a...' && t.links.join() === 'Male,Female', JSON.stringify(t));
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
       assert(t.talk === undefined && t.callOneLine && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
       assert(t.callFull, `call width ${JSON.stringify(t)}`);
