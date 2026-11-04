@@ -1,6 +1,6 @@
 // Two-stage countdown timers V2.0 (Randy, November 2026): the /free-quote/
 // results line ("Offer available for: 10:00") and the /facebook/ Ready to
-// Apply line ("This offer will expire in: 2:00"). Built site + real handlers
+// Apply line ("Your offer is available for: 2:00"). Built site + real handlers
 // in test mode (tests/quote/funnel-server.mjs; code 123456, nothing sent),
 // with Playwright's fake clock. Needs a build and the private rate tables.
 //   node tests/quote/countdown.browser.mjs   (screenshots: OUT=<dir>)
@@ -12,7 +12,7 @@ const srv = await startFunnelServer();
 const URL_ = `${srv.base}/free-quote/`;
 const OUT = process.env.OUT ?? '';
 const RESULTS = /^Let us check your lowest rates from 30\+ insurance companies\. Offer available for: (\d+:\d\d)$/;
-const APPLY = /^This offer will expire in: (\d+:\d\d)$/;
+const APPLY = /^Your offer is available for: (\d+:\d\d)$/;
 const YELLOW = 'rgb(255, 235, 59)';
 const browser = await chromium.launch();
 const results = [];
@@ -86,12 +86,12 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
     assert(left <= 593 && left >= 585, `after refresh ${left}s left`);
     return `${left}s left after refresh`;
   });
-  await check(`${name}: Apply Now shows "This offer will expire in: 2:00" (yellow digits); it counts down and survives a refresh`, async () => {
+  await check(`${name}: Apply Now shows "Your offer is available for: 2:00" (yellow digits); it counts down and survives a refresh`, async () => {
     await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
     await page.waitForURL(/\/facebook\//, { timeout: 8000 });
     await page.waitForSelector('[data-fb-offer]:not([hidden])');
     const t = await page.$eval('[data-fb-offer]', (e) => ({ text: e.textContent.trim(), color: getComputedStyle(e.querySelector('[data-fb-offer-time]')).color, pColor: getComputedStyle(e).color, children: e.children.length, lines: Math.round(e.getBoundingClientRect().height / parseFloat(getComputedStyle(e).lineHeight)) }));
-    assert(t.text === 'This offer will expire in: 2:00' && t.color === YELLOW && t.pColor === 'rgb(255, 255, 255)' && t.children === 1 && t.lines === 1, JSON.stringify(t));
+    assert(t.text === 'Your offer is available for: 2:00' && t.color === YELLOW && t.pColor === 'rgb(255, 255, 255)' && t.children === 1 && t.lines === 1, JSON.stringify(t));
     assert(await page.isVisible('[data-fb-quote]'), 'selected quote hidden');
     assert(!(await page.evaluate(() => /remain active for the next 12 hours/i.test(document.body.innerText))), 'old 12-hour message shown');
     if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/${name}-apply-timer.png` });
@@ -104,7 +104,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
   await check(`${name}: at 0:00 the apply offer expires (call buttons stay); Start New Quote opens a fresh quote`, async () => {
     await page.clock.runFor(90000);
     const e = await page.evaluate(() => ({ text: document.querySelector('[data-fb-offer]').textContent.trim(), quote: !document.querySelector('[data-fb-quote]').hidden, restart: !document.querySelector('[data-fb-offer-restart]').hidden, calls: [...document.querySelectorAll('.fb-call__btn')].filter((a) => a.getClientRects().length && a.getAttribute('href').startsWith('tel:')).length }));
-    assert(e.text === 'This offer will expire in: 0:00' && !e.quote && e.restart && e.calls >= 1, JSON.stringify(e));
+    assert(e.text === 'Your offer is available for: 0:00' && !e.quote && e.restart && e.calls >= 1, JSON.stringify(e));
     if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/${name}-apply-expired.png` });
     await page.click('[data-fb-offer-restart]');
     await page.waitForURL(/\/free-quote\/$/);
