@@ -83,19 +83,22 @@ conversion only then.
 | `QUOTE_SESSION_SECRET` (optional; else `HEALTH_SEARCH_SECRET`) | Session signing and HMAC hashing (32+ chars) |
 | `QUOTE_SMS_DAILY_LIMIT` (optional, default 300) | Global daily SMS cap |
 | `QUOTE_VERIFY_MODE=test` (optional, previews only) | Force test mode |
-| `QUOTE_PUBLIC_TEST_CODE=off` (optional, production) | Switch off the temporary public test code (v5.3) |
+| `QUOTE_PUBLIC_TEST_CODE=on` (optional, production) | Explicitly allow the temporary public test code (v5.3); without it and without Twilio, production refuses verification |
 
 ## v5.3 temporary public test code (production, until Twilio is connected)
 
-Production without Twilio credentials runs `public-test` mode
-(`PUBLIC_TEST_CODE_ENABLED` in `twilio.js`): the existing SMS screens stay,
+Production without Twilio credentials runs `public-test` mode only when
+`QUOTE_PUBLIC_TEST_CODE=on` is set explicitly (Randy, November 2026: never a
+silent fallback; otherwise verification is refused with the phone number)
+and `PUBLIC_TEST_CODE_ENABLED` in `twilio.js` is true: the existing SMS screens stay,
 no SMS is sent, and the code 123456 unlocks that visitor's own quotes only
 (the same visit-scoped session, rate limits and 5-attempt cap). The lead is
-real: Randy is notified and the /help/ conversion counts. The record never
+real, but it is never an advertising conversion (GA4 generate_lead and
+Meta Lead fire only for a real Twilio-approved verification). The record never
 claims SMS verification: `verification.status` is `test-code-accepted`,
 `phoneVerified` is false and `verifiedAt` is null. It ends automatically when
-the Twilio variables are set, or at once with `QUOTE_PUBLIC_TEST_CODE=off` or
-`PUBLIC_TEST_CODE_ENABLED = false`.
+the Twilio variables are set, or at once by removing `QUOTE_PUBLIC_TEST_CODE=on`
+or setting `PUBLIC_TEST_CODE_ENABLED = false`.
 
 Without Twilio credentials, previews run in **test mode**: the page says so,
 no SMS is sent, the code is `123456`, and every record is marked `mode:
