@@ -41,16 +41,16 @@ const track = (name: string, extra: Record<string, unknown> = {}) =>
 const VISIT_KEY = 'ff:quote-visit';
 let memoryVisit = '';
 const newVisitId = () => (crypto.randomUUID?.() ?? `${Date.now()}${Math.random()}`).replace(/[^A-Za-z0-9]/g, '').slice(0, 32).padEnd(16, '0');
-function visitId(fresh = false) {
+function visitId() {
   try {
-    let v = fresh ? '' : sessionStorage.getItem(VISIT_KEY) ?? '';
+    let v = sessionStorage.getItem(VISIT_KEY) ?? '';
     if (!/^[A-Za-z0-9_-]{16,64}$/.test(v)) {
       v = newVisitId();
       sessionStorage.setItem(VISIT_KEY, v);
     }
     return v;
   } catch {
-    if (fresh || !memoryVisit) memoryVisit = newVisitId();
+    if (!memoryVisit) memoryVisit = newVisitId();
     return memoryVisit;
   }
 }
@@ -383,6 +383,7 @@ if (root) {
   const resultsLead = $('[data-qf-results-lead]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
+  const tiers = $('[data-qf-tiers]');
   const blurred = (text: string) => {
     const b = document.createElement('span');
     b.className = 'qf-blur';
@@ -415,6 +416,7 @@ if (root) {
     adjustIntro.hidden = true;
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
+    tiers.hidden = true;
     unlockPanel.hidden = false;
     // The results headline and its supporting line appear only after verification.
     resultsTitle.textContent = 'Your quote results';
@@ -573,6 +575,7 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
+    tiers.hidden = false;
     resultsTitle.textContent = 'You May Qualify for Even Lower Rates Than Shown Below!';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
@@ -711,36 +714,6 @@ if (root) {
       await intakeStep({ action: 'intake-next', category: id });
     });
   }
-
-  // Start New Quote: end this visit's session (the lead's records are kept),
-  // clear the answers and return to the first question with a new visit id.
-  root.querySelectorAll<HTMLButtonElement>('[data-qf-restart]').forEach((btn) =>
-    btn.addEventListener('click', async () => {
-      await api({ action: 'end-session' });
-      visitId(true);
-      for (const k of Object.keys(answers)) delete (answers as Record<string, unknown>)[k];
-      try {
-        sessionStorage.removeItem(STEPS_KEY);
-        sessionStorage.removeItem(QUOTE_REF_KEY);
-      } catch {}
-      contactForm.reset();
-      consentBox.checked = false;
-      unlockPhone.value = '';
-      showPhoneSummary();
-      codeInput.value = '';
-      sendForm.hidden = false;
-      verifyForm.hidden = true;
-      testBanner.hidden = true;
-      cache.clear();
-      shown = null;
-      firstView = true;
-      leadId = '';
-      lockCards();
-      root!.querySelectorAll('[aria-pressed]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
-      stateSelect.value = '';
-      show(1);
-    }),
-  );
 
   // Start: only this tab's own verified visit returns to the live prices;
   // any other (new tab, new visit) starts at the first question.

@@ -286,7 +286,12 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             </fieldset>
           </form>
           <p class="qf-ref" data-qf-ref hidden>Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
-          <p class="qf-restart-row"><button class="qf-link" type="button" data-qf-restart>Start New Quote</button></p>
+          <div class="qf-tiers" data-qf-tiers hidden>
+            <h3 class="qf-tiers__title">Understanding Your 3 Rate Options</h3>
+            <p><strong>Lowest Preferred Rate:</strong> Covers those in generally good health, including multiple common medical conditions controlled with medication(s).</p>
+            <p><strong>Standard Rate:</strong> Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions.</p>
+            <p><strong>Guaranteed Acceptance Rate:</strong> Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death.</p>
+          </div>
         </section>
 
         <!-- Step 9: carrier-specific health questions after Apply Now -->
@@ -577,8 +582,15 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-card[data-state='pending'] .qf-card__amount, .qf-card[data-state='unavailable'] .qf-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
   .qf-card[data-state='loading'] .qf-card__amount { color: var(--color-border); }
   .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
-  .qf-restart-row { margin: var(--space-2) 0 0; text-align: center; }
   .qf-ref[hidden] { display: none; }
   .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
+  /* Rate-tier explanations directly under the disclaimer (Randy, November
+     2026; after verification only): plain dark-gray text, bold heading and
+     labels, left-aligned, compact; no cards, borders or backgrounds. */
+  .qf-tiers { margin: var(--space-3) auto 0; max-width: 46rem; color: var(--color-text); font-size: 0.9375rem; line-height: 1.45; text-align: left; }
+  .qf-tiers[hidden] { display: none; }
+  .qf-tiers__title { margin: 0 0 var(--space-1); font-size: 0.9375rem; font-weight: 700; line-height: 1.4; color: var(--color-text); }
+  .qf-tiers p { margin: 0; }
+  .qf-tiers p + p { margin-top: var(--space-2); }
 
 </style>

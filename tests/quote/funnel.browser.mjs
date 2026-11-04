@@ -353,9 +353,13 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(intro === 'Adjust Your Quote Below', intro);
     const gaps = await page.evaluate(() => { const c = document.querySelector('.qf-cards').getBoundingClientRect(), i = document.querySelector('[data-qf-adjust-intro]'), r = i.getBoundingClientRect(), a = document.querySelector('[data-qf-adjust]').getBoundingClientRect(); return { cards: Math.round(r.top - c.bottom), controls: Math.round(a.top - r.bottom), align: getComputedStyle(i).textAlign }; });
     assert(gaps.cards >= 10 && gaps.cards <= 14 && gaps.controls <= 12 && gaps.align === 'center', `spacing under the cards ${JSON.stringify(gaps)}`);
-    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '.qf-restart-row'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
+    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '[data-qf-tiers]'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
     const ref = await page.$eval('[data-qf-ref]', (e) => ({ visible: e.getClientRects().length > 0, text: e.textContent.trim() }));
     assert(ref.visible && ref.text === 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.', `rate note after verification ${JSON.stringify(ref)}`);
+    // Rate-tier explanations directly under the disclaimer; no Start New Quote control.
+    const tiers = await page.evaluate(() => { const t = document.querySelector('[data-qf-tiers]'), r = document.querySelector('[data-qf-ref]'); const cs = getComputedStyle(t);
+      return { after: r.nextElementSibling === t, visible: t.getClientRects().length > 0, text: t.innerText.replace(/\s+/g, ' ').trim(), align: cs.textAlign, color: cs.color, fs: parseFloat(cs.fontSize), refFs: parseFloat(getComputedStyle(r).fontSize), bold: [...t.querySelectorAll('strong, .qf-tiers__title')].map((e) => Number(getComputedStyle(e).fontWeight)), restart: !!document.querySelector('[data-qf-restart]') || /Start New Quote/.test(document.body.innerText), overflow: t.scrollWidth > t.clientWidth }; });
+    assert(tiers.after && tiers.visible && tiers.text === "Understanding Your 3 Rate Options Lowest Preferred Rate: Covers those in generally good health, including multiple common medical conditions controlled with medication(s). Standard Rate: Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions. Guaranteed Acceptance Rate: Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death." && tiers.align === 'left' && tiers.color === 'rgb(32, 37, 34)' && tiers.fs >= 14 && tiers.fs <= 15 && tiers.bold.length === 4 && tiers.bold.every((w) => w >= 700) && !tiers.restart && !tiers.overflow, `rate tiers ${JSON.stringify(tiers)}`);
     // v4.3: each adjustment label is centered over its own controls.
     const centers = await page.$$eval('.qf-adjust .qf-group', (gs) => gs.map((g) => {
       const t = g.querySelector('.qf-group__title');
@@ -525,15 +529,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => !document.querySelector('[data-qf-intake-done]')?.hidden, null, { timeout: 5000 });
     assert(/other coverage/.test(await page.textContent('[data-qf-intake-done-text]')), 'done text');
   });
-  await check(`${name}: Start New Quote returns to I need pricing for a... and needs a new verification`, async () => {
+  await check(`${name}: every pricing input can be changed on the results screen (so no Start New Quote control)`, async () => {
     await page.goto(URL_);
     await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])'), null, { timeout: 6000 });
-    await page.click('[data-qf-restart]');
-    await atStart(page);
-    assert((await priceStatus(page)) === 401, 'still verified after restart');
-    assert(!(await page.isChecked('[data-qf-consent]')), 'consent carried forward');
-    await walk(page, PHONES[name]);
-    assert(await page.$$eval('.qf-card', (els) => els.every((e) => e.dataset.state === 'locked')), 'prices visible without verification');
+    const r = await page.evaluate(() => ({ age: !!document.querySelector('.qf-adjust select[name="age"]'), gender: document.querySelectorAll('.qf-adjust input[name="gender"]').length, tobacco: document.querySelectorAll('.qf-adjust input[name="tobacco"]').length, coverage: document.querySelectorAll('.qf-adjust input[name="coverage"]').length, restart: !!document.querySelector('[data-qf-restart]') }));
+    assert(r.age && r.gender === 2 && r.tobacco === 2 && r.coverage >= 6 && !r.restart, JSON.stringify(r));
     assert(errors.length === 0, errors.join('; '));
   });
   await ctx.close();

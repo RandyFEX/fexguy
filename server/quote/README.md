@@ -62,8 +62,9 @@ conversion only then.
   verifies a new tab or visit. The cookie is a browser-session cookie; the
   server record expires after 12 hours.
 - A reload in the same tab keeps the verified prices and selections.
-- Start New Quote (`end-session`) removes the session record and clears the
-  cookie. The lead, its consent record and events are kept, and a
+- `end-session` removes the session record and clears the cookie (the page's
+  Start New Quote button was removed in November 2026: every pricing input can
+  be changed on the results screen; a new tab or visit starts fresh). The lead, its consent record and events are kept, and a
   `quote-restarted` event is added. Each new request is a new lead with its
   own consent choice (never carried forward); the CRM handles duplicates.
 - With one verified standard product (Aetna Standard) the card is "Standard
