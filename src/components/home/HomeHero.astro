@@ -55,15 +55,15 @@ import { lead } from '@/config/lead';
   </picture>
   <div class="container hero__inner">
     <div class="hero__copy">
-      <h1 class="hero__title" id="hero-title">Life Insurance for Every Stage of Life</h1>
+      <h1 class="hero__title" id="hero-title">Affordable Burial Insurance for Every Family</h1>
       <p class="hero__products">
-        Final Expense <span class="hero__dot" aria-hidden="true">•</span> Term Life <span
+        Burial&nbsp;Insurance <span class="hero__dot" aria-hidden="true">•</span> Cremation&nbsp;Insurance <span
           class="hero__dot"
           aria-hidden="true">•</span
-        > Mortgage Protection
+        > Final&nbsp;Expense&nbsp;Insurance
       </p>
       <div class="hero__actions" data-pagefind-ignore>
-        <a class="btn hero__btn hero__btn--primary" href="/free-quote/">GET A QUOTE</a>
+        <a class="btn hero__btn hero__btn--primary" href="/free-quote/">GET PRICING HERE</a>
         <a class="btn hero__btn hero__btn--secondary" href={lead.phone.href}>CALL {lead.phone.display}</a>
       </div>
     </div>
@@ -119,7 +119,8 @@ import { lead } from '@/config/lead';
   }
   .hero__title {
     margin: 0;
-    font-size: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+    /* v1.1: a little smaller on wide screens so the longer headline stays clear of the photo. */
+    font-size: clamp(2rem, 1.35rem + 2.2vw, 3.125rem);
     line-height: 1.08;
     letter-spacing: -0.015em;
     color: #ffffff;
@@ -127,7 +128,8 @@ import { lead } from '@/config/lead';
   }
   .hero__products {
     margin: var(--space-3) 0 0;
-    font-size: clamp(1.0625rem, 0.95rem + 0.5vw, 1.375rem);
+    /* v1.1: slightly smaller (the longer line stays secondary and clear of the photo). */
+    font-size: clamp(1rem, 0.92rem + 0.3vw, 1.125rem);
     font-weight: 700;
     color: var(--home-cream);
   }
@@ -216,6 +218,15 @@ import { lead } from '@/config/lead';
   @media (min-width: 48rem) and (max-width: 69.99rem) {
     .hero__img {
       object-position: 45% 35%;
+    }
+    /* v1.1: the longer headline and product line stay clear of the woman in
+       this narrower crop (a smaller headline; the product line wraps). */
+    .hero__title {
+      max-width: 13em;
+      font-size: clamp(2rem, 0.6rem + 3vw, 2.75rem);
+    }
+    .hero__products {
+      max-width: 28rem;
     }
     .hero::before {
       background: linear-gradient(
