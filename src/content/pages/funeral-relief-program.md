@@ -73,7 +73,7 @@ sidebar: true
 
 <p><br>Randy VanderVaate<br>Funeral Relief Program Specialist<br><a href="/">FuneralFunds.com<br></a>Licensed in most states<br>(888) 862-9456</p>
 
-<p><a class="button-link" href="/free-quote/">★FREE FINAL EXPENSE QUOTE★</a></p>
+<p><a class="button-link" href="/free-quote/">SEE PRICES NOW</a></p>
 
 <p><a href="tel:8888629456">(888) 862-9456</a></p>
 

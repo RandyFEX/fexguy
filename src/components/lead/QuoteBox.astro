@@ -38,7 +38,7 @@ const phone = PAGE_PHONES.default;
   role="region"
   aria-labelledby={titleId}
 >
-  <p class="quote-box__title gp__title" id={titleId}><span class="gp__title-text" data-gp-title>GET PRICING HERE</span></p>
+  <p class="quote-box__title gp__title" id={titleId}><span class="gp__title-text" data-gp-title>SEE PRICES NOW</span></p>
   <div class="gp__body">
     <p class="gp__q">I need pricing for a...</p>
     <GenderChoice as="link" />
@@ -52,7 +52,7 @@ const phone = PAGE_PHONES.default;
 </div>
 
 <style is:global>
-  /* Header (Randy, November 2026): GET PRICING HERE in yellow, weight 900, as
+  /* Header (Randy, November 2026; wording SEE PRICES NOW since V2.0): in yellow, weight 900, as
      large as fits on one line with about 8px each side (26px minimum, 40px
      cap for the wide tablet copy). CSS
      sizes it from the bar's width (safe without JavaScript); the script
@@ -150,7 +150,7 @@ const phone = PAGE_PHONES.default;
 <script>
   import { rememberSidebarEntry } from '@/scripts/quote-entry';
 
-  // GET PRICING HERE: the largest whole-pixel size that keeps it on one line
+  // The header text: the largest whole-pixel size that keeps it on one line
   // inside the bar's content width (26px minimum; 40px cap for the wide
   // in-article copy on tablets); re-fit when the bar resizes.
   const fitTitle = (text: HTMLElement) => {
@@ -158,9 +158,14 @@ const phone = PAGE_PHONES.default;
     if (!bar || !bar.clientWidth) return;
     const cs = getComputedStyle(bar);
     const avail = bar.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    // No transition while measuring: the reduced-motion rule in global.css gives
+    // every element a (0.01ms) transition, which would delay the trial size and
+    // make the header too large for its bar.
+    text.style.setProperty('transition', 'none', 'important');
     text.style.fontSize = '100px';
     const w = text.scrollWidth;
     text.style.fontSize = `${Math.min(40, Math.max(26, Math.floor((100 * avail) / w)))}px`;
+    text.style.removeProperty('transition');
   };
   const titles = [...document.querySelectorAll<HTMLElement>('[data-gp-title]')];
   const refit = () => titles.forEach(fitTitle);

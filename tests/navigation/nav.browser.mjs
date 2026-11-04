@@ -122,7 +122,7 @@ await test('desktop: phone contact unchanged (label, icon, website number)', asy
   await p.context().close();
 });
 // One-row desktop header (Randy, V3.1): logo, categories, phone contact,
-// centered on one line; no GET A QUOTE button; the logo stays prominent.
+// centered on one line; no SEE PRICES NOW menu button; the logo stays prominent.
 for (const width of [1200, 1280, 1440, 1920]) {
   await test(`desktop ${width}: one-row header, prominent logo, no header quote button`, async () => {
     const p = await page('/about/', { width });
@@ -145,7 +145,7 @@ for (const width of [1200, 1280, 1440, 1920]) {
     assert.ok(Math.max(...m.mids) - Math.min(...m.mids) <= 2, `not vertically centered: ${m.mids.map(Math.round)}`);
     assert.equal(new Set(m.tops).size, 1, 'categories not on one row');
     assert.ok(m.order, 'logo, categories, phone are not in that order');
-    assert.ok(!m.quote, 'GET A QUOTE still in the desktop header');
+    assert.ok(!m.quote, 'SEE PRICES NOW menu button still in the desktop header');
     assert.ok(!m.toggle, 'Menu button shown on desktop');
     await p.context().close();
   });
@@ -159,16 +159,19 @@ for (const width of [768, 1024, 1199]) {
     assert.match((await contact.innerText()).replace(/\s+/g, ' '), /^Speak With a Licensed Agent 888-862-9456$/);
     assert.ok(await visible(p, 'header [data-header-phone] .nav__phone-icon'));
     await p.click('.nav__toggle');
-    assert.ok(await visible(p, '#site-menu .nav__quote'), 'menu lost GET A QUOTE');
+    assert.ok(await visible(p, '#site-menu .nav__quote'), 'menu lost SEE PRICES NOW');
+    assert.equal((await p.innerText('#site-menu .nav__quote')).trim(), 'SEE PRICES NOW');
+    assert.equal(await p.getAttribute('#site-menu .nav__quote', 'href'), '/free-quote/');
     assert.ok(await noHScroll(p));
     await p.context().close();
   });
 }
-await test('phone 375: header shows logo and Menu; the menu has GET A QUOTE and the number', async () => {
+await test('phone 375: header shows logo and Menu; the menu has SEE PRICES NOW and the number', async () => {
   const p = await page('/about/', { width: 375 });
   assert.ok(!(await p.locator('header [data-header-phone]').isVisible()));
   await p.click('.nav__toggle');
   assert.ok(await visible(p, '#site-menu .nav__quote'));
+  assert.equal((await p.innerText('#site-menu .nav__quote')).trim(), 'SEE PRICES NOW');
   assert.equal(await p.getAttribute('#site-menu .nav__menu-phone', 'href'), 'tel:8888629456');
   assert.ok(await visible(p, '#site-menu .nav__menu-phone'));
   await p.context().close();

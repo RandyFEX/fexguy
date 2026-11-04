@@ -96,7 +96,7 @@ export const site: SiteConfig = {
   ],
   defaultOgImage: '',
   primaryNav: [
-    { label: 'GET A QUOTE', href: '/free-quote/' },
+    { label: 'SEE PRICES NOW', href: '/free-quote/' },
     {
       label: 'RESOURCES',
       href: '#',
@@ -301,7 +301,7 @@ export const site: SiteConfig = {
       ],
     },
   ],
-  quoteLink: { label: 'GET A QUOTE', href: '/free-quote/' },
+  quoteLink: { label: 'SEE PRICES NOW', href: '/free-quote/' },
   footer: {
     columns: [
       '<p><strong>Mailing Address</strong><br>2300 Olympia Drive #270179<br>Flower Mound, TX 75027</p>',
