@@ -380,6 +380,7 @@ if (root) {
   const DEFAULT_LABELS = Array.from(cards.values()).map((el) => el.querySelector('.qf-card__label')!.textContent ?? '');
   const resultsTitle = $('[data-qf-results-title]');
   const resultsSub = $('[data-qf-results-sub]');
+  const resultsLead = $('[data-qf-results-lead]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
   const blurred = (text: string) => {
@@ -415,9 +416,10 @@ if (root) {
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
     unlockPanel.hidden = false;
-    // "Your Insurance Quotes" appears only after verification.
+    // The results headline and its supporting line appear only after verification.
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
+    resultsLead.hidden = true;
     resultsSub.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
@@ -571,8 +573,9 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Your Insurance Quotes';
+    resultsTitle.textContent = 'You May Qualify for Even Lower Rates Than Shown Below!';
     resultsTitle.classList.remove('visually-hidden');
+    resultsLead.hidden = false;
     resultsSub.hidden = false;
     fillAdjust(quote);
     show(8, false);

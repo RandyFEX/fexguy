@@ -94,7 +94,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       prices: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent.trim()),
       banner: document.querySelector('[data-qf-test]').getClientRects().length > 0,
     }));
-    assert(r.title === 'Your Insurance Quotes' && r.sub === 'Here Are 3 of Your 30+ Insurance Company Options' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
+    assert(r.title === 'You May Qualify for Even Lower Rates Than Shown Below!' && r.sub === 'Here Are 3 of Your 30+ Insurance Company Options' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
     assert((await priceStatus(page)) === 200, 'no prices after the code');
     if (OUT) await page.screenshot({ path: `${OUT}/temp-${name}-revealed.png` });
     return r.prices.join(', ');
