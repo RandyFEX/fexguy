@@ -130,6 +130,50 @@ test('temporary code: a lead labeled TEST is never an advertising conversion; a 
   }
 });
 
+test('Agent CRM: the saved lead creates or updates its contact (upsert, tag, note) once; a failure never blocks the visitor', async () => {
+  const PO = { origin: 'https://funeralfunds.com' };
+  const calls = [];
+  const okFetch = async (url, init) => {
+    const u = String(url);
+    calls.push({ url: u, headers: init.headers, body: JSON.parse(init.body) });
+    if (u.endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'c123' } });
+    return Response.json({ ok: true }, { status: 201 });
+  };
+  const env = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on', AGENT_CRM_TOKEN: 'pit-test-token', AGENT_CRM_LOCATION_ID: 'loc123' };
+  const c = client(env, { fetchImpl: okFetch });
+  const start = await c.call(startBody({ firstName: 'TEST Mary Ann Smith', consent: true, source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
+  assert.equal(start.http, 200);
+  assert.deepEqual(calls.map((x) => x.url), ['https://services.leadconnectorhq.com/contacts/upsert', 'https://services.leadconnectorhq.com/contacts/c123/tags', 'https://services.leadconnectorhq.com/contacts/c123/notes']);
+  assert.equal(calls[0].headers.authorization, 'Bearer pit-test-token');
+  assert.equal(calls[0].headers.version, '2021-07-28');
+  assert.deepEqual(calls[0].body, { locationId: 'loc123', firstName: 'TEST', lastName: 'Mary Ann Smith', phone: (await c.store.getLead(start.body.lead)).phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
+  assert.deepEqual(calls[1].body, { tags: ['Funeral Funds - Website Quote'] });
+  const note = calls[2].body.body;
+  for (const line of ['TEST LEAD', `Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Consent to calls/texts: Yes', 'not SMS-verified (temporary access code)'])
+    assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
+  assert.ok(!note.includes('pit-test-token'));
+  const ev = (await c.store.events(start.body.lead)).find((e) => e.type === 'crm-delivered');
+  assert.equal(ev?.contactId, 'c123');
+  // A contact without a last name sends no empty lastName (never blanks a CRM field).
+  calls.length = 0;
+  await client(env, { fetchImpl: okFetch }).call(startBody({ firstName: 'Mary' }), PO);
+  assert.equal('lastName' in calls[0].body, false);
+  // CRM down: the visitor still gets the code step; the failure is logged on the lead for a resend.
+  const down = client(env, { fetchImpl: async () => { throw new TypeError('fetch failed'); } });
+  const s2 = await down.call(startBody(), PO);
+  assert.equal(s2.http, 200);
+  assert.ok((await down.store.events(s2.body.lead)).some((e) => e.type === 'crm-delivery-failed'));
+  const refused = client(env, { fetchImpl: async () => Response.json({ message: 'Unauthorized' }, { status: 401 }) });
+  const s3 = await refused.call(startBody(), PO);
+  assert.equal(s3.http, 200);
+  assert.ok((await refused.store.events(s3.body.lead)).some((e) => e.type === 'crm-delivery-failed' && e.status === 401));
+  // Not configured, or preview test mode: nothing is sent.
+  const none = [];
+  await client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } }).call(startBody(), PO);
+  await client({ ...PREVIEW, AGENT_CRM_TOKEN: 't', AGENT_CRM_LOCATION_ID: 'l' }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } }).call(startBody());
+  assert.deepEqual(none, []);
+});
+
 test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
   const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
