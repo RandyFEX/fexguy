@@ -723,6 +723,28 @@ await check('SMS: Text Me My Access Code works with the contact-step number (390
   await page.click('[data-qf-send]');
   await page.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
   await ctx.close();
+  // A phone's curly apostrophe in the name (O’Neil) is accepted; a name the server refuses
+  // returns to the contact step at the name field with the answers kept.
+  const c3 = await browser.newContext({ ...devices['iPhone 13'], extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+  const p3 = await c3.newPage();
+  let refuseName = true;
+  await p3.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    if (req.action === 'start' && refuseName) { refuseName = false; return route.fulfill({ status: 400, json: { status: 'bad-request', field: 'name', message: 'Please enter your name.' } }); }
+    return route.fulfill({ response: await route.fetch() });
+  });
+  await p3.goto(URL_);
+  await walk(p3, '214-837-9305', 'Pat O\u2019Neil');
+  await p3.waitForSelector('[data-qf-send]:not([hidden])');
+  await p3.click('[data-qf-send]');
+  await p3.waitForSelector('#qf-first', { state: 'visible', timeout: 5000 });
+  const kept = await p3.evaluate(() => ({ name: document.querySelector('#qf-first').value, phone: document.querySelector('#qf-phone').value, err: document.querySelector('#qf-first-error').textContent, focus: document.activeElement?.id }));
+  assert(kept.name === 'Pat O\u2019Neil' && kept.phone === '214-837-9305' && kept.err === 'Please enter your name.' && kept.focus === 'qf-first', `name recovery ${JSON.stringify(kept)}`);
+  await p3.click('[data-qf-contact] button[type="submit"]');
+  await p3.waitForSelector('[data-qf-send]:not([hidden])');
+  await p3.click('[data-qf-send]');
+  await p3.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+  await c3.close();
 });
 // Verified quote lead (Randy, November 2026): GA4 generate_lead + Meta Lead once, at a real SMS
 // verification. The test server runs in test mode (never a lead), so the real-verification case

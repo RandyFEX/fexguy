@@ -54,8 +54,9 @@ const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSou
 const ENTRY_LABELS = { 'article-sidebar': 'Article sidebar', direct: 'Direct funnel entry', campaign: 'Campaign' };
 /** Intended use (lead information only; never a pricing input). */
 export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
-// v4.5: one "Your Name" field: a first name alone or a full name.
-const NAME_RE = /^[\p{L}][\p{L}\p{M} .'-]{0,59}$/u;
+// v4.5: one "Your Name" field: a first name alone or a full name. The curly
+// apostrophe (U+2019) is accepted too: phones type it automatically (O’Neil).
+const NAME_RE = /^[\p{L}][\p{L}\p{M} .'\u2019-]{0,59}$/u;
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
 function json(status, body, headers = {}) {
@@ -127,7 +128,7 @@ export async function handleQuote(request, env, deps) {
       const phone = toE164US(body.phone);
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
-      if (!firstName || !NAME_RE.test(firstName)) return bad('Please enter your name.');
+      if (!firstName || !NAME_RE.test(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your name.' });
       if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;

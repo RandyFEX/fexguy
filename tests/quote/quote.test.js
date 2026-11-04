@@ -517,14 +517,18 @@ test('Call to Get Approved tap (v3.7): verified session only, server price and o
 });
 
 test('one "Your Name" field (v4.5): a first name or a full name is accepted and stored as typed; nothing else is required', async () => {
-  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith"]) {
+  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil']) {
     const c = client(PREVIEW);
     const r = await c.call(startBody({ firstName: name }));
     assert.equal(r.http, 200, name);
     assert.equal((await c.store.getLead(r.body.lead)).firstName, name);
   }
   assert.equal((await client(PREVIEW).call(startBody({ firstName: 'x'.repeat(61) }))).http, 200, 'over-long names are trimmed, not refused');
-  assert.equal((await client(PREVIEW).call(startBody({ firstName: '' }))).http, 400);
+  const refused = await client(PREVIEW).call(startBody({ firstName: '' }));
+  assert.equal(refused.http, 400);
+  assert.equal(refused.body.field, 'name', 'the page reopens the name field');
+  const badPhone = await client(PREVIEW).call(startBody({ phone: '214-555-0123' }));
+  assert.equal(badPhone.body.field, 'phone', 'the page reopens the phone field');
 });
 
 test('v5.8: the article-sidebar entry is stored with the lead and is saved with the lead', async () => {

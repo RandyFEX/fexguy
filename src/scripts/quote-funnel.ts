@@ -311,6 +311,13 @@ if (root) {
         setStatus(sendStatus, '');
         return editPhone();
       }
+      // A name the server refuses: back to the contact step, answers kept, at the name field.
+      if (body.field === 'name') {
+        setStatus(sendStatus, '');
+        show(7);
+        fieldError(firstInput, body.message ?? 'Please enter your name.');
+        return firstInput.focus();
+      }
       setStatus(sendStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
       sendStatus.focus();
       return;
