@@ -155,7 +155,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
           bg: cs.backgroundColor, fg: cs.color, callBelow: cr.top > f.bottom, callH: cr.height, callFull: Math.abs(cr.width - (body.width - 2 * parseFloat(getComputedStyle(b.querySelector('.gp__body')).paddingLeft))) < 2,
           prev: prev?.tagName ?? null, next: next?.tagName ?? null };
       });
-      assert(t.title === 'Get Pricing' && t.q === 'Who Needs Coverage?' && t.links.join() === 'Male,Female', JSON.stringify(t));
+      assert(t.title === 'GET PRICING HERE' && t.q === 'Who Needs Coverage?' && t.links.join() === 'Male,Female', JSON.stringify(t));
       assert(name === 'desktop' ? t.stacked : t.sideBySide, `layout ${JSON.stringify(t)}`);
       assert(t.talk === 'Prefer to talk directly?' && t.callText === 'CALL NOW 888-862-9456' && t.href === 'tel:8888629456' && t.icon && t.bg === 'rgb(194, 65, 12)' && t.fg === 'rgb(255, 255, 255)' && t.callBelow && t.callH >= 44, `call button ${JSON.stringify(t)}`);
       if (name === 'mobile') assert(t.callFull && t.next === 'H2' && t.prev !== 'H2', `phone placement ${JSON.stringify(t)}`);
