@@ -37,8 +37,9 @@ import { faqs } from '@/lib/home/content';
 </section>
 
 <style>
+  /* V1.0 cleanup: no gold rule above the heading, tighter padding. */
   .faq {
-    padding-block: var(--space-12);
+    padding-block: 2.5rem;
     background: var(--color-bg);
   }
   .faq__grid {
@@ -51,14 +52,6 @@ import { faqs } from '@/lib/home/content';
     line-height: 1.15;
     letter-spacing: -0.01em;
     color: var(--color-text);
-  }
-  .faq__title::before {
-    content: '';
-    display: block;
-    width: 3.5rem;
-    height: 3px;
-    margin-bottom: var(--space-4);
-    background: var(--home-gold);
   }
   .faq__text {
     margin: 0;
@@ -141,7 +134,7 @@ import { faqs } from '@/lib/home/content';
      two. */
   @media (min-width: 64rem) {
     .faq {
-      padding-block: 4.5rem;
+      padding-block: 3.5rem;
     }
     .faq__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));

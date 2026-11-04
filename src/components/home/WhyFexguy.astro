@@ -31,8 +31,11 @@ import { whyPoints } from '@/lib/home/content';
 </section>
 
 <style>
+  /* Homepage visual cleanup V1.0 (Randy, November 2026): no gold rule above
+     the heading and less space under the hero, so the broker message sits
+     higher. */
   .why {
-    padding-block: var(--space-12);
+    padding-block: var(--space-8) var(--space-12);
     background: var(--home-cream);
   }
   .why__title {
@@ -47,15 +50,6 @@ import { whyPoints } from '@/lib/home/content';
   /* Lines break only between the three sentences, never inside one. */
   .why__phrase {
     white-space: nowrap;
-  }
-  /* Short gold rule above the heading (the only gold). */
-  .why__title::before {
-    content: '';
-    display: block;
-    width: 3.5rem;
-    height: 3px;
-    margin: 0 auto var(--space-6);
-    background: var(--home-gold);
   }
   .why__list {
     list-style: none;
@@ -116,7 +110,7 @@ import { whyPoints } from '@/lib/home/content';
   }
   @media (min-width: 64rem) {
     .why {
-      padding-block: 4.5rem;
+      padding-block: var(--space-12) 4.5rem;
     }
     .why__title {
       margin-bottom: var(--space-12);

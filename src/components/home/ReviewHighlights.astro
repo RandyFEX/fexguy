@@ -50,25 +50,18 @@ const featured = featuredReviewPositions.map((pos) => {
 
 <style>
   .rev {
-    padding-block: var(--space-12);
+    padding-block: 2.5rem;
     background: var(--home-stone);
   }
-  /* Same heading scale and gold rule as the sections above. */
+  /* Same heading scale as the sections above; no gold rule above it (V1.0
+     cleanup). The gold rule under the review count stays. */
   .rev__title {
-    margin: 0 auto var(--space-8);
+    margin: 0 auto var(--space-6);
     text-align: center;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
     color: var(--color-text);
-  }
-  .rev__title::before {
-    content: '';
-    display: block;
-    width: 3.5rem;
-    height: 3px;
-    margin: 0 auto var(--space-6);
-    background: var(--home-gold);
   }
   .rev__grid {
     display: grid;
@@ -170,10 +163,10 @@ const featured = featuredReviewPositions.map((pos) => {
      3-column service grid above; the reviews span the other two. */
   @media (min-width: 64rem) {
     .rev {
-      padding-block: 4.5rem;
+      padding-block: 3.5rem;
     }
     .rev__title {
-      margin-bottom: var(--space-12);
+      margin-bottom: var(--space-8);
     }
     .rev__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
