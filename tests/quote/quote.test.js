@@ -284,7 +284,8 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   assert.equal(ok.body.leadVerified, false, 'preview test mode never counts a lead');
   assert.equal(ok.body.leadConversion, false, 'preview test mode never counts a lead');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
-  assert.doesNotMatch(ok.setCookie, /Max-Age/, 'a browser-session cookie, not a persistent one');
+  assert.match(ok.setCookie, /Max-Age=43200;/, '12-hour quote access from the unlock');
+  assert.equal(typeof ok.body.expiresAt, 'number');
   assert.equal((await c.price()).http, 200, 'verified session gets prices');
   // Tampered payload (another lead id) fails the signature.
   const [body, mac] = c.cookie.split('=')[1].split('.');
@@ -294,6 +295,25 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   // Expired (past the session lifetime).
   const later = client(PREVIEW, { now: () => Date.now() + SESSION_MS + 1000 });
   assert.equal((await later.price(undefined, { cookieValue: c.cookie })).http, 401);
+});
+
+test('12-hour quote access: fixed from the original unlock; returning never restarts the clock; then the quote starts again', async () => {
+  let t = Date.now();
+  const c = client(PREVIEW, { now: () => t });
+  const start = await c.call(startBody());
+  const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const unlockAt = t;
+  assert.equal(ok.body.expiresAt, unlockAt + SESSION_MS);
+  t = unlockAt + 6 * 3600 * 1000;
+  const mid = await c.call({ action: 'session' });
+  assert.equal(mid.body.status, 'verified');
+  assert.equal(mid.body.expiresAt, unlockAt + SESSION_MS, 'returning does not restart the clock');
+  assert.equal(mid.setCookie ?? null, null, 'no new cookie on return');
+  t = unlockAt + SESSION_MS - 60 * 1000;
+  assert.equal((await c.call({ action: 'session' })).body.status, 'verified', 'still open just before 12 hours');
+  t = unlockAt + SESSION_MS + 1000;
+  assert.equal((await c.call({ action: 'session' })).body.status, 'not-verified', 'expired after 12 hours');
+  assert.ok(await c.store.getLead(start.body.lead), 'the lead record is kept');
 });
 
 test('free repricing after verification needs no new code', async () => {

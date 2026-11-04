@@ -28,7 +28,7 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 const priceStatus = (page) =>
-  page.evaluate(async () => (await fetch('/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': sessionStorage.getItem('ff:quote-visit') ?? 'none-visit-00000000' }, body: JSON.stringify({ age: 60, gender: 'male', tobacco: false, coverage: 10000 }) })).status);
+  page.evaluate(async () => (await fetch('/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': localStorage.getItem('ff:quote-visit') ?? 'none-visit-00000000' }, body: JSON.stringify({ age: 60, gender: 'male', tobacco: false, coverage: 10000 }) })).status);
 const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -109,14 +109,15 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     return r.prices.join(', ');
   });
 
-  await check(`${name}: the code opens nothing for another visitor (new tab, no request of its own)`, async () => {
-    const other = await ctx.newPage();
+  await check(`${name}: the code opens nothing for another visitor (another browser, no request of its own)`, async () => {
+    const otherCtx = await browser.newContext(opts);
+    const other = await otherCtx.newPage();
     await other.goto(URL_);
     await other.waitForSelector('[data-step="1"]:not([hidden])');
     assert((await priceStatus(other)) === 401, 'another tab got prices');
-    const s = await other.evaluate(async () => (await (await fetch('/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': sessionStorage.getItem('ff:quote-visit') }, body: JSON.stringify({ action: 'check', lead: '00000000-0000-0000-0000-000000000000', code: '123456' }) })).json()).status);
+    const s = await other.evaluate(async () => (await (await fetch('/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': localStorage.getItem('ff:quote-visit') }, body: JSON.stringify({ action: 'check', lead: '00000000-0000-0000-0000-000000000000', code: '123456' }) })).json()).status);
     assert(s === 'expired', `check without a request: ${s}`);
-    await other.close();
+    await otherCtx.close();
   });
   await ctx.close();
 }

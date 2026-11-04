@@ -268,7 +268,7 @@ export async function handleQuote(request, env, deps) {
       // lead: the pending code is dropped above, so a repeat check is refused.
       const leadVerified = record.verification.status === 'approved' && !test;
       const leadConversion = leadVerified || (publicTest && !/^\s*test\b/i.test(record.firstName ?? ''));
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified, leadConversion }, { 'Set-Cookie': cookie });
+      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified, leadConversion, expiresAt: exp }, { 'Set-Cookie': cookie });
     }
 
     case 'session': {
@@ -276,7 +276,7 @@ export async function handleQuote(request, env, deps) {
       if (!v) return json(200, { status: 'not-verified', ...temp });
       const record = await store.getLead(v.leadId);
       if (!record) return json(200, { status: 'not-verified', ...temp });
-      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' });
+      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test', expiresAt: v.exp });
     }
 
     case 'apply': {
