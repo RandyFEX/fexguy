@@ -676,6 +676,54 @@ await check('/facebook/ phone by source: direct visit main number and no Lead; u
   await p3.context().close();
 });
 
+// SMS regression (Randy, November 2026): the page and the server use one phone check, so a number
+// accepted on the contact step is never refused at Text Me My Access Code; autofill punctuation works;
+// a refused number opens the number field. Full journey at 390px and 1440px.
+await check('SMS: Text Me My Access Code works with the contact-step number (390px and 1440px), refused numbers stay correctable, returning visitor keeps prices', async () => {
+  const sizes = [['390', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }, '214\u2011837\u20119301'], ['1440', { viewport: { width: 1440, height: 900 } }, '\u202a(214) 837-9302\u202c']];
+  // Own client address per visitor, so this test stays under the per-IP code limit (5 an hour).
+  let ip = 10;
+  for (const [w, opts, typed] of sizes) {
+    const ctx = await browser.newContext({ ...opts, extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+    const page = await ctx.newPage();
+    await page.goto(URL_);
+    // A number the server would refuse is caught on the contact step, with its field.
+    await walk(page, '214-555-0123', 'Sms Test');
+    assert(await page.isVisible('#qf-phone') && /10-digit/.test(await page.textContent('#qf-phone-error')), `${w}: refused number not caught on the contact step`);
+    await page.fill('#qf-phone', typed);
+    await page.click('[data-qf-contact] button[type="submit"]');
+    await page.waitForSelector('[data-qf-send]:not([hidden])');
+    await page.click('[data-qf-send]');
+    await page.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+    assert(!(await page.textContent('[data-qf-send-status]')).trim(), `${w}: send error`);
+    await page.fill('#qf-code', '123456');
+    await page.click('[data-qf-verify-btn]');
+    await page.waitForFunction(() => ['lowest-preferred', 'average-standard', 'guaranteed-acceptance'].every((c) => document.querySelector(`[data-qf-card="${c}"]`)?.getAttribute('data-state') === 'ok'), null, { timeout: 8000 });
+    // Returning visitor (reload): prices stay unlocked, no new code needed.
+    await page.reload();
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    await ctx.close();
+  }
+  // If the server still refuses the number, the field opens so it can be corrected (no dead end).
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
+  const page = await ctx.newPage();
+  let refuse = true;
+  await page.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    if (req.action === 'start' && refuse) { refuse = false; return route.fulfill({ status: 400, json: { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' } }); }
+    return route.fulfill({ response: await route.fetch() });
+  });
+  await page.goto(URL_);
+  await walk(page, '214-837-9303', 'Sms Test');
+  await page.waitForSelector('[data-qf-send]:not([hidden])');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('#qf-unlock-phone', { state: 'visible', timeout: 5000 });
+  assert(/10-digit/.test(await page.textContent('#qf-unlock-phone-error')), 'refusal not shown at the field');
+  await page.fill('#qf-unlock-phone', '214-837-9304');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
+  await ctx.close();
+});
 // Verified quote lead (Randy, November 2026): GA4 generate_lead + Meta Lead once, at a real SMS
 // verification. The test server runs in test mode (never a lead), so the real-verification case
 // marks the check response as the server does after a Twilio 'approved' check.

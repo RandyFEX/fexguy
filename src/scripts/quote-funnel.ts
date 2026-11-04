@@ -17,6 +17,7 @@ import { lead } from '@/config/lead';
 import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 import { saveHandoff } from '@/scripts/quote-handoff';
+import { toE164US } from '../../server/quote/phone.js';
 
 // The session's traffic source (first landing, UTM, ad click) is kept for
 // /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
@@ -202,7 +203,8 @@ if (root) {
     el.textContent = text;
     el.classList.toggle('is-error', isError);
   };
-  const phoneOk = (v: string) => /^[2-9]\d{9}$/.test(v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, ''));
+  // The server's own check (server/quote/phone.js), so a number accepted here is never refused there.
+  const phoneOk = (v: string) => toE164US(v) !== null;
   const quoteReady = (): Quote | null =>
     answers.gender && answers.age && typeof answers.tobacco === 'boolean' && answers.coverage
       ? { age: answers.age, gender: answers.gender, tobacco: answers.tobacco, coverage: answers.coverage }
@@ -303,6 +305,12 @@ if (root) {
     });
     sendBtn.disabled = false;
     if (http !== 200 || body.status !== 'sent') {
+      // A number the server refuses: show the field so it can be corrected here.
+      if (body.field === 'phone') {
+        fieldError(unlockPhone, body.message ?? 'Please enter a 10-digit US mobile number.');
+        setStatus(sendStatus, '');
+        return editPhone();
+      }
       setStatus(sendStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
       sendStatus.focus();
       return;

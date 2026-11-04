@@ -92,6 +92,11 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
   assert.equal(toE164US('214-867-5309'), '+12148675309');
   assert.equal(toE164US('+1 214 867 5309'), '+12148675309');
   assert.equal(toE164US('12148675309'), '+12148675309');
+  // Autofill/paste punctuation (non-breaking hyphens, invisible marks, slashes) is ignored, as on the page.
+  assert.equal(toE164US('214\u2011867\u20115309'), '+12148675309');
+  assert.equal(toE164US('\u202a(214) 867-5309\u202c'), '+12148675309');
+  assert.equal(toE164US('214/867/5309'), '+12148675309');
+  assert.equal(toE164US('214-867-5309 ext 2'), null);
   for (const bad of ['888-862-9456', '900-555-0000', '411-555-1234', '214-411-1234', '555-867-5309', '+44 20 7946 0958', '123', '', null, 'abc', '014-867-5309'])
     assert.equal(toE164US(bad), null, String(bad));
 });

@@ -128,7 +128,7 @@ export async function handleQuote(request, env, deps) {
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
       if (!firstName || !NAME_RE.test(firstName)) return bad('Please enter your name.');
-      if (!phone) return bad('Please enter a valid 10-digit US mobile number.');
+      if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
       if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
