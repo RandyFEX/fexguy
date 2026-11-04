@@ -182,7 +182,7 @@ for (const [source, dest] of redirects) {
 // ---- Content guards --------------------------------------------------------------
 const GUARDS = [
   ['TV/streaming ad number 888-656-4648', /888[\s.\-)]*656[\s.\-]*4648|8886564648/],
-  ['retired Meta Pixel ID', /1757709920950272|422716154769594/],
+  ['retired Meta Pixel ID', /422716154769594/],
   ['third-party video embed', /youtube(?:-nocookie)?\.com\/embed|player\.vimeo\.com|adilo\.|bigcommand\.com/i],
   ['Funeral Funds social link', /facebook\.com\/funeralfunds|youtube\.com\/(?:c\/|@)funeralfunds|linkedin\.com\/company\/funeral-funds/i],
   ['FEXGuy or Funeral Funds email address', /[a-z0-9._%+-]+@(?:www\.)?(?:fexguy|funeralfunds)\.com|mailto:[^"]*(?:fexguy|funeralfunds)/i],
@@ -206,7 +206,7 @@ let metaFound = false;
 for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f.includes('/pagefind/'))) {
   const text = readFileSync(file, 'utf8');
   if (text.includes('G-JMYZE458HQ')) ga4Found = true;
-  if (text.includes('2351342698972751')) metaFound = true;
+  if (text.includes('1757709920950272')) metaFound = true;
   for (const [label, re] of GUARDS) {
     // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/.
     if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html'].includes(file.slice(DIST.length))) continue;
@@ -318,7 +318,7 @@ for (const file of walk(DIST).filter((f) => f.endsWith('.html') && !f.includes('
 
 const guardProblems = Object.entries(guardHits).map(([label, files]) => `${label}: ${files.slice(0, 5).join(' ')}${files.length > 5 ? ` (+${files.length - 5} more)` : ''}`);
 if (!ga4Found) guardProblems.push('GA4 measurement ID G-JMYZE458HQ not found in the build');
-if (!metaFound) guardProblems.push('Meta Pixel ID 2351342698972751 not found in the build');
+if (!metaFound) guardProblems.push('Meta Pixel ID 1757709920950272 not found in the build');
 if (emDashHits.length) guardProblems.push(`em dash (${emDashHits.length}): ${EM_DASH_MESSAGE}`);
 if (visibleDashHits.length) guardProblems.push(`en/em dash in visible copy (${visibleDashHits.length}): rewrite with "to", a comma, colon or period (verbatim sources: src/config/dash-exceptions.json)`);
 // Not a failure before launch: the legal pages' effective dates are set to the

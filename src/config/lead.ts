@@ -48,7 +48,7 @@ export const lead = {
   tracking: {
     ga4Id: 'G-JMYZE458HQ',
     /** Meta dataset/pixel "FEXGuy Website". */
-    metaPixelId: '2351342698972751',
+    metaPixelId: '1757709920950272',
     /** Tracking runs only on these hostnames. Everywhere else (local dev,
      * Vercel previews) events are logged to the console instead. */
     productionHosts: ['funeralfunds.com', 'www.funeralfunds.com'],
