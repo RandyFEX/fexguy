@@ -354,11 +354,12 @@ if (root) {
       return;
     }
     track('quote_sms_verified');
-    // Verified quote lead (Randy, November 2026): the conversion (GA4
+    // Completed quote lead (Randy, November 2026): the conversion (GA4
     // generate_lead, Meta Lead) is counted once, by tracking.ts, when the
-    // server reports a real SMS verification; never for a code request,
-    // Apply Now, /facebook/, a resumed session or test/temporary-code mode.
-    if (body.leadVerified === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
+    // server reports leadConversion (a real SMS verification, or the
+    // temporary code accepted for a saved lead not labeled TEST); never for a
+    // code request, Apply Now, /facebook/, a resumed session or preview test mode.
+    if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(8);
     setStatus(verifyStatus, '');
     unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
@@ -761,6 +762,8 @@ if (root) {
     const { http, body } = await api({ action: 'session' });
     temporaryCode(body.temporaryCodeNote);
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
-    if (!preselect) show(1, false);
+    // Only if the visitor hasn't already answered (an answer given while this
+    // check was loading must not send them back to the first question).
+    if (!preselect && current === 1) show(1, false);
   })();
 }

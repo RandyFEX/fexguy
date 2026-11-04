@@ -247,9 +247,15 @@ export async function handleQuote(request, env, deps) {
       await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
       const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
       // leadVerified: this check just marked the record SMS-verified (Twilio
-      // 'approved'). Never in test or temporary-code mode, and only once per
+      // 'approved'); never in test or temporary-code mode.
+      // leadConversion (Randy, November 2026): the completed lead counts as an
+      // advertising lead (GA4 generate_lead, Meta Lead): SMS-verified, or the
+      // temporary code accepted (phoneVerified stays false) for a saved lead
+      // whose name isn't labeled TEST. Never in preview test mode. Once per
       // lead: the pending code is dropped above, so a repeat check is refused.
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified: record.verification.status === 'approved' && !test }, { 'Set-Cookie': cookie });
+      const leadVerified = record.verification.status === 'approved' && !test;
+      const leadConversion = leadVerified || (publicTest && !/^\s*test\b/i.test(record.firstName ?? ''));
+      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified, leadConversion }, { 'Set-Cookie': cookie });
     }
 
     case 'session': {

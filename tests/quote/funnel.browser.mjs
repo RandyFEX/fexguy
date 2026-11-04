@@ -746,6 +746,28 @@ await check('SMS: Text Me My Access Code works with the contact-step number (390
   await p3.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
   await c3.close();
 });
+// First-question race (Randy, November 2026): an answer given while the page's session check is
+// still loading must not be undone when the check returns.
+await check('immediate first answer while the session check loads is kept (390px and 1440px)', async () => {
+  for (const opts of [{ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }, { viewport: { width: 1440, height: 900 } }]) {
+    const ctx = await browser.newContext(opts);
+    const page = await ctx.newPage();
+    await page.route(/\/api\/quote\/$/, async (route) => {
+      const req = JSON.parse(route.request().postData() || '{}');
+      if (req.action === 'session') await new Promise((r) => setTimeout(r, 1500));
+      return route.fulfill({ response: await route.fetch() });
+    });
+    await page.goto(URL_, { waitUntil: 'domcontentloaded' });
+    await page.click('[data-pick="gender"][data-value="female"]');
+    await page.waitForSelector('[data-step="2"]:not([hidden])');
+    await page.waitForTimeout(2000);
+    const r = await page.evaluate(() => ({ step2: !document.querySelector('[data-step="2"]').hidden, step1: !document.querySelector('[data-step="1"]').hidden }));
+    assert(r.step2 && !r.step1, `reset to the first question ${JSON.stringify(r)}`);
+    await page.click('[data-pick="age"][data-value="60"]');
+    await page.waitForSelector('[data-step="3"]:not([hidden])');
+    await ctx.close();
+  }
+});
 // Verified quote lead (Randy, November 2026): GA4 generate_lead + Meta Lead once, at a real SMS
 // verification. The test server runs in test mode (never a lead), so the real-verification case
 // marks the check response as the server does after a Twilio 'approved' check.
@@ -760,7 +782,7 @@ await check('verified lead: GA4 generate_lead + Meta Lead once at SMS verificati
     const res = await route.fetch();
     if (req.action !== 'check') return route.fulfill({ response: res });
     const body = await res.json();
-    if (body.status === 'verified') { body.leadVerified = true; body.testMode = false; }
+    if (body.status === 'verified') { body.leadVerified = true; body.leadConversion = true; body.testMode = false; }
     return route.fulfill({ response: res, json: body });
   });
   await page.goto(URL_);
