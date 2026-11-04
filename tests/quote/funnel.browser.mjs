@@ -548,6 +548,16 @@ await check('evidence: verified leads, consent records, intended use, Apply Now 
     );
   return `${recs.length} lead records (${v.length} verified)`;
 });
+await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {
+  const p = await browser.newPage();
+  await p.goto(`${BASE}/`);
+  if ((await p.getAttribute('.hero__btn--primary', 'href')) !== '/free-quote/') throw new Error('hero GET A QUOTE href');
+  await p.click('.hero__btn--primary');
+  await p.waitForURL(/\/free-quote\/$/);
+  await p.waitForSelector('[data-step="1"]:not([hidden])');
+  await p.close();
+});
+
 await check('v6.2: no Formspark, Turnstile or Resend request from the quote funnel (contact, code, prices, Apply Now)', async () => {
   if (forbidden.length) throw new Error(forbidden.join('; '));
 });
