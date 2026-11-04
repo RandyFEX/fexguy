@@ -24,6 +24,7 @@
 import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_VERSIONS, VERIFY_NOTICE_VERSIONS } from './consent.js';
 import { maskPhone, toE164US } from './phone.js';
+import { sendLeadToCrm } from './crm.js';
 import { PUBLIC_TEST_CODE_NOTE, verifyClient } from './twilio.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
@@ -180,7 +181,10 @@ export async function handleQuote(request, env, deps) {
       // The lead is saved before anything else can fail.
       await store.putLead(leadId, record);
       await store.indexPhone(phoneHash, leadId);
-      const sent = await verify.start(phone);
+      // Agent CRM (v1.2): sent after the lead is saved, alongside the code request;
+      // its outcome is logged on the lead and never changes the visitor's response.
+      const [sent, crm] = await Promise.all([verify.start(phone), test ? Promise.resolve({ sent: false }) : sendLeadToCrm(env, record, deps.fetchImpl)]);
+      if (crm.sent) await store.event(leadId, { at: iso, type: crm.ok ? 'crm-delivered' : 'crm-delivery-failed', status: crm.status ?? null, error: crm.error ?? null }).catch(() => {});
       record.verification.startSid = sent.ok ? sent.sid : null;
       if (!sent.ok) record.verification.status = 'send-failed';
       await store.putLead(leadId, record);

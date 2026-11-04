@@ -11,6 +11,7 @@
 //   KV_REST_API_URL / KV_REST_API_TOKEN                  evidence and sessions
 //   QUOTE_SESSION_SECRET (or HEALTH_SEARCH_SECRET)       session signing, hashing
 //   QUOTE_SMS_DAILY_LIMIT (optional, default 300)        global daily SMS cap
+//   AGENT_CRM_WEBHOOK_URL (optional)                     Agent CRM Inbound Webhook (leads)
 
 import { handleQuote } from '../server/quote/handler.js';
 import { quoteStore } from '../server/quote/store.js';

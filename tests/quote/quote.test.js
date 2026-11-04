@@ -130,6 +130,35 @@ test('temporary code: a lead labeled TEST is never an advertising conversion; a 
   }
 });
 
+test('Agent CRM: the saved lead is posted once to AGENT_CRM_WEBHOOK_URL; a failure never blocks the visitor', async () => {
+  const PO = { origin: 'https://funeralfunds.com' };
+  const posts = [];
+  const okFetch = async (url, init) => { posts.push({ url: String(url), body: JSON.parse(init.body) }); return new Response('{}', { status: 200 }); };
+  const env = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on', AGENT_CRM_WEBHOOK_URL: 'https://services.example.test/hooks/abc' };
+  const c = client(env, { fetchImpl: okFetch });
+  const start = await c.call(startBody({ firstName: 'TEST Mary Ann Smith', consent: true, source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
+  assert.equal(start.http, 200);
+  assert.equal(posts.length, 1);
+  const p = posts[0].body;
+  assert.equal(posts[0].url, env.AGENT_CRM_WEBHOOK_URL);
+  assert.deepEqual([p.lead_id, p.first_name, p.last_name, p.state, p.coverage_amount, p.lead_source, p.utm_source, p.phone_verified, p.test_lead, p.consent_given],
+    [start.body.lead, 'TEST', 'Mary Ann Smith', 'Ohio', 10000, 'facebook / paid', 'facebook', 'no', 'yes', 'yes']);
+  assert.match(p.phone, /^\d{10}$/);
+  assert.equal('estimated_monthly_rate' in p, false, 'empty values are left out');
+  assert.ok((await c.store.events(start.body.lead)).some((e) => e.type === 'crm-delivered'));
+  // CRM down: the visitor still gets the code step; the failure is logged on the lead for a resend.
+  const down = client(env, { fetchImpl: async () => { throw new TypeError('fetch failed'); } });
+  const s2 = await down.call(startBody(), PO);
+  assert.equal(s2.http, 200);
+  assert.ok((await down.store.events(s2.body.lead)).some((e) => e.type === 'crm-delivery-failed'));
+  assert.equal(await down.store.getLead(s2.body.lead).then((r) => r.phone.startsWith('+1')), true, 'lead kept');
+  // Not configured, or preview test mode: nothing is sent.
+  const none = [];
+  await client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' }, { fetchImpl: async (u) => { none.push(u); return new Response('{}'); } }).call(startBody(), PO);
+  await client({ ...PREVIEW, AGENT_CRM_WEBHOOK_URL: env.AGENT_CRM_WEBHOOK_URL }, { fetchImpl: async (u) => { none.push(u); return new Response('{}'); } }).call(startBody());
+  assert.deepEqual(none, []);
+});
+
 test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
   const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
   const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
