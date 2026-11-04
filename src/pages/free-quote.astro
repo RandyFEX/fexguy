@@ -191,7 +191,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <!-- Step 8: the pricing screen (blurred until the phone is verified, then live) -->
         <section class="qf-step qf-results" data-step="8" data-locked="true" aria-labelledby="qf-s8" hidden>
           <h2 class="qf-q visually-hidden" id="qf-s8" tabindex="-1" data-qf-results-title>Your quote results</h2>
-          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check for the lowest rates from 30+ insurance companies.</p>
+          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check your lowest rates from 30+ insurance companies. Offer viewable for: <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
+          <button class="btn qf-btn-cta qf-restart" type="button" data-qf-restart hidden>Start New Quote</button>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
           <div class="qf-cards">
             {cards.map((c, i) => (
@@ -542,8 +543,13 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* Supporting line under the results headline, directly above the cards
      (Randy, November 2026; after verification only): smaller than the
      headline, centered, wraps on phones. */
-  .qf-results-lead { margin: -8px auto 0; max-width: 40rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: balance; }
+  .qf-results-lead { margin: -8px auto 0; max-width: 46rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: pretty; }
   .qf-results-lead[hidden] { display: none; }
+  /* Countdown (V2.0): only the digits are highlighted, in the module's yellow
+     behind dark text (yellow text alone is unreadable on white). */
+  .qf-countdown { display: inline-block; padding: 0 0.3em; border-radius: 0.2em; background: #ffeb3b; color: #0b2e22; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .qf-restart { display: block; margin: var(--space-3) auto 0; }
+  .qf-restart[hidden] { display: none; }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
   .qf-card {
     display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);

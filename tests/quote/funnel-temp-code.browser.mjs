@@ -97,7 +97,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       prices: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent.trim()),
       banner: document.querySelector('[data-qf-test]').getClientRects().length > 0,
     }));
-    assert(r.title === 'Call Funeral Funds for Access to Even Lower Rates!' && r.sub === 'Let us check for the lowest rates from 30+ insurance companies.' && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
+    assert(r.title === 'Call Funeral Funds for Access to Even Lower Rates!' && /^Let us check your lowest rates from 30\+ insurance companies\. Offer viewable for: (10:00|9:5\d)$/.test(r.sub) && r.cards.every((s) => s === 'ok') && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && !r.banner, JSON.stringify(r));
     assert((await priceStatus(page)) === 200, 'no prices after the code');
     // A completed temporary-code lead (not labeled TEST) counts once: GA4 generate_lead + Meta Lead.
     const once = leadLogs();
