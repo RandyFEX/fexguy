@@ -140,10 +140,13 @@ const advantage = [
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
         <h1 class="fb-hero__title" id="fb-title">Ready to Apply for Your Burial Insurance?</h1>
+        <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
+             first time this visit reaches this screen (src/scripts/quote-offer.ts). -->
+        <p class="fb-offer" data-fb-offer hidden>Your offer is available for: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
+        <button class="btn fb-offer__restart" type="button" data-fb-offer-restart hidden>Start New Quote</button>
         <!-- The quote selected on /free-quote/ (Apply Now), shown only with a valid,
              recent handoff (src/scripts/quote-handoff.ts); hidden otherwise. -->
         <div class="fb-quote" data-fb-quote hidden>
-          <p class="fb-quote__title">Your quote will remain active for the next 12 hours.</p>
           <dl class="fb-quote__grid">
             <div><dt>Coverage Amount</dt><dd data-fb-quote-coverage></dd></div>
             <div><dt>Estimated Monthly Rate</dt><dd data-fb-quote-premium></dd></div>
@@ -247,6 +250,7 @@ const advantage = [
 
 <script>
   import { readHandoff } from '@/scripts/quote-handoff';
+  import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
 
@@ -290,6 +294,22 @@ const advantage = [
     coverageOut.textContent = '$' + handoff.selection.coverage.toLocaleString('en-US');
     premiumOut.textContent = '$' + handoff.selection.monthlyPremium;
     quoteBox.hidden = false;
+    // At 0:00 the selected-quote offer expires (its summary is hidden); the
+    // call buttons stay, and Start New Quote begins a fresh quote.
+    const offer = document.querySelector<HTMLElement>('[data-fb-offer]');
+    const time = offer?.querySelector<HTMLElement>('[data-fb-offer-time]');
+    const restart = document.querySelector<HTMLButtonElement>('[data-fb-offer-restart]');
+    if (offer && time && restart) {
+      offer.hidden = false;
+      runCountdown(time, offerExpiresAt('apply'), () => {
+        quoteBox.hidden = true;
+        restart.hidden = false;
+      });
+      restart.addEventListener('click', () => {
+        restart.disabled = true;
+        void restartQuote();
+      });
+    }
   }
 
   // Browsers only scroll a focused field into view when it is outside the
@@ -466,14 +486,6 @@ const advantage = [
   .fb-quote[hidden] {
     display: none;
   }
-  .fb-quote__title {
-    margin: 0 0 var(--space-2);
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #fff;
-    text-align: center;
-  }
   /* v1.3: the two figures are the box's dominant elements (twice their
      former 1.75rem), stacked on phones, side by side from 36rem. */
   .fb-quote__grid {
@@ -506,6 +518,28 @@ const advantage = [
     line-height: 1.35;
     opacity: 0.85;
     text-align: center;
+  }
+  /* Offer countdown (V2.0): one inline line under the headline; only the
+     digits are yellow. */
+  .fb-offer {
+    margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .fb-offer[hidden],
+  .fb-offer__restart[hidden] {
+    display: none;
+  }
+  .fb-offer__time {
+    color: #ffeb3b;
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
+  }
+  .fb-offer__restart {
+    margin: 0 auto var(--space-4);
+    background: #ffffff;
+    color: var(--color-primary);
   }
   .fb-hero__title {
     margin: 0 0 var(--space-4);

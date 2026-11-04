@@ -17,6 +17,7 @@ import { lead } from '@/config/lead';
 import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 import { saveHandoff } from '@/scripts/quote-handoff';
+import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
 import { toE164US } from '../../server/quote/phone.js';
 
 // The session's traffic source (first landing, UTM, ad click) is kept for
@@ -550,6 +551,7 @@ if (root) {
     }
   }
   async function reprice(quote: Quote) {
+    if (expired) return;
     const k = JSON.stringify(quote);
     const hit = cache.get(k);
     if (hit) return render(quote, hit);
@@ -573,7 +575,7 @@ if (root) {
         return;
       }
       cache.set(k, body.categories);
-      render(quote, body.categories);
+      if (!expired) render(quote, body.categories);
     } catch {
       if (mine === seq) for (const el of cards.values()) setCard(el, null, 'unavailable', 'Prices are not available right now.');
     }
@@ -595,6 +597,34 @@ if (root) {
   /** Reveal prices in place (no navigation, no reload). */
   // When this quote access ends (the server's fixed expiry, 12 hours after the unlock).
   let accessExpiresAt = 0;
+  // Results countdown (V2.0): 10:00 from the first time this visit's prices
+  // appear; a refresh or a pricing change keeps the same end time. At 0:00
+  // the prices are hidden (safe stand-ins, as before verification) and
+  // Start New Quote begins a fresh visit.
+  const countdown = $('[data-qf-countdown]');
+  const restart = $<HTMLButtonElement>('[data-qf-restart]');
+  let expired = false;
+  let stopCountdown: (() => void) | null = null;
+  function expireResults() {
+    expired = true;
+    window.clearTimeout(timer);
+    pricing.dataset.expired = 'true';
+    adjust.hidden = true;
+    adjustIntro.hidden = true;
+    refNote.hidden = true;
+    tiers.hidden = true;
+    let i = 0;
+    for (const el of cards.values()) {
+      el.querySelector<HTMLElement>('[data-qf-amount]')!.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">This offer has expired</span>`;
+      el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
+      el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+    }
+    restart.hidden = false;
+  }
+  restart.addEventListener('click', () => {
+    restart.disabled = true;
+    void restartQuote();
+  });
   function unlock(quote: Quote, test: boolean, expiresAt?: unknown) {
     if (typeof expiresAt === 'number') accessExpiresAt = expiresAt;
     unlocked = true;
@@ -608,6 +638,12 @@ if (root) {
     resultsTitle.textContent = 'Call Funeral Funds for Access to Even Lower Rates!';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
+    stopCountdown?.();
+    stopCountdown = runCountdown(countdown, offerExpiresAt('results'), expireResults);
+    if (expired) {
+      show(8, false);
+      return;
+    }
     fillAdjust(quote);
     show(8, false);
     // Stay on the page; bring the top of the results into view.
@@ -716,7 +752,7 @@ if (root) {
   for (const [id, el] of cards) {
     el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.addEventListener('click', async (e) => {
       const btn = e.currentTarget as HTMLButtonElement;
-      if (!shown || !unlocked) return;
+      if (!shown || !unlocked || expired) return;
       const cat = shown.categories.find((c) => c.id === id);
       if (!cat || cat.status !== 'ok') return;
       btn.disabled = true;
