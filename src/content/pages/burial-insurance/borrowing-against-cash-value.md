@@ -225,7 +225,7 @@ sidebar: true
 
 <p>Always take the time to talk with your life insurance agent to understand the ramification of borrowing against life insurance. Never assume that because you have a permanent life insurance policy, you should borrow against it.</p>
 
-<p><strong>Need <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>?</strong> Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance. Fill out the instant <a href="/free-quote/" target="_blank" rel="noreferrer noopener">QUOTE</a> form on this page, and we will give you the best rates available for final expense life insurance.</p>
+<p><strong>Need <a href="/the-importance-of-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a>?</strong> Instead of wasting hours talking to different agents, and answering the same questions repeatedly, let us do the work for you to find affordable burial insurance. Select Male or Female in the Get Pricing box on this page, and we will give you the best rates available for final expense life insurance.</p>
 
 <p><a href="/" target="_blank" rel="noreferrer noopener">Funeral Funds</a> is an independent insurance agency that can shop your application to many companies available. This way, you can be sure that you will get the best carrier that favors your age and health.</p>
 

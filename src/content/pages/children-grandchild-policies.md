@@ -133,7 +133,7 @@ Product details can change and may vary by state, so check the current terms bef
 - Is there an option to buy more coverage later? What are the rules?
 - Which insurance company issues the policy?
 
-Have questions about coverage for yourself or your family? Use the quote form on this page or call me at [888-862-9456](tel:8888629456).
+Have questions about coverage for yourself or your family? Call me at [888-862-9456](tel:8888629456).
 
 ## Frequently asked questions
 

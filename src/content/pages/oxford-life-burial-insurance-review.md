@@ -573,7 +573,7 @@ sidebar: true
 
 <p><br><strong>How can I get an Oxford life insurance quote?</strong></p>
 
-<p>You can get an Oxford life insurance quote by answering the quote form on this page.</p>
+<p>To compare final expense quotes, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>How can I make Oxford insurance online payment?</strong></p>
 
@@ -613,7 +613,7 @@ sidebar: true
 
 <p><br><strong>Where can I get Oxford insurance pricing?</strong></p>
 
-<p>To get Oxford insurance pricing, please answer the quote form on this page.</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Is Oxford an A-rated life insurance company?</strong></p>
 

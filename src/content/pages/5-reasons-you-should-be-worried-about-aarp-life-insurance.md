@@ -154,7 +154,7 @@ sidebar: true
 
 <p>My first goal is to find you a company that will accept your health issues at affordable rates.</p>
 
-<p>I work with over 50 life insurance companies, most of which offer better rates than AARP (New York Life). Fill in our quote form to compare prices from different life insurance companies.</p>
+<p>I work with over 50 life insurance companies, most of which offer better rates than AARP (New York Life). To compare prices from different life insurance companies, select Male or Female in the Get Pricing box on this page.</p>
 
 <h2 class="as-h5">About Funeral Funds</h2>
 

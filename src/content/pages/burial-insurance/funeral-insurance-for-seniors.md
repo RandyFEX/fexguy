@@ -114,7 +114,7 @@ sidebar: true
 
 <p><strong>Portable</strong>: senior final expense life insurance plan is not “locked-in” with any funeral parlor. The insurance company pays in cash, and your beneficiary will receive a tax-free check equivalent to your policy’s face amount; your loved ones have the flexibility to have your funeral service wherever they choose.</p>
 
-<p><strong>Many carriers to choose from</strong>: there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is fill out the quote form on this page to start your search.</p>
+<p><strong>Many carriers to choose from</strong>: there are many insurance companies offering <a href="/finding-affordable-burial-insurance/" target="_blank" rel="noreferrer noopener">burial insurance</a> for seniors in the market today. Everyone has a unique underwriting, so you will surely find one that will accept your health issues. All you have to do is select Male or Female in the Get Pricing box on this page to start your search.</p>
 
 <h2 id="what-does-funeral-insurance-cover"><strong>What does funeral insurance cover?</strong></h2>
 
@@ -157,7 +157,7 @@ sidebar: true
 
 <p>These are monthly premium averages, and your rates may be less.</p>
 
-<p>The funeral life insurance for seniors depends on many factors; thus, providing a fixed rate without any age or health information can be difficult. However, if you want to obtain free insurance quotes from all the different final expense insurance carriers, you can fill up the quotes form on this page to know the exact current rate for this year’s market.</p>
+<p>The funeral life insurance for seniors depends on many factors; thus, providing a fixed rate without any age or health information can be difficult. However, if you want to obtain free insurance quotes from all the different final expense insurance carriers, you can select Male or Female in the Get Pricing box on this page to know the exact current rate for this year’s market.</p>
 
 <h2 id="best-funeral-insurance"><strong>Who provides the best funeral insurance for seniors?</strong></h2>
 

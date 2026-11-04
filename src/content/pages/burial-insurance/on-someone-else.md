@@ -182,7 +182,7 @@ sidebar: true
 <li>Have the consent to review the medical history of the person you want to insure.</li>
 <li>Determine the death benefit amount you want to apply for.</li>
 <li>Identify any medical conditions for the proposed insured.</li>
-<li>Find a life insurance provider by completing the instant QUOTE form on this page.</li>
+<li>Find a life insurance provider by selecting Male or Female in the Get Pricing box on this page.</li>
 <li>Fill out an application for the insured.</li>
 <li>The life insurance company will contact the person you want to insure to verify the information.</li>
 <li>The underwriter at the life insurance company will review the application to assess the overall risk of the insured person.</li>

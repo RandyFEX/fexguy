@@ -334,7 +334,7 @@ sidebar: true
 
 <p>Consider your health condition if you opt to get insurance coverage through the mail. If you are moderately healthy to healthy, or even if you have some minor health issues you will get cheaper burial insurance by calling us and answering a few medical questions.</p>
 
-<p>Use our online quote form to see your best rates and eligibility.</p>
+<p>Select Male or Female in the Get Pricing box on this page to see your best rates and eligibility.</p>
 
 <p><br><strong>THROUGH A BURIAL INSURANCE AGENT</strong></p>
 

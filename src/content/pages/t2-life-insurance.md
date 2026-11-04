@@ -129,7 +129,7 @@ Get the answers in writing, and don't let anyone rush you. D.C.'s DISB gives goo
 
 You don't need a mailer to buy final expense insurance. You can contact a licensed agent or an insurance company yourself.
 
-An independent broker can compare policies from several insurance companies, so you can see more than one option. That's how I work. If you'd like help, use the quote form on this page or call me at [888-862-9456](tel:8888629456).
+An independent broker can compare policies from several insurance companies, so you can see more than one option. That's how I work. If you'd like help, select Male or Female in the Get Pricing box on this page or call me at [888-862-9456](tel:8888629456).
 
 ## How to get less mail like this
 

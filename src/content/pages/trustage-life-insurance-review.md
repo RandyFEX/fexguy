@@ -772,7 +772,7 @@ sidebar: true
 
 <p><br><strong>Where can I get TruStage insurance pricing?</strong></p>
 
-<p>Fill in the quote form to get TruStage insurance pricing.</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Is TruStage insurance expensive?</strong></p>
 

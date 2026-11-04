@@ -659,7 +659,7 @@ financially stable and will be able to pay the claims of its policyholders. </p>
 
 <p><br><strong>How can I get a Baltimore Life insurance quote?</strong></p>
 
-<p>Fill in the quote form to get a free quote.</p>
+<p>Select Male or Female in the Get Pricing box on this page to get a free quote.</p>
 
 <p><br><strong>How can I make Baltimore Life insurance online payment?</strong></p>
 
@@ -711,7 +711,7 @@ financially stable and will be able to pay the claims of its policyholders. </p>
 
 <p><br><strong>Where can I get Baltimore Life insurance pricing?</strong></p>
 
-<p>You can get Baltimore Life insurance pricing by filling out the quote form.</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Is Baltimore Life insurance expensive?</strong></p>
 

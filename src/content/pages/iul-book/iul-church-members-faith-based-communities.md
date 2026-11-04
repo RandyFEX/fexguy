@@ -152,7 +152,7 @@ If your main goal is a death benefit for your family, a simpler policy may do th
 
 Faith is personal. An insurance policy is a contract. Judge an IUL presented in a faith setting the way you'd judge any IUL: by the contract, the guarantees, the costs and what you need it to do.
 
-I'm an independent broker, so I can compare options from several insurance companies. If you'd like a second opinion on a pitch you heard, or want to compare simpler coverage, use the quote form on this page or call me at [888-862-9456](tel:8888629456).
+I'm an independent broker, so I can compare options from several insurance companies. If you'd like a second opinion on a pitch you heard, or want to compare simpler coverage, select Male or Female in the Get Pricing box on this page or call me at [888-862-9456](tel:8888629456).
 
 ## Sources
 

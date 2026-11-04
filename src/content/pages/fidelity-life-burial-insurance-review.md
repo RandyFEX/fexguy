@@ -537,7 +537,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><br><strong>How can I get a Fidelity Life insurance quote?</strong></p>
 
-<p>Fill in the quote form on this page to get a quote from Fidelity Life.</p>
+<p>Select Male or Female in the Get Pricing box on this page to compare final expense quotes.</p>
 
 <p><br><strong>How can I make Fidelity Life insurance online payment?</strong></p>
 
@@ -614,7 +614,7 @@ resident status or green card and residing in the U.S can apply for this plan.</
 
 <p><br><strong>Where can I get Fidelity Life insurance pricing?</strong></p>
 
-<p>Fill out the quote form on this page to get Fidelity Life insurance pricing.</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Is Fidelity Life insurance expensive?</strong></p>
 

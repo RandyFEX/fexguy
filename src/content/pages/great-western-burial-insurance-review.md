@@ -575,7 +575,7 @@ Great Western has been in the insurance business since 1983.
 
 <details>
 <summary><b>How can I get a Great Western life insurance quote?</b></summary>
-Great Western no longer issues new final expense policies, so it can’t give you a new quote. You can use the quote form on this page to compare companies that are still selling burial insurance.
+Great Western no longer issues new final expense policies, so it can’t give you a new quote. You can select Male or Female in the Get Pricing box on this page to compare companies that are still selling burial insurance.
 </details>
 
 <details>

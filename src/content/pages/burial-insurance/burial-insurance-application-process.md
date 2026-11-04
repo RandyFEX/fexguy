@@ -60,7 +60,7 @@ sidebar: true
 
 <p>It is wise to do your shopping with all the best companies in the market. Make sure that you or your agent compare rates with different carriers to avoid overpaying for coverage. <strong>Comparison shopping will ensure you get the best rate.</strong></p>
 
-<p><strong>Use our EASY ONLINE QUOTE FORM to check out the rates and insurers available. Just fill out our instant QUOTE form with a few pieces of information:</strong></p>
+<p><strong>Use the Get Pricing box on this page to check out the rates and insurers available: select Male or Female, then answer a few quick questions. Insurers base quotes on information like this:</strong></p>
 
 <ul>
 <li>State of residence: rates may vary because states regulate life insurance carriers.</li>
@@ -74,7 +74,7 @@ sidebar: true
 <li>Email address: most used email address</li>
 </ul>
 
-<p>Once you input your information in our free <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form, click “Display Quotes,” You will see a list of quotes, sorted by lowest price. You will see the lowest rate at the top of the list.</p>
+<p>Once you answer the questions, you will see your quotes side by side, starting with the lowest preferred rate.</p>
 
 <p><strong>Funeral Funds will never sell your information or use it for anything except give you the most affordable life insurance quotes.</strong></p>
 

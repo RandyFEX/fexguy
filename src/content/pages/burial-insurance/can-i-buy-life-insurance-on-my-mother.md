@@ -200,7 +200,7 @@ sidebar: true
 
 <p>Insurance rates can vary by hundreds of dollars per year from company to company, so it’s crucial to compare many quotes. Doing so will let you find the cheapest rates possible for your mother.</p>
 
-<p>Work with an independent life insurance agency like Funeral Funds which has access to different life insurance companies. We can provide you with accurate quotes in an instant by filling in the instant quote form on this page.</p>
+<p>Work with an independent life insurance agency like Funeral Funds which has access to different life insurance companies. We can provide you with accurate quotes in an instant: select Male or Female in the Get Pricing box on this page.</p>
 
 <h2><br><strong>Conclusion</strong></h2>
 
