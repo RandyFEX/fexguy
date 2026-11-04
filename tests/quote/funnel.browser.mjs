@@ -237,10 +237,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(Number(cw) >= 700, `contact button weight ${cw}`);
     const order = await page.$eval('.qf-reassure', (e) => [e.previousElementSibling?.matches('.qf-consent'), e.nextElementSibling?.matches('button[type="submit"]')]);
     assert(order[0] && order[1], 'promise is not between the consent text and the button');
+    // v3 consent wording (Randy, November 2026) is one sentence longer: up to 4 lines on desktop at 16px (was 3).
     const consent = await page.$eval('.qf-consent span', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
-    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 3), `consent text ${JSON.stringify(consent)}`);
+    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 4), `consent text ${JSON.stringify(consent)}`);
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
-    assert((await page.textContent('.qf-consent span')).trim() === 'I agree Funeral Funds may call or text me at the number I provided about life insurance, including automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
+    assert((await page.textContent('.qf-consent span')).trim() === 'I welcome help from Funeral Funds and agree to receive calls and texts at the number I provided. These calls and texts are about life insurance and may include automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent box pre-checked');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.fill('#qf-first', NAMES[name]);
