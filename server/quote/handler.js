@@ -245,7 +245,10 @@ export async function handleQuote(request, env, deps) {
       const exp = now + SESSION_MS;
       await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
       const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test }, { 'Set-Cookie': cookie });
+      // leadVerified: this check just marked the record SMS-verified (Twilio
+      // 'approved'). Never in test or temporary-code mode, and only once per
+      // lead: the pending code is dropped above, so a repeat check is refused.
+      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified: record.verification.status === 'approved' && !test }, { 'Set-Cookie': cookie });
     }
 
     case 'session': {

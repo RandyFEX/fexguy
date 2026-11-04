@@ -1124,7 +1124,12 @@ scope protection wins.
   source (lead-source.ts isFacebookAdVisit: Facebook/Instagram click ID or
   utm_source on the session's first landing or the page address): campaign
   number 888-656-4648 for ad visits, 888-862-9456 for everyone else (the
-  HTML keeps the campaign number; the page script swaps it). No HubSpot
+  HTML keeps the campaign number; the page script swaps it, and every tel:
+  link and the footer disclaimer stay hidden until it has, with a 3-second
+  fallback). The funnel's conversion (GA4 generate_lead + Meta Lead) fires
+  once when the server's `check` returns `leadVerified: true` (a real
+  Twilio-approved SMS verification; never in test or temporary-code mode),
+  via the `ff:lead` event in tracking.ts, deduplicated per lead id. No HubSpot
   integration exists in this repository.
 - **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
   v5.8): the interactive funnel (below, "Quote funnel") replaced the

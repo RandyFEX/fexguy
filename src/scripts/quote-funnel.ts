@@ -339,6 +339,11 @@ if (root) {
       return;
     }
     track('quote_sms_verified');
+    // Verified quote lead (Randy, November 2026): the conversion (GA4
+    // generate_lead, Meta Lead) is counted once, by tracking.ts, when the
+    // server reports a real SMS verification; never for a code request,
+    // Apply Now, /facebook/, a resumed session or test/temporary-code mode.
+    if (body.leadVerified === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(8);
     setStatus(verifyStatus, '');
     unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
@@ -616,15 +621,9 @@ if (root) {
   function finish() {
     if (completed) return;
     completed = true;
-    if (!testMode() && applyNotified) {
-      // Lead completed: /help/ counts it once (tracking.ts).
-      try {
-        sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
-      } catch {}
-    }
+    // The funnel's lead is counted at verification (ff:lead), never on /help/.
     location.assign(lead.formspark.successPath);
   }
-  const testMode = () => !testBanner.hidden;
   $('[data-qf-intake-finish]').addEventListener('click', finish);
   /** Apply Now (Randy, November 2026): the temporary phone-assisted
    * application on /facebook/, with the page's own query string (campaign

@@ -134,6 +134,7 @@ test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, ne
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
   assert.equal(ok.body.status, 'verified');
   assert.equal(ok.body.testMode, false);
+  assert.equal(ok.body.leadVerified, false, 'the temporary code is never a verified lead (no ad conversion)');
   assert.equal('notify' in ok.body, false, 'nothing for the browser to send');
   assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
   const rec = await c.store.getLead(start.body.lead);
@@ -184,6 +185,10 @@ test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', asy
   assert.equal(wrong.body.status, 'wrong-code');
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   assert.equal(ok.body.status, 'verified');
+  assert.equal(ok.body.leadVerified, true, 'a real SMS verification is the verified lead');
+  const repeat = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
+  assert.equal(repeat.http, 410, 'the same lead cannot be verified (counted) twice');
+  assert.equal(repeat.body.leadVerified, undefined);
   assert.equal(tw.calls.at(-1).url.endsWith('/VerificationCheck'), true);
   assert.deepEqual(tw.calls.at(-1).form, { To: '+12148675309', Code: '654321' });
   // v6.2: the saved lead holds the contact details, quote and consent.
@@ -207,6 +212,7 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   const start = await c.call(startBody());
   const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   assert.equal(ok.body.status, 'verified');
+  assert.equal(ok.body.leadVerified, false, 'preview test mode never counts a lead');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
   assert.doesNotMatch(ok.setCookie, /Max-Age/, 'a browser-session cookie, not a persistent one');
   assert.equal((await c.price()).http, 200, 'verified session gets prices');

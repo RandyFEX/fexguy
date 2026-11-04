@@ -132,6 +132,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   const digits = other.display.replace(/-/g, '');
   assert(ph.text.includes(phone.display) && !ph.text.includes(other.display) && !ph.text.includes(`(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`) && !ph.labels.includes(other.display), `facebook numbers shown ${phone.display} / ${other.display}`);
   assert(ph.source === phone.source, `phone source ${ph.source}`);
+  assert(!(await page.evaluate(() => document.documentElement.classList.contains('fb-phone-pending'))), 'phone numbers still hidden');
   assert(ph.disclosure === 'Your final premium and coverage are subject to insurance company approval.', `disclosure ${ph.disclosure}`);
   const f = await page.evaluate(() => ({
     forms: document.querySelectorAll('form').length,
@@ -672,6 +673,75 @@ await check('/facebook/ phone by source: direct visit main number and no Lead; u
   await minimalCheckFacebook(p3, MAIN);
   await c2.close();
   await p3.context().close();
+});
+
+// Verified quote lead (Randy, November 2026): GA4 generate_lead + Meta Lead once, at a real SMS
+// verification. The test server runs in test mode (never a lead), so the real-verification case
+// marks the check response as the server does after a Twilio 'approved' check.
+const leadLogs = (logs) => logs.filter((t) => /GA4 event generate_lead|Meta track Lead/.test(t));
+await check('verified lead: GA4 generate_lead + Meta Lead once at SMS verification; never at contact, code request, reload, Apply Now or /facebook/', async () => {
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const page = await ctx.newPage();
+  const logs = [];
+  page.on('console', (m) => logs.push(m.text()));
+  await page.route(/\/api\/quote\/$/, async (route) => {
+    const req = JSON.parse(route.request().postData() || '{}');
+    const res = await route.fetch();
+    if (req.action !== 'check') return route.fulfill({ response: res });
+    const body = await res.json();
+    if (body.status === 'verified') { body.leadVerified = true; body.testMode = false; }
+    return route.fulfill({ response: res, json: body });
+  });
+  await page.goto(URL_);
+  await walk(page, '214-867-5377', 'Lead Test');
+  await page.waitForSelector('[data-qf-send]:not([hidden])');
+  assert(leadLogs(logs).length === 0, 'contact entry counted a lead');
+  await page.click('[data-qf-send]');
+  await page.waitForSelector('[data-qf-verify]:not([hidden])');
+  assert(leadLogs(logs).length === 0, 'code request counted a lead');
+  await page.fill('#qf-code', '123456');
+  await page.click('[data-qf-verify-btn]');
+  await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+  const at = leadLogs(logs);
+  assert(at.length === 2 && at.some((t) => /GA4 event generate_lead$/.test(t.trim())) && at.some((t) => /Meta track Lead$/.test(t.trim())), `verification events ${JSON.stringify(at)}`);
+  // The same lead id again (e.g. a repeated message) never counts twice in the tab.
+  const id = await page.evaluate(() => Object.keys(sessionStorage).find((k) => k.startsWith('lead:quote:'))?.slice('lead:quote:'.length));
+  assert(id, 'lead id not remembered');
+  await page.evaluate((i) => window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: i } })), id);
+  assert(leadLogs(logs).length === 2, 'duplicate lead counted');
+  logs.length = 0;
+  await page.reload();
+  await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+  assert(leadLogs(logs).length === 0, 'revisiting results counted a lead');
+  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
+  await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+  await page.waitForTimeout(300);
+  assert(leadLogs(logs).length === 0, `Apply Now or /facebook/ counted a lead: ${JSON.stringify(leadLogs(logs))}`);
+  assert((await page.evaluate(() => sessionStorage.getItem('fexguy:lead-pending'))) === null, 'old /help/ lead flag set');
+  await ctx.close();
+  // Test-mode verification (the server's real response) never counts a lead.
+  const ctx2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const p2 = await ctx2.newPage();
+  const logs2 = [];
+  p2.on('console', (m) => logs2.push(m.text()));
+  await p2.goto(URL_);
+  await walk(p2, '214-867-5378', 'Lead Test Two');
+  await verify(p2);
+  assert(leadLogs(logs2).length === 0, `test mode counted a lead: ${JSON.stringify(leadLogs(logs2))}`);
+  await ctx2.close();
+});
+await check('/facebook/: no phone number shows or can be tapped before this visitor\'s number is set (fallback after 3 seconds)', async () => {
+  const ctx = await browser.newContext();
+  const p = await ctx.newPage();
+  await p.route(/\/_astro\/facebook\.astro_astro_type_script[^/]*\.js$/, (r) => r.abort());
+  await p.goto(`${BASE}/facebook/`, { waitUntil: 'domcontentloaded' });
+  const hidden = await p.evaluate(() => ({
+    tels: [...document.querySelectorAll('a[href^="tel:"]')].map((a) => getComputedStyle(a).visibility),
+    note: getComputedStyle(document.querySelector('.fb-foot__disclaimer')).visibility,
+  }));
+  assert(hidden.tels.length >= 5 && hidden.tels.every((v) => v === 'hidden') && hidden.note === 'hidden', `shown while loading ${JSON.stringify(hidden)}`);
+  await p.waitForFunction(() => !document.documentElement.classList.contains('fb-phone-pending'), null, { timeout: 5000 });
+  await ctx.close();
 });
 
 await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {

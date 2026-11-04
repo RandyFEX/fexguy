@@ -110,6 +110,11 @@ const advantage = [
   bodyClass="page-fb track-page-calls"
 >
   <div class="fb" data-page-type="sales" data-page-reason="Facebook ad landing page (noindex, campaign phone number).">
+    <!-- Phone numbers stay hidden until the page script sets the right one for
+         this visitor (no wrong number shows or can be tapped while loading).
+         If that script never runs, they show after 3 seconds; without
+         JavaScript they show at once. -->
+    <script is:inline>document.documentElement.classList.add('fb-phone-pending');setTimeout(function(){document.documentElement.classList.remove('fb-phone-pending')},3000);</script>
     <div class="fb-top">
       <div class="container fb-top__inner">
         <HeaderLogo>
@@ -269,6 +274,7 @@ const advantage = [
   } else {
     document.body.dataset.phoneSource = 'facebook-ad';
   }
+  document.documentElement.classList.remove('fb-phone-pending');
 
   // Apply Now from /free-quote/: show the selected coverage and server-priced
   // estimate. Missing, stale or invalid data keeps the summary hidden.
@@ -326,6 +332,11 @@ const advantage = [
   }
   body.page-fb .btn {
     text-align: center;
+  }
+  /* While the page script picks this visitor's number (inline script above). */
+  html.fb-phone-pending a[href^='tel:'],
+  html.fb-phone-pending .fb-foot__disclaimer {
+    visibility: hidden;
   }
   /* The mobile call bar waits while the hero's call button and disclosure are
      on screen (script on this page; visibility keeps its space reserved). */
