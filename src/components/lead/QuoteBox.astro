@@ -42,6 +42,7 @@ const phone = PAGE_PHONES.default;
   <div class="gp__body">
     <p class="gp__q">I need pricing for a...</p>
     <GenderChoice as="link" />
+    <p class="gp__note">Your Burial Insurance Quote Starts Here. No Agent Needed. Less Than 60 Seconds.</p>
     {/* v5.9 (Randy): a direct call option under the choices; a tap is recorded, never a completed call. */}
     <a class="btn gp__call" href={phone.href} data-gp-call>
       <svg aria-hidden="true" width="22" height="22" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
@@ -83,6 +84,9 @@ const phone = PAGE_PHONES.default;
   .gp .gp__body > .gp__call { width: 91%; max-width: none; margin-inline: auto; }
   .gp .qf-people { gap: var(--space-3); }
   .gp .gp__call { padding-inline: var(--space-2); }
+  /* Reassurance line between the cards and CALL NOW (Randy, November 2026):
+     plain sentence text at the cards' width, in the module's 12px rhythm. */
+  .gp .gp__note { width: 91%; margin: 0; text-align: center; font-size: 0.875rem; font-weight: 600; line-height: 1.35; color: var(--color-primary); }
   .gp .gp__call-text { flex-direction: row; align-items: center; gap: 0.35em; white-space: nowrap; font-size: clamp(0.875rem, 5.4cqi, 1.125rem); }
   .gp .gp__call-label,
   .gp .gp__call-number { font-size: 1em; }
@@ -115,6 +119,7 @@ const phone = PAGE_PHONES.default;
   body.page-article-v2 .art-body .gp .quote-box__title { font-size: 1.125rem; }
   body.page-article-v2 .quote-box.gp .gp__title { padding: var(--space-3) 8px; letter-spacing: 0; }
   body.page-article-v2 .art-body .gp .gp__q { margin: 0; font-size: 1.125rem; line-height: 1.3; }
+  body.page-article-v2 .art-body .gp .gp__note { font-size: 0.875rem; line-height: 1.35; }
   body.page-article-v2 .art-body .gp a,
   body.page-article-v2 .art-body .gp a:hover { text-decoration: none; }
   body.page-article-v2 .art-body .gp a.qf-person,

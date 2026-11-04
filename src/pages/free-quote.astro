@@ -100,6 +100,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
           <h2 class="qf-q" id="qf-s1" tabindex="-1">I need pricing for a...</h2>
           <GenderChoice as="button" />
+          <p class="qf-start-note">Your Burial Insurance Quote Starts Here. No Agent Needed. Less Than 60 Seconds.</p>
         </section>
 
         <!-- Step 2 -->
@@ -365,6 +366,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   @media (prefers-reduced-motion: reduce) { .qf-step { animation: none; } .qf-progress__bar { transition: none; } }
   .qf-q { font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem); line-height: 1.2; color: var(--color-primary); margin: 0 0 var(--space-4); text-align: center; }
   .qf-q:focus { outline: none; }
+  /* Reassurance line under the Step 1 cards (Randy, November 2026): plain
+     sentence text, one line on desktop where it fits, wraps on small screens. */
+  .qf-start-note { margin: var(--space-3) auto 0; max-width: 40rem; text-align: center; font-size: 0.875rem; font-weight: 600; line-height: 1.4; color: var(--color-primary); }
+  @media (min-width: 48rem) { .qf-start-note { font-size: 0.9375rem; } }
 
   /* .qf-people / .qf-person styles: src/components/quote/GenderChoice.astro (v5.8). */
 
