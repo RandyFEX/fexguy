@@ -68,7 +68,7 @@ export const services: (HomeLink & { icon: HomeIconName })[] = [
  * center sits across the photo (0 = left edge, 1 = right edge); the card
  * keeps that point centered in its narrow photo panel at every size. */
 export interface RateExample {
-  product: 'Burial Insurance' | 'Term Life Insurance' | 'Mortgage Protection';
+  product: 'Burial Insurance' | 'Final Expense Insurance' | 'Term Life Insurance' | 'Mortgage Protection';
   amount: string;
   context: string;
   premium: string;
@@ -93,24 +93,24 @@ export const rateExamples: RateExample[] = [
     image: { name: 'rate-burial-10000', focus: 0.507 },
   },
   {
-    product: 'Mortgage Protection',
-    amount: '$250,000',
-    context: '15-Year',
-    premium: '$57.60',
+    product: 'Final Expense Insurance',
+    amount: '$50,000',
+    context: 'Great Health',
+    premium: '$140.58',
     image: { name: 'rate-mortgage-250000', focus: 0.44 },
   },
   {
-    product: 'Mortgage Protection',
-    amount: '$350,000',
-    context: '15-Year',
-    premium: '$52.98',
+    product: 'Final Expense Insurance',
+    amount: '$50,000',
+    context: 'Great Health',
+    premium: '$108.71',
     image: { name: 'rate-mortgage-350000', focus: 0.46 },
   },
   {
-    product: 'Term Life Insurance',
-    amount: '$1,000,000',
-    context: '20-Year',
-    premium: '$68.26',
+    product: 'Burial Insurance',
+    amount: '$25,000',
+    context: 'Average Health',
+    premium: '$81.48',
     image: { name: 'rate-term-1000000', focus: 0.575 },
   },
   {
