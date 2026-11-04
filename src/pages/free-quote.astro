@@ -215,7 +215,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
 
           <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
-            <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1">Unlock Your Rates</h3>
+            <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1"><span class="qf-unlock__t-wide">Unlock Your Rates</span><span class="qf-unlock__t-phone">Your Rates Are Ready!</span></h3>
+            <p class="qf-unlock__ready">Verify your phone number by text to reveal your prices.</p>
             <form class="qf-form qf-form--compact" data-qf-send-form novalidate>
               <div class="qf-field" data-qf-phone-field hidden>
                 <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
@@ -509,6 +510,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-unlock[hidden] { display: none; }
   .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.625rem; font-weight: 800; color: var(--color-error); text-align: center; }
   .qf-unlock__title:focus { outline: none; }
+  /* Phones (Randy, November 2026): before verification the same unlock panel
+     comes first, above the blurred cards, as "Your Rates Are Ready!" with a
+     one-line instruction (CSS order only: one panel, one set of controls).
+     Tablets and desktop (48rem+) keep "Unlock Your Rates" under the cards. */
+  .qf-unlock__t-wide { display: none; }
+  .qf-unlock__ready { margin: 0 0 var(--space-3); text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 600; color: var(--color-text); }
+  @media (max-width: 47.99rem) {
+    .qf-results[data-locked='true']:not([hidden]) { display: flex; flex-direction: column; }
+    .qf-results[data-locked='true'] > .qf-unlock { order: -1; margin: 0 0 var(--space-4); }
+  }
+  @media (min-width: 48rem) {
+    .qf-unlock__t-wide { display: inline; }
+    .qf-unlock__t-phone, .qf-unlock__ready { display: none; }
+  }
   .qf-form[hidden] { display: none; }
 
   /* Health questions */

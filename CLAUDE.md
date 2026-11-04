@@ -1110,6 +1110,18 @@ scope protection wins.
   script sends each form to its own action, never to both. Its hero copy and the four benefit descriptions are Randy's
   wording; the Roku and Facebook pages share 888-656-4648 by Randy's choice
   (campaigns are told apart by when ads run).
+  Apply Now handoff (Randy, November 2026; supersedes the form details
+  above): /free-quote/ Apply Now opens /facebook/ (query string kept) for a
+  temporary phone-assisted application. Headline "Ready to Apply for Your
+  Burial Insurance?"; the four call buttons read CALL NOW TO COMPLETE YOUR
+  APPLICATION; with a valid handoff (sessionStorage `ff:quote-handoff`,
+  src/scripts/quote-handoff.ts: versioned, 60-minute limit, no medical data,
+  structured for a later CRM) the hero shows "Your Selected Coverage"
+  (Coverage Amount, Estimated Monthly Rate). The short callback form, its
+  "Prefer a Callback?" block, the 'short' field set and the marketing
+  Formspark endpoint were removed. The funnel lead counts once on /facebook/
+  (tracking.ts, same flag and events as /help/). No HubSpot integration
+  exists in this repository.
 - **/free-quote/ is the quote funnel** (Randy, November 2026, Quote System
   v5.8): the interactive funnel (below, "Quote funnel") replaced the
   callback form described in the next item and moved here from

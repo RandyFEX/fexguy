@@ -114,6 +114,18 @@ const HOME_HOVER = await (async () => {
   await p.close();
   return f;
 })();
+/** /facebook/ after the handoff: no old callback form, CTA wording updated. */
+async function minimalCheckFacebook(page) {
+  const f = await page.evaluate(() => ({
+    forms: document.querySelectorAll('form').length,
+    oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
+    ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
+    benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
+  }));
+  assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
+  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === 'tel:8886564648'), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+}
+
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
   const ctx = await browser.newContext(opts);
   // v6.2: the funnel never contacts Formspark, Cloudflare Turnstile or Resend; any such request is recorded and fails the test.
@@ -248,14 +260,17 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const u = await page.evaluate(() => {
       const t = document.querySelector('#qf-unlock-title');
       const b = document.querySelector('[data-qf-send]');
-      return { title: t.textContent.trim(), color: getComputedStyle(t).color, size: parseFloat(getComputedStyle(t).fontSize), note: document.querySelector('#qf-verify-note').textContent, btn: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor, fg: getComputedStyle(b).color, shown: document.querySelector('[data-qf-phone-show]').textContent, change: document.querySelector('[data-qf-edit-phone]').textContent, h: document.querySelector('[data-qf-unlock]').getBoundingClientRect().height };
+      const ready = document.querySelector('.qf-unlock__ready'), u0 = document.querySelector('[data-qf-unlock]').getBoundingClientRect(), c0 = document.querySelector('.qf-cards').getBoundingClientRect();
+      return { title: t.innerText.trim(), ready: ready.getClientRects().length ? ready.textContent.trim() : null, above: u0.bottom <= c0.top + 1, panels: document.querySelectorAll('[data-qf-unlock]').length, color: getComputedStyle(t).color, size: parseFloat(getComputedStyle(t).fontSize), note: document.querySelector('#qf-verify-note').textContent, btn: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor, fg: getComputedStyle(b).color, shown: document.querySelector('[data-qf-phone-show]').textContent, change: document.querySelector('[data-qf-edit-phone]').textContent, h: document.querySelector('[data-qf-unlock]').getBoundingClientRect().height };
     });
-    assert(u.title === 'Unlock Your Rates' && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
+    // Phones: the panel comes first as "Your Rates Are Ready!"; tablets and desktop keep "Unlock Your Rates" under the cards.
+    const phone = name === 'mobile';
+    assert(u.title === (phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates') && u.ready === (phone ? 'Verify your phone number by text to reveal your prices.' : null) && u.above === phone && u.panels === 1 && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
     const panel = await page.evaluate(() => {
       const parts = ['#qf-unlock-title', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="change"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
       const cs = (e) => getComputedStyle(e);
       return {
-        texts: parts.map((e) => e.textContent.replace(/\s+/g, ' ').trim()),
+        texts: parts.map((e, k) => (k === 0 ? e.innerText : e.textContent).replace(/\s+/g, ' ').trim()),
         tops: parts.map((e) => Math.round(e.getBoundingClientRect().top)),
         bottoms: parts.map((e) => Math.round(e.getBoundingClientRect().bottom)),
         explainLines: (() => { const r = document.createRange(); r.selectNodeContents(parts[2]); return new Set([...r.getClientRects()].map((x) => Math.round(x.top))).size; })(),
@@ -272,7 +287,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       };
     });
     const last4u = PHONES[name].replace(/\D/g, '').slice(-4);
-    assert(JSON.stringify(panel.texts) === JSON.stringify(['Unlock Your Rates', 'Text Me My Access Code', `We'll text a 6-digit verification code to (***) ***-${last4u}.`, 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
+    assert(JSON.stringify(panel.texts) === JSON.stringify([phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates', 'Text Me My Access Code', `We'll text a 6-digit verification code to (***) ***-${last4u}.`, 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
     assert(panel.between && panel.explainCentered && panel.numberLine && (name === 'desktop' ? panel.explainLines === 1 : panel.explainLines <= 2), `unlock sentence layout ${JSON.stringify(panel)}`);
     assert(panel.tops.every((t, k) => k === 0 || t > panel.tops[k - 1]), `unlock panel order ${panel.tops}`);
     assert(panel.titleColor === 'rgb(185, 28, 28)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
@@ -285,7 +300,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(u.btn === 'Text Me My Access Code' && u.bg === HOME_ORANGE && u.fg === 'rgb(255, 255, 255)' && u.change === 'Change Number', JSON.stringify(u));
     const digits = PHONES[name].replace(/\D/g, '');
     assert(u.shown.endsWith(digits.slice(6)) && !u.shown.includes(digits.slice(0, 3)), `number shown ${u.shown}`);
-    assert(u.h < 300, `unlock panel ${u.h}px tall`);
+    assert(u.h < (phone ? 350 : 300), `unlock panel ${u.h}px tall`);
     assert(await page.isHidden('#qf-unlock-phone'), 'phone asked again');
     await page.waitForTimeout(300);
     await shot(page, `v35-${name}-4-blurred.png`, true);
@@ -510,16 +525,49 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await priceStatus(p2)) === 401, 'reopened visit got prices');
     await ctx2.close();
   });
-  await check(`${name}: Apply Now keeps attribution and runs the carrier questions one at a time`, async () => {
-    await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
-    await page.waitForFunction(() => !document.querySelector('[data-qf-intake-q]')?.hidden, null, { timeout: 6000 });
-    await minimalLayout(page);
-    assert(/Question 1 of 22/.test(await page.textContent('[data-qf-intake-count]')), 'count');
-    await page.click('[data-qf-answer="no"]');
-    await page.waitForFunction(() => /Question 2 of 22/.test(document.querySelector('[data-qf-intake-count]')?.textContent ?? ''));
-    await page.click('[data-qf-answer="yes"]');
-    await page.waitForFunction(() => !document.querySelector('[data-qf-intake-done]')?.hidden, null, { timeout: 5000 });
-    assert(/other coverage/.test(await page.textContent('[data-qf-intake-done-text]')), 'done text');
+  await check(`${name}: Apply Now on each card opens /facebook/ with that card's coverage and estimate (no stale values)`, async () => {
+    const results = async () => {
+      await page.goto(`${URL_}?utm_source=facebook&utm_campaign=test`);
+      await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    };
+    const applyAndRead = async (id) => {
+      const card = await page.$eval(`[data-qf-card="${id}"]`, (e) => e.querySelector('[data-qf-amount]').textContent.trim());
+      const coverage = await page.$eval('.qf-adjust input[name="coverage"]:checked', (e) => e.value);
+      await page.click(`[data-qf-card="${id}"] [data-qf-apply]`);
+      await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+      await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+      const fb = await page.evaluate(() => ({
+        url: location.pathname + location.search,
+        title: document.querySelector('#fb-title').textContent.trim(),
+        coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
+        premium: document.querySelector('[data-fb-quote-premium]').textContent.trim(),
+        labels: [...document.querySelectorAll('.fb-quote dt, .fb-quote__title')].map((e) => e.textContent.trim()),
+        handoff: JSON.parse(sessionStorage.getItem('ff:quote-handoff')),
+      }));
+      return { card, coverage, fb };
+    };
+    await results();
+    const seen = [];
+    for (const id of ['average-standard', 'lowest-preferred', 'guaranteed-acceptance']) {
+      if (seen.length) await results();
+      const r = await applyAndRead(id);
+      const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
+      assert(r.fb.labels.join('|') === 'Your Selected Coverage|Coverage Amount|Estimated Monthly Rate', `labels ${r.fb.labels}`);
+      const h = r.fb.handoff;
+      assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
+      assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
+      seen.push(r.card);
+    }
+    // A different selection replaces the earlier one (no stale values).
+    await results();
+    await page.click('.qf-adjust label:has(input[name="coverage"][value="25000"])');
+    await page.waitForFunction(() => document.querySelector('.qf-adjust input[name="coverage"][value="25000"]').checked, null, { timeout: 5000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="lowest-preferred"] [data-qf-amount]').textContent.trim() !== b, seen[1], { timeout: 8000 });
+    const later = await applyAndRead('lowest-preferred');
+    assert(later.fb.coverage === '$25,000' && later.fb.premium === later.card && later.card !== seen[1], `stale summary ${JSON.stringify(later)}`);
+    await minimalCheckFacebook(page);
   });
   await check(`${name}: every pricing input can be changed on the results screen (so no Start New Quote control)`, async () => {
     await page.goto(URL_);
@@ -530,7 +578,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   });
   await ctx.close();
 }
-await check('evidence: verified leads, consent records, intended use, Apply Now attribution and answers kept', async () => {
+await check('evidence: verified leads, consent records, intended use and every Apply Now selection kept', async () => {
   const recs = await (await fetch(`${BASE}/__evidence/`)).json();
   const v = recs.filter((r) => r.verification.status === 'approved');
   assert(v.length === 2, `${v.length} verified`);
@@ -538,11 +586,28 @@ await check('evidence: verified leads, consent records, intended use, Apply Now 
     assert(
       (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
         r.consent.given === false && r.consent.action && r.verifyNotice.version === 'ff-quote-verify-notice-v4-2026-11' && r.verifyNotice.text === "We'll text a 6-digit verification code to (***) ***-XXXX. Message and data rates may apply." &&
-        r.applications[0].attribution[0] === 'FF-101' && r.intakes['average-standard'].answers.length === 2 && r.intakes['average-standard'].flag === 'may-not-qualify',
+        r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 4 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
     );
   return `${recs.length} lead records (${v.length} verified)`;
 });
+await check('/facebook/ opened directly, or with a stale or invalid handoff, hides the quote summary', async () => {
+  const p = await browser.newPage();
+  await p.goto(`${BASE}/facebook/`);
+  assert(await p.isHidden('[data-fb-quote]'), 'summary shown on a direct visit');
+  for (const bad of [
+    { v: 1, createdAt: Date.now() - 2 * 60 * 60 * 1000, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: '43.76' } },
+    { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 999999, monthlyPremium: '43.76' } },
+    { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: 'abc' } },
+  ]) {
+    await p.evaluate((h) => sessionStorage.setItem('ff:quote-handoff', JSON.stringify(h)), bad);
+    await p.reload();
+    assert(await p.isHidden('[data-fb-quote]'), `summary shown for ${JSON.stringify(bad)}`);
+  }
+  await minimalCheckFacebook(p);
+  await p.close();
+});
+
 await check('homepage GET A QUOTE opens the pricing funnel at the first question (not the old homepage form)', async () => {
   const p = await browser.newPage();
   await p.goto(`${BASE}/`);

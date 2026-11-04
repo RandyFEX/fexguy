@@ -16,6 +16,7 @@
 import { lead } from '@/config/lead';
 import { leadSourceFields } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
+import { saveHandoff } from '@/scripts/quote-handoff';
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
@@ -621,6 +622,20 @@ if (root) {
   }
   const testMode = () => !testBanner.hidden;
   $('[data-qf-intake-finish]').addEventListener('click', finish);
+  /** Apply Now (Randy, November 2026): the temporary phone-assisted
+   * application on /facebook/. The lead counts once there, as it did on
+   * /help/ (tracking.ts); the page's own query string (campaign values) goes
+   * along. */
+  function handoffToApplication() {
+    if (completed) return;
+    completed = true;
+    if (!testMode() && applyNotified) {
+      try {
+        sessionStorage.setItem(lead.formspark.pendingLeadKey, JSON.stringify({ id: crypto.randomUUID?.() ?? String(Date.now()), at: Date.now() }));
+      } catch {}
+    }
+    location.assign(`/facebook/${location.search}`);
+  }
 
   async function intakeStep(body: Record<string, unknown>) {
     setStatus(intakeStatus, '');
@@ -700,15 +715,17 @@ if (root) {
         return;
       }
       setStatus(applyStatus, '');
-      // v6.2: /help/ counts the lead once the server has saved the Apply Now record.
+      // v6.2: the lead counts once the server has saved the Apply Now record.
       applyNotified = body.saved === true;
-      intakeCategory = id;
-      intakeTitle.textContent = 'Application questions';
-      intakeSub.textContent = `${cat.label}: $${cat.monthlyPremium} per month for ${money(shown.quote.coverage)} of coverage.`;
-      intakeQ.hidden = true;
-      intakeDone.hidden = true;
-      show(9);
-      await intakeStep({ action: 'intake-next', category: id });
+      // The selected card, server-priced, for /facebook/ (quote-handoff.ts).
+      const first = cat.carriers?.find((c): c is Carrier => Boolean(c)) ?? null;
+      const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
+      saveHandoff({
+        selection: { tierId: id, tier: String(body.category ?? cat.label), carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: shown.quote.coverage, monthlyPremium: String(body.monthlyPremium ?? cat.monthlyPremium) },
+        inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, intendedUse: answers.use ?? null, state: answers.state ?? null },
+        attribution,
+      });
+      handoffToApplication();
     });
   }
 

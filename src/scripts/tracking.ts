@@ -3,6 +3,7 @@
 //
 //   page view                         GA4 page_view      Meta PageView
 //   confirmed lead, on /help/         GA4 generate_lead  Meta Lead
+//     (a /free-quote/ Apply Now: on /facebook/, same events)
 //   (native form → Formspark; or a verified Fillout form_submit, rollback)
 //   click on tel:8888629456           GA4 click_to_call  (nothing to Meta)
 //   click on any call link on a page  GA4 click_to_call  (nothing to Meta)
@@ -169,7 +170,10 @@ window.addEventListener('message', (e: MessageEvent) => {
 
 const LEAD_FLAG_MAX_AGE_MS = 60 * 60 * 1000;
 
-if (location.pathname === lead.formspark.successPath) {
+// Apply Now on /free-quote/ (Randy, November 2026) opens the phone-assisted
+// application on /facebook/ with the same one-time flag, so that funnel lead
+// still counts once, there instead of /help/ (same events, same rules).
+if (location.pathname === lead.formspark.successPath || location.pathname === '/facebook/') {
   let pending: { id?: unknown; at?: unknown } | null = null;
   try {
     const raw = sessionStorage.getItem(lead.formspark.pendingLeadKey);

@@ -53,7 +53,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const vis = (e) => !!e && e.getClientRects().length > 0;
       const parts = ['#qf-unlock-title', '[data-qf-send]', '[data-qf-send-form] [data-qf-temp-note]', '[data-qf-edit-phone]', '#qf-verify-rates'].map((s) => document.querySelector(s));
       return {
-        texts: parts.map((e) => (vis(e) ? e.textContent.trim() : null)),
+        texts: parts.map((e, k) => (vis(e) ? (k === 0 ? e.innerText : e.textContent).trim() : null)),
         tops: parts.map((e) => e.getBoundingClientRect().top),
         sms: vis(document.querySelector('[data-qf-phone-summary]')),
         panel: document.querySelector('[data-qf-unlock]').innerText,
@@ -61,7 +61,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         subtitle: vis(document.querySelector('[data-qf-results-lead]')),
       };
     });
-    assert(JSON.stringify(p.texts) === JSON.stringify(['Unlock Your Rates', 'Text Me My Access Code', NOTE, 'Change Number', 'Message and data rates may apply.']), `panel ${JSON.stringify(p.texts)}`);
+    assert(JSON.stringify(p.texts) === JSON.stringify([name === 'mobile' ? 'Your Rates Are Ready!' : 'Unlock Your Rates', 'Text Me My Access Code', NOTE, 'Change Number', 'Message and data rates may apply.']), `panel ${JSON.stringify(p.texts)}`);
     assert(p.tops.every((t, i) => i === 0 || t > p.tops[i - 1]), `order ${p.tops}`);
     assert(!p.sms && !/We'll text|sent to|on its way/i.test(p.panel), `SMS wording shown: ${p.panel}`);
     assert(!p.banner && !p.subtitle, 'preview banner or subtitle shown before unlocking');
