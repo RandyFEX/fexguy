@@ -192,7 +192,7 @@ best value. Who do we recommend instead?</p>
 
 <p>We work with many A+ rated insurance carriers that specialize in covering healthy or high-risk clients like you. We will search for all those companies to get the best rate. We will match you up with the best burial insurance company that gives the best rate.</p>
 
-<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for insurance, burial, or final expense life insurance, we can help. Fill out our <a href="/free-quote/" target="_blank" rel="noreferrer noopener">quote</a> form on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate burial insurance quote.</p>
+<p>We will assist you in securing the coverage you need at a rate you can afford. So, if you are looking for insurance, burial, or final expense life insurance, we can help. Select Male or Female in the Get Pricing box on this page or call us at <strong>(888) 862-9456,</strong> and we can give you an accurate burial insurance quote.</p>
 
 <h2 id="frequently-asked-questions"><strong>  Frequently Asked Questions </strong></h2>
 

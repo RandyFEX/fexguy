@@ -440,7 +440,7 @@ sidebar: true
 
 <p>Instead of pushing one overpriced product, I shop many of A-rated carriers to find first-day coverage, stable rates, and policies that won’t disappear when your family needs them most.</p>
 
-<p>If you’re serious about protecting your family from rising cremation costs and confusing insurance traps, let’s make it easy. Fill out the form on this page or call 888-862-9456 today to receive a clear and accurate quote that fits your budget.</p>
+<p>If you’re serious about protecting your family from rising cremation costs and confusing insurance traps, let’s make it easy. Select Male or Female in the Get Pricing box on this page or call 888-862-9456 today to receive a clear and accurate quote that fits your budget.</p>
 
 <hr>
 

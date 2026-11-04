@@ -156,7 +156,7 @@ The main factors:
 - **Riders** or extra features you add.
 - **The insurance company.** Each one prices the same person differently, so comparing companies matters.
 
-I can't give you a fair price without a few questions about your age, health and the coverage you want. To get real numbers, use the quote form on this page or call [888-862-9456](tel:8888629456).
+I can't give you a fair price without a few questions about your age, health and the coverage you want. To get real numbers, call [888-862-9456](tel:8888629456).
 
 ## What to watch out for
 
@@ -258,7 +258,7 @@ I'm an independent life insurance agent, so I can quote more than one insurance 
 - look over a mortgage protection mailer you received, or a policy you already have;
 - work with seniors and people in less-than-ideal health.
 
-To get started, use the quote form on this page or call me at [888-862-9456](tel:8888629456).
+To get started, call me at [888-862-9456](tel:8888629456).
 
 ## Frequently asked questions
 
@@ -288,7 +288,7 @@ Often, yes. Your options depend on your age, your health and how much coverage y
 
 ### How much does mortgage protection life insurance cost?
 
-It depends on your age, health, tobacco use, gender, coverage amount, policy length and the insurance company. To get real numbers for your situation, use the quote form on this page or call [888-862-9456](tel:8888629456).
+It depends on your age, health, tobacco use, gender, coverage amount, policy length and the insurance company. To get real numbers for your situation, call [888-862-9456](tel:8888629456).
 
 ### Is the death benefit taxed?
 

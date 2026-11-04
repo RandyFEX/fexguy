@@ -177,7 +177,7 @@ you will receive the full death benefit if she dies for any reason.</p>
 <li>Make sure your sister knows that you are getting burial insurance on her. Have the consent to review her medical history by asking her to sign the application. </li>
 <li>Determine the death benefit amount you want to apply for.</li>
 <li>Disclose any medical condition for your sister.</li>
-<li>Find a life insurance provider by completing the instant QUOTE form on this page (or call us directly).</li>
+<li>Find a life insurance provider by selecting Male or Female in the Get Pricing box on this page (or call us directly).</li>
 <li>Let your sister fill out the application on her phone or computer.</li>
 <li>The life insurance company will contact your sister to verify her information. </li>
 <li>The underwriter at the life insurance company will review the application to assess the overall risk of your sister</li>

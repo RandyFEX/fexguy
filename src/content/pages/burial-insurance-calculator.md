@@ -303,7 +303,7 @@ sidebar: true
 
 <p>Use the information in this article to help you if you have ever asked yourself, “how much burial insurance do I need?” Also, look at our funeral expenses so that people overlook an article.</p>
 
-<p>If you need a burial insurance calculator and want to know how much you will pay based on your needs, just fill out the instant quote form on this page to get an estimate of your rates and pricing.</p>
+<p>If you need a burial insurance calculator and want to know how much you will pay based on your needs, just select Male or Female in the Get Pricing box on this page to get an estimate of your rates and pricing.</p>
 
 <h2 id="frequently-asked-questions"><strong>Frequently asked questions </strong></h2>
 

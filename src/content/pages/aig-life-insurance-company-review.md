@@ -340,7 +340,7 @@ sidebar: true
 
 <p>This pricing is for illustration purposes only and is subject to change without notice. Your premium will depend on your age, gender, face amount or coverage, health, and the state you live. </p>
 
-<p>Fill the quote form below to get accurate pricing.</p>
+<p>Select Male or Female in the Get Pricing box on this page to get accurate pricing.</p>
 
 <p class="quote-cta"><a class="button-link" href="#quote">GET QUOTES NOW</a></p>
 

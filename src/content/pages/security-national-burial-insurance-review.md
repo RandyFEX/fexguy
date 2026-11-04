@@ -664,7 +664,7 @@ sidebar: true
 
 <p><br><strong>How can I get a Security National Life insurance quote?</strong></p>
 
-<p>Get a free quote by filling in the quote form on this page.</p>
+<p>Get a free quote by selecting Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>How can I make Security National Life insurance online payment?</strong></p>
 
@@ -728,7 +728,7 @@ sidebar: true
 
 <p><br><strong>Where can I get Security National Life insurance pricing?</strong></p>
 
-<p>You can get Security National Life insurance pricing by filling in the quote form on this page.</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Is Security National Life insurance expensive?</strong></p>
 
@@ -776,7 +776,7 @@ sidebar: true
 
 <p><br><strong>How can I find a replacement for my Security National Life insurance policy?</strong></p>
 
-<p>Contact the company directly to find a replacement for your Security National Life insurance policy, or fill in the quote form on this page.</p>
+<p>Contact the company directly to find a replacement for your Security National Life insurance policy, or select Male or Female in the Get Pricing box on this page to compare other companies.</p>
 
 <p><br><strong>How do I cancel my Security National Life insurance policy?</strong></p>
 

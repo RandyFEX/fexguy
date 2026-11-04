@@ -146,7 +146,7 @@ sidebar: true
 
 <p>After we determine your health profile, we will go to these companies and see which carrier will give you the best price and coverage value. We have your best interest at heart and can get you more coverage for a better price even if you have health issues, assuming your health is good enough to qualify for it. That’s the benefit of working with an independent agency.</p>
 
-<p>Get a FREE burial life insurance quote by answering the instant quote form on this page. We work with people like you who like to purchase affordable burial insurance rates regardless of your physical or medical condition.</p>
+<p>Get a FREE burial life insurance quote by selecting Male or Female in the Get Pricing box on this page. We work with people like you who like to purchase affordable burial insurance rates regardless of your physical or medical condition.</p>
 
 <p><strong>We will find you the lowest rates with access to all the top-rated burial insurance companies.</strong></p>
 
@@ -162,7 +162,7 @@ sidebar: true
 
 <p>You can now request an application to compare the terms and conditions of each policy more carefully.</p>
 
-<p>Policy applications include the information you see in more detail on the instant quote form. You’ll also be asked some health questions so the insurer can check your level of risk.</p>
+<p>Policy applications ask for the same basic information as the Get Pricing questions, in more detail. You’ll also be asked some health questions so the insurer can check your level of risk.</p>
 
 <p>Once you receive the application, look carefully at the fine print. Most policies have an array of clauses and exclusions that can protect you or limit the insurer’s responsibility.</p>
 

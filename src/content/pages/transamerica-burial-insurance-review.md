@@ -613,7 +613,7 @@ benefit plan.</p>
 
 <p><br><strong>How can I get a TransAmerica insurance quote?</strong></p>
 
-<p>Fill in the quote form on this page to get a quote from TransAmerica.</p>
+<p>Select Male or Female in the Get Pricing box on this page to compare final expense quotes.</p>
 
 <p><br><strong>How can I make TransAmerica insurance online payment?</strong></p>
 
@@ -694,7 +694,7 @@ benefit plan.</p>
 
 <p><br><strong>Where can I get TransAmerica insurance pricing?</strong></p>
 
-<p>You can get TransAmerica insurance pricing by filling out the quote form on this website page.&#160;</p>
+<p>To compare final expense pricing, select Male or Female in the Get Pricing box on this page.&#160;</p>
 
 <p><br><strong>Is TransAmerica insurance expensive?</strong></p>
 

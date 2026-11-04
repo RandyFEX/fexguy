@@ -275,7 +275,7 @@ death is a covered accident. </p>
 
 <p><br><strong>Can you buy funeral insurance online?</strong></p>
 
-<p>Yes, you can buy funeral insurance online through many different providers. To get started, simply fill in the quote form on this page.</p>
+<p>Yes, you can buy funeral insurance online through many different providers. To get started, simply select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Can you use life insurance to pay for funerals?</strong></p>
 
@@ -303,7 +303,7 @@ death is a covered accident. </p>
 
 <p><br><strong>Can you buy final expense insurance online?</strong></p>
 
-<p>Many insurance providers offer final expense and burial insurance that can be purchased online. To get started, fill out the quote form on this page.</p>
+<p>Many insurance providers offer final expense and burial insurance that can be purchased online. To get started, select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Can I purchase an online life insurance policy on my mom?</strong></p>
 
@@ -335,7 +335,7 @@ death is a covered accident. </p>
 
 <p><br><strong>Can I buy cremation insurance online?</strong></p>
 
-<p>Yes, many insurance providers offer cremation insurance that can be purchased online. Fill out the quote form on this page to get started.</p>
+<p>Yes, many insurance providers offer cremation insurance that can be purchased online. Select Male or Female in the Get Pricing box on this page to get started.</p>
 
 <p><br><strong>Can I get an online funeral cover for my parents?</strong></p>
 
@@ -363,7 +363,7 @@ death is a covered accident. </p>
 
 <p><br><strong>Where can I get an online funeral plan quote?</strong></p>
 
-<p>You can get an online funeral plan from many insurance providers. To compare quotes, simply fill out the quote form on this page.</p>
+<p>You can get an online funeral plan from many insurance providers. To compare quotes, simply select Male or Female in the Get Pricing box on this page.</p>
 
 <p><br><strong>Can I get life insurance on my brother without him knowing?</strong></p>
 
