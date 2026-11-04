@@ -109,7 +109,7 @@ sidebar: true
 </tr>
 <tr>
 <td>Coverage Duration</td>
-<td>Short Term, Expires Around Age Ninety</td>
+<td>Short Term, Expires at Age 80 or 90 (Varies by State)</td>
 <td>Fixed Term from Ten to Thirty Years</td>
 </tr>
 <tr>
@@ -203,11 +203,11 @@ sidebar: true
 
 <p>A 45-year-old buyer might start at around $10 to $15 per month for a small amount of coverage, but by the time they reach age 65, that same plan could cost hundreds of dollars.</p>
 
-<p>Since coverage eventually ends at or before age 90, you could spend decades overpaying for a policy that disappears when you are most likely to need it.</p>
+<p>Since coverage ends at age 80 or 90, depending on your state, you could spend decades overpaying for a policy that disappears when you are most likely to need it.</p>
 
 <p>Globe Life’s whole life plans are not much better.</p>
 
-<p>They advertise level premiums, but the coverage amounts are minimal. Most policies cap between $5,000 and $30,000. For a 65-year-old woman, $10,000 of whole life coverage costs roughly $50 per month.</p>
+<p>They advertise level premiums, but the coverage amounts are minimal. Globe Life offers $5,000 to $50,000 of adult whole life coverage, but applicants ages 76 to 80 can only get $5,000 or $10,000.</p>
 
 <p>That price is significantly higher than that of several top-rated competitors, which offer first-day coverage and lifetime protection.</p>
 
@@ -318,7 +318,7 @@ sidebar: true
 
 <p>Globe Life’s term policy renews every five years, and the premium increases each time. The increase is automatic. You do not have to file new paperwork or reapply, but you will pay more simply because you are older. That means your coverage becomes less affordable over time, even if your health never changes.</p>
 
-<p>Also, most Globe Life term policies end at or before age ninety. That is a problem for seniors who want coverage to handle final expenses or burial costs. Once the policy ends, there is no payout and no refund. If you live long enough to outlast the policy, you lose everything you’ve paid in.</p>
+<p>Also, Globe Life term policies end at age 80 or 90, depending on your state. That is a problem for seniors who want coverage to handle final expenses or burial costs. Once the policy ends, there is no payout and no refund. If you live long enough to outlast the policy, you lose everything you’ve paid in.</p>
 
 <p>Globe Life’s maximum term coverage typically caps at around $100,000. That might sound like a lot, but it is rarely enough to cover a full mortgage balance, replace income, or ensure long-term financial security for your family.</p>
 
@@ -339,7 +339,7 @@ sidebar: true
 <td>Choose a level term or whole life plan with fixed lifetime premiums</td>
 </tr>
 <tr>
-<td>Policy Ends Around Age 90</td>
+<td>Policy Ends at Age 80 or 90</td>
 <td>Coverage expires when most people need it most, leaving no payout or refund</td>
 <td>Final expense whole life policies last for life with guaranteed benefits</td>
 </tr>
@@ -487,7 +487,7 @@ sidebar: true
 
 <p>Globe Life’s complaint ratio has remained above the national average in multiple reporting years. That statistic comes directly from state regulators, not competitors or review websites.</p>
 
-<p>A strong company rating should not be the deciding factor when buying life insurance. What matters most is how the policy performs for you and your family. A solid A.M. Best score does not stop rates from increasing or policies from expiring at age ninety.</p>
+<p>A strong company rating should not be the deciding factor when buying life insurance. What matters most is how the policy performs for you and your family. A solid A.M. Best score does not stop rates from increasing or policies from expiring at age 80 or 90.</p>
 
 <hr>
 
@@ -565,7 +565,7 @@ sidebar: true
 <td>Term or Small Whole Life</td>
 <td>Up to 2 Years</td>
 <td>Yes, Every 5 Years (Term)</td>
-<td>Expires Around Age 90</td>
+<td>Expires at Age 80 or 90</td>
 </tr>
 <tr>
 <td>Aetna</td>
@@ -640,7 +640,7 @@ sidebar: true
 <li>This is a modified premium term-to-age-90 product. Globe Life term insurance product terminates at age 90, after which you lose your coverage and won’t get your money back.</li>
 <li>The initial term period can either be 1,2,3,4 or 5 years. The first term depends on your issue age. If you were 55 years old when you purchased your plan, you would pay depending on your age bracket, which is 51-55. When you turn 56, you move into another age bracket, and your Globe Life price increases accordingly. In this case, the initial term period is only one year because you move into another age bracket when you turn 56.</li>
 <li>All renewal term periods begin at a 5-year plus one age (i.e., 21, 26, 31, 36…86) Just as in the case above when you turn 56, you will need to renew your term and pay the price increase for that particular age bracket. Your next term renewal will be when you turn 61 years old. You will notice that you need to pay a different premium as you age. The older you are, the more expensive the premiums become.</li>
-<li>The policy will terminate at the policy anniversary following the insured’s 90th birthday. Globe term life insurance policy is only available up to age 90. Those who outlive their policy will no longer be covered.</li>
+<li>The policy will terminate at the policy anniversary following the insured’s 90th birthday. Globe term life insurance policy is only available up to age 90 in most states. In Alabama, Georgia, Mississippi, Missouri, Oklahoma, South Carolina, Tennessee, Washington, D.C., and New York, Globe Life’s term policy ends at age 80 instead. Those who outlive their policy will no longer be covered.</li>
 </ol>
 
 <hr>
@@ -744,7 +744,7 @@ sidebar: true
 
 <p><strong>Is Globe Life still under investigation?</strong></p>
 
-<p>No formal government investigations are active, but some have criticized the company’s advertising tactics for confusing “state-regulated” language that misleads consumers.</p>
+<p>Not as far as public records show. In late 2023, the U.S. Department of Justice subpoenaed Globe Life Inc. and its subsidiary American Income Life for documents about sales practices by some independent agents selling American Income Life policies. In April 2024, after short-seller reports, the SEC asked Globe Life for information. In July 2025, Globe Life announced that the SEC had closed its investigation without recommending enforcement action and that the Department of Justice had closed its investigation without taking enforcement action. Missouri’s Department of Insurance reports no enforcement action against Globe Life And Accident Insurance Company in the past three years.</p>
 
 <p><strong>How long does it take Globe Life to pay out a claim?</strong></p>
 

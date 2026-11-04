@@ -989,7 +989,7 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
   '/globe-life-price-increase/': {
     family: 'review', crumb: 'Globe Life',
     quickAnswer:
-      'Yes, on its term life insurance. Globe Life’s term policy isn’t level term: it renews every five years, and your premium rises automatically at each renewal as you move into a higher age bracket, even if your health never changes. Coverage ends at the policy anniversary after your 90th birthday, with no payout and no refund. Globe Life’s whole life plans have level premiums, but the coverage amounts are small.',
+      'Yes, on its term life insurance. Globe Life’s term policy isn’t level term: it renews every five years, and your premium rises automatically at each renewal as you move into a higher age bracket, even if your health never changes. Depending on your state, coverage ends at age 80 or 90, with no payout and no refund if you outlive it. Globe Life’s whole life plans have level premiums, with coverage up to $50,000.',
   },
   '/trustage-price-increase/': {
     family: 'review',
