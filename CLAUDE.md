@@ -969,8 +969,10 @@ scope protection wins.
 - GA4 property settings (verified by Randy): Google Signals off,
   user-provided data off, optional enhanced measurement off, email redaction
   on, q/s URL-parameter redaction on, 14-month retention, no Google Ads links.
-  Retired Meta Pixel IDs 1757709920950272 and 422716154769594 must never
-  return.
+  Meta Pixel (Randy, November 2026): the site uses Randy's established
+  pixel 1757709920950272 ("Saturn Street's Pixel"), replacing 2351342698972751
+  (this reverses the earlier retirement of 1757709920950272). The retired
+  Meta Pixel ID 422716154769594 must never return.
 - **Search-term privacy:** search terms (?q= / ?s=) must never reach GA4 or
   Meta. An inline script at the top of BaseLayout's <head> removes q and s
   from the address bar before any tracking runs (on /search/ the term moves
@@ -1085,7 +1087,7 @@ scope protection wins.
   sidebar) shows the Get Prices module (v5.8, no form; see /free-quote/). In-content form: put `<div data-quote-form></div>` on its own line
   in the page body. At most one form per page.
 - Tracking (`src/scripts/tracking.ts`): GA4 `G-JMYZE458HQ` and Meta pixel
-  `2351342698972751`, loaded directly — no GTM, Stape, server-side tagging,
+  `1757709920950272`, loaded directly — no GTM, Stape, server-side tagging,
   or Conversions API. GA4 `generate_lead` + Meta `Lead` fire once on /help/,
   only when the fresh `fexguy:lead-pending` flag set after Formspark's
   confirmation is present (a direct visit, reload or Back never counts; with
@@ -1118,7 +1120,7 @@ scope protection wins.
   APPLICATION; with a valid handoff (sessionStorage `ff:quote-handoff`,
   src/scripts/quote-handoff.ts: versioned, 60-minute limit, no medical data,
   structured for a later CRM) the hero shows "Your Selected Coverage"
-  (Coverage Amount, Estimated Monthly Rate). The short callback form, its
+  (Coverage Amount, Estimated Monthly Rate; v1.3: heading "Your quote will remain active for the next 12 hours.", figures 3.5rem side by side from 36rem and stacked on phones, the disclaimer as 12px fine print). 12-hour quote access (Randy, November 2026): the visit id and the handoff are in localStorage and the session cookie has Max-Age, all fixed at the unlock (server/quote/session.js SESSION_MS), so the same browser returns to its quote for 12 hours, never extended. The short callback form, its
   "Prefer a Callback?" block, the 'short' field set and the marketing
   Formspark endpoint were removed. Apply Now is GA4 quote_apply_now only;
   arriving at /facebook/ never fires generate_lead or Meta Lead. Phone by

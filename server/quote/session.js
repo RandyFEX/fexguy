@@ -11,9 +11,15 @@
 // sessionStorage (one per browser tab, gone when the tab closes) and sends it
 // as the x-quote-visit header. The server stores only its hash in the
 // session record and requires a match on every use, so a new tab or a new
-// visit is never verified by an earlier visit's cookie. The cookie itself is
-// a browser-session cookie (no Max-Age) and the server record expires after
-// SESSION_MS even if the tab stays open.
+// visit is never verified by an earlier visit's cookie.
+//
+// 12-hour quote access (Randy, November 2026): the visit id is kept in
+// localStorage and the cookie carries Max-Age, so on the same browser the
+// unlocked quote stays available, across closing and reopening it, for
+// SESSION_MS (12 hours) after the original unlock. The cookie, its signed
+// expiry and the server record are all set once, at the unlock, and never
+// renewed, so refreshing or returning never restarts the clock. After that
+// the visitor completes the quote again; lead records are kept.
 
 import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 
@@ -72,8 +78,8 @@ export function readCookie(request) {
   return null;
 }
 
-/** A browser-session cookie (no Max-Age): it ends with the browser session. @param {string} token */
-export const setCookie = (token) => `${COOKIE}=${token}; Path=/api/; HttpOnly; Secure; SameSite=Strict`;
+/** The session cookie: it lasts until the session's fixed expiry (SESSION_MS after the unlock). @param {string} token */
+export const setCookie = (token) => `${COOKIE}=${token}; Path=/api/; Max-Age=${Math.floor(SESSION_MS / 1000)}; HttpOnly; Secure; SameSite=Strict`;
 export const clearCookie = () => `${COOKIE}=; Path=/api/; Max-Age=0; HttpOnly; Secure; SameSite=Strict`;
 
 /**

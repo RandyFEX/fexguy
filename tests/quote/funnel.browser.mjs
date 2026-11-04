@@ -41,7 +41,7 @@ const step = (page) => page.evaluate(() => Number(document.querySelector('[data-
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
 const priceStatus = (page) =>
-  page.evaluate(async () => (await fetch('/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': sessionStorage.getItem('ff:quote-visit') ?? 'none-visit-00000000' }, body: JSON.stringify({ age: 60, gender: 'male', tobacco: false, coverage: 10000 }) })).status);
+  page.evaluate(async () => (await fetch('/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', 'x-quote-visit': localStorage.getItem('ff:quote-visit') ?? 'none-visit-00000000' }, body: JSON.stringify({ age: 60, gender: 'male', tobacco: false, coverage: 10000 }) })).status);
 const expected = (q) => Object.fromEntries(priceCategories(srv.engine, q).map((c) => [c.id, c.status === 'ok' ? `$${c.monthlyPremium}` : c.status]));
 
 /** The dedicated minimal layout: nothing of the regular site header, menus, promo or footer. */
@@ -528,20 +528,29 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])') && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 6000 });
     assert((await page.inputValue('#qf-adj-age')) === '70', 'selection not kept');
   });
-  await check(`${name}: a new tab starts fresh at I need pricing for a... and cannot get prices`, async () => {
+  // 12-hour quote access (Randy, November 2026): the same browser returns to its unlocked quote.
+  await check(`${name}: within 12 hours a new tab, or closing and reopening the browser, returns to the unlocked quote`, async () => {
     const tab = await ctx.newPage();
     await tab.goto(URL_);
-    await atStart(tab);
-    assert((await priceStatus(tab)) === 401, 'new tab got prices with the old cookie');
+    await tab.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    assert((await priceStatus(tab)) === 200, 'new tab lost the quote');
     await tab.close();
+    const state = await ctx.storageState();
+    const cookie = state.cookies.find((c) => c.name.startsWith('ff_') || c.path === '/api/');
+    assert(cookie && cookie.expires > Date.now() / 1000 + 11 * 3600 && cookie.expires <= Date.now() / 1000 + 12 * 3600 + 5, `cookie lifetime ${JSON.stringify(cookie)}`);
+    const reopened = await browser.newContext({ ...opts, storageState: state });
+    const p2 = await reopened.newPage();
+    await p2.goto(URL_);
+    await p2.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
+    await reopened.close();
   });
-  await check(`${name}: closing and reopening (previous cookie kept) starts fresh`, async () => {
+  await check(`${name}: another browser (the cookie without this browser's saved visit) starts fresh`, async () => {
     const state = await ctx.storageState();
     const ctx2 = await browser.newContext({ ...opts, storageState: { cookies: state.cookies, origins: [] } });
     const p2 = await ctx2.newPage();
     await p2.goto(URL_);
     await atStart(p2);
-    assert((await priceStatus(p2)) === 401, 'reopened visit got prices');
+    assert((await priceStatus(p2)) === 401, 'another browser got prices');
     await ctx2.close();
   });
   await check(`${name}: Apply Now on each card opens /facebook/ with that card's coverage and estimate (no stale values)`, async () => {
@@ -561,7 +570,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
         premium: document.querySelector('[data-fb-quote-premium]').textContent.trim(),
         labels: [...document.querySelectorAll('.fb-quote dt, .fb-quote__title')].map((e) => e.textContent.trim()),
-        handoff: JSON.parse(sessionStorage.getItem('ff:quote-handoff')),
+        handoff: JSON.parse(localStorage.getItem('ff:quote-handoff')),
       }));
       return { card, coverage, fb };
     };
@@ -573,7 +582,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
       assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
-      assert(r.fb.labels.join('|') === 'Your Selected Coverage|Coverage Amount|Estimated Monthly Rate', `labels ${r.fb.labels}`);
+      assert(r.fb.labels.join('|') === 'Your quote will remain active for the next 12 hours.|Coverage Amount|Estimated Monthly Rate', `labels ${r.fb.labels}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
@@ -635,11 +644,13 @@ await check('/facebook/ opened directly, or with a stale or invalid handoff, hid
   await p.goto(`${BASE}/facebook/`);
   assert(await p.isHidden('[data-fb-quote]'), 'summary shown on a direct visit');
   for (const bad of [
-    { v: 1, createdAt: Date.now() - 2 * 60 * 60 * 1000, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: '43.76' } },
+    { v: 1, createdAt: Date.now() - 13 * 60 * 60 * 1000, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: '43.76' } },
+    // 12-hour quote access ended (expiresAt passed), even though the handoff itself is recent.
+    { v: 1, createdAt: Date.now() - 60 * 1000, expiresAt: Date.now() - 1000, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: '43.76' } },
     { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 999999, monthlyPremium: '43.76' } },
     { v: 1, createdAt: Date.now(), origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', coverage: 10000, monthlyPremium: 'abc' } },
   ]) {
-    await p.evaluate((h) => sessionStorage.setItem('ff:quote-handoff', JSON.stringify(h)), bad);
+    await p.evaluate((h) => localStorage.setItem('ff:quote-handoff', JSON.stringify(h)), bad);
     await p.reload();
     assert(await p.isHidden('[data-fb-quote]'), `summary shown for ${JSON.stringify(bad)}`);
   }
@@ -745,6 +756,32 @@ await check('SMS: Text Me My Access Code works with the contact-step number (390
   await p3.click('[data-qf-send]');
   await p3.waitForSelector('[data-qf-verify]:not([hidden])', { timeout: 6000 });
   await c3.close();
+});
+// /facebook/ quote box (v1.3): 12-hour heading, figures twice the former 1.75rem (identical,
+// side by side on desktop, stacked on phones), the disclaimer as one-line fine print on desktop.
+await check('/facebook/ quote box v1.3: heading, large identical figures, fine-print disclaimer (390px and 1440px)', async () => {
+  for (const [w, opts] of [['390', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }], ['1440', { viewport: { width: 1440, height: 900 } }]]) {
+    const ctx = await browser.newContext(opts);
+    const p = await ctx.newPage();
+    await p.goto(`${BASE}/facebook/`);
+    await p.evaluate(() => localStorage.setItem('ff:quote-handoff', JSON.stringify({ v: 1, createdAt: Date.now(), expiresAt: Date.now() + 3600e3, origin: 'free-quote', selection: { tierId: 'lowest-preferred', tier: 'Lowest Preferred Rate', carrier: 'Mutual of Omaha', plan: 'Living Promise', coverage: 25000, monthlyPremium: '123.45' }, inputs: { age: 60, gender: 'female', tobacco: false, intendedUse: null, state: null }, attribution: {} })));
+    await p.reload();
+    await p.waitForSelector('[data-fb-quote]:not([hidden])');
+    const r = await p.evaluate(() => {
+      const box = document.querySelector('[data-fb-quote]');
+      const t = box.querySelector('.fb-quote__title'), n = box.querySelector('.fb-quote__note');
+      const dd = [...box.querySelectorAll('dd')].map((d) => ({ text: d.textContent.trim(), size: getComputedStyle(d).fontSize, weight: getComputedStyle(d).fontWeight, top: Math.round(d.getBoundingClientRect().top), right: d.getBoundingClientRect().right, scroll: d.scrollWidth <= d.clientWidth + 1 }));
+      const cs = getComputedStyle(t), ns = getComputedStyle(n);
+      return { title: t.textContent.trim(), titleColor: cs.color, titleWeight: cs.fontWeight, titleAlign: cs.textAlign, dt: [...box.querySelectorAll('dt')].map((d) => d.textContent.trim()), dd, note: n.textContent.trim(), noteSize: parseFloat(ns.fontSize), noteLines: Math.round(n.getBoundingClientRect().height / parseFloat(ns.lineHeight)), boxRight: box.getBoundingClientRect().right, vw: document.documentElement.clientWidth, docW: document.documentElement.scrollWidth };
+    });
+    assert(r.title === 'Your quote will remain active for the next 12 hours.' && r.titleColor === 'rgb(255, 255, 255)' && Number(r.titleWeight) >= 700 && r.titleAlign === 'center', `${w}: title ${JSON.stringify(r)}`);
+    assert(r.dt.join('|') === 'Coverage Amount|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
+    assert(r.dd[0].size === r.dd[1].size && r.dd[0].weight === r.dd[1].weight && parseFloat(r.dd[0].size) >= (w === '1440' ? 56 : 42), `${w}: figure sizes ${JSON.stringify(r.dd)}`);
+    assert(w === '1440' ? r.dd[0].top === r.dd[1].top : r.dd[0].top < r.dd[1].top, `${w}: layout ${JSON.stringify(r.dd)}`);
+    assert(r.dd.every((d) => d.scroll && d.right <= r.boxRight + 1) && r.docW <= r.vw, `${w}: overflow ${JSON.stringify(r)}`);
+    assert(r.note === 'Your final premium and coverage are subject to insurance company approval.' && r.noteSize <= 12 && r.noteSize >= 11 && (w === '390' || r.noteLines === 1), `${w}: note ${JSON.stringify(r)}`);
+    await ctx.close();
+  }
 });
 // First-question race (Randy, November 2026): an answer given while the page's session check is
 // still loading must not be undone when the check returns.

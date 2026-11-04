@@ -40,19 +40,21 @@ const arrival = root ? readFunnelEntry() : null;
 const track = (name: string, extra: Record<string, unknown> = {}) =>
   window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...(arrival ? entryAnalytics(arrival.entry) : {}), ...extra } }));
 
-// Visit-scoped verification (v2.7): one random visit id per browser tab,
-// in sessionStorage (gone when the tab closes; a new tab gets a new one). The
-// server only treats a session as verified for the visit it was verified in,
-// so an earlier visit never skips the questions or unlocks prices.
+// Visit-scoped verification (v2.7): one random visit id, sent with every
+// request; the server only treats a session as verified for the visit it was
+// verified in. 12-hour quote access (Randy, November 2026): the id is kept in
+// localStorage, so the same browser returns to its unlocked quote for 12
+// hours after the original unlock (the server's fixed session expiry), even
+// after closing and reopening it.
 const VISIT_KEY = 'ff:quote-visit';
 let memoryVisit = '';
 const newVisitId = () => (crypto.randomUUID?.() ?? `${Date.now()}${Math.random()}`).replace(/[^A-Za-z0-9]/g, '').slice(0, 32).padEnd(16, '0');
 function visitId() {
   try {
-    let v = sessionStorage.getItem(VISIT_KEY) ?? '';
+    let v = localStorage.getItem(VISIT_KEY) ?? '';
     if (!/^[A-Za-z0-9_-]{16,64}$/.test(v)) {
       v = newVisitId();
-      sessionStorage.setItem(VISIT_KEY, v);
+      localStorage.setItem(VISIT_KEY, v);
     }
     return v;
   } catch {
@@ -362,7 +364,7 @@ if (root) {
     if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(8);
     setStatus(verifyStatus, '');
-    unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
+    unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
   });
   resendBtn.addEventListener('click', async () => {
     resendBtn.disabled = true;
@@ -591,7 +593,10 @@ if (root) {
   adjust.addEventListener('submit', (e) => e.preventDefault());
 
   /** Reveal prices in place (no navigation, no reload). */
-  function unlock(quote: Quote, test: boolean) {
+  // When this quote access ends (the server's fixed expiry, 12 hours after the unlock).
+  let accessExpiresAt = 0;
+  function unlock(quote: Quote, test: boolean, expiresAt?: unknown) {
+    if (typeof expiresAt === 'number') accessExpiresAt = expiresAt;
     unlocked = true;
     pricing.dataset.locked = 'false';
     testBanner.hidden = !test;
@@ -738,6 +743,7 @@ if (root) {
         selection: { tierId: id, tier: String(body.category ?? cat.label), carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: shown.quote.coverage, monthlyPremium: String(body.monthlyPremium ?? cat.monthlyPremium) },
         inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, intendedUse: answers.use ?? null, state: answers.state ?? null },
         attribution,
+        ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
       });
       handoffToApplication();
     });
@@ -761,7 +767,7 @@ if (root) {
   (async () => {
     const { http, body } = await api({ action: 'session' });
     temporaryCode(body.temporaryCodeNote);
-    if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode);
+    if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
     // Only if the visitor hasn't already answered (an answer given while this
     // check was loading must not send them back to the first question).
     if (!preselect && current === 1) show(1, false);
