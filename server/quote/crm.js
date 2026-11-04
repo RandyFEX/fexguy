@@ -1,75 +1,109 @@
 // @ts-check
-// Agent CRM (GoHighLevel) delivery (Randy, November 2026, v1.2): each quote
-// lead is POSTed as JSON to the Agent CRM Inbound Webhook named in the
-// server-only variable AGENT_CRM_WEBHOOK_URL, after the lead record is saved.
-// The workflow behind the webhook creates or updates the contact and adds the
-// tag. Without the variable nothing is sent. A failure never stops the
-// visitor (rates still unlock); the outcome is logged on the lead's events
-// so a failed delivery can be resent. One delivery per lead (sent once, at
-// contact submission, when the lead id is created). The URL is never logged,
+// Agent CRM (GoHighLevel) delivery (Randy, November 2026): after a quote lead
+// is saved, the server creates or updates its contact through the GoHighLevel
+// Contacts API with the Private Integration token in the server-only
+// variables AGENT_CRM_TOKEN and AGENT_CRM_LOCATION_ID (contacts.write):
+//   1. POST /contacts/upsert    name, phone, state, source (the location's own
+//      duplicate rules match an existing contact; empty values are never sent)
+//   2. POST /contacts/:id/tags  adds "Funeral Funds - Website Quote" (existing
+//      tags are kept)
+//   3. POST /contacts/:id/notes the quote details, estimated monthly rates,
+//      attribution, consent and verification status, and the lead id
+// Without the variables nothing is sent. A failure never stops the visitor
+// (rates still unlock); the outcome is logged on the lead's events so a
+// failed delivery can be resent. One delivery per lead (at contact
+// submission, when the lead id is created). The token is never logged,
 // returned or sent to the browser.
 
-const TIMEOUT_MS = 4000;
+export const CRM_TAG = 'Funeral Funds - Website Quote';
+const API = 'https://services.leadconnectorhq.com';
+const TIMEOUT_MS = 5000;
 
-/** @param {string} e164 */
-const nationalPhone = (e164) => e164.replace(/^\+1/, '');
+/** @param {Record<string, unknown>} o */
+const compact = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined && v !== null && v !== ''));
+
+/** @param {any} record */
+export function leadSource(record) {
+  const s = record.source ?? {};
+  return s.trafficSource || s.utmSource || (s.entryType === 'article-sidebar' ? 'Article sidebar' : '') || 'Website';
+}
+
+/** Contact fields for the upsert. @param {any} record @param {string} locationId */
+export function crmContact(record, locationId) {
+  const [first, ...rest] = String(record.firstName ?? '').trim().split(/\s+/);
+  return compact({ locationId, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: 'Funeral Funds Website Quote' });
+}
 
 /**
- * The webhook body: flat keys so Agent CRM can map them. Empty values are left
- * out, so the CRM never overwrites a contact's details with blanks.
- * @param {any} record the saved lead record
+ * The note: everything Randy needs for the call.
+ * @param {any} record
+ * @param {{ label: string, monthlyPremium?: string | null, status: string }[]} [rates]
  */
-export function crmPayload(record) {
-  const name = String(record.firstName ?? '').trim();
-  const [first, ...rest] = name.split(/\s+/);
-  const s = record.source ?? {};
+export function crmNote(record, rates = []) {
   const q = record.quoteAtSubmission ?? {};
-  /** @type {Record<string, unknown>} */
-  const out = {
-    lead_id: record.leadId,
-    phone: nationalPhone(record.phone),
-    first_name: first,
-    last_name: rest.join(' '),
-    state: record.state,
-    coverage_amount: q.coverage,
-    estimated_monthly_rate: record.estimatedMonthlyRate,
-    lead_source: s.trafficSource || s.utmSource || (s.entryType === 'article-sidebar' ? 'Article sidebar' : '') || 'Website',
-    utm_source: s.utmSource,
-    utm_medium: s.utmMedium,
-    utm_campaign: s.utmCampaign,
-    landing_page: s.landingPage,
-    age: q.age,
-    gender: q.gender,
-    tobacco: typeof q.tobacco === 'boolean' ? (q.tobacco ? 'yes' : 'no') : undefined,
-    intended_use: record.intendedUse?.label,
-    consent_given: record.consent?.given ? 'yes' : 'no',
-    consent_at: record.consent?.given ? record.consent.at : undefined,
-    phone_verified: 'no',
-    submitted_at: record.submittedAt,
-    test_lead: /^\s*test\b/i.test(name) ? 'yes' : undefined,
-  };
-  for (const [k, v] of Object.entries(out)) if (v === undefined || v === null || v === '') delete out[k];
-  return out;
+  const s = record.source ?? {};
+  const v = record.verification ?? {};
+  const money = (/** @type {number} */ n) => `$${Number(n).toLocaleString('en-US')}`;
+  const lines = [
+    /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
+    'Funeral Funds website quote',
+    `Lead ID: ${record.leadId}`,
+    `Submitted: ${record.submittedAt}`,
+    q.coverage ? `Coverage requested: ${money(q.coverage)}` : null,
+    ...rates.filter((r) => r.status === 'ok' && r.monthlyPremium).map((r) => `Estimated monthly rate, ${r.label}: $${r.monthlyPremium}`),
+    q.age ? `Age: ${q.age}` : null,
+    q.gender ? `Gender: ${q.gender === 'female' ? 'Female' : 'Male'}` : null,
+    typeof q.tobacco === 'boolean' ? `Tobacco: ${q.tobacco ? 'Yes' : 'No'}` : null,
+    record.intendedUse?.label ? `Intended use: ${record.intendedUse.label}` : null,
+    record.state ? `State: ${record.state}` : null,
+    `Lead source: ${leadSource(record)}`,
+    s.utmSource ? `UTM source: ${s.utmSource}` : null,
+    s.utmMedium ? `UTM medium: ${s.utmMedium}` : null,
+    s.utmCampaign ? `UTM campaign: ${s.utmCampaign}` : null,
+    s.utmContent ? `UTM content: ${s.utmContent}` : null,
+    s.landingPage ? `Landing page: ${s.landingPage}` : null,
+    s.originUrl ? `Article: ${s.originUrl}` : null,
+    record.consent?.given ? `Consent to calls/texts: Yes (${record.consent.at}, ${record.consent.version})` : 'Consent to calls/texts: Not given (box left unchecked)',
+    `Phone verification at submission: ${v.provider === 'temporary-public-test-code' ? 'not SMS-verified (temporary access code)' : 'pending'}`,
+  ];
+  return lines.filter(Boolean).join('\n');
 }
 
 /**
  * @param {Record<string, string | undefined>} env
- * @param {any} record
+ * @param {any} record the saved lead record
+ * @param {{ label: string, monthlyPremium?: string | null, status: string }[]} [rates]
  * @param {typeof fetch} [fetchImpl]
- * @returns {Promise<{ sent: boolean, ok?: boolean, status?: number, error?: string }>}
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string }>}
  */
-export async function sendLeadToCrm(env, record, fetchImpl = fetch) {
-  const url = env.AGENT_CRM_WEBHOOK_URL ?? '';
-  if (!/^https:\/\/[^\s]+$/.test(url)) return { sent: false };
-  try {
-    const res = await fetchImpl(url, {
+export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch) {
+  const token = env.AGENT_CRM_TOKEN ?? '';
+  const locationId = env.AGENT_CRM_LOCATION_ID ?? '';
+  if (!token || !locationId) return { sent: false };
+  const call = async (/** @type {string} */ path, /** @type {unknown} */ body) => {
+    const res = await fetchImpl(`${API}${path}`, {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(crmPayload(record)),
+      headers: { authorization: `Bearer ${token}`, version: '2021-07-28', 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify(body),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
-    return { sent: true, ok: res.ok, status: res.status };
+    /** @type {any} */
+    let data = null;
+    try { data = await res.json(); } catch {}
+    return { res, data };
+  };
+  let step = 'upsert';
+  try {
+    const up = await call('/contacts/upsert', crmContact(record, locationId));
+    const contactId = up.data?.contact?.id;
+    if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
+    step = 'tags';
+    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [CRM_TAG] });
+    step = 'note';
+    const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: crmNote(record, rates) });
+    const ok = tag.res.ok && note.res.ok;
+    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true };
   } catch (e) {
-    return { sent: true, ok: false, error: e instanceof Error ? e.name : 'error' };
+    return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
 }

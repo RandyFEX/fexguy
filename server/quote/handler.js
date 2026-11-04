@@ -181,10 +181,19 @@ export async function handleQuote(request, env, deps) {
       // The lead is saved before anything else can fail.
       await store.putLead(leadId, record);
       await store.indexPhone(phoneHash, leadId);
-      // Agent CRM (v1.2): sent after the lead is saved, alongside the code request;
+      // Agent CRM: the contact is created or updated after the lead is saved,
+      // alongside the code request (with the three estimated monthly rates);
       // its outcome is logged on the lead and never changes the visitor's response.
-      const [sent, crm] = await Promise.all([verify.start(phone), test ? Promise.resolve({ sent: false }) : sendLeadToCrm(env, record, deps.fetchImpl)]);
-      if (crm.sent) await store.event(leadId, { at: iso, type: crm.ok ? 'crm-delivered' : 'crm-delivery-failed', status: crm.status ?? null, error: crm.error ?? null }).catch(() => {});
+      const toCrm = async () => {
+        const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
+        /** @type {any[]} */
+        let rates = [];
+        try { rates = loaded ? priceCategories(loaded.engine, quote) : []; } catch {}
+        return sendLeadToCrm(env, record, rates, deps.fetchImpl);
+      };
+      /** @type {[any, { sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string }]} */
+      const [sent, crm] = await Promise.all([verify.start(phone), test ? Promise.resolve({ sent: false }) : toCrm().catch(() => ({ sent: true, ok: false, error: 'error' }))]);
+      if (crm.sent) await store.event(leadId, { at: iso, type: crm.ok ? 'crm-delivered' : 'crm-delivery-failed', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null }).catch(() => {});
       record.verification.startSid = sent.ok ? sent.sid : null;
       if (!sent.ok) record.verification.status = 'send-failed';
       await store.putLead(leadId, record);
