@@ -1,9 +1,8 @@
 ---
 // "What Does Final Expense Life Insurance Cover?": a short explanation on the
-// white background between Why FEXGuy and "What I Help People With".
-// Same heading scale as the other sections, without a gold rule of its own:
-// the services section's gold rule follows it. No top/bottom band: the
-// services section's own top padding separates the two.
+// white background between Why FEXGuy and the reviews (the "What I Help
+// People With" section was removed in the V1.0 homepage cleanup, Randy,
+// November 2026). Same heading scale as the other sections, no gold rule.
 import { coverage } from '@/lib/home/content';
 ---
 
@@ -16,7 +15,7 @@ import { coverage } from '@/lib/home/content';
 
 <style>
   .cover {
-    padding-top: var(--space-12);
+    padding-block: var(--space-12);
   }
   .cover__title {
     max-width: none;
