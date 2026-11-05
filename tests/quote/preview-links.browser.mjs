@@ -8,6 +8,7 @@
 //   node tests/quote/preview-links.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer } from './funnel-server.mjs';
+import { renderSVG } from 'uqr';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
@@ -108,7 +109,7 @@ await check('texting handoff V4.3 at 320, 375, 390, 430 and 1280px: exact wordin
         weights: { reassure: Number(c(re).fontWeight), label: Number(c(timer).fontWeight), digits: Number(c(timer.querySelector('[data-fb-offer-time]')).fontWeight) },
         sizes: { h1: parseFloat(c(h1).fontSize), reassure: parseFloat(c(re).fontSize), timer: parseFloat(c(timer).fontSize), largest: [...document.querySelectorAll('.fb-hero h2, .fb-hero h3, .fb-hero p, [data-fb-text]')].every((e) => parseFloat(c(e).fontSize) < parseFloat(c(h1).fontSize)) },
         noteLines: Math.round(note.getBoundingClientRect().height / parseFloat(getComputedStyle(note).lineHeight)), noteFs: parseFloat(getComputedStyle(note).fontSize),
-        smsBody: btn.dataset.smsBody, copy: !document.querySelector('[data-fb-copy]').hidden,
+        smsBody: btn.dataset.smsBody, copy: !!document.querySelector('[data-fb-copy]').getClientRects().length, qr: !document.querySelector('[data-fb-qr]').hidden,
         white: [h1, re, note].every((e) => c(e).color === 'rgb(255, 255, 255)') && [h1, re, note].every((e) => c(e).textAlign === 'center'),
         oneLine: rg.getClientRects().length === 1 && i.right <= t.left + 1 && Math.abs(i.top + i.height / 2 - (t.top + t.height / 2)) <= 3,
         centered: Math.abs((i.left + t.right) / 2 - (b.left + b.right) / 2) <= 2,
@@ -126,8 +127,8 @@ await check('texting handoff V4.3 at 320, 375, 390, 430 and 1280px: exact wordin
     // The prewritten text: the sample's first name (from its own session), coverage and premium.
     assert(r.smsBody === 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.', `${w}px text ${r.smsBody}`);
     assert(r.order && r.white && r.oneLine && r.centered && r.fits && r.smaller && !r.hscroll && r.bg === 'rgb(194, 65, 12)' && r.h === 56 && r.fs === '22px', `${w}px ${JSON.stringify(r)}`);
-    // Native SMS activation V1.2: the Agent CRM number +1 888-672-0762 with the prewritten text (desktop/Android format), and the copy fallback.
-    assert(r.href === `sms:+18886720762?body=${encodeURIComponent(r.smsBody)}` && r.copy, `${w}px ${JSON.stringify(r)}`);
+    // Device-aware V1.4 (a desktop browser here): the button points at the QR panel, which (with its copy link) stays hidden until clicked.
+    assert(r.href === '#fb-qr' && !r.qr && !r.copy, `${w}px ${JSON.stringify(r)}`);
     if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-${w}.png` });
     sizes.push(`${w}: ${r.h}px`);
   }
@@ -135,7 +136,7 @@ await check('texting handoff V4.3 at 320, 375, 390, 430 and 1280px: exact wordin
   return sizes.join(', ');
 });
 
-await check('native SMS V1.2: iPhone and Android links to +1 888-672-0762 with the prewritten text; copy fallback copies it; nothing is sent', async () => {
+await check('native SMS V1.4: iPhone and Android links to +1 888-672-0762 with the prewritten text; no QR or copy link on phones; nothing is sent', async () => {
   const out = [];
   for (const [n, d, want] of [['iPhone 13', devices['iPhone 13'], '&body='], ['Pixel 7', devices['Pixel 7'], '?body=']]) {
     const { ctx, page } = await fresh(d);
@@ -148,15 +149,37 @@ await check('native SMS V1.2: iPhone and Android links to +1 888-672-0762 with t
     const body = 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
     assert(href === `sms:+18886720762${want}${encodeURIComponent(body)}`, `${n} ${href}`);
     assert(decodeURIComponent(href.split(want)[1]) === body, `${n} body`);
-    await page.click('[data-fb-copy]');
-    const copied = await page.evaluate(() => navigator.clipboard.readText()).catch(() => null);
-    assert((copied === null || copied === body) && (await page.textContent('[data-fb-copy]')).trim() === 'Message copied', `${n} copy ${copied}`);
+    assert(!(await page.isVisible('[data-fb-qr]')) && !(await page.isVisible('[data-fb-copy]')), `${n} QR or copy link shown on a phone`);
     // The site itself sends nothing: only the preview sample session, the price check and the session read.
     assert(posts.every((p) => /^\/api\/(quote|price-explorer)\/ /.test(p) && !/"action":"(start|resend|check|apply)"/.test(p)), `${n} requests ${posts.join(' | ')}`);
     out.push(`${n}: ${href.slice(0, 26)}`);
     await ctx.close();
   }
   return out.join(', ');
+});
+
+await check('desktop V1.4: PREPARE MY TEXT shows the QR code (SMSTO to +1 888-672-0762 with the prewritten text), launches nothing, copy fallback works', async () => {
+  const { ctx, page } = await fresh({ viewport: { width: 1280, height: 900 } });
+  await ctx.grantPermissions(['clipboard-read', 'clipboard-write']).catch(() => {});
+  const navs = [];
+  page.on('framenavigated', (f) => { if (f === page.mainFrame()) navs.push(f.url()); });
+  await page.goto(`${srv.base}/facebook/?preview=apply`);
+  await page.waitForFunction(() => document.querySelector('[data-fb-text]').getAttribute('href') === '#fb-qr', null, { timeout: 10000 });
+  assert(!(await page.isVisible('[data-fb-qr]')), 'QR shown before the click');
+  const before = navs.length;
+  await page.click('[data-fb-text]');
+  await page.waitForSelector('[data-fb-qr]:not([hidden]) svg', { timeout: 5000 });
+  const q = await page.evaluate(() => ({ text: document.querySelector('[data-fb-qr-code]').dataset.qrText, svg: document.querySelector('[data-fb-qr-code]').innerHTML, note: document.querySelector('.fb-qr__note').textContent.trim(), url: location.pathname + location.search + location.hash, expanded: document.querySelector('[data-fb-text]').getAttribute('aria-expanded'), w: Math.round(document.querySelector('.fb-qr__code').getBoundingClientRect().width) }));
+  const want = 'SMSTO:+18886720762:Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
+  const pattern = (svg) => [...svg.matchAll(/\sd="([^"]+)"/g)].map((m) => m[1]).join('|');
+  assert(q.text === want && pattern(q.svg) && pattern(q.svg) === pattern(renderSVG(want, { ecc: 'M', border: 2 })), `QR payload ${q.text}`);
+  assert(q.note === 'Scan this code with your cellphone to open your prepared text.' && q.url === '/facebook/' && navs.length === before && q.expanded === 'true' && q.w <= 180, JSON.stringify(q));
+  if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-qr-desktop.png` });
+  await page.click('[data-fb-copy]');
+  const copied = await page.evaluate(() => navigator.clipboard.readText()).catch(() => null);
+  assert((copied === null || copied === 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.') && (await page.textContent('[data-fb-copy]')).trim() === 'Message copied', `copy ${copied}`);
+  await ctx.close();
+  return `${q.w}px QR`;
 });
 
 await check('the normal funnel is unchanged: /free-quote/ without ?preview= starts at the first question', async () => {

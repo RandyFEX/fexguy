@@ -165,8 +165,14 @@ const advantage = [
             <span>PREPARE MY TEXT</span>
           </a>
           <p class="fb-text__note">Just review your prewritten text in your messaging app and hit Send.</p>
-          <!-- Fallback where a device can't fill in the text: copy it instead. -->
-          <button class="fb-text__copy" type="button" data-fb-copy hidden>Copy my message</button>
+          <!-- Device-aware handoff V1.4: on a computer, PREPARE MY TEXT shows this QR
+               code (generated in the browser, src/scripts/sms-link.js qrPayload)
+               instead of opening an app; the copy link is its discreet fallback. -->
+          <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
+            <p class="fb-qr__note">Scan this code with your cellphone to open your prepared text.</p>
+            <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code for your prepared text"></div>
+            <button class="fb-text__copy" type="button" data-fb-copy>Copy my message</button>
+          </div>
         </div>
       </div>
     </section>
@@ -266,7 +272,7 @@ const advantage = [
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
   import { SMS_NUMBER as SMS } from '@/config/phones';
-  import { isIOS, prewrittenText, smsHref } from '@/scripts/sms-link.js';
+  import { isIOS, isMobileDevice, prewrittenText, qrPayload, smsHref } from '@/scripts/sms-link.js';
 
   // Phone number by traffic source (Randy, November 2026): the page is built
   // with the main website number (also the fallback without JavaScript);
@@ -352,10 +358,33 @@ const advantage = [
     btn.dataset.smsBody = body;
     const href = smsHref(SMS, body, isIOS(navigator));
     if (!href) return;
-    btn.href = href;
     btn.setAttribute('aria-disabled', 'false');
-    if (copy && navigator.clipboard) {
-      copy.hidden = false;
+    // Device-aware handoff V1.4: phones open the messaging app directly.
+    if (isMobileDevice(navigator)) {
+      btn.href = href;
+      return;
+    }
+    // Computers (and unusual browsers): the click shows a QR code with the same
+    // number and text; nothing is launched. The QR library loads only here.
+    const panel = document.querySelector<HTMLElement>('[data-fb-qr]');
+    const code = panel?.querySelector<HTMLElement>('[data-fb-qr-code]');
+    const payload = qrPayload(SMS, body);
+    if (!panel || !code || !payload) return;
+    btn.href = '#fb-qr';
+    btn.setAttribute('aria-controls', 'fb-qr');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (!code.dataset.qrText) {
+        const { renderSVG } = await import('uqr');
+        code.innerHTML = renderSVG(payload, { ecc: 'M', border: 2 });
+        code.dataset.qrText = payload;
+      }
+      panel.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+    });
+    if (copy) {
+      if (!navigator.clipboard) copy.hidden = true;
       copy.addEventListener('click', async () => {
         try {
           await navigator.clipboard.writeText(body);
@@ -549,6 +578,35 @@ const advantage = [
   }
   .fb-text__copy[hidden] {
     display: none;
+  }
+  /* V1.4: the desktop QR code, compact, on white so phones can scan it. */
+  .fb-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-1);
+  }
+  .fb-qr[hidden] {
+    display: none;
+  }
+  .fb-qr__note {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+  .fb-qr__code {
+    width: 11rem;
+    padding: var(--space-2);
+    background: #ffffff;
+    border-radius: var(--radius);
+  }
+  .fb-qr__code svg {
+    display: block;
+    width: 100%;
+    height: auto;
   }
   /* V4.3: the reassurance (bold) and the countdown label (regular) share one
      size; the countdown digits stay yellow and bold. */
