@@ -18,7 +18,12 @@ import { leadSourceFields, recordVisit } from '@/scripts/lead-source';
 import { entryAnalytics, entrySource, readFunnelEntry } from '@/scripts/quote-entry';
 import { saveHandoff } from '@/scripts/quote-handoff';
 import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
+import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
+
+// Direct preview access (preview and local builds only): ?preview=results
+// opens the real results with the fixed sample (src/scripts/quote-preview.ts).
+const preview = previewRequest() === 'results' ? startPreviewVisit() : null;
 
 // The session's traffic source (first landing, UTM, ad click) is kept for
 // /facebook/'s phone number and the lead record (src/scripts/lead-source.ts).
@@ -801,6 +806,10 @@ if (root) {
     show(2);
   }
   (async () => {
+    if (preview) {
+      const r = await previewSession(preview).catch(() => null);
+      if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) return unlock(r.body.quote as Quote, true, r.body.expiresAt);
+    }
     const { http, body } = await api({ action: 'session' });
     temporaryCode(body.temporaryCodeNote);
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);

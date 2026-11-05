@@ -32,6 +32,9 @@ import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 
 export const PENDING_MS = 10 * 60 * 1000;
+/** Direct preview access (preview/local only): the one fixed sample record and its quote. */
+export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
+export const PREVIEW_SAMPLE_QUOTE = Object.freeze({ age: 60, gender: 'male', tobacco: false, coverage: 10000 });
 export const RESEND_COOLDOWN_MS = 30 * 1000;
 export const MAX_RESENDS = 3;
 export const MAX_ATTEMPTS = 5;
@@ -276,7 +279,7 @@ export async function handleQuote(request, env, deps) {
       if (!v) return json(200, { status: 'not-verified', ...temp });
       const record = await store.getLead(v.leadId);
       if (!record) return json(200, { status: 'not-verified', ...temp });
-      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test', expiresAt: v.exp });
+      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp });
     }
 
     case 'apply': {
@@ -299,7 +302,7 @@ export async function handleQuote(request, env, deps) {
       await store.event(v.leadId, { at: iso, type: 'apply-now', ...application });
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
       const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
-      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test', saved: true, intake });
+      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test' || record.mode === 'preview-sample', saved: true, intake });
     }
 
     // "Call to Get Approved" tap on a revealed card (v3.7): a first-party
@@ -367,6 +370,41 @@ export async function handleQuote(request, env, deps) {
       }
       const next = plan.questions[intake.answers.length];
       return json(200, { status: 'question', question: publicQuestion(next, intake.answers.length + 1, plan.questions.length) });
+    }
+
+    // Direct preview access (Randy, November 2026, V1.1): PREVIEW AND LOCAL
+    // ONLY. Opens this visit's quote results with a fixed, non-personal
+    // sample, without the contact step, an SMS or a CRM delivery: one fixed
+    // sample record (mode 'preview-sample', reset on every use) in the
+    // preview store and a normal visit-scoped session. Refused on the
+    // production deployment and whenever real verification is configured.
+    case 'preview-sample': {
+      if (env.VERCEL_ENV === 'production' || !test) return json(404, { status: 'not-found' });
+      const visit = visitOf(request);
+      if (!visit) return bad('Please reload the page and try again.');
+      const over = await store.limit([{ key: `pv:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: 60, windowMs: HOUR }]);
+      if (over) return json(429, { status: 'rate-limited', message: 'Too many preview requests. Please try again later.' });
+      const record = {
+        leadId: PREVIEW_SAMPLE_LEAD,
+        mode: 'preview-sample',
+        sample: true,
+        firstName: 'Preview Sample',
+        phone: null,
+        state: 'Texas',
+        intendedUse: { value: 'burial', label: INTENDED_USES.burial },
+        submittedAt: iso,
+        consent: { given: false, action: 'preview sample (no visitor)', at: iso, version: null, text: null },
+        verification: { status: 'preview-sample', requestedAt: iso, verifiedAt: null, provider: 'preview-sample', startSid: null, checkSid: null, phoneVerified: false },
+        quoteAtSubmission: PREVIEW_SAMPLE_QUOTE,
+        source: { entryType: 'direct' },
+        client: { ip: null, userAgent: null },
+        applications: [],
+      };
+      await store.putLead(PREVIEW_SAMPLE_LEAD, record);
+      const sid = newSid();
+      const exp = now + SESSION_MS;
+      await store.putSession(sid, { lid: PREVIEW_SAMPLE_LEAD, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
+      return json(200, { status: 'verified', quote: PREVIEW_SAMPLE_QUOTE, testMode: true, sample: true, expiresAt: exp }, { 'Set-Cookie': setCookie(sign(key, { sid, lid: PREVIEW_SAMPLE_LEAD, exp })) });
     }
 
     // Start New Quote: end this visit's verified session. The lead's

@@ -251,6 +251,7 @@ const advantage = [
 <script>
   import { readHandoff } from '@/scripts/quote-handoff';
   import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
+  import { preparePreviewApply, previewRequest } from '@/scripts/quote-preview';
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
 
@@ -286,6 +287,9 @@ const advantage = [
 
   // Apply Now from /free-quote/: show the selected coverage and server-priced
   // estimate. Missing, stale or invalid data keeps the summary hidden.
+  // Direct preview access (preview and local builds only): ?preview=apply
+  // first saves the fixed sample's selection (src/scripts/quote-preview.ts).
+  const showSelectedQuote = () => {
   const handoff = readHandoff();
   const quoteBox = document.querySelector<HTMLElement>('[data-fb-quote]');
   const coverageOut = quoteBox?.querySelector<HTMLElement>('[data-fb-quote-coverage]');
@@ -311,6 +315,9 @@ const advantage = [
       });
     }
   }
+  };
+  if (previewRequest() === 'apply') void preparePreviewApply().finally(showSelectedQuote);
+  else showSelectedQuote();
 
   // Browsers only scroll a focused field into view when it is outside the
   // window, so a field partly behind the fixed mobile call bar stays there.
