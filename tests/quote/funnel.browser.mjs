@@ -142,10 +142,11 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  // Texting page V1.1: the hero button is Prepare My Text (no SMS number configured yet: no link);
+  // Texting handoff: the hero button is PREPARE MY TEXT, an sms: link to the Agent CRM number once the
+  // visitor's session has answered (no tel: link);
   // the other three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === 'PREPARE MY TEXT' && f.text.icon && f.text.href === null && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === 'PREPARE MY TEXT' && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -568,7 +569,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       await page.click(`[data-qf-card="${id}"] [data-qf-apply]`);
       await page.waitForURL(/\/facebook\//, { timeout: 8000 });
       await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+      await page.waitForFunction(() => document.querySelector('[data-fb-text]')?.getAttribute('href'), null, { timeout: 5000 });
       const fb = await page.evaluate(() => ({
+        sms: document.querySelector('[data-fb-text]').getAttribute('href'),
         url: location.pathname + location.search,
         title: document.querySelector('#fb-title').textContent.trim(),
         coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
@@ -587,6 +590,10 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Selected", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
       assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
+      // Native SMS V1.2: the prewritten text carries this visitor's first name and this card's coverage and premium.
+      const prem = r.card.replace(/\.00$/, '');
+      const text = `Hi, this is ${NAMES[name].split(' ')[0]}. I have a few questions about my ${cov} final expense insurance quote for ${prem}/month.`;
+      assert(r.fb.sms === `sms:+18886720762?body=${encodeURIComponent(text)}` || r.fb.sms === `sms:+18886720762&body=${encodeURIComponent(text)}`, `${id} sms ${r.fb.sms}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');

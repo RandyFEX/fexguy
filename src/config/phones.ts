@@ -14,12 +14,12 @@ export const PAGE_PHONES = {
 
 export type PagePhoneKey = keyof typeof PAGE_PHONES;
 
-/** The approved SMS-capable Funeral Funds number for the Ready to Apply
- * page's "Prepare My Text" button (Randy, November 2026, texting page V1.1),
- * as 10 digits. NOT SET YET: until Randy supplies it the button opens no
- * messaging app. Never fill in the voice number (888-862-9456) unless Randy
- * confirms that it receives texts. */
-export const SMS_NUMBER: string | null = null;
+/** The Agent CRM SMS number for the Ready to Apply page's "PREPARE MY TEXT"
+ * button (Randy, November 2026, native SMS activation V1.2): +1 888-672-0762,
+ * shown in Agent CRM as SMS-capable and toll-free verified. Only the sms:
+ * link uses it (the visitor's own messaging app, the visitor presses Send);
+ * it is never shown as a calling number. 10 digits; null turns the button off. */
+export const SMS_NUMBER: string | null = '8886720762';
 
 /** Swaps the website number (in its link, dashed and parenthesized forms)
  * for a page's own number in shared markup such as the footer. */
