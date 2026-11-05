@@ -75,14 +75,14 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       url: location.pathname + location.search,
       hscroll: document.documentElement.scrollWidth > innerWidth,
     }));
-    assert(r.h1 === "Here's the Info You Selected" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
+    assert(r.h1 === "Here's What You Selected" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
     if (OUT) await page.screenshot({ path: `${OUT}/preview-apply-${name}.png`, fullPage: true });
     await ctx.close();
     return `${r.dd.join(' / ')}`;
   });
 }
 
-await check('texting handoff V4.1 at 320, 375, 390, 430 and 1280px: exact wording and order, one-line Prepare My Text, prewritten text, no 888 number in the section, no SMS link without the approved number', async () => {
+await check('texting handoff V4.3 at 320, 375, 390, 430 and 1280px: exact wording and order, one-line Prepare My Text, prewritten text, no 888 number in the section, no SMS link without the approved number', async () => {
   const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
   await page.goto(`${srv.base}/facebook/?preview=apply`);
   await page.waitForSelector('[data-fb-quote]:not([hidden])', { timeout: 10000 });
@@ -105,6 +105,8 @@ await check('texting handoff V4.1 at 320, 375, 390, 430 and 1280px: exact wordin
         card: [...box.querySelectorAll('dt, dd')].map((e) => e.textContent.trim()),
         heroNumbers: /\d{3}-\d{3}-\d{4}|\(\d{3}\) \d{3}-\d{4}/.test(document.querySelector('.fb-hero').innerText) || !!document.querySelector('.fb-hero a[href^="tel:"]'),
         timer: timer.textContent.trim(), timerYellow: getComputedStyle(timer.querySelector('[data-fb-offer-time]')).color === 'rgb(255, 235, 59)',
+        weights: { reassure: Number(c(re).fontWeight), label: Number(c(timer).fontWeight), digits: Number(c(timer.querySelector('[data-fb-offer-time]')).fontWeight) },
+        sizes: { h1: parseFloat(c(h1).fontSize), reassure: parseFloat(c(re).fontSize), timer: parseFloat(c(timer).fontSize), largest: [...document.querySelectorAll('.fb-hero h2, .fb-hero h3, .fb-hero p, [data-fb-text]')].every((e) => parseFloat(c(e).fontSize) < parseFloat(c(h1).fontSize)) },
         noteLines: Math.round(note.getBoundingClientRect().height / parseFloat(getComputedStyle(note).lineHeight)), noteFs: parseFloat(getComputedStyle(note).fontSize),
         smsBody: btn.dataset.smsBody, copy: !document.querySelector('[data-fb-copy]').hidden,
         white: [h1, re, note].every((e) => c(e).color === 'rgb(255, 255, 255)') && [h1, re, note].every((e) => c(e).textAlign === 'center'),
@@ -115,8 +117,10 @@ await check('texting handoff V4.1 at 320, 375, 390, 430 and 1280px: exact wordin
         href: btn.getAttribute('href'), hscroll: document.documentElement.scrollWidth > innerWidth,
       };
     });
-    assert(r.h1 === "Here's the Info You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && r.label === 'PREPARE MY TEXT' && r.note === "Just review your prewritten text in your messaging app and hit Send.", JSON.stringify(r));
+    assert(r.h1 === "Here's What You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && r.label === 'PREPARE MY TEXT' && r.note === "Just review your prewritten text in your messaging app and hit Send.", JSON.stringify(r));
     assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$61.69']) && !r.heroNumbers, `${w}px card/number ${JSON.stringify(r)}`);
+    // V4.3: bold reassurance and regular countdown label at one size; yellow bold digits; the headline is the largest text.
+    assert(r.weights.reassure >= 700 && r.weights.label === 400 && r.weights.digits >= 700 && r.sizes.reassure === r.sizes.timer && r.sizes.reassure === 18 && r.sizes.largest, `${w}px type ${JSON.stringify(r.weights)} ${JSON.stringify(r.sizes)}`);
     // V4.1: the countdown label and the instruction on one line on desktop (wrapping only on phones, same size).
     assert(/^Please respond within: (2:00|1:5\d)$/.test(r.timer) && r.timerYellow && r.noteFs === 15 && (w === 1280 ? r.noteLines === 1 : r.noteLines <= 2), `${w}px timer/note ${JSON.stringify(r)}`);
     // The prewritten text: the sample's first name (from its own session), coverage and premium.

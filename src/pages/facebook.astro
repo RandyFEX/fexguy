@@ -139,7 +139,7 @@ const advantage = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Here's the Info You Selected</h1>
+        <h1 class="fb-hero__title" id="fb-title">Here's What You Selected</h1>
         <!-- Texting page V1.1: shown with the selected quote (below) only. -->
         <p class="fb-hero__reassure" data-fb-reassure hidden>Don't worry, you can always adjust these amounts later.</p>
         <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
@@ -550,9 +550,12 @@ const advantage = [
   .fb-text__copy[hidden] {
     display: none;
   }
+  /* V4.3: the reassurance (bold) and the countdown label (regular) share one
+     size; the countdown digits stay yellow and bold. */
   .fb-hero__reassure {
     margin: calc(-1 * var(--space-2)) 0 var(--space-3);
-    font-size: 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
     line-height: 1.4;
     color: #ffffff;
     text-align: center;
@@ -650,7 +653,7 @@ const advantage = [
   .fb-offer {
     margin: calc(-1 * var(--space-2)) 0 var(--space-4);
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.4;
   }
   .fb-offer[hidden],

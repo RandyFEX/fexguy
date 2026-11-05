@@ -584,7 +584,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (seen.length) await results();
       const r = await applyAndRead(id);
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
-      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's the Info You Selected", `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Selected", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
       assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       const h = r.fb.handoff;
