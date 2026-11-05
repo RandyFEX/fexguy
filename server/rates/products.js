@@ -13,11 +13,13 @@
 /** @typedef {'non-tobacco' | 'tobacco' | 'any'} TobaccoClass */
 
 export const PRODUCTS = {
-  'aetna-accendo-standard': {
-    id: 'aetna-accendo-standard',
+  // V4.8 (Randy, November 2026): the funnel prices Aetna's Preferred class
+  // (it replaced the Standard class; Randy's explicit decision).
+  'aetna-accendo-preferred': {
+    id: 'aetna-accendo-preferred',
     carrier: 'Aetna CVS / Accendo Insurance Company',
     product: 'Final Expense Whole Life, Level plan',
-    planClass: 'Standard',
+    planClass: 'Preferred',
     policyFee: '40',
     modalFactor: '0.0875',
     modalMode: 'Monthly EFT',

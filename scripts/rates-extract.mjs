@@ -26,8 +26,9 @@ const sha256 = (pdf) => createHash('sha256').update(readFileSync(pdf)).digest('h
 /** Aetna/Accendo rate card (page 2): each row is
  *  age | Super Preferred M NS, M S, F NS, F S | Preferred M NS, M S, F NS, F S |
  *  age | Standard M NS, M S, F NS, F S | Modified M NS, M S, F NS, F S (to age 75).
- *  Only the four Standard columns are taken. */
-export function parseAetnaStandard(text, page = 2) {
+ *  V4.8 (Randy, November 2026): only the four Preferred columns are taken
+ *  (columns 5-8 of the left-hand group). */
+export function parseAetnaPreferred(text, page = 2) {
   const records = [];
   const num = '\\d+\\.\\d{2}';
   const row = new RegExp(`(?:^|\\s)(\\d{2})\\s+((?:${num}\\s+){8})(\\d{2})\\s+((?:${num}\\s*){4,8})$`);
@@ -36,9 +37,9 @@ export function parseAetnaStandard(text, page = 2) {
     if (!m) continue;
     const [age1, age2] = [Number(m[1]), Number(m[3])];
     if (age1 !== age2) throw new Error(`Aetna row ages differ: ${line.trim()}`);
-    const right = m[4].trim().split(/\s+/);
-    if (right.length !== 4 && right.length !== 8) throw new Error(`Aetna row has ${right.length} right-hand values: ${line.trim()}`);
-    const [mNs, mS, fNs, fS] = right.slice(0, 4);
+    const left = m[2].trim().split(/\s+/);
+    if (left.length !== 8) throw new Error(`Aetna row has ${left.length} left-hand values: ${line.trim()}`);
+    const [mNs, mS, fNs, fS] = left.slice(4, 8);
     records.push(
       { issueAge: age1, gender: 'male', tobacco: 'non-tobacco', annualRatePer1000: mNs, sourcePage: page },
       { issueAge: age1, gender: 'male', tobacco: 'tobacco', annualRatePer1000: mS, sourcePage: page },
@@ -125,7 +126,7 @@ export const GERBER_DERIVATION =
   'issue age and gender. printedPremiums holds the card values exactly as printed.';
 
 const EXTRACTORS = {
-  aetna: { productId: 'aetna-accendo-standard', page: 2, parse: parseAetnaStandard },
+  aetna: { productId: 'aetna-accendo-preferred', page: 2, parse: parseAetnaPreferred },
   moo: { productId: 'moo-living-promise-level', page: 3, parse: parseMooLevel },
   gerber: { productId: 'gerber-guaranteed-life', page: 1, parse: parseGerberAch },
 };

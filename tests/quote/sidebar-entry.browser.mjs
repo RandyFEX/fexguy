@@ -134,11 +134,11 @@ for (const [w, h] of [[1920, 1080], [1440, 900], [1366, 768], [1280, 720]]) {
   });
 }
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
-  await check(`${name}: direct /free-quote/ starts at I need pricing for a... (direct entry)`, async () => {
+  await check(`${name}: direct /free-quote/ starts at the gender question (direct entry)`, async () => {
     const { ctx, page } = await newPage(opts);
     await page.goto(`${srv.base}/free-quote/`);
     await page.waitForSelector('[data-step="1"]:not([hidden])');
-    assert((await page.textContent('#qf-s1')).trim() === 'I need pricing for a...', 'first screen');
+    assert((await page.textContent('#qf-s1')).trim() === "I'm shopping for burial or life insurance for a...", 'first screen');
     const ev = await page.evaluate(() => window.__ev.find((e) => e.name === 'quote_funnel_entry'));
     assert(ev && ev.entryType === 'direct' && !ev.entryPath, `entry event ${JSON.stringify(ev)}`);
     await ctx.close();

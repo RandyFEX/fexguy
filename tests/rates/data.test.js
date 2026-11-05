@@ -19,7 +19,7 @@ const engine = createEngine(datasets);
 const has = (id) => Boolean(datasets[id]);
 const SRC = process.env.RATES_SOURCE_DIR;
 
-for (const [id, key] of [['aetna-accendo-standard', 'aetna'], ['moo-living-promise-level', 'moo'], ['gerber-guaranteed-life', 'gerber']]) {
+for (const [id, key] of [['aetna-accendo-preferred', 'aetna'], ['moo-living-promise-level', 'moo'], ['gerber-guaranteed-life', 'gerber']]) {
   test(`${id}: every age has every gender/tobacco rate`, { skip: !has(id) && 'private dataset not present' }, () => {
     assert.deepEqual(validateDataset(PRODUCTS[id], datasets[id]), []);
     const p = PRODUCTS[id];
@@ -59,8 +59,8 @@ test('Gerber benchmark: age 60, $10,000, monthly ACH = $63.89 male, $51.06 femal
   }
 });
 
-test('real tables: premiums rise with age within each class (sanity, no data changed)', { skip: !has('aetna-accendo-standard') && !has('moo-living-promise-level') && 'no private datasets' }, () => {
-  for (const id of ['aetna-accendo-standard', 'moo-living-promise-level'].filter(has)) {
+test('real tables: premiums rise with age within each class (sanity, no data changed)', { skip: !has('aetna-accendo-preferred') && !has('moo-living-promise-level') && 'no private datasets' }, () => {
+  for (const id of ['aetna-accendo-preferred', 'moo-living-promise-level'].filter(has)) {
     const p = PRODUCTS[id];
     for (const gender of ['male', 'female'])
       for (const tobacco of [false, true]) {
@@ -74,4 +74,12 @@ test('real tables: premiums rise with age within each class (sanity, no data cha
         }
       }
   }
+});
+
+// V4.8 (Randy, November 2026): Aetna is priced from its Preferred class.
+test('V4.8 benchmark: 61 male non-tobacco $25,000 = MOO $111.23, Aetna Preferred $126.00', { skip: !(has('aetna-accendo-preferred') && has('moo-living-promise-level')) && 'private datasets not present' }, () => {
+  const q = (productId) => engine.quote({ productId, age: 61, gender: 'male', tobacco: false, coverage: 25000, state: 'TX' }).monthlyPremium;
+  assert.equal(q('moo-living-promise-level'), '111.23');
+  assert.equal(q('aetna-accendo-preferred'), '126.00');
+  assert.notEqual(q('aetna-accendo-preferred'), '157.72', 'never the Standard premium');
 });

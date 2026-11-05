@@ -22,7 +22,7 @@ const datasets = loadDatasets();
 const engine = createEngine(datasets);
 
 const SHEETS = {
-  'aetna-accendo-standard': 'Aetna CVS Standard',
+  'aetna-accendo-preferred': 'Aetna CVS Preferred',
   'moo-living-promise-level': 'MOO Living Promise Level',
   'gerber-guaranteed-life': 'Gerber Guaranteed Life',
 };

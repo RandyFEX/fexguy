@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ['I need pricing for a...', 'How Old Are You?', 'Do You Use Tobacco?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ["I'm shopping for burial or life insurance for a...", 'How Old Are You?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
@@ -151,7 +151,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
 
-  await check(`${name}: a new visit starts at I need pricing for a... in the minimal quote layout`, async () => {
+  await check(`${name}: a new visit starts at the gender question in the minimal quote layout`, async () => {
     await page.goto(URL_);
     await atStart(page);
     assert((await page.textContent('#qf-s1')).trim() === TITLES[0], 'title');
@@ -285,7 +285,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.ratio < 0.03), JSON.stringify(cards));
-    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
+    assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense Preferred/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
     assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
     const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));
     assert(icons.join('|') === 'check|check|calendar', `timing icons ${icons}`);
@@ -568,8 +568,8 @@ await check('evidence: the two journeys\' leads, consent records, intended use a
     assert(
       (r.firstName === 'Mary Smith' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && !('intendedUse' in r) &&
         r.consent.given === true && r.consent.version === 'ff-quote-consent-v5-2026-11' && r.consent.method === 'button-submission' && r.verification.status === 'not-required' && r.mode === 'test' &&
-        r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
-      JSON.stringify(r).slice(0, 300),
+        r.applications[0].attribution[0] === 'FF-102' && r.applications[1].attribution[0] === 'FF-103' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
+      JSON.stringify(r.applications.map((a) => [a.categoryId, a.attribution])),
     );
   return `${recs.length} lead records (${v.length} full journeys)`;
 });

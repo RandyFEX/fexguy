@@ -84,7 +84,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
 }
 
 // Two-option SMS handoff V1.9 (Randy, November 2026).
-const PREWRITTEN = 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
+const PREWRITTEN = 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $51.10/month.';
 await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wording and order, two orange buttons (side by side with a divider on desktop, stacked cell phone first on phones), no QR before the click, no copy link, no call link', async () => {
   const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
   await page.goto(`${srv.base}/facebook/?preview=apply`);
@@ -120,7 +120,7 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
       };
     });
     assert(r.h1 === "Here's What You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
-    assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$61.69']), `${w}px card ${JSON.stringify(r.card)}`);
+    assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$51.10']), `${w}px card ${JSON.stringify(r.card)}`);
     assert(JSON.stringify(r.labels) === JSON.stringify(["CLICK HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
     assert(JSON.stringify(r.notes) === JSON.stringify(['Click the button above to generate an SMS text and hit Send.', 'Scan our code with your cell phone camera to send a text.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
     assert(r.orange && r.twoLines && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);

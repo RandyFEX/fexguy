@@ -10,7 +10,7 @@
 // whole question set). Every answer is kept in the lead's evidence record.
 //
 // Products and their question sets:
-//   FF-101 Aetna Standard          -> 'aetna' records
+//   FF-103 Aetna Preferred         -> 'aetna' records
 //   FF-102 Mutual of Omaha Level   -> no question set in the database yet:
 //                                     agent-assistance continuation
 //   FF-201 Gerber Guaranteed Life  -> guaranteed issue, no health questions
@@ -19,7 +19,7 @@ import { checkPayload, questionsKey } from '../health-search/question-store.js';
 import { config } from '../health-search/config.generated.js';
 
 /** Attribution code -> Health Question Search carrier id (null: no question set). */
-export const INTAKE_CARRIER = /** @type {Record<string, string | null>} */ ({ 'FF-101': 'aetna', 'FF-102': null, 'FF-201': 'gerber-life' });
+export const INTAKE_CARRIER = /** @type {Record<string, string | null>} */ ({ 'FF-103': 'aetna', 'FF-102': null, 'FF-201': 'gerber-life' });
 
 /**
  * The question set for a product, from the published records only.
