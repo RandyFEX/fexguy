@@ -56,6 +56,9 @@ export default defineConfig({
     inlineStylesheets: 'always',
   },
   vite: {
+    // Direct preview access (src/scripts/quote-preview.ts): never in the
+    // production deployment's build (Vercel sets VERCEL_ENV=production there).
+    define: { __FF_PREVIEW_TOOLS__: JSON.stringify(process.env.VERCEL_ENV !== 'production') },
     build: {
       // Astro inlines a page script into the HTML when its bundle is under this
       // size (default 4 KB). The tracking + quote-form bundle is just over 4 KB,

@@ -658,3 +658,22 @@ test('v6.2: the funnel saves the lead and makes no outbound request (no Formspar
     globalThis.fetch = realFetch;
   }
 });
+
+test('direct preview access: preview-sample works with or without Twilio (no Twilio or CRM call), never in production', async () => {
+  for (const env of [PREVIEW, { ...TWILIO, AGENT_CRM_TOKEN: 'tok', AGENT_CRM_LOCATION_ID: 'loc' }]) {
+    const tw = fakeTwilio();
+    const c = client(env, { fetchImpl: tw.fetchImpl });
+    const r = await c.call({ action: 'preview-sample' });
+    assert.equal(r.http, 200);
+    assert.equal(r.body.status, 'verified');
+    assert.equal(tw.calls.length, 0, 'an SMS or CRM request was made');
+    assert.equal((await c.price()).http, 200, 'prices for the sample session');
+    const lead = await c.store.getLead('00000000-0000-4000-8000-000000000000');
+    assert.equal(lead.mode, 'preview-sample');
+    assert.equal(lead.phone, null);
+  }
+  const prod = client({ ...TWILIO, VERCEL_ENV: 'production' });
+  const p = await prod.call({ action: 'preview-sample' }, { origin: 'https://funeralfunds.com' });
+  assert.equal(p.http, 404);
+  assert.equal(p.setCookie, null);
+});
