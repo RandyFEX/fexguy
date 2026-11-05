@@ -1440,6 +1440,19 @@ scope protection wins.
   `saved: true`. The unit and browser tests fail on any Formspark,
   Turnstile or Resend request from the funnel.
 
+## Permanent review links (Randy, November 2026, V2.0)
+
+- Fixed Preview address (Vercel branch alias of the `review` branch; Vercel
+  sign-in required, development review only):
+  https://fexguy-git-review-final-expense-guys-projects.vercel.app/free-quote/?preview=results
+  and .../facebook/?preview=apply (the PR #107 direct links: preview and local
+  builds only; no SMS, CRM delivery or lead; refused on Production).
+- `.github/workflows/review-preview.yml` points `review` at every same-repo
+  pull request merged into main when it is opened or updated (manual run:
+  any branch or commit). Never push work to `review` by hand; it is
+  force-updated. `preview/...` branch names already exist, so the branch is
+  named `review`.
+
 ## Site search (Pagefind, built October 2026)
 
 - /search/ is `src/pages/search.astro` + `src/scripts/search.ts`; the index
