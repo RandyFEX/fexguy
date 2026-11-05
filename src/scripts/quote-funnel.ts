@@ -1,13 +1,14 @@
 // Quote funnel (Quote System v2.2; v3.5 layout and cards) for /free-quote/ (moved from /final-expense-insurance-prices/ in v5.8).
 //
-// Steps 1-5 collect sex, age, tobacco, coverage and state, one per screen
-// (they advance on their own). Step 6 takes first name, mobile number and an
-// optional, unchecked consent box; step 7 checks the texted code. The SERVER
-// decides whether the phone is verified (api/quote.js sets an HttpOnly
-// session cookie); prices come from api/price-explorer.js only for a verified
-// session, so nothing here can unlock them. After verification the visitor
-// can change age, sex, tobacco and coverage freely; a refresh returns to the
-// results while the session lasts (24 hours).
+// Steps 1-6 collect sex, age, tobacco, intended use, coverage and state, one
+// per screen (they advance on their own). Step 7 takes the first name, mobile
+// number; clicking SEE MY RATES under the disclosure is the consent (V3.8, no checkbox). V3.3 (Randy, November 2026):
+// no SMS verification. SEE MY RATES sends them to the server, which saves the
+// lead, delivers it to Agent CRM (production) and sets this visit's HttpOnly
+// quote session cookie; the rates then show at once. Prices come from
+// api/price-explorer.js only for that session, so nothing here can open them.
+// The visitor can change age, sex, tobacco and coverage freely; a refresh
+// returns to the results while the session lasts (12 hours).
 //
 // Privacy: the name and phone number stay in memory only (never storage,
 // URLs, the console or analytics). Analytics get event names and step
@@ -20,6 +21,7 @@ import { saveHandoff } from '@/scripts/quote-handoff';
 import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
+import { isFullName } from '../../server/quote/name.js';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
@@ -37,7 +39,7 @@ type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: stri
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
 const MAX = 25000;
-const TOTAL = 8;
+const TOTAL = 7;
 const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, intended use, coverage)
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 // v5.8: where this visit started (article sidebar, campaign or direct); every
@@ -46,9 +48,9 @@ const arrival = root ? readFunnelEntry() : null;
 const track = (name: string, extra: Record<string, unknown> = {}) =>
   window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name, ...(arrival ? entryAnalytics(arrival.entry) : {}), ...extra } }));
 
-// Visit-scoped verification (v2.7): one random visit id, sent with every
-// request; the server only treats a session as verified for the visit it was
-// verified in. 12-hour quote access (Randy, November 2026): the id is kept in
+// Visit-scoped sessions (v2.7): one random visit id, sent with every
+// request; the server only accepts a quote session for the visit it was
+// opened in. 12-hour quote access (Randy, November 2026): the id is kept in
 // localStorage, so the same browser returns to its unlocked quote for 12
 // hours after the original unlock (the server's fixed session expiry), even
 // after closing and reopening it.
@@ -106,7 +108,7 @@ if (root) {
   function show(n: number, focus = true) {
     current = n;
     for (const [i, el] of steps) el.hidden = i !== n;
-    const results = (n === 8 && unlocked) || n === 9;
+    const results = n >= 8;
     back.hidden = n === 1 || results;
     root!.querySelector<HTMLElement>('[data-qf-top]')!.hidden = results;
     progressWrap.hidden = results;
@@ -115,7 +117,7 @@ if (root) {
     progressLabel.textContent = `Step ${Math.min(n, TOTAL)} of ${TOTAL}`;
     if (!focus) return;
     if (n === 7) fillSummary();
-    const target = n === 8 && !unlocked ? root!.querySelector<HTMLElement>('#qf-unlock-title') : steps.get(n)?.querySelector<HTMLElement>('.qf-q');
+    const target = steps.get(n)?.querySelector<HTMLElement>('.qf-q');
     target?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
@@ -195,12 +197,14 @@ if (root) {
   });
 
 
-  // Step 7: the visitor's name (first name or full name), mobile number and the optional consent box.
+  // Step 7: the visitor's full name and mobile number (V3.8: no consent checkbox).
+  // The funnel's phone number (888-656-4648 on /free-quote/) comes from the page HTML.
+  const funnelPhone = root.dataset.funnelPhone || lead.phone.display;
   const contactForm = $<HTMLFormElement>('[data-qf-contact]');
   const firstInput = $<HTMLInputElement>('#qf-first');
   const phoneInput = $<HTMLInputElement>('#qf-phone');
-  const consentBox = $<HTMLInputElement>('[data-qf-consent]');
-  const unlockPhone = $<HTMLInputElement>('#qf-unlock-phone');
+  const submitBtn = $<HTMLButtonElement>('[data-qf-submit]');
+  const contactStatus = $('[data-qf-contact-status]');
   const fieldError = (input: HTMLInputElement, message: string) => {
     const err = root!.querySelector<HTMLElement>(`#${input.id}-error`)!;
     err.textContent = message;
@@ -218,21 +222,55 @@ if (root) {
       ? { age: answers.age, gender: answers.gender, tobacco: answers.tobacco, coverage: answers.coverage }
       : null;
 
-  contactForm.addEventListener('submit', (e) => {
+  // A delivery that failed: the retry re-sends the same saved lead (no duplicate).
+  let retryLead = '';
+  let submitting = false;
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const firstName = firstInput.value.trim();
-    fieldError(firstInput, firstName ? '' : 'Please enter your name.');
+    if (submitting) return;
+    const firstName = firstInput.value.trim().replace(/\s+/g, ' ');
+    const nameOk = isFullName(firstName);
+    fieldError(firstInput, nameOk ? '' : 'Please enter your full name (first and last name).');
     fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
-    if (!firstName) return firstInput.focus();
+    if (!nameOk) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
-    if (!quoteReady() || !answers.state || !answers.use) return show(1);
+    const quote = quoteReady();
+    if (!quote || !answers.state || !answers.use) return show(1);
     track('quote_contact_submit');
+    submitting = true;
+    submitBtn.disabled = true;
+    setStatus(contactStatus, 'Getting your rates…');
+    const { http, body } = await api({
+      action: 'start', firstName, phone: phoneInput.value.trim(), state: answers.state, intendedUse: answers.use, quote,
+      consentVersion: root!.dataset.consentVersion,
+      source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
+    });
+    submitting = false;
+    submitBtn.disabled = false;
+    if (http !== 200 || body.status !== 'verified') {
+      // Nothing is lost: the answers and both fields stay as typed.
+      if (body.field === 'phone' || body.field === 'name') {
+        const input = body.field === 'phone' ? phoneInput : firstInput;
+        setStatus(contactStatus, '');
+        fieldError(input, body.message ?? (body.field === 'phone' ? 'Please enter a 10-digit US mobile number.' : 'Please enter your full name (first and last name).'));
+        return input.focus();
+      }
+      if (typeof body.lead === 'string') retryLead = body.lead;
+      setStatus(contactStatus, body.message ?? `Sorry, we couldn't send your request. Please try again, or call ${funnelPhone}.`, true);
+      contactStatus.focus();
+      return;
+    }
+    retryLead = '';
+    leadId = body.lead;
+    setStatus(contactStatus, '');
+    track('quote_lead_accepted');
+    // The conversion (GA4 generate_lead, Meta Lead) is counted once, by
+    // tracking.ts, when the server reports leadConversion: the lead reached
+    // Agent CRM on the production deployment (never on previews, for a name
+    // labeled TEST, a resumed session, Apply Now or /facebook/).
+    if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(7);
-    // The pricing screen, blurred, with the number already entered (not asked again).
-    unlockPhone.value = phoneInput.value.trim();
-    showPhoneSummary();
-    lockCards();
-    show(8);
+    unlock(quote, body.testMode, body.expiresAt);
   });
 
   function sourceInfo() {
@@ -244,167 +282,7 @@ if (root) {
     };
   }
 
-  // Step 7 (locked): send the code from the pricing screen.
-  const unlockPanel = $('[data-qf-unlock]');
-  const phoneSummary = $('[data-qf-phone-summary]');
-  const phoneShow = $('[data-qf-phone-show]');
-  const phoneField = $('[data-qf-phone-field]');
-  const formatPhone = (v: string) => {
-    const d = v.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
-    return d.length === 10 ? `(***) ***-${d.slice(6)}` : '';
-  };
-  function showPhoneSummary() {
-    phoneShow.textContent = formatPhone(unlockPhone.value);
-    phoneSummary.hidden = false;
-    phoneField.hidden = true;
-  }
-  function editPhone() {
-    phoneSummary.hidden = true;
-    phoneField.hidden = false;
-    unlockPhone.focus();
-    unlockPhone.select();
-  }
-  const sendForm = $<HTMLFormElement>('[data-qf-send-form]');
-  const sendBtn = $<HTMLButtonElement>('[data-qf-send]');
-  const sendStatus = $('[data-qf-send-status]');
-  const verifyForm = $<HTMLFormElement>('[data-qf-verify]');
-  const codeInput = $<HTMLInputElement>('#qf-code');
-  const verifyStatus = $('[data-qf-verify-status]');
-  const verifyBtn = $<HTMLButtonElement>('[data-qf-verify-btn]');
-  const resendBtn = $<HTMLButtonElement>('[data-qf-resend]');
-  // v5.4: temporary access-code mode. Only the server sends this instruction (never in Twilio
-  // mode); it replaces the SMS sentence, and no text claims a message was sent.
-  let tempCode = false;
-  function temporaryCode(note: unknown) {
-    if (typeof note !== 'string' || !note) return;
-    tempCode = true;
-    unlockPanel.dataset.tempCode = '';
-    // V2.3: "Temporary access code: 123456." is highlighted (digits bold); the text is unchanged.
-    const m = /^(Temporary access code: )(\d{6})(\.)([\s\S]*)$/.exec(note);
-    root!.querySelectorAll<HTMLElement>('[data-qf-temp-note]').forEach((p) => {
-      if (m) {
-        const hl = document.createElement('span');
-        hl.className = 'qf-code-hl';
-        const digits = document.createElement('strong');
-        digits.textContent = m[2];
-        hl.append(m[1], digits, m[3]);
-        p.replaceChildren(hl, m[4]);
-      } else p.textContent = note;
-      p.hidden = false;
-    });
-    resendBtn.hidden = true;
-  }
-  let resendTimer: number | undefined;
-  function cooldown(ms: number) {
-    window.clearInterval(resendTimer);
-    let left = Math.ceil(ms / 1000);
-    resendBtn.disabled = true;
-    resendBtn.textContent = `Resend Code (${left})`;
-    resendTimer = window.setInterval(() => {
-      left -= 1;
-      if (left <= 0) {
-        window.clearInterval(resendTimer);
-        resendBtn.disabled = false;
-        resendBtn.textContent = 'Resend Code';
-      } else resendBtn.textContent = `Resend Code (${left})`;
-    }, 1000);
-  }
-
-  sendForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    fieldError(unlockPhone, phoneOk(unlockPhone.value) ? '' : 'Please enter a 10-digit US mobile number.');
-    if (!phoneOk(unlockPhone.value)) return editPhone();
-    const quote = quoteReady();
-    if (!quote || !answers.state || !answers.use) return show(1);
-    sendBtn.disabled = true;
-    setStatus(sendStatus, tempCode ? '' : 'Sending your code…');
-    const { http, body } = await api({
-      action: 'start', firstName: firstInput.value.trim(), phone: unlockPhone.value.trim(), state: answers.state, intendedUse: answers.use, quote,
-      consent: consentBox.checked, consentVersion: root!.dataset.consentVersion, verifyNoticeVersion: root!.dataset.verifyVersion,
-      source: sourceInfo(),
-    });
-    sendBtn.disabled = false;
-    if (http !== 200 || body.status !== 'sent') {
-      // A number the server refuses: show the field so it can be corrected here.
-      if (body.field === 'phone') {
-        fieldError(unlockPhone, body.message ?? 'Please enter a 10-digit US mobile number.');
-        setStatus(sendStatus, '');
-        return editPhone();
-      }
-      // A name the server refuses: back to the contact step, answers kept, at the name field.
-      if (body.field === 'name') {
-        setStatus(sendStatus, '');
-        show(7);
-        fieldError(firstInput, body.message ?? 'Please enter your name.');
-        return firstInput.focus();
-      }
-      setStatus(sendStatus, body.message ?? `Sorry, we couldn't send a code. Please call ${lead.phone.display}.`, true);
-      sendStatus.focus();
-      return;
-    }
-    track('quote_sms_request');
-    leadId = body.lead;
-    temporaryCode(body.temporaryCodeNote);
-    testBanner.hidden = !body.testMode;
-    setStatus(sendStatus, '');
-    sendForm.hidden = true;
-    verifyForm.hidden = false;
-    setStatus(verifyStatus, '');
-    codeInput.value = '';
-    if (!tempCode) cooldown(body.resendAfterMs ?? 30000);
-    codeInput.focus();
-  });
-
-  codeInput.addEventListener('input', () => {
-    codeInput.value = codeInput.value.replace(/\D/g, '').slice(0, 6);
-  });
-  verifyForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!/^\d{6}$/.test(codeInput.value)) {
-      setStatus(verifyStatus, 'Enter the 6-digit code from the text message.', true);
-      return codeInput.focus();
-    }
-    verifyBtn.disabled = true;
-    setStatus(verifyStatus, 'Checking…');
-    const { http, body } = await api({ action: 'check', lead: leadId, code: codeInput.value });
-    verifyBtn.disabled = false;
-    if (http !== 200 || body.status !== 'verified') {
-      setStatus(verifyStatus, body.message ?? 'We could not check the code. Please try again.', true);
-      codeInput.select();
-      return;
-    }
-    track('quote_sms_verified');
-    // Completed quote lead (Randy, November 2026): the conversion (GA4
-    // generate_lead, Meta Lead) is counted once, by tracking.ts, when the
-    // server reports leadConversion (a real SMS verification, or the
-    // temporary code accepted for a saved lead not labeled TEST); never for a
-    // code request, Apply Now, /facebook/, a resumed session or preview test mode.
-    if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
-    complete(8);
-    setStatus(verifyStatus, '');
-    unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
-  });
-  resendBtn.addEventListener('click', async () => {
-    resendBtn.disabled = true;
-    const { http, body } = await api({ action: 'resend', lead: leadId });
-    if (http === 200) {
-      setStatus(verifyStatus, 'A new code is on its way.');
-      cooldown(body.resendAfterMs ?? 30000);
-    } else {
-      setStatus(verifyStatus, body.message ?? 'We could not send a new code.', true);
-      if (body.resendAfterMs) cooldown(body.resendAfterMs);
-      else resendBtn.disabled = false;
-    }
-  });
-  $('[data-qf-change]').addEventListener('click', () => {
-    verifyForm.hidden = true;
-    sendForm.hidden = false;
-    editPhone();
-  });
-  $('[data-qf-edit-phone]').addEventListener('click', editPhone);
-
-  // Step 7 (unlocked): live prices with free repricing. Carrier names and
-  // logos stay blurred; the browser only ever gets attribution codes.
+  // Step 8: live prices with free repricing.
   const adjust = $<HTMLFormElement>('[data-qf-adjust]');
   const adjOther = $('[data-qf-adj-other]');
   const adjOtherInput = $<HTMLInputElement>('#qf-adj-other');
@@ -462,8 +340,7 @@ if (root) {
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
     tiers.hidden = true;
-    unlockPanel.hidden = false;
-    // The results headline and its supporting line appear only after verification.
+    // The results headline and its supporting line appear with real prices only.
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
     resultsLead.hidden = true;
@@ -471,11 +348,11 @@ if (root) {
     for (const el of cards.values()) {
       el.dataset.state = 'locked';
       const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
-      amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span>`;
+      amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Loading price</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       const lockedApply = el.querySelector<HTMLButtonElement>('[data-qf-apply]')!;
       lockedApply.disabled = true;
-      lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Unlock to See Rates';
+      lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Text Us With Questions';
       delete lockedApply.dataset.ready;
       el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
@@ -488,6 +365,15 @@ if (root) {
       el.querySelector<HTMLElement>('[data-qf-logo]')!.replaceChildren(stand);
       i++;
     }
+  }
+
+  // The quote session ended (or was never opened for this visit): back to the
+  // contact step with every answer kept, to submit again.
+  function sessionLost() {
+    shown = null;
+    lockCards();
+    show(7);
+    setStatus(contactStatus, 'Please confirm your details to see your rates again.', true);
   }
 
   function fillAdjust(q: Quote) {
@@ -579,16 +465,7 @@ if (root) {
       const res = await fetch('/api/price-explorer/', { method: 'POST', headers: jsonHeaders(), body: k, credentials: 'same-origin' });
       const body = await res.json().catch(() => ({}));
       if (mine !== seq) return;
-      if (res.status === 401) {
-        // The verified session ended: back to the locked pricing screen.
-        shown = null;
-        lockCards();
-        sendForm.hidden = false;
-        verifyForm.hidden = true;
-        show(8);
-        setStatus(sendStatus, 'Please verify your phone number again to see prices.', true);
-        return;
-      }
+      if (res.status === 401) return sessionLost();
       if (!res.ok || body.status !== 'ok') {
         for (const el of cards.values()) setCard(el, null, 'unavailable', body.message ?? 'Prices are not available right now.');
         return;
@@ -618,7 +495,7 @@ if (root) {
   let accessExpiresAt = 0;
   // Results countdown (V2.0): 10:00 from the first time this visit's prices
   // appear; a refresh or a pricing change keeps the same end time. At 0:00
-  // the prices are hidden (safe stand-ins, as before verification) and
+  // the prices are hidden (safe stand-ins, as while loading) and
   // Start New Quote begins a fresh visit.
   const countdown = $('[data-qf-countdown]');
   const restart = $<HTMLButtonElement>('[data-qf-restart]');
@@ -649,7 +526,6 @@ if (root) {
     unlocked = true;
     pricing.dataset.locked = 'false';
     testBanner.hidden = !test;
-    unlockPanel.hidden = true;
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
@@ -697,7 +573,7 @@ if (root) {
   function finish() {
     if (completed) return;
     completed = true;
-    // The funnel's lead is counted at verification (ff:lead), never on /help/.
+    // The funnel's lead is counted when the server accepts it (ff:lead), never on /help/.
     location.assign(lead.formspark.successPath);
   }
   $('[data-qf-intake-finish]').addEventListener('click', finish);
@@ -714,13 +590,9 @@ if (root) {
   async function intakeStep(body: Record<string, unknown>) {
     setStatus(intakeStatus, '');
     const r = await api(body);
-    if (r.http === 401) {
-      lockCards();
-      show(8);
-      return;
-    }
+    if (r.http === 401) return sessionLost();
     if (r.http !== 200) {
-      setStatus(intakeStatus, r.body.message ?? `Sorry, something went wrong. Please call ${lead.phone.display}.`, true);
+      setStatus(intakeStatus, r.body.message ?? `Sorry, something went wrong. Please call ${funnelPhone}.`, true);
       return;
     }
     if (r.body.status === 'question') {
@@ -739,7 +611,7 @@ if (root) {
     btn.addEventListener('click', () => intakeStep({ action: 'intake-answer', category: intakeCategory, questionId, answer: btn.dataset.qfAnswer })),
   );
 
-  // "Call to Get Approved" (v3.7): the tel: link dials 888-862-9456 itself;
+  // "Call to Get Approved" (v3.7): the tel: link dials the funnel's number itself;
   // this only records which quote was on the card (a tap, not a call).
   const QUOTE_REF_KEY = 'ff:quote-ref';
   const quoteRef = () => {
@@ -779,13 +651,9 @@ if (root) {
       track('quote_apply_now', { category: id });
       const { http, body } = await api({ action: 'apply', category: id, quote: shown.quote });
       btn.disabled = false;
-      if (http === 401) {
-        lockCards();
-        show(8);
-        return;
-      }
+      if (http === 401) return sessionLost();
       if (http !== 200 || body.status !== 'ok') {
-        setStatus(applyStatus, body.message ?? `Sorry, something went wrong. Please call ${lead.phone.display}.`, true);
+        setStatus(applyStatus, body.message ?? `Sorry, something went wrong. Please call ${funnelPhone}.`, true);
         return;
       }
       setStatus(applyStatus, '');
@@ -804,7 +672,7 @@ if (root) {
     });
   }
 
-  // Start: only this tab's own verified visit returns to the live prices;
+  // Start: only this browser's own quote session returns to the live prices;
   // any other (new tab, new visit) starts at the first question.
   // v5.8: the visit's entry; a Male or Female choice made in an article's
   // sidebar is applied here, so the visitor starts at the age question (Back
@@ -825,7 +693,6 @@ if (root) {
       if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) return unlock(r.body.quote as Quote, true, r.body.expiresAt);
     }
     const { http, body } = await api({ action: 'session' });
-    temporaryCode(body.temporaryCodeNote);
     if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
     // Only if the visitor hasn't already answered (an answer given while this
     // check was loading must not send them back to the first question).

@@ -1,13 +1,12 @@
 // @ts-check
-// POST /api/quote/ (Quote System v2.2): the phone-verification gate and the
-// consent/verification evidence for /free-quote/.
+// POST /api/quote/: the lead submission, the quote session and the lead
+// record for /free-quote/.
 //
 // Actions (JSON body { action, ... }):
-//   start    first name, mobile number, state, consent choice, quote inputs
-//            -> evidence record, Twilio Verify SMS, pending verification
-//   resend   new code for the pending verification (30 s cooldown, 3 max)
-//   check    6-digit code -> on approval: verified session cookie, evidence
-//   session  is this browser verified? (restores the results after a refresh)
+//   start    full name, mobile number, state, quote inputs (consent: the button click, V3.8)
+//            -> lead record, Agent CRM delivery (production), quote session
+//            (V3.3, Randy, November 2026: no SMS verification, no code)
+//   session  does this visit have a quote session? (restores the results after a refresh)
 //   apply    Apply Now on a category: server re-prices and records it
 //
 // v6.2: no notifications. The funnel makes no Formspark, Turnstile or email
@@ -15,32 +14,28 @@
 // saved in the Redis evidence record, which is the lead record.
 //
 // Security: same-site Origin only; strict input whitelists; per-IP,
-// per-phone and global SMS limits (SMS-pumping protection: US numbers only);
-// 5 code attempts per verification; codes expire with Twilio's 10-minute
-// window (pending state expires at 10 minutes too); sessions are signed,
-// HttpOnly, visit-scoped (12 hours max), and checked against the store on every use. Personal
-// data never goes into logs, URLs or analytics.
+// per-phone and global submission limits (US numbers only); sessions are
+// signed, HttpOnly, visit-scoped (12 hours max), and checked against the
+// store on every use. The phone number is never verified, and nothing says
+// it is. Personal data never goes into logs, URLs or analytics.
 
 import { createHmac, randomUUID } from 'node:crypto';
-import { CONSENT_VERSIONS, VERIFY_NOTICE_VERSIONS } from './consent.js';
-import { maskPhone, toE164US } from './phone.js';
+import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
+import { firstNameOf, isFullName } from './name.js';
+import { toE164US } from './phone.js';
 import { sendLeadToCrm } from './crm.js';
-import { PUBLIC_TEST_CODE_NOTE, verifyClient } from './twilio.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 
-export const PENDING_MS = 10 * 60 * 1000;
 /** Direct preview access (preview/local only): the one fixed sample record and its quote. */
 export const PREVIEW_SAMPLE_LEAD = '00000000-0000-4000-8000-000000000000';
 export const PREVIEW_SAMPLE_QUOTE = Object.freeze({ age: 60, gender: 'male', tobacco: false, coverage: 10000 });
-export const RESEND_COOLDOWN_MS = 30 * 1000;
-export const MAX_RESENDS = 3;
-export const MAX_ATTEMPTS = 5;
 const HOUR = 60 * 60 * 1000;
 const DAY = 24 * HOUR;
-export const SMS_LIMITS = { ipHour: 5, ipDay: 15, phoneHour: 4, phoneDay: 6, globalDayDefault: 300 };
+// Abuse and duplicate protection (the former SMS limits, kept as submission limits).
+export const SUBMIT_LIMITS = { ipHour: 5, ipDay: 15, phoneHour: 4, phoneDay: 6, globalDayDefault: 300 };
 // v5.8: room for the entry fields (article title and URL) in the start request.
 const MAX_BODY = 4096;
 
@@ -58,9 +53,8 @@ const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSou
 const ENTRY_LABELS = { 'article-sidebar': 'Article sidebar', direct: 'Direct funnel entry', campaign: 'Campaign' };
 /** Intended use (lead information only; never a pricing input). */
 export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
-// v4.5: one "Your Name" field: a first name alone or a full name. The curly
-// apostrophe (U+2019) is accepted too: phones type it automatically (O’Neil).
-const NAME_RE = /^[\p{L}][\p{L}\p{M} .'\u2019-]{0,59}$/u;
+// V3.7: the funnel's own phone number (Randy's advertising number on /free-quote/).
+const FUNNEL_PHONE = '888-656-4648';
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
 function json(status, body, headers = {}) {
@@ -113,175 +107,127 @@ export async function handleQuote(request, env, deps) {
   const store = deps.store;
   const key = sessionKey(env);
   const secret = env.QUOTE_SESSION_SECRET || env.HEALTH_SEARCH_SECRET || '';
-  const verify = verifyClient(env, deps.fetchImpl);
-  if (!store || !key || verify.mode === 'off')
-    return json(503, { status: 'unavailable', message: 'Phone verification is not available right now. Please call 888-862-9456.' });
+  // V3.3 (Randy, November 2026): no phone verification. Preview and local
+  // builds are test mode (records marked test, no Agent CRM delivery); the
+  // production deployment delivers every lead to Agent CRM.
+  const test = env.VERCEL_ENV !== 'production';
+  if (!store || !key)
+    return json(503, { status: 'unavailable', message: `Quotes are not available right now. Please call ${FUNNEL_PHONE}.` });
   const now = (deps.now ?? Date.now)();
   const iso = new Date(now).toISOString();
   const hash = (/** @type {string} */ s) => createHmac('sha256', secret).update(s).digest('hex').slice(0, 32);
   const ipHash = hash(`ip:${clientIp(request)}`);
-  const test = verify.mode === 'test';
-  // v5.3: the temporary public test code (production, no Twilio): real leads, never SMS-verified.
-  const publicTest = verify.mode === 'public-test';
-  // v5.4: the temporary-code instruction goes to the page only in that mode (never with Twilio).
-  const temp = publicTest ? { temporaryCodeNote: PUBLIC_TEST_CODE_NOTE } : {};
 
   switch (body.action) {
+    // SEE MY RATES: validate, save the lead, deliver it to Agent CRM
+    // (production), then open this visit's quote session. A failed delivery
+    // keeps the saved lead and returns a recoverable error (no session, no
+    // conversion); the visitor's retry sends `retry` (that lead's id) and
+    // re-delivers the same lead instead of creating a duplicate.
     case 'start': {
-      const firstName = clean(body.firstName, 60);
+      // V3.7: one Full Name field (server/quote/name.js), stored as typed in `firstName`.
+      const firstName = clean(body.firstName, 60).replace(/\s+/g, ' ');
       const phone = toE164US(body.phone);
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
-      if (!firstName || !NAME_RE.test(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your name.' });
+      if (!isFullName(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your full name (first and last name).' });
       if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
       if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
       if (!quote) return bad();
-      if (typeof body.consent !== 'boolean') return bad();
-      if (body.consent && !CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)]) return bad();
-      if (!VERIFY_NOTICE_VERSIONS[/** @type {keyof typeof VERIFY_NOTICE_VERSIONS} */ (body.verifyNoticeVersion)]) return bad();
+      // V3.8: no checkbox. Clicking SEE MY RATES under the disclosure is the
+      // consent; the page must have shown the current disclosure version.
+      if (body.consentVersion !== CONSENT_VERSION) return bad('Please reload the page and try again.');
+      // The session will belong to this visit (tab) only.
+      const visit = visitOf(request);
+      if (!visit) return bad('Please reload the page and try again.');
 
       const phoneHash = hash(`phone:${phone}`);
-      const globalDay = Number(env.QUOTE_SMS_DAILY_LIMIT) > 0 ? Number(env.QUOTE_SMS_DAILY_LIMIT) : SMS_LIMITS.globalDayDefault;
+      const globalDay = Number(env.QUOTE_SMS_DAILY_LIMIT) > 0 ? Number(env.QUOTE_SMS_DAILY_LIMIT) : SUBMIT_LIMITS.globalDayDefault;
       const over = await store.limit([
-        { key: `ip:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: SMS_LIMITS.ipHour, windowMs: HOUR },
-        { key: `ip:d:${ipHash}:${Math.floor(now / DAY)}`, limit: SMS_LIMITS.ipDay, windowMs: DAY },
-        { key: `ph:h:${phoneHash}:${Math.floor(now / HOUR)}`, limit: SMS_LIMITS.phoneHour, windowMs: HOUR },
-        { key: `ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: SMS_LIMITS.phoneDay, windowMs: DAY },
+        { key: `ip:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.ipHour, windowMs: HOUR },
+        { key: `ip:d:${ipHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.ipDay, windowMs: DAY },
+        { key: `ph:h:${phoneHash}:${Math.floor(now / HOUR)}`, limit: SUBMIT_LIMITS.phoneHour, windowMs: HOUR },
+        { key: `ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.phoneDay, windowMs: DAY },
         { key: `all:d:${Math.floor(now / DAY)}`, limit: globalDay, windowMs: DAY },
       ]);
-      if (over) return json(429, { status: 'rate-limited', message: 'Too many verification requests. Please try again later or call 888-862-9456.' }, { 'Retry-After': '3600' });
+      if (over) return json(429, { status: 'rate-limited', message: `Too many quote requests. Please try again later or call ${FUNNEL_PHONE}.` }, { 'Retry-After': '3600' });
 
-      const leadId = randomUUID();
-      const consentText = body.consent ? CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)] : null;
-      /** The evidence record (durable; see store.js). */
-      const record = {
-        leadId,
-        mode: verify.mode,
+      const consentText = CONSENT_VERSIONS[CONSENT_VERSION];
+      const fields = {
+        mode: test ? 'test' : 'direct',
         firstName,
         phone,
         state,
         intendedUse: { value: intendedUse, label: INTENDED_USES[intendedUse] },
         submittedAt: iso,
         consent: {
-          given: body.consent,
-          // The consent box is never pre-checked; this is the visitor's own choice.
-          action: body.consent ? 'checked consent box' : 'left consent box unchecked',
+          given: true,
+          // V3.8: the visitor clicked SEE MY RATES with the disclosure shown directly under it (no checkbox).
+          method: CONSENT_METHOD,
+          action: 'clicked SEE MY RATES (disclosure shown under the button)',
           at: iso,
-          version: body.consent ? body.consentVersion : null,
+          version: CONSENT_VERSION,
           text: consentText,
         },
-        // v5.4: in temporary-code mode the visitor saw this instruction instead of the SMS sentence.
-        ...(publicTest ? { temporaryCodeNotice: PUBLIC_TEST_CODE_NOTE } : {}),
-        verifyNotice: { version: body.verifyNoticeVersion, text: VERIFY_NOTICE_VERSIONS[/** @type {keyof typeof VERIFY_NOTICE_VERSIONS} */ (body.verifyNoticeVersion)] },
-        verification: { status: 'pending', requestedAt: iso, verifiedAt: null, provider: test ? 'test-mode' : publicTest ? 'temporary-public-test-code' : 'twilio-verify', startSid: null, checkSid: null },
+        // V3.3: the phone number is never verified (no SMS, no code).
+        verification: { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null },
         quoteAtSubmission: quote,
         source: parseSource(body.source),
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
-        applications: [],
       };
+      // A retry after a failed delivery: the same lead, from the same visit, not yet delivered.
+      const retryId = typeof body.retry === 'string' && /^[0-9a-f-]{36}$/.test(body.retry) ? body.retry : null;
+      const previous = retryId ? await store.getLead(retryId) : null;
+      const reuse = previous && previous.visit === visitHash(visit) && previous.crm?.delivered !== true && previous.leadId !== PREVIEW_SAMPLE_LEAD;
+      const leadId = reuse ? retryId : randomUUID();
+      /** The evidence record (durable; see store.js); it is the lead record. */
+      const record = reuse
+        ? { ...previous, ...fields, firstSubmittedAt: previous.firstSubmittedAt ?? previous.submittedAt, attempts: (previous.attempts ?? 1) + 1 }
+        : { leadId, ...fields, visit: visitHash(visit), attempts: 1, applications: [], crm: { delivered: false } };
       // The lead is saved before anything else can fail.
       await store.putLead(leadId, record);
-      await store.indexPhone(phoneHash, leadId);
-      // Agent CRM: the contact is created or updated after the lead is saved,
-      // alongside the code request (with the three estimated monthly rates);
-      // its outcome is logged on the lead and never changes the visitor's response.
-      const toCrm = async () => {
+      if (!reuse) await store.indexPhone(phoneHash, leadId);
+      await store.event(leadId, { at: iso, type: reuse ? 'contact-resubmitted' : 'contact-submitted', attempt: record.attempts });
+
+      // Agent CRM (production only): the contact is created or updated with
+      // the three estimated monthly rates. Not configured counts as a failure:
+      // a lead is never reported as accepted unless it reached the CRM.
+      if (!test) {
         const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
         /** @type {any[]} */
         let rates = [];
         try { rates = loaded ? priceCategories(loaded.engine, quote) : []; } catch {}
-        return sendLeadToCrm(env, record, rates, deps.fetchImpl);
-      };
-      /** @type {[any, { sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string }]} */
-      const [sent, crm] = await Promise.all([verify.start(phone), test ? Promise.resolve({ sent: false }) : toCrm().catch(() => ({ sent: true, ok: false, error: 'error' }))]);
-      if (crm.sent) await store.event(leadId, { at: iso, type: crm.ok ? 'crm-delivered' : 'crm-delivery-failed', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null }).catch(() => {});
-      record.verification.startSid = sent.ok ? sent.sid : null;
-      if (!sent.ok) record.verification.status = 'send-failed';
-      await store.putLead(leadId, record);
-      await store.event(leadId, { at: iso, type: sent.ok ? 'sms-sent' : 'sms-send-failed', provider: record.verification.provider, sid: sent.ok ? sent.sid : null, error: sent.ok ? null : sent.error });
-      if (!sent.ok) return json(502, { status: 'send-failed', message: 'We could not send a code to that number. Please check it or call 888-862-9456.' });
-      await store.putPending(leadId, { phone, phoneHash, attempts: 0, resends: 0, lastSentAt: now }, PENDING_MS);
-      return json(200, { status: 'sent', lead: leadId, masked: maskPhone(phone), resendAfterMs: RESEND_COOLDOWN_MS, testMode: test, ...temp });
-    }
-
-    case 'resend': {
-      const leadId = typeof body.lead === 'string' && /^[0-9a-f-]{36}$/.test(body.lead) ? body.lead : null;
-      const pending = leadId ? await store.getPending(leadId) : null;
-      if (!leadId || !pending) return json(410, { status: 'expired', message: 'This code request has expired. Please start again.' });
-      if (now - pending.lastSentAt < RESEND_COOLDOWN_MS) return json(429, { status: 'cooldown', message: 'Please wait a few seconds before asking for a new code.', resendAfterMs: RESEND_COOLDOWN_MS - (now - pending.lastSentAt) });
-      if (pending.resends >= MAX_RESENDS) return json(429, { status: 'rate-limited', message: 'Too many codes requested. Please call 888-862-9456.' });
-      const globalDay = Number(env.QUOTE_SMS_DAILY_LIMIT) > 0 ? Number(env.QUOTE_SMS_DAILY_LIMIT) : SMS_LIMITS.globalDayDefault;
-      const over = await store.limit([
-        { key: `ph:h:${pending.phoneHash}:${Math.floor(now / HOUR)}`, limit: SMS_LIMITS.phoneHour, windowMs: HOUR },
-        { key: `ph:d:${pending.phoneHash}:${Math.floor(now / DAY)}`, limit: SMS_LIMITS.phoneDay, windowMs: DAY },
-        { key: `all:d:${Math.floor(now / DAY)}`, limit: globalDay, windowMs: DAY },
-      ]);
-      if (over) return json(429, { status: 'rate-limited', message: 'Too many codes requested. Please try again later or call 888-862-9456.' });
-      const sent = await verify.start(pending.phone);
-      await store.event(leadId, { at: iso, type: sent.ok ? 'sms-resent' : 'sms-send-failed', sid: sent.ok ? sent.sid : null });
-      if (!sent.ok) return json(502, { status: 'send-failed', message: 'We could not send a new code. Please try again or call 888-862-9456.' });
-      await store.putPending(leadId, { ...pending, resends: pending.resends + 1, lastSentAt: now }, PENDING_MS);
-      return json(200, { status: 'sent', resendAfterMs: RESEND_COOLDOWN_MS, testMode: test });
-    }
-
-    case 'check': {
-      const leadId = typeof body.lead === 'string' && /^[0-9a-f-]{36}$/.test(body.lead) ? body.lead : null;
-      const code = typeof body.code === 'string' && /^\d{6}$/.test(body.code) ? body.code : null;
-      if (!code) return bad('Enter the 6-digit code from the text message.');
-      // The session will belong to this visit (tab) only.
-      const visit = visitOf(request);
-      if (!visit) return bad('Please reload the page and try again.');
-      const pending = leadId ? await store.getPending(leadId) : null;
-      if (!leadId || !pending) return json(410, { status: 'expired', message: 'This code has expired. Please ask for a new code.' });
-      if (pending.attempts >= MAX_ATTEMPTS) return json(429, { status: 'too-many-attempts', message: 'Too many incorrect codes. Please ask for a new code.' });
-      await store.putPending(leadId, { ...pending, attempts: pending.attempts + 1 }, PENDING_MS);
-      const result = await verify.check(pending.phone, code);
-      if (!result.ok) return json(502, { status: 'check-failed', message: 'We could not check the code. Please try again.' });
-      if (result.status !== 'approved') {
-        await store.event(leadId, { at: iso, type: 'code-rejected', attempt: pending.attempts + 1, status: result.status });
-        const left = MAX_ATTEMPTS - pending.attempts - 1;
-        if (result.status === 'expired') return json(410, { status: 'expired', message: 'This code has expired. Please ask for a new code.' });
-        return json(400, { status: 'wrong-code', message: left > 0 ? 'That code is not right. Please check the text message and try again.' : 'Too many incorrect codes. Please ask for a new code.', attemptsLeft: left });
+        /** @type {{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string }} */
+        const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl).catch(() => ({ sent: true, ok: false, error: 'error' }));
+        const delivered = crm.sent && crm.ok === true;
+        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null }).catch(() => {});
+        record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
+        await store.putLead(leadId, record);
+        if (!delivered)
+          return json(502, { status: 'delivery-failed', lead: leadId, message: `We could not send your request just now. Please try again, or call ${FUNNEL_PHONE}.` });
       }
-
-      const record = await store.getLead(leadId);
-      if (!record) return json(410, { status: 'expired', message: 'Please start again.' });
-      // The temporary public test code unlocks the quotes but never marks the phone SMS-verified.
-      record.verification = publicTest
-        ? { ...record.verification, status: 'test-code-accepted', phoneVerified: false, verifiedAt: null, testCodeAcceptedAt: iso, checkSid: null }
-        : { ...record.verification, status: 'approved', verifiedAt: iso, checkSid: result.sid };
-      await store.putLead(leadId, record);
-      await store.dropPending(leadId);
-      await store.event(leadId, publicTest
-        ? { at: iso, type: 'test-code-accepted', provider: record.verification.provider, phoneVerified: false }
-        : { at: iso, type: 'verified', provider: record.verification.provider, sid: result.sid, outcome: 'approved' });
 
       const sid = newSid();
       const exp = now + SESSION_MS;
       await store.putSession(sid, { lid: leadId, createdAt: iso, visit: visitHash(visit) }, SESSION_MS);
-      const cookie = setCookie(sign(key, { sid, lid: leadId, exp }));
-      // leadVerified: this check just marked the record SMS-verified (Twilio
-      // 'approved'); never in test or temporary-code mode.
-      // leadConversion (Randy, November 2026): the completed lead counts as an
-      // advertising lead (GA4 generate_lead, Meta Lead): SMS-verified, or the
-      // temporary code accepted (phoneVerified stays false) for a saved lead
-      // whose name isn't labeled TEST. Never in preview test mode. Once per
-      // lead: the pending code is dropped above, so a repeat check is refused.
-      const leadVerified = record.verification.status === 'approved' && !test;
-      const leadConversion = leadVerified || (publicTest && !/^\s*test\b/i.test(record.firstName ?? ''));
-      return json(200, { status: 'verified', quote: record.quoteAtSubmission, testMode: test, leadVerified, leadConversion, expiresAt: exp }, { 'Set-Cookie': cookie });
+      // leadConversion: the lead reached Agent CRM on the production
+      // deployment (GA4 generate_lead, Meta Lead), once per lead and never for
+      // a name labeled TEST. Never on previews.
+      const leadConversion = !test && !/^\s*test\b/i.test(firstName) && (await store.once(leadId, 'conversion'));
+      await store.event(leadId, { at: iso, type: 'lead-accepted', conversion: leadConversion });
+      return json(200, { status: 'verified', lead: leadId, quote, testMode: test, leadConversion, expiresAt: exp }, { 'Set-Cookie': setCookie(sign(key, { sid, lid: leadId, exp })) });
     }
 
     case 'session': {
       const v = await verifiedLead(request, env, store, now);
-      if (!v) return json(200, { status: 'not-verified', ...temp });
+      if (!v) return json(200, { status: 'not-verified' });
       const record = await store.getLead(v.leadId);
-      if (!record) return json(200, { status: 'not-verified', ...temp });
+      if (!record) return json(200, { status: 'not-verified' });
       // Texting handoff V4.0: the first word of the visitor's own name, for the
       // prewritten text on /facebook/ (this verified visit only; kept in memory there).
-      const firstName = typeof record.firstName === 'string' ? record.firstName.trim().split(/\s+/)[0].slice(0, 40) : '';
+      const firstName = firstNameOf(record.firstName);
       return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
     }
 
@@ -377,11 +323,10 @@ export async function handleQuote(request, env, deps) {
 
     // Direct preview access (Randy, November 2026, V1.1): PREVIEW AND LOCAL
     // ONLY. Opens this visit's quote results with a fixed, non-personal
-    // sample, without the contact step, an SMS or a CRM delivery: one fixed
+    // sample, without the contact step or a CRM delivery: one fixed
     // sample record (mode 'preview-sample', reset on every use) in the
     // preview store and a normal visit-scoped session. Refused on the
-    // production deployment (VERCEL_ENV=production); works on previews with or
-    // without Twilio (it never sends a code).
+    // production deployment (VERCEL_ENV=production).
     case 'preview-sample': {
       if (env.VERCEL_ENV === 'production') return json(404, { status: 'not-found' });
       const visit = visitOf(request);

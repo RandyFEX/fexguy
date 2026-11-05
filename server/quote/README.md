@@ -1,28 +1,46 @@
 # Quote funnel (server side)
 
-Phone verification, verified sessions, and consent and verification evidence
-for `/free-quote/` (Quote System v2.2, Randy, November
-2026). The page is `src/pages/final-expense-insurance-prices.astro` and its
-script is `src/scripts/quote-funnel.ts`. Prices come from the rate engine
-(`server/rates/`) only after the server has verified the phone.
+Lead submission, quote sessions and the lead (evidence) record for
+`/free-quote/`. The page is `src/pages/free-quote.astro` and its script is
+`src/scripts/quote-funnel.ts`. Prices come from the rate engine
+(`server/rates/`) only for a quote session the server opened.
+
+**V3.3 (Randy, November 2026): no SMS verification.** Twilio Verify, the
+temporary access code (123456), the code entry, resend and the `check` /
+`resend` actions were removed (`twilio.js` deleted). The phone number is never
+verified, and no record, CRM note or page says it is
+(`verification: { status: 'not-required', phoneVerified: false }`). Records
+created before V3.3 keep their old verification fields.
 
 ## Flow
 
-1. The visitor answers one question per screen: sex, age, tobacco, coverage
-   and state. State is lead information only; prices are representative
-   (Texas) rates for every state.
-2. The visitor enters a first name and a mobile number. The consent box is
-   optional and never pre-checked. `POST /api/quote/ {action: 'start'}`
-   creates the evidence record and sends a Twilio Verify SMS.
-3. `check` sends the 6-digit code. When Twilio approves it, the server
-   records the verification and sets the `ff_qs` session cookie: HttpOnly,
-   Secure, SameSite=Strict, 24 hours, signed and checked against the store on
-   every use.
-4. `/api/price-explorer/` returns prices only for a verified session.
-   Changing age, sex, tobacco or coverage needs no new code, and a refresh
-   returns to the results (`session`).
-5. `apply` re-prices the chosen category on the server, records it, and the
-   page continues to /help/.
+1. The visitor answers one question per screen: sex, age, tobacco, intended
+   use, coverage and state. State is lead information only; prices are
+   representative (Texas) rates for every state.
+2. The visitor enters a full name (`name.js`) and a mobile number and taps SEE
+   MY RATES. V3.8: no checkbox; the consent disclosure sits directly under the
+   button and the click is the consent (recorded as `method:
+   'button-submission'` with the time, version and exact text). The server
+   refuses any disclosure version but the current one.
+   `POST /api/quote/ {action: 'start'}` validates the inputs, applies the
+   submission limits, saves the lead record, and then:
+   - **production**: delivers the lead to Agent CRM (`crm.js`). Only after a
+     successful delivery does it open the quote session (the `ff_qs` cookie:
+     HttpOnly, Secure, SameSite=Strict, 12 hours, visit-scoped, signed and
+     checked against the store on every use) and answer `status: 'verified'`
+     with `leadConversion` (once per lead, never for a name starting with
+     TEST). A failed or unconfigured delivery keeps the saved lead, logs it
+     on the lead's events and answers 502 `delivery-failed` with the lead id
+     (no session, no conversion); the page keeps every input, and its retry
+     sends `retry: <lead id>`, which re-delivers that same lead (same visit,
+     not yet delivered) instead of creating a duplicate.
+   - **previews and local** (`VERCEL_ENV !== 'production'`): test mode; no
+     Agent CRM delivery, `mode: 'test'`, never a conversion.
+3. `/api/price-explorer/` returns prices only for that session. Changing age,
+   sex, tobacco or coverage needs nothing more, and a refresh returns to the
+   results (`session`).
+4. `apply` re-prices the chosen category on the server, records it, and the
+   page continues to /facebook/.
 
 v6.2: the funnel sends no notifications and makes no Formspark, Cloudflare
 Turnstile or email-service requests. Every lead is saved in the Redis
@@ -76,44 +94,21 @@ conversion only then.
 
 | Variable | Purpose |
 |---|---|
-| `TWILIO_ACCOUNT_SID` | Twilio account (AC...) |
-| `TWILIO_AUTH_TOKEN`, or `TWILIO_API_KEY_SID` + `TWILIO_API_KEY_SECRET` | Twilio authentication |
-| `TWILIO_VERIFY_SERVICE_SID` | The Verify Service (VA...) |
 | `KV_REST_API_URL` / `KV_REST_API_TOKEN` | The existing Upstash Redis |
 | `QUOTE_SESSION_SECRET` (optional; else `HEALTH_SEARCH_SECRET`) | Session signing and HMAC hashing (32+ chars) |
-| `QUOTE_SMS_DAILY_LIMIT` (optional, default 300) | Global daily SMS cap |
-| `QUOTE_VERIFY_MODE=test` (optional, previews only) | Force test mode |
-| `QUOTE_PUBLIC_TEST_CODE=on` (optional, production) | Explicitly allow the temporary public test code (v5.3); without it and without Twilio, production refuses verification |
+| `AGENT_CRM_TOKEN` / `AGENT_CRM_LOCATION_ID` | Agent CRM (production); without them production refuses to report a lead as accepted |
+| `QUOTE_SMS_DAILY_LIMIT` (optional, default 300) | Global daily submission cap (name kept) |
 
-## v5.3 temporary public test code (production, until Twilio is connected)
+The Twilio variables are no longer read.
 
-Production without Twilio credentials runs `public-test` mode only when
-`QUOTE_PUBLIC_TEST_CODE=on` is set explicitly (Randy, November 2026: never a
-silent fallback; otherwise verification is refused with the phone number)
-and `PUBLIC_TEST_CODE_ENABLED` in `twilio.js` is true: the existing SMS screens stay,
-no SMS is sent, and the code 123456 unlocks that visitor's own quotes only
-(the same visit-scoped session, rate limits and 5-attempt cap). The lead is
-real, but it is never an advertising conversion (GA4 generate_lead and
-Meta Lead fire only for a real Twilio-approved verification). The record never
-claims SMS verification: `verification.status` is `test-code-accepted`,
-`phoneVerified` is false and `verifiedAt` is null. It ends automatically when
-the Twilio variables are set, or at once by removing `QUOTE_PUBLIC_TEST_CODE=on`
-or setting `PUBLIC_TEST_CODE_ENABLED = false`.
-
-Without Twilio credentials, previews run in **test mode**: the page says so,
-no SMS is sent, the code is `123456`, and every record is marked `mode:
-"test"`. Production never uses test mode: without credentials it refuses
-verification (503).
-
-## Abuse protection
+## Abuse and duplicate protection
 
 - US numbers only; toll-free, premium, N11 and fictional ranges are rejected.
-- Per IP: 5 code requests an hour and 15 a day.
+- Per IP: 5 submissions an hour and 15 a day.
 - Per phone: 4 an hour and 6 a day.
 - Global daily cap.
-- 30-second resend cooldown and at most 3 resends.
-- 5 code attempts per verification; a pending verification expires after 10
-  minutes.
+- A retry after a failed delivery reuses the saved lead (no duplicate); the
+  page also ignores a second tap while a submission is in flight.
 - Same-site Origin only; strict input whitelists.
 - The pricing endpoint keeps its own per-IP limits.
 
@@ -129,18 +124,19 @@ Each lead record holds:
 - the submission time;
 - the consent choice (given or not), with its timestamp, version and exact
   text;
-- the verification notice version and text;
-- the Twilio Verify references, outcome and verified time;
+- the verification status (V3.3: `not-required`, `phoneVerified: false`);
+- the Agent CRM delivery (`crm.delivered`, contact id) and submission attempts;
 - the quote at submission;
 - the source page, landing page, traffic source, referrer and UTM values;
 - the IP address and user agent;
 - every Apply Now (category, server-computed premium, quote, product codes).
 
 The event list records:
-- SMS sent, resent and failed;
-- rejected codes;
-- verification;
+- contact submitted and resubmitted;
+- Agent CRM delivered, failed or not configured;
+- lead accepted (and whether it counted as a conversion);
 - Apply Now.
+(Records from before V3.3 also show their SMS and code events.)
 
 Retrieval is logged. Every lookup needs `--by` and `--reason`, and is
 appended to `qe:<ns>:access`:
@@ -153,21 +149,27 @@ node --env-file=.env.local scripts/quote-evidence.mjs --access-log --by "Randy" 
 ```
 
 Retention: records are kept until deleted, in line with the privacy policy's
-indefinite record retention. Randy's Formspark email for each verified lead
-is a second, independent copy of the contact, consent and verification
-details.
+indefinite record retention. The Agent CRM contact note is a second copy of
+the contact, quote and consent details.
 
 ## Tests
 
 `npm run test:quote` runs the tests against a real local Redis and a fake
-Twilio API; no SMS is sent. It covers:
-- Twilio requests;
-- test mode and production refusal;
+Agent CRM API; no SMS is sent and no lead is delivered. It covers:
+- the submission and Agent CRM delivery (upsert, tag, note);
+- a failed or unconfigured delivery (no session, no conversion) and the retry
+  of the same lead;
+- conversions (once, never for TEST names or previews);
 - the pricing gate with forged, tampered and expired tokens;
 - repricing;
 - evidence persistence after session expiry;
 - consent versions;
-- attempt and resend limits;
 - IP and phone limits;
 - origins;
 - separation of preview and production records.
+
+`npm run test:quote:browser` (after a build) includes
+`tests/quote/funnel-direct.browser.mjs`: the V3.3 contact step on desktop,
+iPhone and Android, SEE MY RATES straight to the cards, the delivery-failure
+path and the analytics events, against the production handlers with a fake
+Agent CRM.

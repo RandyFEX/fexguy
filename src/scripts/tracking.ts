@@ -193,10 +193,11 @@ if (location.pathname === lead.formspark.successPath) {
 
 // --- Lead: verified quote funnel lead ----------------------------------------
 // src/scripts/quote-funnel.ts sends ff:lead with the lead id only when the
-// server reports that this check SMS-verified the lead (never in test or
-// temporary-code mode). The server accepts a lead's code once; the id is
-// also remembered for the tab, so a repeat never counts twice. The id is
-// used only for that and is never sent.
+// server reports leadConversion: SEE MY RATES saved the lead and it reached
+// Agent CRM on the production deployment (V3.3; never on previews or for a
+// name labeled TEST). The server reports it once per lead; the id is also
+// remembered for the tab, so a repeat never counts twice. The id is used
+// only for that and is never sent.
 
 window.addEventListener('ff:lead', (e) => {
   const id = (e as CustomEvent<{ id?: unknown }>).detail?.id;
@@ -224,8 +225,11 @@ const FUNNEL_EVENTS = new Set([
   'quote_funnel_start',
   'quote_step_complete',
   'quote_contact_submit',
-  'quote_sms_request',
-  'quote_sms_verified',
+  // V3.3: SEE MY RATES accepted by the server (the lead is saved and delivered).
+  'quote_lead_accepted',
+  // V3.3: a texting option on the Ready to Apply page (/facebook/): the sms:
+  // link or the QR code button (below). A tap, never a sent message.
+  'quote_text_click',
   'quote_pricing_view',
   'quote_pricing_adjust',
   'quote_apply_now',
@@ -236,11 +240,18 @@ const FUNNEL_EVENTS = new Set([
   // v5.9: CALL NOW in an article's Get Pricing module (a tap, never a completed call).
   'quote_module_call_click',
 ]);
+// V3.3: texting taps on /facebook/ (the page's own handoff code is unchanged).
+document.addEventListener('click', (e) => {
+  if (location.pathname !== '/facebook/') return;
+  const el = (e.target as Element | null)?.closest?.('[data-fb-text], [data-fb-qr-btn]');
+  if (!el || el.getAttribute('aria-disabled') === 'true' || (el as HTMLButtonElement).disabled) return;
+  window.dispatchEvent(new CustomEvent('ff:funnel', { detail: { name: 'quote_text_click', method: el.hasAttribute('data-fb-qr-btn') ? 'qr-code' : 'sms-app' } }));
+});
 const ENTRY_TYPES = new Set(['article-sidebar', 'direct', 'campaign']);
 const FUNNEL_CATEGORIES = new Set(['lowest-preferred', 'average-standard', 'guaranteed-acceptance']);
 
 window.addEventListener('ff:funnel', (e) => {
-  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown; placement?: unknown }>).detail ?? {};
+  const detail = (e as CustomEvent<{ name?: unknown; step?: unknown; category?: unknown; carrier?: unknown; product?: unknown; coverage?: unknown; premium?: unknown; quoteRef?: unknown; at?: unknown; entryType?: unknown; entryPath?: unknown; placement?: unknown; method?: unknown }>).detail ?? {};
   if (typeof detail.name !== 'string' || !FUNNEL_EVENTS.has(detail.name)) return;
   const params: Record<string, string | number> = {};
   if (typeof detail.step === 'number' && Number.isInteger(detail.step) && detail.step >= 1 && detail.step <= 9) params.funnel_step = detail.step;
@@ -248,6 +259,7 @@ window.addEventListener('ff:funnel', (e) => {
   // v5.8: where the visit started: the entry type and the article's path (never personal data).
   if (typeof detail.entryType === 'string' && ENTRY_TYPES.has(detail.entryType)) params.entry_type = detail.entryType;
   if (detail.placement === 'sidebar' || detail.placement === 'in-article') params.module_placement = detail.placement;
+  if (detail.method === 'sms-app' || detail.method === 'qr-code') params.text_method = detail.method;
   if (typeof detail.entryPath === 'string' && /^\/[A-Za-z0-9._~\-/]{0,200}$/.test(detail.entryPath)) params.entry_path = detail.entryPath;
   // "Call to Get Approved" taps (v3.7): which quote was on the card when the
   // visitor tapped it. A company or plan name, the coverage and premium shown,

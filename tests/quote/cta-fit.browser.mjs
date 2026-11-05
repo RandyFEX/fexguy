@@ -3,7 +3,7 @@
 // button "Text Us With Questions" (message icon), same actions as before.
 // Each icon and label stays on one line inside the unchanged buttons at 320,
 // 375, 390, 430, the three-column range and desktop. Built site + real
-// handlers in test mode (tests/quote/funnel-server.mjs; code 123456).
+// handlers in test mode (tests/quote/funnel-server.mjs).
 //   node tests/quote/cta-fit.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer } from './funnel-server.mjs';
@@ -24,21 +24,17 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 
-// One verified visit; the viewport is then resized (one verification only).
+// One quote visit; the viewport is then resized (one submission only).
 const ctx = await browser.newContext({ viewport: { width: 390, height: 900 } });
 const page = await ctx.newPage();
 await page.goto(`${srv.base}/free-quote/`);
 await page.waitForSelector('[data-step="1"]:not([hidden])');
 for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="use"][data-value="burial"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
 await page.selectOption('[data-qf-state]', 'Texas');
-await page.fill('#qf-first', 'Test');
+await page.fill('#qf-first', 'Test Visitor');
 await page.fill('#qf-phone', '214-867-5309');
 await page.click('[data-qf-contact] button[type="submit"]');
 await page.waitForSelector('[data-step="8"]:not([hidden])');
-await page.click('[data-qf-send]');
-await page.waitForSelector('[data-qf-verify]:not([hidden])');
-await page.fill('#qf-code', '123456');
-await page.click('[data-qf-verify-btn]');
 await page.waitForFunction(() => [...document.querySelectorAll('.qf-card')].every((c) => c.dataset.state === 'ok'), null, { timeout: 8000 });
 
 for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
@@ -73,7 +69,7 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
       if ([375, 390, 430, 1024, 1280].includes(w)) assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
       else assert(c.call.fs >= 12 && c.apply.fs >= 12 && c.call.fs >= c.apply.fs && c.call.fs < 18, `type ${c.call.fs}/${c.apply.fs}`);
       // Same actions as before: the orange tel: link and the green Apply button (no link, no sms:).
-      assert(c.href === 'tel:8888629456' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:+18886564648' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
     }
     if (process.env.OUT) await page.locator('.qf-cards').screenshot({ path: `${process.env.OUT}/cta-${w}.png` });
     return `${r.cards[0].call.fs.toFixed(1)}px / ${r.cards[0].apply.fs.toFixed(1)}px`;

@@ -208,8 +208,9 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   if (text.includes('G-JMYZE458HQ')) ga4Found = true;
   if (text.includes('1757709920950272')) metaFound = true;
   for (const [label, re] of GUARDS) {
-    // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/.
-    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html'].includes(file.slice(DIST.length))) continue;
+    // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/,
+    // and in the /free-quote/ "Direct Contact" line (Randy, November 2026, V3.3).
+    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html', 'free-quote/index.html'].includes(file.slice(DIST.length))) continue;
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
@@ -766,7 +767,8 @@ const HEADER_LABEL = PHONES_SRC.match(/HEADER_PHONE_LABEL = '([^']+)'/)?.[1];
 const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1];
 // /facebook/ (Randy, November 2026) is built with the main number; its page
 // script switches Facebook/Instagram ad visitors to the campaign number.
-const CAMPAIGN_PAGES = new Set(['/roku/']);
+// /free-quote/ (Randy, November 2026, V3.7): the quote funnel uses the advertising number throughout.
+const CAMPAIGN_PAGES = new Set(['/roku/', '/free-quote/']);
 // The one approved exception (Randy, Quote System v3.6): the dedicated quote
 // funnel's minimal header shows Secure Form above the number, with no label.
 const NO_LABEL_PAGES = new Set(['/free-quote/']); // the funnel's page since v5.8
@@ -791,7 +793,7 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
     if (noLabel && !/Secure Form/.test(region.replace(/<[^>]+>/g, ' '))) headerProblems.push(`${page}: ${kind} has no Secure Form line`);
     const paths = [...inner.matchAll(/<svg\b[\s\S]*?<path\b[^>]*\bd="([^"]+)"/g)].map((m) => m[1]);
     if (!paths.includes(HEADER_ICON)) headerProblems.push(`${page}: ${kind} phone has no approved handset icon`);
-    const href = attrs.match(/href="tel:(\d+)"/)?.[1];
+    const href = attrs.match(/href="tel:(?:\+1)?(\d{10})"/)?.[1];
     const shown = (noLabel ? text : text.slice(HEADER_LABEL.length)).replace(/\D/g, '');
     const expected = CAMPAIGN_PAGES.has(page) ? '8886564648' : '8888629456';
     if (href !== shown) headerProblems.push(`${page}: ${kind} link dials ${href} but shows ${shown}`);
