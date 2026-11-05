@@ -82,7 +82,7 @@ function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `vi
 let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
-  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consentVersion: CONSENT_VERSION,
+  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', consentVersion: CONSENT_VERSION,
   quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
@@ -496,20 +496,18 @@ test('Start New Quote ends the session but keeps the lead, its consent record an
   assert.equal((await c.store.getLead(again.body.lead)).consent.given, true);
 });
 
-// ---- Quote System v2.9: intended use (lead information only) ----
-test('intended use is required, stored with the lead, in the notifications, Apply Now and intake; never a pricing input', async () => {
+// ---- V4.2: the burial/cremation question is gone ----
+test('V4.2: no intended-use question: a submission without it is accepted, a stray value is ignored, and nothing about it is stored', async () => {
   const c = client(PREVIEW);
-  assert.equal((await c.call(startBody({ intendedUse: undefined }))).http, 400);
-  assert.equal((await c.call(startBody({ intendedUse: 'vacation' }))).http, 400);
-  const start = await c.call(startBody({ intendedUse: 'burial' }));
+  const start = await c.call(startBody());
+  assert.equal(start.http, 200);
+  assert.equal((await client(PREVIEW).call(startBody({ intendedUse: 'vacation' }))).http, 200, 'an old page sending the field still works');
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
   await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
   const r = await c.store.getLead(start.body.lead);
-  assert.deepEqual(r.intendedUse, { value: 'burial', label: 'Burial Expenses' });
-  assert.equal(r.applications[0].intendedUse, 'Burial Expenses');
-  assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial Expenses');
-  // Same prices whatever the answer (the pricing endpoint only accepts the four rating inputs).
+  assert.ok(!('intendedUse' in r) && !('intendedUse' in r.applications[0]) && !('intendedUse' in r.intakes['guaranteed-acceptance']), JSON.stringify(r).slice(0, 200));
+  // The pricing endpoint only accepts the four rating inputs.
   assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
 });
 

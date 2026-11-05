@@ -1502,6 +1502,18 @@ scope protection wins.
   (`lowest-preferred`, `average-standard`, `guaranteed-acceptance`). Ages
   are 50 to 85 throughout the funnel (`AGES`; the page, the pricing API and
   the quote submission refuse 86+).
+  **V4.2 (Randy, November 2026):** the burial/cremation question ("How
+  Would You Use These Funds?") is gone: six steps (gender, age, tobacco,
+  coverage, state, contact; results are step 7), no `intendedUse` in the
+  submission, the lead record or the CRM note. The coverage question (step
+  4) has a logo wall under its card, "We compare coverage from trusted
+  insurance companies" (shown on that step only; 6 per row on desktop, 3 on
+  phones, 2 under 360px). Authentic files only: the existing Mutual of
+  Omaha, CVS/aetna and Gerber Life logos, plus AARP, State Farm and Allstate
+  from Wikimedia (upload.wikimedia.org: commons AARP_logo_2023.svg and
+  State_Farm_logo.svg, en Allstate_logo.svg) in public/images/carriers/wall/.
+  A brand whose file is missing is left out (LOGO_CANDIDATES in
+  free-quote.astro). Never show CICA Life there.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

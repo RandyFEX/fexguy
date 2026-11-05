@@ -51,8 +51,6 @@ const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSou
   // v5.8: where the funnel visit started (src/scripts/quote-entry.ts).
   'entryType', 'originTitle', 'originUrl', 'entryGender', 'entryAt'];
 const ENTRY_LABELS = { 'article-sidebar': 'Article sidebar', direct: 'Direct funnel entry', campaign: 'Campaign' };
-/** Intended use (lead information only; never a pricing input). */
-export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
 // V3.7: the funnel's own phone number (Randy's advertising number on /free-quote/).
 const FUNNEL_PHONE = '888-656-4648';
 
@@ -133,8 +131,6 @@ export async function handleQuote(request, env, deps) {
       if (!isFullName(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your full name (first and last name).' });
       if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
-      const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
-      if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
       if (!quote) return bad();
       // V3.8: no checkbox. Clicking SEE MY RATES under the disclosure is the
       // consent; the page must have shown the current disclosure version.
@@ -160,7 +156,6 @@ export async function handleQuote(request, env, deps) {
         firstName,
         phone,
         state,
-        intendedUse: { value: intendedUse, label: INTENDED_USES[intendedUse] },
         submittedAt: iso,
         consent: {
           given: true,
@@ -244,7 +239,7 @@ export async function handleQuote(request, env, deps) {
       if (!priced || priced.status !== 'ok') return json(409, { status: 'unavailable', message: 'This price is not available for these choices.' });
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
-      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution, intendedUse: record.intendedUse?.label ?? null };
+      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
       record.applications = [...(record.applications ?? []), application];
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
@@ -293,7 +288,7 @@ export async function handleQuote(request, env, deps) {
       const code = applied.attribution?.[0] ?? '';
       const plan = deps.raw ? await intakePlan(deps.raw, env, code) : { mode: 'none', reason: 'no-question-set', carrierId: null };
       record.intakes = record.intakes ?? {};
-      const intake = (record.intakes[category.id] ??= { code, carrierId: plan.carrierId ?? null, startedAt: iso, status: 'in-progress', flag: null, intendedUse: record.intendedUse?.label ?? null, quote: applied.quote, answers: [] });
+      const intake = (record.intakes[category.id] ??= { code, carrierId: plan.carrierId ?? null, startedAt: iso, status: 'in-progress', flag: null, quote: applied.quote, answers: [] });
       if (plan.mode !== 'questions') {
         intake.status = 'no-questions';
         intake.reason = plan.reason;
@@ -340,7 +335,6 @@ export async function handleQuote(request, env, deps) {
         firstName: 'Preview Sample',
         phone: null,
         state: 'Texas',
-        intendedUse: { value: 'burial', label: INTENDED_USES.burial },
         submittedAt: iso,
         consent: { given: false, action: 'preview sample (no visitor)', at: iso, version: null, text: null },
         verification: { status: 'preview-sample', requestedAt: iso, verifiedAt: null, provider: 'preview-sample', startSid: null, checkSid: null, phoneVerified: false },

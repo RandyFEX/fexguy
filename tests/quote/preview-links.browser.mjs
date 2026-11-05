@@ -50,7 +50,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       calls: [...document.querySelectorAll('[data-qf-call]')].filter((a) => a.getClientRects().length).map((a) => a.getAttribute('href')),
       url: location.pathname + location.search,
     }));
-    assert(r.step === '8' && r.labels.length === 3 && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && r.controls && r.calls.length === 3 && r.calls.every((h) => h === 'tel:+18886564648'), JSON.stringify(r));
+    assert(r.step === '7' && r.labels.length === 3 && r.prices.every((p) => /^\$\d+\.\d\d$/.test(p)) && r.controls && r.calls.length === 3 && r.calls.every((h) => h === 'tel:+18886564648'), JSON.stringify(r));
     assert(/Offer available for: (10:00|9:5\d)$/.test(r.lead) && r.url === '/free-quote/', JSON.stringify(r));
     // The controls reprice through the real rate engine.
     const before = r.prices.join();

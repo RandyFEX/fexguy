@@ -1,7 +1,7 @@
 // Quote funnel (Quote System v2.2; v3.5 layout and cards) for /free-quote/ (moved from /final-expense-insurance-prices/ in v5.8).
 //
-// Steps 1-6 collect sex, age, tobacco, intended use, coverage and state, one
-// per screen (they advance on their own). Step 7 takes the first name, mobile
+// Steps 1-5 collect sex, age, tobacco, coverage and state, one
+// per screen (they advance on their own). Step 6 takes the full name, mobile
 // number; clicking SEE MY RATES under the disclosure is the consent (V3.8, no checkbox). V3.3 (Randy, November 2026):
 // no SMS verification. SEE MY RATES sends them to the server, which saves the
 // lead, delivers it to Agent CRM (production) and sets this visit's HttpOnly
@@ -39,8 +39,8 @@ type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: stri
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const MIN = 5000;
 const MAX = 25000;
-const TOTAL = 7;
-const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, intended use, coverage)
+const TOTAL = 6;
+const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, coverage)
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 // v5.8: where this visit started (article sidebar, campaign or direct); every
 // funnel event carries the entry type and the article's path (never personal data).
@@ -90,14 +90,14 @@ if (root) {
   const progressWrap = $('[data-qf-progress-wrap]');
   const testBanner = $('[data-qf-test]');
 
-  const answers: Partial<Quote> & { state?: string; use?: string } = {};
+  const answers: Partial<Quote> & { state?: string } = {};
   try {
     Object.assign(answers, JSON.parse(sessionStorage.getItem(STEPS_KEY) ?? '{}'));
   } catch {}
   const saveSteps = () => {
     try {
-      const { age, gender, tobacco, use, coverage } = answers;
-      sessionStorage.setItem(STEPS_KEY, JSON.stringify({ age, gender, tobacco, use, coverage }));
+      const { age, gender, tobacco, coverage } = answers;
+      sessionStorage.setItem(STEPS_KEY, JSON.stringify({ age, gender, tobacco, coverage }));
     } catch {}
   };
   let leadId = '';
@@ -108,7 +108,10 @@ if (root) {
   function show(n: number, focus = true) {
     current = n;
     for (const [i, el] of steps) el.hidden = i !== n;
-    const results = n >= 8;
+    // V4.2: the insurance company logo wall belongs to the coverage question (step 4) only.
+    const logos = root!.querySelector<HTMLElement>('[data-qf-logos]');
+    if (logos) logos.hidden = n !== 4;
+    const results = n >= 7;
     back.hidden = n === 1 || results;
     root!.querySelector<HTMLElement>('[data-qf-top]')!.hidden = results;
     progressWrap.hidden = results;
@@ -116,12 +119,12 @@ if (root) {
     progress.style.width = `${(Math.min(n, TOTAL) / TOTAL) * 100}%`;
     progressLabel.textContent = `Step ${Math.min(n, TOTAL)} of ${TOTAL}`;
     if (!focus) return;
-    if (n === 7) fillSummary();
+    if (n === 6) fillSummary();
     const target = steps.get(n)?.querySelector<HTMLElement>('.qf-q');
     target?.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
-  /** Step 7: the visitor's own selections (Gender | Age | State | Tobacco | Coverage). */
+  /** Step 6: the visitor's own selections (Gender | Age | State | Tobacco | Coverage). */
   function fillSummary() {
     const put = (k: string, v: string) => {
       const el = root!.querySelector<HTMLElement>(`[data-qf-sum="${k}"]`);
@@ -151,14 +154,13 @@ if (root) {
     if (pick === 'gender') answers.gender = value === 'female' ? 'female' : 'male';
     if (pick === 'age') answers.age = Number(value);
     if (pick === 'tobacco') answers.tobacco = value === 'yes';
-    if (pick === 'use') answers.use = value;
     if (pick === 'coverage') answers.coverage = Number(value);
     saveSteps();
     complete(current);
     show(current + 1);
   });
 
-  // Step 4: Other amount.
+  // Step 4 (coverage): Other amount.
   const otherBox = $('[data-qf-other]');
   const otherInput = $<HTMLInputElement>('#qf-other-input');
   const otherError = $('[data-qf-other-error]');
@@ -179,8 +181,8 @@ if (root) {
     if (n === null) return otherInput.focus();
     answers.coverage = n;
     saveSteps();
-    complete(5);
-    show(6);
+    complete(4);
+    show(5);
   };
   $('[data-qf-other-next]').addEventListener('click', otherNext);
   otherInput.addEventListener('keydown', (e) => {
@@ -192,12 +194,12 @@ if (root) {
   stateSelect.addEventListener('change', () => {
     if (!stateSelect.value) return;
     answers.state = stateSelect.value;
-    complete(6);
-    show(7);
+    complete(5);
+    show(6);
   });
 
 
-  // Step 7: the visitor's full name and mobile number (V3.8: no consent checkbox).
+  // Step 6: the visitor's full name and mobile number (V3.8: no consent checkbox).
   // The funnel's phone number (888-656-4648 on /free-quote/) comes from the page HTML.
   const funnelPhone = root.dataset.funnelPhone || lead.phone.display;
   const contactForm = $<HTMLFormElement>('[data-qf-contact]');
@@ -235,13 +237,13 @@ if (root) {
     if (!nameOk) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
     const quote = quoteReady();
-    if (!quote || !answers.state || !answers.use) return show(1);
+    if (!quote || !answers.state) return show(1);
     track('quote_contact_submit');
     submitting = true;
     submitBtn.disabled = true;
     setStatus(contactStatus, 'Getting your rates…');
     const { http, body } = await api({
-      action: 'start', firstName, phone: phoneInput.value.trim(), state: answers.state, intendedUse: answers.use, quote,
+      action: 'start', firstName, phone: phoneInput.value.trim(), state: answers.state, quote,
       consentVersion: root!.dataset.consentVersion,
       source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
     });
@@ -269,7 +271,7 @@ if (root) {
     // Agent CRM on the production deployment (never on previews, for a name
     // labeled TEST, a resumed session, Apply Now or /facebook/).
     if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
-    complete(7);
+    complete(6);
     unlock(quote, body.testMode, body.expiresAt);
   });
 
@@ -282,14 +284,14 @@ if (root) {
     };
   }
 
-  // Step 8: live prices with free repricing.
+  // Step 7: live prices with free repricing.
   const adjust = $<HTMLFormElement>('[data-qf-adjust]');
   const adjOther = $('[data-qf-adj-other]');
   const adjOtherInput = $<HTMLInputElement>('#qf-adj-other');
   const adjOtherError = $('[data-qf-adj-other-error]');
   const live = $('[data-qf-live]');
   const applyStatus = $('[data-qf-apply-status]');
-  const pricing = steps.get(8)!;
+  const pricing = steps.get(7)!;
   const cards = new Map(Array.from(root.querySelectorAll<HTMLElement>('[data-qf-card]')).map((el) => [el.dataset.qfCard!, el]));
   const cache = new Map<string, Category[]>();
   let shown: { quote: Quote; categories: Category[] } | null = null;
@@ -372,7 +374,7 @@ if (root) {
   function sessionLost() {
     shown = null;
     lockCards();
-    show(7);
+    show(6);
     setStatus(contactStatus, 'Please confirm your details to see your rates again.', true);
   }
 
@@ -536,11 +538,11 @@ if (root) {
     stopCountdown?.();
     stopCountdown = runCountdown(countdown, offerExpiresAt('results'), expireResults);
     if (expired) {
-      show(8, false);
+      show(7, false);
       return;
     }
     fillAdjust(quote);
-    show(8, false);
+    show(7, false);
     // Stay on the page; bring the top of the results into view.
     resultsTitle.focus({ preventScroll: true });
     root!.scrollIntoView({ block: 'start', behavior: 'auto' });
@@ -664,7 +666,7 @@ if (root) {
       const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
       saveHandoff({
         selection: { tierId: id, tier: String(body.category ?? cat.label), carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: shown.quote.coverage, monthlyPremium: String(body.monthlyPremium ?? cat.monthlyPremium) },
-        inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, intendedUse: answers.use ?? null, state: answers.state ?? null },
+        inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, state: answers.state ?? null },
         attribution,
         ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
       });

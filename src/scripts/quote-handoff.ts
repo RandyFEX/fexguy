@@ -30,7 +30,7 @@ export type QuoteHandoff = {
   createdAt: number;
   origin: 'free-quote';
   selection: { tierId: string; tier: string; carrier: string | null; plan: string | null; coverage: number; monthlyPremium: string };
-  inputs: { age: number; gender: 'male' | 'female'; tobacco: boolean; intendedUse: string | null; state: string | null };
+  inputs: { age: number; gender: 'male' | 'female'; tobacco: boolean; state: string | null };
   attribution: Record<string, string>;
   /** When the quote access ends (ms since epoch). */
   expiresAt?: number;

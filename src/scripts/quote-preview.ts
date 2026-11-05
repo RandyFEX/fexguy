@@ -70,7 +70,7 @@ export async function preparePreviewApply(): Promise<void> {
   const first = (cat.carriers ?? []).find(Boolean) ?? null;
   saveHandoff({
     selection: { tierId: cat.id, tier: cat.label, carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: quote.coverage, monthlyPremium: String(cat.monthlyPremium) },
-    inputs: { age: quote.age, gender: quote.gender, tobacco: quote.tobacco, intendedUse: 'burial', state: 'Texas' },
+    inputs: { age: quote.age, gender: quote.gender, tobacco: quote.tobacco, state: 'Texas' },
     attribution: { preview: 'sample' },
     ...(typeof s.body.expiresAt === 'number' ? { expiresAt: s.body.expiresAt } : {}),
   });
