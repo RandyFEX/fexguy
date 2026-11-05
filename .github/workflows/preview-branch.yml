@@ -1,0 +1,43 @@
+# Permanent Preview links (Randy, November 2026, V2.0).
+#
+# Vercel gives the `preview` branch one fixed address:
+#   https://fexguy-git-preview-final-expense-guys-projects.vercel.app
+# with the direct review links (PR #107, preview builds only):
+#   /free-quote/?preview=results   and   /facebook/?preview=apply
+#
+# Whenever a pull request in this repository is opened, updated or reopened,
+# this workflow points `preview` at that pull request merged into the
+# current main (GitHub's merge commit), so the fixed address always shows the
+# change being reviewed on top of the latest site. Vercel then builds it as a
+# normal Preview deployment (never Production). It never touches main.
+name: Preview branch
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Branch or commit to show at the permanent Preview address
+        required: true
+        default: main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preview-branch
+  cancel-in-progress: false
+
+jobs:
+  update:
+    # Same-repository pull requests only; never the preview branch itself.
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref != 'preview')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.sha }}
+          fetch-depth: 1
+      - name: Point the preview branch at this change
+        run: git push --force origin HEAD:refs/heads/preview
