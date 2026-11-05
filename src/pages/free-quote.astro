@@ -509,7 +509,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   @media (min-width: 30rem) { .qf-code-row { grid-template-columns: 1fr auto; } .qf-code-row .qf-continue { width: auto; padding-inline: var(--space-6); } }
   .qf-field[hidden] { display: none; }
   .qf-unlock[hidden] { display: none; }
-  .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.625rem; font-weight: 800; color: var(--color-error); text-align: center; }
+  /* V2.3 (Randy, November 2026): the site's dark green, no longer red. */
+  .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.625rem; font-weight: 800; color: #173f35; text-align: center; }
   .qf-unlock__title:focus { outline: none; }
   /* Phones (Randy, November 2026): before verification the same unlock panel
      comes first, above the blurred cards, as "Your Rates Are Ready!" with a
@@ -548,6 +549,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* Countdown (V2.0): only the digits are highlighted, in the module's yellow
      behind dark text (yellow text alone is unreadable on white). */
   .qf-countdown { display: inline-block; padding: 0 0.3em; border-radius: 0.2em; background: #ffeb3b; color: #0b2e22; font-weight: 800; font-variant-numeric: tabular-nums; }
+  /* V2.3: "Temporary access code: 123456." in the countdown's yellow, inline (it
+     wraps with the sentence); only the six digits bold. */
+  :global(.qf-code-hl) { padding: 0 0.2em; border-radius: 0.2em; background: #ffeb3b; font-weight: 400; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  :global(.qf-code-hl strong) { font-weight: 800; font-variant-numeric: tabular-nums; }
   .qf-restart { display: block; margin: var(--space-3) auto 0; }
   .qf-restart[hidden] { display: none; }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }

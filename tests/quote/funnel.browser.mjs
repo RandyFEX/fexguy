@@ -289,7 +289,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     });
     // Phones: the panel comes first as "Your Rates Are Ready!"; tablets and desktop keep "Unlock Your Rates" under the cards.
     const phone = name === 'mobile';
-    assert(u.title === (phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates') && u.ready === (phone ? 'Verify your phone number by text to reveal your prices.' : null) && u.above === phone && u.panels === 1 && u.color === 'rgb(185, 28, 28)' && u.size >= 24, JSON.stringify(u));
+    assert(u.title === (phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates') && u.ready === (phone ? 'Verify your phone number by text to reveal your prices.' : null) && u.above === phone && u.panels === 1 && u.color === 'rgb(23, 63, 53)' && u.size >= 24, JSON.stringify(u));
     const panel = await page.evaluate(() => {
       const parts = ['#qf-unlock-title', '[data-qf-unlock-part="send"]', '[data-qf-unlock-part="explain"]', '[data-qf-unlock-part="change"]', '[data-qf-unlock-part="rates"]'].map((sel) => document.querySelector(sel));
       const cs = (e) => getComputedStyle(e);
@@ -314,7 +314,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(JSON.stringify(panel.texts) === JSON.stringify([phone ? 'Your Rates Are Ready!' : 'Unlock Your Rates', 'Text Me My Access Code', `We'll text a 6-digit verification code to (***) ***-${last4u}.`, 'Change Number', 'Message and data rates may apply.']), `unlock panel wording ${JSON.stringify(panel.texts)}`);
     assert(panel.between && panel.explainCentered && panel.numberLine && (name === 'desktop' ? panel.explainLines === 1 : panel.explainLines <= 2), `unlock sentence layout ${JSON.stringify(panel)}`);
     assert(panel.tops.every((t, k) => k === 0 || t > panel.tops[k - 1]), `unlock panel order ${panel.tops}`);
-    assert(panel.titleColor === 'rgb(185, 28, 28)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
+    assert(panel.titleColor === 'rgb(23, 63, 53)' && panel.explain[0] >= 700 && panel.explain[1] === 'rgb(17, 17, 17)' && panel.number[0] >= 700 && panel.number[1] === 'rgb(17, 17, 17)', `unlock panel styling ${JSON.stringify(panel)}`);
     assert(panel.rates[0] <= 14 && /^rgb\((\d+), \1, \1\)$|^rgb\(91, 101, 96\)$/.test(panel.rates[1]) && panel.changeIsButton && panel.changeCentered && !panel.oldText, `rates line ${JSON.stringify(panel)}`);
     // Change Number still opens the number field (prefilled), then the panel is put back as it was.
     await page.click('[data-qf-edit-phone]');
