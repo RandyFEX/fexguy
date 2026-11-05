@@ -47,16 +47,7 @@ export function smsHref(number, body, ios) {
 }
 
 /**
- * Device-aware handoff (V1.4): phones and tablets that can text (iOS,
- * Android, other "Mobi" browsers) get the sms: link; everything else is
- * treated as a computer and gets the QR code (with a copy fallback), so an
- * unusual browser never ends up with nothing to do.
- * @param {{ userAgent: string, platform?: string, maxTouchPoints?: number }} nav
- */
-export const isMobileDevice = (nav) => isIOS(nav) || /Android|Mobi/i.test(nav.userAgent);
-
-/**
- * The QR code's text: the SMSTO form that iPhone and Android camera apps
+ * The computer option's QR code text (two-option handoff V1.9): the SMSTO form that iPhone and Android camera apps
  * open as a new text to the number with the message filled in. '' without a
  * valid 10-digit US number.
  * @param {string | null | undefined} number @param {string} body

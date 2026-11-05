@@ -138,15 +138,15 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     forms: document.querySelectorAll('form').length,
     oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
     ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
-    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'); return t && { label: t.textContent.trim(), icon: !!t.querySelector('svg'), href: t.getAttribute('href'), note: t.nextElementSibling?.textContent.trim() }; })(),
+    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'), q = document.querySelector('.fb-hero [data-fb-qr-btn]'); return t && q && { label: t.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), qrLabel: q.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), icon: !!t.querySelector('svg') && !!q.querySelector('svg'), href: t.getAttribute('href'), note: t.nextElementSibling?.textContent.trim(), qrNote: q.nextElementSibling?.textContent.trim() }; })(),
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  // Texting handoff: the hero button is PREPARE MY TEXT, an sms: link to the Agent CRM number once the
-  // visitor's session has answered (no tel: link);
-  // the other three call buttons are unchanged.
+  // Two-option handoff V1.9: the cell phone button (an sms: link to the Agent CRM number once the
+  // visitor's session has answered; no tel: link) and the computer button (QR code); the other
+  // three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === 'PREPARE MY TEXT' && f.text.icon && (f.text.href === null || f.text.href === '#fb-qr' || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === "CLICK HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -593,8 +593,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       // Native SMS V1.2: the prewritten text carries this visitor's first name and this card's coverage and premium.
       const prem = r.card.replace(/\.00$/, '');
       const text = `Hi, this is ${NAMES[name].split(' ')[0]}. I have a few questions about my ${cov} final expense insurance quote for ${prem}/month.`;
-      // Phones get the sms: link; computers the QR code (V1.4) with the same text.
-      assert(r.fb.smsBody === text && (name === 'desktop' ? r.fb.sms === '#fb-qr' : r.fb.sms === `sms:+18886720762&body=${encodeURIComponent(text)}`), `${id} sms ${r.fb.sms} ${r.fb.smsBody}`);
+      // The cell phone button's sms: link (iOS format on the iPhone, ?body= elsewhere) carries this text.
+      assert(r.fb.smsBody === text && r.fb.sms === `sms:+18886720762${name === 'desktop' ? '?' : '&'}body=${encodeURIComponent(text)}`, `${id} sms ${r.fb.sms} ${r.fb.smsBody}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');

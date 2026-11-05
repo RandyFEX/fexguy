@@ -155,23 +155,28 @@ const advantage = [
           </dl>
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
-        <div class="fb-call">
-          <!-- Texting handoff V4.0: opens the visitor's own messaging app with
-               the prewritten text (src/scripts/sms-link.js) to SMS_NUMBER
-               (src/config/phones.ts); nothing is sent until the visitor presses
-               Send. No link until that number is set and a quote is selected. -->
-          <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
-            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="12" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="16.5" cy="10.25" r="1.5" fill="#c2410c" /></svg>
-            <span>PREPARE MY TEXT</span>
-          </a>
-          <p class="fb-text__note">Just review your prewritten text in your messaging app and hit Send.</p>
-          <!-- Device-aware handoff V1.4: on a computer, PREPARE MY TEXT shows this QR
-               code (generated in the browser, src/scripts/sms-link.js qrPayload)
-               instead of opening an app; the copy link is its discreet fallback. -->
-          <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
-            <p class="fb-qr__note">Scan this code with your cellphone to open your prepared text.</p>
-            <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code for your prepared text"></div>
-            <button class="fb-text__copy" type="button" data-fb-copy>Copy my message</button>
+        <!-- Two-option SMS handoff V1.9 (Randy, November 2026): the cell phone
+             button opens the visitor's own messaging app with the prewritten
+             text (src/scripts/sms-link.js) to SMS_NUMBER (src/config/phones.ts);
+             the computer button reveals a QR code with the same number and text.
+             Nothing is sent until the visitor presses Send. -->
+        <div class="fb-call fb-text-options">
+          <div class="fb-text-opt">
+            <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
+              <span>CLICK HERE IF YOU'RE<br />ON A CELL PHONE</span>
+            </a>
+            <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
+          </div>
+          <div class="fb-text-opt">
+            <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
+              <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
+            </button>
+            <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
+            <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
+              <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -272,7 +277,7 @@ const advantage = [
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
   import { SMS_NUMBER as SMS } from '@/config/phones';
-  import { isIOS, isMobileDevice, prewrittenText, qrPayload, smsHref } from '@/scripts/sms-link.js';
+  import { isIOS, prewrittenText, qrPayload, smsHref } from '@/scripts/sms-link.js';
 
   // Phone number by traffic source (Randy, November 2026): the page is built
   // with the main website number (also the fallback without JavaScript);
@@ -345,7 +350,9 @@ const advantage = [
   // number (src/config/phones.ts SMS_NUMBER) or a selected quote: no link.
   const prepareText = async () => {
     const btn = document.querySelector<HTMLAnchorElement>('[data-fb-text]');
-    const copy = document.querySelector<HTMLButtonElement>('[data-fb-copy]');
+    const qrBtn = document.querySelector<HTMLButtonElement>('[data-fb-qr-btn]');
+    const panel = document.querySelector<HTMLElement>('[data-fb-qr]');
+    const code = panel?.querySelector<HTMLElement>('[data-fb-qr-code]');
     const h = readHandoff();
     if (!btn || !h) return;
     let firstName = '';
@@ -358,42 +365,22 @@ const advantage = [
     btn.dataset.smsBody = body;
     const href = smsHref(SMS, body, isIOS(navigator));
     if (!href) return;
+    // Two-option handoff V1.9: the cell phone button opens the messaging app.
+    btn.href = href;
     btn.setAttribute('aria-disabled', 'false');
-    // Device-aware handoff V1.4: phones open the messaging app directly.
-    if (isMobileDevice(navigator)) {
-      btn.href = href;
-      return;
-    }
-    // Computers (and unusual browsers): the click shows a QR code with the same
-    // number and text; nothing is launched. The QR library loads only here.
-    const panel = document.querySelector<HTMLElement>('[data-fb-qr]');
-    const code = panel?.querySelector<HTMLElement>('[data-fb-qr-code]');
+    // The computer button reveals a QR code with the same number and text
+    // (generated in the browser; the QR library loads only on this click).
     const payload = qrPayload(SMS, body);
-    if (!panel || !code || !payload) return;
-    btn.href = '#fb-qr';
-    btn.setAttribute('aria-controls', 'fb-qr');
-    btn.setAttribute('aria-expanded', 'false');
-    btn.addEventListener('click', async (e) => {
-      e.preventDefault();
+    if (!qrBtn || !panel || !code || !payload) return;
+    qrBtn.addEventListener('click', async () => {
       if (!code.dataset.qrText) {
         const { renderSVG } = await import('uqr');
         code.innerHTML = renderSVG(payload, { ecc: 'M', border: 2 });
         code.dataset.qrText = payload;
       }
       panel.hidden = false;
-      btn.setAttribute('aria-expanded', 'true');
+      qrBtn.setAttribute('aria-expanded', 'true');
     });
-    if (copy) {
-      if (!navigator.clipboard) copy.hidden = true;
-      copy.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(body);
-          copy.textContent = 'Message copied';
-        } catch {
-          copy.textContent = 'Copy my message';
-        }
-      });
-    }
   };
   const ready = () => {
     showSelectedQuote();
@@ -524,8 +511,32 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
-  /* Texting page V1.1: "Prepare My Text" keeps the call button's orange,
-     size and type; icon and label stay together on one line. */
+  /* Two-option handoff V1.9: two equal columns under the quote card,
+     divided by a thin line, from 48rem; stacked (cell phone first) on phones. */
+  .fb-hero .fb-call.fb-text-options {
+    max-width: 46rem;
+    gap: var(--space-6);
+  }
+  .fb-text-opt {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  @media (min-width: 48rem) {
+    .fb-hero .fb-call.fb-text-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .fb-text-opt {
+      padding-inline: var(--space-6);
+    }
+    .fb-text-opt + .fb-text-opt {
+      border-left: 1px solid rgb(255 255 255 / 0.35);
+    }
+  }
+  /* Texting buttons: the site CTA orange; icon beside a two-line label. */
   .fb-text__btn {
     display: flex;
     align-items: center;
@@ -535,13 +546,25 @@ const advantage = [
     padding: var(--space-3) var(--space-6);
     background: var(--color-cta);
     color: var(--color-on-cta);
-    /* V4.1: a little larger than the call buttons' 19px for prominence. */
-    font-size: 1.375rem;
+    font-size: min(1.25rem, 5.4vw);
     font-weight: 800;
     letter-spacing: 0.01em;
+    line-height: 1.2;
+    text-align: center;
     white-space: nowrap;
     text-decoration: none;
+    border: 0;
+    border-radius: var(--radius);
     cursor: pointer;
+  }
+  @media (min-width: 48rem) {
+    .fb-text__btn {
+      padding-inline: var(--space-4);
+      font-size: min(1.25rem, 2.25vw);
+    }
+  }
+  .fb-text__btn:disabled {
+    cursor: default;
   }
   .fb-text__btn svg {
     flex: none;
@@ -555,29 +578,12 @@ const advantage = [
      on one line on desktop; phones wrap it normally. */
   .fb-text__note {
     align-self: center;
-    width: max-content;
-    max-width: calc(100vw - 2 * var(--space-4));
     margin: calc(-1 * var(--space-1)) 0 0;
+    text-wrap: balance;
     font-size: 0.9375rem;
     line-height: 1.4;
     color: #ffffff;
     text-align: center;
-  }
-  .fb-text__copy {
-    align-self: center;
-    min-height: var(--tap-target, 44px);
-    padding: 0 var(--space-3);
-    border: 0;
-    background: none;
-    color: #ffffff;
-    font: inherit;
-    font-size: 0.9375rem;
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-    cursor: pointer;
-  }
-  .fb-text__copy[hidden] {
-    display: none;
   }
   /* V1.4: the desktop QR code, compact, on white so phones can scan it. */
   .fb-qr {
@@ -589,13 +595,6 @@ const advantage = [
   }
   .fb-qr[hidden] {
     display: none;
-  }
-  .fb-qr__note {
-    margin: 0;
-    font-size: 0.9375rem;
-    line-height: 1.4;
-    color: #ffffff;
-    text-align: center;
   }
   .fb-qr__code {
     width: 11rem;

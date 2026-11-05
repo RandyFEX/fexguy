@@ -710,14 +710,8 @@ test('texting handoff V4.0: the session answer carries the first name of this ve
   assert.equal((await c.call({ action: 'session' })).body.firstName, 'Preview');
 });
 
-test('device-aware handoff V1.4: phones get the sms: link, computers the QR code text', async () => {
-  const { isMobileDevice, qrPayload } = await import('../../src/scripts/sms-link.js');
-  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Mobile/15E148' }));
-  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) Mobile Safari/537.36' }));
-  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 13; SM-X700) Safari/537.36' }), 'Android tablet');
-  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 5 }), 'iPad');
-  assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0' }));
-  assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 0 }));
+test('two-option handoff V1.9: the QR code text for the computer option', async () => {
+  const { qrPayload } = await import('../../src/scripts/sms-link.js');
   const body = 'Hi, this is Mary. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
   assert.equal(qrPayload('8886720762', body), `SMSTO:+18886720762:${body}`);
   assert.equal(qrPayload(null, body), '');
