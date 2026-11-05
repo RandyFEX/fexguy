@@ -68,6 +68,15 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(p.tops.every((t, i) => i === 0 || t > p.tops[i - 1]), `order ${p.tops}`);
     assert(!p.sms && !/We'll text|sent to|on its way/i.test(p.panel), `SMS wording shown: ${p.panel}`);
     assert(!p.banner && !p.subtitle, 'preview banner or subtitle shown before unlocking');
+    // V2.3: the green heading, and "Temporary access code: 123456." inline in the countdown yellow, only the digits bold.
+    const hl = await page.evaluate(() => {
+      const note = document.querySelector('[data-qf-send-form] [data-qf-temp-note]'), span = note.querySelector('.qf-code-hl'), digits = span?.querySelector('strong');
+      const cs = (e) => getComputedStyle(e);
+      const countdown = document.querySelector('.qf-countdown');
+      return { heading: cs(document.querySelector('#qf-unlock-title')).color, text: span?.textContent, digits: digits?.textContent, bg: span && cs(span).backgroundColor, countdownBg: countdown && cs(countdown).backgroundColor, spanW: span && Number(cs(span).fontWeight), digitsW: digits && Number(cs(digits).fontWeight), inline: span && cs(span).display === 'inline', rest: note.textContent.slice(span?.textContent.length ?? 0), restW: Number(cs(note).fontWeight), size: span && cs(span).fontSize === cs(note).fontSize, hscroll: document.documentElement.scrollWidth > innerWidth };
+    });
+    assert(hl.heading === 'rgb(23, 63, 53)' && hl.text === 'Temporary access code: 123456.' && hl.digits === '123456' && hl.bg === hl.countdownBg && hl.bg === 'rgb(255, 235, 59)' && hl.spanW === 400 && hl.digitsW >= 700 && hl.inline && hl.size && !hl.hscroll, `access code highlight ${JSON.stringify(hl)}`);
+    assert(hl.rest === ' Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.', `rest ${hl.rest}`);
     if (OUT) await page.locator('[data-qf-unlock]').screenshot({ path: `${OUT}/temp-${name}-unlock.png` });
   });
 

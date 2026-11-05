@@ -279,7 +279,19 @@ if (root) {
     if (typeof note !== 'string' || !note) return;
     tempCode = true;
     unlockPanel.dataset.tempCode = '';
-    root!.querySelectorAll<HTMLElement>('[data-qf-temp-note]').forEach((p) => { p.textContent = note; p.hidden = false; });
+    // V2.3: "Temporary access code: 123456." is highlighted (digits bold); the text is unchanged.
+    const m = /^(Temporary access code: )(\d{6})(\.)([\s\S]*)$/.exec(note);
+    root!.querySelectorAll<HTMLElement>('[data-qf-temp-note]').forEach((p) => {
+      if (m) {
+        const hl = document.createElement('span');
+        hl.className = 'qf-code-hl';
+        const digits = document.createElement('strong');
+        digits.textContent = m[2];
+        hl.append(m[1], digits, m[3]);
+        p.replaceChildren(hl, m[4]);
+      } else p.textContent = note;
+      p.hidden = false;
+    });
     resendBtn.hidden = true;
   }
   let resendTimer: number | undefined;
