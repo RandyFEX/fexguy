@@ -1497,10 +1497,11 @@ scope protection wins.
   Rate" and "Second Competitive Preferred Rate" rank the competitive
   products (`COMPETITIVE_PRODUCTS` in server/rates/pricing-categories.js:
   Mutual of Omaha Living Promise Level and Aetna Accendo Standard) by the
-  engine's premium for the visitor's inputs (the second card is unavailable
-  when only one issues, e.g. ages 86-89); the third card stays Gerber's
+  engine's premium for the visitor's inputs; the third card stays Gerber's
   "Guaranteed Acceptance Rate". Category ids are unchanged
-  (`lowest-preferred`, `average-standard`, `guaranteed-acceptance`).
+  (`lowest-preferred`, `average-standard`, `guaranteed-acceptance`). Ages
+  are 50 to 85 throughout the funnel (`AGES`; the page, the pricing API and
+  the quote submission refuse 86+).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

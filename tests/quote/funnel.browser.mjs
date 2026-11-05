@@ -172,7 +172,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (s === 1) await page.click('[data-pick="gender"][data-value="female"]');
       if (s === 2) {
         const ages = await page.$$eval('[data-pick="age"]', (els) => els.map((e) => Number(e.dataset.value)));
-        assert(ages.length === 40 && ages[0] === 50 && ages[39] === 89, 'ages 50-89');
+        assert(ages.length === 36 && ages[0] === 50 && ages[35] === 85, `ages 50-85 ${ages[0]}-${ages.at(-1)} (${ages.length})`);
         await page.click('[data-pick="age"][data-value="60"]');
       }
       if (s === 3) await page.click('[data-pick="tobacco"][data-value="no"]');
@@ -419,12 +419,13 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.click('.qf-adjust label:has(input[name="tobacco"][value="yes"])');
     const exp2 = expected({ age: 60, gender: 'male', tobacco: true, coverage: 10000 });
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp2['average-standard'], { timeout: 5000 });
-    await page.selectOption('#qf-adj-age', '87');
-    // V3.9: at 87 only one competitive product issues: it is the first card; the second has no rate.
-    const exp87 = expected({ age: 87, gender: 'male', tobacco: true, coverage: 10000 });
-    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok' && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'unavailable', null, { timeout: 5000 });
-    assert((await amount(page, 'lowest-preferred')) === exp87['lowest-preferred'] && exp87['average-standard'] === 'unavailable', `age 87 ${JSON.stringify(exp87)}`);
-    assert(await page.isHidden('[data-qf-card="average-standard"] [data-qf-timing]') || !(await page.textContent('[data-qf-card="average-standard"] [data-qf-timing]')), 'timing shown for an unavailable product');
+    // V3.9: ages run 50 to 85 (the adjust menu offers nothing above 85); at 85 both competitive cards are priced.
+    const adjAges = await page.$$eval('#qf-adj-age option', (els) => els.map((e) => Number(e.value)));
+    assert(adjAges[0] === 50 && adjAges.at(-1) === 85 && adjAges.length === 36, `adjust ages ${adjAges[0]}-${adjAges.at(-1)}`);
+    await page.selectOption('#qf-adj-age', '85');
+    const exp85 = expected({ age: 85, gender: 'male', tobacco: true, coverage: 10000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp85['average-standard'], { timeout: 5000 });
+    assert((await amount(page, 'lowest-preferred')) === exp85['lowest-preferred'] && exp85['lowest-preferred'].startsWith('$') && exp85['average-standard'].startsWith('$'), `age 85 ${JSON.stringify(exp85)}`);
     const boxes = await page.$$eval('.qf-group', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { y: Math.round(r.y) }; }));
     if (name === 'desktop') assert(boxes[0].y === boxes[1].y && boxes[1].y === boxes[2].y && boxes[3].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');

@@ -86,7 +86,7 @@ export async function handlePriceExplorer(request, env, deps) {
   let body;
   try { body = JSON.parse(text); } catch { return json(400, { status: 'bad-request' }); }
   const input = parseInput(body);
-  if (!input) return json(400, { status: 'bad-request', message: 'Choose an age from 50 to 89 and coverage from $5,000 to $25,000.' });
+  if (!input) return json(400, { status: 'bad-request', message: `Choose an age from ${AGES.min} to ${AGES.max} and coverage from $5,000 to $25,000.` });
 
   // Quote System v2.2: prices only for a phone-verified session (server-checked
   // cookie, see server/quote/session.js). No session check configured = no prices.

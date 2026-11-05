@@ -46,7 +46,9 @@ const display = (c) => /** @type {Record<string, CarrierDisplay>} */ (CARRIER_DI
 /** @param {string} id */
 const code = (id) => /** @type {Record<string, string>} */ (ATTRIBUTION_CODES)[id] ?? 'FF-000';
 export const COVERAGE = { min: 5000, max: 25000, presets: [5000, 10000, 15000, 20000, 25000], default: 10000 };
-export const AGES = { min: 50, max: 89 };
+// V3.9 (Randy, November 2026): the funnel quotes ages 50 to 85 (the age buttons,
+// the adjust menu, the pricing API and the quote submission all use this).
+export const AGES = { min: 50, max: 85 };
 
 /** An average needs at least this many verified products (kept for the 'average' rule). */
 export const MIN_AVERAGE_PRODUCTS = 2;

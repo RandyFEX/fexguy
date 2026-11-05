@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { createEngine, loadDatasets, monthlyPremium } from '../../server/rates/engine.js';
 import { toFixed } from '../../server/rates/decimal.js';
 import { PRODUCTS } from '../../server/rates/products.js';
-import { CATEGORIES, COMPETITIVE_PRODUCTS, meanCents, priceCategories } from '../../server/rates/pricing-categories.js';
+import { AGES, CATEGORIES, COMPETITIVE_PRODUCTS, meanCents, priceCategories } from '../../server/rates/pricing-categories.js';
 import { allowedOrigin, handlePriceExplorer, LIMITS, parseInput } from '../../server/rates/public-pricing.js';
 
 function fake(id) {
@@ -45,10 +45,10 @@ function expectedRanked(i) {
   return COMPETITIVE_PRODUCTS.map((id) => engineQuote(id, i)).filter((q) => q.ok).sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents);
 }
 
-test('V3.9 ranked cards: lowest and second competitive premiums for every age, gender, tobacco answer and coverage (exact engine premiums)', () => {
+test('V3.9 ranked cards: lowest and second competitive premiums for every age 50-85, gender, tobacco answer and coverage (exact engine premiums)', () => {
   assert.deepEqual(COMPETITIVE_PRODUCTS, ['moo-living-promise-level', 'aetna-accendo-standard']);
   let checked = 0;
-  for (let age = 50; age <= 89; age++)
+  for (let age = AGES.min; age <= AGES.max; age++)
     for (const gender of ['male', 'female'])
       for (const tobacco of [false, true])
         for (const coverage of [5000, 10000, 12000, 25000]) {
@@ -60,21 +60,16 @@ test('V3.9 ranked cards: lowest and second competitive premiums for every age, g
           assert.equal(first.status, 'ok', JSON.stringify(i));
           assert.equal(first.monthlyPremium, exp[0].monthlyPremium, JSON.stringify(i));
           assert.equal(PRODUCT_OF[first.attribution[0]], exp[0].productId);
-          if (exp.length > 1) {
-            assert.equal(second.status, 'ok', JSON.stringify(i));
-            assert.equal(second.monthlyPremium, exp[1].monthlyPremium, JSON.stringify(i));
-            assert.equal(PRODUCT_OF[second.attribution[0]], exp[1].productId);
-            assert.notEqual(first.attribution[0], second.attribution[0], 'two different products');
-            assert.ok(first.monthlyPremiumCents <= second.monthlyPremiumCents, 'lowest first');
-          } else {
-            // Only one competitive product issues at this age (Mutual of Omaha stops at 85): no second rate is invented.
-            assert.equal(second.status, 'unavailable', JSON.stringify(i));
-            assert.equal(second.message, 'Not available at this age.');
-            assert.equal(second.monthlyPremium, undefined);
-          }
+          assert.equal(exp.length, 2, `both competitive products issue at ${age}`);
+          assert.equal(second.status, 'ok', JSON.stringify(i));
+          assert.equal(second.monthlyPremium, exp[1].monthlyPremium, JSON.stringify(i));
+          assert.equal(PRODUCT_OF[second.attribution[0]], exp[1].productId);
+          assert.notEqual(first.attribution[0], second.attribution[0], 'two different products');
+          assert.ok(first.monthlyPremiumCents <= second.monthlyPremiumCents, 'lowest first');
           checked++;
         }
-  assert.equal(checked, 40 * 2 * 2 * 4);
+  assert.equal(checked, 36 * 2 * 2 * 4);
+  assert.deepEqual(AGES, { min: 50, max: 85 });
 });
 
 test('V3.9 smoker and nonsmoker cards use each product\'s own tobacco or non-tobacco rates', () => {
@@ -130,6 +125,9 @@ test('input validation: exact fields and ranges only', () => {
   assert.ok(parseInput(input()));
   assert.equal(parseInput(input({ age: 49 })), null);
   assert.equal(parseInput(input({ age: 90 })), null);
+  // V3.9: ages 86-89 are no longer quoted.
+  for (const age of [86, 87, 89]) assert.equal(parseInput(input({ age })), null, String(age));
+  assert.ok(parseInput(input({ age: 85 })));
   assert.equal(parseInput(input({ coverage: 4999 })), null);
   assert.equal(parseInput(input({ coverage: 25001 })), null);
   assert.equal(parseInput(input({ coverage: 12000.5 })), null);

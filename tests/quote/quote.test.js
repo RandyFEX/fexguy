@@ -265,7 +265,7 @@ test('12-hour quote access: fixed from the original unlock; returning never rest
 test('free repricing after the submission', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  for (const q of [{ age: 55, gender: 'male', tobacco: true, coverage: 5000 }, { age: 80, gender: 'female', tobacco: false, coverage: 25000 }, { age: 89, gender: 'male', tobacco: false, coverage: 12000 }]) {
+  for (const q of [{ age: 55, gender: 'male', tobacco: true, coverage: 5000 }, { age: 80, gender: 'female', tobacco: false, coverage: 25000 }, { age: 85, gender: 'male', tobacco: false, coverage: 12000 }]) {
     const r = await c.price(q);
     assert.equal(r.http, 200);
     assert.equal(r.body.categories.length, 3);
@@ -316,6 +316,14 @@ test('V3.8 consent: no checkbox; clicking SEE MY RATES under the disclosure is r
     assert.deepEqual([r.consent.given, r.consent.method, r.consent.version, r.consent.text, typeof r.consent.at], [true, 'button-submission', CONSENT_VERSION, CONSENT_TEXT, 'string']);
     assert.ok(!/check/i.test(r.consent.action), `action says a box was checked: ${r.consent.action}`);
   }
+  // V3.9: no age above 85 can be submitted through the API (nothing saved, no session).
+  for (const age of [86, 89]) {
+    const x = client(PREVIEW);
+    const res = await x.call(startBody({ quote: { age, gender: 'female', tobacco: false, coverage: 10000 } }));
+    assert.equal(res.http, 400, String(age));
+    assert.equal(res.setCookie, null);
+  }
+  assert.equal((await client(PREVIEW).call(startBody({ quote: { age: 85, gender: 'female', tobacco: false, coverage: 10000 } }))).http, 200);
   for (const v of ['made-up', 'ff-quote-consent-v4-2026-11', 'ff-quote-consent-v3-2026-11', undefined]) assert.equal((await client(PREVIEW).call(startBody({ consentVersion: v }))).http, 400, String(v));
 });
 
