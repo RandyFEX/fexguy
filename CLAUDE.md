@@ -896,6 +896,52 @@ scope protection wins.
   or content changes. A routine task should take one instruction, one
   execution and one final report.
 
+## Fast execution workflow (Randy, November 2026, V1.1)
+
+For development tasks. It adds to "Fast-execution editorial workflow" above
+and never weakens it or any other rule in this file; where they differ, the
+more specific project safeguard wins (Production safety, the Phase 1 rule,
+the rate-engine, lead and consent rules).
+
+Prioritize the shortest reliable path to completing approved changes.
+
+- **Small, localized changes:**
+  - Inspect only the relevant files and dependencies.
+  - Make the requested edit directly without generating an elaborate plan.
+  - Run focused tests first; avoid repeatedly running the full browser
+    suite after minor corrections.
+  - Run the complete required checks ("Before committing") once before
+    final PR approval or deployment; don't repeat checks that already
+    passed unless later changes could affect them.
+  - Avoid unrelated audits, refactoring, documentation rewrites and
+    cosmetic improvements.
+  - Don't launch unnecessary parallel agents or research tasks.
+  - Reuse existing components, assets and working integrations.
+  - Don't repeatedly request approval for routine implementation details.
+  - Report results concisely, including only material failures or blockers.
+- **Larger or higher-risk changes:**
+  - Use deeper investigation when genuinely necessary.
+  - Keep appropriate verification for pricing calculations, lead capture,
+    security and production deployment.
+  - Don't sacrifice correctness or working functionality merely to reduce
+    execution time.
+- **Decision discipline:**
+  - Treat previously approved decisions as binding.
+  - Don't reopen settled choices or recommend additional tests unless
+    materially necessary.
+  - Don't reintroduce rejected services or dependencies.
+  - Don't expand a small task into a broader redesign.
+  - If a change is deferred, leave it untouched until explicitly requested.
+  - Favor direct implementation over unnecessary planning or discussion.
+- **Execution discipline:**
+  - Complete the requested work in the fewest reliable steps.
+  - Avoid excessive status messages, and don't repeat information already
+    established in the current session.
+  - When a task is finished, give a concise summary, relevant test results
+    and any genuine blockers.
+  - Never merge or deploy without explicit approval unless the owner has
+    specifically authorized that action (see "Production safety").
+
 ## Company reviews (Randy, October 2026)
 
 - Any company or carrier review task (research, drafting, fact-checking,
