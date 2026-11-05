@@ -138,10 +138,15 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     forms: document.querySelectorAll('form').length,
     oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
     ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
+    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'), q = document.querySelector('.fb-hero [data-fb-qr-btn]'); return t && q && { label: t.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), qrLabel: q.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), icon: !!t.querySelector('svg') && !!q.querySelector('svg'), href: t.getAttribute('href'), note: t.nextElementSibling?.textContent.trim(), qrNote: q.nextElementSibling?.textContent.trim() }; })(),
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  // Two-option handoff V1.9: the cell phone button (an sms: link to the Agent CRM number once the
+  // visitor's session has answered; no tel: link) and the computer button (QR code); the other
+  // three call buttons are unchanged.
+  assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  assert(f.text && f.text.label === "CLICK HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -564,7 +569,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       await page.click(`[data-qf-card="${id}"] [data-qf-apply]`);
       await page.waitForURL(/\/facebook\//, { timeout: 8000 });
       await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
+      await page.waitForFunction(() => document.querySelector('[data-fb-text]')?.getAttribute('href'), null, { timeout: 5000 });
       const fb = await page.evaluate(() => ({
+        sms: document.querySelector('[data-fb-text]').getAttribute('href'), smsBody: document.querySelector('[data-fb-text]').dataset.smsBody,
         url: location.pathname + location.search,
         title: document.querySelector('#fb-title').textContent.trim(),
         coverage: document.querySelector('[data-fb-quote-coverage]').textContent.trim(),
@@ -580,9 +587,14 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (seen.length) await results();
       const r = await applyAndRead(id);
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
-      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Selected", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
-      assert(r.fb.labels.join('|') === 'Coverage Amount|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
+      assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
+      // Native SMS V1.2: the prewritten text carries this visitor's first name and this card's coverage and premium.
+      const prem = r.card.replace(/\.00$/, '');
+      const text = `Hi, this is ${NAMES[name].split(' ')[0]}. I have a few questions about my ${cov} final expense insurance quote for ${prem}/month.`;
+      // The cell phone button's sms: link (iOS format on the iPhone, ?body= elsewhere) carries this text.
+      assert(r.fb.smsBody === text && r.fb.sms === `sms:+18886720762${name === 'desktop' ? '?' : '&'}body=${encodeURIComponent(text)}`, `${id} sms ${r.fb.sms} ${r.fb.smsBody}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
@@ -775,7 +787,7 @@ await check('/facebook/ quote box v1.3: no 12-hour heading, large identical figu
       return { title: !!box.querySelector('.fb-quote__title'), twelveHours: /remain active for the next 12 hours/i.test(document.body.innerText), dt: [...box.querySelectorAll('dt')].map((d) => d.textContent.trim()), dd, note: n.textContent.trim(), noteSize: parseFloat(ns.fontSize), noteLines: Math.round(n.getBoundingClientRect().height / parseFloat(ns.lineHeight)), boxRight: box.getBoundingClientRect().right, vw: document.documentElement.clientWidth, docW: document.documentElement.scrollWidth };
     });
     assert(!r.title && !r.twelveHours, `${w}: old 12-hour message still shown ${JSON.stringify(r)}`);
-    assert(r.dt.join('|') === 'Coverage Amount|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
+    assert(r.dt.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
     assert(r.dd[0].size === r.dd[1].size && r.dd[0].weight === r.dd[1].weight && parseFloat(r.dd[0].size) >= (w === '1440' ? 56 : 42), `${w}: figure sizes ${JSON.stringify(r.dd)}`);
     assert(w === '1440' ? r.dd[0].top === r.dd[1].top : r.dd[0].top < r.dd[1].top, `${w}: layout ${JSON.stringify(r.dd)}`);
     assert(r.dd.every((d) => d.scroll && d.right <= r.boxRight + 1) && r.docW <= r.vw, `${w}: overflow ${JSON.stringify(r)}`);

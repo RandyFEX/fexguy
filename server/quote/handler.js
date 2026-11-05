@@ -279,7 +279,10 @@ export async function handleQuote(request, env, deps) {
       if (!v) return json(200, { status: 'not-verified', ...temp });
       const record = await store.getLead(v.leadId);
       if (!record) return json(200, { status: 'not-verified', ...temp });
-      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp });
+      // Texting handoff V4.0: the first word of the visitor's own name, for the
+      // prewritten text on /facebook/ (this verified visit only; kept in memory there).
+      const firstName = typeof record.firstName === 'string' ? record.firstName.trim().split(/\s+/)[0].slice(0, 40) : '';
+      return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
     }
 
     case 'apply': {

@@ -8,6 +8,7 @@
 //   node tests/quote/preview-links.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer } from './funnel-server.mjs';
+import { renderSVG } from 'uqr';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
@@ -75,12 +76,105 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       url: location.pathname + location.search,
       hscroll: document.documentElement.scrollWidth > innerWidth,
     }));
-    assert(r.h1 === 'Ready to Apply for Your Burial Insurance?' && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
+    assert(r.h1 === "Here's What You Selected" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
     if (OUT) await page.screenshot({ path: `${OUT}/preview-apply-${name}.png`, fullPage: true });
     await ctx.close();
     return `${r.dd.join(' / ')}`;
   });
 }
+
+// Two-option SMS handoff V1.9 (Randy, November 2026).
+const PREWRITTEN = 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
+await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wording and order, two orange buttons (side by side with a divider on desktop, stacked cell phone first on phones), no QR before the click, no copy link, no call link', async () => {
+  const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
+  await page.goto(`${srv.base}/facebook/?preview=apply`);
+  await page.waitForSelector('[data-fb-quote]:not([hidden])', { timeout: 10000 });
+  await page.waitForFunction(() => document.querySelector('[data-fb-text]').getAttribute('href'), null, { timeout: 8000 });
+  const sizes = [];
+  for (const w of [320, 375, 390, 430, 1280]) {
+    await page.setViewportSize({ width: w, height: 900 });
+    await page.waitForTimeout(100);
+    const r = await page.evaluate(() => {
+      const c = (e) => getComputedStyle(e);
+      const rect = (e) => e.getBoundingClientRect();
+      const h1 = document.querySelector('h1'), re = document.querySelector('[data-fb-reassure]'), timer = document.querySelector('[data-fb-offer]'), box = document.querySelector('[data-fb-quote]');
+      const [phone, computer] = [...document.querySelectorAll('.fb-text-opt')];
+      const btns = [...document.querySelectorAll('.fb-text__btn')], notes = [...document.querySelectorAll('.fb-text__note')];
+      const lines = (el) => { const rg = document.createRange(); rg.selectNodeContents(el.querySelector('span')); return new Set([...rg.getClientRects()].map((x) => Math.round(x.top))).size; };
+      return {
+        h1: h1.textContent.trim(), reassure: re.textContent.trim(), timer: timer.textContent.trim(),
+        card: [...box.querySelectorAll('dt, dd')].map((e) => e.textContent.trim()),
+        labels: btns.map((b) => b.querySelector('span').innerText.replace(/\s+/g, ' ').trim()), icons: btns.map((b) => !!b.querySelector('svg')),
+        notes: notes.map((n) => n.textContent.trim()), noteWhite: notes.every((n) => c(n).color === 'rgb(255, 255, 255)' && c(n).textAlign === 'center'),
+        orange: btns.every((b) => c(b).backgroundColor === 'rgb(194, 65, 12)' && c(b).color === 'rgb(255, 255, 255)' && Number(c(b).fontWeight) >= 700),
+        twoLines: btns.every((b) => lines(b) === 2), fits: btns.every((b) => b.scrollWidth <= b.clientWidth),
+        sameSize: Math.abs(rect(btns[0]).width - rect(btns[1]).width) <= 2 && Math.abs(rect(btns[0]).height - rect(btns[1]).height) <= 2,
+        order: rect(h1).bottom <= rect(re).top && rect(re).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(phone).top && rect(btns[0]).bottom <= rect(notes[0]).top && rect(btns[1]).bottom <= rect(notes[1]).top,
+        sideBySide: Math.abs(rect(phone).top - rect(computer).top) <= 1 && rect(phone).right <= rect(computer).left + 1 && Math.abs(rect(phone).width - rect(computer).width) <= 1,
+        divider: c(computer).borderLeftStyle === 'solid' && parseFloat(c(computer).borderLeftWidth) >= 1,
+        stacked: rect(phone).bottom <= rect(computer).top,
+        qr: !document.querySelector('[data-fb-qr]').hidden, copy: !!document.querySelector('[data-fb-copy]'), oldButton: /PREPARE MY TEXT|Just review your prewritten/.test(document.querySelector('.fb-hero').innerText),
+        heroTel: !!document.querySelector('.fb-hero a[href^="tel:"]') || /\d{3}-\d{3}-\d{4}/.test(document.querySelector('.fb-hero').innerText),
+        href: document.querySelector('[data-fb-text]').getAttribute('href'), smsBody: document.querySelector('[data-fb-text]').dataset.smsBody,
+        hscroll: document.documentElement.scrollWidth > innerWidth, h: Math.round(rect(btns[0]).height), fs: c(btns[0]).fontSize,
+      };
+    });
+    assert(r.h1 === "Here's What You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
+    assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$61.69']), `${w}px card ${JSON.stringify(r.card)}`);
+    assert(JSON.stringify(r.labels) === JSON.stringify(["CLICK HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
+    assert(JSON.stringify(r.notes) === JSON.stringify(['Click the button above to generate an SMS text and hit Send.', 'Scan our code with your cell phone camera to send a text.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
+    assert(r.orange && r.twoLines && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);
+    assert(w >= 1280 ? r.sideBySide && r.divider : r.stacked, `${w}px columns ${JSON.stringify(r)}`);
+    assert(!r.qr && !r.copy && !r.oldButton && !r.heroTel, `${w}px extras ${JSON.stringify(r)}`);
+    assert(r.smsBody === PREWRITTEN && r.href === `sms:+18886720762?body=${encodeURIComponent(PREWRITTEN)}`, `${w}px sms ${r.href}`);
+    if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-${w}.png` });
+    sizes.push(`${w}: ${r.h}px/${r.fs}`);
+  }
+  await ctx.close();
+  return sizes.join(', ');
+});
+
+await check('two-option handoff V1.9 on iPhone and Android: the cell phone button opens a text to +1 888-672-0762 with the prewritten text; nothing is sent or called', async () => {
+  const out = [];
+  for (const [n, d, want] of [['iPhone 13', devices['iPhone 13'], '&body='], ['Pixel 7', devices['Pixel 7'], '?body=']]) {
+    const { ctx, page } = await fresh(d);
+    const posts = [];
+    page.on('request', (q) => { if (q.method() === 'POST') posts.push(`${new URL(q.url()).pathname} ${q.postData() ?? ''}`); });
+    await page.goto(`${srv.base}/facebook/?preview=apply`);
+    await page.waitForFunction(() => document.querySelector('[data-fb-text]').getAttribute('href'), null, { timeout: 10000 });
+    const href = await page.getAttribute('[data-fb-text]', 'href');
+    assert(href === `sms:+18886720762${want}${encodeURIComponent(PREWRITTEN)}` && decodeURIComponent(href.split(want)[1]) === PREWRITTEN, `${n} ${href}`);
+    assert(!(await page.isVisible('[data-fb-qr]')), `${n} QR shown before the computer button`);
+    assert(posts.every((p) => /^\/api\/(quote|price-explorer)\/ /.test(p) && !/"action":"(start|resend|check|apply)"/.test(p)), `${n} requests ${posts.join(' | ')}`);
+    out.push(`${n}: ${href.slice(0, 26)}`);
+    await ctx.close();
+  }
+  return out.join(', ');
+});
+
+await check('two-option handoff V1.9 on a computer: the computer button reveals the QR code (SMSTO to +1 888-672-0762 with the prewritten text) under its instruction and launches nothing', async () => {
+  const { ctx, page } = await fresh({ viewport: { width: 1280, height: 900 } });
+  const navs = [];
+  page.on('framenavigated', (f) => { if (f === page.mainFrame()) navs.push(f.url()); });
+  await page.goto(`${srv.base}/facebook/?preview=apply`);
+  await page.waitForFunction(() => document.querySelector('[data-fb-text]').getAttribute('href'), null, { timeout: 10000 });
+  assert(!(await page.isVisible('[data-fb-qr]')), 'QR shown before the click');
+  const before = navs.length;
+  await page.click('[data-fb-qr-btn]');
+  await page.waitForSelector('[data-fb-qr]:not([hidden]) svg', { timeout: 5000 });
+  const q = await page.evaluate(() => {
+    const code = document.querySelector('[data-fb-qr-code]');
+    const note = [...document.querySelectorAll('.fb-text__note')][1];
+    return { text: code.dataset.qrText, svg: code.innerHTML, below: note.getBoundingClientRect().bottom <= code.getBoundingClientRect().top, url: location.pathname + location.search + location.hash, expanded: document.querySelector('[data-fb-qr-btn]').getAttribute('aria-expanded'), w: Math.round(document.querySelector('.fb-qr__code').getBoundingClientRect().width) };
+  });
+  const want = `SMSTO:+18886720762:${PREWRITTEN}`;
+  const pattern = (svg) => [...svg.matchAll(/\sd="([^"]+)"/g)].map((m) => m[1]).join('|');
+  assert(q.text === want && pattern(q.svg) && pattern(q.svg) === pattern(renderSVG(want, { ecc: 'M', border: 2 })), `QR payload ${q.text}`);
+  assert(q.below && q.url === '/facebook/' && navs.length === before && q.expanded === 'true' && q.w <= 180, JSON.stringify(q));
+  if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-qr-desktop.png` });
+  await ctx.close();
+  return `${q.w}px QR`;
+});
 
 await check('the normal funnel is unchanged: /free-quote/ without ?preview= starts at the first question', async () => {
   const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });

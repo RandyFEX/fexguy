@@ -84,7 +84,7 @@ await check('the green button still opens the Ready to Apply page (/facebook/) w
   await page.setViewportSize({ width: 390, height: 900 });
   await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
   await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
-  assert((await page.textContent('h1')).trim() === 'Ready to Apply for Your Burial Insurance?', 'not the Ready to Apply page');
+  assert((await page.textContent('h1')).trim() === "Here's What You Selected", 'not the Ready to Apply page');
   await page.waitForSelector('[data-fb-quote]:not([hidden])');
 });
 

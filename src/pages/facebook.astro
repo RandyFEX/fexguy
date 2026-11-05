@@ -32,7 +32,7 @@ import HeaderPhone from '@/components/HeaderPhone.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
-import { PAGE_PHONES, withPagePhone } from '@/config/phones';
+import { PAGE_PHONES, SMS_NUMBER, withPagePhone } from '@/config/phones';
 import { site } from '@/config/site';
 import { footerDisclaimer } from '@/lib/footer-notes';
 
@@ -139,23 +139,45 @@ const advantage = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Ready to Apply for Your Burial Insurance?</h1>
+        <h1 class="fb-hero__title" id="fb-title">Here's What You Selected</h1>
+        <!-- Texting page V1.1: shown with the selected quote (below) only. -->
+        <p class="fb-hero__reassure" data-fb-reassure hidden>Don't worry, you can always adjust these amounts later.</p>
         <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
              first time this visit reaches this screen (src/scripts/quote-offer.ts). -->
-        <p class="fb-offer" data-fb-offer hidden>Your offer is available for: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
+        <p class="fb-offer" data-fb-offer hidden>Please respond within: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
         <button class="btn fb-offer__restart" type="button" data-fb-offer-restart hidden>Start New Quote</button>
         <!-- The quote selected on /free-quote/ (Apply Now), shown only with a valid,
              recent handoff (src/scripts/quote-handoff.ts); hidden otherwise. -->
         <div class="fb-quote" data-fb-quote hidden>
           <dl class="fb-quote__grid">
-            <div><dt>Coverage Amount</dt><dd data-fb-quote-coverage></dd></div>
+            <div><dt>Your Selected Coverage</dt><dd data-fb-quote-coverage></dd></div>
             <div><dt>Estimated Monthly Rate</dt><dd data-fb-quote-premium></dd></div>
           </dl>
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
-        <div class="fb-call">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
-          <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+        <!-- Two-option SMS handoff V1.9 (Randy, November 2026): the cell phone
+             button opens the visitor's own messaging app with the prewritten
+             text (src/scripts/sms-link.js) to SMS_NUMBER (src/config/phones.ts);
+             the computer button reveals a QR code with the same number and text.
+             Nothing is sent until the visitor presses Send. -->
+        <div class="fb-call fb-text-options">
+          <div class="fb-text-opt">
+            <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
+              <span>CLICK HERE IF YOU'RE<br />ON A CELL PHONE</span>
+            </a>
+            <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
+          </div>
+          <div class="fb-text-opt">
+            <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
+              <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
+            </button>
+            <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
+            <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
+              <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -254,6 +276,8 @@ const advantage = [
   import { preparePreviewApply, previewRequest } from '@/scripts/quote-preview';
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
+  import { SMS_NUMBER as SMS } from '@/config/phones';
+  import { isIOS, prewrittenText, qrPayload, smsHref } from '@/scripts/sms-link.js';
 
   // Phone number by traffic source (Randy, November 2026): the page is built
   // with the main website number (also the fallback without JavaScript);
@@ -298,6 +322,8 @@ const advantage = [
     coverageOut.textContent = '$' + handoff.selection.coverage.toLocaleString('en-US');
     premiumOut.textContent = '$' + handoff.selection.monthlyPremium;
     quoteBox.hidden = false;
+    const reassure = document.querySelector<HTMLElement>('[data-fb-reassure]');
+    if (reassure) reassure.hidden = false;
     // At 0:00 the selected-quote offer expires (its summary is hidden); the
     // call buttons stay, and Start New Quote begins a fresh quote.
     const offer = document.querySelector<HTMLElement>('[data-fb-offer]');
@@ -316,8 +342,52 @@ const advantage = [
     }
   }
   };
-  if (previewRequest() === 'apply') void preparePreviewApply().finally(showSelectedQuote);
-  else showSelectedQuote();
+  // Texting handoff V4.0: "Prepare My Text" opens the visitor's own messaging
+  // app addressed to the approved SMS number with Randy's prewritten text
+  // (first name, selected coverage and monthly premium). It never sends
+  // anything; the visitor presses Send. The first name comes from the
+  // visitor's own verified session (never stored in the browser). Without the
+  // number (src/config/phones.ts SMS_NUMBER) or a selected quote: no link.
+  const prepareText = async () => {
+    const btn = document.querySelector<HTMLAnchorElement>('[data-fb-text]');
+    const qrBtn = document.querySelector<HTMLButtonElement>('[data-fb-qr-btn]');
+    const panel = document.querySelector<HTMLElement>('[data-fb-qr]');
+    const code = panel?.querySelector<HTMLElement>('[data-fb-qr-code]');
+    const h = readHandoff();
+    if (!btn || !h) return;
+    let firstName = '';
+    try {
+      const res = await fetch('/api/quote/', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': localStorage.getItem('ff:quote-visit') ?? '' }, body: JSON.stringify({ action: 'session' }), credentials: 'same-origin' });
+      const s = await res.json().catch(() => ({}));
+      if (s.status === 'verified' && typeof s.firstName === 'string') firstName = s.firstName;
+    } catch {}
+    const body = prewrittenText({ firstName, coverage: h.selection.coverage, monthlyPremium: h.selection.monthlyPremium });
+    btn.dataset.smsBody = body;
+    const href = smsHref(SMS, body, isIOS(navigator));
+    if (!href) return;
+    // Two-option handoff V1.9: the cell phone button opens the messaging app.
+    btn.href = href;
+    btn.setAttribute('aria-disabled', 'false');
+    // The computer button reveals a QR code with the same number and text
+    // (generated in the browser; the QR library loads only on this click).
+    const payload = qrPayload(SMS, body);
+    if (!qrBtn || !panel || !code || !payload) return;
+    qrBtn.addEventListener('click', async () => {
+      if (!code.dataset.qrText) {
+        const { renderSVG } = await import('uqr');
+        code.innerHTML = renderSVG(payload, { ecc: 'M', border: 2 });
+        code.dataset.qrText = payload;
+      }
+      panel.hidden = false;
+      qrBtn.setAttribute('aria-expanded', 'true');
+    });
+  };
+  const ready = () => {
+    showSelectedQuote();
+    void prepareText();
+  };
+  if (previewRequest() === 'apply') void preparePreviewApply().finally(ready);
+  else ready();
 
   // Browsers only scroll a focused field into view when it is outside the
   // window, so a field partly behind the fixed mobile call bar stays there.
@@ -441,6 +511,115 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
+  /* Two-option handoff V1.9: two equal columns under the quote card,
+     divided by a thin line, from 48rem; stacked (cell phone first) on phones. */
+  .fb-hero .fb-call.fb-text-options {
+    max-width: 46rem;
+    gap: var(--space-6);
+  }
+  .fb-text-opt {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  @media (min-width: 48rem) {
+    .fb-hero .fb-call.fb-text-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .fb-text-opt {
+      padding-inline: var(--space-6);
+    }
+    .fb-text-opt + .fb-text-opt {
+      border-left: 1px solid rgb(255 255 255 / 0.35);
+    }
+  }
+  /* Texting buttons: the site CTA orange; icon beside a two-line label. */
+  .fb-text__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3.5rem;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    font-size: min(1.25rem, 5.4vw);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    border: 0;
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+  @media (min-width: 48rem) {
+    .fb-text__btn {
+      padding-inline: var(--space-4);
+      font-size: min(1.25rem, 2.25vw);
+    }
+  }
+  .fb-text__btn:disabled {
+    cursor: default;
+  }
+  .fb-text__btn svg {
+    flex: none;
+  }
+  .fb-text__btn:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    filter: brightness(0.9);
+  }
+  /* V4.1: not limited to the button column's width, so the sentence fits
+     on one line on desktop; phones wrap it normally. */
+  .fb-text__note {
+    align-self: center;
+    margin: calc(-1 * var(--space-1)) 0 0;
+    text-wrap: balance;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+  /* V1.4: the desktop QR code, compact, on white so phones can scan it. */
+  .fb-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-1);
+  }
+  .fb-qr[hidden] {
+    display: none;
+  }
+  .fb-qr__code {
+    width: 11rem;
+    padding: var(--space-2);
+    background: #ffffff;
+    border-radius: var(--radius);
+  }
+  .fb-qr__code svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* V4.3: the reassurance (bold) and the countdown label (regular) share one
+     size; the countdown digits stay yellow and bold. */
+  .fb-hero__reassure {
+    margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+  .fb-hero__reassure[hidden] {
+    display: none;
+  }
 </style>
 
 <style>
@@ -531,7 +710,7 @@ const advantage = [
   .fb-offer {
     margin: calc(-1 * var(--space-2)) 0 var(--space-4);
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.4;
   }
   .fb-offer[hidden],
