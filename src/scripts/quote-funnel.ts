@@ -2,7 +2,7 @@
 //
 // Steps 1-6 collect sex, age, tobacco, intended use, coverage and state, one
 // per screen (they advance on their own). Step 7 takes the first name, mobile
-// number and the required, never pre-checked consent box (V3.7). V3.3 (Randy, November 2026):
+// number; clicking SEE MY RATES under the disclosure is the consent (V3.8, no checkbox). V3.3 (Randy, November 2026):
 // no SMS verification. SEE MY RATES sends them to the server, which saves the
 // lead, delivers it to Agent CRM (production) and sets this visit's HttpOnly
 // quote session cookie; the rates then show at once. Prices come from
@@ -22,7 +22,6 @@ import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offe
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
 import { isFullName } from '../../server/quote/name.js';
-import { CONSENT_REQUIRED_MESSAGE } from '../../server/quote/consent.js';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
@@ -198,20 +197,12 @@ if (root) {
   });
 
 
-  // Step 7 (V3.7): the visitor's full name, mobile number and the required consent box.
+  // Step 7: the visitor's full name and mobile number (V3.8: no consent checkbox).
   // The funnel's phone number (888-656-4648 on /free-quote/) comes from the page HTML.
   const funnelPhone = root.dataset.funnelPhone || lead.phone.display;
   const contactForm = $<HTMLFormElement>('[data-qf-contact]');
   const firstInput = $<HTMLInputElement>('#qf-first');
   const phoneInput = $<HTMLInputElement>('#qf-phone');
-  const consentBox = $<HTMLInputElement>('[data-qf-consent]');
-  consentBox.addEventListener('change', () => {
-    if (consentBox.checked) {
-      const err = root!.querySelector<HTMLElement>('#qf-consent-error');
-      if (err) { err.textContent = ''; err.hidden = true; }
-      consentBox.removeAttribute('aria-invalid');
-    }
-  });
   const submitBtn = $<HTMLButtonElement>('[data-qf-submit]');
   const contactStatus = $('[data-qf-contact-status]');
   const fieldError = (input: HTMLInputElement, message: string) => {
@@ -241,11 +232,8 @@ if (root) {
     const nameOk = isFullName(firstName);
     fieldError(firstInput, nameOk ? '' : 'Please enter your full name (first and last name).');
     fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
-    // Consent is affirmative only: the visitor's own check, never assumed.
-    fieldError(consentBox, consentBox.checked ? '' : CONSENT_REQUIRED_MESSAGE);
     if (!nameOk) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
-    if (!consentBox.checked) return consentBox.focus();
     const quote = quoteReady();
     if (!quote || !answers.state || !answers.use) return show(1);
     track('quote_contact_submit');
@@ -254,17 +242,17 @@ if (root) {
     setStatus(contactStatus, 'Getting your rates…');
     const { http, body } = await api({
       action: 'start', firstName, phone: phoneInput.value.trim(), state: answers.state, intendedUse: answers.use, quote,
-      consent: consentBox.checked === true, consentVersion: root!.dataset.consentVersion,
+      consentVersion: root!.dataset.consentVersion,
       source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
     });
     submitting = false;
     submitBtn.disabled = false;
     if (http !== 200 || body.status !== 'verified') {
       // Nothing is lost: the answers and both fields stay as typed.
-      if (body.field === 'phone' || body.field === 'name' || body.field === 'consent') {
-        const input = body.field === 'phone' ? phoneInput : body.field === 'consent' ? consentBox : firstInput;
+      if (body.field === 'phone' || body.field === 'name') {
+        const input = body.field === 'phone' ? phoneInput : firstInput;
         setStatus(contactStatus, '');
-        fieldError(input, body.message ?? (body.field === 'phone' ? 'Please enter a 10-digit US mobile number.' : body.field === 'consent' ? CONSENT_REQUIRED_MESSAGE : 'Please enter your full name (first and last name).'));
+        fieldError(input, body.message ?? (body.field === 'phone' ? 'Please enter a 10-digit US mobile number.' : 'Please enter your full name (first and last name).'));
         return input.focus();
       }
       if (typeof body.lead === 'string') retryLead = body.lead;

@@ -3,7 +3,7 @@
 // record for /free-quote/.
 //
 // Actions (JSON body { action, ... }):
-//   start    first name, mobile number, state, consent choice, quote inputs
+//   start    full name, mobile number, state, quote inputs (consent: the button click, V3.8)
 //            -> lead record, Agent CRM delivery (production), quote session
 //            (V3.3, Randy, November 2026: no SMS verification, no code)
 //   session  does this visit have a quote session? (restores the results after a refresh)
@@ -20,7 +20,7 @@
 // it is. Personal data never goes into logs, URLs or analytics.
 
 import { createHmac, randomUUID } from 'node:crypto';
-import { CONSENT_REQUIRED_MESSAGE, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
+import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
 import { firstNameOf, isFullName } from './name.js';
 import { toE164US } from './phone.js';
 import { sendLeadToCrm } from './crm.js';
@@ -136,8 +136,8 @@ export async function handleQuote(request, env, deps) {
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
       if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
       if (!quote) return bad();
-      // V3.7: affirmative consent is required (the current disclosure version only).
-      if (body.consent !== true) return json(400, { status: 'bad-request', field: 'consent', message: CONSENT_REQUIRED_MESSAGE });
+      // V3.8: no checkbox. Clicking SEE MY RATES under the disclosure is the
+      // consent; the page must have shown the current disclosure version.
       if (body.consentVersion !== CONSENT_VERSION) return bad('Please reload the page and try again.');
       // The session will belong to this visit (tab) only.
       const visit = visitOf(request);
@@ -154,7 +154,7 @@ export async function handleQuote(request, env, deps) {
       ]);
       if (over) return json(429, { status: 'rate-limited', message: `Too many quote requests. Please try again later or call ${FUNNEL_PHONE}.` }, { 'Retry-After': '3600' });
 
-      const consentText = body.consent ? CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)] : null;
+      const consentText = CONSENT_VERSIONS[CONSENT_VERSION];
       const fields = {
         mode: test ? 'test' : 'direct',
         firstName,
@@ -163,11 +163,12 @@ export async function handleQuote(request, env, deps) {
         intendedUse: { value: intendedUse, label: INTENDED_USES[intendedUse] },
         submittedAt: iso,
         consent: {
-          given: body.consent,
-          // The consent box is never pre-checked; this is the visitor's own choice.
-          action: body.consent ? 'checked consent box' : 'left consent box unchecked',
+          given: true,
+          // V3.8: the visitor clicked SEE MY RATES with the disclosure shown directly under it (no checkbox).
+          method: CONSENT_METHOD,
+          action: 'clicked SEE MY RATES (disclosure shown under the button)',
           at: iso,
-          version: body.consent ? body.consentVersion : null,
+          version: CONSENT_VERSION,
           text: consentText,
         },
         // V3.3: the phone number is never verified (no SMS, no code).

@@ -17,7 +17,9 @@ sidebar: true
 
 <h2>Information you give us on the website</h2>
 
-<p>Our quote request form sends what you enter to Formspark, a third-party online form service. The form asks for:</p>
+<p>Our online quote tool (the Free Quote page) asks for your answers to its quote questions (gender, age, tobacco use, how you would use the money, coverage amount and state), then your full name and mobile phone number. When you click “see my rates,” we save what you entered, the time, the consent statement shown under the button, the page and campaign information described below, and your IP address and browser details in our own records (stored with Upstash, a database service), and send your name, phone number, state and quote details to our customer records system so Randy can follow up. The quote tool does not use Formspark or Cloudflare Turnstile.</p>
+
+<p>Our callback request form sends what you enter to Formspark, a third-party online form service. The form asks for:</p>
 
 <ul>
 <li>First name and last name</li>
@@ -31,7 +33,7 @@ sidebar: true
 
 <p>When you submit a contact or quote request, we may also collect the page where you submitted the form, the first page you visited, and available referral or advertising campaign information to help us understand how visitors find our website.</p>
 
-<p>To keep automated spam out of the quote request form, the form uses Cloudflare Turnstile, a security check from Cloudflare. When you reach the form, the check runs in your browser, and Cloudflare receives technical information from your browser and device, such as your IP address and browser details, to tell people apart from automated programs. Most visitors never see it; occasionally it may ask you to click a box. We do not send Cloudflare your form answers. Formspark confirms the check with Cloudflare before accepting a submission. Cloudflare handles this information under its own privacy policy.</p>
+<p>To keep automated spam out of the callback request form, the form uses Cloudflare Turnstile, a security check from Cloudflare. When you reach the form, the check runs in your browser, and Cloudflare receives technical information from your browser and device, such as your IP address and browser details, to tell people apart from automated programs. Most visitors never see it; occasionally it may ask you to click a box. We do not send Cloudflare your form answers. Formspark confirms the check with Cloudflare before accepting a submission. Cloudflare handles this information under its own privacy policy.</p>
 
 <p>The website does not ask for, and you should not enter, Social Security numbers, bank account or credit card information, or passwords. There are no user accounts on the website.</p>
 
@@ -86,7 +88,7 @@ sidebar: true
 <ul>
 <li><strong>Insurance companies.</strong> When you apply for insurance, we provide the necessary information to the insurance company for underwriting, application processing, policy issuance, servicing and related insurance purposes.</li>
 <li><strong>Another licensed insurance professional.</strong> In an uncommon situation where your insurance needs would be better served by another appropriately licensed insurance professional with specialized expertise, Randy may bring that agent into your case. You will be told before that happens.</li>
-<li><strong>Service providers.</strong> Companies that provide services to us, such as our online form service (Formspark), our website hosting and our customer records and messaging tools, receive information only as needed to provide those services.</li>
+<li><strong>Service providers.</strong> Companies that provide services to us, such as our online form service (Formspark), our website hosting, our database service (Upstash) and our customer records and messaging tools, receive information only as needed to provide those services.</li>
 <li><strong>Legal requirements.</strong> We may disclose information if required by law or legal process.</li>
 </ul>
 
@@ -120,7 +122,7 @@ sidebar: true
 
 <h2>Cookies and similar technologies</h2>
 
-<p>Our own website code sets one cookie, used only by the health question search as described above. Google Analytics and the Meta Pixel set their own cookies, as described above. After a quote form submission, the website keeps a temporary marker in your browser’s session storage so the submission is not counted twice; it contains no form answers and is cleared when you close the browser tab. You can block or delete cookies in your browser settings.</p>
+<p>Our own website code sets two cookies: the health question search cookie described above, and a quote cookie (ff_qs) that keeps your quote available in the same browser for up to 12 hours after you click “see my rates.” The quote tool also keeps a random visit code and your quote selections (never your name or phone number) in your browser’s storage. Google Analytics and the Meta Pixel set their own cookies, as described above. After a quote form submission, the website keeps a temporary marker in your browser’s session storage so the submission is not counted twice; it contains no form answers and is cleared when you close the browser tab. You can block or delete cookies in your browser settings.</p>
 
 <h2>How long we keep information</h2>
 

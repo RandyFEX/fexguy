@@ -32,7 +32,6 @@ await page.waitForSelector('[data-step="1"]:not([hidden])');
 for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="use"][data-value="burial"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
 await page.selectOption('[data-qf-state]', 'Texas');
 await page.fill('#qf-first', 'Test Visitor');
-await page.check('[data-qf-consent]');
 await page.fill('#qf-phone', '214-867-5309');
 await page.click('[data-qf-contact] button[type="submit"]');
 await page.waitForSelector('[data-step="8"]:not([hidden])');

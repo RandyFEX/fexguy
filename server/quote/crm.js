@@ -67,7 +67,9 @@ export function crmNote(record, rates = []) {
     s.landingPage ? `Landing page: ${s.landingPage}` : null,
     s.originUrl ? `Article: ${s.originUrl}` : null,
     record.firstName ? `Full name: ${String(record.firstName).trim()}` : null,
-    record.consent?.given ? `Consent to calls/texts: Yes, box checked (${record.consent.at}, ${record.consent.version})` : 'Consent to calls/texts: Not given (box left unchecked)',
+    record.consent?.given
+      ? `Consent to calls/texts: Yes, ${record.consent.method === 'button-submission' ? 'by clicking SEE MY RATES under the disclosure' : 'box checked'} (${record.consent.at}, ${record.consent.version})`
+      : 'Consent to calls/texts: Not given',
     record.consent?.given && record.consent.text ? `Consent text: ${record.consent.text}` : null,
     // V3.3: no SMS verification; the number is exactly as the visitor typed it.
     `Phone verification: ${v.provider === 'temporary-public-test-code' ? 'not SMS-verified (temporary access code)' : 'not verified (no SMS verification)'}`,

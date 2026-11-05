@@ -1480,7 +1480,17 @@ scope protection wins.
   about my insurance request, according to the Privacy Policy." with Privacy
   Policy linked to /privacy-policy/ in a new tab; unchecked shows "Please
   check the box to agree to receive calls and texts before continuing." and
-  the server refuses it), SEE MY RATES and Our Promise. The funnel's phone
+  the server refuses it), SEE MY RATES and Our Promise. **V3.8 (Randy,
+  November 2026; replaces the V3.7 checkbox):** no consent checkbox. Directly
+  under SEE MY RATES, in smaller muted gray, consent v5
+  (`ff-quote-consent-v5-2026-11`): 'By clicking "see my rates", you agree to
+  our Privacy Policy and consent to receive phone calls and SMS text messages
+  from Funeral Funds at the number provided about your insurance request.
+  Consent is not a condition of purchase.' (Privacy Policy linked). The click
+  is the consent: the record stores `method: 'button-submission'`, the time,
+  version and exact text; the server requires only the current version. The
+  /privacy-policy/ describes the quote tool (Upstash records, Agent CRM, the
+  ff_qs cookie; no Formspark or Turnstile there). The funnel's phone
   number is 888-656-4648 throughout (Phone rule above); the page body has
   `track-page-calls` so its call taps keep GA4 click_to_call.
 

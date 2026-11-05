@@ -12,7 +12,7 @@ import { handleQuote, SUBMIT_LIMITS } from '../../server/quote/handler.js';
 import { quoteStore } from '../../server/quote/store.js';
 import { COOKIE, sign, sessionKey, verifiedLead, SESSION_MS } from '../../server/quote/session.js';
 import { toE164US } from '../../server/quote/phone.js';
-import { CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
+import { CONSENT_METHOD, CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 import { handlePriceExplorer } from '../../server/rates/public-pricing.js';
 
 let redis;
@@ -82,7 +82,7 @@ function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `vi
 let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
-  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
+  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consentVersion: CONSENT_VERSION,
   quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
@@ -112,7 +112,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   const crm = fakeCrm();
   const c = client(PROD, { fetchImpl: crm.fetchImpl });
   assert.equal(await prodPrice(c), 401, 'no prices before the submission');
-  const start = await c.call(startBody({ firstName: 'Mary Ann Smith', consent: true, source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
+  const start = await c.call(startBody({ firstName: 'Mary Ann Smith', source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
   assert.equal(start.http, 200, JSON.stringify(start.body));
   assert.equal(start.body.status, 'verified');
   assert.equal(start.body.testMode, false);
@@ -127,7 +127,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
   assert.deepEqual(crm.calls[1].body, { tags: ['Funeral Funds - Website Quote'] });
   const note = crm.calls[2].body.body;
-  for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Full name: Mary Ann Smith', 'Consent to calls/texts: Yes, box checked', `Consent text: ${CONSENT_TEXT}`, `(${rec.consent.at}, ${CONSENT_VERSION})`, 'Phone verification: not verified (no SMS verification)'])
+  for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Full name: Mary Ann Smith', 'Consent to calls/texts: Yes, by clicking SEE MY RATES under the disclosure', `Consent text: ${CONSENT_TEXT}`, `(${rec.consent.at}, ${CONSENT_VERSION})`, 'Phone verification: not verified (no SMS verification)'])
     assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
   assert.ok(!note.includes('TEST LEAD') && !note.includes('pit-test-token'));
   // The record never claims the phone was verified.
@@ -287,7 +287,7 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.equal(r.state, 'Ohio');
   assert.ok(r.submittedAt);
   assert.deepEqual(r.verification, { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null });
-  assert.deepEqual([r.consent.given, r.consent.action, r.consent.version, r.consent.text], [true, 'checked consent box', CONSENT_VERSION, CONSENT_TEXT]);
+  assert.deepEqual([r.consent.given, r.consent.method, r.consent.action, r.consent.version, r.consent.text], [true, 'button-submission', 'clicked SEE MY RATES (disclosure shown under the button)', CONSENT_VERSION, CONSENT_TEXT]);
   assert.equal(r.source.utmSource, 'google');
   assert.equal(r.client.userAgent, 'TestAgent/1.0');
   assert.ok(r.client.ip);
@@ -303,22 +303,20 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.ok(sessTtl > 0 && sessTtl <= SESSION_MS);
 });
 
-test('V3.7 consent: required and affirmative; exact text and version stored; unchecked, missing, non-true or old/unknown versions refused with nothing saved', async () => {
-  assert.equal(CONSENT_VERSION, 'ff-quote-consent-v4-2026-11');
-  assert.equal(CONSENT_TEXT, 'By checking this box, I agree to receive calls and SMS text messages from Funeral Funds about my insurance request, according to the Privacy Policy.');
-  const c = client(PREVIEW);
-  const start = await c.call(startBody());
-  const r = await c.store.getLead(start.body.lead);
-  assert.deepEqual([r.consent.given, r.consent.version, r.consent.text], [true, CONSENT_VERSION, CONSENT_TEXT]);
-  for (const o of [{ consent: false }, { consent: undefined }, { consent: 'yes' }, { consent: 1 }]) {
-    const x = client(PREVIEW);
-    const res = await x.call(startBody(o));
-    assert.equal(res.http, 400, JSON.stringify(o));
-    assert.equal(res.body.field, 'consent');
-    assert.equal(res.body.message, 'Please check the box to agree to receive calls and texts before continuing.');
-    assert.equal(res.setCookie, null, 'no session without consent');
+test('V3.8 consent: no checkbox; clicking SEE MY RATES under the disclosure is recorded as button submission with the exact text, version and time; no checkbox flag is required or recorded; old/unknown versions refused', async () => {
+  assert.equal(CONSENT_VERSION, 'ff-quote-consent-v5-2026-11');
+  assert.equal(CONSENT_METHOD, 'button-submission');
+  assert.equal(CONSENT_TEXT, 'By clicking "see my rates", you agree to our Privacy Policy and consent to receive phone calls and SMS text messages from Funeral Funds at the number provided about your insurance request. Consent is not a condition of purchase.');
+  // Accepted without any consent flag; a stray old checkbox flag changes nothing.
+  for (const o of [{}, { consent: false }, { consent: true }]) {
+    const c = client(PREVIEW);
+    const start = await c.call(startBody(o));
+    assert.equal(start.http, 200, JSON.stringify(o));
+    const r = await c.store.getLead(start.body.lead);
+    assert.deepEqual([r.consent.given, r.consent.method, r.consent.version, r.consent.text, typeof r.consent.at], [true, 'button-submission', CONSENT_VERSION, CONSENT_TEXT, 'string']);
+    assert.ok(!/check/i.test(r.consent.action), `action says a box was checked: ${r.consent.action}`);
   }
-  for (const v of ['made-up', 'ff-quote-consent-v3-2026-11', undefined]) assert.equal((await client(PREVIEW).call(startBody({ consentVersion: v }))).http, 400, String(v));
+  for (const v of ['made-up', 'ff-quote-consent-v4-2026-11', 'ff-quote-consent-v3-2026-11', undefined]) assert.equal((await client(PREVIEW).call(startBody({ consentVersion: v }))).http, 400, String(v));
 });
 
 test('abuse and duplicate protection: per-IP and per-phone submission limits', async () => {
@@ -479,9 +477,7 @@ test('Start New Quote ends the session but keeps the lead, its consent record an
   assert.deepEqual(after.consent, before.consent);
   assert.equal(after.verification.phoneVerified, false);
   assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'lead-accepted', 'quote-restarted']);
-  // A repeat request from the same phone is a new lead (the CRM handles duplicates); consent is asked again.
-  const noConsent = await c.call(startBody({ phone: '214-867-5309', consent: false }));
-  assert.equal(noConsent.http, 400);
+  // A repeat request from the same phone is a new lead (the CRM handles duplicates), with its own consent record.
   const again = await c.call(startBody({ phone: '214-867-5309' }));
   assert.equal(again.http, 200);
   assert.notEqual(again.body.lead, start.body.lead);

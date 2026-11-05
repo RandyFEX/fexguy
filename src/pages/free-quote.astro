@@ -215,14 +215,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
               <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
               <p class="qf-error" id="qf-phone-error" hidden></p>
             </div>
-            <div class="qf-field">
-              <label class="qf-consent" for="qf-consent">
-                <input type="checkbox" id="qf-consent" name="consent" required aria-describedby="qf-consent-error" data-qf-consent />
-                <span>{consentBefore}<a href="/privacy-policy/" target="_blank" rel="noopener">{CONSENT_LINK_TEXT}<span class="visually-hidden"> (opens in a new tab)</span></a>{consentAfter}</span>
-              </label>
-              <p class="qf-error" id="qf-consent-error" hidden></p>
-            </div>
-            <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-submit>SEE MY RATES</button>
+            <button class="btn qf-continue qf-btn-cta" type="submit" aria-describedby="qf-disclosure" data-qf-submit>SEE MY RATES</button>
+            <!-- V3.8 (Randy, November 2026): no checkbox; clicking the button under this disclosure is the consent. -->
+            <p class="qf-disclosure" id="qf-disclosure" data-qf-disclosure>{consentBefore}<a href="/privacy-policy/" target="_blank" rel="noopener">{CONSENT_LINK_TEXT}<span class="visually-hidden"> (opens in a new tab)</span></a>{consentAfter}</p>
             <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
             <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
           </form>
@@ -417,7 +412,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   }
   .qf-select { max-width: 30rem; display: block; margin-inline: auto; }
   .qf-note { color: var(--color-text-muted); margin: 0; text-align: center; }
-  .qf-consent { display: flex; gap: var(--space-3); align-items: flex-start; font-size: 1rem; line-height: 1.4; cursor: pointer; }
   .qf-form[hidden], .qf-field[hidden] { display: none; }
   /* V3.7 contact step: a compact trust section (Randy left, "Why Funeral Funds?"
      right from 48rem; stacked on phones), then the heading, the summary and a
@@ -447,8 +441,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-form--contact .qf-field { gap: 0.25rem; }
   .qf-form--contact .qf-label { margin-bottom: 0; }
   .qf-form--contact .qf-input { min-height: 3.125rem; }
-  .qf-consent a { color: var(--color-primary); font-weight: 700; text-decoration: underline; }
-  .qf-consent input { width: 1.75rem; height: 1.75rem; flex: none; margin-top: 0; accent-color: var(--color-primary); }
+  /* V3.8: the consent disclosure directly under SEE MY RATES: smaller muted gray, still legible. */
+  .qf-disclosure { margin: calc(-1 * var(--space-2)) 0 0; font-size: 0.875rem; line-height: 1.4; color: #5b6560; text-align: center; text-wrap: pretty; }
+  .qf-disclosure a { color: inherit; font-weight: 700; text-decoration: underline; }
   .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
   .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }
   .qf-status { margin: 0; text-align: center; font-weight: 600; min-height: 1.5em; }

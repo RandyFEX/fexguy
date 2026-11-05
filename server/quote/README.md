@@ -17,10 +17,11 @@ created before V3.3 keep their old verification fields.
 1. The visitor answers one question per screen: sex, age, tobacco, intended
    use, coverage and state. State is lead information only; prices are
    representative (Texas) rates for every state.
-2. The visitor enters a full name (`name.js`) and a mobile number, checks the
-   required consent box (V3.7: never pre-checked; the server refuses
-   `consent !== true` and any version but the current one) and taps SEE MY
-   RATES.
+2. The visitor enters a full name (`name.js`) and a mobile number and taps SEE
+   MY RATES. V3.8: no checkbox; the consent disclosure sits directly under the
+   button and the click is the consent (recorded as `method:
+   'button-submission'` with the time, version and exact text). The server
+   refuses any disclosure version but the current one.
    `POST /api/quote/ {action: 'start'}` validates the inputs, applies the
    submission limits, saves the lead record, and then:
    - **production**: delivers the lead to Agent CRM (`crm.js`). Only after a

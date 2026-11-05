@@ -85,7 +85,6 @@ async function walk(page, phone, who = NAMES[phone === PHONES.mobile ? 'mobile' 
   await page.selectOption('[data-qf-state]', 'Ohio');
   await page.fill('#qf-first', who);
   await page.fill('#qf-phone', phone);
-  await page.check('[data-qf-consent]');
   await page.click('[data-qf-contact] button[type="submit"]');
 }
 /** V3.3: SEE MY RATES (walk) opens the rates at once; wait for the cards. */
@@ -202,7 +201,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.goto(URL_);
   });
 
-  await check(`${name}: contact screen shows the selections, consent, SEE MY RATES and the promise`, async () => {
+  await check(`${name}: contact screen shows the selections, SEE MY RATES with the consent disclosure under it, and the promise`, async () => {
     await atStart(page);
     await page.click('[data-pick="gender"][data-value="female"]');
     await page.click('[data-pick="age"][data-value="60"]');
@@ -216,7 +215,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(wraps === 0, `${wraps} summary values wrap`);
     const over = await page.$$eval('[data-qf-summary] > div', (els) => els.filter((e) => e.scrollWidth > e.clientWidth + 1).length);
     assert(over === 0, `${over} summary values overflow their box`);
-    const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.previousElementSibling?.querySelector(':scope > .qf-consent') !== null]);
+    const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.nextElementSibling?.matches('[data-qf-disclosure]')]);
     assert(btn[0] === 'SEE MY RATES' && btn[1], JSON.stringify(btn));
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
@@ -236,15 +235,14 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(dis[0] === HOME_ORANGE && dis[1] === 'rgb(255, 255, 255)', `disabled colors ${dis}`);
     const cw = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => getComputedStyle(b).fontWeight);
     assert(Number(cw) >= 700, `contact button weight ${cw}`);
-    const order = await page.$eval('.qf-reassure', (e) => [e.textContent.trim(), e.previousElementSibling?.matches('[data-qf-contact-status]') && e.previousElementSibling.previousElementSibling?.matches('button[type="submit"]')]);
+    const order = await page.$eval('.qf-reassure', (e) => [e.textContent.trim(), e.previousElementSibling?.matches('[data-qf-contact-status]') && e.previousElementSibling.previousElementSibling?.matches('[data-qf-disclosure]') && e.previousElementSibling.previousElementSibling.previousElementSibling?.matches('button[type="submit"]')]);
     assert(order[0] === 'Our Promise: No Spam Calls. No Junk Mail.' && order[1], `promise is not under the button ${JSON.stringify(order)}`);
-    // V3.7 consent wording at 16px: up to 3 lines on desktop.
-    const consent = await page.$eval('.qf-consent span', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
-    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 3), `consent text ${JSON.stringify(consent)}`);
-    assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
-    assert((await page.textContent('.qf-consent > span')).trim() === 'By checking this box, I agree to receive calls and SMS text messages from Funeral Funds about my insurance request, according to the Privacy Policy (opens in a new tab).', 'consent text');
-    assert((await page.getAttribute('.qf-consent a', 'href')) === '/privacy-policy/' && (await page.getAttribute('[data-qf-consent]', 'required')) !== null, 'privacy link or required box');
-    assert(!(await page.isChecked('[data-qf-consent]')), 'consent box pre-checked');
+    // V3.8 disclosure: smaller muted text (14px), up to 4 lines on desktop.
+    const consent = await page.$eval('[data-qf-disclosure]', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
+    assert(consent.fs >= 13 && consent.fs < 16 && (name !== 'desktop' || consent.lines <= 4), `consent text ${JSON.stringify(consent)}`);
+    assert(!(await page.$('[data-step="7"] input[type="checkbox"], [data-qf-consent]')), 'a consent checkbox is on the contact step');
+    assert((await page.textContent('[data-qf-disclosure]')).trim() === 'By clicking "see my rates", you agree to our Privacy Policy (opens in a new tab) and consent to receive phone calls and SMS text messages from Funeral Funds at the number provided about your insurance request. Consent is not a condition of purchase.', 'disclosure text');
+    assert((await page.getAttribute('[data-qf-disclosure] a', 'href')) === '/privacy-policy/', 'privacy link');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.fill('#qf-first', NAMES[name]);
     await page.fill('#qf-phone', PHONES[name]);
@@ -575,7 +573,7 @@ await check('evidence: the two journeys\' leads, consent records, intended use a
   for (const r of v)
     assert(
       (r.firstName === 'Mary Smith' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
-        r.consent.given === true && r.consent.version === 'ff-quote-consent-v4-2026-11' && r.verification.status === 'not-required' && r.mode === 'test' &&
+        r.consent.given === true && r.consent.version === 'ff-quote-consent-v5-2026-11' && r.consent.method === 'button-submission' && r.verification.status === 'not-required' && r.mode === 'test' &&
         r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
     );
