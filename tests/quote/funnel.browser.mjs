@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ['I need pricing for a...', 'How Old Are You?', 'Do You Use Tobacco?', 'How Would You Use These Funds?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ['I need pricing for a...', 'How Old Are You?', 'Do You Use Tobacco?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
@@ -80,7 +80,6 @@ async function walk(page, phone, who = NAMES[phone === PHONES.mobile ? 'mobile' 
   await page.click('[data-pick="gender"][data-value="female"]');
   await page.click('[data-pick="age"][data-value="60"]');
   await page.click('[data-pick="tobacco"][data-value="no"]');
-  await page.click('[data-pick="use"][data-value="cremation"]');
   await page.click('[data-pick="coverage"][data-value="10000"]');
   await page.selectOption('[data-qf-state]', 'Ohio');
   await page.fill('#qf-first', who);
@@ -161,43 +160,33 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await shot(page, `v35-${name}-1-start.png`);
   });
 
-  await check(`${name}: exact seven-step sequence, wording, progress and minimal layout on every screen`, async () => {
-    for (let s = 1; s <= 7; s++) {
+  await check(`${name}: exact six-step sequence, wording, progress and minimal layout on every screen`, async () => {
+    for (let s = 1; s <= 6; s++) {
       assert((await step(page)) === s, `expected step ${s}`);
       assert((await page.textContent(`#qf-s${s}`)).trim() === TITLES[s - 1], `step ${s} title`);
-      assert((await page.textContent('[data-qf-progress-label]')).trim() === `Step ${s} of 7`, `step ${s} progress`);
+      assert((await page.textContent('[data-qf-progress-label]')).trim() === `Step ${s} of 6`, `step ${s} progress`);
       const txt = await page.evaluate(() => [...document.querySelectorAll('.qf-body *')].filter((e) => e.offsetParent && e.children.length === 0).map((e) => e.textContent).join(' '));
       assert(!/Questions\? Call|How these prices work|Representative monthly rates|What Will Your Insurance Money|Burial & Funeral|Other Final Expenses/.test(txt), `step ${s}: ${txt.slice(0, 120)}`);
       await minimalLayout(page);
       if (s === 1) await page.click('[data-pick="gender"][data-value="female"]');
       if (s === 2) {
         const ages = await page.$$eval('[data-pick="age"]', (els) => els.map((e) => Number(e.dataset.value)));
-        assert(ages.length === 40 && ages[0] === 50 && ages[39] === 89, 'ages 50-89');
+        assert(ages.length === 36 && ages[0] === 50 && ages[35] === 85, `ages 50-85 ${ages[0]}-${ages.at(-1)} (${ages.length})`);
         await page.click('[data-pick="age"][data-value="60"]');
       }
       if (s === 3) await page.click('[data-pick="tobacco"][data-value="no"]');
       if (s === 4) {
-        const o = await page.$$eval('[data-pick="use"]', (els) => els.map((e) => [e.textContent, Math.round(e.getBoundingClientRect().height), Math.round(e.getBoundingClientRect().width)]));
-        assert(o.map((x) => x[0]).join('|') === 'Burial Expenses|Cremation Expenses|Other Expenses', JSON.stringify(o));
-        assert(new Set(o.map((x) => x[1])).size === 1 && new Set(o.map((x) => x[2])).size === 1 && o[0][1] >= 44, `button sizes ${JSON.stringify(o)}`);
-        const lab = await page.$$eval('[data-pick="use"]', (els) => els.map((e) => { const range = document.createRange(); range.selectNodeContents(e); const t = range.getBoundingClientRect(); const r = e.getBoundingClientRect(); const cs = getComputedStyle(e); return { off: Math.abs(t.top + t.height / 2 - (r.top + r.height / 2)), lh: parseFloat(cs.lineHeight) / parseFloat(cs.fontSize), pad: [cs.paddingTop, cs.paddingBottom] }; }));
-        assert(lab.every((x) => x.off <= 1.5 && x.lh <= 1.2 && x.pad[0] === x.pad[1]) && new Set(lab.map((x) => x.pad.join())).size === 1, `step 4 labels ${JSON.stringify(lab)}`);
-        await page.waitForTimeout(400);
-        await shot(page, `v35-${name}-2-use.png`);
-        await page.click('[data-pick="use"][data-value="cremation"]');
-      }
-      if (s === 5) {
-        const c = await page.$$eval('[data-qf-step="5"] .qf-opt, [data-step="5"] .qf-opt', (els) => els.map((e) => e.textContent.trim()));
+        const c = await page.$$eval('[data-step="4"] .qf-opt', (els) => els.map((e) => e.textContent.trim()));
         assert(c.join('|') === '$5,000|$10,000|$15,000|$20,000|$25,000|Other', c.join('|'));
         await page.click('[data-pick="coverage"][data-value="10000"]');
       }
-      if (s === 6) {
+      if (s === 5) {
         assert((await page.$$eval('[data-qf-state] option', (els) => els.filter((e) => e.value).length)) === 50, '50 states');
         await page.selectOption('[data-qf-state]', 'Ohio');
       }
     }
     await page.click('[data-qf-back]');
-    assert((await step(page)) === 6, 'back');
+    assert((await step(page)) === 5, 'back');
     await page.goto(URL_);
   });
 
@@ -206,7 +195,6 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.click('[data-pick="gender"][data-value="female"]');
     await page.click('[data-pick="age"][data-value="60"]');
     await page.click('[data-pick="tobacco"][data-value="no"]');
-    await page.click('[data-pick="use"][data-value="cremation"]');
     await page.click('[data-pick="coverage"][data-value="10000"]');
     await page.selectOption('[data-qf-state]', 'Ohio');
     const sum = await page.$$eval('[data-qf-summary] > div', (els) => els.map((e) => `${e.querySelector('dt').textContent}:${e.querySelector('dd').textContent}`));
@@ -221,7 +209,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
     const inputs = await page.$$eval('[data-qf-contact] input:not([type="checkbox"]):not([type="hidden"])', (els) => els.map((e) => [e.id, document.querySelector(`label[for="${e.id}"]`)?.textContent.trim(), e.type]));
     assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'Full Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
-    assert(!(await page.$('[data-step="7"] input[type="email"], [data-step="7"] [name*="mail" i]')), 'an email field is on the contact screen');
+    assert(!(await page.$('[data-step="6"] input[type="email"], [data-step="6"] [name*="mail" i]')), 'an email field is on the contact screen');
     const sel = '[data-qf-contact] button[type="submit"]';
     const colors = async () => page.$eval(sel, (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color, getComputedStyle(b).filter]);
     await page.hover(sel);
@@ -240,7 +228,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     // V3.8 disclosure: smaller muted text (14px), up to 4 lines on desktop.
     const consent = await page.$eval('[data-qf-disclosure]', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
     assert(consent.fs >= 13 && consent.fs < 16 && (name !== 'desktop' || consent.lines <= 4), `consent text ${JSON.stringify(consent)}`);
-    assert(!(await page.$('[data-step="7"] input[type="checkbox"], [data-qf-consent]')), 'a consent checkbox is on the contact step');
+    assert(!(await page.$('[data-step="6"] input[type="checkbox"], [data-qf-consent]')), 'a consent checkbox is on the contact step');
     assert((await page.textContent('[data-qf-disclosure]')).trim() === 'By clicking "see my rates", you agree to our Privacy Policy (opens in a new tab) and consent to receive phone calls and SMS text messages from Funeral Funds at the number provided about your insurance request. Consent is not a condition of purchase.', 'disclosure text');
     assert((await page.getAttribute('[data-qf-disclosure] a', 'href')) === '/privacy-policy/', 'privacy link');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
@@ -257,7 +245,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await atStart(page);
     await page.evaluate(() => { window.__same = true; });
     await walk(page, PHONES[name]);
-    await page.waitForSelector('[data-step="8"]:not([hidden])', { timeout: 8000 });
+    await page.waitForSelector('[data-step="7"]:not([hidden])', { timeout: 8000 });
     await minimalLayout(page);
     const r = await page.evaluate(() => ({
       unlock: !!document.querySelector('[data-qf-unlock], [data-qf-send], [data-qf-verify], #qf-code, [data-qf-temp-note], [data-qf-resend]'),
@@ -271,10 +259,10 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
-    const h = await page.$eval('#qf-s8', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
+    const h = await page.$eval('#qf-s7', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
     assert(h.t === 'Call Funeral Funds for Access to Even Lower Rates!' && h.h > 10, JSON.stringify(h));
     const resIntro = await page.evaluate(() => {
-      const t = document.querySelector('#qf-s8'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
+      const t = document.querySelector('#qf-s7'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
       const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
       const between = [...t.parentElement.children].filter((el) => el.getClientRects().length && el.getBoundingClientRect().top >= tr.top - 1 && el.getBoundingClientRect().bottom <= cr.top + 1 && el !== t && el !== lead && !el.classList.contains('visually-hidden'));
       return { text: lead.textContent.trim(), afterHeading: lead.previousElementSibling === t, nextIsCards: (() => { let n = lead.nextElementSibling; while (n && (n.classList.contains('visually-hidden') || n.hidden)) n = n.nextElementSibling; return n === c; })(), fs: parseFloat(ls.fontSize), align: ls.textAlign, color: ls.color, gap: Math.round(lr.top - tr.bottom), below: Math.round(cr.top - lr.bottom),
@@ -335,6 +323,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   });
 
   await check(`${name}: approved card design (borders, accents, panels, buttons, alignment)`, async () => {
+    await page.mouse.move(0, 0);
     const d = await page.$$eval('.qf-card', (els) =>
       els.map((e) => {
         const cs = getComputedStyle(e);
@@ -418,9 +407,13 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.click('.qf-adjust label:has(input[name="tobacco"][value="yes"])');
     const exp2 = expected({ age: 60, gender: 'male', tobacco: true, coverage: 10000 });
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp2['average-standard'], { timeout: 5000 });
-    await page.selectOption('#qf-adj-age', '87');
-    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'unavailable' && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 5000 });
-    assert(await page.isHidden('[data-qf-card="lowest-preferred"] [data-qf-timing]') || !(await page.textContent('[data-qf-card="lowest-preferred"] [data-qf-timing]')), 'timing shown for an unavailable product');
+    // V3.9: ages run 50 to 85 (the adjust menu offers nothing above 85); at 85 both competitive cards are priced.
+    const adjAges = await page.$$eval('#qf-adj-age option', (els) => els.map((e) => Number(e.value)));
+    assert(adjAges[0] === 50 && adjAges.at(-1) === 85 && adjAges.length === 36, `adjust ages ${adjAges[0]}-${adjAges.at(-1)}`);
+    await page.selectOption('#qf-adj-age', '85');
+    const exp85 = expected({ age: 85, gender: 'male', tobacco: true, coverage: 10000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp85['average-standard'], { timeout: 5000 });
+    assert((await amount(page, 'lowest-preferred')) === exp85['lowest-preferred'] && exp85['lowest-preferred'].startsWith('$') && exp85['average-standard'].startsWith('$'), `age 85 ${JSON.stringify(exp85)}`);
     const boxes = await page.$$eval('.qf-group', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { y: Math.round(r.y) }; }));
     if (name === 'desktop') assert(boxes[0].y === boxes[1].y && boxes[1].y === boxes[2].y && boxes[3].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
@@ -452,12 +445,13 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.selectOption('#qf-adj-age', '70');
     await page.click('.qf-adjust label:has(input[name="tobacco"][value="no"])');
-    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 5000 });
+    const exp70 = expected({ age: 70, gender: 'male', tobacco: false, coverage: 10000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok' && document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp70['average-standard'], { timeout: 5000 });
   });
 
   await check(`${name}: reload during the visit keeps the prices`, async () => {
     await page.reload();
-    await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])') && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 6000 });
+    await page.waitForFunction(() => document.querySelector('[data-step="7"]:not([hidden])') && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 6000 });
     assert((await page.inputValue('#qf-adj-age')) === '70', 'selection not kept');
   });
   // 12-hour quote access (Randy, November 2026): the same browser returns to its unlocked quote.
@@ -558,7 +552,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   });
   await check(`${name}: every pricing input can be changed on the results screen (no Start New Quote control while the offer is open)`, async () => {
     await page.goto(URL_);
-    await page.waitForFunction(() => document.querySelector('[data-step="8"]:not([hidden])'), null, { timeout: 6000 });
+    await page.waitForFunction(() => document.querySelector('[data-step="7"]:not([hidden])'), null, { timeout: 6000 });
     const r = await page.evaluate(() => ({ age: !!document.querySelector('.qf-adjust select[name="age"]'), gender: document.querySelectorAll('.qf-adjust input[name="gender"]').length, tobacco: document.querySelectorAll('.qf-adjust input[name="tobacco"]').length, coverage: document.querySelectorAll('.qf-adjust input[name="coverage"]').length, restart: !!document.querySelector('[data-qf-restart]')?.getClientRects().length }));
     assert(r.age && r.gender === 2 && r.tobacco === 2 && r.coverage >= 6 && !r.restart, JSON.stringify(r));
     assert(errors.length === 0, errors.join('; '));
@@ -572,7 +566,7 @@ await check('evidence: the two journeys\' leads, consent records, intended use a
   assert(v.length === 2, `${v.length} journeys`);
   for (const r of v)
     assert(
-      (r.firstName === 'Mary Smith' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
+      (r.firstName === 'Mary Smith' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && !('intendedUse' in r) &&
         r.consent.given === true && r.consent.version === 'ff-quote-consent-v5-2026-11' && r.consent.method === 'button-submission' && r.verification.status === 'not-required' && r.mode === 'test' &&
         r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
@@ -663,7 +657,7 @@ await check('SEE MY RATES works with autofill punctuation (390px and 1440px), re
     await walk(p3, phone, name);
     const input = field === 'phone' ? 'qf-phone' : 'qf-first';
     await p3.waitForFunction((id) => document.querySelector(`#${id}-error`)?.textContent, input, { timeout: 5000 });
-    const kept = await p3.evaluate((id) => ({ step: document.querySelector('[data-step="7"]').hidden, name: document.querySelector('#qf-first').value, phone: document.querySelector('#qf-phone').value, err: document.querySelector(`#${id}-error`).textContent, focus: document.activeElement?.id }), input);
+    const kept = await p3.evaluate((id) => ({ step: document.querySelector('[data-step="6"]').hidden, name: document.querySelector('#qf-first').value, phone: document.querySelector('#qf-phone').value, err: document.querySelector(`#${id}-error`).textContent, focus: document.activeElement?.id }), input);
     assert(!kept.step && kept.name === name && kept.phone === phone && kept.err === msg && kept.focus === input, `${field} recovery ${JSON.stringify(kept)}`);
     await p3.click('[data-qf-contact] button[type="submit"]');
     await p3.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });

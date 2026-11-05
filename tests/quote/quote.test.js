@@ -82,7 +82,7 @@ function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `vi
 let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
-  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consentVersion: CONSENT_VERSION,
+  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', consentVersion: CONSENT_VERSION,
   quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
@@ -265,7 +265,7 @@ test('12-hour quote access: fixed from the original unlock; returning never rest
 test('free repricing after the submission', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  for (const q of [{ age: 55, gender: 'male', tobacco: true, coverage: 5000 }, { age: 80, gender: 'female', tobacco: false, coverage: 25000 }, { age: 89, gender: 'male', tobacco: false, coverage: 12000 }]) {
+  for (const q of [{ age: 55, gender: 'male', tobacco: true, coverage: 5000 }, { age: 80, gender: 'female', tobacco: false, coverage: 25000 }, { age: 85, gender: 'male', tobacco: false, coverage: 12000 }]) {
     const r = await c.price(q);
     assert.equal(r.http, 200);
     assert.equal(r.body.categories.length, 3);
@@ -316,6 +316,14 @@ test('V3.8 consent: no checkbox; clicking SEE MY RATES under the disclosure is r
     assert.deepEqual([r.consent.given, r.consent.method, r.consent.version, r.consent.text, typeof r.consent.at], [true, 'button-submission', CONSENT_VERSION, CONSENT_TEXT, 'string']);
     assert.ok(!/check/i.test(r.consent.action), `action says a box was checked: ${r.consent.action}`);
   }
+  // V3.9: no age above 85 can be submitted through the API (nothing saved, no session).
+  for (const age of [86, 89]) {
+    const x = client(PREVIEW);
+    const res = await x.call(startBody({ quote: { age, gender: 'female', tobacco: false, coverage: 10000 } }));
+    assert.equal(res.http, 400, String(age));
+    assert.equal(res.setCookie, null);
+  }
+  assert.equal((await client(PREVIEW).call(startBody({ quote: { age: 85, gender: 'female', tobacco: false, coverage: 10000 } }))).http, 200);
   for (const v of ['made-up', 'ff-quote-consent-v4-2026-11', 'ff-quote-consent-v3-2026-11', undefined]) assert.equal((await client(PREVIEW).call(startBody({ consentVersion: v }))).http, 400, String(v));
 });
 
@@ -394,18 +402,22 @@ test('Apply Now on Guaranteed Acceptance (Gerber): no health questions, applicat
   assert.equal(r.intakes['guaranteed-acceptance'].status, 'no-questions');
 });
 
-test('Apply Now on Lowest Preferred (Mutual of Omaha): agent-assistance continuation, nothing invented', async () => {
+test('V3.9 Apply Now on each competitive card records that card\'s own product (ranked by premium); Mutual of Omaha has no question set', async () => {
   const c = await verifiedClient();
-  const apply = await c.call({ action: 'apply', category: 'lowest-preferred', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
-  assert.equal(apply.body.status, 'ok');
-  assert.deepEqual(apply.body.intake, { mode: 'none', reason: 'no-question-set' });
-  assert.equal((await c.store.getLead(c.lead)).applications[0].attribution[0], 'FF-102');
-  assert.equal((await c.call({ action: 'intake-next', category: 'lowest-preferred' })).body.reason, 'no-question-set');
-  // Standard Rate (Aetna) is now quotable and carries its own attribution.
-  const std = await c.call({ action: 'apply', category: 'average-standard', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
-  assert.equal(std.body.status, 'ok');
-  assert.equal(std.body.category, 'Standard Rate');
-  assert.equal((await c.store.getLead(c.lead)).applications[1].attribution[0], 'FF-101');
+  const quote = { age: 70, gender: 'female', tobacco: false, coverage: 10000 };
+  const priced = (await c.price(quote)).body.categories;
+  const codes = Object.fromEntries(priced.map((x) => [x.id, x.attribution[0]]));
+  assert.deepEqual(new Set([codes['lowest-preferred'], codes['average-standard']]), new Set(['FF-101', 'FF-102']));
+  const first = await c.call({ action: 'apply', category: 'lowest-preferred', quote });
+  assert.equal(first.body.status, 'ok');
+  assert.equal(first.body.category, 'Lowest Competitive Preferred Rate');
+  const second = await c.call({ action: 'apply', category: 'average-standard', quote });
+  assert.equal(second.body.category, 'Second Competitive Preferred Rate');
+  const apps = (await c.store.getLead(c.lead)).applications;
+  assert.deepEqual(apps.map((a) => a.attribution[0]), [codes['lowest-preferred'], codes['average-standard']]);
+  assert.ok(Number(apps[0].monthlyPremium) <= Number(apps[1].monthlyPremium), 'lowest first');
+  const mooCard = codes['lowest-preferred'] === 'FF-102' ? 'lowest-preferred' : 'average-standard';
+  assert.equal((await c.call({ action: 'intake-next', category: mooCard })).body.reason, 'no-question-set');
 });
 
 test('carrier questions one at a time; answers kept; a declining YES stops and flags without ending the lead', async () => {
@@ -484,20 +496,18 @@ test('Start New Quote ends the session but keeps the lead, its consent record an
   assert.equal((await c.store.getLead(again.body.lead)).consent.given, true);
 });
 
-// ---- Quote System v2.9: intended use (lead information only) ----
-test('intended use is required, stored with the lead, in the notifications, Apply Now and intake; never a pricing input', async () => {
+// ---- V4.2: the burial/cremation question is gone ----
+test('V4.2: no intended-use question: a submission without it is accepted, a stray value is ignored, and nothing about it is stored', async () => {
   const c = client(PREVIEW);
-  assert.equal((await c.call(startBody({ intendedUse: undefined }))).http, 400);
-  assert.equal((await c.call(startBody({ intendedUse: 'vacation' }))).http, 400);
-  const start = await c.call(startBody({ intendedUse: 'burial' }));
+  const start = await c.call(startBody());
+  assert.equal(start.http, 200);
+  assert.equal((await client(PREVIEW).call(startBody({ intendedUse: 'vacation' }))).http, 200, 'an old page sending the field still works');
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
   await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
   const r = await c.store.getLead(start.body.lead);
-  assert.deepEqual(r.intendedUse, { value: 'burial', label: 'Burial Expenses' });
-  assert.equal(r.applications[0].intendedUse, 'Burial Expenses');
-  assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial Expenses');
-  // Same prices whatever the answer (the pricing endpoint only accepts the four rating inputs).
+  assert.ok(!('intendedUse' in r) && !('intendedUse' in r.applications[0]) && !('intendedUse' in r.intakes['guaranteed-acceptance']), JSON.stringify(r).slice(0, 200));
+  // The pricing endpoint only accepts the four rating inputs.
   assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
 });
 

@@ -12,7 +12,10 @@
 // its script hold no rate tables, rates or keys.
 // Representative (Texas) rates are shown for every state; state is lead
 // information only.
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { imageSize } from '@/lib/image-size';
 import HeaderLogo from '@/components/HeaderLogo.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
 import GenderChoice from '@/components/quote/GenderChoice.astro';
@@ -24,8 +27,8 @@ import { CONSENT_LINK_TEXT, CONSENT_TEXT, CONSENT_VERSION } from '../../server/q
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const cards = [
-  { id: 'lowest-preferred', label: 'Lowest Preferred Rate' },
-  { id: 'average-standard', label: 'Standard Rate' },
+  { id: 'lowest-preferred', label: 'Lowest Competitive Preferred Rate' },
+  { id: 'average-standard', label: 'Second Competitive Preferred Rate' },
   { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
 ];
 // Safe stand-ins for the blurred, locked cards (never real carriers or plans).
@@ -39,7 +42,35 @@ const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance
 // the JavaScript). Build-time HTML only; every other page keeps its number.
 const phone = { ...PAGE_PHONES.ctv, href: 'tel:+18886564648' };
 const [consentBefore, consentAfter] = CONSENT_TEXT.split(CONSENT_LINK_TEXT);
-const TOTAL = 7;
+const TOTAL = 6;
+// V4.2 logo wall (coverage step only): authentic logo files, in Randy's order;
+// any brand whose file is missing from public/ is left out at build time.
+const LOGO_CANDIDATES = [
+  { name: 'Mutual of Omaha', src: '/images/carriers/wall/mutual-of-omaha.png' },
+  { name: 'Aetna', src: '/images/carriers/cvs-aetna-logo.png' },
+  { name: 'Aflac', src: '/images/carriers/wall/aflac.png' },
+  { name: 'Gerber Life', src: '/images/carriers/wall/gerber-life.png' },
+  { name: 'Colonial Penn', src: '/images/carriers/wall/colonial-penn.png' },
+  { name: 'Lincoln Heritage Funeral Advantage', src: '/images/carriers/wall/lincoln-heritage.svg' },
+  { name: 'Trinity Life', src: '/images/carriers/wall/trinity-life.png' },
+  { name: 'Family Benefit Life', src: '/images/carriers/wall/family-benefit-life.png' },
+  { name: 'AARP', src: '/images/carriers/wall/aarp.svg' },
+  { name: 'Physicians Mutual', src: '/images/carriers/wall/physicians-mutual.png' },
+  { name: 'State Farm', src: '/images/carriers/wall/state-farm.svg' },
+  { name: 'Allstate', src: '/images/carriers/wall/allstate.svg' },
+  { name: 'TruStage', src: '/images/carriers/wall/trustage.svg' },
+  { name: 'AAA', src: '/images/carriers/wall/aaa.svg' },
+  { name: 'Foresters', src: '/images/carriers/wall/foresters.svg' },
+  { name: 'Transamerica', src: '/images/carriers/wall/transamerica.svg' },
+];
+const LOGO_WALL = LOGO_CANDIDATES.flatMap((l) => {
+  const file = join(process.cwd(), 'public', l.src);
+  if (!existsSync(file)) return [];
+  const size = imageSize(readFileSync(file), l.src);
+  // Optical sizing (V4.4): every logo gets about the same visible area, so wide
+  // wordmarks and square marks read at a similar size (--k = 1 / sqrt(aspect)).
+  return size ? [{ ...l, ...size, k: (1 / Math.sqrt(size.w / size.h)).toFixed(3) }] : [];
+});
 
 const title = "Free Burial Insurance Quotes | Compare Rates | Funeral Funds";
 const robots = "nofollow, noindex";
@@ -127,19 +158,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
         </section>
 
-        <!-- Step 4: intended use (lead information only; never changes prices) -->
+        <!-- Step 4 -->
         <section class="qf-step" data-step="4" aria-labelledby="qf-s4" hidden>
-          <h2 class="qf-q" id="qf-s4" tabindex="-1">How Would You Use These Funds?</h2>
-          <div class="qf-opts qf-opts--use">
-            <button class="qf-opt qf-opt--big" type="button" data-pick="use" data-value="burial">Burial Expenses</button>
-            <button class="qf-opt qf-opt--big" type="button" data-pick="use" data-value="cremation">Cremation Expenses</button>
-            <button class="qf-opt qf-opt--big" type="button" data-pick="use" data-value="other">Other Expenses</button>
-          </div>
-        </section>
-
-        <!-- Step 5 -->
-        <section class="qf-step" data-step="5" aria-labelledby="qf-s5" hidden>
-          <h2 class="qf-q" id="qf-s5" tabindex="-1">How Much Coverage Would You Like?</h2>
+          <h2 class="qf-q" id="qf-s4" tabindex="-1">How Much Coverage Would You Like?</h2>
           <div class="qf-opts qf-opts--coverage">
             {COVERAGE.presets.map((c) => <button class="qf-opt qf-opt--big" type="button" data-pick="coverage" data-value={c}>{money(c)}</button>)}
             <button class="qf-opt qf-opt--big" type="button" data-qf-other-open>Other</button>
@@ -155,9 +176,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
         </section>
 
-        <!-- Step 6 -->
-        <section class="qf-step" data-step="6" aria-labelledby="qf-s6" hidden>
-          <h2 class="qf-q" id="qf-s6" tabindex="-1">What State Do You Live In?</h2>
+        <!-- Step 5 -->
+        <section class="qf-step" data-step="5" aria-labelledby="qf-s5" hidden>
+          <h2 class="qf-q" id="qf-s5" tabindex="-1">What State Do You Live In?</h2>
           <label class="visually-hidden" for="qf-state">State</label>
           <select class="qf-input qf-select" id="qf-state" data-qf-state>
             <option value="">Select your state</option>
@@ -165,10 +186,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </select>
         </section>
 
-        <!-- Step 7. V3.7 (Randy, November 2026): the trust section first (Randy
+        <!-- Step 6. V3.7 (Randy, November 2026): the trust section first (Randy
              left, "Why Funeral Funds?" right from 48rem; stacked on phones),
              then "Your Contact Information", the summary and the form. -->
-        <section class="qf-step" data-step="7" aria-labelledby="qf-s7" hidden>
+        <section class="qf-step" data-step="6" aria-labelledby="qf-s6" hidden>
           <div class="qf-trust">
             <div class="qf-agent">
               <img
@@ -196,7 +217,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
               </ul>
             </aside>
           </div>
-          <h2 class="qf-q qf-q--contact" id="qf-s7" tabindex="-1">Your Contact Information</h2>
+          <h2 class="qf-q qf-q--contact" id="qf-s6" tabindex="-1">Your Contact Information</h2>
           <dl class="qf-summary" aria-label="Your selections" data-qf-summary>
             <div><dt>Gender</dt><dd data-qf-sum="gender"></dd></div>
             <div><dt>Age</dt><dd data-qf-sum="age"></dd></div>
@@ -223,9 +244,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </form>
         </section>
 
-        <!-- Step 8: the pricing screen (shown once the lead is accepted; the cards load in place) -->
-        <section class="qf-step qf-results" data-step="8" data-locked="true" aria-labelledby="qf-s8" hidden>
-          <h2 class="qf-q visually-hidden" id="qf-s8" tabindex="-1" data-qf-results-title>Your quote results</h2>
+        <!-- Step 7: the pricing screen (shown once the lead is accepted; the cards load in place) -->
+        <section class="qf-step qf-results" data-step="7" data-locked="true" aria-labelledby="qf-s7" hidden>
+          <h2 class="qf-q visually-hidden" id="qf-s7" tabindex="-1" data-qf-results-title>Your quote results</h2>
           <p class="qf-results-lead" data-qf-results-lead hidden>Let us check your lowest rates from 30+ insurance companies. Offer available for: <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
           <button class="btn qf-btn-cta qf-restart" type="button" data-qf-restart hidden>Start New Quote</button>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
@@ -299,9 +320,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
         </section>
 
-        <!-- Step 9: carrier-specific health questions after Apply Now -->
-        <section class="qf-step" data-step="9" aria-labelledby="qf-s9" hidden>
-          <h2 class="qf-q" id="qf-s9" tabindex="-1" data-qf-intake-title>Application questions</h2>
+        <!-- Step 8: carrier-specific health questions after Apply Now -->
+        <section class="qf-step" data-step="8" aria-labelledby="qf-s8" hidden>
+          <h2 class="qf-q" id="qf-s8" tabindex="-1" data-qf-intake-title>Application questions</h2>
           <p class="qf-note" data-qf-intake-sub></p>
           <div class="qf-intake" data-qf-intake-q hidden>
             <p class="qf-intake__count" data-qf-intake-count></p>
@@ -320,6 +341,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         </section>
 
       </div>
+
+      <!-- V4.2 (Randy, November 2026): the insurance company logo wall, shown only
+           with the coverage question (step 4; quote-funnel.ts show()). Authentic
+           logo files only; a brand without a file in public/ is left out. It
+           illustrates companies compared in the marketplace, not representation
+           of each one. CICA Life is never shown here. -->
+      <section class="qf-logos" aria-labelledby="qf-logos-title" data-qf-logos hidden>
+        <h2 class="qf-logos__title" id="qf-logos-title">We compare coverage from trusted insurance companies</h2>
+        <ul class="qf-logos__grid" role="list">
+          {LOGO_WALL.map((l) => (
+            <li class="qf-logos__item"><img src={l.src} alt={l.name} width={l.w} height={l.h} style={`--k:${l.k}`} loading="lazy" decoding="async" /></li>
+          ))}
+        </ul>
+      </section>
 
     </div>
 
@@ -362,6 +397,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   }
   @media (max-width: 29.99rem) { .qf-body { padding-inline: var(--space-2); } }
   @media (min-width: 48rem) { .qf-panel { padding: var(--space-6) var(--space-8) var(--space-8); } }
+  /* V4.4 logo wall under the coverage question card: borderless, centered,
+     visually subordinate. 6 per row on desktop (3 rows for 16), 4 on tablets,
+     3 on phones, 2 under 360px; the last row is centered. Each logo's height
+     is --k (1 / sqrt of its aspect ratio, set per image) times --s, so every
+     logo shows about the same area; proportions are never changed. */
+  .qf-logos { --s: 2.75rem; margin: 1.75rem auto 0; max-width: 50rem; text-align: center; }
+  .qf-logos[hidden] { display: none; }
+  .qf-logos__title { margin: 0 0 var(--space-3); font-size: 1rem; line-height: 1.3; font-weight: 700; color: #173f35; }
+  .qf-logos__grid { --cols: 2; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; row-gap: var(--space-3); }
+  @media (min-width: 22.5rem) { .qf-logos__grid { --cols: 3; } }
+  @media (min-width: 40rem) { .qf-logos { --s: 3rem; } .qf-logos__grid { --cols: 4; } }
+  @media (min-width: 52rem) { .qf-logos { --s: 4.25rem; max-width: 58rem; } .qf-logos__grid { --cols: 6; row-gap: var(--space-4); } .qf-logos__item { height: 3.75rem; padding: 0 0.875rem; } .qf-logos__item img { max-height: 3rem; } }
+  .qf-logos__item { flex: 0 0 calc(100% / var(--cols)); display: flex; align-items: center; justify-content: center; height: 3rem; padding: 0 0.625rem; min-width: 0; }
+  .qf-logos__item img { display: block; height: clamp(1rem, calc(var(--k) * var(--s)), 2.75rem); width: auto; max-width: 100%; object-fit: contain; }
   .qf-top { display: flex; align-items: center; justify-content: space-between; min-height: var(--tap-target); gap: var(--space-3); }
   .qf-back {
     min-height: var(--tap-target); min-width: var(--tap-target); padding: 0 var(--space-3);
@@ -388,10 +437,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   @media (min-width: 40rem) { .qf-ages { grid-template-columns: repeat(8, 1fr); } }
   .qf-opts { display: grid; gap: var(--space-3); max-width: 34rem; margin-inline: auto; }
   .qf-opts--two { grid-template-columns: 1fr 1fr; }
-  .qf-opts--use { grid-template-columns: 1fr; }
-  @media (min-width: 40rem) { .qf-opts--use { grid-template-columns: repeat(3, 1fr); } }
-  /* Step 4: tighter line spacing, label centered with balanced padding (correction v3.7). */
-  .qf-opts--use .qf-opt { display: flex; align-items: center; justify-content: center; padding: 0.5rem 0.75rem; line-height: 1.15; }
   .qf-opts--coverage { grid-template-columns: 1fr 1fr; }
   @media (min-width: 40rem) { .qf-opts--coverage { grid-template-columns: repeat(3, 1fr); } }
   .qf-opt {

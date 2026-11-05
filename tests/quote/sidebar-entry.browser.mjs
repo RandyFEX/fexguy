@@ -47,7 +47,6 @@ async function newPage(opts) {
 async function finish(page, phone) {
   await page.click('[data-pick="age"][data-value="60"]');
   await page.click('[data-pick="tobacco"][data-value="no"]');
-  await page.click('[data-pick="use"][data-value="burial"]');
   await page.click('[data-pick="coverage"][data-value="10000"]');
   await page.selectOption('[data-qf-state]', 'Ohio');
   await page.fill('#qf-first', 'Mary Smith');

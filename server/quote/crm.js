@@ -57,7 +57,6 @@ export function crmNote(record, rates = []) {
     q.age ? `Age: ${q.age}` : null,
     q.gender ? `Gender: ${q.gender === 'female' ? 'Female' : 'Male'}` : null,
     typeof q.tobacco === 'boolean' ? `Tobacco: ${q.tobacco ? 'Yes' : 'No'}` : null,
-    record.intendedUse?.label ? `Intended use: ${record.intendedUse.label}` : null,
     record.state ? `State: ${record.state}` : null,
     `Lead source: ${leadSource(record)}`,
     s.utmSource ? `UTM source: ${s.utmSource}` : null,

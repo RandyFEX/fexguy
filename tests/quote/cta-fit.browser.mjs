@@ -29,12 +29,12 @@ const ctx = await browser.newContext({ viewport: { width: 390, height: 900 } });
 const page = await ctx.newPage();
 await page.goto(`${srv.base}/free-quote/`);
 await page.waitForSelector('[data-step="1"]:not([hidden])');
-for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="use"][data-value="burial"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
+for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
 await page.selectOption('[data-qf-state]', 'Texas');
 await page.fill('#qf-first', 'Test Visitor');
 await page.fill('#qf-phone', '214-867-5309');
 await page.click('[data-qf-contact] button[type="submit"]');
-await page.waitForSelector('[data-step="8"]:not([hidden])');
+await page.waitForSelector('[data-step="7"]:not([hidden])');
 await page.waitForFunction(() => [...document.querySelectorAll('.qf-card')].every((c) => c.dataset.state === 'ok'), null, { timeout: 8000 });
 
 for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {

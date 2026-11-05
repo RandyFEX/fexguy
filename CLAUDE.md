@@ -896,6 +896,52 @@ scope protection wins.
   or content changes. A routine task should take one instruction, one
   execution and one final report.
 
+## Fast execution workflow (Randy, November 2026, V1.1)
+
+For development tasks. It adds to "Fast-execution editorial workflow" above
+and never weakens it or any other rule in this file; where they differ, the
+more specific project safeguard wins (Production safety, the Phase 1 rule,
+the rate-engine, lead and consent rules).
+
+Prioritize the shortest reliable path to completing approved changes.
+
+- **Small, localized changes:**
+  - Inspect only the relevant files and dependencies.
+  - Make the requested edit directly without generating an elaborate plan.
+  - Run focused tests first; avoid repeatedly running the full browser
+    suite after minor corrections.
+  - Run the complete required checks ("Before committing") once before
+    final PR approval or deployment; don't repeat checks that already
+    passed unless later changes could affect them.
+  - Avoid unrelated audits, refactoring, documentation rewrites and
+    cosmetic improvements.
+  - Don't launch unnecessary parallel agents or research tasks.
+  - Reuse existing components, assets and working integrations.
+  - Don't repeatedly request approval for routine implementation details.
+  - Report results concisely, including only material failures or blockers.
+- **Larger or higher-risk changes:**
+  - Use deeper investigation when genuinely necessary.
+  - Keep appropriate verification for pricing calculations, lead capture,
+    security and production deployment.
+  - Don't sacrifice correctness or working functionality merely to reduce
+    execution time.
+- **Decision discipline:**
+  - Treat previously approved decisions as binding.
+  - Don't reopen settled choices or recommend additional tests unless
+    materially necessary.
+  - Don't reintroduce rejected services or dependencies.
+  - Don't expand a small task into a broader redesign.
+  - If a change is deferred, leave it untouched until explicitly requested.
+  - Favor direct implementation over unnecessary planning or discussion.
+- **Execution discipline:**
+  - Complete the requested work in the fewest reliable steps.
+  - Avoid excessive status messages, and don't repeat information already
+    established in the current session.
+  - When a task is finished, give a concise summary, relevant test results
+    and any genuine blockers.
+  - Never merge or deploy without explicit approval unless the owner has
+    specifically authorized that action (see "Production safety").
+
 ## Company reviews (Randy, October 2026)
 
 - Any company or carrier review task (research, drafting, fact-checking,
@@ -1493,6 +1539,34 @@ scope protection wins.
   ff_qs cookie; no Formspark or Turnstile there). The funnel's phone
   number is 888-656-4648 throughout (Phone rule above); the page body has
   `track-page-calls` so its call taps keep GA4 click_to_call.
+  **V3.9 cards (Randy, November 2026):** "Lowest Competitive Preferred
+  Rate" and "Second Competitive Preferred Rate" rank the competitive
+  products (`COMPETITIVE_PRODUCTS` in server/rates/pricing-categories.js:
+  Mutual of Omaha Living Promise Level and Aetna Accendo Standard) by the
+  engine's premium for the visitor's inputs; the third card stays Gerber's
+  "Guaranteed Acceptance Rate". Category ids are unchanged
+  (`lowest-preferred`, `average-standard`, `guaranteed-acceptance`). Ages
+  are 50 to 85 throughout the funnel (`AGES`; the page, the pricing API and
+  the quote submission refuse 86+).
+  **V4.2 (Randy, November 2026):** the burial/cremation question ("How
+  Would You Use These Funds?") is gone: six steps (gender, age, tobacco,
+  coverage, state, contact; results are step 7), no `intendedUse` in the
+  submission, the lead record or the CRM note. The coverage question (step
+  4) has a logo wall under its card, "We compare coverage from trusted
+  insurance companies" (shown on that step only; borderless, 6 per row on
+  desktop in 3 rows, 3 on phones, 2 under 360px; each logo sized to about the
+  same visible area, proportions kept). V4.4: all 16 brands, authentic files
+  in public/images/carriers/wall/ (CVS/aetna from public/images/carriers/):
+  AARP, State Farm (Wikimedia Commons) and Allstate (English Wikipedia);
+  TruStage, Foresters, Colonial Penn, Lincoln Heritage Funeral Advantage
+  (funeraladvantage.com), Transamerica, Physicians Mutual and AAA (the AAA
+  Life Insurance Company logo, aaalife.com) from the companies' own sites;
+  Aflac cut from aflac.com's own logo sprite; Family Benefit Life and Trinity
+  Life from their sites' white header logos, colored with each company's own
+  brand color sampled from its site artwork (blue 39,63,161; green 0,116,68);
+  Mutual of Omaha and Gerber Life trimmed of white margins. A brand whose
+  file is missing is left out (LOGO_CANDIDATES in free-quote.astro). Never
+  show CICA Life there.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
