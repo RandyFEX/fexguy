@@ -377,9 +377,10 @@ export async function handleQuote(request, env, deps) {
     // sample, without the contact step, an SMS or a CRM delivery: one fixed
     // sample record (mode 'preview-sample', reset on every use) in the
     // preview store and a normal visit-scoped session. Refused on the
-    // production deployment and whenever real verification is configured.
+    // production deployment (VERCEL_ENV=production); works on previews with or
+    // without Twilio (it never sends a code).
     case 'preview-sample': {
-      if (env.VERCEL_ENV === 'production' || !test) return json(404, { status: 'not-found' });
+      if (env.VERCEL_ENV === 'production') return json(404, { status: 'not-found' });
       const visit = visitOf(request);
       if (!visit) return bad('Please reload the page and try again.');
       const over = await store.limit([{ key: `pv:h:${ipHash}:${Math.floor(now / HOUR)}`, limit: 60, windowMs: HOUR }]);
