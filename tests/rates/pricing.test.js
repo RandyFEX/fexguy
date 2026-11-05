@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { createEngine, loadDatasets, monthlyPremium } from '../../server/rates/engine.js';
 import { toFixed } from '../../server/rates/decimal.js';
 import { PRODUCTS } from '../../server/rates/products.js';
-import { CATEGORIES, meanCents, priceCategories } from '../../server/rates/pricing-categories.js';
+import { CATEGORIES, COMPETITIVE_PRODUCTS, meanCents, priceCategories } from '../../server/rates/pricing-categories.js';
 import { allowedOrigin, handlePriceExplorer, LIMITS, parseInput } from '../../server/rates/public-pricing.js';
 
 function fake(id) {
@@ -27,8 +27,9 @@ const engine = createEngine(Object.fromEntries(Object.keys(PRODUCTS).map((id) =>
 const byId = (cats) => Object.fromEntries(cats.map((c) => [c.id, c]));
 const input = (o = {}) => ({ age: 65, gender: 'male', tobacco: false, coverage: 10000, ...o });
 
-test('exact labels, in order', () => {
-  assert.deepEqual(CATEGORIES.map((c) => c.label), ['Lowest Preferred Rate', 'Standard Rate', 'Guaranteed Acceptance Rate']);
+test('exact labels, in order (V3.9)', () => {
+  assert.deepEqual(CATEGORIES.map((c) => c.label), ['Lowest Competitive Preferred Rate', 'Second Competitive Preferred Rate', 'Guaranteed Acceptance Rate']);
+  assert.deepEqual(CATEGORIES.map((c) => c.id), ['lowest-preferred', 'average-standard', 'guaranteed-acceptance'], 'ids unchanged');
 });
 
 test('mean of cents rounds half up', () => {
@@ -37,29 +38,67 @@ test('mean of cents rounds half up', () => {
   assert.equal(meanCents([5000, 5000]), 5000);
 });
 
-test('Lowest Preferred Rate is Mutual of Omaha Living Promise Level (exact engine premium, its own limits)', () => {
-  const c = byId(priceCategories(engine, input()))['lowest-preferred'];
-  const m = engine.quote({ productId: 'moo-living-promise-level', ...input(), state: 'TX' });
-  assert.equal(c.status, 'ok');
-  assert.equal(c.monthlyPremium, m.monthlyPremium);
-  assert.deepEqual(c.attribution, ['FF-102']);
-  // Smokers and women use their own MOO tables.
-  const s = engine.quote({ productId: 'moo-living-promise-level', ...input({ tobacco: true, gender: 'female' }), state: 'TX' });
-  assert.equal(byId(priceCategories(engine, input({ tobacco: true, gender: 'female' })))['lowest-preferred'].monthlyPremium, s.monthlyPremium);
-  // MOO issues to age 85: ages 86-89 are unavailable, never forced.
-  assert.equal(byId(priceCategories(engine, input({ age: 86 })))['lowest-preferred'].status, 'unavailable');
+// V3.9: the two competitive products (COMPETITIVE_PRODUCTS) ranked by the engine's own premium.
+const PRODUCT_OF = { 'FF-101': 'aetna-accendo-standard', 'FF-102': 'moo-living-promise-level' };
+const engineQuote = (productId, i) => engine.quote({ productId, ...i, state: 'TX' });
+function expectedRanked(i) {
+  return COMPETITIVE_PRODUCTS.map((id) => engineQuote(id, i)).filter((q) => q.ok).sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents);
+}
+
+test('V3.9 ranked cards: lowest and second competitive premiums for every age, gender, tobacco answer and coverage (exact engine premiums)', () => {
+  assert.deepEqual(COMPETITIVE_PRODUCTS, ['moo-living-promise-level', 'aetna-accendo-standard']);
+  let checked = 0;
+  for (let age = 50; age <= 89; age++)
+    for (const gender of ['male', 'female'])
+      for (const tobacco of [false, true])
+        for (const coverage of [5000, 10000, 12000, 25000]) {
+          const i = input({ age, gender, tobacco, coverage });
+          const c = byId(priceCategories(engine, i));
+          const exp = expectedRanked(i);
+          const first = c['lowest-preferred'];
+          const second = c['average-standard'];
+          assert.equal(first.status, 'ok', JSON.stringify(i));
+          assert.equal(first.monthlyPremium, exp[0].monthlyPremium, JSON.stringify(i));
+          assert.equal(PRODUCT_OF[first.attribution[0]], exp[0].productId);
+          if (exp.length > 1) {
+            assert.equal(second.status, 'ok', JSON.stringify(i));
+            assert.equal(second.monthlyPremium, exp[1].monthlyPremium, JSON.stringify(i));
+            assert.equal(PRODUCT_OF[second.attribution[0]], exp[1].productId);
+            assert.notEqual(first.attribution[0], second.attribution[0], 'two different products');
+            assert.ok(first.monthlyPremiumCents <= second.monthlyPremiumCents, 'lowest first');
+          } else {
+            // Only one competitive product issues at this age (Mutual of Omaha stops at 85): no second rate is invented.
+            assert.equal(second.status, 'unavailable', JSON.stringify(i));
+            assert.equal(second.message, 'Not available at this age.');
+            assert.equal(second.monthlyPremium, undefined);
+          }
+          checked++;
+        }
+  assert.equal(checked, 40 * 2 * 2 * 4);
 });
 
-test('Standard Rate is Aetna Standard (one verified standard product, its own premium, never called an average)', () => {
-  for (const age of [50, 65, 89]) {
-    const c = byId(priceCategories(engine, input({ age })))['average-standard'];
-    const a = engine.quote({ productId: 'aetna-accendo-standard', ...input({ age }), state: 'TX' });
-    assert.equal(c.status, 'ok');
-    assert.equal(c.label, 'Standard Rate');
-    assert.equal(c.monthlyPremium, a.monthlyPremium);
-    assert.deepEqual(c.attribution, ['FF-101']);
+test('V3.9 smoker and nonsmoker cards use each product\'s own tobacco or non-tobacco rates', () => {
+  for (const age of [55, 65, 75, 85]) {
+    const non = byId(priceCategories(engine, input({ age, tobacco: false })));
+    const smk = byId(priceCategories(engine, input({ age, tobacco: true })));
+    for (const id of ['lowest-preferred', 'average-standard']) {
+      const pn = PRODUCT_OF[non[id].attribution[0]];
+      const ps = PRODUCT_OF[smk[id].attribution[0]];
+      assert.equal(non[id].monthlyPremium, engineQuote(pn, input({ age, tobacco: false })).monthlyPremium);
+      assert.equal(smk[id].monthlyPremium, engineQuote(ps, input({ age, tobacco: true })).monthlyPremium);
+    }
+    assert.ok(Number(smk['lowest-preferred'].monthlyPremium) > Number(non['lowest-preferred'].monthlyPremium), 'smoker rate is higher');
   }
-  assert.deepEqual(CATEGORIES.find((c) => c.id === 'average-standard').products, ['aetna-accendo-standard']);
+});
+
+test('V3.9 ranking follows the premiums: when Mutual of Omaha is cheaper it is the first card', () => {
+  // A table where Mutual of Omaha is cheaper than Aetna flips the order (same logic, no fixed carrier per card).
+  const flip = (id) => { const ds = fake(id); if (id.startsWith('moo')) for (const r of ds.records) r.annualRatePer1000 = (Number(r.annualRatePer1000) - 20).toFixed(2); return ds; };
+  const e2 = createEngine(Object.fromEntries(Object.keys(PRODUCTS).map((id) => [id, flip(id)])));
+  const c = byId(priceCategories(e2, input()));
+  assert.deepEqual([c['lowest-preferred'].attribution[0], c['average-standard'].attribution[0]], ['FF-102', 'FF-101']);
+  const d = byId(priceCategories(engine, input()));
+  assert.deepEqual([d['lowest-preferred'].attribution[0], d['average-standard'].attribution[0]], ['FF-101', 'FF-102']);
 });
 
 test('Guaranteed Acceptance uses Gerber where available; tobacco never changes it', () => {
@@ -73,14 +112,15 @@ test('Guaranteed Acceptance uses Gerber where available; tobacco never changes i
 
 test('v3.5 card content: carrier, plan, coverage timing and logo per category', () => {
   const c = byId(priceCategories(engine, input()));
-  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
-  assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
+  // With these test tables Aetna is the cheaper competitive product, Mutual of Omaha the second.
+  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
+  assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
   assert.deepEqual(c['guaranteed-acceptance'].carriers, [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }]);
 });
 
 test('verified results carry carrier names but never product ids, rates or fees', () => {
   const cats = priceCategories(engine, input());
-  assert.deepEqual(cats.map((c) => c.carriers[0].carrier), ['Mutual of Omaha', 'Aetna', 'Gerber Life']);
+  assert.deepEqual(cats.map((c) => c.carriers[0].carrier), ['Aetna', 'Mutual of Omaha', 'Gerber Life']);
   const text = JSON.stringify(cats);
   for (const banned of ['moo-', 'aetna-accendo', 'gerber-guaranteed', 'annualRatePer1000', 'policyFee', 'modalFactor']) assert.ok(!text.includes(banned), banned);
   assert.ok(!cats.some((c) => c.status === 'pending'), 'no Coming soon when every product is available');
@@ -121,7 +161,7 @@ test('endpoint: returns the three categories for a same-site request', async () 
   assert.equal(res.headers.get('cache-control'), 'no-store');
   const b = await res.json();
   assert.equal(b.state, 'TX');
-  assert.deepEqual(b.categories.map((c) => c.label), ['Lowest Preferred Rate', 'Standard Rate', 'Guaranteed Acceptance Rate']);
+  assert.deepEqual(b.categories.map((c) => c.label), ['Lowest Competitive Preferred Rate', 'Second Competitive Preferred Rate', 'Guaranteed Acceptance Rate']);
 });
 
 test('endpoint: rejects other origins, methods, bad input; fails closed without store or engine', async () => {

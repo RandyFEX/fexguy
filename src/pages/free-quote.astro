@@ -24,8 +24,8 @@ import { CONSENT_LINK_TEXT, CONSENT_TEXT, CONSENT_VERSION } from '../../server/q
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const cards = [
-  { id: 'lowest-preferred', label: 'Lowest Preferred Rate' },
-  { id: 'average-standard', label: 'Standard Rate' },
+  { id: 'lowest-preferred', label: 'Lowest Competitive Preferred Rate' },
+  { id: 'average-standard', label: 'Second Competitive Preferred Rate' },
   { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
 ];
 // Safe stand-ins for the blurred, locked cards (never real carriers or plans).

@@ -335,6 +335,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
   });
 
   await check(`${name}: approved card design (borders, accents, panels, buttons, alignment)`, async () => {
+    await page.mouse.move(0, 0);
     const d = await page.$$eval('.qf-card', (els) =>
       els.map((e) => {
         const cs = getComputedStyle(e);
@@ -419,8 +420,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const exp2 = expected({ age: 60, gender: 'male', tobacco: true, coverage: 10000 });
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp2['average-standard'], { timeout: 5000 });
     await page.selectOption('#qf-adj-age', '87');
-    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'unavailable' && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 5000 });
-    assert(await page.isHidden('[data-qf-card="lowest-preferred"] [data-qf-timing]') || !(await page.textContent('[data-qf-card="lowest-preferred"] [data-qf-timing]')), 'timing shown for an unavailable product');
+    // V3.9: at 87 only one competitive product issues: it is the first card; the second has no rate.
+    const exp87 = expected({ age: 87, gender: 'male', tobacco: true, coverage: 10000 });
+    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok' && document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'unavailable', null, { timeout: 5000 });
+    assert((await amount(page, 'lowest-preferred')) === exp87['lowest-preferred'] && exp87['average-standard'] === 'unavailable', `age 87 ${JSON.stringify(exp87)}`);
+    assert(await page.isHidden('[data-qf-card="average-standard"] [data-qf-timing]') || !(await page.textContent('[data-qf-card="average-standard"] [data-qf-timing]')), 'timing shown for an unavailable product');
     const boxes = await page.$$eval('.qf-group', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { y: Math.round(r.y) }; }));
     if (name === 'desktop') assert(boxes[0].y === boxes[1].y && boxes[1].y === boxes[2].y && boxes[3].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
@@ -452,7 +456,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.selectOption('#qf-adj-age', '70');
     await page.click('.qf-adjust label:has(input[name="tobacco"][value="no"])');
-    await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 5000 });
+    const exp70 = expected({ age: 70, gender: 'male', tobacco: false, coverage: 10000 });
+    await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok' && document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp70['average-standard'], { timeout: 5000 });
   });
 
   await check(`${name}: reload during the visit keeps the prices`, async () => {

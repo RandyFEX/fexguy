@@ -1493,6 +1493,14 @@ scope protection wins.
   ff_qs cookie; no Formspark or Turnstile there). The funnel's phone
   number is 888-656-4648 throughout (Phone rule above); the page body has
   `track-page-calls` so its call taps keep GA4 click_to_call.
+  **V3.9 cards (Randy, November 2026):** "Lowest Competitive Preferred
+  Rate" and "Second Competitive Preferred Rate" rank the competitive
+  products (`COMPETITIVE_PRODUCTS` in server/rates/pricing-categories.js:
+  Mutual of Omaha Living Promise Level and Aetna Accendo Standard) by the
+  engine's premium for the visitor's inputs (the second card is unavailable
+  when only one issues, e.g. ages 86-89); the third card stays Gerber's
+  "Guaranteed Acceptance Rate". Category ids are unchanged
+  (`lowest-preferred`, `average-standard`, `guaranteed-acceptance`).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

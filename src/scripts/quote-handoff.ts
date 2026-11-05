@@ -20,8 +20,8 @@ export const HANDOFF_KEY = 'ff:quote-handoff';
 export const HANDOFF_VERSION = 1;
 export const MAX_AGE_MS = 12 * 60 * 60 * 1000;
 const TIERS: Record<string, string[]> = {
-  'lowest-preferred': ['Lowest Preferred Rate'],
-  'average-standard': ['Standard Rate', 'Average Standard Rate'],
+  'lowest-preferred': ['Lowest Competitive Preferred Rate', 'Lowest Preferred Rate'],
+  'average-standard': ['Second Competitive Preferred Rate', 'Standard Rate', 'Average Standard Rate'],
   'guaranteed-acceptance': ['Guaranteed Acceptance Rate'],
 };
 

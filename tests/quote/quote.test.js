@@ -394,18 +394,22 @@ test('Apply Now on Guaranteed Acceptance (Gerber): no health questions, applicat
   assert.equal(r.intakes['guaranteed-acceptance'].status, 'no-questions');
 });
 
-test('Apply Now on Lowest Preferred (Mutual of Omaha): agent-assistance continuation, nothing invented', async () => {
+test('V3.9 Apply Now on each competitive card records that card\'s own product (ranked by premium); Mutual of Omaha has no question set', async () => {
   const c = await verifiedClient();
-  const apply = await c.call({ action: 'apply', category: 'lowest-preferred', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
-  assert.equal(apply.body.status, 'ok');
-  assert.deepEqual(apply.body.intake, { mode: 'none', reason: 'no-question-set' });
-  assert.equal((await c.store.getLead(c.lead)).applications[0].attribution[0], 'FF-102');
-  assert.equal((await c.call({ action: 'intake-next', category: 'lowest-preferred' })).body.reason, 'no-question-set');
-  // Standard Rate (Aetna) is now quotable and carries its own attribution.
-  const std = await c.call({ action: 'apply', category: 'average-standard', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
-  assert.equal(std.body.status, 'ok');
-  assert.equal(std.body.category, 'Standard Rate');
-  assert.equal((await c.store.getLead(c.lead)).applications[1].attribution[0], 'FF-101');
+  const quote = { age: 70, gender: 'female', tobacco: false, coverage: 10000 };
+  const priced = (await c.price(quote)).body.categories;
+  const codes = Object.fromEntries(priced.map((x) => [x.id, x.attribution[0]]));
+  assert.deepEqual(new Set([codes['lowest-preferred'], codes['average-standard']]), new Set(['FF-101', 'FF-102']));
+  const first = await c.call({ action: 'apply', category: 'lowest-preferred', quote });
+  assert.equal(first.body.status, 'ok');
+  assert.equal(first.body.category, 'Lowest Competitive Preferred Rate');
+  const second = await c.call({ action: 'apply', category: 'average-standard', quote });
+  assert.equal(second.body.category, 'Second Competitive Preferred Rate');
+  const apps = (await c.store.getLead(c.lead)).applications;
+  assert.deepEqual(apps.map((a) => a.attribution[0]), [codes['lowest-preferred'], codes['average-standard']]);
+  assert.ok(Number(apps[0].monthlyPremium) <= Number(apps[1].monthlyPremium), 'lowest first');
+  const mooCard = codes['lowest-preferred'] === 'FF-102' ? 'lowest-preferred' : 'average-standard';
+  assert.equal((await c.call({ action: 'intake-next', category: mooCard })).body.reason, 'no-question-set');
 });
 
 test('carrier questions one at a time; answers kept; a declining YES stops and flags without ending the lead', async () => {
