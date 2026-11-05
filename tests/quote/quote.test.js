@@ -1,19 +1,18 @@
-// Quote System v2.2: Twilio Verify, the verification gate, verified sessions,
-// consent/verification evidence and Apply Now. Uses a throwaway local
-// redis-server (the real Lua scripts run) and a fake Twilio API; no SMS is
-// ever sent and no lead is ever delivered.
+// Quote funnel server: the lead submission (V3.3, no SMS verification), Agent
+// CRM delivery, quote sessions, the lead record and Apply Now. Uses a
+// throwaway local redis-server (the real Lua scripts run) and a fake Agent CRM
+// API; no SMS is ever sent and no lead is ever delivered.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { startRedis } from '../health-search/redis-test-server.js';
 import { createEngine, monthlyPremium } from '../../server/rates/engine.js';
 import { toFixed } from '../../server/rates/decimal.js';
 import { PRODUCTS } from '../../server/rates/products.js';
-import { handleQuote, MAX_ATTEMPTS, RESEND_COOLDOWN_MS, SMS_LIMITS } from '../../server/quote/handler.js';
+import { handleQuote, SUBMIT_LIMITS } from '../../server/quote/handler.js';
 import { quoteStore } from '../../server/quote/store.js';
 import { COOKIE, sign, sessionKey, verifiedLead, SESSION_MS } from '../../server/quote/session.js';
 import { toE164US } from '../../server/quote/phone.js';
-import { verifyMode, TEST_CODE } from '../../server/quote/twilio.js';
-import { CONSENT_TEXT, CONSENT_VERSION, VERIFY_NOTICE_VERSION } from '../../server/quote/consent.js';
+import { CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 import { handlePriceExplorer } from '../../server/rates/public-pricing.js';
 
 let redis;
@@ -38,19 +37,21 @@ const engine = fakeEngine();
 
 const SECRET = 'q'.repeat(48);
 const PREVIEW = { VERCEL_ENV: 'preview', QUOTE_SESSION_SECRET: SECRET };
-const TWILIO = { ...PREVIEW, TWILIO_ACCOUNT_SID: `AC${'1'.repeat(32)}`, TWILIO_AUTH_TOKEN: 'tok', TWILIO_VERIFY_SERVICE_SID: `VA${'2'.repeat(32)}` };
+// Production with Agent CRM configured (the fake API below; no real request).
+const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, AGENT_CRM_TOKEN: 'pit-test-token', AGENT_CRM_LOCATION_ID: 'loc123' };
+const PO = { origin: 'https://funeralfunds.com' };
 const ORIGIN = 'https://fexguy-test-final-expense-guys-projects.vercel.app';
 let ipCounter = 0;
 
-/** A fake Twilio Verify API that records calls (code 654321 is correct). */
-function fakeTwilio() {
+/** A fake Agent CRM (GoHighLevel) API that records calls; `fail` makes every call fail. */
+function fakeCrm({ fail = false } = {}) {
   const calls = [];
   const fetchImpl = async (url, init) => {
-    const form = Object.fromEntries(new URLSearchParams(init.body));
-    calls.push({ url, auth: init.headers.Authorization, form });
-    if (url.endsWith('/Verifications')) return new Response(JSON.stringify({ sid: 'VE123', status: 'pending' }), { status: 201 });
-    if (url.endsWith('/VerificationCheck')) return new Response(JSON.stringify({ sid: 'VE123', status: form.Code === '654321' ? 'approved' : 'pending' }), { status: 200 });
-    return new Response('{}', { status: 404 });
+    const u = String(url);
+    calls.push({ url: u, headers: init.headers, body: JSON.parse(init.body) });
+    if (fail) return Response.json({ message: 'Unauthorized' }, { status: 401 });
+    if (u.endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'c123' } });
+    return Response.json({ ok: true }, { status: 201 });
   };
   return { calls, fetchImpl };
 }
@@ -82,7 +83,7 @@ let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
   action: 'start', firstName: 'Mary', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
-  verifyNoticeVersion: VERIFY_NOTICE_VERSION, quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
+  quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
 
@@ -101,173 +102,120 @@ test('phone numbers: US only, normalized to E.164; toll-free, premium, N11 and f
     assert.equal(toE164US(bad), null, String(bad));
 });
 
-test('verification modes: real Twilio when configured; test mode only outside production; never in production', () => {
-  assert.equal(verifyMode(TWILIO), 'twilio');
-  assert.equal(verifyMode(PREVIEW), 'test');
-  // Production never falls back to the universal code by itself: without Twilio it refuses
-  // verification unless QUOTE_PUBLIC_TEST_CODE=on is set explicitly (v5.3 code); Twilio always wins.
-  // Facebook ad launch: switched on explicitly in code (PUBLIC_TEST_CODE_LAUNCH); 'off' disables it.
-  assert.equal(verifyMode({ VERCEL_ENV: 'production' }), 'public-test');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'public-test');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'off' }), 'off');
-  assert.equal(verifyMode({ VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'public-test');
-  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_PUBLIC_TEST_CODE: 'on' }), 'twilio');
-  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production', QUOTE_VERIFY_MODE: 'test' }), 'twilio');
-  assert.equal(verifyMode({ ...TWILIO, VERCEL_ENV: 'production' }), 'twilio');
-});
+const prodPrice = async (cl) => {
+  const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://funeralfunds.com', 'x-real-ip': '10.9.9.9', 'x-quote-visit': cl.visit, ...(cl.cookie ? { cookie: cl.cookie } : {}) }, body: JSON.stringify({ age: 65, gender: 'male', tobacco: false, coverage: 10000 }) }),
+    { ...PROD, HEALTH_SEARCH_SECRET: SECRET }, { store: redis.store, getEngine: async () => ({ engine }), isVerified: async (r) => Boolean(await verifiedLead(r, PROD, cl.store)) });
+  return res.status;
+};
 
-test('temporary code: a lead labeled TEST is never an advertising conversion; a repeat check never counts twice', async () => {
-  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
-  const PO = { origin: 'https://funeralfunds.com' };
-  for (const [name, counted] of [['TEST Lead Smoke', false], ['test mary', false], ['Testa Rossi', true]]) {
-    const c = client(PROD);
-    const start = await c.call(startBody({ firstName: name }), PO);
-    const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
-    assert.equal(ok.body.leadConversion, counted, name);
-    assert.equal(ok.body.leadVerified, false, name);
-    assert.equal((await c.store.getLead(start.body.lead)).verification.phoneVerified, false, name);
-    assert.equal((await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).http, 410, 'repeat check refused');
-  }
-});
-
-test('Agent CRM: the saved lead creates or updates its contact (upsert, tag, note) once; a failure never blocks the visitor', async () => {
-  const PO = { origin: 'https://funeralfunds.com' };
-  const calls = [];
-  const okFetch = async (url, init) => {
-    const u = String(url);
-    calls.push({ url: u, headers: init.headers, body: JSON.parse(init.body) });
-    if (u.endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'c123' } });
-    return Response.json({ ok: true }, { status: 201 });
-  };
-  const env = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on', AGENT_CRM_TOKEN: 'pit-test-token', AGENT_CRM_LOCATION_ID: 'loc123' };
-  const c = client(env, { fetchImpl: okFetch });
-  const start = await c.call(startBody({ firstName: 'TEST Mary Ann Smith', consent: true, source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
-  assert.equal(start.http, 200);
-  assert.deepEqual(calls.map((x) => x.url), ['https://services.leadconnectorhq.com/contacts/upsert', 'https://services.leadconnectorhq.com/contacts/c123/tags', 'https://services.leadconnectorhq.com/contacts/c123/notes']);
-  assert.equal(calls[0].headers.authorization, 'Bearer pit-test-token');
-  assert.equal(calls[0].headers.version, '2021-07-28');
-  assert.deepEqual(calls[0].body, { locationId: 'loc123', firstName: 'TEST', lastName: 'Mary Ann Smith', phone: (await c.store.getLead(start.body.lead)).phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
-  assert.deepEqual(calls[1].body, { tags: ['Funeral Funds - Website Quote'] });
-  const note = calls[2].body.body;
-  for (const line of ['TEST LEAD', `Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Consent to calls/texts: Yes', 'not SMS-verified (temporary access code)'])
-    assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
-  assert.ok(!note.includes('pit-test-token'));
-  const ev = (await c.store.events(start.body.lead)).find((e) => e.type === 'crm-delivered');
-  assert.equal(ev?.contactId, 'c123');
-  // A contact without a last name sends no empty lastName (never blanks a CRM field).
-  calls.length = 0;
-  await client(env, { fetchImpl: okFetch }).call(startBody({ firstName: 'Mary' }), PO);
-  assert.equal('lastName' in calls[0].body, false);
-  // CRM down: the visitor still gets the code step; the failure is logged on the lead for a resend.
-  const down = client(env, { fetchImpl: async () => { throw new TypeError('fetch failed'); } });
-  const s2 = await down.call(startBody(), PO);
-  assert.equal(s2.http, 200);
-  assert.ok((await down.store.events(s2.body.lead)).some((e) => e.type === 'crm-delivery-failed'));
-  const refused = client(env, { fetchImpl: async () => Response.json({ message: 'Unauthorized' }, { status: 401 }) });
-  const s3 = await refused.call(startBody(), PO);
-  assert.equal(s3.http, 200);
-  assert.ok((await refused.store.events(s3.body.lead)).some((e) => e.type === 'crm-delivery-failed' && e.status === 401));
-  // Not configured, or preview test mode: nothing is sent.
-  const none = [];
-  await client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } }).call(startBody(), PO);
-  await client({ ...PREVIEW, AGENT_CRM_TOKEN: 't', AGENT_CRM_LOCATION_ID: 'l' }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } }).call(startBody());
-  assert.deepEqual(none, []);
-});
-
-test('production without Twilio and with the temporary code switched off refuses verification (503)', async () => {
-  const c = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'off' });
-  const r = await c.call(startBody(), { origin: 'https://funeralfunds.com' });
-  assert.equal(r.http, 503);
-});
-
-test('temporary public test code (v5.3): unlocks only this visitor\'s quotes, never marks the phone SMS-verified, real lead', async () => {
-  const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
-  const PO = { origin: 'https://funeralfunds.com' };
-  const c = client(PROD);
-  const prodPrice = async (cl) => {
-    const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://funeralfunds.com', 'x-real-ip': '10.9.9.9', 'x-quote-visit': cl.visit, ...(cl.cookie ? { cookie: cl.cookie } : {}) }, body: JSON.stringify({ age: 65, gender: 'male', tobacco: false, coverage: 10000 }) }),
-      { ...PROD, HEALTH_SEARCH_SECRET: SECRET }, { store: redis.store, getEngine: async () => ({ engine }), isVerified: async (r) => Boolean(await verifiedLead(r, PROD, cl.store)) });
-    return res.status;
-  };
-  const start = await c.call(startBody({ consent: false }), PO);
-  assert.equal(start.http, 200);
-  assert.equal(start.body.status, 'sent');
+test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, note) and opens the rates at once; no SMS, no code', async () => {
+  const crm = fakeCrm();
+  const c = client(PROD, { fetchImpl: crm.fetchImpl });
+  assert.equal(await prodPrice(c), 401, 'no prices before the submission');
+  const start = await c.call(startBody({ firstName: 'Mary Ann Smith', consent: true, source: { trafficSource: 'facebook / paid', utmSource: 'facebook', utmCampaign: 'launch' } }), PO);
+  assert.equal(start.http, 200, JSON.stringify(start.body));
+  assert.equal(start.body.status, 'verified');
   assert.equal(start.body.testMode, false);
-  // v6.2: the lead is saved at contact submission, before any code is entered.
-  assert.equal((await c.store.getLead(start.body.lead)).firstName, 'Mary');
-  assert.equal(await prodPrice(c), 401, 'no prices before the code');
-  const wrong = await c.call({ action: 'check', lead: start.body.lead, code: '654321' }, PO);
-  assert.equal(wrong.body.status, 'wrong-code');
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO);
-  assert.equal(ok.body.status, 'verified');
-  assert.equal(ok.body.testMode, false);
-  assert.equal(ok.body.leadVerified, false, 'the temporary code is never an SMS-verified lead');
-  assert.equal(ok.body.leadConversion, true, 'a saved temporary-code lead counts once as an advertising lead');
-  assert.equal('notify' in ok.body, false, 'nothing for the browser to send');
-  assert.equal(await prodPrice(c), 200, 'this visitor gets prices');
+  assert.equal(start.body.leadConversion, true, 'a delivered production lead counts once as an advertising lead');
+  assert.match(start.setCookie, /HttpOnly; Secure; SameSite=Strict/);
+  assert.equal((await prodPrice(c)), 200, 'the rates open at once');
+  assert.ok(!['masked', 'resendAfterMs', 'temporaryCodeNote'].some((k) => k in start.body), 'nothing about a code');
+  assert.deepEqual(crm.calls.map((x) => x.url), ['https://services.leadconnectorhq.com/contacts/upsert', 'https://services.leadconnectorhq.com/contacts/c123/tags', 'https://services.leadconnectorhq.com/contacts/c123/notes']);
+  assert.equal(crm.calls[0].headers.authorization, 'Bearer pit-test-token');
+  assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
-  assert.equal(rec.mode, 'public-test');
-  assert.equal(rec.verification.status, 'test-code-accepted');
-  assert.equal(rec.verification.phoneVerified, false);
-  assert.equal(rec.verification.verifiedAt, null);
-  assert.equal(rec.consent.given, false);
-  assert.equal(rec.temporaryCodeNotice, 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.');
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
+  assert.deepEqual(crm.calls[1].body, { tags: ['Funeral Funds - Website Quote'] });
+  const note = crm.calls[2].body.body;
+  for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Consent to calls/texts: Yes', 'Phone verification: not verified (no SMS verification)'])
+    assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
+  assert.ok(!note.includes('TEST LEAD') && !note.includes('pit-test-token'));
+  // The record never claims the phone was verified.
+  assert.equal(rec.mode, 'direct');
+  assert.deepEqual(rec.verification, { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null });
+  assert.equal(rec.crm.delivered, true);
+  assert.equal(rec.crm.contactId, 'c123');
+  assert.equal('verifyNotice' in rec || 'temporaryCodeNotice' in rec, false);
+  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivered', 'lead-accepted']);
   // Production records stay in the production namespace, never the preview one.
   assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
-  // The code alone opens nothing: another visitor without their own request gets no prices or session.
+  // Another visitor gets nothing from this lead.
   const other = client(PROD);
-  assert.equal((await other.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).http, 410);
   assert.equal(await prodPrice(other), 401);
   assert.equal((await other.call({ action: 'session' }, PO)).body.status, 'not-verified');
+  // A contact without a last name sends no empty lastName (never blanks a CRM field).
+  const solo = fakeCrm();
+  await client(PROD, { fetchImpl: solo.fetchImpl }).call(startBody({ firstName: 'Mary' }), PO);
+  assert.equal('lastName' in solo.calls[0].body, false);
 });
 
-test('v5.4: the access-code instruction is sent only in temporary-code mode, never with Twilio or on previews', async () => {
-  const NOTE = 'Temporary access code: 123456. Text message verification is temporarily unavailable, and entering this code does not verify that you own this phone number.';
-  const prod = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' });
-  const PO = { origin: 'https://funeralfunds.com' };
-  assert.equal((await prod.call({ action: 'session' }, PO)).body.temporaryCodeNote, NOTE);
-  assert.equal((await prod.call(startBody(), PO)).body.temporaryCodeNote, NOTE);
-  const tw = fakeTwilio();
-  const live = client({ ...TWILIO, VERCEL_ENV: 'production' }, { fetchImpl: tw.fetchImpl });
-  const liveSession = await live.call({ action: 'session' }, PO);
-  const liveStart = await live.call(startBody(), PO);
-  assert.equal(liveStart.body.status, 'sent');
-  assert.ok(!('temporaryCodeNote' in liveSession.body) && !('temporaryCodeNote' in liveStart.body));
-  assert.ok(!JSON.stringify(liveStart.body).includes('123456'));
-  assert.equal((await live.call({ action: 'check', lead: liveStart.body.lead, code: TEST_CODE }, PO)).body.status, 'wrong-code', 'Twilio mode never accepts the temporary code');
-  const preview = client(PREVIEW);
-  assert.ok(!('temporaryCodeNote' in (await preview.call({ action: 'session' })).body));
+test('V3.3: a failed Agent CRM delivery keeps the saved lead, reports no success (no session, no conversion), and the retry re-delivers the same lead', async () => {
+  for (const fetchImpl of [fakeCrm({ fail: true }).fetchImpl, async () => { throw new TypeError('fetch failed'); }]) {
+    let down = true;
+    const good = fakeCrm();
+    const c = client(PROD, { fetchImpl: (u, i) => (down ? fetchImpl(u, i) : good.fetchImpl(u, i)) });
+    const phone = nextPhone();
+    const first = await c.call(startBody({ phone }), PO);
+    assert.equal(first.http, 502);
+    assert.equal(first.body.status, 'delivery-failed');
+    assert.match(first.body.message, /try again, or call 888-862-9456/);
+    assert.equal(first.setCookie, null, 'no session');
+    assert.equal(first.body.leadConversion, undefined);
+    assert.equal(await prodPrice(c), 401, 'no rates without a delivered lead');
+    const saved = await c.store.getLead(first.body.lead);
+    assert.equal(saved.phone, toE164US(phone), 'the lead is saved, never discarded');
+    assert.equal(saved.crm.delivered, false);
+    assert.ok((await c.store.events(first.body.lead)).some((e) => e.type === 'crm-delivery-failed'));
+    // The retry (same visit) re-sends that lead: no duplicate record.
+    down = false;
+    const retry = await c.call(startBody({ phone, retry: first.body.lead }), PO);
+    assert.equal(retry.http, 200);
+    assert.equal(retry.body.lead, first.body.lead, 'the same lead');
+    assert.equal(retry.body.leadConversion, true);
+    assert.equal(await prodPrice(c), 200);
+    const rec = await c.store.getLead(first.body.lead);
+    assert.equal(rec.crm.delivered, true);
+    assert.equal(rec.attempts, 2);
+    assert.deepEqual((await c.store.events(first.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivery-failed', 'contact-resubmitted', 'crm-delivered', 'lead-accepted']);
+    // A delivered lead, or another visit's lead, is never reused: a new lead.
+    const again = await c.call(startBody({ retry: first.body.lead }), PO);
+    assert.notEqual(again.body.lead, first.body.lead);
+    const stranger = client(PROD, { fetchImpl: good.fetchImpl });
+    const hijack = await stranger.call(startBody({ retry: again.body.lead }), PO);
+    assert.notEqual(hijack.body.lead, again.body.lead);
+  }
+  // Agent CRM not configured on production: never reported as accepted.
+  const none = [];
+  const nc = client({ VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } });
+  const r = await nc.call(startBody(), PO);
+  assert.equal(r.http, 502);
+  assert.deepEqual(none, []);
+  assert.ok((await nc.store.events(r.body.lead)).some((e) => e.type === 'crm-not-configured'));
 });
 
-test('Twilio Verify: official endpoints, Basic auth, E.164 To, sms channel', async () => {
-  const tw = fakeTwilio();
-  const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
-  const start = await c.call(startBody({ phone: '214-867-5309' }));
-  assert.equal(start.http, 200, JSON.stringify(start.body));
-  assert.equal(start.body.testMode, false);
-  assert.equal(start.body.masked, '(***) ***-5309');
-  assert.equal(tw.calls[0].url, `https://verify.twilio.com/v2/Services/${TWILIO.TWILIO_VERIFY_SERVICE_SID}/Verifications`);
-  assert.equal(tw.calls[0].auth, `Basic ${Buffer.from(`${TWILIO.TWILIO_ACCOUNT_SID}:tok`).toString('base64')}`);
-  assert.deepEqual(tw.calls[0].form, { To: '+12148675309', Channel: 'sms' });
-  const wrong = await c.call({ action: 'check', lead: start.body.lead, code: '111111' });
-  assert.equal(wrong.body.status, 'wrong-code');
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
-  assert.equal(ok.body.status, 'verified');
-  assert.equal(ok.body.leadVerified, true, 'a real SMS verification is the verified lead');
-  assert.equal(ok.body.leadConversion, true);
-  const repeat = await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
-  assert.equal(repeat.http, 410, 'the same lead cannot be verified (counted) twice');
-  assert.equal(repeat.body.leadVerified, undefined);
-  assert.equal(tw.calls.at(-1).url.endsWith('/VerificationCheck'), true);
-  assert.deepEqual(tw.calls.at(-1).form, { To: '+12148675309', Code: '654321' });
-  // v6.2: the saved lead holds the contact details, quote and consent.
-  const saved = await c.store.getLead(start.body.lead);
-  assert.equal(saved.phone, '+12148675309');
-  assert.equal(saved.consent.version, CONSENT_VERSION);
-  assert.deepEqual(saved.quoteAtSubmission, { age: 70, gender: 'female', tobacco: false, coverage: 10000 });
-  assert.equal('notify' in ok.body, false);
-  const again = await c.call({ action: 'session' });
-  assert.equal(again.body.status, 'verified');
+test('V3.3: a lead labeled TEST is never an advertising conversion; a repeat never counts twice; previews never count or reach the CRM', async () => {
+  for (const [name, counted] of [['TEST Lead Smoke', false], ['test mary', false], ['Testa Rossi', true]]) {
+    const crm = fakeCrm();
+    const c = client(PROD, { fetchImpl: crm.fetchImpl });
+    const start = await c.call(startBody({ firstName: name }), PO);
+    assert.equal(start.http, 200, name);
+    assert.equal(start.body.leadConversion, counted, name);
+    if (!counted) assert.ok(crm.calls[2].body.body.startsWith('TEST LEAD'), 'the CRM note says TEST');
+  }
+  const none = [];
+  const p = client({ ...PREVIEW, AGENT_CRM_TOKEN: 't', AGENT_CRM_LOCATION_ID: 'l' }, { fetchImpl: async (u) => { none.push(u); return Response.json({}); } });
+  const pr = await p.call(startBody());
+  assert.equal(pr.http, 200);
+  assert.equal(pr.body.testMode, true);
+  assert.equal(pr.body.leadConversion, false, 'preview test mode never counts a lead');
+  assert.deepEqual(none, [], 'previews never send to Agent CRM');
+  assert.equal((await p.store.getLead(pr.body.lead)).mode, 'test');
+});
+
+test('V3.3: without the lead store or session key the funnel is unavailable (503, with the phone number)', async () => {
+  const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, 'x-quote-visit': 'v'.repeat(20) }, body: JSON.stringify(startBody()) }), PREVIEW, { store: null });
+  assert.equal(res.status, 503);
+  assert.match((await res.json()).message, /888-862-9456/);
 });
 
 test('pricing gate: no session, forged, tampered or expired tokens get no prices', async () => {
@@ -278,10 +226,8 @@ test('pricing gate: no session, forged, tampered or expired tokens get no prices
   assert.equal((await c.price(undefined, { cookieValue: `${COOKIE}=${forged}` })).http, 401, 'wrong key');
   const noRecord = sign(key, { sid: 'not-in-store', lid: 'y', exp: Date.now() + 10000 });
   assert.equal((await c.price(undefined, { cookieValue: `${COOKIE}=${noRecord}` })).http, 401, 'signed but no server session');
-  const start = await c.call(startBody());
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const ok = await c.call(startBody());
   assert.equal(ok.body.status, 'verified');
-  assert.equal(ok.body.leadVerified, false, 'preview test mode never counts a lead');
   assert.equal(ok.body.leadConversion, false, 'preview test mode never counts a lead');
   assert.match(ok.setCookie, /HttpOnly; Secure; SameSite=Strict/);
   assert.match(ok.setCookie, /Max-Age=43200;/, '12-hour quote access from the unlock');
@@ -301,7 +247,7 @@ test('12-hour quote access: fixed from the original unlock; returning never rest
   let t = Date.now();
   const c = client(PREVIEW, { now: () => t });
   const start = await c.call(startBody());
-  const ok = await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
+  const ok = start;
   const unlockAt = t;
   assert.equal(ok.body.expiresAt, unlockAt + SESSION_MS);
   t = unlockAt + 6 * 3600 * 1000;
@@ -316,10 +262,9 @@ test('12-hour quote access: fixed from the original unlock; returning never rest
   assert.ok(await c.store.getLead(start.body.lead), 'the lead record is kept');
 });
 
-test('free repricing after verification needs no new code', async () => {
+test('free repricing after the submission', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   for (const q of [{ age: 55, gender: 'male', tobacco: true, coverage: 5000 }, { age: 80, gender: 'female', tobacco: false, coverage: 25000 }, { age: 89, gender: 'male', tobacco: false, coverage: 12000 }]) {
     const r = await c.price(q);
     assert.equal(r.http, 200);
@@ -331,7 +276,6 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   const c = client(PREVIEW);
   const start = await c.call(startBody({ consent: false, consentVersion: undefined }));
   const id = start.body.lead;
-  await c.call({ action: 'check', lead: id, code: TEST_CODE });
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
   assert.equal(apply.body.saved, true);
@@ -341,11 +285,9 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.equal(r.firstName, 'Mary');
   assert.match(r.phone, /^\+1\d{10}$/);
   assert.equal(r.state, 'Ohio');
-  assert.ok(r.submittedAt && r.verification.verifiedAt && r.verification.verifiedAt >= r.submittedAt);
-  assert.equal(r.verification.status, 'approved');
+  assert.ok(r.submittedAt);
+  assert.deepEqual(r.verification, { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null });
   assert.deepEqual([r.consent.given, r.consent.action, r.consent.text], [false, 'left consent box unchecked', null]);
-  assert.equal(r.verifyNotice.version, VERIFY_NOTICE_VERSION);
-  assert.equal(r.verifyNotice.text, "We'll text a 6-digit verification code to (***) ***-XXXX. Message and data rates may apply.");
   assert.equal(r.source.utmSource, 'google');
   assert.equal(r.client.userAgent, 'TestAgent/1.0');
   assert.ok(r.client.ip);
@@ -353,7 +295,7 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.equal(r.applications[0].category, 'Guaranteed Acceptance Rate');
   assert.equal(r.applications[0].monthlyPremium, apply.body.monthlyPremium);
   const types = (await c.store.events(id)).map((e) => e.type);
-  assert.deepEqual(types, ['sms-sent', 'verified', 'apply-now']);
+  assert.deepEqual(types, ['contact-submitted', 'lead-accepted', 'apply-now']);
   // Sessions expire; evidence doesn't (no TTL on the record or events).
   assert.equal(await redis.command(['TTL', `qe:preview:lead:${id}`]), -1);
   assert.equal(await redis.command(['TTL', `qe:preview:ev:${id}`]), -1);
@@ -370,30 +312,13 @@ test('consent given: exact text and version stored; unknown versions refused', a
   assert.equal((await c.call(startBody({ consent: 'yes' }))).http, 400);
 });
 
-test('code attempts, resend cooldown and resend cap', async () => {
-  let t = Date.now();
-  const c = client(PREVIEW, { now: () => t });
-  const start = await c.call(startBody());
-  const id = start.body.lead;
-  assert.equal((await c.call({ action: 'resend', lead: id })).body.status, 'cooldown');
-  for (let i = 0; i < 3; i++) {
-    t += RESEND_COOLDOWN_MS + 1;
-    assert.equal((await c.call({ action: 'resend', lead: id })).body.status, 'sent');
-  }
-  t += RESEND_COOLDOWN_MS + 1;
-  assert.equal((await c.call({ action: 'resend', lead: id })).http, 429, 'resend cap');
-  for (let i = 0; i < MAX_ATTEMPTS; i++) assert.equal((await c.call({ action: 'check', lead: id, code: '000000' })).body.status, 'wrong-code');
-  assert.equal((await c.call({ action: 'check', lead: id, code: TEST_CODE })).body.status, 'too-many-attempts', 'even the right code is refused after 5 wrong ones');
-  assert.equal((await c.call({ action: 'check', lead: 'not-a-lead', code: TEST_CODE })).http, 410);
-});
-
-test('SMS-pumping protection: per-IP and per-phone limits', async () => {
+test('abuse and duplicate protection: per-IP and per-phone submission limits', async () => {
   const c = client(PREVIEW, { ip: '10.9.9.9' });
-  for (let i = 0; i < SMS_LIMITS.ipHour; i++) assert.equal((await c.call(startBody())).http, 200);
+  for (let i = 0; i < SUBMIT_LIMITS.ipHour; i++) assert.equal((await c.call(startBody())).http, 200);
   assert.equal((await c.call(startBody())).http, 429, 'IP hourly limit');
   const phone = '214-867-0001';
   let last;
-  for (let i = 0; i <= SMS_LIMITS.phoneHour; i++) last = await client(PREVIEW).call(startBody({ phone }));
+  for (let i = 0; i <= SUBMIT_LIMITS.phoneHour; i++) last = await client(PREVIEW).call(startBody({ phone }));
   assert.equal(last.http, 429, 'phone hourly limit across IPs');
 });
 
@@ -429,7 +354,6 @@ function fakeAetnaQuestions() {
 async function verifiedClient() {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const quoteClient = { ...c, raw: redis.store };
   const call = async (body) => {
     const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': c.visit }, body: JSON.stringify(body) }),
@@ -508,7 +432,6 @@ test('carrier questions one at a time; answers kept; a declining YES stops and f
 test('repricing updates the lead\'s current quote; session restore returns it', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const q = { age: 77, gender: 'male', tobacco: true, coverage: 15000 };
   const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': c.visit }, body: JSON.stringify(q) }),
     { ...PREVIEW, HEALTH_SEARCH_SECRET: SECRET }, {
@@ -524,31 +447,29 @@ test('repricing updates the lead\'s current quote; session restore returns it', 
 test('a verified session works only for the visit (tab) it was verified in', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   assert.equal((await c.price()).http, 200, 'same visit');
   assert.equal((await c.price(undefined, { visitId: 'another-visit-0000001' })).http, 401, 'a new tab or visit reusing the cookie');
   assert.equal((await c.price(undefined, { visitId: null })).http, 401, 'no visit id');
   // The session action used on page load: a new visit is not verified.
   const other = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, cookie: c.cookie, 'x-quote-visit': 'another-visit-0000002' }, body: JSON.stringify({ action: 'session' }) }), PREVIEW, { store: c.store });
   assert.equal((await other.json()).status, 'not-verified');
-  // Verifying needs a visit id.
-  const noVisit = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN }, body: JSON.stringify({ action: 'check', lead: start.body.lead, code: TEST_CODE }) }), PREVIEW, { store: c.store });
+  // Opening a session needs a visit id.
+  const noVisit = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN }, body: JSON.stringify(startBody()) }), PREVIEW, { store: c.store });
   assert.equal(noVisit.status, 400);
 });
 
 test('Start New Quote ends the session but keeps the lead, its consent record and events', async () => {
   const c = client(PREVIEW);
   const start = await c.call(startBody());
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const before = await c.store.getLead(start.body.lead);
   const end = await c.call({ action: 'end-session' });
   assert.equal(end.body.status, 'ended');
   assert.match(end.setCookie, /Max-Age=0/);
-  assert.equal((await c.price()).http, 401, 'prices need a new verification');
+  assert.equal((await c.price()).http, 401, 'prices need a new submission');
   const after = await c.store.getLead(start.body.lead);
   assert.deepEqual(after.consent, before.consent);
-  assert.equal(after.verification.status, 'approved');
-  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['sms-sent', 'verified', 'quote-restarted']);
+  assert.equal(after.verification.phoneVerified, false);
+  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'lead-accepted', 'quote-restarted']);
   // A repeat request from the same phone is a new lead (the CRM handles duplicates); consent is asked again.
   const again = await c.call(startBody({ phone: '214-867-5309', consent: false, consentVersion: undefined }));
   assert.equal(again.http, 200);
@@ -562,7 +483,6 @@ test('intended use is required, stored with the lead, in the notifications, Appl
   assert.equal((await c.call(startBody({ intendedUse: undefined }))).http, 400);
   assert.equal((await c.call(startBody({ intendedUse: 'vacation' }))).http, 400);
   const start = await c.call(startBody({ intendedUse: 'burial' }));
-  await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE });
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
   await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' });
@@ -572,13 +492,6 @@ test('intended use is required, stored with the lead, in the notifications, Appl
   assert.equal(r.intakes['guaranteed-acceptance'].intendedUse, 'Burial Expenses');
   // Same prices whatever the answer (the pricing endpoint only accepts the four rating inputs).
   assert.equal((await c.price({ age: 65, gender: 'male', tobacco: false, coverage: 10000, intendedUse: 'burial' })).http, 400);
-});
-
-test('intended use is saved with the lead (real Twilio mode)', async () => {
-  const tw = fakeTwilio();
-  const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
-  const start = await c.call(startBody({ phone: '214-867-5390', intendedUse: 'other' }));
-  assert.deepEqual((await c.store.getLead(start.body.lead)).intendedUse, { value: 'other', label: 'Other Expenses' });
 });
 
 test('Call to Get Approved tap (v3.7): verified session only, server price and official product name recorded, no completed call claimed', async () => {
@@ -613,38 +526,35 @@ test('one "Your Name" field (v4.5): a first name or a full name is accepted and 
 });
 
 test('v5.8: the article-sidebar entry is stored with the lead and is saved with the lead', async () => {
-  const tw = fakeTwilio();
-  const c = client(TWILIO, { fetchImpl: tw.fetchImpl });
+  const c = client(PREVIEW);
   const source = { page: 'https://funeralfunds.com/free-quote/', utmSource: 'newsletter', entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'female', entryAt: '2026-11-03T22:00:00.000Z' };
   const start = await c.call(startBody({ source }));
-  await c.call({ action: 'check', lead: start.body.lead, code: '654321' });
   const rec = await c.store.getLead(start.body.lead);
   assert.deepEqual({ ...rec.source }, source);
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.saved, true);
   assert.equal((await c.store.getLead(start.body.lead)).applications[0].categoryId, 'guaranteed-acceptance');
   // Unknown entry types, genders and non-URL origins are dropped, never stored.
-  const bad = await client(TWILIO, { fetchImpl: tw.fetchImpl }).call(startBody({ source: { entryType: 'popup', entryGender: 'x', originUrl: 'javascript:alert(1)', originTitle: 'T' } }));
+  const bad = await client(PREVIEW).call(startBody({ source: { entryType: 'popup', entryGender: 'x', originUrl: 'javascript:alert(1)', originTitle: 'T' } }));
   const badRec = await c.store.getLead(bad.body.lead);
   assert.deepEqual({ ...badRec.source }, { originTitle: 'T' });
   // A direct entry is labelled as one.
-  const d = client(TWILIO, { fetchImpl: tw.fetchImpl });
+  const d = client(PREVIEW);
   const ds = await d.call(startBody({ source: { entryType: 'direct', entryAt: '2026-11-03T22:00:00.000Z' } }));
   assert.equal((await d.store.getLead(ds.body.lead)).source.entryType, 'direct');
 });
 
-test('v6.2: the funnel saves the lead and makes no outbound request (no Formspark, Turnstile or email service)', async () => {
+test('v6.2: the funnel saves the lead and makes no outbound request but Agent CRM (no Formspark, Turnstile, SMS or email service)', async () => {
   const calls = [];
   const realFetch = globalThis.fetch;
   globalThis.fetch = async (url, ...rest) => { calls.push(String(url)); return realFetch(url, ...rest); };
   try {
-    const PROD = { VERCEL_ENV: 'production', QUOTE_SESSION_SECRET: SECRET, QUOTE_PUBLIC_TEST_CODE: 'on' };
-    const PO = { origin: 'https://funeralfunds.com' };
-    const c = client(PROD);
+    const crm = fakeCrm();
+    const c = client(PROD, { fetchImpl: crm.fetchImpl });
     const source = { entryType: 'article-sidebar', originTitle: 'Cancer Burial Insurance', originUrl: 'https://funeralfunds.com/burial-insurance/cancer/', entryGender: 'male', entryAt: '2026-11-03T22:00:00.000Z' };
     const start = await c.call(startBody({ source }), PO);
     assert.equal(start.http, 200);
-    assert.equal((await c.call({ action: 'check', lead: start.body.lead, code: TEST_CODE }, PO)).body.status, 'verified');
+    assert.equal(start.body.status, 'verified');
     const apply = await c.call({ action: 'apply', category: 'lowest-preferred', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } }, PO);
     assert.equal(apply.body.status, 'ok');
     assert.equal(apply.body.saved, true);
@@ -654,25 +564,26 @@ test('v6.2: the funnel saves the lead and makes no outbound request (no Formspar
     assert.equal(rec.consent.given, true);
     assert.equal(rec.applications.length, 1);
     assert.deepEqual(calls, [], 'no outbound request');
+    assert.ok(crm.calls.every((x) => x.url.startsWith('https://services.leadconnectorhq.com/')), 'only Agent CRM');
   } finally {
     globalThis.fetch = realFetch;
   }
 });
 
-test('direct preview access: preview-sample works with or without Twilio (no Twilio or CRM call), never in production', async () => {
-  for (const env of [PREVIEW, { ...TWILIO, AGENT_CRM_TOKEN: 'tok', AGENT_CRM_LOCATION_ID: 'loc' }]) {
-    const tw = fakeTwilio();
+test('direct preview access: preview-sample makes no CRM call, never in production', async () => {
+  for (const env of [PREVIEW, { ...PREVIEW, AGENT_CRM_TOKEN: 'tok', AGENT_CRM_LOCATION_ID: 'loc' }]) {
+    const tw = fakeCrm();
     const c = client(env, { fetchImpl: tw.fetchImpl });
     const r = await c.call({ action: 'preview-sample' });
     assert.equal(r.http, 200);
     assert.equal(r.body.status, 'verified');
-    assert.equal(tw.calls.length, 0, 'an SMS or CRM request was made');
+    assert.equal(tw.calls.length, 0, 'a CRM request was made');
     assert.equal((await c.price()).http, 200, 'prices for the sample session');
     const lead = await c.store.getLead('00000000-0000-4000-8000-000000000000');
     assert.equal(lead.mode, 'preview-sample');
     assert.equal(lead.phone, null);
   }
-  const prod = client({ ...TWILIO, VERCEL_ENV: 'production' });
+  const prod = client(PROD);
   const p = await prod.call({ action: 'preview-sample' }, { origin: 'https://funeralfunds.com' });
   assert.equal(p.http, 404);
   assert.equal(p.setCookie, null);

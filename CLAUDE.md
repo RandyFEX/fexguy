@@ -43,7 +43,10 @@ is in place; see src/content/README.md for how pages were migrated.
   it appears only on the ad landing pages /roku/ and (Randy, October 2026)
   /facebook/ (`tel:8886564648`, noindex, not linked from navigation or other
   pages) and must never appear anywhere else on the site (`npm run verify`
-  allows it only there). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
+  allows it only there). One exception (Randy, November 2026, V3.3, his
+  explicit instruction): the "Direct Contact: 888-656-4648" line in the
+  /free-quote/ contact step's "Why Funeral Funds?" list (build-time HTML only;
+  that page's header and cards keep 888-862-9456). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
 - **Header phone (Randy, November 2026, V14.0):** Every upper-right phone
   contact area on Funeral Funds pages must display Speak With a Licensed
@@ -1420,7 +1423,7 @@ scope protection wins.
   the page HTML or in Twilio mode); it replaces the masked-number SMS
   sentence in the Unlock panel, shows under "Enter the 6-digit code", and
   Resend Code is hidden (no message is sent). Test:
-  tests/quote/funnel-temp-code.browser.mjs (in `npm run test:quote:browser`). Consent box optional and unchecked;
+  tests/quote/funnel-temp-code.browser.mjs (removed in V3.3). Consent box optional and unchecked;
   its wording (`server/quote/consent.js`, version ff-quote-consent-v3-2026-11;
   Randy's opening sentence, November 2026, replacing v2): "I welcome help
   from Funeral Funds and agree to receive calls and texts at the number I
@@ -1439,6 +1442,30 @@ scope protection wins.
   the lead record; /help/ counts the conversion once `apply` returns
   `saved: true`. The unit and browser tests fail on any Formspark,
   Turnstile or Resend request from the funnel.
+  **V3.3 (Randy, November 2026; supersedes everything above about Twilio,
+  SMS codes, the Unlock Your Rates panel, the temporary access code 123456
+  and verification-based conversions):** no SMS verification anywhere in
+  the visitor flow (server/quote/twilio.js removed; no `check`/`resend`
+  actions). Seven steps; step 7 "Your Contact Information" keeps the
+  summary, then two columns from 48rem (one column on phones in this
+  order): Randy's approved photo, "Randy VanderVaate", "Independent Life
+  Insurance Broker · Founder of Funeral Funds", "Funeral Funds isn't a call
+  center. When you call, you deal directly with Randy.", First Name, Mobile
+  Phone Number, the unchanged optional consent box, SEE MY RATES and Our
+  Promise; then "Why Funeral Funds?" (Independent insurance agent; Compare
+  multiple insurance companies; Personal assistance with your coverage;
+  Direct Contact: 888-656-4648 as a tel: link). SEE MY RATES (`start`)
+  saves the lead, delivers it to Agent CRM on production and only then opens
+  the quote session and shows the three cards; a failed or unconfigured
+  delivery keeps the lead, shows a recoverable error with every input kept,
+  and the retry re-delivers the same lead (no duplicate). The record and CRM
+  note say the phone is not verified. Conversion (GA4 generate_lead + Meta
+  Lead) once per lead when production accepts it (never TEST names or
+  previews). GA4 events: quote_contact_submit, quote_lead_accepted,
+  quote_pricing_view, quote_call_click, quote_apply_now (the green Text Us
+  With Questions handoff) and quote_text_click (the /facebook/ text-message
+  or QR option, sent by tracking.ts; the /facebook/ handoff code is
+  unchanged). Test: tests/quote/funnel-direct.browser.mjs.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

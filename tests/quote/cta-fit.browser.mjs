@@ -3,7 +3,7 @@
 // button "Text Us With Questions" (message icon), same actions as before.
 // Each icon and label stays on one line inside the unchanged buttons at 320,
 // 375, 390, 430, the three-column range and desktop. Built site + real
-// handlers in test mode (tests/quote/funnel-server.mjs; code 123456).
+// handlers in test mode (tests/quote/funnel-server.mjs).
 //   node tests/quote/cta-fit.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer } from './funnel-server.mjs';
@@ -24,7 +24,7 @@ const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
 
-// One verified visit; the viewport is then resized (one verification only).
+// One quote visit; the viewport is then resized (one submission only).
 const ctx = await browser.newContext({ viewport: { width: 390, height: 900 } });
 const page = await ctx.newPage();
 await page.goto(`${srv.base}/free-quote/`);
@@ -35,10 +35,6 @@ await page.fill('#qf-first', 'Test');
 await page.fill('#qf-phone', '214-867-5309');
 await page.click('[data-qf-contact] button[type="submit"]');
 await page.waitForSelector('[data-step="8"]:not([hidden])');
-await page.click('[data-qf-send]');
-await page.waitForSelector('[data-qf-verify]:not([hidden])');
-await page.fill('#qf-code', '123456');
-await page.click('[data-qf-verify-btn]');
 await page.waitForFunction(() => [...document.querySelectorAll('.qf-card')].every((c) => c.dataset.state === 'ok'), null, { timeout: 8000 });
 
 for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {

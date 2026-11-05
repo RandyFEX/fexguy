@@ -9,11 +9,11 @@
 //      tags are kept)
 //   3. POST /contacts/:id/notes the quote details, estimated monthly rates,
 //      attribution, consent and verification status, and the lead id
-// Without the variables nothing is sent. A failure never stops the visitor
-// (rates still unlock); the outcome is logged on the lead's events so a
-// failed delivery can be resent. One delivery per lead (at contact
-// submission, when the lead id is created). The token is never logged,
-// returned or sent to the browser.
+// Without the variables nothing is sent. V3.3 (Randy, November 2026): on the
+// production deployment the rates open only after a successful delivery; a
+// failure keeps the saved lead, is logged on its events, and the visitor's
+// retry re-delivers the same lead (server/quote/handler.js 'start'). The
+// token is never logged, returned or sent to the browser.
 
 export const CRM_TAG = 'Funeral Funds - Website Quote';
 const API = 'https://services.leadconnectorhq.com';
@@ -64,7 +64,8 @@ export function crmNote(record, rates = []) {
     s.landingPage ? `Landing page: ${s.landingPage}` : null,
     s.originUrl ? `Article: ${s.originUrl}` : null,
     record.consent?.given ? `Consent to calls/texts: Yes (${record.consent.at}, ${record.consent.version})` : 'Consent to calls/texts: Not given (box left unchecked)',
-    `Phone verification at submission: ${v.provider === 'temporary-public-test-code' ? 'not SMS-verified (temporary access code)' : 'pending'}`,
+    // V3.3: no SMS verification; the number is exactly as the visitor typed it.
+    `Phone verification: ${v.provider === 'temporary-public-test-code' ? 'not SMS-verified (temporary access code)' : 'not verified (no SMS verification)'}`,
   ];
   return lines.filter(Boolean).join('\n');
 }

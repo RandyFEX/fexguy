@@ -2,7 +2,7 @@
 // (desktop sticky sidebar, phone in-article copy, CALL NOW)
 // hands the Male/Female choice and the article's attribution to the funnel on
 // /free-quote/. Built site + real handlers (tests/quote/funnel-server.mjs,
-// Preview test mode: code 123456, no SMS, Formspark and Cloudflare
+// Preview test mode: no SMS, no Agent CRM, Formspark and Cloudflare
 // intercepted, nothing sent). Run after a build:
 //   node tests/quote/sidebar-entry.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
@@ -54,10 +54,6 @@ async function finish(page, phone) {
   await page.fill('#qf-phone', phone);
   await page.check('[data-qf-consent]');
   await page.click('[data-qf-contact] button[type="submit"]');
-  await page.click('[data-qf-send]');
-  await page.waitForSelector('[data-qf-verify]:not([hidden])');
-  await page.fill('#qf-code', '123456');
-  await page.click('[data-qf-verify-btn]');
   await page.waitForFunction(() => [...document.querySelectorAll('.qf-card')].every((c) => c.dataset.state === 'ok'), null, { timeout: 8000 });
 }
 

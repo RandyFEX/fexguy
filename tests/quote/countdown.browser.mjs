@@ -1,7 +1,7 @@
 // Two-stage countdown timers V2.0 (Randy, November 2026): the /free-quote/
 // results line ("Offer available for: 10:00") and the /facebook/ Ready to
 // Apply line ("Please respond within: 2:00"). Built site + real handlers
-// in test mode (tests/quote/funnel-server.mjs; code 123456, nothing sent),
+// in test mode (tests/quote/funnel-server.mjs; nothing sent),
 // with Playwright's fake clock. Needs a build and the private rate tables.
 //   node tests/quote/countdown.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
@@ -43,12 +43,6 @@ async function verified(opts) {
   await page.fill('#qf-phone', '214-867-5309');
   await page.click('[data-qf-contact] button[type="submit"]');
   await page.waitForSelector('[data-step="8"]:not([hidden])');
-  // The timer is not shown before the prices are.
-  assert(await page.isHidden('[data-qf-results-lead]'), 'countdown shown before verification');
-  await page.click('[data-qf-send]');
-  await page.waitForSelector('[data-qf-verify]:not([hidden])');
-  await page.fill('#qf-code', '123456');
-  await page.click('[data-qf-verify-btn]');
   await ready(page);
   return { ctx, page };
 }

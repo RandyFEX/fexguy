@@ -5,10 +5,11 @@
 // (robots, social tags, JSON-LD, canonical) is the migrated WordPress page's;
 // v5.9 (Randy) replaced its title everywhere it appeared (title, og:title,
 // twitter:title, JSON-LD names; the breadcrumb label is unchanged); noindex keeps it out of the sitemap, llms.txt and site
-// search. A one-question-per-screen quote funnel with Twilio phone
-// verification. Prices come only from the server after the server has
-// verified the phone (api/quote.js, api/price-explorer.js); this page and its
-// script hold no rate tables, rates, keys or Twilio credentials.
+// search. A one-question-per-screen quote funnel. V3.3 (Randy, November 2026):
+// no SMS verification; SEE MY RATES saves the lead, delivers it to Agent CRM
+// (production) and opens the rates. Prices come only from the server for that
+// visit's quote session (api/quote.js, api/price-explorer.js); this page and
+// its script hold no rate tables, rates or keys.
 // Representative (Texas) rates are shown for every state; state is lead
 // information only.
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -19,7 +20,7 @@ import { HEADER_PHONE_ICON_PATH, PAGE_PHONES } from '@/config/phones';
 import { lead } from '@/config/lead';
 import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../server/rates/pricing-categories.js';
-import { CONSENT_TEXT, CONSENT_VERSION, VERIFY_NOTICE_LEAD, VERIFY_NOTICE_RATES, VERIFY_NOTICE_VERSION } from '../../server/quote/consent.js';
+import { CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -32,7 +33,11 @@ const cards = [
 const LOGO_STAND_INS = ['Insurance Co.', 'Life Company', 'Insurance Co.'];
 const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
 const phone = PAGE_PHONES.default;
-const TOTAL = 8;
+// The "Direct Contact" line in the contact step's "Why Funeral Funds?" list
+// (Randy, November 2026, V3.3: exactly 888-656-4648, his explicit instruction;
+// build-time HTML only). The header and the cards keep 888-862-9456.
+const directContact = PAGE_PHONES.ctv;
+const TOTAL = 7;
 
 const title = "Free Burial Insurance Quotes | Compare Rates | Funeral Funds";
 const robots = "nofollow, noindex";
@@ -82,7 +87,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     data-page-reason="Interactive quote funnel (noindex)."
     data-quote-funnel
     data-consent-version={CONSENT_VERSION}
-    data-verify-version={VERIFY_NOTICE_VERSION}
   >
     <h1 class="visually-hidden">Request Life Insurance Quote</h1>
 
@@ -94,7 +98,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         </div>
         <div class="qf-progress" aria-hidden="true" data-qf-progress-wrap><span class="qf-progress__bar" data-qf-progress></span></div>
 
-        <p class="qf-test" data-qf-test hidden><strong>TEST MODE (preview only):</strong> no text message is sent. Use code 123456.</p>
+        <p class="qf-test" data-qf-test hidden><strong>TEST MODE (preview only):</strong> leads are saved as test records and are not sent to Agent CRM.</p>
 
         <!-- Step 1 -->
         <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
@@ -168,27 +172,60 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             <div><dt>Tobacco</dt><dd data-qf-sum="tobacco"></dd></div>
             <div><dt>Coverage</dt><dd data-qf-sum="coverage"></dd></div>
           </dl>
-          <form class="qf-form" data-qf-contact novalidate>
-            <div class="qf-field">
-              <label class="qf-label" for="qf-first">Your Name</label>
-              <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="name" maxlength="60" required aria-describedby="qf-first-error" />
-              <p class="qf-error" id="qf-first-error" hidden></p>
+          <!-- V3.3 (Randy, November 2026): two columns from 48rem (Randy and the
+               form left, "Why Funeral Funds?" right); one column on phones in
+               the order photo, name, phone, SEE MY RATES, then the trust list. -->
+          <div class="qf-contact">
+            <div class="qf-contact__main">
+              <div class="qf-agent">
+                <img
+                  class="qf-agent__photo"
+                  src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png"
+                  alt="Randy VanderVaate, founder of Funeral Funds"
+                  width="500"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="qf-agent__text">
+                  <p class="qf-agent__name">Randy VanderVaate</p>
+                  <p class="qf-agent__role">Independent Life Insurance Broker <span aria-hidden="true">&middot;</span> Founder of Funeral Funds</p>
+                  <p class="qf-agent__intro">Funeral Funds isn’t a call center. When you call, you deal directly with Randy.</p>
+                </div>
+              </div>
+              <form class="qf-form" data-qf-contact novalidate>
+                <div class="qf-field">
+                  <label class="qf-label" for="qf-first">First Name</label>
+                  <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="given-name" maxlength="60" required aria-describedby="qf-first-error" />
+                  <p class="qf-error" id="qf-first-error" hidden></p>
+                </div>
+                <div class="qf-field">
+                  <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
+                  <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
+                  <p class="qf-error" id="qf-phone-error" hidden></p>
+                </div>
+                <label class="qf-consent">
+                  <input type="checkbox" name="consent" data-qf-consent />
+                  <span>{CONSENT_TEXT}</span>
+                </label>
+                <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-submit>SEE MY RATES</button>
+                <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
+                <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
+              </form>
             </div>
-            <div class="qf-field">
-              <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
-              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
-              <p class="qf-error" id="qf-phone-error" hidden></p>
-            </div>
-            <label class="qf-consent">
-              <input type="checkbox" name="consent" data-qf-consent />
-              <span>{CONSENT_TEXT}</span>
-            </label>
-            <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
-            <button class="btn qf-continue qf-btn-cta" type="submit">See My Instant Quotes</button>
-          </form>
+            <aside class="qf-why" aria-labelledby="qf-why-title">
+              <h3 class="qf-why__title" id="qf-why-title">Why Funeral Funds?</h3>
+              <ul class="qf-why__list" role="list">
+                <li>Independent insurance agent</li>
+                <li>Compare multiple insurance companies</li>
+                <li>Personal assistance with your coverage</li>
+                <li>Direct Contact: <a href={directContact.href} data-qf-direct-call>{directContact.display}</a></li>
+              </ul>
+            </aside>
+          </div>
         </section>
 
-        <!-- Step 8: the pricing screen (blurred until the phone is verified, then live) -->
+        <!-- Step 8: the pricing screen (shown once the lead is accepted; the cards load in place) -->
         <section class="qf-step qf-results" data-step="8" data-locked="true" aria-labelledby="qf-s8" hidden>
           <h2 class="qf-q visually-hidden" id="qf-s8" tabindex="-1" data-qf-results-title>Your quote results</h2>
           <p class="qf-results-lead" data-qf-results-lead hidden>Let us check your lowest rates from 30+ insurance companies. Offer available for: <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
@@ -201,7 +238,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
                 <div class="qf-card__cat"><h3 class="qf-card__label">{c.label}</h3></div>
                 <p class="qf-card__plan" data-qf-plan><span class="qf-blur" aria-hidden="true">{PLAN_STAND_INS[i]}</span></p>
                 <p class="qf-card__price">
-                  <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Price shown after you verify your phone number</span></span>
+                  <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Loading price</span></span>
                   <span class="qf-card__per">per month</span>
                 </p>
                 <p class="qf-card__timing" data-qf-timing hidden></p>
@@ -210,42 +247,11 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
                   <svg aria-hidden="true" width="18" height="18" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
                   <span>Call Us With Questions</span>
                 </a>
-                <button class="btn qf-card__apply" type="button" data-qf-apply disabled><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Unlock to See Rates</span></button>
+                <button class="btn qf-card__apply" type="button" data-qf-apply disabled><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Text Us With Questions</span></button>
               </article>
             ))}
           </div>
 
-          <section class="qf-unlock" data-qf-unlock aria-labelledby="qf-unlock-title">
-            <h3 class="qf-unlock__title" id="qf-unlock-title" tabindex="-1"><span class="qf-unlock__t-wide">Unlock Your Rates</span><span class="qf-unlock__t-phone">Your Rates Are Ready!</span></h3>
-            <p class="qf-unlock__ready">Verify your phone number by text to reveal your prices.</p>
-            <form class="qf-form qf-form--compact" data-qf-send-form novalidate>
-              <div class="qf-field" data-qf-phone-field hidden>
-                <label class="qf-label" for="qf-unlock-phone">Mobile Phone Number</label>
-                <input class="qf-input" id="qf-unlock-phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-unlock-phone-error qf-verify-note qf-verify-rates" />
-                <p class="qf-error" id="qf-unlock-phone-error" hidden></p>
-              </div>
-              <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-send data-qf-unlock-part="send">Text Me My Access Code</button>
-              <p class="qf-unlock__explain" id="qf-verify-note" data-qf-phone-summary data-qf-unlock-part="explain">{VERIFY_NOTICE_LEAD}&nbsp;<strong data-qf-phone-show></strong>.</p>
-              <p class="qf-unlock__explain" data-qf-temp-note hidden></p>
-              <p class="qf-unlock__change" data-qf-unlock-part="change"><button class="qf-link" type="button" data-qf-edit-phone>Change Number</button></p>
-              <p class="qf-unlock__rates" id="qf-verify-rates" data-qf-unlock-part="rates">{VERIFY_NOTICE_RATES}</p>
-              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-send-status></p>
-            </form>
-            <form class="qf-form qf-form--compact" data-qf-verify novalidate hidden>
-              <h4 class="qf-code-title" data-qf-code-title>Enter the 6-digit code</h4>
-              <p class="qf-unlock__explain" data-qf-temp-note hidden></p>
-              <label class="visually-hidden" for="qf-code">6-digit code</label>
-              <div class="qf-code-row">
-                <input class="qf-input qf-code" id="qf-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="\d{6}" placeholder="000000" required />
-                <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-verify-btn>Verify Code</button>
-              </div>
-              <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-verify-status></p>
-              <div class="qf-links">
-                <button class="qf-link" type="button" data-qf-resend>Resend Code</button>
-                <button class="qf-link" type="button" data-qf-change>Change Number</button>
-              </div>
-            </form>
-          </section>
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
 
           <p class="qf-adjust-intro" data-qf-adjust-intro hidden>Adjust Your Quote Below</p>
@@ -407,19 +413,37 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     border: 2px solid #8a8f8b; border-radius: var(--radius); background: #fff; color: var(--color-text);
   }
   .qf-select { max-width: 30rem; display: block; margin-inline: auto; }
-  .qf-code { font-size: 2rem; letter-spacing: 0.4em; text-align: center; }
   .qf-note { color: var(--color-text-muted); margin: 0; text-align: center; }
   .qf-consent { display: flex; gap: var(--space-3); align-items: flex-start; font-size: 1rem; line-height: 1.4; cursor: pointer; }
-  /* v4.1: the contact form is wider on desktop so the consent text takes
-     about three lines at the same readable 16px. */
-  @media (min-width: 48rem) { .qf-form[data-qf-contact] { max-width: 40rem; } }
+  .qf-form[hidden], .qf-field[hidden] { display: none; }
+  /* V3.3 contact step: Randy and the form, then "Why Funeral Funds?"; side by side from 48rem. */
+  .qf-contact { display: grid; gap: var(--space-4); max-width: 52rem; margin-inline: auto; }
+  @media (min-width: 48rem) { .qf-contact { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: var(--space-6); align-items: start; } }
+  .qf-contact__main { display: grid; gap: var(--space-4); min-width: 0; }
+  .qf-contact .qf-form { max-width: none; margin: 0; gap: var(--space-3); }
+  .qf-agent { display: flex; gap: var(--space-3); align-items: center; }
+  .qf-agent__photo { flex: none; width: 5.5rem; height: 5.5rem; border-radius: 50%; border: 3px solid #e3e8e5; object-fit: cover; }
+  .qf-agent__text { min-width: 0; }
+  .qf-agent__text p { margin: 0; }
+  .qf-agent__name { font-size: 1.25rem; font-weight: 800; line-height: 1.2; color: #173f35; }
+  .qf-agent__role { font-size: 0.9375rem; font-weight: 700; line-height: 1.3; color: var(--color-text-muted); }
+  .qf-agent__intro { margin-top: var(--space-1) !important; font-size: 1rem; line-height: 1.4; color: var(--color-text); }
+  .qf-why { background: var(--color-surface); border-radius: 0.75rem; padding: var(--space-4); }
+  .qf-why__title { margin: 0 0 var(--space-3); font-size: 1.25rem; line-height: 1.2; color: #173f35; }
+  .qf-why__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+  .qf-why__list li { position: relative; padding-left: 2rem; font-size: 1.0625rem; font-weight: 700; line-height: 1.35; color: var(--color-text); }
+  .qf-why__list li::before {
+    content: ''; position: absolute; left: 0; top: 0.05em; width: 1.375rem; height: 1.375rem; border-radius: 50%;
+    background: #173f35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E") center / 0.875rem no-repeat;
+  }
+  .qf-why__list a { color: #173f35; font-weight: 800; white-space: nowrap; text-decoration: underline; display: inline-block; min-height: var(--tap-target); line-height: var(--tap-target); margin-block: calc((1.35em - var(--tap-target)) / 2); }
   .qf-consent input { width: 1.75rem; height: 1.75rem; flex: none; margin-top: 0; accent-color: var(--color-primary); }
   .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
   .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }
   .qf-status { margin: 0; text-align: center; font-weight: 600; min-height: 1.5em; }
   .qf-status.is-error { color: var(--color-error); }
   /* v4.5: the empty Apply status line takes no space under the cards (it stays in the page for screen readers). */
-  .qf-status[data-qf-apply-status]:empty { min-height: 0; }
+  .qf-status[data-qf-apply-status]:empty, .qf-status[data-qf-contact-status]:empty { min-height: 0; }
   .qf-links { display: flex; justify-content: center; gap: var(--space-6); margin-top: var(--space-4); }
   .qf-link { min-height: var(--tap-target); padding: 0 var(--space-2); border: 0; background: none; color: var(--color-primary); font-weight: 700; font-size: 1.0625rem; text-decoration: underline; cursor: pointer; }
   .qf-link:disabled { color: var(--color-text-muted); text-decoration: none; cursor: default; }
@@ -486,48 +510,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   :global(.qf-blur) { filter: blur(9px); user-select: none; pointer-events: none; }
   .qf-card[data-state='locked'] .qf-card__amount { color: var(--color-text); }
 
-  /* Unlock panel */
-  .qf-unlock { margin-top: var(--space-4); border: 2px solid #173f35; border-radius: 0.75rem; padding: var(--space-3) var(--space-4); background: #f6faf8; }
-  .qf-form--compact { gap: var(--space-2); }
-  .qf-form--compact .qf-status:empty { display: none; }
-  .qf-unlock .qf-links { margin-top: 0; }
-  .qf-note--small { font-size: 0.9375rem; }
-  /* v4.7: the code instruction is readable dark text (not muted gray), the number in bold. */
-  /* Unlock panel (correction v3.7): bold black explanation and number, small gray rates line under the button. */
-  /* v5.0: one sentence ending in the masked number; it wraps as balanced lines on phones, so
-     the number never sits in a row of its own. */
-  .qf-unlock__explain { margin: 0; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 700; color: #111; text-wrap: balance; }
-  .qf-unlock__explain strong { color: #111; font-weight: 800; white-space: nowrap; }
-  .qf-unlock__explain[hidden] { display: none; }
-  /* v5.4: temporary-code mode (server-chosen) replaces the SMS sentence with the access-code instruction. */
-  .qf-unlock[data-temp-code] [data-qf-phone-summary] { display: none; }
-  .qf-unlock__change { margin: 0; text-align: center; }
-  .qf-unlock__change .qf-link { min-height: 2.75rem; }
-  .qf-unlock__rates { margin: 0; text-align: center; font-size: 0.875rem; line-height: 1.3; color: #5b6560; }
-  .qf-code-title { margin: 0; text-align: center; font-size: 1.125rem; line-height: 1.3; font-weight: 800; color: #111; }
-  .qf-code-row { display: grid; gap: var(--space-2); }
-  @media (min-width: 30rem) { .qf-code-row { grid-template-columns: 1fr auto; } .qf-code-row .qf-continue { width: auto; padding-inline: var(--space-6); } }
-  .qf-field[hidden] { display: none; }
-  .qf-unlock[hidden] { display: none; }
-  /* V2.3 (Randy, November 2026): the site's dark green, no longer red. */
-  .qf-unlock__title { margin: 0 0 var(--space-1); font-size: 1.625rem; font-weight: 800; color: #173f35; text-align: center; }
-  .qf-unlock__title:focus { outline: none; }
-  /* Phones (Randy, November 2026): before verification the same unlock panel
-     comes first, above the blurred cards, as "Your Rates Are Ready!" with a
-     one-line instruction (CSS order only: one panel, one set of controls).
-     Tablets and desktop (48rem+) keep "Unlock Your Rates" under the cards. */
-  .qf-unlock__t-wide { display: none; }
-  .qf-unlock__ready { margin: 0 0 var(--space-3); text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 600; color: var(--color-text); }
-  @media (max-width: 47.99rem) {
-    .qf-results[data-locked='true']:not([hidden]) { display: flex; flex-direction: column; }
-    .qf-results[data-locked='true'] > .qf-unlock { order: -1; margin: 0 0 var(--space-4); }
-  }
-  @media (min-width: 48rem) {
-    .qf-unlock__t-wide { display: inline; }
-    .qf-unlock__t-phone, .qf-unlock__ready { display: none; }
-  }
-  .qf-form[hidden] { display: none; }
-
   /* Health questions */
   .qf-intake, .qf-intake-done { max-width: 34rem; margin-inline: auto; display: grid; gap: var(--space-4); }
   .qf-intake[hidden], .qf-intake-done[hidden] { display: none; }
@@ -549,10 +531,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* Countdown (V2.0): only the digits are highlighted, in the module's yellow
      behind dark text (yellow text alone is unreadable on white). */
   .qf-countdown { display: inline-block; padding: 0 0.3em; border-radius: 0.2em; background: #ffeb3b; color: #0b2e22; font-weight: 800; font-variant-numeric: tabular-nums; }
-  /* V2.3: "Temporary access code: 123456." in the countdown's yellow, inline (it
-     wraps with the sentence); only the six digits bold. */
-  :global(.qf-code-hl) { padding: 0 0.2em; border-radius: 0.2em; background: #ffeb3b; font-weight: 400; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  :global(.qf-code-hl strong) { font-weight: 800; font-variant-numeric: tabular-nums; }
   .qf-restart { display: block; margin: var(--space-3) auto 0; }
   .qf-restart[hidden] { display: none; }
   @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }

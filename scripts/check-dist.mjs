@@ -208,8 +208,9 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   if (text.includes('G-JMYZE458HQ')) ga4Found = true;
   if (text.includes('1757709920950272')) metaFound = true;
   for (const [label, re] of GUARDS) {
-    // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/.
-    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html'].includes(file.slice(DIST.length))) continue;
+    // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/,
+    // and in the /free-quote/ "Direct Contact" line (Randy, November 2026, V3.3).
+    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html', 'free-quote/index.html'].includes(file.slice(DIST.length))) continue;
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
