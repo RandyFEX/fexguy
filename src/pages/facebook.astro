@@ -139,12 +139,12 @@ const advantage = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Here's What You Requested</h1>
+        <h1 class="fb-hero__title" id="fb-title">Here's the Info You Selected</h1>
         <!-- Texting page V1.1: shown with the selected quote (below) only. -->
         <p class="fb-hero__reassure" data-fb-reassure hidden>Don't worry, you can always adjust these amounts later.</p>
         <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
              first time this visit reaches this screen (src/scripts/quote-offer.ts). -->
-        <p class="fb-offer" data-fb-offer hidden>Your offer is available for: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
+        <p class="fb-offer" data-fb-offer hidden>Please respond within: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
         <button class="btn fb-offer__restart" type="button" data-fb-offer-restart hidden>Start New Quote</button>
         <!-- The quote selected on /free-quote/ (Apply Now), shown only with a valid,
              recent handoff (src/scripts/quote-handoff.ts); hidden otherwise. -->
@@ -162,7 +162,7 @@ const advantage = [
                Send. No link until that number is set and a quote is selected. -->
           <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="12" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="16.5" cy="10.25" r="1.5" fill="#c2410c" /></svg>
-            <span>Prepare My Text</span>
+            <span>PREPARE MY TEXT</span>
           </a>
           <p class="fb-text__note">Just review your prewritten text in your messaging app and hit Send.</p>
           <!-- Fallback where a device can't fill in the text: copy it instead. -->
@@ -506,7 +506,8 @@ const advantage = [
     padding: var(--space-3) var(--space-6);
     background: var(--color-cta);
     color: var(--color-on-cta);
-    font-size: 1.1875rem;
+    /* V4.1: a little larger than the call buttons' 19px for prominence. */
+    font-size: 1.375rem;
     font-weight: 800;
     letter-spacing: 0.01em;
     white-space: nowrap;
@@ -521,9 +522,13 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
+  /* V4.1: not limited to the button column's width, so the sentence fits
+     on one line on desktop; phones wrap it normally. */
   .fb-text__note {
+    align-self: center;
+    width: max-content;
+    max-width: calc(100vw - 2 * var(--space-4));
     margin: calc(-1 * var(--space-1)) 0 0;
-    text-wrap: balance;
     font-size: 0.9375rem;
     line-height: 1.4;
     color: #ffffff;

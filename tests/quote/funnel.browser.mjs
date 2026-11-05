@@ -145,7 +145,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   // Texting page V1.1: the hero button is Prepare My Text (no SMS number configured yet: no link);
   // the other three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === 'Prepare My Text' && f.text.icon && f.text.href === null && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === 'PREPARE MY TEXT' && f.text.icon && f.text.href === null && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -584,7 +584,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (seen.length) await results();
       const r = await applyAndRead(id);
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
-      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Requested", `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's the Info You Selected", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
       assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       const h = r.fb.handoff;

@@ -75,14 +75,14 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       url: location.pathname + location.search,
       hscroll: document.documentElement.scrollWidth > innerWidth,
     }));
-    assert(r.h1 === "Here's What You Requested" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
+    assert(r.h1 === "Here's the Info You Selected" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
     if (OUT) await page.screenshot({ path: `${OUT}/preview-apply-${name}.png`, fullPage: true });
     await ctx.close();
     return `${r.dd.join(' / ')}`;
   });
 }
 
-await check('texting handoff V4.0 at 320, 375, 390, 430 and 1280px: exact wording and order, one-line Prepare My Text, prewritten text, no 888 number in the section, no SMS link without the approved number', async () => {
+await check('texting handoff V4.1 at 320, 375, 390, 430 and 1280px: exact wording and order, one-line Prepare My Text, prewritten text, no 888 number in the section, no SMS link without the approved number', async () => {
   const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
   await page.goto(`${srv.base}/facebook/?preview=apply`);
   await page.waitForSelector('[data-fb-quote]:not([hidden])', { timeout: 10000 });
@@ -93,7 +93,7 @@ await check('texting handoff V4.0 at 320, 375, 390, 430 and 1280px: exact wordin
     await page.waitForTimeout(100);
     const r = await page.evaluate(() => {
       const h1 = document.querySelector('h1'), re = document.querySelector('[data-fb-reassure]'), box = document.querySelector('[data-fb-quote]');
-      const btn = document.querySelector('[data-fb-text]'), note = document.querySelector('.fb-text__note');
+      const btn = document.querySelector('[data-fb-text]'), note = document.querySelector('.fb-text__note'), timer = document.querySelector('[data-fb-offer]');
       const label = btn.querySelector('span'), icon = btn.querySelector('svg');
       const rg = document.createRange();
       rg.selectNodeContents(label.firstChild);
@@ -101,9 +101,11 @@ await check('texting handoff V4.0 at 320, 375, 390, 430 and 1280px: exact wordin
       const c = (e) => getComputedStyle(e);
       return {
         h1: h1.textContent.trim(), reassure: re.hidden ? null : re.textContent.trim(), label: btn.textContent.trim(), note: note.textContent.trim(),
-        order: h1.getBoundingClientRect().bottom <= re.getBoundingClientRect().top && re.getBoundingClientRect().bottom <= box.getBoundingClientRect().top && box.getBoundingClientRect().bottom <= b.top && b.bottom <= note.getBoundingClientRect().top,
+        order: h1.getBoundingClientRect().bottom <= re.getBoundingClientRect().top && re.getBoundingClientRect().bottom <= timer.getBoundingClientRect().top && timer.getBoundingClientRect().bottom <= box.getBoundingClientRect().top && box.getBoundingClientRect().bottom <= b.top && b.bottom <= note.getBoundingClientRect().top,
         card: [...box.querySelectorAll('dt, dd')].map((e) => e.textContent.trim()),
         heroNumbers: /\d{3}-\d{3}-\d{4}|\(\d{3}\) \d{3}-\d{4}/.test(document.querySelector('.fb-hero').innerText) || !!document.querySelector('.fb-hero a[href^="tel:"]'),
+        timer: timer.textContent.trim(), timerYellow: getComputedStyle(timer.querySelector('[data-fb-offer-time]')).color === 'rgb(255, 235, 59)',
+        noteLines: Math.round(note.getBoundingClientRect().height / parseFloat(getComputedStyle(note).lineHeight)), noteFs: parseFloat(getComputedStyle(note).fontSize),
         smsBody: btn.dataset.smsBody, copy: !document.querySelector('[data-fb-copy]').hidden,
         white: [h1, re, note].every((e) => c(e).color === 'rgb(255, 255, 255)') && [h1, re, note].every((e) => c(e).textAlign === 'center'),
         oneLine: rg.getClientRects().length === 1 && i.right <= t.left + 1 && Math.abs(i.top + i.height / 2 - (t.top + t.height / 2)) <= 3,
@@ -113,11 +115,13 @@ await check('texting handoff V4.0 at 320, 375, 390, 430 and 1280px: exact wordin
         href: btn.getAttribute('href'), hscroll: document.documentElement.scrollWidth > innerWidth,
       };
     });
-    assert(r.h1 === "Here's What You Requested" && r.reassure === "Don't worry, you can always adjust these amounts later." && r.label === 'Prepare My Text' && r.note === "Just review your prewritten text in your messaging app and hit Send.", JSON.stringify(r));
+    assert(r.h1 === "Here's the Info You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && r.label === 'PREPARE MY TEXT' && r.note === "Just review your prewritten text in your messaging app and hit Send.", JSON.stringify(r));
     assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$61.69']) && !r.heroNumbers, `${w}px card/number ${JSON.stringify(r)}`);
+    // V4.1: the countdown label and the instruction on one line on desktop (wrapping only on phones, same size).
+    assert(/^Please respond within: (2:00|1:5\d)$/.test(r.timer) && r.timerYellow && r.noteFs === 15 && (w === 1280 ? r.noteLines === 1 : r.noteLines <= 2), `${w}px timer/note ${JSON.stringify(r)}`);
     // The prewritten text: the sample's first name (from its own session), coverage and premium.
     assert(r.smsBody === 'Hi, this is Preview. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.', `${w}px text ${r.smsBody}`);
-    assert(r.order && r.white && r.oneLine && r.centered && r.fits && r.smaller && !r.hscroll && r.bg === 'rgb(194, 65, 12)' && r.h === 56 && r.fs === '19px', `${w}px ${JSON.stringify(r)}`);
+    assert(r.order && r.white && r.oneLine && r.centered && r.fits && r.smaller && !r.hscroll && r.bg === 'rgb(194, 65, 12)' && r.h === 56 && r.fs === '22px', `${w}px ${JSON.stringify(r)}`);
     // No approved SMS number is configured (src/config/phones.ts SMS_NUMBER), so the button opens nothing.
     assert(r.href === null && !r.copy, `${w}px ${JSON.stringify(r)}`);
     if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-${w}.png` });
