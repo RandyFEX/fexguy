@@ -46,16 +46,16 @@ const TOTAL = 6;
 // V4.2 logo wall (coverage step only): authentic logo files, in Randy's order;
 // any brand whose file is missing from public/ is left out at build time.
 const LOGO_CANDIDATES = [
-  { name: 'Mutual of Omaha', src: '/images/carriers/mutual-of-omaha-logo.jpg' },
+  { name: 'Mutual of Omaha', src: '/images/carriers/wall/mutual-of-omaha.png' },
   { name: 'Aetna', src: '/images/carriers/cvs-aetna-logo.png' },
-  { name: 'Aflac', src: '/images/carriers/wall/aflac.svg' },
-  { name: 'Gerber Life', src: '/images/carriers/gerber-life-logo.png' },
-  { name: 'Colonial Penn', src: '/images/carriers/wall/colonial-penn.svg' },
-  { name: 'Lincoln Heritage Funeral Advantage', src: '/images/carriers/wall/lincoln-heritage.png' },
+  { name: 'Aflac', src: '/images/carriers/wall/aflac.png' },
+  { name: 'Gerber Life', src: '/images/carriers/wall/gerber-life.png' },
+  { name: 'Colonial Penn', src: '/images/carriers/wall/colonial-penn.png' },
+  { name: 'Lincoln Heritage Funeral Advantage', src: '/images/carriers/wall/lincoln-heritage.svg' },
   { name: 'Trinity Life', src: '/images/carriers/wall/trinity-life.png' },
   { name: 'Family Benefit Life', src: '/images/carriers/wall/family-benefit-life.png' },
   { name: 'AARP', src: '/images/carriers/wall/aarp.svg' },
-  { name: 'Physicians Mutual', src: '/images/carriers/wall/physicians-mutual.svg' },
+  { name: 'Physicians Mutual', src: '/images/carriers/wall/physicians-mutual.png' },
   { name: 'State Farm', src: '/images/carriers/wall/state-farm.svg' },
   { name: 'Allstate', src: '/images/carriers/wall/allstate.svg' },
   { name: 'TruStage', src: '/images/carriers/wall/trustage.svg' },
@@ -67,7 +67,9 @@ const LOGO_WALL = LOGO_CANDIDATES.flatMap((l) => {
   const file = join(process.cwd(), 'public', l.src);
   if (!existsSync(file)) return [];
   const size = imageSize(readFileSync(file), l.src);
-  return size ? [{ ...l, ...size }] : [];
+  // Optical sizing (V4.4): every logo gets about the same visible area, so wide
+  // wordmarks and square marks read at a similar size (--k = 1 / sqrt(aspect)).
+  return size ? [{ ...l, ...size, k: (1 / Math.sqrt(size.w / size.h)).toFixed(3) }] : [];
 });
 
 const title = "Free Burial Insurance Quotes | Compare Rates | Funeral Funds";
@@ -349,7 +351,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <h2 class="qf-logos__title" id="qf-logos-title">We compare coverage from trusted insurance companies</h2>
         <ul class="qf-logos__grid" role="list">
           {LOGO_WALL.map((l) => (
-            <li class:list={['qf-logos__item', { 'qf-logos__item--tall': l.w / l.h < 1.6 }]}><img src={l.src} alt={l.name} width={l.w} height={l.h} loading="lazy" decoding="async" /></li>
+            <li class="qf-logos__item"><img src={l.src} alt={l.name} width={l.w} height={l.h} style={`--k:${l.k}`} loading="lazy" decoding="async" /></li>
           ))}
         </ul>
       </section>
@@ -395,20 +397,20 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   }
   @media (max-width: 29.99rem) { .qf-body { padding-inline: var(--space-2); } }
   @media (min-width: 48rem) { .qf-panel { padding: var(--space-6) var(--space-8) var(--space-8); } }
-  /* V4.2 logo wall under the coverage question card: compact, about 3 logos per
-     row on phones and 6 on desktop, every logo at one visual height. */
-  .qf-logos { margin: var(--space-4) auto 0; max-width: 52rem; text-align: center; }
+  /* V4.4 logo wall under the coverage question card: borderless, centered,
+     visually subordinate. 6 per row on desktop (3 rows for 16), 4 on tablets,
+     3 on phones, 2 under 360px; the last row is centered. Each logo's height
+     is --k (1 / sqrt of its aspect ratio, set per image) times --s, so every
+     logo shows about the same area; proportions are never changed. */
+  .qf-logos { --s: 2.75rem; margin: 1.75rem auto 0; max-width: 50rem; text-align: center; }
   .qf-logos[hidden] { display: none; }
   .qf-logos__title { margin: 0 0 var(--space-3); font-size: 1rem; line-height: 1.3; font-weight: 700; color: #173f35; }
-  .qf-logos__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
-  /* Very narrow phones (under 360px) keep two per row so the widest logos stay readable. */
-  @media (min-width: 22.5rem) { .qf-logos__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (min-width: 40rem) { .qf-logos__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-  @media (min-width: 52rem) { .qf-logos__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
-  .qf-logos__item { display: flex; align-items: center; justify-content: center; height: 3.25rem; padding: 0.375rem 0.5rem; background: #fff; border: 1px solid var(--color-border); border-radius: 0.5rem; min-width: 0; }
-  .qf-logos__item img { display: block; max-width: 100%; max-height: 1.75rem; width: auto; height: auto; object-fit: contain; }
-  /* Square or stacked logos (e.g. Gerber Life) get more height so they read at the same visual size. */
-  .qf-logos__item--tall img { max-height: 2.5rem; }
+  .qf-logos__grid { --cols: 2; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; row-gap: var(--space-3); }
+  @media (min-width: 22.5rem) { .qf-logos__grid { --cols: 3; } }
+  @media (min-width: 40rem) { .qf-logos { --s: 3rem; } .qf-logos__grid { --cols: 4; } }
+  @media (min-width: 52rem) { .qf-logos { --s: 4.25rem; max-width: 58rem; } .qf-logos__grid { --cols: 6; row-gap: var(--space-4); } .qf-logos__item { height: 3.75rem; padding: 0 0.875rem; } .qf-logos__item img { max-height: 3rem; } }
+  .qf-logos__item { flex: 0 0 calc(100% / var(--cols)); display: flex; align-items: center; justify-content: center; height: 3rem; padding: 0 0.625rem; min-width: 0; }
+  .qf-logos__item img { display: block; height: clamp(1rem, calc(var(--k) * var(--s)), 2.75rem); width: auto; max-width: 100%; object-fit: contain; }
   .qf-top { display: flex; align-items: center; justify-content: space-between; min-height: var(--tap-target); gap: var(--space-3); }
   .qf-back {
     min-height: var(--tap-target); min-width: var(--tap-target); padding: 0 var(--space-3);

@@ -170,15 +170,19 @@ for (const [label, dev] of [['desktop 1280px', { viewport: { width: 1280, height
         names: imgs.map((i) => i.alt), broken: imgs.filter((i) => !i.naturalWidth).map((i) => i.alt),
         heights: imgs.map((i) => Math.round(i.getBoundingClientRect().height)), overflow: imgs.some((i) => i.getBoundingClientRect().right > i.parentElement.getBoundingClientRect().right + 1),
         perRow, rows, cica: /cica/i.test(wall.innerHTML),
+        borders: [...wall.querySelectorAll('.qf-logos__item')].filter((e) => parseFloat(getComputedStyle(e).borderTopWidth) > 0 || getComputedStyle(e).backgroundColor !== 'rgba(0, 0, 0, 0)').length,
+        areas: imgs.map((i) => { const b = i.getBoundingClientRect(); return Math.round(b.width * b.height); }),
+        widths: imgs.map((i) => Math.round(i.getBoundingClientRect().width)),
         hscroll: document.documentElement.scrollWidth > innerWidth,
         options: [...document.querySelectorAll('[data-step="4"] .qf-opt')].map((e) => e.textContent.trim()).join('|'),
       };
     });
     assert(r.question === 'How Much Coverage Would You Like?' && r.title === 'We compare coverage from trusted insurance companies' && r.below, JSON.stringify(r));
-    assert(r.names.length >= 3 && !r.broken.length && !r.overflow && !r.cica && !r.hscroll, JSON.stringify(r));
-    assert(r.heights.every((h) => h >= 14 && h <= 41), `logo heights ${r.heights}`);
-    const want = Math.min(label.startsWith('desktop') ? 6 : label === '320px' ? 2 : 3, r.names.length);
-    assert(r.perRow === want, `${r.perRow} logos per row, expected ${want}`);
+    // V4.4: all 16 authentic logos, borderless, every one loaded and readable.
+    assert(r.names.length === 16 && !r.broken.length && !r.overflow && !r.cica && !r.hscroll && r.borders === 0, JSON.stringify(r));
+    assert(r.heights.every((h) => h >= 16 && h <= 48) && r.widths.every((w) => w >= 36), `logo sizes ${r.heights} / ${r.widths}`);
+    const want = label.startsWith('desktop') ? 6 : label === '320px' ? 2 : 3;
+    assert(r.perRow === want && (!label.startsWith('desktop') || r.rows === 3), `${r.perRow} logos per row (${r.rows} rows), expected ${want}`);
     assert(r.options === '$5,000|$10,000|$15,000|$20,000|$25,000|Other', r.options);
     if (OUT) await page.screenshot({ path: `${OUT}/v42-${label.split(' ')[0].toLowerCase()}-coverage-logos.png`, fullPage: true });
     // Coverage selection is unchanged: a choice advances to the state question, and the wall goes away.

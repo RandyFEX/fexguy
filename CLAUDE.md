@@ -1553,13 +1553,20 @@ Prioritize the shortest reliable path to completing approved changes.
   coverage, state, contact; results are step 7), no `intendedUse` in the
   submission, the lead record or the CRM note. The coverage question (step
   4) has a logo wall under its card, "We compare coverage from trusted
-  insurance companies" (shown on that step only; 6 per row on desktop, 3 on
-  phones, 2 under 360px). Authentic files only: the existing Mutual of
-  Omaha, CVS/aetna and Gerber Life logos, plus AARP, State Farm and Allstate
-  from Wikimedia (upload.wikimedia.org: commons AARP_logo_2023.svg and
-  State_Farm_logo.svg, en Allstate_logo.svg) in public/images/carriers/wall/.
-  A brand whose file is missing is left out (LOGO_CANDIDATES in
-  free-quote.astro). Never show CICA Life there.
+  insurance companies" (shown on that step only; borderless, 6 per row on
+  desktop in 3 rows, 3 on phones, 2 under 360px; each logo sized to about the
+  same visible area, proportions kept). V4.4: all 16 brands, authentic files
+  in public/images/carriers/wall/ (CVS/aetna from public/images/carriers/):
+  AARP, State Farm (Wikimedia Commons) and Allstate (English Wikipedia);
+  TruStage, Foresters, Colonial Penn, Lincoln Heritage Funeral Advantage
+  (funeraladvantage.com), Transamerica, Physicians Mutual and AAA (the AAA
+  Life Insurance Company logo, aaalife.com) from the companies' own sites;
+  Aflac cut from aflac.com's own logo sprite; Family Benefit Life and Trinity
+  Life from their sites' white header logos, colored with each company's own
+  brand color sampled from its site artwork (blue 39,63,161; green 0,116,68);
+  Mutual of Omaha and Gerber Life trimmed of white margins. A brand whose
+  file is missing is left out (LOGO_CANDIDATES in free-quote.astro). Never
+  show CICA Life there.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
