@@ -33,7 +33,7 @@ const shot = async (page, file, fullPage = false) => {
   if (OUT) await page.screenshot({ path: `${OUT}/${file}`, fullPage });
 };
 const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
-const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary' };
+const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
 const TITLES = ['I need pricing for a...', 'How Old Are You?', 'Do You Use Tobacco?', 'How Would You Use These Funds?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
@@ -68,7 +68,7 @@ async function minimalLayout(page) {
   });
   assert(!r.siteHeader && !r.menus.length && !r.promo && !r.sticky, `regular site parts present ${JSON.stringify(r)}`);
   assert(r.h1Count === 1 && !r.h1Visible, 'page heading visible');
-  assert(r.logo === 'https://funeralfunds.com/' && r.secure && r.tel === 'tel:8888629456', `header ${JSON.stringify(r)}`);
+  assert(r.logo === 'https://funeralfunds.com/' && r.secure && r.tel === 'tel:+18886564648', `header ${JSON.stringify(r)}`);
   assert(r.legal.join('|') === 'Privacy Policy|Terms of Use|Licenses', `legal links ${r.legal}`);
   assert(r.footText === 'Privacy Policy Terms of Use Licenses', `footer holds more than the three links: ${r.footText.slice(0, 80)}`);
   assert(r.headerH <= 90, `header ${r.headerH}px tall`);
@@ -85,6 +85,7 @@ async function walk(page, phone, who = NAMES[phone === PHONES.mobile ? 'mobile' 
   await page.selectOption('[data-qf-state]', 'Ohio');
   await page.fill('#qf-first', who);
   await page.fill('#qf-phone', phone);
+  await page.check('[data-qf-consent]');
   await page.click('[data-qf-contact] button[type="submit"]');
 }
 /** V3.3: SEE MY RATES (walk) opens the rates at once; wait for the cards. */
@@ -215,12 +216,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(wraps === 0, `${wraps} summary values wrap`);
     const over = await page.$$eval('[data-qf-summary] > div', (els) => els.filter((e) => e.scrollWidth > e.clientWidth + 1).length);
     assert(over === 0, `${over} summary values overflow their box`);
-    const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.previousElementSibling?.matches('.qf-consent')]);
+    const btn = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [b.textContent.trim(), b.previousElementSibling?.querySelector(':scope > .qf-consent') !== null]);
     assert(btn[0] === 'SEE MY RATES' && btn[1], JSON.stringify(btn));
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
     const inputs = await page.$$eval('[data-qf-contact] input:not([type="checkbox"]):not([type="hidden"])', (els) => els.map((e) => [e.id, document.querySelector(`label[for="${e.id}"]`)?.textContent.trim(), e.type]));
-    assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'First Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
+    assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'Full Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
     assert(!(await page.$('[data-step="7"] input[type="email"], [data-step="7"] [name*="mail" i]')), 'an email field is on the contact screen');
     const sel = '[data-qf-contact] button[type="submit"]';
     const colors = async () => page.$eval(sel, (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color, getComputedStyle(b).filter]);
@@ -237,11 +238,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(Number(cw) >= 700, `contact button weight ${cw}`);
     const order = await page.$eval('.qf-reassure', (e) => [e.textContent.trim(), e.previousElementSibling?.matches('[data-qf-contact-status]') && e.previousElementSibling.previousElementSibling?.matches('button[type="submit"]')]);
     assert(order[0] === 'Our Promise: No Spam Calls. No Junk Mail.' && order[1], `promise is not under the button ${JSON.stringify(order)}`);
-    // v3 consent wording at 16px; V3.3: in the left column of the two-column contact step, up to 6 lines on desktop.
+    // V3.7 consent wording at 16px: up to 3 lines on desktop.
     const consent = await page.$eval('.qf-consent span', (e) => { const cs = getComputedStyle(e); return { fs: parseFloat(cs.fontSize), lines: Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)) }; });
-    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 6), `consent text ${JSON.stringify(consent)}`);
+    assert(consent.fs >= 16 && (name !== 'desktop' || consent.lines <= 3), `consent text ${JSON.stringify(consent)}`);
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent pre-checked');
-    assert((await page.textContent('.qf-consent span')).trim() === 'I welcome help from Funeral Funds and agree to receive calls and texts at the number I provided. These calls and texts are about life insurance and may include automated messages. Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.', 'consent text');
+    assert((await page.textContent('.qf-consent > span')).trim() === 'By checking this box, I agree to receive calls and SMS text messages from Funeral Funds about my insurance request, according to the Privacy Policy (opens in a new tab).', 'consent text');
+    assert((await page.getAttribute('.qf-consent a', 'href')) === '/privacy-policy/' && (await page.getAttribute('[data-qf-consent]', 'required')) !== null, 'privacy link or required box');
     assert(!(await page.isChecked('[data-qf-consent]')), 'consent box pre-checked');
     assert((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0, 'horizontal scroll');
     await page.fill('#qf-first', NAMES[name]);
@@ -378,7 +380,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     for (const c of b) {
-      assert(c.href === 'tel:8888629456' && c.text === 'Call Us With Questions' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:+18886564648' && c.text === 'Call Us With Questions' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
       assert(c.applyText === 'Text Us With Questions' && c.applyIcon && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 34 && c.ah <= 36 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
       assert(c.bg === HOME_ORANGE && c.fg === 'rgb(255, 255, 255)', `call colors ${JSON.stringify(c)}`);
       assert((name === 'desktop' ? c.th >= 26 && c.th <= 28 : c.th <= 30) && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
@@ -572,8 +574,8 @@ await check('evidence: the two journeys\' leads, consent records, intended use a
   assert(v.length === 2, `${v.length} journeys`);
   for (const r of v)
     assert(
-      (r.firstName === 'Mary' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
-        r.consent.given === false && r.consent.action && r.verification.status === 'not-required' && r.mode === 'test' &&
+      (r.firstName === 'Mary Smith' || r.firstName === 'Mary Ann Smith') && r.state === 'Ohio' && r.intendedUse?.label === 'Cremation Expenses' && r.applications[0].intendedUse === 'Cremation Expenses' &&
+        r.consent.given === true && r.consent.version === 'ff-quote-consent-v4-2026-11' && r.verification.status === 'not-required' && r.mode === 'test' &&
         r.applications[0].attribution[0] === 'FF-101' && r.applications.length === 5 && r.applications.map((x) => x.categoryId).join() === 'average-standard,lowest-preferred,guaranteed-acceptance,lowest-preferred,lowest-preferred' && r.applications[3].quote.coverage === 25000,
       JSON.stringify(r).slice(0, 300),
     );
@@ -650,7 +652,7 @@ await check('SEE MY RATES works with autofill punctuation (390px and 1440px), re
     await ctx.close();
   }
   // If the server still refuses the number or the name, the contact step stays with every answer kept.
-  for (const [field, msg, name, phone] of [['phone', 'Please enter a valid 10-digit US mobile number.', 'Sms Test', '214-837-9303'], ['name', 'Please enter your first name.', 'Pat O’Neil', '214-837-9305']]) {
+  for (const [field, msg, name, phone] of [['phone', 'Please enter a valid 10-digit US mobile number.', 'Sms Test', '214-837-9303'], ['name', 'Please enter your full name (first and last name).', 'Pat O’Neil', '214-837-9305']]) {
     const c3 = await browser.newContext({ ...devices['iPhone 13'], extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
     const p3 = await c3.newPage();
     let refuse = true;

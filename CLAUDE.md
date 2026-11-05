@@ -43,10 +43,12 @@ is in place; see src/content/README.md for how pages were migrated.
   it appears only on the ad landing pages /roku/ and (Randy, October 2026)
   /facebook/ (`tel:8886564648`, noindex, not linked from navigation or other
   pages) and must never appear anywhere else on the site (`npm run verify`
-  allows it only there). One exception (Randy, November 2026, V3.3, his
-  explicit instruction): the "Direct Contact: 888-656-4648" line in the
-  /free-quote/ contact step's "Why Funeral Funds?" list (build-time HTML only;
-  that page's header and cards keep 888-862-9456). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
+  allows it only there). One exception (Randy, November 2026, V3.3/V3.7, his
+  explicit instruction): the /free-quote/ quote funnel uses 888-656-4648
+  (`tel:+18886564648`) throughout: header, the "Why Funeral Funds?" Direct
+  Contact line, the cards' call buttons, the intake call button and the
+  funnel's messages (build-time HTML and the server's funnel messages only;
+  never in the site-wide JavaScript). No other call-tracking numbers. Insurance companies' own customer-service numbers in reviews stay as
   they are (never replace them with 888-862-9456).
 - **Header phone (Randy, November 2026, V14.0):** Every upper-right phone
   contact area on Funeral Funds pages must display Speak With a Licensed
@@ -1466,6 +1468,21 @@ scope protection wins.
   With Questions handoff) and quote_text_click (the /facebook/ text-message
   or QR option, sent by tracking.ts; the /facebook/ handoff code is
   unchanged). Test: tests/quote/funnel-direct.browser.mjs.
+  **V3.7 (Randy, November 2026; replaces the V3.3 layout and consent):** step 7
+  opens with the trust section (Randy's photo, "Randy VanderVaate",
+  "Independent Life Insurance Broker" and the call-center line left; "Why
+  Funeral Funds?" right from 48rem; stacked on phones), then "Your Contact
+  Information", the summary, Full Name (server/quote/name.js: two or more
+  words, hyphens, apostrophes, periods, commas and suffixes; stored in
+  `firstName`; Agent CRM gets `name` plus first/last), Mobile Phone Number,
+  the REQUIRED consent box (never pre-checked; consent v4 "By checking this
+  box, I agree to receive calls and SMS text messages from Funeral Funds
+  about my insurance request, according to the Privacy Policy." with Privacy
+  Policy linked to /privacy-policy/ in a new tab; unchecked shows "Please
+  check the box to agree to receive calls and texts before continuing." and
+  the server refuses it), SEE MY RATES and Our Promise. The funnel's phone
+  number is 888-656-4648 throughout (Phone rule above); the page body has
+  `track-page-calls` so its call taps keep GA4 click_to_call.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

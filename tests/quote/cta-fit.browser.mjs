@@ -31,7 +31,8 @@ await page.goto(`${srv.base}/free-quote/`);
 await page.waitForSelector('[data-step="1"]:not([hidden])');
 for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="60"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="use"][data-value="burial"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
 await page.selectOption('[data-qf-state]', 'Texas');
-await page.fill('#qf-first', 'Test');
+await page.fill('#qf-first', 'Test Visitor');
+await page.check('[data-qf-consent]');
 await page.fill('#qf-phone', '214-867-5309');
 await page.click('[data-qf-contact] button[type="submit"]');
 await page.waitForSelector('[data-step="8"]:not([hidden])');
@@ -69,7 +70,7 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
       if ([375, 390, 430, 1024, 1280].includes(w)) assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
       else assert(c.call.fs >= 12 && c.apply.fs >= 12 && c.call.fs >= c.apply.fs && c.call.fs < 18, `type ${c.call.fs}/${c.apply.fs}`);
       // Same actions as before: the orange tel: link and the green Apply button (no link, no sms:).
-      assert(c.href === 'tel:8888629456' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:+18886564648' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
     }
     if (process.env.OUT) await page.locator('.qf-cards').screenshot({ path: `${process.env.OUT}/cta-${w}.png` });
     return `${r.cards[0].call.fs.toFixed(1)}px / ${r.cards[0].apply.fs.toFixed(1)}px`;

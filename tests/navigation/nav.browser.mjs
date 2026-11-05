@@ -272,7 +272,7 @@ for (const path of ['/facebook/', '/free-quote/', '/help/']) {
     const p = await page(path === '/facebook/' ? '/facebook/?utm_source=facebook' : path);
     assert.equal(await p.locator('header.site-header, [data-nav]').count(), 0);
     assert.equal(await p.locator('[data-header-phone]').count(), 1);
-    assert.equal(await p.getAttribute('[data-header-phone]', 'href'), path === '/facebook/' ? 'tel:8886564648' : 'tel:8888629456');
+    assert.equal(await p.getAttribute('[data-header-phone]', 'href'), path === '/facebook/' ? 'tel:8886564648' : path === '/free-quote/' ? 'tel:+18886564648' : 'tel:8888629456');
     await p.context().close();
   });
 }

@@ -20,7 +20,8 @@
 // it is. Personal data never goes into logs, URLs or analytics.
 
 import { createHmac, randomUUID } from 'node:crypto';
-import { CONSENT_VERSIONS } from './consent.js';
+import { CONSENT_REQUIRED_MESSAGE, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
+import { firstNameOf, isFullName } from './name.js';
 import { toE164US } from './phone.js';
 import { sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
@@ -52,9 +53,8 @@ const SOURCE_KEYS = ['page', 'landingPage', 'trafficSource', 'referrer', 'utmSou
 const ENTRY_LABELS = { 'article-sidebar': 'Article sidebar', direct: 'Direct funnel entry', campaign: 'Campaign' };
 /** Intended use (lead information only; never a pricing input). */
 export const INTENDED_USES = { burial: 'Burial Expenses', cremation: 'Cremation Expenses', other: 'Other Expenses' };
-// v4.5: one "Your Name" field: a first name alone or a full name. The curly
-// apostrophe (U+2019) is accepted too: phones type it automatically (O’Neil).
-const NAME_RE = /^[\p{L}][\p{L}\p{M} .'\u2019-]{0,59}$/u;
+// V3.7: the funnel's own phone number (Randy's advertising number on /free-quote/).
+const FUNNEL_PHONE = '888-656-4648';
 
 /** @param {number} status @param {Record<string, unknown>} body @param {Record<string, string>} [headers] */
 function json(status, body, headers = {}) {
@@ -112,7 +112,7 @@ export async function handleQuote(request, env, deps) {
   // production deployment delivers every lead to Agent CRM.
   const test = env.VERCEL_ENV !== 'production';
   if (!store || !key)
-    return json(503, { status: 'unavailable', message: 'Quotes are not available right now. Please call 888-862-9456.' });
+    return json(503, { status: 'unavailable', message: `Quotes are not available right now. Please call ${FUNNEL_PHONE}.` });
   const now = (deps.now ?? Date.now)();
   const iso = new Date(now).toISOString();
   const hash = (/** @type {string} */ s) => createHmac('sha256', secret).update(s).digest('hex').slice(0, 32);
@@ -125,18 +125,20 @@ export async function handleQuote(request, env, deps) {
     // conversion); the visitor's retry sends `retry` (that lead's id) and
     // re-delivers the same lead instead of creating a duplicate.
     case 'start': {
-      const firstName = clean(body.firstName, 60);
+      // V3.7: one Full Name field (server/quote/name.js), stored as typed in `firstName`.
+      const firstName = clean(body.firstName, 60).replace(/\s+/g, ' ');
       const phone = toE164US(body.phone);
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
-      if (!firstName || !NAME_RE.test(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your first name.' });
+      if (!isFullName(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your full name (first and last name).' });
       if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
       const intendedUse = typeof body.intendedUse === 'string' && Object.hasOwn(INTENDED_USES, body.intendedUse) ? /** @type {keyof typeof INTENDED_USES} */ (body.intendedUse) : null;
       if (!intendedUse) return bad('Please choose what the insurance money will be used for.');
       if (!quote) return bad();
-      if (typeof body.consent !== 'boolean') return bad();
-      if (body.consent && !CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)]) return bad();
+      // V3.7: affirmative consent is required (the current disclosure version only).
+      if (body.consent !== true) return json(400, { status: 'bad-request', field: 'consent', message: CONSENT_REQUIRED_MESSAGE });
+      if (body.consentVersion !== CONSENT_VERSION) return bad('Please reload the page and try again.');
       // The session will belong to this visit (tab) only.
       const visit = visitOf(request);
       if (!visit) return bad('Please reload the page and try again.');
@@ -150,7 +152,7 @@ export async function handleQuote(request, env, deps) {
         { key: `ph:d:${phoneHash}:${Math.floor(now / DAY)}`, limit: SUBMIT_LIMITS.phoneDay, windowMs: DAY },
         { key: `all:d:${Math.floor(now / DAY)}`, limit: globalDay, windowMs: DAY },
       ]);
-      if (over) return json(429, { status: 'rate-limited', message: 'Too many quote requests. Please try again later or call 888-862-9456.' }, { 'Retry-After': '3600' });
+      if (over) return json(429, { status: 'rate-limited', message: `Too many quote requests. Please try again later or call ${FUNNEL_PHONE}.` }, { 'Retry-After': '3600' });
 
       const consentText = body.consent ? CONSENT_VERSIONS[/** @type {keyof typeof CONSENT_VERSIONS} */ (body.consentVersion)] : null;
       const fields = {
@@ -203,7 +205,7 @@ export async function handleQuote(request, env, deps) {
         record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
         await store.putLead(leadId, record);
         if (!delivered)
-          return json(502, { status: 'delivery-failed', lead: leadId, message: 'We could not send your request just now. Please try again, or call 888-862-9456.' });
+          return json(502, { status: 'delivery-failed', lead: leadId, message: `We could not send your request just now. Please try again, or call ${FUNNEL_PHONE}.` });
       }
 
       const sid = newSid();
@@ -224,7 +226,7 @@ export async function handleQuote(request, env, deps) {
       if (!record) return json(200, { status: 'not-verified' });
       // Texting handoff V4.0: the first word of the visitor's own name, for the
       // prewritten text on /facebook/ (this verified visit only; kept in memory there).
-      const firstName = typeof record.firstName === 'string' ? record.firstName.trim().split(/\s+/)[0].slice(0, 40) : '';
+      const firstName = firstNameOf(record.firstName);
       return json(200, { status: 'verified', quote: record.lastQuote ?? record.quoteAtSubmission, testMode: record.mode === 'test' || record.mode === 'preview-sample', expiresAt: v.exp, firstName });
     }
 

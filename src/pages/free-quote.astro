@@ -17,10 +17,9 @@ import HeaderLogo from '@/components/HeaderLogo.astro';
 import HeaderPhone from '@/components/HeaderPhone.astro';
 import GenderChoice from '@/components/quote/GenderChoice.astro';
 import { HEADER_PHONE_ICON_PATH, PAGE_PHONES } from '@/config/phones';
-import { lead } from '@/config/lead';
 import { US_STATES } from '@/lib/lead/lead-form';
 import { AGES, COVERAGE } from '../../server/rates/pricing-categories.js';
-import { CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
+import { CONSENT_LINK_TEXT, CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -32,11 +31,14 @@ const cards = [
 // Safe stand-ins for the blurred, locked cards (never real carriers or plans).
 const LOGO_STAND_INS = ['Insurance Co.', 'Life Company', 'Insurance Co.'];
 const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
-const phone = PAGE_PHONES.default;
-// The "Direct Contact" line in the contact step's "Why Funeral Funds?" list
-// (Randy, November 2026, V3.3: exactly 888-656-4648, his explicit instruction;
-// build-time HTML only). The header and the cards keep 888-862-9456.
-const directContact = PAGE_PHONES.ctv;
+// V3.7 (Randy, November 2026, his explicit instruction): the whole /free-quote/
+// visitor experience uses his advertising tracking number 888-656-4648
+// (tel:+18886564648): the header, the "Why Funeral Funds?" Direct Contact
+// line, the cards' call buttons, the intake call button and the funnel's
+// messages (the script reads it from data-funnel-phone, so it never ships in
+// the JavaScript). Build-time HTML only; every other page keeps its number.
+const phone = { ...PAGE_PHONES.ctv, href: 'tel:+18886564648' };
+const [consentBefore, consentAfter] = CONSENT_TEXT.split(CONSENT_LINK_TEXT);
 const TOTAL = 7;
 
 const title = "Free Burial Insurance Quotes | Compare Rates | Funeral Funds";
@@ -55,7 +57,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   layout="landing"
   preFooter={false}
   stickyCall={false}
-  bodyClass="page-quote"
+  bodyClass="page-quote track-page-calls"
 >
   <div class="qh-top">
     <div class="container qh-top__inner">
@@ -87,6 +89,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
     data-page-reason="Interactive quote funnel (noindex)."
     data-quote-funnel
     data-consent-version={CONSENT_VERSION}
+    data-funnel-phone={phone.display}
   >
     <h1 class="visually-hidden">Request Life Insurance Quote</h1>
 
@@ -162,9 +165,38 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </select>
         </section>
 
-        <!-- Step 7 -->
+        <!-- Step 7. V3.7 (Randy, November 2026): the trust section first (Randy
+             left, "Why Funeral Funds?" right from 48rem; stacked on phones),
+             then "Your Contact Information", the summary and the form. -->
         <section class="qf-step" data-step="7" aria-labelledby="qf-s7" hidden>
-          <h2 class="qf-q" id="qf-s7" tabindex="-1">Your Contact Information</h2>
+          <div class="qf-trust">
+            <div class="qf-agent">
+              <img
+                class="qf-agent__photo"
+                src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png"
+                alt="Randy VanderVaate, founder of Funeral Funds"
+                width="500"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="qf-agent__text">
+                <p class="qf-agent__name">Randy VanderVaate</p>
+                <p class="qf-agent__role">Independent Life Insurance Broker</p>
+                <p class="qf-agent__intro">Funeral Funds isn’t a call center. When you call, you deal directly with Randy.</p>
+              </div>
+            </div>
+            <aside class="qf-why" aria-labelledby="qf-why-title">
+              <h2 class="qf-why__title" id="qf-why-title">Why Funeral Funds?</h2>
+              <ul class="qf-why__list" role="list">
+                <li>Independent insurance agent</li>
+                <li>Compare multiple insurance companies</li>
+                <li>Personal assistance with your coverage</li>
+                <li>Direct Contact: <a href={phone.href} data-qf-direct-call>{phone.display}</a></li>
+              </ul>
+            </aside>
+          </div>
+          <h2 class="qf-q qf-q--contact" id="qf-s7" tabindex="-1">Your Contact Information</h2>
           <dl class="qf-summary" aria-label="Your selections" data-qf-summary>
             <div><dt>Gender</dt><dd data-qf-sum="gender"></dd></div>
             <div><dt>Age</dt><dd data-qf-sum="age"></dd></div>
@@ -172,57 +204,28 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             <div><dt>Tobacco</dt><dd data-qf-sum="tobacco"></dd></div>
             <div><dt>Coverage</dt><dd data-qf-sum="coverage"></dd></div>
           </dl>
-          <!-- V3.3 (Randy, November 2026): two columns from 48rem (Randy and the
-               form left, "Why Funeral Funds?" right); one column on phones in
-               the order photo, name, phone, SEE MY RATES, then the trust list. -->
-          <div class="qf-contact">
-            <div class="qf-contact__main">
-              <div class="qf-agent">
-                <img
-                  class="qf-agent__photo"
-                  src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png"
-                  alt="Randy VanderVaate, founder of Funeral Funds"
-                  width="500"
-                  height="500"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="qf-agent__text">
-                  <p class="qf-agent__name">Randy VanderVaate</p>
-                  <p class="qf-agent__role">Independent Life Insurance Broker <span aria-hidden="true">&middot;</span> Founder of Funeral Funds</p>
-                  <p class="qf-agent__intro">Funeral Funds isn’t a call center. When you call, you deal directly with Randy.</p>
-                </div>
-              </div>
-              <form class="qf-form" data-qf-contact novalidate>
-                <div class="qf-field">
-                  <label class="qf-label" for="qf-first">First Name</label>
-                  <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="given-name" maxlength="60" required aria-describedby="qf-first-error" />
-                  <p class="qf-error" id="qf-first-error" hidden></p>
-                </div>
-                <div class="qf-field">
-                  <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
-                  <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
-                  <p class="qf-error" id="qf-phone-error" hidden></p>
-                </div>
-                <label class="qf-consent">
-                  <input type="checkbox" name="consent" data-qf-consent />
-                  <span>{CONSENT_TEXT}</span>
-                </label>
-                <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-submit>SEE MY RATES</button>
-                <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
-                <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
-              </form>
+          <form class="qf-form qf-form--contact" data-qf-contact novalidate>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-first">Full Name</label>
+              <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="name" maxlength="60" required aria-describedby="qf-first-error" />
+              <p class="qf-error" id="qf-first-error" hidden></p>
             </div>
-            <aside class="qf-why" aria-labelledby="qf-why-title">
-              <h3 class="qf-why__title" id="qf-why-title">Why Funeral Funds?</h3>
-              <ul class="qf-why__list" role="list">
-                <li>Independent insurance agent</li>
-                <li>Compare multiple insurance companies</li>
-                <li>Personal assistance with your coverage</li>
-                <li>Direct Contact: <a href={directContact.href} data-qf-direct-call>{directContact.display}</a></li>
-              </ul>
-            </aside>
-          </div>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
+              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
+              <p class="qf-error" id="qf-phone-error" hidden></p>
+            </div>
+            <div class="qf-field">
+              <label class="qf-consent" for="qf-consent">
+                <input type="checkbox" id="qf-consent" name="consent" required aria-describedby="qf-consent-error" data-qf-consent />
+                <span>{consentBefore}<a href="/privacy-policy/" target="_blank" rel="noopener">{CONSENT_LINK_TEXT}<span class="visually-hidden"> (opens in a new tab)</span></a>{consentAfter}</span>
+              </label>
+              <p class="qf-error" id="qf-consent-error" hidden></p>
+            </div>
+            <button class="btn qf-continue qf-btn-cta" type="submit" data-qf-submit>SEE MY RATES</button>
+            <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
+            <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
+          </form>
         </section>
 
         <!-- Step 8: the pricing screen (shown once the lead is accepted; the cards load in place) -->
@@ -315,7 +318,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           </div>
           <div class="qf-intake-done" data-qf-intake-done hidden>
             <p class="qf-intake__text" data-qf-intake-done-text></p>
-            <a class="btn btn--primary qf-continue qf-call-btn" href={lead.phone.href}>Call {lead.phone.display}</a>
+            <a class="btn btn--primary qf-continue qf-call-btn" href={phone.href}>Call {phone.display}</a>
             <button class="btn qf-continue qf-secondary" type="button" data-qf-intake-finish>Continue</button>
           </div>
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-intake-status></p>
@@ -416,27 +419,35 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-note { color: var(--color-text-muted); margin: 0; text-align: center; }
   .qf-consent { display: flex; gap: var(--space-3); align-items: flex-start; font-size: 1rem; line-height: 1.4; cursor: pointer; }
   .qf-form[hidden], .qf-field[hidden] { display: none; }
-  /* V3.3 contact step: Randy and the form, then "Why Funeral Funds?"; side by side from 48rem. */
-  .qf-contact { display: grid; gap: var(--space-4); max-width: 52rem; margin-inline: auto; }
-  @media (min-width: 48rem) { .qf-contact { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: var(--space-6); align-items: start; } }
-  .qf-contact__main { display: grid; gap: var(--space-4); min-width: 0; }
-  .qf-contact .qf-form { max-width: none; margin: 0; gap: var(--space-3); }
-  .qf-agent { display: flex; gap: var(--space-3); align-items: center; }
-  .qf-agent__photo { flex: none; width: 5.5rem; height: 5.5rem; border-radius: 50%; border: 3px solid #e3e8e5; object-fit: cover; }
+  /* V3.7 contact step: a compact trust section (Randy left, "Why Funeral Funds?"
+     right from 48rem; stacked on phones), then the heading, the summary and a
+     narrower form. */
+  .qf-trust { display: grid; gap: var(--space-3); max-width: 46rem; margin: 0 auto var(--space-4); }
+  @media (min-width: 48rem) { .qf-trust { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-4); align-items: center; } }
+  .qf-agent { display: flex; gap: var(--space-3); align-items: center; min-width: 0; }
+  .qf-agent__photo { flex: none; width: 4.75rem; height: 4.75rem; border-radius: 50%; border: 3px solid #e3e8e5; object-fit: cover; }
   .qf-agent__text { min-width: 0; }
   .qf-agent__text p { margin: 0; }
-  .qf-agent__name { font-size: 1.25rem; font-weight: 800; line-height: 1.2; color: #173f35; }
+  .qf-agent__name { font-size: 1.1875rem; font-weight: 800; line-height: 1.2; color: #173f35; }
   .qf-agent__role { font-size: 0.9375rem; font-weight: 700; line-height: 1.3; color: var(--color-text-muted); }
-  .qf-agent__intro { margin-top: var(--space-1) !important; font-size: 1rem; line-height: 1.4; color: var(--color-text); }
-  .qf-why { background: var(--color-surface); border-radius: 0.75rem; padding: var(--space-4); }
-  .qf-why__title { margin: 0 0 var(--space-3); font-size: 1.25rem; line-height: 1.2; color: #173f35; }
-  .qf-why__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
-  .qf-why__list li { position: relative; padding-left: 2rem; font-size: 1.0625rem; font-weight: 700; line-height: 1.35; color: var(--color-text); }
+  .qf-agent__intro { margin-top: 0.25rem !important; font-size: 1rem; line-height: 1.35; color: var(--color-text); }
+  .qf-why { background: var(--color-surface); border-radius: 0.75rem; padding: var(--space-3) var(--space-4); }
+  .qf-why__title { margin: 0 0 var(--space-2); font-size: 1.125rem; line-height: 1.2; color: #173f35; }
+  .qf-why__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.375rem; }
+  .qf-why__list li { position: relative; padding-left: 1.75rem; font-size: 1rem; font-weight: 700; line-height: 1.35; color: var(--color-text); }
   .qf-why__list li::before {
-    content: ''; position: absolute; left: 0; top: 0.05em; width: 1.375rem; height: 1.375rem; border-radius: 50%;
-    background: #173f35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E") center / 0.875rem no-repeat;
+    content: ''; position: absolute; left: 0; top: 0.1em; width: 1.25rem; height: 1.25rem; border-radius: 50%;
+    background: #173f35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E") center / 0.8rem no-repeat;
   }
-  .qf-why__list a { color: #173f35; font-weight: 800; white-space: nowrap; text-decoration: underline; display: inline-block; min-height: var(--tap-target); line-height: var(--tap-target); margin-block: calc((1.35em - var(--tap-target)) / 2); }
+  /* The number stays a 44px touch target without adding line height. */
+  .qf-why__list a { position: relative; color: #173f35; font-weight: 800; white-space: nowrap; text-decoration: underline; }
+  .qf-why__list a::after { content: ''; position: absolute; inset: 50% -0.25rem auto; height: var(--tap-target); transform: translateY(-50%); }
+  .qf-q--contact { margin-bottom: var(--space-3); }
+  .qf-form--contact { max-width: 32rem; gap: var(--space-3); }
+  .qf-form--contact .qf-field { gap: 0.25rem; }
+  .qf-form--contact .qf-label { margin-bottom: 0; }
+  .qf-form--contact .qf-input { min-height: 3.125rem; }
+  .qf-consent a { color: var(--color-primary); font-weight: 700; text-decoration: underline; }
   .qf-consent input { width: 1.75rem; height: 1.75rem; flex: none; margin-top: 0; accent-color: var(--color-primary); }
   .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
   .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }

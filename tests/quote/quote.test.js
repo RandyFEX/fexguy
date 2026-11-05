@@ -82,7 +82,7 @@ function client(env, { fetchImpl, ip = `10.0.0.${++ipCounter}`, now, visit = `vi
 let phoneN = 2000;
 const nextPhone = () => `(214) 77${String(phoneN++).slice(-1)}-${String(1000 + phoneN).slice(-4)}`;
 const startBody = (o = {}) => ({
-  action: 'start', firstName: 'Mary', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
+  action: 'start', firstName: 'Mary Smith', phone: nextPhone(), state: 'Ohio', intendedUse: 'cremation', consent: true, consentVersion: CONSENT_VERSION,
   quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 },
   source: { page: '/free-quote/', utmSource: 'google', utmCampaign: 'fall' }, ...o,
 });
@@ -124,10 +124,10 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(crm.calls[0].headers.authorization, 'Bearer pit-test-token');
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
-  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
   assert.deepEqual(crm.calls[1].body, { tags: ['Funeral Funds - Website Quote'] });
   const note = crm.calls[2].body.body;
-  for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Consent to calls/texts: Yes', 'Phone verification: not verified (no SMS verification)'])
+  for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Full name: Mary Ann Smith', 'Consent to calls/texts: Yes, box checked', `Consent text: ${CONSENT_TEXT}`, `(${rec.consent.at}, ${CONSENT_VERSION})`, 'Phone verification: not verified (no SMS verification)'])
     assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
   assert.ok(!note.includes('TEST LEAD') && !note.includes('pit-test-token'));
   // The record never claims the phone was verified.
@@ -143,10 +143,10 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   const other = client(PROD);
   assert.equal(await prodPrice(other), 401);
   assert.equal((await other.call({ action: 'session' }, PO)).body.status, 'not-verified');
-  // A contact without a last name sends no empty lastName (never blanks a CRM field).
-  const solo = fakeCrm();
-  await client(PROD, { fetchImpl: solo.fetchImpl }).call(startBody({ firstName: 'Mary' }), PO);
-  assert.equal('lastName' in solo.calls[0].body, false);
+  // A name with a suffix keeps it with the last name; the full name is sent as typed.
+  const sfx = fakeCrm();
+  await client(PROD, { fetchImpl: sfx.fetchImpl }).call(startBody({ firstName: 'John  Smith Jr.' }), PO);
+  assert.deepEqual([sfx.calls[0].body.name, sfx.calls[0].body.firstName, sfx.calls[0].body.lastName], ['John Smith Jr.', 'John', 'Smith Jr.']);
 });
 
 test('V3.3: a failed Agent CRM delivery keeps the saved lead, reports no success (no session, no conversion), and the retry re-delivers the same lead', async () => {
@@ -158,7 +158,7 @@ test('V3.3: a failed Agent CRM delivery keeps the saved lead, reports no success
     const first = await c.call(startBody({ phone }), PO);
     assert.equal(first.http, 502);
     assert.equal(first.body.status, 'delivery-failed');
-    assert.match(first.body.message, /try again, or call 888-862-9456/);
+    assert.match(first.body.message, /try again, or call 888-656-4648/);
     assert.equal(first.setCookie, null, 'no session');
     assert.equal(first.body.leadConversion, undefined);
     assert.equal(await prodPrice(c), 401, 'no rates without a delivered lead');
@@ -215,7 +215,7 @@ test('V3.3: a lead labeled TEST is never an advertising conversion; a repeat nev
 test('V3.3: without the lead store or session key the funnel is unavailable (503, with the phone number)', async () => {
   const res = await handleQuote(new Request('https://x.test/api/quote/', { method: 'POST', headers: { 'content-type': 'application/json', origin: ORIGIN, 'x-quote-visit': 'v'.repeat(20) }, body: JSON.stringify(startBody()) }), PREVIEW, { store: null });
   assert.equal(res.status, 503);
-  assert.match((await res.json()).message, /888-862-9456/);
+  assert.match((await res.json()).message, /888-656-4648/);
 });
 
 test('pricing gate: no session, forged, tampered or expired tokens get no prices', async () => {
@@ -274,7 +274,7 @@ test('free repricing after the submission', async () => {
 
 test('evidence: consent, verification, quote, source and client recorded; survives session expiry; Apply Now recorded with a server price', async () => {
   const c = client(PREVIEW);
-  const start = await c.call(startBody({ consent: false, consentVersion: undefined }));
+  const start = await c.call(startBody());
   const id = start.body.lead;
   const apply = await c.call({ action: 'apply', category: 'guaranteed-acceptance', quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
   assert.equal(apply.body.status, 'ok');
@@ -282,12 +282,12 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   // A forged price in the request is ignored: the server re-prices.
   const r = await c.store.getLead(id);
   assert.equal(r.mode, 'test');
-  assert.equal(r.firstName, 'Mary');
+  assert.equal(r.firstName, 'Mary Smith');
   assert.match(r.phone, /^\+1\d{10}$/);
   assert.equal(r.state, 'Ohio');
   assert.ok(r.submittedAt);
   assert.deepEqual(r.verification, { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null });
-  assert.deepEqual([r.consent.given, r.consent.action, r.consent.text], [false, 'left consent box unchecked', null]);
+  assert.deepEqual([r.consent.given, r.consent.action, r.consent.version, r.consent.text], [true, 'checked consent box', CONSENT_VERSION, CONSENT_TEXT]);
   assert.equal(r.source.utmSource, 'google');
   assert.equal(r.client.userAgent, 'TestAgent/1.0');
   assert.ok(r.client.ip);
@@ -303,13 +303,22 @@ test('evidence: consent, verification, quote, source and client recorded; surviv
   assert.ok(sessTtl > 0 && sessTtl <= SESSION_MS);
 });
 
-test('consent given: exact text and version stored; unknown versions refused', async () => {
+test('V3.7 consent: required and affirmative; exact text and version stored; unchecked, missing, non-true or old/unknown versions refused with nothing saved', async () => {
+  assert.equal(CONSENT_VERSION, 'ff-quote-consent-v4-2026-11');
+  assert.equal(CONSENT_TEXT, 'By checking this box, I agree to receive calls and SMS text messages from Funeral Funds about my insurance request, according to the Privacy Policy.');
   const c = client(PREVIEW);
   const start = await c.call(startBody());
   const r = await c.store.getLead(start.body.lead);
   assert.deepEqual([r.consent.given, r.consent.version, r.consent.text], [true, CONSENT_VERSION, CONSENT_TEXT]);
-  assert.equal((await c.call(startBody({ consentVersion: 'made-up' }))).http, 400);
-  assert.equal((await c.call(startBody({ consent: 'yes' }))).http, 400);
+  for (const o of [{ consent: false }, { consent: undefined }, { consent: 'yes' }, { consent: 1 }]) {
+    const x = client(PREVIEW);
+    const res = await x.call(startBody(o));
+    assert.equal(res.http, 400, JSON.stringify(o));
+    assert.equal(res.body.field, 'consent');
+    assert.equal(res.body.message, 'Please check the box to agree to receive calls and texts before continuing.');
+    assert.equal(res.setCookie, null, 'no session without consent');
+  }
+  for (const v of ['made-up', 'ff-quote-consent-v3-2026-11', undefined]) assert.equal((await client(PREVIEW).call(startBody({ consentVersion: v }))).http, 400, String(v));
 });
 
 test('abuse and duplicate protection: per-IP and per-phone submission limits', async () => {
@@ -471,10 +480,12 @@ test('Start New Quote ends the session but keeps the lead, its consent record an
   assert.equal(after.verification.phoneVerified, false);
   assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'lead-accepted', 'quote-restarted']);
   // A repeat request from the same phone is a new lead (the CRM handles duplicates); consent is asked again.
-  const again = await c.call(startBody({ phone: '214-867-5309', consent: false, consentVersion: undefined }));
+  const noConsent = await c.call(startBody({ phone: '214-867-5309', consent: false }));
+  assert.equal(noConsent.http, 400);
+  const again = await c.call(startBody({ phone: '214-867-5309' }));
   assert.equal(again.http, 200);
   assert.notEqual(again.body.lead, start.body.lead);
-  assert.equal((await c.store.getLead(again.body.lead)).consent.given, false);
+  assert.equal((await c.store.getLead(again.body.lead)).consent.given, true);
 });
 
 // ---- Quote System v2.9: intended use (lead information only) ----
@@ -510,17 +521,20 @@ test('Call to Get Approved tap (v3.7): verified session only, server price and o
   assert.equal((await c.call({ action: 'call-click', category: 'nope', quote })).http, 400);
 });
 
-test('one "Your Name" field (v4.5): a first name or a full name is accepted and stored as typed; nothing else is required', async () => {
-  for (const name of ['Mary', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil']) {
+test('V3.7 Full Name: a meaningful full name (multiple words, hyphens, apostrophes, suffixes) is accepted and stored as typed; a single word or junk is refused', async () => {
+  for (const name of ['Mary Smith', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil', 'John Smith Jr.', 'Robert King III', 'José Álvarez', 'Smith, John']) {
     const c = client(PREVIEW);
     const r = await c.call(startBody({ firstName: name }));
     assert.equal(r.http, 200, name);
     assert.equal((await c.store.getLead(r.body.lead)).firstName, name);
   }
-  assert.equal((await client(PREVIEW).call(startBody({ firstName: 'x'.repeat(61) }))).http, 200, 'over-long names are trimmed, not refused');
-  const refused = await client(PREVIEW).call(startBody({ firstName: '' }));
-  assert.equal(refused.http, 400);
-  assert.equal(refused.body.field, 'name', 'the page reopens the name field');
+  assert.equal((await client(PREVIEW).call(startBody({ firstName: `Mary ${'x'.repeat(61)}` }))).http, 200, 'over-long names are trimmed, not refused');
+  for (const bad of ['', 'Mary', 'J. R.', 'A B', 'Mary 2', '<b>Mary</b> Smith', 'x'.repeat(61)]) {
+    const refused = await client(PREVIEW).call(startBody({ firstName: bad }));
+    assert.equal(refused.http, 400, bad);
+    assert.equal(refused.body.field, 'name', 'the page reopens the name field');
+    assert.equal(refused.body.message, 'Please enter your full name (first and last name).');
+  }
   const badPhone = await client(PREVIEW).call(startBody({ phone: '214-555-0123' }));
   assert.equal(badPhone.body.field, 'phone', 'the page reopens the phone field');
 });
@@ -559,7 +573,7 @@ test('v6.2: the funnel saves the lead and makes no outbound request but Agent CR
     assert.equal(apply.body.status, 'ok');
     assert.equal(apply.body.saved, true);
     const rec = await c.store.getLead(start.body.lead);
-    assert.equal(rec.firstName, 'Mary');
+    assert.equal(rec.firstName, 'Mary Smith');
     assert.deepEqual({ ...rec.source }, source);
     assert.equal(rec.consent.given, true);
     assert.equal(rec.applications.length, 1);

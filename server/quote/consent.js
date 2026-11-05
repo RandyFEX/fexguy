@@ -12,11 +12,21 @@
 // never remove an old version (old evidence refers to it).
 
 //
+// v4 (Randy, November 2026, V3.7): the consent box is REQUIRED (never
+// pre-checked; SEE MY RATES submits only after the visitor checks it).
+// Randy's approved wording; the page links "Privacy Policy" to
+// /privacy-policy/ (CONSENT_LINK_TEXT).
+//
 // v3 (Randy, November 2026): Randy's friendlier opening sentence. The
 // subject (life insurance) and the automated-messages disclosure of v2 are
 // kept in a second sentence; the rest is unchanged.
-export const CONSENT_VERSION = 'ff-quote-consent-v3-2026-11';
+export const CONSENT_VERSION = 'ff-quote-consent-v4-2026-11';
 export const CONSENT_TEXT =
+  'By checking this box, I agree to receive calls and SMS text messages from Funeral Funds about my insurance request, according to the Privacy Policy.';
+/** The words in CONSENT_TEXT the page shows as a link to the privacy policy. */
+export const CONSENT_LINK_TEXT = 'Privacy Policy';
+export const CONSENT_REQUIRED_MESSAGE = 'Please check the box to agree to receive calls and texts before continuing.';
+const CONSENT_V3 =
   'I welcome help from Funeral Funds and agree to receive calls and texts at the number I provided. ' +
   'These calls and texts are about life insurance and may include automated messages. ' +
   'Msg & data rates may apply. Reply STOP to opt out. Consent is not required to get prices or buy insurance.';
@@ -43,5 +53,5 @@ const VERIFY_NOTICE_V1 = 'We will text a 6-digit code to this number to verify i
 const VERIFY_NOTICE_V2 = "We'll text a 6-digit verification code to your mobile number. Msg & data rates may apply.";
 
 /** Text of every version ever shown (never remove an entry: old evidence refers to it). */
-export const CONSENT_VERSIONS = { 'ff-quote-consent-v1-draft-2026-11': CONSENT_V1, 'ff-quote-consent-v2-2026-11': CONSENT_V2, [CONSENT_VERSION]: CONSENT_TEXT };
+export const CONSENT_VERSIONS = { 'ff-quote-consent-v1-draft-2026-11': CONSENT_V1, 'ff-quote-consent-v2-2026-11': CONSENT_V2, 'ff-quote-consent-v3-2026-11': CONSENT_V3, [CONSENT_VERSION]: CONSENT_TEXT };
 export const VERIFY_NOTICE_VERSIONS = { 'ff-quote-verify-notice-v1-2026-11': VERIFY_NOTICE_V1, 'ff-quote-verify-notice-v2-2026-11': VERIFY_NOTICE_V2, 'ff-quote-verify-notice-v3-2026-11': VERIFY_NOTICE_V3, [VERIFY_NOTICE_VERSION]: VERIFY_NOTICE_TEXT };

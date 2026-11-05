@@ -30,8 +30,11 @@ export function leadSource(record) {
 
 /** Contact fields for the upsert. @param {any} record @param {string} locationId */
 export function crmContact(record, locationId) {
-  const [first, ...rest] = String(record.firstName ?? '').trim().split(/\s+/);
-  return compact({ locationId, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: 'Funeral Funds Website Quote' });
+  // V3.7: the visitor's full name as typed (`name`), split into first name and
+  // the rest (last name with any suffix, e.g. "Smith Jr.").
+  const full = String(record.firstName ?? '').trim().replace(/\s+/g, ' ');
+  const [first, ...rest] = full.split(' ');
+  return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: 'Funeral Funds Website Quote' });
 }
 
 /**
@@ -63,7 +66,9 @@ export function crmNote(record, rates = []) {
     s.utmContent ? `UTM content: ${s.utmContent}` : null,
     s.landingPage ? `Landing page: ${s.landingPage}` : null,
     s.originUrl ? `Article: ${s.originUrl}` : null,
-    record.consent?.given ? `Consent to calls/texts: Yes (${record.consent.at}, ${record.consent.version})` : 'Consent to calls/texts: Not given (box left unchecked)',
+    record.firstName ? `Full name: ${String(record.firstName).trim()}` : null,
+    record.consent?.given ? `Consent to calls/texts: Yes, box checked (${record.consent.at}, ${record.consent.version})` : 'Consent to calls/texts: Not given (box left unchecked)',
+    record.consent?.given && record.consent.text ? `Consent text: ${record.consent.text}` : null,
     // V3.3: no SMS verification; the number is exactly as the visitor typed it.
     `Phone verification: ${v.provider === 'temporary-public-test-code' ? 'not SMS-verified (temporary access code)' : 'not verified (no SMS verification)'}`,
   ];
