@@ -145,7 +145,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   // Texting page V1.1: the hero button is Prepare My Text (no SMS number configured yet: no link);
   // the other three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === 'Prepare My Text' && f.text.icon && f.text.href === null && f.text.note === "We've prepared your text for you. Just review it and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === 'Prepare My Text' && f.text.icon && f.text.href === null && f.text.note === "Just review your prewritten text in your messaging app and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -586,7 +586,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
       assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Requested", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
-      assert(r.fb.labels.join('|') === 'Coverage Amount|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
+      assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       const h = r.fb.handoff;
       assert(h.v === 1 && h.selection.tierId === id && `$${h.selection.monthlyPremium}` === r.card && h.selection.coverage === Number(r.coverage) && h.selection.carrier && typeof h.inputs.age === 'number' && ['male', 'female'].includes(h.inputs.gender) && typeof h.inputs.tobacco === 'boolean' && h.attribution.utmSource === 'facebook' && h.attribution.utmCampaign === 'test', `handoff ${JSON.stringify(h)}`);
       assert(!JSON.stringify(h).match(/answer|health|condition/i), 'medical data in the handoff');
@@ -779,7 +779,7 @@ await check('/facebook/ quote box v1.3: no 12-hour heading, large identical figu
       return { title: !!box.querySelector('.fb-quote__title'), twelveHours: /remain active for the next 12 hours/i.test(document.body.innerText), dt: [...box.querySelectorAll('dt')].map((d) => d.textContent.trim()), dd, note: n.textContent.trim(), noteSize: parseFloat(ns.fontSize), noteLines: Math.round(n.getBoundingClientRect().height / parseFloat(ns.lineHeight)), boxRight: box.getBoundingClientRect().right, vw: document.documentElement.clientWidth, docW: document.documentElement.scrollWidth };
     });
     assert(!r.title && !r.twelveHours, `${w}: old 12-hour message still shown ${JSON.stringify(r)}`);
-    assert(r.dt.join('|') === 'Coverage Amount|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
+    assert(r.dt.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && r.dd[0].text === '$25,000' && r.dd[1].text === '$123.45', `${w}: values ${JSON.stringify(r)}`);
     assert(r.dd[0].size === r.dd[1].size && r.dd[0].weight === r.dd[1].weight && parseFloat(r.dd[0].size) >= (w === '1440' ? 56 : 42), `${w}: figure sizes ${JSON.stringify(r.dd)}`);
     assert(w === '1440' ? r.dd[0].top === r.dd[1].top : r.dd[0].top < r.dd[1].top, `${w}: layout ${JSON.stringify(r.dd)}`);
     assert(r.dd.every((d) => d.scroll && d.right <= r.boxRight + 1) && r.docW <= r.vw, `${w}: overflow ${JSON.stringify(r)}`);

@@ -150,21 +150,23 @@ const advantage = [
              recent handoff (src/scripts/quote-handoff.ts); hidden otherwise. -->
         <div class="fb-quote" data-fb-quote hidden>
           <dl class="fb-quote__grid">
-            <div><dt>Coverage Amount</dt><dd data-fb-quote-coverage></dd></div>
+            <div><dt>Your Selected Coverage</dt><dd data-fb-quote-coverage></dd></div>
             <div><dt>Estimated Monthly Rate</dt><dd data-fb-quote-premium></dd></div>
           </dl>
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
         <div class="fb-call">
-          <!-- Texting page V1.1: opens the visitor's own messaging app with a
-               prepared text to SMS_NUMBER (src/config/phones.ts); nothing is
-               sent until the visitor presses Send. No href until that number is set. -->
+          <!-- Texting handoff V4.0: opens the visitor's own messaging app with
+               the prewritten text (src/scripts/sms-link.js) to SMS_NUMBER
+               (src/config/phones.ts); nothing is sent until the visitor presses
+               Send. No link until that number is set and a quote is selected. -->
           <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
             <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="12" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="16.5" cy="10.25" r="1.5" fill="#c2410c" /></svg>
             <span>Prepare My Text</span>
           </a>
-          <p class="fb-text__note">We've prepared your text for you. Just review it and hit Send.</p>
-          <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
+          <p class="fb-text__note">Just review your prewritten text in your messaging app and hit Send.</p>
+          <!-- Fallback where a device can't fill in the text: copy it instead. -->
+          <button class="fb-text__copy" type="button" data-fb-copy hidden>Copy my message</button>
         </div>
       </div>
     </section>
@@ -264,6 +266,7 @@ const advantage = [
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
   import { SMS_NUMBER as SMS } from '@/config/phones';
+  import { isIOS, prewrittenText, smsHref } from '@/scripts/sms-link.js';
 
   // Phone number by traffic source (Randy, November 2026): the page is built
   // with the main website number (also the fallback without JavaScript);
@@ -328,24 +331,44 @@ const advantage = [
     }
   }
   };
-  // Texting page V1.1: "Prepare My Text" opens the visitor's own messaging
-  // app with a prepared text (it never sends anything itself). Only with
-  // the approved SMS number (src/config/phones.ts SMS_NUMBER); until then it
-  // has no link and does nothing.
-  const prepareText = () => {
+  // Texting handoff V4.0: "Prepare My Text" opens the visitor's own messaging
+  // app addressed to the approved SMS number with Randy's prewritten text
+  // (first name, selected coverage and monthly premium). It never sends
+  // anything; the visitor presses Send. The first name comes from the
+  // visitor's own verified session (never stored in the browser). Without the
+  // number (src/config/phones.ts SMS_NUMBER) or a selected quote: no link.
+  const prepareText = async () => {
     const btn = document.querySelector<HTMLAnchorElement>('[data-fb-text]');
-    const digits = (SMS ?? '').replace(/\D/g, '').slice(-10);
-    if (!btn || digits.length !== 10) return;
+    const copy = document.querySelector<HTMLButtonElement>('[data-fb-copy]');
     const h = readHandoff();
-    const body = h
-      ? `Hi Funeral Funds, I just reviewed my insurance quote ($${h.selection.coverage.toLocaleString('en-US')} coverage, about $${h.selection.monthlyPremium} a month) and would like some help.`
-      : 'Hi Funeral Funds, I just reviewed my insurance quote and would like some help.';
-    btn.href = `sms:+1${digits}?&body=${encodeURIComponent(body)}`;
+    if (!btn || !h) return;
+    let firstName = '';
+    try {
+      const res = await fetch('/api/quote/', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': localStorage.getItem('ff:quote-visit') ?? '' }, body: JSON.stringify({ action: 'session' }), credentials: 'same-origin' });
+      const s = await res.json().catch(() => ({}));
+      if (s.status === 'verified' && typeof s.firstName === 'string') firstName = s.firstName;
+    } catch {}
+    const body = prewrittenText({ firstName, coverage: h.selection.coverage, monthlyPremium: h.selection.monthlyPremium });
+    btn.dataset.smsBody = body;
+    const href = smsHref(SMS, body, isIOS(navigator));
+    if (!href) return;
+    btn.href = href;
     btn.setAttribute('aria-disabled', 'false');
+    if (copy && navigator.clipboard) {
+      copy.hidden = false;
+      copy.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(body);
+          copy.textContent = 'Message copied';
+        } catch {
+          copy.textContent = 'Copy my message';
+        }
+      });
+    }
   };
   const ready = () => {
     showSelectedQuote();
-    prepareText();
+    void prepareText();
   };
   if (previewRequest() === 'apply') void preparePreviewApply().finally(ready);
   else ready();
@@ -500,10 +523,27 @@ const advantage = [
   }
   .fb-text__note {
     margin: calc(-1 * var(--space-1)) 0 0;
+    text-wrap: balance;
     font-size: 0.9375rem;
     line-height: 1.4;
     color: #ffffff;
     text-align: center;
+  }
+  .fb-text__copy {
+    align-self: center;
+    min-height: var(--tap-target, 44px);
+    padding: 0 var(--space-3);
+    border: 0;
+    background: none;
+    color: #ffffff;
+    font: inherit;
+    font-size: 0.9375rem;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    cursor: pointer;
+  }
+  .fb-text__copy[hidden] {
+    display: none;
   }
   .fb-hero__reassure {
     margin: calc(-1 * var(--space-2)) 0 var(--space-3);

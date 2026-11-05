@@ -677,3 +677,35 @@ test('direct preview access: preview-sample works with or without Twilio (no Twi
   assert.equal(p.http, 404);
   assert.equal(p.setCookie, null);
 });
+
+test('texting handoff V4.0: the approved prewritten text and the iOS/Android SMS link formats', async () => {
+  const { dollars, firstNameOf, isIOS, prewrittenText, smsHref } = await import('../../src/scripts/sms-link.js');
+  assert.equal(dollars(15000), '$15,000');
+  assert.equal(dollars('60.00'), '$60');
+  assert.equal(dollars('61.69'), '$61.69');
+  assert.equal(firstNameOf('  Mary Ann Smith '), 'Mary');
+  assert.equal(prewrittenText({ firstName: 'Brandon', coverage: 15000, monthlyPremium: '60.00' }), 'Hi, this is Brandon. I have a few questions about my $15,000 final expense insurance quote for $60/month.');
+  assert.equal(prewrittenText({ firstName: 'Mary Ann', coverage: 10000, monthlyPremium: '61.69' }), 'Hi, this is Mary. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.');
+  assert.equal(prewrittenText({ firstName: '', coverage: 10000, monthlyPremium: '61.69' }), 'Hi. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.');
+  assert.equal(prewrittenText({ firstName: 'Mary', coverage: 0, monthlyPremium: '61.69' }), '');
+  const body = 'Hi, this is Mary. I have a few questions about my $10,000 final expense insurance quote for $61.69/month.';
+  const enc = encodeURIComponent(body);
+  assert.equal(smsHref('(555) 555-0100'.replace('555) 555', '214) 555'), body, true), `sms:+12145550100&body=${enc}`);
+  assert.equal(smsHref('2145550100', body, false), `sms:+12145550100?body=${enc}`);
+  assert.equal(smsHref('12145550100', body, false), `sms:+12145550100?body=${enc}`);
+  assert.equal(smsHref(null, body, true), '');
+  assert.equal(smsHref('123', body, true), '');
+  assert.equal(decodeURIComponent(smsHref('2145550100', body, false).split('?body=')[1]), body, 'body round-trips (& and $ encoded)');
+  assert.ok(isIOS({ userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)' }));
+  assert.ok(isIOS({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 5 }));
+  assert.ok(!isIOS({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8)' }));
+  assert.ok(!isIOS({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 0 }));
+});
+
+test('texting handoff V4.0: the session answer carries the first name of this verified visit only', async () => {
+  const c = client(PREVIEW);
+  assert.equal((await c.call({ action: 'session' })).body.firstName, undefined, 'no name without a verified session');
+  const r = await c.call({ action: 'preview-sample' });
+  assert.equal(r.http, 200);
+  assert.equal((await c.call({ action: 'session' })).body.firstName, 'Preview');
+});
