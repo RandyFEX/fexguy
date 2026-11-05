@@ -138,10 +138,14 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     forms: document.querySelectorAll('form').length,
     oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
     ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
+    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'); return t && { label: t.textContent.trim(), icon: !!t.querySelector('svg'), href: t.getAttribute('href'), note: t.nextElementSibling?.textContent.trim() }; })(),
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
-  assert(f.ctas.length === 4 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  // Texting page V1.1: the hero button is Prepare My Text (no SMS number configured yet: no link);
+  // the other three call buttons are unchanged.
+  assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
+  assert(f.text && f.text.label === 'Prepare My Text' && f.text.icon && f.text.href === null && f.text.note === "We've prepared your text for you. Just review it and hit Send.", `Prepare My Text ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -580,7 +584,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (seen.length) await results();
       const r = await applyAndRead(id);
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
-      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Ready to Apply for Your Burial Insurance?', `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Requested", `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
       assert(r.fb.labels.join('|') === 'Coverage Amount|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       const h = r.fb.handoff;

@@ -32,7 +32,7 @@ import HeaderPhone from '@/components/HeaderPhone.astro';
 import HeaderLogo from '@/components/HeaderLogo.astro';
 import ReviewHighlights from '@/components/home/ReviewHighlights.astro';
 import MeetRandy from '@/components/home/MeetRandy.astro';
-import { PAGE_PHONES, withPagePhone } from '@/config/phones';
+import { PAGE_PHONES, SMS_NUMBER, withPagePhone } from '@/config/phones';
 import { site } from '@/config/site';
 import { footerDisclaimer } from '@/lib/footer-notes';
 
@@ -139,7 +139,9 @@ const advantage = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Ready to Apply for Your Burial Insurance?</h1>
+        <h1 class="fb-hero__title" id="fb-title">Here's What You Requested</h1>
+        <!-- Texting page V1.1: shown with the selected quote (below) only. -->
+        <p class="fb-hero__reassure" data-fb-reassure hidden>Don't worry, you can always adjust these amounts later.</p>
         <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
              first time this visit reaches this screen (src/scripts/quote-offer.ts). -->
         <p class="fb-offer" data-fb-offer hidden>Your offer is available for: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
@@ -154,7 +156,14 @@ const advantage = [
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
         </div>
         <div class="fb-call">
-          <a class="btn fb-call__btn" href={phone.href}>CALL NOW TO COMPLETE YOUR APPLICATION</a>
+          <!-- Texting page V1.1: opens the visitor's own messaging app with a
+               prepared text to SMS_NUMBER (src/config/phones.ts); nothing is
+               sent until the visitor presses Send. No href until that number is set. -->
+          <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="12" cy="10.25" r="1.5" fill="#c2410c" /><circle cx="16.5" cy="10.25" r="1.5" fill="#c2410c" /></svg>
+            <span>Prepare My Text</span>
+          </a>
+          <p class="fb-text__note">We've prepared your text for you. Just review it and hit Send.</p>
           <a class="fb-call__number" href={phone.href} aria-label={`Call ${phone.display}`}>{phone.display}</a>
         </div>
       </div>
@@ -254,6 +263,7 @@ const advantage = [
   import { preparePreviewApply, previewRequest } from '@/scripts/quote-preview';
   import { isFacebookAdVisit, recordVisit } from '@/scripts/lead-source';
   import { lead } from '@/config/lead';
+  import { SMS_NUMBER as SMS } from '@/config/phones';
 
   // Phone number by traffic source (Randy, November 2026): the page is built
   // with the main website number (also the fallback without JavaScript);
@@ -298,6 +308,8 @@ const advantage = [
     coverageOut.textContent = '$' + handoff.selection.coverage.toLocaleString('en-US');
     premiumOut.textContent = '$' + handoff.selection.monthlyPremium;
     quoteBox.hidden = false;
+    const reassure = document.querySelector<HTMLElement>('[data-fb-reassure]');
+    if (reassure) reassure.hidden = false;
     // At 0:00 the selected-quote offer expires (its summary is hidden); the
     // call buttons stay, and Start New Quote begins a fresh quote.
     const offer = document.querySelector<HTMLElement>('[data-fb-offer]');
@@ -316,8 +328,27 @@ const advantage = [
     }
   }
   };
-  if (previewRequest() === 'apply') void preparePreviewApply().finally(showSelectedQuote);
-  else showSelectedQuote();
+  // Texting page V1.1: "Prepare My Text" opens the visitor's own messaging
+  // app with a prepared text (it never sends anything itself). Only with
+  // the approved SMS number (src/config/phones.ts SMS_NUMBER); until then it
+  // has no link and does nothing.
+  const prepareText = () => {
+    const btn = document.querySelector<HTMLAnchorElement>('[data-fb-text]');
+    const digits = (SMS ?? '').replace(/\D/g, '').slice(-10);
+    if (!btn || digits.length !== 10) return;
+    const h = readHandoff();
+    const body = h
+      ? `Hi Funeral Funds, I just reviewed my insurance quote ($${h.selection.coverage.toLocaleString('en-US')} coverage, about $${h.selection.monthlyPremium} a month) and would like some help.`
+      : 'Hi Funeral Funds, I just reviewed my insurance quote and would like some help.';
+    btn.href = `sms:+1${digits}?&body=${encodeURIComponent(body)}`;
+    btn.setAttribute('aria-disabled', 'false');
+  };
+  const ready = () => {
+    showSelectedQuote();
+    prepareText();
+  };
+  if (previewRequest() === 'apply') void preparePreviewApply().finally(ready);
+  else ready();
 
   // Browsers only scroll a focused field into view when it is outside the
   // window, so a field partly behind the fixed mobile call bar stays there.
@@ -440,6 +471,49 @@ const advantage = [
     background: var(--color-cta);
     color: var(--color-on-cta);
     filter: brightness(0.9);
+  }
+  /* Texting page V1.1: "Prepare My Text" keeps the call button's orange,
+     size and type; icon and label stay together on one line. */
+  .fb-text__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3.5rem;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .fb-text__btn svg {
+    flex: none;
+  }
+  .fb-text__btn:hover {
+    background: var(--color-cta);
+    color: var(--color-on-cta);
+    filter: brightness(0.9);
+  }
+  .fb-text__note {
+    margin: calc(-1 * var(--space-1)) 0 0;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+  .fb-hero__reassure {
+    margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+  .fb-hero__reassure[hidden] {
+    display: none;
   }
 </style>
 

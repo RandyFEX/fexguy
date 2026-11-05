@@ -75,12 +75,50 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       url: location.pathname + location.search,
       hscroll: document.documentElement.scrollWidth > innerWidth,
     }));
-    assert(r.h1 === 'Ready to Apply for Your Burial Insurance?' && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
+    assert(r.h1 === "Here's What You Requested" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
     if (OUT) await page.screenshot({ path: `${OUT}/preview-apply-${name}.png`, fullPage: true });
     await ctx.close();
     return `${r.dd.join(' / ')}`;
   });
 }
+
+await check('texting page V1.1 at 320, 375, 390, 430 and 1280px: wording, one-line Prepare My Text, no SMS link without the approved number', async () => {
+  const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
+  await page.goto(`${srv.base}/facebook/?preview=apply`);
+  await page.waitForSelector('[data-fb-quote]:not([hidden])', { timeout: 10000 });
+  const sizes = [];
+  for (const w of [320, 375, 390, 430, 1280]) {
+    await page.setViewportSize({ width: w, height: 900 });
+    await page.waitForTimeout(100);
+    const r = await page.evaluate(() => {
+      const h1 = document.querySelector('h1'), re = document.querySelector('[data-fb-reassure]'), box = document.querySelector('[data-fb-quote]');
+      const btn = document.querySelector('[data-fb-text]'), note = document.querySelector('.fb-text__note'), num = document.querySelector('.fb-hero .fb-call__number');
+      const label = btn.querySelector('span'), icon = btn.querySelector('svg');
+      const rg = document.createRange();
+      rg.selectNodeContents(label.firstChild);
+      const b = btn.getBoundingClientRect(), t = rg.getBoundingClientRect(), i = icon.getBoundingClientRect();
+      const c = (e) => getComputedStyle(e);
+      return {
+        h1: h1.textContent.trim(), reassure: re.hidden ? null : re.textContent.trim(), label: btn.textContent.trim(), note: note.textContent.trim(),
+        order: h1.getBoundingClientRect().bottom <= re.getBoundingClientRect().top && re.getBoundingClientRect().bottom <= box.getBoundingClientRect().top && b.bottom <= note.getBoundingClientRect().top && note.getBoundingClientRect().bottom <= num.getBoundingClientRect().top,
+        white: [h1, re, note].every((e) => c(e).color === 'rgb(255, 255, 255)') && [h1, re, note].every((e) => c(e).textAlign === 'center'),
+        oneLine: rg.getClientRects().length === 1 && i.right <= t.left + 1 && Math.abs(i.top + i.height / 2 - (t.top + t.height / 2)) <= 3,
+        centered: Math.abs((i.left + t.right) / 2 - (b.left + b.right) / 2) <= 2,
+        fits: btn.scrollWidth <= btn.clientWidth && t.right <= b.right && i.left >= b.left,
+        bg: c(btn).backgroundColor, h: Math.round(b.height), fs: c(btn).fontSize, smaller: parseFloat(c(note).fontSize) < parseFloat(c(btn).fontSize) && parseFloat(c(re).fontSize) < parseFloat(c(h1).fontSize),
+        href: btn.getAttribute('href'), number: num.textContent.trim(), hscroll: document.documentElement.scrollWidth > innerWidth,
+      };
+    });
+    assert(r.h1 === "Here's What You Requested" && r.reassure === "Don't worry, you can always adjust these amounts later." && r.label === 'Prepare My Text' && r.note === "We've prepared your text for you. Just review it and hit Send.", JSON.stringify(r));
+    assert(r.order && r.white && r.oneLine && r.centered && r.fits && r.smaller && !r.hscroll && r.bg === 'rgb(194, 65, 12)' && r.h === 56 && r.fs === '19px', `${w}px ${JSON.stringify(r)}`);
+    // No approved SMS number is configured (src/config/phones.ts SMS_NUMBER), so the button opens nothing.
+    assert(r.href === null && r.number === '888-862-9456', `${w}px ${JSON.stringify(r)}`);
+    if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-${w}.png` });
+    sizes.push(`${w}: ${r.h}px`);
+  }
+  await ctx.close();
+  return sizes.join(', ');
+});
 
 await check('the normal funnel is unchanged: /free-quote/ without ?preview= starts at the first question', async () => {
   const { ctx, page } = await fresh({ viewport: { width: 390, height: 844 } });
