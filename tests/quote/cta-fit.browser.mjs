@@ -1,6 +1,6 @@
-// Quote results CTA V1.3 (Randy, November 2026): on all three cards the orange
-// tel: button reads "Call Us for Help" (phone icon) and the green
-// button "Text Us for Help" (message icon), same actions as before.
+// Quote results CTA V1.5 (Randy, November 2026): on all three cards the orange
+// tel: button reads "Call Us With Questions" (phone icon) and the green
+// button "Text Us With Questions" (message icon), same actions as before.
 // Each icon and label stays on one line inside the unchanged buttons at 320,
 // 375, 390, 430, the three-column range and desktop. Built site + real
 // handlers in test mode (tests/quote/funnel-server.mjs; code 123456).
@@ -63,13 +63,15 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
     });
     assert(r.cards.length === 3 && !r.hscroll && !r.sms, JSON.stringify(r));
     for (const c of r.cards) {
-      assert(c.call.text === 'Call Us for Help' && c.apply.text === 'Text Us for Help', `labels ${c.call.text} / ${c.apply.text}`);
+      assert(c.call.text === 'Call Us With Questions' && c.apply.text === 'Text Us With Questions', `labels ${c.call.text} / ${c.apply.text}`);
       assert(c.call.icon && c.apply.icon && c.call.iconLeft && c.apply.iconLeft, `icons ${JSON.stringify(c)}`);
       assert(c.call.lines === 1 && c.apply.lines === 1 && c.call.fits && c.apply.fits, `one line ${JSON.stringify(c)}`);
       // The pre-V1.2 dimensions: both buttons span the card less 34px; 48px orange, 44px (36px desktop) green.
       assert(c.call.w === c.cardW - 34 && c.apply.w === c.call.w && c.call.h === 48 && c.apply.h === (w >= 832 ? 36 : 44), `size ${JSON.stringify(c)}`);
-      // V1.3: the original 18px orange / 17px green type at every tested width.
-      assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
+      // V1.5: the original 18px orange / 17px green type wherever it fits (375-430 and 1024+);
+      // only the narrowest cards (320px, the three-column 832px layout) scale it down, never below 12px.
+      if ([375, 390, 430, 1024, 1280].includes(w)) assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
+      else assert(c.call.fs >= 12 && c.apply.fs >= 12 && c.call.fs >= c.apply.fs && c.call.fs < 18, `type ${c.call.fs}/${c.apply.fs}`);
       // Same actions as before: the orange tel: link and the green Apply button (no link, no sms:).
       assert(c.href === 'tel:8888629456' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
     }

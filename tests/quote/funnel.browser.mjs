@@ -433,7 +433,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     }
   });
 
-  await check(`${name}: Call Us for Help (orange tel: link above green Text Us for Help, CTA V1.3) with first-party attribution and no personal data`, async () => {
+  await check(`${name}: Call Us With Questions (orange tel: link above green Text Us With Questions, CTA V1.5) with first-party attribution and no personal data`, async () => {
     const b = await page.$$eval('.qf-card', (els) =>
       els.map((e) => {
         const call = e.querySelector('[data-qf-call]');
@@ -446,8 +446,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     for (const c of b) {
-      assert(c.href === 'tel:8888629456' && c.text === 'Call Us for Help' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
-      assert(c.applyText === 'Text Us for Help' && c.applyIcon && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 34 && c.ah <= 36 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:8888629456' && c.text === 'Call Us With Questions' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
+      assert(c.applyText === 'Text Us With Questions' && c.applyIcon && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 34 && c.ah <= 36 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
       assert(c.bg === HOME_ORANGE && c.fg === 'rgb(255, 255, 255)', `call colors ${JSON.stringify(c)}`);
       assert((name === 'desktop' ? c.th >= 26 && c.th <= 28 : c.th <= 30) && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
     }
