@@ -208,7 +208,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
                 <p class="qf-card__note" data-qf-note></p>
                 <a class="btn qf-card__call" href={phone.href} data-qf-call hidden>
                   <svg aria-hidden="true" width="18" height="18" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
-                  <span>Call Us for Help Right Now</span>
+                  <span>Call Us for Help</span>
                 </a>
                 <button class="btn qf-card__apply" type="button" data-qf-apply disabled><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Unlock to See Rates</span></button>
               </article>
@@ -595,8 +595,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__apply { font-size: 0.9375rem; } }
   .qf-card__apply:hover:not(:disabled) { background: #0f2d25; }
   .qf-card__apply:disabled { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }
-  /* CTA V1.2 (Randy, November 2026): "Call Us for Help Right Now" and "Text Us
-     for Help Right Now" (same destinations as before), each icon and label on
+  /* CTA V1.3 (Randy, November 2026): "Call Us for Help" and "Text Us for
+     Help" (same destinations as before), each icon and label on
      one line inside the unchanged buttons. The type is the former size where
      it fits and otherwise scales with the button's width (phones: the screen
      less 82px; three columns: a third of the screen less 145px, at most
@@ -604,11 +604,11 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
      message icon shows only with the revealed label. */
   .qf-card__call, .qf-card__apply { white-space: nowrap; }
   .qf-card__apply { gap: 0.4rem; }
-  .qf-card .qf-card__call { font-size: min(1.125rem, calc((100vw - 130px) / 13.3)); }
-  .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((100vw - 128px) / 14.2)); }
+  .qf-card .qf-card__call { font-size: min(1.125rem, calc((100vw - 130px) / 7.8)); }
+  .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((100vw - 128px) / 8.1)); }
   @media (min-width: 52rem) {
-    .qf-card .qf-card__call { font-size: min(1.125rem, calc((min((100vw - 145px) / 3, 283px) - 84px) / 13.3)); }
-    .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((min((100vw - 145px) / 3, 283px) - 82px) / 14.2)); }
+    .qf-card .qf-card__call { font-size: min(1.125rem, calc((min((100vw - 145px) / 3, 283px) - 84px) / 7.8)); }
+    .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((min((100vw - 145px) / 3, 283px) - 82px) / 8.1)); }
   }
   .qf-card__apply-icon { flex: none; }
   .qf-card__apply:not([data-ready]) .qf-card__apply-icon { display: none; }

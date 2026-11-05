@@ -1,10 +1,10 @@
-// Quote results CTA V1.2 (Randy, November 2026): on all three cards the orange
-// tel: button reads "Call Us for Help Right Now" (phone icon) and the green
-// button "Text Us for Help Right Now" (message icon), same actions as before.
+// Quote results CTA V1.3 (Randy, November 2026): on all three cards the orange
+// tel: button reads "Call Us for Help" (phone icon) and the green
+// button "Text Us for Help" (message icon), same actions as before.
 // Each icon and label stays on one line inside the unchanged buttons at 320,
 // 375, 390, 430, the three-column range and desktop. Built site + real
 // handlers in test mode (tests/quote/funnel-server.mjs; code 123456).
-//   node tests/quote/cta-fit.browser.mjs
+//   node tests/quote/cta-fit.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer } from './funnel-server.mjs';
 
@@ -63,15 +63,17 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
     });
     assert(r.cards.length === 3 && !r.hscroll && !r.sms, JSON.stringify(r));
     for (const c of r.cards) {
-      assert(c.call.text === 'Call Us for Help Right Now' && c.apply.text === 'Text Us for Help Right Now', `labels ${c.call.text} / ${c.apply.text}`);
+      assert(c.call.text === 'Call Us for Help' && c.apply.text === 'Text Us for Help', `labels ${c.call.text} / ${c.apply.text}`);
       assert(c.call.icon && c.apply.icon && c.call.iconLeft && c.apply.iconLeft, `icons ${JSON.stringify(c)}`);
       assert(c.call.lines === 1 && c.apply.lines === 1 && c.call.fits && c.apply.fits, `one line ${JSON.stringify(c)}`);
       // The pre-V1.2 dimensions: both buttons span the card less 34px; 48px orange, 44px (36px desktop) green.
       assert(c.call.w === c.cardW - 34 && c.apply.w === c.call.w && c.call.h === 48 && c.apply.h === (w >= 832 ? 36 : 44), `size ${JSON.stringify(c)}`);
-      assert(c.call.fs >= c.apply.fs && c.apply.fs >= (w >= 832 && w < 1000 ? 10 : 13), `type ${c.call.fs}/${c.apply.fs}`);
+      // V1.3: the original 18px orange / 17px green type at every tested width.
+      assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
       // Same actions as before: the orange tel: link and the green Apply button (no link, no sms:).
       assert(c.href === 'tel:8888629456' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
     }
+    if (process.env.OUT) await page.locator('.qf-cards').screenshot({ path: `${process.env.OUT}/cta-${w}.png` });
     return `${r.cards[0].call.fs.toFixed(1)}px / ${r.cards[0].apply.fs.toFixed(1)}px`;
   });
 }
