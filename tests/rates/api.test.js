@@ -77,14 +77,14 @@ test('store: fails closed on missing, corrupt or invalid data; caches for 5 minu
   all['gerber-guaranteed-life'].printedPremiums[0].monthlyPremium = '0.01';
   const store = memoryStore({ 'rates:v1:preview': JSON.stringify({ format: 'fexguy-rates-1', publishedAt: 'x', datasets: all }) });
   const loaded = await loadRateEngine(store, ENV, 1000);
-  assert.deepEqual(loaded.engine.status(), { 'aetna-accendo-standard': 'loaded', 'moo-living-promise-level': 'loaded', 'gerber-guaranteed-life': 'invalid' });
+  assert.deepEqual(loaded.engine.status(), { 'aetna-accendo-preferred': 'loaded', 'moo-living-promise-level': 'loaded', 'gerber-guaranteed-life': 'invalid' });
   await loadRateEngine(store, ENV, 1000 + CACHE_MS - 1);
   assert.equal(store.reads.length, 1, 'cached');
   await loadRateEngine(store, ENV, 1000 + CACHE_MS);
   assert.equal(store.reads.length, 2, 'refreshed after 5 minutes');
   // buildRatePayload refuses to produce a publishable payload from it.
   assert.equal(buildRatePayload(all, 'preview').ok, false);
-  assert.equal(buildRatePayload({ 'aetna-accendo-standard': fake('aetna-accendo-standard') }, 'preview').ok, false, 'all three tables are required');
+  assert.equal(buildRatePayload({ 'aetna-accendo-preferred': fake('aetna-accendo-preferred') }, 'preview').ok, false, 'all three tables are required');
 });
 
 const engineDeps = (datasets = fakeAll()) => ({ getEngine: async () => ({ engine: createEngine(datasets), publishedAt: 'v-test' }) });

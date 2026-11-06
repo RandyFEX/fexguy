@@ -379,16 +379,16 @@ async function verifiedClient() {
 }
 
 test('intake map: Aetna -> its 22 verified questions; Gerber guaranteed issue; Mutual of Omaha no question set', async () => {
-  assert.deepEqual(INTAKE_CARRIER, { 'FF-101': 'aetna', 'FF-102': null, 'FF-201': 'gerber-life' });
+  assert.deepEqual(INTAKE_CARRIER, { 'FF-103': 'aetna', 'FF-102': null, 'FF-201': 'gerber-life' });
   await redis.store.set('hqs:questions:preview', JSON.stringify(fakeAetnaQuestions()));
-  const a = await intakePlan(redis.store, PREVIEW, 'FF-101');
+  const a = await intakePlan(redis.store, PREVIEW, 'FF-103');
   assert.equal(a.mode, 'questions');
   assert.equal(a.questions.length, 22);
   assert.deepEqual(await intakePlan(redis.store, PREVIEW, 'FF-201'), { mode: 'none', reason: 'guaranteed-issue', carrierId: 'gerber-life' });
   assert.deepEqual(await intakePlan(redis.store, PREVIEW, 'FF-102'), { mode: 'none', reason: 'no-question-set', carrierId: null });
   // Never the fictional sample: no published records = no questions.
   await redis.command(['DEL', 'hqs:questions:preview']);
-  assert.equal((await intakePlan(redis.store, PREVIEW, 'FF-101')).reason, 'no-question-set');
+  assert.equal((await intakePlan(redis.store, PREVIEW, 'FF-103')).reason, 'no-question-set');
 });
 
 test('Apply Now on Guaranteed Acceptance (Gerber): no health questions, application interest recorded', async () => {
@@ -407,7 +407,7 @@ test('V3.9 Apply Now on each competitive card records that card\'s own product (
   const quote = { age: 70, gender: 'female', tobacco: false, coverage: 10000 };
   const priced = (await c.price(quote)).body.categories;
   const codes = Object.fromEntries(priced.map((x) => [x.id, x.attribution[0]]));
-  assert.deepEqual(new Set([codes['lowest-preferred'], codes['average-standard']]), new Set(['FF-101', 'FF-102']));
+  assert.deepEqual(new Set([codes['lowest-preferred'], codes['average-standard']]), new Set(['FF-103', 'FF-102']));
   const first = await c.call({ action: 'apply', category: 'lowest-preferred', quote });
   assert.equal(first.body.status, 'ok');
   assert.equal(first.body.category, 'Lowest Competitive Preferred Rate');
@@ -425,7 +425,7 @@ test('carrier questions one at a time; answers kept; a declining YES stops and f
   const c = await verifiedClient();
   // An Aetna application on the lead (Aetna has the question set).
   const rec = await c.store.getLead(c.lead);
-  rec.applications = [{ at: 't', categoryId: 'average-standard', category: 'Standard Rate', monthlyPremium: '1.00', quote: rec.quoteAtSubmission, attribution: ['FF-101'] }];
+  rec.applications = [{ at: 't', categoryId: 'average-standard', category: 'Standard Rate', monthlyPremium: '1.00', quote: rec.quoteAtSubmission, attribution: ['FF-103'] }];
   await c.store.putLead(c.lead, rec);
   assert.equal((await c.call({ action: 'intake-next', category: 'guaranteed-acceptance' })).http, 409, 'no Apply Now for that category');
   let r = await c.call({ action: 'intake-next', category: 'average-standard' });

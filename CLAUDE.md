@@ -1301,11 +1301,15 @@ Prioritize the shortest reliable path to completing approved changes.
 ## Rate engine (Randy, November 2026, Rate Engine V2.0)
 
 - `server/rates/` (see its README) calculates monthly premiums from verified
-  carrier rate tables: Aetna CVS/Accendo Standard ($40 fee, 0.0875 EFT, ages
-  40-89), Mutual of Omaha Living Promise Level Benefit ($36, 0.089, ages
+  carrier rate tables: Aetna CVS/Accendo Preferred ($40 fee, 0.0875 EFT, ages
+  40-89; V4.8, Randy, November 2026: Preferred replaced Standard, product
+  `aetna-accendo-preferred`, code FF-103; FF-101 meant Standard in older
+  records), Mutual of Omaha Living Promise Level Benefit ($36, 0.089, ages
   45-85) and Gerber Guaranteed Life ($11, 0.083334 ACH, ages 50-80; one rate
   whatever the tobacco answer). Never substitute another tier or plan
-  (Preferred, Super Preferred, Modified, Graded, Direct Bill).
+  (Standard, Super Preferred, Modified, Graded, Direct Bill) without Randy's
+  instruction. Benchmark: age 61 male non-tobacco $25,000 = Aetna Preferred
+  $126.00, MOO Level $111.23.
 - The rate guides are producer-only and this repository is public: the rate
   tables and the pricing workbook live only in the git-ignored
   `server/rates/private/` (`npm run rates:extract`, `npm run rates:workbook`).
@@ -1567,6 +1571,26 @@ Prioritize the shortest reliable path to completing approved changes.
   Mutual of Omaha and Gerber Life trimmed of white margins. A brand whose
   file is missing is left out (LOGO_CANDIDATES in free-quote.astro). Never
   show CICA Life there.
+  **V4.8 (Randy, November 2026):** step 1 asks "I'm shopping for burial or
+  life insurance for a..." with "No agent required to get rates. Takes less
+  than 60 seconds." under Male/Female; step 3 asks "Have you used any
+  tobacco, nicotine, or vaping products in the last 12 months?" with Yes
+  (tobacco, `data-value="yes"`) and No (`"no"`) buttons (the summary and the
+  results controls keep Smoker/Non-Smoker); the trust panel adds "5-Star
+  Service + Affordable Rates." under the call-center line, and "Why Funeral
+  Funds?" lists "Lifetime policy support from Randy" instead of "Personal
+  assistance with your coverage". Aetna's card is priced from the Preferred
+  class (plan line "Accendo Final Expense Preferred"; see Rate engine).
+  **V4.10 (Randy, November 2026):** the trust panel paragraph reads "Funeral
+  Funds isn’t a call center. When you call, you’ll deal directly with Randy.
+  As a senior himself, Randy understands what matters most to people
+  planning for their families. You’ll have the same agent helping you with
+  your policy for life." followed by "5-Star Service + Affordable Rates.";
+  "Why Funeral Funds?" lists Independent insurance agent, Compare multiple
+  insurance companies, Professional assistance with your coverage, Lifetime
+  policy support from Randy, Direct Contact. Randy's photo is 7rem on desktop
+  (beside the text, both columns vertically balanced) and 5.5rem on phones
+  (beside the name and role, paragraph full width below).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

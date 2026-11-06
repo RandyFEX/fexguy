@@ -14,7 +14,7 @@ git-ignored `private/` folder, generated from the PDFs Randy supplies.
 
 | Product id | Carrier and plan | Rate class | Fee | Monthly factor | Issue ages | Source |
 |---|---|---|---|---|---|---|
-| `aetna-accendo-standard` | Aetna CVS / Accendo Final Expense Whole Life (Level plan) | Standard only | $40 | 0.0875 (EFT) | 40-89 | 2026 AETNA ACCENDO RATE GUIDE.pdf, page 2 |
+| `aetna-accendo-preferred` | Aetna CVS / Accendo Final Expense Whole Life (Level plan) | Preferred only (V4.8; replaced Standard) | $40 | 0.0875 (EFT) | 40-89 | 2026 AETNA ACCENDO RATE GUIDE.pdf, page 2 |
 | `moo-living-promise-level` | Mutual of Omaha Living Promise | Level Benefit only | $36 | 0.089 (bank draft) | 45-85 | 2026 MOO LIVING PROMISE UNDERWRITING - RATE GUIDE.pdf, page 3 |
 | `gerber-guaranteed-life` | Gerber Life Guaranteed Life | Guaranteed acceptance (one rate whatever the tobacco answer) | $11 | 0.083334 (ACH) | 50-80 | 2026 GERBER RATE CARD.pdf (GL-RC 0922), page 1, Monthly ACH |
 

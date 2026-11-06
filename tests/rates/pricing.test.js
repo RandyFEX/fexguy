@@ -39,14 +39,14 @@ test('mean of cents rounds half up', () => {
 });
 
 // V3.9: the two competitive products (COMPETITIVE_PRODUCTS) ranked by the engine's own premium.
-const PRODUCT_OF = { 'FF-101': 'aetna-accendo-standard', 'FF-102': 'moo-living-promise-level' };
+const PRODUCT_OF = { 'FF-103': 'aetna-accendo-preferred', 'FF-102': 'moo-living-promise-level' };
 const engineQuote = (productId, i) => engine.quote({ productId, ...i, state: 'TX' });
 function expectedRanked(i) {
   return COMPETITIVE_PRODUCTS.map((id) => engineQuote(id, i)).filter((q) => q.ok).sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents);
 }
 
 test('V3.9 ranked cards: lowest and second competitive premiums for every age 50-85, gender, tobacco answer and coverage (exact engine premiums)', () => {
-  assert.deepEqual(COMPETITIVE_PRODUCTS, ['moo-living-promise-level', 'aetna-accendo-standard']);
+  assert.deepEqual(COMPETITIVE_PRODUCTS, ['moo-living-promise-level', 'aetna-accendo-preferred']);
   let checked = 0;
   for (let age = AGES.min; age <= AGES.max; age++)
     for (const gender of ['male', 'female'])
@@ -91,9 +91,9 @@ test('V3.9 ranking follows the premiums: when Mutual of Omaha is cheaper it is t
   const flip = (id) => { const ds = fake(id); if (id.startsWith('moo')) for (const r of ds.records) r.annualRatePer1000 = (Number(r.annualRatePer1000) - 20).toFixed(2); return ds; };
   const e2 = createEngine(Object.fromEntries(Object.keys(PRODUCTS).map((id) => [id, flip(id)])));
   const c = byId(priceCategories(e2, input()));
-  assert.deepEqual([c['lowest-preferred'].attribution[0], c['average-standard'].attribution[0]], ['FF-102', 'FF-101']);
+  assert.deepEqual([c['lowest-preferred'].attribution[0], c['average-standard'].attribution[0]], ['FF-102', 'FF-103']);
   const d = byId(priceCategories(engine, input()));
-  assert.deepEqual([d['lowest-preferred'].attribution[0], d['average-standard'].attribution[0]], ['FF-101', 'FF-102']);
+  assert.deepEqual([d['lowest-preferred'].attribution[0], d['average-standard'].attribution[0]], ['FF-103', 'FF-102']);
 });
 
 test('Guaranteed Acceptance uses Gerber where available; tobacco never changes it', () => {
@@ -108,7 +108,7 @@ test('Guaranteed Acceptance uses Gerber where available; tobacco never changes i
 test('v3.5 card content: carrier, plan, coverage timing and logo per category', () => {
   const c = byId(priceCategories(engine, input()));
   // With these test tables Aetna is the cheaper competitive product, Mutual of Omaha the second.
-  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
+  assert.deepEqual(c['lowest-preferred'].carriers, [{ carrier: 'Aetna', plan: 'Accendo Final Expense Preferred', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' }]);
   assert.deepEqual(c['average-standard'].carriers, [{ carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' }]);
   assert.deepEqual(c['guaranteed-acceptance'].carriers, [{ carrier: 'Gerber Life', plan: 'Guaranteed Life', subtitle: 'No Health Questions', timing: '2-Year Waiting Period', logo: '/images/carriers/gerber-life-logo.png' }]);
 });

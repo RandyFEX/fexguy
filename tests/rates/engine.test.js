@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { dec, round, toFixed } from '../../server/rates/decimal.js';
 import { createEngine, monthlyPremium, validateDataset } from '../../server/rates/engine.js';
 import { PRODUCTS } from '../../server/rates/products.js';
-import { parseAetnaStandard, parseMooLevel } from '../../scripts/rates-extract.mjs';
+import { parseAetnaPreferred, parseMooLevel } from '../../scripts/rates-extract.mjs';
 
 /** A complete fake dataset: rate = age + offset, so every value is distinct. */
 function fakeDataset(id, offsets = { 'male|non-tobacco': 0.17, 'male|tobacco': 0.29, 'female|non-tobacco': 0.31, 'female|tobacco': 0.43, 'male|any': 0.57, 'female|any': 0.61 }) {
@@ -34,12 +34,12 @@ test('formula terms are exactly Randy\'s verified fees and modal factors', () =>
   assert.deepEqual(
     Object.fromEntries(Object.values(PRODUCTS).map((p) => [p.id, [p.policyFee, p.modalFactor, p.issueAges.min, p.issueAges.max]])),
     {
-      'aetna-accendo-standard': ['40', '0.0875', 40, 89],
+      'aetna-accendo-preferred': ['40', '0.0875', 40, 89],
       'moo-living-promise-level': ['36', '0.089', 45, 85],
       'gerber-guaranteed-life': ['11', '0.083334', 50, 80],
     },
   );
-  assert.equal(PRODUCTS['aetna-accendo-standard'].planClass, 'Standard');
+  assert.equal(PRODUCTS['aetna-accendo-preferred'].planClass, 'Preferred');
   assert.equal(PRODUCTS['moo-living-promise-level'].planClass, 'Level Benefit');
   assert.deepEqual(PRODUCTS['gerber-guaranteed-life'].tobaccoClasses, ['any']);
 });
@@ -71,13 +71,13 @@ test('a quote uses the product\'s own fee, factor and table', () => {
 });
 
 test('ages outside the issue ages are rejected', () => {
-  for (const [productId, lo, hi] of [['aetna-accendo-standard', 40, 89], ['moo-living-promise-level', 45, 85], ['gerber-guaranteed-life', 50, 80]]) {
+  for (const [productId, lo, hi] of [['aetna-accendo-preferred', 40, 89], ['moo-living-promise-level', 45, 85], ['gerber-guaranteed-life', 50, 80]]) {
     assert.equal(q({ productId, age: lo }).ok, true);
     assert.equal(q({ productId, age: hi }).ok, true);
     assert.equal(q({ productId, age: lo - 1 }).reason, 'age_out_of_range');
     assert.equal(q({ productId, age: hi + 1 }).reason, 'age_out_of_range');
   }
-  assert.equal(q({ productId: 'aetna-accendo-standard', age: 60.5 }).reason, 'invalid_age');
+  assert.equal(q({ productId: 'aetna-accendo-preferred', age: 60.5 }).reason, 'invalid_age');
 });
 
 test('coverage outside the permitted limits is rejected', () => {
@@ -87,11 +87,11 @@ test('coverage outside the permitted limits is rejected', () => {
   assert.equal(q({ productId: moo, age: 60, coverage: 1999 }).reason, 'coverage_out_of_range');
   assert.equal(q({ productId: moo, age: 60, coverage: 40001 }).reason, 'coverage_out_of_range');
   // Products without carrier limits in their source use the working range.
-  const a = q({ productId: 'aetna-accendo-standard', age: 60, coverage: 25000 });
+  const a = q({ productId: 'aetna-accendo-preferred', age: 60, coverage: 25000 });
   assert.equal(a.ok, true);
   assert.match(a.limits.basis, /working range/);
-  assert.equal(q({ productId: 'aetna-accendo-standard', age: 60, coverage: 25001 }).reason, 'coverage_out_of_range');
-  assert.equal(q({ productId: 'aetna-accendo-standard', age: 60, coverage: 4999 }).reason, 'coverage_out_of_range');
+  assert.equal(q({ productId: 'aetna-accendo-preferred', age: 60, coverage: 25001 }).reason, 'coverage_out_of_range');
+  assert.equal(q({ productId: 'aetna-accendo-preferred', age: 60, coverage: 4999 }).reason, 'coverage_out_of_range');
   assert.equal(q({ productId: moo, age: 60, coverage: 0 }).reason, 'invalid_coverage');
 });
 
@@ -105,7 +105,7 @@ test('state exceptions: MOO unisex in MT, $5,000 minimum in WA, unavailable in N
   assert.equal(q({ productId: moo, age: 60, coverage: 4000, state: 'WA' }).reason, 'coverage_out_of_range');
   assert.equal(q({ productId: moo, age: 60, coverage: 4000, state: 'TX' }).ok, true);
   assert.equal(q({ productId: moo, age: 60, state: 'NY' }).reason, 'unavailable_in_state');
-  assert.equal(q({ productId: 'aetna-accendo-standard', age: 60, gender: 'female', state: 'MT' }).rate.gender, 'female');
+  assert.equal(q({ productId: 'aetna-accendo-preferred', age: 60, gender: 'female', state: 'MT' }).rate.gender, 'female');
   assert.equal(q({ productId: moo, age: 60, state: 'ZZ' }).reason, 'invalid_state');
 });
 
@@ -133,15 +133,15 @@ test('Gerber: tobacco status never changes the premium; gender does', () => {
 
 test('no tier substitution: a product only quotes from its own complete table', () => {
   // A table missing one class is refused as a whole, not filled from another.
-  const broken = fakeDataset('aetna-accendo-standard');
+  const broken = fakeDataset('aetna-accendo-preferred');
   broken.records = broken.records.filter((r) => !(r.issueAge === 60 && r.tobacco === 'tobacco' && r.gender === 'female'));
-  const e = createEngine({ 'aetna-accendo-standard': broken });
-  assert.equal(e.quote({ productId: 'aetna-accendo-standard', age: 50, gender: 'male', tobacco: false, coverage: 10000 }).reason, 'rates_invalid');
-  assert.match(e.loadProblems['aetna-accendo-standard'][0], /missing rate: age 60, female, tobacco/);
+  const e = createEngine({ 'aetna-accendo-preferred': broken });
+  assert.equal(e.quote({ productId: 'aetna-accendo-preferred', age: 50, gender: 'male', tobacco: false, coverage: 10000 }).reason, 'rates_invalid');
+  assert.match(e.loadProblems['aetna-accendo-preferred'][0], /missing rate: age 60, female, tobacco/);
   // Another product's table is never accepted.
-  assert.deepEqual(validateDataset(PRODUCTS['aetna-accendo-standard'], fakeDataset('moo-living-promise-level')), ['dataset is not for aetna-accendo-standard']);
+  assert.deepEqual(validateDataset(PRODUCTS['aetna-accendo-preferred'], fakeDataset('moo-living-promise-level')), ['dataset is not for aetna-accendo-preferred']);
   // Gerber data with smoker classes is rejected (it has one rate per age and gender).
-  const g = fakeDataset('aetna-accendo-standard');
+  const g = fakeDataset('aetna-accendo-preferred');
   g.productId = 'gerber-guaranteed-life';
   assert.ok(validateDataset(PRODUCTS['gerber-guaranteed-life'], g).some((p) => /tobacco class not used/.test(p)));
   // No loaded table: an unavailable result, never a price.
@@ -169,7 +169,7 @@ test('Gerber: printed premiums are kept apart from the derived rates and must al
 });
 
 test('results flag unverified face limits and state availability instead of assuming them', () => {
-  const a = q({ productId: 'aetna-accendo-standard', age: 60, state: 'TX' });
+  const a = q({ productId: 'aetna-accendo-preferred', age: 60, state: 'TX' });
   assert.equal(a.ok, true);
   assert.deepEqual([a.limits.verified, a.limits.increment, a.availability.verified], [false, null, false]);
   assert.match(a.limits.basis, /working range/);
@@ -182,25 +182,25 @@ test('results flag unverified face limits and state availability instead of assu
 test('quoteMany returns each product in order with its own status and no tier', () => {
   const res = engine.quoteMany({ age: 82, gender: 'male', tobacco: false, coverage: 10000, state: 'TX' });
   assert.deepEqual(res.map((r) => [r.productId, r.ok]), [
-    ['aetna-accendo-standard', true],
+    ['aetna-accendo-preferred', true],
     ['moo-living-promise-level', true],
     ['gerber-guaranteed-life', false],
   ]);
   assert.ok(res.every((r) => !('tier' in r)));
 });
 
-test('extraction parsers read only the Standard / Level Benefit columns', () => {
+test('extraction parsers read only the Preferred / Level Benefit columns', () => {
   // Made-up line in the Aetna card layout: 8 Super Preferred/Preferred values,
   // the age again, then 4 Standard and 4 Modified values.
   const aetna = '   41   1.01 1.02  1.03 1.04   1.05 1.06  1.07 1.08    41    2.01 2.02   2.03 2.04   3.01 3.02  3.03 3.04';
-  const ar = parseAetnaStandard(aetna);
+  const ar = parseAetnaPreferred(aetna);
   assert.deepEqual(ar.map((r) => [r.gender, r.tobacco, r.annualRatePer1000]), [
-    ['male', 'non-tobacco', '2.01'],
-    ['male', 'tobacco', '2.02'],
-    ['female', 'non-tobacco', '2.03'],
-    ['female', 'tobacco', '2.04'],
+    ['male', 'non-tobacco', '1.05'],
+    ['male', 'tobacco', '1.06'],
+    ['female', 'non-tobacco', '1.07'],
+    ['female', 'tobacco', '1.08'],
   ]);
-  assert.throws(() => parseAetnaStandard('   41   1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08    42    2.01 2.02 2.03 2.04'), /ages differ/);
+  assert.throws(() => parseAetnaPreferred('   41   1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08    42    2.01 2.02 2.03 2.04'), /ages differ/);
   const moo = 'LEVEL BENEFIT PLAN*\n 45    $1.10     $1.20     $1.30    $1.40    66    $2.10    $2.20      $2.30    $2.40';
   assert.deepEqual(parseMooLevel(moo).map((r) => [r.issueAge, r.annualRatePer1000]), [
     [45, '1.10'], [45, '1.20'], [45, '1.30'], [45, '1.40'], [66, '2.10'], [66, '2.20'], [66, '2.30'], [66, '2.40'],

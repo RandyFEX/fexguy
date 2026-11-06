@@ -20,11 +20,13 @@ export const REFERENCE_STATE = 'TX';
 
 /** Opaque attribution codes sent to the browser and the lead form instead of
  *  product ids or carrier names (the identity stays internal):
- *    FF-101  Aetna CVS / Accendo Final Expense, Standard class
+ *    FF-101  Aetna CVS / Accendo Final Expense, Standard class (retired from
+ *            the funnel in V4.8; kept here only to explain older records)
+ *    FF-103  Aetna CVS / Accendo Final Expense, Preferred class (V4.8)
  *    FF-102  Mutual of Omaha Living Promise, Level Benefit
  *    FF-201  Gerber Life Guaranteed Life (monthly ACH) */
 export const ATTRIBUTION_CODES = {
-  'aetna-accendo-standard': 'FF-101',
+  'aetna-accendo-preferred': 'FF-103',
   'moo-living-promise-level': 'FF-102',
   'gerber-guaranteed-life': 'FF-201',
 };
@@ -34,7 +36,7 @@ export const CARRIER_DISPLAY = {
   // pay the full benefit from the first day; Gerber Guaranteed Life is a
   // two-year graded benefit). logo: the carrier's own artwork (CVS/aetna as
   // supplied by Randy; null would show the carrier name in plain text).
-  'FF-101': { carrier: 'Aetna', plan: 'Accendo Final Expense', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' },
+  'FF-103': { carrier: 'Aetna', plan: 'Accendo Final Expense Preferred', timing: 'First-Day Coverage', logo: '/images/carriers/cvs-aetna-logo.png' },
   'FF-102': { carrier: 'Mutual of Omaha', plan: 'Living Promise', timing: 'First-Day Coverage', logo: '/images/carriers/mutual-of-omaha-logo.jpg' },
   // subtitle (v3.8): the card's consumer-facing line when it differs from the
   // official product name, which stays in plan for records and analytics.
@@ -54,7 +56,7 @@ export const AGES = { min: 50, max: 85 };
 export const MIN_AVERAGE_PRODUCTS = 2;
 
 /** V3.9: the verified competitive products ranked for the first two cards. */
-export const COMPETITIVE_PRODUCTS = ['moo-living-promise-level', 'aetna-accendo-standard'];
+export const COMPETITIVE_PRODUCTS = ['moo-living-promise-level', 'aetna-accendo-preferred'];
 
 /** @typedef {'lowest' | 'average' | 'guaranteed' | 'ranked'} CategoryRule */
 /** @typedef {{ id: string, label: string, averageLabel?: string, rule: CategoryRule, products: string[], rank?: number }} Category */
