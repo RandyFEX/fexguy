@@ -1631,6 +1631,13 @@ Prioritize the shortest reliable path to completing approved changes.
   eligible for." under No / Yes (the step 1 note style); the contact step's
   trust heading reads "Why Choose Funeral Funds" (no question mark, Randy's
   exact text).
+  **V4.20 (Randy, November 2026):** on /facebook/ each white instruction
+  sits ABOVE its orange button: "Tap the orange button below right now to
+  generate an SMS text in your messaging app." over "TAP HERE IF YOU'RE ON A
+  CELL PHONE", and "Point your cell phone camera at the code below to
+  generate an SMS text in your messaging app." over "CLICK HERE IF YOU'RE ON
+  A COMPUTER" (two lines each on desktop: the note uses 1rem of its column's
+  side padding; 1rem below each note).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
