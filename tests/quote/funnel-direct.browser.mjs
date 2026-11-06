@@ -27,7 +27,7 @@ const check = async (name, fn) => {
 const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
-const WHY = ['Independent insurance agent', 'Compare multiple insurance companies', 'Professional assistance with your coverage', 'Lifetime policy support from Randy', 'Direct Contact: 888-656-4648'];
+const WHY = ['Independent insurance agent', 'Compare multiple insurance companies', 'Professional assistance with your coverage', 'Easy to Add More Coverage Later if Needed', 'Direct Contact: 888-656-4648'];
 const EXTERNAL = /^https:\/\/([a-z0-9-]+\.)*(leadconnectorhq\.com|twilio\.com|resend\.com|submit-form\.com|challenges\.cloudflare\.com)\//;
 let ip = 50;
 

@@ -1,5 +1,5 @@
 // Two-stage countdown timers (Randy, November 2026, V2.0): the /free-quote/
-// results screen ("Offer available for: 10:00") and the /facebook/ Ready to
+// results screen ("Rates viewable for 10:00") and the /facebook/ Ready to
 // Apply screen ("Please respond within: 2:00").
 //
 // Each timer starts when its screen first appears in this visit and is kept

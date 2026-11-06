@@ -1591,6 +1591,16 @@ Prioritize the shortest reliable path to completing approved changes.
   policy support from Randy, Direct Contact. Randy's photo is 7rem on desktop
   (beside the text, both columns vertically balanced) and 5.5rem on phones
   (beside the name and role, paragraph full width below).
+  **V4.13 (Randy, November 2026):** the step 3 buttons read No (left, or
+  first when stacked) then Yes; "Why Funeral Funds?" lists "Easy to Add More
+  Coverage Later if Needed" instead of "Lifetime policy support from Randy"
+  (the trust paragraph keeps the lifetime-agent sentence); the "Understanding
+  Your 3 Rate Options" block is removed; the results show "Rates viewable for
+  <countdown>", "Easily adjust your rates or coverage below", and a
+  "Tobacco or Nicotine" control with No and Yes (same values); the card
+  buttons read "Call to Chat or Apply" (tel:+18886564648) and "Text to Chat
+  or Apply" (the unchanged /facebook/ handoff, whose text option addresses
+  888-672-0762).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
