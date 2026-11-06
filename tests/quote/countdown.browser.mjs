@@ -1,5 +1,5 @@
 // Two-stage countdown timers V2.0 (Randy, November 2026): the /free-quote/
-// results line ("Offer available for: 10:00") and the /facebook/ Ready to
+// results line ("Rates viewable for 10:00") and the /facebook/ Ready to
 // Apply line ("Please respond within: 2:00"). Built site + real handlers
 // in test mode (tests/quote/funnel-server.mjs; nothing sent),
 // with Playwright's fake clock. Needs a build and the private rate tables.
@@ -11,7 +11,7 @@ const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
 const URL_ = `${srv.base}/free-quote/`;
 const OUT = process.env.OUT ?? '';
-const RESULTS = /^Let us check your lowest rates from 30\+ insurance companies\. Offer available for: (\d+:\d\d)$/;
+const RESULTS = /^Let us check your lowest rates from 30\+ insurance companies\. Rates viewable for (\d+:\d\d)$/;
 const APPLY = /^Please respond within: (\d+:\d\d)$/;
 const YELLOW = 'rgb(255, 235, 59)';
 const browser = await chromium.launch();
@@ -70,7 +70,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
     assert((await lead(page)).endsWith('9:55'), `after 5s: ${await lead(page)}`);
     await page.selectOption('#qf-adj-age', '65');
     await page.clock.runFor(1000);
-    await page.waitForFunction(() => /Offer available for: 9:5[0-4]$/.test(document.querySelector('[data-qf-results-lead]').textContent), null, { timeout: 5000 });
+    await page.waitForFunction(() => /Rates viewable for 9:5[0-4]$/.test(document.querySelector('[data-qf-results-lead]').textContent), null, { timeout: 5000 });
     await page.click('.qf-adjust label:has(input[name="coverage"][value="15000"])');
     await page.clock.runFor(1000);
     assert(!(await lead(page)).endsWith('10:00'), 'pricing change restarted the timer');
@@ -112,7 +112,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
     const v = await verified(opts);
     await v.page.clock.runFor(10 * 60 * 1000);
     const real = await v.page.evaluate(() => ({ text: document.querySelector('[data-qf-results-lead]').textContent.trim(), amounts: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent), apply: [...document.querySelectorAll('[data-qf-apply]')].every((b) => b.disabled), adjust: document.querySelector('[data-qf-adjust]').hidden, restart: !document.querySelector('[data-qf-restart]').hidden }));
-    assert(real.text.endsWith('Offer available for: 0:00') && real.apply && real.adjust && real.restart && real.amounts.every((a) => /This offer has expired/.test(a)), JSON.stringify(real));
+    assert(real.text.endsWith('Rates viewable for 0:00') && real.apply && real.adjust && real.restart && real.amounts.every((a) => /This offer has expired/.test(a)), JSON.stringify(real));
     if (OUT) await v.page.locator('.qf-results').screenshot({ path: `${OUT}/${name}-results-expired.png` });
     await v.page.reload();
     await v.page.waitForSelector('[data-qf-restart]:not([hidden])', { timeout: 8000 });

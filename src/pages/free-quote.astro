@@ -153,8 +153,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <section class="qf-step" data-step="3" aria-labelledby="qf-s3" hidden>
           <h2 class="qf-q" id="qf-s3" tabindex="-1">Have you used any tobacco, nicotine, or vaping products in the last 12 months?</h2>
           <div class="qf-opts qf-opts--two">
-            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="yes">Yes</button>
             <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="no">No</button>
+            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="yes">Yes</button>
           </div>
         </section>
 
@@ -214,7 +214,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
                 <li>Independent insurance agent</li>
                 <li>Compare multiple insurance companies</li>
                 <li>Professional assistance with your coverage</li>
-                <li>Lifetime policy support from Randy</li>
+                <li>Easy to Add More Coverage Later if Needed</li>
                 <li>Direct Contact: <a href={phone.href} data-qf-direct-call>{phone.display}</a></li>
               </ul>
             </aside>
@@ -249,7 +249,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <!-- Step 7: the pricing screen (shown once the lead is accepted; the cards load in place) -->
         <section class="qf-step qf-results" data-step="7" data-locked="true" aria-labelledby="qf-s7" hidden>
           <h2 class="qf-q visually-hidden" id="qf-s7" tabindex="-1" data-qf-results-title>Your quote results</h2>
-          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check your lowest rates from 30+ insurance companies. Offer available for: <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
+          <p class="qf-results-lead" data-qf-results-lead hidden>Let us check your lowest rates from 30+ insurance companies. Rates viewable for <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
           <button class="btn qf-btn-cta qf-restart" type="button" data-qf-restart hidden>Start New Quote</button>
           <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
           <div class="qf-cards">
@@ -266,16 +266,16 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
                 <p class="qf-card__note" data-qf-note></p>
                 <a class="btn qf-card__call" href={phone.href} data-qf-call hidden>
                   <svg aria-hidden="true" width="18" height="18" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
-                  <span>Call Us With Questions</span>
+                  <span>Call to Chat or Apply</span>
                 </a>
-                <button class="btn qf-card__apply" type="button" data-qf-apply disabled><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Text Us With Questions</span></button>
+                <button class="btn qf-card__apply" type="button" data-qf-apply disabled><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Text to Chat or Apply</span></button>
               </article>
             ))}
           </div>
 
           <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
 
-          <p class="qf-adjust-intro" data-qf-adjust-intro hidden>Adjust Your Quote Below</p>
+          <p class="qf-adjust-intro" data-qf-adjust-intro hidden>Easily adjust your rates or coverage below</p>
           <form class="qf-adjust" data-qf-adjust aria-label="Change your quote" novalidate hidden>
             <div class="qf-group qf-group--age">
               <label class="qf-group__title" for="qf-adj-age">Age</label>
@@ -291,10 +291,10 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
               </div>
             </fieldset>
             <fieldset class="qf-group qf-seg">
-              <legend class="qf-group__title">Tobacco</legend>
+              <legend class="qf-group__title">Tobacco or Nicotine</legend>
               <div class="qf-seg__opts">
-                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="no" /><span class="qf-control">Non-Smoker</span></label>
-                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="yes" /><span class="qf-control">Smoker</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="no" /><span class="qf-control">No</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="yes" /><span class="qf-control">Yes</span></label>
               </div>
             </fieldset>
             <fieldset class="qf-group qf-group--coverage qf-seg">
@@ -314,12 +314,6 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             </fieldset>
           </form>
           <p class="qf-ref" data-qf-ref hidden>Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
-          <div class="qf-tiers" data-qf-tiers hidden>
-            <h3 class="qf-tiers__title">Understanding Your 3 Rate Options</h3>
-            <p><strong>Lowest Preferred Rate:</strong> Covers those in generally good health, including multiple common medical conditions controlled with medication(s).</p>
-            <p><strong>Standard Rate:</strong> Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions.</p>
-            <p><strong>Guaranteed Acceptance Rate:</strong> Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death.</p>
-          </div>
         </section>
 
         <!-- Step 8: carrier-specific health questions after Apply Now -->
@@ -671,10 +665,5 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* Rate-tier explanations directly under the disclaimer (Randy, November
      2026; after verification only): plain dark-gray text, bold heading and
      labels, left-aligned, compact; no cards, borders or backgrounds. */
-  .qf-tiers { margin: var(--space-3) auto 0; max-width: 46rem; color: var(--color-text); font-size: 0.9375rem; line-height: 1.45; text-align: left; }
-  .qf-tiers[hidden] { display: none; }
-  .qf-tiers__title { margin: 0 0 var(--space-1); font-size: 0.9375rem; font-weight: 700; line-height: 1.4; color: var(--color-text); }
-  .qf-tiers p { margin: 0; }
-  .qf-tiers p + p { margin-top: var(--space-2); }
 
 </style>

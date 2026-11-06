@@ -174,7 +174,12 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         assert(ages.length === 36 && ages[0] === 50 && ages[35] === 85, `ages 50-85 ${ages[0]}-${ages.at(-1)} (${ages.length})`);
         await page.click('[data-pick="age"][data-value="60"]');
       }
-      if (s === 3) await page.click('[data-pick="tobacco"][data-value="no"]');
+      if (s === 3) {
+        // V4.13: No first (left, or above when stacked), then Yes; values unchanged.
+        const t = await page.$$eval('[data-pick="tobacco"]', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { label: e.textContent.trim(), value: e.dataset.value, left: r.left, top: r.top }; }));
+        assert(t.map((x) => `${x.label}=${x.value}`).join() === 'No=no,Yes=yes' && (t[0].left < t[1].left || t[0].top < t[1].top), `tobacco buttons ${JSON.stringify(t)}`);
+        await page.click('[data-pick="tobacco"][data-value="no"]');
+      }
       if (s === 4) {
         const c = await page.$$eval('[data-step="4"] .qf-opt', (els) => els.map((e) => e.textContent.trim()));
         assert(c.join('|') === '$5,000|$10,000|$15,000|$20,000|$25,000|Other', c.join('|'));
@@ -268,7 +273,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       return { text: lead.textContent.trim(), afterHeading: lead.previousElementSibling === t, nextIsCards: (() => { let n = lead.nextElementSibling; while (n && (n.classList.contains('visually-hidden') || n.hidden)) n = n.nextElementSibling; return n === c; })(), fs: parseFloat(ls.fontSize), align: ls.textAlign, color: ls.color, gap: Math.round(lr.top - tr.bottom), below: Math.round(cr.top - lr.bottom),
         centered: Math.abs(lr.left + lr.width / 2 - (cr.left + cr.width / 2)) <= 2, headingAlign: getComputedStyle(t).textAlign, headingColor: getComputedStyle(t).color, headingFs: parseFloat(getComputedStyle(t).fontSize), others: between.map((el) => el.className), oldGone: !document.querySelector('[data-qf-results-sub]') && !/Insurance Company Options|up to 30 additional|May Qualify/.test(document.body.innerText) };
     });
-    assert(/^Let us check your lowest rates from 30\+ insurance companies\. Offer available for: (10:00|9:[0-5]\d)$/.test(resIntro.text) && resIntro.afterHeading && resIntro.nextIsCards && resIntro.fs < resIntro.headingFs && resIntro.fs >= 15 && resIntro.align === 'center' && resIntro.centered && resIntro.color === GREEN && resIntro.headingColor === GREEN && resIntro.headingAlign === 'center' && resIntro.gap >= 4 && resIntro.gap <= 12 && resIntro.below >= 6 && resIntro.below <= 12 && resIntro.others.length === 0 && resIntro.oldGone, `results intro ${JSON.stringify(resIntro)}`);
+    assert(/^Let us check your lowest rates from 30\+ insurance companies\. Rates viewable for (10:00|9:[0-5]\d)$/.test(resIntro.text) && resIntro.afterHeading && resIntro.nextIsCards && resIntro.fs < resIntro.headingFs && resIntro.fs >= 15 && resIntro.align === 'center' && resIntro.centered && resIntro.color === GREEN && resIntro.headingColor === GREEN && resIntro.headingAlign === 'center' && resIntro.gap >= 4 && resIntro.gap <= 12 && resIntro.below >= 6 && resIntro.below <= 12 && resIntro.others.length === 0 && resIntro.oldGone, `results intro ${JSON.stringify(resIntro)}`);
     const vh = await page.evaluate(() => window.innerHeight);
     assert(h.top >= 0 && h.top < vh / 3, `results heading at ${Math.round(h.top)}px (viewport ${vh})`);
     assert(!(await page.content()).includes('Your Insurance Prices'), 'old heading present');
@@ -296,16 +301,16 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(cards[2].amount === '$51.06', `Gerber benchmark ${cards[2].amount}`);
     assert(!(await page.$('[data-qf-unlock]')), 'verification panel present');
     const intro = await page.textContent('[data-qf-adjust-intro]');
-    assert(intro === 'Adjust Your Quote Below', intro);
+    assert(intro === 'Easily adjust your rates or coverage below', intro);
     const gaps = await page.evaluate(() => { const c = document.querySelector('.qf-cards').getBoundingClientRect(), i = document.querySelector('[data-qf-adjust-intro]'), r = i.getBoundingClientRect(), a = document.querySelector('[data-qf-adjust]').getBoundingClientRect(); return { cards: Math.round(r.top - c.bottom), controls: Math.round(a.top - r.bottom), align: getComputedStyle(i).textAlign }; });
     assert(gaps.cards >= 10 && gaps.cards <= 14 && gaps.controls <= 12 && gaps.align === 'center', `spacing under the cards ${JSON.stringify(gaps)}`);
-    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref', '[data-qf-tiers]'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
+    const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
     const ref = await page.$eval('[data-qf-ref]', (e) => ({ visible: e.getClientRects().length > 0, text: e.textContent.trim() }));
     assert(ref.visible && ref.text === 'Representative monthly rates. Actual premiums and availability may vary by state and insurance company.', `rate note after verification ${JSON.stringify(ref)}`);
-    // Rate-tier explanations directly under the disclaimer; no Start New Quote control.
-    const tiers = await page.evaluate(() => { const t = document.querySelector('[data-qf-tiers]'), r = document.querySelector('[data-qf-ref]'); const cs = getComputedStyle(t);
-      return { after: r.nextElementSibling === t, visible: t.getClientRects().length > 0, text: t.innerText.replace(/\s+/g, ' ').trim(), align: cs.textAlign, color: cs.color, fs: parseFloat(cs.fontSize), refFs: parseFloat(getComputedStyle(r).fontSize), bold: [...t.querySelectorAll('strong, .qf-tiers__title')].map((e) => Number(getComputedStyle(e).fontWeight)), restart: !!document.querySelector('[data-qf-restart]')?.getClientRects().length, overflow: t.scrollWidth > t.clientWidth }; });
-    assert(tiers.after && tiers.visible && tiers.text === "Understanding Your 3 Rate Options Lowest Preferred Rate: Covers those in generally good health, including multiple common medical conditions controlled with medication(s). Standard Rate: Covers many serious health conditions such as heart attacks, Parkinson's, COPD, and other serious medical conditions. Guaranteed Acceptance Rate: Covers all health issues with no questions asked. Comes with a 2-year waiting period for nonaccidental death." && tiers.align === 'left' && tiers.color === 'rgb(32, 37, 34)' && tiers.fs >= 14 && tiers.fs <= 15 && tiers.bold.length === 4 && tiers.bold.every((w) => w >= 700) && !tiers.restart && !tiers.overflow, `rate tiers ${JSON.stringify(tiers)}`);
+    // V4.13: the old "Understanding Your 3 Rate Options" block is gone; the rate note is the last element.
+    const tail = await page.evaluate(() => ({ tiers: !!document.querySelector('[data-qf-tiers], .qf-tiers'), text: document.querySelector('[data-step="7"]').innerText.includes('Understanding Your 3 Rate Options'), last: document.querySelector('[data-qf-ref]').nextElementSibling, tob: document.querySelector('.qf-adjust input[name="tobacco"]').closest('fieldset').innerText.replace(/\s+/g, ' ').trim(), order: [...document.querySelectorAll('.qf-adjust input[name="tobacco"]')].map((i) => i.value + ':' + Math.round(i.closest('label').getBoundingClientRect().left) + ':' + Math.round(i.closest('label').getBoundingClientRect().top)) }));
+    assert(!tail.tiers && !tail.text && tail.last === null, `tier explanation still present ${JSON.stringify(tail)}`);
+    const [no, yes] = tail.order.map((x) => x.split(':')); assert(tail.tob === 'Tobacco or Nicotine No Yes' && no[0] === 'no' && yes[0] === 'yes' && (Number(no[1]) < Number(yes[1]) || Number(no[2]) < Number(yes[2])), `tobacco control ${JSON.stringify(tail)}`);
     // v4.3: each adjustment label is centered over its own controls.
     const centers = await page.$$eval('.qf-adjust .qf-group', (gs) => gs.map((g) => {
       const t = g.querySelector('.qf-group__title');
@@ -315,7 +320,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       const ctl = g.querySelector('select, .qf-seg__opts').getBoundingClientRect();
       return { label: t.textContent.trim(), off: Math.round(Math.abs(tr.left + tr.width / 2 - (ctl.left + ctl.width / 2))) };
     }));
-    assert(centers.map((c) => c.label).join('|') === 'Age|Gender|Tobacco|Coverage' && centers.every((c) => c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
+    assert(centers.map((c) => c.label).join('|') === 'Age|Gender|Tobacco or Nicotine|Coverage' && centers.every((c) => c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
     assert(o.every((t, i) => i === 0 || t > o[i - 1]), `order ${o}`);
     await shot(page, `v35-${name}-5-revealed.png`);
     await shot(page, `v35-${name}-5-revealed-full.png`, true);
@@ -354,7 +359,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     }
   });
 
-  await check(`${name}: Call Us With Questions (orange tel: link above green Text Us With Questions, CTA V1.5) with first-party attribution and no personal data`, async () => {
+  await check(`${name}: Call to Chat or Apply (orange tel: link above green Text to Chat or Apply, CTA V1.5) with first-party attribution and no personal data`, async () => {
     const b = await page.$$eval('.qf-card', (els) =>
       els.map((e) => {
         const call = e.querySelector('[data-qf-call]');
@@ -367,8 +372,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     for (const c of b) {
-      assert(c.href === 'tel:+18886564648' && c.text === 'Call Us With Questions' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
-      assert(c.applyText === 'Text Us With Questions' && c.applyIcon && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 34 && c.ah <= 36 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:+18886564648' && c.text === 'Call to Chat or Apply' && c.icon && c.bg === ORANGE, `call button ${JSON.stringify(c)}`);
+      assert(c.applyText === 'Text to Chat or Apply' && c.applyIcon && c.applyBg === GREEN && c.applyFg === 'rgb(255, 255, 255)' && c.above && c.ch >= 46 && c.ch <= 48 && (name === 'desktop' ? c.ah >= 34 && c.ah <= 36 : c.ah >= 44) && c.ch > c.ah && c.cw === c.aw && c.applyCentered, `apply button ${JSON.stringify(c)}`);
       assert(c.bg === HOME_ORANGE && c.fg === 'rgb(255, 255, 255)', `call colors ${JSON.stringify(c)}`);
       assert((name === 'desktop' ? c.th >= 26 && c.th <= 28 : c.th <= 30) && c.tLines === 1 && c.tOver === 0 && c.gap <= 10, `timing panel ${JSON.stringify(c)}`);
     }

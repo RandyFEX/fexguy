@@ -308,7 +308,6 @@ if (root) {
   const resultsLead = $('[data-qf-results-lead]');
   const adjustIntro = $('[data-qf-adjust-intro]');
   const refNote = $('[data-qf-ref]');
-  const tiers = $('[data-qf-tiers]');
   const blurred = (text: string) => {
     const b = document.createElement('span');
     b.className = 'qf-blur';
@@ -341,7 +340,6 @@ if (root) {
     adjustIntro.hidden = true;
     // The representative-rates note shows only with real prices (v4.3).
     refNote.hidden = true;
-    tiers.hidden = true;
     // The results headline and its supporting line appear with real prices only.
     resultsTitle.textContent = 'Your quote results';
     resultsTitle.classList.add('visually-hidden');
@@ -354,7 +352,7 @@ if (root) {
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
       const lockedApply = el.querySelector<HTMLButtonElement>('[data-qf-apply]')!;
       lockedApply.disabled = true;
-      lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Text Us With Questions';
+      lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Text to Chat or Apply';
       delete lockedApply.dataset.ready;
       el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
       el.querySelector<HTMLElement>('[data-qf-plan]')!.replaceChildren(blurred(PLAN_STAND_INS[i]));
@@ -420,7 +418,7 @@ if (root) {
     const names = (cat?.carriers ?? []).filter(Boolean) as Carrier[];
     el.querySelector<HTMLElement>('[data-qf-plan]')!.textContent = names.map((n) => n.subtitle ?? n.plan).join(' / ');
     el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = state !== 'ok';
-    el.querySelector('[data-qf-apply] [data-qf-apply-label]')!.textContent = 'Text Us With Questions';
+    el.querySelector('[data-qf-apply] [data-qf-apply-label]')!.textContent = 'Text to Chat or Apply';
     el.querySelector<HTMLElement>('[data-qf-apply]')!.dataset.ready = 'true';
     const timing = el.querySelector<HTMLElement>('[data-qf-timing]')!;
     const timings = [...new Set(names.map((n) => n.timing).filter(Boolean))];
@@ -510,7 +508,6 @@ if (root) {
     adjust.hidden = true;
     adjustIntro.hidden = true;
     refNote.hidden = true;
-    tiers.hidden = true;
     let i = 0;
     for (const el of cards.values()) {
       el.querySelector<HTMLElement>('[data-qf-amount]')!.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">This offer has expired</span>`;
@@ -531,7 +528,6 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    tiers.hidden = false;
     resultsTitle.textContent = 'Call Funeral Funds for Access to Even Lower Rates!';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;

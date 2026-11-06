@@ -1,6 +1,6 @@
 // Quote results CTA V1.5 (Randy, November 2026): on all three cards the orange
-// tel: button reads "Call Us With Questions" (phone icon) and the green
-// button "Text Us With Questions" (message icon), same actions as before.
+// tel: button reads "Call to Chat or Apply" (phone icon) and the green
+// button "Text to Chat or Apply" (message icon), same actions as before.
 // Each icon and label stays on one line inside the unchanged buttons at 320,
 // 375, 390, 430, the three-column range and desktop. Built site + real
 // handlers in test mode (tests/quote/funnel-server.mjs).
@@ -59,7 +59,7 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
     });
     assert(r.cards.length === 3 && !r.hscroll && !r.sms, JSON.stringify(r));
     for (const c of r.cards) {
-      assert(c.call.text === 'Call Us With Questions' && c.apply.text === 'Text Us With Questions', `labels ${c.call.text} / ${c.apply.text}`);
+      assert(c.call.text === 'Call to Chat or Apply' && c.apply.text === 'Text to Chat or Apply', `labels ${c.call.text} / ${c.apply.text}`);
       assert(c.call.icon && c.apply.icon && c.call.iconLeft && c.apply.iconLeft, `icons ${JSON.stringify(c)}`);
       assert(c.call.lines === 1 && c.apply.lines === 1 && c.call.fits && c.apply.fits, `one line ${JSON.stringify(c)}`);
       // The pre-V1.2 dimensions: both buttons span the card less 34px; 48px orange, 44px (36px desktop) green.
