@@ -102,7 +102,7 @@ function common(l) {
   assert(l.photoSrc === '/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png' && l.photoLoaded, 'photo');
   assert(l.labels.join('|') === 'Full Name|Mobile Phone Number' && l.btn === 'SEE MY RATES' && !l.email && !l.sms, `form ${JSON.stringify([l.labels, l.btn, l.email, l.sms])}`);
   assert(l.consentText === CONSENT && l.privacy === '/privacy-policy/' && l.privacyTarget === '_blank' && l.checkboxes === 0 && l.afterButton && l.described && l.fontPx >= 13 && l.fontPx < l.buttonFontPx && l.discColor === 'rgb(91, 101, 96)' && l.disclosure.top >= l.button.bottom && l.disclosure.top - l.button.bottom <= 12, `disclosure ${JSON.stringify([l.consentText, l.privacy, l.checkboxes, l.afterButton, l.fontPx, l.discColor, l.disclosure, l.button])}`);
-  assert(l.whyTitle === 'Why Funeral Funds?' && JSON.stringify(l.why) === JSON.stringify(WHY) && l.checks, `trust list ${JSON.stringify(l.why)}`);
+  assert(l.whyTitle === 'Why Choose Funeral Funds' && JSON.stringify(l.why) === JSON.stringify(WHY) && l.checks, `trust list ${JSON.stringify(l.why)}`);
   assert(l.tel === 'tel:+18886564648' && l.telText === '888-656-4648' && l.telTarget >= 44, `direct contact ${l.tel} ${l.telText} ${l.telTarget}px`);
   // V3.7: the advertising number everywhere on /free-quote/ (header, Direct Contact, cards, intake).
   assert(l.headerTel === 'tel:+18886564648' && l.headerText.endsWith('888-656-4648') && l.tels.every((h) => h === 'tel:+18886564648') && l.tels.length >= 5 && !l.mainNumber, `numbers ${JSON.stringify([l.headerTel, l.tels, l.mainNumber])}`);
