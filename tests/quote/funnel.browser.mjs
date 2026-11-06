@@ -5,7 +5,7 @@
 // server/rates/private/ (npm run rates:extract), so it runs locally:
 //   npm run test:quote:browser          (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
-import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
+import { startFunnelServer, tapTextLink, textLinkOk } from './funnel-server.mjs';
 import { priceCategories } from '../../server/rates/pricing-categories.js';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
@@ -140,7 +140,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   // visitor's session has answered; no tel: link) and the computer button (QR code); the other
   // three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === 'On a Cell Phone' && f.text.qrLabel === 'On a Computer' && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === "CLICK HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -265,7 +265,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
     const h = await page.$eval('#qf-s7', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
-    assert(h.t === 'Call Funeral Funds to shop for even lower rates' && h.h > 10, JSON.stringify(h));
+    assert(h.t === 'Call Funeral Funds To Shop For Even Lower Rates' && h.h > 10, JSON.stringify(h));
     const resIntro = await page.evaluate(() => {
       const t = document.querySelector('#qf-s7'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
       const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
@@ -283,7 +283,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         const r = img?.getBoundingClientRect();
         return {
           s: e.dataset.state, amount: e.querySelector('[data-qf-amount]').textContent, plan: e.querySelector('[data-qf-plan]').textContent, timing: e.querySelector('[data-qf-timing]').textContent,
-          timingShown: !e.querySelector('[data-qf-timing]').hidden, blurred: e.querySelectorAll('.qf-blur').length, dis: e.querySelector('[data-qf-apply]').getAttribute('href') !== 'sms:8886720762' || e.querySelector('[data-qf-apply]').hasAttribute('aria-disabled'),
+          timingShown: !e.querySelector('[data-qf-timing]').hidden, blurred: e.querySelectorAll('.qf-blur').length, dis: !e.querySelector('[data-qf-apply]').getAttribute('href') || e.querySelector('[data-qf-apply]').hasAttribute('aria-disabled'), textHref: e.querySelector('[data-qf-apply]').getAttribute('href'),
           logo: img ? img.alt : e.querySelector('[data-qf-logo]').textContent, src: img?.getAttribute('src') ?? null,
           // V4.15: the artwork is drawn whole (object-fit: contain, proportions kept) inside the logo area, never cropped.
           ...(() => {
@@ -298,6 +298,14 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       }),
     );
     assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.whole && c.drawnH >= 28), JSON.stringify(cards));
+    // V4.16: phones text Randy's number with the prewritten text; computers open /facebook/ (query string kept).
+    const search = await page.evaluate(() => location.search);
+    assert(cards.every((c) => textLinkOk(c.textHref, { mobile: name === 'mobile', ios: name === 'mobile', search })), `text links ${cards.map((c) => c.textHref).join(' | ')}`);
+    if (name === 'mobile') {
+      const exp = expected({ age: 60, gender: 'female', tobacco: false, coverage: 10000 });
+      const body = decodeURIComponent(cards[0].textHref.split('&body=')[1]);
+      assert(body === `Hi, this is Mary. I have a few questions about my $10,000 final expense insurance quote for ${exp['lowest-preferred']}/month.`, `prewritten text ${body}`);
+    }
     assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense Preferred/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
     assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
     const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));

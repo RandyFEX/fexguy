@@ -151,14 +151,14 @@ const advantage = [
           <div class="fb-text-opt">
             <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
-              <span>On a Cell Phone</span>
+              <span>CLICK HERE IF YOU'RE<br />ON A CELL PHONE</span>
             </a>
             <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
           </div>
           <div class="fb-text-opt">
             <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
-              <span>On a Computer</span>
+              <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
             </button>
             <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
             <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
@@ -637,7 +637,7 @@ const advantage = [
     color: #ffffff;
     /* V13.0: headline, call button and number only, with the same space
        above and below. */
-    padding-block: var(--space-6);
+    padding-block: var(--space-6) var(--space-12);
   }
   /* The hero is one centered column, lined up with the centered callback
      band below. */
@@ -649,7 +649,7 @@ const advantage = [
      green hero between the headline and the call button. */
   .fb-quote {
     max-width: 36rem;
-    margin: 0 auto var(--space-4);
+    margin: 0 auto var(--space-2);
     padding: var(--space-3) var(--space-4);
     border: 1px solid rgb(255 255 255 / 0.45);
     border-radius: var(--radius);
@@ -692,9 +692,10 @@ const advantage = [
   }
   /* Offer countdown (V2.0): one inline line under the headline; only the
      digits are yellow. */
-  /* V4.15: directly under the device choices, above the selected coverage. */
+  /* V4.15 order (device choices, countdown, selected coverage); V4.16 spacing:
+     a full section gap between each part, nothing compressed. */
   .fb-offer {
-    margin: var(--space-5) 0 var(--space-4);
+    margin: var(--space-8) 0 var(--space-6);
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.4;
@@ -953,7 +954,7 @@ const advantage = [
   }
   @media (min-width: 64rem) {
     .fb-hero {
-      padding-block: var(--space-8);
+      padding-block: var(--space-8) var(--space-12);
     }
     .fb-band,
     .fb-final {

@@ -648,3 +648,13 @@ test('two-option handoff V1.9: the QR code text for the computer option', async 
   assert.equal(qrPayload(null, body), '');
   assert.equal(qrPayload('8886720762', ''), '');
 });
+
+test('V4.16: phones and tablets text from the result cards; computers open /facebook/', async () => {
+  const { isMobileDevice } = await import('../../src/scripts/sms-link.js');
+  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Mobile/15E148' }));
+  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) Mobile Safari/537.36' }));
+  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 13; SM-X700) Safari/537.36' }), 'Android tablet');
+  assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 5 }), 'iPad');
+  assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0' }));
+  assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 0 }));
+});
