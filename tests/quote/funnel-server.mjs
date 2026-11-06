@@ -91,18 +91,29 @@ export async function startFunnelServer({ production = false } = {}) {
   };
 }
 
-/** V4.15: a card's "Text to Chat or Apply" is a direct sms: link. Check its
- *  destination, tap it (the messaging app itself is not opened in tests),
- *  wait for the background Apply Now record, then open /facebook/ with the
- *  page's query string, where the saved selection is shown. */
+/** V4.16: the expected "Text to Chat or Apply" destination: phones and
+ *  tablets get sms:+18886720762 with the prewritten text (iOS "&body=",
+ *  others "?body="); computers get /facebook/ with the page's query string. */
+export const textLinkOk = (href, { mobile, ios = false, search = '' } = {}) =>
+  mobile ? new RegExp(`^sms:\\+18886720762${ios ? '&' : '\\?'}body=Hi(%2C%20this%20is%20|\\.)`).test(href ?? '') : href === `/facebook/${search}`;
+
+/** Tap a card's "Text to Chat or Apply" and end on /facebook/ with the saved
+ *  selection: on a computer the link itself opens it; on a phone (sms: link,
+ *  the messaging app isn't opened in tests) the test opens it afterwards. */
 export async function tapTextLink(page, id) {
   const sel = `[data-qf-card="${id}"] [data-qf-apply]`;
   const href = await page.getAttribute(sel, 'href');
-  if (href !== 'sms:8886720762') throw new Error(`text link for ${id}: ${href}`);
-  await page.$eval(sel, (a) => a.addEventListener('click', (e) => e.preventDefault(), { once: true }));
-  const saved = page.waitForResponse((r) => r.url().includes('/api/quote/') && /"action":"apply"/.test(r.request().postData() ?? ''), { timeout: 8000 });
-  await page.click(sel);
-  await saved;
+  const saved = page.waitForResponse((r) => r.url().includes('/api/quote/') && /"action":"apply"/.test(r.request().postData() ?? ''), { timeout: 8000 }).catch(() => null);
   const url = new URL(page.url());
-  await page.goto(`${url.origin}/facebook/${url.search}`);
+  if (href?.startsWith('sms:')) {
+    if (!textLinkOk(href, { mobile: true, ios: href.includes('&body=') })) throw new Error(`text link for ${id}: ${href}`);
+    await page.$eval(sel, (a) => a.addEventListener('click', (e) => e.preventDefault(), { once: true }));
+    await page.click(sel);
+    await saved;
+    await page.goto(`${url.origin}/facebook/${url.search}`);
+  } else {
+    if (!textLinkOk(href, { mobile: false, search: url.search })) throw new Error(`text link for ${id}: ${href}`);
+    await page.click(sel);
+    await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+  }
 }

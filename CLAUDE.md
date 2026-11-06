@@ -1612,6 +1612,19 @@ Prioritize the shortest reliable path to completing approved changes.
   "Please respond within", then the selected coverage and estimate, then "Why
   Families Choose Funeral Funds Coverage"; "Here's What You Selected" (now a
   hidden H1 "Burial Insurance Quotes") and the "Don't worry..." line are gone.
+  **V4.16 (Randy, November 2026; corrects V4.15):** the results heading
+  reads exactly "Call Funeral Funds To Shop For Even Lower Rates". Each
+  card's "Text to Chat or Apply" depends on the device (sms-link.js
+  `isMobileDevice`): phones and tablets get `sms:+18886720762` with Randy's
+  approved prewritten text ("Hi, this is [First Name]. I have a few
+  questions about my [Coverage] final expense insurance quote for [Monthly
+  Premium]/month.", the same text /facebook/ uses); computers open
+  /facebook/ (query string kept) with its QR code. The /facebook/ buttons
+  keep their full labels "CLICK HERE IF YOU'RE ON A CELL PHONE" and "CLICK
+  HERE IF YOU'RE ON A COMPUTER" (never shorten them); the V4.15 order stays
+  with full section spacing (countdown 2rem above, 1.5rem below; hero 3rem
+  at the bottom). Use only defined spacing tokens (there is no --space-5 or
+  --space-10).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

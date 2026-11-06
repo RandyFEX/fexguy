@@ -22,6 +22,8 @@ import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offe
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
 import { isFullName } from '../../server/quote/name.js';
+import { SMS_NUMBER } from '@/config/phones';
+import { isIOS, isMobileDevice, prewrittenText, smsHref } from '@/scripts/sms-link.js';
 
 // Direct preview access (preview and local builds only): ?preview=results
 // opens the real results with the fixed sample (src/scripts/quote-preview.ts).
@@ -70,13 +72,16 @@ function visitId() {
     return memoryVisit;
   }
 }
-/** V4.15 (Randy, November 2026): each card's "Text to Chat or Apply" is a
- *  direct sms: link (the number in src/config/phones.ts, SMS_NUMBER); it is
- *  active only on a priced card. */
-const SMS_HREF = 'sms:8886720762';
-function setTextLink(a: HTMLElement, on: boolean) {
-  if (on) {
-    a.setAttribute('href', SMS_HREF);
+/** V4.16 (Randy, November 2026): each card's "Text to Chat or Apply".
+ *  Phones and tablets: a direct sms: link to SMS_NUMBER (src/config/phones.ts)
+ *  with Randy's approved prewritten text (src/scripts/sms-link.js, the same
+ *  text /facebook/ uses). Computers: the /facebook/ handoff page (query string
+ *  kept), with its computer instructions and QR code. Active only on a priced
+ *  card. */
+const ON_PHONE = isMobileDevice(navigator);
+function setTextLink(a: HTMLElement, on: boolean, href = '') {
+  if (on && href) {
+    a.setAttribute('href', href);
     a.removeAttribute('aria-disabled');
   } else {
     a.removeAttribute('href');
@@ -117,6 +122,8 @@ if (root) {
   let current = 1;
   let started = false;
   let unlocked = false;
+  // V4.16: the visitor's own name (first word goes into the prewritten text).
+  let visitorName = '';
 
   function show(n: number, focus = true) {
     current = n;
@@ -285,6 +292,7 @@ if (root) {
     // labeled TEST, a resumed session, Apply Now or /facebook/).
     if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(6);
+    visitorName = firstName;
     unlock(quote, body.testMode, body.expiresAt);
   });
 
@@ -419,12 +427,17 @@ if (root) {
     return { age: Number(($('#qf-adj-age') as HTMLSelectElement).value), gender: val('gender') === 'female' ? 'female' : 'male', tobacco: val('tobacco') === 'yes', coverage };
   }
 
+  function textHref(cat: Category): string {
+    if (!ON_PHONE) return `/facebook/${location.search}`;
+    const body = prewrittenText({ firstName: visitorName, coverage: shown?.quote.coverage ?? 0, monthlyPremium: cat.monthlyPremium ?? '' });
+    return body ? smsHref(SMS_NUMBER, body, isIOS(navigator)) : '';
+  }
   function setCard(el: HTMLElement, cat: Category | null, state: string, note: string) {
     el.dataset.state = state;
     el.querySelector<HTMLElement>('[data-qf-amount]')!.textContent =
       state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
-    setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok');
+    setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok', state === 'ok' && cat ? textHref(cat) : '');
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
     if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
@@ -541,7 +554,7 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Call Funeral Funds to shop for even lower rates';
+    resultsTitle.textContent = 'Call Funeral Funds To Shop For Even Lower Rates';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
     stopCountdown?.();
@@ -643,9 +656,11 @@ if (root) {
     });
   }
   for (const [id, el] of cards) {
-    // V4.15: the link itself opens the messaging app (sms:); the tap is
+    // V4.16: the link itself opens the messaging app on a phone (sms: with the
+    // prewritten text) or the /facebook/ handoff page on a computer; the tap is
     // recorded in the background (GA4 quote_apply_now and the server's Apply
-    // Now record) and the selection is kept for /facebook/ (quote-handoff.ts).
+    // Now record, keepalive) and the selection is kept for /facebook/
+    // (quote-handoff.ts) before the link is followed.
     el.querySelector<HTMLElement>('[data-qf-apply]')!.addEventListener('click', (e) => {
       const cat = shown?.categories.find((c) => c.id === id);
       if (!shown || !unlocked || expired || !cat || cat.status !== 'ok') {
@@ -694,10 +709,16 @@ if (root) {
   (async () => {
     if (preview) {
       const r = await previewSession(preview).catch(() => null);
-      if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) return unlock(r.body.quote as Quote, true, r.body.expiresAt);
+      if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) {
+        visitorName = String(r.body.firstName ?? '');
+        return unlock(r.body.quote as Quote, true, r.body.expiresAt);
+      }
     }
     const { http, body } = await api({ action: 'session' });
-    if (http === 200 && body.status === 'verified' && body.quote) return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
+    if (http === 200 && body.status === 'verified' && body.quote) {
+      visitorName = String(body.firstName ?? '');
+      return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
+    }
     // Only if the visitor hasn't already answered (an answer given while this
     // check was loading must not send them back to the first question).
     if (!preselect && current === 1) show(1, false);

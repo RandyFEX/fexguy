@@ -33,6 +33,14 @@ export function prewrittenText({ firstName, coverage, monthlyPremium }) {
 export const isIOS = (nav) => /iP(hone|ad|od)/.test(nav.userAgent) || (nav.platform === 'MacIntel' && (nav.maxTouchPoints ?? 0) > 1);
 
 /**
+ * Phones and tablets (iPhone, iPad, Android, other "Mobi" browsers) get the
+ * sms: link; everything else is treated as a computer (device-aware handoff
+ * V1.4, restored for the result cards in V4.16).
+ * @param {{ userAgent: string, platform?: string, maxTouchPoints?: number }} nav
+ */
+export const isMobileDevice = (nav) => isIOS(nav) || /Android|Mobi/i.test(nav.userAgent);
+
+/**
  * The native SMS link. iOS (8+) reads the body after "&"; Android and other
  * platforms read the RFC 5724 query "?body=". Returns '' without a valid
  * 10-digit US number.
