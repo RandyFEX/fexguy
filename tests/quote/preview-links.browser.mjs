@@ -76,7 +76,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
       url: location.pathname + location.search,
       hscroll: document.documentElement.scrollWidth > innerWidth,
     }));
-    assert(r.h1 === "Here's What You Selected" && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
+    assert(r.h1 === 'Burial Insurance Quotes' && r.dd[0] === '$10,000' && /^\$\d+\.\d\d$/.test(r.dd[1]) && /: 2:00$|: 1:5\d$/.test(r.offer) && r.calls.length >= 1 && r.calls.every((h) => /^tel:\d{10}$/.test(h)) && r.url === '/facebook/' && !r.hscroll, JSON.stringify(r));
     if (OUT) await page.screenshot({ path: `${OUT}/preview-apply-${name}.png`, fullPage: true });
     await ctx.close();
     return `${r.dd.join(' / ')}`;
@@ -97,19 +97,19 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
     const r = await page.evaluate(() => {
       const c = (e) => getComputedStyle(e);
       const rect = (e) => e.getBoundingClientRect();
-      const h1 = document.querySelector('h1'), re = document.querySelector('[data-fb-reassure]'), timer = document.querySelector('[data-fb-offer]'), box = document.querySelector('[data-fb-quote]');
+      const h1 = document.querySelector('h1'), re = document.querySelector('[data-fb-reassure]'), opts = document.querySelector('.fb-text-options'), timer = document.querySelector('[data-fb-offer]'), box = document.querySelector('[data-fb-quote]');
       const [phone, computer] = [...document.querySelectorAll('.fb-text-opt')];
       const btns = [...document.querySelectorAll('.fb-text__btn')], notes = [...document.querySelectorAll('.fb-text__note')];
       const lines = (el) => { const rg = document.createRange(); rg.selectNodeContents(el.querySelector('span')); return new Set([...rg.getClientRects()].map((x) => Math.round(x.top))).size; };
       return {
-        h1: h1.textContent.trim(), reassure: re.textContent.trim(), timer: timer.textContent.trim(),
+        h1: h1.textContent.trim(), h1Hidden: h1.classList.contains('visually-hidden'), reassure: !!re || /adjust these amounts later|Here's What You Selected/.test(document.body.innerText), timer: timer.textContent.trim(),
         card: [...box.querySelectorAll('dt, dd')].map((e) => e.textContent.trim()),
         labels: btns.map((b) => b.querySelector('span').innerText.replace(/\s+/g, ' ').trim()), icons: btns.map((b) => !!b.querySelector('svg')),
         notes: notes.map((n) => n.textContent.trim()), noteWhite: notes.every((n) => c(n).color === 'rgb(255, 255, 255)' && c(n).textAlign === 'center'),
         orange: btns.every((b) => c(b).backgroundColor === 'rgb(194, 65, 12)' && c(b).color === 'rgb(255, 255, 255)' && Number(c(b).fontWeight) >= 700),
-        twoLines: btns.every((b) => lines(b) === 2), fits: btns.every((b) => b.scrollWidth <= b.clientWidth),
+        oneLine: btns.every((b) => lines(b) === 1), fits: btns.every((b) => b.scrollWidth <= b.clientWidth),
         sameSize: Math.abs(rect(btns[0]).width - rect(btns[1]).width) <= 2 && Math.abs(rect(btns[0]).height - rect(btns[1]).height) <= 2,
-        order: rect(h1).bottom <= rect(re).top && rect(re).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(phone).top && rect(btns[0]).bottom <= rect(notes[0]).top && rect(btns[1]).bottom <= rect(notes[1]).top,
+        order: rect(opts).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(document.querySelector('.fb-advantage')).top && rect(opts).top - rect(document.querySelector('.fb-hero')).top <= 64 && rect(btns[0]).bottom <= rect(notes[0]).top && rect(btns[1]).bottom <= rect(notes[1]).top,
         sideBySide: Math.abs(rect(phone).top - rect(computer).top) <= 1 && rect(phone).right <= rect(computer).left + 1 && Math.abs(rect(phone).width - rect(computer).width) <= 1,
         divider: c(computer).borderLeftStyle === 'solid' && parseFloat(c(computer).borderLeftWidth) >= 1,
         stacked: rect(phone).bottom <= rect(computer).top,
@@ -119,11 +119,11 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
         hscroll: document.documentElement.scrollWidth > innerWidth, h: Math.round(rect(btns[0]).height), fs: c(btns[0]).fontSize,
       };
     });
-    assert(r.h1 === "Here's What You Selected" && r.reassure === "Don't worry, you can always adjust these amounts later." && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
+    assert(r.h1 === 'Burial Insurance Quotes' && r.h1Hidden && !r.reassure && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
     assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$51.10']), `${w}px card ${JSON.stringify(r.card)}`);
-    assert(JSON.stringify(r.labels) === JSON.stringify(["CLICK HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
+    assert(JSON.stringify(r.labels) === JSON.stringify(['On a Cell Phone', 'On a Computer']) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
     assert(JSON.stringify(r.notes) === JSON.stringify(['Click the button above to generate an SMS text and hit Send.', 'Scan our code with your cell phone camera to send a text.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
-    assert(r.orange && r.twoLines && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);
+    assert(r.orange && r.oneLine && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);
     assert(w >= 1280 ? r.sideBySide && r.divider : r.stacked, `${w}px columns ${JSON.stringify(r)}`);
     assert(!r.qr && !r.copy && !r.oldButton && !r.heroTel, `${w}px extras ${JSON.stringify(r)}`);
     assert(r.smsBody === PREWRITTEN && r.href === `sms:+18886720762?body=${encodeURIComponent(PREWRITTEN)}`, `${w}px sms ${r.href}`);

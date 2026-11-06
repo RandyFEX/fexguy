@@ -8,7 +8,7 @@
 // conversion). Run after a build:
 //   node tests/quote/funnel-direct.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
-import { startFunnelServer } from './funnel-server.mjs';
+import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer({ production: true });
@@ -258,8 +258,7 @@ await check('SEE MY RATES: validates, then (production) delivers to Agent CRM an
   // A card's call button (GA4 click_to_call and quote_call_click) and the green button: their own events.
   await page.evaluate(() => document.querySelector('[data-qf-card="average-standard"] [data-qf-call]').addEventListener('click', (e) => e.preventDefault(), { once: true }));
   await page.click('[data-qf-card="average-standard"] [data-qf-call]');
-  await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
-  await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
+  await tapTextLink(page, 'average-standard');
   const all = logs.join('\n');
   assert(/quote_call_click/.test(all) && /click_to_call/.test(all) && /quote_apply_now/.test(all), 'call or application event missing');
   assert(!/Dorothy|Hale|5312|214|\+1214/.test(all.replace(/"quote_ref":"[A-Za-z0-9]+"/g, '')), `personal data in analytics: ${all.slice(0, 300)}`);
@@ -277,8 +276,7 @@ await check('texting option on the Ready to Apply page: quote_text_click (QR cod
   await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.dataset.state === 'ok', null, { timeout: 8000 });
   await page.waitForTimeout(400);
   if (OUT) await page.screenshot({ path: `${OUT}/v38-desktop-results.png`, fullPage: true });
-  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
-  await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
+  await tapTextLink(page, 'lowest-preferred');
   await page.waitForSelector('[data-fb-qr-btn]:not([disabled])');
   await page.click('[data-fb-qr-btn]');
   await page.waitForFunction(() => window.__ev.includes('quote_text_click'), null, { timeout: 3000 });

@@ -5,7 +5,7 @@
 // with Playwright's fake clock. Needs a build and the private rate tables.
 //   node tests/quote/countdown.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
-import { startFunnelServer } from './funnel-server.mjs';
+import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
@@ -81,8 +81,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
     return `${left}s left after refresh`;
   });
   await check(`${name}: Apply Now shows "Please respond within: 2:00" (yellow digits); it counts down and survives a refresh`, async () => {
-    await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
-    await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+    await tapTextLink(page, 'average-standard');
     await page.waitForSelector('[data-fb-offer]:not([hidden])');
     const t = await page.$eval('[data-fb-offer]', (e) => ({ text: e.textContent.trim(), color: getComputedStyle(e.querySelector('[data-fb-offer-time]')).color, pColor: getComputedStyle(e).color, children: e.children.length, lines: Math.round(e.getBoundingClientRect().height / parseFloat(getComputedStyle(e).lineHeight)) }));
     assert(t.text === 'Please respond within: 2:00' && t.color === YELLOW && t.pColor === 'rgb(255, 255, 255)' && t.children === 1 && t.lines === 1, JSON.stringify(t));
@@ -111,7 +110,7 @@ for (const [name, opts] of [['desktop', { viewport: { width: 1280, height: 900 }
   await check(`${name}: at 0:00 the results prices are hidden, a refresh keeps them expired, Start New Quote restarts`, async () => {
     const v = await verified(opts);
     await v.page.clock.runFor(10 * 60 * 1000);
-    const real = await v.page.evaluate(() => ({ text: document.querySelector('[data-qf-results-lead]').textContent.trim(), amounts: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent), apply: [...document.querySelectorAll('[data-qf-apply]')].every((b) => b.disabled), adjust: document.querySelector('[data-qf-adjust]').hidden, restart: !document.querySelector('[data-qf-restart]').hidden }));
+    const real = await v.page.evaluate(() => ({ text: document.querySelector('[data-qf-results-lead]').textContent.trim(), amounts: [...document.querySelectorAll('[data-qf-amount]')].map((e) => e.textContent), apply: [...document.querySelectorAll('[data-qf-apply]')].every((b) => !b.hasAttribute('href') && b.getAttribute('aria-disabled') === 'true'), adjust: document.querySelector('[data-qf-adjust]').hidden, restart: !document.querySelector('[data-qf-restart]').hidden }));
     assert(real.text.endsWith('Rates viewable for 0:00') && real.apply && real.adjust && real.restart && real.amounts.every((a) => /This offer has expired/.test(a)), JSON.stringify(real));
     if (OUT) await v.page.locator('.qf-results').screenshot({ path: `${OUT}/${name}-results-expired.png` });
     await v.page.reload();

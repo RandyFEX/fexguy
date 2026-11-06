@@ -1601,6 +1601,17 @@ Prioritize the shortest reliable path to completing approved changes.
   buttons read "Call to Chat or Apply" (tel:+18886564648) and "Text to Chat
   or Apply" (the unchanged /facebook/ handoff, whose text option addresses
   888-672-0762).
+  **V4.15 (Randy, November 2026):** the results heading reads "Call Funeral
+  Funds to shop for even lower rates"; each card's "Text to Chat or Apply" is
+  a direct `sms:8886720762` link (the tap still sends GA4 quote_apply_now and
+  the server's Apply Now record in the background and saves the selection
+  for /facebook/; the card no longer navigates there); card logos sit in a
+  definite box (full height, at most 92% wide, object-fit contain) so iOS
+  Safari no longer crops the Mutual of Omaha and Gerber artwork. /facebook/
+  opens with the device choices ("On a Cell Phone", "On a Computer"), then
+  "Please respond within", then the selected coverage and estimate, then "Why
+  Families Choose Funeral Funds Coverage"; "Here's What You Selected" (now a
+  hidden H1 "Burial Insurance Quotes") and the "Don't worry..." line are gone.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

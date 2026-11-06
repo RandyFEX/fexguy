@@ -90,3 +90,19 @@ export async function startFunnelServer({ production = false } = {}) {
     },
   };
 }
+
+/** V4.15: a card's "Text to Chat or Apply" is a direct sms: link. Check its
+ *  destination, tap it (the messaging app itself is not opened in tests),
+ *  wait for the background Apply Now record, then open /facebook/ with the
+ *  page's query string, where the saved selection is shown. */
+export async function tapTextLink(page, id) {
+  const sel = `[data-qf-card="${id}"] [data-qf-apply]`;
+  const href = await page.getAttribute(sel, 'href');
+  if (href !== 'sms:8886720762') throw new Error(`text link for ${id}: ${href}`);
+  await page.$eval(sel, (a) => a.addEventListener('click', (e) => e.preventDefault(), { once: true }));
+  const saved = page.waitForResponse((r) => r.url().includes('/api/quote/') && /"action":"apply"/.test(r.request().postData() ?? ''), { timeout: 8000 });
+  await page.click(sel);
+  await saved;
+  const url = new URL(page.url());
+  await page.goto(`${url.origin}/facebook/${url.search}`);
+}

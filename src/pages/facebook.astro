@@ -139,9 +139,33 @@ const advantage = [
 
     <section class="fb-hero" aria-labelledby="fb-title">
       <div class="container fb-hero__inner">
-        <h1 class="fb-hero__title" id="fb-title">Here's What You Selected</h1>
-        <!-- Texting page V1.1: shown with the selected quote (below) only. -->
-        <p class="fb-hero__reassure" data-fb-reassure hidden>Don't worry, you can always adjust these amounts later.</p>
+        <!-- V4.15 (Randy, November 2026): the device choices come first, then the
+             response countdown, the selected coverage and the benefits below. -->
+        <h1 class="visually-hidden" id="fb-title">Burial Insurance Quotes</h1>
+        <!-- Two-option SMS handoff V1.9 (Randy, November 2026): the cell phone
+             button opens the visitor's own messaging app with the prewritten
+             text (src/scripts/sms-link.js) to SMS_NUMBER (src/config/phones.ts);
+             the computer button reveals a QR code with the same number and text.
+             Nothing is sent until the visitor presses Send. -->
+        <div class="fb-call fb-text-options">
+          <div class="fb-text-opt">
+            <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
+              <span>On a Cell Phone</span>
+            </a>
+            <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
+          </div>
+          <div class="fb-text-opt">
+            <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
+              <span>On a Computer</span>
+            </button>
+            <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
+            <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
+              <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
+            </div>
+          </div>
+        </div>
         <!-- Offer countdown (V2.0): only with a valid quote handoff; 2:00 from the
              first time this visit reaches this screen (src/scripts/quote-offer.ts). -->
         <p class="fb-offer" data-fb-offer hidden>Please respond within: <span class="fb-offer__time" role="timer" data-fb-offer-time>2:00</span></p>
@@ -154,30 +178,6 @@ const advantage = [
             <div><dt>Estimated Monthly Rate</dt><dd data-fb-quote-premium></dd></div>
           </dl>
           <p class="fb-quote__note">Your final premium and coverage are subject to insurance company approval.</p>
-        </div>
-        <!-- Two-option SMS handoff V1.9 (Randy, November 2026): the cell phone
-             button opens the visitor's own messaging app with the prewritten
-             text (src/scripts/sms-link.js) to SMS_NUMBER (src/config/phones.ts);
-             the computer button reveals a QR code with the same number and text.
-             Nothing is sent until the visitor presses Send. -->
-        <div class="fb-call fb-text-options">
-          <div class="fb-text-opt">
-            <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
-              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
-              <span>CLICK HERE IF YOU'RE<br />ON A CELL PHONE</span>
-            </a>
-            <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
-          </div>
-          <div class="fb-text-opt">
-            <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
-              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
-              <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
-            </button>
-            <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
-            <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
-              <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -322,8 +322,6 @@ const advantage = [
     coverageOut.textContent = '$' + handoff.selection.coverage.toLocaleString('en-US');
     premiumOut.textContent = '$' + handoff.selection.monthlyPremium;
     quoteBox.hidden = false;
-    const reassure = document.querySelector<HTMLElement>('[data-fb-reassure]');
-    if (reassure) reassure.hidden = false;
     // At 0:00 the selected-quote offer expires (its summary is hidden); the
     // call buttons stay, and Start New Quote begins a fresh quote.
     const offer = document.querySelector<HTMLElement>('[data-fb-offer]');
@@ -511,7 +509,7 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
-  /* Two-option handoff V1.9: two equal columns under the quote card,
+  /* Two-option handoff V1.9 (first on the page since V4.15): two equal columns,
      divided by a thin line, from 48rem; stacked (cell phone first) on phones. */
   .fb-hero .fb-call.fb-text-options {
     max-width: 46rem;
@@ -607,19 +605,6 @@ const advantage = [
     width: 100%;
     height: auto;
   }
-  /* V4.3: the reassurance (bold) and the countdown label (regular) share one
-     size; the countdown digits stay yellow and bold. */
-  .fb-hero__reassure {
-    margin: calc(-1 * var(--space-2)) 0 var(--space-3);
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #ffffff;
-    text-align: center;
-  }
-  .fb-hero__reassure[hidden] {
-    display: none;
-  }
 </style>
 
 <style>
@@ -707,8 +692,9 @@ const advantage = [
   }
   /* Offer countdown (V2.0): one inline line under the headline; only the
      digits are yellow. */
+  /* V4.15: directly under the device choices, above the selected coverage. */
   .fb-offer {
-    margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+    margin: var(--space-5) 0 var(--space-4);
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.4;
