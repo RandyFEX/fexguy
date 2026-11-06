@@ -109,11 +109,11 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
         orange: btns.every((b) => c(b).backgroundColor === 'rgb(194, 65, 12)' && c(b).color === 'rgb(255, 255, 255)' && Number(c(b).fontWeight) >= 700),
         twoLines: btns.every((b) => lines(b) === 2), fits: btns.every((b) => b.scrollWidth <= b.clientWidth),
         sameSize: Math.abs(rect(btns[0]).width - rect(btns[1]).width) <= 2 && Math.abs(rect(btns[0]).height - rect(btns[1]).height) <= 2,
-        order: rect(opts).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(document.querySelector('.fb-advantage')).top && rect(opts).top - rect(document.querySelector('.fb-hero')).top <= 64 && rect(notes[0]).bottom <= rect(btns[0]).top && rect(notes[1]).bottom <= rect(btns[1]).top,
+        order: rect(opts).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(document.querySelector('.fb-advantage')).top && rect(opts).top - rect(document.querySelector('.fb-hero')).top <= 64 && rect(btns[0]).top - rect(opts).top <= 1 && Math.abs(rect(btns[1]).top - rect(computer).top) <= 1,
         sideBySide: Math.abs(rect(phone).top - rect(computer).top) <= 1 && rect(phone).right <= rect(computer).left + 1 && Math.abs(rect(phone).width - rect(computer).width) <= 1,
         divider: c(computer).borderLeftStyle === 'solid' && parseFloat(c(computer).borderLeftWidth) >= 1,
         stacked: rect(phone).bottom <= rect(computer).top,
-        qr: !document.querySelector('[data-fb-qr]').hidden, copy: !!document.querySelector('[data-fb-copy]'), oldButton: /PREPARE MY TEXT|Just review your prewritten/.test(document.querySelector('.fb-hero').innerText),
+        qr: !document.querySelector('[data-fb-qr]').hidden, qrSpace: Math.round(document.querySelector('[data-fb-qr]').getBoundingClientRect().height), copy: !!document.querySelector('[data-fb-copy]'), oldButton: /PREPARE MY TEXT|Just review your prewritten/.test(document.querySelector('.fb-hero').innerText),
         heroTel: !!document.querySelector('.fb-hero a[href^="tel:"]') || /\d{3}-\d{3}-\d{4}/.test(document.querySelector('.fb-hero').innerText),
         href: document.querySelector('[data-fb-text]').getAttribute('href'), smsBody: document.querySelector('[data-fb-text]').dataset.smsBody,
         hscroll: document.documentElement.scrollWidth > innerWidth, h: Math.round(rect(btns[0]).height), fs: c(btns[0]).fontSize,
@@ -122,7 +122,8 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
     assert(r.h1 === 'Burial Insurance Quotes' && r.h1Hidden && !r.reassure && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
     assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$51.10']), `${w}px card ${JSON.stringify(r.card)}`);
     assert(JSON.stringify(r.labels) === JSON.stringify(["TAP HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
-    assert(JSON.stringify(r.notes) === JSON.stringify(['Tap the orange button below right now to generate an SMS text in your messaging app.', 'Point your cell phone camera at the code below to generate an SMS text in your messaging app.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
+    // V4.21: no permanent instructions; the orange buttons come first and the QR panel takes no space while hidden.
+    assert(r.notes.length === 0 && r.qrSpace === 0, `${w}px notes ${JSON.stringify([r.notes, r.qrSpace])}`);
     assert(r.orange && r.twoLines && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);
     assert(w >= 1280 ? r.sideBySide && r.divider : r.stacked, `${w}px columns ${JSON.stringify(r)}`);
     assert(!r.qr && !r.copy && !r.oldButton && !r.heroTel, `${w}px extras ${JSON.stringify(r)}`);
@@ -164,13 +165,13 @@ await check('two-option handoff V1.9 on a computer: the computer button reveals 
   await page.waitForSelector('[data-fb-qr]:not([hidden]) svg', { timeout: 5000 });
   const q = await page.evaluate(() => {
     const code = document.querySelector('[data-fb-qr-code]');
-    const note = [...document.querySelectorAll('.fb-text__note')][1];
-    return { text: code.dataset.qrText, svg: code.innerHTML, below: note.getBoundingClientRect().bottom <= code.getBoundingClientRect().top, url: location.pathname + location.search + location.hash, expanded: document.querySelector('[data-fb-qr-btn]').getAttribute('aria-expanded'), w: Math.round(document.querySelector('.fb-qr__code').getBoundingClientRect().width) };
+    const note = document.querySelector('.fb-qr__note'), btn = document.querySelector('[data-fb-qr-btn]'), offer = document.querySelector('[data-fb-offer]');
+    return { text: code.dataset.qrText, svg: code.innerHTML, below: btn.getBoundingClientRect().bottom <= note.getBoundingClientRect().top && note.getBoundingClientRect().bottom <= code.getBoundingClientRect().top && code.getBoundingClientRect().bottom <= offer.getBoundingClientRect().top, noteText: note.textContent.trim(), noteColor: getComputedStyle(note).color, noteAlign: getComputedStyle(note).textAlign, url: location.pathname + location.search + location.hash, expanded: document.querySelector('[data-fb-qr-btn]').getAttribute('aria-expanded'), w: Math.round(document.querySelector('.fb-qr__code').getBoundingClientRect().width) };
   });
   const want = `SMSTO:+18886720762:${PREWRITTEN}`;
   const pattern = (svg) => [...svg.matchAll(/\sd="([^"]+)"/g)].map((m) => m[1]).join('|');
   assert(q.text === want && pattern(q.svg) && pattern(q.svg) === pattern(renderSVG(want, { ecc: 'M', border: 2 })), `QR payload ${q.text}`);
-  assert(q.below && q.url === '/facebook/' && navs.length === before && q.expanded === 'true' && q.w <= 180, JSON.stringify(q));
+  assert(q.noteText === 'Scan this code with your cell phone camera.' && q.noteColor === 'rgb(255, 255, 255)' && q.noteAlign === 'center' && q.below && q.url === '/facebook/' && navs.length === before && q.expanded === 'true' && q.w <= 180, JSON.stringify(q));
   if (OUT) await page.locator('.fb-hero').screenshot({ path: `${OUT}/texting-qr-desktop.png` });
   await ctx.close();
   return `${q.w}px QR`;

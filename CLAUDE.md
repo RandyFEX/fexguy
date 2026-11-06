@@ -1638,6 +1638,11 @@ Prioritize the shortest reliable path to completing approved changes.
   generate an SMS text in your messaging app." over "CLICK HERE IF YOU'RE ON
   A COMPUTER" (two lines each on desktop: the note uses 1rem of its column's
   side padding; 1rem below each note).
+  **V4.21 (Randy, November 2026; replaces V4.20):** no permanent white
+  instructions: the two orange buttons are the first thing in the hero. The
+  computer button reveals the existing QR panel directly beneath it, which now
+  opens with "Scan this code with your cell phone camera." (white, bold,
+  centered) above the code; hidden, the panel takes no space.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
