@@ -109,7 +109,7 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
         orange: btns.every((b) => c(b).backgroundColor === 'rgb(194, 65, 12)' && c(b).color === 'rgb(255, 255, 255)' && Number(c(b).fontWeight) >= 700),
         twoLines: btns.every((b) => lines(b) === 2), fits: btns.every((b) => b.scrollWidth <= b.clientWidth),
         sameSize: Math.abs(rect(btns[0]).width - rect(btns[1]).width) <= 2 && Math.abs(rect(btns[0]).height - rect(btns[1]).height) <= 2,
-        order: rect(opts).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(document.querySelector('.fb-advantage')).top && rect(opts).top - rect(document.querySelector('.fb-hero')).top <= 64 && rect(btns[0]).bottom <= rect(notes[0]).top && rect(btns[1]).bottom <= rect(notes[1]).top,
+        order: rect(opts).bottom <= rect(timer).top && rect(timer).bottom <= rect(box).top && rect(box).bottom <= rect(document.querySelector('.fb-advantage')).top && rect(opts).top - rect(document.querySelector('.fb-hero')).top <= 64 && rect(notes[0]).bottom <= rect(btns[0]).top && rect(notes[1]).bottom <= rect(btns[1]).top,
         sideBySide: Math.abs(rect(phone).top - rect(computer).top) <= 1 && rect(phone).right <= rect(computer).left + 1 && Math.abs(rect(phone).width - rect(computer).width) <= 1,
         divider: c(computer).borderLeftStyle === 'solid' && parseFloat(c(computer).borderLeftWidth) >= 1,
         stacked: rect(phone).bottom <= rect(computer).top,
@@ -121,8 +121,8 @@ await check('two-option handoff V1.9 at 320, 375, 390, 430 and 1280px: exact wor
     });
     assert(r.h1 === 'Burial Insurance Quotes' && r.h1Hidden && !r.reassure && /^Please respond within: (2:00|1:5\d)$/.test(r.timer), `${w}px top ${JSON.stringify(r)}`);
     assert(JSON.stringify(r.card) === JSON.stringify(['Your Selected Coverage', '$10,000', 'Estimated Monthly Rate', '$51.10']), `${w}px card ${JSON.stringify(r.card)}`);
-    assert(JSON.stringify(r.labels) === JSON.stringify(["CLICK HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
-    assert(JSON.stringify(r.notes) === JSON.stringify(['Click the button above to generate an SMS text and hit Send.', 'Scan our code with your cell phone camera to send a text.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
+    assert(JSON.stringify(r.labels) === JSON.stringify(["TAP HERE IF YOU'RE ON A CELL PHONE", "CLICK HERE IF YOU'RE ON A COMPUTER"]) && r.icons.every(Boolean), `${w}px labels ${JSON.stringify(r.labels)}`);
+    assert(JSON.stringify(r.notes) === JSON.stringify(['Tap the orange button below right now to generate an SMS text in your messaging app.', 'Point your cell phone camera at the code below to generate an SMS text in your messaging app.']) && r.noteWhite, `${w}px notes ${JSON.stringify(r.notes)}`);
     assert(r.orange && r.twoLines && r.fits && r.sameSize && r.order && !r.hscroll, `${w}px layout ${JSON.stringify(r)}`);
     assert(w >= 1280 ? r.sideBySide && r.divider : r.stacked, `${w}px columns ${JSON.stringify(r)}`);
     assert(!r.qr && !r.copy && !r.oldButton && !r.heroTel, `${w}px extras ${JSON.stringify(r)}`);

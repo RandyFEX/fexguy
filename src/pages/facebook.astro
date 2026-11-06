@@ -149,18 +149,18 @@ const advantage = [
              Nothing is sent until the visitor presses Send. -->
         <div class="fb-call fb-text-options">
           <div class="fb-text-opt">
+            <p class="fb-text__note">Tap the orange button below right now to generate an SMS text in your messaging app.</p>
             <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
-              <span>CLICK HERE IF YOU'RE<br />ON A CELL PHONE</span>
+              <span>TAP HERE IF YOU'RE<br />ON A CELL PHONE</span>
             </a>
-            <p class="fb-text__note">Click the button above to generate an SMS text and hit Send.</p>
           </div>
           <div class="fb-text-opt">
+            <p class="fb-text__note">Point your cell phone camera at the code below to generate an SMS text in your messaging app.</p>
             <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
               <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
             </button>
-            <p class="fb-text__note">Scan our code with your cell phone camera to send a text.</p>
             <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
               <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
             </div>
@@ -533,6 +533,11 @@ const advantage = [
     .fb-text-opt + .fb-text-opt {
       border-left: 1px solid rgb(255 255 255 / 0.35);
     }
+    /* V4.20: the instruction uses 1rem of its column's own side padding so the
+       17-word sentence sits on two lines (the column itself is unchanged). */
+    .fb-text__note {
+      margin-inline: calc(-1 * var(--space-4));
+    }
   }
   /* Texting buttons: the site CTA orange; icon beside a two-line label. */
   .fb-text__btn {
@@ -572,11 +577,12 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
-  /* V4.1: not limited to the button column's width, so the sentence fits
-     on one line on desktop; phones wrap it normally. */
+  /* V4.20 (Randy, November 2026): each instruction sits above its button,
+     about two lines in its desktop column; phones wrap it normally. The
+     column gap (--space-3) plus a small margin keeps it clear of the button. */
   .fb-text__note {
     align-self: center;
-    margin: calc(-1 * var(--space-1)) 0 0;
+    margin-block: 0 var(--space-1);
     text-wrap: balance;
     font-size: 0.9375rem;
     line-height: 1.4;
