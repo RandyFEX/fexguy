@@ -89,13 +89,12 @@ function withCallLinks(text: string, href: string) {
   return frag;
 }
 
-/** One row per approved outcome: YES/NO beside the bold outcome, details below. */
-function renderAnswers(answers: Answer[], phoneHref: string) {
-  const list = el('ul', 'hqs-ans');
-  for (const a of answers) {
-    const row = el('li', 'hqs-ans__row');
-    row.append(el('span', `hqs-ans__tag hqs-ans__tag--${a.answer.toLowerCase()}`, a.answer));
-    row.append(el('strong', 'hqs-ans__primary', a.primary));
+/** Approved outcome rows for one answer: bold outcome, details below. */
+function renderOutcomes(rows: Answer[], phoneHref: string) {
+  const frag = document.createDocumentFragment();
+  for (const a of rows) {
+    const block = el('div', 'hqs-ans__outcome');
+    block.append(el('strong', 'hqs-ans__primary', a.primary));
     if (a.details.length) {
       const ul = el('ul', 'hqs-ans__details');
       for (const d of a.details) {
@@ -103,25 +102,76 @@ function renderAnswers(answers: Answer[], phoneHref: string) {
         li.append(withCallLinks(d, phoneHref));
         ul.append(li);
       }
-      row.append(ul);
+      block.append(ul);
     }
-    list.append(row);
+    frag.append(block);
   }
-  return list;
+  return frag;
+}
+
+/** YES and NO side by side (stacked on phones), each from this question's own outcomes. */
+function renderAnswers(answers: Answer[], phoneHref: string) {
+  const wrap = el('div', 'hqs-ans');
+  for (const answer of ['YES', 'NO'] as const) {
+    const rows = answers.filter((a) => a.answer === answer);
+    if (!rows.length) continue;
+    const panel = el('section', `hqs-ans__panel hqs-ans__panel--${answer.toLowerCase()}`);
+    const head = el('p', 'hqs-ans__head', 'If you answered ');
+    head.append(el('span', `hqs-ans__tag hqs-ans__tag--${answer.toLowerCase()}`, answer));
+    panel.append(head, renderOutcomes(rows, phoneHref));
+    wrap.append(panel);
+  }
+  return wrap;
+}
+
+// Existing approved logo files (public/images/carriers/), keyed by the
+// carrier name the API returns. A carrier without one shows its name only.
+const CARRIER_LOGOS: Record<string, { src: string }> = {
+  'Family Benefit Life': { src: '/images/carriers/wall/family-benefit-life.png' },
+  'Trinity Life': { src: '/images/carriers/wall/trinity-life.png' },
+  'Aetna (Accendo, a CVS Health company)': { src: '/images/carriers/cvs-aetna-logo.png' },
+  Aflac: { src: '/images/carriers/wall/aflac.png' },
+  'Gerber Life': { src: '/images/carriers/wall/gerber-life.png' },
+};
+
+function carrierHeading(name: string, anonymized: boolean) {
+  const h = el('h3', 'hqs-carrier__name');
+  const logo = anonymized ? undefined : CARRIER_LOGOS[name];
+  if (logo) {
+    const img = el('img', 'hqs-carrier__logo');
+    img.src = logo.src;
+    img.alt = '';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.addEventListener('error', () => img.remove());
+    h.append(img);
+  }
+  h.append(el('span', undefined, name));
+  return h;
+}
+
+/** "Health Question 7", or "Part A, Health Question 3A" where the application has parts. */
+function questionLabels(q: Question) {
+  const id = q.variant ?? q.number;
+  const part = /^health questions?$/i.test(q.section.trim()) ? '' : `${q.section}, `;
+  return { num: `${part}Health Question ${id}`, ref: `${part}Question ${id}` };
 }
 
 function renderGroup(g: Group, phoneHref: string) {
   const card = el('article', 'hqs-carrier');
-  card.append(el('h3', 'hqs-carrier__name', g.carrier));
+  card.append(carrierHeading(g.carrier, g.anonymized));
   for (const q of g.questions) {
     const item = el('div', `hqs-q hqs-q--${q.match}`);
+    const { num, ref } = questionLabels(q);
     const meta = el('p', 'hqs-q__meta');
     meta.append(el('span', `hqs-badge hqs-badge--${q.match}`, q.match === 'direct' ? 'Direct match' : 'Related'));
-    meta.append(el('span', 'hqs-q__num', `${q.section}, Question ${q.variant ?? q.number}`));
-    item.append(meta);
+    item.append(meta, el('p', 'hqs-q__num', num));
+    item.append(el('p', 'hqs-q__intro', q.match === 'direct'
+      ? `Here's what ${ref} on the application asks:`
+      : `${g.carrier} also asks this related question:`));
     const quote = el('blockquote', 'hqs-q__text');
     quote.append(el('p', undefined, q.text));
-    item.append(quote, el('p', 'hqs-q__why', q.because));
+    item.append(quote);
     if (q.info?.explanation) {
       const info = el('p', 'hqs-q__info');
       info.append(withCallLinks(q.info.explanation, phoneHref));
@@ -135,7 +185,7 @@ function renderGroup(g: Group, phoneHref: string) {
 
 function renderGi(c: GiCard) {
   const card = el('article', 'hqs-carrier hqs-carrier--gi');
-  card.append(el('h3', 'hqs-carrier__name', c.carrier), el('p', 'hqs-gi__summary', c.summary));
+  card.append(carrierHeading(c.carrier, false), el('p', 'hqs-gi__summary', c.summary));
   if (c.schedules.length) card.append(renderSchedules(c.schedules));
   return card;
 }
