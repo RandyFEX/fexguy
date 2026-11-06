@@ -6,7 +6,7 @@
 // handlers in test mode (tests/quote/funnel-server.mjs).
 //   node tests/quote/cta-fit.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
-import { startFunnelServer } from './funnel-server.mjs';
+import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
 
 const { chromium } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer();
@@ -57,7 +57,7 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
         sms: !!document.querySelector('a[href^="sms:"]'),
       };
     });
-    assert(r.cards.length === 3 && !r.hscroll && !r.sms, JSON.stringify(r));
+    assert(r.cards.length === 3 && !r.hscroll && r.sms, JSON.stringify(r));
     for (const c of r.cards) {
       assert(c.call.text === 'Call to Chat or Apply' && c.apply.text === 'Text to Chat or Apply', `labels ${c.call.text} / ${c.apply.text}`);
       assert(c.call.icon && c.apply.icon && c.call.iconLeft && c.apply.iconLeft, `icons ${JSON.stringify(c)}`);
@@ -69,18 +69,17 @@ for (const w of [320, 375, 390, 430, 832, 1024, 1280]) {
       if ([375, 390, 430, 1024, 1280].includes(w)) assert(c.call.fs === 18 && c.apply.fs === 17, `type ${c.call.fs}/${c.apply.fs}`);
       else assert(c.call.fs >= 12 && c.apply.fs >= 12 && c.call.fs >= c.apply.fs && c.call.fs < 18, `type ${c.call.fs}/${c.apply.fs}`);
       // Same actions as before: the orange tel: link and the green Apply button (no link, no sms:).
-      assert(c.href === 'tel:+18886564648' && c.applyTag === 'BUTTON' && c.applyHref === null, `actions ${JSON.stringify(c)}`);
+      assert(c.href === 'tel:+18886564648' && c.applyTag === 'A' && c.applyHref === 'sms:8886720762', `actions ${JSON.stringify(c)}`);
     }
     if (process.env.OUT) await page.locator('.qf-cards').screenshot({ path: `${process.env.OUT}/cta-${w}.png` });
     return `${r.cards[0].call.fs.toFixed(1)}px / ${r.cards[0].apply.fs.toFixed(1)}px`;
   });
 }
 
-await check('the green button still opens the Ready to Apply page (/facebook/) with the card\'s quote', async () => {
+await check('V4.15: the green button is a direct sms: link; its selection still reaches the Ready to Apply page (/facebook/)', async () => {
   await page.setViewportSize({ width: 390, height: 900 });
-  await page.click('[data-qf-card="average-standard"] [data-qf-apply]');
-  await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
-  assert((await page.textContent('h1')).trim() === "Here's What You Selected", 'not the Ready to Apply page');
+  await tapTextLink(page, 'average-standard');
+  assert((await page.textContent('h1')).trim() === 'Burial Insurance Quotes', 'not the Ready to Apply page');
   await page.waitForSelector('[data-fb-quote]:not([hidden])');
 });
 

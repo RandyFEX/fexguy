@@ -5,7 +5,7 @@
 // server/rates/private/ (npm run rates:extract), so it runs locally:
 //   npm run test:quote:browser          (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
-import { startFunnelServer } from './funnel-server.mjs';
+import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
 import { priceCategories } from '../../server/rates/pricing-categories.js';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
@@ -140,7 +140,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   // visitor's session has answered; no tel: link) and the computer button (QR code); the other
   // three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === "CLICK HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === 'On a Cell Phone' && f.text.qrLabel === 'On a Computer' && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Click the button above to generate an SMS text and hit Send.' && f.text.qrNote === 'Scan our code with your cell phone camera to send a text.', `text options ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {
@@ -265,7 +265,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction(() => [...document.querySelectorAll('.qf-card img')].every((i) => i.complete && i.naturalWidth > 0), null, { timeout: 5000 });
     assert(await page.evaluate(() => window.__same === true), 'page reloaded');
     const h = await page.$eval('#qf-s7', (e) => ({ t: e.textContent.trim(), top: e.getBoundingClientRect().top, h: e.getBoundingClientRect().height }));
-    assert(h.t === 'Call Funeral Funds for Access to Even Lower Rates!' && h.h > 10, JSON.stringify(h));
+    assert(h.t === 'Call Funeral Funds to shop for even lower rates' && h.h > 10, JSON.stringify(h));
     const resIntro = await page.evaluate(() => {
       const t = document.querySelector('#qf-s7'), lead = document.querySelector('[data-qf-results-lead]'), c = document.querySelector('.qf-cards');
       const ls = getComputedStyle(lead), lr = lead.getBoundingClientRect(), tr = t.getBoundingClientRect(), cr = c.getBoundingClientRect();
@@ -283,13 +283,21 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         const r = img?.getBoundingClientRect();
         return {
           s: e.dataset.state, amount: e.querySelector('[data-qf-amount]').textContent, plan: e.querySelector('[data-qf-plan]').textContent, timing: e.querySelector('[data-qf-timing]').textContent,
-          timingShown: !e.querySelector('[data-qf-timing]').hidden, blurred: e.querySelectorAll('.qf-blur').length, dis: e.querySelector('[data-qf-apply]').disabled,
+          timingShown: !e.querySelector('[data-qf-timing]').hidden, blurred: e.querySelectorAll('.qf-blur').length, dis: e.querySelector('[data-qf-apply]').getAttribute('href') !== 'sms:8886720762' || e.querySelector('[data-qf-apply]').hasAttribute('aria-disabled'),
           logo: img ? img.alt : e.querySelector('[data-qf-logo]').textContent, src: img?.getAttribute('src') ?? null,
-          ratio: img ? Math.abs(r.width / r.height - img.naturalWidth / img.naturalHeight) / (img.naturalWidth / img.naturalHeight) : 0,
+          // V4.15: the artwork is drawn whole (object-fit: contain, proportions kept) inside the logo area, never cropped.
+          ...(() => {
+            if (!img) return { whole: true, drawnH: 99 };
+            const box = e.querySelector('[data-qf-logo]').getBoundingClientRect();
+            const k = Math.min(r.width / img.naturalWidth, r.height / img.naturalHeight);
+            const dw = img.naturalWidth * k, dh = img.naturalHeight * k;
+            const x = r.left + (r.width - dw) / 2, y = r.top + (r.height - dh) / 2;
+            return { whole: getComputedStyle(img).objectFit === 'contain' && x >= box.left - 0.5 && y >= box.top - 0.5 && x + dw <= box.right + 0.5 && y + dh <= box.bottom + 0.5, drawnH: Math.round(dh) };
+          })(),
         };
       }),
     );
-    assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.ratio < 0.03), JSON.stringify(cards));
+    assert(cards.every((c) => c.s === 'ok' && c.blurred === 0 && !c.dis && c.timingShown && c.whole && c.drawnH >= 28), JSON.stringify(cards));
     assert(cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|') === 'Mutual of Omaha/Living Promise/First-Day Coverage|Aetna/Accendo Final Expense Preferred/First-Day Coverage|Gerber Life/No Health Questions/2-Year Waiting Period', cards.map((c) => `${c.logo}/${c.plan}/${c.timing}`).join('|'));
     assert(cards[0].src === '/images/carriers/mutual-of-omaha-logo.jpg' && cards[1].src === '/images/carriers/cvs-aetna-logo.png' && cards[2].src === '/images/carriers/gerber-life-logo.png', `logo files ${cards.map((c) => c.src)}`);
     const icons = await page.$$eval('[data-qf-timing] svg', (els) => els.map((e) => e.dataset.icon));
@@ -492,8 +500,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const applyAndRead = async (id) => {
       const card = await page.$eval(`[data-qf-card="${id}"]`, (e) => e.querySelector('[data-qf-amount]').textContent.trim());
       const coverage = await page.$eval('.qf-adjust input[name="coverage"]:checked', (e) => e.value);
-      await page.click(`[data-qf-card="${id}"] [data-qf-apply]`);
-      await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+      await tapTextLink(page, id);
       await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
       await page.waitForFunction(() => document.querySelector('[data-fb-text]')?.getAttribute('href'), null, { timeout: 5000 });
       const fb = await page.evaluate(() => ({
@@ -513,7 +520,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       if (seen.length) await results();
       const r = await applyAndRead(id);
       const cov = `$${Number(r.coverage).toLocaleString('en-US')}`;
-      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === "Here's What You Selected", `destination ${JSON.stringify(r.fb)}`);
+      assert(r.fb.url === '/facebook/?utm_source=facebook&utm_campaign=test' && r.fb.title === 'Burial Insurance Quotes', `destination ${JSON.stringify(r.fb)}`);
       assert(r.fb.premium === r.card && r.fb.coverage === cov, `${id} summary ${JSON.stringify(r)}`);
       assert(r.fb.labels.join('|') === 'Your Selected Coverage|Estimated Monthly Rate' && !r.fb.twelveHours, `labels ${r.fb.labels}`);
       // Native SMS V1.2: the prewritten text carries this visitor's first name and this card's coverage and premium.
@@ -544,8 +551,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.goto(URL_);
     await page.waitForFunction(() => document.querySelector('[data-qf-card="lowest-preferred"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
     await page.evaluate(() => { window.__ffEvents = []; window.addEventListener('ff:funnel', (e) => window.__ffEvents.push(e.detail.name)); window.addEventListener('pagehide', () => sessionStorage.setItem('__ffEvents', JSON.stringify(window.__ffEvents))); });
-    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
-    await page.waitForURL(/\/facebook\/$/, { timeout: 8000 });
+    await tapTextLink(page, 'lowest-preferred');
     await page.waitForFunction(() => !document.querySelector('[data-fb-quote]')?.hidden, null, { timeout: 5000 });
     await page.waitForTimeout(300);
     const r = await page.evaluate(() => ({ pending: sessionStorage.getItem('fexguy:lead-pending'), events: JSON.parse(sessionStorage.getItem('__ffEvents') || '[]') }));
@@ -748,8 +754,7 @@ await check('quote lead: GA4 generate_lead + Meta Lead once when the lead is acc
   await page.reload();
   await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.getAttribute('data-state') === 'ok', null, { timeout: 8000 });
   assert(leadLogs(logs).length === 0, 'revisiting results counted a lead');
-  await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
-  await page.waitForURL(/\/facebook\//, { timeout: 8000 });
+  await tapTextLink(page, 'lowest-preferred');
   await page.waitForTimeout(300);
   assert(leadLogs(logs).length === 0, `Apply Now or /facebook/ counted a lead: ${JSON.stringify(leadLogs(logs))}`);
   assert((await page.evaluate(() => sessionStorage.getItem('fexguy:lead-pending'))) === null, 'old /help/ lead flag set');

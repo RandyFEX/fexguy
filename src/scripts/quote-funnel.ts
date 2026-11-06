@@ -70,6 +70,19 @@ function visitId() {
     return memoryVisit;
   }
 }
+/** V4.15 (Randy, November 2026): each card's "Text to Chat or Apply" is a
+ *  direct sms: link (the number in src/config/phones.ts, SMS_NUMBER); it is
+ *  active only on a priced card. */
+const SMS_HREF = 'sms:8886720762';
+function setTextLink(a: HTMLElement, on: boolean) {
+  if (on) {
+    a.setAttribute('href', SMS_HREF);
+    a.removeAttribute('aria-disabled');
+  } else {
+    a.removeAttribute('href');
+    a.setAttribute('aria-disabled', 'true');
+  }
+}
 const jsonHeaders = () => ({ 'Content-Type': 'application/json', Accept: 'application/json', 'X-Quote-Visit': visitId() });
 
 async function api(body: Record<string, unknown>) {
@@ -350,8 +363,8 @@ if (root) {
       const amount = el.querySelector<HTMLElement>('[data-qf-amount]')!;
       amount.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i]}</span><span class="visually-hidden">Loading price</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
-      const lockedApply = el.querySelector<HTMLButtonElement>('[data-qf-apply]')!;
-      lockedApply.disabled = true;
+      const lockedApply = el.querySelector<HTMLElement>('[data-qf-apply]')!;
+      setTextLink(lockedApply, false);
       lockedApply.querySelector('[data-qf-apply-label]')!.textContent = 'Text to Chat or Apply';
       delete lockedApply.dataset.ready;
       el.querySelector<HTMLElement>('[data-qf-call]')!.hidden = true;
@@ -411,7 +424,7 @@ if (root) {
     el.querySelector<HTMLElement>('[data-qf-amount]')!.textContent =
       state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
-    el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = state !== 'ok';
+    setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok');
     if (state === 'loading') return;
     // Verified: everything is shown, nothing blurred.
     if (cat?.label) el.querySelector('.qf-card__label')!.textContent = cat.label;
@@ -512,7 +525,7 @@ if (root) {
     for (const el of cards.values()) {
       el.querySelector<HTMLElement>('[data-qf-amount]')!.innerHTML = `<span class="qf-blur" aria-hidden="true">${STAND_INS[i++]}</span><span class="visually-hidden">This offer has expired</span>`;
       el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = '';
-      el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.disabled = true;
+      setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, false);
     }
     restart.hidden = false;
   }
@@ -528,7 +541,7 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Call Funeral Funds for Access to Even Lower Rates!';
+    resultsTitle.textContent = 'Call Funeral Funds to shop for even lower rates';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
     stopCountdown?.();
@@ -575,15 +588,6 @@ if (root) {
     location.assign(lead.formspark.successPath);
   }
   $('[data-qf-intake-finish]').addEventListener('click', finish);
-  /** Apply Now (Randy, November 2026): the temporary phone-assisted
-   * application on /facebook/, with the page's own query string (campaign
-   * values). Apply Now is an application intent (GA4 quote_apply_now, sent
-   * above), never a GA4 generate_lead or Meta Lead. */
-  function handoffToApplication() {
-    if (completed) return;
-    completed = true;
-    location.assign(`/facebook/${location.search}`);
-  }
 
   async function intakeStep(body: Record<string, unknown>) {
     setStatus(intakeStatus, '');
@@ -639,34 +643,36 @@ if (root) {
     });
   }
   for (const [id, el] of cards) {
-    el.querySelector<HTMLButtonElement>('[data-qf-apply]')!.addEventListener('click', async (e) => {
-      const btn = e.currentTarget as HTMLButtonElement;
-      if (!shown || !unlocked || expired) return;
-      const cat = shown.categories.find((c) => c.id === id);
-      if (!cat || cat.status !== 'ok') return;
-      btn.disabled = true;
-      setStatus(applyStatus, 'Saving your selection…');
-      track('quote_apply_now', { category: id });
-      const { http, body } = await api({ action: 'apply', category: id, quote: shown.quote });
-      btn.disabled = false;
-      if (http === 401) return sessionLost();
-      if (http !== 200 || body.status !== 'ok') {
-        setStatus(applyStatus, body.message ?? `Sorry, something went wrong. Please call ${funnelPhone}.`, true);
+    // V4.15: the link itself opens the messaging app (sms:); the tap is
+    // recorded in the background (GA4 quote_apply_now and the server's Apply
+    // Now record) and the selection is kept for /facebook/ (quote-handoff.ts).
+    el.querySelector<HTMLElement>('[data-qf-apply]')!.addEventListener('click', (e) => {
+      const cat = shown?.categories.find((c) => c.id === id);
+      if (!shown || !unlocked || expired || !cat || cat.status !== 'ok') {
+        e.preventDefault();
         return;
       }
-      setStatus(applyStatus, '');
-      // v6.2: the lead counts once the server has saved the Apply Now record.
-      applyNotified = body.saved === true;
-      // The selected card, server-priced, for /facebook/ (quote-handoff.ts).
+      const quote = shown.quote;
+      track('quote_apply_now', { category: id });
       const first = cat.carriers?.find((c): c is Carrier => Boolean(c)) ?? null;
       const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
-      saveHandoff({
-        selection: { tierId: id, tier: String(body.category ?? cat.label), carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: shown.quote.coverage, monthlyPremium: String(body.monthlyPremium ?? cat.monthlyPremium) },
-        inputs: { age: shown.quote.age, gender: shown.quote.gender, tobacco: shown.quote.tobacco, state: answers.state ?? null },
-        attribution,
-        ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
-      });
-      handoffToApplication();
+      const keep = (tier: string, monthlyPremium: string) =>
+        saveHandoff({
+          selection: { tierId: id, tier, carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: quote.coverage, monthlyPremium },
+          inputs: { age: quote.age, gender: quote.gender, tobacco: quote.tobacco, state: answers.state ?? null },
+          attribution,
+          ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
+        });
+      keep(cat.label, String(cat.monthlyPremium));
+      void fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ action: 'apply', category: id, quote }), credentials: 'same-origin', keepalive: true })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((body) => {
+          if (body?.status !== 'ok') return;
+          // v6.2: the lead counts once the server has saved the Apply Now record.
+          applyNotified = body.saved === true;
+          keep(String(body.category ?? cat.label), String(body.monthlyPremium ?? cat.monthlyPremium));
+        })
+        .catch(() => {});
     });
   }
 
