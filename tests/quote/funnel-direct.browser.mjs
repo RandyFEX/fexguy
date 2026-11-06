@@ -27,7 +27,7 @@ const check = async (name, fn) => {
 const assert = (c, m) => {
   if (!c) throw new Error(m);
 };
-const WHY = ['Independent insurance agent', 'Compare multiple insurance companies', 'Lifetime policy support from Randy', 'Direct Contact: 888-656-4648'];
+const WHY = ['Independent insurance agent', 'Compare multiple insurance companies', 'Professional assistance with your coverage', 'Lifetime policy support from Randy', 'Direct Contact: 888-656-4648'];
 const EXTERNAL = /^https:\/\/([a-z0-9-]+\.)*(leadconnectorhq\.com|twilio\.com|resend\.com|submit-form\.com|challenges\.cloudflare\.com)\//;
 let ip = 50;
 
@@ -67,6 +67,7 @@ const layout = (page) =>
       name: document.querySelector('.qf-agent__name').textContent.trim(),
       role: document.querySelector('.qf-agent__role').textContent.replace(/\s+/g, ' ').trim(),
       intro: document.querySelector('.qf-agent__intro').textContent.trim(),
+      tagline: document.querySelector('.qf-agent__tagline')?.textContent.trim(),
       photoSrc: document.querySelector('.qf-agent__photo').getAttribute('src'),
       photoLoaded: document.querySelector('.qf-agent__photo').complete && document.querySelector('.qf-agent__photo').naturalWidth > 0,
       labels: [...document.querySelectorAll('[data-step="6"] label.qf-label')].map((l) => l.textContent.trim()),
@@ -97,7 +98,7 @@ const layout = (page) =>
 const CONSENT = 'By clicking "see my rates", you agree to our Privacy Policy (opens in a new tab) and consent to receive phone calls and SMS text messages from Funeral Funds at the number provided about your insurance request. Consent is not a condition of purchase.';
 function common(l) {
   assert(l.heading === 'Your Contact Information', `heading ${l.heading}`);
-  assert(l.name === 'Randy VanderVaate' && l.role === 'Independent Life Insurance Broker' && l.intro === 'Funeral Funds isn’t a call center. When you call, you deal directly with Randy.', `identification ${JSON.stringify([l.name, l.role, l.intro])}`);
+  assert(l.name === 'Randy VanderVaate' && l.role === 'Independent Life Insurance Broker' && l.intro === 'Funeral Funds isn’t a call center. When you call, you’ll deal directly with Randy. As a senior himself, Randy understands what matters most to people planning for their families. You’ll have the same agent helping you with your policy for life.' && l.tagline === '5-Star Service + Affordable Rates.' && l.photo.w >= 85, `identification ${JSON.stringify([l.name, l.role, l.intro])}`);
   assert(l.photoSrc === '/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png' && l.photoLoaded, 'photo');
   assert(l.labels.join('|') === 'Full Name|Mobile Phone Number' && l.btn === 'SEE MY RATES' && !l.email && !l.sms, `form ${JSON.stringify([l.labels, l.btn, l.email, l.sms])}`);
   assert(l.consentText === CONSENT && l.privacy === '/privacy-policy/' && l.privacyTarget === '_blank' && l.checkboxes === 0 && l.afterButton && l.described && l.fontPx >= 13 && l.fontPx < l.buttonFontPx && l.discColor === 'rgb(91, 101, 96)' && l.disclosure.top >= l.button.bottom && l.disclosure.top - l.button.bottom <= 12, `disclosure ${JSON.stringify([l.consentText, l.privacy, l.checkboxes, l.afterButton, l.fontPx, l.discColor, l.disclosure, l.button])}`);

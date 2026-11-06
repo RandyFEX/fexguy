@@ -1581,6 +1581,16 @@ Prioritize the shortest reliable path to completing approved changes.
   Funds?" lists "Lifetime policy support from Randy" instead of "Personal
   assistance with your coverage". Aetna's card is priced from the Preferred
   class (plan line "Accendo Final Expense Preferred"; see Rate engine).
+  **V4.10 (Randy, November 2026):** the trust panel paragraph reads "Funeral
+  Funds isn’t a call center. When you call, you’ll deal directly with Randy.
+  As a senior himself, Randy understands what matters most to people
+  planning for their families. You’ll have the same agent helping you with
+  your policy for life." followed by "5-Star Service + Affordable Rates.";
+  "Why Funeral Funds?" lists Independent insurance agent, Compare multiple
+  insurance companies, Professional assistance with your coverage, Lifetime
+  policy support from Randy, Direct Contact. Randy's photo is 7rem on desktop
+  (beside the text, both columns vertically balanced) and 5.5rem on phones
+  (beside the name and role, paragraph full width below).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
