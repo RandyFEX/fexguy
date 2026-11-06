@@ -166,6 +166,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             {COVERAGE.presets.map((c) => <button class="qf-opt qf-opt--big" type="button" data-pick="coverage" data-value={c}>{money(c)}</button>)}
             <button class="qf-opt qf-opt--big" type="button" data-qf-other-open>Other</button>
           </div>
+          <p class="qf-start-note">Need more than $25,000? Select $25,000 and we'll help you with any additional coverage in a moment.</p>
           <div class="qf-other" data-qf-other hidden>
             <label class="qf-label" for="qf-other-input">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
             <div class="qf-other__row">
