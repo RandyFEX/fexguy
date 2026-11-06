@@ -1625,6 +1625,12 @@ Prioritize the shortest reliable path to completing approved changes.
   with full section spacing (countdown 2rem above, 1.5rem below; hero 3rem
   at the bottom). Use only defined spacing tokens (there is no --space-5 or
   --space-10).
+  **V4.18 (Randy, November 2026):** step 1's note reads "No agent required
+  to view rates. Our quiz takes less than 60 seconds."; step 2 asks "What is
+  your current age?"; step 3 shows "We'll apply all discounts you are
+  eligible for." under No / Yes (the step 1 note style); the contact step's
+  trust heading reads "Why Choose Funeral Funds" (no question mark, Randy's
+  exact text).
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

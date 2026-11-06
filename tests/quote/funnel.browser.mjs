@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ["I'm shopping for burial or life insurance for a...", 'How Old Are You?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ["I'm shopping for burial or life insurance for a...", 'What is your current age?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });

@@ -138,12 +138,12 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
         <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
           <h2 class="qf-q" id="qf-s1" tabindex="-1">I'm shopping for burial or life insurance for a...</h2>
           <GenderChoice as="button" />
-          <p class="qf-start-note">No agent required to get rates. Takes less than 60 seconds.</p>
+          <p class="qf-start-note">No agent required to view rates. Our quiz takes less than 60 seconds.</p>
         </section>
 
         <!-- Step 2 -->
         <section class="qf-step" data-step="2" aria-labelledby="qf-s2" hidden>
-          <h2 class="qf-q" id="qf-s2" tabindex="-1">How Old Are You?</h2>
+          <h2 class="qf-q" id="qf-s2" tabindex="-1">What is your current age?</h2>
           <div class="qf-ages" role="group" aria-labelledby="qf-s2">
             {ages.map((a) => <button class="qf-opt qf-opt--age" type="button" data-pick="age" data-value={a}>{a}</button>)}
           </div>
@@ -156,6 +156,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="no">No</button>
             <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="yes">Yes</button>
           </div>
+          <p class="qf-start-note">We'll apply all discounts you are eligible for.</p>
         </section>
 
         <!-- Step 4 -->
@@ -209,7 +210,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
               </div>
             </div>
             <aside class="qf-why" aria-labelledby="qf-why-title">
-              <h2 class="qf-why__title" id="qf-why-title">Why Funeral Funds?</h2>
+              <h2 class="qf-why__title" id="qf-why-title">Why Choose Funeral Funds</h2>
               <ul class="qf-why__list" role="list">
                 <li>Independent insurance agent</li>
                 <li>Compare multiple insurance companies</li>

@@ -197,7 +197,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       await page.waitForSelector('[data-step="2"]:not([hidden])');
       const url = new URL(page.url());
       assert(url.pathname === '/free-quote/' && !url.searchParams.has('gender') && !url.searchParams.has('origin') && url.searchParams.get('utm_source') === 'newsletter' && url.searchParams.get('utm_campaign') === 'fall', `URL ${page.url()}`);
-      assert((await page.textContent('#qf-s2')).trim() === 'How Old Are You?', 'not the age question');
+      assert((await page.textContent('#qf-s2')).trim() === 'What is your current age?', 'not the age question');
       const pressed = await page.getAttribute(`[data-pick="gender"][data-value="${gender}"]`, 'aria-pressed');
       assert(pressed === 'true', 'choice not kept');
       if (OUT && gender === 'male') await page.screenshot({ path: `${OUT}/age-${name}.png` });
