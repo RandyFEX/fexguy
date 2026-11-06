@@ -132,7 +132,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
     forms: document.querySelectorAll('form').length,
     oldText: /Request Rates or Info|Prefer a Callback|Question or Message|REQUEST A CALLBACK|CALL NOW FOR YOUR FREE QUOTE|Burial Insurance That Can Start Today/i.test(document.body.innerText),
     ctas: [...document.querySelectorAll('a.fb-call__btn')].map((a) => [a.textContent.trim(), a.getAttribute('href')]),
-    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'), q = document.querySelector('.fb-hero [data-fb-qr-btn]'); return t && q && { label: t.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), qrLabel: q.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), icon: !!t.querySelector('svg') && !!q.querySelector('svg'), href: t.getAttribute('href'), note: t.previousElementSibling?.textContent.trim(), qrNote: q.previousElementSibling?.textContent.trim() }; })(),
+    text: (() => { const t = document.querySelector('.fb-hero [data-fb-text]'), q = document.querySelector('.fb-hero [data-fb-qr-btn]'); return t && q && { label: t.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), qrLabel: q.querySelector('span').innerText.replace(/\s+/g, ' ').trim(), icon: !!t.querySelector('svg') && !!q.querySelector('svg'), href: t.getAttribute('href'), note: t.previousElementSibling, qrNote: q.previousElementSibling, panelNote: document.querySelector('.fb-qr__note')?.textContent.trim() }; })(),
     benefits: !!document.querySelector('#fb-advantage-title') && document.querySelector('#fb-advantage-title').textContent.trim() === 'Why Families Choose Funeral Funds Coverage',
   }));
   assert(f.forms === 0 && !f.oldText && f.benefits, `facebook page ${JSON.stringify(f)}`);
@@ -140,7 +140,7 @@ async function minimalCheckFacebook(page, phone = CAMPAIGN) {
   // visitor's session has answered; no tel: link) and the computer button (QR code); the other
   // three call buttons are unchanged.
   assert(f.ctas.length === 3 && f.ctas.every(([t, h]) => t === 'CALL NOW TO COMPLETE YOUR APPLICATION' && h === phone.href), `facebook CTAs ${JSON.stringify(f.ctas)}`);
-  assert(f.text && f.text.label === "TAP HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === 'Tap the orange button below right now to generate an SMS text in your messaging app.' && f.text.qrNote === 'Point your cell phone camera at the code below to generate an SMS text in your messaging app.', `text options ${JSON.stringify(f.text)}`);
+  assert(f.text && f.text.label === "TAP HERE IF YOU'RE ON A CELL PHONE" && f.text.qrLabel === "CLICK HERE IF YOU'RE ON A COMPUTER" && f.text.icon && (f.text.href === null || /^sms:\+18886720762[?&]body=Hi%2C%20this%20is%20/.test(f.text.href)) && f.text.note === null && f.text.qrNote === null && f.text.panelNote === 'Scan this code with your cell phone camera.', `text options ${JSON.stringify(f.text)}`);
 }
 
 for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { viewport: { width: 1280, height: 900 } }]]) {

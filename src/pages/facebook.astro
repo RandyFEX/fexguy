@@ -149,19 +149,18 @@ const advantage = [
              Nothing is sent until the visitor presses Send. -->
         <div class="fb-call fb-text-options">
           <div class="fb-text-opt">
-            <p class="fb-text__note">Tap the orange button below right now to generate an SMS text in your messaging app.</p>
             <a class="btn fb-text__btn" data-fb-text aria-disabled={SMS_NUMBER ? undefined : 'true'}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
               <span>TAP HERE IF YOU'RE<br />ON A CELL PHONE</span>
             </a>
           </div>
           <div class="fb-text-opt">
-            <p class="fb-text__note">Point your cell phone camera at the code below to generate an SMS text in your messaging app.</p>
             <button class="btn fb-text__btn" type="button" data-fb-qr-btn aria-controls="fb-qr" aria-expanded="false" disabled={SMS_NUMBER ? undefined : true}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="13" rx="1.5" /><path d="M8 20.5h8M12 16.5v4" /></svg>
               <span>CLICK HERE IF YOU'RE<br />ON A COMPUTER</span>
             </button>
             <div class="fb-qr" id="fb-qr" data-fb-qr hidden>
+              <p class="fb-qr__note">Scan this code with your cell phone camera.</p>
               <div class="fb-qr__code" data-fb-qr-code role="img" aria-label="QR code that opens your prepared text"></div>
             </div>
           </div>
@@ -533,11 +532,6 @@ const advantage = [
     .fb-text-opt + .fb-text-opt {
       border-left: 1px solid rgb(255 255 255 / 0.35);
     }
-    /* V4.20: the instruction uses 1rem of its column's own side padding so the
-       17-word sentence sits on two lines (the column itself is unchanged). */
-    .fb-text__note {
-      margin-inline: calc(-1 * var(--space-4));
-    }
   }
   /* Texting buttons: the site CTA orange; icon beside a two-line label. */
   .fb-text__btn {
@@ -577,25 +571,25 @@ const advantage = [
     color: var(--color-on-cta);
     filter: brightness(0.9);
   }
-  /* V4.20 (Randy, November 2026): each instruction sits above its button,
-     about two lines in its desktop column; phones wrap it normally. The
-     column gap (--space-3) plus a small margin keeps it clear of the button. */
-  .fb-text__note {
-    align-self: center;
-    margin-block: 0 var(--space-1);
-    text-wrap: balance;
-    font-size: 0.9375rem;
-    line-height: 1.4;
-    color: #ffffff;
-    text-align: center;
-  }
   /* V1.4: the desktop QR code, compact, on white so phones can scan it. */
+  /* V4.21 (Randy, November 2026): the computer button reveals this panel
+     directly beneath it: the instruction, then the QR code; hidden, it takes
+     no space. */
   .fb-qr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     margin-top: var(--space-1);
+  }
+  .fb-qr__note {
+    margin: 0;
+    text-wrap: balance;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
   }
   .fb-qr[hidden] {
     display: none;
