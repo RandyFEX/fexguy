@@ -1674,6 +1674,14 @@ Prioritize the shortest reliable path to completing approved changes.
   summary shows Coverage $10,000 and the lead records it); the results-page
   controls (Desired Premium, $5,000-$25,000) change it. The logo files stay
   in public/images/carriers/.
+  **V4.32 (Randy, November 2026):** the results heading "Easily adjust your
+  rates or coverage below" (wording, color, size and weight unchanged) has the
+  countdown's yellow (#ffeb3b) behind its text and a down arrow (&darr;,
+  aria-hidden, same color) on each side, centered as one row (on phones the
+  text wraps to two balanced lines between the arrows). The Coverage group
+  (Desired Premium first, $10,000 selected at first) is now the first row of
+  the controls, directly under the heading; its "Coverage" legend is kept for
+  screen readers only. Age, Gender and Tobacco follow, unchanged.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
