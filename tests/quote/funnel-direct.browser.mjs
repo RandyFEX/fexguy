@@ -369,6 +369,27 @@ for (const [label, opts] of [['desktop', { viewport: { width: 1280, height: 900 
   });
 }
 
+await check('Randy: the results always open at $10,000, whatever the coverage question answer; the lead keeps that answer', async () => {
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
+  const page = await ctx.newPage();
+  await page.goto(URL_);
+  await page.waitForSelector('[data-step="1"]:not([hidden])');
+  for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="61"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="coverage"][data-value="20000"]']) await page.click(s);
+  await page.selectOption('[data-qf-state]', 'Texas');
+  await page.waitForSelector('[data-step="6"]:not([hidden])');
+  await page.fill('#qf-first', 'Walter Grant');
+  await page.fill('#qf-phone', '(214) 867-5390');
+  await page.click('[data-qf-submit]');
+  const want = priceCategories(premiumEngine, { age: 61, gender: 'male', tobacco: false, coverage: 10000 });
+  await page.waitForFunction((w) => w.every((c) => document.querySelector(`[data-qf-card="${c.id}"] [data-qf-amount]`)?.textContent.trim() === c.amount), want.map((c) => ({ id: c.id, amount: `$${c.monthlyPremium}` })), { timeout: 8000 });
+  const checked = await page.$eval('.qf-adjust input[name="coverage"]:checked', (i) => i.value);
+  assert(checked === '10000', `selected ${checked}`);
+  const rec = (await (await fetch(`${srv.base}/__evidence/`)).json()).find((x) => x.phone === '+12148675390');
+  assert(rec?.quoteAtSubmission?.coverage === 20000, `lead coverage ${JSON.stringify(rec?.quoteAtSubmission)}`);
+  await ctx.close();
+  return want.map((c) => `$${c.monthlyPremium}`).join(' / ');
+});
+
 await check('Agent CRM down: a recoverable error, every input kept, no cards, no conversion; the retry delivers the same saved lead (no duplicate)', async () => {
   const { ctx, page } = await open({ viewport: { width: 1280, height: 900 } });
   await page.fill('#qf-first', 'Harold Moss');
