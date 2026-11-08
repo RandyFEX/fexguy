@@ -345,7 +345,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       return { label: t.textContent.trim(), shown: t.getBoundingClientRect().width > 2, off: Math.round(Math.abs(tr.left + tr.width / 2 - (ctl.left + ctl.width / 2))) };
     }));
     // V4.32: Coverage first, its legend for screen readers only; the other labels centered over their controls.
-    assert(centers.map((c) => c.label).join('|') === 'Coverage|Age|Gender|Tobacco or Nicotine' && !centers[0].shown && centers.slice(1).every((c) => c.shown && c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
+    assert(centers.map((c) => c.label).join('|') === 'Adjust Coverage|Age|Gender|Tobacco or Nicotine' && !centers[0].shown && centers.slice(1).every((c) => c.shown && c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
     assert(o.every((t, i) => i === 0 || t > o[i - 1]), `order ${o}`);
     await shot(page, `v35-${name}-5-revealed.png`);
     await shot(page, `v35-${name}-5-revealed-full.png`, true);
@@ -447,9 +447,11 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const boxes = await page.$$eval('.qf-group', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { y: Math.round(r.y) }; }));
     if (name === 'desktop') assert(boxes[1].y === boxes[2].y && boxes[2].y === boxes[3].y && boxes[1].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
-    const seg = await page.$$eval('.qf-adjust .qf-seg__opt', (els) => els.map((l) => { const sp = l.querySelector('span'); const cs = getComputedStyle(sp); return { on: l.querySelector('input').checked, bg: cs.backgroundColor, fg: cs.color, border: cs.borderTopColor }; }));
+    const seg = await page.$$eval('.qf-adjust .qf-seg__opt', (els) => els.map((l) => { const sp = l.querySelector('span'); const cs = getComputedStyle(sp); return { on: l.querySelector('input').checked, cov: l.querySelector('input').name === 'coverage', value: l.querySelector('input').value, bg: cs.backgroundColor, fg: cs.color, border: cs.borderTopColor }; }));
     const CHAR = 'rgb(69, 75, 73)';
-    assert(seg.filter((x) => x.on).length === 3 && seg.every((x) => (x.on ? x.bg === CHAR && x.fg === 'rgb(255, 255, 255)' && x.border === CHAR : x.bg === 'rgb(255, 255, 255)' && x.fg === 'rgb(74, 80, 78)' && x.border === 'rgb(111, 118, 115)')), `selection colors ${JSON.stringify(seg)}`);
+    assert(seg.filter((x) => x.on).length === 3 && seg.every((x) => (x.on ? x.bg === CHAR && x.fg === (x.cov ? 'rgb(255, 235, 59)' : 'rgb(255, 255, 255)') && x.border === CHAR : x.bg === 'rgb(255, 255, 255)' && x.fg === 'rgb(74, 80, 78)' && x.border === 'rgb(111, 118, 115)')), `selection colors ${JSON.stringify(seg)}`);
+    // V4.33: the selected coverage amount's text is the countdown's yellow ($10,000 at first).
+    assert(seg.some((x) => x.cov && x.on && x.value === '10000' && x.fg === 'rgb(255, 235, 59)'), 'selected $10,000 text not yellow');
     const titles = await page.$$eval('.qf-adjust .qf-group__title', (els) => els.map((e) => getComputedStyle(e).color));
     assert(titles.every((c) => c === 'rgb(74, 80, 78)'), `label colors ${titles}`);
     const greens = await page.evaluate(() => {
@@ -555,6 +557,9 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.click('.qf-adjust label:has(input[name="coverage"][value="25000"])');
     await page.waitForFunction(() => document.querySelector('.qf-adjust input[name="coverage"][value="25000"]').checked, null, { timeout: 5000 });
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="lowest-preferred"] [data-qf-amount]').textContent.trim() !== b, seen[1], { timeout: 8000 });
+    // V4.33: the yellow text follows the selection; $10,000 returns to the unselected color.
+    const fg = await page.evaluate(() => Object.fromEntries([...document.querySelectorAll('.qf-adjust input[name="coverage"]')].map((i) => [i.value, getComputedStyle(i.nextElementSibling).color])));
+    assert(fg['25000'] === 'rgb(255, 235, 59)' && fg['10000'] === 'rgb(74, 80, 78)' && fg.premium === 'rgb(74, 80, 78)', `coverage text colors ${JSON.stringify(fg)}`);
     const later = await applyAndRead('lowest-preferred');
     assert(later.fb.coverage === '$25,000' && later.fb.premium === later.card && later.card !== seen[1], `stale summary ${JSON.stringify(later)}`);
     await minimalCheckFacebook(page, CAMPAIGN);

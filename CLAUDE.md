@@ -1682,6 +1682,9 @@ Prioritize the shortest reliable path to completing approved changes.
   (Desired Premium first, $10,000 selected at first) is now the first row of
   the controls, directly under the heading; its "Coverage" legend is kept for
   screen readers only. Age, Gender and Tobacco follow, unchanged.
+  **V4.33 (Randy, November 2026):** that legend reads "Adjust Coverage"
+  (still screen-reader only); the selected coverage choice's text is the
+  countdown's yellow (#ffeb3b) on its unchanged charcoal background.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
