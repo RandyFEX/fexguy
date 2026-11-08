@@ -41,6 +41,7 @@ type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavail
 type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: string; logo?: string | null };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
+const RESULTS_START_COVERAGE = 10000;
 const MIN = 5000;
 const MAX = 25000;
 const TOTAL = 6;
@@ -295,7 +296,11 @@ if (root) {
     if (body.leadConversion === true) window.dispatchEvent(new CustomEvent('ff:lead', { detail: { id: leadId } }));
     complete(6);
     visitorName = firstName;
-    unlock(quote, body.testMode, body.expiresAt);
+    // Randy (November 2026): the results always open at $10,000 for everyone
+    // (the amount chosen on the coverage question stays in the lead record).
+    answers.coverage = RESULTS_START_COVERAGE;
+    saveSteps();
+    unlock({ ...quote, coverage: RESULTS_START_COVERAGE }, body.testMode, body.expiresAt);
   });
 
   function sourceInfo() {
