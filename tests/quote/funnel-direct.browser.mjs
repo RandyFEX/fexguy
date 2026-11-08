@@ -51,7 +51,7 @@ async function open(opts) {
   });
   await page.goto(URL_);
   await page.waitForSelector('[data-step="1"]:not([hidden])');
-  for (const s of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="68"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="coverage"][data-value="10000"]']) await page.click(s);
+  for (const s of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="68"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(s);
   await page.selectOption('[data-qf-state]', 'Texas');
   await page.waitForSelector('[data-step="6"]:not([hidden])');
   await page.waitForTimeout(400); // the step's fade-in
@@ -108,7 +108,7 @@ function common(l) {
   assert(l.tel === 'tel:+18886564648' && l.telText === '888-656-4648' && l.telTarget >= 44, `direct contact ${l.tel} ${l.telText} ${l.telTarget}px`);
   // V3.7: the advertising number everywhere on /free-quote/ (header, Direct Contact, cards, intake).
   assert(l.headerTel === 'tel:+18886564648' && l.headerText.endsWith('888-656-4648') && l.tels.every((h) => h === 'tel:+18886564648') && l.tels.length >= 5 && !l.mainNumber, `numbers ${JSON.stringify([l.headerTel, l.tels, l.mainNumber])}`);
-  assert(l.progress === 'Step 6 of 6' && !l.hscroll, `${l.progress} hscroll ${l.hscroll}`);
+  assert(l.progress === 'Step 5 of 5' && !l.hscroll, `${l.progress} hscroll ${l.hscroll}`);
   // Trust section above the contact information; then the heading, summary, fields, consent, button, promise.
   const order = [l.whyBox.top, l.head.top, l.summary.top, l.first.top, l.phone.top, l.button.top, l.disclosure.top, l.promise.top];
   assert(l.agent.bottom <= l.head.top && l.whyBox.bottom <= l.head.top && order.every((t, k) => k === 0 || t > order[k - 1]), `order ${JSON.stringify(order)}`);
@@ -143,60 +143,27 @@ for (const [label, dev] of [['iPhone 13', devices['iPhone 13']], ['Pixel 7 (Andr
   });
 }
 
-// V4.2: the insurance company logo wall, under the coverage question only.
-for (const [label, dev] of [['desktop 1280px', { viewport: { width: 1280, height: 900 } }], ['iPhone 13', devices['iPhone 13']], ['Pixel 7 (Android)', devices['Pixel 7']], ['320px', { viewport: { width: 320, height: 700 }, isMobile: true, hasTouch: true }]]) {
-  await check(`${label}: logo wall only on the coverage question (heading, authentic images loaded, rows, no overflow); coverage still advances`, async () => {
+// V4.31: no coverage question and no logo wall; tobacco goes straight to the state question.
+for (const [label, dev] of [['desktop 1280px', { viewport: { width: 1280, height: 900 } }], ['iPhone 13', devices['iPhone 13']], ['320px', { viewport: { width: 320, height: 700 }, isMobile: true, hasTouch: true }]]) {
+  await check(`${label}: V4.31 no coverage question; tobacco then state (Step 4 of 5); Back returns to tobacco`, async () => {
     const ctx = await browser.newContext({ ...dev, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
     const page = await ctx.newPage();
     await page.goto(URL_);
     await page.waitForSelector('[data-step="1"]:not([hidden])');
-    const hiddenAt = async () => page.evaluate(() => !document.querySelector('[data-qf-logos]').getClientRects().length);
-    assert(await hiddenAt(), 'logo wall on step 1');
-    await page.click('[data-pick="gender"][data-value="female"]');
-    assert(await hiddenAt(), 'logo wall on step 2');
-    await page.click('[data-pick="age"][data-value="68"]');
-    assert(await hiddenAt(), 'logo wall on step 3');
-    await page.click('[data-pick="tobacco"][data-value="no"]');
-    await page.waitForSelector('[data-step="4"]:not([hidden])');
-    await page.waitForFunction(() => [...document.querySelectorAll('.qf-logos img')].every((i) => i.complete), null, { timeout: 8000 });
-    await page.waitForTimeout(400);
-    const r = await page.evaluate(() => {
-      const wall = document.querySelector('[data-qf-logos]'), panel = document.querySelector('[data-qf-panel]');
-      const imgs = [...wall.querySelectorAll('img')];
-      const items = [...wall.querySelectorAll('.qf-logos__item')].map((e) => e.getBoundingClientRect());
-      const rows = new Set(items.map((b) => Math.round(b.top))).size;
-      const perRow = items.filter((b) => Math.round(b.top) === Math.round(items[0].top)).length;
-      return {
-        question: document.querySelector('#qf-s4').textContent.trim(),
-        title: wall.querySelector('.qf-logos__title').textContent.trim(),
-        below: wall.getBoundingClientRect().top >= panel.getBoundingClientRect().bottom - 1,
-        names: imgs.map((i) => i.alt), broken: imgs.filter((i) => !i.naturalWidth).map((i) => i.alt),
-        heights: imgs.map((i) => Math.round(i.getBoundingClientRect().height)), overflow: imgs.some((i) => i.getBoundingClientRect().right > i.parentElement.getBoundingClientRect().right + 1),
-        perRow, rows, cica: /cica/i.test(wall.innerHTML),
-        borders: [...wall.querySelectorAll('.qf-logos__item')].filter((e) => parseFloat(getComputedStyle(e).borderTopWidth) > 0 || getComputedStyle(e).backgroundColor !== 'rgba(0, 0, 0, 0)').length,
-        areas: imgs.map((i) => { const b = i.getBoundingClientRect(); return Math.round(b.width * b.height); }),
-        widths: imgs.map((i) => Math.round(i.getBoundingClientRect().width)),
-        hscroll: document.documentElement.scrollWidth > innerWidth,
-        options: [...document.querySelectorAll('[data-step="4"] .qf-opt')].map((e) => e.textContent.trim()).join('|'),
-      };
-    });
-    assert(r.question === 'How Much Coverage Would You Like?' && r.title === 'We compare coverage from trusted insurance companies' && r.below, JSON.stringify(r));
-    // V4.4: all 16 authentic logos, borderless, every one loaded and readable.
-    assert(r.names.length === 16 && !r.broken.length && !r.overflow && !r.cica && !r.hscroll && r.borders === 0, JSON.stringify(r));
-    assert(r.heights.every((h) => h >= 16 && h <= 48) && r.widths.every((w) => w >= 36), `logo sizes ${r.heights} / ${r.widths}`);
-    const want = label.startsWith('desktop') ? 6 : label === '320px' ? 2 : 3;
-    assert(r.perRow === want && (!label.startsWith('desktop') || r.rows === 3), `${r.perRow} logos per row (${r.rows} rows), expected ${want}`);
-    assert(r.options === '$5,000|$10,000|$15,000|$20,000|$25,000|Other', r.options);
-    if (OUT) await page.screenshot({ path: `${OUT}/v42-${label.split(' ')[0].toLowerCase()}-coverage-logos.png`, fullPage: true });
-    // Coverage selection is unchanged: a choice advances to the state question, and the wall goes away.
-    await page.click('[data-pick="coverage"][data-value="10000"]');
+    assert(!(await page.$('[data-step="4"]')) && !(await page.$('[data-qf-logos]')) && !(await page.$('#qf-other-input')), 'removed step still in the page');
+    for (const s of ['[data-pick="gender"][data-value="female"]', '[data-pick="age"][data-value="68"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(s);
     await page.waitForSelector('[data-step="5"]:not([hidden])');
-    assert(await hiddenAt(), 'logo wall on the state question');
+    assert((await page.textContent('[data-qf-progress-label]')).trim() === 'Step 4 of 5', 'progress on the state question');
+    assert(!/How Much Coverage|Typical Burial Coverage|We compare coverage/.test(await page.evaluate(() => document.body.innerText)), 'coverage question text visible');
+    await page.click('[data-qf-back]');
+    await page.waitForSelector('[data-step="3"]:not([hidden])');
+    await page.click('[data-pick="tobacco"][data-value="no"]');
     await page.selectOption('[data-qf-state]', 'Texas');
     await page.waitForSelector('[data-step="6"]:not([hidden])');
-    assert(await hiddenAt(), 'logo wall on the contact step');
+    const sum = await page.$$eval('[data-qf-summary] > div', (els) => els.map((e) => `${e.querySelector('dt').textContent}:${e.querySelector('dd').textContent}`));
+    assert(sum.join('|') === 'Gender:Female|Age:68|State:Texas|Tobacco:Non-Smoker|Coverage:$10,000', sum.join('|'));
+    assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'horizontal scroll');
     await ctx.close();
-    return `${r.names.length} logos: ${r.names.join(', ')}; ${r.perRow} per row, ${r.rows} rows`;
   });
 }
 
@@ -369,12 +336,12 @@ for (const [label, opts] of [['desktop', { viewport: { width: 1280, height: 900 
   });
 }
 
-await check('Randy: the results always open at $10,000, whatever the coverage question answer; the lead keeps that answer', async () => {
+await check('V4.31: the results open at $10,000 with $10,000 selected (no coverage question); the lead records $10,000', async () => {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, extraHTTPHeaders: { 'x-real-ip': `198.51.100.${ip++}` } });
   const page = await ctx.newPage();
   await page.goto(URL_);
   await page.waitForSelector('[data-step="1"]:not([hidden])');
-  for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="61"]', '[data-pick="tobacco"][data-value="no"]', '[data-pick="coverage"][data-value="20000"]']) await page.click(s);
+  for (const s of ['[data-pick="gender"][data-value="male"]', '[data-pick="age"][data-value="61"]', '[data-pick="tobacco"][data-value="no"]']) await page.click(s);
   await page.selectOption('[data-qf-state]', 'Texas');
   await page.waitForSelector('[data-step="6"]:not([hidden])');
   await page.fill('#qf-first', 'Walter Grant');
@@ -385,7 +352,7 @@ await check('Randy: the results always open at $10,000, whatever the coverage qu
   const checked = await page.$eval('.qf-adjust input[name="coverage"]:checked', (i) => i.value);
   assert(checked === '10000', `selected ${checked}`);
   const rec = (await (await fetch(`${srv.base}/__evidence/`)).json()).find((x) => x.phone === '+12148675390');
-  assert(rec?.quoteAtSubmission?.coverage === 20000, `lead coverage ${JSON.stringify(rec?.quoteAtSubmission)}`);
+  assert(rec?.quoteAtSubmission?.coverage === 10000, `lead coverage ${JSON.stringify(rec?.quoteAtSubmission)}`);
   await ctx.close();
   return want.map((c) => `$${c.monthlyPremium}`).join(' / ');
 });

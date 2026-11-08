@@ -36,7 +36,7 @@ const PHONES = { mobile: '214-867-5309', desktop: '972-867-5310' };
 const NAMES = { mobile: 'Mary Ann Smith', desktop: 'Mary Smith' };
 const GREEN = 'rgb(23, 63, 53)';
 const ORANGE = 'rgb(194, 65, 12)';
-const TITLES = ["I'm shopping for burial or life insurance for a...", 'What is your current age?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'How Much Coverage Would You Like?', 'What State Do You Live In?', 'Your Contact Information'];
+const TITLES = ["I'm shopping for burial or life insurance for a...", 'What is your current age?', 'Have you used any tobacco, nicotine, or vaping products in the last 12 months?', 'What State Do You Live In?', 'Your Contact Information'];
 const step = (page) => page.evaluate(() => Number(document.querySelector('[data-step]:not([hidden])')?.getAttribute('data-step')));
 const amount = (page, id) => page.textContent(`[data-qf-card="${id}"] [data-qf-amount]`);
 const atStart = (page) => page.waitForFunction(() => document.querySelector('[data-step="1"]:not([hidden])'), null, { timeout: 6000 });
@@ -80,7 +80,6 @@ async function walk(page, phone, who = NAMES[phone === PHONES.mobile ? 'mobile' 
   await page.click('[data-pick="gender"][data-value="female"]');
   await page.click('[data-pick="age"][data-value="60"]');
   await page.click('[data-pick="tobacco"][data-value="no"]');
-  await page.click('[data-pick="coverage"][data-value="10000"]');
   await page.selectOption('[data-qf-state]', 'Ohio');
   await page.fill('#qf-first', who);
   await page.fill('#qf-phone', phone);
@@ -160,11 +159,14 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await shot(page, `v35-${name}-1-start.png`);
   });
 
-  await check(`${name}: exact six-step sequence, wording, progress and minimal layout on every screen`, async () => {
-    for (let s = 1; s <= 6; s++) {
+  // V4.31: no coverage question (internal step 4): five steps, tobacco then state.
+  await check(`${name}: exact five-step sequence (no coverage question), wording, progress and minimal layout on every screen`, async () => {
+    assert(!(await page.$('[data-step="4"]')) && !(await page.$('[data-pick="coverage"]')) && !(await page.$('[data-qf-logos]')), 'coverage question still on the page');
+    for (const s of [1, 2, 3, 5, 6]) {
+      const shown = s > 4 ? s - 1 : s;
       assert((await step(page)) === s, `expected step ${s}`);
-      assert((await page.textContent(`#qf-s${s}`)).trim() === TITLES[s - 1], `step ${s} title`);
-      assert((await page.textContent('[data-qf-progress-label]')).trim() === `Step ${s} of 6`, `step ${s} progress`);
+      assert((await page.textContent(`#qf-s${s}`)).trim() === TITLES[shown - 1], `step ${s} title`);
+      assert((await page.textContent('[data-qf-progress-label]')).trim() === `Step ${shown} of 5`, `step ${s} progress`);
       const txt = await page.evaluate(() => [...document.querySelectorAll('.qf-body *')].filter((e) => e.offsetParent && e.children.length === 0).map((e) => e.textContent).join(' '));
       assert(!/Questions\? Call|How these prices work|Representative monthly rates|What Will Your Insurance Money|Burial & Funeral|Other Final Expenses/.test(txt), `step ${s}: ${txt.slice(0, 120)}`);
       await minimalLayout(page);
@@ -180,11 +182,6 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
         assert(t.map((x) => `${x.label}=${x.value}`).join() === 'No=no,Yes=yes' && (t[0].left < t[1].left || t[0].top < t[1].top), `tobacco buttons ${JSON.stringify(t)}`);
         await page.click('[data-pick="tobacco"][data-value="no"]');
       }
-      if (s === 4) {
-        const c = await page.$$eval('[data-step="4"] .qf-opt', (els) => els.map((e) => e.textContent.trim()));
-        assert(c.join('|') === '$5,000|$10,000|$15,000|$20,000|$25,000|Other', c.join('|'));
-        await page.click('[data-pick="coverage"][data-value="10000"]');
-      }
       if (s === 5) {
         assert((await page.$$eval('[data-qf-state] option', (els) => els.filter((e) => e.value).length)) === 50, '50 states');
         await page.selectOption('[data-qf-state]', 'Ohio');
@@ -192,6 +189,8 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     }
     await page.click('[data-qf-back]');
     assert((await step(page)) === 5, 'back');
+    await page.click('[data-qf-back]');
+    assert((await step(page)) === 3 && (await page.textContent('[data-qf-progress-label]')).trim() === 'Step 3 of 5', 'back from the state question goes to tobacco');
     await page.goto(URL_);
   });
 
@@ -200,7 +199,6 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.click('[data-pick="gender"][data-value="female"]');
     await page.click('[data-pick="age"][data-value="60"]');
     await page.click('[data-pick="tobacco"][data-value="no"]');
-    await page.click('[data-pick="coverage"][data-value="10000"]');
     await page.selectOption('[data-qf-state]', 'Ohio');
     const sum = await page.$$eval('[data-qf-summary] > div', (els) => els.map((e) => `${e.querySelector('dt').textContent}:${e.querySelector('dd').textContent}`));
     assert(sum.join('|') === 'Gender:Female|Age:60|State:Ohio|Tobacco:Non-Smoker|Coverage:$10,000', sum.join('|'));

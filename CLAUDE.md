@@ -1664,6 +1664,16 @@ Prioritize the shortest reliable path to completing approved changes.
   src/scripts/quote-funnel.ts); that answer stays in the lead record
   (`quoteAtSubmission`) and Agent CRM. A reload keeps the visitor's current
   adjustments.
+  **V4.31 (Randy, November 2026; supersedes V4.25-V4.28 and the V4.2/V4.4
+  logo wall):** the coverage question ("How Much Coverage Would You Like?",
+  its buttons, Other box, guidance lines and the logo wall shown with it) is
+  removed. Five steps: gender, age, tobacco, state, contact ("Step N of 5";
+  Back from state returns to tobacco). Internal step ids are unchanged
+  (state 5, contact 6, results 7), so `quote_step_complete` keeps its step
+  numbers (4 no longer fires). Every quote starts at $10,000 (the contact
+  summary shows Coverage $10,000 and the lead records it); the results-page
+  controls (Desired Premium, $5,000-$25,000) change it. The logo files stay
+  in public/images/carriers/.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 
