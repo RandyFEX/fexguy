@@ -42,9 +42,7 @@ type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: stri
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
 const RESULTS_START_COVERAGE = 10000;
-const MIN = 5000;
-const MAX = 25000;
-const TOTAL = 6;
+const TOTAL = 5;
 const STEPS_KEY = 'ff:quote-steps'; // non-personal answers only (sex, age, tobacco, coverage)
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 // v5.8: where this visit started (article sidebar, campaign or direct); every
@@ -115,6 +113,8 @@ if (root) {
   try {
     Object.assign(answers, JSON.parse(sessionStorage.getItem(STEPS_KEY) ?? '{}'));
   } catch {}
+  // V4.31: no coverage question; every quote starts at $10,000 (the results page changes it).
+  answers.coverage ??= RESULTS_START_COVERAGE;
   const saveSteps = () => {
     try {
       const { age, gender, tobacco, coverage } = answers;
@@ -131,16 +131,15 @@ if (root) {
   function show(n: number, focus = true) {
     current = n;
     for (const [i, el] of steps) el.hidden = i !== n;
-    // V4.2: the insurance company logo wall belongs to the coverage question (step 4) only.
-    const logos = root!.querySelector<HTMLElement>('[data-qf-logos]');
-    if (logos) logos.hidden = n !== 4;
     const results = n >= 7;
     back.hidden = n === 1 || results;
     root!.querySelector<HTMLElement>('[data-qf-top]')!.hidden = results;
     progressWrap.hidden = results;
     progressLabel.hidden = results;
-    progress.style.width = `${(Math.min(n, TOTAL) / TOTAL) * 100}%`;
-    progressLabel.textContent = `Step ${Math.min(n, TOTAL)} of ${TOTAL}`;
+    // V4.31: the coverage question (internal step 4) is gone; the steps after it show one lower.
+    const shownStep = Math.min(n > 4 ? n - 1 : n, TOTAL);
+    progress.style.width = `${(shownStep / TOTAL) * 100}%`;
+    progressLabel.textContent = `Step ${shownStep} of ${TOTAL}`;
     if (!focus) return;
     if (n === 6) fillSummary();
     const target = steps.get(n)?.querySelector<HTMLElement>('.qf-q');
@@ -166,9 +165,11 @@ if (root) {
     }
     track('quote_step_complete', { step });
   };
-  back.addEventListener('click', () => show(Math.max(1, current - 1)));
+  // V4.31: no coverage question; tobacco (3) is followed by the state question (5).
+  const nextStep = (n: number) => (n === 3 ? 5 : n + 1);
+  back.addEventListener('click', () => show(Math.max(1, current === 5 ? 3 : current - 1)));
 
-  // Steps 1-4: tap to answer and advance.
+  // Steps 1-3: tap to answer and advance.
   root.addEventListener('click', (e) => {
     const btn = (e.target as Element).closest<HTMLButtonElement>('[data-pick]');
     if (!btn) return;
@@ -177,40 +178,11 @@ if (root) {
     if (pick === 'gender') answers.gender = value === 'female' ? 'female' : 'male';
     if (pick === 'age') answers.age = Number(value);
     if (pick === 'tobacco') answers.tobacco = value === 'yes';
-    if (pick === 'coverage') answers.coverage = Number(value);
     saveSteps();
     complete(current);
-    show(current + 1);
+    show(nextStep(current));
   });
 
-  // Step 4 (coverage): Other amount.
-  const otherBox = $('[data-qf-other]');
-  const otherInput = $<HTMLInputElement>('#qf-other-input');
-  const otherError = $('[data-qf-other-error]');
-  const parseAmount = (raw: string) => {
-    const s = raw.replace(/[$,\s]/g, '');
-    const n = Number(s);
-    return s !== '' && Number.isInteger(n) && n >= MIN && n <= MAX ? n : null;
-  };
-  $('[data-qf-other-open]').addEventListener('click', () => {
-    otherBox.hidden = false;
-    otherInput.focus();
-  });
-  const otherNext = () => {
-    const n = parseAmount(otherInput.value);
-    otherError.hidden = n !== null;
-    otherError.textContent = n === null ? `Enter a whole-dollar amount from ${money(MIN)} to ${money(MAX)}.` : '';
-    otherInput.setAttribute('aria-invalid', String(n === null));
-    if (n === null) return otherInput.focus();
-    answers.coverage = n;
-    saveSteps();
-    complete(4);
-    show(5);
-  };
-  $('[data-qf-other-next]').addEventListener('click', otherNext);
-  otherInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') otherNext();
-  });
 
   // Step 5: state (lead information only; never changes prices).
   const stateSelect = $<HTMLSelectElement>('[data-qf-state]');
