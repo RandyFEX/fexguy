@@ -9,6 +9,8 @@
 //   node tests/quote/funnel-direct.browser.mjs   (screenshots: OUT=<dir>)
 import { createRequire } from 'node:module';
 import { startFunnelServer, tapTextLink } from './funnel-server.mjs';
+import { createEngine, loadDatasets } from '../../server/rates/engine.js';
+import { priceCategories } from '../../server/rates/pricing-categories.js';
 
 const { chromium, devices } = createRequire(import.meta.url)('playwright');
 const srv = await startFunnelServer({ production: true });
@@ -285,6 +287,72 @@ await check('texting option on the Ready to Apply page: quote_text_click (QR cod
   assert(t.length === 1 && /"text_method":"qr-code"/.test(t[0]) && !/Walter|Gray|5313/.test(t[0]), `text event ${t}`);
   await ctx.close();
 });
+
+// V4.29 Desired Premium on the results page: first option, the coverage a
+// monthly budget buys from each card's carrier (the server's exact reverse
+// of the existing formula), back to preset pricing, and the handoffs.
+const premiumEngine = createEngine(loadDatasets());
+for (const [label, opts] of [['desktop', { viewport: { width: 1280, height: 900 } }], ['iPhone', devices['iPhone 13']], ['320px', { viewport: { width: 320, height: 700 }, isMobile: true, hasTouch: true }]]) {
+  await check(`V4.29 ${label}: Desired Premium first; $50 and $75 show each carrier's coverage; invalid input shows no new result; a preset restores premiums; handoffs carry the card's coverage`, async () => {
+    const { ctx, page } = await open(opts);
+    await page.fill('#qf-first', 'Ruth Baker');
+    await page.fill('#qf-phone', `(214) 867-${String(5400 + ip).slice(-4)}`);
+    await page.click('[data-qf-submit]');
+    const allOk = () => page.waitForFunction(() => ['lowest-preferred', 'average-standard', 'guaranteed-acceptance'].every((c) => document.querySelector(`[data-qf-card="${c}"]`)?.dataset.state === 'ok'), null, { timeout: 8000 });
+    await allOk();
+    const opt = await page.$$eval('.qf-seg__opts--coverage .qf-seg__opt', (els) => els.map((e) => ({ t: e.textContent.trim(), fits: e.querySelector('.qf-control').scrollWidth <= e.querySelector('.qf-control').clientWidth + 1, h: Math.round(e.getBoundingClientRect().height) })));
+    assert(opt.map((o) => o.t).join('|') === 'Desired Premium|$5,000|$10,000|$15,000|$20,000|$25,000' && opt.every((o) => o.fits), `options ${JSON.stringify(opt)}`);
+    assert(await page.isHidden('[data-qf-adj-premium]'), 'premium input shown before the choice');
+    const cards = () => page.$$eval('[data-qf-card]', (els) => els.map((e) => ({ id: e.dataset.qfCard, amount: e.querySelector('[data-qf-amount]').textContent.trim(), per: e.querySelector('.qf-card__per').textContent.trim(), text: e.querySelector('[data-qf-apply]').getAttribute('href') })));
+    const expect = (premium) => priceCategories(premiumEngine, { age: 68, gender: 'female', tobacco: false, premium });
+    const money = (n) => `$${n.toLocaleString('en-US')}`;
+    await page.click('.qf-seg__opt:has(input[value="premium"])');
+    assert(await page.isVisible('#qf-adj-premium') && (await page.textContent('label[for="qf-adj-premium"]')).trim() === 'Desired Monthly Premium' && (await page.getAttribute('#qf-adj-premium', 'inputmode')) === 'decimal', 'premium input');
+    const shown = [];
+    for (const premium of ['50', '75']) {
+      await page.fill('#qf-adj-premium', premium);
+      const want = expect(`${premium}.00`);
+      await page.waitForFunction((w) => w.every((c) => document.querySelector(`[data-qf-card="${c.id}"] [data-qf-amount]`)?.textContent.trim() === c.amount), want.map((c) => ({ id: c.id, amount: `$${c.coverage.toLocaleString('en-US')}` })), { timeout: 8000 });
+      const got = await cards();
+      for (const c of want) {
+        const g = got.find((x) => x.id === c.id);
+        assert(c.status === 'ok' && g.amount === money(c.coverage) && g.per === `coverage for $${premium}.00/month`, `${premium}: ${JSON.stringify(g)} vs ${c.coverage}`);
+        if (g.text.startsWith('sms:')) assert(decodeURIComponent(g.text).includes(money(c.coverage)) && decodeURIComponent(g.text).includes(`$${c.monthlyPremium.replace(/\.00$/, '')}/month`), `sms ${g.text}`);
+      }
+      assert(want.some((c) => c.coverage % 1000 !== 0), 'all amounts rounded');
+      shown.push(`$${premium}: ${got.map((g) => g.amount).join(' / ')}`);
+    }
+    if (OUT) await page.screenshot({ path: `${OUT}/v429-${label}-premium-75.png`, fullPage: true });
+    const before = JSON.stringify(await cards());
+    await page.fill('#qf-adj-premium', 'abc');
+    await page.waitForSelector('[data-qf-adj-premium-error]:not([hidden])');
+    assert((await page.textContent('[data-qf-adj-premium-error]')).trim() === 'Enter a monthly amount, such as $50.', 'error text');
+    await page.waitForTimeout(500);
+    assert(JSON.stringify(await cards()) === before, 'invalid input changed the cards');
+    // The server's own record of an Apply tap in premium mode carries the card's coverage.
+    await page.fill('#qf-adj-premium', '50');
+    await page.waitForFunction(() => /coverage for \$50\.00\/month/.test(document.querySelector('.qf-card__per').textContent));
+    const want50 = expect('50.00');
+    const apply = page.waitForResponse((r) => r.url().includes('/api/quote/') && /"action":"apply"/.test(r.request().postData() ?? ''), { timeout: 8000 });
+    await page.$eval('[data-qf-card="lowest-preferred"] [data-qf-apply]', (a) => a.addEventListener('click', (e) => e.preventDefault(), { once: true }));
+    await page.click('[data-qf-card="lowest-preferred"] [data-qf-apply]');
+    const ab = await (await apply).json();
+    assert(ab.status === 'ok' && ab.coverage === want50[0].coverage && ab.monthlyPremium === want50[0].monthlyPremium, `apply ${JSON.stringify(ab)}`);
+    const handoff = await page.evaluate(() => JSON.parse(localStorage.getItem('ff:quote-handoff') ?? sessionStorage.getItem('ff:quote-handoff') ?? 'null'));
+    assert(handoff?.selection?.coverage === want50[0].coverage && handoff.selection.monthlyPremium === want50[0].monthlyPremium, `handoff ${JSON.stringify(handoff?.selection)}`);
+    // Back to a preset: the ordinary premiums for that coverage.
+    await page.click('.qf-seg__opt:has(input[value="15000"])');
+    const preset = priceCategories(premiumEngine, { age: 68, gender: 'female', tobacco: false, coverage: 15000 });
+    await page.waitForFunction((w) => w.every((c) => document.querySelector(`[data-qf-card="${c.id}"] [data-qf-amount]`)?.textContent.trim() === c.amount), preset.map((c) => ({ id: c.id, amount: `$${c.monthlyPremium}` })), { timeout: 8000 });
+    const back = await cards();
+    assert(back.every((g) => g.per === 'per month') && (await page.isHidden('[data-qf-adj-premium]')), `preset ${JSON.stringify(back)}`);
+    if (label !== 'desktop') assert(back.every((g) => !g.text.startsWith('sms:') || decodeURIComponent(g.text).includes('$15,000')), 'sms after preset');
+    assert((await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)), 'horizontal scroll');
+    if (OUT) await page.screenshot({ path: `${OUT}/v429-${label}-preset.png`, fullPage: true });
+    await ctx.close();
+    return shown.join('; ');
+  });
+}
 
 await check('Agent CRM down: a recoverable error, every input kept, no cards, no conversion; the retry delivers the same saved lead (no duplicate)', async () => {
   const { ctx, page } = await open({ viewport: { width: 1280, height: 900 } });

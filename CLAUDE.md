@@ -1643,6 +1643,20 @@ Prioritize the shortest reliable path to completing approved changes.
   computer button reveals the existing QR panel directly beneath it, which now
   opens with "Scan this code with your cell phone camera." (white, bold,
   centered) above the code; hidden, the panel takes no space.
+  **V4.29 (Randy, November 2026):** the results page's Coverage control is
+  Desired Premium (first), $5,000, $10,000, $15,000, $20,000, $25,000 (the
+  results-page Other option is gone; the step 4 question keeps its Other).
+  Desired Premium opens a "Desired Monthly Premium" input ($1 to $9,999.99);
+  the price-explorer API then takes `premium` ("50.00") instead of
+  `coverage` and each card shows the most whole-dollar coverage whose
+  premium (the engine's own formula and rounding, `coverageForPremium` in
+  server/rates/engine.js) is at most that amount, "coverage for $50.00/month"
+  (never rounded to presets). The competitive cards rank by that coverage
+  (most first). The products' existing face-amount limits apply; a premium
+  outside them shows a short message, never an amount. Apply and call taps
+  are re-priced on the server the same way and record the card's coverage;
+  the handoff and the prewritten text carry the card's coverage and its exact
+  premium. Choosing a preset returns to ordinary premiums.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

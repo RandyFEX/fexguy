@@ -14,7 +14,7 @@
 // - Texas reference pricing; ages 50-89; coverage $5,000-$25,000.
 
 import { createHmac } from 'node:crypto';
-import { AGES, COVERAGE, priceCategories } from './pricing-categories.js';
+import { AGES, COVERAGE, parsePremium, priceCategories } from './pricing-categories.js';
 
 const MAX_BODY = 256;
 export const LIMITS = { burst: 60, burstWindowMs: 10 * 60 * 1000, daily: 400, dailyWindowMs: 24 * 60 * 60 * 1000 };
@@ -71,6 +71,17 @@ export function parseInput(b) {
   return { age, gender, tobacco, coverage };
 }
 
+/** V4.29: parseInput, or the same three answers with a Desired Premium
+ *  ("50.00") instead of coverage (results-page repricing, Apply and call taps). @param {any} b */
+export function parsePricingInput(b) {
+  if (b && typeof b === 'object' && !Array.isArray(b) && Object.keys(b).sort().join(',') === 'age,gender,premium,tobacco') {
+    const premium = parsePremium(b.premium);
+    const base = parseInput({ age: b.age, gender: b.gender, tobacco: b.tobacco, coverage: COVERAGE.min });
+    return premium && base ? { age: base.age, gender: base.gender, tobacco: base.tobacco, premium } : null;
+  }
+  return parseInput(b);
+}
+
 /**
  * @typedef {{ eval(script: string, keys: string[], args: (string | number)[]): Promise<unknown> }} LimitStore
  * @typedef {{ store: LimitStore | null, getEngine?: () => Promise<{ engine: any, publishedAt: string } | null>, isVerified?: (request: Request) => Promise<unknown>, onPriced?: (verified: unknown, input: any) => Promise<unknown>, now?: () => number }} Deps
@@ -85,8 +96,8 @@ export async function handlePriceExplorer(request, env, deps) {
   if (text.length > MAX_BODY) return json(413, { status: 'bad-request' });
   let body;
   try { body = JSON.parse(text); } catch { return json(400, { status: 'bad-request' }); }
-  const input = parseInput(body);
-  if (!input) return json(400, { status: 'bad-request', message: `Choose an age from ${AGES.min} to ${AGES.max} and coverage from $5,000 to $25,000.` });
+  const input = parsePricingInput(body);
+  if (!input) return json(400, { status: 'bad-request', message: `Choose an age from ${AGES.min} to ${AGES.max} and coverage from $5,000 to $25,000, or a monthly premium.` });
 
   // Quote System v2.2: prices only for a phone-verified session (server-checked
   // cookie, see server/quote/session.js). No session check configured = no prices.

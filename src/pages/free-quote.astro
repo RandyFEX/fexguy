@@ -302,16 +302,16 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             <fieldset class="qf-group qf-group--coverage qf-seg">
               <legend class="qf-group__title">Coverage</legend>
               <div class="qf-seg__opts qf-seg__opts--coverage">
+                <label class="qf-seg__opt"><input type="radio" name="coverage" value="premium" /><span class="qf-control">Desired Premium</span></label>
                 {COVERAGE.presets.map((c) => <label class="qf-seg__opt"><input type="radio" name="coverage" value={c} /><span class="qf-control">{money(c)}</span></label>)}
-                <label class="qf-seg__opt"><input type="radio" name="coverage" value="other" /><span class="qf-control">Other</span></label>
               </div>
-              <div class="qf-other qf-other--inline" data-qf-adj-other hidden>
-                <label class="qf-label qf-label--small" for="qf-adj-other">Coverage amount ({money(COVERAGE.min)} to {money(COVERAGE.max)})</label>
+              <div class="qf-other qf-other--inline" data-qf-adj-premium hidden>
+                <label class="qf-label qf-label--small" for="qf-adj-premium">Desired Monthly Premium</label>
                 <div class="qf-other__row">
                   <span class="qf-other__dollar" aria-hidden="true">$</span>
-                  <input class="qf-input qf-control" id="qf-adj-other" type="text" inputmode="numeric" autocomplete="off" placeholder="12,000" aria-describedby="qf-adj-other-error" />
+                  <input class="qf-input qf-control" id="qf-adj-premium" type="text" inputmode="decimal" autocomplete="off" placeholder="50" maxlength="8" aria-describedby="qf-adj-premium-error" />
                 </div>
-                <p class="qf-error" id="qf-adj-other-error" data-qf-adj-other-error hidden></p>
+                <p class="qf-error" id="qf-adj-premium-error" data-qf-adj-premium-error hidden></p>
               </div>
             </fieldset>
           </form>
@@ -556,7 +556,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   .qf-seg__opts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
   .qf-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
   @media (max-width: 22rem) { .qf-seg__opts--coverage { grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 48rem) { .qf-seg__opts--coverage { grid-template-columns: repeat(6, 1fr); } }
+  @media (min-width: 48rem) { .qf-seg__opts--coverage { grid-template-columns: 1.6fr repeat(5, 1fr); } }
   .qf-seg__opt { position: relative; }
   .qf-seg__opt input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
   .qf-seg__opt span {

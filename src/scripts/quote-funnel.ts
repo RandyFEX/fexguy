@@ -35,7 +35,9 @@ recordVisit();
 
 type Gender = 'male' | 'female';
 type Quote = { age: number; gender: Gender; tobacco: boolean; coverage: number };
-type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; message?: string; attribution: string[]; carriers?: (Carrier | null)[] };
+// V4.29: the results page can price by a Desired Premium ("50.00") instead of a coverage amount.
+type PriceQuote = { age: number; gender: Gender; tobacco: boolean } & ({ coverage: number; premium?: never } | { premium: string; coverage?: never });
+type Category = { id: string; label: string; status: 'ok' | 'pending' | 'unavailable'; monthlyPremium?: string; coverage?: number; premium?: string; message?: string; attribution: string[]; carriers?: (Carrier | null)[] };
 type Carrier = { carrier: string; plan: string; subtitle?: string; timing?: string; logo?: string | null };
 
 const root = document.querySelector<HTMLElement>('[data-quote-funnel]');
@@ -307,15 +309,24 @@ if (root) {
 
   // Step 7: live prices with free repricing.
   const adjust = $<HTMLFormElement>('[data-qf-adjust]');
-  const adjOther = $('[data-qf-adj-other]');
-  const adjOtherInput = $<HTMLInputElement>('#qf-adj-other');
-  const adjOtherError = $('[data-qf-adj-other-error]');
+  const adjPremium = $('[data-qf-adj-premium]');
+  const adjPremiumInput = $<HTMLInputElement>('#qf-adj-premium');
+  const adjPremiumError = $('[data-qf-adj-premium-error]');
+  /** V4.29: a Desired Monthly Premium as "50.00" ($1 to $9,999.99), or null. */
+  const parsePremium = (raw: string) => {
+    const t = raw.replace(/[$,\s]/g, '');
+    if (!/^\d{1,4}(\.\d{1,2})?$/.test(t)) return null;
+    const n = Number(t);
+    return n >= 1 && n <= 9999.99 ? n.toFixed(2) : null;
+  };
+  /** The coverage a card shows: its own (Desired Premium) or the chosen amount. */
+  const cardCoverage = (cat: Category) => cat.coverage ?? shown?.quote.coverage ?? 0;
   const live = $('[data-qf-live]');
   const applyStatus = $('[data-qf-apply-status]');
   const pricing = steps.get(7)!;
   const cards = new Map(Array.from(root.querySelectorAll<HTMLElement>('[data-qf-card]')).map((el) => [el.dataset.qfCard!, el]));
   const cache = new Map<string, Category[]>();
-  let shown: { quote: Quote; categories: Category[] } | null = null;
+  let shown: { quote: PriceQuote; categories: Category[] } | null = null;
   let timer: number | undefined;
   let seq = 0;
   let firstView = true;
@@ -397,45 +408,54 @@ if (root) {
     setStatus(contactStatus, 'Please confirm your details to see your rates again.', true);
   }
 
-  function fillAdjust(q: Quote) {
+  function fillAdjust(q: PriceQuote) {
     ($('#qf-adj-age') as HTMLSelectElement).value = String(q.age);
     adjust.querySelector<HTMLInputElement>(`input[name="gender"][value="${q.gender}"]`)!.checked = true;
     adjust.querySelector<HTMLInputElement>(`input[name="tobacco"][value="${q.tobacco ? 'yes' : 'no'}"]`)!.checked = true;
-    const preset = adjust.querySelector<HTMLInputElement>(`input[name="coverage"][value="${q.coverage}"]`);
-    if (preset) {
-      preset.checked = true;
-      adjOther.hidden = true;
-    } else {
-      adjust.querySelector<HTMLInputElement>('input[name="coverage"][value="other"]')!.checked = true;
-      adjOther.hidden = false;
-      adjOtherInput.value = q.coverage.toLocaleString('en-US');
+    adjust.querySelectorAll<HTMLInputElement>('input[name="coverage"]').forEach((r) => (r.checked = false));
+    if (q.premium) {
+      adjust.querySelector<HTMLInputElement>('input[name="coverage"][value="premium"]')!.checked = true;
+      adjPremiumInput.value = q.premium.replace(/\.00$/, '');
+      adjPremium.hidden = false;
+      return;
     }
+    // A preset is selected; an amount from the coverage question's Other box selects none.
+    const preset = adjust.querySelector<HTMLInputElement>(`input[name="coverage"][value="${q.coverage}"]`);
+    if (preset) preset.checked = true;
+    adjPremium.hidden = true;
   }
-  function readAdjust(): Quote | null {
+  function readAdjust(): PriceQuote | null {
     const val = (n: string) => adjust.querySelector<HTMLInputElement>(`input[name="${n}"]:checked`)?.value;
     const choice = val('coverage');
-    adjOther.hidden = choice !== 'other';
-    let coverage = Number(choice);
-    if (choice === 'other') {
-      const raw = adjOtherInput.value.trim();
-      const n = parseAmount(raw);
-      adjOtherError.hidden = n !== null || raw === '';
-      adjOtherError.textContent = n === null && raw !== '' ? `Enter a whole-dollar amount from ${money(MIN)} to ${money(MAX)}.` : '';
-      if (n === null) return null;
-      coverage = n;
+    adjPremium.hidden = choice !== 'premium';
+    const base = { age: Number(($('#qf-adj-age') as HTMLSelectElement).value), gender: (val('gender') === 'female' ? 'female' : 'male') as Gender, tobacco: val('tobacco') === 'yes' };
+    if (choice === 'premium') {
+      const raw = adjPremiumInput.value.trim();
+      const premium = parsePremium(raw);
+      adjPremiumError.hidden = premium !== null || raw === '';
+      adjPremiumError.textContent = premium === null && raw !== '' ? 'Enter a monthly amount, such as $50.' : '';
+      adjPremiumInput.setAttribute('aria-invalid', String(premium === null && raw !== ''));
+      return premium === null ? null : { ...base, premium };
     }
-    return { age: Number(($('#qf-adj-age') as HTMLSelectElement).value), gender: val('gender') === 'female' ? 'female' : 'male', tobacco: val('tobacco') === 'yes', coverage };
+    adjPremiumError.hidden = true;
+    adjPremiumInput.removeAttribute('aria-invalid');
+    // No coverage choice selected (an Other amount from the coverage question): keep it.
+    const coverage = choice ? Number(choice) : shown?.quote.coverage ?? answers.coverage;
+    return coverage ? { ...base, coverage } : null;
   }
 
   function textHref(cat: Category): string {
     if (!ON_PHONE) return `/facebook/${location.search}`;
-    const body = prewrittenText({ firstName: visitorName, coverage: shown?.quote.coverage ?? 0, monthlyPremium: cat.monthlyPremium ?? '' });
+    const body = prewrittenText({ firstName: visitorName, coverage: cardCoverage(cat), monthlyPremium: cat.monthlyPremium ?? '' });
     return body ? smsHref(SMS_NUMBER, body, isIOS(navigator)) : '';
   }
   function setCard(el: HTMLElement, cat: Category | null, state: string, note: string) {
     el.dataset.state = state;
+    // V4.29: with a Desired Premium the card shows the coverage it buys, for that premium.
+    const byPremium = state === 'ok' && cat?.premium && cat.coverage;
     el.querySelector<HTMLElement>('[data-qf-amount]')!.textContent =
-      state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
+      byPremium ? money(cat!.coverage!) : state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
+    el.querySelector<HTMLElement>('.qf-card__per')!.textContent = byPremium ? `coverage for $${cat!.premium}/month` : 'per month';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
     setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok', state === 'ok' && cat ? textHref(cat) : '');
     if (state === 'loading') return;
@@ -468,20 +488,20 @@ if (root) {
       }),
     );
   }
-  function render(quote: Quote, categories: Category[]) {
+  function render(quote: PriceQuote, categories: Category[]) {
     shown = { quote, categories };
     for (const cat of categories) {
       const el = cards.get(cat.id);
       if (el) setCard(el, cat, cat.status, cat.status === 'ok' ? '' : cat.message ?? '');
     }
-    const ok = categories.filter((c) => c.status === 'ok').map((c) => `${c.label} $${c.monthlyPremium} per month`);
+    const ok = categories.filter((c) => c.status === 'ok').map((c) => (c.premium && c.coverage ? `${c.label} ${money(c.coverage)} coverage for $${c.premium} per month` : `${c.label} $${c.monthlyPremium} per month`));
     live.textContent = ok.length ? `Prices updated. ${ok.join('. ')}.` : 'Prices updated.';
     if (firstView) {
       firstView = false;
       track('quote_pricing_view');
     }
   }
-  async function reprice(quote: Quote) {
+  async function reprice(quote: PriceQuote) {
     if (expired) return;
     const k = JSON.stringify(quote);
     const hit = cache.get(k);
@@ -508,12 +528,20 @@ if (root) {
       const q = readAdjust();
       if (!q) return;
       track('quote_pricing_adjust');
-      Object.assign(answers, q);
+      // The funnel's own answers keep a coverage amount; a Desired Premium is results-page only.
+      Object.assign(answers, { age: q.age, gender: q.gender, tobacco: q.tobacco }, q.coverage ? { coverage: q.coverage } : {});
       saveSteps();
       void reprice(q);
     }, 200);
   });
-  adjOtherInput.addEventListener('input', () => adjust.dispatchEvent(new Event('change')));
+  adjPremiumInput.addEventListener('input', () => adjust.dispatchEvent(new Event('change')));
+  // Desired Premium: the input opens (and takes focus) at once.
+  adjust.querySelectorAll<HTMLInputElement>('input[name="coverage"]').forEach((r) =>
+    r.addEventListener('change', () => {
+      adjPremium.hidden = r.value !== 'premium';
+      if (r.value === 'premium') adjPremiumInput.focus();
+    }),
+  );
   adjust.addEventListener('submit', (e) => e.preventDefault());
 
   /** Reveal prices in place (no navigation, no reload). */
@@ -546,7 +574,7 @@ if (root) {
     restart.disabled = true;
     void restartQuote();
   });
-  function unlock(quote: Quote, test: boolean, expiresAt?: unknown) {
+  function unlock(quote: PriceQuote, test: boolean, expiresAt?: unknown) {
     if (typeof expiresAt === 'number') accessExpiresAt = expiresAt;
     unlocked = true;
     pricing.dataset.locked = 'false';
@@ -649,7 +677,7 @@ if (root) {
       const first = (cat.carriers ?? []).find(Boolean) as Carrier | undefined;
       const ref = quoteRef();
       const at = new Date().toISOString();
-      track('quote_call_click', { category: id, carrier: first?.carrier, product: first?.plan, coverage: shown.quote.coverage, premium: cat.monthlyPremium, quoteRef: ref, at });
+      track('quote_call_click', { category: id, carrier: first?.carrier, product: first?.plan, coverage: cardCoverage(cat), premium: cat.monthlyPremium, quoteRef: ref, at });
       try {
         void fetch('/api/quote/', { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ action: 'call-click', category: id, quote: shown.quote, quoteRef: ref || undefined }), credentials: 'same-origin', keepalive: true }).catch(() => {});
       } catch {}
@@ -673,7 +701,7 @@ if (root) {
       const attribution = Object.fromEntries(Object.entries(sourceInfo()).filter(([, v]) => typeof v === 'string' && v)) as Record<string, string>;
       const keep = (tier: string, monthlyPremium: string) =>
         saveHandoff({
-          selection: { tierId: id, tier, carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: quote.coverage, monthlyPremium },
+          selection: { tierId: id, tier, carrier: first?.carrier ?? null, plan: first?.plan ?? null, coverage: cardCoverage(cat), monthlyPremium },
           inputs: { age: quote.age, gender: quote.gender, tobacco: quote.tobacco, state: answers.state ?? null },
           attribution,
           ...(accessExpiresAt ? { expiresAt: accessExpiresAt } : {}),
@@ -711,13 +739,13 @@ if (root) {
       const r = await previewSession(preview).catch(() => null);
       if (r?.http === 200 && r.body.status === 'verified' && r.body.quote) {
         visitorName = String(r.body.firstName ?? '');
-        return unlock(r.body.quote as Quote, true, r.body.expiresAt);
+        return unlock(r.body.quote as PriceQuote, true, r.body.expiresAt);
       }
     }
     const { http, body } = await api({ action: 'session' });
     if (http === 200 && body.status === 'verified' && body.quote) {
       visitorName = String(body.firstName ?? '');
-      return unlock(quoteReady() ?? (body.quote as Quote), body.testMode, body.expiresAt);
+      return unlock(quoteReady() ?? (body.quote as PriceQuote), body.testMode, body.expiresAt);
     }
     // Only if the visitor hasn't already answered (an answer given while this
     // check was loading must not send them back to the first question).

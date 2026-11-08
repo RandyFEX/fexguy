@@ -71,7 +71,22 @@ const UNAVAILABLE = {
   age_out_of_range: 'Not available at this age.',
   coverage_out_of_range: 'Not available for this coverage amount.',
   unavailable_in_state: 'Not available in this state.',
+  // V4.29 Desired Premium (the product's existing face-amount limits).
+  premium_too_low: "This premium is below this plan's minimum.",
+  premium_below_minimum: "This premium is below this plan's minimum.",
+  premium_above_maximum: "This premium is above this plan's maximum coverage.",
+  invalid_premium: 'Enter a monthly premium.',
 };
+
+/** V4.29: a Desired Premium is a 2-decimal string of dollars, at least $1 and at most $9,999.99. */
+export const PREMIUM = { min: 1, max: 9999.99 };
+/** @param {unknown} v @returns {string | null} the premium as "50.00", or null */
+export function parsePremium(v) {
+  if (typeof v !== 'string' || !/^\d{1,4}(\.\d{1,2})?$/.test(v)) return null;
+  const n = Number(v);
+  if (!(n >= PREMIUM.min && n <= PREMIUM.max)) return null;
+  return n.toFixed(2);
+}
 
 /** Mean of whole-cent premiums, rounded half up to the cent (exact integers). @param {number[]} cents */
 export function meanCents(cents) {
@@ -82,9 +97,10 @@ export function meanCents(cents) {
 /**
  * Quotes every category for one applicant (Texas reference pricing).
  * @param {{ quote: (i: any) => any }} engine
- * @param {{ age: number, gender: 'male' | 'female', tobacco: boolean, coverage: number }} input
+ * @param {{ age: number, gender: 'male' | 'female', tobacco: boolean, coverage: number } | { age: number, gender: 'male' | 'female', tobacco: boolean, premium: string }} input
  */
 export function priceCategories(engine, input) {
+  if ('premium' in input) return premiumCategories(engine, /** @type {any} */ (input));
   const applicant = { ...input, state: REFERENCE_STATE };
   return CATEGORIES.map((cat) => {
     const averaged = cat.rule === 'average' && cat.products.length >= MIN_AVERAGE_PRODUCTS;
@@ -128,5 +144,35 @@ export function priceCategories(engine, input) {
     }
     const best = ok.reduce((a, b) => (b.monthlyPremiumCents < a.monthlyPremiumCents ? b : a));
     return { ...base, status: 'ok', monthlyPremiumCents: best.monthlyPremiumCents, monthlyPremium: best.monthlyPremium, attribution: [code(best.productId)], carriers: [display(code(best.productId))] };
+  });
+}
+
+/**
+ * V4.29 Desired Premium: for a monthly premium, each category shows the
+ * coverage that premium buys (engine.coverageForPremium: the existing
+ * formula, reversed exactly to the whole dollar). The competitive cards are
+ * ranked by that coverage (most coverage first), the counterpart of ranking
+ * by premium for a fixed coverage. Each result carries `coverage` and the
+ * exact premium for that coverage.
+ * @param {{ coverageForPremium: (i: any) => any }} engine
+ * @param {{ age: number, gender: 'male' | 'female', tobacco: boolean, premium: string }} input
+ */
+export function premiumCategories(engine, input) {
+  const applicant = { age: input.age, gender: input.gender, tobacco: input.tobacco, premium: input.premium, state: REFERENCE_STATE };
+  /** @param {any[]} quotes */
+  const unavailable = (quotes) => {
+    const reason = quotes.find((q) => !q.ok)?.reason;
+    if (reason === 'rates_not_loaded' || reason === 'rates_invalid') return { status: 'unavailable', message: 'Prices are not available right now.' };
+    return { status: 'unavailable', message: UNAVAILABLE[/** @type {keyof typeof UNAVAILABLE} */ (reason)] ?? 'Not available for these choices.' };
+  };
+  /** @param {any} q */
+  const result = (q) => ({ status: 'ok', coverage: q.inputs.coverage, monthlyPremiumCents: q.monthlyPremiumCents, monthlyPremium: q.monthlyPremium, attribution: [code(q.productId)], carriers: [display(code(q.productId))] });
+  return CATEGORIES.map((cat) => {
+    const base = { id: cat.id, label: cat.label, attribution: [], carriers: [], premium: input.premium };
+    if (cat.products.length === 0) return { ...base, status: 'pending', message: 'Rates for this category are being added.' };
+    const quotes = cat.products.map((productId) => engine.coverageForPremium({ ...applicant, productId }));
+    const ok = quotes.filter((q) => q.ok).sort((a, b) => b.inputs.coverage - a.inputs.coverage);
+    const pick = ok[cat.rule === 'ranked' ? cat.rank ?? 0 : 0];
+    return pick ? { ...base, ...result(pick) } : { ...base, ...unavailable(quotes) };
   });
 }

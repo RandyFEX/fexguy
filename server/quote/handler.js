@@ -25,7 +25,7 @@ import { firstNameOf, isFullName } from './name.js';
 import { toE164US } from './phone.js';
 import { sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
-import { allowedOrigin, parseInput } from '../rates/public-pricing.js';
+import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
 import { intakePlan, outcomeOf, publicQuestion } from './intake.js';
 
@@ -230,7 +230,7 @@ export async function handleQuote(request, env, deps) {
       const v = await verifiedLead(request, env, store, now);
       if (!v) return json(401, { status: 'verify-required' });
       const category = CATEGORIES.find((c) => c.id === body.category);
-      const quote = parseInput(body.quote);
+      const quote = parsePricingInput(body.quote);
       if (!category || !quote) return bad();
       const loaded = deps.getEngine ? await deps.getEngine().catch(() => null) : null;
       if (!loaded) return json(503, { status: 'unavailable', message: 'Prices are not available right now.' });
@@ -239,14 +239,14 @@ export async function handleQuote(request, env, deps) {
       if (!priced || priced.status !== 'ok') return json(409, { status: 'unavailable', message: 'This price is not available for these choices.' });
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
-      const application = { at: iso, categoryId: category.id, category: priced.label, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
+      const application = { at: iso, categoryId: category.id, category: priced.label, ...(priced.coverage ? { coverage: priced.coverage } : {}), monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution };
       record.applications = [...(record.applications ?? []), application];
       record.lastQuote = quote;
       await store.putLead(v.leadId, record);
       await store.event(v.leadId, { at: iso, type: 'apply-now', ...application });
       const plan = deps.raw ? await intakePlan(deps.raw, env, priced.attribution[0]) : { mode: 'none', reason: 'no-question-set' };
       const intake = plan.mode === 'questions' ? { mode: 'questions', total: plan.questions.length } : { mode: 'none', reason: plan.reason };
-      return json(200, { status: 'ok', category: priced.label, monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test' || record.mode === 'preview-sample', saved: true, intake });
+      return json(200, { status: 'ok', category: priced.label, ...(priced.coverage ? { coverage: priced.coverage } : {}), monthlyPremium: priced.monthlyPremium, testMode: record.mode === 'test' || record.mode === 'preview-sample', saved: true, intake });
     }
 
     // "Call to Get Approved" tap on a revealed card (v3.7): a first-party
@@ -256,7 +256,7 @@ export async function handleQuote(request, env, deps) {
       const v = await verifiedLead(request, env, store, now);
       if (!v) return json(401, { status: 'verify-required' });
       const category = CATEGORIES.find((c) => c.id === body.category);
-      const quote = parseInput(body.quote);
+      const quote = parsePricingInput(body.quote);
       const ref = typeof body.quoteRef === 'string' && /^[A-Za-z0-9]{12,32}$/.test(body.quoteRef) ? body.quoteRef : null;
       if (!category || !quote) return bad();
       if (await store.limit([{ key: `call:h:${v.leadId}:${Math.floor(now / HOUR)}`, limit: 30, windowMs: HOUR }])) return json(429, { status: 'rate-limited' });
@@ -267,7 +267,7 @@ export async function handleQuote(request, env, deps) {
       const record = await store.getLead(v.leadId);
       if (!record) return json(401, { status: 'verify-required' });
       const shown = priced.carriers?.[0] ?? null;
-      const click = { at: iso, type: 'call-click', categoryId: category.id, category: priced.label, carrier: shown?.carrier ?? null, product: shown?.plan ?? null, coverage: quote.coverage, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution, quoteRef: ref };
+      const click = { at: iso, type: 'call-click', categoryId: category.id, category: priced.label, carrier: shown?.carrier ?? null, product: shown?.plan ?? null, coverage: priced.coverage ?? quote.coverage, monthlyPremium: priced.monthlyPremium, quote, attribution: priced.attribution, quoteRef: ref };
       record.callClicks = [...(record.callClicks ?? []), click].slice(-50);
       await store.putLead(v.leadId, record);
       await store.event(v.leadId, click);
