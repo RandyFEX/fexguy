@@ -73,7 +73,6 @@ const UNAVAILABLE = {
   unavailable_in_state: 'Not available in this state.',
   // V4.29 Desired Premium (the product's existing face-amount limits).
   premium_too_low: "This premium is below this plan's minimum.",
-  premium_below_minimum: "This premium is below this plan's minimum.",
   premium_above_maximum: "This premium is above this plan's maximum coverage.",
   invalid_premium: 'Enter a monthly premium.',
 };
@@ -172,7 +171,12 @@ export function premiumCategories(engine, input) {
     if (cat.products.length === 0) return { ...base, status: 'pending', message: 'Rates for this category are being added.' };
     const quotes = cat.products.map((productId) => engine.coverageForPremium({ ...applicant, productId }));
     const ok = quotes.filter((q) => q.ok).sort((a, b) => b.inputs.coverage - a.inputs.coverage);
-    const pick = ok[cat.rule === 'ranked' ? cat.rank ?? 0 : 0];
-    return pick ? { ...base, ...result(pick) } : { ...base, ...unavailable(quotes) };
+    const rank = cat.rule === 'ranked' ? cat.rank ?? 0 : 0;
+    const pick = ok[rank];
+    if (pick) return { ...base, ...result(pick) };
+    // Over its maximum (Randy): the card names that carrier, with the message only.
+    const over = quotes.filter((q) => !q.ok && q.reason === 'premium_above_maximum')[rank - ok.length];
+    if (over) return { ...base, status: 'unavailable', message: UNAVAILABLE.premium_above_maximum, carriers: [display(code(over.productId))] };
+    return { ...base, ...unavailable(quotes) };
   });
 }

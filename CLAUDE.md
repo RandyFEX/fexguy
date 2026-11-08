@@ -1652,8 +1652,9 @@ Prioritize the shortest reliable path to completing approved changes.
   premium (the engine's own formula and rounding, `coverageForPremium` in
   server/rates/engine.js) is at most that amount, "coverage for $50.00/month"
   (never rounded to presets). The competitive cards rank by that coverage
-  (most first). The products' existing face-amount limits apply; a premium
-  outside them shows a short message, never an amount. Apply and call taps
+  (most first). An amount under a product's minimum is shown as it is (e.g.
+  $1,734; Randy); a premium buying more than its maximum shows only "This
+  premium is above this plan's maximum coverage." in small fine print. Apply and call taps
   are re-priced on the server the same way and record the card's coverage;
   the handoff and the prewritten text carry the card's coverage and its exact
   premium. Choosing a preset returns to ordinary premiums.

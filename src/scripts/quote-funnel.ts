@@ -453,8 +453,11 @@ if (root) {
     el.dataset.state = state;
     // V4.29: with a Desired Premium the card shows the coverage it buys, for that premium.
     const byPremium = state === 'ok' && cat?.premium && cat.coverage;
+    // A Desired Premium past the plan's maximum: its message only, in small fine print (Randy).
+    const fine = state === 'unavailable' && Boolean(cat?.premium);
+    el.toggleAttribute('data-fine', fine);
     el.querySelector<HTMLElement>('[data-qf-amount]')!.textContent =
-      byPremium ? money(cat!.coverage!) : state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
+      fine ? '' : byPremium ? money(cat!.coverage!) : state === 'ok' && cat?.monthlyPremium ? `$${cat.monthlyPremium}` : state === 'pending' ? 'Coming soon' : state === 'loading' ? ' ' : 'Not available';
     el.querySelector<HTMLElement>('.qf-card__per')!.textContent = byPremium ? `coverage for $${cat!.premium}/month` : 'per month';
     el.querySelector<HTMLElement>('[data-qf-note]')!.textContent = note;
     setTextLink(el.querySelector<HTMLElement>('[data-qf-apply]')!, state === 'ok', state === 'ok' && cat ? textHref(cat) : '');

@@ -67,11 +67,14 @@ test('categories: competitive cards ranked by coverage (most first); each carrie
   assert.ok(preset.every((c) => c.coverage === undefined && c.premium === undefined && c.status === 'ok'));
 });
 
-test('premiums too small or too large for a product\'s existing limits show no amount', () => {
-  for (const premium of ['1.00', '3.00']) {
-    const cats = priceCategories(fakeEngine, { age: 65, gender: 'male', tobacco: false, premium });
-    assert.ok(cats.every((c) => c.status === 'unavailable' && !c.coverage && /below/.test(c.message)), premium);
-  }
+test('under a product\'s minimum the amount still shows; over its maximum, a message and no amount', () => {
+  const small = priceCategories(fakeEngine, { age: 65, gender: 'male', tobacco: false, premium: '15.00' });
+  assert.ok(small.every((c) => c.status === 'ok' && c.coverage > 0 && c.coverage < 5000), JSON.stringify(small.map((c) => c.coverage)));
+  // Under the policy fee alone nothing can be bought: no amount.
+  const none = fakeEngine.coverageForPremium({ productId: 'aetna-accendo-preferred', age: 65, gender: 'male', tobacco: false, premium: '3.00', state: 'TX' });
+  assert.equal(none.ok, false);
+  // An ordinary coverage quote keeps the minimum.
+  assert.equal(fakeEngine.quote({ productId: 'aetna-accendo-preferred', age: 65, gender: 'male', tobacco: false, coverage: 3000, state: 'TX' }).reason, 'coverage_out_of_range');
   const big = priceCategories(fakeEngine, { age: 50, gender: 'female', tobacco: false, premium: '9999.00' });
   assert.ok(big.every((c) => c.status === 'unavailable' && !c.coverage && /above/.test(c.message)));
 });

@@ -329,6 +329,21 @@ for (const [label, opts] of [['desktop', { viewport: { width: 1280, height: 900 
     assert((await page.textContent('[data-qf-adj-premium-error]')).trim() === 'Enter a monthly amount, such as $50.', 'error text');
     await page.waitForTimeout(500);
     assert(JSON.stringify(await cards()) === before, 'invalid input changed the cards');
+    // Randy: under a plan's minimum the amount still shows; over its maximum, only small fine print.
+    for (const premium of ['15', '150']) {
+      await page.fill('#qf-adj-premium', premium);
+      const want = expect(`${premium}.00`);
+      await page.waitForFunction((w) => w.every((c) => (c.amount ? document.querySelector(`[data-qf-card="${c.id}"] [data-qf-amount]`)?.textContent.trim() === c.amount : document.querySelector(`[data-qf-card="${c.id}"]`)?.hasAttribute('data-fine'))), want.map((c) => ({ id: c.id, amount: c.status === 'ok' ? `$${c.coverage.toLocaleString('en-US')}` : '' })), { timeout: 8000 });
+      const state = await page.$$eval('[data-qf-card]', (els) => els.map((e) => ({ fine: e.hasAttribute('data-fine'), priceShown: e.querySelector('.qf-card__price').getClientRects().length > 0, note: e.querySelector('[data-qf-note]').textContent.trim(), size: getComputedStyle(e.querySelector('[data-qf-note]')).fontSize })));
+      want.forEach((c, k) => {
+        const s = state[k];
+        if (c.status === 'ok') assert(!s.fine && s.priceShown, `${premium} ${c.id} ${JSON.stringify(s)}`);
+        else assert(s.fine && !s.priceShown && s.note === "This premium is above this plan's maximum coverage." && s.size === '12px', `${premium} ${c.id} ${JSON.stringify(s)}`);
+      });
+      if (premium === '15') assert(want.every((c) => c.status === 'ok' && c.coverage < 5000), `$15 amounts ${want.map((c) => c.coverage)}`);
+      else assert(want.some((c) => c.status !== 'ok'), '$150 has no over-maximum card');
+      if (OUT && premium === '150') await page.screenshot({ path: `${OUT}/v429-${label}-premium-150.png`, fullPage: true });
+    }
     // The server's own record of an Apply tap in premium mode carries the card's coverage.
     await page.fill('#qf-adj-premium', '50');
     await page.waitForFunction(() => /coverage for \$50\.00\/month/.test(document.querySelector('.qf-card__per').textContent));
