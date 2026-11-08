@@ -23,6 +23,12 @@ export const add = (a, b) => {
   return { n: x + y, s };
 };
 
+/** -1, 0 or 1 as a is less than, equal to or greater than b (exact). */
+export const cmp = (a, b) => {
+  const [x, y] = align(a, b);
+  return x < y ? -1 : x > y ? 1 : 0;
+};
+
 export const mul = (a, b) => ({ n: a.n * b.n, s: a.s + b.s });
 
 /** Divide by 10^k exactly (e.g. coverage / 1000 is div10(coverage, 3)). */

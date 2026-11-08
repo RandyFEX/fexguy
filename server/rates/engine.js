@@ -9,7 +9,7 @@
 // A product with no loaded rate table, or an input outside its rules,
 // returns { ok: false, reason } and never an estimated price.
 import { existsSync, readFileSync } from 'node:fs';
-import { dec, add, mul, div10, round, toFixed, toCents } from './decimal.js';
+import { dec, add, mul, div10, round, toFixed, toCents, cmp } from './decimal.js';
 import { PRODUCTS, WORKING_COVERAGE, STATES } from './products.js';
 
 export const PRIVATE_DIR = new URL('./private/', import.meta.url);
@@ -174,11 +174,43 @@ export function createEngine(datasets = {}) {
     };
   }
 
+  /**
+   * V4.29 Desired Premium: the most whole-dollar coverage whose monthly
+   * premium (the same formula and rounding as quote()) is at most the given
+   * monthly premium, then that coverage's ordinary quote. The product's
+   * existing face-amount limits apply as in quote(); nothing is estimated.
+   * input: { productId, age, gender, tobacco, state, premium: '50.00' }
+   */
+  function coverageForPremium(input) {
+    const product = PRODUCTS[input?.productId];
+    if (!product) return fail('unknown_product', `No product "${input?.productId}".`);
+    const state = input.state == null || input.state === '' ? null : String(input.state).toUpperCase();
+    const limits = limitsFor(product, state && STATES.includes(state) ? state : null);
+    // Validates everything but the amount (rates loaded, state, age, gender, tobacco).
+    const probe = quote({ ...input, coverage: limits.min });
+    if (!probe.ok) return probe;
+    let target;
+    try { target = dec(input.premium); } catch { target = null; }
+    if (!target || cmp(target, dec('0')) <= 0) return fail('invalid_premium', 'Enter a monthly premium.', { productId: probe.productId });
+    const parts = { annualRatePer1000: probe.rate.annualRatePer1000, policyFee: product.policyFee, modalFactor: product.modalFactor };
+    const fits = (c) => c > 0 && cmp(monthlyPremium({ ...parts, coverage: c }), target) <= 0;
+    // Start from the floating-point estimate, then settle it with exact arithmetic.
+    const est = ((Number(input.premium) / Number(product.modalFactor) - Number(product.policyFee)) * 1000) / Number(probe.rate.annualRatePer1000);
+    let c = Math.max(0, Math.floor(Number.isFinite(est) ? est : 0));
+    while (c > 0 && !fits(c)) c--;
+    while (fits(c + 1)) c++;
+    const base = { productId: probe.productId, carrier: probe.carrier, product: probe.product, rateClass: probe.rateClass, limits };
+    if (c < 1) return fail('premium_too_low', 'This premium is below this plan\'s minimum.', base);
+    if (c < limits.min) return fail('premium_below_minimum', 'This premium is below this plan\'s minimum.', base);
+    if (c > limits.max) return fail('premium_above_maximum', 'This premium is above this plan\'s maximum coverage.', base);
+    return quote({ ...input, coverage: c });
+  }
+
   /** Quote several products for one applicant; unavailable ones keep their reason. No ranking or tier is assigned here. */
   const quoteMany = (input, productIds = Object.keys(PRODUCTS)) => productIds.map((productId) => quote({ ...input, productId }));
 
   const status = () =>
     Object.fromEntries(Object.keys(PRODUCTS).map((id) => [id, tables[id] ? 'loaded' : loadProblems[id] ? 'invalid' : 'not loaded']));
 
-  return { quote, quoteMany, status, loadProblems };
+  return { quote, quoteMany, coverageForPremium, status, loadProblems };
 }
