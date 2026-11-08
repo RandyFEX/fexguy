@@ -314,8 +314,18 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     assert(cards[0].amount === exp['lowest-preferred'] && cards[1].amount === exp['average-standard'] && cards[2].amount === exp['guaranteed-acceptance'], `premiums ${cards.map((c) => c.amount)} vs ${JSON.stringify(exp)}`);
     assert(cards[2].amount === '$51.06', `Gerber benchmark ${cards[2].amount}`);
     assert(!(await page.$('[data-qf-unlock]')), 'verification panel present');
-    const intro = await page.textContent('[data-qf-adjust-intro]');
+    const intro = await page.textContent('[data-qf-adjust-intro] .qf-adjust-intro__text');
     assert(intro === 'Easily adjust your rates or coverage below', intro);
+    // V4.32: the heading in the countdown's yellow, a down arrow on each side, the coverage buttons directly under it.
+    const v432 = await page.evaluate(() => {
+      const p = document.querySelector('[data-qf-adjust-intro]'), t = p.querySelector('.qf-adjust-intro__text');
+      const arrows = [...p.querySelectorAll('.qf-adjust-arrow')].map((a) => ({ text: a.textContent, hidden: a.getAttribute('aria-hidden'), color: getComputedStyle(a).color, left: a.getBoundingClientRect().left }));
+      const tr = t.getBoundingClientRect(), opts = document.querySelector('.qf-seg__opts--coverage').getBoundingClientRect();
+      return { bg: getComputedStyle(t).backgroundColor, countdownBg: getComputedStyle(document.querySelector('[data-qf-countdown]')).backgroundColor, color: getComputedStyle(t).color, pColor: getComputedStyle(p).color, weight: getComputedStyle(t).fontWeight, size: getComputedStyle(t).fontSize, arrows, textLeft: tr.left, textRight: tr.right, gap: Math.round(opts.top - p.getBoundingClientRect().bottom), first: document.querySelector('.qf-adjust .qf-group').classList.contains('qf-group--coverage'), firstOpt: document.querySelector('.qf-seg__opts--coverage .qf-seg__opt').textContent.trim(), checked: document.querySelector('.qf-adjust input[name="coverage"]:checked')?.value, wider: tr.width < p.getBoundingClientRect().width - 20 };
+    });
+    assert(v432.bg === 'rgb(255, 235, 59)' && v432.bg === v432.countdownBg && v432.color === v432.pColor && v432.color === 'rgb(74, 80, 78)' && v432.weight === '700' && v432.size === '18px' && v432.wider, `heading ${JSON.stringify(v432)}`);
+    assert(v432.arrows.length === 2 && v432.arrows.every((a) => a.text === '\u2193' && a.hidden === 'true' && a.color === v432.color) && v432.arrows[0].left < v432.textLeft && v432.arrows[1].left >= v432.textRight, `arrows ${JSON.stringify(v432.arrows)}`);
+    assert(v432.first && v432.firstOpt === 'Desired Premium' && v432.checked === '10000' && v432.gap >= 0 && v432.gap <= 20, `buttons under the heading ${JSON.stringify(v432)}`);
     const gaps = await page.evaluate(() => { const c = document.querySelector('.qf-cards').getBoundingClientRect(), i = document.querySelector('[data-qf-adjust-intro]'), r = i.getBoundingClientRect(), a = document.querySelector('[data-qf-adjust]').getBoundingClientRect(); return { cards: Math.round(r.top - c.bottom), controls: Math.round(a.top - r.bottom), align: getComputedStyle(i).textAlign }; });
     assert(gaps.cards >= 10 && gaps.cards <= 14 && gaps.controls <= 12 && gaps.align === 'center', `spacing under the cards ${JSON.stringify(gaps)}`);
     const o = await page.evaluate(() => ['.qf-cards', '[data-qf-adjust-intro]', '[data-qf-adjust]', '.qf-ref'].map((sel) => document.querySelector(sel).getBoundingClientRect().top));
@@ -332,9 +342,10 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
       range.selectNodeContents(t);
       const tr = range.getBoundingClientRect();
       const ctl = g.querySelector('select, .qf-seg__opts').getBoundingClientRect();
-      return { label: t.textContent.trim(), off: Math.round(Math.abs(tr.left + tr.width / 2 - (ctl.left + ctl.width / 2))) };
+      return { label: t.textContent.trim(), shown: t.getBoundingClientRect().width > 2, off: Math.round(Math.abs(tr.left + tr.width / 2 - (ctl.left + ctl.width / 2))) };
     }));
-    assert(centers.map((c) => c.label).join('|') === 'Age|Gender|Tobacco or Nicotine|Coverage' && centers.every((c) => c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
+    // V4.32: Coverage first, its legend for screen readers only; the other labels centered over their controls.
+    assert(centers.map((c) => c.label).join('|') === 'Coverage|Age|Gender|Tobacco or Nicotine' && !centers[0].shown && centers.slice(1).every((c) => c.shown && c.off <= 2), `labels not centered ${JSON.stringify(centers)}`);
     assert(o.every((t, i) => i === 0 || t > o[i - 1]), `order ${o}`);
     await shot(page, `v35-${name}-5-revealed.png`);
     await shot(page, `v35-${name}-5-revealed-full.png`, true);
@@ -434,7 +445,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     await page.waitForFunction((b) => document.querySelector('[data-qf-card="average-standard"] [data-qf-amount]')?.textContent === b, exp85['average-standard'], { timeout: 5000 });
     assert((await amount(page, 'lowest-preferred')) === exp85['lowest-preferred'] && exp85['lowest-preferred'].startsWith('$') && exp85['average-standard'].startsWith('$'), `age 85 ${JSON.stringify(exp85)}`);
     const boxes = await page.$$eval('.qf-group', (els) => els.map((e) => { const r = e.getBoundingClientRect(); return { y: Math.round(r.y) }; }));
-    if (name === 'desktop') assert(boxes[0].y === boxes[1].y && boxes[1].y === boxes[2].y && boxes[3].y > boxes[0].y, 'desktop layout');
+    if (name === 'desktop') assert(boxes[1].y === boxes[2].y && boxes[2].y === boxes[3].y && boxes[1].y > boxes[0].y, 'desktop layout');
     else assert(boxes.every((b, i) => i === 0 || b.y > boxes[i - 1].y), 'mobile stack');
     const seg = await page.$$eval('.qf-adjust .qf-seg__opt', (els) => els.map((l) => { const sp = l.querySelector('span'); const cs = getComputedStyle(sp); return { on: l.querySelector('input').checked, bg: cs.backgroundColor, fg: cs.color, border: cs.borderTopColor }; }));
     const CHAR = 'rgb(69, 75, 73)';
