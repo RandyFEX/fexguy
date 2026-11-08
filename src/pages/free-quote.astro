@@ -231,7 +231,7 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
           <p class="qf-adjust-intro" data-qf-adjust-intro hidden><span class="qf-adjust-arrow" aria-hidden="true">&darr;</span> <span class="qf-adjust-intro__wrap"><span class="qf-adjust-intro__text">Easily adjust your rates or coverage below</span></span> <span class="qf-adjust-arrow" aria-hidden="true">&darr;</span></p>
           <form class="qf-adjust" data-qf-adjust aria-label="Change your quote" novalidate hidden>
             <fieldset class="qf-group qf-group--coverage qf-seg">
-              <legend class="qf-group__title">Coverage</legend>
+              <legend class="qf-group__title">Adjust Coverage</legend>
               <div class="qf-seg__opts qf-seg__opts--coverage">
                 <label class="qf-seg__opt"><input type="radio" name="coverage" value="premium" /><span class="qf-control">Desired Premium</span></label>
                 {COVERAGE.presets.map((c) => <label class="qf-seg__opt"><input type="radio" name="coverage" value={c} /><span class="qf-control">{money(c)}</span></label>)}
@@ -505,6 +505,8 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* The adjustment section is neutral gray only (correction v3.7): selected darker gray with white text;
      unselected white with gray text and border. */
   .qf-seg__opt input:checked + span { background: #454b49; color: #fff; border-color: #454b49; }
+  /* V4.33: the selected coverage choice's text in the countdown's yellow (background unchanged). */
+  .qf-seg__opts--coverage .qf-seg__opt input:checked + span { color: #ffeb3b; }
   .qf-seg__opt input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; box-shadow: 0 0 0 2px var(--color-focus-inner); }
   .qf-other--inline { max-width: 18rem; margin: var(--space-3) 0 0; }
 
