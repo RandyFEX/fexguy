@@ -138,7 +138,8 @@ export function createEngine(datasets = {}) {
     if (typeof input.tobacco !== 'boolean') return fail('invalid_tobacco', 'Tobacco must be true or false.', base);
     if (!Number.isInteger(coverage) || coverage <= 0) return fail('invalid_coverage', 'Coverage must be a whole-dollar amount.', base);
     const limits = limitsFor(product, state);
-    if (coverage < limits.min || coverage > limits.max)
+    // V4.29 (Randy): a Desired Premium may buy less than the product's minimum; it is still shown.
+    if ((coverage < limits.min && input.belowMinimumOk !== true) || coverage > limits.max)
       return fail(
         'coverage_out_of_range',
         `Coverage must be $${limits.min.toLocaleString('en-US')} to $${limits.max.toLocaleString('en-US')}.`,
@@ -177,8 +178,9 @@ export function createEngine(datasets = {}) {
   /**
    * V4.29 Desired Premium: the most whole-dollar coverage whose monthly
    * premium (the same formula and rounding as quote()) is at most the given
-   * monthly premium, then that coverage's ordinary quote. The product's
-   * existing face-amount limits apply as in quote(); nothing is estimated.
+   * monthly premium, then that coverage's ordinary quote. Nothing is
+   * estimated. Randy (V4.29): an amount under the product's minimum is
+   * shown as it is; one over its maximum is refused (premium_above_maximum).
    * input: { productId, age, gender, tobacco, state, premium: '50.00' }
    */
   function coverageForPremium(input) {
@@ -201,9 +203,8 @@ export function createEngine(datasets = {}) {
     while (fits(c + 1)) c++;
     const base = { productId: probe.productId, carrier: probe.carrier, product: probe.product, rateClass: probe.rateClass, limits };
     if (c < 1) return fail('premium_too_low', 'This premium is below this plan\'s minimum.', base);
-    if (c < limits.min) return fail('premium_below_minimum', 'This premium is below this plan\'s minimum.', base);
     if (c > limits.max) return fail('premium_above_maximum', 'This premium is above this plan\'s maximum coverage.', base);
-    return quote({ ...input, coverage: c });
+    return quote({ ...input, coverage: c, belowMinimumOk: true });
   }
 
   /** Quote several products for one applicant; unavailable ones keep their reason. No ranking or tier is assigned here. */
