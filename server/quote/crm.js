@@ -102,7 +102,12 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
   };
   let step = 'upsert';
   try {
-    const up = await call('/contacts/upsert', crmContact(record, locationId));
+    // V4.36: coverage_amount and monthly_premium ride on the upsert itself, so
+    // they are on the contact before any workflow runs. If GoHighLevel refuses
+    // them, the upsert is repeated without them (the lead is never lost).
+    const quoteFields = quoteCustomFields(lowest10k);
+    let up = await call('/contacts/upsert', quoteFields ? { ...crmContact(record, locationId), customFields: quoteFields } : crmContact(record, locationId));
+    if (quoteFields && !up.res.ok) up = await call('/contacts/upsert', crmContact(record, locationId));
     const contactId = up.data?.contact?.id;
     if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
     // The rate first (best effort), so the tag's workflow can already use it.
@@ -135,3 +140,19 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
 // {{contact.lowest_10k_rate}}. A failure to save the field never blocks the lead.
 export const RATE_FIELD_KEY = 'lowest_10k_rate';
 export const RATE_FIELD_COVERAGE = 10000;
+
+// V4.36 (Randy, November 2026): the quote's coverage and its lowest monthly
+// premium for the Agent CRM fields {{contact.coverage_amount}} and
+// {{contact.monthly_premium}} (API keys without the "contact." prefix), from
+// the same $10,000 quote as lowest_10k_rate. Plain numbers ("10000",
+// "32.87") so number, monetary and text fields all accept them.
+export const COVERAGE_FIELD_KEY = 'coverage_amount';
+export const PREMIUM_FIELD_KEY = 'monthly_premium';
+/** @param {string | null} lowest10k */
+export function quoteCustomFields(lowest10k) {
+  if (!lowest10k) return null;
+  return [
+    { key: COVERAGE_FIELD_KEY, field_value: String(RATE_FIELD_COVERAGE) },
+    { key: PREMIUM_FIELD_KEY, field_value: lowest10k },
+  ];
+}
