@@ -1685,6 +1685,17 @@ Prioritize the shortest reliable path to completing approved changes.
   **V4.33 (Randy, November 2026):** that legend reads "Adjust Coverage"
   (still screen-reader only); the selected coverage choice's text is the
   countdown's yellow (#ffeb3b) on its unchanged charcoal background.
+  **Immediate rate SMS (Randy, November 2026):** on production, right after
+  SEE MY RATES delivers the lead to Agent CRM, one SMS goes to that same
+  contact through GoHighLevel (POST /conversations/messages, type SMS; the
+  Private Integration token needs conversations/message.write) with the
+  lowest displayed monthly rate for $10,000 (`rateSmsText` in
+  server/quote/crm.js, Randy's approved wording; typos "was"/"put" read
+  "for"/"but"). Only with the recorded consent; once per lead
+  (`store.once`) and once per phone number in 12 hours; never on repricing
+  or previews. A failure is logged on the lead's events (`rate-sms-sent` /
+  `rate-sms-failed`) and never blocks the rates. `QUOTE_RATE_SMS=off`
+  turns it off.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

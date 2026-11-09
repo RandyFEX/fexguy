@@ -114,3 +114,42 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch) 
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
 }
+
+// Immediate rate SMS (Randy, November 2026): one text after SEE MY RATES with
+// the lowest displayed monthly rate for $10,000, sent through the same
+// GoHighLevel location to the contact just created or updated
+// (POST /conversations/messages, type SMS; needs the token's
+// conversations/message.write scope). Randy's approved wording; $XX.XX is the
+// rate.
+export const RATE_SMS_COVERAGE = 10000;
+/** @param {string} premium e.g. "32.87" */
+export const rateSmsText = (premium) =>
+  `Funeral Funds: Your lowest monthly rate shown for $10,000 of life insurance is $${premium}, but lower cost plans do exist.\n\n` +
+  'So keep playing around with my rate quoter for the remainder of your 10 minutes to find something within your budget.\n\n' +
+  "Have questions? Just reply to this text or give me a call. I\u2019ll be happy to help.";
+
+/**
+ * @param {Record<string, string | undefined>} env
+ * @param {string} contactId
+ * @param {string} message
+ * @param {typeof fetch} [fetchImpl]
+ * @returns {Promise<{ ok: boolean, status?: number, messageId?: string, error?: string }>}
+ */
+export async function sendCrmSms(env, contactId, message, fetchImpl = fetch) {
+  const token = env.AGENT_CRM_TOKEN ?? '';
+  if (!token || !contactId) return { ok: false, error: 'not-configured' };
+  try {
+    const res = await fetchImpl(`${API}/conversations/messages`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, version: '2021-04-15', 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify({ type: 'SMS', contactId, message }),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    /** @type {any} */
+    let data = null;
+    try { data = await res.json(); } catch {}
+    return { ok: res.ok, status: res.status, messageId: typeof data?.messageId === 'string' ? data.messageId : undefined };
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.name : 'error' };
+  }
+}

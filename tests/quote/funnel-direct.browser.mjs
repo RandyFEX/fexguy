@@ -215,7 +215,7 @@ await check('SEE MY RATES: validates, then (production) delivers to Agent CRM an
   await page.waitForFunction(() => ['lowest-preferred', 'average-standard', 'guaranteed-acceptance'].every((c) => document.querySelector(`[data-qf-card="${c}"]`)?.dataset.state === 'ok'), null, { timeout: 8000 });
   assert(starts === 1, `${starts} submissions`);
   const crm = srv.crm.calls.slice(before);
-  assert(crm.length === 3 && crm[0].url.endsWith('/contacts/upsert') && crm[0].body.name === 'Dorothy Hale' && crm[0].body.phone === '+12148675312' && /Phone verification: not verified/.test(crm[2].body.body) && /Consent to calls\/texts: Yes, by clicking SEE MY RATES under the disclosure/.test(crm[2].body.body), `CRM ${JSON.stringify(crm).slice(0, 300)}`);
+  assert(crm.length === 4 && crm[3].url.endsWith('/conversations/messages') && crm[3].body.type === 'SMS' && /^Funeral Funds: Your lowest monthly rate shown for \$10,000 of life insurance is \$\d+\.\d\d, but lower cost plans do exist\./.test(crm[3].body.message) && crm[0].url.endsWith('/contacts/upsert') && crm[0].body.name === 'Dorothy Hale' && crm[0].body.phone === '+12148675312' && /Phone verification: not verified/.test(crm[2].body.body) && /Consent to calls\/texts: Yes, by clicking SEE MY RATES under the disclosure/.test(crm[2].body.body), `CRM ${JSON.stringify(crm).slice(0, 300)}`);
   const cardTels = await page.$$eval('[data-qf-call]', (els) => els.map((a) => a.getAttribute('href')));
   assert(cardTels.length === 3 && cardTels.every((h) => h === 'tel:+18886564648'), `card numbers ${cardTels}`);
   const ev = await page.evaluate(() => window.__ev);

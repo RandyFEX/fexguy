@@ -14,6 +14,8 @@ import { COOKIE, sign, sessionKey, verifiedLead, SESSION_MS } from '../../server
 import { toE164US } from '../../server/quote/phone.js';
 import { CONSENT_METHOD, CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 import { handlePriceExplorer } from '../../server/rates/public-pricing.js';
+import { priceCategories } from '../../server/rates/pricing-categories.js';
+import { rateSmsText } from '../../server/quote/crm.js';
 
 let redis;
 before(async () => { redis = await startRedis(); });
@@ -44,12 +46,13 @@ const ORIGIN = 'https://fexguy-test-final-expense-guys-projects.vercel.app';
 let ipCounter = 0;
 
 /** A fake Agent CRM (GoHighLevel) API that records calls; `fail` makes every call fail. */
-function fakeCrm({ fail = false } = {}) {
+function fakeCrm({ fail = false, smsFail = false } = {}) {
   const calls = [];
   const fetchImpl = async (url, init) => {
     const u = String(url);
     calls.push({ url: u, headers: init.headers, body: JSON.parse(init.body) });
     if (fail) return Response.json({ message: 'Unauthorized' }, { status: 401 });
+    if (u.endsWith('/conversations/messages')) return smsFail ? Response.json({ message: 'The token is not authorized for this scope.' }, { status: 401 }) : Response.json({ conversationId: 'cv1', messageId: 'm1' }, { status: 201 });
     if (u.endsWith('/contacts/upsert')) return Response.json({ new: true, contact: { id: 'c123' } });
     return Response.json({ ok: true }, { status: 201 });
   };
@@ -120,7 +123,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.match(start.setCookie, /HttpOnly; Secure; SameSite=Strict/);
   assert.equal((await prodPrice(c)), 200, 'the rates open at once');
   assert.ok(!['masked', 'resendAfterMs', 'temporaryCodeNote'].some((k) => k in start.body), 'nothing about a code');
-  assert.deepEqual(crm.calls.map((x) => x.url), ['https://services.leadconnectorhq.com/contacts/upsert', 'https://services.leadconnectorhq.com/contacts/c123/tags', 'https://services.leadconnectorhq.com/contacts/c123/notes']);
+  assert.deepEqual(crm.calls.map((x) => x.url), ['https://services.leadconnectorhq.com/contacts/upsert', 'https://services.leadconnectorhq.com/contacts/c123/tags', 'https://services.leadconnectorhq.com/contacts/c123/notes', 'https://services.leadconnectorhq.com/conversations/messages']);
   assert.equal(crm.calls[0].headers.authorization, 'Bearer pit-test-token');
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
@@ -136,7 +139,7 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(rec.crm.delivered, true);
   assert.equal(rec.crm.contactId, 'c123');
   assert.equal('verifyNotice' in rec || 'temporaryCodeNotice' in rec, false);
-  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivered', 'lead-accepted']);
+  assert.deepEqual((await c.store.events(start.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivered', 'rate-sms-sent', 'lead-accepted']);
   // Production records stay in the production namespace, never the preview one.
   assert.equal(await quoteStore(redis.store, PREVIEW).getLead(start.body.lead), null);
   // Another visitor gets nothing from this lead.
@@ -176,7 +179,7 @@ test('V3.3: a failed Agent CRM delivery keeps the saved lead, reports no success
     const rec = await c.store.getLead(first.body.lead);
     assert.equal(rec.crm.delivered, true);
     assert.equal(rec.attempts, 2);
-    assert.deepEqual((await c.store.events(first.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivery-failed', 'contact-resubmitted', 'crm-delivered', 'lead-accepted']);
+    assert.deepEqual((await c.store.events(first.body.lead)).map((e) => e.type), ['contact-submitted', 'crm-delivery-failed', 'contact-resubmitted', 'crm-delivered', 'rate-sms-sent', 'lead-accepted']);
     // A delivered lead, or another visit's lead, is never reused: a new lead.
     const again = await c.call(startBody({ retry: first.body.lead }), PO);
     assert.notEqual(again.body.lead, first.body.lead);
@@ -657,4 +660,45 @@ test('V4.16: phones and tablets text from the result cards; computers open /face
   assert.ok(isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 5 }), 'iPad');
   assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0' }));
   assert.ok(!isMobileDevice({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', maxTouchPoints: 0 }));
+});
+
+test('rate SMS: one text to the same contact with the lowest $10,000 rate; never on repricing, retries or a second visit; a failure never blocks the rates', async () => {
+  const crm = fakeCrm();
+  const c = client(PROD, { fetchImpl: crm.fetchImpl });
+  const body = startBody({ quote: { age: 70, gender: 'female', tobacco: false, coverage: 10000 } });
+  const start = await c.call(body, PO);
+  assert.equal(start.http, 200, JSON.stringify(start.body));
+  const sms = crm.calls.filter((x) => x.url.endsWith('/conversations/messages'));
+  assert.equal(sms.length, 1);
+  assert.equal(sms[0].headers.authorization, 'Bearer pit-test-token');
+  assert.equal(sms[0].headers.version, '2021-04-15');
+  const lowest = priceCategories(engine, { age: 70, gender: 'female', tobacco: false, coverage: 10000 }).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
+  assert.deepEqual(sms[0].body, { type: 'SMS', contactId: 'c123', message: rateSmsText(lowest) });
+  assert.equal(sms[0].body.message,
+    `Funeral Funds: Your lowest monthly rate shown for $10,000 of life insurance is $${lowest}, but lower cost plans do exist.\n\n` +
+    'So keep playing around with my rate quoter for the remainder of your 10 minutes to find something within your budget.\n\n' +
+    'Have questions? Just reply to this text or give me a call. I\u2019ll be happy to help.');
+  const ev = await c.store.events(start.body.lead);
+  assert.ok(ev.some((e) => e.type === 'rate-sms-sent' && e.premium === lowest && e.messageId === 'm1'));
+  // Repricing sends nothing.
+  for (const coverage of [5000, 25000]) {
+    const res = await handlePriceExplorer(new Request('https://x.test/api/price-explorer/', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://funeralfunds.com', 'x-real-ip': '10.9.9.8', 'x-quote-visit': c.visit, cookie: c.cookie }, body: JSON.stringify({ age: 70, gender: 'female', tobacco: false, coverage }) }),
+      { ...PROD, HEALTH_SEARCH_SECRET: SECRET }, { store: redis.store, getEngine: async () => ({ engine }), isVerified: async (r) => Boolean(await verifiedLead(r, PROD, c.store)) });
+    assert.equal(res.status, 200);
+  }
+  assert.equal(crm.calls.filter((x) => x.url.endsWith('/conversations/messages')).length, 1, 'repricing sent a text');
+  // The same number on a new visit within 12 hours: the CRM gets the lead, no second text.
+  const again = client(PROD, { fetchImpl: crm.fetchImpl });
+  assert.equal((await again.call({ ...body, firstName: 'Mary Smith' }, PO)).http, 200);
+  assert.equal(crm.calls.filter((x) => x.url.endsWith('/conversations/messages')).length, 1, 'second text to the same number');
+  // A failed text: recorded, rates still open.
+  const bad = fakeCrm({ smsFail: true });
+  const c2 = client(PROD, { fetchImpl: bad.fetchImpl });
+  const s2 = await c2.call(startBody(), PO);
+  assert.equal(s2.http, 200, 'a failed text blocked the rates');
+  assert.ok((await c2.store.events(s2.body.lead)).some((e) => e.type === 'rate-sms-failed' && e.status === 401));
+  // Switched off, or a preview: no text.
+  const off = fakeCrm();
+  assert.equal((await client({ ...PROD, QUOTE_RATE_SMS: 'off' }, { fetchImpl: off.fetchImpl }).call(startBody(), PO)).http, 200);
+  assert.equal(off.calls.filter((x) => x.url.endsWith('/conversations/messages')).length, 0);
 });
