@@ -1695,6 +1695,12 @@ Prioritize the shortest reliable path to completing approved changes.
   {{contact.lowest_10k_rate}} (built and owned in GoHighLevel, not here). A
   failed field save is logged on the crm-delivered event (`rateField`) and
   never blocks the lead or the rates.
+  Under the Mobile Phone Number field (Randy, November 2026): "Funeral Funds
+  will text you an accurate quote for $10,000 so you don’t have to write
+  anything down. You can view other rates by clicking SEE MY RATES." in the
+  disclosure's supporting-text style (#qf-phone-note, in the phone input's
+  aria-describedby); only "an accurate quote" is highlighted (#fff59d, bold
+  #1f2926). The text itself is the GoHighLevel workflow's message.
 
 ## Permanent review links (Randy, November 2026, V2.0)
 

@@ -188,8 +188,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
             </div>
             <div class="qf-field">
               <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
-              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error" />
+              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error qf-phone-note" />
               <p class="qf-error" id="qf-phone-error" hidden></p>
+              <p class="qf-field-note" id="qf-phone-note">Funeral Funds will text you <mark class="qf-field-note__mark">an accurate quote</mark> for $10,000 so you don’t have to write anything down. You can view other rates by clicking SEE MY RATES.</p>
             </div>
             <button class="btn qf-continue qf-btn-cta" type="submit" aria-describedby="qf-disclosure" data-qf-submit>SEE MY RATES</button>
             <!-- V3.8 (Randy, November 2026): no checkbox; clicking the button under this disclosure is the consent. -->
@@ -431,6 +432,9 @@ const jsonLd = ["{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"O
   /* V3.8: the consent disclosure directly under SEE MY RATES: smaller muted gray, still legible. */
   .qf-disclosure { margin: calc(-1 * var(--space-2)) 0 0; font-size: 0.875rem; line-height: 1.4; color: #5b6560; text-align: center; text-wrap: pretty; }
   .qf-disclosure a { color: inherit; font-weight: 700; text-decoration: underline; }
+  /* Rate text note under the phone field (Randy, November 2026): the disclosure's supporting-text style; only "an accurate quote" is highlighted. */
+  .qf-field-note { margin: var(--space-1) 0 0; font-size: 0.875rem; line-height: 1.4; color: #5b6560; }
+  .qf-field-note__mark { padding: 0 0.15em; background: #fff59d; color: #1f2926; font-weight: 700; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
   .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }
   .qf-status { margin: 0; text-align: center; font-weight: 600; min-height: 1.5em; }
