@@ -23,7 +23,7 @@ import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
 import { firstNameOf, isFullName } from './name.js';
 import { toE164US } from './phone.js';
-import { sendLeadToCrm } from './crm.js';
+import { RATE_SMS_COVERAGE, rateSmsText, sendCrmSms, sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
 import { allowedOrigin, parseInput, parsePricingInput } from '../rates/public-pricing.js';
 import { CATEGORIES, priceCategories } from '../rates/pricing-categories.js';
@@ -202,6 +202,24 @@ export async function handleQuote(request, env, deps) {
         await store.putLead(leadId, record);
         if (!delivered)
           return json(502, { status: 'delivery-failed', lead: leadId, message: `We could not send your request just now. Please try again, or call ${FUNNEL_PHONE}.` });
+
+        // Immediate rate SMS (Randy, November 2026): one text to the same CRM
+        // contact with the lowest displayed monthly rate for $10,000. Only with
+        // the visitor's consent; once per lead and once per phone number in 12
+        // hours; never on repricing. A failure is recorded and never blocks the
+        // rates. QUOTE_RATE_SMS=off turns it off.
+        if (env.QUOTE_RATE_SMS !== 'off' && record.consent?.given === true && crm.contactId && loaded) {
+          try {
+            const at10k = priceCategories(loaded.engine, { ...quote, coverage: RATE_SMS_COVERAGE }).filter((c) => c.status === 'ok' && c.monthlyPremium);
+            const lowest = at10k.sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0];
+            if (lowest && (await store.once(leadId, 'rate-sms')) && !(await store.limit([{ key: `sms:rate:${phoneHash}`, limit: 1, windowMs: 12 * HOUR }]))) {
+              const sms = await sendCrmSms(env, crm.contactId, rateSmsText(lowest.monthlyPremium), deps.fetchImpl);
+              await store.event(leadId, { at: iso, type: sms.ok ? 'rate-sms-sent' : 'rate-sms-failed', premium: lowest.monthlyPremium, status: sms.status ?? null, messageId: sms.messageId ?? null, error: sms.error ?? null });
+            }
+          } catch {
+            await store.event(leadId, { at: iso, type: 'rate-sms-failed', error: 'error' }).catch(() => {});
+          }
+        }
       }
 
       const sid = newSid();
