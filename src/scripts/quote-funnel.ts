@@ -562,7 +562,7 @@ if (root) {
     adjust.hidden = false;
     adjustIntro.hidden = false;
     refNote.hidden = false;
-    resultsTitle.textContent = 'Call Funeral Funds To Shop For Even Lower Rates';
+    resultsTitle.textContent = 'We guarantee you qualify for at least one of these rates.';
     resultsTitle.classList.remove('visually-hidden');
     resultsLead.hidden = false;
     stopCountdown?.();
