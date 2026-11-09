@@ -15,7 +15,7 @@ import { toE164US } from '../../server/quote/phone.js';
 import { CONSENT_METHOD, CONSENT_TEXT, CONSENT_VERSION } from '../../server/quote/consent.js';
 import { handlePriceExplorer } from '../../server/rates/public-pricing.js';
 import { priceCategories } from '../../server/rates/pricing-categories.js';
-import { RATE_FIELD_KEY } from '../../server/quote/crm.js';
+import { RATE_FIELD_KEY, COVERAGE_FIELD_KEY, PREMIUM_FIELD_KEY } from '../../server/quote/crm.js';
 
 let redis;
 before(async () => { redis = await startRedis(); });
@@ -127,7 +127,8 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(crm.calls[0].headers.authorization, 'Bearer pit-test-token');
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
-  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote' });
+  const lowest10k = priceCategories(engine, { ...rec.quoteAtSubmission, coverage: 10000 }).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote', customFields: [{ key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
   assert.deepEqual(crm.calls[2].body, { tags: ['Funeral Funds - Website Quote'] });
   const note = crm.calls[3].body.body;
   for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Full name: Mary Ann Smith', 'Consent to calls/texts: Yes, by clicking SEE MY RATES under the disclosure', `Consent text: ${CONSENT_TEXT}`, `(${rec.consent.at}, ${CONSENT_VERSION})`, 'Phone verification: not verified (no SMS verification)'])
@@ -682,4 +683,40 @@ test('rate text by GoHighLevel: the lowest $10,000 rate is saved on the contact 
   const s2 = await c2.call(startBody(), PO);
   assert.equal(s2.http, 200, 'a failed field save blocked the rates');
   assert.equal((await c2.store.events(s2.body.lead)).find((e) => e.type === 'crm-delivered').rateField, 422);
+});
+
+test('V4.36: coverage_amount ($10,000) and monthly_premium (lowest $10,000 rate) go on the contact upsert; a refused upsert is repeated without them, once', async () => {
+  assert.equal(COVERAGE_FIELD_KEY, 'coverage_amount');
+  assert.equal(PREMIUM_FIELD_KEY, 'monthly_premium');
+  const quote = { age: 67, gender: 'male', tobacco: true, coverage: 10000 };
+  const lowest = priceCategories(engine, quote).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
+  const crm = fakeCrm();
+  const c = client(PROD, { fetchImpl: crm.fetchImpl });
+  const start = await c.call(startBody({ quote }), PO);
+  assert.equal(start.http, 200, JSON.stringify(start.body));
+  const ups = crm.calls.filter((x) => x.url.endsWith('/contacts/upsert'));
+  assert.equal(ups.length, 1, 'one upsert');
+  assert.deepEqual(ups[0].body.customFields, [{ key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest }]);
+  // Same quote as lowest_10k_rate.
+  assert.equal(crm.calls.find((x) => x.headers && x.body.customFields && !x.url.endsWith('/upsert')).body.customFields[0].field_value, lowest);
+  // The rest of the lead is unchanged: one tag call and one note.
+  assert.equal(crm.calls.filter((x) => x.url.endsWith('/tags')).length, 1);
+  assert.equal(crm.calls.filter((x) => x.url.endsWith('/notes')).length, 1);
+  // GoHighLevel refuses the custom fields: the upsert is repeated once without them and the lead still goes through.
+  const calls = [];
+  let first = true;
+  const picky = async (url, init) => {
+    const u = String(url); const body = JSON.parse(init.body); calls.push({ u, body });
+    if (u.endsWith('/contacts/upsert')) {
+      if (body.customFields && first) { first = false; return Response.json({ message: 'customFields invalid' }, { status: 422 }); }
+      return Response.json({ new: false, contact: { id: 'c9' } });
+    }
+    return Response.json({ ok: true }, { status: 201 });
+  };
+  const c2 = client(PROD, { fetchImpl: picky });
+  const s2 = await c2.call(startBody({ quote }), PO);
+  assert.equal(s2.http, 200, 'a refused field blocked the lead');
+  const ups2 = calls.filter((x) => x.u.endsWith('/contacts/upsert'));
+  assert.equal(ups2.length, 2);
+  assert.ok(ups2[0].body.customFields && !ups2[1].body.customFields);
 });

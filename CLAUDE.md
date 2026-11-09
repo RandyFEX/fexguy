@@ -1695,6 +1695,12 @@ Prioritize the shortest reliable path to completing approved changes.
   {{contact.lowest_10k_rate}} (built and owned in GoHighLevel, not here). A
   failed field save is logged on the crm-delivered event (`rateField`) and
   never blocks the lead or the rates.
+  V4.36 (Randy, November 2026): the contact upsert itself also carries the
+  custom fields `coverage_amount` ("10000") and `monthly_premium` (the same
+  lowest $10,000 rate, e.g. "32.87") for Agent CRM's {{contact.coverage_amount}}
+  and {{contact.monthly_premium}} (Welcome & Call SMS workflow), so they are
+  on the contact before any workflow runs; if GoHighLevel refuses them, the
+  upsert is repeated once without them.
   Under the Mobile Phone Number field (Randy, November 2026): "We’ll text
   your rate for $10,000. Adjust that rate by clicking SEE MY RATES." in the
   disclosure's supporting-text style (#qf-phone-note, in the phone input's
