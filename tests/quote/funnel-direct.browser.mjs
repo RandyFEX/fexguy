@@ -102,7 +102,7 @@ function common(l) {
   assert(l.heading === 'Your Contact Information', `heading ${l.heading}`);
   assert(l.name === 'Randy VanderVaate' && l.role === 'Independent Life Insurance Broker' && l.intro === 'Funeral Funds isn’t a call center. When you call, you’ll deal directly with Randy. As a senior himself, Randy understands what matters most to people planning for their families. You’ll have the same agent helping you with your policy for life.' && l.tagline === '5-Star Service + Affordable Rates.' && l.photo.w >= 85, `identification ${JSON.stringify([l.name, l.role, l.intro])}`);
   assert(l.photoSrc === '/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png' && l.photoLoaded, 'photo');
-  assert(l.labels.join('|') === 'Full Name|Mobile Phone Number' && l.btn === 'SEE MY RATES' && !l.email && !l.sms, `form ${JSON.stringify([l.labels, l.btn, l.email, l.sms])}`);
+  assert(l.labels.join('|') === 'Your Name|Mobile Phone Number' && l.btn === 'SEE MY RATES' && !l.email && !l.sms, `form ${JSON.stringify([l.labels, l.btn, l.email, l.sms])}`);
   assert(l.consentText === CONSENT && l.privacy === '/privacy-policy/' && l.privacyTarget === '_blank' && l.checkboxes === 0 && l.afterButton && l.described && l.fontPx >= 13 && l.fontPx < l.buttonFontPx && l.discColor === 'rgb(91, 101, 96)' && l.disclosure.top >= l.button.bottom && l.disclosure.top - l.button.bottom <= 12, `disclosure ${JSON.stringify([l.consentText, l.privacy, l.checkboxes, l.afterButton, l.fontPx, l.discColor, l.disclosure, l.button])}`);
   assert(l.whyTitle === 'Why Choose Funeral Funds' && JSON.stringify(l.why) === JSON.stringify(WHY) && l.checks, `trust list ${JSON.stringify(l.why)}`);
   assert(l.tel === 'tel:+18886564648' && l.telText === '888-656-4648' && l.telTarget >= 44, `direct contact ${l.tel} ${l.telText} ${l.telTarget}px`);
@@ -131,7 +131,7 @@ for (const [label, opts] of [['desktop 1280px', { viewport: { width: 1280, heigh
 }
 
 for (const [label, dev] of [['iPhone 13', devices['iPhone 13']], ['Pixel 7 (Android)', devices['Pixel 7']], ['320px', { viewport: { width: 320, height: 700 }, isMobile: true, hasTouch: true }]]) {
-  await check(`${label}: one column: Back/progress, Randy, Why Funeral Funds?, Your Contact Information, summary, Full Name, phone, SEE MY RATES, disclosure, promise; no horizontal scroll`, async () => {
+  await check(`${label}: one column: Back/progress, Randy, Why Funeral Funds?, Your Contact Information, summary, Your Name, phone, SEE MY RATES, disclosure, promise; no horizontal scroll`, async () => {
     const { ctx, page } = await open(dev);
     const l = await layout(page);
     common(l);
@@ -178,11 +178,11 @@ await check('V3.8 consent: no checkbox; the disclosure sits directly under SEE M
   assert(new URL(pp.url()).pathname === '/privacy-policy/' && /Privacy Policy/i.test(await pp.textContent('h1')) && /online quote tool/.test(ppText) && /does not use Formspark or Cloudflare Turnstile/.test(ppText) && /ff_qs/.test(ppText), `privacy page ${pp.url()}`);
   await pp.close();
   assert(starts === 0, 'the link submitted the form');
-  // A single word is not a full name (nothing sent).
-  await page.fill('#qf-first', 'Ruth');
+  // V1.1: an empty name is refused (nothing sent).
+  await page.fill('#qf-first', '');
   await page.fill('#qf-phone', '214-867-5315');
   await page.click('[data-qf-submit]');
-  assert((await page.textContent('#qf-first-error')).trim() === 'Please enter your full name (first and last name).' && starts === 0, 'full name validation');
+  assert((await page.textContent('#qf-first-error')).trim() === 'Please enter your name.' && starts === 0, 'name validation');
   await page.fill('#qf-first', 'Ruth Ann Baker-Smith Jr.');
   await page.click('[data-qf-submit]');
   await page.waitForFunction(() => document.querySelector('[data-qf-card="average-standard"]')?.dataset.state === 'ok', null, { timeout: 8000 });
@@ -201,7 +201,7 @@ await check('SEE MY RATES: validates, then (production) delivers to Agent CRM an
   // Validation: empty fields stay on the page with their errors (nothing sent).
   const before = srv.crm.calls.length;
   await page.click('[data-qf-submit]');
-  assert((await page.textContent('#qf-first-error')).trim() === 'Please enter your full name (first and last name).' && (await page.evaluate(() => document.activeElement?.id)) === 'qf-first', 'name validation');
+  assert((await page.textContent('#qf-first-error')).trim() === 'Please enter your name.' && (await page.evaluate(() => document.activeElement?.id)) === 'qf-first', 'name validation');
   await page.fill('#qf-first', 'Dorothy Hale');
   await page.fill('#qf-phone', '214-555-0123');
   await page.click('[data-qf-submit]');

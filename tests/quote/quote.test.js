@@ -532,19 +532,19 @@ test('Call to Get Approved tap (v3.7): verified session only, server price and o
   assert.equal((await c.call({ action: 'call-click', category: 'nope', quote })).http, 400);
 });
 
-test('V3.7 Full Name: a meaningful full name (multiple words, hyphens, apostrophes, suffixes) is accepted and stored as typed; a single word or junk is refused', async () => {
-  for (const name of ['Mary Smith', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil', 'John Smith Jr.', 'Robert King III', 'José Álvarez', 'Smith, John']) {
+test('V1.1 Your Name: a first name alone or a full name (hyphens, apostrophes, suffixes) is accepted and stored as typed; empty or junk is refused', async () => {
+  for (const name of ['Randy', 'Randy VanderVaate', 'J. R.', 'Mary Smith', 'Mary Ann Smith', "Mary-Jo O'Neil Smith", 'Pat O\u2019Neil', 'John Smith Jr.', 'Robert King III', 'José Álvarez', 'Smith, John']) {
     const c = client(PREVIEW);
     const r = await c.call(startBody({ firstName: name }));
     assert.equal(r.http, 200, name);
     assert.equal((await c.store.getLead(r.body.lead)).firstName, name);
   }
   assert.equal((await client(PREVIEW).call(startBody({ firstName: `Mary ${'x'.repeat(61)}` }))).http, 200, 'over-long names are trimmed, not refused');
-  for (const bad of ['', 'Mary', 'J. R.', 'A B', 'Mary 2', '<b>Mary</b> Smith', 'x'.repeat(61)]) {
+  for (const bad of ['', '   ', 'Mary 2', '2',  '<b>Mary</b> Smith']) {
     const refused = await client(PREVIEW).call(startBody({ firstName: bad }));
     assert.equal(refused.http, 400, bad);
     assert.equal(refused.body.field, 'name', 'the page reopens the name field');
-    assert.equal(refused.body.message, 'Please enter your full name (first and last name).');
+    assert.equal(refused.body.message, 'Please enter your name.');
   }
   const badPhone = await client(PREVIEW).call(startBody({ phone: '214-555-0123' }));
   assert.equal(badPhone.body.field, 'phone', 'the page reopens the phone field');
@@ -740,4 +740,16 @@ test('V4.42: /get-rates/ leads get the Facebook source and tag; /free-quote/ and
     assert.ok(crm.calls[3].body.body.includes(`Quote page: ${page}`));
     assert.equal((await c.store.getLead(start.body.lead)).funnel, funnel === 'get-rates' ? 'get-rates' : 'free-quote');
   }
+});
+
+test('V1.1: a first name alone reaches Agent CRM as name and first name, with no last name invented', async () => {
+  const crm = fakeCrm();
+  const c = client(PROD, { fetchImpl: crm.fetchImpl });
+  const start = await c.call(startBody({ firstName: 'Randy' }), PO);
+  assert.equal(start.http, 200, JSON.stringify(start.body));
+  const up = crm.calls[0].body;
+  assert.equal(up.name, 'Randy');
+  assert.equal(up.firstName, 'Randy');
+  assert.ok(!('lastName' in up), 'no last name sent');
+  assert.deepEqual(crm.calls.map((x) => x.url.replace('https://services.leadconnectorhq.com', '')), ['/contacts/upsert', '/contacts/c123', '/contacts/c123/tags', '/contacts/c123/notes']);
 });
