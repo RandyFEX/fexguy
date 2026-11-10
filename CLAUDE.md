@@ -1712,6 +1712,22 @@ Prioritize the shortest reliable path to completing approved changes.
   disclosure's supporting-text style (#qf-phone-note, in the phone input's
   aria-describedby). The text itself is the GoHighLevel workflow's message.
 
+- **/get-rates/ (Randy, November 2026, V4.42):** the Facebook advertising
+  quote page: the same funnel as /free-quote/ (both pages render
+  src/components/quote/QuoteFunnelPage.astro; one quote engine), noindex,
+  out of the sitemap, llms.txt and site search, not linked from the site,
+  not blocked in robots.txt. The page's `data-funnel` id is sent with SEE MY
+  RATES and validated server-side (`parseFunnel` in server/quote/handler.js;
+  anything but "get-rates" is the website funnel, stored as `funnel` on the
+  lead). /get-rates/ leads reach Agent CRM with source "Funeral Funds
+  Facebook Quote" and only the tag "funeral funds - facebook quote"
+  (`FACEBOOK_CRM_TAG`, server/quote/crm.js); /free-quote/ keeps "Funeral
+  Funds Website Quote" and "Funeral Funds - Website Quote". The CRM note
+  shows "Quote page: /get-rates/" or "/free-quote/". Upsert, custom fields,
+  fallback and the fields-before-tag order are unchanged; GA4 tells the two
+  pages apart by page path (no new events). Start New Quote stays on the
+  page it was used on.
+
 ## Permanent review links (Randy, November 2026, V2.0)
 
 - Fixed Preview address (Vercel branch alias of the `review` branch; Vercel

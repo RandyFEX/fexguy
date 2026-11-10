@@ -71,6 +71,11 @@ const clientIp = (request) =>
 const clean = (s, max) => (typeof s === 'string' ? s.replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, max) : '');
 
 /** @param {any} src */
+/** V4.42: the quote page the lead came from: 'get-rates' (Facebook ads) or 'free-quote' (website). @param {unknown} v */
+export function parseFunnel(v) {
+  return v === 'get-rates' ? 'get-rates' : 'free-quote';
+}
+
 function parseSource(src) {
   /** @type {Record<string, string>} */
   const out = {};
@@ -170,6 +175,8 @@ export async function handleQuote(request, env, deps) {
         verification: { status: 'not-required', phoneVerified: false, provider: 'none', verifiedAt: null },
         quoteAtSubmission: quote,
         source: parseSource(body.source),
+        // V4.42: which quote page (validated; anything else is the website funnel).
+        funnel: parseFunnel(body.funnel),
         client: { ip: clientIp(request), userAgent: clean(request.headers.get('user-agent'), 400) },
       };
       // A retry after a failed delivery: the same lead, from the same visit, not yet delivered.

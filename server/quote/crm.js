@@ -16,6 +16,18 @@
 // token is never logged, returned or sent to the browser.
 
 export const CRM_TAG = 'Funeral Funds - Website Quote';
+// V4.42 (Randy, November 2026): leads from /get-rates/ (Facebook ads) get
+// their own source and tag, for a separate Agent CRM workflow; /free-quote/
+// keeps the website values. One tag per lead, never both.
+export const FACEBOOK_CRM_TAG = 'funeral funds - facebook quote';
+export const CRM_SOURCE = 'Funeral Funds Website Quote';
+export const FACEBOOK_CRM_SOURCE = 'Funeral Funds Facebook Quote';
+/** @param {any} record */
+const isFacebookFunnel = (record) => record?.funnel === 'get-rates';
+/** @param {any} record */
+export const crmTag = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_TAG : CRM_TAG);
+/** @param {any} record */
+export const crmSource = (record) => (isFacebookFunnel(record) ? FACEBOOK_CRM_SOURCE : CRM_SOURCE);
 const API = 'https://services.leadconnectorhq.com';
 const TIMEOUT_MS = 5000;
 
@@ -34,7 +46,7 @@ export function crmContact(record, locationId) {
   // the rest (last name with any suffix, e.g. "Smith Jr.").
   const full = String(record.firstName ?? '').trim().replace(/\s+/g, ' ');
   const [first, ...rest] = full.split(' ');
-  return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: 'Funeral Funds Website Quote' });
+  return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: crmSource(record) });
 }
 
 /**
@@ -50,6 +62,7 @@ export function crmNote(record, rates = []) {
   const lines = [
     /^\s*test\b/i.test(record.firstName ?? '') ? 'TEST LEAD (not a real customer)' : null,
     'Funeral Funds website quote',
+    `Quote page: /${isFacebookFunnel(record) ? 'get-rates' : 'free-quote'}/`,
     `Lead ID: ${record.leadId}`,
     `Submitted: ${record.submittedAt}`,
     q.coverage ? `Coverage requested: ${money(q.coverage)}` : null,
@@ -128,7 +141,7 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
       }
     }
     step = 'tags';
-    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [CRM_TAG] });
+    const tag = await call(`/contacts/${encodeURIComponent(contactId)}/tags`, { tags: [crmTag(record)] });
     step = 'note';
     const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: crmNote(record, rates) });
     const ok = tag.res.ok && note.res.ok;

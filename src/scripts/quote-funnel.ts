@@ -240,6 +240,8 @@ if (root) {
     const { http, body } = await api({
       action: 'start', firstName, phone: phoneInput.value.trim(), state: answers.state, quote,
       consentVersion: root!.dataset.consentVersion,
+      // V4.42: which quote page this is (/free-quote/ or /get-rates/); the server validates it.
+      funnel: root!.dataset.funnel,
       source: sourceInfo(), ...(retryLead ? { retry: retryLead } : {}),
     });
     submitting = false;

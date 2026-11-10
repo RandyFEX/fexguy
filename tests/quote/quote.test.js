@@ -721,3 +721,23 @@ test('V4.36: coverage_amount ($10,000) and monthly_premium (lowest $10,000 rate)
   assert.equal(ups2.length, 2);
   assert.ok(ups2[0].body.customFields && !ups2[1].body.customFields);
 });
+
+test('V4.42: /get-rates/ leads get the Facebook source and tag; /free-quote/ and unknown pages keep the website values; one tag only', async () => {
+  for (const [funnel, source, tag, page] of [
+    ['get-rates', 'Funeral Funds Facebook Quote', 'funeral funds - facebook quote', '/get-rates/'],
+    ['free-quote', 'Funeral Funds Website Quote', 'Funeral Funds - Website Quote', '/free-quote/'],
+    ['something-else', 'Funeral Funds Website Quote', 'Funeral Funds - Website Quote', '/free-quote/'],
+  ]) {
+    const crm = fakeCrm();
+    const c = client(PROD, { fetchImpl: crm.fetchImpl });
+    const start = await c.call(startBody({ funnel }), PO);
+    assert.equal(start.http, 200, JSON.stringify(start.body));
+    const urls = crm.calls.map((x) => x.url.replace('https://services.leadconnectorhq.com', ''));
+    assert.deepEqual(urls, ['/contacts/upsert', '/contacts/c123', '/contacts/c123/tags', '/contacts/c123/notes'], 'contact and fields before the tag');
+    assert.equal(crm.calls[0].body.source, source);
+    assert.equal(crm.calls[0].body.customFields.length, 4, 'age, gender, coverage and premium kept');
+    assert.deepEqual(crm.calls[2].body, { tags: [tag] });
+    assert.ok(crm.calls[3].body.body.includes(`Quote page: ${page}`));
+    assert.equal((await c.store.getLead(start.body.lead)).funnel, funnel === 'get-rates' ? 'get-rates' : 'free-quote');
+  }
+});
