@@ -211,7 +211,7 @@ for (const [name, opts] of [['mobile', devices['iPhone 13']], ['desktop', { view
     const cta = await page.$eval('[data-qf-contact] button[type="submit"]', (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color]);
     assert(cta[0] === HOME_ORANGE && cta[0] === ORANGE && cta[1] === 'rgb(255, 255, 255)', `contact button colors ${cta} vs homepage ${HOME_ORANGE}`);
     const inputs = await page.$$eval('[data-qf-contact] input:not([type="checkbox"]):not([type="hidden"])', (els) => els.map((e) => [e.id, document.querySelector(`label[for="${e.id}"]`)?.textContent.trim(), e.type]));
-    assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'Full Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
+    assert(JSON.stringify(inputs) === JSON.stringify([['qf-first', 'Your Name', 'text'], ['qf-phone', 'Mobile Phone Number', 'tel']]), `contact inputs ${JSON.stringify(inputs)}`);
     assert(!(await page.$('[data-step="6"] input[type="email"], [data-step="6"] [name*="mail" i]')), 'an email field is on the contact screen');
     const sel = '[data-qf-contact] button[type="submit"]';
     const colors = async () => page.$eval(sel, (b) => [getComputedStyle(b).backgroundColor, getComputedStyle(b).color, getComputedStyle(b).filter]);
@@ -677,7 +677,7 @@ await check('SEE MY RATES works with autofill punctuation (390px and 1440px), re
     await ctx.close();
   }
   // If the server still refuses the number or the name, the contact step stays with every answer kept.
-  for (const [field, msg, name, phone] of [['phone', 'Please enter a valid 10-digit US mobile number.', 'Sms Test', '214-837-9303'], ['name', 'Please enter your full name (first and last name).', 'Pat O’Neil', '214-837-9305']]) {
+  for (const [field, msg, name, phone] of [['phone', 'Please enter a valid 10-digit US mobile number.', 'Sms Test', '214-837-9303'], ['name', 'Please enter your name.', 'Pat O’Neil', '214-837-9305']]) {
     const c3 = await browser.newContext({ ...devices['iPhone 13'], extraHTTPHeaders: { 'x-real-ip': `203.0.113.${ip++}` } });
     const p3 = await c3.newPage();
     let refuse = true;

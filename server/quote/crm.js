@@ -43,7 +43,8 @@ export function leadSource(record) {
 /** Contact fields for the upsert. @param {any} record @param {string} locationId */
 export function crmContact(record, locationId) {
   // V3.7: the visitor's full name as typed (`name`), split into first name and
-  // the rest (last name with any suffix, e.g. "Smith Jr.").
+  // the rest (last name with any suffix, e.g. "Smith Jr."). A first name alone
+  // (V1.1) sends no last name (empty values are never sent).
   const full = String(record.firstName ?? '').trim().replace(/\s+/g, ' ');
   const [first, ...rest] = full.split(' ');
   return compact({ locationId, name: full, firstName: first, lastName: rest.join(' '), phone: record.phone, state: record.state, source: crmSource(record) });

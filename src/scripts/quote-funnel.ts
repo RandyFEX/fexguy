@@ -21,7 +21,7 @@ import { saveHandoff } from '@/scripts/quote-handoff';
 import { offerExpiresAt, restartQuote, runCountdown } from '@/scripts/quote-offer';
 import { previewRequest, previewSession, startPreviewVisit } from '@/scripts/quote-preview';
 import { toE164US } from '../../server/quote/phone.js';
-import { isFullName } from '../../server/quote/name.js';
+import { isValidName } from '../../server/quote/name.js';
 import { SMS_NUMBER } from '@/config/phones';
 import { isIOS, isMobileDevice, prewrittenText, smsHref } from '@/scripts/sms-link.js';
 
@@ -226,8 +226,8 @@ if (root) {
     e.preventDefault();
     if (submitting) return;
     const firstName = firstInput.value.trim().replace(/\s+/g, ' ');
-    const nameOk = isFullName(firstName);
-    fieldError(firstInput, nameOk ? '' : 'Please enter your full name (first and last name).');
+    const nameOk = isValidName(firstName);
+    fieldError(firstInput, nameOk ? '' : 'Please enter your name.');
     fieldError(phoneInput, phoneOk(phoneInput.value) ? '' : 'Please enter a 10-digit US mobile number.');
     if (!nameOk) return firstInput.focus();
     if (!phoneOk(phoneInput.value)) return phoneInput.focus();
@@ -251,7 +251,7 @@ if (root) {
       if (body.field === 'phone' || body.field === 'name') {
         const input = body.field === 'phone' ? phoneInput : firstInput;
         setStatus(contactStatus, '');
-        fieldError(input, body.message ?? (body.field === 'phone' ? 'Please enter a 10-digit US mobile number.' : 'Please enter your full name (first and last name).'));
+        fieldError(input, body.message ?? (body.field === 'phone' ? 'Please enter a 10-digit US mobile number.' : 'Please enter your name.'));
         return input.focus();
       }
       if (typeof body.lead === 'string') retryLead = body.lead;

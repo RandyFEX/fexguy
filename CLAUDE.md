@@ -1712,6 +1712,13 @@ Prioritize the shortest reliable path to completing approved changes.
   disclosure's supporting-text style (#qf-phone-note, in the phone input's
   aria-describedby). The text itself is the GoHighLevel workflow's message.
 
+- **Your Name (Randy, November 2026, V1.1; replaces the V3.7 Full Name
+  rule):** the contact step's name field reads "Your Name", stays required
+  and accepts any nonempty name, a first name alone ("Randy") or a full name
+  (`isValidName` in server/quote/name.js, shared by the page and the server;
+  letters first, real-name punctuation, up to 60 characters; no second word).
+  The error reads "Please enter your name." A first name alone reaches Agent
+  CRM as `name` and `firstName` with no last name.
 - **/get-rates/ (Randy, November 2026, V4.42):** the Facebook advertising
   quote page: the same funnel as /free-quote/ (both pages render
   src/components/quote/QuoteFunnelPage.astro; one quote engine), noindex,

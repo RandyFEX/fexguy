@@ -21,7 +21,7 @@
 
 import { createHmac, randomUUID } from 'node:crypto';
 import { CONSENT_METHOD, CONSENT_VERSION, CONSENT_VERSIONS } from './consent.js';
-import { firstNameOf, isFullName } from './name.js';
+import { firstNameOf, isValidName } from './name.js';
 import { toE164US } from './phone.js';
 import { RATE_FIELD_COVERAGE, sendLeadToCrm } from './crm.js';
 import { SESSION_MS, clearCookie, newSid, readCookie, sessionKey, setCookie, sign, unsign, verifiedLead, visitHash, visitOf } from './session.js';
@@ -128,12 +128,12 @@ export async function handleQuote(request, env, deps) {
     // conversion); the visitor's retry sends `retry` (that lead's id) and
     // re-delivers the same lead instead of creating a duplicate.
     case 'start': {
-      // V3.7: one Full Name field (server/quote/name.js), stored as typed in `firstName`.
+      // V3.7: one name field ("Your Name" since V1.1; server/quote/name.js), stored as typed in `firstName`.
       const firstName = clean(body.firstName, 60).replace(/\s+/g, ' ');
       const phone = toE164US(body.phone);
       const state = typeof body.state === 'string' && US_STATES.includes(body.state) ? body.state : null;
       const quote = parseInput(body.quote);
-      if (!isFullName(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your full name (first and last name).' });
+      if (!isValidName(firstName)) return json(400, { status: 'bad-request', field: 'name', message: 'Please enter your name.' });
       if (!phone) return json(400, { status: 'bad-request', field: 'phone', message: 'Please enter a valid 10-digit US mobile number.' });
       if (!state) return bad('Please choose your state.');
       if (!quote) return bad();
