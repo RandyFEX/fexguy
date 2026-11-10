@@ -82,7 +82,7 @@ export function crmNote(record, rates = []) {
  * @param {{ label: string, monthlyPremium?: string | null, status: string }[]} [rates]
  * @param {typeof fetch} [fetchImpl]
  * @param {string | null} [lowest10k] the lowest displayed monthly rate for $10,000 ("32.87"), saved on the contact for GoHighLevel's text
- * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null }>}
+ * @returns {Promise<{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }>}
  */
 export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, lowest10k = null) {
   const token = env.AGENT_CRM_TOKEN ?? '';
@@ -105,9 +105,15 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
     // V4.36: coverage_amount and monthly_premium ride on the upsert itself, so
     // they are on the contact before any workflow runs. If GoHighLevel refuses
     // them, the upsert is repeated without them (the lead is never lost).
-    const quoteFields = quoteCustomFields(lowest10k);
+    const quoteFields = quoteCustomFields(lowest10k, record.quoteAtSubmission);
     let up = await call('/contacts/upsert', quoteFields ? { ...crmContact(record, locationId), customFields: quoteFields } : crmContact(record, locationId));
-    if (quoteFields && !up.res.ok) up = await call('/contacts/upsert', crmContact(record, locationId));
+    // V4.41: whether Agent CRM accepted the custom fields (logged on the lead's events).
+    /** @type {string | null} */
+    let customFields = quoteFields ? 'accepted' : null;
+    if (quoteFields && !up.res.ok) {
+      customFields = `refused-${up.res.status}`;
+      up = await call('/contacts/upsert', crmContact(record, locationId));
+    }
     const contactId = up.data?.contact?.id;
     if (!up.res.ok || typeof contactId !== 'string') return { sent: true, ok: false, step, status: up.res.status };
     // The rate first (best effort), so the tag's workflow can already use it.
@@ -126,7 +132,7 @@ export async function sendLeadToCrm(env, record, rates = [], fetchImpl = fetch, 
     step = 'note';
     const note = await call(`/contacts/${encodeURIComponent(contactId)}/notes`, { body: crmNote(record, rates) });
     const ok = tag.res.ok && note.res.ok;
-    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField };
+    return { sent: true, ok, step: ok ? 'done' : !tag.res.ok ? 'tags' : 'note', status: ok ? up.res.status : !tag.res.ok ? tag.res.status : note.res.status, contactId, isNew: up.data?.new === true, rateField, customFields };
   } catch (e) {
     return { sent: true, ok: false, step, error: e instanceof Error ? e.name : 'error' };
   }
@@ -148,11 +154,20 @@ export const RATE_FIELD_COVERAGE = 10000;
 // "32.87") so number, monetary and text fields all accept them.
 export const COVERAGE_FIELD_KEY = 'coverage_amount';
 export const PREMIUM_FIELD_KEY = 'monthly_premium';
-/** @param {string | null} lowest10k */
-export function quoteCustomFields(lowest10k) {
-  if (!lowest10k) return null;
-  return [
-    { key: COVERAGE_FIELD_KEY, field_value: String(RATE_FIELD_COVERAGE) },
-    { key: PREMIUM_FIELD_KEY, field_value: lowest10k },
-  ];
+// V4.41 (Randy, November 2026): Age and Gender (Single Line custom fields
+// {{contact.age}} and {{contact.gender}}) from the quote the visitor submitted,
+// sent with the same key convention ("age", "gender"; "35", "Male"/"Female").
+export const AGE_FIELD_KEY = 'age';
+export const GENDER_FIELD_KEY = 'gender';
+/** @param {string | null} lowest10k @param {any} [quote] the quote at submission */
+export function quoteCustomFields(lowest10k, quote = {}) {
+  const q = quote ?? {};
+  const fields = [];
+  if (Number.isInteger(q.age)) fields.push({ key: AGE_FIELD_KEY, field_value: String(q.age) });
+  if (q.gender === 'male' || q.gender === 'female') fields.push({ key: GENDER_FIELD_KEY, field_value: q.gender === 'female' ? 'Female' : 'Male' });
+  if (lowest10k) {
+    fields.push({ key: COVERAGE_FIELD_KEY, field_value: String(RATE_FIELD_COVERAGE) });
+    fields.push({ key: PREMIUM_FIELD_KEY, field_value: lowest10k });
+  }
+  return fields.length ? fields : null;
 }
