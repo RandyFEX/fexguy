@@ -128,8 +128,9 @@ test('V3.3: SEE MY RATES saves the lead, delivers it to Agent CRM (upsert, tag, 
   assert.equal(crm.calls[0].headers.version, '2021-07-28');
   const rec = await c.store.getLead(start.body.lead);
   const lowest10k = priceCategories(engine, { ...rec.quoteAtSubmission, coverage: 10000 }).filter((x) => x.status === 'ok').sort((a, b) => a.monthlyPremiumCents - b.monthlyPremiumCents)[0].monthlyPremium;
-  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote', customFields: [{ key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
+  assert.deepEqual(crm.calls[0].body, { locationId: 'loc123', name: 'Mary Ann Smith', firstName: 'Mary', lastName: 'Ann Smith', phone: rec.phone, state: 'Ohio', source: 'Funeral Funds Website Quote', customFields: [{ key: 'age', field_value: '70' }, { key: 'gender', field_value: 'Female' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest10k }] });
   assert.deepEqual(crm.calls[2].body, { tags: ['Funeral Funds - Website Quote'] });
+  assert.equal((await c.store.events(start.body.lead)).find((e) => e.type === 'crm-delivered').customFields, 'accepted');
   const note = crm.calls[3].body.body;
   for (const line of [`Lead ID: ${start.body.lead}`, 'Coverage requested: $10,000', 'Estimated monthly rate, ', 'Lead source: facebook / paid', 'UTM source: facebook', 'UTM campaign: launch', 'Full name: Mary Ann Smith', 'Consent to calls/texts: Yes, by clicking SEE MY RATES under the disclosure', `Consent text: ${CONSENT_TEXT}`, `(${rec.consent.at}, ${CONSENT_VERSION})`, 'Phone verification: not verified (no SMS verification)'])
     assert.ok(note.includes(line), `note lacks ${line}:\n${note}`);
@@ -696,7 +697,7 @@ test('V4.36: coverage_amount ($10,000) and monthly_premium (lowest $10,000 rate)
   assert.equal(start.http, 200, JSON.stringify(start.body));
   const ups = crm.calls.filter((x) => x.url.endsWith('/contacts/upsert'));
   assert.equal(ups.length, 1, 'one upsert');
-  assert.deepEqual(ups[0].body.customFields, [{ key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest }]);
+  assert.deepEqual(ups[0].body.customFields, [{ key: 'age', field_value: '67' }, { key: 'gender', field_value: 'Male' }, { key: 'coverage_amount', field_value: '10000' }, { key: 'monthly_premium', field_value: lowest }]);
   // Same quote as lowest_10k_rate.
   assert.equal(crm.calls.find((x) => x.headers && x.body.customFields && !x.url.endsWith('/upsert')).body.customFields[0].field_value, lowest);
   // The rest of the lead is unchanged: one tag call and one note.

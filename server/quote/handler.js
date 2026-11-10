@@ -202,10 +202,10 @@ export async function handleQuote(request, env, deps) {
           const at10k = loaded ? priceCategories(loaded.engine, { ...quote, coverage: RATE_FIELD_COVERAGE }).filter((c) => c.status === 'ok' && c.monthlyPremium) : [];
           lowest10k = at10k.sort((a, b) => (a.monthlyPremiumCents ?? 0) - (b.monthlyPremiumCents ?? 0))[0]?.monthlyPremium ?? null;
         } catch {}
-        /** @type {{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null }} */
+        /** @type {{ sent: boolean, ok?: boolean, step?: string, status?: number, contactId?: string, isNew?: boolean, error?: string, rateField?: number | string | null, customFields?: string | null }} */
         const crm = await sendLeadToCrm(env, record, rates, deps.fetchImpl, lowest10k).catch(() => ({ sent: true, ok: false, error: 'error' }));
         const delivered = crm.sent && crm.ok === true;
-        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null }).catch(() => {});
+        await store.event(leadId, { at: iso, type: delivered ? 'crm-delivered' : crm.sent ? 'crm-delivery-failed' : 'crm-not-configured', step: crm.step ?? null, status: crm.status ?? null, contactId: crm.contactId ?? null, isNew: crm.isNew ?? null, error: crm.error ?? null, lowest10k, rateField: crm.rateField ?? null, customFields: crm.customFields ?? null }).catch(() => {});
         record.crm = { delivered, at: iso, contactId: crm.contactId ?? record.crm?.contactId ?? null };
         await store.putLead(leadId, record);
         if (!delivered)

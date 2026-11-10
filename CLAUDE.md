@@ -1701,6 +1701,12 @@ Prioritize the shortest reliable path to completing approved changes.
   and {{contact.monthly_premium}} (Welcome & Call SMS workflow), so they are
   on the contact before any workflow runs; if GoHighLevel refuses them, the
   upsert is repeated once without them.
+  V4.41 (Randy, November 2026): the same upsert also carries `age` (e.g.
+  "70") and `gender` ("Male"/"Female") from the submitted quote, for the
+  Single Line fields {{contact.age}} and {{contact.gender}} (same key
+  convention; the fallback is unchanged). The crm-delivered event logs
+  `customFields` ("accepted", or "refused-<status>" when the retry without
+  them was used).
   Under the Mobile Phone Number field (Randy, November 2026): "We’ll text
   your rate for $10,000. Adjust that rate by clicking SEE MY RATES." in the
   disclosure's supporting-text style (#qf-phone-note, in the phone input's
