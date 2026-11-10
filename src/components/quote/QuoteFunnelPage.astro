@@ -1,0 +1,625 @@
+---
+// /free-quote/ (Randy, Quote System v5.8, November 2026; title v5.9): the interactive
+// quote funnel, which replaced the old callback form here and moved from
+// /final-expense-insurance-prices/ (now a 301 to this page). The SEO head
+// (robots, social tags, JSON-LD, canonical) is the migrated WordPress page's;
+// v5.9 (Randy) replaced its title everywhere it appeared (title, og:title,
+// twitter:title, JSON-LD names; the breadcrumb label is unchanged); noindex keeps it out of the sitemap, llms.txt and site
+// search. A one-question-per-screen quote funnel. V3.3 (Randy, November 2026):
+// no SMS verification; SEE MY RATES saves the lead, delivers it to Agent CRM
+// (production) and opens the rates. Prices come only from the server for that
+// visit's quote session (api/quote.js, api/price-explorer.js); this page and
+// its script hold no rate tables, rates or keys.
+// Representative (Texas) rates are shown for every state; state is lead
+// information only.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import type { HeadMeta } from '@/components/Seo.astro';
+import HeaderLogo from '@/components/HeaderLogo.astro';
+import HeaderPhone from '@/components/HeaderPhone.astro';
+import GenderChoice from '@/components/quote/GenderChoice.astro';
+import { HEADER_PHONE_ICON_PATH, PAGE_PHONES } from '@/config/phones';
+import { US_STATES } from '@/lib/lead/lead-form';
+import { AGES, COVERAGE } from '../../../server/rates/pricing-categories.js';
+import { CONSENT_LINK_TEXT, CONSENT_TEXT, CONSENT_VERSION } from '../../../server/quote/consent.js';
+
+const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
+const money = (n: number) => `$${n.toLocaleString('en-US')}`;
+const cards = [
+  { id: 'lowest-preferred', label: 'Lowest Competitive Preferred Rate' },
+  { id: 'average-standard', label: 'Second Competitive Preferred Rate' },
+  { id: 'guaranteed-acceptance', label: 'Guaranteed Acceptance Rate' },
+];
+// Safe stand-ins for the blurred, locked cards (never real carriers or plans).
+const LOGO_STAND_INS = ['Insurance Co.', 'Life Company', 'Insurance Co.'];
+const PLAN_STAND_INS = ['Whole Life Plan', 'Final Expense Plan', 'Life Insurance Plan'];
+// V3.7 (Randy, November 2026, his explicit instruction): the whole /free-quote/
+// visitor experience uses his advertising tracking number 888-656-4648
+// (tel:+18886564648): the header, the "Why Funeral Funds?" Direct Contact
+// line, the cards' call buttons, the intake call button and the funnel's
+// messages (the script reads it from data-funnel-phone, so it never ships in
+// the JavaScript). Build-time HTML only; every other page keeps its number.
+const phone = { ...PAGE_PHONES.ctv, href: 'tel:+18886564648' };
+const [consentBefore, consentAfter] = CONSENT_TEXT.split(CONSENT_LINK_TEXT);
+const TOTAL = 5;
+
+
+// V4.42 (Randy, November 2026): /free-quote/ (website) and /get-rates/
+// (Facebook ads) render this same funnel; only the SEO head and the funnel id
+// (data-funnel, validated by the server to pick the Agent CRM source and tag)
+// differ.
+interface Props { title: string; robots: string; canonical: string; headMeta: HeadMeta[]; jsonLd?: string[]; funnel: 'free-quote' | 'get-rates' }
+const { title, robots, canonical, headMeta, jsonLd, funnel } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  robots={robots}
+  noindex={true}
+  canonical={canonical}
+  headMeta={headMeta}
+  jsonLd={jsonLd}
+  layout="landing"
+  preFooter={false}
+  stickyCall={false}
+  bodyClass="page-quote track-page-calls"
+>
+  <div class="qh-top">
+    <div class="container qh-top__inner">
+      <HeaderLogo>
+        <img
+          class="qh-top__logo"
+          src="/images/logo/funeral-funds-wordmark-800.webp"
+          srcset="/images/logo/funeral-funds-wordmark-400.webp 400w, /images/logo/funeral-funds-wordmark-800.webp 800w"
+          sizes="12rem"
+          width="1987"
+          height="285"
+          alt="Funeral Funds"
+          fetchpriority="high"
+        />
+      </HeaderLogo>
+      <div class="qh-top__right">
+        <p class="qh-secure">
+          <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.5V4.5A3.5 3.5 0 0 0 8 1Zm2 6H6V4.5a2 2 0 1 1 4 0V7Z" /></svg>
+          Secure Form
+        </p>
+        <HeaderPhone phone={phone} showLabel={false} />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="qf"
+    data-page-type="sales"
+    data-page-reason="Interactive quote funnel (noindex)."
+    data-quote-funnel
+    data-funnel={funnel}
+    data-consent-version={CONSENT_VERSION}
+    data-funnel-phone={phone.display}
+  >
+    <h1 class="visually-hidden">Request Life Insurance Quote</h1>
+
+    <div class="container qf-body">
+      <div class="qf-panel" data-qf-panel>
+        <div class="qf-top" data-qf-top>
+          <button class="qf-back" type="button" data-qf-back hidden><span aria-hidden="true">‹</span> Back</button>
+          <p class="qf-progress-label" data-qf-progress-label>Step 1 of {TOTAL}</p>
+        </div>
+        <div class="qf-progress" aria-hidden="true" data-qf-progress-wrap><span class="qf-progress__bar" data-qf-progress></span></div>
+
+        <p class="qf-test" data-qf-test hidden><strong>TEST MODE (preview only):</strong> leads are saved as test records and are not sent to Agent CRM.</p>
+
+        <!-- Step 1 -->
+        <section class="qf-step" data-step="1" aria-labelledby="qf-s1">
+          <h2 class="qf-q" id="qf-s1" tabindex="-1">I'm shopping for burial or life insurance for a...</h2>
+          <GenderChoice as="button" />
+          <p class="qf-start-note">No agent required to view rates. Our quiz takes less than 60 seconds.</p>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="qf-step" data-step="2" aria-labelledby="qf-s2" hidden>
+          <h2 class="qf-q" id="qf-s2" tabindex="-1">What is your current age?</h2>
+          <div class="qf-ages" role="group" aria-labelledby="qf-s2">
+            {ages.map((a) => <button class="qf-opt qf-opt--age" type="button" data-pick="age" data-value={a}>{a}</button>)}
+          </div>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="qf-step" data-step="3" aria-labelledby="qf-s3" hidden>
+          <h2 class="qf-q" id="qf-s3" tabindex="-1">Have you used any tobacco, nicotine, or vaping products in the last 12 months?</h2>
+          <div class="qf-opts qf-opts--two">
+            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="no">No</button>
+            <button class="qf-opt qf-opt--big" type="button" data-pick="tobacco" data-value="yes">Yes</button>
+          </div>
+          <p class="qf-start-note">We'll apply all discounts you are eligible for.</p>
+        </section>
+
+
+        <!-- Step 5 -->
+        <section class="qf-step" data-step="5" aria-labelledby="qf-s5" hidden>
+          <h2 class="qf-q" id="qf-s5" tabindex="-1">What State Do You Live In?</h2>
+          <label class="visually-hidden" for="qf-state">State</label>
+          <select class="qf-input qf-select" id="qf-state" data-qf-state>
+            <option value="">Select your state</option>
+            {US_STATES.map((s) => <option>{s}</option>)}
+          </select>
+        </section>
+
+        <!-- Step 6. V3.7 (Randy, November 2026): the trust section first (Randy
+             left, "Why Funeral Funds?" right from 48rem; stacked on phones),
+             then "Your Contact Information", the summary and the form. -->
+        <section class="qf-step" data-step="6" aria-labelledby="qf-s6" hidden>
+          <div class="qf-trust">
+            <div class="qf-agent">
+              <img
+                class="qf-agent__photo"
+                src="/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png"
+                alt="Randy VanderVaate, founder of Funeral Funds"
+                width="500"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="qf-agent__text">
+                <p class="qf-agent__name">Randy VanderVaate</p>
+                <p class="qf-agent__role">Independent Life Insurance Broker</p>
+                <p class="qf-agent__intro">Funeral Funds isn’t a call center. When you call, you’ll deal directly with Randy. As a senior himself, Randy understands what matters most to people planning for their families. You’ll have the same agent helping you with your policy for life.</p>
+                <p class="qf-agent__tagline">5-Star Service + Affordable Rates.</p>
+              </div>
+            </div>
+            <aside class="qf-why" aria-labelledby="qf-why-title">
+              <h2 class="qf-why__title" id="qf-why-title">Why Choose Funeral Funds</h2>
+              <ul class="qf-why__list" role="list">
+                <li>Independent insurance agent</li>
+                <li>Compare multiple insurance companies</li>
+                <li>Professional assistance with your coverage</li>
+                <li>Easy to Add More Coverage Later if Needed</li>
+                <li>Direct Contact: <a href={phone.href} data-qf-direct-call>{phone.display}</a></li>
+              </ul>
+            </aside>
+          </div>
+          <h2 class="qf-q qf-q--contact" id="qf-s6" tabindex="-1">Your Contact Information</h2>
+          <dl class="qf-summary" aria-label="Your selections" data-qf-summary>
+            <div><dt>Gender</dt><dd data-qf-sum="gender"></dd></div>
+            <div><dt>Age</dt><dd data-qf-sum="age"></dd></div>
+            <div><dt>State</dt><dd data-qf-sum="state"></dd></div>
+            <div><dt>Tobacco</dt><dd data-qf-sum="tobacco"></dd></div>
+            <div><dt>Coverage</dt><dd data-qf-sum="coverage"></dd></div>
+          </dl>
+          <form class="qf-form qf-form--contact" data-qf-contact novalidate>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-first">Full Name</label>
+              <input class="qf-input" id="qf-first" name="firstName" type="text" autocomplete="name" maxlength="60" required aria-describedby="qf-first-error" />
+              <p class="qf-error" id="qf-first-error" hidden></p>
+            </div>
+            <div class="qf-field">
+              <label class="qf-label" for="qf-phone">Mobile Phone Number</label>
+              <input class="qf-input" id="qf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="qf-phone-error qf-phone-note" />
+              <p class="qf-error" id="qf-phone-error" hidden></p>
+              <p class="qf-field-note" id="qf-phone-note">We’ll text your rate for $10,000. Adjust that rate by clicking SEE MY RATES.</p>
+            </div>
+            <button class="btn qf-continue qf-btn-cta" type="submit" aria-describedby="qf-disclosure" data-qf-submit>SEE MY RATES</button>
+            <!-- V3.8 (Randy, November 2026): no checkbox; clicking the button under this disclosure is the consent. -->
+            <p class="qf-disclosure" id="qf-disclosure" data-qf-disclosure>{consentBefore}<a href="/privacy-policy/" target="_blank" rel="noopener">{CONSENT_LINK_TEXT}<span class="visually-hidden"> (opens in a new tab)</span></a>{consentAfter}</p>
+            <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-contact-status></p>
+            <p class="qf-reassure"><strong>Our Promise:</strong> No Spam Calls. No Junk Mail.</p>
+          </form>
+        </section>
+
+        <!-- Step 7: the pricing screen (shown once the lead is accepted; the cards load in place) -->
+        <section class="qf-step qf-results" data-step="7" data-locked="true" aria-labelledby="qf-s7" hidden>
+          <h2 class="qf-q visually-hidden" id="qf-s7" tabindex="-1" data-qf-results-title>Your quote results</h2>
+          <p class="qf-results-lead" data-qf-results-lead hidden>Call us to check rates from 30+ insurance companies. Rates viewable for <span class="qf-countdown" role="timer" data-qf-countdown>10:00</span></p>
+          <button class="btn qf-btn-cta qf-restart" type="button" data-qf-restart hidden>Start New Quote</button>
+          <p class="visually-hidden" role="status" aria-live="polite" data-qf-live></p>
+          <div class="qf-cards">
+            {cards.map((c, i) => (
+              <article class="qf-card" data-qf-card={c.id} data-state="locked">
+                <div class="qf-card__logo" data-qf-logo><span class="qf-blur qf-logo-stand" aria-hidden="true">{LOGO_STAND_INS[i]}</span></div>
+                <div class="qf-card__cat"><h3 class="qf-card__label">{c.label}</h3></div>
+                <p class="qf-card__plan" data-qf-plan><span class="qf-blur" aria-hidden="true">{PLAN_STAND_INS[i]}</span></p>
+                <p class="qf-card__price">
+                  <span class="qf-card__amount" data-qf-amount><span class="qf-blur" aria-hidden="true">{['$38.47', '$52.19', '$71.36'][i]}</span><span class="visually-hidden">Loading price</span></span>
+                  <span class="qf-card__per">per month</span>
+                </p>
+                <p class="qf-card__timing" data-qf-timing hidden></p>
+                <p class="qf-card__note" data-qf-note></p>
+                <a class="btn qf-card__call" href={phone.href} data-qf-call hidden>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="1.5 1.5 21 21" fill="currentColor"><path fill-rule="evenodd" d={HEADER_PHONE_ICON_PATH} clip-rule="evenodd" /></svg>
+                  <span>Call to Chat or Apply</span>
+                </a>
+                <a class="btn qf-card__apply" data-qf-apply aria-disabled="true"><svg class="qf-card__apply-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2.5h16A2.5 2.5 0 0 1 22.5 5v10.5A2.5 2.5 0 0 1 20 18H9.5l-5 4.2V18H4a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 4 2.5z" /><circle cx="7.5" cy="10.25" r="1.5" fill="#173f35" /><circle cx="12" cy="10.25" r="1.5" fill="#173f35" /><circle cx="16.5" cy="10.25" r="1.5" fill="#173f35" /></svg><span class="qf-card__apply-label" data-qf-apply-label>Text to Chat or Apply</span></a>
+              </article>
+            ))}
+          </div>
+
+          <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-apply-status></p>
+
+          <p class="qf-adjust-intro" data-qf-adjust-intro hidden><span class="qf-adjust-arrow" aria-hidden="true">&darr;</span> <span class="qf-adjust-intro__wrap"><span class="qf-adjust-intro__text">Easily adjust your rates or coverage below</span></span> <span class="qf-adjust-arrow" aria-hidden="true">&darr;</span></p>
+          <form class="qf-adjust" data-qf-adjust aria-label="Change your quote" novalidate hidden>
+            <fieldset class="qf-group qf-group--coverage qf-seg">
+              <legend class="qf-group__title">Adjust Coverage</legend>
+              <div class="qf-seg__opts qf-seg__opts--coverage">
+                <label class="qf-seg__opt"><input type="radio" name="coverage" value="premium" /><span class="qf-control">Desired Premium</span></label>
+                {COVERAGE.presets.map((c) => <label class="qf-seg__opt"><input type="radio" name="coverage" value={c} /><span class="qf-control">{money(c)}</span></label>)}
+              </div>
+              <div class="qf-other qf-other--inline" data-qf-adj-premium hidden>
+                <label class="qf-label qf-label--small" for="qf-adj-premium">Desired Monthly Premium</label>
+                <div class="qf-other__row">
+                  <span class="qf-other__dollar" aria-hidden="true">$</span>
+                  <input class="qf-input qf-control" id="qf-adj-premium" type="text" inputmode="decimal" autocomplete="off" placeholder="50" maxlength="8" aria-describedby="qf-adj-premium-error" />
+                </div>
+                <p class="qf-error" id="qf-adj-premium-error" data-qf-adj-premium-error hidden></p>
+              </div>
+            </fieldset>
+            <div class="qf-group qf-group--age">
+              <label class="qf-group__title" for="qf-adj-age">Age</label>
+              <select class="qf-input qf-select qf-control" id="qf-adj-age" name="age">
+                {ages.map((a) => <option value={a}>{a}</option>)}
+              </select>
+            </div>
+            <fieldset class="qf-group qf-seg">
+              <legend class="qf-group__title">Gender</legend>
+              <div class="qf-seg__opts">
+                <label class="qf-seg__opt"><input type="radio" name="gender" value="male" /><span class="qf-control">Male</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="gender" value="female" /><span class="qf-control">Female</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="qf-group qf-seg">
+              <legend class="qf-group__title">Tobacco or Nicotine</legend>
+              <div class="qf-seg__opts">
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="no" /><span class="qf-control">No</span></label>
+                <label class="qf-seg__opt"><input type="radio" name="tobacco" value="yes" /><span class="qf-control">Yes</span></label>
+              </div>
+            </fieldset>
+          </form>
+          <p class="qf-ref" data-qf-ref hidden>Representative monthly rates. Actual premiums and availability may vary by state and insurance company.</p>
+        </section>
+
+        <!-- Step 8: carrier-specific health questions after Apply Now -->
+        <section class="qf-step" data-step="8" aria-labelledby="qf-s8" hidden>
+          <h2 class="qf-q" id="qf-s8" tabindex="-1" data-qf-intake-title>Application questions</h2>
+          <p class="qf-note" data-qf-intake-sub></p>
+          <div class="qf-intake" data-qf-intake-q hidden>
+            <p class="qf-intake__count" data-qf-intake-count></p>
+            <p class="qf-intake__text" data-qf-intake-text></p>
+            <div class="qf-opts qf-opts--two">
+              <button class="qf-opt qf-opt--big" type="button" data-qf-answer="yes">Yes</button>
+              <button class="qf-opt qf-opt--big" type="button" data-qf-answer="no">No</button>
+            </div>
+          </div>
+          <div class="qf-intake-done" data-qf-intake-done hidden>
+            <p class="qf-intake__text" data-qf-intake-done-text></p>
+            <a class="btn btn--primary qf-continue qf-call-btn" href={phone.href}>Call {phone.display}</a>
+            <button class="btn qf-continue qf-secondary" type="button" data-qf-intake-finish>Continue</button>
+          </div>
+          <p class="qf-status" role="status" aria-live="polite" tabindex="-1" data-qf-intake-status></p>
+        </section>
+
+      </div>
+
+
+    </div>
+
+    <footer class="qh-foot">
+      <div class="container">
+        <ul class="qh-foot__links" role="list">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+          <li><a href="/licenses/">Licenses</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<script>
+  import '@/scripts/quote-funnel';
+</script>
+
+<style>
+  /* Minimal quote header: logo left; Secure Form and the phone right. */
+  .qh-top { background: #fff; border-bottom: 1px solid var(--color-border); }
+  .qh-top__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-2); }
+  .qh-top__logo { display: block; width: clamp(8.5rem, 30vw, 12rem); height: auto; }
+  .qh-top__right { display: flex; flex-direction: column; align-items: flex-end; gap: 0.125rem; }
+  .qh-secure { display: inline-flex; align-items: center; gap: 0.3rem; margin: 0; font-size: 0.8125rem; font-weight: 700; color: #173f35; line-height: 1.2; }
+  .qh-top__right :global(.header-phone) { min-height: 0; font-size: 1rem; }
+  .qh-foot { padding-block: var(--space-6); background: var(--color-bg); color: var(--color-text-muted); }
+  .qh-foot__links { list-style: none; margin: 0 0 var(--space-3); padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0 var(--space-4); }
+  .qh-foot__links a { display: inline-flex; align-items: center; min-height: var(--tap-target); color: var(--color-primary); font-weight: 700; font-size: 0.9375rem; }
+  .qh-foot__disclaimer { margin: 0 auto; max-width: 60rem; font-size: 0.75rem; line-height: 1.4; }
+
+  .qf-body { padding-block: var(--space-4) var(--space-8); max-width: 62rem; }
+  .qf-panel {
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.12);
+    padding: var(--space-4) var(--space-4) var(--space-6);
+    min-height: 22rem;
+  }
+  @media (max-width: 29.99rem) { .qf-body { padding-inline: var(--space-2); } }
+  @media (min-width: 48rem) { .qf-panel { padding: var(--space-6) var(--space-8) var(--space-8); } }
+  /* V4.4 logo wall under the coverage question card: borderless, centered,
+     visually subordinate. 6 per row on desktop (3 rows for 16), 4 on tablets,
+     3 on phones, 2 under 360px; the last row is centered. Each logo's height
+     is --k (1 / sqrt of its aspect ratio, set per image) times --s, so every
+     logo shows about the same area; proportions are never changed. */
+  .qf-top { display: flex; align-items: center; justify-content: space-between; min-height: var(--tap-target); gap: var(--space-3); }
+  .qf-back {
+    min-height: var(--tap-target); min-width: var(--tap-target); padding: 0 var(--space-3);
+    border: 2px solid var(--color-border); border-radius: 999px; background: #fff;
+    color: var(--color-primary); font-weight: 700; font-size: 1.0625rem; cursor: pointer;
+  }
+  .qf-progress-label { margin: 0 0 0 auto; font-weight: 700; color: var(--color-text-muted); }
+  .qf-progress { height: 0.5rem; background: #e3e8e5; border-radius: 999px; overflow: hidden; margin: var(--space-2) 0 var(--space-4); }
+  .qf-progress__bar { display: block; height: 100%; width: 14%; background: var(--color-primary); border-radius: inherit; transition: width 0.3s ease; }
+  .qf-test { background: #fff4d6; border: 2px solid #b7791f; border-radius: var(--radius); padding: var(--space-3); margin: 0 0 var(--space-4); }
+  .qf-step { animation: qf-in 0.25s ease; }
+  @keyframes qf-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .qf-step { animation: none; } .qf-progress__bar { transition: none; } }
+  .qf-q { font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem); line-height: 1.2; color: var(--color-primary); margin: 0 0 var(--space-4); text-align: center; }
+  .qf-q:focus { outline: none; }
+  /* Reassurance line under the Step 1 cards (Randy, November 2026): plain
+     sentence text, one line on desktop where it fits, wraps on small screens. */
+  .qf-start-note { margin: var(--space-3) auto 0; max-width: 40rem; text-align: center; font-size: 0.875rem; font-weight: 600; line-height: 1.4; color: var(--color-primary); }
+  @media (min-width: 48rem) { .qf-start-note { font-size: 0.9375rem; } }
+
+  /* .qf-people / .qf-person styles: src/components/quote/GenderChoice.astro (v5.8). */
+
+  .qf-ages { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); }
+  @media (min-width: 40rem) { .qf-ages { grid-template-columns: repeat(8, 1fr); } }
+  .qf-opts { display: grid; gap: var(--space-3); max-width: 34rem; margin-inline: auto; }
+  .qf-opts--two { grid-template-columns: 1fr 1fr; }
+  .qf-opts--coverage { grid-template-columns: 1fr 1fr; }
+  @media (min-width: 40rem) { .qf-opts--coverage { grid-template-columns: repeat(3, 1fr); } }
+  .qf-opt {
+    min-height: 3.25rem; border: 2px solid var(--color-primary); border-radius: var(--radius);
+    background: #fff; color: var(--color-primary); font-weight: 800; font-size: 1.25rem; cursor: pointer;
+  }
+  .qf-opt--big { min-height: 4rem; font-size: 1.375rem; }
+  .qf-opt[aria-pressed='true'] { background: var(--color-primary); color: #fff; }
+  @media (hover: hover) { .qf-opt:hover { background: var(--color-primary); color: #fff; } }
+
+  .qf-form { display: grid; gap: var(--space-4); max-width: 30rem; margin-inline: auto; }
+  .qf-field { display: grid; gap: var(--space-2); }
+  .qf-label { display: block; font-weight: 700; font-size: 1.0625rem; padding: 0; margin-bottom: var(--space-1); }
+  .qf-label--small { font-size: 1rem; font-weight: 600; }
+  .qf-input {
+    width: 100%; min-height: 3.5rem; font-size: 1.25rem; padding: 0 var(--space-3);
+    border: 2px solid #8a8f8b; border-radius: var(--radius); background: #fff; color: var(--color-text);
+  }
+  .qf-select { max-width: 30rem; display: block; margin-inline: auto; }
+  .qf-note { color: var(--color-text-muted); margin: 0; text-align: center; }
+  .qf-form[hidden], .qf-field[hidden] { display: none; }
+  /* V3.7 contact step: a compact trust section (Randy left, "Why Funeral Funds?"
+     right from 48rem; stacked on phones), then the heading, the summary and a
+     narrower form. */
+  .qf-trust { display: grid; gap: var(--space-3); max-width: 52rem; margin: 0 auto var(--space-4); }
+  /* V4.10: Randy's panel is centered against the benefits box (stretch + centered flex) so the two columns balance. */
+  @media (min-width: 48rem) { .qf-trust { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-4); align-items: stretch; } }
+  /* Phones: the photo sits beside the name and role; the paragraph and service line run full width below. */
+  .qf-agent { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: var(--space-3); align-items: center; min-width: 0; }
+  .qf-agent__text { display: contents; }
+  .qf-agent__photo { grid-row: 1 / span 2; width: 5.5rem; height: 5.5rem; border-radius: 50%; border: 3px solid #e3e8e5; object-fit: cover; }
+  .qf-agent__name { align-self: end; }
+  .qf-agent__role { align-self: start; }
+  .qf-agent__intro, .qf-agent__tagline { grid-column: 1 / -1; }
+  .qf-agent__intro { margin-top: var(--space-3) !important; }
+  @media (min-width: 48rem) {
+    .qf-agent { display: flex; gap: var(--space-4); align-items: center; padding-block: var(--space-2); }
+    .qf-agent__text { display: block; }
+    .qf-agent__photo { flex: none; width: 7rem; height: 7rem; }
+    .qf-agent__intro { margin-top: 0.375rem !important; }
+    .qf-why { display: flex; flex-direction: column; justify-content: center; }
+  }
+  .qf-agent__text { min-width: 0; }
+  .qf-agent__text p { margin: 0; }
+  .qf-agent__name { font-size: 1.1875rem; font-weight: 800; line-height: 1.2; color: #173f35; }
+  .qf-agent__role { font-size: 0.9375rem; font-weight: 700; line-height: 1.3; color: var(--color-text-muted); }
+  .qf-agent__intro { font-size: 1rem; line-height: 1.35; color: var(--color-text); }
+  .qf-agent__tagline { margin-top: 0.375rem !important; font-size: 1rem; font-weight: 700; line-height: 1.35; color: #173f35; }
+  .qf-why { background: var(--color-surface); border-radius: 0.75rem; padding: var(--space-3) var(--space-4); }
+  .qf-why__title { margin: 0 0 var(--space-2); font-size: 1.125rem; line-height: 1.2; color: #173f35; }
+  .qf-why__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.375rem; }
+  .qf-why__list li { position: relative; padding-left: 1.75rem; font-size: 1rem; font-weight: 700; line-height: 1.35; color: var(--color-text); }
+  .qf-why__list li::before {
+    content: ''; position: absolute; left: 0; top: 0.1em; width: 1.25rem; height: 1.25rem; border-radius: 50%;
+    background: #173f35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E") center / 0.8rem no-repeat;
+  }
+  /* The number stays a 44px touch target without adding line height. */
+  .qf-why__list a { position: relative; color: #173f35; font-weight: 800; white-space: nowrap; text-decoration: underline; }
+  .qf-why__list a::after { content: ''; position: absolute; inset: 50% -0.25rem auto; height: var(--tap-target); transform: translateY(-50%); }
+  .qf-q--contact { margin-bottom: var(--space-3); }
+  .qf-form--contact { max-width: 32rem; gap: var(--space-3); }
+  .qf-form--contact .qf-field { gap: 0.25rem; }
+  .qf-form--contact .qf-label { margin-bottom: 0; }
+  .qf-form--contact .qf-input { min-height: 3.125rem; }
+  /* V3.8: the consent disclosure directly under SEE MY RATES: smaller muted gray, still legible. */
+  .qf-disclosure { margin: calc(-1 * var(--space-2)) 0 0; font-size: 0.875rem; line-height: 1.4; color: #5b6560; text-align: center; text-wrap: pretty; }
+  .qf-disclosure a { color: inherit; font-weight: 700; text-decoration: underline; }
+  /* Rate text note under the phone field (Randy, November 2026): the disclosure's supporting-text style; only "an accurate quote" is highlighted. */
+  .qf-field-note { margin: var(--space-1) 0 0; font-size: 0.875rem; line-height: 1.4; color: #5b6560; }
+  .qf-field-note__mark { padding: 0 0.15em; background: #fff59d; color: #1f2926; font-weight: 700; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .qf-continue { width: 100%; min-height: 3.5rem; font-size: 1.25rem; font-weight: 800; }
+  .qf-error { color: var(--color-error); font-weight: 600; margin: 0; }
+  .qf-status { margin: 0; text-align: center; font-weight: 600; min-height: 1.5em; }
+  .qf-status.is-error { color: var(--color-error); }
+  /* v4.5: the empty Apply status line takes no space under the cards (it stays in the page for screen readers). */
+  .qf-status[data-qf-apply-status]:empty, .qf-status[data-qf-contact-status]:empty { min-height: 0; }
+  .qf-links { display: flex; justify-content: center; gap: var(--space-6); margin-top: var(--space-4); }
+  .qf-link { min-height: var(--tap-target); padding: 0 var(--space-2); border: 0; background: none; color: var(--color-primary); font-weight: 700; font-size: 1.0625rem; text-decoration: underline; cursor: pointer; }
+  .qf-link:disabled { color: var(--color-text-muted); text-decoration: none; cursor: default; }
+  .qf-other { margin-top: var(--space-4); max-width: 22rem; margin-inline: auto; display: grid; gap: var(--space-2); }
+  .qf-top[hidden], .qf-other[hidden], .qf-step[hidden], .qf-back[hidden], .qf-progress[hidden], .qf-test[hidden] { display: none; }
+  .qf-other__row { display: flex; align-items: center; gap: var(--space-2); }
+  .qf-other__dollar { font-size: 1.375rem; font-weight: 700; }
+
+  /* Contact screen: the visitor's selections at a glance. */
+  .qf-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr)); gap: var(--space-2); max-width: 40rem; margin: 0 auto var(--space-4); padding: 0; }
+  .qf-summary > div { background: var(--color-surface); border-radius: 0.5rem; padding: var(--space-2); text-align: center; }
+  .qf-summary dt { font-size: 0.8125rem; font-weight: 700; color: var(--color-text-muted); }
+  .qf-summary dd { margin: 0; font-size: 1.0625rem; font-weight: 800; color: #173f35; white-space: nowrap; }
+  @media (max-width: 29.99rem) { .qf-summary > div { padding-inline: 0.25rem; } .qf-summary dd { font-size: 0.875rem; } }
+  .qf-reassure { margin: 0; text-align: center; font-weight: 700; font-size: 1.0625rem; line-height: 1.3; color: #173f35; }
+  /* Primary orange conversion buttons (v4.1): exactly the homepage GET A
+     QUOTE tokens (--color-cta #c2410c, --color-on-cta white, 5.18:1) with
+     its hover (brightness 0.9): See My Instant Quotes, Text Me a Code,
+     Verify Code and Call to Get Approved. */
+  .qf-btn-cta, .qf-card__call { background: var(--color-cta); border-color: var(--color-cta); color: var(--color-on-cta); font-weight: 800; }
+  .qf-btn-cta:hover:not(:disabled), .qf-card__call:hover { background: var(--color-cta); color: var(--color-on-cta); filter: brightness(0.9); }
+  .qf-btn-cta:active:not(:disabled), .qf-card__call:active { filter: brightness(0.82); }
+  .qf-btn-cta:disabled { background: var(--color-cta); color: var(--color-on-cta); opacity: 0.6; cursor: not-allowed; filter: none; }
+  .qf-adjust-intro { margin: 12px 0 0; text-align: center; font-weight: 700; font-size: 1.125rem; color: #4a504e; }
+  .qf-adjust-intro[hidden] { display: none; }
+  .qf-adjust-intro + .qf-adjust { margin-top: var(--space-2); }
+  /* V4.32: the heading in the countdown's yellow, with a down arrow each side; the
+     coverage buttons sit directly under it (their "Coverage" legend stays for
+     screen readers only). */
+  .qf-adjust-intro__text { padding: 0 0.2em; background: #ffeb3b; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .qf-adjust-intro:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 0.35em; }
+  .qf-adjust-intro__wrap { min-width: 0; }
+  @media (max-width: 40rem) { .qf-adjust-intro__wrap { max-width: 12em; text-wrap: balance; } }
+  .qf-adjust-arrow { flex: none; }
+  .qf-group--coverage > .qf-group__title { position: absolute; float: none; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Results */
+  /* Pricing controls: four separate tan groups (Age | Gender | Tobacco, then Coverage). */
+  .qf-adjust { display: grid; gap: var(--space-3); margin: var(--space-6) 0 var(--space-2); }
+  .qf-adjust[hidden] { display: none; }
+  @media (min-width: 48rem) {
+    .qf-adjust { grid-template-columns: minmax(7.5rem, 0.6fr) 1fr 1fr; }
+    .qf-group--coverage { grid-column: 1 / -1; }
+  }
+  /* Compact, balanced group padding (correction v3.7). */
+  .qf-group { background: var(--color-surface); border: 0; border-radius: 0.625rem; margin: 0; padding: var(--space-2) var(--space-3); min-width: 0; }
+  /* v4.3: each label centered over its own controls. */
+  .qf-group__title { display: block; float: left; width: 100%; text-align: center; font-weight: 800; font-size: 1rem; color: #4a504e; margin: 0 0 6px; padding: 0; }
+  .qf-group__title + * { clear: both; }
+  .qf-control { min-height: 2.75rem; font-size: 1.0625rem; }
+  .qf-adjust .qf-select { max-width: none; min-height: 2.75rem; padding: 0 var(--space-2); border-color: #6f7673; color: #2f3432; }
+  .qf-adjust .qf-input { border-color: #6f7673; color: #2f3432; }
+  /* v4.5: desktop selection controls about the height of Apply Online Now (40px); phones keep 44px. */
+  @media (min-width: 52rem) { .qf-control, .qf-adjust .qf-select { min-height: 2.25rem; } }
+  .qf-seg__opts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  .qf-seg__opts--coverage { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 22rem) { .qf-seg__opts--coverage { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 48rem) { .qf-seg__opts--coverage { grid-template-columns: 1.6fr repeat(5, 1fr); } }
+  .qf-seg__opt { position: relative; }
+  .qf-seg__opt input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+  .qf-seg__opt span {
+    display: flex; align-items: center; justify-content: center; padding: 0 var(--space-2);
+    border: 2px solid #6f7673; border-radius: var(--radius); background: #fff; color: #4a504e;
+    font-weight: 700; text-align: center; line-height: 1.1;
+  }
+  /* The adjustment section is neutral gray only (correction v3.7): selected darker gray with white text;
+     unselected white with gray text and border. */
+  .qf-seg__opt input:checked + span { background: #454b49; color: #fff; border-color: #454b49; }
+  /* V4.33: the selected coverage choice's text in the countdown's yellow (background unchanged). */
+  .qf-seg__opts--coverage .qf-seg__opt input:checked + span { color: #ffeb3b; }
+  .qf-seg__opt input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; box-shadow: 0 0 0 2px var(--color-focus-inner); }
+  .qf-other--inline { max-width: 18rem; margin: var(--space-3) 0 0; }
+
+  /* Blurred stand-ins before verification (safe, never real prices or carriers). */
+  :global(.qf-blur) { filter: blur(9px); user-select: none; pointer-events: none; }
+  .qf-card[data-state='locked'] .qf-card__amount { color: var(--color-text); }
+
+  /* Health questions */
+  .qf-intake, .qf-intake-done { max-width: 34rem; margin-inline: auto; display: grid; gap: var(--space-4); }
+  .qf-intake[hidden], .qf-intake-done[hidden] { display: none; }
+  .qf-intake__count { margin: 0; text-align: center; font-weight: 700; color: var(--color-text-muted); }
+  .qf-intake__text { margin: 0; font-size: 1.25rem; line-height: 1.45; }
+  .qf-call-btn { display: flex; align-items: center; justify-content: center; text-decoration: none; }
+  .qf-secondary { background: #fff; color: var(--color-primary); border: 2px solid var(--color-primary); }
+
+  /* Pricing cards (approved v3.2 design): white cards, thin green border,
+     thick green top accent, logo area, sage category and timing panels,
+     large premium, green Apply Now. The rows line up across the three
+     cards (subgrid) on desktop. */
+  .qf-cards { display: grid; gap: var(--space-4); margin-top: var(--space-2); }
+  /* Supporting line under the results headline, directly above the cards
+     (Randy, November 2026; after verification only): smaller than the
+     headline, centered, wraps on phones. */
+  .qf-results-lead { margin: -8px auto 0; max-width: 46rem; text-align: center; font-size: 1rem; line-height: 1.4; font-weight: 500; color: #173f35; text-wrap: pretty; }
+  .qf-results-lead[hidden] { display: none; }
+  /* Countdown (V2.0): only the digits are highlighted, in the module's yellow
+     behind dark text (yellow text alone is unreadable on white). */
+  .qf-mark { padding: 0 0.2em; background: #ffeb3b; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .qf-countdown { display: inline-block; padding: 0 0.3em; border-radius: 0.2em; background: #ffeb3b; color: #0b2e22; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .qf-restart { display: block; margin: var(--space-3) auto 0; }
+  .qf-restart[hidden] { display: none; }
+  @media (min-width: 52rem) { .qf-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); column-gap: var(--space-4); row-gap: 0; } }
+  .qf-card {
+    display: grid; justify-items: stretch; text-align: center; gap: var(--space-2);
+    background: #fff; border: 1.5px solid #173f35; border-top: 8px solid #173f35; border-radius: 0.875rem;
+    padding: var(--space-4);
+  }
+  @media (min-width: 52rem) { .qf-card { grid-row: span 8; grid-template-rows: subgrid; } }
+  .qf-card__logo { height: 4.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; overflow: hidden; }
+  /* V4.15: a definite box for each logo (full height, at most 92% wide) with the artwork contained inside, so no engine crops it (iOS Safari mis-resolved the old percentage max-height). */
+  .qf-card__logo :global(img) { display: block; flex: 1 1 0; min-width: 0; max-width: 92%; height: 100%; object-fit: contain; object-position: center; }
+  .qf-card__logo :global(.qf-logo-name) { font-weight: 800; font-size: 1.375rem; line-height: 1.1; color: #173f35; }
+  .qf-card__logo :global(.qf-logo-stand) { font-weight: 800; font-size: 1.5rem; color: #173f35; }
+  .qf-card__cat { background: #e3ece0; border-radius: 0.625rem; padding: 0.5rem var(--space-3); display: flex; align-items: center; justify-content: center; }
+  .qf-card__label { margin: 0; font-size: 1.1875rem; line-height: 1.2; font-weight: 800; color: #1c2b26; text-wrap: balance; }
+  /* v4.7: the product line is centered in an equal-height row (subgrid on desktop). */
+  .qf-card__plan { margin: 0; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; font-weight: 500; color: #4a524e; line-height: 1.25; }
+  .qf-card__price { margin: 0; line-height: 1; }
+  .qf-card__amount { display: block; font-size: 3rem; font-weight: 800; color: #111; letter-spacing: -0.01em; }
+  .qf-card__per { display: block; margin-top: 2px; font-size: 1.125rem; color: #5b6560; font-weight: 500; }
+  /* v4.1: compact (5px vertical padding, one line on desktop), about the
+     height of Apply Online, close to the call button. */
+  .qf-card__timing { margin: 0; min-height: 26px; background: #e3ece0; border-radius: 0.5rem; padding: 4px var(--space-2); font-weight: 800; font-size: 0.9375rem; line-height: 1.2; color: #1c2b26; display: flex; align-items: center; justify-content: center; gap: 0.375rem; }
+  .qf-card__timing :global(svg) { flex: none; width: 1.125rem; height: 1.125rem; }
+  @media (min-width: 52rem) { .qf-card__timing { white-space: nowrap; } }
+  @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__timing { font-size: 0.8125rem; padding-inline: 0.375rem; gap: 0.25rem; } .qf-card__timing :global(svg) { width: 1rem; height: 1rem; } }
+  .qf-card__timing[hidden] { display: none; }
+  .qf-card__apply { border-radius: 0.625rem; }
+  /* "Call to Get Approved" (v3.7): the approved orange, above Apply Online;
+     only on revealed cards. */
+  .qf-card__call { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; min-height: 3rem; padding-inline: var(--space-2); font-size: 1.125rem; border-radius: 0.625rem; text-decoration: none; }
+  .qf-card__call svg { flex: none; }
+  @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__call { font-size: 0.9375rem; gap: 0.3rem; } }
+  .qf-card__call[hidden] { display: none; }
+  /* Desktop keeps the hidden timing row's space so the rows line up. */
+  @media (min-width: 52rem) { .qf-card__timing[hidden] { display: block; visibility: hidden; } }
+  .qf-card__note { margin: 0; color: var(--color-text-muted); }
+  .qf-card__note:empty { display: none; }
+  /* Secondary (v4.1): 44px, below and smaller than the 48px orange call button. */
+  .qf-card__apply { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 2.75rem; padding: 0 var(--space-2); font-size: 1.0625rem; font-weight: 800; background: #173f35; border-color: #173f35; color: #fff; border-radius: 0.625rem; }
+  @media (min-width: 52rem) { .qf-card__apply { min-height: 2.25rem; } }
+  /* v4.8: the label is centered as a box trimmed to the cap height and baseline, so the
+     letters, not the line box, sit in the middle of the button. */
+  .qf-card__apply-label { display: block; line-height: 1; text-box: trim-both cap alphabetic; }
+  @media (min-width: 52rem) and (max-width: 63.99rem) { .qf-card__apply { font-size: 0.9375rem; } }
+  .qf-card__apply { text-decoration: none; }
+  .qf-card__apply:hover:not([aria-disabled]) { background: #0f2d25; }
+  .qf-card__apply[aria-disabled] { background: #d7dbd9; border-color: #d7dbd9; color: #4b524e; cursor: not-allowed; }
+  /* CTA V1.5 (Randy, November 2026): "Call Us With Questions" and "Text Us
+     With Questions" (same destinations as before), each icon and label on
+     one line inside the unchanged buttons. The type is the former size where
+     it fits and otherwise scales with the button's width (phones: the screen
+     less 82px; three columns: a third of the screen less 145px, at most
+     283px, less 34px), so it never wraps, clips or widens the button. The
+     message icon shows only with the revealed label. */
+  .qf-card__call, .qf-card__apply { white-space: nowrap; }
+  .qf-card__apply { gap: 0.4rem; }
+  .qf-card .qf-card__call { font-size: min(1.125rem, calc((100vw - 124px) / 11.4)); }
+  .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((100vw - 122px) / 11.7)); }
+  @media (min-width: 52rem) {
+    .qf-card .qf-card__call { font-size: min(1.125rem, calc((min((100vw - 163px) / 3, 283px) - 76px) / 11.4)); }
+    .qf-card .qf-card__apply { font-size: min(1.0625rem, calc((min((100vw - 163px) / 3, 283px) - 74px) / 11.7)); }
+  }
+  .qf-card__apply-icon { flex: none; }
+  .qf-card__apply:not([data-ready]) .qf-card__apply-icon { display: none; }
+  .qf-card[data-state='pending'] .qf-card__amount, .qf-card[data-state='unavailable'] .qf-card__amount { font-size: 1.5rem; color: var(--color-text-muted); }
+  .qf-card[data-fine] .qf-card__price { display: none; }
+  .qf-card[data-fine] .qf-card__note { font-size: 0.75rem; line-height: 1.35; }
+  .qf-card[data-state='loading'] .qf-card__amount { color: var(--color-border); }
+  .qf-card[data-state='pending'] .qf-card__per, .qf-card[data-state='unavailable'] .qf-card__per { display: none; }
+  .qf-ref[hidden] { display: none; }
+  .qf-ref { margin: var(--space-4) 0 0; text-align: center; color: var(--color-text-muted); font-size: 1rem; }
+  /* Rate-tier explanations directly under the disclaimer (Randy, November
+     2026; after verification only): plain dark-gray text, bold heading and
+     labels, left-aligned, compact; no cards, borders or backgrounds. */
+
+</style>

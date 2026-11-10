@@ -1,0 +1,22 @@
+---
+// /get-rates/ (Randy, November 2026, V4.42): the Facebook advertising quote
+// page. The same funnel as /free-quote/ (src/components/quote/QuoteFunnelPage.astro);
+// its leads reach Agent CRM with source "Funeral Funds Facebook Quote" and the
+// tag "funeral funds - facebook quote" (server/quote/crm.js). noindex, out of
+// the sitemap, llms.txt and site search; not linked from the site.
+import QuoteFunnelPage from '@/components/quote/QuoteFunnelPage.astro';
+
+const title = 'Free Burial Insurance Quotes | Compare Rates | Funeral Funds';
+const robots = 'noindex, nofollow';
+const headMeta = [
+  { property: 'og:locale', content: 'en_US' },
+  { property: 'og:type', content: 'website' },
+  { property: 'og:title', content: title },
+  { property: 'og:url', content: 'https://funeralfunds.com/get-rates/' },
+  { property: 'og:site_name', content: 'Funeral Funds' },
+  { name: 'twitter:card', content: 'summary_large_image' },
+  { name: 'twitter:title', content: title },
+];
+---
+
+<QuoteFunnelPage title={title} robots={robots} canonical="/get-rates/" headMeta={headMeta} funnel="get-rates" />

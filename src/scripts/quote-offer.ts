@@ -77,5 +77,6 @@ export async function restartQuote(): Promise<void> {
       for (const k of Object.keys(store)) if (k.startsWith('ff:quote-')) store.removeItem(k);
     } catch {}
   }
-  location.assign('/free-quote/');
+  // V4.42: restart on the same quote page (/free-quote/ or /get-rates/).
+  location.assign(location.pathname === '/get-rates/' ? '/get-rates/' : '/free-quote/');
 }

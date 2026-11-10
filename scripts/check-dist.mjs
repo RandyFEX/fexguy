@@ -210,7 +210,7 @@ for (const file of walk(DIST).filter((f) => /\.(html|js|xml|txt)$/.test(f) && !f
   for (const [label, re] of GUARDS) {
     // The campaign number is allowed only on its ad landing pages, /roku/ and /facebook/,
     // and in the /free-quote/ "Direct Contact" line (Randy, November 2026, V3.3).
-    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html', 'free-quote/index.html'].includes(file.slice(DIST.length))) continue;
+    if (label.startsWith('TV/streaming') && ['roku/index.html', 'facebook/index.html', 'free-quote/index.html', 'get-rates/index.html'].includes(file.slice(DIST.length))) continue;
     if (re.test(text)) (guardHits[label] ??= []).push('/' + file.slice(DIST.length));
   }
 }
@@ -691,7 +691,7 @@ for (const file of pages) {
 // external URLs, review-only or campaign pages), every category button
 // controls its own panel, and the mega menu is identical on every page.
 const COMPACT_NAV_PAGES = new Set(['/roku/']);
-const NO_NAV_PAGES = ['/facebook/', '/free-quote/', '/help/'];
+const NO_NAV_PAGES = ['/facebook/', '/free-quote/', '/get-rates/', '/help/'];
 const NAV_FORBIDDEN = new Set(['/health-question-search-preview/', '/facebook/', '/roku/', '/help/']);
 const navProblems = [];
 let navPages = 0;
@@ -768,10 +768,10 @@ const HEADER_ICON = PHONES_SRC.match(/HEADER_PHONE_ICON_PATH =\s*'([^']+)'/)?.[1
 // /facebook/ (Randy, November 2026) is built with the main number; its page
 // script switches Facebook/Instagram ad visitors to the campaign number.
 // /free-quote/ (Randy, November 2026, V3.7): the quote funnel uses the advertising number throughout.
-const CAMPAIGN_PAGES = new Set(['/roku/', '/free-quote/']);
+const CAMPAIGN_PAGES = new Set(['/roku/', '/free-quote/', '/get-rates/']);
 // The one approved exception (Randy, Quote System v3.6): the dedicated quote
 // funnel's minimal header shows Secure Form above the number, with no label.
-const NO_LABEL_PAGES = new Set(['/free-quote/']); // the funnel's page since v5.8
+const NO_LABEL_PAGES = new Set(['/free-quote/', '/get-rates/']); // the funnel's page since v5.8
 const headerProblems = [];
 let headersChecked = 0;
 if (!HEADER_LABEL || !HEADER_ICON) headerProblems.push('src/config/phones.ts: HEADER_PHONE_LABEL or HEADER_PHONE_ICON_PATH not found');
