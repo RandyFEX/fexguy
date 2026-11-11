@@ -18,10 +18,10 @@ const LABELS = labels as Record<string, Label>;
 <section class="home-map" aria-labelledby="cover-map-title">
   <div class="container">
     <h2 class="home-map__title" id="cover-map-title">Randy's Final Expense Cost &amp; Life Expectancy by State</h2>
-    <p class="home-map__hint">
-      <span class="home-map__bubble"><span class="home-map__hover">Hover Over Any State for Information</span><span class="home-map__tap">Tap Any State for Information</span></span>
-    </p>
     <div class="cover-map" data-home-map>
+      <p class="home-map__hint">
+        <span class="home-map__bubble"><span class="home-map__hover">Hover Over Any State for Information</span><span class="home-map__tap">Tap Any State for Information</span></span>
+      </p>
       <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
         {paths.states.map((s) => (
           <a
@@ -72,35 +72,41 @@ const LABELS = labels as Record<string, Label>;
   /* Same heading style as the homepage section headings (CoverageNote). */
   .home-map__title {
     max-width: none;
-    margin: 0 auto;
+    margin: 0 auto var(--space-4);
     text-align: center;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
-  /* V4.14: the instruction is a small brand-green bubble in the heading's
-     former 16px bottom margin (a 1rem slot, so the section height does not
-     change); the bubble may extend a few pixels over the map's empty top
-     edge and never takes the pointer. Devices that can hover read "Hover
-     Over Any State for Information"; touch devices read "Tap Any State for
-     Information". */
+  /* V4.14/V4.15: the instruction bubble is anchored to the map container
+     (.cover-map, which holds the SVG): centered, its bottom at 9.2% of the
+     map's height, just above the northern border of North Dakota and
+     Minnesota, so it moves and scales with the map. It never takes the
+     pointer. Devices that can hover read "Hover Over Any State for
+     Information"; touch devices read "Tap Any State for Information". */
   .home-map__hint {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    height: 1rem;
+    left: 50%;
+    top: 9.2%;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    transform: translate(-50%, -100%);
     pointer-events: none;
+  }
+  /* Narrow phones: the bubble is wide relative to the map, so it sits a
+     little higher to stay clear of Washington and Montana. */
+  @media (max-width: 23.99rem) {
+    .home-map__hint {
+      top: 6%;
+    }
   }
   .home-map__bubble {
     display: inline-block;
     padding: 0.125rem 0.5rem;
     border-radius: 999px;
-    background: #173f35;
-    color: #ffffff;
+    background: var(--home-gold, #b68a35);
+    color: #000000;
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.2;
@@ -118,9 +124,6 @@ const LABELS = labels as Record<string, Label>;
     }
   }
   @media (min-width: 48rem) {
-    .home-map__hint {
-      padding-top: 0.125rem;
-    }
     .home-map__bubble {
       padding: 0.1875rem 0.625rem;
       font-size: 0.8125rem;
