@@ -5,6 +5,7 @@ import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
+import directCremation from '@/data/funeral-map/direct-cremation.json';
 
 type Row = [number, number];
 type YearData = Record<string, Row>;
@@ -85,6 +86,11 @@ const metricText = (state: string, metric: string) => {
   return `${state} (${REGION_OF[state]?.name ?? 'U.S.'} region): estimated ${money(v)}`;
 };
 let onStateChange: (state: string) => void = () => {};
+
+// State direct cremation figures (Map V3.6): only where a funeral consumer
+// organization publishes a statewide summary figure; shown as published.
+type DC = { year: number; kind: string; value: number; low?: number; high?: number; source: string; definition: string };
+const DIRECT = directCremation.states as Record<string, DC>;
 
 if (root) init();
 
@@ -242,7 +248,8 @@ function initCosts() {
   const pkgOf = (): Pkg | null => (type.value === 'burial' ? 'burial' : type.value === 'cremation-service' ? 'cremation' : null);
   const prefill = () => {
     const pkg = pkgOf();
-    const est = pkg ? estimate(state, pkg) : null;
+    const dc = !pkg ? DIRECT[state] : undefined;
+    const est = pkg ? estimate(state, pkg) : dc ? dc.value : null;
     if (!typed) price.value = est != null ? String(Math.round(est)) : '';
     const src = $<HTMLElement>('[data-fcm-price-src]')!;
     src.textContent = typed
@@ -252,6 +259,7 @@ function initCosts() {
         : pkg
           ? `No estimate for ${state}. Enter a price from a funeral home's price list.`
           : 'No published estimate for direct cremation. Enter a price from a funeral home\'s price list.';
+    if (!typed && dc) src.textContent = `Filled in with the ${dc.year} ${dc.kind} for ${state}, used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`;
   };
   const card = (label: string, pkg: Pkg) => {
     const est = estimate(state, pkg);
@@ -261,11 +269,17 @@ function initCosts() {
     const cmp = vs == null ? '' : '; ' + `${Math.abs(vs * 100).toFixed(0)}% ${vs >= 0 ? 'above' : 'below'} the national median`;
     return `<div class="fcm-stat"><strong>${money(est)}</strong>${label}<span class="fcm-stat__sub">${money(m)} NFDA 2023 ${state === US ? 'national' : 'regional'} median${cmp}</span></div>`;
   };
+  const directCard = () => {
+    const dc = DIRECT[state];
+    if (!dc) return '<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published figure for this state</span></div>';
+    const range = dc.low != null && dc.high != null ? `; range ${money(dc.low)} to ${money(dc.high)}` : '';
+    return `<div class="fcm-stat"><strong>${money(dc.value)}</strong>Direct cremation<span class="fcm-stat__sub">${dc.year} ${dc.kind}, ${dc.source}${range}. ${dc.definition}</span></div>`;
+  };
   onStateChange = (s: string) => {
     state = s;
     const region = REGION_OF[s]?.name;
     estEl.innerHTML = `<p class="fcm-est-title">Estimated funeral cost based on historical data: <strong>${s}</strong>${region ? ` (${region} region)` : ''}</p>
-      <div class="fcm-hist">${card('Funeral with viewing and burial', 'burial')}${card('Funeral with viewing and cremation', 'cremation')}<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published median available</span></div></div>`;
+      <div class="fcm-hist">${card('Funeral with viewing and burial', 'burial')}${card('Funeral with viewing and cremation', 'cremation')}${directCard()}</div>`;
     prefill();
     update();
   };

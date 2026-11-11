@@ -22,6 +22,7 @@ import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
+import directCremation from '@/data/funeral-map/direct-cremation.json';
 
 type Row = [number, number];
 const LATEST = String(mortality.years[1]);
@@ -294,6 +295,11 @@ const jsonLd = [
         </table>
       </div>
       <p class="fcm-note">District of Columbia is not listed in NFDA's regional table, so no estimate is shown for it.</p>
+      <p class="fcm-note">
+        Direct cremation (no viewing or ceremony):{" "}
+        {Object.entries(directCremation.states).map(([st, d]) => `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
+        No published figure is available for other states.
+      </p>
     </section>
 
     <section class="fcm-card" aria-labelledby="fcm-states-h">
@@ -333,6 +339,13 @@ const jsonLd = [
           Packages: {nfda.packages.burial} {nfda.packages.cremation}
           Direct cremation is not reported in NFDA's releases, so no direct cremation estimate is shown.
           <a href={s2023.url} rel="noopener">NFDA 2023 release</a>.
+        </li>
+        <li>
+          <strong>Direct cremation:</strong> shown only for states where a funeral consumer organization publishes a
+          statewide summary figure, exactly as published (no inflation adjustment, no averaging across states or
+          regions). {Object.entries(directCremation.states).map(([st, d]) => `${st}: ${d.source}, ${d.year} ${d.kind} ${money(d.value)}, range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`).join(' ')}
+          Funeral Consumers Alliance affiliate surveys checked without a published statewide figure:
+          {directCremation.checked.map((c) => c.state).join(', ')}. NFDA's releases do not report direct cremation.
         </li>
         <li>
           <strong>Check against 2021:</strong> NFDA's {s2021.date.slice(0, 4)} regional burial medians ("{s2021.title}"),

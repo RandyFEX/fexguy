@@ -1,0 +1,26 @@
+{
+  "note": "State-specific direct cremation figures, shown only where a funeral consumer organization publishes a statewide summary figure. Figures are shown as published (no inflation adjustment, no averaging across states). Map V3.6, Randy, November 2026.",
+  "retrieved": "2026-11-11",
+  "states": {
+    "Washington": {
+      "year": 2024,
+      "kind": "survey average",
+      "value": 1685,
+      "low": 485,
+      "high": 3435,
+      "sample": "People's Memorial Association surveyed 250 Washington funeral homes in 2024 (some did not participate); the average is of the prices reported.",
+      "definition": "The price each funeral home lists for Direct Cremation on its General Price List. The survey does not state whether a cremation container or crematory fee is included.",
+      "source": "People's Memorial Association, 2024 Funeral Home Price Survey",
+      "url": "https://peoplesmemorial.org/advocacy/price-survey.html"
+    }
+  },
+  "checked": [
+    { "state": "Arizona", "source": "Funeral Consumers Alliance of Arizona, Price Comparison Report", "reason": "Regional listings of minimum \"out the door\" prices by funeral home; no published statewide figure (report PDFs could not be retrieved)." },
+    { "state": "Colorado", "source": "Funeral Consumer Society of Colorado, directory", "reason": "Per-provider listing; no published statewide figure." },
+    { "state": "Georgia", "source": "Funeral Consumers Alliance of Georgia, Funeral Home Pricing Comparison", "reason": "Per-funeral-home table; no published statewide figure." },
+    { "state": "Idaho", "source": "Funeral Consumers Alliance of Idaho, Comparative Cost of Funeral Services, June 2024", "reason": "Per-mortuary table; the referenced history of price ranges is not linked." },
+    { "state": "Maryland, Delaware and District of Columbia", "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey", "reason": "Per-establishment least-expensive prices, generally excluding the crematory fee and container; no published summary figure." },
+    { "state": "Utah", "source": "Funeral Consumers Alliance of Utah, price comparison", "reason": "Links to individual price lists; no published statewide figure." },
+    { "state": "North Carolina", "source": "Funeral Consumers Alliance of North Carolina, price survey", "reason": "The survey page refused automated access." }
+  ]
+}
