@@ -1942,6 +1942,15 @@
           "value": "noindex, nofollow"
         }
       ]
+    },
+    {
+      "source": "/trin-fbl/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ]
 }

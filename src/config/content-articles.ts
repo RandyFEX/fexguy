@@ -64,7 +64,6 @@ export const NON_ARTICLE_PAGES: Record<string, { type: PageType; reason: string 
   '/terms-of-use/': { type: 'legal', reason: 'Legal page (holds the accessibility statement).' },
   '/welcome/': { type: 'utility', reason: 'Welcome page for new clients (instructions, not an article).' },
   '/lbl/': { type: 'utility', reason: 'Carrier page with no article text.' },
-  '/trin-fbl/': { type: 'sales', reason: 'Product sheet for two carriers’ plans (noindex), not an article.' },
   '/funeral-relief-program/': { type: 'sales', reason: 'Promotional offer page (noindex).' },
   '/senior-benefits/': { type: 'sales', reason: 'Promotional program page (noindex).' },
   '/roku/': { type: 'sales', reason: 'TV-ad landing page (noindex).' },
