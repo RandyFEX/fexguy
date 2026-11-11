@@ -272,6 +272,7 @@ export const site: SiteConfig = {
           heading: 'Tools',
           links: [
             { label: 'Health Question Search', href: '/life-insurance-health-questions/' },
+            { label: 'Final Expense Cost & Life Expectancy Map', href: '/funeral-cost-map/' },
             { label: 'Burial Insurance Calculator', href: '/burial-insurance-calculator/' },
             { label: 'Search the Site', href: '/search/' },
           ],

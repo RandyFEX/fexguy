@@ -3,15 +3,64 @@
 // white background between Why FEXGuy and the reviews (the "What I Help
 // People With" section was removed in the V1.0 homepage cleanup, Randy,
 // November 2026). Same heading scale as the other sections, no gold rule.
+// V4.4/V4.7 (Randy, November 2026): the same white section opens with the
+// "Expected Final Expense Cost & Life Expectancy by State" heading (same
+// style as the coverage heading) and a simplified state map, followed by the
+// coverage heading and text. Each state is a plain link that opens
+// /funeral-cost-map/?state=XX in a new tab.
 import { coverage } from '@/lib/home/content';
+import paths from '@/data/funeral-map/state-paths.json';
+import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
+import labels from '@/data/funeral-map/state-labels.json';
+
+// V4.5: postal abbreviations. Most sit inside their state; small states get an
+// exterior label (lx, ly) with a thin leader line to a point inside the state.
+// The viewBox is 25 units wider than the map paths (975) to fit the exterior
+// column of small Northeastern states at phone label size.
+type Label = { x: number; y: number; lx?: number; ly?: number };
+const LABELS = labels as Record<string, Label>;
 ---
 
 <section class="cover" aria-labelledby="cover-title">
   <div class="container">
-    <h2 class="cover__title" id="cover-title">{coverage.title}</h2>
+    <h2 class="cover__title" id="cover-map-title">Expected Final Expense Cost &amp; Life Expectancy by State</h2>
+    <div class="cover-map" data-home-map>
+      <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
+        {paths.states.map((s) => (
+          <a
+            href={`/funeral-cost-map/?state=${ABBR_BY_FIPS[s.fips]}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${s.name}: funeral costs and mortality details (opens in a new tab)`}
+            data-name={s.name}
+          >
+            <path d={s.d} />
+          </a>
+        ))}
+        <g class="cover-map__labels" aria-hidden="true">
+          {Object.entries(LABELS).map(([code, l]) =>
+            l.lx != null && l.ly != null ? (
+              <g>
+                <line x1={l.x} y1={l.y} x2={l.lx < l.x ? l.lx + 4 : l.lx - 4} y2={l.ly} />
+                <circle cx={l.x} cy={l.y} r="1.6" />
+                <text x={l.lx} y={l.ly} text-anchor={l.lx > l.x + 20 ? 'start' : 'middle'} class="is-ext">{code}</text>
+              </g>
+            ) : (
+              <text x={l.x} y={l.y}>{code}</text>
+            ),
+          )}
+        </g>
+      </svg>
+      <p class="cover-map__tip" data-home-map-tip hidden></p>
+    </div>
+    <h2 class="cover__title cover__title--after-map" id="cover-title">{coverage.title}</h2>
     <p class="cover__text">{coverage.text}</p>
   </div>
 </section>
+
+<script>
+  import '@/scripts/home-state-map';
+</script>
 
 <style>
   .cover {
@@ -26,6 +75,9 @@ import { coverage } from '@/lib/home/content';
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
+  .cover__title--after-map {
+    margin-top: var(--space-12);
+  }
   /* Phones: left-aligned, easier to read over several lines; centered under
      the heading once the line is long enough. */
   .cover__text {
@@ -39,5 +91,84 @@ import { coverage } from '@/lib/home/content';
     .cover__text {
       text-align: center;
     }
+  }
+  .cover-map {
+    position: relative;
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+  .cover-map svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .cover-map path {
+    fill: #cfe0d7;
+    stroke: #2b302d;
+    stroke-width: 0.6;
+    stroke-linejoin: round;
+  }
+  /* Hover/focus: the site's orange accent with a dark outline, clearly
+     different from the light green fill of every state. */
+  .cover-map a:hover path,
+  .cover-map a:focus-visible path,
+  .cover-map a.is-active path {
+    fill: var(--color-cta);
+    stroke: var(--color-cta);
+    stroke-width: 2;
+  }
+  /* Labels never take the pointer, so hovering or clicking them reaches the state. */
+  .cover-map__labels {
+    pointer-events: none;
+  }
+  .cover-map__labels text {
+    fill: #202522;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
+  .cover-map__labels text.is-ext {
+    font-size: 12px;
+  }
+  .cover-map__labels text[text-anchor='start'] {
+    text-anchor: start;
+  }
+  .cover-map__labels line {
+    stroke: #2b302d;
+    stroke-width: 0.6;
+  }
+  .cover-map__labels circle {
+    fill: #2b302d;
+  }
+  /* Phones: the map is about a third of its desktop size, so the labels are
+     larger in map units to stay readable (about 8px). */
+  @media (max-width: 47.99rem) {
+    .cover-map__labels text,
+    .cover-map__labels text.is-ext {
+      font-size: 22px;
+    }
+  }
+  .cover-map a:focus {
+    outline: none;
+  }
+  .cover-map__tip {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: var(--space-1) var(--space-2);
+    max-width: 14rem;
+    background: var(--color-text);
+    color: #ffffff;
+    border-radius: var(--radius);
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    pointer-events: none;
+    transform: translate(-50%, calc(-100% - 12px));
+    white-space: nowrap;
+  }
+  .cover-map__tip :global(strong) {
+    display: block;
   }
 </style>

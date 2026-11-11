@@ -863,6 +863,8 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
 // module's Male/Female choices (data-gp-gender) and ordinary editorial links
 // (no button class), unless their text is an old pricing label.
 const CTA_TEXT = 'SEE PRICES NOW';
+// The funeral cost map's CTA reads Randy's own wording for that page (Map V3.0, November 2026).
+const CTA_PAGE_TEXT = { '/funeral-cost-map/': 'GET MY PERSONALIZED COVERAGE QUOTE' };
 const FREE_QUOTE_HREF = /^(?:https?:\/\/(?:www\.)?(?:funeralfunds|fexguy)\.com)?\/free-quote(?:\/|\?|#|$)/i;
 const CTA_CLASS = /\b(?:btn|button|button-link|nav__quote|nav__top-link|cta)\b/;
 const OLD_PRICING_LABEL = /\b(?:GET PRICING|GET (?:A |MY |YOUR )?(?:FREE )?(?:QUOTES?|PRICES?|RATES)|SEE PRICES|VIEW PRICES|FREE FINAL EXPENSE QUOTE)\b/i;
@@ -880,7 +882,7 @@ for (const file of pages) {
     const text = textOf(m[2]);
     if (CTA_CLASS.test(cls)) {
       ctaChecked++;
-      if (text !== CTA_TEXT) ctaProblems.push(`${page}: pricing CTA to ${href} reads "${text}" (class "${cls}"); it must read ${CTA_TEXT}`);
+      if (text !== CTA_TEXT && text !== CTA_PAGE_TEXT[page]) ctaProblems.push(`${page}: pricing CTA to ${href} reads "${text}" (class "${cls}"); it must read ${CTA_TEXT}`);
     } else if (text !== CTA_TEXT && OLD_PRICING_LABEL.test(text)) {
       ctaProblems.push(`${page}: link to ${href} uses an old pricing label "${text}"`);
     }

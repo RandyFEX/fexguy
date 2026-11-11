@@ -1,0 +1,274 @@
+{
+  "note": "State direct cremation figures (Map V3.6/V3.7, Randy, November 2026). Washington: a published statewide survey average. Other states: medians calculated here from the direct cremation prices that Funeral Consumers Alliance affiliates publish for individual funeral homes, using only observations that share one definition. Figures are not inflation-adjusted and are never combined across states.",
+  "retrieved": "2026-11-11",
+  "states": {
+    "Washington": {
+      "year": 2024,
+      "kind": "survey average",
+      "value": 1685,
+      "low": 485,
+      "high": 3435,
+      "sample": "People's Memorial Association surveyed 250 Washington funeral homes in 2024 (some did not participate); the average is of the prices reported.",
+      "definition": "The price each funeral home lists for Direct Cremation on its General Price List. The survey does not state whether a cremation container or crematory fee is included.",
+      "source": "People's Memorial Association, 2024 Funeral Home Price Survey",
+      "url": "https://peoplesmemorial.org/advocacy/price-survey.html",
+      "cpiRef": {
+        "kind": "year",
+        "year": "2024",
+        "label": "2024 average"
+      }
+    },
+    "Arizona": {
+      "year": 2025,
+      "whenLabel": "2025 (completed October 2025)",
+      "kind": "calculated median",
+      "value": 1847.5,
+      "low": 610,
+      "high": 3435,
+      "n": 174,
+      "coverage": "statewide: all five regional reports, compiled from the Arizona State Board of Funeral Directors and Embalmers provider list",
+      "sample": "174 funeral providers with a direct cremation price; member-discount (contracted provider) prices excluded.",
+      "definition": "Minimum \"out the door\" price from each provider's General Price List: removal within 25 miles, arrangements, permits and death certificate filing, refrigeration for at least 3 days, basic services fee, delivery to the crematory, the cremation, a basic alternative container and a basic urn.",
+      "source": "Funeral Consumers Alliance of Arizona, 2025 Funeral Provider Price Comparison Reports",
+      "url": "https://www.fcaaz.org/price-comparison-report",
+      "cpiRef": {
+        "kind": "year",
+        "year": "2025",
+        "label": "2025 average (11 published months; BLS did not publish October 2025)"
+      }
+    },
+    "Georgia": {
+      "year": 2026,
+      "whenLabel": "as listed November 2026 (price list dates vary)",
+      "kind": "calculated median",
+      "value": 2095,
+      "low": 800,
+      "high": 4160,
+      "n": 255,
+      "coverage": "statewide",
+      "sample": "255 Georgia funeral homes with a listed direct cremation price (362 others are marked \"needed\").",
+      "definition": "Standardized package taken from each General Price List: basic services fee, removal within 30 miles, refrigeration up to 72 hours, alternative container, crematory fee, basic container for the ashes, death certificate filing and Social Security notification.",
+      "source": "Funeral Consumers Alliance of Georgia, Funeral Home Pricing Comparison",
+      "url": "https://fcaga.org/pricing/fhpc/",
+      "cpiRef": null,
+      "cpiNote": "Current listing (November 2026); not inflation-adjusted."
+    },
+    "Maryland": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2757.5,
+      "low": 925,
+      "high": 4774,
+      "n": 116,
+      "coverage": "statewide",
+      "sample": "116 of 258 Maryland establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf",
+      "cpiRef": {
+        "kind": "year",
+        "year": "2023",
+        "label": "2023 average"
+      }
+    },
+    "Delaware": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2947.5,
+      "low": 1350,
+      "high": 5560,
+      "n": 32,
+      "coverage": "statewide",
+      "sample": "32 of 64 Delaware establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf",
+      "cpiRef": {
+        "kind": "year",
+        "year": "2023",
+        "label": "2023 average"
+      }
+    },
+    "District of Columbia": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2195,
+      "low": 1305,
+      "high": 6800,
+      "n": 15,
+      "coverage": "District of Columbia",
+      "sample": "15 of 31 District of Columbia establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf",
+      "cpiRef": {
+        "kind": "year",
+        "year": "2023",
+        "label": "2023 average"
+      }
+    },
+    "Idaho": {
+      "year": 2024,
+      "whenLabel": "June 2024",
+      "kind": "calculated sample median",
+      "value": 1865,
+      "low": 1495,
+      "high": 2380,
+      "n": 9,
+      "coverage": "not statewide: responding mortuaries in Meridian, Boise, Payette, Emmett, Twin Falls and Lewiston",
+      "sample": "9 responding mortuaries whose direct cremation price includes an alternative container; member-discount prices excluded.",
+      "definition": "Direct cremation with no services or viewing from each mortuary's General Price List, including an alternative container. The survey does not state whether the crematory fee is included.",
+      "source": "Funeral Consumers Alliance of Idaho, Comparative Cost of Funeral Services in Idaho, June 2024",
+      "url": "https://idahofunerals.org/price-survey/",
+      "cpiRef": {
+        "kind": "month",
+        "year": "2024",
+        "month": "M06",
+        "label": "June 2024"
+      }
+    }
+  },
+  "checked": [
+    {
+      "state": "Colorado",
+      "source": "Funeral Consumer Society of Colorado, directory",
+      "reason": "Prices gathered over several years; the publisher says it cannot attest to their accuracy, particularly pricing. Not used."
+    },
+    {
+      "state": "Utah",
+      "source": "Funeral Consumers Alliance of Utah, price comparison",
+      "reason": "Links to individual price lists only; no compiled survey."
+    },
+    {
+      "state": "North Carolina",
+      "source": "Funeral Consumers Alliance of North Carolina, price survey",
+      "reason": "The survey page refused automated access."
+    },
+    {
+      "state": "New Jersey (Princeton area)",
+      "source": "Funeral Consumers Alliance of Princeton, How to Shop for Cremation and Prices (2024)",
+      "reason": "Lists only \"the most reasonable prices\", a selection of low-priced providers; a median would be biased. Not used."
+    },
+    {
+      "state": "New York (Finger Lakes)",
+      "source": "Funeral Consumers Alliance of the Finger Lakes, 2025 price survey",
+      "reason": "Survey files are on a file host this environment cannot reach."
+    },
+    {
+      "state": "Texas (San Antonio)",
+      "source": "Funeral Consumers Alliance of San Antonio",
+      "reason": "Price survey is a scanned image without readable text."
+    },
+    {
+      "state": "Massachusetts (western counties), Ohio (central Ohio and Cleveland)",
+      "source": "Funeral Consumers Alliance affiliates",
+      "reason": "Western Massachusetts and central Ohio pages refused automated access. Cleveland Memorial Society posts prices on separate county pages from a 2023 survey it describes as still in progress; not compiled here."
+    }
+  ],
+  "local": {
+    "note": "Local direct cremation surveys by Funeral Consumers Alliance affiliates. Medians calculated here from the individual funeral-home prices each survey publishes (only summary figures are stored). \"Estimated today\" adjusts each price with the BLS funeral index to the month named in adjustedTo; price lists dated October 2025 (not published by BLS) use the average of September and November 2025. Shown for the surveyed area only, never as a statewide figure.",
+    "adjustedTo": "2026-10",
+    "areas": [
+      {
+        "states": [
+          "Missouri",
+          "Kansas"
+        ],
+        "area": "Kansas City metro area (Missouri and Kansas)",
+        "when": "price lists dated 2018 to 2025 (most 2024 to 2025)",
+        "adjust": "each price adjusted from its own price-list month",
+        "n": 106,
+        "observedMedian": 1895.0,
+        "low": 825,
+        "high": 3840,
+        "todayMedian": 2090,
+        "definition": "Direct cremation price from each funeral home's General Price List. The survey does not state whether the container or crematory fee is included.",
+        "source": "Funeral Consumers Alliance of Greater Kansas City, Interactive Price Survey",
+        "url": "https://funeralskc.org/pricing/primary-information/"
+      },
+      {
+        "states": [
+          "Texas"
+        ],
+        "area": "Austin area (Bastrop, Caldwell, Hays, Travis and Williamson counties)",
+        "when": "collected January to March 2026 (price lists dated 2015 to 2026)",
+        "adjust": "each price adjusted from its own price-list month",
+        "n": 40,
+        "observedMedian": 2892.5,
+        "low": 695,
+        "high": 4210,
+        "todayMedian": 3100,
+        "definition": "Direct cremation including the crematory fee and an alternative container, transfer, permits, transportation to the crematory and the basic services fee (refrigeration may be extra).",
+        "source": "Funeral Consumers Alliance of Central Texas, 2026 Survey of Austin Area Funeral Homes",
+        "url": "https://www.fcactx.org/cost-comparisons.html"
+      },
+      {
+        "states": [
+          "Virginia"
+        ],
+        "area": "Roanoke and New River Valley (Montgomery, Roanoke, Giles, Floyd and Pulaski counties; Roanoke, Salem, Bedford and Radford)",
+        "when": "May 2026",
+        "adjust": "adjusted from May 2026",
+        "n": 33,
+        "observedMedian": 2645.0,
+        "low": 1340.0,
+        "high": 4000.0,
+        "todayMedian": 2632,
+        "definition": "Direct cremation from each General Price List, including the basic services fee. The survey does not state whether the container or crematory fee is included.",
+        "source": "Funeral Consumers Alliance of the Virginia Blue Ridge, funeral home price survey",
+        "url": "https://fcavbr.org/funeral-home-cemetery-prices/"
+      },
+      {
+        "states": [
+          "New York"
+        ],
+        "area": "Rochester area: Monroe County",
+        "when": "2026",
+        "adjust": "adjusted from the 2026 average to date",
+        "n": 27,
+        "observedMedian": 1990,
+        "low": 965,
+        "high": 3195,
+        "todayMedian": 2010,
+        "definition": "Direct cremation from each General Price List, not including the crematory fee (the survey says to add $275 to $320).",
+        "source": "Funeral Consumers Alliance of Greater Rochester, 2026 Funeral Home Price Survey",
+        "url": "https://www.fcagr.com/funeral-pricing.html"
+      },
+      {
+        "states": [
+          "New York"
+        ],
+        "area": "Rochester region: Genesee, Livingston, Ontario, Orleans, Seneca, Wayne and Yates counties",
+        "when": "2026",
+        "adjust": "adjusted from the 2026 average to date",
+        "n": 28,
+        "observedMedian": 2595.0,
+        "low": 1395,
+        "high": 3597,
+        "todayMedian": 2621,
+        "definition": "Direct cremation from each General Price List, not including the crematory fee (the survey says to add $275 to $320).",
+        "source": "Funeral Consumers Alliance of Greater Rochester, 2026 Funeral Home Price Survey",
+        "url": "https://www.fcagr.com/funeral-pricing.html"
+      },
+      {
+        "states": [
+          "Illinois"
+        ],
+        "area": "Champaign County",
+        "when": "June 2026",
+        "adjust": "adjusted from June 2026",
+        "n": 12,
+        "observedMedian": 2527.5,
+        "low": 995,
+        "high": 3950,
+        "todayMedian": 2518,
+        "definition": "Direct cremation including the basic services fee, removal, an alternative container, transportation, authorizations and the cremation; the $100 Illinois cremation permit is extra.",
+        "source": "Funeral Consumers Alliance of Champaign County, Funeral Home Price Survey (June 2026)",
+        "url": "https://funeralschampaigncounty.org/survey-results/"
+      }
+    ]
+  }
+}

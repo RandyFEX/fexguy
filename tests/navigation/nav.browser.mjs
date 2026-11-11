@@ -210,7 +210,7 @@ for (const width of [320, 375, 390, 768, 1024]) {
 }
 // Phone menu (V2.1): priority links plus the directory link per category;
 // tablets and desktop show every link.
-const PHONE_COUNTS = { 'life-insurance': 11, 'company-reviews': 9, 'health-eligibility': 8, 'guides-tools': 13, 'about-us': 6 };
+const PHONE_COUNTS = { 'life-insurance': 11, 'company-reviews': 9, 'health-eligibility': 8, 'guides-tools': 14, 'about-us': 6 };
 const shownLinks = (p, id) => p.$$eval(`#nav-panel-${id} a`, (els) => els.filter((e) => e.getClientRects().length).map((e) => e.textContent.trim()));
 for (const width of [320, 375, 390]) {
   await test(`phone ${width}: short categories, directory links, CICA Life, opened category at the top`, async () => {
@@ -244,7 +244,7 @@ for (const width of [768, 1024, 1200, 1440]) {
       if (width >= 1200) await p.mouse.move(width / 2, 780);
       if (width >= 1200) await p.waitForTimeout(700);
     }
-    assert.equal(total, 79, `menu has ${total} links`);
+    assert.equal(total, 80, `menu has ${total} links`);
     await p.context().close();
   });
 }
