@@ -1,5 +1,5 @@
 {
-  "note": "State-specific direct cremation figures, shown only where a funeral consumer organization publishes a statewide summary figure. Figures are shown as published (no inflation adjustment, no averaging across states). Map V3.6, Randy, November 2026.",
+  "note": "State direct cremation figures (Map V3.6/V3.7, Randy, November 2026). Washington: a published statewide survey average. Other states: medians calculated here from the direct cremation prices that Funeral Consumers Alliance affiliates publish for individual funeral homes, using only observations that share one definition. Figures are not inflation-adjusted and are never combined across states.",
   "retrieved": "2026-11-11",
   "states": {
     "Washington": {
@@ -12,15 +12,107 @@
       "definition": "The price each funeral home lists for Direct Cremation on its General Price List. The survey does not state whether a cremation container or crematory fee is included.",
       "source": "People's Memorial Association, 2024 Funeral Home Price Survey",
       "url": "https://peoplesmemorial.org/advocacy/price-survey.html"
+    },
+    "Arizona": {
+      "year": 2025,
+      "whenLabel": "2025 (completed October 2025)",
+      "kind": "calculated median",
+      "value": 1847.5,
+      "low": 610,
+      "high": 3435,
+      "n": 174,
+      "coverage": "statewide: all five regional reports, compiled from the Arizona State Board of Funeral Directors and Embalmers provider list",
+      "sample": "174 funeral providers with a direct cremation price; member-discount (contracted provider) prices excluded.",
+      "definition": "Minimum \"out the door\" price from each provider's General Price List: removal within 25 miles, arrangements, permits and death certificate filing, refrigeration for at least 3 days, basic services fee, delivery to the crematory, the cremation, a basic alternative container and a basic urn.",
+      "source": "Funeral Consumers Alliance of Arizona, 2025 Funeral Provider Price Comparison Reports",
+      "url": "https://www.fcaaz.org/price-comparison-report"
+    },
+    "Georgia": {
+      "year": 2026,
+      "whenLabel": "as listed November 2026 (price list dates vary)",
+      "kind": "calculated median",
+      "value": 2095,
+      "low": 800,
+      "high": 4160,
+      "n": 255,
+      "coverage": "statewide",
+      "sample": "255 Georgia funeral homes with a listed direct cremation price (362 others are marked \"needed\").",
+      "definition": "Standardized package taken from each General Price List: basic services fee, removal within 30 miles, refrigeration up to 72 hours, alternative container, crematory fee, basic container for the ashes, death certificate filing and Social Security notification.",
+      "source": "Funeral Consumers Alliance of Georgia, Funeral Home Pricing Comparison",
+      "url": "https://fcaga.org/pricing/fhpc/"
+    },
+    "Maryland": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2757.5,
+      "low": 925,
+      "high": 4774,
+      "n": 116,
+      "coverage": "statewide",
+      "sample": "116 of 258 Maryland establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf"
+    },
+    "Delaware": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2947.5,
+      "low": 1350,
+      "high": 5560,
+      "n": 32,
+      "coverage": "statewide",
+      "sample": "32 of 64 Delaware establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf"
+    },
+    "District of Columbia": {
+      "year": 2023,
+      "whenLabel": "2023",
+      "kind": "calculated median",
+      "value": 2195,
+      "low": 1305,
+      "high": 6800,
+      "n": 15,
+      "coverage": "District of Columbia",
+      "sample": "15 of 31 District of Columbia establishments listed (those whose price includes the crematory fee).",
+      "definition": "The establishment's least expensive direct cremation price from its General Price List, listed as including the crematory fee; it does not include a cremation container or urn. Establishments whose price excludes the crematory fee, or may not include it, are left out.",
+      "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey",
+      "url": "https://mdfunerals.org/wp-content/uploads/2024/01/Price-Survey-2023-final-1.2.24.pdf"
+    },
+    "Idaho": {
+      "year": 2024,
+      "whenLabel": "June 2024",
+      "kind": "calculated sample median",
+      "value": 1865,
+      "low": 1495,
+      "high": 2380,
+      "n": 9,
+      "coverage": "not statewide: responding mortuaries in Meridian, Boise, Payette, Emmett, Twin Falls and Lewiston",
+      "sample": "9 responding mortuaries whose direct cremation price includes an alternative container; member-discount prices excluded.",
+      "definition": "Direct cremation with no services or viewing from each mortuary's General Price List, including an alternative container. The survey does not state whether the crematory fee is included.",
+      "source": "Funeral Consumers Alliance of Idaho, Comparative Cost of Funeral Services in Idaho, June 2024",
+      "url": "https://idahofunerals.org/price-survey/"
     }
   },
   "checked": [
-    { "state": "Arizona", "source": "Funeral Consumers Alliance of Arizona, Price Comparison Report", "reason": "Regional listings of minimum \"out the door\" prices by funeral home; no published statewide figure (report PDFs could not be retrieved)." },
-    { "state": "Colorado", "source": "Funeral Consumer Society of Colorado, directory", "reason": "Per-provider listing; no published statewide figure." },
-    { "state": "Georgia", "source": "Funeral Consumers Alliance of Georgia, Funeral Home Pricing Comparison", "reason": "Per-funeral-home table; no published statewide figure." },
-    { "state": "Idaho", "source": "Funeral Consumers Alliance of Idaho, Comparative Cost of Funeral Services, June 2024", "reason": "Per-mortuary table; the referenced history of price ranges is not linked." },
-    { "state": "Maryland, Delaware and District of Columbia", "source": "Funeral Consumers Alliance of Maryland and Environs, 2023 Mortuary Price Survey", "reason": "Per-establishment least-expensive prices, generally excluding the crematory fee and container; no published summary figure." },
-    { "state": "Utah", "source": "Funeral Consumers Alliance of Utah, price comparison", "reason": "Links to individual price lists; no published statewide figure." },
-    { "state": "North Carolina", "source": "Funeral Consumers Alliance of North Carolina, price survey", "reason": "The survey page refused automated access." }
+    {
+      "state": "Colorado",
+      "source": "Funeral Consumer Society of Colorado, directory",
+      "reason": "Prices gathered over several years; the publisher says it cannot attest to their accuracy, particularly pricing. Not used."
+    },
+    {
+      "state": "Utah",
+      "source": "Funeral Consumers Alliance of Utah, price comparison",
+      "reason": "Links to individual price lists only; no compiled survey."
+    },
+    {
+      "state": "North Carolina",
+      "source": "Funeral Consumers Alliance of North Carolina, price survey",
+      "reason": "The survey page refused automated access."
+    }
   ]
 }

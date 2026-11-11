@@ -78,18 +78,25 @@ const vsNational = (state: string, pkg: Pkg) => {
 };
 const isCost = (metric: string) => metric.startsWith('cost:');
 const causeOf = (metric: string) => (isCost(metric) ? 'All causes' : metric);
-const metricValue = (state: string, metric: string) => (isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric));
+const metricValue = (state: string, metric: string) =>
+  metric === 'cost:direct' ? (DIRECT_MAP[state]?.value ?? null) : isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric);
 const metricText = (state: string, metric: string) => {
   const v = metricValue(state, metric);
   if (v == null) return `${state}: not available`;
   if (!isCost(metric)) return `${state}: ${v} deaths per 100,000`;
+  if (metric === 'cost:direct') { const d = DIRECT_MAP[state]!; return `${state}: direct cremation ${d.n ? `${d.kind} ${dcMoneyMap(v)} (${d.whenLabel ?? d.year})` : `${d.year} ${d.kind} ${money(v)}`}`; }
   return `${state} (${REGION_OF[state]?.name ?? 'U.S.'} region): estimated ${money(v)}`;
 };
 let onStateChange: (state: string) => void = () => {};
+// Direct cremation for map shading (declared before use; same data as DIRECT below).
+const DIRECT_MAP = directCremation.states as Record<string, { year: number; whenLabel?: string; kind: string; value: number; n?: number }>;
+const dcMoneyMap = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 
 // State direct cremation figures (Map V3.6): only where a funeral consumer
 // organization publishes a statewide summary figure; shown as published.
-type DC = { year: number; kind: string; value: number; low?: number; high?: number; source: string; definition: string };
+type DC = { year: number; whenLabel?: string; kind: string; value: number; low?: number; high?: number; n?: number; coverage?: string; source: string; definition: string };
+// Medians can end in .50: show cents only then.
+const dcMoney = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 const DIRECT = directCremation.states as Record<string, DC>;
 
 if (root) init();
@@ -114,7 +121,9 @@ function init() {
     }
     $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
     const mapNote = $<HTMLElement>('[data-fcm-mapnote]')!;
-    mapNote.textContent = isCost(metric)
+    mapNote.textContent = metric === 'cost:direct'
+      ? 'Map shading: direct cremation prices where a funeral consumer organization survey is available (gray: no data). Definitions and years differ by state; select a state to see what its figure includes. Darker means higher.'
+      : isCost(metric)
       ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on historical data. States in the same census region share one estimate. Darker means higher.`
       : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
   }
@@ -254,12 +263,14 @@ function initCosts() {
     const src = $<HTMLElement>('[data-fcm-price-src]')!;
     src.textContent = typed
       ? 'Using the price you entered.'
-      : est != null
-        ? `Filled in with the estimate for ${state === US ? 'the United States' : `${state} (${REGION_OF[state].name} region)`}. Replace it with a funeral home's price for a more accurate result.`
+      : est != null && !dc
+        ? `Filled in with the estimate for ${state === US ? 'the United States' : `${state} (${REGION_OF[state]?.name} region)`}. Replace it with a funeral home's price for a more accurate result.`
         : pkg
           ? `No estimate for ${state}. Enter a price from a funeral home's price list.`
           : 'No published estimate for direct cremation. Enter a price from a funeral home\'s price list.';
-    if (!typed && dc) src.textContent = `Filled in with the ${dc.year} ${dc.kind} for ${state}, used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`;
+    if (!typed && dc) src.textContent = dc.n
+      ? `Filled in with the ${dc.kind} for ${state} (${dc.whenLabel ?? dc.year}), used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`
+      : `Filled in with the ${dc.year} ${dc.kind} for ${state}, used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`;
   };
   const card = (label: string, pkg: Pkg) => {
     const est = estimate(state, pkg);
@@ -273,6 +284,7 @@ function initCosts() {
     const dc = DIRECT[state];
     if (!dc) return '<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published figure for this state</span></div>';
     const range = dc.low != null && dc.high != null ? `; range ${money(dc.low)} to ${money(dc.high)}` : '';
+    if (dc.n) return `<div class="fcm-stat"><strong>${dcMoney(dc.value)}</strong>Direct cremation<span class="fcm-stat__sub">${dc.whenLabel ?? dc.year}: ${dc.kind} of ${dc.n} funeral homes (${dc.coverage}), ${dc.source}${range}. ${dc.definition}</span></div>`;
     return `<div class="fcm-stat"><strong>${money(dc.value)}</strong>Direct cremation<span class="fcm-stat__sub">${dc.year} ${dc.kind}, ${dc.source}${range}. ${dc.definition}</span></div>`;
   };
   onStateChange = (s: string) => {

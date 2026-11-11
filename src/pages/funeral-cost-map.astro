@@ -64,6 +64,7 @@ const monthlyCpi = cpi.monthly as Record<string, Record<string, number>>;
 const refMonth = nfda.cpiReferenceMonth;
 const cpiFactor = monthlyCpi[lastYear][lastMonth] / monthlyCpi[refMonth.slice(0, 4)][`M${refMonth.slice(5)}`];
 const money = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`;
+const dcMoney = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 const vsNat = (v: number, n: number) => { const d = v / n - 1; return `${Math.abs(d * 100).toFixed(0)}% ${d >= 0 ? 'above' : 'below'}`; };
 const s2023 = nfda.sources.find((x) => x.year === 2023)!;
 const s2021 = nfda.sources.find((x) => x.year === 2021)!;
@@ -108,6 +109,7 @@ const jsonLd = [
             <select id="fcm-metric" data-fcm-metric>
               <option value="cost:burial" selected>Estimated cost: funeral with burial</option>
               <option value="cost:cremation">Estimated cost: funeral with cremation</option>
+              <option value="cost:direct">Direct cremation (states with survey data)</option>
               <option value="All causes">Death rate, all causes</option>
               {[...recent.leading, ...recent.other].map((c) => <option value={c}>Death rate: {c}</option>)}
             </select>
@@ -297,7 +299,9 @@ const jsonLd = [
       <p class="fcm-note">District of Columbia is not listed in NFDA's regional table, so no estimate is shown for it.</p>
       <p class="fcm-note">
         Direct cremation (no viewing or ceremony):{" "}
-        {Object.entries(directCremation.states).map(([st, d]) => `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
+        {Object.entries(directCremation.states).map(([st, d]) => 'n' in d
+          ? `${st}, ${d.whenLabel}: ${d.kind} ${dcMoney(d.value)} of ${d.n} funeral homes (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`
+          : `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
         No published figure is available for other states.
       </p>
     </section>
@@ -341,11 +345,14 @@ const jsonLd = [
           <a href={s2023.url} rel="noopener">NFDA 2023 release</a>.
         </li>
         <li>
-          <strong>Direct cremation:</strong> shown only for states where a funeral consumer organization publishes a
-          statewide summary figure, exactly as published (no inflation adjustment, no averaging across states or
-          regions). {Object.entries(directCremation.states).map(([st, d]) => `${st}: ${d.source}, ${d.year} ${d.kind} ${money(d.value)}, range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`).join(' ')}
-          Funeral Consumers Alliance affiliate surveys checked without a published statewide figure:
-          {directCremation.checked.map((c) => c.state).join(', ')}. NFDA's releases do not report direct cremation.
+          <strong>Direct cremation:</strong> shown only for states with a funeral consumer organization price survey:
+          Washington's published statewide average, and medians calculated here from the individual funeral-home prices
+          that Funeral Consumers Alliance affiliates publish, using only prices that share one definition. Figures are
+          not inflation-adjusted and are never combined across states; definitions and years differ by state.
+          {Object.entries(directCremation.states).map(([st, d]) => 'n' in d
+            ? `${st}: ${d.source}, ${d.whenLabel}, ${d.kind} ${dcMoney(d.value)} (${d.coverage}), range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`
+            : `${st}: ${d.source}, ${d.year} ${d.kind} ${money(d.value)}, range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`).join(' ')}
+          Not used: {directCremation.checked.map((c) => `${c.state} (${c.reason})`).join('; ')}. NFDA's releases do not report direct cremation.
         </li>
         <li>
           <strong>Check against 2021:</strong> NFDA's {s2021.date.slice(0, 4)} regional burial medians ("{s2021.title}"),
