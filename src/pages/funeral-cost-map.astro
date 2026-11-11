@@ -346,7 +346,8 @@ const jsonLd = [
       <p>Or call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
     </section>
 
-    <section class="fcm-card fcm-fine" aria-labelledby="fcm-rights-h">
+    <div class="fcm-card fcm-fine">
+    <section aria-labelledby="fcm-rights-h">
       <h2 id="fcm-rights-h" class="fcm-h2">Your Rights When You Buy a Funeral</h2>
       <p>The Federal Trade Commission's Funeral Rule (16 CFR Part 453) applies to funeral homes nationwide. Under it, a funeral home must:</p>
       <ul>
@@ -364,7 +365,7 @@ const jsonLd = [
       </p>
     </section>
 
-    <section class="fcm-card fcm-fine" aria-labelledby="fcm-method-h">
+    <section class="fcm-fine__next" aria-labelledby="fcm-method-h">
       <h2 id="fcm-method-h" class="fcm-h2">Sources and Methodology</h2>
       <ul>
         <li>
@@ -437,6 +438,7 @@ const jsonLd = [
       </ul>
       <p class="fcm-note">Last updated November 11, 2026.</p>
     </section>
+    </div>
   </div>
 </BaseLayout>
 
@@ -515,14 +517,16 @@ const jsonLd = [
   /* V4.8: the rights and methodology sections use the footer legal
      disclaimer's typography (12px, muted gray, line height 1.4), headings
      included, with compact spacing. Headings and labels stay bold. */
-  .fcm-card.fcm-fine { padding: var(--space-4); margin-top: var(--space-6); }
+  /* V4.9: both sections share one container, with minimal padding and a small gap between them. */
+  .fcm-card.fcm-fine { padding: var(--space-3); margin-top: var(--space-6); }
+  .fcm-fine__next { margin-top: var(--space-2); }
   .fcm-fine, .fcm-fine :is(h2, p, ul, li, strong, a, .fcm-note) { font-size: 0.75rem; line-height: 1.4; color: var(--color-text-muted); }
   .fcm-fine h2.fcm-h2 { margin: 0 0 var(--space-1); font-weight: 700; letter-spacing: normal; }
   .fcm-fine p { margin: 0 0 var(--space-1); }
   .fcm-fine ul { margin: 0 0 var(--space-1); padding-left: 1.25em; }
   .fcm-fine li { margin: 0 0 0.125rem; }
   .fcm-fine a { text-decoration: underline; }
-  .fcm-fine > :last-child { margin-bottom: 0; }
+  .fcm-fine section > :last-child { margin-bottom: 0; }
   .fcm-cta { margin-top: var(--space-8); padding: var(--space-6); background: var(--color-primary); color: var(--color-on-primary); border-radius: var(--radius); text-align: center; }
   .fcm-cta .fcm-h2 { color: var(--color-on-primary); }
   .fcm-cta a:not(.fcm-btn) { color: var(--color-on-primary); font-weight: 700; }
