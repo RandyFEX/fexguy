@@ -4,6 +4,8 @@
 // - BLS CPI series CUUR0000SEGD (funeral expenses), monthly, 2004 to now, via
 //   the public API v1 (10 years per request; no key).
 // - CDC/NCHS "Leading Causes of Death: United States" (data.cdc.gov bi63-dtpu).
+// - CDC/NCHS quarterly provisional death rates (489q-934x) and provisional
+//   deaths by sex and age (9bhg-hcku, year 2022) -> mortality-recent.json.
 // The state outlines (state-paths.json) come from us-atlas 3.0.1
 // states-albers-10m (U.S. Census Bureau boundaries) and rarely need rebuilding.
 import { writeFileSync } from 'node:fs';
@@ -55,6 +57,58 @@ async function mortality() {
   }));
 }
 
+async function recentMortality() {
+  const LEADING = ['Heart disease', 'Cancer', 'Unintentional injuries', 'Stroke', 'Chronic lower respiratory diseases', 'Alzheimer disease', 'Diabetes', 'Kidney disease', 'Chronic liver disease and cirrhosis', 'COVID-19', 'Influenza and pneumonia', 'Suicide', 'Hypertension', 'Parkinson disease', 'Pneumonitis due to solids and liquids'];
+  const OTHER = ['Drug overdose', 'Firearm-related injury', 'Homicide', 'Falls, ages 65 and over', 'HIV disease'];
+  const CAUSES = new Set(['All causes', ...LEADING, ...OTHER]);
+  const rows = (await (await fetch('https://data.cdc.gov/resource/489q-934x.json?$limit=50000')).json()).filter((r) => r.time_period.startsWith('12 months') && CAUSES.has(r.cause_of_death));
+  const quarters = [...new Set(rows.map((r) => r.year_and_quarter))].sort();
+  const latest = quarters.at(-1);
+  const num = (v) => (v == null || v === '' || !Number.isFinite(Number(v)) ? null : Number(v));
+  const stateName = (k) => k.slice(5).split('_').map((w) => (w === 'of' ? w : w[0].toUpperCase() + w.slice(1))).join(' ');
+  const skip = new Set(['rate_type', 'rate_overall', 'rate_sex_female', 'rate_sex_male', 'rate_65_74']);
+  const rates = {};
+  const us = {};
+  for (const r of rows) {
+    const c = r.cause_of_death;
+    if (r.rate_type === 'Age-adjusted') {
+      for (const k of Object.keys(r)) {
+        if (!k.startsWith('rate_') || skip.has(k) && k !== 'rate_overall' || k.startsWith('rate_age')) continue;
+        const st = k === 'rate_overall' ? 'United States' : stateName(k);
+        ((rates[st] ??= {})[c] ??= Array(quarters.length).fill(null))[quarters.indexOf(r.year_and_quarter)] = num(r[k]);
+      }
+      if (r.year_and_quarter === latest) Object.assign((us[c] ??= {}), { female: num(r.rate_sex_female), male: num(r.rate_sex_male) });
+    } else if (r.year_and_quarter === latest) {
+      (us[c] ??= {}).ages = { '45-54': num(r.rate_age_45_54), '55-64': num(r.rate_age_55_64), '65-74': num(r.rate_65_74), '75-84': num(r.rate_age_75_84), '85+': num(r.rate_age_85_plus) };
+    }
+  }
+  const sa = await (await fetch('https://data.cdc.gov/resource/9bhg-hcku.json?$limit=200000&year=2022')).json();
+  const AG = { '45-54 years': '45-54', '55-64 years': '55-64', '65-74 years': '65-74', '75-84 years': '75-84', '85 years and over': '85+', 'All Ages': 'All Ages' };
+  const deaths = {};
+  for (const r of sa) {
+    if (r.group !== 'By Year' || !AG[r.age_group]) continue;
+    ((deaths[r.state] ??= {})[r.sex] ??= {})[AG[r.age_group]] = num(r.total_deaths);
+  }
+  // NCHS reports New York City separately from the rest of New York State.
+  const nyc = deaths['New York City'];
+  for (const sex of Object.keys(deaths['New York'] ?? {})) for (const a of Object.keys(deaths['New York'][sex])) {
+    const x = deaths['New York'][sex][a], y = nyc?.[sex]?.[a];
+    deaths['New York'][sex][a] = x != null && y != null ? x + y : null;
+  }
+  delete deaths['New York City'];
+  delete deaths['Puerto Rico'];
+  writeFileSync(new URL('mortality-recent.json', OUT), JSON.stringify({
+    dataset: 'NCHS - VSRR Quarterly provisional estimates for selected indicators of mortality', id: '489q-934x',
+    source: 'Centers for Disease Control and Prevention, National Center for Health Statistics (Vital Statistics Rapid Release)',
+    sourceUrl: 'https://data.cdc.gov/NCHS/NCHS-VSRR-Quarterly-provisional-estimates-for-sele/489q-934x', retrieved: today,
+    status: 'Provisional', period: '12 months ending with quarter', latest, quarters,
+    measure: 'Age-adjusted death rate per 100,000 (2000 U.S. standard population); U.S. age-group rates are age-specific (crude) rates',
+    leading: LEADING, other: OTHER, rates, us,
+    deaths2022: { dataset: 'Provisional COVID-19 Deaths by Sex and Age', id: '9bhg-hcku', sourceUrl: 'https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-Sex-and-Age/9bhg-hcku', status: 'Provisional (data as of September 27, 2023)', year: 2022, measure: 'Deaths from all causes', note: 'New York includes New York City (reported separately by NCHS and added here).', data: deaths },
+  }));
+}
+
 await cpi();
 await mortality();
+await recentMortality();
 console.log('funeral-map data rebuilt', today);

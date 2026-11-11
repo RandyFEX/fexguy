@@ -1,18 +1,28 @@
-// /funeral-cost-map/ interactions (Randy, November 2026, Map V3.0). All data is
-// static (src/data/funeral-map/); nothing is sent anywhere. Dollar amounts are
-// calculated only from the price the visitor enters.
+// /funeral-cost-map/ interactions (Randy, November 2026, Map V3.0/V3.1). All
+// data is static (src/data/funeral-map/); nothing is sent anywhere. Dollar
+// amounts are calculated only from the price the visitor enters.
 import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
+import recent from '@/data/funeral-map/mortality-recent.json';
 
 type Row = [number, number];
 type YearData = Record<string, Row>;
-const STATES = mortality.states as unknown as Record<string, Record<string, YearData>>;
-const LATEST = String(mortality.years[1]);
-const FIRST = mortality.years[0];
+const FINAL = mortality.states as unknown as Record<string, Record<string, YearData>>;
+const FINAL_LATEST = String(mortality.years[1]);
+const FINAL_FIRST = mortality.years[0];
+const RATES = recent.rates as Record<string, Record<string, (number | null)[]>>;
+const Q = recent.quarters;
+const QI = Q.length - 1;
+const LEADING = recent.leading;
+const US_DEMO = recent.us as Record<string, { female?: number | null; male?: number | null; ages?: Record<string, number | null> }>;
+const DEATHS = recent.deaths2022.data as Record<string, Record<string, Record<string, number | null>>>;
+// Final (1999-2017) cause names that differ from the provisional dataset's.
+const FINAL_NAME: Record<string, string> = { 'Alzheimer disease': "Alzheimer's disease", 'Chronic lower respiratory diseases': 'CLRD' };
 const US = 'United States';
 const monthly = cpi.monthly as Record<string, Record<string, number>>;
 
 const $ = <T extends Element>(sel: string) => document.querySelector<T>(sel);
+const $$ = <T extends Element>(sel: string) => [...document.querySelectorAll<T>(sel)];
 const root = $<HTMLElement>('.fcm');
 
 const num = (n: number) => n.toLocaleString('en-US');
@@ -35,6 +45,16 @@ const BACK = [5, 10, 15, 20].map((n) => ({ n, year: lastYear - n, value: idx(las
 const twenty = BACK.find((b) => b.n === 20);
 const DEFAULT_RATE = twenty ? Math.pow(current / twenty.value!, 1 / 20) - 1 : null;
 
+// Each cause's latest published quarter (injury causes lag a quarter or more).
+const latestIdx = (cause: string) => {
+  const us = RATES[US]?.[cause] ?? [];
+  for (let i = us.length - 1; i >= 0; i--) if (us[i] != null) return i;
+  return QI;
+};
+const QEND: Record<string, string> = { Q1: 'March', Q2: 'June', Q3: 'September', Q4: 'December' };
+const qLabel = (i: number) => { const [y, q] = Q[i].split(' '); return `${QEND[q]} ${y}`; };
+const rateOf = (state: string, cause: string, i = latestIdx(cause)) => RATES[state]?.[cause]?.[i] ?? null;
+
 if (root) init();
 
 function init() {
@@ -45,20 +65,18 @@ function init() {
   const pathsEls = [...svg.querySelectorAll<SVGPathElement>('path[data-state]')];
   const shades = ['#e3ece8', '#b9cec6', '#7fa597', '#3f7263', '#173f35'];
 
-  const value = (state: string, metric: string) => STATES[state]?.[LATEST]?.[metric]?.[1] ?? null;
-
   function colorMap() {
     const metric = metricSel.value;
-    const vals = pathsEls.map((p) => value(p.dataset.state!, metric)).filter((v): v is number => v != null).sort((a, b) => a - b);
+    const vals = pathsEls.map((p) => rateOf(p.dataset.state!, metric)).filter((v): v is number => v != null).sort((a, b) => a - b);
     const cut = (q: number) => vals[Math.min(vals.length - 1, Math.floor(q * vals.length))];
     const bounds = [0.2, 0.4, 0.6, 0.8].map(cut);
     for (const p of pathsEls) {
-      const v = value(p.dataset.state!, metric);
+      const v = rateOf(p.dataset.state!, metric);
       p.style.fill = v == null ? '#eeeeee' : shades[bounds.filter((b) => v >= b).length];
-      p.querySelector('title')!.textContent = `${p.dataset.state}: ${v == null ? 'no data' : `${v} per 100,000`}`;
+      p.querySelector('title')!.textContent = `${p.dataset.state}: ${v == null ? 'not available' : `${v} per 100,000`}`;
     }
-    const legend = $<HTMLElement>('[data-fcm-legend]')!;
-    legend.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
+    $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
+    $<HTMLElement>('[data-fcm-period]')!.textContent = `12 months ending ${qLabel(latestIdx(metric))}`;
   }
 
   function select(state: string) {
@@ -73,8 +91,8 @@ function init() {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(p.dataset.state!); }
     });
     p.addEventListener('mouseenter', () => {
-      const v = value(p.dataset.state!, metricSel.value);
-      tip.textContent = `${p.dataset.state}: ${v == null ? 'no data' : `${v} deaths per 100,000`}`;
+      const v = rateOf(p.dataset.state!, metricSel.value);
+      tip.textContent = `${p.dataset.state}: ${v == null ? 'not available' : `${v} deaths per 100,000`}`;
       tip.hidden = false;
     });
     p.addEventListener('mouseleave', () => { tip.hidden = true; });
@@ -88,53 +106,82 @@ function init() {
 }
 
 function renderMortality(state: string, metric: string) {
-  const y = STATES[state]?.[LATEST] ?? {};
-  const us = STATES[US]?.[LATEST] ?? {};
-  const all = y['All causes'];
-  $<HTMLElement>('[data-fcm-name]')!.textContent = state;
-  const rows = Object.entries(y).filter(([c]) => c !== 'All causes').sort((a, b) => b[1][0] - a[1][0]);
-  $<HTMLElement>('[data-fcm-causes]')!.innerHTML = rows.map(([c, [d, r]], i) => {
-    const ur = us[c]?.[1];
-    const diff = ur ? r / ur - 1 : null;
+  for (const el of $$<HTMLElement>('[data-fcm-name]')) el.textContent = state;
+  for (const el of $$<HTMLElement>('[data-fcm-trend-cause]')) el.textContent = metric;
+  // Latest rates, highest first, among the leading causes.
+  const rows = LEADING.map((c) => [c, rateOf(state, c), rateOf(US, c)] as const).filter((r) => r[1] != null).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 10);
+  $<HTMLElement>('[data-fcm-causes]')!.innerHTML = rows.map(([c, r, u], i) => {
+    const diff = u ? (r as number) / u - 1 : null;
     const vs = state === US || diff == null ? 'n/a' : `${diff > 0 ? '+' : ''}${pct(diff, 0)}`;
-    return `<tr><td>${i + 1}</td><td>${c}</td><td>${num(d)}</td><td>${all ? pct(d / all[0]) : 'n/a'}</td><td>${r}</td><td>${vs}</td></tr>`;
-  }).join('') || '<tr><td colspan="6">No data for this state.</td></tr>';
-  const usAll = us['All causes'];
-  $<HTMLElement>('[data-fcm-total]')!.textContent = all
-    ? `All causes: ${num(all[0])} deaths; age-adjusted death rate ${all[1]} per 100,000${state !== US && usAll ? ` (U.S.: ${usAll[1]}, ${all[1] >= usAll[1] ? 'higher' : 'lower'} by ${pct(Math.abs(all[1] / usAll[1] - 1), 0)})` : ''}.`
+    const lag = latestIdx(c) < QI ? '<sup>†</sup>' : '';
+    return `<tr><td>${i + 1}</td><td>${c}${lag}</td><td>${r}</td><td>${u ?? 'n/a'}</td><td>${vs}</td></tr>`;
+  }).join('') || '<tr><td colspan="5">No data for this state.</td></tr>';
+  const lagged = rows.filter(([c]) => latestIdx(c) < QI).map(([c]) => `${c}: 12 months ending ${qLabel(latestIdx(c))}`);
+  $<HTMLElement>('[data-fcm-lag]')!.textContent = lagged.length ? `†Latest published period: ${lagged.join('; ')}.` : '';
+  const all = rateOf(state, 'All causes');
+  const usAll = rateOf(US, 'All causes');
+  $<HTMLElement>('[data-fcm-total]')!.textContent = all != null
+    ? `All causes: ${all} deaths per 100,000${state !== US && usAll ? ` (U.S.: ${usAll}; ${all >= usAll ? 'higher' : 'lower'} by ${pct(Math.abs(all / usAll - 1), 0)})` : ''}.`
     : '';
-  renderTrend(state, metric);
-}
 
-function renderTrend(state: string, metric: string) {
-  $<HTMLElement>('[data-fcm-trend-cause]')!.textContent = metric;
-  const series = (s: string) => {
-    const out: [number, number][] = [];
-    for (let yr = FIRST; yr <= Number(LATEST); yr++) {
-      const v = STATES[s]?.[String(yr)]?.[metric]?.[1];
-      if (v != null) out.push([yr, v]);
-    }
+  // Recent trend: 12-month rates ending each quarter.
+  const qx = (i: number) => i;
+  trendChart($<HTMLElement>('[data-fcm-trend]')!, state, metric,
+    Q.map((q, i) => [qx(i), rateOf(state, metric, i)] as [number, number | null]),
+    state === US ? [] : Q.map((q, i) => [qx(i), rateOf(US, metric, i)] as [number, number | null]),
+    [Q[0], Q[QI]], (i) => Q[i], '12-month age-adjusted death rate per 100,000, provisional');
+
+  // Deaths by age and sex (2022, all causes).
+  const d = DEATHS[state];
+  const AGES = ['45-54', '55-64', '65-74', '75-84', '85+', 'All Ages'];
+  const cell = (sex: string, a: string) => { const v = d?.[sex]?.[a]; return v == null ? 'n/a' : num(v); };
+  $<HTMLElement>('[data-fcm-agesex]')!.innerHTML = d
+    ? AGES.map((a) => `<tr><th scope="row">${a === 'All Ages' ? 'All ages' : a}</th><td>${cell('Male', a)}</td><td>${cell('Female', a)}</td><td>${cell('All Sexes', a)}</td></tr>`).join('')
+    : '<tr><td colspan="4">No data for this state.</td></tr>';
+
+  // U.S. by sex and age for the selected cause.
+  const demo = US_DEMO[metric];
+  const demoRows: [string, number | null | undefined][] = [['Men (age-adjusted)', demo?.male], ['Women (age-adjusted)', demo?.female], ...Object.entries(demo?.ages ?? {}).map(([a, v]) => [`Ages ${a}`, v] as [string, number | null])];
+  $<HTMLElement>('[data-fcm-usdemo]')!.innerHTML = demoRows.map(([g, v]) => `<tr><th scope="row">${g}</th><td>${v == null ? 'n/a' : v}</td></tr>`).join('');
+
+  // Final 1999-2017 data (collapsed section).
+  const fy = FINAL[state]?.[FINAL_LATEST] ?? {};
+  const fall = fy['All causes'];
+  const frows = Object.entries(fy).filter(([c]) => c !== 'All causes').sort((a, b) => b[1][0] - a[1][0]);
+  $<HTMLElement>('[data-fcm-causes-final]')!.innerHTML = frows.map(([c, [dd, r]], i) => `<tr><td>${i + 1}</td><td>${c}</td><td>${num(dd)}</td><td>${fall ? pct(dd / fall[0]) : 'n/a'}</td><td>${r}</td></tr>`).join('') || '<tr><td colspan="5">No data.</td></tr>';
+  const fname = FINAL_NAME[metric] ?? metric;
+  const fseries = (s: string) => {
+    const out: [number, number | null][] = [];
+    for (let yr = FINAL_FIRST; yr <= Number(FINAL_LATEST); yr++) out.push([yr, FINAL[s]?.[String(yr)]?.[fname]?.[1] ?? null]);
     return out;
   };
-  const a = series(state);
-  const b = state === US ? [] : series(US);
+  const fel = $<HTMLElement>('[data-fcm-trend-final]')!;
+  if (fseries(state).some((p) => p[1] != null)) {
+    trendChart(fel, state, fname, fseries(state), state === US ? [] : fseries(US), [String(FINAL_FIRST), FINAL_LATEST], (yr) => String(yr), 'Age-adjusted death rate per 100,000, final data');
+  } else fel.innerHTML = `<p class="fcm-note">${metric} is not in the 1999 to ${FINAL_LATEST} dataset.</p>`;
+}
+
+function trendChart(el: HTMLElement, state: string, metric: string, a0: [number, number | null][], b0: [number, number | null][], ends: [string, string], label: (x: number) => string, unit: string) {
+  const a = a0.filter((p): p is [number, number] => p[1] != null);
+  const b = b0.filter((p): p is [number, number] => p[1] != null);
+  if (!a.length) { el.innerHTML = '<p class="fcm-note">Not available for this state.</p>'; return; }
+  const xs = a0.map((p) => p[0]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs);
   const all = [...a, ...b].map((p) => p[1]);
-  const el = $<HTMLElement>('[data-fcm-trend]')!;
-  if (!a.length) { el.textContent = 'No trend data for this state.'; return; }
   const W = 600, H = 200, P = 34;
   const min = Math.min(...all) * 0.9, max = Math.max(...all) * 1.05;
-  const x = (yr: number) => P + ((yr - FIRST) / (Number(LATEST) - FIRST)) * (W - P * 2);
+  const x = (v: number) => P + ((v - x0) / (x1 - x0 || 1)) * (W - P * 2);
   const yy = (v: number) => H - P - ((v - min) / (max - min || 1)) * (H - P * 2);
-  const line = (pts: [number, number][]) => pts.map(([yr, v]) => `${x(yr).toFixed(1)},${yy(v).toFixed(1)}`).join(' ');
+  const line = (pts: [number, number][]) => pts.map(([xv, v]) => `${x(xv).toFixed(1)},${yy(v).toFixed(1)}`).join(' ');
   const first = a[0], last = a[a.length - 1];
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${metric} death rate in ${state}: ${first[1]} per 100,000 in ${first[0]}, ${last[1]} in ${last[0]}.">
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${metric} in ${state}: ${first[1]} per 100,000 in ${label(first[0])}, ${last[1]} in ${label(last[0])}.">
     <line x1="${P}" y1="${H - P}" x2="${W - P}" y2="${H - P}" stroke="#ddd7ca"/>
-    <text x="${P}" y="${H - 10}" font-size="12">${FIRST}</text><text x="${W - P}" y="${H - 10}" font-size="12" text-anchor="end">${LATEST}</text>
+    <text x="${P}" y="${H - 10}" font-size="12">${ends[0]}</text><text x="${W - P}" y="${H - 10}" font-size="12" text-anchor="end">${ends[1]}</text>
     <text x="${P}" y="14" font-size="12">${max.toFixed(0)}</text><text x="${P}" y="${H - P - 4}" font-size="12">${min.toFixed(0)}</text>
     ${b.length ? `<polyline points="${line(b)}" fill="none" stroke="#9aa39f" stroke-width="2" stroke-dasharray="5 4"/>` : ''}
     <polyline points="${line(a)}" fill="none" stroke="#173f35" stroke-width="3"/>
   </svg>
-  <p class="fcm-note">Age-adjusted deaths per 100,000. Solid: ${state}${b.length ? '; dashed: United States' : ''}. ${first[0]}: ${first[1]}; ${last[0]}: ${last[1]}.</p>`;
+  <p class="fcm-note">${unit}. Solid: ${state}${b.length ? '; dashed: United States' : ''}. ${label(first[0])}: ${first[1]}; ${label(last[0])}: ${last[1]}.</p>`;
 }
 
 function initCosts() {

@@ -5,7 +5,11 @@
 // one page; no lead gate. Data (src/data/funeral-map/, rebuilt by
 // scripts/funeral-map/build-data.mjs):
 //   - BLS CPI series CUUR0000SEGD (funeral expenses, national, monthly);
-//   - CDC/NCHS "Leading Causes of Death" (bi63-dtpu), by state, 1999-2017;
+//   - CDC/NCHS quarterly provisional death rates (489q-934x), by state, latest
+//     12 months (map, leading causes, recent trend; national by age and sex);
+//   - CDC/NCHS provisional deaths by sex and age (9bhg-hcku), by state, 2022;
+//   - CDC/NCHS "Leading Causes of Death" (bi63-dtpu), by state, 1999-2017 (final
+//     counts and long-term trend);
 //   - state outlines: us-atlas 3.0.1 (U.S. Census Bureau boundaries).
 // No funeral prices in dollars are shown as data: no reusable source was
 // available (see the methodology section). Visitors can enter a price from a
@@ -16,6 +20,7 @@ import { lead } from '@/config/lead';
 import paths from '@/data/funeral-map/state-paths.json';
 import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
+import recent from '@/data/funeral-map/mortality-recent.json';
 
 type Row = [number, number];
 const LATEST = String(mortality.years[1]);
@@ -23,12 +28,25 @@ const states = mortality.states as unknown as Record<string, Record<string, Reco
 const stateNames = paths.states.map((s) => s.name).sort();
 const fmt = (n: number) => n.toLocaleString('en-US');
 
-// Crawlable summary: every state's latest-year all-cause figures and leading cause.
+// Latest provisional period (12 months ending with the latest quarter).
+const rates = recent.rates as Record<string, Record<string, (number | null)[]>>;
+const QI = recent.quarters.length - 1;
+const QEND: Record<string, string> = { Q1: 'March', Q2: 'June', Q3: 'September', Q4: 'December' };
+const [qYear, qQ] = recent.latest.split(' ');
+const periodLabel = `12 months ending ${QEND[qQ]} ${qYear}`;
+const deaths22 = recent.deaths2022.data as Record<string, Record<string, Record<string, number | null>>>;
+
+// Crawlable summary: every state's latest all-cause rate, its highest-rate leading
+// cause, and its 2022 deaths (all causes).
+const latestIdx = (cause: string) => {
+  const us = rates['United States']?.[cause] ?? [];
+  for (let i = us.length - 1; i >= 0; i--) if (us[i] != null) return i;
+  return QI;
+};
 const tableRows = [...stateNames, 'United States'].map((name) => {
-  const y = states[name]?.[LATEST] ?? {};
-  const all = y['All causes'];
-  const top = Object.entries(y).filter(([c]) => c !== 'All causes').sort((a, b) => b[1][0] - a[1][0])[0];
-  return { name, deaths: all?.[0] ?? null, aadr: all?.[1] ?? null, top: top?.[0] ?? null, topDeaths: top?.[1][0] ?? null };
+  const r = rates[name] ?? {};
+  const top = recent.leading.map((c) => [c, r[c]?.[latestIdx(c)] ?? null] as const).filter((x) => x[1] != null).sort((a, b) => (b[1] as number) - (a[1] as number))[0];
+  return { name, rate: r['All causes']?.[QI] ?? null, top: top?.[0] ?? null, topRate: top?.[1] ?? null, deaths: deaths22[name]?.['All Sexes']?.['All Ages'] ?? null };
 });
 
 // Latest published CPI month (for the "updated" line).
@@ -76,7 +94,7 @@ const jsonLd = [
             <span>Color the map by</span>
             <select id="fcm-metric" data-fcm-metric>
               <option value="All causes">Death rate, all causes</option>
-              {mortality.causes.map((c) => <option value={c}>Death rate: {c}</option>)}
+              {[...recent.leading, ...recent.other].map((c) => <option value={c}>Death rate: {c}</option>)}
             </select>
           </label>
         </div>
@@ -90,25 +108,57 @@ const jsonLd = [
         </div>
         <div class="fcm-legend" data-fcm-legend aria-hidden="true"></div>
         <p class="fcm-note">
-          Map shading: age-adjusted death rate per 100,000 people, {LATEST}, CDC/NCHS. Darker means higher.
+          Map shading: age-adjusted death rate per 100,000 people, <span data-fcm-period>{periodLabel}</span> (provisional), CDC/NCHS. Darker means higher.
         </p>
       </section>
 
       <section class="fcm-panel" aria-labelledby="fcm-mort-h" aria-live="polite">
-        <h2 id="fcm-mort-h" class="fcm-h2">Leading causes of death: <span data-fcm-name>United States</span>, {LATEST}</h2>
+        <h2 id="fcm-mort-h" class="fcm-h2">Leading causes of death: <span data-fcm-name>United States</span></h2>
+        <p class="fcm-note">Age-adjusted death rates, {periodLabel} (provisional), ordered from highest to lowest rate.</p>
         <div class="fcm-scroll" tabindex="0">
           <table class="fcm-table">
-            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Deaths</th><th scope="col">Share of deaths</th><th scope="col">Death rate*</th><th scope="col">vs. U.S. rate</th></tr></thead>
+            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Death rate*</th><th scope="col">U.S. rate</th><th scope="col">vs. U.S.</th></tr></thead>
             <tbody data-fcm-causes></tbody>
           </table>
         </div>
+        <p class="fcm-note" data-fcm-lag></p>
         <p class="fcm-note" data-fcm-total></p>
         <p class="fcm-note">
-          *Age-adjusted death rate per 100,000 people (2000 U.S. standard population). All ages and both sexes combined.
+          *Deaths per 100,000 people, age-adjusted to the 2000 U.S. standard population, all ages and both sexes.
           These are population statistics; they do not predict any one person's lifespan.
         </p>
-        <h3 class="fcm-h3">Trend, 1999 to {LATEST}: <span data-fcm-trend-cause>All causes</span></h3>
+        <h3 class="fcm-h3">Recent trend: <span data-fcm-trend-cause>All causes</span></h3>
         <div class="fcm-trend" data-fcm-trend></div>
+
+        <h3 class="fcm-h3">Deaths by age and sex, {recent.deaths2022.year}: <span data-fcm-name>United States</span></h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Age</th><th scope="col">Men</th><th scope="col">Women</th><th scope="col">Total</th></tr></thead>
+            <tbody data-fcm-agesex></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">Deaths from all causes (provisional). CDC does not publish causes by age and sex for each state in a downloadable table.</p>
+
+        <h3 class="fcm-h3">U.S. death rate by age and sex: <span data-fcm-trend-cause>All causes</span></h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Group</th><th scope="col">Deaths per 100,000</th></tr></thead>
+            <tbody data-fcm-usdemo></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">National only, {periodLabel} (provisional). Men and women: age-adjusted rates. Age groups: rates for that age.</p>
+
+        <details class="fcm-details">
+          <summary>Deaths by cause and long-term trend, 1999 to {LATEST} (final data)</summary>
+          <div class="fcm-scroll" tabindex="0">
+            <table class="fcm-table">
+              <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Deaths, {LATEST}</th><th scope="col">Share of deaths</th><th scope="col">Death rate*</th></tr></thead>
+              <tbody data-fcm-causes-final></tbody>
+            </table>
+          </div>
+          <div class="fcm-trend" data-fcm-trend-final></div>
+          <p class="fcm-note">{LATEST} is the latest year in CDC's downloadable state table of final death counts by cause.</p>
+        </details>
       </section>
     </div>
 
@@ -210,13 +260,14 @@ const jsonLd = [
     </section>
 
     <section class="fcm-card" aria-labelledby="fcm-states-h">
-      <h2 id="fcm-states-h" class="fcm-h2">Deaths and leading cause by state, {LATEST}</h2>
+      <h2 id="fcm-states-h" class="fcm-h2">Death rates and leading cause by state</h2>
+      <p class="fcm-note">Age-adjusted death rates per 100,000, {periodLabel} (provisional; for causes whose latest quarter is not yet published, the latest published 12 months). Deaths: {recent.deaths2022.year}, all causes (provisional).</p>
       <div class="fcm-scroll" tabindex="0">
         <table class="fcm-table">
-          <thead><tr><th scope="col">State</th><th scope="col">Deaths, all causes</th><th scope="col">Age-adjusted death rate</th><th scope="col">Leading cause</th><th scope="col">Deaths from it</th></tr></thead>
+          <thead><tr><th scope="col">State</th><th scope="col">Death rate, all causes</th><th scope="col">Highest-rate cause</th><th scope="col">Its death rate</th><th scope="col">Deaths, {recent.deaths2022.year}</th></tr></thead>
           <tbody>
             {tableRows.map((r) => (
-              <tr><th scope="row">{r.name}</th><td>{r.deaths != null ? fmt(r.deaths) : 'n/a'}</td><td>{r.aadr ?? 'n/a'}</td><td>{r.top ?? 'n/a'}</td><td>{r.topDeaths != null ? fmt(r.topDeaths) : 'n/a'}</td></tr>
+              <tr><th scope="row">{r.name}</th><td>{r.rate ?? 'n/a'}</td><td>{r.top ?? 'n/a'}</td><td>{r.topRate ?? 'n/a'}</td><td>{r.deaths != null ? fmt(r.deaths) : 'n/a'}</td></tr>
             ))}
           </tbody>
         </table>
@@ -241,7 +292,16 @@ const jsonLd = [
           prices for your state.
         </li>
         <li>
-          <strong>Causes of death:</strong> {mortality.source}, "{mortality.dataset}" ({mortality.years[0]} to
+          <strong>Recent death rates:</strong> {recent.source}, "{recent.dataset}", {periodLabel} and each earlier
+          quarter back to {recent.quarters[0]}, retrieved {recent.retrieved}. Provisional figures can change.
+          <a href={recent.sourceUrl} rel="noopener">CDC data</a>.
+        </li>
+        <li>
+          <strong>Deaths by age and sex:</strong> CDC/NCHS, "{recent.deaths2022.dataset}", {recent.deaths2022.year},
+          {recent.deaths2022.status}. {recent.deaths2022.note} <a href={recent.deaths2022.sourceUrl} rel="noopener">CDC data</a>.
+        </li>
+        <li>
+          <strong>Final deaths by cause:</strong> {mortality.source}, "{mortality.dataset}" ({mortality.years[0]} to
           {mortality.years[1]}), retrieved {mortality.retrieved}. {mortality.scope}. {LATEST} is the latest year in this
           dataset. <a href={mortality.sourceUrl} rel="noopener">CDC data</a>.
         </li>
@@ -285,6 +345,8 @@ const jsonLd = [
   .fcm-table th, .fcm-table td { padding: var(--space-2); border-bottom: 1px solid var(--color-border); text-align: left; }
   .fcm-table td { font-variant-numeric: tabular-nums; }
   .fcm-trend svg { width: 100%; height: auto; }
+  .fcm-details { margin-top: var(--space-6); }
+  .fcm-details summary { cursor: pointer; font-weight: 700; min-height: var(--tap-target); display: flex; align-items: center; }
   .fcm-card { margin-top: var(--space-8); padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius); }
   .fcm-hist { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
   @media (min-width: 48rem) { .fcm-hist { grid-template-columns: repeat(4, 1fr); } }
