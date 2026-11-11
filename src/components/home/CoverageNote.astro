@@ -3,9 +3,10 @@
 // white background between Why FEXGuy and the reviews (the "What I Help
 // People With" section was removed in the V1.0 homepage cleanup, Randy,
 // November 2026). Same heading scale as the other sections, no gold rule.
-// V4.4 (Randy, November 2026): the same white section ends with the
-// "Funeral Cost and Mortality Map by State" heading (same style as the first
-// heading) and a simplified state map. Each state is a plain link that opens
+// V4.4/V4.7 (Randy, November 2026): the same white section opens with the
+// "Expected Final Expense Cost & Life Expectancy by State" heading (same
+// style as the coverage heading) and a simplified state map, followed by the
+// coverage heading and text. Each state is a plain link that opens
 // /funeral-cost-map/?state=XX in a new tab.
 import { coverage } from '@/lib/home/content';
 import paths from '@/data/funeral-map/state-paths.json';
@@ -22,9 +23,7 @@ const LABELS = labels as Record<string, Label>;
 
 <section class="cover" aria-labelledby="cover-title">
   <div class="container">
-    <h2 class="cover__title" id="cover-title">{coverage.title}</h2>
-    <p class="cover__text">{coverage.text}</p>
-    <h2 class="cover__title cover__title--map" id="cover-map-title">Expected Final Expense Cost and Life Expectancy by State</h2>
+    <h2 class="cover__title" id="cover-map-title">Expected Final Expense Cost &amp; Life Expectancy by State</h2>
     <div class="cover-map" data-home-map>
       <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
         {paths.states.map((s) => (
@@ -54,6 +53,8 @@ const LABELS = labels as Record<string, Label>;
       </svg>
       <p class="cover-map__tip" data-home-map-tip hidden></p>
     </div>
+    <h2 class="cover__title cover__title--after-map" id="cover-title">{coverage.title}</h2>
+    <p class="cover__text">{coverage.text}</p>
   </div>
 </section>
 
@@ -74,7 +75,7 @@ const LABELS = labels as Record<string, Label>;
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
-  .cover__title--map {
+  .cover__title--after-map {
     margin-top: var(--space-12);
   }
   /* Phones: left-aligned, easier to read over several lines; centered under
