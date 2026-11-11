@@ -81,6 +81,7 @@ export default defineConfig({
         // /search/ is an internal search-results page (noindex, follow).
         // /facebook/, /free-quote/, /get-rates/ and /help/ are noindex landing pages (src/pages/).
         // /health-question-search-preview/ is a non-indexed review page.
+        // /trin-fbl/ is a client documents page sent by direct link (noindex, nofollow).
         return (
           !path.startsWith('/404') &&
           path !== '/search/' &&
@@ -89,6 +90,7 @@ export default defineConfig({
           path !== '/get-rates/' &&
           path !== '/help/' &&
           path !== '/health-question-search-preview/' &&
+          path !== '/trin-fbl/' &&
           !excluded.has(path)
         );
       },
