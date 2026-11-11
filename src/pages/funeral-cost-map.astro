@@ -23,6 +23,7 @@ import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
 import directCremation from '@/data/funeral-map/direct-cremation.json';
+import le from '@/data/funeral-map/life-expectancy.json';
 
 type Row = [number, number];
 const LATEST = String(mortality.years[1]);
@@ -96,16 +97,6 @@ const jsonLd = [
     <div class="fcm-grid">
       <section class="fcm-map" aria-labelledby="fcm-map-h">
         <h2 id="fcm-map-h" class="fcm-h2">Choose a state</h2>
-        <form class="fcm-zip" data-fcm-zip>
-          <label class="fcm-field">
-            <span>ZIP code (optional)</span>
-            <span class="fcm-zip__row">
-              <input type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" data-fcm-zip-input aria-describedby="fcm-zip-msg" />
-              <button type="submit" class="fcm-zip__btn">Find</button>
-            </span>
-          </label>
-          <p class="fcm-note" id="fcm-zip-msg" data-fcm-zip-msg aria-live="polite">Finds your state and any local price survey for your area.</p>
-        </form>
         <div class="fcm-controls">
           <label class="fcm-field">
             <span>State</span>
@@ -139,64 +130,77 @@ const jsonLd = [
         </p>
       </section>
 
-      <section class="fcm-panel" aria-labelledby="fcm-mort-h" aria-live="polite">
-        <h2 id="fcm-mort-h" class="fcm-h2">Leading causes of death: <span data-fcm-name>United States</span></h2>
-        <p class="fcm-note">Age-adjusted death rates, {periodLabel} (provisional), ordered from highest to lowest rate.</p>
-        <div class="fcm-scroll" tabindex="0">
-          <table class="fcm-table">
-            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Death rate*</th><th scope="col">U.S. rate</th><th scope="col">vs. U.S.</th><th scope="col">Deaths, {recent.counts2022.year}‡</th><th scope="col">Share of deaths, {recent.counts2022.year}‡</th></tr></thead>
-            <tbody data-fcm-causes></tbody>
-          </table>
+      <section class="fcm-panel fcm-sum" aria-labelledby="fcm-sum-h">
+        <h2 id="fcm-sum-h" class="fcm-sum__name" data-fcm-sum-name aria-live="polite">United States</h2>
+        <div class="fcm-sum__block">
+          <h3 class="fcm-sum__h">Life expectancy</h3>
+          <dl class="fcm-rows" data-fcm-sum-le></dl>
+          <p class="fcm-note">{le.year}, NCHS life tables (all residents). Population averages, not a prediction for any one person.</p>
         </div>
-        <p class="fcm-note" data-fcm-lag></p>
-        <p class="fcm-note">‡{recent.counts2022.note} n/a: not reported for that cause.</p>
-        <p class="fcm-note" data-fcm-total></p>
-        <p class="fcm-note">
-          *Deaths per 100,000 people, age-adjusted to the 2000 U.S. standard population, all ages and both sexes.
-          These are population statistics; they do not predict any one person's lifespan.
-        </p>
-        <h3 class="fcm-h3">Recent trend: <span data-fcm-trend-cause>All causes</span></h3>
-        <div class="fcm-trend" data-fcm-trend></div>
-
-        <h3 class="fcm-h3">Deaths by age and sex, {recent.deaths2022.year}: <span data-fcm-name>United States</span></h3>
-        <div class="fcm-scroll" tabindex="0">
-          <table class="fcm-table">
-            <thead><tr><th scope="col">Age</th><th scope="col">Men</th><th scope="col">Women</th><th scope="col">Total</th></tr></thead>
-            <tbody data-fcm-agesex></tbody>
-          </table>
+        <div class="fcm-sum__block">
+          <h3 class="fcm-sum__h">Funeral costs</h3>
+          <p class="fcm-note">Estimated funeral cost based on historical data</p>
+          <dl class="fcm-rows" data-fcm-sum-costs></dl>
+          <p class="fcm-note" data-fcm-sum-costnote></p>
         </div>
-        <p class="fcm-note">Deaths from all causes (provisional). CDC does not publish causes by age and sex for each state in a downloadable table.</p>
-
-        <h3 class="fcm-h3">U.S. death rate by age and sex: <span data-fcm-trend-cause>All causes</span></h3>
-        <div class="fcm-scroll" tabindex="0">
-          <table class="fcm-table">
-            <thead><tr><th scope="col">Group</th><th scope="col">Deaths per 100,000</th></tr></thead>
-            <tbody data-fcm-usdemo></tbody>
-          </table>
+        <div class="fcm-sum__block">
+          <h3 class="fcm-sum__h">Top 10 causes of death</h3>
+          <p class="fcm-note">Age-adjusted deaths per 100,000 people, {periodLabel} (provisional)</p>
+          <ol class="fcm-rows fcm-rows--ol" data-fcm-sum-causes></ol>
+          <p class="fcm-note" data-fcm-sum-lag></p>
         </div>
-        <p class="fcm-note">National only, {periodLabel} (provisional). Men and women: age-adjusted rates. Age groups: rates for that age.</p>
-
-        <details class="fcm-details">
-          <summary>Deaths by cause and long-term trend, 1999 to {LATEST} (final data)</summary>
-          <div class="fcm-scroll" tabindex="0">
-            <table class="fcm-table">
-              <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Deaths, {LATEST}</th><th scope="col">Share of deaths</th><th scope="col">Death rate*</th></tr></thead>
-              <tbody data-fcm-causes-final></tbody>
-            </table>
-          </div>
-          <div class="fcm-trend" data-fcm-trend-final></div>
-          <p class="fcm-note">{LATEST} is the latest year in CDC's downloadable state table of final death counts by cause.</p>
-        </details>
+        <nav class="fcm-explore" aria-labelledby="fcm-explore-h">
+          <h3 id="fcm-explore-h" class="fcm-sum__h">Explore more</h3>
+          <ul>
+            <li><a href="#fcm-d-costs" data-fcm-open>Detailed funeral costs</a></li>
+            <li><a href="#fcm-hist-sec" data-fcm-open>Historical funeral inflation</a></li>
+            <li><a href="#fcm-future-sec" data-fcm-open>Future funeral costs</a></li>
+            <li><a href="#fcm-short-sec" data-fcm-open>Funeral coverage calculator</a></li>
+            <li><a href="#fcm-d-agesex" data-fcm-open>Deaths by age and sex</a></li>
+            <li><a href="#fcm-d-mort" data-fcm-open>Detailed mortality statistics</a></li>
+          </ul>
+        </nav>
       </section>
     </div>
 
-    <section class="fcm-card" aria-labelledby="fcm-cost-h">
-      <h2 id="fcm-cost-h" class="fcm-h2">What a funeral costs and how much prices have risen</h2>
+    <details class="fcm-card fcm-sec" id="fcm-d-costs">
+      <summary><h2 class="fcm-h2">Detailed funeral costs: <span data-fcm-name>United States</span></h2></summary>
       <div class="fcm-est" data-fcm-est aria-live="polite"></div>
       <p class="fcm-note">
         The estimates are based on historical NFDA funeral pricing adjusted using actual BLS funeral inflation data.
         Cemetery costs, vault, marker and cash-advance items such as flowers and obituaries are not included.
       </p>
+      <h3 class="fcm-h3" id="fcm-region-h">Estimated funeral cost by region</h3>
+      <p class="fcm-note">
+        NFDA 2023 median prices by census region (funeral with viewing; burial excludes vault and cemetery costs;
+        cremation uses an alternative container and urn), and the same prices adjusted to {cpiLabel} with the BLS
+        funeral index. Compared with the national median for the same package and year.
+      </p>
+      <div class="fcm-scroll" tabindex="0">
+        <table class="fcm-table">
+          <thead><tr><th scope="col">Region and states</th><th scope="col">Burial, 2023 median</th><th scope="col">Burial, estimated today</th><th scope="col">vs. national</th><th scope="col">Cremation, 2023 median</th><th scope="col">Cremation, estimated today</th><th scope="col">vs. national</th></tr></thead>
+          <tbody>
+            {nfda.regions.map((r) => (
+              <tr><th scope="row">{r.name}<br /><span class="fcm-note">{r.states.join(', ')}</span></th><td>{money(r.burial2023)}</td><td>{money(r.burial2023 * cpiFactor)}</td><td>{vsNat(r.burial2023, nfda.national.burial2023)}</td><td>{money(r.cremation2023)}</td><td>{money(r.cremation2023 * cpiFactor)}</td><td>{vsNat(r.cremation2023, nfda.national.cremation2023)}</td></tr>
+            ))}
+            <tr><th scope="row">United States</th><td>{money(nfda.national.burial2023)}</td><td>{money(nfda.national.burial2023 * cpiFactor)}</td><td>national</td><td>{money(nfda.national.cremation2023)}</td><td>{money(nfda.national.cremation2023 * cpiFactor)}</td><td>national</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fcm-note">District of Columbia is not listed in NFDA's regional table, so no estimate is shown for it.</p>
+      <p class="fcm-note">
+        Direct cremation (no viewing or ceremony):{" "}
+        {Object.entries(directCremation.states).map(([st, d]) => 'n' in d
+          ? `${st}, ${d.whenLabel}: ${d.kind} ${dcMoney(d.value)} of ${d.n} funeral homes (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`
+          : `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
+        No published figure is available for other states.
+      </p>
+    </details>
+
+    <details class="fcm-card fcm-sec" id="fcm-d-calc">
+      <summary><h2 class="fcm-h2">Funeral inflation, future costs and coverage calculator</h2></summary>
+      <div id="fcm-hist-sec">
+      <h3 class="fcm-h3">Historical funeral inflation</h3>
       <p>
         The U.S. Bureau of Labor Statistics tracks funeral prices in the Consumer Price Index. These increases are
         national; BLS does not publish a funeral price index for individual states.
@@ -207,6 +211,8 @@ const jsonLd = [
         earlier to {cpiLabel}, the latest published month.
       </p>
 
+      </div>
+      <div id="fcm-future-sec">
       <h3 class="fcm-h3">Funeral cost calculator</h3>
       <p>
         The calculator starts from the estimate for the selected state. Funeral prices vary widely from one funeral home to the next, so for a closer figure ask a
@@ -249,6 +255,8 @@ const jsonLd = [
       <p class="fcm-note" id="fcm-rate-note" data-fcm-rate-note></p>
       <div class="fcm-result" data-fcm-future aria-live="polite"></div>
 
+      </div>
+      <div id="fcm-short-sec">
       <h3 class="fcm-h3">Funding shortfall</h3>
       <div class="fcm-form">
         <label class="fcm-field">
@@ -262,7 +270,74 @@ const jsonLd = [
       </div>
       <div class="fcm-result" data-fcm-short aria-live="polite"></div>
       <p class="fcm-note">Projections are estimates, not guaranteed future prices.</p>
-    </section>
+      </div>
+    </details>
+
+    <details class="fcm-card fcm-sec" id="fcm-d-agesex">
+      <summary><h2 class="fcm-h2">Deaths by age and sex: <span data-fcm-name>United States</span></h2></summary>
+        <h3 class="fcm-h3">Deaths from all causes, {recent.deaths2022.year}</h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Age</th><th scope="col">Men</th><th scope="col">Women</th><th scope="col">Total</th></tr></thead>
+            <tbody data-fcm-agesex></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">Deaths from all causes (provisional). CDC does not publish causes by age and sex for each state in a downloadable table.</p>
+
+        <h3 class="fcm-h3">U.S. death rate by age and sex: <span data-fcm-trend-cause>All causes</span></h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Group</th><th scope="col">Deaths per 100,000</th></tr></thead>
+            <tbody data-fcm-usdemo></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">National only, {periodLabel} (provisional). Men and women: age-adjusted rates. Age groups: rates for that age.</p>
+
+    </details>
+
+    <details class="fcm-card fcm-sec" id="fcm-d-mort">
+      <summary><h2 class="fcm-h2">Detailed mortality statistics: <span data-fcm-name>United States</span></h2></summary>
+        <p class="fcm-note">Age-adjusted death rates, {periodLabel} (provisional), ordered from highest to lowest rate.</p>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Death rate*</th><th scope="col">U.S. rate</th><th scope="col">vs. U.S.</th><th scope="col">Deaths, {recent.counts2022.year}‡</th><th scope="col">Share of deaths, {recent.counts2022.year}‡</th></tr></thead>
+            <tbody data-fcm-causes></tbody>
+          </table>
+        </div>
+        <p class="fcm-note" data-fcm-lag></p>
+        <p class="fcm-note">‡{recent.counts2022.note} n/a: not reported for that cause.</p>
+        <p class="fcm-note" data-fcm-total></p>
+        <p class="fcm-note">
+          *Deaths per 100,000 people, age-adjusted to the 2000 U.S. standard population, all ages and both sexes.
+          These are population statistics; they do not predict any one person's lifespan.
+        </p>
+        <h3 class="fcm-h3">Recent trend: <span data-fcm-trend-cause>All causes</span></h3>
+        <div class="fcm-trend" data-fcm-trend></div>
+
+        <details class="fcm-details">
+          <summary>Deaths by cause and long-term trend, 1999 to {LATEST} (final data)</summary>
+          <div class="fcm-scroll" tabindex="0">
+            <table class="fcm-table">
+              <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Deaths, {LATEST}</th><th scope="col">Share of deaths</th><th scope="col">Death rate*</th></tr></thead>
+              <tbody data-fcm-causes-final></tbody>
+            </table>
+          </div>
+          <div class="fcm-trend" data-fcm-trend-final></div>
+          <p class="fcm-note">{LATEST} is the latest year in CDC's downloadable state table of final death counts by cause.</p>
+        </details>
+      <h3 class="fcm-h3" id="fcm-states-h">Death rates and leading cause by state</h3>
+      <p class="fcm-note">Age-adjusted death rates per 100,000, {periodLabel} (provisional; for causes whose latest quarter is not yet published, the latest published 12 months). Deaths: {recent.deaths2022.year}, all causes (provisional).</p>
+      <div class="fcm-scroll" tabindex="0">
+        <table class="fcm-table">
+          <thead><tr><th scope="col">State</th><th scope="col">Death rate, all causes</th><th scope="col">Highest-rate cause</th><th scope="col">Its death rate</th><th scope="col">Deaths, {recent.deaths2022.year}</th></tr></thead>
+          <tbody>
+            {tableRows.map((r) => (
+              <tr><th scope="row">{r.name}</th><td>{r.rate ?? 'n/a'}</td><td>{r.top ?? 'n/a'}</td><td>{r.topRate ?? 'n/a'}</td><td>{r.deaths != null ? fmt(r.deaths) : 'n/a'}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
 
     <section class="fcm-cta" aria-labelledby="fcm-cta-h">
       <h2 id="fcm-cta-h" class="fcm-h2">Cover the cost so your family doesn't have to</h2>
@@ -287,49 +362,6 @@ const jsonLd = [
         States add their own rules for funeral homes, cemeteries and preneed contracts; your state's funeral or
         cemetery licensing board can tell you what applies where you live.
       </p>
-    </section>
-
-    <section class="fcm-card" aria-labelledby="fcm-region-h">
-      <h2 id="fcm-region-h" class="fcm-h2">Estimated funeral cost by region</h2>
-      <p class="fcm-note">
-        NFDA 2023 median prices by census region (funeral with viewing; burial excludes vault and cemetery costs;
-        cremation uses an alternative container and urn), and the same prices adjusted to {cpiLabel} with the BLS
-        funeral index. Compared with the national median for the same package and year.
-      </p>
-      <div class="fcm-scroll" tabindex="0">
-        <table class="fcm-table">
-          <thead><tr><th scope="col">Region and states</th><th scope="col">Burial, 2023 median</th><th scope="col">Burial, estimated today</th><th scope="col">vs. national</th><th scope="col">Cremation, 2023 median</th><th scope="col">Cremation, estimated today</th><th scope="col">vs. national</th></tr></thead>
-          <tbody>
-            {nfda.regions.map((r) => (
-              <tr><th scope="row">{r.name}<br /><span class="fcm-note">{r.states.join(', ')}</span></th><td>{money(r.burial2023)}</td><td>{money(r.burial2023 * cpiFactor)}</td><td>{vsNat(r.burial2023, nfda.national.burial2023)}</td><td>{money(r.cremation2023)}</td><td>{money(r.cremation2023 * cpiFactor)}</td><td>{vsNat(r.cremation2023, nfda.national.cremation2023)}</td></tr>
-            ))}
-            <tr><th scope="row">United States</th><td>{money(nfda.national.burial2023)}</td><td>{money(nfda.national.burial2023 * cpiFactor)}</td><td>national</td><td>{money(nfda.national.cremation2023)}</td><td>{money(nfda.national.cremation2023 * cpiFactor)}</td><td>national</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="fcm-note">District of Columbia is not listed in NFDA's regional table, so no estimate is shown for it.</p>
-      <p class="fcm-note">
-        Direct cremation (no viewing or ceremony):{" "}
-        {Object.entries(directCremation.states).map(([st, d]) => 'n' in d
-          ? `${st}, ${d.whenLabel}: ${d.kind} ${dcMoney(d.value)} of ${d.n} funeral homes (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`
-          : `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
-        No published figure is available for other states.
-      </p>
-    </section>
-
-    <section class="fcm-card" aria-labelledby="fcm-states-h">
-      <h2 id="fcm-states-h" class="fcm-h2">Death rates and leading cause by state</h2>
-      <p class="fcm-note">Age-adjusted death rates per 100,000, {periodLabel} (provisional; for causes whose latest quarter is not yet published, the latest published 12 months). Deaths: {recent.deaths2022.year}, all causes (provisional).</p>
-      <div class="fcm-scroll" tabindex="0">
-        <table class="fcm-table">
-          <thead><tr><th scope="col">State</th><th scope="col">Death rate, all causes</th><th scope="col">Highest-rate cause</th><th scope="col">Its death rate</th><th scope="col">Deaths, {recent.deaths2022.year}</th></tr></thead>
-          <tbody>
-            {tableRows.map((r) => (
-              <tr><th scope="row">{r.name}</th><td>{r.rate ?? 'n/a'}</td><td>{r.top ?? 'n/a'}</td><td>{r.topRate ?? 'n/a'}</td><td>{r.deaths != null ? fmt(r.deaths) : 'n/a'}</td></tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
     </section>
 
     <section class="fcm-card" aria-labelledby="fcm-method-h">
@@ -396,13 +428,12 @@ const jsonLd = [
           {mortality.years[1]}), retrieved {mortality.retrieved}. {mortality.scope}. {LATEST} is the latest year in this
           dataset. <a href={mortality.sourceUrl} rel="noopener">CDC data</a>.
         </li>
-        <li><strong>Map:</strong> {paths.source}.</li>
         <li>
-          <strong>ZIP lookup:</strong> U.S. Census Bureau 2020 ZCTA to County Relationship File; each ZIP code area is
-          assigned to the county holding most of its land, which gives its state and any local survey area. Survey areas
-          are the counties each survey names; for Kansas City, the counties where the surveyed funeral homes are located.
-          No price is calculated for a ZIP code.
+          <strong>Life expectancy:</strong> {le.source}, {le.year}: expectation of life at age 65 and at birth for the
+          total population, from each state's period life table. <a href={le.sourceUrl} rel="noopener">State life tables</a>,
+          <a href={le.usSourceUrl} rel="noopener">U.S. life tables</a>.
         </li>
+        <li><strong>Map:</strong> {paths.source}.</li>
       </ul>
       <p class="fcm-note">Last updated November 11, 2026.</p>
     </section>
@@ -453,12 +484,24 @@ const jsonLd = [
   .fcm-est { margin-bottom: var(--space-3); }
   .fcm-est .fcm-hist { grid-template-columns: 1fr; }
   @media (min-width: 48rem) { .fcm-est .fcm-hist { grid-template-columns: repeat(3, 1fr); } }
-  .fcm-zip { margin-bottom: var(--space-3); }
-  .fcm-zip__row { display: flex; gap: var(--space-2); }
-  .fcm-zip__row input { max-width: 9rem; }
-  .fcm-zip__btn { min-height: var(--tap-target); padding: 0 var(--space-4); border: 0; border-radius: var(--radius); background: var(--color-primary); color: var(--color-on-primary); font-weight: 700; cursor: pointer; }
   .fcm-local { text-align: left; }
-  .fcm-local.is-zip { background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2); color: var(--color-text); }
+  .fcm-sum { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-6); }
+  .fcm-sum__name { font-size: 1.75rem; margin: 0 0 var(--space-3); color: var(--color-primary); }
+  .fcm-sum__block { margin-bottom: var(--space-6); }
+  .fcm-sum__h { font-size: 1.0625rem; margin: 0 0 var(--space-1); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text); }
+  .fcm-rows { margin: var(--space-2) 0 0; padding: 0; list-style: none; }
+  .fcm-rows > div, .fcm-rows > li { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
+  .fcm-rows dt, .fcm-rows dd { margin: 0; }
+  .fcm-rows dd, .fcm-rows .fcm-val { font-weight: 700; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .fcm-explore ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  .fcm-explore a { display: flex; align-items: center; min-height: var(--tap-target); padding: var(--space-2) var(--space-3); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); color: var(--color-primary); font-weight: 700; text-decoration: none; font-size: 0.9375rem; }
+  .fcm-explore a:hover { border-color: var(--color-primary); }
+  .fcm-sec > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+  .fcm-sec > summary::-webkit-details-marker { display: none; }
+  .fcm-sec > summary::after { content: '+'; font-size: 1.5rem; font-weight: 700; color: var(--color-primary); }
+  .fcm-sec[open] > summary::after { content: '\2212'; }
+  .fcm-sec > summary .fcm-h2 { margin: 0; }
+  .fcm-sec[open] > summary { margin-bottom: var(--space-4); }
   .fcm-est-title { font-size: 1.125rem; margin-bottom: var(--space-3); }
   .fcm-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--space-2); margin: var(--space-4) 0; }
   .fcm-timeline div { border-top: 4px solid var(--color-border); padding-top: var(--space-2); }

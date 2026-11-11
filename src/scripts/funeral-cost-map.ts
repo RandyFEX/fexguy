@@ -6,6 +6,7 @@ import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
 import directCremation from '@/data/funeral-map/direct-cremation.json';
+import lifeExp from '@/data/funeral-map/life-expectancy.json';
 
 type Row = [number, number];
 type YearData = Record<string, Row>;
@@ -115,10 +116,7 @@ const DIRECT = directCremation.states as Record<string, DC>;
 type Local = { states: string[]; area: string; when: string; n: number; observedMedian: number; low: number; high: number; todayMedian: number; definition: string; source: string };
 const LOCAL = directCremation.local.areas as Local[];
 const localFor = (state: string) => LOCAL.filter((l) => l.states.includes(state));
-// Set by the ZIP lookup when the ZIP's county is in a surveyed area; cleared on a manual state change.
-let zipArea: string | null = null;
 
-if (root) init();
 
 function init() {
   const stateSel = $<HTMLSelectElement>('[data-fcm-state]')!;
@@ -147,26 +145,31 @@ function init() {
       : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
   }
 
+  let selected = US;
   function select(state: string) {
+    selected = state;
     stateSel.value = state;
+    renderSummary(state);
     for (const p of pathsEls) p.setAttribute('aria-pressed', String(p.dataset.state === state));
     renderMortality(state, causeOf(metricSel.value));
     onStateChange(state);
   }
 
   for (const p of pathsEls) {
-    p.addEventListener('click', () => { zipArea = null; select(p.dataset.state!); });
+    p.addEventListener('click', () => { select(p.dataset.state!); });
     p.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); zipArea = null; select(p.dataset.state!); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(p.dataset.state!); }
     });
+    // V4.2: hovering previews the state in the summary panel; leaving restores the selection.
     p.addEventListener('mouseenter', () => {
       tip.textContent = metricText(p.dataset.state!, metricSel.value);
       tip.hidden = false;
+      renderSummary(p.dataset.state!);
     });
-    p.addEventListener('mouseleave', () => { tip.hidden = true; });
+    p.addEventListener('mouseleave', () => { tip.hidden = true; renderSummary(selected); });
   }
-  stateSel.addEventListener('change', () => { zipArea = null; select(stateSel.value); });
-  initZip(select);
+  stateSel.addEventListener('change', () => { select(stateSel.value); });
+  initExplore();
   metricSel.addEventListener('change', () => { colorMap(); renderMortality(stateSel.value, causeOf(metricSel.value)); });
 
   initCosts();
@@ -280,9 +283,8 @@ function initCosts() {
   const pkgOf = (): Pkg | null => (type.value === 'burial' ? 'burial' : type.value === 'cremation-service' ? 'cremation' : null);
   const prefill = () => {
     const pkg = pkgOf();
-    const loc = !pkg && zipArea ? LOCAL.find((l) => l.area === zipArea && l.states.includes(state)) : undefined;
-    const dc = !pkg && !loc ? DIRECT[state] : undefined;
-    const est = pkg ? estimate(state, pkg) : loc ? loc.todayMedian : dc ? dcToday(dc) ?? dc.value : null;
+    const dc = !pkg ? DIRECT[state] : undefined;
+    const est = pkg ? estimate(state, pkg) : dc ? dcToday(dc) ?? dc.value : null;
     if (!typed) price.value = est != null ? String(Math.round(est)) : '';
     const src = $<HTMLElement>('[data-fcm-price-src]')!;
     src.textContent = typed
@@ -292,7 +294,6 @@ function initCosts() {
         : pkg
           ? `No estimate for ${state}. Enter a price from a funeral home's price list.`
           : 'No published estimate for direct cremation. Enter a price from a funeral home\'s price list.';
-    if (!typed && loc) src.textContent = `Filled in with an estimate based on historical data for your ZIP code's area (${loc.area}): the median of ${loc.n} funeral homes, ${dcMoney(loc.observedMedian)} observed (${loc.when}), adjusted with the BLS funeral index. Replace it with a funeral home's price for a more accurate result.`;
     if (!typed && dc) {
       const what = dc.n ? `the ${dc.kind} for ${state} (${dc.whenLabel ?? dc.year})` : `the ${dc.year} ${dc.kind} for ${state}`;
       src.textContent = dcToday(dc) != null
@@ -311,7 +312,7 @@ function initCosts() {
   const localList = () => {
     const ls = localFor(state);
     if (!ls.length) return '';
-    return `<span class="fcm-stat__sub"><b>Local surveys</b> (this area only, not statewide):</span>${ls.map((l) => `<span class="fcm-stat__sub fcm-local${l.area === zipArea ? ' is-zip' : ''}">${l.area === zipArea ? 'Your ZIP code\'s area. ' : ''}${l.area}: estimated ${money(l.todayMedian)} today; observed median ${dcMoney(l.observedMedian)} of ${l.n} funeral homes (${l.when}), range ${money(l.low)} to ${money(l.high)}. ${l.definition} ${l.source}.</span>`).join('')}`;
+    return `<span class="fcm-stat__sub"><b>Local surveys</b> (this area only, not statewide):</span>${ls.map((l) => `<span class="fcm-stat__sub fcm-local">${l.area}: estimated ${money(l.todayMedian)} today; observed median ${dcMoney(l.observedMedian)} of ${l.n} funeral homes (${l.when}), range ${money(l.low)} to ${money(l.high)}. ${l.definition} ${l.source}.</span>`).join('')}`;
   };
   const directCard = () => {
     const dc = DIRECT[state];
@@ -364,38 +365,62 @@ function initCosts() {
   update();
 }
 
-// --- ZIP lookup (V4.0): finds the ZIP code's state (U.S. Census ZCTA to county
-// file) and any local direct cremation survey covering its county. It never
-// creates a ZIP-specific price. The 270 KB table loads only when used.
-type ZipTable = { states: string[]; areas: string[]; map: Map<string, string> };
-let zipTable: Promise<ZipTable> | null = null;
-const loadZips = () => (zipTable ??= fetch('/funeral-map/zip-lookup.json').then((r) => r.json()).then((d: { states: string[]; areas: string[]; zips: string }) => {
-  const map = new Map<string, string>();
-  for (const item of d.zips.split(',')) map.set(item.slice(0, 5), item.slice(5));
-  return { states: d.states, areas: d.areas, map };
-}));
-function initZip(select: (state: string) => void) {
-  const form = $<HTMLFormElement>('[data-fcm-zip]');
-  const input = $<HTMLInputElement>('[data-fcm-zip-input]');
-  const msg = $<HTMLElement>('[data-fcm-zip-msg]');
-  if (!form || !input || !msg) return;
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const zip = input.value.trim();
-    if (!/^\d{5}$/.test(zip)) { msg.textContent = 'Enter a 5-digit ZIP code.'; return; }
-    msg.textContent = 'Looking up…';
-    try {
-      const t = await loadZips();
-      const hit = t.map.get(zip);
-      if (!hit) { msg.textContent = `ZIP code ${zip} was not found (some ZIP codes, such as P.O. boxes, have no area). Choose your state instead.`; return; }
-      const state = t.states[Number(hit.slice(0, 2))];
-      zipArea = hit.length > 2 ? t.areas[Number(hit.slice(2))] : null;
-      select(state);
-      msg.textContent = zipArea
-        ? `ZIP code ${zip} is in ${state}. A local direct cremation survey covers this area: ${zipArea}. Other figures are for the state or its census region, not your ZIP code.`
-        : `ZIP code ${zip} is in ${state}. Figures are for the state or its census region, not your ZIP code.`;
-    } catch {
-      msg.textContent = 'The ZIP lookup is not available right now. Choose your state instead.';
-    }
-  });
+// --- V4.2 state summary panel: life expectancy, funeral costs, top 10 causes.
+type LE = { birth: number; age65: number };
+const LIFE = lifeExp.states as Record<string, { total: LE }>;
+const row = (label: string, value: string) => `<div><dt>${label}</dt><dd>${value}</dd></div>`;
+function renderSummary(state: string) {
+  $<HTMLElement>('[data-fcm-sum-name]')!.textContent = state;
+  const le = LIFE[state]?.total;
+  const us = LIFE[US]?.total;
+  $<HTMLElement>('[data-fcm-sum-le]')!.innerHTML = le
+    ? row('Years remaining at age 65', `${le.age65.toFixed(1)} years`) + row('At birth', `${le.birth.toFixed(1)} years`) +
+      (state !== US && us ? row('U.S. (at 65 / at birth)', `${us.age65.toFixed(1)} / ${us.birth.toFixed(1)}`) : '')
+    : row('Life expectancy', 'Unavailable');
+  const burial = estimate(state, 'burial');
+  const crem = estimate(state, 'cremation');
+  const dc = DIRECT[state];
+  const dcVal = dc ? dcToday(dc) ?? dc.value : null;
+  $<HTMLElement>('[data-fcm-sum-costs]')!.innerHTML =
+    row('Funeral with burial', burial != null ? money(burial) : 'Unavailable') +
+    row('Cremation with viewing', crem != null ? money(crem) : 'Unavailable') +
+    row('Direct cremation', dcVal != null ? money(dcVal) : 'Unavailable');
+  const region = REGION_OF[state]?.name;
+  const parts: string[] = [];
+  if (state === US) parts.push('Burial and cremation with viewing: national NFDA medians.');
+  else if (region) parts.push(`Burial and cremation with viewing: regional estimates for the ${region} census region (NFDA).`);
+  if (dc) parts.push(dcToday(dc) != null
+    ? `Direct cremation: state survey (${dc.whenLabel ?? dc.year}${dc.n ? `, ${dc.kind} of ${dc.n} funeral homes` : `, ${dc.kind}`}), adjusted for inflation.`
+    : `Direct cremation: state survey (${dc.whenLabel ?? dc.year}${dc.n ? `, ${dc.kind} of ${dc.n} funeral homes` : ''}).`);
+  else if (localFor(state).length) parts.push('Direct cremation: no statewide survey; see local surveys in Detailed funeral costs.');
+  $<HTMLElement>('[data-fcm-sum-costnote]')!.textContent = parts.join(' ');
+  const causes = LEADING.map((c) => [c, rateOf(state, c)] as const).filter((r) => r[1] != null).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 10);
+  $<HTMLElement>('[data-fcm-sum-causes]')!.innerHTML = causes.length
+    ? causes.map(([c, r]) => `<li><span>${c}${latestIdx(c) < QI ? '<sup>†</sup>' : ''}</span><span class="fcm-val">${r}</span></li>`).join('')
+    : '<li><span>Unavailable</span><span></span></li>';
+  const lagged = causes.filter(([c]) => latestIdx(c) < QI).map(([c]) => c);
+  $<HTMLElement>('[data-fcm-sum-lag]')!.textContent = lagged.length ? `†12 months ending ${qLabel(latestIdx(lagged[0]))} (latest published).` : '';
 }
+
+// --- V4.2 Explore More: open the collapsible section that holds the target and scroll to it.
+function openTarget(id: string, scroll = true) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const det = el instanceof HTMLDetailsElement ? el : el.closest('details');
+  if (det) det.open = true;
+  if (scroll) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function initExplore() {
+  for (const a of $$<HTMLAnchorElement>('[data-fcm-open]')) {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href')!.slice(1);
+      e.preventDefault();
+      openTarget(id);
+      try { history.replaceState(history.state, '', `#${id}`); } catch {}
+    });
+  }
+  if (location.hash.length > 1) openTarget(decodeURIComponent(location.hash.slice(1)));
+}
+
+// Runs last so every helper above is initialized.
+if (root) init();
