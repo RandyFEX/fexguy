@@ -97,6 +97,25 @@ async function recentMortality() {
   }
   delete deaths['New York City'];
   delete deaths['Puerto Rico'];
+  // 2022 deaths by cause, by state of occurrence (weekly provisional counts; a
+  // total is left out when any week was suppressed). New York adds New York City.
+  const COLS = { all_cause: 'All causes', diseases_of_heart_i00_i09: 'Heart disease', malignant_neoplasms_c00_c97: 'Cancer', cerebrovascular_diseases: 'Stroke', chronic_lower_respiratory: 'Chronic lower respiratory diseases', alzheimer_disease_g30: 'Alzheimer disease', diabetes_mellitus_e10_e14: 'Diabetes', influenza_and_pneumonia_j09_j18: 'Influenza and pneumonia', nephritis_nephrotic_syndrome: 'Kidney disease', covid_19_u071_underlying_cause_of_death: 'COVID-19' };
+  const wk = await (await fetch('https://data.cdc.gov/resource/muzy-jte6.json?$limit=50000&mmwryear=2022')).json();
+  const counts = {};
+  for (const r of wk) {
+    const c = (counts[r.jurisdiction_of_occurrence] ??= {});
+    for (const [k, name] of Object.entries(COLS)) {
+      const v = r[k];
+      if (v == null || v === '') c[name] = null;
+      else if (c[name] !== null) c[name] = (c[name] ?? 0) + Number(v);
+    }
+  }
+  for (const name of Object.values(COLS)) {
+    const a = counts['New York']?.[name], b = counts['New York City']?.[name];
+    if (counts['New York']) counts['New York'][name] = a != null && b != null ? a + b : null;
+  }
+  delete counts['New York City'];
+  delete counts['Puerto Rico'];
   writeFileSync(new URL('mortality-recent.json', OUT), JSON.stringify({
     dataset: 'NCHS - VSRR Quarterly provisional estimates for selected indicators of mortality', id: '489q-934x',
     source: 'Centers for Disease Control and Prevention, National Center for Health Statistics (Vital Statistics Rapid Release)',
@@ -104,6 +123,7 @@ async function recentMortality() {
     status: 'Provisional', period: '12 months ending with quarter', latest, quarters,
     measure: 'Age-adjusted death rate per 100,000 (2000 U.S. standard population); U.S. age-group rates are age-specific (crude) rates',
     leading: LEADING, other: OTHER, rates, us,
+    counts2022: { dataset: 'Weekly Provisional Counts of Deaths by State and Select Causes, 2020-2023', id: 'muzy-jte6', sourceUrl: 'https://data.cdc.gov/NCHS/Weekly-Provisional-Counts-of-Deaths-by-State-and-S/muzy-jte6', status: 'Provisional (data as of September 27, 2023)', year: 2022, note: 'Deaths in 2022 by state where the death occurred (not state of residence), summed from MMWR weeks of 2022. Natural causes only. A total is not shown when CDC suppressed any week (1 to 9 deaths). New York includes New York City.', data: counts },
     deaths2022: { dataset: 'Provisional COVID-19 Deaths by Sex and Age', id: '9bhg-hcku', sourceUrl: 'https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-Sex-and-Age/9bhg-hcku', status: 'Provisional (data as of September 27, 2023)', year: 2022, measure: 'Deaths from all causes', note: 'New York includes New York City (reported separately by NCHS and added here).', data: deaths },
   }));
 }

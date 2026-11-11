@@ -96,6 +96,16 @@ const jsonLd = [
     <div class="fcm-grid">
       <section class="fcm-map" aria-labelledby="fcm-map-h">
         <h2 id="fcm-map-h" class="fcm-h2">Choose a state</h2>
+        <form class="fcm-zip" data-fcm-zip>
+          <label class="fcm-field">
+            <span>ZIP code (optional)</span>
+            <span class="fcm-zip__row">
+              <input type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" data-fcm-zip-input aria-describedby="fcm-zip-msg" />
+              <button type="submit" class="fcm-zip__btn">Find</button>
+            </span>
+          </label>
+          <p class="fcm-note" id="fcm-zip-msg" data-fcm-zip-msg aria-live="polite">Finds your state and any local price survey for your area.</p>
+        </form>
         <div class="fcm-controls">
           <label class="fcm-field">
             <span>State</span>
@@ -134,11 +144,12 @@ const jsonLd = [
         <p class="fcm-note">Age-adjusted death rates, {periodLabel} (provisional), ordered from highest to lowest rate.</p>
         <div class="fcm-scroll" tabindex="0">
           <table class="fcm-table">
-            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Death rate*</th><th scope="col">U.S. rate</th><th scope="col">vs. U.S.</th></tr></thead>
+            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Death rate*</th><th scope="col">U.S. rate</th><th scope="col">vs. U.S.</th><th scope="col">Deaths, {recent.counts2022.year}‡</th><th scope="col">Share of deaths, {recent.counts2022.year}‡</th></tr></thead>
             <tbody data-fcm-causes></tbody>
           </table>
         </div>
         <p class="fcm-note" data-fcm-lag></p>
+        <p class="fcm-note">‡{recent.counts2022.note} n/a: not reported for that cause.</p>
         <p class="fcm-note" data-fcm-total></p>
         <p class="fcm-note">
           *Deaths per 100,000 people, age-adjusted to the 2000 U.S. standard population, all ages and both sexes.
@@ -348,10 +359,15 @@ const jsonLd = [
           <strong>Direct cremation:</strong> shown only for states with a funeral consumer organization price survey:
           Washington's published statewide average, and medians calculated here from the individual funeral-home prices
           that Funeral Consumers Alliance affiliates publish, using only prices that share one definition. Figures are
-          not inflation-adjusted and are never combined across states; definitions and years differ by state.
+          never combined across states; definitions and years differ by state. The headline figure is an estimate based
+          on historical data: the observed figure multiplied by the BLS funeral index for {cpiLabel} divided by the index
+          for the survey's period ({Object.entries(directCremation.states).filter(([, d]) => d.cpiRef).map(([st, d]) => `${st}: ${d.cpiRef!.label}`).join('; ')}).
+          Georgia's figure is a current listing and is not adjusted. The observed figure is shown with each estimate.
           {Object.entries(directCremation.states).map(([st, d]) => 'n' in d
             ? `${st}: ${d.source}, ${d.whenLabel}, ${d.kind} ${dcMoney(d.value)} (${d.coverage}), range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`
             : `${st}: ${d.source}, ${d.year} ${d.kind} ${money(d.value)}, range ${money(d.low)} to ${money(d.high)}. ${d.sample} ${d.definition}`).join(' ')}
+          Local surveys (shown only for the surveyed area): {directCremation.local.areas.map((l) => `${l.area}: ${l.source}, ${l.when}; median of ${l.n} funeral homes ${dcMoney(l.observedMedian)} (range ${money(l.low)} to ${money(l.high)}), estimated ${money(l.todayMedian)} today (${l.adjust}). ${l.definition}`).join(' ')}
+          {directCremation.local.note}
           Not used: {directCremation.checked.map((c) => `${c.state} (${c.reason})`).join('; ')}. NFDA's releases do not report direct cremation.
         </li>
         <li>
@@ -368,6 +384,10 @@ const jsonLd = [
           <a href={recent.sourceUrl} rel="noopener">CDC data</a>.
         </li>
         <li>
+          <strong>Deaths by cause:</strong> CDC/NCHS, "{recent.counts2022.dataset}", {recent.counts2022.year},
+          {recent.counts2022.status}. {recent.counts2022.note} <a href={recent.counts2022.sourceUrl} rel="noopener">CDC data</a>.
+        </li>
+        <li>
           <strong>Deaths by age and sex:</strong> CDC/NCHS, "{recent.deaths2022.dataset}", {recent.deaths2022.year},
           {recent.deaths2022.status}. {recent.deaths2022.note} <a href={recent.deaths2022.sourceUrl} rel="noopener">CDC data</a>.
         </li>
@@ -377,6 +397,12 @@ const jsonLd = [
           dataset. <a href={mortality.sourceUrl} rel="noopener">CDC data</a>.
         </li>
         <li><strong>Map:</strong> {paths.source}.</li>
+        <li>
+          <strong>ZIP lookup:</strong> U.S. Census Bureau 2020 ZCTA to County Relationship File; each ZIP code area is
+          assigned to the county holding most of its land, which gives its state and any local survey area. Survey areas
+          are the counties each survey names; for Kansas City, the counties where the surveyed funeral homes are located.
+          No price is calculated for a ZIP code.
+        </li>
       </ul>
       <p class="fcm-note">Last updated November 11, 2026.</p>
     </section>
@@ -427,6 +453,12 @@ const jsonLd = [
   .fcm-est { margin-bottom: var(--space-3); }
   .fcm-est .fcm-hist { grid-template-columns: 1fr; }
   @media (min-width: 48rem) { .fcm-est .fcm-hist { grid-template-columns: repeat(3, 1fr); } }
+  .fcm-zip { margin-bottom: var(--space-3); }
+  .fcm-zip__row { display: flex; gap: var(--space-2); }
+  .fcm-zip__row input { max-width: 9rem; }
+  .fcm-zip__btn { min-height: var(--tap-target); padding: 0 var(--space-4); border: 0; border-radius: var(--radius); background: var(--color-primary); color: var(--color-on-primary); font-weight: 700; cursor: pointer; }
+  .fcm-local { text-align: left; }
+  .fcm-local.is-zip { background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2); color: var(--color-text); }
   .fcm-est-title { font-size: 1.125rem; margin-bottom: var(--space-3); }
   .fcm-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--space-2); margin: var(--space-4) 0; }
   .fcm-timeline div { border-top: 4px solid var(--color-border); padding-top: var(--space-2); }

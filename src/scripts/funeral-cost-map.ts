@@ -18,6 +18,7 @@ const QI = Q.length - 1;
 const LEADING = recent.leading;
 const US_DEMO = recent.us as Record<string, { female?: number | null; male?: number | null; ages?: Record<string, number | null> }>;
 const DEATHS = recent.deaths2022.data as Record<string, Record<string, Record<string, number | null>>>;
+const COUNTS = recent.counts2022.data as Record<string, Record<string, number | null>>;
 // Final (1999-2017) cause names that differ from the provisional dataset's.
 const FINAL_NAME: Record<string, string> = { 'Alzheimer disease': "Alzheimer's disease", 'Chronic lower respiratory diseases': 'CLRD' };
 const US = 'United States';
@@ -79,12 +80,12 @@ const vsNational = (state: string, pkg: Pkg) => {
 const isCost = (metric: string) => metric.startsWith('cost:');
 const causeOf = (metric: string) => (isCost(metric) ? 'All causes' : metric);
 const metricValue = (state: string, metric: string) =>
-  metric === 'cost:direct' ? (DIRECT_MAP[state]?.value ?? null) : isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric);
+  metric === 'cost:direct' ? (DIRECT[state] ? dcToday(DIRECT[state]) ?? DIRECT[state].value : null) : isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric);
 const metricText = (state: string, metric: string) => {
   const v = metricValue(state, metric);
   if (v == null) return `${state}: not available`;
   if (!isCost(metric)) return `${state}: ${v} deaths per 100,000`;
-  if (metric === 'cost:direct') { const d = DIRECT_MAP[state]!; return `${state}: direct cremation ${d.n ? `${d.kind} ${dcMoneyMap(v)} (${d.whenLabel ?? d.year})` : `${d.year} ${d.kind} ${money(v)}`}`; }
+  if (metric === 'cost:direct') { const d = DIRECT[state]!; return `${state}: direct cremation ${dcToday(d) != null ? `estimated ${money(v)} (based on ${d.whenLabel ?? d.year} survey data)` : `${dcMoneyMap(v)} (${d.whenLabel ?? d.year})`}`; }
   return `${state} (${REGION_OF[state]?.name ?? 'U.S.'} region): estimated ${money(v)}`;
 };
 let onStateChange: (state: string) => void = () => {};
@@ -94,10 +95,28 @@ const dcMoneyMap = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLoca
 
 // State direct cremation figures (Map V3.6): only where a funeral consumer
 // organization publishes a statewide summary figure; shown as published.
-type DC = { year: number; whenLabel?: string; kind: string; value: number; low?: number; high?: number; n?: number; coverage?: string; source: string; definition: string };
+type CpiRef = { kind: 'year' | 'month'; year: string; month?: string; label: string } | null | undefined;
+type DC = { year: number; whenLabel?: string; kind: string; value: number; low?: number; high?: number; n?: number; coverage?: string; source: string; definition: string; cpiRef?: CpiRef };
+// V4.0: today's planning estimate = observed figure x BLS funeral index (latest
+// month / the survey's reference period). Georgia's current listing has no ref.
+const refIndex = (r: CpiRef) => {
+  if (!r) return null;
+  const m = monthly[r.year];
+  if (!m) return null;
+  if (r.kind === 'month') return r.month ? m[r.month] ?? null : null;
+  const v = Object.values(m);
+  return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+};
+const dcToday = (dc: DC) => { const ref = refIndex(dc.cpiRef); return ref ? dc.value * (current / ref) : null; };
 // Medians can end in .50: show cents only then.
 const dcMoney = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 const DIRECT = directCremation.states as Record<string, DC>;
+// V4.0 local surveys (area medians; shown for the surveyed area only).
+type Local = { states: string[]; area: string; when: string; n: number; observedMedian: number; low: number; high: number; todayMedian: number; definition: string; source: string };
+const LOCAL = directCremation.local.areas as Local[];
+const localFor = (state: string) => LOCAL.filter((l) => l.states.includes(state));
+// Set by the ZIP lookup when the ZIP's county is in a surveyed area; cleared on a manual state change.
+let zipArea: string | null = null;
 
 if (root) init();
 
@@ -122,7 +141,7 @@ function init() {
     $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
     const mapNote = $<HTMLElement>('[data-fcm-mapnote]')!;
     mapNote.textContent = metric === 'cost:direct'
-      ? 'Map shading: direct cremation prices where a funeral consumer organization survey is available (gray: no data). Definitions and years differ by state; select a state to see what its figure includes. Darker means higher.'
+      ? 'Map shading: direct cremation where a funeral consumer organization survey is available (gray: no data), estimated today based on historical data. Definitions differ by state; select a state to see what its figure includes. Darker means higher.'
       : isCost(metric)
       ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on historical data. States in the same census region share one estimate. Darker means higher.`
       : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
@@ -136,9 +155,9 @@ function init() {
   }
 
   for (const p of pathsEls) {
-    p.addEventListener('click', () => select(p.dataset.state!));
+    p.addEventListener('click', () => { zipArea = null; select(p.dataset.state!); });
     p.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(p.dataset.state!); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); zipArea = null; select(p.dataset.state!); }
     });
     p.addEventListener('mouseenter', () => {
       tip.textContent = metricText(p.dataset.state!, metricSel.value);
@@ -146,7 +165,8 @@ function init() {
     });
     p.addEventListener('mouseleave', () => { tip.hidden = true; });
   }
-  stateSel.addEventListener('change', () => select(stateSel.value));
+  stateSel.addEventListener('change', () => { zipArea = null; select(stateSel.value); });
+  initZip(select);
   metricSel.addEventListener('change', () => { colorMap(); renderMortality(stateSel.value, causeOf(metricSel.value)); });
 
   initCosts();
@@ -163,8 +183,11 @@ function renderMortality(state: string, metric: string) {
     const diff = u ? (r as number) / u - 1 : null;
     const vs = state === US || diff == null ? 'n/a' : `${diff > 0 ? '+' : ''}${pct(diff, 0)}`;
     const lag = latestIdx(c) < QI ? '<sup>†</sup>' : '';
-    return `<tr><td>${i + 1}</td><td>${c}${lag}</td><td>${r}</td><td>${u ?? 'n/a'}</td><td>${vs}</td></tr>`;
-  }).join('') || '<tr><td colspan="5">No data for this state.</td></tr>';
+    const n = COUNTS[state]?.[c];
+    const all22 = COUNTS[state]?.['All causes'];
+    const share = n != null && all22 ? pct(n / all22) : 'n/a';
+    return `<tr><td>${i + 1}</td><td>${c}${lag}</td><td>${r}</td><td>${u ?? 'n/a'}</td><td>${vs}</td><td>${n != null ? num(n) : 'n/a'}</td><td>${share}</td></tr>`;
+  }).join('') || '<tr><td colspan="7">No data for this state.</td></tr>';
   const lagged = rows.filter(([c]) => latestIdx(c) < QI).map(([c]) => `${c}: 12 months ending ${qLabel(latestIdx(c))}`);
   $<HTMLElement>('[data-fcm-lag]')!.textContent = lagged.length ? `†Latest published period: ${lagged.join('; ')}.` : '';
   const all = rateOf(state, 'All causes');
@@ -257,8 +280,9 @@ function initCosts() {
   const pkgOf = (): Pkg | null => (type.value === 'burial' ? 'burial' : type.value === 'cremation-service' ? 'cremation' : null);
   const prefill = () => {
     const pkg = pkgOf();
-    const dc = !pkg ? DIRECT[state] : undefined;
-    const est = pkg ? estimate(state, pkg) : dc ? dc.value : null;
+    const loc = !pkg && zipArea ? LOCAL.find((l) => l.area === zipArea && l.states.includes(state)) : undefined;
+    const dc = !pkg && !loc ? DIRECT[state] : undefined;
+    const est = pkg ? estimate(state, pkg) : loc ? loc.todayMedian : dc ? dcToday(dc) ?? dc.value : null;
     if (!typed) price.value = est != null ? String(Math.round(est)) : '';
     const src = $<HTMLElement>('[data-fcm-price-src]')!;
     src.textContent = typed
@@ -268,9 +292,13 @@ function initCosts() {
         : pkg
           ? `No estimate for ${state}. Enter a price from a funeral home's price list.`
           : 'No published estimate for direct cremation. Enter a price from a funeral home\'s price list.';
-    if (!typed && dc) src.textContent = dc.n
-      ? `Filled in with the ${dc.kind} for ${state} (${dc.whenLabel ?? dc.year}), used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`
-      : `Filled in with the ${dc.year} ${dc.kind} for ${state}, used as today's price without adjustment. Replace it with a funeral home's price for a more accurate result.`;
+    if (!typed && loc) src.textContent = `Filled in with an estimate based on historical data for your ZIP code's area (${loc.area}): the median of ${loc.n} funeral homes, ${dcMoney(loc.observedMedian)} observed (${loc.when}), adjusted with the BLS funeral index. Replace it with a funeral home's price for a more accurate result.`;
+    if (!typed && dc) {
+      const what = dc.n ? `the ${dc.kind} for ${state} (${dc.whenLabel ?? dc.year})` : `the ${dc.year} ${dc.kind} for ${state}`;
+      src.textContent = dcToday(dc) != null
+        ? `Filled in with an estimate based on historical data: ${what}, ${dcMoney(dc.value)}, adjusted with the BLS funeral index. Replace it with a funeral home's price for a more accurate result.`
+        : `Filled in with ${what}, a current listing used without adjustment. Replace it with a funeral home's price for a more accurate result.`;
+    }
   };
   const card = (label: string, pkg: Pkg) => {
     const est = estimate(state, pkg);
@@ -280,12 +308,20 @@ function initCosts() {
     const cmp = vs == null ? '' : '; ' + `${Math.abs(vs * 100).toFixed(0)}% ${vs >= 0 ? 'above' : 'below'} the national median`;
     return `<div class="fcm-stat"><strong>${money(est)}</strong>${label}<span class="fcm-stat__sub">${money(m)} NFDA 2023 ${state === US ? 'national' : 'regional'} median${cmp}</span></div>`;
   };
+  const localList = () => {
+    const ls = localFor(state);
+    if (!ls.length) return '';
+    return `<span class="fcm-stat__sub"><b>Local surveys</b> (this area only, not statewide):</span>${ls.map((l) => `<span class="fcm-stat__sub fcm-local${l.area === zipArea ? ' is-zip' : ''}">${l.area === zipArea ? 'Your ZIP code\'s area. ' : ''}${l.area}: estimated ${money(l.todayMedian)} today; observed median ${dcMoney(l.observedMedian)} of ${l.n} funeral homes (${l.when}), range ${money(l.low)} to ${money(l.high)}. ${l.definition} ${l.source}.</span>`).join('')}`;
+  };
   const directCard = () => {
     const dc = DIRECT[state];
-    if (!dc) return '<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published figure for this state</span></div>';
+    if (!dc) return `<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No statewide figure for this state</span>${localList()}</div>`;
     const range = dc.low != null && dc.high != null ? `; range ${money(dc.low)} to ${money(dc.high)}` : '';
-    if (dc.n) return `<div class="fcm-stat"><strong>${dcMoney(dc.value)}</strong>Direct cremation<span class="fcm-stat__sub">${dc.whenLabel ?? dc.year}: ${dc.kind} of ${dc.n} funeral homes (${dc.coverage}), ${dc.source}${range}. ${dc.definition}</span></div>`;
-    return `<div class="fcm-stat"><strong>${money(dc.value)}</strong>Direct cremation<span class="fcm-stat__sub">${dc.year} ${dc.kind}, ${dc.source}${range}. ${dc.definition}</span></div>`;
+    const today = dcToday(dc);
+    const head = today != null ? money(today) : dcMoney(dc.value);
+    const est = today != null ? `Estimate based on historical data. Observed: ${dcMoney(dc.value)}, ` : '';
+    if (dc.n) return `<div class="fcm-stat"><strong>${head}</strong>Direct cremation<span class="fcm-stat__sub">${est}${dc.whenLabel ?? dc.year}: ${dc.kind} of ${dc.n} funeral homes (${dc.coverage}), ${dc.source}${range}. ${dc.definition}</span>${localList()}</div>`;
+    return `<div class="fcm-stat"><strong>${head}</strong>Direct cremation<span class="fcm-stat__sub">${est}${dc.year} ${dc.kind}, ${dc.source}${range}. ${dc.definition}</span></div>`;
   };
   onStateChange = (s: string) => {
     state = s;
@@ -326,4 +362,40 @@ function initCosts() {
   for (const el of [price, rate, ins, sav]) el.addEventListener('input', update);
   for (const el of [type, yearsSel]) el.addEventListener('change', update);
   update();
+}
+
+// --- ZIP lookup (V4.0): finds the ZIP code's state (U.S. Census ZCTA to county
+// file) and any local direct cremation survey covering its county. It never
+// creates a ZIP-specific price. The 270 KB table loads only when used.
+type ZipTable = { states: string[]; areas: string[]; map: Map<string, string> };
+let zipTable: Promise<ZipTable> | null = null;
+const loadZips = () => (zipTable ??= fetch('/funeral-map/zip-lookup.json').then((r) => r.json()).then((d: { states: string[]; areas: string[]; zips: string }) => {
+  const map = new Map<string, string>();
+  for (const item of d.zips.split(',')) map.set(item.slice(0, 5), item.slice(5));
+  return { states: d.states, areas: d.areas, map };
+}));
+function initZip(select: (state: string) => void) {
+  const form = $<HTMLFormElement>('[data-fcm-zip]');
+  const input = $<HTMLInputElement>('[data-fcm-zip-input]');
+  const msg = $<HTMLElement>('[data-fcm-zip-msg]');
+  if (!form || !input || !msg) return;
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const zip = input.value.trim();
+    if (!/^\d{5}$/.test(zip)) { msg.textContent = 'Enter a 5-digit ZIP code.'; return; }
+    msg.textContent = 'Looking up…';
+    try {
+      const t = await loadZips();
+      const hit = t.map.get(zip);
+      if (!hit) { msg.textContent = `ZIP code ${zip} was not found (some ZIP codes, such as P.O. boxes, have no area). Choose your state instead.`; return; }
+      const state = t.states[Number(hit.slice(0, 2))];
+      zipArea = hit.length > 2 ? t.areas[Number(hit.slice(2))] : null;
+      select(state);
+      msg.textContent = zipArea
+        ? `ZIP code ${zip} is in ${state}. A local direct cremation survey covers this area: ${zipArea}. Other figures are for the state or its census region, not your ZIP code.`
+        : `ZIP code ${zip} is in ${state}. Figures are for the state or its census region, not your ZIP code.`;
+    } catch {
+      msg.textContent = 'The ZIP lookup is not available right now. Choose your state instead.';
+    }
+  });
 }
