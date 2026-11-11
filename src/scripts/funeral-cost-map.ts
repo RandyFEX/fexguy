@@ -109,7 +109,7 @@ function init() {
     $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
     const mapNote = $<HTMLElement>('[data-fcm-mapnote]')!;
     mapNote.textContent = isCost(metric)
-      ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on NFDA's 2023 regional medians adjusted to ${monthName} ${lastYear} with the BLS funeral index. States in the same census region share one estimate. Darker means higher.`
+      ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on historical data. States in the same census region share one estimate. Darker means higher.`
       : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
   }
 
@@ -264,7 +264,7 @@ function initCosts() {
   onStateChange = (s: string) => {
     state = s;
     const region = REGION_OF[s]?.name;
-    estEl.innerHTML = `<p class="fcm-est-title">Estimated funeral cost based on regional data: <strong>${s}</strong>${region ? ` (${region} region)` : ''}</p>
+    estEl.innerHTML = `<p class="fcm-est-title">Estimated funeral cost based on historical data: <strong>${s}</strong>${region ? ` (${region} region)` : ''}</p>
       <div class="fcm-hist">${card('Funeral with viewing and burial', 'burial')}${card('Funeral with viewing and cremation', 'cremation')}<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published median available</span></div></div>`;
     prefill();
     update();
