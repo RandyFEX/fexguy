@@ -1,0 +1,174 @@
+{
+ "regions": [
+  {
+   "name": "New England",
+   "states": [
+    "Connecticut",
+    "Maine",
+    "Massachusetts",
+    "New Hampshire",
+    "Rhode Island",
+    "Vermont"
+   ],
+   "burial2023": 8985,
+   "cremation2023": 7023,
+   "burial2021": 7881,
+   "cremation2021CasketPackage": 7069
+  },
+  {
+   "name": "Middle Atlantic",
+   "states": [
+    "New Jersey",
+    "New York",
+    "Pennsylvania"
+   ],
+   "burial2023": 8573,
+   "cremation2023": 6498,
+   "burial2021": 8093,
+   "cremation2021CasketPackage": 7463
+  },
+  {
+   "name": "South Atlantic",
+   "states": [
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Maryland",
+    "North Carolina",
+    "South Carolina",
+    "West Virginia",
+    "Virginia"
+   ],
+   "burial2023": 8023,
+   "cremation2023": 6103,
+   "burial2021": 7800,
+   "cremation2021CasketPackage": 7070
+  },
+  {
+   "name": "East South Central",
+   "states": [
+    "Alabama",
+    "Kentucky",
+    "Mississippi",
+    "Tennessee"
+   ],
+   "burial2023": 7615,
+   "cremation2023": 5858,
+   "burial2021": 7271,
+   "cremation2021CasketPackage": 6314
+  },
+  {
+   "name": "West South Central",
+   "states": [
+    "Arkansas",
+    "Louisiana",
+    "Oklahoma",
+    "Texas"
+   ],
+   "burial2023": 7912,
+   "cremation2023": 5890,
+   "burial2021": 7334,
+   "cremation2021CasketPackage": 6405
+  },
+  {
+   "name": "East North Central",
+   "states": [
+    "Illinois",
+    "Indiana",
+    "Michigan",
+    "Ohio",
+    "Wisconsin"
+   ],
+   "burial2023": 8280,
+   "cremation2023": 6120,
+   "burial2021": 7868,
+   "cremation2021CasketPackage": 6953
+  },
+  {
+   "name": "West North Central",
+   "states": [
+    "Iowa",
+    "Minnesota",
+    "Kansas",
+    "Missouri",
+    "North Dakota",
+    "South Dakota",
+    "Nebraska"
+   ],
+   "burial2023": 8755,
+   "cremation2023": 6713,
+   "burial2021": 8500,
+   "cremation2021CasketPackage": 7560
+  },
+  {
+   "name": "Mountain",
+   "states": [
+    "Arizona",
+    "Colorado",
+    "Idaho",
+    "Montana",
+    "Nevada",
+    "New Mexico",
+    "Utah",
+    "Wyoming"
+   ],
+   "burial2023": 7390,
+   "cremation2023": 5505,
+   "burial2021": 6888,
+   "cremation2021CasketPackage": 5694
+  },
+  {
+   "name": "Pacific",
+   "states": [
+    "Alaska",
+    "California",
+    "Hawaii",
+    "Oregon",
+    "Washington"
+   ],
+   "burial2023": 7835,
+   "cremation2023": 5812,
+   "burial2021": 7225,
+   "cremation2021CasketPackage": 6028
+  }
+ ],
+ "source": "National Funeral Directors Association (NFDA), Member General Price List Study, news releases",
+ "sources": [
+  {
+   "year": 2023,
+   "title": "2023 NFDA General Price List Study Shows Inflation Increasing Faster than the Cost of a Funeral",
+   "date": "2023-12-08",
+   "url": "https://content.nfda.org/news/media-center/nfda-news-releases/id/8134",
+   "surveyMailed": "2023-07-07",
+   "respondents": 809
+  },
+  {
+   "year": 2021,
+   "title": "2021 NFDA General Price List Study Shows Funeral Costs Not Rising as Fast as Rate of Inflation",
+   "date": "2021-11-04",
+   "url": "https://content.nfda.org/news/media-center/nfda-news-releases/id/6182/2021-nfda-general-price-list-study-shows-funeral-costs-not-rising-as-fast-as-rate-of-inflation",
+   "surveyMailed": "2021-07-29",
+   "respondents": 814
+  }
+ ],
+ "retrieved": "2026-11-11",
+ "national": {
+  "burial2023": 8300,
+  "cremation2023": 6280,
+  "burialWithVault2023": 9995,
+  "vault2023": 1695,
+  "burial2021": 7848,
+  "cremation2021AltContainer": 5810,
+  "cremation2021CasketPackage": 6970
+ },
+ "packages": {
+  "burial": "Funeral with viewing and burial: basic services fee, removal/transfer, embalming and other preparation, metal casket, facilities and staff for viewing and ceremony, hearse, service car/van, basic memorial printed package. Excludes vault, cemetery, monument/marker and cash-advance charges.",
+  "cremation": "Funeral with viewing and cremation (2023 definition): basic services fee, removal/transfer, embalming and other preparation, facilities and staff for viewing and ceremony, service car/van, basic memorial printed package, cremation fee, alternative cremation container, urn. Excludes cemetery, monument/marker and cash-advance charges."
+ },
+ "notes": [
+  "NFDA reports medians for nine U.S. census regions, not individual states; every state in a region shares its estimate. District of Columbia is not assigned to a region in NFDA's table.",
+  "NFDA's 2021 regional cremation figures used a cremation casket; its 2023 figures use an alternative cremation container. The two years are not comparable for cremation; NFDA restated the 2021 national median with an alternative container as $5,810.",
+  "Direct cremation (no viewing or ceremony) is not reported in these releases."
+ ],
+ "cpiReferenceMonth": "2023-07"
+}

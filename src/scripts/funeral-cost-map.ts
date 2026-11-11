@@ -4,6 +4,7 @@
 import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
+import nfda from '@/data/funeral-map/nfda-prices.json';
 
 type Row = [number, number];
 type YearData = Record<string, Row>;
@@ -55,6 +56,36 @@ const QEND: Record<string, string> = { Q1: 'March', Q2: 'June', Q3: 'September',
 const qLabel = (i: number) => { const [y, q] = Q[i].split(' '); return `${QEND[q]} ${y}`; };
 const rateOf = (state: string, cause: string, i = latestIdx(cause)) => RATES[state]?.[cause]?.[i] ?? null;
 
+// --- Funeral cost estimates (Map V3.3): NFDA 2023 regional medians (census
+// regions) adjusted by the BLS funeral index from July 2023 (the survey month)
+// to the latest published month. Modeled planning estimates, not state prices.
+type Pkg = 'burial' | 'cremation';
+const REF_MONTH = nfda.cpiReferenceMonth; // e.g. 2023-07, the 2023 survey month
+const CPI_FACTOR = current / monthly[REF_MONTH.slice(0, 4)][`M${REF_MONTH.slice(5)}`];
+const REGION_OF: Record<string, (typeof nfda.regions)[number]> = {};
+for (const r of nfda.regions) for (const st of r.states) REGION_OF[st] = r;
+const median2023 = (state: string, pkg: Pkg) => {
+  if (state === US) return pkg === 'burial' ? nfda.national.burial2023 : nfda.national.cremation2023;
+  const r = REGION_OF[state];
+  return r ? (pkg === 'burial' ? r.burial2023 : r.cremation2023) : null;
+};
+const estimate = (state: string, pkg: Pkg) => { const m = median2023(state, pkg); return m == null ? null : m * CPI_FACTOR; };
+const vsNational = (state: string, pkg: Pkg) => {
+  const m = median2023(state, pkg);
+  const n = pkg === 'burial' ? nfda.national.burial2023 : nfda.national.cremation2023;
+  return m == null || state === US ? null : m / n - 1;
+};
+const isCost = (metric: string) => metric.startsWith('cost:');
+const causeOf = (metric: string) => (isCost(metric) ? 'All causes' : metric);
+const metricValue = (state: string, metric: string) => (isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric));
+const metricText = (state: string, metric: string) => {
+  const v = metricValue(state, metric);
+  if (v == null) return `${state}: not available`;
+  if (!isCost(metric)) return `${state}: ${v} deaths per 100,000`;
+  return `${state} (${REGION_OF[state]?.name ?? 'U.S.'} region): estimated ${money(v)}`;
+};
+let onStateChange: (state: string) => void = () => {};
+
 if (root) init();
 
 function init() {
@@ -67,22 +98,26 @@ function init() {
 
   function colorMap() {
     const metric = metricSel.value;
-    const vals = pathsEls.map((p) => rateOf(p.dataset.state!, metric)).filter((v): v is number => v != null).sort((a, b) => a - b);
+    const vals = pathsEls.map((p) => metricValue(p.dataset.state!, metric)).filter((v): v is number => v != null).sort((a, b) => a - b);
     const cut = (q: number) => vals[Math.min(vals.length - 1, Math.floor(q * vals.length))];
     const bounds = [0.2, 0.4, 0.6, 0.8].map(cut);
     for (const p of pathsEls) {
-      const v = rateOf(p.dataset.state!, metric);
+      const v = metricValue(p.dataset.state!, metric);
       p.style.fill = v == null ? '#eeeeee' : shades[bounds.filter((b) => v >= b).length];
-      p.querySelector('title')!.textContent = `${p.dataset.state}: ${v == null ? 'not available' : `${v} per 100,000`}`;
+      p.querySelector('title')!.textContent = metricText(p.dataset.state!, metric);
     }
     $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
-    $<HTMLElement>('[data-fcm-period]')!.textContent = `12 months ending ${qLabel(latestIdx(metric))}`;
+    const mapNote = $<HTMLElement>('[data-fcm-mapnote]')!;
+    mapNote.textContent = isCost(metric)
+      ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on NFDA's 2023 regional medians adjusted to ${monthName} ${lastYear} with the BLS funeral index. States in the same census region share one estimate. Darker means higher.`
+      : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
   }
 
   function select(state: string) {
     stateSel.value = state;
     for (const p of pathsEls) p.setAttribute('aria-pressed', String(p.dataset.state === state));
-    renderMortality(state, metricSel.value);
+    renderMortality(state, causeOf(metricSel.value));
+    onStateChange(state);
   }
 
   for (const p of pathsEls) {
@@ -91,18 +126,17 @@ function init() {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(p.dataset.state!); }
     });
     p.addEventListener('mouseenter', () => {
-      const v = rateOf(p.dataset.state!, metricSel.value);
-      tip.textContent = `${p.dataset.state}: ${v == null ? 'not available' : `${v} deaths per 100,000`}`;
+      tip.textContent = metricText(p.dataset.state!, metricSel.value);
       tip.hidden = false;
     });
     p.addEventListener('mouseleave', () => { tip.hidden = true; });
   }
   stateSel.addEventListener('change', () => select(stateSel.value));
-  metricSel.addEventListener('change', () => { colorMap(); renderMortality(stateSel.value, metricSel.value); });
+  metricSel.addEventListener('change', () => { colorMap(); renderMortality(stateSel.value, causeOf(metricSel.value)); });
 
+  initCosts();
   colorMap();
   select(US);
-  initCosts();
 }
 
 function renderMortality(state: string, metric: string) {
@@ -201,6 +235,42 @@ function initCosts() {
     rate.value = (DEFAULT_RATE * 100).toFixed(1);
     $<HTMLElement>('[data-fcm-rate-note]')!.textContent = `Default: ${(DEFAULT_RATE * 100).toFixed(1)}% a year, the average yearly change in the BLS funeral index from ${monthName} ${lastYear - 20} to ${monthName} ${lastYear}.`;
   }
+
+  const estEl = $<HTMLElement>('[data-fcm-est]')!;
+  let typed = false; // the visitor typed their own price
+  let state = US;
+  const pkgOf = (): Pkg | null => (type.value === 'burial' ? 'burial' : type.value === 'cremation-service' ? 'cremation' : null);
+  const prefill = () => {
+    const pkg = pkgOf();
+    const est = pkg ? estimate(state, pkg) : null;
+    if (!typed) price.value = est != null ? String(Math.round(est)) : '';
+    const src = $<HTMLElement>('[data-fcm-price-src]')!;
+    src.textContent = typed
+      ? 'Using the price you entered.'
+      : est != null
+        ? `Filled in with the estimate for ${state === US ? 'the United States' : `${state} (${REGION_OF[state].name} region)`}. Replace it with a funeral home's price for a more accurate result.`
+        : pkg
+          ? `No estimate for ${state}. Enter a price from a funeral home's price list.`
+          : 'No published estimate for direct cremation. Enter a price from a funeral home\'s price list.';
+  };
+  const card = (label: string, pkg: Pkg) => {
+    const est = estimate(state, pkg);
+    const m = median2023(state, pkg);
+    const vs = vsNational(state, pkg);
+    if (est == null || m == null) return `<div class="fcm-stat"><strong>n/a</strong>${label}: not available for ${state}</div>`;
+    const cmp = vs == null ? '' : '; ' + `${Math.abs(vs * 100).toFixed(0)}% ${vs >= 0 ? 'above' : 'below'} the national median`;
+    return `<div class="fcm-stat"><strong>${money(est)}</strong>${label}<span class="fcm-stat__sub">${money(m)} NFDA 2023 ${state === US ? 'national' : 'regional'} median${cmp}</span></div>`;
+  };
+  onStateChange = (s: string) => {
+    state = s;
+    const region = REGION_OF[s]?.name;
+    estEl.innerHTML = `<p class="fcm-est-title">Estimated funeral cost based on regional data: <strong>${s}</strong>${region ? ` (${region} region)` : ''}</p>
+      <div class="fcm-hist">${card('Funeral with viewing and burial', 'burial')}${card('Funeral with viewing and cremation', 'cremation')}<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No published median available</span></div></div>`;
+    prefill();
+    update();
+  };
+  price.addEventListener('input', () => { typed = price.value.trim() !== ''; if (!typed) prefill(); });
+  type.addEventListener('change', () => { prefill(); });
 
   const update = () => {
     const p = parseMoney(price.value);

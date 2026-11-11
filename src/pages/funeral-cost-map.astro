@@ -21,6 +21,7 @@ import paths from '@/data/funeral-map/state-paths.json';
 import mortality from '@/data/funeral-map/leading-causes.json';
 import cpi from '@/data/funeral-map/cpi-funeral.json';
 import recent from '@/data/funeral-map/mortality-recent.json';
+import nfda from '@/data/funeral-map/nfda-prices.json';
 
 type Row = [number, number];
 const LATEST = String(mortality.years[1]);
@@ -55,6 +56,17 @@ const lastYear = cpiYears[cpiYears.length - 1];
 const lastMonth = Object.keys((cpi.monthly as Record<string, Record<string, number>>)[lastYear]).sort().pop()!;
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const cpiLabel = `${MONTHS[Number(lastMonth.slice(1)) - 1]} ${lastYear}`;
+
+// Funeral cost estimates (Map V3.3): NFDA 2023 regional medians x BLS funeral
+// index (latest month / July 2023, the survey month). Crawlable regional table.
+const monthlyCpi = cpi.monthly as Record<string, Record<string, number>>;
+const refMonth = nfda.cpiReferenceMonth;
+const cpiFactor = monthlyCpi[lastYear][lastMonth] / monthlyCpi[refMonth.slice(0, 4)][`M${refMonth.slice(5)}`];
+const money = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`;
+const vsNat = (v: number, n: number) => { const d = v / n - 1; return `${Math.abs(d * 100).toFixed(0)}% ${d >= 0 ? 'above' : 'below'}`; };
+const s2023 = nfda.sources.find((x) => x.year === 2023)!;
+const s2021 = nfda.sources.find((x) => x.year === 2021)!;
+const cpi2123 = monthlyCpi['2023']['M07'] / monthlyCpi['2021']['M07'];
 
 const title = 'Funeral Cost and Mortality Map by State';
 const description = 'Interactive U.S. map: how much funeral prices have risen (BLS), projected future funeral costs, a funding shortfall calculator, and the leading causes of death in every state (CDC).';
@@ -93,6 +105,8 @@ const jsonLd = [
           <label class="fcm-field">
             <span>Color the map by</span>
             <select id="fcm-metric" data-fcm-metric>
+              <option value="cost:burial" selected>Estimated cost: funeral with burial</option>
+              <option value="cost:cremation">Estimated cost: funeral with cremation</option>
               <option value="All causes">Death rate, all causes</option>
               {[...recent.leading, ...recent.other].map((c) => <option value={c}>Death rate: {c}</option>)}
             </select>
@@ -107,8 +121,8 @@ const jsonLd = [
           <p class="fcm-tip" data-fcm-tip hidden></p>
         </div>
         <div class="fcm-legend" data-fcm-legend aria-hidden="true"></div>
-        <p class="fcm-note">
-          Map shading: age-adjusted death rate per 100,000 people, <span data-fcm-period>{periodLabel}</span> (provisional), CDC/NCHS. Darker means higher.
+        <p class="fcm-note" data-fcm-mapnote>
+          Map shading: estimated funeral cost based on NFDA's 2023 regional medians. Darker means higher.
         </p>
       </section>
 
@@ -163,7 +177,14 @@ const jsonLd = [
     </div>
 
     <section class="fcm-card" aria-labelledby="fcm-cost-h">
-      <h2 id="fcm-cost-h" class="fcm-h2">How much funeral prices have risen</h2>
+      <h2 id="fcm-cost-h" class="fcm-h2">What a funeral costs and how much prices have risen</h2>
+      <div class="fcm-est" data-fcm-est aria-live="polite"></div>
+      <p class="fcm-note">
+        Estimates based on regional data: the National Funeral Directors Association's 2023 median prices for the
+        state's census region, adjusted to {cpiLabel} with the BLS funeral index. They are planning estimates, not
+        prices measured in your state; individual funeral homes charge more or less. Cemetery costs, vault, marker and
+        cash-advance items such as flowers and obituaries are not included.
+      </p>
       <p>
         The U.S. Bureau of Labor Statistics tracks funeral prices in the Consumer Price Index. These increases are
         national; BLS does not publish a funeral price index for individual states.
@@ -176,9 +197,9 @@ const jsonLd = [
 
       <h3 class="fcm-h3">Funeral cost calculator</h3>
       <p>
-        Funeral prices vary widely from one funeral home to the next, so the calculator starts from a real price. Ask a
+        The calculator starts from the estimate for the selected state. Funeral prices vary widely from one funeral home to the next, so for a closer figure ask a
         funeral home near you for its General Price List (the FTC Funeral Rule requires funeral homes to give you one),
-        then enter the total for the type of funeral you want.
+        then enter its total for the type of funeral you want.
       </p>
       <div class="fcm-form">
         <label class="fcm-field">
@@ -190,14 +211,11 @@ const jsonLd = [
           </select>
         </label>
         <label class="fcm-field">
-          <span>Today's price (from a funeral home's price list)</span>
-          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-price placeholder="for example 9,000" aria-describedby="fcm-price-note" /></span>
+          <span>Today's price (estimate, or a funeral home's price)</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-price placeholder="enter a price" aria-describedby="fcm-price-note" /></span>
         </label>
       </div>
-      <p class="fcm-note" id="fcm-price-note">
-        Average funeral prices by state are not shown: we have not found a current, independently published source we
-        can reuse. Your own quote is more accurate for your area anyway.
-      </p>
+      <p class="fcm-note" id="fcm-price-note" data-fcm-price-src></p>
 
       <div class="fcm-timeline" data-fcm-timeline hidden></div>
 
@@ -259,6 +277,27 @@ const jsonLd = [
       </p>
     </section>
 
+    <section class="fcm-card" aria-labelledby="fcm-region-h">
+      <h2 id="fcm-region-h" class="fcm-h2">Estimated funeral cost by region</h2>
+      <p class="fcm-note">
+        NFDA 2023 median prices by census region (funeral with viewing; burial excludes vault and cemetery costs;
+        cremation uses an alternative container and urn), and the same prices adjusted to {cpiLabel} with the BLS
+        funeral index. Compared with the national median for the same package and year.
+      </p>
+      <div class="fcm-scroll" tabindex="0">
+        <table class="fcm-table">
+          <thead><tr><th scope="col">Region and states</th><th scope="col">Burial, 2023 median</th><th scope="col">Burial, estimated today</th><th scope="col">vs. national</th><th scope="col">Cremation, 2023 median</th><th scope="col">Cremation, estimated today</th><th scope="col">vs. national</th></tr></thead>
+          <tbody>
+            {nfda.regions.map((r) => (
+              <tr><th scope="row">{r.name}<br /><span class="fcm-note">{r.states.join(', ')}</span></th><td>{money(r.burial2023)}</td><td>{money(r.burial2023 * cpiFactor)}</td><td>{vsNat(r.burial2023, nfda.national.burial2023)}</td><td>{money(r.cremation2023)}</td><td>{money(r.cremation2023 * cpiFactor)}</td><td>{vsNat(r.cremation2023, nfda.national.cremation2023)}</td></tr>
+            ))}
+            <tr><th scope="row">United States</th><td>{money(nfda.national.burial2023)}</td><td>{money(nfda.national.burial2023 * cpiFactor)}</td><td>national</td><td>{money(nfda.national.cremation2023)}</td><td>{money(nfda.national.cremation2023 * cpiFactor)}</td><td>national</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fcm-note">District of Columbia is not listed in NFDA's regional table, so no estimate is shown for it.</p>
+    </section>
+
     <section class="fcm-card" aria-labelledby="fcm-states-h">
       <h2 id="fcm-states-h" class="fcm-h2">Death rates and leading cause by state</h2>
       <p class="fcm-note">Age-adjusted death rates per 100,000, {periodLabel} (provisional; for causes whose latest quarter is not yet published, the latest published 12 months). Deaths: {recent.deaths2022.year}, all causes (provisional).</p>
@@ -284,13 +323,27 @@ const jsonLd = [
           <a href={cpi.sourceUrl} rel="noopener">BLS series {cpi.series}</a>.
         </li>
         <li>
-          <strong>Future costs:</strong> today's price you enter × (1 + yearly increase)<sup>years</sup>. The default yearly
+          <strong>Future costs:</strong> today's price (the estimate for the selected state, or the price you enter) × (1 + yearly increase)<sup>years</sup>. The default yearly
           increase is the funeral index's average annual change over the last 20 years. You can change it.
         </li>
         <li>
-          <strong>Funeral price estimates:</strong> calculated only from the price you enter. They are not surveyed
-          prices for your state.
+          <strong>Funeral cost estimates:</strong> {nfda.source}: "{s2023.title}" ({s2023.date}; survey mailed
+          {s2023.surveyMailed}, {s2023.respondents} member funeral homes), median prices for nine census regions and the
+          nation. Each state uses its region's median, multiplied by the BLS funeral index for {cpiLabel} divided by
+          July 2023 (factor {cpiFactor.toFixed(3)}). These are modeled planning estimates: NFDA did not measure
+          individual states, and NFDA members may not represent every funeral home.
+          Packages: {nfda.packages.burial} {nfda.packages.cremation}
+          Direct cremation is not reported in NFDA's releases, so no direct cremation estimate is shown.
+          <a href={s2023.url} rel="noopener">NFDA 2023 release</a>.
         </li>
+        <li>
+          <strong>Check against 2021:</strong> NFDA's {s2021.date.slice(0, 4)} regional burial medians ("{s2021.title}"),
+          adjusted to July 2023 with the same index (+{((cpi2123 - 1) * 100).toFixed(1)}%), came out 0% to 11% higher than
+          the 2023 medians NFDA measured: from 2021 to 2023 the BLS funeral index rose faster than NFDA's national burial
+          median (+5.8%). Adjusted estimates may therefore run high. NFDA's 2021 cremation figures used a cremation casket
+          and are not comparable with 2023's. <a href={s2021.url} rel="noopener">NFDA 2021 release</a>.
+        </li>
+
         <li>
           <strong>Recent death rates:</strong> {recent.source}, "{recent.dataset}", {periodLabel} and each earlier
           quarter back to {recent.quarters[0]}, retrieved {recent.retrieved}. Provisional figures can change.
@@ -352,6 +405,11 @@ const jsonLd = [
   @media (min-width: 48rem) { .fcm-hist { grid-template-columns: repeat(4, 1fr); } }
   .fcm-stat { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); text-align: center; }
   .fcm-stat strong { display: block; font-size: 1.75rem; color: var(--color-primary); }
+  .fcm-stat__sub { display: block; font-size: 0.8125rem; color: var(--color-text-muted); margin-top: var(--space-1); }
+  .fcm-est { margin-bottom: var(--space-3); }
+  .fcm-est .fcm-hist { grid-template-columns: 1fr; }
+  @media (min-width: 48rem) { .fcm-est .fcm-hist { grid-template-columns: repeat(3, 1fr); } }
+  .fcm-est-title { font-size: 1.125rem; margin-bottom: var(--space-3); }
   .fcm-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--space-2); margin: var(--space-4) 0; }
   .fcm-timeline div { border-top: 4px solid var(--color-border); padding-top: var(--space-2); }
   .fcm-timeline .is-today { border-color: var(--color-primary); }
