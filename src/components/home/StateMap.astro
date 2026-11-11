@@ -18,6 +18,7 @@ const LABELS = labels as Record<string, Label>;
 <section class="home-map" aria-labelledby="cover-map-title">
   <div class="container">
     <h2 class="home-map__title" id="cover-map-title">Randy's Final Expense Cost &amp; Life Expectancy by State</h2>
+    <p class="home-map__hint">Click On Your Home State</p>
     <div class="cover-map" data-home-map>
       <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
         {paths.states.map((s) => (
@@ -55,18 +56,43 @@ const LABELS = labels as Record<string, Label>;
 </script>
 
 <style>
+  /* V4.13: about half of Meet Randy's bottom padding (2.5rem; 3.5rem from
+     64rem) is taken back, halving the gap below ABOUT RANDY. */
   .home-map {
     padding-block: 0 var(--space-12);
+    margin-top: -1.25rem;
+  }
+  @media (min-width: 64rem) {
+    .home-map {
+      margin-top: -1.75rem;
+    }
   }
   /* Same heading style as the homepage section headings (CoverageNote). */
   .home-map__title {
     max-width: none;
-    margin: 0 auto var(--space-4);
+    margin: 0 auto;
     text-align: center;
     font-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.5rem);
     line-height: 1.15;
     letter-spacing: -0.01em;
     color: var(--color-text);
+  }
+  /* V4.13: the instruction takes the heading's former 16px bottom margin
+     (a 1rem line box), so the section height does not change. */
+  .home-map__hint {
+    /* A little space above it; the map's empty top edge takes the same
+       space back (2px on phones, where that edge is narrow; 6px from 48rem). */
+    margin: 0.125rem 0 -0.125rem;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: var(--color-text);
+  }
+  @media (min-width: 48rem) {
+    .home-map__hint {
+      margin: 0.375rem 0 -0.375rem;
+    }
   }
   .cover-map {
     position: relative;
