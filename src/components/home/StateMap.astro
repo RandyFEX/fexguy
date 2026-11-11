@@ -91,7 +91,7 @@ const LABELS = labels as Record<string, Label>;
     left: 50%;
     top: 9.2%;
     margin: 0;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, calc(-100% - 8px));
     pointer-events: none;
   }
   /* Narrow phones: the bubble is wide relative to the map, so it sits a
@@ -99,14 +99,16 @@ const LABELS = labels as Record<string, Label>;
   @media (max-width: 23.99rem) {
     .home-map__hint {
       top: 6%;
+      /* No extra 8px lift here: it would touch the heading's last line. */
+      transform: translate(-50%, -100%);
     }
   }
   .home-map__bubble {
     display: inline-block;
     padding: 0.125rem 0.5rem;
     border-radius: 999px;
-    background: var(--home-gold, #b68a35);
-    color: #000000;
+    background: var(--color-cta);
+    color: #ffffff;
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.2;
