@@ -1,0 +1,305 @@
+---
+// /funeral-cost-map/ (Randy, November 2026, Map V3.0): an interactive U.S.
+// map of funeral price inflation and leading causes of death, with a funeral
+// cost projection and a funding shortfall calculator. Everything is on this
+// one page; no lead gate. Data (src/data/funeral-map/, rebuilt by
+// scripts/funeral-map/build-data.mjs):
+//   - BLS CPI series CUUR0000SEGD (funeral expenses, national, monthly);
+//   - CDC/NCHS "Leading Causes of Death" (bi63-dtpu), by state, 1999-2017;
+//   - state outlines: us-atlas 3.0.1 (U.S. Census Bureau boundaries).
+// No funeral prices in dollars are shown as data: no reusable source was
+// available (see the methodology section). Visitors can enter a price from a
+// funeral home's General Price List; every dollar figure is calculated from it.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+import paths from '@/data/funeral-map/state-paths.json';
+import mortality from '@/data/funeral-map/leading-causes.json';
+import cpi from '@/data/funeral-map/cpi-funeral.json';
+
+type Row = [number, number];
+const LATEST = String(mortality.years[1]);
+const states = mortality.states as unknown as Record<string, Record<string, Record<string, Row>>>;
+const stateNames = paths.states.map((s) => s.name).sort();
+const fmt = (n: number) => n.toLocaleString('en-US');
+
+// Crawlable summary: every state's latest-year all-cause figures and leading cause.
+const tableRows = [...stateNames, 'United States'].map((name) => {
+  const y = states[name]?.[LATEST] ?? {};
+  const all = y['All causes'];
+  const top = Object.entries(y).filter(([c]) => c !== 'All causes').sort((a, b) => b[1][0] - a[1][0])[0];
+  return { name, deaths: all?.[0] ?? null, aadr: all?.[1] ?? null, top: top?.[0] ?? null, topDeaths: top?.[1][0] ?? null };
+});
+
+// Latest published CPI month (for the "updated" line).
+const cpiYears = Object.keys(cpi.monthly).sort();
+const lastYear = cpiYears[cpiYears.length - 1];
+const lastMonth = Object.keys((cpi.monthly as Record<string, Record<string, number>>)[lastYear]).sort().pop()!;
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const cpiLabel = `${MONTHS[Number(lastMonth.slice(1)) - 1]} ${lastYear}`;
+
+const title = 'Funeral Cost and Mortality Map by State';
+const description = 'Interactive U.S. map: how much funeral prices have risen (BLS), projected future funeral costs, a funding shortfall calculator, and the leading causes of death in every state (CDC).';
+const jsonLd = [
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    url: 'https://funeralfunds.com/funeral-cost-map/',
+    isPartOf: { '@id': 'https://funeralfunds.com/#website' },
+    publisher: { '@id': 'https://funeralfunds.com/#organization' },
+  }),
+];
+---
+
+<BaseLayout title={pageTitle(title)} description={description} canonical="/funeral-cost-map/" jsonLd={jsonLd}>
+  <div class="container fcm" data-page-type="utility" data-page-reason="Interactive funeral cost and mortality map.">
+    <h1>{title}</h1>
+    <p class="fcm-lead">
+      Pick a state to see its leading causes of death, then see how much funeral prices have risen over the last 20
+      years, what a funeral could cost in the future, and how much of that cost your coverage and savings would pay.
+    </p>
+
+    <div class="fcm-grid">
+      <section class="fcm-map" aria-labelledby="fcm-map-h">
+        <h2 id="fcm-map-h" class="fcm-h2">Choose a state</h2>
+        <div class="fcm-controls">
+          <label class="fcm-field">
+            <span>State</span>
+            <select id="fcm-state" data-fcm-state>
+              <option value="United States">United States (national)</option>
+              {stateNames.map((n) => <option value={n}>{n}</option>)}
+            </select>
+          </label>
+          <label class="fcm-field">
+            <span>Color the map by</span>
+            <select id="fcm-metric" data-fcm-metric>
+              <option value="All causes">Death rate, all causes</option>
+              {mortality.causes.map((c) => <option value={c}>Death rate: {c}</option>)}
+            </select>
+          </label>
+        </div>
+        <div class="fcm-svg-wrap">
+          <svg viewBox={paths.viewBox} role="group" aria-label="Map of the United States. Select a state." data-fcm-svg>
+            {paths.states.map((s) => (
+              <path d={s.d} data-state={s.name} tabindex="0" role="button" aria-label={s.name}><title>{s.name}</title></path>
+            ))}
+          </svg>
+          <p class="fcm-tip" data-fcm-tip hidden></p>
+        </div>
+        <div class="fcm-legend" data-fcm-legend aria-hidden="true"></div>
+        <p class="fcm-note">
+          Map shading: age-adjusted death rate per 100,000 people, {LATEST}, CDC/NCHS. Darker means higher.
+        </p>
+      </section>
+
+      <section class="fcm-panel" aria-labelledby="fcm-mort-h" aria-live="polite">
+        <h2 id="fcm-mort-h" class="fcm-h2">Leading causes of death: <span data-fcm-name>United States</span>, {LATEST}</h2>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">#</th><th scope="col">Cause</th><th scope="col">Deaths</th><th scope="col">Share of deaths</th><th scope="col">Death rate*</th><th scope="col">vs. U.S. rate</th></tr></thead>
+            <tbody data-fcm-causes></tbody>
+          </table>
+        </div>
+        <p class="fcm-note" data-fcm-total></p>
+        <p class="fcm-note">
+          *Age-adjusted death rate per 100,000 people (2000 U.S. standard population). All ages and both sexes combined.
+          These are population statistics; they do not predict any one person's lifespan.
+        </p>
+        <h3 class="fcm-h3">Trend, 1999 to {LATEST}: <span data-fcm-trend-cause>All causes</span></h3>
+        <div class="fcm-trend" data-fcm-trend></div>
+      </section>
+    </div>
+
+    <section class="fcm-card" aria-labelledby="fcm-cost-h">
+      <h2 id="fcm-cost-h" class="fcm-h2">How much funeral prices have risen</h2>
+      <p>
+        The U.S. Bureau of Labor Statistics tracks funeral prices in the Consumer Price Index. These increases are
+        national; BLS does not publish a funeral price index for individual states.
+      </p>
+      <div class="fcm-hist" data-fcm-hist></div>
+      <p class="fcm-note">
+        Change in the BLS funeral expenses index (series CUUR0000SEGD) from the same month 5, 10, 15 and 20 years
+        earlier to {cpiLabel}, the latest published month.
+      </p>
+
+      <h3 class="fcm-h3">Funeral cost calculator</h3>
+      <p>
+        Funeral prices vary widely from one funeral home to the next, so the calculator starts from a real price. Ask a
+        funeral home near you for its General Price List (the FTC Funeral Rule requires funeral homes to give you one),
+        then enter the total for the type of funeral you want.
+      </p>
+      <div class="fcm-form">
+        <label class="fcm-field">
+          <span>Type of funeral</span>
+          <select data-fcm-type>
+            <option value="burial">Traditional burial with funeral service</option>
+            <option value="cremation-service">Cremation with funeral service</option>
+            <option value="direct-cremation">Direct cremation</option>
+          </select>
+        </label>
+        <label class="fcm-field">
+          <span>Today's price (from a funeral home's price list)</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-price placeholder="for example 9,000" aria-describedby="fcm-price-note" /></span>
+        </label>
+      </div>
+      <p class="fcm-note" id="fcm-price-note">
+        Average funeral prices by state are not shown: we have not found a current, independently published source we
+        can reuse. Your own quote is more accurate for your area anyway.
+      </p>
+
+      <div class="fcm-timeline" data-fcm-timeline hidden></div>
+
+      <div class="fcm-form">
+        <label class="fcm-field">
+          <span>Look ahead</span>
+          <select data-fcm-years>
+            <option value="5">5 years</option>
+            <option value="10" selected>10 years</option>
+            <option value="15">15 years</option>
+            <option value="20">20 years</option>
+          </select>
+        </label>
+        <label class="fcm-field">
+          <span>Yearly funeral price increase (%)</span>
+          <input type="text" inputmode="decimal" data-fcm-rate aria-describedby="fcm-rate-note" />
+        </label>
+      </div>
+      <p class="fcm-note" id="fcm-rate-note" data-fcm-rate-note></p>
+      <div class="fcm-result" data-fcm-future aria-live="polite"></div>
+
+      <h3 class="fcm-h3">Funding shortfall</h3>
+      <div class="fcm-form">
+        <label class="fcm-field">
+          <span>Life insurance you already have</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-ins placeholder="0" /></span>
+        </label>
+        <label class="fcm-field">
+          <span>Money saved for the funeral</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-sav placeholder="0" /></span>
+        </label>
+      </div>
+      <div class="fcm-result" data-fcm-short aria-live="polite"></div>
+      <p class="fcm-note">Projections are estimates, not guaranteed future prices.</p>
+    </section>
+
+    <section class="fcm-cta" aria-labelledby="fcm-cta-h">
+      <h2 id="fcm-cta-h" class="fcm-h2">Cover the cost so your family doesn't have to</h2>
+      <p>See burial insurance rates from several insurance companies in under a minute.</p>
+      <a class="fcm-btn" href="/free-quote/">GET MY PERSONALIZED COVERAGE QUOTE</a>
+      <p>Or call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
+    </section>
+
+    <section class="fcm-card" aria-labelledby="fcm-rights-h">
+      <h2 id="fcm-rights-h" class="fcm-h2">Your rights when you buy a funeral</h2>
+      <p>The Federal Trade Commission's Funeral Rule (16 CFR Part 453) applies to funeral homes nationwide. Under it, a funeral home must:</p>
+      <ul>
+        <li>give you accurate price information over the telephone when you ask (§ 453.2(b)(1));</li>
+        <li>give you a written General Price List when you discuss arrangements in person (§ 453.2(b)(4));</li>
+        <li>show you a casket price list before showing you caskets (§ 453.2(b)(2));</li>
+        <li>not tell you embalming is required by law when it is not, and disclose that, except in certain special cases, embalming is not required by law (§ 453.3(a));</li>
+        <li>not require a casket for a direct cremation, and offer an alternative container if it arranges direct cremations (§ 453.4(a));</li>
+        <li>not make you buy one item as a condition of getting another, except where the law requires it (§ 453.4(b)).</li>
+      </ul>
+      <p>
+        Read the rule at <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-453" rel="noopener">eCFR, 16 CFR Part 453</a>.
+        States add their own rules for funeral homes, cemeteries and preneed contracts; your state's funeral or
+        cemetery licensing board can tell you what applies where you live.
+      </p>
+    </section>
+
+    <section class="fcm-card" aria-labelledby="fcm-states-h">
+      <h2 id="fcm-states-h" class="fcm-h2">Deaths and leading cause by state, {LATEST}</h2>
+      <div class="fcm-scroll" tabindex="0">
+        <table class="fcm-table">
+          <thead><tr><th scope="col">State</th><th scope="col">Deaths, all causes</th><th scope="col">Age-adjusted death rate</th><th scope="col">Leading cause</th><th scope="col">Deaths from it</th></tr></thead>
+          <tbody>
+            {tableRows.map((r) => (
+              <tr><th scope="row">{r.name}</th><td>{r.deaths != null ? fmt(r.deaths) : 'n/a'}</td><td>{r.aadr ?? 'n/a'}</td><td>{r.top ?? 'n/a'}</td><td>{r.topDeaths != null ? fmt(r.topDeaths) : 'n/a'}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="fcm-card" aria-labelledby="fcm-method-h">
+      <h2 id="fcm-method-h" class="fcm-h2">Sources and methodology</h2>
+      <ul>
+        <li>
+          <strong>Funeral price increases:</strong> {cpi.source}, series {cpi.series} ({cpi.title}; {cpi.base}),
+          monthly values retrieved {cpi.retrieved} from the BLS public API. Historical changes use the published index for
+          the same month in each year, not an assumed inflation rate. {cpi.notes.join(' ')}
+          <a href={cpi.sourceUrl} rel="noopener">BLS series {cpi.series}</a>.
+        </li>
+        <li>
+          <strong>Future costs:</strong> today's price you enter × (1 + yearly increase)<sup>years</sup>. The default yearly
+          increase is the funeral index's average annual change over the last 20 years. You can change it.
+        </li>
+        <li>
+          <strong>Funeral price estimates:</strong> calculated only from the price you enter. They are not surveyed
+          prices for your state.
+        </li>
+        <li>
+          <strong>Causes of death:</strong> {mortality.source}, "{mortality.dataset}" ({mortality.years[0]} to
+          {mortality.years[1]}), retrieved {mortality.retrieved}. {mortality.scope}. {LATEST} is the latest year in this
+          dataset. <a href={mortality.sourceUrl} rel="noopener">CDC data</a>.
+        </li>
+        <li><strong>Map:</strong> {paths.source}.</li>
+      </ul>
+      <p class="fcm-note">Last updated November 11, 2026.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import '@/scripts/funeral-cost-map';
+</script>
+
+<!-- Global (fcm- prefixed): the script renders some of this markup. -->
+<style is:global>
+  .fcm { padding-block: var(--space-6); }
+  .fcm h1 { margin-bottom: var(--space-2); }
+  .fcm-lead { font-size: 1.125rem; max-width: 46rem; }
+  .fcm-h2 { font-size: 1.375rem; margin: 0 0 var(--space-3); color: var(--color-primary); }
+  .fcm-h3 { font-size: 1.125rem; margin: var(--space-6) 0 var(--space-2); }
+  .fcm-grid { display: grid; gap: var(--space-6); margin-top: var(--space-6); }
+  @media (min-width: 64rem) { .fcm-grid { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+  .fcm-controls, .fcm-form { display: grid; gap: var(--space-3); margin-bottom: var(--space-3); }
+  @media (min-width: 40rem) { .fcm-controls, .fcm-form { grid-template-columns: 1fr 1fr; } }
+  .fcm-grid > *, .fcm-field { min-width: 0; }
+  .fcm-field { display: grid; gap: var(--space-1); font-weight: 600; }
+  .fcm-field select, .fcm-field input { min-height: var(--tap-target); padding: 0 var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius); font: inherit; font-weight: 400; background: var(--color-bg); width: 100%; }
+  .fcm-money { display: flex; align-items: center; gap: var(--space-1); font-weight: 400; }
+  .fcm-svg-wrap { position: relative; }
+  .fcm-svg-wrap svg { width: 100%; height: auto; display: block; }
+  .fcm-svg-wrap path { fill: #d9e3df; stroke: #fff; stroke-width: 1; cursor: pointer; transition: opacity 0.1s; }
+  .fcm-svg-wrap path:hover, .fcm-svg-wrap path:focus-visible { opacity: 0.75; outline: none; stroke: var(--color-focus); stroke-width: 2; }
+  .fcm-svg-wrap path[aria-pressed='true'] { stroke: var(--color-cta); stroke-width: 3; }
+  .fcm-tip { position: absolute; top: var(--space-2); left: var(--space-2); margin: 0; background: var(--color-primary); color: var(--color-on-primary); padding: var(--space-1) var(--space-2); border-radius: var(--radius); font-size: 0.875rem; pointer-events: none; }
+  .fcm-legend { display: flex; height: 0.75rem; border-radius: var(--radius); overflow: hidden; margin-top: var(--space-2); }
+  .fcm-legend span { flex: 1; }
+  .fcm-note { font-size: 0.875rem; color: var(--color-text-muted); margin-top: var(--space-2); }
+  .fcm-scroll { overflow-x: auto; }
+  .fcm-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .fcm-table th, .fcm-table td { padding: var(--space-2); border-bottom: 1px solid var(--color-border); text-align: left; }
+  .fcm-table td { font-variant-numeric: tabular-nums; }
+  .fcm-trend svg { width: 100%; height: auto; }
+  .fcm-card { margin-top: var(--space-8); padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius); }
+  .fcm-hist { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  @media (min-width: 48rem) { .fcm-hist { grid-template-columns: repeat(4, 1fr); } }
+  .fcm-stat { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); text-align: center; }
+  .fcm-stat strong { display: block; font-size: 1.75rem; color: var(--color-primary); }
+  .fcm-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--space-2); margin: var(--space-4) 0; }
+  .fcm-timeline div { border-top: 4px solid var(--color-border); padding-top: var(--space-2); }
+  .fcm-timeline .is-today { border-color: var(--color-primary); }
+  .fcm-timeline .is-future { border-color: var(--color-cta); }
+  .fcm-timeline strong { display: block; font-size: 1.125rem; }
+  .fcm-result { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-4); font-size: 1.0625rem; }
+  .fcm-result:empty { display: none; }
+  .fcm-cta { margin-top: var(--space-8); padding: var(--space-6); background: var(--color-primary); color: var(--color-on-primary); border-radius: var(--radius); text-align: center; }
+  .fcm-cta .fcm-h2 { color: var(--color-on-primary); }
+  .fcm-cta a:not(.fcm-btn) { color: var(--color-on-primary); font-weight: 700; }
+  .fcm-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0 var(--space-6); background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; border-radius: var(--radius); text-decoration: none; margin: var(--space-2) 0; }
+  .fcm-btn:hover { filter: brightness(0.9); }
+</style>
