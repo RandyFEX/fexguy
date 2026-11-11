@@ -18,7 +18,9 @@ const LABELS = labels as Record<string, Label>;
 <section class="home-map" aria-labelledby="cover-map-title">
   <div class="container">
     <h2 class="home-map__title" id="cover-map-title">Randy's Final Expense Cost &amp; Life Expectancy by State</h2>
-    <p class="home-map__hint">Click On Your Home State</p>
+    <p class="home-map__hint">
+      <span class="home-map__bubble"><span class="home-map__hover">Hover Over Any State for Information</span><span class="home-map__tap">Tap Any State for Information</span></span>
+    </p>
     <div class="cover-map" data-home-map>
       <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
         {paths.states.map((s) => (
@@ -77,21 +79,51 @@ const LABELS = labels as Record<string, Label>;
     letter-spacing: -0.01em;
     color: var(--color-text);
   }
-  /* V4.13: the instruction takes the heading's former 16px bottom margin
-     (a 1rem line box), so the section height does not change. */
+  /* V4.14: the instruction is a small brand-green bubble in the heading's
+     former 16px bottom margin (a 1rem slot, so the section height does not
+     change); the bubble may extend a few pixels over the map's empty top
+     edge and never takes the pointer. Devices that can hover read "Hover
+     Over Any State for Information"; touch devices read "Tap Any State for
+     Information". */
   .home-map__hint {
-    /* A little space above it; the map's empty top edge takes the same
-       space back (2px on phones, where that edge is narrow; 6px from 48rem). */
-    margin: 0.125rem 0 -0.125rem;
-    text-align: center;
-    font-size: 0.9375rem;
+    position: relative;
+    z-index: 1;
+    height: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    pointer-events: none;
+  }
+  .home-map__bubble {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    background: #173f35;
+    color: #ffffff;
+    font-size: 0.75rem;
     font-weight: 700;
-    line-height: 1rem;
-    color: var(--color-text);
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .home-map__hover {
+    display: none;
+  }
+  @media (hover: hover) {
+    .home-map__hover {
+      display: inline;
+    }
+    .home-map__tap {
+      display: none;
+    }
   }
   @media (min-width: 48rem) {
     .home-map__hint {
-      margin: 0.375rem 0 -0.375rem;
+      padding-top: 0.125rem;
+    }
+    .home-map__bubble {
+      padding: 0.1875rem 0.625rem;
+      font-size: 0.8125rem;
     }
   }
   .cover-map {
