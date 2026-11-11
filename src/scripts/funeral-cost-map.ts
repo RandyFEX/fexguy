@@ -7,6 +7,9 @@ import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
 import directCremation from '@/data/funeral-map/direct-cremation.json';
 import lifeExp from '@/data/funeral-map/life-expectancy.json';
+import statePaths from '@/data/funeral-map/state-paths.json';
+import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
+import { lead } from '@/config/lead';
 
 type Row = [number, number];
 type YearData = Record<string, Row>;
@@ -174,7 +177,16 @@ function init() {
 
   initCosts();
   colorMap();
-  select(US);
+  select(stateFromUrl() ?? US);
+}
+
+// V4.4: /funeral-cost-map/?state=TX (from the homepage map) opens with that state selected.
+function stateFromUrl(): string | null {
+  let code = '';
+  try { code = (new URLSearchParams(location.search).get('state') ?? '').trim().toUpperCase(); } catch {}
+  if (!/^[A-Z]{2}$/.test(code)) return null;
+  const s = statePaths.states.find((x) => ABBR_BY_FIPS[x.fips] === code);
+  return s ? s.name : null;
 }
 
 function renderMortality(state: string, metric: string) {
@@ -316,7 +328,7 @@ function initCosts() {
   };
   const directCard = () => {
     const dc = DIRECT[state];
-    if (!dc) return `<div class="fcm-stat"><strong>n/a</strong>Direct cremation<span class="fcm-stat__sub">No statewide figure for this state</span>${localList()}</div>`;
+    if (!dc) return `<div class="fcm-stat"><strong>${CALL_US}</strong>Direct cremation<span class="fcm-stat__sub">No statewide figure for this state</span>${localList()}</div>`;
     const range = dc.low != null && dc.high != null ? `; range ${money(dc.low)} to ${money(dc.high)}` : '';
     const today = dcToday(dc);
     const head = today != null ? money(today) : dcMoney(dc.value);
@@ -367,6 +379,8 @@ function initCosts() {
 
 // --- V4.2 state summary panel: life expectancy, funeral costs, top 10 causes.
 type LE = { birth: number; age65: number };
+// Shown where no direct cremation price is available (Randy, V4.3/V4.4).
+const CALL_US = `<a href="${lead.phone.href}">Call us for details</a>`;
 const LIFE = lifeExp.states as Record<string, { total: LE }>;
 const row = (label: string, value: string) => `<div><dt>${label}</dt><dd>${value}</dd></div>`;
 function renderSummary(state: string) {
@@ -384,7 +398,7 @@ function renderSummary(state: string) {
   $<HTMLElement>('[data-fcm-sum-costs]')!.innerHTML =
     row('Funeral with burial', burial != null ? money(burial) : 'Unavailable') +
     row('Cremation with viewing', crem != null ? money(crem) : 'Unavailable') +
-    row('Direct cremation', dcVal != null ? money(dcVal) : 'Unavailable');
+    row('Direct cremation', dcVal != null ? money(dcVal) : CALL_US);
   const region = REGION_OF[state]?.name;
   const parts: string[] = [];
   if (state === US) parts.push('Burial and cremation with viewing: national NFDA medians.');
