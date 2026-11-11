@@ -490,7 +490,9 @@ const jsonLd = [
   .fcm-sum__block { margin-bottom: var(--space-6); }
   .fcm-sum__h { font-size: 1.0625rem; margin: 0 0 var(--space-1); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text); }
   .fcm-rows { margin: var(--space-2) 0 0; padding: 0; list-style: none; }
-  .fcm-rows > div, .fcm-rows > li { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
+  /* V4.5: about half the space between rows (padding halved, line height 1.3 instead of 1.6; wrapped labels keep 1.3). */
+  .fcm-rows > div, .fcm-rows > li { display: flex; justify-content: space-between; gap: var(--space-3); padding: 0.125rem 0; line-height: 1.3; border-bottom: 1px solid var(--color-border); }
+  .fcm-rows sup { line-height: 0; }
   .fcm-rows dt, .fcm-rows dd { margin: 0; }
   .fcm-rows dd, .fcm-rows .fcm-val { font-weight: 700; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .fcm-explore ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }

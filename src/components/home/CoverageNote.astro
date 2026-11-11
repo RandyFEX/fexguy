@@ -10,15 +10,23 @@
 import { coverage } from '@/lib/home/content';
 import paths from '@/data/funeral-map/state-paths.json';
 import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
+import labels from '@/data/funeral-map/state-labels.json';
+
+// V4.5: postal abbreviations. Most sit inside their state; small states get an
+// exterior label (lx, ly) with a thin leader line to a point inside the state.
+// The viewBox is 25 units wider than the map paths (975) to fit the exterior
+// column of small Northeastern states at phone label size.
+type Label = { x: number; y: number; lx?: number; ly?: number };
+const LABELS = labels as Record<string, Label>;
 ---
 
 <section class="cover" aria-labelledby="cover-title">
   <div class="container">
     <h2 class="cover__title" id="cover-title">{coverage.title}</h2>
     <p class="cover__text">{coverage.text}</p>
-    <h2 class="cover__title cover__title--map" id="cover-map-title">Funeral Cost and Mortality Map by State</h2>
+    <h2 class="cover__title cover__title--map" id="cover-map-title">Expected Final Expense Cost and Life Expectancy by State</h2>
     <div class="cover-map" data-home-map>
-      <svg viewBox={paths.viewBox} role="group" aria-labelledby="cover-map-title">
+      <svg viewBox="0 0 1000 610" role="group" aria-labelledby="cover-map-title">
         {paths.states.map((s) => (
           <a
             href={`/funeral-cost-map/?state=${ABBR_BY_FIPS[s.fips]}`}
@@ -30,6 +38,19 @@ import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
             <path d={s.d} />
           </a>
         ))}
+        <g class="cover-map__labels" aria-hidden="true">
+          {Object.entries(LABELS).map(([code, l]) =>
+            l.lx != null && l.ly != null ? (
+              <g>
+                <line x1={l.x} y1={l.y} x2={l.lx < l.x ? l.lx + 4 : l.lx - 4} y2={l.ly} />
+                <circle cx={l.x} cy={l.y} r="1.6" />
+                <text x={l.lx} y={l.ly} text-anchor={l.lx > l.x + 20 ? 'start' : 'middle'} class="is-ext">{code}</text>
+              </g>
+            ) : (
+              <text x={l.x} y={l.y}>{code}</text>
+            ),
+          )}
+        </g>
       </svg>
       <p class="cover-map__tip" data-home-map-tip hidden></p>
     </div>
@@ -82,8 +103,8 @@ import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
   }
   .cover-map path {
     fill: #cfe0d7;
-    stroke: #ffffff;
-    stroke-width: 1;
+    stroke: #2b302d;
+    stroke-width: 0.6;
     stroke-linejoin: round;
   }
   /* Hover/focus: the site's orange accent with a dark outline, clearly
@@ -94,6 +115,39 @@ import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
     fill: var(--color-cta);
     stroke: var(--color-text);
     stroke-width: 1.5;
+  }
+  /* Labels never take the pointer, so hovering or clicking them reaches the state. */
+  .cover-map__labels {
+    pointer-events: none;
+  }
+  .cover-map__labels text {
+    fill: #202522;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
+  .cover-map__labels text.is-ext {
+    font-size: 12px;
+  }
+  .cover-map__labels text[text-anchor='start'] {
+    text-anchor: start;
+  }
+  .cover-map__labels line {
+    stroke: #2b302d;
+    stroke-width: 0.6;
+  }
+  .cover-map__labels circle {
+    fill: #2b302d;
+  }
+  /* Phones: the map is about a third of its desktop size, so the labels are
+     larger in map units to stay readable (about 8px). */
+  @media (max-width: 47.99rem) {
+    .cover-map__labels text,
+    .cover-map__labels text.is-ext {
+      font-size: 22px;
+    }
   }
   .cover-map a:focus {
     outline: none;
