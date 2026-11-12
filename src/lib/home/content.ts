@@ -17,7 +17,39 @@ export type HomeIconName =
   | 'shield'
   | 'clock'
   | 'home'
-  | 'tag';
+  | 'tag'
+  | 'filter'
+  | 'money'
+  | 'search';
+
+// "Check Out Our Regret-Free Pricing Program" (Randy, November 2026, V9):
+// four steps in this order, Randy's exact wording (replaces Meet Randy on the
+// homepage; /facebook/ keeps Meet Randy).
+export const regretFree = {
+  title: 'Check Out Our Regret-Free Pricing Program',
+  steps: [
+    {
+      icon: 'filter',
+      title: 'Ignore The Worst Options',
+      text: 'We help you avoid overpriced plans and two-year waits, including guaranteed acceptance plans from United of Omaha, Corebridge, and Colonial Penn $9.95.',
+    },
+    {
+      icon: 'money',
+      title: 'Name Your Price',
+      text: 'Tell us what you can comfortably afford each month. Your coverage should fit your budget without making everyday expenses harder to manage.',
+    },
+    {
+      icon: 'search',
+      title: 'Compare All Your Options',
+      text: 'We will shop multiple insurance companies to reveal your most affordable coverage options. We’ll explain the differences so you can choose with confidence.',
+    },
+    {
+      icon: 'shield',
+      title: "Start With What's Comfortable",
+      text: 'We’ll help you get coverage for your immediate needs at a price that fits your income today. We can then assist you in adding more coverage later if needed.',
+    },
+  ] as { icon: HomeIconName; title: string; text: string }[],
+};
 
 export const whyPoints: { title: string; text: string; icon: HomeIconName }[] = [
   {
