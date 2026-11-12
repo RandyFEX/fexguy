@@ -1,10 +1,9 @@
 ---
-// "Check Out Our Regret-Free Pricing Program" (Randy, November 2026, V9):
-// four numbered steps with icons; replaces Meet Randy on the homepage only
+// "Check Out Our Four-Step Regret-Free System" (Randy, November 2026, V11):
+// four steps, each under a gold circle with its number (1-4); replaces Meet Randy on the homepage only
 // (/facebook/ keeps Meet Randy). Four columns from 64rem, two from 40rem,
 // one on phones. White background and the same padding as Meet Randy, so the
 // state map that follows keeps its spacing.
-import HomeIcon from './HomeIcon.astro';
 import { regretFree } from '@/lib/home/content';
 ---
 
@@ -15,13 +14,8 @@ import { regretFree } from '@/lib/home/content';
       {
         regretFree.steps.map((s, i) => (
           <li class="rf__item">
-            <span class="rf__icon">
-              <HomeIcon name={s.icon} size={32} />
-            </span>
-            <h3 class="rf__name">
-              <span class="rf__num">{i + 1}</span>
-              <span>{s.title}</span>
-            </h3>
+            <span class="rf__icon">{i + 1}</span>
+            <h3 class="rf__name">{s.title}</h3>
             <p class="rf__text">{s.text}</p>
           </li>
         ))
@@ -65,31 +59,18 @@ import { regretFree } from '@/lib/home/content';
     height: 3.5rem;
     margin-bottom: var(--space-3);
     border-radius: 50%;
-    background: var(--color-primary);
-    color: #ffffff;
+    background: var(--home-gold, #b68a35);
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
   }
-  /* The number sits inline before the first word, so it stays with the
-     heading when the heading wraps. */
   .rf__name {
     min-height: 2.5em;
     text-wrap: balance;
     margin: 0 0 var(--space-2);
     font-size: 1.25rem;
     line-height: 1.25;
-  }
-  .rf__num {
-    display: inline-flex;
-    vertical-align: 0.125em;
-    margin-right: var(--space-2);
-    align-items: center;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background: var(--home-gold, #b68a35);
-    color: #000000;
-    font-size: 0.9375rem;
-    line-height: 1;
   }
   .rf__text {
     max-width: 24rem;
