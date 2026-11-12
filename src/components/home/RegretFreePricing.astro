@@ -15,7 +15,7 @@ import { regretFree } from '@/lib/home/content';
         regretFree.steps.map((s, i) => (
           <li class="rf__item">
             <span class="rf__icon">{i + 1}</span>
-            <h3 class="rf__name">{s.title}</h3>
+            <h3 class="rf__name">{s.title[0]}<br />{s.title[1]}</h3>
             <p class="rf__text">{s.text}</p>
           </li>
         ))
@@ -65,9 +65,10 @@ import { regretFree } from '@/lib/home/content';
     font-weight: 700;
     line-height: 1;
   }
+  /* Each heading is two deliberate lines (a <br> between Randy's two
+     groups); a very narrow screen may wrap further. */
   .rf__name {
     min-height: 2.5em;
-    text-wrap: balance;
     margin: 0 0 var(--space-2);
     font-size: 1.25rem;
     line-height: 1.25;
