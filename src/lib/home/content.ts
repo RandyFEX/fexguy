@@ -26,22 +26,22 @@ export type HomeIconName =
 // first published as V9): four steps in this order, Randy's exact wording
 // (replaces Meet Randy on the homepage; /facebook/ keeps Meet Randy).
 export const regretFree = {
-  title: 'Check Out Our Four-Step Regret-Free System',
+  title: 'Rely On Our Four-Step Regret-Free System',
   steps: [
     {
-      title: 'Ignore The Worst Options',
+      title: 'Ignore Your Worst Options',
       text: 'We help you avoid overpriced plans and two-year waits, including guaranteed acceptance plans from United of Omaha, Corebridge, and Colonial Penn $9.95.',
     },
     {
-      title: 'Name Your Price',
+      title: 'Name The Price You Can Afford',
       text: 'Tell us what you can comfortably afford each month, and we will find coverage that fits your budget without making everyday expenses harder to manage.',
     },
     {
-      title: 'Compare Your Best Options',
+      title: 'Narrow Down Your Options',
       text: 'We will shop multiple insurance companies that match your profile for affordable coverage options. We’ll explain the differences so you can choose with 100% confidence.',
     },
     {
-      title: "Start With What's Comfortable",
+      title: 'Start With What Fits Now',
       text: 'We recommend you get coverage for your immediate needs first at a price that fits your income right now. We can help you apply for more coverage through us later if needed.',
     },
   ] as { title: string; text: string }[],
