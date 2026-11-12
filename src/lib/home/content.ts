@@ -33,7 +33,7 @@ export const regretFree = {
       text: 'We help you avoid overpriced plans and two-year waits, including guaranteed acceptance plans from United of Omaha, Corebridge, and Colonial Penn $9.95.',
     },
     {
-      title: ['Narrow Down', 'Your Options'],
+      title: ['Narrow It Down', 'To 3 Options'],
       text: 'We will shop multiple insurance companies that match your profile for affordable coverage options. We’ll explain the differences so you can choose with 100% confidence.',
     },
     {
