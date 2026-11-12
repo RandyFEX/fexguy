@@ -58,10 +58,13 @@ import { whyPoints } from '@/lib/home/content';
     display: grid;
     gap: var(--space-4);
   }
-  /* Phones: icon beside the text keeps the stacked cards compact. */
+  /* V21 (Randy, November 2026): icon, heading and text centered in every
+     card (phones included: the icon sits above the heading). */
   .why__item {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    text-align: center;
     gap: var(--space-4);
     align-items: start;
     align-content: start;
