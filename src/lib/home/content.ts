@@ -29,22 +29,22 @@ export const regretFree = {
   title: 'Our Four-Step Regret-Free Process',
   steps: [
     {
-      title: ['Ignore Your', 'Worst Options'],
+      title: 'Eliminate The Worst Options',
       text: 'We help you avoid overpriced plans and two-year waits, including guaranteed acceptance plans from United of Omaha, Corebridge, and Colonial Penn $9.95.',
     },
     {
-      title: ['Narrow It Down', 'To 3 Options'],
-      text: 'We will shop multiple insurance companies that match your profile for affordable coverage options. We’ll explain the differences so you can choose with 100% confidence.',
+      title: 'Identify How Much You Need',
+      text: 'See actual funeral and final expense costs in your home state using the interactive map below.',
     },
     {
-      title: ['Find A Price', 'You Can Afford'],
+      title: 'Choose A Rate You Can Afford',
       text: 'Tell us what you can comfortably afford each month, and we will find coverage that fits your budget without making everyday expenses harder to manage.',
     },
     {
-      title: ['Get Your Coverage', 'In Place'],
+      title: 'Get Approved Without Delay',
       text: 'Submit an application for coverage that fits your immediate needs. We can help you apply and get approved for more coverage later if necessary.',
     },
-  ] as { title: [string, string]; text: string }[],
+  ] as { title: string; text: string }[],
 };
 
 export const whyPoints: { title: string; text: string; icon: HomeIconName }[] = [
