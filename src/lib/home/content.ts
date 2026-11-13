@@ -34,7 +34,7 @@ export const regretFree = {
     },
     {
       title: 'Identify How Much You Need',
-      text: 'See actual funeral and final expense costs in your home state using the interactive map below.',
+      text: "We'll shop multiple insurance companies and match your profile to affordable coverage options. See actual final expense costs in your home state using the interactive map below.",
     },
     {
       title: 'Choose A Rate You Can Afford',
