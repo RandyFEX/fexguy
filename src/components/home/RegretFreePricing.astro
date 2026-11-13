@@ -15,7 +15,7 @@ import { regretFree } from '@/lib/home/content';
         regretFree.steps.map((s, i) => (
           <li class="rf__item">
             <span class="rf__icon">{i + 1}</span>
-            <h3 class="rf__name">{s.title[0]}<br />{s.title[1]}</h3>
+            <h3 class="rf__name">{s.title}</h3>
             <p class="rf__text">{s.text}</p>
           </li>
         ))
@@ -65,8 +65,6 @@ import { regretFree } from '@/lib/home/content';
     font-weight: 700;
     line-height: 1;
   }
-  /* Each heading is two deliberate lines (a <br> between Randy's two
-     groups); a very narrow screen may wrap further. */
   .rf__name {
     min-height: 2.5em;
     margin: 0 0 var(--space-2);
@@ -85,6 +83,20 @@ import { regretFree } from '@/lib/home/content';
     .rf__list {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: var(--space-8) var(--space-6);
+    }
+    /* Circles, headings and descriptions share rows across each grid row
+       (subgrid), so a heading that wraps to more lines never shifts its
+       neighbours; the heading min-height remains the fallback. */
+    @supports (grid-template-rows: subgrid) {
+      .rf__item {
+        display: grid;
+        grid-row: span 3;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+        justify-items: center;
+        align-items: start;
+        align-content: start;
+      }
     }
     .rf__icon {
       width: 4rem;
