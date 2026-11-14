@@ -350,13 +350,13 @@ const row = (label: string, value: string) => `<div><dt>${label}</dt><dd>${value
 function renderSummary(state: string) {
   $<HTMLElement>('[data-fcm-sum-name]')!.textContent = state;
   const L = LIFE[state];
-  const us = LIFE[US]?.total;
   const yrs = (v: number) => `${v.toFixed(1)} years`;
+  const fips = statePaths.states.find((x) => x.name === state)?.fips;
+  const abbr = fips ? ABBR_BY_FIPS[fips] : 'U.S.';
   $<HTMLElement>('[data-fcm-sum-le]')!.innerHTML = L
-    ? row('Men, at birth', yrs(L.male.birth)) + row('Women, at birth', yrs(L.female.birth)) +
-      row('Men, years remaining at 65', yrs(L.male.age65)) + row('Women, years remaining at 65', yrs(L.female.age65)) +
-      row('Everyone (at 65 / at birth)', `${L.total.age65.toFixed(1)} / ${L.total.birth.toFixed(1)}`) +
-      (state !== US && us ? row('U.S. (at 65 / at birth)', `${us.age65.toFixed(1)} / ${us.birth.toFixed(1)}`) : '')
+    ? // V5.8: four rows; the combined-population figures stay in the data, not shown.
+      row(`${state} Men`, yrs(L.male.birth)) + row(`${state} Women`, yrs(L.female.birth)) +
+      row(`${abbr} Men: Avg. Years Left to Live at 65`, yrs(L.male.age65)) + row(`${abbr} Women: Avg. Years Left to Live at 65`, yrs(L.female.age65))
     : row('Life expectancy', 'Unavailable');
   const burial = estimate(state, 'burial');
   const crem = estimate(state, 'cremation');
