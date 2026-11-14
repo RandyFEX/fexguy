@@ -24,6 +24,22 @@ import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
 import directCremation from '@/data/funeral-map/direct-cremation.json';
 import le from '@/data/funeral-map/life-expectancy.json';
+import health from '@/data/funeral-map/health-conditions.json';
+
+// V5.2 (Randy, November 2026): state dashboard with five tabs; the national map
+// moved to the homepage, which links here with ?state=XX.
+const TABS = [
+  { id: 'overview', label: 'Overview & Health' },
+  { id: 'costs', label: 'Funeral Costs' },
+  { id: 'inflation', label: 'Inflation & Future Costs' },
+  { id: 'mortality', label: 'Mortality' },
+  { id: 'calculator', label: 'Coverage Calculator' },
+];
+type HcOption = { id: string; label: string };
+type HcType = { id: string; label: string; sexes: string[] };
+const HC = health.conditions as unknown as Record<string, { label: string; options?: HcOption[]; default?: string; types?: HcType[] }>;
+// Checkbox order (Randy, V5.2). Injuries and suicide stay in the Mortality tab only.
+const HC_ORDER = ['heart', 'diabetes', 'copd', 'alzheimers', 'cancer'];
 
 type Row = [number, number];
 const LATEST = String(mortality.years[1]);
@@ -94,77 +110,89 @@ const jsonLd = [
       years, what a funeral could cost in the future, and how much of that cost your coverage and savings would pay.
     </p>
 
-    <div class="fcm-grid">
-      <section class="fcm-map" aria-labelledby="fcm-map-h">
-        <h2 id="fcm-map-h" class="fcm-h2">Choose a state</h2>
-        <div class="fcm-controls">
-          <label class="fcm-field">
-            <span>State</span>
-            <select id="fcm-state" data-fcm-state>
-              <option value="United States">United States (national)</option>
-              {stateNames.map((n) => <option value={n}>{n}</option>)}
-            </select>
-          </label>
-          <label class="fcm-field">
-            <span>Color the map by</span>
-            <select id="fcm-metric" data-fcm-metric>
-              <option value="cost:burial" selected>Estimated cost: funeral with burial</option>
-              <option value="cost:cremation">Estimated cost: funeral with cremation</option>
-              <option value="cost:direct">Direct cremation (states with survey data)</option>
-              <option value="All causes">Death rate, all causes</option>
-              {[...recent.leading, ...recent.other].map((c) => <option value={c}>Death rate: {c}</option>)}
-            </select>
-          </label>
-        </div>
-        <div class="fcm-svg-wrap">
-          <svg viewBox={paths.viewBox} role="group" aria-label="Map of the United States. Select a state." data-fcm-svg>
-            {paths.states.map((s) => (
-              <path d={s.d} data-state={s.name} tabindex="0" role="button" aria-label={s.name}><title>{s.name}</title></path>
-            ))}
-          </svg>
-          <p class="fcm-tip" data-fcm-tip hidden></p>
-        </div>
-        <div class="fcm-legend" data-fcm-legend aria-hidden="true"></div>
-        <p class="fcm-note" data-fcm-mapnote>
-          Map shading: estimated funeral cost based on historical data. Darker means higher.
-        </p>
-      </section>
+    <section class="fcm-dash" aria-labelledby="fcm-sum-h">
+      <div class="fcm-dash__head">
+        <h2 id="fcm-sum-h" class="fcm-dash__name" data-fcm-sum-name aria-live="polite">United States</h2>
+        <label class="fcm-field fcm-dash__pick">
+          <span>Choose Another State</span>
+          <select id="fcm-state" data-fcm-state>
+            <option value="United States">United States (national)</option>
+            {stateNames.map((n) => <option value={n}>{n}</option>)}
+          </select>
+        </label>
+      </div>
 
-      <section class="fcm-panel fcm-sum" aria-labelledby="fcm-sum-h">
-        <h2 id="fcm-sum-h" class="fcm-sum__name" data-fcm-sum-name aria-live="polite">United States</h2>
-        <div class="fcm-sum__block">
-          <h3 class="fcm-sum__h">Life expectancy</h3>
-          <dl class="fcm-rows" data-fcm-sum-le></dl>
-          <p class="fcm-note">{le.year}, NCHS life tables (all residents). Population averages, not a prediction for any one person.</p>
-        </div>
-        <div class="fcm-sum__block">
-          <h3 class="fcm-sum__h">Funeral costs</h3>
-          <p class="fcm-note">Estimated funeral cost based on historical data</p>
-          <dl class="fcm-rows" data-fcm-sum-costs></dl>
-          <p class="fcm-note" data-fcm-sum-costnote></p>
-        </div>
-        <div class="fcm-sum__block">
-          <h3 class="fcm-sum__h">Top 10 causes of death</h3>
-          <p class="fcm-note">Age-adjusted deaths per 100,000 people, {periodLabel} (provisional)</p>
-          <ol class="fcm-rows fcm-rows--ol" data-fcm-sum-causes></ol>
-          <p class="fcm-note" data-fcm-sum-lag></p>
-        </div>
-        <nav class="fcm-explore" aria-labelledby="fcm-explore-h">
-          <h3 id="fcm-explore-h" class="fcm-sum__h">Explore more</h3>
-          <ul>
-            <li><a href="#fcm-d-costs" data-fcm-open>Detailed Funeral Costs</a></li>
-            <li><a href="#fcm-hist-sec" data-fcm-open>Historical funeral inflation</a></li>
-            <li><a href="#fcm-future-sec" data-fcm-open>Future funeral costs</a></li>
-            <li><a href="#fcm-short-sec" data-fcm-open>Funeral coverage calculator</a></li>
-            <li><a href="#fcm-d-agesex" data-fcm-open>Deaths By Age And Sex</a></li>
-            <li><a href="#fcm-d-mort" data-fcm-open>Detailed Mortality</a></li>
-          </ul>
-        </nav>
-      </section>
-    </div>
+      <div class="fcm-tabs" role="tablist" aria-label="State research">
+        {TABS.map((t, i) => (
+          <button type="button" role="tab" class="fcm-tab" id={`fcm-tab-${t.id}`} aria-controls={`fcm-p-${t.id}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1} data-fcm-tab={t.id}>{t.label}</button>
+        ))}
+      </div>
 
-    <details class="fcm-card fcm-sec" id="fcm-d-costs">
-      <summary><h2 class="fcm-h2">Detailed Funeral Costs: <span data-fcm-name>United States</span></h2></summary>
+      <div class="fcm-pane" role="tabpanel" id="fcm-p-overview" aria-labelledby="fcm-tab-overview" data-fcm-pane="overview">
+        <div class="fcm-ov">
+          <div class="fcm-ov__facts">
+            <div class="fcm-sum__block">
+              <h3 class="fcm-sum__h">Funeral costs</h3>
+              <p class="fcm-note">Estimated funeral cost based on historical data</p>
+              <dl class="fcm-rows" data-fcm-sum-costs></dl>
+              <p class="fcm-note" data-fcm-sum-costnote></p>
+            </div>
+            <div class="fcm-sum__block">
+              <h3 class="fcm-sum__h">Life expectancy</h3>
+              <dl class="fcm-rows" data-fcm-sum-le></dl>
+              <p class="fcm-note">{le.year}, NCHS life tables. Population averages, not a prediction for any one person.</p>
+            </div>
+          </div>
+          <div class="fcm-dz">
+            <h3 class="fcm-sum__h">Life Expectancy &amp; Danger Zone</h3>
+            <fieldset class="fcm-seg">
+              <legend class="visually-hidden">Show for</legend>
+              <label><input type="radio" name="fcm-sex" value="male" checked data-fcm-sex /> <span>Men</span></label>
+              <label><input type="radio" name="fcm-sex" value="female" data-fcm-sex /> <span>Women</span></label>
+            </fieldset>
+            <div class="fcm-dz__chart" data-fcm-dz-chart></div>
+            <p class="fcm-dz__sum" data-fcm-dz-sum aria-live="polite"></p>
+            <fieldset class="fcm-hc">
+              <legend>Compare a health condition</legend>
+              {HC_ORDER.map((id) => {
+                const c = HC[id];
+                return (
+                  <div class="fcm-hc__item">
+                    <label class="fcm-hc__check"><input type="checkbox" value={id} data-fcm-hc /> <span>{c.label}</span></label>
+                    {c.options && (
+                      <label class="fcm-hc__opt" hidden data-fcm-hc-opt={id}>
+                        <span class="visually-hidden">{c.label}: details</span>
+                        <select data-fcm-hc-sel={id}>
+                          {c.options.map((o) => <option value={o.id} selected={o.id === c.default}>{o.label}</option>)}
+                        </select>
+                      </label>
+                    )}
+                    {c.types && (
+                      <div class="fcm-hc__types" hidden data-fcm-hc-opt={id}>
+                        {c.types.map((t) => (
+                          <label><input type="checkbox" value={t.id} data-fcm-hc-type data-sexes={t.sexes.join(' ')} /> <span>{t.label}</span></label>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </fieldset>
+            <ul class="fcm-dz__notes" data-fcm-dz-notes aria-live="polite"></ul>
+            <p class="fcm-note">
+              The curve shows the share of people in the selected state who reach 65 and are still living at each later
+              age ({le.year} NCHS state life table). The Danger Zone covers the ages at which the middle half of them die.
+              Condition markers place a published figure against this state's average; they illustrate published
+              research and are not a prediction for any one person. Sources are listed under each marker and in Sources
+              and Methodology below.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fcm-pane" role="tabpanel" id="fcm-p-costs" aria-labelledby="fcm-tab-costs" data-fcm-pane="costs" hidden>
+        <h2 class="fcm-h2">Funeral Costs: <span data-fcm-name>United States</span></h2>
+        <div id="fcm-d-costs">
       <div class="fcm-est" data-fcm-est aria-live="polite"></div>
       <p class="fcm-note">
         The estimates are based on historical NFDA funeral pricing adjusted using actual BLS funeral inflation data.
@@ -195,10 +223,11 @@ const jsonLd = [
           : `${st}, ${d.year} ${d.kind}: ${money(d.value)} (range ${money(d.low)} to ${money(d.high)}; ${d.source}).`).join(' ')}
         No published figure is available for other states.
       </p>
-    </details>
+        </div>
+      </div>
 
-    <details class="fcm-card fcm-sec" id="fcm-d-calc">
-      <summary><h2 class="fcm-h2">Funeral Inflation, Future Costs And Coverage Calculator</h2></summary>
+      <div class="fcm-pane" role="tabpanel" id="fcm-p-inflation" aria-labelledby="fcm-tab-inflation" data-fcm-pane="inflation" hidden>
+        <h2 class="fcm-h2">Inflation &amp; Future Costs</h2>
       <div id="fcm-hist-sec">
       <h3 class="fcm-h3">Historical funeral inflation</h3>
       <p>
@@ -256,47 +285,18 @@ const jsonLd = [
       <div class="fcm-result" data-fcm-future aria-live="polite"></div>
 
       </div>
-      <div id="fcm-short-sec">
-      <h3 class="fcm-h3">Funding shortfall</h3>
-      <div class="fcm-form">
-        <label class="fcm-field">
-          <span>Life insurance you already have</span>
-          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-ins placeholder="0" /></span>
-        </label>
-        <label class="fcm-field">
-          <span>Money saved for the funeral</span>
-          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-sav placeholder="0" /></span>
-        </label>
       </div>
-      <div class="fcm-result" data-fcm-short aria-live="polite"></div>
-      <p class="fcm-note">Projections are estimates, not guaranteed future prices.</p>
-      </div>
-    </details>
 
-    <details class="fcm-card fcm-sec" id="fcm-d-agesex">
-      <summary><h2 class="fcm-h2">Deaths By Age And Sex</h2></summary>
-        <h3 class="fcm-h3">Deaths from all causes, {recent.deaths2022.year}</h3>
-        <div class="fcm-scroll" tabindex="0">
-          <table class="fcm-table">
-            <thead><tr><th scope="col">Age</th><th scope="col">Men</th><th scope="col">Women</th><th scope="col">Total</th></tr></thead>
-            <tbody data-fcm-agesex></tbody>
-          </table>
-        </div>
-        <p class="fcm-note">Deaths from all causes (provisional). CDC does not publish causes by age and sex for each state in a downloadable table.</p>
-
-        <h3 class="fcm-h3">U.S. death rate by age and sex: <span data-fcm-trend-cause>All causes</span></h3>
-        <div class="fcm-scroll" tabindex="0">
-          <table class="fcm-table">
-            <thead><tr><th scope="col">Group</th><th scope="col">Deaths per 100,000</th></tr></thead>
-            <tbody data-fcm-usdemo></tbody>
-          </table>
-        </div>
-        <p class="fcm-note">National only, {periodLabel} (provisional). Men and women: age-adjusted rates. Age groups: rates for that age.</p>
-
-    </details>
-
-    <details class="fcm-card fcm-sec" id="fcm-d-mort">
-      <summary><h2 class="fcm-h2">Detailed Mortality</h2></summary>
+      <div class="fcm-pane" role="tabpanel" id="fcm-p-mortality" aria-labelledby="fcm-tab-mortality" data-fcm-pane="mortality" hidden>
+        <h2 class="fcm-h2">Mortality: <span data-fcm-name>United States</span></h2>
+        <label class="fcm-field fcm-cause">
+          <span>Trend and U.S. age and sex figures for</span>
+          <select data-fcm-cause>
+            <option value="All causes" selected>All causes</option>
+            {[...recent.leading, ...recent.other].map((c) => <option value={c}>{c}</option>)}
+          </select>
+        </label>
+        <div id="fcm-d-mort">
         <p class="fcm-note">Age-adjusted death rates, {periodLabel} (provisional), ordered from highest to lowest rate.</p>
         <div class="fcm-scroll" tabindex="0">
           <table class="fcm-table">
@@ -337,7 +337,50 @@ const jsonLd = [
           </tbody>
         </table>
       </div>
-    </details>
+        </div>
+        <div id="fcm-d-agesex">
+        <h3 class="fcm-h3">Deaths from all causes, {recent.deaths2022.year}</h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Age</th><th scope="col">Men</th><th scope="col">Women</th><th scope="col">Total</th></tr></thead>
+            <tbody data-fcm-agesex></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">Deaths from all causes (provisional). CDC does not publish causes by age and sex for each state in a downloadable table.</p>
+
+        <h3 class="fcm-h3">U.S. death rate by age and sex: <span data-fcm-trend-cause>All causes</span></h3>
+        <div class="fcm-scroll" tabindex="0">
+          <table class="fcm-table">
+            <thead><tr><th scope="col">Group</th><th scope="col">Deaths per 100,000</th></tr></thead>
+            <tbody data-fcm-usdemo></tbody>
+          </table>
+        </div>
+        <p class="fcm-note">National only, {periodLabel} (provisional). Men and women: age-adjusted rates. Age groups: rates for that age.</p>
+
+        </div>
+      </div>
+
+      <div class="fcm-pane" role="tabpanel" id="fcm-p-calculator" aria-labelledby="fcm-tab-calculator" data-fcm-pane="calculator" hidden>
+        <h2 class="fcm-h2">Coverage Calculator</h2>
+        <p class="fcm-result fcm-assume" data-fcm-assume></p>
+        <p class="fcm-note"><a href="#fcm-future-sec" data-fcm-open>Change the funeral cost and inflation assumptions</a> in Inflation &amp; Future Costs.</p>
+      <div id="fcm-short-sec">
+      <h3 class="fcm-h3">Funding shortfall</h3>
+      <div class="fcm-form">
+        <label class="fcm-field">
+          <span>Life insurance you already have</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-ins placeholder="0" /></span>
+        </label>
+        <label class="fcm-field">
+          <span>Money saved for the funeral</span>
+          <span class="fcm-money"><span aria-hidden="true">$</span><input type="text" inputmode="decimal" data-fcm-sav placeholder="0" /></span>
+        </label>
+      </div>
+      <div class="fcm-result" data-fcm-short aria-live="polite"></div>
+      <p class="fcm-note">Projections are estimates, not guaranteed future prices.</p>
+      </div>
+      </div>
+    </section>
 
     <section class="fcm-cta" aria-labelledby="fcm-cta-h">
       <h2 id="fcm-cta-h" class="fcm-h2">Cover the cost so your family doesn't have to</h2>
@@ -431,8 +474,28 @@ const jsonLd = [
         </li>
         <li>
           <strong>Life Expectancy:</strong> {le.source}, {le.year}: expectation of life at age 65 and at birth for the
-          total population, from each state's period life table. <a href={le.sourceUrl} rel="noopener">State life tables</a>,
+          total, male and female populations, from each state's period life table. <a href={le.sourceUrl} rel="noopener">State life tables</a>,
           <a href={le.usSourceUrl} rel="noopener">U.S. life tables</a>.
+        </li>
+        <li>
+          <strong>Danger Zone:</strong> from the same {le.year} life tables (men and women separately), the number of
+          people surviving to each age from 65 to 100 (lx). The curve is the share of those alive at 65 who are still
+          living at each age. The Danger Zone runs from the age when 75% are still living to the age when 25% are, the
+          ages at which the middle half of them die. The average is 65 plus the life expectancy at 65.
+        </li>
+        <li>
+          <strong>Health Conditions:</strong> only published figures, each placed against the state's average for
+          illustration; they are national study results, not state figures, and are never added together. Combined
+          figures appear only where the study published them.{' '}
+          {[health.conditions.diabetes, health.conditions.copd, health.conditions.alzheimers].map((c) => (
+            <>{c.label}: {c.source}. <a href={c.url} rel="noopener">PubMed</a>.{' '}</>
+          ))}
+          Heart disease with diabetes: {health.conditions.heart.combined.source}.{' '}
+          <a href={health.conditions.heart.combined.url} rel="noopener">Full text</a>. A figure for heart disease alone is
+          still being researched, so none is shown. COPD figures are for men; figures for women are still being researched.
+          Cancer: 5-year relative survival from SEER 8 areas for people diagnosed 2016 to 2022 and median age at death
+          from the cancer, U.S. 2020 to 2024 ({health.conditions.cancer.source}:{' '}
+          {health.conditions.cancer.types.map((t, i) => <>{i ? ', ' : ''}<a href={t.url} rel="noopener">{t.label}</a></>)}). Retrieved {health.retrieved}.
         </li>
         <li><strong>Map:</strong> {paths.source}.</li>
       </ul>
@@ -453,22 +516,58 @@ const jsonLd = [
   .fcm-lead { font-size: 1.125rem; max-width: 46rem; }
   .fcm-h2 { font-size: 1.375rem; margin: 0 0 var(--space-3); color: var(--color-primary); }
   .fcm-h3 { font-size: 1.125rem; margin: var(--space-6) 0 var(--space-2); }
-  .fcm-grid { display: grid; gap: var(--space-6); margin-top: var(--space-6); }
-  @media (min-width: 64rem) { .fcm-grid { grid-template-columns: 1.1fr 1fr; align-items: start; } }
   .fcm-controls, .fcm-form { display: grid; gap: var(--space-3); margin-bottom: var(--space-3); }
   @media (min-width: 40rem) { .fcm-controls, .fcm-form { grid-template-columns: 1fr 1fr; } }
-  .fcm-grid > *, .fcm-field { min-width: 0; }
   .fcm-field { display: grid; gap: var(--space-1); font-weight: 600; }
+  .fcm-field { min-width: 0; }
+  /* V5.2 state dashboard: header, five tabs, panes. */
+  .fcm-dash { margin-top: var(--space-6); }
+  .fcm-dash__head { display: grid; gap: var(--space-3); align-items: end; margin-bottom: var(--space-4); }
+  @media (min-width: 48rem) { .fcm-dash__head { grid-template-columns: 1fr minmax(16rem, 20rem); } }
+  .fcm-dash__name { font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem); margin: 0; color: var(--color-primary); }
+  .fcm-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-1); border-bottom: 2px solid var(--color-primary); }
+  .fcm-tab { min-height: var(--tap-target); padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; background: var(--color-surface); color: var(--color-text); font: inherit; font-weight: 700; font-size: 0.9375rem; line-height: 1.2; cursor: pointer; text-align: center; }
+  .fcm-tab:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .fcm-tab[aria-selected='true'] { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-on-primary); }
+  .fcm-tab:hover:not([aria-selected='true']) { border-color: var(--color-primary); }
+  @media (min-width: 48rem) { .fcm-tabs { display: flex; flex-wrap: wrap; } .fcm-tab { flex: 1 1 auto; } .fcm-tab:last-child:nth-child(odd) { grid-column: auto; } }
+  .fcm-pane { padding: var(--space-6) 0 0; }
+  .fcm-pane > .fcm-h2 { margin-bottom: var(--space-4); }
+  .fcm-cause { max-width: 28rem; margin-bottom: var(--space-4); }
+  .fcm-assume { margin-bottom: 0; }
+  /* Overview & Health */
+  .fcm-ov { display: grid; gap: var(--space-6); }
+  @media (min-width: 64rem) { .fcm-ov { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: start; } }
+  .fcm-ov__facts { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-4); }
+  .fcm-ov__facts .fcm-sum__block:last-child { margin-bottom: 0; }
+  .fcm-dz { border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-4); }
+  .fcm-seg { display: inline-flex; border: 1px solid var(--color-primary); border-radius: var(--radius); padding: 0; margin: var(--space-2) 0 var(--space-3); overflow: hidden; }
+  .fcm-seg label { position: relative; }
+  .fcm-seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .fcm-seg span { display: inline-flex; align-items: center; min-height: var(--tap-target); padding: 0 var(--space-4); font-weight: 700; color: var(--color-primary); }
+  .fcm-seg input:checked + span { background: var(--color-primary); color: var(--color-on-primary); }
+  .fcm-seg input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: -3px; }
+  .fcm-dz__chart svg { width: 100%; height: auto; display: block; }
+  .fcm-dz__sum { font-size: 1rem; margin: var(--space-2) 0 var(--space-3); }
+  .fcm-hc { border: 0; padding: 0; margin: 0 0 var(--space-3); display: grid; gap: var(--space-1); }
+  .fcm-hc legend { font-weight: 700; margin-bottom: var(--space-2); padding: 0; }
+  .fcm-hc__item { display: grid; gap: var(--space-1); }
+  .fcm-hc__check, .fcm-hc__types label { display: inline-flex; align-items: center; gap: var(--space-2); min-height: var(--tap-target); cursor: pointer; }
+  .fcm-hc input[type='checkbox'] { width: 1.25rem; height: 1.25rem; accent-color: var(--color-primary); }
+  .fcm-hc__check span { font-weight: 600; }
+  .fcm-hc__opt select { min-height: var(--tap-target); width: 100%; max-width: 26rem; padding: 0 var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius); font: inherit; background: var(--color-bg); }
+  .fcm-hc__opt, .fcm-hc__types { margin-left: 1.75rem; }
+  .fcm-hc__types { display: flex; flex-wrap: wrap; column-gap: var(--space-4); }
+  .fcm-hc [hidden] { display: none; }
+  .fcm-hc__types label:has(input:disabled) { color: var(--color-text-muted); cursor: default; }
+  .fcm-dz__notes { margin: 0; padding: 0; list-style: none; font-size: 0.9375rem; }
+  .fcm-dz__notes:empty { display: none; }
+  .fcm-dz__notes li { margin-bottom: var(--space-2); }
+  .fcm-dz__notes .is-muted { color: var(--color-text-muted); }
+  .fcm-dz-pin { display: inline-flex; align-items: center; justify-content: center; width: 1.375rem; height: 1.375rem; border-radius: 50%; background: var(--color-cta); color: #fff; font-size: 0.75rem; font-weight: 700; vertical-align: 0.0625em; }
+  .fcm-dz-key { color: #9a3412; font-weight: 700; }
   .fcm-field select, .fcm-field input { min-height: var(--tap-target); padding: 0 var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius); font: inherit; font-weight: 400; background: var(--color-bg); width: 100%; }
   .fcm-money { display: flex; align-items: center; gap: var(--space-1); font-weight: 400; }
-  .fcm-svg-wrap { position: relative; }
-  .fcm-svg-wrap svg { width: 100%; height: auto; display: block; }
-  .fcm-svg-wrap path { fill: #d9e3df; stroke: #fff; stroke-width: 1; cursor: pointer; transition: opacity 0.1s; }
-  .fcm-svg-wrap path:hover, .fcm-svg-wrap path:focus-visible { opacity: 0.75; outline: none; stroke: var(--color-cta); stroke-width: 3; }
-  .fcm-svg-wrap path[aria-pressed='true'] { stroke: var(--color-cta); stroke-width: 3; }
-  .fcm-tip { position: absolute; top: var(--space-2); left: var(--space-2); margin: 0; background: var(--color-primary); color: var(--color-on-primary); padding: var(--space-1) var(--space-2); border-radius: var(--radius); font-size: 0.875rem; pointer-events: none; }
-  .fcm-legend { display: flex; height: 0.75rem; border-radius: var(--radius); overflow: hidden; margin-top: var(--space-2); }
-  .fcm-legend span { flex: 1; }
   .fcm-note { font-size: 0.875rem; color: var(--color-text-muted); margin-top: var(--space-2); }
   .fcm-scroll { overflow-x: auto; }
   .fcm-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
@@ -487,8 +586,6 @@ const jsonLd = [
   .fcm-est .fcm-hist { grid-template-columns: 1fr; }
   @media (min-width: 48rem) { .fcm-est .fcm-hist { grid-template-columns: repeat(3, 1fr); } }
   .fcm-local { text-align: left; }
-  .fcm-sum { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-6); }
-  .fcm-sum__name { font-size: 1.75rem; margin: 0 0 var(--space-3); color: var(--color-primary); }
   .fcm-sum__block { margin-bottom: var(--space-6); }
   .fcm-sum__h { font-size: 1.0625rem; margin: 0 0 var(--space-1); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text); }
   .fcm-rows { margin: var(--space-2) 0 0; padding: 0; list-style: none; }
@@ -497,15 +594,6 @@ const jsonLd = [
   .fcm-rows sup { line-height: 0; }
   .fcm-rows dt, .fcm-rows dd { margin: 0; }
   .fcm-rows dd, .fcm-rows .fcm-val { font-weight: 700; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .fcm-explore ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
-  .fcm-explore a { display: flex; align-items: center; min-height: var(--tap-target); padding: var(--space-2) var(--space-3); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); color: var(--color-primary); font-weight: 700; text-decoration: none; font-size: 0.9375rem; }
-  .fcm-explore a:hover { border-color: var(--color-primary); }
-  .fcm-sec > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
-  .fcm-sec > summary::-webkit-details-marker { display: none; }
-  .fcm-sec > summary::after { content: '+'; font-size: 1.5rem; font-weight: 700; color: var(--color-primary); }
-  .fcm-sec[open] > summary::after { content: '\2212'; }
-  .fcm-sec > summary .fcm-h2 { margin: 0; }
-  .fcm-sec[open] > summary { margin-bottom: var(--space-4); }
   .fcm-est-title { font-size: 1.125rem; margin-bottom: var(--space-3); }
   .fcm-timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--space-2); margin: var(--space-4) 0; }
   .fcm-timeline div { border-top: 4px solid var(--color-border); padding-top: var(--space-2); }

@@ -7,6 +7,8 @@ import recent from '@/data/funeral-map/mortality-recent.json';
 import nfda from '@/data/funeral-map/nfda-prices.json';
 import directCremation from '@/data/funeral-map/direct-cremation.json';
 import lifeExp from '@/data/funeral-map/life-expectancy.json';
+import survival from '@/data/funeral-map/survival.json';
+import health from '@/data/funeral-map/health-conditions.json';
 import statePaths from '@/data/funeral-map/state-paths.json';
 import { ABBR_BY_FIPS } from '@/lib/funeral-map/state-abbr';
 import { lead } from '@/config/lead';
@@ -81,21 +83,7 @@ const vsNational = (state: string, pkg: Pkg) => {
   const n = pkg === 'burial' ? nfda.national.burial2023 : nfda.national.cremation2023;
   return m == null || state === US ? null : m / n - 1;
 };
-const isCost = (metric: string) => metric.startsWith('cost:');
-const causeOf = (metric: string) => (isCost(metric) ? 'All causes' : metric);
-const metricValue = (state: string, metric: string) =>
-  metric === 'cost:direct' ? (DIRECT[state] ? dcToday(DIRECT[state]) ?? DIRECT[state].value : null) : isCost(metric) ? estimate(state, metric.slice(5) as Pkg) : rateOf(state, metric);
-const metricText = (state: string, metric: string) => {
-  const v = metricValue(state, metric);
-  if (v == null) return `${state}: not available`;
-  if (!isCost(metric)) return `${state}: ${v} deaths per 100,000`;
-  if (metric === 'cost:direct') { const d = DIRECT[state]!; return `${state}: direct cremation ${dcToday(d) != null ? `estimated ${money(v)} (based on ${d.whenLabel ?? d.year} survey data)` : `${dcMoneyMap(v)} (${d.whenLabel ?? d.year})`}`; }
-  return `${state} (${REGION_OF[state]?.name ?? 'U.S.'} region): estimated ${money(v)}`;
-};
 let onStateChange: (state: string) => void = () => {};
-// Direct cremation for map shading (declared before use; same data as DIRECT below).
-const DIRECT_MAP = directCremation.states as Record<string, { year: number; whenLabel?: string; kind: string; value: number; n?: number }>;
-const dcMoneyMap = (v: number) => (Number.isInteger(v) ? money(v) : `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 
 // State direct cremation figures (Map V3.6): only where a funeral consumer
 // organization publishes a statewide summary figure; shown as published.
@@ -123,61 +111,34 @@ const localFor = (state: string) => LOCAL.filter((l) => l.states.includes(state)
 
 function init() {
   const stateSel = $<HTMLSelectElement>('[data-fcm-state]')!;
-  const metricSel = $<HTMLSelectElement>('[data-fcm-metric]')!;
-  const svg = $<SVGSVGElement>('[data-fcm-svg]')!;
-  const tip = $<HTMLElement>('[data-fcm-tip]')!;
-  const pathsEls = [...svg.querySelectorAll<SVGPathElement>('path[data-state]')];
-  const shades = ['#e3ece8', '#b9cec6', '#7fa597', '#3f7263', '#173f35'];
+  const causeSel = $<HTMLSelectElement>('[data-fcm-cause]')!;
 
-  function colorMap() {
-    const metric = metricSel.value;
-    const vals = pathsEls.map((p) => metricValue(p.dataset.state!, metric)).filter((v): v is number => v != null).sort((a, b) => a - b);
-    const cut = (q: number) => vals[Math.min(vals.length - 1, Math.floor(q * vals.length))];
-    const bounds = [0.2, 0.4, 0.6, 0.8].map(cut);
-    for (const p of pathsEls) {
-      const v = metricValue(p.dataset.state!, metric);
-      p.style.fill = v == null ? '#eeeeee' : shades[bounds.filter((b) => v >= b).length];
-      p.querySelector('title')!.textContent = metricText(p.dataset.state!, metric);
-    }
-    $<HTMLElement>('[data-fcm-legend]')!.innerHTML = shades.map((c) => `<span style="background:${c}"></span>`).join('');
-    const mapNote = $<HTMLElement>('[data-fcm-mapnote]')!;
-    mapNote.textContent = metric === 'cost:direct'
-      ? 'Map shading: direct cremation where a funeral consumer organization survey is available (gray: no data), estimated today based on historical data. Definitions differ by state; select a state to see what its figure includes. Darker means higher.'
-      : isCost(metric)
-      ? `Map shading: estimated cost of a funeral with viewing and ${metric === 'cost:burial' ? 'burial' : 'cremation'}, based on historical data. States in the same census region share one estimate. Darker means higher.`
-      : `Map shading: age-adjusted death rate per 100,000 people, 12 months ending ${qLabel(latestIdx(metric))} (provisional), CDC/NCHS. Darker means higher.`;
-  }
-
-  let selected = US;
-  function select(state: string) {
-    selected = state;
+  function select(state: string, syncUrl = true) {
     stateSel.value = state;
     renderSummary(state);
-    for (const p of pathsEls) p.setAttribute('aria-pressed', String(p.dataset.state === state));
-    renderMortality(state, causeOf(metricSel.value));
+    renderMortality(state, causeSel.value);
     onStateChange(state);
-  }
-
-  for (const p of pathsEls) {
-    p.addEventListener('click', () => { select(p.dataset.state!); });
-    p.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(p.dataset.state!); }
-    });
-    // V4.2: hovering previews the state in the summary panel; leaving restores the selection.
-    p.addEventListener('mouseenter', () => {
-      tip.textContent = metricText(p.dataset.state!, metricSel.value);
-      tip.hidden = false;
-      renderSummary(p.dataset.state!);
-    });
-    p.addEventListener('mouseleave', () => { tip.hidden = true; renderSummary(selected); });
+    renderDanger();
+    if (syncUrl) setStateInUrl(state);
   }
   stateSel.addEventListener('change', () => { select(stateSel.value); });
-  initExplore();
-  metricSel.addEventListener('change', () => { colorMap(); renderMortality(stateSel.value, causeOf(metricSel.value)); });
+  causeSel.addEventListener('change', () => { renderMortality(stateSel.value, causeSel.value); });
 
+  initTabs();
   initCosts();
-  colorMap();
-  select(stateFromUrl() ?? US);
+  initDanger(() => stateSel.value);
+  select(stateFromUrl() ?? US, false);
+}
+
+// V5.2: keep ?state=XX in step with the dropdown (no reload); other parameters
+// and the hash are kept.
+function setStateInUrl(state: string) {
+  try {
+    const url = new URL(location.href);
+    const code = statePaths.states.find((x) => x.name === state);
+    if (code) url.searchParams.set('state', ABBR_BY_FIPS[code.fips]); else url.searchParams.delete('state');
+    history.replaceState(history.state, '', url.toString());
+  } catch {}
 }
 
 // V4.4: /funeral-cost-map/?state=TX (from the homepage map) opens with that state selected.
@@ -284,6 +245,7 @@ function initCosts() {
   const timeline = $<HTMLElement>('[data-fcm-timeline]')!;
   const future = $<HTMLElement>('[data-fcm-future]')!;
   const short = $<HTMLElement>('[data-fcm-short]')!;
+  const assume = $<HTMLElement>('[data-fcm-assume]')!;
   if (DEFAULT_RATE != null) {
     rate.value = (DEFAULT_RATE * 100).toFixed(1);
     $<HTMLElement>('[data-fcm-rate-note]')!.textContent = `Default: ${(DEFAULT_RATE * 100).toFixed(1)}% a year, the average yearly change in the BLS funeral index from ${monthName} ${lastYear - 20} to ${monthName} ${lastYear}.`;
@@ -355,6 +317,7 @@ function initCosts() {
     if (!p || !Number.isFinite(r)) {
       timeline.hidden = true;
       future.textContent = p ? 'Enter a yearly increase to see the projection.' : 'Enter today\'s price above to see past and future costs.';
+      assume.textContent = 'Set today\'s funeral price and the yearly increase in Inflation & Future Costs to calculate a shortfall.';
       short.textContent = '';
       return;
     }
@@ -366,6 +329,7 @@ function initCosts() {
       `<div class="is-future"><strong>${money(fut)}</strong>In ${n} years**</div>`,
     ].join('');
     future.innerHTML = `A ${label} that costs <strong>${money(p)}</strong> today would cost about <strong>${money(fut)}</strong> in ${n} years at ${(r * 100).toFixed(1)}% a year: <strong>${money(fut - p)}</strong> more (+${pct(fut / p - 1, 0)}).<br><span class="fcm-note">*Past costs: today's price adjusted by the BLS funeral index, not surveyed prices from those years. **Projection, not a guaranteed price.</span>`;
+    assume.innerHTML = `Using: ${label}, <strong>${money(p)}</strong> today, ${n} years ahead at ${(r * 100).toFixed(1)}% a year: projected cost <strong>${money(fut)}</strong>.`;
     const have = (parseMoney(ins.value) ?? 0) + (parseMoney(sav.value) ?? 0);
     const gap = fut - have;
     short.innerHTML = gap > 0
@@ -381,14 +345,17 @@ function initCosts() {
 type LE = { birth: number; age65: number };
 // Shown where no direct cremation price is available (Randy, V4.3/V4.4).
 const CALL_US = `<a href="${lead.phone.href}">Call us for details</a>`;
-const LIFE = lifeExp.states as Record<string, { total: LE }>;
+const LIFE = lifeExp.states as Record<string, { total: LE; male: LE; female: LE }>;
 const row = (label: string, value: string) => `<div><dt>${label}</dt><dd>${value}</dd></div>`;
 function renderSummary(state: string) {
   $<HTMLElement>('[data-fcm-sum-name]')!.textContent = state;
-  const le = LIFE[state]?.total;
+  const L = LIFE[state];
   const us = LIFE[US]?.total;
-  $<HTMLElement>('[data-fcm-sum-le]')!.innerHTML = le
-    ? row('Years remaining at age 65', `${le.age65.toFixed(1)} years`) + row('At birth', `${le.birth.toFixed(1)} years`) +
+  const yrs = (v: number) => `${v.toFixed(1)} years`;
+  $<HTMLElement>('[data-fcm-sum-le]')!.innerHTML = L
+    ? row('Men, at birth', yrs(L.male.birth)) + row('Women, at birth', yrs(L.female.birth)) +
+      row('Men, years remaining at 65', yrs(L.male.age65)) + row('Women, years remaining at 65', yrs(L.female.age65)) +
+      row('Everyone (at 65 / at birth)', `${L.total.age65.toFixed(1)} / ${L.total.birth.toFixed(1)}`) +
       (state !== US && us ? row('U.S. (at 65 / at birth)', `${us.age65.toFixed(1)} / ${us.birth.toFixed(1)}`) : '')
     : row('Life expectancy', 'Unavailable');
   const burial = estimate(state, 'burial');
@@ -406,34 +373,185 @@ function renderSummary(state: string) {
   if (dc) parts.push(dcToday(dc) != null
     ? `Direct cremation: state survey (${dc.whenLabel ?? dc.year}${dc.n ? `, ${dc.kind} of ${dc.n} funeral homes` : `, ${dc.kind}`}), adjusted for inflation.`
     : `Direct cremation: state survey (${dc.whenLabel ?? dc.year}${dc.n ? `, ${dc.kind} of ${dc.n} funeral homes` : ''}).`);
-  else if (localFor(state).length) parts.push('Direct cremation: no statewide survey; see local surveys in Detailed funeral costs.');
+  else if (localFor(state).length) parts.push('Direct cremation: no statewide survey; see local surveys in Funeral Costs.');
   $<HTMLElement>('[data-fcm-sum-costnote]')!.textContent = parts.join(' ');
-  const causes = LEADING.map((c) => [c, rateOf(state, c)] as const).filter((r) => r[1] != null).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 10);
-  $<HTMLElement>('[data-fcm-sum-causes]')!.innerHTML = causes.length
-    ? causes.map(([c, r]) => `<li><span>${c}${latestIdx(c) < QI ? '<sup>†</sup>' : ''}</span><span class="fcm-val">${r}</span></li>`).join('')
-    : '<li><span>Unavailable</span><span></span></li>';
-  const lagged = causes.filter(([c]) => latestIdx(c) < QI).map(([c]) => c);
-  $<HTMLElement>('[data-fcm-sum-lag]')!.textContent = lagged.length ? `†12 months ending ${qLabel(latestIdx(lagged[0]))} (latest published).` : '';
 }
 
-// --- V4.2 Explore More: open the collapsible section that holds the target and scroll to it.
-function openTarget(id: string, scroll = true) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const det = el instanceof HTMLDetailsElement ? el : el.closest('details');
-  if (det) det.open = true;
-  if (scroll) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-function initExplore() {
-  for (const a of $$<HTMLAnchorElement>('[data-fcm-open]')) {
-    a.addEventListener('click', (e) => {
-      const id = a.getAttribute('href')!.slice(1);
+// --- V5.2 tabs: WAI-ARIA tabs (arrow keys, Home/End); a link or hash pointing
+// at content inside a pane opens that pane first.
+let showTab: (id: string, focus?: boolean) => void = () => {};
+function initTabs() {
+  const tabs = $$<HTMLButtonElement>('[data-fcm-tab]');
+  const panes = $$<HTMLElement>('[data-fcm-pane]');
+  showTab = (id, focus = false) => {
+    for (const t of tabs) {
+      const on = t.dataset.fcmTab === id;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    }
+    for (const p of panes) p.hidden = p.dataset.fcmPane !== id;
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => showTab(t.dataset.fcmTab!));
+    t.addEventListener('keydown', (e) => {
+      const k = e.key;
+      const n = k === 'ArrowRight' ? i + 1 : k === 'ArrowLeft' ? i - 1 : k === 'Home' ? 0 : k === 'End' ? tabs.length - 1 : null;
+      if (n == null) return;
       e.preventDefault();
-      openTarget(id);
-      try { history.replaceState(history.state, '', `#${id}`); } catch {}
+      showTab(tabs[(n + tabs.length) % tabs.length].dataset.fcmTab!, true);
     });
+  });
+  const openTarget = (id: string, scroll: boolean) => {
+    const el = document.getElementById(id);
+    const pane = el?.closest<HTMLElement>('[data-fcm-pane]');
+    if (!el || !pane) return;
+    showTab(pane.dataset.fcmPane!);
+    if (scroll) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  for (const a of $$<HTMLAnchorElement>('[data-fcm-open]')) {
+    a.addEventListener('click', (e) => { e.preventDefault(); openTarget(a.getAttribute('href')!.slice(1), true); });
   }
-  if (location.hash.length > 1) openTarget(decodeURIComponent(location.hash.slice(1)));
+  if (location.hash.length > 1) openTarget(decodeURIComponent(location.hash.slice(1)), true);
+}
+
+// --- V5.2 Danger Zone: the selected state's 2022 life table (survivors at each
+// age from 65), the ages where the middle half of 65-year-olds die, and markers
+// for published health-condition figures (health-conditions.json). No number is
+// estimated here: markers place a published figure against the state average.
+type Sex = 'male' | 'female';
+const SURV = survival.states as Record<string, Record<Sex, number[]>>;
+const AGE0 = survival.ages[0]; // lx arrays start at age 50
+type HcOpt = { id: string; label: string; yearsLost?: number; plusSmoking?: number; atAge?: number; medianSurvival?: number };
+type HcType = { id: string; label: string; survival5: number; localized5: number; medianDeathAge: number; sexes: string[]; url: string };
+type Hc = {
+  label: string; options?: HcOpt[]; default?: string; sexes?: string[]; femalePending?: string; atAge?: number;
+  measure?: string; note?: string; source?: string; url?: string; types?: HcType[];
+  combined?: { with: string[]; atAge: number; yearsLost: Record<Sex, number>; source: string; url: string; studyCondition: string };
+};
+const HC = health.conditions as unknown as Record<string, Hc>;
+const SEX_WORD: Record<Sex, string> = { male: 'men', female: 'women' };
+
+// Age (fractional) at which the share still living, of those alive at 65, falls to p.
+function ageAtShare(lx: number[], p: number) {
+  const base = lx[65 - AGE0];
+  for (let a = 65; a < 100; a++) {
+    const s0 = lx[a - AGE0] / base, s1 = lx[a + 1 - AGE0] / base;
+    if (s1 <= p) return a + (s0 - p) / (s0 - s1 || 1);
+  }
+  return 100;
+}
+
+let renderDanger: () => void = () => {};
+function initDanger(getState: () => string) {
+  const chart = $<HTMLElement>('[data-fcm-dz-chart]')!;
+  const sum = $<HTMLElement>('[data-fcm-dz-sum]')!;
+  const notesEl = $<HTMLElement>('[data-fcm-dz-notes]')!;
+  const checks = $$<HTMLInputElement>('[data-fcm-hc]');
+  const types = $$<HTMLInputElement>('[data-fcm-hc-type]');
+  const sexInputs = $$<HTMLInputElement>('[data-fcm-sex]');
+  const sexOf = (): Sex => (sexInputs.find((r) => r.checked)?.value as Sex) ?? 'male';
+  const link = (url?: string, text = 'Source') => (url ? `<a href="${url}" rel="noopener">${text}</a>` : '');
+  const fmtAge = (a: number) => a.toFixed(1);
+
+  renderDanger = () => {
+    const state = getState();
+    const sex = sexOf();
+    const lx = SURV[state]?.[sex];
+    const e65 = (lifeExp.states as Record<string, Record<Sex, { age65: number }>>)[state]?.[sex]?.age65;
+    // Only the options of checked conditions are shown; types match the sex.
+    for (const c of checks) {
+      for (const el of $$<HTMLElement>(`[data-fcm-hc-opt="${c.value}"]`)) el.hidden = !c.checked;
+    }
+    for (const t of types) {
+      const ok = (t.dataset.sexes ?? '').split(' ').includes(sex);
+      t.disabled = !ok;
+      if (!ok) t.checked = false;
+    }
+    if (!lx || e65 == null) { chart.innerHTML = ''; sum.textContent = 'Life table not available for this selection.'; notesEl.innerHTML = ''; return; }
+    const q1 = ageAtShare(lx, 0.75), med = ageAtShare(lx, 0.5), q3 = ageAtShare(lx, 0.25);
+    const avg = 65 + e65;
+    const who = `${state === US ? 'U.S.' : state} ${SEX_WORD[sex]}`;
+    sum.innerHTML = `Of ${who} who reach 65, half live past <strong>${fmtAge(med)}</strong>; on average they live to <strong>${fmtAge(avg)}</strong>. <span class="fcm-dz-key">Danger Zone</span>: <strong>${fmtAge(q1)} to ${fmtAge(q3)}</strong>, the ages at which the middle half of them die.`;
+
+    // Markers from checked conditions (published figures only).
+    type Marker = { age: number; text: string; muted?: false } | { age: null; text: string; muted: true };
+    const marks: Marker[] = [];
+    const on = new Set(checks.filter((c) => c.checked).map((c) => c.value));
+    const selOf = (id: string) => $<HTMLSelectElement>(`[data-fcm-hc-sel="${id}"]`)?.value;
+    const combo = on.has('heart') && on.has('diabetes') ? HC.heart.combined : undefined;
+    if (on.has('heart')) {
+      if (combo) {
+        const y = combo.yearsLost[sex];
+        marks.push({ age: avg - y, text: `<b>Heart disease and diabetes together:</b> about ${y} fewer years of life for ${SEX_WORD[sex]} at age ${combo.atAge} (a history of heart attack plus diabetes). Published combined figure; not two figures added together. ${link(combo.url)}` });
+      } else {
+        marks.push({ age: null, muted: true, text: `<b>Heart disease:</b> a verified figure for heart disease alone is not yet available, so no marker is shown. Select Diabetes as well to see the study's published combined figure.` });
+      }
+    }
+    if (on.has('diabetes') && !combo) {
+      const o = HC.diabetes.options!.find((x) => x.id === selOf('diabetes'))!;
+      marks.push({ age: avg - o.yearsLost!, text: `<b>Diabetes, ${o.label.toLowerCase()}:</b> about ${o.yearsLost} fewer years of life (a 50-year-old with type 2 diabetes compared with one without, U.S. death rates). ${HC.diabetes.note} ${link(HC.diabetes.url)}` });
+    } else if (on.has('diabetes') && combo) {
+      marks.push({ age: null, muted: true, text: `<b>Diabetes:</b> included in the combined heart disease and diabetes figure above.` });
+    }
+    if (on.has('copd')) {
+      if (sex === 'male') {
+        const o = HC.copd.options!.find((x) => x.id === selOf('copd'))!;
+        marks.push({ age: avg - o.yearsLost!, text: `<b>COPD, ${o.label.toLowerCase()}:</b> about ${o.yearsLost} fewer years of life for men at age 65${o.plusSmoking ? `, in addition to the ${o.plusSmoking} years lost due to smoking` : ''}. ${link(HC.copd.url)}` });
+      } else {
+        marks.push({ age: null, muted: true, text: `<b>COPD:</b> ${HC.copd.femalePending}` });
+      }
+    }
+    if (on.has('alzheimers')) {
+      const o = HC.alzheimers.options!.find((x) => x.id === selOf('alzheimers'))!;
+      marks.push({ age: o.atAge! + o.medianSurvival!, text: `<b>Alzheimer's disease, ${o.label.toLowerCase()}:</b> half of people live at least ${o.medianSurvival} more years after diagnosis (median survival; men and women alike). ${link(HC.alzheimers.url)}` });
+    }
+    if (on.has('cancer')) {
+      const picked = HC.cancer.types!.filter((t) => types.find((x) => x.value === t.id && x.checked && !x.disabled));
+      if (!picked.length) marks.push({ age: null, muted: true, text: `<b>Cancer:</b> choose a cancer type.` });
+      for (const t of picked) {
+        marks.push({ age: t.medianDeathAge, text: `<b>${t.label}:</b> 5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')}` });
+      }
+    }
+    const shown = marks.filter((m): m is Extract<Marker, { age: number }> => m.age != null);
+    const many = shown.length > 1;
+    notesEl.innerHTML = marks.map((m) => {
+      const n = m.age != null ? shown.indexOf(m) + 1 : 0;
+      return `<li class="${m.muted ? 'is-muted' : ''}">${m.age != null ? `<span class="fcm-dz-pin">${n}</span> Marker at age ${fmtAge(Math.min(100, Math.max(65, m.age)))}. ` : ''}${m.text}</li>`;
+    }).join('') + (many ? '<li class="is-muted">Each marker shows one published figure on its own. Published research does not support adding them together, so no combined estimate is shown.</li>' : '');
+
+    // Chart: ages 65 to 100, share still living (0 to 100%).
+    const W = 640, H = 300, L = 44, R = 14, T = 30, B = 40;
+    const x = (a: number) => L + ((Math.min(100, Math.max(65, a)) - 65) / 35) * (W - L - R);
+    const y = (p: number) => T + (1 - p) * (H - T - B);
+    const base = lx[65 - AGE0];
+    const pts: string[] = [];
+    for (let a = 65; a <= 100; a++) pts.push(`${x(a).toFixed(1)},${y(lx[a - AGE0] / base).toFixed(1)}`);
+    const area = `${x(65)},${y(0)} ${pts.join(' ')} ${x(100)},${y(0)}`;
+    const ticksX = [65, 70, 75, 80, 85, 90, 95, 100].map((a) => `<line x1="${x(a)}" y1="${y(0)}" x2="${x(a)}" y2="${y(0) + 5}" stroke="#6b726e"/><text x="${x(a)}" y="${y(0) + 19}" font-size="13" text-anchor="middle" fill="#454b49">${a}</text>`).join('');
+    const ticksY = [0, 0.25, 0.5, 0.75, 1].map((p) => `<line x1="${L}" y1="${y(p)}" x2="${W - R}" y2="${y(p)}" stroke="#e7e2d8"/><text x="${L - 6}" y="${y(p) + 4}" font-size="12" text-anchor="end" fill="#454b49">${p * 100}%</text>`).join('');
+    const markerSvg = shown.map((m, k) => {
+      const mx = x(m.age);
+      const ty = T + 14 + (k % 3) * 18;
+      return `<line x1="${mx}" y1="${T}" x2="${mx}" y2="${y(0)}" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="6 4"/><circle cx="${mx}" cy="${ty}" r="9" fill="#c2410c"/><text x="${mx}" y="${ty + 4}" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">${k + 1}</text>`;
+    }).join('');
+    const label = `Share of ${who} alive at 65 who are still living at each age. Half live past ${fmtAge(med)}; average ${fmtAge(avg)}; Danger Zone ${fmtAge(q1)} to ${fmtAge(q3)}.${shown.length ? ` ${shown.length} condition marker${shown.length > 1 ? 's' : ''} shown.` : ''}`;
+    chart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">
+      ${ticksY}
+      <rect x="${x(q1)}" y="${T}" width="${x(q3) - x(q1)}" height="${y(0) - T}" fill="#c2410c" fill-opacity="0.16"/>
+      <text x="${(x(q1) + x(q3)) / 2}" y="${T - 10}" font-size="13" font-weight="700" text-anchor="middle" fill="#9a3412">DANGER ZONE</text>
+      <polygon points="${area}" fill="#173f35" fill-opacity="0.12"/>
+      <polyline points="${pts.join(' ')}" fill="none" stroke="#173f35" stroke-width="3"/>
+      <line x1="${x(avg)}" y1="${T}" x2="${x(avg)}" y2="${y(0)}" stroke="#173f35" stroke-width="2" stroke-dasharray="3 3"/>
+      <text x="${x(avg) + 5}" y="${y(0.9)}" font-size="12" fill="#173f35">Average ${fmtAge(avg)}</text>
+      ${markerSvg}
+      <line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#6b726e"/>
+      ${ticksX}
+      <text x="${(L + W - R) / 2}" y="${H - 4}" font-size="12" text-anchor="middle" fill="#454b49">Age</text>
+    </svg>`;
+  };
+  for (const el of [...checks, ...types, ...sexInputs]) el.addEventListener('change', () => renderDanger());
+  for (const sel of $$<HTMLSelectElement>('[data-fcm-hc-sel]')) sel.addEventListener('change', () => renderDanger());
 }
 
 // Runs last so every helper above is initialized.
