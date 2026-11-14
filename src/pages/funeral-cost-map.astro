@@ -180,10 +180,11 @@ const jsonLd = [
             </fieldset>
             <ul class="fcm-dz__notes" data-fcm-dz-notes aria-live="polite"></ul>
             <p class="fcm-note">
-              The curve shows the share of people in the selected state who reach 65 and are still living at each later
-              age ({le.year} NCHS state life table). The Danger Zone covers the ages at which the middle half of them die.
-              Condition markers place a published figure against this state's average; they illustrate published
-              research and are not a prediction for any one person. Sources are listed under each marker and in Sources
+              The curve shows the share of people in the selected state who reach 50 and are still living at each later
+              age ({le.year} NCHS state life table). The solid line is the estimated life expectancy at birth for men or
+              women. The Death Danger Zone (red) runs from the earliest age linked to a selected condition up to that line;
+              ages after it are gray. Condition markers place a published figure against this state's average; they
+              illustrate published research and are not a prediction for any one person. Sources are listed under each marker and in Sources
               and Methodology below.
             </p>
           </div>
@@ -478,10 +479,12 @@ const jsonLd = [
           <a href={le.usSourceUrl} rel="noopener">U.S. life tables</a>.
         </li>
         <li>
-          <strong>Danger Zone:</strong> from the same {le.year} life tables (men and women separately), the number of
-          people surviving to each age from 65 to 100 (lx). The curve is the share of those alive at 65 who are still
-          living at each age. The Danger Zone runs from the age when 75% are still living to the age when 25% are, the
-          ages at which the middle half of them die. The average is 65 plus the life expectancy at 65.
+          <strong>Death Danger Zone:</strong> from the same {le.year} life tables (men and women separately), the
+          number of people surviving to each age from 50 to 100 (lx); the curve is the share of those alive at 50 who
+          are still living at each age. The baseline is the life expectancy at birth for men or women. The Death Danger
+          Zone runs from the earliest age linked to a selected condition (the baseline minus a published number of years
+          lost, a published median survival after diagnosis, or a published median age at death) up to the baseline.
+          Figures are never added together.
         </li>
         <li>
           <strong>Health Conditions:</strong> only published figures, each placed against the state's average for
@@ -547,7 +550,14 @@ const jsonLd = [
   .fcm-seg span { display: inline-flex; align-items: center; min-height: var(--tap-target); padding: 0 var(--space-4); font-weight: 700; color: var(--color-primary); }
   .fcm-seg input:checked + span { background: var(--color-primary); color: var(--color-on-primary); }
   .fcm-seg input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: -3px; }
+  .fcm-dz__chart { position: relative; }
   .fcm-dz__chart svg { width: 100%; height: auto; display: block; }
+  /* V5.4: DEATH DANGER ZONE label over the red band (placed by the script). */
+  .fcm-dz-label { position: absolute; margin: 0; font-weight: 800; color: #7c2d12; letter-spacing: 0.04em; line-height: 1.1; text-align: center; white-space: nowrap; pointer-events: none; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff; }
+  .fcm-dz-label.is-stack { display: flex; flex-direction: column; align-items: center; font-size: 0.9375rem; }
+  .fcm-dz-label.is-stack-sm { display: flex; flex-direction: column; align-items: center; font-size: 0.75rem; }
+  .fcm-dz-label.is-line { font-size: 0.6875rem; }
+  .fcm-dz-label.is-above { font-size: 0.6875rem; }
   .fcm-dz__sum { font-size: 1rem; margin: var(--space-2) 0 var(--space-3); }
   .fcm-hc { border: 0; padding: 0; margin: 0 0 var(--space-3); display: grid; gap: var(--space-1); }
   .fcm-hc legend { font-weight: 700; margin-bottom: var(--space-2); padding: 0; }

@@ -391,6 +391,7 @@ function initTabs() {
       if (on && focus) t.focus();
     }
     for (const p of panes) p.hidden = p.dataset.fcmPane !== id;
+    if (id === 'overview') renderDanger(); // the label is sized from the visible chart
   };
   tabs.forEach((t, i) => {
     t.addEventListener('click', () => showTab(t.dataset.fcmTab!));
@@ -415,10 +416,11 @@ function initTabs() {
   if (location.hash.length > 1) openTarget(decodeURIComponent(location.hash.slice(1)), true);
 }
 
-// --- V5.2 Danger Zone: the selected state's 2022 life table (survivors at each
-// age from 65), the ages where the middle half of 65-year-olds die, and markers
-// for published health-condition figures (health-conditions.json). No number is
-// estimated here: markers place a published figure against the state average.
+// --- V5.2-V5.4 Death Danger Zone: the selected state's 2022 life table
+// (survivors at each age from 50), the estimated life expectancy at birth for
+// the selected sex as the baseline, and markers for published health-condition
+// figures (health-conditions.json). The red band runs from the earliest
+// condition-adjusted age back up to the baseline; nothing is estimated or added.
 type Sex = 'male' | 'female';
 const SURV = survival.states as Record<string, Record<Sex, number[]>>;
 const AGE0 = survival.ages[0]; // lx arrays start at age 50
@@ -431,16 +433,6 @@ type Hc = {
 };
 const HC = health.conditions as unknown as Record<string, Hc>;
 const SEX_WORD: Record<Sex, string> = { male: 'men', female: 'women' };
-
-// Age (fractional) at which the share still living, of those alive at 65, falls to p.
-function ageAtShare(lx: number[], p: number) {
-  const base = lx[65 - AGE0];
-  for (let a = 65; a < 100; a++) {
-    const s0 = lx[a - AGE0] / base, s1 = lx[a + 1 - AGE0] / base;
-    if (s1 <= p) return a + (s0 - p) / (s0 - s1 || 1);
-  }
-  return 100;
-}
 
 let renderDanger: () => void = () => {};
 function initDanger(getState: () => string) {
@@ -458,7 +450,7 @@ function initDanger(getState: () => string) {
     const state = getState();
     const sex = sexOf();
     const lx = SURV[state]?.[sex];
-    const e65 = (lifeExp.states as Record<string, Record<Sex, { age65: number }>>)[state]?.[sex]?.age65;
+    const birth = (lifeExp.states as Record<string, Record<Sex, { birth: number }>>)[state]?.[sex]?.birth;
     // Only the options of checked conditions are shown; types match the sex.
     for (const c of checks) {
       for (const el of $$<HTMLElement>(`[data-fcm-hc-opt="${c.value}"]`)) el.hidden = !c.checked;
@@ -468,11 +460,10 @@ function initDanger(getState: () => string) {
       t.disabled = !ok;
       if (!ok) t.checked = false;
     }
-    if (!lx || e65 == null) { chart.innerHTML = ''; sum.textContent = 'Life table not available for this selection.'; notesEl.innerHTML = ''; return; }
-    const q1 = ageAtShare(lx, 0.75), med = ageAtShare(lx, 0.5), q3 = ageAtShare(lx, 0.25);
-    const avg = 65 + e65;
+    if (!lx || birth == null) { chart.innerHTML = ''; sum.textContent = 'Life table not available for this selection.'; notesEl.innerHTML = ''; return; }
+    // V5.3/V5.4 baseline: estimated life expectancy at birth for the selected sex.
+    const avg = birth;
     const who = `${state === US ? 'U.S.' : state} ${SEX_WORD[sex]}`;
-    sum.innerHTML = `Of ${who} who reach 65, half live past <strong>${fmtAge(med)}</strong>; on average they live to <strong>${fmtAge(avg)}</strong>. <span class="fcm-dz-key">Danger Zone</span>: <strong>${fmtAge(q1)} to ${fmtAge(q3)}</strong>, the ages at which the middle half of them die.`;
 
     // Markers from checked conditions (published figures only).
     type Marker = { age: number; text: string; muted?: false } | { age: null; text: string; muted: true };
@@ -517,41 +508,96 @@ function initDanger(getState: () => string) {
     const many = shown.length > 1;
     notesEl.innerHTML = marks.map((m) => {
       const n = m.age != null ? shown.indexOf(m) + 1 : 0;
-      return `<li class="${m.muted ? 'is-muted' : ''}">${m.age != null ? `<span class="fcm-dz-pin">${n}</span> Marker at age ${fmtAge(Math.min(100, Math.max(65, m.age)))}. ` : ''}${m.text}</li>`;
+      return `<li class="${m.muted ? 'is-muted' : ''}">${m.age != null ? `<span class="fcm-dz-pin">${n}</span> Marker at age ${fmtAge(Math.min(100, Math.max(50, m.age)))}. ` : ''}${m.text}</li>`;
     }).join('') + (many ? '<li class="is-muted">Each marker shows one published figure on its own. Published research does not support adding them together, so no combined estimate is shown.</li>' : '');
 
-    // Chart: ages 65 to 100, share still living (0 to 100%).
-    const W = 640, H = 300, L = 44, R = 14, T = 30, B = 40;
-    const x = (a: number) => L + ((Math.min(100, Math.max(65, a)) - 65) / 35) * (W - L - R);
+    // Death Danger Zone: from the earliest condition-adjusted age (a published
+    // figure, never a sum) back up to the baseline. Gray after the baseline,
+    // green before the zone.
+    const earlier = shown.map((m) => m.age).filter((a) => a < avg);
+    const start = earlier.length ? Math.max(50, Math.min(...earlier)) : null;
+    sum.innerHTML = `Estimated life expectancy at birth for ${who}: <strong>${fmtAge(avg)}</strong>. ` + (start != null
+      ? `<span class="fcm-dz-key">Death Danger Zone</span>: <strong>${fmtAge(start)} to ${fmtAge(avg)}</strong>, from the earliest age linked to the selected condition${shown.length > 1 ? 's' : ''} up to that average.`
+      : shown.length
+        ? 'The selected figures fall after this average, so no Death Danger Zone is shown.'
+        : 'Select a health condition to see its Death Danger Zone.');
+
+    // Chart: ages 50 to 100; the curve is the share of 50-year-olds still living.
+    const W = 640, H = 300, L = 44, R = 14, T = 40, B = 40;
+    const x = (a: number) => L + ((Math.min(100, Math.max(50, a)) - 50) / 50) * (W - L - R);
     const y = (p: number) => T + (1 - p) * (H - T - B);
-    const base = lx[65 - AGE0];
+    const base = lx[0];
     const pts: string[] = [];
-    for (let a = 65; a <= 100; a++) pts.push(`${x(a).toFixed(1)},${y(lx[a - AGE0] / base).toFixed(1)}`);
-    const area = `${x(65)},${y(0)} ${pts.join(' ')} ${x(100)},${y(0)}`;
-    const ticksX = [65, 70, 75, 80, 85, 90, 95, 100].map((a) => `<line x1="${x(a)}" y1="${y(0)}" x2="${x(a)}" y2="${y(0) + 5}" stroke="#6b726e"/><text x="${x(a)}" y="${y(0) + 19}" font-size="13" text-anchor="middle" fill="#454b49">${a}</text>`).join('');
+    for (let a = 50; a <= 100; a++) pts.push(`${x(a).toFixed(1)},${y(lx[a - AGE0] / base).toFixed(1)}`);
+    const ticksX = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100].map((a) => `<line x1="${x(a)}" y1="${y(0)}" x2="${x(a)}" y2="${y(0) + 5}" stroke="#6b726e"/><text x="${x(a)}" y="${y(0) + 19}" font-size="13" text-anchor="middle" fill="#454b49">${a}</text>`).join('');
     const ticksY = [0, 0.25, 0.5, 0.75, 1].map((p) => `<line x1="${L}" y1="${y(p)}" x2="${W - R}" y2="${y(p)}" stroke="#e7e2d8"/><text x="${L - 6}" y="${y(p) + 4}" font-size="12" text-anchor="end" fill="#454b49">${p * 100}%</text>`).join('');
+    const region = (a0: number, a1: number, fill: string, op: number) => (a1 > a0 ? `<rect x="${x(a0)}" y="${T}" width="${x(a1) - x(a0)}" height="${y(0) - T}" fill="${fill}" fill-opacity="${op}"/>` : '');
+    const greenEnd = start ?? avg;
+    const regions = region(50, greenEnd, '#cfe0d7', 0.95) + (start != null ? region(start, avg, '#c2410c', 0.22) : '') + region(avg, 100, '#6b726e', 0.14);
+    const PIN0 = T + 34;
     const markerSvg = shown.map((m, k) => {
       const mx = x(m.age);
-      const ty = T + 14 + (k % 3) * 18;
+      const ty = PIN0 + (k % 3) * 18;
       return `<line x1="${mx}" y1="${T}" x2="${mx}" y2="${y(0)}" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="6 4"/><circle cx="${mx}" cy="${ty}" r="9" fill="#c2410c"/><text x="${mx}" y="${ty + 4}" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">${k + 1}</text>`;
     }).join('');
-    const label = `Share of ${who} alive at 65 who are still living at each age. Half live past ${fmtAge(med)}; average ${fmtAge(avg)}; Danger Zone ${fmtAge(q1)} to ${fmtAge(q3)}.${shown.length ? ` ${shown.length} condition marker${shown.length > 1 ? 's' : ''} shown.` : ''}`;
+    const nearRight = x(avg) > W - R - 120;
+    const label = `Share of ${who} alive at 50 who are still living at each age. Estimated life expectancy at birth ${fmtAge(avg)}.${start != null ? ` Death Danger Zone ${fmtAge(start)} to ${fmtAge(avg)}.` : ''}${shown.length ? ` ${shown.length} condition marker${shown.length > 1 ? 's' : ''} shown.` : ''}`;
     chart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">
+      ${regions}
       ${ticksY}
-      <rect x="${x(q1)}" y="${T}" width="${x(q3) - x(q1)}" height="${y(0) - T}" fill="#c2410c" fill-opacity="0.16"/>
-      <text x="${(x(q1) + x(q3)) / 2}" y="${T - 10}" font-size="13" font-weight="700" text-anchor="middle" fill="#9a3412">DANGER ZONE</text>
-      <polygon points="${area}" fill="#173f35" fill-opacity="0.12"/>
       <polyline points="${pts.join(' ')}" fill="none" stroke="#173f35" stroke-width="3"/>
-      <line x1="${x(avg)}" y1="${T}" x2="${x(avg)}" y2="${y(0)}" stroke="#173f35" stroke-width="2" stroke-dasharray="3 3"/>
-      <text x="${x(avg) + 5}" y="${y(0.9)}" font-size="12" fill="#173f35">Average ${fmtAge(avg)}</text>
+      <line x1="${x(avg)}" y1="${T}" x2="${x(avg)}" y2="${y(0)}" stroke="#173f35" stroke-width="2.5"/>
+      <text x="${x(avg) + (nearRight ? -5 : 5)}" y="${T + 14}" font-size="12" font-weight="700" text-anchor="${nearRight ? 'end' : 'start'}" fill="#173f35">Life expectancy ${fmtAge(avg)}</text>
       ${markerSvg}
       <line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#6b726e"/>
       ${ticksX}
       <text x="${(L + W - R) / 2}" y="${H - 4}" font-size="12" text-anchor="middle" fill="#454b49">Age</text>
     </svg>`;
+
+    // DEATH DANGER ZONE label (HTML over the chart, so it stays readable on
+    // phones): stacked inside the band if it fits, else one compact line inside,
+    // else a small line just above the band. It sits in the widest gap between
+    // marker lines, so it never covers a marker, pin or other label.
+    if (start == null) return;
+    const svgEl = chart.querySelector('svg')!;
+    const scale = svgEl.getBoundingClientRect().width / W;
+    if (!scale) return; // not visible yet; redrawn when the tab opens
+    const PAD = 4; // clear of the marker lines (pins sit in rows above the label)
+    const cuts = [x(start), ...shown.map((m) => x(m.age)).filter((mx) => mx > x(start) + 1 && mx < x(avg) - 1).sort((a, b) => a - b), x(avg)];
+    let g0 = cuts[0], g1 = cuts[1];
+    for (let i = 1; i < cuts.length - 1; i++) if (cuts[i + 1] - cuts[i] > g1 - g0) { g0 = cuts[i]; g1 = cuts[i + 1]; }
+    const inner = (g1 - g0 - PAD * 2) * scale; // usable width in px
+    const tag = document.createElement('div');
+    tag.className = 'fcm-dz-label';
+    tag.setAttribute('aria-hidden', 'true');
+    chart.appendChild(tag);
+    type Mode = 'stack' | 'stack-sm' | 'line' | 'above';
+    const place = (mode: Mode) => {
+      tag.className = `fcm-dz-label is-${mode}`;
+      tag.innerHTML = mode.startsWith('stack') ? '<span>DEATH</span><span>DANGER</span><span>ZONE</span>' : 'DEATH DANGER ZONE';
+      return tag.getBoundingClientRect();
+    };
+    const plotMid = (PIN0 + 3 * 18 + y(0)) / 2; // below the pin rows, above the axis
+    const room = (y(0) - PIN0 - 3 * 18) * scale;
+    // Stacked (full, then compact), then one compact line, then above the band.
+    let mode: Mode = 'above';
+    let box = place('above');
+    for (const m of ['stack', 'stack-sm', 'line'] as Mode[]) {
+      const bx = place(m);
+      if (bx.width <= inner && bx.height <= room) { mode = m; box = bx; break; }
+    }
+    if (mode === 'above') box = place('above');
+    const cx = mode === 'above' ? (x(start) + x(avg)) / 2 : (g0 + g1) / 2;
+    // Within the plot area (clear of the axis labels on the left).
+    const left = Math.min(Math.max(cx * scale - box.width / 2, L * scale), (W - R) * scale - box.width);
+    const top = mode === 'above' ? (T - 6) * scale - box.height : plotMid * scale - box.height / 2;
+    tag.style.left = `${left}px`;
+    tag.style.top = `${top}px`;
   };
   for (const el of [...checks, ...types, ...sexInputs]) el.addEventListener('change', () => renderDanger());
   for (const sel of $$<HTMLSelectElement>('[data-fcm-hc-sel]')) sel.addEventListener('change', () => renderDanger());
+  let rt = 0;
+  addEventListener('resize', () => { clearTimeout(rt); rt = window.setTimeout(() => renderDanger(), 150); });
 }
 
 // Runs last so every helper above is initialized.
