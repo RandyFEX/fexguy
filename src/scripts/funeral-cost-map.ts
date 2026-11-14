@@ -512,6 +512,13 @@ function initDanger(getState: () => string) {
         marks.push({ age: null, muted: true, text: `<b>${t.label}:</b> 5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')} ${NO_MARKER}` });
       }
     }
+    // V5.10 guard: a condition is never shown as extending life expectancy. Only
+    // published years of life lost (an earlier age) are plotted; anything at or
+    // after the baseline is listed as information, without a marker.
+    for (let i = 0; i < marks.length; i++) {
+      const m = marks[i];
+      if (m.age != null && !(m.age < avg)) marks[i] = { age: null, muted: true, text: `${m.text} ${NO_MARKER}` };
+    }
     const shown = marks.filter((m): m is Extract<Marker, { age: number }> => m.age != null);
     const many = shown.length > 1;
     notesEl.innerHTML = marks.map((m) => {
