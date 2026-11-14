@@ -433,6 +433,11 @@ type Hc = {
 };
 const HC = health.conditions as unknown as Record<string, Hc>;
 const SEX_WORD: Record<Sex, string> = { male: 'men', female: 'women' };
+// Lowercase only the first letter of an option label (keeps acronyms such as GOLD).
+const lcFirst = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
+// V5.5: survival after diagnosis and age at death are not years of life lost
+// compared with people without the condition, so they get no graph marker.
+const NO_MARKER = 'Not shown on the graph: this figure is not a measure of years of life lost compared with people without the condition.';
 
 let renderDanger: () => void = () => {};
 function initDanger(getState: () => string) {
@@ -481,27 +486,27 @@ function initDanger(getState: () => string) {
     }
     if (on.has('diabetes') && !combo) {
       const o = HC.diabetes.options!.find((x) => x.id === selOf('diabetes'))!;
-      marks.push({ age: avg - o.yearsLost!, text: `<b>Diabetes, ${o.label.toLowerCase()}:</b> about ${o.yearsLost} fewer years of life (a 50-year-old with type 2 diabetes compared with one without, U.S. death rates). ${HC.diabetes.note} ${link(HC.diabetes.url)}` });
+      marks.push({ age: avg - o.yearsLost!, text: `<b>Diabetes, ${lcFirst(o.label)}:</b> about ${o.yearsLost} fewer years of life (a 50-year-old with type 2 diabetes compared with one without, U.S. death rates). ${HC.diabetes.note} ${link(HC.diabetes.url)}` });
     } else if (on.has('diabetes') && combo) {
       marks.push({ age: null, muted: true, text: `<b>Diabetes:</b> included in the combined heart disease and diabetes figure above.` });
     }
     if (on.has('copd')) {
       if (sex === 'male') {
         const o = HC.copd.options!.find((x) => x.id === selOf('copd'))!;
-        marks.push({ age: avg - o.yearsLost!, text: `<b>COPD, ${o.label.toLowerCase()}:</b> about ${o.yearsLost} fewer years of life for men at age 65${o.plusSmoking ? `, in addition to the ${o.plusSmoking} years lost due to smoking` : ''}. ${link(HC.copd.url)}` });
+        marks.push({ age: avg - o.yearsLost!, text: `<b>COPD, ${lcFirst(o.label)}:</b> about ${o.yearsLost} fewer years of life for men at age 65${o.plusSmoking ? `, in addition to the ${o.plusSmoking} years lost due to smoking` : ''}. ${link(HC.copd.url)}` });
       } else {
         marks.push({ age: null, muted: true, text: `<b>COPD:</b> ${HC.copd.femalePending}` });
       }
     }
     if (on.has('alzheimers')) {
       const o = HC.alzheimers.options!.find((x) => x.id === selOf('alzheimers'))!;
-      marks.push({ age: o.atAge! + o.medianSurvival!, text: `<b>Alzheimer's disease, ${o.label.toLowerCase()}:</b> half of people live at least ${o.medianSurvival} more years after diagnosis (median survival; men and women alike). ${link(HC.alzheimers.url)}` });
+      marks.push({ age: null, muted: true, text: `<b>Alzheimer's disease, ${lcFirst(o.label)}:</b> half of people live at least ${o.medianSurvival} more years after diagnosis (median survival; men and women alike). ${link(HC.alzheimers.url)} ${NO_MARKER}` });
     }
     if (on.has('cancer')) {
       const picked = HC.cancer.types!.filter((t) => types.find((x) => x.value === t.id && x.checked && !x.disabled));
       if (!picked.length) marks.push({ age: null, muted: true, text: `<b>Cancer:</b> choose a cancer type.` });
       for (const t of picked) {
-        marks.push({ age: t.medianDeathAge, text: `<b>${t.label}:</b> 5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')}` });
+        marks.push({ age: null, muted: true, text: `<b>${t.label}:</b> 5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')} ${NO_MARKER}` });
       }
     }
     const shown = marks.filter((m): m is Extract<Marker, { age: number }> => m.age != null);
