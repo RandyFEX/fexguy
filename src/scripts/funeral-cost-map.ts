@@ -351,13 +351,15 @@ function renderSummary(state: string) {
   $<HTMLElement>('[data-fcm-sum-name]')!.textContent = state;
   const L = LIFE[state];
   const yrs = (v: number) => `${v.toFixed(1)} years`;
-  const fips = statePaths.states.find((x) => x.name === state)?.fips;
-  const abbr = fips ? ABBR_BY_FIPS[fips] : 'U.S.';
+  // V5.9: two sections (life expectancy at birth; years left at 65), Male and
+  // Female; the combined-population figures stay in the data, not shown.
+  const place = state === US ? 'the United States' : state;
   $<HTMLElement>('[data-fcm-sum-le]')!.innerHTML = L
-    ? // V5.8: four rows; the combined-population figures stay in the data, not shown.
-      row(`${state} Men`, yrs(L.male.birth)) + row(`${state} Women`, yrs(L.female.birth)) +
-      row(`${abbr} Men: Avg. Years Left to Live at 65`, yrs(L.male.age65)) + row(`${abbr} Women: Avg. Years Left to Live at 65`, yrs(L.female.age65))
+    ? row(`Male in ${place}`, yrs(L.male.birth)) + row(`Female in ${place}`, yrs(L.female.birth))
     : row('Life expectancy', 'Unavailable');
+  $<HTMLElement>('[data-fcm-sum-le65]')!.innerHTML = L
+    ? row(`Male in ${place}`, yrs(L.male.age65)) + row(`Female in ${place}`, yrs(L.female.age65))
+    : row('Years left at 65', 'Unavailable');
   const burial = estimate(state, 'burial');
   const crem = estimate(state, 'cremation');
   const dc = DIRECT[state];
@@ -468,7 +470,8 @@ function initDanger(getState: () => string) {
     if (!lx || birth == null) { chart.innerHTML = ''; sum.textContent = 'Life table not available for this selection.'; notesEl.innerHTML = ''; return; }
     // V5.3/V5.4 baseline: estimated life expectancy at birth for the selected sex.
     const avg = birth;
-    const who = `${state === US ? 'U.S.' : state} ${SEX_WORD[sex]}`;
+    // V5.9: Male / Female, as in the sex selector.
+    const who = `${sex === 'male' ? 'Male' : 'Female'} in ${state === US ? 'the United States' : state}`;
 
     // Markers from checked conditions (published figures only).
     type Marker = { age: number; text: string; muted?: false } | { age: null; text: string; muted: true };
@@ -521,7 +524,7 @@ function initDanger(getState: () => string) {
     // green before the zone.
     const earlier = shown.map((m) => m.age).filter((a) => a < avg);
     const start = earlier.length ? Math.max(50, Math.min(...earlier)) : null;
-    sum.innerHTML = `Estimated life expectancy at birth for ${who}: <strong>${fmtAge(avg)}</strong>. ` + (start != null
+    sum.innerHTML = `Estimated life expectancy at birth, ${who}: <strong>${fmtAge(avg)}</strong>. ` + (start != null
       ? `<span class="fcm-dz-key">Death Danger Zone</span>: <strong>${fmtAge(start)} to ${fmtAge(avg)}</strong>, from the earliest age linked to the selected condition${shown.length > 1 ? 's' : ''} up to that average.`
       : shown.length
         ? 'The selected figures fall after this average, so no Death Danger Zone is shown.'
@@ -546,7 +549,7 @@ function initDanger(getState: () => string) {
       return `<line x1="${mx}" y1="${T}" x2="${mx}" y2="${y(0)}" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="6 4"/><circle cx="${mx}" cy="${ty}" r="9" fill="#c2410c"/><text x="${mx}" y="${ty + 4}" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">${k + 1}</text>`;
     }).join('');
     const nearRight = x(avg) > W - R - 120;
-    const label = `Share of ${who} alive at 50 who are still living at each age. Estimated life expectancy at birth ${fmtAge(avg)}.${start != null ? ` Death Danger Zone ${fmtAge(start)} to ${fmtAge(avg)}.` : ''}${shown.length ? ` ${shown.length} condition marker${shown.length > 1 ? 's' : ''} shown.` : ''}`;
+    const label = `${who}: share of those alive at 50 who are still living at each age. Estimated life expectancy at birth ${fmtAge(avg)}.${start != null ? ` Death Danger Zone ${fmtAge(start)} to ${fmtAge(avg)}.` : ''}${shown.length ? ` ${shown.length} condition marker${shown.length > 1 ? 's' : ''} shown.` : ''}`;
     chart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">
       ${regions}
       ${ticksY}
