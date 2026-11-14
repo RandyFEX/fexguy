@@ -427,10 +427,11 @@ type Sex = 'male' | 'female';
 const SURV = survival.states as Record<string, Record<Sex, number[]>>;
 const AGE0 = survival.ages[0]; // lx arrays start at age 50
 type HcOpt = { id: string; label: string; yearsLost?: number; plusSmoking?: number; atAge?: number; medianSurvival?: number };
-type HcType = { id: string; label: string; survival5: number; localized5: number; medianDeathAge: number; sexes: string[]; url: string };
+type HcType = { id: string; label: string; survival5: number; localized5: number; medianDeathAge: number; sexes: string[]; url: string; yearsLost?: Partial<Record<Sex, number>>; yearsLostRange?: Partial<Record<Sex, [number, number]>> };
 type Hc = {
   label: string; options?: HcOpt[]; default?: string; sexes?: string[]; femalePending?: string; atAge?: number;
   measure?: string; note?: string; source?: string; url?: string; types?: HcType[];
+  lole?: { url: string; source: string };
   combined?: { with: string[]; atAge: number; yearsLost: Record<Sex, number>; source: string; url: string; studyCondition: string };
 };
 const HC = health.conditions as unknown as Record<string, Hc>;
@@ -509,7 +510,14 @@ function initDanger(getState: () => string) {
       const picked = HC.cancer.types!.filter((t) => types.find((x) => x.value === t.id && x.checked && !x.disabled));
       if (!picked.length) marks.push({ age: null, muted: true, text: `<b>Cancer:</b> choose a cancer type.` });
       for (const t of picked) {
-        marks.push({ age: null, muted: true, text: `<b>${t.label}:</b> 5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')} ${NO_MARKER}` });
+        // V5.11: published loss of life expectancy at diagnosis (years lost compared
+        // with the matched general population; Rahman et al. 2024). SEER survival
+        // and age at death stay as information.
+        const y = t.yearsLost?.[sex];
+        const rg = t.yearsLostRange?.[sex];
+        const seer = `5-year relative survival ${t.survival5}% (compared with people without this cancer; ${t.localized5}% when found before it spreads). Median age at death from this cancer, U.S.: ${t.medianDeathAge}. ${link(t.url, 'SEER')}`;
+        if (y != null) marks.push({ age: avg - y, text: `<b>${t.label}:</b> about ${y} fewer years of life for ${SEX_WORD[sex]} diagnosed at ages 50 to 89, compared with the general population (${rg ? `${rg[0]} to ${rg[1]} across area income groups; ` : ''}Australia, diagnosed 2001 to 2019). ${link(HC.cancer.lole?.url)}. ${seer}` });
+        else marks.push({ age: null, muted: true, text: `<b>${t.label}:</b> ${seer} ${NO_MARKER}` });
       }
     }
     // V5.10 guard: a condition is never shown as extending life expectancy. Only

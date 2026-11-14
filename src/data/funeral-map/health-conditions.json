@@ -149,7 +149,21 @@
             "male",
             "female"
           ],
-          "url": "https://seer.cancer.gov/statfacts/html/lungb.html"
+          "url": "https://seer.cancer.gov/statfacts/html/lungb.html",
+          "yearsLost": {
+            "male": 15.2,
+            "female": 12.5
+          },
+          "yearsLostRange": {
+            "male": [
+              14.9,
+              15.3
+            ],
+            "female": [
+              12.3,
+              12.5
+            ]
+          }
         },
         {
           "id": "colorectal",
@@ -161,7 +175,21 @@
             "male",
             "female"
           ],
-          "url": "https://seer.cancer.gov/statfacts/html/colorect.html"
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "yearsLost": {
+            "male": 6.2,
+            "female": 4.7
+          },
+          "yearsLostRange": {
+            "male": [
+              5.8,
+              6.9
+            ],
+            "female": [
+              4.5,
+              5.0
+            ]
+          }
         },
         {
           "id": "pancreatic",
@@ -173,7 +201,21 @@
             "male",
             "female"
           ],
-          "url": "https://seer.cancer.gov/statfacts/html/pancreas.html"
+          "url": "https://seer.cancer.gov/statfacts/html/pancreas.html",
+          "yearsLost": {
+            "male": 16.3,
+            "female": 14.1
+          },
+          "yearsLostRange": {
+            "male": [
+              16.2,
+              16.5
+            ],
+            "female": [
+              14.1,
+              14.2
+            ]
+          }
         },
         {
           "id": "breast",
@@ -184,7 +226,16 @@
           "sexes": [
             "female"
           ],
-          "url": "https://seer.cancer.gov/statfacts/html/breast.html"
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html",
+          "yearsLost": {
+            "female": 1.4
+          },
+          "yearsLostRange": {
+            "female": [
+              1.2,
+              1.6
+            ]
+          }
         },
         {
           "id": "prostate",
@@ -195,9 +246,27 @@
           "sexes": [
             "male"
           ],
-          "url": "https://seer.cancer.gov/statfacts/html/prost.html"
+          "url": "https://seer.cancer.gov/statfacts/html/prost.html",
+          "yearsLost": {
+            "male": 2.2
+          },
+          "yearsLostRange": {
+            "male": [
+              1.6,
+              2.9
+            ]
+          }
         }
-      ]
+      ],
+      "lole": {
+        "measure": "Average loss of life expectancy at diagnosis: the life expectancy of people diagnosed at ages 50 to 89 compared with people of the same sex, age and calendar year in the general population (New South Wales, Australia, diagnosed 2001 to 2019, followed to 2020).",
+        "group": "Middle area-level socioeconomic group (about 57% of patients); the range covers the most and least disadvantaged groups.",
+        "source": "Rahman MM, David M, Goldsbury D, Canfell K, Kou K, Dasgupta P, Baade P, Yu XQ. Impact of cancer diagnosis on life expectancy by area-level socioeconomic groups in New South Wales, Australia: a population-based study. Cancer Biol Med. 2024;21(8):692-702",
+        "pmid": "39037292",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11359496/",
+        "definition": "The LOLE is defined as the difference between the life expectancy of patients with cancer and the life expectancy of comparable individuals from the general population matched by gender, age, and calendar year.",
+        "notAvailable": "Figures by stage and by single age at diagnosis appear only in the study's charts, not as published numbers, so they are not used."
+      }
     }
   }
 }

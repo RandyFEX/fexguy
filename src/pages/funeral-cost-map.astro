@@ -486,8 +486,8 @@ const jsonLd = [
           are still living at each age. The baseline is the life expectancy at birth for men or women. The Death Danger
           Zone runs from the earliest age linked to a selected condition (the baseline minus a published number of years
           of life lost compared with people without the condition) up to the baseline. Figures are never added together.
-          Alzheimer's survival after diagnosis and cancer survival and age at death are shown as information only: they
-          are not years of life lost, so they are not placed on the graph.
+          Alzheimer's survival after diagnosis and cancer 5-year survival and age at death are shown as information only:
+          they are not years of life lost, so they are not placed on the graph.
         </li>
         <li>
           <strong>Health Conditions:</strong> only published figures, each placed against the state's average for
@@ -499,8 +499,11 @@ const jsonLd = [
           Heart disease with diabetes: {health.conditions.heart.combined.source}.{' '}
           <a href={health.conditions.heart.combined.url} rel="noopener">Full text</a>. A figure for heart disease alone is
           still being researched, so none is shown. COPD figures are for men; figures for women are still being researched.
-          Cancer: 5-year relative survival from SEER 8 areas for people diagnosed 2016 to 2022 and median age at death
-          from the cancer, U.S. 2020 to 2024 ({health.conditions.cancer.source}:{' '}
+          Cancer markers: average loss of life expectancy for people diagnosed at ages 50 to 89 compared with the
+          matched general population, by sex, middle area income group ({health.conditions.cancer.lole.source}.{' '}
+          <a href={health.conditions.cancer.lole.url} rel="noopener">Full text</a>); figures by stage are not published
+          as numbers, so none are used. Cancer information: 5-year relative survival from SEER 8 areas for people
+          diagnosed 2016 to 2022 and median age at death from the cancer, U.S. 2020 to 2024 ({health.conditions.cancer.source}:{' '}
           {health.conditions.cancer.types.map((t, i) => <>{i ? ', ' : ''}<a href={t.url} rel="noopener">{t.label}</a></>)}). Retrieved {health.retrieved}.
         </li>
         <li><strong>Map:</strong> {paths.source}.</li>
