@@ -1,0 +1,272 @@
+{
+  "_about": "Published, verified figures for the /funeral-cost-map/ Danger Zone overlays (V5.2, November 2026). Every number was read from the cited source on the retrieved date; nothing is estimated here. A condition with no verified single-condition figure has none and its overlay stays disabled. Combined figures exist only where one study published them; no other combinations are calculated or added together.",
+  "retrieved": "2026-11-14",
+  "conditions": {
+    "heart": {
+      "label": "Heart Disease",
+      "singleFigure": null,
+      "pending": "A verified single-condition figure is still being researched. The study below publishes its heart attack (myocardial infarction) only results in a supplement table we could not access.",
+      "combined": {
+        "with": [
+          "diabetes"
+        ],
+        "studyCondition": "A history of heart attack (myocardial infarction) together with diabetes (any 2 of diabetes, stroke and heart attack)",
+        "atAge": 60,
+        "yearsLost": {
+          "male": 12,
+          "female": 13
+        },
+        "allThree": {
+          "male": 14,
+          "female": 16
+        },
+        "source": "Emerging Risk Factors Collaboration. Association of Cardiometabolic Multimorbidity With Mortality. JAMA. 2015;314(1):52-60",
+        "pmid": "26151266",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4664176/",
+        "quote": "We estimated that at the age of 60 years, men with any 2 of the cardiometabolic conditions we studied would on average have 12 years of reduced life expectancy, and men with all 3 conditions would have 14 years of reduced life expectancy. For women at the age of 60 years, the corresponding estimates were 13 years and 16 years of life lost.",
+        "method": "Hazard ratios for death from the Emerging Risk Factors Collaboration applied to U.S. death rates (CDC)."
+      }
+    },
+    "diabetes": {
+      "label": "Diabetes",
+      "options": [
+        {
+          "id": "50",
+          "label": "Diagnosed at 50",
+          "yearsLost": 6
+        },
+        {
+          "id": "40",
+          "label": "Diagnosed at 40",
+          "yearsLost": 10
+        },
+        {
+          "id": "30",
+          "label": "Diagnosed at 30",
+          "yearsLost": 14
+        }
+      ],
+      "default": "50",
+      "sexes": [
+        "male",
+        "female"
+      ],
+      "measure": "Average years of life lost by a 50-year-old with type 2 diabetes compared with a 50-year-old without diabetes, U.S. death rates",
+      "note": "Each decade later at diagnosis is associated with about 3 to 4 fewer years lost.",
+      "source": "Emerging Risk Factors Collaboration. Life expectancy associated with different ages at diagnosis of type 2 diabetes in high-income countries. Lancet Diabetes Endocrinol. 2023;11(10):731-742",
+      "pmid": "37708900",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37708900/",
+      "quote": "Using death rates from the USA, a 50-year-old individual with diabetes died on average 14 years earlier when diagnosed aged 30 years, 10 years earlier when diagnosed aged 40 years, or 6 years earlier when diagnosed aged 50 years than an individual without diabetes."
+    },
+    "copd": {
+      "label": "COPD",
+      "options": [
+        {
+          "id": "current-2",
+          "label": "Current smoker, moderate (GOLD stage 2)",
+          "yearsLost": 2.2,
+          "plusSmoking": 3.5
+        },
+        {
+          "id": "current-34",
+          "label": "Current smoker, severe (GOLD stage 3 or 4)",
+          "yearsLost": 5.8,
+          "plusSmoking": 3.5
+        },
+        {
+          "id": "former-2",
+          "label": "Former smoker, moderate (GOLD stage 2)",
+          "yearsLost": 1.4
+        },
+        {
+          "id": "former-34",
+          "label": "Former smoker, severe (GOLD stage 3 or 4)",
+          "yearsLost": 5.6
+        },
+        {
+          "id": "never-2",
+          "label": "Never smoked, moderate (GOLD stage 2)",
+          "yearsLost": 0.7
+        },
+        {
+          "id": "never-34",
+          "label": "Never smoked, severe (GOLD stage 3 or 4)",
+          "yearsLost": 1.3
+        }
+      ],
+      "default": "former-2",
+      "sexes": [
+        "male"
+      ],
+      "femalePending": "The study's published summary gives these figures for men; figures for women are still being researched.",
+      "atAge": 65,
+      "measure": "Reduction in life expectancy at age 65 for men with COPD, compared with men without COPD of the same smoking status",
+      "note": "For current smokers, these years are in addition to the 3.5 years lost due to smoking.",
+      "source": "Shavelle RM, et al. Life expectancy and years of life lost in chronic obstructive pulmonary disease: findings from the NHANES III Follow-up Study. Int J Chron Obstruct Pulmon Dis. 2009;4:137-148",
+      "pmid": "19436692",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19436692/",
+      "quote": "At age 65, the reductions in male life expectancy for stage 1, stage 2, and stages 3 or 4 disease in current smokers are 0.3 years, 2.2 years, and 5.8 years. These are in addition to the 3.5 years lost due to smoking. In former smokers the reductions are 1.4 years and 5.6 years for stage 2 and stages 3 or 4 disease, and in never smokers they are 0.7 and 1.3 years."
+    },
+    "alzheimers": {
+      "label": "Alzheimer's Disease",
+      "options": [
+        {
+          "id": "65",
+          "label": "Diagnosed at 65",
+          "atAge": 65,
+          "medianSurvival": 8.3
+        },
+        {
+          "id": "90",
+          "label": "Diagnosed at 90",
+          "atAge": 90,
+          "medianSurvival": 3.4
+        }
+      ],
+      "default": "65",
+      "sexes": [
+        "male",
+        "female"
+      ],
+      "measure": "Median survival after diagnosis (half of people live longer, half shorter); no significant difference between men and women",
+      "source": "Brookmeyer R, Corrada MM, Curriero FC, Kawas C. Survival following a diagnosis of Alzheimer disease. Arch Neurol. 2002;59(11):1764-1767",
+      "pmid": "12433264",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12433264/",
+      "quote": "The median survival times ranged from 8.3 years for persons diagnosed as having AD at age 65 years to 3.4 years for persons diagnosed as having AD at age 90 years. There were no significant differences between men and women in survival after having a diagnosis of AD."
+    },
+    "cancer": {
+      "label": "Cancer by Type",
+      "measure": "5-year relative survival (SEER 8 areas, people diagnosed 2016 to 2022) and median age at death from the cancer (U.S., 2020 to 2024)",
+      "source": "National Cancer Institute, SEER Cancer Stat Facts",
+      "types": [
+        {
+          "id": "lung",
+          "label": "Lung cancer",
+          "survival5": 29.5,
+          "localized5": 65.5,
+          "medianDeathAge": 73,
+          "sexes": [
+            "male",
+            "female"
+          ],
+          "url": "https://seer.cancer.gov/statfacts/html/lungb.html",
+          "yearsLost": {
+            "male": 15.2,
+            "female": 12.5
+          },
+          "yearsLostRange": {
+            "male": [
+              14.9,
+              15.3
+            ],
+            "female": [
+              12.3,
+              12.5
+            ]
+          }
+        },
+        {
+          "id": "colorectal",
+          "label": "Colorectal cancer",
+          "survival5": 65.4,
+          "localized5": 91.3,
+          "medianDeathAge": 72,
+          "sexes": [
+            "male",
+            "female"
+          ],
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "yearsLost": {
+            "male": 6.2,
+            "female": 4.7
+          },
+          "yearsLostRange": {
+            "male": [
+              5.8,
+              6.9
+            ],
+            "female": [
+              4.5,
+              5.0
+            ]
+          }
+        },
+        {
+          "id": "pancreatic",
+          "label": "Pancreatic cancer",
+          "survival5": 13.7,
+          "localized5": 43.6,
+          "medianDeathAge": 73,
+          "sexes": [
+            "male",
+            "female"
+          ],
+          "url": "https://seer.cancer.gov/statfacts/html/pancreas.html",
+          "yearsLost": {
+            "male": 16.3,
+            "female": 14.1
+          },
+          "yearsLostRange": {
+            "male": [
+              16.2,
+              16.5
+            ],
+            "female": [
+              14.1,
+              14.2
+            ]
+          }
+        },
+        {
+          "id": "breast",
+          "label": "Breast cancer (women)",
+          "survival5": 91.9,
+          "localized5": 100.0,
+          "medianDeathAge": 71,
+          "sexes": [
+            "female"
+          ],
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html",
+          "yearsLost": {
+            "female": 1.4
+          },
+          "yearsLostRange": {
+            "female": [
+              1.2,
+              1.6
+            ]
+          }
+        },
+        {
+          "id": "prostate",
+          "label": "Prostate cancer (men)",
+          "survival5": 98.2,
+          "localized5": 100.0,
+          "medianDeathAge": 79,
+          "sexes": [
+            "male"
+          ],
+          "url": "https://seer.cancer.gov/statfacts/html/prost.html",
+          "yearsLost": {
+            "male": 2.2
+          },
+          "yearsLostRange": {
+            "male": [
+              1.6,
+              2.9
+            ]
+          }
+        }
+      ],
+      "lole": {
+        "measure": "Average loss of life expectancy at diagnosis: the life expectancy of people diagnosed at ages 50 to 89 compared with people of the same sex, age and calendar year in the general population (New South Wales, Australia, diagnosed 2001 to 2019, followed to 2020).",
+        "group": "Middle area-level socioeconomic group (about 57% of patients); the range covers the most and least disadvantaged groups.",
+        "source": "Rahman MM, David M, Goldsbury D, Canfell K, Kou K, Dasgupta P, Baade P, Yu XQ. Impact of cancer diagnosis on life expectancy by area-level socioeconomic groups in New South Wales, Australia: a population-based study. Cancer Biol Med. 2024;21(8):692-702",
+        "pmid": "39037292",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11359496/",
+        "definition": "The LOLE is defined as the difference between the life expectancy of patients with cancer and the life expectancy of comparable individuals from the general population matched by gender, age, and calendar year.",
+        "notAvailable": "Figures by stage and by single age at diagnosis appear only in the study's charts, not as published numbers, so they are not used."
+      }
+    }
+  }
+}
