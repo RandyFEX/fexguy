@@ -1,0 +1,231 @@
+{
+  "id": "white-sands",
+  "name": "White Sands National Park",
+  "short": "White Sands",
+  "state": "New Mexico",
+  "states": [
+    "New Mexico"
+  ],
+  "tagline": "Wave after wave of gleaming white gypsum under a wide desert sky.",
+  "photo": {
+    "src": "/images/last-adventure/white-sands/park.jpg",
+    "srcWebp": "/images/last-adventure/white-sands/park.webp",
+    "alt": "The sun sets behind distant mountains beyond white gypsum dunes and desert shrubs",
+    "credit": "dconvertini",
+    "license": {
+      "name": "CC BY-SA 2.0",
+      "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Sands_National_Park,_New_Mexico,_USA_5-2024_37.jpg",
+    "caption": "Sunset over the dunefield"
+  },
+  "intro": "In southern New Mexico, the world's largest gypsum dunefield rolls toward the mountains in soft white waves. Dunes Drive leads into the heart of the dunes, with a fully accessible boardwalk, short nature trails and a long trek beside the remnant of an ancient lake. The park calls the dunefield a serene and beautiful place that has touched many hearts, and it welcomes families who wish to scatter a loved one's ashes on the sand with a permit.",
+  "homepage": "https://www.nps.gov/whsa/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/whsa/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Park map (PDF)",
+      "url": "https://www.nps.gov/whsa/planyourvisit/upload/WHSA_Unigrid_2022.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a permit, at least 100 yards from any trail, road, developed facility or body of water, outside the areas the park excludes.",
+  "scatterFacts": [
+    "Permit required from the superintendent before any scattering. Email the completed special use permit application to whsa_permits@nps.gov with \"scattering of ashes permit\" in the subject line.",
+    "Fee: pay the application fee by credit card by phone at 575-479-6124 ext. 206; processing begins only after payment. The park's fee table lists $100 for other special use permits, and additional fees may apply.",
+    "Remains must be cremated and finely reduced (pulverized). On the ground, at least 100 yards (91.5 m) from any trail, road, developed facility or body of water.",
+    "Not allowed: south of Dunes Drive from the Dune Life Nature Trail to Roadrunner Picnic Area, along Big Pedestal Road from park headquarters to the end, in the Backcountry Camping Area, or within one mile of the visitor center and headquarters complex.",
+    "Remains must not be distinguishable to the public or left in any container; containers must be removed. The permit is valid only for the date of your memorial.",
+    "A memorial service or honor guard needs details in the application (guests, music, chairs and similar). Missile tests can close the park: call two weeks before, the day before and the day of your memorial."
+  ],
+  "scatterLink": [
+    {
+      "label": "Scattering of ashes (NPS)",
+      "url": "https://www.nps.gov/whsa/planyourvisit/scatterashes.htm"
+    },
+    {
+      "label": "Special use permit application (PDF)",
+      "url": "https://www.nps.gov/whsa/planyourvisit/upload/NPS-10-930s-Application-for-SUP-Short-Form-No-Hunting-2024-OMB-Approved-1.pdf"
+    }
+  ],
+  "beforeYouGo": "The entrance and visitor center are on US 70 between mile markers 199 and 200, about 15 miles west of Alamogordo and 52 miles east of Las Cruces; fill up on fuel in one of those towns. The park is open daily except Thanksgiving and Christmas, with hours that vary by season. Dunes Drive runs 8 miles into the dunefield (the last 3 miles are hard-packed gypsum). Missile tests on the neighboring White Sands Missile Range can close the road and US 70 for up to three hours, so check the park closure page the day before. The park advises against starting a hike at 85°F or above.",
+  "destinations": [
+    {
+      "id": "interdune-boardwalk",
+      "name": "Interdune Boardwalk",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/white-sands/interdune-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/white-sands/interdune-boardwalk.webp",
+        "alt": "A visitor walking down the Interdune Boardwalk",
+        "credit": "NPS Photo"
+      },
+      "description": "A raised boardwalk carries everyone out between the dunes, wheelchairs and strollers included, so no one has to stay behind. Along the way there are benches, a shade canopy and signs about the plants, lizards and birds that make this white world their home. Listen for bird calls, look for wildflowers, and stop under the canopy to rest together. It is a gentle, unhurried walk, and a good first place to sit side by side and let the stillness of the dunes do the talking.",
+      "plan": {
+        "distance": "0.4 mi round trip",
+        "difficulty": "Easy",
+        "time": "About 20 minutes",
+        "accessibility": "Fully accessible for wheelchairs and strollers (NPS); benches and a shade canopy; two vault toilets at the trailhead",
+        "scattering": "Permit required, at least 100 yards from trails, roads and water"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 70 to the visitor center, then 4.5 miles along Dunes Drive to the Interdune Boardwalk parking area.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 32.79359,
+            "lon": -106.23933
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Boardwalk",
+          "lat": 32.79515,
+          "lon": -106.23881
+        }
+      ],
+      "scatterNote": {
+        "text": "The boardwalk is a trail, so it cannot be the scattering spot. Propose a location in your permit application that is at least 100 yards from any trail, road, developed facility or water and outside the park's excluded areas."
+      },
+      "links": [
+        {
+          "label": "Interdune Boardwalk",
+          "url": "https://www.nps.gov/places/interdune-boardwalk.htm"
+        }
+      ]
+    },
+    {
+      "id": "dune-life-nature-trail",
+      "name": "Dune Life Nature Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/white-sands/dune-life-nature-trail.jpg",
+        "srcWebp": "/images/last-adventure/white-sands/dune-life-nature-trail.webp",
+        "alt": "Dunes Drive and the Dune Life Nature Trail area, with sand dunes and mountains beyond",
+        "credit": "Pablorgalindo",
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_Drive_and_Dune_Life_Nature_Trail_April_2026.jpg"
+      },
+      "description": "This family-friendly loop climbs two steep dunes of loose sand, and the children may race to the top while the grown-ups take their time. Signs along the way follow Katie the Kit Fox and her friends, and the sand is a good place to look for the tracks of the kit foxes, badgers, birds, rodents and reptiles that live here. It is a playful, hands-on hour together, the kind of outing your loved one might have enjoyed sharing with the grandchildren.",
+      "plan": {
+        "distance": "1 mi loop",
+        "difficulty": "Moderate",
+        "time": "About 1 hour",
+        "accessibility": "Two steep dunes with loose sand; not wheelchair accessible. Two vault toilets at the trailhead.",
+        "scattering": "Not on this trail or south of Dunes Drive here"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 70 to the visitor center, then 2.5 miles along Dunes Drive to the Dune Life Nature Trail parking area.",
+        "points": [
+          {
+            "label": "Parking",
+            "lat": 32.7937,
+            "lon": -106.21259
+          }
+        ]
+      },
+      "trail": {
+        "name": "Dune Life Nature Trail (loop)",
+        "steps": [
+          "Follow the blue trail markers with a club symbol around the loop."
+        ],
+        "notes": [
+          "Learn the marker color and symbol before you start: it will help if you become lost."
+        ]
+      },
+      "final": [
+        {
+          "label": "On the trail loop",
+          "lat": 32.78872,
+          "lon": -106.21327
+        }
+      ],
+      "scatterNote": {
+        "text": "Scattering is not allowed on the trail, and the park excludes the area south of Dunes Drive from this trail to Roadrunner Picnic Area. Propose a location in your permit application that is at least 100 yards from any trail, road, developed facility or water and outside the park's excluded areas."
+      },
+      "links": [
+        {
+          "label": "Dune Life Nature Trail",
+          "url": "https://www.nps.gov/places/dune-life-nature-trail.htm"
+        }
+      ]
+    },
+    {
+      "id": "alkali-flat-trail",
+      "name": "Alkali Flat Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/white-sands/alkali-flat-trail.jpg",
+        "srcWebp": "/images/last-adventure/white-sands/alkali-flat-trail.webp",
+        "alt": "Panorama of white dunes along the Alkali Flat Trail",
+        "credit": "Footwarrior",
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alkali_Flats_Trail_White_Sands_National_Monument.jpg"
+      },
+      "description": "The park's most strenuous trail heads out across the dunefield, up and down dune after dune, along the edge of Alkali Flat, the final remnant of ancient Lake Otero. Red markers guide the way across a landscape of white sand and open sky, with no shade and few people. For a family ready for real effort, it is a pilgrimage: a long morning of walking together, carrying someone you love to one of the quietest places you will ever stand.",
+      "plan": {
+        "distance": "5 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "About 3 hours",
+        "accessibility": "Up and down dunes the entire way; no shade, water or toilets along the trail. Two vault toilets at the trailhead.",
+        "bestTime": "Cool mornings; the park advises against starting a hike at 85°F or above",
+        "scattering": "Permit required, at least 100 yards from trails, roads and water"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 70 to the visitor center, then Dunes Drive about 7 miles to the Alkali Flat Trailhead.",
+        "points": [
+          {
+            "label": "Alkali Flat Trailhead",
+            "lat": 32.82046,
+            "lon": -106.273
+          }
+        ]
+      },
+      "trail": {
+        "name": "Alkali Flat Trail (loop)",
+        "steps": [
+          "Follow the red trail markers with a diamond symbol around the loop, which skirts the edge of Alkali Flat."
+        ],
+        "notes": [
+          "This trail is not flat: you hike up and down dunes the entire way. Go only if you are prepared.",
+          "Carry plenty of water. Learn the marker color and symbol before you start."
+        ]
+      },
+      "final": [
+        {
+          "label": "On the trail loop",
+          "lat": 32.82358,
+          "lon": -106.29035
+        }
+      ],
+      "scatterNote": {
+        "text": "The trail itself cannot be the scattering spot, and the Backcountry Camping Area is excluded. Propose a location in your permit application that is at least 100 yards from any trail, road, developed facility or water and outside the park's excluded areas."
+      },
+      "links": [
+        {
+          "label": "Alkali Flat Trail",
+          "url": "https://www.nps.gov/places/alkali-flat-trail.htm"
+        }
+      ]
+    }
+  ]
+}
