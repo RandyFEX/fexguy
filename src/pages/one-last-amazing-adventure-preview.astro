@@ -5,7 +5,7 @@
 // an X-Robots-Tag header in vercel.json), out of the sitemap, llms.txt and
 // site search, never linked from the site, and not merged to production.
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { parks, states, mapsUrl, type Point, type Photo } from '@/data/last-adventure/parks';
+import { parks, states, parkOrder, parkStates, stateId, mapsUrl, type Point, type Photo } from '@/data/last-adventure/parks';
 
 const total = parks.reduce((n, p) => n + p.destinations.length, 0);
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -97,9 +97,8 @@ const difficultyRange = (text: string): [number, number] => {
         <p class="ola-browse__status" aria-live="polite" data-ola-status>Showing all {parks.length} parks in this guide.</p>
         <ul class="ola-cards">
           {
-            states.flatMap((s) =>
-              s.parks.map((p) => (
-                <li class="ola-card" data-state={s.id}>
+            parkOrder.map((p) => (
+                <li class="ola-card" data-states={parkStates(p).map(stateId).join(' ')}>
                   <a href={`#${p.id}`} class="ola-card__link">
                     <span class="ola-card__img">
                       <img src={p.photo.src} alt={p.photo.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
@@ -110,25 +109,25 @@ const difficultyRange = (text: string): [number, number] => {
                       <span class="ola-card__tag">{p.tagline}</span>
                       <span class="ola-card__meta">
                         {p.destinations.length} destinations
-                        <span class={`ola-pill ${p.scatterAllowed === 'Prohibited' ? 'ola-pill--no' : 'ola-pill--yes'}`}>
-                          Scattering: {p.scatterAllowed === 'Prohibited' ? 'Prohibited' : 'Permitted with conditions'}
+                        <span class={`ola-pill ${p.scatterAllowed === 'Prohibited' ? 'ola-pill--no' : p.scatterAllowed === 'Unconfirmed' ? 'ola-pill--check' : 'ola-pill--yes'}`}>
+                          Scattering: {p.scatterAllowed === 'Prohibited' ? 'Prohibited' : p.scatterAllowed === 'Unconfirmed' ? 'Check with the park' : 'Permitted with conditions'}
                         </span>
                       </span>
                       <span class="ola-card__cta">Explore Destinations</span>
                     </span>
                   </a>
                 </li>
-              )),
-            )
+              ))
           }
         </ul>
-        <p class="ola-credit">Photos: {parks.map((p) => `${p.short}, ${credit(p.photo)}`).join('; ')}.</p>
+        <p class="ola-credit">Photos: {parkOrder.map((p) => `${p.short}, ${credit(p.photo)}${p.photo.license ? ` (${p.photo.license.name})` : ''}`).join('; ')}.</p>
       </div>
     </section>
 
     {
-      states.map((s) =>
-        s.parks.map((p) => (
+      parkOrder.map((p) => {
+        const s = states.find((x) => x.state === parkStates(p)[0])!;
+        return (
           <section class="ola-park" id={p.id} aria-labelledby={`${p.id}-title`}>
             <div class="ola-wrap">
               <nav class="ola-statenav" aria-label={`National parks in ${s.state}`}>
@@ -147,7 +146,10 @@ const difficultyRange = (text: string): [number, number] => {
 
               <figure class="ola-park__hero">
                 <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
-                <figcaption class="ola-credit">{p.photo.caption}. Photo: {p.photo.credit}</figcaption>
+                <figcaption class="ola-credit">
+                  {p.photo.caption}. Photo: {p.photo.sourceUrl ? <a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}
+                  {p.photo.license && <>, <a href={p.photo.license.url} rel="noopener license" target="_blank">{p.photo.license.name}</a></>}
+                </figcaption>
               </figure>
 
               <div class="ola-park__head">
@@ -313,8 +315,8 @@ const difficultyRange = (text: string): [number, number] => {
               ))}
             </div>
           </section>
-        )),
-      )
+        );
+      })
     }
 
     <footer class="ola-wrap ola-foot">
@@ -348,7 +350,8 @@ const difficultyRange = (text: string): [number, number] => {
       const visibleStates = new Set(stateBtns.filter((b) => !b.hidden).map((b) => b.dataset.state));
       let shown = 0;
       cards.forEach((c) => {
-        const show = state ? c.dataset.state === state : visibleStates.has(c.dataset.state);
+        const cs = (c.dataset.states || '').split(' ');
+        const show = state ? cs.includes(state) : cs.some((x) => visibleStates.has(x));
         c.hidden = !show;
         if (show) shown++;
       });
@@ -639,6 +642,10 @@ const difficultyRange = (text: string): [number, number] => {
   .ola-pill--yes {
     background: #dcebdc;
     color: #1d4d2b;
+  }
+  .ola-pill--check {
+    background: #ececec;
+    color: #3d4442;
   }
   .ola-pill--no {
     background: #f7e1dc;

@@ -31,7 +31,7 @@ export interface Link {
   url: string;
 }
 
-export type ScatterStatus = 'permitted' | 'not-here' | 'park-decision' | 'letter' | 'prohibited';
+export type ScatterStatus = 'permitted' | 'not-here' | 'park-decision' | 'letter' | 'prohibited' | 'unconfirmed';
 
 export interface Destination {
   id: string;
@@ -60,13 +60,16 @@ export interface Park {
   id: string;
   name: string;
   short: string;
+  /** Display label, e.g. 'Utah' or 'Wyoming, Montana and Idaho'. */
   state: string;
+  /** Every state or territory the park lies in (primary first); defaults to [state]. */
+  states?: string[];
   tagline: string;
   photo: Photo;
   intro: string;
   homepage: string;
   map: Link[];
-  scatterAllowed: 'Permitted with a permit' | 'Permitted with a permission letter' | 'Prohibited';
+  scatterAllowed: 'Permitted with a permit' | 'Permitted with a permission letter' | 'Prohibited' | 'Unconfirmed';
   scatterSummary: string;
   scatterFacts: string[];
   /** Extra explanatory paragraphs shown in the scattering panel. */
@@ -98,7 +101,7 @@ const paradiseRoadside: Point[] = [
   { label: 'Inspiration Point (roadside)', lat: 46.77338, lon: -121.74431, source: 'nps' },
 ];
 
-export const parks: Park[] = [
+const pilotParks: Park[] = [
   {
     id: 'canyonlands',
     name: 'Canyonlands National Park',
@@ -1041,11 +1044,27 @@ export const parks: Park[] = [
   },
 ];
 
-/** Parks grouped by state, states and parks alphabetized. */
-export const states = [...new Set(parks.map((p) => p.state))]
+// Version 3.0: the other 58 parks live one per JSON file in ./parks/ (same
+// shape as Park; photos stored locally under public/images/last-adventure/).
+const researched = Object.values(
+  import.meta.glob<Park>('./parks/*.json', { eager: true, import: 'default' }),
+);
+
+export const parks: Park[] = [...pilotParks, ...researched];
+
+export const parkStates = (p: Park) => p.states ?? [p.state];
+export const stateId = (state: string) => state.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+/** Parks grouped by state, states and parks alphabetized; a multi-state park is listed under each of its states. */
+export const states = [...new Set(parks.flatMap(parkStates))]
   .sort((a, b) => a.localeCompare(b))
   .map((state) => ({
     state,
-    id: state.toLowerCase().replace(/\s+/g, '-'),
-    parks: parks.filter((p) => p.state === state).sort((a, b) => a.short.localeCompare(b.short)),
+    id: stateId(state),
+    parks: parks.filter((p) => parkStates(p).includes(state)).sort((a, b) => a.short.localeCompare(b.short)),
   }));
+
+/** Each park once, ordered by its primary state, then name. */
+export const parkOrder = [...parks].sort(
+  (a, b) => parkStates(a)[0].localeCompare(parkStates(b)[0]) || a.short.localeCompare(b.short),
+);
