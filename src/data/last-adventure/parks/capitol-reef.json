@@ -1,0 +1,192 @@
+{
+  "id": "capitol-reef",
+  "name": "Capitol Reef National Park",
+  "short": "Capitol Reef",
+  "state": "Utah",
+  "states": ["Utah"],
+  "tagline": "Sandstone cliffs, white domes and pioneer orchards along the Waterpocket Fold.",
+  "photo": {
+    "src": "/images/last-adventure/capitol-reef/park.jpg",
+    "srcWebp": "/images/last-adventure/capitol-reef/park.webp",
+    "alt": "Wingate Sandstone cliffs behind a historic barn and farmhouse",
+    "credit": "NPS Photo",
+    "caption": "Wingate Sandstone above the historic farms of Fruita"
+  },
+  "intro": "Capitol Reef follows the Waterpocket Fold, a 100-mile wrinkle in the earth where layer upon layer of colored rock tilts toward the sky. Pioneer orchards still grow in the green valley of Fruita beneath towering cliffs, and short trails lead to natural bridges, narrow canyons and names carved by early travelers. A family can scatter ashes here with a permit, at a location they propose and the park approves.",
+  "homepage": "https://www.nps.gov/care/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/care/planyourvisit/maps.htm" },
+    { "label": "Fruita area map and guide (PDF)", "url": "https://www.nps.gov/care/planyourvisit/upload/Fruita-Area-Map-and-Guide.pdf" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Spreading human ashes requires a special use permit; you propose a location on the application and the park decides whether to approve it.",
+  "scatterFacts": [
+    "Permit: Special Use Permit Application for Scattering of Ashes (NPS Form 10-930s). Non-refundable application fee: $25, payable through Pay.gov or by check.",
+    "Email the completed application to care_commercialservices@nps.gov at least three weeks in advance. Applications may not be submitted more than one year ahead.",
+    "The application asks for a preferred and alternate location, date and time. The park does not publish designated scattering areas or location conditions; it evaluates each request and may approve or deny it.",
+    "The application itself is not permission to scatter. A permit may require cost recovery charges and proof of liability insurance."
+  ],
+  "scatterLink": [
+    { "label": "Other special uses, including ashes (NPS)", "url": "https://www.nps.gov/care/planyourvisit/other-special-uses.htm" },
+    { "label": "Ash scattering application (PDF)", "url": "https://www.nps.gov/care/planyourvisit/upload/NPS-10-930s-Application-for-SUP-Short-Form-No-Hunting-2024-OMB-Approved-Ash-Scattering-3.pdf" },
+    { "label": "Special use permits (NPS)", "url": "https://www.nps.gov/care/planyourvisit/special-use-permits.htm" }
+  ],
+  "beforeYouGo": "The park is open all year; the visitor center sits in the center of the park off Utah Highway 24 (from I-70, take exit 149 and follow SR-24 through Hanksville). Some roads may close for snow or other bad weather. The 7.9-mile Scenic Drive is paved; its dirt spurs into Grand Wash and Capitol Gorge are usually fine for cars and RVs up to 27 feet, but all three can close for snow, ice, mud and flash floods. Many trailhead lots fill by 9 am, and trails start around 5,000 feet.",
+  "destinations": [
+    {
+      "id": "panorama-point-goosenecks",
+      "name": "Panorama Point and the Goosenecks",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/capitol-reef/panorama-point-goosenecks.jpg",
+        "srcWebp": "/images/last-adventure/capitol-reef/panorama-point-goosenecks.webp",
+        "alt": "Juniper trees dot the foreground, with distant red-brown cliffs and colorful cloudy sky at sunset",
+        "credit": "NPS / Emily Van Ness"
+      },
+      "description": "Just off the highway, a very brief walk from the car opens a 360-degree view of huge sandstone cliffs, and the park notes the colors grow especially vivid as sunset approaches. A short spur road beyond leads to the Goosenecks, where the canyon views turn dramatic, and to an easy path out to Sunset Point. Stay for the evening light together, and then for the stars: this high point gives stargazers an excellent view of the night sky.",
+      "plan": {
+        "distance": "Panorama Point: very brief walk from parking. Goosenecks 0.1 mi one way; Sunset Point 0.4 mi one way",
+        "difficulty": "Easy",
+        "accessibility": "Panorama Point is a roadside overlook; trail surfaces to the Goosenecks and Sunset Point are uneven ground but fairly level (NPS rating for Easy)",
+        "bestTime": "Sunset",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Utah Highway 24, 2.5 miles west of the visitor center, to the Panorama Point parking area; continue on the spur road to the Goosenecks and Sunset Point trailhead.",
+        "points": [
+          { "label": "Panorama Point parking", "lat": 38.3073, "lon": -111.2958 },
+          { "label": "Goosenecks and Sunset Point parking", "lat": 38.299, "lon": -111.29785 }
+        ]
+      },
+      "trail": {
+        "name": "Goosenecks and Sunset Point trails",
+        "steps": [
+          "From the Panorama Point parking area, walk the few steps to the overlook.",
+          "Drive the short spur road to the Goosenecks and Sunset Point parking area.",
+          "Walk 0.1 mi to the Goosenecks Overlook, or 0.4 mi to Sunset Point."
+        ]
+      },
+      "final": [
+        { "label": "Panorama Point", "lat": 38.30622, "lon": -111.29594 },
+        { "label": "Goosenecks Overlook", "lat": 38.29867, "lon": -111.29894 },
+        { "label": "Sunset Point", "lat": 38.29696, "lon": -111.29427 }
+      ],
+      "links": [
+        { "label": "Panorama Point", "url": "https://www.nps.gov/places/panorama-point-capitol-reef.htm" },
+        { "label": "Trail guide", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm" }
+      ]
+    },
+    {
+      "id": "capitol-gorge",
+      "name": "Capitol Gorge and the Pioneer Register",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/capitol-reef/capitol-gorge.jpg",
+        "srcWebp": "/images/last-adventure/capitol-reef/capitol-gorge.webp",
+        "alt": "A man crouches near a still pool of water in tan colored sandstone",
+        "credit": "NPS / J. Frank"
+      },
+      "description": "For about 80 years this narrow canyon was the only road east from Fruita, and the travelers who passed through carved their names and dates into its walls. Walking the fairly level trail today, you reach the Pioneer Register, then a short climb to the Tanks, natural waterpockets where tadpoles and fairy shrimp live after the rains. It is a gentle walk through other people's journeys, and a natural place to talk about your loved one's own road and the mark they left.",
+      "plan": {
+        "distance": "1.0 mi one way to the Tanks",
+        "difficulty": "Easy",
+        "elevation": "80 ft",
+        "accessibility": "Uneven ground but fairly level (NPS rating for Easy), with a short climb to the Tanks",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the visitor center on Utah Highway 24, take the paved Scenic Drive south to its end, then the dirt Capitol Gorge spur road to the trailhead. Check road conditions first: the spur can close for mud and flash floods.",
+        "points": [{ "label": "Capitol Gorge Trailhead", "lat": 38.20954, "lon": -111.16861 }]
+      },
+      "trail": {
+        "name": "Capitol Gorge Trail",
+        "steps": [
+          "Walk east down the canyon from the trailhead, past worn petroglyphs a short stroll in.",
+          "Continue to the Pioneer Register on the canyon wall.",
+          "A short climb leads to the Tanks."
+        ],
+        "notes": [
+          "Adding to the Pioneer Register is illegal.",
+          "Keep hands and feet out of the Tanks: the animals in them are sensitive to lotion, sunscreen and bug spray. Consider the weather before entering the gorge."
+        ]
+      },
+      "final": [{ "label": "Pioneer Register", "lat": 38.21154, "lon": -111.16076 }],
+      "links": [
+        { "label": "Capitol Gorge (Scenic Drive stop 11)", "url": "https://www.nps.gov/places/scenic-drive-stop-11.htm" },
+        { "label": "Guide to the Scenic Drive", "url": "https://www.nps.gov/care/planyourvisit/scenicdrive.htm" }
+      ]
+    },
+    {
+      "id": "hickman-bridge",
+      "name": "Hickman Bridge",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/capitol-reef/hickman-bridge.jpg",
+        "srcWebp": "/images/last-adventure/capitol-reef/hickman-bridge.webp",
+        "alt": "A hiker stands beside Hickman Bridge, a natural sandstone bridge",
+        "credit": "NPS Photo"
+      },
+      "description": "Hickman Bridge is a natural sandstone bridge 133 feet long, and the trail to it climbs 400 feet before curving right under and around the span. Standing beneath it, you can look up through the opening at the sky, then turn to take in the canyon views the park promises along the way. It is short enough for most families to share, with enough climb to feel earned, and a place where a quiet moment of remembrance comes easily.",
+      "plan": {
+        "distance": "0.9 mi one way",
+        "difficulty": "Moderate",
+        "elevation": "400 ft",
+        "accessibility": "A mix of steep grades and level sections (NPS rating for Moderate); not wheelchair accessible",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Utah Highway 24 east of the visitor center to the Hickman Bridge Trailhead. The lot often fills by 9 am; hike early or late in the day.",
+        "points": [{ "label": "Hickman Bridge Trailhead", "lat": 38.28873, "lon": -111.22836 }]
+      },
+      "trail": {
+        "name": "Hickman Bridge Trail",
+        "steps": [
+          "Climb from the trailhead on Highway 24.",
+          "Follow the trail as it goes under and around the natural bridge, then return the same way."
+        ],
+        "notes": ["Many park trails are marked with rock cairns; do not build new ones. Always carry water."]
+      },
+      "final": [{ "label": "Natural bridge", "lat": 38.29106, "lon": -111.234 }],
+      "links": [{ "label": "Trail guide", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm" }]
+    },
+    {
+      "id": "cassidy-arch",
+      "name": "Cassidy Arch",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/capitol-reef/cassidy-arch.jpg",
+        "srcWebp": "/images/last-adventure/capitol-reef/cassidy-arch.webp",
+        "alt": "Cassidy Arch in Wingate Sandstone in Capitol Reef National Park",
+        "credit": "NPS / D. Popovic",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassidy_Arch_in_Capitol_Reef_National_Park.jpg"
+      },
+      "description": "From the floor of Grand Wash, a deep canyon of towering sandstone cliffs, this trail climbs 670 feet over slickrock to Cassidy Arch, carved in Wingate Sandstone. It is a real effort and a real reward, the kind of outing your loved one might have planned for a crisp morning. Rest together near the arch, share some water and a story or two, and take in how far you have come.",
+      "plan": {
+        "distance": "1.7 mi one way",
+        "difficulty": "Strenuous",
+        "elevation": "670 ft",
+        "accessibility": "Steep grades, uneven terrain and long, steady climbs (NPS rating for Strenuous)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the visitor center, take the paved Scenic Drive south, then the dirt Grand Wash spur road to its end. Check road conditions first: the spur can close for mud and flash floods.",
+        "points": [{ "label": "Grand Wash road-end parking", "lat": 38.26374, "lon": -111.21588 }]
+      },
+      "trail": {
+        "name": "Cassidy Arch Trail",
+        "steps": [
+          "From the parking area at the end of the Grand Wash road, start up the Cassidy Arch Trail.",
+          "Climb over slickrock to the arch. Many park trails are marked with rock cairns; look for rock piles or stacks."
+        ],
+        "notes": ["Some trails rise to 6,900 feet and the summer sun is intense. Always carry water."]
+      },
+      "final": [{ "label": "Arch", "lat": 38.26108, "lon": -111.22549 }],
+      "links": [{ "label": "Trail guide", "url": "https://www.nps.gov/care/planyourvisit/trailguide.htm" }]
+    }
+  ]
+}

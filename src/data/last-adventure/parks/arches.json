@@ -1,0 +1,210 @@
+{
+  "id": "arches",
+  "name": "Arches National Park",
+  "short": "Arches",
+  "state": "Utah",
+  "states": ["Utah"],
+  "tagline": "Red rock arches, sandstone fins and wide desert skies.",
+  "photo": {
+    "src": "/images/last-adventure/arches/park.jpg",
+    "srcWebp": "/images/last-adventure/arches/park.webp",
+    "alt": "Large sandstone arch at dusk with a large white moon and clouds above",
+    "credit": "NPS/Neal Herbert",
+    "caption": "North Window with a waxing moon"
+  },
+  "intro": "Arches holds more than 2,000 natural stone arches, along with soaring pinnacles, balanced rocks and narrow sandstone fins glowing red against a desert sky. A scenic drive links the park's best-known places, so a final adventure can be a short paved walk to the base of a giant arch or a steady climb across slickrock to the most famous arch in the world. The park also names three washes where a family can scatter ashes with a permit.",
+  "homepage": "https://www.nps.gov/arch/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/arch/planyourvisit/maps.htm" },
+    { "label": "Approved scattering areas map (NPS)", "url": "https://www.nps.gov/arch/learn/management/images/ARCH_MemorializationMap.jpg" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a special use permit, in three approved washes only.",
+  "scatterFacts": [
+    "Permit: NPS Form 10-930, emailed to the address on the form. $185 application fee paid through Pay.gov; fees are non-refundable once the permit office receives the application.",
+    "Approved areas: Salt Valley Wash, Winter Camp Wash and Lower Courthouse Wash, as shown on the park's map.",
+    "On land only, away from cultural features, in an area that will not affect other visitors.",
+    "No monument, cairn or other marker, and no burial of ashes.",
+    "Applications are processed in the order received; requested dates are not guaranteed."
+  ],
+  "scatterLink": [
+    { "label": "Memorialization (scattering ashes) (NPS)", "url": "https://www.nps.gov/arch/planyourvisit/memorialization.htm" },
+    { "label": "Superintendent's Compendium, 2.62 Memorialization (NPS)", "url": "https://www.nps.gov/arch/learn/management/compendium.htm" }
+  ],
+  "beforeYouGo": "The park entrance is on US 191, five miles north of Moab, or 22 miles south of Interstate 70 at Crescent Junction. Arches is normally open all year, 24 hours a day, and is very busy from March to October; the park recommends entering before 8 am or after 3 pm. On very busy days it may temporarily delay entries when lines reach the highway or parking lots fill. Winter highs average 30 to 50 degrees F.",
+  "destinations": [
+    {
+      "id": "delicate-arch-viewpoints",
+      "name": "Delicate Arch Viewpoints",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/arches/delicate-arch-viewpoints.jpg",
+        "srcWebp": "/images/last-adventure/arches/delicate-arch-viewpoints.webp",
+        "alt": "A free-standing sandstone arch and other rock features, viewed across a canyon",
+        "credit": "NPS/Chris Wonderly"
+      },
+      "description": "Not everyone can make the climb to Delicate Arch, and they don't have to miss it. From the lower viewpoint, a level path leads to a clear view of the arch perched at the top of a distant rock wall, a mile away across the canyon. Those who want a little more can climb to the upper viewpoint for a less obstructed look. Gather the whole family together, point out the arch to the youngest ones, and tell them why it mattered to someone you love.",
+      "plan": {
+        "distance": "Lower viewpoint 200 ft round trip; upper viewpoint 0.5 mi round trip",
+        "difficulty": "Easy to the lower viewpoint; Moderate to the upper viewpoint",
+        "time": "5 to 15 minutes; 30 to 45 minutes",
+        "elevation": "0 ft; 171 ft",
+        "accessibility": "Lower viewpoint: level, hardened, wide path, accessible to wheelchairs (NPS). Upper viewpoint: slopes and steps, not wheelchair accessible",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the entrance on US 191, follow the main park road to Delicate Arch Road, then drive past Wolfe Ranch to the viewpoint parking area at the end of the road.",
+        "points": [{ "label": "Parking", "lat": 38.73393, "lon": -109.50213 }]
+      },
+      "trail": {
+        "name": "Lower and Upper Delicate Arch Viewpoint trails",
+        "steps": [
+          "For the lower viewpoint, walk the short, flat path from the parking area.",
+          "For the upper viewpoint, climb the slopes and steps to the overlook. This trail does not lead to the arch itself."
+        ]
+      },
+      "final": [
+        { "label": "Lower viewpoint", "lat": 38.73421, "lon": -109.50014 },
+        { "label": "Upper viewpoint", "lat": 38.73772, "lon": -109.50182 }
+      ],
+      "scatterNote": {
+        "text": "Winter Camp Wash is one of the park's three approved scattering areas; the official map shows the approved stretch running from near Wolfe Ranch, on the same road, toward Delicate Arch. Permit required.",
+        "points": [{ "label": "Winter Camp Wash near Wolfe Ranch", "lat": 38.73441, "lon": -109.51758 }]
+      },
+      "links": [{ "label": "Delicate Arch Viewpoint Trails", "url": "https://www.nps.gov/places/delicate-arch-viewpoints.htm" }]
+    },
+    {
+      "id": "double-arch",
+      "name": "Double Arch",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/arches/double-arch.jpg",
+        "srcWebp": "/images/last-adventure/arches/double-arch.webp",
+        "alt": "Two sandstone arches connected on the left against a backdrop of blue sky",
+        "credit": "NPS/Veronica Verdin"
+      },
+      "description": "Two enormous spans of stone, joined at one end, curve overhead at Double Arch, the tallest arch in the park at 112 feet. A gentle path leads from the parking loop to its base, where voices echo softly under the rock and the sky shows through both openings. The Windows Section around it is crowded with arches and formations like Turret Arch and the Parade of Elephants. Find some shade beneath the spans and let everyone share a favorite memory.",
+      "plan": {
+        "distance": "0.6 mi round trip",
+        "difficulty": "Easy",
+        "time": "15 to 30 minutes",
+        "elevation": "30 ft",
+        "accessibility": "Hard-packed trail with a gradual slope; barrier-free and may be accessible to wheelchairs with some assistance (NPS)",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the entrance on US 191, follow the main park road north, then turn onto the Windows road to the parking loop at The Windows.",
+        "points": [{ "label": "Double Arch parking", "lat": 38.68767, "lon": -109.53931 }]
+      },
+      "trail": {
+        "name": "Double Arch Trail",
+        "steps": [
+          "Follow the gently sloping path from the trailhead to the base of the arches.",
+          "Across from this trailhead, a connector trail climbs stairs to the upper lot and the Windows trailhead if you want to see more arches."
+        ],
+        "notes": ["If you scramble up the rock beneath the arches, plan your route carefully: climbing up is often easier than climbing back down."]
+      },
+      "final": [{ "label": "Arch", "lat": 38.69154, "lon": -109.54029 }],
+      "scatterNote": {
+        "text": "Scattering is allowed only in the park's three approved washes: Salt Valley Wash, Winter Camp Wash (along the start of the Delicate Arch Trail at Wolfe Ranch) and Lower Courthouse Wash. Permit required.",
+        "points": [{ "label": "Winter Camp Wash near Wolfe Ranch", "lat": 38.73441, "lon": -109.51758 }]
+      },
+      "links": [{ "label": "Double Arch Viewpoint and Trail", "url": "https://www.nps.gov/places/double-arch.htm" }]
+    },
+    {
+      "id": "landscape-arch",
+      "name": "Landscape Arch",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/arches/landscape-arch.jpg",
+        "srcWebp": "/images/last-adventure/arches/landscape-arch.webp",
+        "alt": "Long, skinny sandstone arch in front of a sandstone wall",
+        "credit": "NPS/Veronica Verdin"
+      },
+      "description": "Landscape Arch stretches 306 feet across the sky, the longest arch in North America, and only 6 feet thick at its narrowest point. The walk through Devils Garden passes between tall sandstone fins on a hard-packed trail, with short side trips to Pine Tree Arch and Tunnel Arch. Large pieces of this arch fell in the 1990s, and standing beneath its thin ribbon of rock is a gentle reminder that even the most enduring things change. It is a fitting place to talk about a life well lived.",
+      "plan": {
+        "distance": "1.8 mi round trip",
+        "difficulty": "Easy",
+        "time": "30 to 60 minutes",
+        "elevation": "40 ft",
+        "accessibility": "Considered barrier free, but steep slopes just before Landscape Arch may require assistance (NPS)",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the entrance on US 191, follow the main park road to its end at Devils Garden, 18 miles from the entrance. Toilets are open all year; drinking water is available spring through fall.",
+        "points": [{ "label": "Devils Garden parking", "lat": 38.78183, "lon": -109.59224 }]
+      },
+      "trail": {
+        "name": "Devils Garden Trail",
+        "steps": [
+          "Follow the hard-packed trail from the trailhead between the sandstone fins.",
+          "Spur trails lead to Pine Tree Arch and Tunnel Arch.",
+          "Continue to the Landscape Arch viewing area, then return the same way."
+        ],
+        "notes": ["Beyond Landscape Arch the trail climbs steeply over sandstone slabs with narrow ledges and drop-offs, and is rated Strenuous."]
+      },
+      "final": [{ "label": "Viewing area", "lat": 38.7905, "lon": -109.60442 }],
+      "scatterNote": {
+        "text": "Scattering is allowed only in the park's three approved washes: Salt Valley Wash, Winter Camp Wash and Lower Courthouse Wash, as shown on the official map. Permit required."
+      },
+      "links": [
+        { "label": "Landscape Arch Trail", "url": "https://www.nps.gov/places/landscape-arch-trail.htm" },
+        { "label": "Devils Garden", "url": "https://www.nps.gov/arch/planyourvisit/devils-garden.htm" }
+      ]
+    },
+    {
+      "id": "delicate-arch",
+      "name": "Delicate Arch",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/arches/delicate-arch.jpg",
+        "srcWebp": "/images/last-adventure/arches/delicate-arch.webp",
+        "alt": "Delicate Arch on a sloping red rock face, with hikers small beneath it against a blue sky",
+        "credit": "NPS/Neal Herbert",
+        "position": "70% 50%"
+      },
+      "description": "The arch stays hidden until the very end. You climb a long slope of bare slickrock, follow a narrow ledge around the cliff, and suddenly Delicate Arch stands in front of you, its opening 46 feet high, with distant mountains and open desert framed beyond it. Along the way you pass the old Wolfe Ranch cabin and a wall of Ute petroglyphs. Reaching it together, carrying someone you love to this symbol of Utah, turns a hard walk into a pilgrimage.",
+      "plan": {
+        "distance": "3 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "2 to 3 hours",
+        "elevation": "538 ft",
+        "accessibility": "First section to Wolfe Ranch cabin and the petroglyph panel is accessible to wheelchairs (NPS); beyond, the trail climbs steeply up rock",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the entrance on US 191, follow the main park road to Delicate Arch Road and the Wolfe Ranch trailhead lot. On very busy days it fills; parking at the Delicate Arch Viewpoint lot adds 1 mile each way along the road.",
+        "points": [
+          { "label": "Delicate Arch parking", "lat": 38.73557, "lon": -109.5208 },
+          { "label": "Trailhead", "lat": 38.73569, "lon": -109.52044 }
+        ]
+      },
+      "trail": {
+        "name": "Delicate Arch Trail",
+        "steps": [
+          "Pass the Wolfe Ranch cabin and the petroglyph panel.",
+          "Climb the steep, unshaded slickrock slope, watching carefully for trail markers.",
+          "Just before the arch, follow a narrow rock ledge for about 200 yards to the arch."
+        ],
+        "notes": [
+          "Avoid this hike during midday summer heat. No drinking water at the trailhead: bring at least 2 quarts (2 L) per person.",
+          "The ledge is often icy in winter; carry traction devices. Sunset hikers need a flashlight or headlamp for each person.",
+          "NPS pages differ on the climb: 538 ft on the trail page, 480 ft on the Delicate Arch page."
+        ]
+      },
+      "final": [{ "label": "Arch", "lat": 38.74347, "lon": -109.49932 }],
+      "scatterNote": {
+        "text": "Not at the arch. Winter Camp Wash, one of the park's three approved scattering areas, runs near Wolfe Ranch at the start of this trail, according to the official map. Scatter on land only, away from cultural features such as the petroglyph panel. Permit required.",
+        "points": [{ "label": "Winter Camp Wash near Wolfe Ranch", "lat": 38.73441, "lon": -109.51758 }]
+      },
+      "links": [
+        { "label": "Delicate Arch Trail", "url": "https://www.nps.gov/places/wolfe-ranch-trailhead.htm" },
+        { "label": "Delicate Arch", "url": "https://www.nps.gov/arch/planyourvisit/delicate-arch.htm" }
+      ]
+    }
+  ]
+}

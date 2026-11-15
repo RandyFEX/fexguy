@@ -1,0 +1,247 @@
+{
+  "id": "zion",
+  "name": "Zion National Park",
+  "short": "Zion",
+  "state": "Utah",
+  "states": ["Utah"],
+  "tagline": "Towering sandstone walls above the Virgin River in Zion Canyon.",
+  "photo": {
+    "src": "/images/last-adventure/zion/park.jpg",
+    "srcWebp": "/images/last-adventure/zion/park.webp",
+    "alt": "The sun sets behind large red and white towers of sandstone",
+    "credit": "NPS Photo / Jesse Nelson",
+    "caption": "The Towers of the Virgin from the Human History Museum"
+  },
+  "intro": "In Zion Canyon, the Virgin River runs between sandstone cliffs that rise in red and cream-white walls toward a narrow ribbon of sky. Easy riverside paths and a free shuttle make the canyon floor open to almost everyone, while the trail to Angels Landing climbs to one of the most famous viewpoints in the West. Zion also names specific places where families may scatter ashes with a permit, including two of its best-loved trails.",
+  "homepage": "https://www.nps.gov/zion/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/zion/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a special use permit on the Watchman Trail, the Angels Landing Trail and a large field beside the Pa'rus Trail.",
+  "scatterFacts": [
+    "Permit: NPS Form 10-930 (Application for Special Use Permit, Scattering of Ashes), emailed to zion_commercialservices@nps.gov. Application fee: $25.",
+    "Apply at least three weeks in advance.",
+    "Approved locations (Superintendent's Compendium): the Watchman Trail; the large field east of the Pa'rus Trail between the second and third bridges north of the Watchman Housing Road; and the Angels Landing Trail.",
+    "No monuments, memorials or plaques."
+  ],
+  "scatterLink": [
+    { "label": "Scattering of ashes (NPS)", "url": "https://www.nps.gov/zion/planyourvisit/scattering-of-ashes.htm" },
+    { "label": "Application form (PDF)", "url": "https://www.nps.gov/zion/planyourvisit/upload/NPS-10-930-Application-for-SUP-Scattering-of-Ashes-2024-OMB-Approved_02-21-25.pdf" },
+    { "label": "Superintendent's Compendium, 2.62 (PDF)", "url": "https://www.nps.gov/zion/learn/management/upload/2025-Superintendent-s-Compendium.pdf" }
+  ],
+  "beforeYouGo": "Zion Canyon lies beside Springdale, Utah, at the park's South Entrance. The East Entrance is on State Road 9, 13 miles west of Mt. Carmel Junction; vehicles over the size limits cannot drive between Canyon Junction and the East Entrance through the Zion-Mt. Carmel Tunnel. During shuttle season the free shuttle is the way to reach the Zion Canyon Scenic Drive trailheads; outside it, visitors can drive the canyon. Check current conditions for trail closures and flash flood warnings.",
+  "destinations": [
+    {
+      "id": "parus-trail",
+      "name": "Pa'rus Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/zion/parus-trail.jpg",
+        "srcWebp": "/images/last-adventure/zion/parus-trail.webp",
+        "alt": "The paved Pa'rus Trail curves through desert shrubs toward red sandstone peaks under a blue sky",
+        "credit": "Vulturesong",
+        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_004_-_Pa%27rus_Trail.jpg"
+      },
+      "description": "Pa'rus is Paiute for bubbling water, and this paved path follows the Virgin River through open meadows where deer often graze, with some of the best views of the Watchman along the way. Wheelchairs, strollers and even the family dog on a leash are welcome, so no one has to stay behind. In the evening it is a lovely place to watch the sunset and the first stars. Beside the trail lies one of the park's approved scattering areas, so a slow family walk can end in a quiet goodbye.",
+      "plan": {
+        "distance": "1.6 mi one way (NPS accessibility survey)",
+        "difficulty": "Easy",
+        "time": "30 to 120 minutes",
+        "elevation": "152 ft gain, 63 ft loss",
+        "accessibility": "Paved, wide and accessible for wheelchairs (NPS); typical grade 2.6%, five bridges",
+        "bestTime": "Sunset and evening",
+        "scattering": "Allowed with a permit in the field beside the trail (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Enter at the South Entrance from Springdale and park at the Zion Canyon Visitor Center (shuttle stop #1). Walk through the plaza, past the shuttle stop and across the bridge to the trailhead beside South Campground.",
+        "points": [{ "label": "Zion Canyon Visitor Center", "lat": 37.20011, "lon": -112.98692 }]
+      },
+      "trail": {
+        "name": "Pa'rus Trail",
+        "steps": [
+          "From the visitor center, cross the bridge and follow the crosswalk to the trailhead next to South Campground.",
+          "Follow the paved trail north along the Virgin River.",
+          "The trail ends at Canyon Junction (shuttle stop #3)."
+        ],
+        "notes": [
+          "The trail page gives 3.5 mi from one end to the other; the accessibility survey measures 1.6 mi one way.",
+          "The only park trail that allows leashed pets. A short unpaved connector to the Human History Museum is not designed for wheelchairs."
+        ]
+      },
+      "final": [
+        { "label": "Pa'rus Trail near the visitor center", "lat": 37.20276, "lon": -112.98231 },
+        { "label": "Canyon Junction (north end)", "lat": 37.21749, "lon": -112.97396 }
+      ],
+      "scatterNote": {
+        "text": "The approved area is the large field east of the Pa'rus Trail between the second and third bridges north of the Watchman Housing Road. Confirm the exact spot with the park when you apply. Permit required; no memorials or plaques."
+      },
+      "links": [
+        { "label": "Pa'rus Trail", "url": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm" },
+        { "label": "Scattering of ashes", "url": "https://www.nps.gov/zion/planyourvisit/scattering-of-ashes.htm" }
+      ]
+    },
+    {
+      "id": "riverside-walk",
+      "name": "Riverside Walk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/zion/riverside-walk.jpg",
+        "srcWebp": "/images/last-adventure/zion/riverside-walk.webp",
+        "alt": "Two hikers in blue jackets walk along a sandy trail lined with a wooden rail and fall foliage",
+        "credit": "NPS/Abi Farish"
+      },
+      "description": "At the northern end of Zion Canyon, the Riverside Walk follows the Virgin River as the sheer sandstone walls narrow in around you. The paved path ends where the river itself becomes the trail into The Narrows, and trailside exhibits tell how water carved the canyon. Walk it slowly together, listen to the water, and pause at the end of the pavement before turning back. Some places make it easier to talk about the people we miss, and this is one of them.",
+      "plan": {
+        "distance": "1 mi one way",
+        "difficulty": "Easy",
+        "time": "1 to 2 hours",
+        "elevation": "154 ft gain, 49 ft loss",
+        "accessibility": "Concrete path, wheelchair accessible with assistance (NPS); some sections slippery with sand",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From the Zion Canyon Visitor Center, ride the free shuttle (or drive, outside shuttle season) to the end of the Zion Canyon Scenic Drive at the Temple of Sinawava, shuttle stop #9.",
+        "points": [{ "label": "Temple of Sinawava (shuttle stop #9)", "lat": 37.28528, "lon": -112.9475 }]
+      },
+      "trail": {
+        "name": "Riverside Walk",
+        "steps": [
+          "Follow the sidewalk past the shuttle stop and restrooms to the trail.",
+          "Walk upstream along the Virgin River to the end of the paved path, where The Narrows begin."
+        ],
+        "notes": ["Sections may close in winter for ice. Check current conditions before your trip."]
+      },
+      "final": [{ "label": "End of the Riverside Walk", "lat": 37.29658, "lon": -112.94819 }],
+      "scatterNote": {
+        "text": "Scattering is permitted only on the Watchman Trail, the Angels Landing Trail and the large field beside the Pa'rus Trail. The Pa'rus field and the Watchman Trail both start near the Zion Canyon Visitor Center. Permit required.",
+        "points": [
+          { "label": "Watchman Trailhead", "lat": 37.20092, "lon": -112.98698 },
+          { "label": "Pa'rus Trail", "lat": 37.20276, "lon": -112.98231 }
+        ]
+      },
+      "links": [{ "label": "Riverside Walk", "url": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm" }]
+    },
+    {
+      "id": "watchman-trail",
+      "name": "Watchman Trail",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/zion/watchman-trail.jpg",
+        "srcWebp": "/images/last-adventure/zion/watchman-trail.webp",
+        "alt": "View from a sandy overlook of a triangular sandstone mountain with green foliage on the foothills",
+        "credit": "NPS/Abi Farish"
+      },
+      "description": "The Watchman is the great triangular peak that towers over the visitor center and South Entrance, and this trail climbs from the river to a magnificent viewpoint facing it. From up here you see the Watchman, the Temples and Towers, lower Zion Canyon and the town of Springdale, with a short loop at the top to wander together. It is one of the few places the park names for scattering, and a fitting place to say goodbye with the whole canyon in view.",
+      "plan": {
+        "distance": "3.3 mi round trip",
+        "difficulty": "Moderate",
+        "time": "About 2 hours",
+        "elevation": "479 ft to the overlook",
+        "accessibility": "Not wheelchair accessible: hard rock and soil, steps up to 24 inches, sections as narrow as 12 inches",
+        "scattering": "Allowed here with a permit"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Enter at the South Entrance from Springdale and park at the Zion Canyon Visitor Center. Follow the sidewalk through the plaza, past the shuttle stop to the crosswalk, and stay along the river to begin the trail.",
+        "points": [{ "label": "Watchman Trailhead", "lat": 37.20092, "lon": -112.98698 }]
+      },
+      "trail": {
+        "name": "Watchman Trail",
+        "steps": [
+          "Start along the river near the visitor center.",
+          "Climb 1.4 mi to the overlook.",
+          "Walk the 0.4 mi loop at the top, then return the same way."
+        ],
+        "notes": ["Muddy or icy in winter and monsoon season; limited shade in summer."]
+      },
+      "final": [{ "label": "Overlook", "lat": 37.2001, "lon": -112.97859 }],
+      "scatterNote": { "text": "The Watchman Trail is an approved scattering location. Permit required; no monuments or plaques." },
+      "links": [
+        { "label": "Watchman Trail", "url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm" },
+        { "label": "Scattering of ashes", "url": "https://www.nps.gov/zion/planyourvisit/scattering-of-ashes.htm" }
+      ]
+    },
+    {
+      "id": "canyon-overlook",
+      "name": "Canyon Overlook",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/zion/canyon-overlook.jpg",
+        "srcWebp": "/images/last-adventure/zion/canyon-overlook.webp",
+        "alt": "Red sandstone slickrock dotted with green foliage with mountains in the background",
+        "credit": "NPS/Daren Reehl"
+      },
+      "description": "Just east of the Zion-Mt. Carmel Tunnel, sandstone steps with a metal handrail lead over rocky ground above a dark slot canyon. Near the end the view opens onto red and cream slickrock, and the trail finishes at a fenced cliff edge facing main Zion Canyon and the Towers of the Virgin. Watch for bighorn sheep on the way. It is a fine short outing for a family that can manage steps and uneven rock, and a good place to pass around a photograph and say a few words.",
+      "plan": {
+        "distance": "1 mi round trip",
+        "difficulty": "Moderate",
+        "time": "1 to 2 hours",
+        "accessibility": "Not wheelchair accessible: sandstone steps with a handrail, hard rock and sand, overhanging rock and boulders",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "State Route 9 through the Zion-Mt. Carmel Tunnel to the trailhead just east of it. Parking is extremely limited; be prepared to try multiple times. Oversized vehicles cannot use the tunnel road; check the park's vehicle size limits.",
+        "points": [{ "label": "Canyon Overlook parking", "lat": 37.2134, "lon": -112.94053 }]
+      },
+      "trail": {
+        "name": "Canyon Overlook Trail",
+        "steps": ["Climb the sandstone steps with a metal handrail above a slot canyon.", "Continue over rocky terrain to the fenced viewpoint at the end of the trail, then return the same way."]
+      },
+      "final": [{ "label": "Fenced viewpoint", "lat": 37.21334, "lon": -112.94597 }],
+      "scatterNote": {
+        "text": "Scattering is permitted only on the Watchman Trail, the Angels Landing Trail and the large field beside the Pa'rus Trail, all in Zion Canyon back through the tunnel. Permit required.",
+        "points": [{ "label": "Watchman Trailhead", "lat": 37.20092, "lon": -112.98698 }]
+      },
+      "links": [{ "label": "Canyon Overlook", "url": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm" }]
+    },
+    {
+      "id": "angels-landing",
+      "name": "Angels Landing",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/zion/angels-landing.jpg",
+        "srcWebp": "/images/last-adventure/zion/angels-landing.webp",
+        "alt": "Hikers on the rim of the trail below the towering fin of Angels Landing",
+        "credit": "NPS Photo"
+      },
+      "description": "In 1916 a visiting minister supposedly said only an angel could land on this narrow fin of rock, and the name stuck. The trail climbs switchback after switchback to Scout Lookout, then follows a single chain along a knife-edge ridge for the last half mile to the summit, with Zion Canyon spread out far below on both sides. Those who stop at Scout Lookout still earn a stunning view. Angels Landing is also one of the park's approved scattering locations, a farewell high above the canyon.",
+      "plan": {
+        "distance": "5.4 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "Around 4 hours",
+        "elevation": "1,488 ft",
+        "accessibility": "Steep, exposed trail; the final half mile follows chains along a knife-edge ridge",
+        "scattering": "Allowed here with a permit"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "For most of the year the trailhead is reached only by the free park shuttle from the Zion Canyon Visitor Center. Get off at The Grotto (shuttle stop #6), cross the road and the bridge to the West Rim Trail.",
+        "points": [{ "label": "The Grotto (shuttle stop #6)", "lat": 37.25897, "lon": -112.95097 }]
+      },
+      "trail": {
+        "name": "West Rim Trail and Angels Landing Trail",
+        "steps": [
+          "Climb the West Rim Trail to Scout Lookout (1.9 mi one way, 1,187 ft gain). No hiking permit needed to here.",
+          "With an Angels Landing permit, continue on the chains section along the ridge to the summit.",
+          "Return the same way, and catch the shuttle before the last bus."
+        ],
+        "notes": [
+          "Everyone hiking past Scout Lookout needs an Angels Landing permit: seasonal and day-before lotteries on recreation.gov, $6 per application plus $3 per person when awarded.",
+          "Do not go on if storms are near, the rock is wet or icy, it is or will be dark, or anyone fears heights. Most fatal accidents since 1930 happened on the chains section."
+        ]
+      },
+      "final": [
+        { "label": "Scout Lookout", "lat": 37.27481, "lon": -112.9507 },
+        { "label": "Angels Landing", "lat": 37.26931, "lon": -112.94799 }
+      ],
+      "scatterNote": { "text": "The Angels Landing Trail is an approved scattering location. A scattering permit is required in addition to the hiking permit for the chains; no monuments or plaques." },
+      "links": [
+        { "label": "Angels Landing permits and hiking", "url": "https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm" },
+        { "label": "West Rim to Scout Lookout", "url": "https://www.nps.gov/thingstodo/hike-to-scout-lookout.htm" }
+      ]
+    }
+  ]
+}

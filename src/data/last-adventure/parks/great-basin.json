@@ -1,0 +1,248 @@
+{
+  "id": "great-basin",
+  "name": "Great Basin National Park",
+  "short": "Great Basin",
+  "state": "Nevada",
+  "states": ["Nevada"],
+  "tagline": "Ancient bristlecone pines, alpine lakes and a marble cave beneath Wheeler Peak.",
+  "photo": {
+    "src": "/images/last-adventure/great-basin/park.jpg",
+    "srcWebp": "/images/last-adventure/great-basin/park.webp",
+    "alt": "Blue sky above green trees in a mountain cirque",
+    "credit": "NPS Photo",
+    "caption": "On the trail to the ancient bristlecone pines"
+  },
+  "intro": "In remote east-central Nevada, the Snake Range rises from the sagebrush desert to Wheeler Peak, the second tallest point in the state. A single paved road climbs over 4,000 feet to alpine lakes and a grove of bristlecone pines, some of the oldest living things on earth, while below the mountain, rangers lead tours through the decorated rooms of Lehman Caves. The park's rules allow ashes to be scattered away from trails, roads, facilities and water, never in caves.",
+  "homepage": "https://www.nps.gov/grba/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/grba/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "The Superintendent's Compendium allows scattering either under a permit or, without one, when its published conditions are met: on the ground at least 100 yards from any trail, road, developed facility or body of water, and never in caves.",
+  "scatterFacts": [
+    "Remains must be cremated and pulverized.",
+    "On the ground: at least 100 yards from any trail, road, developed facility or body of water.",
+    "From the air: at least 2,000 feet above the ground, and not over developed areas, facilities or bodies of water.",
+    "Remains shall not be scattered in caves.",
+    "Any non-NPS event or gathering of more than 25 people or 8 vehicles needs a Special Use Permit. The park does not publish a separate ash-scattering permit process; contact the park with questions."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/grba/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/grba/planyourvisit/permits-reservations.htm" }
+  ],
+  "beforeYouGo": "The park is in remote east-central Nevada, five miles west of the town of Baker, with limited services and little or no cell coverage. Do not rely on navigation apps; route to the Lehman Caves Visitor Center, the Great Basin Visitor Center or Baker. The grounds are open 24 hours a day, all year. The 12-mile Wheeler Peak Scenic Drive is closed in winter at Upper Lehman Creek Campground and usually opens by Memorial Day weekend; vehicles over 24 feet may not go beyond that point. Lehman Caves can only be entered on a ranger-guided tour.",
+  "destinations": [
+    {
+      "id": "lehman-caves",
+      "name": "Lehman Caves",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/great-basin/lehman-caves.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/lehman-caves.webp",
+        "alt": "An amber lit rocky passageway leads deeper into a cave",
+        "credit": "NPS",
+        "position": "50% 60%"
+      },
+      "description": "Visitors have been entering Lehman Caves, the longest cave system in Nevada, since 1885. A ranger leads small groups through passages and decorated rooms that stay a cool, humid 52 degrees all year. The short accessible tour reaches the Gothic Palace, the cave's first highly decorated room, so even family members who cannot manage stairs can come along. Underground, in the hush and the soft light, it is easy to feel how long the earth has been patiently at work.",
+      "plan": {
+        "distance": "Accessible Gothic Palace Tour 0.3 mi; Grand Palace Tour 0.6 mi",
+        "difficulty": "Easy (Gothic Palace); Moderate (Grand Palace, 69 stairs)",
+        "time": "30 minutes; 90 minutes",
+        "accessibility": "The Accessible Gothic Palace Tour has no stairs and can accommodate a wheelchair with assistance (NPS); other tours require regular crouching",
+        "scattering": "Never in caves (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From Baker, Nevada, follow Highway 488 west into the park to the Lehman Caves Visitor Center. Check in at the front desk 15 minutes before your tour.",
+        "points": [{ "label": "Lehman Caves Visitor Center", "lat": 39.00561, "lon": -114.21987 }]
+      },
+      "trail": {
+        "name": "Ranger-guided cave tour",
+        "steps": [
+          "Reserve tickets on Recreation.gov; tours are limited to 20 people and regularly sell out. Walk-up tickets, when offered, go on sale at the visitor center desk at opening.",
+          "Check in at least 15 minutes before the tour and complete the white-nose syndrome screening.",
+          "Follow the ranger into the cave; no touching the formations."
+        ],
+        "notes": [
+          "Fees: Gothic Palace $8 adults, $4 youth 5 to 15; Grand Palace $15 adults, $8 youth; under 5 free.",
+          "No bags, food, drinks or water inside the cave. Tours run all year except Thanksgiving, Christmas and New Year's Day."
+        ]
+      },
+      "final": [{ "label": "Cave entrance", "lat": 39.00542, "lon": -114.22064 }],
+      "scatterNote": {
+        "text": "Remains may never be scattered in caves. Under the park's rules, ashes may be scattered on the ground at least 100 yards from any trail, road, developed facility or body of water. Bring the remains only in a secure container, and confirm any plans with the park."
+      },
+      "links": [{ "label": "Lehman Caves tours", "url": "https://www.nps.gov/grba/planyourvisit/lehman-caves-tours.htm" }]
+    },
+    {
+      "id": "wheeler-peak-scenic-drive",
+      "name": "Wheeler Peak Scenic Drive",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.webp",
+        "alt": "Wheeler Peak viewed from the Wheeler Peak Scenic Drive",
+        "credit": "Famartin",
+        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-07-14_09_37_43_Wheeler_Peak_viewed_from_Wheeler_Peak_Scenic_Drive_in_Great_Basin_National_Park.jpg"
+      },
+      "description": "This narrow mountain road climbs 12 miles from the sagebrush flats to more than 10,000 feet, passing through pinyon and juniper, mountain mahogany, mixed conifers and finally white-barked aspen. Paved pullouts along the way look out to Mount Moriah, Lehman Creek, Wheeler Peak, Doso Doyabi and the Snake Valley far below. Take it slowly together, watch for mule deer and marmots, and stop wherever the view asks you to. It is a journey that needs no hiking at all.",
+      "plan": {
+        "distance": "12 mi each way by car; overlooks beside the road",
+        "difficulty": "Easy",
+        "accessibility": "Paved road and paved pullouts; vehicles and trailers over 24 feet are not permitted beyond Upper Lehman Creek Campground (mile 3)",
+        "bestTime": "Summer and early fall; the upper road is closed in winter and usually opens by Memorial Day weekend",
+        "scattering": "Not at the overlooks: at least 100 yards from roads and trails (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Enter the park on Highway 488. Just past the park entrance sign, the Scenic Drive begins on the right. Allow about 30 minutes each way without stops; speed limit 35 mph, no passing, and stop only at pullouts.",
+        "points": [{ "label": "Lehman Caves Visitor Center", "lat": 39.00561, "lon": -114.21987 }]
+      },
+      "final": [
+        { "label": "Mather Overlook", "lat": 39.02035, "lon": -114.27476 },
+        { "label": "Wheeler Peak Overlook", "lat": 39.02663, "lon": -114.28647 }
+      ],
+      "scatterNote": {
+        "text": "Under the park's rules, ashes may be scattered on the ground at least 100 yards from any trail, road, developed facility or body of water, so not at a roadside overlook. Remains must be cremated and pulverized. Confirm your plans with the park."
+      },
+      "links": [
+        { "label": "Wheeler Peak Scenic Drive", "url": "https://www.nps.gov/grba/planyourvisit/wheeler-peak-scenic-drive.htm" },
+        { "label": "Scenic Drive trails", "url": "https://www.nps.gov/grba/planyourvisit/wheeler-peak-scenic-drive-trails.htm" }
+      ]
+    },
+    {
+      "id": "alpine-lakes-loop",
+      "name": "Alpine Lakes Loop",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-basin/alpine-lakes-loop.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/alpine-lakes-loop.webp",
+        "alt": "Teresa Lake with a mountain in the background",
+        "credit": "NPS"
+      },
+      "description": "Starting near 10,000 feet, this loop wanders through alpine meadows and conifer forest past two small lakes, Stella and Teresa, in the shadow of Wheeler Peak and Doso Doyabi. Their sheer cliffs rise above the water, wildflowers bloom along the trail in summer, and on clear nights the sky fills with stars. It is one of the gentlest ways into the high country, a place for a slow walk, a long pause at the lakeshore and stories shared in the mountain quiet.",
+      "plan": {
+        "distance": "2.7 mi loop",
+        "difficulty": "Easy",
+        "time": "1.5 to 3 hours",
+        "elevation": "440 ft",
+        "accessibility": "Not accessible (NPS); starts at 9,890 ft, where altitude sickness is a risk",
+        "scattering": "Not at the lakes: at least 100 yards from trails and water (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Highway 488 into the park, then the full Wheeler Peak Scenic Drive to the Bristlecone Trailhead at its end. Park only in designated spaces.",
+        "points": [{ "label": "Bristlecone parking area", "lat": 39.01034, "lon": -114.30737 }]
+      },
+      "trail": {
+        "name": "Alpine Lakes Loop Trail",
+        "steps": [
+          "Start at the Bristlecone Trailhead at the end of the Scenic Drive.",
+          "Follow the loop past Stella Lake, the midpoint, and Teresa Lake.",
+          "Return to the trailhead. The Bristlecone Trail shares the early sections and can be added for 4.1 mi in all."
+        ],
+        "notes": [
+          "No water along the Scenic Drive: carry about one gallon per person per day. Turn back for symptoms of altitude sickness or approaching thunderclouds.",
+          "Hike the whole loop; turning around at Stella Lake does not shorten it."
+        ]
+      },
+      "final": [
+        { "label": "Stella Lake shore", "lat": 39.00616, "lon": -114.31851 },
+        { "label": "Teresa Lake shore", "lat": 39.00282, "lon": -114.31191 }
+      ],
+      "scatterNote": {
+        "text": "Under the park's rules, ashes may be scattered on the ground at least 100 yards from any trail, road, developed facility or body of water, so not at the lakes or beside the trail. Stay on trail in this fragile alpine area, and confirm your plans with the park."
+      },
+      "links": [{ "label": "Hike the Alpine Lakes Loop", "url": "https://www.nps.gov/thingstodo/hike-the-alpine-lakes-loop.htm" }]
+    },
+    {
+      "id": "bristlecone-grove",
+      "name": "Wheeler Peak Bristlecone Grove",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-basin/bristlecone-grove.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/bristlecone-grove.webp",
+        "alt": "A weathered bristlecone pine in the Wheeler Peak grove",
+        "credit": "NPS Natural Resources",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Park_Service_(48754400391).jpg"
+      },
+      "description": "This is the most easily reached grove of ancient bristlecone pines in the park. These trees live for thousands of years: the Prometheus Tree that once stood here was about 5,200 years old when it was cut down in 1964. The trail climbs to an interpretive loop among the weathered trunks, where even dead trees can stand for millennia. Walking among them with someone you love in mind is a gentle lesson in time, endurance and what remains.",
+      "plan": {
+        "distance": "2.8 mi total",
+        "difficulty": "Moderate",
+        "time": "1.5 to 3 hours",
+        "elevation": "600 ft",
+        "accessibility": "Rocky, narrow, with steep sections; not accessible to wheelchairs (NPS)",
+        "bestTime": "Spring, summer and fall",
+        "scattering": "Not in the grove: at least 100 yards from trails (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Highway 488 into the park, then the full Wheeler Peak Scenic Drive to the Bristlecone Trailhead at its end. Park only in designated spaces.",
+        "points": [{ "label": "Bristlecone parking area", "lat": 39.01034, "lon": -114.30737 }]
+      },
+      "trail": {
+        "name": "Bristlecone Trail",
+        "steps": [
+          "Start at the Bristlecone Trailhead; the early sections are shared with the Alpine Lakes Loop.",
+          "Climb to the Wheeler Peak Bristlecone Grove.",
+          "Walk the interpretive loop with signs about the trees, then return the same way."
+        ],
+        "notes": [
+          "Rangers often rove the grove in summer; ask at a visitor center about a brief ranger program there."
+        ]
+      },
+      "final": [{ "label": "Bristlecone interpretive loop", "lat": 39.00088, "lon": -114.30481 }],
+      "scatterNote": {
+        "text": "Under the park's rules, ashes may be scattered on the ground at least 100 yards from any trail, road, developed facility or body of water, so not along the interpretive loop. Stay on trail in this fragile area, and confirm your plans with the park."
+      },
+      "links": [{ "label": "Hike to the Wheeler Peak Bristlecone Grove", "url": "https://www.nps.gov/thingstodo/hike-to-the-wheeler-peak-bristlecone-grove.htm" }]
+    },
+    {
+      "id": "wheeler-peak",
+      "name": "Wheeler Peak",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/great-basin/wheeler-peak.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak.webp",
+        "alt": "Wheeler Peak rising above the Snake Range in Great Basin National Park",
+        "credit": "Ken Lund",
+        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak,_Great_Basin_National_Park,_Nevada.jpg"
+      },
+      "description": "Wheeler Peak is the second tallest point in Nevada, and on a clear day its summit opens a view of more than 100 miles across the basins and ranges. The rocky, windy trail climbs above treeline from a saddle below Bald Mountain and finishes on the steepest stretch in the park. It is a full, hard day best started at dawn, and for the strongest hikers in the family, standing together on top is a way to carry someone you love to the top of the park.",
+      "plan": {
+        "distance": "8.6 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "4 to 10 hours",
+        "elevation": "3,100 ft",
+        "accessibility": "Rocky, windy and steep; exposed above treeline",
+        "scattering": "Not on the trail or summit: at least 100 yards from trails (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Highway 488 into the park, then the Wheeler Peak Scenic Drive to the Summit Trailhead, two-thirds of a mile before the Bristlecone Trailhead at the end of the road.",
+        "points": [{ "label": "Summit Trailhead parking", "lat": 39.01733, "lon": -114.30338 }]
+      },
+      "trail": {
+        "name": "Wheeler Peak Summit Trail",
+        "steps": [
+          "Climb from the Summit Trailhead to the saddle between Wheeler Peak and Bald Mountain, about 2.5 mi up, where the trail goes above treeline.",
+          "Continue up the rocky ridge to the summit on the steepest section of trail in the park.",
+          "Return the same way."
+        ],
+        "notes": [
+          "Start around dawn to be down by late morning or early afternoon; above treeline, thunderstorms are extremely dangerous. High winds are common, and snow may linger on the upper trail in summer."
+        ]
+      },
+      "final": [{ "label": "Summit", "lat": 38.98577, "lon": -114.31391 }],
+      "scatterNote": {
+        "text": "Under the park's rules, ashes may be scattered on the ground at least 100 yards from any trail, road, developed facility or body of water. Remains must be cremated and pulverized. Confirm your plans with the park."
+      },
+      "links": [
+        { "label": "Hike to Wheeler Peak", "url": "https://www.nps.gov/thingstodo/hike-to-wheeler-peak.htm" },
+        { "label": "Wheeler Peak", "url": "https://www.nps.gov/places/wheeler-peak.htm" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "id": "bryce-canyon",
+  "name": "Bryce Canyon National Park",
+  "short": "Bryce Canyon",
+  "state": "Utah",
+  "states": ["Utah"],
+  "tagline": "Amphitheaters of red, orange and white hoodoos high on a forested plateau.",
+  "photo": {
+    "src": "/images/last-adventure/bryce-canyon/park.jpg",
+    "srcWebp": "/images/last-adventure/bryce-canyon/park.webp",
+    "alt": "A red rock landscape and plateau forest glows with the morning sun",
+    "credit": "NPS Photo / Peter Densmore",
+    "caption": "Morning light over the Bryce Amphitheater"
+  },
+  "intro": "Bryce Canyon is famous for its hoodoos, thousands of rock spires carved from limestone and glowing red, orange and white in the changing light. From viewpoints along the rim of a high, forested plateau, a family can look down into the Bryce Amphitheater, or walk among the spires on trails below the rim. The park names one place where ashes may be scattered with a permit: Piracy Point, a quiet overlook along the Southern Scenic Drive.",
+  "homepage": "https://www.nps.gov/brca/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/brca/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a special use permit at Piracy Point only, the park's one designated scattering site.",
+  "scatterFacts": [
+    "Piracy Point is the only designated scattering site. No scattering in the main amphitheater.",
+    "Apply with the Special Use Permit application and email it to brca_sup@nps.gov with \"Scattering Cremated Remains\" in the subject line. Allow two to four weeks.",
+    "Permit fee: $25, paid online only and non-refundable. Applications are not processed until the fee is paid. Park admission is charged separately for everyone attending, unless they hold a pass.",
+    "Scatter so the ashes are dispersed; no teeth, bone fragments or recognizable remains. No monument or marker, and no scattering by air.",
+    "No more than 30 participants. No prerecorded music or amplified audio, and the ceremony must not interfere with normal visitor traffic.",
+    "Present the signed permit at the entrance station."
+  ],
+  "scatterLink": [
+    { "label": "Scattering cremated remains (NPS)", "url": "https://www.nps.gov/brca/planyourvisit/scatteringashes.htm" },
+    { "label": "Application form (PDF)", "url": "https://www.nps.gov/brca/planyourvisit/upload/NPS-10-930s-Application-for-SUP-Short-Form-Scattering-2024-OMB-Approved-2.pdf" }
+  ],
+  "beforeYouGo": "From UT-12, take UT-63 south into the park; the visitor center is 1 mile inside the boundary. The park is open 24 hours a day all year with no entry reservations, and is busiest from May through September. The 18-mile main road runs south to Rainbow Point. A free shuttle serves the Bryce Amphitheater from April through mid-October. Roads may close temporarily during and after winter snowstorms. Elevations range from 8,000 to over 9,000 feet.",
+  "destinations": [
+    {
+      "id": "piracy-point",
+      "name": "Piracy Point",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/bryce-canyon/piracy-point.jpg",
+        "srcWebp": "/images/last-adventure/bryce-canyon/piracy-point.webp",
+        "alt": "Forested limestone cliffs stand above a broad canyon and below a distant plateau along the horizon",
+        "credit": "NPS Photo / Peter Densmore"
+      },
+      "description": "Away from the crowds of the amphitheater, a short, level path through the forest leads to Piracy Point, looking north over Swamp Canyon and the broad valley of the Sheep Creek drainage. Forested cliffs fall away below you, and a distant plateau lines the horizon. This is a place where pines and spruce meet, where osprey sometimes hunt, and where the quiet is part of the gift. As the one place the park has set aside for scattering, it lets the goodbye and the scattering happen together.",
+      "plan": {
+        "distance": "1,056 ft each way from the Farview Point parking lot",
+        "difficulty": "Easy",
+        "elevation": "8 ft gain, 20 ft loss",
+        "accessibility": "Unpaved, fairly level trail; fair access when dry (NPS)",
+        "scattering": "Allowed here with a permit"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "UT-63 into the park, then south on the main park road (the Southern Scenic Drive) to the Farview Point parking area.",
+        "points": [{ "label": "Farview Point parking", "lat": 37.54464, "lon": -112.24752 }]
+      },
+      "trail": {
+        "name": "Piracy Point trail",
+        "steps": ["From the Farview Point parking lot, follow the short, flat, unpaved trail north to Piracy Point."],
+        "notes": ["Pets are not allowed on this unpaved trail or viewpoint."]
+      },
+      "final": [{ "label": "Overlook", "lat": 37.54635, "lon": -112.24459 }],
+      "scatterNote": {
+        "text": "Up to 30 participants, with a permit presented at the entrance station. No music or amplified audio, no markers, and the ceremony must not block other visitors."
+      },
+      "links": [
+        { "label": "Piracy Point", "url": "https://www.nps.gov/places/000/piracy-point.htm" },
+        { "label": "Scattering cremated remains", "url": "https://www.nps.gov/brca/planyourvisit/scatteringashes.htm" }
+      ]
+    },
+    {
+      "id": "sunset-point",
+      "name": "Sunset Point",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/bryce-canyon/sunset-point.jpg",
+        "srcWebp": "/images/last-adventure/bryce-canyon/sunset-point.webp",
+        "alt": "Red and white rock fins stand among distant spires and forested landscape",
+        "credit": "NPS Photo / Peter Densmore"
+      },
+      "description": "The park says the colors of Bryce Canyon are nowhere better displayed than from Sunset Point. Red, orange and white spires crowd the amphitheater below, the maze of the Silent City lies to the south, and Thor's Hammer, the park's most famous hoodoo, stands nearly directly beneath you. A short, level paved walk leads from the parking lot, and a paved half mile of rim connects it to Sunrise Point, so everyone can stroll together and stop wherever a memory surfaces.",
+      "plan": {
+        "distance": "About 494 ft from parking to the viewing area; paved Rim Trail to Sunrise Point 1 mi round trip",
+        "difficulty": "Easy",
+        "time": "1 hour for the walk to Sunrise Point and back",
+        "elevation": "40 ft on the walk to Sunrise Point",
+        "accessibility": "Paved, level trail with very good access (NPS); the Sunset to Sunrise section of the Rim Trail is wheelchair accessible",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "UT-63 into the park, then the main park road to Sunset Point at mile 2.25. The free park shuttle also stops here from April through mid-October.",
+        "points": [{ "label": "Sunset Point parking", "lat": 37.62371, "lon": -112.16839 }]
+      },
+      "final": [
+        { "label": "Viewpoint", "lat": 37.62261, "lon": -112.16601 },
+        { "label": "Sunrise Point", "lat": 37.62822, "lon": -112.16298 }
+      ],
+      "scatterNote": {
+        "text": "No scattering in the main amphitheater. The park's only designated site is Piracy Point, reached by a short trail from the Farview Point parking lot on the Southern Scenic Drive. Permit required.",
+        "points": [{ "label": "Piracy Point", "lat": 37.54635, "lon": -112.24459 }]
+      },
+      "links": [
+        { "label": "Sunset Point", "url": "https://www.nps.gov/places/000/sunset-point.htm" },
+        { "label": "Sunset to Sunrise walk", "url": "https://www.nps.gov/thingstodo/sunset-point-to-sunrise-point-hike.htm" }
+      ]
+    },
+    {
+      "id": "rainbow-point",
+      "name": "Rainbow Point",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/bryce-canyon/rainbow-point.jpg",
+        "srcWebp": "/images/last-adventure/bryce-canyon/rainbow-point.webp",
+        "alt": "White rock, red rock spires and forest at the viewpoint",
+        "credit": "NPS Photo / Peter Densmore"
+      },
+      "description": "At the very end of the park road, Rainbow Point stands at 9,115 feet, the highest viewpoint in the park. Sheer cliffs drop from the edge of the plateau, the Pink Cliffs of the Table Cliff Plateau rise across the valley, and the peaks of the Tushar Mountains line the far horizon. The drive itself is a slow unfolding of overlooks. Bring a picnic for the tables here, and give the day the unhurried pace your loved one would have chosen.",
+      "plan": {
+        "distance": "359 ft along a paved, sloping path to the end of the viewpoint; optional Bristlecone Loop 1 mi",
+        "difficulty": "Easy",
+        "time": "1 hour for the Bristlecone Loop",
+        "elevation": "200 ft on the Bristlecone Loop",
+        "accessibility": "Paved viewpoint with very good access (NPS); the Bristlecone Loop has a hard surface and could be used with assistance, but several grades do not meet standards",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "UT-63 into the park, then the full length of the main park road (the Southern Scenic Drive) to its end at Rainbow Point, mile 18.",
+        "points": [{ "label": "Rainbow Point parking", "lat": 37.47487, "lon": -112.24045 }]
+      },
+      "final": [
+        { "label": "Viewpoint", "lat": 37.47598, "lon": -112.24068 },
+        { "label": "Yovimpa Point", "lat": 37.47244, "lon": -112.24022 }
+      ],
+      "scatterNote": {
+        "text": "Stop at Piracy Point on the drive back north: it is the park's only designated scattering site, a short walk from the Farview Point parking lot. Permit required.",
+        "points": [{ "label": "Piracy Point", "lat": 37.54635, "lon": -112.24459 }]
+      },
+      "links": [
+        { "label": "Rainbow Point", "url": "https://www.nps.gov/places/000/rainbow-point.htm" },
+        { "label": "Bristlecone Loop", "url": "https://www.nps.gov/thingstodo/bristlecone-loop-trail.htm" }
+      ]
+    },
+    {
+      "id": "queens-navajo-loop",
+      "name": "Queen's Garden and Navajo Loop",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/bryce-canyon/queens-navajo-loop.jpg",
+        "srcWebp": "/images/last-adventure/bryce-canyon/queens-navajo-loop.webp",
+        "alt": "Two hikers walk along the Queen's Garden Trail between tall orange hoodoos",
+        "credit": "Fabio Achilli from Milano, Italy",
+        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queens_Garden_Trail,_Bryce_Canyon_(21407043745).jpg"
+      },
+      "description": "Seeing the hoodoos from the rim is one thing; walking among them is another. This loop drops from Sunrise Point through the formations of Queen's Garden, where a short spur leads to the hoodoo called Queen Victoria, then climbs back up the Navajo Loop past Thor's Hammer and Two Bridges, or through the tall, narrow walls of Wall Street. Spend a few hours down among the spires together, and the canyon becomes part of the story you carry home.",
+      "plan": {
+        "distance": "2.9 mi loop",
+        "difficulty": "Moderate",
+        "time": "2 to 3 hours",
+        "elevation": "625 ft",
+        "accessibility": "Not considered an accessible trail: firm native surface with steep grades (NPS)",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "UT-63 into the park, then the main park road to Sunrise Point, or ride the free park shuttle (April through mid-October). Parking lots can fill and close temporarily; the park suggests the shuttle for hikers.",
+        "points": [{ "label": "Sunrise Point parking", "lat": 37.63125, "lon": -112.16452 }]
+      },
+      "trail": {
+        "name": "Queen's Garden Trail, Navajo Loop and Rim Trail",
+        "steps": [
+          "Descend from Sunrise Point on the Queen's Garden Trail; a short spur leads to Queen Victoria.",
+          "Connect with either the Two Bridges or the Wall Street side of the Navajo Loop and climb to Sunset Point.",
+          "Walk the Rim Trail back to Sunrise Point to complete the loop."
+        ],
+        "notes": [
+          "Clockwise direction recommended. The Navajo Loop is not a loop in winter; use Two Bridges.",
+          "All trails start with a descent, so the return is uphill at more than 8,000 ft. Wear boots with good traction; traction devices are strongly recommended in winter."
+        ]
+      },
+      "final": [
+        { "label": "Queen Victoria", "lat": 37.62612, "lon": -112.16128 },
+        { "label": "Sunset Point", "lat": 37.62261, "lon": -112.16601 }
+      ],
+      "scatterNote": {
+        "text": "No scattering in the main amphitheater. The park's only designated site is Piracy Point on the Southern Scenic Drive. Permit required.",
+        "points": [{ "label": "Piracy Point", "lat": 37.54635, "lon": -112.24459 }]
+      },
+      "links": [
+        { "label": "Queen's/Navajo Combination Loop", "url": "https://www.nps.gov/thingstodo/queen-s-navajo-combination-loop.htm" },
+        { "label": "Hiking at Bryce Canyon", "url": "https://www.nps.gov/brca/planyourvisit/day-hikes.htm" }
+      ]
+    }
+  ]
+}
