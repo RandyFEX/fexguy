@@ -1,24 +1,29 @@
 // One Last Amazing Adventure: five-park pilot data (Version 1.1 research,
-// Randy, November 2026). Private preview content only. Coordinates are
-// map-verified (OpenStreetMap features matching the NPS descriptions) unless
-// marked `source: 'nps'` (published in the official NPS map data). None are
-// field-verified. Photographs are official NPS images, hotlinked from nps.gov
-// with the credit printed on the NPS page; a destination without a credited
-// NPS photograph has `photo: null` and shows a placeholder.
+// Randy, November 2026; editorial redesign Version 1.5). Private preview
+// content only. Coordinates are map-verified (OpenStreetMap features matching
+// the NPS descriptions) unless marked `source: 'nps'` (published in the
+// official NPS map data). None are field-verified. Photographs: official NPS
+// images hotlinked from nps.gov with the credit printed on the NPS page, or
+// Wikimedia Commons images stored locally in public/images/last-adventure/
+// with their license and author.
 
 export interface Point {
   label: string;
   lat: number;
   lon: number;
   source?: 'osm' | 'nps';
-  note?: string;
 }
 
 export interface Photo {
   src: string;
+  srcWebp?: string;
   alt: string;
   credit: string;
+  license?: { name: string; url: string };
+  sourceUrl?: string;
   caption?: string;
+  /** CSS object-position for the cropped display. */
+  position?: string;
 }
 
 export interface Link {
@@ -26,34 +31,37 @@ export interface Link {
   url: string;
 }
 
-export type ScatterStatus = 'permitted' | 'not-here' | 'park-decision' | 'prohibited';
+export type ScatterStatus = 'permitted' | 'not-here' | 'park-decision' | 'letter' | 'prohibited';
 
 export interface Destination {
   id: string;
   name: string;
   kinds: Array<'accessible' | 'extraordinary'>;
   photo: Photo | null;
-  why: string;
-  glance: {
+  description: string;
+  plan: {
     distance: string;
     difficulty: string;
-    time: string;
-    elevation: string;
+    time?: string;
+    elevation?: string;
     accessibility: string;
+    bestTime?: string;
     scattering: string;
   };
   scatterStatus: ScatterStatus;
-  gettingThere: { route: string; parking: string; points: Point[] };
-  journey: { trail: string; steps: string[]; notes?: string[] };
-  final: { description: string; points: Point[] };
-  scattering: { text: string; points?: Point[] };
+  drive: { route: string; points: Point[] };
+  trail?: { name: string; steps: string[]; notes?: string[] };
+  final: Point[];
+  scatterNote?: { text: string; points?: Point[] };
   links: Link[];
 }
 
 export interface Park {
   id: string;
   name: string;
+  short: string;
   state: string;
+  tagline: string;
   photo: Photo;
   intro: string;
   homepage: string;
@@ -62,7 +70,7 @@ export interface Park {
   scatterSummary: string;
   scatterFacts: string[];
   scatterLink: Link[];
-  seasons?: string;
+  beforeYouGo: string;
   destinations: Destination[];
 }
 
@@ -70,12 +78,29 @@ export const mapsUrl = (lat: number, lon: number) =>
   `https://www.google.com/maps/search/?api=1&query=${lat.toFixed(5)},${lon.toFixed(5)}`;
 
 const nps = (p: string) => `https://www.nps.gov/common/uploads/cropped_image/primary/${p}.jpg`;
+const local = (id: string) => ({ src: `/images/last-adventure/${id}.jpg`, srcWebp: `/images/last-adventure/${id}.webp` });
+const ccBy2 = { name: 'CC BY 2.0', url: 'https://creativecommons.org/licenses/by/2.0/' };
+const ccBy4 = { name: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' };
+const ccBySa3 = { name: 'CC BY-SA 3.0', url: 'https://creativecommons.org/licenses/by-sa/3.0/' };
+const ccBySa4 = { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' };
+const commons = (f: string) => `https://commons.wikimedia.org/wiki/File:${f}`;
+
+const tetonScatter = 'Only at a site you propose and the park approves';
+const yoseScatter = 'With a free permission letter, away from this spot';
+const gcScatter = 'Prohibited throughout the park';
+
+const paradiseRoadside: Point[] = [
+  { label: 'Ricksecker Point', lat: 46.76995, lon: -121.78089, source: 'nps' },
+  { label: 'Inspiration Point (roadside)', lat: 46.77338, lon: -121.74431, source: 'nps' },
+];
 
 export const parks: Park[] = [
   {
     id: 'canyonlands',
     name: 'Canyonlands National Park',
+    short: 'Canyonlands',
     state: 'Utah',
+    tagline: 'Rim overlooks, sandstone arches and the meeting of two great rivers.',
     photo: {
       src: nps('74177209-01FA-B216-D6D6DE60C5419B5E'),
       alt: 'A green and gray river converge below towering canyon walls',
@@ -87,8 +112,8 @@ export const parks: Park[] = [
     homepage: 'https://www.nps.gov/cany/',
     map: [
       { label: 'Official park maps', url: 'https://www.nps.gov/cany/planyourvisit/maps.htm' },
-      { label: 'Island in the Sky roads and trails map (PDF)', url: 'https://www.nps.gov/cany/planyourvisit/upload/IslandRoadsandTrailsUpdated24-508forweb.pdf' },
-      { label: 'Needles roads and trails map (PDF)', url: 'https://www.nps.gov/cany/planyourvisit/upload/NeedlesTrailsandRoads2026_with-Davis-Road-Setback-update.pdf' },
+      { label: 'Island in the Sky map (PDF)', url: 'https://www.nps.gov/cany/planyourvisit/upload/IslandRoadsandTrailsUpdated24-508forweb.pdf' },
+      { label: 'Needles map (PDF)', url: 'https://www.nps.gov/cany/planyourvisit/upload/NeedlesTrailsandRoads2026_with-Davis-Road-Setback-update.pdf' },
     ],
     scatterAllowed: 'Permitted with a permit',
     scatterSummary: 'Scattering is permitted with a permit, at six authorized locations only.',
@@ -103,7 +128,7 @@ export const parks: Park[] = [
       { label: 'Memorialization and scattering of ashes (NPS)', url: 'https://www.nps.gov/cany/planyourvisit/memorialization.htm' },
       { label: 'Map of authorized locations (NPS)', url: 'https://www.nps.gov/cany/learn/management/images/CANY_MemorializationMap.jpg' },
     ],
-    seasons:
+    beforeYouGo:
       'Open all year. The districts do not connect inside the park: Island in the Sky is reached from US 191 north of Moab by UT 313, and The Needles from US 191 south of Moab by UT 211. Winter can bring snow and ice (traction devices recommended). Carry 1 liter of water per person per hour.',
     destinations: [
       {
@@ -115,65 +140,60 @@ export const parks: Park[] = [
           alt: 'Two hikers sit on the edge of Green River Overlook at sunset',
           credit: 'NPS/Neal Herbert',
         },
-        why: 'The Green River winds through its channel 1,300 feet below, with The Maze and the White Rim spread out beyond. The park calls it one of the best places at Island in the Sky to watch the sun set, and it is one of the six places where scattering is authorized.',
-        glance: {
+        description:
+          'Step to the rim and the Green River appears 1,300 feet below, winding through its channel with The Maze and the White Rim Road spread out beyond. The park counts this among the best places at Island in the Sky to watch the sun set, and the walk from the car is short enough for everyone. It is also one of the six authorized scattering locations, so the farewell and the scattering can share one view.',
+        plan: {
           distance: 'About 0.1 mi from parking (map estimate)',
           difficulty: 'Easy',
-          time: 'A few minutes',
-          elevation: 'Minimal',
           accessibility: 'Wheelchair accessible (NPS)',
+          bestTime: 'Sunset',
           scattering: 'Permitted here with a permit',
         },
         scatterStatus: 'permitted',
-        gettingThere: {
-          route: 'From US 191 north of Moab, take UT 313 into Island in the Sky. Drive south on the scenic drive (Grand View Point Road), then turn west on Green River Overlook Road and follow it to the end.',
-          parking: 'Green River Overlook parking lot',
+        drive: {
+          route: 'UT 313 into Island in the Sky, south on Grand View Point Road, then west on Green River Overlook Road to its end.',
           points: [{ label: 'Parking', lat: 38.37958, lon: -109.88785 }],
         },
-        journey: {
-          trail: 'Overlook path',
-          steps: ['A short path leads from the parking lot to the overlook. There are no junctions.'],
-        },
-        final: {
-          description: 'A wide rim overlook facing southwest. As the sun goes down, the canyon turns copper and the river slips into shadow. The goodbye and the scattering can happen in the same place.',
-          points: [{ label: 'Overlook', lat: 38.37818, lon: -109.88819 }],
-        },
-        scattering: { text: 'Scattering is authorized here with a permit and under the park conditions above.' },
-        links: [{ label: 'Green River Overlook (NPS)', url: 'https://www.nps.gov/places/green-river-overlook.htm' }],
+        final: [{ label: 'Overlook', lat: 38.37818, lon: -109.88819 }],
+        links: [{ label: 'Green River Overlook', url: 'https://www.nps.gov/places/green-river-overlook.htm' }],
       },
       {
         id: 'mesa-arch',
         name: 'Mesa Arch',
         kinds: ['accessible'],
-        photo: null,
-        why: 'A 27-foot arch perched on the cliff edge, framing the canyon far below and the La Sal Mountains in the distance. It is the classic sunrise spot in the park.',
-        glance: {
+        photo: {
+          ...local('mesa-arch'),
+          alt: 'The view through Mesa Arch to the canyon and distant mountains',
+          credit: 'Larry D. Moore',
+          license: ccBy4,
+          sourceUrl: commons('View_Through_Mesa_Arch_Canyonlands_NP_Utah_2023.jpg'),
+        },
+        description:
+          'Arrive before dawn, find a place along the rim and wait. As the sun clears the horizon, light pours through this 27-foot arch on the edge of the mesa, framing the canyon far below and the La Sal Mountains beyond. The loop walk is short, and the park calls this its classic sunrise spot: a quiet, beautiful way to begin a day of remembering together.',
+        plan: {
           distance: '0.6 mi round-trip loop',
           difficulty: 'Easy',
           time: '30 minutes',
           elevation: '56 ft',
           accessibility: 'Not wheelchair accessible: rocky hill and stone steps',
-          scattering: 'Not at this spot',
+          bestTime: 'Sunrise',
+          scattering: 'Not at this spot (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From US 191 north of Moab, take UT 313 into Island in the Sky and continue on the scenic drive (Grand View Point Road) to the Mesa Arch lot.',
-          parking: 'Mesa Arch Loop parking',
+        drive: {
+          route: 'UT 313 into Island in the Sky, then Grand View Point Road to the Mesa Arch lot.',
           points: [{ label: 'Parking', lat: 38.38947, lon: -109.86784 }],
         },
-        journey: {
-          trail: 'Mesa Arch Trail (loop)',
+        trail: {
+          name: 'Mesa Arch Trail (loop)',
           steps: ['To avoid most of the stairs, walk clockwise to the arch, then retrace your steps.'],
         },
-        final: {
-          description: 'Arrive before dawn and watch the first light pour through the arch together.',
-          points: [{ label: 'Mesa Arch', lat: 38.38805, lon: -109.86345 }],
-        },
-        scattering: {
-          text: 'The nearest authorized location is Green River Overlook, on the spur road off the same scenic drive (permit required).',
+        final: [{ label: 'Arch', lat: 38.38805, lon: -109.86345 }],
+        scatterNote: {
+          text: 'The nearest authorized location is Green River Overlook, on the spur road off the same scenic drive. Permit required.',
           points: [{ label: 'Green River Overlook', lat: 38.37818, lon: -109.88819 }],
         },
-        links: [{ label: 'Mesa Arch Trail (NPS)', url: 'https://www.nps.gov/places/mesa-arch.htm' }],
+        links: [{ label: 'Mesa Arch Trail', url: 'https://www.nps.gov/places/mesa-arch.htm' }],
       },
       {
         id: 'grand-view-point',
@@ -184,36 +204,33 @@ export const parks: Park[] = [
           alt: 'White snow dusts the tops of the brown and red canyons from Grand View Point',
           credit: 'NPS/Jacob W. Frank',
         },
-        why: 'The southern tip of Island in the Sky. From here the White Rim, The Maze, The Needles and distant mountains all open up at once.',
-        glance: {
+        description:
+          'At the southern tip of Island in the Sky, the land simply falls away. From the paved overlook you can trace the White Rim, look across to The Maze and The Needles, and find distant mountains on the horizon. Those who want more can follow the rim another mile to a second viewpoint while others rest at the overlook. Rangers often give geology talks here from spring through fall.',
+        plan: {
           distance: 'Paved sidewalk to the overlook; full rim trail 1.8 mi round trip',
           difficulty: 'Easy',
           time: '1.5 hours for the full trail',
           elevation: '73 ft',
-          accessibility: 'Overlook wheelchair accessible (NPS); the trail beyond is rough with stone steps',
-          scattering: 'Not at this spot',
+          accessibility: 'Overlook wheelchair accessible (NPS); trail beyond is rough with stone steps',
+          scattering: 'Not at this spot (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From US 191 north of Moab, take UT 313 into Island in the Sky and drive to the end of Grand View Point Road.',
-          parking: 'Grand View Point parking',
+        drive: {
+          route: 'UT 313 into Island in the Sky, then to the end of Grand View Point Road.',
           points: [{ label: 'Parking', lat: 38.31147, lon: -109.85619 }],
         },
-        journey: {
-          trail: 'Grand View Point Trail',
+        trail: {
+          name: 'Grand View Point Trail',
           steps: [
             'Follow the short paved sidewalk to the overlook.',
-            'For more, the rim trail continues about 1 mile to a second viewpoint, then returns the same way.',
+            'For more, continue about 1 mile along the rim to a second viewpoint, then return the same way.',
           ],
         },
-        final: {
-          description: 'The paved overlook suits every member of the family; the second viewpoint at the end of the rim trail feels like standing at the end of the world.',
-          points: [
-            { label: 'Paved overlook', lat: 38.31015, lon: -109.85677 },
-            { label: 'Second viewpoint (end of trail)', lat: 38.30335, lon: -109.86782 },
-          ],
-        },
-        scattering: {
+        final: [
+          { label: 'Paved overlook', lat: 38.31015, lon: -109.85677 },
+          { label: 'Trail destination', lat: 38.30335, lon: -109.86782 },
+        ],
+        scatterNote: {
           text: 'The most practical authorized location is the White Rim Overlook Trail, a short drive north on the same road (easy, 1.8 mi round trip, 159 ft; very limited parking, do not park off the pavement). Orange Cliffs Overlook is also authorized. Permit required.',
           points: [
             { label: 'White Rim Overlook Trail parking', lat: 38.32233, lon: -109.85024 },
@@ -222,8 +239,8 @@ export const parks: Park[] = [
           ],
         },
         links: [
-          { label: 'Grand View Point (NPS)', url: 'https://www.nps.gov/places/grand-view-point.htm' },
-          { label: 'White Rim Overlook Trail (NPS)', url: 'https://www.nps.gov/places/white-rim-overlook-trail.htm' },
+          { label: 'Grand View Point', url: 'https://www.nps.gov/places/grand-view-point.htm' },
+          { label: 'White Rim Overlook Trail', url: 'https://www.nps.gov/places/white-rim-overlook-trail.htm' },
         ],
       },
       {
@@ -235,8 +252,9 @@ export const parks: Park[] = [
           alt: 'A green and gray river converge below towering canyon walls',
           credit: 'NPS/Veronica Verdin',
         },
-        why: 'The trail ends at a cliff 1,000 feet above the meeting of the Green and Colorado rivers. Two rivers become one: a powerful place to remember a life and a family.',
-        glance: {
+        description:
+          'This is a full day across dry, open desert country along the edge of the Needles faults. At the end, the trail stops at a cliff, and 1,000 feet below, the Green and Colorado rivers meet and become one. It is hard to imagine a more fitting place to remember a life that brought a family together. It is also an authorized scattering location, so the long walk can end with the farewell itself.',
+        plan: {
           distance: '11 mi round trip',
           difficulty: 'Strenuous',
           time: '5 to 6 hours',
@@ -245,26 +263,21 @@ export const parks: Park[] = [
           scattering: 'Permitted here with a permit',
         },
         scatterStatus: 'permitted',
-        gettingThere: {
-          route: 'From US 191 south of Moab, take UT 211 to the Needles entrance and follow the main park road to its end.',
-          parking: 'Big Spring Canyon Overlook (trailhead)',
+        drive: {
+          route: 'UT 211 to the Needles entrance, then the main park road to its end at Big Spring Canyon Overlook.',
           points: [{ label: 'Trailhead', lat: 38.17823, lon: -109.81716 }],
         },
-        journey: {
-          trail: 'Confluence Overlook Trail',
+        trail: {
+          name: 'Confluence Overlook Trail',
           steps: [
             'Head west across open country along the northern edge of the Needles faults.',
             'At about 4.0 mi, the Lower Red Lake Canyon route branches south. Continue straight (west).',
             'Walk the final 1.5 mi to the overlook.',
           ],
-          notes: ['Mileages are read from the official Needles map. Trails are marked with cairns, with signs at intersections. Carry all the water you need.'],
+          notes: ['Mileages from the official Needles map. Trails are marked with cairns, with signs at intersections. Carry all the water you need.'],
         },
-        final: {
-          description: 'A cliff-edge overlook above the junction of the two great rivers of the Colorado Plateau.',
-          points: [{ label: 'Confluence Overlook', lat: 38.18189, lon: -109.88099 }],
-        },
-        scattering: { text: 'Scattering is authorized here with a permit.' },
-        links: [{ label: 'Confluence Overlook Trail (NPS)', url: 'https://www.nps.gov/places/confluence-overlook-trail.htm' }],
+        final: [{ label: 'Overlook', lat: 38.18189, lon: -109.88099 }],
+        links: [{ label: 'Confluence Overlook Trail', url: 'https://www.nps.gov/places/confluence-overlook-trail.htm' }],
       },
       {
         id: 'druid-arch',
@@ -275,23 +288,23 @@ export const parks: Park[] = [
           alt: 'A large sandstone arch looms across the skyline on a bright, sunny day',
           credit: 'NPS/Veronica Verdin',
         },
-        why: 'The park calls the view here one of the most spectacular in The Needles: a towering stone arch like a cathedral at the head of Elephant Canyon. A full day of walking for the family members who love a challenge.',
-        glance: {
+        description:
+          'The walk up Elephant Canyon is a real adventure: deep sand, loose rock, a ladder and a final scramble. The reward is a towering arch standing at the head of the canyon, a view the park calls one of the most spectacular in The Needles. This is a day for the strong hikers in the family, who can carry the memories and the photographs home to everyone else.',
+        plan: {
           distance: '10.8 mi round trip',
           difficulty: 'Strenuous',
           time: '5 to 7 hours',
           elevation: '503 ft overall; cumulative gain is much greater',
           accessibility: 'Deep sand, one ladder and scrambling',
-          scattering: 'Not at this spot',
+          scattering: 'Not at this spot (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From US 191 south of Moab, take UT 211 to the Needles entrance, follow the main park road, then the Elephant Hill Access Road to the trailhead. Check road conditions with the park.',
-          parking: 'Elephant Hill Trailhead',
-          points: [{ label: 'Trailhead', lat: 38.14168, lon: -109.8276 }],
+        drive: {
+          route: 'UT 211 to the Needles entrance, the main park road, then the Elephant Hill Access Road. Check road conditions with the park.',
+          points: [{ label: 'Elephant Hill Trailhead', lat: 38.14168, lon: -109.8276 }],
         },
-        journey: {
-          trail: 'Chesler Park trail, then the Druid Arch trail in Elephant Canyon',
+        trail: {
+          name: 'Chesler Park trail, then the Druid Arch trail in Elephant Canyon',
           steps: [
             'Follow the first part of the Chesler Park trail.',
             'Branch off into the bottom of Elephant Canyon, through deep sand and loose rock.',
@@ -299,25 +312,24 @@ export const parks: Park[] = [
           ],
           notes: ['NPS sources differ on the length of the final steep section: 0.25 mi on the park map, 1.25 mi on the trail page.'],
         },
-        final: {
-          description: 'The base of the arch, high at the head of the canyon.',
-          points: [{ label: 'Druid Arch', lat: 38.08846, lon: -109.83184 }],
-        },
-        scattering: {
+        final: [{ label: 'Arch', lat: 38.08846, lon: -109.83184 }],
+        scatterNote: {
           text: 'The most practical authorized location is Confluence Overlook. Colorado River Overlook is also authorized; NPS describes its road as moderate and unpaved, and visitors can avoid the large rocks in the last 1.5 miles by parking and walking. Permit required.',
           points: [
             { label: 'Confluence Overlook', lat: 38.18189, lon: -109.88099 },
             { label: 'Colorado River Overlook', lat: 38.21579, lon: -109.82987 },
           ],
         },
-        links: [{ label: 'Druid Arch Trail (NPS)', url: 'https://www.nps.gov/places/druid-arch-trail.htm' }],
+        links: [{ label: 'Druid Arch Trail', url: 'https://www.nps.gov/places/druid-arch-trail.htm' }],
       },
     ],
   },
   {
     id: 'grand-teton',
     name: 'Grand Teton National Park',
+    short: 'Grand Teton',
     state: 'Wyoming',
+    tagline: 'Jagged peaks rising straight from alpine lakes and the Snake River.',
     photo: {
       src: nps('687B32E9-C51E-B209-01C817A7096A153D'),
       alt: 'A small lake surrounded by mountains reflects the mountainous scenery',
@@ -342,35 +354,34 @@ export const parks: Park[] = [
       { label: 'Scattering ashes (NPS)', url: 'https://www.nps.gov/grte/planyourvisit/ashes.htm' },
       { label: 'Application form (PDF)', url: 'https://www.nps.gov/grte/planyourvisit/upload/NPS-GRTE-10-930s-Application-for-SUP-SOA.pdf' },
     ],
-    seasons:
-      'The park is open all year, but several road entrances are closed or have limited vehicle access from November to May. Construction is underway across the park in 2026. Every featured destination sits at a lake or river, so plan the farewell there and propose a separate scattering site at least 100 yards from water.',
+    beforeYouGo:
+      'The park is open all year, but several road entrances are closed or have limited vehicle access from November to May, and construction is underway across the park in 2026. Every featured destination sits at a lake or river, so plan the farewell there and propose a separate scattering site at least 100 yards from water.',
     destinations: [
       {
         id: 'oxbow-bend',
         name: 'Oxbow Bend',
         kinds: ['accessible'],
-        photo: null,
-        why: 'Mount Moran mirrored in a slow bend of the Snake River, with wildlife often along the banks. One of the most photographed views in the park, and you can enjoy it without leaving the turnout.',
-        glance: {
+        photo: {
+          ...local('oxbow-bend'),
+          alt: 'Autumn color along the Snake River at Oxbow Bend, with the Teton Range beyond',
+          credit: 'Tony Hisgett',
+          license: ccBy2,
+          sourceUrl: commons('Oxbow_Bend_Grand_Teton_(8047187108).jpg'),
+        },
+        description:
+          'Mount Moran rises above a slow curve of the Snake River, and on a still day the mountain is mirrored in the water. Oxbow Bend sits right beside the park road, so grandparents, young children and anyone who cannot hike can share the view from the turnout. Bring something warm to drink, arrive early and watch the light change on the mountain together.',
+        plan: {
           distance: 'Roadside overlook',
           difficulty: 'Easy',
-          time: 'As long as you like',
-          elevation: 'None',
           accessibility: 'View from the turnout; surface details not published',
-          scattering: 'Not here (within 100 yards of the river)',
+          scattering: tetonScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Follow the park highway east from Jackson Lake Junction toward the Moran Entrance to the Oxbow Bend Turnout.',
-          parking: 'Oxbow Bend Turnout',
+        scatterStatus: 'park-decision',
+        drive: {
+          route: 'East from Jackson Lake Junction on the park highway toward the Moran Entrance, to the Oxbow Bend Turnout.',
           points: [{ label: 'Turnout', lat: 43.86617, lon: -110.54754 }],
         },
-        journey: { trail: 'None', steps: ['The view is right at the turnout.'] },
-        final: {
-          description: 'Gather early, as the mountain appears in the still water.',
-          points: [{ label: 'Oxbow Bend Overlook', lat: 43.86608, lon: -110.54758 }],
-        },
-        scattering: { text: 'Only at a site the family proposes in the permit application and the park approves, at least 100 yards from water.' },
+        final: [{ label: 'Overlook', lat: 43.86608, lon: -110.54758 }],
         links: [],
       },
       {
@@ -382,36 +393,28 @@ export const parks: Park[] = [
           alt: 'A trail winds through bushes towards a mountain range',
           credit: 'NPS Photo/J. Bonney',
         },
-        why: 'The park says this short walk offers some of the best views of the Teton Range: an alpine lake directly beneath the peaks, reached on a gentle trail most of the family can share.',
-        glance: {
+        description:
+          'An easy trail climbs an aspen-covered moraine, then the trees open and the Teton Range fills the sky ahead. The path ends at an alpine lake right at the foot of the peaks, a view the park calls one of the best of the range. At three miles round trip, it is a walk most of the family can share, and in winter it can be reached on snowshoes.',
+        plan: {
           distance: '3 mi round trip',
           difficulty: 'Easy',
           time: '1 to 2 hours',
           elevation: '360 ft',
           accessibility: 'Average slope 6%, with rocks and steps',
-          scattering: 'Not at the shore',
+          bestTime: 'Year-round; snowshoes or skis in winter',
+          scattering: tetonScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Enter at the Moose Entrance and drive north on Teton Park Road to the Taggart Lake Trailhead. The lot fills in summer; arrive early.',
-          parking: 'Taggart Lake Trailhead',
+        scatterStatus: 'park-decision',
+        drive: {
+          route: 'Moose Entrance, then north on Teton Park Road to the trailhead. The lot fills in summer; arrive early.',
           points: [{ label: 'Trailhead', lat: 43.69314, lon: -110.73294 }],
         },
-        journey: {
-          trail: 'Taggart Lake Trail',
-          steps: [
-            'Climb the aspen-covered moraine as the Tetons come into view.',
-            'At the Bradley Lake trail split, stay left for Taggart Lake.',
-            'The trail flattens out and reaches the lakeshore.',
-          ],
-          notes: ['In winter the lake can be reached on snowshoes or cross-country skis.'],
+        trail: {
+          name: 'Taggart Lake Trail',
+          steps: ['Climb the aspen-covered moraine.', 'At the Bradley Lake trail split, stay left for Taggart Lake.', 'The trail flattens out to the lakeshore.'],
         },
-        final: {
-          description: 'The east shore, where the trail meets the water beneath the peaks.',
-          points: [{ label: 'East shore', lat: 43.70513, lon: -110.75014 }],
-        },
-        scattering: { text: 'Only at a site the family proposes in the permit application and the park approves, at least 100 yards from the lake and its streams.' },
-        links: [{ label: 'Taggart Lake (NPS)', url: 'https://www.nps.gov/thingstodo/taggartlake.htm' }],
+        final: [{ label: 'East shore', lat: 43.70513, lon: -110.75014 }],
+        links: [{ label: 'Taggart Lake', url: 'https://www.nps.gov/thingstodo/taggartlake.htm' }],
       },
       {
         id: 'inspiration-point',
@@ -422,39 +425,35 @@ export const parks: Park[] = [
           alt: 'Hikers walk up a rocky trail with a cliff on the right',
           credit: 'NPS Photo/J. Bonney',
         },
-        why: 'A boat ride across Jenny Lake, a climb past 100-foot Hidden Falls, then a perch high above the lake and the valley of Jackson Hole. It feels like the kind of day a family might once have spent exploring together.',
-        glance: {
-          distance: '1.8 mi round trip by shuttle boat; 5.7 mi round trip on foot',
+        description:
+          'Start with a boat ride across Jenny Lake, then climb past Hidden Falls, a 100-foot cascade in the forest. A last set of switchbacks brings you out on a rocky perch high above the lake, looking across Jackson Hole. The boat keeps the hike short enough for many families; walking the shoreline instead turns it into a half-day adventure.',
+        plan: {
+          distance: '1.8 mi round trip by shuttle boat; 5.7 mi on foot',
           difficulty: 'Easy by boat; Moderate on foot',
           time: '2 to 4 hours',
           elevation: '550 ft by boat; 870 ft on foot',
           accessibility: 'Rock stairs, roots and steep switchbacks',
-          scattering: 'Park decision',
+          scattering: tetonScatter,
         },
         scatterStatus: 'park-decision',
-        gettingThere: {
-          route: 'Drive Teton Park Road and turn at South Jenny Lake. Parking fills in mid-summer; the park advises arriving before 9 am.',
-          parking: 'South Jenny Lake parking',
+        drive: {
+          route: 'Teton Park Road, then turn at South Jenny Lake. Parking fills in mid-summer; the park advises arriving before 9 am.',
           points: [{ label: 'Parking', lat: 43.75072, lon: -110.72309 }],
         },
-        journey: {
-          trail: 'Shuttle boat or South Jenny Lake Loop, then the Inspiration Point trail',
+        trail: {
+          name: 'Shuttle boat or South Jenny Lake Loop, then the Inspiration Point trail',
           steps: [
-            'Take the privately run shuttle boat across the lake (check hours and prices; tickets at the dock), or walk around the southern shore.',
+            'Take the privately run shuttle boat (check hours and prices; tickets at the dock), or walk the southern shore.',
             'From the west shore boat dock, climb past Hidden Falls.',
             'Continue up the switchbacks to the point.',
           ],
         },
-        final: {
-          description: 'A rocky viewpoint high above Jenny Lake, looking out over Jackson Hole.',
-          points: [
-            { label: 'Inspiration Point', lat: 43.76701, lon: -110.74826 },
-            { label: 'West shore boat dock', lat: 43.7672, lon: -110.74421 },
-            { label: 'Hidden Falls', lat: 43.76632, lon: -110.7512 },
-          ],
-        },
-        scattering: { text: 'Only at a site the family proposes in the permit application and the park approves, at least 100 yards from Jenny Lake and its streams and outside developed areas.' },
-        links: [{ label: 'Inspiration Point (NPS)', url: 'https://www.nps.gov/thingstodo/inspirationpoint.htm' }],
+        final: [
+          { label: 'West shore boat dock', lat: 43.7672, lon: -110.74421 },
+          { label: 'Hidden Falls', lat: 43.76632, lon: -110.7512 },
+          { label: 'Inspiration Point', lat: 43.76701, lon: -110.74826 },
+        ],
+        links: [{ label: 'Inspiration Point', url: 'https://www.nps.gov/thingstodo/inspirationpoint.htm' }],
       },
       {
         id: 'lake-solitude',
@@ -465,43 +464,42 @@ export const parks: Park[] = [
           alt: 'A small lake surrounded by mountains reflects the mountainous scenery',
           credit: 'NPS Photo/J. Bonney',
         },
-        why: 'A high alpine lake at the head of Cascade Canyon, ringed by peaks and rich in wildlife. A long, unforgettable day for strong hikers.',
-        glance: {
+        description:
+          'High at the head of the North Fork of Cascade Canyon, Lake Solitude lies in a basin ringed by peaks. Getting there is a long day: a boat across Jenny Lake, the climb into Cascade Canyon, and mile after mile of mountain views with chances to spot wildlife along the way. For the hikers in the family, standing on its shore together is an achievement worth remembering.',
+        plan: {
           distance: '14.4 mi round trip by shuttle boat; 18.3 mi on foot',
           difficulty: 'Strenuous by boat; very strenuous on foot',
           time: '9 to 13 hours',
           elevation: '2,670 ft by boat; 2,910 ft on foot',
           accessibility: 'Bridges, steps, roots, narrow sections and steep switchbacks',
-          scattering: 'Not at the shore',
+          bestTime: 'Summer after snowmelt, or fall before the first snow',
+          scattering: tetonScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Drive Teton Park Road and turn at South Jenny Lake. Arrive early.',
-          parking: 'South Jenny Lake parking',
+        scatterStatus: 'park-decision',
+        drive: {
+          route: 'Teton Park Road, then turn at South Jenny Lake. Arrive early.',
           points: [{ label: 'Parking', lat: 43.75072, lon: -110.72309 }],
         },
-        journey: {
-          trail: 'Cascade Canyon Trail and North Fork Cascade Canyon Trail',
+        trail: {
+          name: 'Cascade Canyon Trail and North Fork Cascade Canyon Trail',
           steps: [
             'Cross Jenny Lake by shuttle boat or walk the southern shore.',
             'Hike up Cascade Canyon to the Forks of Cascade Canyon.',
             'At the junction, go right on the North Fork Cascade Canyon Trail to the lake.',
           ],
-          notes: ['Best in summer after the snow melts and in fall before the first snow. Do not attempt it on snow without experience and the right equipment.'],
+          notes: ['Do not attempt it on snow without experience and the right equipment.'],
         },
-        final: {
-          description: 'The shore where the trail meets the lake, surrounded by peaks.',
-          points: [{ label: 'Lakeshore at the end of the trail', lat: 43.79444, lon: -110.84253 }],
-        },
-        scattering: { text: 'Only at a site the family proposes in the permit application and the park approves, at least 100 yards from the lake.' },
-        links: [{ label: 'Lake Solitude (NPS)', url: 'https://www.nps.gov/thingstodo/lakesolitude.htm' }],
+        final: [{ label: 'Lakeshore', lat: 43.79444, lon: -110.84253 }],
+        links: [{ label: 'Lake Solitude', url: 'https://www.nps.gov/thingstodo/lakesolitude.htm' }],
       },
     ],
   },
   {
     id: 'yosemite',
     name: 'Yosemite National Park',
+    short: 'Yosemite',
     state: 'California',
+    tagline: 'Granite walls, waterfalls and the unmistakable shape of Half Dome.',
     photo: {
       src: nps('0CFC2E25-B7B1-A12D-8621A2F88303D8EF'),
       alt: 'Large granite monoliths in the distance with a dense conifer forest below',
@@ -529,7 +527,7 @@ export const parks: Park[] = [
       { label: 'Scattering ashes (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/ashes.htm' },
       { label: 'Application (PDF)', url: 'https://www.nps.gov/yose/planyourvisit/upload/ashes.pdf' },
     ],
-    seasons:
+    beforeYouGo:
       'Highway 41 from Fresno, Highway 140 from Merced and Highway 120 from Manteca lead into the park; Wawona Road continues Highway 41. Glacier Point Road is usually open from May to November. None of the featured viewpoints can be the scattering spot; describe a location that meets the conditions in your request.',
     destinations: [
       {
@@ -541,170 +539,171 @@ export const parks: Park[] = [
           alt: 'Large granite monoliths in the distance with a dense conifer forest below',
           credit: 'NPS Photo/C. Jacoby',
         },
-        why: 'The defining Yosemite panorama: El Capitan, Half Dome and Bridalveil Fall framed together above the valley.',
-        glance: {
-          distance: 'Roadside',
+        description:
+          'Come out of the Wawona Tunnel and Yosemite Valley opens in front of you: El Capitan on one side, Bridalveil Fall on the other, Half Dome rising in the distance. It is the defining view of the valley, and it is right beside the parking area, with accessible parking and a short paved walk. Gather at the viewing area and take the family photograph you will keep.',
+        plan: {
+          distance: 'Roadside; short paved walk',
           difficulty: 'Easy',
-          time: 'As long as you like',
-          elevation: 'None',
-          accessibility: 'Designated accessible parking; the view is visible from the parking area or a short paved walk (NPS)',
-          scattering: 'Not here',
+          accessibility: 'Designated accessible parking; view from the parking area or a short paved walk (NPS)',
+          scattering: yoseScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Follow Highway 41 (Wawona Road) to the east end of the Wawona Tunnel, just before Yosemite Valley.',
-          parking: 'Tunnel View parking (Wawona Road)',
+        scatterStatus: 'letter',
+        drive: {
+          route: 'Highway 41 (Wawona Road) to the east end of the Wawona Tunnel, just before Yosemite Valley.',
           points: [{ label: 'Parking', lat: 37.71513, lon: -119.67674 }],
         },
-        journey: { trail: 'None', steps: ['A short paved walk leads to the pedestrian viewing area, which has a bronze tactile model of the valley.'] },
-        final: {
-          description: 'The viewing area above the valley. Come in the late afternoon, when the light warms the granite.',
-          points: [{ label: 'Tunnel View', lat: 37.71557, lon: -119.67689 }],
-        },
-        scattering: { text: 'At a location meeting the permission letter conditions: out of sight of roads, trails and parking, and at least 100 yards from water.' },
-        links: [{ label: 'Tunnel View (NPS)', url: 'https://www.nps.gov/places/000/tunnel-view.htm' }],
+        final: [{ label: 'Viewpoint', lat: 37.71557, lon: -119.67689 }],
+        links: [{ label: 'Tunnel View', url: 'https://www.nps.gov/places/000/tunnel-view.htm' }],
       },
       {
         id: 'glacier-point',
         name: 'Glacier Point',
         kinds: ['accessible'],
-        photo: null,
-        why: 'Standing 3,200 feet above Yosemite Valley, face to face with Half Dome and the High Sierra. Few places feel so close to the sky.',
-        glance: {
+        photo: {
+          ...local('glacier-point'),
+          alt: 'Half Dome seen from Glacier Point above Yosemite Valley',
+          credit: 'Diliff',
+          license: ccBySa3,
+          sourceUrl: commons('Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg'),
+        },
+        description:
+          'A short paved path leads to a railed overlook 3,200 feet above Yosemite Valley. Half Dome stands directly across from you, the High Sierra stretches beyond, and the valley floor lies far below. Because the path is wheelchair accessible, nearly everyone in the family can stand together at the edge of one of the great views in Yosemite.',
+        plan: {
           distance: '300 yards one way',
           difficulty: 'Easy',
           time: '10 to 15 minutes',
           elevation: 'Paved, gentle incline',
           accessibility: 'Wheelchair accessible via a 300-yard paved switchback path (NPS)',
-          scattering: 'Not here',
+          bestTime: 'Glacier Point Road is usually open May to November',
+          scattering: yoseScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and follow it to its end, a little under an hour from Yosemite Valley. There is no shuttle from the valley.',
-          parking: 'Glacier Point parking area',
+        scatterStatus: 'letter',
+        drive: {
+          route: 'Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and follow it to the end, a little under an hour from the valley. No shuttle from the valley.',
           points: [{ label: 'Parking', lat: 37.72733, lon: -119.5759 }],
         },
-        journey: { trail: 'Glacier Point Overlook path', steps: ['Follow the paved path from the parking area to the overlook.'] },
-        final: {
-          description: 'The railed overlook at the rim. Sunset turns Half Dome gold.',
-          points: [{ label: 'Glacier Point', lat: 37.73067, lon: -119.57367 }],
-        },
-        scattering: { text: 'At a location meeting the permission letter conditions: out of sight of roads, trails and parking, and at least 100 yards from water.' },
+        final: [{ label: 'Overlook', lat: 37.73067, lon: -119.57367 }],
         links: [
-          { label: 'Glacier Point (NPS)', url: 'https://www.nps.gov/places/000/glacier-point.htm' },
-          { label: 'Day hikes along Glacier Point Road (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' },
+          { label: 'Glacier Point', url: 'https://www.nps.gov/places/000/glacier-point.htm' },
+          { label: 'Glacier Point Road hikes', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' },
         ],
       },
       {
         id: 'taft-point',
         name: 'Taft Point',
         kinds: ['accessible', 'extraordinary'],
-        photo: null,
-        why: 'A walk through forest and meadow ends abruptly at the sheer rim of Yosemite Valley, looking across at El Capitan and Yosemite Falls, beside the deep cracks called The Fissures.',
-        glance: {
+        photo: {
+          ...local('taft-point'),
+          alt: 'Taft Point on the rim above Yosemite Valley',
+          credit: 'Dave from San Jose, CA, USA',
+          license: ccBy2,
+          sourceUrl: commons('Taft_Point_Panorama.jpg'),
+        },
+        description:
+          'An easy walk through forest and meadow ends suddenly at the rim of Yosemite Valley. Beside you, deep cracks called The Fissures cut into the granite; across the valley stand El Capitan and Yosemite Falls. It is a short hike with a dramatic edge, best for families comfortable around heights, and a view none of you will forget.',
+        plan: {
           distance: '2.2 mi round trip',
           difficulty: 'Easy',
           time: '1 to 2 hours',
           elevation: '200 ft, on the return',
           accessibility: 'Forest and meadow trail; exposed cliff edges',
-          scattering: 'Not here',
+          bestTime: 'Glacier Point Road is usually open May to November',
+          scattering: yoseScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and drive to the Sentinel Dome/Taft Point Trailhead.',
-          parking: 'Sentinel Dome/Taft Point Trailhead',
+        scatterStatus: 'letter',
+        drive: {
+          route: 'Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and drive to the Sentinel Dome/Taft Point Trailhead.',
           points: [{ label: 'Trailhead', lat: 37.71246, lon: -119.58658 }],
         },
-        journey: {
-          trail: 'Taft Point trail',
+        trail: {
+          name: 'Taft Point trail',
           steps: [
-            'Shortly after the trailhead the trail splits. Bear left (west) for Taft Point; the right fork leads north to Sentinel Dome.',
+            'Shortly after the trailhead the trail splits. Bear left (west) for Taft Point; the right fork leads to Sentinel Dome.',
             'Continue through forest and meadow to the rim beside The Fissures.',
           ],
-          notes: ['The junction is read from the official NPS Glacier Point Road trail map. Keep well back from the cliff edges.'],
+          notes: ['Junction read from the official NPS Glacier Point Road trail map. Keep well back from the cliff edges.'],
         },
-        final: {
-          description: 'A rocky point on the rim with a sheer drop to the valley floor.',
-          points: [{ label: 'Taft Point', lat: 37.71311, lon: -119.60461 }],
-        },
-        scattering: { text: 'At a location meeting the permission letter conditions: out of sight of roads, trails and parking, and at least 100 yards from water.' },
-        links: [{ label: 'Day hikes along Glacier Point Road (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' }],
+        final: [{ label: 'Taft Point', lat: 37.71311, lon: -119.60461 }],
+        links: [{ label: 'Glacier Point Road hikes', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' }],
       },
       {
         id: 'sentinel-dome',
         name: 'Sentinel Dome',
         kinds: ['extraordinary'],
-        photo: null,
-        why: 'A short climb up a granite dome rewards you with a full 360-degree view of Yosemite.',
-        glance: {
+        photo: {
+          ...local('sentinel-dome'),
+          alt: 'The bare granite of Sentinel Dome in Yosemite National Park',
+          credit: 'Supercarwaar',
+          license: ccBySa4,
+          sourceUrl: commons('Sentinel_Dome,_Yosemite_NP.jpg'),
+        },
+        description:
+          'A mile of trail and a short scramble up bare granite bring you to the top of Sentinel Dome, where Yosemite spreads out in every direction. From the summit you can see Half Dome and the High Sierra in one sweeping, 360-degree view. It is a short climb with a summit that feels like a celebration, a fine place to raise a toast together.',
+        plan: {
           distance: '2 mi round trip',
           difficulty: 'Moderate',
           time: '1 to 2 hours',
           elevation: '400 ft',
-          accessibility: 'The final climb is a scramble up granite',
-          scattering: 'Not here',
+          accessibility: 'Final climb is a scramble up granite',
+          bestTime: 'Glacier Point Road is usually open May to November',
+          scattering: yoseScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'From Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and drive to the Sentinel Dome/Taft Point Trailhead.',
-          parking: 'Sentinel Dome/Taft Point Trailhead',
+        scatterStatus: 'letter',
+        drive: {
+          route: 'Highway 41 (Wawona Road), turn at Chinquapin onto Glacier Point Road and drive to the Sentinel Dome/Taft Point Trailhead.',
           points: [{ label: 'Trailhead', lat: 37.71246, lon: -119.58658 }],
         },
-        journey: {
-          trail: 'Sentinel Dome trail',
+        trail: {
+          name: 'Sentinel Dome trail',
           steps: ['Shortly after the trailhead, bear right (north) at the split.', 'Scramble up the side of the dome to the summit.'],
           notes: ['Stay off the domes during thunderstorms.'],
         },
-        final: {
-          description: 'The open granite summit, with the whole park around you.',
-          points: [{ label: 'Sentinel Dome summit', lat: 37.72298, lon: -119.58433 }],
-        },
-        scattering: { text: 'At a location meeting the permission letter conditions: out of sight of roads, trails and parking, and at least 100 yards from water.' },
-        links: [{ label: 'Day hikes along Glacier Point Road (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' }],
+        final: [{ label: 'Summit', lat: 37.72298, lon: -119.58433 }],
+        links: [{ label: 'Glacier Point Road hikes', url: 'https://www.nps.gov/yose/planyourvisit/glacierhikes.htm' }],
       },
       {
         id: 'half-dome',
         name: 'Half Dome',
         kinds: ['extraordinary'],
-        photo: null,
-        why: 'Yosemite’s icon, rising nearly 5,000 feet above the valley. The last 400 feet are climbed on steel cables, a once-in-a-lifetime summit.',
-        glance: {
+        photo: {
+          ...local('half-dome'),
+          alt: 'Hikers climbing the cables up the granite of Half Dome',
+          credit: 'Lucas·G',
+          license: ccBySa4,
+          sourceUrl: commons('California,_Yosemite_National_Park,_Half_Dome,_hiking_up.jpg'),
+          position: '50% 35%',
+        },
+        description:
+          'For many hikers, Half Dome is the climb of a lifetime. The trail passes Vernal and Nevada Falls and Liberty Cap before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It takes a permit, an early start and a long, hard day. For someone who always talked about making this climb, carrying them to the top could be the ultimate tribute.',
+        plan: {
           distance: '14 to 16 mi round trip',
           difficulty: 'Strenuous',
           time: '10 to 12 hours',
           elevation: '4,800 ft',
           accessibility: 'Long, steep climb with cables at the top',
-          scattering: 'Not here',
+          bestTime: 'Cables up from late May to mid-October; permit required',
+          scattering: yoseScatter,
         },
-        scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Enter Yosemite Valley by Highway 41, 120 or 140 and drive to Curry Village. Trailhead parking is just beyond Curry Village; Happy Isles is shuttle stop #16.',
-          parking: 'Trailhead parking beyond Curry Village',
+        scatterStatus: 'letter',
+        drive: {
+          route: 'Into Yosemite Valley by Highway 41, 120 or 140, then to Curry Village. Trailhead parking is just beyond Curry Village; Happy Isles is shuttle stop #16.',
           points: [
             { label: 'Trailhead parking', lat: 37.73501, lon: -119.56646 },
             { label: 'Happy Isles Trailhead', lat: 37.73282, lon: -119.55778 },
           ],
         },
-        journey: {
-          trail: 'Mist Trail or John Muir Trail, then the Half Dome Trail',
-          steps: [
-            'Climb past Vernal and Nevada Falls and Liberty Cap.',
-            'Continue to the subdome and the base of the cables.',
-            'Climb the final 400 feet on the cables.',
-          ],
+        trail: {
+          name: 'Mist Trail or John Muir Trail, then the Half Dome Trail',
+          steps: ['Climb past Vernal and Nevada Falls and Liberty Cap.', 'Continue to the subdome and the base of the cables.', 'Climb the final 400 feet on the cables.'],
           notes: [
-            'A permit is required whenever the cables are up, normally from the Friday before Memorial Day until the day after the second Monday in October. Preseason lottery March 1 to 31, plus daily lotteries. $10 per application, plus $10 per person when awarded.',
+            'Permit required whenever the cables are up, normally from the Friday before Memorial Day until the day after the second Monday in October. Preseason lottery March 1 to 31, plus daily lotteries. $10 per application, plus $10 per person when awarded.',
             'Set a turnaround time (for example, turn back if you have not reached the top by 3:30 pm). Never climb the cables when the rock is wet.',
           ],
         },
-        final: {
-          description: 'The broad granite summit, high above the valley floor.',
-          points: [{ label: 'Half Dome summit', lat: 37.746, lon: -119.53325 }],
-        },
-        scattering: { text: 'At a location meeting the permission letter conditions: out of sight of roads, trails and parking, and at least 100 yards from water.' },
+        final: [{ label: 'Summit', lat: 37.746, lon: -119.53325 }],
         links: [
-          { label: 'Half Dome day hike (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/halfdome.htm' },
-          { label: 'Half Dome permits (NPS)', url: 'https://www.nps.gov/yose/planyourvisit/hdpermits.htm' },
+          { label: 'Half Dome day hike', url: 'https://www.nps.gov/yose/planyourvisit/halfdome.htm' },
+          { label: 'Half Dome permits', url: 'https://www.nps.gov/yose/planyourvisit/hdpermits.htm' },
         ],
       },
     ],
@@ -712,7 +711,9 @@ export const parks: Park[] = [
   {
     id: 'mount-rainier',
     name: 'Mount Rainier National Park',
+    short: 'Mount Rainier',
     state: 'Washington',
+    tagline: 'An ice-clad volcano rising above wildflower meadows.',
     photo: {
       src: 'https://www.nps.gov/mora/planyourvisit/images/Paradise-Wildflower-Meadow_NPSPhoto_webtop.jpeg',
       alt: 'Wildflowers paint a meadow in blues and purples',
@@ -741,7 +742,7 @@ export const parks: Park[] = [
       { label: 'Permits and reservations (NPS)', url: 'https://www.nps.gov/mora/planyourvisit/permitsandreservations.htm' },
       { label: 'Special use permit locations map (NPS)', url: 'https://www.nps.gov/maps/stories/mt-rainier-national-park-special-use-permit-locations.html' },
     ],
-    seasons:
+    beforeYouGo:
       'Paradise: SR 706 to the Nisqually Entrance, then Longmire, then 12 miles to Paradise (the Longmire to Paradise road closes nightly from November 1). Sunrise: SR 410 to the White River Entrance, then 13 miles on the Sunrise road. The Sunrise Visitor Center is open from early July to early September.',
     destinations: [
       {
@@ -753,38 +754,32 @@ export const parks: Park[] = [
           alt: 'Braided cascade with glaciated mountain behind it',
           credit: 'NPS Photo',
         },
-        why: 'A braided waterfall in the Paradise wildflower meadows, with the glaciers of Mount Rainier rising behind it.',
-        glance: {
+        description:
+          'At Paradise, a short paved walk through the meadows leads to Edith Creek, where Myrtle Falls tumbles down with the glaciers of Mount Rainier rising directly behind it. It is one of the easiest ways to stand in front of the mountain, suitable for strollers and wheelchairs with help, and a gentle outing every generation of the family can share.',
+        plan: {
           distance: '1 mi round trip',
           difficulty: 'Easy',
           time: '35 minutes',
           elevation: '100 ft',
-          accessibility: 'Suitable for wheelchairs with help, and strollers (NPS); a steep stairway descends to the best viewpoint',
-          scattering: 'Not here',
+          accessibility: 'Wheelchairs with help, and strollers (NPS); a steep stairway leads down to the best viewpoint',
+          scattering: 'Not here; at designated roadside locations (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Take SR 706 to the Nisqually Entrance, continue through Longmire and drive 12 miles to Paradise.',
-          parking: 'Skyline Trailhead, north side of the upper parking lot next to the Jackson Visitor Center',
-          points: [{ label: 'Trailhead', lat: 46.78642, lon: -121.73645 }],
+        drive: {
+          route: 'SR 706 to the Nisqually Entrance, through Longmire and 12 miles on to Paradise. Skyline Trailhead is on the north side of the upper lot, next to the Jackson Visitor Center.',
+          points: [{ label: 'Skyline Trailhead', lat: 46.78642, lon: -121.73645 }],
         },
-        journey: {
-          trail: 'Skyline Trail',
+        trail: {
+          name: 'Skyline Trail',
           steps: ['Walk northeast on the paved Skyline Trail to Edith Creek.', 'A steep stairway descends to the falls viewpoint.'],
         },
-        final: {
-          description: 'The falls viewpoint below the Skyline Trail, with the mountain behind the cascade.',
-          points: [{ label: 'Myrtle Falls', lat: 46.79137, lon: -121.73249 }],
-        },
-        scattering: {
-          text: 'At the designated roadside locations below Paradise. Ricksecker Point: any day, 3 pm to 10 am, up to 30 people, multiple permits a day. Inspiration Point: any time, up to 30 people, one permit at a time. Permit required.',
-          points: [
-            { label: 'Ricksecker Point', lat: 46.76995, lon: -121.78089, source: 'nps' },
-            { label: 'Inspiration Point (roadside)', lat: 46.77338, lon: -121.74431, source: 'nps' },
-          ],
+        final: [{ label: 'Falls viewpoint', lat: 46.79137, lon: -121.73249 }],
+        scatterNote: {
+          text: 'Paradise is not an authorized scattering area. Use a designated roadside location below Paradise: Ricksecker Point (any day, 3 pm to 10 am, up to 30 people, multiple permits a day) or Inspiration Point (any time, up to 30 people, one permit at a time). Permit required.',
+          points: paradiseRoadside,
         },
         links: [
-          { label: 'Myrtle Falls (NPS)', url: 'https://www.nps.gov/places/myrtle-falls.htm' },
+          { label: 'Myrtle Falls', url: 'https://www.nps.gov/places/myrtle-falls.htm' },
           { label: 'Paradise area trails (PDF)', url: 'https://www.nps.gov/mora/planyourvisit/upload/2019-Paradise-Area-Trails_508.pdf' },
         ],
       },
@@ -792,52 +787,60 @@ export const parks: Park[] = [
         id: 'sunrise-point',
         name: 'Sunrise Point',
         kinds: ['accessible'],
-        photo: null,
-        why: 'The park describes nearly 360-degree views of the surrounding valleys, Mount Rainier and other Cascade volcanoes such as Mount Adams. It is also a designated scattering location, so the farewell and the scattering can happen together.',
-        glance: {
+        photo: {
+          ...local('sunrise-point'),
+          alt: 'Evening light from Sunrise Point in Mount Rainier National Park',
+          credit: 'Buidhe',
+          license: ccBySa4,
+          sourceUrl: commons('Sunset_from_Sunrise_Point_(7_October_2024)_4.jpg'),
+          position: '22% 50%',
+        },
+        description:
+          'From this overlook on the road to Sunrise, the view opens in nearly every direction: deep valleys, Mount Rainier and other Cascade volcanoes such as Mount Adams. It is one of the park’s designated scattering locations, so a family can gather, share stories as the evening light changes and scatter in the same place, all from beside the car.',
+        plan: {
           distance: 'Roadside',
           difficulty: 'Easy',
-          time: 'As long as you like',
-          elevation: 'None',
           accessibility: 'View from the parking area; surface details not published',
-          scattering: 'Permitted here with a permit (weekdays, 3 pm to 10 am)',
+          scattering: 'Permitted here with a permit: weekdays, 3 pm to 10 am, up to 30 people',
         },
         scatterStatus: 'permitted',
-        gettingThere: {
-          route: 'Take SR 410 to the White River Entrance and follow the Sunrise road to the Sunrise Point parking area.',
-          parking: 'Sunrise Point parking',
+        drive: {
+          route: 'SR 410 to the White River Entrance, then the Sunrise road to the Sunrise Point parking area.',
           points: [{ label: 'Parking', lat: 46.91742, lon: -121.58841 }],
         },
-        journey: { trail: 'None', steps: ['The viewpoint is at the parking area.'] },
-        final: {
-          description: 'A roadside overlook facing the mountain. An evening farewell here, as the last light catches the volcanoes, can end with the scattering itself.',
-          points: [{ label: 'Sunrise Point (designated location)', lat: 46.91743, lon: -121.58812, source: 'nps' }],
-        },
-        scattering: { text: 'Designated scattering location: weekdays only (no federal holidays), 3 pm to 10 am, up to 30 people, one permit at a time. Permit required.' },
-        links: [{ label: 'Sunrise (NPS)', url: 'https://www.nps.gov/mora/planyourvisit/sunrise.htm' }],
+        final: [{ label: 'Designated location', lat: 46.91743, lon: -121.58812, source: 'nps' }],
+        scatterNote: { text: 'Weekdays only (no federal holidays), 3 pm to 10 am, up to 30 people, one permit at a time.' },
+        links: [{ label: 'Sunrise', url: 'https://www.nps.gov/mora/planyourvisit/sunrise.htm' }],
       },
       {
         id: 'panorama-point',
         name: 'Panorama Point',
         kinds: ['extraordinary'],
-        photo: null,
-        why: 'A climb above the Paradise meadows to a close view of the mountain’s glaciers, with the Tatoosh Range and distant volcanoes on the horizon.',
-        glance: {
+        photo: {
+          ...local('panorama-point'),
+          alt: 'Mount Rainier seen from Panorama Point',
+          credit: 'NPS photo by Emily Brouwer',
+          license: ccBy2,
+          sourceUrl: commons('Mount_Rainier_from_Panorama_Point_(14679537685).jpg'),
+          position: '50% 40%',
+        },
+        description:
+          'The Skyline Trail climbs steadily above the Paradise meadows until Panorama Point puts you face to face with Mount Rainier and its glaciers. It is a real climb of 1,700 feet, best for confident hikers. Keep going on the High Skyline loop to turn it into a full, unforgettable day on the mountain.',
+        plan: {
           distance: '4 mi round trip',
           difficulty: 'Difficult',
           time: '3 hours',
           elevation: '1,700 ft',
           accessibility: 'Steep mountain trail',
-          scattering: 'Not here',
+          scattering: 'Not here; at designated roadside locations (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Take SR 706 to the Nisqually Entrance, continue through Longmire and drive 12 miles to Paradise.',
-          parking: 'Skyline Trailhead, north side of the upper parking lot next to the Jackson Visitor Center',
-          points: [{ label: 'Trailhead', lat: 46.78642, lon: -121.73645 }],
+        drive: {
+          route: 'SR 706 to the Nisqually Entrance, through Longmire and 12 miles on to Paradise. Skyline Trailhead is on the north side of the upper lot, next to the Jackson Visitor Center.',
+          points: [{ label: 'Skyline Trailhead', lat: 46.78642, lon: -121.73645 }],
         },
-        journey: {
-          trail: 'Skyline Trail and Golden Gate Trail',
+        trail: {
+          name: 'Skyline Trail and Golden Gate Trail',
           steps: [
             'Climb the Skyline Trail, then the Golden Gate Trail, to Panorama Point.',
             'Alternative: the Deadhorse Creek Trail from the lower lot meets the Skyline Trail near Glacier Vista.',
@@ -845,16 +848,10 @@ export const parks: Park[] = [
           ],
           notes: ['A pit toilet at Panorama Point is open in summer only.'],
         },
-        final: {
-          description: 'A high viewpoint on the mountain’s flank, facing the glaciers.',
-          points: [{ label: 'Panorama Point', lat: 46.80356, lon: -121.72971 }],
-        },
-        scattering: {
-          text: 'At the designated roadside locations below Paradise: Ricksecker Point (any day, 3 pm to 10 am, up to 30 people) or Inspiration Point (any time, up to 30 people). Permit required.',
-          points: [
-            { label: 'Ricksecker Point', lat: 46.76995, lon: -121.78089, source: 'nps' },
-            { label: 'Inspiration Point (roadside)', lat: 46.77338, lon: -121.74431, source: 'nps' },
-          ],
+        final: [{ label: 'Panorama Point', lat: 46.80356, lon: -121.72971 }],
+        scatterNote: {
+          text: 'Paradise is not an authorized scattering area. Use Ricksecker Point (any day, 3 pm to 10 am, up to 30 people) or Inspiration Point (any time, up to 30 people). Permit required.',
+          points: paradiseRoadside,
         },
         links: [{ label: 'Paradise area trails (PDF)', url: 'https://www.nps.gov/mora/planyourvisit/upload/2019-Paradise-Area-Trails_508.pdf' }],
       },
@@ -862,42 +859,42 @@ export const parks: Park[] = [
         id: 'mount-fremont-lookout',
         name: 'Mount Fremont Lookout',
         kinds: ['extraordinary'],
-        photo: null,
-        why: 'A historic fire lookout on a high ridge, facing Mount Rainier across Grand Park. Watching the mountain from a place built to watch over the land feels fitting.',
-        glance: {
+        photo: {
+          ...local('mount-fremont-lookout'),
+          alt: 'The Mount Fremont fire lookout on its rocky ridge',
+          credit: 'Steve Redman, NPS',
+          license: { name: 'Public domain', url: 'https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS' },
+          sourceUrl: commons('Fremont_Lookout_(7a7e9acb7ae747beb074f5bf4111bbc9).JPG'),
+        },
+        description:
+          'Walk the high ridge above Sunrise to an old fire lookout perched on a rocky point, with Mount Rainier filling the view across Grand Park. The trail crosses open country past Frozen Lake, and the lookout itself, built to keep watch over the land, makes a moving place to pause, share memories and look back at the mountain together.',
+        plan: {
           distance: '5.6 mi round trip',
           difficulty: 'Moderate',
           time: '3.5 hours',
           elevation: '900 ft',
           accessibility: 'Mountain trail',
-          scattering: 'Not at the lookout',
+          scattering: 'Not at the lookout; at Sunrise Point (see below)',
         },
         scatterStatus: 'not-here',
-        gettingThere: {
-          route: 'Take SR 410 to the White River Entrance and follow the Sunrise road 13 miles to Sunrise.',
-          parking: 'Sourdough Ridge Trailhead, by the Sunrise picnic area and day lodge',
+        drive: {
+          route: 'SR 410 to the White River Entrance, then 13 miles on the Sunrise road to Sunrise. The trail starts at the upper end of the picnic area.',
           points: [
-            { label: 'Trailhead', lat: 46.9148, lon: -121.64243 },
+            { label: 'Sourdough Ridge Trailhead', lat: 46.9148, lon: -121.64243 },
             { label: 'Sunrise picnic area', lat: 46.91522, lon: -121.64454 },
           ],
         },
-        journey: {
-          trail: 'Sourdough Ridge Trail and Mount Fremont Trail',
-          steps: [
-            'Climb the Sourdough Ridge Trail to the junction at Frozen Lake.',
-            'Take the Mount Fremont Trail to the old fire lookout.',
-          ],
+        trail: {
+          name: 'Sourdough Ridge Trail and Mount Fremont Trail',
+          steps: ['Climb the Sourdough Ridge Trail to the junction at Frozen Lake.', 'Take the Mount Fremont Trail to the old fire lookout.'],
         },
-        final: {
-          description: 'The lookout and its ridge-top viewpoint.',
-          points: [
-            { label: 'Mount Fremont Lookout', lat: 46.93404, lon: -121.67574 },
-            { label: 'Frozen Lake junction', lat: 46.9191, lon: -121.66669 },
-          ],
-        },
-        scattering: {
-          text: 'On the drive out, at the designated Sunrise Point location (weekdays, 3 pm to 10 am, up to 30 people). The lookout lies in an authorized area, but the 100-yard rule would mean leaving the trail, so a spot there is possible only if the permit office specifies one.',
-          points: [{ label: 'Sunrise Point (designated location)', lat: 46.91743, lon: -121.58812, source: 'nps' }],
+        final: [
+          { label: 'Frozen Lake junction', lat: 46.9191, lon: -121.66669 },
+          { label: 'Lookout', lat: 46.93404, lon: -121.67574 },
+        ],
+        scatterNote: {
+          text: 'Scatter on the drive out at the designated Sunrise Point location (weekdays, 3 pm to 10 am, up to 30 people). The lookout lies in an authorized area, but the 100-yard rule would mean leaving the trail, so a spot there is possible only if the permit office specifies one.',
+          points: [{ label: 'Sunrise Point', lat: 46.91743, lon: -121.58812, source: 'nps' }],
         },
         links: [{ label: 'Sunrise area trails (PDF)', url: 'https://www.nps.gov/mora/planyourvisit/upload/2020-Sunrise-Area-Trails_access.pdf' }],
       },
@@ -906,7 +903,9 @@ export const parks: Park[] = [
   {
     id: 'grand-canyon',
     name: 'Grand Canyon National Park',
+    short: 'Grand Canyon',
     state: 'Arizona',
+    tagline: 'A mile-deep canyon of changing light, seen from the rim and from the trail.',
     photo: {
       src: nps('DC1C0370-C525-3032-77CC28C8F979E458'),
       alt: 'A circular stone tower, 70 feet tall, perched on the edge of a vast canyon',
@@ -924,7 +923,7 @@ export const parks: Park[] = [
       'Plan the farewell here, and scatter separately at a legally permitted location outside the park.',
     ],
     scatterLink: [{ label: 'Superintendent’s Compendium (PDF)', url: 'https://www.nps.gov/grca/learn/management/upload/grca-supt-compendium.pdf' }],
-    seasons:
+    beforeYouGo:
       'The South Rim is open all year. South Entrance: I-40 to Williams, then Highway 64 north, or Highway 180 from Flagstaff. East Entrance (Desert View): Highway 89 to Cameron, then Highway 64 west. Phantom Ranch, the river bridges and the North Kaibab Trail are closed after flooding; check current trail status before hiking.',
     destinations: [
       {
@@ -936,28 +935,23 @@ export const parks: Park[] = [
           alt: 'A circular stone tower, 70 feet tall, perched on the edge of a vast canyon',
           credit: 'NPS/M. Quinn',
         },
-        why: 'Mary Colter’s 1932 stone tower, a National Historic Landmark, rises from the canyon’s eastern rim. From here the Colorado River emerges from narrow Marble Canyon into the vast Grand Canyon.',
-        glance: {
+        description:
+          'At the eastern end of the South Rim, Mary Colter’s 1932 stone tower seems to grow out of the canyon edge. Its round View Room was designed as a place to sit and take in the canyon, and from the rim you can see the Colorado River leave narrow Marble Canyon for the vast Grand Canyon. It is a short walk from the parking area, close enough for the whole family.',
+        plan: {
           distance: '0.25 mi from the main parking area',
           difficulty: 'Easy',
-          time: 'As long as you like',
-          elevation: 'Minimal',
-          accessibility: 'Short walk through the developed area; the tower’s upper floors are reached by stairs',
-          scattering: 'Prohibited',
+          accessibility: 'Short walk through the developed area; upper tower floors by stairs',
+          bestTime: 'Upper floors 9 am to 4 pm when staffing allows (free timed tickets, 25 at a time)',
+          scattering: gcScatter,
         },
         scatterStatus: 'prohibited',
-        gettingThere: {
-          route: 'Take Highway 64 to the East Entrance, or drive Desert View Drive 23 miles east from Grand Canyon Village.',
-          parking: 'Desert View main parking area',
+        drive: {
+          route: 'Highway 64 to the East Entrance, or Desert View Drive 23 miles east from Grand Canyon Village.',
           points: [{ label: 'Parking', lat: 36.04174, lon: -111.82797 }],
         },
-        journey: { trail: 'Desert View walkway', steps: ['Walk past the restrooms, market and trading post. The Watchtower is then in plain view.'] },
-        final: {
-          description: 'Share memories in the kiva-style View Room, then step out to the rim for sunset. The upper floors open 9 am to 4 pm when staffing allows, with free timed tickets and room for 25 people at a time.',
-          points: [{ label: 'Desert View Watchtower', lat: 36.04401, lon: -111.82621 }],
-        },
-        scattering: { text: 'Scattering is prohibited throughout the park. No specific outside location has been verified for this guide.' },
-        links: [{ label: 'Desert View Watchtower (NPS)', url: 'https://www.nps.gov/places/000/desert-view-watchtower.htm' }],
+        trail: { name: 'Desert View walkway', steps: ['Walk past the restrooms, market and trading post. The Watchtower is then in plain view.'] },
+        final: [{ label: 'Watchtower', lat: 36.04401, lon: -111.82621 }],
+        links: [{ label: 'Desert View Watchtower', url: 'https://www.nps.gov/places/000/desert-view-watchtower.htm' }],
       },
       {
         id: 'ooh-aah-point',
@@ -969,38 +963,34 @@ export const parks: Park[] = [
           credit: 'NPS/M. Quinn',
           caption: 'South Kaibab Trail',
         },
-        why: 'Your first steps below the rim, on a ridgeline trail where the canyon opens beneath you. Ooh Aah Point earns its name; Cedar Ridge goes deeper still.',
-        glance: {
+        description:
+          'The South Kaibab Trail drops off the rim along a ridgeline, so the canyon opens beneath your feet almost from the first step. Ooh Aah Point, under a mile down, earns its name with a sweeping view into the depths; Cedar Ridge, farther on, takes you deeper still. Every step down is a step to climb back up, so pace the day for everyone in your group.',
+        plan: {
           distance: 'Ooh Aah Point 1.8 mi round trip; Cedar Ridge 3 mi round trip',
           difficulty: 'Moderate to Ooh Aah Point; Difficult to Cedar Ridge',
           time: '1 to 2 hours; 2 to 4 hours',
           elevation: '790 ft; 1,120 ft',
           accessibility: 'Steep canyon trail; not wheelchair accessible',
-          scattering: 'Prohibited',
+          scattering: gcScatter,
         },
         scatterStatus: 'prohibited',
-        gettingThere: {
-          route: 'Enter by the South Entrance (Highway 64) and park at the Grand Canyon Visitor Center. There is no public parking at the trailhead: take the free Kaibab/Rim (Orange) shuttle, a 9-minute ride.',
-          parking: 'Grand Canyon Visitor Center, Lot P1',
+        drive: {
+          route: 'South Entrance (Highway 64) to the Grand Canyon Visitor Center. No public parking at the trailhead: take the free Kaibab/Rim (Orange) shuttle, a 9-minute ride.',
           points: [
             { label: 'Visitor Center Lot P1', lat: 36.05879, lon: -112.10649 },
             { label: 'South Kaibab Trailhead', lat: 36.05294, lon: -112.08374 },
           ],
         },
-        journey: {
-          trail: 'South Kaibab Trail',
+        trail: {
+          name: 'South Kaibab Trail',
           steps: ['Descend the switchbacks to Ooh Aah Point.', 'For Cedar Ridge, continue down the ridgeline.'],
-          notes: ['All trails into the canyon are steep and difficult, and the climb back up is the hard part. There is no water on the trail, and the trailhead water station is currently off.'],
+          notes: ['All trails into the canyon are steep and difficult. There is no water on the trail, and the trailhead water station is currently off.'],
         },
-        final: {
-          description: 'Two natural stopping points on the ridge, each with the canyon falling away below.',
-          points: [
-            { label: 'Ooh Aah Point', lat: 36.06151, lon: -112.08702 },
-            { label: 'Cedar Ridge', lat: 36.06416, lon: -112.08961 },
-          ],
-        },
-        scattering: { text: 'Scattering is prohibited throughout the park. No specific outside location has been verified for this guide.' },
-        links: [{ label: 'South Kaibab Trail (NPS)', url: 'https://www.nps.gov/places/000/south-kaibab-trail.htm' }],
+        final: [
+          { label: 'Ooh Aah Point', lat: 36.06151, lon: -112.08702 },
+          { label: 'Cedar Ridge', lat: 36.06416, lon: -112.08961 },
+        ],
+        links: [{ label: 'South Kaibab Trail', url: 'https://www.nps.gov/places/000/south-kaibab-trail.htm' }],
       },
       {
         id: 'plateau-point',
@@ -1012,39 +1002,41 @@ export const parks: Park[] = [
           credit: 'NPS/Ty Karlovetz',
           caption: 'Bright Angel Trail',
         },
-        why: 'A point standing directly above the Colorado River in the inner gorge, deep inside the canyon. A demanding day that few people ever take.',
-        glance: {
+        description:
+          'This is a full day into the heart of the canyon. The Bright Angel Trail switchbacks down to Havasupai Gardens, then a flat, exposed path leads out to Plateau Point, standing directly above the Colorado River in the inner gorge. For the strongest hikers in the family, it is a chance to look down on the river that carved it all and to carry a loved one’s memory there with you.',
+        plan: {
           distance: '12 mi round trip',
           difficulty: 'Strenuous',
           time: '9 to 12 hours',
           elevation: '3,080 ft',
           accessibility: 'Long, steep canyon trail; very exposed final section',
-          scattering: 'Prohibited',
+          scattering: gcScatter,
         },
         scatterStatus: 'prohibited',
-        gettingThere: {
-          route: 'Enter by the South Entrance (Highway 64) and follow Village Loop Drive. If there is no space near the trailhead, use Lot D by Maswik Lodge, about 0.4 mi away.',
-          parking: 'Bright Angel Trailhead (overflow: Lot D)',
+        drive: {
+          route: 'South Entrance (Highway 64), then Village Loop Drive. If there is no space near the trailhead, use Lot D by Maswik Lodge, about 0.4 mi away.',
           points: [
             { label: 'Bright Angel Trailhead', lat: 36.05728, lon: -112.14363 },
             { label: 'Lot D', lat: 36.05162, lon: -112.14378 },
           ],
         },
-        journey: {
-          trail: 'Bright Angel Trail and Plateau Point Trail',
-          steps: [
-            'Descend the Bright Angel Trail to Havasupai Gardens.',
-            'Take the Plateau Point Trail, about 3 mi round trip from there; relatively flat but very exposed.',
-          ],
+        trail: {
+          name: 'Bright Angel Trail and Plateau Point Trail',
+          steps: ['Descend the Bright Angel Trail to Havasupai Gardens.', 'Take the Plateau Point Trail, about 3 mi round trip from there; relatively flat but very exposed.'],
           notes: ['The park recommends checking with a ranger before attempting it as a day hike. Water status changes; some resthouse water stations have been off.'],
         },
-        final: {
-          description: 'The tip of the Tonto Platform, high above the river.',
-          points: [{ label: 'Plateau Point', lat: 36.09326, lon: -112.11609 }],
-        },
-        scattering: { text: 'Scattering is prohibited throughout the park. No specific outside location has been verified for this guide.' },
-        links: [{ label: 'Bright Angel Trail (NPS)', url: 'https://www.nps.gov/places/000/bright-angel-trail.htm' }],
+        final: [{ label: 'Plateau Point', lat: 36.09326, lon: -112.11609 }],
+        links: [{ label: 'Bright Angel Trail', url: 'https://www.nps.gov/places/000/bright-angel-trail.htm' }],
       },
     ],
   },
 ];
+
+/** Parks grouped by state, states and parks alphabetized. */
+export const states = [...new Set(parks.map((p) => p.state))]
+  .sort((a, b) => a.localeCompare(b))
+  .map((state) => ({
+    state,
+    id: state.toLowerCase().replace(/\s+/g, '-'),
+    parks: parks.filter((p) => p.state === state).sort((a, b) => a.short.localeCompare(b.short)),
+  }));

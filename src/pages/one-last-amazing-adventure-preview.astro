@@ -1,21 +1,19 @@
 ---
 // One Last Amazing Adventure: private five-park preview (Randy, November
-// 2026, Version 1.2). Built from the Version 1.1 research in
-// src/data/last-adventure/parks.ts. Review only: noindex, nofollow (also an
-// X-Robots-Tag header in vercel.json), out of the sitemap, llms.txt and site
-// search, never linked from the site, and not merged to production.
+// 2026, Version 1.5 editorial redesign). Built from the Version 1.1 research
+// in src/data/last-adventure/parks.ts. Review only: noindex, nofollow (also
+// an X-Robots-Tag header in vercel.json), out of the sitemap, llms.txt and
+// site search, never linked from the site, and not merged to production.
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { parks, mapsUrl, type Point, type ScatterStatus } from '@/data/last-adventure/parks';
+import { parks, states, mapsUrl, type Point, type Photo } from '@/data/last-adventure/parks';
 
 const total = parks.reduce((n, p) => n + p.destinations.length, 0);
-const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-const statusLabel: Record<ScatterStatus, string> = {
-  permitted: 'Scattering permitted here',
-  'not-here': 'Scatter elsewhere',
-  'park-decision': 'Park decides',
-  prohibited: 'Scattering prohibited',
-};
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
+const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
+const hero = parks.find((p) => p.id === 'yosemite')!.photo;
+const credit = (ph: Photo) => ph.credit;
 ---
 
 <BaseLayout
@@ -30,220 +28,322 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 >
   <article class="ola" data-page-type="utility" data-page-reason="Private, non-indexed preview of the One Last Amazing Adventure national parks guide.">
     <header class="ola-hero">
-      <img
-        class="ola-hero__img"
-        src={parks[2].photo.src}
-        alt={parks[2].photo.alt}
-        width="1600"
-        height="900"
-        fetchpriority="high"
-        referrerpolicy="no-referrer"
-      />
+      <img class="ola-hero__img" src={hero.src} alt={hero.alt} width="1600" height="900" fetchpriority="high" referrerpolicy="no-referrer" />
       <div class="ola-hero__shade"></div>
       <div class="ola-hero__text">
         <p class="ola-hero__flag">Private preview. Not published.</p>
         <h1>One Last Amazing Adventure</h1>
         <p class="ola-hero__sub">63 National Parks, Extraordinary Places to Say Goodbye</p>
       </div>
-      <p class="ola-credit ola-credit--hero">{parks[2].photo.caption}. Photo: {parks[2].photo.credit}</p>
+      <p class="ola-credit ola-credit--hero">{hero.caption}. Photo: {hero.credit}</p>
     </header>
 
-    <section class="ola-intro container" aria-labelledby="ola-intro-title">
+    <section class="ola-wrap ola-intro" aria-labelledby="ola-intro-title">
       <h2 id="ola-intro-title" class="visually-hidden">About this guide</h2>
       <p class="ola-lead">
-        Some goodbyes deserve more than a quiet room. Take the people you love, and your loved one’s ashes, on one final
-        journey to a place so beautiful it stops you in your tracks. Walk the trail together, share the stories, take the
-        photographs and celebrate a life in a setting worthy of it.
+        Some of the best memories a family shares were made outdoors. This guide is for taking your loved one along on one
+        more trip like that: to a canyon rim, a mountain lake or a granite summit, with the people who knew them best.
       </p>
       <p>
-        The place where you say goodbye does not have to be the place where you scatter. Many of the most extraordinary
-        viewpoints are protected, so this guide shows you both: the destination for your farewell, and where scattering is
-        legally permitted, whether that is the same spot, a short drive away, or outside the park entirely.
+        Bring their ashes, walk the trail together, tell the stories, take the photographs and celebrate the life you are
+        there to honor. Then decide where the ashes will rest.
       </p>
       <p>
-        This pilot covers five parks and {total} destinations. For each one you will find what makes it special, how to
-        get there, what the journey asks of you, GPS navigation to the trailhead and to the destination itself, and the
-        park’s rules for scattering.
+        <strong>The place where you say goodbye and the place where you scatter can be different.</strong> Many of the most
+        spectacular viewpoints are not open to scattering. For every destination we show where scattering is legally allowed:
+        sometimes at the same spot, sometimes a short drive away, and sometimes outside the park entirely.
       </p>
+      <p class="ola-intro__count">This first edition covers {parks.length} parks and {total} destinations, with directions, trail details and GPS navigation for each.</p>
     </section>
 
-    <nav class="ola-parknav" aria-label="Parks in this guide">
-      <ul>
-        {parks.map((p) => <li><a href={`#${p.id}`}>{p.name.replace(' National Park', '')}</a></li>)}
-      </ul>
-    </nav>
-
-    <section class="container ola-cards" aria-labelledby="ola-parks-title">
-      <h2 id="ola-parks-title">Choose a Park</h2>
-      <ul class="ola-cards__grid">
-        {
-          parks.map((p) => (
-            <li class="ola-card">
-              <a href={`#${p.id}`} class="ola-card__link">
-                <img src={p.photo.src} alt={p.photo.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
-                <span class="ola-card__body">
-                  <span class="ola-card__name">{p.name}</span>
-                  <span class="ola-card__state">{p.state}</span>
-                  <span class="ola-card__meta">{p.destinations.length} featured destinations</span>
-                  <span class={`ola-pill ${p.scatterAllowed === 'Prohibited' ? 'ola-pill--no' : 'ola-pill--yes'}`}>
-                    Scattering: {p.scatterAllowed}
-                  </span>
-                  <span class="ola-card__cta">Explore destinations</span>
-                </span>
-              </a>
-              <p class="ola-credit">Photo: {p.photo.credit}</p>
-            </li>
-          ))
-        }
-      </ul>
+    <section class="ola-browse" id="ola-browse" aria-labelledby="ola-browse-title" data-ola-browse>
+      <div class="ola-wrap">
+        <h2 id="ola-browse-title">Find a Park by State</h2>
+        <div class="ola-az" role="group" aria-label="States by first letter">
+          <button type="button" class="ola-az__btn ola-az__btn--all" data-letter="all" aria-pressed="true">All</button>
+          {
+            letters.map((l) => (
+              <button type="button" class="ola-az__btn" data-letter={l} disabled={!usedLetters.has(l)} aria-pressed="false">
+                {l}
+              </button>
+            ))
+          }
+        </div>
+        <div class="ola-states" role="group" aria-label="States" data-ola-states>
+          {
+            states.map((s) => (
+              <button type="button" class="ola-state-btn" data-state={s.id} data-letter={s.state[0].toUpperCase()} aria-pressed="false">
+                {s.state} <span class="ola-state-btn__n">{s.parks.length}</span>
+              </button>
+            ))
+          }
+        </div>
+        <p class="ola-browse__status" aria-live="polite" data-ola-status>Showing all {parks.length} parks in this guide.</p>
+        <ul class="ola-cards">
+          {
+            states.flatMap((s) =>
+              s.parks.map((p) => (
+                <li class="ola-card" data-state={s.id}>
+                  <a href={`#${p.id}`} class="ola-card__link">
+                    <span class="ola-card__img">
+                      <img src={p.photo.src} alt={p.photo.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
+                    </span>
+                    <span class="ola-card__body">
+                      <span class="ola-card__state">{p.state}</span>
+                      <span class="ola-card__name">{p.name}</span>
+                      <span class="ola-card__tag">{p.tagline}</span>
+                      <span class="ola-card__meta">
+                        {p.destinations.length} destinations
+                        <span class={`ola-pill ${p.scatterAllowed === 'Prohibited' ? 'ola-pill--no' : 'ola-pill--yes'}`}>
+                          Scattering: {p.scatterAllowed === 'Prohibited' ? 'Prohibited' : 'Permitted with conditions'}
+                        </span>
+                      </span>
+                      <span class="ola-card__cta">Explore Destinations</span>
+                    </span>
+                  </a>
+                </li>
+              )),
+            )
+          }
+        </ul>
+        <p class="ola-credit">Photos: {parks.map((p) => `${p.short}, ${credit(p.photo)}`).join('; ')}.</p>
+      </div>
     </section>
 
     {
-      parks.map((p) => (
-        <section class="ola-park" id={p.id} aria-labelledby={`${p.id}-title`}>
-          <figure class="ola-park__hero">
-            <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
-            <figcaption class="ola-credit">{p.photo.caption}. Photo: {p.photo.credit}</figcaption>
-          </figure>
-          <div class="container ola-park__inner">
-            <p class="ola-kicker">{p.state}</p>
-            <h2 id={`${p.id}-title`}>{p.name}</h2>
-            <p class="ola-park__intro">{p.intro}</p>
-            <ul class="ola-links">
-              <li><a href={p.homepage} rel="noopener" target="_blank">Official NPS website</a></li>
-              {p.map.map((m) => <li><a href={m.url} rel="noopener" target="_blank">{m.label}</a></li>)}
-            </ul>
+      states.map((s) =>
+        s.parks.map((p) => (
+          <section class="ola-park" id={p.id} aria-labelledby={`${p.id}-title`}>
+            <div class="ola-wrap">
+              <nav class="ola-statenav" aria-label={`National parks in ${s.state}`}>
+                <p class="ola-statenav__title">National Parks in {s.state}</p>
+                <ul>
+                  {s.parks.map((q) => (
+                    <li>
+                      <a href={`#${q.id}`} class:list={['ola-statenav__btn', { 'is-current': q.id === p.id }]} aria-current={q.id === p.id ? 'true' : undefined}>
+                        {q.short}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <a class="ola-statenav__all" href="#ola-browse">All states A to Z</a>
+              </nav>
 
-            <div class={`ola-scatter ${p.scatterAllowed === 'Prohibited' ? 'ola-scatter--no' : ''}`}>
-              <h3>Scattering in {p.name.replace(' National Park', '')}</h3>
-              <p class="ola-scatter__summary">{p.scatterSummary}</p>
-              <ul>{p.scatterFacts.map((f) => <li>{f}</li>)}</ul>
-              <p class="ola-scatter__links">
-                {p.scatterLink.map((l) => <a href={l.url} rel="noopener" target="_blank">{l.label}</a>)}
-              </p>
-            </div>
-            {p.seasons && <p class="ola-park__note"><strong>Before you go:</strong> {p.seasons}</p>}
+              <figure class="ola-park__hero">
+                <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
+                <figcaption class="ola-credit">{p.photo.caption}. Photo: {p.photo.credit}</figcaption>
+              </figure>
 
-            <h3 class="ola-dests__title">{p.destinations.length} Featured Destinations</h3>
-            <ul class="ola-dests__toc">
-              {p.destinations.map((d) => <li><a href={`#${p.id}-${d.id}`}>{d.name}</a></li>)}
-            </ul>
-
-            {p.destinations.map((d) => (
-              <article class="ola-dest" id={`${p.id}-${d.id}`} aria-labelledby={`${p.id}-${d.id}-title`}>
-                {d.photo ? (
-                  <figure class="ola-dest__photo">
-                    <img src={d.photo.src} alt={d.photo.alt} width="1200" height="700" loading="lazy" referrerpolicy="no-referrer" />
-                    <figcaption class="ola-credit">{d.photo.caption ? `${d.photo.caption}. ` : ''}Photo: {d.photo.credit}</figcaption>
-                  </figure>
-                ) : (
-                  <div class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${d.name} to come`}>
-                    <span>{d.name}</span>
-                    <small>Photograph to come</small>
-                  </div>
-                )}
-                <div class="ola-dest__head">
-                  <p class="ola-tags">
-                    {d.kinds.map((k) => <span class={`ola-tag ola-tag--${k}`}>{kindLabel[k]}</span>)}
-                    <span class={`ola-tag ola-tag--${d.scatterStatus}`}>{statusLabel[d.scatterStatus]}</span>
-                  </p>
-                  <h4 id={`${p.id}-${d.id}-title`} class="ola-dest__name">{d.name}</h4>
+              <div class="ola-park__head">
+                <div>
+                  <p class="ola-kicker">{p.state}</p>
+                  <h2 id={`${p.id}-title`}>{p.name}</h2>
+                  <p class="ola-park__intro">{p.intro}</p>
+                  <ul class="ola-links">
+                    <li><a href={p.homepage} rel="noopener" target="_blank">Official NPS website</a></li>
+                    {p.map.map((m) => <li><a href={m.url} rel="noopener" target="_blank">{m.label}</a></li>)}
+                  </ul>
+                  <p class="ola-park__note"><strong>Before you go:</strong> {p.beforeYouGo}</p>
                 </div>
+                <aside class={`ola-scatter ${p.scatterAllowed === 'Prohibited' ? 'ola-scatter--no' : ''}`} aria-labelledby={`${p.id}-scatter`}>
+                  <h3 id={`${p.id}-scatter`}>Ash Scattering in {p.short}</h3>
+                  <p class="ola-scatter__summary">{p.scatterSummary}</p>
+                  <ul>{p.scatterFacts.map((f) => <li>{f}</li>)}</ul>
+                  <p class="ola-scatter__links">{p.scatterLink.map((l) => <a href={l.url} rel="noopener" target="_blank">{l.label}</a>)}</p>
+                </aside>
+              </div>
 
-                <h5>Why This Place Is Extraordinary</h5>
-                <p>{d.why}</p>
+              <p class="ola-jump">
+                <span>{p.destinations.length} destinations:</span>
+                {p.destinations.map((d) => <a href={`#${p.id}-${d.id}`}>{d.name}</a>)}
+              </p>
 
-                <h5>At a Glance</h5>
-                <dl class="ola-glance">
-                  <div><dt>Distance</dt><dd>{d.glance.distance}</dd></div>
-                  <div><dt>Difficulty</dt><dd>{d.glance.difficulty}</dd></div>
-                  <div><dt>Time</dt><dd>{d.glance.time}</dd></div>
-                  <div><dt>Elevation gain</dt><dd>{d.glance.elevation}</dd></div>
-                  <div><dt>Accessibility</dt><dd>{d.glance.accessibility}</dd></div>
-                  <div><dt>Scattering</dt><dd>{d.glance.scattering}</dd></div>
-                </dl>
+              {p.destinations.map((d) => (
+                <article class="ola-dest" id={`${p.id}-${d.id}`} aria-labelledby={`${p.id}-${d.id}-title`}>
+                  {d.photo ? (
+                    <figure class="ola-dest__photo">
+                      <picture>
+                        {d.photo.srcWebp && <source srcset={d.photo.srcWebp} type="image/webp" />}
+                        <img src={d.photo.src} alt={d.photo.alt} width="1600" height="900" loading="lazy" referrerpolicy="no-referrer" style={d.photo.position ? `object-position: ${d.photo.position}` : undefined} />
+                      </picture>
+                      <figcaption class="ola-credit">
+                        {d.photo.caption ? `${d.photo.caption}. ` : ''}Photo: {d.photo.sourceUrl ? <a href={d.photo.sourceUrl} rel="noopener" target="_blank">{d.photo.credit}</a> : d.photo.credit}
+                        {d.photo.license && <>, <a href={d.photo.license.url} rel="noopener license" target="_blank">{d.photo.license.name}</a></>}
+                      </figcaption>
+                    </figure>
+                  ) : (
+                    <div class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${d.name} to come`}><span>{d.name}</span></div>
+                  )}
 
-                <h5>Getting There</h5>
-                <p>{d.gettingThere.route}</p>
-                <p><strong>Parking or trailhead:</strong> {d.gettingThere.parking}</p>
-                <ul class="ola-gps">
-                  {d.gettingThere.points.map((pt) => (
-                    <li>
-                      <span class="ola-gps__label">{pt.label}</span>
-                      <span class="ola-gps__coord">{coord(pt)}</span>
-                      <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon}>
-                        Navigate<span class="visually-hidden"> to {pt.label}, {d.name}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                  <header class="ola-dest__head">
+                    <p class="ola-dest__park">
+                      {p.name}
+                      {d.kinds.map((k) => <span class={`ola-tag ola-tag--${k}`}>{kindLabel[k]}</span>)}
+                    </p>
+                    <h3 id={`${p.id}-${d.id}-title`} class="ola-dest__name">{d.name}</h3>
+                    <p class="ola-dest__desc">{d.description}</p>
+                  </header>
 
-                <h5>The Journey</h5>
-                <p><strong>Trail:</strong> {d.journey.trail}</p>
-                <ol class="ola-steps">{d.journey.steps.map((s) => <li>{s}</li>)}</ol>
-                {d.journey.notes?.map((n) => <p class="ola-note">{n}</p>)}
+                  <section class="ola-plan" aria-label={`Plan your adventure: ${d.name}`}>
+                    <h4>Plan Your Adventure</h4>
+                    <dl class="ola-plan__grid">
+                      <div><dt>Distance</dt><dd>{d.plan.distance}</dd></div>
+                      <div><dt>Difficulty</dt><dd>{d.plan.difficulty}</dd></div>
+                      {d.plan.time && <div><dt>Hiking time</dt><dd>{d.plan.time}</dd></div>}
+                      {d.plan.elevation && <div><dt>Elevation gain</dt><dd>{d.plan.elevation}</dd></div>}
+                      <div class="ola-plan__wide"><dt>Accessibility</dt><dd>{d.plan.accessibility}</dd></div>
+                      {d.plan.bestTime && <div class="ola-plan__wide"><dt>Best time or season</dt><dd>{d.plan.bestTime}</dd></div>}
+                      <div class={`ola-plan__scatter ola-plan__scatter--${d.scatterStatus}`}><dt>Ash Scattering</dt><dd>{d.plan.scattering}</dd></div>
+                      <div>
+                        <dt>Official Information</dt>
+                        <dd>
+                          {d.links.length
+                            ? d.links.map((l) => <a href={l.url} rel="noopener" target="_blank">NPS: {l.label}</a>)
+                            : <a href={p.map[0].url} rel="noopener" target="_blank">NPS: official park map</a>}
+                        </dd>
+                      </div>
+                    </dl>
+                  </section>
 
-                <h5>Your Final Adventure Destination</h5>
-                <p>{d.final.description}</p>
-                <ul class="ola-gps ola-gps--dest">
-                  {d.final.points.map((pt) => (
-                    <li>
-                      <span class="ola-gps__label">{pt.label}</span>
-                      <span class="ola-gps__coord">{coord(pt)}</span>
-                      <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon}>
-                        Navigate<span class="visually-hidden"> to {pt.label}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                  <div class="ola-route">
+                    <section>
+                      <h4>Getting There</h4>
+                      <p>{d.drive.route}</p>
+                      <ul class="ola-gps">
+                        {d.drive.points.map((pt) => (
+                          <li>
+                            <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label}, ${coord(pt)}, in Google Maps`}>
+                              <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+                              <span class="ola-gps__label">{pt.label}</span>
+                              <span class="ola-gps__coord">{coord(pt)}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                    <section>
+                      <h4>{d.trail ? 'On the Trail' : 'Your Destination'}</h4>
+                      {d.trail && (
+                        <>
+                          <p class="ola-route__trail">{d.trail.name}</p>
+                          <ol class="ola-steps">{d.trail.steps.map((st) => <li>{st}</li>)}</ol>
+                          {d.trail.notes?.map((n) => <p class="ola-note">{n}</p>)}
+                        </>
+                      )}
+                      <ul class="ola-gps">
+                        {d.final.map((pt) => (
+                          <li>
+                            <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label}, ${coord(pt)}, in Google Maps`}>
+                              <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+                              <span class="ola-gps__label">{pt.label}</span>
+                              <span class="ola-gps__coord">{coord(pt)}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  </div>
 
-                <h5>Where Scattering Is Permitted</h5>
-                <p>{d.scattering.text}</p>
-                {d.scattering.points && (
-                  <ul class="ola-gps ola-gps--scatter">
-                    {d.scattering.points.map((pt) => (
-                      <li>
-                        <span class="ola-gps__label">{pt.label}{pt.source === 'nps' ? ' (NPS designated)' : ''}</span>
-                        <span class="ola-gps__coord">{coord(pt)}</span>
-                        <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon}>
-                          Navigate<span class="visually-hidden"> to {pt.label}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                <h5>Official Trail Information</h5>
-                {d.links.length ? (
-                  <ul class="ola-links ola-links--dest">
-                    {d.links.map((l) => <li><a href={l.url} rel="noopener" target="_blank">{l.label}</a></li>)}
-                  </ul>
-                ) : (
-                  <p>No dedicated NPS page. Use the <a href={p.map[0].url} rel="noopener" target="_blank">official park map</a>.</p>
-                )}
-              </article>
-            ))}
-            <p class="ola-top"><a href="#ola-parks-title">Back to all parks</a></p>
-          </div>
-        </section>
-      ))
+                  {d.scatterNote && (
+                    <section class="ola-scatternote">
+                      <h4>Where to Scatter</h4>
+                      <p>{d.scatterNote.text}</p>
+                      {d.scatterNote.points && (
+                        <ul class="ola-gps">
+                          {d.scatterNote.points.map((pt) => (
+                            <li>
+                              <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label}, ${coord(pt)}, in Google Maps`}>
+                                <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+                                <span class="ola-gps__label">{pt.label}</span>
+                                <span class="ola-gps__coord">{coord(pt)}</span>
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </section>
+                  )}
+                </article>
+              ))}
+            </div>
+          </section>
+        )),
+      )
     }
 
-    <footer class="container ola-foot">
+    <footer class="ola-wrap ola-foot">
       <p>
         GPS coordinates are map-verified from OpenStreetMap features matching the National Park Service descriptions, or taken
-        from official NPS map data where marked. Conditions, closures and permit rules change: check each park’s official
-        page before you go. Photographs: National Park Service, credited as shown.
+        from official NPS map data for the designated Mount Rainier locations. Conditions, closures and permit rules change:
+        check each park’s official page before you go. Photographs from the National Park Service and Wikimedia Commons,
+        credited as shown.
       </p>
     </footer>
   </article>
 </BaseLayout>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-ola-browse]');
+  if (root) {
+    const letterBtns = [...root.querySelectorAll<HTMLButtonElement>('.ola-az__btn')];
+    const stateBtns = [...root.querySelectorAll<HTMLButtonElement>('.ola-state-btn')];
+    const cards = [...root.querySelectorAll<HTMLElement>('.ola-card')];
+    const status = root.querySelector<HTMLElement>('[data-ola-status]');
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    let letter = '';
+    let state = '';
+
+    const render = () => {
+      letterBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.letter === (letter || 'all'))));
+      stateBtns.forEach((b) => {
+        b.hidden = !!letter && b.dataset.letter !== letter;
+        b.setAttribute('aria-pressed', String(b.dataset.state === state));
+      });
+      const visibleStates = new Set(stateBtns.filter((b) => !b.hidden).map((b) => b.dataset.state));
+      let shown = 0;
+      cards.forEach((c) => {
+        const show = state ? c.dataset.state === state : visibleStates.has(c.dataset.state);
+        c.hidden = !show;
+        if (show) shown++;
+      });
+      if (status) {
+        const stateName = stateBtns.find((b) => b.dataset.state === state)?.firstChild?.textContent?.trim();
+        status.textContent = state
+          ? `National parks in ${stateName}: ${shown}.`
+          : letter
+            ? `States beginning with ${letter}. Choose a state to see its parks.`
+            : `Showing all ${shown} parks in this guide.`;
+      }
+    };
+    const pickLetter = (l: string) => {
+      letter = l;
+      const inLetter = stateBtns.filter((b) => b.dataset.letter === l);
+      state = inLetter.length === 1 ? inLetter[0].dataset.state! : '';
+      render();
+    };
+    letterBtns.forEach((b) => {
+      b.addEventListener('click', () => (b.dataset.letter === 'all' ? pickLetter('') : pickLetter(b.dataset.letter!)));
+      if (canHover && b.dataset.letter !== 'all') b.addEventListener('mouseenter', () => !b.disabled && pickLetter(b.dataset.letter!));
+    });
+    stateBtns.forEach((b) => {
+      const pick = () => {
+        state = b.dataset.state!;
+        letter = b.dataset.letter!;
+        render();
+      };
+      b.addEventListener('click', pick);
+      if (canHover) b.addEventListener('mouseenter', pick);
+    });
+    render();
+  }
+</script>
 
 <style>
   .ola {
     --ola-ink: #1f2926;
     --ola-sage: #e7ece4;
     --ola-sand: #f6f2ea;
+    --ola-wrap: 76rem;
     color: var(--ola-ink);
   }
   .ola img {
@@ -252,10 +352,18 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     height: auto;
     object-fit: cover;
   }
+  .ola-wrap {
+    max-width: var(--ola-wrap);
+    margin-inline: auto;
+    padding-inline: var(--space-4);
+  }
   .ola-credit {
     font-size: 0.75rem;
     color: var(--color-text-muted);
     margin: var(--space-1) 0 0;
+  }
+  .ola-credit a {
+    color: inherit;
   }
 
   /* Hero */
@@ -278,7 +386,7 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     position: absolute;
     inset: auto 0 2.5rem;
     padding-inline: var(--space-4);
-    max-width: var(--container-max);
+    max-width: var(--ola-wrap);
     margin-inline: auto;
   }
   .ola-hero__flag {
@@ -294,14 +402,14 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     margin: 0 0 var(--space-3);
   }
   .ola-hero h1 {
-    font-size: clamp(2.25rem, 1.6rem + 3.4vw, 4rem);
+    font-size: clamp(2.25rem, 1.6rem + 3.4vw, 4.25rem);
     line-height: 1.05;
     margin: 0;
     color: #fff;
     text-shadow: 0 2px 12px rgb(0 0 0 / 0.4);
   }
   .ola-hero__sub {
-    font-size: clamp(1.125rem, 1rem + 0.8vw, 1.5rem);
+    font-size: clamp(1.125rem, 1rem + 0.8vw, 1.625rem);
     margin: var(--space-2) 0 0;
     text-shadow: 0 1px 8px rgb(0 0 0 / 0.5);
   }
@@ -315,82 +423,126 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 
   /* Intro */
   .ola-intro {
-    max-width: var(--prose-max);
     padding-block: var(--space-12) var(--space-8);
-    font-size: 1.0625rem;
-    line-height: 1.65;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  .ola-intro p {
+    max-width: 50rem;
   }
   .ola-lead {
-    font-size: 1.25rem;
-    line-height: 1.55;
+    font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+    line-height: 1.5;
+  }
+  .ola-intro__count {
+    color: var(--color-text-muted);
+    font-size: 1rem;
   }
 
-  /* Park nav */
-  .ola-parknav {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: rgb(255 255 255 / 0.96);
-    border-block: 1px solid var(--color-border);
-  }
-  .ola-parknav ul {
-    display: flex;
-    gap: var(--space-2);
-    overflow-x: auto;
-    list-style: none;
-    margin: 0 auto;
-    padding: var(--space-2) var(--space-4);
-    max-width: var(--container-max);
-    scrollbar-width: none;
-  }
-  .ola-parknav a {
-    display: inline-flex;
-    align-items: center;
-    min-height: var(--tap-target);
-    padding-inline: var(--space-4);
-    border-radius: 999px;
-    background: var(--ola-sage);
-    color: var(--color-primary);
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  .ola-parknav a:hover {
-    background: var(--color-primary);
-    color: #fff;
-  }
-
-  /* Cards */
-  .ola-cards {
+  /* Browse: A to Z */
+  .ola-browse {
+    background: var(--ola-sand);
     padding-block: var(--space-12);
+    scroll-margin-top: 1rem;
   }
-  .ola-cards h2,
+  .ola-browse h2,
   .ola-park h2 {
     font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
     line-height: 1.15;
-    margin: 0 0 var(--space-6);
+    margin: 0 0 var(--space-4);
   }
-  .ola-cards__grid {
+  .ola-az {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr));
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+  }
+  .ola-az__btn {
+    min-height: var(--tap-target);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: #fff;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .ola-az__btn--all {
+    grid-column: span 2;
+  }
+  .ola-az__btn:disabled {
+    color: #b3b6b4;
+    background: transparent;
+    border-color: transparent;
+    cursor: default;
+  }
+  .ola-az__btn:not(:disabled):hover,
+  .ola-az__btn[aria-pressed='true'] {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+  .ola-states {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  .ola-state-btn {
+    min-height: var(--tap-target);
+    padding-inline: var(--space-4);
+    border: 1px solid var(--color-primary);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .ola-state-btn[aria-pressed='true'],
+  .ola-state-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .ola-state-btn__n {
+    display: inline-block;
+    min-width: 1.4em;
+    margin-left: 0.25rem;
+    border-radius: 999px;
+    background: var(--ola-sage);
+    color: var(--color-primary);
+    font-size: 0.8125rem;
+  }
+  .ola-browse__status {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    margin: var(--space-2) 0 var(--space-4);
+  }
+  .ola-cards {
     display: grid;
     gap: var(--space-6);
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  .ola-card[hidden] {
+    display: none;
+  }
   .ola-card__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 0.75rem;
     overflow: hidden;
-    background: var(--ola-sand);
+    background: #fff;
     color: inherit;
     text-decoration: none;
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
     transition: box-shadow 0.15s;
   }
   .ola-card__link:hover {
-    box-shadow: 0 6px 18px rgb(0 0 0 / 0.15);
+    box-shadow: 0 8px 22px rgb(0 0 0 / 0.16);
   }
-  .ola-card__link img {
+  .ola-card__img img {
     aspect-ratio: 16 / 10;
   }
   .ola-card__body {
@@ -398,28 +550,43 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     flex-direction: column;
     gap: var(--space-1);
     padding: var(--space-4);
+    flex: 1;
+  }
+  .ola-card__state {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
   }
   .ola-card__name {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-primary);
   }
-  .ola-card__state,
+  .ola-card__tag {
+    line-height: 1.5;
+  }
   .ola-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
     color: var(--color-text-muted);
+    font-size: 0.9375rem;
   }
   .ola-card__cta {
-    margin-top: var(--space-2);
+    margin-top: auto;
+    padding-top: var(--space-3);
     font-weight: 700;
     color: var(--color-primary);
     text-decoration: underline;
   }
   .ola-pill {
-    align-self: flex-start;
-    margin-top: var(--space-2);
     font-size: 0.8125rem;
     font-weight: 600;
-    padding: 0.2rem 0.6rem;
+    padding: 0.15rem 0.6rem;
     border-radius: 999px;
   }
   .ola-pill--yes {
@@ -433,25 +600,69 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 
   /* Park sections */
   .ola-park {
+    padding-block: var(--space-12);
     border-top: 1px solid var(--color-border);
-    padding-bottom: var(--space-12);
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 0.5rem;
+  }
+  .ola-statenav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .ola-statenav__title {
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .ola-statenav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ola-statenav__btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    padding-inline: var(--space-4);
+    border-radius: 999px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .ola-statenav__btn:hover,
+  .ola-statenav__btn.is-current {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .ola-statenav__all {
+    margin-left: auto;
+    font-weight: 600;
+    min-height: var(--tap-target);
+    display: inline-flex;
+    align-items: center;
   }
   .ola-park__hero {
-    margin: 0;
+    margin: 0 0 var(--space-6);
   }
   .ola-park__hero img {
     aspect-ratio: 16 / 9;
-    max-height: 70vh;
+    max-height: 34rem;
+    border-radius: 0.75rem;
   }
-  .ola-park__hero .ola-credit {
-    padding-inline: var(--space-4);
-    max-width: var(--container-max);
-    margin-inline: auto;
-  }
-  .ola-park__inner {
-    max-width: 52rem;
-    padding-top: var(--space-8);
+  .ola-park__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    align-items: start;
   }
   .ola-kicker {
     text-transform: uppercase;
@@ -463,15 +674,15 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
   }
   .ola-park__intro {
     font-size: 1.125rem;
-    line-height: 1.65;
+    line-height: 1.7;
   }
   .ola-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
+    gap: 0 var(--space-4);
     list-style: none;
     padding: 0;
-    margin: var(--space-4) 0;
+    margin: var(--space-2) 0;
   }
   .ola-links a {
     display: inline-flex;
@@ -479,12 +690,16 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     min-height: var(--tap-target);
     font-weight: 600;
   }
+  .ola-park__note {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
   .ola-scatter {
     background: var(--ola-sage);
     border-left: 4px solid var(--color-primary);
     border-radius: var(--radius);
     padding: var(--space-4) var(--space-6);
-    margin: var(--space-6) 0;
   }
   .ola-scatter--no {
     background: #fbefec;
@@ -498,8 +713,10 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     font-weight: 700;
   }
   .ola-scatter ul {
+    overflow-wrap: anywhere;
     padding-left: 1.25rem;
     margin: var(--space-2) 0;
+    font-size: 0.9375rem;
   }
   .ola-scatter li + li {
     margin-top: var(--space-1);
@@ -509,93 +726,80 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-4);
     margin: var(--space-3) 0 0;
-  }
-  .ola-scatter__links a {
     font-weight: 600;
   }
-  .ola-park__note {
-    font-size: 0.9375rem;
-    color: var(--color-text-muted);
+  .ola-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+    align-items: center;
+    margin: var(--space-8) 0 var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
   }
-  .ola-dests__title {
-    font-size: 1.375rem;
-    margin: var(--space-8) 0 var(--space-2);
+  .ola-jump span {
+    font-weight: 700;
   }
-  .ola-dests__toc {
-    padding-left: 1.25rem;
-    margin: 0 0 var(--space-6);
-    columns: 2 14rem;
+  .ola-jump a {
+    min-height: var(--tap-target);
+    display: inline-flex;
+    align-items: center;
   }
 
   /* Destinations */
   .ola-dest {
-    border: 1px solid var(--color-border);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    margin-bottom: var(--space-8);
-    padding: 0 var(--space-4) var(--space-6);
-    scroll-margin-top: 4rem;
-    background: #fff;
+    margin-bottom: var(--space-12);
+    scroll-margin-top: 0.5rem;
   }
   .ola-dest__photo {
-    margin: 0 calc(-1 * var(--space-4));
+    margin: 0;
   }
   .ola-dest__photo img {
     aspect-ratio: 16 / 9;
-  }
-  .ola-dest__photo .ola-credit {
-    padding-inline: var(--space-4);
+    max-height: 36rem;
+    border-radius: 0.75rem;
   }
   .ola-dest__placeholder {
-    margin: 0 calc(-1 * var(--space-4));
     aspect-ratio: 16 / 7;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--space-1);
+    border-radius: 0.75rem;
     background: linear-gradient(135deg, #dfe6dc, #eee8dc);
     color: var(--color-primary);
-    text-align: center;
-    padding: var(--space-4);
-  }
-  .ola-dest__placeholder span {
     font-size: 1.5rem;
     font-weight: 700;
   }
-  .ola-dest__placeholder small {
-    color: var(--color-text-muted);
-  }
   .ola-dest__head {
-    padding-top: var(--space-4);
+    margin-top: var(--space-4);
   }
-  .ola-dest__name {
-    font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem);
-    line-height: 1.2;
-    margin: var(--space-2) 0 0;
-  }
-  .ola-dest h5 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--color-primary);
-    margin: var(--space-6) 0 var(--space-2);
-  }
-  .ola-dest p {
-    line-height: 1.6;
-  }
-  .ola-tags {
+  .ola-dest__park {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: var(--space-2);
     margin: 0;
-  }
-  .ola-tag {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+  }
+  .ola-dest__name {
+    font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.375rem);
+    line-height: 1.15;
+    margin: var(--space-1) 0 var(--space-3);
+  }
+  .ola-dest__desc {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    max-width: 52rem;
+  }
+  .ola-tag {
+    font-size: 0.6875rem;
+    font-weight: 700;
     letter-spacing: 0.04em;
-    padding: 0.2rem 0.55rem;
+    padding: 0.15rem 0.5rem;
     border-radius: 999px;
     background: var(--ola-sage);
     color: var(--color-primary);
@@ -604,20 +808,23 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     background: #f3e6cc;
     color: #6b4a0e;
   }
-  .ola-tag--permitted {
-    background: #dcebdc;
-    color: #1d4d2b;
+  .ola-dest h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
   }
-  .ola-tag--prohibited {
-    background: #f7e1dc;
-    color: #8a2412;
+
+  /* Plan Your Adventure panel */
+  .ola-plan {
+    margin-top: var(--space-6);
+    background: var(--ola-sand);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-4);
   }
-  .ola-tag--not-here,
-  .ola-tag--park-decision {
-    background: #ececec;
-    color: #3d4442;
-  }
-  .ola-glance {
+  .ola-plan__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1px;
@@ -627,74 +834,54 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     overflow: hidden;
     margin: 0;
   }
-  .ola-glance div {
+  .ola-plan__grid > div {
     background: var(--ola-sand);
     padding: var(--space-3) var(--space-4);
   }
-  .ola-glance dt {
+  .ola-plan dt {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-muted);
     font-weight: 700;
   }
-  .ola-glance dd {
+  .ola-plan dd {
     margin: 0.15rem 0 0;
     font-weight: 600;
+    line-height: 1.45;
   }
-  .ola-gps {
-    list-style: none;
-    padding: 0;
-    margin: var(--space-3) 0;
-    display: grid;
-    gap: var(--space-2);
-  }
-  .ola-gps li {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: 'label btn' 'coord btn';
-    align-items: center;
-    gap: 0 var(--space-3);
-    padding: var(--space-2) var(--space-3);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    background: #fff;
-  }
-  .ola-gps--dest li {
-    background: var(--ola-sage);
-  }
-  .ola-gps--scatter li {
-    background: #eef4ee;
-  }
-  .ola-gps__label {
-    grid-area: label;
-    font-weight: 700;
-  }
-  .ola-gps__coord {
-    grid-area: coord;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-  }
-  .ola-gps__btn {
-    grid-area: btn;
+  .ola-plan dd a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-height: var(--tap-target);
-    padding-inline: var(--space-4);
-    border-radius: var(--radius);
-    background: var(--color-primary);
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
+    min-height: 2rem;
+    margin-right: var(--space-4);
   }
-  .ola-gps__btn:hover {
-    background: var(--color-primary-hover);
+  .ola-plan__scatter--permitted dd {
+    color: #1d4d2b;
+  }
+  .ola-plan__scatter--prohibited dd {
+    color: #8a2412;
+  }
+
+  /* Directions */
+  .ola-route {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+  }
+  .ola-route p,
+  .ola-scatternote p {
+    line-height: 1.6;
+  }
+  .ola-route__trail {
+    font-weight: 700;
+    margin: 0 0 var(--space-2);
   }
   .ola-steps {
-    padding-left: 1.5rem;
-    margin: var(--space-2) 0;
+    padding-left: 1.4rem;
+    margin: 0 0 var(--space-3);
+    line-height: 1.6;
   }
   .ola-steps li + li {
     margin-top: var(--space-1);
@@ -703,46 +890,108 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
     font-size: 0.9375rem;
     color: var(--color-text-muted);
   }
-  .ola-links--dest {
-    margin: 0;
+  .ola-scatternote {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    border-left: 4px solid var(--color-primary);
+    background: var(--ola-sage);
+    border-radius: var(--radius);
   }
-  .ola-top {
-    text-align: right;
+
+  /* GPS buttons: one solid black link holding the pin, label and coordinates */
+  .ola-gps {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-3) 0 0;
+    display: grid;
+    gap: var(--space-2);
   }
+  .ola-gps__btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.15rem var(--space-3);
+    min-height: var(--tap-target);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius);
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.3;
+  }
+  .ola-gps__btn:hover {
+    background: #262626;
+    color: #fff;
+  }
+  .ola-gps__btn:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff inset;
+  }
+  .ola-gps__pin {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #fff;
+  }
+  .ola-gps__label {
+    font-weight: 700;
+    color: #fff;
+  }
+  .ola-gps__coord {
+    color: #fff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
+    margin-left: auto;
+  }
+
   .ola-foot {
-    max-width: var(--prose-max);
     padding-block: var(--space-8) var(--space-12);
     font-size: 0.875rem;
     color: var(--color-text-muted);
   }
+  .ola-foot p {
+    max-width: 50rem;
+  }
 
   @media (min-width: 40rem) {
+    .ola-wrap {
+      padding-inline: var(--space-6);
+    }
     .ola-hero__img {
       aspect-ratio: 16 / 9;
     }
-    .ola-cards__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .ola-glance {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .ola-dest {
+    .ola-hero__text {
       padding-inline: var(--space-6);
     }
-    .ola-dest__photo,
-    .ola-dest__placeholder {
-      margin-inline: calc(-1 * var(--space-6));
+    .ola-cards {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .ola-dest__photo .ola-credit {
-      padding-inline: var(--space-6);
+    .ola-plan__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ola-plan__wide {
+      grid-column: 1 / -1;
+    }
+    .ola-plan {
+      padding: var(--space-6);
     }
   }
   @media (min-width: 64rem) {
-    .ola-cards__grid {
+    .ola-wrap {
+      padding-inline: var(--space-8);
+    }
+    .ola-cards {
       grid-template-columns: repeat(3, 1fr);
     }
-    .ola-glance {
-      grid-template-columns: repeat(3, 1fr);
+    .ola-park__head {
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: var(--space-8);
+    }
+    .ola-route {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-8);
     }
   }
 </style>
