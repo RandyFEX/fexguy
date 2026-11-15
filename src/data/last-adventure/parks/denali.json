@@ -1,0 +1,264 @@
+{
+  "id": "denali",
+  "name": "Denali National Park",
+  "short": "Denali",
+  "state": "Alaska",
+  "states": ["Alaska"],
+  "tagline": "North America's tallest peak above six million acres of tundra, taiga and one wild road.",
+  "photo": {
+    "src": "/images/last-adventure/denali/park.jpg",
+    "srcWebp": "/images/last-adventure/denali/park.webp",
+    "alt": "A vast white mountain looming over a brown tundra landscape, with the park road curving across a hillside",
+    "credit": "NPS Photo/Nathan Kostegian",
+    "caption": "Mount McKinley from Stony Overlook on the Denali Park Road"
+  },
+  "intro": "Denali is six million acres of wild land crossed by a single road that climbs from spruce forest to open tundra beneath Mount McKinley, at 20,310 feet the tallest peak in North America. Families can drive the first 15 miles in summer, walk short trails near the entrance and at Savage River, or ride a bus deep into the park toward the mountain. Outside developed areas, campgrounds and park facilities, the park allows scattering of ashes without a permit.",
+  "homepage": "https://www.nps.gov/dena/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/dena/planyourvisit/maps.htm" },
+    { "label": "Summer trail map (PDF)", "url": "https://www.nps.gov/dena/planyourvisit/upload/trail-map-letter-size.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit in all areas of the park except developed areas, campgrounds and park facilities, where a permit is required.",
+  "scatterFacts": [
+    "Superintendent's Compendium, 36 CFR 2.62(b): all areas are open to scattering of ashes without a permit, except developed areas, campgrounds and park facilities.",
+    "Those excepted areas, and other excepted circumstances, require a permit or authorization from the park.",
+    "A ceremony for a group larger than 12 needs a special use permit with a $200 application fee; some small groups may also need one. Permit coordinator: 907-683-9553.",
+    "Ceremonies may not impede other visitors. No releasing balloons or throwing rice, birdseed, flower petals or any other material.",
+    "Trails in designated Wilderness, such as the Savage River Loop, limit groups to 12 people."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/dena/planyourvisit/permits.htm" },
+    { "label": "Superintendent's Compendium (PDF)", "url": "https://www.nps.gov/locations/alaska/upload/Denali-Superintendents-Compendium.pdf" },
+    { "label": "Weddings, ceremonies and gatherings (NPS)", "url": "https://www.nps.gov/dena/planyourvisit/weddings-ceremonies-and-gatherings.htm" }
+  ],
+  "beforeYouGo": "The park entrance is on Highway 3 (the George Parks Highway), 237 miles north of Anchorage and 120 miles south of Fairbanks. There is one road: in summer, roughly late May through early September, private vehicles may drive the first 15 miles to Savage River; beyond that you travel by bus (mid-May to mid-September), bicycle or on foot. With the Pretty Rocks bridge complete, full bus service along the road resumes in 2027, and the Eielson Visitor Center closes for up to two years from 2027 for roof replacement (its trails stay open). In winter the road is plowed to Park Headquarters (mile 3), typically opening to Mountain Vista (mile 13) by mid-February.",
+  "destinations": [
+    {
+      "id": "mountain-vista-loop",
+      "name": "Mountain Vista Loop Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/denali/mountain-vista-loop.jpg",
+        "srcWebp": "/images/last-adventure/denali/mountain-vista-loop.webp",
+        "alt": "A gravel path leads through green brush and scattered spruce trees toward distant mountains under a clear blue sky",
+        "credit": "NPS Photo/Laura Vachula"
+      },
+      "description": "On a clear day the snow-covered summit of Mount McKinley appears far to the southwest from this gentle gravel loop, while the Savage River Valley opens to the south and Mount Healy rises to the north. Brush and scattered spruce leave the views wide open in every direction. Partway around, a short spur drops to the banks of the Savage River, a fine place to pause with a thermos and a few old photographs. It is the easiest way to bring the whole family, wheelchairs included, into Denali's high country.",
+      "plan": {
+        "distance": "0.6 mi round-trip loop",
+        "difficulty": "Easy",
+        "time": "30 minutes",
+        "elevation": "Negligible",
+        "accessibility": "ADA compliant: compacted gravel, 5% maximum grade, 6 ft wide (NPS)",
+        "bestTime": "Clear days, for views of Mount McKinley",
+        "scattering": "Permit needed at the developed rest area; not in undeveloped areas (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Denali Park Road to the Mountain Vista Rest Area at Mile 13. Parking is limited and fills in summer; the park recommends the free Savage River Shuttle from the park entrance (about an hour each way).",
+        "points": [{ "label": "Parking", "lat": 63.71557, "lon": -149.25449 }]
+      },
+      "trail": {
+        "name": "Mountain Vista Loop Trail",
+        "steps": [
+          "The loop begins and ends at the Mountain Vista Rest Area.",
+          "Midway around, a short spur trail leads to the banks of the Savage River (not included in the loop distance)."
+        ],
+        "notes": ["Mountain Vista is often windy and cooler than the park entrance; bring layers."]
+      },
+      "final": [{ "label": "Mountain Vista Loop Trail", "lat": 63.7142, "lon": -149.25742 }],
+      "scatterNote": {
+        "text": "Denali allows scattering without a permit everywhere except developed areas, campgrounds and park facilities, which need a permit. The rest area here is developed; ask the park whether a spot you have in mind counts as developed."
+      },
+      "links": [
+        { "label": "Mountain Vista Loop Trail", "url": "https://www.nps.gov/dena/planyourvisit/mountain-vista-loop-trail.htm" },
+        { "label": "Mountain Vista", "url": "https://www.nps.gov/dena/planyourvisit/mountain-vista.htm" }
+      ]
+    },
+    {
+      "id": "savage-river-loop",
+      "name": "Savage River Loop Trail",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/denali/savage-river-loop.jpg",
+        "srcWebp": "/images/last-adventure/denali/savage-river-loop.webp",
+        "alt": "A shallow blue river flows over rocks between two mountains, with a footbridge crossing it upstream",
+        "credit": "NPS Photo/Tim Rains"
+      },
+      "description": "The Savage River runs clear and fast here through a rocky canyon between Mount Margaret and Healy Ridge, and the trail stays close to it on both banks. Walk upstream nearly a mile to the footbridge, cross together, and come back down the other side with the sound of the water beside you. The wind often blows and the weather can change in minutes, yet the canyon feels wild only steps from the road. It is a good place to slow down and share the stories that still make everyone laugh.",
+      "plan": {
+        "distance": "2 mi round-trip loop (the trail page gives 1.7 mi)",
+        "difficulty": "Easy",
+        "time": "About 1 hour (trail page) to 90 minutes (hiking table)",
+        "elevation": "Negligible",
+        "accessibility": "West side: first quarter-mile about 2 ft wide and very flat, then narrower with rocks and uneven surfaces",
+        "scattering": "No permit needed away from the parking area (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Denali Park Road to Savage River at Mile 15, the end of the road open to private vehicles. Parking is very limited and often full in summer; the free Savage River Shuttle runs from the park entrance from mid-May to mid-September.",
+        "points": [{ "label": "Parking", "lat": 63.73936, "lon": -149.29122 }]
+      },
+      "trail": {
+        "name": "Savage River Loop Trail",
+        "steps": [
+          "From the parking area, follow the river upstream on either bank.",
+          "After nearly a mile, cross the river on the footbridge.",
+          "Return to the same parking area along the opposite bank."
+        ],
+        "notes": [
+          "Designated Wilderness begins just beyond the trailhead: groups are limited to 12.",
+          "Off-trail, the canyon sides can be steep with uncertain footing; people have been injured or died in falls. Dress for wind and rain."
+        ]
+      },
+      "final": [{ "label": "Footbridge (loop turnaround)", "lat": 63.75134, "lon": -149.29179 }],
+      "scatterNote": {
+        "text": "Beyond the trailhead the loop is in designated Wilderness, where the park's rules allow scattering without a permit. The parking area and nearby Savage River Campground are developed areas that require a permit."
+      },
+      "links": [
+        { "label": "Savage River Loop Trail", "url": "https://www.nps.gov/dena/planyourvisit/savagecanyon.htm" },
+        { "label": "Savage River area", "url": "https://www.nps.gov/dena/planyourvisit/savage-river-area.htm" }
+      ]
+    },
+    {
+      "id": "horseshoe-lake",
+      "name": "Horseshoe Lake Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/denali/horseshoe-lake.jpg",
+        "srcWebp": "/images/last-adventure/denali/horseshoe-lake.webp",
+        "alt": "Horseshoe Lake fringed by spruce trees under heavy clouds, with the lakeside trail along a rocky slope",
+        "credit": "NPS Photo/Emily Mesner",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horseshoe_Lake_in_Fall_(272e3912-c3aa-4731-b2d2-8c72a4407ef4).JPG"
+      },
+      "description": "A short climb from the trailhead brings you to a bench overlooking Horseshoe Lake, then the path drops through the forest and circles the water. Viewing platforms look over the south end, a spur leads to a beaver dam, and the west side hugs the shore along a steep slope the park calls particularly scenic. At the north end the trail comes out of the trees beside the Nenana River. Keep watch for a beaver gliding past; it is the sort of small surprise your loved one might have pointed out first.",
+      "plan": {
+        "distance": "2 mi round trip from the Mile 1 trailhead; about 4 mi from the trailhead behind the Denali Visitor Center",
+        "difficulty": "Moderate",
+        "time": "2 hours from the Mile 1 trailhead",
+        "elevation": "250 ft loss to the lake, mostly on one steep hill (climbed again on the way back)",
+        "accessibility": "Five-foot-wide trail of uneven soil, rocks and roots; grades average 5%, with sections up to 20%",
+        "scattering": "No permit needed away from developed areas (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Highway 3 to the park entrance, then the Denali Park Road. Park at the small lot at Mile 1, where the Alaska Railroad crosses the road, or at the Denali Visitor Center (Mile 1.5) and pick up the trail across the road from the upper lot.",
+        "points": [{ "label": "Denali Visitor Center", "lat": 63.73088, "lon": -148.91721 }]
+      },
+      "trail": {
+        "name": "Horseshoe Lake Trail",
+        "steps": [
+          "Climb a short, steep hill to a bench overlooking the lake.",
+          "Descend steeply about 250 feet to the lake, where the trail splits into a loop.",
+          "Circle the lake; on the east side a short spur overlooks a beaver dam, and the north end runs beside the Nenana River.",
+          "Climb the same hill back to the trailhead."
+        ]
+      },
+      "final": [
+        { "label": "Lake viewpoint", "lat": 63.74064, "lon": -148.90932 },
+        { "label": "Lakeshore", "lat": 63.74236, "lon": -148.90853 }
+      ],
+      "scatterNote": {
+        "text": "Denali allows scattering without a permit outside developed areas, campgrounds and park facilities. The visitor center campus and parking areas are developed and need a permit; ask the park if you are unsure whether a spot counts as developed."
+      },
+      "links": [{ "label": "Horseshoe Lake Trail", "url": "https://www.nps.gov/dena/planyourvisit/horseshoe-lake-trail.htm" }]
+    },
+    {
+      "id": "mount-healy-overlook",
+      "name": "Mount Healy Overlook",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/denali/mount-healy-overlook.jpg",
+        "srcWebp": "/images/last-adventure/denali/mount-healy-overlook.webp",
+        "alt": "Three people sit on a rocky outcrop looking out over forests, mountains and roads",
+        "credit": "NPS Photo/Emily Mesner"
+      },
+      "description": "This is one of the steepest trails in Denali, and every switchback above the trees opens more of the view. Benches near the halfway point give everyone a chance to rest and look back. The trail ends at an open, almost always windy spot partway up Mount Healy, with the entrance valley spread out below and, if the clouds allow, Mount McKinley far to the south. Hold onto each other and your hats, and take a long, quiet moment up there for the person who would have loved this climb.",
+      "plan": {
+        "distance": "2.7 mi one way; return the same way",
+        "difficulty": "Strenuous",
+        "time": "About 2 hours up; likely less on the return",
+        "elevation": "1,700 ft gain",
+        "accessibility": "Rough soil with rocks and roots, generally 24 in wide; grades up to 25%",
+        "scattering": "No permit needed at the overlook (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Highway 3 to the park entrance, then the Denali Park Road to the Denali Visitor Center (Mile 1.5).",
+        "points": [
+          { "label": "Denali Visitor Center", "lat": 63.73088, "lon": -148.91721 },
+          { "label": "Trailhead", "lat": 63.7315, "lon": -148.91909 }
+        ]
+      },
+      "trail": {
+        "name": "Horseshoe Lake Trail, then the Mount Healy Overlook Trail",
+        "steps": [
+          "From the Denali Visitor Center, walk about half a mile on the Horseshoe Lake Trail to the junction with the Mount Healy Trail.",
+          "Climb steadily through spruce forest to the benches near the halfway point.",
+          "Switchback steeply above tree line to the official end of the trail, an open spot with views to the south.",
+          "Return the way you came."
+        ],
+        "notes": [
+          "Do not cut switchbacks. Hiking the ridges beyond the overlook is permitted but dangerous; people have died in falls on Mount Healy.",
+          "It is almost always windy at the overlook; bring layers."
+        ]
+      },
+      "final": [{ "label": "Overlook (end of trail)", "lat": 63.74256, "lon": -148.9523 }],
+      "scatterNote": {
+        "text": "The overlook lies outside developed areas, where Denali allows scattering without a permit. The visitor center campus where you start is a developed area that requires a permit."
+      },
+      "links": [{ "label": "Mount Healy Overlook Trail", "url": "https://www.nps.gov/dena/planyourvisit/overlook.htm" }]
+    },
+    {
+      "id": "eielson",
+      "name": "Eielson and the Tundra Loop",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/denali/eielson.jpg",
+        "srcWebp": "/images/last-adventure/denali/eielson.webp",
+        "alt": "A man photographs a woman at Eielson, with a huge snowy mountain rising beyond green tundra and a braided river",
+        "credit": "NPS/Mary Lewandowski",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denali,_from_Eielson_Visitor_Center_(2da29f2f-4e43-48b0-9fd3-8d445d2cf4d7).jpg"
+      },
+      "description": "Sixty-six miles down the park road, through low valleys and high mountain passes, the Eielson Bluffs have welcomed travelers since 1934 for one reason: the view of the mountain. On clear days Mount McKinley dominates the horizon to the southwest, and wildlife often moves across the surrounding hillsides. The short Tundra Loop wanders over alpine tundra, and the switchbacks of Thorofare Ridge climb higher for those who want more. It is a long day on the bus, and a place where the clouds may part just for you.",
+      "plan": {
+        "distance": "Tundra Loop 0.3 mi round trip; Thorofare Ridge Trail 0.8 mi one way",
+        "difficulty": "Easy on the Tundra Loop; Strenuous on Thorofare Ridge",
+        "time": "15 minutes for the loop; about 1 hour up Thorofare Ridge",
+        "elevation": "Negligible on the loop; about 1,000 ft on Thorofare Ridge",
+        "accessibility": "Tundra Loop: negligible grade, generally 2 ft wide or more. Several buses each day have a wheelchair lift (NPS)",
+        "bestTime": "Bus season, mid-May to mid-September; clear days for views of Mount McKinley",
+        "scattering": "Permit needed at the visitor center area; not in undeveloped areas (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "No private vehicles beyond Mile 15. Ride a transit bus from the park entrance to Eielson at Mile 66 (summer only; reservations for 2027 open December 1, 2026). From 2027 the visitor center is closed for up to two years and buses do not make a scheduled stop, but a Wonder Lake or Kantishna transit bus can drop you off to hike the trails.",
+        "points": []
+      },
+      "trail": {
+        "name": "Tundra Loop and Thorofare Ridge Trail",
+        "steps": [
+          "Get off the transit bus at Eielson (Mile 66).",
+          "Walk the Tundra Loop over alpine tundra; a spur trail adds a quarter mile each way.",
+          "For a higher view, climb the switchbacks of the Thorofare Ridge Trail about 1,000 feet to the ridge."
+        ],
+        "notes": [
+          "There is no food service in the park: bring all food and drinks.",
+          "Transit bus passengers may get off and re-board along the road; plan your return bus with care."
+        ]
+      },
+      "final": [{ "label": "Eielson Visitor Center (Tundra Loop)", "lat": 63.43114, "lon": -150.31168 }],
+      "scatterNote": {
+        "text": "The visitor center and its surroundings are a park facility, where scattering requires a permit. Undeveloped areas beyond it are open to scattering without one; off-trail hiking is welcome here."
+      },
+      "links": [
+        { "label": "The Eielson Visitor Center", "url": "https://www.nps.gov/dena/planyourvisit/the-eielson-visitor-center.htm" },
+        { "label": "Hiking in Denali", "url": "https://www.nps.gov/dena/planyourvisit/dayhiking.htm" },
+        { "label": "Bus trips", "url": "https://www.nps.gov/dena/planyourvisit/visiting-denali.htm" }
+      ]
+    }
+  ]
+}

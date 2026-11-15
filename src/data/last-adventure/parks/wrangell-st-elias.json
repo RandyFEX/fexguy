@@ -1,0 +1,258 @@
+{
+  "id": "wrangell-st-elias",
+  "name": "Wrangell-St. Elias National Park",
+  "short": "Wrangell-St. Elias",
+  "state": "Alaska",
+  "states": [
+    "Alaska"
+  ],
+  "tagline": "Volcanoes, more than 3,000 glaciers and a copper mill town in the heart of the wilderness.",
+  "photo": {
+    "src": "/images/last-adventure/wrangell-st-elias/park.jpg",
+    "srcWebp": "/images/last-adventure/wrangell-st-elias/park.webp",
+    "alt": "Four large snow-covered mountains rise above dense forest into a blue sky",
+    "credit": "NPS Photo/Bryan Petrtyl",
+    "caption": "The Wrangell Mountains"
+  },
+  "intro": "The Wrangell and St. Elias ranges hold some of the largest volcanoes and the greatest concentration of glaciers in North America: more than 3,000 glaciers covering over three million acres. At the end of the gravel McCarthy Road stand the red buildings of Kennecott, considered the best remaining example of early 20th-century copper mining. Families can walk the old mill town, follow the moraine to the Root Glacier, or climb to a mine high above the valley. All areas of the park are open to scattering of ashes without a permit.",
+  "homepage": "https://www.nps.gov/wrst/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/wrst/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Kennecott hiking map (PDF)",
+      "url": "https://www.nps.gov/wrst/planyourvisit/upload/Kennecott-Hiking-Food-Storage-Map.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "All areas of the park are open to scattering of ashes without a permit.",
+  "scatterFacts": [
+    "Superintendent's Compendium (January 2026 edition), 36 CFR 2.62(b): all areas are open to scattering of ashes without a permit.",
+    "Some land around McCarthy and Kennecott is private property; the park asks visitors to respect it.",
+    "Kennecott's artifacts are protected: take nothing from the area.",
+    "Park headquarters: 907-822-5234. Kennecott Visitor Center (summer): 907-205-7106."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium (PDF)",
+      "url": "https://www.nps.gov/locations/alaska/upload/WRST-Compendium_with_maps_1-22-2026_508_signed.pdf"
+    },
+    {
+      "label": "Superintendent's Compendium (NPS)",
+      "url": "https://www.nps.gov/wrst/learn/management/compendium.htm"
+    }
+  ],
+  "beforeYouGo": "Kennecott is about 8 hours by car from Anchorage: the Glenn Highway (Hwy 1), the Richardson Highway (Hwy 4) and the Edgerton Highway (Hwy 10), then 59 miles on the narrow, gravel McCarthy Road to the Kennicott River footbridge. The road is owned by the State of Alaska, and most rental car companies do not allow cars on it; daily summer shuttles and air taxis are alternatives. There is no public vehicle access to Kennecott, 5 miles beyond the footbridge: walk, bike or take a private shuttle (summer only, fee). Free day parking is at the State Wayside (mile 55) and the McCarthy Road Information Station (mile 58.6); private lots near the footbridge charge a fee. The Kennecott Visitor Center is open late May to mid-September, and there are no services in McCarthy or Kennecott in winter.",
+  "destinations": [
+    {
+      "id": "kennecott-mill-town",
+      "name": "Kennecott Mill Town",
+      "kinds": [
+        "accessible",
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/wrangell-st-elias/kennecott-mill-town.jpg",
+        "srcWebp": "/images/last-adventure/wrangell-st-elias/kennecott-mill-town.webp",
+        "alt": "The red buildings of the Kennecott mill climb a green hillside below a snowy mountain",
+        "credit": "NPS/Bryan Petrtyl"
+      },
+      "description": "The red buildings of Kennecott climb the hillside much as they stood when the last copper ore was processed here in 1938. Walk the gravel streets together, step into the exhibits in the General Store and the General Manager's Office, where old panoramas show how the glacier has changed, and stand on the Blackburn School deck looking out toward the ice. At its peak about 300 people worked in this mill town. It is a place full of other families' stories, and a good one for sharing your own.",
+      "plan": {
+        "distance": "5 mi from the end of the McCarthy Road by shuttle, bike or foot; walking distances in town not published",
+        "difficulty": "Easy to Moderate on the Wagon Road walk-in (NPS); town walking not rated",
+        "accessibility": "Unpaved historic site. Ramps at the Recreation Hall and the Blackburn School deck, a street-level viewing deck at the Power Plant, ADA outhouses and an accessible visitor center entrance (NPS)",
+        "bestTime": "Late May to mid-September, when the visitor center is open and shuttles run",
+        "scattering": "Allowed without a permit on park land; respect private property (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "Edgerton Highway to Chitina, then the McCarthy Road 59 miles to its end at the Kennicott River footbridge. Cross the footbridge on foot; in summer a private shuttle (fee) runs from the east side to McCarthy and Kennecott. You can also walk or bike the 5 miles, or take the Wagon Road from McCarthy (4.5 mi one way).",
+        "points": [
+          {
+            "label": "Parking near the end of the McCarthy Road",
+            "lat": 61.43317,
+            "lon": -142.94467
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Kennecott Visitor Center (Blackburn School)",
+          "lat": 61.48123,
+          "lon": -142.88529
+        },
+        {
+          "label": "Kennecott Concentration Mill",
+          "lat": 61.48528,
+          "lon": -142.88828
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of the park are open to scattering of ashes without a permit. Some land around McCarthy and Kennecott is private property; respect it, and ask a ranger if you are unsure where park land begins. Leave artifacts and historic structures undisturbed."
+      },
+      "links": [
+        {
+          "label": "Kennecott Mines National Historic Landmark",
+          "url": "https://www.nps.gov/wrst/learn/historyculture/kennecott-mines-national-historic-landmark.htm"
+        },
+        {
+          "label": "Kennecott Visitor Center",
+          "url": "https://www.nps.gov/wrst/planyourvisit/kennecott-visitor-center.htm"
+        },
+        {
+          "label": "Directions to McCarthy Road and Kennecott",
+          "url": "https://www.nps.gov/wrst/planyourvisit/directions-mccarthy-rd-and-kennecott.htm"
+        }
+      ]
+    },
+    {
+      "id": "root-glacier",
+      "name": "Root Glacier",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/wrangell-st-elias/root-glacier.jpg",
+        "srcWebp": "/images/last-adventure/wrangell-st-elias/root-glacier.webp",
+        "alt": "A hiker sits on the gravel of the Root Glacier, looking across toward the red buildings of Kennecott",
+        "credit": "NPS photo by Neal Herbert",
+        "license": {
+          "name": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taking_in_the_view_of_Kennicott_from_across_the_Root_Glacier_(26156273158).jpg"
+      },
+      "description": "From the mill town, the trail runs north along the lateral moraines of the Kennicott and Root glaciers, crossing Bonanza and Jumbo creeks, with Mount Blackburn and Regal Mountain rising ahead. Mining artifacts lie beside the path. A short access trail winds down the moraine to the toe of the Root Glacier, a great white river of ice spilling out of the mountains. Walk it with someone who loved wild country, then find a rock on the moraine where the whole family can sit and watch the glacier.",
+      "plan": {
+        "distance": "4 mi round trip from Kennecott to the glacier (trail sheet; the Kennecott hiking map gives about 3 mi)",
+        "difficulty": "Easy to Moderate",
+        "time": "2 to 6 hours",
+        "elevation": "Relatively level, with moderate gain and loss",
+        "accessibility": "Moraine trail; the access trail crosses seasonal Amazon Creek, so feet may get wet",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "McCarthy Road to its end, across the Kennicott River footbridge, then by private shuttle (summer, fee), bike or foot 5 miles to Kennecott. The trail starts at the Kennecott Visitor Center.",
+        "points": [
+          {
+            "label": "Parking near the end of the McCarthy Road",
+            "lat": 61.43317,
+            "lon": -142.94467
+          },
+          {
+            "label": "Kennecott Visitor Center (trail start)",
+            "lat": 61.48123,
+            "lon": -142.88529
+          }
+        ]
+      },
+      "trail": {
+        "name": "Root Glacier Trail",
+        "steps": [
+          "From the Kennecott Visitor Center, walk north through the mill town toward the Root Glacier.",
+          "About 1/2 mile past the visitor center the road splits: stay straight (the right fork leads to the Jumbo and Bonanza mines).",
+          "Cross Bonanza and Jumbo creeks and follow the trail through the lateral moraines.",
+          "About 1.5 miles from Kennecott, turn left at the sign onto the Root Glacier access trail and follow it down the moraine to the toe of the glacier."
+        ],
+        "notes": [
+          "July 2026: the park closed an unstable area beneath a hill on the Root Glacier access trail because of landslide and rockfall risk. Stay out of the closed area and ask at the Kennecott Visitor Center for the current route.",
+          "The ice is very slippery and dangerous; crampons are strongly recommended for walking on the glacier. Avoid the glacier's edge (rotting ice, swift cold water). Bears are present along the entire route."
+        ]
+      },
+      "final": [
+        {
+          "label": "Root Glacier (near the access trail)",
+          "lat": 61.51146,
+          "lon": -142.9056
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of the park are open to scattering of ashes without a permit. Keep well back from the glacier's edge and out of any closed area."
+      },
+      "links": [
+        {
+          "label": "McCarthy Road and Kennecott trails",
+          "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm"
+        },
+        {
+          "label": "Root Glacier Trail sheet (PDF)",
+          "url": "https://www.nps.gov/wrst/planyourvisit/upload/Root-Glacier-Erie-Mine-Trail.pdf"
+        },
+        {
+          "label": "Closed area on the Root Glacier access trail",
+          "url": "https://www.nps.gov/wrst/learn/news/closed-area-on-root-glacier-access-trail-in-wrangell-st-elias-national-park-and-preserve.htm"
+        }
+      ]
+    },
+    {
+      "id": "bonanza-mine",
+      "name": "Bonanza Mine",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "High on the mountain above Kennecott, the remnants of the Bonanza Mine bunkhouse mark the place where miners once lived and dug the copper that built the town below. The climb is long and steep, and on a clear day the Chugach Mountains, Mount Blackburn and the Kennicott Glacier stay in view almost the whole way. Reaching the old mine is an achievement for any family, and a meaningful one if your loved one was a worker, a builder or someone who never turned back from a hill. Rest at the top and take it all in.",
+      "plan": {
+        "distance": "About 9 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "6 to 8 hours round trip (trail sheet); 4 to 5 hours up and 2 to 3 down (hiking map)",
+        "elevation": "3,800 ft gain from the mill town",
+        "accessibility": "Steep road and trail, loose in places near the mine",
+        "scattering": "Allowed without a permit (see below)"
+      },
+      "scatterStatus": "permitted",
+      "drive": {
+        "route": "McCarthy Road to its end, across the Kennicott River footbridge, then by private shuttle (summer, fee), bike or foot 5 miles to Kennecott. The trail starts from the mill town.",
+        "points": [
+          {
+            "label": "Parking near the end of the McCarthy Road",
+            "lat": 61.43317,
+            "lon": -142.94467
+          },
+          {
+            "label": "Kennecott Visitor Center",
+            "lat": 61.48123,
+            "lon": -142.88529
+          }
+        ]
+      },
+      "trail": {
+        "name": "Bonanza Mine Trail",
+        "steps": [
+          "Walk north through the mill town; about 1/2 mile beyond the visitor center, take the right fork up the hill.",
+          "At the top of the first switchback, turn left and follow the road up the hill (if you reach the top of the mill, you missed the turn).",
+          "About a mile up, at the sign for the Bonanza and Jumbo mines, stay right on the main road.",
+          "Follow the road about 3.5 miles to the breakover tram tower, then the steep path toward the mine buildings. Return the same way."
+        ],
+        "notes": [
+          "The mine buildings have not been stabilized: explore with care and do not enter them. Artifacts are protected; take nothing.",
+          "Bears live in the Kennicott Valley; travel in groups and make noise."
+        ]
+      },
+      "final": [
+        {
+          "label": "Bonanza Mine",
+          "lat": 61.51279,
+          "lon": -142.83414
+        }
+      ],
+      "scatterNote": {
+        "text": "All areas of the park are open to scattering of ashes without a permit. Leave the mine structures and artifacts undisturbed."
+      },
+      "links": [
+        {
+          "label": "McCarthy Road and Kennecott trails",
+          "url": "https://www.nps.gov/wrst/planyourvisit/mccarthy-rd-kennecott-trails.htm"
+        },
+        {
+          "label": "Bonanza Mine Trail sheet (PDF)",
+          "url": "https://www.nps.gov/wrst/planyourvisit/upload/Bonanza-Mine-Trail.pdf"
+        }
+      ]
+    }
+  ]
+}
