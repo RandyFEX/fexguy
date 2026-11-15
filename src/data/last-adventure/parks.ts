@@ -69,7 +69,7 @@ export interface Park {
   intro: string;
   homepage: string;
   map: Link[];
-  scatterAllowed: 'Permitted with a permit' | 'Permitted with a permission letter' | 'Prohibited' | 'Unconfirmed';
+  scatterAllowed: 'Permitted with a permit' | 'Permitted with a permission letter' | 'Permitted without a permit' | 'Prohibited' | 'Unconfirmed';
   scatterSummary: string;
   scatterFacts: string[];
   /** Extra explanatory paragraphs shown in the scattering panel. */
