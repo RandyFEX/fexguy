@@ -1,0 +1,181 @@
+{
+  "id": "virgin-islands",
+  "name": "Virgin Islands National Park",
+  "short": "Virgin Islands",
+  "state": "U.S. Virgin Islands",
+  "states": ["U.S. Virgin Islands"],
+  "tagline": "White sand bays, coral reefs and forest trails on the island of St. John.",
+  "photo": {
+    "src": "/images/last-adventure/virgin-islands/park.jpg",
+    "srcWebp": "/images/last-adventure/virgin-islands/park.webp",
+    "alt": "A sunset colors the horizon as seen from an overlook above the bay",
+    "credit": "NPS Photo",
+    "caption": "Sunset from Lind Point Overlook"
+  },
+  "intro": "Most of St. John belongs to Virgin Islands National Park, a place of turquoise bays, coral reefs, dry tropical forest and the ruins of the island's past. A final adventure here can be a quiet morning on one of the most beautiful beaches anywhere, a gentle walk beside a bird-filled salt pond, or a long day's hike down to the sea. Ashes may not be scattered anywhere on land in the park; the park allows scattering only far out at sea, with a free permit.",
+  "homepage": "https://www.nps.gov/viis/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/viis/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering requires a free special use permit and is allowed only in the ocean at least three nautical miles offshore, never on land.",
+  "scatterFacts": [
+    "Special use permit required; there is no fee. Request an application through the park's e-mail contact on the Permits and Reservations page, or call 340-776-6201.",
+    "Scattering must take place in the ocean at least three nautical miles offshore, and other federal guidelines apply.",
+    "There are no areas on land anywhere in the park where scattering is authorized."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations: scattering of ashes (NPS)", "url": "https://www.nps.gov/viis/planyourvisit/permitsandreservations.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/viis/learn/management/compendium.htm" }
+  ],
+  "planNote": {
+    "heading": "A Farewell on Land, a Scattering at Sea",
+    "text": "No place on land in Virgin Islands National Park is authorized for scattering. Share your memories at any of these places, keeping your loved one's remains in a secure container, and arrange the scattering separately with the park's free permit: it must take place in the ocean at least three nautical miles offshore."
+  },
+  "beforeYouGo": "There is no airport on St. John: fly to Cyril E. King Airport (STT) on St. Thomas, get to Red Hook on the east end, then take the passenger ferry or the car barge to Cruz Bay. The Cruz Bay Visitor Center is a short walk from the ferry terminal and is open Monday to Thursday, 8:15 am to 4 pm, and Friday, 8:15 am to 1:30 pm. There is no entrance fee, but Trunk Bay charges $5 per person (ages 16 and up, card or mobile payment only). Many trailheads have limited parking, so carpool or take a taxi. Hurricane season runs from June to November 30.",
+  "destinations": [
+    {
+      "id": "trunk-bay",
+      "name": "Trunk Bay",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/virgin-islands/trunk-bay.jpg",
+        "srcWebp": "/images/last-adventure/virgin-islands/trunk-bay.webp",
+        "alt": "Turquoise water laps a white sandy shore fringed with lush green vegetation",
+        "credit": "NPS Photo"
+      },
+      "description": "Trunk Bay is the kind of beach people picture when they close their eyes: crystal-clear water, soft white sand and green hills curving around the bay. The park calls it one of the most beautiful beaches in the world. Accessible paths and beach ramps bring everyone down to the water, and snorkelers can follow an underwater trail of signs over the coral. Spread out a blanket, let the little ones splash at the edge, and spend an unhurried day remembering someone who would have loved it here.",
+      "plan": {
+        "distance": "At the parking area; 0.3 mi of beach",
+        "difficulty": "Easy",
+        "accessibility": "Wheelchair accessible (NPS): accessible paths, beach ramps and accessible restrooms; wheelchairs available",
+        "bestTime": "Open sunrise to sunset for the $5 amenity fee",
+        "scattering": "Not on land; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From Cruz Bay, follow North Shore Road along the north coast to the Trunk Bay parking area.",
+        "points": [{ "label": "Parking", "lat": 18.35221, "lon": -64.7675 }]
+      },
+      "final": [{ "label": "Beach", "lat": 18.35338, "lon": -64.76996, "source": "nps" }],
+      "scatterNote": { "text": "Scattering is not authorized on land anywhere in the park. With the park's free permit, it may take place in the ocean at least three nautical miles offshore." },
+      "links": [
+        { "label": "Trunk Bay", "url": "https://www.nps.gov/places/trunk-bay.htm" },
+        { "label": "Trunk Bay Underwater Snorkel Trail", "url": "https://www.nps.gov/thingstodo/trunk-bay-underwater-snorkel-trail.htm" }
+      ]
+    },
+    {
+      "id": "francis-bay",
+      "name": "Francis Bay Trail and Salt Pond",
+      "kinds": ["accessible"],
+      "photo": null,
+      "description": "At Francis Bay, a quiet trail circles a salt pond between dry tropical forest and a long, calm beach. A boardwalk wanders through the mangroves to two viewing platforms, where you can sit and watch the birds come and go. The park says the walk can take 30 minutes or much longer, depending on how often you stop to listen or smell the flowers, which makes it a gentle place to slow down together. Afterward, walk the quarter-mile beach, where sea turtles are often seen in the bay.",
+      "plan": {
+        "distance": "0.5 mi from the factory parking area to the accessible boardwalk",
+        "difficulty": "Easy",
+        "time": "30 to 90 minutes",
+        "accessibility": "Boardwalk to the viewing platforms is wheelchair accessible (NPS); the rest is uneven and rocky, with a steep climb from the factory lot. For easier access, park at the beach end.",
+        "scattering": "Not on land; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "From Cruz Bay, take North Shore Road to Francis Bay. The trail starts at the Francis Bay Sugar Factory; for easier access the park advises parking at the beach end of the trail.",
+        "points": [{ "label": "Francis Bay Trail parking", "lat": 18.36519, "lon": -64.741 }]
+      },
+      "trail": {
+        "name": "Francis Bay Trail",
+        "steps": [
+          "From the Francis Bay Sugar Factory, pass the Mary's Point Estate house.",
+          "Follow the trail around the salt pond; the lower part is a boardwalk through the mangroves to two viewing platforms."
+        ]
+      },
+      "final": [{ "label": "Francis Bay Beach", "lat": 18.36484, "lon": -64.74363 }],
+      "scatterNote": { "text": "Scattering is not authorized on land anywhere in the park. With the park's free permit, it may take place in the ocean at least three nautical miles offshore." },
+      "links": [
+        { "label": "Francis Bay Trail", "url": "https://www.nps.gov/thingstodo/francis-bay-trail.htm" },
+        { "label": "Places to go", "url": "https://www.nps.gov/viis/planyourvisit/placestogo.htm" }
+      ]
+    },
+    {
+      "id": "ram-head",
+      "name": "Ram Head",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/virgin-islands/ram-head.jpg",
+        "srcWebp": "/images/last-adventure/virgin-islands/ram-head.webp",
+        "alt": "Cactus and dry scrub on the Ram Head headland above a deep blue sea and distant islands",
+        "credit": "Scott Long",
+        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ram%27s_Head,_St_John,_USVI_-_panoramio.jpg"
+      },
+      "description": "First comes an easy stroll down an old road to Salt Pond Bay. Then a narrow, rocky path climbs through dry desert scrub, past Blue Pebble Beach, to the peak of Ram Head, a place tied to the 1733 African Revolution on St. John. The park calls the views dramatic and suggests it for sunset, and you might even spot a whale or dolphins in the water below. Standing together at the end of the land, with the wind and the sea all around, is a fitting way to remember an adventurous spirit.",
+      "plan": {
+        "distance": "1/4 mi to Salt Pond Bay, then just under 1 mi to the top of Ram Head",
+        "difficulty": "Moderate (the park rates the guided hike intermediate)",
+        "time": "5 to 20 minutes to the beach, then 30 to 50 minutes to Ram Head",
+        "accessibility": "Old dirt road, sometimes washed out, then a narrow trail, rocky and steep in places, with little shade",
+        "bestTime": "Sunset",
+        "scattering": "Not on land; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Drive east across St. John toward Coral Bay, then south to the Salt Pond Bay parking area.",
+        "points": [{ "label": "Salt Pond Bay parking", "lat": 18.31216, "lon": -64.70465 }]
+      },
+      "trail": {
+        "name": "Salt Pond Bay Trail and Ram Head Trail",
+        "steps": [
+          "Walk the 1/4-mile old road bed down to Salt Pond Bay.",
+          "From the beach, follow the narrow Ram Head Trail just under a mile to the top of Ram Head."
+        ],
+        "notes": ["Bring plenty of water: the park recommends at least 1/2 gallon for each four hours of hiking."]
+      },
+      "final": [{ "label": "Ram Head", "lat": 18.2993, "lon": -64.70253 }],
+      "scatterNote": { "text": "Scattering is not authorized on land anywhere in the park. With the park's free permit, it may take place in the ocean at least three nautical miles offshore." },
+      "links": [{ "label": "Salt Pond Bay and Ram Head Trails", "url": "https://www.nps.gov/thingstodo/salt-pond-and-ram-head-trails.htm" }]
+    },
+    {
+      "id": "reef-bay-trail",
+      "name": "Reef Bay Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/virgin-islands/reef-bay-trail.jpg",
+        "srcWebp": "/images/last-adventure/virgin-islands/reef-bay-trail.webp",
+        "alt": "Ancient petroglyphs carved into rock beside a pool on the Reef Bay Trail",
+        "credit": "mollystevens",
+        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petroglyphsstjohnusvi.jpg"
+      },
+      "description": "From the island's high center road, the Reef Bay Trail drops through a shady, moist forest, past the remains of four sugar estates, all the way to the sea. A side trail leads to a small waterfall and to petroglyphs at a site sacred to the indigenous Taíno people, and at the bottom stand the stone walls and steam machinery of the Reef Bay sugar factory, near a beach where you can cool off. It is a long, demanding day, best for the hikers in the family, and every step carries you deeper into the island's story.",
+      "plan": {
+        "distance": "About 3 mi one way, including the waterfall and petroglyphs; return the same way",
+        "difficulty": "Strenuous (NPS)",
+        "time": "About 2 to 3.5 hours down (NPS figures differ); longer on the climb back out",
+        "elevation": "900 ft",
+        "accessibility": "Extremely steep in places, uneven and rocky, and slippery even when dry",
+        "scattering": "Not on land; only at sea, 3 nautical miles offshore (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "The trailhead is at approximately mile marker 5 on Centerline Road, where parking is limited.",
+        "points": [{ "label": "Reef Bay Trailhead", "lat": 18.34811, "lon": -64.74265, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Reef Bay Trail",
+        "steps": [
+          "Descend through the forest past the ruins of four sugar estates; signs along the way describe the trees and the area's history.",
+          "At mile 1.6, take the side trail to the waterfall and the petroglyphs, then return to the main trail.",
+          "Continue down to the Reef Bay Sugar Factory and the beach, then climb back the way you came."
+        ],
+        "notes": [
+          "Wear sturdy closed-toe shoes and bring plenty of water, snacks, lunch, a hat and mosquito repellent.",
+          "The petroglyph site is sacred to the Taíno people. Do not climb on the historic structures, and leave all artifacts in place. Ranger-led hikes are offered; see the park's guided tours page."
+        ]
+      },
+      "final": [{ "label": "Reef Bay Sugar Factory", "lat": 18.32306, "lon": -64.74511 }],
+      "scatterNote": { "text": "Scattering is not authorized on land anywhere in the park. With the park's free permit, it may take place in the ocean at least three nautical miles offshore." },
+      "links": [
+        { "label": "Reef Bay Trail", "url": "https://www.nps.gov/thingstodo/reef-bay-trail.htm" },
+        { "label": "Reef Bay Trail and Sugar Plantation", "url": "https://www.nps.gov/places/reef-bay-trail-and-sugar-plantation.htm" }
+      ]
+    }
+  ]
+}

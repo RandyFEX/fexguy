@@ -1,0 +1,174 @@
+{
+  "id": "american-samoa",
+  "name": "National Park of American Samoa",
+  "short": "American Samoa",
+  "state": "American Samoa",
+  "states": ["American Samoa"],
+  "tagline": "Rainforest ridges, seabird islands and quiet coral beaches in the South Pacific.",
+  "photo": {
+    "src": "/images/last-adventure/american-samoa/park.jpg",
+    "srcWebp": "/images/last-adventure/american-samoa/park.webp",
+    "alt": "Steep green sea cliffs rising from the ocean on the south coast of Taʻū Island",
+    "credit": "NPS Photo/Michael Larson",
+    "caption": "Taʻū Island from Siʻu Point"
+  },
+  "intro": "Some 2,600 miles southwest of Hawaiʻi, the National Park of American Samoa spans parts of three islands, Tutuila, Taʻū and Ofu, where tropical rainforest runs from the mountaintops to the coral reefs. The park lies within Samoan villages on land leased from the families who own it, and visiting here means following faʻasamoa, the Samoan way of life. A final adventure can be a short walk to a seabird island, a long rainforest climb to a summit, or a remote beach reached by small plane.",
+  "homepage": "https://www.nps.gov/npsa/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/npsa/planyourvisit/maps.htm" },
+    { "label": "Trails", "url": "https://www.nps.gov/npsa/planyourvisit/trails.htm" }
+  ],
+  "scatterAllowed": "Unconfirmed",
+  "scatterSummary": "The park's rules on scattering conflict in practice, so contact the park and the landowning village before making any plans.",
+  "scatterFacts": [
+    "The Superintendent's Compendium (July 7, 2026) allows scattering without a permit only when the remains are cremated and pulverized and scattered at least 100 yards from any trail, road, developed facility or body of water (or from the air at least 2,000 feet up).",
+    "The same compendium requires visitors to remain on established trails because off-trail terrain is extremely steep and dangerous. It does not explain how both rules apply together, so no place in the park can be confirmed as suitable.",
+    "Park roads and trails cross village land leased from Samoan families; the park asks visitors to respect landowners and to ask permission before activities on village land.",
+    "No designated scattering locations are published. Contact the park before planning any ceremony: 684-633-7082."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/npsa/learn/management/lawsandpolicies.htm" },
+    { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/npsa/contacts.htm" }
+  ],
+  "planNote": {
+    "heading": "Plan the Farewell With the Park First",
+    "text": "No scattering location in the National Park of American Samoa can be confirmed from the park's published rules, and the land belongs to Samoan families and villages. If you bring your loved one's cremated remains, keep them in a secure container, contact the park before your trip, ask the village's permission for any ceremony, and take the remains with you unless the park and the landowners agree to something else."
+  },
+  "beforeYouGo": "Fly to Pago Pago International Airport on Tutuila; Samoa Airways flies to Taʻū on Mondays, Wednesdays and Fridays and to Ofu on Tuesdays and Thursdays, and flights can be delayed or cancelled. There are no entrance fees, and park roads and trails are open around the clock, but the visitor center in Pago Pago is open only weekdays from 8 am to 3 pm. The Old Vatia and Tuafanua trails close on Sundays, a day of rest in Samoan villages. The park recommends the drier months from May to October. Dress modestly and ask village permission before using a beach or taking photographs.",
+  "destinations": [
+    {
+      "id": "pola-island-trail",
+      "name": "Pola Island Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/pola-island-trail.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/pola-island-trail.webp",
+        "alt": "Pola Island rising steeply from the ocean off the coast of Tutuila",
+        "credit": "NPS Photo/Michael Larson"
+      },
+      "description": "Past the last house in Vatia village, a rough road gives way to a short path and a view that stops everyone in their tracks: Pola Island, rising more than 400 feet straight out of the ocean, with seabirds wheeling around its cliffs. Waves break on the rocky shore below, and the coastline stretches away on either side. It takes only a few minutes to reach, so the whole family can stand here together, listen to the surf and the birds, and remember someone who loved the sea.",
+      "plan": {
+        "distance": "0.1 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Short and relatively flat (NPS); the shore is rough and rocky",
+        "bestTime": "Morning, for cooler temperatures and the best light",
+        "scattering": "Unconfirmed: contact the park first"
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Drive to Vatia village on Tutuila's north coast. Past the last house in the village, continue along a rough road to the trailhead markers and exhibits.",
+        "points": [{ "label": "Trailhead", "lat": -14.24495, "lon": -170.67267 }]
+      },
+      "trail": {
+        "name": "Pola Island Trail",
+        "steps": ["From the trailhead markers, follow the short path to the shore facing Pola Island."],
+        "notes": ["Pola Island is a protected seabird nesting site: stay on the designated path."]
+      },
+      "final": [{ "label": "Shore facing Pola Island", "lat": -14.2411, "lon": -170.67099 }],
+      "links": [{ "label": "Trails", "url": "https://www.nps.gov/npsa/planyourvisit/trails.htm" }]
+    },
+    {
+      "id": "lower-sauma-ridge",
+      "name": "Lower Sauma Ridge Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/lower-sauma-ridge.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/lower-sauma-ridge.webp",
+        "alt": "A row of hikers seen from behind walking down a narrow trail on low stone steps among trees",
+        "credit": "NPS Photo"
+      },
+      "description": "A gentle climb through the forest leads to an archaeological site where ancient Samoans left grinding stones and a star mound, and to a view over the northeast coast, the Vaiʻava Strait and Pola Island in the distance. Exhibits along the way tell the story of the people who lived here. It is an easy walk with children, and a place to talk about where your own family came from with the ocean spread out below you.",
+      "plan": {
+        "distance": "0.4 mi round trip",
+        "difficulty": "Easy",
+        "time": "30 to 45 minutes",
+        "elevation": "232 ft as published (the same NPS page also lists 7 m)",
+        "accessibility": "The Lower Sauma Ridge overlook is accessible with assistance; the trail is unimproved",
+        "bestTime": "Morning, to avoid intense sun and heat",
+        "scattering": "Not here: an archaeological site (see below)"
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "On Tutuila's north coast, the trailhead and a small parking area are on the coast road (Route 006) near Vatia, above the Vaiʻava Strait.",
+        "points": [{ "label": "Trailhead parking", "lat": -14.24849, "lon": -170.66166 }]
+      },
+      "trail": {
+        "name": "Lower Sauma Ridge Trail",
+        "steps": ["Climb gently from the trailhead past the exhibits to the archaeological site and the overlook."],
+        "notes": ["Leave the stones and the star mound exactly as you find them."]
+      },
+      "final": [{ "label": "Overlook", "lat": -14.24619, "lon": -170.66121 }],
+      "scatterNote": {
+        "text": "This is an ancient Samoan archaeological site. Do not scatter ashes here. The park publishes no confirmed scattering location; contact the park before making any plans."
+      },
+      "links": [{ "label": "Lower Sauma Ridge Trail", "url": "https://www.nps.gov/thingstodo/lower-sauma-ridge-trail.htm" }]
+    },
+    {
+      "id": "mount-alava",
+      "name": "Mount ʻAlava",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/mount-alava.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/mount-alava.webp",
+        "alt": "Green mountains surrounded by ocean with a town nestled around a harbor in the valley",
+        "credit": "NPS Photo"
+      },
+      "description": "The Mount ʻAlava Trail climbs a long ridge through tropical rainforest, past the park's work restoring native trees, to a summit where all of Tutuila spreads out below. Pago Pago Harbor, a collapsed volcanic caldera, curves between green mountains, and the ocean surrounds everything. It is a full day of walking together through heat and birdsong, and reaching the top, with the whole island at your feet, can feel like a gift your loved one made possible.",
+      "plan": {
+        "distance": "7 mi round trip",
+        "difficulty": "Strenuous (the park lists it among its rigorous trails)",
+        "time": "Full day",
+        "accessibility": "Long and steep; trails can be muddy and slippery after rain",
+        "bestTime": "Sunrise views; the drier months from May to October",
+        "scattering": "Unconfirmed: contact the park first"
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "The trail starts where Route 005 crosses the ridge above Fagasa (trailhead location from OpenStreetMap; confirm at the visitor center in Pago Pago). The Mount ʻAlava Road is closed to public vehicles and bicycles.",
+        "points": [{ "label": "Trailhead", "lat": -14.28374, "lon": -170.71309 }]
+      },
+      "trail": {
+        "name": "Mount ʻAlava Trail",
+        "steps": [
+          "Follow the trail along the ridge through the rainforest.",
+          "Continue to the summit for the panoramic view of Tutuila and Pago Pago Harbor."
+        ],
+        "notes": [
+          "Carry plenty of water (the park suggests at least 2 to 3 liters per person), rain gear and sturdy shoes with good traction.",
+          "Alcohol is prohibited at the trailhead and along the trail. Stay on the established trail."
+        ]
+      },
+      "final": [{ "label": "Summit", "lat": -14.26523, "lon": -170.68776 }],
+      "links": [
+        { "label": "Mount ʻAlava", "url": "https://www.nps.gov/places/mount-alava.htm" },
+        { "label": "Trails", "url": "https://www.nps.gov/npsa/planyourvisit/trails.htm" }
+      ]
+    },
+    {
+      "id": "ofu-beach",
+      "name": "Ofu Beach",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/ofu-beach.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/ofu-beach.webp",
+        "alt": "A palm-lined white sand beach and turquoise reef on Ofu, with the peaks of Olosega beyond",
+        "credit": "NPS Photo/Eymard Bangcoro"
+      },
+      "description": "Getting to Ofu takes a small plane and real patience, and that is part of its meaning. At the end of the journey is a secluded sandy beach lined with palms, a clear shallow reef, and the steep green peaks of Olosega rising across the water. From the sand you might spot fish, rays or seabirds. Sitting together in its quiet, so far from everyday life, can be a moving way to honor someone who dreamed of faraway shores.",
+      "plan": {
+        "distance": "About a 20-minute walk from Vaoto Lodge",
+        "difficulty": "Easy",
+        "accessibility": "Sandy beach; no medical care on the island, and emergency response may take days",
+        "bestTime": "The drier months from May to October",
+        "scattering": "Unconfirmed: contact the park first"
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "No road connects Ofu to Tutuila. Fly from Pago Pago to Ofu with Samoa Airways (Tuesdays and Thursdays), then walk or arrange local transportation; there is no public transportation. Vaoto Lodge, outside the park, is the only lodging on the island.",
+        "points": [{ "label": "Ofu Airport", "lat": -14.18451, "lon": -169.66907 }]
+      },
+      "final": [{ "label": "Ofu Beach", "lat": -14.17889, "lon": -169.65 }],
+      "links": [{ "label": "Visiting Ofu and Taʻū Islands", "url": "https://www.nps.gov/npsa/planyourvisit/visiting-ofu-and-ta-u-islands.htm" }]
+    }
+  ]
+}
