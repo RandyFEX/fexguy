@@ -1,0 +1,178 @@
+{
+  "id": "saguaro",
+  "name": "Saguaro National Park",
+  "short": "Saguaro",
+  "state": "Arizona",
+  "states": ["Arizona"],
+  "tagline": "Forests of giant saguaros on either side of Tucson.",
+  "photo": {
+    "src": "/images/last-adventure/saguaro/park.jpg",
+    "srcWebp": "/images/last-adventure/saguaro/park.webp",
+    "alt": "The silhouette of a saguaro cactus against the sunset sky",
+    "credit": "National Park Service",
+    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_National_Park_at_sunset.jpg",
+    "caption": "A saguaro at sunset"
+  },
+  "intro": "Saguaro National Park protects forests of the giant cactus in two districts on either side of Tucson: the Tucson Mountain District to the west and the Rincon Mountain District to the east. A final adventure here can be a short walk to a ridge-top bench at sunset, a climb to ancient petroglyphs, or an evening among the boulders of a scenic loop drive. Scattering is permitted with a free permit, well away from trails and roads.",
+  "homepage": "https://www.nps.gov/sagu/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/sagu/planyourvisit/maps.htm" },
+    { "label": "Hiking trail recommendations (NPS)", "url": "https://www.nps.gov/sagu/planyourvisit/saguaro_hiking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering of human cremated remains is permitted with a free permit, on the ground at least 100 yards from any trail, road, developed facility, cultural or historic site or water.",
+  "scatterFacts": [
+    "Permit required (Superintendent's Compendium, 36 CFR 2.62(b)). Contact nps_sagu_sup@nps.gov; no application fee for ash dispersal.",
+    "The park asks for a minimum of 72 hours to process a basic permit request. Questions: (520) 733-5153 (east district) or (520) 733-5158 (west district).",
+    "On the ground: at least 100 yards from any trail, road, developed facility, known cultural or historic site or body of water.",
+    "From the air: at least 2,000 feet above the ground, and not over developed areas, facilities or bodies of water.",
+    "Ashes must be cremated and pulverized in compliance with state law, with no teeth, bone fragments or recognizable remains. Only ashes from human cremation may be scattered. No monument or marker."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits: ash dispersal (NPS)", "url": "https://www.nps.gov/sagu/planyourvisit/sup.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/sagu/learn/management/compendium.htm" }
+  ],
+  "beforeYouGo": "The two districts are separated by the city of Tucson; the park advises entering the physical address in your map app, since phone maps often confuse them. West: 2700 N. Kinney Road (Red Hills Visitor Center). East: 3693 S. Old Spanish Trail, reached by Broadway and Freeman Road from the city or from I-10 exit 275 (Houghton Road). The west district's Bajada Loop Drive is a 6-mile graded dirt road (no high clearance needed); the east district's Cactus Forest Drive is an 8-mile paved loop with no RV parking. Vehicles over 8.5 feet wide or 40 feet combined length are prohibited on both loops.",
+  "destinations": [
+    {
+      "id": "valley-view-overlook",
+      "name": "Valley View Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/saguaro/valley-view-overlook.jpg",
+        "srcWebp": "/images/last-adventure/saguaro/valley-view-overlook.webp",
+        "alt": "A many-armed saguaro glows in golden evening light near the Valley View Overlook Trail, with desert hills behind",
+        "credit": "Joe Parks",
+        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_-_Flickr_-_Joe_Parks.jpg"
+      },
+      "description": "Built by the Civilian Conservation Corps in the 1930s, this little trail dips through a couple of desert washes, past signs naming the plants around you, then rises gently to a ridge where benches wait. From there the view opens west across Avra Valley, with Signal Hill a small dark mound below and the jagged ridge of Picacho Peak to the north. Settle onto the benches together, let the desert go quiet, and stay until the light starts to fade.",
+      "plan": {
+        "distance": "0.8 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Drops into and out of two washes, then climbs gradually to the ridge; rock steps. Benches at the overlook",
+        "scattering": "With a permit, at least 100 yards from this trail (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the Red Hills Visitor Center, turn right on Kinney Road and go 1.6 miles to the Bajada Loop Drive entrance on the right. The trailhead is about 1.3 miles along the loop, with a few parking spots on the left side of the road; if they are full, continue the loop and come back later.",
+        "points": [{ "label": "Valley View Trailhead", "lat": 32.27722, "lon": -111.19776, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Valley View Overlook Nature Trail",
+        "steps": ["Cross into and out of a couple of washes.", "Climb gradually to the ridge and the benches at the overlook.", "Return the same way."]
+      },
+      "final": [{ "label": "Overlook", "lat": 32.27684, "lon": -111.2032 }],
+      "scatterNote": { "text": "Scattering on the ground must be at least 100 yards from any trail, road, developed facility, cultural or historic site or water, so it cannot be done at the overlook. Describe a qualifying location when you request the free permit." },
+      "links": [
+        { "label": "Valley View Overlook Nature Trail", "url": "https://www.nps.gov/places/valley-view-overlook-nature-trail.htm" },
+        { "label": "Valley View Trailhead", "url": "https://www.nps.gov/places/valley-view-trailhead.htm" }
+      ]
+    },
+    {
+      "id": "signal-hill",
+      "name": "Signal Hill Petroglyphs",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/saguaro/signal-hill.jpg",
+        "srcWebp": "/images/last-adventure/saguaro/signal-hill.webp",
+        "alt": "Hohokam petroglyphs carved into dark boulders on Signal Hill",
+        "credit": "Matt Kieffer",
+        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hohokam_Petroglyphs_(26158403555).jpg"
+      },
+      "description": "On a small rocky hill above the desert, people carved spirals and figures into dark boulders between about 550 and 1,550 years ago. More than 200 petroglyphs cover the hill, the largest such site in the park's western district, and many can be seen right from the short trail that zigzags to the top. Standing beside marks left by people so long ago is a quiet way to think about memory, and about what each of us leaves behind for the people who come after.",
+      "plan": {
+        "distance": "0.5 mi (NPS)",
+        "difficulty": "Easy",
+        "accessibility": "Short climb on a rocky trail; not ADA accessible (NPS)",
+        "scattering": "Not here: a known cultural site. With a permit, elsewhere (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Follow the Bajada Loop Drive from Kinney Road to the Signal Hill turnoff and the Signal Hill Picnic Area. The picnic area has closed for construction in the past; check the park's projects and closures page. When it is closed, the park describes hiking routes from roadside access points outside the park.",
+        "points": [{ "label": "Signal Hill Picnic Area", "lat": 32.29009, "lon": -111.20899, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Signal Hill Petroglyphs trail",
+        "steps": ["From the picnic area, follow the short trail north as it zigzags up the hill.", "View the petroglyphs from the trail near the rocky summit."],
+        "notes": ["Do not touch or climb on the petroglyph boulders."]
+      },
+      "final": [{ "label": "Signal Hill", "lat": 32.29109, "lon": -111.20843 }],
+      "scatterNote": { "text": "Scattering must be at least 100 yards from any trail, road, developed facility and known cultural or historic site, which rules out Signal Hill. Describe a qualifying location when you request the free permit." },
+      "links": [
+        { "label": "Signal Hill", "url": "https://www.nps.gov/places/signal-hill.htm" },
+        { "label": "Signal Hill Petroglyphs", "url": "https://www.nps.gov/articles/000/signal-hill-petroglyphs.htm" },
+        { "label": "Projects and closures", "url": "https://www.nps.gov/sagu/planyourvisit/projects-and-closures.htm" }
+      ]
+    },
+    {
+      "id": "javelina-rocks",
+      "name": "Javelina Rocks",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/saguaro/javelina-rocks.jpg",
+        "srcWebp": "/images/last-adventure/saguaro/javelina-rocks.webp",
+        "alt": "A narrow dirt trail leads past saguaros toward large reddish boulders",
+        "credit": "NPS"
+      },
+      "description": "About six miles around the Cactus Forest Loop Drive, great rounded boulders rise beside the road, and this is where many people stop to watch the sun go down. The rocks are banded and striped, granite stretched over ages into gneiss, and saguaros stand all around them. Some of the family can explore and scramble while others stay near the car and watch the colors deepen across the cactus forest. It is an easy, unhurried way to end a day together.",
+      "plan": {
+        "distance": "Roadside overlook",
+        "difficulty": "Easy at the overlook; climbing on the rocks is at your own risk",
+        "accessibility": "View from the pullout; uneven trail and rocks beyond",
+        "bestTime": "Sunset",
+        "scattering": "With a permit, at least 100 yards from roads and trails (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Enter the east district at 3693 S. Old Spanish Trail and follow the paved Cactus Forest Loop Drive; Javelina Rocks is roughly 6 miles in, on the right. The road is narrow and winding, with no RV parking.",
+        "points": [{ "label": "Parking", "lat": 32.17416, "lon": -110.71739 }]
+      },
+      "final": [{ "label": "Javelina Rocks Overlook", "lat": 32.17494, "lon": -110.71653, "source": "nps" }],
+      "scatterNote": { "text": "Scattering on the ground must be at least 100 yards from any trail, road or developed facility, so it cannot be done at the overlook. Describe a qualifying location when you request the free permit." },
+      "links": [{ "label": "Javelina Rocks Overlook", "url": "https://www.nps.gov/places/javelina-rocks-overlook.htm" }]
+    },
+    {
+      "id": "tanque-verde-ridge",
+      "name": "Tanque Verde Ridge",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/saguaro/tanque-verde-ridge.jpg",
+        "srcWebp": "/images/last-adventure/saguaro/tanque-verde-ridge.webp",
+        "alt": "A wide dirt path curves past information signs at the Tanque Verde Ridge Trailhead, with saguaros on the hillside",
+        "credit": "NPS"
+      },
+      "description": "This trail climbs out of the cactus forest onto the long ridge of the Rincon Mountains. A short way up, an overlook makes a fine place for sunset; keep climbing and the views open south, west and north over distant mountain ranges and the whole Tucson Basin. Farther on wait a rare crested saguaro and a broad bare rock the park calls the Dome. Go as far as your family wants, then find a place to sit together and look out over the city and the desert.",
+      "plan": {
+        "distance": "Sunset overlook about 0.6 mi up; ridge at 0.75 mi; crested saguaro at mile 2.5; the Dome at mile 3 (one way)",
+        "difficulty": "Strenuous (NPS)",
+        "elevation": "About 100 ft to the sunset overlook",
+        "accessibility": "Rugged mountain trail",
+        "bestTime": "Sunset at the overlook; seasonal wildflowers",
+        "scattering": "With a permit, at least 100 yards from the trail (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Enter the east district at 3693 S. Old Spanish Trail and follow the Cactus Forest Loop Drive to the Javelina Picnic Area, where the trail begins.",
+        "points": [{ "label": "Tanque Verde Ridge Trailhead", "lat": 32.16612, "lon": -110.72415, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Tanque Verde Ridge Trail",
+        "steps": [
+          "Climb about 0.6 mi (roughly 100 ft) to the overlook, a favorite sunset spot.",
+          "At about 0.75 mi you reach the ridge, with views south, west and north.",
+          "Continue to the crested saguaro at mile 2.5 and the Dome at mile 3, then return the same way."
+        ],
+        "notes": ["The trail continues to Juniper Basin Campground (mile 6.9) and Tanque Verde Peak (mile 8.7); plan any longer trip with the park."]
+      },
+      "final": [{ "label": "Overlook", "lat": 32.16135, "lon": -110.71423 }],
+      "scatterNote": { "text": "Scattering on the ground must be at least 100 yards from the trail and any road, developed facility, cultural or historic site or water. Describe a qualifying location when you request the free permit." },
+      "links": [
+        { "label": "Tanque Verde Ridge Trail", "url": "https://www.nps.gov/places/tanque-verde-ridge-trail.htm" },
+        { "label": "Hiking trail recommendations", "url": "https://www.nps.gov/sagu/planyourvisit/saguaro_hiking.htm" }
+      ]
+    }
+  ]
+}
