@@ -69,6 +69,8 @@ export interface Park {
   scatterAllowed: 'Permitted with a permit' | 'Permitted with a permission letter' | 'Prohibited';
   scatterSummary: string;
   scatterFacts: string[];
+  /** Extra explanatory paragraphs shown in the scattering panel. */
+  scatterNotes?: string[];
   scatterLink: Link[];
   beforeYouGo: string;
   destinations: Destination[];
@@ -917,11 +919,12 @@ export const parks: Park[] = [
     homepage: 'https://www.nps.gov/grca/',
     map: [{ label: 'Official park maps', url: 'https://www.nps.gov/grca/planyourvisit/maps.htm' }],
     scatterAllowed: 'Prohibited',
-    scatterSummary: 'Scattering of ashes is prohibited throughout the park, and no permits are issued.',
-    scatterFacts: [
-      'Superintendent’s Compendium item (62), citing 36 CFR 1.5(a)(2) and 36 CFR 2.62.',
-      'Plan the farewell here, and scatter separately at a legally permitted location outside the park.',
+    scatterSummary: 'Ash scattering is prohibited throughout Grand Canyon National Park.',
+    scatterNotes: [
+      'Published park rules prohibit scattering ashes, but do not expressly prohibit bringing securely contained cremated remains for a personal visit. Confirm any planned ceremony with the park.',
+      'You can still plan a meaningful farewell here. Bring your loved one’s cremated remains in a secure, non-breakable container, share memories at a spectacular viewpoint, and take the remains with you when you leave. Arrange any scattering separately at a location where it is legally permitted.',
     ],
+    scatterFacts: ['Superintendent’s Compendium item (62), citing 36 CFR 1.5(a)(2) and 36 CFR 2.62. No permits are issued for scattering.'],
     scatterLink: [{ label: 'Superintendent’s Compendium (PDF)', url: 'https://www.nps.gov/grca/learn/management/upload/grca-supt-compendium.pdf' }],
     beforeYouGo:
       'The South Rim is open all year. South Entrance: I-40 to Williams, then Highway 64 north, or Highway 180 from Flagstaff. East Entrance (Desert View): Highway 89 to Cameron, then Highway 64 west. Phantom Ranch, the river bridges and the North Kaibab Trail are closed after flooding; check current trail status before hiking.',

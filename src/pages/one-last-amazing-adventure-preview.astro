@@ -163,7 +163,12 @@ const difficultyRange = (text: string): [number, number] => {
                 </div>
                 <aside class={`ola-scatter ${p.scatterAllowed === 'Prohibited' ? 'ola-scatter--no' : ''}`} aria-labelledby={`${p.id}-scatter`}>
                   <h3 id={`${p.id}-scatter`}>Ash Scattering in {p.short}</h3>
-                  <p class="ola-scatter__summary">{p.scatterSummary}</p>
+                  {p.scatterAllowed === 'Prohibited' ? (
+                    <p class="ola-warn"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg><span>{p.scatterSummary}</span></p>
+                  ) : (
+                    <p class="ola-scatter__summary">{p.scatterSummary}</p>
+                  )}
+                  {p.scatterNotes?.map((n) => <p class="ola-scatter__note">{n}</p>)}
                   <ul>{p.scatterFacts.map((f) => <li>{f}</li>)}</ul>
                   <p class="ola-scatter__links">{p.scatterLink.map((l) => <a href={l.url} rel="noopener" target="_blank">{l.label}</a>)}</p>
                 </aside>
@@ -176,6 +181,11 @@ const difficultyRange = (text: string): [number, number] => {
 
               {p.destinations.map((d) => (
                 <article class="ola-dest" id={`${p.id}-${d.id}`} aria-labelledby={`${p.id}-${d.id}-title`}>
+                  <header class="ola-dest__band">
+                    <p class="ola-dest__park">{p.name}</p>
+                    <h3 id={`${p.id}-${d.id}-title`} class="ola-dest__name">{d.name}</h3>
+                    <p class="ola-dest__tags">{d.kinds.map((k) => <span class={`ola-tag ola-tag--${k}`}>{kindLabel[k]}</span>)}</p>
+                  </header>
                   {d.photo ? (
                     <figure class="ola-dest__photo">
                       <picture>
@@ -191,14 +201,7 @@ const difficultyRange = (text: string): [number, number] => {
                     <div class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${d.name} to come`}><span>{d.name}</span></div>
                   )}
 
-                  <header class="ola-dest__head">
-                    <p class="ola-dest__park">
-                      {p.name}
-                      {d.kinds.map((k) => <span class={`ola-tag ola-tag--${k}`}>{kindLabel[k]}</span>)}
-                    </p>
-                    <h3 id={`${p.id}-${d.id}-title`} class="ola-dest__name">{d.name}</h3>
-                    <p class="ola-dest__desc">{d.description}</p>
-                  </header>
+                  <p class="ola-dest__desc">{d.description}</p>
 
                   <section class="ola-plan" aria-label={`Plan your adventure: ${d.name}`}>
                     <h4>Plan Your Adventure</h4>
@@ -228,7 +231,7 @@ const difficultyRange = (text: string): [number, number] => {
                       {d.plan.elevation && <div><dt>Elevation gain</dt><dd>{d.plan.elevation}</dd></div>}
                       <div class="ola-plan__wide"><dt>Accessibility</dt><dd>{d.plan.accessibility}</dd></div>
                       {d.plan.bestTime && <div class="ola-plan__wide"><dt>Best time or season</dt><dd>{d.plan.bestTime}</dd></div>}
-                      <div class={`ola-plan__scatter ola-plan__scatter--${d.scatterStatus}`}><dt>Ash Scattering</dt><dd>{d.plan.scattering}</dd></div>
+                      <div class={`ola-plan__scatter ola-plan__scatter--${d.scatterStatus}`}><dt>Ash Scattering</dt><dd>{d.scatterStatus === 'prohibited' && <span class="ola-warn ola-warn--inline"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg></span>}{d.plan.scattering}</dd></div>
                       <div>
                         <dt>Official Information</dt>
                         <dd>
@@ -378,6 +381,7 @@ const difficultyRange = (text: string): [number, number] => {
     --ola-ink: #1f2926;
     --ola-sage: #e7ece4;
     --ola-sand: #f6f2ea;
+    --ola-gold: #d4a64a;
     --ola-wrap: 76rem;
     color: var(--ola-ink);
   }
@@ -730,22 +734,60 @@ const difficultyRange = (text: string): [number, number] => {
     color: var(--color-text-muted);
     line-height: 1.6;
   }
+  /* Ash scattering panels: brand green, white text, gold accent (a lighter
+     tint of the site gold #b68a35, for 4.5:1 contrast on the green). */
   .ola-scatter {
-    background: var(--ola-sage);
-    border-left: 4px solid var(--color-primary);
+    background: #173f35;
+    color: #fff;
+    border-top: 4px solid var(--ola-gold);
     border-radius: var(--radius);
     padding: var(--space-4) var(--space-6);
-  }
-  .ola-scatter--no {
-    background: #fbefec;
-    border-left-color: #b4361c;
   }
   .ola-scatter h3 {
     margin: 0 0 var(--space-2);
     font-size: 1.25rem;
+    color: var(--ola-gold);
   }
   .ola-scatter__summary {
     font-weight: 700;
+  }
+  .ola-scatter__note {
+    line-height: 1.6;
+  }
+  .ola-scatter a {
+    color: #fff;
+  }
+  .ola-scatter a:hover {
+    color: var(--ola-gold);
+  }
+  .ola-warn {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius);
+    background: #b91c1c;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .ola-warn__icon {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.05rem;
+  }
+  .ola-warn--inline {
+    display: inline-flex;
+    vertical-align: -0.3rem;
+    margin: 0 var(--space-2) 0 0;
+    padding: 0.2rem;
+  }
+  .ola-warn--inline .ola-warn__icon {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
   }
   .ola-scatter ul {
     overflow-wrap: anywhere;
@@ -783,8 +825,18 @@ const difficultyRange = (text: string): [number, number] => {
 
   /* Destinations */
   .ola-dest {
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-16);
     scroll-margin-top: 0.5rem;
+  }
+  .ola-dest__band {
+    background: #173f35;
+    color: #fff;
+    text-align: center;
+    padding: var(--space-4) var(--space-4) var(--space-3);
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  .ola-dest__band + .ola-dest__photo img {
+    border-radius: 0 0 0.75rem 0.75rem;
   }
   .ola-dest__photo {
     margin: 0;
@@ -805,27 +857,28 @@ const difficultyRange = (text: string): [number, number] => {
     font-size: 1.5rem;
     font-weight: 700;
   }
-  .ola-dest__head {
-    margin-top: var(--space-4);
-    text-align: center;
-  }
   .ola-dest__park {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-2);
     margin: 0;
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--color-text-muted);
+    letter-spacing: 0.08em;
+    color: var(--ola-gold);
   }
   .ola-dest__name {
-    font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.375rem);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.75rem);
     line-height: 1.15;
-    margin: var(--space-1) 0 var(--space-3);
+    margin: var(--space-1) 0 0;
+    color: #fff;
+  }
+  .ola-dest__tags {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    margin: var(--space-2) 0 0;
+  }
+  .ola-dest__desc {
+    margin-top: var(--space-4);
   }
   .ola-dest__desc {
     font-size: 1.125rem;
@@ -901,11 +954,14 @@ const difficultyRange = (text: string): [number, number] => {
     min-height: 2rem;
     margin-right: var(--space-4);
   }
-  .ola-plan__scatter--permitted dd {
-    color: #1d4d2b;
+  .ola-plan__grid > .ola-plan__scatter {
+    background: #173f35;
   }
-  .ola-plan__scatter--prohibited dd {
-    color: #8a2412;
+  .ola-plan__scatter dt {
+    color: var(--ola-gold);
+  }
+  .ola-plan__scatter dd {
+    color: #fff;
   }
 
   /* Directions */
