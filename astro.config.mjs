@@ -82,6 +82,7 @@ export default defineConfig({
         // /facebook/, /free-quote/, /get-rates/ and /help/ are noindex landing pages (src/pages/).
         // /health-question-search-preview/ is a non-indexed review page.
         // /trin-fbl/ is a client documents page sent by direct link (noindex, nofollow).
+        // /one-last-amazing-adventure-preview/ is a private review page (noindex, nofollow).
         return (
           !path.startsWith('/404') &&
           path !== '/search/' &&
@@ -91,6 +92,7 @@ export default defineConfig({
           path !== '/help/' &&
           path !== '/health-question-search-preview/' &&
           path !== '/trin-fbl/' &&
+          path !== '/one-last-amazing-adventure-preview/' &&
           !excluded.has(path)
         );
       },
