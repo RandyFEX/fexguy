@@ -1,0 +1,195 @@
+{
+  "id": "olympic",
+  "name": "Olympic National Park",
+  "short": "Olympic",
+  "state": "Washington",
+  "states": ["Washington"],
+  "tagline": "Mountain meadows, moss-draped rain forest and a wild Pacific shoreline in one park.",
+  "photo": {
+    "src": "/images/last-adventure/olympic/park.jpg",
+    "srcWebp": "/images/last-adventure/olympic/park.webp",
+    "alt": "A road winds through forested ridges below snow-capped peaks at Hurricane Ridge",
+    "credit": "TravelingOtter",
+    "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurricane_Ridge_-_Olympic_National_Park,_Washington.jpg",
+    "caption": "Hurricane Ridge"
+  },
+  "intro": "Olympic gathers three worlds into one park: glacier-capped mountains, temperate rain forest and a rugged Pacific coast, with almost a million acres of wilderness between them. In a single trip a family can stand on a mountain ridge, walk beneath maples draped in moss in a forest that receives up to 12 feet of rain a year, follow a creek to a waterfall near Lake Crescent and watch the surf break against sea stacks.",
+  "homepage": "https://www.nps.gov/olym/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/olym/planyourvisit/maps.htm" },
+    { "label": "Day hiking at Olympic (NPS)", "url": "https://www.nps.gov/olym/planyourvisit/day-hiking-at-olympic.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Human ashes may be scattered in Olympic National Park with a permit, away from water, trails, roads and developed areas, and never at Hurricane Ridge or the surrounding area.",
+  "scatterFacts": [
+    "Permit to Scatter Ashes: email the completed application to olym_permits@nps.gov. Special Use Permit Coordinator: 360-565-3092.",
+    "Submit at least 1 month before the ceremony (applications accepted up to one year ahead, reviewed in order of receipt). The coordinator works with you on the permit's conditions.",
+    "The scattering section does not list a fee; the same page lists a $50 application fee for wedding permits. Confirm any fee with the coordinator.",
+    "Not within 200 feet of any body of water, trail or roadside, or in a developed area. No remains may be spread at Hurricane Ridge or the surrounding area.",
+    "Remains must be pulverized and fully dispersed. No container, urn, flowers or memorial markers may be left in the park.",
+    "Ceremonies may not impede other visitors; outdoor areas are not closed off and parking cannot be reserved."
+  ],
+  "scatterLink": [
+    { "label": "Permit to scatter ashes (NPS)", "url": "https://www.nps.gov/olym/planyourvisit/special-use-permits-commercial-permits-overnight-reservations.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/olym/learn/management/superintendent-s-compendium.htm" }
+  ],
+  "beforeYouGo": "The park is open 24 hours a day, year-round, but some roads, campgrounds and facilities are seasonal; from October through May many close or reduce hours. Hurricane Ridge Road (from Port Angeles) closes for snow and on Thanksgiving and Christmas, and from Thanksgiving weekend to the last weekend in March every vehicle on it must carry tire chains. Construction continues at Hurricane Ridge in 2026, with no potable water there. Highway 101 links Lake Crescent, the Hoh Rain Forest and the coast; check the park's notice on fall 2026 closures at the US 101 Hoh River Bridge.",
+  "destinations": [
+    {
+      "id": "hurricane-hill",
+      "name": "Hurricane Hill",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/olympic/hurricane-hill.jpg",
+        "srcWebp": "/images/last-adventure/olympic/hurricane-hill.webp",
+        "alt": "A hiker and a wheelchair user on the paved Hurricane Hill trail with mountains behind them",
+        "credit": "NPS/J. Burger"
+      },
+      "description": "The paved trail to Hurricane Hill begins almost level, so a wheelchair, a walker or a grandparent's slow pace can come along for the first stretch, with the Olympic Mountains spread out to the south. Those who keep climbing reach the top, where on a clear day the view turns north across the Strait of Juan de Fuca toward Vancouver Island. Wherever each of you stops, it is a place to stand in the high, open air and speak about the person who brought you here.",
+      "plan": {
+        "distance": "1.6 mi one way (about 3 mi round trip)",
+        "difficulty": "Easy on the first, nearly level 0.5 mi; Strenuous beyond",
+        "elevation": "About 700 ft (645 ft in the park's accessibility survey)",
+        "accessibility": "Paved; wheelchair accessible for the first 0.5 mi, then very steep (many 15 to 20% grades). Van-accessible parking across from the trailhead (NPS)",
+        "scattering": "Not at Hurricane Ridge or the surrounding area"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Hurricane Ridge Road from Port Angeles to the Hurricane Ridge Visitor Center, then Hurricane Hill Road to its end. Hurricane Hill Road is not suitable for RVs or buses and closes seasonally; overflow parking is at Picnic Area B.",
+        "points": [{ "label": "Hurricane Hill Trailhead", "lat": 47.97661, "lon": -123.51782 }]
+      },
+      "trail": {
+        "name": "Hurricane Hill Trail",
+        "steps": [
+          "Start at the northwest corner of the parking area. The first 2,700 feet are paved and gentle, with a net gain of only 10 feet.",
+          "Near 1,400 feet the trail runs along a steep bank with a drop on the outside edge; keep to the inside if heights trouble you.",
+          "Around 2,700 feet is a good place to turn back. Beyond it the trail climbs steeply to the top of Hurricane Hill."
+        ],
+        "notes": ["NPS pages give the trailhead as 1.3 miles or 2 miles past the Hurricane Ridge Visitor Center."]
+      },
+      "final": [{ "label": "Summit", "lat": 47.99033, "lon": -123.52911 }],
+      "scatterNote": { "text": "The park does not allow scattering at Hurricane Ridge or the surrounding area. With a permit, scattering is allowed elsewhere in the park at least 200 feet from any water, trail or roadside and outside developed areas; the park publishes no designated sites, so describe your proposed place in the application." },
+      "links": [{ "label": "Hurricane Hill Trailhead", "url": "https://www.nps.gov/places/000/hurricane-hill-trailhead.htm" }]
+    },
+    {
+      "id": "hall-of-mosses",
+      "name": "Hall of Mosses",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/olympic/hall-of-mosses.jpg",
+        "srcWebp": "/images/last-adventure/olympic/hall-of-mosses.webp",
+        "alt": "A moss-covered fallen log among ferns and young trees on the Hall of Mosses trail",
+        "credit": "King of Hearts",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoh_Rain_Forest_Olympic_June_2018_001.jpg"
+      },
+      "description": "Walking into the Hall of Mosses feels like entering a green cathedral. The short loop winds through old-growth rain forest to a grove of maple trees hung with thick club moss, while ferns cover the ground and fallen trees nurse new seedlings along their trunks. Voices drop to a whisper here without anyone asking. It is a gentle place to walk slowly together, share a quiet word and feel how life keeps renewing itself all around you.",
+      "plan": {
+        "distance": "0.8 mi loop",
+        "difficulty": "Easy",
+        "elevation": "100 ft",
+        "accessibility": "Compacted gravel, 3 to 6 ft wide; hilly, with short very steep sections (7 to 25%), large steps and rocky terrain. 5 van-accessible parking spaces. The paved 0.1 mi Mini Trail nearby is accessible with assistance (NPS)",
+        "scattering": "With a permit, away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 101 to the Upper Hoh Road, then to its end at the Hoh Rain Forest Visitor Center. Summer parking is limited; the park suggests arriving before 8 am or after 5 pm to avoid waits of up to 2 hours at the entrance station.",
+        "points": [{ "label": "Hoh Rain Forest Visitor Center", "lat": 47.86088, "lon": -123.93479 }]
+      },
+      "trail": {
+        "name": "Hall of Mosses Trail",
+        "steps": [
+          "Start beside the Hoh Rain Forest Visitor Center.",
+          "Follow the loop through old-growth forest to the grove of moss-draped maples, then back to the start."
+        ]
+      },
+      "final": [{ "label": "Hall of Mosses maple grove", "lat": 47.86361, "lon": -123.93377 }],
+      "scatterNote": { "text": "The trail lies within 200 feet of trails and the visitor center area, where scattering is not allowed. With a permit, scattering may take place elsewhere in the park at least 200 feet from water, trails and roadsides and outside developed areas; describe your proposed place in the application." },
+      "links": [
+        { "label": "Visiting the Hoh Rain Forest", "url": "https://www.nps.gov/olym/planyourvisit/visiting-the-hoh.htm" },
+        { "label": "Hoh Rain Forest brochure", "url": "https://www.nps.gov/olym/planyourvisit/hoh-rain-forest-area-brochure.htm" }
+      ]
+    },
+    {
+      "id": "marymere-falls",
+      "name": "Marymere Falls",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/olympic/marymere-falls.jpg",
+        "srcWebp": "/images/last-adventure/olympic/marymere-falls.webp",
+        "alt": "Marymere Falls pouring down a mossy cliff in the forest near Lake Crescent",
+        "credit": "Sea Cow",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marymere_Falls_2022.jpg"
+      },
+      "description": "Near the shore of Lake Crescent, a forest path leads through old-growth trees toward the sound of falling water, until Marymere Falls appears, a 90-foot waterfall at the end of the trail. The park calls it the most popular day hike at Lake Crescent, and it is easy enough for most of the family to share. Stand together at the overlook, listen to the water for a while, and tell the stories that still make you smile.",
+      "plan": {
+        "distance": "0.9 mi one way (1.8 mi round trip)",
+        "difficulty": "Easy",
+        "accessibility": "The first 0.5 mi is accessible (NPS)",
+        "scattering": "With a permit, away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 101 along the south shore of Lake Crescent to the Storm King Ranger Station. The trail can also be reached from Lake Crescent Lodge.",
+        "points": [{ "label": "Marymere Falls trail parking", "lat": 48.05802, "lon": -123.78987 }]
+      },
+      "trail": {
+        "name": "Marymere Falls Trail",
+        "steps": [
+          "Start at the Storm King Ranger Station.",
+          "Walk through old-growth forest to the overlook of the 90-foot falls."
+        ]
+      },
+      "final": [{ "label": "Falls viewpoint", "lat": 48.05038, "lon": -123.78855 }],
+      "scatterNote": { "text": "The falls sit on a trail beside a creek, where scattering is not allowed. With a permit, scattering may take place elsewhere in the park at least 200 feet from water, trails and roadsides and outside developed areas; describe your proposed place in the application." },
+      "links": [
+        { "label": "Marymere Falls Trailhead", "url": "https://www.nps.gov/places/000/marymere-falls-trailhead.htm" },
+        { "label": "Lake Crescent area brochure", "url": "https://www.nps.gov/olym/planyourvisit/lake-crescent-area-brochure.htm" }
+      ]
+    },
+    {
+      "id": "ruby-beach",
+      "name": "Ruby Beach",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/olympic/ruby-beach.jpg",
+        "srcWebp": "/images/last-adventure/olympic/ruby-beach.webp",
+        "alt": "Sea stacks rising from the surf at Ruby Beach on the Olympic coast",
+        "credit": "Ron Clausen",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_stacks_at_Ruby_Beach,_Washington_coast._Olympic_National_Park.jpg"
+      },
+      "description": "At Ruby Beach the Pacific rolls in against dark sea stacks, and drift logs, rearranged by every winter's swells, lie scattered along the sand. Those who can't make the descent can take in the scene from the accessible overlook at the edge of the parking lot, while others follow the short trail down to the shore. Find a log to sit on together, listen to the waves, and let the rhythm of the tide carry your conversation for as long as you need.",
+      "plan": {
+        "distance": "Overlook beside the parking lot; 0.1 mi trail to the beach",
+        "difficulty": "Easy to the overlook; the beach trail is steep in places",
+        "accessibility": "Accessible overlook at the north end of the lot (vegetation may block the view at sitting height). The wide gravel beach trail has steep drainage dips. 3 van-accessible spaces and vault toilets (NPS)",
+        "scattering": "With a permit, away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Highway 101 along the Olympic coast to the Ruby Beach parking area, the northernmost beach in the Kalaloch area.",
+        "points": [{ "label": "Ruby Beach parking", "lat": 47.70967, "lon": -124.41394 }]
+      },
+      "trail": {
+        "name": "Ruby Beach trail",
+        "steps": [
+          "For the view, use the accessible overlook at the north end of the parking lot.",
+          "To reach the shore, follow the trail 0.1 mile down from the bluff."
+        ],
+        "notes": ["Always check the tides before walking the coast; some areas become impassable at high tide."]
+      },
+      "final": [
+        { "label": "Overlook", "lat": 47.7101, "lon": -124.41376 },
+        { "label": "Beach", "lat": 47.7096, "lon": -124.41536 }
+      ],
+      "scatterNote": { "text": "Scattering is not allowed within 200 feet of the ocean, the trail, the road or the parking area. With a permit, scattering may take place elsewhere in the park away from these features; describe your proposed place in the application." },
+      "links": [
+        { "label": "Visiting Kalaloch and Ruby Beach", "url": "https://www.nps.gov/olym/planyourvisit/visiting-kalaloch-and-ruby-beach.htm" },
+        { "label": "Ruby Beach Overlook", "url": "https://www.nps.gov/places/000/ruby-beach-overlook.htm" }
+      ]
+    }
+  ]
+}
