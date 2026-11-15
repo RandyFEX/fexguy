@@ -72,6 +72,8 @@ export interface Park {
   /** Extra explanatory paragraphs shown in the scattering panel. */
   scatterNotes?: string[];
   scatterLink: Link[];
+  /** Full-width explanation row under Ash Scattering in each destination's panel. */
+  planNote?: { heading: string; text: string };
   beforeYouGo: string;
   destinations: Destination[];
 }
@@ -143,7 +145,7 @@ export const parks: Park[] = [
           credit: 'NPS/Neal Herbert',
         },
         description:
-          'Step to the rim and the Green River appears 1,300 feet below, winding through its channel with The Maze and the White Rim Road spread out beyond. The park counts this among the best places at Island in the Sky to watch the sun set, and the walk from the car is short enough for everyone. It is also one of the six authorized scattering locations, so the farewell and the scattering can share one view.',
+          'Picture the last light of the day moving across the canyons while the Green River winds through its channel 1,300 feet below you. The park counts this among the best sunset spots at Island in the Sky, and it asks almost nothing of anyone: a few steps from the car, and the whole family is standing together at the rim, looking out toward The Maze. It is also one of the six places in the park where scattering is authorized, so the goodbye and the scattering can happen side by side.',
         plan: {
           distance: 'About 0.1 mi from parking (map estimate)',
           difficulty: 'Easy',
@@ -171,7 +173,7 @@ export const parks: Park[] = [
           sourceUrl: commons('View_Through_Mesa_Arch_Canyonlands_NP_Utah_2023.jpg'),
         },
         description:
-          'Arrive before dawn, find a place along the rim and wait. As the sun clears the horizon, light pours through this 27-foot arch on the edge of the mesa, framing the canyon far below and the La Sal Mountains beyond. The loop walk is short, and the park calls this its classic sunrise spot: a quiet, beautiful way to begin a day of remembering together.',
+          'There is a hush at Mesa Arch just before dawn, when everyone stops talking and waits. Then the sun clears the horizon and light pours through the 27-foot arch, framing the canyon far below and the La Sal Mountains in the distance. The walk is short enough for most of the family, and the park calls this its classic sunrise spot. Begin your loved one\'s last adventure here, and let the first light of the day belong to them.',
         plan: {
           distance: '0.6 mi round-trip loop',
           difficulty: 'Easy',
@@ -207,7 +209,7 @@ export const parks: Park[] = [
           credit: 'NPS/Jacob W. Frank',
         },
         description:
-          'At the southern tip of Island in the Sky, the land simply falls away. From the paved overlook you can trace the White Rim, look across to The Maze and The Needles, and find distant mountains on the horizon. Those who want more can follow the rim another mile to a second viewpoint while others rest at the overlook. Rangers often give geology talks here from spring through fall.',
+          'At the end of the road, Island in the Sky simply runs out of land. From Grand View Point the White Rim spreads out below, The Maze and The Needles lie beyond it, and distant mountains line the horizon. Some of you might follow the rim trail to the second viewpoint while others stay at the paved overlook, and everyone comes back with something to tell. It is a fitting place to look out together and think about how far a life can travel.',
         plan: {
           distance: 'Paved sidewalk to the overlook; full rim trail 1.8 mi round trip',
           difficulty: 'Easy',
@@ -255,7 +257,7 @@ export const parks: Park[] = [
           credit: 'NPS/Veronica Verdin',
         },
         description:
-          'This is a full day across dry, open desert country along the edge of the Needles faults. At the end, the trail stops at a cliff, and 1,000 feet below, the Green and Colorado rivers meet and become one. It is hard to imagine a more fitting place to remember a life that brought a family together. It is also an authorized scattering location, so the long walk can end with the farewell itself.',
+          'Two great rivers, the Green and the Colorado, come together 1,000 feet below the cliff where this trail ends, and from that point on they flow as one. It takes a long day of walking across open desert to get here, and that is part of the meaning. Few places say so much about a family without a single word. Because this is one of the park\'s authorized scattering locations, the journey can end with the farewell itself, right where the rivers join.',
         plan: {
           distance: '11 mi round trip',
           difficulty: 'Strenuous',
@@ -291,7 +293,7 @@ export const parks: Park[] = [
           credit: 'NPS/Veronica Verdin',
         },
         description:
-          'The walk up Elephant Canyon is a real adventure: deep sand, loose rock, a ladder and a final scramble. The reward is a towering arch standing at the head of the canyon, a view the park calls one of the most spectacular in The Needles. This is a day for the strong hikers in the family, who can carry the memories and the photographs home to everyone else.',
+          'Druid Arch is the kind of destination your loved one might have talked about for years. The trail winds up Elephant Canyon through deep sand and loose rock, climbs a ladder and finishes with a scramble, until a towering stone arch fills the sky at the head of the canyon. The park calls the view one of the most spectacular in The Needles. For the adventurers in your family, carrying someone you love this far is a tribute all its own.',
         plan: {
           distance: '10.8 mi round trip',
           difficulty: 'Strenuous',
@@ -371,7 +373,7 @@ export const parks: Park[] = [
           sourceUrl: commons('Oxbow_Bend_Grand_Teton_(8047187108).jpg'),
         },
         description:
-          'Mount Moran rises above a slow curve of the Snake River, and on a still day the mountain is mirrored in the water. Oxbow Bend sits right beside the park road, so grandparents, young children and anyone who cannot hike can share the view from the turnout. Bring something warm to drink, arrive early and watch the light change on the mountain together.',
+          'Some of the best goodbyes happen quietly, with a thermos of coffee and a view. At Oxbow Bend the Snake River slows into a lazy curve, and Mount Moran rises above it, mirrored in the water on a still day. You can stand together right beside the turnout, which makes this an ideal stop when grandparents, small children or anyone who can\'t hike is part of the trip. Bring a favorite photograph and let the mountain keep you company.',
         plan: {
           distance: 'Roadside overlook',
           difficulty: 'Easy',
@@ -396,7 +398,7 @@ export const parks: Park[] = [
           credit: 'NPS Photo/J. Bonney',
         },
         description:
-          'An easy trail climbs an aspen-covered moraine, then the trees open and the Teton Range fills the sky ahead. The path ends at an alpine lake right at the foot of the peaks, a view the park calls one of the best of the range. At three miles round trip, it is a walk most of the family can share, and in winter it can be reached on snowshoes.',
+          'The moment the trees open and the Teton Range appears in front of you stays with you. The trail to Taggart Lake climbs gently through aspens and ends at the water\'s edge, right at the foot of the peaks, a view the park counts among the best of the range. It is short enough that three generations can make the walk together, and in winter the same trail welcomes snowshoes. Find a spot along the shore and share a few stories.',
         plan: {
           distance: '3 mi round trip',
           difficulty: 'Easy',
@@ -428,7 +430,7 @@ export const parks: Park[] = [
           credit: 'NPS Photo/J. Bonney',
         },
         description:
-          'Start with a boat ride across Jenny Lake, then climb past Hidden Falls, a 100-foot cascade in the forest. A last set of switchbacks brings you out on a rocky perch high above the lake, looking across Jackson Hole. The boat keeps the hike short enough for many families; walking the shoreline instead turns it into a half-day adventure.',
+          'Start with a boat ride across Jenny Lake, the kind of simple adventure your loved one might have enjoyed most. On the far shore, the trail climbs past Hidden Falls, a 100-foot cascade, and up to a rocky ledge high above the lake. Below you, the water stretches back toward the valley of Jackson Hole. It is a wonderful place to pause, pass around old photographs and let the view do the talking for a while.',
         plan: {
           distance: '1.8 mi round trip by shuttle boat; 5.7 mi on foot',
           difficulty: 'Easy by boat; Moderate on foot',
@@ -467,7 +469,7 @@ export const parks: Park[] = [
           credit: 'NPS Photo/J. Bonney',
         },
         description:
-          'High at the head of the North Fork of Cascade Canyon, Lake Solitude lies in a basin ringed by peaks. Getting there is a long day: a boat across Jenny Lake, the climb into Cascade Canyon, and mile after mile of mountain views with chances to spot wildlife along the way. For the hikers in the family, standing on its shore together is an achievement worth remembering.',
+          'The name says it all. Lake Solitude rests in a basin of peaks at the head of the North Fork of Cascade Canyon, a full day\'s walk from the nearest road. The journey brings mountain views around nearly every bend and plenty of chances to watch for wildlife. For the hikers in your family, sitting together on its shore at the end of that long day, far from everything, could become one of the proudest memories you share.',
         plan: {
           distance: '14.4 mi round trip by shuttle boat; 18.3 mi on foot',
           difficulty: 'Strenuous by boat; very strenuous on foot',
@@ -542,7 +544,7 @@ export const parks: Park[] = [
           credit: 'NPS Photo/C. Jacoby',
         },
         description:
-          'Come out of the Wawona Tunnel and Yosemite Valley opens in front of you: El Capitan on one side, Bridalveil Fall on the other, Half Dome rising in the distance. It is the defining view of the valley, and it is right beside the parking area, with accessible parking and a short paved walk. Gather at the viewing area and take the family photograph you will keep.',
+          'Step out of the Wawona Tunnel and all of Yosemite Valley appears at once: El Capitan on one side, Bridalveil Fall on the other and Half Dome rising in the distance. It is the defining view of the valley, and it waits right beside the parking area, with accessible parking and a short paved walk. Gather everyone at the viewing area, take the photograph you will treasure, and take a quiet moment for the person who brought you all here.',
         plan: {
           distance: 'Roadside; short paved walk',
           difficulty: 'Easy',
@@ -569,7 +571,7 @@ export const parks: Park[] = [
           sourceUrl: commons('Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg'),
         },
         description:
-          'A short paved path leads to a railed overlook 3,200 feet above Yosemite Valley. Half Dome stands directly across from you, the High Sierra stretches beyond, and the valley floor lies far below. Because the path is wheelchair accessible, nearly everyone in the family can stand together at the edge of one of the great views in Yosemite.',
+          'Standing at Glacier Point feels like looking down on all of Yosemite. The valley floor lies 3,200 feet below the railing, and Half Dome rises directly across from you with the High Sierra beyond. A short paved path leads from the parking area, so nearly everyone can come, whatever their age or mobility. Bring a favorite story, a few photographs and enough time to simply stand together and take it in.',
         plan: {
           distance: '300 yards one way',
           difficulty: 'Easy',
@@ -602,7 +604,7 @@ export const parks: Park[] = [
           sourceUrl: commons('Taft_Point_Panorama.jpg'),
         },
         description:
-          'An easy walk through forest and meadow ends suddenly at the rim of Yosemite Valley. Beside you, deep cracks called The Fissures cut into the granite; across the valley stand El Capitan and Yosemite Falls. It is a short hike with a dramatic edge, best for families comfortable around heights, and a view none of you will forget.',
+          'One moment you are walking through quiet forest and meadow; the next, the ground ends at the edge of Yosemite Valley. Deep cracks called The Fissures split the granite beside you, and across the valley stand El Capitan and Yosemite Falls. It is a breathtaking place for the members of your family who are comfortable with heights, and the walk is short enough to leave plenty of time for stories at the rim.',
         plan: {
           distance: '2.2 mi round trip',
           difficulty: 'Easy',
@@ -640,7 +642,7 @@ export const parks: Park[] = [
           sourceUrl: commons('Sentinel_Dome,_Yosemite_NP.jpg'),
         },
         description:
-          'A mile of trail and a short scramble up bare granite bring you to the top of Sentinel Dome, where Yosemite spreads out in every direction. From the summit you can see Half Dome and the High Sierra in one sweeping, 360-degree view. It is a short climb with a summit that feels like a celebration, a fine place to raise a toast together.',
+          'Some places make you feel as if you have reached the top of the world, and Sentinel Dome is one of them. From the summit, Yosemite opens in every direction, with Half Dome rising across the valley and the High Sierra stretching toward the horizon. Imagine sitting together up here, telling the stories that still make everyone laugh, and giving someone you love one last extraordinary day in a place none of you will forget.',
         plan: {
           distance: '2 mi round trip',
           difficulty: 'Moderate',
@@ -676,7 +678,7 @@ export const parks: Park[] = [
           position: '50% 35%',
         },
         description:
-          'For many hikers, Half Dome is the climb of a lifetime. The trail passes Vernal and Nevada Falls and Liberty Cap before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It takes a permit, an early start and a long, hard day. For someone who always talked about making this climb, carrying them to the top could be the ultimate tribute.',
+          'If your loved one ever stood beneath Half Dome and wondered what the top was like, this is a chance to finish that climb for them. The trail passes Vernal and Nevada Falls before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It is one of the hardest days in the park and requires a permit, but the moment you stand on top together will stay with you for a lifetime.',
         plan: {
           distance: '14 to 16 mi round trip',
           difficulty: 'Strenuous',
@@ -757,7 +759,7 @@ export const parks: Park[] = [
           credit: 'NPS Photo',
         },
         description:
-          'At Paradise, a short paved walk through the meadows leads to Edith Creek, where Myrtle Falls tumbles down with the glaciers of Mount Rainier rising directly behind it. It is one of the easiest ways to stand in front of the mountain, suitable for strollers and wheelchairs with help, and a gentle outing every generation of the family can share.',
+          'Mount Rainier never feels closer than it does at Myrtle Falls. A short, paved walk from Paradise leads through the meadows to Edith Creek, where the falls tumble down with the mountain\'s glaciers rising right behind them. Strollers and wheelchairs with help can make the trip, so the youngest and oldest members of the family can stand side by side for this one. Bring a camera; this is the picture everyone will want.',
         plan: {
           distance: '1 mi round trip',
           difficulty: 'Easy',
@@ -798,7 +800,7 @@ export const parks: Park[] = [
           position: '22% 50%',
         },
         description:
-          'From this overlook on the road to Sunrise, the view opens in nearly every direction: deep valleys, Mount Rainier and other Cascade volcanoes such as Mount Adams. It is one of the park’s designated scattering locations, so a family can gather, share stories as the evening light changes and scatter in the same place, all from beside the car.',
+          'As the afternoon light softens, Sunrise Point opens a view in almost every direction: deep valleys below, Mount Rainier on the skyline and other Cascade volcanoes such as Mount Adams farther off. It is also one of the park\'s designated scattering locations, so you can share stories, watch the light change and say your goodbye in the same place, just steps from the car.',
         plan: {
           distance: 'Roadside',
           difficulty: 'Easy',
@@ -827,7 +829,7 @@ export const parks: Park[] = [
           position: '50% 40%',
         },
         description:
-          'The Skyline Trail climbs steadily above the Paradise meadows until Panorama Point puts you face to face with Mount Rainier and its glaciers. It is a real climb of 1,700 feet, best for confident hikers. Keep going on the High Skyline loop to turn it into a full, unforgettable day on the mountain.',
+          'Every step up the Skyline Trail brings Mount Rainier a little closer, until Panorama Point leaves you face to face with its glaciers. It is a real climb, and the effort is part of what makes it meaningful: a few hours of walking side by side above the Paradise meadows, then a moment at the top to rest, look up at the mountain and remember someone who would have loved being here with you.',
         plan: {
           distance: '4 mi round trip',
           difficulty: 'Difficult',
@@ -869,7 +871,7 @@ export const parks: Park[] = [
           sourceUrl: commons('Fremont_Lookout_(7a7e9acb7ae747beb074f5bf4111bbc9).JPG'),
         },
         description:
-          'Walk the high ridge above Sunrise to an old fire lookout perched on a rocky point, with Mount Rainier filling the view across Grand Park. The trail crosses open country past Frozen Lake, and the lookout itself, built to keep watch over the land, makes a moving place to pause, share memories and look back at the mountain together.',
+          'Fire lookouts were built so someone could keep watch over the land, and there is something fitting about bringing your loved one to this one. The trail follows a high ridge from Sunrise, past Frozen Lake, to a rocky point where the old lookout faces Mount Rainier across Grand Park. Find a place to sit, share your favorite stories and watch the mountain together for as long as you like.',
         plan: {
           distance: '5.6 mi round trip',
           difficulty: 'Moderate',
@@ -925,6 +927,10 @@ export const parks: Park[] = [
       'You can still plan a meaningful farewell here. Bring your loved one’s cremated remains in a secure, non-breakable container, share memories at a spectacular viewpoint, and take the remains with you when you leave. Arrange any scattering separately at a location where it is legally permitted.',
     ],
     scatterFacts: ['Superintendent’s Compendium item (62), citing 36 CFR 1.5(a)(2) and 36 CFR 2.62. No permits are issued for scattering.'],
+    planNote: {
+      heading: 'A farewell without scattering',
+      text: 'Published park rules prohibit scattering ashes but do not expressly prohibit bringing securely contained cremated remains for a personal visit. Bring your loved one’s remains in a secure, non-breakable container, share memories together, and take the remains with you when you leave. Arrange any scattering separately at a legally permitted location. Confirm any planned ceremony with the park.',
+    },
     scatterLink: [{ label: 'Superintendent’s Compendium (PDF)', url: 'https://www.nps.gov/grca/learn/management/upload/grca-supt-compendium.pdf' }],
     beforeYouGo:
       'The South Rim is open all year. South Entrance: I-40 to Williams, then Highway 64 north, or Highway 180 from Flagstaff. East Entrance (Desert View): Highway 89 to Cameron, then Highway 64 west. Phantom Ranch, the river bridges and the North Kaibab Trail are closed after flooding; check current trail status before hiking.',
@@ -939,7 +945,7 @@ export const parks: Park[] = [
           credit: 'NPS/M. Quinn',
         },
         description:
-          'At the eastern end of the South Rim, Mary Colter’s 1932 stone tower seems to grow out of the canyon edge. Its round View Room was designed as a place to sit and take in the canyon, and from the rim you can see the Colorado River leave narrow Marble Canyon for the vast Grand Canyon. It is a short walk from the parking area, close enough for the whole family.',
+          'At the eastern edge of the South Rim, a stone tower rises from the canyon\'s edge as if it had always been there. Mary Colter designed the Watchtower in 1932, and its round View Room was meant as a place to rest and take in the canyon. From the rim nearby, the Colorado River leaves narrow Marble Canyon and opens into the vast Grand Canyon. It is an easy walk from the parking area, and a place made for lingering together.',
         plan: {
           distance: '0.25 mi from the main parking area',
           difficulty: 'Easy',
@@ -967,7 +973,7 @@ export const parks: Park[] = [
           caption: 'South Kaibab Trail',
         },
         description:
-          'The South Kaibab Trail drops off the rim along a ridgeline, so the canyon opens beneath your feet almost from the first step. Ooh Aah Point, under a mile down, earns its name with a sweeping view into the depths; Cedar Ridge, farther on, takes you deeper still. Every step down is a step to climb back up, so pace the day for everyone in your group.',
+          'From the first switchbacks of the South Kaibab Trail, the canyon opens beneath your feet. Ooh Aah Point, less than a mile down, is the place to stop, catch your breath and simply stare. Go together, find a spot along the ridge and tell the stories that belong to the person you came here for. Hikers who want more can continue to Cedar Ridge, but remember that every step down is one you will climb back up.',
         plan: {
           distance: 'Ooh Aah Point 1.8 mi round trip; Cedar Ridge 3 mi round trip',
           difficulty: 'Moderate to Ooh Aah Point; Difficult to Cedar Ridge',
@@ -1006,7 +1012,7 @@ export const parks: Park[] = [
           caption: 'Bright Angel Trail',
         },
         description:
-          'This is a full day into the heart of the canyon. The Bright Angel Trail switchbacks down to Havasupai Gardens, then a flat, exposed path leads out to Plateau Point, standing directly above the Colorado River in the inner gorge. For the strongest hikers in the family, it is a chance to look down on the river that carved it all and to carry a loved one’s memory there with you.',
+          'Deep below the rim, Plateau Point stands directly above the Colorado River, the river that carved the Grand Canyon. Reaching it is a full, demanding day down the Bright Angel Trail and out along a flat, exposed path from Havasupai Gardens. For the strongest hikers in the family, standing at this edge with your loved one\'s memory is a way of saying they went all the way, and that you went with them.',
         plan: {
           distance: '12 mi round trip',
           difficulty: 'Strenuous',

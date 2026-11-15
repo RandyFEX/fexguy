@@ -210,7 +210,7 @@ const difficultyRange = (text: string): [number, number] => {
                       <div>
                         <dt>Difficulty</dt>
                         <dd>
-                          {d.plan.difficulty}
+                          {!/^(easy|strenuous)$/i.test(d.plan.difficulty.trim()) && <span class="ola-diff__text">{d.plan.difficulty}</span>}
                           {(() => {
                             const [lo, hi] = difficultyRange(d.plan.difficulty);
                             return (
@@ -240,6 +240,12 @@ const difficultyRange = (text: string): [number, number] => {
                             : <a href={p.map[0].url} rel="noopener" target="_blank">NPS: official park map</a>}
                         </dd>
                       </div>
+                      {p.planNote && (
+                        <div class="ola-plan__wide ola-plan__note">
+                          <dt>{p.planNote.heading}</dt>
+                          <dd>{p.planNote.text}</dd>
+                        </div>
+                      )}
                     </dl>
                   </section>
 
@@ -825,13 +831,16 @@ const difficultyRange = (text: string): [number, number] => {
 
   /* Destinations */
   .ola-dest {
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-8);
     scroll-margin-top: 0.5rem;
   }
   /* Separator between consecutive destinations. */
   .ola-dest + .ola-dest {
     border-top: 2px solid #c9d3cd;
-    padding-top: var(--space-12);
+    padding-top: var(--space-8);
+  }
+  .ola-dest > :last-child {
+    margin-bottom: 0;
   }
   .ola-dest__band {
     background: #173f35;
@@ -923,12 +932,12 @@ const difficultyRange = (text: string): [number, number] => {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1px;
-    background: #e3e5e2;
+    background: #8fa197;
     margin: 0;
   }
   .ola-plan__grid > div {
     background: #fcfcfa;
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-2) var(--space-3);
   }
   .ola-dest .ola-plan h4 {
     margin: 0;
@@ -955,6 +964,18 @@ const difficultyRange = (text: string): [number, number] => {
     font-weight: 600;
     line-height: 1.45;
   }
+  .ola-plan dd > .ola-diff:first-child {
+    margin-top: 0.35rem;
+  }
+  .ola-plan__note dd {
+    font-weight: 400;
+    text-align: left;
+    max-width: 60rem;
+    margin-inline: auto;
+  }
+  .ola-route h4 {
+    text-align: center;
+  }
   .ola-plan dd a {
     display: inline-flex;
     align-items: center;
@@ -970,12 +991,10 @@ const difficultyRange = (text: string): [number, number] => {
     padding: 0.35rem 0.85rem;
     border-radius: var(--radius);
     background: #173f35;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.35;
-  }
-  .ola-plan__scatter--prohibited .ola-status {
     color: #ffeb3b;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.35;
   }
   .ola-status .ola-warn--inline {
     margin: 0;
