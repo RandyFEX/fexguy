@@ -23,12 +23,15 @@ const LEVELS: Array<[RegExp, number]> = [
   [/moderate/i, 3],
   [/easy/i, 1],
 ];
-const difficultyRange = (text: string): [number, number] => {
-  const found = text.split(/[;,]| to /i).flatMap((part) => {
+// Parts that say a route is not rated ("not rated", "not an easy walk") are
+// ignored; with no rating left, no indicator is shown (never a guessed level).
+const difficultyRange = (text: string): [number, number] | null => {
+  const found = text.split(/[;,:]| to /i).flatMap((part) => {
+    if (/not\s+(rated|an?\s+easy|easy)/i.test(part)) return [];
     const hit = LEVELS.find(([re]) => re.test(part));
     return hit ? [hit[1]] : [];
   });
-  return found.length ? [Math.min(...found), Math.max(...found)] : [1, 1];
+  return found.length ? [Math.min(...found), Math.max(...found)] : null;
 };
 ---
 
@@ -214,7 +217,9 @@ const difficultyRange = (text: string): [number, number] => {
                         <dd>
                           {!/^(easy|strenuous)$/i.test(d.plan.difficulty.trim()) && <span class="ola-diff__text">{d.plan.difficulty}</span>}
                           {(() => {
-                            const [lo, hi] = difficultyRange(d.plan.difficulty);
+                            const range = difficultyRange(d.plan.difficulty);
+                            if (!range) return null;
+                            const [lo, hi] = range;
                             return (
                               <span class="ola-diff" role="img" aria-label={lo === hi ? `Difficulty ${lo} of 5, where 1 is Easy and 5 is Strenuous` : `Difficulty ${lo} to ${hi} of 5, where 1 is Easy and 5 is Strenuous`}>
                                 <span class="ola-diff__end" aria-hidden="true">Easy</span>

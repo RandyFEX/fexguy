@@ -1,0 +1,147 @@
+{
+  "id": "congaree",
+  "name": "Congaree National Park",
+  "short": "Congaree",
+  "state": "South Carolina",
+  "states": ["South Carolina"],
+  "tagline": "Champion trees, cypress knees and quiet creeks in an old-growth floodplain forest.",
+  "photo": {
+    "src": "/images/last-adventure/congaree/park.jpg",
+    "srcWebp": "/images/last-adventure/congaree/park.webp",
+    "alt": "A very large loblolly pine rising above smaller trees in the forest",
+    "credit": "NPS Photo",
+    "caption": "A former champion loblolly pine, more than 250 years old, just off the Boardwalk Trail"
+  },
+  "intro": "Congaree protects the largest intact expanse of old-growth bottomland hardwood forest left in the southeastern United States, about twenty minutes from Columbia. The canopy averages more than 100 feet, and the park holds the highest concentration of champion-sized trees in North America. The land is almost flat, so a final adventure here is a gentle walk among giants, with a boardwalk that welcomes wheelchairs and strollers.",
+  "homepage": "https://www.nps.gov/cong/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/cong/planyourvisit/maps.htm" },
+    { "label": "Trail information", "url": "https://www.nps.gov/cong/planyourvisit/trail-information.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is permitted with a park permit at a chosen site that meets the park's distance rules: away from trails, the boardwalk, buildings and water.",
+  "scatterFacts": [
+    "Special use permit required (Superintendent's Compendium, 36 CFR 2.62). The park's application lists a non-refundable $50 application fee; the permit may also require cost recovery charges and proof of liability insurance.",
+    "Apply to CONG_PERMITS@nps.gov or call (803) 776-4396, with \"Special Use Permits\" as the email subject.",
+    "The chosen site must be at least 200 feet from any buildings, historic structures or cemetery sites, and at least 100 feet from other structures and developed areas, including the visitor center, roads, trails, the boardwalk, campgrounds and picnic areas.",
+    "At least 150 feet from a stream or other watercourse.",
+    "Ashes must be scattered, not left in any container and not buried. No marker or memorial of any kind: no real or artificial flowers, memorial trees, brass markers or wooden crosses.",
+    "Carry a copy of the permit. Cremation must follow state law."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/cong/planyourvisit/permitsadnreservations.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/cong/learn/management/compendium.htm" },
+    { "label": "Application for Special Use Permit (PDF)", "url": "https://www.nps.gov/cong/planyourvisit/upload/NPS-10-930-Application-for-SUP-CONG-4.pdf" }
+  ],
+  "beforeYouGo": "Use the address 100 National Park Road, Hopkins, SC 29061; some GPS devices misroute when given the park's name. From I-77 Exit 5, take SC 48 (Bluff Road) east about 8 miles, bear right onto Old Bluff Road for 4.5 miles to the park entrance, then one mile to the Harry Hampton Visitor Center. There is no entrance fee. Flooding can happen with little or no warning: every trail except the elevated boardwalk, Bluff, Firefly and Longleaf trails can flood, so check the park's alerts before each visit. Bring insect repellent in summer.",
+  "destinations": [
+    {
+      "id": "boardwalk-loop",
+      "name": "Boardwalk Loop and Weston Lake Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/congaree/boardwalk-loop.jpg",
+        "srcWebp": "/images/last-adventure/congaree/boardwalk-loop.webp",
+        "alt": "A wooden boardwalk leading between tall cypress trunks in a floodplain forest",
+        "credit": "NPS Photo"
+      },
+      "description": "The boardwalk leaves a bluff by the visitor center and drops into the old-growth forest, where bald cypress and tupelo stand in the low ground and loblolly pines, oaks and maples rise toward a canopy far overhead. It leads toward Weston Lake, a bend the Congaree River left behind as an oxbow. Benches along the way make it easy to stop together, listen to the woods and let the oldest members of the family set the pace.",
+      "plan": {
+        "distance": "2.6 mi round trip",
+        "difficulty": "Easy",
+        "time": "1 to 2 hours for the self-guided tour",
+        "accessibility": "Wheelchair and stroller accessible, with benches (NPS); only the elevated portion stays open during floods",
+        "scattering": "With a permit, at a site away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "I-77 Exit 5, SC 48 (Bluff Road) east about 8 miles, then Old Bluff Road 4.5 miles to the entrance and one mile to the Harry Hampton Visitor Center. The boardwalk begins just outside the visitor center.",
+        "points": [
+          { "label": "Harry Hampton Visitor Center", "lat": 33.82967, "lon": -80.82339 },
+          { "label": "Start of the Boardwalk", "lat": 33.8295, "lon": -80.8238, "source": "nps" }
+        ]
+      },
+      "trail": {
+        "name": "Boardwalk Trail",
+        "steps": [
+          "Pick up the free self-guided tour brochure at the visitor center and follow the numbers on the railing.",
+          "The elevated section leads down from the bluff into the bottomland forest.",
+          "Continue around the loop past Weston Lake and back to the visitor center."
+        ],
+        "notes": ["There are no restrooms, water fountains or trash cans beyond the start of the boardwalk. Pets on a leash under 6 feet are welcome."]
+      },
+      "final": [{ "label": "Weston Lake Overlook", "lat": 33.82166, "lon": -80.81784 }],
+      "scatterNote": { "text": "Not on or near the boardwalk: the chosen site must be at least 100 feet from trails, the boardwalk and developed areas, 150 feet from any stream or watercourse and 200 feet from buildings, with a park permit." },
+      "links": [
+        { "label": "Boardwalk Loop", "url": "https://www.nps.gov/cong/planyourvisit/boardwalk.htm" },
+        { "label": "Start of the Boardwalk", "url": "https://www.nps.gov/places/start-of-the-boardwalk.htm" }
+      ]
+    },
+    {
+      "id": "weston-lake-trail",
+      "name": "Weston Lake Trail",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/congaree/weston-lake-trail.jpg",
+        "srcWebp": "/images/last-adventure/congaree/weston-lake-trail.webp",
+        "alt": "Wide-based cypress and tupelo trees and cypress knees in the floodplain forest by Weston Lake",
+        "credit": "NPS Photo"
+      },
+      "description": "Leave the boardwalk behind and follow the forest floor to the banks of Cedar Creek, where river otters and wading birds are regularly seen. Its eastern portion traces a cypress-tupelo slough, an old dried riverbed where cypress knees rise from the dark water like a crowd of small figures. It is a longer, quieter walk, the kind that gives a family time to talk, fall silent and talk again.",
+      "plan": {
+        "distance": "4.5 mi round trip",
+        "difficulty": "Moderate",
+        "accessibility": "Natural forest trail, generally flat; subject to periodic flooding",
+        "scattering": "With a permit, at a site away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Same as the Boardwalk: drive to the Harry Hampton Visitor Center and start on the Boardwalk Trail.",
+        "points": [{ "label": "Start of the Boardwalk", "lat": 33.8295, "lon": -80.8238, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Boardwalk Trail and Weston Lake Trail (#3)",
+        "steps": [
+          "Start on the Boardwalk Trail from the visitor center.",
+          "Join the Weston Lake Trail, which follows Cedar Creek.",
+          "The eastern portion follows a cypress-tupelo slough; return to the boardwalk and the visitor center."
+        ],
+        "notes": ["Trails are marked with brown blazes and the trail number. Check alerts or call the visitor center for flood conditions before you go."]
+      },
+      "final": [{ "label": "Cedar Creek", "lat": 33.81194, "lon": -80.8163 }],
+      "scatterNote": { "text": "Not along the trail or the creek: the chosen site must be at least 100 feet from trails, 150 feet from any stream or watercourse and 200 feet from buildings, with a park permit." },
+      "links": [{ "label": "Trail information", "url": "https://www.nps.gov/cong/planyourvisit/trail-information.htm" }]
+    },
+    {
+      "id": "bates-ferry-trail",
+      "name": "Bates Ferry Trail to the Congaree River",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/congaree/bates-ferry-trail.jpg",
+        "srcWebp": "/images/last-adventure/congaree/bates-ferry-trail.webp",
+        "alt": "The Congaree River in fall, with autumn trees and clouds reflected in calm water",
+        "credit": "NPS"
+      },
+      "description": "In the quiet eastern corner of the park, an old 1920s ferry road leads through the woods to the banks of the Congaree, the river that floods and feeds this whole forest. Colonial-era ferries once crossed nearby. At the end, the river slides past, and in autumn the trees along it turn gold and orange. It is an easy walk with a rewarding end, and a peaceful place to stand together by moving water.",
+      "plan": {
+        "distance": "2.2 mi round trip",
+        "difficulty": "Easy",
+        "accessibility": "Old ferry road; the riverbank is steep and could be slippery",
+        "scattering": "With a permit, at a site away from this spot (see below)"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "The trail starts from Route 601 in the eastern section of the park, separate from the visitor center area.",
+        "points": [{ "label": "Trailhead parking (Route 601)", "lat": 33.78344, "lon": -80.63744 }]
+      },
+      "trail": {
+        "name": "Bates Ferry Trail (#7)",
+        "steps": ["From Route 601, follow the old ferry road south to the Congaree River.", "Return the same way."],
+        "notes": ["Stay on the marked path; old side trails are neither cleared nor marked. The riverbank is steep and could be slippery."]
+      },
+      "final": [{ "label": "Trail end near the Congaree River", "lat": 33.77417, "lon": -80.65362 }],
+      "scatterNote": { "text": "Not at the river: the chosen site must be at least 150 feet from any stream or watercourse and 100 feet from trails and roads, with a park permit." },
+      "links": [{ "label": "Trail information", "url": "https://www.nps.gov/cong/planyourvisit/trail-information.htm" }]
+    }
+  ]
+}
