@@ -1,0 +1,205 @@
+{
+  "id": "redwood",
+  "name": "Redwood National Park",
+  "short": "Redwood",
+  "state": "California",
+  "states": ["California"],
+  "tagline": "Old-growth redwood groves above a wild, fog-washed Pacific coast.",
+  "photo": {
+    "src": "/images/last-adventure/redwood/park.jpg",
+    "srcWebp": "/images/last-adventure/redwood/park.webp",
+    "alt": "Towering old-growth redwood trunks in the Tall Trees Grove",
+    "credit": "NPS Photo/Shaina Niehans",
+    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redwoods_at_Tall_Trees_Grove.jpg",
+    "caption": "Tall Trees Grove"
+  },
+  "intro": "Redwood National Park protects old-growth coast redwoods and a rugged stretch of the Pacific shore, managed together with three California state parks as Redwood National and State Parks. Here a final adventure can be a family walk through a grove that helped inspire the park, a sunset above the mouth of the Klamath River, or a long descent to some of the tallest trees on earth.",
+  "homepage": "https://www.nps.gov/redw/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/redw/planyourvisit/maps.htm" },
+    { "label": "Park map (JPG)", "url": "https://www.nps.gov/redw/planyourvisit/upload/REDW-Map-2020.jpg" },
+    { "label": "Scenic drives", "url": "https://www.nps.gov/redw/planyourvisit/drives.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering requires a special use permit; there are no designated areas, and the park superintendents decide whether a proposed location is appropriate.",
+  "scatterFacts": [
+    "Permit required under 36 CFR 2.62(b) and California Health and Safety Code Section 7116. The Superintendent's Compendium designates no areas for scattering without a permit.",
+    "National park land: send the fillable Special Use Permit application (NPS 10-930) to redw_special_use_permits@nps.gov. Processing takes no less than 14 days.",
+    "Fees: the park says there may be fees depending on the type or complexity of the permit, with payment instructions emailed after you apply. No memorial fee amount is published.",
+    "Not appropriate at archeological sites, Native American burial sites, or where incompatible activities occur or are planned.",
+    "Permits are not issued during peak summer visitation hours (generally 10 am to 3 pm), and on some trails not at all, for safety or resource reasons. Areas cannot be closed for privacy.",
+    "Busy areas such as Lady Bird Johnson Grove, Big Tree, Fern Canyon, Stout Grove and the Grove of Titans are subject to time and size limits.",
+    "State park lands (Jedediah Smith, Del Norte Coast and Prairie Creek Redwoods State Parks) use California State Parks' separate permit process."
+  ],
+  "scatterNotes": [
+    "The park lists two numbers for its Special Use Permit Coordinator: 707-464-6101 on the memorialization page and 707-465-7307 on the special use permits page."
+  ],
+  "scatterLink": [
+    { "label": "Memorialization ceremony (NPS)", "url": "https://www.nps.gov/redw/planyourvisit/memorializations.htm" },
+    { "label": "Special use permits (NPS)", "url": "https://www.nps.gov/redw/planyourvisit/sup.htm" },
+    { "label": "Application form (DOCX)", "url": "https://www.nps.gov/redw/planyourvisit/upload/NPS-10-930-Application-for-SUP-2.docx" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/redw/learn/management/superintendent-s-compendium.htm" }
+  ],
+  "beforeYouGo": "The parks stretch about 50 miles along U.S. 101 from Crescent City near the Oregon border to the Redwood Creek watershed south of Orick, about 325 miles north of San Francisco. Start at a visitor center such as the Thomas H. Kuchel Visitor Center on Highway 101 south of Orick. The national park is fee free; day use areas in the three state parks charge fees. Bald Hills Road and Requa Road are steep and narrow and not advised for RVs or trailers, and cell coverage is very limited.",
+  "destinations": [
+    {
+      "id": "lady-bird-johnson-grove",
+      "name": "Lady Bird Johnson Grove",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/redwood/lady-bird-johnson-grove.jpg",
+        "srcWebp": "/images/last-adventure/redwood/lady-bird-johnson-grove.webp",
+        "alt": "A brown wooden footbridge crosses the road at the Lady Bird Johnson Grove trailhead",
+        "credit": "NPS / John Chao"
+      },
+      "description": "Cross the wooden footbridge at the trailhead and, within a few steps, young Douglas-firs give way to old-growth redwoods that have never been logged. The loop winds through the grove that President Nixon dedicated to Lady Bird Johnson in 1969, with the dedication plaque about half a mile along. It is an easy, family-friendly walk, quiet enough to hear the difference between the two forests, and a gentle place to share memories beneath trees that people once fought to save.",
+      "plan": {
+        "distance": "1.5 mi loop",
+        "difficulty": "Easy",
+        "accessibility": "Not officially wheelchair accessible: the hikers' bridge has a slope (NPS)",
+        "bestTime": "In summer the lot is typically full from 11 am to 4 pm",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Take the Bald Hills Road exit about 1 mile north of Orick on U.S. 101 and drive 3 miles up the road to the parking lot. The road is narrow and winding; RVs, buses and trailers may not park in the lot, and parking on the road is prohibited.",
+        "points": [{ "label": "Lady Bird Johnson Grove parking", "lat": 41.30323, "lon": -124.01799 }]
+      },
+      "trail": {
+        "name": "Lady Bird Johnson Grove Trail",
+        "steps": [
+          "Cross the hikers' bridge from the parking area into the old-growth grove.",
+          "Follow the loop; the dedication plaque is about half a mile along.",
+          "Complete the 1.5-mile loop back to the bridge."
+        ],
+        "notes": ["Stay on the trail; online maps are unreliable here, so carry a physical map."]
+      },
+      "final": [{ "label": "Lady Bird Johnson Grove loop", "lat": 41.30719, "lon": -124.01976 }],
+      "scatterNote": {
+        "text": "The park names this grove as a high-visitation area subject to time and size limits, and no permits are issued during peak summer hours (generally 10 am to 3 pm). Propose your location in the special use permit application at least 14 days ahead."
+      },
+      "links": [{ "label": "Lady Bird Johnson Grove Trail", "url": "https://www.nps.gov/places/lbjtrailhead.htm" }]
+    },
+    {
+      "id": "klamath-river-overlook",
+      "name": "Klamath River Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/redwood/klamath-river-overlook.jpg",
+        "srcWebp": "/images/last-adventure/redwood/klamath-river-overlook.webp",
+        "alt": "Blue-green ocean and a sandspit at the mouth of the Klamath River",
+        "credit": "NPS Photo / Steven Krause"
+      },
+      "description": "High above the sea, the Klamath River Overlook looks down on the place where a river ends a 250-mile journey and meets the Pacific. Seals rest and call from the sandspit, seabirds wheel over the surf, and in spring or fall gray whales may pass offshore. With picnic tables and benches, it invites the family to linger, and on a clear evening the sunset over the water makes a fitting close to the day. Bring binoculars.",
+      "plan": {
+        "distance": "Roadside overlook; a steep trail continues to a lower ocean overlook",
+        "difficulty": "Easy at the overlook; the lower trail is steep",
+        "accessibility": "Viewpoint by the parking area with benches and picnic tables; surface details not published",
+        "bestTime": "Sunset when not hidden by fog; gray whales in spring and fall",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Take the signed Requa Road exit off U.S. 101, about 2.25 miles north of Klamath, and drive about 2.25 miles (15 minutes) through historic Requa to the overlook. The road is steep and narrow, with a very small parking lot; RVs and trailers are not recommended.",
+        "points": [{ "label": "Overlook parking", "lat": 41.55458, "lon": -124.08664 }]
+      },
+      "trail": {
+        "name": "Coastal Trail, Klamath Section (optional)",
+        "steps": [
+          "Enjoy the view from the overlook beside the parking area.",
+          "For a closer look at the surf, follow the steep Coastal Trail; the park says it reaches a great ocean overlook below after about half a mile."
+        ],
+        "notes": ["NPS pages give the lower trail as 1/4 mile (Things To Do) and 1/2 mile (Klamath River Overlook page)."]
+      },
+      "final": [{ "label": "Klamath River Overlook", "lat": 41.5544, "lon": -124.08662 }],
+      "scatterNote": {
+        "text": "No location is designated for scattering. Describe the spot you have in mind in the special use permit application at least 14 days ahead, and the park will decide whether it is appropriate. The river mouth is a sacred place to the Yurok people."
+      },
+      "links": [{ "label": "Klamath River Overlook", "url": "https://www.nps.gov/places/klamathriveroverlook.htm" }]
+    },
+    {
+      "id": "crescent-beach-overlook",
+      "name": "Crescent Beach Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/redwood/crescent-beach-overlook.jpg",
+        "srcWebp": "/images/last-adventure/redwood/crescent-beach-overlook.webp",
+        "alt": "A wooden platform and handrails overlook a blue ocean and sweeping beach",
+        "credit": "NPS Photo / B. Marciniec"
+      },
+      "description": "Just south of Crescent City, a short paved path leads to a wooden platform above miles of beach, the harbor and a line of jagged sea stacks offshore. It is a small, quiet place with three picnic tables, close enough to town for an easy evening visit and the kind of sunset photographers wait for. Elk often graze in the open prairies along this stretch of coast, and on a clear day the whole family can watch the light settle over the water together.",
+      "plan": {
+        "distance": "Short paved path from parking to the overlook platform",
+        "difficulty": "Easy",
+        "accessibility": "Short paved trail; parking for two vehicles at the overlook, more parking and an accessible vault toilet at the road's end a few hundred feet away (NPS)",
+        "bestTime": "Sunset, when it is not foggy",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Crescent City, drive 2.5 miles southeast on U.S. 101 and turn right onto Enderts Beach Road; the overlook is about 2.25 miles along, a 5-minute drive. RVs and trailers are not advised beyond the Crescent Beach picnic area.",
+        "points": [{ "label": "Overlook parking", "lat": 41.70647, "lon": -124.1435 }]
+      },
+      "final": [{ "label": "Overlook platform", "lat": 41.70715, "lon": -124.14374 }],
+      "scatterNote": {
+        "text": "No location is designated for scattering. Describe the spot you have in mind in the special use permit application at least 14 days ahead, and the park will decide whether it is appropriate."
+      },
+      "links": [
+        { "label": "Crescent Beach Overlook", "url": "https://www.nps.gov/places/cresbeachoverlook.htm" },
+        { "label": "Scenic drives", "url": "https://www.nps.gov/redw/planyourvisit/drives.htm" }
+      ]
+    },
+    {
+      "id": "tall-trees-grove",
+      "name": "Tall Trees Grove",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/redwood/tall-trees-grove.jpg",
+        "srcWebp": "/images/last-adventure/redwood/tall-trees-grove.webp",
+        "alt": "Towering old-growth redwood trunks in the Tall Trees Grove",
+        "credit": "NPS Photo/Shaina Niehans",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redwoods_at_Tall_Trees_Grove.jpg"
+      },
+      "description": "Deep in the Redwood Creek valley, the Tall Trees Grove holds many redwoods more than 350 feet tall, fed by good soil, plenty of water and shelter from winter winds. A 1963 National Geographic article about this grove helped build the public push that created the park. Getting here takes planning, a reservation and a steep trail down to the creek's floodplain, which makes arriving all the more meaningful. Stand together among these giants and take your time before the long climb out.",
+      "plan": {
+        "distance": "4.5 mi round trip",
+        "difficulty": "Moderate to Strenuous",
+        "time": "At least 4 hours including the drive; 3 to 6 hours on the trail page",
+        "elevation": "Drops 800 ft in the first 1.5 mi; 1,600 ft total elevation change",
+        "accessibility": "Not an ADA trail: switchbacks and grades over 10%, with roots (NPS)",
+        "bestTime": "Year-round with a reservation",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Reserve online in advance (free); the gate code is emailed with your reservation. From U.S. 101 near Orick, take Bald Hills Road to the locked Tall Trees Access Road. Allow about an hour from the nearest visitor center, including 6 miles of dirt road. No RVs over 21 feet or trailers.",
+        "points": [
+          { "label": "Tall Trees Trailhead parking", "lat": 41.20819, "lon": -123.99253 },
+          { "label": "Tall Trees Trailhead", "lat": 41.20804, "lon": -123.99304 }
+        ]
+      },
+      "trail": {
+        "name": "Tall Trees Trail",
+        "steps": [
+          "From the trailhead, descend about 800 ft in the first 1.5 mi.",
+          "Continue to the alluvial floodplain of Redwood Creek and the grove.",
+          "Return the same way, climbing back to your vehicle."
+        ],
+        "notes": [
+          "Reservations are required year-round to access and park at the trailhead; they are issued only online through the park's nonprofit partner and often fill in summer.",
+          "Bring food, water, sturdy shoes, rain gear and a flashlight. Do not rely on digital maps to find the gate."
+        ]
+      },
+      "final": [{ "label": "Tall Trees Grove", "lat": 41.20915, "lon": -124.0132 }],
+      "scatterNote": {
+        "text": "No location is designated for scattering, and the park may decline permits on some trails for safety or resource reasons. Describe the spot you have in mind in the special use permit application at least 14 days ahead, and the park will decide."
+      },
+      "links": [
+        { "label": "Hike to the Tall Trees Grove", "url": "https://www.nps.gov/thingstodo/talltreeshike.htm" },
+        { "label": "Tall Trees reservations", "url": "https://www.nps.gov/redw/planyourvisit/talltreespermits.htm" }
+      ]
+    }
+  ]
+}

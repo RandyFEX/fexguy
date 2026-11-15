@@ -1,0 +1,224 @@
+{
+  "id": "sequoia",
+  "name": "Sequoia National Park",
+  "short": "Sequoia",
+  "state": "California",
+  "states": ["California"],
+  "tagline": "The largest trees on earth, granite domes and the high peaks of the Sierra Nevada.",
+  "photo": {
+    "src": "/images/last-adventure/sequoia/park.jpg",
+    "srcWebp": "/images/last-adventure/sequoia/park.webp",
+    "alt": "Visitors at the base of the General Sherman Tree in the Giant Forest",
+    "credit": "m01229 from USA",
+    "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg",
+    "caption": "The General Sherman Tree"
+  },
+  "intro": "In the Giant Forest, giant sequoias rise from quiet meadows, and the largest of them all, the General Sherman Tree, is the largest tree in the world by volume. A short drive away, a stone stairway climbs Moro Rock to views across the Great Western Divide. A final adventure here can be a gentle loop among the big trees or a morning walk up a glacier-carved valley to a towering waterfall.",
+  "homepage": "https://www.nps.gov/seki/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/seki/planyourvisit/maps.htm" },
+    { "label": "Giant Forest and Lodgepole day hikes", "url": "https://www.nps.gov/seki/planyourvisit/gfdayhikesum.htm" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit under the parks' published conditions, at least 100 yards from trails, roads, developed facilities and water.",
+  "scatterFacts": [
+    "No permit is required, according to the parks' Ash Scattering page and the Superintendent's Compendium (36 CFR 2.62(b)). All park regulations still apply.",
+    "It should be a small private activity, held away from high visitor-use areas.",
+    "Remains must have been processed by pulverization after cremation.",
+    "On the ground: at least 100 yards from any trail, road, developed facility or body of water.",
+    "From the air: at least 2,000 feet above ground level, and not over developed areas, facilities or bodies of water.",
+    "No markers or memorials, and no publicity may be given to the activity.",
+    "Questions: 559-565-4235."
+  ],
+  "scatterNotes": [
+    "The parks' Permits & Reservations page still lists ash scattering among activities that need a special use permit, while the Ash Scattering page (updated February 25, 2026) and the Superintendent's Compendium say no permit is required. Call the park to confirm before your trip."
+  ],
+  "scatterLink": [
+    { "label": "Ash scattering (NPS)", "url": "https://www.nps.gov/seki/planyourvisit/ash-scattering.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/seki/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Permits and reservations (NPS)", "url": "https://www.nps.gov/seki/planyourvisit/permits.htm" }
+  ],
+  "beforeYouGo": "Highway 198 enters Sequoia National Park at the Ash Mountain Entrance near the town of Three Rivers; beyond it the Generals Highway is narrow and winding, and vehicles longer than 22 feet are not advised between Potwisha Campground and the Giant Forest Museum. Tire chains may be required any time it snows, and there are no gas stations in the parks. The Generals Highway between Lodgepole and Grant Grove is unplowed from the Friday after January 1 to the third Friday in March. Road conditions: 559-565-3341.",
+  "destinations": [
+    {
+      "id": "general-sherman-tree",
+      "name": "General Sherman Tree",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/sequoia/general-sherman-tree.jpg",
+        "srcWebp": "/images/last-adventure/sequoia/general-sherman-tree.webp",
+        "alt": "Visitors at the base of the General Sherman Tree in the Giant Forest",
+        "credit": "m01229 from USA",
+        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg"
+      },
+      "description": "Standing at the foot of the General Sherman Tree, the largest tree in the world by volume, everyone instinctively looks up and goes quiet. Its trunk rises out of the Giant Forest beside other named sequoias, and benches along the path invite you to sit and take it in slowly. Bring your loved one here to stand among these giants together, and let the size of it all make room for your memories.",
+      "plan": {
+        "distance": "About 0.5 mi from the main parking lot; accessible trail about 500 ft",
+        "difficulty": "Easy on the accessible trail; the main trail climbs 200 ft on the return",
+        "elevation": "200 ft climb back to the main parking lot",
+        "accessibility": "Paved, wheelchair-accessible, slightly sloped trail from the Sherman Tree Accessible Parking Area on the Generals Highway (NPS)",
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Generals Highway to Wolverton Road, two miles north of the Giant Forest Museum, then to the Main Sherman Tree Parking Area. Accessible parking is on the Generals Highway itself. In summer, shuttles stop at the main lot every 15 to 20 minutes.",
+        "points": [
+          { "label": "Main Sherman Tree parking", "lat": 36.58527, "lon": -118.74936 },
+          { "label": "Accessible parking", "lat": 36.58024, "lon": -118.75183 }
+        ]
+      },
+      "trail": {
+        "name": "Sherman Tree Trail",
+        "steps": [
+          "From the main parking area, follow the trail down about 0.5 mi to the tree; it includes some stairs and benches.",
+          "In summer, you can avoid the uphill return by walking on to the accessible parking area and taking the shuttle back to the main lot."
+        ],
+        "notes": ["The tree stands at about 7,000 ft; take breaks and drink plenty of water. The trail is not always free of snow in winter."]
+      },
+      "final": [{ "label": "General Sherman Tree", "lat": 36.58165, "lon": -118.75144 }],
+      "scatterNote": {
+        "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, away from busy areas such as this one. Pulverized remains only; no markers, memorials or publicity."
+      },
+      "links": [
+        { "label": "The General Sherman Tree", "url": "https://www.nps.gov/thingstodo/the-general-sherman-tree-summer.htm" },
+        { "label": "General Sherman Tree", "url": "https://www.nps.gov/places/000/general-sherman-tree.htm" }
+      ]
+    },
+    {
+      "id": "big-trees-trail",
+      "name": "Big Trees Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/sequoia/big-trees-trail.jpg",
+        "srcWebp": "/images/last-adventure/sequoia/big-trees-trail.webp",
+        "alt": "A giant sequoia at the edge of Round Meadow on the Big Trees Trail",
+        "credit": "Pavel Špindler",
+        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sequoia_N.P._-_velk%C3%BD_strom_a_m%C3%BDtina_-_panoramio.jpg"
+      },
+      "description": "Round Meadow lies open to the sky, ringed by giant sequoias, and the Big Trees Trail circles it on a flat, paved path with benches along the way. It is an unhurried, nearly level walk that the whole family can share, including anyone using a wheelchair. Stop at the trailside panels, watch the meadow for marmots and other wildlife, and settle on a bench beneath the big trees long enough for one more story about the person who would have loved this quiet place.",
+      "plan": {
+        "distance": "0.7 mi loop (0.75 mi on the park's day hikes page)",
+        "difficulty": "Easy",
+        "time": "About 1 hour",
+        "accessibility": "Completely paved with little to no elevation change; placard parking at the trailhead (NPS)",
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Highway 198 through the Ash Mountain Entrance, then the Generals Highway to the Giant Forest Museum. Park in the main lot across from the museum; placard holders can park in a small lot at the trailhead.",
+        "points": [
+          { "label": "Giant Forest Museum parking", "lat": 36.565, "lon": -118.77375 },
+          { "label": "Giant Forest Museum", "lat": 36.5647, "lon": -118.7727 }
+        ]
+      },
+      "trail": {
+        "name": "Big Trees Trail",
+        "steps": [
+          "From the Giant Forest Museum, follow the signs about 0.3 mi to the trailhead.",
+          "Walk the paved loop around Round Meadow, past the trailside panels on sequoia ecology."
+        ],
+        "notes": ["Bears are often seen in meadows, especially in spring and early summer."]
+      },
+      "final": [{ "label": "Big Trees Trail at Round Meadow", "lat": 36.56621, "lon": -118.7695 }],
+      "scatterNote": {
+        "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, away from high visitor-use areas. Pulverized remains only; no markers, memorials or publicity."
+      },
+      "links": [
+        { "label": "Big Trees Trail", "url": "https://www.nps.gov/thingstodo/big-trees-trail.htm" },
+        { "label": "Giant Forest and Lodgepole day hikes", "url": "https://www.nps.gov/seki/planyourvisit/gfdayhikesum.htm" }
+      ]
+    },
+    {
+      "id": "moro-rock",
+      "name": "Moro Rock",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/sequoia/moro-rock.jpg",
+        "srcWebp": "/images/last-adventure/sequoia/moro-rock.webp",
+        "alt": "Forested ridges and the Sierra Nevada seen from the Moro Rock trail",
+        "credit": "King of Hearts",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moro_Rock_Trail_Sequoia_July_2017_006.jpg"
+      },
+      "description": "Moro Rock is a granite dome jutting from the edge of the Giant Forest, and a historic stone stairway of more than 350 steps winds to its top. With each landing the view widens, until the peaks of the Great Western Divide fill the east and the foothills fall away to the west. At the summit, a railing encloses a flat stretch of rock. Climb at your own pace, rest together on the way, and share a moment on top of the world.",
+      "plan": {
+        "distance": "0.25 mi to the summit by a 350-step stairway",
+        "difficulty": "Difficult: a steep climb at altitude, per NPS",
+        "time": "30 to 120 minutes",
+        "elevation": "300 ft",
+        "accessibility": "Stairway only; not wheelchair accessible. Accessible parking at the Moro Rock lot, and placard holders may drive the road when it is closed to other vehicles (NPS)",
+        "bestTime": "Spring, summer and fall; the stairway is closed when snowy or icy",
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Generals Highway to the Giant Forest Museum, then 1 mile on the Moro Rock / Crescent Meadow Road. In summer, the road closes to private vehicles on weekends and free shuttles run from the museum; on weekdays the small lot may be full. The road closes with snow in winter.",
+        "points": [{ "label": "Moro Rock parking", "lat": 36.54696, "lon": -118.76563 }]
+      },
+      "trail": {
+        "name": "Moro Rock stairway",
+        "steps": [
+          "From the parking area, climb the concrete and stone stairway, stopping at the exhibits along the way.",
+          "At the top, stay inside the railing that encloses the flat summit area."
+        ],
+        "notes": ["Steep drop-offs; keep children close. Little to no shade at the top. Stay off the rock during thunderstorms."]
+      },
+      "final": [{ "label": "Summit viewpoint", "lat": 36.54409, "lon": -118.76511 }],
+      "scatterNote": {
+        "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, away from busy areas such as this one. Pulverized remains only; no markers, memorials or publicity."
+      },
+      "links": [
+        { "label": "Moro Rock", "url": "https://www.nps.gov/thingstodo/moro-rock.htm" },
+        { "label": "Moro Rock (place)", "url": "https://www.nps.gov/places/000/moro-rock.htm" }
+      ]
+    },
+    {
+      "id": "tokopah-falls",
+      "name": "Tokopah Falls",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/sequoia/tokopah-falls.jpg",
+        "srcWebp": "/images/last-adventure/sequoia/tokopah-falls.webp",
+        "alt": "Tokopah Falls cascading down granite cliffs in Tokopah Valley",
+        "credit": "NPS",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokopah_Falls,_Sequoia_and_Kings_Canyon_National_Parks_SEKI4542.jpg",
+        "position": "50% 40%"
+      },
+      "description": "The trail to Tokopah Falls follows the Marble Fork of the Kaweah River up a valley shaped by a glacier, with granite walls rising higher at every turn. Watch for marmots and deer while the river keeps you company the whole way. At the end, the falls pour 1,200 feet down the canyon's cliffs. It is a fine half-day walk for a family, and the park calls it the easiest way to glimpse its high country.",
+      "plan": {
+        "distance": "3.4 mi round trip",
+        "difficulty": "Easy",
+        "time": "About 2 hours",
+        "elevation": "600 ft",
+        "accessibility": "Unpaved, with numerous bridges and staircases; not wheelchair accessible (NPS)",
+        "bestTime": "Late spring and early summer, when the falls flow; inaccessible in winter",
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Generals Highway to Lodgepole. Drive past the Lodgepole Market into the campground to the large day-use parking area on the right, then walk to the trailhead near the Marble Fork Bridge.",
+        "points": [{ "label": "Tokopah Falls Trailhead", "lat": 36.60512, "lon": -118.72273 }]
+      },
+      "trail": {
+        "name": "Tokopah Falls Trail",
+        "steps": [
+          "Start just beyond the Marble Fork Bridge in Lodgepole Campground.",
+          "Follow the Marble Fork of the Kaweah River 1.7 mi up Tokopah Valley to the cliffs and the falls."
+        ],
+        "notes": ["Use caution around the water, especially in spring and early summer: powerful currents and cold snowmelt. Lodgepole Campground closes in winter."]
+      },
+      "final": [{ "label": "Tokopah Falls", "lat": 36.61101, "lon": -118.69409 }],
+      "scatterNote": {
+        "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, so not along this riverside trail or at the falls. Pulverized remains only; no markers, memorials or publicity."
+      },
+      "links": [
+        { "label": "Tokopah Falls", "url": "https://www.nps.gov/thingstodo/tokopah-falls.htm" },
+        { "label": "Giant Forest and Lodgepole day hikes", "url": "https://www.nps.gov/seki/planyourvisit/gfdayhikesum.htm" }
+      ]
+    }
+  ]
+}

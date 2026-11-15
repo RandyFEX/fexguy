@@ -1,0 +1,226 @@
+{
+  "id": "lassen-volcanic",
+  "name": "Lassen Volcanic National Park",
+  "short": "Lassen Volcanic",
+  "state": "California",
+  "states": ["California"],
+  "tagline": "Steaming hydrothermal basins, clear mountain lakes and a volcano you can climb.",
+  "photo": {
+    "src": "/images/last-adventure/lassen-volcanic/park.jpg",
+    "srcWebp": "/images/last-adventure/lassen-volcanic/park.webp",
+    "alt": "A vehicle drives on a mountain road toward Lassen Peak, patched with snow",
+    "credit": "NPS Photo",
+    "caption": "Lassen Volcanic National Park Highway"
+  },
+  "intro": "At Lassen Volcanic, the earth is still at work: mudpots bubble, steam vents hiss and colored pools fill hydrothermal basins beneath Lassen Peak. A 30-mile highway links the park's two main entrances, passing lakes, meadows and roadside viewpoints along the way. A final adventure here can be a quiet sunset walk around a mountain lake, a short stroll to a steaming basin or a climb to the summit of the volcano itself.",
+  "homepage": "https://www.nps.gov/lavo/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/lavo/planyourvisit/maps.htm" },
+    { "label": "Park highway highlights", "url": "https://www.nps.gov/thingstodo/driveparkhwy.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering is allowed by permit only, at a location the superintendent finds appropriate, away from water, roads and developed areas.",
+  "scatterFacts": [
+    "Permit only (Superintendent's Compendium, 36 CFR 2.62(b)). Remains must also meet the appropriate state regulations and permits.",
+    "Mail the original special use permit application to: Fee Manager, Lassen Volcanic National Park, P.O. Box 100, Mineral, CA 96063. The $75 application fee is waived for scattering permits. Questions: 530-595-6120.",
+    "Permits are issued first come, first served, up to one year in advance; give as much notice as possible. Carry the approved permit at the event.",
+    "Not within 100 yards of a flowing stream, river or body of water, or of a road, and not within a developed area.",
+    "Ashes must be pulverized and fully dispersed, with no obvious piles. Not at archeological sites, Native American burial sites or where incompatible activities occur.",
+    "Group size on trails is limited to 20. The permit gives no exclusive use, and parking cannot be reserved.",
+    "The park keeps no record of where or when a scattering took place, so keep your own."
+  ],
+  "scatterNotes": [
+    "The park also asks permit holders to stay on paved areas and trails at all times unless park management deems otherwise, while the 100-yard rule keeps scattering away from roads and water. Ask the fee manager how your proposed spot fits both conditions."
+  ],
+  "scatterLink": [
+    { "label": "Scattering cremated remains (NPS)", "url": "https://www.nps.gov/lavo/planyourvisit/scattering-remains.htm" },
+    { "label": "Application form (PDF)", "url": "https://www.nps.gov/lavo/planyourvisit/upload/LAVO-NPS-10-930-Application-for-SUP.pdf" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/lavo/learn/management/compendium.htm" }
+  ],
+  "beforeYouGo": "The park is open all year, about three hours northeast of Sacramento. SR 44/89 leads to the Northwest Entrance at Manzanita Lake and SR 36/89 to the Southwest Entrance; the 30-mile Lassen Park Highway connects them, about an hour without stops. In the snowy season (approximately November to June), the highway is closed at the Kohm Yah-mah-nee Visitor Center and at Loomis Plaza. Hiking season is generally May through October, and trails can stay snow-covered into June or July. Fill your gas tank before you arrive.",
+  "destinations": [
+    {
+      "id": "manzanita-lake",
+      "name": "Manzanita Lake",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/lassen-volcanic/manzanita-lake.jpg",
+        "srcWebp": "/images/last-adventure/lassen-volcanic/manzanita-lake.webp",
+        "alt": "Lassen Peak reflected in the still water of Manzanita Lake",
+        "credit": "Ineshima",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manzanita_Lake,_Lassen_Volcanic_National_Park.jpg"
+      },
+      "description": "Manzanita Lake is one of the few walks in the park with views of Lassen Peak, and from its western shore the volcano and the jagged Chaos Crags rise together above the water. The level loop passes songbirds, waterbirds and black-tailed deer, and the evening alpenglow on the peaks is something to wait for. Pack a picnic, walk at the pace of the slowest in your group, and watch the light fade on the mountain together.",
+      "plan": {
+        "distance": "1.7 mi loop",
+        "difficulty": "Easy: level loop with negligible elevation change",
+        "time": "About 1 hour",
+        "elevation": "Negligible (5,890 ft)",
+        "accessibility": "Firm dirt with roots and exposed rock; strollers and wheelchairs not recommended (NPS)",
+        "bestTime": "Sunset; the trail is open year-round, with snow possible through April",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "SR 44/89 to the Northwest Entrance; the lake is one mile in. Turn right after the Loomis Plaza lot onto the Manzanita Lake Campground Road and drive about half a mile to the Manzanita Lake Picnic Area and Boat Launch parking.",
+        "points": [
+          { "label": "Picnic area and boat launch parking", "lat": 40.53243, "lon": -121.56409 },
+          { "label": "Loomis Museum", "lat": 40.5362, "lon": -121.56304 }
+        ]
+      },
+      "trail": {
+        "name": "Manzanita Lake Trail",
+        "steps": [
+          "Start from the boat launch trailhead (or from Loomis Plaza, between the restrooms and the museum).",
+          "Walk the loop around the lake; the western shore has the views of Lassen Peak and Chaos Crags."
+        ],
+        "notes": ["Shade can be limited; bring a hat and water."]
+      },
+      "final": [{ "label": "Western shore", "lat": 40.53357, "lon": -121.57107 }],
+      "scatterNote": {
+        "text": "Not at the lake: scattering must be at least 100 yards from any body of water or road and outside developed areas. Propose a location in your permit application and the superintendent will decide."
+      },
+      "links": [{ "label": "Walk Manzanita Lake Trail", "url": "https://www.nps.gov/thingstodo/walkmanzanitalake.htm" }]
+    },
+    {
+      "id": "sulphur-works",
+      "name": "Sulphur Works",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/lassen-volcanic/sulphur-works.jpg",
+        "srcWebp": "/images/last-adventure/lassen-volcanic/sulphur-works.webp",
+        "alt": "A gray mudpot bubbling at Sulphur Works",
+        "credit": "Frank Schulenburg",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mudpot_at_Sulphur_Works,_Lassen_Volcanic_National_Park.jpg"
+      },
+      "description": "Sulphur Works is the easiest of the park's hydrothermal areas to reach, an otherworldly place of vivid colors, pungent smells and bubbling, shifting ground right beside the highway. A short paved sidewalk brings everyone, young and old, to viewing areas where waysides tell the story of the ancient volcano that once filled this basin. It is a lively, surprising stop, the kind of place your loved one might have laughed at, pointed out and talked about for years.",
+      "plan": {
+        "distance": "Short walk on a paved sidewalk",
+        "difficulty": "Easy",
+        "time": "About 10 minutes",
+        "accessibility": "Paved sidewalk to viewing areas on both sides of the highway; parking is limited (NPS)",
+        "bestTime": "When the park highway is open; it is closed at the visitor center in the snowy season",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "SR 36/89 to the Southwest Entrance, then 2 miles north on the park highway to the Sulphur Works parking area. Cross the highway only at the sidewalk in the center of the viewing area.",
+        "points": [{ "label": "Sulphur Works parking", "lat": 40.44858, "lon": -121.53606 }]
+      },
+      "trail": {
+        "name": "Sulphur Works sidewalk",
+        "steps": [
+          "Follow the sidewalk from the parking area to the viewing areas.",
+          "Optional: the first few hundred feet of the Ridge Lakes Trail, from near the restrooms, look down on more features along Sulphur Creek."
+        ],
+        "notes": ["Stay on the sidewalk and established trails: the ground can be a thin crust over boiling, acidic water and mud, and visitors have been severely burned here."]
+      },
+      "final": [{ "label": "Sulphur Works viewing area", "lat": 40.44946, "lon": -121.53462 }],
+      "scatterNote": {
+        "text": "Not here: scattering must be at least 100 yards from roads and water and outside developed areas, and hydrothermal ground is dangerous off the sidewalk. Propose a location in your permit application and the superintendent will decide."
+      },
+      "links": [{ "label": "Visit Sulphur Works", "url": "https://www.nps.gov/thingstodo/visitsulphurworks.htm" }]
+    },
+    {
+      "id": "bumpass-hell",
+      "name": "Bumpass Hell",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/lassen-volcanic/bumpass-hell.jpg",
+        "srcWebp": "/images/last-adventure/lassen-volcanic/bumpass-hell.webp",
+        "alt": "The steaming Bumpass Hell hydrothermal basin seen from the west",
+        "credit": "DimiTalen",
+        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Bumpass_Hell_from_the_west,_Lassen_Volcanic_National_Park,_2011.jpg"
+      },
+      "description": "The trail to Bumpass Hell crosses the slope of Bumpass Mountain with views of volcanic peaks, passes an overlook of the five remnant peaks of the ancient Brokeoff Volcano, then drops into the park's largest hydrothermal area. A boardwalk carries you among steaming vents and colored pools. The park calls it popular with hikers of all ages, and walking it together, children and grandparents side by side, makes for an afternoon of wonder worth sharing.",
+      "plan": {
+        "distance": "3 mi round trip",
+        "difficulty": "Easy to Moderate",
+        "time": "About 90 minutes to 2 hours",
+        "elevation": "8,200 to 8,400 ft; a 300 ft descent into the basin (200 ft in the trail summary)",
+        "accessibility": "Packed gravel, 48 in wide to the basin overlook; narrow trails and a boardwalk in the basin (NPS)",
+        "bestTime": "Approximately late July through October",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "SR 36/89 to the Southwest Entrance, then 7 miles on the park highway to the Bumpass Hell parking area at the Brokeoff Volcano Scenic Vista. Parking is limited and often full from mid-morning to early afternoon, especially on weekends.",
+        "points": [
+          { "label": "Bumpass Hell parking", "lat": 40.46581, "lon": -121.51447 },
+          { "label": "Bumpass Hell Trailhead", "lat": 40.46606, "lon": -121.51404 }
+        ]
+      },
+      "trail": {
+        "name": "Bumpass Hell Trail",
+        "steps": [
+          "Walk the mostly flat first mile across the slope of Bumpass Mountain; an overlook at about 0.5 mi shows the remnant peaks of Brokeoff Volcano.",
+          "At about 1 mi, stop at the overlook into the basin.",
+          "Descend into the basin and follow the boardwalk among the hydrothermal features, then return the same way."
+        ],
+        "notes": [
+          "Stay on established trails and boardwalks: the ground can be a thin crust over boiling, acidic water. Do not touch the water or mud.",
+          "Vault toilets only at the trailhead. Snow can linger in summer; the trail is closed in winter and spring."
+        ]
+      },
+      "final": [
+        { "label": "Basin overlook area", "lat": 40.45867, "lon": -121.50535 },
+        { "label": "Bumpass Hell boardwalk", "lat": 40.45807, "lon": -121.50185 }
+      ],
+      "scatterNote": {
+        "text": "Not in the hydrothermal basin or along the trail: scattering must be at least 100 yards from roads and water and outside developed areas. Propose a location in your permit application and the superintendent will decide."
+      },
+      "links": [{ "label": "Hike to Bumpass Hell", "url": "https://www.nps.gov/thingstodo/hikebumpasshell.htm" }]
+    },
+    {
+      "id": "lassen-peak",
+      "name": "Lassen Peak",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/lassen-volcanic/lassen-peak.jpg",
+        "srcWebp": "/images/last-adventure/lassen-volcanic/lassen-peak.webp",
+        "alt": "A hiker on the trail leading up Lassen Peak",
+        "credit": "Victoria Stauffenberg (NPS Gallery)",
+        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/File:Lassen_Volcanic_National_Park_(5407de81-9c86-4026-bc09-6e2842851310).jpg" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lassen_Volcanic_National_Park_(5407de81-9c86-4026-bc09-6e2842851310).jpg"
+      },
+      "description": "Lassen Peak is one of the largest plug dome volcanoes in the world, and its trail climbs from twisted hemlock and whitebark pine onto open cinders, then up a rocky ridge of switchbacks to the first summit. There, with interpretive signs and room to rest, the whole park spreads out below in every direction. It is a hard, high climb, and reaching the top together with your loved one's memory is a tribute the strongest hikers in your family will carry home.",
+      "plan": {
+        "distance": "5 mi round trip",
+        "difficulty": "Strenuous",
+        "time": "4 to 5 hours",
+        "elevation": "1,957 ft gain from 8,500 ft",
+        "accessibility": "Packed dirt with some loose rock; not accessible to wheelchairs (NPS)",
+        "bestTime": "Summer and fall; start early to avoid afternoon storms and lightning",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "The Lassen Peak parking area is on the park highway, reached from the Southwest Entrance (SR 36/89) or the Northwest Entrance (SR 44/89).",
+        "points": [
+          { "label": "Lassen Peak parking", "lat": 40.47429, "lon": -121.50547 },
+          { "label": "Lassen Peak Trailhead", "lat": 40.47486, "lon": -121.50571 }
+        ]
+      },
+      "trail": {
+        "name": "Lassen Peak Trail",
+        "steps": [
+          "Climb through mountain hemlock and whitebark pine on sand-like cinders.",
+          "As the trees thin, follow the steepening switchbacks along a rocky ridge.",
+          "The maintained trail ends at the first summit, with interpretive signs; a steep route continues to the true summit."
+        ],
+        "notes": [
+          "Snow can persist through summer and is possible in any month. Sun exposure is considerable above the first mile.",
+          "Stay on the trail and do not cut switchbacks. Not recommended for small children or people with health concerns."
+        ]
+      },
+      "final": [{ "label": "Lassen Peak true summit", "lat": 40.48813, "lon": -121.50492 }],
+      "scatterNote": {
+        "text": "Not on the trail or summit area without the park's approval: scattering must be at least 100 yards from roads and water and outside developed areas, and trail groups are limited to 20. Propose a location in your permit application and the superintendent will decide."
+      },
+      "links": [{ "label": "Hike Lassen Peak", "url": "https://www.nps.gov/thingstodo/hikelassenpeak.htm" }]
+    }
+  ]
+}
