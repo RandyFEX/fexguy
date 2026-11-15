@@ -161,7 +161,7 @@ const difficultyRange = (text: string): [number, number] => {
                   </ul>
                   <p class="ola-park__note"><strong>Before you go:</strong> {p.beforeYouGo}</p>
                 </div>
-                <aside class={`ola-scatter ${p.scatterAllowed === 'Prohibited' ? 'ola-scatter--no' : ''}`} aria-labelledby={`${p.id}-scatter`}>
+                <aside class:list={['ola-scatter', { 'ola-scatter--no': p.scatterAllowed === 'Prohibited' }]} aria-labelledby={`${p.id}-scatter`}>
                   <h3 id={`${p.id}-scatter`}>Ash Scattering in {p.short}</h3>
                   {p.scatterAllowed === 'Prohibited' ? (
                     <p class="ola-warn"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg><span>{p.scatterSummary}</span></p>
@@ -174,10 +174,10 @@ const difficultyRange = (text: string): [number, number] => {
                 </aside>
               </div>
 
-              <p class="ola-jump">
-                <span>{p.destinations.length} destinations:</span>
-                {p.destinations.map((d) => <a href={`#${p.id}-${d.id}`}>{d.name}</a>)}
-              </p>
+              <nav class="ola-jump" aria-label={`Destinations in ${p.name}`}>
+                <span class="ola-jump__count">{p.destinations.length} destinations</span>
+                {[...p.destinations].sort((a, b) => a.name.localeCompare(b.name)).map((d) => <a href={`#${p.id}-${d.id}`}>{d.name}</a>)}
+              </nav>
 
               {p.destinations.map((d) => (
                 <article class="ola-dest" id={`${p.id}-${d.id}`} aria-labelledby={`${p.id}-${d.id}-title`}>
@@ -242,8 +242,29 @@ const difficultyRange = (text: string): [number, number] => {
                       </div>
                       {p.planNote && (
                         <div class="ola-plan__wide ola-plan__note">
-                          <dt>{p.planNote.heading}</dt>
+                          <dt><span class="ola-badge-head">{p.planNote.heading}</span></dt>
                           <dd>{p.planNote.text}</dd>
+                        </div>
+                      )}
+                      {d.scatterNote && (
+                        <div class="ola-plan__wide ola-plan__note">
+                          <dt><span class="ola-badge-head">Where Is Ash Scattering Permitted?</span></dt>
+                          <dd>
+                            <p>{d.scatterNote.text}</p>
+                            {d.scatterNote.points && (
+                              <ul class="ola-gps">
+                                {d.scatterNote.points.map((pt) => (
+                                <li>
+                                  <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label}, ${coord(pt)}, in Google Maps`}>
+                                    <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+                                    <span class="ola-gps__label">{pt.label}</span>
+                                    <span class="ola-gps__coord">{coord(pt)}</span>
+                                  </a>
+                                </li>
+                                ))}
+                              </ul>
+                            )}
+                          </dd>
                         </div>
                       )}
                     </dl>
@@ -288,25 +309,6 @@ const difficultyRange = (text: string): [number, number] => {
                     </section>
                   </div>
 
-                  {d.scatterNote && (
-                    <section class="ola-scatternote">
-                      <h4>Where to Scatter</h4>
-                      <p>{d.scatterNote.text}</p>
-                      {d.scatterNote.points && (
-                        <ul class="ola-gps">
-                          {d.scatterNote.points.map((pt) => (
-                            <li>
-                              <a class="ola-gps__btn" href={mapsUrl(pt.lat, pt.lon)} rel="noopener" target="_blank" data-lat={pt.lat} data-lon={pt.lon} aria-label={`Open ${pt.label}, ${coord(pt)}, in Google Maps`}>
-                                <svg class="ola-gps__pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
-                                <span class="ola-gps__label">{pt.label}</span>
-                                <span class="ola-gps__coord">{coord(pt)}</span>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </section>
-                  )}
                 </article>
               ))}
             </div>
@@ -760,6 +762,12 @@ const difficultyRange = (text: string): [number, number] => {
   .ola-scatter__note {
     line-height: 1.6;
   }
+  .ola-scatter--no h3 {
+    color: #fff;
+  }
+  .ola-scatter--no .ola-scatter__note {
+    color: #ffeb3b;
+  }
   .ola-scatter a {
     color: #fff;
   }
@@ -814,19 +822,31 @@ const difficultyRange = (text: string): [number, number] => {
   .ola-jump {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
+    gap: var(--space-2);
     align-items: center;
     margin: var(--space-8) 0 var(--space-6);
     padding-top: var(--space-4);
     border-top: 1px solid var(--color-border);
   }
-  .ola-jump span {
-    font-weight: 700;
-  }
+  .ola-jump__count,
   .ola-jump a {
-    min-height: var(--tap-target);
     display: inline-flex;
     align-items: center;
+    min-height: var(--tap-target);
+    padding: 0.25rem 0.9rem;
+    border-radius: 999px;
+    background: #173f35;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .ola-jump__count {
+    font-weight: 700;
+  }
+  .ola-jump a:hover {
+    background: #0e2d26;
+    color: #fff;
+    text-decoration: underline;
   }
 
   /* Destinations */
@@ -973,6 +993,28 @@ const difficultyRange = (text: string): [number, number] => {
     max-width: 60rem;
     margin-inline: auto;
   }
+  .ola-plan__note dd p {
+    margin: var(--space-1) 0 var(--space-2);
+  }
+  .ola-plan__note .ola-gps {
+    margin-bottom: var(--space-1);
+  }
+  .ola-plan dd a.ola-gps__btn {
+    display: flex;
+    min-height: var(--tap-target);
+    margin-right: 0;
+  }
+  .ola-badge-head {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border-radius: var(--radius);
+    background: #173f35;
+    color: #ffeb3b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
   .ola-route h4 {
     text-align: center;
   }
@@ -1007,8 +1049,7 @@ const difficultyRange = (text: string): [number, number] => {
     gap: var(--space-6);
     margin-top: var(--space-6);
   }
-  .ola-route p,
-  .ola-scatternote p {
+  .ola-route p {
     line-height: 1.6;
   }
   .ola-diff {
@@ -1055,13 +1096,6 @@ const difficultyRange = (text: string): [number, number] => {
   .ola-note {
     font-size: 0.9375rem;
     color: var(--color-text-muted);
-  }
-  .ola-scatternote {
-    margin-top: var(--space-6);
-    padding: var(--space-4);
-    border-left: 4px solid var(--color-primary);
-    background: var(--ola-sage);
-    border-radius: var(--radius);
   }
 
   /* GPS buttons: one solid black link holding the pin, label and coordinates */

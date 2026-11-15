@@ -91,7 +91,7 @@ const commons = (f: string) => `https://commons.wikimedia.org/wiki/File:${f}`;
 
 const tetonScatter = 'Only at a site you propose and the park approves';
 const yoseScatter = 'With a free permission letter, away from this spot';
-const gcScatter = 'Prohibited throughout the park';
+const gcScatter = 'Prohibited throughout the park. See below.';
 
 const paradiseRoadside: Point[] = [
   { label: 'Ricksecker Point', lat: 46.76995, lon: -121.78089, source: 'nps' },
@@ -151,7 +151,7 @@ export const parks: Park[] = [
           difficulty: 'Easy',
           accessibility: 'Wheelchair accessible (NPS)',
           bestTime: 'Sunset',
-          scattering: 'Permitted here with a permit',
+          scattering: 'Allowed here with a permit',
         },
         scatterStatus: 'permitted',
         drive: {
@@ -928,7 +928,7 @@ export const parks: Park[] = [
     ],
     scatterFacts: ['Superintendent’s Compendium item (62), citing 36 CFR 1.5(a)(2) and 36 CFR 2.62. No permits are issued for scattering.'],
     planNote: {
-      heading: 'A farewell without scattering',
+      heading: 'A Farewell Without Scattering',
       text: 'Published park rules prohibit scattering ashes but do not expressly prohibit bringing securely contained cremated remains for a personal visit. Bring your loved one’s remains in a secure, non-breakable container, share memories together, and take the remains with you when you leave. Arrange any scattering separately at a legally permitted location. Confirm any planned ceremony with the park.',
     },
     scatterLink: [{ label: 'Superintendent’s Compendium (PDF)', url: 'https://www.nps.gov/grca/learn/management/upload/grca-supt-compendium.pdf' }],
