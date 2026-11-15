@@ -1,0 +1,217 @@
+{
+  "id": "shenandoah",
+  "name": "Shenandoah National Park",
+  "short": "Shenandoah",
+  "state": "Virginia",
+  "states": ["Virginia"],
+  "tagline": "Blue Ridge summits, waterfalls and long views over the Shenandoah Valley.",
+  "photo": {
+    "src": "/images/last-adventure/shenandoah/park.jpg",
+    "srcWebp": "/images/last-adventure/shenandoah/park.webp",
+    "alt": "Rocky outcrop at Crescent Rock Overlook looking toward Hawksbill and the Blue Ridge",
+    "credit": "NPS",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Rock_Overlook_(49565011283).jpg",
+    "caption": "Crescent Rock Overlook and Hawksbill"
+  },
+  "intro": "Shenandoah stretches 105 miles along the crest of the Blue Ridge Mountains, and Skyline Drive carries you the whole way, past overlooks that open onto the Shenandoah Valley and the Virginia Piedmont. A final adventure here can be as gentle as a stop at a roadside overlook or a level forest loop, or as stirring as standing on the park's highest peak. The park allows scattering without a permit when its published conditions are met.",
+  "homepage": "https://www.nps.gov/shen/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/shen/planyourvisit/maps.htm" },
+    { "label": "Skyland area trail map (PDF)", "url": "https://www.nps.gov/shen/planyourvisit/upload/2025_Skyland_RoadTrail_508.pdf" },
+    { "label": "Big Meadows area trail map (PDF)", "url": "https://www.nps.gov/shen/planyourvisit/upload/BigMeadows_RoadTrail.pdf" }
+  ],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit when the park's conditions are met, on the ground at least 100 feet from any trail, road, developed facility or body of water; any other circumstance requires a permit.",
+  "scatterNotes": [
+    "Shenandoah is one of the few parks that does not require a permit for an ordinary family scattering. None of the featured viewpoints, trails or waterfalls qualify as the scattering spot itself, because each is a trail, road, developed facility or body of water: choose a place at least 100 feet away from all of these."
+  ],
+  "scatterFacts": [
+    "No permit needed when the conditions are met: remains must be cremated and pulverized.",
+    "Scatter on the ground, at least 100 feet from any trail, road, developed facility or body of water.",
+    "Scattering from the air is prohibited. Spread ashes over an area large enough that they do not accumulate in one place.",
+    "Commercial, for-profit distribution of remains is prohibited. No marker, urn or container of any kind may be left.",
+    "Any other circumstance requires a permit, as do ceremonies or assemblies that might conflict with park operations or affect park resources. Live flowers and plant material are not permitted at outdoor ceremonies."
+  ],
+  "scatterLink": [
+    { "label": "Special use permits: ash scattering (NPS)", "url": "https://www.nps.gov/shen/planyourvisit/special-use-permits.htm" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/shen/learn/management/compendium.htm" }
+  ],
+  "beforeYouGo": "Skyline Drive is the only public road through the park. There are four entrance stations: Front Royal (Route 340), Thornton Gap (US 211, east of Luray), Swift Run Gap (US 33, east of Elkton) and Rockfish Gap (off Highway 250 near Waynesboro). Use one of these: gated service roads at the boundary are closed to the public. The park is always open, but portions of Skyline Drive close periodically in bad weather, and most facilities open in March and close by late November. An entrance fee is required. All featured destinations are in the Central District, between miles 41.7 and 50.7.",
+  "destinations": [
+    {
+      "id": "crescent-rock-overlook",
+      "name": "Crescent Rock Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/shenandoah/crescent-rock-overlook.jpg",
+        "srcWebp": "/images/last-adventure/shenandoah/crescent-rock-overlook.webp",
+        "alt": "Pink moss phlox blooming on lichen-covered rocks with Hawksbill rising beyond",
+        "credit": "NPS/N. Lewis",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Rock_Overlook_(49565732152).jpg"
+      },
+      "description": "Crescent Rock Overlook faces west from 3,550 feet, and the park says it has some of the best views of Hawksbill, Shenandoah's highest peak. Nakedtop sits to the right, its ridge sliding down toward the valley floor. You can pull in, step out and be looking at the mountains together within moments, which makes it a gentle place to begin. An interpretive sign tells the story of the families who once lived on this land, a reminder that every place carries memories.",
+      "plan": {
+        "distance": "Roadside overlook beside Skyline Drive",
+        "difficulty": "Easy",
+        "accessibility": "Viewed from the overlook parking area; surface details not published",
+        "scattering": "Not at this spot: no permit needed at least 100 ft from any trail, road, facility or water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Enter at Thornton Gap (US 211) and drive south on Skyline Drive to mile 44.4.",
+        "points": [{ "label": "Overlook parking", "lat": 38.56233, "lon": -78.38298 }]
+      },
+      "final": [{ "label": "Overlook", "lat": 38.5624, "lon": -78.38295 }],
+      "scatterNote": { "text": "The overlook is beside Skyline Drive and is a developed facility. Scattering is allowed without a permit only on the ground at least 100 feet from any trail, road, developed facility or body of water." },
+      "links": [{ "label": "Crescent Rock Overlook (NPS)", "url": "https://www.nps.gov/places/000/crescent-rock-overlook.htm" }]
+    },
+    {
+      "id": "limberlost",
+      "name": "Limberlost Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/shenandoah/limberlost.jpg",
+        "srcWebp": "/images/last-adventure/shenandoah/limberlost.webp",
+        "alt": "A smooth crushed-stone path curving through spring forest on the Limberlost Trail",
+        "credit": "NPS/N. Lewis",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limberlost_Trail_(51832522503).jpg"
+      },
+      "description": "Limberlost is the only hiking trail in Shenandoah that meets accessibility guidelines, so everyone in the family, including anyone using a wheelchair, can share the whole walk. The smooth greenstone path loops through quiet forest where mountain laurel blooms in spring, past a striking example of columnar jointing in the rock. It is a place for slow steps and unhurried conversation, the kind of walk where a story about your loved one can take as long as it needs.",
+      "plan": {
+        "distance": "1.3 mi loop",
+        "difficulty": "Easy (rated Easiest by the park)",
+        "time": "1 hour 30 minutes",
+        "elevation": "130 ft",
+        "accessibility": "Fully accessible: primarily crushed greenstone, typical tread width 5 ft, typical running slope 3.5% and maximum 10.3% (NPS). Pets not allowed; service animals welcome",
+        "bestTime": "Spring, when the mountain laurel blooms",
+        "scattering": "Not at this spot: no permit needed at least 100 ft from any trail, road, facility or water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Enter at Thornton Gap (US 211) and drive south on Skyline Drive to the Limberlost parking area at mile 43.",
+        "points": [{ "label": "Limberlost parking", "lat": 38.58002, "lon": -78.38147 }]
+      },
+      "trail": {
+        "name": "Limberlost Trail (loop)",
+        "steps": [
+          "From the trailhead, take the trail to the right and follow the greenstone path.",
+          "Stay on the path to loop back around to your starting point."
+        ]
+      },
+      "final": [{ "label": "Trail destination on the loop", "lat": 38.5792, "lon": -78.37718 }],
+      "scatterNote": { "text": "Scattering is allowed without a permit only on the ground at least 100 feet from any trail, road, developed facility or body of water, so not on or beside the loop itself." },
+      "links": [{ "label": "Limberlost (NPS)", "url": "https://www.nps.gov/thingstodo/limberlost.htm" }]
+    },
+    {
+      "id": "stony-man",
+      "name": "Stony Man",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/shenandoah/stony-man.jpg",
+        "srcWebp": "/images/last-adventure/shenandoah/stony-man.webp",
+        "alt": "A woman with a baby on her back takes a picture from a rocky mountain summit above the valley",
+        "credit": "NPS/M. O'Neill"
+      },
+      "description": "A short climb along the Appalachian Trail and the blue-blazed Stony Man Trail brings you out onto open rock high above the Shenandoah Valley, with Massanutten Mountain and the country beyond spread out before you. The walk is short and rated the park's easiest, so grandparents and grandchildren can make it together. Sit on the rock, pass a thermos around and talk about where your loved one's life began.",
+      "plan": {
+        "distance": "1.6 mi round trip",
+        "difficulty": "Easy (rated Easiest by the park)",
+        "time": "1 hour",
+        "elevation": "340 ft",
+        "accessibility": "Does not meet ADA accessibility guidelines. Pets not allowed; service animals welcome (NPS)",
+        "scattering": "Not at this spot: no permit needed at least 100 ft from any trail, road, facility or water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Enter at Thornton Gap (US 211) and drive south on Skyline Drive to the Stony Man parking area at mile 41.7.",
+        "points": [{ "label": "Stony Man parking", "lat": 38.59321, "lon": -78.376 }]
+      },
+      "trail": {
+        "name": "Appalachian Trail and Stony Man Trail",
+        "steps": [
+          "From the Stony Man parking area, take the Appalachian Trail to the trail post.",
+          "Continue on the blue-blazed Stony Man Trail to the viewpoint.",
+          "Continue on the Stony Man Trail to its intersection with the Appalachian Trail and retrace your steps to the start."
+        ]
+      },
+      "final": [{ "label": "Summit viewpoint", "lat": 38.5979, "lon": -78.37167 }],
+      "scatterNote": { "text": "Scattering is allowed without a permit only on the ground at least 100 feet from any trail, road, developed facility or body of water." },
+      "links": [{ "label": "Stony Man (NPS)", "url": "https://www.nps.gov/thingstodo/stony-man.htm" }]
+    },
+    {
+      "id": "hawksbill-summit",
+      "name": "Hawksbill Summit",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/shenandoah/hawksbill-summit.jpg",
+        "srcWebp": "/images/last-adventure/shenandoah/hawksbill-summit.webp",
+        "alt": "The rocky, forested crown of Hawksbill under a blue sky with white clouds",
+        "credit": "NPS/N. Lewis",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_Summit_(43979340580).jpg"
+      },
+      "description": "Hawksbill is the highest peak in Shenandoah, and from the stone viewing platform at the top the park promises a 360-degree view over the Shenandoah Valley, the Blue Ridge and the Virginia Piedmont. The Upper Hawksbill route is the gentle way up, a steady walk through the woods past the Byrds Nest 2 shelter. Reaching the top of the park together, with nothing higher around you, is a fitting way to honor someone who meant the world to your family.",
+      "plan": {
+        "distance": "2.1 mi round trip",
+        "difficulty": "Easy (rated Easiest by the park)",
+        "time": "1 hour 30 minutes",
+        "elevation": "520 ft",
+        "accessibility": "Does not meet ADA accessibility guidelines. Pets allowed on a leash of 6 ft or less (NPS)",
+        "scattering": "Not at this spot: no permit needed at least 100 ft from any trail, road, facility or water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Enter at Thornton Gap (US 211) and drive south on Skyline Drive to the Upper Hawksbill parking area at mile 46.5.",
+        "points": [{ "label": "Upper Hawksbill parking", "lat": 38.54367, "lon": -78.39311 }]
+      },
+      "trail": {
+        "name": "Upper Hawksbill Trail",
+        "steps": [
+          "From the Upper Hawksbill parking area, take the Upper Hawksbill Trail to Byrds Nest 2 Shelter.",
+          "Follow the trail to the stone viewing platform.",
+          "Retrace your steps to return."
+        ],
+        "notes": ["Very limited closures are in effect to protect the outcrop ecosystems on Hawksbill. Stay off closed areas."]
+      },
+      "final": [{ "label": "Summit", "lat": 38.55536, "lon": -78.39514 }],
+      "scatterNote": { "text": "The summit outcrop is protected and the viewing platform is a developed facility. Scattering is allowed without a permit only on the ground at least 100 feet from any trail, road, developed facility or body of water." },
+      "links": [{ "label": "Hawksbill Summit via Upper Hawksbill (NPS)", "url": "https://www.nps.gov/thingstodo/upper-hawksbill-summit.htm" }]
+    },
+    {
+      "id": "dark-hollow-falls",
+      "name": "Dark Hollow Falls",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/shenandoah/dark-hollow-falls.jpg",
+        "srcWebp": "/images/last-adventure/shenandoah/dark-hollow-falls.webp",
+        "alt": "Dark Hollow Falls pouring over mossy rocks into a pool in misty forest",
+        "credit": "NPS/N. Lewis",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foggy_Dark_Hollow_Falls_(51834325406).jpg"
+      },
+      "description": "The trail to Dark Hollow Falls drops steeply beside a mountain stream, and the sound of water grows as you descend until the falls spill over the rocks in front of you. It is one of the park's most traveled trails for good reason. Find a rock to rest on, let the noise of the water carry the conversation for a while, and remember the people who taught you to love wild places. The climb back up is the hard part, so take it slowly together.",
+      "plan": {
+        "distance": "1.4 mi round trip (0.75 mi down to the falls)",
+        "difficulty": "Moderate",
+        "time": "1 hour 15 minutes",
+        "elevation": "440 ft",
+        "accessibility": "Does not meet ADA accessibility guidelines: short but very steep and rocky. Pets not allowed; service animals welcome (NPS)",
+        "scattering": "Not at this spot: no permit needed at least 100 ft from any trail, road, facility or water"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Drive Skyline Drive to the Dark Hollow Falls parking area at mile 50.7, near Big Meadows. Enter at Thornton Gap (US 211) or Swift Run Gap (US 33).",
+        "points": [{ "label": "Dark Hollow Falls parking", "lat": 38.51952, "lon": -78.43106 }]
+      },
+      "trail": {
+        "name": "Dark Hollow Falls Trail",
+        "steps": [
+          "From the parking area, descend 0.75 mi beside the stream to the falls.",
+          "Return by the same route, climbing back up to the parking area."
+        ],
+        "notes": ["The park warns that the return climb is challenging; take your time, especially when the trail is wet and slippery."]
+      },
+      "final": [{ "label": "Waterfall", "lat": 38.51875, "lon": -78.4234 }],
+      "scatterNote": { "text": "Scattering is allowed without a permit only on the ground at least 100 feet from any trail, road, developed facility or body of water, so never into the stream or falls." },
+      "links": [{ "label": "Dark Hollow Falls (NPS)", "url": "https://www.nps.gov/thingstodo/dark-hollow-falls.htm" }]
+    }
+  ]
+}

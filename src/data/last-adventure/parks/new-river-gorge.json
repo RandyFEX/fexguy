@@ -1,0 +1,207 @@
+{
+  "id": "new-river-gorge",
+  "name": "New River Gorge National Park",
+  "short": "New River Gorge",
+  "state": "West Virginia",
+  "states": ["West Virginia"],
+  "tagline": "A deep, forested gorge, sandstone cliffs and a famous arch bridge over the New River.",
+  "photo": {
+    "src": "/images/last-adventure/new-river-gorge/park.jpg",
+    "srcWebp": "/images/last-adventure/new-river-gorge/park.webp",
+    "alt": "Clouds filling the deep New River Gorge, with the river peeking through at the bottom",
+    "credit": "NPS/Sarah Merlau",
+    "caption": "Clouds in the gorge, seen from Canyon Rim"
+  },
+  "intro": "The New River cuts a deep, forested gorge through the mountains of southern West Virginia, rimmed by sandstone cliffs and crossed by the New River Gorge Bridge. A family can stand on a boardwalk facing the bridge, watch sunrise from Grandview, walk out onto rock points high above the rapids, or listen to Sandstone Falls pour across the whole river. Scattering is allowed by permit, at no application charge.",
+  "homepage": "https://www.nps.gov/neri/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/neri/planyourvisit/maps.htm" },
+    { "label": "Fayetteville area trails (NPS)", "url": "https://www.nps.gov/neri/planyourvisit/fayetteville_trails.htm" },
+    { "label": "Directions and GPS coordinates (NPS)", "url": "https://www.nps.gov/neri/planyourvisit/directions.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering ashes is done by special use permit; the park has set no designated area, so the location is arranged with the park through the permit.",
+  "scatterFacts": [
+    "Superintendent's Compendium (36 CFR 2.62(b)): the scattering of human ashes is done by permit, and no specific area or conditions have been established outside the permit process.",
+    "Application/administrative charge for Memorial/Scatter Ashes: $0.00.",
+    "Apply with the park's Special Use Permit application. Questions and date or location availability: NERI_permits_office@nps.gov or 304-465-6531 (Program Specialist).",
+    "Lead time is not published for scattering; the park asks you to allow adequate time for processing and to contact it as far in advance as possible.",
+    "The park may charge for monitoring ($65.00 per hour per employee) if it determines monitoring is necessary."
+  ],
+  "scatterLink": [
+    { "label": "Permits (NPS)", "url": "https://www.nps.gov/neri/planyourvisit/permits.htm" },
+    { "label": "Special Use Permit application, short form (DOCX)", "url": "https://www.nps.gov/neri/planyourvisit/upload/NPS-10-930s-Application-for-SUP-Short-Form-2024-OMB-Approved-6-2026.docx" },
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/neri/learn/management/superintendents-compendium.htm" }
+  ],
+  "beforeYouGo": "Highway access is from US 19 between Beckley and Hico, and from I-64 between Mossy and Sandstone. The park warns that phone map apps may send you to rough, inaccessible areas: navigate to the visitor center addresses or GPS coordinates the park publishes. Canyon Rim Visitor Center is on US 19 just north of Fayetteville; Grandview is 6 miles north of I-64 exit 129 on Route 9, and its visitor center is open seasonally. Sandstone Falls is reached on narrow River Road from Hinton. Entrance fees may apply.",
+  "destinations": [
+    {
+      "id": "canyon-rim-boardwalk",
+      "name": "Canyon Rim Boardwalk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.webp",
+        "alt": "The boardwalk deck overlooking the gorge and the New River Gorge Bridge",
+        "credit": "NPS/John Chapman"
+      },
+      "description": "Just outside the Canyon Rim Visitor Center, a short boardwalk leads to a deck that looks straight across the gorge at the New River Gorge Bridge, its steel arch spanning the gorge 876 feet above the river. On some mornings clouds fill the gorge below you. The upper viewpoint is an easy roll or stroll from the parking lot, so the whole family can gather at the rail together, and those who want more can take the 178 steps down to the lower overlook.",
+      "plan": {
+        "distance": "0.1 mi one way",
+        "difficulty": "Easy to the upper overlook; 178 steps to the lower overlook",
+        "time": "0 to 30 minutes",
+        "accessibility": "Fully accessible ramp to the first viewing point; the lower overlook, down 178 steps, is not accessible. Accessible parking and restrooms at the visitor center (NPS)",
+        "scattering": "Only at a site arranged with the park through a permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "US 19 to the Canyon Rim Visitor Center in Lansing, just north of Fayetteville. Follow the sidewalk next to the large stone bulletin board outside the visitor center.",
+        "points": [{ "label": "Canyon Rim Visitor Center", "lat": 38.07003, "lon": -81.07583, "source": "nps" }]
+      },
+      "final": [
+        { "label": "Boardwalk overlook", "lat": 38.07084, "lon": -81.07736 },
+        { "label": "Lower overlook (178 steps)", "lat": 38.07038, "lon": -81.07764 }
+      ],
+      "links": [
+        { "label": "Canyon Rim Boardwalk (NPS)", "url": "https://www.nps.gov/places/canyon-rim-boardwalk.htm" },
+        { "label": "View the overlooks at Canyon Rim (NPS)", "url": "https://www.nps.gov/thingstodo/view-the-overlooks-at-the-canyon-rim-visitor-center.htm" }
+      ]
+    },
+    {
+      "id": "grandview-main-overlook",
+      "name": "Grandview Main Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/grandview-main-overlook.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/grandview-main-overlook.webp",
+        "alt": "Sunrise over the New River Gorge from the Main Overlook at Grandview",
+        "credit": "NPS/Sheila Malone"
+      },
+      "description": "From the Main Overlook at Grandview, the New River lies about 1,400 feet below, curving through the gorge between forested slopes. Sunrise here draws photographers, and in late spring you may spot whitewater rafters far below. Around the third week of May the Catawba rhododendrons bloom, filling the rim with color. Come early with coffee and the people who matter most, and watch the light climb down the walls of the gorge while you share what your loved one meant to each of you.",
+      "plan": {
+        "distance": "About 500 yards from the parking lot to the overlook",
+        "difficulty": "Easy",
+        "time": "15 minutes at the overlook",
+        "accessibility": "Designated viewing platform for wheelchair users, but the 500-yard path from the parking lot consists of large, uneven stones (NPS)",
+        "bestTime": "Sunrise; Catawba rhododendrons bloom about the third week of May",
+        "scattering": "Only at a site arranged with the park through a permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From Beckley, take I-64 east five miles to exit 129B (from Lewisburg, I-64 west forty miles to exit 129). Turn right and follow Route 9 north six miles to Grandview.",
+        "points": [{ "label": "Grandview Visitor Center", "lat": 37.83017, "lon": -81.06312, "source": "nps" }]
+      },
+      "final": [{ "label": "Main Overlook", "lat": 37.83086, "lon": -81.06129 }],
+      "links": [{ "label": "Grandview Main Overlook (NPS)", "url": "https://www.nps.gov/thingstodo/grandview-main-overlook.htm" }]
+    },
+    {
+      "id": "sandstone-falls-boardwalk",
+      "name": "Sandstone Falls Boardwalk",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/sandstone-falls-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/sandstone-falls-boardwalk.webp",
+        "alt": "Sandstone Falls spanning the wide New River below forested hills",
+        "credit": "NPS/Dave Bieri"
+      },
+      "description": "Sandstone Falls is the largest waterfall on the New River, stretching 1,500 feet across and broken by islands into drops of 10 to 25 feet. A boardwalk crosses two bridges onto the islands and ends at observation decks with the whole width of the falls before you. Rare plants grow on the flat rocks along the way. The steady roar of the river makes a natural place to stand close together, say what needs saying, and let the water carry the rest.",
+      "plan": {
+        "distance": "0.2 mi one way (the trail description also gives 0.25 mi)",
+        "difficulty": "Easy",
+        "accessibility": "Handicapped-accessible boardwalk of flat panels compatible with most mobility aids, including wheelchairs (NPS)",
+        "scattering": "Only at a site arranged with the park through a permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From the west end of the WV Route 20 bridge in Hinton, follow narrow River Road (WV Route 26) along the river for nine miles to Sandstone Falls; the unpaved parking area is on the right. River Road is single lane in places.",
+        "points": [{ "label": "Sandstone Falls Boardwalk parking", "lat": 37.75936, "lon": -80.90504 }]
+      },
+      "trail": {
+        "name": "Sandstone Falls Boardwalk",
+        "steps": ["Follow the boardwalk across two bridges to the islands and observation decks facing the falls."],
+        "notes": [
+          "The waters around Sandstone Falls are very swift and dangerous: the park advises staying on the boardwalk or trails.",
+          "The park publishes GPS 37.71797 N, 80.89297 W for Sandstone Falls, which maps to a point on River Road south of the boardwalk; the parking point here is the boardwalk lot on OpenStreetMap."
+        ]
+      },
+      "final": [{ "label": "Boardwalk viewpoint facing the falls", "lat": 37.75881, "lon": -80.90498 }],
+      "links": [
+        { "label": "Sandstone Falls Boardwalk (NPS)", "url": "https://www.nps.gov/places/sandstone-falls-boardwalk.htm" },
+        { "label": "Sandstone Falls (NPS)", "url": "https://www.nps.gov/places/sandstone-falls.htm" }
+      ]
+    },
+    {
+      "id": "long-point-trail",
+      "name": "Long Point",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/long-point-trail.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/long-point-trail.webp",
+        "alt": "The New River Gorge Bridge spanning the river and deep forested gorge, seen from Long Point",
+        "credit": "NPS/Dave Bieri"
+      },
+      "description": "The Long Point Trail wanders through fields and forest before ending on a rock outcrop with panoramic views of the gorge and the New River Gorge Bridge. Most of the walk descends gently through the trees, with one steep pitch just before the point. Out on the rock, with the bridge and the river far below, there is room to sit together and tell the story of a life from beginning to end.",
+      "plan": {
+        "distance": "1.6 mi one way (3.2 mi round trip)",
+        "difficulty": "Moderate",
+        "accessibility": "First 1/4 mile accessible to a boardwalk viewing area; the Long Point overlook is not accessible (NPS)",
+        "scattering": "Only at a site arranged with the park through a permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "From US 19, follow WV 16 south through Fayetteville. Turn left on Gatewood Road (signed for Kaymoor and Cunard), follow it 1.9 mi, then turn left on Newton Road; the trailhead parking area is 50 yards on the left.",
+        "points": [{ "label": "Long Point trailhead parking", "lat": 38.04155, "lon": -81.07798 }]
+      },
+      "trail": {
+        "name": "Long Point Trail",
+        "steps": [
+          "Cross field and forest on a mostly gentle descent.",
+          "Climb the one steep section just before the point.",
+          "Walk out onto the Long Point rock outcrop, then return the same way."
+        ],
+        "notes": [
+          "Use caution around the unprotected cliff edges at Long Point.",
+          "Mountain bikes share the trail except on the last 0.2 mi."
+        ]
+      },
+      "final": [{ "label": "Long Point viewpoint", "lat": 38.05973, "lon": -81.07742 }],
+      "links": [{ "label": "Long Point Trail (NPS)", "url": "https://www.nps.gov/places/long-point-trail.htm" }]
+    },
+    {
+      "id": "endless-wall-trail",
+      "name": "Endless Wall Trail to Diamond Point",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/endless-wall-trail.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/endless-wall-trail.webp",
+        "alt": "View from Diamond Point down into the deep, forested gorge and the river",
+        "credit": "NPS/Dave Bieri",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_view_from_Diamond_Point_on_the_Endless_Wall_Trail_is_one_of_the_most_spectacular_viewpoints_in_the_park._(d2ed428b-da0b-4036-bed6-ea83f8979cf3).JPG"
+      },
+      "description": "The Endless Wall Trail passes through rich forest and across Fern Creek, then zig-zags along the top of the sandstone cliffs, with the New River almost 1,000 feet below. You may hear rafters shouting through the rapids and see climbers on the walls. Diamond Point, the classic turnaround, is one of the park's most spectacular viewpoints. Walking the rim together and arriving at that open ledge gives a family time to talk on the way, and a view worth the silence at the end.",
+      "plan": {
+        "distance": "About 2 mi round trip to Diamond Point and back; full trail 2.4 mi one way",
+        "difficulty": "Easy to Moderate",
+        "elevation": "Full trail: 427 ft gain, 545 ft loss",
+        "accessibility": "Natural-surface hiking trail along cliff edges; not described as accessible",
+        "scattering": "Only at a site arranged with the park through a permit"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "Turn off US 19 onto Lansing-Edmond Road, just north of the Canyon Rim Visitor Center. Fern Creek Trailhead is 1.3 mi down this narrow road, just before Fern Creek. If the small lot is full, do not park on the road: use the Nuttall Trailhead 0.5 mi farther, at 1.8 mi.",
+        "points": [{ "label": "Fern Creek Trailhead", "lat": 38.0631, "lon": -81.05689 }]
+      },
+      "trail": {
+        "name": "Endless Wall Trail",
+        "steps": [
+          "From Fern Creek Trailhead, walk through forest and cross Fern Creek.",
+          "Follow the trail as it zig-zags along the cliff edge to the overlook at Diamond Point.",
+          "Turn around at Diamond Point for the popular out-and-back, or continue to the Nuttall Trailhead and walk 0.5 mi back along the road."
+        ],
+        "notes": ["Use caution near cliff edges."]
+      },
+      "final": [{ "label": "Diamond Point Overlook", "lat": 38.05323, "lon": -81.05937 }],
+      "links": [{ "label": "Endless Wall Trail (NPS)", "url": "https://www.nps.gov/places/endless-wall-trail.htm" }]
+    }
+  ]
+}
