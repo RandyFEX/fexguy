@@ -1,0 +1,288 @@
+{
+  "id": "isle-royale",
+  "name": "Isle Royale National Park",
+  "short": "Isle Royale",
+  "state": "Michigan",
+  "states": [
+    "Michigan"
+  ],
+  "tagline": "A roadless wilderness island of rocky shores, boreal forest and Lake Superior views.",
+  "photo": {
+    "src": "/images/last-adventure/isle-royale/park.jpg",
+    "srcWebp": "/images/last-adventure/isle-royale/park.webp",
+    "alt": "Lake Superior and the distant Canadian shoreline seen from the top of Mount Franklin",
+    "credit": "NPS/Lori Honrath",
+    "caption": "Lake Superior from Mount Franklin"
+  },
+  "intro": "Isle Royale rises from Lake Superior, a wilderness island with no roads, reached only by ferry, seaplane or private boat. Rocky shorelines, spruce and fir forest and quiet harbors surround the small settlement at Rock Harbor, where most short hikes and boat tours begin. Getting here is part of the farewell: a crossing of the big lake to a place that feels far from everything.",
+  "homepage": "https://www.nps.gov/isro/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/isro/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Rock Harbor Area Guide (PDF)",
+      "url": "https://www.nps.gov/isro/planyourvisit/upload/ISRO_Web_Accessible_Rock_Harbor_Area_Guide_2024.pdf"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering on park land requires a Memorial Letter (permit) for a location, date and time you propose, approved by the superintendent.",
+  "scatterFacts": [
+    "Memorial Letter (permit) required. Give the Special Park Uses Coordinator the location, date and time; the superintendent may approve it if it does not affect other visitors or natural and cultural resources.",
+    "The signed Memorial Permit Letter includes a map of the approved location, the date and time, and the conditions.",
+    "Human cremains only, fully refined with no detectable remains, scattered in a discreet and private manner. No scattering from the air.",
+    "Do not move or disturb rocks or vegetation. Remove all containers; no plants, flowers, markers, monuments or rocks may be left.",
+    "The site stays open to the public; other visitors may not be excluded during the ceremony.",
+    "Depending on group size and activities, a Special Event permit with its own conditions and fees may be required. A fee and lead time for the Memorial Letter itself are not published.",
+    "Contact the park at 906-482-0984 or through the special use permits page."
+  ],
+  "scatterLink": [
+    {
+      "label": "Special use permits: memorial services (NPS)",
+      "url": "https://www.nps.gov/isro/learn/management/special-use-permits.htm"
+    },
+    {
+      "label": "Contact the park (NPS)",
+      "url": "https://www.nps.gov/isro/contacts.htm"
+    }
+  ],
+  "beforeYouGo": "No roads reach Isle Royale. The park is closed to all visitors from November 1 until April 15, and ferries and the seaplane run from the middle of May until September: the Ranger III or Isle Royale Seaplanes from Houghton, Michigan, ferries from Copper Harbor, Michigan, and Grand Portage, Minnesota, or a private boat. The Isle Royale Queen IV day trip gives three hours at Rock Harbor. The entrance fee is $7 per person per day (15 and under exempt); the island is cashless, so pay before you depart.",
+  "destinations": [
+    {
+      "id": "scoville-point",
+      "name": "Scoville Point",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "From Rock Harbor the Stoll Memorial Trail heads east between two harbors, one side wooded and sheltered along Tobin Harbor, the other rocky and exposed along Rock Harbor. The paths meet for the last half mile and climb the rocky face of Scoville Point, where the island ends and Lake Superior stretches out ahead. With its shorter return loops, the walk can fit the whole family. Find a ledge, sit close together and watch the light on the water.",
+      "plan": {
+        "distance": "1.9, 3.2 or 4.2 mi round trip, depending on the return loop",
+        "difficulty": "Moderate at the final rock steps (NPS: \"moderately difficult\"); described as great for all ages",
+        "time": "1 to 6 hours",
+        "accessibility": "Footpaths and elevated boardwalks with steps; rock steps at the end and a steep slope near the trailhead on the Rock Harbor side. The Tobin Harbor side is relatively smooth; the Rock Harbor side is rocky (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park. Arrive at Rock Harbor by ferry from Copper Harbor or Houghton, by seaplane or by private boat. The trail starts in the Rock Harbor developed area.",
+        "points": [
+          {
+            "label": "Rock Harbor ferry dock",
+            "lat": 48.14606,
+            "lon": -88.48576
+          },
+          {
+            "label": "Rock Harbor Lodge",
+            "lat": 48.14531,
+            "lon": -88.48354
+          }
+        ]
+      },
+      "trail": {
+        "name": "Stoll Memorial Trail",
+        "steps": [
+          "Rock Harbor side: start at the trailhead just past the Rock Harbor Recreation Hall and the Lodge's Ojibway building. Tobin Harbor side: start at the sign for 'Smithwick Mine' behind the Rock Harbor Auditorium.",
+          "Two return loops let you shorten the walk.",
+          "Both paths converge for the last half mile and climb the rocky face of Scoville Point."
+        ],
+        "notes": [
+          "Some cliff areas could be dangerous for young children, and rocks are slippery during and after rain. No pets."
+        ]
+      },
+      "final": [
+        {
+          "label": "Scoville Point",
+          "lat": 48.16332,
+          "lon": -88.44925
+        }
+      ],
+      "links": [
+        {
+          "label": "Stoll Memorial Trail (Scoville Point)",
+          "url": "https://www.nps.gov/thingstodo/stoll-memorial-trail.htm"
+        }
+      ]
+    },
+    {
+      "id": "lookout-louise",
+      "name": "Lookout Louise",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/isle-royale/lookout-louise.jpg",
+        "srcWebp": "/images/last-adventure/isle-royale/lookout-louise.webp",
+        "alt": "Forested shores, islands and open water of Lake Superior seen from Lookout Louise",
+        "credit": "Ben+Sam",
+        "license": {
+          "name": "CC BY-SA 2.0",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Lookout_Louise_(2740472885).jpg"
+      },
+      "description": "A boat ride on the MV Sandy and a short, rocky hike bring you to a high overlook above Duncan Bay. Below lies the open stretch of Lake Superior toward Thunder Bay, and on a clear day you can pick out Pie Island, the Sibley Peninsula and Edward Island in Ontario. The lookout is named for Louise Savage, a girl whose family owned one of the Tobin Harbor islands. Bring binoculars and take turns finding the far shore together.",
+      "plan": {
+        "distance": "4-mile boat trip, then a 2-mile round-trip hike",
+        "difficulty": "Not rated by NPS; described as rugged and rocky, so not an Easy walk",
+        "accessibility": "Rugged, rocky trail; wear sturdy hiking shoes and bring water (NPS). Benches at the overlook",
+        "bestTime": "MV Sandy runs this tour Tuesdays and Thursdays, early June to mid-September",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park. From Rock Harbor take the MV Sandy Hidden Lake/Lookout Louise tour; tickets at the Rock Harbor Lodge Office, reservations only on the island, fares vary.",
+        "points": [
+          {
+            "label": "Rock Harbor ferry dock",
+            "lat": 48.14606,
+            "lon": -88.48576
+          }
+        ]
+      },
+      "trail": {
+        "name": "Lookout Louise trail (self-guided)",
+        "steps": [
+          "Ride the MV Sandy about 4 miles to the trail.",
+          "Hike the 2-mile round trip up to Lookout Louise.",
+          "Return on the boat, or hike 9.4 miles back to Rock Harbor."
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 48.16433,
+          "lon": -88.48267
+        }
+      ],
+      "links": [
+        {
+          "label": "Lookout Louise",
+          "url": "https://www.nps.gov/places/lookout-louise.htm"
+        },
+        {
+          "label": "MV Sandy tours",
+          "url": "https://www.nps.gov/isro/planyourvisit/mv-sandy-tours.htm"
+        }
+      ]
+    },
+    {
+      "id": "rock-harbor-lighthouse",
+      "name": "Edisen Fishery and Rock Harbor Lighthouse",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.jpg",
+        "srcWebp": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.webp",
+        "alt": "Rock Harbor Lighthouse seen from the waters of Middle Islands Passage on a bright blue day",
+        "credit": "NPS/Paul Brown"
+      },
+      "description": "The boat brings you to a historic commercial fishery where, in midsummer, a demonstrator still tells the story of the families who fished these waters. A short walk leads to Rock Harbor Lighthouse, a 50-foot white brick tower completed in 1855 that once sent its beam 15 miles across the lake. Its keeper's house now holds maritime exhibits. For a family whose loved one worked hard, loved the water or simply loved a good story, this is a gentle and fitting stop.",
+      "plan": {
+        "distance": "Quarter-mile walk from the fishery to the lighthouse",
+        "difficulty": "Not rated by NPS; a short walk, surface not described, so Easy is not confirmed",
+        "accessibility": "Surface and accessibility not published; benches and a tactile exhibit at the lighthouse (NPS)",
+        "bestTime": "MV Sandy runs this tour Tuesdays, Thursdays and Saturdays, early June to mid-September; fishery demonstrator July through August",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park. From Rock Harbor take the MV Sandy Edisen Fishery and Rock Harbor Lighthouse tour; tickets at the Rock Harbor Lodge Office, reservations only on the island, fares vary.",
+        "points": [
+          {
+            "label": "Rock Harbor ferry dock",
+            "lat": 48.14606,
+            "lon": -88.48576
+          }
+        ]
+      },
+      "trail": {
+        "name": "Edisen Fishery to Rock Harbor Lighthouse",
+        "steps": [
+          "Visit the Edisen Fishery after the NPS introduction on arrival.",
+          "Walk a quarter mile to Rock Harbor Lighthouse and its exhibits.",
+          "If time allows, walk on to the moose and wolf research station at Bangsund Cabin."
+        ]
+      },
+      "final": [
+        {
+          "label": "Edisen Fishery",
+          "lat": 48.08977,
+          "lon": -88.58275
+        },
+        {
+          "label": "Rock Harbor Lighthouse",
+          "lat": 48.08975,
+          "lon": -88.57935
+        }
+      ],
+      "links": [
+        {
+          "label": "Rock Harbor Lighthouse",
+          "url": "https://www.nps.gov/places/rock-harbor-lighthouse.htm"
+        },
+        {
+          "label": "MV Sandy tours",
+          "url": "https://www.nps.gov/isro/planyourvisit/mv-sandy-tours.htm"
+        }
+      ]
+    },
+    {
+      "id": "suzys-cave",
+      "name": "Suzy's Cave",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "About 4,000 years ago, when Lake Superior stood higher, waves carved an arch through the rock that now stands inland, surrounded by forest. Reaching Suzy's Cave makes a satisfying loop from Rock Harbor: out on the rocky Rock Harbor Trail, inland to the arch, then back on the smoother Tobin Harbor Trail beneath spruce, fir and birch, with an eye out for moose. Stand together in the arch's shade and consider how patiently the water shaped it.",
+      "plan": {
+        "distance": "About 3.8 mi loop via the Rock Harbor and Tobin Harbor trails",
+        "difficulty": "Difficult on the Rock Harbor Trail; the Tobin Harbor Trail is significantly smoother (NPS)",
+        "time": "2 to 6 hours",
+        "accessibility": "Unpaved trail about 18 inches wide, covered in rocks and roots (NPS)",
+        "scattering": "Only at a site you propose and the park approves"
+      },
+      "scatterStatus": "park-decision",
+      "drive": {
+        "route": "No roads reach the park. Arrive at Rock Harbor by ferry, seaplane or private boat; the hike starts in the Rock Harbor area.",
+        "points": [
+          {
+            "label": "Rock Harbor ferry dock",
+            "lat": 48.14606,
+            "lon": -88.48576
+          }
+        ]
+      },
+      "trail": {
+        "name": "Rock Harbor Trail, Suzy's Cave spur and Tobin Harbor Trail",
+        "steps": [
+          "Follow the Rock Harbor Trail 1.8 miles beyond the Rock Harbor Campground.",
+          "Turn inland at the wooden post for Suzy's Cave; a 0.2-mile spur connects the two trails at the cave.",
+          "Continue to the Tobin Harbor Trail and follow it back to Rock Harbor."
+        ],
+        "notes": [
+          "Pets are not allowed."
+        ]
+      },
+      "final": [
+        {
+          "label": "Suzy's Cave",
+          "lat": 48.13235,
+          "lon": -88.51489
+        }
+      ],
+      "links": [
+        {
+          "label": "Suzy's Cave",
+          "url": "https://www.nps.gov/places/suzy-s-cave.htm"
+        },
+        {
+          "label": "Hike to Suzy's Cave",
+          "url": "https://www.nps.gov/thingstodo/hike-to-suzy-s-cave.htm"
+        }
+      ]
+    }
+  ]
+}

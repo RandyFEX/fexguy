@@ -1,0 +1,299 @@
+{
+  "id": "voyageurs",
+  "name": "Voyageurs National Park",
+  "short": "Voyageurs",
+  "state": "Minnesota",
+  "states": [
+    "Minnesota"
+  ],
+  "tagline": "A northwoods water world of big lakes, granite shores and boreal forest on the Canadian border.",
+  "photo": {
+    "src": "/images/last-adventure/voyageurs/park.jpg",
+    "srcWebp": "/images/last-adventure/voyageurs/park.webp",
+    "alt": "Bare granite and pines above a blue lake dotted with small rocky islands in Voyageurs National Park",
+    "credit": "National Park Service",
+    "license": {
+      "name": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voyageurs_National_Park_VOYA9501.jpg",
+    "caption": "Granite shores and islands in Voyageurs"
+  },
+  "intro": "Voyageurs sits on the Canadian border in northern Minnesota, a park of interconnected lakes, rocky islands and northwoods forest where the voyageurs once paddled their canoes. A few trails start right at the visitor centers, but much of the park is best seen from the water, and ranger-led tour boats carry families to places no road reaches. A farewell here can be a quiet lakeside walk or a full day on the water to a historic hotel on the border.",
+  "homepage": "https://www.nps.gov/voya/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/voya/planyourvisit/maps.htm"
+    },
+    {
+      "label": "Hiking trails (NPS)",
+      "url": "https://www.nps.gov/voya/planyourvisit/hiking-trails.htm"
+    }
+  ],
+  "scatterAllowed": "Permitted with a permit",
+  "scatterSummary": "Scattering ashes requires a permit from the superintendent; the park does not publish where scattering is allowed or the conditions that apply.",
+  "scatterFacts": [
+    "The Superintendent's Compendium lists scattering ashes from human cremation (36 CFR 2.62(b)) among the activities that require a permit.",
+    "Memorialization is handled as a Special Use Permit. The park lists a standard $50 application fee for Special Use Permit applications.",
+    "Apply with the general Special Use Permit application (NPS 10-930), by email to the park's special park uses office or by mail.",
+    "Locations, conditions and lead time for scattering are not published. Contact the park before you plan the scattering: 218-283-6600."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium (NPS)",
+      "url": "https://www.nps.gov/voya/learn/management/superintendents-compendium.htm"
+    },
+    {
+      "label": "Special Use Permits (NPS)",
+      "url": "https://www.nps.gov/voya/getinvolved/dobusinesswithus.htm"
+    }
+  ],
+  "beforeYouGo": "No entrance pass is required. The visitor centers (Rainy Lake, Kabetogama Lake, Ash River and Crane Lake) are expected to open for summer on Memorial Day weekend, 9 am to 5 pm daily through September. Some trails and the visitor centers can be reached by car, but much of the park is reached by boat. Ranger-led boat tours run typically from mid-June through September; reservations open April 15 at Recreation.gov or 1-877-444-6777, and tours often fill. Pets are not allowed on trails or tour boats.",
+  "destinations": [
+    {
+      "id": "oberholtzer-trail",
+      "name": "Oberholtzer Trail",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/oberholtzer-trail.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/oberholtzer-trail.webp",
+        "alt": "Green cattails in the foreground with the lake and trees beyond, under a blue sky",
+        "credit": "NPS/C. Meridith"
+      },
+      "description": "Starting beside the Rainy Lake Visitor Center, this gentle trail winds through deciduous and conifer forest around the edge of a cattail marsh, past boulders left behind by ancient glaciers. Two overlooks open onto the marsh and the lake, good places to watch for wading birds and to pause together. The first stretch is smooth and wide enough for a wheelchair, so everyone can share at least part of the walk. Come at dawn or dusk, when the marsh is at its most alive.",
+      "plan": {
+        "distance": "1.6 mi round trip; accessible section 0.5 mi round trip",
+        "difficulty": "Easy",
+        "time": "45 to 80 minutes",
+        "accessibility": "First 1/4 mile is a 4-foot-wide, flat crushed gravel trail; beyond that the dirt path is uneven with roots and rocks (NPS)",
+        "bestTime": "Year-round; snowshoeing in winter",
+        "scattering": "Permit required; locations not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Drive to the Rainy Lake Visitor Center, east of International Falls. The trailhead is on the south side of the visitor center.",
+        "points": [
+          {
+            "label": "Rainy Lake Visitor Center",
+            "lat": 48.58478,
+            "lon": -93.16113
+          }
+        ]
+      },
+      "trail": {
+        "name": "Oberholtzer Trail",
+        "steps": [
+          "Start on the south side of the Rainy Lake Visitor Center.",
+          "Follow the trail through the forest and around the edge of the cattail wetland.",
+          "Continue to the two overlooks of the marsh and lake, then return the same way."
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 48.58445,
+          "lon": -93.17162
+        }
+      ],
+      "links": [
+        {
+          "label": "Hike the Oberholtzer Trail",
+          "url": "https://www.nps.gov/thingstodo/oberholtzer-trail.htm"
+        }
+      ]
+    },
+    {
+      "id": "blind-ash-bay-trail",
+      "name": "Blind Ash Bay Trail",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/blind-ash-bay-trail.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/blind-ash-bay-trail.webp",
+        "alt": "View over Kabetogama Lake and its islands through pine trees",
+        "credit": "NPS Photo"
+      },
+      "description": "This narrow, winding trail leads from closed-in boreal forest to views over Kabetogama Lake, with pines framing the water and islands scattered across it. The park calls the views postcard-worthy, and they are. It is a good trail for birding, and deer are frequent visitors. Walk the loop at an easy pace, then settle in at a viewpoint above the lake for a while and let the quiet of the north woods hold your family's memories.",
+      "plan": {
+        "distance": "2.9 mi loop",
+        "difficulty": "Moderate",
+        "time": "1 to 3 hours",
+        "accessibility": "Not accessible: uneven surface, exposed roots and rocks, and inclines and declines (NPS)",
+        "bestTime": "Year-round; snowshoeing in winter",
+        "scattering": "Permit required; locations not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Drive to the Ash River Visitor Center on Meadwood Road. The trailhead is in the upper parking lot by the visitor center.",
+        "points": [
+          {
+            "label": "Upper parking lot",
+            "lat": 48.43418,
+            "lon": -92.84993
+          }
+        ]
+      },
+      "trail": {
+        "name": "Blind Ash Bay Trail (lollipop loop)",
+        "steps": [
+          "Start from the upper parking lot by the Ash River Visitor Center.",
+          "The first section is the steepest. To skip it, start on the Kabetogama Lake Overlook trail and continue onto the Blind Ash Bay Trail.",
+          "Follow the loop to the overlooks of Kabetogama Lake and return to the trailhead."
+        ],
+        "notes": [
+          "If hiking before sunrise or after sunset, carry a flashlight other than your phone."
+        ]
+      },
+      "final": [
+        {
+          "label": "Overlook",
+          "lat": 48.43355,
+          "lon": -92.87171
+        }
+      ],
+      "links": [
+        {
+          "label": "Hike Blind Ash Bay Trail",
+          "url": "https://www.nps.gov/thingstodo/hike-blind-ash-bay-trail.htm"
+        }
+      ]
+    },
+    {
+      "id": "ellsworth-rock-gardens",
+      "name": "Ellsworth Rock Gardens",
+      "kinds": [
+        "accessible",
+        "extraordinary"
+      ],
+      "photo": null,
+      "description": "Over some twenty years, Chicago carpenter Jack Ellsworth turned a granite outcrop on the north shore of Kabetogama Lake into terraced flower beds and more than 200 abstract rock sculptures, balanced stones, tables and chairs among them. The tour boat carries you across the lake, and a ranger leads the way along the winding garden paths. It is a lovely tribute for anyone who loved making things with their hands, and a place to imagine one person's devotion, stone by stone.",
+      "plan": {
+        "distance": "2.5-hour boat tour, including a 1/4-mile ranger-led walk",
+        "difficulty": "Not rated by NPS; lower portion accessible, upper portion over a 60-foot granite outcrop, so not Easy throughout",
+        "time": "2.5 hours",
+        "accessibility": "Lower portion of the garden tour is accessible; the upper portion requires sturdy shoes to cross a 60-foot granite outcrop (NPS)",
+        "bestTime": "Boat tour season, typically mid-June through September",
+        "scattering": "Permit required; locations not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "The gardens are reached by boat. The Ellsworth Rock Gardens tour leaves from the Kabetogama Lake Visitor Center; check in half an hour before departure.",
+        "points": [
+          {
+            "label": "Kabetogama Lake Visitor Center",
+            "lat": 48.44487,
+            "lon": -93.03009
+          }
+        ]
+      },
+      "trail": {
+        "name": "Ellsworth Rock Gardens tour",
+        "steps": [
+          "Cruise through the west end of Kabetogama Lake and past Gold Portage.",
+          "Join a park ranger for a 1/4-mile tour of the rock sculptures, terraced flower beds, building remnants and winding paths."
+        ],
+        "notes": [
+          "Reserve at Recreation.gov; walk-in tickets, if seats remain, stop 30 minutes before departure (credit card only)."
+        ]
+      },
+      "final": [
+        {
+          "label": "Ellsworth Rock Gardens",
+          "lat": 48.4972,
+          "lon": -92.97906
+        }
+      ],
+      "links": [
+        {
+          "label": "Ellsworth Rock Gardens",
+          "url": "https://www.nps.gov/voya/planyourvisit/ellsworth-showplace.htm"
+        },
+        {
+          "label": "Guided tours",
+          "url": "https://www.nps.gov/voya/planyourvisit/guided-tours.htm"
+        }
+      ]
+    },
+    {
+      "id": "kettle-falls",
+      "name": "Kettle Falls",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/kettle-falls.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/kettle-falls.webp",
+        "alt": "The historic Kettle Falls Hotel in Voyageurs National Park",
+        "credit": "NPS",
+        "license": {
+          "name": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kettle_Falls_Hotel_NPS.jpg"
+      },
+      "description": "For centuries Kettle Falls was a crossroads of the border lakes, where Native peoples speared sturgeon and voyageurs portaged their canoes and furs. Since 1913 a red-roofed hotel has stood here, about 15 miles from the nearest road, with a veranda made for slow conversation. A full day on the tour boat brings you across the lakes to walk the grounds and see the nearby dam. For a family that loved long days on the water, this journey carries its own meaning.",
+      "plan": {
+        "distance": "Full-day boat tour with 2 hours on land",
+        "difficulty": "Not rated by NPS; walking distance and surface on the grounds not published, so Easy is not confirmed",
+        "time": "6.5 hours from Rainy Lake; 5.5 hours from Ash River",
+        "accessibility": "Accessibility on the grounds not published; contact the park",
+        "bestTime": "Boat tour season, typically mid-June through September",
+        "scattering": "Permit required; locations not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Kettle Falls is reached only by water. The Kettle Falls tour leaves from the Rainy Lake Visitor Center (6.5 hours) or the Ash River Visitor Center (5.5 hours). Bring a lunch or buy a boxed lunch from the hotel restaurant.",
+        "points": [
+          {
+            "label": "Rainy Lake Visitor Center",
+            "lat": 48.58478,
+            "lon": -93.16113
+          },
+          {
+            "label": "Ash River Visitor Center",
+            "lat": 48.43563,
+            "lon": -92.85021
+          }
+        ]
+      },
+      "trail": {
+        "name": "Kettle Falls tour",
+        "steps": [
+          "Cruise to the historic Kettle Falls Hotel (2.5 hours from Rainy Lake, 2 hours from Ash River).",
+          "Spend 2 hours on land touring the hotel grounds and the nearby dam.",
+          "Cruise back to the visitor center."
+        ]
+      },
+      "final": [
+        {
+          "label": "Kettle Falls Hotel",
+          "lat": 48.5029,
+          "lon": -92.63999
+        },
+        {
+          "label": "Kettle Falls",
+          "lat": 48.49976,
+          "lon": -92.63833
+        }
+      ],
+      "links": [
+        {
+          "label": "Kettle Falls",
+          "url": "https://www.nps.gov/voya/planyourvisit/kettle-falls.htm"
+        },
+        {
+          "label": "Kettle Falls Hotel",
+          "url": "https://www.nps.gov/places/kettle-falls-hotel.htm"
+        },
+        {
+          "label": "Guided tours",
+          "url": "https://www.nps.gov/voya/planyourvisit/guided-tours.htm"
+        }
+      ]
+    }
+  ]
+}

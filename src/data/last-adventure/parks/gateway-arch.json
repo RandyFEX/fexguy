@@ -1,0 +1,228 @@
+{
+  "id": "gateway-arch",
+  "name": "Gateway Arch National Park",
+  "short": "Gateway Arch",
+  "state": "Missouri",
+  "states": [
+    "Missouri"
+  ],
+  "tagline": "A 630-foot stainless steel arch above the Mississippi River in downtown St. Louis.",
+  "photo": {
+    "src": "/images/last-adventure/gateway-arch/park.jpg",
+    "srcWebp": "/images/last-adventure/gateway-arch/park.webp",
+    "alt": "The Gateway Arch and the Old Courthouse lit at night above the Mississippi River in St. Louis",
+    "credit": "Daniel Schwen",
+    "license": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:St_Louis_night_expblend.jpg",
+    "caption": "The Gateway Arch above the Mississippi River at night"
+  },
+  "intro": "On the bank of the Mississippi in downtown St. Louis, the Gateway Arch rises 630 feet over tree-lined grounds designed to frame it. A tram carries visitors to a small observation deck at the top, and across the street the Old Courthouse holds the story of the Dred and Harriet Scott freedom suit. Everything here lies within a short walk, which makes it easy to share with every generation of a family.",
+  "homepage": "https://www.nps.gov/jeff/",
+  "map": [
+    {
+      "label": "Official park maps",
+      "url": "https://www.nps.gov/jeff/planyourvisit/maps.htm"
+    }
+  ],
+  "scatterAllowed": "Unconfirmed",
+  "scatterSummary": "The park does not publish a rule on scattering ashes; contact the park before you plan anything.",
+  "scatterFacts": [
+    "The park's 2026 Superintendent's Compendium and permits page do not address scattering ashes.",
+    "Do not assume scattering is allowed. Ask the park before your visit: (314) 655-1600, 11 North Fourth Street, St. Louis, MO 63102.",
+    "Bags and containers must pass through security screening (X-ray) to enter the Gateway Arch Visitor Center."
+  ],
+  "scatterLink": [
+    {
+      "label": "Superintendent's Compendium for 2026 (NPS)",
+      "url": "https://www.nps.gov/jeff/learn/management/superintendent-s-compendium-for-2026.htm"
+    },
+    {
+      "label": "Permits and reservations (NPS)",
+      "url": "https://www.nps.gov/jeff/planyourvisit/permitsandreservations.htm"
+    },
+    {
+      "label": "Contact the park (NPS)",
+      "url": "https://www.nps.gov/jeff/contacts.htm"
+    }
+  ],
+  "beforeYouGo": "The grounds are open every day from 5 am to 11 pm. The Gateway Arch Visitor Center opens at 9 am, closing at 6 pm most of the year and 8 pm on summer Fridays and Saturdays; the Old Courthouse is open 9 am to 5 pm. Both close on Thanksgiving, Christmas and New Year's Day. Enter the Arch through the west entrance facing Fourth Street; everyone goes through security screening. The park runs no parking lots; its preferred parking is Stadium East Garage, 200 S Broadway.",
+  "destinations": [
+    {
+      "id": "top-of-the-arch",
+      "name": "Tram Ride to the Top of the Arch",
+      "kinds": [
+        "extraordinary"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/gateway-arch/top-of-the-arch.jpg",
+        "srcWebp": "/images/last-adventure/gateway-arch/top-of-the-arch.webp",
+        "alt": "Downtown St. Louis and the Old Courthouse seen from the top of the Gateway Arch",
+        "credit": "artistmac",
+        "license": {
+          "name": "CC BY-SA 2.0",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_St._Louis,_from_Top_of_Gateway_Arch_(7358308308).jpg"
+      },
+      "description": "A small five-seat capsule tilts and climbs inside the leg of the Arch for four minutes, and then you step out 630 feet above St. Louis. Through the narrow windows the Mississippi River runs below on one side and the city spreads out on the other; on a clear day the view reaches about 30 miles. It is a brief visit, only one tram cycle, so hold hands, find the window your loved one would have chosen and take in the view together.",
+      "plan": {
+        "distance": "Tram ride inside the Arch; 4 minutes up and 3 minutes down",
+        "difficulty": "Not rated by NPS; you must manage at least 96 steps, so not an Easy accessible visit",
+        "time": "45 to 60 minutes, with about 7 to 9 minutes at the top",
+        "elevation": "630 ft",
+        "accessibility": "Not wheelchair accessible: at least 96 steps in six flights, no wheelchairs, scooters or strollers on the observation deck, and you may stand 30 to 60 minutes. No seating or restrooms at the top (NPS)",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Downtown St. Louis. Park at Stadium East Garage (200 S Broadway, preferred parking) and enter the Gateway Arch Visitor Center through the west entrance facing Fourth Street and the Old Courthouse. Tickets ($13 to $19) at gatewayarch.com; the ride often sells out, so buy in advance.",
+        "points": [
+          {
+            "label": "Stadium East Garage",
+            "lat": 38.62364,
+            "lon": -90.19009
+          },
+          {
+            "label": "Visitor Center",
+            "lat": 38.62501,
+            "lon": -90.18653
+          }
+        ]
+      },
+      "trail": {
+        "name": "Ride to the Top",
+        "steps": [
+          "Pass through security at the west entrance and go to the tram lobby.",
+          "After a short pre-boarding program, ride the tram 4 minutes to the observation deck.",
+          "Stay one tram cycle at the top, then ride the same tram back down."
+        ],
+        "notes": [
+          "The last tram goes up about an hour before closing. Visitors uneasy in small spaces can sit in the replica tram car by the ticket counter first."
+        ]
+      },
+      "final": [
+        {
+          "label": "Observation deck (top of the Arch)",
+          "lat": 38.6246,
+          "lon": -90.18498
+        }
+      ],
+      "links": [
+        {
+          "label": "Frequently asked questions (NPS)",
+          "url": "https://www.nps.gov/jeff/faqs.htm"
+        }
+      ]
+    },
+    {
+      "id": "arch-grounds",
+      "name": "The Arch Grounds",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/gateway-arch/arch-grounds.jpg",
+        "srcWebp": "/images/last-adventure/gateway-arch/arch-grounds.webp",
+        "alt": "A leg of the Gateway Arch above tree-lined paths, a pond and lawns beside the Mississippi River",
+        "credit": "Jefferson National Expansion Memorial, NPS",
+        "license": {
+          "name": "CC BY 2.0",
+          "url": "https://creativecommons.org/licenses/by/2.0/"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jefferson_National_Expansion_Memorial_(5244769158).jpg"
+      },
+      "description": "Landscape architect Dan Kiley designed these grounds with Eero Saarinen, and they were made for walking. Curving, tree-lined paths reveal the Arch from changing angles, lawns slope down to reflecting ponds, and from many places you can watch the river traffic on the Mississippi. Walk to the base of the Arch together and lay your hands on the steel; the park welcomes it. Local legend says anyone who touches it will always be pulled back to St. Louis.",
+      "plan": {
+        "distance": "Paved paths across about 62 acres; distance depends on your route",
+        "difficulty": "Easy",
+        "accessibility": "The paved paths across the grounds are fully accessible, with a ramp from street level (NPS)",
+        "bestTime": "Grounds open 5 am to 11 pm every day",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Downtown St. Louis. Park at Stadium East Garage (200 S Broadway). Pickup and drop-off: Memorial Drive near the Old Cathedral parking lot, or Market Street between Luther Ely Smith Square and Gateway Tower.",
+        "points": [
+          {
+            "label": "Stadium East Garage",
+            "lat": 38.62364,
+            "lon": -90.19009
+          }
+        ]
+      },
+      "trail": {
+        "name": "Grounds paths",
+        "steps": [
+          "Follow the paved, tree-lined paths from Fourth Street toward the Arch and the reflecting ponds.",
+          "Continue to the base of the Arch, where visitors are welcome to touch it."
+        ],
+        "notes": [
+          "Swimming and wading are prohibited in the reflecting ponds. There are no picnic tables; picnics on the grounds are welcome."
+        ]
+      },
+      "final": [
+        {
+          "label": "Gateway Arch",
+          "lat": 38.6246,
+          "lon": -90.18498
+        }
+      ],
+      "links": [
+        {
+          "label": "Gateway Arch park attractions (NPS)",
+          "url": "https://www.nps.gov/jeff/learn/news/gateway-arch-park-attractions.htm"
+        }
+      ]
+    },
+    {
+      "id": "old-courthouse",
+      "name": "Old Courthouse",
+      "kinds": [
+        "accessible"
+      ],
+      "photo": {
+        "src": "/images/last-adventure/gateway-arch/old-courthouse.jpg",
+        "srcWebp": "/images/last-adventure/gateway-arch/old-courthouse.webp",
+        "alt": "The white Old Courthouse with its green dome behind the Gateway Arch National Park sign",
+        "credit": "NPS Photo",
+        "position": "50% 25%"
+      },
+      "description": "Wagon trains once gathered at this domed courthouse before heading west, and in its rooms Dred and Harriet Scott sued for their freedom and Virginia Minor argued for a woman's right to vote. Reopened in 2025 after a long renovation, it offers restored courtrooms, a rotunda painted by Karl Wimar and Ettore Miragoli and a cast iron staircase that winds upward without a central support. For a family honoring someone who stood up for what was right, it is a meaningful place to stand.",
+      "plan": {
+        "distance": "Across Fourth Street from the Gateway Arch Visitor Center",
+        "difficulty": "Easy",
+        "time": "About 1 hour",
+        "accessibility": "Ramps on the east and west sides; an elevator makes the second floor wheelchair accessible (NPS)",
+        "bestTime": "Open 9 am to 5 pm daily; closed Thanksgiving, Christmas and New Year's Day. No entrance fee",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "11 N 4th St., St. Louis, across from the Gateway Arch Visitor Center. Park at Stadium East Garage (200 S Broadway).",
+        "points": [
+          {
+            "label": "Stadium East Garage",
+            "lat": 38.62364,
+            "lon": -90.19009
+          }
+        ]
+      },
+      "final": [
+        {
+          "label": "Old Courthouse",
+          "lat": 38.62573,
+          "lon": -90.18935
+        }
+      ],
+      "links": [
+        {
+          "label": "Visit the Old Courthouse",
+          "url": "https://www.nps.gov/thingstodo/visit-the-old-courthouse.htm"
+        }
+      ]
+    }
+  ]
+}

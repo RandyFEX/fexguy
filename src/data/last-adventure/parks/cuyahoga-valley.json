@@ -1,0 +1,192 @@
+{
+  "id": "cuyahoga-valley",
+  "name": "Cuyahoga Valley National Park",
+  "short": "Cuyahoga Valley",
+  "state": "Ohio",
+  "states": ["Ohio"],
+  "tagline": "Waterfalls, sandstone ledges and a quiet river valley between Cleveland and Akron.",
+  "photo": {
+    "src": "/images/last-adventure/cuyahoga-valley/park.jpg",
+    "srcWebp": "/images/last-adventure/cuyahoga-valley/park.webp",
+    "alt": "Brandywine Falls spilling over layered rock in Cuyahoga Valley National Park",
+    "credit": "Erik Drost",
+    "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandywine_Falls_at_Cuyahoga_Valley_National_Park.jpg",
+    "caption": "Brandywine Falls"
+  },
+  "intro": "Cuyahoga Valley follows the Cuyahoga River through forests, wetlands and old farm fields between Cleveland and Akron. A 60-foot waterfall, the sandstone cliffs of the Ledges, a beaver marsh and a red covered bridge all lie within a short drive of each other. It is an easy park to share with every generation, and the park issues free letters of permission for scattering away from public areas.",
+  "homepage": "https://www.nps.gov/cuva/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/cuva/planyourvisit/maps.htm" },
+    { "label": "Hiking trail details (NPS)", "url": "https://www.nps.gov/cuva/planyourvisit/hiking.htm" }
+  ],
+  "scatterAllowed": "Permitted with a permission letter",
+  "scatterSummary": "Scattering is permitted with a free letter of permission from the park, out of sight of public areas and away from water.",
+  "scatterFacts": [
+    "Letter of permission required; there is no application fee. Contact the Permit Coordinator at 440-546-5904.",
+    "Out of the sight of any public access, including roads, walkways, trails and parking areas.",
+    "At least 100 yards from any water source.",
+    "Spread over an area large enough that no single portion accumulates in one place.",
+    "No marker of any kind may be left.",
+    "Lead time is not published; contact the Permit Coordinator well ahead of your visit."
+  ],
+  "scatterLink": [
+    { "label": "Permits and reservations: scattering of cremains (NPS)", "url": "https://www.nps.gov/cuva/planyourvisit/permitsandreservations.htm" },
+    { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/cuva/contacts.htm" }
+  ],
+  "beforeYouGo": "The park is open every day of the year and no entrance pass is required. Boston Mill Visitor Center is at 6947 Riverview Road, Peninsula, reached from I-77, OH-8 or I-271. Brandywine Falls is open dawn to dusk, its boardwalk may close in icy conditions, and in nice weather its lot is generally full from 10 am to 4 pm. Every featured destination is a public area or sits by water, so the scattering itself happens at a separate spot that meets the park's conditions.",
+  "destinations": [
+    {
+      "id": "brandywine-falls",
+      "name": "Brandywine Falls",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/cuyahoga-valley/brandywine-falls.jpg",
+        "srcWebp": "/images/last-adventure/cuyahoga-valley/brandywine-falls.webp",
+        "alt": "Water fanning down the rock face of Brandywine Falls",
+        "credit": "Erik Drost",
+        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandywine_Falls_at_Cuyahoga_Valley_National_Park1.jpg"
+      },
+      "description": "Brandywine Creek drops 60 feet into a hemlock-lined gorge here, spreading over layers of shale in a pattern the park compares to a bridal veil. A boardwalk carries you from the trailhead to an upper viewing area, close enough to hear the water and feel the cool air of the gorge. Come back in autumn when the red maples turn, or in winter when ice takes over the falls. Stand together at the rail and let the steady sound of the water fill the pauses between your stories.",
+      "plan": {
+        "distance": "Short boardwalk walk from the trailhead; lower deck down about 80 steps",
+        "difficulty": "Easy",
+        "accessibility": "Boardwalk to an upper, accessible viewing area (NPS); the lower deck requires about 80 steps",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Brandywine Falls Trailhead, 8176 Brandywine Road, Sagamore Hills, 1.7 miles north of Hines Hill Road. There is no overflow parking and parking on the road is not allowed; arrive early or later in the day.",
+        "points": [{ "label": "Parking", "lat": 41.2765, "lon": -81.53956 }]
+      },
+      "trail": {
+        "name": "Brandywine Falls boardwalk",
+        "steps": [
+          "Follow the boardwalk from the trailhead to the upper, accessible viewing area.",
+          "For a head-on view, take the steps down to the lower deck (about 80 steps).",
+          "For more, the Brandywine Gorge Loop continues along the gorge and down to creek level (1.4 mi, 1 hour, 160 ft elevation change)."
+        ],
+        "notes": ["The boardwalk may be closed during icy conditions."]
+      },
+      "final": [{ "label": "Falls viewpoint", "lat": 41.27685, "lon": -81.53886 }],
+      "links": [
+        { "label": "Brandywine Falls", "url": "https://www.nps.gov/cuva/learn/historyculture/brandywine-falls.htm" },
+        { "label": "Brandywine Falls Trailhead", "url": "https://www.nps.gov/places/000/brandywine-falls-trailhead.htm" }
+      ]
+    },
+    {
+      "id": "ledges-overlook",
+      "name": "The Ledges and Ledges Overlook",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/cuyahoga-valley/ledges-overlook.jpg",
+        "srcWebp": "/images/last-adventure/cuyahoga-valley/ledges-overlook.webp",
+        "alt": "Bare sandstone at the Ledges looking out over autumn forest in the Cuyahoga Valley",
+        "credit": "Erik Drost",
+        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ledges_at_Cuyahoga_Valley_National_Park_(10544153704).jpg"
+      },
+      "description": "The trail around the Ledges hugs the foot of tall cliffs of Sharon sandstone and conglomerate, winding through hemlock forest before reaching the overlook. There the bare stone becomes a natural platform facing west over the forested Cuyahoga Valley, a favorite spot for sunsets and fall color. Picture the family settling onto the rock as the sky turns gold, sharing a thermos and the stories that belong to this day. It is a walk with enough variety to keep everyone talking.",
+      "plan": {
+        "distance": "1.8 mi loop (NPS hiking table lists the Ledges Trail at 2.2 mi)",
+        "difficulty": "Not rated by NPS; rocky with some steps, so not an Easy accessible route",
+        "time": "1.5 hours",
+        "elevation": "80 ft elevation change",
+        "accessibility": "Not accessible to visitors with mobility impairments (NPS); rocky surface with some steps",
+        "bestTime": "Sunset and fall color (NPS)",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Ledges Trailhead, 701 Truxell Road, Peninsula, on Kendall Park Road 1 mile west of Akron Cleveland Road or 2.2 miles east of Akron Peninsula Road. Extra parking at Kendall Lake and the Octagon Shelter.",
+        "points": [{ "label": "Ledges Trailhead parking", "lat": 41.22296, "lon": -81.51061 }]
+      },
+      "trail": {
+        "name": "Ledges Trail",
+        "steps": [
+          "Take the connector trail behind the trailhead bulletin board, by the gated drive to Ledges Shelter.",
+          "Join the Ledges Trail, which circles the plateau along the rock formations.",
+          "Stop at Ledges Overlook on the west side; a trail map shows a shortcut across the playfield."
+        ]
+      },
+      "final": [{ "label": "Overlook", "lat": 41.22039, "lon": -81.51217 }],
+      "links": [
+        { "label": "Ledges Overlook", "url": "https://www.nps.gov/places/000/ledges-overlook.htm" },
+        { "label": "The Ledges", "url": "https://www.nps.gov/cuva/the-ledges.htm" }
+      ]
+    },
+    {
+      "id": "beaver-marsh",
+      "name": "Beaver Marsh",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/cuyahoga-valley/beaver-marsh.jpg",
+        "srcWebp": "/images/last-adventure/cuyahoga-valley/beaver-marsh.webp",
+        "alt": "The Towpath Trail boardwalk crossing Beaver Marsh",
+        "credit": "David Fulmer",
+        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Towpath_Trail_bridge_crossing_Beaver_Marsh.jpg"
+      },
+      "description": "Where an auto salvage yard once stood, beavers returned after a 150-year absence and built the dams that now hold this 70-acre marsh. The boardwalk of the Towpath Trail crosses right through it, among lily pads and standing dead trees, and the park's exhibits help you spot the turtles and amphibians that live here. It is a gentle, level walk that suits strollers, wheelchairs and slow, talkative strolls. For a family remembering someone who loved second chances, there are few better places to stand together and listen.",
+      "plan": {
+        "distance": "0.3 mi from Ira Trailhead along the Towpath Trail (NPS distance table)",
+        "difficulty": "Easy",
+        "accessibility": "Towpath Trail is firm, flat crushed limestone and wheelchair accessible; the viewing platform is listed as wheelchair accessible (NPS)",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Ira Trailhead, 3801 Riverview Road, Peninsula. From the trailhead turn left and walk north on the Towpath Trail.",
+        "points": [
+          { "label": "Ira Trailhead parking", "lat": 41.18431, "lon": -81.583 },
+          { "label": "Ira Trailhead", "lat": 41.18417, "lon": -81.58265 }
+        ]
+      },
+      "trail": {
+        "name": "Ohio & Erie Canal Towpath Trail",
+        "steps": ["From Ira Trailhead, turn left and walk north on the Towpath Trail.", "Continue onto the boardwalk through the marsh to the viewing platform, which looks west over the wetland."]
+      },
+      "final": [{ "label": "Towpath boardwalk at Beaver Marsh", "lat": 41.18781, "lon": -81.57959 }],
+      "links": [
+        { "label": "Beaver Marsh Viewing Platform", "url": "https://www.nps.gov/places/000/beaver-marsh-viewing-platform.htm" },
+        { "label": "Ohio and Erie Canal Towpath Trail", "url": "https://www.nps.gov/cuva/planyourvisit/ohio-and-erie-canal-towpath-trail.htm" }
+      ]
+    },
+    {
+      "id": "everett-covered-bridge",
+      "name": "Everett Covered Bridge",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/cuyahoga-valley/everett-covered-bridge.jpg",
+        "srcWebp": "/images/last-adventure/cuyahoga-valley/everett-covered-bridge.webp",
+        "alt": "The red Everett Covered Bridge over Furnace Run",
+        "credit": "Niagara66",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuyahoga_Valley_National_Park_14.jpg"
+      },
+      "description": "Ohio once had more than 2,000 covered bridges, and this red one over Furnace Run is the last in Summit County. A spring storm destroyed it in 1975, and school children, neighbors and agencies raised the money to rebuild it as it was. A short, flat path leads from the trailhead to the bridge, so everyone can walk across together under its wooden roof. It is a place that already stands for a community refusing to let something it loved disappear.",
+      "plan": {
+        "distance": "Short walk from the trailhead; exact distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Firm, flat, unpaved path from the trailhead; the site is listed as wheelchair accessible, with accessible restrooms (NPS)",
+        "scattering": "With a free permission letter, away from this spot"
+      },
+      "scatterStatus": "letter",
+      "drive": {
+        "route": "Everett Covered Bridge Trailhead, 2370 Everett Road, Peninsula, 1/2 mile west of Riverview Road.",
+        "points": [{ "label": "Trailhead parking", "lat": 41.20424, "lon": -81.58076 }]
+      },
+      "trail": {
+        "name": "Path to the bridge",
+        "steps": ["Walk the path from the trailhead bulletin board past the restrooms to the bridge."],
+        "notes": ["Nearby: the 1.9-mile Furnace Run Trail, popular for spring wildflowers."]
+      },
+      "final": [{ "label": "Covered bridge", "lat": 41.20407, "lon": -81.58351 }],
+      "links": [
+        { "label": "Everett Covered Bridge Trailhead", "url": "https://www.nps.gov/places/000/everett-covered-bridge.htm" },
+        { "label": "Everett Covered Bridge", "url": "https://www.nps.gov/cuva/learn/historyculture/everett-covered-bridge.htm" }
+      ]
+    }
+  ]
+}
