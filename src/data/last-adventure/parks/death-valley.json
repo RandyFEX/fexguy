@@ -1,0 +1,222 @@
+{
+  "id": "death-valley",
+  "name": "Death Valley National Park",
+  "short": "Death Valley",
+  "state": "California and Nevada",
+  "states": ["California", "Nevada"],
+  "tagline": "Salt flats, golden badlands and wind-shaped dunes below desert mountains.",
+  "photo": {
+    "src": "/images/last-adventure/death-valley/park.jpg",
+    "srcWebp": "/images/last-adventure/death-valley/park.webp",
+    "alt": "Manly Beacon and the eroded badlands seen from Zabriskie Point, with the Panamint Range behind",
+    "credit": "Christian David",
+    "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manly_Beacon_seen_from_Zabriskie_Point,_Death_Valley_National_Park,_California.jpg",
+    "caption": "Manly Beacon from Zabriskie Point"
+  },
+  "intro": "Death Valley holds the lowest point in North America, a white salt flat lying beneath mountains that climb more than two miles above it. Golden badlands, rippled sand dunes and ridgetop overlooks make it a place of wide silence and changing light. Scattering ashes is not allowed anywhere in the park, out of respect for the Timbisha Shoshone Tribe, but it remains a remarkable place to gather and remember together.",
+  "homepage": "https://www.nps.gov/deva/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/deva/planyourvisit/maps.htm" },
+    { "label": "Golden Canyon, Gower Gulch and Badlands map (PDF)", "url": "https://www.nps.gov/deva/planyourvisit/upload/Golden-Canyon-Gower-Gulch-Badlands-Handout-Map-Online-Version-2-2.pdf" }
+  ],
+  "scatterAllowed": "Prohibited",
+  "scatterSummary": "Scattering ashes from human cremation is prohibited throughout Death Valley National Park.",
+  "scatterFacts": [
+    "Superintendent's Compendium (approved November 19, 2025), 36 CFR 2.62(b): scattering ashes from human cremation is prohibited.",
+    "The park explains that Death Valley is a culturally sensitive area and that the prohibition respects the wishes of the Timbisha Shoshone Tribe.",
+    "No permit is available for scattering in the park."
+  ],
+  "planNote": {
+    "heading": "A Farewell Without Scattering",
+    "text": "Ash scattering is not allowed anywhere in Death Valley National Park. The park prohibits it to respect the wishes of the Timbisha Shoshone Tribe. If you plan to bring your loved one's cremated remains for a visit, keep them in a secure, non-breakable container, confirm your plans with the park first, and take the remains with you when you leave. Arrange any scattering separately at a location where it is legally permitted."
+  },
+  "scatterLink": [
+    { "label": "Rules and Regulations, Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/deva/learn/management/rules-and-regulations.htm" }
+  ],
+  "beforeYouGo": "The park is open year-round, 24 hours a day. Paved entrances: CA 190 from Death Valley Junction, SR 374 from Beatty, Nevada, and CA 178 from Shoshone on the east side; CA 190 from Olancha (SR 136 from Lone Pine) and SR 178 from Trona on the west side. There is no public transportation and no cell service along most park roads. Hiking is not advised after 10 am in summer; carry plenty of water in every season. Check the park's road conditions page, since floods close roads.",
+  "destinations": [
+    {
+      "id": "badwater-basin",
+      "name": "Badwater Basin",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/death-valley/badwater-basin.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/badwater-basin.webp",
+        "alt": "Visitors walking on the white salt flats of Badwater Basin below the steep wall of the Black Mountains",
+        "credit": "Christian David",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_salt_flats_of_Badwater_Basin,_Death_Valley_National_Park,_California.jpg"
+      },
+      "description": "Walk down the boardwalk and out onto a floor of white salt, 282 feet below sea level, the lowest ground in North America. Look up at the cliffs of the Black Mountains and you can spot a sign marking sea level high above your heads. Across the valley, Telescope Peak rises more than two miles over the place you are standing. Walk a little farther together and the salt breaks into geometric polygons, a quiet, otherworldly setting for remembering someone who loved wide-open places.",
+      "plan": {
+        "distance": "1 mi round trip to the edge of the salt flat",
+        "difficulty": "Easy",
+        "time": "40 minutes",
+        "elevation": "Flat",
+        "accessibility": "ADA accessible ramp to a wooden boardwalk; the surface beyond is firm and wide (NPS)",
+        "bestTime": "Hiking not advised after 10 am in summer",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "From Furnace Creek, drive south on Badwater Road about 17 miles (30 minutes) to the paved parking lot.",
+        "points": [{ "label": "Parking", "lat": 36.22996, "lon": -116.7671 }]
+      },
+      "trail": {
+        "name": "Badwater Salt Flat",
+        "steps": [
+          "Follow the ramp down to the wooden boardwalk beside the spring-fed pool.",
+          "Continue out onto the salt flat; the best salt polygons are on a 1.5 to 2 mile round-trip walk."
+        ],
+        "notes": ["Do not attempt the walk when it is hot. Boating and flotation devices are prohibited on the seasonal lake."]
+      },
+      "final": [{ "label": "Salt flat at the boardwalk", "lat": 36.22969, "lon": -116.76792 }],
+      "links": [{ "label": "Badwater Basin", "url": "https://www.nps.gov/places/badwater-basin.htm" }]
+    },
+    {
+      "id": "zabriskie-point",
+      "name": "Zabriskie Point",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/death-valley/zabriskie-point.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/zabriskie-point.webp",
+        "alt": "Manly Beacon rising above striped badlands, seen from Zabriskie Point",
+        "credit": "Christian David",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manly_Beacon_seen_from_Zabriskie_Point,_Death_Valley_National_Park,_California.jpg"
+      },
+      "description": "From this rise, yellow and brown badlands fold away below you, carved into ridges and gullies by water that rarely falls. Manly Beacon juts up in the middle of it all, and beyond it the salt flats and the Panamint Mountains fill the horizon. Sunrise and sunset paint the hills in shifting color, so come early or stay late and watch it together. The more adventurous can wander down into the badlands while others keep the view.",
+      "plan": {
+        "distance": "0.25 mi paved walk uphill from parking; Badlands Loop 2.7 mi loop",
+        "difficulty": "Easy to the viewpoint; Moderate on the Badlands Loop",
+        "time": "Badlands Loop 1.5 to 2 hours",
+        "elevation": "Badlands Loop 535 ft",
+        "accessibility": "Listed as wheelchair accessible (NPS); the paved path climbs a hill",
+        "bestTime": "Sunrise or sunset",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Drive east on Highway 190 from the Furnace Creek Visitor Center, about 15 minutes, to the Zabriskie Point parking area.",
+        "points": [{ "label": "Parking", "lat": 36.42087, "lon": -116.8097 }]
+      },
+      "trail": {
+        "name": "Zabriskie Point path and Badlands Loop",
+        "steps": [
+          "Walk the paved path up the hill to the viewpoint.",
+          "For more, pick up the Badlands Loop at the parking lot and watch for the small signs at each major intersection."
+        ]
+      },
+      "final": [{ "label": "Viewpoint", "lat": 36.42005, "lon": -116.81229 }],
+      "links": [
+        { "label": "Zabriskie Point", "url": "https://www.nps.gov/places/zabriskie-point-scenic-viewpoint.htm" },
+        { "label": "Golden Canyon, Gower Gulch and Badlands", "url": "https://www.nps.gov/deva/planyourvisit/golden-canyon.htm" }
+      ]
+    },
+    {
+      "id": "dantes-view",
+      "name": "Dantes View",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/death-valley/dantes-view.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/dantes-view.webp",
+        "alt": "Visitors on the ridge at Dantes View above the salt flats of Badwater Basin and the Panamint Range",
+        "credit": "Christian David",
+        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_ridge_at_Dante%27s_View,_Death_Valley_National_Park,_California.jpg"
+      },
+      "description": "High on the crest of the Black Mountains, 5,575 feet above Badwater Basin, the whole valley lies open beneath you: swirling white salt flats, and the Panamint Range on the far side. A local man once told a governor this was the one view that made him stop and look. Walk a little way north along the ridge to find a quieter spot, and if you stay after dark, the stars of this Dark Sky Park come out overhead.",
+      "plan": {
+        "distance": "Roadside overlook; distance from parking not published",
+        "difficulty": "Easy",
+        "accessibility": "Listed as wheelchair accessible (NPS)",
+        "bestTime": "Sunrise, sunset, or after dark for stars",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Leave Highway 190 for Dantes View Road and follow it to its end, about a 45-minute drive from Furnace Creek.",
+        "points": [{ "label": "Parking", "lat": 36.22066, "lon": -116.72644 }]
+      },
+      "final": [{ "label": "Viewpoint", "lat": 36.22066, "lon": -116.72675 }],
+      "links": [
+        { "label": "Dantes View", "url": "https://www.nps.gov/places/dantes-view.htm" },
+        { "label": "Dante's Ridge and Mt. Perry", "url": "https://www.nps.gov/places/dantes-ridge-mt-perry.htm" }
+      ]
+    },
+    {
+      "id": "mesquite-flat-sand-dunes",
+      "name": "Mesquite Flat Sand Dunes",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/death-valley/mesquite-flat-sand-dunes.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/mesquite-flat-sand-dunes.webp",
+        "alt": "Green mesquite trees on pale sand dunes, with evening light on distant mountains",
+        "credit": "NPS/C. Augustson"
+      },
+      "description": "There is no trail here, only sand, ripples and the long shadows of morning and evening. Mesquite trees twist up through the dunes, and in spring their branches fill with green leaves and yellow flowers. Choose your own way toward the tallest dune, stopping whenever someone wants to sit and look back at the mountains. After sunset the dunes become one of the park's darkest places for watching the stars come out together.",
+      "plan": {
+        "distance": "2 mi round trip to the tallest dune",
+        "difficulty": "Easy/Moderate",
+        "time": "1.5 hours",
+        "elevation": "185 ft",
+        "accessibility": "No official trail; walking on loose sand",
+        "bestTime": "Sunrise or sunset; hiking not advised after 10 am in summer",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "Highway 190 to the paved dunes parking lot just east of Stovepipe Wells Village, about 30 minutes west of Furnace Creek.",
+        "points": [{ "label": "Parking", "lat": 36.60619, "lon": -117.11451 }]
+      },
+      "trail": {
+        "name": "Cross-country walk to the tallest dune",
+        "steps": ["From the parking lot, choose your own route across the dunes; the summit of the high dune is about 1 mile each way."],
+        "notes": ["Watch your step and do not disturb animal burrows. Pets are not allowed on the dunes."]
+      },
+      "final": [{ "label": "Dunes viewpoint", "lat": 36.60631, "lon": -117.1154 }],
+      "links": [{ "label": "Mesquite Flat Sand Dunes", "url": "https://www.nps.gov/places/mesquite-flat-sand-dunes.htm" }]
+    },
+    {
+      "id": "golden-canyon",
+      "name": "Golden Canyon to Red Cathedral",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/death-valley/golden-canyon.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/golden-canyon.webp",
+        "alt": "A gravel wash winds between bare yellow hills in Golden Canyon under dark clouds",
+        "credit": "NPS/E. Letterman"
+      },
+      "description": "Step into Golden Canyon and its walls rise around you in shades of yellow, with ripples left by ancient water preserved in the stone. The path climbs gently up the canyon floor, past colorful side canyons and the remains of an old road taken by a flash flood. At the end waits Red Cathedral, a natural amphitheater of tall, fluted red walls. It is a walk for talking along the way and for falling quiet when you arrive.",
+      "plan": {
+        "distance": "3 mi round trip to Red Cathedral",
+        "difficulty": "Moderate",
+        "time": "1.5 to 2 hours",
+        "elevation": "577 ft",
+        "accessibility": "Rocky canyon route with minor scrambling over ledges about 4 ft high and under low overhangs",
+        "bestTime": "Hiking not advised after 10 am in summer",
+        "scattering": "Prohibited throughout the park. See below."
+      },
+      "scatterStatus": "prohibited",
+      "drive": {
+        "route": "From Highway 190, drive 2 miles south on Badwater Road to the paved Golden Canyon Trailhead lot.",
+        "points": [{ "label": "Golden Canyon Trailhead", "lat": 36.42076, "lon": -116.84656 }]
+      },
+      "trail": {
+        "name": "Golden Canyon Trail to Red Cathedral",
+        "steps": [
+          "Walk gradually uphill through the rocky corridor of Golden Canyon.",
+          "Most hikers turn around at the Red Cathedral junction; continue another 0.5 mi for Red Cathedral.",
+          "Return the same way, or follow signs toward Zabriskie Point and Gower Gulch for the 7.8 mi circuit (Strenuous)."
+        ],
+        "notes": ["Take the official map with you. No restroom along the trail."]
+      },
+      "final": [{ "label": "Red Cathedral", "lat": 36.42757, "lon": -116.82501 }],
+      "links": [
+        { "label": "Golden Canyon", "url": "https://www.nps.gov/places/golden-canyon.htm" },
+        { "label": "Golden Canyon, Gower Gulch and Badlands", "url": "https://www.nps.gov/deva/planyourvisit/golden-canyon.htm" }
+      ]
+    }
+  ]
+}
