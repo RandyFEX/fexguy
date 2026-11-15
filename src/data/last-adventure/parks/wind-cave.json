@@ -1,0 +1,172 @@
+{
+  "id": "wind-cave",
+  "name": "Wind Cave National Park",
+  "short": "Wind Cave",
+  "state": "South Dakota",
+  "states": ["South Dakota"],
+  "tagline": "Rolling prairie and pine hills above one of the world's longest caves.",
+  "photo": {
+    "src": "/images/last-adventure/wind-cave/park.jpg",
+    "srcWebp": "/images/last-adventure/wind-cave/park.webp",
+    "alt": "A herd of bison crosses a grassy prairie hillside past a lone pine tree",
+    "credit": "NPS Photo",
+    "license": { "name": "Public domain", "url": "https://creativecommons.org/publicdomain/mark/1.0/" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wind_Cave_National_Park_WICA2348.jpg",
+    "caption": "Bison on the Wind Cave prairie"
+  },
+  "intro": "Wind Cave protects two worlds at once: a vast, maze-like cave known for its delicate boxwork, and the mixed-grass prairie and ponderosa pine hills above it, where bison roam freely. A family can stand together at the cave's small natural entrance, walk out into the grassland, or climb to the park's highest point for a view that reaches toward the Badlands.",
+  "homepage": "https://www.nps.gov/wica/",
+  "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/wica/planyourvisit/maps.htm" }],
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "No permit is required when the conditions in the Superintendent's Compendium are met, including scattering at least 100 yards from any trail, road, developed facility or body of water.",
+  "scatterFacts": [
+    "The remains must have been cremated and pulverized.",
+    "On the ground: at least 100 yards from any trail, road, developed facility or body of water.",
+    "From the air: at least 2,000 feet above the ground, and not over developed areas, facilities or bodies of water.",
+    "Plans that do not meet these conditions need a permit. Contact the park: (605) 745-4600.",
+    "Wind Cave is an open hike park, so off-trail walking to reach a suitable spot is allowed. Stay at least 25 yards from all wildlife, and farther from bison."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/wica/learn/management/superintendent-s-compendium.htm" }
+  ],
+  "beforeYouGo": "The park's surface is open all day, every day; visitor center hours change through the year. The visitor center is 11 miles north of Hot Springs off U.S. Highway 385, about 1/2 mile west of the highway. The park warns that many GPS units place it wrongly on South Dakota Highway 87; use the published coordinates N43 33' 22\" W103 28' 38\". All cave access is by ranger-guided tour from the visitor center (tickets required; reservations on Recreation.gov for some tours). Winter storms occasionally close park roads; call (605) 745-4600 for conditions.",
+  "destinations": [
+    {
+      "id": "natural-entrance",
+      "name": "Natural Entrance and Prairie Vista Trail",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/wind-cave/natural-entrance.jpg",
+        "srcWebp": "/images/last-adventure/wind-cave/natural-entrance.webp",
+        "alt": "A small hole in a stone depression next to a large sign and short rock wall",
+        "credit": "NPS Photo / Lennie Ramacher"
+      },
+      "description": "Wind Cave runs for miles beneath the prairie, yet its best-known natural opening is only about ten inches wide. Stand beside it and you may feel the air the cave was named for. Many Native people regard this as a deeply spiritual place, and the Lakota consider it their nation's birthplace, so it invites a quiet, reflective visit. From here the Prairie Vista Trail wanders into open grassland, an easy loop where a family can walk slowly and talk.",
+      "plan": {
+        "distance": "About 225 yards from the visitor center to the natural entrance; Prairie Vista loop about 1 mi round trip",
+        "difficulty": "Easy",
+        "time": "10 to 20 minutes at the entrance",
+        "accessibility": "Ramp and paved sidewalk from the visitor center during business hours; after hours a wide, fairly level gravel path from the picnic area, about 150 yards (NPS)",
+        "bestTime": "Year-round",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "U.S. Highway 385, 11 miles north of Hot Springs, then about 1/2 mile west to the visitor center. After hours, park at the picnic area about 0.15 mile from the visitor center.",
+        "points": [
+          { "label": "Visitor Center", "lat": 43.55611, "lon": -103.47722, "source": "nps" },
+          { "label": "Visitor center parking", "lat": 43.55613, "lon": -103.47853 }
+        ]
+      },
+      "trail": {
+        "name": "Prairie Vista Nature Trail",
+        "steps": [
+          "From behind the visitor center, follow the ramp and paved sidewalk to the natural entrance.",
+          "Continue on the Prairie Vista loop into the grassland, with waysides along the way, and return to the visitor center or picnic area."
+        ],
+        "notes": [
+          "During business hours, tour groups may be gathered at the natural entrance.",
+          "No drinking water on the trail. Leashed pets are allowed on this trail."
+        ]
+      },
+      "final": [{ "label": "Natural entrance", "lat": 43.55805, "lon": -103.47955 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed at trails or developed facilities. Without a permit, it is allowed at least 100 yards from any trail, road, developed facility or body of water."
+      },
+      "links": [
+        { "label": "Visit Wind Cave's natural entrance", "url": "https://www.nps.gov/thingstodo/wind-cave-natural-entrance.htm" },
+        { "label": "Prairie Vista Nature Trail", "url": "https://www.nps.gov/places/prairie-vista-nature-trail.htm" },
+        { "label": "Cave tours", "url": "https://www.nps.gov/wica/planyourvisit/guidedtours.htm" }
+      ]
+    },
+    {
+      "id": "rankin-ridge",
+      "name": "Rankin Ridge",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/wind-cave/rankin-ridge.jpg",
+        "srcWebp": "/images/last-adventure/wind-cave/rankin-ridge.webp",
+        "alt": "A tall metal fire tower standing above an open pine forest on a steep grassy hillside",
+        "credit": "NPS Photo",
+        "license": { "name": "Public domain", "url": "https://creativecommons.org/publicdomain/mark/1.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rankin_Ridge_Fire_Tower_(02422629-155d-4519-3e70-a1ef57867242).jpg"
+      },
+      "description": "This short loop climbs through ponderosa pines to the highest point in the park, where a historic fire tower keeps watch over the hills. On a clear day the view runs all the way to the Badlands and Buffalo Gap. It is short enough for most families, yet it feels like reaching a summit together. Find a place along the eastern edge, look out across the prairie your loved one would have admired, and give the moment the time it deserves.",
+      "plan": {
+        "distance": "1 mi round trip loop",
+        "difficulty": "Easy",
+        "time": "About 1 hour",
+        "elevation": "250 ft",
+        "accessibility": "Unpaved nature trail; RVs and trailers are not permitted at the trailhead",
+        "scattering": "Not at this spot (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "Follow South Dakota Highway 87 toward Custer State Park and look for signs to the Rankin Ridge Nature Trail. Hikers may also park at a nearby pulloff and walk about 1,200 feet to the trailhead.",
+        "points": [{ "label": "Trailhead parking", "lat": 43.62278, "lon": -103.48606 }]
+      },
+      "trail": {
+        "name": "Rankin Ridge Nature Trail (loop)",
+        "steps": [
+          "From the trailhead, follow the loop up through the ponderosa pines toward the highest point in the park.",
+          "Look for the view toward the Badlands from the trail's eastern edge, then complete the loop."
+        ],
+        "notes": [
+          "The fire tower is closed to the public; climbing it is not permitted.",
+          "No pets and no drinking water on this trail. A self-guided tour is in the NPS app."
+        ]
+      },
+      "final": [{ "label": "Rankin Ridge Nature Trail", "lat": 43.6261, "lon": -103.48342 }],
+      "scatterNote": {
+        "text": "Scattering is not allowed on the trail. Without a permit, it is allowed at least 100 yards from any trail, road, developed facility or body of water; off-trail hiking is permitted in the park."
+      },
+      "links": [
+        { "label": "Rankin Ridge Nature Trail", "url": "https://www.nps.gov/places/rankin-ridge-nature-trail.htm" },
+        { "label": "Hiking at Wind Cave", "url": "https://www.nps.gov/wica/planyourvisit/hiking.htm" }
+      ]
+    },
+    {
+      "id": "garden-of-eden-tour",
+      "name": "Garden of Eden Cave Tour",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/wind-cave/garden-of-eden-tour.jpg",
+        "srcWebp": "/images/last-adventure/wind-cave/garden-of-eden-tour.webp",
+        "alt": "Thin calcite fins of boxwork on a cave ceiling in Wind Cave",
+        "credit": "NPS Photo",
+        "license": { "name": "Public domain", "url": "https://creativecommons.org/publicdomain/mark/1.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cave_Boxwork-Wind_Cave.JPG"
+      },
+      "description": "Below the prairie lies a different kind of wonder. On the park's least strenuous cave tour, a ranger leads your family by elevator into Wind Cave, past samples of its boxwork, a honeycomb of thin calcite fins on the ceiling, along with flowstone and cave popcorn. The air stays at 54 degrees all year and the passages are dimly lit, so voices soften naturally. Walking side by side through a place so few people ever see makes a quiet, unusual way to honor someone you love.",
+      "plan": {
+        "distance": "1/4 mile",
+        "difficulty": "Moderate",
+        "time": "1 hour",
+        "accessibility": "150 stairs that can be steep, slippery and dimly lit; bending and stooping required. A 30-minute Accessibility Tour (100 feet, no stairs, by elevator) can be arranged by calling (605) 745-4600",
+        "bestTime": "Year-round; reservations recommended March through October",
+        "scattering": "Not in the cave (see below)"
+      },
+      "scatterStatus": "not-here",
+      "drive": {
+        "route": "U.S. Highway 385, 11 miles north of Hot Springs, then about 1/2 mile west to the visitor center, where all cave tours begin. Buy tickets there or reserve on Recreation.gov.",
+        "points": [{ "label": "Visitor Center", "lat": 43.55611, "lon": -103.47722, "source": "nps" }]
+      },
+      "trail": {
+        "name": "Garden of Eden Tour (ranger-guided)",
+        "steps": [
+          "Check in at the visitor center for your tour time.",
+          "Enter and leave the cave by elevator with your ranger, about 1/4 mile and 150 steps along the route."
+        ],
+        "notes": [
+          "No food, drinks, bags of any kind, walking sticks or baby back carriers in the cave. Bring a jacket; the cave stays at 54 degrees F.",
+          "Not recommended for anyone with claustrophobia, heart or respiratory conditions, recent surgery, knee or back problems or other physical limitations. No restrooms in the cave."
+        ]
+      },
+      "final": [{ "label": "Tour start: Visitor Center", "lat": 43.55611, "lon": -103.47722, "source": "nps" }],
+      "scatterNote": {
+        "text": "Scattering must be at least 100 yards from any trail, road, developed facility or body of water, so the cave tour routes do not qualify. Plan the scattering out on the prairie, away from trails and roads."
+      },
+      "links": [{ "label": "Cave tours", "url": "https://www.nps.gov/wica/planyourvisit/guidedtours.htm" }]
+    }
+  ]
+}

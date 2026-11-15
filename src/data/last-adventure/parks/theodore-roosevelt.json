@@ -1,0 +1,171 @@
+{
+  "id": "theodore-roosevelt",
+  "name": "Theodore Roosevelt National Park",
+  "short": "Theodore Roosevelt",
+  "state": "North Dakota",
+  "states": ["North Dakota"],
+  "tagline": "Painted badlands and the winding Little Missouri River.",
+  "photo": {
+    "src": "/images/last-adventure/theodore-roosevelt/park.jpg",
+    "srcWebp": "/images/last-adventure/theodore-roosevelt/park.webp",
+    "alt": "A river meanders through cottonwood trees and steep buttes",
+    "credit": "NPS/L. Thomas",
+    "caption": "The Little Missouri River from Oxbow Overlook"
+  },
+  "intro": "Theodore Roosevelt called these North Dakota badlands \"a land of vast, silent spaces,\" and the description still fits. Layered buttes, wind-carved canyons and the cottonwood-lined Little Missouri River spread across two main units, each with a scenic drive, short trails and overlooks. Bison often graze within sight of the road, and evenings here can end in some of the quietest sunsets on the plains.",
+  "homepage": "https://www.nps.gov/thro/",
+  "map": [
+    { "label": "Official park maps", "url": "https://www.nps.gov/thro/planyourvisit/maps.htm" },
+    { "label": "Hiking and trail information", "url": "https://www.nps.gov/thro/planyourvisit/hiking-and-trail-information.htm" }
+  ],
+  "scatterAllowed": "Unconfirmed",
+  "scatterSummary": "The park does not publish a rule on scattering ashes. Contact the park before you plan any scattering.",
+  "scatterFacts": [
+    "The Superintendent's Compendium does not address the scattering of human ashes (36 CFR 2.62), and no park page on scattering was found.",
+    "The compendium directs permit questions and applications to the Chief Ranger, Theodore Roosevelt National Park, PO Box 7, Medora, ND 58645-0007. Park phone: 701-623-4466.",
+    "Ceremonies and similar events require a permit from the superintendent under the compendium's list of permitted activities (36 CFR 2.50).",
+    "Do not assume scattering is allowed until the park confirms it in writing."
+  ],
+  "scatterLink": [
+    { "label": "Superintendent's Compendium (NPS)", "url": "https://www.nps.gov/thro/learn/management/superintendent-s-compendium.htm" },
+    { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/thro/contacts.htm" }
+  ],
+  "beforeYouGo": "The park is open 24 hours a day, year-round. The South Unit entrance is in Medora, off Interstate 94 at exits 24 and 27; Painted Canyon Visitor Center is 7 miles east of Medora at exit 32 and is not a park entrance. The North Unit entrance is on U.S. Highway 85, about 14 miles south of Watford City and 50 miles north of Belfield (I-94 exit 42). The North Unit operates on Central time and the South Unit on Mountain time. Portions of the South Unit Scenic Loop Drive and the North Unit Scenic Road may close in winter for snow and ice; check road status before you go.",
+  "destinations": [
+    {
+      "id": "painted-canyon-overlook",
+      "name": "Painted Canyon Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/theodore-roosevelt/painted-canyon-overlook.jpg",
+        "srcWebp": "/images/last-adventure/theodore-roosevelt/painted-canyon-overlook.webp",
+        "alt": "Layered badlands buttes and green valleys stretch to the horizon from the Painted Canyon overlook",
+        "credit": "Joseph H. Hartman",
+        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Painted_Canyon,_Theodore_Roosevelt_National_Park_(GeoDIL_number_-_1058).jpg"
+      },
+      "description": "For many travelers on Interstate 94, Painted Canyon is the first look at the badlands, and it is a striking one. Buttes striped with rock layers of many colors step down into a wide canyon, with Buck Hill rising across it and a trail threading through the bottom. A sidewalk follows the rim behind the visitor center, so the whole family can stroll along the edge at an easy pace. Bison often wander nearby, adding to the feeling of a place still wild.",
+      "plan": {
+        "distance": "Sidewalk along the rim behind the visitor center; distance not published",
+        "difficulty": "Easy",
+        "accessibility": "Sidewalk along the rim (NPS); detailed accessibility not published",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Interstate 94 exit 32, 7 miles east of Medora, to the Painted Canyon Visitor Center and rest area.",
+        "points": [
+          { "label": "Painted Canyon Visitor Center", "lat": 46.89545, "lon": -103.38158 },
+          { "label": "Parking", "lat": 46.89495, "lon": -103.38174 }
+        ]
+      },
+      "final": [{ "label": "Viewpoint", "lat": 46.89584, "lon": -103.38151 }],
+      "links": [{ "label": "Painted Canyon Overlook", "url": "https://www.nps.gov/places/painted-canyon-overlook.htm" }]
+    },
+    {
+      "id": "boicourt-overlook",
+      "name": "Boicourt Overlook",
+      "kinds": ["accessible"],
+      "photo": {
+        "src": "/images/last-adventure/theodore-roosevelt/boicourt-overlook.jpg",
+        "srcWebp": "/images/last-adventure/theodore-roosevelt/boicourt-overlook.webp",
+        "alt": "A view across the badlands, with buttes visible on the horizon, and trees and valleys below",
+        "credit": "NPS Photo/L.Thomas"
+      },
+      "description": "At Boicourt Overlook the broken, rolling badlands stretch toward the horizon, and the larger buttes beyond the park boundary stand in silhouette. It is easy to see why Roosevelt spoke of vast, silent spaces. Rangers count this among their favorite places to watch the sun go down, so time your visit for evening, bring a blanket, and let the colors fade over the landscape while you share the memories that matter most.",
+      "plan": {
+        "distance": "0.2 mi round trip",
+        "difficulty": "Easy",
+        "time": "15 minutes",
+        "accessibility": "Wheelchair accessible (NPS); nature trail with a slight grade",
+        "bestTime": "Sunset",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Enter the South Unit at Medora (I-94 exits 24 or 27) and follow the Scenic Loop Drive to the Boicourt Overlook parking area.",
+        "points": [{ "label": "Parking", "lat": 46.95937, "lon": -103.40184 }]
+      },
+      "trail": {
+        "name": "Boicourt Overlook Trail",
+        "steps": ["Follow the short nature trail from the parking area to the overlook, then return the same way."]
+      },
+      "final": [{ "label": "Overlook", "lat": 46.95824, "lon": -103.4045 }],
+      "links": [{ "label": "Boicourt Overlook", "url": "https://www.nps.gov/places/boicourt-overlook.htm" }]
+    },
+    {
+      "id": "wind-canyon",
+      "name": "Wind Canyon",
+      "kinds": ["extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/theodore-roosevelt/wind-canyon.jpg",
+        "srcWebp": "/images/last-adventure/theodore-roosevelt/wind-canyon.webp",
+        "alt": "A view down Wind Canyon toward the river, with green trees lining a grassy trail at the bottom",
+        "credit": "NPS Photo"
+      },
+      "description": "Wind rushes through this small canyon on its way across the Little Missouri River, and over the years it has smoothed the walls into soft curves and hoodoos, with hollows where great horned owls nest. A short trail climbs along the canyon edge to what the park calls one of the best views in the South Unit: river, badlands and sky in one unbroken sweep. Rangers favor it at sunset. Stand together at the top and let the wind carry your words.",
+      "plan": {
+        "distance": "0.4 mi round trip",
+        "difficulty": "Easy",
+        "time": "20 minutes",
+        "accessibility": "Unpaved nature trail that climbs; wheelchair access not published",
+        "bestTime": "Sunset",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "Enter the South Unit at Medora (I-94 exits 24 or 27) and follow the Scenic Loop Drive to the Wind Canyon parking area.",
+        "points": [{ "label": "Parking", "lat": 46.98881, "lon": -103.48533 }]
+      },
+      "trail": {
+        "name": "Wind Canyon Trail",
+        "steps": ["From the parking area, climb the trail along the canyon edge to the view of the Little Missouri River, then return the same way."]
+      },
+      "final": [{ "label": "Wind Canyon Trail", "lat": 46.98968, "lon": -103.48834 }],
+      "links": [
+        { "label": "Wind Canyon", "url": "https://www.nps.gov/places/wind-canyon.htm" },
+        { "label": "Hiking and trail information", "url": "https://www.nps.gov/thro/planyourvisit/hiking-and-trail-information.htm" }
+      ]
+    },
+    {
+      "id": "oxbow-overlook",
+      "name": "Oxbow Overlook and Sperati Point",
+      "kinds": ["accessible", "extraordinary"],
+      "photo": {
+        "src": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.jpg",
+        "srcWebp": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.webp",
+        "alt": "A river meanders through cottonwood trees and steep buttes",
+        "credit": "NPS/L. Thomas"
+      },
+      "description": "The North Unit's scenic drive ends here, high above a broad bend of the Little Missouri River framed by tall cottonwoods and steep buttes. A short sidewalk lets everyone take in the view together. Those who want more can follow a gentle prairie trail to Sperati Point, a quiet rise with sweeping badlands views and a rich mix of grasses and wildflowers underfoot. Far from the crowds, it is a peaceful place to remember someone who loved open country.",
+      "plan": {
+        "distance": "Short sidewalk at the overlook; Sperati Point 1.5 mi (hiking guide) or 2.4 mi (day hikes page) round trip",
+        "difficulty": "Easy",
+        "time": "About 1 hour to Sperati Point",
+        "accessibility": "Overlook sidewalk wheelchair accessible (NPS); Sperati Point trail is a narrow path over gentle terrain",
+        "scattering": "Rules not published. Check with the park."
+      },
+      "scatterStatus": "unconfirmed",
+      "drive": {
+        "route": "U.S. Highway 85 to the North Unit entrance, then the 14-mile Scenic Drive to Oxbow Overlook at the road's end (about 28 miles round trip; mostly paved with one gravel stretch).",
+        "points": [{ "label": "Oxbow Overlook parking", "lat": 47.60345, "lon": -103.44203 }]
+      },
+      "trail": {
+        "name": "South Achenbach Trail to Sperati Point",
+        "steps": [
+          "Enjoy the view from the accessible sidewalk at Oxbow Overlook.",
+          "For more, start at Oxbow Overlook and follow the South Achenbach Trail across the prairie to Sperati Point, then return the same way."
+        ],
+        "notes": ["NPS sources differ on the round-trip distance to Sperati Point: 1.5 mi in the hiking guide, 2.4 mi on the North Unit day hikes page."]
+      },
+      "final": [
+        { "label": "Oxbow Overlook", "lat": 47.60282, "lon": -103.44165 },
+        { "label": "Sperati Point", "lat": 47.59418, "lon": -103.44825 }
+      ],
+      "links": [
+        { "label": "Oxbow Overlook", "url": "https://www.nps.gov/places/oxbow-overlook.htm" },
+        { "label": "North Unit day hikes", "url": "https://www.nps.gov/thingstodo/north-unit-day-hikes.htm" }
+      ]
+    }
+  ]
+}
