@@ -14,6 +14,22 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
 const hero = parks.find((p) => p.id === 'yosemite')!.photo;
 const credit = (ph: Photo) => ph.credit;
+// One mapping for the written NPS classifications: Easy 1, Moderate 3,
+// Difficult 4, Strenuous and very strenuous 5. A destination listing two
+// classifications (for example by boat and on foot) shows the range.
+const LEVELS: Array<[RegExp, number]> = [
+  [/very strenuous|strenuous/i, 5],
+  [/difficult/i, 4],
+  [/moderate/i, 3],
+  [/easy/i, 1],
+];
+const difficultyRange = (text: string): [number, number] => {
+  const found = text.split(/[;,]| to /i).flatMap((part) => {
+    const hit = LEVELS.find(([re]) => re.test(part));
+    return hit ? [hit[1]] : [];
+  });
+  return found.length ? [Math.min(...found), Math.max(...found)] : [1, 1];
+};
 ---
 
 <BaseLayout
@@ -188,7 +204,26 @@ const credit = (ph: Photo) => ph.credit;
                     <h4>Plan Your Adventure</h4>
                     <dl class="ola-plan__grid">
                       <div><dt>Distance</dt><dd>{d.plan.distance}</dd></div>
-                      <div><dt>Difficulty</dt><dd>{d.plan.difficulty}</dd></div>
+                      <div>
+                        <dt>Difficulty</dt>
+                        <dd>
+                          {d.plan.difficulty}
+                          {(() => {
+                            const [lo, hi] = difficultyRange(d.plan.difficulty);
+                            return (
+                              <span class="ola-diff" role="img" aria-label={lo === hi ? `Difficulty ${lo} of 5, where 1 is Easy and 5 is Strenuous` : `Difficulty ${lo} to ${hi} of 5, where 1 is Easy and 5 is Strenuous`}>
+                                <span class="ola-diff__end" aria-hidden="true">Easy</span>
+                                <span class="ola-diff__bar" aria-hidden="true">
+                                  {[1, 2, 3, 4, 5].map((n) => (
+                                    <span class:list={['ola-diff__seg', { 'is-on': n <= lo, 'is-range': n > lo && n <= hi }]} />
+                                  ))}
+                                </span>
+                                <span class="ola-diff__end" aria-hidden="true">Strenuous</span>
+                              </span>
+                            );
+                          })()}
+                        </dd>
+                      </div>
                       {d.plan.time && <div><dt>Hiking time</dt><dd>{d.plan.time}</dd></div>}
                       {d.plan.elevation && <div><dt>Elevation gain</dt><dd>{d.plan.elevation}</dd></div>}
                       <div class="ola-plan__wide"><dt>Accessibility</dt><dd>{d.plan.accessibility}</dd></div>
@@ -208,7 +243,6 @@ const credit = (ph: Photo) => ph.credit;
                   <div class="ola-route">
                     <section>
                       <h4>Getting There</h4>
-                      <p>{d.drive.route}</p>
                       <ul class="ola-gps">
                         {d.drive.points.map((pt) => (
                           <li>
@@ -220,16 +254,10 @@ const credit = (ph: Photo) => ph.credit;
                           </li>
                         ))}
                       </ul>
+                      <p>{d.drive.route}</p>
                     </section>
                     <section>
                       <h4>{d.trail ? 'On the Trail' : 'Your Destination'}</h4>
-                      {d.trail && (
-                        <>
-                          <p class="ola-route__trail">{d.trail.name}</p>
-                          <ol class="ola-steps">{d.trail.steps.map((st) => <li>{st}</li>)}</ol>
-                          {d.trail.notes?.map((n) => <p class="ola-note">{n}</p>)}
-                        </>
-                      )}
                       <ul class="ola-gps">
                         {d.final.map((pt) => (
                           <li>
@@ -241,6 +269,13 @@ const credit = (ph: Photo) => ph.credit;
                           </li>
                         ))}
                       </ul>
+                      {d.trail && (
+                        <>
+                          <p class="ola-route__trail">{d.trail.name}</p>
+                          <ol class="ola-steps">{d.trail.steps.map((st) => <li>{st}</li>)}</ol>
+                          {d.trail.notes?.map((n) => <p class="ola-note">{n}</p>)}
+                        </>
+                      )}
                     </section>
                   </div>
 
@@ -772,9 +807,11 @@ const credit = (ph: Photo) => ph.credit;
   }
   .ola-dest__head {
     margin-top: var(--space-4);
+    text-align: center;
   }
   .ola-dest__park {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-2);
@@ -793,7 +830,7 @@ const credit = (ph: Photo) => ph.credit;
   .ola-dest__desc {
     font-size: 1.125rem;
     line-height: 1.7;
-    max-width: 52rem;
+    text-align: left;
   }
   .ola-tag {
     font-size: 0.6875rem;
@@ -838,6 +875,14 @@ const credit = (ph: Photo) => ph.credit;
     background: var(--ola-sand);
     padding: var(--space-3) var(--space-4);
   }
+  .ola-plan h4 {
+    text-align: center;
+    font-size: 1.375rem;
+    margin-bottom: var(--space-4);
+  }
+  .ola-plan__grid > div {
+    text-align: center;
+  }
   .ola-plan dt {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -874,6 +919,35 @@ const credit = (ph: Photo) => ph.credit;
   .ola-scatternote p {
     line-height: 1.6;
   }
+  .ola-diff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+  .ola-diff__bar {
+    display: inline-flex;
+    gap: 3px;
+  }
+  .ola-diff__seg {
+    width: 1.5rem;
+    height: 0.5rem;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #b8b3a7;
+  }
+  .ola-diff__seg.is-on {
+    background: #173f35;
+    border-color: #173f35;
+  }
+  .ola-diff__seg.is-range {
+    border-color: #173f35;
+    background: repeating-linear-gradient(135deg, #173f35 0 2px, #fff 2px 5px);
+  }
   .ola-route__trail {
     font-weight: 700;
     margin: 0 0 var(--space-2);
@@ -902,7 +976,7 @@ const credit = (ph: Photo) => ph.credit;
   .ola-gps {
     list-style: none;
     padding: 0;
-    margin: var(--space-3) 0 0;
+    margin: 0 0 var(--space-3);
     display: grid;
     gap: var(--space-2);
   }
@@ -914,13 +988,13 @@ const credit = (ph: Photo) => ph.credit;
     min-height: var(--tap-target);
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius);
-    background: #000;
+    background: #173f35;
     color: #fff;
     text-decoration: none;
     line-height: 1.3;
   }
   .ola-gps__btn:hover {
-    background: #262626;
+    background: #0e2d26;
     color: #fff;
   }
   .ola-gps__btn:focus-visible {
