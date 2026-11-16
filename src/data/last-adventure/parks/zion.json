@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/zion/park.jpg",
     "srcWebp": "/images/last-adventure/zion/park.webp",
-    "alt": "The sun sets behind large red and white towers of sandstone",
-    "credit": "NPS Photo / Jesse Nelson",
-    "caption": "The Towers of the Virgin from the Human History Museum"
+    "alt": "a slick rock plateau landscape dotted with sparse trees with high sheer rock cliffs in the background",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1214742a-9b8a-4e98-84d0-ed769a97fb10",
+    "caption": "Slick Rock High Plateau"
   },
   "intro": "In Zion Canyon, the Virgin River runs between sandstone cliffs that rise in red and cream-white walls toward a narrow ribbon of sky. Easy riverside paths and a free shuttle make the canyon floor open to almost everyone, while the trail to Angels Landing climbs to one of the most famous viewpoints in the West. Zion also names specific places where families may scatter ashes with a permit, including two of its best-loved trails.",
   "homepage": "https://www.nps.gov/zion/",
@@ -37,10 +38,9 @@
       "photo": {
         "src": "/images/last-adventure/zion/parus-trail.jpg",
         "srcWebp": "/images/last-adventure/zion/parus-trail.webp",
-        "alt": "The paved Pa'rus Trail curves through desert shrubs toward red sandstone peaks under a blue sky",
-        "credit": "Vulturesong",
-        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_004_-_Pa%27rus_Trail.jpg"
+        "alt": "Two hikers standing on a snow covered trail admiring their surrounding",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f27a0d96-b8a2-4855-9029-154272a8bef2"
       },
       "description": "Pa'rus is Paiute for bubbling water, and this paved path follows the Virgin River through open meadows where deer often graze, with some of the best views of the Watchman along the way. Wheelchairs, strollers and even the family dog on a leash are welcome, so no one has to stay behind. In the evening it is a lovely place to watch the sunset and the first stars. Beside the trail lies one of the park's approved scattering areas, so a slow family walk can end in a quiet goodbye.",
       "plan": {
@@ -85,12 +85,7 @@
       "id": "riverside-walk",
       "name": "Riverside Walk",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/zion/riverside-walk.jpg",
-        "srcWebp": "/images/last-adventure/zion/riverside-walk.webp",
-        "alt": "Two hikers in blue jackets walk along a sandy trail lined with a wooden rail and fall foliage",
-        "credit": "NPS/Abi Farish"
-      },
+      "photo": null,
       "description": "At the northern end of Zion Canyon, the Riverside Walk follows the Virgin River as the sheer sandstone walls narrow in around you. The paved path ends where the river itself becomes the trail into The Narrows, and trailside exhibits tell how water carved the canyon. Walk it slowly together, listen to the water, and pause at the end of the pavement before turning back. Some places make it easier to talk about the people we miss, and this is one of them.",
       "plan": {
         "distance": "1 mi one way",
@@ -130,8 +125,9 @@
       "photo": {
         "src": "/images/last-adventure/zion/watchman-trail.jpg",
         "srcWebp": "/images/last-adventure/zion/watchman-trail.webp",
-        "alt": "View from a sandy overlook of a triangular sandstone mountain with green foliage on the foothills",
-        "credit": "NPS/Abi Farish"
+        "alt": "A tall sandstone peak rises above the river flowing through the canyon",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/98b15eba-155d-451f-6776-104114f96789"
       },
       "description": "The Watchman is the great triangular peak that towers over the visitor center and South Entrance, and this trail climbs from the river to a magnificent viewpoint facing it. From up here you see the Watchman, the Temples and Towers, lower Zion Canyon and the town of Springdale, with a short loop at the top to wander together. It is one of the few places the park names for scattering, and a fitting place to say goodbye with the whole canyon in view.",
       "plan": {
@@ -167,12 +163,7 @@
       "id": "canyon-overlook",
       "name": "Canyon Overlook",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/zion/canyon-overlook.jpg",
-        "srcWebp": "/images/last-adventure/zion/canyon-overlook.webp",
-        "alt": "Red sandstone slickrock dotted with green foliage with mountains in the background",
-        "credit": "NPS/Daren Reehl"
-      },
+      "photo": null,
       "description": "Just east of the Zion-Mt. Carmel Tunnel, sandstone steps with a metal handrail lead over rocky ground above a dark slot canyon. Near the end the view opens onto red and cream slickrock, and the trail finishes at a fenced cliff edge facing main Zion Canyon and the Towers of the Virgin. Watch for bighorn sheep on the way. It is a fine short outing for a family that can manage steps and uneven rock, and a good place to pass around a photograph and say a few words.",
       "plan": {
         "distance": "1 mi round trip",
@@ -204,8 +195,9 @@
       "photo": {
         "src": "/images/last-adventure/zion/angels-landing.jpg",
         "srcWebp": "/images/last-adventure/zion/angels-landing.webp",
-        "alt": "Hikers on the rim of the trail below the towering fin of Angels Landing",
-        "credit": "NPS Photo"
+        "alt": "a view looking over a valley with sheer red rock cliffs on either side",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e36a52c0-545f-4ff5-b87c-29847b9e2642"
       },
       "description": "In 1916 a visiting minister supposedly said only an angel could land on this narrow fin of rock, and the name stuck. The trail climbs switchback after switchback to Scout Lookout, then follows a single chain along a knife-edge ridge for the last half mile to the summit, with Zion Canyon spread out far below on both sides. Those who stop at Scout Lookout still earn a stunning view. Angels Landing is also one of the park's approved scattering locations, a farewell high above the canyon.",
       "plan": {

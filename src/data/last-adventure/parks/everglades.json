@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/everglades/park.jpg",
     "srcWebp": "/images/last-adventure/everglades/park.webp",
-    "alt": "An aerial view of the landscape transition from sawgrass to Florida Bay",
+    "alt": "An aerial photo of the flat expanse of Everglades National Park with its winding rivers weaving from lake to lake through red mangrove forests",
     "credit": "NPS Photo",
-    "caption": "Sawgrass giving way to Florida Bay"
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5a5d6cf2-4698-4242-aaa5-8b7ecabad88c",
+    "caption": "Aerial View of Lane River in Everglades National Park"
   },
   "intro": "Established in 1947 as the first national park created for its biodiversity, Everglades protects 1.5 million acres of wetland, forest and marine habitat at the southern tip of Florida. Its beauty is quiet and wide: sawgrass prairie running to the horizon, tree islands, mangroves and some of the best wildlife viewing in the country. Most of the places below are short, level boardwalks, so nearly every member of the family can come along.",
   "homepage": "https://www.nps.gov/ever/",
@@ -37,8 +38,9 @@
       "photo": {
         "src": "/images/last-adventure/everglades/anhinga-trail.jpg",
         "srcWebp": "/images/last-adventure/everglades/anhinga-trail.webp",
-        "alt": "A paved trail beside still water, with a palm tree silhouetted in the distance",
-        "credit": "NPS Photo/D Turffs"
+        "alt": "An aerial photo overlooking the Anhinga Trail and Royal Palm and the flat expanse of the everglades in the distance",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/eb8a7762-df46-46b4-b6f7-86545f81cf64"
       },
       "description": "Walk slowly here and the Everglades comes to you. The path follows the water and loops out over a sawgrass marsh and freshwater slough, where alligators rest in the sun, turtles surface and anhingas spread their wings to dry. Herons and egrets stalk the shallows, especially in winter. It is one of the park's most popular trails for good reason, and an easy place for grandparents and grandchildren to walk side by side, pointing out every creature they spot.",
       "plan": {
@@ -71,8 +73,9 @@
       "photo": {
         "src": "/images/last-adventure/everglades/pa-hay-okee-overlook.jpg",
         "srcWebp": "/images/last-adventure/everglades/pa-hay-okee-overlook.webp",
-        "alt": "The raised wooden boardwalk of Pa-hay-okee Overlook among bare cypress and green trees",
-        "credit": "NPS photo by Brandon Cintron Gerena"
+        "alt": "Boardwalk at Pa-hay-okee Overlook above the sawgrass",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2e74aac6-1dd8-b71c-0793-991570cf41f8"
       },
       "description": "A short boardwalk loop leads to a raised, roofed observation platform, and suddenly the river of grass spreads out in every direction. This is the Everglades at its widest and simplest: sawgrass, sky and scattered tree islands under drifting clouds. Recently renovated with a wider boardwalk and a ceiling that echoes the original 1959 design, it is a calm, shaded place to stand together, open a thermos and let the silence say what words cannot.",
       "plan": {
@@ -98,12 +101,7 @@
       "id": "mahogany-hammock",
       "name": "Mahogany Hammock",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/everglades/mahogany-hammock.jpg",
-        "srcWebp": "/images/last-adventure/everglades/mahogany-hammock.webp",
-        "alt": "A wooden boardwalk curving through dense green hammock forest and palms",
-        "credit": "NPS photo J Roark"
-      },
+      "photo": null,
       "description": "Step off the open prairie and into a jungle. The boardwalk winds through a dense hardwood hammock, an island of trees rising from the sawgrass, past gumbo-limbo trees and air plants clinging to the branches. Somewhere along the loop stands the largest living mahogany tree in the United States. Under the shade, voices soften, and it becomes an easy place to share a favorite memory of the person who would have loved this walk.",
       "plan": {
         "distance": "0.5 mi round trip",
@@ -131,12 +129,7 @@
       "id": "shark-valley-observation-tower",
       "name": "Shark Valley Observation Tower",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/everglades/shark-valley-observation-tower.jpg",
-        "srcWebp": "/images/last-adventure/everglades/shark-valley-observation-tower.webp",
-        "alt": "A spiraling concrete observation tower silhouetted against a bright blue sky",
-        "credit": "NPS Photo/A Sanchez"
-      },
+      "photo": null,
       "description": "Halfway around the Shark Valley loop, a spiraling concrete tower rises out of the heart of the river of grass. At the top you stand at the highest point a visitor can stand on foot in the whole park, with views reaching up to 20 miles across sawgrass marsh and tree islands. Getting there is part of the day, whether you ride the narrated tram, pedal together or walk, watching alligators, herons and turtles along the way.",
       "plan": {
         "distance": "15 mi paved loop; the tower is at the halfway point, 7 miles south of the parking lot",

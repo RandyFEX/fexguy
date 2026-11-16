@@ -8,11 +8,12 @@
   ],
   "tagline": "A roadless wilderness island of rocky shores, boreal forest and Lake Superior views.",
   "photo": {
-    "src": "/images/last-adventure/isle-royale/park.jpg",
-    "srcWebp": "/images/last-adventure/isle-royale/park.webp",
-    "alt": "Lake Superior and the distant Canadian shoreline seen from the top of Mount Franklin",
-    "credit": "NPS/Lori Honrath",
-    "caption": "Lake Superior from Mount Franklin"
+    "src": "/images/last-adventure/isle-royale/scoville-point.jpg",
+    "srcWebp": "/images/last-adventure/isle-royale/scoville-point.webp",
+    "alt": "Cabin across a bay perched on the Lake Superior Shoreline. Splash pools on the rocky shoreline in the foreground",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8e55a3dc-1dd8-b71b-0b98-38dfbcc584f2",
+    "caption": "The Dassler Cabin from Scoville Point"
   },
   "intro": "Isle Royale rises from Lake Superior, a wilderness island with no roads, reached only by ferry, seaplane or private boat. Rocky shorelines, spruce and fir forest and quiet harbors surround the small settlement at Rock Harbor, where most short hikes and boat tours begin. Getting here is part of the farewell: a crossing of the big lake to a place that feels far from everything.",
   "homepage": "https://www.nps.gov/isro/",
@@ -55,7 +56,13 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/isle-royale/scoville-point.jpg",
+        "srcWebp": "/images/last-adventure/isle-royale/scoville-point.webp",
+        "alt": "Cabin across a bay perched on the Lake Superior Shoreline. Splash pools on the rocky shoreline in the foreground",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8e55a3dc-1dd8-b71b-0b98-38dfbcc584f2"
+      },
       "description": "From Rock Harbor the Stoll Memorial Trail heads east between two harbors, one side wooded and sheltered along Tobin Harbor, the other rocky and exposed along Rock Harbor. The paths meet for the last half mile and climb the rocky face of Scoville Point, where the island ends and Lake Superior stretches out ahead. With its shorter return loops, the walk can fit the whole family. Find a ledge, sit close together and watch the light on the water.",
       "plan": {
         "distance": "1.9, 3.2 or 4.2 mi round trip, depending on the return loop",
@@ -111,18 +118,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/isle-royale/lookout-louise.jpg",
-        "srcWebp": "/images/last-adventure/isle-royale/lookout-louise.webp",
-        "alt": "Forested shores, islands and open water of Lake Superior seen from Lookout Louise",
-        "credit": "Ben+Sam",
-        "license": {
-          "name": "CC BY-SA 2.0",
-          "url": "https://creativecommons.org/licenses/by-sa/2.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Lookout_Louise_(2740472885).jpg",
-        "title": "View from Lookout Louise (2740472885)"
-      },
+      "photo": null,
       "description": "A boat ride on the MV Sandy and a short, rocky hike bring you to a high overlook above Duncan Bay. Below lies the open stretch of Lake Superior toward Thunder Bay, and on a clear day you can pick out Pie Island, the Sibley Peninsula and Edward Island in Ontario. The lookout is named for Louise Savage, a girl whose family owned one of the Tobin Harbor islands. Bring binoculars and take turns finding the far shore together.",
       "plan": {
         "distance": "4-mile boat trip, then a 2-mile round-trip hike",
@@ -174,12 +170,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.jpg",
-        "srcWebp": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.webp",
-        "alt": "Rock Harbor Lighthouse seen from the waters of Middle Islands Passage on a bright blue day",
-        "credit": "NPS/Paul Brown"
-      },
+      "photo": null,
       "description": "The boat brings you to a historic commercial fishery where, in midsummer, a demonstrator still tells the story of the families who fished these waters. A short walk leads to Rock Harbor Lighthouse, a 50-foot white brick tower completed in 1855 that once sent its beam 15 miles across the lake. Its keeper's house now holds maritime exhibits. For a family whose loved one worked hard, loved the water or simply loved a good story, this is a gentle and fitting stop.",
       "plan": {
         "distance": "Quarter-mile walk from the fishery to the lighthouse",

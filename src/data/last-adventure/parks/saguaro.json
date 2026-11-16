@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/saguaro/park.jpg",
     "srcWebp": "/images/last-adventure/saguaro/park.webp",
-    "alt": "The silhouette of a saguaro cactus against the sunset sky",
-    "credit": "National Park Service",
-    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_National_Park_at_sunset.jpg",
-    "caption": "A saguaro at sunset"
+    "alt": "Cactus and a setting sun",
+    "credit": "NPS/Hannah Schwalbe",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/42fc2d40-2d3b-4080-9f14-522d57a74e53",
+    "caption": "Sunset at Javelina Picnic Area"
   },
   "intro": "Saguaro National Park protects forests of the giant cactus in two districts on either side of Tucson: the Tucson Mountain District to the west and the Rincon Mountain District to the east. A final adventure here can be a short walk to a ridge-top bench at sunset, a climb to ancient petroglyphs, or an evening among the boulders of a scenic loop drive. Scattering is permitted with a free permit, well away from trails and roads.",
   "homepage": "https://www.nps.gov/sagu/",
@@ -39,15 +38,7 @@
       "id": "valley-view-overlook",
       "name": "Valley View Overlook",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/saguaro/valley-view-overlook.jpg",
-        "srcWebp": "/images/last-adventure/saguaro/valley-view-overlook.webp",
-        "alt": "A many-armed saguaro glows in golden evening light near the Valley View Overlook Trail, with desert hills behind",
-        "credit": "Joe Parks",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saguaro_-_Flickr_-_Joe_Parks.jpg",
-    "title": "Saguaro - Flickr - Joe Parks"
-      },
+      "photo": null,
       "description": "Built by the Civilian Conservation Corps in the 1930s, this little trail dips through a couple of desert washes, past signs naming the plants around you, then rises gently to a ridge where benches wait. From there the view opens west across Avra Valley, with Signal Hill a small dark mound below and the jagged ridge of Picacho Peak to the north. Settle onto the benches together, let the desert go quiet, and stay until the light starts to fade.",
       "plan": {
         "distance": "0.8 mi round trip",
@@ -75,15 +66,7 @@
       "id": "signal-hill",
       "name": "Signal Hill Petroglyphs",
       "kinds": ["accessible", "extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/saguaro/signal-hill.jpg",
-        "srcWebp": "/images/last-adventure/saguaro/signal-hill.webp",
-        "alt": "Hohokam petroglyphs carved into dark boulders on Signal Hill",
-        "credit": "Matt Kieffer",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hohokam_Petroglyphs_(26158403555).jpg",
-    "title": "Hohokam Petroglyphs (26158403555)"
-      },
+      "photo": null,
       "description": "On a small rocky hill above the desert, people carved spirals and figures into dark boulders between about 550 and 1,550 years ago. More than 200 petroglyphs cover the hill, the largest such site in the park's western district, and many can be seen right from the short trail that zigzags to the top. Standing beside marks left by people so long ago is a quiet way to think about memory, and about what each of us leaves behind for the people who come after.",
       "plan": {
         "distance": "0.5 mi (NPS)",
@@ -113,12 +96,7 @@
       "id": "javelina-rocks",
       "name": "Javelina Rocks",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/saguaro/javelina-rocks.jpg",
-        "srcWebp": "/images/last-adventure/saguaro/javelina-rocks.webp",
-        "alt": "A narrow dirt trail leads past saguaros toward large reddish boulders",
-        "credit": "NPS"
-      },
+      "photo": null,
       "description": "About six miles around the Cactus Forest Loop Drive, great rounded boulders rise beside the road, and this is where many people stop to watch the sun go down. The rocks are banded and striped, granite stretched over ages into gneiss, and saguaros stand all around them. Some of the family can explore and scramble while others stay near the car and watch the colors deepen across the cactus forest. It is an easy, unhurried way to end a day together.",
       "plan": {
         "distance": "Roadside overlook",
@@ -143,8 +121,9 @@
       "photo": {
         "src": "/images/last-adventure/saguaro/tanque-verde-ridge.jpg",
         "srcWebp": "/images/last-adventure/saguaro/tanque-verde-ridge.webp",
-        "alt": "A wide dirt path curves past information signs at the Tanque Verde Ridge Trailhead, with saguaros on the hillside",
-        "credit": "NPS"
+        "alt": "Cactus and mountains in low light",
+        "credit": "NPS/Hannah Schwalbe",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/acd13a1d-98ce-405e-994a-a0b0342682fd"
       },
       "description": "This trail climbs out of the cactus forest onto the long ridge of the Rincon Mountains. A short way up, an overlook makes a fine place for sunset; keep climbing and the views open south, west and north over distant mountain ranges and the whole Tucson Basin. Farther on wait a rare crested saguaro and a broad bare rock the park calls the Dome. Go as far as your family wants, then find a place to sit together and look out over the city and the desert.",
       "plan": {

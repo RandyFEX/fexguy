@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/glacier/park.jpg",
     "srcWebp": "/images/last-adventure/glacier/park.webp",
-    "alt": "Going-to-the-Sun Road crossing a green mountain valley below snow-streaked peaks",
-    "credit": "NPS / Tim Rains",
-    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Going-to-the-Sun_Road.jpg",
-    "caption": "Going-to-the-Sun Road"
+    "alt": "A small historic building strapped to a mountain top with other snowy peaks in the background",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/7d3be386-bd68-4304-b711-8c5b5c774e94",
+    "caption": "Swiftcurrent Fire Lookout"
   },
   "intro": "The historic Going-to-the-Sun Road, built in the late 1920s and early 1930s, stretches over 50 miles through glacier-carved peaks, emerald-blue alpine lakes and lush forests. The park had over 100 glaciers in 1910; by 2015 only 26 still met the size criteria for active glaciers, and many families come hoping to see one. Here a final adventure can be a boardwalk among ancient cedars, a lake below waterfalls or a long climb to the ice itself.",
   "homepage": "https://www.nps.gov/glac/",
@@ -40,14 +39,7 @@
       "id": "trail-of-the-cedars",
       "name": "Trail of the Cedars",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/glacier/trail-of-the-cedars.jpg",
-        "srcWebp": "/images/last-adventure/glacier/trail-of-the-cedars.webp",
-        "alt": "Avalanche Creek rushing through a narrow, moss-covered gorge",
-        "credit": "NPS / Tim Rains",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trail_of_the_Cedars_-_Canyon_View_(20725267619).jpg"
-      },
+      "photo": null,
       "description": "Under the old-growth cedars beside Avalanche Creek, the forest feels hushed and green. The boardwalk loop carries you through the grove to where the water has carved Avalanche Gorge, a narrow channel of rushing blue and white. Listen for the American dippers bobbing along the creek. Everyone can come, wheelchairs included, which makes this a place to walk side by side at an easy pace and share the memories that matter most.",
       "plan": {
         "distance": "0.9 mi loop (the park's accessibility page lists 0.7 mi of accessible trail)",
@@ -73,12 +65,7 @@
       "id": "avalanche-lake",
       "name": "Avalanche Lake",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/glacier/avalanche-lake.jpg",
-        "srcWebp": "/images/last-adventure/glacier/avalanche-lake.webp",
-        "alt": "Logs, with snowy mountains and a lake in the background",
-        "credit": "NPS/Frank"
-      },
+      "photo": null,
       "description": "Beyond the cedars, the trail climbs steadily through old-growth forest until the trees part at an alpine lake with waterfalls spilling down the mountainsides above it. The park calls it an excellent introduction to what Glacier is all about. Find a spot along the shore where everyone can sit, unpack lunch and watch the falls together, and give the afternoon to stories about the one who would have loved this walk.",
       "plan": {
         "distance": "2.3 mi one way (about 5 mi round trip)",
@@ -112,14 +99,7 @@
       "id": "hidden-lake-overlook",
       "name": "Hidden Lake Overlook",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/glacier/hidden-lake-overlook.jpg",
-        "srcWebp": "/images/last-adventure/glacier/hidden-lake-overlook.webp",
-        "alt": "Hidden Lake below steep mountains, seen from the overlook trail",
-        "credit": "Whubsch",
-        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Lake_Glacier_NP.jpg"
-      },
+      "photo": null,
       "description": "From Logan Pass, at the top of Going-to-the-Sun Road, a boardwalk and trail climb through alpine meadows cradled by Clements and Reynolds Mountains, where wildflowers and wildlife are often close at hand. At the overlook, Hidden Lake lies far below, and with binoculars you can pick out the headwall of Sperry Glacier beyond it. Stand together in this high, open place and let it hold your goodbye for a while.",
       "plan": {
         "distance": "1.3 mi one way",
@@ -157,10 +137,9 @@
       "photo": {
         "src": "/images/last-adventure/glacier/grinnell-glacier.jpg",
         "srcWebp": "/images/last-adventure/glacier/grinnell-glacier.webp",
-        "alt": "Visitors stand among floating ice on Upper Grinnell Lake below Grinnell Glacier and its cliffs",
-        "credit": "NPS Photo",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_at_Upper_Grinnell_Lake_(48920702481).jpg"
+        "alt": "Mountain ridge with glacier snow and ice above teal lake",
+        "credit": "NPS/Tim Rains",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/34f574d2-1dd8-b71b-0bde-3ea69dd198e8"
       },
       "description": "Grinnell Glacier asks for a long day, and gives back one of the most remarkable sights in the park. The mostly open trail climbs past wildflowers and mountain views until the glacier and the lake at its foot come into view. The glacier lost 45 percent of its area between 1966 and 2015, and standing before it carries a quiet sense of time passing. For the strong hikers in your family, reaching it together is a tribute to a life well lived.",
       "plan": {

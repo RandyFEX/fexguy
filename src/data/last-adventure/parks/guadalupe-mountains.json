@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/guadalupe-mountains/park.jpg",
     "srcWebp": "/images/last-adventure/guadalupe-mountains/park.webp",
-    "alt": "The pale limestone cliff of El Capitan rises above golden desert grassland under a blue sky",
-    "credit": "Leaflet",
-    "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Mtns_El_Capitan_2006.JPG", "title": "Guadalupe Mtns El Capitan 2006",
-    "caption": "El Capitan, the signature peak of the Guadalupe Mountains"
+    "alt": "View to the eastern escarpment",
+    "credit": "NPS/Al O’Bright",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/39e462e0-0e66-4999-b269-cd1e53cf4540",
+    "caption": "View to the eastern escarpment"
   },
   "intro": "In far West Texas, the Guadalupe Mountains rise abruptly from the Chihuahuan Desert to Guadalupe Peak, at 8,751 feet the highest point in the state. A final adventure here can be a gentle paved walk to a stagecoach ruin, a loop to a shaded desert spring, a hike into McKittrick Canyon or the long climb to the Top of Texas. The park permits the scattering of ashes in most areas, including Guadalupe Peak, with a permit applied for at least four weeks ahead.",
   "homepage": "https://www.nps.gov/gumo/",
@@ -41,12 +40,7 @@
       "id": "pinery-trail",
       "name": "The Pinery",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/guadalupe-mountains/pinery-trail.jpg",
-        "srcWebp": "/images/last-adventure/guadalupe-mountains/pinery-trail.webp",
-        "alt": "Two people walk a paved path through a bright desert landscape",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "A short paved path leads from the visitor center through the desert to the stone walls of the Pinery, a Butterfield Overland Mail station built in 1858 and the highest on the whole 2,800-mile route. Travelers once rested here after long, jolting days on the stagecoach, with the Guadalupe Mountains looming above. It is an easy walk for everyone, wheelchairs included, and a quiet place to talk about the journeys your loved one made and the stories they liked to tell.",
       "plan": {
         "distance": "0.75 mi round trip",
@@ -83,12 +77,7 @@
       "id": "smith-spring",
       "name": "Smith Spring",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/guadalupe-mountains/smith-spring.jpg",
-        "srcWebp": "/images/last-adventure/guadalupe-mountains/smith-spring.webp",
-        "alt": "Water cascades down rocks in a forested setting",
-        "credit": "NPS/Bieri"
-      },
+      "photo": null,
       "description": "Water is precious in the desert, and Smith Spring feels like a secret the mountains kept. The loop starts at the historic Frijole Ranch, follows a paved path to sunny Manzanita Spring, then climbs with wide views of the foothills to a shady oasis where a tiny waterfall gurgles against the mountainside. Watch for birds, mule deer and elk along the way. Sit in the shade together, listen to the water and share a favorite memory before walking the loop home.",
       "plan": {
         "distance": "2.3 mi round-trip loop",
@@ -122,12 +111,7 @@
       "id": "pratt-cabin",
       "name": "McKittrick Canyon and Pratt Cabin",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/guadalupe-mountains/pratt-cabin.jpg",
-        "srcWebp": "/images/last-adventure/guadalupe-mountains/pratt-cabin.webp",
-        "alt": "A cabin with stone walls and roof surrounded by desert mountain landscape and plants",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "McKittrick Canyon is the heart of the park, and the shortest way into it ends at a stone cabin where two creeks meet. Geologist Wallace Pratt built it as a summer home in the early 1930s and later gave the land that helped create the park. The walk crosses the stream twice before you reach the porch and the picnic tables in its shade. Unpack lunch, rest together and imagine the summers a family once spent here, far from the heat of the city.",
       "plan": {
         "distance": "4.8 mi round trip",
@@ -169,15 +153,7 @@
       "id": "guadalupe-peak",
       "name": "Guadalupe Peak",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/guadalupe-mountains/guadalupe-peak.jpg",
-        "srcWebp": "/images/last-adventure/guadalupe-mountains/guadalupe-peak.webp",
-        "alt": "The rocky, pine-dotted summit of Guadalupe Peak rises above the trail",
-        "credit": "Adavyd",
-        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Peak_from_the_trail_DSC_5510_ad.JPG",
-    "title": "Guadalupe Peak from the trail DSC 5510 ad"
-      },
+      "photo": null,
       "description": "Nothing in Texas stands higher than this summit. The climb starts a mile above sea level and rises through high desert into forest, until the whole of the surrounding mountains and desert lies spread out below. It is a long, hard day, and that is the point: you carry your loved one to the Top of Texas together. Because the park allows scattering on the peak trail and summit with a permit, the farewell can happen right there at the top.",
       "plan": {
         "distance": "8.4 mi round trip (older NPS pages give 8.5 mi)",

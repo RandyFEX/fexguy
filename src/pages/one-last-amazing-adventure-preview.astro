@@ -12,7 +12,7 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-const hero = parks.find((p) => p.id === 'yosemite')!.photo;
+const hero = parks.find((p) => p.id === 'yosemite')!.photo!;
 const credit = (ph: Photo) => ph.credit;
 // Creative Commons BY/BY-SA photos: attribution shows title, author, source and license, plus a change notice.
 const isCC = (ph: Photo) => /^CC BY/.test(ph.license?.name ?? '');
@@ -106,7 +106,11 @@ const difficultyRange = (text: string): [number, number] | null => {
                 <li class="ola-card" data-states={parkStates(p).map(stateId).join(' ')}>
                   <a href={`#${p.id}`} class="ola-card__link">
                     <span class="ola-card__img">
-                      <img src={p.photo.src} alt={p.photo.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
+                      {p.photo ? (
+                        <img src={p.photo.src} alt={p.photo.alt} width="800" height="500" loading="lazy" referrerpolicy="no-referrer" />
+                      ) : (
+                        <span class="ola-dest__placeholder" role="img" aria-label={`Photograph of ${p.name} to come`}><span>{p.short}</span></span>
+                      )}
                     </span>
                     <span class="ola-card__body">
                       <span class="ola-card__state">{p.state}</span>
@@ -125,7 +129,7 @@ const difficultyRange = (text: string): [number, number] | null => {
               ))
           }
         </ul>
-        <p class="ola-credit">Photos: {parkOrder.map((p) => `${p.short}, ${credit(p.photo)}${p.photo.license ? ` (${p.photo.license.name})` : ''}`).join('; ')}.</p>
+        <p class="ola-credit">Photos: {parkOrder.filter((p) => p.photo).map((p) => `${p.short}, ${credit(p.photo!)}${p.photo!.license ? ` (${p.photo!.license.name})` : ''}`).join('; ')}.</p>
       </div>
     </section>
 
@@ -149,16 +153,18 @@ const difficultyRange = (text: string): [number, number] | null => {
                 <a class="ola-statenav__all" href="#ola-browse">All states A to Z</a>
               </nav>
 
-              <figure class="ola-park__hero">
-                <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
-                <figcaption class="ola-credit">
-                  {p.photo.caption}. Photo: {p.photo.title && p.photo.sourceUrl
-                    ? <>“<a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.title}</a>” by {p.photo.credit}</>
-                    : p.photo.sourceUrl ? <a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}
-                  {p.photo.license && <>, <a href={p.photo.license.url} rel="noopener license" target="_blank">{p.photo.license.name}</a></>}
-                  {isCC(p.photo) && '. Resized and cropped'}
-                </figcaption>
-              </figure>
+              {p.photo && (
+                <figure class="ola-park__hero">
+                  <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
+                  <figcaption class="ola-credit">
+                    {p.photo.caption}. Photo: {p.photo.title && p.photo.sourceUrl
+                      ? <>“<a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.title}</a>” by {p.photo.credit}</>
+                      : p.photo.sourceUrl ? <a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}
+                    {p.photo.license && <>, <a href={p.photo.license.url} rel="noopener license" target="_blank">{p.photo.license.name}</a></>}
+                    {isCC(p.photo) && '. Resized and cropped'}
+                  </figcaption>
+                </figure>
+              )}
 
               <div class="ola-park__head">
                 <div>
@@ -899,6 +905,10 @@ const difficultyRange = (text: string): [number, number] | null => {
     aspect-ratio: 16 / 9;
     max-height: 36rem;
     border-radius: 0.75rem;
+  }
+  .ola-card__img .ola-dest__placeholder {
+    aspect-ratio: 16 / 10;
+    border-radius: 0;
   }
   .ola-dest__placeholder {
     aspect-ratio: 16 / 7;

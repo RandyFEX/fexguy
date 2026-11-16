@@ -10,9 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/wrangell-st-elias/park.jpg",
     "srcWebp": "/images/last-adventure/wrangell-st-elias/park.webp",
-    "alt": "Four large snow-covered mountains rise above dense forest into a blue sky",
-    "credit": "NPS Photo/Bryan Petrtyl",
-    "caption": "The Wrangell Mountains"
+    "alt": "Mount St. Elias seen from Ocean Cape",
+    "credit": "NPS/Christina Miller",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/799314e8-a05e-4ee9-acdc-8a2fbbdfef53",
+    "caption": "Ocean Cape view of Mount St-Elias"
   },
   "intro": "The Wrangell and St. Elias ranges hold some of the largest volcanoes and the greatest concentration of glaciers in North America: more than 3,000 glaciers covering over three million acres. At the end of the gravel McCarthy Road stand the red buildings of Kennecott, considered the best remaining example of early 20th-century copper mining. Families can walk the old mill town, follow the moraine to the Root Glacier, or climb to a mine high above the valley. All areas of the park are open to scattering of ashes without a permit.",
   "homepage": "https://www.nps.gov/wrst/",
@@ -56,8 +57,9 @@
       "photo": {
         "src": "/images/last-adventure/wrangell-st-elias/kennecott-mill-town.jpg",
         "srcWebp": "/images/last-adventure/wrangell-st-elias/kennecott-mill-town.webp",
-        "alt": "The red buildings of the Kennecott mill climb a green hillside below a snowy mountain",
-        "credit": "NPS/Bryan Petrtyl"
+        "alt": "Group of people talking outside historic, red building, with large, red mill building and forest in background",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3b78d457-1dd8-b71c-0703-42bb39d54fa3"
       },
       "description": "The red buildings of Kennecott climb the hillside much as they stood when the last copper ore was processed here in 1938. Walk the gravel streets together, step into the exhibits in the General Store and the General Manager's Office, where old panoramas show how the glacier has changed, and stand on the Blackburn School deck looking out toward the ice. At its peak about 300 people worked in this mill town. It is a place full of other families' stories, and a good one for sharing your own.",
       "plan": {
@@ -114,17 +116,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/wrangell-st-elias/root-glacier.jpg",
-        "srcWebp": "/images/last-adventure/wrangell-st-elias/root-glacier.webp",
-        "alt": "A hiker sits on the gravel of the Root Glacier, looking across toward the red buildings of Kennecott",
-        "credit": "NPS photo by Neal Herbert",
-        "license": {
-          "name": "Public domain",
-          "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taking_in_the_view_of_Kennicott_from_across_the_Root_Glacier_(26156273158).jpg"
-      },
+      "photo": null,
       "description": "From the mill town, the trail runs north along the lateral moraines of the Kennicott and Root glaciers, crossing Bonanza and Jumbo creeks, with Mount Blackburn and Regal Mountain rising ahead. Mining artifacts lie beside the path. A short access trail winds down the moraine to the toe of the Root Glacier, a great white river of ice spilling out of the mountains. Walk it with someone who loved wild country, then find a rock on the moraine where the whole family can sit and watch the glacier.",
       "plan": {
         "distance": "4 mi round trip from Kennecott to the glacier (trail sheet; the Kennecott hiking map gives about 3 mi)",
@@ -194,7 +186,13 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/wrangell-st-elias/bonanza-mine.jpg",
+        "srcWebp": "/images/last-adventure/wrangell-st-elias/bonanza-mine.webp",
+        "alt": "Bonanza Mining Camp from Birch Portal at Kennecott Mines National Historic Landmark",
+        "credit": "NPS Park Cultural Landscapes Program",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/944fafaf-c738-04c2-40a3-fb60c251189e"
+      },
       "description": "High on the mountain above Kennecott, the remnants of the Bonanza Mine bunkhouse mark the place where miners once lived and dug the copper that built the town below. The climb is long and steep, and on a clear day the Chugach Mountains, Mount Blackburn and the Kennicott Glacier stay in view almost the whole way. Reaching the old mine is an achievement for any family, and a meaningful one if your loved one was a worker, a builder or someone who never turned back from a hill. Rest at the top and take it all in.",
       "plan": {
         "distance": "About 9 mi round trip",

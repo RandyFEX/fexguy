@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/arches/park.jpg",
     "srcWebp": "/images/last-adventure/arches/park.webp",
-    "alt": "Large sandstone arch at dusk with a large white moon and clouds above",
-    "credit": "NPS/Neal Herbert",
-    "caption": "North Window with a waxing moon"
+    "alt": "Two large rocks stand in the middle of the desert, with one looking like there's another rock balancing on top of it",
+    "credit": "NPS/Nicole Segnini",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9106c89a-f315-4b28-bc8d-be5ff31cbd8d",
+    "caption": "Balanced Rock"
   },
   "intro": "Arches holds more than 2,000 natural stone arches, along with soaring pinnacles, balanced rocks and narrow sandstone fins glowing red against a desert sky. A scenic drive links the park's best-known places, so a final adventure can be a short paved walk to the base of a giant arch or a steady climb across slickrock to the most famous arch in the world. The park also names three washes where a family can scatter ashes with a permit.",
   "homepage": "https://www.nps.gov/arch/",
@@ -40,8 +41,9 @@
       "photo": {
         "src": "/images/last-adventure/arches/delicate-arch-viewpoints.jpg",
         "srcWebp": "/images/last-adventure/arches/delicate-arch-viewpoints.webp",
-        "alt": "A free-standing sandstone arch and other rock features, viewed across a canyon",
-        "credit": "NPS/Chris Wonderly"
+        "alt": "A stone arch sits at the top of a cliff wall",
+        "credit": "NPS/Neal Herbert",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2c749040-d13a-48df-b101-d51d093d7ab6"
       },
       "description": "Not everyone can make the climb to Delicate Arch, and they don't have to miss it. From the lower viewpoint, a level path leads to a clear view of the arch perched at the top of a distant rock wall, a mile away across the canyon. Those who want a little more can climb to the upper viewpoint for a less obstructed look. Gather the whole family together, point out the arch to the youngest ones, and tell them why it mattered to someone you love.",
       "plan": {
@@ -81,8 +83,9 @@
       "photo": {
         "src": "/images/last-adventure/arches/double-arch.jpg",
         "srcWebp": "/images/last-adventure/arches/double-arch.webp",
-        "alt": "Two sandstone arches connected on the left against a backdrop of blue sky",
-        "credit": "NPS/Veronica Verdin"
+        "alt": "A woman looking and pointing with her finger towards a tall rock wall with two openings against the blue sky",
+        "credit": "NPS/Nicole Segnini",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c283782a-2647-4689-b4a9-e09403caa660"
       },
       "description": "Two enormous spans of stone, joined at one end, curve overhead at Double Arch, the tallest arch in the park at 112 feet. A gentle path leads from the parking loop to its base, where voices echo softly under the rock and the sky shows through both openings. The Windows Section around it is crowded with arches and formations like Turret Arch and the Parade of Elephants. Find some shade beneath the spans and let everyone share a favorite memory.",
       "plan": {
@@ -120,8 +123,9 @@
       "photo": {
         "src": "/images/last-adventure/arches/landscape-arch.jpg",
         "srcWebp": "/images/last-adventure/arches/landscape-arch.webp",
-        "alt": "Long, skinny sandstone arch in front of a sandstone wall",
-        "credit": "NPS/Veronica Verdin"
+        "alt": "a broad stone arch with people standing beneath it",
+        "credit": "NPS/Royce Morrison",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/46c8ff0f-a3e3-4668-bc16-c3e42bb268bb"
       },
       "description": "Landscape Arch stretches 306 feet across the sky, the longest arch in North America, and only 6 feet thick at its narrowest point. The walk through Devils Garden passes between tall sandstone fins on a hard-packed trail, with short side trips to Pine Tree Arch and Tunnel Arch. Large pieces of this arch fell in the 1990s, and standing beneath its thin ribbon of rock is a gentle reminder that even the most enduring things change. It is a fitting place to talk about a life well lived.",
       "plan": {
@@ -162,9 +166,9 @@
       "photo": {
         "src": "/images/last-adventure/arches/delicate-arch.jpg",
         "srcWebp": "/images/last-adventure/arches/delicate-arch.webp",
-        "alt": "Delicate Arch on a sloping red rock face, with hikers small beneath it against a blue sky",
-        "credit": "NPS/Neal Herbert",
-        "position": "70% 50%"
+        "alt": "Tall red stone arch on the left side of the picture, and the sun setting on the right",
+        "credit": "NPS/Nicole Segnini",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5383b763-d2a7-49a9-8288-e7e106b326be"
       },
       "description": "The arch stays hidden until the very end. You climb a long slope of bare slickrock, follow a narrow ledge around the cliff, and suddenly Delicate Arch stands in front of you, its opening 46 feet high, with distant mountains and open desert framed beyond it. Along the way you pass the old Wolfe Ranch cabin and a wall of Ute petroglyphs. Reaching it together, carrying someone you love to this symbol of Utah, turns a hard walk into a pilgrimage.",
       "plan": {

@@ -8,10 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/shenandoah/park.jpg",
     "srcWebp": "/images/last-adventure/shenandoah/park.webp",
-    "alt": "Rocky outcrop at Crescent Rock Overlook looking toward Hawksbill and the Blue Ridge",
-    "credit": "NPS",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Rock_Overlook_(49565011283).jpg",
-    "caption": "Crescent Rock Overlook and Hawksbill"
+    "alt": "Vibrant fall color with a rocky mountain in the distance under a blue sky",
+    "credit": "NPS | Aidan Walker",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/be20bd16-504e-493a-80fc-6bed22ff76c2",
+    "caption": "Rocky Mount Overlook"
   },
   "intro": "Shenandoah stretches 105 miles along the crest of the Blue Ridge Mountains, and Skyline Drive carries you the whole way, past overlooks that open onto the Shenandoah Valley and the Virginia Piedmont. A final adventure here can be as gentle as a stop at a roadside overlook or a level forest loop, or as stirring as standing on the park's highest peak. The park allows scattering without a permit when its published conditions are met.",
   "homepage": "https://www.nps.gov/shen/",
@@ -45,9 +45,9 @@
       "photo": {
         "src": "/images/last-adventure/shenandoah/crescent-rock-overlook.jpg",
         "srcWebp": "/images/last-adventure/shenandoah/crescent-rock-overlook.webp",
-        "alt": "Pink moss phlox blooming on lichen-covered rocks with Hawksbill rising beyond",
-        "credit": "NPS/N. Lewis",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crescent_Rock_Overlook_(49565732152).jpg"
+        "alt": "Crescent Rock Overlook in fall",
+        "credit": "NPS | Dave Kiel",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/06274239-445e-41be-9097-b6336be099bf"
       },
       "description": "Crescent Rock Overlook faces west from 3,550 feet, and the park says it has some of the best views of Hawksbill, Shenandoah's highest peak. Nakedtop sits to the right, its ridge sliding down toward the valley floor. You can pull in, step out and be looking at the mountains together within moments, which makes it a gentle place to begin. An interpretive sign tells the story of the families who once lived on this land, a reminder that every place carries memories.",
       "plan": {
@@ -72,9 +72,9 @@
       "photo": {
         "src": "/images/last-adventure/shenandoah/limberlost.jpg",
         "srcWebp": "/images/last-adventure/shenandoah/limberlost.webp",
-        "alt": "A smooth crushed-stone path curving through spring forest on the Limberlost Trail",
-        "credit": "NPS/N. Lewis",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limberlost_Trail_(51832522503).jpg"
+        "alt": "The Limberlost Trail through the forest",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1ae36eed-155d-451f-6713-2159f4f21f66"
       },
       "description": "Limberlost is the only hiking trail in Shenandoah that meets accessibility guidelines, so everyone in the family, including anyone using a wheelchair, can share the whole walk. The smooth greenstone path loops through quiet forest where mountain laurel blooms in spring, past a striking example of columnar jointing in the rock. It is a place for slow steps and unhurried conversation, the kind of walk where a story about your loved one can take as long as it needs.",
       "plan": {
@@ -109,8 +109,9 @@
       "photo": {
         "src": "/images/last-adventure/shenandoah/stony-man.jpg",
         "srcWebp": "/images/last-adventure/shenandoah/stony-man.webp",
-        "alt": "A woman with a baby on her back takes a picture from a rocky mountain summit above the valley",
-        "credit": "NPS/M. O'Neill"
+        "alt": "Fall foliage on the Stony Man summit",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/21a2927d-1167-429d-a208-26317d381182"
       },
       "description": "A short climb along the Appalachian Trail and the blue-blazed Stony Man Trail brings you out onto open rock high above the Shenandoah Valley, with Massanutten Mountain and the country beyond spread out before you. The walk is short and rated the park's easiest, so grandparents and grandchildren can make it together. Sit on the rock, pass a thermos around and talk about where your loved one's life began.",
       "plan": {
@@ -142,13 +143,7 @@
       "id": "hawksbill-summit",
       "name": "Hawksbill Summit",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/shenandoah/hawksbill-summit.jpg",
-        "srcWebp": "/images/last-adventure/shenandoah/hawksbill-summit.webp",
-        "alt": "The rocky, forested crown of Hawksbill under a blue sky with white clouds",
-        "credit": "NPS/N. Lewis",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_Summit_(43979340580).jpg"
-      },
+      "photo": null,
       "description": "Hawksbill is the highest peak in Shenandoah, and from the stone viewing platform at the top the park promises a 360-degree view over the Shenandoah Valley, the Blue Ridge and the Virginia Piedmont. The Upper Hawksbill route is the gentle way up, a steady walk through the woods past the Byrds Nest 2 shelter. Reaching the top of the park together, with nothing higher around you, is a fitting way to honor someone who meant the world to your family.",
       "plan": {
         "distance": "2.1 mi round trip",
@@ -183,9 +178,9 @@
       "photo": {
         "src": "/images/last-adventure/shenandoah/dark-hollow-falls.jpg",
         "srcWebp": "/images/last-adventure/shenandoah/dark-hollow-falls.webp",
-        "alt": "Dark Hollow Falls pouring over mossy rocks into a pool in misty forest",
-        "credit": "NPS/N. Lewis",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foggy_Dark_Hollow_Falls_(51834325406).jpg"
+        "alt": "A waterfall cascades into a mossy pool",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/53f41862-155d-451f-6768-dd01f8b85982"
       },
       "description": "The trail to Dark Hollow Falls drops steeply beside a mountain stream, and the sound of water grows as you descend until the falls spill over the rocks in front of you. It is one of the park's most traveled trails for good reason. Find a rock to rest on, let the noise of the water carry the conversation for a while, and remember the people who taught you to love wild places. The climb back up is the hard part, so take it slowly together.",
       "plan": {

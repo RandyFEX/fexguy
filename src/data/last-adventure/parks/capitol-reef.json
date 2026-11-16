@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/capitol-reef/park.jpg",
     "srcWebp": "/images/last-adventure/capitol-reef/park.webp",
-    "alt": "Wingate Sandstone cliffs behind a historic barn and farmhouse",
-    "credit": "NPS Photo",
-    "caption": "Wingate Sandstone above the historic farms of Fruita"
+    "alt": "Panorama of Fruita area cliffs and slopes, the layers of rock formations with added color from the sunset",
+    "credit": "NPS/Kit Frost",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/51e5cd3d-f0ac-479b-bc3b-669fc85f8b3f",
+    "caption": "Fruita cliffs"
   },
   "intro": "Capitol Reef follows the Waterpocket Fold, a 100-mile wrinkle in the earth where layer upon layer of colored rock tilts toward the sky. Pioneer orchards still grow in the green valley of Fruita beneath towering cliffs, and short trails lead to natural bridges, narrow canyons and names carved by early travelers. A family can scatter ashes here with a permit, at a location they propose and the park approves.",
   "homepage": "https://www.nps.gov/care/",
@@ -40,8 +41,9 @@
       "photo": {
         "src": "/images/last-adventure/capitol-reef/panorama-point-goosenecks.jpg",
         "srcWebp": "/images/last-adventure/capitol-reef/panorama-point-goosenecks.webp",
-        "alt": "Juniper trees dot the foreground, with distant red-brown cliffs and colorful cloudy sky at sunset",
-        "credit": "NPS / Emily Van Ness"
+        "alt": "Looking down into a canyon where a creek flows at the bottom",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/68d21b8a-155d-451f-6732-e88f7f125a39"
       },
       "description": "Just off the highway, a very brief walk from the car opens a 360-degree view of huge sandstone cliffs, and the park notes the colors grow especially vivid as sunset approaches. A short spur road beyond leads to the Goosenecks, where the canyon views turn dramatic, and to an easy path out to Sunset Point. Stay for the evening light together, and then for the stars: this high point gives stargazers an excellent view of the night sky.",
       "plan": {
@@ -84,8 +86,9 @@
       "photo": {
         "src": "/images/last-adventure/capitol-reef/capitol-gorge.jpg",
         "srcWebp": "/images/last-adventure/capitol-reef/capitol-gorge.webp",
-        "alt": "A man crouches near a still pool of water in tan colored sandstone",
-        "credit": "NPS / J. Frank"
+        "alt": "historic names and dates are carved into a reddish cliff wall",
+        "credit": "NPS/Jacob Frank",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a41c045f-1dd8-b71b-0b70-82adcfdcfbb5"
       },
       "description": "For about 80 years this narrow canyon was the only road east from Fruita, and the travelers who passed through carved their names and dates into its walls. Walking the fairly level trail today, you reach the Pioneer Register, then a short climb to the Tanks, natural waterpockets where tadpoles and fairy shrimp live after the rains. It is a gentle walk through other people's journeys, and a natural place to talk about your loved one's own road and the mark they left.",
       "plan": {
@@ -125,8 +128,9 @@
       "photo": {
         "src": "/images/last-adventure/capitol-reef/hickman-bridge.jpg",
         "srcWebp": "/images/last-adventure/capitol-reef/hickman-bridge.webp",
-        "alt": "A hiker stands beside Hickman Bridge, a natural sandstone bridge",
-        "credit": "NPS Photo"
+        "alt": "Large natural stone bridge in orange rock, with some darker stripes along it. A bit of rock rubble at the base of the bridge, and green trees, cliffs, and blue sky behind the",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e8868e7a-90ea-4ecd-b913-ec4dd607df33"
       },
       "description": "Hickman Bridge is a natural sandstone bridge 133 feet long, and the trail to it climbs 400 feet before curving right under and around the span. Standing beneath it, you can look up through the opening at the sky, then turn to take in the canyon views the park promises along the way. It is short enough for most families to share, with enough climb to feel earned, and a place where a quiet moment of remembrance comes easily.",
       "plan": {
@@ -159,10 +163,9 @@
       "photo": {
         "src": "/images/last-adventure/capitol-reef/cassidy-arch.jpg",
         "srcWebp": "/images/last-adventure/capitol-reef/cassidy-arch.webp",
-        "alt": "Cassidy Arch in Wingate Sandstone in Capitol Reef National Park",
-        "credit": "NPS / D. Popovic",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cassidy_Arch_in_Capitol_Reef_National_Park.jpg"
+        "alt": "Large round hole in reddish tan cliff face, with some trees growing in the rocks, and blue sky above",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/980fa91f-de52-4028-9964-542262682336"
       },
       "description": "From the floor of Grand Wash, a deep canyon of towering sandstone cliffs, this trail climbs 670 feet over slickrock to Cassidy Arch, carved in Wingate Sandstone. It is a real effort and a real reward, the kind of outing your loved one might have planned for a crisp morning. Rest together near the arch, share some water and a story or two, and take in how far you have come.",
       "plan": {

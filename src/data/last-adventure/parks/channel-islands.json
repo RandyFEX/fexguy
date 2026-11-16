@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/channel-islands/park.jpg",
     "srcWebp": "/images/last-adventure/channel-islands/park.webp",
-    "alt": "Visitors stand on the clifftop at Inspiration Point, looking west over Middle and West Anacapa",
-    "credit": "Claire Fackler/NOAA",
-    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CINMS_-_Inspiration_Point,_Anacapa_Island_(26820991420).jpg",
-    "caption": "Inspiration Point, Anacapa Island"
+    "alt": "View from Scorpion Anchorage looking towards shore with the new pier in the foreground",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/09cd2140-17a2-49e4-8aad-e880e6d1acd3",
+    "caption": "Scorpion Anchorage, Santa Cruz Island"
   },
   "intro": "Off the coast of Southern California, five islands rise from the Pacific with sea cliffs, coves and plants and animals shaped by millions of years of isolation. The islands can only be reached by boat, so a final adventure here begins with a crossing from the harbor and ends on a clifftop trail high above the sea. Scattering ashes requires a park permit.",
   "homepage": "https://www.nps.gov/chis/",
@@ -39,14 +38,7 @@
       "id": "inspiration-point",
       "name": "Inspiration Point, Anacapa Island",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/channel-islands/inspiration-point.jpg",
-        "srcWebp": "/images/last-adventure/channel-islands/inspiration-point.webp",
-        "alt": "Visitors on the clifftop at Inspiration Point, with the rugged islets of Anacapa beyond",
-        "credit": "Claire Fackler/NOAA",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CINMS_-_Inspiration_Point,_Anacapa_Island_(26820991420).jpg"
-      },
+      "photo": null,
       "description": "The park calls this one of its most spectacular views, and it is easy to see why. From the western tip of East Anacapa, the narrow islets of Middle and West Anacapa stretch away across blue water, with Santa Cruz Island beyond. The walk there is gentle, over the island's open, relatively flat top. Find a place to stand together at the edge of the viewing area, feel the sea wind, and say the words you came to say.",
       "plan": {
         "distance": "1.5 mi round trip from the island visitor center",
@@ -85,15 +77,7 @@
       "id": "cavern-point",
       "name": "Cavern Point, Santa Cruz Island",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/channel-islands/cavern-point.jpg",
-        "srcWebp": "/images/last-adventure/channel-islands/cavern-point.webp",
-        "alt": "The open clifftop at Cavern Point, with the sea and Anacapa Island on the horizon",
-        "credit": "Ken Lund",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cavern_Point,_Santa_Cruz_Island,_Channel_Islands_National_Park,_California_(15)_(4082831491).jpg",
-    "title": "Cavern Point, Santa Cruz Island, Channel Islands National Park, California (15) (4082831491)"
-      },
+      "photo": null,
       "description": "The park's own guide simply says this one is not to be missed. The loop climbs from Scorpion Valley onto open bluffs, and at Cavern Point the coastline falls away beneath you with Anacapa Island floating on the horizon. In season, you may see whales moving past offshore. It is a fine place to sit close together on the headland, share a meal and a few favorite stories, and watch the sea that surrounds this wild island.",
       "plan": {
         "distance": "2 mi round trip (loop from Scorpion Beach)",
@@ -129,15 +113,7 @@
       "id": "potato-harbor",
       "name": "Potato Harbor Overlook, Santa Cruz Island",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/channel-islands/potato-harbor.jpg",
-        "srcWebp": "/images/last-adventure/channel-islands/potato-harbor.webp",
-        "alt": "Potato Harbor, an oval cove below steep cliffs, seen from the overlook point",
-        "credit": "Niceley",
-        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_Harbor_Santa_Cruz_Island.jpg",
-    "title": "Potato Harbor Santa Cruz Island"
-      },
+      "photo": null,
       "description": "Follow the North Bluff Trail west along the island's edge, and the walk ends high above Potato Harbor, a rounded cove ringed by steep cliffs. There is no way down to the water, only the view, which makes the overlook feel quiet and removed from everything. The park promises spectacular coastal views the whole way. For the walkers in your family, it is a longer, unhurried day for talking side by side and pausing wherever the coast invites you to stop.",
       "plan": {
         "distance": "5 mi round trip from Scorpion Beach",

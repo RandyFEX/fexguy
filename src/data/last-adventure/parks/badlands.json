@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/badlands/park.jpg",
     "srcWebp": "/images/last-adventure/badlands/park.webp",
-    "alt": "A dramatic Badlands landscape consisting of layered, jagged rock extending into prairie landscape",
-    "credit": "NPS Photo / Serena Rosales",
-    "caption": "The view from Pinnacles Overlook"
+    "alt": "badlands formations with red layers extend far into the horizon",
+    "credit": "NPS/Ed Welsh",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/4b522cd5-5593-4065-9569-f019548c09cf",
+    "caption": "Big Badlands Overlook"
   },
   "intro": "In the Badlands, layered buttes and pinnacles in bands of tan, red and yellow rise straight out of the South Dakota prairie. The paved Badlands Loop Road links overlooks and short boardwalk trails, so a family can stand together at the edge of this eroded landscape within minutes of the car. Bison, bighorn sheep and wide open skies complete a place that feels both ancient and wide awake.",
   "homepage": "https://www.nps.gov/badl/",
@@ -41,8 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/badlands/door-trail.jpg",
         "srcWebp": "/images/last-adventure/badlands/door-trail.webp",
-        "alt": "A sign marked Door Trail next to a blue accessibility sign, with badlands buttes and a boardwalk under blue sky",
-        "credit": "NPS Photo / Earl Perez-Foust"
+        "alt": "a boardwalk trail leading through a low-point between two buttes",
+        "credit": "NPS/Brad Barker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c0fb15ae-b8d7-44c9-9ba6-f3226875a549"
       },
       "description": "A boardwalk carries you through a break in the Badlands Wall known as the Door, and suddenly the whole maze of pale, eroded formations opens in front of you. It is one of the gentlest walks in the park, so a wheelchair, a stroller and a grandparent with a cane can all arrive at the overlook together. Stand at the rail and take it in as a family. Some of you may wander a little farther among the formations while others stay behind and share a story.",
       "plan": {
@@ -80,8 +82,9 @@
       "photo": {
         "src": "/images/last-adventure/badlands/notch-trail.jpg",
         "srcWebp": "/images/last-adventure/badlands/notch-trail.webp",
-        "alt": "A sign marked Notch Trail alongside a trail proceeding amid badlands buttes under blue sky",
-        "credit": "NPS Photo / Earl Perez-Foust"
+        "alt": "A large ladder climbs up a steep formation, surrounded by more badlands formations",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3bf23b27-d62d-4f62-b144-9ccfa6a9d04b"
       },
       "description": "The Notch Trail is a small adventure packed into a short distance. It winds through a canyon, climbs a log ladder up the wall, then follows a narrow ledge to a gap in the formations called the Notch. There the ground falls away and the White River Valley spreads out far below. For the steady-footed members of your family, reaching this window in the rock together, carrying someone you love, makes a proud and memorable tribute.",
       "plan": {
@@ -124,8 +127,9 @@
       "photo": {
         "src": "/images/last-adventure/badlands/yellow-mounds-overlook.jpg",
         "srcWebp": "/images/last-adventure/badlands/yellow-mounds-overlook.webp",
-        "alt": "A small trail proceeds through rolling mounds of striped colors: yellows, reds, whites and browns",
-        "credit": "NPS Photo / Serena Rosales"
+        "alt": "Toward the bottom of badlands buttes, layers turn bright red and yellow",
+        "credit": "NPS/Ed Welsh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/bb649945-5932-4a1c-9428-384eff4c9d80"
       },
       "description": "This is the most colorful corner of the Badlands. Soft yellow mounds rise from the ground, banded above by purple, gray and reddish layers, each one a chapter of a story millions of years long. The colors shift with the light and the clouds, so the scene seems to change while you watch. Pull in, step out together and let the quiet settle. It is an easy, gentle stop, and a good place to talk about the many colors of a life.",
       "plan": {
@@ -152,11 +156,9 @@
       "photo": {
         "src": "/images/last-adventure/badlands/pinnacles-overlook.jpg",
         "srcWebp": "/images/last-adventure/badlands/pinnacles-overlook.webp",
-        "alt": "Wide view of eroded badlands spires and prairie from Pinnacles Overlook",
-        "credit": "Martin Kraft",
-        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MK00667-75_Badlands_Pinnacles_overlook.jpg",
-        "title": "MK00667-75 Badlands Pinnacles overlook"
+        "alt": "five bighorn sheep lambs surround an adult ewe on a Badlands formation, with more buttes in the background",
+        "credit": "NPS/Ed Welsh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/28e0d0d3-8ab3-483f-9a33-bd5f405fce16"
       },
       "description": "Pinnacles Overlook sits at the highest point in the North Unit, and from its edge the spires fall away toward the Sage Creek Wilderness. On a clear day the Black Hills line the horizon, bison may graze in the valley below, and bighorn sheep often gather on the nearby slopes. In late April and early May you might even spot lambs picking their way across the rock. Watch the light change over this wide country together, and let the stillness speak for all of you.",
       "plan": {

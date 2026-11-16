@@ -8,10 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/acadia/park.jpg",
     "srcWebp": "/images/last-adventure/acadia/park.webp",
-    "alt": "Jordan Pond with the two rounded Bubbles rising beyond the water",
-    "credit": "NPS/Victoria Stauffenberg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_Jordan_Pond_and_the_Bubbles.jpg",
-    "caption": "Jordan Pond and the Bubbles"
+    "alt": "Sunrise light over the granite summit of Cadillac Mountain and the coast beyond",
+    "credit": "NPS/Lucia Lubanovich",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8cec9cbb-a143-4ba7-af59-1873fcd5ad9a",
+    "caption": "Sunrise at Cadillac Mountain"
   },
   "intro": "On Mount Desert Island, Acadia's granite mountains run right down to the sea. In a single day a family can watch the sun rise from Cadillac Mountain, listen to the surf at Thunder Hole, walk the shore of Jordan Pond and finish at a lighthouse on the rocks. Scattering is possible here with a special use permit, at a location the park reviews and approves.",
   "homepage": "https://www.nps.gov/acad/",
@@ -42,11 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/acadia/cadillac-mountain-summit.jpg",
         "srcWebp": "/images/last-adventure/acadia/cadillac-mountain-summit.webp",
-        "alt": "Granite ledges on Cadillac Mountain above forested ridges and Frenchman Bay",
-        "credit": "EgorovaSvetlana",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorr_Mountain_Champlain_Mountain_Frenchman_Bay_Schoodic_Peninsula_left_from_Cadillac_Mountain_Acadia_National_Park.jpg",
-    "title": "Dorr Mountain Champlain Mountain Frenchman Bay Schoodic Peninsula left from Cadillac Mountain Acadia National Park"
+        "alt": "Autumn sunrise over the summit of Cadillac Mountain",
+        "credit": "NPS/Kelsey Graczyk",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9c0f49fc-33ea-4a3f-9279-7c6d3208c225"
       },
       "description": "Cadillac Mountain rises 1,530 feet, the highest point on the eastern seaboard, and from its bare pink granite you look across Frenchman Bay to the Porcupine Islands and out to open ocean. From October 7 to March 6 it is the first place in the country to see the sunrise. Imagine wrapping up in blankets on the ledges with the people who knew your loved one best, watching the first light reach the water, and sharing the stories that begin a last adventure.",
       "plan": {
@@ -74,11 +72,9 @@
       "photo": {
         "src": "/images/last-adventure/acadia/thunder-hole.jpg",
         "srcWebp": "/images/last-adventure/acadia/thunder-hole.webp",
-        "alt": "Pink granite ledges and spruce trees along the ocean at Thunder Hole",
-        "credit": "Pablo Sanchez",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thunder_Hole,_Acadia_National_Park,_Maine.jpg",
-    "title": "Thunder Hole, Acadia National Park, Maine"
+        "alt": "Spray of water between a natural rock inlet along the coast",
+        "credit": "NPS Photo/Kent Miller",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/091f5b87-f614-4266-b6e5-4714d0b6398e"
       },
       "description": "Along the Ocean Path, waves rush into a narrow sea cave in the granite, and when the conditions are right the trapped air and water go off with a boom you can hear up and down the shore. Slabs of pink granite, dark spruce and the open Atlantic surround you. Stand together above the cove and let the ocean fill the silences while you remember someone who loved this coast or always wanted to see it.",
       "plan": {
@@ -112,13 +108,7 @@
       "id": "bass-harbor-head-light",
       "name": "Bass Harbor Head Light Station",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/acadia/bass-harbor-head-light.jpg",
-        "srcWebp": "/images/last-adventure/acadia/bass-harbor-head-light.webp",
-        "alt": "The white Bass Harbor Head lighthouse and keeper's house on a rocky point above the sea",
-        "credit": "NPS/Kent Miller",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bass_Harbor_Head_Light_Station_Day.jpg"
-      },
+      "photo": null,
       "description": "Since 1858 this small white lighthouse has marked the entrance to Bass Harbor and Blue Hill Bay, and its red light still shines over the rocks on the southwest corner of Mount Desert Island. From the gravel overlook or the cliff viewpoint below, the tower and keeper's house sit above the waves like a postcard. A lighthouse is a fitting place to talk about the person who guided your family home, and evening light here is something to share slowly.",
       "plan": {
         "distance": "Gravel overlook beside the parking area; short gravel path and stairs to the cliff viewpoint",
@@ -145,9 +135,9 @@
       "photo": {
         "src": "/images/last-adventure/acadia/jordan-pond-path.jpg",
         "srcWebp": "/images/last-adventure/acadia/jordan-pond-path.webp",
-        "alt": "Jordan Pond with the two rounded Bubbles rising beyond the water",
-        "credit": "NPS/Victoria Stauffenberg",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_Jordan_Pond_and_the_Bubbles.jpg"
+        "alt": "A wooden bridge along a gravel path crosses a lake. The bridge is surrounded by plants and flanked by forest. Two people are crossing the bridge",
+        "credit": "NPS Photo/Kaitlyn Chen",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/b0a94e88-61b0-4136-9f3d-9fa2abacc065"
       },
       "description": "Jordan Pond lies in a steep valley carved by glaciers, framed by Penobscot and Pemetic mountains and the two rounded peaks called the Bubbles. The path circles the whole shoreline, over crushed stone, footbridges and long wooden boardwalks. Listen for loons, look for beaver work along the edges, and watch the cliffs for peregrine falcons. Walking all the way around together, pausing wherever a memory surfaces, turns the loop into a quiet procession of stories.",
       "plan": {

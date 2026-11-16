@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/bryce-canyon/park.jpg",
     "srcWebp": "/images/last-adventure/bryce-canyon/park.webp",
-    "alt": "A red rock landscape and plateau forest glows with the morning sun",
-    "credit": "NPS Photo / Peter Densmore",
-    "caption": "Morning light over the Bryce Amphitheater"
+    "alt": "A vivid rainbow arcs down from a raincloud into a landscape of red and white rock spires and cliffs",
+    "credit": "NPS Peter Densmore",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/cc789c21-2bb4-4285-9de9-dbcd85f669c0",
+    "caption": "Rainbow from Inspiration Point"
   },
   "intro": "Bryce Canyon is famous for its hoodoos, thousands of rock spires carved from limestone and glowing red, orange and white in the changing light. From viewpoints along the rim of a high, forested plateau, a family can look down into the Bryce Amphitheater, or walk among the spires on trails below the rim. The park names one place where ashes may be scattered with a permit: Piracy Point, a quiet overlook along the Southern Scenic Drive.",
   "homepage": "https://www.nps.gov/brca/",
@@ -35,12 +36,7 @@
       "id": "piracy-point",
       "name": "Piracy Point",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/bryce-canyon/piracy-point.jpg",
-        "srcWebp": "/images/last-adventure/bryce-canyon/piracy-point.webp",
-        "alt": "Forested limestone cliffs stand above a broad canyon and below a distant plateau along the horizon",
-        "credit": "NPS Photo / Peter Densmore"
-      },
+      "photo": null,
       "description": "Away from the crowds of the amphitheater, a short, level path through the forest leads to Piracy Point, looking north over Swamp Canyon and the broad valley of the Sheep Creek drainage. Forested cliffs fall away below you, and a distant plateau lines the horizon. This is a place where pines and spruce meet, where osprey sometimes hunt, and where the quiet is part of the gift. As the one place the park has set aside for scattering, it lets the goodbye and the scattering happen together.",
       "plan": {
         "distance": "1,056 ft each way from the Farview Point parking lot",
@@ -72,12 +68,7 @@
       "id": "sunset-point",
       "name": "Sunset Point",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/bryce-canyon/sunset-point.jpg",
-        "srcWebp": "/images/last-adventure/bryce-canyon/sunset-point.webp",
-        "alt": "Red and white rock fins stand among distant spires and forested landscape",
-        "credit": "NPS Photo / Peter Densmore"
-      },
+      "photo": null,
       "description": "The park says the colors of Bryce Canyon are nowhere better displayed than from Sunset Point. Red, orange and white spires crowd the amphitheater below, the maze of the Silent City lies to the south, and Thor's Hammer, the park's most famous hoodoo, stands nearly directly beneath you. A short, level paved walk leads from the parking lot, and a paved half mile of rim connects it to Sunrise Point, so everyone can stroll together and stop wherever a memory surfaces.",
       "plan": {
         "distance": "About 494 ft from parking to the viewing area; paved Rim Trail to Sunrise Point 1 mi round trip",
@@ -112,8 +103,9 @@
       "photo": {
         "src": "/images/last-adventure/bryce-canyon/rainbow-point.jpg",
         "srcWebp": "/images/last-adventure/bryce-canyon/rainbow-point.webp",
-        "alt": "White rock, red rock spires and forest at the viewpoint",
-        "credit": "NPS Photo / Peter Densmore"
+        "alt": "Red rock cliffs stand above green forest and below blue sky",
+        "credit": "NPS/Peter Densmore",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3678249e-29ca-4116-bbf4-7f84ffda5120"
       },
       "description": "At the very end of the park road, Rainbow Point stands at 9,115 feet, the highest viewpoint in the park. Sheer cliffs drop from the edge of the plateau, the Pink Cliffs of the Table Cliff Plateau rise across the valley, and the peaks of the Tushar Mountains line the far horizon. The drive itself is a slow unfolding of overlooks. Bring a picnic for the tables here, and give the day the unhurried pace your loved one would have chosen.",
       "plan": {
@@ -146,15 +138,7 @@
       "id": "queens-navajo-loop",
       "name": "Queen's Garden and Navajo Loop",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/bryce-canyon/queens-navajo-loop.jpg",
-        "srcWebp": "/images/last-adventure/bryce-canyon/queens-navajo-loop.webp",
-        "alt": "Two hikers walk along the Queen's Garden Trail between tall orange hoodoos",
-        "credit": "Fabio Achilli from Milano, Italy",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queens_Garden_Trail,_Bryce_Canyon_(21407043745).jpg",
-        "title": "Queens Garden Trail, Bryce Canyon (21407043745)"
-      },
+      "photo": null,
       "description": "Seeing the hoodoos from the rim is one thing; walking among them is another. This loop drops from Sunrise Point through the formations of Queen's Garden, where a short spur leads to the hoodoo called Queen Victoria, then climbs back up the Navajo Loop past Thor's Hammer and Two Bridges, or through the tall, narrow walls of Wall Street. Spend a few hours down among the spires together, and the canyon becomes part of the story you carry home.",
       "plan": {
         "distance": "2.9 mi loop",

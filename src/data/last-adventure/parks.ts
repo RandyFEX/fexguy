@@ -67,7 +67,8 @@ export interface Park {
   /** Every state or territory the park lies in (primary first); defaults to [state]. */
   states?: string[];
   tagline: string;
-  photo: Photo;
+  /** Park banner; null when no verified NPS public-domain photograph is available. */
+  photo: Photo | null;
   intro: string;
   homepage: string;
   map: Link[];
@@ -86,14 +87,6 @@ export interface Park {
 export const mapsUrl = (lat: number, lon: number) =>
   `https://www.google.com/maps/search/?api=1&query=${lat.toFixed(5)},${lon.toFixed(5)}`;
 
-const nps = (p: string) => `https://www.nps.gov/common/uploads/cropped_image/primary/${p}.jpg`;
-const local = (id: string) => ({ src: `/images/last-adventure/${id}.jpg`, srcWebp: `/images/last-adventure/${id}.webp` });
-const ccBy2 = { name: 'CC BY 2.0', url: 'https://creativecommons.org/licenses/by/2.0/' };
-const ccBy4 = { name: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' };
-const ccBySa3 = { name: 'CC BY-SA 3.0', url: 'https://creativecommons.org/licenses/by-sa/3.0/' };
-const ccBySa4 = { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/' };
-const commons = (f: string) => `https://commons.wikimedia.org/wiki/File:${f}`;
-
 const tetonScatter = 'Only at a site you propose and the park approves';
 const yoseScatter = 'With a free permission letter, away from this spot';
 const gcScatter = 'Prohibited throughout the park. See below.';
@@ -111,10 +104,12 @@ const pilotParks: Park[] = [
     state: 'Utah',
     tagline: 'Rim overlooks, sandstone arches and the meeting of two great rivers.',
     photo: {
-      src: nps('74177209-01FA-B216-D6D6DE60C5419B5E'),
-      alt: 'A green and gray river converge below towering canyon walls',
-      credit: 'NPS/Veronica Verdin',
-      caption: 'The confluence of the Green and Colorado rivers',
+      src: "/images/last-adventure/canyonlands/park.jpg",
+      srcWebp: "/images/last-adventure/canyonlands/park.webp",
+      alt: "Tall canyon walls with a river winding across the canyon floor under thin haze and clouds",
+      credit: "NPS/Nicole Segnini",
+      sourceUrl: "https://npgallery.nps.gov/AssetDetail/d117d47d-9b3c-47bc-976f-f64619ac53a0",
+      caption: "View from Mesa Arch after sunset",
     },
     intro:
       'Canyonlands is a world of mesas, arches and sandstone spires carved by the Green and Colorado rivers. Its two most visited districts, Island in the Sky and The Needles, offer rim overlooks you can reach in minutes and long desert trails that end at the edge of the earth. It is also one of the few parks that names its own places for scattering, so a family can say goodbye and scatter at the same breathtaking overlook.',
@@ -145,9 +140,11 @@ const pilotParks: Park[] = [
         name: 'Green River Overlook',
         kinds: ['accessible'],
         photo: {
-          src: nps('F51E0C49-0994-9EAB-08CC9747581BE46C'),
-          alt: 'Two hikers sit on the edge of Green River Overlook at sunset',
-          credit: 'NPS/Neal Herbert',
+          src: "/images/last-adventure/canyonlands/green-river-overlook.jpg",
+          srcWebp: "/images/last-adventure/canyonlands/green-river-overlook.webp",
+          alt: "A river cuts through a maze of far off canyons",
+          credit: "NPS/Nicole Segnini",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/193b9904-f707-4b5c-8da5-b1d9be37d97a",
         },
         description:
           'Picture the last light of the day moving across the canyons while the Green River winds through its channel 1,300 feet below you. The park counts this among the best sunset spots at Island in the Sky, and it asks almost nothing of anyone: a few steps from the car, and the whole family is standing together at the rim, looking out toward The Maze. It is also one of the six places in the park where scattering is authorized, so the goodbye and the scattering can happen side by side.',
@@ -171,12 +168,11 @@ const pilotParks: Park[] = [
         name: 'Mesa Arch',
         kinds: ['accessible'],
         photo: {
-          ...local('mesa-arch'),
-          alt: 'The view through Mesa Arch to the canyon and distant mountains',
-          credit: 'Larry D. Moore',
-          license: ccBy4,
-          sourceUrl: commons('View_Through_Mesa_Arch_Canyonlands_NP_Utah_2023.jpg'),
-          title: 'View Through Mesa Arch Canyonlands NP Utah 2023',
+          src: "/images/last-adventure/canyonlands/mesa-arch.jpg",
+          srcWebp: "/images/last-adventure/canyonlands/mesa-arch.webp",
+          alt: "Person snaps picture of a large arch made out of rock",
+          credit: "NPS/Nicole Segnini",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/5bfd9036-2621-44de-8a37-f02aafbc653a",
         },
         description:
           'There is a hush at Mesa Arch just before dawn, when everyone stops talking and waits. Then the sun clears the horizon and light pours through the 27-foot arch, framing the canyon far below and the La Sal Mountains in the distance. The walk is short enough for most of the family, and the park calls this its classic sunrise spot. Begin your loved one\'s last adventure here, and let the first light of the day belong to them.',
@@ -210,9 +206,11 @@ const pilotParks: Park[] = [
         name: 'Grand View Point',
         kinds: ['accessible'],
         photo: {
-          src: nps('F458D49C-ACE6-7003-D7E6833813DD455A'),
-          alt: 'White snow dusts the tops of the brown and red canyons from Grand View Point',
-          credit: 'NPS/Jacob W. Frank',
+          src: "/images/last-adventure/canyonlands/grand-view-point.jpg",
+          srcWebp: "/images/last-adventure/canyonlands/grand-view-point.webp",
+          alt: "A deep canyon displaying towers and spires outline by white sandstone",
+          credit: "NPS/Nicole Segnini",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/43000d0e-11e3-4773-920b-7cf95ba996c8",
         },
         description:
           'At the end of the road, Island in the Sky simply runs out of land. From Grand View Point the White Rim spreads out below, The Maze and The Needles lie beyond it, and distant mountains line the horizon. Some of you might follow the rim trail to the second viewpoint while others stay at the paved overlook, and everyone comes back with something to tell. It is a fitting place to look out together and think about how far a life can travel.',
@@ -258,9 +256,11 @@ const pilotParks: Park[] = [
         name: 'Confluence Overlook',
         kinds: ['extraordinary'],
         photo: {
-          src: nps('74177209-01FA-B216-D6D6DE60C5419B5E'),
-          alt: 'A green and gray river converge below towering canyon walls',
-          credit: 'NPS/Veronica Verdin',
+          src: "/images/last-adventure/canyonlands/confluence-overlook.jpg",
+          srcWebp: "/images/last-adventure/canyonlands/confluence-overlook.webp",
+          alt: "two rivers converge beneath tall canyon walls",
+          credit: "NPS/Emily Ogden",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/d92c5d14-d904-4ee7-a72c-fe5cdc003bef",
         },
         description:
           'Two great rivers, the Green and the Colorado, come together 1,000 feet below the cliff where this trail ends, and from that point on they flow as one. It takes a long day of walking across open desert to get here, and that is part of the meaning. Few places say so much about a family without a single word. Because this is one of the park\'s authorized scattering locations, the journey can end with the farewell itself, right where the rivers join.',
@@ -293,11 +293,7 @@ const pilotParks: Park[] = [
         id: 'druid-arch',
         name: 'Druid Arch',
         kinds: ['extraordinary'],
-        photo: {
-          src: nps('45DBB986-D73F-3F2A-D10F27667AF909CE'),
-          alt: 'A large sandstone arch looms across the skyline on a bright, sunny day',
-          credit: 'NPS/Veronica Verdin',
-        },
+        photo: null,
         description:
           'Druid Arch is the kind of destination your loved one might have talked about for years. The trail winds up Elephant Canyon through deep sand and loose rock, climbs a ladder and finishes with a scramble, until a towering stone arch fills the sky at the head of the canyon. The park calls the view one of the most spectacular in The Needles. For the adventurers in your family, carrying someone you love this far is a tribute all its own.',
         plan: {
@@ -341,10 +337,12 @@ const pilotParks: Park[] = [
     state: 'Wyoming',
     tagline: 'Jagged peaks rising straight from alpine lakes and the Snake River.',
     photo: {
-      src: nps('687B32E9-C51E-B209-01C817A7096A153D'),
-      alt: 'A small lake surrounded by mountains reflects the mountainous scenery',
-      credit: 'NPS Photo/J. Bonney',
-      caption: 'Lake Solitude',
+      src: "/images/last-adventure/grand-teton/park.jpg",
+      srcWebp: "/images/last-adventure/grand-teton/park.webp",
+      alt: "Alpenglow on the Teton Range",
+      credit: "NPS Photo",
+      sourceUrl: "https://npgallery.nps.gov/AssetDetail/7de0aea3-89ef-4629-9c73-791f8da2ae09",
+      caption: "Teton Range from Kelly Parcel",
     },
     intro:
       'The Teton Range rises straight out of the valley floor of Jackson Hole, mirrored in glacial lakes and the slow bends of the Snake River. Here a final adventure can be a sunrise at a roadside overlook, an easy morning walk to a lakeshore, or a full day climbing deep into a mountain canyon.',
@@ -371,14 +369,7 @@ const pilotParks: Park[] = [
         id: 'oxbow-bend',
         name: 'Oxbow Bend',
         kinds: ['accessible'],
-        photo: {
-          ...local('oxbow-bend'),
-          alt: 'Autumn color along the Snake River at Oxbow Bend, with the Teton Range beyond',
-          credit: 'Tony Hisgett',
-          license: ccBy2,
-          sourceUrl: commons('Oxbow_Bend_Grand_Teton_(8047187108).jpg'),
-          title: 'Oxbow Bend Grand Teton (8047187108)',
-        },
+        photo: null,
         description:
           'Some of the best goodbyes happen quietly, with a thermos of coffee and a view. At Oxbow Bend the Snake River slows into a lazy curve, and Mount Moran rises above it, mirrored in the water on a still day. You can stand together right beside the turnout, which makes this an ideal stop when grandparents, small children or anyone who can\'t hike is part of the trip. Bring a favorite photograph and let the mountain keep you company.',
         plan: {
@@ -399,11 +390,7 @@ const pilotParks: Park[] = [
         id: 'taggart-lake',
         name: 'Taggart Lake',
         kinds: ['accessible'],
-        photo: {
-          src: nps('6433D2E0-BABE-9A14-93620C92A3AB28A7'),
-          alt: 'A trail winds through bushes towards a mountain range',
-          credit: 'NPS Photo/J. Bonney',
-        },
+        photo: null,
         description:
           'The moment the trees open and the Teton Range appears in front of you stays with you. The trail to Taggart Lake climbs gently through aspens and ends at the water\'s edge, right at the foot of the peaks, a view the park counts among the best of the range. It is short enough that three generations can make the walk together, and in winter the same trail welcomes snowshoes. Find a spot along the shore and share a few stories.',
         plan: {
@@ -432,9 +419,11 @@ const pilotParks: Park[] = [
         name: 'Inspiration Point',
         kinds: ['accessible', 'extraordinary'],
         photo: {
-          src: nps('6827ED49-D54A-6883-E2FCA7EE7C00682E'),
-          alt: 'Hikers walk up a rocky trail with a cliff on the right',
-          credit: 'NPS Photo/J. Bonney',
+          src: "/images/last-adventure/grand-teton/inspiration-point.jpg",
+          srcWebp: "/images/last-adventure/grand-teton/inspiration-point.webp",
+          alt: "Hikers make their way down a steep path on the side of a cliff",
+          credit: "NPS/K. Grossman",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/bb89c243-0417-415c-bf13-b29cf832bf40",
         },
         description:
           'Start with a boat ride across Jenny Lake, the kind of simple adventure your loved one might have enjoyed most. On the far shore, the trail climbs past Hidden Falls, a 100-foot cascade, and up to a rocky ledge high above the lake. Below you, the water stretches back toward the valley of Jackson Hole. It is a wonderful place to pause, pass around old photographs and let the view do the talking for a while.',
@@ -471,9 +460,11 @@ const pilotParks: Park[] = [
         name: 'Lake Solitude',
         kinds: ['extraordinary'],
         photo: {
-          src: nps('687B32E9-C51E-B209-01C817A7096A153D'),
-          alt: 'A small lake surrounded by mountains reflects the mountainous scenery',
-          credit: 'NPS Photo/J. Bonney',
+          src: "/images/last-adventure/grand-teton/lake-solitude.jpg",
+          srcWebp: "/images/last-adventure/grand-teton/lake-solitude.webp",
+          alt: "hikers, Lake Solitude, partly frozen, snow on ground",
+          credit: "NPS",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/fd829613-155d-451f-6700-7a9a37521839",
         },
         description:
           'The name says it all. Lake Solitude rests in a basin of peaks at the head of the North Fork of Cascade Canyon, a full day\'s walk from the nearest road. The journey brings mountain views around nearly every bend and plenty of chances to watch for wildlife. For the hikers in your family, sitting together on its shore at the end of that long day, far from everything, could become one of the proudest memories you share.',
@@ -512,10 +503,12 @@ const pilotParks: Park[] = [
     state: 'California',
     tagline: 'Granite walls, waterfalls and the unmistakable shape of Half Dome.',
     photo: {
-      src: nps('0CFC2E25-B7B1-A12D-8621A2F88303D8EF'),
-      alt: 'Large granite monoliths in the distance with a dense conifer forest below',
-      credit: 'NPS Photo/C. Jacoby',
-      caption: 'Yosemite Valley from Tunnel View',
+      src: "/images/last-adventure/yosemite/park.jpg",
+      srcWebp: "/images/last-adventure/yosemite/park.webp",
+      alt: "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
+      credit: "National Park Service (H. Kajitani)",
+      sourceUrl: "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
+      caption: "Half Dome at sunset in fall",
     },
     intro:
       'Granite walls, thundering waterfalls and the silhouette of Half Dome make Yosemite Valley one of the most recognizable landscapes on earth. A final adventure here can be as gentle as a short walk to a famous viewpoint or as demanding as a sunrise start for the cables of Half Dome.',
@@ -545,11 +538,7 @@ const pilotParks: Park[] = [
         id: 'tunnel-view',
         name: 'Tunnel View',
         kinds: ['accessible'],
-        photo: {
-          src: nps('0CFC2E25-B7B1-A12D-8621A2F88303D8EF'),
-          alt: 'Large granite monoliths in the distance with a dense conifer forest below',
-          credit: 'NPS Photo/C. Jacoby',
-        },
+        photo: null,
         description:
           'Step out of the Wawona Tunnel and all of Yosemite Valley appears at once: El Capitan on one side, Bridalveil Fall on the other and Half Dome rising in the distance. It is the defining view of the valley, and it waits right beside the parking area, with accessible parking and a short paved walk. Gather everyone at the viewing area, take the photograph you will treasure, and take a quiet moment for the person who brought you all here.',
         plan: {
@@ -570,14 +559,7 @@ const pilotParks: Park[] = [
         id: 'glacier-point',
         name: 'Glacier Point',
         kinds: ['accessible'],
-        photo: {
-          ...local('glacier-point'),
-          alt: 'Half Dome seen from Glacier Point above Yosemite Valley',
-          credit: 'Diliff',
-          license: ccBySa3,
-          sourceUrl: commons('Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg'),
-          title: 'Half Dome from Glacier Point, Yosemite NP - Diliff',
-        },
+        photo: null,
         description:
           'Standing at Glacier Point feels like looking down on all of Yosemite. The valley floor lies 3,200 feet below the railing, and Half Dome rises directly across from you with the High Sierra beyond. A short paved path leads from the parking area, so nearly everyone can come, whatever their age or mobility. Bring a favorite story, a few photographs and enough time to simply stand together and take it in.',
         plan: {
@@ -604,14 +586,7 @@ const pilotParks: Park[] = [
         id: 'taft-point',
         name: 'Taft Point',
         kinds: ['accessible', 'extraordinary'],
-        photo: {
-          ...local('taft-point'),
-          alt: 'Taft Point on the rim above Yosemite Valley',
-          credit: 'Dave from San Jose, CA, USA',
-          license: ccBy2,
-          sourceUrl: commons('Taft_Point_Panorama.jpg'),
-          title: 'Taft Point Panorama',
-        },
+        photo: null,
         description:
           'One moment you are walking through quiet forest and meadow; the next, the ground ends at the edge of Yosemite Valley. Deep cracks called The Fissures split the granite beside you, and across the valley stand El Capitan and Yosemite Falls. It is a breathtaking place for the members of your family who are comfortable with heights, and the walk is short enough to leave plenty of time for stories at the rim.',
         plan: {
@@ -643,14 +618,7 @@ const pilotParks: Park[] = [
         id: 'sentinel-dome',
         name: 'Sentinel Dome',
         kinds: ['extraordinary'],
-        photo: {
-          ...local('sentinel-dome'),
-          alt: 'The bare granite of Sentinel Dome in Yosemite National Park',
-          credit: 'Supercarwaar',
-          license: ccBySa4,
-          sourceUrl: commons('Sentinel_Dome,_Yosemite_NP.jpg'),
-          title: 'Sentinel Dome, Yosemite NP',
-        },
+        photo: null,
         description:
           'Some places make you feel as if you have reached the top of the world, and Sentinel Dome is one of them. From the summit, Yosemite opens in every direction, with Half Dome rising across the valley and the High Sierra stretching toward the horizon. Imagine sitting together up here, telling the stories that still make everyone laugh, and giving someone you love one last extraordinary day in a place none of you will forget.',
         plan: {
@@ -680,13 +648,11 @@ const pilotParks: Park[] = [
         name: 'Half Dome',
         kinds: ['extraordinary'],
         photo: {
-          ...local('half-dome'),
-          alt: 'Hikers climbing the cables up the granite of Half Dome',
-          credit: 'Lucas·G',
-          license: ccBySa4,
-          sourceUrl: commons('California,_Yosemite_National_Park,_Half_Dome,_hiking_up.jpg'),
-          title: 'California, Yosemite National Park, Half Dome, hiking up',
-          position: '50% 35%',
+          src: "/images/last-adventure/yosemite/half-dome.jpg",
+          srcWebp: "/images/last-adventure/yosemite/half-dome.webp",
+          alt: "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
+          credit: "National Park Service (H. Kajitani)",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
         },
         description:
           'If your loved one ever stood beneath Half Dome and wondered what the top was like, this is a chance to finish that climb for them. The trail passes Vernal and Nevada Falls before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It is one of the hardest days in the park and requires a permit, but the moment you stand on top together will stay with you for a lifetime.',
@@ -730,10 +696,12 @@ const pilotParks: Park[] = [
     state: 'Washington',
     tagline: 'An ice-clad volcano rising above wildflower meadows.',
     photo: {
-      src: 'https://www.nps.gov/mora/planyourvisit/images/Paradise-Wildflower-Meadow_NPSPhoto_webtop.jpeg',
-      alt: 'Wildflowers paint a meadow in blues and purples',
-      credit: 'NPS/M. Larson',
-      caption: 'Wildflower meadow at Paradise',
+      src: "/images/last-adventure/mount-rainier/park.jpg",
+      srcWebp: "/images/last-adventure/mount-rainier/park.webp",
+      alt: "Warm yellow-red light illuminates a glaciated mountain with the lower slopes hidden by shadows",
+      credit: "NPS/C. Meleedy",
+      sourceUrl: "https://npgallery.nps.gov/AssetDetail/3312bb75-55d6-4b7f-8927-ea70bd30a62c",
+      caption: "Mount Rainier sunrise from Summerland",
     },
     intro:
       'An ice-clad volcano rising above wildflower meadows, waterfalls and old-growth forest. Paradise and Sunrise put the mountain right in front of you, and the park has named roadside places where a family can scatter ashes with a permit.',
@@ -765,9 +733,11 @@ const pilotParks: Park[] = [
         name: 'Myrtle Falls',
         kinds: ['accessible'],
         photo: {
-          src: nps('E110A0B3-D90D-16A0-C52F9A472AEB63BB'),
-          alt: 'Braided cascade with glaciated mountain behind it',
-          credit: 'NPS Photo',
+          src: "/images/last-adventure/mount-rainier/myrtle-falls.jpg",
+          srcWebp: "/images/last-adventure/mount-rainier/myrtle-falls.webp",
+          alt: "A wooden bridge over Myrtle Falls below Mount Rainier",
+          credit: "NPS/B. Burnett Photo",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/b8793380-f674-4d62-a2dc-5aa9d1c26579",
         },
         description:
           'Mount Rainier never feels closer than it does at Myrtle Falls. A short, paved walk from Paradise leads through the meadows to Edith Creek, where the falls tumble down with the mountain\'s glaciers rising right behind them. Strollers and wheelchairs with help can make the trip, so the youngest and oldest members of the family can stand side by side for this one. Bring a camera; this is the picture everyone will want.',
@@ -803,13 +773,11 @@ const pilotParks: Park[] = [
         name: 'Sunrise Point',
         kinds: ['accessible'],
         photo: {
-          ...local('sunrise-point'),
-          alt: 'Evening light from Sunrise Point in Mount Rainier National Park',
-          credit: 'Buidhe',
-          license: ccBySa4,
-          sourceUrl: commons('Sunset_from_Sunrise_Point_(7_October_2024)_4.jpg'),
-          title: 'Sunset from Sunrise Point (7 October 2024) 4',
-          position: '22% 50%',
+          src: "/images/last-adventure/mount-rainier/sunrise-point.jpg",
+          srcWebp: "/images/last-adventure/mount-rainier/sunrise-point.webp",
+          alt: "A road curves through a golden meadow with patches of fir trees ending at a small cluster of buildings. Above the meadow rises a tall glaciated mountain, its summit wrapped in",
+          credit: "NPS Photo",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/163a05fa-3224-4103-937d-dfb5ca310c0f",
         },
         description:
           'As the afternoon light softens, Sunrise Point opens a view in almost every direction: deep valleys below, Mount Rainier on the skyline and other Cascade volcanoes such as Mount Adams farther off. It is also one of the park\'s designated scattering locations, so you can share stories, watch the light change and say your goodbye in the same place, just steps from the car.',
@@ -832,15 +800,7 @@ const pilotParks: Park[] = [
         id: 'panorama-point',
         name: 'Panorama Point',
         kinds: ['extraordinary'],
-        photo: {
-          ...local('panorama-point'),
-          alt: 'Mount Rainier seen from Panorama Point',
-          credit: 'Mount Rainier National Park (NPS photo by Emily Brouwer)',
-          license: ccBy2,
-          sourceUrl: commons('Mount_Rainier_from_Panorama_Point_(14679537685).jpg'),
-          title: 'Mount Rainier from Panorama Point (14679537685)',
-          position: '50% 40%',
-        },
+        photo: null,
         description:
           'Every step up the Skyline Trail brings Mount Rainier a little closer, until Panorama Point leaves you face to face with its glaciers. It is a real climb, and the effort is part of what makes it meaningful: a few hours of walking side by side above the Paradise meadows, then a moment at the top to rest, look up at the mountain and remember someone who would have loved being here with you.',
         plan: {
@@ -877,11 +837,11 @@ const pilotParks: Park[] = [
         name: 'Mount Fremont Lookout',
         kinds: ['extraordinary'],
         photo: {
-          ...local('mount-fremont-lookout'),
-          alt: 'The Mount Fremont fire lookout on its rocky ridge',
-          credit: 'Steve Redman, NPS',
-          license: { name: 'Public domain', url: 'https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS' },
-          sourceUrl: commons('Fremont_Lookout_(7a7e9acb7ae747beb074f5bf4111bbc9).JPG'),
+          src: "/images/last-adventure/mount-rainier/mount-fremont-lookout.jpg",
+          srcWebp: "/images/last-adventure/mount-rainier/mount-fremont-lookout.webp",
+          alt: "A square fire lookout with windows on all four sides and a wrap around porch perched on the edge of a rocky ridge",
+          credit: "NPS Photo",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/ee483ece-dd2c-43eb-a011-6eaff0ed4465",
         },
         description:
           'Fire lookouts were built so someone could keep watch over the land, and there is something fitting about bringing your loved one to this one. The trail follows a high ridge from Sunrise, past Frozen Lake, to a rocky point where the old lookout faces Mount Rainier across Grand Park. Find a place to sit, share your favorite stories and watch the mountain together for as long as you like.',
@@ -924,10 +884,12 @@ const pilotParks: Park[] = [
     state: 'Arizona',
     tagline: 'A mile-deep canyon of changing light, seen from the rim and from the trail.',
     photo: {
-      src: nps('DC1C0370-C525-3032-77CC28C8F979E458'),
-      alt: 'A circular stone tower, 70 feet tall, perched on the edge of a vast canyon',
-      credit: 'NPS/M. Quinn',
-      caption: 'Desert View Watchtower',
+      src: "/images/last-adventure/grand-canyon/park.jpg",
+      srcWebp: "/images/last-adventure/grand-canyon/park.webp",
+      alt: "Canyon View with flat dirt area surrounded by shrubs",
+      credit: "NPS/CDubin",
+      sourceUrl: "https://npgallery.nps.gov/AssetDetail/47ee7983-f6ef-4c9d-915e-d29743b9251b",
+      caption: "Pima Point View",
     },
     intro:
       'A mile deep and endlessly changing with the light, the Grand Canyon is a place families come back to for a lifetime. Scattering is not allowed anywhere in the park, but it remains an extraordinary place to gather, share memories and say goodbye.',
@@ -953,9 +915,11 @@ const pilotParks: Park[] = [
         name: 'Desert View Watchtower',
         kinds: ['accessible'],
         photo: {
-          src: nps('DC1C0370-C525-3032-77CC28C8F979E458'),
-          alt: 'A circular stone tower, 70 feet tall, perched on the edge of a vast canyon',
-          credit: 'NPS/M. Quinn',
+          src: "/images/last-adventure/grand-canyon/desert-view-watchtower.jpg",
+          srcWebp: "/images/last-adventure/grand-canyon/desert-view-watchtower.webp",
+          alt: "A tall, round, four-story, stone tower with multiple small windows, throughout, and larger observation deck windows near the top",
+          credit: "NPS/M. Quinn",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/f7471dd8-155d-451f-6720-fddbdaeaf757",
         },
         description:
           'At the eastern edge of the South Rim, a stone tower rises from the canyon\'s edge as if it had always been there. Mary Colter designed the Watchtower in 1932, and its round View Room was meant as a place to rest and take in the canyon. From the rim nearby, the Colorado River leaves narrow Marble Canyon and opens into the vast Grand Canyon. It is an easy walk from the parking area, and a place made for lingering together.',
@@ -980,10 +944,11 @@ const pilotParks: Park[] = [
         name: 'Ooh Aah Point and Cedar Ridge',
         kinds: ['extraordinary'],
         photo: {
-          src: nps('B4E27A94-95C8-0019-58893581D89DFCBD'),
-          alt: 'Several trail switchbacks are cut into a cliff of tan rock',
-          credit: 'NPS/M. Quinn',
-          caption: 'South Kaibab Trail',
+          src: "/images/last-adventure/grand-canyon/ooh-aah-point.jpg",
+          srcWebp: "/images/last-adventure/grand-canyon/ooh-aah-point.webp",
+          alt: "several people standing and sitting on a sloping sandstone ledge are overlooking an expansive canyon landscape",
+          credit: "NPS/M.Quinn",
+          sourceUrl: "https://npgallery.nps.gov/AssetDetail/45e6c3ca-93dd-4675-865e-d85e86ddf00a",
         },
         description:
           'From the first switchbacks of the South Kaibab Trail, the canyon opens beneath your feet. Ooh Aah Point, less than a mile down, is the place to stop, catch your breath and simply stare. Go together, find a spot along the ridge and tell the stories that belong to the person you came here for. Hikers who want more can continue to Cedar Ridge, but remember that every step down is one you will climb back up.',
@@ -1018,12 +983,7 @@ const pilotParks: Park[] = [
         id: 'plateau-point',
         name: 'Plateau Point',
         kinds: ['extraordinary'],
-        photo: {
-          src: nps('3CF1FA2F-F5C3-E839-3CE0746FFE55B295'),
-          alt: 'A dirt trail with steps descends into the canyon past a short cliff',
-          credit: 'NPS/Ty Karlovetz',
-          caption: 'Bright Angel Trail',
-        },
+        photo: null,
         description:
           'Deep below the rim, Plateau Point stands directly above the Colorado River, the river that carved the Grand Canyon. Reaching it is a full, demanding day down the Bright Angel Trail and out along a flat, exposed path from Havasupai Gardens. For the strongest hikers in the family, standing at this edge with your loved one\'s memory is a way of saying they went all the way, and that you went with them.',
         plan: {

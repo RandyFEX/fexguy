@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/crater-lake/park.jpg",
     "srcWebp": "/images/last-adventure/crater-lake/park.webp",
-    "alt": "Wizard Island rising from the deep blue water of Crater Lake, with snow on the caldera rim",
-    "credit": "King of Hearts",
-    "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_Lake_October_2019_015.jpg", "title": "Crater Lake October 2019 015",
-    "caption": "Wizard Island and Crater Lake from the west rim"
+    "alt": "A view of the Phantom Ship, with Mount Scott in the distance",
+    "credit": "National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/bfde4d39-1dd8-b71b-0bfb-3a4ebef89458",
+    "caption": "The Phantom Ship and Mount Scott from Garfield Peak"
   },
   "intro": "Crater Lake fills the shell of Mount Mazama, a volcano that collapsed after a major eruption 7,700 years ago. Fed only by rain and snow, it is 1,943 feet deep, the deepest lake in the United States. The 33-mile Rim Drive circles the caldera past 30 historic overlooks, so a family can share the view from a stone balcony at Rim Village, a quiet meadow trail or a fire lookout high above the water.",
   "homepage": "https://www.nps.gov/crla/",
@@ -42,8 +41,9 @@
       "photo": {
         "src": "/images/last-adventure/crater-lake/sinnott-memorial-overlook.jpg",
         "srcWebp": "/images/last-adventure/crater-lake/sinnott-memorial-overlook.webp",
-        "alt": "Visitors stand on the stone Sinnott Memorial overlook built into the cliff above Crater Lake",
-        "credit": "NPS Photo"
+        "alt": "Visitors in the covered overlook are silhouetted against the blue expanse of lake and sky",
+        "credit": "NPS Photo, Gjesfjeld, 2010",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/70f2cbaa-b57b-8965-4d0f-308630367c23"
       },
       "description": "Tucked into a rock outcrop called Victor Rock, 50 feet below the rim, the Sinnott Memorial feels like a stone balcony hung over the caldera. The park calls it its most popular viewpoint, and from the sheltered railing the blue water fills the frame below you. Inside, a short film and exhibits tell the story of Mount Mazama. Lean on the rail together, let the youngest ones count the colors in the water, and tell the story of the first time your loved one saw this lake.",
       "plan": {
@@ -76,10 +76,9 @@
       "photo": {
         "src": "/images/last-adventure/crater-lake/sun-notch.jpg",
         "srcWebp": "/images/last-adventure/crater-lake/sun-notch.webp",
-        "alt": "The Phantom Ship rock island in Crater Lake seen from the Sun Notch Trail",
-        "credit": "NPS Photo",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_Ship,_Crater_Lake_National_Park.jpg"
+        "alt": "The Phantom Ship, as seen from the Sun Notch Trail",
+        "credit": "National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c1ae9215-1dd8-b71b-0b8c-ccfa5f9bd50c"
       },
       "description": "The path to Sun Notch curves uphill around a grassy meadow ringed by forest, and then the rim opens beneath you. Far below sits the Phantom Ship, a small island of rock resting on the blue water against the steep caldera walls. It is a short, gentle outing, the kind where everyone arrives together and nobody is rushed. Pause here and talk about the voyages your loved one took, and the ones they always meant to take.",
       "plan": {
@@ -110,15 +109,7 @@
       "id": "plaikni-falls",
       "name": "Plaikni Falls",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/crater-lake/plaikni-falls.jpg",
-        "srcWebp": "/images/last-adventure/crater-lake/plaikni-falls.webp",
-        "alt": "Plaikni Falls tumbling over dark rock above green slopes at the end of its trail",
-        "credit": "Bobjgalindo",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arriving_at_Plaikni_Falls_01.jpg", "title": "Arriving at Plaikni Falls 01",
-        "position": "50% 40%"
-      },
+      "photo": null,
       "description": "Away from the crowds on the rim, this trail wanders through quiet forest to a waterfall fed by snowmelt, with wildflowers blooming along the way in season. When the path bends to the right, the park suggests listening for pikas, marmots and songbirds. It is an unhurried walk that lets conversation come easily, and the sound of falling water makes a gentle backdrop for reading a letter aloud or sharing a favorite memory beside the falls.",
       "plan": {
         "distance": "2.0 mi round trip",
@@ -153,11 +144,9 @@
       "photo": {
         "src": "/images/last-adventure/crater-lake/watchman-peak.jpg",
         "srcWebp": "/images/last-adventure/crater-lake/watchman-peak.webp",
-        "alt": "The Watchman fire lookout on its rocky summit above Crater Lake",
-        "credit": "Guywelch2000",
-        "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watchman_Peak_June_2025_and_fire_lookout,_Crater_Lake_National_Park.jpg",
-    "title": "Watchman Peak June 2025 and fire lookout, Crater Lake National Park"
+        "alt": "The rock structure of the observation station appears to grow out of the natural rock formations of a hillside",
+        "credit": "NPS, 2001",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7e303e5-c38b-8388-86b7-790f9a7db49d"
       },
       "description": "A steady climb from West Rim Drive ends at an old fire lookout on the summit, where the view turns a full circle: across the deep blue lake on one side and out over the surrounding volcanic landscape on the other. The park warns that the trail is extremely crowded at sunset, so an earlier hour can feel more private. Find a rock to sit on together, let everyone catch their breath, and watch the light move across the water you came all this way to see.",
       "plan": {

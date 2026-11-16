@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/yellowstone/park.jpg",
     "srcWebp": "/images/last-adventure/yellowstone/park.webp",
-    "alt": "A waterfall cascades over a cliff in a canyon with pale colored walls",
-    "credit": "NPS / Jacob W. Frank",
-    "caption": "Lower Falls in the Grand Canyon of the Yellowstone"
+    "alt": "A wide column of water erupts from a pool surrounded by terraces with and orange sky in the background",
+    "credit": "NPS/Neal Herbert",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/293fdc01-1c52-44cb-abe8-7c5da7079b03",
+    "caption": "Sunset eruption of Great Fountain Geyser, Lower Geyser Basin"
   },
   "intro": "Yellowstone became the world's first national park in 1872, and its geysers, hot springs and canyon still draw families from every corner of the country. A final adventure here can be as gentle as waiting together for Old Faithful to erupt, or as demanding as a climb to a mountaintop fire lookout. Between the two lie paved canyon overlooks and wide valleys where bison and elk graze beside the road.",
   "homepage": "https://www.nps.gov/yell/",
@@ -38,8 +39,9 @@
       "photo": {
         "src": "/images/last-adventure/yellowstone/old-faithful.jpg",
         "srcWebp": "/images/last-adventure/yellowstone/old-faithful.webp",
-        "alt": "Visitors watch an eruption of Old Faithful Geyser",
-        "credit": "NPS / Jacob W. Frank"
+        "alt": "Man holding phone towards Old Faithful Geyser as it erupts",
+        "credit": "NPS/Neal Herbert",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2d39c0ac-2c2b-4af8-839c-d9e3f47f7323"
       },
       "description": "Families have gathered in this semicircle of benches for well over a century, all waiting for the same thing. The crowd goes quiet, steam builds over the cone, and then a column of boiling water climbs as high as 184 feet into the sky. Old Faithful erupts more often than any of the park's other big geysers, so you can plan your moment almost to the minute. Sit close together, hold a favorite photograph, and let the eruption mark the start of this last journey.",
       "plan": {
@@ -71,8 +73,9 @@
       "photo": {
         "src": "/images/last-adventure/yellowstone/grand-prismatic-overlook.jpg",
         "srcWebp": "/images/last-adventure/yellowstone/grand-prismatic-overlook.webp",
-        "alt": "A large, colorful hot spring as viewed from above",
-        "credit": "NPS / Diane Renkin"
+        "alt": "Looking down from the overlook onto Grand Prismatic Spring and people on the boardwalk next to it",
+        "credit": "NPS/Diane Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/ac28edac-bfff-4187-8e96-b5edc2e965bf"
       },
       "description": "From the boardwalk, Grand Prismatic Spring is a cloud of steam. From this hillside it becomes what people come to see: a vast pool of deep blue ringed by bands of orange and gold, spread out across Midway Geyser Basin below you. The trail climbs gently, so grandparents and children can make the walk together and stand side by side at the top. Few colors in nature are this vivid, and it is a fitting place to remember a life lived brightly.",
       "plan": {
@@ -111,8 +114,9 @@
       "photo": {
         "src": "/images/last-adventure/yellowstone/artist-point.jpg",
         "srcWebp": "/images/last-adventure/yellowstone/artist-point.webp",
-        "alt": "A 300 foot waterfall spills into a canyon colored in shades of yellow and gray",
-        "credit": "NPS / Jacob W. Frank"
+        "alt": "Looking through a deep canyon full of orange and pink colors",
+        "credit": "NPS/Diane Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/287f74cf-9bf1-4196-a534-a08b9b432fbe"
       },
       "description": "The Grand Canyon of the Yellowstone glows in shades of yellow, pink and cream, and at its head the Lower Falls drop 308 feet in a white roar of spray. Artist Point frames it all from the South Rim, with the river curving away through the canyon below. A paved walkway leads out to the viewing areas, so everyone in the family can reach the rail. Morning light paints the canyon walls; stand together and take your time before you turn back.",
       "plan": {
@@ -142,8 +146,9 @@
       "photo": {
         "src": "/images/last-adventure/yellowstone/lamar-valley.jpg",
         "srcWebp": "/images/last-adventure/yellowstone/lamar-valley.webp",
-        "alt": "A group of photographers with telephoto lenses stand on a knoll and look out into the distance",
-        "credit": "NPS / Diane Renkin"
+        "alt": "A wide open, green river valley with blue skies and mountains in the background",
+        "credit": "NPS/Neal Herbert",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9da42609-9f2d-4886-94fd-a9e5d4d66529"
       },
       "description": "Some families measure a life in quiet mornings, and Lamar Valley rewards patience. Wide grasslands roll toward the mountains, and some of the largest wild herds of bison and elk in North America graze along the river. The park calls this northern range one of the best places in the world to watch wolves. Pull over with a thermos and binoculars, pass them around, and tell the stories your loved one liked best while the valley wakes up around you.",
       "plan": {
@@ -171,8 +176,9 @@
       "photo": {
         "src": "/images/last-adventure/yellowstone/mount-washburn.jpg",
         "srcWebp": "/images/last-adventure/yellowstone/mount-washburn.webp",
-        "alt": "A trail crosses a ridgeline above forests and meadows",
-        "credit": "NPS / Addy Falgoust"
+        "alt": "Looking across a grassy slope at a mountain with patches of snow on it",
+        "credit": "NPS/D. Renkin",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a0d1022e-155d-451f-672a-ff93267a3f03"
       },
       "description": "The trail from Dunraven Pass climbs steadily through wildflower meadows where bighorn sheep often graze, and the views widen with every switchback. At the 10,219-foot summit stands a working fire lookout, and on a clear day the panorama stretches 20 to 50 miles across the heart of the park. For a family that loves high places, carrying someone dear to this summit is a fitting tribute. Rest inside the shelter at the base of the lookout and look out across Yellowstone together.",
       "plan": {

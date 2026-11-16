@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/great-sand-dunes/park.jpg",
     "srcWebp": "/images/last-adventure/great-sand-dunes/park.webp",
-    "alt": "A panoramic view of dunes, with mountains in the distance and blue sky above",
+    "alt": "Panoramic View of Dunefield from Sangre de Cristo Mountains",
     "credit": "NPS/Patrick Myers",
-    "caption": "Hidden Dune and the dunefield below the Sangre de Cristo Mountains"
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6ed5b09a-08c0-4a77-9116-1363a02bb447",
+    "caption": "Panoramic View of Dunefield from Sangre de Cristo Mountains"
   },
   "intro": "A 30-square-mile sea of sand rises against the Sangre de Cristo Mountains in Colorado's San Luis Valley, holding the tallest dunes in North America. In late spring, snowmelt from the peaks becomes Medano Creek, a shallow stream that flows in waves across the sand at the foot of the dunes. There are no trails in the dunefield, so every family finds its own way up the ridgelines.",
   "homepage": "https://www.nps.gov/grsa/",
@@ -39,8 +40,9 @@
       "photo": {
         "src": "/images/last-adventure/great-sand-dunes/medano-creek.jpg",
         "srcWebp": "/images/last-adventure/great-sand-dunes/medano-creek.webp",
-        "alt": "Children playing in a wave surging down a wide creek at the base of the dunes and mountains",
-        "credit": "NPS/Patrick Myers"
+        "alt": "Dune Ridges Above Medano Creek and Cottonwood Trees",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/dfb04102-d210-4830-ad0b-798bde51cc09"
       },
       "description": "In late spring, snowmelt from the mountains spreads across the sand in a wide, shallow stream, and every twenty seconds or so a small wave rolls down the creek bed. The park calls this surge flow, and Medano Creek is one of the few places on earth to see it. Grandparents can settle in at the water's edge while children splash and build sand castles, with the dunes rising straight ahead. It feels less like a farewell than a beach day your loved one would have wanted for everyone.",
       "plan": {
@@ -68,12 +70,7 @@
       "id": "high-dune-on-first-ridge",
       "name": "High Dune on First Ridge",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.jpg",
-        "srcWebp": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.webp",
-        "alt": "The top of a tall dune is illuminated by the rising sun, as clouds swirl in blue sky",
-        "credit": "NPS/Patrick Myers"
-      },
+      "photo": null,
       "description": "From the parking lot, this crest looks like the highest point in the dunefield, and that is reason enough to climb it. There is no trail: you cross the creek bed and zigzag up the ridgelines together, leaving footprints the wind will smooth away by evening. At the top the entire dunefield opens around you, wave after wave of sand rolling toward the mountains. Sit on the ridge, catch your breath, and share the stories that made this person who they were.",
       "plan": {
         "distance": "About 2.5 mi round trip, with no trail",
@@ -113,12 +110,7 @@
       "id": "hidden-dune",
       "name": "Hidden Dune",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/great-sand-dunes/hidden-dune.jpg",
-        "srcWebp": "/images/last-adventure/great-sand-dunes/hidden-dune.webp",
-        "alt": "A panoramic view of dunes, with mountains in the distance and blue sky above",
-        "credit": "NPS/Patrick Myers"
-      },
+      "photo": null,
       "description": "Hidden Dune earns its name: tucked deep in the dunefield, it cannot be seen from the main visitor areas, and a false summit keeps the true top out of sight for much of the climb. The park lists it among the two tallest dunes in North America. Reaching it takes most of a day of walking through open sand, just you, the people you love and the long shadows of the ridges. For a family that never did anything halfway, it is a summit worth carrying someone to.",
       "plan": {
         "distance": "About 7 mi round trip from the Dunes Parking Lot, with no trail",

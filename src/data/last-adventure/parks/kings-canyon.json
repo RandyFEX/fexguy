@@ -6,13 +6,12 @@
   "states": ["California"],
   "tagline": "Sequoia groves, high Sierra vistas and a glacier-carved canyon of granite walls.",
   "photo": {
-    "src": "/images/last-adventure/kings-canyon/park.jpg",
-    "srcWebp": "/images/last-adventure/kings-canyon/park.webp",
-    "alt": "Zumwalt Meadow beneath the granite walls of Kings Canyon",
-    "credit": "Carson Chiavatti",
-    "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kings_Canyon_National_Park,_Zumwalt_Meadows.jpg", "title": "Kings Canyon National Park, Zumwalt Meadows",
-    "caption": "Zumwalt Meadow in Cedar Grove"
+    "src": "/images/last-adventure/kings-canyon/general-grant-tree.jpg",
+    "srcWebp": "/images/last-adventure/kings-canyon/general-grant-tree.webp",
+    "alt": "Several sprinklers attached to hoses around the General Grant Tree moisten the area to reduce the threat of burning in an approaching wildfire. Firefighter in background is",
+    "credit": "Elizabeth Wu, National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2575ffca-2801-480e-ba27-85f80ca84b5a",
+    "caption": "The General Grant Tree"
   },
   "intro": "Kings Canyon has two faces. At Grant Grove, the General Grant Tree, the Nation's Christmas Tree, rises among giant sequoias, and Panoramic Point looks out across the High Sierra. An hour's drive below, the Kings River runs through Cedar Grove between towering granite walls, past meadows and waterfalls. A final adventure here can be a quiet walk among the big trees, a view that seems to take in the whole range, or a long day on the trail to a thundering cascade.",
   "homepage": "https://www.nps.gov/seki/",
@@ -49,10 +48,9 @@
       "photo": {
         "src": "/images/last-adventure/kings-canyon/general-grant-tree.jpg",
         "srcWebp": "/images/last-adventure/kings-canyon/general-grant-tree.webp",
-        "alt": "The General Grant Tree in Grant Grove, Kings Canyon National Park",
-        "credit": "Bradluke22",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/File:General_Grant_Tree%27_July_07%27.jpg" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:General_Grant_Tree%27_July_07%27.jpg"
+        "alt": "Several sprinklers attached to hoses around the General Grant Tree moisten the area to reduce the threat of burning in an approaching wildfire. Firefighter in background is",
+        "credit": "Elizabeth Wu, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2575ffca-2801-480e-ba27-85f80ca84b5a"
       },
       "description": "The General Grant Tree is the second-largest tree in the world, and it carries two more titles: the Nation's Christmas Tree and the country's only living national shrine. A paved loop leads through the Grant Grove to its base, past the historic Gamlin Cabin and the Fallen Monarch, a sequoia you can walk inside. Benches wait at pullouts along the way, so there is time to sit together beneath its 268-foot crown and simply be with one another.",
       "plan": {
@@ -88,15 +86,7 @@
       "id": "panoramic-point",
       "name": "Panoramic Point",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/kings-canyon/panoramic-point.jpg",
-        "srcWebp": "/images/last-adventure/kings-canyon/panoramic-point.webp",
-        "alt": "View from Panoramic Point over forested ridges toward Hume Lake and the Sierra",
-        "credit": "Pavel Špindler",
-        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C3%BDhled_z_Panoramic_Point_na_jezero_Hume_Lake_-_panoramio.jpg",
-    "title": "Výhled z Panoramic Point na jezero Hume Lake - panoramio"
-      },
+      "photo": null,
       "description": "From Panoramic Point you look across hundreds of miles of Kings Canyon and the neighboring forest lands. Hume Lake sits far below, and beyond it the deep glacial gorge of Kings Canyon opens toward a skyline of High Sierra peaks. Artists, poets and early leaders of the national park idea all spent time on these heights. Bring a thermos and a few photographs, and let the family take in a view wide enough to hold a whole lifetime of memories.",
       "plan": {
         "distance": "Half-mile accessible trail to the viewing area",
@@ -130,11 +120,9 @@
       "photo": {
         "src": "/images/last-adventure/kings-canyon/roaring-river-falls.jpg",
         "srcWebp": "/images/last-adventure/kings-canyon/roaring-river-falls.webp",
-        "alt": "Roaring River Falls pouring through a granite chute into a pool",
-        "credit": "Niagara66",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roaring_River_Falls,_Kings_Canyon_National_Park.jpg",
-    "title": "Roaring River Falls, Kings Canyon National Park"
+        "alt": "A powerful rush of water pours from a short chute into a pool within a granite canyon",
+        "credit": "NPS/Chad Beale",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6c48ecf2-ef6b-4f45-ac52-c4c077aa3a37"
       },
       "description": "Roaring River travels down from deep wilderness canyons and crashes through a narrow granite chute into a pool, and on a warm day the falling water stirs up its own cool breeze. A short, shady, paved walk brings the whole family to the spray, where mist swirls up into the treetops. Stand together by the water, let its sound fill the quiet, and take a moment to remember. Those who want to walk on can follow the River Trail toward Zumwalt Meadow.",
       "plan": {
@@ -173,11 +161,9 @@
       "photo": {
         "src": "/images/last-adventure/kings-canyon/mist-falls.jpg",
         "srcWebp": "/images/last-adventure/kings-canyon/mist-falls.webp",
-        "alt": "Mist Falls tumbling over granite in the South Fork Canyon of the Kings River",
-        "credit": "Moonlitserenity",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mist_Falls,_Kings_Canyon_National_Park.JPG",
-    "title": "Mist Falls, Kings Canyon National Park"
+        "alt": "Raging water falls into rocks at Mist Falls",
+        "credit": "NPS/Rick Cain",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0a2ff2fe-9595-40c5-a18b-790db866bae1"
       },
       "description": "From Road's End, the trail to Mist Falls follows the glaciated South Fork Canyon through forest and chaparral, past a long show of rapids and cascades, to one of the largest waterfalls in the two parks. It is a full day on foot, mostly gentle until the last wooded mile, and that steady walking side by side leaves plenty of room for conversation. At the falls, find a safe, dry rock well back from the spray and share the stories you came to tell.",
       "plan": {

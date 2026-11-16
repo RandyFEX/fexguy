@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/lake-clark/park.jpg",
     "srcWebp": "/images/last-adventure/lake-clark/park.webp",
-    "alt": "Landscape view of mountains and lake in the background, trees and ponds in the middle ground and trees in the foreground",
-    "credit": "NPS Photo/T. Vaughn",
-    "caption": "Beaver Pond and Lake Clark in autumn"
+    "alt": "kayaker near forested mountains",
+    "credit": "NPS Photo/Kevyn Jalone",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d4633519-1dd8-b71c-0717-22378e884867",
+    "caption": "Silver Salmon Creek"
   },
   "intro": "Lake Clark lies across Cook Inlet from Anchorage and Homer, a roadless park of mountains, glacial lakes and forest reached by small plane. From the village of Port Alsworth, on the shore of Lake Clark itself, maintained trails lead through birch groves to a roaring waterfall. Farther north, on Upper Twin Lake, Dick Proenneke's handbuilt cabin still stands where he lived alone for decades. Scattering ashes is allowed without a permit in most of the park, away from developed areas and two protected historic districts.",
   "homepage": "https://www.nps.gov/lacl/",
@@ -39,11 +40,9 @@
       "photo": {
         "src": "/images/last-adventure/lake-clark/tanalian-falls.jpg",
         "srcWebp": "/images/last-adventure/lake-clark/tanalian-falls.webp",
-        "alt": "Tanalian Falls pouring over a dark rock ledge, with forested hills and a snowy peak beyond",
-        "credit": "palm_ak",
-        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tanalian_Falls_-_panoramio.jpg",
-        "title": "Tanalian Falls - panoramio"
+        "alt": "Sunshine yellow leaves mix with green spruce along the Tanalian River as it rages down the waterfall",
+        "credit": "NPS Photo/K. Tucker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3abde9d7-d92c-4ca6-8693-bcb4f3c942c3"
       },
       "description": "The walk begins in birch groves and climbs spruce-studded hillsides to a wide view of Lake Clark, then bends down a gentle hill toward a growing roar. Cold glacial water pours over a 30-foot cliff of ancient lava, and the mist drifts onto your faces. In summer, dwarf dogwood lines the path and sunlight dapples the forest floor. Find a rock by the river, let the sound of the falls fill the silence, and remember together.",
       "plan": {
@@ -85,9 +84,9 @@
       "photo": {
         "src": "/images/last-adventure/lake-clark/proenneke-cabin.jpg",
         "srcWebp": "/images/last-adventure/lake-clark/proenneke-cabin.webp",
-        "alt": "From a mountain, a yellow plane lands on a blue lake surrounded by mountains",
-        "credit": "NPS/K. Lewandowski",
-        "caption": "A plane lands at Upper Twin Lake"
+        "alt": "Panorama of Proenneke's wooden cabin, canoe, beach, Upper Twin Lake, and beach chair",
+        "credit": "NPS Photo/C. Lindsay; K. Jalone",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/62427193-6401-4f2e-a94d-17ad5966da2b"
       },
       "description": "A floatplane settles onto Upper Twin Lake, and on the south shore, beside the Hope Creek delta, a small log cabin flies an American flag. Dick Proenneke built it by hand and made a life here, and the Dena'ina name for the lakes means lakes that flow into one another. In summer rangers and volunteers welcome visitors inside. Eat lunch on the beach in front of the cabin, as many visitors do, and talk about the life your loved one built.",
       "plan": {

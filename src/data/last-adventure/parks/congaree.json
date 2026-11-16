@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/congaree/park.jpg",
     "srcWebp": "/images/last-adventure/congaree/park.webp",
-    "alt": "A very large loblolly pine rising above smaller trees in the forest",
-    "credit": "NPS Photo",
-    "caption": "A former champion loblolly pine, more than 250 years old, just off the Boardwalk Trail"
+    "alt": "Creek lined with trees",
+    "credit": "NPS/Victoria Stauffenberg",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e28262a3-9691-418d-9cc4-c28c0cbcbf3c",
+    "caption": "Cedar Creek"
   },
   "intro": "Congaree protects the largest intact expanse of old-growth bottomland hardwood forest left in the southeastern United States, about twenty minutes from Columbia. The canopy averages more than 100 feet, and the park holds the highest concentration of champion-sized trees in North America. The land is almost flat, so a final adventure here is a gentle walk among giants, with a boardwalk that welcomes wheelchairs and strollers.",
   "homepage": "https://www.nps.gov/cong/",
@@ -42,8 +43,9 @@
       "photo": {
         "src": "/images/last-adventure/congaree/boardwalk-loop.jpg",
         "srcWebp": "/images/last-adventure/congaree/boardwalk-loop.webp",
-        "alt": "A wooden boardwalk leading between tall cypress trunks in a floodplain forest",
-        "credit": "NPS Photo"
+        "alt": "A boardwalk through a green swampy landscape",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6697d8d3-80a5-4c87-8624-697c3c21ce72"
       },
       "description": "The boardwalk leaves a bluff by the visitor center and drops into the old-growth forest, where bald cypress and tupelo stand in the low ground and loblolly pines, oaks and maples rise toward a canopy far overhead. It leads toward Weston Lake, a bend the Congaree River left behind as an oxbow. Benches along the way make it easy to stop together, listen to the woods and let the oldest members of the family set the pace.",
       "plan": {
@@ -81,12 +83,7 @@
       "id": "weston-lake-trail",
       "name": "Weston Lake Trail",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/congaree/weston-lake-trail.jpg",
-        "srcWebp": "/images/last-adventure/congaree/weston-lake-trail.webp",
-        "alt": "Wide-based cypress and tupelo trees and cypress knees in the floodplain forest by Weston Lake",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "Leave the boardwalk behind and follow the forest floor to the banks of Cedar Creek, where river otters and wading birds are regularly seen. Its eastern portion traces a cypress-tupelo slough, an old dried riverbed where cypress knees rise from the dark water like a crowd of small figures. It is a longer, quieter walk, the kind that gives a family time to talk, fall silent and talk again.",
       "plan": {
         "distance": "4.5 mi round trip",
@@ -116,12 +113,7 @@
       "id": "bates-ferry-trail",
       "name": "Bates Ferry Trail to the Congaree River",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/congaree/bates-ferry-trail.jpg",
-        "srcWebp": "/images/last-adventure/congaree/bates-ferry-trail.webp",
-        "alt": "The Congaree River in fall, with autumn trees and clouds reflected in calm water",
-        "credit": "NPS"
-      },
+      "photo": null,
       "description": "In the quiet eastern corner of the park, an old 1920s ferry road leads through the woods to the banks of the Congaree, the river that floods and feeds this whole forest. Colonial-era ferries once crossed nearby. At the end, the river slides past, and in autumn the trees along it turn gold and orange. It is an easy walk with a rewarding end, and a peaceful place to stand together by moving water.",
       "plan": {
         "distance": "2.2 mi round trip",

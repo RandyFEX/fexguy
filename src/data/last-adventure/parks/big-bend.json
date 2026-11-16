@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/big-bend/park.jpg",
     "srcWebp": "/images/last-adventure/big-bend/park.webp",
-    "alt": "The sheer limestone walls of Santa Elena Canyon open above green desert scrub",
-    "credit": "NPS Photo",
-    "caption": "Santa Elena Canyon from the overlook"
+    "alt": "A view of the Rio Grande from a cliff above the river. From top to bottom, the image shows blue cloudless sky, steep beige cliffs dotted with green desert vegetation, a",
+    "credit": "NPS/HYoung",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8c974c7e-9cfa-4482-b0b4-75177ae837b5",
+    "caption": "The Lower Canyons of the Rio Grande"
   },
   "intro": "Big Bend holds three worlds in one park: the Chihuahuan Desert, the forested Chisos Mountains rising to 7,832 feet on Emory Peak, and the Rio Grande cutting deep limestone canyons along the border with Mexico. A final adventure here can be a paved sunset walk in the Chisos Basin, a short stroll into a river canyon or a climb to a high ridge. The park allows the scattering of ashes with a permit, as a small private affair away from busy areas and water.",
   "homepage": "https://www.nps.gov/bibe/",
@@ -41,8 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/big-bend/window-view-trail.jpg",
         "srcWebp": "/images/last-adventure/big-bend/window-view-trail.webp",
-        "alt": "A paved trail and metal exhibit sign overlook a low basin surrounded by mountains",
-        "credit": "NPS/CA Hoyt"
+        "alt": "Gold and purple streaks light the gap between two silhouetted mountains",
+        "credit": "NPS/K. Cardenas",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/cc6a9fdd-0047-4e34-b3bb-ca18a89fe451"
       },
       "description": "In the evening, the peaks around the Chisos Basin turn gold, and a notch in the mountains called the Window frames the desert falling away beyond. This short paved loop circles a low hill right beside the basin parking area, with benches placed for watching the sun go down. Everyone can come, from the youngest grandchild to someone using a wheelchair. Sit together, let the light fade through the Window, and talk about the person who would have loved this sunset most.",
       "plan": {
@@ -73,8 +75,9 @@
       "photo": {
         "src": "/images/last-adventure/big-bend/santa-elena-canyon.jpg",
         "srcWebp": "/images/last-adventure/big-bend/santa-elena-canyon.webp",
-        "alt": "The sheer limestone walls of Santa Elena Canyon open above green desert scrub",
-        "credit": "NPS Photo"
+        "alt": "The Rio Grande flowing between the high walls of Santa Elena Canyon",
+        "credit": "NPS Photo/Ann Wildermuth",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2d217fd0-155d-451f-67d2-195dce0779f7"
       },
       "description": "The Rio Grande slips out of a gap between limestone cliffs 1,500 feet high, and from the overlook the whole family can take in the canyon mouth at once. Those who want to go farther can cross Terlingua Creek, climb a short flight of steps to a high viewpoint, then follow the river between boulders until the canyon wall meets the water. Rest there and listen for the falling notes of a canyon wren. It is a place that makes everyone lower their voices.",
       "plan": {
@@ -122,8 +125,9 @@
       "photo": {
         "src": "/images/last-adventure/big-bend/boquillas-canyon.jpg",
         "srcWebp": "/images/last-adventure/big-bend/boquillas-canyon.webp",
-        "alt": "A river flows through high walls of limestone, while hikers walk along the sandy banks",
-        "credit": "NPS/M. Schuler"
+        "alt": "Canoeing into Boquillas Canyon",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/02165832-aedd-4e36-8292-24753042f11b"
       },
       "description": "On the east side of the park, the Rio Grande enters a great limestone gorge that splits the Sierra del Carmen. The trail rises over a small bluff where ancient grinding holes are worn into the rock, then drops to the river for an easy, sandy walk until the walls close in. Late in the day the Sierra del Carmen glows with color. Walk it slowly, side by side, and let the river carry the conversation for a while.",
       "plan": {
@@ -159,8 +163,9 @@
       "photo": {
         "src": "/images/last-adventure/big-bend/lost-mine-trail.jpg",
         "srcWebp": "/images/last-adventure/big-bend/lost-mine-trail.webp",
-        "alt": "A mountainside with desert plants and trees with a tall rocky peak in the background",
-        "credit": "NPS/M. Schuler"
+        "alt": "Hikers on the Lost Mine Trail in winter",
+        "credit": "NPS Photo/Jennette Jurado",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1d63ad08-155d-451f-67d4-317497b036f8"
       },
       "description": "This trail climbs into the cool forest of the Chisos Mountains, through juniper, oak and pine, to a ridge that suddenly levels out above Pine Canyon with the Sierra del Carmen of Mexico on the horizon. A mile in, a saddle opens views of Casa Grande Peak and Juniper Canyon, a good place for anyone who wants to stop early. For the rest of you, the ridge is a place to sit together in the mountain air and share the stories that matter.",
       "plan": {

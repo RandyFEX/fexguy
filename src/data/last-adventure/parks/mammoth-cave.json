@@ -8,10 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/mammoth-cave/park.jpg",
     "srcWebp": "/images/last-adventure/mammoth-cave/park.webp",
-    "alt": "A railed path winds down through green woods to the Historic Entrance of Mammoth Cave",
-    "credit": "NPS",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Cave_Historic_Entrance_NPS.jpg",
-    "caption": "The Historic Entrance"
+    "alt": "Visitors listening to park guide on Cleaveland Avenue tour inside Mammoth Cave",
+    "credit": "NPS photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8e6866b4-4aa2-45f5-8010-9389c7b6d955",
+    "caption": "Cleaveland Avenue, Mammoth Cave"
   },
   "intro": "Beneath the wooded hills of central Kentucky lies Mammoth Cave, where people have walked the same tunnels for thousands of years. A family can follow rangers through the huge rooms that gave the cave its name, see the sparkling flowstone of Frozen Niagara, then come back up into the forest to watch an underground river surface at a spring. Above ground, scattering is permitted with a free permission letter you download and carry.",
   "homepage": "https://www.nps.gov/maca/",
@@ -42,9 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/mammoth-cave/historic-tour.jpg",
         "srcWebp": "/images/last-adventure/mammoth-cave/historic-tour.webp",
-        "alt": "Stairs with railings descend to the dark Historic Entrance of Mammoth Cave as water trickles over the limestone ledge",
-        "credit": "NPS",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Cave_Historic_Entrance.jpg"
+        "alt": "Stairs lead down into the cave entrance",
+        "credit": "NPS Photo/Deb Spillman",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3364a429-b892-40ce-b558-961396015109"
       },
       "description": "The classic Mammoth Cave tour begins at the Historic Entrance, a natural opening people have used for 5,000 years, and follows tunnels through the huge rooms that gave the cave its name before descending into much tighter passages deep inside. Walking together where generations of guides and visitors have walked before, gives a family time to think about all the people who came before them, and about the one you are carrying with you now.",
       "plan": {
@@ -79,11 +79,9 @@
       "photo": {
         "src": "/images/last-adventure/mammoth-cave/frozen-niagara-tour.jpg",
         "srcWebp": "/images/last-adventure/mammoth-cave/frozen-niagara-tour.webp",
-        "alt": "Rippled, honey-colored travertine flowstone at Frozen Niagara",
-        "credit": "James St. John",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Travertine_flowstone_(Frozen_Niagara,_Mammoth_Cave,_Kentucky,_USA)_2_(38230671124).jpg",
-    "title": "Travertine flowstone (Frozen Niagara, Mammoth Cave, Kentucky, USA) 2 (38230671124)"
+        "alt": "A large flowstone formation with stairs leading in front of it",
+        "credit": "NPS Photo/Dominique Sanchez",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3a5752d7-86a5-4e15-806e-1e1b796c9332"
       },
       "description": "Frozen Niagara is one of the most famous decorated sections of Mammoth Cave, its flowstone hanging like a waterfall turned to stone. Many tours hike a long way and climb many stairs to reach it, but this short tour brings you straight there. It suits grandparents and young children alike, and standing together before stone shaped over ages is a quiet reminder of how much time can build.",
       "plan": {
@@ -115,7 +113,13 @@
       "id": "echo-river-spring-trail",
       "name": "Echo River Spring Trail",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/echo-river-spring-trail.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/echo-river-spring-trail.webp",
+        "alt": "A hiker beside Echo River Spring",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8989bf2f-1dd8-b71c-0722-8ac061e30607"
+      },
       "description": "On this forest trail you follow the water to Echo River Spring, where the underground Echo River flows out of Mammoth Cave and into daylight. Boardwalks and overlooks with clear glass panels are built so everyone, including anyone in a wheelchair, can see into the lush hollow. It is a gentle walk with a meaningful ending: a river that spent its life in darkness, coming out into the light. The accessible picnic area at the trailhead makes room for a shared meal afterward.",
       "plan": {
         "distance": "0.6 mi",
@@ -141,7 +145,13 @@
       "id": "sloans-crossing-pond",
       "name": "Sloans Crossing Pond",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/mammoth-cave/sloans-crossing-pond.jpg",
+        "srcWebp": "/images/last-adventure/mammoth-cave/sloans-crossing-pond.webp",
+        "alt": "The sun sets over a pond",
+        "credit": "NPS Photo/Kait Evensen",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1df121e0-d7d9-4819-a49b-3c14998ca260"
+      },
       "description": "A boardwalk circles the edge of this marshy pond on the south side of the park, close enough to the water to watch turtles sunning, hear frogs calling and see red-winged blackbirds among the reeds. Wayside exhibits explain the pond's unique environment. It is an easy, peaceful loop for every member of the family, and the accessible picnic area beside it is a good place to linger afterward, sharing food and stories the way your loved one would have liked.",
       "plan": {
         "distance": "0.4 mi boardwalk",

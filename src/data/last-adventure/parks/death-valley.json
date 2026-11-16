@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/death-valley/park.jpg",
     "srcWebp": "/images/last-adventure/death-valley/park.webp",
-    "alt": "Manly Beacon and the eroded badlands seen from Zabriskie Point, with the Panamint Range behind",
-    "credit": "Christian David",
-    "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manly_Beacon_seen_from_Zabriskie_Point,_Death_Valley_National_Park,_California.jpg", "title": "Manly Beacon seen from Zabriskie Point, Death Valley National Park, California", "title": "Manly Beacon seen from Zabriskie Point, Death Valley National Park, California",
-    "caption": "Manly Beacon from Zabriskie Point"
+    "alt": "Golden sand dunes, with heavy shadows and wave patterns in the foreground and bare mountains in the background",
+    "credit": "NPS/Kurt Moses",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5e8cad57-5c6e-4dc5-a0ae-f97d6ffb22dd",
+    "caption": "Mesquite Flat Sand Dunes"
   },
   "intro": "Death Valley holds the lowest point in North America, a white salt flat lying beneath mountains that climb more than two miles above it. Golden badlands, rippled sand dunes and ridgetop overlooks make it a place of wide silence and changing light. Scattering ashes is not allowed anywhere in the park, out of respect for the Timbisha Shoshone Tribe, but it remains a remarkable place to gather and remember together.",
   "homepage": "https://www.nps.gov/deva/",
@@ -43,11 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/death-valley/badwater-basin.jpg",
         "srcWebp": "/images/last-adventure/death-valley/badwater-basin.webp",
-        "alt": "Visitors walking on the white salt flats of Badwater Basin below the steep wall of the Black Mountains",
-        "credit": "Christian David",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_salt_flats_of_Badwater_Basin,_Death_Valley_National_Park,_California.jpg",
-    "title": "Visitors on the salt flats of Badwater Basin, Death Valley National Park, California"
+        "alt": "A large pool of water with mountains reflected in the background and a darkening sky",
+        "credit": "NPS/Kurt Moses",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d650c8b7-51f1-41cb-b5a8-f55fe01d59a4"
       },
       "description": "Walk down the boardwalk and out onto a floor of white salt, 282 feet below sea level, the lowest ground in North America. Look up at the cliffs of the Black Mountains and you can spot a sign marking sea level high above your heads. Across the valley, Telescope Peak rises more than two miles over the place you are standing. Walk a little farther together and the salt breaks into geometric polygons, a quiet, otherworldly setting for remembering someone who loved wide-open places.",
       "plan": {
@@ -82,10 +79,9 @@
       "photo": {
         "src": "/images/last-adventure/death-valley/zabriskie-point.jpg",
         "srcWebp": "/images/last-adventure/death-valley/zabriskie-point.webp",
-        "alt": "Manly Beacon rising above striped badlands, seen from Zabriskie Point",
-        "credit": "Christian David",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manly_Beacon_seen_from_Zabriskie_Point,_Death_Valley_National_Park,_California.jpg"
+        "alt": "Striped yellow and brown hills of bare stone, with sunlight beginning to hit distant mountains and a mostly cloudy sky",
+        "credit": "NPS/Kurt Moses",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2a9167cb-7de5-481e-8de3-b763bb9bd640"
       },
       "description": "From this rise, yellow and brown badlands fold away below you, carved into ridges and gullies by water that rarely falls. Manly Beacon juts up in the middle of it all, and beyond it the salt flats and the Panamint Mountains fill the horizon. Sunrise and sunset paint the hills in shifting color, so come early or stay late and watch it together. The more adventurous can wander down into the badlands while others keep the view.",
       "plan": {
@@ -122,11 +118,9 @@
       "photo": {
         "src": "/images/last-adventure/death-valley/dantes-view.jpg",
         "srcWebp": "/images/last-adventure/death-valley/dantes-view.webp",
-        "alt": "Visitors on the ridge at Dantes View above the salt flats of Badwater Basin and the Panamint Range",
-        "credit": "Christian David",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_ridge_at_Dante%27s_View,_Death_Valley_National_Park,_California.jpg",
-    "title": "Visitors on the ridge at Dante's View, Death Valley National Park, California"
+        "alt": "Looking from Dante's View across the Badwater Basin salt pan to Telescope Peak, 11,049 feet, at the top of the Panamint Mountains",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f3c2c21f-155d-4519-3e48-29a7eb75db54"
       },
       "description": "High on the crest of the Black Mountains, 5,575 feet above Badwater Basin, the whole valley lies open beneath you: swirling white salt flats, and the Panamint Range on the far side. A local man once told a governor this was the one view that made him stop and look. Walk a little way north along the ridge to find a quieter spot, and if you stay after dark, the stars of this Dark Sky Park come out overhead.",
       "plan": {
@@ -154,8 +148,9 @@
       "photo": {
         "src": "/images/last-adventure/death-valley/mesquite-flat-sand-dunes.jpg",
         "srcWebp": "/images/last-adventure/death-valley/mesquite-flat-sand-dunes.webp",
-        "alt": "Green mesquite trees on pale sand dunes, with evening light on distant mountains",
-        "credit": "NPS/C. Augustson"
+        "alt": "The best time of day to visit dunes are early morning, late afternoon and under a full moon",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f44c3843-155d-4519-3e42-12717faf6eea"
       },
       "description": "There is no trail here, only sand, ripples and the long shadows of morning and evening. Mesquite trees twist up through the dunes, and in spring their branches fill with green leaves and yellow flowers. Choose your own way toward the tallest dune, stopping whenever someone wants to sit and look back at the mountains. After sunset the dunes become one of the park's darkest places for watching the stars come out together.",
       "plan": {
@@ -184,12 +179,7 @@
       "id": "golden-canyon",
       "name": "Golden Canyon to Red Cathedral",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/death-valley/golden-canyon.jpg",
-        "srcWebp": "/images/last-adventure/death-valley/golden-canyon.webp",
-        "alt": "A gravel wash winds between bare yellow hills in Golden Canyon under dark clouds",
-        "credit": "NPS/E. Letterman"
-      },
+      "photo": null,
       "description": "Step into Golden Canyon and its walls rise around you in shades of yellow, with ripples left by ancient water preserved in the stone. The path climbs gently up the canyon floor, past colorful side canyons and the remains of an old road taken by a flash flood. At the end waits Red Cathedral, a natural amphitheater of tall, fluted red walls. It is a walk for talking along the way and for falling quiet when you arrive.",
       "plan": {
         "distance": "3 mi round trip to Red Cathedral",

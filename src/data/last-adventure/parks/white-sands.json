@@ -10,14 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/white-sands/park.jpg",
     "srcWebp": "/images/last-adventure/white-sands/park.webp",
-    "alt": "The sun sets behind distant mountains beyond white gypsum dunes and desert shrubs",
-    "credit": "dconvertini",
-    "license": {
-      "name": "CC BY-SA 2.0",
-      "url": "https://creativecommons.org/licenses/by-sa/2.0/"
-    },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Sands_National_Park,_New_Mexico,_USA_5-2024_37.jpg", "title": "White Sands National Park, New Mexico, USA 5-2024 37",
-    "caption": "Sunset over the dunefield"
+    "alt": "Tall rolling hills of sand dunes at the base of rugged mountains spanning the horizon of the image under a barely lit sunset sky",
+    "credit": "NPS Photo/Photographer William Cummings",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/569e3e69-ed7e-4bbf-8d0d-9d890315ff24",
+    "caption": "Sunset Blues"
   },
   "intro": "In southern New Mexico, the world's largest gypsum dunefield rolls toward the mountains in soft white waves. Dunes Drive leads into the heart of the dunes, with a fully accessible boardwalk, short nature trails and a long trek beside the remnant of an ancient lake. The park calls the dunefield a serene and beautiful place that has touched many hearts, and it welcomes families who wish to scatter a loved one's ashes on the sand with a permit.",
   "homepage": "https://www.nps.gov/whsa/",
@@ -62,8 +58,9 @@
       "photo": {
         "src": "/images/last-adventure/white-sands/interdune-boardwalk.jpg",
         "srcWebp": "/images/last-adventure/white-sands/interdune-boardwalk.webp",
-        "alt": "A visitor walking down the Interdune Boardwalk",
-        "credit": "NPS Photo"
+        "alt": "boardwalk with railings extends up a small dune into the distance. White Sands are seen around the boardwalk with a little sand blown onto the trail",
+        "credit": "NPS Photo, Dana Robbins",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/20e3c7da-c96a-4162-a576-040f991400d4"
       },
       "description": "A raised boardwalk carries everyone out between the dunes, wheelchairs and strollers included, so no one has to stay behind. Along the way there are benches, a shade canopy and signs about the plants, lizards and birds that make this white world their home. Listen for bird calls, look for wildflowers, and stop under the canopy to rest together. It is a gentle, unhurried walk, and a good first place to sit side by side and let the stillness of the dunes do the talking.",
       "plan": {
@@ -107,18 +104,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/white-sands/dune-life-nature-trail.jpg",
-        "srcWebp": "/images/last-adventure/white-sands/dune-life-nature-trail.webp",
-        "alt": "Dunes Drive and the Dune Life Nature Trail area, with sand dunes and mountains beyond",
-        "credit": "Pablorgalindo",
-        "license": {
-          "name": "CC BY-SA 4.0",
-          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_Drive_and_Dune_Life_Nature_Trail_April_2026.jpg",
-    "title": "Dune Drive and Dune Life Nature Trail April 2026"
-      },
+      "photo": null,
       "description": "This family-friendly loop climbs two steep dunes of loose sand, and the children may race to the top while the grown-ups take their time. Signs along the way follow Katie the Kit Fox and her friends, and the sand is a good place to look for the tracks of the kit foxes, badgers, birds, rodents and reptiles that live here. It is a playful, hands-on hour together, the kind of outing your loved one might have enjoyed sharing with the grandchildren.",
       "plan": {
         "distance": "1 mi loop",
@@ -170,18 +156,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/white-sands/alkali-flat-trail.jpg",
-        "srcWebp": "/images/last-adventure/white-sands/alkali-flat-trail.webp",
-        "alt": "Panorama of white dunes along the Alkali Flat Trail",
-        "credit": "Footwarrior",
-        "license": {
-          "name": "CC BY-SA 3.0",
-          "url": "https://creativecommons.org/licenses/by-sa/3.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alkali_Flats_Trail_White_Sands_National_Monument.jpg",
-    "title": "Alkali Flats Trail White Sands National Monument"
-      },
+      "photo": null,
       "description": "The park's most strenuous trail heads out across the dunefield, up and down dune after dune, along the edge of Alkali Flat, the final remnant of ancient Lake Otero. Red markers guide the way across a landscape of white sand and open sky, with no shade and few people. For a family ready for real effort, it is a pilgrimage: a long morning of walking together, carrying someone you love to one of the quietest places you will ever stand.",
       "plan": {
         "distance": "5 mi round trip",

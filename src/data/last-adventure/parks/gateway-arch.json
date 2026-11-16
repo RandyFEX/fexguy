@@ -10,14 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/gateway-arch/park.jpg",
     "srcWebp": "/images/last-adventure/gateway-arch/park.webp",
-    "alt": "The Gateway Arch and the Old Courthouse lit at night above the Mississippi River in St. Louis",
-    "credit": "Daniel Schwen",
-    "license": {
-      "name": "CC BY-SA 4.0",
-      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:St_Louis_night_expblend.jpg", "title": "St Louis night expblend",
-    "caption": "The Gateway Arch above the Mississippi River at night"
+    "alt": "Shovel walkways leading to the Gateway Arch on a beautiful snowy winter morning",
+    "credit": "NPS Photo/Sue Ford",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/b5236127-1db7-41ab-8ef2-90b7ce62d6c9",
+    "caption": "The Gateway Arch at sunrise in winter"
   },
   "intro": "On the bank of the Mississippi in downtown St. Louis, the Gateway Arch rises 630 feet over tree-lined grounds designed to frame it. A tram carries visitors to a small observation deck at the top, and across the street the Old Courthouse holds the story of the Dred and Harriet Scott freedom suit. Everything here lies within a short walk, which makes it easy to share with every generation of a family.",
   "homepage": "https://www.nps.gov/jeff/",
@@ -59,14 +55,9 @@
       "photo": {
         "src": "/images/last-adventure/gateway-arch/top-of-the-arch.jpg",
         "srcWebp": "/images/last-adventure/gateway-arch/top-of-the-arch.webp",
-        "alt": "Downtown St. Louis and the Old Courthouse seen from the top of the Gateway Arch",
-        "credit": "artistmac",
-        "license": {
-          "name": "CC BY-SA 2.0",
-          "url": "https://creativecommons.org/licenses/by-sa/2.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_St._Louis,_from_Top_of_Gateway_Arch_(7358308308).jpg",
-    "title": "Downtown St. Louis, from Top of Gateway Arch (7358308308)"
+        "alt": "View of the Old Courthouse from the Gateway Arch",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/68bfa3e9-155d-4519-3eaf-7c1dc95505a7"
       },
       "description": "A small five-seat capsule tilts and climbs inside the leg of the Arch for four minutes, and then you step out 630 feet above St. Louis. Through the narrow windows the Mississippi River runs below on one side and the city spreads out on the other; on a clear day the view reaches about 30 miles. It is a brief visit, only one tram cycle, so hold hands, find the window your loved one would have chosen and take in the view together.",
       "plan": {
@@ -127,14 +118,9 @@
       "photo": {
         "src": "/images/last-adventure/gateway-arch/arch-grounds.jpg",
         "srcWebp": "/images/last-adventure/gateway-arch/arch-grounds.webp",
-        "alt": "A leg of the Gateway Arch above tree-lined paths, a pond and lawns beside the Mississippi River",
-        "credit": "Jefferson National Expansion Memorial, NPS",
-        "license": {
-          "name": "CC BY 2.0",
-          "url": "https://creativecommons.org/licenses/by/2.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jefferson_National_Expansion_Memorial_(5244769158).jpg",
-    "title": "Jefferson National Expansion Memorial (5244769158)"
+        "alt": "Gateway Arch grounds in spring",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/68cb5d0c-155d-4519-3ea8-1511cd1e9a78"
       },
       "description": "Landscape architect Dan Kiley designed these grounds with Eero Saarinen, and they were made for walking. Curving, tree-lined paths reveal the Arch from changing angles, lawns slope down to reflecting ponds, and from many places you can watch the river traffic on the Mississippi. Walk to the base of the Arch together and lay your hands on the steel; the park welcomes it. Local legend says anyone who touches it will always be pulled back to St. Louis.",
       "plan": {
@@ -188,9 +174,9 @@
       "photo": {
         "src": "/images/last-adventure/gateway-arch/old-courthouse.jpg",
         "srcWebp": "/images/last-adventure/gateway-arch/old-courthouse.webp",
-        "alt": "The white Old Courthouse with its green dome behind the Gateway Arch National Park sign",
-        "credit": "NPS Photo",
-        "position": "50% 25%"
+        "alt": "The Old Courthouse with the Gateway Arch behind it",
+        "credit": "NPS Photo/Sue Ford",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0c0fe880-ffee-40a1-97b2-d0a8e947ded4"
       },
       "description": "Wagon trains once gathered at this domed courthouse before heading west, and in its rooms Dred and Harriet Scott sued for their freedom and Virginia Minor argued for a woman's right to vote. Reopened in 2025 after a long renovation, it offers restored courtrooms, a rotunda painted by Karl Wimar and Ettore Miragoli and a cast iron staircase that winds upward without a central support. For a family honoring someone who stood up for what was right, it is a meaningful place to stand.",
       "plan": {

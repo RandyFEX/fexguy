@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/great-smoky-mountains/park.jpg",
     "srcWebp": "/images/last-adventure/great-smoky-mountains/park.webp",
-    "alt": "Bright gold and red leaves shine through the fog in a mountain forest",
+    "alt": "Rolling mountains in the distance on a mostly sunny day with blue sky. Green trees in foreground",
     "credit": "NPS Photo",
-    "caption": "Fall color in the Smokies"
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/9b335b70-cbca-41d1-9df4-d519363c5dfc",
+    "caption": "Cataloochee and Balsam Mountain Area"
   },
   "intro": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee, often wrapped in the mist that gives the Smokies their name. The park is known for its diversity of plant and animal life, its ancient mountains and the remnants of Southern Appalachian mountain culture. A final adventure here can be a drive to a high gap, a climb to the park's highest peak or a slow loop through a valley of old homesteads, and the park grants free permission letters for scattering.",
   "homepage": "https://www.nps.gov/grsm/",
@@ -39,8 +40,9 @@
       "photo": {
         "src": "/images/last-adventure/great-smoky-mountains/newfound-gap-overlook.jpg",
         "srcWebp": "/images/last-adventure/great-smoky-mountains/newfound-gap-overlook.webp",
-        "alt": "Rolling, tree-covered mountains under a partly cloudy sky, with green plants in the foreground",
-        "credit": "NPS Photo"
+        "alt": "A tree with fall foliage and other distant trees on mountain ridges",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8883ed9b-1dd8-b71c-0791-9cb6a778b2fe"
       },
       "description": "At 5,046 feet, Newfound Gap is the lowest drivable pass through the park, a saddle on the crest where Tennessee meets North Carolina and the mountains fall away in long blue ridges on either side. Step out of the car into air noticeably cooler than the valleys below, and the whole family can stand together at the overlook within moments. It is a fine place to share a thermos, a few photographs and the stories that brought you here.",
       "plan": {
@@ -66,11 +68,9 @@
       "photo": {
         "src": "/images/last-adventure/great-smoky-mountains/kuwohi-observation-tower.jpg",
         "srcWebp": "/images/last-adventure/great-smoky-mountains/kuwohi-observation-tower.webp",
-        "alt": "The concrete observation tower and its long curving ramp on Kuwohi, surrounded by spruce and fir",
-        "credit": "Acroterion",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clingmans_Dome_observation_tower_TN2.jpg",
-        "title": "Clingmans Dome observation tower TN2"
+        "alt": "Sunset over the mountains. Viewed from the Observation Tower on Kuwohi",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2845f95e-1dd8-b71c-072b-8d90f8c9136b"
       },
       "description": "Kuwohi, formerly Clingmans Dome, is the highest point in the park at 6,643 feet. A steep paved path climbs through spruce and fir to a round 1959 tower, where a 375-foot ramp spirals up to a platform above the treetops. On a clear day the Smokies spread out in every direction; on a misty one you stand together inside the clouds. Benches along the way let everyone rest, and reaching the top side by side becomes its own small tribute.",
       "plan": {
@@ -113,8 +113,9 @@
       "photo": {
         "src": "/images/last-adventure/great-smoky-mountains/cades-cove.jpg",
         "srcWebp": "/images/last-adventure/great-smoky-mountains/cades-cove.webp",
-        "alt": "Wildflowers in a meadow with rolling mountains in the background in Cades Cove",
-        "credit": "NPS Photo"
+        "alt": "Image of Primitive Baptist Church Cades Cove Great Smoky Mountains National Park TN 2024",
+        "credit": "NPS/Heidi Ogle",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/450d04dd-6464-4b5d-b1d1-6cf02e403f91"
       },
       "description": "Mountains surround this broad green valley on every side, and an unhurried road circles through its meadows past log homes, barns, churches and the Cable Mill. Deer, wild turkeys and sometimes bears graze in the open fields. Drive it slowly with the windows down, stop at a homestead or a quiet churchyard, and let the cove's long human story sit beside your own family's. Every generation in the car can enjoy this one.",
       "plan": {
@@ -147,13 +148,7 @@
       "id": "alum-cave-trail",
       "name": "Alum Cave Trail: Arch Rock and Alum Cave Bluffs",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.jpg",
-        "srcWebp": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.webp",
-        "alt": "A wooden footbridge leads to stone stairs that pass under Arch Rock on the Alum Cave Trail",
-        "credit": "NPS Photo",
-        "caption": "Arch Rock"
-      },
+      "photo": null,
       "description": "This trail climbs through old-growth forest and across cool mountain streams, then threads straight through Arch Rock on stone steps, the only rock formation in the park you can hike through. Farther up, Alum Cave Bluffs rewards the climb with some of the best views in the Smokies. It is a real mountain day for the hikers in your family, and a fitting climb to carry someone who loved these hills.",
       "plan": {
         "distance": "5 mi round trip to the bluffs; 2.8 mi round trip to Arch Rock",

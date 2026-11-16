@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/haleakala/park.jpg",
     "srcWebp": "/images/last-adventure/haleakala/park.webp",
-    "alt": "Sun setting over the volcano crater and horizon",
-    "credit": "NPS Photo",
-    "caption": "Sunset over Haleakalā crater"
+    "alt": "Low clouds hang in the expansive crater, surrounded by hills under a clear sky",
+    "credit": "NPS Photo, 2008",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/009e48ab-c925-ea00-8be8-925021f1b6ce",
+    "caption": "Haleakala Crater from the Halemau'u Trail"
   },
   "intro": "Haleakalā rises 10,023 feet above Maui, and from its summit the vast crater, its cinder cones and the Pacific spread out below. Far down the mountain's southeast flank, the Kīpahulu District is a world of streams, bamboo and waterfalls on the coast near Hāna. Haleakalā is sacred to Native Hawaiians, and the park names a small number of summit and coastal places where a family may scatter ashes with a permit.",
   "homepage": "https://www.nps.gov/hale/",
@@ -37,12 +38,7 @@
       "id": "puuulaula-summit",
       "name": "Puʻuʻulaʻula Summit",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/haleakala/puuulaula-summit.jpg",
-        "srcWebp": "/images/last-adventure/haleakala/puuulaula-summit.webp",
-        "alt": "The pink glow of sunrise silhouettes a small building on a hill",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "At 10,023 feet, Puʻuʻulaʻula is the highest point on Maui, and on a clear day the view turns all the way around: the crater, the West Maui Mountains, the neighboring islands and the open Pacific. Many families come up in the dark to watch the sun rise over the crater rim, wrapped in blankets beside the summit building's wide windows. Look for the silvery ʻāhinahina growing nowhere else on earth. This is one of the park's approved scattering sites, a farewell above the clouds.",
       "plan": {
         "distance": "At the summit parking area; short paved and unpaved paths",
@@ -67,15 +63,7 @@
       "id": "pa-kaoao",
       "name": "Pā Kaʻoao (White Hill)",
       "kinds": ["accessible", "extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/haleakala/pa-kaoao.jpg",
-        "srcWebp": "/images/last-adventure/haleakala/pa-kaoao.webp",
-        "alt": "The Pā Kaʻoao White Hill Trail sign at the start of a rocky trail on Haleakalā",
-        "credit": "dronepicr",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pa_Kaoao_White_Hill_Trail_Mount_Haleakala_Maui,_Hawaii_(45740731001).jpg",
-        "title": "Pa Kaoao White Hill Trail Mount Haleakala Maui, Hawaii (45740731001)"
-      },
+      "photo": null,
       "description": "Right beside the Haleakalā Visitor Center, a short trail climbs a pale cinder hill past the stone walls of ancient rock shelters, part of the mountain's long human history. From the top the crater opens in front of you, its colored cinder cones far below. It is a short walk with a big reward, and an approved scattering site, so the climb, the view and the farewell can all fit into a single unhurried hour together.",
       "plan": {
         "distance": "0.4 mi round trip",
@@ -107,8 +95,9 @@
       "photo": {
         "src": "/images/last-adventure/haleakala/keoneheehee-trail.jpg",
         "srcWebp": "/images/last-adventure/haleakala/keoneheehee-trail.webp",
-        "alt": "A trail leads down into a colorful volcanic valley",
-        "credit": "NPS Photo"
+        "alt": "A straight, sandy trail is a cleared path through low vegetation on the flat crater bottom",
+        "credit": "NPS Photo, 2008",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/fc4ddda2-f045-89d3-221e-afbaf24fb08a"
       },
       "description": "From the rim, a cinder trail built by the Civilian Conservation Corps in 1937 drops into a crater about 7.5 miles long, with fourteen multicolored cinder cones scattered across its floor. Even the first quarter mile brings a sweeping view, and every step farther down feels more like walking on another planet. Hawaiians crossed this crater for centuries, and following them for a while, together and in quiet, can be a deeply moving way to honor someone who loved wide-open places.",
       "plan": {
@@ -159,8 +148,9 @@
       "photo": {
         "src": "/images/last-adventure/haleakala/kuloa-point-trail.jpg",
         "srcWebp": "/images/last-adventure/haleakala/kuloa-point-trail.webp",
-        "alt": "The Pools of ʻOheʻo in the park's Kīpahulu District",
-        "credit": "NPS"
+        "alt": "Waves breaking on the rocky shore below the Kuloa Point Trail",
+        "credit": "J. Frost/NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/506d4afb-d3c8-5b36-f7fb-91eb88afefac"
       },
       "description": "On the green, rain-washed coast past Hāna, a short trail leaves the Kīpahulu Visitor Center, passes a Hawaiian cultural demonstration area and ends at Kūloa Point, where ʻOheʻo Gulch meets the sea. Below you lie the Pools of ʻOheʻo, and beyond them the ocean stretches away to the horizon. It is a gentle walk for nearly any family, and the park approves this trail for scattering, so you can stand together by the water and say goodbye in a place of quiet, lasting beauty.",
       "plan": {
@@ -200,9 +190,9 @@
       "photo": {
         "src": "/images/last-adventure/haleakala/pipiwai-trail.jpg",
         "srcWebp": "/images/last-adventure/haleakala/pipiwai-trail.webp",
-        "alt": "The Waimoku Falls surrounded by lush green vegetation",
-        "credit": "NPS/Jake McFee",
-        "position": "50% 35%"
+        "alt": "Several white waterfalls cascade over an edge 400 feet high and the cliffs are covered in dense, verdant vegetation",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e812ff93-5c88-4f75-95d6-4e5003940450"
       },
       "description": "The Pīpīwai Trail climbs beside a freshwater stream into a forest that keeps changing as you go. Makahiku Falls appears first, then boardwalks lead into a bamboo forest where the park invites you to listen to the music of the bamboo. At the end, Waimoku Falls drops 400 feet down a sheer green wall. Walking it together, with time to stop and listen, makes a memorable journey for a family, and the falls are a powerful place to share what your loved one meant to you.",
       "plan": {

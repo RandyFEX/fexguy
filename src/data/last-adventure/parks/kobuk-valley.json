@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/kobuk-valley/park.jpg",
     "srcWebp": "/images/last-adventure/kobuk-valley/park.webp",
-    "alt": "Aerial image of sand dunes surrounded by evergreen trees",
-    "credit": "NPS/Rachel Post",
-    "caption": "The Great Kobuk Sand Dunes from the air"
+    "alt": "Aerial view of a motor boat on a river",
+    "credit": "NPS Photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c5595bf7-1dd8-b71c-077c-542dc5d52abd",
+    "caption": "The Kobuk River"
   },
   "intro": "Kobuk Valley lies above the Arctic Circle in northwest Alaska, a roadless park with no campgrounds, reached by small plane from Kotzebue or Bettles. Along the Kobuk River, people have lived and hunted caribou for at least 8,000 years, and the Western Arctic Caribou Herd still passes through twice a year. Its most surprising sight is a field of golden sand dunes rising out of the tundra and forest. The park's rules open all areas to scattering ashes without a permit.",
   "homepage": "https://www.nps.gov/kova/",
@@ -35,9 +36,9 @@
       "photo": {
         "src": "/images/last-adventure/kobuk-valley/great-kobuk-sand-dunes.jpg",
         "srcWebp": "/images/last-adventure/kobuk-valley/great-kobuk-sand-dunes.webp",
-        "alt": "A rippled sand dune ridge beside a braided creek, with spruce forest and distant mountains",
+        "alt": "Wolf tracks on sand",
         "credit": "NPS Photo",
-        "caption": "The largest active dunes in the Arctic"
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c5c8791d-1dd8-b71c-076e-c9771f933a9a"
       },
       "description": "Picture 25 square miles of shifting, golden sand, with dunes more than 100 feet high, rising out of spruce forest and tundra above the Arctic Circle. Tracks of grizzly bears, caribou and wolves cross the ripples, and in spring and fall the Western Arctic Caribou Herd leaves its hoof prints here. Walk together along a dune crest in the long northern light, find a sheltered hollow out of the wind and let the vast quiet hold your memories.",
       "plan": {

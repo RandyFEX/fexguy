@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/cuyahoga-valley/park.jpg",
     "srcWebp": "/images/last-adventure/cuyahoga-valley/park.webp",
-    "alt": "Brandywine Falls spilling over layered rock in Cuyahoga Valley National Park",
-    "credit": "Erik Drost",
-    "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandywine_Falls_at_Cuyahoga_Valley_National_Park.jpg", "title": "Brandywine Falls at Cuyahoga Valley National Park",
-    "caption": "Brandywine Falls"
+    "alt": "A stone shelter in the distance across a body of water, colorful trees up on the hillside behind it, in shades of green, yellow, orange, and grapefruit",
+    "credit": "NPS/Rick Santich",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e3dcea5a-b947-4fbd-aa0e-1fd04066d828",
+    "caption": "Fall Colors at Kendall Lake"
   },
   "intro": "Cuyahoga Valley follows the Cuyahoga River through forests, wetlands and old farm fields between Cleveland and Akron. A 60-foot waterfall, the sandstone cliffs of the Ledges, a beaver marsh and a red covered bridge all lie within a short drive of each other. It is an easy park to share with every generation, and the park issues free letters of permission for scattering away from public areas.",
   "homepage": "https://www.nps.gov/cuva/",
@@ -43,11 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/cuyahoga-valley/brandywine-falls.jpg",
         "srcWebp": "/images/last-adventure/cuyahoga-valley/brandywine-falls.webp",
-        "alt": "Water fanning down the rock face of Brandywine Falls",
-        "credit": "Erik Drost",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandywine_Falls_at_Cuyahoga_Valley_National_Park1.jpg",
-    "title": "Brandywine Falls at Cuyahoga Valley National Park1"
+        "alt": "A white frothy waterfall cascades down a tall outcrop of dark shale at the end of a concave gorge with green and orange plants surrounding the water",
+        "credit": "NPS/Bob Trinnes",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0b9ce67b-3f06-4774-ab57-485f8e40f4a1"
       },
       "description": "Brandywine Creek drops 60 feet into a hemlock-lined gorge here, spreading over layers of shale in a pattern the park compares to a bridal veil. A boardwalk carries you from the trailhead to an upper viewing area, close enough to hear the water and feel the cool air of the gorge. Come back in autumn when the red maples turn, or in winter when ice takes over the falls. Stand together at the rail and let the steady sound of the water fill the pauses between your stories.",
       "plan": {
@@ -83,11 +80,9 @@
       "photo": {
         "src": "/images/last-adventure/cuyahoga-valley/ledges-overlook.jpg",
         "srcWebp": "/images/last-adventure/cuyahoga-valley/ledges-overlook.webp",
-        "alt": "Bare sandstone at the Ledges looking out over autumn forest in the Cuyahoga Valley",
-        "credit": "Erik Drost",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ledges_at_Cuyahoga_Valley_National_Park_(10544153704).jpg",
-    "title": "Ledges at Cuyahoga Valley National Park (10544153704)"
+        "alt": "A group of people watch the sunset at an overlook",
+        "credit": "NPS/Bob Trinnes",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/711f9d6b-5453-449f-8389-03e89e11a64a"
       },
       "description": "The trail around the Ledges hugs the foot of tall cliffs of Sharon sandstone and conglomerate, winding through hemlock forest before reaching the overlook. There the bare stone becomes a natural platform facing west over the forested Cuyahoga Valley, a favorite spot for sunsets and fall color. Picture the family settling onto the rock as the sky turns gold, sharing a thermos and the stories that belong to this day. It is a walk with enough variety to keep everyone talking.",
       "plan": {
@@ -125,11 +120,9 @@
       "photo": {
         "src": "/images/last-adventure/cuyahoga-valley/beaver-marsh.jpg",
         "srcWebp": "/images/last-adventure/cuyahoga-valley/beaver-marsh.webp",
-        "alt": "The Towpath Trail boardwalk crossing Beaver Marsh",
-        "credit": "David Fulmer",
-        "license": { "name": "CC BY 2.0", "url": "https://creativecommons.org/licenses/by/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Towpath_Trail_bridge_crossing_Beaver_Marsh.jpg",
-    "title": "Towpath Trail bridge crossing Beaver Marsh"
+        "alt": "People walk on a wooden boardwalk over a large wetland filled with low green pants and some taller trees",
+        "credit": "NPS/Bob Trinnes",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/29b068e5-f012-4ef9-b044-249185b502c9"
       },
       "description": "Where an auto salvage yard once stood, beavers returned after a 150-year absence and built the dams that now hold this 70-acre marsh. The boardwalk of the Towpath Trail crosses right through it, among lily pads and standing dead trees, and the park's exhibits help you spot the turtles and amphibians that live here. It is a gentle, level walk that suits strollers, wheelchairs and slow, talkative strolls. For a family remembering someone who loved second chances, there are few better places to stand together and listen.",
       "plan": {
@@ -163,11 +156,9 @@
       "photo": {
         "src": "/images/last-adventure/cuyahoga-valley/everett-covered-bridge.jpg",
         "srcWebp": "/images/last-adventure/cuyahoga-valley/everett-covered-bridge.webp",
-        "alt": "The red Everett Covered Bridge over Furnace Run",
-        "credit": "Niagara66",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuyahoga_Valley_National_Park_14.jpg",
-    "title": "Cuyahoga Valley National Park 14"
+        "alt": "A red wooden covered bridge spans across a docile creek in a bare forest, snow blanketing the ground",
+        "credit": "NPS/Bob Trinnes",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0f064682-8582-4847-ab54-9353021daa1a"
       },
       "description": "Ohio once had more than 2,000 covered bridges, and this red one over Furnace Run is the last in Summit County. A spring storm destroyed it in 1975, and school children, neighbors and agencies raised the money to rebuild it as it was. A short, flat path leads from the trailhead to the bridge, so everyone can walk across together under its wooden roof. It is a place that already stands for a community refusing to let something it loved disappear.",
       "plan": {

@@ -10,14 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/voyageurs/park.jpg",
     "srcWebp": "/images/last-adventure/voyageurs/park.webp",
-    "alt": "Bare granite and pines above a blue lake dotted with small rocky islands in Voyageurs National Park",
-    "credit": "National Park Service",
-    "license": {
-      "name": "Public domain",
-      "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
-    },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voyageurs_National_Park_VOYA9501.jpg",
-    "caption": "Granite shores and islands in Voyageurs"
+    "alt": "Photograph of lake surrounded by trees with a clear blue sky, seen through a forest clearing",
+    "credit": "Billy Flynn, National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d8b426bb-a38a-4c9b-9ebc-299311476856",
+    "caption": "Kabetogama Lake Overlook"
   },
   "intro": "Voyageurs sits on the Canadian border in northern Minnesota, a park of interconnected lakes, rocky islands and northwoods forest where the voyageurs once paddled their canoes. A few trails start right at the visitor centers, but much of the park is best seen from the water, and ranger-led tour boats carry families to places no road reaches. A farewell here can be a quiet lakeside walk or a full day on the water to a historic hotel on the border.",
   "homepage": "https://www.nps.gov/voya/",
@@ -57,12 +53,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/voyageurs/oberholtzer-trail.jpg",
-        "srcWebp": "/images/last-adventure/voyageurs/oberholtzer-trail.webp",
-        "alt": "Green cattails in the foreground with the lake and trees beyond, under a blue sky",
-        "credit": "NPS/C. Meridith"
-      },
+      "photo": null,
       "description": "Starting beside the Rainy Lake Visitor Center, this gentle trail winds through deciduous and conifer forest around the edge of a cattail marsh, past boulders left behind by ancient glaciers. Two overlooks open onto the marsh and the lake, good places to watch for wading birds and to pause together. The first stretch is smooth and wide enough for a wheelchair, so everyone can share at least part of the walk. Come at dawn or dusk, when the marsh is at its most alive.",
       "plan": {
         "distance": "1.6 mi round trip; accessible section 0.5 mi round trip",
@@ -111,12 +102,7 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/voyageurs/blind-ash-bay-trail.jpg",
-        "srcWebp": "/images/last-adventure/voyageurs/blind-ash-bay-trail.webp",
-        "alt": "View over Kabetogama Lake and its islands through pine trees",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "This narrow, winding trail leads from closed-in boreal forest to views over Kabetogama Lake, with pines framing the water and islands scattered across it. The park calls the views postcard-worthy, and they are. It is a good trail for birding, and deer are frequent visitors. Walk the loop at an easy pace, then settle in at a viewpoint above the lake for a while and let the quiet of the north woods hold your family's memories.",
       "plan": {
         "distance": "2.9 mi loop",
@@ -169,7 +155,13 @@
         "accessible",
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/ellsworth-rock-gardens.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/ellsworth-rock-gardens.webp",
+        "alt": "Photograph of stone sculptures dotted along a rocky hillside",
+        "credit": "Billy Flynn, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d4d04ad1-26cc-4a11-8880-f4741be1f7cc"
+      },
       "description": "Over some twenty years, Chicago carpenter Jack Ellsworth turned a granite outcrop on the north shore of Kabetogama Lake into terraced flower beds and more than 200 abstract rock sculptures, balanced stones, tables and chairs among them. The tour boat carries you across the lake, and a ranger leads the way along the winding garden paths. It is a lovely tribute for anyone who loved making things with their hands, and a place to imagine one person's devotion, stone by stone.",
       "plan": {
         "distance": "2.5-hour boat tour, including a 1/4-mile ranger-led walk",
@@ -227,13 +219,9 @@
       "photo": {
         "src": "/images/last-adventure/voyageurs/kettle-falls.jpg",
         "srcWebp": "/images/last-adventure/voyageurs/kettle-falls.webp",
-        "alt": "The historic Kettle Falls Hotel in Voyageurs National Park",
-        "credit": "NPS",
-        "license": {
-          "name": "Public domain",
-          "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kettle_Falls_Hotel_NPS.jpg"
+        "alt": "Photograph of a lake flanked by forests under a clear blue sky",
+        "credit": "Billy Flynn, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3dbbda98-f8a0-4027-94a0-5412b06c4480"
       },
       "description": "For centuries Kettle Falls was a crossroads of the border lakes, where Native peoples speared sturgeon and voyageurs portaged their canoes and furs. Since 1913 a red-roofed hotel has stood here, about 15 miles from the nearest road, with a veranda made for slow conversation. A full day on the tour boat brings you across the lakes to walk the grounds and see the nearby dam. For a family that loved long days on the water, this journey carries its own meaning.",
       "plan": {

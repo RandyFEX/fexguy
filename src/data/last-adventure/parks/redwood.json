@@ -6,13 +6,12 @@
   "states": ["California"],
   "tagline": "Old-growth redwood groves above a wild, fog-washed Pacific coast.",
   "photo": {
-    "src": "/images/last-adventure/redwood/park.jpg",
-    "srcWebp": "/images/last-adventure/redwood/park.webp",
-    "alt": "Towering old-growth redwood trunks in the Tall Trees Grove",
-    "credit": "NPS Photo/Shaina Niehans",
-    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redwoods_at_Tall_Trees_Grove.jpg",
-    "caption": "Tall Trees Grove"
+    "src": "/images/last-adventure/redwood/klamath-river-overlook.jpg",
+    "srcWebp": "/images/last-adventure/redwood/klamath-river-overlook.webp",
+    "alt": "Visitors at Klamath River Overlook",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/644659a0-1dd8-b71b-0b96-82c4a28d0954",
+    "caption": "Klamath River Overlook"
   },
   "intro": "Redwood National Park protects old-growth coast redwoods and a rugged stretch of the Pacific shore, managed together with three California state parks as Redwood National and State Parks. Here a final adventure can be a family walk through a grove that helped inspire the park, a sunset above the mouth of the Klamath River, or a long descent to some of the tallest trees on earth.",
   "homepage": "https://www.nps.gov/redw/",
@@ -47,12 +46,7 @@
       "id": "lady-bird-johnson-grove",
       "name": "Lady Bird Johnson Grove",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/redwood/lady-bird-johnson-grove.jpg",
-        "srcWebp": "/images/last-adventure/redwood/lady-bird-johnson-grove.webp",
-        "alt": "A brown wooden footbridge crosses the road at the Lady Bird Johnson Grove trailhead",
-        "credit": "NPS / John Chao"
-      },
+      "photo": null,
       "description": "Cross the wooden footbridge at the trailhead and, within a few steps, young Douglas-firs give way to old-growth redwoods that have never been logged. The loop winds through the grove that President Nixon dedicated to Lady Bird Johnson in 1969, with the dedication plaque about half a mile along. It is an easy, family-friendly walk, quiet enough to hear the difference between the two forests, and a gentle place to share memories beneath trees that people once fought to save.",
       "plan": {
         "distance": "1.5 mi loop",
@@ -88,8 +82,9 @@
       "photo": {
         "src": "/images/last-adventure/redwood/klamath-river-overlook.jpg",
         "srcWebp": "/images/last-adventure/redwood/klamath-river-overlook.webp",
-        "alt": "Blue-green ocean and a sandspit at the mouth of the Klamath River",
-        "credit": "NPS Photo / Steven Krause"
+        "alt": "Visitors at Klamath River Overlook",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/644659a0-1dd8-b71b-0b96-82c4a28d0954"
       },
       "description": "High above the sea, the Klamath River Overlook looks down on the place where a river ends a 250-mile journey and meets the Pacific. Seals rest and call from the sandspit, seabirds wheel over the surf, and in spring or fall gray whales may pass offshore. With picnic tables and benches, it invites the family to linger, and on a clear evening the sunset over the water makes a fitting close to the day. Bring binoculars.",
       "plan": {
@@ -125,8 +120,9 @@
       "photo": {
         "src": "/images/last-adventure/redwood/crescent-beach-overlook.jpg",
         "srcWebp": "/images/last-adventure/redwood/crescent-beach-overlook.webp",
-        "alt": "A wooden platform and handrails overlook a blue ocean and sweeping beach",
-        "credit": "NPS Photo / B. Marciniec"
+        "alt": "Enderts Beach seen from Crescent Beach Overlook",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5fe39c25-1dd8-b71b-0be1-44fd956faf7b"
       },
       "description": "Just south of Crescent City, a short paved path leads to a wooden platform above miles of beach, the harbor and a line of jagged sea stacks offshore. It is a small, quiet place with three picnic tables, close enough to town for an easy evening visit and the kind of sunset photographers wait for. Elk often graze in the open prairies along this stretch of coast, and on a clear day the whole family can watch the light settle over the water together.",
       "plan": {
@@ -154,14 +150,7 @@
       "id": "tall-trees-grove",
       "name": "Tall Trees Grove",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/redwood/tall-trees-grove.jpg",
-        "srcWebp": "/images/last-adventure/redwood/tall-trees-grove.webp",
-        "alt": "Towering old-growth redwood trunks in the Tall Trees Grove",
-        "credit": "NPS Photo/Shaina Niehans",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redwoods_at_Tall_Trees_Grove.jpg"
-      },
+      "photo": null,
       "description": "Deep in the Redwood Creek valley, the Tall Trees Grove holds many redwoods more than 350 feet tall, fed by good soil, plenty of water and shelter from winter winds. A 1963 National Geographic article about this grove helped build the public push that created the park. Getting here takes planning, a reservation and a steep trail down to the creek's floodplain, which makes arriving all the more meaningful. Stand together among these giants and take your time before the long climb out.",
       "plan": {
         "distance": "4.5 mi round trip",

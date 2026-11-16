@@ -6,13 +6,12 @@
   "states": ["Washington"],
   "tagline": "Mountain meadows, moss-draped rain forest and a wild Pacific shoreline in one park.",
   "photo": {
-    "src": "/images/last-adventure/olympic/park.jpg",
-    "srcWebp": "/images/last-adventure/olympic/park.webp",
-    "alt": "A road winds through forested ridges below snow-capped peaks at Hurricane Ridge",
-    "credit": "TravelingOtter",
-    "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurricane_Ridge_-_Olympic_National_Park,_Washington.jpg", "title": "Hurricane Ridge - Olympic National Park, Washington",
-    "caption": "Hurricane Ridge"
+    "src": "/images/last-adventure/olympic/hurricane-hill.jpg",
+    "srcWebp": "/images/last-adventure/olympic/hurricane-hill.webp",
+    "alt": "A narrow trail through tawny grass on a mountain ridge",
+    "credit": "NPS photo Pete Zaidel",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8745e553-1dd8-b71b-0b56-7c955a688c6c",
+    "caption": "Elwha Trail on Hurricane Hill"
   },
   "intro": "Olympic gathers three worlds into one park: glacier-capped mountains, temperate rain forest and a rugged Pacific coast, with almost a million acres of wilderness between them. In a single trip a family can stand on a mountain ridge, walk beneath maples draped in moss in a forest that receives up to 12 feet of rain a year, follow a creek to a waterfall near Lake Crescent and watch the surf break against sea stacks.",
   "homepage": "https://www.nps.gov/olym/",
@@ -43,8 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/olympic/hurricane-hill.jpg",
         "srcWebp": "/images/last-adventure/olympic/hurricane-hill.webp",
-        "alt": "A hiker and a wheelchair user on the paved Hurricane Hill trail with mountains behind them",
-        "credit": "NPS/J. Burger"
+        "alt": "A narrow trail through tawny grass on a mountain ridge",
+        "credit": "NPS photo Pete Zaidel",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8745e553-1dd8-b71b-0b56-7c955a688c6c"
       },
       "description": "The paved trail to Hurricane Hill begins almost level, so a wheelchair, a walker or a grandparent's slow pace can come along for the first stretch, with the Olympic Mountains spread out to the south. Those who keep climbing reach the top, where on a clear day the view turns north across the Strait of Juan de Fuca toward Vancouver Island. Wherever each of you stops, it is a place to stand in the high, open air and speak about the person who brought you here.",
       "plan": {
@@ -79,11 +79,9 @@
       "photo": {
         "src": "/images/last-adventure/olympic/hall-of-mosses.jpg",
         "srcWebp": "/images/last-adventure/olympic/hall-of-mosses.webp",
-        "alt": "A moss-covered fallen log among ferns and young trees on the Hall of Mosses trail",
-        "credit": "King of Hearts",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoh_Rain_Forest_Olympic_June_2018_001.jpg",
-    "title": "Hoh Rain Forest Olympic June 2018 001"
+        "alt": "A sun-dappled path winds between massive trees hanging heavily with moss",
+        "credit": "NPS/Jon Preston",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/4142600b-1dd8-b71b-0b41-93585bb7bb70"
       },
       "description": "Walking into the Hall of Mosses feels like entering a green cathedral. The short loop winds through old-growth rain forest to a grove of maple trees hung with thick club moss, while ferns cover the ground and fallen trees nurse new seedlings along their trunks. Voices drop to a whisper here without anyone asking. It is a gentle place to walk slowly together, share a quiet word and feel how life keeps renewing itself all around you.",
       "plan": {
@@ -116,15 +114,7 @@
       "id": "marymere-falls",
       "name": "Marymere Falls",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/olympic/marymere-falls.jpg",
-        "srcWebp": "/images/last-adventure/olympic/marymere-falls.webp",
-        "alt": "Marymere Falls pouring down a mossy cliff in the forest near Lake Crescent",
-        "credit": "Sea Cow",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marymere_Falls_2022.jpg",
-    "title": "Marymere Falls 2022"
-      },
+      "photo": null,
       "description": "Near the shore of Lake Crescent, a forest path leads through old-growth trees toward the sound of falling water, until Marymere Falls appears, a 90-foot waterfall at the end of the trail. The park calls it the most popular day hike at Lake Crescent, and it is easy enough for most of the family to share. Stand together at the overlook, listen to the water for a while, and tell the stories that still make you smile.",
       "plan": {
         "distance": "0.9 mi one way (1.8 mi round trip)",
@@ -158,11 +148,9 @@
       "photo": {
         "src": "/images/last-adventure/olympic/ruby-beach.jpg",
         "srcWebp": "/images/last-adventure/olympic/ruby-beach.webp",
-        "alt": "Sea stacks rising from the surf at Ruby Beach on the Olympic coast",
-        "credit": "Ron Clausen",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_stacks_at_Ruby_Beach,_Washington_coast._Olympic_National_Park.jpg",
-    "title": "Sea stacks at Ruby Beach, Washington coast. Olympic National Park"
+        "alt": "A lone figure stands on a peaceful beach at sunset",
+        "credit": "C. Bubar/NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/41b62822-1dd8-b71b-0b70-34bb8b09f417"
       },
       "description": "At Ruby Beach the Pacific rolls in against dark sea stacks, and drift logs, rearranged by every winter's swells, lie scattered along the sand. Those who can't make the descent can take in the scene from the accessible overlook at the edge of the parking lot, while others follow the short trail down to the shore. Find a log to sit on together, listen to the waves, and let the rhythm of the tide carry your conversation for as long as you need.",
       "plan": {

@@ -6,11 +6,12 @@
   "states": ["Nevada"],
   "tagline": "Ancient bristlecone pines, alpine lakes and a marble cave beneath Wheeler Peak.",
   "photo": {
-    "src": "/images/last-adventure/great-basin/park.jpg",
-    "srcWebp": "/images/last-adventure/great-basin/park.webp",
-    "alt": "Blue sky above green trees in a mountain cirque",
-    "credit": "NPS Photo",
-    "caption": "On the trail to the ancient bristlecone pines"
+    "src": "/images/last-adventure/great-basin/alpine-lakes-loop.jpg",
+    "srcWebp": "/images/last-adventure/great-basin/alpine-lakes-loop.webp",
+    "alt": "A wide panorama of a high alpine meadow at Great Basin National Park at sunset, with Wheeler Peak rising on the right. A gravel trail with a wooden trail sign leads from the left",
+    "credit": "NPS/MARK DRAPER",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/748bfdf1-1725-44d8-b28c-a3371bf77b86",
+    "caption": "Beneath Wheeler Peak on the Alpine Lakes Loop"
   },
   "intro": "In remote east-central Nevada, the Snake Range rises from the sagebrush desert to Wheeler Peak, the second tallest point in the state. A single paved road climbs over 4,000 feet to alpine lakes and a grove of bristlecone pines, some of the oldest living things on earth, while below the mountain, rangers lead tours through the decorated rooms of Lehman Caves. The park's rules allow ashes to be scattered away from trails, roads, facilities and water, never in caves.",
   "homepage": "https://www.nps.gov/grba/",
@@ -34,13 +35,7 @@
       "id": "lehman-caves",
       "name": "Lehman Caves",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/great-basin/lehman-caves.jpg",
-        "srcWebp": "/images/last-adventure/great-basin/lehman-caves.webp",
-        "alt": "An amber lit rocky passageway leads deeper into a cave",
-        "credit": "NPS",
-        "position": "50% 60%"
-      },
+      "photo": null,
       "description": "Visitors have been entering Lehman Caves, the longest cave system in Nevada, since 1885. A ranger leads small groups through passages and decorated rooms that stay a cool, humid 52 degrees all year. The short accessible tour reaches the Gothic Palace, the cave's first highly decorated room, so even family members who cannot manage stairs can come along. Underground, in the hush and the soft light, it is easy to feel how long the earth has been patiently at work.",
       "plan": {
         "distance": "Accessible Gothic Palace Tour 0.3 mi; Grand Palace Tour 0.6 mi",
@@ -76,15 +71,7 @@
       "id": "wheeler-peak-scenic-drive",
       "name": "Wheeler Peak Scenic Drive",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.jpg",
-        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.webp",
-        "alt": "Wheeler Peak viewed from the Wheeler Peak Scenic Drive",
-        "credit": "Famartin",
-        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-07-14_09_37_43_Wheeler_Peak_viewed_from_Wheeler_Peak_Scenic_Drive_in_Great_Basin_National_Park.jpg",
-        "title": "2013-07-14 09 37 43 Wheeler Peak viewed from Wheeler Peak Scenic Drive in Great Basin National Park"
-      },
+      "photo": null,
       "description": "This narrow mountain road climbs 12 miles from the sagebrush flats to more than 10,000 feet, passing through pinyon and juniper, mountain mahogany, mixed conifers and finally white-barked aspen. Paved pullouts along the way look out to Mount Moriah, Lehman Creek, Wheeler Peak, Doso Doyabi and the Snake Valley far below. Take it slowly together, watch for mule deer and marmots, and stop wherever the view asks you to. It is a journey that needs no hiking at all.",
       "plan": {
         "distance": "12 mi each way by car; overlooks beside the road",
@@ -117,8 +104,9 @@
       "photo": {
         "src": "/images/last-adventure/great-basin/alpine-lakes-loop.jpg",
         "srcWebp": "/images/last-adventure/great-basin/alpine-lakes-loop.webp",
-        "alt": "Teresa Lake with a mountain in the background",
-        "credit": "NPS"
+        "alt": "A wide panorama of a high alpine meadow at Great Basin National Park at sunset, with Wheeler Peak rising on the right. A gravel trail with a wooden trail sign leads from the left",
+        "credit": "NPS/MARK DRAPER",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/748bfdf1-1725-44d8-b28c-a3371bf77b86"
       },
       "description": "Starting near 10,000 feet, this loop wanders through alpine meadows and conifer forest past two small lakes, Stella and Teresa, in the shadow of Wheeler Peak and Doso Doyabi. Their sheer cliffs rise above the water, wildflowers bloom along the trail in summer, and on clear nights the sky fills with stars. It is one of the gentlest ways into the high country, a place for a slow walk, a long pause at the lakeshore and stories shared in the mountain quiet.",
       "plan": {
@@ -159,14 +147,7 @@
       "id": "bristlecone-grove",
       "name": "Wheeler Peak Bristlecone Grove",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/great-basin/bristlecone-grove.jpg",
-        "srcWebp": "/images/last-adventure/great-basin/bristlecone-grove.webp",
-        "alt": "A weathered bristlecone pine in the Wheeler Peak grove",
-        "credit": "NPS Natural Resources",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Park_Service_(48754400391).jpg"
-      },
+      "photo": null,
       "description": "This is the most easily reached grove of ancient bristlecone pines in the park. These trees live for thousands of years: the Prometheus Tree that once stood here was about 5,200 years old when it was cut down in 1964. The trail climbs to an interpretive loop among the weathered trunks, where even dead trees can stand for millennia. Walking among them with someone you love in mind is a gentle lesson in time, endurance and what remains.",
       "plan": {
         "distance": "2.8 mi total",
@@ -203,15 +184,7 @@
       "id": "wheeler-peak",
       "name": "Wheeler Peak",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/great-basin/wheeler-peak.jpg",
-        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak.webp",
-        "alt": "Wheeler Peak rising above the Snake Range in Great Basin National Park",
-        "credit": "Ken Lund",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak,_Great_Basin_National_Park,_Nevada.jpg",
-        "title": "Wheeler Peak, Great Basin National Park, Nevada"
-      },
+      "photo": null,
       "description": "Wheeler Peak is the second tallest point in Nevada, and on a clear day its summit opens a view of more than 100 miles across the basins and ranges. The rocky, windy trail climbs above treeline from a saddle below Bald Mountain and finishes on the steepest stretch in the park. It is a full, hard day best started at dawn, and for the strongest hikers in the family, standing together on top is a way to carry someone you love to the top of the park.",
       "plan": {
         "distance": "8.6 mi round trip",

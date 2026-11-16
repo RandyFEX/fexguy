@@ -10,9 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/carlsbad-caverns/park.jpg",
     "srcWebp": "/images/last-adventure/carlsbad-caverns/park.webp",
-    "alt": "Giant Dome and Twin Domes in the Big Room",
-    "credit": "NPS/Michael Larson",
-    "caption": "Giant Dome and Twin Domes in the Big Room"
+    "alt": "Visitor stands in a room among massive cave formations",
+    "credit": "NPS Photo/Peter Jones",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/00a4066b-155d-451f-6760-3b8f7f3dd89a",
+    "caption": "Queen's Chamber"
   },
   "intro": "Beneath the Chihuahuan Desert of southeastern New Mexico lies Carlsbad Cavern, a world of great domes and hanging formations that visitors explore on paved, dimly lit trails. Families can ride an elevator down to the Big Room or walk in through the cave's enormous Natural Entrance. On summer evenings, Brazilian free-tailed bats pour out of that same entrance in search of food, a sight shared quietly from the amphitheater above.",
   "homepage": "https://www.nps.gov/cave/",
@@ -56,8 +57,9 @@
       "photo": {
         "src": "/images/last-adventure/carlsbad-caverns/big-room.jpg",
         "srcWebp": "/images/last-adventure/carlsbad-caverns/big-room.webp",
-        "alt": "The Big Room with its trail winding among cave formations",
-        "credit": "NPS/Eymard Bangcoro"
+        "alt": "A column formation surrounded by many stalactites",
+        "credit": "NPS Photo/Peter Jones",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/fd06fb94-155d-451f-673b-698df7a0706a"
       },
       "description": "An elevator carries the family down from the desert into the Big Room, where a paved trail winds past great domes and delicate formations in soft, low light. The air is cool and still, and voices naturally drop to a whisper. Benches along the way invite everyone to sit and take it in together. Walk the full loop or take the shortcut, and find a quiet bench where you can share a memory in one of the most extraordinary rooms on earth.",
       "plan": {
@@ -119,8 +121,9 @@
       "photo": {
         "src": "/images/last-adventure/carlsbad-caverns/natural-entrance.jpg",
         "srcWebp": "/images/last-adventure/carlsbad-caverns/natural-entrance.webp",
-        "alt": "The Natural Entrance to Carlsbad Cavern with visitors hiking down the trail",
-        "credit": "NPS/Eymard Bangcoro"
+        "alt": "Switchbacks on a paved trail lead into the natural entrance of Carlsbad Caverns",
+        "credit": "NPS Photo/Peter Jones",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d1777edc-155d-451f-67b1-cadb531e5fe0"
       },
       "description": "Walking in through the Natural Entrance, the family leaves the bright desert daylight behind and follows the trail down into the cool, dim cavern. Step by step the opening shrinks behind you, and the path descends the equivalent of about 79 stories before it reaches the Big Room. It is a slow, shared journey from one world into another, and a fitting way to carry someone you love into a place of deep quiet and wonder.",
       "plan": {
@@ -177,12 +180,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/carlsbad-caverns/natural-entrance.jpg",
-        "srcWebp": "/images/last-adventure/carlsbad-caverns/natural-entrance.webp",
-        "alt": "The Natural Entrance to Carlsbad Cavern, where the evening bat flight emerges",
-        "credit": "NPS/Eymard Bangcoro"
-      },
+      "photo": null,
       "description": "As evening falls, the family finds seats in the outdoor amphitheater at the cave's Natural Entrance and listens to a ranger talk about the Brazilian free-tailed bats that live inside. Then the bats emerge from the darkness and fly overhead into the desert sky in search of food. Cameras and phones stay away to protect them, so everyone simply watches together, fully present. It is a beautiful moment to hold hands and think about life continuing, night after night.",
       "plan": {
         "distance": "About a five-minute walk from the visitor center",
@@ -225,12 +223,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.jpg",
-        "srcWebp": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.webp",
-        "alt": "The grassy area and large cottonwood trees at Rattlesnake Springs",
-        "credit": "NPS/Michael Larson"
-      },
+      "photo": null,
       "description": "Away from the cavern, Rattlesnake Springs is a green oasis in the desert, where a natural spring waters a grove of tall cottonwood trees planted by the Civilian Conservation Corps. Shaded picnic tables and grills make it an easy place for the family to share a long, unhurried meal, and birds fill the trees all year. After the drama of the cave, it offers something gentler: shade, birdsong and time to talk about the person who brought you all here.",
       "plan": {
         "distance": "Picnic area beside the parking area; distance not published",

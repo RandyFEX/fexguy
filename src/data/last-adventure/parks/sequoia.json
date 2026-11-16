@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/sequoia/park.jpg",
     "srcWebp": "/images/last-adventure/sequoia/park.webp",
-    "alt": "Visitors at the base of the General Sherman Tree in the Giant Forest",
-    "credit": "m01229 from USA",
-    "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg", "title": "The General Sherman tree - Sequoia National Park (33241877800)", "title": "The General Sherman tree - Sequoia National Park (33241877800)",
-    "caption": "The General Sherman Tree"
+    "alt": "Grasses resprout in the foreground, and looking upcanyon, oak trees and other hardwoods are browned in some areas and green in others, while places where chamise shrubs grew in",
+    "credit": "Christie Hendrix, National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e3573539-f66c-4c98-920b-7d97e42f7b4c",
+    "caption": "From the foothills to Moro Rock"
   },
   "intro": "In the Giant Forest, giant sequoias rise from quiet meadows, and the largest of them all, the General Sherman Tree, is the largest tree in the world by volume. A short drive away, a stone stairway climbs Moro Rock to views across the Great Western Divide. A final adventure here can be a gentle loop among the big trees or a morning walk up a glacier-carved valley to a towering waterfall.",
   "homepage": "https://www.nps.gov/seki/",
@@ -48,10 +47,9 @@
       "photo": {
         "src": "/images/last-adventure/sequoia/general-sherman-tree.jpg",
         "srcWebp": "/images/last-adventure/sequoia/general-sherman-tree.webp",
-        "alt": "Visitors at the base of the General Sherman Tree in the Giant Forest",
-        "credit": "m01229 from USA",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg"
+        "alt": "Six people wearing yellow and green Nomex fire clothes and hardhats wrap silver fire shelter material around the base of a very large giant sequoia tree",
+        "credit": "Elizabeth Wu, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/0c58fd17-f4fe-4f43-a4d0-83cae496f019"
       },
       "description": "Standing at the foot of the General Sherman Tree, the largest tree in the world by volume, everyone instinctively looks up and goes quiet. Its trunk rises out of the Giant Forest beside other named sequoias, and benches along the path invite you to sit and take it in slowly. Bring your loved one here to stand among these giants together, and let the size of it all make room for your memories.",
       "plan": {
@@ -90,15 +88,7 @@
       "id": "big-trees-trail",
       "name": "Big Trees Trail",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/sequoia/big-trees-trail.jpg",
-        "srcWebp": "/images/last-adventure/sequoia/big-trees-trail.webp",
-        "alt": "A giant sequoia at the edge of Round Meadow on the Big Trees Trail",
-        "credit": "Pavel Špindler",
-        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sequoia_N.P._-_velk%C3%BD_strom_a_m%C3%BDtina_-_panoramio.jpg",
-    "title": "Sequoia N.P. - velký strom a mýtina - panoramio"
-      },
+      "photo": null,
       "description": "Round Meadow lies open to the sky, ringed by giant sequoias, and the Big Trees Trail circles it on a flat, paved path with benches along the way. It is an unhurried, nearly level walk that the whole family can share, including anyone using a wheelchair. Stop at the trailside panels, watch the meadow for marmots and other wildlife, and settle on a bench beneath the big trees long enough for one more story about the person who would have loved this quiet place.",
       "plan": {
         "distance": "0.7 mi loop (0.75 mi on the park's day hikes page)",
@@ -139,11 +129,9 @@
       "photo": {
         "src": "/images/last-adventure/sequoia/moro-rock.jpg",
         "srcWebp": "/images/last-adventure/sequoia/moro-rock.webp",
-        "alt": "Forested ridges and the Sierra Nevada seen from the Moro Rock trail",
-        "credit": "King of Hearts",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moro_Rock_Trail_Sequoia_July_2017_006.jpg",
-    "title": "Moro Rock Trail Sequoia July 2017 006"
+        "alt": "View of large granite outcrop , with a mix of green, browned, and blackened vegetation on the slopes below it, representing different levels of fire severity",
+        "credit": "Christie Hendrix, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/69209b94-62a0-47fd-b8fb-5ee4196890d8"
       },
       "description": "Moro Rock is a granite dome jutting from the edge of the Giant Forest, and a historic stone stairway of more than 350 steps winds to its top. With each landing the view widens, until the peaks of the Great Western Divide fill the east and the foothills fall away to the west. At the summit, a railing encloses a flat stretch of rock. Climb at your own pace, rest together on the way, and share a moment on top of the world.",
       "plan": {
@@ -181,15 +169,7 @@
       "id": "tokopah-falls",
       "name": "Tokopah Falls",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/sequoia/tokopah-falls.jpg",
-        "srcWebp": "/images/last-adventure/sequoia/tokopah-falls.webp",
-        "alt": "Tokopah Falls cascading down granite cliffs in Tokopah Valley",
-        "credit": "NPS",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokopah_Falls,_Sequoia_and_Kings_Canyon_National_Parks_SEKI4542.jpg",
-        "position": "50% 40%"
-      },
+      "photo": null,
       "description": "The trail to Tokopah Falls follows the Marble Fork of the Kaweah River up a valley shaped by a glacier, with granite walls rising higher at every turn. Watch for marmots and deer while the river keeps you company the whole way. At the end, the falls pour 1,200 feet down the canyon's cliffs. It is a fine half-day walk for a family, and the park calls it the easiest way to glimpse its high country.",
       "plan": {
         "distance": "3.4 mi round trip",

@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/theodore-roosevelt/park.jpg",
     "srcWebp": "/images/last-adventure/theodore-roosevelt/park.webp",
-    "alt": "A river meanders through cottonwood trees and steep buttes",
-    "credit": "NPS/L. Thomas",
-    "caption": "The Little Missouri River from Oxbow Overlook"
+    "alt": "Snow covered buttes in the background with prairie grasses and barren tree in the foreground",
+    "credit": "NPS/Laura Thomas",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8d79894c-1dd8-b71b-0be6-f81e8f6c32fc",
+    "caption": "Wintry buttes: a backdrop to the Elkhorn Ranch house"
   },
   "intro": "Theodore Roosevelt called these North Dakota badlands \"a land of vast, silent spaces,\" and the description still fits. Layered buttes, wind-carved canyons and the cottonwood-lined Little Missouri River spread across two main units, each with a scenic drive, short trails and overlooks. Bison often graze within sight of the road, and evenings here can end in some of the quietest sunsets on the plains.",
   "homepage": "https://www.nps.gov/thro/",
@@ -39,10 +40,9 @@
       "photo": {
         "src": "/images/last-adventure/theodore-roosevelt/painted-canyon-overlook.jpg",
         "srcWebp": "/images/last-adventure/theodore-roosevelt/painted-canyon-overlook.webp",
-        "alt": "Layered badlands buttes and green valleys stretch to the horizon from the Painted Canyon overlook",
-        "credit": "Joseph H. Hartman",
-        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Painted_Canyon,_Theodore_Roosevelt_National_Park_(GeoDIL_number_-_1058).jpg"
+        "alt": "Badlands sedimentary low lying buttes in the foreground and high elevation buttes in the background",
+        "credit": "NPS/Laura Thomas",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/602aa24e-1dd8-b71b-0bec-a113821d69e5"
       },
       "description": "For many travelers on Interstate 94, Painted Canyon is the first look at the badlands, and it is a striking one. Buttes striped with rock layers of many colors step down into a wide canyon, with Buck Hill rising across it and a trail threading through the bottom. A sidewalk follows the rim behind the visitor center, so the whole family can stroll along the edge at an easy pace. Bison often wander nearby, adding to the feeling of a place still wild.",
       "plan": {
@@ -69,8 +69,9 @@
       "photo": {
         "src": "/images/last-adventure/theodore-roosevelt/boicourt-overlook.jpg",
         "srcWebp": "/images/last-adventure/theodore-roosevelt/boicourt-overlook.webp",
-        "alt": "A view across the badlands, with buttes visible on the horizon, and trees and valleys below",
-        "credit": "NPS Photo/L.Thomas"
+        "alt": "Snow covers the badlands in a view from Boicourt Overlook along the South Unit's 36-mile Scenic Loop Drive",
+        "credit": "NPS/Nathan King",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/025cd60a-155d-4519-3eda-6e2118d69431"
       },
       "description": "At Boicourt Overlook the broken, rolling badlands stretch toward the horizon, and the larger buttes beyond the park boundary stand in silhouette. It is easy to see why Roosevelt spoke of vast, silent spaces. Rangers count this among their favorite places to watch the sun go down, so time your visit for evening, bring a blanket, and let the colors fade over the landscape while you share the memories that matter most.",
       "plan": {
@@ -100,8 +101,9 @@
       "photo": {
         "src": "/images/last-adventure/theodore-roosevelt/wind-canyon.jpg",
         "srcWebp": "/images/last-adventure/theodore-roosevelt/wind-canyon.webp",
-        "alt": "A view down Wind Canyon toward the river, with green trees lining a grassy trail at the bottom",
-        "credit": "NPS Photo"
+        "alt": "Rays from a setting sun burst through cloud to shine on a rocky butte and river down below",
+        "credit": "NPS/Dave Bruner",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5e7d74ab-1dd8-b71b-0b57-c18cc3a50930"
       },
       "description": "Wind rushes through this small canyon on its way across the Little Missouri River, and over the years it has smoothed the walls into soft curves and hoodoos, with hollows where great horned owls nest. A short trail climbs along the canyon edge to what the park calls one of the best views in the South Unit: river, badlands and sky in one unbroken sweep. Rangers favor it at sunset. Stand together at the top and let the wind carry your words.",
       "plan": {
@@ -131,12 +133,7 @@
       "id": "oxbow-overlook",
       "name": "Oxbow Overlook and Sperati Point",
       "kinds": ["accessible", "extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.jpg",
-        "srcWebp": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.webp",
-        "alt": "A river meanders through cottonwood trees and steep buttes",
-        "credit": "NPS/L. Thomas"
-      },
+      "photo": null,
       "description": "The North Unit's scenic drive ends here, high above a broad bend of the Little Missouri River framed by tall cottonwoods and steep buttes. A short sidewalk lets everyone take in the view together. Those who want more can follow a gentle prairie trail to Sperati Point, a quiet rise with sweeping badlands views and a rich mix of grasses and wildflowers underfoot. Far from the crowds, it is a peaceful place to remember someone who loved open country.",
       "plan": {
         "distance": "Short sidewalk at the overlook; Sperati Point 1.5 mi (hiking guide) or 2.4 mi (day hikes page) round trip",

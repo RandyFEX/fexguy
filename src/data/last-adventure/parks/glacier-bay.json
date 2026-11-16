@@ -10,9 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/glacier-bay/park.jpg",
     "srcWebp": "/images/last-adventure/glacier-bay/park.webp",
-    "alt": "Plates of pan ice float on blue water below a line of snowy mountains",
-    "credit": "NPS Photo/B. Whitehead",
-    "caption": "Pan ice in Tarr Inlet"
+    "alt": "An inflated raft with paddles faces a glacier and mountains",
+    "credit": "National Park Service",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c23208c9-0d86-4999-907e-66ae464eebb6",
+    "caption": "Sunset at Walker Glacier"
   },
   "intro": "Just 250 years ago a glacier about 100 miles long filled Bartlett Cove; today Glacier Bay is a maze of fjords where tidewater glaciers calve into the sea and wildlife returns to newly uncovered shores. No roads lead here: families arrive by plane or ferry at Gustavus, then walk the forest and shoreline trails of Bartlett Cove or ride the daily tour boat up the bay to the ice. This is also the ancestral homeland of the Huna Tlingit clans. All areas of the park are open to scattering of ashes without a permit.",
   "homepage": "https://www.nps.gov/glba/",
@@ -55,14 +56,9 @@
       "photo": {
         "src": "/images/last-adventure/glacier-bay/huna-tribal-house.jpg",
         "srcWebp": "/images/last-adventure/glacier-bay/huna-tribal-house.webp",
-        "alt": "The carved and painted front of Xunaa Shuká Hít, the Huna Tribal House, with forest behind it",
-        "credit": "Pi3.124",
-        "license": {
-          "name": "CC BY-SA 4.0",
-          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoonah_Tlingit_Tribal_House_in_Glacier_Bay_National_Park.jpg", "title": "Hoonah Tlingit Tribal House in Glacier Bay National Park",
-        "position": "50% 20%"
+        "alt": "The Huna Tribal house paints a serene scene along the shoreline of Glacier Bay",
+        "credit": "NPS/K. Boomer",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6354ac7f-1dd8-b71b-0b81-2f7a290147b6"
       },
       "description": "On the shoreline of Bartlett Cove stands Xunaa Shuká Hít, the Huna Tribal House, completed in 2016 as a place of discovery and reconnection for the Huna Tlingit clans whose homeland this is. The flat Tlingit Trail leads there past a traditional dugout canoe and a complete whale skeleton, with views across the cove. Admire the carved totems and house screen, and in summer step inside to see the four house posts that tell the clans' stories. It is a fitting place to remember that every family carries its history forward.",
       "plan": {
@@ -118,17 +114,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/glacier-bay/forest-trail.jpg",
-        "srcWebp": "/images/last-adventure/glacier-bay/forest-trail.webp",
-        "alt": "Hikers walk a rocky path through mossy spruce and hemlock forest",
-        "credit": "NPS",
-        "license": {
-          "name": "Public domain",
-          "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exploring_the_Forest_Loop_Trail_(2ee63d55-1dd8-b71c-0714-7a02d6af23b9).jpg"
-      },
+      "photo": null,
       "description": "This loop wanders through the spruce and hemlock rainforest of Bartlett Cove, past quiet ponds, then down to the beach. A wooden boardwalk leads to a viewing deck over a serene pond, and two benches invite you to sit for a while and listen to the forest. Every afternoon in summer a ranger leads a walk here. It is an easy, unhurried hour, the kind of walk where stories come out naturally, and the beach at the end is a lovely place to stand together and look out over the cove.",
       "plan": {
         "distance": "1 mi loop",
@@ -190,14 +176,9 @@
       "photo": {
         "src": "/images/last-adventure/glacier-bay/bartlett-river-trail.jpg",
         "srcWebp": "/images/last-adventure/glacier-bay/bartlett-river-trail.webp",
-        "alt": "A narrow trail winds through moss-covered logs and rainforest on the Bartlett River and Lake Trail",
-        "credit": "Pi3.124",
-        "license": {
-          "name": "CC BY-SA 4.0",
-          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Bay_National_Park,_Bartlett_River_and_Lake_Trail.jpg",
-        "title": "Glacier Bay National Park, Bartlett River and Lake Trail"
+        "alt": "An angler fishing the Bartlett River",
+        "credit": "National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2ead575d-1dd8-b71c-070a-528db23f055e"
       },
       "description": "The Bartlett River Trail follows an intertidal lagoon, slips through spruce and hemlock forest and comes out at the open estuary where the river meets the sea. Ducks, geese and other water birds gather on the tidal flats, and late in the summer salmon run upriver, drawing hungry harbor seals. Watch the beach for coyotes, moose, bears and river otters. It is a half-day walk with room for long pauses, and the estuary at the end feels made for quiet remembering.",
       "plan": {
@@ -254,12 +235,7 @@
         "accessible",
         "extraordinary"
       ],
-      "photo": {
-        "src": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.jpg",
-        "srcWebp": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.webp",
-        "alt": "The day tour boat in front of the crumbly blue ice wall of Margerie Glacier",
-        "credit": "NPS Photo/S. Tevebaugh"
-      },
+      "photo": null,
       "description": "Each summer morning a tour boat leaves Bartlett Cove for a seven-hour journey up the bay, with a park ranger aboard. Puffins and hundreds of roaring sea lions crowd South Marble Island, mountain goats cling to the cliffs, and the shoreline grows younger as the ice draws closer. Then the tidewater glaciers appear, rivers of ice about a mile wide, and the boat waits at one for at least half an hour so you can watch and hear it calve. Bundle up together on deck for this.",
       "plan": {
         "distance": "130-mile trip by boat from Bartlett Cove",

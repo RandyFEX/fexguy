@@ -6,11 +6,12 @@
   "states": ["U.S. Virgin Islands"],
   "tagline": "White sand bays, coral reefs and forest trails on the island of St. John.",
   "photo": {
-    "src": "/images/last-adventure/virgin-islands/park.jpg",
-    "srcWebp": "/images/last-adventure/virgin-islands/park.webp",
-    "alt": "A sunset colors the horizon as seen from an overlook above the bay",
-    "credit": "NPS Photo",
-    "caption": "Sunset from Lind Point Overlook"
+    "src": "/images/last-adventure/virgin-islands/reef-bay-trail.jpg",
+    "srcWebp": "/images/last-adventure/virgin-islands/reef-bay-trail.webp",
+    "alt": "Petroglyphs mirrored in the water",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/592e54d6-9760-47bf-a511-f8b26a7f6939",
+    "caption": "Petroglyphs on the Reef Bay Trail"
   },
   "intro": "Most of St. John belongs to Virgin Islands National Park, a place of turquoise bays, coral reefs, dry tropical forest and the ruins of the island's past. A final adventure here can be a quiet morning on one of the most beautiful beaches anywhere, a gentle walk beside a bird-filled salt pond, or a long day's hike down to the sea. Ashes may not be scattered anywhere on land in the park; the park allows scattering only far out at sea, with a free permit.",
   "homepage": "https://www.nps.gov/viis/",
@@ -36,12 +37,7 @@
       "id": "trunk-bay",
       "name": "Trunk Bay",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/virgin-islands/trunk-bay.jpg",
-        "srcWebp": "/images/last-adventure/virgin-islands/trunk-bay.webp",
-        "alt": "Turquoise water laps a white sandy shore fringed with lush green vegetation",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "Trunk Bay is the kind of beach people picture when they close their eyes: crystal-clear water, soft white sand and green hills curving around the bay. The park calls it one of the most beautiful beaches in the world. Accessible paths and beach ramps bring everyone down to the water, and snorkelers can follow an underwater trail of signs over the coral. Spread out a blanket, let the little ones splash at the edge, and spend an unhurried day remembering someone who would have loved it here.",
       "plan": {
         "distance": "At the parking area; 0.3 mi of beach",
@@ -98,15 +94,7 @@
       "id": "ram-head",
       "name": "Ram Head",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/virgin-islands/ram-head.jpg",
-        "srcWebp": "/images/last-adventure/virgin-islands/ram-head.webp",
-        "alt": "Cactus and dry scrub on the Ram Head headland above a deep blue sea and distant islands",
-        "credit": "Scott Long",
-        "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ram%27s_Head,_St_John,_USVI_-_panoramio.jpg",
-        "title": "Ram's Head, St John, USVI - panoramio"
-      },
+      "photo": null,
       "description": "First comes an easy stroll down an old road to Salt Pond Bay. Then a narrow, rocky path climbs through dry desert scrub, past Blue Pebble Beach, to the peak of Ram Head, a place tied to the 1733 African Revolution on St. John. The park calls the views dramatic and suggests it for sunset, and you might even spot a whale or dolphins in the water below. Standing together at the end of the land, with the wind and the sea all around, is a fitting way to remember an adventurous spirit.",
       "plan": {
         "distance": "1/4 mi to Salt Pond Bay, then just under 1 mi to the top of Ram Head",
@@ -140,11 +128,9 @@
       "photo": {
         "src": "/images/last-adventure/virgin-islands/reef-bay-trail.jpg",
         "srcWebp": "/images/last-adventure/virgin-islands/reef-bay-trail.webp",
-        "alt": "Ancient petroglyphs carved into rock beside a pool on the Reef Bay Trail",
-        "credit": "mollystevens",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petroglyphsstjohnusvi.jpg",
-        "title": "Petroglyphsstjohnusvi"
+        "alt": "Ancient petroglyphs reflected in a pool on the Reef Bay Trail",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/592e54d6-9760-47bf-a511-f8b26a7f6939"
       },
       "description": "From the island's high center road, the Reef Bay Trail drops through a shady, moist forest, past the remains of four sugar estates, all the way to the sea. A side trail leads to a small waterfall and to petroglyphs at a site sacred to the indigenous Taíno people, and at the bottom stand the stone walls and steam machinery of the Reef Bay sugar factory, near a beach where you can cool off. It is a long, demanding day, best for the hikers in the family, and every step carries you deeper into the island's story.",
       "plan": {

@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/new-river-gorge/park.jpg",
     "srcWebp": "/images/last-adventure/new-river-gorge/park.webp",
-    "alt": "Clouds filling the deep New River Gorge, with the river peeking through at the bottom",
-    "credit": "NPS/Sarah Merlau",
-    "caption": "Clouds in the gorge, seen from Canyon Rim"
+    "alt": "View looking up at a steep waterfall with moss-covered rocky walls",
+    "credit": "NPS/Victoria Stauffenberg",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/dcf1091c-81f2-47a2-8c9e-be0b6592a466",
+    "caption": "Wolf Creek Falls area"
   },
   "intro": "The New River cuts a deep, forested gorge through the mountains of southern West Virginia, rimmed by sandstone cliffs and crossed by the New River Gorge Bridge. A family can stand on a boardwalk facing the bridge, watch sunrise from Grandview, walk out onto rock points high above the rapids, or listen to Sandstone Falls pour across the whole river. Scattering is allowed by permit, at no application charge.",
   "homepage": "https://www.nps.gov/neri/",
@@ -39,12 +40,7 @@
       "id": "canyon-rim-boardwalk",
       "name": "Canyon Rim Boardwalk",
       "kinds": ["accessible"],
-      "photo": {
-        "src": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.jpg",
-        "srcWebp": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.webp",
-        "alt": "The boardwalk deck overlooking the gorge and the New River Gorge Bridge",
-        "credit": "NPS/John Chapman"
-      },
+      "photo": null,
       "description": "Just outside the Canyon Rim Visitor Center, a short boardwalk leads to a deck that looks straight across the gorge at the New River Gorge Bridge, its steel arch spanning the gorge 876 feet above the river. On some mornings clouds fill the gorge below you. The upper viewpoint is an easy roll or stroll from the parking lot, so the whole family can gather at the rail together, and those who want more can take the 178 steps down to the lower overlook.",
       "plan": {
         "distance": "0.1 mi one way",
@@ -74,8 +70,9 @@
       "photo": {
         "src": "/images/last-adventure/new-river-gorge/grandview-main-overlook.jpg",
         "srcWebp": "/images/last-adventure/new-river-gorge/grandview-main-overlook.webp",
-        "alt": "Sunrise over the New River Gorge from the Main Overlook at Grandview",
-        "credit": "NPS/Sheila Malone"
+        "alt": "view of horseshoe bend from Grandview's Main Overlook",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/1c7aa6d4-155d-451f-67a2-27696750eb81"
       },
       "description": "From the Main Overlook at Grandview, the New River lies about 1,400 feet below, curving through the gorge between forested slopes. Sunrise here draws photographers, and in late spring you may spot whitewater rafters far below. Around the third week of May the Catawba rhododendrons bloom, filling the rim with color. Come early with coffee and the people who matter most, and watch the light climb down the walls of the gorge while you share what your loved one meant to each of you.",
       "plan": {
@@ -101,8 +98,9 @@
       "photo": {
         "src": "/images/last-adventure/new-river-gorge/sandstone-falls-boardwalk.jpg",
         "srcWebp": "/images/last-adventure/new-river-gorge/sandstone-falls-boardwalk.webp",
-        "alt": "Sandstone Falls spanning the wide New River below forested hills",
-        "credit": "NPS/Dave Bieri"
+        "alt": "large waterfall spanning a wide river",
+        "credit": "NPS photo/Dave Bieri",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/4977a9b4-7e78-4425-bea2-6e70a1f79ec3"
       },
       "description": "Sandstone Falls is the largest waterfall on the New River, stretching 1,500 feet across and broken by islands into drops of 10 to 25 feet. A boardwalk crosses two bridges onto the islands and ends at observation decks with the whole width of the falls before you. Rare plants grow on the flat rocks along the way. The steady roar of the river makes a natural place to stand close together, say what needs saying, and let the water carry the rest.",
       "plan": {
@@ -137,8 +135,9 @@
       "photo": {
         "src": "/images/last-adventure/new-river-gorge/long-point-trail.jpg",
         "srcWebp": "/images/last-adventure/new-river-gorge/long-point-trail.webp",
-        "alt": "The New River Gorge Bridge spanning the river and deep forested gorge, seen from Long Point",
-        "credit": "NPS/Dave Bieri"
+        "alt": "bridge spanning deep, forested gorge",
+        "credit": "NPS photo/Chance Raso",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/57c3e20e-d0fa-41b3-bd2a-b4ac5b4d3734"
       },
       "description": "The Long Point Trail wanders through fields and forest before ending on a rock outcrop with panoramic views of the gorge and the New River Gorge Bridge. Most of the walk descends gently through the trees, with one steep pitch just before the point. Out on the rock, with the bridge and the river far below, there is room to sit together and tell the story of a life from beginning to end.",
       "plan": {
@@ -174,9 +173,9 @@
       "photo": {
         "src": "/images/last-adventure/new-river-gorge/endless-wall-trail.jpg",
         "srcWebp": "/images/last-adventure/new-river-gorge/endless-wall-trail.webp",
-        "alt": "View from Diamond Point down into the deep, forested gorge and the river",
-        "credit": "NPS/Dave Bieri",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_view_from_Diamond_Point_on_the_Endless_Wall_Trail_is_one_of_the_most_spectacular_viewpoints_in_the_park._(d2ed428b-da0b-4036-bed6-ea83f8979cf3).JPG"
+        "alt": "a view of a deep, forested gorge with river",
+        "credit": "NPS photo/Dave Bieri",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d2ed428b-da0b-4036-bed6-ea83f8979cf3"
       },
       "description": "The Endless Wall Trail passes through rich forest and across Fern Creek, then zig-zags along the top of the sandstone cliffs, with the New River almost 1,000 feet below. You may hear rafters shouting through the rapids and see climbers on the walls. Diamond Point, the classic turnaround, is one of the park's most spectacular viewpoints. Walking the rim together and arriving at that open ledge gives a family time to talk on the way, and a view worth the silence at the end.",
       "plan": {

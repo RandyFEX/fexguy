@@ -8,11 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/joshua-tree/park.jpg",
     "srcWebp": "/images/last-adventure/joshua-tree/park.webp",
-    "alt": "Joshua trees and a pile of granite boulders in evening light, with rocky mountains under a streaked sky",
-    "credit": "NPS/Brad Sutton",
-    "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_at_Joshua_Tree_National_Park_(21123226221).jpg",
-    "caption": "Joshua trees at sunset"
+    "alt": "A rock that looks like half a heart with stars overhead and the beginning of a sunrise at the horizon",
+    "credit": "NPS/Hannah Schwalbe",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/296e994e-3b59-4279-a25e-44a6bdfaca85",
+    "caption": "Heartbreak Rock at Dawn"
   },
   "intro": "Joshua Tree is where the Mojave and Colorado deserts meet, a landscape of spiky Joshua trees, rounded granite boulders and open sky. A final adventure here can be a quiet sunset at a mountain overlook, a gentle loop through a hidden valley, or a climb to a summit that looks out across the whole park. Scattering is allowed with a permit, in one area the park assigns.",
   "homepage": "https://www.nps.gov/jotr/",
@@ -40,8 +39,9 @@
       "photo": {
         "src": "/images/last-adventure/joshua-tree/keys-view.jpg",
         "srcWebp": "/images/last-adventure/joshua-tree/keys-view.webp",
-        "alt": "Keys View looking across the Little San Bernardino Mountains into the Coachella Valley",
-        "credit": "NPS/Lian Law"
+        "alt": "View from Keys View toward Palm Springs, the San Andreas Fault and the Salton Sea",
+        "credit": "NPS Photo by Robb Hannawacker",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d451976f-b457-7381-367f-63daa9958a4c"
       },
       "description": "Perched in the Little San Bernardino Mountains, Keys View looks out as the mountains fall away into the Coachella Valley below. The park's paved loop points out Mount San Jacinto, Mount San Gorgonio, the San Andreas Fault and the Salton Sea, and on a very clear day you can see Signal Mountain in Mexico, 90 miles south. Stand at the rail together as the light changes over the valley, and let the long view carry the conversation.",
       "plan": {
@@ -73,8 +73,9 @@
       "photo": {
         "src": "/images/last-adventure/joshua-tree/cholla-cactus-garden.jpg",
         "srcWebp": "/images/last-adventure/joshua-tree/cholla-cactus-garden.webp",
-        "alt": "A person walking a path beside chollas, with the sun setting over mountains",
-        "credit": "NPS/Alison Taggart-Barone"
+        "alt": "Pink clouds over dark mountains and cholla cactus",
+        "credit": "NPS/Hannah Schwalbe",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a13c7e4a-9459-46ed-89b6-624586669df2"
       },
       "description": "Thousands of teddy bear cholla grow shoulder to shoulder here, so dense they seem planted, though every one is wild. The path meanders through them on the edge of the Pinto Basin, with views across the basin to the surrounding mountains, and dawn and dusk are lovely times to come. The path is short and gentle, so everyone can walk it at their own pace, pause together at the far end of the loop and watch the evening settle over the desert.",
       "plan": {
@@ -106,8 +107,9 @@
       "photo": {
         "src": "/images/last-adventure/joshua-tree/hidden-valley.jpg",
         "srcWebp": "/images/last-adventure/joshua-tree/hidden-valley.webp",
-        "alt": "A hiker looking through a rocky landscape to a valley with mountains in the distance",
-        "credit": "NPS/Hannah Schwalbe"
+        "alt": "a hiker stands atop rocks, looking out over a desert valley",
+        "credit": "NPS/Hannah Schwalbe",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f7c8d626-1dd8-b71b-0b64-2a9c5a31c27c"
       },
       "description": "A ring of giant boulders closes around this small valley, which local legend says once hid cattle rustlers. The loop winds between rock walls, Joshua trees and desert plants, with signs along the way about the land and its wildlife. It feels secluded, almost private, once you are inside. Walk it slowly, stop where the rocks offer a little shade, and trade the stories that belong to the person you came to remember.",
       "plan": {
@@ -138,11 +140,9 @@
       "photo": {
         "src": "/images/last-adventure/joshua-tree/barker-dam.jpg",
         "srcWebp": "/images/last-adventure/joshua-tree/barker-dam.webp",
-        "alt": "Granite boulders reflected in the still water behind Barker Dam",
-        "credit": "King of Hearts",
-        "license": { "name": "CC BY-SA 3.0", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barker_Dam_Joshua_Tree_December_2013_003.jpg",
-    "title": "Barker Dam Joshua Tree December 2013 003"
+        "alt": "Three people with bouldering crash pads on their backs walking along a trail with Joshua trees as the sun sets",
+        "credit": "NPS/Brad Sutton",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3aae4068-d491-96fc-70be-63b2009f2a25"
       },
       "description": "This easy loop wanders between towering monzogranite boulders to a small dam built by early cattle ranchers. After rain, water pools behind it and mirrors the rocks; at other times you may spot bighorn sheep or rock climbers on the walls. Farther along, a rock art site tells of people who lived here long before. Pause on the flat boulder above the dam and share a few stories about the generations that shaped your own family.",
       "plan": {
@@ -180,12 +180,7 @@
       "id": "ryan-mountain",
       "name": "Ryan Mountain",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/joshua-tree/ryan-mountain.jpg",
-        "srcWebp": "/images/last-adventure/joshua-tree/ryan-mountain.webp",
-        "alt": "A person hiking a dirt trail on a mountain with mountains in the distance",
-        "credit": "NPS/Alison Taggart-Barone"
-      },
+      "photo": null,
       "description": "The trail starts out level, then climbs steadily up stone steps toward the sky. At the summit of Ryan Mountain, sweeping panoramic views open across the heart of the park in every direction. It is one of the most popular hikes in the park, and the effort is part of the tribute. Rest together at the top, catch your breath and take in a view your loved one would have savored.",
       "plan": {
         "distance": "3 mi round trip",

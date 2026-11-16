@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/lassen-volcanic/park.jpg",
     "srcWebp": "/images/last-adventure/lassen-volcanic/park.webp",
-    "alt": "A vehicle drives on a mountain road toward Lassen Peak, patched with snow",
-    "credit": "NPS Photo",
-    "caption": "Lassen Volcanic National Park Highway"
+    "alt": "aerial view of a large hydrothermal feature with wooden boardwalk trail through it",
+    "credit": "NPS photo",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/238a5d1e-d4af-42d2-9315-1786652a990b",
+    "caption": "Bumpass Hell seen from above"
   },
   "intro": "At Lassen Volcanic, the earth is still at work: mudpots bubble, steam vents hiss and colored pools fill hydrothermal basins beneath Lassen Peak. A 30-mile highway links the park's two main entrances, passing lakes, meadows and roadside viewpoints along the way. A final adventure here can be a quiet sunset walk around a mountain lake, a short stroll to a steaming basin or a climb to the summit of the volcano itself.",
   "homepage": "https://www.nps.gov/lavo/",
@@ -46,11 +47,9 @@
       "photo": {
         "src": "/images/last-adventure/lassen-volcanic/manzanita-lake.jpg",
         "srcWebp": "/images/last-adventure/lassen-volcanic/manzanita-lake.webp",
-        "alt": "Lassen Peak reflected in the still water of Manzanita Lake",
-        "credit": "Ineshima",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manzanita_Lake,_Lassen_Volcanic_National_Park.jpg",
-        "title": "Manzanita Lake, Lassen Volcanic National Park"
+        "alt": "fisherman in small orange boat on a large lake among pine trees with a snow-patched mountain peak looming behind",
+        "credit": "NPS photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3dc5160c-a674-46e2-a79c-7b97cbd10f98"
       },
       "description": "Manzanita Lake is one of the few walks in the park with views of Lassen Peak, and from its western shore the volcano and the jagged Chaos Crags rise together above the water. The level loop passes songbirds, waterbirds and black-tailed deer, and the evening alpenglow on the peaks is something to wait for. Pack a picnic, walk at the pace of the slowest in your group, and watch the light fade on the mountain together.",
       "plan": {
@@ -91,11 +90,9 @@
       "photo": {
         "src": "/images/last-adventure/lassen-volcanic/sulphur-works.jpg",
         "srcWebp": "/images/last-adventure/lassen-volcanic/sulphur-works.webp",
-        "alt": "A gray mudpot bubbling at Sulphur Works",
-        "credit": "Frank Schulenburg",
-        "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mudpot_at_Sulphur_Works,_Lassen_Volcanic_National_Park.jpg",
-        "title": "Mudpot at Sulphur Works, Lassen Volcanic National Park"
+        "alt": "steaming green mudpot",
+        "credit": "NPS photo/Patrick Schlichtenmyer",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/313aa8eb-a1e4-4366-b296-68dd3b2ff564"
       },
       "description": "Sulphur Works is the easiest of the park's hydrothermal areas to reach, an otherworldly place of vivid colors, pungent smells and bubbling, shifting ground right beside the highway. A short paved sidewalk brings everyone, young and old, to viewing areas where waysides tell the story of the ancient volcano that once filled this basin. It is a lively, surprising stop, the kind of place your loved one might have laughed at, pointed out and talked about for years.",
       "plan": {
@@ -132,10 +129,9 @@
       "photo": {
         "src": "/images/last-adventure/lassen-volcanic/bumpass-hell.jpg",
         "srcWebp": "/images/last-adventure/lassen-volcanic/bumpass-hell.webp",
-        "alt": "The steaming Bumpass Hell hydrothermal basin seen from the west",
-        "credit": "DimiTalen",
-        "license": { "name": "CC0", "url": "https://creativecommons.org/publicdomain/zero/1.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Bumpass_Hell_from_the_west,_Lassen_Volcanic_National_Park,_2011.jpg"
+        "alt": "A boardwalk passes by a silver/gray pool of water with steam rising in the distance",
+        "credit": "Amanda Sweeney, NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/053fb6da-1a33-4079-bdab-d408194447b9"
       },
       "description": "The trail to Bumpass Hell crosses the slope of Bumpass Mountain with views of volcanic peaks, passes an overlook of the five remnant peaks of the ancient Brokeoff Volcano, then drops into the park's largest hydrothermal area. A boardwalk carries you among steaming vents and colored pools. The park calls it popular with hikers of all ages, and walking it together, children and grandparents side by side, makes for an afternoon of wonder worth sharing.",
       "plan": {
@@ -183,10 +179,9 @@
       "photo": {
         "src": "/images/last-adventure/lassen-volcanic/lassen-peak.jpg",
         "srcWebp": "/images/last-adventure/lassen-volcanic/lassen-peak.webp",
-        "alt": "A hiker on the trail leading up Lassen Peak",
-        "credit": "Victoria Stauffenberg (NPS Gallery)",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/File:Lassen_Volcanic_National_Park_(5407de81-9c86-4026-bc09-6e2842851310).jpg" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lassen_Volcanic_National_Park_(5407de81-9c86-4026-bc09-6e2842851310).jpg"
+        "alt": "a brown grass meadow bordered by pine trees and cut by a creek, a snowy mountain looms behind",
+        "credit": "NPS photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/98b078fe-1534-4432-9137-e3475238ee9d"
       },
       "description": "Lassen Peak is one of the largest plug dome volcanoes in the world, and its trail climbs from twisted hemlock and whitebark pine onto open cinders, then up a rocky ridge of switchbacks to the first summit. There, with interpretive signs and room to rest, the whole park spreads out below in every direction. It is a hard, high climb, and reaching the top together with your loved one's memory is a tribute the strongest hikers in your family will carry home.",
       "plan": {

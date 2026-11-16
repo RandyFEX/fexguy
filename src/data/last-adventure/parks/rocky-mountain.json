@@ -10,14 +10,10 @@
   "photo": {
     "src": "/images/last-adventure/rocky-mountain/park.jpg",
     "srcWebp": "/images/last-adventure/rocky-mountain/park.webp",
-    "alt": "A stream winds through the golden meadow of Moraine Park below snow-capped peaks",
-    "credit": "Frank Schulenburg",
-    "license": {
-      "name": "CC BY-SA 4.0",
-      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moraine_Park_Valley,_Rocky_Mountain_National_Park.jpg", "title": "Moraine Park Valley, Rocky Mountain National Park",
-    "caption": "Moraine Park"
+    "alt": "fallen tree reflected on bear lake",
+    "credit": "NPS Photo/Aubry Andreas",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/287a97f7-a94b-41a2-ad50-b68f985f44b2",
+    "caption": "Bear Lake"
   },
   "intro": "Rocky Mountain National Park stretches from quiet montane meadows to alpine tundra above 12,000 feet, where Trail Ridge Road crosses the top of the range. Mountain lakes such as Bear Lake and Sprague Lake sit at the foot of the Continental Divide, a short walk from the car. The park also suggests its own scenic areas for scattering ashes, so a family can plan the farewell and the scattering on the same trip.",
   "homepage": "https://www.nps.gov/romo/",
@@ -62,8 +58,9 @@
       "photo": {
         "src": "/images/last-adventure/rocky-mountain/bear-lake.jpg",
         "srcWebp": "/images/last-adventure/rocky-mountain/bear-lake.webp",
-        "alt": "Bear Lake, the surface of the lake is frozen and covered with snow on a sunny day",
-        "credit": "NPS Photo/D.Turk"
+        "alt": "Yellow aspens line the trail",
+        "credit": "NPS Photo/Karen Daugherty",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8d1f8a64-3b76-4af4-9c6e-ecba868f0e2b"
       },
       "description": "At the end of Bear Lake Road, a short marked path leads from the parking area to a small mountain lake with Hallett Peak rising above it. The park calls the loop around the lake its most popular hike, and it is easy to see why: every few steps the mountains frame the water from a new angle. Walk part of the way together or simply stand at the shore. In winter the lake freezes white, and the quiet is almost complete.",
       "plan": {
@@ -122,8 +119,9 @@
       "photo": {
         "src": "/images/last-adventure/rocky-mountain/sprague-lake.jpg",
         "srcWebp": "/images/last-adventure/rocky-mountain/sprague-lake.webp",
-        "alt": "A section of the Sprague Lake Trail and lake is covered with snow",
-        "credit": "NPS"
+        "alt": "Sprague Lake with mountains reflected in the water",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2e983fc2-155d-451f-670c-dcdaed8e5625"
       },
       "description": "Sprague Lake is one of the gentlest places in the park to be together. A mostly flat path circles the water, with benches along the way, boardwalks, a small fishing pier and views across the lake to the Continental Divide. Moose are often seen here at dawn and dusk. Bring a picnic, find a bench facing the peaks, and let the slow walk around the shore become its own quiet tribute, at whatever pace your family needs.",
       "plan": {
@@ -190,18 +188,7 @@
       "kinds": [
         "accessible"
       ],
-      "photo": {
-        "src": "/images/last-adventure/rocky-mountain/many-parks-curve.jpg",
-        "srcWebp": "/images/last-adventure/rocky-mountain/many-parks-curve.webp",
-        "alt": "The boardwalk at Many Parks Curve on Trail Ridge Road",
-        "credit": "Larry D. Moore",
-        "license": {
-          "name": "CC BY 4.0",
-          "url": "https://creativecommons.org/licenses/by/4.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boardwalk_Rocky_Mountain_National_Park_2024.jpg",
-    "title": "Boardwalk Rocky Mountain National Park 2024"
-      },
+      "photo": null,
       "description": "On the climb up Trail Ridge Road, Many Parks Curve opens onto expansive views of the park and the lands around it, with forested valleys and ridges spreading toward the horizon. A boardwalk runs along the overlook, so the whole family can walk out together and take it all in. It is a good place to pause on the way up the mountain, pass around a favorite photograph, and point out the places your loved one walked or always hoped to see.",
       "plan": {
         "distance": "Boardwalk 500 ft; 76 ft from the lower lot or 188 ft from the upper lot",
@@ -259,14 +246,9 @@
       "photo": {
         "src": "/images/last-adventure/rocky-mountain/tundra-communities-trail.jpg",
         "srcWebp": "/images/last-adventure/rocky-mountain/tundra-communities-trail.webp",
-        "alt": "Rock outcrops rising from the alpine tundra along the Tundra Communities Trail",
-        "credit": "Daniel Mayer (Mav)",
-        "license": {
-          "name": "CC BY-SA 3.0",
-          "url": "https://creativecommons.org/licenses/by-sa/3.0/"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocky_Mountain_National_Park_in_September_2011_-_tor_complex_on_Tundra_Communities_Trail.JPG",
-    "title": "Rocky Mountain National Park in September 2011 - tor complex on Tundra Communities Trail"
+        "alt": "People walking along a paved tundra trail in the summer with mountains in the background",
+        "credit": "Rachel Williams, National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/74fbed32-6ee8-4bba-b997-4e8a424cfa4b"
       },
       "description": "Rock Cut is one of the highest overlooks in the park, at more than 12,000 feet, with views south into Forest Canyon and across to the mountains. From here a paved trail climbs onto the alpine tundra, a world of low plants, open sky and weathered rock. The air is thin, so go slowly and stop often. Walk until you find a place where the family can stand together near the top of the world and remember someone who loved high places.",
       "plan": {

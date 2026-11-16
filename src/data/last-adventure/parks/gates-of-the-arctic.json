@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/gates-of-the-arctic/park.jpg",
     "srcWebp": "/images/last-adventure/gates-of-the-arctic/park.webp",
-    "alt": "Aerial view of the Gates of the Arctic on the North Fork of the Koyukuk Wild and Scenic River",
-    "credit": "NPS/Carl Johnson",
-    "caption": "Frigid Crags and Boreal Mountain, the Gates of the Arctic"
+    "alt": "Pink light shines through a valley in the Brooks Range",
+    "credit": "NPS",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/e2ab9da4-1dd8-b71b-0b4a-c5de85bd99d4",
+    "caption": "Sunset in the Brooks Range"
   },
   "intro": "Gates of the Arctic covers more than 8 million acres of the Brooks Range, larger than the state of Maryland, with no roads, no trails and six Wild and Scenic Rivers. Congress set it aside as trail-less wilderness so every visitor finds their own way. Families who are not equipped for an expedition can still come: local air taxis offer flightseeing trips, day trips and overnight camp-outs at remote lakes and rivers. The park's rules open all areas to scattering ashes without a permit.",
   "homepage": "https://www.nps.gov/gaar/",
@@ -33,12 +34,7 @@
       "id": "the-gates",
       "name": "The Gates of the Arctic: Frigid Crags and Boreal Mountain",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/gates-of-the-arctic/the-gates.jpg",
-        "srcWebp": "/images/last-adventure/gates-of-the-arctic/the-gates.webp",
-        "alt": "Aerial view of the Gates of the Arctic on the North Fork of the Koyukuk Wild and Scenic River",
-        "credit": "NPS/Carl Johnson"
-      },
+      "photo": null,
       "description": "Two mountains face each other across the North Fork of the Koyukuk River, and the park takes its name from them. Bob Marshall, a forester who came looking for blank spaces on the map in 1929, called them the Gates of the Arctic and wrote of the wild sublimity he found here. Whether you see them from the window of a small plane or from a gravel bar on the river below, passing between them together feels like stepping through a doorway.",
       "plan": {
         "distance": "Fly-in or river trip; no trails",
@@ -64,12 +60,7 @@
       "id": "arrigetch-peaks",
       "name": "Arrigetch Peaks",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/gates-of-the-arctic/arrigetch-peaks.jpg",
-        "srcWebp": "/images/last-adventure/gates-of-the-arctic/arrigetch-peaks.webp",
-        "alt": "Arrigetch Creek flowing out of the Arrigetch Peaks in the Brooks Range of Gates of the Arctic",
-        "credit": "NPS/Eric Tidwell"
-      },
+      "photo": null,
       "description": "Granite pinnacles carved by glacial ice rise thousands of feet above valleys of tundra and boreal forest, long a landmark to the Nunamiut people of northwest Alaska. Arrigetch Creek runs out from beneath them through a valley that few people ever see. For the backpackers in your family, walking up this valley and sitting quietly beneath these walls is a tribute that asks everything of you and gives it back.",
       "plan": {
         "distance": "Fly-in, then trail-less backcountry travel; distances not published",

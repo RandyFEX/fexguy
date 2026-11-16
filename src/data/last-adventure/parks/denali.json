@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/denali/park.jpg",
     "srcWebp": "/images/last-adventure/denali/park.webp",
-    "alt": "A vast white mountain looming over a brown tundra landscape, with the park road curving across a hillside",
-    "credit": "NPS Photo/Nathan Kostegian",
-    "caption": "Mount McKinley from Stony Overlook on the Denali Park Road"
+    "alt": "orange and red landscape leading up to brown and snow-capped mountains",
+    "credit": "NPS Photo/Tim Rains",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/28f389d6-1dd8-b71c-0730-0b3603873514",
+    "caption": "Savage River in fall"
   },
   "intro": "Denali is six million acres of wild land crossed by a single road that climbs from spruce forest to open tundra beneath Mount McKinley, at 20,310 feet the tallest peak in North America. Families can drive the first 15 miles in summer, walk short trails near the entrance and at Savage River, or ride a bus deep into the park toward the mountain. Outside developed areas, campgrounds and park facilities, the park allows scattering of ashes without a permit.",
   "homepage": "https://www.nps.gov/dena/",
@@ -41,8 +42,9 @@
       "photo": {
         "src": "/images/last-adventure/denali/mountain-vista-loop.jpg",
         "srcWebp": "/images/last-adventure/denali/mountain-vista-loop.webp",
-        "alt": "A gravel path leads through green brush and scattered spruce trees toward distant mountains under a clear blue sky",
-        "credit": "NPS Photo/Laura Vachula"
+        "alt": "A gap in the mountains revealing more mountains in the distance under heavy cloud coverage",
+        "credit": "NPS/Victoria Stauffenberg",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/11313108-0cf3-4335-bc9e-c89ad0e4bfbe"
       },
       "description": "On a clear day the snow-covered summit of Mount McKinley appears far to the southwest from this gentle gravel loop, while the Savage River Valley opens to the south and Mount Healy rises to the north. Brush and scattered spruce leave the views wide open in every direction. Partway around, a short spur drops to the banks of the Savage River, a fine place to pause with a thermos and a few old photographs. It is the easiest way to bring the whole family, wheelchairs included, into Denali's high country.",
       "plan": {
@@ -83,8 +85,9 @@
       "photo": {
         "src": "/images/last-adventure/denali/savage-river-loop.jpg",
         "srcWebp": "/images/last-adventure/denali/savage-river-loop.webp",
-        "alt": "A shallow blue river flows over rocks between two mountains, with a footbridge crossing it upstream",
-        "credit": "NPS Photo/Tim Rains"
+        "alt": "a narrow trail at the base of a mountain",
+        "credit": "NPS Photo/Kent Miller",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/236436f4-b37f-44be-9f0d-dbbe2fa744d8"
       },
       "description": "The Savage River runs clear and fast here through a rocky canyon between Mount Margaret and Healy Ridge, and the trail stays close to it on both banks. Walk upstream nearly a mile to the footbridge, cross together, and come back down the other side with the sound of the water beside you. The wind often blows and the weather can change in minutes, yet the canyon feels wild only steps from the road. It is a good place to slow down and share the stories that still make everyone laugh.",
       "plan": {
@@ -128,10 +131,9 @@
       "photo": {
         "src": "/images/last-adventure/denali/horseshoe-lake.jpg",
         "srcWebp": "/images/last-adventure/denali/horseshoe-lake.webp",
-        "alt": "Horseshoe Lake fringed by spruce trees under heavy clouds, with the lakeside trail along a rocky slope",
-        "credit": "NPS Photo/Emily Mesner",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horseshoe_Lake_in_Fall_(272e3912-c3aa-4731-b2d2-8c72a4407ef4).JPG"
+        "alt": "a lake surrounded by spruce trees",
+        "credit": "NPS Photo/Kent Miller",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/b793f0fb-5d1a-4df0-98c1-e7ed7a8113e7"
       },
       "description": "A short climb from the trailhead brings you to a bench overlooking Horseshoe Lake, then the path drops through the forest and circles the water. Viewing platforms look over the south end, a spur leads to a beaver dam, and the west side hugs the shore along a steep slope the park calls particularly scenic. At the north end the trail comes out of the trees beside the Nenana River. Keep watch for a beaver gliding past; it is the sort of small surprise your loved one might have pointed out first.",
       "plan": {
@@ -172,8 +174,9 @@
       "photo": {
         "src": "/images/last-adventure/denali/mount-healy-overlook.jpg",
         "srcWebp": "/images/last-adventure/denali/mount-healy-overlook.webp",
-        "alt": "Three people sit on a rocky outcrop looking out over forests, mountains and roads",
-        "credit": "NPS Photo/Emily Mesner"
+        "alt": "Outlines of mountain ridges in a fog",
+        "credit": "NPS/Victoria Stauffenberg",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/d82ffe34-0970-47f2-9ee5-6d2a7b18a92e"
       },
       "description": "This is one of the steepest trails in Denali, and every switchback above the trees opens more of the view. Benches near the halfway point give everyone a chance to rest and look back. The trail ends at an open, almost always windy spot partway up Mount Healy, with the entrance valley spread out below and, if the clouds allow, Mount McKinley far to the south. Hold onto each other and your hats, and take a long, quiet moment up there for the person who would have loved this climb.",
       "plan": {
@@ -218,10 +221,9 @@
       "photo": {
         "src": "/images/last-adventure/denali/eielson.jpg",
         "srcWebp": "/images/last-adventure/denali/eielson.webp",
-        "alt": "A man photographs a woman at Eielson, with a huge snowy mountain rising beyond green tundra and a braided river",
-        "credit": "NPS/Mary Lewandowski",
-        "license": { "name": "Public domain", "url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denali,_from_Eielson_Visitor_Center_(2da29f2f-4e43-48b0-9fd3-8d445d2cf4d7).jpg"
+        "alt": "a huge snowy mountain rises in the distance, other mountains nearby; a river valley is in the middleground, and tall grasses are up close",
+        "credit": "NPS Photo/Tim Rains",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2bcc2468-1dd8-b71c-0761-1f57a03ad38c"
       },
       "description": "Sixty-six miles down the park road, through low valleys and high mountain passes, the Eielson Bluffs have welcomed travelers since 1934 for one reason: the view of the mountain. On clear days Mount McKinley dominates the horizon to the southwest, and wildlife often moves across the surrounding hillsides. The short Tundra Loop wanders over alpine tundra, and the switchbacks of Thorofare Ridge climb higher for those who want more. It is a long day on the bus, and a place where the clouds may part just for you.",
       "plan": {

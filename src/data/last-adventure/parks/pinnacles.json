@@ -5,15 +5,7 @@
   "state": "California",
   "states": ["California"],
   "tagline": "Volcanic spires, talus caves and condors soaring overhead.",
-  "photo": {
-    "src": "/images/last-adventure/pinnacles/park.jpg",
-    "srcWebp": "/images/last-adventure/pinnacles/park.webp",
-    "alt": "Moss-covered rock spires along the High Peaks Trail, with rock formations and rolling hills beyond",
-    "credit": "Clyde Charles Brown",
-    "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:High_Peaks_and_Hain_Wilderness_in_Pinnacles_National_Park,_California,_US.jpg", "title": "High Peaks and Hain Wilderness in Pinnacles National Park, California, US",
-    "caption": "The High Peaks and the Hain Wilderness"
-  },
+  "photo": null,
   "intro": "Pinnacles is a landscape of rocky spires, narrow canyons and caves formed by tumbled boulders, where endangered California condors ride the air above the High Peaks. Its trails range from a family loop past a quiet reservoir to a climb along carved rock steps high among the spires. Scattering ashes requires a special use permit, applied for well in advance.",
   "homepage": "https://www.nps.gov/pinn/",
   "map": [
@@ -38,12 +30,7 @@
       "id": "bear-gulch-reservoir",
       "name": "Bear Gulch Reservoir",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/pinnacles/bear-gulch-reservoir.jpg",
-        "srcWebp": "/images/last-adventure/pinnacles/bear-gulch-reservoir.webp",
-        "alt": "A narrow rock staircase cut into a canyon wall on the way to Bear Gulch Reservoir",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "This loop packs much of Pinnacles into a short morning: rock formations, talus caves, a stone staircase climbing through a narrow canyon, and then the still water of Bear Gulch Reservoir tucked among the rocks. The return along the Rim Trail opens panoramic views over the gulch. The park suggests it as a family hike, so grandchildren and grandparents can share it. Pause beside the reservoir and let the quiet water hold your memories for a while.",
       "plan": {
         "distance": "2.2 mi loop",
@@ -77,12 +64,7 @@
       "id": "condor-gulch-overlook",
       "name": "Condor Gulch Overlook",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/pinnacles/condor-gulch-overlook.jpg",
-        "srcWebp": "/images/last-adventure/pinnacles/condor-gulch-overlook.webp",
-        "alt": "A rocky dirt trail on a mountain top with rolling mountains in the distance, on the Condor Gulch Trail",
-        "credit": "NPS Photo/Kelsey Frusetta"
-      },
+      "photo": null,
       "description": "Sweeping views begin almost as soon as you start up Condor Gulch, and after a mile the overlook puts the High Peaks right above you. This is a favorite spot for watching birds, and with luck the park's resident condors will be riding the air over the spires. Bring binoculars and something to sit on, and give the sky time. There is something fitting about looking up together and watching those great wings circle.",
       "plan": {
         "distance": "About 2 mi round trip to the overlook",
@@ -111,12 +93,7 @@
       "id": "balconies-cave",
       "name": "Balconies Cliffs and Cave",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/pinnacles/balconies-cave.jpg",
-        "srcWebp": "/images/last-adventure/pinnacles/balconies-cave.webp",
-        "alt": "A large boulder wedged in a narrow rock canyon inside Balconies Cave",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "Part hike, part adventure, this loop climbs up and over the Balconies Cliffs and then threads back through Balconies Cave, a passage beneath huge boulders that have toppled into a narrow canyon. Flashlights come out, voices echo, and everyone helps everyone else over the rocks. It suits a family that loves a little exploring. Afterward, stop in the sunlight below the cliffs and talk about the adventures your loved one led you on over the years.",
       "plan": {
         "distance": "2.4 mi loop",
@@ -150,12 +127,7 @@
       "id": "high-peaks",
       "name": "High Peaks",
       "kinds": ["extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/pinnacles/high-peaks.jpg",
-        "srcWebp": "/images/last-adventure/pinnacles/high-peaks.webp",
-        "alt": "A handrail and a series of foot notches carved into steep rock on the High Peaks Trail",
-        "credit": "NPS Photo"
-      },
+      "photo": null,
       "description": "This is the heart of Pinnacles: a climb up Condor Gulch into the rock spires, then along the Steep and Narrow section, where steps are carved into the stone and a handrail guides you along the cliffs. The park says it gives you the feeling of walking on top of the world, and condors often soar among these rocks. It is a demanding day for the strongest walkers in your family, and a high, rocky place worth carrying a memory to.",
       "plan": {
         "distance": "5.3 mi loop",

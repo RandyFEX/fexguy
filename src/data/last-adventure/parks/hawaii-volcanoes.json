@@ -8,9 +8,10 @@
   "photo": {
     "src": "/images/last-adventure/hawaii-volcanoes/park.jpg",
     "srcWebp": "/images/last-adventure/hawaii-volcanoes/park.webp",
-    "alt": "A cloud-filled volcanic crater at sunrise with a mountain rising behind",
-    "credit": "NPS Photo/J. Wei",
-    "caption": "Sunrise at Kīlauea Iki"
+    "alt": "Fountains of lava erupt from a crater floor hundreds of feet into the air",
+    "credit": "NPS Photo/J.Wei",
+    "sourceUrl": "https://npgallery.nps.gov/AssetDetail/8bdebb05-6b2b-49e9-8c53-e8fabb69b926",
+    "caption": "Lava fountains from an eruption viewing overlook near Keanakākoʻi crater"
   },
   "intro": "On the Island of Hawaiʻi, the summit of Kīlauea opens into a vast caldera, with rainforest on its rim and Mauna Loa rising beyond. A final adventure here can be a quiet morning at a crater overlook, an easy walk along an old road at the caldera's edge, or a hike across the floor of a lava lake that cooled in living memory. The park names the overlooks where families may scatter ashes with a permit, and it asks that every scattering be small, private and discreet.",
   "homepage": "https://www.nps.gov/havo/",
@@ -42,8 +43,9 @@
       "photo": {
         "src": "/images/last-adventure/hawaii-volcanoes/kupinai-pali.jpg",
         "srcWebp": "/images/last-adventure/hawaii-volcanoes/kupinai-pali.webp",
-        "alt": "Visitors at an overlook looking toward a large volcanic caldera",
-        "credit": "NPS Photo/J. Wei"
+        "alt": "A park ranger gives a talk to a group of people and a rainbow forms in the volcanic crater to the left",
+        "credit": "NPS Photo/J.Wei",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/311ee054-c02b-4474-a192-4b675762b7c1"
       },
       "description": "This stretch of the Crater Rim Trail was once part of the road around the summit, until a 1983 earthquake broke it apart. Painted road lines still show through the cracked pavement as you stroll toward the ledge, where Kaluapele, the Kīlauea caldera, opens below you with Halemaʻumaʻu crater at its heart. The walk is gentle enough for wheelchairs and strollers, so grandparents and grandchildren can go side by side. It is also one of the places the park lists for scattering, so the farewell can stay right here.",
       "plan": {
@@ -76,7 +78,13 @@
       "id": "kilauea-overlook",
       "name": "Kīlauea Overlook",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/kilauea-overlook.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-overlook.webp",
+        "alt": "Lava lake within a volcanic crater at night",
+        "credit": "NPS Photo/Janice Wei",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/de1ff2f2-8758-4149-b0a8-a49f258a6df0"
+      },
       "description": "Kīlauea Overlook looks straight across the summit caldera to the floor of Halemaʻumaʻu, and during an eruption it can be one of the most remarkable views on earth. It sits just minutes from the entrance, and a paved path leads from the parking area to the rim. Come before sunrise, when the crowds are thin and the air is cool, wrap up in warm layers, and let the steam and the quiet set the pace for remembering together.",
       "plan": {
         "distance": "Short walk from parking; distance not published",
@@ -103,8 +111,9 @@
       "photo": {
         "src": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-overlook.jpg",
         "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-overlook.webp",
-        "alt": "A volcanic crater at sunrise with trees in the foreground",
-        "credit": "NPS Photo/J. Wei"
+        "alt": "An expansive view from high above the flat, dark crater is framed by tree branches",
+        "credit": "NPS, 2005",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c9c5488c-9ddc-eedf-ad9d-2f99178fc0c5"
       },
       "description": "In 1959 this crater was a seething lake of lava, with fountains reaching 1,900 feet. Today the floor lies still and silver 400 feet below the rim, a mile long, with the cinder cone Puʻupuaʻi on one side and Mauna Loa looming beyond. Standing at the railing, it is hard to take in the scale. It is a good place to slow down together, notice how the forest has returned around the edges, and share what your loved one meant to each of you.",
       "plan": {
@@ -128,8 +137,9 @@
       "photo": {
         "src": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-trail.jpg",
         "srcWebp": "/images/last-adventure/hawaii-volcanoes/kilauea-iki-trail.webp",
-        "alt": "Floor of a volcanic crater with small ʻōhiʻa trees with red flowers",
-        "credit": "NPS Photo/J. Wei"
+        "alt": "Hikers walk across rough, hardened lava on a crater floor",
+        "credit": "NPS Photo/Janice Wei",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/aa660089-1225-4b9a-a86f-5c23e7307d9a"
       },
       "description": "The trail drops through lush rainforest of ferns and ʻōhiʻa, then steps out onto the hardened crust of a lava lake. Out on the crater floor, steam rises from cracks, small ʻōhiʻa push through the black rock, and you can peer toward the vent below Puʻupuaʻi that once sent lava 1,900 feet into the sky. Walking across it together feels like crossing another world, a fitting journey for someone who loved to explore.",
       "plan": {
@@ -174,15 +184,7 @@
       "id": "hilina-pali-overlook",
       "name": "Hilina Pali Overlook",
       "kinds": ["accessible", "extraordinary"],
-      "photo": {
-        "src": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.jpg",
-        "srcWebp": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.webp",
-        "alt": "The view from Hilina Pali Overlook toward the coast below",
-        "credit": "niksnut",
-        "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilina_Pali_Overlook.jpg",
-        "title": "Hilina Pali Overlook"
-      },
+      "photo": null,
       "description": "Far from the busy summit, a narrow road winds for miles across volcanic desert and ends at the edge of a great cliff. From Hilina Pali Overlook the land falls away toward the coastline and the open Pacific. It is a place for a family that wants a quieter goodbye: a long drive across open lava, a small shelter, and a wide view to sit with together. The park lists it among the places where ashes may be scattered with a permit.",
       "plan": {
         "distance": "Roadside overlook at the end of a 9-mile road",
