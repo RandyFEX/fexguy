@@ -40,7 +40,13 @@
       "id": "canyon-rim-boardwalk",
       "name": "Canyon Rim Boardwalk",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.webp",
+        "alt": "a snowy view of the gorge from Canyon Rim",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/be699062-155d-451f-677c-d7e4ec8f2a31"
+      },
       "description": "Just outside the Canyon Rim Visitor Center, a short boardwalk leads to a deck that looks straight across the gorge at the New River Gorge Bridge, its steel arch spanning the gorge 876 feet above the river. On some mornings clouds fill the gorge below you. The upper viewpoint is an easy roll or stroll from the parking lot, so the whole family can gather at the rail together, and those who want more can take the 178 steps down to the lower overlook.",
       "plan": {
         "distance": "0.1 mi one way",

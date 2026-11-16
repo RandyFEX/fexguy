@@ -502,14 +502,7 @@ const pilotParks: Park[] = [
     short: 'Yosemite',
     state: 'California',
     tagline: 'Granite walls, waterfalls and the unmistakable shape of Half Dome.',
-    photo: {
-      src: "/images/last-adventure/yosemite/park.jpg",
-      srcWebp: "/images/last-adventure/yosemite/park.webp",
-      alt: "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
-      credit: "National Park Service (H. Kajitani)",
-      sourceUrl: "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-      caption: "Half Dome at sunset in fall",
-    },
+    photo: null,
     intro:
       'Granite walls, thundering waterfalls and the silhouette of Half Dome make Yosemite Valley one of the most recognizable landscapes on earth. A final adventure here can be as gentle as a short walk to a famous viewpoint or as demanding as a sunrise start for the cables of Half Dome.',
     homepage: 'https://www.nps.gov/yose/',
@@ -647,13 +640,7 @@ const pilotParks: Park[] = [
         id: 'half-dome',
         name: 'Half Dome',
         kinds: ['extraordinary'],
-        photo: {
-          src: "/images/last-adventure/yosemite/half-dome.jpg",
-          srcWebp: "/images/last-adventure/yosemite/half-dome.webp",
-          alt: "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
-          credit: "National Park Service (H. Kajitani)",
-          sourceUrl: "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-        },
+        photo: null,
         description:
           'If your loved one ever stood beneath Half Dome and wondered what the top was like, this is a chance to finish that climb for them. The trail passes Vernal and Nevada Falls before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It is one of the hardest days in the park and requires a permit, but the moment you stand on top together will stay with you for a lifetime.',
         plan: {

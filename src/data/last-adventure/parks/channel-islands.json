@@ -77,7 +77,13 @@
       "id": "cavern-point",
       "name": "Cavern Point, Santa Cruz Island",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/channel-islands/cavern-point.jpg",
+        "srcWebp": "/images/last-adventure/channel-islands/cavern-point.webp",
+        "alt": "Cavern Point View with Fog",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/050469fb-6377-43d3-906c-b5c35b3ceade"
+      },
       "description": "The park's own guide simply says this one is not to be missed. The loop climbs from Scorpion Valley onto open bluffs, and at Cavern Point the coastline falls away beneath you with Anacapa Island floating on the horizon. In season, you may see whales moving past offshore. It is a fine place to sit close together on the headland, share a meal and a few favorite stories, and watch the sea that surrounds this wild island.",
       "plan": {
         "distance": "2 mi round trip (loop from Scorpion Beach)",

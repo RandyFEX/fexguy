@@ -156,7 +156,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/mesa-verde/park-point.jpg",
+        "srcWebp": "/images/last-adventure/mesa-verde/park-point.webp",
+        "alt": "View of green and tan landscape, eroding hills in the foreground and valley covered in white, fluffy clouds in the background",
+        "credit": "NPS/Jacob W. Frank",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/50d46cfb-0e82-4845-a7b7-96d888fa834a"
+      },
       "description": "Park Point is the highest place in Mesa Verde, 8,572 feet above sea level, crowned by a historic fire lookout. A short but steep paved path climbs from the parking area to two viewpoints with 360-degree views across the Four Corners region, and Ute Mountain rises 17 miles to the west. Take it slowly, rest at the top, and let everyone find a direction to look. Picnic tables by the parking area make it easy to linger together afterward.",
       "plan": {
         "distance": "Short walk from parking; distance not published",

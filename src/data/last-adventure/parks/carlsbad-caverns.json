@@ -223,7 +223,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.webp",
+        "alt": "Fruit trees with thick, leafy canopies grow in a flat area of short turf, framed by other trees",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5cd0d6d7-2417-4ef0-8a0f-e9d196a734f2"
+      },
       "description": "Away from the cavern, Rattlesnake Springs is a green oasis in the desert, where a natural spring waters a grove of tall cottonwood trees planted by the Civilian Conservation Corps. Shaded picnic tables and grills make it an easy place for the family to share a long, unhurried meal, and birds fill the trees all year. After the drama of the cave, it offers something gentler: shade, birdsong and time to talk about the person who brought you all here.",
       "plan": {
         "distance": "Picnic area beside the parking area; distance not published",

@@ -1,15 +1,15 @@
 {
- "_about": "One Last Amazing Adventure image rights manifest (Version 3.5, NPS public-domain photography only, verified 2026-11-16). One entry per photo slot (63 park banners and 248 destinations) on /one-last-amazing-adventure-preview/. Standard: every published photograph must be a public-domain work created by a National Park Service employee as part of official duties. Evidence for each photograph comes from its NPS NPGallery record: Constraints Information \"Public domain: Full Granting Rights\" plus documented NPS authorship (an NPS photo credit, an NPS copyright entry, or an NPS staff contact), with no volunteer, partner, courtesy, artist-in-residence or other third-party signal. An NPS URL or an \"NPS Photo\" label alone was not accepted as proof. No Wikimedia Commons, Flickr, Creative Commons, stock, AI-generated or privately owned photographs are used. Slots marked UNRESOLVED show no photograph; researchGap explains why. Add an entry with this evidence before adding any new image.",
+ "_about": "One Last Amazing Adventure image rights manifest (Version 3.6, NPS public-domain photography only, verified 2026-11-16). One entry per photo slot (63 park banners and 248 destinations) on /one-last-amazing-adventure-preview/. Standard: every published photograph must be a public-domain work created by a National Park Service employee as part of official duties. Evidence for each photograph comes from its NPS NPGallery record: Constraints Information \"Public domain: Full Granting Rights\" plus documented NPS authorship in the record itself (an NPS photo credit or an NPS copyright entry; an NPS contact or uploader name alone is not accepted), with no volunteer, partner, courtesy, donated, artist-in-residence or other third-party signal. An NPS URL or an \"NPS Photo\" label alone was not accepted as proof. No Wikimedia Commons, Flickr, Creative Commons, stock, AI-generated or privately owned photographs are used. Slots marked UNRESOLVED show no photograph; researchGap explains why. Add an entry with this evidence before adding any new image.",
  "summary": {
   "photoSlots": 311,
   "parkBanners": 63,
   "destinations": 248,
-  "slotsWithVerifiedNpsPublicDomainPhoto": 215,
-  "uniquePhotographs": 207,
-  "bannersReusingADestinationPhoto": 7,
-  "unresolvedSlots": 96,
-  "unresolvedDestinations": 95,
-  "unresolvedBanners": 1,
+  "slotsWithVerifiedNpsPublicDomainPhoto": 227,
+  "uniquePhotographs": 221,
+  "bannersReusingADestinationPhoto": 6,
+  "unresolvedSlots": 84,
+  "unresolvedDestinations": 82,
+  "unresolvedBanners": 2,
   "thirdPartyPhotographs": 0
  },
  "images": [
@@ -136,7 +136,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "5 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -235,23 +235,11 @@
    "destination": null,
    "use": "park banner",
    "destinationName": "Yosemite National Park",
-   "status": "VERIFIED NPS PUBLIC DOMAIN",
-   "file": "/images/last-adventure/yosemite/park.jpg",
-   "fileWebp": "/images/last-adventure/yosemite/park.webp",
-   "npgalleryAssetId": "18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "originalImage": "https://npgallery.nps.gov/GetAsset/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "npgalleryTitle": "Fall Half Dome during Sunset",
-   "npgalleryDescription": "Half Dome",
-   "photoCreditRecorded": null,
-   "copyrightRecorded": null,
-   "authorshipEvidence": "NPS contact: H. Kajitani, YOSE, Paramedic",
-   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
-   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
-   "creditShown": "National Park Service (H. Kajitani)",
-   "depicts": "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
-   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
-   "checked": "2026-11-16"
+   "status": "UNRESOLVED",
+   "file": null,
+   "checked": "2026-11-16",
+   "researchGap": "Version 3.6: the earlier Half Dome photograph was withdrawn because its NPGallery record has no photo credit or copyright entry (only an uploader/contact name), which is not sufficient proof of NPS authorship. A full search of all 34,153 Yosemite NPGallery records found 134 public-domain records with an NPS credit; none is a scenic photograph (wildland fire crews, museum objects, wildlife, 1943 group photographs). The page hero now uses the verified Grand Teton banner photograph.",
+   "shown": "No banner photograph; the park card shows a placeholder panel"
   },
   {
    "park": "yosemite",
@@ -283,7 +271,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -294,7 +282,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "2 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -302,23 +290,11 @@
    "destination": "half-dome",
    "use": "destination photo",
    "destinationName": "Half Dome",
-   "status": "VERIFIED NPS PUBLIC DOMAIN",
-   "file": "/images/last-adventure/yosemite/half-dome.jpg",
-   "fileWebp": "/images/last-adventure/yosemite/half-dome.webp",
-   "npgalleryAssetId": "18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "originalImage": "https://npgallery.nps.gov/GetAsset/18ba0e2e-3ae3-47a2-ab20-3e88e55cea40",
-   "npgalleryTitle": "Fall Half Dome during Sunset",
-   "npgalleryDescription": "Half Dome",
-   "photoCreditRecorded": null,
-   "copyrightRecorded": null,
-   "authorshipEvidence": "NPS contact: H. Kajitani, YOSE, Paramedic",
-   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
-   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
-   "creditShown": "National Park Service (H. Kajitani)",
-   "depicts": "Photo of Half Dome at Yosemite National Park taken from Yosemite Valley during the Fall sunset hour. The top half of the north face of Half Dome is growing orange. Reflection on",
-   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
-   "checked": "2026-11-16"
+   "status": "UNRESOLVED",
+   "file": null,
+   "checked": "2026-11-16",
+   "researchGap": "Version 3.6: the earlier photograph was withdrawn (no photo credit or copyright entry; contact name only). No NPS-credited public-domain Half Dome photograph exists among the 34,153 Yosemite NPGallery records.",
+   "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
    "park": "mount-rainier",
@@ -397,7 +373,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "197 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -577,11 +553,23 @@
    "destination": "bass-harbor-head-light",
    "use": "destination photo",
    "destinationName": "Bass Harbor Head Light Station",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/acadia/bass-harbor-head-light.jpg",
+   "fileWebp": "/images/last-adventure/acadia/bass-harbor-head-light.webp",
+   "npgalleryAssetId": "90bfb3df-5f0c-459a-843e-f0b9889baab4",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/90bfb3df-5f0c-459a-843e-f0b9889baab4",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/90bfb3df-5f0c-459a-843e-f0b9889baab4",
+   "npgalleryTitle": "The Bass Harbor Head Lighthouse at Acadia National Park during sunset. October 14, 2026.",
+   "npgalleryDescription": "The Bass Harbor Head Lighthouse at Acadia National Park during sunset. October 14, 2026. Photo: NPS / Lucia Lubanovich",
+   "photoCreditRecorded": "NPS / Lucia Lubanovich",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS / Lucia Lubanovich\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS/Lucia Lubanovich",
+   "depicts": "The Bass Harbor Head Lighthouse at Acadia National Park during sunset. October 14, 2026",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "acadia",
@@ -671,7 +659,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "4 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -682,7 +670,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "6 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1081,11 +1069,23 @@
    "destination": "convoy-point-jetty-walk",
    "use": "destination photo",
    "destinationName": "Convoy Point Jetty Walk",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/biscayne/convoy-point-jetty-walk.jpg",
+   "fileWebp": "/images/last-adventure/biscayne/convoy-point-jetty-walk.webp",
+   "npgalleryAssetId": "3c26a87d-1dd8-b71b-0b54-609adbc06528",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3c26a87d-1dd8-b71b-0b54-609adbc06528",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/3c26a87d-1dd8-b71b-0b54-609adbc06528",
+   "npgalleryTitle": "Convoy Point at dawn",
+   "npgalleryDescription": "Convoy Point at dawn",
+   "photoCreditRecorded": "NPS image by Matt Johnson",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS image by Matt Johnson\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS image by Matt Johnson",
+   "depicts": "Convoy Point at dawn",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "biscayne",
@@ -1095,7 +1095,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "5 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1221,7 +1221,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1278,7 +1278,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1289,7 +1289,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "8 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1323,7 +1323,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "10 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "10 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1518,7 +1518,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1526,11 +1526,23 @@
    "destination": "rattlesnake-springs",
    "use": "destination photo",
    "destinationName": "Rattlesnake Springs",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.jpg",
+   "fileWebp": "/images/last-adventure/carlsbad-caverns/rattlesnake-springs.webp",
+   "npgalleryAssetId": "5cd0d6d7-2417-4ef0-8a0f-e9d196a734f2",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5cd0d6d7-2417-4ef0-8a0f-e9d196a734f2",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/5cd0d6d7-2417-4ef0-8a0f-e9d196a734f2",
+   "npgalleryTitle": "Orchard at Rattlesnake Springs (1986)",
+   "npgalleryDescription": "Rattlesnake Springs is the location of the Henry Harrison family homestead, early cattle ranchers to the area. Later, it was a Civilian Conservation Corps (CCC) Camp and Works Progress Administration Project. The fruit orchard at Rattlesnake Springs is an historic, contributing element, but existing",
+   "photoCreditRecorded": "NPS",
+   "copyrightRecorded": "Public Domain. Credit: NPS",
+   "authorshipEvidence": "Photo credit \"NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "Fruit trees with thick, leafy canopies grow in a flat area of short turf, framed by other trees",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "channel-islands",
@@ -1571,11 +1583,23 @@
    "destination": "cavern-point",
    "use": "destination photo",
    "destinationName": "Cavern Point, Santa Cruz Island",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "Rights-verified records show Scorpion Anchorage and historic ranch buildings, not Cavern Point.",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/channel-islands/cavern-point.jpg",
+   "fileWebp": "/images/last-adventure/channel-islands/cavern-point.webp",
+   "npgalleryAssetId": "050469fb-6377-43d3-906c-b5c35b3ceade",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/050469fb-6377-43d3-906c-b5c35b3ceade",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/050469fb-6377-43d3-906c-b5c35b3ceade",
+   "npgalleryTitle": "Cavern Point View with Fog",
+   "npgalleryDescription": "",
+   "photoCreditRecorded": "NPS",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "Cavern Point View with Fog",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "channel-islands",
@@ -1642,7 +1666,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "9 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1653,7 +1677,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1733,7 +1757,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -1994,11 +2018,23 @@
    "destination": "golden-canyon",
    "use": "destination photo",
    "destinationName": "Golden Canyon to Red Cathedral",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/death-valley/golden-canyon.jpg",
+   "fileWebp": "/images/last-adventure/death-valley/golden-canyon.webp",
+   "npgalleryAssetId": "f3ac6a6c-155d-4519-3e63-d762dfe509e3",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f3ac6a6c-155d-4519-3e63-d762dfe509e3",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/f3ac6a6c-155d-4519-3e63-d762dfe509e3",
+   "npgalleryTitle": "Golden Canyon",
+   "npgalleryDescription": "Looking down Golden Canyon from below Manly Beacon.",
+   "photoCreditRecorded": "NPS",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "Looking down Golden Canyon from below Manly Beacon",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "denali",
@@ -2143,26 +2179,11 @@
    "destination": null,
    "use": "park banner",
    "destinationName": "Dry Tortugas National Park",
-   "status": "VERIFIED NPS PUBLIC DOMAIN",
-   "file": "/images/last-adventure/dry-tortugas/loggerhead-key.jpg",
-   "fileWebp": "/images/last-adventure/dry-tortugas/loggerhead-key.webp",
-   "npgalleryAssetId": "ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "originalImage": "https://npgallery.nps.gov/GetAsset/ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "npgalleryTitle": "Keepers House on Loggerhead Key, Florida in 2018.",
-   "npgalleryDescription": "",
-   "photoCreditRecorded": null,
-   "copyrightRecorded": null,
-   "authorshipEvidence": "NPS contact: Dennis McCarthy, NPS, Photographer",
-   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
-   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
-   "creditShown": "National Park Service (Dennis McCarthy)",
-   "depicts": "Keepers house on Loggerhead Key in 2018",
-   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "status": "UNRESOLVED",
+   "file": null,
    "checked": "2026-11-16",
-   "notes": [
-    "Park banner reuses the verified photo of Loggerhead Key; no separate NPS public-domain banner photo was found."
-   ]
+   "researchGap": "Version 3.6: the earlier Loggerhead Key photograph was withdrawn (NPS contact name only, no photo credit or copyright entry). The Dry Tortugas NPGallery records with NPS credits are scanned historic book pages and documents (catalog DRTO 5227) or construction scaffolding photographs.",
+   "shown": "No banner photograph; the park card shows a placeholder panel"
   },
   {
    "park": "dry-tortugas",
@@ -2183,7 +2204,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "4 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2191,23 +2212,11 @@
    "destination": "loggerhead-key",
    "use": "destination photo",
    "destinationName": "Loggerhead Key",
-   "status": "VERIFIED NPS PUBLIC DOMAIN",
-   "file": "/images/last-adventure/dry-tortugas/loggerhead-key.jpg",
-   "fileWebp": "/images/last-adventure/dry-tortugas/loggerhead-key.webp",
-   "npgalleryAssetId": "ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "originalImage": "https://npgallery.nps.gov/GetAsset/ba0cbc73-efd4-4720-95ac-96219323f21d",
-   "npgalleryTitle": "Keepers House on Loggerhead Key, Florida in 2018.",
-   "npgalleryDescription": "",
-   "photoCreditRecorded": null,
-   "copyrightRecorded": null,
-   "authorshipEvidence": "NPS contact: Dennis McCarthy, NPS, Photographer",
-   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
-   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
-   "creditShown": "National Park Service (Dennis McCarthy)",
-   "depicts": "Keepers house on Loggerhead Key in 2018",
-   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
-   "checked": "2026-11-16"
+   "status": "UNRESOLVED",
+   "file": null,
+   "checked": "2026-11-16",
+   "researchGap": "Version 3.6: the earlier photograph was withdrawn (NPS contact name only, no photo credit or copyright entry); no other NPS-credited public-domain Loggerhead Key photograph was found.",
+   "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
    "park": "everglades",
@@ -2286,7 +2295,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2297,7 +2306,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "2 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2331,7 +2340,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "4 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2342,7 +2351,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2488,11 +2497,23 @@
    "destination": "forest-trail",
    "use": "destination photo",
    "destinationName": "Forest Trail and Blackwater Pond",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "8 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/glacier-bay/forest-trail.jpg",
+   "fileWebp": "/images/last-adventure/glacier-bay/forest-trail.webp",
+   "npgalleryAssetId": "2f0b656c-1dd8-b71c-07a0-a0a540eeebcf",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2f0b656c-1dd8-b71c-07a0-a0a540eeebcf",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/2f0b656c-1dd8-b71c-07a0-a0a540eeebcf",
+   "npgalleryTitle": "Blackwater Pond Reflection",
+   "npgalleryDescription": "Reflection on the water of Blackwater Pond",
+   "photoCreditRecorded": "National Park Service",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"National Park Service\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "National Park Service",
+   "depicts": "Trees reflected in the water of Blackwater Pond",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "glacier-bay",
@@ -2522,11 +2543,23 @@
    "destination": "day-boat-tidewater-glaciers",
    "use": "destination photo",
    "destinationName": "Tidewater Glaciers by Day Boat",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.jpg",
+   "fileWebp": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.webp",
+   "npgalleryAssetId": "daffbcbe-b7ad-4467-bfc3-946e23e06597",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/daffbcbe-b7ad-4467-bfc3-946e23e06597",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/daffbcbe-b7ad-4467-bfc3-946e23e06597",
+   "npgalleryTitle": "2023-10-26 Johns Hopkins Glacier_DSC8406.jpg",
+   "npgalleryDescription": "Johns Hopkins Inlet in Glacier Bay, 2023.",
+   "photoCreditRecorded": "NPS Photo / S. Tevebaugh",
+   "copyrightRecorded": "Public Domain",
+   "authorshipEvidence": "Photo credit \"NPS Photo / S. Tevebaugh\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS Photo/S. Tevebaugh",
+   "depicts": "A reflective inlet with calm water- steep snowcapped mountains rise above a fjord with a glacier in the center",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "glacier",
@@ -2559,7 +2592,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "4 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2581,7 +2614,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "12 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2652,7 +2685,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "3 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2686,7 +2719,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "2 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2697,7 +2730,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "7 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "7 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2754,7 +2787,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "8 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2765,7 +2798,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "16 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2868,7 +2901,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2902,7 +2935,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "2 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2913,7 +2946,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2935,7 +2968,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "2 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -2966,11 +2999,23 @@
    "destination": "puuulaula-summit",
    "use": "destination photo",
    "destinationName": "Puʻuʻulaʻula Summit",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/haleakala/puuulaula-summit.jpg",
+   "fileWebp": "/images/last-adventure/haleakala/puuulaula-summit.webp",
+   "npgalleryAssetId": "7459530d-9ec3-16a7-f9e9-358b9c7714ad",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/7459530d-9ec3-16a7-f9e9-358b9c7714ad",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/7459530d-9ec3-16a7-f9e9-358b9c7714ad",
+   "npgalleryTitle": "Haleakalā Crater",
+   "npgalleryDescription": "Sunrise at the summit",
+   "photoCreditRecorded": "NPS Photo",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS Photo\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS Photo",
+   "depicts": "Sunrise at the summit",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "haleakala",
@@ -2980,7 +3025,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "10 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3175,7 +3220,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3232,7 +3277,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "8 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "7 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3243,7 +3288,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "5 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "6 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3254,7 +3299,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "3 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3429,7 +3474,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "4 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3440,7 +3485,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "6 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "7 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3451,7 +3496,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3577,7 +3622,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "25 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "25 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3634,7 +3679,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "13 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -3757,11 +3802,23 @@
    "destination": "tidewater-glaciers-boat",
    "use": "destination photo",
    "destinationName": "Tidewater Glaciers by Boat",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.jpg",
+   "fileWebp": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.webp",
+   "npgalleryAssetId": "5b16bf62-1dd8-b71c-07fb-a7fc498c5e21",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5b16bf62-1dd8-b71c-07fb-a7fc498c5e21",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/5b16bf62-1dd8-b71c-07fb-a7fc498c5e21",
+   "npgalleryTitle": "Profile of Aialik Glacier - 2010",
+   "npgalleryDescription": "View of Aialik Glacier, taken in 2010, from hills next to it.",
+   "photoCreditRecorded": "NPS / Jim Pfeiffenberger",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS / Jim Pfeiffenberger\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS/Jim Pfeiffenberger",
+   "depicts": "Profile of Aialik Glacier - 2010",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "kings-canyon",
@@ -4288,11 +4345,23 @@
    "destination": "park-point",
    "use": "destination photo",
    "destinationName": "Park Point",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/mesa-verde/park-point.jpg",
+   "fileWebp": "/images/last-adventure/mesa-verde/park-point.webp",
+   "npgalleryAssetId": "50d46cfb-0e82-4845-a7b7-96d888fa834a",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/50d46cfb-0e82-4845-a7b7-96d888fa834a",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/50d46cfb-0e82-4845-a7b7-96d888fa834a",
+   "npgalleryTitle": "View from Park Point",
+   "npgalleryDescription": "View from Park Point, the highest point in Mesa Verde National Park.",
+   "photoCreditRecorded": "NPS/Jacob W. Frank",
+   "copyrightRecorded": "Jacob W. Frank",
+   "authorshipEvidence": "Photo credit \"NPS/Jacob W. Frank\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS/Jacob W. Frank",
+   "depicts": "View of green and tan landscape, eroding hills in the foreground and valley covered in white, fluffy clouds in the background",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "mesa-verde",
@@ -4302,7 +4371,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4333,11 +4402,23 @@
    "destination": "canyon-rim-boardwalk",
    "use": "destination photo",
    "destinationName": "Canyon Rim Boardwalk",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.jpg",
+   "fileWebp": "/images/last-adventure/new-river-gorge/canyon-rim-boardwalk.webp",
+   "npgalleryAssetId": "be699062-155d-451f-677c-d7e4ec8f2a31",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/be699062-155d-451f-677c-d7e4ec8f2a31",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/be699062-155d-451f-677c-d7e4ec8f2a31",
+   "npgalleryTitle": "Canyon Rim Snow Scene",
+   "npgalleryDescription": "a snowy view of the gorge from Canyon Rim",
+   "photoCreditRecorded": "NPS",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "a snowy view of the gorge from Canyon Rim",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "new-river-gorge",
@@ -4462,7 +4543,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4473,7 +4554,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4484,7 +4565,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4590,7 +4671,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4736,22 +4817,46 @@
    "destination": null,
    "use": "park banner",
    "destinationName": "Pinnacles National Park",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "The Pinnacles landscape photographs in NPGallery are donated family and historic collections credited \"Courtesy U.S. National Parks\"; no record documents authorship by an NPS employee. Rights-verified NPS photos found show only wildlife (falcons, owls).",
-   "shown": "No banner photograph; the park card shows a placeholder panel"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/pinnacles/park.jpg",
+   "fileWebp": "/images/last-adventure/pinnacles/park.webp",
+   "npgalleryAssetId": "c8ec68af-1dd8-b71b-0bad-66a74dace796",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/c8ec68af-1dd8-b71b-0bad-66a74dace796",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/c8ec68af-1dd8-b71b-0bad-66a74dace796",
+   "npgalleryTitle": "The View From the Top",
+   "npgalleryDescription": "The Balconies Cliffs can be seen from the High Peaks Trail",
+   "photoCreditRecorded": "Photo by NPS",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"Photo by NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "The High Peaks in the foreground and the Balconies Cliffs in the background",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "pinnacles",
    "destination": "bear-gulch-reservoir",
    "use": "destination photo",
    "destinationName": "Bear Gulch Reservoir",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/pinnacles/bear-gulch-reservoir.jpg",
+   "fileWebp": "/images/last-adventure/pinnacles/bear-gulch-reservoir.webp",
+   "npgalleryAssetId": "309d9fc1-1dd8-b71b-0b16-c5c06290c5b2",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/309d9fc1-1dd8-b71b-0b16-c5c06290c5b2",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/309d9fc1-1dd8-b71b-0b16-c5c06290c5b2",
+   "npgalleryTitle": "Bear Gulch Reservoir",
+   "npgalleryDescription": "A sunny day at Bear Gulch Reservoir.",
+   "photoCreditRecorded": "Photo by NPS/Rebecca Ouvry",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"Photo by NPS/Rebecca Ouvry\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS/Rebecca Ouvry",
+   "depicts": "Bear Gulch Reservoir",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "pinnacles",
@@ -4761,7 +4866,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4769,22 +4874,46 @@
    "destination": "balconies-cave",
    "use": "destination photo",
    "destinationName": "Balconies Cliffs and Cave",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "10 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/pinnacles/balconies-cave.jpg",
+   "fileWebp": "/images/last-adventure/pinnacles/balconies-cave.webp",
+   "npgalleryAssetId": "a5ff78ff-1dd8-b71b-0b22-0368403d7c1a",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/a5ff78ff-1dd8-b71b-0b22-0368403d7c1a",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/a5ff78ff-1dd8-b71b-0b22-0368403d7c1a",
+   "npgalleryTitle": "Balconies Cave Exit",
+   "npgalleryDescription": "",
+   "photoCreditRecorded": "NPS",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS",
+   "depicts": "Balconies Cave Exit",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "pinnacles",
    "destination": "high-peaks",
    "use": "destination photo",
    "destinationName": "High Peaks",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "18 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/pinnacles/high-peaks.jpg",
+   "fileWebp": "/images/last-adventure/pinnacles/high-peaks.webp",
+   "npgalleryAssetId": "6a72c47f-1dd8-b71b-0bd0-74ac5b98cc9a",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/6a72c47f-1dd8-b71b-0bd0-74ac5b98cc9a",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/6a72c47f-1dd8-b71b-0bd0-74ac5b98cc9a",
+   "npgalleryTitle": "Blue Skies over the High Peaks",
+   "npgalleryDescription": "The sun shines along the High Peaks Trail.",
+   "photoCreditRecorded": "Photo by NPS/Beth Hudick",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"Photo by NPS/Beth Hudick\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS/Beth Hudick",
+   "depicts": "Rock formations on a sunny day",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "redwood",
@@ -4820,7 +4949,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4877,7 +5006,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "3 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -4957,7 +5086,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5025,7 +5154,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "No public-domain NPGallery image record from this park matches the destination or its alternative names, nearby landmarks or trail names (full park collection plus keyword searches, Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5036,7 +5165,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "33 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5150,7 +5279,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "6 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5253,7 +5382,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "2 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5379,7 +5508,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 rights-verified NPS candidates were reviewed visually; none accurately depicts the destination (they show other places, wildlife, people, maps, artwork, artifacts or construction).",
+   "researchGap": "32 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5416,7 +5545,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "4 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "4 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5427,7 +5556,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "8 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5438,7 +5567,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "2 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5495,7 +5624,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "2 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "4 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5506,7 +5635,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5609,7 +5738,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "1 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5620,7 +5749,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "5 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "1 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5700,7 +5829,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "No public-domain NPGallery image record from this park names the destination (searched the park unit collection and unit plus destination keyword searches, including alternative names).",
+   "researchGap": "39 public-domain NPGallery records with documented NPS authorship match the destination search terms; each was reviewed visually and none accurately and clearly depicts the destination (other places, generic park scenery, wildlife, people, maps, artwork, museum objects or construction) (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5757,7 +5886,7 @@
    "status": "UNRESOLVED",
    "file": null,
    "checked": "2026-11-16",
-   "researchGap": "29 public-domain NPGallery records name the destination, but none documents authorship by an NPS employee (no NPS photo credit, NPS copyright entry or NPS staff contact; or a volunteer, partner, courtesy or third-party credit).",
+   "researchGap": "29 public-domain NPGallery records match the destination or its alternative names, but none carries an NPS photo credit or NPS copyright entry free of volunteer, donated, courtesy or artist signals (Version 3.6).",
    "shown": "Placeholder panel with the destination name (no photograph)"
   },
   {
@@ -5972,11 +6101,23 @@
    "destination": "riverside-walk",
    "use": "destination photo",
    "destinationName": "Riverside Walk",
-   "status": "UNRESOLVED",
-   "file": null,
-   "checked": "2026-11-16",
-   "researchGap": "Rights-verified records show wildlife, a flower and artwork, not the Riverside Walk.",
-   "shown": "Placeholder panel with the destination name (no photograph)"
+   "status": "VERIFIED NPS PUBLIC DOMAIN",
+   "file": "/images/last-adventure/zion/riverside-walk.jpg",
+   "fileWebp": "/images/last-adventure/zion/riverside-walk.webp",
+   "npgalleryAssetId": "227903e0-aebd-4f38-91e4-be11f7f0f63c",
+   "sourceUrl": "https://npgallery.nps.gov/AssetDetail/227903e0-aebd-4f38-91e4-be11f7f0f63c",
+   "originalImage": "https://npgallery.nps.gov/GetAsset/227903e0-aebd-4f38-91e4-be11f7f0f63c",
+   "npgalleryTitle": "Hikers on Riverside Walk 2",
+   "npgalleryDescription": "Two hikers on the Riverside Walk trail in the fall.",
+   "photoCreditRecorded": "NPS Photo",
+   "copyrightRecorded": null,
+   "authorshipEvidence": "Photo credit \"NPS Photo\"",
+   "rights": "NPGallery Constraints Information: Public domain: Full Granting Rights",
+   "publicDomainBasis": "Work of a National Park Service employee prepared as part of official duties (17 U.S.C. 105), as recorded in the NPS NPGallery rights metadata",
+   "creditShown": "NPS Photo",
+   "depicts": "Two hikers on the Riverside Walk trail surrounded by trees with fall colors and fallen leaves",
+   "modified": "Resized to 1200 px wide; displayed cropped (object-fit)",
+   "checked": "2026-11-16"
   },
   {
    "park": "zion",

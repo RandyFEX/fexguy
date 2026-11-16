@@ -108,7 +108,13 @@
       "id": "bass-harbor-head-light",
       "name": "Bass Harbor Head Light Station",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/acadia/bass-harbor-head-light.jpg",
+        "srcWebp": "/images/last-adventure/acadia/bass-harbor-head-light.webp",
+        "alt": "The Bass Harbor Head Lighthouse at Acadia National Park during sunset. October 14, 2026",
+        "credit": "NPS/Lucia Lubanovich",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/90bfb3df-5f0c-459a-843e-f0b9889baab4"
+      },
       "description": "Since 1858 this small white lighthouse has marked the entrance to Bass Harbor and Blue Hill Bay, and its red light still shines over the rocks on the southwest corner of Mount Desert Island. From the gravel overlook or the cliff viewpoint below, the tower and keeper's house sit above the waves like a postcard. A lighthouse is a fitting place to talk about the person who guided your family home, and evening light here is something to share slowly.",
       "plan": {
         "distance": "Gravel overlook beside the parking area; short gravel path and stairs to the cliff viewpoint",

@@ -179,7 +179,13 @@
       "id": "golden-canyon",
       "name": "Golden Canyon to Red Cathedral",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/death-valley/golden-canyon.jpg",
+        "srcWebp": "/images/last-adventure/death-valley/golden-canyon.webp",
+        "alt": "Looking down Golden Canyon from below Manly Beacon",
+        "credit": "NPS",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/f3ac6a6c-155d-4519-3e63-d762dfe509e3"
+      },
       "description": "Step into Golden Canyon and its walls rise around you in shades of yellow, with ripples left by ancient water preserved in the stone. The path climbs gently up the canyon floor, past colorful side canyons and the remains of an old road taken by a flash flood. At the end waits Red Cathedral, a natural amphitheater of tall, fluted red walls. It is a walk for talking along the way and for falling quiet when you arrive.",
       "plan": {
         "distance": "3 mi round trip to Red Cathedral",

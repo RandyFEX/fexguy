@@ -85,7 +85,13 @@
       "id": "riverside-walk",
       "name": "Riverside Walk",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/zion/riverside-walk.jpg",
+        "srcWebp": "/images/last-adventure/zion/riverside-walk.webp",
+        "alt": "Two hikers on the Riverside Walk trail surrounded by trees with fall colors and fallen leaves",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/227903e0-aebd-4f38-91e4-be11f7f0f63c"
+      },
       "description": "At the northern end of Zion Canyon, the Riverside Walk follows the Virgin River as the sheer sandstone walls narrow in around you. The paved path ends where the river itself becomes the trail into The Narrows, and trailside exhibits tell how water carved the canyon. Walk it slowly together, listen to the water, and pause at the end of the pavement before turning back. Some places make it easier to talk about the people we miss, and this is one of them.",
       "plan": {
         "distance": "1 mi one way",

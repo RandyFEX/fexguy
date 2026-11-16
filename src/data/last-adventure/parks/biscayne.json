@@ -37,7 +37,13 @@
       "id": "convoy-point-jetty-walk",
       "name": "Convoy Point Jetty Walk",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/biscayne/convoy-point-jetty-walk.jpg",
+        "srcWebp": "/images/last-adventure/biscayne/convoy-point-jetty-walk.webp",
+        "alt": "Convoy Point at dawn",
+        "credit": "NPS image by Matt Johnson",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/3c26a87d-1dd8-b71b-0b54-609adbc06528"
+      },
       "description": "This short walk from the visitor center follows the edge of Biscayne Bay, crosses a bridge lined with mangroves and ends at a quiet point looking out over shallow, seagrass-covered water. Benches along the way invite you to sit, and with good eyes or binoculars you may pick out Boca Chita Key and Elliott Key on the horizon. The park's own guide suggests reading its stations aloud as a family, and the final bench is a gentle place for your own words.",
       "plan": {
         "distance": "0.8 mi round trip from the visitor center",

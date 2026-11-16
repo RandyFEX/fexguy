@@ -12,7 +12,7 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-const hero = parks.find((p) => p.id === 'yosemite')!.photo!;
+const hero = parks.find((p) => p.id === 'grand-teton')!.photo!;
 const credit = (ph: Photo) => ph.credit;
 // Creative Commons BY/BY-SA photos: attribution shows title, author, source and license, plus a change notice.
 const isCC = (ph: Photo) => /^CC BY/.test(ph.license?.name ?? '');

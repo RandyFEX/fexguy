@@ -166,7 +166,13 @@
       "id": "tidewater-glaciers-boat",
       "name": "Tidewater Glaciers by Boat",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.jpg",
+        "srcWebp": "/images/last-adventure/kenai-fjords/tidewater-glaciers-boat.webp",
+        "alt": "Profile of Aialik Glacier - 2010",
+        "credit": "NPS/Jim Pfeiffenberger",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/5b16bf62-1dd8-b71c-07fb-a7fc498c5e21"
+      },
       "description": "Much of Kenai Fjords can only be seen from the water. Full-day tours from Seward head out past sea stacks along a rock-bound coast to the park's tidewater glaciers, where you can watch and listen as ice meets the sea. Humpback whales feed in these waters from late spring through summer, and orcas travel the coast. Gather at the rail in warm layers, pass around a thermos, and watch the glacier together for a while; few families ever share a farewell in a setting like this.",
       "plan": {
         "distance": "Full-day boat tour from Seward; Holgate Arm is about 2 to 4 hours by boat from Seward (NPS)",

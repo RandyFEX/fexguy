@@ -114,7 +114,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/glacier-bay/forest-trail.jpg",
+        "srcWebp": "/images/last-adventure/glacier-bay/forest-trail.webp",
+        "alt": "Trees reflected in the water of Blackwater Pond",
+        "credit": "National Park Service",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/2f0b656c-1dd8-b71c-07a0-a0a540eeebcf"
+      },
       "description": "This loop wanders through the spruce and hemlock rainforest of Bartlett Cove, past quiet ponds, then down to the beach. A wooden boardwalk leads to a viewing deck over a serene pond, and two benches invite you to sit for a while and listen to the forest. Every afternoon in summer a ranger leads a walk here. It is an easy, unhurried hour, the kind of walk where stories come out naturally, and the beach at the end is a lovely place to stand together and look out over the cove.",
       "plan": {
         "distance": "1 mi loop",
@@ -235,7 +241,13 @@
         "accessible",
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.jpg",
+        "srcWebp": "/images/last-adventure/glacier-bay/day-boat-tidewater-glaciers.webp",
+        "alt": "A reflective inlet with calm water- steep snowcapped mountains rise above a fjord with a glacier in the center",
+        "credit": "NPS Photo/S. Tevebaugh",
+        "sourceUrl": "https://npgallery.nps.gov/AssetDetail/daffbcbe-b7ad-4467-bfc3-946e23e06597"
+      },
       "description": "Each summer morning a tour boat leaves Bartlett Cove for a seven-hour journey up the bay, with a park ranger aboard. Puffins and hundreds of roaring sea lions crowd South Marble Island, mountain goats cling to the cliffs, and the shoreline grows younger as the ice draws closer. Then the tidewater glaciers appear, rivers of ice about a mile wide, and the boat waits at one for at least half an hour so you can watch and hear it calve. Bundle up together on deck for this.",
       "plan": {
         "distance": "130-mile trip by boat from Bartlett Cove",
