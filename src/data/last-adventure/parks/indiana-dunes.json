@@ -11,7 +11,7 @@
     "alt": "Sunset over Lake Michigan from the shore of Indiana Dunes National Park",
     "credit": "TripOfALifestyle.com",
     "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Michigan_from_Indiana_Dunes_National_Park.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Michigan_from_Indiana_Dunes_National_Park.jpg", "title": "Lake Michigan from Indiana Dunes National Park",
     "caption": "Lake Michigan at sunset"
   },
   "intro": "Along the southern tip of Lake Michigan, Indiana Dunes gathers sand dunes, oak savanna, marshes and long beaches into a park you can explore in a single day. On a clear evening the Chicago skyline rises across the water. A final adventure here can be an easy lakefront walk, a quiet hour beside a restored marsh or a climb up 270 stairs to the top of a dune.",
@@ -47,7 +47,8 @@
         "alt": "A path leads through dune grass toward the beach and Lake Michigan at Portage Lakefront",
         "credit": "Chris Light",
         "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakefront_5501.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lakefront_5501.jpg",
+    "title": "Lakefront 5501"
       },
       "description": "This stretch of shore was once settling ponds for a steel mill, and today it is restored dune and open beach facing the whole width of Lake Michigan. The park calls it a place to watch the seasons change: storm clouds building over the water, spring birds passing through, shelf ice along the beach in winter. A paved path loops through the dunes, so a grandparent in a wheelchair can come along. Walk out together, then stand at the water's edge and watch the waves roll in.",
       "plan": {
@@ -128,7 +129,8 @@
         "alt": "Wooden stairs of the Dune Succession Trail climbing a sand dune at West Beach",
         "credit": "Indianadunes",
         "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_Succession_Trail_at_West_Beach,_Indiana_Dunes_National_Park.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_Succession_Trail_at_West_Beach,_Indiana_Dunes_National_Park.jpg",
+    "title": "Dune Succession Trail at West Beach, Indiana Dunes National Park"
       },
       "description": "This short loop climbs from bare beach sand through grasses, jack pines and finally forest, tracing the four stages of a dune's life. Then come the 270 stairs, and at the top a wide view over Lake Michigan to the Chicago skyline. Take the climb at your own pace, pausing on the landings to catch your breath and trade stories. Afterward, walk down to the beach together and let the youngest ones run ahead to the water.",
       "plan": {

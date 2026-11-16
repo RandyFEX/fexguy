@@ -61,7 +61,7 @@
           "name": "CC BY-SA 4.0",
           "url": "https://creativecommons.org/licenses/by-sa/4.0/"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoonah_Tlingit_Tribal_House_in_Glacier_Bay_National_Park.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoonah_Tlingit_Tribal_House_in_Glacier_Bay_National_Park.jpg", "title": "Hoonah Tlingit Tribal House in Glacier Bay National Park",
         "position": "50% 20%"
       },
       "description": "On the shoreline of Bartlett Cove stands Xunaa Shuká Hít, the Huna Tribal House, completed in 2016 as a place of discovery and reconnection for the Huna Tlingit clans whose homeland this is. The flat Tlingit Trail leads there past a traditional dugout canoe and a complete whale skeleton, with views across the cove. Admire the carved totems and house screen, and in summer step inside to see the four house posts that tell the clans' stories. It is a fitting place to remember that every family carries its history forward.",
@@ -196,7 +196,8 @@
           "name": "CC BY-SA 4.0",
           "url": "https://creativecommons.org/licenses/by-sa/4.0/"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Bay_National_Park,_Bartlett_River_and_Lake_Trail.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Bay_National_Park,_Bartlett_River_and_Lake_Trail.jpg",
+        "title": "Glacier Bay National Park, Bartlett River and Lake Trail"
       },
       "description": "The Bartlett River Trail follows an intertidal lagoon, slips through spruce and hemlock forest and comes out at the open estuary where the river meets the sea. Ducks, geese and other water birds gather on the tidal flats, and late in the summer salmon run upriver, drawing hungry harbor seals. Watch the beach for coyotes, moose, bears and river otters. It is a half-day walk with room for long pauses, and the estuary at the end feels made for quiet remembering.",
       "plan": {

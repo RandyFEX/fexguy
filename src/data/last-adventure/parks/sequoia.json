@@ -11,7 +11,7 @@
     "alt": "Visitors at the base of the General Sherman Tree in the Giant Forest",
     "credit": "m01229 from USA",
     "license": { "name": "CC BY-SA 2.0", "url": "https://creativecommons.org/licenses/by-sa/2.0/" },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_Sherman_tree_-_Sequoia_National_Park_(33241877800).jpg", "title": "The General Sherman tree - Sequoia National Park (33241877800)", "title": "The General Sherman tree - Sequoia National Park (33241877800)",
     "caption": "The General Sherman Tree"
   },
   "intro": "In the Giant Forest, giant sequoias rise from quiet meadows, and the largest of them all, the General Sherman Tree, is the largest tree in the world by volume. A short drive away, a stone stairway climbs Moro Rock to views across the Great Western Divide. A final adventure here can be a gentle loop among the big trees or a morning walk up a glacier-carved valley to a towering waterfall.",
@@ -96,7 +96,8 @@
         "alt": "A giant sequoia at the edge of Round Meadow on the Big Trees Trail",
         "credit": "Pavel Špindler",
         "license": { "name": "CC BY 3.0", "url": "https://creativecommons.org/licenses/by/3.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sequoia_N.P._-_velk%C3%BD_strom_a_m%C3%BDtina_-_panoramio.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sequoia_N.P._-_velk%C3%BD_strom_a_m%C3%BDtina_-_panoramio.jpg",
+    "title": "Sequoia N.P. - velký strom a mýtina - panoramio"
       },
       "description": "Round Meadow lies open to the sky, ringed by giant sequoias, and the Big Trees Trail circles it on a flat, paved path with benches along the way. It is an unhurried, nearly level walk that the whole family can share, including anyone using a wheelchair. Stop at the trailside panels, watch the meadow for marmots and other wildlife, and settle on a bench beneath the big trees long enough for one more story about the person who would have loved this quiet place.",
       "plan": {
@@ -141,7 +142,8 @@
         "alt": "Forested ridges and the Sierra Nevada seen from the Moro Rock trail",
         "credit": "King of Hearts",
         "license": { "name": "CC BY-SA 4.0", "url": "https://creativecommons.org/licenses/by-sa/4.0/" },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moro_Rock_Trail_Sequoia_July_2017_006.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moro_Rock_Trail_Sequoia_July_2017_006.jpg",
+    "title": "Moro Rock Trail Sequoia July 2017 006"
       },
       "description": "Moro Rock is a granite dome jutting from the edge of the Giant Forest, and a historic stone stairway of more than 350 steps winds to its top. With each landing the view widens, until the peaks of the Great Western Divide fill the east and the foothills fall away to the west. At the summit, a railing encloses a flat stretch of rock. Climb at your own pace, rest together on the way, and share a moment on top of the world.",
       "plan": {

@@ -14,6 +14,8 @@ const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
 const hero = parks.find((p) => p.id === 'yosemite')!.photo;
 const credit = (ph: Photo) => ph.credit;
+// Creative Commons BY/BY-SA photos: attribution shows title, author, source and license, plus a change notice.
+const isCC = (ph: Photo) => /^CC BY/.test(ph.license?.name ?? '');
 // One mapping for the written NPS classifications: Easy 1, Moderate 3,
 // Difficult 4, Strenuous and very strenuous 5. A destination listing two
 // classifications (for example by boat and on foot) shows the range.
@@ -150,8 +152,11 @@ const difficultyRange = (text: string): [number, number] | null => {
               <figure class="ola-park__hero">
                 <img src={p.photo.src} alt={p.photo.alt} width="1600" height="800" loading="lazy" referrerpolicy="no-referrer" />
                 <figcaption class="ola-credit">
-                  {p.photo.caption}. Photo: {p.photo.sourceUrl ? <a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}
+                  {p.photo.caption}. Photo: {p.photo.title && p.photo.sourceUrl
+                    ? <>“<a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.title}</a>” by {p.photo.credit}</>
+                    : p.photo.sourceUrl ? <a href={p.photo.sourceUrl} rel="noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}
                   {p.photo.license && <>, <a href={p.photo.license.url} rel="noopener license" target="_blank">{p.photo.license.name}</a></>}
+                  {isCC(p.photo) && '. Resized and cropped'}
                 </figcaption>
               </figure>
 
@@ -198,8 +203,11 @@ const difficultyRange = (text: string): [number, number] | null => {
                         <img src={d.photo.src} alt={d.photo.alt} width="1600" height="900" loading="lazy" referrerpolicy="no-referrer" style={d.photo.position ? `object-position: ${d.photo.position}` : undefined} />
                       </picture>
                       <figcaption class="ola-credit">
-                        {d.photo.caption ? `${d.photo.caption}. ` : ''}Photo: {d.photo.sourceUrl ? <a href={d.photo.sourceUrl} rel="noopener" target="_blank">{d.photo.credit}</a> : d.photo.credit}
+                        {d.photo.caption ? `${d.photo.caption}. ` : ''}Photo: {d.photo.title && d.photo.sourceUrl
+                          ? <>“<a href={d.photo.sourceUrl} rel="noopener" target="_blank">{d.photo.title}</a>” by {d.photo.credit}</>
+                          : d.photo.sourceUrl ? <a href={d.photo.sourceUrl} rel="noopener" target="_blank">{d.photo.credit}</a> : d.photo.credit}
                         {d.photo.license && <>, <a href={d.photo.license.url} rel="noopener license" target="_blank">{d.photo.license.name}</a></>}
+                        {isCC(d.photo) && '. Resized and cropped'}
                       </figcaption>
                     </figure>
                   ) : (

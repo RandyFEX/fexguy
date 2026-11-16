@@ -21,6 +21,8 @@ export interface Photo {
   credit: string;
   license?: { name: string; url: string };
   sourceUrl?: string;
+  /** Title of the work (Creative Commons attribution). */
+  title?: string;
   caption?: string;
   /** CSS object-position for the cropped display. */
   position?: string;
@@ -174,6 +176,7 @@ const pilotParks: Park[] = [
           credit: 'Larry D. Moore',
           license: ccBy4,
           sourceUrl: commons('View_Through_Mesa_Arch_Canyonlands_NP_Utah_2023.jpg'),
+          title: 'View Through Mesa Arch Canyonlands NP Utah 2023',
         },
         description:
           'There is a hush at Mesa Arch just before dawn, when everyone stops talking and waits. Then the sun clears the horizon and light pours through the 27-foot arch, framing the canyon far below and the La Sal Mountains in the distance. The walk is short enough for most of the family, and the park calls this its classic sunrise spot. Begin your loved one\'s last adventure here, and let the first light of the day belong to them.',
@@ -374,6 +377,7 @@ const pilotParks: Park[] = [
           credit: 'Tony Hisgett',
           license: ccBy2,
           sourceUrl: commons('Oxbow_Bend_Grand_Teton_(8047187108).jpg'),
+          title: 'Oxbow Bend Grand Teton (8047187108)',
         },
         description:
           'Some of the best goodbyes happen quietly, with a thermos of coffee and a view. At Oxbow Bend the Snake River slows into a lazy curve, and Mount Moran rises above it, mirrored in the water on a still day. You can stand together right beside the turnout, which makes this an ideal stop when grandparents, small children or anyone who can\'t hike is part of the trip. Bring a favorite photograph and let the mountain keep you company.',
@@ -572,6 +576,7 @@ const pilotParks: Park[] = [
           credit: 'Diliff',
           license: ccBySa3,
           sourceUrl: commons('Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg'),
+          title: 'Half Dome from Glacier Point, Yosemite NP - Diliff',
         },
         description:
           'Standing at Glacier Point feels like looking down on all of Yosemite. The valley floor lies 3,200 feet below the railing, and Half Dome rises directly across from you with the High Sierra beyond. A short paved path leads from the parking area, so nearly everyone can come, whatever their age or mobility. Bring a favorite story, a few photographs and enough time to simply stand together and take it in.',
@@ -605,6 +610,7 @@ const pilotParks: Park[] = [
           credit: 'Dave from San Jose, CA, USA',
           license: ccBy2,
           sourceUrl: commons('Taft_Point_Panorama.jpg'),
+          title: 'Taft Point Panorama',
         },
         description:
           'One moment you are walking through quiet forest and meadow; the next, the ground ends at the edge of Yosemite Valley. Deep cracks called The Fissures split the granite beside you, and across the valley stand El Capitan and Yosemite Falls. It is a breathtaking place for the members of your family who are comfortable with heights, and the walk is short enough to leave plenty of time for stories at the rim.',
@@ -643,6 +649,7 @@ const pilotParks: Park[] = [
           credit: 'Supercarwaar',
           license: ccBySa4,
           sourceUrl: commons('Sentinel_Dome,_Yosemite_NP.jpg'),
+          title: 'Sentinel Dome, Yosemite NP',
         },
         description:
           'Some places make you feel as if you have reached the top of the world, and Sentinel Dome is one of them. From the summit, Yosemite opens in every direction, with Half Dome rising across the valley and the High Sierra stretching toward the horizon. Imagine sitting together up here, telling the stories that still make everyone laugh, and giving someone you love one last extraordinary day in a place none of you will forget.',
@@ -678,6 +685,7 @@ const pilotParks: Park[] = [
           credit: 'Lucas·G',
           license: ccBySa4,
           sourceUrl: commons('California,_Yosemite_National_Park,_Half_Dome,_hiking_up.jpg'),
+          title: 'California, Yosemite National Park, Half Dome, hiking up',
           position: '50% 35%',
         },
         description:
@@ -800,6 +808,7 @@ const pilotParks: Park[] = [
           credit: 'Buidhe',
           license: ccBySa4,
           sourceUrl: commons('Sunset_from_Sunrise_Point_(7_October_2024)_4.jpg'),
+          title: 'Sunset from Sunrise Point (7 October 2024) 4',
           position: '22% 50%',
         },
         description:
@@ -826,9 +835,10 @@ const pilotParks: Park[] = [
         photo: {
           ...local('panorama-point'),
           alt: 'Mount Rainier seen from Panorama Point',
-          credit: 'NPS photo by Emily Brouwer',
+          credit: 'Mount Rainier National Park (NPS photo by Emily Brouwer)',
           license: ccBy2,
           sourceUrl: commons('Mount_Rainier_from_Panorama_Point_(14679537685).jpg'),
+          title: 'Mount Rainier from Panorama Point (14679537685)',
           position: '50% 40%',
         },
         description:
