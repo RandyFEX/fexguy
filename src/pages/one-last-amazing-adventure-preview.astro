@@ -12,8 +12,33 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const usedLetters = new Set(states.map((s) => s.state[0].toUpperCase()));
 const coord = (p: Point) => `${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}`;
 const kindLabel = { accessible: 'Accessible', extraordinary: 'Extraordinary' } as const;
-const hero = parks.find((p) => p.id === 'yosemite')!.photo!;
+// Fixed page hero (Version 4.0): the verified NPS photograph of a family at Lady Bird Johnson Grove.
+const heroPhoto = parks.find((p) => p.id === 'redwood')!.destinations.find((d) => d.id === 'lady-bird-johnson-grove')!.photo!;
+const hero = { ...heroPhoto, caption: 'Lady Bird Johnson Grove, Redwood National and State Parks' };
 const credit = (ph: Photo) => ph.credit;
+// The determination is the summary up to its first comma, semicolon or colon
+// (bold); the explanation after it stays regular. The text is never changed.
+const splitLead = (t: string): [string, string] => {
+  const m = t.match(/^[^,;:]+?[,;:](?=\s)/);
+  if (!m) return [t, ''];
+  // A clause that opens a list ("except ...", "either ...") ends the bold before it.
+  if (/\b(except|either)\b/.test(m[0])) {
+    const q = m[0].match(/^.+?(?= (in all|either)\b)/);
+    if (q) return [q[0], t.slice(q[0].length)];
+  }
+  return [m[0], t.slice(m[0].length)];
+};
+// A bullet that opens with a cited source (for example "Superintendent's
+// Compendium, 36 CFR 2.62(b):") shows that heading in bold.
+const SOURCE_HEAD = /^((?:\d{4} )?(?:Superintendent's Compendium|Laws and [Pp]olicies)[^:]{0,60}:)/;
+// The plan grid pairs its half-width cells (Distance, Difficulty, Hiking
+// time, Elevation gain) two per row before the full-width rows. With three,
+// the third would leave an empty slot showing the grid's line color as a solid
+// green box, so that cell spans the row instead.
+const oddLast = (d: { plan: { time?: string; elevation?: string } }) =>
+  d.plan.time && !d.plan.elevation ? 'time' : !d.plan.time && d.plan.elevation ? 'elevation' : null;
+// A plan scattering line with two restrictions (split at "; ") shows each on its own line.
+const scatterLines = (t: string) => t.split(/(?<=;) /);
 // Creative Commons BY/BY-SA photos: attribution shows title, author, source and license, plus a change notice.
 const isCC = (ph: Photo) => /^CC BY/.test(ph.license?.name ?? '');
 // One mapping for the written NPS classifications: Easy 1, Moderate 3,
@@ -49,7 +74,10 @@ const difficultyRange = (text: string): [number, number] | null => {
 >
   <article class="ola" data-page-type="utility" data-page-reason="Private, non-indexed preview of the One Last Amazing Adventure national parks guide.">
     <header class="ola-hero">
-      <img class="ola-hero__img" src={hero.src} alt={hero.alt} width="1600" height="900" fetchpriority="high" referrerpolicy="no-referrer" />
+      <picture>
+        {hero.srcWebp && <source srcset={hero.srcWebp} type="image/webp" />}
+        <img class="ola-hero__img" src={hero.src} alt={hero.alt} width="1600" height="900" fetchpriority="high" referrerpolicy="no-referrer" />
+      </picture>
       <div class="ola-hero__shade"></div>
       <div class="ola-hero__text">
         <p class="ola-hero__flag">Private preview. Not published.</p>
@@ -182,10 +210,16 @@ const difficultyRange = (text: string): [number, number] | null => {
                   {p.scatterAllowed === 'Prohibited' ? (
                     <p class="ola-warn"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg><span>{p.scatterSummary}</span></p>
                   ) : (
-                    <p class="ola-scatter__summary">{p.scatterSummary}</p>
+                    <p class="ola-scatter__summary">{(() => {
+                      const [lead, rest] = splitLead(p.scatterSummary);
+                      return rest ? <><strong>{lead}</strong>{rest}</> : <strong>{lead}</strong>;
+                    })()}</p>
                   )}
                   {p.scatterNotes?.map((n) => <p class="ola-scatter__note">{n}</p>)}
-                  <ul>{p.scatterFacts.map((f) => <li>{f}</li>)}</ul>
+                  <ul>{p.scatterFacts.map((f) => {
+                    const m = f.match(SOURCE_HEAD);
+                    return m ? <li><strong>{m[1]}</strong>{f.slice(m[1].length)}</li> : <li>{f}</li>;
+                  })}</ul>
                   <p class="ola-scatter__links">{p.scatterLink.map((l) => <a href={l.url} rel="noopener" target="_blank">{l.label}</a>)}</p>
                 </aside>
               </div>
@@ -248,11 +282,11 @@ const difficultyRange = (text: string): [number, number] | null => {
                           })()}
                         </dd>
                       </div>
-                      {d.plan.time && <div><dt>Hiking time</dt><dd>{d.plan.time}</dd></div>}
-                      {d.plan.elevation && <div><dt>Elevation gain</dt><dd>{d.plan.elevation}</dd></div>}
+                      {d.plan.time && <div class:list={[{ 'ola-plan__wide': oddLast(d) === 'time' }]}><dt>Hiking time</dt><dd>{d.plan.time}</dd></div>}
+                      {d.plan.elevation && <div class:list={[{ 'ola-plan__wide': oddLast(d) === 'elevation' }]}><dt>Elevation gain</dt><dd>{d.plan.elevation}</dd></div>}
                       <div class="ola-plan__wide"><dt>Accessibility</dt><dd>{d.plan.accessibility}</dd></div>
                       {d.plan.bestTime && <div class="ola-plan__wide"><dt>Best time or season</dt><dd>{d.plan.bestTime}</dd></div>}
-                      <div class={`ola-plan__scatter ola-plan__scatter--${d.scatterStatus}`}><dt>Ash Scattering</dt><dd><span class="ola-status">{d.scatterStatus === 'prohibited' && <span class="ola-warn ola-warn--inline"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg></span>}{d.plan.scattering}</span></dd></div>
+                      <div class={`ola-plan__scatter ola-plan__scatter--${d.scatterStatus}`}><dt>Ash Scattering</dt><dd><span class="ola-status">{d.scatterStatus === 'prohibited' && <span class="ola-warn ola-warn--inline"><svg class="ola-warn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 1 21h22L12 2zm1 15h-2v2h2v-2zm0-7h-2v5h2v-5z" /></svg></span>}<span class="ola-status__text">{scatterLines(d.plan.scattering).map((line) => <span class="ola-status__line">{line}</span>)}</span></span></dd></div>
                       <div>
                         <dt>Official Information</dt>
                         <dd>
@@ -356,7 +390,6 @@ const difficultyRange = (text: string): [number, number] | null => {
     const stateBtns = [...root.querySelectorAll<HTMLButtonElement>('.ola-state-btn')];
     const cards = [...root.querySelectorAll<HTMLElement>('.ola-card')];
     const status = root.querySelector<HTMLElement>('[data-ola-status]');
-    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
     let letter = '';
     let state = '';
 
@@ -391,16 +424,18 @@ const difficultyRange = (text: string): [number, number] | null => {
     };
     letterBtns.forEach((b) => {
       b.addEventListener('click', () => (b.dataset.letter === 'all' ? pickLetter('') : pickLetter(b.dataset.letter!)));
-      if (canHover && b.dataset.letter !== 'all') b.addEventListener('mouseenter', () => !b.disabled && pickLetter(b.dataset.letter!));
     });
     stateBtns.forEach((b) => {
-      const pick = () => {
+      // Click (or tap) only: choosing a state shows its parks and goes to them;
+      // a state with one park goes straight to that park's section.
+      b.addEventListener('click', () => {
         state = b.dataset.state!;
         letter = b.dataset.letter!;
         render();
-      };
-      b.addEventListener('click', pick);
-      if (canHover) b.addEventListener('mouseenter', pick);
+        const shown = cards.filter((c) => !c.hidden);
+        const target = shown.length === 1 ? document.querySelector<HTMLElement>(shown[0].querySelector('a')!.getAttribute('href')!) : shown[0];
+        target?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+      });
     });
     render();
   }
@@ -444,7 +479,7 @@ const difficultyRange = (text: string): [number, number] | null => {
   .ola-hero__img {
     aspect-ratio: 4 / 5;
     max-height: 80vh;
-    object-position: 50% 75%;
+    object-position: 50% 40%;
   }
   .ola-hero__shade {
     position: absolute;
@@ -495,17 +530,18 @@ const difficultyRange = (text: string): [number, number] | null => {
     padding-block: var(--space-12) var(--space-8);
     font-size: 1.125rem;
     line-height: 1.7;
+    color: #000;
   }
   .ola-intro p {
     max-width: 50rem;
   }
   .ola-lead {
-    font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
-    line-height: 1.5;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: inherit;
   }
   .ola-intro__count {
-    color: var(--color-text-muted);
-    font-size: 1rem;
+    font-size: inherit;
   }
 
   /* Browse: A to Z */
@@ -545,7 +581,10 @@ const difficultyRange = (text: string): [number, number] | null => {
     border-color: transparent;
     cursor: default;
   }
-  .ola-az__btn:not(:disabled):hover,
+  .ola-az__btn:not(:disabled):not([aria-pressed='true']):hover,
+  .ola-state-btn:not([aria-pressed='true']):hover {
+    background: var(--ola-sage);
+  }
   .ola-az__btn[aria-pressed='true'] {
     background: var(--color-primary);
     border-color: var(--color-primary);
@@ -567,8 +606,7 @@ const difficultyRange = (text: string): [number, number] | null => {
     font-weight: 600;
     cursor: pointer;
   }
-  .ola-state-btn[aria-pressed='true'],
-  .ola-state-btn:hover {
+  .ola-state-btn[aria-pressed='true'] {
     background: var(--color-primary);
     color: #fff;
   }
@@ -745,9 +783,17 @@ const difficultyRange = (text: string): [number, number] | null => {
     color: var(--color-text-muted);
     margin: 0 0 var(--space-1);
   }
-  .ola-park__intro {
+  /* One body size (1.125rem, black) for park introductions, Before You Go,
+     destination descriptions and route text (Version 4.0). */
+  .ola-park__intro,
+  .ola-park__note,
+  .ola-dest__desc,
+  .ola-route p,
+  .ola-steps,
+  .ola-note {
     font-size: 1.125rem;
     line-height: 1.7;
+    color: #000;
   }
   .ola-links {
     display: flex;
@@ -763,11 +809,6 @@ const difficultyRange = (text: string): [number, number] | null => {
     min-height: var(--tap-target);
     font-weight: 600;
   }
-  .ola-park__note {
-    font-size: 0.9375rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
-  }
   /* Ash scattering panels: brand green, white text, gold accent (a lighter
      tint of the site gold #b68a35, for 4.5:1 contrast on the green). */
   .ola-scatter {
@@ -782,11 +823,21 @@ const difficultyRange = (text: string): [number, number] | null => {
     font-size: 1.25rem;
     color: var(--ola-gold);
   }
-  .ola-scatter__summary {
-    font-weight: 700;
-  }
-  .ola-scatter__note {
+  /* Scattering text at the body size: the determination bold, the
+     explanation, notes and bullets regular, source headings bold. */
+  .ola-scatter__summary,
+  .ola-scatter__note,
+  .ola-scatter ul,
+  .ola-warn {
+    font-size: 1.125rem;
     line-height: 1.6;
+  }
+  .ola-scatter__summary {
+    font-weight: 400;
+  }
+  .ola-scatter__summary strong,
+  .ola-scatter li strong {
+    font-weight: 700;
   }
   .ola-scatter--no h3 {
     color: #fff;
@@ -830,10 +881,9 @@ const difficultyRange = (text: string): [number, number] | null => {
     margin: 0;
   }
   .ola-scatter ul {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     padding-left: 1.25rem;
     margin: var(--space-2) 0;
-    font-size: 0.9375rem;
   }
   .ola-scatter li + li {
     margin-top: var(--space-1);
@@ -843,7 +893,7 @@ const difficultyRange = (text: string): [number, number] | null => {
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-4);
     margin: var(--space-3) 0 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   .ola-jump {
     display: flex;
@@ -945,8 +995,6 @@ const difficultyRange = (text: string): [number, number] | null => {
     margin-top: var(--space-4);
   }
   .ola-dest__desc {
-    font-size: 1.125rem;
-    line-height: 1.7;
     text-align: left;
   }
   .ola-tag {
@@ -1071,6 +1119,16 @@ const difficultyRange = (text: string): [number, number] | null => {
   .ola-status .ola-warn--inline {
     margin: 0;
   }
+  .ola-status {
+    max-width: 100%;
+    text-wrap: pretty;
+  }
+  .ola-status__text {
+    min-width: 0;
+  }
+  .ola-status__line {
+    display: block;
+  }
 
   /* Directions */
   .ola-route {
@@ -1078,9 +1136,6 @@ const difficultyRange = (text: string): [number, number] | null => {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-6);
     margin-top: var(--space-6);
-  }
-  .ola-route p {
-    line-height: 1.6;
   }
   .ola-diff {
     display: flex;
@@ -1118,15 +1173,11 @@ const difficultyRange = (text: string): [number, number] | null => {
   .ola-steps {
     padding-left: 1.4rem;
     margin: 0 0 var(--space-3);
-    line-height: 1.6;
   }
   .ola-steps li + li {
     margin-top: var(--space-1);
   }
-  .ola-note {
-    font-size: 0.9375rem;
-    color: var(--color-text-muted);
-  }
+
 
   /* GPS buttons: one solid black link holding the pin, label and coordinates */
   .ola-gps {
