@@ -204,7 +204,13 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/black-canyon-of-the-gunnison/warner-point.jpg",
+        "srcWebp": "/images/last-adventure/black-canyon-of-the-gunnison/warner-point.webp",
+        "alt": "View into the Black Canyon of the Gunnison from the Warner Point Trail",
+        "credit": "NPS/de Anguera",
+        "sourceUrl": "https://www.nps.gov/thingstodo/warner-trail.htm"
+      },
       "description": "At the far end of the South Rim Road, a trail leaves High Point, the last overlook, and heads out to Warner Point. The park promises beautiful mountain vistas and canyon views along the way, and the walk is long enough for unhurried conversation yet short enough for most families to share. At the point, find a place to sit, look out over the gorge toward the distant peaks, and tell the stories that only the people in your circle know.",
       "plan": {
         "distance": "0.8 mi one way",

@@ -77,7 +77,13 @@
       "id": "wheeler-peak-scenic-drive",
       "name": "Wheeler Peak Scenic Drive",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak-scenic-drive.webp",
+        "alt": "Wheeler Peak Scenic Drive winding toward the mountains of Great Basin National Park",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/places/wheeler-peak-scenic-drive.htm"
+      },
       "description": "This narrow mountain road climbs 12 miles from the sagebrush flats to more than 10,000 feet, passing through pinyon and juniper, mountain mahogany, mixed conifers and finally white-barked aspen. Paved pullouts along the way look out to Mount Moriah, Lehman Creek, Wheeler Peak, Doso Doyabi and the Snake Valley far below. Take it slowly together, watch for mule deer and marmots, and stop wherever the view asks you to. It is a journey that needs no hiking at all.",
       "plan": {
         "distance": "12 mi each way by car; overlooks beside the road",

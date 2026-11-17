@@ -184,7 +184,13 @@
       "id": "hilina-pali-overlook",
       "name": "Hilina Pali Overlook",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.jpg",
+        "srcWebp": "/images/last-adventure/hawaii-volcanoes/hilina-pali-overlook.webp",
+        "alt": "Stone shelter at Hilina Pali Overlook above the ocean",
+        "credit": "NPS Photo/M. Szoenyi",
+        "sourceUrl": "https://www.nps.gov/places/hilina-pali-overlook.htm"
+      },
       "description": "Far from the busy summit, a narrow road winds for miles across volcanic desert and ends at the edge of a great cliff. From Hilina Pali Overlook the land falls away toward the coastline and the open Pacific. It is a place for a family that wants a quieter goodbye: a long drive across open lava, a small shelter, and a wide view to sit with together. The park lists it among the places where ashes may be scattered with a permit.",
       "plan": {
         "distance": "Roadside overlook at the end of a 9-mile road",

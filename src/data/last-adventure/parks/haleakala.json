@@ -69,7 +69,13 @@
       "id": "pa-kaoao",
       "name": "Pā Kaʻoao (White Hill)",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/haleakala/pa-kaoao.jpg",
+        "srcWebp": "/images/last-adventure/haleakala/pa-kaoao.webp",
+        "alt": "Pa Kaʻaoʻao overlook, a round stone-walled viewpoint above Haleakalā crater",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/places/pa-kaoao-overlook.htm"
+      },
       "description": "Right beside the Haleakalā Visitor Center, a short trail climbs a pale cinder hill past the stone walls of ancient rock shelters, part of the mountain's long human history. From the top the crater opens in front of you, its colored cinder cones far below. It is a short walk with a big reward, and an approved scattering site, so the climb, the view and the farewell can all fit into a single unhurried hour together.",
       "plan": {
         "distance": "0.4 mi round trip",
