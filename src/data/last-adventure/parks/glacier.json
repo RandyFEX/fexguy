@@ -65,7 +65,13 @@
       "id": "avalanche-lake",
       "name": "Avalanche Lake",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/glacier/avalanche-lake.jpg",
+        "srcWebp": "/images/last-adventure/glacier/avalanche-lake.webp",
+        "alt": "A first dusting of snow decorates the rocky peaks above the fall colors of the mountain lake basin",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/thingstodo/hike-to-avalanche-lake.htm"
+      },
       "description": "Beyond the cedars, the trail climbs steadily through old-growth forest until the trees part at an alpine lake with waterfalls spilling down the mountainsides above it. The park calls it an excellent introduction to what Glacier is all about. Find a spot along the shore where everyone can sit, unpack lunch and watch the falls together, and give the afternoon to stories about the one who would have loved this walk.",
       "plan": {
         "distance": "2.3 mi one way (about 5 mi round trip)",

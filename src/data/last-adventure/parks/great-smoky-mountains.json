@@ -148,7 +148,13 @@
       "id": "alum-cave-trail",
       "name": "Alum Cave Trail: Arch Rock and Alum Cave Bluffs",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.jpg",
+        "srcWebp": "/images/last-adventure/great-smoky-mountains/alum-cave-trail.webp",
+        "alt": "A cave like overhang over a trail with a mountain view",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/thingstodo/alum-cave-to-the-bluffs.htm"
+      },
       "description": "This trail climbs through old-growth forest and across cool mountain streams, then threads straight through Arch Rock on stone steps, the only rock formation in the park you can hike through. Farther up, Alum Cave Bluffs rewards the climb with some of the best views in the Smokies. It is a real mountain day for the hikers in your family, and a fitting climb to carry someone who loved these hills.",
       "plan": {
         "distance": "5 mi round trip to the bluffs; 2.8 mi round trip to Arch Rock",

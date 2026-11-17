@@ -75,7 +75,13 @@
       "id": "boca-chita-key-lighthouse",
       "name": "Boca Chita Key Lighthouse",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/biscayne/boca-chita-key-lighthouse.jpg",
+        "srcWebp": "/images/last-adventure/biscayne/boca-chita-key-lighthouse.webp",
+        "alt": "Boca Chita lighthouse",
+        "credit": "NPS image by Matt Johnson",
+        "sourceUrl": "https://www.nps.gov/bisc/planyourvisit/bocachita.htm"
+      },
       "description": "Cross the bay by boat and a stone lighthouse appears at the mouth of a small island harbor, framed by palms and turquoise water. Industrialist Mark Honeywell built it in 1938 for his private retreat, and much of the island still looks as it did in the 1940s. From the observation deck of the 65-foot tower you can see islands, bay, ocean and the Miami skyline. It feels like a family's own hidden island for an afternoon.",
       "plan": {
         "distance": "Boat trip from the mainland; a half-mile trail on the island",

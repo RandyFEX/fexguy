@@ -133,7 +133,13 @@
       "id": "oxbow-overlook",
       "name": "Oxbow Overlook and Sperati Point",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.jpg",
+        "srcWebp": "/images/last-adventure/theodore-roosevelt/oxbow-overlook.webp",
+        "alt": "A river meanders through cottonwood trees and steep buttes",
+        "credit": "NPS/L. Thomas",
+        "sourceUrl": "https://www.nps.gov/places/oxbow-overlook.htm"
+      },
       "description": "The North Unit's scenic drive ends here, high above a broad bend of the Little Missouri River framed by tall cottonwoods and steep buttes. A short sidewalk lets everyone take in the view together. Those who want more can follow a gentle prairie trail to Sperati Point, a quiet rise with sweeping badlands views and a rich mix of grasses and wildflowers underfoot. Far from the crowds, it is a peaceful place to remember someone who loved open country.",
       "plan": {
         "distance": "Short sidewalk at the overlook; Sperati Point 1.5 mi (hiking guide) or 2.4 mi (day hikes page) round trip",

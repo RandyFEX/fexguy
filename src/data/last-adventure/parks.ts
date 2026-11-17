@@ -293,7 +293,13 @@ const pilotParks: Park[] = [
         id: 'druid-arch',
         name: 'Druid Arch',
         kinds: ['extraordinary'],
-        photo: null,
+        photo: {
+          src: "/images/last-adventure/canyonlands/druid-arch.jpg",
+          srcWebp: "/images/last-adventure/canyonlands/druid-arch.webp",
+          alt: "A large sandstone arch looms across the skyline on a bright, sunny blue sky day",
+          credit: "NPS/Veronica Verdin",
+          sourceUrl: "https://www.nps.gov/places/druid-arch-trail.htm",
+        },
         description:
           'Druid Arch is the kind of destination your loved one might have talked about for years. The trail winds up Elephant Canyon through deep sand and loose rock, climbs a ladder and finishes with a scramble, until a towering stone arch fills the sky at the head of the canyon. The park calls the view one of the most spectacular in The Needles. For the adventurers in your family, carrying someone you love this far is a tribute all its own.',
         plan: {
@@ -369,7 +375,13 @@ const pilotParks: Park[] = [
         id: 'oxbow-bend',
         name: 'Oxbow Bend',
         kinds: ['accessible'],
-        photo: null,
+        photo: {
+          src: "/images/last-adventure/grand-teton/oxbow-bend.jpg",
+          srcWebp: "/images/last-adventure/grand-teton/oxbow-bend.webp",
+          alt: "A shimmering body of water with green vegetation on the shores and mountains in the background",
+          credit: "NPS Photo",
+          sourceUrl: "https://www.nps.gov/grte/index.htm",
+        },
         description:
           'Some of the best goodbyes happen quietly, with a thermos of coffee and a view. At Oxbow Bend the Snake River slows into a lazy curve, and Mount Moran rises above it, mirrored in the water on a still day. You can stand together right beside the turnout, which makes this an ideal stop when grandparents, small children or anyone who can\'t hike is part of the trip. Bring a favorite photograph and let the mountain keep you company.',
         plan: {
@@ -502,7 +514,14 @@ const pilotParks: Park[] = [
     short: 'Yosemite',
     state: 'California',
     tagline: 'Granite walls, waterfalls and the unmistakable shape of Half Dome.',
-    photo: null,
+    photo: {
+      src: "/images/last-adventure/yosemite/park.jpg",
+      srcWebp: "/images/last-adventure/yosemite/park.webp",
+      alt: "Yosemite Valley in winter from Tunnel View, with El Capitan and Cathedral Rocks covered in snow",
+      credit: "NPS Photo",
+      sourceUrl: "https://www.nps.gov/yose/index.htm",
+      caption: "Yosemite Valley in winter from Tunnel View",
+    },
     intro:
       'Granite walls, thundering waterfalls and the silhouette of Half Dome make Yosemite Valley one of the most recognizable landscapes on earth. A final adventure here can be as gentle as a short walk to a famous viewpoint or as demanding as a sunrise start for the cables of Half Dome.',
     homepage: 'https://www.nps.gov/yose/',
@@ -531,7 +550,13 @@ const pilotParks: Park[] = [
         id: 'tunnel-view',
         name: 'Tunnel View',
         kinds: ['accessible'],
-        photo: null,
+        photo: {
+          src: "/images/last-adventure/yosemite/tunnel-view.jpg",
+          srcWebp: "/images/last-adventure/yosemite/tunnel-view.webp",
+          alt: "Glaciated valley with vertical cliffs",
+          credit: "NPS / Cindy Jacoby",
+          sourceUrl: "https://www.nps.gov/yose/index.htm",
+        },
         description:
           'Step out of the Wawona Tunnel and all of Yosemite Valley appears at once: El Capitan on one side, Bridalveil Fall on the other and Half Dome rising in the distance. It is the defining view of the valley, and it waits right beside the parking area, with accessible parking and a short paved walk. Gather everyone at the viewing area, take the photograph you will treasure, and take a quiet moment for the person who brought you all here.',
         plan: {
@@ -611,7 +636,13 @@ const pilotParks: Park[] = [
         id: 'sentinel-dome',
         name: 'Sentinel Dome',
         kinds: ['extraordinary'],
-        photo: null,
+        photo: {
+          src: "/images/last-adventure/yosemite/sentinel-dome.jpg",
+          srcWebp: "/images/last-adventure/yosemite/sentinel-dome.webp",
+          alt: "A rainbow over a mountain in the distance",
+          credit: "NPS / Bob Roney",
+          sourceUrl: "https://www.nps.gov/yose/index.htm",
+        },
         description:
           'Some places make you feel as if you have reached the top of the world, and Sentinel Dome is one of them. From the summit, Yosemite opens in every direction, with Half Dome rising across the valley and the High Sierra stretching toward the horizon. Imagine sitting together up here, telling the stories that still make everyone laugh, and giving someone you love one last extraordinary day in a place none of you will forget.',
         plan: {
@@ -640,7 +671,13 @@ const pilotParks: Park[] = [
         id: 'half-dome',
         name: 'Half Dome',
         kinds: ['extraordinary'],
-        photo: null,
+        photo: {
+          src: "/images/last-adventure/yosemite/half-dome.jpg",
+          srcWebp: "/images/last-adventure/yosemite/half-dome.webp",
+          alt: "Granite dome with trace amounts of snow",
+          credit: "NPS / Cindy Jacoby",
+          sourceUrl: "https://www.nps.gov/yose/index.htm",
+        },
         description:
           'If your loved one ever stood beneath Half Dome and wondered what the top was like, this is a chance to finish that climb for them. The trail passes Vernal and Nevada Falls before the final 400 feet up steel cables to a summit nearly 5,000 feet above Yosemite Valley. It is one of the hardest days in the park and requires a permit, but the moment you stand on top together will stay with you for a lifetime.',
         plan: {

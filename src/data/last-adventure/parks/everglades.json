@@ -101,7 +101,13 @@
       "id": "mahogany-hammock",
       "name": "Mahogany Hammock",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/everglades/mahogany-hammock.jpg",
+        "srcWebp": "/images/last-adventure/everglades/mahogany-hammock.webp",
+        "alt": "Boardwalk winding through the tropical hardwood hammock at Mahogany Hammock",
+        "credit": "NPS photo J Roark",
+        "sourceUrl": "https://www.nps.gov/ever/planyourvisit/mahogany-hammock-trail.htm"
+      },
       "description": "Step off the open prairie and into a jungle. The boardwalk winds through a dense hardwood hammock, an island of trees rising from the sawgrass, past gumbo-limbo trees and air plants clinging to the branches. Somewhere along the loop stands the largest living mahogany tree in the United States. Under the shade, voices soften, and it becomes an easy place to share a favorite memory of the person who would have loved this walk.",
       "plan": {
         "distance": "0.5 mi round trip",
@@ -129,7 +135,13 @@
       "id": "shark-valley-observation-tower",
       "name": "Shark Valley Observation Tower",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/everglades/shark-valley-observation-tower.jpg",
+        "srcWebp": "/images/last-adventure/everglades/shark-valley-observation-tower.webp",
+        "alt": "Spiraling concrete observation tower is silhouetted against a bright blue sky",
+        "credit": "NPS Photo/ A Sanchez",
+        "sourceUrl": "https://www.nps.gov/places/shark-valley-observation-tower.htm"
+      },
       "description": "Halfway around the Shark Valley loop, a spiraling concrete tower rises out of the heart of the river of grass. At the top you stand at the highest point a visitor can stand on foot in the whole park, with views reaching up to 20 miles across sawgrass marsh and tree islands. Getting there is part of the day, whether you ride the narrated tram, pedal together or walk, watching alligators, herons and turtles along the way.",
       "plan": {
         "distance": "15 mi paved loop; the tower is at the halfway point, 7 miles south of the parking lot",

@@ -37,7 +37,13 @@
       "id": "sterling-munro-boardwalk",
       "name": "Sterling Munro Boardwalk",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/sterling-munro-boardwalk.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/sterling-munro-boardwalk.webp",
+        "alt": "Forest and mountains framing a view of the jagged Picket Mountains",
+        "credit": "NPS / Anthony Killion",
+        "sourceUrl": "https://www.nps.gov/places/sterling-munro-boardwalk.htm"
+      },
       "description": "Behind the North Cascades Visitor Center, a short boardwalk winds down through Douglas fir and western hemlock and then opens onto the distant Picket Range, one of the most rugged corners of the park, with the Terror Glacier among its peaks. Benches wait at the end, so everyone can sit together and take it in. Bring binoculars to look for mountain goats on the steep slopes, and take a quiet moment for the person who would have loved this view.",
       "plan": {
         "distance": "330 ft one way",
@@ -62,7 +68,13 @@
       "id": "diablo-lake-overlook",
       "name": "Diablo Lake Overlook",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/diablo-lake-overlook.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/diablo-lake-overlook.webp",
+        "alt": "A blue lake surrounded by forested mountains",
+        "credit": "NPS / M. Bluestein",
+        "sourceUrl": "https://www.nps.gov/places/diablo-lake-overlook.htm"
+      },
       "description": "The color stops people in their tracks. In summer Diablo Lake glows turquoise, tinted by fine rock particles called glacial flour that wash down from the surrounding mountains, and rugged peaks rise straight from its shores with the historic Diablo Dam in the distance. Pull into the overlook, gather together at the viewpoint and let the youngest ones guess how the water got its color. There is a picnic table too, a fine place for a shared meal and a toast to the one you came to honor.",
       "plan": {
         "distance": "Roadside overlook",
@@ -84,7 +96,13 @@
       "id": "thunder-knob",
       "name": "Thunder Knob",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/north-cascades/thunder-knob.jpg",
+        "srcWebp": "/images/last-adventure/north-cascades/thunder-knob.webp",
+        "alt": "A blue lake surrounded by forested mountains",
+        "credit": "NPS / Astudillo",
+        "sourceUrl": "https://www.nps.gov/places/thunder-knob-trail.htm"
+      },
       "description": "Thunder Knob is the kind of walk where children run ahead and grandparents set the pace, and nobody minds. The well-built trail crosses a series of footbridges over Colonial Creek, then switchbacks gently up to a knob above Diablo Lake, where benches face the water and high peaks rise on every side. Settle onto a bench together, pass around a thermos and some favorite photographs, and let the mountains keep you company while you remember.",
       "plan": {
         "distance": "1.9 mi one way (trail page); 3.6 mi round trip (places page)",

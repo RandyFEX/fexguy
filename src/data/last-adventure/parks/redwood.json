@@ -46,7 +46,13 @@
       "id": "lady-bird-johnson-grove",
       "name": "Lady Bird Johnson Grove",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/redwood/lady-bird-johnson-grove.jpg",
+        "srcWebp": "/images/last-adventure/redwood/lady-bird-johnson-grove.webp",
+        "alt": "Three people stand on a walkway in the trees. It is foggy",
+        "credit": "NPS Photo / Steve Olson",
+        "sourceUrl": "https://www.nps.gov/redw/index.htm"
+      },
       "description": "Cross the wooden footbridge at the trailhead and, within a few steps, young Douglas-firs give way to old-growth redwoods that have never been logged. The loop winds through the grove that President Nixon dedicated to Lady Bird Johnson in 1969, with the dedication plaque about half a mile along. It is an easy, family-friendly walk, quiet enough to hear the difference between the two forests, and a gentle place to share memories beneath trees that people once fought to save.",
       "plan": {
         "distance": "1.5 mi loop",

@@ -70,7 +70,13 @@
       "id": "high-dune-on-first-ridge",
       "name": "High Dune on First Ridge",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.jpg",
+        "srcWebp": "/images/last-adventure/great-sand-dunes/high-dune-on-first-ridge.webp",
+        "alt": "The top of a tall dune is illuminated by the rising sun, as clouds swirl in blue sky",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://www.nps.gov/places/high-dune-on-first-ridge.htm"
+      },
       "description": "From the parking lot, this crest looks like the highest point in the dunefield, and that is reason enough to climb it. There is no trail: you cross the creek bed and zigzag up the ridgelines together, leaving footprints the wind will smooth away by evening. At the top the entire dunefield opens around you, wave after wave of sand rolling toward the mountains. Sit on the ridge, catch your breath, and share the stories that made this person who they were.",
       "plan": {
         "distance": "About 2.5 mi round trip, with no trail",
@@ -110,7 +116,13 @@
       "id": "hidden-dune",
       "name": "Hidden Dune",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-sand-dunes/hidden-dune.jpg",
+        "srcWebp": "/images/last-adventure/great-sand-dunes/hidden-dune.webp",
+        "alt": "A panoramic view of dunes, with mountains in the distance and blue sky above",
+        "credit": "NPS/Patrick Myers",
+        "sourceUrl": "https://www.nps.gov/places/hidden-dune.htm"
+      },
       "description": "Hidden Dune earns its name: tucked deep in the dunefield, it cannot be seen from the main visitor areas, and a false summit keeps the true top out of sight for much of the climb. The park lists it among the two tallest dunes in North America. Reaching it takes most of a day of walking through open sand, just you, the people you love and the long shadows of the ridges. For a family that never did anything halfway, it is a summit worth carrying someone to.",
       "plan": {
         "distance": "About 7 mi round trip from the Dunes Parking Lot, with no trail",

@@ -83,7 +83,13 @@
       "id": "weston-lake-trail",
       "name": "Weston Lake Trail",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/congaree/weston-lake-trail.jpg",
+        "srcWebp": "/images/last-adventure/congaree/weston-lake-trail.webp",
+        "alt": "A view of a bottomland/floodplain forest, with wide based cypress and tupelo trees, cypress knees",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/cong/index.htm"
+      },
       "description": "Leave the boardwalk behind and follow the forest floor to the banks of Cedar Creek, where river otters and wading birds are regularly seen. Its eastern portion traces a cypress-tupelo slough, an old dried riverbed where cypress knees rise from the dark water like a crowd of small figures. It is a longer, quieter walk, the kind that gives a family time to talk, fall silent and talk again.",
       "plan": {
         "distance": "4.5 mi round trip",
@@ -113,7 +119,13 @@
       "id": "bates-ferry-trail",
       "name": "Bates Ferry Trail to the Congaree River",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/congaree/bates-ferry-trail.jpg",
+        "srcWebp": "/images/last-adventure/congaree/bates-ferry-trail.webp",
+        "alt": "View of the Congaree River during the Fall",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/cong/index.htm"
+      },
       "description": "In the quiet eastern corner of the park, an old 1920s ferry road leads through the woods to the banks of the Congaree, the river that floods and feeds this whole forest. Colonial-era ferries once crossed nearby. At the end, the river slides past, and in autumn the trees along it turn gold and orange. It is an easy walk with a rewarding end, and a peaceful place to stand together by moving water.",
       "plan": {
         "distance": "2.2 mi round trip",

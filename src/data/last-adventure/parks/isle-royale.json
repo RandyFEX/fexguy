@@ -170,7 +170,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.jpg",
+        "srcWebp": "/images/last-adventure/isle-royale/rock-harbor-lighthouse.webp",
+        "alt": "a view of the Rock Harbor Lighthouse from the waters of Middle Islands Passage on a bright blue day",
+        "credit": "NPS / PAUL BROWN",
+        "sourceUrl": "https://www.nps.gov/places/rock-harbor-lighthouse.htm"
+      },
       "description": "The boat brings you to a historic commercial fishery where, in midsummer, a demonstrator still tells the story of the families who fished these waters. A short walk leads to Rock Harbor Lighthouse, a 50-foot white brick tower completed in 1855 that once sent its beam 15 miles across the lake. Its keeper's house now holds maritime exhibits. For a family whose loved one worked hard, loved the water or simply loved a good story, this is a gentle and fitting stop.",
       "plan": {
         "distance": "Quarter-mile walk from the fishery to the lighthouse",

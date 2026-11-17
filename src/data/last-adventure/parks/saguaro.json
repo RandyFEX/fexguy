@@ -96,7 +96,13 @@
       "id": "javelina-rocks",
       "name": "Javelina Rocks",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/saguaro/javelina-rocks.jpg",
+        "srcWebp": "/images/last-adventure/saguaro/javelina-rocks.webp",
+        "alt": "A narrow dirt trail spans from the bottom left up to the center, where large reddish boulders abound",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/places/javelina-rocks-overlook.htm"
+      },
       "description": "About six miles around the Cactus Forest Loop Drive, great rounded boulders rise beside the road, and this is where many people stop to watch the sun go down. The rocks are banded and striped, granite stretched over ages into gneiss, and saguaros stand all around them. Some of the family can explore and scramble while others stay near the car and watch the colors deepen across the cactus forest. It is an easy, unhurried way to end a day together.",
       "plan": {
         "distance": "Roadside overlook",

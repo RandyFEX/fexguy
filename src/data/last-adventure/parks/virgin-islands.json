@@ -37,7 +37,13 @@
       "id": "trunk-bay",
       "name": "Trunk Bay",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/virgin-islands/trunk-bay.jpg",
+        "srcWebp": "/images/last-adventure/virgin-islands/trunk-bay.webp",
+        "alt": "Turquoise water laps white sandy shore fringed with lush green vegetation",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/viis/index.htm"
+      },
       "description": "Trunk Bay is the kind of beach people picture when they close their eyes: crystal-clear water, soft white sand and green hills curving around the bay. The park calls it one of the most beautiful beaches in the world. Accessible paths and beach ramps bring everyone down to the water, and snorkelers can follow an underwater trail of signs over the coral. Spread out a blanket, let the little ones splash at the edge, and spend an unhurried day remembering someone who would have loved it here.",
       "plan": {
         "distance": "At the parking area; 0.3 mi of beach",

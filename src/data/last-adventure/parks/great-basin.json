@@ -35,7 +35,13 @@
       "id": "lehman-caves",
       "name": "Lehman Caves",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-basin/lehman-caves.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/lehman-caves.webp",
+        "alt": "Brown and tan cave formation in the shape of a parachute",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/grba/index.htm"
+      },
       "description": "Visitors have been entering Lehman Caves, the longest cave system in Nevada, since 1885. A ranger leads small groups through passages and decorated rooms that stay a cool, humid 52 degrees all year. The short accessible tour reaches the Gothic Palace, the cave's first highly decorated room, so even family members who cannot manage stairs can come along. Underground, in the hush and the soft light, it is easy to feel how long the earth has been patiently at work.",
       "plan": {
         "distance": "Accessible Gothic Palace Tour 0.3 mi; Grand Palace Tour 0.6 mi",
@@ -184,7 +190,13 @@
       "id": "wheeler-peak",
       "name": "Wheeler Peak",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/great-basin/wheeler-peak.jpg",
+        "srcWebp": "/images/last-adventure/great-basin/wheeler-peak.webp",
+        "alt": "View from Wheeler Peak across rocky mountain peaks under blue sky",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/places/wheeler-peak.htm"
+      },
       "description": "Wheeler Peak is the second tallest point in Nevada, and on a clear day its summit opens a view of more than 100 miles across the basins and ranges. The rocky, windy trail climbs above treeline from a saddle below Bald Mountain and finishes on the steepest stretch in the park. It is a full, hard day best started at dawn, and for the strongest hikers in the family, standing together on top is a way to carry someone you love to the top of the park.",
       "plan": {
         "distance": "8.6 mi round trip",

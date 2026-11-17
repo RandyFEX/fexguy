@@ -180,7 +180,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/carlsbad-caverns/bat-flight-amphitheater.jpg",
+        "srcWebp": "/images/last-adventure/carlsbad-caverns/bat-flight-amphitheater.webp",
+        "alt": "Bats flying out of Carlsbad Cavern at sunset",
+        "credit": "NPS / Nick Hristov",
+        "sourceUrl": "https://www.nps.gov/cave/planyourvisit/bat_flight_program.htm"
+      },
       "description": "As evening falls, the family finds seats in the outdoor amphitheater at the cave's Natural Entrance and listens to a ranger talk about the Brazilian free-tailed bats that live inside. Then the bats emerge from the darkness and fly overhead into the desert sky in search of food. Cameras and phones stay away to protect them, so everyone simply watches together, fully present. It is a beautiful moment to hold hands and think about life continuing, night after night.",
       "plan": {
         "distance": "About a five-minute walk from the visitor center",

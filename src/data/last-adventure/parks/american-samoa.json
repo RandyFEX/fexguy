@@ -73,7 +73,13 @@
       "id": "lower-sauma-ridge",
       "name": "Lower Sauma Ridge Trail",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/lower-sauma-ridge.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/lower-sauma-ridge.webp",
+        "alt": "Lower Sauma Ridge trail sign above the forested coast",
+        "credit": "NPS photo",
+        "sourceUrl": "https://www.nps.gov/npsa/planyourvisit/hiking.htm"
+      },
       "description": "A gentle climb through the forest leads to an archaeological site where ancient Samoans left grinding stones and a star mound, and to a view over the northeast coast, the Vaiʻava Strait and Pola Island in the distance. Exhibits along the way tell the story of the people who lived here. It is an easy walk with children, and a place to talk about where your own family came from with the ocean spread out below you.",
       "plan": {
         "distance": "0.4 mi round trip",
@@ -104,7 +110,13 @@
       "id": "mount-alava",
       "name": "Mount ʻAlava",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/american-samoa/mount-alava.jpg",
+        "srcWebp": "/images/last-adventure/american-samoa/mount-alava.webp",
+        "alt": "A lush group of mountains surrounded by ocean with a lakeside town nested in the mountain valley",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/places/mount-alava.htm"
+      },
       "description": "The Mount ʻAlava Trail climbs a long ridge through tropical rainforest, past the park's work restoring native trees, to a summit where all of Tutuila spreads out below. Pago Pago Harbor, a collapsed volcanic caldera, curves between green mountains, and the ocean surrounds everything. It is a full day of walking together through heat and birdsong, and reaching the top, with the whole island at your feet, can feel like a gift your loved one made possible.",
       "plan": {
         "distance": "7 mi round trip",

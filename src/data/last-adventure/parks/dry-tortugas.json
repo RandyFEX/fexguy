@@ -5,7 +5,14 @@
   "state": "Florida",
   "states": ["Florida"],
   "tagline": "A brick fortress and a lighthouse island in open turquoise water, 70 miles past Key West.",
-  "photo": null,
+  "photo": {
+    "src": "/images/last-adventure/dry-tortugas/park.jpg",
+    "srcWebp": "/images/last-adventure/dry-tortugas/park.webp",
+    "alt": "An aerial view of the Dry Tortugas",
+    "credit": "NPS Photo / Brandon Cintron Gerena",
+    "sourceUrl": "https://www.nps.gov/drto/index.htm",
+    "caption": "Aerial view of the Dry Tortugas"
+  },
   "intro": "Almost 70 miles west of Key West, seven small islands of coral and sand sit in about 100 square miles of open water, and less than 1% of the park is dry ground. Fort Jefferson, one of the nation's largest 1800s masonry forts, fills most of Garden Key, while the lighthouse on Loggerhead Key watches over the reefs and shipwrecks to the west. Getting here takes a ferry, seaplane or boat, which makes the journey itself part of the tribute.",
   "homepage": "https://www.nps.gov/drto/",
   "map": [{ "label": "Official park maps", "url": "https://www.nps.gov/drto/planyourvisit/maps.htm" }],
@@ -28,7 +35,13 @@
       "id": "fort-jefferson",
       "name": "Fort Jefferson",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/fort-jefferson.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/fort-jefferson.webp",
+        "alt": "A brick fort is surrounded by a moat and blue sky",
+        "credit": "NPS Photo by Denise Diaz",
+        "sourceUrl": "https://www.nps.gov/places/fort-jefferson.htm"
+      },
       "description": "After hours of open water, the walls of Fort Jefferson rise straight out of the sea, red brick against turquoise. Built over nearly thirty years and never finished, it is the largest masonry structure in the Americas, made of more than 16 million bricks. Wander the arched casemates together, find a quiet corner with a view through the old gun openings, and let the stillness of this remote place hold your memories for a while.",
       "plan": {
         "distance": "Steps from the Garden Key dock; distances within the fort not published",
@@ -53,7 +66,13 @@
       "id": "moat-wall",
       "name": "Moat Walkway and Swim Beaches",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/moat-wall.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/moat-wall.webp",
+        "alt": "Fort Jefferson seen from the moat wall",
+        "credit": "NPS Photo / Maria Belen Farias",
+        "sourceUrl": "https://www.nps.gov/drto/index.htm"
+      },
       "description": "A long brick wall circles Fort Jefferson, holding a calm moat on one side and open sea on the other. Walking it feels like walking on the water, the fort's arches mirrored beside you and the horizon stretching away. Small beaches on Garden Key invite you to sit in the sand or swim in clear, shallow water over reefs full of fish. Choose a spot along the wall, share a story, and watch the light move across the sea.",
       "plan": {
         "distance": "Around the outside of the fort; distance not published",
@@ -88,7 +107,13 @@
       "id": "loggerhead-key",
       "name": "Loggerhead Key",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/dry-tortugas/loggerhead-key.jpg",
+        "srcWebp": "/images/last-adventure/dry-tortugas/loggerhead-key.webp",
+        "alt": "A photo in front of Loggerhead Key from a boat",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
+        "sourceUrl": "https://www.nps.gov/drto/index.htm"
+      },
       "description": "Three miles beyond Garden Key, the largest island in the Dry Tortugas rises from turquoise water, crowned by a tall lighthouse above a white beach and swaying palms. Named for the loggerhead sea turtles that have long found refuge here, it is a quiet place of shipwrecks, wildlife and history. Reaching it takes your own boat or a kayak, so the people who make this crossing together will remember it as their own small voyage.",
       "plan": {
         "distance": "3 miles by water from Garden Key",

@@ -53,7 +53,13 @@
       "kinds": [
         "accessible"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/oberholtzer-trail.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/oberholtzer-trail.webp",
+        "alt": "Green cattails in foreground with lake and trees in background and blue sky with white clouds",
+        "credit": "C.Meridith/NPS",
+        "sourceUrl": "https://www.nps.gov/thingstodo/oberholtzer-trail.htm"
+      },
       "description": "Starting beside the Rainy Lake Visitor Center, this gentle trail winds through deciduous and conifer forest around the edge of a cattail marsh, past boulders left behind by ancient glaciers. Two overlooks open onto the marsh and the lake, good places to watch for wading birds and to pause together. The first stretch is smooth and wide enough for a wheelchair, so everyone can share at least part of the walk. Come at dawn or dusk, when the marsh is at its most alive.",
       "plan": {
         "distance": "1.6 mi round trip; accessible section 0.5 mi round trip",
@@ -102,7 +108,13 @@
       "kinds": [
         "extraordinary"
       ],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/voyageurs/blind-ash-bay-trail.jpg",
+        "srcWebp": "/images/last-adventure/voyageurs/blind-ash-bay-trail.webp",
+        "alt": "View overlooking Kabetogama Lake through pine trees and a few islands in the lake",
+        "credit": "NPS",
+        "sourceUrl": "https://www.nps.gov/thingstodo/hike-blind-ash-bay-trail.htm"
+      },
       "description": "This narrow, winding trail leads from closed-in boreal forest to views over Kabetogama Lake, with pines framing the water and islands scattered across it. The park calls the views postcard-worthy, and they are. It is a good trail for birding, and deer are frequent visitors. Walk the loop at an easy pace, then settle in at a viewpoint above the lake for a while and let the quiet of the north woods hold your family's memories.",
       "plan": {
         "distance": "2.9 mi loop",

@@ -169,7 +169,13 @@
       "id": "canyon-overlook",
       "name": "Canyon Overlook",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/zion/canyon-overlook.jpg",
+        "srcWebp": "/images/last-adventure/zion/canyon-overlook.webp",
+        "alt": "Red sandstone slickrock dotted with green foliage with mountains in the background",
+        "credit": "NPS/Daren Reehl",
+        "sourceUrl": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
+      },
       "description": "Just east of the Zion-Mt. Carmel Tunnel, sandstone steps with a metal handrail lead over rocky ground above a dark slot canyon. Near the end the view opens onto red and cream slickrock, and the trail finishes at a fenced cliff edge facing main Zion Canyon and the Towers of the Virgin. Watch for bighorn sheep on the way. It is a fine short outing for a family that can manage steps and uneven rock, and a good place to pass around a photograph and say a few words.",
       "plan": {
         "distance": "1 mi round trip",

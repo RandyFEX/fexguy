@@ -80,7 +80,13 @@
       "id": "hot-water-cascade",
       "name": "Hot Water Cascade",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/hot-water-cascade.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/hot-water-cascade.webp",
+        "alt": "Hot spring water cascading down rock into a display pool",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/places/hot-water-cascade.htm"
+      },
       "description": "At the Hot Water Cascade, the largest visible spring in the park, thermal water spills down a green hillside on Arlington Lawn into two pools. It leaves the ground far too hot to touch, but by the time it reaches the pools you can put your hands in it. Feeling that warmth together, children and grandparents side by side, is a simple and memorable way to share a moment of comfort and remember someone whose warmth you still carry.",
       "plan": {
         "distance": "On Arlington Lawn beside Central Avenue; distance not published",
@@ -105,7 +111,13 @@
       "id": "hot-springs-mountain-tower",
       "name": "Hot Springs Mountain Tower",
       "kinds": ["accessible", "extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/hot-springs-mountain-tower.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/hot-springs-mountain-tower.webp",
+        "alt": "Observation tower overlooking mountain",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/thingstodo/ride-to-the-top-of-the-hot-springs-mountain-tower.htm"
+      },
       "description": "An elevator carries you up the 216-foot tower on top of Hot Springs Mountain to an open-air deck 1,256 feet above sea level. From there you can see about 140 square miles of countryside: the whole park, the town below and a stretch of the Ouachita Mountains rolling away to the horizon. Standing together in the wind at the top, pointing out the places your loved one knew or would have loved, gives the whole family the same wide view at once.",
       "plan": {
         "distance": "Elevator ride to the observation decks",
@@ -129,7 +141,13 @@
       "id": "goat-rock",
       "name": "Goat Rock Overlook",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/hot-springs/goat-rock.jpg",
+        "srcWebp": "/images/last-adventure/hot-springs/goat-rock.webp",
+        "alt": "A small viewing area overlooking the rolling Ouachita hills",
+        "credit": "NPS Photo/Mitch Smith",
+        "sourceUrl": "https://www.nps.gov/hosp/planyourvisit/hot-springs-and-north-mountain-trails.htm"
+      },
       "description": "The Goat Rock Trail leaves the overlook on North Mountain and winds through forest past novaculite stones and open, flowery glades with views of Indian Mountain and east Hot Springs. Then it passes beneath huge boulders and a stairway climbs to Goat Rock Overlook, perched above the valley with the Ouachita Mountains spread out beyond. It feels far from town, a quiet place to sit on the stone, look across the hills and say what you came to say.",
       "plan": {
         "distance": "1.1 mi one way",

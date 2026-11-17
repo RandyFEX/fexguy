@@ -180,7 +180,13 @@
       "id": "ryan-mountain",
       "name": "Ryan Mountain",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/joshua-tree/ryan-mountain.jpg",
+        "srcWebp": "/images/last-adventure/joshua-tree/ryan-mountain.webp",
+        "alt": "A person hiking a dirt trail on a mountain with mountains in the distance",
+        "credit": "NPS / Alison Taggart-Barone",
+        "sourceUrl": "https://www.nps.gov/thingstodo/hike-ryan-mountain.htm"
+      },
       "description": "The trail starts out level, then climbs steadily up stone steps toward the sky. At the summit of Ryan Mountain, sweeping panoramic views open across the heart of the park in every direction. It is one of the most popular hikes in the park, and the effort is part of the tribute. Rest together at the top, catch your breath and take in a view your loved one would have savored.",
       "plan": {
         "distance": "3 mi round trip",

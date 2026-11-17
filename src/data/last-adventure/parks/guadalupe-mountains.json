@@ -40,7 +40,13 @@
       "id": "pinery-trail",
       "name": "The Pinery",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/pinery-trail.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/pinery-trail.webp",
+        "alt": "Two people walk a paved path through a bright desert landscape",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/thingstodo/gumo_pinery_trail.htm"
+      },
       "description": "A short paved path leads from the visitor center through the desert to the stone walls of the Pinery, a Butterfield Overland Mail station built in 1858 and the highest on the whole 2,800-mile route. Travelers once rested here after long, jolting days on the stagecoach, with the Guadalupe Mountains looming above. It is an easy walk for everyone, wheelchairs included, and a quiet place to talk about the journeys your loved one made and the stories they liked to tell.",
       "plan": {
         "distance": "0.75 mi round trip",
@@ -77,7 +83,13 @@
       "id": "smith-spring",
       "name": "Smith Spring",
       "kinds": ["accessible"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/smith-spring.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/smith-spring.webp",
+        "alt": "Water cascades down rocks in a forested setting",
+        "credit": "NPS/Bieri",
+        "sourceUrl": "https://www.nps.gov/thingstodo/gumo_hike_smith_springs_trail.htm"
+      },
       "description": "Water is precious in the desert, and Smith Spring feels like a secret the mountains kept. The loop starts at the historic Frijole Ranch, follows a paved path to sunny Manzanita Spring, then climbs with wide views of the foothills to a shady oasis where a tiny waterfall gurgles against the mountainside. Watch for birds, mule deer and elk along the way. Sit in the shade together, listen to the water and share a favorite memory before walking the loop home.",
       "plan": {
         "distance": "2.3 mi round-trip loop",
@@ -111,7 +123,13 @@
       "id": "pratt-cabin",
       "name": "McKittrick Canyon and Pratt Cabin",
       "kinds": ["extraordinary"],
-      "photo": null,
+      "photo": {
+        "src": "/images/last-adventure/guadalupe-mountains/pratt-cabin.jpg",
+        "srcWebp": "/images/last-adventure/guadalupe-mountains/pratt-cabin.webp",
+        "alt": "A cabin with stone walls and roof surrounded by desert mountain landscape and plants",
+        "credit": "NPS Photo",
+        "sourceUrl": "https://www.nps.gov/places/gumo_pratt_cabin.htm"
+      },
       "description": "McKittrick Canyon is the heart of the park, and the shortest way into it ends at a stone cabin where two creeks meet. Geologist Wallace Pratt built it as a summer home in the early 1930s and later gave the land that helped create the park. The walk crosses the stream twice before you reach the porch and the picnic tables in its shade. Unpack lunch, rest together and imagine the summers a family once spent here, far from the heat of the city.",
       "plan": {
         "distance": "4.8 mi round trip",
