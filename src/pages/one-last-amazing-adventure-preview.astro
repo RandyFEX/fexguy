@@ -364,6 +364,7 @@ const difficultyRange = (text: string): [number, number] | null => {
                     </section>
                   </div>
 
+                  <p class="ola-back"><a href="#ola-browse" data-ola-back>↑ Back to State Navigation</a></p>
                 </article>
               ))}
             </div>
@@ -439,6 +440,17 @@ const difficultyRange = (text: string): [number, number] | null => {
     });
     render();
   }
+  // Back to State Navigation: the plain #ola-browse link works without
+  // JavaScript; with it, scroll smoothly unless reduced motion is preferred.
+  document.querySelectorAll<HTMLAnchorElement>('[data-ola-back]').forEach((a) =>
+    a.addEventListener('click', (e) => {
+      const nav = document.getElementById('ola-browse');
+      if (!nav) return;
+      e.preventDefault();
+      nav.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+      history.replaceState(null, '', '#ola-browse');
+    }),
+  );
 </script>
 
 <style>
@@ -1128,6 +1140,32 @@ const difficultyRange = (text: string): [number, number] | null => {
   }
   .ola-status__line {
     display: block;
+  }
+
+  /* Back to State Navigation (between destinations) */
+  .ola-back {
+    margin: var(--space-6) 0 0;
+    text-align: center;
+  }
+  .ola-back a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    padding: 0.4rem 1.25rem;
+    border-radius: 999px;
+    background: #173f35;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .ola-back a:hover {
+    background: #0e2d26;
+    color: #fff;
+  }
+  .ola-back a:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
   }
 
   /* Directions */
