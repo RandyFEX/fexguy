@@ -20,9 +20,9 @@
     { "label": "Hiking and trail information", "url": "https://www.nps.gov/thro/planyourvisit/hiking-and-trail-information.htm" }
   ],
   "scatterAllowed": "Unconfirmed",
-  "scatterSummary": "The park does not publish a rule on scattering ashes. Contact the park before you plan any scattering.",
+  "scatterSummary": "Scattering ashes requires a permit under federal regulation 36 CFR 2.62(b) unless the park confirms an authorized designated area; the park's Superintendent's Compendium sets no scattering exception. The park does not publish whether it issues scattering permits, so contact the park before you plan.",
   "scatterFacts": [
-    "The Superintendent's Compendium does not address the scattering of human ashes (36 CFR 2.62), and no park page on scattering was found.",
+    "36 CFR 2.62(b) prohibits scattering human ashes from cremation except under the terms of a permit or in areas a park designates. The park's Superintendent's Compendium sets no scattering exception or designated area.",
     "The compendium directs permit questions and applications to the Chief Ranger, Theodore Roosevelt National Park, PO Box 7, Medora, ND 58645-0007. Park phone: 701-623-4466.",
     "Ceremonies and similar events require a permit from the superintendent under the compendium's list of permitted activities (36 CFR 2.50).",
     "Do not assume scattering is allowed until the park confirms it in writing."
@@ -49,9 +49,9 @@
         "distance": "Sidewalk along the rim behind the visitor center; distance not published",
         "difficulty": "Easy",
         "accessibility": "Sidewalk along the rim (NPS); detailed accessibility not published",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "Interstate 94 exit 32, 7 miles east of Medora, to the Painted Canyon Visitor Center and rest area.",
         "points": [
@@ -80,9 +80,9 @@
         "time": "15 minutes",
         "accessibility": "Wheelchair accessible (NPS); nature trail with a slight grade",
         "bestTime": "Sunset",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "Enter the South Unit at Medora (I-94 exits 24 or 27) and follow the Scenic Loop Drive to the Boicourt Overlook parking area.",
         "points": [{ "label": "Parking", "lat": 46.95937, "lon": -103.40184 }]
@@ -112,9 +112,9 @@
         "time": "20 minutes",
         "accessibility": "Unpaved nature trail that climbs; wheelchair access not published",
         "bestTime": "Sunset",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "Enter the South Unit at Medora (I-94 exits 24 or 27) and follow the Scenic Loop Drive to the Wind Canyon parking area.",
         "points": [{ "label": "Parking", "lat": 46.98881, "lon": -103.48533 }]
@@ -146,9 +146,9 @@
         "difficulty": "Easy",
         "time": "About 1 hour to Sperati Point",
         "accessibility": "Overlook sidewalk wheelchair accessible (NPS); Sperati Point trail is a narrow path over gentle terrain",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "U.S. Highway 85 to the North Unit entrance, then the 14-mile Scenic Drive to Oxbow Overlook at the road's end (about 28 miles round trip; mostly paved with one gravel stretch).",
         "points": [{ "label": "Oxbow Overlook parking", "lat": 47.60345, "lon": -103.44203 }]

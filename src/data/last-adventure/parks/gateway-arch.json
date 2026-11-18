@@ -24,9 +24,9 @@
     }
   ],
   "scatterAllowed": "Unconfirmed",
-  "scatterSummary": "The park does not publish a rule on scattering ashes; contact the park before you plan anything.",
+  "scatterSummary": "Scattering ashes requires a permit under federal regulation 36 CFR 2.62(b) unless the park confirms an authorized designated area; the park's 2026 Superintendent's Compendium sets no scattering exception. The park does not publish whether it issues scattering permits, so contact the park before you plan.",
   "scatterFacts": [
-    "The park's 2026 Superintendent's Compendium and permits page do not address scattering ashes.",
+    "36 CFR 2.62(b) prohibits scattering human ashes from cremation except under the terms of a permit or in areas a park designates. The park's 2026 Superintendent's Compendium sets no scattering exception or designated area, and its permits page does not address scattering.",
     "Do not assume scattering is allowed. Ask the park before your visit: (314) 655-1600, 11 North Fourth Street, St. Louis, MO 63102.",
     "Bags and containers must pass through security screening (X-ray) to enter the Gateway Arch Visitor Center."
   ],
@@ -66,9 +66,9 @@
         "time": "45 to 60 minutes, with about 7 to 9 minutes at the top",
         "elevation": "630 ft",
         "accessibility": "Not wheelchair accessible: at least 96 steps in six flights, no wheelchairs, scooters or strollers on the observation deck, and you may stand 30 to 60 minutes. No seating or restrooms at the top (NPS)",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "Downtown St. Louis. Park at Stadium East Garage (200 S Broadway, preferred parking) and enter the Gateway Arch Visitor Center through the west entrance facing Fourth Street and the Old Courthouse. Tickets ($13 to $19) at gatewayarch.com; the ride often sells out, so buy in advance.",
         "points": [
@@ -128,9 +128,9 @@
         "difficulty": "Easy",
         "accessibility": "The paved paths across the grounds are fully accessible, with a ramp from street level (NPS)",
         "bestTime": "Grounds open 5 am to 11 pm every day",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "Downtown St. Louis. Park at Stadium East Garage (200 S Broadway). Pickup and drop-off: Memorial Drive near the Old Cathedral parking lot, or Market Street between Luther Ely Smith Square and Gateway Tower.",
         "points": [
@@ -185,9 +185,9 @@
         "time": "About 1 hour",
         "accessibility": "Ramps on the east and west sides; an elevator makes the second floor wheelchair accessible (NPS)",
         "bestTime": "Open 9 am to 5 pm daily; closed Thanksgiving, Christmas and New Year's Day. No entrance fee",
-        "scattering": "Rules not published. Check with the park."
+        "scattering": "Permit required under 36 CFR 2.62(b); ask the park"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "park-decision",
       "drive": {
         "route": "11 N 4th St., St. Louis, across from the Gateway Arch Visitor Center. Park at Stadium East Garage (200 S Broadway).",
         "points": [

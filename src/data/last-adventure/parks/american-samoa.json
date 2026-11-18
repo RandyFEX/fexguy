@@ -19,21 +19,21 @@
     { "label": "Official park maps", "url": "https://www.nps.gov/npsa/planyourvisit/maps.htm" },
     { "label": "Trails", "url": "https://www.nps.gov/npsa/planyourvisit/trails.htm" }
   ],
-  "scatterAllowed": "Unconfirmed",
-  "scatterSummary": "The park's rules on scattering conflict in practice, so contact the park and the landowning village before making any plans.",
+  "scatterAllowed": "Permitted without a permit",
+  "scatterSummary": "Scattering is allowed without a permit: under the Superintendent's Compendium (July 7, 2026), the ashes must be cremated and pulverized, scattered on the ground at least 100 yards from any trail, road, developed facility or body of water, or from the air at least 2,000 feet above the ground.",
   "scatterFacts": [
-    "The Superintendent's Compendium (July 7, 2026) allows scattering without a permit only when the remains are cremated and pulverized and scattered at least 100 yards from any trail, road, developed facility or body of water (or from the air at least 2,000 feet up).",
-    "The same compendium requires visitors to remain on established trails because off-trail terrain is extremely steep and dangerous. It does not explain how both rules apply together, so no place in the park can be confirmed as suitable.",
+    "Superintendent's Compendium (July 7, 2026), 36 CFR 2.62(b): scattering without a permit is allowed when the remains are cremated and pulverized and scattered at least 100 yards from any trail, road, developed facility or body of water, or from the air at a minimum altitude of 2,000 feet above the ground.",
+    "The same compendium requires visitors to remain on established trails, because off-trail terrain is extremely steep and dangerous.",
     "Park roads and trails cross village land leased from Samoan families; the park asks visitors to respect landowners and to ask permission before activities on village land.",
-    "No designated scattering locations are published. Contact the park before planning any ceremony: 684-633-7082."
+    "No designated scattering locations are published. Park phone: 684-633-7082."
   ],
   "scatterLink": [
-    { "label": "Superintendent's Compendium, 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/npsa/learn/management/lawsandpolicies.htm" },
+    { "label": "Superintendent's Compendium (July 7, 2026), 36 CFR 2.62 (NPS)", "url": "https://www.nps.gov/npsa/learn/management/lawsandpolicies.htm" },
     { "label": "Contact the park (NPS)", "url": "https://www.nps.gov/npsa/contacts.htm" }
   ],
   "planNote": {
     "heading": "Plan the Farewell With the Park First",
-    "text": "No scattering location in the National Park of American Samoa can be confirmed from the park's published rules, and the land belongs to Samoan families and villages. If you bring your loved one's cremated remains, keep them in a secure container, contact the park before your trip, ask the village's permission for any ceremony, and take the remains with you unless the park and the landowners agree to something else."
+    "text": "Scattering is allowed without a permit under the conditions in the park's Superintendent's Compendium, but the land belongs to Samoan families and villages. If you bring your loved one's cremated remains, keep them in a secure container, contact the park before your trip and ask the village's permission for any ceremony."
   },
   "beforeYouGo": "Fly to Pago Pago International Airport on Tutuila; Samoa Airways flies to Taʻū on Mondays, Wednesdays and Fridays and to Ofu on Tuesdays and Thursdays, and flights can be delayed or cancelled. There are no entrance fees, and park roads and trails are open around the clock, but the visitor center in Pago Pago is open only weekdays from 8 am to 3 pm. The Old Vatia and Tuafanua trails close on Sundays, a day of rest in Samoan villages. The park recommends the drier months from May to October. Dress modestly and ask village permission before using a beach or taking photographs.",
   "destinations": [
@@ -54,9 +54,10 @@
         "difficulty": "Easy",
         "accessibility": "Short and relatively flat (NPS); the shore is rough and rocky",
         "bestTime": "Morning, for cooler temperatures and the best light",
-        "scattering": "Unconfirmed: contact the park first"
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "not-here",
+      "scatterNote": { "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, so not on this trail or at the shore. The remains must be cremated and pulverized." },
       "drive": {
         "route": "Drive to Vatia village on Tutuila's north coast. Past the last house in the village, continue along a rough road to the trailhead markers and exhibits.",
         "points": [{ "label": "Trailhead", "lat": -14.24495, "lon": -170.67267 }]
@@ -90,7 +91,7 @@
         "bestTime": "Morning, to avoid intense sun and heat",
         "scattering": "Not here: an archaeological site (see below)"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "not-here",
       "drive": {
         "route": "On Tutuila's north coast, the trailhead and a small parking area are on the coast road (Route 006) near Vatia, above the Vaiʻava Strait.",
         "points": [{ "label": "Trailhead parking", "lat": -14.24849, "lon": -170.66166 }]
@@ -102,7 +103,7 @@
       },
       "final": [{ "label": "Overlook", "lat": -14.24619, "lon": -170.66121 }],
       "scatterNote": {
-        "text": "This is an ancient Samoan archaeological site. Do not scatter ashes here. The park publishes no confirmed scattering location; contact the park before making any plans."
+        "text": "This is an ancient Samoan archaeological site. Do not scatter ashes here. Elsewhere, scattering is allowed without a permit at least 100 yards from any trail, road, developed facility or body of water; contact the park before making any plans."
       },
       "links": [{ "label": "Lower Sauma Ridge Trail", "url": "https://www.nps.gov/thingstodo/lower-sauma-ridge-trail.htm" }]
     },
@@ -124,9 +125,10 @@
         "time": "Full day",
         "accessibility": "Long and steep; trails can be muddy and slippery after rain",
         "bestTime": "Sunrise views; the drier months from May to October",
-        "scattering": "Unconfirmed: contact the park first"
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "not-here",
+      "scatterNote": { "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, so not on the trail itself. The remains must be cremated and pulverized." },
       "drive": {
         "route": "The trail starts where Route 005 crosses the ridge above Fagasa (trailhead location from OpenStreetMap; confirm at the visitor center in Pago Pago). The Mount ʻAlava Road is closed to public vehicles and bicycles.",
         "points": [{ "label": "Trailhead", "lat": -14.28374, "lon": -170.71309 }]
@@ -165,9 +167,10 @@
         "difficulty": "Easy",
         "accessibility": "Sandy beach; no medical care on the island, and emergency response may take days",
         "bestTime": "The drier months from May to October",
-        "scattering": "Unconfirmed: contact the park first"
+        "scattering": "Not at this spot; no permit needed away from it (see below)"
       },
-      "scatterStatus": "unconfirmed",
+      "scatterStatus": "not-here",
+      "scatterNote": { "text": "No permit is needed, but scatter on the ground at least 100 yards from any trail, road, developed facility or body of water, so not on the beach or in the water. The remains must be cremated and pulverized." },
       "drive": {
         "route": "No road connects Ofu to Tutuila. Fly from Pago Pago to Ofu with Samoa Airways (Tuesdays and Thursdays), then walk or arrange local transportation; there is no public transportation. Vaoto Lodge, outside the park, is the only lodging on the island.",
         "points": [{ "label": "Ofu Airport", "lat": -14.18451, "lon": -169.66907 }]
