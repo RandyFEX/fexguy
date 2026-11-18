@@ -231,6 +231,7 @@ const difficultyRange = (text: string): [number, number] | null => {
 
               {p.destinations.map((d) => (
                 <article class="ola-dest" id={`${p.id}-${d.id}`} aria-labelledby={`${p.id}-${d.id}-title`}>
+                  <p class="ola-back"><a href="#ola-browse" data-ola-back><span class="ola-back__arrow" aria-hidden="true">↑</span>Back to State Navigation<span class="ola-back__arrow" aria-hidden="true">↑</span></a></p>
                   <header class="ola-dest__band">
                     <p class="ola-dest__park">{p.name}</p>
                     <h3 id={`${p.id}-${d.id}-title`} class="ola-dest__name">{d.name}</h3>
@@ -364,7 +365,6 @@ const difficultyRange = (text: string): [number, number] | null => {
                     </section>
                   </div>
 
-                  <p class="ola-back"><a href="#ola-browse" data-ola-back>↑ Back to State Navigation</a></p>
                 </article>
               ))}
             </div>
@@ -1143,25 +1143,34 @@ const difficultyRange = (text: string): [number, number] | null => {
   }
 
   /* Back to State Navigation (between destinations) */
+  /* Site gold (--home-gold, #b68a35) with black text; at the top of each
+     destination, after the separator and above its green header. */
   .ola-back {
-    margin: var(--space-6) 0 0;
+    margin: 0 0 var(--space-4);
     text-align: center;
   }
   .ola-back a {
     display: inline-flex;
     align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
     min-height: var(--tap-target);
     padding: 0.4rem 1.25rem;
     border-radius: 999px;
-    background: #173f35;
-    color: #fff;
+    background: #b68a35;
+    color: #000;
     font-size: 0.9375rem;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
+  }
+  .ola-back__arrow {
+    font-weight: 700;
+    color: #000;
   }
   .ola-back a:hover {
-    background: #0e2d26;
-    color: #fff;
+    filter: brightness(0.92);
+    color: #000;
   }
   .ola-back a:focus-visible {
     outline: 3px solid var(--color-focus);
