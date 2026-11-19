@@ -100,10 +100,11 @@ function init(root: HTMLElement) {
           <p class="imp__headline">${topName} costs <strong>${fmtMoney(im.monthly)} more a month</strong> than ${benchName} for about the same coverage.</p>
           <dl class="imp__totals"><div><dt>Per year</dt><dd>${fmtMoney(im.annual, false)}</dd></div><div><dt>5 years</dt><dd>${fmtMoney(im.totals[5], false)}</dd></div><div><dt>10 years</dt><dd>${fmtMoney(im.totals[10], false)}</dd></div><div><dt>20 years</dt><dd>${fmtMoney(im.totals[20], false)}</dd></div></dl>
           <div class="imp__food">
-            <p class="imp__food-lead">Over ${im.years} years, that difference could buy about <strong>${fmtWhole(im.meals)} meals</strong>.</p>
-            <p class="imp__food-big"><span>${fmtWhole(im.calories)}</span> calories of food</p>
-            <p class="imp__food-days">That's about <strong>${fmtWhole(im.foodDays)} days of food</strong> for one person.</p>
-            <p class="imp__muted">Based on ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories per meal, and ${fmtWhole(s.food.caloriesPerDay)} calories a day. Change these under "Change the comparison".</p>
+            <p class="imp__food-big"><span>${fmtWhole(im.foodDays)} days</span> of food for one person</p>
+            ${im.foodDays >= 60 ? `<p class="imp__food-days">That's about <strong>${fmtWhole(Math.round(im.foodDays / (365 / 12)))} months</strong> of meals.</p>` : ''}
+            <p class="imp__food-lead">About <strong>${fmtWhole(im.calories)} calories</strong> in all (${fmtWhole(im.meals)} meals).</p>
+            <p class="imp__food-lead">Paid for by the ${fmtMoney(im.monthly)} monthly difference over ${im.years} years, ${fmtMoney(im.period, false)} in all.</p>
+            <p class="imp__muted">This shows what the same money could buy, not what anyone actually eats. Based on ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories per meal, and ${fmtWhole(s.food.caloriesPerDay)} calories a day. Change these under "Change the comparison".</p>
           </div>
           ${share}
           <p class="imp__note">The difference is a real saving only if you qualify for ${benchName}, which asks health questions.</p>

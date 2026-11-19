@@ -45,8 +45,10 @@ expenses. Here's the thing: all life insurance is state regulated. That's not
 a program. That's just how insurance works.
 [Close-up: name, address, phone 'Required for Prequalification']
 It asks for your name, address, phone, age, and your spouse's name and age.
-A postcard can't prequalify you for anything. That's the information an agent
-needs to call you or knock on your door.
+Mailing this card back doesn't get you approved for any policy. Approval for
+a specific policy only comes from a real application with an insurance
+company. What the card does is give an agent what they need to call you or
+knock on your door.
 Before you mail one back, watch the next video. I'll show you what
 regulators found when they looked at cards like this."
 [End card: FuneralFunds.com, the investigation link]
@@ -82,8 +84,10 @@ Life insurance paid to your beneficiary because of a death generally isn't
 taxable income, in every state. That's not a special state benefit.
 [Randy on camera]
 What matters is which kind of policy you end up with. Some policies pay the
-full amount from the first day. Guaranteed acceptance policies don't ask
-health questions, and they have a two-year waiting period for natural death.
+full amount from the first day. The guaranteed acceptance plans I compared,
+Gerber Life Guaranteed Life and Colonial Penn Guaranteed Acceptance, don't
+ask health questions, and both have a two-year waiting period for natural
+death.
 [Graphic: Gerber Guaranteed Life, 65-year-old woman, $10,000, Texas rates]
 Take a 65-year-old woman with $10,000 of Gerber Guaranteed Life. Her premium
 is $62.61 a month. If she dies of natural causes at month 18, her family gets
@@ -92,26 +96,23 @@ $10,000.
 If you're healthy enough to qualify for first-day coverage, that waiting
 period is a cost you don't have to carry."
 
-### Episode 4: The Real Cost (about 90 s, demonstrates the calculator)
+### Episode 4: The Real Cost (about 75 s, demonstrates the calculator)
 
-[Screen recording of the calculator's default comparison]
+[Screen recording of the calculator's default comparison. On screen, not
+spoken: the four bars (Colonial Penn Guaranteed Acceptance, 8 units, $10,064,
+$79.60; Gerber Guaranteed Life $62.61; Aetna Accendo Preferred $47.60; Mutual
+of Omaha Living Promise Level $41.01), the matched comparison ($41.25 at
+$10,064), the totals ($38.35 a month, $460.20 a year, $4,602 over 10 years,
+$9,204 over 20) and the food reveal (about 153 days, about 5 months, about
+306,953 calories, 460 meals).]
 "Here's the calculator I built. No personal information. It opens with an
-example: a 65-year-old woman, no tobacco, about $10,000 of coverage, Texas
-rates.
-[Highlight the four bars]
-Colonial Penn Guaranteed Acceptance: 8 units, $10,064 of coverage, $79.60 a
-month.
-Gerber Life Guaranteed Life: $62.61 for $10,000.
-Aetna Accendo Preferred: $47.60.
-Mutual of Omaha Living Promise Level: $41.01.
-[Highlight the reveal]
-At the same $10,064 of coverage, Mutual of Omaha is $41.25. That's $38.35 a
-month less than Colonial Penn. $460.20 a year. $4,602 over 10 years. $9,204
-over 20.
+example: a 65-year-old woman, no tobacco, about $10,000 of coverage.
+[Highlight the Colonial Penn and Mutual of Omaha bars]
+For about the same coverage, Colonial Penn costs her about $38 a month more
+than Mutual of Omaha. Over 10 years, that's about $4,600.
 [Highlight the food reveal]
-Now picture that money as groceries. At $10 a meal, $460 a year is 46 meals.
-Over 10 years, about 460 meals. That's about 306,953 calories, or about 153
-days of food for one person.
+Picture that money as groceries. It's about 153 days of food for one person,
+about five months.
 [Randy on camera]
 That's only a saving if you qualify for the lower plan. Mutual of Omaha asks
 health questions. Colonial Penn doesn't. But the vast majority of the people
