@@ -26,6 +26,8 @@
     "test:rates:live": "node tests/rates/live-preview.mjs",
     "test:quote": "node --test 'tests/quote/*.test.js'",
     "quote:evidence": "node scripts/quote-evidence.mjs",
+    "seo:google-docs": "node scripts/google-seo-docs.mjs",
+    "test:seo-docs": "node --test 'tests/seo-docs/*.test.js'",
     "test:quote:browser": "node tests/quote/funnel.browser.mjs && node tests/quote/funnel-direct.browser.mjs && node tests/quote/sidebar-entry.browser.mjs && node tests/quote/countdown.browser.mjs && node tests/quote/cta-fit.browser.mjs && node tests/quote/preview-links.browser.mjs"
   },
   "dependencies": {

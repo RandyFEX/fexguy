@@ -1,0 +1,108 @@
+{
+  "_about": "Configuration for the live Google SEO documentation system (scripts/google-seo-docs.mjs). Only official Google hosts are allowed; every URL must match its host's scope patterns. Discovery starts at the seeds and follows links (documentation navigation, in-article and related links) within maxDepth and maxPages. See docs/seo/README.md.",
+  "userAgent": "FuneralFunds-SEO-Docs/1.0 (+https://funeralfunds.com/; Google documentation retrieval for site SEO review)",
+  "limits": {
+    "maxPages": 1000,
+    "maxDepth": 3,
+    "concurrency": 3,
+    "delayMs": 250,
+    "timeoutSeconds": 30,
+    "maxRedirects": 5,
+    "maxBytes": 6000000,
+    "minWords": 30,
+    "cacheMaxAgeHours": 24
+  },
+  "hosts": {
+    "developers.google.com": {
+      "role": "primary",
+      "include": [
+        "^/search/docs(/[a-z0-9._-]+)*/?$",
+        "^/search/updates/?$",
+        "^/search/blog/?$",
+        "^/search/blog/20(2[5-9]|[3-9][0-9])/[0-9]{2}/[a-z0-9-]+/?$",
+        "^/search/help(/[a-z0-9-]+)*/?$",
+        "^/crawling/docs(/[a-z0-9._-]+)*/?$"
+      ],
+      "exclude": [
+        "^/search/docs/(.*/)?(release-notes|index)$",
+        "^/search/docs/appearance/structured-data/search-gallery-old"
+      ],
+      "hubs": ["^/search/blog/?$", "^/search/updates/?$"]
+    },
+    "support.google.com": {
+      "role": "primary",
+      "include": ["^/webmasters/answer/[0-9]+$"],
+      "exclude": [],
+      "delayMs": 1500,
+      "query": { "hl": "en" }
+    },
+    "web.dev": {
+      "role": "performance",
+      "include": [
+        "^/articles/[a-z0-9-]*(vitals|lcp|inp|cls|fcp|ttfb|layout-shift|interaction|contentful|cwv|lazy|responsive|image|font|render|preload|fetch-priority|bfcache|mobile|lab-and-field)[a-z0-9-]*$",
+        "^/blog/[a-z0-9-]*(vitals|lcp|inp|cls|fcp|ttfb|layout-shift|interaction|contentful|cwv|lazy|responsive|image|font|render|preload|fetch-priority|bfcache|mobile)[a-z0-9-]*$",
+        "^/explore/learn-core-web-vitals/?$"
+      ],
+      "exclude": [],
+      "hubs": ["^/(articles|explore)/learn-core-web-vitals/?$"]
+    },
+    "developer.chrome.com": {
+      "role": "performance",
+      "include": [
+        "^/docs/crux(/[a-z0-9-]+)*/?$",
+        "^/docs/lighthouse/performance/[a-z0-9-]+/?$",
+        "^/docs/lighthouse/seo/[a-z0-9-]+/?$"
+      ],
+      "exclude": []
+    },
+    "status.search.google.com": {
+      "role": "updates",
+      "include": ["^/incidents\\.json$", "^/products/rGHU1u87FJnkP6W2GwMi/history$"],
+      "exclude": [],
+      "hubs": ["^/products/rGHU1u87FJnkP6W2GwMi/history$"]
+    }
+  },
+  "seeds": [
+    "https://developers.google.com/search/docs",
+    "https://developers.google.com/search/docs/essentials",
+    "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://developers.google.com/search/docs/appearance/core-web-vitals",
+    "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+    "https://developers.google.com/search/updates",
+    "https://developers.google.com/search/blog/",
+    "https://web.dev/articles/vitals",
+    "https://developer.chrome.com/docs/crux",
+    "https://status.search.google.com/incidents.json",
+    "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history"
+  ],
+  "topics": {
+    "search-essentials": ["/search/docs/essentials", "/search/docs/fundamentals"],
+    "crawling-indexing": ["/search/docs/crawling-indexing", "/crawling/docs"],
+    "robots-and-indexing-directives": ["/robots/", "robots-txt", "robots-meta-tag", "block-indexing", "/crawling-indexing/robots"],
+    "sitemaps": ["/sitemaps/"],
+    "canonicals-and-duplicates": ["canonical", "consolidate-duplicate-urls"],
+    "redirects": ["301-redirects", "redirect", "site-move"],
+    "internal-linking-and-anchor-text": ["links-crawlable", "/links"],
+    "site-architecture": ["url-structure", "site-names", "/crawling-indexing/url-structure", "breadcrumb", "sitelinks"],
+    "javascript-seo": ["/javascript/"],
+    "mobile-first-indexing": ["/mobile/", "mobile-first"],
+    "image-seo": ["/appearance/google-images", "image-license", "/crawling-indexing/images"],
+    "core-web-vitals": ["core-web-vitals", "page-experience", "web.dev/", "developer.chrome.com/docs/crux", "/lighthouse/performance/"],
+    "structured-data": ["/structured-data/"],
+    "semantic-html": ["/appearance/title-link", "/appearance/snippet", "/appearance/visual-elements", "/crawling-indexing/special-tags", "seo-starter-guide", "/lighthouse/seo/"],
+    "search-appearance": ["/search/docs/appearance"],
+    "ai-overviews-and-ai-mode": ["ai-features", "/ai-", "generative-ai", "ai-mode", "ai-overview"],
+    "search-updates": ["/search/updates", "/search/blog", "status.search.google.com", "ranking-systems", "core-updates"]
+  },
+  "requiredTestTopics": {
+    "internal-linking-and-anchor-text": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "canonicals-and-duplicates": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "structured-data": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "core-web-vitals": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+    "mobile-first-indexing": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+    "ai-overviews-and-ai-mode": "https://developers.google.com/search/docs/appearance/ai-features"
+  }
+}

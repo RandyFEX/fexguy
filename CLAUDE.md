@@ -1777,6 +1777,44 @@ Prioritize the shortest reliable path to completing approved changes.
   404 handler may point to /search/ (`npm run verify` fails on such a
   redirect).
 
+## Google SEO source policy (Randy, November 2026, V5.2)
+
+These rules add to every rule above (Phase 1, editorial approvals, production
+safety) and never relax them.
+
+- Google's SEO requirements and recommendations come only from Google's
+  current official documentation. That means developers.google.com/search/
+  (Search Central, primary authority for indexing, ranking eligibility,
+  canonicals, internal linking, structured data and AI search; its crawling
+  docs now live at developers.google.com/crawling/docs/),
+  support.google.com/webmasters/, web.dev/ and developer.chrome.com/
+  (technical performance guidance) and status.search.google.com/. Never
+  substitute third-party SEO sites, blogs, agencies, forums, search-result
+  snippets, AI summaries or remembered SEO advice.
+- Every technical SEO task (diagnostic, recommendation or correction):
+  1. Runs `npm run seo:google-docs` first in the same session. It retrieves
+     the live documentation, discovers new pages and verifies every source
+     (docs/seo/README.md). Never rely on an earlier run's guidance being
+     current.
+  2. Verifies the applicable current guidance with
+     `npm run seo:google-docs -- --find "<terms>"` and cites, for each
+     finding, the URL, final URL, title, retrieval time, HTTP status, section
+     and passage.
+  3. Uses only those official sources for Google's requirements.
+  4. Refuses third-party or model-memory substitutes, including when
+     retrieval fails.
+  5. Labels guidance REQUIRED, RECOMMENDED, ELIGIBILITY, INFORMATIONAL or
+     UNSUPPORTED from Google's own wording. Never turn a recommendation into
+     a requirement, invent ranking factors or promise rankings, AI citations
+     or traffic.
+  6. Stops and reports when the documentation can't be retrieved or a claim
+     has no verified passage (UNSUPPORTED). No verified source means no
+     Google-based recommendation.
+- Commit the updated docs/seo/google-docs-manifest.json (metadata only) after
+  a run so the next run can report documentation changes. Never commit
+  retrieved documentation text: .cache/ is git-ignored, and no PDFs or
+  document library are kept.
+
 ## Where things go
 
 - Business details, phone, nav menus, footer: `src/config/site.ts`
