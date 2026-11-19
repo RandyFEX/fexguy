@@ -19,13 +19,14 @@ import { lead } from '@/config/lead';
     <section class="imp-page__demo" aria-labelledby="demo-title">
       <h2 id="demo-title">Preview: the compact version for carrier reviews</h2>
       <p>The same calculator, preset for a review. This example compares Gerber Life Guaranteed Life with Mutual of Omaha Living Promise Level.</p>
-      <ImpactCalculator variant="compact" headingLevel={3} title="What Gerber Guaranteed Life costs compared with a first-day plan" codes={['FF-201', 'FF-102']} benchmark="FF-102" years={10} />
+      <ImpactCalculator variant="compact" headingLevel={3} title="What Gerber Guaranteed Life costs compared with a first-day plan" codes={['FF-201', 'FF-102']} years={10} />
     </section>
   </div>
 </BaseLayout>
 
 <style>
-  .imp-page { padding-block: var(--space-6); max-width: 52rem; }
+  .imp-page { padding-block: var(--space-6); }
+  .imp-page > :is(p, h1) { max-width: var(--prose-max); }
   .imp-page__flag { font-size: 0.875rem; color: var(--color-text-muted); }
   .imp-page__lead { font-size: 1.125rem; }
   .imp-page__demo { margin-top: var(--space-12); border-top: 1px solid var(--color-border); padding-top: var(--space-6); }

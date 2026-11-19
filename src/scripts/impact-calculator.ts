@@ -1,18 +1,28 @@
-// Financial Impact Calculator (PREVIEW). Prices one profile through
-// POST /api/impact-calculator/ and renders the comparison; all other figures
-// are computed here from those premiums (src/lib/impact/calc.js).
-import { VERIFIED_PRODUCTS } from '@/lib/impact/products.js';
+// Financial Impact Calculator (PREVIEW, V5.8). Prices one profile through
+// POST /api/impact-calculator/; every other figure is computed here from
+// those premiums (src/lib/impact/calc.js). The lowest available premium is the
+// fixed baseline; the visitor selects exactly one other plan in the chart.
+import { VERIFIED_PRODUCTS, PERIODS } from '@/lib/impact/products.js';
 import { impact, benefitAt, fmtMoney, fmtWhole } from '@/lib/impact/calc.js';
 
 type Priced = { code: string; available: boolean; reason?: string; coverage?: number; premium?: number; units?: number; atColonialPennCoverage?: { coverage: number; premium: number } };
 type Profile = { age: number; gender: 'male' | 'female'; tobacco: boolean; coverage: number };
+type Row = { p: (typeof VERIFIED_PRODUCTS)[number]; q: Priced };
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string);
 const num = (v: FormDataEntryValue | null, fallback: number) => {
   const n = Number(String(v ?? '').replace(/[$,\s]/g, ''));
   return Number.isFinite(n) && n > 0 ? n : fallback;
 };
-const product = (code: string) => VERIFIED_PRODUCTS.find((p) => p.code === code)!;
+const product = (code: string) => VERIFIED_PRODUCTS.find((p) => p.code === code);
+const nameOf = (r: Row) => `${esc(r.p.carrier)} ${esc(r.p.plan)}`;
+
+/** Premiums compared at the same coverage (Colonial Penn's unit coverage when it's involved). */
+function matched(base: Row, alt: Row) {
+  if (alt.p.pricing === 'units' && base.q.atColonialPennCoverage) return { higher: alt.q.premium!, lower: base.q.atColonialPennCoverage.premium, coverage: alt.q.coverage! };
+  if (base.p.pricing === 'units' && alt.q.atColonialPennCoverage) return { higher: alt.q.atColonialPennCoverage.premium, lower: base.q.premium!, coverage: base.q.coverage! };
+  return { higher: alt.q.premium!, lower: base.q.premium!, coverage: alt.q.coverage! };
+}
 
 function init(root: HTMLElement) {
   const cfg = JSON.parse(root.dataset.config || '{}');
@@ -21,9 +31,26 @@ function init(root: HTMLElement) {
   const toggle = root.querySelector<HTMLButtonElement>('[data-imp-toggle]')!;
   const profileLine = root.querySelector<HTMLElement>('[data-imp-profile]')!;
   const phone = `<a href="${root.dataset.phoneHref}">${root.dataset.phoneDisplay}</a>`;
+  const altName = `${cfg.uid}-alt`;
+  const yearsName = `${cfg.uid}-years`;
+  const state = { alt: String(cfg.selected || ''), years: Number(cfg.years) || 10 };
   let lastKey = '';
-  let priced: Priced[] = [];
+  let rows: Row[] = [];
   let seq = 0;
+
+  results.innerHTML = `<div class="imp__main">
+      <fieldset class="imp__chart"><legend class="imp__legend">Monthly premiums. Choose one plan to compare with the lowest price.</legend><div data-imp-chart></div></fieldset>
+      <div class="imp__impact">
+        <fieldset class="imp__periods"><legend class="imp__legend">Compare over</legend>
+          ${PERIODS.map((y: number) => `<label class="imp__period"><input type="radio" name="${yearsName}" value="${y}"${y === state.years ? ' checked' : ''} /><span>${y} ${y === 1 ? 'year' : 'years'}</span></label>`).join('')}
+        </fieldset>
+        <div data-imp-out aria-live="polite"></div>
+      </div>
+    </div>
+    <div data-imp-benefits></div>`;
+  const chart = results.querySelector<HTMLElement>('[data-imp-chart]')!;
+  const out = results.querySelector<HTMLElement>('[data-imp-out]')!;
+  const benefits = results.querySelector<HTMLElement>('[data-imp-benefits]')!;
 
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
@@ -34,16 +61,15 @@ function init(root: HTMLElement) {
   const read = () => {
     const d = new FormData(form);
     const profile: Profile = { age: Number(d.get('age')), gender: d.get('gender') === 'male' ? 'male' : 'female', tobacco: d.get('tobacco') === 'yes', coverage: Number(d.get('coverage')) };
-    const codes = d.getAll('codes').map(String);
     return {
       profile,
-      codes: codes.length ? codes : cfg.codes,
-      benchmark: String(d.get('benchmark') || cfg.benchmark),
-      years: Number(d.get('years')) || cfg.years,
       income: num(d.get('income'), 0) || null,
       food: { mealCost: num(d.get('mealCost'), cfg.food.mealCost), caloriesPerMeal: num(d.get('caloriesPerMeal'), cfg.food.caloriesPerMeal), caloriesPerDay: num(d.get('caloriesPerDay'), cfg.food.caloriesPerDay) },
     };
   };
+
+  const available = () => rows.filter((r) => r.q.available);
+  const baseline = () => available().reduce<Row | null>((a, b) => (!a || b.q.premium! < a.q.premium! ? b : a), null);
 
   async function update() {
     const s = read();
@@ -58,79 +84,90 @@ function init(root: HTMLElement) {
         const body = await res.json().catch(() => ({}));
         if (mine !== seq) return;
         if (!res.ok || body.status !== 'ok') throw new Error(body.message || 'unavailable');
-        priced = body.products;
+        rows = (cfg.codes as string[]).map((c) => ({ p: product(c)!, q: (body.products as Priced[]).find((x) => x.code === c)! })).filter((r) => r.p && r.q);
         lastKey = key;
       } catch (e) {
         results.setAttribute('aria-busy', 'false');
-        results.innerHTML = `<p class="imp__error">${esc((e as Error).message === 'unavailable' ? 'Prices are not available right now.' : (e as Error).message)} To compare plans by phone, call ${phone}.</p>`;
+        rows = [];
+        chart.innerHTML = '';
+        benefits.innerHTML = '';
+        out.innerHTML = `<p class="imp__error">${esc((e as Error).message === 'unavailable' ? 'Prices are not available right now.' : (e as Error).message)} To compare plans by phone, call ${phone}.</p>`;
         return;
       }
+      renderChart();
     }
-    render(s);
-  }
-
-  function render(s: ReturnType<typeof read>) {
     results.setAttribute('aria-busy', 'false');
-    const rows = s.codes.map((c: string) => ({ p: product(c), q: priced.find((x) => x.code === c) })).filter((r: any) => r.p && r.q);
-    const avail = rows.filter((r: any) => r.q.available);
-    if (!avail.length) { results.innerHTML = `<p class="imp__error">None of the selected plans is available at this age.</p>`; return; }
-    const max = Math.max(...avail.map((r: any) => r.q.premium));
-    const bars = rows.map((r: any) => {
-      const label = `${esc(r.p.carrier)} ${esc(r.p.plan)}`;
-      if (!r.q.available) return `<li class="imp__bar imp__bar--na"><span class="imp__name">${label}</span><span class="imp__na">Not available: ${esc(r.q.reason || '')}</span></li>`;
-      const cov = r.p.pricing === 'units' ? `${r.q.units} units = ${fmtMoney(r.q.coverage, false)} of coverage` : `${fmtMoney(r.q.coverage, false)} of coverage`;
-      const bench = r.p.code === s.benchmark ? ' imp__bar--bench' : '';
-      return `<li class="imp__bar${bench}"><span class="imp__name">${label}</span><span class="imp__badge imp__badge--${r.p.type === 'Level' ? 'level' : 'wait'}">${esc(r.p.timing)}</span>
-        <span class="imp__track" aria-hidden="true"><span class="imp__fill" style="width:${Math.max(4, (r.q.premium / max) * 100).toFixed(1)}%"></span></span>
-        <span class="imp__price">${fmtMoney(r.q.premium)}<small>/month</small></span><span class="imp__cov">${cov}</span></li>`;
-    }).join('');
-
-    // The reveal: the highest-priced available plan against the chosen comparison plan.
-    const bench = avail.find((r: any) => r.p.code === s.benchmark) ?? avail.reduce((a: any, b: any) => (b.q.premium < a.q.premium ? b : a));
-    const top = avail.filter((r: any) => r !== bench).reduce((a: any, b: any) => (!a || b.q.premium > a.q.premium ? b : a), null);
-    let reveal = '';
-    if (top) {
-      const matched = top.p.pricing === 'units' && bench.q.atColonialPennCoverage ? bench.q.atColonialPennCoverage.premium : bench.q.premium;
-      const im = impact(top.q.premium, matched, { years: s.years, ...s.food, monthlyIncome: s.income });
-      const topName = `${esc(top.p.carrier)} ${esc(top.p.plan)}`;
-      const benchName = `${esc(bench.p.carrier)} ${esc(bench.p.plan)}`;
-      if (im.monthly > 0) {
-        const share = im.incomeShare !== null ? `<p class="imp__share">That's <strong>${(im.incomeShare * 100).toFixed(1)}%</strong> of a monthly income of ${fmtMoney(s.income!, false)}.</p>` : '';
-        reveal = `<div class="imp__reveal">
-          <p class="imp__headline">${topName} costs <strong>${fmtMoney(im.monthly)} more a month</strong> than ${benchName} for about the same coverage.</p>
-          <dl class="imp__totals"><div><dt>Per year</dt><dd>${fmtMoney(im.annual, false)}</dd></div><div><dt>5 years</dt><dd>${fmtMoney(im.totals[5], false)}</dd></div><div><dt>10 years</dt><dd>${fmtMoney(im.totals[10], false)}</dd></div><div><dt>20 years</dt><dd>${fmtMoney(im.totals[20], false)}</dd></div></dl>
-          <div class="imp__food">
-            <p class="imp__food-big"><span>${fmtWhole(im.foodDays)} days</span> of food for one person</p>
-            ${im.foodDays >= 60 ? `<p class="imp__food-days">That's about <strong>${fmtWhole(Math.round(im.foodDays / (365 / 12)))} months</strong> of meals.</p>` : ''}
-            <p class="imp__food-lead">About <strong>${fmtWhole(im.calories)} calories</strong> in all (${fmtWhole(im.meals)} meals).</p>
-            <p class="imp__food-lead">Paid for by the ${fmtMoney(im.monthly)} monthly difference over ${im.years} years, ${fmtMoney(im.period, false)} in all.</p>
-            <p class="imp__muted">This shows what the same money could buy, not what anyone actually eats. Based on ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories per meal, and ${fmtWhole(s.food.caloriesPerDay)} calories a day. Change these under "Change the comparison".</p>
-          </div>
-          ${share}
-          <p class="imp__note">The difference is a real saving only if you qualify for ${benchName}, which asks health questions.</p>
-        </div>`;
-      }
-    }
-
-    const months = [6, 18, 25];
-    const benefitRows = avail.map((r: any) => {
-      const cells = months.map((m) => {
-        const b = benefitAt(r.p, r.q.premium, r.q.coverage, m);
-        if (b.kind === 'face') return `<td>${fmtMoney(b.amount, false)}<span class="imp__muted"> full benefit</span></td>`;
-        if (b.kind === 'premiums-plus-10') return `<td>${fmtMoney(b.amount)}<span class="imp__muted"> premiums paid plus 10%</span></td>`;
-        return `<td>At least ${fmtMoney(b.amount)}<span class="imp__muted"> premiums paid plus an amount set by the policy</span></td>`;
-      }).join('');
-      return `<tr><th scope="row">${esc(r.p.carrier)} ${esc(r.p.plan)}</th>${cells}</tr>`;
-    }).join('');
-
-    results.innerHTML = `<ul class="imp__bars">${bars}</ul>${reveal}
-      <h3 class="imp__sub">If death from natural causes happens in…</h3>
-      <div class="imp__scroll" tabindex="0" role="region" aria-label="Benefit by month of death"><table class="imp__table"><thead><tr><th scope="col">Plan</th><th scope="col">Month 6</th><th scope="col">Month 18</th><th scope="col">Month 25 or later</th></tr></thead><tbody>${benefitRows}</tbody></table></div>
-      <p class="imp__muted">Accidental deaths can be treated differently; the policy sets the terms. Prices from each company's published rates, Texas, as of the latest rate update.</p>`;
+    renderImpact(s);
   }
 
-  let t: number | undefined;
-  form.addEventListener('input', () => { window.clearTimeout(t); t = window.setTimeout(update, 250); });
+  // The chart: baseline first (fixed), then the alternatives, each a radio.
+  function renderChart() {
+    const base = baseline();
+    const alts = available().filter((r) => r !== base).sort((a, b) => b.q.premium! - a.q.premium!);
+    if (!alts.some((r) => r.p.code === state.alt)) state.alt = alts.find((r) => r.p.code === cfg.selected)?.p.code ?? alts[0]?.p.code ?? '';
+    if (!base) { chart.innerHTML = `<p class="imp__error">None of these plans is available at this age.</p>`; return; }
+    const max = Math.max(...available().map((r) => r.q.premium!));
+    const body = (r: Row) => {
+      const cov = r.p.pricing === 'units' ? `${r.q.units} units = ${fmtMoney(r.q.coverage!, false)}` : `${fmtMoney(r.q.coverage!, false)} coverage`;
+      return `<span class="imp__name">${nameOf(r)}</span><span class="imp__price">${fmtMoney(r.q.premium!)}<small>/mo</small></span>
+        <span class="imp__track" aria-hidden="true"><span class="imp__fill" style="width:${Math.max(4, (r.q.premium! / max) * 100).toFixed(1)}%"></span></span>
+        <span class="imp__meta">${esc(r.p.timing)} · ${cov}</span>`;
+    };
+    const na = rows.filter((r) => !r.q.available).map((r) => `<li class="imp__bar imp__bar--na"><span class="imp__name">${nameOf(r)}</span><span class="imp__meta">Not available: ${esc(r.q.reason || '')}</span></li>`).join('');
+    chart.innerHTML = `<ul class="imp__bars">
+      <li class="imp__bar imp__bar--base"><span class="imp__tag">Lowest price shown</span>${body(base)}</li>
+      ${alts.map((r) => `<li><label class="imp__bar imp__bar--alt${r.p.code === state.alt ? ' is-selected' : ''}"><input type="radio" name="${altName}" value="${r.p.code}"${r.p.code === state.alt ? ' checked' : ''} /><span class="imp__radio" aria-hidden="true"></span>${body(r)}</label></li>`).join('')}
+      ${na}</ul>`;
+  }
+
+  function renderImpact(s: ReturnType<typeof read>) {
+    const base = baseline();
+    const alt = available().find((r) => r.p.code === state.alt);
+    chart.querySelectorAll('.imp__bar--alt').forEach((el) => el.classList.toggle('is-selected', !!el.querySelector('input:checked')));
+    if (!base || !alt) { out.innerHTML = base ? '<p class="imp__muted">Only one plan is available for this profile, so there is nothing to compare.</p>' : ''; benefits.innerHTML = ''; return; }
+    const m = matched(base, alt);
+    const im = impact(m.higher, m.lower, { years: state.years, ...s.food, monthlyIncome: s.income });
+    const period = `${im.years} ${im.years === 1 ? 'year' : 'years'}`;
+    if (im.monthly <= 0) {
+      out.innerHTML = `<p class="imp__headline">At about ${fmtMoney(m.coverage, false)} of coverage, ${nameOf(alt)} costs about the same as ${nameOf(base)}.</p>`;
+    } else {
+      const months = im.foodDays >= 60 ? ` <span class="imp__days-note">(about ${fmtWhole(Math.round(im.foodDays / (365 / 12)))} months)</span>` : '';
+      const share = im.incomeShare !== null ? `<p class="imp__share">The monthly difference is <strong>${(im.incomeShare * 100).toFixed(1)}%</strong> of a monthly income of ${fmtMoney(s.income!, false)}.</p>` : '';
+      out.innerHTML = `<p class="imp__intro">Over ${period}, choosing ${nameOf(alt)} instead of ${nameOf(base)} costs the same as about</p>
+        <p class="imp__days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> days of food for one person${months}</p>
+        <p class="imp__cal">About <strong>${fmtWhole(im.calories)} calories</strong> (${fmtWhole(im.meals)} meals)</p>
+        <dl class="imp__money">
+          <div class="imp__money-total"><dt>Difference over ${period}</dt><dd>${fmtMoney(im.period, false)}</dd></div>
+          <div><dt>Per year</dt><dd>${fmtMoney(im.annual)}</dd></div>
+          <div><dt>Per month</dt><dd>${fmtMoney(im.monthly)}</dd></div>
+        </dl>
+        ${share}
+        <p class="imp__muted">Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
+        <p class="imp__note">It's a saving only if you qualify for ${nameOf(base)}${base.p.type === 'Level' ? ', which asks health questions' : ''}.</p>`;
+    }
+
+    const cell = (r: Row, month: number) => {
+      const b = benefitAt(r.p, r.q.premium!, r.q.coverage!, month);
+      if (b.kind === 'face') return `<td>${fmtMoney(b.amount, false)}</td>`;
+      if (b.kind === 'premiums-plus-10') return `<td>${fmtMoney(b.amount, false)}<span class="imp__muted"> (premiums + 10%)</span></td>`;
+      return `<td>At least ${fmtMoney(b.amount, false)}<span class="imp__muted"> (premiums + an amount set by the policy)</span></td>`;
+    };
+    const tr = (r: Row) => `<tr><th scope="row">${nameOf(r)}</th>${[6, 18, 25].map((mo) => cell(r, mo)).join('')}</tr>`;
+    benefits.innerHTML = `<div class="imp__benefits">
+      <h3 class="imp__sub">What the family receives after a death from natural causes</h3>
+      <div class="imp__scroll" tabindex="0" role="region" aria-label="Benefit by month of death"><table class="imp__table"><thead><tr><th scope="col">Plan</th><th scope="col">Month 6</th><th scope="col">Month 18</th><th scope="col">Month 25+</th></tr></thead><tbody>${tr(base)}${tr(alt)}</tbody></table></div>
+      <p class="imp__muted">Accidental deaths can be treated differently; the policy sets the terms. Prices from each company's published rates, Texas, as of the latest rate update.</p></div>`;
+  }
+
+  results.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name === altName) state.alt = t.value;
+    else if (t.name === yearsName) state.years = Number(t.value);
+    else return;
+    renderImpact(read());
+  });
+  let timer: number | undefined;
+  form.addEventListener('input', () => { window.clearTimeout(timer); timer = window.setTimeout(update, 250); });
   form.addEventListener('submit', (e) => e.preventDefault());
   void update();
 }

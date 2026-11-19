@@ -115,7 +115,10 @@ export const CP_UNIT_PRICE = 9.95;
 export const CP_MAX_UNITS = 25;
 
 /** The calculator's default comparison (no visitor input needed). */
-export const DEFAULT_INPUT = { age: 65, gender: 'female', tobacco: false, coverage: 10000, codes: ['CP-GA', 'FF-201', 'FF-103', 'FF-102'] };
+export const DEFAULT_INPUT = { age: 65, gender: 'female', tobacco: false, coverage: 10000, codes: ['CP-GA', 'FF-201', 'FF-103', 'FF-102'], selected: 'CP-GA' };
+
+/** Comparison periods offered beside the results (years). */
+export const PERIODS = [1, 5, 10, 20];
 
 /** Default food assumptions (labeled assumptions, editable by the visitor). */
 export const FOOD_DEFAULTS = { mealCost: 10, caloriesPerMeal: 667, caloriesPerDay: 2000 };
