@@ -56,11 +56,14 @@
 .imp__intro { margin: 0 0 var(--space-2); font-weight: 600; }
 .imp__food { margin-top: var(--space-3); background: var(--color-primary); color: var(--color-on-primary); border-radius: var(--radius); padding: var(--space-4); border-top: 4px solid var(--home-gold, #b68a35); }
 .imp__food .imp__muted { color: #e8e4da; margin: var(--space-2) 0 0; }
-.imp__food-lead { margin: 0; }
-.imp__days { margin: 0; font-size: 1.125rem; font-weight: 700; }
-.imp__days-n { display: block; font-size: clamp(2.75rem, 2rem + 3vw, 3.75rem); font-weight: 800; line-height: 1; }
-.imp__days-note { font-weight: 400; }
-.imp__cal { font-size: 1.125rem; margin: var(--space-2) 0 0; }
+.imp__food-title { color: var(--color-on-primary); font-size: 1.125rem; margin: 0 0 var(--space-3); }
+.imp__days { margin: 0 0 var(--space-3); display: flex; align-items: center; gap: var(--space-3); }
+.imp__days-l { font-size: 1.125rem; font-weight: 700; line-height: 1.25; max-width: 9rem; }
+.imp__food-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); border-top: 1px solid rgb(255 255 255 / 0.25); padding-top: var(--space-3); }
+.imp__stat { margin: 0; display: grid; }
+.imp__stat-n { font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.25rem); font-weight: 800; line-height: 1.1; overflow-wrap: anywhere; }
+.imp__stat-l { font-size: 0.9375rem; font-weight: 600; }
+.imp__days-n { font-size: clamp(3rem, 2.2rem + 3.5vw, 4.5rem); font-weight: 800; line-height: 1; }
 .imp__money { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); margin: 0 0 var(--space-2); }
 .imp__money div { background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2) var(--space-3); }
 .imp__money-total { grid-column: 1 / -1; }
@@ -90,3 +93,9 @@
   .imp__main { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; }
 }
 .imp__form[hidden] { display: none; }
+/* The profile example sits under the plan list, smaller than the prices. */
+.imp__chart .imp__profile { font-size: 0.875rem; margin-top: var(--space-2); }
+/* Period buttons: clearly clickable; the active one is filled green. */
+.imp__period span { border: 2px solid var(--color-primary); color: var(--color-primary); }
+.imp__period span:hover { background: var(--color-surface); }
+.imp__period input:checked + span { box-shadow: 0 0 0 2px var(--home-gold, #b68a35); }

@@ -33,15 +33,15 @@ function init(root: HTMLElement) {
   const phone = `<a href="${root.dataset.phoneHref}">${root.dataset.phoneDisplay}</a>`;
   const altName = `${cfg.uid}-alt`;
   const yearsName = `${cfg.uid}-years`;
-  const state = { alt: String(cfg.selected || ''), years: Number(cfg.years) || 10 };
+  const state = { alt: '', years: Number(cfg.years) || 10 };
   let lastKey = '';
   let rows: Row[] = [];
   let seq = 0;
 
   results.innerHTML = `<div class="imp__main">
-      <fieldset class="imp__chart"><legend class="imp__legend">Monthly premiums. Choose one plan to compare with the lowest price.</legend><div data-imp-chart></div></fieldset>
+      <fieldset class="imp__chart"><legend class="imp__legend">Choose one plan to compare with the lowest-priced option.</legend><div data-imp-chart></div></fieldset>
       <div class="imp__impact">
-        <fieldset class="imp__periods"><legend class="imp__legend">Compare over</legend>
+        <fieldset class="imp__periods"><legend class="imp__legend">Click to compare over:</legend>
           ${PERIODS.map((y: number) => `<label class="imp__period"><input type="radio" name="${yearsName}" value="${y}"${y === state.years ? ' checked' : ''} /><span>${y} ${y === 1 ? 'year' : 'years'}</span></label>`).join('')}
         </fieldset>
         <div data-imp-out aria-live="polite"></div>
@@ -49,6 +49,7 @@ function init(root: HTMLElement) {
     </div>
     <div data-imp-benefits></div>`;
   const chart = results.querySelector<HTMLElement>('[data-imp-chart]')!;
+  chart.after(profileLine);
   const out = results.querySelector<HTMLElement>('[data-imp-out]')!;
   const benefits = results.querySelector<HTMLElement>('[data-imp-benefits]')!;
 
@@ -103,8 +104,10 @@ function init(root: HTMLElement) {
   // The chart: baseline first (fixed), then the alternatives, each a radio.
   function renderChart() {
     const base = baseline();
-    const alts = available().filter((r) => r !== base).sort((a, b) => b.q.premium! - a.q.premium!);
-    if (!alts.some((r) => r.p.code === state.alt)) state.alt = alts.find((r) => r.p.code === cfg.selected)?.p.code ?? alts[0]?.p.code ?? '';
+    // Lowest to highest monthly premium; keep the visitor's choice while it's
+    // available, otherwise compare with the highest-priced alternative.
+    const alts = available().filter((r) => r !== base).sort((a, b) => a.q.premium! - b.q.premium!);
+    if (!alts.some((r) => r.p.code === state.alt)) state.alt = alts[alts.length - 1]?.p.code ?? '';
     if (!base) { chart.innerHTML = `<p class="imp__error">None of these plans is available at this age.</p>`; return; }
     const max = Math.max(...available().map((r) => r.q.premium!));
     const body = (r: Row) => {
@@ -131,7 +134,6 @@ function init(root: HTMLElement) {
     if (im.monthly <= 0) {
       out.innerHTML = `<p class="imp__headline">At about ${fmtMoney(m.coverage, false)} of coverage, ${nameOf(alt)} costs about the same as ${nameOf(base)}.</p>`;
     } else {
-      const months = im.foodDays >= 60 ? ` <span class="imp__days-note">(about ${fmtWhole(Math.round(im.foodDays / (365 / 12)))} months)</span>` : '';
       const share = im.incomeShare !== null ? `<p class="imp__share">The monthly difference is <strong>${(im.incomeShare * 100).toFixed(1)}%</strong> of a monthly income of ${fmtMoney(s.income!, false)}.</p>` : '';
       out.innerHTML = `<p class="imp__intro">Choosing ${nameOf(alt)} instead of ${nameOf(base)} costs:</p>
         <dl class="imp__money">
@@ -141,9 +143,12 @@ function init(root: HTMLElement) {
         </dl>
         ${share}
         <div class="imp__food">
-          <p class="imp__food-lead">That money could buy about</p>
-          <p class="imp__days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> days of food for one person${months}</p>
-          <p class="imp__cal">About <strong>${fmtWhole(im.calories)} calories</strong> (${fmtWhole(im.meals)} meals)</p>
+          <h3 class="imp__food-title">How Much Food Could That Extra Premium Buy?</h3>
+          <p class="imp__days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span><span class="imp__days-l">Days of food for one person</span></p>
+          <div class="imp__food-pair">
+            <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span><span class="imp__stat-l">Calories</span></p>
+            <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.meals)}</span><span class="imp__stat-l">Meals</span></p>
+          </div>
           <p class="imp__muted">Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
         </div>
         <p class="imp__note">It's a saving only if you qualify for ${nameOf(base)}${base.p.type === 'Level' ? ', which asks health questions' : ''}.</p>`;

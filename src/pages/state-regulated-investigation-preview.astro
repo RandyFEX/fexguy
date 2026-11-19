@@ -69,7 +69,7 @@ const keyPoints = [
 
     <h2 id="send-back">What happens when you send the card back?</h2>
     <p>Here's how a reply card can turn into a phone call:</p>
-    <ol class="inv__steps">
+    <ol class="inv__cards">
       <li><strong>You fill it out.</strong> Name, home address, phone number, age, maybe your spouse's name and age. Then you drop it in the mail.</li>
       <li><strong>Your reply becomes a lead.</strong> Some companies specialize in mailing these cards and selling the replies to insurance agents.</li>
       <li><strong>An agent buys it.</strong> In my experience, an agent may pay around $40, $50 or $60 for each lead, or some other amount, depending on the lead program.</li>
@@ -78,13 +78,11 @@ const keyPoints = [
     <p>The agent who buys your lead may represent one insurance company or several. What you're offered depends on which products that agent has, how well the agent knows underwriting (which companies accept which health conditions), and your own health and budget.</p>
     <p>Some agents may lean toward guaranteed-acceptance insurance because it doesn't ask health questions and can be easier to place. That isn't true of every agent, and you can't tell how an agent works, or how they're paid, just from the mailer. Guaranteed acceptance can be the right fit for someone who can't qualify for simplified issue coverage. But it generally costs more than first-day coverage for a comparable applicant, and it has a waiting period before the full benefit is paid for a death from natural causes.</p>
 
-    <ImpactCalculator variant="embedded" title="What the wrong policy can cost you">
-      <p>Here's what that difference looks like in dollars. The chart starts with the lowest price shown; pick any other plan to compare it, and choose how many years.</p>
-    </ImpactCalculator>
+    <ImpactCalculator variant="embedded" title="What the wrong policy can cost you" />
 
     <h2 id="before-you-respond">Before you respond to this mailer, do this instead</h2>
     <p>Your state doesn't sponsor, fund or give away private life insurance to its residents. The real government options are limited and specific: Social Security's one-time $255 death payment to an eligible spouse or child, VA burial benefits and VALife for eligible veterans, and a few others for particular groups.</p>
-    <ol>
+    <ol class="inv__cards">
       <li>You don't have to answer the card.</li>
       <li>If an agent calls, ask which insurance company the policy is with, what type of coverage it is, and whether it has a waiting period. Ask what your family would receive if you died in the first two years.</li>
       <li>Check that the agent and the company are licensed through your state's insurance department.</li>
@@ -117,9 +115,17 @@ const keyPoints = [
   .inv__finding { background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); }
   .inv__finding h3 { font-size: 1rem; margin: 0 0 var(--space-1); color: var(--color-primary); }
   .inv__finding p { margin: 0; font-size: 0.9375rem; }
-  .inv__steps { display: grid; gap: var(--space-2); }
+  /* Numbered cards in the regulator-card style: 1 / 2 / 4 across. */
+  .inv__cards { list-style: none; padding: 0; margin-block: var(--space-4); display: grid; gap: var(--space-3); counter-reset: inv-card; max-width: none !important; }
+  .inv__cards li { counter-increment: inv-card; background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); font-size: 0.9375rem; }
+  .inv__cards li::before { content: counter(inv-card); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; margin-bottom: var(--space-2); }
+  .inv__cards li strong { display: block; color: var(--color-primary); }
   .inv__sources { font-size: 0.9375rem; }
+  @media (min-width: 48rem) {
+    .inv__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   @media (min-width: 60rem) {
     .inv__findings { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .inv__cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   }
 </style>
