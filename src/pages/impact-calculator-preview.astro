@@ -1,0 +1,32 @@
+---
+// PREVIEW (Randy's V5.6 assignment; not approved). The standalone Financial
+// Impact Calculator. noindex, nofollow; not in the sitemap, llms.txt or site
+// search; not linked from the site.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ImpactCalculator from '@/components/impact/ImpactCalculator.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+---
+
+<BaseLayout title={pageTitle('Life Insurance Financial Impact Calculator')} description="Compare monthly premiums, long-term costs and waiting periods between life insurance plans." robots="noindex, nofollow" noindex>
+  <div class="container imp-page" data-page-type="utility" data-page-reason="Preview of the standalone financial impact calculator (not approved).">
+    <p class="imp-page__flag">Preview for review only. Not linked from the site and not indexed by search engines.</p>
+    <h1>Life Insurance Financial Impact Calculator</h1>
+    <p class="imp-page__lead">See what one plan costs compared with another, month by month and over the years, and what your family would receive if a death happened early in the policy.</p>
+    <ImpactCalculator variant="standalone" title="Compare plans" />
+    <p>Want to know which of these plans you qualify for? Call Funeral Funds at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
+
+    <section class="imp-page__demo" aria-labelledby="demo-title">
+      <h2 id="demo-title">Preview: the compact version for carrier reviews</h2>
+      <p>The same calculator, preset for a review. This example compares Gerber Life Guaranteed Life with Mutual of Omaha Living Promise Level.</p>
+      <ImpactCalculator variant="compact" headingLevel={3} title="What Gerber Guaranteed Life costs compared with a first-day plan" codes={['FF-201', 'FF-102']} benchmark="FF-102" years={10} />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .imp-page { padding-block: var(--space-6); max-width: 52rem; }
+  .imp-page__flag { font-size: 0.875rem; color: var(--color-text-muted); }
+  .imp-page__lead { font-size: 1.125rem; }
+  .imp-page__demo { margin-top: var(--space-12); border-top: 1px solid var(--color-border); padding-top: var(--space-6); }
+</style>

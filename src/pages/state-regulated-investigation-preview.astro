@@ -1,0 +1,144 @@
+---
+// PREVIEW DRAFT (Randy's V5.6 assignment; not approved). First-person
+// investigation of "state-regulated" life insurance mailers, with the
+// embedded Financial Impact Calculator and the Mailer Decoder. noindex,
+// nofollow; not in the sitemap, llms.txt or site search; not linked.
+//
+// Sources: the 26-file research record in RandyFEX/fexguy-monitoring
+// (reports/article-reviews/state-regulated-life-insurance/), the approved,
+// unpublished article revision (branch claude/new-session-lhzc27), and
+// premiums from the verified rate engine. Labels on the page separate
+// documented findings, Randy's approved professional statements, analysis
+// and illustrative examples. Draft wording that is new (not previously
+// approved) is listed in docs/investigations/state-regulated-2026-11/.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ImpactCalculator from '@/components/impact/ImpactCalculator.astro';
+import MailerDecoder from '@/components/impact/MailerDecoder.astro';
+import { pageTitle } from '@/lib/seo/meta';
+import { lead } from '@/config/lead';
+
+const videos = [
+  { n: 1, title: 'The Mailer' },
+  { n: 2, title: 'The Investigation' },
+  { n: 3, title: 'The Big Check' },
+  { n: 4, title: 'The Real Cost' },
+  { n: 5, title: 'The Better Decision' },
+];
+const video = (n: number) => videos[n - 1];
+---
+
+<BaseLayout title={pageTitle('State-Regulated Life Insurance Investigation (Preview)')} description="Preview draft: a first-person investigation of state-regulated life insurance mailers." robots="noindex, nofollow" noindex>
+  <article class="container inv" data-page-type="utility" data-page-reason="Preview draft of the state-regulated life insurance investigation (not approved).">
+    <p class="inv__flag">Preview draft for review only. Not linked from the site and not indexed by search engines. Video boxes show where each episode would sit; the scripts are in the project notes.</p>
+
+    <h1>I Investigated State-Regulated Life Insurance. What I Found Could Cost Seniors Thousands.</h1>
+    <p class="inv__byline">By Randy VanderVaate, licensed life insurance agent, Founder of Funeral Funds</p>
+
+    <aside class="inv__legend" aria-label="How to read this investigation">
+      <p><strong>How to read this:</strong> <span class="inv__lab inv__lab--doc">Documented</span> means a regulator, a law or the card itself says it. <span class="inv__lab inv__lab--exp">From my experience</span> is what I've seen in 11 years as an agent. <span class="inv__lab inv__lab--calc">My analysis</span> is a calculation from published rates. <span class="inv__lab inv__lab--ex">Example</span> marks an illustration, not a specific client's story.</p>
+    </aside>
+
+    <p class="inv__lead">A card like this one shows up in a lot of mailboxes. It's headed "2026 Benefit Information for State Residents." It says you may qualify for a state-regulated program to pay your final expenses, up to $25,000, tax-free. There's a free gift card, and it wants an answer within five days.</p>
+    <p>So I took it apart. I read every line, I went through what state regulators have found about cards like it, I followed what happens when someone sends one back, and then I put real prices next to the promise. Here's the short answer: these mailers generally advertise private life insurance, not a special government benefit. The companies sending them may sell your response to insurance agents, and the coverage you're offered depends on the agent, the available products, and your health. Before buying, compare your options. You may qualify for first-day coverage instead of a policy with a waiting period.</p>
+
+    <div class="inv__video" role="note"><strong>Video {video(1).n} of 5: {video(1).title}</strong> <span>The card, line by line, in about a minute.</span></div>
+
+    <MailerDecoder />
+
+    <h2>What "state-regulated" really means</h2>
+    <p><span class="inv__lab inv__lab--doc">Documented</span> In the United States, insurance is regulated by the states. Every legitimate life insurance policy follows its state's insurance laws, so "state-regulated" describes every policy, not a special program. Your state doesn't sponsor, fund or give away private life insurance to its residents. The real government options are limited and specific: Social Security's one-time $255 death payment to an eligible spouse or child, VA burial benefits and VALife for eligible veterans, and a few others for particular groups.</p>
+
+    <h2 id="regulators">What regulators found about mailers like this</h2>
+    <p>I can't tell you who sent the card in this report, and I'm not going to guess. What I can show you is what state insurance regulators documented about other mailers that use the same style.</p>
+    <ul>
+      <li><span class="inv__lab inv__lab--doc">Documented</span> <strong>Washington, D.C. (2020), consumer warning.</strong> The D.C. insurance department (DISB) warned residents about a mailer titled "F-1 2020 Benefit Information for District of Columbia Residents Only." DISB said the mailer was not from the District government and was not sanctioned by DISB, and that the information people send back may be used by, or sold to, insurance companies so their agents can contact them.</li>
+      <li><span class="inv__lab inv__lab--doc">Documented</span> <strong>Iowa (2020), enforcement action.</strong> Two Georgia companies, Direct Mail Processing, LLC and Rehg Data Assets, Inc., sent official-looking insurance solicitation mailers to older Iowans. One mailer referred to a "state-regulated program" for final expenses. People who returned a card got a sales call from an insurance salesperson, and the mailer company was paid for each lead. The Iowa Insurance Division issued a cease-and-desist order against the operation. Separately, the Iowa Attorney General's Office reached a consent judgment with the two companies, which agreed to pay the state $40,000 and denied violating Iowa's Consumer Fraud Act.</li>
+      <li><span class="inv__lab inv__lab--doc">Documented</span> <strong>Nebraska (2022), consumer education.</strong> In a presentation on misleading insurance marketing, the Nebraska Department of Insurance showed a T-2 mailer headed "2020 Benefit Information for Nebraska Citizens Only" and explained how lead generation works.</li>
+      <li><span class="inv__lab inv__lab--doc">Documented</span> The Texas Department of Insurance puts it plainly in its consumer fraud guide: "The government doesn't sell insurance. Agents who say they're with the government are breaking the law."</li>
+    </ul>
+    <p>These findings are about those mailers. They don't identify the sender of the 2026 card above, and they aren't evidence that its sender broke any law.</p>
+
+    <div class="inv__video" role="note"><strong>Video {video(2).n} of 5: {video(2).title}</strong> <span>What D.C., Iowa and Nebraska found.</span></div>
+
+    <h2>What happens when you send the card back</h2>
+    <p><span class="inv__lab inv__lab--exp">From my experience</span> Some companies specialize in mailing these cards and selling the replies to insurance agents as leads. In my experience, an agent may pay around $40, $50 or $60 for each lead, or some other amount, depending on the lead program. The agent who buys your lead may represent one insurance company or several. What you're offered depends on which products that agent has, how well the agent knows underwriting (which companies accept which health conditions), and your own health and budget.</p>
+    <p>Some agents may lean toward guaranteed-acceptance insurance because it doesn't ask health questions and can be easier to place. That isn't true of every agent, and you can't tell how an agent works, or how they're paid, just from the mailer. Guaranteed acceptance can be the right fit for someone who can't qualify for simplified issue coverage. But it generally costs more than first-day coverage for a comparable applicant, and it has a waiting period before the full benefit is paid for a death from natural causes.</p>
+
+    <h2 id="big-check">The "big check" versus what the policy actually pays</h2>
+    <p>"Up to $25,000, tax-free" reads like money on its way. It isn't. Twenty-five thousand dollars is the most coverage the policy would offer, and you'd pay a monthly premium for it. "Tax-free" isn't a perk for state residents either: <span class="inv__lab inv__lab--doc">Documented</span> life insurance paid to a beneficiary because of a death generally isn't taxable income, whatever state you live in (IRS Publication 525).</p>
+    <p>What matters is what the policy you're offered actually pays, and when. These are the main types:</p>
+    <ul>
+      <li><strong>Level (first-day coverage):</strong> the full death benefit from the first day, as long as the premiums are paid, subject to the policy's exclusions. You answer health questions to qualify.</li>
+      <li><strong>Graded:</strong> a reduced benefit for a death from natural causes in the early years, then the full benefit.</li>
+      <li><strong>Modified:</strong> during the waiting period, a refund of premiums plus an additional amount set by the policy instead of the full benefit.</li>
+      <li><strong>Guaranteed acceptance:</strong> no health questions, and a waiting period. If you die from natural causes during the waiting period, your beneficiary receives a refund of the premiums paid plus an additional amount specified in the policy. Depending on the insurance company, that additional amount is commonly around 7% to 10%, and the exact refund calculation is set by each company's contract.</li>
+    </ul>
+    <p><span class="inv__lab inv__lab--calc">My analysis</span> Here's what that waiting period means in dollars. A 65-year-old woman with Gerber Life Guaranteed Life at $10,000 pays $62.61 a month: about $1,503 over two years. If she died of natural causes in month 18, her family would receive her premiums paid plus 10%, about $1,240, instead of $10,000. On a first-day plan she qualified for, they'd receive the full $10,000.</p>
+
+    <div class="inv__video" role="note"><strong>Video {video(3).n} of 5: {video(3).title}</strong> <span>"Up to $25,000, tax-free," explained.</span></div>
+
+    <h2 id="real-cost">The real cost: guaranteed acceptance compared with first-day coverage</h2>
+    <p>I'm not saying any mailer leads to these particular companies. I'm using them because their rates are published and verified, so you can see what the choices cost for the same person.</p>
+    <p><span class="inv__lab inv__lab--calc">My analysis</span> For a 65-year-old woman who doesn't use tobacco, buying about $10,000 of coverage (Texas rates):</p>
+    <div class="inv__scroll" tabindex="0" role="region" aria-label="Monthly premiums, 65-year-old woman">
+      <table>
+        <thead><tr><th scope="col">Plan</th><th scope="col">Type</th><th scope="col">Coverage</th><th scope="col">Monthly premium</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Colonial Penn Guaranteed Acceptance</th><td>Guaranteed acceptance, 2-year limited benefit period</td><td>8 units = $10,064</td><td>$79.60</td></tr>
+          <tr><th scope="row">Gerber Life Guaranteed Life</th><td>Guaranteed acceptance, 2-year waiting period</td><td>$10,000</td><td>$62.61</td></tr>
+          <tr><th scope="row">Aetna Accendo Final Expense Preferred</th><td>Level, first-day coverage</td><td>$10,000</td><td>$47.60</td></tr>
+          <tr><th scope="row">Mutual of Omaha Living Promise Level</th><td>Level, first-day coverage</td><td>$10,000</td><td>$41.01</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>At Colonial Penn's exact coverage of $10,064, Mutual of Omaha Living Promise Level is $41.25 a month. That's a difference of $38.35 a month, $460.20 a year, $4,602 over 10 years and $9,204 over 20 years, for someone who qualifies for the first-day plan.</p>
+    <p>The gap grows with age. At 80, Gerber Life Guaranteed Life at $10,000 costs a woman $176.37 a month and a man $247.32, against $98.43 and $139.73 for Mutual of Omaha Living Promise Level. And what one $9.95 Colonial Penn unit buys shrinks from $1,761 of coverage for a 55-year-old woman to $608 at 80.</p>
+
+    <h2>Is your life insurance premium taking food off your table?</h2>
+    <p><span class="inv__lab inv__lab--calc">My analysis</span> A premium difference is easy to ignore at $38 a month. So here's the same money as groceries. Over 10 years, $4,602 is about 460 meals at $10 a meal. At 667 calories a meal, that's about 307,000 calories: roughly 153 days of food for one person, at 2,000 calories a day. That's what the money could buy. It isn't a claim about anyone's diet, and it only counts as a saving if you qualify for the lower-priced plan.</p>
+    <p>Change the age, coverage and assumptions yourself:</p>
+
+    <ImpactCalculator variant="embedded" title="Financial Impact Calculator" />
+
+    <div class="inv__video" role="note"><strong>Video {video(4).n} of 5: {video(4).title}</strong> <span>The calculator: premiums, meals, calories and days of food.</span></div>
+
+    <h2 id="better-decision">The better decision</h2>
+    <ol>
+      <li>You don't have to answer the card.</li>
+      <li>If an agent calls, ask which insurance company the policy is with, what type of coverage it is, and whether it has a waiting period. Ask what your family would receive if you died in the first two years.</li>
+      <li>Check that the agent and the company are licensed through your state's insurance department.</li>
+      <li>Answer the health questions before you settle for a waiting period. Your actual price and eligibility depend on your age, health, coverage amount and the insurance company.</li>
+    </ol>
+    <p><span class="inv__lab inv__lab--exp">From my experience</span> The vast majority of the people I help qualify for first-day coverage. My process is simple. I ask a few short health questions, compare rates from around 20 to 30 insurance companies, depending on your state, age, and health, and show you the first-day coverage options available to you. If you'd like me to look at an offer you received, call me at <a href={lead.phone.href}>{lead.phone.display}</a>.</p>
+
+    <div class="inv__video" role="note"><strong>Video {video(5).n} of 5: {video(5).title}</strong> <span>Four questions to ask before you buy.</span></div>
+
+    <h2>Sources and method</h2>
+    <ul class="inv__sources">
+      <li>D.C. Department of Insurance, Securities and Banking: "DISB Warns District Residents of Deceptive Mailers Selling Funeral Insurance Policies" (2020).</li>
+      <li>Iowa Insurance Division: "Georgia Mailers Sent to Seniors" (December 28, 2020); Iowa Attorney General consent judgment (Polk County, EQCE086323).</li>
+      <li>Nebraska Department of Insurance: "Misleading Marketing" presentation (2022), page 11.</li>
+      <li>Texas Department of Insurance: consumer fraud guide.</li>
+      <li>IRS Publication 525; 20 CFR 404.390 (Social Security lump-sum death payment).</li>
+      <li>Premiums: Mutual of Omaha Living Promise Level and Aetna Accendo Preferred from the companies' 2026 rate guides; Gerber Life Guaranteed Life from rate card GL-RC 0922 (monthly ACH); Colonial Penn at $9.95 per unit with coverage per unit by age and sex. Non-tobacco where the plan asks, Texas rates. Totals are simple sums of level premiums.</li>
+      <li>The 2026 card: a real reply card, redacted. Its sender is unknown.</li>
+    </ul>
+  </article>
+</BaseLayout>
+
+<style>
+  .inv { max-width: var(--prose-max); padding-block: var(--space-6); }
+  .inv__flag { font-size: 0.875rem; color: var(--color-text-muted); }
+  .inv__byline { color: var(--color-text-muted); }
+  .inv__lead { font-size: 1.125rem; }
+  .inv__legend { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3) var(--space-4); font-size: 0.9375rem; margin-block: var(--space-4); }
+  .inv__legend p { margin: 0; }
+  .inv__lab { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 0 var(--space-2); border-radius: 999px; margin-right: var(--space-1); border: 1px solid var(--color-border); background: var(--color-bg); white-space: nowrap; }
+  .inv__lab--exp { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
+  .inv__video { border: 2px dashed var(--color-border); border-radius: var(--radius); padding: var(--space-3) var(--space-4); margin-block: var(--space-6); display: grid; gap: var(--space-1); }
+  .inv__video span { color: var(--color-text-muted); font-size: 0.9375rem; }
+  .inv__scroll { overflow-x: auto; margin-block: var(--space-4); }
+  .inv table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .inv th, .inv td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: left; vertical-align: top; }
+  .inv__sources { font-size: 0.9375rem; }
+</style>

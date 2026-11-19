@@ -1,0 +1,51 @@
+---
+// Mailer Decoder (PREVIEW, Randy's V5.6 assignment). The approved redacted
+// 2026 "F-2" card with its approved "What the card says / What it means"
+// rows (verbatim from the approved, unpublished article revision on
+// claude/new-session-lhzc27). The "Evidence" column is new and keeps two
+// things apart: what this card itself says, and what regulators documented
+// about OTHER mailers. Nothing ties this card to a sender or an insurer.
+interface Props { headingLevel?: 2 | 3 }
+const { headingLevel = 2 } = Astro.props;
+const Heading = (headingLevel === 3 ? 'h3' : 'h2') as 'h2' | 'h3';
+
+const rows = [
+  { says: '“2026 Benefit Information for State Residents”', means: 'A headline written to look like an official notice. It names no government agency.', evidence: 'Regulators documented the same headline style on other mailers: D.C. (“F-1 2020 Benefit Information for District of Columbia Residents Only”) and Nebraska (a T-2 card headed “2020 Benefit Information for Nebraska Citizens Only”).', kind: 'other' },
+  { says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'All life insurance is state regulated. The card doesn’t say what the “program” is or who offers it.', evidence: 'An Iowa mailer used the same “state-regulated program” wording; the Iowa Insurance Division issued a cease-and-desist order against that operation (2020).', kind: 'other' },
+  { says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: 'A life insurance policy pays its face amount to your beneficiary. Whether that covers 100% of your expenses depends on how much coverage you buy and what your funeral actually costs.', evidence: 'This card’s own wording.', kind: 'card' },
+  { says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary because of a death generally isn’t taxable income, whatever state you live in (IRS Publication 525). It’s not a special benefit for “state residents.”', evidence: 'IRS Publication 525.', kind: 'card' },
+  { says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'A reason to send the card back. The card doesn’t say who provides the gift card or what you’d have to do to get it.', evidence: 'This card’s own wording.', kind: 'card' },
+  { says: '“Return this postage-paid card within 5 days!”', means: 'The five-day deadline is a marketing tactic, not evidence that a special government benefit expires. Your age can affect your insurance rate, and waiting until after a birthday may change your premium, but that is different from the deadline printed on this card.', evidence: 'This card’s own wording.', kind: 'card' },
+  { says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'This is the information an agent needs to call or visit you. A postcard can’t prequalify you. Approval only happens on a real application with an insurance company.', evidence: 'On other mailers, regulators found that returned information may be used by, or sold to, insurance companies (D.C., 2020), and that the mailer company was paid for each lead (Iowa, 2020).', kind: 'other' },
+  { says: '“Not affiliated with or endorsed by any government agency.”', means: 'The most important line on the card, and the smallest.', evidence: 'This card’s own wording.', kind: 'card' },
+];
+---
+
+<section class="mdec" id="mailer-decoder" aria-labelledby="mdec-title">
+  <Heading id="mdec-title">The Mailer Decoder</Heading>
+  <figure class="mdec__figure">
+    <img src="/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg" width="1496" height="627" loading="lazy" decoding="async"
+      alt="A 2026 mailer marked “F-2” with the headline “2026 Benefit Information for State Residents.” It says the reader may qualify for a state-regulated program to pay final expenses, offers a life insurance benefit up to $25,000 described as tax-free, offers a free Walmart gift card and Final Wishes Planning Guide, asks for a reply within 5 days, and has blank lines for name, home address, phone, age, spouse’s name and spouse’s age. Small print reads “Not affiliated with or endorsed by any government agency.”" />
+    <figcaption>A real 2026 “Benefit Information” reply card marked “F-2.” The recipient’s details, postal codes and barcodes are covered. The card shows the advertising language only. It doesn’t name who sent it, an insurance company or a specific policy, and it isn’t, by itself, evidence that anyone broke the law.</figcaption>
+  </figure>
+  <ol class="mdec__list">
+    {rows.map((r) => (
+      <li class="mdec__item">
+        <p class="mdec__says">{r.says}</p>
+        <p class="mdec__means"><strong>What it means:</strong> {r.means}</p>
+        <p class={`mdec__evidence mdec__evidence--${r.kind}`}><span class="mdec__tag">{r.kind === 'card' ? 'On this card' : 'About other mailers'}</span> {r.evidence}</p>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .mdec__figure { margin: 0 0 var(--space-4); }
+  .mdec__figure img { width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: var(--radius); }
+  .mdec__figure figcaption { color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--space-2); }
+  .mdec__list { padding-left: var(--list-indent); display: grid; gap: var(--space-4); }
+  .mdec__says { font-weight: 800; margin: 0 0 var(--space-1); }
+  .mdec__means, .mdec__evidence { margin: 0 0 var(--space-1); }
+  .mdec__evidence { font-size: 0.9375rem; color: var(--color-text-muted); }
+  .mdec__tag { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 0 var(--space-2); border-radius: 999px; margin-right: var(--space-1); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); }
+</style>

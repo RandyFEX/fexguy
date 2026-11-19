@@ -1,0 +1,101 @@
+---
+// Financial Impact Calculator (PREVIEW, Randy's V5.6 assignment; not approved
+// for publication). One component, three uses:
+//   variant="standalone"  the calculator page
+//   variant="embedded"    inside the investigation
+//   variant="compact"     inside a carrier review (pass `codes`/`benchmark`)
+// Shows a prepopulated comparison immediately (priced by
+// POST /api/impact-calculator/), with customization behind "Change the
+// comparison". No personal information is asked for or stored.
+import '@/styles/impact-calculator.css';
+import { lead } from '@/config/lead';
+import { VERIFIED_PRODUCTS, DEFAULT_INPUT, FOOD_DEFAULTS, BENCHMARK_CODE, AGES, COVERAGE_PRESETS } from '@/lib/impact/products.js';
+
+interface Props {
+  variant?: 'standalone' | 'embedded' | 'compact';
+  title?: string;
+  headingLevel?: 2 | 3;
+  codes?: string[];
+  benchmark?: string;
+  years?: 5 | 10 | 20;
+}
+const { variant = 'embedded', title = 'Financial Impact Calculator', headingLevel = 2, codes = DEFAULT_INPUT.codes, benchmark = BENCHMARK_CODE, years = 10 } = Astro.props;
+const uid = `imp-${Math.random().toString(36).slice(2, 8)}`;
+const Heading = (headingLevel === 3 ? 'h3' : 'h2') as 'h2' | 'h3';
+const config = JSON.stringify({ ...DEFAULT_INPUT, codes, benchmark, years, food: FOOD_DEFAULTS });
+const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
+---
+
+<section class={`imp imp--${variant}`} aria-labelledby={`${uid}-title`} data-impact data-config={config} data-phone-href={lead.phone.href} data-phone-display={lead.phone.display}>
+  <Heading class="imp__title" id={`${uid}-title`}>{title}</Heading>
+  <p class="imp__profile" data-imp-profile>
+    Example: a 65-year-old woman who doesn't use tobacco, buying about $10,000 of coverage (Texas rates).
+  </p>
+
+  <div class="imp__results" data-imp-results aria-live="polite" aria-busy="true">
+    <p class="imp__loading">Loading the comparison…</p>
+  </div>
+
+  <button type="button" class="btn imp__toggle" aria-expanded="false" aria-controls={`${uid}-form`} data-imp-toggle>Change the comparison</button>
+
+  <form class="imp__form" id={`${uid}-form`} hidden data-imp-form novalidate>
+    <fieldset class="imp__group">
+      <legend>Applicant</legend>
+      <label>Age
+        <select name="age">{ages.map((a) => <option value={a} selected={a === DEFAULT_INPUT.age}>{a}</option>)}</select>
+      </label>
+      <label>Sex
+        <select name="gender"><option value="female" selected>Female</option><option value="male">Male</option></select>
+      </label>
+      <label>Tobacco or nicotine in the last 12 months
+        <select name="tobacco"><option value="no" selected>No</option><option value="yes">Yes</option></select>
+      </label>
+      <label>Coverage
+        <select name="coverage">{COVERAGE_PRESETS.map((c) => <option value={c} selected={c === DEFAULT_INPUT.coverage}>${c.toLocaleString('en-US')}</option>)}</select>
+      </label>
+    </fieldset>
+    <fieldset class="imp__group">
+      <legend>Plans to compare</legend>
+      {VERIFIED_PRODUCTS.map((p) => (
+        <label class="imp__check"><input type="checkbox" name="codes" value={p.code} checked={codes.includes(p.code)} /> {p.carrier} {p.plan} <span class="imp__muted">({p.timing.toLowerCase()})</span></label>
+      ))}
+      <label>Compare the difference against
+        <select name="benchmark">{VERIFIED_PRODUCTS.map((p) => <option value={p.code} selected={p.code === benchmark}>{p.carrier} {p.plan}</option>)}</select>
+      </label>
+    </fieldset>
+    <fieldset class="imp__group">
+      <legend>Your assumptions</legend>
+      <label>Comparison period
+        <select name="years">{[5, 10, 20].map((y) => <option value={y} selected={y === years}>{y} years</option>)}</select>
+      </label>
+      <label>Monthly income (optional)
+        <input name="income" inputmode="decimal" placeholder="For example, 1800" autocomplete="off" />
+      </label>
+      <label>Cost of one meal
+        <input name="mealCost" inputmode="decimal" value={FOOD_DEFAULTS.mealCost} autocomplete="off" />
+      </label>
+      <label>Calories in one meal
+        <input name="caloriesPerMeal" inputmode="numeric" value={FOOD_DEFAULTS.caloriesPerMeal} autocomplete="off" />
+      </label>
+      <label>Calories for one day of food
+        <input name="caloriesPerDay" inputmode="numeric" value={FOOD_DEFAULTS.caloriesPerDay} autocomplete="off" />
+      </label>
+    </fieldset>
+  </form>
+
+  <details class="imp__method">
+    <summary>How these numbers work</summary>
+    <ul>
+      <li>Monthly premiums are calculated from each company's published rates for the age, sex and tobacco answer shown, using Texas rates. Your state, health and the exact coverage can change the price.</li>
+      <li>Colonial Penn sells coverage in $9.95 units, so its coverage is the nearest whole number of units at or above the amount chosen. The other plans are priced at that same coverage when they're compared with it.</li>
+      <li>Totals are the monthly difference times 12 times the number of years. They assume level premiums, no interest and that the policy stays in force.</li>
+      <li>Meals, calories and days of food use the assumptions under "Change the comparison". They show what the same money could buy. They aren't a measure of anyone's diet.</li>
+      <li>A lower premium is a saving only if you qualify for that plan. Level plans ask health questions; guaranteed acceptance plans don't.</li>
+    </ul>
+  </details>
+  <noscript><p class="imp__muted">The calculator needs JavaScript. To compare plans by phone, call <a href={lead.phone.href}>{lead.phone.display}</a>.</p></noscript>
+</section>
+
+<script>
+  import '@/scripts/impact-calculator';
+</script>
