@@ -7,7 +7,7 @@
 // unpublished revision on claude/new-session-lhzc27. Short source notes keep
 // this card's own wording apart from what regulators found about OTHER
 // mailers; nothing ties this card to a sender or an insurer.
-interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' }
+interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' | 'notice' }
 const { part, mailer = '2026' } = Astro.props;
 
 const src = '/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg';
@@ -19,7 +19,7 @@ const claims = [
   { x: 50.0, y: 20.7, says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'Every life insurance policy is state regulated. The card never says what the “program” is or who runs it.', source: 'An Iowa mailer used the same wording: Iowa 2020', other: true },
   { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: '$25,000 is the most coverage being advertised, not money coming to you. You’d pay a monthly premium for it, and whether it covers “100%” depends on how much you buy and what your funeral actually costs.' },
   { x: 36.6, y: 35.3, says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary after a death generally isn’t taxable income in any state (IRS Publication 525). It’s not a perk for “state residents.”' },
-  { x: 50.8, y: 42.2, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'Bait to get the card back. It doesn’t say who provides the gift card or what you’d have to do to get it.' },
+  { x: 12.4, y: 58.9, box: { x: 4.45, y: 43.4, w: 17.4, h: 5.6 }, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'Bait to get the card back. It doesn’t say who provides the gift card or what you’d have to do to get it.' },
   { x: 86.0, y: 29.6, says: '“Return this postage-paid card within 5 days!”', means: 'A marketing deadline. No government benefit expires in five days. Your age can change your rate, but that has nothing to do with the date printed on this card.' },
   { x: 74.0, y: 64.2, says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'Exactly what an agent needs to call you or show up at your door. Mailing the card back doesn’t approve you for any policy; that only happens on a real application with an insurance company.', source: 'On other mailers, replies were used by or sold to insurers, and the mailer company was paid per lead: D.C. 2020, Iowa 2020', other: true },
   { x: 53.4, y: 86.6, says: '“Not affiliated with or endorsed by any government agency.”', means: 'The most honest line on the card, and the smallest.' },
@@ -37,7 +37,24 @@ const claims2027 = [
   { x: 1.5, y: 88.4, says: 'Return Within 5 Days', means: 'The card creates urgency, but it doesn’t establish that an insurance benefit disappears after five days. Don’t mistake an advertising deadline for a government enrollment deadline.' },
   { x: 76.6, y: 29.0, says: 'Personal and Spouse Information', means: 'The response form asks for information that can be used to contact you about insurance. Notice that it also asks for your spouse’s information, potentially creating another sales opportunity.' },
 ];
-const M = mailer === '2027'
+// The third card (Randy, V6.6): an "Important Benefit Notice" with a
+// respond-by date. Nine claims, each visible on the card; marker positions in
+// percent of the 1875 x 839 image.
+const claimsNotice = [
+  { x: 27.2, y: 8.3, says: '“IMPORTANT BENEFIT NOTICE”', means: 'That label makes an insurance ad look like a notice you’re required to read. Nothing on the card says who the notice is from, and its own small print says it isn’t from any government agency.' },
+  { x: 84.0, y: 7.7, says: '“2026 BENEFIT INFORMATION”', means: 'Putting the year on it makes it feel like this year’s official update. It’s a headline, not a benefit you’ve been assigned.' },
+  { x: 2.7, y: 19.1, says: '“You may be eligible for a no-cost information package on a state-regulated life insurance program”', means: 'Read it slowly: what’s free is the information package. The insurance isn’t free, and “state-regulated” just means it’s ordinary life insurance, like every other policy sold in your state.' },
+  { x: 2.7, y: 24.8, says: '“that can help pay up to $35,000 for your final expenses”', means: '$35,000 is the most coverage being advertised. You’d pay a monthly premium for whatever amount you buy, and the price goes up with the coverage.' },
+  { x: 93.6, y: 24.8, says: '“regardless of your current health” and “Regardless of Health”', means: 'Coverage you can get regardless of health does exist, but the card doesn’t tell you what kind it is. A policy that doesn’t ask health questions usually costs more and often has a waiting period before it pays the full benefit for a death from natural causes.' },
+  { x: 5.3, y: 33.7, says: '“No Medical Exam”', means: 'No exam doesn’t mean no questions. Plenty of policies skip the exam but still ask health questions, and your answers decide which plan and price you qualify for.' },
+  { x: 45.9, y: 46.5, says: '“Please Respond By Apr. 9, 2026”', means: 'A date makes it feel like a deadline you could miss. The card doesn’t say anything expires on that date; it’s a reason to mail it back now instead of thinking it over.' },
+  { x: 95.2, y: 45.6, says: 'Name, age, spouse’s name and age, street address (“No PO Boxes”) and phone (“With Area Code”)', means: 'This is what someone needs to call you or come to your house, and it asks for your spouse too. Asking for a street address instead of a PO box tells you a visit is possible.' },
+  { x: 36.3, y: 83.4, says: '“RESPOND TODAY” and “You may be missing benefits available to residents.”', means: 'It suggests there’s a residents’ benefit you’re about to lose. There isn’t one named anywhere on the card. What you’d be missing is a sales call.' },
+];
+const M = mailer === 'notice'
+  ? { src: '/images/mailers/2026-important-benefit-notice-mailer.jpg', w: 1875, h: 839, claims: claimsNotice, id: 'mailer-claims-notice', titleId: 'mdec-title-notice', title: '9 misleading claims on this life insurance mailer, explained', Tag: 'h3' as const,
+      alt: 'A mailer headed “2026 Benefit Information” with a black “Important Benefit Notice” label. It says the reader may be eligible for a no-cost information package on a state-regulated life insurance program that can help pay up to $35,000 for final expenses, regardless of current health, and lists No Medical Exam, Regardless of Health and Same-Day Information. It says “Please Respond By Apr. 9, 2026,” “Respond Today” and “You may be missing benefits available to residents.” A form asks for name, age, spouse’s name and age, street address with no PO boxes, and phone with area code, above the line “Not affiliated with or endorsed by any government agency.” The address and barcodes are blurred.' }
+  : mailer === '2027'
   ? { src: '/images/mailers/2027-state-citizens-benefit-mailer.jpg', w: 2000, h: 667, claims: claims2027, id: 'mailer-claims-2027', titleId: 'mdec-title-2027', title: '8 more misleading claims worth a closer look', Tag: 'h3' as const,
       alt: 'Both sides of a 2027 mailer. The front, headed “2027 Benefit Information for State Citizens Only,” says the reader may qualify for a state-regulated life insurance program to pay final expenses regardless of medical condition, even if turned down in the past; says the benefit could pay 100% of all funeral expenses up to $35,000 and is tax-free for state residents; says the reader is entitled to no-cost information as a resident of the state; and says to return the postage-paid card within 5 days. The reply side asks for name, home address, phone, age, spouse’s age and spouse’s name, and reads “Not affiliated with or endorsed by any government agency.” The recipient’s name and address are blurred.' }
   : { src, w: 1496, h: 627, claims, id: 'mailer-claims', titleId: 'mdec-title', title: '8 misleading claims on this life insurance mailer', Tag: 'h2' as const, alt };
@@ -46,13 +63,14 @@ const Tag = M.Tag;
 
 {part === 'figure' && (
   <figure class="mdec__figure">
-    <div class={mailer === '2027' ? 'mdec__pan' : undefined} tabindex={mailer === '2027' ? 0 : undefined} role={mailer === '2027' ? 'region' : undefined} aria-label={mailer === '2027' ? 'The 2027 mailer, both sides' : undefined}>
+    <div class={mailer !== '2026' ? 'mdec__pan' : undefined} tabindex={mailer !== '2026' ? 0 : undefined} role={mailer !== '2026' ? 'region' : undefined} aria-label={mailer === '2027' ? 'The 2027 mailer, both sides' : mailer === 'notice' ? 'The Important Benefit Notice mailer' : undefined}>
     <div class="mdec__card">
       <img src={M.src} width={M.w} height={M.h} decoding="async" loading={mailer === '2026' ? 'eager' : 'lazy'} alt={M.alt} />
+      {M.claims.map((c: { box?: { x: number; y: number; w: number; h: number } }) => c.box && <span class="mdec__box" style={`left:${c.box.x}%;top:${c.box.y}%;width:${c.box.w}%;height:${c.box.h}%`} aria-hidden="true"></span>)}
       {M.claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
     </div>
     </div>
-    {mailer === '2027' && <p class="mdec__hint">Swipe to see the whole card.</p>}
+    {mailer !== '2026' && <p class="mdec__hint">Swipe to see the whole card.</p>}
     {mailer === '2026' && <figcaption>A real 2026 “Benefit Information” reply card marked “F-2.” The recipient’s details, postal codes and barcodes are covered. The card shows the advertising language only. It doesn’t name who sent it, an insurance company or a specific policy, and it isn’t, by itself, evidence that anyone broke the law. The numbers mark the <a href="#mailer-claims">8 claims explained below</a>.</figcaption>}
   </figure>
 )}
@@ -60,7 +78,7 @@ const Tag = M.Tag;
 {part === 'claims' && (
   <section class="mdec" id={M.id} aria-labelledby={M.titleId}>
     <Tag id={M.titleId}>{M.title}</Tag>
-      <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The 8 claims on the ${mailer} mailer and what they mean`}>
+      <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The ${M.claims.length} claims on the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer and what they mean`}>
         <table class="mdec__table">
           <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">What the mailer says</th><th scope="col">What it actually means</th></tr></thead>
           <tbody>
@@ -82,12 +100,14 @@ const Tag = M.Tag;
   .mdec__card { position: relative; container-type: inline-size; }
   .mdec__card img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: var(--radius); }
   .mdec__pin { position: absolute; transform: translate(-50%, -50%); width: clamp(1.125rem, 3.4cqi, 2rem); height: clamp(1.125rem, 3.4cqi, 2rem); border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: clamp(0.6875rem, 2cqi, 1.0625rem); display: grid; place-items: center; box-shadow: 0 0 0 2px #fff; line-height: 1; }
+  .mdec__box { position: absolute; border: 2px solid var(--color-cta); border-radius: 4px; pointer-events: none; }
   .mdec__figure figcaption { color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--space-2); max-width: var(--prose-max); }
   .mdec__scroll { overflow-x: auto; }
   .mdec__hint { display: none; font-size: 0.8125rem; color: var(--color-text-muted); margin: var(--space-1) 0 0; }
   @media (max-width: 47.99rem) {
     .mdec__pan { overflow-x: auto; }
     .mdec__pan .mdec__card { width: 46rem; }
+    .mdec__pan .mdec__card:has(img[width="1875"]) { width: 40rem; }
     .mdec__hint { display: block; }
   }
   .mdec__table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
