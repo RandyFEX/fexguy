@@ -52,12 +52,12 @@ const claimsNotice = [
   { x: 36.3, y: 83.4, says: '“RESPOND TODAY” and “You may be missing benefits available to residents.”', means: 'It suggests there’s a residents’ benefit you’re about to lose. There isn’t one named anywhere on the card. What you’d be missing is a sales call.' },
 ];
 const M = mailer === 'notice'
-  ? { src: '/images/mailers/2026-important-benefit-notice-mailer.jpg', w: 1875, h: 839, claims: claimsNotice, id: 'mailer-claims-notice', titleId: 'mdec-title-notice', title: '9 misleading claims on this life insurance mailer, explained', Tag: 'h3' as const,
+  ? { src: '/images/mailers/2026-important-benefit-notice-mailer.jpg', w: 1875, h: 839, claims: claimsNotice, id: 'mailer-claims-notice', titleId: 'mdec-title-notice', title: '9 Misleading Claims on This Life Insurance Mailer, Explained', Tag: 'h3' as const,
       alt: 'A mailer headed “2026 Benefit Information” with a black “Important Benefit Notice” label. It says the reader may be eligible for a no-cost information package on a state-regulated life insurance program that can help pay up to $35,000 for final expenses, regardless of current health, and lists No Medical Exam, Regardless of Health and Same-Day Information. It says “Please Respond By Apr. 9, 2026,” “Respond Today” and “You may be missing benefits available to residents.” A form asks for name, age, spouse’s name and age, street address with no PO boxes, and phone with area code, above the line “Not affiliated with or endorsed by any government agency.” The address and barcodes are blurred.' }
   : mailer === '2027'
-  ? { src: '/images/mailers/2027-state-citizens-benefit-mailer.jpg', w: 2000, h: 667, claims: claims2027, id: 'mailer-claims-2027', titleId: 'mdec-title-2027', title: '8 more misleading claims worth a closer look', Tag: 'h3' as const,
+  ? { src: '/images/mailers/2027-state-citizens-benefit-mailer.jpg', w: 2000, h: 667, claims: claims2027, id: 'mailer-claims-2027', titleId: 'mdec-title-2027', title: '8 More Misleading Claims Worth a Closer Look', Tag: 'h3' as const,
       alt: 'Both sides of a 2027 mailer. The front, headed “2027 Benefit Information for State Citizens Only,” says the reader may qualify for a state-regulated life insurance program to pay final expenses regardless of medical condition, even if turned down in the past; says the benefit could pay 100% of all funeral expenses up to $35,000 and is tax-free for state residents; says the reader is entitled to no-cost information as a resident of the state; and says to return the postage-paid card within 5 days. The reply side asks for name, home address, phone, age, spouse’s age and spouse’s name, and reads “Not affiliated with or endorsed by any government agency.” The recipient’s name and address are blurred.' }
-  : { src, w: 1496, h: 627, claims, id: 'mailer-claims', titleId: 'mdec-title', title: '8 misleading claims on this life insurance mailer', Tag: 'h2' as const, alt };
+  : { src, w: 1496, h: 627, claims, id: 'mailer-claims', titleId: 'mdec-title', title: '8 Misleading Claims on This Life Insurance Mailer', Tag: 'h2' as const, alt };
 const Tag = M.Tag;
 ---
 

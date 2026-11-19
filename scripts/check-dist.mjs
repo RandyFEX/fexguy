@@ -864,7 +864,8 @@ for (const file of [...pages, join(DIST, '404.html')].filter((f) => existsSync(f
 // (no button class), unless their text is an old pricing label.
 const CTA_TEXT = 'SEE PRICES NOW';
 // The funeral cost map's CTA reads Randy's own wording for that page (Map V3.0, November 2026).
-const CTA_PAGE_TEXT = { '/funeral-cost-map/': 'GET MY PERSONALIZED COVERAGE QUOTE' };
+// The state-regulated investigation preview's first closing card reads Randy's own wording (V6.7, November 2026).
+const CTA_PAGE_TEXT = { '/funeral-cost-map/': 'GET MY PERSONALIZED COVERAGE QUOTE', '/state-regulated-investigation-preview/': 'Get Your Free Quote' };
 const FREE_QUOTE_HREF = /^(?:https?:\/\/(?:www\.)?(?:funeralfunds|fexguy)\.com)?\/free-quote(?:\/|\?|#|$)/i;
 const CTA_CLASS = /\b(?:btn|button|button-link|nav__quote|nav__top-link|cta)\b/;
 const OLD_PRICING_LABEL = /\b(?:GET PRICING|GET (?:A |MY |YOUR )?(?:FREE )?(?:QUOTES?|PRICES?|RATES)|SEE PRICES|VIEW PRICES|FREE FINAL EXPENSE QUOTE)\b/i;
