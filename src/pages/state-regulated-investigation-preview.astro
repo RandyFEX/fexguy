@@ -42,21 +42,24 @@ const keyPoints = [
     <div class="inv__intro">
       <p>I've sold life insurance for 11 years, and I don't have a problem with insurance advertising. Mailers, TV commercials and Facebook ads are how a lot of people find out about coverage. What I object to is a card dressed up to look like a government notice, talking about a "state-regulated program" and benefits "up to $25,000," when it's really an ordinary insurance ad looking for your phone number.</p>
       <p>Every legitimate life insurance company selling policies in your state is regulated by the state. That's just how insurance works. So "state-regulated" tells you nothing about who's offering the coverage, what it costs or whether it's any good, and there's no government check waiting at the end of it. What the card wants is your name, address, phone number and age, and sometimes your spouse's too, because once you mail it back, that information can become a sales lead.</p>
-      <p>Here's an example of a 2026 state-regulated life insurance mailer. I've numbered eight claims on it that I think every senior ought to understand before mailing anything back.</p>
     </div>
 
-    <MailerDecoder part="figure" />
-    <MailerDecoder part="claims" />
+    <section class="inv__mailer" aria-labelledby="mailer-2026">
+      <div class="inv__banner"><h2 id="mailer-2026">8 Misleading Claims on This Life Insurance Mailer</h2></div>
+      <p>Here's an example of a 2026 state-regulated life insurance mailer. I've numbered eight claims on it that I think every senior ought to understand before mailing anything back.</p>
+      <MailerDecoder part="figure" />
+      <MailerDecoder part="claims" heading={false} />
+    </section>
 
-    <section class="inv__mailer2" aria-labelledby="mailer-2027">
-      <h2 id="mailer-2027">Another Year. Another State-Regulated Life Insurance Mailer.</h2>
+    <section class="inv__mailer" aria-labelledby="mailer-2027">
+      <div class="inv__banner"><h2 id="mailer-2027">Another Year. Another State-Regulated Life Insurance Mailer.</h2></div>
       <p>Here's another example, this time advertising up to $35,000 for 2027. The wording has changed, but take a look at how many of the same marketing tactics show up again.</p>
       <MailerDecoder part="figure" mailer="2027" />
       <MailerDecoder part="claims" mailer="2027" />
     </section>
 
-    <section class="inv__mailer2" aria-labelledby="mailer-notice">
-      <h2 id="mailer-notice">The "Important Benefit Notice" That's Really a Life Insurance Ad</h2>
+    <section class="inv__mailer" aria-labelledby="mailer-notice">
+      <div class="inv__banner"><h2 id="mailer-notice">Important Benefit Notice That's Really a Life Insurance Ad</h2></div>
       <p>This example shows how an ordinary life insurance ad can be dressed up as an "Important Benefit Notice," complete with a respond-by date.</p>
       <MailerDecoder part="figure" mailer="notice" />
       <MailerDecoder part="claims" mailer="notice" />
@@ -144,8 +147,13 @@ const keyPoints = [
   .inv__card-cta { display: flex; flex-direction: column; gap: var(--space-1); }
   .inv__card-cta .btn { margin-top: auto; align-self: start; min-height: var(--tap-target); font-size: 0.9375rem; padding-inline: var(--space-4); display: inline-flex; align-items: center; }
   .inv__sources { font-size: 0.9375rem; }
-  .inv__mailer2 > p, .inv__mailer2 > h2 { max-width: var(--prose-max); }
-  .inv__mailer2 > h2 { margin-top: var(--space-12); }
+  /* Mailer sections: a full-width green banner opens each one. */
+  .inv__mailer { margin-top: var(--space-12); }
+  .inv__mailer > p { max-width: var(--prose-max); }
+  .inv__banner { background: #173f35; border-radius: var(--radius); padding: var(--space-4) var(--space-6); margin-bottom: var(--space-4); }
+  .inv__banner h2 { color: #ffffff; margin: 0; font-weight: 800; font-size: clamp(1.375rem, 1.1rem + 1.2vw, 2rem); line-height: 1.2; }
+  .inv__mailer :global(.mdec__figure) { margin-top: var(--space-4); }
+  @media (max-width: 47.99rem) { .inv__banner { padding: var(--space-3) var(--space-4); } }
   @media (min-width: 48rem) {
     .inv__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }

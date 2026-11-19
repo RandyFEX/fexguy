@@ -7,8 +7,8 @@
 // unpublished revision on claude/new-session-lhzc27. Short source notes keep
 // this card's own wording apart from what regulators found about OTHER
 // mailers; nothing ties this card to a sender or an insurer.
-interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' | 'notice' }
-const { part, mailer = '2026' } = Astro.props;
+interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' | 'notice'; /** false when the page's section banner carries the heading */ heading?: boolean }
+const { part, mailer = '2026', heading = true } = Astro.props;
 
 const src = '/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg';
 const alt = 'A 2026 mailer marked “F-2” with the headline “2026 Benefit Information for State Residents.” It says the reader may qualify for a state-regulated program to pay final expenses, offers a life insurance benefit up to $25,000 described as tax-free, offers a free Walmart gift card and Final Wishes Planning Guide, asks for a reply within 5 days, and has blank lines for name, home address, phone, age, spouse’s name and spouse’s age. Small print reads “Not affiliated with or endorsed by any government agency.”';
@@ -76,8 +76,8 @@ const Tag = M.Tag;
 )}
 
 {part === 'claims' && (
-  <section class="mdec" id={M.id} aria-labelledby={M.titleId}>
-    <Tag id={M.titleId}>{M.title}</Tag>
+  <section class="mdec" id={M.id} aria-labelledby={heading ? M.titleId : undefined} aria-label={heading ? undefined : `${M.title}: the table`}>
+    {heading && <Tag id={M.titleId}>{M.title}</Tag>}
       <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The ${M.claims.length} claims on the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer and what they mean`}>
         <table class="mdec__table">
           <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">What the mailer says</th><th scope="col">What it actually means</th></tr></thead>
