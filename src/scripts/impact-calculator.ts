@@ -133,16 +133,19 @@ function init(root: HTMLElement) {
     } else {
       const months = im.foodDays >= 60 ? ` <span class="imp__days-note">(about ${fmtWhole(Math.round(im.foodDays / (365 / 12)))} months)</span>` : '';
       const share = im.incomeShare !== null ? `<p class="imp__share">The monthly difference is <strong>${(im.incomeShare * 100).toFixed(1)}%</strong> of a monthly income of ${fmtMoney(s.income!, false)}.</p>` : '';
-      out.innerHTML = `<p class="imp__intro">Over ${period}, choosing ${nameOf(alt)} instead of ${nameOf(base)} costs the same as about</p>
-        <p class="imp__days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> days of food for one person${months}</p>
-        <p class="imp__cal">About <strong>${fmtWhole(im.calories)} calories</strong> (${fmtWhole(im.meals)} meals)</p>
+      out.innerHTML = `<p class="imp__intro">Choosing ${nameOf(alt)} instead of ${nameOf(base)} costs:</p>
         <dl class="imp__money">
-          <div class="imp__money-total"><dt>Difference over ${period}</dt><dd>${fmtMoney(im.period, false)}</dd></div>
+          <div class="imp__money-total"><dt>Over ${period}</dt><dd>${fmtMoney(im.period, false)}</dd></div>
           <div><dt>Per year</dt><dd>${fmtMoney(im.annual)}</dd></div>
           <div><dt>Per month</dt><dd>${fmtMoney(im.monthly)}</dd></div>
         </dl>
         ${share}
-        <p class="imp__muted">Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
+        <div class="imp__food">
+          <p class="imp__food-lead">That money could buy about</p>
+          <p class="imp__days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> days of food for one person${months}</p>
+          <p class="imp__cal">About <strong>${fmtWhole(im.calories)} calories</strong> (${fmtWhole(im.meals)} meals)</p>
+          <p class="imp__muted">Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
+        </div>
         <p class="imp__note">It's a saving only if you qualify for ${nameOf(base)}${base.p.type === 'Level' ? ', which asks health questions' : ''}.</p>`;
     }
 
@@ -152,6 +155,7 @@ function init(root: HTMLElement) {
       if (b.kind === 'premiums-plus-10') return `<td>${fmtMoney(b.amount, false)}<span class="imp__muted"> (premiums + 10%)</span></td>`;
       return `<td>At least ${fmtMoney(b.amount, false)}<span class="imp__muted"> (premiums + an amount set by the policy)</span></td>`;
     };
+    if (!cfg.showBenefits) { benefits.innerHTML = ''; return; }
     const tr = (r: Row) => `<tr><th scope="row">${nameOf(r)}</th>${[6, 18, 25].map((mo) => cell(r, mo)).join('')}</tr>`;
     benefits.innerHTML = `<div class="imp__benefits">
       <h3 class="imp__sub">What the family receives after a death from natural causes</h3>

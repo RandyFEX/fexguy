@@ -20,23 +20,32 @@ interface Props {
   /** The alternative selected first (falls back to the highest-priced plan). */
   selected?: string;
   years?: 1 | 5 | 10 | 20;
+  /** The death-benefit table (kept for later use; off by default). */
+  showBenefits?: boolean;
 }
-const { variant = 'embedded', title = 'Financial Impact Calculator', headingLevel = 2, codes = DEFAULT_INPUT.codes, selected = DEFAULT_INPUT.selected, years = 10 } = Astro.props;
+const { variant = 'embedded', title = 'Financial Impact Calculator', headingLevel = 2, codes = DEFAULT_INPUT.codes, selected = DEFAULT_INPUT.selected, years = 10, showBenefits = false } = Astro.props;
 const uid = `imp-${Math.random().toString(36).slice(2, 8)}`;
 const Heading = (headingLevel === 3 ? 'h3' : 'h2') as 'h2' | 'h3';
-const config = JSON.stringify({ ...DEFAULT_INPUT, codes, selected, years, food: FOOD_DEFAULTS, uid });
+const config = JSON.stringify({ ...DEFAULT_INPUT, codes, selected, years, food: FOOD_DEFAULTS, uid, showBenefits });
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 ---
 
-<section class={`imp imp--${variant}`} aria-labelledby={`${uid}-title`} data-impact data-config={config} data-phone-href={lead.phone.href} data-phone-display={lead.phone.display}>
+<section class={`imp imp--${variant}`} id={variant === "embedded" ? "calculator" : undefined} aria-labelledby={`${uid}-title`} data-impact data-config={config} data-phone-href={lead.phone.href} data-phone-display={lead.phone.display}>
   <div class="imp__head">
     <Heading class="imp__title" id={`${uid}-title`}>{title}</Heading>
     <p class="imp__profile" data-imp-profile>
       Example: a 65-year-old woman who doesn't use tobacco, buying about $10,000 of coverage (Texas rates).
     </p>
-    <button type="button" class="btn imp__toggle" aria-expanded="false" aria-controls={`${uid}-form`} data-imp-toggle>Change the comparison</button>
+    <slot />
   </div>
 
+
+  <div class="imp__results" data-imp-results aria-live="polite" aria-busy="true">
+    <p class="imp__loading">Loading the comparison…</p>
+  </div>
+
+  <div class="imp__custom">
+  <button type="button" class="btn imp__toggle" aria-expanded="false" aria-controls={`${uid}-form`} data-imp-toggle>Change the comparison</button>
   <form class="imp__form" id={`${uid}-form`} hidden data-imp-form novalidate>
     <fieldset class="imp__group">
       <legend>Applicant</legend>
@@ -69,9 +78,6 @@ const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min 
       </label>
     </fieldset>
   </form>
-
-  <div class="imp__results" data-imp-results aria-live="polite" aria-busy="true">
-    <p class="imp__loading">Loading the comparison…</p>
   </div>
 
   <details class="imp__method">

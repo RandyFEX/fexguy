@@ -2,8 +2,7 @@
 // The approved redacted 2026 "F-2" card with numbered markers on its eight
 // claims (PREVIEW, Randy's V5.8 assignment). Two parts:
 //   part="figure"  the large marked image (approved alt text and caption)
-//   part="claims"  "8 claims..." heading, a smaller marked copy of the card and
-//                  the numbered two-column table
+//   part="claims"  the "8 misleading claims" heading and the numbered table
 // The "What it actually means" text is the approved wording from the
 // unpublished revision on claude/new-session-lhzc27. Short source notes keep
 // this card's own wording apart from what regulators found about OTHER
@@ -16,14 +15,14 @@ const alt = 'A 2026 mailer marked “F-2” with the headline “2026 Benefit In
 
 // Marker positions, in percent of the 1496 x 627 image, beside each claim.
 const claims = [
-  { x: 16.3, y: 10.7, says: '“2026 Benefit Information for State Residents”', means: 'A headline written to look like an official notice. It names no government agency.', source: 'Same headline style on other mailers: D.C. 2020, Nebraska 2022', other: true },
-  { x: 50.0, y: 20.7, says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'All life insurance is state regulated. The card doesn’t say what the “program” is or who offers it.', source: 'An Iowa mailer used the same wording: Iowa 2020', other: true },
-  { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: 'A life insurance policy pays its face amount to your beneficiary. Whether that covers 100% of your expenses depends on how much coverage you buy and what your funeral actually costs.' },
-  { x: 36.6, y: 35.3, says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary because of a death generally isn’t taxable income, whatever state you live in (IRS Publication 525). It’s not a special benefit for “state residents.”' },
-  { x: 50.8, y: 42.2, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'A reason to send the card back. The card doesn’t say who provides the gift card or what you’d have to do to get it.' },
-  { x: 86.0, y: 29.6, says: '“Return this postage-paid card within 5 days!”', means: 'The five-day deadline is a marketing tactic, not evidence that a special government benefit expires. Your age can affect your insurance rate, and waiting until after a birthday may change your premium, but that is different from the deadline printed on this card.' },
-  { x: 74.0, y: 64.2, says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'This is the information an agent needs to call or visit you. A postcard can’t prequalify you. Approval only happens on a real application with an insurance company.', source: 'On other mailers, replies were used by or sold to insurers, and the mailer company was paid per lead: D.C. 2020, Iowa 2020', other: true },
-  { x: 53.4, y: 86.6, says: '“Not affiliated with or endorsed by any government agency.”', means: 'The most important line on the card, and the smallest.' },
+  { x: 16.3, y: 10.7, says: '“2026 Benefit Information for State Residents”', means: 'It’s made to look like an official notice, but it doesn’t name a single government agency.', source: 'Same headline style on other mailers: D.C. 2020, Nebraska 2022', other: true },
+  { x: 50.0, y: 20.7, says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'Every life insurance policy is state regulated. The card never says what the “program” is or who runs it.', source: 'An Iowa mailer used the same wording: Iowa 2020', other: true },
+  { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: '$25,000 is the most coverage being advertised, not money coming to you. You’d pay a monthly premium for it, and whether it covers “100%” depends on how much you buy and what your funeral actually costs.' },
+  { x: 36.6, y: 35.3, says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary after a death generally isn’t taxable income in any state (IRS Publication 525). It’s not a perk for “state residents.”' },
+  { x: 50.8, y: 42.2, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'Bait to get the card back. It doesn’t say who provides the gift card or what you’d have to do to get it.' },
+  { x: 86.0, y: 29.6, says: '“Return this postage-paid card within 5 days!”', means: 'A marketing deadline. No government benefit expires in five days. Your age can change your rate, but that has nothing to do with the date printed on this card.' },
+  { x: 74.0, y: 64.2, says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'Exactly what an agent needs to call you or show up at your door. Mailing the card back doesn’t approve you for any policy; that only happens on a real application with an insurance company.', source: 'On other mailers, replies were used by or sold to insurers, and the mailer company was paid per lead: D.C. 2020, Iowa 2020', other: true },
+  { x: 53.4, y: 86.6, says: '“Not affiliated with or endorsed by any government agency.”', means: 'The most honest line on the card, and the smallest.' },
 ];
 ---
 
@@ -39,14 +38,7 @@ const claims = [
 
 {part === 'claims' && (
   <section class="mdec" id="mailer-claims" aria-labelledby="mdec-title">
-    <h2 id="mdec-title">8 claims on this life insurance mailer, explained</h2>
-    <div class="mdec__layout">
-      <div class="mdec__aside">
-        <div class="mdec__card mdec__card--small">
-          <img src={src} width="1496" height="627" loading="lazy" decoding="async" alt="The same 2026 F-2 mailer, with its eight claims numbered 1 to 8." />
-          {claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
-        </div>
-      </div>
+    <h2 id="mdec-title">8 misleading claims on this life insurance mailer</h2>
       <div class="mdec__scroll" tabindex="0" role="region" aria-label="The 8 claims on the mailer and what they mean">
         <table class="mdec__table">
           <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">What the mailer says</th><th scope="col">What it actually means</th></tr></thead>
@@ -61,28 +53,22 @@ const claims = [
           </tbody>
         </table>
       </div>
-    </div>
   </section>
 )}
 
 <style>
-  .mdec__figure { margin: var(--space-6) 0; }
+  .mdec__figure { margin: var(--space-6) 0 var(--space-4); }
   .mdec__card { position: relative; container-type: inline-size; }
   .mdec__card img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: var(--radius); }
   .mdec__pin { position: absolute; transform: translate(-50%, -50%); width: clamp(1.125rem, 3.4cqi, 2rem); height: clamp(1.125rem, 3.4cqi, 2rem); border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: clamp(0.6875rem, 2cqi, 1.0625rem); display: grid; place-items: center; box-shadow: 0 0 0 2px #fff; line-height: 1; }
   .mdec__figure figcaption { color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--space-2); max-width: var(--prose-max); }
-  .mdec__layout { display: grid; gap: var(--space-3); }
-  .mdec__aside { position: sticky; top: 0; z-index: 1; background: var(--color-bg); padding-block: var(--space-2); }
   .mdec__scroll { overflow-x: auto; }
   .mdec__table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
   .mdec__table th, .mdec__table td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: left; vertical-align: top; }
-  .mdec__table thead th { font-size: 0.875rem; }
+  .mdec__table thead th { font-size: 0.875rem; background: var(--color-surface); }
+  .mdec h2 { margin-top: 0; }
   .mdec__table tbody th { font-weight: 700; width: 38%; }
   .mdec__table td:first-child { width: 2rem; }
   .mdec__num { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: 0.8125rem; }
   .mdec__src { display: block; margin-top: var(--space-1); font-size: 0.8125rem; color: var(--color-text-muted); }
-  @media (min-width: 60rem) {
-    /* The large marked card sits directly above; the table runs full width. */
-    .mdec__aside { display: none; }
-  }
 </style>
