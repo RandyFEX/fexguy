@@ -7,8 +7,8 @@
 // unpublished revision on claude/new-session-lhzc27. Short source notes keep
 // this card's own wording apart from what regulators found about OTHER
 // mailers; nothing ties this card to a sender or an insurer.
-interface Props { part: 'figure' | 'claims' }
-const { part } = Astro.props;
+interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' }
+const { part, mailer = '2026' } = Astro.props;
 
 const src = '/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg';
 const alt = 'A 2026 mailer marked “F-2” with the headline “2026 Benefit Information for State Residents.” It says the reader may qualify for a state-regulated program to pay final expenses, offers a life insurance benefit up to $25,000 described as tax-free, offers a free Walmart gift card and Final Wishes Planning Guide, asks for a reply within 5 days, and has blank lines for name, home address, phone, age, spouse’s name and spouse’s age. Small print reads “Not affiliated with or endorsed by any government agency.”';
@@ -24,26 +24,47 @@ const claims = [
   { x: 74.0, y: 64.2, says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'Exactly what an agent needs to call you or show up at your door. Mailing the card back doesn’t approve you for any policy; that only happens on a real application with an insurance company.', source: 'On other mailers, replies were used by or sold to insurers, and the mailer company was paid per lead: D.C. 2020, Iowa 2020', other: true },
   { x: 53.4, y: 86.6, says: '“Not affiliated with or endorsed by any government agency.”', means: 'The most honest line on the card, and the smallest.' },
 ];
+
+// The 2027 two-sided card (Randy, V6.5): his eight statements and
+// explanations, verbatim. Marker positions in percent of the 2000 x 667 image.
+const claims2027 = [
+  { x: 4.2, y: 9.0, says: '2027 Benefit Information for State Citizens Only', means: 'This sounds like an official state notice, but the card is advertising life insurance. Being a resident of the state doesn’t make this a government benefit.' },
+  { x: 45.6, y: 27.6, says: 'State-Regulated Life Insurance Program', means: 'Insurance companies are already regulated by the states where they operate. The phrase doesn’t identify a special government-sponsored insurance program.' },
+  { x: 21.2, y: 43.6, says: 'Regardless of Your Medical Condition', means: 'This suggests coverage may be available even with serious health problems. That doesn’t tell you which policy you’d receive, what it would cost, or whether there would be a waiting period.' },
+  { x: 2.0, y: 52.4, says: '100% of Funeral Expenses Up to $35,000', means: 'The $35,000 is an advertised maximum, not money automatically available to the recipient. The amount payable depends on the coverage purchased and the policy terms.' },
+  { x: 38.6, y: 62.2, says: 'Tax-Free for State Residents', means: 'Life insurance death benefits are generally received income-tax-free by beneficiaries. That isn’t a special tax advantage created by this mailer or reserved for state residents.' },
+  { x: 3.1, y: 78.0, says: 'Entitled to No-Cost Information', means: 'They’re offering free information about insurance. That doesn’t mean you’re entitled to free insurance or a government-funded benefit.' },
+  { x: 1.5, y: 88.4, says: 'Return Within 5 Days', means: 'The card creates urgency, but it doesn’t establish that an insurance benefit disappears after five days. Don’t mistake an advertising deadline for a government enrollment deadline.' },
+  { x: 76.6, y: 29.0, says: 'Personal and Spouse Information', means: 'The response form asks for information that can be used to contact you about insurance. Notice that it also asks for your spouse’s information, potentially creating another sales opportunity.' },
+];
+const M = mailer === '2027'
+  ? { src: '/images/mailers/2027-state-citizens-benefit-mailer.jpg', w: 2000, h: 667, claims: claims2027, id: 'mailer-claims-2027', titleId: 'mdec-title-2027', title: '8 more misleading claims worth a closer look', Tag: 'h3' as const,
+      alt: 'Both sides of a 2027 mailer. The front, headed “2027 Benefit Information for State Citizens Only,” says the reader may qualify for a state-regulated life insurance program to pay final expenses regardless of medical condition, even if turned down in the past; says the benefit could pay 100% of all funeral expenses up to $35,000 and is tax-free for state residents; says the reader is entitled to no-cost information as a resident of the state; and says to return the postage-paid card within 5 days. The reply side asks for name, home address, phone, age, spouse’s age and spouse’s name, and reads “Not affiliated with or endorsed by any government agency.” The recipient’s name and address are blurred.' }
+  : { src, w: 1496, h: 627, claims, id: 'mailer-claims', titleId: 'mdec-title', title: '8 misleading claims on this life insurance mailer', Tag: 'h2' as const, alt };
+const Tag = M.Tag;
 ---
 
 {part === 'figure' && (
   <figure class="mdec__figure">
+    <div class={mailer === '2027' ? 'mdec__pan' : undefined} tabindex={mailer === '2027' ? 0 : undefined} role={mailer === '2027' ? 'region' : undefined} aria-label={mailer === '2027' ? 'The 2027 mailer, both sides' : undefined}>
     <div class="mdec__card">
-      <img src={src} width="1496" height="627" decoding="async" fetchpriority="high" alt={alt} />
-      {claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
+      <img src={M.src} width={M.w} height={M.h} decoding="async" loading={mailer === '2026' ? 'eager' : 'lazy'} alt={M.alt} />
+      {M.claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
     </div>
-    <figcaption>A real 2026 “Benefit Information” reply card marked “F-2.” The recipient’s details, postal codes and barcodes are covered. The card shows the advertising language only. It doesn’t name who sent it, an insurance company or a specific policy, and it isn’t, by itself, evidence that anyone broke the law. The numbers mark the <a href="#mailer-claims">8 claims explained below</a>.</figcaption>
+    </div>
+    {mailer === '2027' && <p class="mdec__hint">Swipe to see the whole card.</p>}
+    {mailer === '2026' && <figcaption>A real 2026 “Benefit Information” reply card marked “F-2.” The recipient’s details, postal codes and barcodes are covered. The card shows the advertising language only. It doesn’t name who sent it, an insurance company or a specific policy, and it isn’t, by itself, evidence that anyone broke the law. The numbers mark the <a href="#mailer-claims">8 claims explained below</a>.</figcaption>}
   </figure>
 )}
 
 {part === 'claims' && (
-  <section class="mdec" id="mailer-claims" aria-labelledby="mdec-title">
-    <h2 id="mdec-title">8 misleading claims on this life insurance mailer</h2>
-      <div class="mdec__scroll" tabindex="0" role="region" aria-label="The 8 claims on the mailer and what they mean">
+  <section class="mdec" id={M.id} aria-labelledby={M.titleId}>
+    <Tag id={M.titleId}>{M.title}</Tag>
+      <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The 8 claims on the ${mailer} mailer and what they mean`}>
         <table class="mdec__table">
           <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">What the mailer says</th><th scope="col">What it actually means</th></tr></thead>
           <tbody>
-            {claims.map((c, i) => (
+            {M.claims.map((c: { says: string; means: string; source?: string; other?: boolean }, i: number) => (
               <tr>
                 <td><span class="mdec__num">{i + 1}</span></td>
                 <th scope="row">{c.says}</th>
@@ -63,10 +84,16 @@ const claims = [
   .mdec__pin { position: absolute; transform: translate(-50%, -50%); width: clamp(1.125rem, 3.4cqi, 2rem); height: clamp(1.125rem, 3.4cqi, 2rem); border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: clamp(0.6875rem, 2cqi, 1.0625rem); display: grid; place-items: center; box-shadow: 0 0 0 2px #fff; line-height: 1; }
   .mdec__figure figcaption { color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--space-2); max-width: var(--prose-max); }
   .mdec__scroll { overflow-x: auto; }
+  .mdec__hint { display: none; font-size: 0.8125rem; color: var(--color-text-muted); margin: var(--space-1) 0 0; }
+  @media (max-width: 47.99rem) {
+    .mdec__pan { overflow-x: auto; }
+    .mdec__pan .mdec__card { width: 46rem; }
+    .mdec__hint { display: block; }
+  }
   .mdec__table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
   .mdec__table th, .mdec__table td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: left; vertical-align: top; }
   .mdec__table thead th { font-size: 0.875rem; background: var(--color-surface); }
-  .mdec h2 { margin-top: 0; }
+  .mdec :is(h2, h3) { margin-top: 0; }
   .mdec__table tbody th { font-weight: 700; width: 38%; }
   .mdec__table td:first-child { width: 2rem; }
   .mdec__num { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: 0.8125rem; }

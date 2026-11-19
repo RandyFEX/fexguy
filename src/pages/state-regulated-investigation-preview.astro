@@ -48,6 +48,13 @@ const keyPoints = [
     <MailerDecoder part="figure" />
     <MailerDecoder part="claims" />
 
+    <section class="inv__mailer2" aria-labelledby="mailer-2027">
+      <h2 id="mailer-2027">Another year. Another state-regulated life insurance mailer.</h2>
+      <p>Here's another example, this time advertising up to $35,000 for 2027. The wording has changed, but take a look at how many of the same marketing tactics show up again.</p>
+      <MailerDecoder part="figure" mailer="2027" />
+      <MailerDecoder part="claims" mailer="2027" />
+    </section>
+
     <h2 id="regulators">What insurance regulators discovered about these mailers</h2>
     <p>I don't know who sent this particular card, and I'm not going to guess. But state insurance regulators have looked at mailers built exactly like it, and what they found is worth knowing.</p>
     <div class="inv__findings">
@@ -79,6 +86,13 @@ const keyPoints = [
     <p>Some agents may lean toward guaranteed-acceptance insurance because it doesn't ask health questions and can be easier to place. That isn't true of every agent, and you can't tell how an agent works, or how they're paid, just from the mailer. Guaranteed acceptance can be the right fit for someone who can't qualify for simplified issue coverage. But it generally costs more than first-day coverage for a comparable applicant, and it has a waiting period before the full benefit is paid for a death from natural causes.</p>
 
     <ImpactCalculator variant="embedded" title="What the wrong policy can cost you" />
+
+    <h2 id="right-plan">Finding the right life insurance plan</h2>
+    <p>Finding the right life insurance plan isn't about responding to the most official-looking advertisement or choosing the company with the biggest advertised benefit. It's about finding coverage that actually fits your needs, your health, and your budget.</p>
+    <p>I've spent 11 years helping people compare life insurance companies, and one of the biggest mistakes I see is people buying a policy without knowing what else is available.</p>
+    <p>Some people can qualify for coverage that pays from the first day. Others may need a policy with a waiting period. The important thing is knowing which options are actually available to you before making a decision.</p>
+    <p>And sometimes, if you already have enough money set aside to cover your final expenses, you may not need another insurance policy at all.</p>
+    <p>My job isn't to sell you whatever happens to be advertised in your mailbox. It's to help you find out whether you need coverage and, if you do, which available policy makes the most sense.</p>
 
     <h2 id="before-you-respond">Before you respond to this mailer, do this instead</h2>
     <p>Your state doesn't sponsor, fund or give away private life insurance to its residents. The real government options are limited and specific: Social Security's one-time $255 death payment to an eligible spouse or child, VA burial benefits and VALife for eligible veterans, and a few others for particular groups.</p>
@@ -121,6 +135,8 @@ const keyPoints = [
   .inv__cards li::before { content: counter(inv-card); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; margin-bottom: var(--space-2); }
   .inv__cards li strong { display: block; color: var(--color-primary); }
   .inv__sources { font-size: 0.9375rem; }
+  .inv__mailer2 > p, .inv__mailer2 > h2 { max-width: var(--prose-max); }
+  .inv__mailer2 > h2 { margin-top: var(--space-12); }
   @media (min-width: 48rem) {
     .inv__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
