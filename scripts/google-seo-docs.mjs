@@ -242,6 +242,8 @@ async function crawl() {
       const src = checkSource(f.requestedUrl, config);
       await handle({ ...src, depth: f.depth, from: f.discoveredFrom });
     }
+    // Pages recovered by the retry can link to pages not seen yet: crawl those too.
+    if (queue.length) await Promise.all(Array.from({ length: config.limits.concurrency }, worker));
   }
   rmSync(tmp, { recursive: true, force: true });
 

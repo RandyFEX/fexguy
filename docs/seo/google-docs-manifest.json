@@ -1,6 +1,6 @@
 {
   "_about": "Retrieval metadata only (no documentation content), written by `npm run seo:google-docs`. Used to report documentation changes on the next run.",
-  "generatedAt": "2026-11-19T13:57:36.656Z",
+  "generatedAt": "2026-11-19T14:34:45.099Z",
   "counts": {
     "discovered": 759,
     "attempted": 759,
@@ -19,7 +19,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:49:58.863Z"
+      "retrievedAt": "2026-11-19T14:26:56.861Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/api",
@@ -29,7 +29,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:49.927Z"
+      "retrievedAt": "2026-11-19T14:28:52.648Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/bigquery",
@@ -39,7 +39,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:50.415Z"
+      "retrievedAt": "2026-11-19T14:28:52.041Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/dashboard",
@@ -49,7 +49,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:53.402Z"
+      "retrievedAt": "2026-11-19T14:31:57.335Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/feedback",
@@ -59,7 +59,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:48.758Z"
+      "retrievedAt": "2026-11-19T14:28:51.279Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides",
@@ -69,7 +69,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:50.519Z"
+      "retrievedAt": "2026-11-19T14:28:53.338Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides/bigquery",
@@ -79,7 +79,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:51.683Z"
+      "retrievedAt": "2026-11-19T14:28:54.111Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides/crux-api",
@@ -89,7 +89,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:51.149Z"
+      "retrievedAt": "2026-11-19T14:28:53.479Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides/history-api",
@@ -99,7 +99,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:51.476Z"
+      "retrievedAt": "2026-11-19T14:28:54.149Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides/looker-studio-dashboard",
@@ -109,7 +109,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:09.553Z"
+      "retrievedAt": "2026-11-19T14:34:09.125Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/guides/pagespeed-insights",
@@ -119,7 +119,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:50.887Z"
+      "retrievedAt": "2026-11-19T14:28:53.239Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/history-api",
@@ -129,7 +129,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:50.059Z"
+      "retrievedAt": "2026-11-19T14:28:52.820Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/methodology",
@@ -139,7 +139,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:47.573Z"
+      "retrievedAt": "2026-11-19T14:28:50.026Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/methodology/dimensions",
@@ -149,7 +149,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:48.270Z"
+      "retrievedAt": "2026-11-19T14:28:50.822Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/methodology/metrics",
@@ -159,7 +159,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:48.157Z"
+      "retrievedAt": "2026-11-19T14:28:50.760Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/methodology/tools",
@@ -169,7 +169,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:49.212Z"
+      "retrievedAt": "2026-11-19T14:28:51.652Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/release-notes",
@@ -179,7 +179,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:48.306Z"
+      "retrievedAt": "2026-11-19T14:28:50.959Z"
     },
     {
       "url": "https://developer.chrome.com/docs/crux/vis",
@@ -189,7 +189,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:49.221Z"
+      "retrievedAt": "2026-11-19T14:28:51.873Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/bf-cache",
@@ -199,7 +199,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:39.109Z"
+      "retrievedAt": "2026-11-19T14:31:43.607Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/bootup-time",
@@ -209,7 +209,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:41.042Z"
+      "retrievedAt": "2026-11-19T14:31:45.654Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains",
@@ -219,7 +219,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:52.427Z"
+      "retrievedAt": "2026-11-19T14:31:56.255Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/dom-size",
@@ -229,7 +229,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:52.303Z"
+      "retrievedAt": "2026-11-19T14:31:56.196Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint",
@@ -239,7 +239,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:37.067Z"
+      "retrievedAt": "2026-11-19T14:31:41.652Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/first-cpu-idle",
@@ -249,7 +249,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:42.299Z"
+      "retrievedAt": "2026-11-19T14:31:46.638Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint",
@@ -259,7 +259,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:49.504Z"
+      "retrievedAt": "2026-11-19T14:30:53.847Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/font-display",
@@ -269,7 +269,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:49.496Z"
+      "retrievedAt": "2026-11-19T14:31:54.171Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/interactive",
@@ -279,7 +279,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:41.939Z"
+      "retrievedAt": "2026-11-19T14:31:46.383Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint",
@@ -289,7 +289,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:38.217Z"
+      "retrievedAt": "2026-11-19T14:31:42.565Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid",
@@ -299,7 +299,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:42.722Z"
+      "retrievedAt": "2026-11-19T14:31:46.945Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time",
@@ -309,7 +309,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:37.729Z"
+      "retrievedAt": "2026-11-19T14:31:42.735Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown",
@@ -319,7 +319,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:40.604Z"
+      "retrievedAt": "2026-11-19T14:31:45.413Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations",
@@ -329,7 +329,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:38.381Z"
+      "retrievedAt": "2026-11-19T14:31:43.206Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/offscreen-images",
@@ -339,7 +339,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:38.871Z"
+      "retrievedAt": "2026-11-19T14:31:44.406Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/performance-scoring",
@@ -349,7 +349,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:36.353Z"
+      "retrievedAt": "2026-11-19T14:31:40.753Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/redirects",
@@ -360,7 +360,7 @@
         "redirects",
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:51.928Z"
+      "retrievedAt": "2026-11-19T14:31:55.775Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources",
@@ -370,7 +370,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:47.179Z"
+      "retrievedAt": "2026-11-19T14:28:49.827Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/resource-summary",
@@ -380,7 +380,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:39.341Z"
+      "retrievedAt": "2026-11-19T14:31:43.967Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/speed-index",
@@ -390,7 +390,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:50.039Z"
+      "retrievedAt": "2026-11-19T14:30:55.018Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/third-party-facades",
@@ -400,7 +400,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:39.509Z"
+      "retrievedAt": "2026-11-19T14:31:44.158Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight",
@@ -410,7 +410,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:38.215Z"
+      "retrievedAt": "2026-11-19T14:31:42.924Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/unminified-css",
@@ -420,7 +420,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:39.893Z"
+      "retrievedAt": "2026-11-19T14:31:44.578Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript",
@@ -430,7 +430,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:40.504Z"
+      "retrievedAt": "2026-11-19T14:31:44.896Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules",
@@ -440,7 +440,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:41.738Z"
+      "retrievedAt": "2026-11-19T14:31:45.870Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/unused-javascript",
@@ -450,7 +450,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:51.424Z"
+      "retrievedAt": "2026-11-19T14:31:55.292Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/user-timings",
@@ -460,7 +460,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:42.010Z"
+      "retrievedAt": "2026-11-19T14:31:46.396Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl",
@@ -470,7 +470,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:49.133Z"
+      "retrievedAt": "2026-11-19T14:31:53.827Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images",
@@ -480,7 +480,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:48.839Z"
+      "retrievedAt": "2026-11-19T14:31:53.136Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect",
@@ -490,7 +490,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:51.833Z"
+      "retrievedAt": "2026-11-19T14:31:55.556Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preload",
@@ -500,7 +500,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:40.616Z"
+      "retrievedAt": "2026-11-19T14:31:45.332Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images",
@@ -510,7 +510,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:47.691Z"
+      "retrievedAt": "2026-11-19T14:31:53.200Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression",
@@ -520,7 +520,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:07.980Z"
+      "retrievedAt": "2026-11-19T14:34:08.525Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images",
@@ -530,7 +530,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:47.927Z"
+      "retrievedAt": "2026-11-19T14:31:52.920Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/canonical",
@@ -541,7 +541,7 @@
         "canonicals-and-duplicates",
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:43.407Z"
+      "retrievedAt": "2026-11-19T14:31:47.704Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/font-size",
@@ -551,7 +551,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:51:26.768Z"
+      "retrievedAt": "2026-11-19T14:28:28.029Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/hreflang",
@@ -561,7 +561,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:43.009Z"
+      "retrievedAt": "2026-11-19T14:31:48.078Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/http-status-code",
@@ -571,7 +571,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:43.536Z"
+      "retrievedAt": "2026-11-19T14:31:47.944Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt",
@@ -582,7 +582,7 @@
         "robots-and-indexing-directives",
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:43.882Z"
+      "retrievedAt": "2026-11-19T14:31:48.221Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/is-crawlable",
@@ -592,7 +592,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:52.836Z"
+      "retrievedAt": "2026-11-19T14:31:56.733Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/link-text",
@@ -602,7 +602,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:43.029Z"
+      "retrievedAt": "2026-11-19T14:31:47.219Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/meta-description",
@@ -612,7 +612,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:37.286Z"
+      "retrievedAt": "2026-11-19T14:31:41.888Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/plugins",
@@ -622,7 +622,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:44.462Z"
+      "retrievedAt": "2026-11-19T14:31:48.519Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/structured-data",
@@ -632,7 +632,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:44.786Z"
+      "retrievedAt": "2026-11-19T14:31:49.200Z"
     },
     {
       "url": "https://developer.chrome.com/docs/lighthouse/seo/tap-targets",
@@ -642,7 +642,7 @@
       "topics": [
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:54:44.282Z"
+      "retrievedAt": "2026-11-19T14:31:48.763Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/about-crawling",
@@ -652,7 +652,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:15.857Z"
+      "retrievedAt": "2026-11-19T14:29:19.815Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/changelog",
@@ -662,7 +662,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:03.122Z"
+      "retrievedAt": "2026-11-19T14:28:02.522Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawl-budget",
@@ -672,7 +672,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:01.031Z"
+      "retrievedAt": "2026-11-19T14:28:00.933Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/allow-google-agent",
@@ -682,7 +682,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:17.044Z"
+      "retrievedAt": "2026-11-19T14:29:20.436Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/apis-user-agent",
@@ -692,7 +692,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:17.837Z"
+      "retrievedAt": "2026-11-19T14:29:21.440Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/feedfetcher",
@@ -702,7 +702,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:18.199Z"
+      "retrievedAt": "2026-11-19T14:29:21.494Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
@@ -712,7 +712,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:53.696Z"
+      "retrievedAt": "2026-11-19T14:27:52.916Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-special-case-crawlers",
@@ -722,7 +722,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:15.262Z"
+      "retrievedAt": "2026-11-19T14:29:19.279Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers",
@@ -732,7 +732,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:03.499Z"
+      "retrievedAt": "2026-11-19T14:28:03.090Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/overview-google-crawlers",
@@ -742,7 +742,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:10.904Z"
+      "retrievedAt": "2026-11-19T14:27:10.422Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/read-aloud-user-agent",
@@ -752,7 +752,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:04.257Z"
+      "retrievedAt": "2026-11-19T14:28:03.955Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/reduce-crawl-rate",
@@ -762,7 +762,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:11.355Z"
+      "retrievedAt": "2026-11-19T14:27:11.211Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests",
@@ -772,7 +772,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:12.489Z"
+      "retrievedAt": "2026-11-19T14:27:11.697Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/web-bot-auth",
@@ -782,7 +782,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:52:16.559Z"
+      "retrievedAt": "2026-11-19T14:29:20.097Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/faceted-navigation",
@@ -792,7 +792,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:00.942Z"
+      "retrievedAt": "2026-11-19T14:28:00.541Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/myths-about-crawling",
@@ -802,7 +802,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:17.247Z"
+      "retrievedAt": "2026-11-19T14:28:17.887Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/robots-txt/create-robots-txt",
@@ -813,7 +813,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:51:18.274Z"
+      "retrievedAt": "2026-11-19T14:28:18.659Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
@@ -824,7 +824,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:50:11.970Z"
+      "retrievedAt": "2026-11-19T14:27:11.305Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/robots-txt/submit-updated-robots-txt",
@@ -835,7 +835,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:51:21.943Z"
+      "retrievedAt": "2026-11-19T14:28:22.117Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/robots-txt/useful-robots-txt-rules",
@@ -846,7 +846,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:52:17.112Z"
+      "retrievedAt": "2026-11-19T14:29:20.649Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/troubleshooting/dns-network-errors",
@@ -856,7 +856,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:01.950Z"
+      "retrievedAt": "2026-11-19T14:28:01.746Z"
     },
     {
       "url": "https://developers.google.com/crawling/docs/troubleshooting/http-status-codes",
@@ -866,7 +866,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:51:02.215Z"
+      "retrievedAt": "2026-11-19T14:28:01.266Z"
     },
     {
       "url": "https://developers.google.com/search/blog",
@@ -876,7 +876,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:49:58.066Z"
+      "retrievedAt": "2026-11-19T14:26:56.336Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/01/search-central-live-brazil",
@@ -886,7 +886,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:42.920Z"
+      "retrievedAt": "2026-11-19T14:28:45.674Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/01/simplifying-breadcrumbs",
@@ -897,7 +897,7 @@
         "site-architecture",
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:06.968Z"
+      "retrievedAt": "2026-11-19T14:28:06.475Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/02/intro-robots-refresher",
@@ -907,7 +907,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:42.778Z"
+      "retrievedAt": "2026-11-19T14:28:44.701Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/02/search-central-live-nyc",
@@ -917,7 +917,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:42.761Z"
+      "retrievedAt": "2026-11-19T14:28:44.851Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/first-search-central-live-in-south-africa",
@@ -927,7 +927,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:42.084Z"
+      "retrievedAt": "2026-11-19T14:28:44.431Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/robots-future",
@@ -937,7 +937,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:40.843Z"
+      "retrievedAt": "2026-11-19T14:28:43.120Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/robots-refresher-page-level",
@@ -947,7 +947,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:41.373Z"
+      "retrievedAt": "2026-11-19T14:28:43.988Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/robotstxt-flexible-way-to-control",
@@ -957,7 +957,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:41.585Z"
+      "retrievedAt": "2026-11-19T14:28:43.716Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/search-central-live-deep-dive-apac-2025",
@@ -967,7 +967,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:41.122Z"
+      "retrievedAt": "2026-11-19T14:28:43.052Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/03/search-central-live-madrid",
@@ -977,7 +977,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:41.813Z"
+      "retrievedAt": "2026-11-19T14:28:44.042Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/04/san-hourly-data",
@@ -987,7 +987,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:40.731Z"
+      "retrievedAt": "2026-11-19T14:28:42.648Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/04/search-central-live-deep-dive-2025",
@@ -997,7 +997,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:40.320Z"
+      "retrievedAt": "2026-11-19T14:28:42.309Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/05/app-deep-links",
@@ -1007,7 +1007,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:40.146Z"
+      "retrievedAt": "2026-11-19T14:28:42.109Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search",
@@ -1017,7 +1017,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:06.026Z"
+      "retrievedAt": "2026-11-19T14:28:05.780Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/06/loyalty-program",
@@ -1027,7 +1027,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:39.756Z"
+      "retrievedAt": "2026-11-19T14:28:41.769Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/06/scl-dd-apac-2025-news",
@@ -1037,7 +1037,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:39.714Z"
+      "retrievedAt": "2026-11-19T14:28:41.608Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/06/search-console-insights",
@@ -1047,7 +1047,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:39.441Z"
+      "retrievedAt": "2026-11-19T14:28:40.863Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/06/simplifying-search-results",
@@ -1057,7 +1057,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:00.508Z"
+      "retrievedAt": "2026-11-19T14:28:00.409Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/07/trends-api",
@@ -1067,7 +1067,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:39.202Z"
+      "retrievedAt": "2026-11-19T14:28:41.081Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/08/search-central-live-mexico-2025",
@@ -1077,7 +1077,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:38.615Z"
+      "retrievedAt": "2026-11-19T14:28:40.532Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/09/scl-dubai",
@@ -1087,7 +1087,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:37.907Z"
+      "retrievedAt": "2026-11-19T14:28:39.421Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/09/scl-hkk",
@@ -1097,7 +1097,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:38.569Z"
+      "retrievedAt": "2026-11-19T14:28:40.139Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/09/scl-tok",
@@ -1107,7 +1107,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:38.401Z"
+      "retrievedAt": "2026-11-19T14:28:39.833Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/09/store-widget",
@@ -1117,7 +1117,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:37.691Z"
+      "retrievedAt": "2026-11-19T14:28:39.731Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/10/search-console-query-groups",
@@ -1127,7 +1127,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:37.433Z"
+      "retrievedAt": "2026-11-19T14:28:38.776Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/11/custom-chart-annotations",
@@ -1137,7 +1137,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:36.373Z"
+      "retrievedAt": "2026-11-19T14:28:37.708Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/11/more-ways-to-share-shipping",
@@ -1147,7 +1147,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:36.667Z"
+      "retrievedAt": "2026-11-19T14:28:37.926Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/11/search-central-live-zurich-is-back",
@@ -1157,7 +1157,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:36.907Z"
+      "retrievedAt": "2026-11-19T14:28:38.694Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/11/search-console-branded-filter",
@@ -1167,7 +1167,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:36.115Z"
+      "retrievedAt": "2026-11-19T14:28:37.257Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/11/update-on-our-efforts",
@@ -1177,7 +1177,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:03.724Z"
+      "retrievedAt": "2026-11-19T14:28:03.310Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/12/ai-powered-configuration",
@@ -1188,7 +1188,7 @@
         "ai-overviews-and-ai-mode",
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:35.938Z"
+      "retrievedAt": "2026-11-19T14:28:37.746Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/12/scl-eoy",
@@ -1198,7 +1198,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:34.964Z"
+      "retrievedAt": "2026-11-19T14:28:36.188Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/12/social-channels-search-console",
@@ -1208,7 +1208,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:35.598Z"
+      "retrievedAt": "2026-11-19T14:28:36.542Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2025/12/weekly-monthly-views-search-console",
@@ -1218,7 +1218,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:35.382Z"
+      "retrievedAt": "2026-11-19T14:28:36.588Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/01/search-central-live-brasil-argentina",
@@ -1228,7 +1228,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:34.951Z"
+      "retrievedAt": "2026-11-19T14:28:35.629Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/02/discover-core-update",
@@ -1238,7 +1238,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:50:59.603Z"
+      "retrievedAt": "2026-11-19T14:27:59.739Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/03/crawler-blog-post",
@@ -1248,7 +1248,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:33.683Z"
+      "retrievedAt": "2026-11-19T14:28:34.610Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/03/crawler-ip-ranges",
@@ -1258,7 +1258,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:33.881Z"
+      "retrievedAt": "2026-11-19T14:28:34.854Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/03/scl-apac-2026",
@@ -1268,7 +1268,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:34.738Z"
+      "retrievedAt": "2026-11-19T14:28:35.435Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/03/scl-canada-2026",
@@ -1278,7 +1278,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:34.221Z"
+      "retrievedAt": "2026-11-19T14:28:35.452Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/04/back-button-hijacking",
@@ -1288,7 +1288,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:50:59.829Z"
+      "retrievedAt": "2026-11-19T14:27:59.188Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/04/scl-shanghai-2026",
@@ -1298,7 +1298,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:33.568Z"
+      "retrievedAt": "2026-11-19T14:28:34.479Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing",
@@ -1308,7 +1308,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:33.151Z"
+      "retrievedAt": "2026-11-19T14:28:34.024Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports",
@@ -1318,7 +1318,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:32.832Z"
+      "retrievedAt": "2026-11-19T14:28:33.866Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/06/scl-deep-dive-europe-2026",
@@ -1328,7 +1328,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:32.528Z"
+      "retrievedAt": "2026-11-19T14:28:33.555Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/07/platform-properties-social-video-guide",
@@ -1338,7 +1338,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:31.647Z"
+      "retrievedAt": "2026-11-19T14:28:32.788Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/07/search-central-live-deep-dive-europe-2026",
@@ -1348,7 +1348,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:32.597Z"
+      "retrievedAt": "2026-11-19T14:28:33.311Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/07/search-console-social-video-platforms",
@@ -1358,7 +1358,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:31.859Z"
+      "retrievedAt": "2026-11-19T14:28:33.038Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/08/update-site-reputation-policy",
@@ -1368,7 +1368,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:50:57.583Z"
+      "retrievedAt": "2026-11-19T14:27:57.325Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/09/scl-dd-europe-2026-community-speakers",
@@ -1378,7 +1378,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:30.894Z"
+      "retrievedAt": "2026-11-19T14:28:31.863Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/09/search-central-live-india-2026",
@@ -1388,7 +1388,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:31.147Z"
+      "retrievedAt": "2026-11-19T14:28:32.704Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/09/search-central-live-mexico-and-colombia",
@@ -1398,7 +1398,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:31.734Z"
+      "retrievedAt": "2026-11-19T14:28:32.381Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/09/web-multimodal-in-sc",
@@ -1408,7 +1408,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:30.556Z"
+      "retrievedAt": "2026-11-19T14:28:31.563Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
@@ -1419,7 +1419,7 @@
         "ai-overviews-and-ai-mode",
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:30.336Z"
+      "retrievedAt": "2026-11-19T14:28:31.086Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/10/seo-learning-paths",
@@ -1429,7 +1429,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:30.255Z"
+      "retrievedAt": "2026-11-19T14:28:31.430Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
@@ -1439,7 +1439,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:29.302Z"
+      "retrievedAt": "2026-11-19T14:28:30.646Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/11/search-analytics-api-update",
@@ -1449,7 +1449,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:29.690Z"
+      "retrievedAt": "2026-11-19T14:28:30.402Z"
     },
     {
       "url": "https://developers.google.com/search/blog/2026/11/search-central-live-zurich-2026",
@@ -1459,7 +1459,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:51:29.527Z"
+      "retrievedAt": "2026-11-19T14:28:30.908Z"
     },
     {
       "url": "https://developers.google.com/search/docs",
@@ -1467,7 +1467,7 @@
       "lastUpdated": "2025-02-04",
       "contentHash": "f8df764c95d8ef17bc521783b99392a6217285dafc6fecbedb88a80960d5b3b8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:49:55.967Z"
+      "retrievedAt": "2026-11-19T14:26:53.819Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance",
@@ -1477,7 +1477,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:17.844Z"
+      "retrievedAt": "2026-11-19T14:27:17.575Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/ad-network-and-translation",
@@ -1487,7 +1487,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:36.954Z"
+      "retrievedAt": "2026-11-19T14:27:36.590Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/aggregator-features",
@@ -1497,7 +1497,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:22.825Z"
+      "retrievedAt": "2026-11-19T14:27:22.616Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/aggregator-unit",
@@ -1507,7 +1507,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:23.368Z"
+      "retrievedAt": "2026-11-19T14:27:22.765Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/ai-features",
@@ -1518,7 +1518,7 @@
         "search-appearance",
         "ai-overviews-and-ai-mode"
       ],
-      "retrievedAt": "2026-11-19T13:49:56.828Z"
+      "retrievedAt": "2026-11-19T14:26:55.277Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials",
@@ -1528,7 +1528,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:20.936Z"
+      "retrievedAt": "2026-11-19T14:27:20.693Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/core-updates",
@@ -1539,7 +1539,7 @@
         "search-appearance",
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:50:22.165Z"
+      "retrievedAt": "2026-11-19T14:27:22.114Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
@@ -1550,7 +1550,7 @@
         "core-web-vitals",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:49:57.293Z"
+      "retrievedAt": "2026-11-19T14:26:55.462Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/ecosystem-carousel",
@@ -1560,7 +1560,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:23.575Z"
+      "retrievedAt": "2026-11-19T14:27:23.293Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/enable-web-stories",
@@ -1570,7 +1570,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:37.142Z"
+      "retrievedAt": "2026-11-19T14:27:36.738Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/enriched-search-results",
@@ -1580,7 +1580,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:26.421Z"
+      "retrievedAt": "2026-11-19T14:27:25.860Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/establish-business-details",
@@ -1590,7 +1590,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:19.347Z"
+      "retrievedAt": "2026-11-19T14:27:19.355Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/favicon-in-search",
@@ -1600,7 +1600,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:04.182Z"
+      "retrievedAt": "2026-11-19T14:27:02.595Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
@@ -1610,7 +1610,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:18.405Z"
+      "retrievedAt": "2026-11-19T14:27:18.744Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/flexible-sampling",
@@ -1620,7 +1620,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:18.681Z"
+      "retrievedAt": "2026-11-19T14:27:19.541Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/google-discover",
@@ -1630,7 +1630,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:19.012Z"
+      "retrievedAt": "2026-11-19T14:27:18.978Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/google-images",
@@ -1641,7 +1641,7 @@
         "image-seo",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:03.353Z"
+      "retrievedAt": "2026-11-19T14:27:01.418Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/job-sites",
@@ -1651,7 +1651,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:24.089Z"
+      "retrievedAt": "2026-11-19T14:27:23.677Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/package-tracking",
@@ -1661,7 +1661,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:38.273Z"
+      "retrievedAt": "2026-11-19T14:27:37.571Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/page-experience",
@@ -1672,7 +1672,7 @@
         "core-web-vitals",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:20.040Z"
+      "retrievedAt": "2026-11-19T14:27:20.153Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/places-sites",
@@ -1682,7 +1682,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:24.199Z"
+      "retrievedAt": "2026-11-19T14:27:23.930Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/preferred-sources",
@@ -1692,7 +1692,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:20.646Z"
+      "retrievedAt": "2026-11-19T14:27:20.811Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/publication-dates",
@@ -1702,7 +1702,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:18.057Z"
+      "retrievedAt": "2026-11-19T14:27:18.399Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/ranking-systems-guide",
@@ -1713,7 +1713,7 @@
         "search-appearance",
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:50:21.552Z"
+      "retrievedAt": "2026-11-19T14:27:21.389Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/reviews-system",
@@ -1723,7 +1723,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:21.589Z"
+      "retrievedAt": "2026-11-19T14:27:21.731Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/search-profiles",
@@ -1733,7 +1733,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:24.900Z"
+      "retrievedAt": "2026-11-19T14:27:24.937Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/site-names",
@@ -1744,7 +1744,7 @@
         "site-architecture",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:25.746Z"
+      "retrievedAt": "2026-11-19T14:27:24.964Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/sitelinks",
@@ -1755,7 +1755,7 @@
         "site-architecture",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:25.742Z"
+      "retrievedAt": "2026-11-19T14:27:25.129Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/snippet",
@@ -1766,7 +1766,7 @@
         "semantic-html",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:03.164Z"
+      "retrievedAt": "2026-11-19T14:27:01.084Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/south-africa-features",
@@ -1776,7 +1776,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:24.509Z"
+      "retrievedAt": "2026-11-19T14:27:24.179Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/spam-updates",
@@ -1786,7 +1786,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:22.396Z"
+      "retrievedAt": "2026-11-19T14:27:22.282Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data",
@@ -1796,7 +1796,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:51:21.477Z"
+      "retrievedAt": "2026-11-19T14:28:21.851Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
@@ -1807,7 +1807,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:26.818Z"
+      "retrievedAt": "2026-11-19T14:27:26.365Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/book",
@@ -1818,7 +1818,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:27.165Z"
+      "retrievedAt": "2026-11-19T14:27:26.710Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
@@ -1830,7 +1830,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:27.471Z"
+      "retrievedAt": "2026-11-19T14:27:27.048Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/carousel",
@@ -1841,7 +1841,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:27.641Z"
+      "retrievedAt": "2026-11-19T14:27:27.331Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/carousels-beta",
@@ -1852,7 +1852,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:24.958Z"
+      "retrievedAt": "2026-11-19T14:27:24.448Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/course",
@@ -1863,7 +1863,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:29.034Z"
+      "retrievedAt": "2026-11-19T14:27:27.811Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/dataset",
@@ -1874,7 +1874,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:28.191Z"
+      "retrievedAt": "2026-11-19T14:27:28.090Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/discussion-forum",
@@ -1885,7 +1885,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:28.467Z"
+      "retrievedAt": "2026-11-19T14:27:28.127Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/education-qa",
@@ -1896,7 +1896,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:28.952Z"
+      "retrievedAt": "2026-11-19T14:27:28.438Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/employer-rating",
@@ -1907,7 +1907,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:29.844Z"
+      "retrievedAt": "2026-11-19T14:27:28.886Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/event",
@@ -1918,7 +1918,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:29.856Z"
+      "retrievedAt": "2026-11-19T14:27:29.306Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/factcheck",
@@ -1929,7 +1929,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:29.585Z"
+      "retrievedAt": "2026-11-19T14:27:29.099Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/generate-structured-data-with-javascript",
@@ -1940,7 +1940,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:26.565Z"
+      "retrievedAt": "2026-11-19T14:27:26.875Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata",
@@ -1952,7 +1952,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:30.694Z"
+      "retrievedAt": "2026-11-19T14:27:29.821Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
@@ -1963,7 +1963,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:49:56.783Z"
+      "retrievedAt": "2026-11-19T14:26:55.070Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/job-posting",
@@ -1974,7 +1974,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:30.626Z"
+      "retrievedAt": "2026-11-19T14:27:29.867Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
@@ -1985,7 +1985,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:30.761Z"
+      "retrievedAt": "2026-11-19T14:27:30.075Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/loyalty-program",
@@ -1996,7 +1996,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:33.325Z"
+      "retrievedAt": "2026-11-19T14:27:32.370Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/math-solvers",
@@ -2007,7 +2007,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:31.228Z"
+      "retrievedAt": "2026-11-19T14:27:30.588Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing",
@@ -2018,7 +2018,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:32.855Z"
+      "retrievedAt": "2026-11-19T14:27:32.415Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/movie",
@@ -2029,7 +2029,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:31.467Z"
+      "retrievedAt": "2026-11-19T14:27:30.687Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
@@ -2040,7 +2040,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:31.846Z"
+      "retrievedAt": "2026-11-19T14:27:31.120Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/paywalled-content",
@@ -2051,7 +2051,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:36.122Z"
+      "retrievedAt": "2026-11-19T14:27:35.323Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/product",
@@ -2062,7 +2062,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:32.137Z"
+      "retrievedAt": "2026-11-19T14:27:31.356Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
@@ -2073,7 +2073,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:32.716Z"
+      "retrievedAt": "2026-11-19T14:27:31.664Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/product-variants",
@@ -2084,7 +2084,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:32.775Z"
+      "retrievedAt": "2026-11-19T14:27:32.027Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/profile-page",
@@ -2095,7 +2095,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:34.460Z"
+      "retrievedAt": "2026-11-19T14:27:33.286Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/qapage",
@@ -2106,7 +2106,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:34.378Z"
+      "retrievedAt": "2026-11-19T14:27:35.620Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/recipe",
@@ -2117,7 +2117,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:34.599Z"
+      "retrievedAt": "2026-11-19T14:27:34.060Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/return-policy",
@@ -2128,7 +2128,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:33.568Z"
+      "retrievedAt": "2026-11-19T14:27:32.684Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
@@ -2139,7 +2139,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:35.360Z"
+      "retrievedAt": "2026-11-19T14:27:34.111Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
@@ -2150,7 +2150,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:25.847Z"
+      "retrievedAt": "2026-11-19T14:27:25.758Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/search-gallery",
@@ -2161,7 +2161,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:04.077Z"
+      "retrievedAt": "2026-11-19T14:27:02.688Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/shipping-policy",
@@ -2172,7 +2172,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:33.821Z"
+      "retrievedAt": "2026-11-19T14:27:33.176Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/software-app",
@@ -2183,7 +2183,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:35.220Z"
+      "retrievedAt": "2026-11-19T14:27:34.628Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/speakable",
@@ -2194,7 +2194,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:35.485Z"
+      "retrievedAt": "2026-11-19T14:27:34.957Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/vacation-rental",
@@ -2205,7 +2205,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:36.092Z"
+      "retrievedAt": "2026-11-19T14:27:35.948Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/structured-data/video",
@@ -2216,7 +2216,7 @@
         "structured-data",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:36.344Z"
+      "retrievedAt": "2026-11-19T14:27:36.163Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/supplier-unit",
@@ -2226,7 +2226,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:23.329Z"
+      "retrievedAt": "2026-11-19T14:27:23.170Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/title-link",
@@ -2237,7 +2237,7 @@
         "semantic-html",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:03.014Z"
+      "retrievedAt": "2026-11-19T14:27:00.730Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/top-places-list",
@@ -2247,7 +2247,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:19.631Z"
+      "retrievedAt": "2026-11-19T14:27:19.693Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/translated-results",
@@ -2257,7 +2257,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:36.815Z"
+      "retrievedAt": "2026-11-19T14:27:36.253Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/ugc-fresh-data-program",
@@ -2267,7 +2267,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:38.270Z"
+      "retrievedAt": "2026-11-19T14:27:37.823Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/video",
@@ -2277,7 +2277,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:03.646Z"
+      "retrievedAt": "2026-11-19T14:27:02.280Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/visual-elements-gallery",
@@ -2288,7 +2288,7 @@
         "semantic-html",
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:02.747Z"
+      "retrievedAt": "2026-11-19T14:27:01.450Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy",
@@ -2298,7 +2298,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:37.601Z"
+      "retrievedAt": "2026-11-19T14:27:37.484Z"
     },
     {
       "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
@@ -2308,7 +2308,7 @@
       "topics": [
         "search-appearance"
       ],
-      "retrievedAt": "2026-11-19T13:50:37.698Z"
+      "retrievedAt": "2026-11-19T14:27:37.068Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing",
@@ -2318,7 +2318,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:07.961Z"
+      "retrievedAt": "2026-11-19T14:27:07.565Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
@@ -2329,7 +2329,7 @@
         "crawling-indexing",
         "redirects"
       ],
-      "retrievedAt": "2026-11-19T13:50:02.243Z"
+      "retrievedAt": "2026-11-19T14:26:59.905Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/amp",
@@ -2339,7 +2339,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:12.759Z"
+      "retrievedAt": "2026-11-19T14:27:12.301Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/amp/enhance-amp",
@@ -2349,7 +2349,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:13.161Z"
+      "retrievedAt": "2026-11-19T14:27:12.553Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/amp/remove-amp",
@@ -2359,7 +2359,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:13.786Z"
+      "retrievedAt": "2026-11-19T14:27:13.143Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/amp/validate-amp",
@@ -2369,7 +2369,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:13.333Z"
+      "retrievedAt": "2026-11-19T14:27:13.191Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
@@ -2379,7 +2379,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:01.659Z"
+      "retrievedAt": "2026-11-19T14:26:59.537Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
@@ -2390,7 +2390,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:50:15.337Z"
+      "retrievedAt": "2026-11-19T14:27:14.759Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization",
@@ -2401,7 +2401,7 @@
         "crawling-indexing",
         "canonicals-and-duplicates"
       ],
-      "retrievedAt": "2026-11-19T13:50:12.175Z"
+      "retrievedAt": "2026-11-19T14:27:11.781Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization-troubleshooting",
@@ -2412,7 +2412,7 @@
         "crawling-indexing",
         "canonicals-and-duplicates"
       ],
-      "retrievedAt": "2026-11-19T13:50:12.802Z"
+      "retrievedAt": "2026-11-19T14:27:12.138Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
@@ -2423,7 +2423,7 @@
         "crawling-indexing",
         "canonicals-and-duplicates"
       ],
-      "retrievedAt": "2026-11-19T13:49:56.693Z"
+      "retrievedAt": "2026-11-19T14:26:54.513Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/control-what-you-share",
@@ -2433,7 +2433,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:02.030Z"
+      "retrievedAt": "2026-11-19T14:26:59.573Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/googlebot",
@@ -2443,7 +2443,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:11.147Z"
+      "retrievedAt": "2026-11-19T14:27:10.561Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/indexable-file-types",
@@ -2453,7 +2453,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:08.235Z"
+      "retrievedAt": "2026-11-19T14:27:08.184Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/dynamic-rendering",
@@ -2464,7 +2464,7 @@
         "crawling-indexing",
         "javascript-seo"
       ],
-      "retrievedAt": "2026-11-19T13:50:14.817Z"
+      "retrievedAt": "2026-11-19T14:27:13.969Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/fix-search-javascript",
@@ -2475,7 +2475,7 @@
         "crawling-indexing",
         "javascript-seo"
       ],
-      "retrievedAt": "2026-11-19T13:50:13.861Z"
+      "retrievedAt": "2026-11-19T14:27:13.505Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
@@ -2486,7 +2486,7 @@
         "crawling-indexing",
         "javascript-seo"
       ],
-      "retrievedAt": "2026-11-19T13:50:02.547Z"
+      "retrievedAt": "2026-11-19T14:27:00.423Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading",
@@ -2497,7 +2497,7 @@
         "crawling-indexing",
         "javascript-seo"
       ],
-      "retrievedAt": "2026-11-19T13:50:14.495Z"
+      "retrievedAt": "2026-11-19T14:27:13.756Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/keep-redacted-information-out",
@@ -2507,7 +2507,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:16.500Z"
+      "retrievedAt": "2026-11-19T14:27:16.002Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
@@ -2518,7 +2518,7 @@
         "crawling-indexing",
         "internal-linking-and-anchor-text"
       ],
-      "retrievedAt": "2026-11-19T13:49:55.835Z"
+      "retrievedAt": "2026-11-19T14:26:54.521Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
@@ -2529,7 +2529,7 @@
         "crawling-indexing",
         "mobile-first-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:49:57.524Z"
+      "retrievedAt": "2026-11-19T14:26:55.741Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/pause-online-business",
@@ -2539,7 +2539,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:18.019Z"
+      "retrievedAt": "2026-11-19T14:27:17.612Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page",
@@ -2549,7 +2549,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:16.175Z"
+      "retrievedAt": "2026-11-19T14:27:17.751Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
@@ -2559,7 +2559,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:15.671Z"
+      "retrievedAt": "2026-11-19T14:27:15.068Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/remove-information",
@@ -2569,7 +2569,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:16.161Z"
+      "retrievedAt": "2026-11-19T14:27:15.439Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
@@ -2580,7 +2580,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:50:15.075Z"
+      "retrievedAt": "2026-11-19T14:27:14.791Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
@@ -2591,7 +2591,7 @@
         "crawling-indexing",
         "robots-and-indexing-directives"
       ],
-      "retrievedAt": "2026-11-19T13:50:00.884Z"
+      "retrievedAt": "2026-11-19T14:26:58.809Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes",
@@ -2602,7 +2602,7 @@
         "crawling-indexing",
         "redirects"
       ],
-      "retrievedAt": "2026-11-19T13:50:16.995Z"
+      "retrievedAt": "2026-11-19T14:27:16.090Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
@@ -2613,7 +2613,7 @@
         "crawling-indexing",
         "redirects"
       ],
-      "retrievedAt": "2026-11-19T13:50:17.032Z"
+      "retrievedAt": "2026-11-19T14:27:16.611Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
@@ -2624,7 +2624,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:08.897Z"
+      "retrievedAt": "2026-11-19T14:27:08.292Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/combine-sitemap-extensions",
@@ -2635,7 +2635,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:10.288Z"
+      "retrievedAt": "2026-11-19T14:27:10.053Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps",
@@ -2646,7 +2646,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:09.307Z"
+      "retrievedAt": "2026-11-19T14:27:08.936Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/large-sitemaps",
@@ -2657,7 +2657,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:09.100Z"
+      "retrievedAt": "2026-11-19T14:27:08.743Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap",
@@ -2668,7 +2668,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:10.078Z"
+      "retrievedAt": "2026-11-19T14:27:09.359Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
@@ -2679,7 +2679,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:00.812Z"
+      "retrievedAt": "2026-11-19T14:26:58.885Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps",
@@ -2690,7 +2690,7 @@
         "crawling-indexing",
         "sitemaps"
       ],
-      "retrievedAt": "2026-11-19T13:50:10.205Z"
+      "retrievedAt": "2026-11-19T14:27:09.606Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/special-tags",
@@ -2701,7 +2701,7 @@
         "crawling-indexing",
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:50:01.430Z"
+      "retrievedAt": "2026-11-19T14:26:59.116Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/troubleshoot-crawling-errors",
@@ -2711,7 +2711,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:10.622Z"
+      "retrievedAt": "2026-11-19T14:27:09.954Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
@@ -2722,7 +2722,7 @@
         "crawling-indexing",
         "site-architecture"
       ],
-      "retrievedAt": "2026-11-19T13:50:08.651Z"
+      "retrievedAt": "2026-11-19T14:27:08.119Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/valid-page-metadata",
@@ -2732,7 +2732,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:14.658Z"
+      "retrievedAt": "2026-11-19T14:27:14.468Z"
     },
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/website-testing",
@@ -2742,7 +2742,7 @@
       "topics": [
         "crawling-indexing"
       ],
-      "retrievedAt": "2026-11-19T13:50:17.271Z"
+      "retrievedAt": "2026-11-19T14:27:16.820Z"
     },
     {
       "url": "https://developers.google.com/search/docs/essentials",
@@ -2752,7 +2752,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:49:55.694Z"
+      "retrievedAt": "2026-11-19T14:26:54.330Z"
     },
     {
       "url": "https://developers.google.com/search/docs/essentials/spam-policies",
@@ -2762,7 +2762,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:06.629Z"
+      "retrievedAt": "2026-11-19T14:27:05.253Z"
     },
     {
       "url": "https://developers.google.com/search/docs/essentials/technical",
@@ -2772,7 +2772,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:06.170Z"
+      "retrievedAt": "2026-11-19T14:27:05.050Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
@@ -2783,7 +2783,7 @@
         "search-essentials",
         "ai-overviews-and-ai-mode"
       ],
-      "retrievedAt": "2026-11-19T13:50:00.855Z"
+      "retrievedAt": "2026-11-19T14:26:57.879Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
@@ -2793,7 +2793,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:06.828Z"
+      "retrievedAt": "2026-11-19T14:27:06.511Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
@@ -2803,7 +2803,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:00.219Z"
+      "retrievedAt": "2026-11-19T14:26:58.397Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/get-on-google",
@@ -2813,7 +2813,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:45.884Z"
+      "retrievedAt": "2026-11-19T14:27:45.066Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/get-started",
@@ -2823,7 +2823,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:07.345Z"
+      "retrievedAt": "2026-11-19T14:27:06.501Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/get-started-developers",
@@ -2833,7 +2833,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:07.685Z"
+      "retrievedAt": "2026-11-19T14:27:07.018Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/how-search-works",
@@ -2843,7 +2843,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:49:59.931Z"
+      "retrievedAt": "2026-11-19T14:26:57.922Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
@@ -2854,7 +2854,7 @@
         "search-essentials",
         "semantic-html"
       ],
-      "retrievedAt": "2026-11-19T13:49:59.336Z"
+      "retrievedAt": "2026-11-19T14:26:57.391Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/third-party-seo",
@@ -2864,7 +2864,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:07.790Z"
+      "retrievedAt": "2026-11-19T14:27:07.063Z"
     },
     {
       "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
@@ -2874,7 +2874,7 @@
       "topics": [
         "search-essentials"
       ],
-      "retrievedAt": "2026-11-19T13:50:07.065Z"
+      "retrievedAt": "2026-11-19T14:27:05.900Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/analyze-social-video-content",
@@ -2882,7 +2882,7 @@
       "lastUpdated": "2026-07-29",
       "contentHash": "eeda1b0521f564a73aea18a9c9c93c642acec73c1c4d7582f41a713b64488990",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:05.729Z"
+      "retrievedAt": "2026-11-19T14:27:04.604Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/bubble-chart-analysis",
@@ -2890,7 +2890,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "b52047d559b4ac9ec7c2a6a49d7b4dbf5922953b6c81079e238e570f453dc23d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:38.929Z"
+      "retrievedAt": "2026-11-19T14:27:38.422Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops",
@@ -2898,7 +2898,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "19e00330e3627517deaa788f9be1d3993739b2e755bde3aa75047e7e2ba38864",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:05.121Z"
+      "retrievedAt": "2026-11-19T14:27:03.718Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console",
@@ -2906,7 +2906,7 @@
       "lastUpdated": "2026-01-07",
       "contentHash": "ed9b9bc48f2af5b641e5698f15997dde142d4ff5ae522aad7f11ba83b61d33ae",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:05.376Z"
+      "retrievedAt": "2026-11-19T14:27:04.156Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/identify-google-search-traffic",
@@ -2914,7 +2914,7 @@
       "lastUpdated": "2026-11-12",
       "contentHash": "58485c9bb61cceaa785368cf35c872dbd28dcdc9be5e21a514e311e780f557a6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:05.115Z"
+      "retrievedAt": "2026-11-19T14:27:04.086Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
@@ -2922,7 +2922,7 @@
       "lastUpdated": "2026-10-26",
       "contentHash": "74d9d5f618524d6812df7d7193db54640fa9e29699fe6416bc50662068e8bc50",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:40.122Z"
+      "retrievedAt": "2026-11-19T14:27:39.604Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
@@ -2930,7 +2930,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "b28f441d42cbadb6ff3975bf40cc82fda36fcf1ed8c7b02e3c4d7a5d1e2be97a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:38.423Z"
+      "retrievedAt": "2026-11-19T14:27:38.039Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/search-operators",
@@ -2938,7 +2938,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "8685e7e47157c9f9dcaaba7a9e21debae8a09e745398465fac2df19e1d4ae371",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:39.196Z"
+      "retrievedAt": "2026-11-19T14:27:38.731Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site",
@@ -2946,7 +2946,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "a9caee92bffc17f9fffb7557b373ca478f4e86cf329b6951f5de8203b848ffc4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:39.503Z"
+      "retrievedAt": "2026-11-19T14:27:38.802Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/search-operators/image-search",
@@ -2954,7 +2954,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "8a4dd512d1b00735011210252497156cb57d20acc2cd9ae5edfb121a471a441b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:39.889Z"
+      "retrievedAt": "2026-11-19T14:27:39.075Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/security",
@@ -2962,7 +2962,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "36862c1e04fb11b7efb99f77cdb8be23c82e74b8d430c873d6a5855801751acd",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:39.832Z"
+      "retrievedAt": "2026-11-19T14:27:39.489Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/security/malware",
@@ -2970,7 +2970,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "655e1444e06a2f68a2349a69a32d73c665049b6a2c1881636d00822a4be77ffe",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:40.642Z"
+      "retrievedAt": "2026-11-19T14:27:39.997Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/security/prevent-malware",
@@ -2978,7 +2978,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "a16b0d8e810ca86926edbf0ce0a4da027b6c3f8bfffda21fec277b24f7997a02",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:40.668Z"
+      "retrievedAt": "2026-11-19T14:27:40.059Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/security/safe-browsing-repeat-offenders",
@@ -2986,7 +2986,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "d30c19bd84307b01fcc2e7de2e32f59bc32178596087bc839b08b91032fcae57",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:41.217Z"
+      "retrievedAt": "2026-11-19T14:27:40.609Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/security/social-engineering",
@@ -2994,7 +2994,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "c3fb600e0f89865de8b807684006d02a7acdfa399f4220f30b26e326c33906d3",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:41.510Z"
+      "retrievedAt": "2026-11-19T14:27:40.406Z"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/trends-start",
@@ -3002,7 +3002,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "8cef58e5ec2c0de332e75384bb14e620bdb33a1e0de3e0299de8deef2c97173e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:41.703Z"
+      "retrievedAt": "2026-11-19T14:27:41.395Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce",
@@ -3010,7 +3010,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "6e5fdeaf7e988a829a0c9235775660b7e94dd3aeba38ba5660587f5dbd3d1425",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:04.360Z"
+      "retrievedAt": "2026-11-19T14:27:02.843Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites",
@@ -3020,7 +3020,7 @@
       "topics": [
         "site-architecture"
       ],
-      "retrievedAt": "2026-11-19T13:50:43.379Z"
+      "retrievedAt": "2026-11-19T14:27:42.581Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure",
@@ -3028,7 +3028,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "d85bfb25b7f64be3c7ac033fadd2154d12ea743aab581b537680b6d345df09a0",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:43.309Z"
+      "retrievedAt": "2026-11-19T14:27:42.787Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/how-to-launch-an-ecommerce-website",
@@ -3036,7 +3036,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "90f56719306be09e17802213feb6959502d4c16afb376f061e602d41f8a30820",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:42.625Z"
+      "retrievedAt": "2026-11-19T14:27:42.166Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/include-structured-data-relevant-to-ecommerce",
@@ -3044,7 +3044,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "24f77e8ebad9af8f406e91b6f34c94350bbac71f9bd747171882c627a111949a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:42.468Z"
+      "retrievedAt": "2026-11-19T14:27:41.904Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading",
@@ -3052,7 +3052,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "943728d21c3cee334ed65136919c092d416c135fe5f9a655eaf90597b28a41fb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:43.588Z"
+      "retrievedAt": "2026-11-19T14:27:43.573Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data-with-google",
@@ -3060,7 +3060,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "dfe900206a8a0e119c207832bd25fed25e188affab477d892a53d23ebc756739",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:42.186Z"
+      "retrievedAt": "2026-11-19T14:27:41.310Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/where-ecommerce-data-can-appear-on-google",
@@ -3068,7 +3068,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "86227434156dbba0f701a0b1a6e10042774c2f3b912c78503261b833f0f3f070",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:41.783Z"
+      "retrievedAt": "2026-11-19T14:27:41.217Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
@@ -3076,7 +3076,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "ef743151ef8365c3aee68e17185b5727cdc55570fd609d7c5a4ae36c7ecc9e86",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:42.883Z"
+      "retrievedAt": "2026-11-19T14:27:42.669Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/explicit/guidelines",
@@ -3084,7 +3084,7 @@
       "lastUpdated": "2026-09-17",
       "contentHash": "9ac74ed67e70722d358807078d89a46e8797074c7b533894903d2f78bda12430",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:44.638Z"
+      "retrievedAt": "2026-11-19T14:27:44.387Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/explicit/troubleshooting",
@@ -3092,7 +3092,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "ab6dc638a6efc07d73bb8bee6b810f829b6541baffc6c7c5ff3e713911f0c5df",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:44.932Z"
+      "retrievedAt": "2026-11-19T14:27:44.688Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/international",
@@ -3100,7 +3100,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "8810c2ee3bc3fe0ad4074df7858fb7f48f718d36f5a50e3c28c34f622819a4a4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:04.648Z"
+      "retrievedAt": "2026-11-19T14:27:03.345Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/international/locale-adaptive-pages",
@@ -3108,7 +3108,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "32a9f8a5fbfda976d99b275967b685bc0e544a7ba4344bb8e6aaf69d5ced3252",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:44.467Z"
+      "retrievedAt": "2026-11-19T14:27:44.452Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
@@ -3116,7 +3116,7 @@
       "lastUpdated": "2026-09-21",
       "contentHash": "e6ac54ec707c1a82083274420048aec5dab4131ab4c51da00c06f0b9d7dba200",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:44.239Z"
+      "retrievedAt": "2026-11-19T14:27:43.668Z"
     },
     {
       "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
@@ -3124,7 +3124,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "70da1553c1635dc564b51c442b3ef63c454e0cf1087380bfd9e1149e7b502e60",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:43.893Z"
+      "retrievedAt": "2026-11-19T14:27:43.581Z"
     },
     {
       "url": "https://developers.google.com/search/help",
@@ -3132,7 +3132,7 @@
       "lastUpdated": "2026-09-15",
       "contentHash": "6d1a1800afe4ad66b417f32e9ff88fca49561a5aac321bed46e2e7d1e561db6a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:06.301Z"
+      "retrievedAt": "2026-11-19T14:27:05.160Z"
     },
     {
       "url": "https://developers.google.com/search/help/about-search-data-program",
@@ -3140,7 +3140,7 @@
       "lastUpdated": "2026-09-04",
       "contentHash": "d41af4edcd6393fbbf015d4b64c30238f1f9e489e59d982b5cd07b29c79f44b6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:56.954Z"
+      "retrievedAt": "2026-11-19T14:27:56.337Z"
     },
     {
       "url": "https://developers.google.com/search/help/crawling-index-faq",
@@ -3148,7 +3148,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "46a64ede0f58b6968cce0a4dc102c6f5c979655e17fac1aaf83d7a1c515434d1",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:23.058Z"
+      "retrievedAt": "2026-11-19T14:28:23.620Z"
     },
     {
       "url": "https://developers.google.com/search/help/debug",
@@ -3156,7 +3156,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "1bc229a24ffd472e787c95e8868001ee2a0afde5a49de15caf684a46b15def8c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:27.655Z"
+      "retrievedAt": "2026-11-19T14:28:28.628Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours",
@@ -3164,7 +3164,7 @@
       "lastUpdated": "2024-10-31",
       "contentHash": "c35afab7fb1bd604d4d7760f7a0342c028846e7ae7dfabe9d3e3a1f4fedf3c7a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:45.112Z"
+      "retrievedAt": "2026-11-19T14:27:45.647Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2022/december",
@@ -3172,7 +3172,7 @@
       "lastUpdated": "2022-12-29",
       "contentHash": "73e6dea0735358b43868e56d8fcd1c030f09c274cc6b4ae92bf2cd7c73698673",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:15.768Z"
+      "retrievedAt": "2026-11-19T14:28:16.429Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2022/november",
@@ -3180,7 +3180,7 @@
       "lastUpdated": "2022-11-30",
       "contentHash": "9ef9519941eff5740126f97f74b91fce9caa80bf6c991823cde8bd4a879790d5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:16.678Z"
+      "retrievedAt": "2026-11-19T14:28:17.187Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/april",
@@ -3188,7 +3188,7 @@
       "lastUpdated": "2023-04-11",
       "contentHash": "e784d65ea5724f4b2a0b267aeb2fa96a23c203805b5c3cf89108214e7c00c6e9",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:14.911Z"
+      "retrievedAt": "2026-11-19T14:28:15.824Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/august",
@@ -3196,7 +3196,7 @@
       "lastUpdated": "2023-08-09",
       "contentHash": "f14d90d714075aec6315acd0d9741c0345e4593e9883e134b87f6ab3da52dfd8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:13.146Z"
+      "retrievedAt": "2026-11-19T14:28:13.743Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/december",
@@ -3204,7 +3204,7 @@
       "lastUpdated": "2023-12-18",
       "contentHash": "56fe1bea61d040bf4ebeff1f0cbb4b82af56e6ab75fd0d8d397eb9df4870b9bf",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:12.300Z"
+      "retrievedAt": "2026-11-19T14:28:13.559Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/january",
@@ -3212,7 +3212,7 @@
       "lastUpdated": "2023-01-31",
       "contentHash": "cdffc640f553c1ec62bc4ce09ede2f41cb57851959b2597e26e2d602cc340da0",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:15.393Z"
+      "retrievedAt": "2026-11-19T14:28:16.259Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/july",
@@ -3220,7 +3220,7 @@
       "lastUpdated": "2023-07-11",
       "contentHash": "37190a240c5c85a1dfe2677ed01247f97a9efaa503eb5d4d71997df7806faa0f",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:13.415Z"
+      "retrievedAt": "2026-11-19T14:28:14.629Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/june",
@@ -3228,7 +3228,7 @@
       "lastUpdated": "2023-06-07",
       "contentHash": "f3c54622f2858b462974040c6bedd5829f28c36f9f212a818b42e64994c9c087",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:14.374Z"
+      "retrievedAt": "2026-11-19T14:28:14.930Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/march",
@@ -3236,7 +3236,7 @@
       "lastUpdated": "2023-03-09",
       "contentHash": "3975fe3eaba531e8eb126258692ac09d555aee04296343d659ce23ffe939af28",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:15.553Z"
+      "retrievedAt": "2026-11-19T14:28:15.986Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/may",
@@ -3244,7 +3244,7 @@
       "lastUpdated": "2023-05-04",
       "contentHash": "684b6517f42ada5812070cb0efbfccc916bc69152bcf38411be58126c2ea4628",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:14.298Z"
+      "retrievedAt": "2026-11-19T14:28:15.394Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2023/september",
@@ -3252,7 +3252,7 @@
       "lastUpdated": "2023-09-06",
       "contentHash": "968c6dcd77d060b820561437278ec6385c9a7b0db12b9edf9c69442c4ce818a1",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:12.697Z"
+      "retrievedAt": "2026-11-19T14:28:13.098Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2024/april",
@@ -3260,7 +3260,7 @@
       "lastUpdated": "2024-04-18",
       "contentHash": "df6944b462cc563252394794681e437cc180a131883ad8d386aea379227c528c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:09.974Z"
+      "retrievedAt": "2026-11-19T14:29:11.834Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2024/august",
@@ -3268,7 +3268,7 @@
       "lastUpdated": "2024-08-21",
       "contentHash": "92b7766b992ad5c6531772ebe285d5eb42d49892d1fd60756c8f2a2c996461cd",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:07.699Z"
+      "retrievedAt": "2026-11-19T14:29:10.319Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2024/july",
@@ -3276,7 +3276,7 @@
       "lastUpdated": "2024-07-18",
       "contentHash": "61c82e3d2540f428b29e0c81d04bb586701e1d18a3ceeb711330457aa48a7e41",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:08.293Z"
+      "retrievedAt": "2026-11-19T14:29:10.949Z"
     },
     {
       "url": "https://developers.google.com/search/help/office-hours/2024/june",
@@ -3284,7 +3284,7 @@
       "lastUpdated": "2024-06-13",
       "contentHash": "26181a637e261d6fb11c97c20004a041687eb540fd43440d58e753a009508e20",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:08.946Z"
+      "retrievedAt": "2026-11-19T14:29:11.520Z"
     },
     {
       "url": "https://developers.google.com/search/help/report-quality-issues",
@@ -3292,7 +3292,7 @@
       "lastUpdated": "2026-04-23",
       "contentHash": "fcf0e42b3191bbe2e639c127c1557de29f1b7d17bbb7e216e8bdfc52bd01a3fb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:45.421Z"
+      "retrievedAt": "2026-11-19T14:27:46.322Z"
     },
     {
       "url": "https://developers.google.com/search/help/site-appearance-faq",
@@ -3300,7 +3300,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "573dc09fd574bfef19dea6a87ed2456aac4bf6dd7b61e53ccd2053a5d7dbef5d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:23.449Z"
+      "retrievedAt": "2026-11-19T14:28:24.297Z"
     },
     {
       "url": "https://developers.google.com/search/help/site-position-in-search-faq",
@@ -3308,7 +3308,7 @@
       "lastUpdated": "2026-05-06",
       "contentHash": "0bc4d3ec984708d87d2b53bd50ca8a743136f5fafe80a8a6620c7090ff25cd4c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:23.307Z"
+      "retrievedAt": "2026-11-19T14:28:23.814Z"
     },
     {
       "url": "https://developers.google.com/search/help/small-business-notifications",
@@ -3316,7 +3316,7 @@
       "lastUpdated": "2026-06-29",
       "contentHash": "3b7207515a458c4486850e5d4eeee7638816bb3f799d5a00cc5434240a87f90e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:58.653Z"
+      "retrievedAt": "2026-11-19T14:27:58.298Z"
     },
     {
       "url": "https://developers.google.com/search/help/status-dashboard",
@@ -3324,7 +3324,7 @@
       "lastUpdated": "2025-12-10",
       "contentHash": "52958061c7c27bd11cbb5840a1e444c3cca9b7049bcd6d149882b9e26b913fd4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:16.452Z"
+      "retrievedAt": "2026-11-19T14:28:17.058Z"
     },
     {
       "url": "https://developers.google.com/search/updates",
@@ -3334,7 +3334,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:49:57.912Z"
+      "retrievedAt": "2026-11-19T14:26:56.100Z"
     },
     {
       "url": "https://status.search.google.com/incidents.json",
@@ -3344,7 +3344,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:49:58.685Z"
+      "retrievedAt": "2026-11-19T14:26:56.982Z"
     },
     {
       "url": "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history",
@@ -3354,7 +3354,7 @@
       "topics": [
         "search-updates"
       ],
-      "retrievedAt": "2026-11-19T13:49:59.197Z"
+      "retrievedAt": "2026-11-19T14:26:57.150Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10083653?hl=en",
@@ -3362,7 +3362,7 @@
       "lastUpdated": null,
       "contentHash": "fe1f8891039ba948ee881f35e4752d0b6548084e2393350ddcb77442d5355f77",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:58.105Z"
+      "retrievedAt": "2026-11-19T14:31:03.400Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10264824?hl=en",
@@ -3370,7 +3370,7 @@
       "lastUpdated": null,
       "contentHash": "2a52263b5f1e69358e72315567702134c2182760974891ca26aee3f9f3f2d47a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:59.424Z"
+      "retrievedAt": "2026-11-19T14:32:02.832Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10267942?hl=en",
@@ -3378,7 +3378,7 @@
       "lastUpdated": null,
       "contentHash": "bb17e34c74b6b43773840e55c80705420fc4eababe9aa317ee3281a443d45aae",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:20.700Z"
+      "retrievedAt": "2026-11-19T14:31:25.902Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10268906?hl=en",
@@ -3386,7 +3386,7 @@
       "lastUpdated": null,
       "contentHash": "4be4c2f797608af75e52b4163f2ef4d1012cf5a31e6e4d8cb1371972b276db81",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:36.855Z"
+      "retrievedAt": "2026-11-19T14:34:35.110Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10272665?hl=en",
@@ -3394,7 +3394,7 @@
       "lastUpdated": null,
       "contentHash": "8c3366126087d4868056cc1733ef35793ebe317649243b8527e0d359b232d709",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:24.447Z"
+      "retrievedAt": "2026-11-19T14:33:27.276Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10347851?hl=en",
@@ -3404,7 +3404,7 @@
       "topics": [
         "canonicals-and-duplicates"
       ],
-      "retrievedAt": "2026-11-19T13:53:04.059Z"
+      "retrievedAt": "2026-11-19T14:30:07.486Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10351509?hl=en",
@@ -3412,7 +3412,7 @@
       "lastUpdated": null,
       "contentHash": "3e04676df8c6904d368c138cca77a8c40ae35e6b4cbfceda435ba5fbbba69702",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:51.408Z"
+      "retrievedAt": "2026-11-19T14:33:51.257Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10352053?hl=en",
@@ -3420,7 +3420,7 @@
       "lastUpdated": null,
       "contentHash": "79afa3d8aec94afc5d3ecd26dd93b531394b9da4ea165186e11fab1a01519bbb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:44.342Z"
+      "retrievedAt": "2026-11-19T14:30:48.826Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10431861?hl=en",
@@ -3428,7 +3428,7 @@
       "lastUpdated": null,
       "contentHash": "75f97321fbf60832b1380e60dda846d239fa4f2a752f725329547657f517856d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:47.369Z"
+      "retrievedAt": "2026-11-19T14:30:51.690Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10432272?hl=en",
@@ -3436,7 +3436,7 @@
       "lastUpdated": null,
       "contentHash": "81a222adfd62d6c738e262c49796b54d6e2fab4eb3cb1a8770c876683158d827",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:40.907Z"
+      "retrievedAt": "2026-11-19T14:33:43.755Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10432366?hl=en",
@@ -3444,7 +3444,7 @@
       "lastUpdated": null,
       "contentHash": "fde9e9a426549daec4ac61ad5e9eff5f83258a93094f078c09cff9504250522d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:48.903Z"
+      "retrievedAt": "2026-11-19T14:30:53.293Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/1067240?hl=en",
@@ -3452,7 +3452,7 @@
       "lastUpdated": null,
       "contentHash": "8485cf32fb583db458e01449ba510ffe4b85e6d8690e36ca6b3993a5217866cf",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:36.200Z"
+      "retrievedAt": "2026-11-19T14:31:41.040Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10771161?hl=en",
@@ -3460,7 +3460,7 @@
       "lastUpdated": null,
       "contentHash": "4444559de91f3382d7dcd0e72d4f4a0749a1fca633172227dcdec6adb1b7cd9d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:37.889Z"
+      "retrievedAt": "2026-11-19T14:33:40.761Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/10887229?hl=en",
@@ -3468,7 +3468,7 @@
       "lastUpdated": null,
       "contentHash": "0581395defbfa52b1acdde729f4f0f292b52d9c0f604ad3f75cdc0f96b67b8ff",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:34.880Z"
+      "retrievedAt": "2026-11-19T14:33:37.776Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/11396518?hl=en",
@@ -3476,7 +3476,7 @@
       "lastUpdated": null,
       "contentHash": "946b05a2c1519b73e58b084f99eb018cc20ac840fbb3ee4dc170c8df1e47a6d0",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:34.088Z"
+      "retrievedAt": "2026-11-19T14:29:37.575Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/11626894?hl=en",
@@ -3484,7 +3484,7 @@
       "lastUpdated": null,
       "contentHash": "b710f130287ca0219117c8165173813018072122a26280fb6e0e525ef8afbdfc",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:52.210Z"
+      "retrievedAt": "2026-11-19T14:30:56.337Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12061956?hl=en",
@@ -3492,7 +3492,7 @@
       "lastUpdated": null,
       "contentHash": "5aab363510b00f05946d77d5cd2af74bb3abe0a99d39dfb685a27a6eb9e06e18",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:17.671Z"
+      "retrievedAt": "2026-11-19T14:30:21.088Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12277058?hl=en",
@@ -3500,7 +3500,7 @@
       "lastUpdated": null,
       "contentHash": "a4eef81ee039b0b7428c5fe8fb86a216726c2e3ef58d27a54e1e2f9b662ed6fa",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:50.699Z"
+      "retrievedAt": "2026-11-19T14:30:54.874Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12474899?hl=en",
@@ -3508,7 +3508,7 @@
       "lastUpdated": null,
       "contentHash": "21f4db60a68561dc429617068f86c63f8fc507191c0aa20f9151dc3c194c86f8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:20.206Z"
+      "retrievedAt": "2026-11-19T14:28:20.662Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12482179?hl=en",
@@ -3516,7 +3516,7 @@
       "lastUpdated": null,
       "contentHash": "96d59de10fa15be1c4b7021a5f9634193110ebc7ecd1cba32365377c2ad3da4a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:25.922Z"
+      "retrievedAt": "2026-11-19T14:33:28.751Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12642436?hl=en",
@@ -3524,7 +3524,7 @@
       "lastUpdated": null,
       "contentHash": "cc26438974fe2060c973ad1ee383f15f251a75f58c300d5e330c3e919dfee672",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:00.998Z"
+      "retrievedAt": "2026-11-19T14:32:04.328Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12642438?hl=en",
@@ -3532,7 +3532,7 @@
       "lastUpdated": null,
       "contentHash": "35925c3fe780d6dd4a6b8c2c44225cbd8f45380883c1818203cd26b8eba1a6d8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:09.928Z"
+      "retrievedAt": "2026-11-19T14:32:13.416Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12660034?hl=en",
@@ -3540,7 +3540,7 @@
       "lastUpdated": null,
       "contentHash": "22ed6aecbe625c0e6276d9f124e0308b1a3abe2b6bfb84c33374ca1cd7e30e42",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:47.741Z"
+      "retrievedAt": "2026-11-19T14:31:52.034Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12817956?hl=en",
@@ -3548,7 +3548,7 @@
       "lastUpdated": null,
       "contentHash": "e7a4482835da63bc7db9e1bfd54dc37363f7dea381c4ed42b0052e36cb3973ae",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:04.125Z"
+      "retrievedAt": "2026-11-19T14:32:07.384Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12818275?hl=en",
@@ -3556,7 +3556,7 @@
       "lastUpdated": null,
       "contentHash": "856194918223adde01430ff171dc776f993dd66f03f509931c2ad7a6cea01cbb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:14.616Z"
+      "retrievedAt": "2026-11-19T14:30:18.019Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12818558?hl=en",
@@ -3564,7 +3564,7 @@
       "lastUpdated": null,
       "contentHash": "10872675f822b64f6be60009e03dfcb892073ce8eecf41e1cf2d4e17c5c25056",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:56.117Z"
+      "retrievedAt": "2026-11-19T14:32:59.270Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12917174?hl=en",
@@ -3572,7 +3572,7 @@
       "lastUpdated": null,
       "contentHash": "ef15a31c556b1a3233f27aec62970dcebf9344ca69a9e04220ae99dea32e96f7",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:25.936Z"
+      "retrievedAt": "2026-11-19T14:32:29.300Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12917675?hl=en",
@@ -3580,7 +3580,7 @@
       "lastUpdated": null,
       "contentHash": "0b50af77e466ac1d8fa740ccce3ecd5bd2f7bb58272e6a260050db72439ae219",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:04.050Z"
+      "retrievedAt": "2026-11-19T14:29:06.906Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12917991?hl=en",
@@ -3588,7 +3588,7 @@
       "lastUpdated": null,
       "contentHash": "be8d4fd76a3d02ab12bab31659b85f3eddbea4ed0b09854c8425d00ff137896c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:21.497Z"
+      "retrievedAt": "2026-11-19T14:32:24.731Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12918484?hl=en",
@@ -3596,7 +3596,7 @@
       "lastUpdated": null,
       "contentHash": "d0222b894608d9435fe59594fbfd0aec34f5bac5a7acc5b79d1c0a4fbd185990",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:32.746Z"
+      "retrievedAt": "2026-11-19T14:31:37.911Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12919192?hl=en",
@@ -3604,7 +3604,7 @@
       "lastUpdated": null,
       "contentHash": "0b26e881072f02dcd753e5a09332d583ec4432c26cef999dddbd575b54643517",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:24.492Z"
+      "retrievedAt": "2026-11-19T14:32:28.300Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12919198?hl=en",
@@ -3612,7 +3612,7 @@
       "lastUpdated": null,
       "contentHash": "d9e5f6ec84fa60cc30136f048753b71423804c80ae72bab52a92ea11f2324c33",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:23.009Z"
+      "retrievedAt": "2026-11-19T14:32:26.257Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/12919797?hl=en",
@@ -3620,7 +3620,7 @@
       "lastUpdated": null,
       "contentHash": "4daaf8e2ee3e2d78e45b7361046092724a4011df07f69f45da38fc4857ece14e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:46.324Z"
+      "retrievedAt": "2026-11-19T14:31:50.516Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/13144973?hl=en",
@@ -3628,7 +3628,7 @@
       "lastUpdated": null,
       "contentHash": "ba19dd8acdac6070c67cdb0865c27a51c18e5c9dc6f36574254a00ab81c76b85",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:57.910Z"
+      "retrievedAt": "2026-11-19T14:34:41.007Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/13180013?hl=en",
@@ -3636,7 +3636,7 @@
       "lastUpdated": null,
       "contentHash": "7946f25910031dfc437e21fc97a4f09fd5144e15cd0f7d832c41e5c5ab9be640",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:45.913Z"
+      "retrievedAt": "2026-11-19T14:30:50.411Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/13299423?hl=en",
@@ -3644,7 +3644,7 @@
       "lastUpdated": null,
       "contentHash": "e137c49cb1f6b47139b31286d7d4dc38ec833dd5ae87cd6fa4b561f6943edff7",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:35.408Z"
+      "retrievedAt": "2026-11-19T14:30:39.820Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/13300208?hl=en",
@@ -3652,7 +3652,7 @@
       "lastUpdated": null,
       "contentHash": "6623f5a46f45063d7fb4db724dfff611cdc2fc726e42d5d8dc240bb21ec06aa8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:46.130Z"
+      "retrievedAt": "2026-11-19T14:29:49.528Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/13300873?hl=en",
@@ -3660,7 +3660,7 @@
       "lastUpdated": null,
       "contentHash": "371830059218d9ccad22cae09d106f218c75cf7c5ecd53c37ae04d60fb3c4518",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:43.046Z"
+      "retrievedAt": "2026-11-19T14:29:46.511Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/140528?hl=en",
@@ -3668,7 +3668,7 @@
       "lastUpdated": null,
       "contentHash": "195613a4d7f6ab22a1853eca59cbd0115d425772896dda35819550c086239885",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:58.026Z"
+      "retrievedAt": "2026-11-19T14:30:01.649Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/14907594?hl=en",
@@ -3676,7 +3676,7 @@
       "lastUpdated": null,
       "contentHash": "2d64046a472d94a4a07648a41913638b0459e56953ddd786310f579abb019ab7",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:38.626Z"
+      "retrievedAt": "2026-11-19T14:29:42.025Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/15107108?hl=en",
@@ -3684,7 +3684,7 @@
       "lastUpdated": null,
       "contentHash": "84f156fcac9007d14fc015f9c42affbb61ca803447b6ade920ed6bf5c83084a1",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:32.370Z"
+      "retrievedAt": "2026-11-19T14:30:36.823Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16308503?hl=en",
@@ -3692,7 +3692,7 @@
       "lastUpdated": null,
       "contentHash": "6ad6f658cf4010dc9433c3fd8ff62382f847a2696e3080bf95edd9e5b14bbdb5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:09.221Z"
+      "retrievedAt": "2026-11-19T14:29:11.121Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16530728?hl=en",
@@ -3700,7 +3700,7 @@
       "lastUpdated": null,
       "contentHash": "91a72d09dff46b90664ac5d8e278c222ff49c957d1a9c83b442520c8d5c4ff17",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:33.958Z"
+      "retrievedAt": "2026-11-19T14:30:38.297Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16543604?hl=en",
@@ -3708,7 +3708,7 @@
       "lastUpdated": null,
       "contentHash": "7baf727c852b250a65052f65f101c446187c5fd56fd632b66ec3175755e4fe48",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:30.871Z"
+      "retrievedAt": "2026-11-19T14:30:35.452Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16908024?hl=en",
@@ -3716,7 +3716,7 @@
       "lastUpdated": null,
       "contentHash": "71ab28099f6d073afa06a676f751b224aa31c7ab818d8fe381ee51b3f46af945",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:53.425Z"
+      "retrievedAt": "2026-11-19T14:34:31.143Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16983858?hl=en",
@@ -3724,7 +3724,7 @@
       "lastUpdated": null,
       "contentHash": "be4f7821a0b7d46d95dca24bbb40709be92b122cccbb8fa5117741d1fe682dba",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:57.269Z"
+      "retrievedAt": "2026-11-19T14:31:59.890Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/16984139?hl=en",
@@ -3732,7 +3732,7 @@
       "lastUpdated": null,
       "contentHash": "5420aa71ecafd5abf8cfb06e0048d52ca22dc83b6c792a8cc403db6281ef07bb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:54.965Z"
+      "retrievedAt": "2026-11-19T14:28:57.589Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17010575?hl=en",
@@ -3740,7 +3740,7 @@
       "lastUpdated": null,
       "contentHash": "cb36287e39b4dc5cb82095fc283f55867fe249f0b91003782b82bebb9be1fab9",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:41.378Z"
+      "retrievedAt": "2026-11-19T14:30:45.791Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17010961?hl=en",
@@ -3748,7 +3748,7 @@
       "lastUpdated": null,
       "contentHash": "1b3e1873fcacc0784557246ae2b45f124a3ac6c18c962013df7ada10627b0579",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:42.870Z"
+      "retrievedAt": "2026-11-19T14:30:47.278Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17011165?hl=en",
@@ -3756,7 +3756,7 @@
       "lastUpdated": null,
       "contentHash": "32295d667ecacadb76f1e2ca7e1e7f2b7e14ec46c3764743b20f35c4a2ea5c6f",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:07.091Z"
+      "retrievedAt": "2026-11-19T14:29:09.713Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17011259?hl=en",
@@ -3764,7 +3764,7 @@
       "lastUpdated": null,
       "contentHash": "9dac47d13c7fa9435b33972440f81ff17e1b243121e047df1501b33c676bfd5e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:39.871Z"
+      "retrievedAt": "2026-11-19T14:34:37.067Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17011364?hl=en",
@@ -3772,7 +3772,7 @@
       "lastUpdated": null,
       "contentHash": "341ae7fe13706d85bc4e18d39b5a3f9c4f5a69b1cbddc9ab1d138d47639309b6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:38.376Z"
+      "retrievedAt": "2026-11-19T14:30:42.826Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/17148418?hl=en",
@@ -3780,7 +3780,7 @@
       "lastUpdated": null,
       "contentHash": "f744a1a024086001e8bf3c12a7829ddb173ef7a1a28376b39b0fba582f217abc",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:05.553Z"
+      "retrievedAt": "2026-11-19T14:29:08.081Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2598813?hl=en",
@@ -3788,7 +3788,7 @@
       "lastUpdated": null,
       "contentHash": "43cf7392b3b78dd8269fc9e3f38e818645696170ba69a2ac37b7dd3f27b05034",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:05.406Z"
+      "retrievedAt": "2026-11-19T14:32:08.926Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2648487?hl=en",
@@ -3796,7 +3796,7 @@
       "lastUpdated": null,
       "contentHash": "eb196ed23f7076aeeac5167cde09af337c4d4fab7e0cd17a4b237eb9df116f20",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:34.803Z"
+      "retrievedAt": "2026-11-19T14:31:39.548Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2692911?hl=en",
@@ -3804,7 +3804,7 @@
       "lastUpdated": null,
       "contentHash": "45315cbb8d5e54d9050447fbb749f782f70508ca2d601d4cc36073d1aa012ce2",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:57.700Z"
+      "retrievedAt": "2026-11-19T14:27:57.678Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2692952?hl=en",
@@ -3812,7 +3812,7 @@
       "lastUpdated": null,
       "contentHash": "a38bd5b53d4b808abd6cfa89daa7bef2d7cc0425bd2f7382beed4ca14028f0ca",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:19.128Z"
+      "retrievedAt": "2026-11-19T14:31:24.415Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2753285?hl=en",
@@ -3820,7 +3820,7 @@
       "lastUpdated": null,
       "contentHash": "f2921dd83e8e4ef63c05e3384b2b672053cc0ac3f26e4c5ff0bbc7c679fe6ca6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:48.526Z"
+      "retrievedAt": "2026-11-19T14:32:51.722Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2753345?hl=en",
@@ -3828,7 +3828,7 @@
       "lastUpdated": null,
       "contentHash": "e2255362a17768a22a40e3ac33398849c3e2de779cd7705882fb6da275683e1e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:47.080Z"
+      "retrievedAt": "2026-11-19T14:32:50.289Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2753822?hl=en",
@@ -3836,7 +3836,7 @@
       "lastUpdated": null,
       "contentHash": "07b5c231bb2b7f00a076f0a9f91007f1ad25557cd45d9785eef153a0b93ef8fa",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:14.645Z"
+      "retrievedAt": "2026-11-19T14:31:19.922Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2753960?hl=en",
@@ -3844,7 +3844,7 @@
       "lastUpdated": null,
       "contentHash": "f7c997d2e3dbd5acfc60081eddd15fe3fd0d27ad20b1c15243afdc2510e159a6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:14.550Z"
+      "retrievedAt": "2026-11-19T14:29:17.071Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2762019?hl=en",
@@ -3852,7 +3852,7 @@
       "lastUpdated": null,
       "contentHash": "05fd88c4ac514080fd350969b96b4c258e22f5dc4f3eecd2df3d019a4fe92f4b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:16.156Z"
+      "retrievedAt": "2026-11-19T14:31:21.400Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2774099?hl=en",
@@ -3860,7 +3860,7 @@
       "lastUpdated": null,
       "contentHash": "1c7b7ead72307f35a65f492331b85c6307f54ff2bfaa3ecf0743bebba806b862",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:50.565Z"
+      "retrievedAt": "2026-11-19T14:29:53.999Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2774358?hl=en",
@@ -3868,7 +3868,7 @@
       "lastUpdated": null,
       "contentHash": "9323867914d84f5f23af60074d25c8c4787e3472e8df1b0d4da55c75c72dd59c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:07.148Z"
+      "retrievedAt": "2026-11-19T14:31:12.452Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2851971?hl=en",
@@ -3876,7 +3876,7 @@
       "lastUpdated": null,
       "contentHash": "d48bf4ead22d548f45f30adbcb591e529ea2f2557d5773d36ced2fe98b3902d4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:17.647Z"
+      "retrievedAt": "2026-11-19T14:31:22.927Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2856609?hl=en",
@@ -3884,7 +3884,7 @@
       "lastUpdated": null,
       "contentHash": "f72f307170391b332027bdca112047c7d23fc37fa081e0bcb8908b4a8e257da4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:50.005Z"
+      "retrievedAt": "2026-11-19T14:32:53.282Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/2919560?hl=en",
@@ -3892,7 +3892,7 @@
       "lastUpdated": null,
       "contentHash": "315384792c8a4dc83e7d9eb3803e8fc12bec822d53e91b6814ba68f87ae4ff84",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:52.928Z"
+      "retrievedAt": "2026-11-19T14:32:56.291Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3035947?hl=en",
@@ -3900,7 +3900,7 @@
       "lastUpdated": null,
       "contentHash": "2c6d7f7d694710739a84b4dff42a518bef26023ce2143ad209aaa819dabc9d90",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:22.153Z"
+      "retrievedAt": "2026-11-19T14:27:21.785Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3069489?hl=en",
@@ -3908,7 +3908,7 @@
       "lastUpdated": null,
       "contentHash": "7088a4a666f743c7af1bd41a62a8c498307b9144427a2a762a6cd3e1ce3b4479",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:13.065Z"
+      "retrievedAt": "2026-11-19T14:29:15.597Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3070196?hl=en",
@@ -3916,7 +3916,7 @@
       "lastUpdated": null,
       "contentHash": "e8d5d8aabc6f313becd3a260d5d2843ba5ce20a6ab214e838cea222eab305f3b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:34.989Z"
+      "retrievedAt": "2026-11-19T14:32:38.231Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3070233?hl=en",
@@ -3924,7 +3924,7 @@
       "lastUpdated": null,
       "contentHash": "bcfd107e7c4484f130e0eacde48ed4125f524d0adc780bc16891716dad0df464",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:45.450Z"
+      "retrievedAt": "2026-11-19T14:32:48.795Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3070236?hl=en",
@@ -3932,7 +3932,7 @@
       "lastUpdated": null,
       "contentHash": "0ad7520d9b654c56a6efd867816674072094331d39b57f5cc1b975fe3b81c959",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:40.930Z"
+      "retrievedAt": "2026-11-19T14:32:44.336Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3105381?hl=en",
@@ -3940,7 +3940,7 @@
       "lastUpdated": null,
       "contentHash": "15aa3894c616874794fc38aa43891e7a6dd7c29739ceb22e6fdd74b05d98d237",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:37.999Z"
+      "retrievedAt": "2026-11-19T14:32:41.260Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3106788?hl=en",
@@ -3948,7 +3948,7 @@
       "lastUpdated": null,
       "contentHash": "28d5926ed36dfe2f99a6c4fefd23ef81b84891e01aa663357592ee51047cf15b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:42.442Z"
+      "retrievedAt": "2026-11-19T14:32:45.772Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3106959?hl=en",
@@ -3956,7 +3956,7 @@
       "lastUpdated": null,
       "contentHash": "94a1d048e09e338ffb734c1f994bfef7c22f2d065f3b528b3c630078f7e11729",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:04.114Z"
+      "retrievedAt": "2026-11-19T14:31:09.438Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3108687?hl=en",
@@ -3964,7 +3964,7 @@
       "lastUpdated": null,
       "contentHash": "5e873bcff0c450d9293cdc0ec11a32c0574a3ce488b3e8143766167cd710d2ab",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:02.602Z"
+      "retrievedAt": "2026-11-19T14:31:07.900Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3110700?hl=en",
@@ -3972,7 +3972,7 @@
       "lastUpdated": null,
       "contentHash": "5e7a2f5e7d0f9d56186912b8b7345cd20a8a307a45ac3d347e5783ac3d3ecf8a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:10.102Z"
+      "retrievedAt": "2026-11-19T14:31:15.433Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3110704?hl=en",
@@ -3980,7 +3980,7 @@
       "lastUpdated": null,
       "contentHash": "352deec8c5d88c857bbc5715e6ef8776bfbbb3d1002ab663294f7ff1860bc8e9",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:05.616Z"
+      "retrievedAt": "2026-11-19T14:31:11.087Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3110839?hl=en",
@@ -3988,7 +3988,7 @@
       "lastUpdated": null,
       "contentHash": "6c05a017cf71a386d1b19bef103ae0d59f88c3b410aa9f9c6fb535806fce86d7",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:11.614Z"
+      "retrievedAt": "2026-11-19T14:31:16.848Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3110870?hl=en",
@@ -3996,7 +3996,7 @@
       "lastUpdated": null,
       "contentHash": "0dcfd25833a9bdcfb9c978df74b5e94022ec078abdea0b1bdfbfb5025fa56b79",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:08.648Z"
+      "retrievedAt": "2026-11-19T14:31:14.044Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3113241?hl=en",
@@ -4004,7 +4004,7 @@
       "lastUpdated": null,
       "contentHash": "e415407c980fd2a5e84121f2823bab7aa38ed3a3a5e0c8e7be85c64c1f4e1dda",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:51.471Z"
+      "retrievedAt": "2026-11-19T14:32:54.737Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3219042?hl=en",
@@ -4012,7 +4012,7 @@
       "lastUpdated": null,
       "contentHash": "36a3402bd148eca6c107020e2e6ab02b7402772b1e7c06c4c7fb67b5844b924b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:43.936Z"
+      "retrievedAt": "2026-11-19T14:32:47.269Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3221080?hl=en",
@@ -4020,7 +4020,7 @@
       "lastUpdated": null,
       "contentHash": "7d504b02b6bda9c93200347c5e150b8cad4a429a9e405f05d878285b2f0e2c8e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:12.650Z"
+      "retrievedAt": "2026-11-19T14:29:15.163Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/3316496?hl=en",
@@ -4028,7 +4028,7 @@
       "lastUpdated": null,
       "contentHash": "92a30304f515dc3b8a4462e350c3b0644c5d64b962c533f673d9db533a8f68ef",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:13.115Z"
+      "retrievedAt": "2026-11-19T14:31:18.384Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/34592?hl=en",
@@ -4036,7 +4036,7 @@
       "lastUpdated": null,
       "contentHash": "353da473e154fe765b364228bbae4d3313c8b0915cd71ce39099df198b74a08f",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:17.877Z"
+      "retrievedAt": "2026-11-19T14:29:20.396Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/35843?hl=en",
@@ -4044,7 +4044,7 @@
       "lastUpdated": null,
       "contentHash": "59aac81690b5f2c1b1f752c1151a2b9fa0078157cf1f041b54d2c4463d499c67",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:26.545Z"
+      "retrievedAt": "2026-11-19T14:29:29.957Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/6062598?hl=en",
@@ -4052,7 +4052,7 @@
       "lastUpdated": null,
       "contentHash": "b86504e3e4697a4ce0d0d6af48f4a5d714bd77eb5c9e53408e4c8a3d9551335e",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:09.126Z"
+      "retrievedAt": "2026-11-19T14:28:08.454Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/6211453?hl=en",
@@ -4060,7 +4060,7 @@
       "lastUpdated": null,
       "contentHash": "689e7834d2cb452dc819b974c6c2bfa725943985cbcccac2be1832f6b94dcad7",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:11.703Z"
+      "retrievedAt": "2026-11-19T14:28:11.566Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/6258314?hl=en",
@@ -4068,7 +4068,7 @@
       "lastUpdated": null,
       "contentHash": "fe12aedc1166f924b5be5acfeef1bf0f8e2dfa884eb9ec146d5a794897cc0813",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:52.037Z"
+      "retrievedAt": "2026-11-19T14:29:55.502Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/6347750?hl=en",
@@ -4076,7 +4076,7 @@
       "lastUpdated": null,
       "contentHash": "10f9849e800a33ec268e6ef297366719a71b1c5f95ca4e073831741d70ad2ec6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:57:34.240Z"
+      "retrievedAt": "2026-11-19T14:33:45.288Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/63756?hl=en",
@@ -4084,7 +4084,7 @@
       "lastUpdated": null,
       "contentHash": "e3ec19c544e93cb72a74a7cb9f82fe84dc0167ed755c3bea513d28807e955272",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:07.889Z"
+      "retrievedAt": "2026-11-19T14:33:10.770Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7041154?hl=en",
@@ -4092,7 +4092,7 @@
       "lastUpdated": null,
       "contentHash": "df109a886f5575102e1bb04fdc7f2affe0ad9b8b1ad04caac65fa4d42fcd1d5c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:23.565Z"
+      "retrievedAt": "2026-11-19T14:29:26.965Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7042828?hl=en",
@@ -4100,7 +4100,7 @@
       "lastUpdated": null,
       "contentHash": "b31274b5ac4d80a628d33e8944b53a454b667c1cd144b976da56fd2092317fc5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:54.665Z"
+      "retrievedAt": "2026-11-19T14:27:54.219Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7320015?hl=en",
@@ -4108,7 +4108,7 @@
       "lastUpdated": null,
       "contentHash": "1fc00092aa78a41400841dc2b401cdd282d94489f7ab634dd26d8654d9835b2d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:04.932Z"
+      "retrievedAt": "2026-11-19T14:33:07.804Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7440203?hl=en",
@@ -4116,7 +4116,7 @@
       "lastUpdated": null,
       "contentHash": "f44c00a782dc4564af8777fcc82df4d9c546e3e371c320379307bf64b81b8640",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:57.988Z"
+      "retrievedAt": "2026-11-19T14:29:00.626Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7445569?hl=en",
@@ -4124,7 +4124,7 @@
       "lastUpdated": null,
       "contentHash": "4ca43ce5315843fb910d3f854e95a1ddf162293f014772cb5fa02692edd963fc",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:02.549Z"
+      "retrievedAt": "2026-11-19T14:29:05.105Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7450883?hl=en",
@@ -4132,7 +4132,7 @@
       "lastUpdated": null,
       "contentHash": "28e137380f81eb832d980d11c23a032b9096e5095ec20c1f242175a9e6cec3b2",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:20.371Z"
+      "retrievedAt": "2026-11-19T14:29:23.514Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7451001?hl=en",
@@ -4140,7 +4140,7 @@
       "lastUpdated": null,
       "contentHash": "2c813dc89936ac77b461c1961f102df86912f30174d5cca1a381488fd210c4f4",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:16.214Z"
+      "retrievedAt": "2026-11-19T14:29:18.673Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7451491?hl=en",
@@ -4148,7 +4148,7 @@
       "lastUpdated": null,
       "contentHash": "5a9744f3cc9124754cf30d9f027da11d46bebb0fbdefeb92ec2f311ae78b8714",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:29.383Z"
+      "retrievedAt": "2026-11-19T14:30:33.893Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7474347?hl=en",
@@ -4156,7 +4156,7 @@
       "lastUpdated": null,
       "contentHash": "6cc600cc3e4db26109db293264e78209a1b9fd3a54abddc014955a6b38f7f828",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:27.856Z"
+      "retrievedAt": "2026-11-19T14:30:32.265Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7478053?hl=en",
@@ -4164,7 +4164,7 @@
       "lastUpdated": null,
       "contentHash": "c286c40c2eb2e81319b2ec36e669ffdc586725e1d326380bb0d33be90dc57366",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:19.164Z"
+      "retrievedAt": "2026-11-19T14:30:22.503Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7479439?hl=en",
@@ -4172,7 +4172,7 @@
       "lastUpdated": null,
       "contentHash": "95ea6a1ff78752ffbc79f591c30ad132558dfa01903f1b7a8cf59549ee50329b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:10.899Z"
+      "retrievedAt": "2026-11-19T14:33:13.766Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7489871?hl=en",
@@ -4180,7 +4180,7 @@
       "lastUpdated": null,
       "contentHash": "9a0b07aadb6cc47c3e40c4a48e5ee512adbd0d4bdc9775b18b2dc30d380d4b86",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:56.523Z"
+      "retrievedAt": "2026-11-19T14:28:59.085Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7506797?hl=en",
@@ -4188,7 +4188,7 @@
       "lastUpdated": null,
       "contentHash": "4a98b9cb4021cfbdedb37bc2d494fb0fe48884447bfec648bec9f6bcb054f7ce",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:10.048Z"
+      "retrievedAt": "2026-11-19T14:30:13.482Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7552505?hl=en",
@@ -4196,7 +4196,7 @@
       "lastUpdated": null,
       "contentHash": "7454ffaec0118576dc530668d21ca8ac6ddb8e65c2be20b7b70bf861683f1c37",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:50.110Z"
+      "retrievedAt": "2026-11-19T14:27:49.786Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
@@ -4204,7 +4204,7 @@
       "lastUpdated": null,
       "contentHash": "8989b2a969701983d81785f5c191c0e01629b8b938bb2aef0fbdcf4231c35999",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:51.593Z"
+      "retrievedAt": "2026-11-19T14:27:51.198Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7643010?hl=en",
@@ -4212,7 +4212,7 @@
       "lastUpdated": null,
       "contentHash": "084c11b818337d3277e21138ebfd76837323e00af2a461e4d7299ca79c0926c2",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:11.554Z"
+      "retrievedAt": "2026-11-19T14:30:15.020Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7643011?hl=en",
@@ -4220,7 +4220,7 @@
       "lastUpdated": null,
       "contentHash": "2b9e2c3c8e7ab72cd3086a7af51c241860fbfa2d3fd9ad7f5472b5c5a5daf2cb",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:26.357Z"
+      "retrievedAt": "2026-11-19T14:30:30.345Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7643418?hl=en",
@@ -4228,7 +4228,7 @@
       "lastUpdated": null,
       "contentHash": "3803f6bfb52040dadc4a368a53c6599f26cd42212f206462c9b9f00143a2646d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:08.547Z"
+      "retrievedAt": "2026-11-19T14:30:12.104Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7643505?hl=en",
@@ -4236,7 +4236,7 @@
       "lastUpdated": null,
       "contentHash": "852d52e0cc86c7ac2e4dea71200710c6c027515b3773ba2155fdcb5c17a1815b",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:11.448Z"
+      "retrievedAt": "2026-11-19T14:32:14.911Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7645831?hl=en",
@@ -4244,7 +4244,7 @@
       "lastUpdated": null,
       "contentHash": "c572b084b1f27edeeb7913909b68c9990ccb348e5bd5cde91f0d1fc98fd567bf",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:53:07.056Z"
+      "retrievedAt": "2026-11-19T14:34:33.150Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7646114?hl=en",
@@ -4252,7 +4252,7 @@
       "lastUpdated": null,
       "contentHash": "73d26c17c43871e98e548381560fea9a2df06ab812c2631917d58d55522f810a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:18.930Z"
+      "retrievedAt": "2026-11-19T14:32:22.249Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7687465?hl=en",
@@ -4260,7 +4260,7 @@
       "lastUpdated": null,
       "contentHash": "a5a913cf3a722280126d714d3595a9e9ef9778d925ed8d20e43fc20e171855ca",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:35.618Z"
+      "retrievedAt": "2026-11-19T14:29:39.060Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/7687615?hl=en",
@@ -4268,7 +4268,7 @@
       "lastUpdated": null,
       "contentHash": "868e5d3aaf5ce09b7319f48cceb360e99156df88a61ca72b7bbd822d5266b412",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:51:59.590Z"
+      "retrievedAt": "2026-11-19T14:29:02.093Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9008080?hl=en",
@@ -4276,7 +4276,7 @@
       "lastUpdated": null,
       "contentHash": "fecc7500fcac655332c006784ee3fe2a5ca686eac5399d55b0e43107f33479c0",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:53.104Z"
+      "retrievedAt": "2026-11-19T14:27:52.806Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9012289?hl=en",
@@ -4284,7 +4284,7 @@
       "lastUpdated": null,
       "contentHash": "0c23d45f0fcae26703c6c0956d652bfb173860d6ac456596e3b00a8d1d4eed77",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:47.154Z"
+      "retrievedAt": "2026-11-19T14:27:48.244Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9044101?hl=en",
@@ -4292,7 +4292,7 @@
       "lastUpdated": null,
       "contentHash": "81f0742427178de15ecf651a43ee89f16795208cdc09dcda5e2885d5772cda0a",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:53.563Z"
+      "retrievedAt": "2026-11-19T14:29:57.060Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9044175?hl=en",
@@ -4300,7 +4300,7 @@
       "lastUpdated": null,
       "contentHash": "23bd348181d3ef3b2c885d96f306267c054b1cdb37da612d7d5a61097f9edf8c",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:11.695Z"
+      "retrievedAt": "2026-11-19T14:29:14.227Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9049606?hl=en",
@@ -4308,7 +4308,7 @@
       "lastUpdated": null,
       "contentHash": "9abdd74ccd4261a164fdf47db8d0021783728c6d965485d58f96c143cb3e8695",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:28.063Z"
+      "retrievedAt": "2026-11-19T14:29:31.664Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9079473?hl=en",
@@ -4316,7 +4316,7 @@
       "lastUpdated": null,
       "contentHash": "279fcfbcbc052f46f8c07c21d38f68308e050b9a76d51ab76b31410307ce16cc",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:36.440Z"
+      "retrievedAt": "2026-11-19T14:33:39.276Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9079920?hl=en",
@@ -4324,7 +4324,7 @@
       "lastUpdated": null,
       "contentHash": "0049a9e2263fefb0863c5b3f1e2ef83ec8f1b4ea4c44de64f34515c30081685d",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:43.925Z"
+      "retrievedAt": "2026-11-19T14:33:46.719Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9111943?hl=en",
@@ -4332,7 +4332,7 @@
       "lastUpdated": null,
       "contentHash": "fa6a2ffe32de63dc1d0de2f6220445c315ddfbb1a0818714789eebaca9637f94",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:33.407Z"
+      "retrievedAt": "2026-11-19T14:33:36.275Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9128668?hl=en",
@@ -4340,7 +4340,7 @@
       "lastUpdated": null,
       "contentHash": "972072f0ebc9c11349a10df94c701508c9438a9bb2226c974a2917d3bd1086b5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:48.536Z"
+      "retrievedAt": "2026-11-19T14:27:46.648Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9128669?hl=en",
@@ -4348,7 +4348,7 @@
       "lastUpdated": null,
       "contentHash": "4833cdd22205322cfe447939eac3e804afdf88e160adc0b7cc2440ebcd68e0ea",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:41.560Z"
+      "retrievedAt": "2026-11-19T14:29:44.964Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9130064?hl=en",
@@ -4356,7 +4356,7 @@
       "lastUpdated": null,
       "contentHash": "ee0eb6840028feee1eb748ba54bd76de20f449747745fd9a04b70e14c3ad1239",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:27.420Z"
+      "retrievedAt": "2026-11-19T14:33:30.363Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9131543?hl=en",
@@ -4364,7 +4364,7 @@
       "lastUpdated": null,
       "contentHash": "b80e551471ee735f16d46849d9593bb1870a9dc085e06996e6f6c9df0de306c8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:19.956Z"
+      "retrievedAt": "2026-11-19T14:33:22.783Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9133276?hl=en",
@@ -4372,7 +4372,7 @@
       "lastUpdated": null,
       "contentHash": "3195864dbb53adfef59f509cbde6a35fb8592554ac690ad7248aa9ab828295f5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:55.077Z"
+      "retrievedAt": "2026-11-19T14:29:58.488Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9166415?hl=en",
@@ -4380,7 +4380,7 @@
       "lastUpdated": null,
       "contentHash": "3072dfbb716f1fec4125b22dddb3e549f214810824f61265e1aca37ad0250ba6",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:44.682Z"
+      "retrievedAt": "2026-11-19T14:29:48.001Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9205520?hl=en",
@@ -4388,7 +4388,7 @@
       "lastUpdated": null,
       "contentHash": "1857bedeb384b29e61d6d6307abf983b3e00a4205b6a44d195637837e35bf59f",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:56.312Z"
+      "retrievedAt": "2026-11-19T14:27:55.710Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9216203?hl=en",
@@ -4396,7 +4396,7 @@
       "lastUpdated": null,
       "contentHash": "0cb047d4e6458cc374c879d2fad61be8d3f7436c766b5cc7b79ff13ecdbedd97",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:55:17.415Z"
+      "retrievedAt": "2026-11-19T14:32:20.866Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9216516?hl=en",
@@ -4404,7 +4404,7 @@
       "lastUpdated": null,
       "contentHash": "822d4dea88b438c8cc491b20c7914274e629e6da11472e9368037578ee3556a3",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:32.581Z"
+      "retrievedAt": "2026-11-19T14:29:36.041Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9357768?hl=en",
@@ -4412,7 +4412,7 @@
       "lastUpdated": null,
       "contentHash": "9e6f069fa27b2327e8a97e1194c32b2711039f6c1196877e7ea2765489cdb476",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:40.245Z"
+      "retrievedAt": "2026-11-19T14:29:43.549Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9370220?hl=en",
@@ -4420,7 +4420,7 @@
       "lastUpdated": null,
       "contentHash": "342b8b97e01cdbb8b31e79364dee786eeb195f39018d54c32fb3157adaf5fef5",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:29.567Z"
+      "retrievedAt": "2026-11-19T14:29:33.282Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9388335?hl=en",
@@ -4428,7 +4428,7 @@
       "lastUpdated": null,
       "contentHash": "63ee546b1fa093cc942db67b34d3c42806150eb045198ee9406ec5867cf21523",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:56.518Z"
+      "retrievedAt": "2026-11-19T14:30:00.060Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9419847?hl=en",
@@ -4436,7 +4436,7 @@
       "lastUpdated": null,
       "contentHash": "f73b27b13f4526e07fdc2981f17165d8d80d9fdab7aca6e2ef0f9c9737adee8f",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:56:39.382Z"
+      "retrievedAt": "2026-11-19T14:33:42.299Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9419894?hl=en",
@@ -4444,7 +4444,7 @@
       "lastUpdated": null,
       "contentHash": "0698648b3de743b9d36ef455deb4832146399584432fcaf246283f5254b656d3",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:37.049Z"
+      "retrievedAt": "2026-11-19T14:29:40.554Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9495631?hl=en",
@@ -4452,7 +4452,7 @@
       "lastUpdated": null,
       "contentHash": "fc521bdcf201c929817de1e0a4bec5a5eee0e855ee94fde483b64105a5dd3dd3",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:01.139Z"
+      "retrievedAt": "2026-11-19T14:29:03.650Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/96568?hl=en",
@@ -4460,7 +4460,7 @@
       "lastUpdated": null,
       "contentHash": "a5b628cd9210427db4686adaf1528fc5a646c3e2adc6e94335fc2111c1e719f8",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:54:01.128Z"
+      "retrievedAt": "2026-11-19T14:31:06.400Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9679690?hl=en",
@@ -4468,7 +4468,7 @@
       "lastUpdated": null,
       "contentHash": "64069ba5e5db4272986700bb3b5f3cf9c71e161e2a1baa764e7bac5b0f885632",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:50:59.566Z"
+      "retrievedAt": "2026-11-19T14:27:58.989Z"
     },
     {
       "url": "https://support.google.com/webmasters/answer/9689846?hl=en",
@@ -4476,7 +4476,7 @@
       "lastUpdated": null,
       "contentHash": "06d85fbc6648704e548a7a3553bfb6a3fbf797055704544783278e8051e50062",
       "topics": [],
-      "retrievedAt": "2026-11-19T13:52:22.101Z"
+      "retrievedAt": "2026-11-19T14:29:25.604Z"
     },
     {
       "url": "https://web.dev/articles/better-layout-shift-metric",
@@ -4486,7 +4486,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:56:50.311Z"
+      "retrievedAt": "2026-11-19T14:33:50.776Z"
     },
     {
       "url": "https://web.dev/articles/bfcache",
@@ -4496,7 +4496,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:50.663Z"
+      "retrievedAt": "2026-11-19T14:30:55.570Z"
     },
     {
       "url": "https://web.dev/articles/browser-level-image-lazy-loading",
@@ -4506,7 +4506,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:52:19.714Z"
+      "retrievedAt": "2026-11-19T14:29:23.182Z"
     },
     {
       "url": "https://web.dev/articles/choose-the-right-image-format",
@@ -4516,7 +4516,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:56.797Z"
+      "retrievedAt": "2026-11-19T14:33:00.130Z"
     },
     {
       "url": "https://web.dev/articles/client-side-rendering-of-html-and-interactivity",
@@ -4526,7 +4526,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:52.264Z"
+      "retrievedAt": "2026-11-19T14:30:57.192Z"
     },
     {
       "url": "https://web.dev/articles/cls",
@@ -4536,7 +4536,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:50:54.534Z"
+      "retrievedAt": "2026-11-19T14:27:53.974Z"
     },
     {
       "url": "https://web.dev/articles/codelab-imagemin-webpack",
@@ -4546,7 +4546,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:09.041Z"
+      "retrievedAt": "2026-11-19T14:34:08.610Z"
     },
     {
       "url": "https://web.dev/articles/codelab-preload-web-fonts",
@@ -4556,7 +4556,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:05.353Z"
+      "retrievedAt": "2026-11-19T14:34:04.687Z"
     },
     {
       "url": "https://web.dev/articles/codelab-serve-images-webp",
@@ -4566,7 +4566,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:07.944Z"
+      "retrievedAt": "2026-11-19T14:34:07.400Z"
     },
     {
       "url": "https://web.dev/articles/compress-images",
@@ -4576,7 +4576,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:57.392Z"
+      "retrievedAt": "2026-11-19T14:33:00.721Z"
     },
     {
       "url": "https://web.dev/articles/critical-rendering-path",
@@ -4586,7 +4586,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:09.420Z"
+      "retrievedAt": "2026-11-19T14:34:09.157Z"
     },
     {
       "url": "https://web.dev/articles/css-web-vitals",
@@ -4596,7 +4596,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:46.631Z"
+      "retrievedAt": "2026-11-19T14:28:48.971Z"
     },
     {
       "url": "https://web.dev/articles/debounce-your-input-handlers",
@@ -4606,7 +4606,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:56:49.603Z"
+      "retrievedAt": "2026-11-19T14:33:50.215Z"
     },
     {
       "url": "https://web.dev/articles/debug-layout-shifts",
@@ -4616,7 +4616,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:44.986Z"
+      "retrievedAt": "2026-11-19T14:28:47.399Z"
     },
     {
       "url": "https://web.dev/articles/defining-core-web-vitals-thresholds",
@@ -4626,7 +4626,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:43.949Z"
+      "retrievedAt": "2026-11-19T14:28:46.200Z"
     },
     {
       "url": "https://web.dev/articles/fast-playback-with-preload",
@@ -4636,7 +4636,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:56.432Z"
+      "retrievedAt": "2026-11-19T14:33:00.398Z"
     },
     {
       "url": "https://web.dev/articles/fcp",
@@ -4646,7 +4646,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:46.976Z"
+      "retrievedAt": "2026-11-19T14:28:49.670Z"
     },
     {
       "url": "https://web.dev/articles/fetch-priority",
@@ -4656,7 +4656,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:46.940Z"
+      "retrievedAt": "2026-11-19T14:31:52.308Z"
     },
     {
       "url": "https://web.dev/articles/find-slow-interactions-in-the-field",
@@ -4666,7 +4666,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:51.442Z"
+      "retrievedAt": "2026-11-19T14:30:56.017Z"
     },
     {
       "url": "https://web.dev/articles/font-best-practices",
@@ -4676,7 +4676,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:46.395Z"
+      "retrievedAt": "2026-11-19T14:28:49.113Z"
     },
     {
       "url": "https://web.dev/articles/iframe-lazy-loading",
@@ -4686,7 +4686,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:50.242Z"
+      "retrievedAt": "2026-11-19T14:31:54.562Z"
     },
     {
       "url": "https://web.dev/articles/image-cdns",
@@ -4696,7 +4696,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:48.596Z"
+      "retrievedAt": "2026-11-19T14:31:53.738Z"
     },
     {
       "url": "https://web.dev/articles/inp",
@@ -4706,7 +4706,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:50:54.232Z"
+      "retrievedAt": "2026-11-19T14:27:53.627Z"
     },
     {
       "url": "https://web.dev/articles/lab-and-field-data-differences",
@@ -4716,7 +4716,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:44.737Z"
+      "retrievedAt": "2026-11-19T14:28:47.038Z"
     },
     {
       "url": "https://web.dev/articles/lcp",
@@ -4726,7 +4726,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:50:53.684Z"
+      "retrievedAt": "2026-11-19T14:27:53.369Z"
     },
     {
       "url": "https://web.dev/articles/lcp-lazy-loading",
@@ -4736,7 +4736,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:58.642Z"
+      "retrievedAt": "2026-11-19T14:33:01.932Z"
     },
     {
       "url": "https://web.dev/articles/learn-core-web-vitals",
@@ -4746,7 +4746,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:50:55.122Z"
+      "retrievedAt": "2026-11-19T14:27:54.763Z"
     },
     {
       "url": "https://web.dev/articles/manually-diagnose-slow-interactions-in-the-lab",
@@ -4756,7 +4756,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:51.503Z"
+      "retrievedAt": "2026-11-19T14:30:56.380Z"
     },
     {
       "url": "https://web.dev/articles/optimize-cls",
@@ -4766,7 +4766,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:45.351Z"
+      "retrievedAt": "2026-11-19T14:28:47.806Z"
     },
     {
       "url": "https://web.dev/articles/optimize-css-background-images-with-media-queries",
@@ -4776,7 +4776,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:46.652Z"
+      "retrievedAt": "2026-11-19T14:31:51.964Z"
     },
     {
       "url": "https://web.dev/articles/optimize-cwv-business",
@@ -4786,7 +4786,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:43.546Z"
+      "retrievedAt": "2026-11-19T14:28:45.604Z"
     },
     {
       "url": "https://web.dev/articles/optimize-inp",
@@ -4796,7 +4796,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:45.583Z"
+      "retrievedAt": "2026-11-19T14:28:48.404Z"
     },
     {
       "url": "https://web.dev/articles/optimize-input-delay",
@@ -4806,7 +4806,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:51.976Z"
+      "retrievedAt": "2026-11-19T14:30:56.607Z"
     },
     {
       "url": "https://web.dev/articles/optimize-lcp",
@@ -4816,7 +4816,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:45.176Z"
+      "retrievedAt": "2026-11-19T14:28:48.024Z"
     },
     {
       "url": "https://web.dev/articles/optimize-ttfb",
@@ -4826,7 +4826,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:59.840Z"
+      "retrievedAt": "2026-11-19T14:31:05.102Z"
     },
     {
       "url": "https://web.dev/articles/optimize-webfont-loading",
@@ -4836,7 +4836,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:50.937Z"
+      "retrievedAt": "2026-11-19T14:31:51.422Z"
     },
     {
       "url": "https://web.dev/articles/preload-critical-assets",
@@ -4846,7 +4846,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:45.350Z"
+      "retrievedAt": "2026-11-19T14:31:50.557Z"
     },
     {
       "url": "https://web.dev/articles/preload-optional-fonts",
@@ -4856,7 +4856,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:08.785Z"
+      "retrievedAt": "2026-11-19T14:34:05.616Z"
     },
     {
       "url": "https://web.dev/articles/preload-responsive-images",
@@ -4866,7 +4866,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:06.177Z"
+      "retrievedAt": "2026-11-19T14:34:05.898Z"
     },
     {
       "url": "https://web.dev/articles/preload-scanner",
@@ -4876,7 +4876,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:46.028Z"
+      "retrievedAt": "2026-11-19T14:31:51.706Z"
     },
     {
       "url": "https://web.dev/articles/reduce-webfont-size",
@@ -4886,7 +4886,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:48.542Z"
+      "retrievedAt": "2026-11-19T14:31:53.531Z"
     },
     {
       "url": "https://web.dev/articles/rendering-on-the-web",
@@ -4896,7 +4896,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:52:20.070Z"
+      "retrievedAt": "2026-11-19T14:29:24.432Z"
     },
     {
       "url": "https://web.dev/articles/rendering-performance",
@@ -4906,7 +4906,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:56:49.015Z"
+      "retrievedAt": "2026-11-19T14:33:49.479Z"
     },
     {
       "url": "https://web.dev/articles/responsive-images",
@@ -4916,7 +4916,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:59.103Z"
+      "retrievedAt": "2026-11-19T14:29:02.330Z"
     },
     {
       "url": "https://web.dev/articles/responsive-web-design-basics",
@@ -4926,7 +4926,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:55.160Z"
+      "retrievedAt": "2026-11-19T14:28:57.967Z"
     },
     {
       "url": "https://web.dev/articles/route-preloading-in-angular",
@@ -4936,7 +4936,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:56:59.256Z"
+      "retrievedAt": "2026-11-19T14:33:59.441Z"
     },
     {
       "url": "https://web.dev/articles/serve-images-webp",
@@ -4946,7 +4946,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:57.985Z"
+      "retrievedAt": "2026-11-19T14:33:01.299Z"
     },
     {
       "url": "https://web.dev/articles/serve-images-with-correct-dimensions",
@@ -4956,7 +4956,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:55:57.512Z"
+      "retrievedAt": "2026-11-19T14:33:01.127Z"
     },
     {
       "url": "https://web.dev/articles/serve-responsive-images",
@@ -4966,7 +4966,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:49.420Z"
+      "retrievedAt": "2026-11-19T14:31:51.108Z"
     },
     {
       "url": "https://web.dev/articles/top-cwv",
@@ -4976,7 +4976,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:45.878Z"
+      "retrievedAt": "2026-11-19T14:28:48.482Z"
     },
     {
       "url": "https://web.dev/articles/ttfb",
@@ -4986,7 +4986,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:46.714Z"
+      "retrievedAt": "2026-11-19T14:28:49.286Z"
     },
     {
       "url": "https://web.dev/articles/use-imagemin-to-compress-images",
@@ -4996,7 +4996,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:51.104Z"
+      "retrievedAt": "2026-11-19T14:31:54.955Z"
     },
     {
       "url": "https://web.dev/articles/use-srcset-to-automatically-choose-the-right-image",
@@ -5006,7 +5006,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:57:06.310Z"
+      "retrievedAt": "2026-11-19T14:34:08.010Z"
     },
     {
       "url": "https://web.dev/articles/variable-fonts",
@@ -5016,7 +5016,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:50.816Z"
+      "retrievedAt": "2026-11-19T14:31:55.171Z"
     },
     {
       "url": "https://web.dev/articles/vitals",
@@ -5026,7 +5026,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:49:58.787Z"
+      "retrievedAt": "2026-11-19T14:26:56.784Z"
     },
     {
       "url": "https://web.dev/articles/vitals-field-measurement-best-practices",
@@ -5036,7 +5036,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:44.348Z"
+      "retrievedAt": "2026-11-19T14:28:46.772Z"
     },
     {
       "url": "https://web.dev/articles/vitals-ga4",
@@ -5046,7 +5046,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:58.735Z"
+      "retrievedAt": "2026-11-19T14:31:04.432Z"
     },
     {
       "url": "https://web.dev/articles/vitals-measurement-getting-started",
@@ -5056,7 +5056,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:44.131Z"
+      "retrievedAt": "2026-11-19T14:28:46.775Z"
     },
     {
       "url": "https://web.dev/articles/vitals-spa-faq",
@@ -5066,7 +5066,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:52.979Z"
+      "retrievedAt": "2026-11-19T14:31:57.058Z"
     },
     {
       "url": "https://web.dev/articles/vitals-tools",
@@ -5076,7 +5076,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:50:55.554Z"
+      "retrievedAt": "2026-11-19T14:27:55.180Z"
     },
     {
       "url": "https://web.dev/blog/better-responsiveness-metric",
@@ -5086,7 +5086,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:33.572Z"
+      "retrievedAt": "2026-11-19T14:31:37.546Z"
     },
     {
       "url": "https://web.dev/blog/cls-web-tooling",
@@ -5096,7 +5096,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:53.112Z"
+      "retrievedAt": "2026-11-19T14:30:58.437Z"
     },
     {
       "url": "https://web.dev/blog/common-misconceptions-lcp",
@@ -5106,7 +5106,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:47.245Z"
+      "retrievedAt": "2026-11-19T14:31:52.536Z"
     },
     {
       "url": "https://web.dev/blog/evolving-cls",
@@ -5116,7 +5116,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:53:52.645Z"
+      "retrievedAt": "2026-11-19T14:30:57.235Z"
     },
     {
       "url": "https://web.dev/blog/inp-cwv",
@@ -5126,7 +5126,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:54.009Z"
+      "retrievedAt": "2026-11-19T14:31:57.889Z"
     },
     {
       "url": "https://web.dev/blog/inp-cwv-launch",
@@ -5136,7 +5136,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:11.121Z"
+      "retrievedAt": "2026-11-19T14:28:12.201Z"
     },
     {
       "url": "https://web.dev/blog/inp-cwv-march-12",
@@ -5146,7 +5146,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:54.416Z"
+      "retrievedAt": "2026-11-19T14:31:57.694Z"
     },
     {
       "url": "https://web.dev/blog/responsiveness",
@@ -5156,7 +5156,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:54:54.592Z"
+      "retrievedAt": "2026-11-19T14:31:58.136Z"
     },
     {
       "url": "https://web.dev/explore/learn-core-web-vitals",
@@ -5166,7 +5166,7 @@
       "topics": [
         "core-web-vitals"
       ],
-      "retrievedAt": "2026-11-19T13:51:43.409Z"
+      "retrievedAt": "2026-11-19T14:28:46.384Z"
     }
   ],
   "failures": [
@@ -5209,11 +5209,6 @@
       "url": "https://support.google.com/webmasters/answer/2739618?hl=en",
       "status": 301,
       "reason": "redirect to an unapproved or out-of-scope URL (https://developers.google.com/webmasters/hacked/docs/use_search_console): path out of scope (developers.google.com/webmasters/hacked/docs/use_search_console)"
-    },
-    {
-      "url": "https://support.google.com/webmasters/answer/2445990?hl=en",
-      "status": 200,
-      "reason": "error page (404 (Page Not Found) errors)"
     },
     {
       "url": "https://developers.google.com/search/docs/monitor-debug/search-operators/web-search-cache",
@@ -5264,6 +5259,11 @@
       "url": "https://support.google.com/webmasters/answer/6080548?hl=en",
       "status": 301,
       "reason": "redirect to an unapproved or out-of-scope URL (https://developers.google.com/search/blog/2022/03/url-parameters-tool-deprecated): path out of scope (developers.google.com/search/blog/2022/03/url-parameters-tool-deprecated)"
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/2445990?hl=en",
+      "status": 200,
+      "reason": "error page (404 (Page Not Found) errors)"
     }
   ],
   "incidents": [

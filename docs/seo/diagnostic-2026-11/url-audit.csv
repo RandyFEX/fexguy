@@ -1,0 +1,737 @@
+url,status,redirectTo,indexable,inSitemap,canonical,phase1Migrated,contextualInlinkPages,allInlinkPages,depthViaMenu,depthContextual,title,severity,findings
+/,200,,yes,yes,/,yes,36,359,0,0,Funeral Funds,OK,
+/12-step-final-planning-guide/,200,,yes,yes,/12-step-final-planning-guide/,yes,1,346,1,,12 Step Final Planning Guide - Funeral Funds,HIGH,"L3 only one page links to it in context (usually a hub list); L4 contextual click depth unreachable (menu depth 1); M1 no meta description; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; L6 3 proposed contextual link(s) to this page (link-proposals.csv)"
+/5-reasons-you-should-be-worried-about-aarp-life-insurance/,200,,yes,yes,/5-reasons-you-should-be-worried-about-aarp-life-insurance/,yes,2,2,2,2,5 Reasons You Should Be Worried About AARP Life Insurance,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/5-ways-to-get-burial-insurance-with-first-day-coverage/,200,,yes,yes,/5-ways-to-get-burial-insurance-with-first-day-coverage/,yes,2,2,2,2,5 Ways to Get Burial Insurance with First-Day Coverage,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/888-672-0762/,200,,noindex,no,,yes,,,,,CUSTOMER SERVICE & QUOTES - Funeral Funds,OK,
+/a-z-companies/,200,,yes,yes,/a-z-companies/,yes,9,346,1,1,A to Z Final Expense Life Insurance Companies - Funeral Funds,EDITORIAL REVIEW REQUIRED,M1 no meta description; S1 Article markup has no image (and no og:image): needs a representative image
+/a-z-health/,200,,yes,yes,/a-z-health/,yes,4,346,1,1,A to Z Health Conditions Accepted - Funeral Funds,EDITORIAL REVIEW REQUIRED,M1 no meta description; S1 Article markup has no image (and no og:image): needs a representative image
+/aarp-burial-insurance-review/,200,,yes,yes,/aarp-burial-insurance-review/,yes,5,5,2,2,AARP Burial Insurance Review: The Hidden Cost of 5-Year Rate Hikes,OK,
+/aarp-life-insurance-review/,200,,yes,yes,/aarp-life-insurance-review/,yes,3,345,1,2,AARP Life Insurance: Review - Wrong Plan 99% Of The Time,OK,
+/about/,200,,yes,yes,/about/,yes,5,347,1,4,ABOUT - Funeral Funds,MEDIUM,"L4 contextual click depth 4 (menu depth 1); S2 Article markup missing datePublished/dateModified; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; S5 page typed as Article (About/Contact page)"
+/aetna-burial-insurance-review-2/,301,/aetna-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/aetna-burial-insurance-review-pros-cons/,301,/aetna-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/aetna-burial-insurance-review/,200,,yes,yes,/aetna-burial-insurance-review/,yes,6,345,1,1,"Aetna Burial Insurance Review - [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/affordable-burial-insurance-near-me/,301,/burial-insurance/burial-insurance-near-me/,n/a,no,,no,,,,,,OK,
+/affordable-burial-insurance-with-diverticulitis/,301,/burial-insurance/burial-insurance-with-diverticulitis/,n/a,no,,no,,,,,,OK,
+/affordable-burial-insurance-with-gout/,301,/burial-insurance/burial-insurance-with-gout/,n/a,no,,no,,,,,,OK,
+/aflac-burial-insurance-review/,200,,yes,yes,/aflac-burial-insurance-review/,yes,2,345,1,1,Aflac Burial Insurance Review - [Pros & Cons],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/aig-burial-insurance-review/,301,/aig-life-insurance-company-review/,n/a,no,,no,,,,,,OK,
+/aig-life-insurance-company-review/,200,,yes,yes,/aig-life-insurance-company-review/,yes,3,3,2,2,AIG Life Insurance Company Review [Pros & Cons],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/american-amicable-life-insurance-review/,301,/burial-insurance/american-amicable-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/american-amicable-review/,301,/burial-insurance/american-amicable-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/american-legion-life-insurance-options/,301,/american-legion-life-insurance/,n/a,no,,no,,,,,,OK,
+/american-legion-life-insurance/,200,,yes,yes,/american-legion-life-insurance/,yes,1,1,2,2,American Legion Member Life Insurance Options,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/american-legion-member-life-insurance/,301,/american-legion-life-insurance/,n/a,no,,no,,,,,,OK,
+/americo-life-insurance-quit-smoking-advantage/,200,,yes,yes,/americo-life-insurance-quit-smoking-advantage/,yes,1,1,2,2,Americo Life Insurance Quit Smoking Advantage - Misleading Life Insurance or Real Benefit ?,HIGH,L3 only one page links to it in context (usually a hub list)
+/americo-quit-smoking-advantage/,301,/americo-life-insurance-quit-smoking-advantage/,n/a,no,,no,,,,,,OK,
+/author/randy-vandervaate/,301,/randy-vandervaate/,n/a,no,,no,,,,,,OK,
+/author/rvanderv8/,301,/randy-vandervaate/,n/a,no,,no,,,,,,OK,
+/baltimore-life-burial-insurance-review/,200,,yes,yes,/baltimore-life-burial-insurance-review/,yes,1,1,2,2,"Baltimore Life Burial Insurance Review [Pros, Cons, Pricing Secrets]",HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/best-bible-verses-for-a-funeral/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/best-term-life-insurance/,301,/term-life-insurance-guide-everyone/,n/a,no,,no,,,,,,OK,
+/big-lou-term-life-insurance-review-scam/,301,/big-lou-term-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/big-lou-term-life-insurance-review/,200,,yes,yes,/big-lou-term-life-insurance-review/,no,1,1,2,2,Big Lou Term Life Insurance Review - Rarely The Best Choice,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; S2 Article markup missing datePublished/dateModified
+/bipolar-disorder-burial-insurance/,301,/burial-insurance/bipolar-disorder/,n/a,no,,no,,,,,,OK,
+/blog/,200,,noindex,no,/blog/,yes,,,,,BLOG - Funeral Funds,OK,
+/blog/page/2/,200,,noindex,no,/blog/page/2/,yes,,,,,BLOG - Page 2 of 9 - Funeral Funds,OK,
+/blog/page/3/,200,,noindex,no,/blog/page/3/,yes,,,,,BLOG - Page 3 of 9 - Funeral Funds,OK,
+/blog/page/4/,200,,noindex,no,/blog/page/4/,yes,,,,,BLOG - Page 4 of 9 - Funeral Funds,OK,
+/blog/page/5/,200,,noindex,no,/blog/page/5/,yes,,,,,BLOG - Page 5 of 9 - Funeral Funds,OK,
+/blog/page/6/,200,,noindex,no,/blog/page/6/,yes,,,,,BLOG - Page 6 of 9 - Funeral Funds,OK,
+/blog/page/7/,200,,noindex,no,/blog/page/7/,yes,,,,,BLOG - Page 7 of 9 - Funeral Funds,OK,
+/blog/page/8/,200,,noindex,no,/blog/page/8/,yes,,,,,BLOG - Page 8 of 9 - Funeral Funds,OK,
+/blog/page/9/,200,,noindex,no,/blog/page/9/,yes,,,,,BLOG - Page 9 of 9 - Funeral Funds,OK,
+/borrowing-against-cash-value-pros-and-cons/,301,/burial-insurance/borrowing-against-cash-value/,n/a,no,,no,,,,,,OK,
+/burial-insurance-abdominal-aortic-aneurysm/,301,/burial-insurance/aneurysm/,n/a,no,,no,,,,,,OK,
+/burial-insurance-adl-activities-of-daily-living/,301,/burial-insurance/adl-activities-of-daily-living/,n/a,no,,no,,,,,,OK,
+/burial-insurance-after-a-tia-or-transient-ischemic-attack/,301,/burial-insurance/stroke-tia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-after-cancer-diagnosis/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-aids-hiv/,301,/burial-insurance/aids-hiv/,n/a,no,,no,,,,,,OK,
+/burial-insurance-alcohol-abuse/,301,/burial-insurance/drug-alcohol-abuse/,n/a,no,,no,,,,,,OK,
+/burial-insurance-als-lou-gehrigs-disease/,301,/burial-insurance/lou-gehrigs-disease-als/,n/a,no,,no,,,,,,OK,
+/burial-insurance-alzheimers-disease/,301,/burial-insurance/dementia-alzheimers/,n/a,no,,no,,,,,,OK,
+/burial-insurance-amputation-amputee/,301,/burial-insurance/diabetic-amputation/,n/a,no,,no,,,,,,OK,
+/burial-insurance-amputation/,301,/burial-insurance/diabetic-amputation/,n/a,no,,no,,,,,,OK,
+/burial-insurance-and-coronavirus/,301,/burial-insurance/and-coronavirus/,n/a,no,,no,,,,,,OK,
+/burial-insurance-and-suicide/,301,/burial-insurance/and-suicide/,n/a,no,,no,,,,,,OK,
+/burial-insurance-aneurysm/,301,/burial-insurance/aneurysm/,n/a,no,,no,,,,,,OK,
+/burial-insurance-angina/,301,/burial-insurance/angina/,n/a,no,,no,,,,,,OK,
+/burial-insurance-angioplasty-2/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-angioplasty/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-arrhythmia/,301,/burial-insurance/arrhythmia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-arthritis-2-2-2/,301,/burial-insurance/burial-insurance-arthritis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-arthritis-2-2/,301,/burial-insurance/burial-insurance-arthritis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-arthritis-2/,301,/burial-insurance/burial-insurance-arthritis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-arthritis/,301,/burial-insurance/burial-insurance-arthritis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-asthma/,301,/burial-insurance/asthma/,n/a,no,,no,,,,,,OK,
+/burial-insurance-atrial-fibrillation-afib/,301,/burial-insurance/afib/,n/a,no,,no,,,,,,OK,
+/burial-insurance-autism/,301,/burial-insurance/autism/,n/a,no,,no,,,,,,OK,
+/burial-insurance-bathing-disability-adl/,301,/burial-insurance/bathing-disability-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-blood-clot/,301,/burial-insurance/blood-clot/,n/a,no,,no,,,,,,OK,
+/burial-insurance-brain-tumor/,301,/burial-insurance/brain-tumor/,n/a,no,,no,,,,,,OK,
+/burial-insurance-breast-cancer/,200,,yes,yes,/burial-insurance-breast-cancer/,yes,2,2,2,2,Burial Insurance after Breast Cancer - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance-brother/,301,/burial-insurance/brother/,n/a,no,,no,,,,,,OK,
+/burial-insurance-build-chart/,301,/burial-insurance/build-chart/,n/a,no,,no,,,,,,OK,
+/burial-insurance-calculator/,200,,yes,yes,/burial-insurance-calculator/,yes,4,345,1,2,Burial Insurance Calculator [Calculate Your Final Expenses],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance-cancer-patients/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-cbd-oil/,301,/burial-insurance/cbd-oil/,n/a,no,,no,,,,,,OK,
+/burial-insurance-cerebral-palsy/,301,/burial-insurance/cerebral-palsy/,n/a,no,,no,,,,,,OK,
+/burial-insurance-chronic-bronchitis/,301,/burial-insurance/chronic-bronchitis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-circulatory-surgery/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-cirrhosis/,301,/burial-insurance/cirrhosis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-contestability-period/,301,/burial-insurance/contestability-period/,n/a,no,,no,,,,,,OK,
+/burial-insurance-coronary-artery-disease/,301,/burial-insurance/coronary-artery-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-cystic-fibrosis/,301,/burial-insurance/cystic-fibrosis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-dave-ramsey/,301,/burial-insurance/final-expense-life-insurance-dave-ramsey/,n/a,no,,no,,,,,,OK,
+/burial-insurance-defibrillator/,200,,yes,yes,/burial-insurance-defibrillator/,yes,3,3,2,2,Burial Insurance with a Defibrillator [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance-dementia/,301,/burial-insurance/dementia-alzheimers/,n/a,no,,no,,,,,,OK,
+/burial-insurance-depression-2/,301,/burial-insurance/depression/,n/a,no,,no,,,,,,OK,
+/burial-insurance-depression/,301,/burial-insurance/depression/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetes-diabetic-complications-2/,301,/burial-insurance-diabetic-complications/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetes-diabetic-complications/,301,/burial-insurance-diabetic-complications/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetes/,301,/burial-insurance/diabetes/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetic-amputation/,301,/burial-insurance/diabetic-amputation/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetic-coma/,301,/burial-insurance/diabetic-coma/,n/a,no,,no,,,,,,OK,
+/burial-insurance-diabetic-complications/,200,,yes,yes,/burial-insurance-diabetic-complications/,yes,4,4,2,2,Burial Insurance for Diabetes or Diabetic Complications,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance-disability-2/,301,/burial-insurance/disability/,n/a,no,,no,,,,,,OK,
+/burial-insurance-disability/,301,/burial-insurance/disability/,n/a,no,,no,,,,,,OK,
+/burial-insurance-disabled-persons/,301,/burial-insurance/disabled-persons/,n/a,no,,no,,,,,,OK,
+/burial-insurance-donating-your-body-to-science/,301,/burial-insurance/donating-your-body-to-science/,n/a,no,,no,,,,,,OK,
+/burial-insurance-down-syndrome/,301,/burial-insurance/down-syndrome/,n/a,no,,no,,,,,,OK,
+/burial-insurance-drug-abuse-treatment/,301,/burial-insurance/drug-abuse-treatment/,n/a,no,,no,,,,,,OK,
+/burial-insurance-dui-dwi-history/,301,/burial-insurance/dui-dwi/,n/a,no,,no,,,,,,OK,
+/burial-insurance-dui-dwi/,301,/burial-insurance/dui-dwi/,n/a,no,,no,,,,,,OK,
+/burial-insurance-emphysema/,301,/burial-insurance/emphysema/,n/a,no,,no,,,,,,OK,
+/burial-insurance-felony-conviction/,301,/burial-insurance/felony-conviction/,n/a,no,,no,,,,,,OK,
+/burial-insurance-fibromyalgia/,301,/burial-insurance/fibromyalgia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-blood-thinner-users/,301,/burial-insurance/blood-thinner/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-cancer-patients/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-dialysis-patients/,301,/burial-insurance/dialysis-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-disabled-persons/,301,/burial-insurance/disabled-persons/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-hospice-patients/,301,/burial-insurance/hospice-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-native-americans/,301,/burial-insurance/native-americans/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-overweight-and-obese-people/,301,/burial-insurance/overweight-obese/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-parents/,301,/burial-insurance/parents/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-sister/,301,/burial-insurance/sister/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-smokers/,301,/burial-insurance/for-smokers/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-terminally-ill-patients/,301,/burial-insurance/terminally-ill-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-the-blind/,301,/burial-insurance/blind/,n/a,no,,no,,,,,,OK,
+/burial-insurance-for-veterans/,301,/burial-insurance/veterans/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-attack/,301,/burial-insurance/heart-attack/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-bypass-surgery/,301,/burial-insurance/heart-bypass-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-disease-circulatory-issues/,301,/burial-insurance/heart-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-disease/,301,/burial-insurance/heart-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-failure/,301,/burial-insurance/heart-failure/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-infection-endocarditis/,301,/burial-insurance/endocarditis-heart-infection/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-murmur/,301,/burial-insurance/heart-murmur/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-stent/,301,/burial-insurance/stent/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-surgery/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-transplant/,301,/burial-insurance/organ-transplant/,n/a,no,,no,,,,,,OK,
+/burial-insurance-heart-valve-surgery/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-help-with-continence-activities-of-daily-living-adl/,301,/burial-insurance/continence-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-help-with-eating-activities-of-daily-living-adl/,301,/burial-insurance/eating-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-help-with-toileting-activities-of-daily-living-adl/,301,/burial-insurance/toileting-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-help-with-transferring/,301,/burial-insurance/transferring-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-hepatitis-b/,301,/burial-insurance/hepatitis-b/,n/a,no,,no,,,,,,OK,
+/burial-insurance-hepatitis-c-2/,301,/burial-insurance/hepatitis-c/,n/a,no,,no,,,,,,OK,
+/burial-insurance-hepatitis-c/,301,/burial-insurance/hepatitis-c/,n/a,no,,no,,,,,,OK,
+/burial-insurance-high-blood-pressure/,301,/burial-insurance/high-blood-pressure/,n/a,no,,no,,,,,,OK,
+/burial-insurance-high-cholesterol/,301,/burial-insurance/high-cholesterol/,n/a,no,,no,,,,,,OK,
+/burial-insurance-hodgkins-disease/,301,/burial-insurance/hodgkins-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-hospitalized/,301,/burial-insurance/hospitalized/,n/a,no,,no,,,,,,OK,
+/burial-insurance-huntingtons-disease/,301,/burial-insurance/huntingtons-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-if-you-need-help-with-toileting-activities-of-daily-living/,301,/burial-insurance/toileting-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-insulin-dependent-diabetics/,301,/burial-insurance/insulin-diabetics/,n/a,no,,no,,,,,,OK,
+/burial-insurance-insulin-shock/,301,/burial-insurance/diabetic-insulin-shock/,n/a,no,,no,,,,,,OK,
+/burial-insurance-insulin-use/,301,/burial-insurance/insulin-diabetics/,n/a,no,,no,,,,,,OK,
+/burial-insurance-kidney-dialysis-end-stage-renal-failure/,301,/burial-insurance/dialysis-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-kidney-dialysis/,301,/burial-insurance/dialysis-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-kidney-disease-kidney-failure/,301,/burial-insurance-kidney-failure/,n/a,no,,no,,,,,,OK,
+/burial-insurance-kidney-disease/,301,/burial-insurance/kidney-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-kidney-failure/,200,,yes,yes,/burial-insurance-kidney-failure/,yes,9,9,2,2,Burial Insurance with Kidney Failure,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance-leukemia/,301,/burial-insurance/leukemia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-liver-disease/,301,/burial-insurance/liver-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-lung-disease/,301,/burial-insurance/lung-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-lupus/,301,/burial-insurance/lupus/,n/a,no,,no,,,,,,OK,
+/burial-insurance-marijuana-illegal-drugs/,301,/burial-insurance/marijuana-use/,n/a,no,,no,,,,,,OK,
+/burial-insurance-medicaid/,301,/final-expense-life-insurance-medicaid/,n/a,no,,no,,,,,,OK,
+/burial-insurance-medical-marijuana/,301,/burial-insurance/medical-marijuana/,n/a,no,,no,,,,,,OK,
+/burial-insurance-melanoma-skin-cancer/,301,/burial-insurance/melanoma-skin-cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-mental-illness/,301,/burial-insurance/mental-health-conditions/,n/a,no,,no,,,,,,OK,
+/burial-insurance-multiple-sclerosis/,301,/burial-insurance/multiple-sclerosis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-muscular-dystrophy/,301,/burial-insurance/muscular-dystrophy/,n/a,no,,no,,,,,,OK,
+/burial-insurance-myelodysplastic-syndrome/,301,/burial-insurance/myelodysplastic-syndrome/,n/a,no,,no,,,,,,OK,
+/burial-insurance-near-me/,301,/burial-insurance/burial-insurance-near-me/,n/a,no,,no,,,,,,OK,
+/burial-insurance-need-help-with-dressing-activities-of-daily-living-adl/,301,/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/,n/a,no,,no,,,,,,OK,
+/burial-insurance-nephropathy/,301,/burial-insurance/diabetic-nephropathy/,n/a,no,,no,,,,,,OK,
+/burial-insurance-neurological-disorder/,301,/burial-insurance/neurological-disorders/,n/a,no,,no,,,,,,OK,
+/burial-insurance-no-questions-asked/,301,/burial-insurance/no-questions-asked/,n/a,no,,no,,,,,,OK,
+/burial-insurance-nursing-home-residents/,301,/burial-insurance/nursing-home-residents/,n/a,no,,no,,,,,,OK,
+/burial-insurance-on-blood-thinners/,301,/burial-insurance/blood-thinner/,n/a,no,,no,,,,,,OK,
+/burial-insurance-online/,301,/burial-insurance/online/,n/a,no,,no,,,,,,OK,
+/burial-insurance-organ-transplant/,301,/burial-insurance/organ-transplant/,n/a,no,,no,,,,,,OK,
+/burial-insurance-over-70-od/,301,/burial-insurance/over-70/,n/a,no,,no,,,,,,OK,
+/burial-insurance-over-70/,301,/burial-insurance/over-70/,n/a,no,,no,,,,,,OK,
+/burial-insurance-over-80/,301,/burial-insurance/over-80/,n/a,no,,no,,,,,,OK,
+/burial-insurance-oxygen/,301,/burial-insurance/oxygen-use/,n/a,no,,no,,,,,,OK,
+/burial-insurance-pacemaker-2/,301,/burial-insurance/pacemaker/,n/a,no,,no,,,,,,OK,
+/burial-insurance-pacemaker/,301,/burial-insurance/pacemaker/,n/a,no,,no,,,,,,OK,
+/burial-insurance-paralysis-paralyzed/,301,/burial-insurance/paralysis-paralyzed/,n/a,no,,no,,,,,,OK,
+/burial-insurance-parkinsons-disease/,301,/burial-insurance/parkinsons-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-peripheral-vascular-disease-pvd-pad/,301,/burial-insurance/peripheral-vascular-disease-pvd-pad/,n/a,no,,no,,,,,,OK,
+/burial-insurance-pre-existing-condition/,301,/final-expense-life-insurance-pre-existing-conditions/,n/a,no,,no,,,,,,OK,
+/burial-insurance-prostate-cancer/,301,/burial-insurance/prostate-cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-retinopathy/,301,/burial-insurance/diabetic-retinopathy/,n/a,no,,no,,,,,,OK,
+/burial-insurance-scams/,301,/burial-insurance/scams/,n/a,no,,no,,,,,,OK,
+/burial-insurance-schizophrenia/,301,/burial-insurance/schizophrenia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-scleroderma/,301,/burial-insurance/scleroderma/,n/a,no,,no,,,,,,OK,
+/burial-insurance-seizure/,301,/burial-insurance/epilepsy-seizures/,n/a,no,,no,,,,,,OK,
+/burial-insurance-seizures/,301,/burial-insurance/epilepsy-seizures/,n/a,no,,no,,,,,,OK,
+/burial-insurance-sickle-cell-anemia/,301,/burial-insurance/sickle-cell-anemia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-sleep-apnea/,301,/burial-insurance/sleep-apnea/,n/a,no,,no,,,,,,OK,
+/burial-insurance-stroke/,301,/burial-insurance/stroke-tia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-substance-abuse-drug-abuse/,200,,yes,yes,/burial-insurance-substance-abuse-drug-abuse/,yes,2,2,2,2,Burial Insurance with Substance or Drug Abuse - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance-terminal-illness/,301,/burial-insurance/terminally-ill-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-terminally-ill-people/,301,/burial-insurance/terminally-ill-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance-tia-attack/,301,/burial-insurance/stroke-tia/,n/a,no,,no,,,,,,OK,
+/burial-insurance-traumatic-brain-injury/,301,/burial-insurance/traumatic-brain-injury-tbi/,n/a,no,,no,,,,,,OK,
+/burial-insurance-valvular-heart-disease/,301,/burial-insurance/valvular-heart-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-wheelchair-users/,301,/burial-insurance/wheelchair-users/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-a-brain-tumor/,301,/burial-insurance/brain-tumor/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-colorectal-cancer/,301,/burial-insurance/colorectal-cancer/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-congestive-heart-failure/,301,/burial-insurance/congestive-heart-failure/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-crohns-disease/,301,/burial-insurance/crohns-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-dementia/,301,/burial-insurance/dementia-alzheimers/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-diabetic-coma/,301,/burial-insurance/diabetic-coma/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-diverticulitis/,301,/burial-insurance/burial-insurance-with-diverticulitis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-fatty-liver-disease/,301,/burial-insurance/fatty-liver-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-first-day-coverage/,301,/burial-insurance/with-first-day-coverage/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-graves-disease/,301,/burial-insurance/graves-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-heart-bypass-surgery/,301,/burial-insurance/heart-bypass-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-lung-cancer/,200,,yes,yes,/burial-insurance-with-lung-cancer/,yes,2,2,2,2,Burial Insurance with Lung Cancer [BEST OPTION AVAILABLE],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance-with-no-exam/,301,/burial-insurance/life-insurance-no-exam/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-no-waiting-period/,301,/burial-insurance/life-insurance-with-no-waiting-period/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-paralysis/,301,/burial-insurance/paralysis-paralyzed/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-prion-disease/,301,/burial-insurance/prion-disease/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-sarcoidosis-3/,301,/burial-insurance/sarcoidosis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-sarcoidosis/,301,/burial-insurance/sarcoidosis/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-sleep-apnea/,301,/burial-insurance/sleep-apnea/,n/a,no,,no,,,,,,OK,
+/burial-insurance-with-type-1-diabetes/,301,/burial-insurance/diabetes/,n/a,no,,no,,,,,,OK,
+/burial-insurance/,200,,yes,yes,/burial-insurance/,yes,64,346,1,1,Burial Insurance Guide To Final Expense Life Insurance,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/adl-activities-of-daily-living/,200,,yes,yes,/burial-insurance/adl-activities-of-daily-living/,yes,20,345,1,2,Burial Insurance if you Need Help with ADL [Use Caution],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/afib/,200,,yes,yes,/burial-insurance/afib/,yes,6,6,2,2,AFib Burial Insurance: How to Skip the Waiting Period and Get Day 1 Coverage,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/aids-hiv/,200,,yes,yes,/burial-insurance/aids-hiv/,yes,10,10,2,2,"Burial Insurance with AIDS, HIV, ARC - [Use Caution]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/alcohol-or-drug-abuse/,200,,yes,yes,/burial-insurance/alcohol-or-drug-abuse/,yes,1,1,2,2,Burial Insurance With a History of Alcohol or Drug Abuse,HIGH,L3 only one page links to it in context (usually a hub list); I2 image without width/height attributes; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/american-amicable-life-insurance-review/,200,,yes,yes,/burial-insurance/american-amicable-life-insurance-review/,yes,3,345,1,2,American Amicable Life Insurance Review: EXPENSIVE!,OK,
+/burial-insurance/and-coronavirus/,200,,yes,yes,/burial-insurance/and-coronavirus/,yes,1,1,2,2,Burial Insurance and Coronavirus: What You Need to Know,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/and-suicide/,200,,yes,yes,/burial-insurance/and-suicide/,yes,1,1,2,2,Burial Insurance and Suicide - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/aneurysm/,200,,yes,yes,/burial-insurance/aneurysm/,yes,3,3,2,2,Aneurysm Burial Insurance - Easy Approval,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/angina/,200,,yes,yes,/burial-insurance/angina/,yes,6,6,2,2,Angina Burial Insurance - Pays out Fast,OK,
+/burial-insurance/arrhythmia/,200,,yes,yes,/burial-insurance/arrhythmia/,yes,2,2,2,2,Burial Insurance with Arrhythmia - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/arthritis/,301,/burial-insurance/burial-insurance-arthritis/,n/a,no,,no,,,,,,OK,
+/burial-insurance/asthma/,200,,yes,yes,/burial-insurance/asthma/,yes,4,4,2,2,Asthma Burial Insurance - Peace Of Mind,OK,
+/burial-insurance/autism/,200,,yes,yes,/burial-insurance/autism/,yes,1,1,2,2,Autism Burial Insurance - Quick Approval,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/basal-cell-squamous-cell-carcinoma/,200,,yes,yes,/burial-insurance/basal-cell-squamous-cell-carcinoma/,yes,15,15,2,2,Basal Cell & Squamous Cell Carcinoma Burial Insurance - Easy Approval,OK,
+/burial-insurance/bathing-disability-adl/,200,,yes,yes,/burial-insurance/bathing-disability-adl/,yes,10,10,2,3,Burial Insurance If You Need Help with Bathing - Know Your Options,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/bipolar-disorder/,200,,yes,yes,/burial-insurance/bipolar-disorder/,yes,6,6,2,2,Bipolar Disorder Burial Insurance - Fast Coverage,OK,
+/burial-insurance/bladder-cancer/,200,,yes,yes,/burial-insurance/bladder-cancer/,yes,2,2,2,2,Bladder Cancer Burial Insurance Options,EDITORIAL REVIEW REQUIRED,L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/blind/,200,,yes,yes,/burial-insurance/blind/,yes,3,3,2,2,Burial Insurance for the Blind - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/blood-cancer-leukemia/,200,,yes,yes,/burial-insurance/blood-cancer-leukemia/,yes,14,14,2,2,Blood Cancer Burial Insurance: How Remission Affects Your Options,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/blood-clot/,200,,yes,yes,/burial-insurance/blood-clot/,yes,1,1,2,2,Burial Insurance With Blood Clot - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/blood-thinner/,200,,yes,yes,/burial-insurance/blood-thinner/,yes,1,1,2,2,Burial Insurance For Blood Thinner Users - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/borrowing-against-cash-value/,200,,yes,yes,/burial-insurance/borrowing-against-cash-value/,yes,3,3,2,2,Borrowing Against Cash Value - [What You Need to Know!],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/brain-cancer/,200,,yes,yes,/burial-insurance/brain-cancer/,yes,1,1,2,2,Brain Cancer Burial Insurance - Get Day 1 Coverage,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/brain-tumor/,200,,yes,yes,/burial-insurance/brain-tumor/,yes,1,1,2,3,Brain Tumor Burial Insurance - Help Your Family,HIGH,L3 only one page links to it in context (usually a hub list); L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/breast-cancer/,200,,yes,yes,/burial-insurance/breast-cancer/,yes,2,2,2,2,Breast Cancer Burial Insurance - Get 1st-Day Coverage,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/brother/,200,,yes,yes,/burial-insurance/brother/,yes,4,4,2,2,Burial Insurance for Brother [PAY FUNERAL & FINAL EXPENSES],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/build-chart/,200,,yes,yes,/burial-insurance/build-chart/,yes,1,1,2,2,Insurance Build Chart: How Height and Weight Affect Life Insurance Rates Or Approval,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/burial-insurance-adl-activities-of-daily-living/,301,/burial-insurance/adl-activities-of-daily-living/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-aids-hiv/,301,/burial-insurance/aids-hiv/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-and-coronavirus/,301,/burial-insurance/and-coronavirus/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-and-suicide/,301,/burial-insurance/and-suicide/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-application-process/,200,,yes,yes,/burial-insurance/burial-insurance-application-process/,yes,8,345,1,2,Burial Insurance Application Process [It's As Easy As ABC],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/burial-insurance-arrhythmia/,301,/burial-insurance/arrhythmia/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-arthritis/,200,,yes,yes,/burial-insurance/burial-insurance-arthritis/,no,3,3,2,2,Affordable Burial Insurance with Arthritis - [New & Updated],LOW,S1 Article markup has no image (and no og:image): needs a representative image; S2 Article markup missing datePublished/dateModified
+/burial-insurance/burial-insurance-disabled-persons/,301,/burial-insurance/disabled-persons/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-for-smokers/,301,/burial-insurance/for-smokers/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-hospitalized/,301,/burial-insurance/hospitalized/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-medicaid/,301,/final-expense-life-insurance-medicaid/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-near-me/,200,,yes,yes,/burial-insurance/burial-insurance-near-me/,yes,1,1,2,2,Burial Insurance Near Me [Funeral & Final Expense Life Insurance],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/burial-insurance-no-questions-asked/,301,/burial-insurance/no-questions-asked/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-online/,301,/burial-insurance/online/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-over-70/,301,/burial-insurance/over-70/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-over-80/,301,/burial-insurance/over-80/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-sickle-cell-anemia/,301,/burial-insurance/sickle-cell-anemia/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-with-diverticulitis/,200,,yes,yes,/burial-insurance/burial-insurance-with-diverticulitis/,yes,1,1,2,2,Burial Insurance with Diverticulitis - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/burial-insurance-with-first-day-coverage/,301,/burial-insurance/with-first-day-coverage/,n/a,no,,no,,,,,,OK,
+/burial-insurance/burial-insurance-with-gout/,200,,yes,yes,/burial-insurance/burial-insurance-with-gout/,yes,1,1,2,2,Affordable Burial Insurance with Gout - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/burial-policies-for-seniors/,301,/burial-insurance/for-seniors/,n/a,no,,no,,,,,,OK,
+/burial-insurance/buying-burial-insurance-on-someone-else/,301,/burial-insurance/on-someone-else/,n/a,no,,no,,,,,,OK,
+/burial-insurance/can-i-buy-life-insurance-on-my-mother/,200,,yes,yes,/burial-insurance/can-i-buy-life-insurance-on-my-mother/,yes,3,3,2,2,Can I Buy Life Insurance on my Mother? [How To Apply for Policy],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/cancer/,200,,yes,yes,/burial-insurance/cancer/,yes,30,345,1,1,Cancer Burial Insurance: How Treatment Dates Affect Coverage,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/cardiomyopathy/,200,,yes,yes,/burial-insurance/cardiomyopathy/,yes,1,1,2,2,Burial Insurance With Cardiomyopathy - Check Your Options!,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/cbd-oil/,200,,yes,yes,/burial-insurance/cbd-oil/,yes,3,3,2,2,Burial Insurance for CBD Oil Users - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/cerebral-palsy/,200,,yes,yes,/burial-insurance/cerebral-palsy/,yes,4,4,2,2,Burial Insurance With Cerebral Palsy,OK,
+/burial-insurance/cervical-cancer/,200,,yes,yes,/burial-insurance/cervical-cancer/,yes,1,1,2,2,Cervical Cancer Burial Insurance - Get 1st-Day Coverage,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/cheap-burial-insurance/,301,/burial-insurance/cheap/,n/a,no,,no,,,,,,OK,
+/burial-insurance/cheap/,200,,yes,yes,/burial-insurance/cheap/,yes,2,2,2,2,Cheap Burial Insurance [Don't Overpay Or Get Ripped Off],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/chronic-bronchitis/,200,,yes,yes,/burial-insurance/chronic-bronchitis/,yes,6,6,2,2,Chronic Bronchitis Burial Insurance - Pays out Fast,OK,
+/burial-insurance/cirrhosis/,200,,yes,yes,/burial-insurance/cirrhosis/,yes,3,3,2,3,Burial Insurance with Cirrhosis - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/colorectal-cancer/,200,,yes,yes,/burial-insurance/colorectal-cancer/,yes,1,1,2,2,Colorectal Cancer Burial Insurance - Get 1st-Day Coverage!,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/congestive-heart-failure/,200,,yes,yes,/burial-insurance/congestive-heart-failure/,yes,13,13,2,2,Burial Insurance With Congestive Heart Failure,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/contestability-period/,200,,yes,yes,/burial-insurance/contestability-period/,yes,3,3,2,2,Burial Insurance Contestability Period [KNOW YOUR OPTIONS],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/continence-activities-of-daily-living-adl/,200,,yes,yes,/burial-insurance/continence-activities-of-daily-living-adl/,yes,10,10,2,3,Burial Insurance if You Need Help with Continence,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/copd/,200,,yes,yes,/burial-insurance/copd/,yes,13,345,1,1,COPD Burial Insurance - Quick Approval,OK,
+/burial-insurance/coronary-artery-disease/,200,,yes,yes,/burial-insurance/coronary-artery-disease/,yes,4,4,2,2,Coronary Artery Disease Burial Insurance - Easy Approval,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/crohns-disease/,200,,yes,yes,/burial-insurance/crohns-disease/,yes,1,1,2,2,Burial Insurance with Crohn's Disease - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/cystic-fibrosis/,200,,yes,yes,/burial-insurance/cystic-fibrosis/,yes,4,4,2,2,Burial Insurance With Cystic Fibrosis - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/dementia-alzheimers/,200,,yes,yes,/burial-insurance/dementia-alzheimers/,yes,14,345,1,2,Dementia Burial Insurance - Peace Of Mind,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/depression/,200,,yes,yes,/burial-insurance/depression/,yes,7,7,2,2,Depression Burial Insurance - Quick Approval,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/diabetes/,200,,yes,yes,/burial-insurance/diabetes/,yes,11,345,1,1,Diabetes Burial Insurance - Fast Coverage,OK,
+/burial-insurance/diabetic-amputation/,200,,yes,yes,/burial-insurance/diabetic-amputation/,yes,8,8,2,2,Burial Insurance After a Diabetic Amputation,OK,
+/burial-insurance/diabetic-coma/,200,,yes,yes,/burial-insurance/diabetic-coma/,yes,5,5,2,2,Diabetic Coma Burial Insurance - Easy Approval,OK,
+/burial-insurance/diabetic-insulin-shock/,200,,yes,yes,/burial-insurance/diabetic-insulin-shock/,yes,5,5,2,2,Diabetic Insulin Shock Burial Insurance - Help Your Family,OK,
+/burial-insurance/diabetic-nephropathy/,200,,yes,yes,/burial-insurance/diabetic-nephropathy/,yes,4,4,2,2,Diabetic Nephropathy Burial Insurance: Coverage Options,OK,
+/burial-insurance/diabetic-neuropathy/,200,,yes,yes,/burial-insurance/diabetic-neuropathy/,yes,5,5,2,2,Diabetic Neuropathy Burial Insurance - Pays out Fast,OK,
+/burial-insurance/diabetic-retinopathy-burial-insurance/,301,/burial-insurance/diabetic-retinopathy/,n/a,no,,no,,,,,,OK,
+/burial-insurance/diabetic-retinopathy/,200,,yes,yes,/burial-insurance/diabetic-retinopathy/,yes,2,2,2,2,Diabetic Retinopathy Burial Insurance - Fast Coverage,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/dialysis-patients/,200,,yes,yes,/burial-insurance/dialysis-patients/,yes,5,5,2,2,Burial Insurance for Dialysis Patients [Get First-Day Coverage],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/disability/,200,,yes,yes,/burial-insurance/disability/,yes,4,4,2,3,Affordable Burial Insurance With Disability - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/disabled-persons/,200,,yes,yes,/burial-insurance/disabled-persons/,yes,1,1,2,3,Burial Insurance for Disabled Persons - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/donating-your-body-to-science/,200,,yes,yes,/burial-insurance/donating-your-body-to-science/,yes,2,2,2,4,How Does Donating Your Body to Science Really Work?,MEDIUM,L4 contextual click depth 4 (menu depth 2); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/down-syndrome/,200,,yes,yes,/burial-insurance/down-syndrome/,yes,2,2,2,3,Burial Insurance with Down Syndrome [NOT MANY OPTIONS],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/drug-abuse-treatment/,200,,yes,yes,/burial-insurance/drug-abuse-treatment/,yes,6,6,2,2,Burial Insurance with Drug Abuse or Treatment,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/drug-alcohol-abuse/,200,,yes,yes,/burial-insurance/drug-alcohol-abuse/,yes,9,9,2,2,Drug or Alcohol Abuse Burial Insurance - Pays out Fast,OK,
+/burial-insurance/dui-dwi/,200,,yes,yes,/burial-insurance/dui-dwi/,yes,1,1,2,2,Burial Insurance with a DUI or DWI History [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/eating-activities-of-daily-living-adl/,200,,yes,yes,/burial-insurance/eating-activities-of-daily-living-adl/,yes,11,11,2,3,Burial Insurance if You Need Help with Eating or ADL - FREE QUOTE,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/emphysema/,200,,yes,yes,/burial-insurance/emphysema/,yes,7,7,2,2,Burial Insurance With Emphysema,OK,
+/burial-insurance/endocarditis-heart-infection/,200,,yes,yes,/burial-insurance/endocarditis-heart-infection/,yes,2,2,2,2,Endocarditis Heart Infection Burial Insurance - Easy Approval,OK,
+/burial-insurance/epilepsy-seizures/,200,,yes,yes,/burial-insurance/epilepsy-seizures/,yes,7,7,2,2,Epilepsy and Seizures Burial Insurance - Quick Approval,OK,
+/burial-insurance/esophageal-cancer/,200,,yes,yes,/burial-insurance/esophageal-cancer/,yes,1,1,2,2,Burial Insurance With Esophageal Cancer,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/fatty-liver-disease/,200,,yes,yes,/burial-insurance/fatty-liver-disease/,yes,1,1,2,3,Burial Insurance with Fatty Liver Disease - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/felony-conviction/,200,,yes,yes,/burial-insurance/felony-conviction/,yes,1,1,2,2,Burial Insurance with a Felony Conviction [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/fibromyalgia/,200,,yes,yes,/burial-insurance/fibromyalgia/,yes,1,1,2,2,Burial Insurance With Fibromyalgia [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/final-expense-insurance-application-process/,301,/burial-insurance/burial-insurance-application-process/,n/a,no,,no,,,,,,OK,
+/burial-insurance/final-expense-insurance-for-pastors-and-congregations/,200,,yes,yes,/burial-insurance/final-expense-insurance-for-pastors-and-congregations/,yes,1,1,2,2,Final Expense Insurance for Pastors and Congregations,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/final-expense-life-insurance-dave-ramsey/,200,,yes,yes,/burial-insurance/final-expense-life-insurance-dave-ramsey/,yes,1,1,2,2,Dave Ramsey vs Final Expense Insurance: Where His Advice Falls Short,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/for-seniors/,200,,yes,yes,/burial-insurance/for-seniors/,yes,4,4,2,2,Burial Policies for Seniors [Final Expense and Funeral Insurance],OK,
+/burial-insurance/for-smokers/,200,,yes,yes,/burial-insurance/for-smokers/,yes,5,345,1,2,Burial Insurance for Smokers [CURRENT And EX] - Save Money Now!,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/funeral-insurance-for-seniors/,200,,yes,yes,/burial-insurance/funeral-insurance-for-seniors/,yes,4,4,2,2,Funeral Insurance for Seniors [Burial and Final Expense Insurance],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/graves-disease/,200,,yes,yes,/burial-insurance/graves-disease/,yes,1,1,2,2,Burial Insurance with Graves' Disease - Hyperthyroidism Insurance,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,200,,yes,yes,/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,yes,19,345,1,2,Guaranteed Issue Life Insurance For Seniors -DON'T GET SCAMMED!,OK,
+/burial-insurance/heart-attack/,200,,yes,yes,/burial-insurance/heart-attack/,yes,13,13,2,2,Heart Attack Burial Insurance - Easy Approval,OK,
+/burial-insurance/heart-bypass-surgery/,200,,yes,yes,/burial-insurance/heart-bypass-surgery/,yes,3,3,2,2,Burial Insurance with Heart Bypass Surgery - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/heart-conditions/,200,,yes,yes,/burial-insurance/heart-conditions/,yes,14,345,1,1,Heart Conditions Burial Insurance - Get Day 1 Coverage,OK,
+/burial-insurance/heart-disease/,200,,yes,yes,/burial-insurance/heart-disease/,yes,3,3,2,2,Burial Insurance With Heart Disease,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/heart-failure/,200,,yes,yes,/burial-insurance/heart-failure/,yes,1,1,2,2,Burial Insurance with Heart Failure - [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/heart-murmur/,200,,yes,yes,/burial-insurance/heart-murmur/,yes,1,1,2,2,Heart Murmur Burial Insurance - Fast Coverage,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/heart-surgery-2/,301,/burial-insurance/heart-surgery/,n/a,no,,no,,,,,,OK,
+/burial-insurance/heart-surgery/,200,,yes,yes,/burial-insurance/heart-surgery/,yes,17,17,2,2,Heart Surgery Burial Insurance - Easy Approval,OK,
+/burial-insurance/hepatitis-b/,200,,yes,yes,/burial-insurance/hepatitis-b/,yes,4,4,2,2,Burial Insurance With Hepatitis B - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/hepatitis-c/,200,,yes,yes,/burial-insurance/hepatitis-c/,yes,2,2,2,2,Burial Insurance with Hepatitis C [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/high-blood-pressure/,200,,yes,yes,/burial-insurance/high-blood-pressure/,yes,4,345,1,2,Burial Insurance High Blood Pressure [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/high-cholesterol/,200,,yes,yes,/burial-insurance/high-cholesterol/,yes,3,3,2,2,Burial Insurance with High Cholesterol [Save Money Now],OK,
+/burial-insurance/hodgkins-disease/,200,,yes,yes,/burial-insurance/hodgkins-disease/,yes,1,1,2,2,Hodgkin’s Disease Burial Insurance Options,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/hospice-patients/,200,,yes,yes,/burial-insurance/hospice-patients/,yes,1,1,2,2,Burial Insurance For Hospice Patients - [Use Caution],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/hospitalized/,200,,yes,yes,/burial-insurance/hospitalized/,yes,7,7,2,2,Burial Insurance if You Are Hospitalized [NOT MANY OPTIONS],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/how-to-apply-for-burial-insurance/,200,,yes,yes,/burial-insurance/how-to-apply-for-burial-insurance/,yes,2,2,2,2,How to Apply For Burial Insurance [Funeral & Final Expense],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/huntingtons-disease/,200,,yes,yes,/burial-insurance/huntingtons-disease/,yes,5,5,2,2,Huntington’s Disease Burial Insurance - Pays out Fast,OK,
+/burial-insurance/insulin-diabetics/,200,,yes,yes,/burial-insurance/insulin-diabetics/,yes,4,4,2,2,Burial Insurance For Insulin Dependent Diabetics [LOWEST RATES],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/is-burial-insurance-permanent/,200,,yes,yes,/burial-insurance/is-burial-insurance-permanent/,yes,9,9,2,2,Is Burial Insurance Permanent? [Final Expense Coverage],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/kidney-disease/,200,,yes,yes,/burial-insurance/kidney-disease/,yes,5,345,1,1,Burial Insurance with Kidney Disease - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/leukemia/,200,,yes,yes,/burial-insurance/leukemia/,yes,3,3,2,2,Burial Insurance with Leukemia or Blood Cancer - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/life-insurance-for-seniors/,200,,yes,yes,/burial-insurance/life-insurance-for-seniors/,yes,1,345,1,2,Life Insurance for Seniors: Your Best Option at 50 to 85 Years Old,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/life-insurance-no-exam/,200,,yes,yes,/burial-insurance/life-insurance-no-exam/,yes,12,345,1,2,Final Expense Insurance With No Exam: EASY COVERAGE!,OK,
+/burial-insurance/life-insurance-widows/,200,,yes,yes,/burial-insurance/life-insurance-widows/,yes,1,1,2,2,Final Expense Life Insurance for Widows - TRUSTED CHOICE!,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/life-insurance-with-no-waiting-period/,200,,yes,yes,/burial-insurance/life-insurance-with-no-waiting-period/,yes,14,345,1,2,Life Insurance With No Waiting Period - DON'T GET TRICKED!,OK,
+/burial-insurance/liver-disease-liver-disorder/,200,,yes,yes,/burial-insurance/liver-disease-liver-disorder/,yes,1,1,2,3,Liver Disease Burial Insurance - Fast Coverage,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/liver-disease/,200,,yes,yes,/burial-insurance/liver-disease/,yes,3,345,1,2,Burial Insurance with Liver Disease - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/lou-gehrigs-disease-als/,200,,yes,yes,/burial-insurance/lou-gehrigs-disease-als/,yes,8,8,2,3,ALS Burial Insurance: Secure Your Family’s Future Before It’s Too Late,OK,
+/burial-insurance/lung-cancer/,200,,yes,yes,/burial-insurance/lung-cancer/,yes,6,6,2,2,Lung Cancer Burial Insurance - Get 1st-Day Coverage,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/lung-disease/,200,,yes,yes,/burial-insurance/lung-disease/,yes,5,5,2,3,Lung Disease Burial Insurance: High-Risk Approval Secrets Revealed,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/lupus/,200,,yes,yes,/burial-insurance/lupus/,yes,1,1,2,2,Burial Insurance with Lupus - [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/marijuana-use/,200,,yes,yes,/burial-insurance/marijuana-use/,yes,5,5,2,2,Burial Insurance for Marijuana Users,OK,
+/burial-insurance/medical-marijuana/,200,,yes,yes,/burial-insurance/medical-marijuana/,yes,2,2,2,2,Burial Insurance with Medical Marijuana - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/melanoma-skin-cancer/,200,,yes,yes,/burial-insurance/melanoma-skin-cancer/,yes,2,2,2,2,Burial Insurance with Melanoma & Skin Cancer [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/mental-health-conditions/,200,,yes,yes,/burial-insurance/mental-health-conditions/,yes,9,345,1,1,Mental Health Conditions Burial Insurance - Easy Approval,OK,
+/burial-insurance/multiple-myeloma/,200,,yes,yes,/burial-insurance/multiple-myeloma/,yes,1,1,2,2,Multiple Myeloma Burial Insurance - Easy Approval,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/multiple-sclerosis/,200,,yes,yes,/burial-insurance/multiple-sclerosis/,yes,5,5,2,3,Multiple Sclerosis (MS) Burial Insurance Options,OK,
+/burial-insurance/muscular-dystrophy/,200,,yes,yes,/burial-insurance/muscular-dystrophy/,yes,4,4,2,3,Burial Insurance with Muscular Dystrophy [Save Money Now],MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/myelodysplastic-syndrome/,200,,yes,yes,/burial-insurance/myelodysplastic-syndrome/,yes,1,1,2,2,Myelodysplastic Syndrome (MDS) Burial Insurance Options,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/native-americans/,200,,yes,yes,/burial-insurance/native-americans/,yes,1,1,2,2,Burial Insurance for Native Americans - Know Your Options Here,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/,200,,yes,yes,/burial-insurance/need-help-with-dressing-activities-of-daily-living-adl/,yes,9,9,2,3,Burial Insurance if You Need Help with Dressing,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/neurological-disorders/,200,,yes,yes,/burial-insurance/neurological-disorders/,yes,12,345,1,2,Burial Insurance With Neurological Disorders,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/no-questions-asked/,200,,yes,yes,/burial-insurance/no-questions-asked/,yes,3,3,2,2,Burial Insurance No Questions Asked [Guaranteed Approval],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/nursing-home-residents/,200,,yes,yes,/burial-insurance/nursing-home-residents/,yes,8,8,2,2,Burial Insurance for Nursing Home Residents [FEW OPTIONS],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/on-someone-else/,200,,yes,yes,/burial-insurance/on-someone-else/,yes,2,2,2,2,Burial Insurance on Someone Else [YES YOU CAN!],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/online/,200,,yes,yes,/burial-insurance/online/,yes,1,1,2,2,Buying Burial Insurance Online [100% FAST And EASY APPROVAL],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/organ-transplant/,200,,yes,yes,/burial-insurance/organ-transplant/,yes,9,9,2,2,Burial Insurance After an Organ Transplant,OK,
+/burial-insurance/ovarian-cancer/,200,,yes,yes,/burial-insurance/ovarian-cancer/,yes,1,1,2,2,Ovarian Cancer Burial Insurance - Get 1st-Day Coverage,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/over-70/,200,,yes,yes,/burial-insurance/over-70/,yes,1,345,1,2,Burial Insurance Over 70 [Best Pricing Guide & Approval Secrets],HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/over-80/,200,,yes,yes,/burial-insurance/over-80/,yes,1,345,1,2,Burial Insurance Over 80 [Best Pricing Guide And; Approval Secrets],HIGH,L3 only one page links to it in context (usually a hub list); L5 internal link with rel=nofollow
+/burial-insurance/overweight-obese/,200,,yes,yes,/burial-insurance/overweight-obese/,yes,2,2,2,2,Burial Insurance for Overweight and Obese People - Free Quote,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/oxygen-use/,200,,yes,yes,/burial-insurance/oxygen-use/,yes,10,10,1,1,Oxygen Use Burial Insurance - Fast Coverage,OK,
+/burial-insurance/pacemaker/,200,,yes,yes,/burial-insurance/pacemaker/,yes,7,7,2,2,Pacemaker Burial Insurance - Pays out Fast,OK,
+/burial-insurance/pancreatic-cancer/,200,,yes,yes,/burial-insurance/pancreatic-cancer/,yes,1,1,2,2,Burial Insurance With Pancreatic Cancer: What’s Available,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/paralysis-paralyzed/,200,,yes,yes,/burial-insurance/paralysis-paralyzed/,yes,6,6,2,3,Burial Insurance with Paralysis - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/parents/,200,,yes,yes,/burial-insurance/parents/,yes,6,345,1,2,Burial Insurance for Parents [Our FREE Guide Available Here],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/parkinsons-disease/,200,,yes,yes,/burial-insurance/parkinsons-disease/,yes,6,6,2,2,Parkinson’s Disease Burial Insurance - Easy Approval,OK,
+/burial-insurance/peripheral-vascular-disease-pvd-pad/,200,,yes,yes,/burial-insurance/peripheral-vascular-disease-pvd-pad/,yes,1,1,2,2,Burial Insurance with Peripheral Vascular Disease (PVD or PAD),HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/prion-disease/,200,,yes,yes,/burial-insurance/prion-disease/,yes,1,1,2,3,Burial Insurance with Prion Disease - [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/prostate-cancer/,200,,yes,yes,/burial-insurance/prostate-cancer/,yes,15,15,2,2,Burial Insurance With Prostate Cancer,OK,
+/burial-insurance/ptsd/,200,,yes,yes,/burial-insurance/ptsd/,yes,3,3,2,2,PTSD Burial Insurance - Help Your Family,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/respiratory-lung-conditions/,200,,yes,yes,/burial-insurance/respiratory-lung-conditions/,yes,8,8,2,2,Respiratory and Lung Condition Burial Insurance Options,MEDIUM,I1 1 content image(s) over 300 KB with no responsive/modern variants
+/burial-insurance/sarcoidosis/,200,,yes,yes,/burial-insurance/sarcoidosis/,yes,1,1,3,3,Burial Insurance with Sarcoidosis - [New & Updated],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/sarcoma/,200,,yes,yes,/burial-insurance/sarcoma/,yes,1,1,2,2,Sarcoma Burial Insurance Options,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/scams/,200,,yes,yes,/burial-insurance/scams/,yes,2,2,2,2,Burial Insurance Scams [YIKES...DON'T GET RIPPED OFF!],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/schizophrenia/,200,,yes,yes,/burial-insurance/schizophrenia/,yes,6,6,2,2,Schizophrenia Burial Insurance - Quick Approval,OK,
+/burial-insurance/scleroderma/,200,,yes,yes,/burial-insurance/scleroderma/,yes,2,2,2,2,Burial Insurance with Scleroderma - [New & Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/sickle-cell-anemia/,200,,yes,yes,/burial-insurance/sickle-cell-anemia/,yes,1,1,2,2,Burial Insurance with Sickle Cell Anemia - [Save Money Now],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/sister/,200,,yes,yes,/burial-insurance/sister/,yes,3,3,2,2,Burial Insurance For Sister [Funeral & Final Expense Insurance],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/skin-cancer/,200,,yes,yes,/burial-insurance/skin-cancer/,yes,1,1,2,2,Skin Cancer Burial Insurance - Get Day 1 Coverage,HIGH,L3 only one page links to it in context (usually a hub list); L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/sleep-apnea/,200,,yes,yes,/burial-insurance/sleep-apnea/,yes,4,4,2,2,Sleep Apnea Burial Insurance - Quick Approval,OK,
+/burial-insurance/state-regulated-life-insurance/,200,,yes,yes,/burial-insurance/state-regulated-life-insurance/,yes,5,5,2,2,State Regulated Life Insurance: Is It BS?,LOW,S1 Article markup has no image (and no og:image): needs a representative image; I3 first content image is lazy-loaded (check if above the fold)
+/burial-insurance/stent/,200,,yes,yes,/burial-insurance/stent/,yes,8,8,2,2,Stent Burial Insurance - Quick Approval,OK,
+/burial-insurance/stroke-tia/,200,,yes,yes,/burial-insurance/stroke-tia/,yes,18,345,1,1,Stroke And TIA Burial Insurance,OK,
+/burial-insurance/terminal-illness/,301,/burial-insurance/terminally-ill-patients/,n/a,no,,no,,,,,,OK,
+/burial-insurance/terminally-ill-patients/,200,,yes,yes,/burial-insurance/terminally-ill-patients/,yes,3,3,2,2,Burial Insurance for Terminally Ill Patients [NO GREAT OPTIONS],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/testicular-cancer/,200,,yes,yes,/burial-insurance/testicular-cancer/,yes,1,1,2,2,Testicular Cancer Burial Insurance: Coverage Options,HIGH,L3 only one page links to it in context (usually a hub list)
+/burial-insurance/thyroid-cancer/,200,,yes,yes,/burial-insurance/thyroid-cancer/,yes,1,1,2,2,Thyroid Cancer Burial Insurance - Get 1st-Day Coverage,HIGH,L3 only one page links to it in context (usually a hub list); I1 1 content image(s) over 300 KB with no responsive/modern variants; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/burial-insurance/toileting-activities-of-daily-living-adl/,200,,yes,yes,/burial-insurance/toileting-activities-of-daily-living-adl/,yes,10,10,2,3,Burial Insurance If You Need Help with Toileting [ADL],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/top-10-final-expense-life-insurance-companies/,200,,yes,yes,/burial-insurance/top-10-final-expense-life-insurance-companies/,yes,3,345,1,2,Top 10 Final Expense Life Insurance Companies,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/transferring-activities-of-daily-living-adl/,200,,yes,yes,/burial-insurance/transferring-activities-of-daily-living-adl/,yes,6,6,2,3,Burial Insurance If You Need Help with Transferring [ADL],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/traumatic-brain-injury-tbi/,200,,yes,yes,/burial-insurance/traumatic-brain-injury-tbi/,yes,2,2,2,3,TBI Burial Insurance - Fast Coverage,OK,
+/burial-insurance/valvular-heart-disease/,200,,yes,yes,/burial-insurance/valvular-heart-disease/,yes,5,5,2,2,Valvular Heart Disease Burial Insurance Options,OK,
+/burial-insurance/veterans/,200,,yes,yes,/burial-insurance/veterans/,yes,2,345,1,2,Burial Insurance for Veterans [INSURANCE FOR ARMED FORCES],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/wheelchair-users/,200,,yes,yes,/burial-insurance/wheelchair-users/,yes,7,7,2,3,Burial Insurance for Wheelchair Users - [Save Money Now],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-insurance/with-first-day-coverage/,200,,yes,yes,/burial-insurance/with-first-day-coverage/,yes,3,345,1,2,Burial Insurance With First-Day Coverage - [New and Updated],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/burial-life-insurance-book/,301,/final-expense-life-insurance-book/,n/a,no,,no,,,,,,OK,
+/burial-life-insurance-copd/,301,/burial-insurance/copd/,n/a,no,,no,,,,,,OK,
+/burial-policies-for-seniors/,301,/burial-insurance/for-seniors/,n/a,no,,no,,,,,,OK,
+/burial-vs-cremation-pros-cons/,301,/burial-vs-cremation/,n/a,no,,no,,,,,,OK,
+/burial-vs-cremation/,200,,yes,yes,/burial-vs-cremation/,yes,2,345,1,4,"Burial vs. Cremation - Costs, Rules, and Prices",MEDIUM,L4 contextual click depth 4 (menu depth 1)
+/buried-in-lies-e-book/,301,/final-expense-life-insurance-book/,n/a,no,,no,,,,,,OK,
+/buyer-info/,200,,noindex,no,,yes,,,,,"BURIAL, CREMATION, OR FUNERAL INSURANCE BUYERS INFORMATION - Funeral Funds",OK,
+/buyers-guide/,200,,yes,yes,/buyers-guide/,yes,2,345,1,2,Burial & Funeral Insurance Buyers Guide [DON'T GET RIPPED OFF!],LOW,S1 Article markup has no image (and no og:image): needs a representative image; I3 first content image is lazy-loaded (check if above the fold)
+/buying-burial-insurance-on-someone-else/,301,/burial-insurance/on-someone-else/,n/a,no,,no,,,,,,OK,
+/buying-flowers-for-a-funeral/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/call-now/,200,,noindex,no,,yes,,,,,Great News! - Funeral Funds,OK,
+/can-i-buy-life-insurance-on-my-mother/,301,/burial-insurance/can-i-buy-life-insurance-on-my-mother/,n/a,no,,no,,,,,,OK,
+/cancer-insurance-what-is-it-why-you-need-it/,301,/cancer-insurance/,n/a,no,,no,,,,,,OK,
+/cancer-insurance/,200,,yes,yes,/cancer-insurance/,yes,1,345,1,3,Cancer Insurance: What Is it & Why You Need It [2026 UPDATE],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/category/activities-of-daily-living-adls/,301,/burial-insurance/adl-activities-of-daily-living/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-by-health-condition/,301,/a-z-health/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-cancer/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-company-review/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-company-review/page/2/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-company-review/page/3/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-company-review/page/4/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-diabetes/,301,/burial-insurance/diabetes/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-heart-circulatory-conditions/,301,/burial-insurance/heart-conditions/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-kidney-conditions/,301,/burial-insurance/kidney-disease/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-liver/,301,/burial-insurance/liver-disease/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-lung-respiratory/,301,/burial-insurance/respiratory-lung-conditions/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-medicaid/,301,/final-expense-life-insurance-medicaid/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-neurological-impairments/,301,/burial-insurance/neurological-disorders/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance-neurological-impairments/page/3/,301,/burial-insurance/neurological-disorders/,n/a,no,,no,,,,,,OK,
+/category/burial-insurance/,301,/burial-insurance/,n/a,no,,no,,,,,,OK,
+/category/cancer-final-expense-whole-life-insurance/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/category/cancer-insurance/,301,/cancer-insurance/,n/a,no,,no,,,,,,OK,
+/category/company-reviews-final-expense-whole-life-insurance/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/company-reviews-final-expense-whole-life-insurance/page/2/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/diabetes-final-expense-whole-life-insurance/,301,/burial-insurance/diabetes/,n/a,no,,no,,,,,,OK,
+/category/final-expense-whole-life-insurance-company-reviews/,301,/a-z-companies/,n/a,no,,no,,,,,,OK,
+/category/guaranteed-issue-whole-life-insurance/,301,/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/category/heart-circulatory-final-expense-whole-life-insurance/,301,/burial-insurance/heart-conditions/,n/a,no,,no,,,,,,OK,
+/category/heart-issues-final-expense-whole-life-insurance/,301,/burial-insurance/heart-conditions/,n/a,no,,no,,,,,,OK,
+/category/heart-issues-final-expense-whole-life-insurance/page/2/,301,/burial-insurance/heart-conditions/,n/a,no,,no,,,,,,OK,
+/category/kidney-conditions-final-expense-whole-life-insurance/,301,/burial-insurance/kidney-disease/,n/a,no,,no,,,,,,OK,
+/category/liver-conditions-final-expense-whole-life-insurance/,301,/burial-insurance/liver-disease/,n/a,no,,no,,,,,,OK,
+/category/lung-respiratory-conditions-final-expense-whole-life-insurance/,301,/burial-insurance/respiratory-lung-conditions/,n/a,no,,no,,,,,,OK,
+/category/neurological-impairments-final-expense-whole-life-insurance/,301,/burial-insurance/neurological-disorders/,n/a,no,,no,,,,,,OK,
+/category/shopping-for-burial-insurance/,301,/buyers-guide/,n/a,no,,no,,,,,,OK,
+/category/term-life-insurance/,301,/term-life-insurance-guide-everyone/,n/a,no,,no,,,,,,OK,
+/cheap-burial-insurance-2/,301,/finding-affordable-burial-insurance/,n/a,no,,no,,,,,,OK,
+/cheap-burial-insurance/,301,/burial-insurance/cheap/,n/a,no,,no,,,,,,OK,
+/children-grandchild-policies/,200,,yes,yes,/children-grandchild-policies/,no,1,345,1,3,Life Insurance for Children and Grandchildren,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/cica-life-burial-insurance-review/,200,,yes,yes,/cica-life-burial-insurance-review/,yes,3,345,1,1,CICA Life Burial Insurance Review - Is It Right For You?,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/colonial-penn-885-life-insurance-scam-revealed/,301,/colonial-penn-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/colonial-penn-995-life-insurance-scam-revealed/,301,/colonial-penn-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/colonial-penn-burial-insurance-review/,200,,yes,yes,/colonial-penn-burial-insurance-review/,yes,3,345,1,2,Colonial Penn $9.95 Life Insurance Review - It's Really Bad,MEDIUM,"S1 Article markup has no image (and no og:image): needs a representative image; S2 Article markup missing datePublished/dateModified; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail"
+/colonial-penn-life-insurance-review/,301,/colonial-penn-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/colonial-penn-two-year-wait/,200,,yes,yes,/colonial-penn-two-year-wait/,yes,2,2,3,3,Colonial Penn Two Year Wait...2 Year Wait?,MEDIUM,"S1 Article markup has no image (and no og:image): needs a representative image; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; I3 first content image is lazy-loaded (check if above the fold)"
+/complete-guide-to-burial-insurance-and-final-expense/,301,/final-expense-life-insurance-complete-guide/,n/a,no,,no,,,,,,OK,
+/congratulations/,200,,noindex,no,,yes,,,,,CONGRATULATIONS - Funeral Funds,OK,
+/contact/,200,,yes,yes,/contact/,yes,11,353,1,3,CONTACT US - Funeral Funds,MEDIUM,"S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; S5 page typed as Article (About/Contact page); I3 first content image is lazy-loaded (check if above the fold)"
+/cremation-cost-and-info/,200,,yes,yes,/cremation-cost-and-info/,yes,2,345,1,4,How Much Does Cremation Cost? Complete 2026 Guide,MEDIUM,L4 contextual click depth 4 (menu depth 1)
+/cremation-cost-questions/,200,,yes,yes,/cremation-cost-questions/,yes,2,2,2,5,Top 25 Questions About Cremations & How To Save Money in 2025!,MEDIUM,L4 contextual click depth 5 (menu depth 2)
+/crohns-disease/,301,/burial-insurance/crohns-disease/,n/a,no,,no,,,,,,OK,
+/declined-for-life-insurance-what-to-do-now/,301,/declined-for-life-insurance/,n/a,no,,no,,,,,,OK,
+/declined-for-life-insurance/,200,,yes,yes,/declined-for-life-insurance/,yes,1,345,1,2,Declined for Life Insurance - What To Do [Ultimate Guide],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/editorial-guidelines/,200,,noindex,no,,yes,,,,,Editorial Guidelines - Funeral Funds,MEDIUM,"T1 trust page is noindex, nofollow"
+/elks-lodge-life-insurance-options/,200,,yes,yes,/elks-lodge-life-insurance-options/,yes,1,1,2,2,Elks Lodge Members Life Insurance Options - NOT GOOD!,HIGH,L3 only one page links to it in context (usually a hub list)
+/elks-lodge-member-life-insurance/,301,/elks-lodge-life-insurance-options/,n/a,no,,no,,,,,,OK,
+/epilepsy-burial-insurance/,301,/burial-insurance/epilepsy-seizures/,n/a,no,,no,,,,,,OK,
+/ethos-life-insurance-review-term-life-whole-life-plans/,301,/ethos-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/ethos-life-insurance-review/,200,,yes,yes,/ethos-life-insurance-review/,yes,1,345,1,2,Ethos Life Insurance: OVER-RATED and COSTLY!,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/facebook-1/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/facebook-2/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/facebook/,200,,noindex,no,/facebook/,no,,,,,Burial Insurance Quotes | Funeral Funds,OK,
+/family-benefit-life-burial-insurance-review-pros-cons-old/,301,/family-benefit-life-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/family-benefit-life-burial-insurance-review-pros-cons/,301,/family-benefit-life-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/family-benefit-life-burial-insurance-review/,200,,yes,yes,/family-benefit-life-burial-insurance-review/,yes,8,345,1,1,Family Benefit Life Insurance Review - [Pros and Cons],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/fidelity-life-burial-insurance-review-pros-cons/,301,/fidelity-life-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/fidelity-life-burial-insurance-review/,200,,yes,yes,/fidelity-life-burial-insurance-review/,yes,1,1,2,2,"Fidelity Life Burial Insurance Review - [Pros, Cons, Pricing Secrets]",HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/final-expense-insurance-application-process/,301,/burial-insurance/burial-insurance-application-process/,n/a,no,,no,,,,,,OK,
+/final-expense-insurance-diabetic-nephropathy/,301,/burial-insurance/diabetic-nephropathy/,n/a,no,,no,,,,,,OK,
+/final-expense-insurance-for-pastors-and-congregations/,301,/burial-insurance/final-expense-insurance-for-pastors-and-congregations/,n/a,no,,no,,,,,,OK,
+/final-expense-insurance-prices/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-aneurysm/,301,/burial-insurance/aneurysm/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-book/,200,,yes,yes,/final-expense-life-insurance-book/,yes,1,346,1,,FINAL EXPENSE LIFE INSURANCE FIRST TIME SHOPPER BOOK - Funeral Funds,HIGH,"L3 only one page links to it in context (usually a hub list); L4 contextual click depth unreachable (menu depth 1); M1 no meta description; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail"
+/final-expense-life-insurance-complete-guide-2/,301,/final-expense-life-insurance-complete-guide/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-complete-guide/,200,,yes,yes,/final-expense-life-insurance-complete-guide/,no,15,345,1,2,Final Expense Life Insurance: TOP GUIDE EVER!,LOW,S1 Article markup has no image (and no og:image): needs a representative image; S2 Article markup missing datePublished/dateModified
+/final-expense-life-insurance-dave-ramsey/,301,/burial-insurance/final-expense-life-insurance-dave-ramsey/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-diabetic-insulin-shock/,301,/burial-insurance/diabetic-insulin-shock/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-diabetic-neuropathy/,301,/burial-insurance/diabetic-neuropathy/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-diabetic-shock-insulin-shock/,301,/burial-insurance/diabetic-insulin-shock/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-diabetics/,200,,yes,yes,/final-expense-life-insurance-diabetics/,yes,2,2,2,2,Final Expense Life Insurance for Diabetics - No Waiting Period!,LOW,I2 image without width/height attributes; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/final-expense-life-insurance-heart-attack/,301,/burial-insurance/heart-attack/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-heart-stent/,301,/burial-insurance/stent/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-medicaid/,200,,yes,yes,/final-expense-life-insurance-medicaid/,yes,3,3,2,2,Medicaid Life Insurance Done Right The First Time,OK,
+/final-expense-life-insurance-no-exam/,301,/burial-insurance/life-insurance-no-exam/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-over-80/,200,,yes,yes,/final-expense-life-insurance-over-80/,yes,3,3,2,2,Final Expense Life Insurance for Seniors Over 80 - Great Rates!,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/final-expense-life-insurance-pacemaker/,301,/burial-insurance/pacemaker/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-pre-existing-conditions/,200,,yes,yes,/final-expense-life-insurance-pre-existing-conditions/,yes,3,345,1,2,Final Expense Life Insurance With Pre-Existing Conditions,OK,
+/final-expense-life-insurance-retired-truckers/,200,,yes,yes,/final-expense-life-insurance-retired-truckers/,yes,2,2,2,2,Final Expense Life Insurance For Retired Truckers - EASY APPROVAL,OK,
+/final-expense-life-insurance-stent/,301,/burial-insurance/stent/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-type-1-diabetes/,301,/burial-insurance/diabetes/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-widows/,301,/burial-insurance/life-insurance-widows/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-with-cardiomyopathy/,301,/burial-insurance/cardiomyopathy/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-with-pre-existing-conditions-2/,301,/final-expense-life-insurance-pre-existing-conditions/,n/a,no,,no,,,,,,OK,
+/final-expense-life-insurance-with-pre-existing-conditions/,301,/final-expense-life-insurance-pre-existing-conditions/,n/a,no,,no,,,,,,OK,
+/finding-affordable-burial-insurance/,200,,yes,yes,/finding-affordable-burial-insurance/,yes,6,345,1,2,Key to Finding Affordable Burial Insurance [Seniors Guide] in 2025,LOW,I3 first content image is lazy-loaded (check if above the fold)
+/finding-burial-insurance-near-me/,301,/burial-insurance/burial-insurance-near-me/,n/a,no,,no,,,,,,OK,
+/finding-cheap-burial-insurance/,301,/finding-affordable-burial-insurance/,n/a,no,,no,,,,,,OK,
+/flameless-cremation-burial-insurance/,200,,yes,yes,/flameless-cremation-burial-insurance/,yes,2,2,2,2,Flameless Cremation Burial Insurance [Everything You Need to Know],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/foresters-burial-insurance-review-pros-cons/,301,/foresters-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/foresters-burial-insurance-review/,200,,yes,yes,/foresters-burial-insurance-review/,yes,2,345,1,2,Foresters Burial Insurance Review - [Pros & Cons],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/forms/,200,,noindex,no,/forms/,yes,,,,,POLICY SUPPORT - Funeral Funds,OK,
+/free-quote-dfw-best/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/free-quote-fb/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/free-quote/,200,,noindex,no,,no,,,,,Free Burial Insurance Quotes | Compare Rates | Funeral Funds,OK,
+/free-quote/?gender=female,200,,noindex,no,,no,,,,,Free Burial Insurance Quotes | Compare Rates | Funeral Funds,OK,
+/free-quote/?gender=male,200,,noindex,no,,no,,,,,Free Burial Insurance Quotes | Compare Rates | Funeral Funds,OK,
+/funeral-cost-map/,200,,yes,yes,/funeral-cost-map/,no,0,345,1,,Funeral Cost and Mortality Map by State - Funeral Funds,HIGH,L1 research/tool page has no contextual (in-text) links; menu links only; L4 contextual click depth unreachable (menu depth 1); L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/funeral-cost-map/?state=AK,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=AL,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=AR,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=AZ,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=CA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=CO,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=CT,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=DC,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=DE,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=FL,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=GA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=HI,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=IA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=ID,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=IL,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=IN,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=KS,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=KY,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=LA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MD,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=ME,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MI,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MN,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MO,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MS,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=MT,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NC,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=ND,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NE,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NH,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NJ,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NM,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NV,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=NY,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=OH,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=OK,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=OR,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=PA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=RI,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=SC,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=SD,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=TN,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=TX,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=UT,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=VA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=VT,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=WA,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=WI,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=WV,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-cost-map/?state=WY,200,,no,no,/funeral-cost-map/,no,,,,,Funeral Cost and Mortality Map by State - Funeral Funds,LOW,D1 parameter URL linked with <a href>; canonical points to /funeral-cost-map/ (correct)
+/funeral-expenses-people-overlook/,301,/how-much-does-a-funeral-cost/,n/a,no,,no,,,,,,OK,
+/funeral-funds-of-america/,301,/,n/a,no,,no,,,,,,OK,
+/funeral-insurance-for-seniors/,301,/burial-insurance/funeral-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/funeral-plan-insurance-policies/,200,,yes,yes,/funeral-plan-insurance-policies/,yes,3,3,2,2,Funeral Plan Insurance Policies [Get Funeral Insurance Info],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/funeral-planning-checklist/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/funeral-relief-program/,200,,noindex,no,,yes,,,,,GET UP TO 50% OFF - Funeral Funds,OK,
+/gerber-guaranteed-issue-life-insurance-review/,301,/gerber-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/gerber-life-insurance-review/,200,,yes,yes,/gerber-life-insurance-review/,yes,4,345,1,2,Gerber Life Insurance Review - 97% Bad Policy - Read More,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/get-help/,200,,noindex,no,,yes,,,,,Get Help Today - Funeral Funds,OK,
+/get-rates/,200,,noindex,no,,no,,,,,Free Burial Insurance Quotes | Compare Rates | Funeral Funds,OK,
+/globe-life-burial-insurance-review/,301,/globe-life-price-increase/,n/a,no,,no,,,,,,OK,
+/globe-life-insurance-review/,301,/globe-life-price-increase/,n/a,no,,no,,,,,,OK,
+/globe-life-price-increase/,200,,yes,yes,/globe-life-price-increase/,yes,3,345,1,2,Globe Life Term Life Insurance - A 100% SCAM?,OK,
+/globe-life-whole-life-insurance-review-pros-cons/,301,/globe-life-price-increase/,n/a,no,,no,,,,,,OK,
+/globe-term-life-burial-insurance-review/,301,/globe-life-price-increase/,n/a,no,,no,,,,,,OK,
+/globe-whole-life-insurance-review-pros-cons/,301,/globe-life-price-increase/,n/a,no,,no,,,,,,OK,
+/great-western-burial-insurance-review/,200,,yes,yes,/great-western-burial-insurance-review/,yes,1,1,2,2,Great Western Burial Insurance Review - [Pros & Cons],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 2 proposed contextual link(s) to this page (link-proposals.csv)
+/guarantee-trust-life-insurance-review/,200,,yes,yes,/guarantee-trust-life-insurance-review/,yes,2,345,1,2,Guarantee Trust Life Insurance Review - Pros and Cons,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/guaranteed-issue-life-insurance-for-seniors-2/,301,/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/guaranteed-issue-life-insurance-for-seniors-3/,301,/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/guaranteed-issue-life-insurance-for-seniors/,301,/burial-insurance/guaranteed-issue-life-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/health-question-search-preview/,200,,noindex,no,,no,,,,,Life Insurance Health Questions - Funeral Funds,OK,
+/help/,200,,noindex,no,,no,,,,,Thank You | Funeral Funds,OK,
+/how-much-burial-insurance-do-i-need/,200,,yes,yes,/how-much-burial-insurance-do-i-need/,yes,4,345,1,2,How much Burial Insurance Do I Need? [WHAT WILL IT COST?],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/how-much-cremation-cost/,301,/cremation-cost-and-info/,n/a,no,,no,,,,,,OK,
+/how-much-does-a-funeral-cost-in-2022/,301,/how-much-does-a-funeral-cost/,n/a,no,,no,,,,,,OK,
+/how-much-does-a-funeral-cost/,200,,yes,yes,/how-much-does-a-funeral-cost/,yes,6,345,1,3,How Much Does A Funeral Cost?,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/how-much-does-burial-insurance-cost/,301,/how-much-does-final-expense-insurance-cost/,n/a,no,,no,,,,,,OK,
+/how-much-does-cremation-cost-od/,301,/cremation-cost-and-info/,n/a,no,,no,,,,,,OK,
+/how-much-does-cremation-cost/,301,/cremation-cost-and-info/,n/a,no,,no,,,,,,OK,
+/how-much-does-final-expense-insurance-cost/,200,,yes,yes,/how-much-does-final-expense-insurance-cost/,yes,8,345,1,2,How Much Does Final Expense Insurance Cost [Burial Insurance Cost],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/how-to-apply-for-burial-insurance/,301,/burial-insurance/how-to-apply-for-burial-insurance/,n/a,no,,no,,,,,,OK,
+/how-to-buy-a-casket/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/how-to-buy-an-urn/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/how-to-choose-a-funeral-home/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/how-to-dispose-of-medications-after-a-death/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/how-to-pay-for-a-funeral-without-life-insurance/,301,/pay-for-a-funeral-without-life-insurance/,n/a,no,,no,,,,,,OK,
+/how-to-select-a-headstone/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/how-to-write-an-obituary/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/https-fexguy-com-big-lou-term-life-insurance-review/,301,/big-lou-term-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/is-burial-insurance-permanent/,301,/burial-insurance/is-burial-insurance-permanent/,n/a,no,,no,,,,,,OK,
+/is-burial-insurance-worth-it/,200,,yes,yes,/is-burial-insurance-worth-it/,yes,2,345,1,2,Is Burial Insurance Worth It? [FIND OUT YOUR OPTIONS HERE],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/iul-book/,200,,yes,yes,/iul-book/,yes,7,346,1,1,"IUL Playbook: How It Works, What It Promises, & What It Delivers - Funeral Funds",MEDIUM,"M1 no meta description; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; I1 1 content image(s) over 300 KB with no responsive/modern variants"
+/iul-book/iul-church-members-faith-based-communities/,200,,yes,yes,/iul-book/iul-church-members-faith-based-communities/,no,1,1,2,2,IUL for Church Members: What to Know About Faith-Based IUL Pitches,HIGH,L3 only one page links to it in context (usually a hub list)
+/iul-book/iul-for-military-members-veterans/,301,/iul-book/iul-military-members-veterans/,n/a,no,,no,,,,,,OK,
+/iul-book/iul-military-members-veterans/,200,,yes,yes,/iul-book/iul-military-members-veterans/,yes,1,1,2,2,IUL For Military Members & Veterans - Funeral Funds,HIGH,L3 only one page links to it in context (usually a hub list); M1 no meta description; I1 1 content image(s) over 300 KB with no responsive/modern variants
+/iul-book/iul-police-officers-firefighters/,200,,yes,yes,/iul-book/iul-police-officers-firefighters/,yes,1,1,2,2,IULs For Police Officers or Firefighters - The Complete Guide! - Funeral Funds,HIGH,L3 only one page links to it in context (usually a hub list); M1 no meta description; I1 1 content image(s) over 300 KB with no responsive/modern variants
+/iul-book/iuls-for-truckers/,200,,yes,yes,/iul-book/iuls-for-truckers/,yes,1,1,2,2,IULs For Truckers: Why Indexed Universal Life Insurance Fails Most Drivers - Funeral Funds,HIGH,L3 only one page links to it in context (usually a hub list); M1 no meta description; I1 1 content image(s) over 300 KB with no responsive/modern variants
+/iul-book/teachers-indexed-universal-life-iul/,200,,yes,yes,/iul-book/teachers-indexed-universal-life-iul/,yes,1,1,3,3,"IUL's For Teachers: Why These ""Retirement Plans"" Often Fail - Funeral Funds",HIGH,L3 only one page links to it in context (usually a hub list); M1 no meta description; I1 1 content image(s) over 300 KB with no responsive/modern variants
+/iul-church-members-faith-based-communities/,301,/iul-book/iul-church-members-faith-based-communities/,n/a,no,,no,,,,,,OK,
+/iul-for-teachers-indexed-universal-life/,301,/iul-book/teachers-indexed-universal-life-iul/,n/a,no,,no,,,,,,OK,
+/iul-military-members-veterans/,301,/iul-book/iul-military-members-veterans/,n/a,no,,no,,,,,,OK,
+/iul-police-officers-firefighters/,301,/iul-book/iul-police-officers-firefighters/,n/a,no,,no,,,,,,OK,
+/iul-police-officers-iul-firefighters/,301,/iul-book/iul-police-officers-firefighters/,n/a,no,,no,,,,,,OK,
+/iuls-for-truckers/,301,/iul-book/iuls-for-truckers/,n/a,no,,no,,,,,,OK,
+/lbl/,200,,noindex,no,,yes,,,,,LBL - Funeral Funds,OK,
+/liberty-bankers-burial-insurance-review/,200,,yes,yes,/liberty-bankers-burial-insurance-review/,yes,3,3,2,2,Liberty Bankers Burial Insurance Review - [Pros & Cons],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/licenses/,200,,noindex,no,,yes,,,,,Licenses & Lines Of Authority - Funeral Funds,MEDIUM,"T1 trust page is noindex, nofollow"
+/life-insurance-build-chart/,301,/burial-insurance/build-chart/,n/a,no,,no,,,,,,OK,
+/life-insurance-diabetic-neuropathy/,301,/burial-insurance/diabetic-neuropathy/,n/a,no,,no,,,,,,OK,
+/life-insurance-for-cancer-patients/,301,/burial-insurance/cancer/,n/a,no,,no,,,,,,OK,
+/life-insurance-for-dialysis-patients/,301,/burial-insurance/dialysis-patients/,n/a,no,,no,,,,,,OK,
+/life-insurance-for-employees/,200,,yes,yes,/life-insurance-for-employees/,yes,2,2,2,2,Life Insurance for Employees - Is It Right For You?,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/life-insurance-for-hiv-positive/,200,,yes,yes,/life-insurance-for-hiv-positive/,yes,8,8,2,2,Life Insurance for HIV positive - [Use Caution],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/life-insurance-for-seniors-your-best-option-at-50-to-85-years-old/,301,/burial-insurance/life-insurance-for-seniors/,n/a,no,,no,,,,,,OK,
+/life-insurance-health-questions/,200,,yes,yes,/life-insurance-health-questions/,no,0,345,1,,Life Insurance Health Questions - Funeral Funds,HIGH,L1 research/tool page has no contextual (in-text) links; menu links only; L4 contextual click depth unreachable (menu depth 1); L6 3 proposed contextual link(s) to this page (link-proposals.csv); A1 only ~130 words of crawlable text; tool results are not crawlable by design
+/life-insurance-height-weight-guidelines/,200,,yes,yes,/life-insurance-height-weight-guidelines/,yes,2,345,1,2,Life Insurance Height and Weight Guidelines - Funeral Funds,MEDIUM,M1 no meta description; I1 1 content image(s) over 300 KB with no responsive/modern variants
+/life-insurance-medicaid/,301,/final-expense-life-insurance-medicaid/,n/a,no,,no,,,,,,OK,
+/life-insurance-over-80/,301,/final-expense-life-insurance-over-80/,n/a,no,,no,,,,,,OK,
+/life-insurance-policies-with-no-waiting-period-2/,301,/burial-insurance/life-insurance-with-no-waiting-period/,n/a,no,,no,,,,,,OK,
+/life-insurance-policies-with-no-waiting-period/,301,/burial-insurance/life-insurance-with-no-waiting-period/,n/a,no,,no,,,,,,OK,
+/life-insurance-savings-group-review/,200,,yes,yes,/life-insurance-savings-group-review/,yes,2,2,2,2,Life Insurance Savings Group Review [HOLY COW...THE TRUTH!],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/life-insurance-with-no-waiting-period/,301,/burial-insurance/life-insurance-with-no-waiting-period/,n/a,no,,no,,,,,,OK,
+/lincoln-heritage-funeral-advantage-review-old/,301,/lincoln-heritage-funeral-advantage-review/,n/a,no,,no,,,,,,OK,
+/lincoln-heritage-funeral-advantage-review/,200,,yes,yes,/lincoln-heritage-funeral-advantage-review/,yes,3,345,1,2,"Lincoln Heritage Funeral Advantage Review: Rates, Pros & Cons",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/lions-club-member-life-insurance-options/,301,/lions-club-member-life-insurance/,n/a,no,,no,,,,,,OK,
+/lions-club-member-life-insurance/,200,,yes,yes,/lions-club-member-life-insurance/,yes,2,2,2,2,Lions Club Member Life Insurance Options: NOT GOOD!,OK,
+/llms.txt,200,,no,no,,no,,,,,,OK,
+/lowest-rates/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/lumico-burial-insurance-review/,200,,yes,yes,/lumico-burial-insurance-review/,yes,4,4,2,2,"Lumico Burial Insurance Review - [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/medicaid-spend-down-rules-on-life-insurance/,200,,yes,yes,/medicaid-spend-down-rules-on-life-insurance/,yes,2,2,2,2,Medicaid Spend Down Rules on Life Insurance [Options Explained],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/mortgage-protection-life-insurance/,200,,yes,yes,/mortgage-protection-life-insurance/,no,1,345,1,1,Mortgage Protection Life Insurance: How It Works & What to Know,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; S2 Article markup missing datePublished/dateModified; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/mortgage-protection/,301,/mortgage-protection-life-insurance/,n/a,no,,no,,,,,,OK,
+/mutual-of-omaha-burial-insurance/,200,,yes,yes,/mutual-of-omaha-burial-insurance/,yes,4,345,1,1,"Mutual of Omaha Burial Insurance Plan [Pros, Cons, Pricing Secrets]",LOW,I2 image without width/height attributes
+/mutual-of-omaha-whole-life-insurance-and-burial-insurance/,301,/mutual-of-omaha-burial-insurance/,n/a,no,,no,,,,,,OK,
+/open-care-life-insurance-review/,200,,yes,yes,/open-care-life-insurance-review/,yes,1,1,2,2,Open Care Life Insurance Review: Don't Buy This Insurance!,HIGH,L3 only one page links to it in context (usually a hub list)
+/open-care-seniors-burial-insurance-review-pros-cons/,301,/open-care-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/oxford-life-burial-insurance-review/,200,,yes,yes,/oxford-life-burial-insurance-review/,yes,2,2,2,2,"Oxford Life Burial Insurance Review [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/pay-for-a-funeral-without-life-insurance/,200,,yes,yes,/pay-for-a-funeral-without-life-insurance/,yes,3,3,2,3,How to Pay for A Funeral Without Life Insurance [Complete Guide],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/phoenix-life-burial-insurance-review-pros-cons/,200,,yes,yes,/phoenix-life-burial-insurance-review-pros-cons/,yes,2,2,2,2,"Phoenix Life Burial Insurance Review - [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/planning-guide/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/prepaid-caskets-pros-and-cons/,200,,yes,yes,/prepaid-caskets-pros-and-cons/,yes,2,2,2,4,Prepaid Caskets What Funeral Homes Never Explain,MEDIUM,L4 contextual click depth 4 (menu depth 2)
+/prepaid-funeral-pros-and-cons/,301,/prepaid-funeral/,n/a,no,,no,,,,,,OK,
+/prepaid-funeral/,200,,yes,yes,/prepaid-funeral/,yes,1,345,1,3,Prepaid Funeral Pros and Cons [Is It Right for Me?],HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/preventing-identity-theft-after-death/,301,/12-step-final-planning-guide/,n/a,no,,no,,,,,,OK,
+/pricing/,200,,noindex,no,,yes,,,,,Pricing - Funeral Funds,OK,
+/primerica-life-insurance-review-bad-deal/,301,/primerica-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/primerica-life-insurance-review-protected-or-neglected/,301,/primerica-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/primerica-life-insurance-review/,200,,yes,yes,/primerica-life-insurance-review/,yes,2,345,1,2,Primerica Life Insurance Review: Costly & Avoidable?,OK,
+/privacy-policy/,200,,yes,yes,/privacy-policy/,no,17,358,1,2,Privacy Policy - Funeral Funds,MEDIUM,"M1 no meta description; S1 Article markup has no image (and no og:image): needs a representative image; S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail"
+/prosperity-life-burial-insurance-review-pros-cons/,200,,yes,yes,/prosperity-life-burial-insurance-review-pros-cons/,yes,3,3,2,2,"Prosperity Burial Insurance Review - [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/ptsd-burial-insurance/,301,/burial-insurance/ptsd/,n/a,no,,no,,,,,,OK,
+/purchasing-burial-insurance-disability/,301,/burial-insurance/disability/,n/a,no,,no,,,,,,OK,
+/randy-vandervaate/,200,,yes,yes,/randy-vandervaate/,yes,1,345,1,5,Randy VanderVaate - Funeral Funds,HIGH,"L3 only one page links to it in context (usually a hub list); L4 contextual click depth 5 (menu depth 1); S3 BreadcrumbList position given as text, not Integer (migrated JSON-LD); S4 BreadcrumbList markup but no visible breadcrumb trail; S6 author profile page has no ProfilePage markup; I3 first content image is lazy-loaded (check if above the fold)"
+/rapture-life-insurance/,200,,yes,yes,/rapture-life-insurance/,yes,1,1,2,2,Rapture Life Insurance: Does It Pay If You Go To Heaven?,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/rates-from-randy/,200,,noindex,no,,yes,,,,,Get Rates From Randy - Funeral Funds,OK,
+/reviews/,200,,yes,yes,/reviews/,no,2,347,1,1,Funeral Funds Reviews,OK,
+/robots.txt,200,,no,no,,no,,,,,,OK,
+/roku/,200,,noindex,no,/roku/,no,,,,,"Welcome, Roku Viewers | Funeral Funds",OK,
+/royal-neighbors-of-america-burial-insurance-review/,301,/royal-neighbors-of-america/,n/a,no,,no,,,,,,OK,
+/royal-neighbors-of-america/,200,,yes,yes,/royal-neighbors-of-america/,yes,2,2,2,2,Royal Neighbors of America Burial Insurance Review: - Mistake?,EDITORIAL REVIEW REQUIRED,L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/search/,200,,noindex,no,,no,,,,,Search - Funeral Funds,OK,
+/search/$%7Bn%28e%29%7D/,404,,n/a,no,,no,,,,,,LOW,D2 URL-like string in inline script (not a real link)
+/search/${n(e)},308,/search/$%7Bn%28e%29%7D/,n/a,no,,no,,,,,,LOW,D2 URL-like string in inline script (not a real link)
+/security-national-burial-insurance-review/,200,,yes,yes,/security-national-burial-insurance-review/,yes,1,1,2,2,"Security National Insurance Review - [Pros, Cons, Pricing Secrets]",HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image; L6 1 proposed contextual link(s) to this page (link-proposals.csv)
+/senior-benefits/,200,,noindex,no,,yes,,,,,Senior Benefits - Best Deals On Insurance! [Funeral Funds],OK,
+/senior-legacy-life-insurance-review/,301,/senior-legacy-life-review/,n/a,no,,no,,,,,,OK,
+/senior-legacy-life-review/,200,,yes,yes,/senior-legacy-life-review/,yes,1,1,2,2,Senior Legacy Life Insurance Review - LEGIT OR QUIT?,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/senior-legacy-vs-senior-legacy-life/,200,,yes,yes,/senior-legacy-vs-senior-legacy-life/,yes,2,2,2,2,Senior Legacy vs Senior Legacy Life Explained | Don’t Confuse These Two,OK,
+/senior-life-insurance-company-review/,301,/senior-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/senior-life-insurance-review/,200,,yes,yes,/senior-life-insurance-review/,yes,1,1,2,2,Senior Life Insurance Company Review: Read This Now,HIGH,L3 only one page links to it in context (usually a hub list)
+/sitemap-0.xml,200,,no,no,,no,,,,,,OK,
+/sitemap-index.xml,200,,no,no,,no,,,,,,OK,
+/sitemap_index.xml,301,/sitemap-index.xml,n/a,no,,no,,,,,,OK,
+/start/,301,/free-quote/,n/a,no,,no,,,,,,OK,
+/state-farm-burial-insurance-review/,301,/state-farm/,n/a,no,,no,,,,,,OK,
+/state-farm/,200,,yes,yes,/state-farm/,yes,1,345,1,2,"State Farm Burial Insurance Review: ""Good Neighbor""?",HIGH,L3 only one page links to it in context (usually a hub list)
+/state-regulated-life-insurance/,301,/burial-insurance/state-regulated-life-insurance/,n/a,no,,no,,,,,,OK,
+/t2-form-scam/,301,/t2-life-insurance/,n/a,no,,no,,,,,,OK,
+/t2-life-insurance/,200,,yes,yes,/t2-life-insurance/,no,1,1,3,3,T2 Life Insurance Form: What Is It?,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/teachers-indexed-universal-life-iul/,301,/iul-book/teachers-indexed-universal-life-iul/,n/a,no,,no,,,,,,OK,
+/term-life-conversion-to-whole-life/,200,,yes,yes,/term-life-conversion-to-whole-life/,yes,3,345,1,3,Term Life Conversion to Whole Life,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/term-life-insurance-doctors/,200,,yes,yes,/term-life-insurance-doctors/,yes,2,2,2,2,Term Life Insurance For Doctors - THIS IS LIFE OR DEATH!,OK,
+/term-life-insurance-for-doctors/,301,/term-life-insurance-doctors/,n/a,no,,no,,,,,,OK,
+/term-life-insurance-guide-everyone/,200,,yes,yes,/term-life-insurance-guide-everyone/,yes,3,345,1,1,Term Life Insurance For Everyone: GET THE RIGHT POLICY!,OK,
+/term-life-insurance-truckers-2/,301,/term-life-insurance-truckers/,n/a,no,,no,,,,,,OK,
+/term-life-insurance-truckers/,200,,yes,yes,/term-life-insurance-truckers/,yes,2,2,2,2,Term Life Insurance For Truckers: DON'T GET IT WRONG!,OK,
+/terms-conditions/,301,/terms-of-use/,n/a,no,,no,,,,,,OK,
+/terms-of-use/,200,,noindex,no,,no,,,,,Terms Of Use - Funeral Funds,MEDIUM,"T1 trust page is noindex, nofollow"
+/the-importance-of-burial-insurance/,200,,yes,yes,/the-importance-of-burial-insurance/,yes,13,13,2,2,The Importance of Burial Insurance [ULTIMATE GUIDE],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/the-truth-about-senior-legacy-life-insurance/,301,/senior-legacy-life-review/,n/a,no,,no,,,,,,OK,
+/top-10-final-expense-life-insurance-companies/,301,/burial-insurance/top-10-final-expense-life-insurance-companies/,n/a,no,,no,,,,,,OK,
+/transamerica-burial-insurance-review/,200,,yes,yes,/transamerica-burial-insurance-review/,yes,2,345,1,2,"TransAmerica Burial Insurance Review [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image; L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/trin-fbl/,200,,noindex,no,,no,,,,,Life Insurance Documents | Funeral Funds,OK,
+/trinity-life-burial-insurance-review-pros-cons-2/,301,/trinity-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/trinity-life-burial-insurance-review-pros-cons/,301,/trinity-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/trinity-life-burial-insurance-review/,301,/trinity-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/trinity-life-insurance-review/,200,,yes,yes,/trinity-life-insurance-review/,yes,7,345,1,1,"Trinity Life Insurance Review - [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/trustage-life-insurance-revie/,301,/trustage-life-insurance-review/,n/a,no,,no,,,,,,OK,
+/trustage-life-insurance-review/,200,,yes,yes,/trustage-life-insurance-review/,yes,3,345,1,2,"TruStage Life Insurance Review [Pros, Cons, Pricing Secrets]",EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/trustage-price-increase/,200,,yes,yes,/trustage-price-increase/,yes,3,3,2,2,TruStage Price Increase [I DIDN'T KNOW MY PRICE INCREASES!],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/united-heritage-burial-insurance-review-pros-cons/,301,/united-heritage-burial-insurance-review/,n/a,no,,no,,,,,,OK,
+/united-heritage-burial-insurance-review/,200,,yes,yes,/united-heritage-burial-insurance-review/,yes,1,1,2,2,"United Heritage Insurance Review [Pros, Cons, Pricing Secrets]",HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/valife-insurance-review/,301,/valife/,n/a,no,,no,,,,,,OK,
+/valife-life-insurance-review/,301,/valife/,n/a,no,,no,,,,,,OK,
+/valife/,200,,yes,yes,/valife/,yes,1,1,2,2,VALife Burial Insurance Review - Read To Avoid This!,HIGH,L3 only one page links to it in context (usually a hub list); L6 3 proposed contextual link(s) to this page (link-proposals.csv)
+/veterans-of-foreign-wars-vfw-life-insurance-options/,200,,yes,yes,/veterans-of-foreign-wars-vfw-life-insurance-options/,yes,2,2,2,2,VFW Member Life Insurance - AVOID THESE OPTIONS!,OK,
+/welcome/,200,,noindex,no,,yes,,,,,Welcome & Hello From Funeral Funds! - Funeral Funds,OK,
+/what-happens-when-your-spouse-died-no-life-insurance/,200,,yes,yes,/what-happens-when-your-spouse-died-no-life-insurance/,yes,1,1,2,2,What Happens When Your Spouse Died No Life Insurance?,HIGH,L3 only one page links to it in context (usually a hub list); S1 Article markup has no image (and no og:image): needs a representative image
+/what-is-burial-insurance/,200,,yes,yes,/what-is-burial-insurance/,yes,2,2,2,2,What is Burial Insurance? - Guide to Final Expense and Funeral Insurance,EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
+/what-to-do-when-a-loved-one-dies/,200,,yes,yes,/what-to-do-when-a-loved-one-dies/,yes,2,345,1,3,What to Do When a Loved One Dies [The Ultimate Guide],EDITORIAL REVIEW REQUIRED,S1 Article markup has no image (and no og:image): needs a representative image
