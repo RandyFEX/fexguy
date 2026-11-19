@@ -1,0 +1,3518 @@
+{
+ "method": null,
+ "started": "2026-11-19T14:41:35.201Z",
+ "finished": "2026-11-19T15:18:18.018Z",
+ "medians": {
+  "/": {
+   "360": {
+    "runs": 3,
+    "lcp": 1612,
+    "fcp": 544,
+    "ttfb": 369.30000000004657,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 24,
+    "requests": 14,
+    "bytesTotal": 394608,
+    "bytesDoc": 70646,
+    "bytesJs": 8662,
+    "bytesImg": 315300,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 1248,
+    "lcpMax": 1680,
+    "ttfbMin": 156.10000000009313,
+    "ttfbMax": 422.9000000001397,
+    "lcpEls": [
+     "https://funeralfunds.com/images/home/hero-beach-mobile.avif"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 1224,
+    "fcp": 340,
+    "ttfb": 115,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 14,
+    "bytesTotal": 394608,
+    "bytesDoc": 70646,
+    "bytesJs": 8662,
+    "bytesImg": 315300,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 1200,
+    "lcpMax": 1608,
+    "ttfbMin": 111.5,
+    "ttfbMax": 352.39999999990687,
+    "lcpEls": [
+     "https://funeralfunds.com/images/home/hero-beach-mobile.avif"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 1248,
+    "fcp": 344,
+    "ttfb": 117.10000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 14,
+    "bytesTotal": 397941,
+    "bytesDoc": 70646,
+    "bytesJs": 8662,
+    "bytesImg": 318633,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 1236,
+    "lcpMax": 1648,
+    "ttfbMin": 100.89999999990687,
+    "ttfbMax": 401.30000000004657,
+    "lcpEls": [
+     "https://funeralfunds.com/images/home/hero-beach-mobile.avif"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 1268,
+    "fcp": 328,
+    "ttfb": 141.30000000004657,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 14,
+    "bytesTotal": 397941,
+    "bytesDoc": 70646,
+    "bytesJs": 8662,
+    "bytesImg": 318633,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 1256,
+    "lcpMax": 1624,
+    "ttfbMin": 114.80000000004657,
+    "ttfbMax": 450.60000000009313,
+    "lcpEls": [
+     "https://funeralfunds.com/images/home/hero-beach-mobile.avif"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/burial-insurance/copd/": {
+   "360": {
+    "runs": 3,
+    "lcp": 396,
+    "fcp": 396,
+    "ttfb": 123.0999999998603,
+    "cls": 0,
+    "tbt": 12,
+    "inpProxy": 32,
+    "requests": 11,
+    "bytesTotal": 350439,
+    "bytesDoc": 31038,
+    "bytesJs": 11940,
+    "bytesImg": 307461,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 376,
+    "lcpMax": 488,
+    "ttfbMin": 112.4000000001397,
+    "ttfbMax": 303,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 372,
+    "fcp": 340,
+    "ttfb": 119.9000000001397,
+    "cls": 0,
+    "tbt": 1,
+    "inpProxy": 40,
+    "requests": 11,
+    "bytesTotal": 350439,
+    "bytesDoc": 31038,
+    "bytesJs": 11940,
+    "bytesImg": 307461,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 340,
+    "lcpMax": 436,
+    "ttfbMin": 111.69999999995343,
+    "ttfbMax": 154,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 380,
+    "fcp": 356,
+    "ttfb": 119.70000000018626,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 11,
+    "bytesTotal": 353772,
+    "bytesDoc": 31038,
+    "bytesJs": 11940,
+    "bytesImg": 310794,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 372,
+    "lcpMax": 420,
+    "ttfbMin": 116.89999999990687,
+    "ttfbMax": 148,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 368,
+    "ttfb": 147.5,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 48,
+    "requests": 11,
+    "bytesTotal": 353772,
+    "bytesDoc": 31038,
+    "bytesJs": 11940,
+    "bytesImg": 310794,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 360,
+    "lcpMax": 440,
+    "ttfbMin": 116.5999999998603,
+    "ttfbMax": 233.4000000001397,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/aetna-burial-insurance-review/": {
+   "360": {
+    "runs": 3,
+    "lcp": 388,
+    "fcp": 316,
+    "ttfb": 122.39999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 54277,
+    "bytesDoc": 31402,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 368,
+    "lcpMax": 432,
+    "ttfbMin": 101.19999999995343,
+    "ttfbMax": 126.10000000009313,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 400,
+    "fcp": 332,
+    "ttfb": 128.39999999990687,
+    "cls": 0,
+    "tbt": 12,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 54277,
+    "bytesDoc": 31402,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 372,
+    "lcpMax": 416,
+    "ttfbMin": 112,
+    "ttfbMax": 145.9000000001397,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 372,
+    "fcp": 316,
+    "ttfb": 118.69999999995343,
+    "cls": 0,
+    "tbt": 14,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 57610,
+    "bytesDoc": 31402,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 360,
+    "lcpMax": 392,
+    "ttfbMin": 110.39999999990687,
+    "ttfbMax": 118.89999999990687,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 404,
+    "fcp": 316,
+    "ttfb": 123.5,
+    "cls": 0,
+    "tbt": 2,
+    "inpProxy": 32,
+    "requests": 10,
+    "bytesTotal": 57610,
+    "bytesDoc": 31402,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 372,
+    "lcpMax": 412,
+    "ttfbMin": 121.79999999981374,
+    "ttfbMax": 141.10000000009313,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/burial-insurance/": {
+   "360": {
+    "runs": 3,
+    "lcp": 380,
+    "fcp": 380,
+    "ttfb": 154.5,
+    "cls": 0,
+    "tbt": 27,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 64854,
+    "bytesDoc": 41979,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 352,
+    "lcpMax": 420,
+    "ttfbMin": 149.19999999995343,
+    "ttfbMax": 200.0999999998603,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 392,
+    "fcp": 348,
+    "ttfb": 144.89999999990687,
+    "cls": 0,
+    "tbt": 33,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 64854,
+    "bytesDoc": 41979,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 388,
+    "lcpMax": 428,
+    "ttfbMin": 136.30000000004657,
+    "ttfbMax": 164.39999999990687,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 420,
+    "fcp": 352,
+    "ttfb": 128.60000000009313,
+    "cls": 0,
+    "tbt": 12,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 68187,
+    "bytesDoc": 41979,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 384,
+    "lcpMax": 436,
+    "ttfbMin": 109.39999999990687,
+    "ttfbMax": 199,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 396,
+    "fcp": 344,
+    "ttfb": 133.39999999990687,
+    "cls": 0,
+    "tbt": 8,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 68187,
+    "bytesDoc": 41979,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 388,
+    "lcpMax": 544,
+    "ttfbMin": 117,
+    "ttfbMax": 140.20000000018626,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/a-z-health/": {
+   "360": {
+    "runs": 3,
+    "lcp": 408,
+    "fcp": 340,
+    "ttfb": 133.89999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 10,
+    "bytesTotal": 48263,
+    "bytesDoc": 25388,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 360,
+    "lcpMax": 664,
+    "ttfbMin": 121.10000000009313,
+    "ttfbMax": 145.29999999981374,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 372,
+    "ttfb": 107.89999999990687,
+    "cls": 0,
+    "tbt": 17,
+    "inpProxy": 32,
+    "requests": 10,
+    "bytesTotal": 48263,
+    "bytesDoc": 25388,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 372,
+    "lcpMax": 496,
+    "ttfbMin": 105,
+    "ttfbMax": 142.6999999997206,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 388,
+    "fcp": 324,
+    "ttfb": 134.79999999981374,
+    "cls": 0,
+    "tbt": 20,
+    "inpProxy": 48,
+    "requests": 10,
+    "bytesTotal": 51596,
+    "bytesDoc": 25388,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 380,
+    "lcpMax": 452,
+    "ttfbMin": 109.39999999990687,
+    "ttfbMax": 152.10000000009313,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 500,
+    "fcp": 348,
+    "ttfb": 131.60000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 51596,
+    "bytesDoc": 25388,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 396,
+    "lcpMax": 508,
+    "ttfbMin": 125.1999999997206,
+    "ttfbMax": 138.90000000037253,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/colonial-penn-burial-insurance-review/": {
+   "360": {
+    "runs": 3,
+    "lcp": 440,
+    "fcp": 332,
+    "ttfb": 127.5,
+    "cls": 0,
+    "tbt": 74,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 56456,
+    "bytesDoc": 33581,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 364,
+    "lcpMax": 644,
+    "ttfbMin": 117.60000000009313,
+    "ttfbMax": 455.39999999990687,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 624,
+    "fcp": 340,
+    "ttfb": 147.10000000009313,
+    "cls": 0,
+    "tbt": 80,
+    "inpProxy": 48,
+    "requests": 10,
+    "bytesTotal": 56456,
+    "bytesDoc": 33581,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 464,
+    "lcpMax": 628,
+    "ttfbMin": 113.39999999990687,
+    "ttfbMax": 401.59999999962747,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 568,
+    "fcp": 352,
+    "ttfb": 150.59999999962747,
+    "cls": 0,
+    "tbt": 47,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 59789,
+    "bytesDoc": 33581,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 356,
+    "lcpMax": 660,
+    "ttfbMin": 112.20000000018626,
+    "ttfbMax": 471.5,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 376,
+    "fcp": 376,
+    "ttfb": 112.10000000009313,
+    "cls": 0,
+    "tbt": 67,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 59789,
+    "bytesDoc": 33581,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 348,
+    "lcpMax": 592,
+    "ttfbMin": 105.10000000009313,
+    "ttfbMax": 406.5,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/12-step-final-planning-guide/": {
+   "360": {
+    "runs": 3,
+    "lcp": 388,
+    "fcp": 332,
+    "ttfb": 138.89999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 8,
+    "bytesTotal": 46110,
+    "bytesDoc": 26513,
+    "bytesJs": 8662,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 368,
+    "lcpMax": 744,
+    "ttfbMin": 110.20000000018626,
+    "ttfbMax": 563.8999999999069,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 328,
+    "ttfb": 132.5,
+    "cls": 0,
+    "tbt": 5,
+    "inpProxy": 32,
+    "requests": 8,
+    "bytesTotal": 46110,
+    "bytesDoc": 26513,
+    "bytesJs": 8662,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 372,
+    "lcpMax": 584,
+    "ttfbMin": 125.79999999981374,
+    "ttfbMax": 399.39999999990687,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 380,
+    "fcp": 344,
+    "ttfb": 117.5,
+    "cls": 0,
+    "tbt": 4,
+    "inpProxy": 40,
+    "requests": 8,
+    "bytesTotal": 49443,
+    "bytesDoc": 26513,
+    "bytesJs": 8662,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 344,
+    "lcpMax": 616,
+    "ttfbMin": 111.20000000018626,
+    "ttfbMax": 390,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 440,
+    "fcp": 320,
+    "ttfb": 138.1999999997206,
+    "cls": 0,
+    "tbt": 2,
+    "inpProxy": 48,
+    "requests": 8,
+    "bytesTotal": 49443,
+    "bytesDoc": 26513,
+    "bytesJs": 8662,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 356,
+    "lcpMax": 2540,
+    "ttfbMin": 109.79999999981374,
+    "ttfbMax": 2298,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/funeral-cost-map/": {
+   "360": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 384,
+    "ttfb": 135.6999999997206,
+    "cls": 0,
+    "tbt": 72,
+    "inpProxy": 64,
+    "requests": 8,
+    "bytesTotal": 225280,
+    "bytesDoc": 29794,
+    "bytesJs": 187254,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 352,
+    "lcpMax": 616,
+    "ttfbMin": 122.09999999962747,
+    "ttfbMax": 427.20000000018626,
+    "lcpEls": [
+     "p.fcm-lead"
+    ],
+    "interaction": "tap map tab \"costs\" ([data-fcm-tab=costs])"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 336,
+    "fcp": 320,
+    "ttfb": 121.60000000009313,
+    "cls": 0.013559019014859213,
+    "tbt": 78,
+    "inpProxy": 72,
+    "requests": 8,
+    "bytesTotal": 225280,
+    "bytesDoc": 29794,
+    "bytesJs": 187254,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 336,
+    "lcpMax": 608,
+    "ttfbMin": 118.29999999981374,
+    "ttfbMax": 423.59999999962747,
+    "lcpEls": [
+     "p.fcm-lead"
+    ],
+    "interaction": "tap map tab \"costs\" ([data-fcm-tab=costs])"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 368,
+    "fcp": 332,
+    "ttfb": 143.5,
+    "cls": 0.01917814173259637,
+    "tbt": 112,
+    "inpProxy": 64,
+    "requests": 8,
+    "bytesTotal": 228613,
+    "bytesDoc": 29794,
+    "bytesJs": 187254,
+    "bytesImg": 11565,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 332,
+    "lcpMax": 704,
+    "ttfbMin": 123.39999999990687,
+    "ttfbMax": 487.8000000002794,
+    "lcpEls": [
+     "p.fcm-lead"
+    ],
+    "interaction": "tap map tab \"costs\" ([data-fcm-tab=costs])"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 348,
+    "fcp": 320,
+    "ttfb": 125,
+    "cls": 0.044119162124688416,
+    "tbt": 85,
+    "inpProxy": 72,
+    "requests": 8,
+    "bytesTotal": 228613,
+    "bytesDoc": 29794,
+    "bytesJs": 187254,
+    "bytesImg": 11565,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 320,
+    "lcpMax": 568,
+    "ttfbMin": 121.79999999981374,
+    "ttfbMax": 426.70000000018626,
+    "lcpEls": [
+     "p.fcm-lead"
+    ],
+    "interaction": "tap map tab \"costs\" ([data-fcm-tab=costs])"
+   }
+  },
+  "/life-insurance-health-questions/": {
+   "360": {
+    "runs": 3,
+    "lcp": 336,
+    "fcp": 308,
+    "ttfb": 115.79999999981374,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 48,
+    "requests": 11,
+    "bytesTotal": 55099,
+    "bytesDoc": 19623,
+    "bytesJs": 8662,
+    "bytesImg": 23286,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 3528,
+    "lcpMin": 332,
+    "lcpMax": 356,
+    "ttfbMin": 110.10000000009313,
+    "ttfbMax": 116.3000000002794,
+    "lcpEls": [
+     "p.hqs-page__lead"
+    ],
+    "interaction": "tap health-search input, type \"COPD\", tap Search"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 336,
+    "fcp": 316,
+    "ttfb": 113.79999999981374,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 11,
+    "bytesTotal": 55104,
+    "bytesDoc": 19623,
+    "bytesJs": 8662,
+    "bytesImg": 23286,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 3533,
+    "lcpMin": 336,
+    "lcpMax": 404,
+    "ttfbMin": 110.5,
+    "ttfbMax": 137.5,
+    "lcpEls": [
+     "p.hqs-page__lead"
+    ],
+    "interaction": "tap health-search input, type \"COPD\", tap Search"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 336,
+    "fcp": 304,
+    "ttfb": 133.5,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 11,
+    "bytesTotal": 58438,
+    "bytesDoc": 19623,
+    "bytesJs": 8662,
+    "bytesImg": 26621,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 3532,
+    "lcpMin": 332,
+    "lcpMax": 380,
+    "ttfbMin": 116.8000000002794,
+    "ttfbMax": 133.70000000018626,
+    "lcpEls": [
+     "p.hqs-page__lead"
+    ],
+    "interaction": "tap health-search input, type \"COPD\", tap Search"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 344,
+    "fcp": 320,
+    "ttfb": 127.60000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 11,
+    "bytesTotal": 58439,
+    "bytesDoc": 19623,
+    "bytesJs": 8662,
+    "bytesImg": 26621,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 3533,
+    "lcpMin": 320,
+    "lcpMax": 356,
+    "ttfbMin": 120.09999999962747,
+    "ttfbMax": 207.60000000009313,
+    "lcpEls": [
+     "p.hqs-page__lead"
+    ],
+    "interaction": "tap health-search input, type \"COPD\", tap Search"
+   }
+  },
+  "/free-quote/": {
+   "360": {
+    "runs": 3,
+    "lcp": 616,
+    "fcp": 348,
+    "ttfb": 107.39999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 56,
+    "requests": 11,
+    "bytesTotal": 46984,
+    "bytesDoc": 20710,
+    "bytesJs": 21094,
+    "bytesImg": 4582,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 598,
+    "lcpMin": 600,
+    "lcpMax": 856,
+    "ttfbMin": 100.5,
+    "ttfbMax": 393.20000000018626,
+    "lcpEls": [
+     "h2#qf-s1.qf-q"
+    ],
+    "interaction": "tap quote funnel first choice (Male)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 632,
+    "fcp": 368,
+    "ttfb": 129.1999999997206,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 11,
+    "bytesTotal": 46979,
+    "bytesDoc": 20710,
+    "bytesJs": 21094,
+    "bytesImg": 4582,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 593,
+    "lcpMin": 620,
+    "lcpMax": 988,
+    "ttfbMin": 122.70000000018626,
+    "ttfbMax": 503.1999999997206,
+    "lcpEls": [
+     "h2#qf-s1.qf-q"
+    ],
+    "interaction": "tap quote funnel first choice (Male)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 616,
+    "fcp": 356,
+    "ttfb": 119,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 11,
+    "bytesTotal": 50634,
+    "bytesDoc": 20710,
+    "bytesJs": 21094,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 598,
+    "lcpMin": 600,
+    "lcpMax": 864,
+    "ttfbMin": 113.5,
+    "ttfbMax": 430.29999999981374,
+    "lcpEls": [
+     "h2#qf-s1.qf-q"
+    ],
+    "interaction": "tap quote funnel first choice (Male)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 676,
+    "fcp": 412,
+    "ttfb": 169.10000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 48,
+    "requests": 11,
+    "bytesTotal": 50634,
+    "bytesDoc": 20710,
+    "bytesJs": 21094,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 598,
+    "lcpMin": 672,
+    "lcpMax": 928,
+    "ttfbMin": 131.89999999990687,
+    "ttfbMax": 480.29999999981374,
+    "lcpEls": [
+     "h2#qf-s1.qf-q"
+    ],
+    "interaction": "tap quote funnel first choice (Male)"
+   }
+  },
+  "/reviews/": {
+   "360": {
+    "runs": 3,
+    "lcp": 372,
+    "fcp": 328,
+    "ttfb": 130.5,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 48,
+    "requests": 7,
+    "bytesTotal": 66956,
+    "bytesDoc": 50062,
+    "bytesJs": 8662,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 360,
+    "lcpMax": 584,
+    "ttfbMin": 120.10000000009313,
+    "ttfbMax": 414.20000000018626,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 408,
+    "fcp": 360,
+    "ttfb": 219.6999999997206,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 7,
+    "bytesTotal": 66956,
+    "bytesDoc": 50062,
+    "bytesJs": 8662,
+    "bytesImg": 8232,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 344,
+    "lcpMax": 676,
+    "ttfbMin": 138.5,
+    "ttfbMax": 480.20000000018626,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 328,
+    "ttfb": 139.10000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 7,
+    "bytesTotal": 70289,
+    "bytesDoc": 50062,
+    "bytesJs": 8662,
+    "bytesImg": 11565,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 332,
+    "lcpMax": 640,
+    "ttfbMin": 138.29999999981374,
+    "ttfbMax": 463.8000000002794,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 348,
+    "fcp": 320,
+    "ttfb": 139.89999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 7,
+    "bytesTotal": 70289,
+    "bytesDoc": 50062,
+    "bytesJs": 8662,
+    "bytesImg": 11565,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 340,
+    "lcpMax": 568,
+    "ttfbMin": 137.5,
+    "ttfbMax": 387.5,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/about/": {
+   "360": {
+    "runs": 3,
+    "lcp": 404,
+    "fcp": 404,
+    "ttfb": 142.3000000002794,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 8,
+    "bytesTotal": 94033,
+    "bytesDoc": 17792,
+    "bytesJs": 8662,
+    "bytesImg": 67579,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 348,
+    "lcpMax": 612,
+    "ttfbMin": 130.5,
+    "ttfbMax": 394.60000000009313,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 384,
+    "fcp": 384,
+    "ttfb": 133.10000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 8,
+    "bytesTotal": 94033,
+    "bytesDoc": 17792,
+    "bytesJs": 8662,
+    "bytesImg": 67579,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 368,
+    "lcpMax": 592,
+    "ttfbMin": 122.39999999990687,
+    "ttfbMax": 412.90000000037253,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 392,
+    "fcp": 364,
+    "ttfb": 171.90000000037253,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 32,
+    "requests": 8,
+    "bytesTotal": 97366,
+    "bytesDoc": 17792,
+    "bytesJs": 8662,
+    "bytesImg": 70912,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 376,
+    "lcpMax": 592,
+    "ttfbMin": 127.6999999997206,
+    "ttfbMax": 413.70000000018626,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 356,
+    "fcp": 328,
+    "ttfb": 142.10000000009313,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 8,
+    "bytesTotal": 97366,
+    "bytesDoc": 17792,
+    "bytesJs": 8662,
+    "bytesImg": 70912,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 356,
+    "lcpMax": 616,
+    "ttfbMin": 107.09999999962747,
+    "ttfbMax": 408.89999999990687,
+    "lcpEls": [
+     "p"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  },
+  "/burial-insurance-calculator/": {
+   "360": {
+    "runs": 3,
+    "lcp": 440,
+    "fcp": 340,
+    "ttfb": 115.89999999990687,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 54082,
+    "bytesDoc": 31207,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 420,
+    "lcpMax": 468,
+    "ttfbMin": 103.10000000009313,
+    "ttfbMax": 134.79999999981374,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "375": {
+    "runs": 3,
+    "lcp": 408,
+    "fcp": 380,
+    "ttfb": 127.39999999990687,
+    "cls": 0,
+    "tbt": 5,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 54082,
+    "bytesDoc": 31207,
+    "bytesJs": 11940,
+    "bytesImg": 10935,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 380,
+    "lcpMax": 464,
+    "ttfbMin": 119.20000000018626,
+    "ttfbMax": 127.39999999990687,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "390": {
+    "runs": 3,
+    "lcp": 464,
+    "fcp": 348,
+    "ttfb": 133.8000000002794,
+    "cls": 0,
+    "tbt": 23,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 57415,
+    "bytesDoc": 31207,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 444,
+    "lcpMax": 468,
+    "ttfbMin": 115.10000000009313,
+    "ttfbMax": 151.10000000009313,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   },
+   "430": {
+    "runs": 3,
+    "lcp": 404,
+    "fcp": 368,
+    "ttfb": 110.20000000018626,
+    "cls": 0,
+    "tbt": 0,
+    "inpProxy": 40,
+    "requests": 10,
+    "bytesTotal": 57415,
+    "bytesDoc": 31207,
+    "bytesJs": 11940,
+    "bytesImg": 14268,
+    "bytesCss": 0,
+    "bytesFont": 0,
+    "bytesOther": 0,
+    "lcpMin": 368,
+    "lcpMax": 420,
+    "ttfbMin": 105.29999999981374,
+    "ttfbMax": 138.3000000002794,
+    "lcpEls": [
+     "p.summary__text"
+    ],
+    "interaction": "tap Menu (.nav__toggle)"
+   }
+  }
+ },
+ "lighthouse": {
+  "/12-step-final-planning-guide/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1020.355,
+   "fcp": 990.855,
+   "tbt": 4.5,
+   "cls": 0,
+   "si": 990.855,
+   "runs": null
+  },
+  "/a-z-health/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1063.162,
+   "fcp": 1007.662,
+   "tbt": 30.5,
+   "cls": 0,
+   "si": 1015.4685627556493,
+   "runs": null
+  },
+  "/about/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 981.611,
+   "fcp": 964.611,
+   "tbt": 29.499999999999886,
+   "cls": 0,
+   "si": 964.611,
+   "runs": null
+  },
+  "/aetna-burial-insurance-review/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1126.701,
+   "fcp": 1008.701,
+   "tbt": 31,
+   "cls": 0,
+   "si": 1008.701,
+   "runs": null
+  },
+  "/burial-insurance-calculator/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1145.2930000000001,
+   "fcp": 1035.2930000000001,
+   "tbt": 40,
+   "cls": 0,
+   "si": 1035.2930000000001,
+   "runs": null
+  },
+  "/burial-insurance/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1112.77,
+   "fcp": 1017.77,
+   "tbt": 67.5,
+   "cls": 0,
+   "si": 1017.77,
+   "runs": null
+  },
+  "/burial-insurance/copd/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1009.403,
+   "fcp": 966.903,
+   "tbt": 18.5,
+   "cls": 0,
+   "si": 1005.3066666416344,
+   "runs": null
+  },
+  "/colonial-penn-burial-insurance-review/": {
+   "score": 0.99,
+   "perf": null,
+   "lcp": 1163.254,
+   "fcp": 1009.754,
+   "tbt": 127.99999999999989,
+   "cls": 0,
+   "si": 1009.754,
+   "runs": null
+  },
+  "/free-quote/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1092.9270000000001,
+   "fcp": 967.927,
+   "tbt": 0,
+   "cls": 0,
+   "si": 987.1643839998899,
+   "runs": null
+  },
+  "/funeral-cost-map/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 957.046,
+   "fcp": 926.546,
+   "tbt": 28,
+   "cls": 0.01455769934809756,
+   "si": 926.546,
+   "runs": null
+  },
+  "/": {
+   "score": 0.86,
+   "perf": null,
+   "lcp": 1676.961,
+   "fcp": 1299.961,
+   "tbt": 533,
+   "cls": 0,
+   "si": 1370.035317069575,
+   "runs": null
+  },
+  "/life-insurance-health-questions/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 964.389,
+   "fcp": 944.889,
+   "tbt": 2,
+   "cls": 0,
+   "si": 944.889,
+   "runs": null
+  },
+  "/reviews/": {
+   "score": 1,
+   "perf": null,
+   "lcp": 1161.088,
+   "fcp": 1130.588,
+   "tbt": 5.5,
+   "cls": 0,
+   "si": 1130.588,
+   "runs": null
+  }
+ },
+ "imageIssues": [
+  {
+   "path": "/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-mortgage-250000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 160,
+   "fileBytes": 31195,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": true,
+   "issues": [
+    "above-the-fold but loading=lazy"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-term-500000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 160,
+   "fileBytes": 30887,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 960px wide vs 160px needed (6.0x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/home/hero-beach-mobile.avif",
+   "fmt": "avif",
+   "realW": 720,
+   "neededW": 750,
+   "fileBytes": 81469,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 720px wide vs 750px needed"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-mortgage-250000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 160,
+   "fileBytes": 31195,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": true,
+   "issues": [
+    "above-the-fold but loading=lazy"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-term-500000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 160,
+   "fileBytes": 30887,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 960px wide vs 160px needed (6.0x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/home/hero-beach-mobile.avif",
+   "fmt": "avif",
+   "realW": 720,
+   "neededW": 1170,
+   "fileBytes": 81469,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 720px wide vs 1170px needed"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-mortgage-250000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 240,
+   "fileBytes": 31195,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": true,
+   "issues": [
+    "above-the-fold but loading=lazy"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-term-500000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 240,
+   "fileBytes": 30887,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 960px wide vs 240px needed (4.0x)"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/home/hero-beach-mobile.avif",
+   "fmt": "avif",
+   "realW": 720,
+   "neededW": 1290,
+   "fileBytes": 81469,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 720px wide vs 1290px needed"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-mortgage-250000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 240,
+   "fileBytes": 31195,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": true,
+   "issues": [
+    "above-the-fold but loading=lazy"
+   ]
+  },
+  {
+   "path": "/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/rate-examples/rate-term-500000-960.avif",
+   "fmt": "avif",
+   "realW": 960,
+   "neededW": 240,
+   "fileBytes": 30887,
+   "loading": "lazy",
+   "fetchpriority": "low",
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 960px wide vs 240px needed (4.0x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 360,
+   "src": "https://funeralfunds.com/wp-content/uploads/2026/01/COPD-Burial-Insurance-Image-1024x536.png",
+   "fmt": "png",
+   "realW": 1024,
+   "neededW": 656,
+   "fileBytes": 295789,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 1024px wide vs 656px needed (1.6x)",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 375,
+   "src": "https://funeralfunds.com/wp-content/uploads/2026/01/COPD-Burial-Insurance-Image-1024x536.png",
+   "fmt": "png",
+   "realW": 1024,
+   "neededW": 686,
+   "fileBytes": 295789,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 390,
+   "src": "https://funeralfunds.com/wp-content/uploads/2026/01/COPD-Burial-Insurance-Image-1024x536.png",
+   "fmt": "png",
+   "realW": 1024,
+   "neededW": 1074,
+   "fileBytes": 295789,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 1024px wide vs 1074px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 430,
+   "src": "https://funeralfunds.com/wp-content/uploads/2026/01/COPD-Burial-Insurance-Image-1024x536.png",
+   "fmt": "png",
+   "realW": 1024,
+   "neededW": 1194,
+   "fileBytes": 295789,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 1024px wide vs 1194px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/carriers/wall/family-benefit-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 320,
+   "fileBytes": 7781,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/carriers/wall/trinity-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 320,
+   "fileBytes": 5884,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/carriers/cvs-aetna-logo.png",
+   "fmt": "png",
+   "realW": 325,
+   "neededW": 320,
+   "fileBytes": 24600,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/carriers/wall/aflac.png",
+   "fmt": "png",
+   "realW": 104,
+   "neededW": 208,
+   "fileBytes": 1349,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 104px wide vs 208px needed",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/carriers/wall/gerber-life.png",
+   "fmt": "png",
+   "realW": 211,
+   "neededW": 64,
+   "fileBytes": 9422,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 211px wide vs 64px needed (3.3x)",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/carriers/wall/family-benefit-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 320,
+   "fileBytes": 7781,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/carriers/wall/trinity-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 320,
+   "fileBytes": 5884,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/carriers/cvs-aetna-logo.png",
+   "fmt": "png",
+   "realW": 325,
+   "neededW": 320,
+   "fileBytes": 24600,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/carriers/wall/aflac.png",
+   "fmt": "png",
+   "realW": 104,
+   "neededW": 208,
+   "fileBytes": 1349,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 104px wide vs 208px needed",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/carriers/wall/gerber-life.png",
+   "fmt": "png",
+   "realW": 211,
+   "neededW": 64,
+   "fileBytes": 9422,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 211px wide vs 64px needed (3.3x)",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/carriers/wall/family-benefit-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 480,
+   "fileBytes": 7781,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/carriers/wall/trinity-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 480,
+   "fileBytes": 5884,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/carriers/cvs-aetna-logo.png",
+   "fmt": "png",
+   "realW": 325,
+   "neededW": 480,
+   "fileBytes": 24600,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 325px wide vs 480px needed",
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/carriers/wall/aflac.png",
+   "fmt": "png",
+   "realW": 104,
+   "neededW": 312,
+   "fileBytes": 1349,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 104px wide vs 312px needed",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/carriers/wall/gerber-life.png",
+   "fmt": "png",
+   "realW": 211,
+   "neededW": 97,
+   "fileBytes": 9422,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 211px wide vs 97px needed (2.2x)",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/carriers/wall/family-benefit-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 480,
+   "fileBytes": 7781,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/carriers/wall/trinity-life.png",
+   "fmt": "png",
+   "realW": 480,
+   "neededW": 480,
+   "fileBytes": 5884,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/carriers/cvs-aetna-logo.png",
+   "fmt": "png",
+   "realW": 325,
+   "neededW": 480,
+   "fileBytes": 24600,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 325px wide vs 480px needed",
+    "no width/height attributes",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/carriers/wall/aflac.png",
+   "fmt": "png",
+   "realW": 104,
+   "neededW": 312,
+   "fileBytes": 1349,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 104px wide vs 312px needed",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/carriers/wall/gerber-life.png",
+   "fmt": "png",
+   "realW": 211,
+   "neededW": 97,
+   "fileBytes": 9422,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 211px wide vs 97px needed (2.2x)",
+    "no width/height attributes"
+   ]
+  },
+  {
+   "path": "/free-quote/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 408,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 408px needed (2.0x)"
+   ]
+  },
+  {
+   "path": "/free-quote/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 408,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 408px needed (2.0x)"
+   ]
+  },
+  {
+   "path": "/reviews/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/reviews/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/reviews/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 360,
+   "src": "https://funeralfunds.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png",
+   "fmt": "png",
+   "realW": 500,
+   "neededW": 600,
+   "fileBytes": 58622,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 500px wide vs 600px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 375,
+   "src": "https://funeralfunds.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png",
+   "fmt": "png",
+   "realW": 500,
+   "neededW": 600,
+   "fileBytes": 58622,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 500px wide vs 600px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 390,
+   "src": "https://funeralfunds.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png",
+   "fmt": "png",
+   "realW": 500,
+   "neededW": 900,
+   "fileBytes": 58622,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": false,
+   "issues": [
+    "undersized: file 500px wide vs 900px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/about/",
+   "width": 430,
+   "src": "https://funeralfunds.com/wp-content/uploads/2025/11/RANDY-CIRCLE-IMAGE-SMALL.png",
+   "fmt": "png",
+   "realW": 500,
+   "neededW": 900,
+   "fileBytes": 58622,
+   "loading": "eager",
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 500px wide vs 900px needed",
+    "legacy format png without avif/webp alternative"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 428,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 428px needed (1.9x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 360,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-800.webp",
+   "fmt": "webp",
+   "realW": 800,
+   "neededW": 458,
+   "fileBytes": 7522,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 800px wide vs 458px needed (1.7x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 375,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-240.avif",
+   "fmt": "avif",
+   "realW": 240,
+   "neededW": 152,
+   "fileBytes": 5353,
+   "loading": "lazy",
+   "fetchpriority": null,
+   "aboveFold": false,
+   "issues": [
+    "oversized: file 240px wide vs 152px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/logo/funeral-funds-wordmark-1200.webp",
+   "fmt": "webp",
+   "realW": 1200,
+   "neededW": 732,
+   "fileBytes": 10854,
+   "loading": null,
+   "fetchpriority": "high",
+   "aboveFold": true,
+   "issues": [
+    "oversized: file 1200px wide vs 732px needed (1.6x)"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 390,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 430,
+   "src": "https://funeralfunds.com/images/randy/randy-vandervaate-96.avif",
+   "fmt": "avif",
+   "realW": 96,
+   "neededW": 144,
+   "fileBytes": 1999,
+   "loading": "eager",
+   "fetchpriority": null,
+   "aboveFold": true,
+   "issues": [
+    "undersized: file 96px wide vs 144px needed"
+   ]
+  }
+ ],
+ "layout": [
+  {
+   "path": "/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 4,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 4,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 4,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 14,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/copd/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 15,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/aetna-burial-insurance-review/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 13,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 32,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 35,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 39,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/a-z-health/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 45,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 6,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/colonial-penn-burial-insurance-review/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 6,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 2,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 3,
+   "small48": 9,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 3,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/12-step-final-planning-guide/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 7,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 7,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 7,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 1,
+   "small48": 8,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/funeral-cost-map/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 9,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/life-insurance-health-questions/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 11,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/free-quote/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": null
+  },
+  {
+   "path": "/free-quote/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": null
+  },
+  {
+   "path": "/free-quote/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": null
+  },
+  {
+   "path": "/free-quote/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 5,
+   "menuOpensCloses": null
+  },
+  {
+   "path": "/reviews/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 3,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/reviews/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 3,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/reviews/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 3,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/reviews/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 3,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/about/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 10,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/about/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/about/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/about/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 12,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 360,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 15,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 375,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 15,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 390,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 16,
+   "menuOpensCloses": true
+  },
+  {
+   "path": "/burial-insurance-calculator/",
+   "width": 430,
+   "overflow": false,
+   "small24NonInlineNoSpacing": 0,
+   "small48": 17,
+   "menuOpensCloses": true
+  }
+ ],
+ "fieldData": {
+  "request": "GET https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Ffuneralfunds.com%2F&strategy=mobile&category=PERFORMANCE (no API key)",
+  "attempts": [
+   {
+    "when": "first attempt, session start",
+    "http": 429,
+    "error": {
+     "code": 429,
+     "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+     "errors": [
+      {
+       "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+       "domain": "global",
+       "reason": "rateLimitExceeded"
+      }
+     ],
+     "status": "RESOURCE_EXHAUSTED",
+     "details": [
+      {
+       "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+       "reason": "RATE_LIMIT_EXCEEDED",
+       "domain": "googleapis.com",
+       "metadata": {
+        "quota_limit_value": "0",
+        "service": "pagespeedonline.googleapis.com",
+        "quota_metric": "pagespeedonline.googleapis.com/default",
+        "consumer": "projects/583797351490",
+        "quota_unit": "1/d/{project}",
+        "quota_limit": "defaultPerDayPerProject",
+        "quota_location": "global"
+       }
+      },
+      {
+       "@type": "type.googleapis.com/google.rpc.Help",
+       "links": [
+        {
+         "description": "Request a higher quota limit.",
+         "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "when": "retry after lab runs",
+    "http": 429,
+    "error": {
+     "code": 429,
+     "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+     "errors": [
+      {
+       "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+       "domain": "global",
+       "reason": "rateLimitExceeded"
+      }
+     ],
+     "status": "RESOURCE_EXHAUSTED",
+     "details": [
+      {
+       "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+       "reason": "RATE_LIMIT_EXCEEDED",
+       "domain": "googleapis.com",
+       "metadata": {
+        "quota_limit_value": "0",
+        "service": "pagespeedonline.googleapis.com",
+        "consumer": "projects/583797351490",
+        "quota_location": "global",
+        "quota_unit": "1/d/{project}",
+        "quota_metric": "pagespeedonline.googleapis.com/default",
+        "quota_limit": "defaultPerDayPerProject"
+       }
+      },
+      {
+       "@type": "type.googleapis.com/google.rpc.Help",
+       "links": [
+        {
+         "description": "Request a higher quota limit.",
+         "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "fieldData": null,
+  "note": "No field (CrUX) data obtained; nothing substituted."
+ }
+}
