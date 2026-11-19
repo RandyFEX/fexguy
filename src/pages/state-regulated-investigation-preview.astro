@@ -128,12 +128,12 @@ const keyPoints = [
 
 <style>
   .inv { padding-block: var(--space-6); }
-  /* Wide page; text keeps the site's readable measure. */
-  .inv > :is(p, ul, ol, h1) { max-width: var(--prose-max); }
+  /* Text uses the full article width, like the mailer banners. */
+  .inv > h1 { max-width: var(--prose-max); }
   .inv h2 { margin-top: var(--space-12); }
   .inv__flag { font-size: 0.875rem; color: var(--color-text-muted); }
   .inv__summary { max-width: 52rem; margin-block: var(--space-4); }
-  .inv__intro { max-width: var(--prose-max); font-size: 1.0625rem; }
+  .inv__intro { font-size: 1.0625rem; }
   .inv__findings { display: grid; gap: var(--space-3); margin-block: var(--space-4); }
   .inv__finding { background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); }
   .inv__finding h3 { font-size: 1rem; margin: 0 0 var(--space-1); color: var(--color-primary); }
@@ -148,7 +148,6 @@ const keyPoints = [
   .inv__sources { font-size: 0.9375rem; }
   /* Mailer sections: a full-width green banner opens each one. */
   .inv__mailer { margin-top: var(--space-12); }
-  .inv__mailer > p { max-width: var(--prose-max); }
   .inv__banner { background: #173f35; border-radius: var(--radius); padding: var(--space-4) var(--space-6); margin-bottom: var(--space-4); }
   .inv__banner h2 { color: #ffffff; margin: 0; text-align: center; font-weight: 800; font-size: clamp(1.375rem, 1.1rem + 1.2vw, 2rem); line-height: 1.2; }
   .inv__mailer :global(.mdec__figure) { margin-top: var(--space-4); }
