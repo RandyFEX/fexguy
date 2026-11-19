@@ -27,15 +27,34 @@ const videos = [
 const video = (n: number) => videos[n - 1];
 ---
 
-<BaseLayout title={pageTitle('State-Regulated Life Insurance Investigation (Preview)')} description="Preview draft: a first-person investigation of state-regulated life insurance mailers." robots="noindex, nofollow" noindex>
+<BaseLayout title={pageTitle('State-Regulated Life Insurance: The Government Benefit Hoax (Preview)')} description="Preview draft: a first-person investigation of state-regulated life insurance mailers." robots="noindex, nofollow" noindex>
   <article class="container inv" data-page-type="utility" data-page-reason="Preview draft of the state-regulated life insurance investigation (not approved).">
     <p class="inv__flag">Preview draft for review only. Not linked from the site and not indexed by search engines. Video boxes show where each episode would sit; the scripts are in the project notes.</p>
 
-    <h1>I Investigated State-Regulated Life Insurance. What I Found Could Cost Seniors Thousands.</h1>
+    <h1>State-Regulated Life Insurance: The Government Benefit Hoax</h1>
     <p class="inv__byline">By Randy VanderVaate, licensed life insurance agent, Founder of Funeral Funds</p>
 
-    <p class="inv__lead">"State-regulated" is the phrase that makes these mailers work. It sounds as if your state is offering you something. It isn't. Every life insurance policy sold in the United States is state regulated, so those words tell you nothing about who's selling, what it costs or what your family would actually receive.</p>
-    <p>So I took one of these cards apart, claim by claim. I traced what happens to the reply, I read what state regulators documented about mailers like it, and I put verified prices next to its promises. <span class="inv__lab inv__lab--calc">My analysis</span> For a 65-year-old woman, paying for a guaranteed acceptance plan instead of a first-day plan she qualifies for can cost $4,602 over 10 years. And if she died of natural causes in the first two years, her family would receive a refund of her premiums plus an additional amount instead of the full benefit.</p>
+    <div class="inv__opening">
+      <p><strong>State-regulated life insurance. Sounds like some special government program, doesn't it?</strong></p>
+      <p>Well, I've got news for you.</p>
+      <p>There is no special government benefit hiding behind those words.</p>
+      <p>Every legitimate life insurance company selling policies in your state is regulated by the state. That's how insurance works.</p>
+      <p>So why are these companies mailing out official-looking cards talking about state-regulated programs and benefits up to $25,000?</p>
+      <p><strong>Because they want your information.</strong></p>
+      <p>Your name. Your address. Your phone number. Sometimes even your spouse's information.</p>
+      <p>And once you've handed it over, that information can become a sales lead.</p>
+      <p>That's the trick.</p>
+      <p>They're not sending you a check for $25,000. They're trying to get you to respond to an insurance advertisement.</p>
+      <p>And I think dressing up an ordinary insurance sales pitch to look like some special government benefit is a pretty lousy way to do business.</p>
+      <p>Now take a look at this actual mailer. I've numbered eight things on it that I think every senior ought to see.</p>
+    </div>
+
+    <MailerDecoder part="figure" />
+
+    <MailerDecoder part="claims" />
+
+    <p class="inv__video" role="note"><strong>Video {video(1).n} of 5: {video(1).title}</strong> <span>The card, line by line, in about a minute.</span></p>
+
     <p>Here's the short answer: these mailers generally advertise private life insurance, not a special government benefit. The companies sending them may sell your response to insurance agents, and the coverage you're offered depends on the agent, the available products, and your health. Before buying, compare your options. You may qualify for first-day coverage instead of a policy with a waiting period.</p>
 
     <aside class="inv__legend" aria-label="How to read this investigation">
@@ -45,15 +64,9 @@ const video = (n: number) => videos[n - 1];
     <h2>What "state-regulated" really means</h2>
     <p><span class="inv__lab inv__lab--doc">Documented</span> In the United States, insurance is regulated by the states. Every legitimate life insurance policy follows its state's insurance laws, so "state-regulated" describes every policy, not a special program. Your state doesn't sponsor, fund or give away private life insurance to its residents. The real government options are limited and specific: Social Security's one-time $255 death payment to an eligible spouse or child, VA burial benefits and VALife for eligible veterans, and a few others for particular groups.</p>
 
-    <MailerDecoder part="figure" />
-
     <h2>What happens when you send the card back</h2>
     <p><span class="inv__lab inv__lab--exp">From my experience</span> Some companies specialize in mailing these cards and selling the replies to insurance agents as leads. In my experience, an agent may pay around $40, $50 or $60 for each lead, or some other amount, depending on the lead program. The agent who buys your lead may represent one insurance company or several. What you're offered depends on which products that agent has, how well the agent knows underwriting (which companies accept which health conditions), and your own health and budget.</p>
     <p>Some agents may lean toward guaranteed-acceptance insurance because it doesn't ask health questions and can be easier to place. That isn't true of every agent, and you can't tell how an agent works, or how they're paid, just from the mailer. Guaranteed acceptance can be the right fit for someone who can't qualify for simplified issue coverage. But it generally costs more than first-day coverage for a comparable applicant, and it has a waiting period before the full benefit is paid for a death from natural causes.</p>
-
-    <MailerDecoder part="claims" />
-
-    <p class="inv__video" role="note"><strong>Video {video(1).n} of 5: {video(1).title}</strong> <span>The card, line by line, in about a minute.</span></p>
 
     <h2 id="regulators">What regulators found about mailers like this</h2>
     <p>I can't tell you who sent the card in this report, and I'm not going to guess. What I can show you is what state insurance regulators documented about other mailers that use the same style.</p>
@@ -133,7 +146,8 @@ const video = (n: number) => videos[n - 1];
   .inv { padding-block: var(--space-6); }
   /* Wide page; text keeps the site's readable measure. */
   .inv > :is(p, ul, ol, h1, h2, h3, aside) { max-width: var(--prose-max); }
-  .inv > .inv__lead { max-width: 46rem; }
+  .inv__opening { max-width: var(--prose-max); font-size: 1.125rem; }
+  .inv__opening p { margin-block: 0 var(--space-3); }
   .inv__flag { font-size: 0.875rem; color: var(--color-text-muted); }
   .inv__byline { color: var(--color-text-muted); }
   .inv__lead { font-size: 1.125rem; }

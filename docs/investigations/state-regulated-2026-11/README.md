@@ -15,7 +15,11 @@ api/impact-calculator.js, tests/impact/impact.test.js.
 
 ## 1. Headlines
 
-Leading (Randy's): **I Investigated State-Regulated Life Insurance. What I
+Current (Randy, V5.9 opening): **State-Regulated Life Insurance: The Government
+Benefit Hoax**, with his opening text verbatim, leading straight into the
+numbered mailer.
+
+Earlier leading headline: **I Investigated State-Regulated Life Insurance. What I
 Found Could Cost Seniors Thousands.**
 
 Alternatives:
