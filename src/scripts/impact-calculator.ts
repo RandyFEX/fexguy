@@ -153,7 +153,7 @@ function init(root: HTMLElement) {
             <p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
             <p class="imp__gut-sub">of food for one person</p>
             <div class="imp__gut-stack">
-              <p class="imp__gut-stat"><span class="imp__stat-n">${fmtWhole(im.meals)}</span> Meals</p>
+              <p class="imp__gut-stat"><span class="imp__stat-n imp__meals-n">${fmtWhole(im.meals)}</span> Meals</p>
               <p class="imp__gut-stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span> Calories</p>
             </div>
             <p class="imp__muted">Over ${period}. Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>

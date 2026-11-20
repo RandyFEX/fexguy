@@ -128,3 +128,5 @@
   .imp--gut .imp__food--gut { flex: 1; display: flex; flex-direction: column; justify-content: center; }
   .imp--gut .imp__chart { display: flex; flex-direction: column; height: 100%; }
 }
+/* Meals number: the exact midpoint of the Days and Calories numbers' sizes at every width. */
+.imp__gut-stat .imp__meals-n { font-size: calc((clamp(3.75rem, 2.8rem + 4vw, 5.5rem) + clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem)) / 2); }
