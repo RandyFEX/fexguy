@@ -150,7 +150,9 @@ const keyPoints = [
   .inv__card-cta { display: flex; flex-direction: column; gap: var(--space-1); }
   .inv__card-cta .btn { margin-top: auto; align-self: center; min-height: var(--tap-target); font-size: 0.9375rem; padding-inline: var(--space-4); display: inline-flex; align-items: center; }
   .inv__sources { font-size: 0.9375rem; }
-  #send-back { text-align: center; }
+  /* Every section heading in the article is centered across the full width,
+     including the calculator's title (its component is shared, so only here). */
+  .inv > h2, .inv :global(.imp__title) { text-align: center; }
   /* The homepage map tucks under the section above it there; here it starts below its heading. */
   .inv__map :global(.home-map) { margin-top: 0; padding-bottom: var(--space-4); }
   /* Mailer sections: a full-width green banner opens each one. */
