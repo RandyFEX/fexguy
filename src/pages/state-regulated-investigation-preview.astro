@@ -144,11 +144,11 @@ const keyPoints = [
   .inv__finding p { margin: 0; font-size: 0.9375rem; }
   /* Numbered cards in the regulator-card style: 1 / 2 / 4 across. */
   .inv__cards { list-style: none; padding: 0; margin-block: var(--space-4); display: grid; gap: var(--space-3); counter-reset: inv-card; max-width: none !important; }
-  .inv__cards li { counter-increment: inv-card; background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); font-size: 0.9375rem; }
-  .inv__cards li::before { content: counter(inv-card); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; margin-bottom: var(--space-2); }
+  .inv__cards li { counter-increment: inv-card; background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); font-size: 0.9375rem; text-align: center; }
+  .inv__cards li::before { content: counter(inv-card); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; margin: 0 auto var(--space-2); }
   .inv__cards li strong { display: block; color: var(--color-primary); }
   .inv__card-cta { display: flex; flex-direction: column; gap: var(--space-1); }
-  .inv__card-cta .btn { margin-top: auto; align-self: start; min-height: var(--tap-target); font-size: 0.9375rem; padding-inline: var(--space-4); display: inline-flex; align-items: center; }
+  .inv__card-cta .btn { margin-top: auto; align-self: center; min-height: var(--tap-target); font-size: 0.9375rem; padding-inline: var(--space-4); display: inline-flex; align-items: center; }
   .inv__sources { font-size: 0.9375rem; }
   /* The homepage map tucks under the section above it there; here it starts below its heading. */
   .inv__map :global(.home-map) { margin-top: 0; padding-bottom: var(--space-4); }
