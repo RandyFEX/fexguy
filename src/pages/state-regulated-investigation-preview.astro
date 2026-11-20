@@ -153,7 +153,9 @@ const keyPoints = [
   .inv__sources { font-size: 0.9375rem; }
   /* Every section heading in the article is centered across the full width,
      including the calculator's title (its component is shared, so only here). */
-  .inv > h2, .inv :global(.imp__title) { text-align: center; }
+  /* Fill each line before breaking: the site-wide text-wrap: balance (global.css)
+     would split a long heading into two short halves. */
+  .inv > h2, .inv :global(.imp__title), .inv :global(.home-map__title) { text-align: center; text-wrap: wrap; }
   /* The homepage map tucks under the section above it there; here it starts below its heading. */
   .inv__map :global(.home-map) { margin-top: 0; padding-bottom: var(--space-4); }
   /* Mailer sections: a full-width green banner opens each one. */
