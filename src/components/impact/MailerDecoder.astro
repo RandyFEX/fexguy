@@ -1,0 +1,232 @@
+---
+// The approved redacted 2026 "F-2" card with numbered markers on its eight
+// claims (PREVIEW, Randy's V5.8 assignment). Two parts:
+//   part="figure"  the large marked image (approved alt text and caption)
+//   part="claims"  the "8 misleading claims" heading and the numbered table
+// The "What it actually means" text is the approved wording from the
+// unpublished revision on claude/new-session-lhzc27. Short source notes keep
+// this card's own wording apart from what regulators found about OTHER
+// mailers; nothing ties this card to a sender or an insurer.
+interface Props { part: 'figure' | 'claims'; mailer?: '2026' | '2027' | 'notice'; /** false when the page's section banner carries the heading */ heading?: boolean }
+const { part, mailer = '2026', heading = true } = Astro.props;
+
+const src = '/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg';
+const alt = 'A 2026 mailer marked “F-2” with the headline “2026 Benefit Information for State Residents.” It says the reader may qualify for a state-regulated program to pay final expenses, offers a life insurance benefit up to $25,000 described as tax-free, offers a free Walmart gift card and Final Wishes Planning Guide, asks for a reply within 5 days, and has blank lines for name, home address, phone, age, spouse’s name and spouse’s age. Small print reads “Not affiliated with or endorsed by any government agency.”';
+
+// Marker positions, in percent of the 1496 x 627 image, beside each claim.
+const claims = [
+  { x: 16.3, y: 10.7, says: '“2026 Benefit Information for State Residents”', means: 'This letter is designed to look like an official notice, but it doesn’t even name any government agency.', source: 'Same headline style on other mailers: D.C. 2020, Nebraska 2022', other: true },
+  { x: 50.0, y: 20.7, says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'Every life insurance policy is “state regulated.” This card doesn’t provide any contact info or say who runs this “program.”', source: 'An Iowa mailer used the same wording: Iowa 2020', other: true },
+  { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: 'Up to $25,000 is being offered on this letter. You’d pay a monthly premium for it, and whether it covers “100%” depends on how much you buy, what your funeral actually costs, and when and how you die.', link: { text: 'funeral actually costs', href: '/how-much-does-a-funeral-cost/' } },
+  { x: 36.6, y: 35.3, says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary after a death is tax-free money in any state (IRS Publication 525). It’s not a special perk for “state residents” who get a letter like this.' },
+  { x: 12.4, y: 58.9, box: { x: 4.45, y: 43.4, w: 17.4, h: 5.6 }, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'This is the “bait” to get uneducated people to send this card back filled out with their personal information. It doesn’t say who is giving the “Free Walmart Gift Card” away or what you have to do to get it.' },
+  { x: 86.0, y: 29.6, says: '“Return this postage-paid card within 5 days!”', means: 'This is to pressure you into sending this in fast. There is no government benefit that will expire in 5 days. Your age impacts your rate, but that has nothing to do with the fake urgency date printed on this letter.' },
+  { x: 74.0, y: 64.2, says: 'Name, home address, phone “(Required for Prequalification)”, age, spouse’s name and age', means: 'You’re not getting “prequalification” for anything. Mailing the letter back doesn’t get you approved for any policy, or even make you eligible. You can only get approved through a real agent like Funeral Funds who submits your application to an insurance company for approval.', source: 'On other mailers, replies were used by or sold to insurers, and the mailer company was paid per lead: D.C. 2020, Iowa 2020', other: true },
+  { x: 53.4, y: 86.6, says: '“Not affiliated with or endorsed by any government agency.”', means: 'Finally, a non-deceptive statement. This is the most honest line on the letter (and the smallest print).' },
+];
+
+// The 2027 two-sided card (Randy, V6.5): his eight statements and
+// explanations, verbatim. Marker positions in percent of the 2000 x 667 image.
+const claims2027 = [
+  { x: 4.2, y: 9.0, says: '2027 Benefit Information for State Citizens Only', means: 'This is meant to sound like an official state notice in a brand new year, but the card is advertising life insurance. Being a resident of the state doesn’t make this a government benefit, as most life insurance products are available nationwide.' },
+  { x: 45.6, y: 27.6, says: 'State-Regulated Life Insurance Program', means: 'Life insurance companies are regulated in every state where they do business. This phrase doesn’t identify any special government-sponsored insurance program.' },
+  { x: 21.2, y: 43.6, says: 'Regardless of Your Medical Condition', means: 'This implies that coverage may be available regardless of your health or life expectancy. It also doesn’t tell you which policy you’d qualify for, what it would cost, or whether there would be a mandatory 2-year waiting period.', link: { text: 'mandatory 2-year waiting period', href: '/burial-insurance/life-insurance-with-no-waiting-period/' } },
+  { x: 2.0, y: 52.4, says: '100% of Funeral Expenses Up to $35,000', means: 'This $35,000 in coverage is an advertised maximum, not the money automatically available to every resident in the state. The amount you could get approved for depends on the coverage amount you purchase and the policy coverage limitations.' },
+  { x: 38.6, y: 62.2, says: 'Tax-Free for State Residents', means: 'Life insurance death benefits are  income-tax-free for these reduced coverage amounts. There is no special tax advantage status for state residents created by mailing this completed card back to the marketing agency senders.' },
+  { x: 3.1, y: 78.0, says: 'Entitled to No-Cost Information', means: 'It is not free, and you’re not entitled to free insurance or a government-funded benefit. Funeral Funds can help you get any information you need on this and much better plans.' },
+  { x: 1.5, y: 88.4, says: 'Return Within 5 Days', means: 'This card tries to create artificial urgency, but the truth is that any insurance benefits will not disappear after five days (unless your health changes). Don’t mistake a desperate and deceptive advertising deadline for an official government enrollment deadline.' },
+  { x: 76.6, y: 29.0, says: 'Personal and Spouse Information', means: 'If you’re trying to get one “lead” to sell life insurance to, why not try to get two? They are simply trying to get multiple people\'s information to potentially create another sales opportunity.' },
+];
+// The third card (Randy, V6.6): an "Important Benefit Notice" with a
+// respond-by date. Nine claims, each visible on the card; marker positions in
+// percent of the 1875 x 839 image.
+const claimsNotice = [
+  { x: 27.2, y: 8.3, says: '“IMPORTANT BENEFIT NOTICE”', means: 'The word “benefit” is meant to deceive you into thinking it comes from the state. This letter includes no sender information, and the small fine-print disclaimer indicates it isn’t from any government agency.' },
+  { x: 84.0, y: 7.7, says: '“2026 BENEFIT INFORMATION”', means: 'The current year is often included to make the letter look and feel like an official update. It’s just tricky marketing and is NOT a new benefit you are being offered.' },
+  { x: 2.7, y: 19.1, says: '“You may be eligible for a no-cost information package on a state-regulated life insurance program”', means: 'Read carefully! They are offering a  “free information package”, not free “state-regulated” life insurance. It’s just ordinary life insurance marketed in a deceptive or unclear manner' },
+  { x: 2.7, y: 24.8, says: '“that can help pay up to $35,000 for your final expenses”', means: '”Up to” 35,000 is what’s being offered in this marketing letter. To get an actual policy, you’ll have to pay a monthly premium for whatever coverage amount you buy, and the price will depend on your age, health, gender, and plan details.' },
+  { x: 93.6, y: 24.8, says: '“regardless of your current health” and “Regardless of Health”', means: '“Regardless of health” means a mandatory 2-year waiting period. What good life insurance agents would agree is the worst plan you could buy if you are in reasonably good health. A policy that doesn’t ask health questions will cost more, cover less, and have a waiting period for the most common causes of death.' },
+  { x: 5.3, y: 33.7, says: '“No Medical Exam”', means: '”No Medical Exam” still has health questions to qualify if the coverage starts from the 1st day. Policies that skip the health questions will always have a mandatory 2-year waiting period.' },
+  { x: 45.9, y: 46.5, says: '“Please Respond By Apr. 9, 2026”', means: 'An upcoming date makes it feel like you must respond or you’ll miss out on something important. The card shows no expiration date, and this wording is simply intended to get you to mail the letter back now instead of thinking about whether the offer is fake.' },
+  { x: 95.2, y: 45.6, says: 'Name, age, spouse’s name and age, street address (“No PO Boxes”) and phone (“With Area Code”)', means: 'They are often trying to get your info so they can call you or intrude on your privacy by stopping at your house. When they ask for a street address instead of a PO box, get prepared for someone to knock on your door for an unsolicited phone call.' },
+  { x: 36.3, y: 83.4, says: '“RESPOND TODAY” and “You may be missing benefits available to residents.”', means: '“Respond Today” is a fake urgency marketing technique designed to get you to take action now. “You may be missing benefits…” uses the same fake urgency marketing deception.' },
+];
+const M = mailer === 'notice'
+  ? { src: '/images/mailers/2026-important-benefit-notice-mailer.jpg', w: 1875, h: 839, claims: claimsNotice, id: 'mailer-claims-notice', titleId: 'mdec-title-notice', title: '9 Misleading Claims on This Life Insurance Letter & Explanations', Tag: 'h3' as const,
+      alt: 'A mailer headed “2026 Benefit Information” with a black “Important Benefit Notice” label. It says the reader may be eligible for a no-cost information package on a state-regulated life insurance program that can help pay up to $35,000 for final expenses, regardless of current health, and lists No Medical Exam, Regardless of Health and Same-Day Information. It says “Please Respond By Apr. 9, 2026,” “Respond Today” and “You may be missing benefits available to residents.” A form asks for name, age, spouse’s name and age, street address with no PO boxes, and phone with area code, above the line “Not affiliated with or endorsed by any government agency.” The address and barcodes are blurred.' }
+  : mailer === '2027'
+  ? { src: '/images/mailers/2027-state-citizens-benefit-mailer.jpg', w: 2000, h: 667, claims: claims2027, id: 'mailer-claims-2027', titleId: 'mdec-title-2027', title: '8 More Misleading Claims Worth a Closer Look', Tag: 'h3' as const,
+      alt: 'Both sides of a 2027 mailer. The front, headed “2027 Benefit Information for State Citizens Only,” says the reader may qualify for a state-regulated life insurance program to pay final expenses regardless of medical condition, even if turned down in the past; says the benefit could pay 100% of all funeral expenses up to $35,000 and is tax-free for state residents; says the reader is entitled to no-cost information as a resident of the state; and says to return the postage-paid card within 5 days. The reply side asks for name, home address, phone, age, spouse’s age and spouse’s name, and reads “Not affiliated with or endorsed by any government agency.” The recipient’s name and address are blurred.' }
+  : { src, w: 1496, h: 627, claims, id: 'mailer-claims', titleId: 'mdec-title', title: '8 Misleading Claims on This Life Insurance Mailer', Tag: 'h2' as const, alt };
+const Tag = M.Tag;
+---
+
+{part === 'figure' && (
+  <figure class="mdec__figure">
+    <div class={mailer !== '2026' ? 'mdec__pan' : undefined} tabindex={mailer !== '2026' ? 0 : undefined} role={mailer !== '2026' ? 'region' : undefined} aria-label={mailer === '2027' ? 'The 2027 mailer, both sides' : mailer === 'notice' ? 'The Important Benefit Notice mailer' : undefined}>
+    <div class="mdec__card" data-mdec-zoom role="button" tabindex="0" aria-haspopup="dialog" aria-label={`Enlarge the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer image`}>
+      <span class="mdec__enlarge" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg><span class="mdec__enlarge-desk">Click to enlarge</span><span class="mdec__enlarge-touch">Tap to enlarge</span></span>
+      <img src={M.src} width={M.w} height={M.h} decoding="async" loading={mailer === '2026' ? 'eager' : 'lazy'} alt={M.alt} />
+      {M.claims.map((c: { box?: { x: number; y: number; w: number; h: number } }) => c.box && <span class="mdec__box" style={`left:${c.box.x}%;top:${c.box.y}%;width:${c.box.w}%;height:${c.box.h}%`} aria-hidden="true"></span>)}
+      {M.claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
+    </div>
+    </div>
+    {mailer !== '2026' && <p class="mdec__hint">Swipe to see the whole card.</p>}
+    {mailer === '2026' && <figcaption>An example 2026 “Benefit Information” reply card marked “F-2.” I have covered the recipient’s details, postal codes and barcodes for privacy reasons.</figcaption>}
+  </figure>
+)}
+
+{part === 'claims' && (
+  <section class="mdec" id={M.id} aria-labelledby={heading ? M.titleId : undefined} aria-label={heading ? undefined : `${M.title}: the table`}>
+    {heading && <Tag id={M.titleId}>{M.title}</Tag>}
+      <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The ${M.claims.length} claims on the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer and what they mean`}>
+        <table class="mdec__table">
+          <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">WHAT THE MAILER SAYS</th><th scope="col">WHAT IT ACTUALLY MEANS</th></tr></thead>
+          <tbody>
+            {M.claims.map((c: { says: string; means: string; source?: string; other?: boolean; link?: { text: string; href: string } }, i: number) => (
+              <tr>
+                <td><span class="mdec__num">{i + 1}</span></td>
+                <th scope="row">{c.says}</th>
+                <td>{c.link ? (() => { const i = c.means.indexOf(c.link.text); return <>{c.means.slice(0, i)}<a href={c.link.href}>{c.link.text}</a>{c.means.slice(i + c.link.text.length)}</>; })() : c.means}{c.source && <span class="mdec__src">{c.other ? <a href="#regulators">{c.source}</a> : c.source}</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+  </section>
+)}
+
+<style>
+  .mdec__figure { margin: var(--space-6) 0 var(--space-4); }
+  .mdec__card { position: relative; container-type: inline-size; }
+  .mdec__card img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: var(--radius); }
+  .mdec__pin { position: absolute; transform: translate(-50%, -50%); width: clamp(1.125rem, 3.4cqi, 2rem); height: clamp(1.125rem, 3.4cqi, 2rem); border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: clamp(0.6875rem, 2cqi, 1.0625rem); display: grid; place-items: center; box-shadow: 0 0 0 2px #fff; line-height: 1; }
+  .mdec__box { position: absolute; border: 2px solid var(--color-cta); border-radius: 4px; pointer-events: none; }
+  .mdec__figure figcaption { color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--space-2); max-width: var(--prose-max); }
+  .mdec__scroll { overflow-x: auto; }
+  .mdec__hint { display: none; font-size: 0.8125rem; color: var(--color-text-muted); margin: var(--space-1) 0 0; }
+  @media (max-width: 47.99rem) {
+    .mdec__pan { overflow-x: auto; }
+    .mdec__pan .mdec__card { width: 46rem; }
+    .mdec__pan .mdec__card:has(img[width="1875"]) { width: 40rem; }
+    .mdec__hint { display: block; }
+  }
+  .mdec__table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .mdec__table th, .mdec__table td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: left; vertical-align: top; }
+  .mdec__table thead th { font-size: 0.875rem; background: var(--color-surface); }
+  .mdec :is(h2, h3) { margin-top: 0; }
+  /* V11.6: the claims-table headings (mailers 2 and 3) as dark green banners in capitals. */
+  .mdec h3 { background: #173f35; color: #ffffff; text-transform: uppercase; text-align: center; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); margin-bottom: var(--space-3); }
+  .mdec__table thead th:not(:first-child) { text-align: center; }
+  /* V11.7: dark green header row, white bold capitals, centered both ways. */
+  .mdec__table thead th { background: #173f35; color: #ffffff; font-weight: 800; text-transform: uppercase; vertical-align: middle; }
+  .mdec__table tbody th { font-weight: 700; width: 38%; }
+  .mdec__table td:first-child { width: 2rem; }
+  /* Claims rows: number, claim and explanation all centered on the row's height. */
+  .mdec__table tbody th, .mdec__table tbody td { vertical-align: middle; }
+  .mdec__num { vertical-align: middle; }
+  .mdec__num { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: 0.8125rem; }
+  .mdec__src { display: block; margin-top: var(--space-1); font-size: 0.8125rem; color: var(--color-text-muted); }
+</style>
+
+<style>
+  /* Enlarge hint: an overlay in the card's corner, so the image keeps its size and place. */
+  .mdec__card[data-mdec-zoom] { cursor: zoom-in; }
+  .mdec__card[data-mdec-zoom]:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+  .mdec__enlarge { position: absolute; right: 8px; bottom: 8px; z-index: 2; display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px; background: rgb(23 63 53 / 0.88); color: #fff; font-size: 0.75rem; font-weight: 700; line-height: 1.2; pointer-events: none; }
+  .mdec__enlarge-touch { display: none; }
+  @media (hover: none) { .mdec__enlarge-desk { display: none; } .mdec__enlarge-touch { display: inline; } }
+</style>
+
+<style is:global>
+  /* Mailer lightbox (V11.5). */
+  .mdec-lb { border: 0; padding: 0; margin: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; background: #0b0f0e; color: #fff; }
+  .mdec-lb::backdrop { background: #0b0f0e; }
+  .mdec-lb__bar { position: fixed; top: 0; right: 0; z-index: 2; display: flex; gap: 8px; padding: 10px; }
+  .mdec-lb__btn { min-width: 44px; min-height: 44px; border-radius: 999px; border: 2px solid #fff; background: #173f35; color: #fff; font: 700 1.25rem/1 system-ui, sans-serif; cursor: pointer; padding: 0 12px; }
+  .mdec-lb__btn:focus-visible { outline: 3px solid #ffeb3b; outline-offset: 2px; }
+  .mdec-lb__area { position: absolute; inset: 0; overflow: auto; overscroll-behavior: contain; touch-action: pan-x pan-y; display: grid; place-items: center; padding: 64px 16px 16px; box-sizing: border-box; }
+  .mdec-lb__area > .mdec__card { margin: auto; cursor: default; flex: none; }
+  .mdec-lb__area .mdec__enlarge { display: none; }
+  html.mdec-lb-open { overflow: hidden; }
+</style>
+
+<script>
+  // Mailer lightbox: a native <dialog> holding a copy of the card (image + its
+  // markers), sized to fit the screen; zoom with the buttons or by pinching,
+  // pan by scrolling/dragging. The markers are positioned in percent of the
+  // card, so they stay on their spots at every size.
+  let dlg: HTMLDialogElement | null = null;
+  let area: HTMLElement, holder: { card: HTMLElement; ratio: number; base: number } | null = null;
+  let zoom = 1, opener: HTMLElement | null = null, scrollY = 0;
+  const ZMIN = 1, ZMAX = 4;
+
+  const fitWidth = (ratio: number) => {
+    const w = window.innerWidth - 32, h = window.innerHeight - 80;
+    return Math.max(200, Math.min(w, h * ratio));
+  };
+  const apply = (z: number, cx?: number, cy?: number) => {
+    if (!holder) return;
+    const old = zoom; zoom = Math.min(ZMAX, Math.max(ZMIN, z));
+    const r = area.getBoundingClientRect();
+    const px = cx ?? r.left + r.width / 2, py = cy ?? r.top + r.height / 2;
+    const ox = area.scrollLeft + (px - r.left), oy = area.scrollTop + (py - r.top);
+    holder.card.style.width = `${holder.base * zoom}px`;
+    const k = zoom / old;
+    area.scrollLeft = ox * k - (px - r.left); area.scrollTop = oy * k - (py - r.top);
+  };
+
+  function build() {
+    dlg = document.createElement('dialog');
+    dlg.className = 'mdec-lb';
+    dlg.setAttribute('aria-label', 'Enlarged mailer image');
+    dlg.innerHTML = '<div class="mdec-lb__bar"><button type="button" class="mdec-lb__btn" data-z="-1" aria-label="Zoom out">&minus;</button><button type="button" class="mdec-lb__btn" data-z="1" aria-label="Zoom in">+</button><button type="button" class="mdec-lb__btn" data-close aria-label="Close enlarged image">&times; Close</button></div><div class="mdec-lb__area"></div>';
+    document.body.appendChild(dlg);
+    area = dlg.querySelector('.mdec-lb__area')!;
+    dlg.addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      if (t.closest('[data-close]') || t === dlg || t === area) { dlg!.close(); return; }
+      const zb = t.closest<HTMLElement>('[data-z]'); if (zb) apply(zoom * (zb.dataset.z === '1' ? 1.5 : 1 / 1.5));
+    });
+    dlg.addEventListener('close', () => {
+      document.documentElement.classList.remove('mdec-lb-open');
+      area.replaceChildren(); holder = null;
+      window.scrollTo(0, scrollY);
+      opener?.focus({ preventScroll: true });
+    });
+    // Pinch to zoom (two fingers); one finger pans the scroll area natively.
+    let d0 = 0, z0 = 1;
+    const dist = (t: TouchList) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    area.addEventListener('touchstart', (e) => { if (e.touches.length === 2) { d0 = dist(e.touches); z0 = zoom; } }, { passive: true });
+    area.addEventListener('touchmove', (e) => {
+      if (e.touches.length !== 2 || !d0) return;
+      e.preventDefault();
+      apply(z0 * (dist(e.touches) / d0), (e.touches[0].clientX + e.touches[1].clientX) / 2, (e.touches[0].clientY + e.touches[1].clientY) / 2);
+    }, { passive: false });
+    area.addEventListener('touchend', (e) => { if (e.touches.length < 2) d0 = 0; });
+    // Desktop: Ctrl/Cmd + wheel (trackpad pinch) zooms too.
+    area.addEventListener('wheel', (e) => { if (e.ctrlKey || e.metaKey) { e.preventDefault(); apply(zoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15), e.clientX, e.clientY); } }, { passive: false });
+    window.addEventListener('resize', () => { if (holder) { holder.base = fitWidth(holder.ratio); apply(zoom); } });
+  }
+
+  function open(card: HTMLElement) {
+    if (!dlg) build();
+    opener = card; scrollY = window.scrollY;
+    const img = card.querySelector('img')!;
+    const ratio = (Number(img.getAttribute('width')) || img.naturalWidth) / (Number(img.getAttribute('height')) || img.naturalHeight);
+    const copy = card.cloneNode(true) as HTMLElement;
+    copy.removeAttribute('role'); copy.removeAttribute('tabindex'); copy.removeAttribute('data-mdec-zoom'); copy.removeAttribute('aria-label'); copy.removeAttribute('aria-haspopup');
+    const ci = copy.querySelector('img')!; ci.loading = 'eager'; ci.removeAttribute('width'); ci.removeAttribute('height');
+    holder = { card: copy, ratio, base: fitWidth(ratio) };
+    zoom = 1; copy.style.width = `${holder.base}px`;
+    area.replaceChildren(copy);
+    document.documentElement.classList.add('mdec-lb-open');
+    dlg!.showModal();
+    dlg!.querySelector<HTMLElement>('[data-close]')!.focus({ preventScroll: true });
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-mdec-zoom]').forEach((card) => {
+    card.addEventListener('click', () => open(card));
+    card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); } });
+  });
+</script>

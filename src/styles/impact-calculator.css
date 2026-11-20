@@ -1,0 +1,190 @@
+/* Financial Impact Calculator (PREVIEW, V5.8). Uses the site's existing tokens. */
+.imp { border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-4); background: var(--color-bg); margin-block: var(--space-6); }
+.imp__head { display: grid; gap: var(--space-2); margin-bottom: var(--space-4); }
+.imp__head > p:not(.imp__profile) { margin: 0; max-width: var(--prose-max); }
+.imp__custom { margin-top: var(--space-4); border-top: 1px solid var(--color-border); padding-top: var(--space-4); display: grid; gap: var(--space-3); }
+.imp__custom .imp__form { margin-bottom: 0; }
+.imp__title { margin: 0; }
+.imp__profile { color: var(--color-text-muted); margin: 0; }
+.imp__toggle { justify-self: start; min-height: var(--tap-target); }
+.imp__loading, .imp__error { padding: var(--space-3) 0; margin: 0; }
+.imp__error { color: var(--color-error); }
+.imp__muted { color: var(--color-text-muted); font-size: 0.875rem; }
+.imp__legend { font-weight: 700; padding: 0; margin-bottom: var(--space-2); }
+
+/* Customization: one compact block. */
+.imp__form { display: grid; gap: var(--space-3); background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); }
+.imp__group { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2) var(--space-3); }
+.imp__group legend { font-weight: 700; padding: 0; margin-bottom: var(--space-1); }
+.imp__group label { display: grid; gap: var(--space-1); font-weight: 600; font-size: 0.9375rem; align-content: end; }
+.imp__group select, .imp__group input { min-height: var(--tap-target); font: inherit; padding: 0 var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-bg); width: 100%; max-width: 100%; box-sizing: border-box; }
+
+/* Main area: chart and impact side by side on wide screens. */
+.imp__main { display: grid; gap: var(--space-4); }
+.imp__chart, .imp__periods { border: 0; margin: 0; padding: 0; min-width: 0; }
+.imp__bars { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
+.imp__bar { display: grid; grid-template-columns: 1fr auto; gap: 0.125rem var(--space-2); align-items: center; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius); position: relative; }
+.imp__bar--base { border: 2px solid var(--color-primary); }
+.imp__bar--alt { cursor: pointer; grid-template-columns: auto 1fr auto; min-height: var(--tap-target); }
+.imp__bar--alt .imp__track, .imp__bar--alt .imp__meta { grid-column: 2 / -1; }
+.imp__bar--alt:hover { border-color: var(--color-text-muted); }
+.imp__bar--alt.is-selected, .imp__bar--alt:has(input:checked) { border: 2px solid var(--color-cta, var(--color-text)); background: var(--color-surface); }
+.imp__bar--alt input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.imp__bar--alt:has(input:focus-visible) { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+.imp__radio { grid-row: 1; width: 1.125rem; height: 1.125rem; border: 2px solid var(--color-text-muted); border-radius: 50%; box-sizing: border-box; }
+.imp__bar--alt.is-selected .imp__radio, .imp__bar--alt:has(input:checked) .imp__radio { border: 5px solid var(--color-cta, var(--color-text)); }
+.imp__tag { grid-column: 1 / -1; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.04em; }
+.imp__name { font-weight: 700; font-size: 0.9375rem; }
+.imp__price { font-size: 1.125rem; font-weight: 800; white-space: nowrap; }
+.imp__price small { font-size: 0.75rem; font-weight: 400; color: var(--color-text-muted); }
+.imp__track { grid-column: 1 / -1; height: 0.5rem; background: var(--color-surface); border-radius: 999px; overflow: hidden; }
+.imp__fill { display: block; height: 100%; background: var(--color-text-muted); border-radius: 999px; }
+.imp__bar--base .imp__fill { background: var(--color-primary); }
+.imp__bar--alt.is-selected .imp__fill, .imp__bar--alt:has(input:checked) .imp__fill { background: var(--color-cta, var(--color-text)); }
+.imp__meta { grid-column: 1 / -1; color: var(--color-text-muted); font-size: 0.8125rem; }
+.imp__bar--na { opacity: 0.75; }
+
+/* Impact: food first. */
+.imp__impact { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-4); min-width: 0; }
+.imp__periods { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
+.imp__periods .imp__legend { width: 100%; margin-bottom: 0; }
+.imp__period { position: relative; }
+.imp__period input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.imp__period span { display: inline-flex; align-items: center; min-height: var(--tap-target); padding: 0 var(--space-3); border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-bg); font-weight: 600; cursor: pointer; }
+.imp__period input:checked + span { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
+.imp__period input:focus-visible + span { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+.imp__intro { margin: 0 0 var(--space-2); font-weight: 600; }
+.imp__food { margin-top: var(--space-3); background: var(--color-primary); color: var(--color-on-primary); border-radius: var(--radius); padding: var(--space-4); border-top: 4px solid var(--home-gold, #b68a35); }
+.imp__food .imp__muted { color: #e8e4da; margin: var(--space-2) 0 0; }
+.imp__food-title { color: var(--color-on-primary); font-size: 1.125rem; margin: 0 0 var(--space-3); }
+.imp__days { margin: 0 0 var(--space-3); display: flex; align-items: center; gap: var(--space-3); }
+.imp__days-l { font-size: 1.125rem; font-weight: 700; line-height: 1.25; max-width: 9rem; }
+.imp__food-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); border-top: 1px solid rgb(255 255 255 / 0.25); padding-top: var(--space-3); }
+.imp__stat { margin: 0; display: grid; }
+.imp__stat-n { font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.25rem); font-weight: 800; line-height: 1.1; overflow-wrap: anywhere; }
+.imp__stat-l { font-size: 0.9375rem; font-weight: 600; }
+.imp__days-n { font-size: clamp(3rem, 2.2rem + 3.5vw, 4.5rem); font-weight: 800; line-height: 1; }
+.imp__money { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); margin: 0 0 var(--space-2); }
+.imp__money div { background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2) var(--space-3); }
+.imp__money-total { grid-column: 1 / -1; }
+.imp__money dt { font-size: 0.8125rem; color: var(--color-text-muted); }
+.imp__money dd { margin: 0; font-weight: 800; }
+.imp__money-total dd { font-size: 1.5rem; color: var(--color-primary); }
+.imp__headline { margin: 0; font-weight: 700; }
+.imp__share { margin: 0 0 var(--space-2); }
+.imp__note { font-size: 0.9375rem; margin: var(--space-2) 0 0; }
+
+/* Death benefit: secondary. */
+.imp__benefits { margin-top: var(--space-4); }
+.imp__sub { font-size: 1rem; margin: 0 0 var(--space-2); }
+.imp__scroll { overflow-x: auto; }
+.imp__table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.imp__table th, .imp__table td { border-bottom: 1px solid var(--color-border); padding: var(--space-1) var(--space-2); text-align: left; vertical-align: top; }
+.imp__method { margin-top: var(--space-3); }
+.imp__method summary { cursor: pointer; font-weight: 700; min-height: var(--tap-target); display: flex; align-items: center; }
+
+@media (min-width: 48rem) {
+  .imp { padding: var(--space-6); }
+  .imp__form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .imp__money { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .imp__money-total { grid-column: auto; }
+}
+@media (min-width: 60rem) {
+  .imp__main { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; }
+}
+.imp__form[hidden] { display: none; }
+/* The profile example sits under the plan list, smaller than the prices. */
+.imp__chart .imp__profile { font-size: 0.875rem; margin-top: var(--space-2); }
+/* Period buttons: clearly clickable; the active one is filled green. */
+.imp__period span { border: 2px solid var(--color-primary); color: var(--color-primary); }
+.imp__period span:hover { background: var(--color-surface); }
+.imp__period input:checked + span { box-shadow: 0 0 0 2px var(--home-gold, #b68a35); }
+/* "Trust your gut" display (V8.8): price lines, then the food panel. */
+.imp__cmp { margin: 0 0 var(--space-3); display: grid; gap: var(--space-2); }
+.imp__cmp div { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2) var(--space-3); }
+.imp__cmp dt { font-weight: 600; }
+.imp__cmp dt span { display: block; font-weight: 400; font-size: 0.8125rem; color: var(--color-text-muted); }
+.imp__cmp dd { margin: 0; font-weight: 800; white-space: nowrap; }
+.imp__cmp .imp__cmp-extra { background: var(--color-primary); color: var(--color-on-primary); border-left: 4px solid var(--home-gold, #b68a35); }
+.imp__cmp .imp__cmp-extra dd { font-size: 1.5rem; }
+.imp__food--gut { text-align: center; }
+.imp__gut-lead { margin: 0; font-size: 1.0625rem; }
+.imp__gut-days { margin: var(--space-1) 0 0; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem); font-weight: 800; line-height: 1; }
+.imp__gut-days .imp__days-n { font-size: clamp(3.75rem, 2.8rem + 4vw, 5.5rem); }
+.imp__gut-sub { margin: var(--space-1) 0 var(--space-3); font-size: 1.125rem; font-weight: 700; }
+.imp__food--gut .imp__food-pair { text-align: center; }
+.imp__cmp-wrap { margin-top: var(--space-3); background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); }
+.imp__cmp-wrap .imp__cmp { margin: 0; }
+.imp__gut-lead { font-weight: 700; font-size: 1.125rem; }
+.imp__gut-stack { display: grid; gap: var(--space-2); border-top: 1px solid rgb(255 255 255 / 0.25); padding-top: var(--space-3); }
+.imp__gut-stat { margin: 0; font-size: clamp(1.25rem, 1rem + 1vw, 1.625rem); font-weight: 700; line-height: 1.15; }
+.imp__gut-stat .imp__stat-n { font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem); font-weight: 800; }
+/* Equal-height columns on wide screens: the food panel takes up the extra
+   height and centers its results in it (no filler block). */
+@media (min-width: 60rem) {
+  .imp--gut .imp__main { align-items: stretch; }
+  .imp--gut .imp__impact { display: flex; flex-direction: column; }
+  .imp--gut [data-imp-out] { flex: 1; display: flex; flex-direction: column; }
+  .imp--gut .imp__food--gut { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .imp--gut .imp__chart { display: flex; flex-direction: column; height: 100%; }
+}
+/* Meals number: the exact midpoint of the Days and Calories numbers' sizes at every width. */
+.imp__gut-stat .imp__meals-n { font-size: calc((clamp(3.75rem, 2.8rem + 4vw, 5.5rem) + clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem)) / 2); }
+/* V9.3: one unified "Trust Your Gut" calculator. A single beige area holds
+   both columns; the left heading is a green bar; the right column is one
+   continuous green panel (period choice + food results). */
+.imp--gut .imp__main { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); }
+.imp--gut .imp__cmp-wrap { background: transparent; padding: 0; }
+.imp--gut .imp__chart > .imp__legend { display: block; width: 100%; box-sizing: border-box; background: var(--color-primary); color: var(--color-on-primary); text-align: center; padding: var(--space-2) var(--space-3); border-radius: var(--radius); margin-bottom: var(--space-3); }
+.imp--gut .imp__impact { background: var(--color-primary); color: var(--color-on-primary); border-top: 4px solid var(--home-gold, #b68a35); }
+.imp--gut .imp__impact .imp__muted { color: #e8e4da; }
+.imp--gut .imp__food--gut { background: transparent; border-top: 0; padding: var(--space-2) 0 0; margin-top: 0; }
+.imp--gut .imp__periods { justify-content: center; }
+.imp--gut .imp__periods .imp__legend { text-align: center; color: var(--color-on-primary); }
+/* Period buttons: white with a gold outline; the selected one is orange with
+   black text (bold at 19px, so it meets the large-text contrast minimum). */
+.imp--gut .imp__period span { background: #ffffff; color: var(--color-text); border: 2px solid var(--home-gold, #b68a35); font-size: 1.1875rem; font-weight: 700; }
+.imp--gut .imp__period span:hover { background: var(--color-surface); }
+.imp--gut .imp__period input:checked + span { background: var(--color-cta); color: #000000; border-color: var(--color-cta); box-shadow: 0 0 0 2px #ffffff; }
+.imp--gut .imp__period input:focus-visible + span { outline: 3px solid #ffffff; outline-offset: 2px; }
+.imp--gut .imp__note { color: var(--color-on-primary); }
+@media (min-width: 48rem) { .imp--gut .imp__main { padding: var(--space-4); } }
+/* Plan cards stay white on the beige area (as on the page before), so their bars' tracks stay visible. */
+.imp--gut .imp__bar, .imp--gut .imp__bar--alt.is-selected, .imp--gut .imp__bar--alt:has(input:checked) { background: #ffffff; }
+/* V9.4: gold instruction bar, yellow selected period, the monthly overpayment
+   line in the food panel, and a vertically centered Extra premium bar. */
+.imp--gut .imp__chart > .imp__legend { background: var(--home-gold, #b68a35); color: #000000; }
+.imp--gut .imp__period input:checked + span { background: #ffeb3b; color: #000000; border-color: #ffeb3b; }
+.imp--gut .imp__cmp .imp__cmp-extra { align-items: center; }
+.imp--gut .imp__overpay { margin: var(--space-3) 0 0; text-align: center; color: var(--color-on-primary); font-weight: 800; font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem); line-height: 1.15; }
+/* V9.5: the two lines above Days are supporting text (16px). */
+.imp--gut .imp__overpay { font-size: 1rem; font-weight: 700; line-height: 1.3; }
+.imp--gut .imp__gut-lead { font-size: 1rem; }
+/* V9.7: balanced food panel. The groups (intro lines, Days, Meals/Calories,
+   disclaimer) are spread evenly down the panel's height; spacing inside each
+   group stays tight. Meals and Calories are a little larger (Meals keeps the
+   midpoint of Days and Calories). */
+.imp--gut .imp__periods .imp__legend { margin-bottom: var(--space-3); }
+.imp--gut .imp__overpay { margin: 0; }
+.imp--gut .imp__gut-intro { display: grid; gap: var(--space-1); }
+.imp--gut .imp__gut-intro .imp__gut-lead { margin: 0; }
+.imp--gut .imp__gut-hero .imp__gut-days { margin: 0; }
+.imp--gut .imp__gut-hero .imp__gut-sub { margin: var(--space-1) 0 0; }
+.imp--gut .imp__food--gut { padding: 0; gap: var(--space-4); display: flex; flex-direction: column; }
+.imp--gut .imp__food--gut > .imp__muted { margin: 0; padding-top: var(--space-3); border-top: 1px solid rgb(255 255 255 / 0.25); }
+.imp--gut .imp__gut-stat .imp__stat-n { font-size: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.imp--gut .imp__gut-stat .imp__meals-n { font-size: calc((clamp(3.75rem, 2.8rem + 4vw, 5.5rem) + clamp(2rem, 1.5rem + 2vw, 3rem)) / 2); }
+.imp--gut [data-imp-out] > .imp__note { margin: var(--space-4) 0 0; }
+@media (min-width: 60rem) {
+  .imp--gut .imp__periods { margin-bottom: var(--space-4); }
+  .imp--gut .imp__food--gut { justify-content: space-evenly; gap: var(--space-3); }
+}
+.imp--gut .imp__periods { margin-bottom: var(--space-4); }
+/* V10.1: yellow, larger amounts in the two intro lines; a smaller gap between
+   "of food for one person" and Meals; dark green instruction bar with yellow text. */
+.imp--gut .imp__amt { color: #ffeb3b; font-size: 2em; font-weight: 800; line-height: 1; white-space: nowrap; vertical-align: -0.12em; }
+.imp--gut .imp__gut-stack { padding-top: var(--space-2); }
+.imp--gut .imp__gut-hero + .imp__gut-stack { margin-top: calc(var(--space-2) * -1); }
+.imp--gut .imp__chart > .imp__legend { background: var(--color-primary); color: #ffeb3b; }
+/* V10.2: the three food numbers in the same yellow as the amounts and the selected period; labels stay white. */
+.imp--gut .imp__gut-days .imp__days-n, .imp--gut .imp__gut-stat .imp__stat-n { color: #ffeb3b; }

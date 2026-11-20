@@ -202,7 +202,7 @@ Guaranteed Acceptance, But Delayed Coverage
 
 <p>A guaranteed acceptance policy with a built-in waiting period caused Linda to believe her family would receive full benefits right away.</p>
 
-<p>Linda was 69 and signed up after receiving a postcard in the mail that promised acceptance without health questions. She assumed that meant her children were protected the moment she was approved.</p>
+<p>Linda was 69 and signed up after receiving <a href="/burial-insurance/state-regulated-life-insurance/">a postcard in the mail</a> that promised acceptance without health questions. She assumed that meant her children were protected the moment she was approved.</p>
 
 <p>The missing detail was the 2-year waiting period for natural death. The policy refunded premiums during that window instead of paying the benefit, which defeated the reason she bought coverage in the first place.</p>
 

@@ -81,7 +81,7 @@ The postcard that promised “Immediate Protection”
 
 <p>Postcard offer, simplified whole life with instant approval, led Carol, age 72, to believe her family would receive full benefits right away.</p>
 
-<p>Carol filled out a brightly colored postcard that arrived in her mailbox after her neighbor passed. The card said no medical questions and implied coverage would start immediately, so she mailed it back without talking to anyone. A few weeks later, she had a policy in hand and assumed everything was done.</p>
+<p>Carol filled out <a href="/burial-insurance/state-regulated-life-insurance/">a brightly colored postcard that arrived in her mailbox</a> after her neighbor passed. The card said no medical questions and implied coverage would start immediately, so she mailed it back without talking to anyone. A few weeks later, she had a policy in hand and assumed everything was done.</p>
 
 <p>The issue was buried in the benefit schedule. The plan had a 24-month waiting period for natural death, which the postcard never mentioned. Carol thought accidental-only limits were rare, not the default for no-question policies.</p>
 

@@ -19,3 +19,6 @@ server/health-search/private/
 
 # Rate engine: producer-only carrier rate tables and the generated workbook (never committed; this repository is public)
 server/rates/private/
+
+# Google SEO documentation runtime cache (retrieved text; never committed)
+.cache/

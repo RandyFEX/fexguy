@@ -1103,11 +1103,6 @@ export const ARTICLE_PAGES: Record<string, ArticlePageConfig> = {
     quickAnswer:
       'Burial insurance scams usually come down to confusion and missing details. Watch for term insurance sold as burial insurance, which typically goes up in price every five years and may expire once you pass 80, and no-questions-asked policies that don’t cover natural causes of death from day one. Other scams include teaser rates, fake websites and agents, identity theft emails and calls, and agents who pocket your premiums. Never pay premiums in cash, and make sure the company receives your payments.',
   },
-  '/burial-insurance/state-regulated-life-insurance/': {
-    section: 'burialInsurance',
-    quickAnswer:
-      'These mailers generally advertise private life insurance, not a special government benefit. The companies sending them may sell your response to insurance agents, and the coverage you’re offered depends on the agent, the available products, and your health. Before buying, compare your options. You may qualify for first-day coverage instead of a policy with a waiting period.',
-  },
   // Rewritten T2/T-2 mailer guide (October 2026; Randy's sourced research).
   '/t2-life-insurance/': {
     section: 'burialInsurance', crumb: 'T2 Life Insurance Form',

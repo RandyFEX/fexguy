@@ -79,7 +79,7 @@ sidebar: true
 
 <p>The rating agency A.M. Best grades insurers based on their ability to pay future claims. A rating is an important check, but it is only one part of choosing the right policy.</p>
 
-<p>Unfortunately, many “state-regulated life insurance program” ads twist this oversight language to make it sound like there’s a special government benefit. There isn’t.</p>
+<p>Unfortunately, many <a href="/burial-insurance/state-regulated-life-insurance/">“state-regulated life insurance program” ads</a> twist this oversight language to make it sound like there’s a special government benefit. There isn’t.</p>
 
 <p>No federal or state-sponsored burial plan pays $10,000 or $20,000. These ads exist to mislead seniors into buying overpriced “guaranteed acceptance” plans that make more money for the marketer than they do for the client.</p>
 
