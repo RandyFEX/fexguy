@@ -116,6 +116,9 @@ const Tag = M.Tag;
   .mdec :is(h2, h3) { margin-top: 0; }
   .mdec__table tbody th { font-weight: 700; width: 38%; }
   .mdec__table td:first-child { width: 2rem; }
+  /* Claims rows: number, claim and explanation all centered on the row's height. */
+  .mdec__table tbody th, .mdec__table tbody td { vertical-align: middle; }
+  .mdec__num { vertical-align: middle; }
   .mdec__num { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: 0.8125rem; }
   .mdec__src { display: block; margin-top: var(--space-1); font-size: 0.8125rem; color: var(--color-text-muted); }
 </style>
