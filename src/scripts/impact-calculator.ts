@@ -43,7 +43,6 @@ function init(root: HTMLElement) {
   results.innerHTML = `<div class="imp__main">
       <fieldset class="imp__chart"><legend class="imp__legend">Choose one plan to compare with the lowest-priced option.</legend><div data-imp-chart></div></fieldset>
       <div class="imp__impact">
-        ${gut ? '<div data-imp-cmp aria-live="polite"></div>' : ''}
         <fieldset class="imp__periods"><legend class="imp__legend">${gut ? 'See the food equivalent over:' : 'Click to compare over:'}</legend>
           ${PERIODS.map((y: number) => `<label class="imp__period"><input type="radio" name="${yearsName}" value="${y}"${y === state.years ? ' checked' : ''} /><span>${y} ${y === 1 ? 'year' : 'years'}</span></label>`).join('')}
         </fieldset>
@@ -53,6 +52,9 @@ function init(root: HTMLElement) {
     <div data-imp-benefits></div>`;
   const chart = results.querySelector<HTMLElement>('[data-imp-chart]')!;
   chart.after(profileLine);
+  // "gut": the price summary sits under the plan choices (left column); the
+  // right column keeps the period choice and the food panel.
+  if (gut) profileLine.insertAdjacentHTML('afterend', '<div class="imp__cmp-wrap" data-imp-cmp aria-live="polite"></div>');
   const out = results.querySelector<HTMLElement>('[data-imp-out]')!;
   const cmp = results.querySelector<HTMLElement>('[data-imp-cmp]');
   const benefits = results.querySelector<HTMLElement>('[data-imp-benefits]')!;
