@@ -140,12 +140,12 @@ const keyPoints = [
 </BaseLayout>
 
 <style>
-  /* Same 80rem width as the site header on regular pages. */
-  .inv { padding-block: var(--space-6); max-width: 80rem; }
+  .inv { padding-block: var(--space-6); }
   /* Text uses the full article width, like the mailer banners. */
+  .inv > h1 { max-width: var(--prose-max); }
   .inv h2 { margin-top: var(--space-12); }
   .inv__flag { font-size: 0.875rem; color: var(--color-text-muted); }
-  .inv__summary { margin-block: var(--space-4); }
+  .inv__summary { max-width: 52rem; margin-block: var(--space-4); }
   .inv__intro { font-size: 1.0625rem; }
   .inv__findings { display: grid; gap: var(--space-3); margin-block: var(--space-4); }
   .inv__finding { background: var(--color-surface); border-radius: var(--radius); border-left: 4px solid var(--home-gold, #b68a35); padding: var(--space-3) var(--space-4); }
