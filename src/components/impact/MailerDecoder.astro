@@ -64,7 +64,8 @@ const Tag = M.Tag;
 {part === 'figure' && (
   <figure class="mdec__figure">
     <div class={mailer !== '2026' ? 'mdec__pan' : undefined} tabindex={mailer !== '2026' ? 0 : undefined} role={mailer !== '2026' ? 'region' : undefined} aria-label={mailer === '2027' ? 'The 2027 mailer, both sides' : mailer === 'notice' ? 'The Important Benefit Notice mailer' : undefined}>
-    <div class="mdec__card">
+    <div class="mdec__card" data-mdec-zoom role="button" tabindex="0" aria-haspopup="dialog" aria-label={`Enlarge the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer image`}>
+      <span class="mdec__enlarge" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg><span class="mdec__enlarge-desk">Click to enlarge</span><span class="mdec__enlarge-touch">Tap to enlarge</span></span>
       <img src={M.src} width={M.w} height={M.h} decoding="async" loading={mailer === '2026' ? 'eager' : 'lazy'} alt={M.alt} />
       {M.claims.map((c: { box?: { x: number; y: number; w: number; h: number } }) => c.box && <span class="mdec__box" style={`left:${c.box.x}%;top:${c.box.y}%;width:${c.box.w}%;height:${c.box.h}%`} aria-hidden="true"></span>)}
       {M.claims.map((c, i) => <span class="mdec__pin" style={`left:${c.x}%;top:${c.y}%`} aria-hidden="true">{i + 1}</span>)}
@@ -122,3 +123,105 @@ const Tag = M.Tag;
   .mdec__num { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--color-cta); color: var(--color-on-cta); font-weight: 800; font-size: 0.8125rem; }
   .mdec__src { display: block; margin-top: var(--space-1); font-size: 0.8125rem; color: var(--color-text-muted); }
 </style>
+
+<style>
+  /* Enlarge hint: an overlay in the card's corner, so the image keeps its size and place. */
+  .mdec__card[data-mdec-zoom] { cursor: zoom-in; }
+  .mdec__card[data-mdec-zoom]:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+  .mdec__enlarge { position: absolute; right: 8px; bottom: 8px; z-index: 2; display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px; background: rgb(23 63 53 / 0.88); color: #fff; font-size: 0.75rem; font-weight: 700; line-height: 1.2; pointer-events: none; }
+  .mdec__enlarge-touch { display: none; }
+  @media (hover: none) { .mdec__enlarge-desk { display: none; } .mdec__enlarge-touch { display: inline; } }
+</style>
+
+<style is:global>
+  /* Mailer lightbox (V11.5). */
+  .mdec-lb { border: 0; padding: 0; margin: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; background: #0b0f0e; color: #fff; }
+  .mdec-lb::backdrop { background: #0b0f0e; }
+  .mdec-lb__bar { position: fixed; top: 0; right: 0; z-index: 2; display: flex; gap: 8px; padding: 10px; }
+  .mdec-lb__btn { min-width: 44px; min-height: 44px; border-radius: 999px; border: 2px solid #fff; background: #173f35; color: #fff; font: 700 1.25rem/1 system-ui, sans-serif; cursor: pointer; padding: 0 12px; }
+  .mdec-lb__btn:focus-visible { outline: 3px solid #ffeb3b; outline-offset: 2px; }
+  .mdec-lb__area { position: absolute; inset: 0; overflow: auto; overscroll-behavior: contain; touch-action: pan-x pan-y; display: grid; place-items: center; padding: 64px 16px 16px; box-sizing: border-box; }
+  .mdec-lb__area > .mdec__card { margin: auto; cursor: default; flex: none; }
+  .mdec-lb__area .mdec__enlarge { display: none; }
+  html.mdec-lb-open { overflow: hidden; }
+</style>
+
+<script>
+  // Mailer lightbox: a native <dialog> holding a copy of the card (image + its
+  // markers), sized to fit the screen; zoom with the buttons or by pinching,
+  // pan by scrolling/dragging. The markers are positioned in percent of the
+  // card, so they stay on their spots at every size.
+  let dlg: HTMLDialogElement | null = null;
+  let area: HTMLElement, holder: { card: HTMLElement; ratio: number; base: number } | null = null;
+  let zoom = 1, opener: HTMLElement | null = null, scrollY = 0;
+  const ZMIN = 1, ZMAX = 4;
+
+  const fitWidth = (ratio: number) => {
+    const w = window.innerWidth - 32, h = window.innerHeight - 80;
+    return Math.max(200, Math.min(w, h * ratio));
+  };
+  const apply = (z: number, cx?: number, cy?: number) => {
+    if (!holder) return;
+    const old = zoom; zoom = Math.min(ZMAX, Math.max(ZMIN, z));
+    const r = area.getBoundingClientRect();
+    const px = cx ?? r.left + r.width / 2, py = cy ?? r.top + r.height / 2;
+    const ox = area.scrollLeft + (px - r.left), oy = area.scrollTop + (py - r.top);
+    holder.card.style.width = `${holder.base * zoom}px`;
+    const k = zoom / old;
+    area.scrollLeft = ox * k - (px - r.left); area.scrollTop = oy * k - (py - r.top);
+  };
+
+  function build() {
+    dlg = document.createElement('dialog');
+    dlg.className = 'mdec-lb';
+    dlg.setAttribute('aria-label', 'Enlarged mailer image');
+    dlg.innerHTML = '<div class="mdec-lb__bar"><button type="button" class="mdec-lb__btn" data-z="-1" aria-label="Zoom out">&minus;</button><button type="button" class="mdec-lb__btn" data-z="1" aria-label="Zoom in">+</button><button type="button" class="mdec-lb__btn" data-close aria-label="Close enlarged image">&times; Close</button></div><div class="mdec-lb__area"></div>';
+    document.body.appendChild(dlg);
+    area = dlg.querySelector('.mdec-lb__area')!;
+    dlg.addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      if (t.closest('[data-close]') || t === dlg || t === area) { dlg!.close(); return; }
+      const zb = t.closest<HTMLElement>('[data-z]'); if (zb) apply(zoom * (zb.dataset.z === '1' ? 1.5 : 1 / 1.5));
+    });
+    dlg.addEventListener('close', () => {
+      document.documentElement.classList.remove('mdec-lb-open');
+      area.replaceChildren(); holder = null;
+      window.scrollTo(0, scrollY);
+      opener?.focus({ preventScroll: true });
+    });
+    // Pinch to zoom (two fingers); one finger pans the scroll area natively.
+    let d0 = 0, z0 = 1;
+    const dist = (t: TouchList) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    area.addEventListener('touchstart', (e) => { if (e.touches.length === 2) { d0 = dist(e.touches); z0 = zoom; } }, { passive: true });
+    area.addEventListener('touchmove', (e) => {
+      if (e.touches.length !== 2 || !d0) return;
+      e.preventDefault();
+      apply(z0 * (dist(e.touches) / d0), (e.touches[0].clientX + e.touches[1].clientX) / 2, (e.touches[0].clientY + e.touches[1].clientY) / 2);
+    }, { passive: false });
+    area.addEventListener('touchend', (e) => { if (e.touches.length < 2) d0 = 0; });
+    // Desktop: Ctrl/Cmd + wheel (trackpad pinch) zooms too.
+    area.addEventListener('wheel', (e) => { if (e.ctrlKey || e.metaKey) { e.preventDefault(); apply(zoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15), e.clientX, e.clientY); } }, { passive: false });
+    window.addEventListener('resize', () => { if (holder) { holder.base = fitWidth(holder.ratio); apply(zoom); } });
+  }
+
+  function open(card: HTMLElement) {
+    if (!dlg) build();
+    opener = card; scrollY = window.scrollY;
+    const img = card.querySelector('img')!;
+    const ratio = (Number(img.getAttribute('width')) || img.naturalWidth) / (Number(img.getAttribute('height')) || img.naturalHeight);
+    const copy = card.cloneNode(true) as HTMLElement;
+    copy.removeAttribute('role'); copy.removeAttribute('tabindex'); copy.removeAttribute('data-mdec-zoom'); copy.removeAttribute('aria-label'); copy.removeAttribute('aria-haspopup');
+    const ci = copy.querySelector('img')!; ci.loading = 'eager'; ci.removeAttribute('width'); ci.removeAttribute('height');
+    holder = { card: copy, ratio, base: fitWidth(ratio) };
+    zoom = 1; copy.style.width = `${holder.base}px`;
+    area.replaceChildren(copy);
+    document.documentElement.classList.add('mdec-lb-open');
+    dlg!.showModal();
+    dlg!.querySelector<HTMLElement>('[data-close]')!.focus({ preventScroll: true });
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-mdec-zoom]').forEach((card) => {
+    card.addEventListener('click', () => open(card));
+    card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); } });
+  });
+</script>
