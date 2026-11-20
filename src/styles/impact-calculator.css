@@ -151,3 +151,9 @@
 @media (min-width: 48rem) { .imp--gut .imp__main { padding: var(--space-4); } }
 /* Plan cards stay white on the beige area (as on the page before), so their bars' tracks stay visible. */
 .imp--gut .imp__bar, .imp--gut .imp__bar--alt.is-selected, .imp--gut .imp__bar--alt:has(input:checked) { background: #ffffff; }
+/* V9.4: gold instruction bar, yellow selected period, the monthly overpayment
+   line in the food panel, and a vertically centered Extra premium bar. */
+.imp--gut .imp__chart > .imp__legend { background: var(--home-gold, #b68a35); color: #000000; }
+.imp--gut .imp__period input:checked + span { background: #ffeb3b; color: #000000; border-color: #ffeb3b; }
+.imp--gut .imp__cmp .imp__cmp-extra { align-items: center; }
+.imp--gut .imp__overpay { margin: var(--space-3) 0 0; text-align: center; color: var(--color-on-primary); font-weight: 800; font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem); line-height: 1.15; }
