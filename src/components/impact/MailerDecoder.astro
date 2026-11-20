@@ -17,7 +17,7 @@ const alt = 'A 2026 mailer marked “F-2” with the headline “2026 Benefit In
 const claims = [
   { x: 16.3, y: 10.7, says: '“2026 Benefit Information for State Residents”', means: 'This letter is designed to look like an official notice, but it doesn’t even name any government agency.', source: 'Same headline style on other mailers: D.C. 2020, Nebraska 2022', other: true },
   { x: 50.0, y: 20.7, says: '“You may qualify for a state-regulated program to pay for your final expenses.”', means: 'Every life insurance policy is “state regulated.” This card doesn’t provide any contact info or say who runs this “program.”', source: 'An Iowa mailer used the same wording: Iowa 2020', other: true },
-  { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: 'Up to $25,000 is being offered on this letter. You’d pay a monthly premium for it, and whether it covers “100%” depends on how much you buy, what your funeral actually costs, and when and how you die.' },
+  { x: 51.7, y: 31.3, says: '“This life insurance benefit will pay for 100% of all your funeral and final expenses, up to $25,000.”', means: 'Up to $25,000 is being offered on this letter. You’d pay a monthly premium for it, and whether it covers “100%” depends on how much you buy, what your funeral actually costs, and when and how you die.', link: { text: 'funeral actually costs', href: '/how-much-does-a-funeral-cost/' } },
   { x: 36.6, y: 35.3, says: '“This payment is tax-free for state residents.”', means: 'Life insurance paid to a beneficiary after a death is tax-free money in any state (IRS Publication 525). It’s not a special perk for “state residents” who get a letter like this.' },
   { x: 12.4, y: 58.9, box: { x: 4.45, y: 43.4, w: 17.4, h: 5.6 }, says: '“FREE WALMART GIFT CARD and FINAL WISHES PLANNING GUIDE”', means: 'This is the “bait” to get uneducated people to send this card back filled out with their personal information. It doesn’t say who is giving the “Free Walmart Gift Card” away or what you have to do to get it.' },
   { x: 86.0, y: 29.6, says: '“Return this postage-paid card within 5 days!”', means: 'This is to pressure you into sending this in fast. There is no government benefit that will expire in 5 days. Your age impacts your rate, but that has nothing to do with the fake urgency date printed on this letter.' },
@@ -30,7 +30,7 @@ const claims = [
 const claims2027 = [
   { x: 4.2, y: 9.0, says: '2027 Benefit Information for State Citizens Only', means: 'This is meant to sound like an official state notice in a brand new year, but the card is advertising life insurance. Being a resident of the state doesn’t make this a government benefit, as most life insurance products are available nationwide.' },
   { x: 45.6, y: 27.6, says: 'State-Regulated Life Insurance Program', means: 'Life insurance companies are regulated in every state where they do business. This phrase doesn’t identify any special government-sponsored insurance program.' },
-  { x: 21.2, y: 43.6, says: 'Regardless of Your Medical Condition', means: 'This implies that coverage may be available regardless of your health or life expectancy. It also doesn’t tell you which policy you’d qualify for, what it would cost, or whether there would be a mandatory 2-year waiting period.' },
+  { x: 21.2, y: 43.6, says: 'Regardless of Your Medical Condition', means: 'This implies that coverage may be available regardless of your health or life expectancy. It also doesn’t tell you which policy you’d qualify for, what it would cost, or whether there would be a mandatory 2-year waiting period.', link: { text: 'mandatory 2-year waiting period', href: '/burial-insurance/life-insurance-with-no-waiting-period/' } },
   { x: 2.0, y: 52.4, says: '100% of Funeral Expenses Up to $35,000', means: 'This $35,000 in coverage is an advertised maximum, not the money automatically available to every resident in the state. The amount you could get approved for depends on the coverage amount you purchase and the policy coverage limitations.' },
   { x: 38.6, y: 62.2, says: 'Tax-Free for State Residents', means: 'Life insurance death benefits are  income-tax-free for these reduced coverage amounts. There is no special tax advantage status for state residents created by mailing this completed card back to the marketing agency senders.' },
   { x: 3.1, y: 78.0, says: 'Entitled to No-Cost Information', means: 'It is not free, and you’re not entitled to free insurance or a government-funded benefit. Funeral Funds can help you get any information you need on this and much better plans.' },
@@ -83,11 +83,11 @@ const Tag = M.Tag;
         <table class="mdec__table">
           <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">WHAT THE MAILER SAYS</th><th scope="col">WHAT IT ACTUALLY MEANS</th></tr></thead>
           <tbody>
-            {M.claims.map((c: { says: string; means: string; source?: string; other?: boolean }, i: number) => (
+            {M.claims.map((c: { says: string; means: string; source?: string; other?: boolean; link?: { text: string; href: string } }, i: number) => (
               <tr>
                 <td><span class="mdec__num">{i + 1}</span></td>
                 <th scope="row">{c.says}</th>
-                <td>{c.means}{c.source && <span class="mdec__src">{c.other ? <a href="#regulators">{c.source}</a> : c.source}</span>}</td>
+                <td>{c.link ? (() => { const i = c.means.indexOf(c.link.text); return <>{c.means.slice(0, i)}<a href={c.link.href}>{c.link.text}</a>{c.means.slice(i + c.link.text.length)}</>; })() : c.means}{c.source && <span class="mdec__src">{c.other ? <a href="#regulators">{c.source}</a> : c.source}</span>}</td>
               </tr>
             ))}
           </tbody>

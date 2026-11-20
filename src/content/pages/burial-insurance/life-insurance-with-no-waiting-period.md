@@ -90,7 +90,7 @@ sidebar: true
 
 <h3>
 💡
-The $9.95 mailer that wasn’t insurance
+<a href="/burial-insurance/state-regulated-life-insurance/">The $9.95 mailer that wasn’t insurance</a>
 </h3>
 
 <p>Colonial Penn guaranteed-acceptance coverage implied immediate protection, resulted in a 2-year delay for natural death, and led Linda to believe her family was fully covered.</p>

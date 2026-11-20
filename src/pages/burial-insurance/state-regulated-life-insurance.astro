@@ -1,0 +1,45 @@
+---
+// The state-regulated life insurance investigation at its established URL
+// (Randy, November 2026, V12.4: it replaced the migrated article here).
+// Indexable, self-canonical, in the sitemap; Article + BreadcrumbList JSON-LD
+// from the shared article schema. The URL's approved description and original
+// publication date are kept from its migrated metadata.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StateRegulatedInvestigation from '@/components/investigation/StateRegulatedInvestigation.astro';
+import { INVESTIGATION } from '@/config/investigation';
+import { SECTIONS } from '@/lib/article/config';
+import { articleGraph, absoluteUrl } from '@/lib/seo/schema';
+import { pageTitle } from '@/lib/seo/meta';
+import { site } from '@/config/site';
+
+const url = absoluteUrl(INVESTIGATION.path);
+const title = pageTitle(INVESTIGATION.h1);
+const image = { url: absoluteUrl(INVESTIGATION.image.path), width: INVESTIGATION.image.width, height: INVESTIGATION.image.height };
+const headMeta = [
+  { property: 'og:locale', content: 'en_US' },
+  { property: 'og:type', content: 'article' },
+  { property: 'og:site_name', content: site.name },
+  { property: 'og:title', content: title },
+  { property: 'og:description', content: INVESTIGATION.description },
+  { property: 'og:url', content: url },
+  { property: 'og:image', content: image.url },
+  { property: 'og:image:width', content: String(image.width) },
+  { property: 'og:image:height', content: String(image.height) },
+  { property: 'article:published_time', content: INVESTIGATION.published },
+  { name: 'twitter:card', content: 'summary_large_image' },
+  { name: 'twitter:title', content: title },
+  { name: 'twitter:description', content: INVESTIGATION.description },
+  { name: 'twitter:image', content: image.url },
+];
+const jsonLd = [articleGraph({
+  url,
+  headline: INVESTIGATION.h1,
+  crumbs: [{ label: 'Home', href: '/' }, SECTIONS.burialInsurance, { label: INVESTIGATION.h1 }],
+  dates: { published: INVESTIGATION.published },
+  image,
+})];
+---
+
+<BaseLayout title={title} description={INVESTIGATION.description} robots="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" canonical={INVESTIGATION.path} headMeta={headMeta} jsonLd={jsonLd}>
+  <StateRegulatedInvestigation />
+</BaseLayout>
