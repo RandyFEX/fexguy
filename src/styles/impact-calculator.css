@@ -186,3 +186,5 @@
 .imp--gut .imp__gut-stack { padding-top: var(--space-2); }
 .imp--gut .imp__gut-hero + .imp__gut-stack { margin-top: calc(var(--space-2) * -1); }
 .imp--gut .imp__chart > .imp__legend { background: var(--color-primary); color: #ffeb3b; }
+/* V10.2: the three food numbers in the same yellow as the amounts and the selected period; labels stay white. */
+.imp--gut .imp__gut-days .imp__days-n, .imp--gut .imp__gut-stat .imp__stat-n { color: #ffeb3b; }
