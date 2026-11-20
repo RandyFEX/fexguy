@@ -38,10 +38,13 @@ function init(root: HTMLElement) {
   let rows: Row[] = [];
   let seq = 0;
 
+  // "gut": the article's simplified, food-first display (V8.8); same data and math.
+  const gut = cfg.display === 'gut';
   results.innerHTML = `<div class="imp__main">
       <fieldset class="imp__chart"><legend class="imp__legend">Choose one plan to compare with the lowest-priced option.</legend><div data-imp-chart></div></fieldset>
       <div class="imp__impact">
-        <fieldset class="imp__periods"><legend class="imp__legend">Click to compare over:</legend>
+        ${gut ? '<div data-imp-cmp aria-live="polite"></div>' : ''}
+        <fieldset class="imp__periods"><legend class="imp__legend">${gut ? 'See the food equivalent over:' : 'Click to compare over:'}</legend>
           ${PERIODS.map((y: number) => `<label class="imp__period"><input type="radio" name="${yearsName}" value="${y}"${y === state.years ? ' checked' : ''} /><span>${y} ${y === 1 ? 'year' : 'years'}</span></label>`).join('')}
         </fieldset>
         <div data-imp-out aria-live="polite"></div>
@@ -51,6 +54,7 @@ function init(root: HTMLElement) {
   const chart = results.querySelector<HTMLElement>('[data-imp-chart]')!;
   chart.after(profileLine);
   const out = results.querySelector<HTMLElement>('[data-imp-out]')!;
+  const cmp = results.querySelector<HTMLElement>('[data-imp-cmp]');
   const benefits = results.querySelector<HTMLElement>('[data-imp-benefits]')!;
 
   toggle.addEventListener('click', () => {
@@ -131,7 +135,30 @@ function init(root: HTMLElement) {
     const m = matched(base, alt);
     const im = impact(m.higher, m.lower, { years: state.years, ...s.food, monthlyIncome: s.income });
     const period = `${im.years} ${im.years === 1 ? 'year' : 'years'}`;
-    if (im.monthly <= 0) {
+    if (gut) {
+      const note = `It's a saving only if you qualify for ${nameOf(base)}${base.p.type === 'Level' ? ', which asks health questions' : ''}.`;
+      if (im.monthly <= 0) {
+        cmp!.innerHTML = `<p class="imp__headline">At about ${fmtMoney(m.coverage, false)} of coverage, ${nameOf(alt)} costs about the same as ${nameOf(base)}.</p>`;
+        out.innerHTML = '';
+      } else {
+        cmp!.innerHTML = `<dl class="imp__cmp">
+            <div><dt>Lower-priced policy <span>${nameOf(base)}</span></dt><dd>${fmtMoney(m.lower)}/month</dd></div>
+            <div><dt>Higher-priced policy <span>${nameOf(alt)}</span></dt><dd>${fmtMoney(m.higher)}/month</dd></div>
+            <div class="imp__cmp-extra"><dt>Extra premium</dt><dd>${fmtMoney(im.monthly)}/month</dd></div>
+          </dl>`;
+        out.innerHTML = `<div class="imp__food imp__food--gut">
+            <p class="imp__gut-lead">That extra premium could buy approximately</p>
+            <p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
+            <p class="imp__gut-sub">of food for one person</p>
+            <div class="imp__food-pair">
+              <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.meals)}</span><span class="imp__stat-l">Meals</span></p>
+              <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span><span class="imp__stat-l">Calories</span></p>
+            </div>
+            <p class="imp__muted">Over ${period}. Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
+          </div>
+          <p class="imp__note">${note}</p>`;
+      }
+    } else if (im.monthly <= 0) {
       out.innerHTML = `<p class="imp__headline">At about ${fmtMoney(m.coverage, false)} of coverage, ${nameOf(alt)} costs about the same as ${nameOf(base)}.</p>`;
     } else {
       const share = im.incomeShare !== null ? `<p class="imp__share">The monthly difference is <strong>${(im.incomeShare * 100).toFixed(1)}%</strong> of a monthly income of ${fmtMoney(s.income!, false)}.</p>` : '';

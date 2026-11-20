@@ -22,15 +22,17 @@ interface Props {
   years?: 1 | 5 | 10 | 20;
   /** The death-benefit table (kept for later use; off by default). */
   showBenefits?: boolean;
+  /** 'gut': the article's simplified, food-first display (V8.8). */
+  display?: 'full' | 'gut';
 }
-const { variant = 'embedded', title = 'Financial Impact Calculator', headingLevel = 2, codes = DEFAULT_INPUT.codes, selected = DEFAULT_INPUT.selected, years = 10, showBenefits = false } = Astro.props;
+const { variant = 'embedded', title = 'Financial Impact Calculator', headingLevel = 2, codes = DEFAULT_INPUT.codes, selected = DEFAULT_INPUT.selected, years = 10, showBenefits = false, display = 'full' } = Astro.props;
 const uid = `imp-${Math.random().toString(36).slice(2, 8)}`;
 const Heading = (headingLevel === 3 ? 'h3' : 'h2') as 'h2' | 'h3';
-const config = JSON.stringify({ ...DEFAULT_INPUT, codes, selected, years, food: FOOD_DEFAULTS, uid, showBenefits });
+const config = JSON.stringify({ ...DEFAULT_INPUT, codes, selected, years, food: FOOD_DEFAULTS, uid, showBenefits, display });
 const ages = Array.from({ length: AGES.max - AGES.min + 1 }, (_, i) => AGES.min + i);
 ---
 
-<section class={`imp imp--${variant}`} id={variant === "embedded" ? "calculator" : undefined} aria-labelledby={`${uid}-title`} data-impact data-config={config} data-phone-href={lead.phone.href} data-phone-display={lead.phone.display}>
+<section class={`imp imp--${variant} imp--${display}`} id={variant === "embedded" ? "calculator" : undefined} aria-labelledby={`${uid}-title`} data-impact data-config={config} data-phone-href={lead.phone.href} data-phone-display={lead.phone.display}>
   <div class="imp__head">
     <Heading class="imp__title" id={`${uid}-title`}>{title}</Heading>
     <p class="imp__profile" data-imp-profile>

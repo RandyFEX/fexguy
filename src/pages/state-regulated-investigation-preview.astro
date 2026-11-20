@@ -115,7 +115,9 @@ const keyPoints = [
     <div class="inv__map"><StateMap /></div>
     <p>Just because these mailers advertise $25,000 to $35,000 in coverage doesn't mean you need that much. Some people only need enough to cover today's final expenses, while others want coverage that accounts for rising costs over the next 20 years or even a lifetime. Use our funeral cost estimates by state and life expectancy to help determine how much coverage makes sense for you. Or call Funeral Funds directly, and I'll help you estimate what you might need today and in the future.</p>
 
-    <ImpactCalculator variant="embedded" title="What the Wrong Policy Can Cost You" />
+    <ImpactCalculator variant="embedded" display="gut" title="Not Sure Which Policy to Get? Trust Your Gut.">
+      <p>See how much food the extra premium on a more expensive policy could buy instead.</p>
+    </ImpactCalculator>
 
     <h2 id="sources">Sources and Method</h2>
     <ul class="inv__sources">
@@ -156,6 +158,7 @@ const keyPoints = [
   /* Fill each line before breaking: the site-wide text-wrap: balance (global.css)
      would split a long heading into two short halves. */
   .inv > h2, .inv :global(.imp__title), .inv :global(.home-map__title) { text-align: center; text-wrap: wrap; }
+  .inv :global(.imp__head > p:not(.imp__profile)) { text-align: center; max-width: none; }
   /* The homepage map tucks under the section above it there; here it starts below its heading. */
   .inv__map :global(.home-map) { margin-top: 0; padding-bottom: var(--space-4); }
   /* Mailer sections: a full-width green banner opens each one. */

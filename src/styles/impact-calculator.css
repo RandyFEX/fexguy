@@ -99,3 +99,17 @@
 .imp__period span { border: 2px solid var(--color-primary); color: var(--color-primary); }
 .imp__period span:hover { background: var(--color-surface); }
 .imp__period input:checked + span { box-shadow: 0 0 0 2px var(--home-gold, #b68a35); }
+/* "Trust your gut" display (V8.8): price lines, then the food panel. */
+.imp__cmp { margin: 0 0 var(--space-3); display: grid; gap: var(--space-2); }
+.imp__cmp div { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); background: var(--color-bg); border-radius: var(--radius); padding: var(--space-2) var(--space-3); }
+.imp__cmp dt { font-weight: 600; }
+.imp__cmp dt span { display: block; font-weight: 400; font-size: 0.8125rem; color: var(--color-text-muted); }
+.imp__cmp dd { margin: 0; font-weight: 800; white-space: nowrap; }
+.imp__cmp .imp__cmp-extra { background: var(--color-primary); color: var(--color-on-primary); border-left: 4px solid var(--home-gold, #b68a35); }
+.imp__cmp .imp__cmp-extra dd { font-size: 1.5rem; }
+.imp__food--gut { text-align: center; }
+.imp__gut-lead { margin: 0; font-size: 1.0625rem; }
+.imp__gut-days { margin: var(--space-1) 0 0; font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem); font-weight: 800; line-height: 1; }
+.imp__gut-days .imp__days-n { font-size: clamp(3.75rem, 2.8rem + 4vw, 5.5rem); }
+.imp__gut-sub { margin: var(--space-1) 0 var(--space-3); font-size: 1.125rem; font-weight: 700; }
+.imp__food--gut .imp__food-pair { text-align: center; }
