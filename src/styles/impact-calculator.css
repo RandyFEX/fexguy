@@ -160,3 +160,23 @@
 /* V9.5: the two lines above Days are supporting text (16px). */
 .imp--gut .imp__overpay { font-size: 1rem; font-weight: 700; line-height: 1.3; }
 .imp--gut .imp__gut-lead { font-size: 1rem; }
+/* V9.7: balanced food panel. The groups (intro lines, Days, Meals/Calories,
+   disclaimer) are spread evenly down the panel's height; spacing inside each
+   group stays tight. Meals and Calories are a little larger (Meals keeps the
+   midpoint of Days and Calories). */
+.imp--gut .imp__periods .imp__legend { margin-bottom: var(--space-3); }
+.imp--gut .imp__overpay { margin: 0; }
+.imp--gut .imp__gut-intro { display: grid; gap: var(--space-1); }
+.imp--gut .imp__gut-intro .imp__gut-lead { margin: 0; }
+.imp--gut .imp__gut-hero .imp__gut-days { margin: 0; }
+.imp--gut .imp__gut-hero .imp__gut-sub { margin: var(--space-1) 0 0; }
+.imp--gut .imp__food--gut { padding: 0; gap: var(--space-4); display: flex; flex-direction: column; }
+.imp--gut .imp__food--gut > .imp__muted { margin: 0; padding-top: var(--space-3); border-top: 1px solid rgb(255 255 255 / 0.25); }
+.imp--gut .imp__gut-stat .imp__stat-n { font-size: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.imp--gut .imp__gut-stat .imp__meals-n { font-size: calc((clamp(3.75rem, 2.8rem + 4vw, 5.5rem) + clamp(2rem, 1.5rem + 2vw, 3rem)) / 2); }
+.imp--gut [data-imp-out] > .imp__note { margin: var(--space-4) 0 0; }
+@media (min-width: 60rem) {
+  .imp--gut .imp__periods { margin-bottom: var(--space-4); }
+  .imp--gut .imp__food--gut { justify-content: space-evenly; gap: var(--space-3); }
+}
+.imp--gut .imp__periods { margin-bottom: var(--space-4); }

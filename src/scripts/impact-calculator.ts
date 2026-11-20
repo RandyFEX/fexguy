@@ -148,11 +148,11 @@ function init(root: HTMLElement) {
             <div><dt>Higher-priced policy <span>${nameOf(alt)}</span></dt><dd>${fmtMoney(m.higher)}/month</dd></div>
             <div class="imp__cmp-extra"><dt>Extra premium</dt><dd>${fmtMoney(im.monthly)}/month</dd></div>
           </dl>`;
-        out.innerHTML = `<p class="imp__overpay">If You Overpay ${fmtMoney(im.monthly)} a Month for ${im.years} ${im.years === 1 ? 'Year' : 'Years'}</p>
-          <div class="imp__food imp__food--gut">
-            <p class="imp__gut-lead">That Extra ${fmtMoney(im.period, false)} in Premiums Could Buy:</p>
-            <p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
-            <p class="imp__gut-sub">of food for one person</p>
+        out.innerHTML = `<div class="imp__food imp__food--gut">
+            <div class="imp__gut-intro"><p class="imp__overpay">If You Overpay ${fmtMoney(im.monthly)} a Month for ${im.years} ${im.years === 1 ? 'Year' : 'Years'}</p>
+            <p class="imp__gut-lead">That Extra ${fmtMoney(im.period, false)} in Premiums Could Buy:</p></div>
+            <div class="imp__gut-hero"><p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
+            <p class="imp__gut-sub">of food for one person</p></div>
             <div class="imp__gut-stack">
               <p class="imp__gut-stat"><span class="imp__stat-n imp__meals-n">${fmtWhole(im.meals)}</span> Meals</p>
               <p class="imp__gut-stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span> Calories</p>
