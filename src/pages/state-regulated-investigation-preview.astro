@@ -67,7 +67,7 @@ const keyPoints = [
       <MailerDecoder part="claims" mailer="notice" heading={false} />
     </section>
 
-    <h2 id="regulators">What Insurance Regulators Discovered About These Mailers</h2>
+    <h2 id="regulators">What Insurance Regulators Discovered<br class="br-desk" /> About These Mailers</h2>
     <p>Many state insurance regulators have looked into mailers similar to the ones shown above. Many have issued warnings to inform and protect their state residents from these deceptive cards and letters.</p>
     <div class="inv__findings">
       <section class="inv__finding">
@@ -86,7 +86,7 @@ const keyPoints = [
     <p>The Texas Department of Insurance sums it up in its consumer fraud guide: "The government doesn't sell insurance. Agents who say they're with the government are breaking the law."</p>
     <p>Different states, different letters in the corner of the card, same basic idea. Those findings are about those mailers; they don't identify who sent the 2026 card above or show that its sender broke the law.</p>
 
-    <h2 id="before-you-respond">Before You Respond to This Mailer…Know This</h2>
+    <h2 id="before-you-respond">Before You Respond to This Mailer…<br class="br-desk" />Know This</h2>
     <p>Your home state doesn't sponsor, fund, or give away private life insurance policies to its residents. Legitimate government options are limited and specific. For example, Social Security's one-time $255 death payment to an eligible spouse or child, VA burial benefits and VALife for eligible veterans, and a few others for particular groups. The government's options are rarely your best and most affordable option.</p>
     <ol class="inv__cards">
       <li class="inv__card-cta"><strong>You Don't Have to Answer the Card</strong> <span>NEVER respond to these deceptive cards or letters. Call Funeral Funds, and we'll help you cut through the confusion, compare your best low-cost options, and find coverage that fits your needs and budget.</span> <a class="btn art-cta__btn" href="https://funeralfunds.com/free-quote/">Get Your Free Quote</a></li>
@@ -96,7 +96,7 @@ const keyPoints = [
     </ol>
     <p>The majority of the people I help qualify for first-day coverage and the lowest rates. My process is simple and often lets me compare rates from 20 to 30 insurance companies. Depending on your state, age, and health, you can qualify for first-day coverage options with the lowest rates. If you'd like me to look at or compare any other offer you received, call me at <a href="tel:8888629456">888-862-9456</a>.</p>
 
-    <h2 id="send-back">One Letter Can Result in 100’s of Telephone or Robocalls</h2>
+    <h2 id="send-back">One Letter Can Result in 100’s<br class="br-desk" /> of Telephone or Robocalls</h2>
     <p>Here's how a reply card can turn into a phone call:</p>
     <ol class="inv__cards">
       <li><strong>You fill it out.</strong> Name, home address, phone number, age, and maybe even your spouse's name and age. Then you drop it in the mail.</li>
@@ -114,7 +114,7 @@ const keyPoints = [
     <p>Some people already have enough money set aside to cover their final expenses, and don’t need a new life insurance policy at all.</p>
     <p>My job is to help you find out whether you need coverage and, if you do, which of the many policies available makes the most sense.</p>
 
-    <div class="inv__map"><StateMap /></div>
+    <div class="inv__map"><StateMap balancedTitle /></div>
     <p>Just because these mailers advertise $25,000 to $35,000 in coverage doesn't mean you need that much. Some people only need enough to cover today's final expenses, while others want coverage that accounts for rising costs over the next 20 years or even a lifetime. Use our funeral cost estimates by state and life expectancy to help determine how much coverage makes sense for you. Or call Funeral Funds directly, and I'll help you estimate what you might need today and in the future.</p>
 
     <ImpactCalculator variant="embedded" display="gut" title="Not Sure Which Policy to Get? Trust Your Gut.">
@@ -175,9 +175,14 @@ const keyPoints = [
   .inv__sources { font-size: 0.9375rem; }
   /* V11.6: mailer 1's claims heading (in its section banner) in capitals. */
   #mailer-2026 { text-transform: uppercase; }
+  /* V11.9: deliberate line breaks for balanced two-line banners, desktop only
+     (the sidebar layout); tablets and phones wrap naturally. */
+  :global(.br-desk) { display: none; }
+  @media (min-width: 64rem) { :global(.br-desk) { display: inline; } }
+  .inv :global(.imp .imp__head .imp__title) { text-wrap: balance; }
   /* V11.8: major section headings as dark green banners (white bold text,
      centered, same rounded corners); wording, size and spacing unchanged. */
-  .inv > h2, .inv :global(.home-map__title) { background: #173f35; color: #ffffff; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); }
+  .inv > h2, .inv :global(.home-map__title), .inv :global(.imp__title) { background: #173f35; color: #ffffff; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); }
   /* Every section heading in the article is centered across the full width,
      including the calculator's title (its component is shared, so only here). */
   /* Fill each line before breaking: the site-wide text-wrap: balance (global.css)
