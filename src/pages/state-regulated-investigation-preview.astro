@@ -175,6 +175,9 @@ const keyPoints = [
   .inv__sources { font-size: 0.9375rem; }
   /* V11.6: mailer 1's claims heading (in its section banner) in capitals. */
   #mailer-2026 { text-transform: uppercase; }
+  /* V11.8: major section headings as dark green banners (white bold text,
+     centered, same rounded corners); wording, size and spacing unchanged. */
+  .inv > h2, .inv :global(.home-map__title) { background: #173f35; color: #ffffff; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); }
   /* Every section heading in the article is centered across the full width,
      including the calculator's title (its component is shared, so only here). */
   /* Fill each line before breaking: the site-wide text-wrap: balance (global.css)
