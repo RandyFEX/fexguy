@@ -14,6 +14,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleByline from '@/components/article/ArticleByline.astro';
 import ArticleSummary from '@/components/article/ArticleSummary.astro';
+import QuoteBox from '@/components/lead/QuoteBox.astro';
 import StateMap from '@/components/home/StateMap.astro';
 import ImpactCalculator from '@/components/impact/ImpactCalculator.astro';
 import MailerDecoder from '@/components/impact/MailerDecoder.astro';
@@ -31,7 +32,8 @@ const keyPoints = [
 ---
 
 <BaseLayout title={pageTitle('State-Regulated Life Insurance Scam Exposed (2027 Update)')} description="Preview draft: what state-regulated life insurance mailers really are, what regulators found, and what happens when you send the card back." robots="noindex, nofollow" noindex>
-  <article class="container inv" data-page-type="utility" data-page-reason="Preview draft of the state-regulated life insurance investigation (not approved).">
+  <div class="container inv-layout">
+  <article class="inv" data-page-type="utility" data-page-reason="Preview draft of the state-regulated life insurance investigation (not approved).">
     <p class="inv__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>
 
     <h1>State-Regulated Life Insurance Scam Exposed (2027 Update)</h1>
@@ -137,9 +139,20 @@ const keyPoints = [
       <li>The 2026 card: a real reply card, redacted. Its sender is unknown.</li>
     </ul>
   </article>
+  <aside class="inv-layout__aside">
+    <QuoteBox />
+  </aside>
+  </div>
 </BaseLayout>
 
 <style>
+  /* The site's standard quote sidebar (same component and column split as
+     ContentLayout's sidebar pages): content column up to 48rem plus a 20rem
+     sidebar from 64rem; on phones the box follows the article. */
+  @media (min-width: 64rem) {
+    .inv-layout { display: grid; grid-template-columns: minmax(0, 48rem) 20rem; justify-content: space-between; align-items: start; gap: var(--space-8); }
+    .inv-layout__aside { margin-top: 0; align-self: stretch; padding-top: var(--space-6); }
+  }
   .inv { padding-block: var(--space-6); }
   /* Text uses the full article width, like the mailer banners. */
   .inv > h1 { max-width: var(--prose-max); }
