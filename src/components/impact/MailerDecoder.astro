@@ -81,7 +81,7 @@ const Tag = M.Tag;
     {heading && <Tag id={M.titleId}>{M.title}</Tag>}
       <div class="mdec__scroll" tabindex="0" role="region" aria-label={`The ${M.claims.length} claims on the ${mailer === 'notice' ? 'Important Benefit Notice' : mailer} mailer and what they mean`}>
         <table class="mdec__table">
-          <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">What The Mailer Says</th><th scope="col">What It Actually Means</th></tr></thead>
+          <thead><tr><th scope="col"><span class="visually-hidden">Number</span></th><th scope="col">WHAT THE MAILER SAYS</th><th scope="col">WHAT IT ACTUALLY MEANS</th></tr></thead>
           <tbody>
             {M.claims.map((c: { says: string; means: string; source?: string; other?: boolean }, i: number) => (
               <tr>
@@ -118,6 +118,8 @@ const Tag = M.Tag;
   /* V11.6: the claims-table headings (mailers 2 and 3) as dark green banners in capitals. */
   .mdec h3 { background: #173f35; color: #ffffff; text-transform: uppercase; text-align: center; font-weight: 800; padding: var(--space-3) var(--space-4); border-radius: var(--radius); margin-bottom: var(--space-3); }
   .mdec__table thead th:not(:first-child) { text-align: center; }
+  /* V11.7: dark green header row, white bold capitals, centered both ways. */
+  .mdec__table thead th { background: #173f35; color: #ffffff; font-weight: 800; text-transform: uppercase; vertical-align: middle; }
   .mdec__table tbody th { font-weight: 700; width: 38%; }
   .mdec__table td:first-child { width: 2rem; }
   /* Claims rows: number, claim and explanation all centered on the row's height. */
