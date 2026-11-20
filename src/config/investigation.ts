@@ -9,8 +9,8 @@ export const INVESTIGATION = {
   h1: 'State-Regulated Life Insurance Scam Exposed (2027 Update)',
   /** The URL's existing approved meta description (kept from the migrated page). */
   description: 'Got a state-regulated program or Benefit Information for State Citizens Only mailer? Here’s what regulators found and what to know before you reply.',
-  /** The URL's original publication date (from its migrated metadata). */
-  published: '2026-05-12T16:59:02-05:00',
+  /** The investigation's official publication date (Randy, V12.5). */
+  published: '2026-11-20',
   /** Social image: the first annotated mailer (existing asset). */
   image: { path: '/images/mailers/2026-f2-benefit-information-mailer-redacted.jpg', width: 1496, height: 627 },
 } as const;
