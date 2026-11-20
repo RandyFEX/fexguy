@@ -130,3 +130,24 @@
 }
 /* Meals number: the exact midpoint of the Days and Calories numbers' sizes at every width. */
 .imp__gut-stat .imp__meals-n { font-size: calc((clamp(3.75rem, 2.8rem + 4vw, 5.5rem) + clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem)) / 2); }
+/* V9.3: one unified "Trust Your Gut" calculator. A single beige area holds
+   both columns; the left heading is a green bar; the right column is one
+   continuous green panel (period choice + food results). */
+.imp--gut .imp__main { background: var(--color-surface); border-radius: var(--radius); padding: var(--space-3); }
+.imp--gut .imp__cmp-wrap { background: transparent; padding: 0; }
+.imp--gut .imp__chart > .imp__legend { display: block; width: 100%; box-sizing: border-box; background: var(--color-primary); color: var(--color-on-primary); text-align: center; padding: var(--space-2) var(--space-3); border-radius: var(--radius); margin-bottom: var(--space-3); }
+.imp--gut .imp__impact { background: var(--color-primary); color: var(--color-on-primary); border-top: 4px solid var(--home-gold, #b68a35); }
+.imp--gut .imp__impact .imp__muted { color: #e8e4da; }
+.imp--gut .imp__food--gut { background: transparent; border-top: 0; padding: var(--space-2) 0 0; margin-top: 0; }
+.imp--gut .imp__periods { justify-content: center; }
+.imp--gut .imp__periods .imp__legend { text-align: center; color: var(--color-on-primary); }
+/* Period buttons: white with a gold outline; the selected one is orange with
+   black text (bold at 19px, so it meets the large-text contrast minimum). */
+.imp--gut .imp__period span { background: #ffffff; color: var(--color-text); border: 2px solid var(--home-gold, #b68a35); font-size: 1.1875rem; font-weight: 700; }
+.imp--gut .imp__period span:hover { background: var(--color-surface); }
+.imp--gut .imp__period input:checked + span { background: var(--color-cta); color: #000000; border-color: var(--color-cta); box-shadow: 0 0 0 2px #ffffff; }
+.imp--gut .imp__period input:focus-visible + span { outline: 3px solid #ffffff; outline-offset: 2px; }
+.imp--gut .imp__note { color: var(--color-on-primary); }
+@media (min-width: 48rem) { .imp--gut .imp__main { padding: var(--space-4); } }
+/* Plan cards stay white on the beige area (as on the page before), so their bars' tracks stay visible. */
+.imp--gut .imp__bar, .imp--gut .imp__bar--alt.is-selected, .imp--gut .imp__bar--alt:has(input:checked) { background: #ffffff; }
