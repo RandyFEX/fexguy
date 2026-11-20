@@ -180,3 +180,9 @@
   .imp--gut .imp__food--gut { justify-content: space-evenly; gap: var(--space-3); }
 }
 .imp--gut .imp__periods { margin-bottom: var(--space-4); }
+/* V10.1: yellow, larger amounts in the two intro lines; a smaller gap between
+   "of food for one person" and Meals; dark green instruction bar with yellow text. */
+.imp--gut .imp__amt { color: #ffeb3b; font-size: 2em; font-weight: 800; line-height: 1; white-space: nowrap; vertical-align: -0.12em; }
+.imp--gut .imp__gut-stack { padding-top: var(--space-2); }
+.imp--gut .imp__gut-hero + .imp__gut-stack { margin-top: calc(var(--space-2) * -1); }
+.imp--gut .imp__chart > .imp__legend { background: var(--color-primary); color: #ffeb3b; }

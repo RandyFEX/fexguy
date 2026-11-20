@@ -149,8 +149,8 @@ function init(root: HTMLElement) {
             <div class="imp__cmp-extra"><dt>Extra premium</dt><dd>${fmtMoney(im.monthly)}/month</dd></div>
           </dl>`;
         out.innerHTML = `<div class="imp__food imp__food--gut">
-            <div class="imp__gut-intro"><p class="imp__overpay">If You Overpay ${fmtMoney(im.monthly)} a Month for ${im.years} ${im.years === 1 ? 'Year' : 'Years'}</p>
-            <p class="imp__gut-lead">That Extra ${fmtMoney(im.period, false)} in Premiums Could Buy:</p></div>
+            <div class="imp__gut-intro"><p class="imp__overpay">If You Overpay <span class="imp__amt">${fmtMoney(im.monthly)}</span> a Month for ${im.years} ${im.years === 1 ? 'Year' : 'Years'}</p>
+            <p class="imp__gut-lead">That Extra <span class="imp__amt">${fmtMoney(im.period, false)}</span> in Premiums Could Buy:</p></div>
             <div class="imp__gut-hero"><p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
             <p class="imp__gut-sub">of food for one person</p></div>
             <div class="imp__gut-stack">
