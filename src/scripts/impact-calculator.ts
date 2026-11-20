@@ -149,12 +149,12 @@ function init(root: HTMLElement) {
             <div class="imp__cmp-extra"><dt>Extra premium</dt><dd>${fmtMoney(im.monthly)}/month</dd></div>
           </dl>`;
         out.innerHTML = `<div class="imp__food imp__food--gut">
-            <p class="imp__gut-lead">That extra premium could buy approximately</p>
+            <p class="imp__gut-lead">That Extra ${fmtMoney(im.period, false)} in Premiums Could Buy:</p>
             <p class="imp__gut-days"><span class="imp__days-n">${fmtWhole(im.foodDays)}</span> Days</p>
             <p class="imp__gut-sub">of food for one person</p>
-            <div class="imp__food-pair">
-              <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.meals)}</span><span class="imp__stat-l">Meals</span></p>
-              <p class="imp__stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span><span class="imp__stat-l">Calories</span></p>
+            <div class="imp__gut-stack">
+              <p class="imp__gut-stat"><span class="imp__stat-n">${fmtWhole(im.meals)}</span> Meals</p>
+              <p class="imp__gut-stat"><span class="imp__stat-n">${fmtWhole(im.calories)}</span> Calories</p>
             </div>
             <p class="imp__muted">Over ${period}. Illustrative purchasing power: what the same money could buy at ${fmtMoney(s.food.mealCost)} and ${fmtWhole(s.food.caloriesPerMeal)} calories a meal and ${fmtWhole(s.food.caloriesPerDay)} calories a day, not what anyone actually eats. Compared at about ${fmtMoney(m.coverage, false)} of coverage.</p>
           </div>
