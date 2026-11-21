@@ -274,7 +274,7 @@ The postcard that promised peace of mind
 
 <h2><strong>What is Senior Legacy Life?</strong></h2>
 
-<p>Senior Legacy Life is a licensed insurance agency that sells policies from other insurance companies rather than issuing its own.</p>
+<p><a href="/senior-legacy-life-review/">Senior Legacy Life</a> is a licensed insurance agency that sells policies from other insurance companies rather than issuing its own.</p>
 
 <p>The agency is legitimate in the sense that it’s licensed to sell life insurance. The problem is that its marketing often looks identical to the unlicensed “Senior Legacy” mailers.</p>
 

@@ -238,7 +238,7 @@ sidebar: true
 <td>Low</td>
 </tr>
 <tr>
-<td>Senior Life</td>
+<td><a href="/senior-life-insurance-review/">Senior Life</a></td>
 <td>Not Rated</td>
 <td>A+</td>
 <td>High (300% Above Avg)</td>

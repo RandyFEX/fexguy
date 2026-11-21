@@ -286,7 +286,7 @@ sidebar: true
 
 <p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e"><br><strong>What to do when a spouse dies?</strong></p>
 
-<p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e">When a spouse dies, you need to notify their family and friends. You will also need to make arrangements for the funeral or cremation. If you have children, you need to talk to them about what has happened.</p>
+<p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e"><a href="/what-happens-when-your-spouse-died-no-life-insurance/">When a spouse dies</a>, you need to notify their family and friends. You will also need to make arrangements for the funeral or cremation. If you have children, you need to talk to them about what has happened.</p>
 
 <p id="e58fa7d2-11d4-49fb-99eb-25c70f967d1e"><br><strong>What to do when a parent dies, and you are the executor?</strong></p>
 
