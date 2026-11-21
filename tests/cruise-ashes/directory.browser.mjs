@@ -4,7 +4,9 @@
 // line with an established policy, the lines with no published policy are a
 // compact list that is fully in the HTML and works without JavaScript, the
 // search narrows it and announces the count, every profile and contact link
-// is present, and the page has no horizontal scroll at 320px. Run after
+// is present, the A to Z finder, jump and regional law links and Back to Top
+// work, and the page has no horizontal scroll or nested scroll areas at
+// 320, 375 and 430px. Run after
 // `npm run build`: node tests/cruise-ashes/directory.browser.mjs
 import { createServer } from 'node:http';
 import { createRequire } from 'node:module';
@@ -47,6 +49,8 @@ for (const o of established) {
   assert.ok(html.includes(`id="op-${o.id}"`), `profile for ${o.name}`);
   assert.ok(html.includes(`href="#op-${o.id}"`), `comparison row for ${o.name}`);
 }
+assert.equal((html.match(/>Contact customer service</g) ?? []).length, unverified.filter((u) => !u.contactUrl).length, 'exact customer-service wording on every line without a contact link');
+assert.equal((html.match(/Official contact information</g) ?? []).length, unverified.filter((u) => u.contactUrl).length, 'verified contact links kept');
 for (const o of unverified.filter((u) => u.contactUrl)) assert.ok(html.includes(`href="${o.contactUrl.replace(/&/g, '&amp;')}"`), `contact link for ${o.name}`);
 const counts = data.operators.reduce((m, o) => ((m[o.status] = (m[o.status] ?? 0) + 1), m), {});
 assert.ok(html.includes(`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted'] ?? 0} conditionally permitted and ${counts['not-permitted'] ?? 0} not permitted. They are compared below. For ${total} other lines`), 'displayed counts match the data');
@@ -71,7 +75,7 @@ try {
   await p.goto(base + PAGE);
 
   await check('primary comparison has one row per established line', async () => {
-    assert.equal(await p.locator('.cra__table').first().locator('tbody tr').count(), established.length);
+    assert.equal(await p.locator('.cra-cmp__card').count(), established.length);
   });
   await check('search appears with JavaScript', async () => {
     assert.equal(await p.locator('[data-cra-filters]').isVisible(), true);
@@ -93,14 +97,86 @@ try {
   });
   await ctx.close();
 
-await check('no horizontal scroll at 320px', async () => {
-    const c = await browser.newContext({ viewport: { width: 320, height: 800 } });
+  await check('A to Z: a letter shows its cruise lines; empty letters are disabled; All resets', async () => {
+    const c = await browser.newContext({ viewport: { width: 375, height: 800 } });
     const m = await c.newPage();
     await m.goto(base + PAGE);
-    const over = await m.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-    assert.ok(over <= 0, `page overflows by ${over}px`);
+    const names = data.operators.map((o) => o.name);
+    const first = (n) => (n.match(/[A-Za-z]/)?.[0] ?? '').toUpperCase();
+    for (const l of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+      const has = names.some((n) => first(n) === l);
+      assert.equal(await m.locator(`.cra-az__btn[data-letter="${l}"]`).isDisabled(), !has, `letter ${l}`);
+    }
+    await m.click('.cra-az__btn[data-letter="C"]');
+    const ops = await m.locator('[data-cra-ops] li:visible a').allTextContents();
+    assert.equal(ops.length, names.filter((n) => first(n) === 'C').length);
+    assert.ok(ops.every((n) => first(n) === 'C'));
+    for (const t of await m.locator('.cra-row:visible .cra-row__name').allTextContents()) assert.equal(first(t), 'C');
+    assert.equal(await m.locator('.cra-az__btn[data-letter="C"]').getAttribute('aria-pressed'), 'true');
+    await m.click('[data-cra-ops] a[href="#op-carnival-cruise-line"]');
+    await m.waitForTimeout(300);
+    assert.ok(m.url().endsWith('#op-carnival-cruise-line'));
+    const y = await m.evaluate(() => document.getElementById('op-carnival-cruise-line').getBoundingClientRect().top);
+    assert.ok(y >= -2 && y < 400, `profile in view (${y})`);
+    await m.click('.cra-az__btn[data-letter="all"]');
+    assert.equal(await m.locator('[data-cra-ops] li:visible').count(), 0);
+    assert.equal(await m.locator('.cra-row:visible').count(), total);
+    await m.click('.cra-az__btn[data-letter="V"]');
+    await m.fill('#cra-q', 'quark');
+    assert.equal(await m.locator('.cra-row:visible').count(), 1);
     await c.close();
   });
+
+  await check('jump to section and regional law links reach their sections', async () => {
+    const c = await browser.newContext({ viewport: { width: 430, height: 900 } });
+    const m = await c.newPage();
+    await m.goto(base + PAGE);
+    const hrefs = await m.locator('.cra-jump a').evaluateAll((els) => els.map((e) => e.getAttribute('href')));
+    assert.equal(hrefs.length, 15, `links ${hrefs.length}`);
+    for (const h of hrefs) assert.equal(await m.locator(h).count(), 1, `target ${h}`);
+    await m.click('.cra-jump--law a[href="#law-europe"]');
+    await m.waitForTimeout(300);
+    const y = await m.evaluate(() => document.getElementById('law-europe').getBoundingClientRect().top);
+    assert.ok(y >= -2 && y < 300, `law section in view (${y})`);
+    await c.close();
+  });
+
+  await check('back to top appears after scrolling, sits above the call bar, returns to the jump navigation', async () => {
+    const c = await browser.newContext({ viewport: { width: 375, height: 700 } });
+    const m = await c.newPage();
+    await m.goto(base + PAGE);
+    assert.equal(await m.locator('[data-cra-top]').isVisible(), false);
+    await m.evaluate(() => document.getElementById('law').scrollIntoView());
+    await m.waitForTimeout(300);
+    const btn = m.locator('[data-cra-top]');
+    assert.equal(await btn.isVisible(), true);
+    const box = await btn.boundingBox();
+    const bar = await m.locator('.call-sticky').boundingBox();
+    if (bar) assert.ok(box.y + box.height <= bar.y + 1, `above the call bar (${box.y + box.height} vs ${bar.y})`);
+    await btn.focus();
+    await m.keyboard.press('Enter');
+    await m.waitForTimeout(400);
+    const y = await m.evaluate(() => document.getElementById('cra-jump').getBoundingClientRect().top);
+    assert.ok(y >= -2 && y < 300, `jump navigation in view (${y})`);
+    await c.close();
+  });
+
+  for (const w of [320, 375, 430]) {
+    await check(`no horizontal scroll and no nested scroll areas at ${w}px`, async () => {
+      const c = await browser.newContext({ viewport: { width: w, height: 800 } });
+      const m = await c.newPage();
+      await m.goto(base + PAGE);
+      const over = await m.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      assert.ok(over <= 0, `page overflows by ${over}px`);
+      const nested = await m.evaluate(() =>
+        [...document.querySelectorAll('main *')]
+          .filter((e) => /(auto|scroll)/.test(getComputedStyle(e).overflowX) && e.scrollWidth > e.clientWidth + 1)
+          .map((e) => e.className || e.tagName),
+      );
+      assert.deepEqual(nested, [], `nested scroll areas: ${nested.join(', ')}`);
+      await c.close();
+    });
+  }
 } finally {
   await browser.close();
   server.close();

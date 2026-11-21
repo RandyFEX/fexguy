@@ -58,6 +58,35 @@ const toc = [
   { id: 'sources', text: 'Sources' },
 ];
 const ext = { target: '_blank', rel: 'noopener' };
+// Version 1.9 navigation: A to Z finder over every operator (established lines
+// jump to their profile, the others to their row in the list).
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const firstLetter = (name: string) => (name.match(/[A-Za-z]/)?.[0] ?? '').toUpperCase();
+const finder = [...operators].sort((a, b) => a.name.localeCompare(b.name, 'en')).map((o) => ({
+  name: o.name,
+  letter: firstLetter(o.name),
+  href: o.status === 'unverified' ? `#dir-${o.id}` : `#op-${o.id}`,
+}));
+const usedLetters = new Set(finder.map((f) => f.letter));
+const jump = [
+  { href: '#which-lines', label: 'Cruise Line Policies' },
+  { href: '#find-your-cruise-line', label: 'Find Your Cruise Line' },
+  { href: '#documents', label: 'Documents and Ceremonies' },
+  { href: '#law', label: 'Laws by Region' },
+  { href: '#travel', label: 'Traveling With Ashes' },
+  { href: '#faq', label: 'Frequently Asked Questions' },
+];
+const lawRegions = [
+  { href: '#law-international', label: 'International waters' },
+  { href: '#law-us', label: 'United States' },
+  { href: '#law-canada-au-nz', label: 'Canada, Australia and New Zealand' },
+  { href: '#law-uk-ireland', label: 'UK and Ireland' },
+  { href: '#law-europe', label: 'Europe and Mediterranean' },
+  { href: '#law-caribbean', label: 'Caribbean and Mexico' },
+  { href: '#law-asia', label: 'Asia' },
+  { href: '#law-polar', label: 'Polar regions' },
+  { href: '#law-rivers', label: 'Rivers and inland waters' },
+];
 ---
 
 <div class="container page page--article cra" data-article-layout="content">
@@ -66,6 +95,11 @@ const ext = { target: '_blank', rel: 'noopener' };
     <h1>{h1}</h1>
     <ArticleByline updated={updated} />
     <ArticleSummary quickAnswer={quickAnswer} takeaways={{ label: 'Key Points', items: keyPoints }} />
+    <nav class="cra-jump" id="cra-jump" aria-label="Jump to section">
+      <ul class="cra-jump__list">
+        {jump.map((j) => <li><a class="cra-jump__link" href={j.href}>{j.label}</a></li>)}
+      </ul>
+    </nav>
     <ArticleToc items={toc} path={path} />
 
     <h2 id="which-lines">Which cruise lines allow scattering ashes?</h2>
@@ -83,29 +117,30 @@ const ext = { target: '_blank', rel: 'noopener' };
       {`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted']} conditionally permitted and ${counts['not-permitted']} not permitted. They are compared below. For ${counts.unverified} other lines we found no published policy; they are listed further down with a link to contact each line where we found one.`}
     </p>
 
-    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Cruise lines with an established policy, compared">
-      <table>
-        <caption>Cruise lines with an established policy (checked {checkedLabel})</caption>
-        <thead>
-          <tr><th scope="col">Cruise line</th><th scope="col">Status</th><th scope="col">Advance approval</th><th scope="col">Documents</th><th scope="col">Ceremony restrictions</th><th scope="col">Fees</th><th scope="col">Official policy</th></tr>
-        </thead>
-        <tbody>
-          {
-            established.map((o) => (
-              <tr>
-                <th scope="row"><a href={`#op-${o.id}`}>{o.name}</a></th>
-                <td>{STATUS[o.status as StatusKey]}{o.policyNote === 'indexed' ? ' (indexed official page)' : o.policyNote === 'read-paraphrase' ? ' (wording not fully verified)' : ''}</td>
-                <td>{o.compare!.approval}</td>
-                <td>{o.compare!.documents}</td>
-                <td>{o.compare!.restrictions}</td>
-                <td>{o.compare!.fees}</td>
-                <td><a href={o.policyUrl!} {...ext}>Official policy<span class="visually-hidden"> for {o.name} (opens in a new tab)</span></a></td>
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
-    </div>
+    <p class="cra-cmp__caption" id="cra-cmp-caption">Cruise lines with an established policy (checked {checkedLabel})</p>
+    <ul class="cra-cmp" aria-labelledby="cra-cmp-caption">
+      {
+        established.map((o) => (
+          <li class="cra-cmp__card">
+            <p class="cra-cmp__name"><a href={`#op-${o.id}`}>{o.name}</a></p>
+            <p class="cra-cmp__status">
+              <span class={`cra-badge cra-badge--${o.status}`}>{STATUS[o.status as StatusKey]}</span>
+              {o.policyNote === 'indexed' ? ' (indexed official page)' : o.policyNote === 'read-paraphrase' ? ' (wording not fully verified)' : ''}
+            </p>
+            <dl class="cra-cmp__facts">
+              <div><dt>Advance approval</dt><dd>{o.compare!.approval}</dd></div>
+              <div><dt>Documents</dt><dd>{o.compare!.documents}</dd></div>
+              <div><dt>Ceremony restrictions</dt><dd>{o.compare!.restrictions}</dd></div>
+              <div><dt>Fees</dt><dd>{o.compare!.fees}</dd></div>
+              <div>
+                <dt>Official policy</dt>
+                <dd><a href={o.policyUrl!} {...ext}>Official policy<span class="visually-hidden"> for {o.name} (opens in a new tab)</span></a></dd>
+              </div>
+            </dl>
+          </li>
+        ))
+      }
+    </ul>
     <p class="cra__note">
       “Not published” means the line’s official policy does not say. “Indexed official page” means the line’s own policy
       page refused automated requests, so we read the search engine’s indexed copy of that official page; check the
@@ -302,7 +337,24 @@ const ext = { target: '_blank', rel: 'noopener' };
     </ul>
   </div>
 
-  <section class="cra-dir" aria-labelledby="no-published-policy" data-cra-directory>
+  <section class="cra-dir" id="find-your-cruise-line" aria-labelledby="no-published-policy" data-cra-directory>
+    <div class="cra-find" data-cra-find hidden>
+      <p class="cra-find__label" id="cra-find-label">Find your cruise line</p>
+      <div class="cra-az" role="group" aria-labelledby="cra-find-label">
+        <button type="button" class="cra-az__btn cra-az__btn--all" data-letter="all" aria-pressed="true">All</button>
+        {
+          letters.map((l) => (
+            <button type="button" class="cra-az__btn" data-letter={l} disabled={!usedLetters.has(l)} aria-pressed="false">
+              {l}
+            </button>
+          ))
+        }
+      </div>
+      <ul class="cra-find__ops" data-cra-ops>
+        {finder.map((f) => <li data-letter={f.letter} hidden><a class="cra-find__op" href={f.href}>{f.name}</a></li>)}
+      </ul>
+      <p class="cra-find__status" aria-live="polite" data-cra-find-status>Choose a letter to find a cruise line, or search below.</p>
+    </div>
     <form class="cra-dir__filters" data-cra-filters hidden role="search" aria-label="Search the lines with no published policy">
       <div class="cra-dir__field">
         <label for="cra-q">Search by cruise line</label>
@@ -313,7 +365,7 @@ const ext = { target: '_blank', rel: 'noopener' };
     <ul class="cra-dir__list" data-cra-list>
       {
         unverified.map((o) => (
-          <li class="cra-row" data-name={o.name.toLowerCase()}>
+          <li class="cra-row" id={`dir-${o.id}`} data-name={o.name.toLowerCase()} data-letter={firstLetter(o.name)}>
             <span class="cra-row__name">{o.name}</span>
             <span class="cra-row__meta">{o.fleet}{o.regions ? `: ${o.regions}` : ''}</span>
             {o.contactUrl ? (
@@ -362,7 +414,13 @@ const ext = { target: '_blank', rel: 'noopener' };
       of the place.
     </p>
 
-    <h3>International waters and the flag state</h3>
+    <nav class="cra-jump cra-jump--law" aria-label="Laws by region">
+      <ul class="cra-jump__list">
+        {lawRegions.map((r) => <li><a class="cra-jump__link" href={r.href}>{r.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <h3 id="law-international">International waters and the flag state</h3>
     <p>
       Under the UN Convention on the Law of the Sea, a country’s sovereignty covers its territorial sea, which may reach
       12 nautical miles from its baselines (Articles 2 and 3), with some enforcement powers in a contiguous zone up to 24
@@ -374,7 +432,7 @@ const ext = { target: '_blank', rel: 'noopener' };
       <a href="https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx" {...ext}>London Convention and Protocol</a>.
     </p>
 
-    <h3>United States</h3>
+    <h3 id="law-us">United States</h3>
     <p>
       US burial at sea is governed by the Marine Protection, Research, and Sanctuaries Act, not the Clean Water Act. The
       EPA’s general permit at
@@ -403,7 +461,7 @@ const ext = { target: '_blank', rel: 'noopener' };
       We found no Alaska or Hawaii state rule on scattering ashes at sea.
     </p>
 
-    <h3>United Kingdom and Ireland</h3>
+    <h3 id="law-uk-ireland">United Kingdom and Ireland</h3>
     <ul>
       <li><strong>England and Northern Irish offshore waters:</strong> “You don’t need a licence or permission to scatter ashes at sea after a cremation” (<a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>).</li>
       <li><strong>Scotland:</strong> “An application for burial is not required for the scattering of ashes” (<a href="https://www.gov.scot/publications/burial-regulations-guidance/pages/3/" {...ext}>Scottish Government</a>).</li>
@@ -411,7 +469,7 @@ const ext = { target: '_blank', rel: 'noopener' };
       <li><strong>Ireland:</strong> the Department of Transport’s voluntary guidelines suggest cremation and scattering of ashes be considered rather than burial at sea (<a href="https://www.gov.ie/en/department-of-transport/services/burial-at-sea/" {...ext}>gov.ie</a>).</li>
     </ul>
 
-    <h3>Europe and the Mediterranean</h3>
+    <h3 id="law-europe">Europe and the Mediterranean</h3>
     <ul>
       <li><strong>Norway:</strong> scattering ashes needs the County Governor’s permission (<a href="https://lovdata.no/dokument/NL/lov/1996-06-07-32" {...ext}>Funeral Act, section 20</a>). On Svalbard the Governor may permit it on application, not in built-up areas (<a href="https://lovdata.no/dokument/SF/forskrift/2008-02-15-153" {...ext}>Svalbard regulation</a>).</li>
       <li><strong>Netherlands:</strong> relatives may scatter ashes in state waters, at sea or in a river, without a permit, keeping away from bathing sites and drinking-water intakes (<a href="https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen/vergunningen-rijkswateren" {...ext}>Rijkswaterstaat</a>).</li>
@@ -423,25 +481,25 @@ const ext = { target: '_blank', rel: 'noopener' };
       <li><strong>Greece:</strong> we could not confirm the rule from an official text.</li>
     </ul>
 
-    <h3>Canada, Australia and New Zealand</h3>
+    <h3 id="law-canada-au-nz">Canada, Australia and New Zealand</h3>
     <ul>
       <li><strong>Canada:</strong> the federal disposal-at-sea law (CEPA 1999, section 125) does not mention ashes (<a href="https://laws.justice.gc.ca/eng/acts/C-15.31/FullText.html" {...ext}>Justice Laws</a>). We could not open the federal guidance.</li>
       <li><strong>Australia:</strong> the Sea Dumping Act does not mention ashes (<a href="https://www.legislation.gov.au/C2004A02478/latest/text" {...ext}>legislation.gov.au</a>); government guidance on ashes could not be opened, and we found no Great Barrier Reef Marine Park rule on ashes.</li>
       <li><strong>New Zealand:</strong> not confirmed from an official page.</li>
     </ul>
 
-    <h3>Caribbean, Mexico, Asia and the polar regions</h3>
+    <h3 id="law-caribbean">Caribbean, Mexico, Asia and the polar regions</h3>
     <ul>
       <li><strong>Caribbean, Bahamas, Mexico and Bermuda:</strong> we found no official rule. Ask the cruise line which local rules apply on your itinerary.</li>
-      <li><strong>Japan:</strong> the Ministry of Health’s guideline for scattering businesses asks for scattering at sea a suitable distance from the coast, without setting a number (<a href="https://www.mhlw.go.jp/content/11130500/001321304.pdf" {...ext}>MHLW</a>).</li>
+      <li id="law-asia"><strong>Japan:</strong> the Ministry of Health’s guideline for scattering businesses asks for scattering at sea a suitable distance from the coast, without setting a number (<a href="https://www.mhlw.go.jp/content/11130500/001321304.pdf" {...ext}>MHLW</a>).</li>
       <li><strong>Singapore:</strong> sea scattering takes place at a site 3.2 km east of Raffles Lighthouse (<a href="https://www.nea.gov.sg/our-services/after-death/post-death-matters/burial-cremation-and-ash-storage" {...ext}>NEA</a>).</li>
       <li><strong>Hong Kong:</strong> three designated areas; form FEHB 198 must be approved first (<a href="https://www.greenburial.gov.hk/en/scattering-cremains-sea/intro.html" {...ext}>Green Burial</a>).</li>
-      <li><strong>Antarctica:</strong> the Antarctic Treaty’s environmental protocol limits what ships may discharge but does not mention human remains (<a href="https://documents.ats.aq/recatt/Att011_e.pdf" {...ext}>Annex IV</a>). We found no rule that allows or bans ashes, so ask the expedition line.</li>
+      <li id="law-polar"><strong>Antarctica:</strong> the Antarctic Treaty’s environmental protocol limits what ships may discharge but does not mention human remains (<a href="https://documents.ats.aq/recatt/Att011_e.pdf" {...ext}>Annex IV</a>). We found no rule that allows or bans ashes, so ask the expedition line.</li>
       <li><strong>South Georgia:</strong> the government permits scattering on the island with 60 days’ written notice, not on the South Sandwich Islands (<a href="https://gov.gs/wp-content/uploads/2022/10/Scattering-of-Ashes-Policy-0321.pdf" {...ext}>GSGSSI policy</a>).</li>
       <li><strong>Galapagos:</strong> no National Park rule found.</li>
     </ul>
 
-    <h3>Rivers and inland waters</h3>
+    <h3 id="law-rivers">Rivers and inland waters</h3>
     <p>
       The EPA says scattering in lakes and rivers “is not subject to federal regulation” under its burial at sea rules;
       states may regulate it. In Europe, rules vary: the Netherlands allows it in state rivers without a permit, Italy only
@@ -462,18 +520,18 @@ const ext = { target: '_blank', rel: 'noopener' };
       <li><strong>Into the United States:</strong> CDC’s import rules for human remains do not apply to remains already fully cremated (<a href="https://www.ecfr.gov/current/title-42/chapter-I/subchapter-F/part-71/subpart-F/section-71.50" {...ext}>42 CFR 71.50</a>).</li>
     </ul>
 
-    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Airline rules for cremated remains">
-      <table>
+    <div class="cra-airlines">
+      <table class="cra-stack">
         <caption>Airline rules we checked ({checkedLabel})</caption>
         <thead><tr><th scope="col">Airline</th><th scope="col">Carry-on</th><th scope="col">Checked bag</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-          <tr><th scope="row"><a href="https://www.aircanada.com/ca/en/aco/home/plan/baggage/carry-on.html" {...ext}>Air Canada</a></th><td>Yes</td><td>Not from August 28, 2026</td><td>Cargo service available</td></tr>
-          <tr><th scope="row"><a href="https://www.jetblue.com/help/cremated-remains" {...ext}>JetBlue</a></th><td>Yes, in an urn</td><td>No</td><td>Urn does not count toward the allowance</td></tr>
-          <tr><th scope="row"><a href="https://www.alaskacargo.com/what-we-ship/human-remains" {...ext}>Alaska Airlines</a></th><td>Yes</td><td>Yes</td><td>Cargo rules are separate</td></tr>
-          <tr><th scope="row"><a href="https://faq.flyfrontier.com/help/does-frontier-allow-transport-of-human-remains" {...ext}>Frontier</a></th><td>Yes, in a container TSA can screen</td><td>Not stated</td><td></td></tr>
-          <tr><th scope="row"><a href="https://www.westjet.com/en-ca/baggage/carry-on" {...ext}>WestJet</a></th><td>Up to 350 mL</td><td>Over 350 mL</td><td></td></tr>
-          <tr><th scope="row"><a href="https://www.airnewzealand.com/en-nz/travel-info/baggage/restricted-items" {...ext}>Air New Zealand</a></th><td>Yes</td><td>Yes</td><td>Certificates on request</td></tr>
-          <tr><th scope="row"><a href="https://www.virginaustralia.com/au/en/travel-info/baggage/oversized-fragile-items/" {...ext}>Virgin Australia</a></th><td>Yes, with a letter</td><td>Yes</td><td>Cushioned, sealed urn</td></tr>
+          <tr><th scope="row"><a href="https://www.aircanada.com/ca/en/aco/home/plan/baggage/carry-on.html" {...ext}>Air Canada</a></th><td data-label="Carry-on">Yes</td><td data-label="Checked bag">Not from August 28, 2026</td><td data-label="Notes">Cargo service available</td></tr>
+          <tr><th scope="row"><a href="https://www.jetblue.com/help/cremated-remains" {...ext}>JetBlue</a></th><td data-label="Carry-on">Yes, in an urn</td><td data-label="Checked bag">No</td><td data-label="Notes">Urn does not count toward the allowance</td></tr>
+          <tr><th scope="row"><a href="https://www.alaskacargo.com/what-we-ship/human-remains" {...ext}>Alaska Airlines</a></th><td data-label="Carry-on">Yes</td><td data-label="Checked bag">Yes</td><td data-label="Notes">Cargo rules are separate</td></tr>
+          <tr><th scope="row"><a href="https://faq.flyfrontier.com/help/does-frontier-allow-transport-of-human-remains" {...ext}>Frontier</a></th><td data-label="Carry-on">Yes, in a container TSA can screen</td><td data-label="Checked bag">Not stated</td><td data-label="Notes"></td></tr>
+          <tr><th scope="row"><a href="https://www.westjet.com/en-ca/baggage/carry-on" {...ext}>WestJet</a></th><td data-label="Carry-on">Up to 350 mL</td><td data-label="Checked bag">Over 350 mL</td><td data-label="Notes"></td></tr>
+          <tr><th scope="row"><a href="https://www.airnewzealand.com/en-nz/travel-info/baggage/restricted-items" {...ext}>Air New Zealand</a></th><td data-label="Carry-on">Yes</td><td data-label="Checked bag">Yes</td><td data-label="Notes">Certificates on request</td></tr>
+          <tr><th scope="row"><a href="https://www.virginaustralia.com/au/en/travel-info/baggage/oversized-fragile-items/" {...ext}>Virgin Australia</a></th><td data-label="Carry-on">Yes, with a letter</td><td data-label="Checked bag">Yes</td><td data-label="Notes">Cushioned, sealed urn</td></tr>
         </tbody>
       </table>
     </div>
@@ -545,32 +603,73 @@ const ext = { target: '_blank', rel: 'noopener' };
   </div>
 </div>
 
+<a class="btn btn--secondary cra-top" href="#cra-jump" data-cra-top hidden>Back to top</a>
+
 <script>
-  // Search for the lines with no published policy (progressive enhancement):
-  // every line is in the HTML; this only hides rows that do not match and
-  // announces the count.
+  // Find your cruise line (progressive enhancement): every line is in the
+  // HTML. The A to Z buttons (the National Parks preview's pattern) show the
+  // cruise lines for one letter as jump links and narrow the list; the search
+  // narrows the list by name. Both announce the result.
   const root = document.querySelector<HTMLElement>('[data-cra-directory]');
   const form = root?.querySelector<HTMLFormElement>('[data-cra-filters]');
-  if (root && form) {
+  const find = root?.querySelector<HTMLElement>('[data-cra-find]');
+  if (root && form && find) {
     const q = form.querySelector<HTMLInputElement>('[data-cra-q]')!;
     const rows = [...root.querySelectorAll<HTMLElement>('[data-cra-list] > li')];
     const count = root.querySelector<HTMLElement>('[data-cra-count]')!;
     const empty = root.querySelector<HTMLElement>('[data-cra-empty]')!;
+    const letterBtns = [...find.querySelectorAll<HTMLButtonElement>('.cra-az__btn')];
+    const ops = [...find.querySelectorAll<HTMLElement>('[data-cra-ops] > li')];
+    const status = find.querySelector<HTMLElement>('[data-cra-find-status]')!;
     const total = rows.length;
+    let letter = '';
     const apply = () => {
       const term = q.value.trim().toLowerCase();
+      letterBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.letter === (letter || 'all'))));
+      let opsShown = 0;
+      ops.forEach((o) => {
+        o.hidden = !letter || o.dataset.letter !== letter;
+        if (!o.hidden) opsShown++;
+      });
       let shown = 0;
       for (const r of rows) {
-        const ok = !term || (r.dataset.name ?? '').includes(term);
+        const ok = (!letter || r.dataset.letter === letter) && (!term || (r.dataset.name ?? '').includes(term));
         r.hidden = !ok;
         if (ok) shown++;
       }
       empty.hidden = shown > 0;
       count.textContent = shown === total ? `Showing all ${total} lines with no published policy.` : `Showing ${shown} of ${total} lines with no published policy.`;
+      status.textContent = letter
+        ? `Cruise lines beginning with ${letter}: ${opsShown}. Choose one to go to its information.`
+        : 'Choose a letter to find a cruise line, or search below.';
     };
-    form.addEventListener('input', apply);
+    letterBtns.forEach((b) =>
+      b.addEventListener('click', () => {
+        letter = b.dataset.letter === 'all' ? '' : b.dataset.letter!;
+        q.value = '';
+        apply();
+      }),
+    );
+    form.addEventListener('input', () => {
+      letter = '';
+      apply();
+    });
     form.addEventListener('submit', (e) => e.preventDefault());
     form.hidden = false;
+    find.hidden = false;
+    apply();
+  }
+
+  // Back to top: a plain link to the jump navigation, shown once the reader
+  // has scrolled past it; it sits above the mobile call bar.
+  const top = document.querySelector<HTMLAnchorElement>('[data-cra-top]');
+  const nav = document.getElementById('cra-jump');
+  if (top && nav) {
+    const toggle = () => {
+      top.hidden = nav.getBoundingClientRect().bottom > -200;
+    };
+    window.addEventListener('scroll', toggle, { passive: true });
+    toggle();
   }
 </script>
 
@@ -595,19 +694,227 @@ const ext = { target: '_blank', rel: 'noopener' };
     font-size: 0.9375rem;
     color: var(--color-text-muted);
   }
-  .cra__table {
-    /* Contains the visually hidden link text so it scrolls with the table. */
-    position: relative;
-    overflow-x: auto;
+  /* Comparison cards (Version 1.9): one column on phones, no sideways scrolling. */
+  .cra-cmp__caption {
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+  }
+  .cra-cmp {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4);
+    display: grid;
+    gap: var(--space-4);
+  }
+  .cra-cmp__card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+    margin: 0;
+    background: var(--color-bg);
+  }
+  .cra-cmp__name {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 0 0 var(--space-2);
+  }
+  .cra-cmp__status {
+    margin: 0 0 var(--space-3);
+    font-size: 0.9375rem;
+  }
+  .cra-cmp__facts {
+    display: grid;
+    gap: var(--space-2);
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+  .cra-cmp__facts dt {
+    font-weight: 700;
+  }
+  .cra-cmp__facts dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+  @media (min-width: 48rem) {
+    .cra-cmp__facts div {
+      display: grid;
+      grid-template-columns: 11rem 1fr;
+      gap: var(--space-2);
+    }
+  }
+  /* Permission status colors (unchanged from the approved Version 1.3 badges). */
+  .cra-badge {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.125rem var(--space-2);
+    border-radius: 999px;
+    border: 1px solid currentColor;
+  }
+  .cra-badge--officially-permitted {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    border-color: var(--color-primary);
+  }
+  .cra-badge--conditionally-permitted {
+    background: #fef3c7;
+    color: #713f12;
+  }
+  .cra-badge--not-permitted {
+    background: #fee2e2;
+    color: #7f1d1d;
+  }
+  .cra-badge--unverified {
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  /* Jump to section and laws by region: wrapping links, never a sideways row. */
+  .cra-jump {
     margin-block: var(--space-4);
   }
-  .cra__table table {
-    min-width: 36rem;
+  .cra-jump__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
   }
-  .cra__table caption {
-    text-align: left;
+  .cra-jump__list li {
+    margin: 0;
+  }
+  .cra-jump__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    padding-inline: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
     font-weight: 700;
-    padding-bottom: var(--space-2);
+    font-size: 0.9375rem;
+    text-decoration: none;
+  }
+  /* A to Z finder (the National Parks preview's letter grid). */
+  .cra-find {
+    margin-bottom: var(--space-4);
+  }
+  .cra-find[hidden] {
+    display: none;
+  }
+  .cra-find__label {
+    font-weight: 700;
+    margin: 0 0 var(--space-2);
+  }
+  .cra-az {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2.75rem, 1fr));
+    gap: var(--space-1);
+    margin-bottom: var(--space-3);
+  }
+  .cra-az__btn {
+    min-height: var(--tap-target);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-bg);
+    color: var(--color-primary);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .cra-az__btn--all {
+    grid-column: span 2;
+  }
+  .cra-az__btn:disabled {
+    color: var(--color-text-muted);
+    background: transparent;
+    border-color: transparent;
+    cursor: default;
+    opacity: 0.6;
+  }
+  .cra-az__btn[aria-pressed='true'] {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  .cra-find__ops {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .cra-find__ops li[hidden] {
+    display: none;
+  }
+  .cra-find__op {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+    padding-inline: var(--space-3);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    font-weight: 700;
+  }
+  .cra-find__status {
+    margin: 0;
+  }
+  /* Airline rules: a normal table from 48rem; labelled stacked rows below. */
+  @media (max-width: 47.99rem) {
+    .cra-stack,
+    .cra-stack tbody,
+    .cra-stack tr,
+    .cra-stack th,
+    .cra-stack td {
+      display: block;
+      width: 100%;
+    }
+    .cra-stack caption {
+      display: block;
+      text-align: left;
+      font-weight: 700;
+      padding-bottom: var(--space-2);
+    }
+    .cra-stack thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .cra-stack tr {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      margin-bottom: var(--space-3);
+      padding: var(--space-2) var(--space-3);
+    }
+    .cra-stack th,
+    .cra-stack td {
+      border: 0;
+      padding: var(--space-1) 0;
+    }
+    .cra-stack td::before {
+      content: attr(data-label) ': ';
+      font-weight: 700;
+    }
+    .cra-stack td:empty {
+      display: none;
+    }
+  }
+  /* Back to top: fixed above the mobile call bar. */
+  .cra-top {
+    position: fixed;
+    right: var(--space-4);
+    bottom: calc(var(--call-sticky-h, 0px) + var(--space-4));
+    z-index: 20;
+    min-height: var(--tap-target);
+    background: var(--color-bg);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  }
+  .cra-top[hidden] {
+    display: none;
   }
   .cra-profile {
     border-top: 1px solid var(--color-border);

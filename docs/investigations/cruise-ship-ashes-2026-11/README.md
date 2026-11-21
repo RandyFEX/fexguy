@@ -6,7 +6,23 @@ component has been changed. Model for depth and sourcing: the One Last
 Amazing Adventure national parks preview (branch
 `claude/last-adventure-preview`, not modified).
 
-## Status: Version 1.7 preview rebuilt around verified policies (2026-11-21)
+## Status: Version 1.9 mobile layout and navigation (2026-11-21)
+
+- Comparison table replaced by responsive comparison cards (one column on
+  phones; all fields and official links kept; approved status colors).
+- Jump to section links (after Key Points), A to Z cruise-line finder
+  above the directory (National Parks pattern: All plus letters, empty
+  letters disabled, letter shows that letter's lines as jump links), the
+  existing search kept, regional law links above the law subsections
+  (anchors added to the existing headings), and a Back to Top link that
+  appears after scrolling and sits above the mobile call bar.
+- Airline table stacks into labelled rows below 48rem; no horizontal or
+  nested scrolling at 320, 375 and 430px (browser test).
+- "Contact customer service" (Version 1.8.1) and the 23 verified contact
+  links unchanged. No wording, research, metadata or shared components
+  changed.
+
+## Version 1.7 preview rebuilt around verified policies (2026-11-21)
 
 - Primary comparison: the 11 lines with an established policy (9
   officially permitted, Ambassador conditionally permitted, Crystal not
