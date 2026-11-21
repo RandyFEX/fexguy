@@ -217,7 +217,7 @@ research/competitors-seo.md.
 | https://www.stamps.com/article/ship-cremated-remains/ | secondary | Travel private-carriers: shipping-us | 2026-11-21 |
 | https://www.united.com/ual/en/us/fly/travel/baggage/fragile.html | airline | Travel united: airline-us | 2026-11-21 |
 
-## Search summary only (round 1) (72)
+## Search summary only (round 1) (73)
 
 | URL | Type | Supports | Checked |
 | --- | --- | --- | --- |
@@ -290,6 +290,7 @@ research/competitors-seo.md.
 | https://www.travelweekly.com/River-Cruising/American-Queen-Voyages-has-shut-down | secondary-news | American Queen Voyages: status/notes | 2026-11-21 |
 | https://www.tuiholidays.ie/f/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered | official-faq | Marella Cruises: status/notes | 2026-11-21 |
 | https://www.urnsforashes.co.uk/wp-content/uploads/2022/10/environment-agency-scattering-ashes.pdf | law-inland | Inland waters: United Kingdom (England) | not verified |
+| https://www.usatoday.com/story/travel/cruises/2026/11/15/spread-ashes-from-cruise-ship-burials-at-sea/92572572007/ | secondary-news | Carnival Cruise Line: status/notes; Norwegian Cruise Line: status/notes | 2026-11-21 |
 | https://www.vienna.at/privatbeisetzung-ist-in-bundeslaendern-unterschiedlich-geregelt/8258485 | law-inland | Inland waters: Austria | not verified |
 | https://www.weka.de/ordnungsamt-gewerbeamt/flugbestattungen-ueber-nordsee/ | law-inland | Inland waters: Germany (general, state law) | not verified |
 | https://www.worldofcruising.co.uk/cruise-news/the-last-wave-saying-goodbye-at-sea | secondary-news | Princess Cruises: designatedArea, distanceOffshore | 2026-11-21 |

@@ -144,3 +144,15 @@ reach 12 nm on a sea day.
 - Before publication, read the four indexed pages directly in a browser
   (Carnival, MSC, P&O, Cunard) and Marella's full FAQ, and ask Celebrity,
   Norwegian, Holland America and Disney in writing.
+
+## 11. Version 1.7B open items
+
+- USA TODAY, Nathan Diller, 2026-11-15
+  (https://www.usatoday.com/story/travel/cruises/2026/11/15/spread-ashes-from-cruise-ship-burials-at-sea/92572572007/):
+  not readable from this environment (HTTP 402; page-reading tool refused;
+  usatoday.com blocks the search crawler; no syndicated copy found).
+  Norwegian's attributable company confirmation and the reported Carnival
+  ceremony are therefore NOT in the article. Needs the article text from
+  Randy. Norwegian stays Unverified until then.
+- Carnival Elation Facebook discussion (2026-10-24): used only as described
+  by Randy, as anecdotal passenger experience; no URL recorded.

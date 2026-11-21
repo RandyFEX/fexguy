@@ -227,6 +227,24 @@
         "quote": "subject to individual itineraries and the operational needs of the vessel on specific sailings",
         "verified": "2026-11-21",
         "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. (Earlier-round record, kept.)"
+      },
+      {
+        "id": "v7fb",
+        "url": "",
+        "title": "Facebook, Carnival Elation passenger community: discussion dated 2026-10-24",
+        "type": "forum-anecdote",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.7B: supplied by Randy as a description of the discussion; not opened by us, no URL recorded. Used only to illustrate passenger experiences; commenters' names and wording not reproduced."
+      },
+      {
+        "id": "v7usat",
+        "url": "https://www.usatoday.com/story/travel/cruises/2026/11/15/spread-ashes-from-cruise-ship-burials-at-sea/92572572007/",
+        "title": "USA TODAY, Nathan Diller, 2026-11-15: spreading ashes from a cruise ship",
+        "type": "secondary-news",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.7B: not readable (HTTP 402 to curl; page-reading tool refused; usatoday.com blocks the search crawler). Content not used."
       }
     ],
     "conflicts": [
@@ -236,7 +254,8 @@
     "unresolved": [
       "Full page text not opened (bot protection); confirm wording in a browser.",
       "Guest limit (12 per secondary reporting only), fee and certificate or coordinates afterward are not in the indexed content.",
-      "Whether arrangements can be made before sailing."
+      "Whether arrangements can be made before sailing.",
+      "USA TODAY (2026-11-15) reportedly describes a Carnival ceremony; article not readable, details not recorded."
     ],
     "needsDirectContact": false,
     "notes": "help.carnival.com could not be fetched; all official wording comes from search-result summaries and must be re-checked before publication.",
@@ -410,7 +429,8 @@
       }
     },
     "evidenceMethod": "search-index-of-official-page",
-    "round16": "recovered-official-indexed"
+    "round16": "recovered-official-indexed",
+    "passengerExperiences": "Anecdotal (Facebook, Carnival Elation community, 2026-10-24, per Randy's summary): passengers describe arranging ceremonies through Guest Services, being escorted to private areas, bringing death certificates, receiving keepsakes identifying the scattering location, and positive experiences. They conflict on whether arrangements must be made before boarding. Not official policy; Carnival's official page controls."
   },
   {
     "id": "royal-caribbean-international",
@@ -760,6 +780,15 @@
         "quote": "",
         "verified": "2026-11-21",
         "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page."
+      },
+      {
+        "id": "v7usat",
+        "url": "https://www.usatoday.com/story/travel/cruises/2026/11/15/spread-ashes-from-cruise-ship-burials-at-sea/92572572007/",
+        "title": "USA TODAY, Nathan Diller, 2026-11-15: spreading ashes from a cruise ship",
+        "type": "secondary-news",
+        "quote": "",
+        "verified": "2026-11-21",
+        "accessNote": "Version 1.7B: not readable (HTTP 402 to curl; page-reading tool refused; usatoday.com blocks the search crawler). Randy reports it contains an attributable Norwegian Cruise Line company confirmation; its wording was not available, so nothing was recorded or changed."
       }
     ],
     "conflicts": [
@@ -767,7 +796,8 @@
     ],
     "unresolved": [
       "Entire policy unpublished as found; needs written confirmation from NCL.",
-      "No official statement found after searching the official site in round 2; ask the line in writing."
+      "No official statement found after searching the official site in round 2; ask the line in writing.",
+      "Norwegian's company confirmation reported in USA TODAY (2026-11-15): needs the article text; status unchanged until then."
     ],
     "needsDirectContact": true,
     "notes": "Forum reports describe Guest Services arranging a date and time and ship officers attending; anecdotal only. Round 2 (2026-11-21): ncl.com opened. The FAQ hub and 'What can't I bring on board' (prohibited items) contain no mention of ashes, cremated remains or burial at sea; a guessed FAQ URL returned 404; a site search returned no ncl.com page. No official policy found.",
