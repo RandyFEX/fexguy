@@ -5,15 +5,9 @@ Research only: no competitor wording is to be copied into the article.
 
 ## Access limits (read first)
 
-- **The benchmark page could not be fetched.** Direct fetch of
-  shannon.cruisebrothers.com failed (host not in this session's allowed
-  network; curl got a proxy 403). web.archive.org is also blocked for this
-  session. The benchmark analysis below is therefore built only from search
-  engine snippets and search-tool summaries of the page, which are partial.
-  To complete it, allow shannon.cruisebrothers.com (and ideally
-  web.archive.org, www.cruisecritic.com, cruiseradio.net,
-  cruisewestcoast.com, www.pachamamatributes.com) in the session network
-  settings and re-run a direct read.
+- **Round 2 (2026-11-21):** the benchmark was opened directly and section 1
+  is now based on the full page. Official pages: see the operator JSON
+  files (round2 field) for which were read directly.
 - **No competitor page could be fetched directly** (same DNS/allowlist
   block on cruisecritic.com, cruiseradio.net, cruisewestcoast.com,
   pachamamatributes.com). Competitor details come from search results and
@@ -31,96 +25,103 @@ Research only: no competitor wording is to be copied into the article.
 
 ## 1. Benchmark: Cruise with Shannon (Cruise Brothers)
 
+Opened directly on 2026-11-21 (HTTP 200; full page text read). Analysis
+only; none of its wording is to be reused.
+
 - URL: https://shannon.cruisebrothers.com/cb/blog/shannon-hawkins-2026-07-13-cruise-with-shannons-guide-to-scattering-ashes-at-sea-on-a-cruise-ship/
-- Title (from search results): "Cruise with Shannon's Guide to Scattering
-  Ashes at Sea on a Cruise Ship!"
-- Publisher: Cruise Brothers (travel agency); author Shannon Hawkins
-  (independent travel advisor page on the agency's platform).
-- Date: 2026-07-13 (from the URL slug).
-- Ranking: it appears in results for almost every query tested (which lines
-  allow, Carnival, Royal Caribbean, Norwegian, Princess, Celebrity, Holland
-  America, MSC, P&O/Cunard queries), usually mid-page. Its breadth of
-  keyword matching, not depth, appears to drive that.
+- Title / H1: "Cruise with Shannon's Guide to Scattering Ashes at Sea on a Cruise
+  Ship!"; subhead "What Cruise Lines Allow, Requirements, Rules & Costs".
+- Publisher: Cruise Brothers (travel agency); advisor Shannon Hawkins. Date
+  2026-07-13 (URL slug; no date shown on the page). No author byline, no
+  sources section, no update date.
+- Format: short, emoji-headed checklist sections (roughly 700 words of
+  content), surrounded by "Request a Quote" / "Call Now" travel-agent calls
+  to action, a contact form and a newsletter form.
+- Ranking: appears for almost every query tested in round 1 (general and
+  line-specific), usually mid-page.
 
-### Cruise companies mentioned (as far as snippets show)
+### Companies mentioned and what it says about each
 
-| Line | What the page appears to say | Confidence |
+| Company | What the page says | Check against official sources (round 2) |
 | --- | --- | --- |
-| Carnival | Named as an example of a line that permits scattering with advance approval | Snippet |
-| Norwegian Cruise Line | Named as an example (same general statement) | Snippet |
-| Disney Cruise Line | Named as an example of a line that permits it | Snippet; **likely wrong or unsupported** (see below) |
-| Princess, Royal Caribbean, Celebrity, Holland America, MSC, P&O, Cunard | The page ranks for these line-specific queries, so they are probably mentioned, but no line-specific detail surfaced in snippets | Not confirmed |
+| Royal Caribbean International | In the "allow" list; with Celebrity: biodegradable urns, ceremonies, Guest Services coordination, advance approval; requires death certificate, cremation certificate, approved biodegradable urn, Front Desk appointment after boarding; cited for "entire biodegradable urn" rule | Matches the official FAQ (read directly), except "advance approval" and "Guest Services": the FAQ says to email gfotravelservices@rccl.com and contact the Front Desk on boarding |
+| Celebrity Cruises | In the "allow" list; grouped with Royal Caribbean under the same requirements, citing only Royal Caribbean's page | **Unsupported.** No Celebrity page found on celebritycruises.com in round 2 |
+| Carnival Cruise Line | In the "allow" list; "one of the most detailed memorial procedures": death and cremation certificates, Guest Services appointment, approved urn, Environmental Officer supervision, private crew area; "often around 12 guests"; coordinates afterward; flowers must be bought on board; cited for the ban on non-biodegradable items and on taking remains ashore | Largely consistent with the round 1 summary of help article 1132, which could still not be opened (bot protection). The 12-guest limit and coordinates come from secondary reporting, not the help article |
+| Norwegian Cruise Line | In the "allow" list only | **Unsupported.** No NCL statement found on ncl.com in round 2 |
+| Princess Cruises | In the "allow" list only | Supported in principle (official FAQ: private ceremonies, arranged and approved before sailing); none of Princess's specifics given |
+| Holland America Line | In the "allow" list only | **Unsupported.** No statement found on hollandamerica.com |
+| Disney Cruise Line | In the "allow" list only | **Unsupported**, and forum reports of internal guidance point the other way |
+| MSC Cruises | In the "allow" list only | Round 1 summary of MSC's FAQ supports it with conditions (6+ nights, sea day); none given |
+| Virgin Voyages | In the "allow" list only | Supported (official FAQ, read directly); the 14-day request form is not mentioned |
+| "Most premium and luxury cruise lines" | Said to permit ceremonies with advance arrangements | **Unsupported**, and contradicted by Crystal's own FAQ ("we do not offer burials at sea") |
 
-General statements surfaced in snippets:
-- Most major lines permit scattering, all require advance approval.
-- Most lines do not charge for a burial-at-sea ceremony.
-- Many lines require the whole biodegradable urn to be committed to the
-  sea, not loose ashes.
-- A U.S. Clean Water Act rule of at least 3 nautical miles from shore; never
-  in port or near beaches; some lines go farther out.
-- Contact the line in advance.
+Not mentioned at all: Cunard, P&O Cruises, Fred. Olsen, Marella, Ambassador,
+Saga, Celestyal, Oceania, Regent, Seabourn, Silversea, Viking, Azamara,
+Crystal, Explora, any river or expedition line, any non-US line.
 
-### Outbound links to official policies
+### Every outbound link
 
-Not confirmed (page unreadable). No snippet showed a link to any official
-cruise-line policy page. Re-check on direct read: whether it links Carnival
-help article 1132, Royal Caribbean's FAQ, Princess's FAQ, MSC's FAQ, P&O's
-committal page, Virgin Voyages' FAQ, EPA's burial-at-sea page, or TSA.
+All content links carry `?utm_source=chatgpt.com`:
 
-### Unsupported or outdated claims (provisional, from snippets)
+1. https://www.royalcaribbean.com/faq/questions/what-is-royal-caribbeans-burial-at-sea-policy (twice; official)
+2. https://www.cruisecritic.com/articles/scattering-ashes-at-sea-10-common-questions-answered (twice: for the legal rule and for GPS coordinates; secondary)
+3. https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes (three times; official)
 
-1. **Legal basis misstated.** U.S. burial at sea of cremated remains is
-   governed by the Marine Protection, Research, and Sanctuaries Act (MPRSA)
-   general permit at 40 CFR 229.1 (EPA), not the Clean Water Act. The
-   3-nautical-mile figure is correct for that permit, but the citation is not.
-2. **Disney as a permitting line.** No published Disney Cruise Line policy
-   was found; a DIS forum thread (about three years old) quotes internal
-   guidance that urns may come aboard but ashes may not be released at sea or
-   at Castaway Cay. Presenting Disney as an example of permission is not
-   supported by any official source found.
-3. **"Most lines do not charge."** Contradicted by P&O Cruises' own page (an
-   admin charge of GBP 270). Carnival and MSC are reported free; the claim is
-   true for some lines, not a safe generalization.
-4. **3 nautical miles as the operative rule.** The legal floor in U.S. waters
-   is 3 nm, but the lines' own policies commonly require 12 nm (MSC UK, P&O,
-   Carnival-linked sources, Cunard per forum quote). A family reading "3 nm"
-   gets the wrong expectation of when the ship will do it.
+Other links are site navigation, a shore-excursion affiliate link
+(shoreexcursionsgroup.com), share buttons and a tel: link. No link to EPA,
+eCFR, TSA, any airline, any government page or any other cruise line.
 
-### Important omissions (likely, based on what surfaced)
+### Unsupported or outdated claims
 
-- No line-by-line table with fee, notice period, contact channel, minimum
-  cruise length, sea-day requirement, guest limit and distance.
-- Minimum voyage length rules (MSC: 6+ nights with a sea day; P&O: not on
-  cruises of 6 nights or less; Cunard: not on 5 nights or less, per forum).
-- Region bans (P&O: not in the Norwegian fjords; Princess: reportedly not in
-  Alaskan waters).
-- Documents: death certificate, certificate of cremation, certificate of
-  biodegradability (P&O, Virgin, Royal Caribbean).
-- Rule that the urn cannot go ashore in ports of call (Carnival).
-- The EPA 30-day report and who files it (family vs ship) for departures
-  from U.S. ports; how this works outside U.S. jurisdiction.
-- Air and terminal travel with remains (TSA, CATSA, airline rules).
-- Pet ashes (excluded by MSC and by the EPA general permit).
-- What families receive afterward (captain's letter or certificate with
-  latitude and longitude).
-- Non-U.S. readers (UK, Australia, Europe lines) and the lines' own written
-  procedures.
+1. **Wrong law.** Says US waters require 3 nautical miles "under the Clean
+   Water Act". The rule is the MPRSA general permit at 40 CFR 229.1 (EPA's
+   Burial at Sea page, read 2026-11-21). The Clean Water Act matters only
+   for some inland waters.
+2. **Nine lines listed as allowing it with no source** for seven of them
+   (Celebrity, Norwegian, Holland America, Disney, MSC, Princess, Virgin are
+   uncited; only Royal Caribbean and Carnival are cited).
+3. **Disney** listed as allowing it, with no official support.
+4. **"Most cruise lines do not charge"** / "generally no fee". P&O's
+   committal page (round 1 summary) lists a GBP 270 admin charge and Cunard
+   sells a Committal of Ashes Package.
+5. **"Most premium and luxury cruise lines also permit"**: contradicted by
+   Crystal.
+6. **Prohibits "glass" and "metal" containers and "wreaths containing
+   ribbon"** as a general cruise-line rule: not stated in the official pages
+   read (Fred. Olsen even allows a small amount of wire in a wreath).
+7. **"The Captain determines the appropriate location"**: true for some
+   lines; Fred. Olsen agrees place, date and time with the guests.
+8. **"Will the Captain perform the ceremony? Usually no"**: Fred. Olsen says
+   a senior crew member supervises; Cunard (round 1 summary) says the Captain
+   or a Senior Officer accompanies the family.
+9. **No mention of the 12-nautical-mile practice**: Fred. Olsen, Marella and
+   (round 1 summaries) Carnival, MSC, P&O and Cunard all use 12 nm, so the
+   page's 3 nm figure sets the wrong expectation.
+10. **Undated generalizations** ("nearly every cruise line requires") with no
+    verification dates.
 
-### Questions a family would still have
+### Omissions
 
-- Which exact lines allow it, and where is the written policy?
-- How far ahead do I ask, who do I contact, and is there a form?
-- Will my 4- or 5-night cruise qualify? What if there is no sea day?
-- What urn do I need, and do I need a certificate for it?
-- How do I fly to the port with the ashes? Can I check them?
-- Can the whole family attend? Is there a guest limit?
-- Can I choose the spot (for example, near a place he loved)?
-- Will I get the coordinates? Who files the EPA report?
-- What if weather cancels it?
-- Can I scatter from my balcony? What happens if I do it without
-  permission?
-- Can we add flowers, a reading or a chaplain? Can I scatter a pet's ashes
-  with them?
+- No per-line table; no fees, lead times, contacts, forms, minimum cruise
+  length, sea-day rule, guest limits or region bans.
+- Nothing on the EPA 30-day report (who files it, the online tool), pets,
+  other countries' rules, UK rules (no licence needed to scatter ashes),
+  rivers or inland waters, protected areas.
+- No TSA detail beyond "carry-on"; no airline, customs or terminal guidance.
+- No coverage of what happens if weather or itinerary prevents the ceremony.
+- No non-US readers, no UK or Australian lines.
+
+### Questions a family would still have after reading it
+
+- Which lines say yes in writing, and where is that policy?
+- Who exactly do I contact, how far ahead, and is there a form?
+- Does my short cruise or my itinerary qualify? Is there a sea day?
+- Is the urn released whole or are the ashes poured?
+- Is there a fee, a guest limit, a certificate with the coordinates?
+- Who reports it to the EPA?
+- What if the weather is bad or the ceremony cannot happen?
+- What about flying with the ashes on my airline, or leaving from a UK or
+  Australian port?
 
 ## 2. Competitor pages (top distinct results)
 
@@ -157,7 +158,7 @@ observed or quoted in snippets, otherwise "not confirmed".
 | Disney | none found | Only forum reports (see below) |
 | NCL, Holland America, Celebrity, Viking, Oceania, Regent, Azamara, Saga, Ambassador | none found in results | Only forum or vendor reports; must be verified directly |
 
-Important: these official pages were not opened directly (snippets only).
+Round 2 (2026-11-21): Royal Caribbean, Princess, Virgin Voyages (its ashes answer is on the Onboard Policies FAQ, not Onboard Celebrations), Fred. Olsen, Ambassador and Crystal were read directly, Marella through a fetch tool; Carnival, MSC, P&O and Cunard refused automated access, so their rows above remain snippet-based.
 The operators register (SCHEMA.md) should hold the verified wording.
 
 ### Forum threads that rank and what families ask

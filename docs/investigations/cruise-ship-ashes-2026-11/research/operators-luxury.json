@@ -143,10 +143,13 @@
     "unresolved": [
       "Whether Viking Ocean, Viking River or Viking Expedition permit ash scattering or committal",
       "Whether river vessels differ from ocean and expedition vessels",
-      "Requirements if permitted"
+      "Requirements if permitted",
+      "No official statement found after searching the official site in round 2; ask the line in writing."
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). One combined record: no policy was found for any of the three divisions, so no material difference between them can be shown. River voyages would also be subject to inland-water rules of the riparian states, which were not researched here. A site-restricted search of vikingcruises.com returned only itinerary and heritage pages."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). One combined record: no policy was found for any of the three divisions, so no material difference between them can be shown. River voyages would also be subject to inland-water rules of the riparian states, which were not researched here. A site-restricted search of vikingcruises.com returned only itinerary and heritage pages. Round 2 (2026-11-21): vikingcruises.com reachable, but FAQ and terms URLs tried returned 404 and a site search returned no Viking page. No official policy found.",
+    "wordingConfirmed": false,
+    "round2": "official-site-searched-nothing-found"
   },
   {
     "id": "cunard",
@@ -172,7 +175,7 @@
         "type": "official-faq",
         "quote": "In order for the committal of ashes to take place, the ashes must be stored within a biodegradable container and the cremation certificate needs to be brought on board.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s2",
@@ -181,7 +184,7 @@
         "type": "official-faq",
         "quote": "The Captain or a Senior Officer will accompany you to an outside area, typically a lower deck and if requested they will say a prayer.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s3",
@@ -190,7 +193,7 @@
         "type": "official-faq",
         "quote": "The ashes will not be scattered but committed to the sea in a biodegradable container.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s4",
@@ -199,7 +202,7 @@
         "type": "official-faq",
         "quote": "It is dependent on certain factors and requires approval from the Captain in advance of the start of your voyage.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s5",
@@ -208,7 +211,7 @@
         "type": "official-policy-page",
         "quote": "speak to our Customer Contact Centre at least 90 days prior to sailing to discuss a committal of ashes",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read. A second snippet of the same text read 'Customer Service Department'."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s6",
@@ -217,7 +220,7 @@
         "type": "official-policy-page",
         "quote": "Search summary (not verbatim): biodegradable container with a certificate or equivalent proof that it is biodegradable; Certificate of Cremation brought on board; person committing must be booked; ashes in hand luggage; not in Norwegian fjords or Alaska state waters; weather may restrict; approval subject to change.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read. Only a paraphrased summary of this page was available; wording must be confirmed on the live page."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s7",
@@ -226,7 +229,7 @@
         "type": "official-policy-page",
         "quote": "For Renewal of Vows, Engagement and Committal of Ashes Packages: full payment is due at the time of booking.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s8",
@@ -235,7 +238,7 @@
         "type": "official-policy-page",
         "quote": "including requirements for a biodegradable container and supporting documentation, Captain's discretion and itinerary/location restrictions",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s9",
@@ -255,7 +258,8 @@
       "Package price (a paid Committal of Ashes Package exists; amount not seen)",
       "Exact US page wording (only a paraphrase was available)",
       "Whether a death certificate is also required",
-      "Whether a written memorial certificate is issued officially"
+      "Whether a written memorial certificate is issued officially",
+      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
     ],
     "needsDirectContact": true,
     "notes": "All official text was obtained from search-result snippets because cunard.com was blocked by the session proxy. Cunard commits the ashes in the container; loose scattering is expressly not done.",
@@ -421,7 +425,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection"
   },
   {
     "id": "oceania-cruises",
@@ -579,7 +585,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). The US ticket contract could not be text-searched directly."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). The US ticket contract could not be text-searched directly.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "regent-seven-seas-cruises",
@@ -737,7 +745,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host)."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "seabourn",
@@ -895,7 +905,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Sister brand Cunard (same parent) publishes a committal policy, but that cannot be assumed to apply to Seabourn."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Sister brand Cunard (same parent) publishes a committal policy, but that cannot be assumed to apply to Seabourn.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "silversea",
@@ -1042,7 +1054,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Sister brands Royal Caribbean and Celebrity publish policies, but these cannot be assumed to apply to Silversea."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Sister brands Royal Caribbean and Celebrity publish policies, but these cannot be assumed to apply to Silversea.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "azamara",
@@ -1201,7 +1215,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host)."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "explora-journeys",
@@ -1347,7 +1363,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). The only Explora FAQ pages returned (sustainability) do not mention ashes."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). The only Explora FAQ pages returned (sustainability) do not mention ashes.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "crystal",
@@ -1363,26 +1381,17 @@
     ],
     "headquarters": "Miami, Florida, USA",
     "status": "not-permitted",
-    "statusRationale": "Crystal's own FAQ states it does not offer burials at sea due to maritime regulations; it offers celebration-of-life ceremonies, which may include spreading ashes on a private excursion rather than from the ship.",
+    "statusRationale": "Crystal's FAQ, read directly on 2026-11-21, says it does not offer burials at sea; ashes may be spread on a private excursion instead.",
     "evidenceLevel": "official-policy",
     "sources": [
       {
         "id": "s1",
         "url": "https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed",
-        "title": "Health & Safety FAQ - Crystal",
+        "title": "Crystal FAQ: Will we offer burial at sea (Ash dispersal)?",
         "type": "official-faq",
-        "quote": "While we do not offer burials at sea due to maritime regulations, we do offer various celebrations of life ceremonies.",
+        "quote": "While we do not offer burials at sea due to maritime regulations, we do offer various celebrations of life ceremonies. These may also include the spreading of your loved one's ashes on a private excursion.",
         "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read."
-      },
-      {
-        "id": "s2",
-        "url": "https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed",
-        "title": "Health & Safety FAQ - Crystal",
-        "type": "official-faq",
-        "quote": "These may also include the spreading of your loved one's ashes on a private excursion. Please contact our Onboard Guest Services team",
-        "verified": "2026-11-21",
-        "accessNote": "Official site blocked by this session's network proxy (HTTP 403 / DNS failure); text taken from a web-search result snippet, not a direct page read. Snippet also showed an email address for the team and said onboard security holds the ashes until the ceremony (summary, not verbatim)."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, page HTML read); quote checked word for word against the page. The two round 1 snippet versions are one answer; full text read."
       },
       {
         "id": "s3",
@@ -1391,152 +1400,149 @@
         "type": "forum-anecdote",
         "quote": "Does anyone know if Crystal allow water burial or scattering of ashes from the ship.",
         "verified": "2026-11-21",
-        "accessNote": "Question only; no answer visible in snippet."
+        "accessNote": "Question only; no answer visible in snippet. (Round 1 record, not re-verified in round 2.)"
       }
     ],
-    "conflicts": [
-      "Search results showed two versions of the same FAQ: one with only the 'do not offer burials at sea' sentence, one adding ash spreading on a private excursion. Read together: no committal from the ship; shore-side or private-excursion arrangements possible."
-    ],
+    "conflicts": [],
     "unresolved": [
-      "Requirements, fees and notice for a private-excursion ash spreading",
-      "Whether the 'private excursion' is a boat, a shore location or both"
+      "What the private excursion involves, its cost and requirements."
     ],
     "needsDirectContact": true,
     "notes": "Status refers to scattering or committal from the ship. Crystal's FAQ points to celebration-of-life ceremonies and private excursions instead; the exact email address was not copied because it could not be verified on the live page.",
     "answers": {
       "permitted": {
-        "answer": "No burials at sea from the ship ('due to maritime regulations'); spreading ashes may be arranged on a private excursion.",
+        "answer": "Not from the ship: \"we do not offer burials at sea due to maritime regulations\". Spreading ashes may be arranged \"on a private excursion\".",
         "basis": "official",
         "sources": [
-          "s1",
-          "s2"
+          "s1"
         ]
       },
       "documentedOrIndividualApproval": {
-        "answer": "Documented in the FAQ; private-excursion arrangements coordinated individually.",
+        "answer": "FAQ policy; excursion arrangements coordinated individually.",
         "basis": "official",
         "sources": [
-          "s1",
-          "s2"
+          "s1"
         ]
       },
       "advanceNotice": {
-        "answer": "Guests are asked to contact Onboard Guest Services to coordinate arrangements for an upcoming voyage; no lead time stated.",
+        "answer": "Contact Onboard Guest Services to coordinate arrangements for an upcoming voyage.",
         "basis": "official",
         "sources": [
-          "s2"
+          "s1"
         ]
       },
       "leadTime": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "contactDepartment": {
-        "answer": "Onboard Guest Services team.",
+        "answer": "Onboard Guest Services, obgs@crystalcruises.com",
         "basis": "official",
         "sources": [
-          "s2"
+          "s1"
         ]
       },
       "writtenApplication": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "deathOrCremationCertificate": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "containerRequirements": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "biodegradableUrns": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "scatterOrReleaseUrn": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "privateCeremony": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "designatedArea": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "crewParticipation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "chaplainCelebrant": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "fees": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "distanceOffshore": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "shipSelectsLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "familyRequestLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "weatherItineraryLimits": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "gpsCoordinates": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "certificateConfirmation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "differsByVesselItinerary": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "petAshes": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "otherMemorialAssistance": {
-        "answer": "Various celebrations of life ceremonies.",
+        "answer": "\"Various celebrations of life ceremonies\"; onboard security holds the ashes until the celebration.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       }
-    }
+    },
+    "wordingConfirmed": true,
+    "round2": "verified-direct"
   },
   {
     "id": "windstar-cruises",
@@ -1683,7 +1689,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Fleet includes motor and sail-assisted yachts."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Fleet includes motor and sail-assisted yachts.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "seadream-yacht-club",
@@ -1827,7 +1835,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host)."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "ritz-carlton-yacht-collection",
@@ -1972,7 +1982,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Site-restricted search returned only Health and Safety and Onboard Service pages, neither mentioning ashes in the snippets."
+    "notes": "Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host). Site-restricted search returned only Health and Safety and Onboard Service pages, neither mentioning ashes in the snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "four-seasons-yachts",
@@ -2126,7 +2138,9 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Operating since March 2026 (Four Seasons I) per secondary reporting. Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host)."
+    "notes": "Operating since March 2026 (Four Seasons I) per secondary reporting. Searches of the open web and the line's own domain (WebSearch, 2026-11-21) found no published policy on scattering ashes, burial at sea or cremated remains; the official site could not be fetched (network proxy refused the host).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "aman-and-other-yacht-lines",
@@ -2267,6 +2281,8 @@
       "Requirements (notice, documents, container, fees) if permitted"
     ],
     "needsDirectContact": true,
-    "notes": "Skipped for time and search budget; Aman's yacht (Aman at Sea) operating status also not verified this round."
+    "notes": "Skipped for time and search budget; Aman's yacht (Aman at Sea) operating status also not verified this round.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   }
 ]

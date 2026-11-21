@@ -154,7 +154,9 @@
       "Colombia"
     ],
     "headquarters": "Calabasas, California, USA",
-    "notes": "Searched: 'AmaWaterways scattering ashes cremated remains policy'. No AmaWaterways FAQ, ticket contract clause or PDF mentioning ashes, urns or cremated remains surfaced. Source s1 is a third-party reseller copy of general terms and establishes nothing about ashes. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets."
+    "notes": "Searched: 'AmaWaterways scattering ashes cremated remains policy'. No AmaWaterways FAQ, ticket contract clause or PDF mentioning ashes, urns or cremated remains surfaced. Source s1 is a third-party reseller copy of general terms and establishes nothing about ashes. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -299,7 +301,9 @@
       "Galapagos (expedition partner)"
     ],
     "headquarters": "Littleton, Colorado, USA",
-    "notes": "Searched: 'Avalon Waterways ashes scattering river cruise urn'. No Avalon-published material on ashes surfaced; results were ocean lines (Carnival, Royal Caribbean, Fred. Olsen, Cunard, P&O) and UK river charter operators. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets."
+    "notes": "Searched: 'Avalon Waterways ashes scattering river cruise urn'. No Avalon-published material on ashes surfaced; results were ocean lines (Carnival, Royal Caribbean, Fred. Olsen, Cunard, P&O) and UK river charter operators. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -456,7 +460,9 @@
       "Peru (Amazon)"
     ],
     "headquarters": "Los Angeles, California, USA",
-    "notes": "Searched: 'Uniworld river cruise scatter ashes cremated remains' and an extended search for river-cruise terms containing 'cremated remains' or 'human ashes'. No Uniworld-published ashes policy found. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets."
+    "notes": "Searched: 'Uniworld river cruise scatter ashes cremated remains' and an extended search for river-cruise terms containing 'cremated remains' or 'human ashes'. No Uniworld-published ashes policy found. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -600,7 +606,9 @@
       "small-ship ocean itineraries"
     ],
     "headquarters": "Wilton, Connecticut, USA",
-    "notes": "Searched: 'Tauck cremated remains ashes scatter policy'. No Tauck material surfaced. A follow-up forum/anecdote search could not run because the shared search budget was exhausted. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "Searched: 'Tauck cremated remains ashes scatter policy'. No Tauck material surfaced. A follow-up forum/anecdote search could not run because the shared search budget was exhausted. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -754,7 +762,9 @@
       "Portugal (Douro)"
     ],
     "headquarters": "Burton upon Trent, England, UK",
-    "notes": "Searched: '\"Riviera Travel\" ashes scatter river cruise' and a general Rhine/Danube query. Brochures on issuu.com surfaced but no ashes text in snippets. The official FAQ page (s1) could not be opened; it should be checked directly. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets."
+    "notes": "Searched: '\"Riviera Travel\" ashes scatter river cruise' and a general Rhine/Danube query. Brochures on issuu.com surfaced but no ashes text in snippets. The official FAQ page (s1) could not be opened; it should be checked directly. Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -901,7 +911,9 @@
       "Africa"
     ],
     "headquarters": "Strasbourg, France",
-    "notes": "Searched in French: 'CroisiEurope dispersion cendres croisiere fluviale'. No CroisiEurope material on dispersal of ashes surfaced. On French rivers, see the CGCT entry in law-inland-waterways.json (dispersal 'en pleine nature' with a declaration to the town hall of the deceased's birthplace)."
+    "notes": "Searched in French: 'CroisiEurope dispersion cendres croisiere fluviale'. No CroisiEurope material on dispersal of ashes surfaced. On French rivers, see the CGCT entry in law-inland-waterways.json (dispersal 'en pleine nature' with a declaration to the town hall of the deceased's birthplace).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1058,7 +1070,9 @@
       "Douro"
     ],
     "headquarters": "Rostock, Germany",
-    "notes": "Searched in German: 'A-ROSA Flusskreuzfahrt Asche verstreuen Urne an Bord'. No A-ROSA text on urns or scattering surfaced. Germany's state burial laws generally restrict scattering outside cemeteries (Friedhofspflicht); Rhineland-Palatinate since 27 September 2025 allows a regulated river burial of a water-soluble urn from a boat (see law file). Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets."
+    "notes": "Searched in German: 'A-ROSA Flusskreuzfahrt Asche verstreuen Urne an Bord'. No A-ROSA text on urns or scattering surfaced. Germany's state burial laws generally restrict scattering outside cemeteries (Friedhofspflicht); Rhineland-Palatinate since 27 September 2025 allows a regulated river burial of a water-soluble urn from a boat (see law file). Two hosts (telegraph.rivieratravel.co.uk, mwwg.rlp.de) failed DNS resolution in this sandbox, so per session rules no further direct page fetches were attempted; findings rely on search-result snippets.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1202,7 +1216,9 @@
       "ocean (Vasco da Gama)"
     ],
     "headquarters": "Stuttgart, Germany",
-    "notes": "Searched in German: 'nicko cruises Urne Asche Beisetzung Schiff'. No nicko-published material on ashes. Results were German sea-burial operators (e.g. Adler-Schiffe) and other lines, which say nothing about nicko."
+    "notes": "Searched in German: 'nicko cruises Urne Asche Beisetzung Schiff'. No nicko-published material on ashes. Results were German sea-burial operators (e.g. Adler-Schiffe) and other lines, which say nothing about nicko.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1347,7 +1363,9 @@
       "Kimberley (APT small ship)"
     ],
     "headquarters": "Melbourne, Victoria, Australia",
-    "notes": "Searched: 'APT river cruise ashes urn scatter FAQ'. No APT or Travelmarvel material surfaced. Travelmarvel was not searched separately (search budget exhausted). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "Searched: 'APT river cruise ashes urn scatter FAQ'. No APT or Travelmarvel material surfaced. Travelmarvel was not searched separately (search budget exhausted). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1492,7 +1510,9 @@
       "Egypt (Nile)"
     ],
     "headquarters": "Sydney, New South Wales, Australia",
-    "notes": "Searched: 'Scenic river cruise scattering ashes policy'. No Scenic material surfaced. Scenic river and Scenic ocean are brands of the same group; whether the ocean (Scenic Eclipse) records cover the river fleet is not established here."
+    "notes": "Searched: 'Scenic river cruise scattering ashes policy'. No Scenic material surfaced. Scenic river and Scenic ocean are brands of the same group; whether the ocean (Scenic Eclipse) records cover the river fleet is not established here.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1636,7 +1656,9 @@
       "Mekong"
     ],
     "headquarters": "Sydney, New South Wales, Australia",
-    "notes": "Searched: 'Emerald Cruises river ashes scatter'. No Emerald material surfaced."
+    "notes": "Searched: 'Emerald Cruises river ashes scatter'. No Emerald material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1780,7 +1802,9 @@
       "Egypt (Nile)"
     ],
     "headquarters": "Boston, Massachusetts, USA",
-    "notes": "Searched: 'Grand Circle Cruise Line ashes scatter remains policy'. No Grand Circle material surfaced."
+    "notes": "Searched: 'Grand Circle Cruise Line ashes scatter remains policy'. No Grand Circle material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -1943,7 +1967,9 @@
       "Great Lakes (former)"
     ],
     "headquarters": "New Orleans, Louisiana, USA (former)",
-    "notes": "Operating status: ceased operations 20 February 2024 (parent Hornblower Group in Chapter 11; reports describe the closure as expected to be permanent). Exclude from the guide as a bookable option unless a revival is confirmed. For US rivers generally see the EPA entry in law-inland-waterways.json (inland scattering not regulated by MPRSA; state rules apply)."
+    "notes": "Operating status: ceased operations 20 February 2024 (parent Hornblower Group in Chapter 11; reports describe the closure as expected to be permanent). Exclude from the guide as a bookable option unless a revival is confirmed. For US rivers generally see the EPA entry in law-inland-waterways.json (inland scattering not regulated by MPRSA; state rules apply).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2087,7 +2113,9 @@
       "Mekong"
     ],
     "headquarters": "London, England, UK",
-    "notes": "Not searched individually: the shared search budget ran out. For the Nile, see the Egypt entries in law-inland-waterways.json (UK FCDO says cremation is not available in Egypt; Law 48 of 1982 bars throwing wastes into the Nile; whether ashes count is not established). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "Not searched individually: the shared search budget ran out. For the Nile, see the Egypt entries in law-inland-waterways.json (UK FCDO says cremation is not available in Egypt; Law 48 of 1982 bars throwing wastes into the Nile; whether ashes count is not established). The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2232,7 +2260,9 @@
       "Indonesia (Aqua Blu, expedition)"
     ],
     "headquarters": "Singapore",
-    "notes": "Searched: 'Mekong cruise scatter ashes Vietnam Cambodia Pandaw Heritage Line Aqua Mekong'. Only itinerary pages surfaced; nothing on ashes. Vietnamese and Cambodian law on river scattering was not found in this round."
+    "notes": "Searched: 'Mekong cruise scatter ashes Vietnam Cambodia Pandaw Heritage Line Aqua Mekong'. Only itinerary pages surfaced; nothing on ashes. Vietnamese and Cambodian law on river scattering was not found in this round.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2376,7 +2406,9 @@
       "Halong Bay (Lan Ha Bay)"
     ],
     "headquarters": "Ho Chi Minh City, Vietnam",
-    "notes": "Covered only by the combined Mekong search above; no Heritage Line material surfaced."
+    "notes": "Covered only by the combined Mekong search above; no Heritage Line material surfaced.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2521,7 +2553,9 @@
       "India"
     ],
     "headquarters": "Singapore / Yangon (as published historically)",
-    "notes": "Covered by the combined Mekong search; only Pandaw itinerary PDFs and reseller pages surfaced, none on ashes."
+    "notes": "Covered by the combined Mekong search; only Pandaw itinerary PDFs and reseller pages surfaced, none on ashes.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2664,7 +2698,9 @@
       "Yangtze River, China"
     ],
     "headquarters": "Chongqing, China (Century Cruises)",
-    "notes": "The planned search could not run (shared search budget exhausted). No operator policy and no Chinese regulation on scattering ashes in the Yangtze were checked. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "The planned search could not run (shared search budget exhausted). No operator policy and no Chinese regulation on scattering ashes in the Yangtze were checked. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2818,7 +2854,9 @@
       "Murray River (historically)"
     ],
     "headquarters": "Sydney, New South Wales, Australia",
-    "notes": "Searched: 'Captain Cook Cruises Sydney Harbour ashes scattering memorial cruise'. Captain Cook offers private charters, but nothing found says whether an ashes ceremony is allowed. A different operator (Sydney Harbour Escapes) markets ashes-scattering charters on the harbour, which says nothing about Captain Cook."
+    "notes": "Searched: 'Captain Cook Cruises Sydney Harbour ashes scattering memorial cruise'. Captain Cook offers private charters, but nothing found says whether an ashes ceremony is allowed. A different operator (Sydney Harbour Escapes) markets ashes-scattering charters on the harbour, which says nothing about Captain Cook.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -2961,7 +2999,9 @@
       "Murray River, South Australia"
     ],
     "headquarters": "Mannum, South Australia",
-    "notes": "The planned search could not run (shared search budget exhausted). Ownership line above is not verified. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "The planned search could not run (shared search budget exhausted). Ownership line above is not verified. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -3116,7 +3156,9 @@
       "Cape Horn"
     ],
     "headquarters": "Santiago / Punta Arenas, Chile",
-    "notes": "Searched: 'Australis Patagonia cruise ashes scatter Cape Horn'. Results cover itineraries and weather-dependent Cape Horn landings only. Not a river line; included because it was assigned in the regional group."
+    "notes": "Searched: 'Australis Patagonia cruise ashes scatter Cape Horn'. Results cover itineraries and weather-dependent Cape Horn landings only. Not a river line; included because it was assigned in the regional group.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -3259,7 +3301,9 @@
       "Egypt (Nile)"
     ],
     "headquarters": "Egypt",
-    "notes": "Searched: 'Egypt law scattering cremated ashes Nile cruise cremation illegal Egypt'. No Nile operator published a policy in the results. Legal context is in law-inland-waterways.json (Egypt)."
+    "notes": "Searched: 'Egypt law scattering cremated ashes Nile cruise cremation illegal Egypt'. No Nile operator published a policy in the results. Legal context is in law-inland-waterways.json (Egypt).",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -3403,7 +3447,9 @@
       "South Korea"
     ],
     "headquarters": "Japan / South Korea",
-    "notes": "Not searched: the shared search budget ran out before this group. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue."
+    "notes": "Not searched: the shared search budget ran out before this group. The shared web-search budget for this research turn ran out before every planned query could be run; a follow-up round can continue.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "status": "unverified",
@@ -3559,6 +3605,8 @@
       "Mississippi"
     ],
     "headquarters": "Basel, Switzerland / Los Angeles, USA",
-    "notes": "Covered by another agent; recorded only because one forum-anecdote surfaced in this round's search. A forum anecdote never establishes policy."
+    "notes": "Covered by another agent; recorded only because one forum-anecdote surfaced in this round's search. A forum anecdote never establishes policy.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   }
 ]

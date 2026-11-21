@@ -7,7 +7,8 @@
     "unresolved": [
       "Exact lead time and the named department to contact were not captured.",
       "Whether the biodegradable container is released whole or the ashes are poured was not captured.",
-      "Whether the £270 fee is current."
+      "Whether the £270 fee is current.",
+      "Official page wording not confirmed in round 2 (bot protection); status is provisional."
     ],
     "needsDirectContact": true,
     "notes": "All P&O text was obtained from search-result snippets because pocruises.com could not be fetched from this environment. s1 snippets also stated: Certificate of Cremation must be brought on board; the person scattering must be booked on the cruise; ceremony on a sea day at least 12 nautical miles from land; not possible in protected waters such as the Norwegian Fjords; \"the ceremony is not a formal or religious ceremony\"; a certificate with latitude and longitude from the ship's log is provided.",
@@ -34,7 +35,7 @@
         "type": "official-policy-page",
         "quote": "There is a admin charge of £270 to conduct the scattering of ashes from our P&O Cruises ships.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s2",
@@ -43,7 +44,7 @@
         "type": "official-faq",
         "quote": "Yes it's possible to scatter ashes from our ships at sea on cruises of five nights or more. You'll require approval from the Captain in advance of your cruise",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. URL is an en-au locale path on pocruises.com."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       },
       {
         "id": "s3",
@@ -52,7 +53,7 @@
         "type": "official-policy-page",
         "quote": "The Captain or Senior Officer will accompany you to an outside area, typically a lower deck.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. The URL contains \"login-test/scattering-test\" and may be an unpublished test page; treat as weak evidence."
+        "accessNote": "Round 2 (2026-11-21): the domain is allowed, but the site's bot protection refused automated access (curl HTTP 403 Access Denied; a fetch tool got HTTP 503, or only a script shell). Wording still rests on the round 1 search-engine summary. Confirm in a browser or in writing before publishing."
       }
     ],
     "answers": {
@@ -218,14 +219,16 @@
           "s1"
         ]
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "blocked-by-bot-protection"
   },
   {
     "conflicts": [],
     "unresolved": [
-      "Fees, distance offshore, location choice, certificates of the committal and pet ashes not captured."
+      "Fee, coordinates or certificate afterward, and pet ashes not published."
     ],
-    "needsDirectContact": true,
+    "needsDirectContact": false,
     "notes": "Snippets also stated: ashes are to be kept in a secure, leakproof and sealed container; an on-board team member contacts the guest to make arrangements; wreaths must be free of ribbons, imitation flowers, containers, balloons and other non-biodegradable adornments (\"A small amount of wire or non-plastic string is permitted to hold the wreath together\"); \"we reserve the right to limit the number of guests attending the service.\" The FAQ lists a Guest Services phone number and email that were not captured verbatim.",
     "id": "fred-olsen-cruise-lines",
     "name": "Fred. Olsen Cruise Lines",
@@ -240,17 +243,17 @@
     ],
     "headquarters": "Ipswich, England, UK",
     "status": "officially-permitted",
-    "statusRationale": "Fred. Olsen's own FAQ says guests may bring cremated remains or a commemorative wreath aboard for a memorial commemoration, pre-booked with Guest Services.",
+    "statusRationale": "Fred. Olsen's FAQ, read directly on 2026-11-21, allows guests to bring cremated remains or a wreath aboard for a memorial commemoration and publishes the full procedure; each service is subject to ship management approval.",
     "evidenceLevel": "official-policy",
     "sources": [
       {
         "id": "s1",
         "url": "https://www.fredolsencruises.com/faqs/on-board/can-i-scatter-ashes-at-sea",
-        "title": "Can I scatter ashes at sea?",
+        "title": "Fred. Olsen FAQ: Can I scatter ashes at sea?",
         "type": "official-faq",
-        "quote": "contact us at least seven days in advance of your cruise",
+        "quote": "The ship must be at least 12 nautical miles from land before a commemorative service can take place.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. Same article also at faqs.fredolsencruises.com/portal/en/kb/articles/can-i-scatter-ashes-at-sea."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, page HTML read); quote checked word for word against the page. Email addresses were Cloudflare-obfuscated in the HTML and decoded locally."
       },
       {
         "id": "s2",
@@ -259,26 +262,26 @@
         "type": "official-faq",
         "quote": "please present a certificate confirming that it is bio-degradable.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page."
+        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. (Round 1 record, not re-verified in round 2.)"
       }
     ],
     "answers": {
       "permitted": {
-        "answer": "Yes; guests may bring cremated remains or a commemorative wreath aboard for a memorial commemoration.",
+        "answer": "Yes: guests may bring cremated remains or a commemorative wreath aboard \"to carry out a memorial commemoration during your cruise.\"",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "documentedOrIndividualApproval": {
-        "answer": "Documented policy; the ceremony must be pre-booked with Guest Services.",
+        "answer": "Documented policy; each service \"is subject to the approval of the ships management and cannot be guaranteed.\"",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "advanceNotice": {
-        "answer": "Required.",
+        "answer": "Yes.",
         "basis": "official",
         "sources": [
           "s1"
@@ -292,117 +295,134 @@
         ]
       },
       "contactDepartment": {
-        "answer": "Guest Services (before sailing); an on-board team member then makes the arrangements.",
+        "answer": "Guest Services, 0800 0355 122 or guest.services@fredolsen.co.uk; an on-board team member then makes the arrangements.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "writtenApplication": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "No form; Guest Services takes details by phone or email.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "deathOrCremationCertificate": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "containerRequirements": {
-        "answer": "Secure, leakproof and sealed container; if the container goes into the water, a certificate confirming it is biodegradable must be presented.",
+        "answer": "Ashes kept in \"a secure, leakproof and sealed container.\"",
         "basis": "official",
         "sources": [
-          "s1",
-          "s2"
+          "s1"
         ]
       },
       "biodegradableUrns": {
-        "answer": "Required if the container enters the water (certificate of biodegradability).",
+        "answer": "If the container goes into the sea, present a certificate that it is biodegradable once on board.",
         "basis": "official",
         "sources": [
-          "s2"
+          "s1"
         ]
       },
       "scatterOrReleaseUrn": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Either: ashes may be scattered, or dispersed with the container if it is certified biodegradable.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "privateCeremony": {
-        "answer": "A memorial service is held; the line may limit the number of guests attending.",
+        "answer": "A senior crew member supervises \"to ensure your privacy\"; the line may limit the number of guests attending.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "designatedArea": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Deck areas used for commemorative services; place agreed with ship management.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "crewParticipation": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "A member of senior crew supervises the commemoration.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "chaplainCelebrant": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "fees": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "distanceOffshore": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "At least 12 nautical miles from land.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "shipSelectsLocation": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Place, date and time are agreed between guests and the ship's management team.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "familyRequestLocation": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Place, date and time are agreed between guests and the ship's management team.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "weatherItineraryLimits": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Subject to ship management approval; cannot be guaranteed.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "gpsCoordinates": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "certificateConfirmation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "differsByVesselItinerary": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "petAshes": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "otherMemorialAssistance": {
-        "answer": "Commemorative wreaths are allowed (biodegradable only; a small amount of wire or non-plastic string permitted).",
+        "answer": "Biodegradable wreaths allowed (a small amount of wire or non-plastic string permitted); ribbons, imitation flowers, balloons and other non-biodegradable items prohibited. Remains cannot be taken ashore once on board.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       }
-    }
+    },
+    "wordingConfirmed": true,
+    "round2": "verified-direct"
   },
   {
     "conflicts": [],
@@ -423,160 +443,162 @@
     ],
     "headquarters": "Purfleet, Essex, England, UK",
     "status": "conditionally-permitted",
-    "statusRationale": "Ambassador's FAQ says it may be able to offer a scattering, at the discretion of local port authorities, after an enquiry to Guest Services; no guarantee or procedure is published.",
+    "statusRationale": "Ambassador's FAQ, read directly on 2026-11-21, says only that it \"may be able to offer this\" at the discretion of local port authorities, after enquiries that may take time.",
     "evidenceLevel": "official-policy",
     "sources": [
       {
         "id": "s1",
         "url": "https://www.ambassadorcruiseline.com/faqs/",
-        "title": "FAQS",
+        "title": "Ambassador Cruise Line FAQs (Can I scatter a loved one's ashes during my cruise?)",
         "type": "official-faq",
-        "quote": "They may be able to offer this, but it is at the discretion of the local port authorities, who set their own regulations.",
+        "quote": "We may be able to offer this however, this is at the discretion of the local port authorities and we must follow their regulations.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, page HTML read); quote checked word for word against the page. Round 1 quote was a paraphrase; replaced with the exact wording."
       }
     ],
     "answers": {
       "permitted": {
-        "answer": "Possibly; offered at the discretion of local port authorities.",
+        "answer": "Possibly: \"We may be able to offer this however, this is at the discretion of the local port authorities\".",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "documentedOrIndividualApproval": {
-        "answer": "Individual approval on enquiry; approval may take some time.",
+        "answer": "Individual enquiry; approval \"may take some time\".",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "advanceNotice": {
-        "answer": "Implied by the enquiry process; approval \"may take some time\".",
+        "answer": "Implied: contact Guest Services before the cruise to start the enquiry.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "leadTime": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "contactDepartment": {
-        "answer": "Guest Services Team, guestservices@ambassadorcruiseline.com (as published).",
+        "answer": "Guest Services Team, guestservices@ambassadorcruiseline.com",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "writtenApplication": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "deathOrCremationCertificate": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "containerRequirements": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "biodegradableUrns": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "scatterOrReleaseUrn": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "privateCeremony": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "designatedArea": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "crewParticipation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "chaplainCelebrant": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "fees": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "distanceOffshore": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "shipSelectsLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "familyRequestLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "weatherItineraryLimits": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "gpsCoordinates": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "certificateConfirmation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "differsByVesselItinerary": {
-        "answer": "Depends on local port authority regulations.",
+        "answer": "Depends on the local port authorities' regulations.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "petAshes": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "otherMemorialAssistance": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": true,
+    "round2": "verified-direct"
   },
   {
     "conflicts": [
-      "Distance wording differs between FAQ copies: \"12 nautical miles from land\" (s1) vs \"12 miles out to sea from any port\" (s2)."
+      "Distance: \"12 nautical miles from land\" and \"12 miles out to sea from any port\" both appear on the same FAQ (round 1 thought they were two copies). Read together: international waters, at least 12 nm from land. Resolved."
     ],
     "unresolved": [
-      "Booking process, notice period, container type, fees and ceremony details not published."
+      "Notice period, urn type for release, fees and ceremony format not published."
     ],
-    "needsDirectContact": true,
+    "needsDirectContact": false,
     "notes": "Snippets also stated: scatterings follow international regulations including MARPOL; non-biodegradable decorations such as ribbon, plastic flowers and balloons are prohibited and wreaths/flowers must be decomposable; remains must stay on board until the commemoration and cannot be taken ashore once on board; a copy of the death certificate is required; date and time depend on environmental restrictions; the family is responsible for the ashes and Marella does not accept liability.",
     "id": "marella-cruises",
     "name": "Marella Cruises",
@@ -590,7 +612,7 @@
     ],
     "headquarters": "Luton, England, UK",
     "status": "officially-permitted",
-    "statusRationale": "The Marella FAQ hosted on tui.co.uk and tuiholidays.ie says ashes can be scattered in international waters and sets conditions.",
+    "statusRationale": "Marella's FAQ on tui.co.uk, read on 2026-11-21 through a fetch tool (paraphrased except one exact quote), says ashes can be scattered in international waters and sets out the conditions.",
     "evidenceLevel": "official-policy",
     "sources": [
       {
@@ -598,9 +620,9 @@
         "url": "https://www.tui.co.uk/destinations/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered",
         "title": "Can I bring a loved one's ashes onboard a Marella cruise ship to be scattered?",
         "type": "official-faq",
-        "quote": "at least 12 nautical miles from land, and outside of any marine protected areas",
+        "quote": "Ashes can be scattered in international waters - that's 12 miles out to sea from any port",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. A second copy exists at tui.co.uk/destinations/faq/marella-cruises/miscellaneous/..."
+        "accessNote": "curl refused (HTTP 403, bot protection). Read on 2026-11-21 through a fetch tool that returned a paraphrase plus this exact quote (the page uses an en dash, shown here as a hyphen). Re-read the full wording in a browser before publishing."
       },
       {
         "id": "s2",
@@ -609,7 +631,7 @@
         "type": "official-faq",
         "quote": "Ashes can be scattered in international waters - that's 12 miles out to sea from any port - and we're happy to help in any way we can.",
         "verified": "2026-11-21",
-        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page."
+        "accessNote": "WebFetch blocked by session network policy (host not resolvable); text taken from search-engine result snippets/summaries, not a direct page read. Re-verify wording on the live page. (Round 1 record, not re-verified in round 2.)"
       }
     ],
     "answers": {
@@ -617,137 +639,143 @@
         "answer": "Yes, in international waters, under stated conditions.",
         "basis": "official",
         "sources": [
-          "s1",
-          "s2"
+          "s1"
         ]
       },
       "documentedOrIndividualApproval": {
-        "answer": "Documented FAQ policy.",
+        "answer": "Documented FAQ policy; arranged on board with the Guest Experience Coordinator.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "advanceNotice": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Contact TUI with booking details before travelling, and tell the airline.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "leadTime": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "contactDepartment": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "TUI (contact page) before travelling; Guest Experience Coordinator on board.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "writtenApplication": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "deathOrCremationCertificate": {
-        "answer": "A copy of the death certificate is required.",
+        "answer": "A copy of the death certificate.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "containerRequirements": {
-        "answer": "Not published",
-        "basis": "unknown",
-        "sources": []
+        "answer": "Leak-proof, sealed container that can pass X-ray.",
+        "basis": "official",
+        "sources": [
+          "s1"
+        ]
       },
       "biodegradableUrns": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "scatterOrReleaseUrn": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "privateCeremony": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "designatedArea": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "crewParticipation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "chaplainCelebrant": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "fees": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "distanceOffshore": {
-        "answer": "At least 12 nautical miles from land and outside marine protected areas (s1); \"12 miles out to sea from any port\" (s2).",
+        "answer": "At least 12 nautical miles from land and outside marine protected areas; the FAQ also says \"12 miles out to sea from any port\".",
         "basis": "official",
         "sources": [
-          "s1",
-          "s2"
+          "s1"
         ]
       },
       "shipSelectsLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "familyRequestLocation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "weatherItineraryLimits": {
-        "answer": "Date and time depend on environmental restrictions; outside marine protected areas; remains must stay aboard until the commemoration.",
+        "answer": "Follows international rules including MARPOL; outside marine protected areas.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       },
       "gpsCoordinates": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "certificateConfirmation": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "differsByVesselItinerary": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "petAshes": {
-        "answer": "Not published",
+        "answer": "Not published on the official page (read 2026-11-21).",
         "basis": "unknown",
         "sources": []
       },
       "otherMemorialAssistance": {
-        "answer": "Biodegradable wreaths or flowers allowed; non-biodegradable adornments prohibited.",
+        "answer": "Anything else thrown overboard must be biodegradable; ribbon, plastic flowers and balloons prohibited. Remains stay aboard until the service and cannot be taken ashore. The ashes are the guest's responsibility.",
         "basis": "official",
         "sources": [
           "s1"
         ]
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "verified-via-fetch-tool-paraphrase"
   },
   {
     "conflicts": [],
@@ -904,7 +932,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1070,7 +1100,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1226,7 +1258,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1370,7 +1404,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1525,7 +1561,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1667,7 +1705,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1809,7 +1849,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -1953,7 +1995,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2096,7 +2140,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2239,7 +2285,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2394,7 +2442,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2538,7 +2588,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2701,7 +2753,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2854,7 +2908,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -2998,7 +3054,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -3142,7 +3200,9 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "conflicts": [],
@@ -3285,6 +3345,8 @@
         "basis": "unknown",
         "sources": []
       }
-    }
+    },
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   }
 ]

@@ -4,11 +4,11 @@
     "topic": "airport-security-us",
     "entity": "TSA",
     "entityType": "government",
-    "rule": "Cremated remains are allowed in both carry-on and checked bags (special instructions for carry-on). A carry-on container must pass through the X-ray machine; if the officer cannot clear it, it is not permitted. Officers will not open the container, even if the passenger asks.",
+    "rule": "TSA: cremated remains are allowed in carry-on bags (special instructions) and in checked bags; some airlines do not allow them in checked bags; a container that X-rays as opaque is not allowed; officers will not open the container even if asked; the officer decides.",
     "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains",
-    "quote": "TSA officers will not open a container, even if requested by the passenger.",
+    "quote": "Some airlines do not allow cremated remains in checked bags",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Read on 2026-11-21 through a fetch tool (curl got HTTP 403 bot protection). The tool returned a paraphrase plus this one exact quote; page shows 'Last Updated on July 10, 2018'. Re-read the full wording in a browser before quoting more.",
     "notes": "Exact wording from snippet; snippet also summarizes \"Carry On Bags: Yes (Special Instructions), Checked Bags: Yes\". TSA adds that some airlines do not allow cremated remains in checked bags. www.tsa.gov returned ENOTFOUND to direct fetch."
   },
   {
@@ -20,7 +20,7 @@
     "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains",
     "quote": "To facilitate screening, we suggest that you purchase a temporary or permanent crematory container made of a lighter weight material, such as wood or plastic.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 2 (2026-11-21): the fetch tool confirmed the page suggests a lighter container such as wood or plastic (paraphrase only). The exact sentence in 'quote' is still from the round 1 search snippet.",
     "notes": "Third-party blogs often restate this as a requirement; TSA wording is \"suggest\". Archived TSA page (webarchive.library.unt.edu ... editorial_1296.shtm) said TSA cannot state for certain whether a particular container will pass X-ray."
   },
   {
@@ -32,7 +32,7 @@
     "url": "https://www.tsa.gov/blog/2018/07/10/ways-travel-cremated-remains",
     "quote": "travelers are allowed to travel with cremains in a checked bag, however it is recommended to do so in a carry-on bag",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 2 (2026-11-21): this URL now returns TSA's general 'Travel Tips' page with no cremated-remains content. The quoted sentence could not be found; treat the blog as unavailable and rely on the What Can I Bring page.",
     "notes": "Blog post dated 2018-07-10; official but older. Phone number is TSA Contact Center, not a business number for this site."
   },
   {
@@ -340,12 +340,12 @@
     "topic": "customs-uk",
     "entity": "GOV.UK (UK Government)",
     "entityType": "government",
-    "rule": "When leaving a country with human ashes you will normally need the death certificate and the certificate of cremation; each country has its own rules and may require more.",
+    "rule": "GOV.UK: you do not need a permit to bring ashes to the UK; you can usually carry them on the plane or in the hold, but should tell the airline in advance and take the cremation certificate. Country-specific bereavement guidance covers other requirements.",
     "url": "https://www.gov.uk/guidance/what-to-do-when-someone-dies-abroad",
-    "quote": "",
+    "quote": "You do not need a permit to bring ashes to the UK.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Search summary only; exact wording not captured. Guidance is framed around bringing ashes from abroad into the UK. No single GOV.UK checklist for taking ashes out of the UK was found. mygov.scot says ashes can usually be carried on a plane or in hold luggage, tell the airline in advance and bring the cremation certificate (https://www.mygov.scot/death-abroad): wording not captured."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word.",
+    "notes": "Section 'Bringing ashes back to the UK'. The page is about bringing ashes into the UK; no GOV.UK page about taking ashes out of the UK for a cruise was found (a guessed 'taking ashes abroad' URL returned 404; GOV.UK search returned only country death-abroad guides)."
   },
   {
     "id": "abf-australia",
@@ -466,5 +466,17 @@
     "verified": "2026-11-21",
     "accessNote": "Synthesis of records above.",
     "notes": "Synthesis only: not a single source. Water-soluble/biodegradable urn specifics and multi-country cruise customs handling were not independently verified here; for port customs questions, the only official guidance found is to ask the relevant embassy/consulate and the cruise line."
+  },
+  {
+    "id": "govuk-italy",
+    "topic": "customs-eu",
+    "entity": "GOV.UK (UK Government), Italy bereavement guidance",
+    "entityType": "government",
+    "rule": "Example of national rules: GOV.UK's Italy guidance says residents may be able to keep ashes at home or scatter them, but not always, and need authorisation from the town hall.",
+    "url": "https://www.gov.uk/guidance/when-someone-dies-in-italy",
+    "quote": "If you live in Italy, you may be able to keep the ashes at home or scatter them. However, this is not always possible and you will need to get authorisation from the town hall.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word.",
+    "notes": "Shows that coastal and port states set their own rules; not a rule for cruise ships."
   }
 ]

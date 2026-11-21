@@ -59,29 +59,29 @@
     "id": "US-05",
     "jurisdiction": "United States",
     "topic": "EPA Burial at Sea Reporting Tool",
-    "rule": "EPA operates an online Burial at Sea Reporting Tool for the 30-day report, reportedly at https://burialatsea.epa.gov/; it asks for the deceased's name, burial date, departure location, type of remains, operator contact and coordinates where known.",
-    "citation": "EPA, Burial at Sea Reporting Tool fact sheet (May 13, 2019)",
-    "url": "https://burialatsea.epa.gov/",
+    "rule": "EPA's online Burial at Sea Reporting Tool (https://burialatsea.epa.gov/) takes the 30-day report, as a guest or with an account. It asks for contact details of the person responsible for the arrangements (a funeral director, a relative or a designated person) and of the person responsible for the vessel, the deceased's name, burial date and location (coordinates in decimal degrees if known, or picked on a map). No death certificate needs to be sent.",
+    "citation": "EPA, Burial at Sea page; Burial at Sea Reporting Tool Fact Sheet (May 13, 2019)",
+    "url": "https://www.epa.gov/sites/default/files/2019-05/documents/burial_at_sea_reporting_tool_factsheet_may_13_2019.pdf",
     "sourceType": "government-guidance",
-    "quote": "",
+    "quote": "This individual may be a funeral director, a relative of the deceased, or a person designated to report the burial at sea.",
     "verified": "2026-11-21",
     "appliesTo": "Anyone reporting under 40 CFR 229.1(d)",
-    "confidence": "partially-confirmed",
-    "notes": "Seen only in a web-search summary of EPA snapshot pages (19january2021snapshot.epa.gov/ocean-dumping/burial-sea-reporting-tool-fact-sheet_.html and the May 2019 fact sheet PDF). Not opened in this session: the research environment's network allowlist blocked this host (DNS failure), and the shared web-search budget was exhausted after four searches. Status is 'couldn't verify', not evidence that the statement is false. Confirm the tool's current URL and status on the live EPA site before publishing."
+    "confidence": "confirmed",
+    "notes": "Fact sheet PDF and the EPA Burial at Sea page opened directly on 2026-11-21. The EPA page adds: 'Please note that you do not need to submit documentation, such as a Certificate of Death, to the EPA when reporting a burial at sea.' The tool host burialatsea.epa.gov itself is outside this session's network and was not opened; its address is confirmed by both EPA documents."
   },
   {
     "id": "US-06",
     "jurisdiction": "United States",
     "topic": "EPA Burial at Sea web page and FAQ",
-    "rule": "EPA's Burial at Sea page explains the general permit (no application or prior notice to EPA), the 3 nm rule for cremated remains, and (per the search summary) that pet or other animal ashes may not be mixed with human cremated remains under the general permit. Its statements on non-decomposable items, inland waters and aircraft could not be read.",
+    "rule": "EPA's Burial at Sea page (last updated August 26, 2026) confirms: the MPRSA general permit at 40 CFR 229.1 covers cremated remains; no application, prior notice or fee; cremated remains in ocean waters of any depth at least three nautical miles from land; 'three nautical miles from shore' measured from the ordinary low water mark or a closing line across bays and rivers; pets and non-human remains excluded, and pet ashes may not be mixed with human ashes; only readily decomposable flowers and wreaths; ashes may be placed in a container that has no plastic, does not float and ideally degrades quickly; no balloons, rockets or burning boats; report within 30 days to the EPA Region the vessel departed from.",
     "citation": "EPA, Burial at Sea",
     "url": "https://www.epa.gov/ocean-dumping/burial-sea",
     "sourceType": "government-guidance",
-    "quote": "",
+    "quote": "Cremated remains shall be buried in or on ocean waters of any depth provided that such burial takes place at least three nautical miles from land.",
     "verified": "2026-11-21",
     "appliesTo": "General public",
-    "confidence": "partially-confirmed",
-    "notes": "Live page and 2021/2025 snapshots could not be opened: www.epa.gov and 19january2025snapshot.epa.gov failed DNS in this environment. Claims above come only from a search-engine summary. The 'no animal ashes' and 'no application or prior notice' points need direct confirmation."
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word. Page states 'Last updated on August 26, 2026'."
   },
   {
     "id": "US-07",
@@ -101,15 +101,15 @@
     "id": "US-08",
     "jurisdiction": "United States",
     "topic": "Inland waters and the Clean Water Act",
-    "rule": "EPA guidance reportedly states that the MPRSA general permit covers only ocean waters, and that scattering in inland waters (rivers, lakes, bays landward of the baseline) may fall under the Clean Water Act and state rules; families are told to check with the state.",
+    "rule": "EPA: scattering in lakes, rivers or other inland waters is not subject to federal regulation under the MPRSA; states may regulate it, some states prohibit it, and states may authorize burials in inland waters (rivers, lakes, bays) under state law and/or the Clean Water Act. Families should contact the state environmental agency, health agency or mortuary board.",
     "citation": "Clean Water Act, 33 U.S.C. 1251 et seq.; EPA Burial at Sea page",
     "url": "https://www.epa.gov/ocean-dumping/burial-sea",
     "sourceType": "government-guidance",
-    "quote": "",
+    "quote": "Scattering of cremated remains in lakes, rivers, or other inland waters is not subject to federal regulation under the MPRSA.",
     "verified": "2026-11-21",
     "appliesTo": "Scattering landward of the baseline",
-    "confidence": "unverified",
-    "notes": "Not opened in this session: the research environment's network allowlist blocked this host (DNS failure), and the shared web-search budget was exhausted after four searches. Status is 'couldn't verify', not evidence that the statement is false. Do not state the exact EPA wording until the page is read. The 40 CFR 220.2 'ocean waters' definition (US-07) confirms that waters landward of the baseline are outside the general permit."
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
   },
   {
     "id": "US-09",
@@ -311,15 +311,15 @@
     "id": "UK-01",
     "jurisdiction": "United Kingdom",
     "topic": "Burial at sea and scattering ashes",
-    "rule": "GOV.UK states that permission (a marine licence from the MMO in English waters) is required for a burial at sea. Whether scattering ashes is exempt from licensing was not confirmed this session.",
+    "rule": "GOV.UK: a marine licence from the Marine Management Organisation is required for a burial at sea (of a body) in English waters or Northern Irish offshore waters, but no licence or permission is needed to scatter ashes at sea after a cremation. Wales, inshore Northern Ireland and Scotland have their own contacts.",
     "citation": "Marine and Coastal Access Act 2009; GOV.UK 'Burial at sea'",
-    "url": "https://www.gov.uk/burial-at-sea",
+    "url": "https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england",
     "sourceType": "government-guidance",
-    "quote": "",
+    "quote": "You don't need a licence or permission to scatter ashes at sea after a cremation.",
     "verified": "2026-11-21",
     "appliesTo": "UK marine area (England: MMO; Scotland: Marine Directorate)",
-    "confidence": "partially-confirmed",
-    "notes": "Only a search summary was seen ('Permission is required for a burial at sea in the UK marine area'). Not opened in this session: the research environment's network allowlist blocked this host (DNS failure), and the shared web-search budget was exhausted after four searches. Status is 'couldn't verify', not evidence that the statement is false. Marine Scotland guidance not checked."
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word. https://www.gov.uk/burial-at-sea redirects here; page title 'How to arrange a burial at sea in the UK marine area'; latest update 2026-03-25. Applies to the UK marine area only."
   },
   {
     "id": "AU-01",
@@ -544,5 +544,47 @@
     "appliesTo": "Families planning a scattering on a cruise",
     "confidence": "partially-confirmed",
     "notes": "Analysis built from the confirmed US texts and the unverified international framework above."
+  },
+  {
+    "id": "US-18",
+    "jurisdiction": "United States",
+    "topic": "Remains loaded abroad, placed in US waters",
+    "rule": "EPA: the general permit is not available for human remains transported from outside the United States for placement in US ocean waters within 12 nautical miles from shore; that needs an MPRSA special permit.",
+    "citation": "EPA, Burial at Sea FAQ",
+    "url": "https://www.epa.gov/ocean-dumping/burial-sea",
+    "sourceType": "government-guidance",
+    "quote": "The MPRSA general permit is not available for human remains transported from a location outside of the United States for placement in U.S. ocean waters within 12 nautical miles from shore.",
+    "verified": "2026-11-21",
+    "appliesTo": "Foreign-embarked remains on ships approaching the US coast",
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+  },
+  {
+    "id": "US-19",
+    "jurisdiction": "United States",
+    "topic": "Remains taken from the US into another country's waters",
+    "rule": "EPA: it depends on the other country's laws; the MPRSA rules still apply to remains taken from the US, and the country whose waters are used must be contacted and its laws followed; some countries may prohibit burials at sea in their waters.",
+    "citation": "EPA, Burial at Sea FAQ",
+    "url": "https://www.epa.gov/ocean-dumping/burial-sea",
+    "sourceType": "government-guidance",
+    "quote": "Some countries may prohibit burials at sea in their waters.",
+    "verified": "2026-11-21",
+    "appliesTo": "Ships leaving US ports for foreign waters",
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
+  },
+  {
+    "id": "US-20",
+    "jurisdiction": "United States",
+    "topic": "States and ocean waters",
+    "rule": "EPA: states may not authorize burials in ocean waters or relax the three-nautical-mile requirement, but may impose additional requirements within state jurisdiction.",
+    "citation": "EPA, Burial at Sea FAQ (MPRSA sections 106(a) and 106(d))",
+    "url": "https://www.epa.gov/ocean-dumping/burial-sea",
+    "sourceType": "government-guidance",
+    "quote": "States may not relax the MPRSA General Permit requirement that burials in ocean waters must be conducted at least three nautical miles from shore.",
+    "verified": "2026-11-21",
+    "appliesTo": "US states and territories",
+    "confidence": "confirmed",
+    "notes": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
   }
 ]

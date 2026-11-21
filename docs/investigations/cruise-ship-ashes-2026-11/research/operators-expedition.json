@@ -144,7 +144,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Searches returned Lindblad terms and conditions, privacy policy and FAQ pages (au.expeditions.com/plan/faqs, au.expeditions.com/terms-conditions), but search summaries reported no ashes content; the pages themselves could not be opened. Antarctic and Galapagos sailings are also subject to the protected-area context in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Searches returned Lindblad terms and conditions, privacy policy and FAQ pages (au.expeditions.com/plan/faqs, au.expeditions.com/terms-conditions), but search summaries reported no ashes content; the pages themselves could not be opened. Antarctic and Galapagos sailings are also subject to the protected-area context in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "aurora-expeditions",
@@ -289,7 +291,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "The Aurora FAQ page (https://www.aurora-expeditions.com/aurora-expeditions-faqs) surfaced in search; its summary listed ships, wildlife, cabins and pricing topics, nothing on ashes. Aurora hosts the IAATO Reducing Waste Guidelines for Visitors PDF on its site (general waste guidance, no mention of remains found). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "The Aurora FAQ page (https://www.aurora-expeditions.com/aurora-expeditions-faqs) surfaced in search; its summary listed ships, wildlife, cabins and pricing topics, nothing on ashes. Aurora hosts the IAATO Reducing Waste Guidelines for Visitors PDF on its site (general waste guidance, no mention of remains found). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "quark-expeditions",
@@ -432,7 +436,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Only sustainability pages surfaced. Site-restricted search for 'ashes cremated remains' returned only blog history pieces (Shackleton, Grytviken), not policy. Member of IAATO and AECO per secondary listing (Virtuoso). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Only sustainability pages surfaced. Site-restricted search for 'ashes cremated remains' returned only blog history pieces (Shackleton, Grytviken), not policy. Member of IAATO and AECO per secondary listing (Virtuoso). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "hx-hurtigruten-expeditions",
@@ -579,7 +585,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "HX FAQ (https://travelhx.com/en/support/faq) and terms pages surfaced but no ashes content was reported; travelhx.com could not be resolved from this session. Svalbard sailings: see the Svalbard permit regulation in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "HX FAQ (https://travelhx.com/en/support/faq) and terms pages surfaced but no ashes content was reported; travelhx.com could not be resolved from this session. Svalbard sailings: see the Svalbard permit regulation in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "swan-hellenic",
@@ -724,7 +732,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Searches returned no Swan Hellenic material on ashes; results were about Greece generally. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Searches returned no Swan Hellenic material on ashes; results were about Greece generally. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "scenic-eclipse",
@@ -869,7 +879,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Scenic-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Scenic-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "emerald-cruises-yacht",
@@ -1013,7 +1025,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Emerald-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Emerald-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "atlas-ocean-voyages",
@@ -1158,7 +1172,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Atlas-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Atlas-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "american-cruise-lines",
@@ -1302,7 +1318,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Site-restricted search of americancruiselines.com returned only itinerary pages. US ocean scattering is governed by the EPA MPRSA general permit (3 nautical miles; see polar-protected-areas.json); inland/river scattering falls under state rules. Neither establishes what the line allows. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Site-restricted search of americancruiselines.com returned only itinerary pages. US ocean scattering is governed by the EPA MPRSA general permit (3 nautical miles; see polar-protected-areas.json); inland/river scattering falls under state rules. Neither establishes what the line allows. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "uncruise-adventures",
@@ -1448,7 +1466,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No UnCruise policy found. A cruisecritic forum thread (https://boards.cruisecritic.com/topic/2442903-scattering-ashes/) surfaced in results but its content about UnCruise was not visible; not used. Alaska and Galapagos context in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No UnCruise policy found. A cruisecritic forum thread (https://boards.cruisecritic.com/topic/2442903-scattering-ashes/) surfaced in results but its content about UnCruise was not visible; not used. Alaska and Galapagos context in polar-protected-areas.json. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "star-clippers",
@@ -1592,7 +1612,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Star Clippers-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Star Clippers-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "paul-gauguin-cruises",
@@ -1735,7 +1757,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "The pgcruises.com special-occasions page surfaced (https://www.pgcruises.com/onboard-experience/special-occasions); the search summary describes only honeymoon/anniversary blessings and weddings, nothing on ashes. French Polynesian rules not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "The pgcruises.com special-occasions page surfaced (https://www.pgcruises.com/onboard-experience/special-occasions); the search summary describes only honeymoon/anniversary blessings and weddings, nothing on ashes. French Polynesian rules not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "coral-expeditions",
@@ -1879,7 +1903,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No ashes policy found. Great Barrier Reef Marine Park Authority and Western Australian marine park rules were not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No ashes policy found. Great Barrier Reef Marine Park Authority and Western Australian marine park rules were not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "heritage-expeditions",
@@ -2024,7 +2050,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No ashes policy found. Heritage materials mention a Subantarctic Minimum Impact Code and entry permits for nature reserves (secondary handbook); New Zealand Department of Conservation rules on remains were not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No ashes policy found. Heritage materials mention a Subantarctic Minimum Impact Code and entry permits for nature reserves (secondary handbook); New Zealand Department of Conservation rules on remains were not researched. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "oceanwide-expeditions",
@@ -2169,7 +2197,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Site-restricted search returned only a blog on Frank Wild, whose ashes were reinterred at Grytviken, South Georgia in 2011 (a historical reinterment, not a passenger policy). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Site-restricted search returned only a blog on Frank Wild, whose ashes were reinterred at Grytviken, South Georgia in 2011 (a historical reinterment, not a passenger policy). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "antarctica21",
@@ -2311,7 +2341,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Antarctica21-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Antarctica21-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "albatros-expeditions",
@@ -2456,7 +2488,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Only itinerary listings (mostly third-party trip notes for Ocean Albatros) surfaced. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Only itinerary listings (mostly third-party trip notes for Ocean Albatros) surfaced. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "pearl-seas-cruises",
@@ -2598,7 +2632,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Pearl Seas-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Pearl Seas-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "victory-cruise-lines",
@@ -2741,7 +2777,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Victory-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Victory-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "alaskan-dream-cruises",
@@ -2893,7 +2931,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Recommend excluding from the guide or listing as no longer operating (verify before publication). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Recommend excluding from the guide or listing as no longer operating (verify before publication). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "metropolitan-touring",
@@ -3035,7 +3075,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Metropolitan Touring FAQ (https://www.metropolitan-touring.com/galapagos/faq/) surfaced but no ashes content reported. Galapagos National Park rules on remains were not found (see polar-protected-areas.json). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Metropolitan Touring FAQ (https://www.metropolitan-touring.com/galapagos/faq/) surfaced but no ashes content reported. Galapagos National Park rules on remains were not found (see polar-protected-areas.json). WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "ecoventura",
@@ -3177,7 +3219,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Ecoventura Travel Details page surfaced (https://ecoventura.com/travel-details/) but no ashes content reported. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Ecoventura Travel Details page surfaced (https://ecoventura.com/travel-details/) but no ashes content reported. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "variety-cruises",
@@ -3321,7 +3365,9 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "No Variety-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "No Variety-specific result. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   },
   {
     "id": "grand-circle-oat-small-ships",
@@ -3465,6 +3511,8 @@
       "Operator's own FAQ, booking terms and passenger contract not searched directly for 'ashes', 'cremated', 'remains', 'urn' (access blocked)."
     ],
     "needsDirectContact": true,
-    "notes": "Site-restricted search of oattravel.com returned only unrelated trip pages. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'."
+    "notes": "Site-restricted search of oattravel.com returned only unrelated trip pages. WebFetch and curl could not resolve any external host in this session (network allowlist); only search-engine summaries were available. Operator FAQ/terms pages could not be opened and searched for 'ashes', 'cremated', 'remains' or 'urn'.",
+    "wordingConfirmed": false,
+    "round2": "not-in-scope-domain-not-allowed"
   }
 ]
