@@ -56,3 +56,34 @@ records. Verification date for this round: 2026-11-21.
 Rules: an answer with no source is "unknown" (answer text "Not published").
 Never infer an answer from silence. Forum posts and blogs are labelled as
 such and never establish "officially-permitted". No em dashes anywhere.
+
+## Round 3 additions (2026-11-21)
+
+Status categories (round 3 rules, applied to every record):
+
+- `officially-permitted`: an authoritative operator source, read by us,
+  explicitly permits it, subject to its published requirements.
+- `conditionally-permitted`: an authoritative operator source, read by us,
+  says it may be approved individually or only in specified circumstances.
+- `not-permitted`: an authoritative operator source, read by us, explicitly
+  says it is not allowed or offered from its vessels.
+- `unverified`: no authoritative evidence read. A search-engine summary of
+  an official page is not enough; neither is any secondary source.
+
+Extra fields:
+
+- `basis` may be `unconfirmed-official`: the answer comes from a
+  search-engine summary of the operator's official page, which we could not
+  open (Carnival, MSC, P&O Cruises, Cunard). Kept as evidence, not as fact.
+- `previousStatus`: the status before round 3 reclassification.
+- `round2`, `round3`: how the record was checked in that round
+  (`verified-direct`, `verified-via-fetch-tool-paraphrase`,
+  `blocked-by-bot-protection`, `official-site-searched-nothing-found`,
+  `verified-official`, `searched-no-official-policy`,
+  `reclassified-unconfirmed-official-page`).
+- `wordingConfirmed`: true only when the official wording was read.
+- `researchLog`: every URL tried and its result, so a "no policy found"
+  status is documented rather than assumed.
+- `officialContact`: guest-services contact read on the official site.
+- `notCruiseLine`: true for charter operators kept as context (they are
+  excluded from the cruise-line comparison).

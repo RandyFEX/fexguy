@@ -4,24 +4,24 @@
     "topic": "airport-security-us",
     "entity": "TSA",
     "entityType": "government",
-    "rule": "TSA: cremated remains are allowed in carry-on bags (special instructions) and in checked bags; some airlines do not allow them in checked bags; a container that X-rays as opaque is not allowed; officers will not open the container even if asked; the officer decides.",
+    "rule": "TSA: cremated remains are allowed in carry-on bags (special instructions) and in checked bags; some airlines do not allow them in checked bags; a container that X-rays as opaque is not allowed; officers will not open the container even if asked; the officer at the checkpoint makes the final decision. Page last updated July 10, 2018.",
     "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains",
-    "quote": "Some airlines do not allow cremated remains in checked bags",
+    "quote": "Out of respect for the deceased, TSA officers will not open a container, even if requested by the passenger.",
     "verified": "2026-11-21",
-    "accessNote": "Read on 2026-11-21 through a fetch tool (curl got HTTP 403 bot protection). The tool returned a paraphrase plus this one exact quote; page shows 'Last Updated on July 10, 2018'. Re-read the full wording in a browser before quoting more.",
-    "notes": "Exact wording from snippet; snippet also summarizes \"Carry On Bags: Yes (Special Instructions), Checked Bags: Yes\". TSA adds that some airlines do not allow cremated remains in checked bags. www.tsa.gov returned ENOTFOUND to direct fetch."
+    "accessNote": "Round 3 (2026-11-21): curl via the fetch helper returned HTTP 403 (bot protection, not bypassed); the archive.org snapshot 20260925074124 exists but web.archive.org could not be reached from this session. Read via WebFetch: the tool returned exact sentences in quotation marks for 'open' and 'final decision' (quoted here) and partial sentences for 'opaque' and 'wood or plastic'; the rest is the tool's paraphrase. Re-read in a browser before quoting further.",
+    "notes": "Second exact sentence returned by WebFetch: 'The final decision rests with the TSA officer on whether an item is allowed through the checkpoint.' Also exact (from round 1): 'Some airlines do not allow cremated remains in checked bags'. Partial: 'If the container is made of a material that generates an opaque image,' and '...made of a lighter weight material, such as wood or plastic.' US rule only; never apply to other countries' airports."
   },
   {
     "id": "tsa-container-material",
     "topic": "airport-security-us",
     "entity": "TSA",
     "entityType": "government",
-    "rule": "TSA suggests (does not require) a temporary or permanent container made of a lighter material such as wood or plastic to make X-ray screening easier. Dense containers that the X-ray cannot see through may be refused at the checkpoint.",
+    "rule": "TSA suggests a temporary or permanent crematory container made of a lighter weight material such as wood or plastic; a container made of a material that generates an opaque X-ray image will not be allowed through.",
     "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains",
-    "quote": "To facilitate screening, we suggest that you purchase a temporary or permanent crematory container made of a lighter weight material, such as wood or plastic.",
+    "quote": "made of a lighter weight material, such as wood or plastic.",
     "verified": "2026-11-21",
-    "accessNote": "Round 2 (2026-11-21): the fetch tool confirmed the page suggests a lighter container such as wood or plastic (paraphrase only). The exact sentence in 'quote' is still from the round 1 search snippet.",
-    "notes": "Third-party blogs often restate this as a requirement; TSA wording is \"suggest\". Archived TSA page (webarchive.library.unt.edu ... editorial_1296.shtm) said TSA cannot state for certain whether a particular container will pass X-ray."
+    "accessNote": "Round 3 (2026-11-21): read via WebFetch (curl HTTP 403). Partial sentence returned in quotation marks by the tool; full sentence not obtained. archive.org unreachable from this session.",
+    "notes": "Exact full sentence still needs a browser read. JetBlue's own page restates TSA as recommending 'a lighter weight material, such as cardboard, wood or plastic' (see jetblue)."
   },
   {
     "id": "tsa-blog-2018",
@@ -32,7 +32,7 @@
     "url": "https://www.tsa.gov/blog/2018/07/10/ways-travel-cremated-remains",
     "quote": "travelers are allowed to travel with cremains in a checked bag, however it is recommended to do so in a carry-on bag",
     "verified": "2026-11-21",
-    "accessNote": "Round 2 (2026-11-21): this URL now returns TSA's general 'Travel Tips' page with no cremated-remains content. The quoted sentence could not be found; treat the blog as unavailable and rely on the What Can I Bring page.",
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 (bot protection); not re-verified. The round 2 finding (URL now shows a general Travel Tips page) stands. Earlier note: Round 2 (2026-11-21): this URL now returns TSA's general 'Travel Tips' page with no cremated-remains content. The quoted sentence could not be found; treat the blog as unavailable and rely on the What Can I Bring page.",
     "notes": "Blog post dated 2018-07-10; official but older. Phone number is TSA Contact Center, not a business number for this site."
   },
   {
@@ -44,7 +44,7 @@
     "url": "https://abcnews.go.com/blogs/lifestyle/2012/06/ashes-spilled-after-tsa-confrontation/",
     "quote": "It is TSA policy that under no circumstance should a crematory container be opened.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 3 (2026-11-21): not re-fetched (news source, secondary; budget spent on official pages). Remains secondary-news only. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
     "notes": "TSA statement as reported by news (secondary source quoting TSA). Shows policy is not always followed in practice."
   },
   {
@@ -56,8 +56,8 @@
     "url": "https://www.delta.com/us/en/baggage/additional-baggage-information/general-conditions-and-rules",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "No official Delta cremated-remains page surfaced; delta.com blocked to direct fetch (ENOTFOUND). Treat as unverified; contact Delta. Do not publish a Delta-specific rule from blogs."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 200 on the General Conditions & Rules page: the page text contains no mention of cremated remains, ashes or urns (checked word search). WebFetch: host not resolvable. One web search found no Delta cremated-remains page (only forums and funeral-home guides). Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "No official Delta cremated-remains page surfaced; delta.com blocked to direct fetch (ENOTFOUND). Treat as unverified; contact Delta. Do not publish a Delta-specific rule from blogs. Still unverified; contact Delta."
   },
   {
     "id": "american",
@@ -68,8 +68,8 @@
     "url": "https://www.aa.com/i18n/travel-info/baggage/specialty-and-sports.html",
     "quote": "When you travel with cremated remains, they'll be treated as your carry-on bag.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "aa.com blocked to direct fetch. Documentation statement (\"no special documents ... within the United States\") appears only in a mirror on britishairways.com/jba/aa, likely legacy US Airways text: unverified."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 on aa.com (www and /web/ paths) and aacargo.com/learn/humanremains.html; WebFetch: host not resolvable; no archive copy listed. One web search: search summary repeats the carry-on wording but no page text was read. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "aa.com blocked to direct fetch. Documentation statement (\"no special documents ... within the United States\") appears only in a mirror on britishairways.com/jba/aa, likely legacy US Airways text: unverified. Still unverified from the page; do not publish the quote as verified."
   },
   {
     "id": "united",
@@ -80,8 +80,8 @@
     "url": "https://www.united.com/ual/en/us/fly/travel/baggage/fragile.html",
     "quote": "If you're traveling with cremated human remains, we suggest that you transport them as a carry-on bag.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Quote reached via a third-party site quoting United; the United fragile-items page surfaced in search (at/ locale URL: https://united.com/ual/en/at/fly/travel/baggage/fragile.html). The us/ path above is the equivalent locale and is unconfirmed. Re-verify."
+    "accessNote": "Round 3 (2026-11-21): curl failed (connection not completed) on the us/ and at/ fragile-items URLs and unitedcargo.com TrustUA page; archive.org snapshot 20230222153606 exists for the us/ URL but web.archive.org is unreachable from this session. Search summary says the fragile page tells travelers to review TSA guidelines and, for international trips, check with a local consulate; United Cargo TrustUA ships casketed and cremated remains (not read). Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Quote reached via a third-party site quoting United; the United fragile-items page surfaced in search (at/ locale URL: https://united.com/ual/en/at/fly/travel/baggage/fragile.html). The us/ path above is the equivalent locale and is unconfirmed. Re-verify. Still unverified."
   },
   {
     "id": "southwest",
@@ -92,32 +92,32 @@
     "url": "https://support.southwest.com/helpcenter/article/Can-I-travel-with-human-cremated-remains",
     "quote": "Southwest Airlines will not accept human remains as checked baggage; however, a Customer may take cremated remains onboard a domestic U.S. or international flight as a carryon item under certain conditions.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Quote surfaced via Southwest Community forum posts quoting the policy (community.southwest.com), not the help article text itself. Official help article snippet only confirmed TSA inspection. Re-verify."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 200 but the help article body is loaded by JavaScript; no cremated-remains text in the HTML or embedded data. WebFetch: host not resolvable. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Quote surfaced via Southwest Community forum posts quoting the policy (community.southwest.com), not the help article text itself. Official help article snippet only confirmed TSA inspection. Re-verify. Still unverified from the page."
   },
   {
     "id": "alaska",
     "topic": "airline-us",
-    "entity": "Alaska Airlines",
+    "entity": "Alaska Airlines (Alaska Air Cargo)",
     "entityType": "airline",
-    "rule": "Alaska Air Cargo states passengers on Alaska passenger flights may bring cremated human remains as carry-on or checked baggage, subject to TSA screening rules.",
+    "rule": "Alaska Air Cargo's human remains page: cremated remains shipped as cargo meet the same minimum requirements as human remains (death certificate or permits as required by law; tightly closed, leak-proof container in an outer shipping container); customers on Alaska Airlines passenger flights may optionally bring cremated human remains on board as carry-on or checked baggage; it refers to TSA for screening. It also says it cannot accept shipments of human remains outside the United States.",
     "url": "https://www.alaskacargo.com/what-we-ship/human-remains",
-    "quote": "Optionally, customers on Alaska Airlines passenger flights may bring cremated human remains on board as carry-on or checked baggage.",
+    "quote": "Optionally, customers on Alaska Airlines passenger flights may bring cremated human remains on board as carry-on or checked baggage. Please visit the TSA website to learn about its security screening requirements.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official (Alaska Air Cargo site). Death-certificate requirement claims appear only on third-party sites: unverified. Whether the urn counts toward carry-on allowance: not published in results."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Official Alaska Air Cargo page (not the alaskaair.com passenger help page). The 'outside the United States' line is about cargo shipments of human remains."
   },
   {
     "id": "jetblue",
     "topic": "airline-us",
     "entity": "JetBlue",
     "entityType": "airline",
-    "rule": "Cremated human remains must be in a crematory container (urn) and are accepted only as a carry-on item; the urn does not count toward the personal item or carry-on allowance; a certified death certificate must be shown to an agent at the ticket counter. Pet remains are not accepted.",
+    "rule": "JetBlue accepts cremated human remains only as a carry-on item in a crematory container (urn); the urn does not count toward the personal item or carry-on allowance; it must be stowed under the seat or in an overhead bin and may not be held for taxi, takeoff and landing. Required at the ticket counter: a certified copy of the death certificate and an original/certified document or letter from the funeral director or crematorium. International travelers are solely responsible for destination documentation. If TSA cannot clear the urn, it will not be permitted onboard. JetBlue does not accept pet remains.",
     "url": "https://www.jetblue.com/help/cremated-remains",
     "quote": "Cremated human remains must be transported in a crematory container (urn) and will only be accepted as a carry-on item.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official help page. Also: \"JetBlue does not accept pet remains, cremated or otherwise.\" Third-party claim of a separate crematorium certificate requirement: unverified."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Also exact: 'JetBlue does not accept pet remains, cremated or otherwise.' and 'A certified copy of the death certificate.'"
   },
   {
     "id": "hawaiian",
@@ -128,20 +128,20 @@
     "url": "https://www.hawaiianairlines.com/",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Not found; no official page located.",
-    "notes": "Not found in search; hawaiianairlines.com not fetched. Unverified; contact airline."
+    "accessNote": "Round 3 (2026-11-21): one web search returned only third-party compilations (unverified quote 'You may carry-on or check-in the deceased in an urn or crematory container.'); guessed official URLs (special items page, domestic contract of carriage) returned HTTP 404.",
+    "notes": "Unverified; contact airline. Do not publish the third-party quote as Hawaiian policy."
   },
   {
     "id": "spirit-frontier",
     "topic": "airline-us",
     "entity": "Spirit Airlines / Frontier Airlines",
     "entityType": "airline",
-    "rule": "Not researched: search budget exhausted before these could be checked.",
-    "url": "",
-    "quote": "",
+    "rule": "Frontier (official FAQ and special-items PDF): Frontier does not accept human remains for shipment; cremated remains (human or animal) may be carried if the container is made of a material like wood or plastic that TSA can screen; TSA will not open the container; a container that cannot be screened is not allowed; a checked urn must be packed in a well-insulated, sturdy container; checked and carry-on both allowed (carry-on within carry-on dimensions). Spirit: no official page found.",
+    "url": "https://faq.flyfrontier.com/help/does-frontier-allow-transport-of-human-remains",
+    "quote": "Frontier does not accept human remains for shipment. Cremated remains (human or animal), however, may be carried if the container is made of a material like wood or plastic that can be screened by TSA.",
     "verified": "2026-11-21",
-    "accessNote": "Search not performed (session search limit reached).",
-    "notes": "Open item for follow-up."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text. Frontier PDF (https://www.flyfrontier.com/media/1206/baggage_fragile-and-special-items.pdf, redirected to a July 2026 PDF on cdn.sanity.io) also opened and read via pdftotext.",
+    "notes": "The page's sentence begins 'No,' (followed by a non-breaking space) before the quoted text. Spirit: one web search found only a third-party claim (carry-on or checked); unverified; a guessed Spirit support URL did not load. Split into two entities when merging if desired."
   },
   {
     "id": "british-airways",
@@ -152,32 +152,32 @@
     "url": "https://www.britishairways.com/content/information/help/faq/baggage/cremated-remains",
     "quote": "You can take cremated remains (ashes) onto our flights in either your hand baggage or checked baggage as part of your allowance.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Document wording \"Certificate of Death, or other country-specific equivalent\" came from a forum post quoting BA; the cremation-certificate mention was a search summary. Confirm on page."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 200 returned only a 'high demand' holding page (bot protection, not bypassed); WebFetch: host not resolvable. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Document wording \"Certificate of Death, or other country-specific equivalent\" came from a forum post quoting BA; the cremation-certificate mention was a search summary. Confirm on page. Still unverified from the page."
   },
   {
     "id": "air-canada",
-    "topic": "airline-international",
+    "topic": "airline-canada",
     "entity": "Air Canada",
     "entityType": "airline",
-    "rule": "Search-result summaries of aircanada.com report: from August 28, 2026, Air Canada no longer accepts cremated remains in checked baggage; up to 350 mL may be accepted as carry-on; larger amounts may need Air Canada Cargo AC Compassion; containers of plastic, wood or cardboard; screening officers cannot open the container; certificate of cremation and death certificate strongly recommended.",
+    "rule": "Effective August 28, 2026, Air Canada no longer accepts cremated remains in checked baggage; they can travel in carry-on baggage or via Air Canada Cargo AC Compassion, subject to CATSA (or equivalent) screening. Use plastic, wood or cardboard; avoid metal or dense materials. Screening officers are not authorized to open the container even if requested. Under 350 mL more likely to screen; over 350 mL may need AC Compassion. Screening outcomes are CATSA's and cannot be overruled by airline staff. Strongly recommends carrying the certificate of cremation and death certificate; check the destination's consulate.",
     "url": "https://www.aircanada.com/ca/en/aco/home/plan/baggage/carry-on.html",
-    "quote": "If the volume exceeds 350 mL, you may need to transport the cremated remains via our Air Canada Cargo – AC Compassion service.",
+    "quote": "Effective August 28, 2026, Air Canada will no longer accept cremated remains in checked baggage.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "IMPORTANT: the August 28, 2026 checked-bag change and the 350 mL figure are significant; regional aircanada.com pages were inconsistent (an au/ page still mentioned checked baggage). Must be confirmed on the live page before publication. Also https://aircanada.com/carryon."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Material change from earlier records: checked baggage no longer accepted from 2026-08-28. Also exact: 'Screening officers are not authorized to open the container, even if requested.'"
   },
   {
     "id": "qantas",
     "topic": "airline-international",
     "entity": "Qantas",
     "entityType": "airline",
-    "rule": "No official qantas.com passenger page found. Secondary sources say ashes may travel checked or carry-on, with a crematorium document, a sealed container and a 7 kg carry-on limit. Qantas Freight publishes a human remains and ashes service.",
+    "rule": "No official qantas.com passenger page read. Secondary sources say ashes may travel checked or carry-on, with a crematorium document, a sealed container and a 7 kg carry-on limit. Qantas Freight publishes a human remains and ashes service page.",
     "url": "https://freight.qantas.com/us-en/freight-services/special-movements/human-remains-ashes.html",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Official passenger page not found; freight page URL from search only.",
-    "notes": "Passenger rules unverified (from bare.com.au, bethelfunerals.com.au). Do not publish as Qantas policy without the official page."
+    "accessNote": "Round 3 (2026-11-21): curl to freight.qantas.com (us-en and au-en) did not complete (connection failure); one web search found only funeral-company guides for passenger rules.",
+    "notes": "Passenger rules unverified. Do not publish as Qantas policy. Jetstar (Qantas group) has an official help page (jetstar.com/us/en/help/articles/travelling-with-cremated-remains-or-ashes) that could not be loaded either."
   },
   {
     "id": "emirates",
@@ -188,7 +188,7 @@
     "url": "https://www.skycargo.com/media/2737/emirates-skycargo-emirates-hum-leaflet.pdf",
     "quote": "all original documents including the passport, death certificate and cremation certificate will be required",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 3 (2026-11-21): the leaflet URL returned HTTP 404 (also the :443 variant), and a second SkyCargo flyer (media/2860/emirates-hum-e-flyer-n23.pdf) returned HTTP 404. One web search found no emirates.com passenger page. Quote remains unverified (from an earlier search snippet).",
     "notes": "Cabin/hold rules (one of death certificate, cremation certificate or passport for cabin; all for hold) are from urnsforashes.co.uk: unverified."
   },
   {
@@ -196,12 +196,12 @@
     "topic": "airline-international",
     "entity": "Lufthansa",
     "entityType": "airline",
-    "rule": "No official lufthansa.com page on urns found.",
-    "url": "",
+    "rule": "No official lufthansa.com page on urns in the cabin found. A search summary of Lufthansa's dangerous-goods page says human remains in the form of ashes are excluded from a dangerous-goods restriction (not read).",
+    "url": "https://www.lufthansa.com/de/en/dangerous-goods",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "No official page located.",
-    "notes": "Unverified. Comparable carriers: Iberia (urn in hand luggage, death/cremation certificates may be requested), Transavia (hand luggage only, no metal urn), LOT (advance notice, cremation and death certificates)."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 on the dangerous-goods page (bot protection, not bypassed); one web search found no urn page.",
+    "notes": "Unverified; contact Lufthansa."
   },
   {
     "id": "transavia",
@@ -212,8 +212,8 @@
     "url": "https://www.transavia.com/help/en-eu/baggage/allowed-in-baggage/urn",
     "quote": "You need a death certificate and statement from the crematorium with you, stating that the ashes in the urn belong to the deceased.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official Transavia page. No official KLM or Air France page found; a funeral-services site claims Air France-KLM allow cabin or hold: unverified."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 (bot protection); no archive copy listed. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Official Transavia page. No official KLM or Air France page found; a funeral-services site claims Air France-KLM allow cabin or hold: unverified. Still unverified from the page."
   },
   {
     "id": "iberia",
@@ -224,8 +224,8 @@
     "url": "https://help.iberia.com/frequently_asked_question/can-i-carry-ashes-in-an-urn-in-my-hand-luggage",
     "quote": "Ashes or cremated human remains can be carried in hand luggage if they are in a suitable urn.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official help page."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 on both help URLs; archive.org snapshot 20260519223423 exists but web.archive.org is unreachable from this session. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Official help page. Still unverified from the page."
   },
   {
     "id": "lot",
@@ -236,32 +236,32 @@
     "url": "https://www.lot.com/pl/en/help-center/baggage/how-to-transport-an-urn-with-ashes",
     "quote": "If an urn does not meet the requirements, it will not be possible to transport it in the cabin.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official help page. Shows some carriers require advance notice."
+    "accessNote": "Round 3 (2026-11-21): curl returned an Akamai 'Access to the website has been blocked' page (pl/en and mk/en URLs); WebFetch: host not resolvable. Not bypassed. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Official help page. Shows some carriers require advance notice. Still unverified from the page."
   },
   {
     "id": "ural-smartavia",
     "topic": "airline-international",
     "entity": "Ural Airlines / Smartavia",
     "entityType": "airline",
-    "rule": "Counter-examples: these carriers prohibit urns in hand luggage. Airline rules vary widely; always check the operating carrier.",
+    "rule": "Smartavia: an urn with ashes can travel in checked baggage or via the cargo terminal, not in hand luggage; charged as an extra piece; originals or notarised copies of the death certificate, cremation certificate and a non-inclusion act are required; sealed packaging. Ural Airlines: urns only in the baggage or cargo compartment; hand luggage prohibited.",
     "url": "https://flysmartavia.com/en/faq/luggage/carriage-rules/airplane-funeral-urn/",
-    "quote": "",
+    "quote": "An urn with ashes can be transported in checked baggage or via the cargo terminal. It is not permitted in hand luggage.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Also https://www.uralairlines.ru/en/rules/provoz-bagazha/provoz-osobykh-kategoriy-bagazha-urna-s-prakhom/. Useful only to show variation."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text. Ural Airlines page (https://www.uralairlines.ru/en/rules/provoz-bagazha/provoz-osobykh-kategoriy-bagazha-urna-s-prakhom/) also opened (HTTP 200).",
+    "notes": "Ural exact: 'The transportation of the urn with ashes may be carried out only in the baggage or cargo compartment of the aircraft. Carriage of urns in the passenger's hand luggage is prohibited.' (apostrophe on page is a curly quote). Useful to show that airline rules vary widely."
   },
   {
     "id": "catsa",
     "topic": "airport-security-canada",
     "entity": "CATSA (Canadian Air Transport Security Authority)",
     "entityType": "government",
-    "rule": "Cremated remains may be brought on board in a container or urn, but it must first pass through the X-ray. Officers are not permitted to open the container and will not inspect contents even if the passenger opens it. Less than 350 ml is more likely to screen successfully, depending on the container. Some airlines do not allow cremated remains in checked baggage.",
-    "url": "https://www.catsa-acsta.gc.ca/en/what-can-bring/item/cremated-remains",
-    "quote": "Smaller amounts of cremated remains (less than 350 ml) are more likely to be successfully screened, depending on the type of container used.",
+    "rule": "CATSA item listing: carry-on Yes (<350ml); checked: check with carrier; powders may need extra screening or be refused; consider air cargo. Cremated remains page: containers that cannot be cleared will not be permitted on board; under 350 ml more likely to screen; use plastic, cardboard, cloth or wood (metal, stone, ceramic least likely); funeral home documents do not replace screening; officers are not permitted to open a cremation container; some airlines do not allow cremated remains in checked baggage; options if refused (leave with someone, ask about checked baggage, mail or cargo); for international travel contact the destination's embassy.",
+    "url": "https://www.catsa-acsta.gc.ca/en/cremated-remains",
+    "quote": "Screening officers are not permitted to open a cremation container.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official. A Global News (Halifax) report quoted CATSA: \"cremated remains are a dense material that can be difficult to screen\" and suggested cargo alternatives."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text. Item listing https://www.catsa-acsta.gc.ca/en/what-can-bring/item/cremated-remains also opened (HTTP 200; modified 2026-05-14). Cremated remains page modified 2026-06-10.",
+    "notes": "Canadian screening only; not TSA. Also exact: 'Smaller amounts of cremated remains (less than 350 ml) are more likely to be successfully screened, depending on the type of container used.'"
   },
   {
     "id": "casa-australia",
@@ -272,44 +272,44 @@
     "url": "https://www.casa.gov.au/node/388771",
     "quote": "Airline approval required, can be checked-in, can be carried-on",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official CASA Pack Right listing. Also: \"cremated remains are not considered dangerous goods and are generally allowed\"."
+    "accessNote": "Round 3 (2026-11-21): curl to casa.gov.au (node/388771 and Pack Right search pages) did not complete in three attempts (connection failure); no archive copy listed. Not re-verified.",
+    "notes": "Official CASA Pack Right listing. Also: \"cremated remains are not considered dangerous goods and are generally allowed\". Still from a search snippet."
   },
   {
     "id": "nz-caa",
-    "topic": "airport-security-new-zealand",
-    "entity": "Civil Aviation Authority of New Zealand",
+    "topic": "airport-security-nz",
+    "entity": "Aviation Security Service / Civil Aviation Authority of New Zealand",
     "entityType": "government",
-    "rule": "NZ aviation authority lists ashes/cremated remains as allowed; recommends telling the airline in advance.",
+    "rule": "Cremated human and pet remains may be taken on a plane, in carry-on or checked luggage; advise the airline. No restrictions on domestic flights; no restrictions for human cremated remains on international flights, but pet remains must go in checked luggage. A carry-on container is inspected but not opened and may be swabbed for trace detection.",
     "url": "https://www.aviation.govt.nz/passenger-information/what-can-i-bring/show/ashes-cremated-remains/",
-    "quote": "",
+    "quote": "The container when carried as carry-on will be inspected, but not opened.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Exact wording not captured; summary only."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "New Zealand screening only. Also exact: 'There are no restrictions that apply to human cremated remains on international flights, but pet remains must go in checked luggage.'"
   },
   {
     "id": "heathrow",
     "topic": "airport-security-uk",
     "entity": "Heathrow Airport",
     "entityType": "airport",
-    "rule": "Reported Heathrow guidance: use an urn that can be X-ray screened; lead-lined containers cannot be processed through X-ray, and ashes may then face additional security measures.",
+    "rule": "Heathrow's current hand baggage page, under 'Travelling to the US': powders over 350g or 350ml are not allowed in the cabin bag on US flights, with exemptions including human ashes; exempt items may still need additional screening; carry supporting documents. The earlier 'lead-lined containers' wording was not found on this page.",
     "url": "https://www.heathrow.com/at-the-airport/security-and-baggage/hand-baggage-and-liquids",
-    "quote": "lead-lined containers cannot be processed through the x-ray",
+    "quote": "If you're flying to the US, powders over 350g or 350ml aren't allowed in your cabin bag.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Quote is from a forum post quoting Heathrow's website; current Heathrow page not confirmed. Treat as unverified."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Page lists 'Human ashes' among exempt items under that heading and says: 'These items may still need additional screening.' The old 'lead-lined containers cannot be processed through the x-ray' quote is unverified (forum). Heathrow only; not a UK-wide rule."
   },
   {
     "id": "cdc-import",
     "topic": "customs-us",
-    "entity": "CDC (US Centers for Disease Control and Prevention)",
+    "entity": "CDC (42 CFR part 71, eCFR)",
     "entityType": "government",
-    "rule": "Cremated human remains have no CDC importation requirements into the United States: no permit, no death certificate requirement, and the leak-proof container rule does not apply. Rule: 42 CFR 71.55.",
-    "url": "https://www.cdc.gov/importation/human-remains/index.html",
-    "quote": "There are no importation requirements into the United States if human remains consist entirely of the following: Cremated human remains",
+    "rule": "Under CDC's federal import regulation, 'human remains' excludes a body or portions already fully cremated before import, so the 42 CFR 71.55 human-remains import requirements (leak-proof container, consignment to a mortuary, death certificate) do not apply to fully cremated remains.",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-F/part-71/subpart-F/section-71.50",
+    "quote": "(ii) A deceased human body and portions thereof that have already been fully cremated prior to import; or",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official. CDC page noted a human-remains importation update open for public comment; finalization status not checked."
+    "accessNote": "Round 3 (2026-11-21): CDC page https://www.cdc.gov/importation/human-remains/index.html returned HTTP 403 (bot protection; also the .html variant and the CDC FAQ; HHS guidance page also 403); WebFetch: host not resolvable. Instead read 42 CFR 71.50 and 71.55 on eCFR (API renderer, HTTP 200); quotes checked word for word.",
+    "notes": "Quote is exception (ii) to the definition 'Human remains means a deceased human body or any portion of a deceased human body, except:'. 71.55 (85 FR 42741, July 15, 2020). The CDC web page itself is still unverified. Interpretation that cremated remains fall outside 71.55 follows directly from the definition; CBP or airline rules are separate."
   },
   {
     "id": "cbp",
@@ -320,8 +320,8 @@
     "url": "https://help.cbp.gov/",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "CBP help article not found in results; help.cbp.gov not fetched.",
-    "notes": "Unverified; exact CBP article URL not found. Do not state a CBP-specific rule."
+    "accessNote": "Round 3 (2026-11-21): one web search found no CBP page (only forum posts pointing to help.cbp.gov, a CDC page and HHS guidance, both 403). Not verified.",
+    "notes": "Unverified; exact CBP article URL not found. Do not state a CBP-specific rule. See cdc-import for the federal regulation."
   },
   {
     "id": "state-dept",
@@ -332,8 +332,8 @@
     "url": "https://travel.state.gov/en/international-travel/living-abroad/death.html",
     "quote": "The Department of State can't pay to return U.S. citizens' remains or ashes to the United States.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official. Relevant to deaths abroad, not to taking ashes on a cruise; local-country requirements vary, ask the embassy/consulate."
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 (bot protection); WebFetch: host not resolvable; archive.org snapshot 20260620064641 exists but web.archive.org is unreachable from this session. fam.state.gov 7 FAM 250 also did not load. Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Official. Relevant to deaths abroad, not to taking ashes on a cruise; local-country requirements vary, ask the embassy/consulate. Still unverified from the page."
   },
   {
     "id": "govuk-death-abroad",
@@ -344,7 +344,7 @@
     "url": "https://www.gov.uk/guidance/what-to-do-when-someone-dies-abroad",
     "quote": "You do not need a permit to bring ashes to the UK.",
     "verified": "2026-11-21",
-    "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word.",
+    "accessNote": "Round 3 (2026-11-21): re-opened directly (HTTP 200); quote checked word for word under 'Bringing ashes back to the UK'.",
     "notes": "Section 'Bringing ashes back to the UK'. The page is about bringing ashes into the UK; no GOV.UK page about taking ashes out of the UK for a cruise was found (a guessed 'taking ashes abroad' URL returned 404; GOV.UK search returned only country death-abroad guides)."
   },
   {
@@ -352,36 +352,36 @@
     "topic": "customs-australia",
     "entity": "Australian Border Force",
     "entityType": "government",
-    "rule": "There are no requirements for importing human ashes into Australia.",
+    "rule": "There are no requirements for importing human ashes into Australia, but the container should be free from contaminants such as soil, and wooden containers must be declared to the Department of Agriculture, Fisheries and Forestry on arrival. It advises contacting the airline or shipping line before travelling with ashes, as they may have their own requirements. Ashes as unaccompanied personal effects are cleared as such; as cargo, clearance without a written declaration; by post, check with Australia Post.",
     "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/importing-human-remains-ashes",
-    "quote": "There are no requirements for importing human ashes into Australia.",
+    "quote": "There are no requirements for importing human ashes into Australia. There are requirements however, in relation to the container used to hold the ashes.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official. Department of Health biosecurity page agrees ashes need no import permit (https://www.health.gov.au/topics/communicable-diseases/biosecurity/importing-human-remains). A crematorium letter and sealed container are practical advice from funeral sites, not ABF rules."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Also exact: 'If you plan to carry ashes with you, it is advisable to contact the airline or shipping line prior to travelling.' Mentions shipping lines, relevant to cruises ending in Australia. Australian import only."
   },
   {
     "id": "eu-general",
     "topic": "customs-eu",
     "entity": "European Union",
     "entityType": "government",
-    "rule": "No EU-wide rule on carrying ashes was found in this research; requirements are national (and airline-specific). Several EU carriers ask for death and cremation certificates.",
+    "rule": "No EU-wide rule on carrying ashes was found; requirements are national and airline-specific.",
     "url": "",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "No source located.",
-    "notes": "Not verified; do not claim an EU rule."
+    "accessNote": "Round 3 (2026-11-21): no EU or EASA page searched for (search budget used for carriers); none located in earlier rounds.",
+    "notes": "Not verified; do not claim an EU rule. Corsair (France) says international travel needs a cremation certificate and a transport permit from the prefecture or town hall (see corsair), an example of national paperwork."
   },
   {
     "id": "usps-pub139",
     "topic": "shipping-us",
-    "entity": "United States Postal Service",
-    "entityType": "postal",
-    "rule": "USPS is the only US carrier that ships cremated remains (per a US government publication). Domestic: Priority Mail Express. International: only Priority Mail Express International, only where the destination country permits; Label 139 on all sides; siftproof urn in a cushioned outer container; contents declared on customs form. Since March 1, 2025, the USPS Cremated Remains kit (BOX-CRE) is reported as required.",
+    "entity": "USPS Publication 139",
+    "entityType": "government",
+    "rule": "USPS: cremated remains may be mailed to any domestic address if packaged per Publication 139; internationally only where the destination country does not prohibit the contents and Priority Mail Express International is available (check the International Mail Manual country listing).",
     "url": "https://about.usps.com/publications/pub139/pub139_v05_revision_012025_tech_002.htm",
-    "quote": "when permitted by the destination country, cremated remains (human or animal) may only be sent via Priority Mail Express International service",
+    "quote": "You can mail cremated remains to any domestic address as long as you prepare the package according to the following",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Quote from Postal Bulletin 2019 (https://about.usps.com/postal-bulletin/2019/pb22532/html/updt_004.htm). Box-kit requirement from https://news.usps.com/2025/03/01/theres-a-new-rule-for-shipping-cremated-remains (wording not captured). Check IMM Individual Country Listing; some countries (reported: UK, Ireland, Belgium, Portugal) bar entry by mail: unverified."
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Page text breaks the sentence across a line ('following / instructions.'). International exact: 'You can mail cremated remains to an international address as long as the destination country does not prohibit the contents and when Priority Mail Express International service is available to that country.'"
   },
   {
     "id": "private-carriers",
@@ -392,7 +392,7 @@
     "url": "https://www.stamps.com/article/ship-cremated-remains/",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 3 (2026-11-21): not re-fetched (secondary source; carriers' own service guides not checked). Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
     "notes": "Carriers' own service guides not checked. Secondary only."
   },
   {
@@ -404,20 +404,20 @@
     "url": "",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "No source located.",
+    "accessNote": "Round 3 (2026-11-21): no official source located; not searched again. Earlier note: No source located.",
     "notes": "Unresolved; would need cruise-line confirmation."
   },
   {
     "id": "uscg-terminal-xray",
-    "topic": "cruise-terminal-security",
-    "entity": "US Coast Guard (33 CFR Part 105)",
+    "topic": "cruise-terminal-security-us",
+    "entity": "US Coast Guard, 33 CFR 105.545 (eCFR)",
     "entityType": "government",
-    "rule": "US cruise terminal operators may screen personal effects and baggage with X-ray systems meeting set standards (33 CFR 105.545); checked baggage must stay under control in a secure area until onboard. Screening is by the terminal/cruise line under Coast Guard rules, not TSA.",
-    "url": "https://www.law.cornell.edu/cfr/text/33/105.545",
-    "quote": "may use an x-ray system for screening personal effects and baggage",
+    "rule": "33 CFR 105.545 lets a cruise ship terminal owner or operator use metal detectors, X-ray systems (meeting 21 CFR 1020.40 and other conditions) and explosives detection systems to screen persons, baggage and personal effects, if documented in an approved Terminal Screening Program (TSP). It says nothing specific about cremated remains.",
+    "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-105/subpart-E/section-105.545",
+    "quote": "(b) X-ray systems. The owner or operator of a cruise ship terminal may use an x-ray system for the screening and inspection of personal effects and baggage if all of the following requirements are satisfied",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Regulation text via Cornell LII. Whether TSA-style \"will not open\" practice applies at cruise terminals: not published."
+    "accessNote": "Round 3 (2026-11-21): read on eCFR (API renderer, HTTP 200); quote checked word for word (page continues with an em dash, omitted here).",
+    "notes": "Confirms US cruise terminals may X-ray baggage; does not establish any rule about urns. Do not infer that cruise terminal X-ray rejects opaque urns; no source says so."
   },
   {
     "id": "carnival",
@@ -428,7 +428,7 @@
     "url": "https://www.carnival.com/safety-information",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "accessNote": "Round 3 (2026-11-21): carnival.com/safety-information opened (HTTP 200): its 'Liquor, Beverage & Prohibited Items Policies' section has no mention of ashes, cremated remains or urns. Carnival's help article on scattering ashes (help.carnival.com a_id 1132, and the UK and AU equivalents, fetched by another group this round) returned 'Access Denied' (bot protection).",
     "notes": "Carnival safety page directs guests to its Prohibited Items List; ashes wording unconfirmed. Unverified."
   },
   {
@@ -440,8 +440,8 @@
     "url": "https://www.royalcaribbean.com/aus/en/faq/questions/what-is-royal-caribbeans-burial-at-sea-policy",
     "quote": "Upon boarding, contact the Front Desk to set up a time and place for this request.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Official FAQ (several locale versions; some returned only navigation text). Email is Royal Caribbean's, not this site's."
+    "accessNote": "Round 3 (2026-11-21): opened directly (HTTP 200); quote checked word for word.",
+    "notes": "Official FAQ (several locale versions; some returned only navigation text). Email is Royal Caribbean's, not this site's. Also exact: 'Ashes must be in an approved scattering or biodegradable urn, free of plastic or wire, and the entire urn must be tossed. A certificate proving the urn is biodegradable may also be required.' No embarkation-screening wording on this page."
   },
   {
     "id": "cruise-ports-ashore",
@@ -452,20 +452,20 @@
     "url": "https://www.cruisecritic.com/articles/scattering-ashes-at-sea-10-common-questions-answered",
     "quote": "Cremated remains may not be taken from a cruise ship into a foreign port, as this might violate the laws of that port.",
     "verified": "2026-11-21",
-    "accessNote": "Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
-    "notes": "Cruise Critic (secondary). Also the general claim that most lines require death and cremation certificates and a biodegradable urn. Holland America 12-nautical-mile statement is from a forum email: anecdotal."
+    "accessNote": "Round 3 (2026-11-21): not re-fetched (secondary). Earlier note: Page not fetched: direct fetch blocked in this session (host outside allowed network); quote taken from a search-engine result snippet. Re-confirm wording on the live page before publication.",
+    "notes": "Cruise Critic (secondary). Also the general claim that most lines require death and cremation certificates and a biodegradable urn. Holland America 12-nautical-mile statement is from a forum email: anecdotal. Fred. Olsen's official FAQ now confirms this for Fred. Olsen only (see fred-olsen): 'Scattered remains must remain on board until the commemoration service and cannot be taken ashore once on board.'"
   },
   {
     "id": "practical-container",
     "topic": "practical",
     "entity": "Multiple (TSA, CATSA, Air Canada, Transavia, Heathrow)",
     "entityType": "secondary",
-    "rule": "Synthesis of official sources: use an X-ray-penetrable container (plastic, wood, cardboard; no metal or lead lining) for travel; keep it sealed; expect it never to be opened at security; carry the death certificate and certificate of cremation (asked for by BA, JetBlue, Transavia, Iberia, LOT, Emirates cargo; recommended by Air Canada and GOV.UK); smaller volumes screen more easily (CATSA 350 ml); check each airline and each destination country; a scattering urn for the ceremony can be packed separately or transferred later.",
+    "rule": "Synthesis of official sources read: use an X-ray-penetrable container (TSA: wood or plastic; CATSA and Air Canada: plastic, cardboard, cloth or wood; Frontier: wood or plastic); security officers in the US, Canada and New Zealand do not open the container; carry the death certificate and certificate of cremation (required by JetBlue, Smartavia, Air New Zealand on request; recommended by Air Canada, WestJet, GOV.UK); smaller volumes screen more easily (CATSA 350 ml; WestJet and Air Canada 350 mL thresholds); check each airline (rules range from carry-on only, e.g. JetBlue and Air Canada from 2026-08-28, to checked only, e.g. Smartavia and Ural) and each destination country; cruise lines that permit scattering may require a biodegradable urn and certificate (Royal Caribbean, Fred. Olsen).",
     "url": "",
     "quote": "",
     "verified": "2026-11-21",
-    "accessNote": "Synthesis of records above.",
-    "notes": "Synthesis only: not a single source. Water-soluble/biodegradable urn specifics and multi-country cruise customs handling were not independently verified here; for port customs questions, the only official guidance found is to ask the relevant embassy/consulate and the cruise line."
+    "accessNote": "Synthesis of records above; updated round 3.",
+    "notes": "Synthesis only: not a single source. Airport rules are country-specific; never apply TSA rules elsewhere."
   },
   {
     "id": "govuk-italy",
@@ -476,7 +476,115 @@
     "url": "https://www.gov.uk/guidance/when-someone-dies-in-italy",
     "quote": "If you live in Italy, you may be able to keep the ashes at home or scatter them. However, this is not always possible and you will need to get authorisation from the town hall.",
     "verified": "2026-11-21",
-    "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word.",
+    "accessNote": "Round 3 (2026-11-21): re-opened directly (HTTP 200); quote checked word for word.",
     "notes": "Shows that coastal and port states set their own rules; not a rule for cruise ships."
+  },
+  {
+    "id": "air-new-zealand",
+    "topic": "airline-international",
+    "entity": "Air New Zealand",
+    "entityType": "airline",
+    "rule": "Ashes may be packed in carry-on or checked-in baggage in a suitable, sealed urn or container that stays packed in the baggage during the flight; bring and show on request the death certificate, mortician certificate and a cremation certificate (name, where and when cremated, confirmation the container holds only ashes); no need to notify at booking but tell check-in staff at the airport; check requirements for the whole international journey. Domestic transport of ashes as cargo via Air New Zealand Cargo; international transport via a funeral director or freight forwarder.",
+    "url": "https://www.airnewzealand.com/en-nz/travel-info/baggage/restricted-items",
+    "quote": "Ashes may be packed in either your carry-on or checked-in baggage, provided they are securely contained in a suitable urn or container. The container must remain packed inside your baggage during the flight.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200; https://www.airnewzealand.co.nz/items-not-allowed-on-flight redirected here). The 'Human ashes' accordion text is in the page's embedded FAQ data (JSON-LD and page data), not the visible text extract; quote checked word for word there.",
+    "notes": "Also exact: 'You do not need to notify us when booking your flight. However, please let check-in staff know that you are travelling with ashes when you arrive at the airport.' Cargo detail from https://www.airnewzealandcargo.com/national-unique-cargo (HTTP 200)."
+  },
+  {
+    "id": "nz-customs",
+    "topic": "customs-nz",
+    "entity": "New Zealand Customs Service",
+    "entityType": "government",
+    "rule": "Bringing human ashes into New Zealand needs no Customs clearance and no documents for ashes accompanying a traveller through airport arrivals; travellers should ask their airline and airport security at departure or transit. Post or freight imports may be cleared by the service, or by Customs with freight documents, photo ID and death certificate.",
+    "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items",
+    "quote": "If you're travelling to New Zealand and bringing human ashes, remains or placenta with you, you don't need a Customs clearance.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200; https://customs.govt.nz/personal/travel-to-and-from-nz/human-remains redirected here); quote checked word for word.",
+    "notes": "Page addresses air arrivals; it does not mention cruise ship arrivals."
+  },
+  {
+    "id": "virgin-australia",
+    "topic": "airline-international",
+    "entity": "Virgin Australia",
+    "entityType": "airline",
+    "rule": "Cremated remains (human and animal) as ashes may go in carry-on or checked baggage in funeral urns cushioned against breakage, in a sealed container with no risk of spillage. A cabin urn must also: have a letter from a funeral director or crematorium identifying the contents as human remains; pass security screening with the guest (guests need not open the urn, but an outer bag must be opened to view the container); be wholly inside a carry-on bag within size and weight limits; bag and urn stay closed during flight.",
+    "url": "https://www.virginaustralia.com/au/en/travel-info/baggage/oversized-fragile-items/",
+    "quote": "Cremated remains (human and animal) in the form of ashes may be stored in carry-on or checked baggage but must be shipped in funeral urns which are effectively cushioned against breakage by suitable packaging.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200; the /plan/ URL redirected to this one). Text is in a collapsed 'Human remains' section of the page HTML; quote checked word for word there.",
+    "notes": "Also exact: 'The guest must have a letter from a funeral director or crematorium identifying the contents as human remains.'"
+  },
+  {
+    "id": "westjet",
+    "topic": "airline-canada",
+    "entity": "WestJet",
+    "entityType": "airline",
+    "rule": "Cremated remains are accepted in addition to carry-on and personal baggage allowance on all fares; up to 350 mL accepted as carry-on; above 350 mL may go in checked baggage; CATSA recommends temporary plastic, cardboard or cloth containers; funeral home documents do not exempt screening; officers will not open containers; containers that fail screening are not accepted as carry-on or checked baggage. WestJet recommends carrying the death certificate and Certificate of Cremation (vet documentation for animals); WestJet Cargo also transports cremated remains.",
+    "url": "https://www.westjet.com/en-ca/baggage/carry-on",
+    "quote": "Up to 350 milliliters (mL) of cremated remains are accepted as carry-on baggage. If the volume is more than 350 mL, the cremated remains may be transported in checked baggage.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text. Same text on the en-bs locale page.",
+    "notes": "Also exact: 'Containers that do not pass security screening will not be accepted as carry-on or checked baggage.'"
+  },
+  {
+    "id": "corsair",
+    "topic": "airline-international",
+    "entity": "Corsair (France)",
+    "entityType": "airline",
+    "rule": "Cremation urns are permitted in the cabin if the packaging conceals the contents and the container is not fragile, dimensions meet cabin baggage limits, and the urn is sealed; for international travel a cremation certificate from the crematorium and a transport permit from the prefecture or town hall are needed.",
+    "url": "https://www.flycorsair.com/en/information/special-assistance/bereaved-families",
+    "quote": "Cremation urns are permitted in the cabin provided that:",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200; https://www.flycorsair.com/en/familles-endeuillees/how-transport-funeral-urn redirected here); quote checked word for word.",
+    "notes": "Added as an example of a French carrier; no official Air France or KLM page was found."
+  },
+  {
+    "id": "air-caraibes",
+    "topic": "airline-international",
+    "entity": "Air Caraibes",
+    "entityType": "airline",
+    "rule": "Funeral urns may be carried in hand luggage if sealed by the crematorium, made of materials suitable for x-rays, within cabin dimensions (55 x 35 x 25 cm), packaged so other passengers cannot identify it, and with the death certificate and cremation certificate to show at the security checkpoint.",
+    "url": "https://www.aircaraibes.com/en/faq/can-i-travel-funeral-urn",
+    "quote": "Funerary urn transport in hand luggage is possible. However, the following conditions must be met:",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text. FAQ dated 04/26/2024 on the page.",
+    "notes": "Entity name on the page is spelled 'Air Caraïbes'."
+  },
+  {
+    "id": "fred-olsen",
+    "topic": "cruise-line",
+    "entity": "Fred. Olsen Cruise Lines",
+    "entityType": "cruise-line",
+    "rule": "Guests may bring cremated remains on board for a memorial commemoration; ashes must be kept in a secure, leakproof and sealed container; let Guest Services know in advance (at least seven days before the cruise); a biodegradable-container certificate is presented once on board if the container is dispersed; remains must stay on board until the service and cannot be taken ashore once on board; service subject to ship management approval; at least 12 nautical miles from land.",
+    "url": "https://www.fredolsencruises.com/faqs/on-board/can-i-scatter-ashes-at-sea",
+    "quote": "Scattered remains must remain on board until the commemoration service and cannot be taken ashore once on board.",
+    "verified": "2026-11-21",
+    "accessNote": "Opened directly on 2026-11-21 (HTTP 200) with curl; quote checked word for word against the page text.",
+    "notes": "Official carrying-aboard rules: also exact 'The ashes are kept in a secure, leakproof and sealed container.' Guest Services 0800 0355 122 (Fred. Olsen's number). Email address on the page is obfuscated by Cloudflare and was not decoded. Covered in full by the cruise-operator research."
+  },
+  {
+    "id": "marella",
+    "topic": "cruise-line",
+    "entity": "Marella Cruises (TUI UK)",
+    "entityType": "cruise-line",
+    "rule": "Not verified. A search summary of TUI's Marella FAQ says remains must stay on board until the commemoration and cannot be taken ashore, and that the guest is responsible for the ashes.",
+    "url": "https://www.tui.co.uk/destinations/faq/marella-cruises/miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered",
+    "quote": "",
+    "verified": "2026-11-21",
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 'Access Denied' (bot protection, not bypassed). Search snippet only.",
+    "notes": "Unverified; leave to the cruise-operator research."
+  },
+  {
+    "id": "ryanair",
+    "topic": "airline-international",
+    "entity": "Ryanair",
+    "entityType": "airline",
+    "rule": "Not verified. A search summary of Ryanair's help article says ashes can go in the cabin bag in addition to the normal allowance with copies of the death and cremation certificates, very securely packaged in a screw-top container.",
+    "url": "https://help.ryanair.com/hc/en-gb/articles/12890971417105-Does-Ryanair-carry-ashes-coffins-human-remains",
+    "quote": "",
+    "verified": "2026-11-21",
+    "accessNote": "Round 3 (2026-11-21): curl HTTP 403 on the en-gb and bg article URLs (bot protection, not bypassed). Search snippet only.",
+    "notes": "easyJet: no official page found (only an urn retailer). Singapore Airlines, Japan Airlines, KLM and Air France: one search each found no official page; JAL baggage page returned 403; a guessed KLM URL did not load."
   }
 ]

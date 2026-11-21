@@ -7,12 +7,13 @@ def short(s, n=140):
     s = cell(s); return s if len(s) <= n else s[:n-3].rsplit(" ", 1)[0] + "..."
 def check(note):
     n = (note or "").lower()
-    if "opened directly on 2026-11-21" in n: return "Read directly (round 2)"
-    if n.startswith("round 2") and ("bot protection" in n or "refused" in n or "401" in n): return "Blocked (round 2); search summary"
-    if "fetch tool" in n and "read on 2026-11-21" in n: return "Read via fetch tool (round 2)"
-    if "round 2 (2026-11-21): the fetch tool confirmed" in n: return "Read via fetch tool (round 2)"
+    if "opened directly on 2026-11-21" in n: return "Read directly (rounds 2-3)"
+    if (n.startswith("round 2") or n.startswith("round 3")) and ("bot protection" in n or "refused" in n or "401" in n): return "Blocked; search summary only"
+    if ("fetch tool" in n and "read on 2026-11-21" in n) or "read via webfetch" in n: return "Read via fetch tool"
+    if "round 2 (2026-11-21): the fetch tool confirmed" in n: return "Read via fetch tool"
+    if "re-opened directly" in n or "opened directly (http 200)" in n or "read on ecfr" in n: return "Read directly (rounds 2-3)"
     if "ecfr" in n and "api" in n: return "Read directly (eCFR, round 1)"
-    if n.startswith("round 2"): return "Round 2 check: not found or not readable"
+    if n.startswith("round 2") or n.startswith("round 3"): return "Rounds 2-3: not found or not readable"
     return "Search summary only (round 1)"
 rows = {}
 def add(url, typ, supports, verified, note):
@@ -41,7 +42,7 @@ extra = [
  ("https://www.epa.gov/sites/default/files/2019-05/documents/burial_at_sea_reporting_tool_factsheet_may_13_2019.pdf", "government", "EPA reporting tool: who reports, what is asked", "2026-11-21", "opened directly on 2026-11-21"),
 ]
 for u, t, s, v, n in extra: add(u, t, s, v, n)
-order = ["Read directly (round 2)", "Read via fetch tool (round 2)", "Read directly (eCFR, round 1)", "Blocked (round 2); search summary", "Round 2 check: not found or not readable", "Search summary only (round 1)"]
+order = ["Read directly (rounds 2-3)", "Read via fetch tool", "Read directly (eCFR, round 1)", "Blocked; search summary only", "Rounds 2-3: not found or not readable", "Search summary only (round 1)"]
 L = ["# Sources: cruise ship ash scattering guide", "",
      "Generated from the research JSON by `tools/build_sources.py`. Every URL",
      "recorded in the research, with its type, what it supports, the date it",
@@ -55,5 +56,16 @@ for grp in order:
     for u, e in items:
         L.append(f"| {cell(u)} | {cell(e['type'])} | {short('; '.join(dict.fromkeys(e['supports'])), 220)} | {cell(e['verified'])} |")
     L.append("")
+L += ["## Research log: pages searched per operator (round 3)", "",
+      "Each operator's `researchLog` from the JSON: every official URL tried and",
+      "the result. These document that a policy was looked for; a page with no",
+      "mention of ashes is not evidence of a prohibition.", ""]
+for f in sorted(glob.glob(os.path.join(R, "operators-*.json"))):
+    for r in json.load(open(f)):
+        log = r.get("researchLog", [])
+        if not log: continue
+        L.append(f"- **{r['name']}** ({r['status']}):")
+        for x in log: L.append(f"  - {cell(x)}")
+L.append("")
 open(os.path.join(HERE, "sources.md"), "w").write("\n".join(L))
 print({g: sum(1 for e in rows.values() if e['check'] == g) for g in order})
