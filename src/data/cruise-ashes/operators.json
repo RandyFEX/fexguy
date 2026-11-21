@@ -2,6 +2,44 @@
   "checked": "2026-11-21",
   "operators": [
     {
+      "id": "carnival-cruise-line",
+      "name": "Carnival Cruise Line",
+      "fleet": "Ocean",
+      "regions": "Caribbean, Bahamas, Mexico, Alaska, Hawaii, Europe, Australia",
+      "status": "officially-permitted",
+      "policyUrl": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
+      "policyNote": "indexed",
+      "verified": "2026-11-21",
+      "restrictions": "Arranged with Guest Services on board; beyond 12 nautical miles from land and outside special areas; death certificate and proof of licensed cremation; biodegradability certificate if the urn is released.",
+      "compare": {
+        "approval": "Contact the Guest Services Desk once on board",
+        "documents": "Death certificate; proof of cremation at a licensed facility; biodegradability certificate if the urn is released",
+        "restrictions": "Beyond 12 nautical miles from land and outside special areas; sealed, leak-proof urn; flowers bought on board; urn may not go ashore in port",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
+      "detail": "#op-carnival-cruise-line"
+    },
+    {
+      "id": "cunard",
+      "name": "Cunard",
+      "fleet": "Ocean",
+      "regions": "Transatlantic, Europe, Norway, Alaska, World",
+      "status": "officially-permitted",
+      "policyUrl": "https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&questionId=faq390.summary",
+      "policyNote": "indexed",
+      "verified": "2026-11-21",
+      "restrictions": "Captain’s approval before the voyage; not on 5 nights or less; sea day, at least 12 nautical miles; container committed whole; paid package.",
+      "compare": {
+        "approval": "Captain’s approval before the voyage",
+        "documents": "Cremation certificate; supporting documentation for the biodegradable container",
+        "restrictions": "Not on voyages of 5 nights or less; sea day; at least 12 nautical miles; container committed whole; no pet ashes",
+        "fees": "Paid package; price not published"
+      },
+      "contactUrl": null,
+      "detail": "#op-cunard"
+    },
+    {
       "id": "fred-olsen-cruise-lines",
       "name": "Fred. Olsen Cruise Lines",
       "fleet": "Ocean",
@@ -11,6 +49,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "Notify Guest Services at least 7 days before; sealed, leakproof container; at least 12 nautical miles from land; biodegradable items only; not guaranteed.",
+      "compare": {
+        "approval": "Notify Guest Services at least 7 days before the cruise; subject to the ship’s management",
+        "documents": "Biodegradability certificate if the container is released",
+        "restrictions": "At least 12 nautical miles from land; sealed, leakproof container; biodegradable items only; attendance may be limited; not guaranteed",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-fred-olsen-cruise-lines"
     },
     {
@@ -23,7 +68,52 @@
       "policyNote": "read-paraphrase",
       "verified": "2026-11-21",
       "restrictions": "International waters, at least 12 nautical miles from land and outside protected areas; copy of the death certificate; sealed container that passes X-ray.",
+      "compare": {
+        "approval": "Contact TUI before travelling; arranged on board",
+        "documents": "Copy of the death certificate",
+        "restrictions": "International waters, at least 12 nautical miles from land, outside marine protected areas; sealed container that passes X-ray",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-marella-cruises"
+    },
+    {
+      "id": "msc-cruises",
+      "name": "MSC Cruises",
+      "fleet": "Ocean",
+      "regions": "Mediterranean, Northern Europe, Caribbean, Middle East, South America, Asia",
+      "status": "officially-permitted",
+      "policyUrl": "https://www.msccruisesusa.com/faq/on-board-information",
+      "policyNote": "indexed",
+      "verified": "2026-11-21",
+      "restrictions": "Cruises of 6 nights or more with a sea day; at least 12 nautical miles; up to 10 guests; certified biodegradable urn; human ashes only; no fee.",
+      "compare": {
+        "approval": "Notify MSC or your travel agent before the cruise",
+        "documents": "Urn maker’s biodegradability certificate; MSC does not require a death certificate",
+        "restrictions": "6 nights or more with a sea day; at least 12 nautical miles; up to 10 guests; human ashes only; urn in carry-on luggage",
+        "fees": "No fee"
+      },
+      "contactUrl": null,
+      "detail": "#op-msc-cruises"
+    },
+    {
+      "id": "po-cruises-uk",
+      "name": "P&O Cruises (UK)",
+      "fleet": "Ocean",
+      "regions": "Northern Europe, Mediterranean, Canary Islands, Caribbean, World cruises",
+      "status": "officially-permitted",
+      "policyUrl": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
+      "policyNote": "indexed",
+      "verified": "2026-11-21",
+      "restrictions": "Captain’s approval before the cruise; sea day, at least 12 nautical miles, not the Norwegian Fjords; Certificate of Cremation; GBP 270 admin charge.",
+      "compare": {
+        "approval": "Captain’s approval before the cruise",
+        "documents": "Certificate of Cremation; proof the container is biodegradable",
+        "restrictions": "Sea day; at least 12 nautical miles; not the Norwegian Fjords; no pet ashes; minimum cruise length differs between P&O’s own pages",
+        "fees": "GBP 270 admin charge"
+      },
+      "contactUrl": null,
+      "detail": "#op-po-cruises-uk"
     },
     {
       "id": "princess-cruises",
@@ -35,6 +125,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "Private ceremony, arranged and approved before sailing.",
+      "compare": {
+        "approval": "Arranged and approved before sailing (ashesrequest@princesscruises.com)",
+        "documents": "Not published",
+        "restrictions": "Private shipboard ceremony",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-princess-cruises"
     },
     {
@@ -47,6 +144,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "Biodegradable urn with no plastic or wire, released whole; death and cremation certificates; request by email, then the Front Desk on board.",
+      "compare": {
+        "approval": "Request by email (gfotravelservices@rccl.com); Front Desk on boarding sets the time and place",
+        "documents": "Death certificate and cremation certificate; an urn biodegradability certificate may be required",
+        "restrictions": "Biodegradable urn with no plastic or wire, released whole",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-royal-caribbean-international"
     },
     {
@@ -59,6 +163,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "Request form at least 14 days before sailing; certificate of biodegradability; approval with local port authorities.",
+      "compare": {
+        "approval": "Celebration of Life Request Form at least 14 days before sailing; approval with local port authorities",
+        "documents": "Certificate of Biodegradability for the container",
+        "restrictions": "Party size asked on the form; no single-use items such as balloons",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-virgin-voyages"
     },
     {
@@ -71,6 +182,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "May be possible at the discretion of local port authorities; approval can take time.",
+      "compare": {
+        "approval": "Case by case, at the discretion of local port authorities; ask Guest Services early",
+        "documents": "Not published",
+        "restrictions": "Not published",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-ambassador-cruise-line"
     },
     {
@@ -83,6 +201,13 @@
       "policyNote": "read",
       "verified": "2026-11-21",
       "restrictions": "No burial at sea from the ship; ashes may be spread on a private excursion.",
+      "compare": {
+        "approval": "Not offered from the ship; ask Onboard Guest Services about a private excursion",
+        "documents": "Not published",
+        "restrictions": "No burial at sea from the ship",
+        "fees": "Not published"
+      },
+      "contactUrl": null,
       "detail": "#op-crystal"
     },
     {
@@ -95,6 +220,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -107,6 +234,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -119,6 +248,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -131,6 +262,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -143,6 +276,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -155,6 +290,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.antarctica21.com/termsconditions",
       "detail": "#no-published-policy"
     },
     {
@@ -167,6 +304,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -179,6 +318,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -191,6 +332,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -203,6 +346,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://atlasoceanvoyages.com/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -215,6 +360,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -227,6 +374,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -239,6 +388,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -251,6 +402,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -263,19 +416,9 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
-    },
-    {
-      "id": "carnival-cruise-line",
-      "name": "Carnival Cruise Line",
-      "fleet": "Ocean",
-      "regions": "Caribbean, Bahamas, Mexico, Alaska, Hawaii, Europe, Australia",
-      "status": "unverified",
-      "policyUrl": "https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes",
-      "policyNote": "unreadable",
-      "verified": "2026-11-21",
-      "restrictions": "The line has a policy page, but it could not be read for this guide. Check it directly or ask the line.",
-      "detail": "#unconfirmed-lines"
     },
     {
       "id": "celebrity-cruises",
@@ -287,6 +430,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -299,6 +444,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -311,6 +458,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -323,6 +472,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -335,19 +486,9 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
-    },
-    {
-      "id": "cunard",
-      "name": "Cunard",
-      "fleet": "Ocean",
-      "regions": "Transatlantic, Europe, Norway, Alaska, World",
-      "status": "unverified",
-      "policyUrl": "https://www.cunard.com/en-gb/frequently-asked-questions.before-you-sail.All.FAQ719.summary",
-      "policyNote": "unreadable",
-      "verified": "2026-11-21",
-      "restrictions": "The line has a policy page, but it could not be read for this guide. Check it directly or ask the line.",
-      "detail": "#unconfirmed-lines"
     },
     {
       "id": "disney-cruise-line",
@@ -359,6 +500,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -371,6 +514,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://ecoventura.com/key-information-faqs/",
       "detail": "#no-published-policy"
     },
     {
@@ -383,6 +528,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://emerald.cruises/US/en-US/about-us/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -395,6 +542,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -407,6 +556,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -419,6 +570,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -431,6 +584,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": "https://www.hl-cruises.de",
       "detail": "#no-published-policy"
     },
     {
@@ -443,6 +598,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.havilavoyages.com/en/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -455,6 +612,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.heritage-expeditions.com/terms-conditions/",
       "detail": "#no-published-policy"
     },
     {
@@ -467,6 +626,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -479,6 +640,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -491,6 +654,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.hurtigruten.com/en/help/life-on-board",
       "detail": "#no-published-policy"
     },
     {
@@ -503,6 +668,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.travelhx.com/en-us/support/faq/",
       "detail": "#no-published-policy"
     },
     {
@@ -515,6 +682,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.expeditions.com/plan/faqs",
       "detail": "#no-published-policy"
     },
     {
@@ -527,6 +696,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.metropolitan-touring.com/galapagos/faq/",
       "detail": "#no-published-policy"
     },
     {
@@ -539,19 +710,9 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
-    },
-    {
-      "id": "msc-cruises",
-      "name": "MSC Cruises",
-      "fleet": "Ocean",
-      "regions": "Mediterranean, Northern Europe, Caribbean, Middle East, South America, Asia",
-      "status": "unverified",
-      "policyUrl": "https://www.msccruisesusa.com/faq/on-board-information",
-      "policyNote": "unreadable",
-      "verified": "2026-11-21",
-      "restrictions": "The line has a policy page, but it could not be read for this guide. Check it directly or ask the line.",
-      "detail": "#unconfirmed-lines"
     },
     {
       "id": "murray-princess",
@@ -563,6 +724,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.murrayprincess.com.au/contact/",
       "detail": "#no-published-policy"
     },
     {
@@ -575,6 +738,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.nicko-cruises.de/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -587,6 +752,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -599,6 +766,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -611,6 +780,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -623,19 +794,9 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://oceanwide-expeditions.com/faq",
       "detail": "#no-published-policy"
-    },
-    {
-      "id": "po-cruises-uk",
-      "name": "P&O Cruises (UK)",
-      "fleet": "Ocean",
-      "regions": "Northern Europe, Mediterranean, Canary Islands, Caribbean, World cruises",
-      "status": "unverified",
-      "policyUrl": "https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes",
-      "policyNote": "unreadable",
-      "verified": "2026-11-21",
-      "restrictions": "The line has a policy page, but it could not be read for this guide. Check it directly or ask the line.",
-      "detail": "#unconfirmed-lines"
     },
     {
       "id": "pandaw",
@@ -647,6 +808,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -659,6 +822,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.pgcruises.com/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -671,6 +836,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -683,6 +850,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.phoenixreisen.com/gut-zu-wissen-von-a-z.html",
       "detail": "#no-published-policy"
     },
     {
@@ -695,6 +864,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.plantours-kreuzfahrten.de/infos-service/das-sind-wir/kontakt/",
       "detail": "#no-published-policy"
     },
     {
@@ -707,6 +878,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.ponant.com/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -719,6 +892,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.quarkexpeditions.com/frequently-asked-questions",
       "detail": "#no-published-policy"
     },
     {
@@ -731,6 +906,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -743,6 +920,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -755,6 +934,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -767,6 +948,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -779,6 +962,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -791,6 +976,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://scenic.cruises/US/en-US/plan-your-journey/faqs/ocean",
       "detail": "#no-published-policy"
     },
     {
@@ -803,6 +990,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -815,6 +1004,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -827,6 +1018,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -839,6 +1032,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -851,6 +1046,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found. Parts of the official site could not be read.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -863,6 +1060,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -875,6 +1074,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -887,6 +1088,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -899,6 +1102,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://uncruise.com/pages/frequently-asked-questions",
       "detail": "#no-published-policy"
     },
     {
@@ -911,6 +1116,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -923,6 +1130,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://www.varietycruises.com/faq",
       "detail": "#no-published-policy"
     },
     {
@@ -935,6 +1144,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": "https://victorycruiselines.com/frequently-asked-questions",
       "detail": "#no-published-policy"
     },
     {
@@ -947,6 +1158,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     },
     {
@@ -959,6 +1172,8 @@
       "policyNote": null,
       "verified": "2026-11-21",
       "restrictions": "No published policy found on the official site.",
+      "compare": null,
+      "contactUrl": null,
       "detail": "#no-published-policy"
     }
   ]

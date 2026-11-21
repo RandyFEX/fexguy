@@ -33,20 +33,21 @@ type StatusKey = keyof typeof STATUS;
 const counts = Object.fromEntries(Object.keys(STATUS).map((k) => [k, operators.filter((o) => o.status === k).length])) as Record<StatusKey, number>;
 const checkedLabel = new Date(`${data.checked}T12:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
+const established = operators.filter((o) => o.status !== 'unverified');
+const unverified = operators.filter((o) => o.status === 'unverified');
 const quickAnswer =
-  'Yes, on some cruise lines, but only with the line’s permission and on its terms. Royal Caribbean, Princess, Virgin Voyages, Fred. Olsen and Marella publish a written process, Ambassador says it may be possible case by case, and Crystal does not offer it from the ship. Most other lines publish no policy we could find, so ask in writing before you book. Plan on a biodegradable urn, copies of the death and cremation certificates, a request made before you sail, and a ceremony well offshore, often 12 nautical miles out.';
+  'Yes, on many major cruise lines, but only with the line’s permission and on its terms. Carnival, Royal Caribbean, Princess, MSC, Virgin Voyages, P&O Cruises, Cunard, Fred. Olsen and Marella publish a written process. Ambassador says it may be possible case by case, and Crystal does not offer it from the ship. Norwegian, Celebrity, Holland America, Disney, Viking and most smaller lines publish no policy we could find, so ask them in writing before you book. Plan on a biodegradable urn, copies of the death and cremation certificates, permission arranged before or at the start of the cruise, and a ceremony at least 12 nautical miles offshore.';
 const keyPoints = [
   'Never scatter ashes from your balcony or a public deck on your own. Ask the cruise line first; the ship arranges the time and place.',
   'Published policies require a biodegradable container, and several require the whole urn to go into the sea rather than loose ashes.',
+  'Some lines charge: P&O Cruises lists a GBP 270 admin charge and Cunard sells a paid package; MSC says there is no fee.',
   'A cruise line’s permission does not override the law of the country whose waters the ship is in.',
   'From a US port, cremated remains must be placed at least 3 nautical miles from land and the burial reported to the EPA within 30 days.',
   'Airport rules differ by country and airline. Air Canada, for example, no longer accepts cremated remains in checked bags from August 28, 2026.',
 ];
 const toc = [
   { id: 'which-lines', text: 'Which cruise lines allow scattering ashes?' },
-  { id: 'directory', text: 'Cruise line directory' },
-  { id: 'profiles', text: 'Cruise lines with a published policy' },
-  { id: 'unconfirmed-lines', text: 'Policy pages we could not read' },
+  { id: 'profiles', text: 'Cruise lines with an established policy' },
   { id: 'no-published-policy', text: 'Lines with no published policy' },
   { id: 'documents', text: 'Documents and advance permission' },
   { id: 'ceremony', text: 'What happens at the ceremony' },
@@ -69,104 +70,49 @@ const ext = { target: '_blank', rel: 'noopener' };
 
     <h2 id="which-lines">Which cruise lines allow scattering ashes?</h2>
     <p>
-      We checked the official website of every cruise line in this guide on {checkedLabel}: policy pages, FAQs,
-      guest contracts, terms and conditions, and site maps. Each line is in one of four groups:
+      We checked the official website of every cruise line in this guide on {checkedLabel}. Each line is in one of four
+      groups:
     </p>
     <ul>
-      <li><strong>Officially permitted:</strong> the line’s own policy, which we read, permits it, subject to its published requirements.</li>
-      <li><strong>Conditionally permitted:</strong> the line’s own policy, which we read, says it may be approved case by case or only in certain circumstances.</li>
-      <li><strong>Not permitted:</strong> the line’s own policy, which we read, says it is not offered from its ships.</li>
-      <li><strong>Unverified:</strong> we could not read an official policy. This is not a “no.” It means you need to ask the line in writing.</li>
+      <li><strong>Officially permitted:</strong> the line’s own policy permits it, subject to its published requirements.</li>
+      <li><strong>Conditionally permitted:</strong> the line’s own policy says it may be approved case by case or only in certain circumstances.</li>
+      <li><strong>Not permitted:</strong> the line’s own policy says it is not offered from its ships.</li>
+      <li><strong>Unverified:</strong> we found no official policy. This is not a “no.” It means you need to ask the line in writing.</li>
     </ul>
     <p>
-      Of the {operators.length} currently operating cruise lines in our directory, {counts['officially-permitted']} are officially permitted,
-      {counts['conditionally-permitted']} conditionally permitted, {counts['not-permitted']} not permitted and
-      {counts.unverified} unverified. Most unverified lines simply publish nothing on the subject.
+      {`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted']} conditionally permitted and ${counts['not-permitted']} not permitted. They are compared below. For ${counts.unverified} other lines we found no published policy; they are listed further down with a link to contact each line where we found one.`}
     </p>
 
-    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Cruise lines with a published policy, compared">
+    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Cruise lines with an established policy, compared">
       <table>
-        <caption>Cruise lines with a published policy (checked {checkedLabel})</caption>
+        <caption>Cruise lines with an established policy (checked {checkedLabel})</caption>
         <thead>
-          <tr><th scope="col">Cruise line</th><th scope="col">Status</th><th scope="col">Notice</th><th scope="col">Distance</th><th scope="col">Urn and documents</th></tr>
+          <tr><th scope="col">Cruise line</th><th scope="col">Status</th><th scope="col">Advance approval</th><th scope="col">Documents</th><th scope="col">Ceremony restrictions</th><th scope="col">Fees</th><th scope="col">Official policy</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row"><a href="#op-royal-caribbean-international">Royal Caribbean</a></th><td>Officially permitted</td><td>Email request; Front Desk on boarding</td><td>Not published</td><td>Biodegradable, no plastic or wire, released whole; death and cremation certificates</td></tr>
-          <tr><th scope="row"><a href="#op-princess-cruises">Princess Cruises</a></th><td>Officially permitted</td><td>Arranged and approved before sailing</td><td>Not published</td><td>Not published</td></tr>
-          <tr><th scope="row"><a href="#op-virgin-voyages">Virgin Voyages</a></th><td>Officially permitted</td><td>Request form at least 14 days before sailing</td><td>Not published</td><td>Certificate of Biodegradability</td></tr>
-          <tr><th scope="row"><a href="#op-fred-olsen-cruise-lines">Fred. Olsen</a></th><td>Officially permitted</td><td>At least 7 days before the cruise</td><td>At least 12 nautical miles</td><td>Sealed, leakproof container; certificate if the container is released</td></tr>
-          <tr><th scope="row"><a href="#op-marella-cruises">Marella (TUI)</a></th><td>Officially permitted</td><td>Contact TUI before travelling</td><td>At least 12 nautical miles, outside protected areas</td><td>Leak-proof, sealed container; copy of the death certificate</td></tr>
-          <tr><th scope="row"><a href="#op-ambassador-cruise-line">Ambassador</a></th><td>Conditionally permitted</td><td>Ask Guest Services; approval may take time</td><td>Not published</td><td>Not published</td></tr>
-          <tr><th scope="row"><a href="#op-crystal">Crystal</a></th><td>Not permitted from the ship</td><td>Contact Onboard Guest Services</td><td>Not applicable</td><td>Ashes may be spread on a private excursion</td></tr>
+          {
+            established.map((o) => (
+              <tr>
+                <th scope="row"><a href={`#op-${o.id}`}>{o.name}</a></th>
+                <td>{STATUS[o.status as StatusKey]}{o.policyNote === 'indexed' ? ' (indexed official page)' : o.policyNote === 'read-paraphrase' ? ' (wording not fully verified)' : ''}</td>
+                <td>{o.compare!.approval}</td>
+                <td>{o.compare!.documents}</td>
+                <td>{o.compare!.restrictions}</td>
+                <td>{o.compare!.fees}</td>
+                <td><a href={o.policyUrl!} {...ext}>Official policy<span class="visually-hidden"> for {o.name} (opens in a new tab)</span></a></td>
+              </tr>
+            ))
+          }
         </tbody>
       </table>
     </div>
-    <p class="cra__note">“Not published” means the official page we read does not say. No line we read publishes a fee.</p>
-
-    <h2 id="directory">Cruise line directory</h2>
-    <p>
-      All {operators.length} currently operating cruise lines we researched: ocean, luxury, expedition, river and regional lines around
-      the world. Each entry shows the permission status, the official policy page when one exists, the date we checked
-      and the main restrictions. Use the search and status filters to narrow the list.
+    <p class="cra__note">
+      “Not published” means the line’s official policy does not say. “Indexed official page” means the line’s own policy
+      page refused automated requests, so we read the search engine’s indexed copy of that official page; check the
+      wording on the page before you rely on it.
     </p>
-  </div>
 
-  <section class="cra-dir" aria-labelledby="directory" data-cra-directory>
-    <form class="cra-dir__filters" data-cra-filters hidden role="search" aria-label="Filter the cruise line directory">
-      <div class="cra-dir__field">
-        <label for="cra-q">Search by cruise line</label>
-        <input id="cra-q" type="search" name="q" autocomplete="off" data-cra-q />
-      </div>
-      <fieldset class="cra-dir__field">
-        <legend>Permission status</legend>
-        {
-          (Object.keys(STATUS) as StatusKey[]).map((k) => (
-            <label class="cra-dir__check">
-              <input type="checkbox" name="status" value={k} checked data-cra-status />
-              <span>{STATUS[k]} ({counts[k]})</span>
-            </label>
-          ))
-        }
-      </fieldset>
-      <button type="button" class="btn btn--secondary cra-dir__reset" data-cra-reset>Clear filters</button>
-    </form>
-    <p class="cra-dir__count" aria-live="polite" data-cra-count>Showing all {operators.length} cruise lines.</p>
-
-    <ul class="cra-dir__list" data-cra-list>
-      {
-        operators.map((o) => (
-          <li class="cra-card" data-name={o.name.toLowerCase()} data-status={o.status}>
-            <h3 class="cra-card__name" id={`dir-${o.id}`}>{o.name}</h3>
-            <p class={`cra-badge cra-badge--${o.status}`}>{STATUS[o.status as StatusKey]}</p>
-            <dl class="cra-card__facts">
-              <div><dt>Regions</dt><dd>{o.regions || 'Not recorded'}</dd></div>
-              <div><dt>Type</dt><dd>{o.fleet}</dd></div>
-              <div><dt>Restrictions</dt><dd>{o.restrictions}</dd></div>
-              <div>
-                <dt>Official policy</dt>
-                <dd>
-                  {o.policyUrl ? (
-                    <a href={o.policyUrl} {...ext}>
-                      {o.policyNote === 'unreadable' ? 'Policy page (not confirmed)' : 'Official policy'}
-                      <span class="visually-hidden"> for {o.name} (opens in a new tab)</span>
-                    </a>
-                  ) : (
-                    'None published'
-                  )}
-                </dd>
-              </div>
-              <div><dt>Checked</dt><dd>{o.verified ? <time datetime={o.verified}>{checkedLabel}</time> : 'Not re-checked'}</dd></div>
-            </dl>
-            <a class="cra-card__more" href={o.detail}>Details<span class="visually-hidden"> about {o.name}</span></a>
-          </li>
-        ))
-      }
-    </ul>
-    <p class="cra-dir__empty" data-cra-empty hidden>No cruise lines match. Try another name or select more statuses.</p>
-  </section>
-
-  <div class="prose wp-content">
-    <h2 id="profiles">Cruise lines with a published policy</h2>
+    <h2 id="profiles">Cruise lines with an established policy</h2>
 
     <section class="cra-profile" id="op-royal-caribbean-international" aria-labelledby="op-rc-h">
       <h3 id="op-rc-h">Royal Caribbean International</h3>
@@ -258,30 +204,76 @@ const ext = { target: '_blank', rel: 'noopener' };
       <p><a href="https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed" {...ext}>Crystal burial at sea FAQ (official)</a></p>
     </section>
 
-    <h2 id="unconfirmed-lines">Policy pages we could not read</h2>
-    <p>
-      Carnival, MSC, P&amp;O Cruises and Cunard each have a page about ashes, but their websites blocked every attempt to
-      read it for this guide, so they are listed as unverified. Read the page yourself before you book, or ask the line to
-      confirm in writing:
-    </p>
-    <ul>
-      <li><a href="https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes" {...ext}>Carnival: Scattering of Ashes</a></li>
-      <li><a href="https://www.msccruisesusa.com/faq/on-board-information" {...ext}>MSC Cruises: on-board information FAQ</a></li>
-      <li><a href="https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes" {...ext}>P&amp;O Cruises: Committal of ashes</a></li>
-      <li><a href="https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea" {...ext}>Cunard: Committal of ashes at sea</a></li>
-    </ul>
-    <p>
-      Search-engine summaries of these pages describe permission with conditions, such as a ceremony at least 12 nautical
-      miles out, a biodegradable urn and certificates, and for P&amp;O and Cunard a charge or package. Those summaries are
-      not the pages themselves, so we do not present their details as policy.
-    </p>
+    <section class="cra-profile" id="op-carnival-cruise-line" aria-labelledby="op-cc-h">
+      <h3 id="op-cc-h">Carnival Cruise Line</h3>
+      <p class="cra-profile__meta">Officially permitted. Read from the search engine’s indexed copy of Carnival’s official page, {checkedLabel}; check the exact wording on the page.</p>
+      <ul>
+        <li>Contact the Guest Services Desk once on board. Guest Services and the Environmental Officer coordinate the scattering; they ask for your preferred date and time, the number of attendees and a copy of the death certificate.</li>
+        <li>Bring the death certificate and certification that the cremation was done by a licensed facility.</li>
+        <li>Keep the ashes in a sealed, leak-proof urn for the whole trip. To release the urn with the ashes, present a certificate that it is biodegradable.</li>
+        <li>It “must be performed beyond twelve nautical miles from land and outside any special areas,” with the date and time based on environmental restrictions.</li>
+        <li>Commemorative flowers must be bought through the onboard Fun Shops, with no ribbon or non-biodegradable decorations.</li>
+        <li>The urn may not be taken ashore in a port of call.</li>
+        <li>A Guest Services team member escorts the family, and guests are given a moment of privacy; the site may need stairs.</li>
+        <li>The page lists “Scattering of human or animal ashes”; ask Guest Services about requirements for animal ashes.</li>
+      </ul>
+      <p><a href="https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes" {...ext}>Carnival: Scattering of Ashes (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-msc-cruises" aria-labelledby="op-msc-h">
+      <h3 id="op-msc-h">MSC Cruises</h3>
+      <p class="cra-profile__meta">Officially permitted. Read from the search engine’s indexed copy of MSC’s official FAQ pages, {checkedLabel}; check the exact wording on the page.</p>
+      <p>MSC calls it Memorial at Sea.</p>
+      <ul>
+        <li>Only on cruises of 6 nights or longer with at least one sea day.</li>
+        <li>Human remains only; animal ashes are not permitted.</li>
+        <li>Notify MSC by phone or through your travel agent before the cruise (ship, sail date, booking and stateroom numbers, attendees, the deceased’s name and urn details), then visit Guest Services on board.</li>
+        <li>At least 12 nautical miles from the coast; the ship’s command sets the time based on weather and safety.</li>
+        <li>No more than 10 guests; a waiver may be required.</li>
+        <li>Biodegradable urns only, in carry-on luggage, with the manufacturer’s certificate that the urn is fully biodegradable. No plastic ribbons, plastic flowers, plastic urns or balloons.</li>
+        <li>No fee. MSC does not require a death certificate, but airport and port security may ask for one.</li>
+        <li>Closed-toe shoes required; some locations involve steep or spiral stairs.</li>
+        <li>A certificate with the coordinates and time, signed by the Navigation Officer or Captain.</li>
+      </ul>
+      <p><a href="https://www.msccruisesusa.com/faq/on-board-information" {...ext}>MSC on-board information FAQ (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-po-cruises-uk" aria-labelledby="op-po-h">
+      <h3 id="op-po-h">P&amp;O Cruises (UK)</h3>
+      <p class="cra-profile__meta">Officially permitted. Read from the search engine’s indexed copy of P&amp;O’s official pages, {checkedLabel}; check the exact wording on the page.</p>
+      <ul>
+        <li>The Captain must approve it before the cruise starts.</li>
+        <li>Ashes in a biodegradable container, as hand luggage, with proof that it is biodegradable; bring the Certificate of Cremation.</li>
+        <li>On a sea day, at least 12 nautical miles from land; not in protected waters such as the Norwegian Fjords.</li>
+        <li>The ashes are lowered into the water in their container, in a ceremony conducted by the Captain or a senior officer.</li>
+        <li>An admin charge of GBP 270 applies.</li>
+        <li>You receive a certificate with the latitude and longitude from the ship’s log.</li>
+        <li>Pet ashes are not permitted, and P&amp;O does not help with scatterings ashore.</li>
+        <li>Cruise length: P&amp;O’s committal page says not on cruises of 6 nights or less, while its ceremonies FAQ says cruises of five nights or more. Ask P&amp;O which applies to your cruise.</li>
+      </ul>
+      <p><a href="https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes" {...ext}>P&amp;O Cruises: Committal of ashes (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-cunard" aria-labelledby="op-cu-h">
+      <h3 id="op-cu-h">Cunard</h3>
+      <p class="cra-profile__meta">Officially permitted. Read from the search engine’s indexed copy of Cunard’s official FAQ and celebrations page, {checkedLabel}; check the exact wording on the page.</p>
+      <ul>
+        <li>Requires the Captain’s approval before the voyage, and approval is always subject to change.</li>
+        <li>“The ashes will not be scattered but committed to the sea in a biodegradable container.” Bring the cremation certificate.</li>
+        <li>Not on voyages of 5 nights or less; on a sea day, at least 12 nautical miles from land; dates may be restricted by weather.</li>
+        <li>The Captain or a Senior Officer accompanies the family to an outside area, typically a lower deck, and will say a prayer if asked.</li>
+        <li>Booked as a paid Committal of Ashes package, paid in full at booking.</li>
+        <li>Location details from the ship’s log are normally provided afterward.</li>
+        <li>Pet ashes are not permitted; flowers must be biodegradable.</li>
+      </ul>
+      <p><a href="https://www.cunard.com/en-gb/frequently-asked-questions?categoryId=All&amp;questionId=faq390.summary" {...ext}>Cunard committal of ashes FAQ (official)</a></p>
+    </section>
 
     <h2 id="no-published-policy">Lines with no published policy</h2>
     <p>
-      For every other line in the directory, including Norwegian, Celebrity, Holland America, Disney, Viking, Costa, AIDA,
-      Oceania, Regent Seven Seas, Seabourn, Silversea, Hurtigruten, Ponant, Lindblad and the river cruise lines, we found no
-      published policy on the official website. For some, parts of the site could not be read. No published policy is not
-      a yes and not a no.
+      For these {counts.unverified} cruise lines we searched the official website and found no published policy on
+      scattering ashes. For some, parts of the site could not be read. No published policy is not a yes and not a no: ask
+      the line in writing before you book. Where we found an official contact page, it is linked.
     </p>
     <p>
       Some lines’ terms ban throwing items overboard without the crew’s permission. Holland America asks guests to
@@ -300,27 +292,58 @@ const ext = { target: '_blank', rel: 'noopener' };
       <li>Will I receive the time and coordinates afterward?</li>
       <li>If we sail from a US port, who reports it to the EPA?</li>
     </ul>
+  </div>
 
+  <section class="cra-dir" aria-labelledby="no-published-policy" data-cra-directory>
+    <form class="cra-dir__filters" data-cra-filters hidden role="search" aria-label="Search the lines with no published policy">
+      <div class="cra-dir__field">
+        <label for="cra-q">Search by cruise line</label>
+        <input id="cra-q" type="search" name="q" autocomplete="off" data-cra-q />
+      </div>
+    </form>
+    <p class="cra-dir__count" aria-live="polite" data-cra-count>Showing all {unverified.length} lines with no published policy.</p>
+    <ul class="cra-dir__list" data-cra-list>
+      {
+        unverified.map((o) => (
+          <li class="cra-row" data-name={o.name.toLowerCase()}>
+            <span class="cra-row__name">{o.name}</span>
+            <span class="cra-row__meta">{o.fleet}{o.regions ? `: ${o.regions}` : ''}</span>
+            {o.contactUrl ? (
+              <a class="cra-row__link" href={o.contactUrl} {...ext}>
+                Official contact information<span class="visually-hidden"> for {o.name} (opens in a new tab)</span>
+              </a>
+            ) : (
+              <span class="cra-row__meta">No contact page recorded</span>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+    <p class="cra-dir__empty" data-cra-empty hidden>No cruise lines match. Try another name.</p>
+  </section>
+
+  <div class="prose wp-content">
     <h2 id="documents">Documents and advance permission</h2>
     <p>Across the policies we read, families are asked for some or all of these:</p>
     <ul>
-      <li><strong>Permission before you sail:</strong> Princess and Virgin require approval in advance (Virgin: at least 14 days); Fred. Olsen asks for at least seven days’ notice; Royal Caribbean takes requests by email.</li>
-      <li><strong>Death certificate:</strong> Royal Caribbean and Marella.</li>
-      <li><strong>Cremation certificate:</strong> Royal Caribbean.</li>
-      <li><strong>Certificate that the urn is biodegradable:</strong> Virgin, and Royal Caribbean and Fred. Olsen in some cases.</li>
-      <li><strong>Booking details:</strong> Marella and Virgin (ship, sail date, party size).</li>
+      <li><strong>Permission before you sail:</strong> P&amp;O and Cunard need the Captain’s approval before the cruise; Princess and Virgin require approval in advance (Virgin: at least 14 days); MSC asks you to notify it before the cruise; Fred. Olsen asks for at least seven days’ notice; Royal Caribbean takes requests by email. Carnival arranges it with Guest Services once you are on board.</li>
+      <li><strong>Death certificate:</strong> Royal Caribbean, Carnival and Marella. MSC does not require one, but security may ask for it.</li>
+      <li><strong>Cremation certificate or proof of cremation:</strong> Royal Caribbean, Carnival, P&amp;O and Cunard.</li>
+      <li><strong>Certificate that the urn is biodegradable:</strong> Virgin, MSC and P&amp;O; Carnival and Fred. Olsen if the urn is released; Royal Caribbean in some cases.</li>
+      <li><strong>Booking details:</strong> MSC, Marella and Virgin.</li>
     </ul>
     <p>Carry copies of each document on the trip, and keep the line’s written approval with them.</p>
 
     <h2 id="ceremony">What happens at the ceremony</h2>
     <ul>
-      <li><strong>The ship sets the time and place.</strong> Royal Caribbean’s Front Desk sets them; Fred. Olsen agrees them with you; Marella’s Guest Experience Coordinator arranges them.</li>
-      <li><strong>Distance:</strong> lines that publish a distance (Fred. Olsen, Marella) require at least 12 nautical miles from land.</li>
-      <li><strong>Crew:</strong> at Fred. Olsen a senior crew member supervises, for privacy and to follow procedure.</li>
-      <li><strong>Whole urn or loose ashes:</strong> Royal Caribbean requires the whole urn to be released; Fred. Olsen allows either if the container is certified biodegradable.</li>
-      <li><strong>Flowers:</strong> only biodegradable items may go into the sea; ribbons, plastic flowers and balloons are not allowed.</li>
-      <li><strong>Guests:</strong> Fred. Olsen may limit the number attending; Virgin asks for your party size.</li>
-      <li><strong>Afterward:</strong> none of the policies we read promises a certificate or coordinates. Ask in advance.</li>
+      <li><strong>The ship sets the time and place.</strong> Royal Caribbean’s Front Desk sets them; MSC’s ship command sets the time; Fred. Olsen agrees them with you; Marella’s Guest Experience Coordinator arranges them.</li>
+      <li><strong>Distance:</strong> every line that publishes a distance (Carnival, MSC, P&amp;O, Cunard, Fred. Olsen, Marella) requires at least 12 nautical miles from land.</li>
+      <li><strong>Cruise length and sea days:</strong> MSC requires 6 nights or more with a sea day; Cunard excludes voyages of 5 nights or less; P&amp;O’s two official pages differ on its minimum. P&amp;O and Cunard hold it on a sea day.</li>
+      <li><strong>Crew:</strong> at P&amp;O and Cunard the Captain or a senior officer takes part; at Carnival a Guest Services team member escorts you; at Fred. Olsen a senior crew member supervises.</li>
+      <li><strong>Whole urn or loose ashes:</strong> Royal Caribbean and Cunard commit the whole container, and P&amp;O lowers the ashes in their container; Carnival and Fred. Olsen allow either if the container is certified biodegradable.</li>
+      <li><strong>Flowers:</strong> only biodegradable items may go into the sea; Carnival sells commemorative flowers on board.</li>
+      <li><strong>Guests:</strong> MSC allows up to 10; Fred. Olsen may limit the number; Virgin asks for your party size.</li>
+      <li><strong>Afterward:</strong> MSC and P&amp;O give a certificate with the position; Cunard normally provides location details from the ship’s log. Others do not say, so ask.</li>
       <li><strong>Not guaranteed:</strong> Fred. Olsen says the service “cannot be guaranteed,” and other lines depend on weather, port authorities and the itinerary.</li>
     </ul>
 
@@ -450,8 +473,8 @@ const ext = { target: '_blank', rel: 'noopener' };
     <p>
       <strong>At the cruise terminal and in port:</strong> US cruise terminals may X-ray baggage under an approved security
       program (<a href="https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-105/subpart-E/section-105.545" {...ext}>33 CFR 105.545</a>).
-      Fred. Olsen and Marella say the remains cannot be taken ashore once on board, so leave the urn with the ship until
-      the ceremony.
+      Carnival, Fred. Olsen and Marella say the remains cannot be taken ashore once on board, so leave the urn with the
+      ship until the ceremony.
     </p>
     <p>
       <strong>Containers:</strong> for travel, a sealed, leakproof container that X-rays clearly; for the sea, a
@@ -461,7 +484,7 @@ const ext = { target: '_blank', rel: 'noopener' };
 
     <h2 id="planning">How to plan it, step by step</h2>
     <ol>
-      <li><strong>Check the policy before you book.</strong> Use the directory above, then confirm with the line in writing. If it publishes no policy, ask before you pay.</li>
+      <li><strong>Check the policy before you book.</strong> Use the comparison above, then confirm with the line in writing. If it publishes no policy, ask before you pay.</li>
       <li><strong>Choose a suitable sailing.</strong> Look for sea days and time well offshore. Coastal countries have their own rules close to shore.</li>
       <li><strong>Make the request early.</strong> Notice periods we found range from “on board” to 7 and 14 days. Ask for the approval in writing.</li>
       <li><strong>Gather documents.</strong> Copies of the death certificate and cremation certificate, and the urn’s certificate of biodegradability.</li>
@@ -483,19 +506,19 @@ const ext = { target: '_blank', rel: 'noopener' };
     <h3>Is the urn released, or are the ashes poured out?</h3>
     <p>It depends on the line. Royal Caribbean says the entire urn must be tossed. Fred. Olsen allows either, if the container is certified biodegradable.</p>
     <h3>Do cruise lines charge for this?</h3>
-    <p>None of the policies we read publishes a fee. Ask the line.</p>
+    <p>Some do. P&amp;O Cruises lists a GBP 270 admin charge and Cunard sells a paid Committal of Ashes package; MSC says there is no fee. The other policies we read do not publish a fee, so ask.</p>
     <h3>How far from shore does the ship have to be?</h3>
-    <p>From a US port, at least 3 nautical miles by law. Lines that publish a distance use 12 nautical miles. Other countries set their own rules.</p>
+    <p>From a US port, at least 3 nautical miles by law. Every line that publishes a distance uses at least 12 nautical miles. Other countries set their own rules.</p>
     <h3>Do I have to tell the EPA?</h3>
     <p>If the ship departed a US port with the ashes aboard, the burial must be reported within 30 days. Ask the line whether it reports it; if not, a relative can report online.</p>
     <h3>Can I choose where the ashes go?</h3>
     <p>Usually the ship decides with you. Fred. Olsen agrees the place, date and time with guests; Royal Caribbean’s Front Desk sets the time and place.</p>
     <h3>Will I receive the coordinates or a certificate?</h3>
-    <p>None of the policies we read promises one. Ask in advance.</p>
+    <p>MSC provides a certificate with the coordinates and time, P&amp;O gives a certificate with the latitude and longitude from the ship’s log, and Cunard normally provides location details from the ship’s log. Other lines do not say, so ask in advance.</p>
     <h3>Can I scatter a pet’s ashes at sea from a cruise?</h3>
-    <p>Not under the US general permit, which covers human remains only. Ask the line.</p>
+    <p>MSC, P&amp;O Cruises and Cunard say no. Carnival’s page lists “human or animal ashes,” so ask Guest Services. From a US port, the EPA general permit covers human remains only.</p>
     <h3>Can I scatter ashes at a private island or in port?</h3>
-    <p>Not that we found. Fred. Olsen and Marella say the remains cannot be taken ashore once on board, and coastal countries set their own rules.</p>
+    <p>Not that we found. Carnival, Fred. Olsen and Marella say the remains cannot be taken ashore once on board, P&amp;O does not assist with scatterings ashore, and coastal countries set their own rules.</p>
     <h3>What if the ceremony can’t happen?</h3>
     <p>Fred. Olsen states the service “cannot be guaranteed,” and other lines depend on port authorities, weather and the itinerary. Keep the ashes and paperwork safe and plan another option.</p>
     <h3>Does no published policy mean a line does not allow it?</h3>
@@ -515,37 +538,30 @@ const ext = { target: '_blank', rel: 'noopener' };
 </div>
 
 <script>
-  // Directory filters (progressive enhancement): the full list is in the
-  // HTML; this only hides cards that do not match and announces the count.
+  // Search for the lines with no published policy (progressive enhancement):
+  // every line is in the HTML; this only hides rows that do not match and
+  // announces the count.
   const root = document.querySelector<HTMLElement>('[data-cra-directory]');
   const form = root?.querySelector<HTMLFormElement>('[data-cra-filters]');
   if (root && form) {
     const q = form.querySelector<HTMLInputElement>('[data-cra-q]')!;
-    const boxes = [...form.querySelectorAll<HTMLInputElement>('[data-cra-status]')];
-    const cards = [...root.querySelectorAll<HTMLElement>('[data-cra-list] > li')];
+    const rows = [...root.querySelectorAll<HTMLElement>('[data-cra-list] > li')];
     const count = root.querySelector<HTMLElement>('[data-cra-count]')!;
     const empty = root.querySelector<HTMLElement>('[data-cra-empty]')!;
-    const total = cards.length;
+    const total = rows.length;
     const apply = () => {
       const term = q.value.trim().toLowerCase();
-      const statuses = new Set(boxes.filter((b) => b.checked).map((b) => b.value));
       let shown = 0;
-      for (const c of cards) {
-        const ok = statuses.has(c.dataset.status ?? '') && (!term || (c.dataset.name ?? '').includes(term));
-        c.hidden = !ok;
+      for (const r of rows) {
+        const ok = !term || (r.dataset.name ?? '').includes(term);
+        r.hidden = !ok;
         if (ok) shown++;
       }
       empty.hidden = shown > 0;
-      count.textContent = shown === total ? `Showing all ${total} cruise lines.` : `Showing ${shown} of ${total} cruise lines.`;
+      count.textContent = shown === total ? `Showing all ${total} lines with no published policy.` : `Showing ${shown} of ${total} lines with no published policy.`;
     };
     form.addEventListener('input', apply);
     form.addEventListener('submit', (e) => e.preventDefault());
-    form.querySelector('[data-cra-reset]')?.addEventListener('click', () => {
-      q.value = '';
-      boxes.forEach((b) => (b.checked = true));
-      apply();
-      q.focus();
-    });
     form.hidden = false;
   }
 </script>
@@ -572,6 +588,8 @@ const ext = { target: '_blank', rel: 'noopener' };
     color: var(--color-text-muted);
   }
   .cra__table {
+    /* Contains the visually hidden link text so it scrolls with the table. */
+    position: relative;
     overflow-x: auto;
     margin-block: var(--space-4);
   }
@@ -629,22 +647,6 @@ const ext = { target: '_blank', rel: 'noopener' };
     border-radius: var(--radius);
     font: inherit;
   }
-  .cra-dir__check {
-    display: flex !important;
-    align-items: center;
-    gap: var(--space-2);
-    min-height: var(--tap-target);
-    font-weight: 400 !important;
-    margin: 0 !important;
-  }
-  .cra-dir__check input {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .cra-dir__reset {
-    justify-self: start;
-    min-height: var(--tap-target);
-  }
   .cra-dir__count {
     font-weight: 700;
   }
@@ -652,89 +654,35 @@ const ext = { target: '_blank', rel: 'noopener' };
     list-style: none;
     padding: 0;
     margin: 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .cra-row {
     display: grid;
-    gap: var(--space-4);
-  }
-  .cra-card {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    padding: var(--space-4);
-    background: var(--color-bg);
-  }
-  .cra-card[hidden] {
-    display: none;
-  }
-  .cra-card__name {
-    font-size: 1.125rem;
-    margin: 0 0 var(--space-2);
-  }
-  .cra-badge {
-    display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 700;
-    padding: 0.125rem var(--space-2);
-    border-radius: 999px;
-    border: 1px solid currentColor;
-    margin: 0 0 var(--space-3);
-  }
-  .cra-badge--officially-permitted {
-    background: var(--color-primary);
-    color: var(--color-on-primary);
-    border-color: var(--color-primary);
-  }
-  .cra-badge--conditionally-permitted {
-    background: #fef3c7;
-    color: #713f12;
-  }
-  .cra-badge--not-permitted {
-    background: #fee2e2;
-    color: #7f1d1d;
-  }
-  .cra-badge--unverified {
-    background: var(--color-surface);
-    color: var(--color-text);
-  }
-  .cra-card__facts {
-    margin: 0 0 var(--space-3);
-    display: grid;
-    gap: var(--space-2);
+    gap: var(--space-1);
+    padding-block: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
     font-size: 0.9375rem;
   }
-  .cra-card__facts dt {
+  .cra-row[hidden] {
+    display: none;
+  }
+  .cra-row__name {
     font-weight: 700;
   }
-  .cra-card__facts dd {
-    margin: 0;
+  .cra-row__meta {
+    color: var(--color-text-muted);
   }
-  .cra-card__facts a,
-  .cra-card__more {
+  .cra-row__link {
     display: inline-flex;
     align-items: center;
     min-height: var(--tap-target);
-  }
-  .cra-card__more {
-    font-weight: 700;
+    justify-self: start;
   }
   @media (min-width: 48rem) {
-    .cra-dir__filters {
-      grid-template-columns: 1fr 1fr;
-      align-items: start;
-    }
-    .cra-dir__reset {
-      grid-column: 1 / -1;
-    }
-    .cra-dir__list {
-      grid-template-columns: 1fr 1fr;
-    }
-    .cra-card__facts div {
-      display: grid;
-      grid-template-columns: 7.5rem 1fr;
-      gap: var(--space-2);
-    }
-  }
-  @media (min-width: 75rem) {
-    .cra-dir__list {
-      grid-template-columns: 1fr 1fr 1fr;
+    .cra-row {
+      grid-template-columns: 16rem 1fr auto;
+      align-items: center;
+      gap: var(--space-4);
     }
   }
 </style>

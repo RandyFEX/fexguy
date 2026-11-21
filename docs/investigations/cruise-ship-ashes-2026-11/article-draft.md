@@ -16,8 +16,8 @@ Editorial notes for Randy (not part of the article):
   pages (their sites refuse automated requests; you authorized this
   method). Their exact wording still needs one direct read in a browser
   before publication.
-- The preview page and its directory data were NOT updated in Version 1.6
-  (you asked to hold the directory rebuild); this draft is ahead of it.
+- Version 1.7: the preview page is synchronized with this draft (primary
+  comparison of the 11 established lines; compact list of unverified lines).
 - Unverified lines: we searched their official sites and the search
   index. None publishes a policy. That is shown as "no published policy",
   never as a yes or a no.

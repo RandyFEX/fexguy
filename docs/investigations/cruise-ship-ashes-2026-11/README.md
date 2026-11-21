@@ -6,7 +6,26 @@ component has been changed. Model for depth and sourcing: the One Last
 Amazing Adventure national parks preview (branch
 `claude/last-adventure-preview`, not modified).
 
-## Status: Version 1.6 evidence recovery (2026-11-21)
+## Status: Version 1.7 preview rebuilt around verified policies (2026-11-21)
+
+- Primary comparison: the 11 lines with an established policy (9
+  officially permitted, Ambassador conditionally permitted, Crystal not
+  permitted), with advance approval, documents, ceremony restrictions,
+  fees and official links, generated from `src/data/cruise-ashes/operators.json`
+  (`compare` fields in scripts/cruise-ashes/build-data.mjs).
+- Profiles added for Carnival, MSC, P&O Cruises and Cunard, each marked
+  as read from the search engine's indexed copy of the official page; the
+  P&O minimum-length discrepancy is shown, not resolved. Marella keeps its
+  verification limitation.
+- The 69 unverified lines are a compact searchable list (name, type and
+  regions, official contact page link for 23 of them; nothing invented).
+- Documents, ceremony and FAQ sections synchronized with the Version 1.6
+  draft; law and travel sections unchanged except Carnival added to the
+  "remains cannot be taken ashore" line.
+- Title, SEO title, meta description, slug, shared header, footer, mobile
+  call bar and CTA unchanged; noindex and navigation exclusions kept.
+
+## Version 1.6 evidence recovery (2026-11-21)
 
 - Carnival, MSC, P&O Cruises and Cunard recovered as Officially permitted
   from the search engine's indexed copies of their official policy pages

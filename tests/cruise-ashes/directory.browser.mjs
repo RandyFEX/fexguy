@@ -1,10 +1,11 @@
-// Browser test for the cruise ship ash scattering guide preview (Version 1.3,
+// Browser test for the cruise ship ash scattering guide preview (Version 1.7,
 // /scattering-ashes-from-a-cruise-ship/). Serves the built site (dist/)
-// locally and drives it with Playwright: the full directory is in the HTML,
-// works without JavaScript, the filters narrow it by name and status and
-// announce the count, Clear filters restores it, and the page has no
-// horizontal scroll at 320px. Run after `npm run build`:
-// node tests/cruise-ashes/directory.browser.mjs (needs Playwright installed).
+// locally and drives it with Playwright: the primary comparison lists every
+// line with an established policy, the lines with no published policy are a
+// compact list that is fully in the HTML and works without JavaScript, the
+// search narrows it and announces the count, every profile and contact link
+// is present, and the page has no horizontal scroll at 320px. Run after
+// `npm run build`: node tests/cruise-ashes/directory.browser.mjs
 import { createServer } from 'node:http';
 import { createRequire } from 'node:module';
 import { existsSync, readFileSync, statSync } from 'node:fs';
@@ -33,12 +34,22 @@ const server = createServer((req, res) => {
 await new Promise((r) => server.listen(0, r));
 const base = `http://localhost:${server.address().port}`;
 const data = JSON.parse(readFileSync(new URL('../../src/data/cruise-ashes/operators.json', import.meta.url), 'utf8'));
-const total = data.operators.length;
+const established = data.operators.filter((o) => o.status !== 'unverified');
+const unverified = data.operators.filter((o) => o.status === 'unverified');
+const total = unverified.length;
 
 const html = readFileSync(join(DIST, PAGE, 'index.html'), 'utf8');
-assert.equal((html.match(/class="cra-card"/g) ?? []).length, total, 'every operator is in the HTML');
+assert.equal((html.match(/class="cra-row"/g) ?? []).length, total, 'every unverified line is in the compact list');
+assert.equal((html.match(/class="cra-card"/g) ?? []).length, 0, 'no full cards for unverified lines');
 assert.match(html, /<meta name="robots" content="noindex, nofollow"/, 'preview is noindex, nofollow');
 assert.ok(!/\u2014/.test(html), 'no em dashes');
+for (const o of established) {
+  assert.ok(html.includes(`id="op-${o.id}"`), `profile for ${o.name}`);
+  assert.ok(html.includes(`href="#op-${o.id}"`), `comparison row for ${o.name}`);
+}
+for (const o of unverified.filter((u) => u.contactUrl)) assert.ok(html.includes(`href="${o.contactUrl.replace(/&/g, '&amp;')}"`), `contact link for ${o.name}`);
+const counts = data.operators.reduce((m, o) => ((m[o.status] = (m[o.status] ?? 0) + 1), m), {});
+assert.ok(html.includes(`${established.length} cruise lines have an established policy: ${counts['officially-permitted']} officially permitted, ${counts['conditionally-permitted'] ?? 0} conditionally permitted and ${counts['not-permitted'] ?? 0} not permitted. They are compared below. For ${total} other lines`), 'displayed counts match the data');
 
 const browser = await chromium.launch();
 let failed = 0;
@@ -46,12 +57,12 @@ const check = async (name, fn) => {
   try { await fn(); console.log(`ok - ${name}`); } catch (e) { failed++; console.log(`not ok - ${name}\n  ${e.message}`); }
 };
 try {
-  await check('without JavaScript: form hidden, every card visible', async () => {
+  await check('without JavaScript: search hidden, every row visible', async () => {
     const ctx = await browser.newContext({ javaScriptEnabled: false });
     const p = await ctx.newPage();
     await p.goto(base + PAGE);
     assert.equal(await p.locator('[data-cra-filters]').isVisible(), false);
-    assert.equal(await p.locator('.cra-card:visible').count(), total);
+    assert.equal(await p.locator('.cra-row:visible').count(), total);
     await ctx.close();
   });
 
@@ -59,41 +70,30 @@ try {
   const p = await ctx.newPage();
   await p.goto(base + PAGE);
 
-  await check('filters appear with JavaScript', async () => {
+  await check('primary comparison has one row per established line', async () => {
+    assert.equal(await p.locator('.cra__table').first().locator('tbody tr').count(), established.length);
+  });
+  await check('search appears with JavaScript', async () => {
     assert.equal(await p.locator('[data-cra-filters]').isVisible(), true);
-    assert.equal(await p.locator('[data-cra-count]').textContent(), `Showing all ${total} cruise lines.`);
+    assert.equal(await p.locator('[data-cra-count]').textContent(), `Showing all ${total} lines with no published policy.`);
   });
   await check('search by name narrows the list and announces the count', async () => {
-    await p.fill('#cra-q', 'carnival');
-    const shown = await p.locator('.cra-card:visible').count();
+    await p.fill('#cra-q', 'viking');
+    const shown = await p.locator('.cra-row:visible').count();
     assert.ok(shown >= 1 && shown < total, `shown ${shown}`);
-    for (const n of await p.locator('.cra-card:visible .cra-card__name').allTextContents()) assert.match(n.toLowerCase(), /carnival/);
-    assert.equal(await p.locator('[data-cra-count]').textContent(), `Showing ${shown} of ${total} cruise lines.`);
+    for (const n of await p.locator('.cra-row:visible .cra-row__name').allTextContents()) assert.match(n.toLowerCase(), /viking/);
+    assert.equal(await p.locator('[data-cra-count]').textContent(), `Showing ${shown} of ${total} lines with no published policy.`);
     assert.equal(await p.locator('[data-cra-count]').getAttribute('aria-live'), 'polite');
   });
-  await check('status filter shows only the chosen statuses', async () => {
-    await p.click('[data-cra-reset]');
-    for (const v of ['conditionally-permitted', 'not-permitted', 'unverified']) await p.uncheck(`[data-cra-status][value="${v}"]`);
-    const statuses = await p.locator('.cra-card:visible').evaluateAll((els) => els.map((e) => e.dataset.status));
-    assert.ok(statuses.length > 0 && statuses.every((s) => s === 'officially-permitted'), statuses.join());
-  });
-  await check('no match shows the empty message', async () => {
+  await check('no match shows the empty message; clearing restores the list', async () => {
     await p.fill('#cra-q', 'zzzz-no-such-line');
     assert.equal(await p.locator('[data-cra-empty]').isVisible(), true);
-    assert.equal(await p.locator('.cra-card:visible').count(), 0);
-  });
-  await check('Clear filters restores every card and focuses the search', async () => {
-    await p.click('[data-cra-reset]');
-    assert.equal(await p.locator('.cra-card:visible').count(), total);
-    assert.equal(await p.evaluate(() => document.activeElement?.id), 'cra-q');
-  });
-  await check('detail links point at sections on the page', async () => {
-    const targets = new Set(await p.locator('.cra-card__more').evaluateAll((els) => els.map((e) => e.getAttribute('href'))));
-    for (const t of targets) assert.equal(await p.locator(t).count(), 1, `missing ${t}`);
+    await p.fill('#cra-q', '');
+    assert.equal(await p.locator('.cra-row:visible').count(), total);
   });
   await ctx.close();
 
-  await check('no horizontal scroll at 320px', async () => {
+await check('no horizontal scroll at 320px', async () => {
     const c = await browser.newContext({ viewport: { width: 320, height: 800 } });
     const m = await c.newPage();
     await m.goto(base + PAGE);

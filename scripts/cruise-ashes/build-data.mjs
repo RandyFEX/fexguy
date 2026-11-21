@@ -28,8 +28,35 @@ const SUMMARY = {
   'marella-cruises': 'International waters, at least 12 nautical miles from land and outside protected areas; copy of the death certificate; sealed container that passes X-ray.',
   'ambassador-cruise-line': 'May be possible at the discretion of local port authorities; approval can take time.',
   crystal: 'No burial at sea from the ship; ashes may be spread on a private excursion.',
+  // Version 1.6: recovered from the search engine's indexed copy of the official page.
+  'carnival-cruise-line': 'Arranged with Guest Services on board; beyond 12 nautical miles from land and outside special areas; death certificate and proof of licensed cremation; biodegradability certificate if the urn is released.',
+  'msc-cruises': 'Cruises of 6 nights or more with a sea day; at least 12 nautical miles; up to 10 guests; certified biodegradable urn; human ashes only; no fee.',
+  'po-cruises-uk': 'Captain\u2019s approval before the cruise; sea day, at least 12 nautical miles, not the Norwegian Fjords; Certificate of Cremation; GBP 270 admin charge.',
+  cunard: 'Captain\u2019s approval before the voyage; not on 5 nights or less; sea day, at least 12 nautical miles; container committed whole; paid package.',
 };
-const UNCONFIRMED = new Set(['carnival-cruise-line', 'msc-cruises', 'po-cruises-uk', 'cunard']);
+// Version 1.7: the primary comparison for the lines with an established
+// policy (wording from the research records' official answers only).
+const COMPARE = {
+  'royal-caribbean-international': { approval: 'Request by email (gfotravelservices@rccl.com); Front Desk on boarding sets the time and place', documents: 'Death certificate and cremation certificate; an urn biodegradability certificate may be required', restrictions: 'Biodegradable urn with no plastic or wire, released whole', fees: 'Not published' },
+  'princess-cruises': { approval: 'Arranged and approved before sailing (ashesrequest@princesscruises.com)', documents: 'Not published', restrictions: 'Private shipboard ceremony', fees: 'Not published' },
+  'virgin-voyages': { approval: 'Celebration of Life Request Form at least 14 days before sailing; approval with local port authorities', documents: 'Certificate of Biodegradability for the container', restrictions: 'Party size asked on the form; no single-use items such as balloons', fees: 'Not published' },
+  'fred-olsen-cruise-lines': { approval: 'Notify Guest Services at least 7 days before the cruise; subject to the ship\u2019s management', documents: 'Biodegradability certificate if the container is released', restrictions: 'At least 12 nautical miles from land; sealed, leakproof container; biodegradable items only; attendance may be limited; not guaranteed', fees: 'Not published' },
+  'marella-cruises': { approval: 'Contact TUI before travelling; arranged on board', documents: 'Copy of the death certificate', restrictions: 'International waters, at least 12 nautical miles from land, outside marine protected areas; sealed container that passes X-ray', fees: 'Not published' },
+  'ambassador-cruise-line': { approval: 'Case by case, at the discretion of local port authorities; ask Guest Services early', documents: 'Not published', restrictions: 'Not published', fees: 'Not published' },
+  crystal: { approval: 'Not offered from the ship; ask Onboard Guest Services about a private excursion', documents: 'Not published', restrictions: 'No burial at sea from the ship', fees: 'Not published' },
+  'carnival-cruise-line': { approval: 'Contact the Guest Services Desk once on board', documents: 'Death certificate; proof of cremation at a licensed facility; biodegradability certificate if the urn is released', restrictions: 'Beyond 12 nautical miles from land and outside special areas; sealed, leak-proof urn; flowers bought on board; urn may not go ashore in port', fees: 'Not published' },
+  'msc-cruises': { approval: 'Notify MSC or your travel agent before the cruise', documents: 'Urn maker\u2019s biodegradability certificate; MSC does not require a death certificate', restrictions: '6 nights or more with a sea day; at least 12 nautical miles; up to 10 guests; human ashes only; urn in carry-on luggage', fees: 'No fee' },
+  'po-cruises-uk': { approval: 'Captain\u2019s approval before the cruise', documents: 'Certificate of Cremation; proof the container is biodegradable', restrictions: 'Sea day; at least 12 nautical miles; not the Norwegian Fjords; no pet ashes; minimum cruise length differs between P&O\u2019s own pages', fees: 'GBP 270 admin charge' },
+  cunard: { approval: 'Captain\u2019s approval before the voyage', documents: 'Cremation certificate; supporting documentation for the biodegradable container', restrictions: 'Not on voyages of 5 nights or less; sea day; at least 12 nautical miles; container committed whole; no pet ashes', fees: 'Paid package; price not published' },
+};
+// Unverified lines: the official page where a contact was shown (from the
+// record's officialContact; nothing invented). Pages marked "not opened" are skipped.
+const contactUrl = (r) => {
+  const c = r.officialContact ?? '';
+  // Skipped: pages not opened, contacts not captured, and redirects to another company's site.
+  if (/not opened|not captured|redirects/i.test(c)) return null;
+  return c.match(/https?:\/\/[^\s)]+/)?.[0]?.replace(/[.,;]$/, '') ?? null;
+};
 // Left out of the public directory (research records kept):
 const EXCLUDE = {
   'alaskan-dream-cruises': 'reported closed (February 2026, news reports)',
@@ -71,12 +98,7 @@ for (const f of FILES) {
       restrictions = SUMMARY[r.id];
       detail = `#op-${r.id}`;
       policyUrl = official?.url ?? null;
-      policyNote = r.wordingConfirmed ? 'read' : 'read-paraphrase';
-    } else if (UNCONFIRMED.has(r.id)) {
-      restrictions = 'The line has a policy page, but it could not be read for this guide. Check it directly or ask the line.';
-      detail = '#unconfirmed-lines';
-      policyUrl = official?.url ?? null;
-      policyNote = 'unreadable';
+      policyNote = r.evidenceMethod === 'search-index-of-official-page' ? 'indexed' : r.wordingConfirmed ? 'read' : 'read-paraphrase';
     } else if (UNREADABLE.has(r.id) || (twin && UNREADABLE.has(twin.id))) {
       restrictions = 'No published policy found. Parts of the official site could not be read.';
       detail = '#no-published-policy';
@@ -85,7 +107,9 @@ for (const f of FILES) {
       detail = '#no-published-policy';
     }
     if (r.status !== 'unverified' && !SUMMARY[r.id]) throw new Error(`${r.id}: status ${r.status} needs a summary line`);
-    if (r.status !== 'unverified' && !r.wordingConfirmed && r.id !== 'marella-cruises') throw new Error(`${r.id}: permitted status without confirmed wording`);
+    if (r.status !== 'unverified' && !r.wordingConfirmed && r.id !== 'marella-cruises' && r.evidenceMethod !== 'search-index-of-official-page')
+      throw new Error(`${r.id}: established status without confirmed wording or an indexed official page`);
+    if (r.status !== 'unverified' && !COMPARE[r.id]) throw new Error(`${r.id}: established status needs a comparison row`);
     if (twin && twin.status !== 'unverified') throw new Error(`${r.id}: merged record ${twin.id} has its own status`);
     const verified = checkedOn(r) && (!twin || checkedOn(twin)) ? checkedOn(r) : null;
     ops.push({
@@ -98,6 +122,8 @@ for (const f of FILES) {
       policyNote,
       verified,
       restrictions: dash(restrictions),
+      compare: COMPARE[r.id] ?? null,
+      contactUrl: r.status === 'unverified' ? contactUrl(r) ?? contactUrl(twin ?? {}) : null,
       detail,
     });
   }
