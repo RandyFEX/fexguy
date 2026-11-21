@@ -28,7 +28,7 @@ sidebar: true
 
 <h2 id="h-what-is-a-build-chart-for-life-insurance"><strong>What is a build chart for life insurance?</strong></h2>
 
-<p>A “Build Chart” is a height and weight chart used by an insurance company or life insurance agents to underwrite and identify what rate and health category you may fall into based on your height and weight only.</p>
+<p>A “<a href="/burial-insurance/build-chart/">Build Chart</a>” is a height and weight chart used by an insurance company or life insurance agents to underwrite and identify what rate and health category you may fall into based on your height and weight only.</p>
 
 <ul>
 <li>If your height and weight fall within their optimum requirements based on your gender (and age in some cases), you can potentially get the lower rates from better insurance companies.</li>

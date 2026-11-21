@@ -104,7 +104,7 @@ sidebar: true
 
 <h2 id="life-insurance-and-build-charts"><br><strong>Life insurance and build charts</strong></h2>
 
-<p>A build chart is a table that serves as a guideline in the minimum and maximum weight per height that insurance companies will accept. </p>
+<p>A <a href="/burial-insurance/build-chart/">build chart</a> is a table that serves as a guideline in the minimum and maximum weight per height that insurance companies will accept. </p>
 
 <p>Any insurance company with a build chart has a question on their application form where you need to provide your height and weight.</p>
 
