@@ -560,7 +560,7 @@
         "type": "official-faq",
         "quote": "",
         "verified": "2026-11-21",
-        "accessNote": "Not fetched; a search of ncl.com for cremated/ashes/urn returned this page and the prohibited-items list with no mention of remains in the summaries. Silence is not evidence either way."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200). General rule only: the page contains no mention of ashes, cremated remains or burial at sea."
       },
       {
         "id": "s2",
@@ -740,7 +740,7 @@
         "type": "official-policy-page",
         "quote": "not permitted to discard any item overboard",
         "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. General rule; does not mention ashes."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200, about 16 KB of HTML). The page lists prohibited items and contains no mention of ashes or burial at sea; the round 1 quote ('not permitted to discard any item overboard') was not found in the HTML received and is kept only as an unconfirmed round 1 snippet."
       },
       {
         "id": "s2",
@@ -766,7 +766,8 @@
     ],
     "unresolved": [
       "Whether Celebrity applies the parent group's Royal Caribbean burial-at-sea FAQ is not published.",
-      "No official statement found after searching the official site in round 2; ask the line in writing."
+      "No official statement found after searching the official site in round 2; ask the line in writing.",
+      "Round 1 snippet quote about discarding items overboard not found on the conduct page in round 2."
     ],
     "needsDirectContact": true,
     "notes": "Do not assume the Royal Caribbean policy applies to Celebrity. Round 2 (2026-11-21): celebritycruises.com opened. The Guest Health, Safety and Conduct Policy and the FAQ hub contain no mention of ashes or burial at sea (the FAQ hub is rendered by script, so not every answer was visible); a site search returned no celebritycruises.com page. No official policy found.",
@@ -876,7 +877,7 @@
         "sources": []
       },
       "fees": {
-        "answer": "No ceremony fee published. The passage contract (round 1, search summary, not re-read) allows a $500 charge per violation for unauthorised items overboard.",
+        "answer": "No ceremony fee published. The passage contract allows a US $500 charge per violation for releasing an unauthorized item overboard without the onboard staff's permission.",
         "basis": "official",
         "sources": [
           "s1",
@@ -948,9 +949,9 @@
         "url": "https://www.princess.com/legal/passage-contract/plc",
         "title": "Passage Contract (Princess Cruises)",
         "type": "passenger-contract",
-        "quote": "without the express permission of the ship's staff, may result in a $500 charge",
+        "quote": "without the express permission of the vessel's onboard staff may result in a US $500 charge, per violation",
         "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. The AU contract wording was quoted; check the US contract. (Round 1 record, not re-verified in round 2.)"
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word."
       },
       {
         "id": "s3",
@@ -1130,7 +1131,7 @@
         "type": "passenger-contract",
         "quote": "without the express permission of the vessel's onboard staff may result in a US $500 charge, per violation",
         "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page. Contract text not searched in full for \"cremat\", \"ashes\" or \"remains\"."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word. General rule only; no ashes policy on the page."
       },
       {
         "id": "s2",
@@ -1139,7 +1140,7 @@
         "type": "official-faq",
         "quote": "refrain from pouring or discarding anything overboard",
         "verified": "2026-11-21",
-        "accessNote": "Not fetched; text from a search-engine result summary. Re-verify on the live page."
+        "accessNote": "Opened directly on 2026-11-21 (HTTP 200); quote checked word for word. General rule only; no ashes policy on the page."
       },
       {
         "id": "s3",
