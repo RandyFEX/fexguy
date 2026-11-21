@@ -94,6 +94,8 @@ export default defineConfig({
           path !== '/state-regulated-investigation-preview/' &&
           path !== '/impact-calculator-preview/' &&
           path !== '/trin-fbl/' &&
+          // Cruise ship ash scattering guide: Version 1.3 private preview (not approved).
+          path !== '/scattering-ashes-from-a-cruise-ship/' &&
           !excluded.has(path)
         );
       },

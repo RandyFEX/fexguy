@@ -1,4 +1,12 @@
-# Implementation proposal (proposal only; nothing built)
+# Implementation proposal
+
+> Version 1.3 (2026-11-21): the private preview is built (see README.md).
+> Differences from this proposal: one generated data file
+> (`src/data/cruise-ashes/operators.json`) instead of one file per
+> operator; law and travel stay as page text with links rather than
+> separate data files; the directory uses cards for all 92 operators with
+> search and status filters; the page lives at the provisional final slug
+> with noindex rather than a "-preview" slug, as instructed.
 
 How to build the guide in the Astro site once Randy approves the content.
 Modeled on the One Last Amazing Adventure preview (branch

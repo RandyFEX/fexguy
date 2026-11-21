@@ -6,7 +6,33 @@ component has been changed. Model for depth and sourcing: the One Last
 Amazing Adventure national parks preview (branch
 `claude/last-adventure-preview`, not modified).
 
-## Status: round 3 complete (2026-11-21)
+## Status: Version 1.3 private preview built (2026-11-21)
+
+The article and the 92-operator directory are built as a private preview
+at the provisional path `/scattering-ashes-from-a-cruise-ship/` (slug not
+approved). Not merged, not deployed.
+
+- Page: `src/pages/scattering-ashes-from-a-cruise-ship.astro` (noindex,
+  nofollow; X-Robots-Tag in vercel.json; out of the sitemap, llms.txt and
+  site search; never linked; guarded out of the menu in check-dist).
+- Content: `src/components/cruise-ashes/CruiseAshesGuide.astro`
+  (editorial article markup, `data-article-layout="content"`, shared
+  byline, Quick Answer, Key Points and bulleted table of contents).
+- Data: `src/data/cruise-ashes/operators.json`, generated from the research
+  register by `scripts/cruise-ashes/build-data.mjs` (public fields only;
+  the build fails if a non-unverified status lacks a confirmed official
+  source). The charter record is excluded, leaving exactly 92 operators.
+- Test: `node tests/cruise-ashes/directory.browser.mjs` (after a build).
+- Checks run: `npm run check` (0 errors), `npm run build`, `npm run verify
+  -- --strict` (0 problems), the directory browser test (8 checks pass),
+  axe-core WCAG 2.2 AA scan at 1280px and 390px (0 violations). Automated
+  checks do not prove conformance; manual keyboard and screen-reader review
+  is still needed before publication.
+- The four blocked policy pages (Carnival, MSC, P&O Cruises, Cunard) were
+  retried once on 2026-11-21 (HTTP 403/401) and stay unverified; their
+  exact links are on the page for manual review.
+
+## Round 3 status
 
 Round 3 (Version 1.2, international verification): network switched from
 Limited (20 hosts) to unrestricted at the start of the round; all

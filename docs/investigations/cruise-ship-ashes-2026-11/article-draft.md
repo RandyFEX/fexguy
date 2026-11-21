@@ -1,6 +1,6 @@
 # Article draft: scattering ashes from a cruise ship
 
-Draft for Randy's review (round 3, 2026-11-21). Not published. Proposed
+Draft for Randy's review (round 3, 2026-11-21). Not published. Version 1.3: the preview page (src/components/cruise-ashes/CruiseAshesGuide.astro) is built from this draft, expanded with the directory, documents and ceremony sections. Proposed
 metadata, from research/competitors-seo.md:
 
 - **H1:** Scattering Ashes From a Cruise Ship: Cruise Line Policies, Rules and Planning Guide

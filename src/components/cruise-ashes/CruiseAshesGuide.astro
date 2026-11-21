@@ -1,0 +1,740 @@
+---
+// Cruise ship ash scattering guide (Version 1.3 private preview, Randy,
+// November 2026). Research: docs/investigations/cruise-ship-ashes-2026-11/
+// (rounds 1 to 3); directory data: src/data/cruise-ashes/operators.json,
+// built from the research register by scripts/cruise-ashes/build-data.mjs.
+// Editorial article opening (H1, byline, Quick Answer, Key Points, bulleted
+// table of contents) as on ContentLayout articles; headings are stored in
+// sentence case. The directory's full content is in the HTML; the filter
+// form is a progressive enhancement (hidden until its script runs).
+// No insurance or sales content in the article body, by design.
+import ArticleByline from '@/components/article/ArticleByline.astro';
+import ArticleSummary from '@/components/article/ArticleSummary.astro';
+import ArticleToc from '@/components/article/ArticleToc.astro';
+import data from '@/data/cruise-ashes/operators.json';
+
+interface Props {
+  path: string;
+  h1: string;
+  updated: string;
+  preview?: boolean;
+}
+const { path, h1, updated, preview = false } = Astro.props;
+
+type Op = (typeof data.operators)[number];
+const operators = data.operators as Op[];
+const STATUS = {
+  'officially-permitted': 'Officially permitted',
+  'conditionally-permitted': 'Conditionally permitted',
+  'not-permitted': 'Not permitted',
+  unverified: 'Unverified',
+} as const;
+type StatusKey = keyof typeof STATUS;
+const counts = Object.fromEntries(Object.keys(STATUS).map((k) => [k, operators.filter((o) => o.status === k).length])) as Record<StatusKey, number>;
+const checkedLabel = new Date(`${data.checked}T12:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+
+const quickAnswer =
+  'Yes, on some cruise lines, but only with the line’s permission and on its terms. Royal Caribbean, Princess, Virgin Voyages, Fred. Olsen and Marella publish a written process, Ambassador says it may be possible case by case, and Crystal does not offer it from the ship. Most other lines publish no policy we could find, so ask in writing before you book. Plan on a biodegradable urn, copies of the death and cremation certificates, a request made before you sail, and a ceremony well offshore, often 12 nautical miles out.';
+const keyPoints = [
+  'Never scatter ashes from your balcony or a public deck on your own. Ask the cruise line first; the ship arranges the time and place.',
+  'Published policies require a biodegradable container, and several require the whole urn to go into the sea rather than loose ashes.',
+  'A cruise line’s permission does not override the law of the country whose waters the ship is in.',
+  'From a US port, cremated remains must be placed at least 3 nautical miles from land and the burial reported to the EPA within 30 days.',
+  'Airport rules differ by country and airline. Air Canada, for example, no longer accepts cremated remains in checked bags from August 28, 2026.',
+];
+const toc = [
+  { id: 'which-lines', text: 'Which cruise lines allow scattering ashes?' },
+  { id: 'directory', text: 'Cruise line directory' },
+  { id: 'profiles', text: 'Cruise lines with a published policy' },
+  { id: 'unconfirmed-lines', text: 'Policy pages we could not read' },
+  { id: 'no-published-policy', text: 'Lines with no published policy' },
+  { id: 'documents', text: 'Documents and advance permission' },
+  { id: 'ceremony', text: 'What happens at the ceremony' },
+  { id: 'law', text: 'How the law works' },
+  { id: 'travel', text: 'Traveling with cremated remains' },
+  { id: 'planning', text: 'How to plan it, step by step' },
+  { id: 'faq', text: 'Frequently asked questions' },
+  { id: 'sources', text: 'Sources' },
+];
+const ext = { target: '_blank', rel: 'noopener' };
+---
+
+<div class="container page page--article cra" data-article-layout="content">
+  <div class="prose wp-content">
+    {preview && <p class="cra__flag">Preview draft for review only. Not linked from the site and not indexed by search engines.</p>}
+    <h1>{h1}</h1>
+    <ArticleByline updated={updated} />
+    <ArticleSummary quickAnswer={quickAnswer} takeaways={{ label: 'Key Points', items: keyPoints }} />
+    <ArticleToc items={toc} path={path} />
+
+    <h2 id="which-lines">Which cruise lines allow scattering ashes?</h2>
+    <p>
+      We checked the official website of every cruise line in this guide on {checkedLabel}: policy pages, FAQs,
+      guest contracts, terms and conditions, and site maps. Each line is in one of four groups:
+    </p>
+    <ul>
+      <li><strong>Officially permitted:</strong> the line’s own policy, which we read, permits it, subject to its published requirements.</li>
+      <li><strong>Conditionally permitted:</strong> the line’s own policy, which we read, says it may be approved case by case or only in certain circumstances.</li>
+      <li><strong>Not permitted:</strong> the line’s own policy, which we read, says it is not offered from its ships.</li>
+      <li><strong>Unverified:</strong> we could not read an official policy. This is not a “no.” It means you need to ask the line in writing.</li>
+    </ul>
+    <p>
+      Of the {operators.length} cruise operators we researched, {counts['officially-permitted']} are officially permitted,
+      {counts['conditionally-permitted']} conditionally permitted, {counts['not-permitted']} not permitted and
+      {counts.unverified} unverified. Most unverified lines simply publish nothing on the subject.
+    </p>
+
+    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Cruise lines with a published policy, compared">
+      <table>
+        <caption>Cruise lines with a published policy (checked {checkedLabel})</caption>
+        <thead>
+          <tr><th scope="col">Cruise line</th><th scope="col">Status</th><th scope="col">Notice</th><th scope="col">Distance</th><th scope="col">Urn and documents</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><a href="#op-royal-caribbean-international">Royal Caribbean</a></th><td>Officially permitted</td><td>Email request; Front Desk on boarding</td><td>Not published</td><td>Biodegradable, no plastic or wire, released whole; death and cremation certificates</td></tr>
+          <tr><th scope="row"><a href="#op-princess-cruises">Princess Cruises</a></th><td>Officially permitted</td><td>Arranged and approved before sailing</td><td>Not published</td><td>Not published</td></tr>
+          <tr><th scope="row"><a href="#op-virgin-voyages">Virgin Voyages</a></th><td>Officially permitted</td><td>Request form at least 14 days before sailing</td><td>Not published</td><td>Certificate of Biodegradability</td></tr>
+          <tr><th scope="row"><a href="#op-fred-olsen-cruise-lines">Fred. Olsen</a></th><td>Officially permitted</td><td>At least 7 days before the cruise</td><td>At least 12 nautical miles</td><td>Sealed, leakproof container; certificate if the container is released</td></tr>
+          <tr><th scope="row"><a href="#op-marella-cruises">Marella (TUI)</a></th><td>Officially permitted</td><td>Contact TUI before travelling</td><td>At least 12 nautical miles, outside protected areas</td><td>Leak-proof, sealed container; copy of the death certificate</td></tr>
+          <tr><th scope="row"><a href="#op-ambassador-cruise-line">Ambassador</a></th><td>Conditionally permitted</td><td>Ask Guest Services; approval may take time</td><td>Not published</td><td>Not published</td></tr>
+          <tr><th scope="row"><a href="#op-crystal">Crystal</a></th><td>Not permitted from the ship</td><td>Contact Onboard Guest Services</td><td>Not applicable</td><td>Ashes may be spread on a private excursion</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cra__note">“Not published” means the official page we read does not say. No line we read publishes a fee.</p>
+
+    <h2 id="directory">Cruise line directory</h2>
+    <p>
+      All {operators.length} cruise operators we researched: ocean, luxury, expedition, river and regional lines around
+      the world. Each entry shows the permission status, the official policy page when one exists, the date we checked
+      and the main restrictions. Use the search and status filters to narrow the list.
+    </p>
+  </div>
+
+  <section class="cra-dir" aria-labelledby="directory" data-cra-directory>
+    <form class="cra-dir__filters" data-cra-filters hidden role="search" aria-label="Filter the cruise line directory">
+      <div class="cra-dir__field">
+        <label for="cra-q">Search by cruise line</label>
+        <input id="cra-q" type="search" name="q" autocomplete="off" data-cra-q />
+      </div>
+      <fieldset class="cra-dir__field">
+        <legend>Permission status</legend>
+        {
+          (Object.keys(STATUS) as StatusKey[]).map((k) => (
+            <label class="cra-dir__check">
+              <input type="checkbox" name="status" value={k} checked data-cra-status />
+              <span>{STATUS[k]} ({counts[k]})</span>
+            </label>
+          ))
+        }
+      </fieldset>
+      <button type="button" class="btn btn--secondary cra-dir__reset" data-cra-reset>Clear filters</button>
+    </form>
+    <p class="cra-dir__count" aria-live="polite" data-cra-count>Showing all {operators.length} cruise lines.</p>
+
+    <ul class="cra-dir__list" data-cra-list>
+      {
+        operators.map((o) => (
+          <li class="cra-card" data-name={o.name.toLowerCase()} data-status={o.status}>
+            <h3 class="cra-card__name" id={`dir-${o.id}`}>{o.name}</h3>
+            <p class={`cra-badge cra-badge--${o.status}`}>{STATUS[o.status as StatusKey]}</p>
+            <dl class="cra-card__facts">
+              <div><dt>Regions</dt><dd>{o.regions || 'Not recorded'}</dd></div>
+              <div><dt>Type</dt><dd>{o.fleet}</dd></div>
+              <div><dt>Restrictions</dt><dd>{o.restrictions}</dd></div>
+              <div>
+                <dt>Official policy</dt>
+                <dd>
+                  {o.policyUrl ? (
+                    <a href={o.policyUrl} {...ext}>
+                      {o.policyNote === 'unreadable' ? 'Policy page (not confirmed)' : 'Official policy'}
+                      <span class="visually-hidden"> for {o.name} (opens in a new tab)</span>
+                    </a>
+                  ) : (
+                    'None published'
+                  )}
+                </dd>
+              </div>
+              <div><dt>Checked</dt><dd><time datetime={o.verified}>{checkedLabel}</time></dd></div>
+            </dl>
+            <a class="cra-card__more" href={o.detail}>Details<span class="visually-hidden"> about {o.name}</span></a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="cra-dir__empty" data-cra-empty hidden>No cruise lines match. Try another name or select more statuses.</p>
+  </section>
+
+  <div class="prose wp-content">
+    <h2 id="profiles">Cruise lines with a published policy</h2>
+
+    <section class="cra-profile" id="op-royal-caribbean-international" aria-labelledby="op-rc-h">
+      <h3 id="op-rc-h">Royal Caribbean International</h3>
+      <p class="cra-profile__meta">Officially permitted. Read on the official page, {checkedLabel}.</p>
+      <p>Royal Caribbean’s FAQ says: “we allow the tossing of a biodegradable urn containing ash while at sea.” It requires:</p>
+      <ul>
+        <li>an approved scattering or biodegradable urn, free of plastic or wire;</li>
+        <li>the entire urn released into the sea, not loose ashes;</li>
+        <li>a certificate proving the urn is biodegradable, which “may also be required”;</li>
+        <li>the death certificate and the cremation certificate;</li>
+        <li>requests sent to gfotravelservices@rccl.com, then the Front Desk once you board, to set a time and place.</li>
+      </ul>
+      <p>Not published: how far ahead to ask, fees, distance, guest numbers, and whether you receive a certificate or the coordinates.</p>
+      <p><a href="https://www.royalcaribbean.com/faq/questions/what-is-royal-caribbeans-burial-at-sea-policy" {...ext}>Royal Caribbean burial at sea policy (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-princess-cruises" aria-labelledby="op-pc-h">
+      <h3 id="op-pc-h">Princess Cruises</h3>
+      <p class="cra-profile__meta">Officially permitted. Read on the official page, {checkedLabel}.</p>
+      <p>
+        Princess “offers private shipboard ceremonies” for families who want to rest a loved one’s ashes at sea. The
+        ceremony “must be arranged prior to sailing and approved in advance.” Contact ashesrequest@princesscruises.com.
+        Documents, urns, distance, guest numbers and fees are not published, so ask about each.
+      </p>
+      <p><a href="https://www.princess.com/faq/onboard-experience" {...ext}>Princess onboard experience FAQ (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-virgin-voyages" aria-labelledby="op-vv-h">
+      <h3 id="op-vv-h">Virgin Voyages</h3>
+      <p class="cra-profile__meta">Officially permitted. Read on the official page, {checkedLabel}.</p>
+      <p>Virgin answers “Yes” and calls it a Celebration of Life.</p>
+      <ul>
+        <li>Complete the Celebration of Life Request Form at least 14 days before you sail.</li>
+        <li>You will be asked for your ship, sail date, party size and a Certificate of Biodegradability for the container.</li>
+        <li>Virgin checks with local port authorities and the ship, then follows up before the voyage.</li>
+        <li>Sailor Services: 954-488-2955 (US), +44 (20) 30034919 (UK), +61 (1800) 491708 (Australia).</li>
+      </ul>
+      <p>Virgin does not offer single-use items such as balloons or individual flower arrangements on board.</p>
+      <p><a href="https://www.virginvoyages.com/faq/the-days-at-sea/onboard-policies" {...ext}>Virgin Voyages onboard policies FAQ (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-fred-olsen-cruise-lines" aria-labelledby="op-fo-h">
+      <h3 id="op-fo-h">Fred. Olsen Cruise Lines</h3>
+      <p class="cra-profile__meta">Officially permitted. Read on the official page, {checkedLabel}.</p>
+      <p>Guests may bring cremated remains or a commemorative wreath on board for a memorial commemoration.</p>
+      <ul>
+        <li>Contact Guest Services at least seven days before the cruise (0800 0355 122 or guest.services@fredolsen.co.uk).</li>
+        <li>Keep the ashes in a secure, leakproof, sealed container.</li>
+        <li>Everything that goes into the sea must be biodegradable; ribbons, imitation flowers and balloons are prohibited.</li>
+        <li>To release the container too, show a certificate that it is biodegradable once on board.</li>
+        <li>The remains cannot be taken ashore once on board.</li>
+        <li>A senior crew member supervises; place, date and time are agreed with the ship’s management.</li>
+        <li>The ship must be at least 12 nautical miles from land.</li>
+        <li>Attendance may be limited, and the service “cannot be guaranteed.”</li>
+      </ul>
+      <p><a href="https://www.fredolsencruises.com/faqs/on-board/can-i-scatter-ashes-at-sea" {...ext}>Fred. Olsen: Can I scatter ashes at sea? (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-marella-cruises" aria-labelledby="op-ma-h">
+      <h3 id="op-ma-h">Marella Cruises (TUI)</h3>
+      <p class="cra-profile__meta">Officially permitted. Read through a page-reading tool on {checkedLabel}; check the exact wording before you rely on it.</p>
+      <p>
+        Marella says ashes “can be scattered in international waters,” at least 12 nautical miles from land and outside
+        marine protected areas. Contact TUI with your booking details before you travel, and tell your airline. On board,
+        the Guest Experience Coordinator arranges the time. Bring a copy of the death certificate and a leak-proof, sealed
+        container that can pass X-ray. The remains cannot be taken ashore.
+      </p>
+      <p><a href="https://www.tui.co.uk/destinations/faq/cruises/marella-cruises-miscellaneous/can-i-bring-a-loved-ones-ashes-onboard-a-marella-cruise-ship-to-be-scattered" {...ext}>Marella ashes FAQ (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-ambassador-cruise-line" aria-labelledby="op-am-h">
+      <h3 id="op-am-h">Ambassador Cruise Line</h3>
+      <p class="cra-profile__meta">Conditionally permitted. Read on the official page, {checkedLabel}.</p>
+      <p>
+        Ambassador says it “may be able to offer this,” at the discretion of local port authorities, and approval may
+        take some time. Email guestservices@ambassadorcruiseline.com early. No other details are published.
+      </p>
+      <p><a href="https://www.ambassadorcruiseline.com/faqs/" {...ext}>Ambassador FAQs (official)</a></p>
+    </section>
+
+    <section class="cra-profile" id="op-crystal" aria-labelledby="op-cr-h">
+      <h3 id="op-cr-h">Crystal</h3>
+      <p class="cra-profile__meta">Not permitted from the ship. Read on the official page, {checkedLabel}.</p>
+      <p>
+        Crystal does not offer burials at sea “due to maritime regulations,” but offers celebrations of life that may
+        include spreading ashes on a private excursion. Onboard security holds the ashes until then. Contact
+        obgs@crystalcruises.com.
+      </p>
+      <p><a href="https://www.crystalcruises.com/faq/df78f039-bb7f-4d10-9dd3-e712683505ed" {...ext}>Crystal burial at sea FAQ (official)</a></p>
+    </section>
+
+    <h2 id="unconfirmed-lines">Policy pages we could not read</h2>
+    <p>
+      Carnival, MSC, P&amp;O Cruises and Cunard each have a page about ashes, but their websites blocked every attempt to
+      read it for this guide, so they are listed as unverified. Read the page yourself before you book, or ask the line to
+      confirm in writing:
+    </p>
+    <ul>
+      <li><a href="https://help.carnival.com/app/answers/detail/a_id/1132/~/scattering-of-ashes" {...ext}>Carnival: Scattering of Ashes</a></li>
+      <li><a href="https://www.msccruisesusa.com/faq/on-board-information" {...ext}>MSC Cruises: on-board information FAQ</a></li>
+      <li><a href="https://www.pocruises.com/ceremonies-sea-shore/committal-of-ashes" {...ext}>P&amp;O Cruises: Committal of ashes</a></li>
+      <li><a href="https://www.cunard.com/en-gb/activity-types/ceremonies/Committal-of-ashes-at-sea" {...ext}>Cunard: Committal of ashes at sea</a></li>
+    </ul>
+    <p>
+      Search-engine summaries of these pages describe permission with conditions, such as a ceremony at least 12 nautical
+      miles out, a biodegradable urn and certificates, and for P&amp;O and Cunard a charge or package. Those summaries are
+      not the pages themselves, so we do not present their details as policy.
+    </p>
+
+    <h2 id="no-published-policy">Lines with no published policy</h2>
+    <p>
+      For every other line in the directory, including Norwegian, Celebrity, Holland America, Disney, Viking, Costa, AIDA,
+      Oceania, Regent Seven Seas, Seabourn, Silversea, Hurtigruten, Ponant, Lindblad and the river cruise lines, we found no
+      published policy on the official website. For some, parts of the site could not be read. No published policy is not
+      a yes and not a no.
+    </p>
+    <p>
+      Some lines’ terms ban throwing items overboard without the crew’s permission. Holland America asks guests to
+      “refrain from pouring or discarding anything overboard”
+      (<a href="https://www.hollandamerica.com/en/us/plan-a-cruise/get-ready-for-your-cruise/faq/know-before-you-go" {...ext}>Know Before You Go</a>),
+      and the passage contracts of <a href="https://www.princess.com/legal/passage-contract/plc" {...ext}>Princess</a> and
+      <a href="https://www.hollandamerica.com/en/us/legal-privacy/cruise-contract" {...ext}>Holland America</a> allow a US
+      $500 charge per violation. That is a general rule, not a ban on ceremonies, but it is why you need written permission.
+    </p>
+    <p>Ask the line, in writing, before you book:</p>
+    <ul>
+      <li>Do you allow cremated remains to be committed to the sea from this ship and itinerary?</li>
+      <li>Who do I contact, and how far ahead?</li>
+      <li>What documents and what kind of urn do you require? Is the whole urn released?</li>
+      <li>Is there a fee or a guest limit?</li>
+      <li>Will I receive the time and coordinates afterward?</li>
+      <li>If we sail from a US port, who reports it to the EPA?</li>
+    </ul>
+
+    <h2 id="documents">Documents and advance permission</h2>
+    <p>Across the policies we read, families are asked for some or all of these:</p>
+    <ul>
+      <li><strong>Permission before you sail:</strong> Princess and Virgin require approval in advance (Virgin: at least 14 days); Fred. Olsen asks for at least seven days’ notice; Royal Caribbean takes requests by email.</li>
+      <li><strong>Death certificate:</strong> Royal Caribbean and Marella.</li>
+      <li><strong>Cremation certificate:</strong> Royal Caribbean.</li>
+      <li><strong>Certificate that the urn is biodegradable:</strong> Virgin, and Royal Caribbean and Fred. Olsen in some cases.</li>
+      <li><strong>Booking details:</strong> Marella and Virgin (ship, sail date, party size).</li>
+    </ul>
+    <p>Carry copies of each document on the trip, and keep the line’s written approval with them.</p>
+
+    <h2 id="ceremony">What happens at the ceremony</h2>
+    <ul>
+      <li><strong>The ship sets the time and place.</strong> Royal Caribbean’s Front Desk sets them; Fred. Olsen agrees them with you; Marella’s Guest Experience Coordinator arranges them.</li>
+      <li><strong>Distance:</strong> lines that publish a distance (Fred. Olsen, Marella) require at least 12 nautical miles from land.</li>
+      <li><strong>Crew:</strong> at Fred. Olsen a senior crew member supervises, for privacy and to follow procedure.</li>
+      <li><strong>Whole urn or loose ashes:</strong> Royal Caribbean requires the whole urn to be released; Fred. Olsen allows either if the container is certified biodegradable.</li>
+      <li><strong>Flowers:</strong> only biodegradable items may go into the sea; ribbons, plastic flowers and balloons are not allowed.</li>
+      <li><strong>Guests:</strong> Fred. Olsen may limit the number attending; Virgin asks for your party size.</li>
+      <li><strong>Afterward:</strong> none of the policies we read promises a certificate or coordinates. Ask in advance.</li>
+      <li><strong>Not guaranteed:</strong> Fred. Olsen says the service “cannot be guaranteed,” and other lines depend on weather, port authorities and the itinerary.</li>
+    </ul>
+
+    <h2 id="law">How the law works</h2>
+    <p>
+      Three layers apply at once: the law of the country whose waters the ship is in, the law of the ship’s flag
+      country, and the cruise line’s own policy. A cruise line’s permission is a private rule. It never overrides the law
+      of the place.
+    </p>
+
+    <h3>International waters and the flag state</h3>
+    <p>
+      Under the UN Convention on the Law of the Sea, a country’s sovereignty covers its territorial sea, which may reach
+      12 nautical miles from its baselines (Articles 2 and 3), with some enforcement powers in a contiguous zone up to 24
+      nautical miles (Article 33). On the high seas, a ship is under the exclusive jurisdiction of its flag country
+      (Article 92), and dumping in another country’s territorial sea or exclusive economic zone needs that country’s
+      express prior approval (Article 210(5))
+      (<a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf" {...ext}>UNCLOS</a>).
+      The treaty does not say whether scattering ashes is “dumping,” and neither does the IMO’s page on the
+      <a href="https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx" {...ext}>London Convention and Protocol</a>.
+    </p>
+
+    <h3>United States</h3>
+    <p>
+      US burial at sea is governed by the Marine Protection, Research, and Sanctuaries Act, not the Clean Water Act. The
+      EPA’s general permit at
+      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>
+      covers cremated remains. According to the
+      <a href="https://www.epa.gov/ocean-dumping/burial-sea" {...ext}>EPA’s Burial at Sea page</a>:
+    </p>
+    <ul>
+      <li>no application, prior notice or fee is needed;</li>
+      <li>cremated remains may be placed in ocean waters of any depth “at least three nautical miles from land,” measured from the low water mark or a closing line across bays and rivers;</li>
+      <li>flowers and wreaths must be readily decomposable, and containers must not contain plastic or float;</li>
+      <li>the permit covers human remains only, and pet ashes cannot be mixed in;</li>
+      <li>the burial must be reported within 30 days to the EPA Region the vessel departed from, usually through the <a href="https://burialatsea.epa.gov/" {...ext}>Burial at Sea Reporting Tool</a>. A funeral director, a relative or a person designated to report may file it (<a href="https://www.epa.gov/sites/default/files/2019-05/documents/burial_at_sea_reporting_tool_factsheet_may_13_2019.pdf" {...ext}>EPA fact sheet</a>).</li>
+    </ul>
+    <p>
+      The rule covers anyone taking remains from the United States for burial at sea, and any US-flagged vessel. If your
+      ship leaves a US port with the ashes aboard, the US rules apply, even if the ship flies another flag. In another
+      country’s waters, that country’s laws also apply, and the EPA notes that “some countries may prohibit burials at sea
+      in their waters.” The 600-foot depth rule you may see online is for full-body burials, not ashes.
+    </p>
+    <p>
+      In national parks such as Glacier Bay, scattering is prohibited except under a permit or in designated areas
+      (<a href="https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.62" {...ext}>36 CFR 2.62</a>). The Monterey
+      Bay, Greater Farallones and Channel Islands marine sanctuaries ban discharges from cruise ships, with exceptions that
+      do not include ashes (<a href="https://www.ecfr.gov/current/title-15/subtitle-B/chapter-IX/subchapter-B/part-922" {...ext}>15 CFR part 922</a>).
+      We found no Alaska or Hawaii state rule on scattering ashes at sea.
+    </p>
+
+    <h3>United Kingdom and Ireland</h3>
+    <ul>
+      <li><strong>England and Northern Irish offshore waters:</strong> “You don’t need a licence or permission to scatter ashes at sea after a cremation” (<a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>).</li>
+      <li><strong>Scotland:</strong> “An application for burial is not required for the scattering of ashes” (<a href="https://www.gov.scot/publications/burial-regulations-guidance/pages/3/" {...ext}>Scottish Government</a>).</li>
+      <li><strong>Wales:</strong> we found no statement from Natural Resources Wales.</li>
+      <li><strong>Ireland:</strong> the Department of Transport’s voluntary guidelines suggest cremation and scattering of ashes be considered rather than burial at sea (<a href="https://www.gov.ie/en/department-of-transport/services/burial-at-sea/" {...ext}>gov.ie</a>).</li>
+    </ul>
+
+    <h3>Europe and the Mediterranean</h3>
+    <ul>
+      <li><strong>Norway:</strong> scattering ashes needs the County Governor’s permission (<a href="https://lovdata.no/dokument/NL/lov/1996-06-07-32" {...ext}>Funeral Act, section 20</a>). On Svalbard the Governor may permit it on application, not in built-up areas (<a href="https://lovdata.no/dokument/SF/forskrift/2008-02-15-153" {...ext}>Svalbard regulation</a>).</li>
+      <li><strong>Netherlands:</strong> relatives may scatter ashes in state waters, at sea or in a river, without a permit, keeping away from bathing sites and drinking-water intakes (<a href="https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen/vergunningen-rijkswateren" {...ext}>Rijkswaterstaat</a>).</li>
+      <li><strong>Italy:</strong> dispersal at sea, in lakes and rivers is allowed only “in stretches free of boats and structures,” with the civil-status officer’s authorization (<a href="https://www.parlamento.it/parlam/leggi/01130l.htm" {...ext}>Law 130/2001</a>). Local Coast Guard ordinances add distances; one district bans it within 1,000 meters of the coast (<a href="https://www.guardiacostiera.gov.it/portale/documents/121759/0/Ord+97+del+07-09-2023+Dispersione+delle+ceneri+funebri+in+mare.pdf/df0e6413-6c14-1a90-20a3-6d45de39a849?version=1.0&amp;t=1742803425272" {...ext}>Ordinance 97/2023</a>).</li>
+      <li><strong>Spain:</strong> businesses that place urns or ashes at sea must file a declaration with the Maritime Captaincy, use biodegradable urns and log the coordinates (<a href="https://www.boe.es/eli/es/rd/2022/03/29/218" {...ext}>Royal Decree 218/2022</a>).</li>
+      <li><strong>France:</strong> the Ministry of Justice says dispersal or immersion of a biodegradable urn is allowed at sea (“en pleine mer”), with a declaration to the town hall of the deceased’s birthplace (<a href="https://www.justice.fr/fiche/cremation" {...ext}>justice.fr</a>).</li>
+      <li><strong>Croatia:</strong> scattering only at places designated by the local council (<a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2025_05_78_1014.html" {...ext}>Cemeteries Act 2025</a>).</li>
+      <li><strong>Germany:</strong> a sea burial is the lowering of a water-soluble urn on the high seas, with permits (<a href="https://web1.karlsruhe.de/service/Buergerdienste/leistung.php?id=6015473" {...ext}>Karlsruhe service page</a>).</li>
+      <li><strong>Greece:</strong> we could not confirm the rule from an official text.</li>
+    </ul>
+
+    <h3>Canada, Australia and New Zealand</h3>
+    <ul>
+      <li><strong>Canada:</strong> the federal disposal-at-sea law (CEPA 1999, section 125) does not mention ashes (<a href="https://laws.justice.gc.ca/eng/acts/C-15.31/FullText.html" {...ext}>Justice Laws</a>). We could not open the federal guidance.</li>
+      <li><strong>Australia:</strong> the Sea Dumping Act does not mention ashes (<a href="https://www.legislation.gov.au/C2004A02478/latest/text" {...ext}>legislation.gov.au</a>); government guidance on ashes could not be opened, and we found no Great Barrier Reef Marine Park rule on ashes.</li>
+      <li><strong>New Zealand:</strong> not confirmed from an official page.</li>
+    </ul>
+
+    <h3>Caribbean, Mexico, Asia and the polar regions</h3>
+    <ul>
+      <li><strong>Caribbean, Bahamas, Mexico and Bermuda:</strong> we found no official rule. Ask the cruise line which local rules apply on your itinerary.</li>
+      <li><strong>Japan:</strong> the Ministry of Health’s guideline for scattering businesses asks for scattering at sea a suitable distance from the coast, without setting a number (<a href="https://www.mhlw.go.jp/content/11130500/001321304.pdf" {...ext}>MHLW</a>).</li>
+      <li><strong>Singapore:</strong> sea scattering takes place at a site 3.2 km east of Raffles Lighthouse (<a href="https://www.nea.gov.sg/our-services/after-death/post-death-matters/burial-cremation-and-ash-storage" {...ext}>NEA</a>).</li>
+      <li><strong>Hong Kong:</strong> three designated areas; form FEHB 198 must be approved first (<a href="https://www.greenburial.gov.hk/en/scattering-cremains-sea/intro.html" {...ext}>Green Burial</a>).</li>
+      <li><strong>Antarctica:</strong> the Antarctic Treaty’s environmental protocol limits what ships may discharge but does not mention human remains (<a href="https://documents.ats.aq/recatt/Att011_e.pdf" {...ext}>Annex IV</a>). We found no rule that allows or bans ashes, so ask the expedition line.</li>
+      <li><strong>South Georgia:</strong> the government permits scattering on the island with 60 days’ written notice, not on the South Sandwich Islands (<a href="https://gov.gs/wp-content/uploads/2022/10/Scattering-of-Ashes-Policy-0321.pdf" {...ext}>GSGSSI policy</a>).</li>
+      <li><strong>Galapagos:</strong> no National Park rule found.</li>
+    </ul>
+
+    <h3>Rivers and inland waters</h3>
+    <p>
+      The EPA says scattering in lakes and rivers “is not subject to federal regulation” under its burial at sea rules;
+      states may regulate it. In Europe, rules vary: the Netherlands allows it in state rivers without a permit, Italy only
+      with authorization, and Rhineland-Palatinate in Germany allows a water-soluble urn on the Rhine, Moselle, Lahn or
+      Saar only for its own residents
+      (<a href="https://mwg.rlp.de/fileadmin/15/Abteilung_2_Gesundheit/Bestattungsgesetz/BestattG_RP_2025.pdf" {...ext}>Rhineland-Palatinate burial law</a>).
+      We found no river cruise line that publishes a policy.
+    </p>
+
+    <h2 id="travel">Traveling with cremated remains</h2>
+    <p>Airport rules are national, and airlines add their own. Do not assume US rules apply abroad.</p>
+    <ul>
+      <li><strong>United States (TSA):</strong> cremated remains are allowed in carry-on bags, with special instructions, and in checked bags, but some airlines do not allow them in checked bags. The container must X-ray clearly. “Out of respect for the deceased, TSA officers will not open a container, even if requested by the passenger” (<a href="https://www.tsa.gov/travel/security-screening/whatcanibring/items/cremated-remains" {...ext}>TSA</a>).</li>
+      <li><strong>Canada (CATSA):</strong> screening officers are not permitted to open a cremation container, and “smaller amounts of cremated remains (less than 350 ml) are more likely to be successfully screened” (<a href="https://www.catsa-acsta.gc.ca/en/cremated-remains" {...ext}>CATSA</a>).</li>
+      <li><strong>Australia:</strong> “There are no requirements for importing human ashes into Australia,” but there are rules for the container (<a href="https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import/types-of-imports/importing-human-remains-ashes" {...ext}>Australian Border Force</a>).</li>
+      <li><strong>New Zealand:</strong> a carry-on container “will be inspected, but not opened” (<a href="https://www.aviation.govt.nz/passenger-information/what-can-i-bring/show/ashes-cremated-remains/" {...ext}>Aviation Security</a>), and Customs needs no clearance for ashes you carry in (<a href="https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items" {...ext}>NZ Customs</a>).</li>
+      <li><strong>United Kingdom:</strong> no permit is needed to bring ashes into the UK; tell the airline in advance and carry the cremation certificate (<a href="https://www.gov.uk/guidance/what-to-do-when-someone-dies-abroad" {...ext}>GOV.UK</a>). Heathrow exempts human ashes from its powder limit on US flights, though they may need extra screening (<a href="https://www.heathrow.com/at-the-airport/security-and-baggage/hand-baggage-and-liquids" {...ext}>Heathrow</a>).</li>
+      <li><strong>Into the United States:</strong> CDC’s import rules for human remains do not apply to remains already fully cremated (<a href="https://www.ecfr.gov/current/title-42/chapter-I/subchapter-F/part-71/subpart-F/section-71.50" {...ext}>42 CFR 71.50</a>).</li>
+    </ul>
+
+    <div class="cra__table" data-scroll-region tabindex="0" role="region" aria-label="Airline rules for cremated remains">
+      <table>
+        <caption>Airline rules we checked ({checkedLabel})</caption>
+        <thead><tr><th scope="col">Airline</th><th scope="col">Carry-on</th><th scope="col">Checked bag</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="https://www.aircanada.com/ca/en/aco/home/plan/baggage/carry-on.html" {...ext}>Air Canada</a></th><td>Yes</td><td>Not from August 28, 2026</td><td>Cargo service available</td></tr>
+          <tr><th scope="row"><a href="https://www.jetblue.com/help/cremated-remains" {...ext}>JetBlue</a></th><td>Yes, in an urn</td><td>No</td><td>Urn does not count toward the allowance</td></tr>
+          <tr><th scope="row"><a href="https://www.alaskacargo.com/what-we-ship/human-remains" {...ext}>Alaska Airlines</a></th><td>Yes</td><td>Yes</td><td>Cargo rules are separate</td></tr>
+          <tr><th scope="row"><a href="https://faq.flyfrontier.com/help/does-frontier-allow-transport-of-human-remains" {...ext}>Frontier</a></th><td>Yes, in a container TSA can screen</td><td>Not stated</td><td></td></tr>
+          <tr><th scope="row"><a href="https://www.westjet.com/en-ca/baggage/carry-on" {...ext}>WestJet</a></th><td>Up to 350 mL</td><td>Over 350 mL</td><td></td></tr>
+          <tr><th scope="row"><a href="https://www.airnewzealand.com/en-nz/travel-info/baggage/restricted-items" {...ext}>Air New Zealand</a></th><td>Yes</td><td>Yes</td><td>Certificates on request</td></tr>
+          <tr><th scope="row"><a href="https://www.virginaustralia.com/au/en/travel-info/baggage/oversized-fragile-items/" {...ext}>Virgin Australia</a></th><td>Yes, with a letter</td><td>Yes</td><td>Cushioned, sealed urn</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cra__note">Other airlines’ pages could not be read or do not address it, so check with your airline.</p>
+    <p>
+      <strong>At the cruise terminal and in port:</strong> US cruise terminals may X-ray baggage under an approved security
+      program (<a href="https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-105/subpart-E/section-105.545" {...ext}>33 CFR 105.545</a>).
+      Fred. Olsen and Marella say the remains cannot be taken ashore once on board, so leave the urn with the ship until
+      the ceremony.
+    </p>
+    <p>
+      <strong>Containers:</strong> for travel, a sealed, leakproof container that X-rays clearly; for the sea, a
+      biodegradable urn with no plastic or wire and the maker’s certificate of biodegradability. You may need both. Ask
+      your cruise line whether the transfer can happen on board.
+    </p>
+
+    <h2 id="planning">How to plan it, step by step</h2>
+    <ol>
+      <li><strong>Check the policy before you book.</strong> Use the directory above, then confirm with the line in writing. If it publishes no policy, ask before you pay.</li>
+      <li><strong>Choose a suitable sailing.</strong> Look for sea days and time well offshore. Coastal countries have their own rules close to shore.</li>
+      <li><strong>Make the request early.</strong> Notice periods we found range from “on board” to 7 and 14 days. Ask for the approval in writing.</li>
+      <li><strong>Gather documents.</strong> Copies of the death certificate and cremation certificate, and the urn’s certificate of biodegradability.</li>
+      <li><strong>Buy the right urn.</strong> Biodegradable, with no plastic or wire, suitable for releasing whole.</li>
+      <li><strong>Plan the journey.</strong> Check your airline’s own rules and the rules of each airport you pass through.</li>
+      <li><strong>Confirm on board.</strong> On the first day, visit the desk your line names to confirm the time and place.</li>
+      <li><strong>Plan the ceremony.</strong> Ask who may attend, whether a crew member stays, and whether flowers are allowed (biodegradable only).</li>
+      <li><strong>If weather or the itinerary prevents it,</strong> ask whether another sea day is possible. If not, keep the ashes and paperwork, take them home, and consider a licensed charter boat or, for eligible veterans, the US Navy burial at sea program. Do not scatter them yourself.</li>
+      <li><strong>Afterward,</strong> ask for the date, time and coordinates. If you sailed from a US port, ask whether the line files the EPA report; if not, you can report online within 30 days.</li>
+    </ol>
+    <p>
+      For more help with arrangements, see our <a href="/12-step-final-planning-guide/">12-step final planning guide</a>,
+      <a href="/cremation-cost-and-info/">what cremation costs</a> and <a href="/burial-vs-cremation/">burial vs cremation</a>.
+    </p>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <h3>Can I scatter ashes from my cruise ship balcony?</h3>
+    <p>No. Every policy we read requires the line’s permission and a ceremony arranged by the ship, and some contracts allow a US $500 charge for releasing items overboard without permission.</p>
+    <h3>Is the urn released, or are the ashes poured out?</h3>
+    <p>It depends on the line. Royal Caribbean says the entire urn must be tossed. Fred. Olsen allows either, if the container is certified biodegradable.</p>
+    <h3>Do cruise lines charge for this?</h3>
+    <p>None of the policies we read publishes a fee. Ask the line.</p>
+    <h3>How far from shore does the ship have to be?</h3>
+    <p>From a US port, at least 3 nautical miles by law. Lines that publish a distance use 12 nautical miles. Other countries set their own rules.</p>
+    <h3>Do I have to tell the EPA?</h3>
+    <p>If the ship departed a US port with the ashes aboard, the burial must be reported within 30 days. Ask the line whether it reports it; if not, a relative can report online.</p>
+    <h3>Can I choose where the ashes go?</h3>
+    <p>Usually the ship decides with you. Fred. Olsen agrees the place, date and time with guests; Royal Caribbean’s Front Desk sets the time and place.</p>
+    <h3>Will I receive the coordinates or a certificate?</h3>
+    <p>None of the policies we read promises one. Ask in advance.</p>
+    <h3>Can I scatter a pet’s ashes at sea from a cruise?</h3>
+    <p>Not under the US general permit, which covers human remains only. Ask the line.</p>
+    <h3>Can I scatter ashes at a private island or in port?</h3>
+    <p>Not that we found. Fred. Olsen and Marella say the remains cannot be taken ashore once on board, and coastal countries set their own rules.</p>
+    <h3>What if the ceremony can’t happen?</h3>
+    <p>Fred. Olsen states the service “cannot be guaranteed,” and other lines depend on port authorities, weather and the itinerary. Keep the ashes and paperwork safe and plan another option.</p>
+    <h3>Does no published policy mean a line does not allow it?</h3>
+    <p>No. It means the line does not say on its website. Ask the line in writing.</p>
+
+    <h2 id="sources">Sources</h2>
+    <p>
+      Every official page was checked on {checkedLabel}. Cruise lines: the policy links in each profile and in the
+      directory. Law: <a href="https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf" {...ext}>UNCLOS</a>,
+      <a href="https://www.epa.gov/ocean-dumping/burial-sea" {...ext}>EPA Burial at Sea</a>,
+      <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-H/part-229/section-229.1" {...ext}>40 CFR 229.1</a>,
+      <a href="https://www.gov.uk/guidance/how-to-get-a-licence-for-a-burial-at-sea-in-england" {...ext}>GOV.UK</a>
+      and the national sources linked in each section. Travel: TSA, CATSA, Australian Border Force, New Zealand Aviation
+      Security and Customs, GOV.UK, Heathrow and the airlines linked above.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Directory filters (progressive enhancement): the full list is in the
+  // HTML; this only hides cards that do not match and announces the count.
+  const root = document.querySelector<HTMLElement>('[data-cra-directory]');
+  const form = root?.querySelector<HTMLFormElement>('[data-cra-filters]');
+  if (root && form) {
+    const q = form.querySelector<HTMLInputElement>('[data-cra-q]')!;
+    const boxes = [...form.querySelectorAll<HTMLInputElement>('[data-cra-status]')];
+    const cards = [...root.querySelectorAll<HTMLElement>('[data-cra-list] > li')];
+    const count = root.querySelector<HTMLElement>('[data-cra-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-cra-empty]')!;
+    const total = cards.length;
+    const apply = () => {
+      const term = q.value.trim().toLowerCase();
+      const statuses = new Set(boxes.filter((b) => b.checked).map((b) => b.value));
+      let shown = 0;
+      for (const c of cards) {
+        const ok = statuses.has(c.dataset.status ?? '') && (!term || (c.dataset.name ?? '').includes(term));
+        c.hidden = !ok;
+        if (ok) shown++;
+      }
+      empty.hidden = shown > 0;
+      count.textContent = shown === total ? `Showing all ${total} cruise lines.` : `Showing ${shown} of ${total} cruise lines.`;
+    };
+    form.addEventListener('input', apply);
+    form.addEventListener('submit', (e) => e.preventDefault());
+    form.querySelector('[data-cra-reset]')?.addEventListener('click', () => {
+      q.value = '';
+      boxes.forEach((b) => (b.checked = true));
+      apply();
+      q.focus();
+    });
+    form.hidden = false;
+  }
+</script>
+
+<style>
+  .cra {
+    padding-block: var(--space-8) var(--space-12);
+  }
+  .cra :global(.byline) {
+    margin-block: var(--space-4) var(--space-6);
+  }
+  .cra :global(.byline img) {
+    margin: 0;
+  }
+  .cra :global(.toc) {
+    margin-block: var(--space-6);
+  }
+  .cra__flag {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+  .cra__note {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+  .cra__table {
+    overflow-x: auto;
+    margin-block: var(--space-4);
+  }
+  .cra__table table {
+    min-width: 36rem;
+  }
+  .cra__table caption {
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: var(--space-2);
+  }
+  .cra-profile {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+    margin-top: var(--space-6);
+  }
+  .cra-profile__meta {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Directory */
+  .cra-dir {
+    max-width: var(--container-max);
+    margin-block: var(--space-4) var(--space-8);
+  }
+  .cra-dir__filters {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    margin-bottom: var(--space-4);
+  }
+  .cra-dir__filters[hidden] {
+    display: none;
+  }
+  .cra-dir__field {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .cra-dir__field label,
+  .cra-dir__field legend {
+    font-weight: 700;
+    display: block;
+    margin-bottom: var(--space-1);
+  }
+  .cra-dir__field input[type='search'] {
+    width: 100%;
+    min-height: var(--tap-target);
+    padding-inline: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    border-radius: var(--radius);
+    font: inherit;
+  }
+  .cra-dir__check {
+    display: flex !important;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--tap-target);
+    font-weight: 400 !important;
+    margin: 0 !important;
+  }
+  .cra-dir__check input {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .cra-dir__reset {
+    justify-self: start;
+    min-height: var(--tap-target);
+  }
+  .cra-dir__count {
+    font-weight: 700;
+  }
+  .cra-dir__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-4);
+  }
+  .cra-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+    background: var(--color-bg);
+  }
+  .cra-card[hidden] {
+    display: none;
+  }
+  .cra-card__name {
+    font-size: 1.125rem;
+    margin: 0 0 var(--space-2);
+  }
+  .cra-badge {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.125rem var(--space-2);
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    margin: 0 0 var(--space-3);
+  }
+  .cra-badge--officially-permitted {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    border-color: var(--color-primary);
+  }
+  .cra-badge--conditionally-permitted {
+    background: #fef3c7;
+    color: #713f12;
+  }
+  .cra-badge--not-permitted {
+    background: #fee2e2;
+    color: #7f1d1d;
+  }
+  .cra-badge--unverified {
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  .cra-card__facts {
+    margin: 0 0 var(--space-3);
+    display: grid;
+    gap: var(--space-2);
+    font-size: 0.9375rem;
+  }
+  .cra-card__facts dt {
+    font-weight: 700;
+  }
+  .cra-card__facts dd {
+    margin: 0;
+  }
+  .cra-card__facts a,
+  .cra-card__more {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-target);
+  }
+  .cra-card__more {
+    font-weight: 700;
+  }
+  @media (min-width: 48rem) {
+    .cra-dir__filters {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+    .cra-dir__reset {
+      grid-column: 1 / -1;
+    }
+    .cra-dir__list {
+      grid-template-columns: 1fr 1fr;
+    }
+    .cra-card__facts div {
+      display: grid;
+      grid-template-columns: 7.5rem 1fr;
+      gap: var(--space-2);
+    }
+  }
+  @media (min-width: 75rem) {
+    .cra-dir__list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+</style>

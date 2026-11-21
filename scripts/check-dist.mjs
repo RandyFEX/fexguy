@@ -692,7 +692,7 @@ for (const file of pages) {
 // controls its own panel, and the mega menu is identical on every page.
 const COMPACT_NAV_PAGES = new Set(['/roku/']);
 const NO_NAV_PAGES = ['/facebook/', '/free-quote/', '/get-rates/', '/help/'];
-const NAV_FORBIDDEN = new Set(['/health-question-search-preview/', '/facebook/', '/roku/', '/help/']);
+const NAV_FORBIDDEN = new Set(['/health-question-search-preview/', '/facebook/', '/roku/', '/help/', '/scattering-ashes-from-a-cruise-ship/']);
 const navProblems = [];
 let navPages = 0;
 let navSignature = null;
